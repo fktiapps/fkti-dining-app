@@ -1197,3 +1197,13 @@ RECOVERY after 3:20AM reset:
 TABELOG TABS opening in Greg's browser = the verify agents' real-browser fallback for Tabelog
 (confirmed benign by matching coords). Run sweeps on the cloud env (MOBILE_OPS.md) to avoid them.
 Last deployed: v70. Spot-sweep tooling: spot-configs.mjs, gen-spot-workflow.mjs (tier arg: cheap|opus), build-spot.mjs.
+
+[2026-06-26] LESSON + RECOVERY: a spot-sweep's tasks/<id>.output is 0 bytes until it FINISHES
+(writes result only at 100%). 0 bytes ≠ stalled — do NOT TaskStop a near-done run (resume only
+recovers journaled progress, ~70 of 242 here, forcing re-burn). If interrupted, HARVEST instead:
+the verify results are StructuredOutput tool_use blocks in the run's transcript .jsonl files
+(.claude/.../subagents/workflows/<runId>/agent-*.jsonl) — parse for blk.name==='StructuredOutput'
+with input.found+input.gf_confidence → those ARE the verify records. Nagoya was recovered this way
+(176 harvested → 152 built within 1mi of Nagoya Castle, NO re-burn). Nagoya data is Sonnet-quality
+(stalled before the Opus safety-recheck phase) — optional cheap recheck later. Cities now: kyoto,
+kanazawa, nara, hiroshima, nagano(85), toba(73), nagoya(152). SW v74. Remaining: Himeji, Toba Okage.
