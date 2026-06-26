@@ -303,6 +303,13 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  .filtersheet{display:flex;flex-direction:column;gap:6px}
  .is-hidden{display:none!important}
  body.no-diet .dietui{display:none!important}
+ #bowlSliders label{display:block;font-size:12.5px;font-weight:700;color:var(--ink);margin:10px 0 0}
+ #bowlSliders label span{font-weight:400;color:var(--muted);font-size:11px;float:right}
+ #bowlSliders input[type=range]{width:100%;margin:4px 0 0;display:block}
+ .bowlchips{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:10px}
+ .bowlchips>span{font-size:11px;color:var(--muted);font-weight:700;min-width:42px}
+ .bowlchips .chip{font-size:12px;padding:5px 10px}
+ .bowl-res{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;margin:6px 0;cursor:pointer;font-size:13px;color:var(--ink)}
  </style>
  <div class="filters">
   <div class="frow">
@@ -318,6 +325,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
    <button class="chip pill" data-pill="gf">🌾 Gluten-Free</button>
    <button class="chip pill" data-pill="ramen">🍜 Ramen</button>
    <button class="chip pill" data-pill="mompop">🏮 Mom &amp; Pop</button>
+   <button class="chip" id="bowlBtn" style="display:none;background:#9c3b2e;color:#fff;border:none">🍜 Build a bowl</button>
   </div>
   <div class="filtersheet is-hidden" id="filterSheet">
    <div class="frow"><span style="font-size:11px;color:var(--muted);width:100%">Dietary focus (curated places)</span>
@@ -442,6 +450,27 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
   <div id="ramenGeekBody"></div>
  </div>
 </div>
+<div class="modal" id="bowlModal">
+ <div class="box">
+  <button class="closex" id="bowlClose">×</button>
+  <h2>🍜 Build me a bowl</h2>
+  <p style="font-size:12px;color:var(--muted);margin:0 0 6px">Dial in what you're craving — we'll rank the closest shops.</p>
+  <div id="bowlSliders">
+   <label>Richness <span>light → rich</span><input type="range" min="0" max="5" value="3" id="bw_richness"></label>
+   <label>Oiliness <span>clean → oily</span><input type="range" min="0" max="5" value="2" id="bw_oiliness"></label>
+   <label>Body <span>clear → creamy</span><input type="range" min="0" max="5" value="2" id="bw_clarity"></label>
+   <label>Tare <span>mild → bold</span><input type="range" min="0" max="5" value="3" id="bw_tare_strength"></label>
+   <label>Noodles <span>soft → firm</span><input type="range" min="0" max="5" value="3" id="bw_noodle_firmness"></label>
+   <label>Aroma <span>subtle → aromatic</span><input type="range" min="0" max="5" value="3" id="bw_aroma_punch"></label>
+  </div>
+  <div class="bowlchips"><span>Broth</span><button class="chip" data-broth="tonkotsu">Tonkotsu</button><button class="chip" data-broth="chicken">Chicken</button><button class="chip" data-broth="gyokai">Seafood</button><button class="chip" data-broth="niboshi">Niboshi</button><button class="chip" data-broth="vegetable">Vegetable</button></div>
+  <div class="bowlchips"><span>Tare</span><button class="chip" data-tare="shoyu">Shoyu</button><button class="chip" data-tare="shio">Shio</button><button class="chip" data-tare="miso">Miso</button></div>
+  <div class="bowlchips"><span>Style</span><button class="chip" data-texture="chintan">Clear</button><button class="chip" data-texture="paitan">Creamy</button></div>
+  <div class="bowlchips"><span>Match</span><button class="chip" data-tol="0.5">Tight</button><button class="chip on" data-tol="1">Medium</button><button class="chip" data-tol="2">Loose</button></div>
+  <button id="bowlFind" style="width:100%;margin-top:14px;background:#9c3b2e;color:#fff;border:none;border-radius:10px;padding:12px;font-weight:700;cursor:pointer">Find my bowl →</button>
+  <div id="bowlResults" style="margin-top:12px"></div>
+ </div>
+</div>
 
 <!-- DCP acknowledgment modal — must be before the app script -->
 <div class="dcp-modal" id="dcpModal" role="dialog" aria-modal="true">
@@ -479,7 +508,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v69';
+const APP_BUILD='dcd-v70';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -708,6 +737,42 @@ function openRamenGeek(r){
  document.getElementById('ramenGeekModal').classList.add('show');
  document.getElementById('ramenGeekClose').onclick=()=>document.getElementById('ramenGeekModal').classList.remove('show');
  document.getElementById('ramenGeekModal').onclick=e=>{if(e.target.id==='ramenGeekModal')e.target.classList.remove('show');};
+}
+// ---------- 🍜 Build me a bowl (match by taste profile) ----------
+const BOWL_AXES=['richness','oiliness','clarity','tare_strength','noodle_firmness','aroma_punch'];
+function openBowl(){document.getElementById('bowlResults').innerHTML='';document.getElementById('bowlModal').classList.add('show');}
+function bowlPref(){
+ const axes={}; BOWL_AXES.forEach(a=>{const el=document.getElementById('bw_'+a); axes[a]=el?+el.value:2.5;});
+ const sel=g=>{const el=document.querySelector('#bowlModal [data-'+g+'].on'); return el?el.dataset[g]:null;};
+ return {axes,broth:sel('broth'),tare:sel('tare'),texture:sel('texture')};
+}
+function scoreBowl(r,pref){
+ const P=r.profile||{}; let d=0; for(const a of BOWL_AXES) d+=Math.abs(pref.axes[a]-(typeof P[a]==='number'?P[a]:2.5));
+ const axisMatch=1-d/(BOWL_AXES.length*5);
+ let want=0,got=0;
+ if(pref.broth){want++; if((r.broth_base||[]).includes(pref.broth))got++;}
+ if(pref.tare){want++; if((r.tare||[]).includes(pref.tare))got++;}
+ if(pref.texture){want++; if(r.broth_texture===pref.texture)got++;}
+ const cat=want?got/want:1, aw=want?0.65:1, cw=want?0.35:0;
+ return Math.max(0,Math.round(100*(axisMatch*aw+cat*cw)));
+}
+function findBowl(){
+ const pref=bowlPref();
+ const tolEl=document.querySelector('#bowlModal [data-tol].on'); const TOL=tolEl?+tolEl.dataset.tol:1;
+ const all=(state.cities[state.active]?.places||[]).filter(p=>p.ramen&&p.ramen.profile);
+ const out=document.getElementById('bowlResults');
+ if(!all.length){out.innerHTML='<p style="font-size:13px;color:var(--muted)">No profiled ramen shops in this city yet.</p>';return;}
+ const matches=all.filter(p=>{
+  const r=p.ramen,P=r.profile||{};
+  if(pref.broth&&!(r.broth_base||[]).includes(pref.broth))return false;
+  if(pref.tare&&!(r.tare||[]).includes(pref.tare))return false;
+  if(pref.texture&&r.broth_texture!==pref.texture)return false;
+  return BOWL_AXES.every(a=>Math.abs(pref.axes[a]-(typeof P[a]==='number'?P[a]:2.5))<=TOL);
+ }).map(p=>({p,score:scoreBowl(p.ramen,pref)})).sort((a,b)=>b.score-a.score);
+ if(!matches.length){out.innerHTML='<p style="font-size:13px;color:var(--muted)">No shops match that bowl — try <b>Loose</b>, or drop a broth/tare.</p>';return;}
+ const shown=matches.slice(0,60);
+ out.innerHTML=`<div style="font-size:12px;color:var(--muted);margin-bottom:6px">${matches.length} shop${matches.length>1?'s':''} match your bowl in ${state.active||'this city'}${matches.length>60?' (showing 60)':''}:</div>`+shown.map(s=>`<button class="bowl-res" data-id="${s.p.id}"><b>${s.score}% match</b> · ${s.p.name}<div style="font-size:11px;color:var(--muted);margin-top:2px">${(s.p.ramen.broth_base||[]).join('/')}${(s.p.ramen.tare||[]).length?' · '+s.p.ramen.tare.join('/'):''}${s.p.ramen.broth_texture?' · '+s.p.ramen.broth_texture:''}${s.p.ramen.signature_bowl?' — '+s.p.ramen.signature_bowl:''}</div></button>`).join('');
+ out.querySelectorAll('[data-id]').forEach(b=>addTouch(b,()=>{document.getElementById('bowlModal').classList.remove('show');selectPlace(b.dataset.id);}));
 }
 // ---------- 📋 in-app translated menu ----------
 let MENUS={}, MENUS_CITY=null, MENU_DIET='gf', MENU_PLACE=null;
@@ -1226,12 +1291,18 @@ function pushFilteredState(){
 
 function wire(){
  document.querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{const k=b.dataset.toggle;state.filters[k]=!state.filters[k];b.classList.toggle('on',state.filters[k]);pushFilteredState();render();});
- function syncPills(){const s=state.filters.pills;document.querySelectorAll('[data-pill]').forEach(b=>{const v=b.dataset.pill;b.classList.toggle('on',v==='all'?s.size===0:s.has(v));});}
+ function syncPills(){const s=state.filters.pills;document.querySelectorAll('[data-pill]').forEach(b=>{const v=b.dataset.pill;b.classList.toggle('on',v==='all'?s.size===0:s.has(v));});const _bb=document.getElementById('bowlBtn');if(_bb)_bb.style.display=s.has('ramen')?'':'none';}
  document.querySelectorAll('[data-pill]').forEach(b=>b.onclick=()=>{const v=b.dataset.pill,s=state.filters.pills;if(v==='all')s.clear();else{s.has(v)?s.delete(v):s.add(v);}syncPills();if(s.size)pushFilteredState();render();});
  document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{const c=b.dataset.cat;state.filters.cats.has(c)?state.filters.cats.delete(c):state.filters.cats.add(c);b.classList.toggle('on');pushFilteredState();render();});
  {const cb=document.getElementById('celiacOnly');if(cb)cb.onclick=()=>{state.filters.celiacOnly=!state.filters.celiacOnly;cb.classList.toggle('on',state.filters.celiacOnly);pushFilteredState();render();};}
  {const hd=document.getElementById('hideDiet');if(hd)hd.onclick=()=>{const on=!document.body.classList.contains('no-diet');document.body.classList.toggle('no-diet',on);hd.classList.toggle('on',on);};}
  {const fg=document.getElementById('filterGear'),fs=document.getElementById('filterSheet');if(fg)fg.onclick=()=>{fs.classList.toggle('is-hidden');fg.classList.toggle('on',!fs.classList.contains('is-hidden'));};}
+ {const bb=document.getElementById('bowlBtn');if(bb)addTouch(bb,openBowl);
+  const bm=document.getElementById('bowlModal'),bc=document.getElementById('bowlClose'),bf=document.getElementById('bowlFind');
+  if(bc)bc.onclick=()=>bm.classList.remove('show');
+  if(bm)bm.onclick=e=>{if(e.target.id==='bowlModal')bm.classList.remove('show');};
+  if(bf)addTouch(bf,findBowl);
+  ['broth','tare','texture','tol'].forEach(g=>document.querySelectorAll('#bowlModal [data-'+g+']').forEach(b=>b.onclick=()=>{const on=b.classList.contains('on');document.querySelectorAll('#bowlModal [data-'+g+']').forEach(x=>x.classList.remove('on'));if(!on)b.classList.add('on');}));}
  document.getElementById('search').oninput=e=>{state.filters.q=e.target.value;render();};
  document.getElementById('search').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();geocodeAndPan(e.target.value);}};
  const goBtn=document.getElementById('searchGo');

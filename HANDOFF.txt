@@ -1155,3 +1155,13 @@ FIELD FLOW: capture in field → Export patch.json → node scripts/build-dcp.mj
 img/dcp/* + merges + bumps SW) → commit img/dcp/* + data → push → auto-deploys.
 TODO (quick follow-up): render p.dcp.photos/people/order in index.html detail card (note already renders
 via the DCP gate). Then a captured DCP shows its photos in-app.
+
+[2026-06-26 — UI, local/no-paid-tokens] Diet-lens dropdown was BUGGY (white line) → replaced with
+4 PILLAR PILLS (Vegan/GF/Ramen/Mom&Pop), all combinable AND (e.g. Mom&Pop+Ramen+Vegan = mom&pop
+vegan ramen). Sheet toggles: "🛡️ Celiac-safe only" (GF pill → strict dedicated/high) + "🥩 Hide diet
+labels" (body.no-diet, carnivore mode). Dietary-category curated chips also in sheet. Removed dead dietOK.
+"BUILD ME A BOWL" (SW v70): button appears when Ramen pill active → modal with 6 taste sliders
+(richness/oiliness/clarity/tare_strength/noodle_firmness/aroma_punch 0-5) + broth/tare/style chips +
+Tight/Medium/Loose. findBowl() returns EVERY profiled ramen shop within per-axis tolerance (+ hard
+broth/tare/texture filters), ranked by match%, in the active city. scoreBowl = axis-distance(0.65) +
+categorical(0.35). Tested: works on 189 profiled Kyoto shops.
