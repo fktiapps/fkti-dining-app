@@ -71,6 +71,11 @@ for (const r of kept) {
     cultural_comfort: { level: ['guide_only', 'japanese', 'konnichiwa', 'english'].includes(r.cultural_comfort_level) ? r.cultural_comfort_level : 'konnichiwa', note: r.cultural_comfort_note || cfg.comfort },
   });
 }
+// auto-scrub any dev-meta that leaked into bios (Haiku/Sonnet leak ~14%; this keeps the cheap pipeline clean)
+const METAX = /\btabelog\b|食べログ|席数|予算|口コミ|掲載/i;
+const scrubT = t => { if (!t) return t; const o = t.split(/(?<=[。.!?！？])\s*/).filter(s => !METAX.test(s)).join(' ').trim(); return o || null; };
+for (const p of built) { const b = p.chef_bio; if (!b) continue; b.background = scrubT(b.background); b.specialty = scrubT(b.specialty); b.philosophy = scrubT(b.philosophy); b.anecdotes = (b.anecdotes || []).filter(a => !METAX.test(a.text)); }
+
 const center = [cfg.centers[0].lat, cfg.centers[0].lng];
 const bounds = [[+box.latMin.toFixed(4), +box.lngMin.toFixed(4)], [+box.latMax.toFixed(4), +box.lngMax.toFixed(4)]];
 const cityObj = { city: cfg.label, subtitle: cfg.subtitle, center, bounds, tz: 'Asia/Tokyo', places: built };

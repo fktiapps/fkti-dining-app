@@ -1,7 +1,7 @@
 export const meta = {
   name: 'spot-nagoya',
-  description: 'Tight-radius dining sweep for Nagoya: discover (Haiku) + verify (Sonnet)',
-  phases: [{ title: 'Discover' }, { title: 'Verify' }],
+  description: 'Tight-radius dining sweep for Nagoya: discover (haiku) + verify (sonnet)',
+  phases: [{ title: 'Discover' }, { title: 'Verify' }, { title: 'Safety recheck' }],
 }
 const ANGLES = ["名古屋城 周辺 名古屋 グルテンフリー 対応 レストラン 食べログ","名古屋城 周辺 名古屋 ヴィーガン ベジタリアン カフェ 食べログ","名古屋城 周辺 名古屋 老舗 名店 個人店 食堂 食べログ","名古屋城 周辺 名古屋 名物 郷土料理 食べログ","名古屋城 周辺 名古屋 カフェ 甘味処 食べログ","名古屋城 周辺 名古屋 restaurant gluten free vegan celiac","味噌カツ 食べログ","ひつまぶし 食べログ","手羽先 食べログ","きしめん 食べログ","あんかけスパ 食べログ","ヴィーガン 名古屋 食べログ"];
 const DISCOVERY_SCHEMA = {"type":"object","additionalProperties":false,"properties":{"candidates":{"type":"array","items":{"type":"object","additionalProperties":false,"properties":{"name_ja":{"type":"string"},"area":{"type":"string"},"cuisine":{"type":"string"},"tabelog_url":{"type":"string"}},"required":["name_ja","area","cuisine","tabelog_url"]}}},"required":["candidates"]};
@@ -26,7 +26,7 @@ E. DINER-FACING — NO dev meta (never mention Tabelog/seat counts/review counts
 phase('Discover')
 const seen = new Set(); const queue = [];
 let round = 0, dry = 0;
-while (round < 3 && dry < 1) {
+while (round < 4 && dry < 2) {
   round++;
   const avoid = queue.length ? queue.map(c => c.name_ja).join('、') : '';
   const disc = await parallel(ANGLES.map((q, i) => () => agent(discPrompt(q, avoid), { label: 'disc r' + round + ' #' + i, phase: 'Discover', schema: DISCOVERY_SCHEMA, model: 'haiku' }).then(r => (r && r.candidates) || []).catch(() => [])));
@@ -41,4 +41,16 @@ phase('Verify')
 const verified = (await parallel(queue.map(c => () => agent(verifyPrompt(c), { label: 'vf:' + c.name_ja.slice(0, 16), phase: 'Verify', schema: VERIFY_SCHEMA, model: 'sonnet' }).then(r => r ? { lead: c.name_ja, ...r } : null).catch(() => null)))).filter(Boolean);
 const keep = verified.filter(r => r.found && r.is_restaurant && !r.closed_or_on_hold);
 log('verified ' + verified.length + '; kept ' + keep.length);
-return { counts: { candidates: queue.length, verified: verified.length, kept: keep.length, rounds: round }, kept: keep };
+
+phase('Safety recheck')
+const RECHECK_SCHEMA = { type: 'object', additionalProperties: false, properties: { gf_confidence: { type: 'string', enum: ['dedicated', 'high', 'options', 'ask', 'no'] }, gf_detail: { type: 'string' }, vegan_status: { type: 'string', enum: ['full', 'options', 'limited', 'ask', 'no'] }, vegan_detail: { type: 'string' } }, required: ['gf_confidence', 'gf_detail', 'vegan_status', 'vegan_detail'] };
+const recheckPrompt = r => `You are the FINAL gluten-free/vegan SAFETY adjudicator for a celiac-first dining app. Using ONLY the verified detail below, assign the correct labels — be conservative, celiac safety first.
+SHOP: ${r.name_ja} (${r.cuisine || ''})
+GF detail: ${r.gf_detail || '(none)'}
+Vegan detail: ${r.vegan_detail || '(none)'}
+gf_confidence: 'dedicated' (certified / separate GF kitchen) · 'high' (strong GF focus, low cross-contamination) · 'options' (GF dishes exist but shared kitchen) · 'ask' (plausible, unconfirmed — needs asking) · 'no' (wheat-central / unsafe). If the detail describes wheat noodles, wheat soy sauce, or tempura with NO gluten-free accommodation, it is 'no' or 'ask' — NEVER 'options'.
+vegan_status: full | options | limited | ask | no — hidden fish dashi / katsuo / bonito / egg means NOT vegan; downgrade accordingly.
+Return the 4 fields; you may tighten the *_detail wording but keep the facts.`;
+const kept = await parallel(keep.map(r => () => agent(recheckPrompt(r), { label: 'diet:' + r.name_ja.slice(0, 14), phase: 'Safety recheck', schema: RECHECK_SCHEMA, model: 'opus' }).then(d => d ? { ...r, ...d } : r).catch(() => r)));
+log('safety-rechecked ' + kept.length + ' (Opus)');
+return { counts: { candidates: queue.length, verified: verified.length, kept: kept.length, rounds: round }, kept };
