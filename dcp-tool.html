@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>DCP Authoring — Deeply Connected Dining</title>
+<style>
+  :root{--ink:#2b2218;--cream:#fbf7ef;--line:#e3d9c6;--accent:#9c3b2e;--sakura:#d56a7a;--muted:#8a7f6c}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif}
+  header{position:sticky;top:0;background:var(--accent);color:#fff;padding:12px 16px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+  header h1{margin:0;font-size:17px;font-weight:700}
+  header .sub{font-size:12px;opacity:.85}
+  main{max-width:680px;margin:0 auto;padding:14px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  input,textarea,select,button{font:inherit;color:var(--ink)}
+  input[type=text],input[type=search],input[type=date],select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:4px 0}
+  textarea{min-height:120px;resize:vertical}
+  label{font-size:13px;color:var(--muted);font-weight:600}
+  button{cursor:pointer;border:none;border-radius:10px;padding:11px 14px;font-weight:700}
+  .primary{background:var(--sakura);color:#fff}
+  .ghost{background:#fff;border:1px solid var(--line)}
+  .pill{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12px;color:var(--muted)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+  .results{max-height:220px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+  .res{padding:9px 11px;border-bottom:1px solid #f0eada;cursor:pointer}
+  .res:hover{background:#faf4e8}.res small{color:var(--muted)}
+  .draft{border-left:4px solid var(--sakura)}
+  .muted{color:var(--muted);font-size:13px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .ok{color:#2e7d32}.warn{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🌸 DCP Authoring</h1>
+  <div class="sub">Deeply Connected Places — write your personal notes. Saves offline on this device.</div>
+</header>
+<main>
+  <div class="card">
+    <div class="row">
+      <button class="ghost" id="loadBtn">↻ Load / refresh places</button>
+      <span class="pill" id="status">not loaded</span>
+    </div>
+    <div class="muted">Pulls live place data; cached on this device so the field mode works offline afterward.</div>
+  </div>
+
+  <div class="card">
+    <label>Find a place (or type a new one)</label>
+    <input type="search" id="q" placeholder="Search name… e.g. Oyaji, くら"/>
+    <div class="results" id="results" style="display:none"></div>
+    <div class="row" style="margin-top:6px">
+      <button class="ghost" id="newBtn">+ New place (not in app yet)</button>
+    </div>
+  </div>
+
+  <div class="card" id="editor" style="display:none">
+    <div id="selName" style="font-weight:700;font-size:16px"></div>
+    <div class="muted" id="selMeta"></div>
+    <label>Your note (the story — why this place is deeply connected)</label>
+    <textarea id="note" placeholder="The owner, the relationship, what makes it matter to you…"></textarea>
+    <label>Visited</label>
+    <input type="date" id="visited"/>
+    <div class="bar">
+      <button class="primary" id="saveBtn">Save draft</button>
+      <button class="ghost" id="cancelBtn">Cancel</button>
+      <span id="saveMsg" class="ok"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row"><strong>Saved drafts (<span id="cnt">0</span>)</strong>
+      <button class="ghost" id="exportBtn" style="margin-left:auto">⬇ Export patch (.json)</button>
+    </div>
+    <div class="muted">Export, then run <code>node scripts/build-dcp.mjs &lt;file&gt;</code> to merge into the city data.</div>
+    <div id="drafts"></div>
+  </div>
+</main>
+<script>
+const BASE='https://fkti-dining.pages.dev';
+const CITIES=['kyoto','kanazawa','nara','hiroshima'];
+const LS_PLACES='dcp_places_cache', LS_DRAFTS='dcp_drafts';
+let PLACES=[]; // {id,name,city}
+let drafts=JSON.parse(localStorage.getItem(LS_DRAFTS)||'{}');
+let current=null;
+const $=id=>document.getElementById(id);
+const slug=s=>'dcp_'+(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,24);
+
+async function load(){
+  $('status').textContent='loading…';
+  try{
+    const all=[];
+    for(const c of CITIES){
+      const d=await (await fetch(BASE+'/data/'+c+'.json',{cache:'no-store'})).json();
+      for(const p of d.places) all.push({id:p.id,name:p.name,city:c});
+    }
+    PLACES=all; localStorage.setItem(LS_PLACES,JSON.stringify(all));
+    $('status').textContent=all.length+' places';
+  }catch(e){
+    const cached=localStorage.getItem(LS_PLACES);
+    if(cached){PLACES=JSON.parse(cached);$('status').textContent=PLACES.length+' (cached/offline)';}
+    else $('status').textContent='load failed (offline & no cache)';
+  }
+}
+function search(){
+  const q=$('q').value.trim().toLowerCase();
+  const box=$('results');
+  if(!q){box.style.display='none';return;}
+  const hits=PLACES.filter(p=>p.name.toLowerCase().includes(q)).slice(0,30);
+  box.innerHTML=hits.map(p=>`<div class="res ${drafts[p.id]?'draft':''}" data-id="${p.id}">${p.name} <small>· ${p.city}${drafts[p.id]?' · ✎ draft':''}</small></div>`).join('')||'<div class="res muted">No match — use “+ New place”.</div>';
+  box.style.display='block';
+  box.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>pick(el.dataset.id));
+}
+function pick(id){
+  const p=PLACES.find(x=>x.id===id)||drafts[id]&&{id,name:drafts[id].name,city:drafts[id].city};
+  if(!p)return;
+  current={id:p.id,name:p.name,city:p.city};
+  $('selName').textContent=p.name; $('selMeta').textContent=p.city+' · '+p.id;
+  const dr=drafts[id]||{};
+  $('note').value=dr.greg_note||''; $('visited').value=dr.visited||'';
+  $('editor').style.display='block'; $('saveMsg').textContent='';
+  $('results').style.display='none'; window.scrollTo(0,document.body.scrollHeight);
+}
+function newPlace(){
+  const name=prompt('New place name (include JP + English if you can):'); if(!name)return;
+  const city=prompt('City (kyoto / kanazawa / nara / hiroshima / other):','kyoto')||'other';
+  current={id:slug(name),name,city,isNew:true};
+  $('selName').textContent=name; $('selMeta').textContent=city+' · '+current.id+' · NEW (stub)';
+  $('note').value=''; $('visited').value=''; $('editor').style.display='block'; $('saveMsg').textContent='';
+}
+function save(){
+  if(!current)return;
+  drafts[current.id]={greg_note:$('note').value.trim(),visited:$('visited').value,name:current.name,city:current.city,isNew:!!current.isNew};
+  localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));
+  $('saveMsg').textContent='saved ✓'; renderDrafts();
+}
+function renderDrafts(){
+  const ids=Object.keys(drafts); $('cnt').textContent=ids.length;
+  $('drafts').innerHTML=ids.map(id=>{const d=drafts[id];return `<div class="card" style="margin:8px 0"><div class="row"><strong>${d.name}</strong> <span class="pill">${d.city}</span>${d.isNew?'<span class="pill">new</span>':''}<button class="ghost" data-edit="${id}" style="margin-left:auto">edit</button><button class="ghost" data-del="${id}">✕</button></div><div class="muted">${(d.greg_note||'').slice(0,140)||'(empty)'}</div><div class="muted">${d.visited||'no date'}</div></div>`;}).join('');
+  $('drafts').querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>pick(b.dataset.edit));
+  $('drafts').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{if(confirm('Delete this draft?')){delete drafts[b.dataset.del];localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));renderDrafts();}});
+}
+function exportPatch(){
+  // shape: { city: { id: {greg_note, visited, _new_name?} } }  — build-dcp.mjs consumes this
+  const out={};
+  for(const [id,d] of Object.entries(drafts)){
+    (out[d.city]=out[d.city]||{})[id]={greg_note:d.greg_note,visited:d.visited||null};
+    if(d.isNew) out[d.city][id]._new_name=d.name;
+  }
+  const blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='dcp_patch.json'; a.click();
+}
+$('loadBtn').onclick=load; $('q').oninput=search; $('newBtn').onclick=newPlace;
+$('saveBtn').onclick=save; $('cancelBtn').onclick=()=>{$('editor').style.display='none';};
+$('exportBtn').onclick=exportPatch;
+renderDrafts();
+if(localStorage.getItem(LS_PLACES)){PLACES=JSON.parse(localStorage.getItem(LS_PLACES));$('status').textContent=PLACES.length+' (cached)';} else load();
+</script>
+</body>
+</html>

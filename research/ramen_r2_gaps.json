@@ -1,0 +1,281 @@
+{
+ "question": "Authoritative, expert-level briefing filling specific GAPS in ramen knowledge, to enable documenting individual ramen shops in Kyoto, Kanazawa, Nara, and Hiroshima. Use correct romaji + kanji and cite authoritative sources. Cover, in depth:\n\n1. HIROSHIMA-AREA RAMEN (highest priority — app city). (a) Hiroshima tsukemen (広島つけ麺): its defining form — cold/chilled noodles and chilled dipping sauce, the chili-heat ladder, sesame/rayu character, cabbage and other vegetables, the Bakudanya (ばくだん屋) lineage and origins. (b) Hiroshima shiru-nashi tantanmen (汁なし担々麺): broth-less dandan noodles, the Kunimatsu (くにまつ) / Kisaku origins, sansho/numbing character, mixing ritual, \"okawari\" rice finish. (c) \"Hiroshima ramen\"/Onomichi-area styles: soy-based pork-and-seafood broth, back-fat, flat small noodles; how Onomichi (尾道) ramen differs (pork back-fat squares, chicken-and-seafood shoyu, flat noodles).\n\n2. KANAZAWA & NARA ramen — is there a defining local ramen style, or mainly nationwide styles? Document honestly: Kanazawa (e.g. Kanazawa curry influence? Toyama Black proximity? any local chains), Nara (e.g. tenri stamina ramen 天理スタミナラーメン nearby, any Nara-local character). If there's no strong local style, say so.\n\n3. BROTH-BASE TAXONOMY with terminology and citations strong enough to seed schema enum values: tonkotsu (豚骨); tori-paitan (鶏白湯, cloudy chicken) vs chintan (清湯, clear); gyokai/seafood — niboshi (煮干し), katsuobushi (鰹節), sababushi (鯖節); gyokai-tonkotsu blends; beef (gyukotsu); vegetable/vegan (kombu 昆布 + shiitake 椎茸); W-soup (Wスープ, animal+seafood double broth); and the assari (あっさり, light) ↔ kotteri (こってり, rich) richness axis. What objectively distinguishes these.\n\n4. SUB-GENRES — defining features of: tsukemen (つけ麺, dip noodles), mazesoba/abura-soba (まぜそば/油そば, brothless), tantanmen (担々麺), niboshi ramen (煮干し, sardine-forward), jiro-kei / G-kei (二郎系, mountainous pork/veg/fat with \"call\" ordering: mashimashi ニンニク等), tori-paitan, and modern vegan ramen.\n\n5. TOPPINGS — what each signals about a shop, and preparation variants: chashu (チャーシュー — braised stewed vs char-grilled/aburi 炙り; rolled loin vs pork-belly; pork vs chicken); menma (メンマ); ajitama/ajitsuke-tamago (味玉, marinated soft egg); nori (海苔); naruto/narutomaki (鳴門巻); negi (ネギ); kakuni (角煮); moyashi/bean sprouts; corn/butter (Sapporo). \n\n6. GLUTEN-FREE & VEGAN REALITY in practice: precisely why standard ramen is unsafe for celiacs (wheat noodles + kansui, wheat in shoyu tare, pork/fish broth, soy-sauce cross-contamination); what a GENUINELY gluten-free ramen requires (rice or konjac/shirataki noodles, tamari/GF tare, allergen-controlled broth) and how rare/reliable it is in Japan; what a FULLY vegan ramen requires (kombu/shiitake/vegetable broth with NO katsuo/niboshi dashi and NO pork/chicken — note that many \"vegetable\" broths still hide fish dashi); named vegan ramen specialists in Japan (e.g. T's TanTan, Soranoiro, Towzen, Kyoto/area vegan ramen); and the exact questions a celiac or vegan diner should ask staff in Japanese.\n\nFor each, prioritize what is OBJECTIVELY VERIFIABLE about a shop from menus/official info, so it can seed a per-shop data schema and instruct research agents how to classify a shop.",
+ "summary": "Synthesis step was skipped or failed — returning 21 verified claims unmerged.",
+ "findings": [],
+ "confirmed": [
+  {
+   "claim": "Kunimatsu (くにまつ) serves Hiroshima shiru-nashi tantanmen (汁なし担々麺) characterized by the numbing stimulation of Sichuan pepper (花椒, kashō/sanshō) and the heat of chili oil (ラー油, rāyu), which the shop describes as addictive.",
+   "source": "https://kunimatsu-hiroshima.com/",
+   "quote": "花椒の刺激とラー油の辛味がクセになる",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Kunimatsu's flagship shop opened in 2009 in Hiroshima's Hatchobori (八丁堀) district, Naka Ward (中区), and has since expanded to many locations centered on Hiroshima.",
+   "source": "https://kunimatsu-hiroshima.com/",
+   "quote": "2009年の開店以来、広島を中心に多くの店舗をオープンさせていただいております。",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Onomichi ramen (尾道ラーメン) broth is based on clear chicken-bone (tori-gara) dashi combined with small-fish dashi from the Seto Inland Sea, seasoned with soy sauce (shoyu).",
+   "source": "https://onomichiramen-maruboshi.jp/history/",
+   "quote": "鶏ガラで取った澄んだダシと瀬戸内の小魚からとったダシに醤油を合わせたスープがベースです",
+   "vote": "3-0"
+  },
+  {
+   "claim": "A defining feature of Onomichi ramen is minced pork back-fat (背脂のミンチ) scattered on top, which adds a rich (kotteri) character to the soup.",
+   "source": "https://onomichiramen-maruboshi.jp/history/",
+   "quote": "背脂のミンチがこってり感を加えています",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Onomichi ramen noodles are predominantly medium-fine, flat-cut (平打ち) noodles.",
+   "source": "https://onomichiramen-maruboshi.jp/history/",
+   "quote": "麺は中細で平打ちのものが多く使われています",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Tenri Stamina Ramen (天理スタミナラーメン), known as Tensuta (天スタ), originated in Tenri City, Nara Prefecture, and was founded in 1978, making it a Nara-area local ramen style.",
+   "source": "https://www.tensuta.jp/",
+   "quote": "born in Tenri City, Nara Prefecture ... known affectionately as 天スタ since its founding in 1978",
+   "vote": "3-0"
+  },
+  {
+   "claim": "The defining form of Tenri Stamina Ramen is a pork-bone (tonkotsu) based broth topped with stir-fried Chinese cabbage, Chinese chives (nira), garlic, and chili paste, plus back fat, producing a spicy character.",
+   "source": "https://www.tensuta.jp/",
+   "quote": "combines slightly thin homemade noodles with stir-fried Chinese cabbage, Chinese chives, garlic, and chili paste, topped with back fat ... 'spicy yet smooth'",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Hachiban Ramen's shops are concentrated in Ishikawa (Kanazawa's prefecture) and the surrounding Hokuriku/adjacent prefectures — Ishikawa, Toyama, Fukui, Nagano, and Okayama — indicating it is a regional chain rather than a nationwide one.",
+   "source": "https://www.hachiban.jp/shop/",
+   "quote": "石川県 富山県 福井県 長野県 岡山県",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Hiroshima tsukemen (広島つけ麺) is a regional variant of tsukemen served in Hiroshima City and surroundings, distinguished from Kanto-style tsukemen by chilled noodles served with a chilled, soy-based dipping sauce containing chili peppers, chili oil, vinegar and sesame, ranging from spicy to extremely spicy (激辛).",
+   "source": "https://ja.wikipedia.org/wiki/%E5%BA%83%E5%B3%B6%E3%81%A4%E3%81%91%E9%BA%BA",
+   "quote": "しょうゆベースのつけだれに唐辛子・ラー油・酢・ごまなどの入った辛口（激辛）のたれ; 関東地方などで広く知られるつけ麺とはやや趣が異なり",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Hiroshima tsukemen is distinguished from standard tsukemen by including boiled vegetables such as cabbage and a boiled egg as accompanying ingredients.",
+   "source": "https://ja.wikipedia.org/wiki/%E5%BA%83%E5%B3%B6%E3%81%A4%E3%81%91%E9%BA%BA",
+   "quote": "キャベツなどの茹で野菜やゆで卵が具材として添えられている",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Onomichi ramen is defined by a soy-sauce (shoyu) based broth with floating pork back-fat and flat noodles.",
+   "source": "https://ja.wikipedia.org/wiki/%E5%B0%BE%E9%81%93%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+   "quote": "豚の背脂を浮かせた醤油ベースのスープと平打ち麺が特徴",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Onomichi ramen broth varies by shop: some use pork bone and seafood with straight thin noodles, others use pork bone, chicken, vegetables and kombu (kelp).",
+   "source": "https://ja.wikipedia.org/wiki/%E5%B0%BE%E9%81%93%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+   "quote": "豚骨と海産物ベースのスープにストレート細麺の尾道ラーメンを出す店、豚骨、鶏ガラ、野菜、こんぶからスープを取る店もある",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Hiroshima tsukemen (広島つけ麺) is defined by both the noodles and the dipping sauce being served cold/chilled, which distinguishes it from Kanto-region tsukemen.",
+   "source": "https://magazine.tabelog.com/articles/224906",
+   "quote": "「麺もスープも冷たいのが特徴」",
+   "vote": "2-1"
+  },
+  {
+   "claim": "Hiroshima tsukemen was originally called 'reimen' (冷麺) before becoming widely known as Hiroshima tsukemen.",
+   "source": "https://magazine.tabelog.com/articles/224906",
+   "quote": "Originally called \"reimen\" (冷麺) before becoming known as \"Hiroshima tsukemen\"",
+   "vote": "3-0"
+  },
+  {
+   "claim": "The dipping sauce is soy-based with chili oil (rayu), red pepper, vinegar, and sesame, with heat available in a seven-step gradation from mild to extremely spicy, and additional rayu can be added after serving.",
+   "source": "https://magazine.tabelog.com/articles/224906",
+   "quote": "Soy-based foundation with chili oil (rayu), red pepper, vinegar, and sesame ... Heat levels available in seven-step gradation from mild to extremely spicy ... Additional rayu can be added after initial serving",
+   "vote": "2-1"
+  },
+  {
+   "claim": "The origin of Hiroshima tsukemen traces to the predecessor of an 'origin' (元祖) shop who started a Chinese restaurant in Hatchobori, Naka-ku, after WWII, serving seasonal (March-October) reimen; Kakudanaka Kuji then founded year-round specialist 'Hiyamen-ya' (冷めん家) in 1985 as the second-oldest such shop.",
+   "source": "https://magazine.tabelog.com/articles/224906",
+   "quote": "広島つけ麺の発祥は、元祖と呼ばれる店の先代が、戦後に中区八丁堀で始めた中華料理店から。当時は3〜10月の季節限定メニューだった冷麺を、角中久司さんが通年食べられる専門店として1985年「冷めん家」を創業。",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Kisaku (きさく) is described as the pioneering/original shop credited with sparking Hiroshima's shiru-nashi tantanmen boom.",
+   "source": "https://www.nta.co.jp/media/tripa/articles/VyQlw",
+   "quote": "「きさく」は、広島の汁なし坦々麺ブームに火をつけたと言われる元祖的なお店。",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Tenri Stamina Ramen is a local ramen variety originating in Tenri City, Nara Prefecture, run by the company Nakai, established February 1992.",
+   "source": "https://ja.wikipedia.org/wiki/天理スタミナラーメン",
+   "quote": "設立 1992年（平成4年）2月 (established February 1992); a local ramen variety from Tenri City in Nara Prefecture, operated by the limited company Nakai",
+   "vote": "2-1"
+  },
+  {
+   "claim": "The dish is defined by a stir-fry of pork, Chinese cabbage, and Chinese chives (nira) with garlic and doubanjiang, served atop a tonkotsu or chicken-bone (toriga ra) soy-sauce broth.",
+   "source": "https://ja.wikipedia.org/wiki/天理スタミナラーメン",
+   "quote": "トンコツ、または鶏ガラベースの醤油味のスープ (tonkotsu or chicken-based soy sauce broth)",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Ramen broth/dashi is classified into two textural categories: chintan (clear) and paitan (cloudy).",
+   "source": "https://www.japan-food-chain.net/food-type/ramen/",
+   "quote": "Dashi (出汁)...Can be chintan (clear) or paitan (cloudy)",
+   "vote": "3-0"
+  },
+  {
+   "claim": "Towzen in Kyoto serves a fully vegan soy milk ramen using a soy milk broth flavored with kombu (kelp) and soy sauce, with no fish-based dashi.",
+   "source": "https://www.insidekyoto.com/towzen",
+   "quote": "serves up one of Kyoto's most delicious bowls of soy milk ramen, and it's completely vegan!",
+   "vote": "2-0"
+  }
+ ],
+ "refuted": [
+  {
+   "claim": "Hiroshima is the origin point and national-boom igniter of shiru-nashi tantanmen (汁なし担々麺), broth-less dandan noodles.",
+   "vote": "1-2",
+   "source": "https://www.nta.co.jp/media/tripa/articles/VyQlw"
+  },
+  {
+   "claim": "The dish's defining flavor profile is authentic Sichuan-style heat using rayu (ラー油) and sansho (花椒/numbing pepper).",
+   "vote": "1-2",
+   "source": "https://www.nta.co.jp/media/tripa/articles/VyQlw"
+  },
+  {
+   "claim": "Ramen Jiro (jiro-kei) broth is a clear pork-bone broth (tanrei/清湯) steeped from pork backbone, pork femur, and char siu pork plus vegetable offcuts and garlic/ginger, contrasting with the murky Hakata tonkotsu style.",
+   "vote": "0-0",
+   "source": "https://sabukaru.online/articles/ramen-jiro"
+  },
+  {
+   "claim": "Jiro-kei noodles are made in house and are distinctively thick and curly, an iconic feature of the style.",
+   "vote": "0-0",
+   "source": "https://sabukaru.online/articles/ramen-jiro"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://ja.wikipedia.org/wiki/%E5%BA%83%E5%B3%B6%E3%81%A4%E3%81%91%E9%BA%BA",
+   "quality": "secondary",
+   "claimCount": 5
+  },
+  {
+   "url": "https://kunimatsu-hiroshima.com/",
+   "quality": "primary",
+   "claimCount": 4
+  },
+  {
+   "url": "https://ja.wikipedia.org/wiki/%E5%B0%BE%E9%81%93%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+   "quality": "secondary",
+   "claimCount": 5
+  },
+  {
+   "url": "https://magazine.tabelog.com/articles/224906",
+   "quality": "secondary",
+   "claimCount": 5
+  },
+  {
+   "url": "https://onomichiramen-maruboshi.jp/history/",
+   "quality": "primary",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.nta.co.jp/media/tripa/articles/VyQlw",
+   "quality": "secondary",
+   "claimCount": 5
+  },
+  {
+   "url": "https://ja.wikipedia.org/wiki/天理スタミナラーメン",
+   "quality": "secondary",
+   "claimCount": 4
+  },
+  {
+   "url": "https://www.tensuta.jp/",
+   "quality": "primary",
+   "claimCount": 4
+  },
+  {
+   "url": "https://www.hachiban.jp/shop/",
+   "quality": "primary",
+   "claimCount": 3
+  },
+  {
+   "url": "https://ja.wikipedia.org/wiki/富山ブラック",
+   "quality": "secondary",
+   "claimCount": 4
+  },
+  {
+   "url": "http://www.friendsinramen.com/p/ramen-glossary.html",
+   "quality": "unreliable",
+   "claimCount": 0
+  },
+  {
+   "url": "https://www.japan-food-chain.net/food-type/ramen/",
+   "quality": "secondary",
+   "claimCount": 5
+  },
+  {
+   "url": "https://sabukaru.online/articles/ramen-jiro",
+   "quality": "blog",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.byfood.com/blog/culture/how-to-order-at-ramen-jiro",
+   "quality": "unreliable",
+   "claimCount": 0
+  },
+  {
+   "url": "https://willchews.com/index.php/resources-guides/ramen-glossary/",
+   "quality": "blog",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.apexsk.com/blogs/japan-lifestyle/ramen-toppings-a-brief-introduction-about-30-different-kinds",
+   "quality": "blog",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.nichijou.net/blog/tori-paitan",
+   "quality": "blog",
+   "claimCount": 3
+  },
+  {
+   "url": "https://www.5amramen.com/post/niboshi-ramen-emoto",
+   "quality": "blog",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.itravelforveganfood.com/articles/where-to-find-the-best-vegan-ramen-in-japan",
+   "quality": "blog",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.legalnomads.com/gluten-free/japan/",
+   "quality": "blog",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.celiacchat.ca/gluten-free-soranoiro-nippon-ramen-restaurant-tokyo-station-japan-review",
+   "quality": "blog",
+   "claimCount": 4
+  },
+  {
+   "url": "https://www.5amramen.com/post/soranoiro-tokyo-vegan-ramen",
+   "quality": "blog",
+   "claimCount": 4
+  },
+  {
+   "url": "https://www.insidekyoto.com/towzen",
+   "quality": "secondary",
+   "claimCount": 4
+  }
+ ],
+ "stats": {
+  "angles": 5,
+  "sources": 23,
+  "claims": 94,
+  "verified": 25,
+  "confirmed": 21,
+  "killed": 4,
+  "afterSynthesis": 0
+ }
+}

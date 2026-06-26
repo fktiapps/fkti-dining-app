@@ -1,0 +1,273 @@
+{
+ "question": "Round 3 for a gluten-free/vegan Japanese konbini (7-Eleven, FamilyMart, Lawson) guide. The allergen LAW and the official portals are already covered, and the safest single item (plain salt onigiri 塩むすび) is established. The GAP now: the guide reads too RESTRICTIVE — it implies salt onigiri is the only safe thing. It is NOT. Goal: map the FULL realistic GF and/or vegan SHOPPING LIST a traveler can actually assemble at a konbini, across the whole store, with honest label caveats (scan 原材料名 for 小麦 / animal terms; recommended-tier allergens like soy/pork/chicken/fish/dashi may be unlabeled). Be concrete and conservative; cite. Cover:\n\n1. PROTEINS: サラダチキン (salada chicken / plain-salt steamed chicken breast — is the plain/salt flavor typically just chicken+salt = gluten-free? flavored versions?), hard-boiled eggs (味付け marinated vs plain — soy?), packaged tofu / 冷奴, natto (minus its wheat-soy tare packet), grilled/salted fish (塩焼き — check teriyaki glaze), cheese sticks, edamame. Which are plausibly GF, which vegan.\n\n2. FRESH/PRODUCE & CHILLED: packaged cut vegetables and undressed salads (カット野菜), cut fruit, packaged sweet potato / 焼き芋, pickles (check), seaweed/もずく (check vinegar/dashi). Where GF/vegan.\n\n3. SNACKS/SHELF: nuts, dried fruit, dark chocolate, rice crackers/せんべい (soy-sauce caution), potato chips (plain salt), konnyaku/ゼリー (gelatin vs agar), mochi/anko wagashi, soy milk & plant drinks, yogurt.\n\n4. FROZEN: edamame, frozen fruit, plain rice, plain vegetables.\n\n5. Produce the result as TWO concrete shopping lists — \"Celiac/GF konbini meal\" and \"Vegan konbini meal\" — naming item CATEGORIES (durable, not seasonal SKUs) a traveler can reliably find, each with the label term that confirms/disqualifies it. Note chain differences where relevant (esp. Lawson/Natural Lawson health line, Seven Premium, FamilyMart). Flag the big traps (sauces/dashi/soy sauce/batter) and anything disputed.\n\nEmphasis: ABUNDANCE with honesty — show there's a real meal here beyond salt onigiri, without overclaiming safety.",
+ "summary": "There is a genuine, multi-category konbini meal beyond salt onigiri for both celiac/GF and vegan travelers, but every item must be confirmed by scanning the 原材料名 (ingredient list) because Japan mandates labeling of only 8 'specific ingredients' (egg, milk, wheat, buckwheat, peanut, shrimp, crab, walnut) while soy, chicken, pork, beef, salmon/mackerel/bonito and gelatin are only voluntarily labeled and can appear unlabeled. The single most important cross-cutting trap is hidden katsuo (skipjack/bonito) dashi and fish extract, which legally need not be disclosed in small amounts and contaminate most onigiri fillings, many salads/dressings, pickles, and seaweed items. For GF, the load-bearing kanji to scan are 小麦 (wheat), 麦/大麦 (barley), 麦芽 (malt), and 醤油 (soy sauce); the biggest surprise trap is that 'plain' salada chicken is NOT reliably GF — Seven Premium's plain salad chicken contains 小麦粉 (wheat flour), egg and dairy, whereas Prima Ham's plain product is wheat-free, so brand/SKU label-checking is mandatory. Realistic safe categories include plain salt-brined eggs (塩, salted inside the shell), plain tofu/edamame/natto (minus its soy-sauce tare packet), cut fruit and vegetables, nuts, plain/salt/nori chips, and certain Natural Lawson health-line items. The honest framing is abundance-with-verification: a real assembled meal exists, but none of it is certified GF/vegan and label-scanning (plus awareness of unlabeled dashi) is non-negotiable.",
+ "findings": [
+  {
+   "claim": "Japan mandates labeling of only 8 'specific ingredients' (egg, milk, wheat, buckwheat, peanut, shrimp, crab, walnut); soy, chicken, pork, beef, salmon, mackerel/bonito and gelatin are merely RECOMMENDED (voluntary) and can legally appear unlabeled. Wheat IS in the mandatory tier and reliably declared, but dashi/fish/soy/animal proteins may be hidden.",
+   "confidence": "high",
+   "evidence": "Primary academic source (PMC) lists soybean, chicken, pork, beef, salmon, mackerel and gelatin in the voluntary 'recommended' tier, distinct from the mandatory allergens. 2023-2025 changes (walnut mandatory 2023, cashew 2025) do not move any of these into the mandatory tier. The refuted claim that 'wheat is always declared' lost on framing/overreach, but the two-tier law is well-established: wheat IS mandatory-tier, while katsuo/bonito is not even on the 20-item recommended list and can go entirely undisclosed regardless of amount.",
+   "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8691970/"
+   ],
+   "vote": "3-0"
+  },
+  {
+   "claim": "'Plain' salada chicken (steamed salt chicken breast) is NOT reliably gluten-free and must be label-checked per brand/SKU. Seven Premium's 糖質0gのサラダチキン プレーン contains wheat flour (小麦粉), egg and dairy; Prima Ham's plain product is wheat-free.",
+   "confidence": "high",
+   "evidence": "Two primary manufacturer panels conflict: Seven Premium (7premium.jp id=1082) lists 小麦粉 (wheat flour), 卵白粉 (egg white), ホエイパウダー (whey) and declares 卵・乳成分・小麦・大豆・鶏肉 — unsafe for celiacs, not vegan. Prima Ham (primaham.co.jp/0034) lists only 鶏むね肉、食塩 plus additives with wheat marked '－' (absent). This refutes the 'plain = chicken + salt' assumption. Caveat: Japanese labels certify 'no wheat as ingredient,' not certified-GF, so even Prima Ham is GF-by-label not certified. Flavored versions should be assumed to contain soy sauce/wheat.",
+   "sources": [
+    "https://7premium.jp/product/search/detail?id=1082",
+    "https://www.primaham.co.jp/products/detail/0034.html",
+    "https://www.sej.co.jp/products/a/item/250701/"
+   ],
+   "vote": "3-0"
+  },
+  {
+   "claim": "Hard-boiled eggs are a safe GF protein in the plain salt version (marked 塩), salted inside the intact shell via osmotic brining and needing no sauce; darker-brown marinated 'ajitsuke'/煮たまご eggs are typically soy-sauce-based and should be avoided — though a specific Lawson 煮たまご is a documented exception declaring neither wheat nor soy.",
+   "confidence": "high",
+   "evidence": "Konbini salt eggs are brine-salted through the shell (Seven's とろっとゆでたまご = egg + 伯方の塩; Seven Premium half-cooked variant lists only 卵). Marinated eggs use soy sauce + mirin (browns the egg); Lawson quail 味付けたまご declares 卵・小麦・大豆. Exception: Lawson 煮たまご (1390519_2168) marks only 卵 on its 28-allergen panel. Caveats: 'brown = soy' is a heuristic only (smoked くんたま are also brown); some salt eggs use dashi-salt brine adding unlabeled fish (recommended-tier) — GF but not vegan. Eggs overall are not vegan.",
+   "sources": [
+    "https://www.gluten-free-japan.com/guide/convenience-stores",
+    "https://www.legalnomads.com/gluten-free/japan/",
+    "https://www.lawson.co.jp/sp/recommend/original/detail/1390519_2168.html",
+    "https://www.sej.co.jp/products/a/item/102026"
+   ],
+   "vote": "3-0"
+  },
+  {
+   "claim": "Salt onigiri (塩むすび / 塩おむすび) is the ONLY onigiri filling that reliably avoids animal products across 7-Eleven, FamilyMart and Lawson; most other plant-looking fillings (umeboshi/plum, kombu, natto rolls, inari) contain undisclosed katsuo (skipjack) or sardine dashi. It is also GF (rice + salt).",
+   "confidence": "high",
+   "evidence": "isitveganjapan.com documents direct customer-service confirmation from all three chains that non-salt fillings carry hidden fish (7-Eleven plum and kelp contain katsuo; FamilyMart plum contains katsuo+sardines; Lawson natto contains niboshi), none required on the label. MATCHA independently states salt onigiri is the only rice ball using no broth. The GaijinPot blog body is internally contradictory (verified quote was a comment), so substance rests on the stronger isitveganjapan/MATCHA sources. Note: salmon/umeboshi onigiri are NOT reliably GF (that claim was refuted — soy sauce/dashi). Natural Lawson and standalone vegan stores stock certified-vegan onigiri as exceptions.",
+   "sources": [
+    "https://isitveganjapan.com/food-on-the-go/507-2/",
+    "https://matcha-jp.com/en/3781",
+    "https://blog.gaijinpot.com/7-convenience-store-items-for-vegetarians-in-japan/"
+   ],
+   "vote": "3-0"
+  },
+  {
+   "claim": "A realistic range of vegan-plausible ready-to-eat items exists beyond salt onigiri: plain (undressed) salads, edamame (incl. salt-flavored), plain tofu/冷奴, natto (without its soy-sauce/dashi tare packet), fresh and cut fruit, and some pickles.",
+   "confidence": "medium",
+   "evidence": "thejapaneserose.com lists these verbatim; corroborated by MATCHA, GaijinPot and neverendingvoyage (pre-cut salads, plain tofu, natto, edamame, pickled vegetables, fruit). Natto base is itself often vegan; choose タレなし or discard the bonito/soy tare packet. Confidence is medium because all sources are blog-tier and each item carries caveats: salads can hide animal/fish in dressing (the 'most dressings are vegan' claim was REFUTED), pickles can contain fish sauce/bonito, and tofu/edamame dipping sauces are not vegan. The claim asserts these 'exist' as a realistic range, appropriately hedged.",
+   "sources": [
+    "https://thejapaneserose.com/the-vegan-guide-to-japanese-convenience-stores/",
+    "https://matcha-jp.com/en/7716",
+    "https://blog.gaijinpot.com/7-convenience-store-items-for-vegetarians-in-japan/"
+   ],
+   "vote": "2-1"
+  },
+  {
+   "claim": "Vegan-plausible shelf/snack categories include plain and salted mixed nuts, dried fruit, salt/light-salt/nori potato chips, dried sweet potato (干し芋/hoshi imo/sweet potato sticks), senbei (rice crackers), and Natural Lawson health-line items such as yuzu-salt soybean chips.",
+   "confidence": "high",
+   "evidence": "thejapaneserose.com and MATCHA both list these; isitveganjapan corroborates Natural Lawson yuzu soybean chips (Biokura: soybean, rice oil, yuzu peel, beet sugar, salt, kelp, chili, yeast, lemon — all plant) and dried sweet potato sticks. Per-item caveats lowering per-SKU reliability: (1) SENBEI is weakest — many are shoyu/soy-sauce flavored (vegan but NOT GF due to wheat), and many contain ebi/shrimp, katsuo/bonito or honey; (2) nori chips often carry shrimp/crab cross-harvest disclaimers and sometimes scallop extract (ほたてエキス) or animal hydrolyzed protein; (3) Natural Lawson yuzu chips carry a shared-factory shrimp/crab/wheat/egg/dairy/peanut warning. All 'plausible' pending an 原材料名 scan.",
+   "sources": [
+    "https://thejapaneserose.com/the-vegan-guide-to-japanese-convenience-stores/",
+    "https://matcha-jp.com/en/7716",
+    "https://isitveganjapan.com/food-on-the-go/natural-lawson"
+   ],
+   "vote": "3-0"
+  },
+  {
+   "claim": "The dominant hidden non-vegan/non-vegetarian trap is dashi (most commonly bonito/katsuo fish stock), which can be legally unlabeled; other vegan traps are emulsifiers (乳化剤, occasionally animal/dairy-derived), salad dressings (may contain chicken/fish extract), white sugar (potentially bone-char processed), plus margarine, butter, creaming powder, gelatin and honey.",
+   "confidence": "high",
+   "evidence": "Multiple sources (thejapaneserose, MATCHA, isitveganjapan, Voyapon, byFood) converge: fish dashi is used unlabeled when below threshold; salad dressings 'likely contain animal and fish-derived ingredients' (one example contains chicken extract); white sugar may be bone-char-refined (Lush Japan case; no consensus among Japan vegan groups — hence 'potentially'); emulsifier 乳化剤 source is rarely labeled though MOST often soy/plant-derived (the 乳 kanji means milk and is commonly misread as dairy). Margarine/butter/creaming powder confirmed verbatim. This is the central honesty caveat: label-checking is necessary but imperfect because recommended-tier and small-quantity ingredients can be legally omitted.",
+   "sources": [
+    "https://matcha-jp.com/en/7716",
+    "https://thejapaneserose.com/the-vegan-guide-to-japanese-convenience-stores/",
+    "https://isitveganjapan.com/food-on-the-go/507-2/"
+   ],
+   "vote": "3-0"
+  },
+  {
+   "claim": "GF travelers should scan 原材料名 for 小麦 / 小麦粉 (wheat), 麦 / 大麦 (barley), 麦芽 (malt), and 醤油 (soy sauce) to confirm or disqualify items — these are necessary but not sufficient for full celiac safety.",
+   "confidence": "high",
+   "evidence": "legalnomads.com (a diagnosed-celiac author) instructs scanning for exactly 小麦/小麦粉, 麦/大麦, and 醤油; corroborated by how-to-coeliac, endlessdistances (2026), and japanhandbook. The kanji are durable. Sufficiency caveat: 麦 alone is the broad grain radical while barley is precisely 大麦; these three terms miss malt 麦芽, mizuame starch syrup, and miso 味噌, which also carry gluten. Because soy sauce (醤油) almost always contains wheat, it is the single most common GF disqualifier across konbini items.",
+   "sources": [
+    "https://www.legalnomads.com/gluten-free/japan/"
+   ],
+   "vote": "2-1"
+  }
+ ],
+ "caveats": "Source quality is mixed: the legal framework (two-tier allergen labeling) and the specific salad-chicken SKUs rest on PRIMARY sources (PMC academic paper; manufacturer ingredient panels at 7premium.jp, primaham.co.jp, sej.co.jp, lawson.co.jp) and are high-confidence. The broader shopping-list categories (vegan ready-to-eat, snacks, traps) rest on BLOG-tier sources (thejapaneserose, MATCHA, isitveganjapan, GaijinPot, legalnomads) — adequate for non-extraordinary availability claims and cross-corroborated, but not regulatory. CRITICAL HONESTY CAVEAT: nothing here is certified GF or certified vegan — Japanese labels only certify 'no [mandatory allergen] as an ingredient,' not facility/threshold cleanliness, and recommended-tier ingredients (soy, chicken, pork, fish/bonito dashi, gelatin) plus small-quantity flavorings can be legally omitted. The single highest-risk unlabeled item is katsuo/bonito dashi. TIME-SENSITIVITY: SKUs and seasonal flavors change; product pages carry 'spec/region may vary' disclaimers; the mandatory allergen list is evolving (walnut 2023, cashew 2025) — always re-verify the current panel. The GaijinPot blog is internally contradictory (verified quote came from a comment), so leaned on only where stronger sources agree. 'Brown egg = soy' is a heuristic, not a guarantee. Several plausible-sounding claims were REFUTED in verification and should NOT be repeated in the guide: 'most salad dressing packets are vegan'; 'salmon/umeboshi onigiri are GF-safe'; and 'mochi/jelly are generally vegan and gelatin must be declared' — gelatin is recommended-tier, NOT mandatory, so it can be unlabeled.",
+ "openQuestions": [
+  "For konnyaku jellies and wagashi (mochi/daifuku/anko): which specific konbini SKUs use agar (寒天, vegan) versus gelatin (ゼラチン, animal and recommended-tier, so potentially unlabeled)? Unresolved — the mochi/jelly vegan claim was refuted and needs SKU-level label evidence.",
+  "Are packaged grilled/salted fish (塩焼き) products at konbini reliably free of teriyaki/soy glaze (i.e., GF), and what is the per-chain label pattern? Named in the question but no verified primary panel was captured.",
+  "Which specific Lawson/Natural Lawson and FamilyMart health-line or 'soy meat' SKUs are explicitly labeled or certified vegan/GF, beyond the Natural Lawson soybean chips and certified-vegan onigiri mentioned anecdotally?",
+  "What is the current GF/vegan status of frozen-aisle staples (frozen edamame, frozen plain fruit, frozen plain rice, frozen plain vegetables)? The question requested frozen coverage but no verified frozen-specific claims survived; these are plausibly the cleanest single-ingredient items but need label confirmation (no added sauce/seasoning)."
+ ],
+ "refuted": [
+  {
+   "claim": "The plain salada chicken ingredient list is essentially chicken breast plus salt and minor processing additives (no soy sauce, no batter), confirming the 'plain = chicken + salt' assumption for GF travelers — though it includes amino-acid seasonings and sodium nitrite, not literally only two ingredients.",
+   "vote": "0-3",
+   "source": "https://www.primaham.co.jp/products/detail/0034.html"
+  },
+  {
+   "claim": "Lawson's marinated/boiled egg product 煮たまご (nitamago) declares only 卵 (egg) on its official 28-allergen panel, with no 小麦 (wheat) and no 大豆 (soy) marked as present.",
+   "vote": "0-3",
+   "source": "https://www.lawson.co.jp/sp/recommend/original/detail/1390519_2168.html"
+  },
+  {
+   "claim": "In Japan, only 7 allergens (egg, cow's milk, wheat, buckwheat, peanut, shrimp, crab) require MANDATORY labeling as 'specific ingredients' — meaning wheat (小麦) is always declared on processed-food labels, which is the foundation for celiac label-scanning at konbini.",
+   "vote": "0-3",
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8691970/"
+  },
+  {
+   "claim": "Plain salads are widely available at Japanese convenience stores and most dressing packets served alongside them are vegan, but salads are a trap because Japanese salads frequently contain small amounts of animal products.",
+   "vote": "0-3",
+   "source": "https://www.tokyoweekender.com/japan-life/japanese-convinience-store-vegan-guide/"
+  },
+  {
+   "claim": "Rice-based wagashi such as mochi and daifuku are often made without milk and eggs and tend to be vegan; jelly is generally vegan as long as it is not gummy sweets (which use gelatin), and gelatin must be legally declared on the label.",
+   "vote": "0-3",
+   "source": "https://www.tokyoweekender.com/japan-life/japanese-convinience-store-vegan-guide/"
+  },
+  {
+   "claim": "When scanning labels, the key disqualifying terms to watch for are the kanji for fish stock and chicken extract, plus gelatin, honey, and shortening.",
+   "vote": "1-2",
+   "source": "https://www.tokyoweekender.com/japan-life/japanese-convinience-store-vegan-guide/"
+  },
+  {
+   "claim": "Beyond plain salt onigiri (shiomusubi), other onigiri varieties are GF-safe: salmon onigiri (grilled salmon + salt) and umeboshi (pickled plum) onigiri, while tuna-mayo and meat-filling onigiri are unsafe due to soy sauce containing wheat.",
+   "vote": "0-3",
+   "source": "https://www.gluten-free-japan.com/guide/convenience-stores"
+  },
+  {
+   "claim": "Most konbini onigiri are off-limits for celiacs because of soy sauce or wheat; the ingredient list must be checked per item, with only certain plum or salmon varieties potentially safe.",
+   "vote": "1-2",
+   "source": "https://www.legalnomads.com/gluten-free/japan/"
+  },
+  {
+   "claim": "Multiple konbini items beyond salt onigiri are plant-based/vegan, including plain white rice onigiri, umeboshi (pickled plum) onigiri, and salt-flavored edamame, available across chains.",
+   "vote": "0-3",
+   "source": "https://matcha-jp.com/en/7716"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.gluten-free-japan.com/guide/convenience-stores",
+   "quality": "blog",
+   "angle": "broad/primary — traveler GF konbini guide",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.legalnomads.com/gluten-free/japan/",
+   "quality": "blog",
+   "angle": "broad/primary — traveler GF konbini guide",
+   "claimCount": 5
+  },
+  {
+   "url": "https://isitveganjapan.com/food-on-the-go/507-2/",
+   "quality": "blog",
+   "angle": "vegan konbini items list",
+   "claimCount": 5
+  },
+  {
+   "url": "https://thejapaneserose.com/the-vegan-guide-to-japanese-convenience-stores/",
+   "quality": "blog",
+   "angle": "vegan konbini items list",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.tokyoweekender.com/japan-life/japanese-convinience-store-vegan-guide/",
+   "quality": "secondary",
+   "angle": "vegan konbini items list",
+   "claimCount": 5
+  },
+  {
+   "url": "https://matcha-jp.com/en/7716",
+   "quality": "blog",
+   "angle": "vegan konbini items list",
+   "claimCount": 5
+  },
+  {
+   "url": "https://blog.gaijinpot.com/7-convenience-store-items-for-vegetarians-in-japan/",
+   "quality": "blog",
+   "angle": "vegan konbini items list",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.itravelforveganfood.com/articles/tokyo-vegan-grocery-shopping",
+   "quality": "blog",
+   "angle": "vegan konbini items list",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.primaham.co.jp/products/detail/0034.html",
+   "quality": "primary",
+   "angle": "proteins & label-reading detail",
+   "claimCount": 4
+  },
+  {
+   "url": "https://7premium.jp/product/search/detail?id=1082",
+   "quality": "primary",
+   "angle": "proteins & label-reading detail",
+   "claimCount": 4
+  },
+  {
+   "url": "https://www.marudai.jp/CGI/products/item/detail.cgi?itm_cd=01061",
+   "quality": "unreliable",
+   "angle": "proteins & label-reading detail",
+   "claimCount": 0
+  },
+  {
+   "url": "https://www.lawson.co.jp/sp/recommend/original/detail/1390519_2168.html",
+   "quality": "primary",
+   "angle": "proteins & label-reading detail",
+   "claimCount": 4
+  },
+  {
+   "url": "https://komelina.com/en/hidden-gluten-japan-soy-sauce-dashi-miso/",
+   "quality": "blog",
+   "angle": "traps — soy sauce, dashi, batter, gelatin",
+   "claimCount": 5
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8691970/",
+   "quality": "primary",
+   "angle": "traps — soy sauce, dashi, batter, gelatin",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.zojirushi.com/blog/pari-pari-perfectly-crispy-senbei-japans-gluten-free-rice-crackers/",
+   "quality": "blog",
+   "angle": "traps — soy sauce, dashi, batter, gelatin",
+   "claimCount": 4
+  },
+  {
+   "url": "https://isitveganjapan.com/food-on-the-go/natural-lawson/",
+   "quality": "blog",
+   "angle": "chain-specific health lines",
+   "claimCount": 5
+  },
+  {
+   "url": "https://en.japantravel.com/article/natural-lawson/67631",
+   "quality": "blog",
+   "angle": "chain-specific health lines",
+   "claimCount": 5
+  },
+  {
+   "url": "https://www.7andi.com/en/sustainability/theme/theme2/traceability.html",
+   "quality": "primary",
+   "angle": "chain-specific health lines",
+   "claimCount": 3
+  },
+  {
+   "url": "https://gfguidejapan.com/2020/03/11/convenience-stores-101-snacking-gluten-free-in-japan-part-two/",
+   "quality": "blog",
+   "angle": "chain-specific health lines",
+   "claimCount": 5
+  }
+ ],
+ "stats": {
+  "angles": 5,
+  "sourcesFetched": 19,
+  "claimsExtracted": 84,
+  "claimsVerified": 25,
+  "confirmed": 16,
+  "killed": 9,
+  "afterSynthesis": 8,
+  "urlDupes": 8,
+  "budgetDropped": 3,
+  "agentCalls": 101
+ }
+}

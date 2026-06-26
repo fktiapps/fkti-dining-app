@@ -1,0 +1,38 @@
+{
+ "version": 2,
+ "default_city": "kyoto",
+ "cities": [
+  {
+   "id": "kyoto",
+   "name": "Kyoto",
+   "file": "data/kyoto.json",
+   "center": [35.0035, 135.7689],
+   "bounds": [[34.93, 135.66], [35.13, 135.83]],
+   "free": true
+  },
+  {
+   "id": "kanazawa",
+   "name": "Kanazawa",
+   "file": "data/kanazawa.json",
+   "center": [36.5713, 136.6562],
+   "bounds": [[36.52, 136.60], [36.62, 136.72]],
+   "free": false
+  },
+  {
+   "id": "nara",
+   "name": "Nara",
+   "file": "data/nara.json",
+   "center": [34.6845, 135.8296],
+   "bounds": [[34.64, 135.78], [34.73, 135.88]],
+   "free": false
+  },
+  {
+   "id": "hiroshima",
+   "name": "Hiroshima",
+   "file": "data/hiroshima.json",
+   "center": [34.3955, 132.4536],
+   "bounds": [[34.27, 132.29], [34.42, 132.50]],
+   "free": false
+  }
+ ]
+}

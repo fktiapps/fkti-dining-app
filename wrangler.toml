@@ -1,0 +1,10 @@
+name = "fkti-dining-app"
+pages_build_output_dir = "."
+compatibility_date = "2025-06-01"
+
+[[kv_namespaces]]
+binding = "SUMMARIES"
+id = "2d0f0afa744b4cf38a5bba7d6af6f9c1"
+
+# Secrets are NOT stored here. Set them with:
+#   npx wrangler pages secret put MISTRAL_API_KEY

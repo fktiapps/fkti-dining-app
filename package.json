@@ -1,0 +1,19 @@
+{
+  "name": "deeply-connected-dining",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vegan & gluten-free dining map (PWA) for Japan — by Deeply Connected Experiences (深い関係体験).",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "login": "wrangler login",
+    "deploy": "wrangler pages deploy .",
+    "dev": "wrangler pages dev .",
+    "kv:create": "wrangler kv namespace create dcd-summaries",
+    "secret": "wrangler pages secret put MISTRAL_API_KEY",
+    "health": "node scripts/health.mjs",
+    "prewarm": "node scripts/prewarm.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.103.0"
+  }
+}

@@ -1,0 +1,108 @@
+// Round-2 Hiroshima expansion: loop-until-dry discovery, NEW angles, two
+// clusters (A-Bomb Dome + Miyajima), excluding existing places, then verify.
+// Output (kept[]) -> data/_hiro_r2.json -> build-hiroshima-merge.mjs.
+import fs from 'fs';
+
+const city = JSON.parse(fs.readFileSync('data/hiroshima.json', 'utf8'));
+const jpName = n => n.replace(/\s*[（(][^）)]*[）)]\s*$/, '').trim();
+const EXCLUDE = [...new Set(city.places.map(p => jpName(p.name)).filter(Boolean))];
+
+const ANGLES = [
+  '広島 お好み村 新天地 お好み焼き 個人店 食べログ',
+  '広島 本通 紙屋町 八丁堀 定食 食堂 個人店 食べログ',
+  '広島 流川 薬研堀 居酒屋 地元 個人店 食べログ',
+  '広島 つけ麺 汁なし担々麺 個人店 食べログ',
+  '広島 牡蠣 カキ料理 専門 個人店 食べログ',
+  '広島 中華そば 町中華 餃子 個人店 食べログ',
+  '広島 とんかつ 洋食 グリル 個人店 食べログ',
+  '広島 蕎麦 うどん 手打ち 個人店 食べログ',
+  '広島 喫茶 純喫茶 自家焙煎 珈琲 老舗 食べログ',
+  '広島 パン ベーカリー ケーキ 個人店 食べログ',
+  '広島 立町 幟町 銀山町 食堂 個人店 食べログ',
+  '広島 平和記念公園 周辺 ランチ 個人店 食べログ',
+  '広島 ヴィーガン ベジタリアン グルテンフリー カフェ HappyCow',
+  '広島 隠れた名店 常連 穴場 地元 個人店 食べログ',
+  '宮島 あなごめし 穴子 老舗 表参道商店街 食べログ',
+  '宮島 焼き牡蠣 牡蠣 食べ歩き 個人店 食べログ',
+  '宮島 もみじ饅頭 揚げもみじ 甘味 カフェ 食べログ',
+  '宮島 食堂 定食 うどん そば 個人店 食べログ',
+  '宮島 厳島神社 周辺 カフェ ランチ 個人店 食べログ',
+  'Hiroshima okonomiyaki hidden local Hatchobori Nagarekawa tabelog',
+  'Hiroshima vegan vegetarian gluten free cafe HappyCow Hondori',
+  'Miyajima Itsukushima local restaurant anago oyster cafe',
+];
+
+const DISCOVERY_SCHEMA = { type: 'object', additionalProperties: false, properties: { candidates: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { name_ja: { type: 'string' }, area: { type: 'string' }, cuisine: { type: 'string' }, tabelog_url: { type: 'string' } }, required: ['name_ja', 'area', 'cuisine', 'tabelog_url'] } } }, required: ['candidates'] };
+const anec = { type: 'array', items: { type: 'object', additionalProperties: false, properties: { text: { type: 'string' }, source: { type: 'string' } }, required: ['text'] } };
+const VERIFY_SCHEMA = { type: 'object', additionalProperties: false, properties: {
+  found: { type: 'boolean' }, is_restaurant: { type: 'boolean' }, closed_or_on_hold: { type: 'boolean' },
+  name_ja: { type: 'string' }, name_en: { type: 'string' }, tabelog_url: { type: 'string' }, official_url: { type: 'string' },
+  category: { type: 'string', enum: ['BOTH', 'GF', 'VEGAN', 'SHOJIN', 'OMNI', 'MOM_AND_POP'] },
+  cuisine: { type: 'string' }, neighborhood: { type: 'string' }, address_ja: { type: 'string' },
+  lat: { type: ['number', 'null'] }, lng: { type: ['number', 'null'] }, geocode_note: { type: 'string' },
+  seats: { type: ['integer', 'null'] }, seats_text: { type: 'string' },
+  gf_confidence: { type: 'string', enum: ['dedicated', 'high', 'options', 'ask', 'no'] }, gf_detail: { type: 'string' },
+  vegan_status: { type: 'string', enum: ['full', 'options', 'limited', 'ask', 'no'] }, vegan_detail: { type: 'string' },
+  hours_week: { type: 'array', items: { type: 'string' } }, hours_raw: { type: 'string' }, closed_days: { type: 'string' }, hours_status: { type: 'string', enum: ['regular', 'irregular'] },
+  reservation_required: { type: 'boolean' }, cash_only: { type: 'boolean' }, independent: { type: 'boolean' }, under30: { type: 'string', enum: ['yes', 'no', 'unsure'] },
+  cultural_comfort_level: { type: 'string', enum: ['guide_only', 'japanese', 'konnichiwa', 'english'] }, cultural_comfort_note: { type: 'string' },
+  bio: { type: 'object', additionalProperties: false, properties: { chef_name: { type: ['string', 'null'] }, roles: { type: 'array', items: { type: 'string' } }, origin: { type: ['string', 'null'] }, background: { type: ['string', 'null'] }, philosophy: { type: ['string', 'null'] }, specialty: { type: ['string', 'null'] }, anecdotes: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { text: { type: 'string' }, source: { type: 'string' } }, required: ['text', 'source'] } }, confidence: { type: 'string', enum: ['high', 'medium', 'low', 'none'] }, sources: { type: 'array', items: { type: 'string' } } }, required: ['confidence', 'roles', 'anecdotes', 'sources'] },
+  safety: { type: 'object', additionalProperties: false, properties: { dedicated_fryer: { type: ['boolean', 'null'] }, gf_cross_contamination: anec, soy_sauce_wheat: anec, vegan_cross_contact: anec, staff_allergy_handling: anec, positives: anec, confidence: { type: 'string', enum: ['high', 'medium', 'low', 'none'] } }, required: ['confidence', 'gf_cross_contamination', 'soy_sauce_wheat', 'vegan_cross_contact', 'staff_allergy_handling', 'positives'] },
+  caveats: { type: 'string' }, sources: { type: 'array', items: { type: 'string' } },
+}, required: ['found', 'is_restaurant', 'name_ja', 'category', 'vegan_status', 'gf_confidence', 'bio', 'safety'] };
+
+const script = `export const meta = {
+  name: 'hiroshima-r2',
+  description: 'Round-2 Hiroshima expansion: loop-until-dry discovery (two clusters, excluding existing) + verify',
+  phases: [{ title: 'Discover' }, { title: 'Verify' }],
+}
+const ANGLES = ${JSON.stringify(ANGLES)};
+const EXCLUDE = ${JSON.stringify(EXCLUDE)};
+const DISCOVERY_SCHEMA = ${JSON.stringify(DISCOVERY_SCHEMA)};
+const VERIFY_SCHEMA = ${JSON.stringify(VERIFY_SCHEMA)};
+const norm = s => (s || '').replace(/[\\s　・（）()「」、,.。\\-本店店]/g, '').toLowerCase();
+
+const excludeNorms = new Set(EXCLUDE.map(norm));
+const excludeList = EXCLUDE.join('、');
+
+const discPrompt = (q, avoid) => \`Find real restaurants in HIROSHIMA, Japan, in EITHER of two areas: (1) central Hiroshima within ~3 miles of the A-Bomb Dome / Peace Memorial Park (原爆ドーム) — Hondori, Kamiyachō, Nagarekawa, Hiroshima Station, Hatchōbori, Tatemachi, Noborichō; OR (2) Miyajima island within ~1.5 miles of Itsukushima Shrine (厳島神社) — Omotesandō shopping street and the shrine area. We want a mix of: (1) vegan / vegetarian / gluten-free-friendly spots, AND (2) small independent local "mom & pop" places (family/solo-run, locally loved). Hiroshima specialties: Hiroshima-style okonomiyaki, oysters (kaki), Hiroshima tsukemen, shiru-nashi tantanmen; on Miyajima: anago-meshi, grilled oysters, momiji-manjū.
+Search the web for: \${q}
+IMPORTANT: we ALREADY HAVE the following places — do NOT return any of these or obvious branches of them:
+\${avoid}
+Return up to 8 NEW candidates not in that list. For each: name_ja (exact Japanese name), area (district/island + nearest landmark), cuisine, tabelog_url (tabelog.com detail URL if found, else ""). Only real shops seen in results; prefer genuinely local/independent ones.\`;
+
+const verifyPrompt = c => \`Verify ONE Hiroshima-area restaurant for a curated dining app and produce its full record. NEVER invent — every fact from a page you fetch (WebSearch then WebFetch: Tabelog, official site, HappyCow). Return found:false if you cannot confirm it exists.
+TARGET: \${c.name_ja} | area: \${c.area || '?'} | cuisine: \${c.cuisine || '?'}\${c.tabelog_url ? ' | Tabelog: ' + c.tabelog_url : ''}
+
+A. IDENTITY: confirm it's a real, currently-operating eatery in central Hiroshima (near the A-Bomb Dome) OR on Miyajima (near Itsukushima Shrine). is_restaurant=false if not a place you go to eat. If 掲載保留/閉店 → closed_or_on_hold=true. Get name_ja, name_en (romaji), tabelog_url, official_url.
+B. CATEGORY (one): BOTH (dedicated vegan+GF) | GF (dedicated gluten-free) | VEGAN (fully vegan/veg) | SHOJIN (temple/Buddhist) | OMNI (omnivore w/ vegan or GF options) | MOM_AND_POP (small independent local gem, family/solo-run, <30 seats). Use MOM_AND_POP for local gems; dietary categories for vegan/veg/GF destinations.
+C. DIETARY (honest): gf_confidence + gf_detail; vegan_status + vegan_detail. Be plain: okonomiyaki batter is wheat (not GF); oysters/anago/most dishes use fish/wheat-soy-sauce so not vegan; flag genuine vegan/GF spots accurately.
+D. LOGISTICS: address_ja, then GEOCODE: fetch https://msearch.gsi.go.jp/address-search/AddressSearch?q=<URL-ENCODED address_ja>; first feature geometry.coordinates=[lng,lat]; retry chō-level if empty. Hiroshima box: lat 34.26–34.42, lng 132.28–132.50 — if outside, set null + geocode_note. For Miyajima places the address contains 宮島町; keep the geocode even if it lands near the island. seats (int or null + seats_text). hours_week: 7 elements Mon..Sun, each "closed" or "HH:MM-HH:MM" (comma for splits); hours_raw; closed_days; hours_status. reservation_required, cash_only. independent, under30. cultural_comfort_level + one-sentence note for a foreign student.
+E. DINER-FACING CONTENT — NO developer meta (never mention Tabelog, seat counts, review counts, awards by platform name, or sourcing). bio: the story of the place/people (background, specialty, philosophy if documented, anecdotes w/ source URLs); confidence:'none' + nulls if no real story. safety: for GF/vegan travelers — dedicated_fryer, gf_cross_contamination, soy_sauce_wheat, vegan_cross_contact, staff_allergy_handling, positives (each {text, source}); empty arrays if nothing specific.
+Do NOT invent sources or facts. name_en = romanization.\`;
+
+phase('Discover')
+const seen = new Set(excludeNorms); const queue = [];
+let round = 0, dry = 0;
+while (round < 4 && dry < 1) {
+  round++;
+  const avoid = excludeList + (queue.length ? '、' + queue.map(c => c.name_ja).join('、') : '');
+  const disc = await parallel(ANGLES.map((q, i) => () =>
+    agent(discPrompt(q, avoid), { label: 'disc r' + round + ' #' + i, phase: 'Discover', schema: DISCOVERY_SCHEMA }).then(r => (r && r.candidates) || []).catch(() => [])));
+  let fresh = 0;
+  for (const list of disc) for (const c of (list || [])) { const k = norm(c.name_ja); if (!k || seen.has(k)) continue; seen.add(k); queue.push(c); fresh++; }
+  log('Hiroshima r2 round ' + round + ': +' + fresh + ' fresh (queue ' + queue.length + ')');
+  if (fresh < 4) dry++;
+}
+log('Hiroshima r2 discovery done: ' + queue.length + ' unique new candidates over ' + round + ' rounds');
+
+phase('Verify')
+const verified = (await parallel(queue.map(c => () =>
+  agent(verifyPrompt(c), { label: 'vf:' + c.name_ja.slice(0, 16), phase: 'Verify', schema: VERIFY_SCHEMA }).then(r => r ? { lead: c.name_ja, ...r } : null).catch(() => null)))).filter(Boolean);
+const keep = verified.filter(r => r.found && r.is_restaurant && !r.closed_or_on_hold);
+log('verified ' + verified.length + '; restaurants kept ' + keep.length);
+return { counts: { candidates: queue.length, verified: verified.length, kept: keep.length, rounds: round }, kept: keep,
+  dropped: verified.filter(r => !r.found || !r.is_restaurant || r.closed_or_on_hold).map(r => ({ name: r.name_ja || r.lead, found: r.found, is_restaurant: r.is_restaurant, closed: r.closed_or_on_hold })) };
+`;
+fs.writeFileSync('scripts/hiroshima-r2-workflow.js', script);
+console.log('wrote scripts/hiroshima-r2-workflow.js | angles:', ANGLES.length, '| exclude:', EXCLUDE.length, '|', script.length, 'bytes');

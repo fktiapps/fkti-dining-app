@@ -1,0 +1,61 @@
+{
+  "version": "2026-06-24",
+  "title": "Konbini GF / Vegan Guide",
+  "disclaimer": "Decision support, not a safety guarantee. Scan the ingredient list (原材料名) on every item. Nothing at a konbini is certified gluten-free or vegan — Japanese labels only certify the 8 mandatory allergens, and soy/pork/chicken/fish-dashi/gelatin can be present and unlabeled.",
+  "skill": {
+    "headline": "The one move: read the label.",
+    "gf_scan": "Disqualify if you see: 小麦 / 小麦粉 (wheat), 麦 / 大麦 (barley), 麦芽 (malt), 醤油 (soy sauce).",
+    "vegan_scan": "Read the FULL 原材料名 for 豚/牛/鶏 (pork/beef/chicken), 魚/かつお/煮干し/だし (fish/bonito/sardine/dashi), 卵 (egg), 乳/バター/チーズ (dairy), ゼラチン (gelatin), はちみつ (honey).",
+    "biggest_trap": "Hidden katsuo (bonito) fish dashi — not even on the 20-item recommended list, so it can be legally unlabeled. Assume dashi in onigiri fillings, salads, dressings, pickles, and seaweed unless proven otherwise.",
+    "phrase": {
+      "en": "I have a wheat allergy. Does this contain wheat?",
+      "ja": "私は小麦アレルギーです。これに小麦は入っていますか？",
+      "rj": "Watashi wa komugi arerugī desu. Kore ni komugi wa haitte imasu ka?"
+    }
+  },
+  "shopping_gf": {
+    "label": "🌾 Celiac / GF konbini meal (scan 小麦/大麦/麦芽/醤油 on each)",
+    "items": [
+      "Plain SALT onigiri (塩むすび) — rice + salt",
+      "Plain SALT hard-boiled egg (塩) — brined through the shell; NOT the brown marinated kind (味付け/煮 = soy)",
+      "Plain tofu / 冷奴, edamame, natto WITHOUT its tare packet (the packet = wheat/soy)",
+      "Cut fruit & cut vegetables — UNdressed (dressings aren't GF; some 'healthy' salads add barley 大麦)",
+      "Plain/salt/nori potato chips; plain nuts; dried sweet potato (干し芋); plain yogurt; milk",
+      "サラダチキン ONLY if the label shows no 小麦 — brand-dependent (Prima-Ham plain = wheat-free; Seven-Premium plain = HAS wheat flour)",
+      "Naturally-GF drinks (water, tea, 100% juice)"
+    ],
+    "avoid": "Anything with 醤油, oden, all hot-case/fried items, bread & pastry, dressings, imitation crab."
+  },
+  "shopping_vegan": {
+    "label": "🌱 Vegan konbini meal (read full 原材料名; beware unlabeled dashi)",
+    "items": [
+      "Plain SALT onigiri (塩むすび) — the ONLY reliably animal-free onigiri (ume/kombu/natto/inari hide katsuo or niboshi dashi)",
+      "Edamame (incl. salted), plain tofu / 冷奴, natto WITHOUT the tare packet",
+      "Fresh & cut fruit, plain undressed salads, some pickles (check dashi)",
+      "Nuts, dried fruit, salt/nori chips, dried sweet potato (干し芋), senbei (check 醤油), Natural Lawson health-line (e.g. yuzu-salt soybean chips)",
+      "Soy milk & plant drinks; dark chocolate (check dairy)"
+    ],
+    "avoid": "Hidden katsuo dashi; 乳化剤 (emulsifiers, sometimes animal); salad dressings (chicken/fish extract); gelatin, honey, butter/margarine/creaming powder."
+  },
+  "chains": {
+    "seven": {
+      "name": "7-Eleven",
+      "name_ja": "セブン-イレブン",
+      "portal": "https://www.sej.co.jp/products/info_allergy/",
+      "note": "Publishes specified-allergen + nutrition info; original (Seven Premium) items carry all 28 allergens labeled, but loose hot-case items may be unlabeled. No certified-GF staples. ⚠ Seven Premium 'plain' salada-chicken contains wheat flour — label-check."
+    },
+    "familymart": {
+      "name": "FamilyMart",
+      "name_ja": "ファミリーマート",
+      "portal": "https://www.family.co.jp/goods/safety.html",
+      "note": "Allergen hub lists the 8 mandatory allergens; reference-only, directs you to the on-pack label + in-store POP. e.g. kombu onigiri = wheat/sesame/soy; cod-roe-mayo = wheat/egg/soy/gelatin."
+    },
+    "lawson": {
+      "name": "Lawson",
+      "name_ja": "ローソン",
+      "portal": "https://www.lawson.co.jp/recommend/allergy/detail/",
+      "note": "Strongest published data — declares 28 substances (8 mandatory + 20 recommended incl. soy/gelatin/pork/chicken), so it's the most useful for vegans. Natural Lawson (ナチュラルローソン) health line has more plant-forward options."
+    }
+  },
+  "common": "All three publish allergen data online as a REFERENCE ONLY (cross-contamination disclaimed) and have NO allergen-filter search — on-pack label reading stays authoritative."
+}

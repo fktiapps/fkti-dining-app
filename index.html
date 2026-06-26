@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+<title>Deeply Connected Dining</title>
+<meta name="theme-color" content="#13182B"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png"/>
+<link rel="icon" href="icons/favicon.png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin=""/>
+<style>
+:root{
+ --ink:#13182B; --ink2:#1E2540; --ink3:#2A3358; --line:#313a5e;
+ --paper:#F7F4EC; --paper2:#FFFFFF; --text:#1B2233; --muted:#7A819A; --muted2:#9AA0B6;
+ --ver:#E2553B; --ver-d:#C4452E;
+ --c-BOTH:#2E7D32; --c-GF:#1565C0; --c-VEGAN:#00897B; --c-SHOJIN:#6A1B9A; --c-OMNI:#EF6C00; --c-MOM_AND_POP:#8B4513;
+ --safe:#2E7D32; --caution:#C77800; --unknown:#6B7180;
+ --display:"Hiragino Mincho ProN","Yu Mincho",Georgia,"Times New Roman",serif;
+ --sans:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ --sheet-h: 46vh;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--ink);color:var(--text);font-family:var(--sans);-webkit-tap-highlight-color:transparent;overscroll-behavior:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+#app{position:fixed;inset:0;display:flex;flex-direction:column}
+
+/* ---- header ---- */
+header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top) + 10px) 14px 8px;flex:0 0 auto;z-index:600}
+.brandrow{display:flex;align-items:center;gap:10px}
+.brand-badge{width:30px;height:30px;border-radius:8px;flex:0 0 auto;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.28)}
+.brand-wrap{display:flex;flex-direction:column;min-width:0}
+.brand{font-family:var(--display);font-size:14px;letter-spacing:.3px;line-height:1.12;white-space:nowrap}
+.brand b{color:var(--ver);font-weight:600}
+.brand-jp{font-size:9px;color:var(--muted2);letter-spacing:2.5px;margin-top:1px}
+.refresh-link{margin-top:8px;font-size:12px;color:var(--ver);font-weight:600}
+.cityrow{margin-left:auto;text-align:right}
+.cityrow .city{font-weight:600;font-size:14px}
+.cityrow .sub{font-size:11px;color:var(--muted2);letter-spacing:1px}
+.infobtn{margin-left:8px;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:#cfd4ea;font-size:13px;font-family:var(--display)}
+
+/* ---- filter bar ---- */
+.filters{background:var(--ink);padding:8px 0 10px;border-bottom:1px solid var(--line);flex:0 0 auto;z-index:600}
+.frow{display:flex;gap:7px;padding:0 12px 7px;overflow-x:auto;scrollbar-width:none}
+.frow::-webkit-scrollbar{display:none}
+.frow:last-child{padding-bottom:0}
+.chip{flex:0 0 auto;border:1px solid var(--line);color:#cdd2e8;background:var(--ink2);
+ padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:500;white-space:nowrap;display:flex;align-items:center;gap:6px;transition:.12s}
+.chip:active{transform:scale(.96)}
+.chip.on{background:var(--ver);border-color:var(--ver);color:#fff}
+.chip .dot{width:9px;height:9px;border-radius:50%}
+.seg{display:flex;flex:0 0 auto;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--ink2)}
+.seg button{padding:7px 12px;font-size:12.5px;color:#cdd2e8;font-weight:500;white-space:nowrap}
+.seg button.on{background:#EDEFF8;color:var(--ink)}
+.search{flex:0 0 auto;display:flex;align-items:center;gap:7px;background:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;min-width:150px}
+.search input{background:none;border:none;outline:none;color:#EDEFF8;font-size:13px;width:100%}
+.search input::placeholder{color:var(--muted2)}
+
+/* ---- map + panel ---- */
+.body{position:relative;flex:1 1 auto;min-height:0;overflow:hidden}
+#map{position:absolute;inset:0;background:#dfe3e0}
+.leaflet-control-attribution{font-size:9px;background:rgba(255,255,255,.7)}
+.me-pin{filter:drop-shadow(0 3px 3px rgba(0,0,0,.35))}
+.fabs{position:absolute;right:12px;bottom:calc(var(--sheet-h) + 14px);display:flex;flex-direction:column;gap:10px;z-index:500;transition:bottom .25s}
+.fab{width:46px;height:46px;border-radius:14px;background:var(--paper2);box-shadow:0 4px 14px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;font-size:19px;color:var(--ink)}
+.fab.ver{background:var(--ver);color:#fff}
+
+/* ---- bottom sheet ---- */
+.sheet{position:absolute;left:0;right:0;bottom:0;height:var(--sheet-h);background:var(--paper);
+ border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.22);z-index:550;display:flex;flex-direction:column;transition:height .25s;touch-action:pan-y;pointer-events:all}
+.sheet.expanded{border-radius:0}
+.grab{width:44px;height:5px;border-radius:3px;background:#cfcabb;margin:9px auto 4px;cursor:grab;touch-action:none}
+.sheethead{padding:0 16px 8px;display:flex;align-items:center;gap:8px}
+.sheethead h2{font-family:var(--display);font-size:16px;margin:0;font-weight:600}
+.count{font-size:12px;color:var(--muted);font-weight:600}
+.sortbtn{margin-left:auto;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px}
+.scroll{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 12px calc(env(safe-area-inset-bottom) + 16px);flex:1 1 auto;min-height:0}
+
+/* list cards */
+.card{background:var(--paper2);border:1px solid #ECE7DA;border-left-width:5px;border-radius:12px;padding:11px 12px;margin:8px 0;display:flex;gap:10px;align-items:flex-start;touch-action:manipulation;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,.06)}
+.card .main{flex:1 1 auto;min-width:0}
+.card .nm{font-weight:600;font-size:14.5px;line-height:1.2}
+.card .meta{font-size:11.5px;color:var(--muted);margin-top:2px}
+.badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.badge{font-size:10.5px;font-weight:600;padding:3px 7px;border-radius:6px;display:inline-flex;align-items:center;gap:4px;line-height:1}
+.b-safe{background:#E7F3E8;color:var(--safe)} .b-caution{background:#FBF0DD;color:var(--caution)} .b-unknown{background:#EDEEF2;color:var(--unknown)}
+.b-vegan{background:#E0F2F0;color:#00796B}
+.dist{flex:0 0 auto;text-align:right;font-size:11px;color:var(--muted)}
+.dist b{display:block;font-size:15px;color:var(--text);font-weight:700}
+.open-now{color:var(--safe);font-weight:700}.open-no{color:var(--unknown)}.open-vary{color:var(--caution)}
+
+/* detail */
+.detail-nav{background:var(--ink);flex:0 0 auto;padding-bottom:10px}
+.detail-nav-row{display:flex;align-items:center;padding:0 14px;gap:10px;min-height:40px}
+.detail-nav-name{flex:1 1 auto;font-size:14px;font-weight:700;color:#EDEFF8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--display)}
+.detail-nav-close{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.12);color:#EDEFF8;font-size:16px;display:flex;align-items:center;justify-content:center;touch-action:manipulation}
+.detail-nav-close:active{background:rgba(255,255,255,.25)}
+.detail{display:none;flex-direction:column;flex:1 1 auto;min-height:0;overflow:hidden}
+.detail.show{display:flex}
+.list.hide{display:none}
+.list{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow:hidden}
+.back{font-size:13px;color:var(--ver);font-weight:600;padding:4px 0;display:inline-flex;gap:5px;align-items:center}
+.dtitle{font-family:var(--display);font-size:21px;font-weight:600;margin:6px 0 2px;line-height:1.15}
+.dmeta{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.dstatus{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.panel{background:var(--paper2);border:1px solid #ECE7DA;border-radius:12px;padding:12px;margin-bottom:10px}
+.panel h3{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:0 0 7px}
+.panel .gfbig{font-size:14px;font-weight:700;display:flex;align-items:center;gap:7px}
+.panel .det{font-size:12.5px;color:#46506b;margin-top:5px;line-height:1.45}
+.hours-tbl{font-size:12.5px;width:100%;border-collapse:collapse;margin-top:4px}
+.hours-tbl td{padding:2px 0;color:#46506b}.hours-tbl td:first-child{width:42px;color:var(--muted);font-weight:600}
+.hours-tbl tr.today td{color:var(--text);font-weight:600}
+.note{font-size:13px;line-height:1.5;color:#3a4258}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0 8px}
+.btn-maps{background:#1a73e8;color:#fff;text-align:center;padding:12px;border-radius:12px;font-size:13.5px;font-weight:600;text-decoration:none;display:block}
+.comfort{display:flex;align-items:flex-start;gap:10px;padding:11px 13px;border-radius:10px;margin:10px 0;font-size:12.5px;line-height:1.5}
+.comfort-dot{flex:0 0 auto;width:12px;height:12px;border-radius:50%;margin-top:3px}
+.comfort-guide_only{background:#FDECEA;color:#7f1d1d}
+.comfort-japanese{background:#FFF8E1;color:#78350f}
+.comfort-konnichiwa{background:#E8F5E9;color:#14532d}
+.comfort-english{background:#EFF6FF;color:#1e3a8a}
+.comfort-label{font-weight:800;display:block;margin-bottom:3px;font-size:13.5px;color:inherit}
+.comfort-eyebrow{display:block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.7;margin-bottom:1px}
+.comfort-desc-inline{display:block}
+.comfort-dot-guide_only{background:#DC2626}
+.comfort-dot-japanese{background:#D97706}
+.comfort-dot-konnichiwa{background:#16A34A}
+.comfort-dot-english{background:#2563EB}
+.dcp-badge{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;background:#FBF0DD;border:1.5px solid #C17B26;color:#7A4419;font-size:13px;font-weight:700;cursor:pointer;touch-action:manipulation;width:100%;justify-content:center;margin-top:8px}
+.dcp-badge:active{background:#f5e6c8}
+.dcp-modal{position:fixed;inset:0;z-index:900;background:rgba(0,0,0,.88);display:none;align-items:flex-start;justify-content:center;padding:24px 16px;overflow-y:auto}
+.dcp-modal.open{display:flex}
+.dcp-box{background:var(--paper);border-radius:18px;padding:24px;max-width:420px;width:100%;margin:auto}
+.dcp-title{font-family:var(--display);font-size:20px;font-weight:700;color:var(--ink);margin-bottom:14px}
+.dcp-body{font-size:13.5px;line-height:1.65;color:#3a4258}
+.dcp-rules{background:#F0EDE6;border-radius:10px;padding:12px 14px;margin:14px 0;font-size:13px;line-height:1.7}
+.dcp-confirm{width:100%;margin-top:16px;padding:14px;border-radius:12px;background:var(--ink);color:#EDEFF8;font-size:14px;font-weight:700;touch-action:manipulation}
+.dcp-cancel{width:100%;margin-top:8px;padding:10px;border-radius:12px;background:none;color:var(--muted);font-size:13px;touch-action:manipulation}
+.dcp-note{background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:14px;margin:10px 0;font-size:13px;line-height:1.6;color:#5a3e00}
+.btn-more{background:var(--ver);color:#fff;padding:12px;border-radius:12px;font-size:13.5px;font-weight:600}
+.btn-bio{background:var(--ink);color:#EDEFF8;padding:12px;border-radius:12px;font-size:13.5px;font-weight:600;text-align:center}
+.btn-menu{padding:12px;border-radius:12px;font-size:13.5px;font-weight:600;text-align:center;text-decoration:none;display:block}
+.btn-menu.active{background:#2E7D32;color:#fff}
+.btn-menu.disabled{background:#e0ddd7;color:#aaa;pointer-events:none;cursor:default}
+.bio-out{font-size:13px;line-height:1.55;color:#3a4258;background:#F0EDE6;border:1px solid #ddd8cc;border-radius:10px;padding:14px;margin-top:8px}
+.bio-out .bio-name{font-family:var(--display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.bio-out .bio-role{font-size:11.5px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+.bio-section{margin-top:10px}
+.bio-section b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:3px}
+.bio-anecdote{font-size:12.5px;line-height:1.5;padding:7px 0;border-bottom:1px solid #e8e3d8}
+.bio-anecdote:last-child{border-bottom:none}
+.bio-jp{background:#fff;border:1px solid #ddd8cc;border-radius:8px;padding:10px;margin-top:8px;font-size:12.5px;line-height:1.5;color:#3a4258}
+.bio-jp:before{content:"🇯🇵 Japanese sources: ";font-weight:700;color:var(--ink)}
+.bio-caveat{background:#FBF0DD;border:1px solid #f0ddb0;border-radius:8px;padding:9px 11px;font-size:12px;color:#7a5c00;margin-top:8px;line-height:1.45}
+.bio-disclaimer{font-size:11px;color:var(--muted);border-top:1px solid #e8e3d8;margin-top:12px;padding-top:8px;line-height:1.5}
+.bio-flag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);background:none;border:1px solid #ddd;border-radius:6px;padding:5px 10px;margin-top:8px;cursor:pointer}
+.bio-flag.flagged{color:var(--ver);border-color:var(--ver)}
+.conf-none{font-style:italic;color:var(--muted)}
+.conf-low{color:var(--caution);font-weight:600}
+.conf-badge{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;margin-left:6px}
+.conf-high .conf-badge{background:#E7F3E8;color:var(--safe)}
+.conf-medium .conf-badge{background:#EEF4FF;color:#1a56cc}
+.conf-low .conf-badge{background:#FBF0DD;color:var(--caution)}
+.conf-none .conf-badge{background:#EDEEF2;color:var(--unknown)}
+.more-out{font-size:13px;line-height:1.5;color:#3a4258;background:#FBF7EE;border:1px dashed #e0d8c4;border-radius:10px;padding:12px;margin-top:6px}
+.more-out b{color:var(--text)}
+.flagchips{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 8px}
+.flagchip{font-size:11px;background:#EFEBDF;color:#6a6250;border-radius:6px;padding:3px 8px;font-weight:600}
+
+/* info modal */
+.modal{position:fixed;inset:0;background:rgba(10,12,24,.55);z-index:900;display:none;align-items:flex-end}
+.modal.show{display:flex}
+.modal .box{background:var(--paper);width:100%;border-radius:18px 18px 0 0;padding:18px 18px calc(env(safe-area-inset-bottom) + 18px);max-height:82vh;overflow:auto}
+.modal h2{font-family:var(--display);margin:0 0 4px;font-size:19px}
+.modal p,.modal li{font-size:13px;line-height:1.55;color:#3a4258}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.legend div{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600}
+.legend .dot{width:12px;height:12px;border-radius:50%}
+.closex{float:right;font-size:22px;color:var(--muted);line-height:1}
+.disclaimer{background:#FBEEE9;border:1px solid #f3d6cc;border-radius:10px;padding:10px 12px;font-size:12px;color:#8a3a26;line-height:1.45;margin-top:8px}
+
+/* ---- show-staff cards ---- */
+.card-chip{border-color:var(--ver);color:#F2B5A8;background:transparent;font-weight:600}
+.btn-card{width:100%;margin-top:10px;padding:12px;border-radius:12px;background:#fff;border:1.5px solid var(--ver);color:var(--ver-d);font-size:13.5px;font-weight:700}
+.btn-scan{width:100%;margin-top:8px;padding:12px;border-radius:12px;background:linear-gradient(135deg,#0E7C66,#16A34A);border:none;color:#fff;font-size:13.5px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-scan:active{transform:scale(.99)}
+.scan-tag{font-size:10px;font-weight:700;background:rgba(255,255,255,.22);padding:2px 7px;border-radius:20px}
+.scan-box{margin-top:10px;background:#0F1626;border:1px solid #243049;border-radius:12px;padding:13px 14px;font-size:12.5px;line-height:1.55;color:#E7EAF4}
+.scan-thumb{width:100%;max-height:160px;object-fit:cover;border-radius:9px;margin-bottom:10px;display:block}
+.scan-spin{display:inline-block;animation:scanspin 1s linear infinite}@keyframes scanspin{to{transform:rotate(360deg)}}
+.scan-warn{background:#3a2a10;border:1px solid #6b4f1d;color:#f0d9a8;border-radius:8px;padding:7px 9px;margin-bottom:9px;font-size:11.5px}
+.scan-legend{font-size:10.5px;color:#9AA0B6;margin:2px 0 10px;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.scan-items{display:flex;flex-direction:column;gap:1px;background:#243049;border-radius:9px;overflow:hidden}
+.scan-item{background:#0F1626;padding:8px 10px}
+.scan-item-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.scan-item-name{font-weight:600;color:#fff;font-size:12.5px}
+.scan-item-note{font-size:11px;color:#9AA0B6;margin-top:2px}
+.vchips{flex:0 0 auto;display:flex;gap:4px}
+.vchip{font-size:10px;font-weight:800;padding:2px 6px;border-radius:6px;white-space:nowrap}
+.b-safe{background:#16351f;color:#6EE7A0}
+.b-ask{background:#3a2e10;color:#F2C661}
+.b-avoid{background:#3a1518;color:#F2A0A0}
+.b-unk{background:#222b40;color:#9AA0B6}
+.scan-sec{margin:7px 0}.scan-sec b{color:#fff;font-size:12.5px}
+.scan-sec ul{margin:4px 0 0;padding-left:18px}.scan-sec li{margin:3px 0}
+.scan-q{background:#13203a;border:1px solid #27406e;border-radius:10px;padding:10px 12px;margin-top:11px}
+.scan-q ul{list-style:none;padding-left:0}
+.scan-q li{padding:7px 0;border-bottom:1px solid #20304f}.scan-q li:last-child{border-bottom:none}
+.q-en{display:block;color:#EDEFF8;font-weight:600}
+.q-ja{display:block;color:#8FB4FF;font-size:15px;margin-top:4px;line-height:2.1}
+.q-ja ruby{ruby-align:center}
+.q-ja rt{font-size:9px;color:#7FA0E0;font-weight:600;letter-spacing:0}
+.q-rj{display:block;color:#9AA0B6;font-size:11px;font-style:italic;margin-top:3px}
+.scan-qnote{font-size:10.5px;color:var(--muted);margin-top:8px}
+.scan-caveat{font-size:11px;color:#9AA0B6;margin-top:11px;padding-top:9px;border-top:1px solid #243049}
+#cardModal .box{max-width:560px;margin:0 auto}
+#scanModal .box{max-width:560px;margin:0 auto}
+#phraseModal .box{max-width:560px;margin:0 auto}
+.fab-scan{background:linear-gradient(135deg,#0E7C66,#16A34A);color:#fff}
+.gloss-sec{margin:14px 0 0}
+.gloss-h{font-weight:800;font-size:14px;color:var(--ink);margin:0 0 7px}
+#phraseBody .scan-q{margin-top:0}
+.cards-seg{display:flex;gap:8px;margin:12px 0 14px}
+.cards-seg button{flex:1;padding:10px;border-radius:10px;border:1px solid #e0dccf;background:#fff;font-weight:700;font-size:13px;color:var(--muted)}
+.cards-seg button.on.celiac{background:#C4452E;border-color:#C4452E;color:#fff}
+.cards-seg button.on.vegan{background:#00897B;border-color:#00897B;color:#fff}
+.idcard{border-radius:16px;overflow:hidden;border:1px solid #e6e0d2;box-shadow:0 6px 20px rgba(0,0,0,.10)}
+.idcard .top{padding:15px 16px;color:#fff}
+.idcard .top.celiac{background:#C4452E}.idcard .top.vegan{background:#00897B}
+.idcard .top .jp{font-size:21px;font-weight:700;font-family:var(--display);line-height:1.2}
+.idcard .top .en{font-size:12px;opacity:.92;margin-top:3px}
+.idcard .ibody{background:#fff;padding:15px 16px}
+.idcard .lead{font-size:16.5px;line-height:1.6;font-weight:600;color:#1B2233}
+.idcard .lead .en{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:4px;line-height:1.4}
+.idcard h4{font-size:11.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);margin:16px 0 7px}
+.avoid{list-style:none;padding:0;margin:0}
+.avoid li{font-size:16px;line-height:1.55;padding:6px 0 6px 26px;position:relative;border-bottom:1px solid #f1ede1}
+.avoid li:last-child{border-bottom:none}
+.avoid li:before{content:'\2715';position:absolute;left:2px;top:6px;color:#C4452E;font-weight:800}
+.avoid li .en{display:block;color:var(--muted);font-size:11.5px;line-height:1.35}
+.canok{background:#EAF6EF;border-radius:10px;padding:11px 13px;margin-top:14px;font-size:15px;color:#1B2233;line-height:1.5}
+.canok .en{display:block;color:#5a7d6e;font-size:11.5px;margin-top:3px}
+.idcard .closing{font-size:16px;margin-top:13px;color:#1B2233;font-weight:600;line-height:1.5}
+.idcard .closing .en{display:block;color:var(--muted);font-size:11.5px;font-weight:500;margin-top:3px}
+.bright-tip{font-size:11.5px;color:var(--muted);text-align:center;margin-top:14px}
+
+@media(min-width:860px){
+ :root{--sheet-h:100%}
+ .body{display:flex}
+ #map{position:relative;flex:1}
+ .fabs{bottom:24px;right:24px}
+ .sheet{position:relative;height:100%!important;width:380px;border-radius:0;box-shadow:-4px 0 18px rgba(0,0,0,.12);flex:0 0 380px}
+ .sheet.expanded{position:relative;inset:auto;height:100%!important;z-index:550;border-radius:0}
+ .grab{display:none}
+ .detail-nav{padding-top:0}
+}
+/* ── Cultural Comfort ── */
+.comfort-block{background:#1A1E2E;border-radius:10px;padding:12px 14px;margin:10px 0;display:flex;align-items:flex-start;gap:10px}
+.comfort-emoji{font-size:22px;line-height:1;flex:0 0 auto}
+.comfort-block .comfort-label{font-size:13px;font-weight:700;color:#EDEFF8;margin-bottom:3px}
+.comfort-block .comfort-desc{font-size:12px;color:#9AA0B6;line-height:1.5}
+.comfort-block .comfort-note{font-size:12px;color:#B8BDD4;margin-top:6px;padding-top:6px;border-top:1px solid #2A3358;line-height:1.55}
+/* ── DCP Badge ── */
+.dcp-badge{display:inline-flex;align-items:center;gap:5px;background:#7B5700;color:#FFD87A;font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.4px;margin-bottom:8px}
+.dcp-panel{background:#1E1500;border:1px solid #7B5700;border-radius:12px;padding:14px;margin:10px 0}
+.dcp-panel p{font-size:13px;line-height:1.6;color:#E8D5A0;margin:0}
+/* ── Acknowledgment Modal ── */
+.ack-overlay{position:fixed;inset:0;background:rgba(8,10,20,.94);z-index:900;display:flex;align-items:flex-end;justify-content:center;padding:0 12px}
+.ack-sheet{background:#13182B;border-radius:20px 20px 0 0;padding:24px 20px calc(env(safe-area-inset-bottom)+24px);max-width:480px;width:100%;animation:slideUp .22s ease-out;max-height:90vh;overflow-y:auto}
+@keyframes slideUp{from{transform:translateY(100px);opacity:0}to{transform:translateY(0);opacity:1}}
+.ack-title{font-family:var(--display);font-size:20px;color:#EDEFF8;margin-bottom:6px}
+.ack-intro{font-size:13px;color:#9AA0B6;margin-bottom:16px;line-height:1.55}
+.ack-rule{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #1A1E2E;font-size:13px;color:#B8BDD4;line-height:1.5}
+.ack-rule:last-of-type{border-bottom:none}
+.ack-rule-icon{font-size:18px;flex:0 0 auto;line-height:1.3}
+.ack-comfort-preview{border-radius:10px;padding:12px;margin:14px 0}
+.ack-btn{width:100%;padding:14px;border-radius:14px;font-size:15px;font-weight:700;margin-top:6px;cursor:pointer;touch-action:manipulation;display:block;text-align:center}
+.ack-confirm{background:var(--ver);color:#fff}
+.ack-back{background:#1A1E2E;color:#9AA0B6;margin-top:8px}
+</style>
+</head>
+<body>
+<div id="app">
+ <header id="mainHeader">
+  <div class="brandrow">
+   <img class="brand-badge" src="icons/icon-192.png" alt="Deeply Connected Dining logo"/>
+   <div class="brand-wrap">
+    <div class="brand">Deeply Connected <b>Dining</b></div>
+    <div class="brand-jp">深い関係食事</div>
+   </div>
+   <div class="cityrow"><div class="city" id="cityName">Kyoto</div><div class="sub" id="citySub">Vegan · GF</div></div>
+   <button class="infobtn" id="infoBtn" aria-label="About & legend">i</button>
+  </div>
+ </header>
+
+ <style>
+ .dietmenu{position:absolute;top:calc(100% + 4px);left:0;z-index:60;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.16);padding:4px;min-width:185px;display:flex;flex-direction:column;gap:2px}
+ .dietmenu button{text-align:left;background:none;border:none;padding:8px 10px;border-radius:7px;font-size:13px;cursor:pointer;white-space:nowrap;width:100%}
+ .dietmenu button:hover{background:var(--bg,#f4f1ea)}
+ .chip.pill{font-weight:700}
+ .filtersheet{display:flex;flex-direction:column;gap:6px}
+ .is-hidden{display:none!important}
+ body.no-diet .dietui{display:none!important}
+ </style>
+ <div class="filters">
+  <div class="frow">
+   <div class="search" id="searchWrap">🔍<input id="search" placeholder="Filter or type city + Go…" autocomplete="off" inputmode="search"/><button id="searchGo" style="flex:0 0 auto;font-size:12px;font-weight:700;color:var(--ver);padding:0 2px 0 6px;border-left:1px solid var(--line)">Go</button></div>
+   <button class="chip card-chip" id="cardsBtn">🪪 Show staff</button>
+   <button class="chip card-chip" id="phrasesBtn">🗣 Phrases</button>
+   <button class="chip card-chip" id="konbiniBtn">🏪 Konbini</button>
+   <div style="position:relative">
+    <button class="chip" id="dietChip">🍃 Any ▾</button>
+    <div id="dietMenu" class="dietmenu is-hidden">
+     <button data-diet="any">🍽 Any (show diet info)</button>
+     <button data-diet="none">🥩 No diet info (ramen/culture mode)</button>
+     <button data-diet="vegan">🌱 Vegan</button>
+     <button data-diet="gf">🌾 Gluten-free options</button>
+     <button data-diet="celiac">🛡️ Celiac-safe only</button>
+     <button data-diet="both">🌱🌾 Vegan + GF</button>
+    </div>
+   </div>
+   <button class="chip" id="filterGear">⚙ Filters</button>
+  </div>
+  <div class="frow" id="catPills">
+   <button class="chip pill on" data-pill="all">All</button>
+   <button class="chip pill" data-pill="ramen">🍜 Ramen</button>
+   <button class="chip pill" data-pill="mompop">🏮 Mom &amp; Pop</button>
+  </div>
+  <div class="filtersheet is-hidden" id="filterSheet">
+   <div class="frow">
+    <button class="chip" data-toggle="open">● Open now</button>
+    <button class="chip" data-toggle="late">Open late</button>
+   </div>
+   <div class="frow" id="cuisineRow"></div>
+  </div>
+ </div>
+
+ <div class="body">
+  <div id="map"></div>
+  <div class="fabs">
+   <button class="fab fab-scan" id="scanFab" aria-label="Scan a menu">📷</button>
+   <button class="fab" id="listBtn" aria-label="Toggle list">☰</button>
+   <button class="fab ver" id="locBtn" aria-label="Find me">◎</button>
+  </div>
+  <div class="sheet" id="sheet">
+   <div class="grab" id="grab"></div>
+   <div class="list" id="listView">
+    <div class="sheethead">
+     <h2>Near you</h2><span class="count" id="resCount"></span>
+     <button class="sortbtn" id="sortBtn">Sort: distance ▾</button>
+    </div>
+    <div class="scroll" id="listScroll"></div>
+   </div>
+   <div class="detail" id="detailView">
+    <div class="detail-nav" id="detailNav">
+     <div class="grab"></div>
+     <div class="detail-nav-row">
+      <span class="detail-nav-name" id="detailNavName"></span>
+      <button class="detail-nav-close" id="detailNavClose" aria-label="Close">✕</button>
+     </div>
+    </div>
+    <div class="scroll" id="detailScroll"></div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="modal" id="infoModal">
+ <div class="box">
+  <button class="closex" id="infoClose">×</button>
+  <h2>How to read this</h2>
+  <p><b>Dot colour = category.</b> Tap any dot for details. Drag the vermilion <b>“you are here”</b> pin to scout another area; tap ◎ to snap back to your location.</p>
+  <div class="legend">
+   <div><span class="dot" style="background:var(--c-BOTH)"></span>Dedicated vegan + GF</div>
+   <div><span class="dot" style="background:var(--c-GF)"></span>Dedicated gluten-free</div>
+   <div><span class="dot" style="background:var(--c-VEGAN)"></span>Fully vegan</div>
+   <div><span class="dot" style="background:var(--c-SHOJIN)"></span>Shojin (Buddhist vegan)</div>
+   <div><span class="dot" style="background:var(--c-OMNI)"></span>Omnivore · both options</div>
+   <div><span class="dot" style="background:var(--ver)"></span>You are here (drag me)</div>
+  </div>
+  <p><b>Gluten-free badge</b> shows confidence: <b style="color:var(--safe)">Dedicated/celiac-safe</b> → separate or fully-GF kitchen · <b style="color:var(--caution)">Options</b> → GF dishes but a shared kitchen · <b style="color:var(--unknown)">Ask</b> → unverified. The <b>🛡️ Celiac-safe</b> diet lens keeps only Dedicated/celiac-safe — shared-kitchen "Options" are excluded.</p>
+  <div class="disclaimer">This app summarises public info and is decision support, not a safety guarantee. For a serious allergy or celiac disease, always confirm cross-contamination handling with staff at the restaurant. Hours change and some places need reservations or sell out early.</div>
+  <button class="btn-card" id="refreshAppBtn">🔄 Refresh — get the latest version</button>
+  <p style="font-size:10.5px;color:var(--muted);text-align:center;margin-top:6px">Version <span id="appVer">…</span> · the app also auto-updates each time you reopen it</p>
+  <p style="font-size:11px;color:var(--muted);margin-top:12px;text-align:center">Deeply Connected Dining（深い関係食事）<br>by Deeply Connected Experiences（深い関係体験）</p>
+ </div>
+</div>
+
+<div class="modal" id="cardModal">
+ <div class="box">
+  <button class="closex" id="cardClose">×</button>
+  <h2>Show staff a card</h2>
+  <p style="margin:2px 0 0">Hand your phone to the staff — these explain the diet in Japanese, including the things that trip people up here (wheat hidden in soy sauce; fish dashi in almost everything).</p>
+  <div class="cards-seg" id="cardSeg">
+   <button class="celiac on" data-card="celiac">Celiac / Gluten-free</button>
+   <button class="vegan" data-card="vegan">Vegan</button>
+  </div>
+  <div id="cardBody"></div>
+  <div class="bright-tip">Tip: turn screen brightness up so it’s easy to read.</div>
+ </div>
+</div>
+
+<div class="modal" id="scanModal">
+ <div class="box">
+  <button class="closex" id="scanClose">×</button>
+  <h2>📷 Scan any menu</h2>
+  <p style="margin:2px 0 0">Photograph a menu — even somewhere not in this app — and get what looks safe for <b>gluten-free</b> and <b>vegan</b> diners, plus questions to ask (English, Japanese &amp; romaji).</p>
+  <button class="btn-scan" id="scanModalBtn" style="margin-top:13px">📷 Take or choose a menu photo</button>
+  <input type="file" id="scanModalFile" accept="image/*" capture="environment" style="display:none"/>
+  <div id="scanModalOut"></div>
+ </div>
+</div>
+
+<div class="modal" id="phraseModal">
+ <div class="box">
+  <button class="closex" id="phraseClose">×</button>
+  <h2>🗣 Useful phrases</h2>
+  <p style="margin:2px 0 0">Point or read aloud — each phrase has the Japanese (with kana over the kanji to learn it) and romaji to pronounce it. Hand staff the phone if it's easier.</p>
+  <div id="phraseBody"></div>
+ </div>
+</div>
+<div class="modal" id="konbiniModal">
+ <div class="box">
+  <button class="closex" id="konbiniClose">×</button>
+  <h2>🏪 Konbini GF / Vegan</h2>
+  <p style="margin:2px 0 0">Decision support, not a guarantee — scan the label (原材料名) on every item. Pick a chain, then check the shopping lists.</p>
+  <div id="konbiniBody"></div>
+ </div>
+</div>
+<div class="modal" id="menuModal">
+ <div class="box">
+  <button class="closex" id="menuClose">×</button>
+  <h2>📋 Menu</h2>
+  <div id="menuBody"></div>
+ </div>
+</div>
+<div class="modal" id="ramenGeekModal">
+ <div class="box">
+  <button class="closex" id="ramenGeekClose">×</button>
+  <h2>🔬 Ramen Geek</h2>
+  <div id="ramenGeekBody"></div>
+ </div>
+</div>
+
+<!-- DCP acknowledgment modal — must be before the app script -->
+<div class="dcp-modal" id="dcpModal" role="dialog" aria-modal="true">
+ <div class="dcp-box">
+  <div class="dcp-title">🌸 Deeply Connected Place</div>
+  <div class="dcp-body">
+   Greg has visited this place personally and is sharing it with care. These are not tourist destinations — they are beloved local spots that exist for the people who live nearby.<br><br><strong>Before you continue, please read this:</strong>
+  </div>
+  <div class="dcp-rules">
+   • <b>Maximum 4 people.</b> A larger group overwhelms a small space and its regulars.<br>
+   • <b>Honour the cultural comfort level.</b> Guide required means guide required. Don't improvise.<br>
+   • <b>Learn the minimum:</b> おねがいします · ありがとうございました · すみません.<br>
+   • <b>If it's full, leave quietly.</b> Don't wait at the door.<br>
+   • <b>You are a guest in someone's daily life.</b> They were not expecting you.
+  </div>
+  <div style="font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:4px">By continuing you acknowledge that you will treat this place with the same respect you would want someone to show your own favourite neighbourhood spot.</div>
+  <button class="dcp-confirm" id="dcpConfirm">I understand — show me Greg's note</button>
+  <button class="dcp-cancel" id="dcpCancel">Go back</button>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin=""></script>
+
+<script>
+const CAT_COLORS={BOTH:'#2E7D32',GF:'#1565C0',VEGAN:'#00897B',SHOJIN:'#6A1B9A',OMNI:'#EF6C00',MOM_AND_POP:'#8B4513'};
+const CAT_NAME={BOTH:'Vegan + GF',GF:'GF-dedicated',VEGAN:'Vegan',SHOJIN:'Shojin',OMNI:'Omnivore · both options',MOM_AND_POP:'Mom & Pop 🏮'};
+const CUISINE_LABELS={udon_soba:'Udon / Soba',ramen:'Ramen / Chūka',donburi:'Donburi',shokudo:'Shokudō',katsu:'Tonkatsu / Katsu',tempura:'Tempura',kaiseki:'Kaiseki / Kappō',sushi:'Sushi',yakitori:'Yakitori / Kushiyaki',okonomiyaki:'Okonomiyaki / Teppan',gyoza:'Gyoza',unagi:'Unagi',curry:'Curry',kissaten:'Kissaten',yoshoku:'Yōshoku',obanzai:'Obanzai',izakaya:'Izakaya',tofu:'Tofu / Yuba',shojin:'Shōjin',sweets:'Sweets / Bakery',other:'Other'};
+function buildCuisineChips(){
+ const row=document.getElementById('cuisineRow'); if(!row) return;
+ const places=state.cities[state.active]?.places||[];
+ const present=[...new Set(places.map(p=>p.cuisine_type).filter(Boolean))];
+ present.sort((a,b)=>(CUISINE_LABELS[a]||a).localeCompare(CUISINE_LABELS[b]||b));
+ row.innerHTML=present.map(c=>`<button class="chip cz" data-cuisine="${c}">${CUISINE_LABELS[c]||c}</button>`).join('');
+ row.querySelectorAll('[data-cuisine]').forEach(b=>b.onclick=()=>{const c=b.dataset.cuisine;state.filters.cuisines.has(c)?state.filters.cuisines.delete(c):state.filters.cuisines.add(c);b.classList.toggle('on');pushFilteredState();render();});
+}
+const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+const APP_BUILD='dcd-v63';
+const state={
+ cities:{}, active:null, summaries:{},
+ me:null, filters:{open:false,late:false,diet:'any',category:'all',cuisines:new Set(),q:''},
+ markers:{}, meMarker:null, selected:null, sortBy:'distance', filterPushed:false
+};
+
+// ---------- multi-city: load each city's JSON when the map reaches it ----------
+// Cities load lazily by map position (pan there, or GPS puts you there). Loaded
+// cities stay in memory; the service worker keeps them offline.
+// Monetization-ready: each manifest city has a `free` flag. OWN_ALL unlocks all
+// for the trip/owner build; a commercial build sets OWN_ALL=false and checks
+// entitlements in cityUnlocked().
+const OWN_ALL=true;
+let MANIFEST=null;
+function cityUnlocked(c){ return !!c && (OWN_ALL || c.free===true); }
+function manifestCity(id){ return MANIFEST && MANIFEST.cities.find(c=>c.id===id); }
+function cityAt(lat,lng){
+ if(!MANIFEST) return null;
+ for(const c of MANIFEST.cities){ const b=c.bounds; if(b && lat>=b[0][0]&&lat<=b[1][0]&&lng>=b[0][1]&&lng<=b[1][1]) return c; }
+ return null;
+}
+async function ensureCity(c){
+ if(!cityUnlocked(c)) return false;
+ if(state.cities[c.id]) return true;
+ try{ const d=await fetch(c.file).then(r=>r.ok?r.json():null); if(d){ state.cities[c.id]=d; return true; } }catch(_){}
+ return false;
+}
+async function loadCities(){
+ try{
+  MANIFEST=await fetch('data/manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null);
+  if(!MANIFEST||!Array.isArray(MANIFEST.cities)||!MANIFEST.cities.length) return;
+  const def=MANIFEST.cities.find(c=>c.id===MANIFEST.default_city)||MANIFEST.cities.find(cityUnlocked)||MANIFEST.cities[0];
+  if(await ensureCity(def)) state.active=def.id;
+ }catch(_){ /* offline with an empty cache: boot shows a reload message */ }
+}
+async function onMapMove(){
+ if(!map||!MANIFEST) return;
+ const ctr=map.getCenter(); const c=cityAt(ctr.lat,ctr.lng);
+ if(!c || c.id===state.active || !cityUnlocked(c)) return;   // (locked → future unlock teaser)
+ if(await ensureCity(c)) switchCity(c.id);
+}
+function switchCity(id){
+ if(state.active===id || !state.cities[id]) return;
+ state.active=id;
+ const mc=manifestCity(id), nameEl=document.getElementById('cityName');
+ if(nameEl) nameEl.textContent=(mc&&mc.name)||state.cities[id].city||id;
+ buildCuisineChips(); drawMarkers(); render();
+}
+
+// ---------- geo ----------
+function haversine(a,b,c,d){const R=6371,t=Math.PI/180;const x=Math.sin((c-a)*t/2)**2+Math.cos(a*t)*Math.cos(c*t)*Math.sin((d-b)*t/2)**2;return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));}
+function fmtDist(km){return km<1?Math.round(km*1000)+' m':km.toFixed(km<10?1:0)+' km';}
+
+// ---------- open now (Asia/Tokyo) ----------
+function jstParts(){
+ const f=new Intl.DateTimeFormat('en-US',{timeZone:state.cities[state.active]?.tz||'Asia/Tokyo',hour12:false,weekday:'short',hour:'2-digit',minute:'2-digit'});
+ const p={}; f.formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
+ const wd={Mon:0,Tue:1,Wed:2,Thu:3,Fri:4,Sat:5,Sun:6}[p.weekday];
+ let h=parseInt(p.hour,10); if(h===24)h=0;
+ return {dow:wd, mins:h*60+parseInt(p.minute,10)};
+}
+function t2m(t){if(t==='24:00')return 1440;const[a,b]=t.split(':');return +a*60+ +b;}
+function openState(p){
+ if(p.hours_status!=='regular') return null;
+ const {dow,mins}=jstParts(); const wk=p.hours;
+ for(const [o,c] of (wk[dow]||[])){const O=t2m(o),C=t2m(c); if(C>O){if(mins>=O&&mins<C)return true} else {if(mins>=O)return true}}
+ for(const [o,c] of (wk[(dow+6)%7]||[])){const O=t2m(o),C=t2m(c); if(C<=O){if(mins<C)return true}}
+ return false;
+}
+
+// ---------- filtering ----------
+function dietOK(p){
+ const veg=['full','options','limited'].includes(p.vegan_status);
+ const gf=['dedicated','high','options'].includes(p.gf_confidence);
+ const safe=['dedicated','high'].includes(p.gf_confidence);
+ switch(state.filters.diet){case 'vegan':return veg;case 'gf':return gf;case 'celiac':return safe;case 'both':return veg&&gf;default:return true;}
+}
+function visiblePlaces(){
+ const f=state.filters; const all=state.cities[state.active]?.places||[];
+ let r=all.filter(p=>{
+  if(f.category==='ramen' && p.cuisine_type!=='ramen') return false;
+  if(f.category==='mompop' && p.category!=='MOM_AND_POP') return false;
+  if(f.cuisines.size && !f.cuisines.has(p.cuisine_type)) return false;
+  if(!dietOK(p)) return false;
+  if(f.late && !p.flags.open_late) return false;
+  if(f.open){ if(openState(p)===false) return false; }
+  if(f.q){ const q=f.q.toLowerCase(); if(!(p.name+' '+p.neighborhood+' '+p.cuisine+' '+p.notes).toLowerCase().includes(q)) return false; }
+  return true;
+ });
+ if(state.me) r.forEach(p=>p._d=haversine(state.me.lat,state.me.lng,p.lat,p.lng));
+ r.sort((a,b)=> state.sortBy==='distance'&&state.me ? (a._d-b._d) : a.name.localeCompare(b.name));
+ return r;
+}
+
+// ---------- map ----------
+let map;
+function initMap(){
+ const c=state.cities[state.active];
+ map=L.map('map',{zoomControl:false,attributionControl:true}).setView(c.center,14);
+ L.control.zoom({position:'topleft'}).addTo(map);
+ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,
+   attribution:'&copy; OpenStreetMap'}).addTo(map);
+ state.me={lat:c.center[0],lng:c.center[1]};
+ const icon=L.divIcon({className:'',html:'<div class="me-pin"><svg width="34" height="44" viewBox="0 0 34 44"><path d="M17 0C7.6 0 0 7.4 0 16.6 0 29 17 44 17 44s17-15 17-27.4C34 7.4 26.4 0 17 0z" fill="#E2553B"/><circle cx="17" cy="16.5" r="6.5" fill="#fff"/></svg></div>',iconSize:[34,44],iconAnchor:[17,44]});
+ state.meMarker=L.marker([c.center[0],c.center[1]],{icon,draggable:true,zIndexOffset:1000}).addTo(map);
+ state.meMarker.on('dragend',e=>{const ll=e.target.getLatLng();state.me={lat:ll.lat,lng:ll.lng};render();});
+ drawMarkers();
+ map.on('moveend',onMapMove);   // load whichever city the map reaches
+ locate(true);
+}
+function drawMarkers(){
+ Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={};
+ (state.cities[state.active]?.places||[]).forEach(p=>{
+  const m=L.circleMarker([p.lat,p.lng],{radius:7,weight:2,color:'#fff',fillColor:CAT_COLORS[p.category],fillOpacity:.95});
+  m.on('click',()=>selectPlace(p.id)); m.addTo(map); state.markers[p.id]=m;
+ });
+}
+function syncMarkers(vis){
+ const set=new Set(vis.map(p=>p.id));
+ for(const [id,m] of Object.entries(state.markers)){
+  const on=set.has(id); m.setStyle({fillOpacity:on?.95:0,opacity:on?1:0});
+  if(!on) m.setStyle({radius:0}); else m.setStyle({radius: id===state.selected?10:7});
+ }
+}
+
+// ---------- render ----------
+function badgeGF(p){
+ const cls=['dedicated','high'].includes(p.gf_confidence)?'b-safe':(p.gf_confidence==='options'?'b-caution':'b-unknown');
+ return `<span class="badge dietui ${cls}">GF · ${p.gf_label.split('·')[0].trim().replace(' staff','')}</span>`;
+}
+function openTag(p){const s=openState(p);return s===true?'<span class="open-now">● Open now</span>':s===false?'<span class="open-no">Closed now</span>':'<span class="open-vary">Hours vary</span>';}
+function render(){
+ const vis=visiblePlaces();
+ document.getElementById('resCount').textContent=vis.length+' places';
+ syncMarkers(vis);
+ const ls=document.getElementById('listScroll');
+ ls.innerHTML = vis.map(p=>`
+  <div class="card" style="border-left-color:${CAT_COLORS[p.category]}" data-id="${p.id}">
+   <div class="main">
+    <div class="nm">${p.name}</div>
+    <div class="meta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${openTag(p)}</div>
+    <div class="badges">${badgeGF(p)}<span class="badge b-vegan dietui">${p.vegan_label}</span>
+     ${p.flags.reservation?'<span class="badge b-unknown">Reservation</span>':''}
+     ${p.flags.cash_only?'<span class="badge b-unknown">Cash only</span>':''}</div>
+   </div>
+   <div class="dist">${state.me?`<b>${fmtDist(p._d)}</b>away`:''}</div>
+  </div>`).join('') || '<p style="color:var(--muted);font-size:13px;padding:14px 4px">No places match these filters. Try clearing a filter.</p>';
+ ls.querySelectorAll('.card').forEach(c=>{
+  let sx=0,sy=0,mv=false;
+  c.addEventListener('touchstart',e=>{const t=e.touches[0];sx=t.clientX;sy=t.clientY;mv=false;},{passive:true});
+  c.addEventListener('touchmove',e=>{const t=e.touches[0];if(Math.abs(t.clientX-sx)>8||Math.abs(t.clientY-sy)>8)mv=true;},{passive:true});
+  c.addEventListener('touchend',e=>{if(mv)return;e.preventDefault();selectPlace(c.dataset.id);},{passive:false});
+  c.onclick=()=>selectPlace(c.dataset.id);
+ });
+}
+
+function findPlace(id){return (state.cities[state.active].places).find(p=>p.id===id);}
+function selectPlace(id){
+ state.selected=id; const p=findPlace(id); if(!p)return;
+ history.pushState({page:'detail',id},'');
+ _renderDetail(p);
+}
+// ---------- 🍜 ramen "The Bowl" panel (renders the baked ramen object) ----------
+function renderRamenPanel(r){
+ if(!r) return '';
+ const cap=s=>s?String(s).replace(/_/g,' '):'';
+ const ax=[['Richness','richness'],['Oiliness','oiliness'],['Clarity','clarity'],['Tare','tare_strength'],['Noodle','noodle_firmness'],['Aroma','aroma_punch']];
+ const pr=r.profile||{};
+ const bars=ax.map(([lab,k])=>{const v=Math.max(0,Math.min(5,Number(pr[k])||0));return `<div style="display:flex;align-items:center;gap:8px;margin:3px 0"><span style="width:62px;font-size:11px;color:var(--muted)">${lab}</span><span style="flex:1;height:8px;background:#eee3cf;border-radius:5px;overflow:hidden"><span style="display:block;height:100%;width:${v/5*100}%;background:#9c3b2e"></span></span></div>`;}).join('');
+ const facts=[];
+ if((r.regional_style||[]).length)facts.push('<b>Style:</b> '+r.regional_style.join(', '));
+ if((r.broth_base||[]).length)facts.push('<b>Broth:</b> '+r.broth_base.map(cap).join(' / ')+(r.broth_texture&&r.broth_texture!=='unknown'?' ('+r.broth_texture+')':''));
+ if((r.tare||[]).length)facts.push('<b>Tare:</b> '+r.tare.map(cap).join(' / '));
+ if((r.aroma_oil||[]).length&&!(r.aroma_oil.length===1&&r.aroma_oil[0]==='none'))facts.push('<b>Aroma oil:</b> '+r.aroma_oil.map(cap).join(' / '));
+ if(r.richness)facts.push('<b>Body:</b> '+r.richness);
+ if((r.sub_genre||[]).length)facts.push('<b>Type:</b> '+r.sub_genre.map(cap).join(' / '));
+ const dchip=(label,val)=>{const good=val==='gf'||val==='vegan';const c=good?'#2e7d32':val==='ask'?'#b07a00':'#9c3b2e';const t=good?'✓':val==='ask'?'ask':'✗';return `<span style="background:${c};color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;margin-right:6px">${label} ${t}</span>`;};
+ return `<div class="panel"><h3>🍜 The Bowl</h3>
+  ${r.signature_bowl?`<div class="det" style="margin-bottom:6px"><b>Order:</b> ${r.signature_bowl}</div>`:''}
+  ${bars}
+  ${facts.length?`<div class="det" style="margin-top:8px;line-height:1.8">${facts.join(' &nbsp;·&nbsp; ')}</div>`:''}
+  ${r.chashu?`<div class="det"><b>Chashu:</b> ${r.chashu}</div>`:''}
+  ${(r.notable_toppings||[]).length?`<div class="det"><b>Toppings:</b> ${r.notable_toppings.join(', ')}</div>`:''}
+  <div class="dietui" style="margin-top:8px">${dchip('GF',(r.gf||{}).status)}${dchip('Vegan',(r.vegan||{}).status)}</div>
+  ${(r.gf&&r.gf.note)?`<div class="det" style="font-size:12px">${r.gf.note}</div>`:''}
+  ${(r.vegan&&r.vegan.note)?`<div class="det" style="font-size:12px">${r.vegan.note}</div>`:''}
+  <button id="ramenGeekBtn" style="margin-top:10px;width:100%;background:#2b2218;color:#fff;border:none;border-radius:10px;padding:9px;font-weight:700;font-size:13px;cursor:pointer">🔬 Ramen Geek — the craft</button>
+ </div>`;
+}
+// ---------- 🔬 Ramen Geek (shop specifics + craft education) ----------
+const RAMEN_EDU={
+ kansui:"Ramen noodles are wheat + <b>kansui</b> (かん水), an alkaline salt that lifts the dough's pH to ~9 — yellowing the noodle and building the springy <b>koshi</b> chew that sets ramen apart from udon or soba. (It's also why ramen is essentially never gluten-free.)",
+ hydration:{low:"<b>Low-hydration (低加水)</b> noodles drink up less water → a firm, snappy bite that stands up to heavy broth and soaks up flavor — the Hakata-tonkotsu approach (so stiff it's pressed by machine/foot, not hand-kneaded).",medium:"<b>Medium-hydration</b> noodles split the difference between chew and softness.",high:"<b>High-hydration (多加水)</b> noodles are moister and more elastic, with a smoother, slipperier bite — often paired with lighter, clearer soups."},
+ chintan:"<b>Chintan (清湯)</b> — a clear broth, gently simmered so it stays translucent.",
+ paitan:"<b>Paitan (白湯)</b> — a cloudy, emulsified broth, hard-boiled so fat &amp; collagen turn it creamy and opaque.",
+ tare:"The <b>tare</b> (タレ) is the concentrated seasoning that <i>names</i> the bowl — shoyu, shio, or miso. The broth is built nearly unseasoned; the tare gives it identity. (Tonkotsu is a <i>broth</i>, not a tare.)",
+ aroma:"<b>Aroma oil (香味油)</b> floats on top for fragrance &amp; mouthfeel — chicken fat (chiyu), pork back-fat (seabura), burnt-garlic mayu, or scallion oil. It's why two shoyu bowls can smell completely different.",
+ richness:{assari:"<b>Assari</b> — light and restrained.",medium:"Medium-bodied.",kotteri:"<b>Kotteri</b> — rich, heavy, full-bodied."},
+ soul:"In ramen the <b>broth is the soul</b> — you taste a regional lineage in the soup. Noodles are the body, chashu the heart, toppings the dress."
+};
+function renderRamenGeekBody(r){
+ if(!r) return '';
+ const cap=s=>s?String(s).replace(/_/g,' '):'';const E=RAMEN_EDU;
+ const sec=(t,h)=>h?`<div style="margin-top:12px"><div style="font-weight:700;font-size:13px">${t}</div>${h}</div>`:'';
+ const edu=t=>`<div style="font-size:12px;color:#7a6f5c;line-height:1.55;margin-top:3px">🔬 ${t}</div>`;
+ const det=t=>`<div class="det">${t}</div>`;
+ const n=r.noodles||{};const nf=[];
+ if(n.thickness&&n.thickness!=='unknown')nf.push(n.thickness);
+ if(n.shape&&n.shape!=='unknown')nf.push(n.shape);
+ if(n.hydration&&n.hydration!=='unknown')nf.push(n.hydration+'-hydration');
+ if(n.handmade===true)nf.push('house-made (jikasei)');
+ const noodleHtml=det((nf.join(', ')||'—')+(n.notes?` — ${n.notes}`:''))+edu(E.kansui)+((n.hydration&&E.hydration[n.hydration])?edu(E.hydration[n.hydration]):'');
+ const bf=[];
+ if((r.broth_base||[]).length)bf.push(r.broth_base.map(cap).join(' / '));
+ if(r.broth_texture&&r.broth_texture!=='unknown')bf.push(r.broth_texture);
+ if(r.richness)bf.push(r.richness);
+ const brothHtml=det(bf.join(' · ')||'—')+(r.broth_texture==='chintan'?edu(E.chintan):r.broth_texture==='paitan'?edu(E.paitan):'')+((r.richness&&E.richness[r.richness])?edu(E.richness[r.richness]):'');
+ const tareHtml=(r.tare||[]).length?det(r.tare.map(cap).join(' / '))+edu(E.tare):'';
+ const oilHtml=((r.aroma_oil||[]).length&&!(r.aroma_oil.length===1&&r.aroma_oil[0]==='none'))?det(r.aroma_oil.map(cap).join(' / '))+edu(E.aroma):'';
+ const soulHtml=((r.regional_style||[]).length?det('<b>Style:</b> '+r.regional_style.join(', ')):'')+(r.pantheon?det(r.pantheon):'')+edu(E.soul);
+ const chashuHtml=r.chashu?det(r.chashu):'';
+ return `<p style="font-size:12px;color:var(--muted);margin:0 0 4px">The documented craft of this bowl. Exact kansui ratios &amp; boil times are rarely published per shop — ask the staff for those.</p>`+
+  sec('🍜 Noodles',noodleHtml)+sec('🥣 Broth',brothHtml)+sec('🧂 Tare (seasoning)',tareHtml)+sec('💧 Aroma oil',oilHtml)+sec('🐷 Chashu (the heart)',chashuHtml)+sec('🗺️ Soul &amp; lineage',soulHtml);
+}
+function openRamenGeek(r){
+ document.getElementById('ramenGeekBody').innerHTML=renderRamenGeekBody(r);
+ document.getElementById('ramenGeekModal').classList.add('show');
+ document.getElementById('ramenGeekClose').onclick=()=>document.getElementById('ramenGeekModal').classList.remove('show');
+ document.getElementById('ramenGeekModal').onclick=e=>{if(e.target.id==='ramenGeekModal')e.target.classList.remove('show');};
+}
+// ---------- 📋 in-app translated menu ----------
+let MENUS={}, MENUS_CITY=null, MENU_DIET='gf', MENU_PLACE=null;
+async function loadMenus(cityId){
+ if(MENUS_CITY===cityId) return MENUS;
+ try{ MENUS=await (await fetch('data/'+cityId+'_menus.json',{cache:'no-store'})).json(); }catch(e){ MENUS={}; }
+ MENUS_CITY=cityId; return MENUS;
+}
+async function openMenu(p){
+ MENU_PLACE=p; MENU_DIET='gf';
+ const body=document.getElementById('menuBody'); body.innerHTML='<p style="color:var(--muted)">Loading menu…</p>';
+ document.getElementById('menuModal').classList.add('show');
+ document.getElementById('menuClose').onclick=()=>document.getElementById('menuModal').classList.remove('show');
+ document.getElementById('menuModal').onclick=e=>{if(e.target.id==='menuModal')e.target.classList.remove('show');};
+ await loadMenus(state.active);
+ renderMenu();
+}
+function renderMenu(){
+ const p=MENU_PLACE; if(!p) return; const m=(MENUS||{})[p.id];
+ const body=document.getElementById('menuBody');
+ if(!m||!m.items||!m.items.length){ body.innerHTML='<p style="color:var(--muted)">No translated menu yet for this place.</p>'; return; }
+ const diet=MENU_DIET, esc=s=>String(s||'').replace(/</g,'&lt;');
+ const mu=p.menu_url||p.website; const orig=mu?`<a href="${mu}" target="_blank" rel="noopener" style="font-size:12px;color:var(--ver);font-weight:600;display:inline-block;margin:6px 0">📷 Show original menu ›</a>`:'';
+ const chip=it=>{const v=it[diet],good=v==='gf'||v==='vegan';const c=good?'#2e7d32':v==='ask'?'#b07a00':'#9c3b2e';const t=good?(diet==='gf'?'GF':'Vegan'):v==='ask'?'ask':'no';return `<span style="background:${c};color:#fff;border-radius:999px;padding:1px 8px;font-size:11px;white-space:nowrap">${t}</span>`;};
+ const secs={}; m.items.forEach(it=>{(secs[it.section||'Menu']=secs[it.section||'Menu']||[]).push(it);});
+ const itemsHtml=Object.entries(secs).map(([sec,items])=>`<div style="margin-top:10px"><div style="font-weight:700;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">${esc(sec)}</div>`+
+  items.map(it=>`<div style="border-bottom:1px solid #f0eada;padding:7px 0"><div style="display:flex;justify-content:space-between;gap:8px"><div><div style="font-weight:600">${esc(it.en)}</div><div style="font-size:12px;color:var(--muted)">${esc(it.ja)} · ${esc(it.romaji)}</div></div><div style="text-align:right;white-space:nowrap">${chip(it)}${it.price?`<div style="font-size:12px;color:var(--muted)">${esc(it.price)}</div>`:''}</div></div>${it.note?`<div style="font-size:11.5px;color:#7a6f5c;margin-top:2px">${esc(it.note)}</div>`:''}<details style="margin-top:3px"><summary style="font-size:11.5px;color:var(--ver);cursor:pointer">🗣 how to order</summary><div style="font-size:13px;margin:3px 0">「${esc(it.ja)}をください」<br><span style="color:var(--muted)">${esc(it.romaji)} o kudasai</span></div></details></div>`).join('')+`</div>`).join('');
+ const cav=m.verified==='provisional'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:8px;padding:7px 10px;font-size:11.5px;color:#5a3e00;margin-bottom:6px">⚠ Single-source menu — verify in person.</div>`:'';
+ body.innerHTML=`${cav}<div style="display:flex;gap:6px;margin-bottom:4px"><button class="chip" data-diet="gf" style="${diet==='gf'?'background:#9c3b2e;color:#fff':''}">Highlight GF</button><button class="chip" data-diet="vegan" style="${diet==='vegan'?'background:#9c3b2e;color:#fff':''}">Highlight Vegan</button></div><div style="font-size:11px;color:var(--muted)">Prices approximate · classifications are guidance, not a guarantee — confirm allergens with staff.</div>${orig}${itemsHtml}`;
+ body.querySelectorAll('[data-diet]').forEach(b=>b.onclick=()=>{MENU_DIET=b.dataset.diet;renderMenu();});
+}
+function _renderDetail(p){
+ map.panTo([p.lat,p.lng]);
+ const {dow}=jstParts();
+ const hoursHtml = p.hours_status==='regular'
+  ? `<table class="hours-tbl">${DAYNAME.map((d,i)=>{const w=(p.hours[i]||[]);const txt=w.length?w.map(x=>x[0]+'–'+x[1]).join(', '):'Closed';return `<tr class="${i===dow?'today':''}"><td>${d}</td><td>${txt}</td></tr>`}).join('')}</table>`
+  : `<div class="det">${p.hours_raw}</div>`;
+ const flags=[];
+ if(p.flags.reservation)flags.push('Reservation');
+ if(p.flags.cash_only)flags.push('Cash only');
+ if(p.flags.halal)flags.push('Halal');
+ if(p.flags.open_late)flags.push('Open late');
+ document.getElementById('detailNavName').textContent = p.name;
+ const ds=document.getElementById('detailScroll');
+ ds.innerHTML=`
+  <div class="dtitle">${p.name}</div>
+  <div class="dmeta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${p.cuisine}${state.me?` · ${fmtDist(haversine(state.me.lat,state.me.lng,p.lat,p.lng))} away`:''}</div>
+  ${p.category==='MOM_AND_POP'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;color:#5a3e00"><b>🏮 Mom &amp; Pop</b> — independently owned, under 30 seats, beloved by locals. <b>Maximum 4 people.</b> Dietary options vary — check the GF and vegan notes below. The experience here is the point.</div>`:''}
+  ${renderComfort(p)}
+  ${p.dcp?`<button class="dcp-badge" id="dcpBtn">🌸 Deeply Connected Place — tap to read Greg's note</button>`:(p.category==='MOM_AND_POP'&&!p.dcp?`<div style="font-size:11px;color:var(--muted);text-align:center;margin:6px 0">Greg's note coming after the trip</div>`:'')}  
+  <div class="dstatus">${openTag(p)}</div>
+  ${flags.length?`<div class="flagchips">${flags.map(f=>`<span class="flagchip">${f}</span>`).join('')}</div>`:''}
+  <div class="panel dietui"><h3>Gluten-free</h3>
+   <div class="gfbig"><span class="dot" style="width:11px;height:11px;border-radius:50%;background:${['dedicated','high'].includes(p.gf_confidence)?'var(--safe)':p.gf_confidence==='options'?'var(--caution)':'var(--unknown)'}"></span>${p.gf_label}</div>
+   ${p.gf_detail?`<div class="det">${p.gf_detail}</div>`:''}</div>
+  <div class="panel dietui"><h3>Vegan</h3><div class="gfbig" style="color:#00796B">${p.vegan_label}</div>${p.vegan_detail?`<div class="det">${p.vegan_detail}</div>`:''}</div>
+  <div class="panel"><h3>Hours <span style="color:var(--muted);font-weight:400">(Japan time)</span></h3>${hoursHtml}</div>
+  <div class="panel"><h3>What makes this place special?</h3><div class="note">${p.highlight||p.notes}</div></div>
+  ${p.ramen?renderRamenPanel(p.ramen):''}
+  <div class="actions">
+   <a class="btn-maps" href="${p.gmaps}" target="_blank" rel="noopener">📍 Google Maps</a>
+   <button class="btn-more" id="moreBtn">🛡️ Food Safety</button>
+   <button class="btn-bio" id="bioBtn">👨‍🍳 Chef / Owner Story</button>
+   ${p.has_menu?`<button class="btn-menu active" id="menuBtn">📋 Show Menu</button>`:(()=>{const mu=p.menu_url||p.website;return mu?`<a class="btn-menu active" href="${mu}" target="_blank" rel="noopener">📋 Show Menu</a>`:`<span class="btn-menu disabled">📋 Show Menu</span>`;})()}
+  </div>
+  <button class="btn-card" id="cardFromDetail">🪪 Show staff a celiac / vegan card</button>
+  <button class="btn-card" id="phrasesFromDetail">🗣 Useful phrases (GF / vegan / courtesy)</button>
+  <button class="btn-scan" id="scanMenuBtn">📷 Scan the menu — what can I eat here? <span class="scan-tag">GF / vegan</span></button>
+  <input type="file" id="menuFile" accept="image/*" capture="environment" style="display:none"/>
+  <div id="scanOut"></div>
+  ${p.website?`<a href="${p.website}" target="_blank" rel="noopener" style="font-size:12.5px;color:var(--ver);font-weight:600">Visit website ›</a>`:''}
+  <div id="moreOut"></div>`;
+ addTouch(document.getElementById('detailNavClose'),showList);
+ addTouch(document.getElementById('moreBtn'),()=>tellMore(p));
+ addTouch(document.getElementById('bioBtn'),()=>tellBio(p));
+ addTouch(document.getElementById('cardFromDetail'),()=>openCards('celiac'));
+ addTouch(document.getElementById('phrasesFromDetail'),openGlossary);
+ const mb=document.getElementById('menuBtn'); if(mb) addTouch(mb,()=>openMenu(p));
+ const rgb=document.getElementById('ramenGeekBtn'); if(rgb) addTouch(rgb,()=>openRamenGeek(p.ramen));
+ (function(){const sb=document.getElementById('scanMenuBtn'),mf=document.getElementById('menuFile');
+  if(sb&&mf){ addTouch(sb,()=>mf.click()); mf.onchange=e=>{ const f=e.target.files&&e.target.files[0]; if(f) scanMenu(f,{name:p.name,cuisine:p.cuisine,gf_detail:p.gf_detail,vegan_detail:p.vegan_detail},'scanOut'); mf.value=''; }; }})();
+ const dcpBtn=document.getElementById('dcpBtn');
+ if(dcpBtn) addTouch(dcpBtn,()=>openDCP(p));
+ document.getElementById('listView').classList.add('hide');
+ document.getElementById('detailView').classList.add('show');
+ document.getElementById('grab').style.display='none';
+ document.getElementById('mainHeader').style.display='none';
+ document.querySelector('.filters').style.display='none';
+ expand(true);
+ render();
+}
+function showList(fromPop){
+ state.selected=null;
+ document.getElementById('detailView').classList.remove('show');
+ document.getElementById('listView').classList.remove('hide');
+ document.getElementById('grab').style.display='';
+ document.getElementById('mainHeader').style.display='';
+ document.querySelector('.filters').style.display='';
+ if(!fromPop && history.state && history.state.page==='detail') history.back();
+ render();
+}
+
+// ---------- "Tell me more" (stub until the Worker is wired) ----------
+async function tellMore(p){
+ const out=document.getElementById('moreOut');
+ if(p.safety){ out.innerHTML=renderSummary(p.safety); return; }
+ const cached = state.summaries && state.summaries[p.id];
+ if(cached){
+  out.innerHTML=renderSummary(cached,true)+`<button class="refresh-link" id="refreshSum">↻ Check for newer reviews</button>`;
+  document.getElementById('refreshSum').onclick=()=>fetchLive(p,out);
+  return;
+ }
+ fetchLive(p,out);
+}
+async function fetchLive(p,out){
+ out.innerHTML='<div class="more-out">Checking recent reviews…</div>';
+ try{
+  const cityName=(state.cities[state.active]&&state.cities[state.active].city)||'';
+  const r=await fetch('/api/place-summary?id='+encodeURIComponent(p.id)+'&name='+encodeURIComponent(p.name+' '+cityName),{cache:'no-cache'});
+  const j=await r.json();
+  if(j && j.wired && !j.error){ state.summaries[p.id]=j; out.innerHTML=renderSummary(j); return; }
+  if(j && j.error){ out.innerHTML=`<div class="more-out"><b>Couldn’t fetch a summary just now.</b><br>(${j.error}) Try again in a moment, or <a href="${p.gmaps}" target="_blank" rel="noopener" style="color:var(--ver);font-weight:600">read the Google reviews ›</a></div>`; return; }
+  throw new Error('stub');
+ }catch(_){
+  const cached = state.summaries && state.summaries[p.id];
+  if(cached){ out.innerHTML=renderSummary(cached,true); return; }
+  out.innerHTML=`<div class="more-out">
+   <b>Couldn’t reach the review service.</b><br><br>
+   If you’re online and just deployed, make sure <code>MISTRAL_API_KEY</code> is set on the Cloudflare project. Once it’s wired, this searches recent reviews for cross-contamination notes (“shared fryer”, “same spatula as pork”), dedicated-fryer mentions, soy-sauce/wheat flags, vegan cross-contact, and staff allergy handling — each with a source link.<br><br>
+   For now, you can <a href="${p.gmaps}" target="_blank" rel="noopener" style="color:var(--ver);font-weight:600">read the Google reviews ›</a>
+  </div>`;
+ }
+}
+function renderSummary(j){
+ const sec=(title,items)=> items&&items.length?`<b>${title}</b><ul style="margin:4px 0 10px;padding-left:18px">${items.map(it=>`<li>${it.text||it} ${it.source?`<a href="${it.source}" target="_blank" rel="noopener" style="color:var(--ver)">source</a>`:''}</li>`).join('')}</ul>`:'';
+ const fryer = j.dedicated_fryer===true
+   ? `<div style="font-weight:700;color:var(--safe);margin-bottom:8px">✓ Dedicated fryer reported</div>`
+   : j.dedicated_fryer===false
+   ? `<div style="font-weight:700;color:var(--caution);margin-bottom:8px">✕ No dedicated fryer — shared oil</div>` : '';
+ return `<div class="more-out">
+   ${fryer}
+   ${sec('⚠ Cross-contamination notes',j.gf_cross_contamination)}
+   ${sec('Soy sauce / wheat',j.soy_sauce_wheat)}
+   ${sec('Vegan cross-contact',j.vegan_cross_contact)}
+   ${sec('Staff & allergy handling',j.staff_allergy_handling)}
+   ${sec('What reviewers liked',j.positives)}
+   ${(!j.gf_cross_contamination?.length && !j.soy_sauce_wheat?.length && !j.vegan_cross_contact?.length)?'<div style="color:#46506b">No specific cross-contamination reports surfaced — that’s not a guarantee; confirm with staff.</div>':''}
+   <div style="font-size:11px;color:var(--muted);margin-top:8px">Confidence: ${j.confidence||'—'} · as of ${j.last_checked||'recently'} · always confirm with staff.</div>
+ </div>`;
+}
+
+// ---------- Menu scan: "what can I eat here?" (GF / vegan) ----------
+function downscaleImage(file,maxPx=1400,quality=0.72){
+ return new Promise((resolve,reject)=>{
+  const img=new Image(); const url=URL.createObjectURL(file);
+  img.onload=()=>{
+   let{width:w,height:h}=img; const scale=Math.min(1,maxPx/Math.max(w,h));
+   w=Math.round(w*scale); h=Math.round(h*scale);
+   const cv=document.createElement('canvas'); cv.width=w; cv.height=h;
+   cv.getContext('2d').drawImage(img,0,0,w,h);
+   URL.revokeObjectURL(url);
+   resolve(cv.toDataURL('image/jpeg',quality));
+  };
+  img.onerror=()=>{URL.revokeObjectURL(url);reject(new Error('image load failed'));};
+  img.src=url;
+ });
+}
+async function scanMenu(file,ctx,outId){
+ ctx=ctx||{}; const out=document.getElementById(outId||'scanOut'); if(!out) return;
+ let dataUrl;
+ try{ dataUrl=await downscaleImage(file); }
+ catch(_){ out.innerHTML='<div class="scan-box">Couldn’t read that image — try another photo.</div>'; return; }
+ out.innerHTML=`<div class="scan-box"><img class="scan-thumb" src="${dataUrl}" alt="menu"/><div>Reading the menu… <span class="scan-spin">◴</span><br><span style="font-size:11px;color:var(--muted)">A few seconds. Each dish checked for wheat/soy/dashi and animal ingredients.</span></div></div>`;
+ try{
+  const r=await fetch('/api/menu-scan',{method:'POST',headers:{'content-type':'application/json'},
+   body:JSON.stringify({image:dataUrl,name:ctx.name||'',cuisine:ctx.cuisine||'',gf_detail:ctx.gf_detail||'',vegan_detail:ctx.vegan_detail||''})});
+  const j=await r.json().catch(()=>null);
+  if(r.ok && j && j.wired!==false && !j.error){ out.innerHTML=renderMenuScan(j,dataUrl); return; }
+  if(j && j.error==='rate_limited'){ out.innerHTML=`<div class="scan-box">The menu reader is busy right now — wait a moment and tap again. The questions below still help.</div>${renderQuestionsFallback()}`; return; }
+  if(j && j.wired===false){ out.innerHTML=`<div class="scan-box"><b>Menu reader isn’t set up on this deployment.</b><br>(The AI key isn’t configured.)${renderQuestionsFallback()}</div>`; return; }
+  if(j && j.error){ out.innerHTML=`<div class="scan-box"><b>The menu reader hit a snag — try again.</b><br><span style="font-size:11px;color:var(--muted)">(${j.error}${j.status?' '+j.status:''})</span>${renderQuestionsFallback()}</div>`; return; }
+  throw new Error('stub');
+ }catch(_){
+  out.innerHTML=`<div class="scan-box"><b>Couldn’t reach the menu reader.</b><br>Check your connection and try again.${renderQuestionsFallback()}</div>`;
+ }
+}
+function escHtml(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function vchip(kind,v){const m={safe:['✓','b-safe'],ask:['?','b-ask'],avoid:['✕','b-avoid']};const [ic,cls]=m[v]||['—','b-unk'];return `<span class="vchip ${cls}">${kind} ${ic}</span>`;}
+// furi = [[surface, reading], ...]; reading "" for kana/punctuation. Builds safe <ruby> furigana.
+function rubyFuri(furi,fallbackJa){
+ if(!Array.isArray(furi)||!furi.length) return escHtml(fallbackJa||'');
+ return furi.map(seg=>{const t=Array.isArray(seg)?seg[0]:seg.t,r=Array.isArray(seg)?seg[1]:seg.r;
+  return r?`<ruby>${escHtml(t)}<rt>${escHtml(r)}</rt></ruby>`:escHtml(t);}).join('');
+}
+function qLine(x){
+ if(typeof x==='string') return `<li><span class="q-en">${x}</span></li>`;
+ return `<li><span class="q-en">${x.en||''}</span>`+
+  (x.ja||x.furi?`<span class="q-ja">${rubyFuri(x.furi,x.ja)}</span>`:'')+
+  (x.rj?`<span class="q-rj">${x.rj}</span>`:'')+`</li>`;
+}
+function renderMenuScan(j,thumb){
+ const items=Array.isArray(j.items)?j.items:[];
+ const rows=items.map(it=>`<div class="scan-item"><div class="scan-item-head"><span class="scan-item-name">${escHtml(it.name||'')}</span><span class="vchips">${vchip('GF',it.gf)}${vchip('V',it.vegan)}</span></div>${it.note?`<div class="scan-item-note">${escHtml(it.note)}</div>`:''}</div>`).join('');
+ const q=(j.questions||[]).map(qLine).join('');
+ return `<div class="scan-box scan-result">
+  ${thumb?`<img class="scan-thumb" src="${thumb}" alt="menu"/>`:''}
+  ${j.legible===false?`<div class="scan-warn">⚠ The photo was hard to read — retake it straight-on, in good light, one section at a time.</div>`:''}
+  <div class="scan-legend"><span class="vchip b-safe">✓ safe</span><span class="vchip b-ask">? ask</span><span class="vchip b-avoid">✕ avoid</span> &nbsp;·&nbsp; <b>GF</b>=gluten-free &nbsp; <b>V</b>=vegan</div>
+  ${rows?`<div class="scan-items">${rows}</div>`:'<div style="color:#9AA0B6;margin:8px 0">No dishes could be read — try a clearer, closer photo.</div>'}
+  ${q?`<div class="scan-sec scan-q"><b>🗣 Questions to ask before you order</b><ul>${q}</ul><div class="scan-qnote">Show staff the Japanese; say it with the romaji underneath.</div></div>`:''}
+  <div class="scan-caveat">${escHtml(j.caveat||'This reads the menu only — it can’t see the kitchen. Always confirm cross-contamination with staff (the questions above help).')}</div>
+ </div>`;
+}
+function renderQuestionsFallback(){
+ const qs=[
+  {en:'Does this contain wheat or barley? (gluten)',ja:'これに小麦や大麦は入っていますか？',rj:'Kore ni komugi ya ōmugi wa haitte imasu ka?',
+   furi:[['これに',''],['小麦','こむぎ'],['や',''],['大麦','おおむぎ'],['は',''],['入','はい'],['っていますか？','']]},
+  {en:'Is the soy sauce wheat-free?',ja:'お醤油は小麦不使用ですか？',rj:'O-shōyu wa komugi fushiyō desu ka?',
+   furi:[['お',''],['醤油','しょうゆ'],['は',''],['小麦','こむぎ'],['不使用','ふしよう'],['ですか？','']]},
+  {en:'Is the dashi (stock) made with fish or bonito?',ja:'出汁は魚や鰹でとっていますか？',rj:'Dashi wa sakana ya katsuo de totte imasu ka?',
+   furi:[['出汁','だし'],['は',''],['魚','さかな'],['や',''],['鰹','かつお'],['でとっていますか？','']]},
+  {en:'Can this be made without meat, fish, egg, or dairy?',ja:'お肉・魚・卵・乳なしで作れますか？',rj:'O-niku, sakana, tamago, nyū nashi de tsukuremasu ka?',
+   furi:[['お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['なしで',''],['作','つく'],['れますか？','']]},
+  {en:'Is the fryer shared with breaded or meat items?',ja:'揚げ油は他の物と共有ですか？',rj:'Ageabura wa hoka no mono to kyōyū desu ka?',
+   furi:[['揚','あ'],['げ',''],['油','あぶら'],['は',''],['他','ほか'],['の',''],['物','もの'],['と',''],['共有','きょうゆう'],['ですか？','']]}
+ ];
+ return `<div class="scan-sec scan-q"><b>🗣 Questions to ask before you order</b><ul>${qs.map(qLine).join('')}</ul></div>`;
+}
+
+// ---------- Useful-phrases glossary (English / furigana / romaji) ----------
+const GLOSSARY=[
+ {title:'🌾 Gluten-free',items:[
+  {en:"I can't eat wheat or gluten.",ja:'小麦・グルテンが食べられません。',rj:'Komugi / guruten ga taberaremasen.',furi:[['小麦','こむぎ'],['・グルテンが',''],['食','た'],['べられません。','']]},
+  {en:'Does this contain wheat or barley?',ja:'これに小麦や大麦は入っていますか？',rj:'Kore ni komugi ya ōmugi wa haitte imasu ka?',furi:[['これに',''],['小麦','こむぎ'],['や',''],['大麦','おおむぎ'],['は',''],['入','はい'],['っていますか？','']]},
+  {en:'Is the soy sauce wheat-free?',ja:'お醤油は小麦不使用ですか？',rj:'O-shōyu wa komugi fushiyō desu ka?',furi:[['お',''],['醤油','しょうゆ'],['は',''],['小麦','こむぎ'],['不使用','ふしよう'],['ですか？','']]},
+  {en:'Is the fryer shared with breaded items?',ja:'揚げ油は他の物と共有ですか？',rj:'Ageabura wa hoka no mono to kyōyū desu ka?',furi:[['揚','あ'],['げ',''],['油','あぶら'],['は',''],['他','ほか'],['の',''],['物','もの'],['と',''],['共有','きょうゆう'],['ですか？','']]}
+ ]},
+ {title:'🌱 Vegan',items:[
+  {en:"I'm vegan — no meat, fish, egg, or dairy.",ja:'ヴィーガンです。お肉・魚・卵・乳は食べません。',rj:'Vīgan desu. O-niku, sakana, tamago, nyū wa tabemasen.',furi:[['ヴィーガンです。お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['は',''],['食','た'],['べません。','']]},
+  {en:'Is the dashi made from fish or bonito?',ja:'出汁は魚や鰹でとっていますか？',rj:'Dashi wa sakana ya katsuo de totte imasu ka?',furi:[['出汁','だし'],['は',''],['魚','さかな'],['や',''],['鰹','かつお'],['でとっていますか？','']]},
+  {en:'Can this be made without meat, fish, egg, or dairy?',ja:'お肉・魚・卵・乳なしで作れますか？',rj:'O-niku, sakana, tamago, nyū nashi de tsukuremasu ka?',furi:[['お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['なしで',''],['作','つく'],['れますか？','']]},
+  {en:'Does this have fish stock or bonito flakes?',ja:'魚の出汁やかつお節は入っていますか？',rj:'Sakana no dashi ya katsuobushi wa haitte imasu ka?',furi:[['魚','さかな'],['の',''],['出汁','だし'],['やかつお',''],['節','ぶし'],['は',''],['入','はい'],['っていますか？','']]}
+ ]},
+ {title:'🙏 Courtesy & general',items:[
+  {en:'This is for medical reasons.',ja:'医療上の理由です。',rj:'Iryōjō no riyū desu.',furi:[['医療','いりょう'],['上','じょう'],['の',''],['理由','りゆう'],['です。','']]},
+  {en:'Is this okay for me to eat?',ja:'これは食べても大丈夫ですか？',rj:'Kore wa tabete mo daijōbu desu ka?',furi:[['これは',''],['食','た'],['べても',''],['大丈夫','だいじょうぶ'],['ですか？','']]},
+  {en:'Excuse me. / Sorry.',ja:'すみません。',rj:'Sumimasen.',furi:[['すみません。','']]},
+  {en:'Thank you very much.',ja:'ありがとうございます。',rj:'Arigatō gozaimasu.',furi:[['ありがとうございます。','']]},
+  {en:'It was delicious. (said when leaving)',ja:'ごちそうさまでした。',rj:'Gochisōsama deshita.',furi:[['ごちそうさまでした。','']]}
+ ]}
+];
+function openGlossary(){
+ document.getElementById('phraseBody').innerHTML=GLOSSARY.map(sec=>
+  `<div class="gloss-sec"><div class="gloss-h">${sec.title}</div><div class="scan-q"><ul>${sec.items.map(qLine).join('')}</ul></div></div>`).join('');
+ document.getElementById('phraseModal').classList.add('show');
+}
+
+async function flagBio(p,btn){
+ btn.textContent='🚩 Flagging…'; btn.disabled=true;
+ try{
+  const r=await fetch('/api/chef-bio-flag',{method:'POST',headers:{'content-type':'application/json'},
+   body:JSON.stringify({id:p.id,name:p.name,reason:'user flagged via app'})});
+  const j=await r.json();
+  if(j.ok){btn.textContent='✓ Flagged — will re-search next time';btn.classList.add('flagged');}
+  else{btn.textContent='🚩 Flag failed — try again';btn.disabled=false;}
+ }catch(_){btn.textContent='🚩 Flag failed — try again';btn.disabled=false;}
+}
+
+// ---------- "Chef / Owner Story" ----------
+function countdown(secs,elId){
+ return new Promise(res=>{
+  let n=secs;
+  const iv=setInterval(()=>{n--;const el=document.getElementById(elId);if(el)el.textContent=Math.max(0,n)+'s';if(n<=0){clearInterval(iv);res();}},1000);
+ });
+}
+async function tellBio(p){
+ const out=document.getElementById('moreOut');
+
+ // --- Always use baked-in research (no Mistral call) ---
+ if(p.chef_bio){
+  out.innerHTML=renderBio({...p.chef_bio, wired:true, id:p.id});
+  const fb=document.getElementById('bioFlagBtn');
+  if(fb) addTouch(fb,()=>flagBio(p,fb));
+  return;
+ }
+
+ // --- No confirmed info: offer a live Mistral search ---
+ out.innerHTML=`<div class="more-out" style="color:var(--muted);font-size:13px">No confirmed information found for this place in our research.<br><br><button id="bioSearchBtn" style="background:var(--ink);color:#EDEFF8;border-radius:10px;padding:10px 18px;font-size:13px;font-weight:600;touch-action:manipulation">🔍 Try a live web search</button></div>`;
+ const searchBtn=document.getElementById('bioSearchBtn');
+ if(!searchBtn) return;
+ let retries=0;
+
+ async function attempt(){
+  retries++;
+  try{
+   const r=await fetch('/api/chef-bio?id='+encodeURIComponent(p.id)+'&name='+encodeURIComponent(p.name+', Kyoto, Japan'),{cache:'no-cache'});
+   let j;
+   try{j=await r.json();}
+   catch(parseErr){
+    const body=await r.clone().text().catch(()=>'unreadable');
+    out.innerHTML=`<div class="more-out"><b>Server returned non-JSON (HTTP ${r.status}).</b><br><code style="font-size:10px">${body.slice(0,200)}</code></div>`;
+    return;
+   }
+   if(j&&j.status==='pending'){
+    out.innerHTML=`<div class="more-out">🔍 Searching…<br><br><span id="bioCd" style="font-weight:700;font-size:16px;color:var(--ver)">${j.retry_after||22}s</span> <span style="color:var(--muted);font-size:12px">checking back automatically</span></div>`;
+    await countdown(j.retry_after||22,'bioCd');
+    return attempt();
+   }
+   if(j&&j.status==='rate_limited'){
+    const secs=j.retry_after||45;
+    if(retries>=3){out.innerHTML=`<div class="more-out">⏳ <b>Repeated rate limits.</b><br>Stop the pre-warm script if running (Ctrl+C), wait 2 min, then try again.<br><span id="bioCd" style="font-weight:700;color:var(--caution)">${secs}s</span></div>`;}
+    else{out.innerHTML=`<div class="more-out">⏳ Rate limit — <span id="bioCd" style="font-weight:700;color:var(--caution)">${secs}s</span> then retrying…</div>`;}
+    await countdown(secs,'bioCd');
+    return attempt();
+   }
+   if(j&&j.wired&&!j.error){out.innerHTML=renderBio(j);const fb=document.getElementById('bioFlagBtn');if(fb)addTouch(fb,()=>flagBio(p,fb));return;}
+   if(j&&j.error){out.innerHTML=`<div class="more-out"><b>Error: ${j.error}${j.status?' ('+j.status+')':''}</b><br>${j.detail||''}</div>`;return;}
+  }catch(e){out.innerHTML=`<div class="more-out"><b>Error: ${e.name||'Unknown'} — ${e.message||e}</b></div>`;}
+ }
+ const doSearch=()=>{out.innerHTML='<div class="more-out">Starting web search…</div>';attempt();};
+ addTouch(searchBtn,doSearch);
+}
+
+function renderBio(j){
+ const confClass={'high':'conf-high','medium':'conf-medium','low':'conf-low','none':'conf-none'}[j.confidence]||'conf-none';
+ const confLabel={'high':'Well sourced','medium':'Partially sourced','low':'Lightly sourced','none':'No sources found'}[j.confidence]||'Unknown';
+
+ if(j.confidence==='none'||(j.sourced_claim_count===0)){
+  return`<div class="bio-out conf-none">
+   <div class="bio-section">Nothing verified was found about the chef or owner of this place online.</div>
+   <div class="bio-disclaimer">No sources found — this is common for small, independent restaurants with minimal web presence. That's often a mark of a genuine local gem. Ask them directly — it usually makes for a better conversation anyway.</div>
+   ${j.sources?.length?`<div style="font-size:10.5px;color:var(--muted);margin-top:6px">Searched: ${j.sources.slice(0,4).join(', ')}</div>`:''}
+  </div>`;
+ }
+
+ const sec=(label,content)=>content?`<div class="bio-section"><b>${label}</b>${content}</div>`:'';
+ const anecdotes=(j.anecdotes||[]).filter(a=>a.source?.startsWith('http'))
+  .map(a=>`<div class="bio-anecdote">${a.text} <a href="${a.source}" target="_blank" rel="noopener" style="color:var(--ver);font-size:11px">source ›</a></div>`).join('');
+ const media=(j.media_mentions||[]).filter(m=>m.url?.startsWith('http'))
+  .map(m=>`<div style="font-size:12px;margin-top:5px">${m.outlet}: ${m.summary} <a href="${m.url}" target="_blank" rel="noopener" style="color:var(--ver)">›</a></div>`).join('');
+
+ return`<div class="bio-out ${confClass}">
+  ${j.chef_name?`<div class="bio-name">${j.chef_name}<span class="conf-badge">${confLabel}</span></div>`:''}
+  ${(j.roles||[]).length?`<div class="bio-role">${j.roles.join(' · ')}</div>`:''}
+  ${j.origin?`<div style="font-size:12.5px;color:var(--muted);margin-bottom:8px">📍 From ${j.origin}</div>`:''}
+  ${sec('Background',j.background)}
+  ${sec('Philosophy',j.philosophy)}
+  ${sec('Known for',j.specialty)}
+  ${anecdotes?`<div class="bio-section"><b>From the reviews</b>${anecdotes}</div>`:''}
+  ${j.japanese_sources_summary?`<div class="bio-jp">${j.japanese_sources_summary}</div>`:''}
+  ${media?`<div class="bio-section"><b>In the press</b>${media}</div>`:''}
+  ${j.caveats?`<div class="bio-caveat">⚠ ${j.caveats}</div>`:''}
+  <div class="bio-disclaimer">
+   <b>Use this as a conversation starter, not a biography.</b> Only sourced claims are shown — tap any "source ›" link to verify. If something turns out to be wrong, please flag it so it gets re-researched.
+   <br><button class="bio-flag" id="bioFlagBtn" data-id="${j.id||''}">🚩 Flag inaccurate info</button>
+  </div>
+ </div>`;
+}
+
+// ---------- touch helper (global) ----------
+function addTouch(el,fn){if(!el)return;let sx=0,sy=0,mv=false;el.addEventListener('touchstart',e=>{const t=e.touches[0];sx=t.clientX;sy=t.clientY;mv=false;},{passive:true});el.addEventListener('touchmove',e=>{const t=e.touches[0];if(Math.abs(t.clientX-sx)>8||Math.abs(t.clientY-sy)>8)mv=true;},{passive:true});el.addEventListener('touchend',e=>{if(mv)return;e.preventDefault();fn();},{passive:false});el.onclick=fn;}
+
+// ---------- Cultural Comfort ----------
+const COMFORT_CONFIG={
+ guide_only:{dot:'#DC2626',label:'🔴 Go with a guide',desc:'You\'ll be intruding otherwise. This place is not set up for foreign visitors without a Japanese-speaking companion.'},
+ japanese:{dot:'#D97706',label:'🟡 Some Japanese helps',desc:'Be able to read the menu and manage a few sentences. Basic conversational Japanese will get you through.'},
+ konnichiwa:{dot:'#16A34A',label:'🟢 \'Konnichiwa\' is enough',desc:'Just know and use the niceties. A slight bow and ありがとうございました on the way out goes a long way.'},
+ english:{dot:'#2563EB',label:'🔵 Full English menu',desc:'They\'re set up for tourists. English materials and staff accustomed to international visitors.'}
+};
+function renderComfort(p){
+ if(!p.cultural_comfort) return '';
+ const c=p.cultural_comfort;
+ const cfg=COMFORT_CONFIG[c.level]||{};
+ return`<div class="comfort comfort-${c.level}">
+  <span class="comfort-dot comfort-dot-${c.level}" style="background:${cfg.dot}"></span>
+  <span><span class="comfort-eyebrow">Cultural comfort</span><b class="comfort-label">${cfg.label}</b><span class="comfort-desc-inline">${cfg.desc}</span>${c.note?`<span style="font-size:11.5px;opacity:.85;margin-top:5px;display:block">${c.note}</span>`:''}</span>
+ </div>`;
+}
+
+// ---------- Deeply Connected Place ----------
+let dcpAcknowledged=false;
+let pendingDCPPlace=null;
+
+function openDCP(p){
+ if(!p.dcp) return;
+ pendingDCPPlace=p;
+ if(dcpAcknowledged){ showDCPNote(p); return; }
+ document.getElementById('dcpModal').classList.add('open');
+}
+function showDCPNote(p){
+ const out=document.getElementById('moreOut');
+ out.innerHTML=`<div class="dcp-note"><b>🌸 Greg's note:</b><br><br>${p.dcp.greg_note||''}${p.dcp.visited?`<br><br><span style="font-size:11px;color:var(--muted)">Visited ${p.dcp.visited}</span>`:''}</div>`;
+ out.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function wireDCPModal(){
+ const modal=document.getElementById('dcpModal');
+ if(!modal) return; // Modal not in DOM yet — skip safely
+ const confirm=document.getElementById('dcpConfirm');
+ const cancel=document.getElementById('dcpCancel');
+ const doConfirm=()=>{
+  dcpAcknowledged=true;
+  modal.classList.remove('open');
+  if(pendingDCPPlace) showDCPNote(pendingDCPPlace);
+ };
+ const doCancel=()=>{ modal.classList.remove('open'); pendingDCPPlace=null; };
+ addTouch(confirm,doConfirm);
+ addTouch(cancel,doCancel);
+ // tap outside to cancel
+ modal.addEventListener('touchend',e=>{ if(e.target===modal) doCancel(); },{passive:false});
+ modal.onclick=e=>{ if(e.target===modal) doCancel(); };
+}
+
+// ---------- show-staff cards (Japanese, for restaurant staff) ----------
+const CARD_HTML={
+ celiac:`<div class="idcard"><div class="top celiac"><div class="jp">グルテンフリーのお願い</div><div class="en">Gluten-free / celiac request</div></div>
+  <div class="ibody">
+   <div class="lead">私はセリアック病です。グルテン（小麦・大麦・ライ麦）を少しでも食べると体調をくずします。調理器具・油・お湯を共有しただけでも症状が出ます。
+    <span class="en">I have celiac disease. Even a little gluten (wheat, barley, rye) makes me ill — including from shared cookware, oil, or water.</span></div>
+   <h4>避けてください · Please avoid</h4>
+   <ul class="avoid">
+    <li>小麦・大麦・ライ麦（パン・麺・天ぷら・パン粉・餃子の皮）<span class="en">Wheat, barley, rye — bread, noodles, tempura, breadcrumbs, gyoza skins</span></li>
+    <li>醤油・めんつゆ・味噌・カレールウ（小麦を含むもの）<span class="en">Soy sauce, noodle broth, miso, curry roux that contain wheat</span></li>
+    <li>同じ揚げ油・同じ鍋・同じまな板での調理<span class="en">Cooking in shared frying oil, pots, or cutting boards</span></li>
+    <li>麦芽・ビール<span class="en">Malt, beer</span></li>
+   </ul>
+   <div class="canok">グルテンフリーの醤油（たまり）や、米・いも・とうもろこしの料理は食べられます。
+    <span class="en">I can eat gluten-free soy sauce (tamari) and dishes made from rice, potato, or corn.</span></div>
+   <div class="closing">食べられる料理を教えていただけますか？よろしくお願いします。
+    <span class="en">Could you tell me which dishes are safe for me? Thank you very much.</span></div>
+  </div></div>`,
+ vegan:`<div class="idcard"><div class="top vegan"><div class="jp">ヴィーガン（完全菜食）のお願い</div><div class="en">Vegan request</div></div>
+  <div class="ibody">
+   <div class="lead">私はヴィーガンです。動物性の食材をいっさい食べません。
+    <span class="en">I am vegan. I don’t eat any animal products at all.</span></div>
+   <h4>避けてください · Please avoid</h4>
+   <ul class="avoid">
+    <li>肉・鶏・魚・魚介・えび・いか<span class="en">Meat, chicken, fish, seafood, shrimp, squid</span></li>
+    <li>だし（かつお・煮干しなど魚介系）※特にご注意ください<span class="en">Dashi (bonito / fish stock) — please pay special attention, it’s in many dishes</span></li>
+    <li>卵・乳製品（牛乳・バター・チーズ・生クリーム）<span class="en">Egg, dairy — milk, butter, cheese, cream</span></li>
+    <li>はちみつ・ゼラチン<span class="en">Honey, gelatin</span></li>
+   </ul>
+   <div class="canok">野菜・豆腐・きのこ・豆、昆布やしいたけのだしは食べられます。
+    <span class="en">I can eat vegetables, tofu, mushrooms, beans, and kombu/shiitake (plant) dashi.</span></div>
+   <div class="closing">食べられる料理はありますか？よろしくお願いします。
+    <span class="en">Are there dishes I can eat? Thank you very much.</span></div>
+  </div></div>`
+};
+function openCards(type){
+ document.getElementById('cardBody').innerHTML=CARD_HTML[type];
+ document.querySelectorAll('#cardSeg button').forEach(b=>b.classList.toggle('on',b.dataset.card===type));
+ document.getElementById('cardModal').classList.add('show');
+}
+
+// ---------- sheet / location ----------
+function applySheet(mode){const root=document.documentElement,s=document.getElementById('sheet');if(!s)return;const h=mode==='peek'?'88px':mode==='full'?'100%':'46vh';root.style.setProperty('--sheet-h',h);s.classList.toggle('expanded',mode==='full');}
+function sheetMode(){const s=document.getElementById('sheet');if(!s)return 'half';if(s.classList.contains('expanded'))return 'full';return s.getBoundingClientRect().height < innerHeight*0.25 ? 'peek' : 'half';}
+function expand(on){applySheet(on?'full':'half');}
+function locate(initial){
+ if(!navigator.geolocation){return;}
+ navigator.geolocation.getCurrentPosition(pos=>{
+   state.me={lat:pos.coords.latitude,lng:pos.coords.longitude};
+   state.meMarker.setLatLng([state.me.lat,state.me.lng]);
+   if(!initial||map.getBounds().contains([state.me.lat,state.me.lng])) map.panTo([state.me.lat,state.me.lng]);
+   else map.setView([state.me.lat,state.me.lng],14);
+   render();
+ },()=>{ if(initial) render(); },{enableHighAccuracy:true,timeout:8000});
+}
+
+// ---------- geocoding (Nominatim, free, no key) ----------
+let geocodeToast=null;
+function showToast(msg,dur=3000){
+ if(geocodeToast) clearTimeout(geocodeToast);
+ let t=document.getElementById('geoToast');
+ if(!t){t=document.createElement('div');t.id='geoToast';
+  t.style.cssText='position:fixed;bottom:calc(var(--sheet-h) + 60px);left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;z-index:800;pointer-events:none;transition:opacity .3s';
+  document.body.appendChild(t);}
+ t.textContent=msg; t.style.opacity='1';
+ geocodeToast=setTimeout(()=>t.style.opacity='0',dur);
+}
+async function geocodeAndPan(q){
+ if(!q.trim()) return;
+ showToast('Searching for '+q.trim()+'…',8000);
+ try{
+  const r=await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=1&accept-language=en`,
+   {headers:{'User-Agent':'DeeplyConnectedDining/1.0'}});
+  const j=await r.json();
+  if(!j.length){showToast('Location not found — try "Kanazawa, Japan"');return;}
+  const {lat,lon,display_name}=j[0];
+  const ll=[parseFloat(lat),parseFloat(lon)];
+  map.setView(ll,13);
+  state.me={lat:ll[0],lng:ll[1]};
+  state.meMarker.setLatLng(ll);
+  document.getElementById('search').value='';
+  state.filters.q='';
+  render();
+  const city=display_name.split(',')[0].trim();
+  showToast('📍 Moved to '+city);
+ }catch(e){showToast('Could not reach geocoder — check connection');}
+}
+
+// ---------- wire UI ----------
+// Push a 'filtered' history state the first time a filter is applied so
+// Android back clears filters rather than exiting the app.
+function pushFilteredState(){
+ if(!state.filterPushed && !state.selected){
+  history.pushState({page:'filtered'},'');
+  state.filterPushed=true;
+ }
+}
+
+function wire(){
+ document.querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{const k=b.dataset.toggle;state.filters[k]=!state.filters[k];b.classList.toggle('on',state.filters[k]);pushFilteredState();render();});
+ document.querySelectorAll('[data-pill]').forEach(b=>b.onclick=()=>{state.filters.category=b.dataset.pill;document.querySelectorAll('[data-pill]').forEach(x=>x.classList.toggle('on',x===b));if(b.dataset.pill!=='all')pushFilteredState();render();});
+ const _dietChip=document.getElementById('dietChip'),_dietMenu=document.getElementById('dietMenu');
+ if(_dietChip)_dietChip.onclick=e=>{e.stopPropagation();_dietMenu.classList.toggle('is-hidden');};
+ document.addEventListener('click',()=>{if(_dietMenu)_dietMenu.classList.add('is-hidden');});
+ const _DIETLBL={any:'🍃 Any',none:'🥩 No diet info',vegan:'🌱 Vegan',gf:'🌾 GF options',celiac:'🛡️ Celiac-safe',both:'🌱🌾 Vegan+GF'};
+ document.querySelectorAll('[data-diet]').forEach(b=>b.onclick=()=>{state.filters.diet=b.dataset.diet;document.body.classList.toggle('no-diet',b.dataset.diet==='none');if(_dietChip)_dietChip.textContent=_DIETLBL[b.dataset.diet]+' ▾';if(_dietMenu)_dietMenu.classList.add('is-hidden');if(b.dataset.diet!=='any'&&b.dataset.diet!=='none')pushFilteredState();render();});
+ {const fg=document.getElementById('filterGear'),fs=document.getElementById('filterSheet');if(fg)fg.onclick=()=>{fs.classList.toggle('is-hidden');fg.classList.toggle('on',!fs.classList.contains('is-hidden'));};}
+ document.getElementById('search').oninput=e=>{state.filters.q=e.target.value;render();};
+ document.getElementById('search').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();geocodeAndPan(e.target.value);}};
+ const goBtn=document.getElementById('searchGo');
+ const doGo=()=>geocodeAndPan(document.getElementById('search').value);
+ goBtn.addEventListener('touchend',e=>{e.preventDefault();doGo();},{passive:false});
+ goBtn.onclick=doGo;
+ document.getElementById('locBtn').onclick=()=>locate(false);
+ document.getElementById('listBtn').onclick=()=>{showList();expand(!document.getElementById('sheet').classList.contains('expanded'));};
+ document.getElementById('sortBtn').onclick=()=>{state.sortBy=state.sortBy==='distance'?'name':'distance';document.getElementById('sortBtn').textContent='Sort: '+(state.sortBy==='distance'?'distance':'name')+' ▾';render();};
+ (function(){const sheet=document.getElementById('sheet'),grab=document.getElementById('grab');if(!sheet||!grab)return;
+  const snapMode=h=>[[88,'peek'],[innerHeight*0.46,'half'],[innerHeight,'full']].reduce((a,b)=>Math.abs(b[0]-h)<Math.abs(a[0]-h)?b:a)[1];
+  let y0=null,h0=0,moved=false;
+  grab.addEventListener('touchstart',e=>{y0=e.touches[0].clientY;h0=sheet.getBoundingClientRect().height;sheet.style.transition='none';moved=false;},{passive:true});
+  grab.addEventListener('touchmove',e=>{if(y0==null)return;const dy=y0-e.touches[0].clientY;if(Math.abs(dy)>4)moved=true;sheet.style.height=Math.max(64,Math.min(innerHeight,h0+dy))+'px';},{passive:true});
+  grab.addEventListener('touchend',e=>{if(y0==null)return;e.preventDefault();sheet.style.transition='';const h=sheet.getBoundingClientRect().height;sheet.style.height='';applySheet(moved?snapMode(h):(sheetMode()==='full'?'half':'full'));y0=null;},{passive:false});
+  grab.onclick=()=>{if(getComputedStyle(grab).display==='none')return;applySheet(sheetMode()==='full'?'half':'full');};
+ })();
+ document.getElementById('infoBtn').onclick=()=>document.getElementById('infoModal').classList.add('show');
+ document.getElementById('cardsBtn').onclick=()=>openCards('celiac');
+ document.querySelectorAll('#cardSeg button').forEach(b=>b.onclick=()=>openCards(b.dataset.card));
+ document.getElementById('cardClose').onclick=()=>document.getElementById('cardModal').classList.remove('show');
+ document.getElementById('cardModal').onclick=e=>{if(e.target.id==='cardModal')e.target.classList.remove('show');};
+ document.getElementById('infoClose').onclick=()=>document.getElementById('infoModal').classList.remove('show');
+ document.getElementById('infoModal').onclick=e=>{if(e.target.id==='infoModal')e.target.classList.remove('show');};
+ const av=document.getElementById('appVer'); if(av) av.textContent=APP_BUILD;
+ addTouch(document.getElementById('refreshAppBtn'),forceRefresh);
+ // global menu scanner
+ const openScan=()=>{document.getElementById('scanModalOut').innerHTML='';document.getElementById('scanModal').classList.add('show');};
+ addTouch(document.getElementById('scanFab'),openScan);
+ document.getElementById('scanClose').onclick=()=>document.getElementById('scanModal').classList.remove('show');
+ document.getElementById('scanModal').onclick=e=>{if(e.target.id==='scanModal')e.target.classList.remove('show');};
+ const smb=document.getElementById('scanModalBtn'),smf=document.getElementById('scanModalFile');
+ addTouch(smb,()=>smf.click());
+ smf.onchange=e=>{const f=e.target.files&&e.target.files[0]; if(f) scanMenu(f,null,'scanModalOut'); smf.value='';};
+ // useful-phrases glossary
+ addTouch(document.getElementById('phrasesBtn'),openGlossary);
+ document.getElementById('phraseClose').onclick=()=>document.getElementById('phraseModal').classList.remove('show');
+ document.getElementById('phraseModal').onclick=e=>{if(e.target.id==='phraseModal')e.target.classList.remove('show');};
+ // konbini GF/vegan guide (chain-tabbed; data embedded so it works offline)
+ const KONBINI={
+  skill:"The one move: read the label (原材料名). Disqualify GF if you see 小麦/小麦粉 (wheat), 麦/大麦 (barley), 麦芽 (malt), 醤油 (soy sauce). Biggest trap for BOTH diets: hidden katsuo/bonito fish dashi — legally unlabeled — in most onigiri fillings, salads, and pickles.",
+  gf:["Plain SALT onigiri (塩むすび)","Plain SALT boiled egg (塩; NOT brown marinated)","Plain tofu/冷奴, edamame, natto WITHOUT its tare packet","Undressed cut fruit & vegetables","Plain/salt/nori chips, plain nuts, dried sweet potato, plain yogurt, milk","サラダチキン ONLY if the label shows no 小麦 (brand-dependent — Prima Ham yes, Seven Premium no)"],
+  vegan:["Plain SALT onigiri (the ONLY reliably animal-free one — ume/kombu hide dashi)","Edamame, plain tofu/冷奴, natto WITHOUT the tare packet","Fresh & cut fruit, undressed salads, some pickles (check dashi)","Nuts, dried fruit, salt/nori chips, dried sweet potato, senbei (check 醤油)","Soy milk & plant drinks, dark chocolate (check dairy)"],
+  chains:{
+   seven:{n:"7-Eleven",u:"https://www.sej.co.jp/products/info_allergy/",note:"Originals carry all 28 allergens labeled; loose hot-case may not. No certified-GF staples. ⚠ Seven Premium 'plain' salada-chicken contains wheat flour."},
+   familymart:{n:"FamilyMart",u:"https://www.family.co.jp/goods/safety.html",note:"Lists the 8 mandatory allergens; verify on-pack + in-store POP. e.g. cod-roe-mayo = wheat/egg/soy/gelatin."},
+   lawson:{n:"Lawson",u:"https://www.lawson.co.jp/recommend/allergy/detail/",note:"Best published data (28 substances incl. soy/gelatin/meat) → most useful for vegans. Natural Lawson = more plant-forward options."}
+  }
+ };
+ function renderKonbini(chain){
+  const c=KONBINI.chains[chain]||KONBINI.chains.seven;
+  const tabs=Object.keys(KONBINI.chains).map(k=>`<button class="chip" data-kc="${k}" style="${k===chain?'background:#9c3b2e;color:#fff':''}">${KONBINI.chains[k].n}</button>`).join(' ');
+  const li=a=>a.map(x=>`<li>${x}</li>`).join('');
+  document.getElementById('konbiniBody').innerHTML=
+   `<p style="font-size:13px">${KONBINI.skill}</p>`+
+   `<div style="display:flex;gap:6px;flex-wrap:wrap;margin:8px 0">${tabs}</div>`+
+   `<div style="background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px"><strong>${c.n}</strong><div style="font-size:13px;margin:4px 0">${c.note}</div><a href="${c.u}" target="_blank" rel="noopener">Official allergen page ↗</a></div>`+
+   `<h3 style="margin:12px 0 2px">🌾 Celiac / GF</h3><ul style="font-size:13px;margin:4px 0;padding-left:18px">${li(KONBINI.gf)}</ul>`+
+   `<h3 style="margin:12px 0 2px">🌱 Vegan</h3><ul style="font-size:13px;margin:4px 0;padding-left:18px">${li(KONBINI.vegan)}</ul>`+
+   `<p style="font-size:12px;color:#8a7f6c">Nothing here is certified GF/vegan — only the 8 mandatory allergens are guaranteed-labeled; soy/pork/chicken/fish-dashi/gelatin may be unlabeled.</p>`;
+  document.getElementById('konbiniBody').querySelectorAll('[data-kc]').forEach(b=>b.onclick=()=>renderKonbini(b.dataset.kc));
+ }
+ addTouch(document.getElementById('konbiniBtn'),()=>{renderKonbini('seven');document.getElementById('konbiniModal').classList.add('show');});
+ document.getElementById('konbiniClose').onclick=()=>document.getElementById('konbiniModal').classList.remove('show');
+ document.getElementById('konbiniModal').onclick=e=>{if(e.target.id==='konbiniModal')e.target.classList.remove('show');};
+}
+
+// ---------- boot ----------
+(async function(){
+ await loadCities();
+ if(!state.active){document.body.innerHTML='<p style="color:#fff;padding:20px">Could not load data.</p>';return;}
+ document.getElementById('cityName').textContent=state.cities[state.active].city;
+ buildCuisineChips();
+ document.getElementById('citySub').textContent='Vegan · GF';
+ history.replaceState({page:'list'},'');
+ wireDCPModal();
+ window.addEventListener('popstate',e=>{
+  if(e.state&&e.state.page==='detail') selectPlace(e.state.id);
+  else if(e.state&&e.state.page==='filtered'){
+   // Back from detail sheet → stay on filtered list
+   showList(true); state.filterPushed=false;
+  } else {
+   // Back to floor (list) → clear all filters
+   state.filters={open:false,late:false,diet:'any',category:'all',cuisines:new Set(),q:''};
+   state.filterPushed=false;
+   {const dc=document.getElementById('dietChip');if(dc)dc.textContent='🍃 Any ▾';}document.body.classList.remove('no-diet');
+   document.querySelectorAll('[data-pill]').forEach(b=>b.classList.toggle('on',b.dataset.pill==='all'));
+   document.querySelectorAll('[data-cuisine],[data-toggle]').forEach(b=>b.classList.remove('on'));
+   document.getElementById('search').value='';
+   showList(true);
+  }
+ });
+ wire(); initMap(); render();
+ if('serviceWorker' in navigator){
+  let _reloaded=false;
+  // When a new service worker takes control, reload once so the fresh app shell is used.
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{ if(_reloaded)return; _reloaded=true; location.reload(); });
+  try{
+   const reg=await navigator.serviceWorker.register('sw.js');
+   // Check for a new version whenever the app comes back to the foreground.
+   document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') reg.update().catch(()=>{}); });
+   window.__swreg=reg;
+  }catch(_){}
+ }
+})();
+// Manual "get the latest" — force an update check; if a new worker is waiting, activate it; then reload.
+async function forceRefresh(){
+ const btn=document.getElementById('refreshAppBtn'); if(btn) btn.textContent='🔄 Checking…';
+ try{
+  const reg=window.__swreg||(navigator.serviceWorker&&await navigator.serviceWorker.getRegistration());
+  if(reg){ await reg.update(); if(reg.waiting){ reg.waiting.postMessage({type:'SKIP_WAITING'}); return; } }
+ }catch(_){}
+ location.reload();
+}
+</script>
+</body>
+</html>
