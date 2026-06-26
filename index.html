@@ -486,10 +486,10 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v67';
+const APP_BUILD='dcd-v68';
 const state={
  cities:{}, active:null, summaries:{},
- me:null, filters:{open:false,late:false,diet:'any',category:'all',cats:new Set(),cuisines:new Set(),q:''},
+ me:null, filters:{open:false,late:false,diet:'any',pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
  markers:{}, meMarker:null, selected:null, sortBy:'distance', filterPushed:false
 };
 
@@ -567,8 +567,8 @@ function dietOK(p){
 function visiblePlaces(){
  const f=state.filters; const all=state.cities[state.active]?.places||[];
  let r=all.filter(p=>{
-  if(f.category==='ramen' && p.cuisine_type!=='ramen') return false;
-  if(f.category==='mompop' && p.category!=='MOM_AND_POP') return false;
+  if(f.pills.has('ramen') && p.cuisine_type!=='ramen') return false;
+  if(f.pills.has('mompop') && p.category!=='MOM_AND_POP') return false;
   if(f.cats.size && !f.cats.has(p.category)) return false;
   if(f.cuisines.size && !f.cuisines.has(p.cuisine_type)) return false;
   if(!dietOK(p)) return false;
@@ -1235,7 +1235,8 @@ function pushFilteredState(){
 
 function wire(){
  document.querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{const k=b.dataset.toggle;state.filters[k]=!state.filters[k];b.classList.toggle('on',state.filters[k]);pushFilteredState();render();});
- document.querySelectorAll('[data-pill]').forEach(b=>b.onclick=()=>{state.filters.category=b.dataset.pill;document.querySelectorAll('[data-pill]').forEach(x=>x.classList.toggle('on',x===b));if(b.dataset.pill!=='all')pushFilteredState();render();});
+ function syncPills(){const s=state.filters.pills;document.querySelectorAll('[data-pill]').forEach(b=>{const v=b.dataset.pill;b.classList.toggle('on',v==='all'?s.size===0:s.has(v));});}
+ document.querySelectorAll('[data-pill]').forEach(b=>b.onclick=()=>{const v=b.dataset.pill,s=state.filters.pills;if(v==='all')s.clear();else{s.has(v)?s.delete(v):s.add(v);}syncPills();if(s.size)pushFilteredState();render();});
  document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{const c=b.dataset.cat;state.filters.cats.has(c)?state.filters.cats.delete(c):state.filters.cats.add(c);b.classList.toggle('on');pushFilteredState();render();});
  const _dietChip=document.getElementById('dietChip'),_dietMenu=document.getElementById('dietMenu');
  if(_dietChip)_dietChip.onclick=e=>{e.stopPropagation();_dietMenu.classList.toggle('is-hidden');};
@@ -1326,7 +1327,7 @@ function wire(){
    showList(true); state.filterPushed=false;
   } else {
    // Back to floor (list) → clear all filters
-   state.filters={open:false,late:false,diet:'any',category:'all',cats:new Set(),cuisines:new Set(),q:''};
+   state.filters={open:false,late:false,diet:'any',pills:new Set(),cats:new Set(),cuisines:new Set(),q:''};
    state.filterPushed=false;
    {const dc=document.getElementById('dietChip');if(dc)dc.textContent='🍃 Any ▾';}document.body.classList.remove('no-diet');
    document.querySelectorAll('[data-pill]').forEach(b=>b.classList.toggle('on',b.dataset.pill==='all'));
