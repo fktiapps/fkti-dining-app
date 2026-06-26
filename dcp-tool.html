@@ -3,20 +3,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#9c3b2e"/>
+<link rel="manifest" href="dcp.webmanifest"/>
 <title>DCP Authoring — Deeply Connected Dining</title>
 <style>
   :root{--ink:#2b2218;--cream:#fbf7ef;--line:#e3d9c6;--accent:#9c3b2e;--sakura:#d56a7a;--muted:#8a7f6c}
   *{box-sizing:border-box}
   body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif}
-  header{position:sticky;top:0;background:var(--accent);color:#fff;padding:12px 16px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+  header{position:sticky;top:0;z-index:5;background:var(--accent);color:#fff;padding:12px 16px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
   header h1{margin:0;font-size:17px;font-weight:700}
   header .sub{font-size:12px;opacity:.85}
-  main{max-width:680px;margin:0 auto;padding:14px}
+  main{max-width:680px;margin:0 auto;padding:14px 14px calc(env(safe-area-inset-bottom) + 24px)}
   .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
   input,textarea,select,button{font:inherit;color:var(--ink)}
   input[type=text],input[type=search],input[type=date],select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:4px 0}
-  textarea{min-height:120px;resize:vertical}
-  label{font-size:13px;color:var(--muted);font-weight:600}
+  textarea{min-height:110px;resize:vertical}
+  label{font-size:13px;color:var(--muted);font-weight:600;display:block;margin-top:6px}
   button{cursor:pointer;border:none;border-radius:10px;padding:11px 14px;font-weight:700}
   .primary{background:var(--sakura);color:#fff}
   .ghost{background:#fff;border:1px solid var(--line)}
@@ -27,14 +29,20 @@
   .res:hover{background:#faf4e8}.res small{color:var(--muted)}
   .draft{border-left:4px solid var(--sakura)}
   .muted{color:var(--muted);font-size:13px}
-  .bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
   .ok{color:#2e7d32}.warn{color:var(--accent)}
+  .thumbs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+  .thumb{position:relative;width:92px}
+  .thumb img{width:92px;height:92px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+  .thumb input{font-size:11px;padding:4px 6px;margin:3px 0 0}
+  .thumb select{width:92px;font-size:11px;padding:3px;margin:3px 0 0;border:1px solid var(--line);border-radius:8px;background:#fff}
+  .thumb .x{position:absolute;top:-7px;right:-7px;background:var(--accent);color:#fff;border-radius:999px;width:22px;height:22px;line-height:22px;text-align:center;padding:0;font-size:12px}
 </style>
 </head>
 <body>
 <header>
   <h1>🌸 DCP Authoring</h1>
-  <div class="sub">Deeply Connected Places — write your personal notes. Saves offline on this device.</div>
+  <div class="sub">Deeply Connected Places — your field notes &amp; photos. Works offline; saved on this device.</div>
 </header>
 <main>
   <div class="card">
@@ -42,11 +50,11 @@
       <button class="ghost" id="loadBtn">↻ Load / refresh places</button>
       <span class="pill" id="status">not loaded</span>
     </div>
-    <div class="muted">Pulls live place data; cached on this device so the field mode works offline afterward.</div>
+    <div class="muted">Pulls live place data; cached on this device so field mode works offline afterward.</div>
   </div>
 
   <div class="card">
-    <label>Find a place (or type a new one)</label>
+    <label>Find a place (or add a new one)</label>
     <input type="search" id="q" placeholder="Search name… e.g. Oyaji, くら"/>
     <div class="results" id="results" style="display:none"></div>
     <div class="row" style="margin-top:6px">
@@ -57,10 +65,30 @@
   <div class="card" id="editor" style="display:none">
     <div id="selName" style="font-weight:700;font-size:16px"></div>
     <div class="muted" id="selMeta"></div>
-    <label>Your note (the story — why this place is deeply connected)</label>
-    <textarea id="note" placeholder="The owner, the relationship, what makes it matter to you…"></textarea>
+
+    <label>The story — why this place is deeply connected</label>
+    <textarea id="note" placeholder="The owner, the relationship, the moment, what makes it matter…"></textarea>
+
+    <label>The people (owner / family / who you met)</label>
+    <input type="text" id="people" placeholder="e.g. Katagiri-san, the owner — ran it 30 years"/>
+
+    <label>What to order / signature</label>
+    <input type="text" id="order" placeholder="e.g. the pork-meat shoyu ramen; ask for it light"/>
+
+    <label>Photos — aim for 👤 owner · 📋 menu · 🍽 signature dish · 🏠 storefront (3–5 is plenty). Ask before photographing people.</label>
+    <div class="thumbs" id="thumbs"></div>
+    <input type="file" accept="image/*" capture="environment" id="photoIn" multiple style="display:none"/>
+    <div class="row" id="photoBtns">
+      <button class="ghost" data-ptype="owner">👤 Owner</button>
+      <button class="ghost" data-ptype="menu">📋 Menu</button>
+      <button class="ghost" data-ptype="dish">🍽 Dish</button>
+      <button class="ghost" data-ptype="storefront">🏠 Place</button>
+      <button class="ghost" data-ptype="other">➕ Other</button>
+    </div>
+
     <label>Visited</label>
     <input type="date" id="visited"/>
+
     <div class="bar">
       <button class="primary" id="saveBtn">Save draft</button>
       <button class="ghost" id="cancelBtn">Cancel</button>
@@ -70,21 +98,31 @@
 
   <div class="card">
     <div class="row"><strong>Saved drafts (<span id="cnt">0</span>)</strong>
-      <button class="ghost" id="exportBtn" style="margin-left:auto">⬇ Export patch (.json)</button>
+      <button class="ghost" id="copyBtn" style="margin-left:auto">⧉ Copy notes</button>
+      <button class="primary" id="exportBtn">⬇ Export patch (+photos)</button>
     </div>
-    <div class="muted">Export, then run <code>node scripts/build-dcp.mjs &lt;file&gt;</code> to merge into the city data.</div>
+    <div class="muted">Export the <code>.json</code>, then run <code>node scripts/build-dcp.mjs &lt;file&gt;</code> — it writes the photos into <code>img/dcp/</code> and merges your notes. (Copy notes = quick text-only, no photos.)</div>
     <div id="drafts"></div>
   </div>
 </main>
 <script>
-const BASE='https://fkti-dining.pages.dev';
+const BASE=''; // same-origin (works on whichever Pages domain serves this tool)
 const CITIES=['kyoto','kanazawa','nara','hiroshima'];
 const LS_PLACES='dcp_places_cache', LS_DRAFTS='dcp_drafts';
 let PLACES=[]; // {id,name,city}
 let drafts=JSON.parse(localStorage.getItem(LS_DRAFTS)||'{}');
 let current=null;
+const PTYPES={owner:'👤 Owner',menu:'📋 Menu',dish:'🍽 Dish',storefront:'🏠 Place',other:'➕ Other'};
+let pendingType='other';
 const $=id=>document.getElementById(id);
 const slug=s=>'dcp_'+(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,24);
+
+// ---- IndexedDB for photo blobs (downscaled JPEG data URLs) ----
+function idb(){return new Promise((res,rej)=>{const r=indexedDB.open('dcp_photos',1);r.onupgradeneeded=()=>r.result.createObjectStore('p');r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);});}
+async function putPhoto(k,v){const db=await idb();return new Promise((res,rej)=>{const tx=db.transaction('p','readwrite');tx.objectStore('p').put(v,k);tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error);});}
+async function getPhoto(k){const db=await idb();return new Promise(res=>{const tx=db.transaction('p','readonly');const rq=tx.objectStore('p').get(k);rq.onsuccess=()=>res(rq.result||null);rq.onerror=()=>res(null);});}
+async function delPhotoIDB(k){const db=await idb();return new Promise(res=>{const tx=db.transaction('p','readwrite');tx.objectStore('p').delete(k);tx.oncomplete=()=>res();});}
+function downscale(file,max=1280,q=0.82){return new Promise(res=>{const img=new Image();img.onload=()=>{let w=img.width,h=img.height;if(w>h&&w>max){h=Math.round(h*max/w);w=max;}else if(h>=w&&h>max){w=Math.round(w*max/h);h=max;}const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(img,0,0,w,h);res(c.toDataURL('image/jpeg',q));URL.revokeObjectURL(img.src);};img.onerror=()=>res(null);img.src=URL.createObjectURL(file);});}
 
 async function load(){
   $('status').textContent='loading…';
@@ -103,8 +141,7 @@ async function load(){
   }
 }
 function search(){
-  const q=$('q').value.trim().toLowerCase();
-  const box=$('results');
+  const q=$('q').value.trim().toLowerCase(), box=$('results');
   if(!q){box.style.display='none';return;}
   const hits=PLACES.filter(p=>p.name.toLowerCase().includes(q)).slice(0,30);
   box.innerHTML=hits.map(p=>`<div class="res ${drafts[p.id]?'draft':''}" data-id="${p.id}">${p.name} <small>· ${p.city}${drafts[p.id]?' · ✎ draft':''}</small></div>`).join('')||'<div class="res muted">No match — use “+ New place”.</div>';
@@ -112,48 +149,88 @@ function search(){
   box.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>pick(el.dataset.id));
 }
 function pick(id){
-  const p=PLACES.find(x=>x.id===id)||drafts[id]&&{id,name:drafts[id].name,city:drafts[id].city};
+  const p=PLACES.find(x=>x.id===id)||(drafts[id]&&{id,name:drafts[id].name,city:drafts[id].city});
   if(!p)return;
-  current={id:p.id,name:p.name,city:p.city};
-  $('selName').textContent=p.name; $('selMeta').textContent=p.city+' · '+p.id;
   const dr=drafts[id]||{};
-  $('note').value=dr.greg_note||''; $('visited').value=dr.visited||'';
+  current={id:p.id,name:p.name,city:p.city,isNew:!!dr.isNew,photos:(dr.photos||[]).slice()};
+  $('selName').textContent=p.name; $('selMeta').textContent=p.city+' · '+p.id+(dr.isNew?' · NEW (stub)':'');
+  $('note').value=dr.greg_note||''; $('people').value=dr.people||''; $('order').value=dr.order||''; $('visited').value=dr.visited||'';
   $('editor').style.display='block'; $('saveMsg').textContent='';
-  $('results').style.display='none'; window.scrollTo(0,document.body.scrollHeight);
+  $('results').style.display='none'; renderThumbs(); $('editor').scrollIntoView({behavior:'smooth'});
 }
 function newPlace(){
   const name=prompt('New place name (include JP + English if you can):'); if(!name)return;
-  const city=prompt('City (kyoto / kanazawa / nara / hiroshima / other):','kyoto')||'other';
-  current={id:slug(name),name,city,isNew:true};
+  const city=(prompt('City (kyoto / kanazawa / nara / hiroshima / other):','kyoto')||'other').trim().toLowerCase();
+  current={id:slug(name),name,city,isNew:true,photos:[]};
   $('selName').textContent=name; $('selMeta').textContent=city+' · '+current.id+' · NEW (stub)';
-  $('note').value=''; $('visited').value=''; $('editor').style.display='block'; $('saveMsg').textContent='';
+  $('note').value='';$('people').value='';$('order').value='';$('visited').value='';
+  $('editor').style.display='block'; $('saveMsg').textContent=''; renderThumbs(); $('editor').scrollIntoView({behavior:'smooth'});
+}
+async function renderThumbs(){
+  const box=$('thumbs'); if(!current){box.innerHTML='';return;}
+  box.innerHTML='';
+  for(let i=0;i<current.photos.length;i++){
+    const ph=current.photos[i], data=await getPhoto(ph.key);
+    const d=document.createElement('div'); d.className='thumb';
+    d.innerHTML=`<img src="${data||''}"/><button class="x" data-x="${i}">✕</button>`
+      +`<select data-ty="${i}">${Object.entries(PTYPES).map(([v,l])=>`<option value="${v}"${(ph.type||'other')===v?' selected':''}>${l}</option>`).join('')}</select>`
+      +`<input type="text" placeholder="caption" value="${(ph.caption||'').replace(/"/g,'&quot;')}" data-cap="${i}"/>`;
+    box.appendChild(d);
+  }
+  box.querySelectorAll('[data-x]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.x;await delPhotoIDB(current.photos[i].key);current.photos.splice(i,1);renderThumbs();});
+  box.querySelectorAll('[data-ty]').forEach(sel=>sel.onchange=()=>{current.photos[+sel.dataset.ty].type=sel.value;});
+  box.querySelectorAll('[data-cap]').forEach(inp=>inp.oninput=()=>{current.photos[+inp.dataset.cap].caption=inp.value;});
+}
+async function addPhotos(files,type){
+  if(!current)return;
+  for(const f of files){
+    const data=await downscale(f); if(!data)continue;
+    const key=current.id+'__'+Date.now()+'_'+Math.round(performance.now());
+    await putPhoto(key,data); current.photos.push({key,type:type||'other',caption:''});
+  }
+  renderThumbs();
 }
 function save(){
   if(!current)return;
-  drafts[current.id]={greg_note:$('note').value.trim(),visited:$('visited').value,name:current.name,city:current.city,isNew:!!current.isNew};
+  drafts[current.id]={greg_note:$('note').value.trim(),people:$('people').value.trim(),order:$('order').value.trim(),visited:$('visited').value,name:current.name,city:current.city,isNew:!!current.isNew,photos:current.photos};
   localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));
   $('saveMsg').textContent='saved ✓'; renderDrafts();
 }
 function renderDrafts(){
   const ids=Object.keys(drafts); $('cnt').textContent=ids.length;
-  $('drafts').innerHTML=ids.map(id=>{const d=drafts[id];return `<div class="card" style="margin:8px 0"><div class="row"><strong>${d.name}</strong> <span class="pill">${d.city}</span>${d.isNew?'<span class="pill">new</span>':''}<button class="ghost" data-edit="${id}" style="margin-left:auto">edit</button><button class="ghost" data-del="${id}">✕</button></div><div class="muted">${(d.greg_note||'').slice(0,140)||'(empty)'}</div><div class="muted">${d.visited||'no date'}</div></div>`;}).join('');
+  $('drafts').innerHTML=ids.map(id=>{const d=drafts[id];const np=(d.photos||[]).length;return `<div class="card" style="margin:8px 0"><div class="row"><strong>${d.name}</strong> <span class="pill">${d.city}</span>${d.isNew?'<span class="pill">new</span>':''}${np?`<span class="pill">📷 ${np}</span>`:''}<button class="ghost" data-edit="${id}" style="margin-left:auto">edit</button><button class="ghost" data-del="${id}">✕</button></div><div class="muted">${(d.greg_note||'').slice(0,140)||'(empty)'}</div><div class="muted">${d.visited||'no date'}</div></div>`;}).join('');
   $('drafts').querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>pick(b.dataset.edit));
-  $('drafts').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{if(confirm('Delete this draft?')){delete drafts[b.dataset.del];localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));renderDrafts();}});
+  $('drafts').querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{if(confirm('Delete this draft (and its photos)?')){for(const ph of (drafts[b.dataset.del].photos||[]))await delPhotoIDB(ph.key);delete drafts[b.dataset.del];localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));renderDrafts();}});
 }
-function exportPatch(){
-  // shape: { city: { id: {greg_note, visited, _new_name?} } }  — build-dcp.mjs consumes this
+async function buildPatch(withPhotos){
   const out={};
   for(const [id,d] of Object.entries(drafts)){
-    (out[d.city]=out[d.city]||{})[id]={greg_note:d.greg_note,visited:d.visited||null};
-    if(d.isNew) out[d.city][id]._new_name=d.name;
+    const e={greg_note:d.greg_note,people:d.people||'',order:d.order||'',visited:d.visited||null};
+    if(d.isNew) e._new_name=d.name;
+    if(withPhotos && (d.photos||[]).length){
+      e.photos=[]; let n=1;
+      for(const ph of d.photos){ const data=await getPhoto(ph.key); if(!data)continue; e.photos.push({file:id+'-'+(ph.type||'other')+'-'+(n++)+'.jpg',type:ph.type||'other',caption:ph.caption||'',data}); }
+    }
+    (out[d.city]=out[d.city]||{})[id]=e;
   }
+  return out;
+}
+async function exportPatch(){
+  const out=await buildPatch(true);
   const blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
-  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
-  a.download='dcp_patch.json'; a.click();
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='dcp_patch.json'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+}
+async function copyNotes(){
+  const out=await buildPatch(false);
+  try{ await navigator.clipboard.writeText(JSON.stringify(out,null,2)); alert('Notes copied (text only, no photos). Paste to Claude or into a file.'); }
+  catch(_){ alert('Copy failed — use Export instead.'); }
 }
 $('loadBtn').onclick=load; $('q').oninput=search; $('newBtn').onclick=newPlace;
 $('saveBtn').onclick=save; $('cancelBtn').onclick=()=>{$('editor').style.display='none';};
-$('exportBtn').onclick=exportPatch;
+document.querySelectorAll('#photoBtns [data-ptype]').forEach(b=>b.onclick=()=>{pendingType=b.dataset.ptype;$('photoIn').click();});
+$('photoIn').onchange=e=>{addPhotos([...e.target.files],pendingType); e.target.value='';};
+$('exportBtn').onclick=exportPatch; $('copyBtn').onclick=copyNotes;
 renderDrafts();
 if(localStorage.getItem(LS_PLACES)){PLACES=JSON.parse(localStorage.getItem(LS_PLACES));$('status').textContent=PLACES.length+' (cached)';} else load();
 </script>

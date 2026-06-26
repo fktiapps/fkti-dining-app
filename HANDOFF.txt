@@ -1142,3 +1142,16 @@ meal-based reconcile, Ramen Geek, canon data. Kyoto now ramen-heavy (295/528) �
   Default 'Any' STILL shows diet info (GF/vegan-first app). Food Safety section left visible (opt-in).
 SPOT-CHECK ON DEPLOY: diet dropdown opens/relabels/toggles no-diet; 3 pills filter; ⚙ sheet; grab
 drags + snaps; scrolling list no longer mis-selects; 🥩 mode strips diet UI.
+
+[2026-06-25 cont. — DCP tool rebuilt field-ready, SW v64, local/no-paid-tokens]
+dcp-tool.html now: 📷 PHOTO CAPTURE (camera input, downscaled to ~1280px JPEG, stored in IndexedDB),
+new fields PEOPLE + ORDER (alongside the story note + visited), relative same-origin data fetch
+(works on either Pages domain), OFFLINE via the existing app SW (added dcp-tool.html + dcp.webmanifest
+to SHELL_ASSETS; new dcp.webmanifest makes it installable), and mobile export: "⬇ Export patch (+photos)"
+(one JSON incl. base64 photos) + "⧉ Copy notes" (text-only clipboard).
+build-dcp.mjs UPDATED: writes each photo to img/dcp/<file>, sets p.dcp.photos=[{src:'/img/dcp/..',caption}]
+(URL-referenced, NO base64 in app data), merges greg_note/visited/people/order. mkdir img/dcp auto.
+FIELD FLOW: capture in field → Export patch.json → node scripts/build-dcp.mjs patch.json (writes
+img/dcp/* + merges + bumps SW) → commit img/dcp/* + data → push → auto-deploys.
+TODO (quick follow-up): render p.dcp.photos/people/order in index.html detail card (note already renders
+via the DCP gate). Then a captured DCP shows its photos in-app.

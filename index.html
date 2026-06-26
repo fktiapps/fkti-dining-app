@@ -480,7 +480,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v63';
+const APP_BUILD='dcd-v66';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,diet:'any',category:'all',cuisines:new Set(),q:''},
@@ -1101,7 +1101,13 @@ function openDCP(p){
 }
 function showDCPNote(p){
  const out=document.getElementById('moreOut');
- out.innerHTML=`<div class="dcp-note"><b>🌸 Greg's note:</b><br><br>${p.dcp.greg_note||''}${p.dcp.visited?`<br><br><span style="font-size:11px;color:var(--muted)">Visited ${p.dcp.visited}</span>`:''}</div>`;
+ const d=p.dcp||{}, TY={owner:'👤 Owner',menu:'📋 Menu',dish:'🍽 Signature',storefront:'🏠 The place',other:'📷'};
+ const photos=(d.photos||[]).map(ph=>`<figure style="margin:0"><img src="${ph.src}" alt="${(ph.caption||'').replace(/"/g,'&quot;')}" loading="lazy" style="width:100%;border-radius:10px;display:block"/><figcaption style="font-size:11px;color:var(--muted);margin-top:3px">${TY[ph.type]||'📷'}${ph.caption?' · '+ph.caption:''}</figcaption></figure>`).join('');
+ out.innerHTML=`<div class="dcp-note"><b>🌸 Greg's note:</b><br><br>${d.greg_note||''}`
+   +`${d.people?`<br><br><b>👤 The people:</b> ${d.people}`:''}`
+   +`${d.order?`<br><br><b>🍽 What to order:</b> ${d.order}`:''}`
+   +`${photos?`<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px">${photos}</div>`:''}`
+   +`${d.visited?`<br><br><span style="font-size:11px;color:var(--muted)">Visited ${d.visited}</span>`:''}</div>`;
  out.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function wireDCPModal(){

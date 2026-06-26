@@ -1,5 +1,7 @@
 // Apply a DCP patch exported from dcp-tool.html onto the city data.
-// Patch shape: { <city>: { <id>: { greg_note, visited, _new_name? } } }
+// Patch shape: { <city>: { <id>: { greg_note, people?, order?, visited, _new_name?,
+//   photos?: [{ file, caption, data(base64 jpeg dataURL) }] } } }
+// Photos are written to img/dcp/<file> and referenced by URL (never base64 in the data).
 // Usage: node scripts/build-dcp.mjs <patch.json>
 import fs from 'fs';
 
@@ -24,8 +26,22 @@ for (const [city, entries] of Object.entries(patch)) {
       continue;
     }
     const note = (dcp.greg_note || '').trim();
-    if (!note) { continue; } // skip empty drafts
-    p.dcp = { greg_note: note, visited: dcp.visited || null };
+    if (!note && !(dcp.photos || []).length) { continue; } // skip truly-empty drafts
+    // write any photos to img/dcp/ and reference them by URL
+    const photos = [];
+    for (const ph of (dcp.photos || [])) {
+      if (!ph.file || !ph.data) continue;
+      const b64 = String(ph.data).replace(/^data:[^,]*,/, '');
+      fs.mkdirSync('img/dcp', { recursive: true });
+      fs.writeFileSync(`img/dcp/${ph.file}`, Buffer.from(b64, 'base64'));
+      photos.push({ src: `/img/dcp/${ph.file}`, type: ph.type || 'other', caption: ph.caption || '' });
+    }
+    p.dcp = {
+      greg_note: note, visited: dcp.visited || null,
+      ...(dcp.people ? { people: dcp.people } : {}),
+      ...(dcp.order ? { order: dcp.order } : {}),
+      ...(photos.length ? { photos } : {}),
+    };
     n++; applied++;
   }
   if (n) { fs.writeFileSync(file, ser(d)); touchedAnyCity = true; console.log(`${city}: applied ${n} DCP note(s)`); }
