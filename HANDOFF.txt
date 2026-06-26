@@ -1165,3 +1165,35 @@ labels" (body.no-diet, carnivore mode). Dietary-category curated chips also in s
 Tight/Medium/Loose. findBowl() returns EVERY profiled ramen shop within per-axis tolerance (+ hard
 broth/tare/texture filters), ranked by match%, in the active city. scoreBowl = axis-distance(0.65) +
 categorical(0.35). Tested: works on 189 profiled Kyoto shops.
+
+[2026-06-26] NEW SPOT SWEEPS (tight-radius new cities for the trip). Tooling: scripts/spot-configs.mjs
+(centers+radius+specialties), gen-spot-workflow.mjs (Haiku discover / Sonnet verify, multi-center,
+loop-until-dry), build-spot.mjs (radius filter to within each center, writes data/<city>.json +
+registers in manifest.json + bumps SW). Configs:
+- nagano: Zenkō-ji 1mi · nagoya: Nagoya Castle 1mi · himeji: castle↔station corridor ~1.15km
+- toba: TWO centers — Toba Station 0.8km + Okage Yokochō/Ise Naiku 0.85km
+RUN per city: node gen-spot-workflow.mjs <city> → launch spot-<city>-workflow.js → extract result.kept
+(JSON.parse(.output).result.kept) → data/_<city>_disc.json → node build-spot.mjs <city> → Greg deploys.
+TOKYO: deferred per Greg (too big a token run).
+PILOT RUNNING: w9idfhm51 (nagano). If it succeeds + budget allows, launch nagoya/toba/himeji.
+
+[2026-06-26 ~session 90% limit, resets 3:20AM] THREE SPOT SWEEPS WERE RUNNING at the cutoff —
+all RESUMABLE (Workflow scriptPath + resumeFromRunId after reset; cached agents return instantly):
+  • Nagano  (Haiku/Sonnet) task woqdbu7b9  runId wf_696a8be7-65b  script spot-nagano-workflow.js
+  • Toba-station CHEAP (Haiku/Sonnet) task wb80y7dhg runId wf_29b6d2ca-d04 script spot-toba_station-workflow.js
+  • Toba-station OPUS  (Opus/Opus)    task wae72qvk0 runId wf_0b507263-e6f script spot-toba_station-opus-workflow.js
+RECOVERY after 3:20AM reset:
+ 1) For each finished task: read its .output (…/tasks/<taskid>.output) → obj=JSON.parse(file); kept=obj.result.kept
+    (result may be a string → JSON.parse again). If a task was cut off mid-run, RESUME it first
+    (Workflow {scriptPath, resumeFromRunId}) then read .output.
+ 2) NAGANO is production: kept → data/_nagano_disc.json → `node scripts/build-spot.mjs nagano`
+    (writes data/nagano.json + registers in manifest + bumps SW) → Greg deploys.
+ 3) TOBA-STATION = the A/B EXPERIMENT ONLY (station-only, NOT the trip data). Compare wb80y7dhg(cheap)
+    vs wae72qvk0(opus) kept arrays: # found, overlap, GF/vegan agreement on shared shops, bio depth
+    (anecdotes+sources), safety detail, coord validity, meta-leaks. Report to Greg. Do NOT build into a city.
+ 4) PRODUCTION QUEUE (Greg wants for the trip): nagoya, full toba (2-center config 'toba'), himeji —
+    `node scripts/gen-spot-workflow.mjs <city>` → launch spot-<city>-workflow.js → build-spot.mjs <city>.
+    TOKYO deferred (too big). 
+TABELOG TABS opening in Greg's browser = the verify agents' real-browser fallback for Tabelog
+(confirmed benign by matching coords). Run sweeps on the cloud env (MOBILE_OPS.md) to avoid them.
+Last deployed: v70. Spot-sweep tooling: spot-configs.mjs, gen-spot-workflow.mjs (tier arg: cheap|opus), build-spot.mjs.

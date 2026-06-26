@@ -1,0 +1,46 @@
+// Tight-radius "spot sweep" city configs. r = radius in km from each center.
+// Multi-center cities (toba) union their circles. Used by gen-spot-workflow.mjs + build-spot.mjs.
+export const CONFIGS = {
+  nagano: {
+    label: 'Nagano', subtitle: '善光寺 · ベジ・グルテンフリー',
+    centers: [{ name: 'Zenkō-ji', area: '善光寺 長野', lat: 36.6614, lng: 138.1872, r: 1.61 }],
+    specialties: ['信州そば', '戸隠そば', 'おやき', '精進料理 善光寺', '甘味処 長野'],
+    comfort: 'A local spot near Zenkō-ji; a little Japanese or pointing helps.',
+  },
+  nagoya: {
+    label: 'Nagoya', subtitle: '名古屋城 · ベジ・グルテンフリー',
+    centers: [{ name: 'Nagoya Castle', area: '名古屋城 周辺 名古屋', lat: 35.1856, lng: 136.8997, r: 1.61 }],
+    specialties: ['味噌カツ', 'ひつまぶし', '手羽先', 'きしめん', 'あんかけスパ', 'ヴィーガン 名古屋'],
+    comfort: 'A Nagoya spot near the castle; a little Japanese or pointing helps.',
+  },
+  toba: {
+    label: 'Toba & Ise', subtitle: '鳥羽駅 + おかげ横丁 · ベジ・グルテンフリー',
+    centers: [
+      { name: 'Toba Station', area: '鳥羽駅 鳥羽', lat: 34.4814, lng: 136.8434, r: 0.8 },
+      { name: 'Okage Yokochō', area: 'おかげ横丁 おはらい町 伊勢神宮 内宮', lat: 34.4554, lng: 136.7253, r: 0.85 },
+    ],
+    specialties: ['伊勢うどん', '手こね寿司', '海鮮 鳥羽', '赤福 甘味', 'おかげ横丁 食べ歩き'],
+    comfort: 'A Toba/Ise spot; a little Japanese or pointing helps.',
+  },
+  toba_station: {
+    label: 'Toba Station (A/B test)', subtitle: '鳥羽駅',
+    centers: [{ name: 'Toba Station', area: '鳥羽駅 鳥羽', lat: 34.4814, lng: 136.8434, r: 0.8 }],
+    specialties: ['伊勢うどん', '手こね寿司', '海鮮 鳥羽'],
+    comfort: 'A Toba spot near the station.',
+  },
+  himeji: {
+    label: 'Himeji', subtitle: '姫路城〜姫路駅 · ベジ・グルテンフリー',
+    centers: [{ name: 'Himeji Castle ↔ Station', area: '姫路城 姫路駅 大手前通り 姫路', lat: 34.8331, lng: 134.6921, r: 1.15 }],
+    specialties: ['姫路おでん', '穴子 あなご 姫路', '姫路 名物', '蕎麦 うどん 姫路'],
+    comfort: 'A Himeji spot between the castle and station; a little Japanese or pointing helps.',
+  },
+};
+
+export function bbox(cfg) {
+  const lats = [], lngs = [];
+  for (const c of cfg.centers) {
+    const dLat = c.r / 111, dLng = c.r / (111 * Math.cos(c.lat * Math.PI / 180));
+    lats.push(c.lat - dLat, c.lat + dLat); lngs.push(c.lng - dLng, c.lng + dLng);
+  }
+  return { latMin: Math.min(...lats), latMax: Math.max(...lats), lngMin: Math.min(...lngs), lngMax: Math.max(...lngs) };
+}
