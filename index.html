@@ -310,6 +310,8 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  .bowlchips>span{font-size:11px;color:var(--muted);font-weight:700;min-width:42px}
  .bowlchips .chip{font-size:12px;padding:5px 10px}
  .bowl-res{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;margin:6px 0;cursor:pointer;font-size:13px;color:var(--ink)}
+ .fab.on{background:var(--ink)!important;color:#fff!important}
+ .surv-pop{min-width:170px;max-width:240px;line-height:1.45}
  </style>
  <div class="filters">
   <div class="frow">
@@ -348,6 +350,8 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
   <div id="map"></div>
   <div class="fabs">
    <button class="fab fab-scan" id="scanFab" aria-label="Scan a menu">📷</button>
+   <button class="fab" id="konbiniFab" aria-label="Toggle konbini layer">🏪</button>
+   <button class="fab" id="groceryFab" aria-label="Toggle grocery layer">🛒</button>
    <button class="fab" id="listBtn" aria-label="Toggle list">☰</button>
    <button class="fab ver" id="locBtn" aria-label="Find me">◎</button>
   </div>
@@ -508,7 +512,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v74';
+const APP_BUILD='dcd-v75';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -631,6 +635,21 @@ function syncMarkers(vis){
   const on=set.has(id); m.setStyle({fillOpacity:on?.95:0,opacity:on?1:0});
   if(!on) m.setStyle({radius:0}); else m.setStyle({radius: id===state.selected?10:7});
  }
+}
+// ---------- 🏪🛒 survival layers (konbini + grocery) ----------
+let SURV={}, survLayer={konbini:null,grocery:null};
+const KONBINI_COLOR={seven:'#E8410A',family:'#2BA84A',lawson:'#0B5FA5'};
+const GROC_COLOR={specialist:'#1b8a3a',some:'#c79100',minimal:'#9a8f7c',none:'#b0a89a'};
+async function loadSurv(kind){const key=state.active+'_'+kind;if(SURV[key]!==undefined)return SURV[key];try{const d=await(await fetch('data/'+key+'.json',{cache:'force-cache'})).json();SURV[key]=kind==='konbini'?(d.points||[]):(d.stores||[]);}catch(_){SURV[key]=[];}return SURV[key];}
+function grocPopup(s){const lvl={specialist:'🌟 GF specialist',some:'GF · some options',minimal:'GF · basics only',none:'GF · none noted'}[s.gf_level]||'';return `<div class="surv-pop"><b>${escHtml(s.name)}</b>${s.chain?' · '+escHtml(s.chain):''}<div style="margin:5px 0;font-weight:700;color:${GROC_COLOR[s.gf_level]||'#555'}">${lvl}</div><div style="font-size:12px">🌾 ${escHtml(s.gf_summary||'—')}</div><div style="font-size:12px;margin-top:4px">🌱 ${escHtml(s.vegan_summary||'—')}</div>${s.url?`<a href="${escHtml(s.url)}" target="_blank" rel="noopener" style="font-size:12px;color:var(--ver)">store info ›</a>`:''}<div style="font-size:11px;color:var(--muted);margin-top:5px">📷 label reader — coming next</div></div>`;}
+async function toggleSurv(kind,btn){
+ if(survLayer[kind]){map.removeLayer(survLayer[kind]);survLayer[kind]=null;if(btn)btn.classList.remove('on');return;}
+ const data=await loadSurv(kind);
+ if(!data.length){if(typeof toast==='function')toast('No '+(kind==='konbini'?'konbini':'grocery')+' data for this city yet.');return;}
+ const g=L.layerGroup();
+ if(kind==='konbini'){data.forEach(p=>L.circleMarker([p.lat,p.lng],{radius:4,weight:1,color:'#fff',fillColor:KONBINI_COLOR[p.c]||'#888',fillOpacity:.9}).on('click',()=>{renderKonbini(p.c);document.getElementById('konbiniModal').classList.add('show');}).addTo(g));}
+ else{data.forEach(s=>L.circleMarker([s.lat,s.lng],{radius:6,weight:2,color:'#fff',fillColor:GROC_COLOR[s.gf_level]||'#9a8f7c',fillOpacity:.95}).bindPopup(grocPopup(s)).addTo(g));}
+ g.addTo(map);survLayer[kind]=g;if(btn)btn.classList.add('on');
 }
 
 // ---------- render ----------
@@ -1303,6 +1322,8 @@ function wire(){
   if(bm)bm.onclick=e=>{if(e.target.id==='bowlModal')bm.classList.remove('show');};
   if(bf)addTouch(bf,findBowl);
   ['broth','tare','texture','tol'].forEach(g=>document.querySelectorAll('#bowlModal [data-'+g+']').forEach(b=>b.onclick=()=>{const on=b.classList.contains('on');document.querySelectorAll('#bowlModal [data-'+g+']').forEach(x=>x.classList.remove('on'));if(!on)b.classList.add('on');}));}
+ {const kf=document.getElementById('konbiniFab');if(kf)kf.onclick=()=>toggleSurv('konbini',kf);}
+ {const gf=document.getElementById('groceryFab');if(gf)gf.onclick=()=>toggleSurv('grocery',gf);}
  document.getElementById('search').oninput=e=>{state.filters.q=e.target.value;render();};
  document.getElementById('search').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();geocodeAndPan(e.target.value);}};
  const goBtn=document.getElementById('searchGo');
