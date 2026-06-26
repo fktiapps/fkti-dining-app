@@ -313,6 +313,14 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  .fab.on{background:var(--ink)!important;color:#fff!important}
  .surv-pop{min-width:170px;max-width:240px;line-height:1.45}
  .learn-card{background:#fff;border:1px solid var(--line);border-radius:14px;min-height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;cursor:pointer;user-select:none}
+ .mp-row{display:flex;align-items:center;gap:10px;padding:9px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+ .mp-ja{font-size:20px;font-weight:700;min-width:62px}
+ .mp-en{font-size:13px}.mp-rom{font-size:11px;color:var(--muted)}
+ .mp-meta{margin-left:auto;font-size:11px;color:var(--muted);text-align:right;white-space:nowrap}
+ .mp-star{color:var(--ver)}
+ #mpReader h4{margin:12px 0 3px;color:var(--ver);font-size:13px}
+ #mpReader p{margin:0;font-size:13.5px;line-height:1.55}
+ .mp-diet{font-size:12.5px;margin:5px 0;padding:8px;border-radius:8px;background:#faf7f0;line-height:1.5}
  .lc-ja{font-size:32px;font-weight:700;line-height:1.5;ruby-position:over}
  .lc-ja rt{font-size:13px;color:var(--muted);font-weight:400}
  .lc-hint{font-size:11px;color:var(--muted);margin-top:12px}
@@ -327,6 +335,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
    <button class="chip card-chip" id="phrasesBtn">🗣 Phrases</button>
    <button class="chip card-chip" id="konbiniBtn">🏪 Konbini</button>
    <button class="chip card-chip" id="learnBtn">📚 Learn</button>
+   <button class="chip card-chip" id="menupediaBtn">🍱 100 Dishes</button>
    <button class="chip" id="filterGear">⚙ Filters</button>
   </div>
   <div class="frow" id="catPills">
@@ -475,6 +484,15 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
    <span id="learnCount" style="font-size:12px;color:var(--muted)"></span>
    <button class="chip" id="learnShuf">🔀 Shuffle</button>
   </div>
+ </div>
+</div>
+<div class="modal" id="mpModal">
+ <div class="box">
+  <button class="closex" id="mpClose">×</button>
+  <h2>🍱 100 Dishes <span style="font-size:12px;font-weight:400;color:var(--muted)">that build this cuisine</span></h2>
+  <p style="font-size:12px;color:var(--muted);margin:2px 0 8px">The dishes you'll meet most across Kyoto's kitchens — tap one for its story, and how it reads for gluten-free &amp; vegan diners.</p>
+  <div id="mpList"></div>
+  <div id="mpReader" style="display:none"></div>
  </div>
 </div>
 <div class="modal" id="menuModal">
@@ -972,6 +990,30 @@ function findBowl(){
  const shown=matches.slice(0,60);
  out.innerHTML=`<div style="font-size:12px;color:var(--muted);margin-bottom:6px">${matches.length} shop${matches.length>1?'s':''} match your bowl in ${state.active||'this city'}${matches.length>60?' (showing 60)':''}:</div>`+shown.map(s=>`<button class="bowl-res" data-id="${s.p.id}"><b>${s.score}% match</b> · ${s.p.name}<div style="font-size:11px;color:var(--muted);margin-top:2px">${(s.p.ramen.broth_base||[]).join('/')}${(s.p.ramen.tare||[]).length?' · '+s.p.ramen.tare.join('/'):''}${s.p.ramen.broth_texture?' · '+s.p.ramen.broth_texture:''}${s.p.ramen.signature_bowl?' — '+s.p.ramen.signature_bowl:''}</div></button>`).join('');
  out.querySelectorAll('[data-id]').forEach(b=>addTouch(b,()=>{document.getElementById('bowlModal').classList.remove('show');selectPlace(b.dataset.id);}));
+}
+// ---------- 🍱 100 Dishes (menupedia) ----------
+let MP=null;
+async function loadMP(){if(MP)return MP;try{MP=await(await fetch('data/menupedia.json',{cache:'force-cache'})).json();}catch(_){MP={hundred:[],lore:{}};}return MP;}
+function openMenupedia(){const m=document.getElementById('mpModal');m.classList.add('show');document.getElementById('mpClose').onclick=()=>m.classList.remove('show');m.onclick=e=>{if(e.target.id==='mpModal')m.classList.remove('show');};mpGrid();}
+async function mpGrid(){
+ document.getElementById('mpReader').style.display='none';
+ const list=document.getElementById('mpList');list.style.display='block';list.innerHTML='<p style="color:var(--muted)">Loading…</p>';
+ await loadMP();
+ list.innerHTML=MP.hundred.map(d=>{const star=d.cultural==='high'?'<span class="mp-star">★</span> ':'';const lore=MP.lore[d.key]?' 📖':'';
+  return `<div class="mp-row" onclick="mpReader('${d.key}')"><span class="mp-ja">${escHtml(d.ja||d.en)}</span><div><div class="mp-en">${star}${escHtml(d.en)}${lore}</div><div class="mp-rom">${escHtml(d.romaji||'')}</div></div><span class="mp-meta">#${d.rank}<br>${d.restaurants} shops</span></div>`;}).join('');
+}
+function mpReader(key){
+ const d=MP.hundred.find(x=>x.key===key);if(!d)return;const lore=MP.lore[key];
+ document.getElementById('mpList').style.display='none';
+ const r=document.getElementById('mpReader');r.style.display='block';
+ let h=`<button class="chip" onclick="mpGrid()" style="margin-bottom:8px">‹ All 100 dishes</button>`+
+  `<div style="font-size:30px;font-weight:700">${escHtml(d.ja||d.en)}</div>`+
+  `<div style="font-size:14px;color:var(--muted)">${escHtml(d.romaji||'')} · ${escHtml(d.en)}</div>`+
+  `<div style="font-size:12px;color:var(--muted);margin-top:4px">#${d.rank} of 100 · appears in ${d.restaurants} Kyoto shops${d.cultural==='high'?' · <span class="mp-star">★ cultural cornerstone</span>':''}</div>`;
+ if(lore){h+=`<h4>History</h4><p>${escHtml(lore.history)}</p><h4>Culture</h4><p>${escHtml(lore.culture)}</p>`+
+  `<div class="mp-diet">🌾 <b>Gluten-free:</b> ${escHtml(lore.gf)}</div><div class="mp-diet">🌱 <b>Vegan:</b> ${escHtml(lore.vegan)}</div>`;}
+ else{h+=`<p style="margin-top:12px;color:var(--muted)">Full history &amp; culture reader coming soon. This dish appears in ${d.restaurants} Kyoto shops in our guide.</p>`;}
+ r.innerHTML=h;r.scrollTop=0;const box=document.querySelector('#mpModal .box');if(box)box.scrollTop=0;
 }
 // ---------- 📋 in-app translated menu ----------
 let MENUS={}, MENUS_CITY=null, MENU_DIET='gf', MENU_PLACE=null;
@@ -1565,6 +1607,7 @@ function wire(){
   const lc=document.getElementById('labelClose');if(lc)lc.onclick=()=>document.getElementById('labelModal').classList.remove('show');
   const lm=document.getElementById('labelModal');if(lm)lm.onclick=e=>{if(e.target.id==='labelModal')e.target.classList.remove('show');};}
  {addTouch(document.getElementById('learnBtn'),openLearn);
+  addTouch(document.getElementById('menupediaBtn'),openMenupedia);
   const lcl=document.getElementById('learnClose');if(lcl)lcl.onclick=()=>document.getElementById('learnModal').classList.remove('show');
   const lmd=document.getElementById('learnModal');if(lmd)lmd.onclick=e=>{if(e.target.id==='learnModal')e.target.classList.remove('show');};
   addTouch(document.getElementById('learnCard'),learnFlipCard);
