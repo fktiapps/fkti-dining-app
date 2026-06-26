@@ -312,6 +312,13 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  .bowl-res{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;margin:6px 0;cursor:pointer;font-size:13px;color:var(--ink)}
  .fab.on{background:var(--ink)!important;color:#fff!important}
  .surv-pop{min-width:170px;max-width:240px;line-height:1.45}
+ .learn-card{background:#fff;border:1px solid var(--line);border-radius:14px;min-height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;cursor:pointer;user-select:none}
+ .lc-ja{font-size:32px;font-weight:700;line-height:1.5;ruby-position:over}
+ .lc-ja rt{font-size:13px;color:var(--muted);font-weight:400}
+ .lc-hint{font-size:11px;color:var(--muted);margin-top:12px}
+ .lc-rj{font-size:21px;font-weight:700;color:var(--ink)}
+ .lc-en{font-size:15px;margin-top:6px}
+ .lc-note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5}
  </style>
  <div class="filters">
   <div class="frow">
@@ -319,6 +326,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
    <button class="chip card-chip" id="cardsBtn">🪪 Show staff</button>
    <button class="chip card-chip" id="phrasesBtn">🗣 Phrases</button>
    <button class="chip card-chip" id="konbiniBtn">🏪 Konbini</button>
+   <button class="chip card-chip" id="learnBtn">📚 Learn</button>
    <button class="chip" id="filterGear">⚙ Filters</button>
   </div>
   <div class="frow" id="catPills">
@@ -450,6 +458,25 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
   <div id="labelOut" style="margin-top:10px"></div>
  </div>
 </div>
+<div class="modal" id="learnModal">
+ <div class="box">
+  <button class="closex" id="learnClose">×</button>
+  <h2>📚 Learn — survival Japanese</h2>
+  <p style="font-size:12px;color:var(--muted);margin:2px 0 8px">Tap the card to flip · 🔊 to hear it. Five minutes a day for a week goes a long way.</p>
+  <div id="learnTabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px"></div>
+  <div id="learnCard" class="learn-card"></div>
+  <div style="display:flex;align-items:center;gap:8px;margin-top:10px">
+   <button class="chip" id="learnPrev" aria-label="Previous">‹</button>
+   <button class="chip" id="learnFlipBtn" style="flex:1">Flip</button>
+   <button class="chip" id="learnSpeak" aria-label="Speak">🔊</button>
+   <button class="chip" id="learnNext" aria-label="Next">›</button>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px">
+   <span id="learnCount" style="font-size:12px;color:var(--muted)"></span>
+   <button class="chip" id="learnShuf">🔀 Shuffle</button>
+  </div>
+ </div>
+</div>
 <div class="modal" id="menuModal">
  <div class="box">
   <button class="closex" id="menuClose">×</button>
@@ -522,7 +549,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v76';
+const APP_BUILD='dcd-v77';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -735,6 +762,76 @@ function renderLabelScan(j,dataUrl){
   `${ings?`<div style="font-size:12px;margin-top:6px"><b>Ingredients:</b><ul style="margin:3px 0;padding-left:18px">${ings}</ul></div>`:''}`+
   `<div style="font-size:11px;color:var(--muted);margin-top:6px">${escHtml(j.caveat||'Decision-support, not a guarantee — labels change and dashi/additives can be unlabeled.')}</div></div>`;
 }
+// ---------- 📚 Learn (survival-Japanese flashcards) ----------
+const LEARN={
+ general:{label:'🍽 Restaurant',cards:[
+  {ja:'すみません',kana:'すみません',rj:'sumimasen',en:'Excuse me / sorry',note:'Your most-used word — to get attention or apologize.'},
+  {ja:'これをください',kana:'これをください',rj:'kore o kudasai',en:'This one, please',note:'Point + say it. ～をください is standard-polite ordering.'},
+  {ja:'お願いします',kana:'おねがいします',rj:'onegai shimasu',en:'Please (I request)',note:'Softer / more deferential than kudasai — great in small shops.'},
+  {ja:'これにします',kana:'これにします',rj:'kore ni shimasu',en:"I'll have this",note:'～にします = deciding your order.'},
+  {ja:'メニューをください',kana:'メニューをください',rj:'menyū o kudasai',en:'Menu, please',note:''},
+  {ja:'お会計お願いします',kana:'おかいけいおねがいします',rj:'okaikei onegai shimasu',en:'The check, please',note:'Or okanjō onegai shimasu.'},
+  {ja:'一人です',kana:'ひとりです',rj:'hitori desu',en:'One person',note:'二人 (futari) = two people.'},
+  {ja:'これは何ですか？',kana:'これはなんですか',rj:'kore wa nan desu ka?',en:'What is this?',note:'Point at a dish or menu line.'},
+  {ja:'おすすめは何ですか？',kana:'おすすめはなんですか',rj:'osusume wa nan desu ka?',en:'What do you recommend?',note:''},
+  {ja:'お邪魔します',kana:'おじゃまします',rj:'ojama shimasu',en:'Pardon the intrusion',note:'Humble — say it entering a small, local, non-tourist shop.'},
+  {ja:'失礼しますが…',kana:'しつれいしますが',rj:'shitsurei shimasu ga…',en:'Excuse me, but…',note:'Softens a request before you ask it. Polite all-purpose.'},
+  {ja:'いいですか？',kana:'いいですか',rj:'ii desu ka?',en:'Is it okay? / May I?',note:'Suwatte mo ii desu ka? = May I sit here?'},
+  {ja:'いただきます',kana:'いただきます',rj:'itadakimasu',en:'I gratefully receive',note:'Said before eating.'},
+  {ja:'ごちそうさまでした',kana:'ごちそうさまでした',rj:'gochisōsama deshita',en:'Thank you for the meal',note:'Said on leaving — shows real respect.'},
+ ]},
+ gf:{label:'🌾 Gluten-Free',cards:[
+  {ja:'小麦',kana:'こむぎ',rj:'komugi',en:'wheat',note:'The #1 kanji to recognize on labels & menus.'},
+  {ja:'大麦',kana:'おおむぎ',rj:'ōmugi',en:'barley',note:''},
+  {ja:'ライ麦',kana:'ライむぎ',rj:'raimugi',en:'rye',note:''},
+  {ja:'小麦粉',kana:'こむぎこ',rj:'komugiko',en:'wheat flour',note:''},
+  {ja:'麦芽',kana:'ばくが',rj:'bakuga',en:'malt',note:'In beer & some sauces.'},
+  {ja:'醤油',kana:'しょうゆ',rj:'shōyu',en:'soy sauce',note:'Almost always contains wheat.'},
+  {ja:'味噌',kana:'みそ',rj:'miso',en:'miso',note:'Some kinds use barley/wheat (麦味噌).'},
+  {ja:'麺',kana:'めん',rj:'men',en:'noodles',note:'Ramen / udon = wheat.'},
+  {ja:'天ぷら',kana:'てんぷら',rj:'tenpura',en:'tempura',note:'Wheat batter + usually a shared fryer.'},
+  {ja:'パン粉',kana:'パンこ',rj:'panko',en:'breadcrumbs',note:'Katsu & fried foods = wheat.'},
+  {ja:'原材料名',kana:'げんざいりょうめい',rj:'genzairyōmei',en:'ingredients (label)',note:'The label line to read on every package.'},
+  {ja:'グルテンアレルギーがあります',kana:'グルテンアレルギーがあります',rj:'guruten arerugī ga arimasu',en:'I have a gluten allergy',note:''},
+  {ja:'セリアック病です',kana:'セリアックびょうです',rj:'seriakku-byō desu',en:'I have celiac disease',note:''},
+  {ja:'小麦・大麦・ライ麦が食べられません',kana:'こむぎ・おおむぎ・ライむぎがたべられません',rj:'komugi, ōmugi, raimugi ga taberaremasen',en:"I can't eat wheat, barley, or rye",note:''},
+  {ja:'醤油に小麦は入っていますか？',kana:'しょうゆにこむぎははいっていますか',rj:'shōyu ni komugi wa haitte imasu ka?',en:'Does the soy sauce contain wheat?',note:''},
+  {ja:'同じ油で揚げていますか？',kana:'おなじあぶらであげていますか',rj:'onaji abura de agete imasu ka?',en:'Is it fried in the same oil?',note:'The shared-fryer question.'},
+  {ja:'少量でも体調が悪くなります',kana:'しょうりょうでもたいちょうがわるくなります',rj:'shōryō demo taichō ga waruku narimasu',en:'Even a small amount makes me ill',note:'Conveys that this is serious, not a preference.'},
+  {ja:'調理の前に調理場と器具をきれいにしていただけますか？',kana:'ちょうりのまえにちょうりばときぐをきれいにしていただけますか',rj:'chōri no mae ni chōriba to kigu o kirei ni shite itadakemasu ka?',en:'Before cooking, could you clean the area and utensils?',note:'The cross-contamination request — very polite.'},
+ ]},
+ vegan:{label:'🌱 Vegan',cards:[
+  {ja:'肉',kana:'にく',rj:'niku',en:'meat',note:''},
+  {ja:'豚肉',kana:'ぶたにく',rj:'butaniku',en:'pork',note:''},
+  {ja:'鶏肉',kana:'とりにく',rj:'toriniku',en:'chicken',note:''},
+  {ja:'牛肉',kana:'ぎゅうにく',rj:'gyūniku',en:'beef',note:''},
+  {ja:'魚',kana:'さかな',rj:'sakana',en:'fish',note:''},
+  {ja:'魚介',kana:'ぎょかい',rj:'gyokai',en:'seafood',note:''},
+  {ja:'卵',kana:'たまご',rj:'tamago',en:'egg',note:''},
+  {ja:'乳製品',kana:'にゅうせいひん',rj:'nyūseihin',en:'dairy',note:''},
+  {ja:'だし',kana:'だし',rj:'dashi',en:'soup stock',note:'Usually bonito/fish — the hidden trap in "veggie" dishes.'},
+  {ja:'鰹節',kana:'かつおぶし',rj:'katsuobushi',en:'bonito flakes',note:'Fish — hides in many vegetable dishes.'},
+  {ja:'ゼラチン',kana:'ゼラチン',rj:'zerachin',en:'gelatin',note:'Animal-derived.'},
+  {ja:'はちみつ',kana:'はちみつ',rj:'hachimitsu',en:'honey',note:''},
+  {ja:'豆腐',kana:'とうふ',rj:'tōfu',en:'tofu',note:'Your friend.'},
+  {ja:'野菜',kana:'やさい',rj:'yasai',en:'vegetables',note:''},
+  {ja:'ヴィーガンです',kana:'ヴィーガンです',rj:'vīgan desu',en:"I'm vegan",note:'Also: 完全菜食 (kanzen saishoku).'},
+  {ja:'肉・魚・卵・乳製品は食べません',kana:'にく・さかな・たまご・にゅうせいひんはたべません',rj:'niku, sakana, tamago, nyūseihin wa tabemasen',en:"I don't eat meat, fish, egg, or dairy",note:''},
+  {ja:'だしは魚を使っていますか？',kana:'だしはさかなをつかっていますか',rj:'dashi wa sakana o tsukatte imasu ka?',en:'Does the stock use fish?',note:'The key vegan question in Japan.'},
+  {ja:'動物性の材料は入っていますか？',kana:'どうぶつせいのざいりょうははいっていますか',rj:'dōbutsusei no zairyō wa haitte imasu ka?',en:'Does it contain any animal ingredients?',note:''},
+  {ja:'野菜だけの料理はありますか？',kana:'やさいだけのりょうりはありますか',rj:'yasai dake no ryōri wa arimasu ka?',en:'Are there vegetable-only dishes?',note:''},
+ ]},
+};
+let _lc='general', _li=0, _lflip=false, _lorder=[];
+function speakJa(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='ja-JP';u.rate=0.85;const vs=(window.speechSynthesis&&speechSynthesis.getVoices())||[];const v=vs.find(x=>(x.lang||'').toLowerCase().startsWith('ja'));if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(_){}}
+function openLearn(){_lc='general';learnReset();document.getElementById('learnModal').classList.add('show');}
+function learnReset(){_lorder=[...Array(LEARN[_lc].cards.length).keys()];_li=0;_lflip=false;learnTabs();learnRender();}
+function learnTabs(){const t=document.getElementById('learnTabs');t.innerHTML=Object.entries(LEARN).map(([k,d])=>`<button class="chip" data-lc="${k}" style="${k===_lc?'background:#9c3b2e;color:#fff':''}">${d.label}</button>`).join(' ');t.querySelectorAll('[data-lc]').forEach(b=>b.onclick=()=>{_lc=b.dataset.lc;learnReset();});}
+function learnRender(){const deck=LEARN[_lc].cards,card=deck[_lorder[_li]];document.getElementById('learnCard').innerHTML=_lflip?`<div class="lc-rj">${escHtml(card.rj)}</div><div class="lc-en">${escHtml(card.en)}</div>${card.note?`<div class="lc-note">${escHtml(card.note)}</div>`:''}`:`<ruby class="lc-ja">${escHtml(card.ja)}<rt>${escHtml(card.kana||'')}</rt></ruby><div class="lc-hint">tap to flip</div>`;document.getElementById('learnCount').textContent=(_li+1)+' / '+deck.length;}
+function learnFlipCard(){_lflip=!_lflip;learnRender();}
+function learnNav(d){const n=LEARN[_lc].cards.length;_li=(_li+d+n)%n;_lflip=false;learnRender();}
+function learnShuffle(){for(let i=_lorder.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[_lorder[i],_lorder[j]]=[_lorder[j],_lorder[i]];}_li=0;_lflip=false;learnRender();}
+function learnSpeak(){speakJa(LEARN[_lc].cards[_lorder[_li]].ja);}
 // ---------- render ----------
 function badgeGF(p){
  const cls=['dedicated','high'].includes(p.gf_confidence)?'b-safe':(p.gf_confidence==='options'?'b-caution':'b-unknown');
@@ -1467,6 +1564,15 @@ function wire(){
   if(lf)lf.onchange=e=>{const f=e.target.files&&e.target.files[0];if(f)readLabel(f);e.target.value='';};
   const lc=document.getElementById('labelClose');if(lc)lc.onclick=()=>document.getElementById('labelModal').classList.remove('show');
   const lm=document.getElementById('labelModal');if(lm)lm.onclick=e=>{if(e.target.id==='labelModal')e.target.classList.remove('show');};}
+ {addTouch(document.getElementById('learnBtn'),openLearn);
+  const lcl=document.getElementById('learnClose');if(lcl)lcl.onclick=()=>document.getElementById('learnModal').classList.remove('show');
+  const lmd=document.getElementById('learnModal');if(lmd)lmd.onclick=e=>{if(e.target.id==='learnModal')e.target.classList.remove('show');};
+  addTouch(document.getElementById('learnCard'),learnFlipCard);
+  addTouch(document.getElementById('learnFlipBtn'),learnFlipCard);
+  addTouch(document.getElementById('learnPrev'),()=>learnNav(-1));
+  addTouch(document.getElementById('learnNext'),()=>learnNav(1));
+  addTouch(document.getElementById('learnSpeak'),learnSpeak);
+  addTouch(document.getElementById('learnShuf'),learnShuffle);}
 }
 
 // ---------- boot ----------
