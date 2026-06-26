@@ -329,6 +329,12 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
    <button class="chip pill" data-pill="mompop">🏮 Mom &amp; Pop</button>
   </div>
   <div class="filtersheet is-hidden" id="filterSheet">
+   <div class="frow"><span style="font-size:11px;color:var(--muted);width:100%">Dietary focus (curated places)</span>
+    <button class="chip cat" data-cat="BOTH"><span class="dot" style="background:var(--c-BOTH)"></span>Vegan+GF</button>
+    <button class="chip cat" data-cat="GF"><span class="dot" style="background:var(--c-GF)"></span>GF-dedicated</button>
+    <button class="chip cat" data-cat="VEGAN"><span class="dot" style="background:var(--c-VEGAN)"></span>Vegan</button>
+    <button class="chip cat" data-cat="SHOJIN"><span class="dot" style="background:var(--c-SHOJIN)"></span>Shojin</button>
+   </div>
    <div class="frow">
     <button class="chip" data-toggle="open">● Open now</button>
     <button class="chip" data-toggle="late">Open late</button>
@@ -480,10 +486,10 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v66';
+const APP_BUILD='dcd-v67';
 const state={
  cities:{}, active:null, summaries:{},
- me:null, filters:{open:false,late:false,diet:'any',category:'all',cuisines:new Set(),q:''},
+ me:null, filters:{open:false,late:false,diet:'any',category:'all',cats:new Set(),cuisines:new Set(),q:''},
  markers:{}, meMarker:null, selected:null, sortBy:'distance', filterPushed:false
 };
 
@@ -563,6 +569,7 @@ function visiblePlaces(){
  let r=all.filter(p=>{
   if(f.category==='ramen' && p.cuisine_type!=='ramen') return false;
   if(f.category==='mompop' && p.category!=='MOM_AND_POP') return false;
+  if(f.cats.size && !f.cats.has(p.category)) return false;
   if(f.cuisines.size && !f.cuisines.has(p.cuisine_type)) return false;
   if(!dietOK(p)) return false;
   if(f.late && !p.flags.open_late) return false;
@@ -1229,6 +1236,7 @@ function pushFilteredState(){
 function wire(){
  document.querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{const k=b.dataset.toggle;state.filters[k]=!state.filters[k];b.classList.toggle('on',state.filters[k]);pushFilteredState();render();});
  document.querySelectorAll('[data-pill]').forEach(b=>b.onclick=()=>{state.filters.category=b.dataset.pill;document.querySelectorAll('[data-pill]').forEach(x=>x.classList.toggle('on',x===b));if(b.dataset.pill!=='all')pushFilteredState();render();});
+ document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{const c=b.dataset.cat;state.filters.cats.has(c)?state.filters.cats.delete(c):state.filters.cats.add(c);b.classList.toggle('on');pushFilteredState();render();});
  const _dietChip=document.getElementById('dietChip'),_dietMenu=document.getElementById('dietMenu');
  if(_dietChip)_dietChip.onclick=e=>{e.stopPropagation();_dietMenu.classList.toggle('is-hidden');};
  document.addEventListener('click',()=>{if(_dietMenu)_dietMenu.classList.add('is-hidden');});
@@ -1318,11 +1326,11 @@ function wire(){
    showList(true); state.filterPushed=false;
   } else {
    // Back to floor (list) → clear all filters
-   state.filters={open:false,late:false,diet:'any',category:'all',cuisines:new Set(),q:''};
+   state.filters={open:false,late:false,diet:'any',category:'all',cats:new Set(),cuisines:new Set(),q:''};
    state.filterPushed=false;
    {const dc=document.getElementById('dietChip');if(dc)dc.textContent='🍃 Any ▾';}document.body.classList.remove('no-diet');
    document.querySelectorAll('[data-pill]').forEach(b=>b.classList.toggle('on',b.dataset.pill==='all'));
-   document.querySelectorAll('[data-cuisine],[data-toggle]').forEach(b=>b.classList.remove('on'));
+   document.querySelectorAll('[data-cat],[data-cuisine],[data-toggle]').forEach(b=>b.classList.remove('on'));
    document.getElementById('search').value='';
    showList(true);
   }
