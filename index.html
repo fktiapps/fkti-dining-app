@@ -697,14 +697,18 @@ const KONBINI_COLOR={seven:'#E8410A',family:'#2BA84A',lawson:'#0B5FA5'};
 const GROC_COLOR={specialist:'#1b8a3a',some:'#c79100',minimal:'#9a8f7c',none:'#b0a89a'};
 async function loadSurv(kind){const key=state.active+'_'+kind;if(SURV[key]!==undefined)return SURV[key];try{const d=await(await fetch('data/'+key+'.json',{cache:'force-cache'})).json();SURV[key]=kind==='konbini'?(d.points||[]):(d.stores||[]);}catch(_){SURV[key]=[];}return SURV[key];}
 function grocPopup(s){const lvl={specialist:'🌟 GF specialist',some:'GF · some options',minimal:'GF · basics only',none:'GF · none noted'}[s.gf_level]||'';return `<div class="surv-pop"><b>${escHtml(s.name)}</b>${s.chain?' · '+escHtml(s.chain):''}<div style="margin:5px 0;font-weight:700;color:${GROC_COLOR[s.gf_level]||'#555'}">${lvl}</div><div style="font-size:12px">🌾 ${escHtml(s.gf_summary||'—')}</div><div style="font-size:12px;margin-top:4px">🌱 ${escHtml(s.vegan_summary||'—')}</div>${s.url?`<a href="${escHtml(s.url)}" target="_blank" rel="noopener" style="font-size:12px;color:var(--ver)">store info ›</a><br>`:''}<button onclick="openLabelReader()" style="margin-top:6px;background:#9c3b2e;color:#fff;border:none;border-radius:8px;padding:7px 10px;font-size:12px;font-weight:700;cursor:pointer">📷 Read a label</button></div>`;}
+function drawKonbini(){ // viewport-culled: only render konbini in view (handles cities like Tokyo with thousands)
+ const g=survLayer.konbini; if(!g)return; g.clearLayers();
+ const b=map.getBounds(), data=SURV[state.active+'_konbini']||[]; let n=0;
+ for(const p of data){ if(n>=1500)break; if(b.contains([p.lat,p.lng])){ L.circleMarker([p.lat,p.lng],{radius:4,weight:1,color:'#fff',fillColor:KONBINI_COLOR[p.c]||'#888',fillOpacity:.9}).on('click',()=>openKonbiniStore(p)).addTo(g); n++; } }
+}
 async function toggleSurv(kind,btn){
- if(survLayer[kind]){map.removeLayer(survLayer[kind]);survLayer[kind]=null;if(btn)btn.classList.remove('on');return;}
+ if(survLayer[kind]){map.removeLayer(survLayer[kind]);survLayer[kind]=null;if(kind==='konbini')map.off('moveend',drawKonbini);if(btn)btn.classList.remove('on');return;}
  const data=await loadSurv(kind);
  if(!data.length){if(typeof toast==='function')toast('No '+(kind==='konbini'?'konbini':'grocery')+' data for this city yet.');return;}
- const g=L.layerGroup();
- if(kind==='konbini'){data.forEach(p=>L.circleMarker([p.lat,p.lng],{radius:4,weight:1,color:'#fff',fillColor:KONBINI_COLOR[p.c]||'#888',fillOpacity:.9}).on('click',()=>openKonbiniStore(p)).addTo(g));}
+ const g=L.layerGroup();g.addTo(map);survLayer[kind]=g;if(btn)btn.classList.add('on');
+ if(kind==='konbini'){drawKonbini();map.on('moveend',drawKonbini);}
  else{data.forEach(s=>L.circleMarker([s.lat,s.lng],{radius:6,weight:2,color:'#fff',fillColor:GROC_COLOR[s.gf_level]||'#9a8f7c',fillOpacity:.95}).bindPopup(grocPopup(s)).addTo(g));}
- g.addTo(map);survLayer[kind]=g;if(btn)btn.classList.add('on');
 }
 
 // ---------- 🏪 konbini guide data (top-level) + per-store view ----------
