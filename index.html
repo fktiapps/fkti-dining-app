@@ -250,7 +250,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  :root{--sheet-h:100%}
  .body{display:flex}
  #map{position:relative;flex:1}
- .fabs{bottom:24px;right:24px}
+ .fabs{bottom:24px;right:calc(380px + 24px)} /* sit left of the 380px side sheet, over the map */
  .sheet{position:relative;height:100%!important;width:380px;border-radius:0;box-shadow:-4px 0 18px rgba(0,0,0,.12);flex:0 0 380px}
  .sheet.expanded{position:relative;inset:auto;height:100%!important;z-index:550;border-radius:0}
  .grab{display:none}
