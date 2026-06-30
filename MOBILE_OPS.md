@@ -3,6 +3,12 @@
 The blocker today: code lives on one Windows machine and deploys via manual `wrangler`. Fix that and
 everything else (edits, deploys, DCP capture) works from a phone. Steps, in priority order:
 
+## ★ STEP 0 — commit the working tree FIRST (git is behind live)
+`wrangler pages deploy .` uploads the working folder as-is, so the **live site can run ahead of git**.
+If you connect Pages↔GitHub while `main` is behind, the first auto-deploy will **regress the site** to
+whatever's committed. So before step 2, always: `git add -A && git commit` so **git `main` == live**.
+(Done 2026-06-29: committed v82→v86 — menupedia/Foundations, diet dials, Group mode, station guide.)
+
 ## 1. Code → GitHub (untether from the one machine)  ★ do before leaving
 Local repo is initialized + committed. To put it on GitHub (private):
 ```
@@ -19,10 +25,18 @@ Cloudflare dashboard → Pages → fkti-dining-app → Settings → Builds & dep
 - After connecting, confirm the **SUMMARIES** KV binding and **MISTRAL_API_KEY** env are still set on the project.
 Result: **every push to `main` auto-deploys** (~1 min). No `wrangler`, no credentials on the phone.
 (Keep bumping the SW version `dcd-vNN` on releases so phones refetch — that's already the routine.)
+- Also confirm **Preview deployments** are ON: any push to a *non-main branch* gets its own preview URL.
 
-## 3. Deploy from your phone
-- Edit a file in the **GitHub mobile app / github.com** and commit → auto-deploys. OR
-- Push from a mobile git client. Either way: **no `npm run deploy`** anymore.
+## 3. Deploy from your phone — with a safety net (preview branches)
+**merge to `main` = production = YOUR deploy gesture.** This preserves "Greg deploys himself": Claude (or
+you) only ever pushes to *preview branches*; you decide what goes live by tapping **Merge** in the GitHub
+mobile app. The loop:
+1. Change lands on a **branch** → Cloudflare gives a **preview URL**.
+2. Open that URL **on your phone** and test it (the only way to eyeball a shell change on the road).
+3. Merge the branch → `main` → auto-deploys to production.
+- Data-only changes (stations.json, menupedia, a place edit) = no SW bump, low risk.
+- Shell changes (`index.html`) = **bump `sw.js` VERSION** and ALWAYS preview-test on the phone first.
+- Trivial fixes: edit + commit straight on `main` in github.com → auto-deploys. Either way: no `wrangler`.
 
 ## 4. Claude from your phone
 - **Thinking / drafting / research:** the claude.ai app.
