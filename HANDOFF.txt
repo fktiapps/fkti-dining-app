@@ -10,9 +10,14 @@ LIVE: https://fkti-dining-app.pages.dev   (Cloudflare Pages; note the "-app").
   ⚠ An OLD project https://fkti-dining.pages.dev (no "-app") is stale — ignore/retire it.
   DCP authoring tool: https://fkti-dining-app.pages.dev/dcp-tool
 
-DEPLOY — GREG DEPLOYS HIMSELF. He runs:  cd into repo && npm run deploy  (wrangler pages deploy .)
-  Service worker precaches the shell → BUMP `const VERSION` in sw.js every time index.html changes
-  (currently dcd-v81). Data files are runtime-fetched (no bump needed for data-only changes).
+DEPLOY — NOW GIT-BASED (changed 2026-06-29). Repo is on GitHub (fktiapps/fkti-dining-app, private) and
+  Cloudflare Pages is git-connected: **push/merge to `main` auto-deploys** (~1 min). `npm run deploy`
+  (wrangler) is RETIRED — do not use it. "Greg deploys himself" now = Greg MERGES to main (his gesture,
+  works from phone). Claude pushes PREVIEW BRANCHES ONLY, never main. Preview branches get their own URL
+  (test on phone before merging). See MOBILE_OPS.md.
+  Service worker precaches the shell → BUMP `const VERSION` in sw.js every time index.html/manifest changes
+  (currently dcd-v88; build-spot.mjs bumps it automatically). Data files are runtime-fetched (no bump for
+  data-only changes like adding a station to stations.json).
 
 STANDING RULES (do not violate)
 - Greg DEPLOYS himself — never run a deploy.
@@ -37,13 +42,30 @@ STRUCTURE
 - scripts/gen-spot-workflow.mjs, build-spot.mjs, spot-configs.mjs ... city-sweep tooling (TOKEN-HEAVY).
 - MOBILE_OPS.md ... mobile/GitHub-deploy playbook.
 
-CITIES (8): kyoto(default), kanazawa, nara, hiroshima, nagano, toba, nagoya — all with restaurant
-  data — plus TOKYO (added 2026-06-27 as a KONBINI/SURVIVAL city only: places:[] + friendly subtitle;
-  restaurant guide deferred). OWN_ALL=true so all cities are unlocked.
+CITIES (9): kyoto(default), kanazawa, nara, hiroshima, nagano, toba, nagoya, HIMEJI (added 2026-07-02:
+  120 curated station↔castle corridor places via spot-himeji-workflow) — all with restaurant data — plus
+  TOKYO (KONBINI/SURVIVAL city only: places:[]; restaurant guide deferred). OWN_ALL=true, all unlocked.
+
+SESSION UPDATE 2026-07-02 (this build, sw v88 — read this):
+- MENUPEDIA is a cultural-historical-gastronomical celebration (NOT a GF tool). Deepened w/ RESEARCH:
+  ~36 dish readers (history/name-story/what-to-taste-for) + 16-entry FOUNDATIONS layer (dashi, umami,
+  shoyu…) + variant short-notes w/ parent links. Menu items cross-link → menupedia reader.
+- DIET = 3-RUNG STRICTNESS DIALS (replaced old on/off pills + triple-encoded diet filters): 🌾 GF / 🌱
+  Vegan pills TAP to cycle strictness (celiac-safe → options → need-rice), LONG-PRESS = guide.
+- 👥 GROUP / LEADER MODE: finds walkable clusters where a MIXED group (celiac+vegan+omni) all eat within
+  a short walk (even split across 2-3 nearby spots). Config modal → zone list + map pins.
+- 🚉 STATION SURVIVAL GUIDE (data/stations.json): ekiben/omiyage/in-station GF-vegan dining, TIME-AWARE
+  (tight-transfer banner). 6 stations: kyoto, kanazawa, hiroshima, nagano, shin_osaka, himeji. Reachable
+  via 🚉 chip only for map-cities (shin_osaka stranded — needs a station picker or Osaka city).
+- 🍽️ FOOD NEAR ME — NOW (Tier 0): red FAB → live OSM (functions/api/nearby.js, free, no tokens) + konbini
+  KB classify → nearest GF/vegan options + "guaranteed floor". Spec for Tier-1 (authorized AI deep-dive,
+  caches to data) in FOOD_NEAR_ME.md.
+- RULE: never verify GF/vegan from a SINGLE source (esp. Vegewel) — cross-corroborate (own site/HappyCow/
+  FindMeGlutenFree/Tabelog/blogs). A de-single-source pass fixed the 5 stations' in-station rows.
 
 FEATURES (current)
-- Map of curated places; four-pillar pills (Vegan/GF/Ramen/Mom&Pop, combinable); filter sheet
-  (celiacOnly/hideDiet/cuisine); Build-a-Bowl; per-place detail with DCP cultural notes.
+- Map of curated places; category pills + diet strictness DIALS; filter sheet; Build-a-Bowl; 👥 Group
+  mode; 🍽️ Food-near-me; per-place detail with DCP cultural notes.
 - 🏪 Konbini + 🛒 Grocery SURVIVAL LAYERS in every city incl. all of Tokyo (konbini 5,910; grocery
   2,425). Map FAB toggles. Renderer is VIEWPORT-CULLED (drawSurv: only in-view, cap 1500/800) so big
   cities stay smooth. Konbini dot → per-store view (address/hours + chain allergen write-up + label
