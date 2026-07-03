@@ -1,99 +1,121 @@
-DEEPLY CONNECTED DINING — PROJECT HANDOFF
-深い関係食事 · for a fresh Claude. Last updated 2026-06-27.
+DEEPLY CONNECTED DINING (DCD) — PROJECT HANDOFF
+深い関係食事 · for the next Claude (the dining app is one part of the wider FKTI project).
+Last updated 2026-07-02.
 ================================================================
 WHAT THIS IS
-A curated GF/vegan/cultural-depth dining guide PWA for Japan (Greg + students; July trip).
-Single-file app + map + survival tools. Companion project: FKTI Learning (kana trainer) at
-C:\Users\FKTI Work\Downloads\fkti-learning (SEPARATE repo + site — see its own HANDOFF.txt).
+A curated GF/vegan/cultural-depth dining guide PWA for Japan (Greg + ~9 high-school students; July trip).
+Single-file app + Leaflet map + survival tools + live "food near me". Companion project: FKTI Learning
+(kana trainer) at C:\Users\FKTI Work\Downloads\fkti-learning (SEPARATE repo/site — its own HANDOFF).
 
-LIVE: https://fkti-dining-app.pages.dev   (Cloudflare Pages; note the "-app").
-  ⚠ An OLD project https://fkti-dining.pages.dev (no "-app") is stale — ignore/retire it.
-  DCP authoring tool: https://fkti-dining-app.pages.dev/dcp-tool
+LIVE: https://fkti-dining-app.pages.dev   (Cloudflare Pages)
+  Repo: github.com/fktiapps/fkti-dining-app (PRIVATE). DCP authoring tool at /dcp-tool.
+  ⚠ Old stale project https://fkti-dining.pages.dev (no "-app") — ignore/retire.
 
-DEPLOY — NOW GIT-BASED (changed 2026-06-29). Repo is on GitHub (fktiapps/fkti-dining-app, private) and
-  Cloudflare Pages is git-connected: **push/merge to `main` auto-deploys** (~1 min). `npm run deploy`
-  (wrangler) is RETIRED — do not use it. "Greg deploys himself" now = Greg MERGES to main (his gesture,
-  works from phone). Claude pushes PREVIEW BRANCHES ONLY, never main. Preview branches get their own URL
-  (test on phone before merging). See MOBILE_OPS.md.
-  Service worker precaches the shell → BUMP `const VERSION` in sw.js every time index.html/manifest changes
-  (currently dcd-v88; build-spot.mjs bumps it automatically). Data files are runtime-fetched (no bump for
-  data-only changes like adding a station to stations.json).
+================================================================
+DEPLOY — NOW GIT-BASED (changed 2026-06-29). READ THIS.
+- Cloudflare Pages is GIT-CONNECTED to the repo: **push/merge to `main` auto-deploys** (~1 min).
+  `npm run deploy` (wrangler direct upload) is RETIRED — do NOT use it.
+- "Greg deploys himself" USED to mean he merges. **TRIP MODE (2026-07-02 → trip end): previews OFF** to
+  save time for the 9 users — Claude commits + pushes DIRECTLY to `main`. Before every push, KEEP the cheap
+  safety: `node --check` the inline JS, JSON-validate changed data, and BUMP sw.js VERSION on any
+  index.html/manifest change. A syntax error must not reach the kids' live app; behavioral bugs → fast-fix
+  or `git revert` + push. RESTORE preview-branch discipline when Greg starts selling the app.
+- Service worker precaches the shell → bump `const VERSION` in sw.js (currently dcd-v88) on any
+  index.html/manifest change. build-spot.mjs bumps it automatically. Data files (stations.json, city JSON,
+  menupedia.json) are runtime-fetched → NO bump for data-only changes.
+- SECRETS GOTCHA (root-caused 2026-07-02): repo has a **wrangler.toml** (project name + SUMMARIES KV
+  binding). Cloudflare rule: when a Pages project has wrangler.toml, **DASHBOARD-set env vars/secrets are
+  IGNORED**. So set secrets via `npm run secret` (= `wrangler pages secret put MISTRAL_API_KEY`) from a
+  laptop with wrangler — NOT the dashboard. MISTRAL_API_KEY is now set this way and the scanners are WIRED.
+  Non-secret vars would go in wrangler.toml [vars]; secrets NEVER go in the toml.
 
 STANDING RULES (do not violate)
-- Greg DEPLOYS himself — never run a deploy.
-- No paid/extra-usage tokens when unattended; included quota only; no retry/auto-resume crons.
-- I never handle credentials/secrets; Greg sets them.
-- Celiac safety is #1 — never assert a dish/place is safe; give honest GF/vegan reality + "ask".
-- Do NOT bundle proprietary/copyrighted assets; open licenses + attribution only.
+- Celiac safety is #1 — NEVER assert a dish/place/product is "safe"; give honest GF/vegan reality + "ask".
+- NEVER verify GF/vegan from a single source (esp. Vegewel) — cross-corroborate (own site / HappyCow /
+  FindMeGlutenFree / Tabelog / blogs). A single directory misses places and gets locations wrong.
+- No paid/extra-usage tokens when unattended; included quota only; no auto-resume crons. Big multi-agent
+  sweeps only with Greg present + budget (he authorizes).
+- Claude never handles credentials/secrets; Greg sets them.
+- No proprietary/copyrighted assets; open licenses + attribution only.
+- DCP cultural notes are Greg's in-the-field job (dcp-tool).
 
-BUDGET CONTEXT (2026-06-27): Greg used ~69% of weekly tokens in the first ~26h. Favor LOCAL/cheap
-work (single-file edits, OSM pulls, authored content). DEFER token-heavy multi-agent runs.
-
+================================================================
 STRUCTURE
 - index.html ........ the whole app (HTML/CSS/JS). Manifest-driven city registry + Leaflet map.
-- sw.js ............. service worker (VERSION bump on shell changes).
-- functions/api/menu-scan.js, label-scan.js ... Cloudflare Functions, Mistral Pixtral vision.
-- data/manifest.json ... city registry {version,default_city,cities:[{id,name,file,center,bounds,free}]}.
-- data/<city>.json ..... per-city {city,subtitle,center,bounds,tz,places:[...]}.
-- data/<city>_konbini.json {city,updated,points:[{lat,lng,c,nm,addr,hours}]}  c=seven|family|lawson|...
-- data/<city>_grocery.json {city,updated,stores:[{lat,lng,chain,name,addr,hours}]} (Kyoto richer: gf_level/summaries)
-- data/menupedia.json ... {city,hundred:[100 dishes],lore:{key:{history,culture,gf,vegan}}}.
-- data/_dishbank_canonical.json, _menu_kyoto.json, kyoto_menus.json ... source dish/menu data.
-- scripts/gen-spot-workflow.mjs, build-spot.mjs, spot-configs.mjs ... city-sweep tooling (TOKEN-HEAVY).
-- MOBILE_OPS.md ... mobile/GitHub-deploy playbook.
+- sw.js ............. service worker (bump VERSION on shell changes).
+- wrangler.toml ..... Pages config (name, SUMMARIES KV). Secrets via `npm run secret`, not here.
+- functions/api/ .... Cloudflare Functions: menu-scan.js + label-scan.js (Mistral Pixtral vision, now
+                      wired); nearby.js (live OSM proxy for "food near me"); chef-bio*, place-summary, health.
+- data/manifest.json  city registry {version,default_city,cities:[{id,name,file,center,bounds,free}]}.
+- data/<city>.json .. per-city {city,subtitle,center,bounds,tz,places:[...]}. places carry gf_confidence
+                      (dedicated|high|options|ask|no), vegan_status (full|options|limited|ask|no), category
+                      (BOTH|GF|VEGAN|SHOJIN|OMNI|MOM_AND_POP), cuisine_type, hours, bio, safety, dcp, etc.
+- data/<city>_konbini.json / _grocery.json ... survival layers (OSM points + chain-keyed GF/vegan KB).
+- data/menupedia.json .. {hundred:[100 dishes], foundations:[16], lore:{key:{history,name,culture,taste,gf,vegan}}}.
+- data/stations.json ... 🚉 station survival guide (6 stations) — schema {name,intro,sections:[{icon,h,
+                      verdict,where,rows:[{t,gf,vegan,speed,note}],tip}],playbook:{tight,gf,vegan}}.
+- data/_<city>_disc.json ... raw verified sweep output (input to build-spot.mjs).
+- scripts/ ......... city-sweep tooling: spot-configs.mjs (per-city radius/config, incl. himeji),
+                      gen-spot-workflow.mjs (generates the workflow), spot-<city>-workflow.js (Workflow-tool
+                      script: Haiku discover → Sonnet verify), build-spot.mjs (<city>_disc.json → <city>.json
+                      + registers in manifest + bumps SW). Also build-dcp.mjs, ramen enrich, menu pass, dedup.
+- MOBILE_OPS.md ... git/Pages mobile playbook.  FOOD_NEAR_ME.md ... "food near me" feature spec.
 
-CITIES (9): kyoto(default), kanazawa, nara, hiroshima, nagano, toba, nagoya, HIMEJI (added 2026-07-02:
-  120 curated station↔castle corridor places via spot-himeji-workflow) — all with restaurant data — plus
-  TOKYO (KONBINI/SURVIVAL city only: places:[]; restaurant guide deferred). OWN_ALL=true, all unlocked.
+CITIES (9): kyoto(default), kanazawa, nara, hiroshima, nagano, toba(&Ise), nagoya, HIMEJI (added
+  2026-07-02: 120 curated station↔castle corridor places) — all with restaurant data — plus TOKYO
+  (KONBINI/SURVIVAL only: places:[]; restaurant guide deferred). OWN_ALL=true, all unlocked.
 
-SESSION UPDATE 2026-07-02 (this build, sw v88 — read this):
-- MENUPEDIA is a cultural-historical-gastronomical celebration (NOT a GF tool). Deepened w/ RESEARCH:
-  ~36 dish readers (history/name-story/what-to-taste-for) + 16-entry FOUNDATIONS layer (dashi, umami,
-  shoyu…) + variant short-notes w/ parent links. Menu items cross-link → menupedia reader.
-- DIET = 3-RUNG STRICTNESS DIALS (replaced old on/off pills + triple-encoded diet filters): 🌾 GF / 🌱
-  Vegan pills TAP to cycle strictness (celiac-safe → options → need-rice), LONG-PRESS = guide.
-- 👥 GROUP / LEADER MODE: finds walkable clusters where a MIXED group (celiac+vegan+omni) all eat within
-  a short walk (even split across 2-3 nearby spots). Config modal → zone list + map pins.
-- 🚉 STATION SURVIVAL GUIDE (data/stations.json): ekiben/omiyage/in-station GF-vegan dining, TIME-AWARE
-  (tight-transfer banner). 6 stations: kyoto, kanazawa, hiroshima, nagano, shin_osaka, himeji. Reachable
-  via 🚉 chip only for map-cities (shin_osaka stranded — needs a station picker or Osaka city).
-- 🍽️ FOOD NEAR ME — NOW (Tier 0): red FAB → live OSM (functions/api/nearby.js, free, no tokens) + konbini
-  KB classify → nearest GF/vegan options + "guaranteed floor". Spec for Tier-1 (authorized AI deep-dive,
-  caches to data) in FOOD_NEAR_ME.md.
-- RULE: never verify GF/vegan from a SINGLE source (esp. Vegewel) — cross-corroborate (own site/HappyCow/
-  FindMeGlutenFree/Tabelog/blogs). A de-single-source pass fixed the 5 stations' in-station rows.
+================================================================
+FEATURES (current, all live)
+- Map of curated places + category pills (All/Ramen/Mom&Pop) + DIET STRICTNESS DIALS (see below) + filter
+  sheet; per-place detail with GF/vegan confidence + DCP cultural notes; in-app translated menus (dish-level
+  GF/vegan chips) with 📖 cross-link into the menupedia reader.
+- DIET = 3-RUNG STRICTNESS DIALS: 🌾 GF / 🌱 Vegan pills TAP to cycle strictness (celiac-safe → options →
+  need-rice, cumulative; segment indicator ●○○), LONG-PRESS = explainer. Replaced the old on/off pills +
+  triple-encoded diet filters. state.filters.gf / .vegan = 0-3.
+- 👥 GROUP / LEADER MODE: finds WALKABLE CLUSTERS where a mixed group (celiac+vegan+omni) all eat within a
+  short walk (even split across 2-3 nearby spots). 👥 pill → config (GF/vegan need + walk radius) → zone
+  list + numbered map pins. Intersection logic, not a personal lens.
+- 🏪 Konbini + 🛒 Grocery SURVIVAL LAYERS in every city incl. all of Tokyo (viewport-culled). Map FAB
+  toggles. Konbini dot → chain allergen write-up + label reader; grocery → chain-keyed GF/vegan KB.
+- 🍱 100 DISHES (menupedia) — a cultural-historical-gastronomical CELEBRATION (NOT a GF tool). ~36 deep
+  readers (history / name-story / "what to taste for") + a 🧂 FOUNDATIONS tab (16: dashi, umami, shoyu,
+  miso…) + short variant notes w/ parent links. Deepen by editing data/menupedia.json lore{} (research-
+  backed; internal knowledge NOT sufficient — cite JA sources).
+- 🚉 STATION SURVIVAL GUIDE (data/stations.json) — ekiben/omiyage/in-station GF-vegan dining, TIME-AWARE
+  (tight-transfer banner + speed tags). 6 stations: kyoto, kanazawa, hiroshima, nagano, shin_osaka, himeji.
+  Reachable via the 🚉 chip only for MAP-cities (shin_osaka data exists but is STRANDED — no Osaka city).
+- 🍽️ FOOD NEAR ME — NOW (red FAB): live OSM (functions/api/nearby.js, FREE, zero per-press tokens) +
+  konbini/grocery KB classify → nearest GF/vegan options + "guaranteed floor" (nearest konbini) + directions
+  + ask-phrases. Honest offline/no-signal fallback. This is Tier 0; Tier 1 (authorized AI deep-dive that
+  CACHES to data) is spec'd in FOOD_NEAR_ME.md, not built.
+- 📷 Menu scanner + ingredient/label reader (Mistral Pixtral) — NOW WIRED (MISTRAL_API_KEY set via wrangler).
+- 📚 Learn — in-app survival-Japanese flashcards.  DCP authoring tool (dcp-tool.html), build-dcp.mjs.
 
-FEATURES (current)
-- Map of curated places; category pills + diet strictness DIALS; filter sheet; Build-a-Bowl; 👥 Group
-  mode; 🍽️ Food-near-me; per-place detail with DCP cultural notes.
-- 🏪 Konbini + 🛒 Grocery SURVIVAL LAYERS in every city incl. all of Tokyo (konbini 5,910; grocery
-  2,425). Map FAB toggles. Renderer is VIEWPORT-CULLED (drawSurv: only in-view, cap 1500/800) so big
-  cities stay smooth. Konbini dot → per-store view (address/hours + chain allergen write-up + label
-  reader). Grocery dot → per-store research (Kyoto) OR chain-keyed GF/vegan KB (GROCERY const:
-  Seijo Ishii/Gyomu/KALDI/AEON-Topvalu/Life/natural-food/…) + label reader.
-- 🍱 100 Dishes (menupedia) — toolbar button → all 100 top dishes (ja/romaji/en + #shops + ★), tap →
-  full History+Culture reader with GF/vegan reality. ALL 100 readers authored.
-- 📚 Learn — in-app survival-Japanese flashcards (separate from the kana trainer).
-- 📷 Menu scanner + ingredient/label reader (Mistral Pixtral). ⚠ NEEDS Greg to set MISTRAL_API_KEY in
-  the fkti-dining-app Cloudflare project (Settings → Env vars) — until then scanners return wired:false.
-- DCP authoring tool (dcp-tool.html) — field-ready, with photo support; build-dcp.mjs renders notes.
+================================================================
+SESSION 2026-07-02 SUMMARY (what just shipped, all live on main / sw v88)
+- Menupedia deepened (36 research-backed readers) + 16-entry Foundations layer + variant notes + menu
+  cross-links. Diet strictness dials. Group/Leader mode. Station guide (6 stations) + a DE-SINGLE-SOURCE
+  pass that caught Vegewel false positives/mislocations (SuryaDev, Comeconoco, Ume no Hana, ONEEARTH) and
+  found missed spots (OKOSTA, Jūwari Soba, Men-ya Iroha, Marumo Kitchen). Food-near-me Tier-0 button.
+- HIMEJI as a full city (120 corridor places) via spot-himeji-workflow. HARVEST LESSON: the sweep hung on
+  1 of 190 agents; DON'T wait on a hang — stop the workflow (TaskStop) and harvest completed StructuredOutput
+  records from subagents/workflows/<runId>/agent-*.jsonl (parse for verify records: has found/category/
+  gf_confidence), write to data/_<city>_disc.json, then run build-spot.mjs.
+- Mobilized: repo on GitHub, Pages git-connected, deploy = push/merge. Root-caused the wrangler.toml secrets
+  gotcha and wired Mistral via `npm run secret`.
 
-RECOVERY LESSON: Workflow .output writes only at completion — a 0-byte .output ≠ stalled. Don't restart
-  a running sweep (lost tokens once). If a sweep dies, HARVEST completed results from the transcript
-  (subagents/workflows/<runId>/agent-*.jsonl, tool_use name==='StructuredOutput') instead of re-running.
+OPEN ITEMS / TODO
+- STATION PICKER (or an Osaka city) so shin_osaka (and future non-map stations) are reachable via 🚉.
+- Delete stale merged branches: feat-himeji, feat-food-near-me (local + origin).
+- TOKYO restaurant sweep — the big one (many stations/districts; token-heavy; with Greg + budget). Use the
+  spot-workflow pattern with small radii per district.
+- Food-near-me TIER 1 (authorized AI deep-dive → caches a neighborhood entry to data → free thereafter).
+- Tier-2 menupedia deepening (the ~40 dishes still on original short lore). More Foundations if wanted.
+- De-single-source pass could extend to the curated CITY data (not just stations).
+- Image hosting: move menu/owner/DCP images to URL-referenced static files (Pages /img or R2), NOT base64.
+- MOBILE_OPS.md / this file still reference a couple old bits — keep current.
 
-TODO — CHEAP (do anytime, local logic)
-- Learning app "Words" module (separate repo) when Greg sends lists.
-- More menupedia readers can be deepened by editing data/menupedia.json lore{} (no app change).
-- Per-store deep grocery GF research is the ONLY way to enrich non-Kyoto grocery (token-ish, optional).
-- UI polish; bug fixes (e.g., watch for diet false-positives like the past Oyaji-under-vegan issue).
-- Image-hosting: move menu/owner/DCP images to URL-referenced static files (Pages/R2), not base64.
-
-TODO — TOKEN-HEAVY (DEFER to budget reset / small mobile bites during the trip)
-- Restaurant sweeps for TOKYO (small radii), HIMEJI (castle↔station), TOBA Okage Yokochō near Ise.
-  Use gen-spot-workflow.mjs / build-spot.mjs / spot-configs.mjs (Haiku discover → Sonnet verify →
-  Opus safety-recheck of gf/vegan). These spin up many subagents — only with Greg present + budget.
-- Per-store grocery GF research across cities (multi-agent) — deferred.
-- Opus rechecks of existing ramen (e.g., GYUMON/Wagyu cleanup in Kyoto) — small, targeted only.
-
-GREG MUST DO: set MISTRAL_API_KEY on the fkti-dining-app Cloudflare project to light up the scanners.
+CONTINUITY: memory files at ~/.claude/projects/<this>/memory/ (MEMORY.md index + per-fact files) orient any
+fresh session — read them first. Key ones: menupedia-direction, diet-strictness-dials, station-survival-guide,
+food-near-me-feature, mobile-deploy-setup, no-single-source-gf-vegan, dining-here-what-can-i-do.
