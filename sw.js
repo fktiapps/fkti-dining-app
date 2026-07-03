@@ -1,5 +1,5 @@
 // Deeply Connected Dining — service worker. Bump VERSION to force an update.
-const VERSION = 'dcd-v102';
+const VERSION = 'dcd-v103';
 const SHELL = `shell-${VERSION}`;
 const DATA  = `data-${VERSION}`;
 const TILES = `tiles-${VERSION}`;
@@ -52,7 +52,7 @@ self.addEventListener('fetch', e => {
   if (/tile\.openstreetmap\.org|tile\.openstreetmap\.fr|basemaps\.cartocdn\.com|tiles\.stadiamaps\.com|api\.maptiler\.com/.test(url.hostname)) {
     e.respondWith(caches.open(TILES).then(async c => {
       const hit = await c.match(e.request); if (hit) return hit;
-      try { const res = await fetch(e.request); c.put(e.request, res.clone()); trimCache(TILES, MAXTILES); return res; }
+      try { const res = await fetch(e.request); if (res && res.ok && res.status === 200) { c.put(e.request, res.clone()); trimCache(TILES, MAXTILES); } return res; }
       catch(_) { return hit || Response.error(); }
     }));
     return;
