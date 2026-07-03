@@ -56,6 +56,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .chip.dial.on .dseg i.f{background:#fff}
 .pmkdot{display:flex;align-items:center;justify-content:center;border:2px solid #fff;border-radius:50%;font-size:11px;color:#fff;font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,.45)}
 .pmkdot.sel{border-color:#111;font-size:14px}
+.pmkdot.ring{border-color:#555;border-style:dashed}
 .dh-row{display:flex;gap:10px;align-items:flex-start;margin:9px 0}
 .dh-pill{flex:0 0 auto;background:var(--ver);color:#fff;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
 .dh-pill.off{background:var(--ink2);color:#cdd2e8;border:1px solid var(--line)}
@@ -430,7 +431,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
    <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">·</b>Not gluten-free</div>
    <div><span class="dot" style="background:var(--ver)"></span>You are here (drag me)</div>
   </div>
-  <p style="font-size:11.5px;color:var(--muted)">Pin <i>colour</i> is a secondary cue for cuisine category (vegan / GF / omnivore). Use the <b>🌾 GF</b> and <b>🌱 Vegan</b> pills as strictness dials — tap to relax one level at a time (long-press for the full guide).</p>
+  <p style="font-size:11.5px;color:var(--muted)">The <i>symbol, shape, and colour all say the same thing</i> — dark navy 🛡 → blue ✓ → amber ~ → hollow dashed ？ → small grey ·, safest to least. No red/green, so it reads without distinguishing hues. Pins follow whichever dial you're using — GF, or vegan (🌱) when that's the active dial. Tap the <b>🌾 GF</b> / <b>🌱 Vegan</b> pills to relax one level at a time (long-press for the full guide).</p>
   <div class="disclaimer">This app summarises public info and is decision support, not a safety guarantee. For a serious allergy or celiac disease, always confirm cross-contamination handling with staff at the restaurant. Hours change and some places need reservations or sell out early.</div>
   <button class="btn-card" id="refreshAppBtn">🔄 Refresh — get the latest version</button>
   <p style="font-size:10.5px;color:var(--muted);text-align:center;margin-top:6px">Version <span id="appVer">…</span> · the app also auto-updates each time you reopen it</p>
@@ -761,27 +762,48 @@ function initMap(){
  map.on('moveend',onMapMove);   // load whichever city the map reaches
  locate(true);
 }
-// Marker glyph encodes the GF tier as TEXT/SHAPE (color-blind legible), not just colour.
-const GF_GLYPH={dedicated:'🛡',high:'✓',options:'~',ask:'？',no:'·'};
-function placeIcon(p,sel){
- const g=GF_GLYPH[p.gf_confidence]||'·', c=CAT_COLORS[p.category]||'#8B4513', sz=sel?28:20;
- return L.divIcon({className:'pmk',html:'<div class="pmkdot'+(sel?' sel':'')+'" style="background:'+c+';width:'+sz+'px;height:'+sz+'px">'+g+'</div>',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+// Pin encodes the SAFETY TIER three redundant ways — glyph + shape + a colour-blind-safe
+// (blue→amber→grey, no red/green) fill — so it reads without distinguishing hues. It follows
+// whichever dial you're using (GF by default, vegan when the vegan dial is the active one).
+const TIER_VIZ={
+ dedicated:{g:'🛡',bg:'#08306B',fg:'#fff'},           // darkest + shield = safest
+ high:     {g:'✓',bg:'#2171B5',fg:'#fff'},
+ options:  {g:'~',bg:'#E08214',fg:'#fff'},            // amber = caution (CB-distinct from blue)
+ ask:      {g:'？',bg:'#ffffff',fg:'#333',ring:true}, // hollow/dashed = negotiate
+ no:       {g:'·',bg:'#C4C4C4',fg:'#fff',small:true}  // small grey = not GF
+};
+const VEG_VIZ={
+ full:   {g:'🌱',bg:'#08306B',fg:'#fff'},
+ options:{g:'🌱',bg:'#2171B5',fg:'#fff'},
+ limited:{g:'🌱',bg:'#E08214',fg:'#fff'},
+ ask:    {g:'？',bg:'#ffffff',fg:'#333',ring:true},
+ no:     {g:'·',bg:'#C4C4C4',fg:'#fff',small:true}
+};
+function activeAxis(){return state.filters.vegan>0 && !(state.filters.gf>0) ? 'vegan' : 'gf';}
+function placeIcon(p,sel,axis){
+ axis=axis||'gf';
+ const tier=axis==='vegan'?p.vegan_status:p.gf_confidence;
+ const V=(axis==='vegan'?VEG_VIZ:TIER_VIZ)[tier]||TIER_VIZ.no;
+ const sz=(V.small?14:20)+(sel?8:0);
+ const cls='pmkdot'+(sel?' sel':'')+(V.ring?' ring':'');
+ return L.divIcon({className:'pmk',html:'<div class="'+cls+'" style="background:'+V.bg+';color:'+V.fg+';width:'+sz+'px;height:'+sz+'px">'+V.g+'</div>',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
 }
 function drawMarkers(){
  Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={}; state._pById={};
+ const ax=activeAxis();
  (state.cities[state.active]?.places||[]).forEach(p=>{
   state._pById[p.id]=p;
-  const m=L.marker([p.lat,p.lng],{icon:placeIcon(p,false),keyboard:false});
+  const m=L.marker([p.lat,p.lng],{icon:placeIcon(p,false,ax),keyboard:false});
   m.on('click',()=>selectPlace(p.id)); m.addTo(map); state.markers[p.id]=m;
  });
 }
 function syncMarkers(vis){
- const set=new Set(vis.map(p=>p.id));
+ const set=new Set(vis.map(p=>p.id)), ax=activeAxis();
  for(const [id,m] of Object.entries(state.markers)){
   const on=set.has(id);
   m.setOpacity(on?1:0);
   const el=m.getElement(); if(el){el.style.pointerEvents=on?'auto':'none';el.style.zIndex=id===state.selected?'1000':'';}
-  if(on){const p=state._pById[id]; if(p) m.setIcon(placeIcon(p, id===state.selected));}
+  if(on){const p=state._pById[id]; if(p) m.setIcon(placeIcon(p, id===state.selected, ax));}
  }
 }
 // ---------- 🏪🛒 survival layers (konbini + grocery) ----------
