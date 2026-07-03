@@ -54,6 +54,8 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .chip.dial .dseg{display:inline-flex;gap:3px;align-items:center}
 .chip.dial .dseg i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4);display:inline-block}
 .chip.dial.on .dseg i.f{background:#fff}
+.pmkdot{display:flex;align-items:center;justify-content:center;border:2px solid #fff;border-radius:50%;font-size:11px;color:#fff;font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,.45)}
+.pmkdot.sel{border-color:#111;font-size:14px}
 .dh-row{display:flex;gap:10px;align-items:flex-start;margin:9px 0}
 .dh-pill{flex:0 0 auto;background:var(--ver);color:#fff;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
 .dh-pill.off{background:var(--ink2);color:#cdd2e8;border:1px solid var(--line)}
@@ -419,16 +421,16 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  <div class="box">
   <button class="closex" id="infoClose">×</button>
   <h2>How to read this</h2>
-  <p><b>Dot colour = category.</b> Tap any dot for details. Drag the vermilion <b>“you are here”</b> pin to scout another area; tap ◎ to snap back to your location.</p>
+  <p><b>Each pin shows a symbol = gluten-free safety</b>, readable without telling colours apart. Tap any pin for details. Drag the vermilion <b>“you are here”</b> pin to scout another area; tap ◎ to snap back.</p>
   <div class="legend">
-   <div><span class="dot" style="background:var(--c-BOTH)"></span>Dedicated vegan + GF</div>
-   <div><span class="dot" style="background:var(--c-GF)"></span>Dedicated gluten-free</div>
-   <div><span class="dot" style="background:var(--c-VEGAN)"></span>Fully vegan</div>
-   <div><span class="dot" style="background:var(--c-SHOJIN)"></span>Shojin (Buddhist vegan)</div>
-   <div><span class="dot" style="background:var(--c-OMNI)"></span>Omnivore · both options</div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">🛡</b>Dedicated — celiac-safe kitchen (no gluten in the building)</div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">✓</b>Fully gluten-free (wheat-free kitchen, own word)</div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">~</b>GF options · shared kitchen — confirm prep</div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">？</b>Ask — no GF menu, but a safe meal is negotiable</div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">·</b>Not gluten-free</div>
    <div><span class="dot" style="background:var(--ver)"></span>You are here (drag me)</div>
   </div>
-  <p><b>Gluten-free badge</b> shows confidence: <b style="color:var(--safe)">Dedicated/celiac-safe</b> → separate or fully-GF kitchen · <b style="color:var(--caution)">Options</b> → GF dishes but a shared kitchen · <b style="color:var(--unknown)">Ask</b> → unverified. Use the <b>🌾 GF</b> and <b>🌱 Vegan</b> pills as strictness dials — tap to adjust how cautious you want to be, long-press for a guide.</p>
+  <p style="font-size:11.5px;color:var(--muted)">Pin <i>colour</i> is a secondary cue for cuisine category (vegan / GF / omnivore). Use the <b>🌾 GF</b> and <b>🌱 Vegan</b> pills as strictness dials — tap to relax one level at a time (long-press for the full guide).</p>
   <div class="disclaimer">This app summarises public info and is decision support, not a safety guarantee. For a serious allergy or celiac disease, always confirm cross-contamination handling with staff at the restaurant. Hours change and some places need reservations or sell out early.</div>
   <button class="btn-card" id="refreshAppBtn">🔄 Refresh — get the latest version</button>
   <p style="font-size:10.5px;color:var(--muted);text-align:center;margin-top:6px">Version <span id="appVer">…</span> · the app also auto-updates each time you reopen it</p>
@@ -440,15 +442,18 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  <div class="box">
   <button class="closex" id="dietClose">×</button>
   <h2>Your diet, your dial</h2>
-  <p style="font-size:12.5px;color:var(--muted);line-height:1.55">Tap the <b>🌱 Vegan</b> or <b>🌾 GF</b> pill to choose <i>how strict</i> you want to be — because some days it's "I can't risk a crumb," and some days it's "just give me rice while you eat your steak." Each tap relaxes one level and shows more places; the dots (●○○) show where you are. Tap past the last level to switch it off. Long-press a pill anytime to reopen this guide.</p>
-  <h3 id="dh-gf" style="color:var(--ver);margin:14px 0 4px">🌾 Gluten-free</h3>
-  <div class="dh-row"><span class="dh-pill">🛡 Celiac-safe ●○○</span><div><b>Strictest.</b> Only dedicated or separate-kitchen places — for "a particle on a shared spatula ruins three days." Cross-contamination handled.</div></div>
-  <div class="dh-row"><span class="dh-pill">🌾 GF options ●●○</span><div>Adds places with real gluten-free dishes but a <b>shared kitchen</b>. Good when you'll ask the cook to wipe the board and accept some risk.</div></div>
-  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●</span><div><b>Survival mode.</b> Shows everywhere plus turns on the 🏪 konbini &amp; 🛒 grocery layers — for "just get me a safe bite until the next store."</div></div>
+  <p style="font-size:12.5px;color:var(--muted);line-height:1.55">Tap the <b>🌱 Vegan</b> or <b>🌾 GF</b> pill to choose <i>how strict</i> you want to be — each tap relaxes one level and shows more places; the dots (●●●●●) show where you are. Tap past the last level to switch it off. Long-press a pill to reopen this guide.</p>
+  <h3 id="dh-gf" style="color:var(--ver);margin:14px 0 4px">🌾 Gluten-free — five levels, matching the pins</h3>
+  <div class="dh-row"><span class="dh-pill">🛡 Dedicated ●○○○○</span><div><b>Strictest.</b> No gluten in the building, corroborated — for "a particle on a shared spatula ruins three days."</div></div>
+  <div class="dh-row"><span class="dh-pill">✓ Fully-GF ●●○○○</span><div>Adds wheat-free kitchens on the venue's <b>own word</b> (thinner corroboration than dedicated).</div></div>
+  <div class="dh-row"><span class="dh-pill">~ GF options ●●●○○</span><div>Adds real gluten-free dishes but a <b>shared kitchen</b> — confirm ingredients and prep.</div></div>
+  <div class="dh-row"><span class="dh-pill">？ Ask ●●●●○</span><div>Adds places with no GF menu where <b>a safe meal is negotiable</b> (jūwari soba boiled in a clean pot). <b>Bring a Japanese speaker</b> — negotiating a celiac protocol isn't a translation-app job.</div></div>
+  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●●●</span><div><b>Survival mode.</b> Shows everywhere plus the 🏪 konbini &amp; 🛒 grocery layers — "just get me a safe bite until the next store."</div></div>
   <h3 id="dh-vegan" style="color:var(--ver);margin:16px 0 4px">🌱 Vegan</h3>
-  <div class="dh-row"><span class="dh-pill">🌱 Plant-based ●○○</span><div><b>Strictest.</b> Fully plant-based places (incl. shōjin temple food) — "the only animal in the building is the cat in the corner."</div></div>
-  <div class="dh-row"><span class="dh-pill">🌱 Vegan options ●●○</span><div>Adds omnivore places with solid vegan dishes — "I'll eat my plants while you have yours." Still <b>ask whether the dashi is bonito</b>.</div></div>
-  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●</span><div><b>Survival mode.</b> Everywhere plus the konbini &amp; grocery layers — rice, pickles, and plant snacks to tide you over.</div></div>
+  <div class="dh-row"><span class="dh-pill">🌱 Fully plant-based ●○○○○</span><div><b>Strictest.</b> Fully plant-based (incl. shōjin temple food) — "the only animal in the building is the cat in the corner."</div></div>
+  <div class="dh-row"><span class="dh-pill">🌱 +Options ●●●○○</span><div>Adds omnivore places with solid vegan dishes — still <b>ask whether the dashi is bonito</b>.</div></div>
+  <div class="dh-row"><span class="dh-pill">🌱 +Ask ●●●●○</span><div>Adds places where a vegan plate is negotiable — "please hold the bonito dashi."</div></div>
+  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●●●</span><div><b>Survival mode.</b> Everywhere plus the konbini &amp; grocery layers.</div></div>
   <p style="margin-top:14px" class="disclaimer">Even the strictest tier is decision support, not a guarantee — always confirm cross-contamination (and, for vegans, bonito dashi) with the staff.</p>
  </div>
 </div>
@@ -718,13 +723,14 @@ function visiblePlaces(){
  const f=state.filters; const all=state.cities[state.active]?.places||[];
  let r=all.filter(p=>{
   const gfL=f.gf||0, vgL=f.vegan||0;
-  // GF dial: 1=celiac-safe (dedicated/high), 2=+GF options, 3=just-need-rice (no restaurant filter; survival layers on)
-  if(gfL===1 && !['dedicated','high'].includes(p.gf_confidence)) return false;
-  if(gfL===2 && !['dedicated','high','options'].includes(p.gf_confidence)) return false;
-  // Vegan dial: 1=fully plant-based, 2=+vegan options, 3=just-need-rice
+  // GF dial (1:1 with the tiers): 1=Dedicated only · 2=+Fully-GF(high) · 3=+Options · 4=+Ask(negotiable) · 5=Need rice (all + survival). 'no' shows only at 5.
+  const GF=[null,['dedicated'],['dedicated','high'],['dedicated','high','options'],['dedicated','high','options','ask']];
+  if(gfL>=1 && gfL<=4 && !GF[gfL].includes(p.gf_confidence)) return false;
+  // Vegan dial: 1=Full · 2=+Options · 3=+Limited · 4=+Ask · 5=all
   const fullVeg = p.vegan_status==='full' || ['VEGAN','SHOJIN'].includes(p.category);
+  const VG=[null,null,['options'],['options','limited'],['options','limited','ask']];
   if(vgL===1 && !fullVeg) return false;
-  if(vgL===2 && !(fullVeg || ['options','limited'].includes(p.vegan_status))) return false;
+  if(vgL>=2 && vgL<=4 && !(fullVeg || VG[vgL].includes(p.vegan_status))) return false;
   if(f.pills.has('ramen') && p.cuisine_type!=='ramen') return false;
   if(f.pills.has('mompop') && p.category!=='MOM_AND_POP') return false;
   if(f.cats.size && !f.cats.has(p.category)) return false;
@@ -755,18 +761,27 @@ function initMap(){
  map.on('moveend',onMapMove);   // load whichever city the map reaches
  locate(true);
 }
+// Marker glyph encodes the GF tier as TEXT/SHAPE (color-blind legible), not just colour.
+const GF_GLYPH={dedicated:'🛡',high:'✓',options:'~',ask:'？',no:'·'};
+function placeIcon(p,sel){
+ const g=GF_GLYPH[p.gf_confidence]||'·', c=CAT_COLORS[p.category]||'#8B4513', sz=sel?28:20;
+ return L.divIcon({className:'pmk',html:'<div class="pmkdot'+(sel?' sel':'')+'" style="background:'+c+';width:'+sz+'px;height:'+sz+'px">'+g+'</div>',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+}
 function drawMarkers(){
- Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={};
+ Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={}; state._pById={};
  (state.cities[state.active]?.places||[]).forEach(p=>{
-  const m=L.circleMarker([p.lat,p.lng],{radius:7,weight:2,color:'#fff',fillColor:CAT_COLORS[p.category],fillOpacity:.95});
+  state._pById[p.id]=p;
+  const m=L.marker([p.lat,p.lng],{icon:placeIcon(p,false),keyboard:false});
   m.on('click',()=>selectPlace(p.id)); m.addTo(map); state.markers[p.id]=m;
  });
 }
 function syncMarkers(vis){
  const set=new Set(vis.map(p=>p.id));
  for(const [id,m] of Object.entries(state.markers)){
-  const on=set.has(id); m.setStyle({fillOpacity:on?.95:0,opacity:on?1:0});
-  if(!on) m.setStyle({radius:0}); else m.setStyle({radius: id===state.selected?10:7});
+  const on=set.has(id);
+  m.setOpacity(on?1:0);
+  const el=m.getElement(); if(el){el.style.pointerEvents=on?'auto':'none';el.style.zIndex=id===state.selected?'1000':'';}
+  if(on){const p=state._pById[id]; if(p) m.setIcon(placeIcon(p, id===state.selected));}
  }
 }
 // ---------- 🏪🛒 survival layers (konbini + grocery) ----------
@@ -1747,9 +1762,9 @@ function pushFilteredState(){
 
 // ---------- 👥 Group / Leader mode (walkable clusters that feed a mixed group) ----------
 function grpQual(p,kind,lvl){
- if(kind==='gf'){ if(lvl===1)return ['dedicated','high'].includes(p.gf_confidence); if(lvl===2)return ['dedicated','high','options'].includes(p.gf_confidence); return true; }
+ if(kind==='gf'){const GF=[null,['dedicated'],['dedicated','high'],['dedicated','high','options'],['dedicated','high','options','ask']];return lvl>=5?true:GF[lvl].includes(p.gf_confidence);}
  const full=p.vegan_status==='full'||['VEGAN','SHOJIN'].includes(p.category);
- if(lvl===1)return full; if(lvl===2)return full||['options','limited'].includes(p.vegan_status); return true;
+ if(lvl===1)return full; if(lvl>=5)return true; const VG=[null,null,['options'],['options','limited'],['options','limited','ask']];return full||VG[lvl].includes(p.vegan_status);
 }
 function computeZones(){
  const g=state.group, all=state.cities[state.active]?.places||[], r=g.radius;
@@ -1801,8 +1816,8 @@ function openGroup(){const m=document.getElementById('groupModal');if(m)m.classL
 function runGroup(){state.groupActive=true;const gp=document.getElementById('groupPill');if(gp)gp.classList.add('on');if(typeof showList==='function')showList();render();}
 function exitGroup(){state.groupActive=false;const gp=document.getElementById('groupPill');if(gp)gp.classList.remove('on');if(groupLayer){map.removeLayer(groupLayer);groupLayer=null;}render();}
 // ---------- diet dials (3-rung strictness) ----------
-function dialName(kind,lvl){const N={gf:['🌾 GF','🛡 Celiac-safe','🌾 GF options','🍚 Need rice'],vegan:['🌱 Vegan','🌱 Plant-based','🌱 Vegan options','🍚 Need rice']};return N[kind][lvl];}
-function syncDialUI(kind){const lvl=state.filters[kind]||0;const b=document.getElementById(kind==='gf'?'dialGf':'dialVegan');if(!b)return;b.classList.toggle('on',lvl>0);const dl=b.querySelector('.dl');if(dl)dl.textContent=dialName(kind,lvl);const seg=b.querySelector('.dseg');if(seg)seg.innerHTML=lvl>0?[1,2,3].map(i=>'<i class="'+(i<=lvl?'f':'')+'"></i>').join(''):'';}
+function dialName(kind,lvl){const N={gf:['🌾 GF','🛡 Dedicated','✓ Fully-GF','~ GF options','？ Ask · negotiate','🍚 Need rice'],vegan:['🌱 Vegan','🌱 Fully plant-based','🌱 +Options','🌱 +Limited','🌱 +Ask','🍚 Need rice']};return N[kind][lvl];}
+function syncDialUI(kind){const lvl=state.filters[kind]||0;const b=document.getElementById(kind==='gf'?'dialGf':'dialVegan');if(!b)return;b.classList.toggle('on',lvl>0);const dl=b.querySelector('.dl');if(dl)dl.textContent=dialName(kind,lvl);const seg=b.querySelector('.dseg');if(seg)seg.innerHTML=lvl>0?[1,2,3,4,5].map(i=>'<i class="'+(i<=lvl?'f':'')+'"></i>').join(''):'';}
 function ensureSurvOn(kind){try{if(typeof survLayer!=='undefined' && !survLayer[kind]){const fab=document.getElementById(kind==='konbini'?'konbiniFab':'groceryFab');toggleSurv(kind,fab);}}catch(e){}}
 function openDietHelp(kind){const m=document.getElementById('dietModal');if(!m)return;m.classList.add('show');const dc=document.getElementById('dietClose');if(dc)dc.onclick=()=>m.classList.remove('show');m.onclick=e=>{if(e.target.id==='dietModal')m.classList.remove('show');};const t=document.getElementById(kind==='gf'?'dh-gf':'dh-vegan');if(t&&t.scrollIntoView)setTimeout(()=>{try{t.scrollIntoView({block:'start'});}catch(e){}},60);}
 function addLongPress(el,onTap,onLong){if(!el)return;let timer=null,longed=false,sx=0,sy=0,mv=false;
@@ -1815,7 +1830,7 @@ function wire(){
  document.querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{const k=b.dataset.toggle;state.filters[k]=!state.filters[k];b.classList.toggle('on',state.filters[k]);pushFilteredState();render();});
  function syncPills(){const s=state.filters.pills;const none=s.size===0&&!state.filters.gf&&!state.filters.vegan;document.querySelectorAll('[data-pill]').forEach(b=>{const v=b.dataset.pill;b.classList.toggle('on',v==='all'?none:s.has(v));});const _bb=document.getElementById('bowlBtn');if(_bb)_bb.style.display=s.has('ramen')?'':'none';}
  document.querySelectorAll('[data-pill]').forEach(b=>b.onclick=()=>{if(state.groupActive)exitGroup();const v=b.dataset.pill,s=state.filters.pills;if(v==='all'){s.clear();state.filters.gf=0;state.filters.vegan=0;syncDialUI('gf');syncDialUI('vegan');}else{s.has(v)?s.delete(v):s.add(v);}syncPills();if(s.size)pushFilteredState();render();});
- function cycleDial(kind){if(state.groupActive)exitGroup();state.filters[kind]=((state.filters[kind]||0)+1)%4;syncDialUI(kind);syncPills();if(state.filters[kind]===3){ensureSurvOn('konbini');ensureSurvOn('grocery');}pushFilteredState();render();}
+ function cycleDial(kind){if(state.groupActive)exitGroup();state.filters[kind]=((state.filters[kind]||0)+1)%6;syncDialUI(kind);syncPills();if(state.filters[kind]===5){ensureSurvOn('konbini');ensureSurvOn('grocery');}pushFilteredState();render();}
  addLongPress(document.getElementById('dialGf'),()=>cycleDial('gf'),()=>openDietHelp('gf'));
  addLongPress(document.getElementById('dialVegan'),()=>cycleDial('vegan'),()=>openDietHelp('vegan'));
  syncDialUI('gf');syncDialUI('vegan');

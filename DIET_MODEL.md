@@ -25,6 +25,19 @@ Diet safety lives ONLY in two fields. Everything else is derived (never stored �
   fixes it; best case is watching them scoop plain rice. Survival only.
 `ask` ≠ `no`: `ask` is a *different kind of place* (a meal is achievable), not merely "less sure."
 
+### Rate the FOOD path, not the building (the beer rule)
+Gluten that exists only as **beer / alcohol the diner won't drink** is not a food-safety problem for
+a non-drinking child. It is NOT airborne (unlike flour) and never enters food prep. So:
+- Barley beer on premises **caps a place at `high`** (it can't be `dedicated`, since `dedicated`
+  means *zero gluten in the building*) — but it does **NOT** push a genuinely wheat-free *food*
+  kitchen down to `options`/`ask`. `high` is still inside the Celiac-safe notch, so the kid still
+  sees it.
+- The only residual is trace transfer via shared glassware/dishwashing → surface a note ("serves
+  beer; ask for a clean glass or drink bottled"), not a downgrade.
+- Downgrade below `high` only for gluten in the **food path**: wheat in the kitchen/fryer/sauces/
+  shared cookware, a default-wheat item (e.g. the standard bun), a wheat-using parent kitchen, or a
+  documented glutening. (All four of the 2026-07-03 Priority-1 downgrades met *this* bar, not beer.)
+
 ## `category` IS RETIRED
 Its only non-diet job was venue vibe. Replace with:
 - `mom_and_pop: true|false` (a plain flag; preserves the 🏮 pill).
