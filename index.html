@@ -768,7 +768,7 @@ function initMap(){
 const TIER_VIZ={
  dedicated:{g:'🛡',bg:'#08306B',fg:'#fff'},           // darkest + shield = safest
  high:     {g:'✓',bg:'#2171B5',fg:'#fff'},
- options:  {g:'◐',bg:'#E08214',fg:'#fff'},            // amber half-circle = partial/some
+ options:  {g:'◐',bg:'#E08214',fg:'#fff'},            // amber = caution (CB-distinct from blue)
  ask:      {g:'◇',bg:'#ffffff',fg:'#333',ring:true}, // hollow/dashed = negotiate
  no:       {g:'·',bg:'#C4C4C4',fg:'#fff',small:true}  // small grey = not GF
 };
@@ -932,11 +932,11 @@ const LEARN={
   {ja:'メニューをください',kana:'メニューをください',rj:'menyū o kudasai',en:'Menu, please',note:''},
   {ja:'お会計お願いします',kana:'おかいけいおねがいします',rj:'okaikei onegai shimasu',en:'The check, please',note:'Or okanjō onegai shimasu.'},
   {ja:'一人です',kana:'ひとりです',rj:'hitori desu',en:'One person',note:'二人 (futari) = two people.'},
-  {ja:'これは何ですか◇',kana:'これはなんですか',rj:'kore wa nan desu ka?',en:'What is this?',note:'Point at a dish or menu line.'},
-  {ja:'おすすめは何ですか◇',kana:'おすすめはなんですか',rj:'osusume wa nan desu ka?',en:'What do you recommend?',note:''},
+  {ja:'これは何ですか？',kana:'これはなんですか',rj:'kore wa nan desu ka?',en:'What is this?',note:'Point at a dish or menu line.'},
+  {ja:'おすすめは何ですか？',kana:'おすすめはなんですか',rj:'osusume wa nan desu ka?',en:'What do you recommend?',note:''},
   {ja:'お邪魔します',kana:'おじゃまします',rj:'ojama shimasu',en:'Pardon the intrusion',note:'Humble — say it entering a small, local, non-tourist shop.'},
   {ja:'失礼しますが…',kana:'しつれいしますが',rj:'shitsurei shimasu ga…',en:'Excuse me, but…',note:'Softens a request before you ask it. Polite all-purpose.'},
-  {ja:'いいですか◇',kana:'いいですか',rj:'ii desu ka?',en:'Is it okay? / May I?',note:'Suwatte mo ii desu ka? = May I sit here?'},
+  {ja:'いいですか？',kana:'いいですか',rj:'ii desu ka?',en:'Is it okay? / May I?',note:'Suwatte mo ii desu ka? = May I sit here?'},
   {ja:'いただきます',kana:'いただきます',rj:'itadakimasu',en:'I gratefully receive',note:'Said before eating.'},
   {ja:'ごちそうさまでした',kana:'ごちそうさまでした',rj:'gochisōsama deshita',en:'Thank you for the meal',note:'Said on leaving — shows real respect.'},
  ]},
@@ -955,10 +955,10 @@ const LEARN={
   {ja:'グルテンアレルギーがあります',kana:'グルテンアレルギーがあります',rj:'guruten arerugī ga arimasu',en:'I have a gluten allergy',note:''},
   {ja:'セリアック病です',kana:'セリアックびょうです',rj:'seriakku-byō desu',en:'I have celiac disease',note:''},
   {ja:'小麦・大麦・ライ麦が食べられません',kana:'こむぎ・おおむぎ・ライむぎがたべられません',rj:'komugi, ōmugi, raimugi ga taberaremasen',en:"I can't eat wheat, barley, or rye",note:''},
-  {ja:'醤油に小麦は入っていますか◇',kana:'しょうゆにこむぎははいっていますか',rj:'shōyu ni komugi wa haitte imasu ka?',en:'Does the soy sauce contain wheat?',note:''},
-  {ja:'同じ油で揚げていますか◇',kana:'おなじあぶらであげていますか',rj:'onaji abura de agete imasu ka?',en:'Is it fried in the same oil?',note:'The shared-fryer question.'},
+  {ja:'醤油に小麦は入っていますか？',kana:'しょうゆにこむぎははいっていますか',rj:'shōyu ni komugi wa haitte imasu ka?',en:'Does the soy sauce contain wheat?',note:''},
+  {ja:'同じ油で揚げていますか？',kana:'おなじあぶらであげていますか',rj:'onaji abura de agete imasu ka?',en:'Is it fried in the same oil?',note:'The shared-fryer question.'},
   {ja:'少量でも体調が悪くなります',kana:'しょうりょうでもたいちょうがわるくなります',rj:'shōryō demo taichō ga waruku narimasu',en:'Even a small amount makes me ill',note:'Conveys that this is serious, not a preference.'},
-  {ja:'調理の前に調理場と器具をきれいにしていただけますか◇',kana:'ちょうりのまえにちょうりばときぐをきれいにしていただけますか',rj:'chōri no mae ni chōriba to kigu o kirei ni shite itadakemasu ka?',en:'Before cooking, could you clean the area and utensils?',note:'The cross-contamination request — very polite.'},
+  {ja:'調理の前に調理場と器具をきれいにしていただけますか？',kana:'ちょうりのまえにちょうりばときぐをきれいにしていただけますか',rj:'chōri no mae ni chōriba to kigu o kirei ni shite itadakemasu ka?',en:'Before cooking, could you clean the area and utensils?',note:'The cross-contamination request — very polite.'},
  ]},
  vegan:{label:'🌱 Vegan',cards:[
   {ja:'肉',kana:'にく',rj:'niku',en:'meat',note:''},
@@ -977,9 +977,9 @@ const LEARN={
   {ja:'野菜',kana:'やさい',rj:'yasai',en:'vegetables',note:''},
   {ja:'ヴィーガンです',kana:'ヴィーガンです',rj:'vīgan desu',en:"I'm vegan",note:'Also: 完全菜食 (kanzen saishoku).'},
   {ja:'肉・魚・卵・乳製品は食べません',kana:'にく・さかな・たまご・にゅうせいひんはたべません',rj:'niku, sakana, tamago, nyūseihin wa tabemasen',en:"I don't eat meat, fish, egg, or dairy",note:''},
-  {ja:'だしは魚を使っていますか◇',kana:'だしはさかなをつかっていますか',rj:'dashi wa sakana o tsukatte imasu ka?',en:'Does the stock use fish?',note:'The key vegan question in Japan.'},
-  {ja:'動物性の材料は入っていますか◇',kana:'どうぶつせいのざいりょうははいっていますか',rj:'dōbutsusei no zairyō wa haitte imasu ka?',en:'Does it contain any animal ingredients?',note:''},
-  {ja:'野菜だけの料理はありますか◇',kana:'やさいだけのりょうりはありますか',rj:'yasai dake no ryōri wa arimasu ka?',en:'Are there vegetable-only dishes?',note:''},
+  {ja:'だしは魚を使っていますか？',kana:'だしはさかなをつかっていますか',rj:'dashi wa sakana o tsukatte imasu ka?',en:'Does the stock use fish?',note:'The key vegan question in Japan.'},
+  {ja:'動物性の材料は入っていますか？',kana:'どうぶつせいのざいりょうははいっていますか',rj:'dōbutsusei no zairyō wa haitte imasu ka?',en:'Does it contain any animal ingredients?',note:''},
+  {ja:'野菜だけの料理はありますか？',kana:'やさいだけのりょうりはありますか',rj:'yasai dake no ryōri wa arimasu ka?',en:'Are there vegetable-only dishes?',note:''},
  ]},
 };
 let _lc='general', _li=0, _lflip=false, _lorder=[];
@@ -1481,16 +1481,16 @@ function renderMenuScan(j,thumb){
 }
 function renderQuestionsFallback(){
  const qs=[
-  {en:'Does this contain wheat or barley? (gluten)',ja:'これに小麦や大麦は入っていますか◇',rj:'Kore ni komugi ya ōmugi wa haitte imasu ka?',
-   furi:[['これに',''],['小麦','こむぎ'],['や',''],['大麦','おおむぎ'],['は',''],['入','はい'],['っていますか◇','']]},
-  {en:'Is the soy sauce wheat-free?',ja:'お醤油は小麦不使用ですか◇',rj:'O-shōyu wa komugi fushiyō desu ka?',
-   furi:[['お',''],['醤油','しょうゆ'],['は',''],['小麦','こむぎ'],['不使用','ふしよう'],['ですか◇','']]},
-  {en:'Is the dashi (stock) made with fish or bonito?',ja:'出汁は魚や鰹でとっていますか◇',rj:'Dashi wa sakana ya katsuo de totte imasu ka?',
-   furi:[['出汁','だし'],['は',''],['魚','さかな'],['や',''],['鰹','かつお'],['でとっていますか◇','']]},
-  {en:'Can this be made without meat, fish, egg, or dairy?',ja:'お肉・魚・卵・乳なしで作れますか◇',rj:'O-niku, sakana, tamago, nyū nashi de tsukuremasu ka?',
-   furi:[['お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['なしで',''],['作','つく'],['れますか◇','']]},
-  {en:'Is the fryer shared with breaded or meat items?',ja:'揚げ油は他の物と共有ですか◇',rj:'Ageabura wa hoka no mono to kyōyū desu ka?',
-   furi:[['揚','あ'],['げ',''],['油','あぶら'],['は',''],['他','ほか'],['の',''],['物','もの'],['と',''],['共有','きょうゆう'],['ですか◇','']]}
+  {en:'Does this contain wheat or barley? (gluten)',ja:'これに小麦や大麦は入っていますか？',rj:'Kore ni komugi ya ōmugi wa haitte imasu ka?',
+   furi:[['これに',''],['小麦','こむぎ'],['や',''],['大麦','おおむぎ'],['は',''],['入','はい'],['っていますか？','']]},
+  {en:'Is the soy sauce wheat-free?',ja:'お醤油は小麦不使用ですか？',rj:'O-shōyu wa komugi fushiyō desu ka?',
+   furi:[['お',''],['醤油','しょうゆ'],['は',''],['小麦','こむぎ'],['不使用','ふしよう'],['ですか？','']]},
+  {en:'Is the dashi (stock) made with fish or bonito?',ja:'出汁は魚や鰹でとっていますか？',rj:'Dashi wa sakana ya katsuo de totte imasu ka?',
+   furi:[['出汁','だし'],['は',''],['魚','さかな'],['や',''],['鰹','かつお'],['でとっていますか？','']]},
+  {en:'Can this be made without meat, fish, egg, or dairy?',ja:'お肉・魚・卵・乳なしで作れますか？',rj:'O-niku, sakana, tamago, nyū nashi de tsukuremasu ka?',
+   furi:[['お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['なしで',''],['作','つく'],['れますか？','']]},
+  {en:'Is the fryer shared with breaded or meat items?',ja:'揚げ油は他の物と共有ですか？',rj:'Ageabura wa hoka no mono to kyōyū desu ka?',
+   furi:[['揚','あ'],['げ',''],['油','あぶら'],['は',''],['他','ほか'],['の',''],['物','もの'],['と',''],['共有','きょうゆう'],['ですか？','']]}
  ];
  return `<div class="scan-sec scan-q"><b>🗣 Questions to ask before you order</b><ul>${qs.map(qLine).join('')}</ul></div>`;
 }
@@ -1499,19 +1499,19 @@ function renderQuestionsFallback(){
 const GLOSSARY=[
  {title:'🌾 Gluten-free',items:[
   {en:"I can't eat wheat or gluten.",ja:'小麦・グルテンが食べられません。',rj:'Komugi / guruten ga taberaremasen.',furi:[['小麦','こむぎ'],['・グルテンが',''],['食','た'],['べられません。','']]},
-  {en:'Does this contain wheat or barley?',ja:'これに小麦や大麦は入っていますか◇',rj:'Kore ni komugi ya ōmugi wa haitte imasu ka?',furi:[['これに',''],['小麦','こむぎ'],['や',''],['大麦','おおむぎ'],['は',''],['入','はい'],['っていますか◇','']]},
-  {en:'Is the soy sauce wheat-free?',ja:'お醤油は小麦不使用ですか◇',rj:'O-shōyu wa komugi fushiyō desu ka?',furi:[['お',''],['醤油','しょうゆ'],['は',''],['小麦','こむぎ'],['不使用','ふしよう'],['ですか◇','']]},
-  {en:'Is the fryer shared with breaded items?',ja:'揚げ油は他の物と共有ですか◇',rj:'Ageabura wa hoka no mono to kyōyū desu ka?',furi:[['揚','あ'],['げ',''],['油','あぶら'],['は',''],['他','ほか'],['の',''],['物','もの'],['と',''],['共有','きょうゆう'],['ですか◇','']]}
+  {en:'Does this contain wheat or barley?',ja:'これに小麦や大麦は入っていますか？',rj:'Kore ni komugi ya ōmugi wa haitte imasu ka?',furi:[['これに',''],['小麦','こむぎ'],['や',''],['大麦','おおむぎ'],['は',''],['入','はい'],['っていますか？','']]},
+  {en:'Is the soy sauce wheat-free?',ja:'お醤油は小麦不使用ですか？',rj:'O-shōyu wa komugi fushiyō desu ka?',furi:[['お',''],['醤油','しょうゆ'],['は',''],['小麦','こむぎ'],['不使用','ふしよう'],['ですか？','']]},
+  {en:'Is the fryer shared with breaded items?',ja:'揚げ油は他の物と共有ですか？',rj:'Ageabura wa hoka no mono to kyōyū desu ka?',furi:[['揚','あ'],['げ',''],['油','あぶら'],['は',''],['他','ほか'],['の',''],['物','もの'],['と',''],['共有','きょうゆう'],['ですか？','']]}
  ]},
  {title:'🌱 Vegan',items:[
   {en:"I'm vegan — no meat, fish, egg, or dairy.",ja:'ヴィーガンです。お肉・魚・卵・乳は食べません。',rj:'Vīgan desu. O-niku, sakana, tamago, nyū wa tabemasen.',furi:[['ヴィーガンです。お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['は',''],['食','た'],['べません。','']]},
-  {en:'Is the dashi made from fish or bonito?',ja:'出汁は魚や鰹でとっていますか◇',rj:'Dashi wa sakana ya katsuo de totte imasu ka?',furi:[['出汁','だし'],['は',''],['魚','さかな'],['や',''],['鰹','かつお'],['でとっていますか◇','']]},
-  {en:'Can this be made without meat, fish, egg, or dairy?',ja:'お肉・魚・卵・乳なしで作れますか◇',rj:'O-niku, sakana, tamago, nyū nashi de tsukuremasu ka?',furi:[['お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['なしで',''],['作','つく'],['れますか◇','']]},
-  {en:'Does this have fish stock or bonito flakes?',ja:'魚の出汁やかつお節は入っていますか◇',rj:'Sakana no dashi ya katsuobushi wa haitte imasu ka?',furi:[['魚','さかな'],['の',''],['出汁','だし'],['やかつお',''],['節','ぶし'],['は',''],['入','はい'],['っていますか◇','']]}
+  {en:'Is the dashi made from fish or bonito?',ja:'出汁は魚や鰹でとっていますか？',rj:'Dashi wa sakana ya katsuo de totte imasu ka?',furi:[['出汁','だし'],['は',''],['魚','さかな'],['や',''],['鰹','かつお'],['でとっていますか？','']]},
+  {en:'Can this be made without meat, fish, egg, or dairy?',ja:'お肉・魚・卵・乳なしで作れますか？',rj:'O-niku, sakana, tamago, nyū nashi de tsukuremasu ka?',furi:[['お',''],['肉','にく'],['・',''],['魚','さかな'],['・',''],['卵','たまご'],['・',''],['乳','にゅう'],['なしで',''],['作','つく'],['れますか？','']]},
+  {en:'Does this have fish stock or bonito flakes?',ja:'魚の出汁やかつお節は入っていますか？',rj:'Sakana no dashi ya katsuobushi wa haitte imasu ka?',furi:[['魚','さかな'],['の',''],['出汁','だし'],['やかつお',''],['節','ぶし'],['は',''],['入','はい'],['っていますか？','']]}
  ]},
  {title:'🙏 Courtesy & general',items:[
   {en:'This is for medical reasons.',ja:'医療上の理由です。',rj:'Iryōjō no riyū desu.',furi:[['医療','いりょう'],['上','じょう'],['の',''],['理由','りゆう'],['です。','']]},
-  {en:'Is this okay for me to eat?',ja:'これは食べても大丈夫ですか◇',rj:'Kore wa tabete mo daijōbu desu ka?',furi:[['これは',''],['食','た'],['べても',''],['大丈夫','だいじょうぶ'],['ですか◇','']]},
+  {en:'Is this okay for me to eat?',ja:'これは食べても大丈夫ですか？',rj:'Kore wa tabete mo daijōbu desu ka?',furi:[['これは',''],['食','た'],['べても',''],['大丈夫','だいじょうぶ'],['ですか？','']]},
   {en:'Excuse me. / Sorry.',ja:'すみません。',rj:'Sumimasen.',furi:[['すみません。','']]},
   {en:'Thank you very much.',ja:'ありがとうございます。',rj:'Arigatō gozaimasu.',furi:[['ありがとうございます。','']]},
   {en:'It was delicious. (said when leaving)',ja:'ごちそうさまでした。',rj:'Gochisōsama deshita.',furi:[['ごちそうさまでした。','']]}
@@ -1699,7 +1699,7 @@ const CARD_HTML={
    </ul>
    <div class="canok">グルテンフリーの醤油（たまり）や、米・いも・とうもろこしの料理は食べられます。
     <span class="en">I can eat gluten-free soy sauce (tamari) and dishes made from rice, potato, or corn.</span></div>
-   <div class="closing">食べられる料理を教えていただけますか◇よろしくお願いします。
+   <div class="closing">食べられる料理を教えていただけますか？よろしくお願いします。
     <span class="en">Could you tell me which dishes are safe for me? Thank you very much.</span></div>
   </div></div>`,
  vegan:`<div class="idcard"><div class="top vegan"><div class="jp">ヴィーガン（完全菜食）のお願い</div><div class="en">Vegan request</div></div>
@@ -1715,7 +1715,7 @@ const CARD_HTML={
    </ul>
    <div class="canok">野菜・豆腐・きのこ・豆、昆布やしいたけのだしは食べられます。
     <span class="en">I can eat vegetables, tofu, mushrooms, beans, and kombu/shiitake (plant) dashi.</span></div>
-   <div class="closing">食べられる料理はありますか◇よろしくお願いします。
+   <div class="closing">食べられる料理はありますか？よろしくお願いします。
     <span class="en">Are there dishes I can eat? Thank you very much.</span></div>
   </div></div>`
 };
