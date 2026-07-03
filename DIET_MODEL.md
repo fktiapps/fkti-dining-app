@@ -50,8 +50,8 @@ Its only non-diet job was venue vibe. Replace with:
 Cumulative "how much do I show / how much risk will I accept":
 1. **🛡 Dedicated** — corroborated wheat-free kitchen (strictest)
 2. **✓ + Fully-GF** — adds `high`
-3. **~ + Options** — adds shared-kitchen GF dishes
-4. **? + Ask** — adds negotiable places ("I'll talk to the cook")
+3. **◐ + Options** — adds shared-kitchen GF dishes
+4. **◇ + Ask** — adds negotiable places ("I'll talk to the cook")
 5. **🍚 + Need rice** — everything incl. `no`, plus konbini/grocery survival layers
 Vegan mirror: full → +options/limited → +ask ("hold the bonito dashi") → everything.
 The dial now MEANS the same thing as the tiers (no more "why 3 vs 5").
@@ -98,7 +98,8 @@ firm celiac card used for options+ places).
 
 ## ACCESSIBILITY — text/shape, never color-only
 Markers carry a **glyph** for the active dial's tier, not a hue:
-`🛡` dedicated · `✓` high · `~` options · `?` ask · (`no` renders only at "Need rice").
+`🛡` dedicated · `✓` high · `◐` options · `◇` ask · (`no` renders only at "Need rice").
+(Was `~`/`?` — changed 2026-07-03: Greg found `?` off-center/cheap and disliked `~`.)
 Badge/detail text stays the authority ("Not gluten-free" etc.).
 
 ## MIGRATION
