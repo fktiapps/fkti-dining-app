@@ -1636,12 +1636,21 @@ const COMFORT_CONFIG={
  english:{dot:'#2563EB',label:'🔵 Full English menu',desc:'They\'re set up for tourists. English materials and staff accustomed to international visitors.'}
 };
 function renderComfort(p){
- if(!p.cultural_comfort) return '';
+ // The "ask" tier forces a guide-only floor — but ONLY for a diner actually restricted on that axis
+ // (a jūwari-soba shop is a normal lunch for someone without a wheat problem). Relation, not a fixed property.
+ const gfAsk = (state.filters.gf||0)>=1 && p.gf_confidence==='ask';
+ const vgAsk = (state.filters.vegan||0)>=1 && p.vegan_status==='ask';
+ const askFloor = gfAsk || vgAsk;
  const c=p.cultural_comfort;
- const cfg=COMFORT_CONFIG[c.level]||{};
- return`<div class="comfort comfort-${c.level}">
-  <span class="comfort-dot comfort-dot-${c.level}" style="background:${cfg.dot}"></span>
-  <span><span class="comfort-eyebrow">Cultural comfort</span><b class="comfort-label">${cfg.label}</b><span class="comfort-desc-inline">${cfg.desc}</span>${c.note?`<span style="font-size:11.5px;opacity:.85;margin-top:5px;display:block">${c.note}</span>`:''}</span>
+ const level = askFloor ? 'guide_only' : (c && c.level);   // effective = stricter of (intrinsic, ask-floor)
+ if(!level) return '';
+ const cfg=COMFORT_CONFIG[level]||{};
+ const askNote = askFloor
+   ? `<span style="font-size:12px;margin-top:7px;display:block;font-weight:600;line-height:1.5">With your ${gfAsk?'gluten-free':'vegan'} need, a safe meal here has to be <b>negotiated with the kitchen</b> — bring a Japanese speaker; don't try it solo with a translation app. You're asking a favour, not exercising a right. <a class="asklink" style="text-decoration:underline;cursor:pointer;color:inherit;font-weight:700" onclick="event.stopPropagation();openCards('ask')">Show the gentle request →</a></span>`
+   : (c && c.note ? `<span style="font-size:11.5px;opacity:.85;margin-top:5px;display:block">${c.note}</span>` : '');
+ return`<div class="comfort comfort-${level}">
+  <span class="comfort-dot comfort-dot-${level}" style="background:${cfg.dot}"></span>
+  <span><span class="comfort-eyebrow">Cultural comfort</span><b class="comfort-label">${cfg.label}</b><span class="comfort-desc-inline">${cfg.desc}</span>${askNote}</span>
  </div>`;
 }
 
@@ -1717,6 +1726,19 @@ const CARD_HTML={
     <span class="en">I can eat vegetables, tofu, mushrooms, beans, and kombu/shiitake (plant) dashi.</span></div>
    <div class="closing">食べられる料理はありますか？よろしくお願いします。
     <span class="en">Are there dishes I can eat? Thank you very much.</span></div>
+  </div></div>`,
+ ask:`<div class="idcard"><div class="top celiac"><div class="jp">お願い（グルテンフリー）</div><div class="en">A gentle gluten-free request — for "ask" places</div></div>
+  <div class="ibody">
+   <div class="lead">ご迷惑をおかけしたくないですし、お願いするのも心苦しいのですが……実は私はセリアック病で、少量の小麦（グルテン）でも体調をくずしてしまいます。
+    <span class="en">I don't want to cause you any trouble, and I hate to ask — but I have celiac disease, and even a little wheat makes me quite ill.</span></div>
+   <h4>もし可能でしたら · If it's at all possible</h4>
+   <ul class="avoid">
+    <li>麺を別の鍋・新しいお湯でゆでていただけますか<span class="en">Could the noodles be boiled in a separate pot / fresh water?</span></li>
+    <li>調理器具・まな板・揚げ油を分けていただけますか<span class="en">Could you use separate utensils / cutting board / frying oil?</span></li>
+    <li>小麦の入っていない醤油（たまり）はありますか<span class="en">Do you have wheat-free (tamari) soy sauce?</span></li>
+   </ul>
+   <div class="closing">もし難しいようでしたら、どうぞお気になさらないでください。無理を言ってすみません。ありがとうございます。
+    <span class="en">If it's difficult, please don't worry about it at all. I'm sorry to impose — thank you so much.</span></div>
   </div></div>`
 };
 function openCards(type){
