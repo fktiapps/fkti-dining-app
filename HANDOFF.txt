@@ -116,6 +116,21 @@ OPEN ITEMS / TODO
 - Image hosting: move menu/owner/DCP images to URL-referenced static files (Pages /img or R2), NOT base64.
 - MOBILE_OPS.md / this file still reference a couple old bits — keep current.
 
+COVERAGE GAPS vs ITINERARY (the itinerary is NOT stored in DCD — it lives in the wider FKTI project / the
+other Claude; get the stops from there to diff exactly)
+- FULL restaurant guides: kyoto, kanazawa, hiroshima, nagano, himeji, nara, toba&ise, nagoya.
+- Station guides: kyoto, kanazawa, hiroshima, nagano, himeji, shin_osaka.
+- ⚠ TOKYO: in the app but KONBINI/SURVIVAL ONLY — NO restaurant guide. "The big one." If it's a real stop,
+  dining is effectively uncovered → needs the token-heavy Tokyo sweep (spot-workflow, small radii per
+  district: Tokyo/Shinagawa/Ueno/Shinjuku/Shibuya…).
+- ❌ OSAKA: not covered at all (no map-city). Only a Shin-Osaka STATION guide exists, and it is STRANDED
+  (no Osaka city → not reachable via the 🚉 chip). If they stay/eat in Osaka/Umeda → nothing.
+- Any other itinerary stop not in the city list above (Miyajima, Kōbe, Kōyasan, Hakone, Kamakura, Nikkō…)
+  would be uncovered — cannot confirm without the route.
+- TO CLOSE: diff the itinerary vs the covered list; TOKYO = a big sweep, the rest are quick station-guide /
+  small-corridor sweeps (like Himeji ~120 places). Also add a station-picker (or Osaka city) to unstrand
+  Shin-Osaka.
+
 CONTINUITY: memory files at ~/.claude/projects/<this>/memory/ (MEMORY.md index + per-fact files) orient any
 fresh session — read them first. Key ones: menupedia-direction, diet-strictness-dials, station-survival-guide,
 food-near-me-feature, mobile-deploy-setup, no-single-source-gf-vegan, dining-here-what-can-i-do.
