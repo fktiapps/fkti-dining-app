@@ -58,6 +58,13 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .pmkdot{display:flex;align-items:center;justify-content:center;border:2px solid #fff;border-radius:50%;font-size:11px;color:#fff;font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,.45)}
 .pmkdot.sel{border-color:#111;font-size:14px}
 .pmkdot.ring{border-color:#555;border-style:dashed}
+.flower{position:relative}
+.flower.sel{transform:scale(1.16)}
+.pet{position:absolute;left:50%;top:50%;width:0;height:0}
+.stem{position:absolute;left:-1px;width:2px;background:rgba(95,72,48,.45);border-radius:1px}
+.petb{position:absolute;display:flex;align-items:center;justify-content:center;border:2px solid #fff;font-weight:700;line-height:1;letter-spacing:-1px;box-shadow:0 1px 3px rgba(0,0,0,.45);white-space:nowrap}
+.petb.ring{border-color:#555;border-style:dashed}
+.petb.sm{border-width:1.5px}
 .dh-row{display:flex;gap:10px;align-items:flex-start;margin:9px 0}
 .dh-pill{flex:0 0 auto;background:var(--ver);color:#fff;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
 .dh-pill.off{background:var(--ink2);color:#cdd2e8;border:1px solid var(--line)}
@@ -761,6 +768,8 @@ function initMap(){
  state.meMarker.on('dragend',e=>{const ll=e.target.getLatLng();state.me={lat:ll.lat,lng:ll.lng};render();});
  drawMarkers();
  map.on('moveend',onMapMove);   // load whichever city the map reaches
+ state._bloomOn=map.getZoom()>=BLOOM_ZOOM;
+ map.on('zoomend',()=>{ const b=map.getZoom()>=BLOOM_ZOOM; if(b!==state._bloomOn){ state._bloomOn=b; reskinMarkers(); } });
  locate(true);
 }
 // Pin encodes the SAFETY TIER three redundant ways — glyph + shape + a colour-blind-safe
@@ -781,13 +790,95 @@ const VEG_VIZ={
  no:     {g:'·',bg:'#C4C4C4',fg:'#fff',small:true}
 };
 function activeAxis(){return state.filters.vegan>0 && !(state.filters.gf>0) ? 'vegan' : 'gf';}
+// ---------- flower-petal markers ----------
+// A place is a bouquet: one petal per facet it fits (GF safety · vegan · each food
+// it does · mom-and-pop), tips converging on the location. Icons carry meaning, so
+// it reads without relying on colour. Zoomed out it collapses to a single food badge.
+const BLOOM_ZOOM=15;
+// Free-text cuisine → food emoji. A shop can match several (ramen + gyoza + chuka),
+// so every match becomes a petal. Order = specific → general.
+const FOOD_EMOJI=[
+ [/ramen|tsukemen|tantan|dandan|abura.?soba|mazesoba|paitan|chuka.?soba|jiro|chicken soba/i,'🍜'],
+ [/gyoza|dumpling|shumai/i,'🥟'],
+ [/\bchuka\b|chinese|machi.?ch|中華/i,'🥮'],
+ [/udon/i,'🍲'],
+ [/soba/i,'🥢'],
+ [/sushi|sashimi|kaiten|nigiri/i,'🍣'],
+ [/unagi|anago|eel|穴子|鰻/i,'🍱'],
+ [/okonomiyaki|teppan|monja|okonomi/i,'🥞'],
+ [/tempura|tendon|天ぷら/i,'🍤'],
+ [/tonkatsu|\bkatsu|fried chicken|karaage|frit/i,'🍗'],
+ [/oden/i,'🍢'],
+ [/yakitori|kushi|skewer|yakiton/i,'🍡'],
+ [/yakiniku|wagyu|\bbeef|steak|offal|horumon|焼肉/i,'🥩'],
+ [/oyster|kaki|牡蠣/i,'🦪'],
+ [/curry|カレー/i,'🍛'],
+ [/donburi|gyudon|kaisendon|rice bowl|丼/i,'🍚'],
+ [/onigiri|rice ball/i,'🍙'],
+ [/kaiseki|kappo|obanzai|washoku|ryokan|japanese cuisine|懐石|割烹/i,'🍱'],
+ [/shojin|shōjin|buddhist|vegetarian|macrobiotic/i,'🪷'],
+ [/tofu|yuba|湯葉|豆腐/i,'🥛'],
+ [/izakaya|\bsake\b|\bbar\b|\bpub\b|居酒屋/i,'🍶'],
+ [/pizza|napolitan|neapolitan/i,'🍕'],
+ [/pasta|italian|spaghetti|イタリアン/i,'🍝'],
+ [/french|bistro|フレンチ/i,'🥖'],
+ [/indian|nepal|south indian/i,'🍛'],
+ [/burger|hamburg/i,'🍔'],
+ [/yoshoku|yōshoku|western|omurice|omu/i,'🍳'],
+ [/kissa|coffee|\bcafe|café|roaster|junkissa|喫茶/i,'☕'],
+ [/bakery|bagel|boulanger|\bpan\b|パン|bread/i,'🥐'],
+ [/patisserie|pâtisserie|sweets|wagashi|dessert|parfait|chiffon|baumkuchen|chocolat|donut|doughnut|crepe|creperie|churro|pancake|confection|sweet/i,'🍰'],
+ [/shokudo|teishoku|定食|set meal|home.?style|diner/i,'🍚'],
+ [/seafood|\bfish|kaisen|海鮮/i,'🐟'],
+];
+function foodEmojis(p){
+ const str=((p.cuisine_type||'')+' '+(p.cuisine||''));
+ const out=[],seen=new Set();
+ for(const [re,e] of FOOD_EMOJI){ if(re.test(str)&&!seen.has(e)){seen.add(e);out.push(e);} }
+ if(!out.length) out.push('🍽');
+ return out.slice(0,3);
+}
+function petalsFor(p){
+ const out=[];
+ const G=TIER_VIZ[p.gf_confidence]||TIER_VIZ.no;
+ out.push({g:G.g,bg:G.bg,fg:G.fg,ring:G.ring,small:G.small});           // GF — always, at 12 o'clock
+ const vg=p.vegan_status;
+ if(['full','options','limited','ask'].includes(vg)||['VEGAN','SHOJIN','BOTH'].includes(p.category)){
+  const V=VEG_VIZ[vg]||VEG_VIZ.options; out.push({g:'🌱',bg:V.bg,fg:V.fg,ring:V.ring});
+ }
+ for(const e of foodEmojis(p)) out.push({g:e,bg:'#fff',fg:'#222'});      // one petal per food it does
+ if(p.category==='MOM_AND_POP'||p.mom_and_pop) out.push({g:'👵👴',bg:'#fff',fg:'#222',wide:true});
+ return out;
+}
 function placeIcon(p,sel,axis){
  axis=axis||'gf';
- const tier=axis==='vegan'?p.vegan_status:p.gf_confidence;
- const V=(axis==='vegan'?VEG_VIZ:TIER_VIZ)[tier]||TIER_VIZ.no;
- const sz=(V.small?14:20)+(sel?8:0);
- const cls='pmkdot'+(sel?' sel':'')+(V.ring?' ring':'');
- return L.divIcon({className:'pmk',html:'<div class="'+cls+'" style="background:'+V.bg+';color:'+V.fg+';width:'+sz+'px;height:'+sz+'px">'+V.g+'</div>',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+ const bloom=(typeof map!=='undefined'&&map&&map.getZoom)?map.getZoom()>=BLOOM_ZOOM:false;
+ if(!bloom){
+  // collapsed: lead food emoji, tinted by the active dial's tier — never a bare grey dot
+  const tier=axis==='vegan'?p.vegan_status:p.gf_confidence;
+  const V=(axis==='vegan'?VEG_VIZ:TIER_VIZ)[tier]||TIER_VIZ.no;
+  const sz=(V.small?15:20)+(sel?8:0);
+  const cls='pmkdot'+(sel?' sel':'')+(V.ring?' ring':'');
+  return L.divIcon({className:'pmk',html:'<div class="'+cls+'" style="background:'+V.bg+';color:'+V.fg+';width:'+sz+'px;height:'+sz+'px;font-size:'+Math.round(sz*0.6)+'px">'+foodEmojis(p)[0]+'</div>',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+ }
+ // bloomed flower
+ const pet=petalsFor(p), N=pet.length, R=14, W=76, C=W/2;
+ let html='<div class="flower'+(sel?' sel':'')+'" style="width:'+W+'px;height:'+W+'px">';
+ pet.forEach((pt,i)=>{
+  const ang=Math.round(i*(360/N)*10)/10;
+  const bh=pt.small?15:19, bw=pt.wide?30:bh, rad=pt.wide?'9px':'50%', fs=pt.wide?11:Math.round(bh*0.62);
+  html+='<div class="pet" style="transform:rotate('+ang+'deg)">'
+      +'<span class="stem" style="height:'+R+'px;top:'+(-R)+'px"></span>'
+      +'<span class="petb'+(pt.ring?' ring':'')+(pt.small?' sm':'')+'" style="left:0;margin-left:'+(-bw/2)+'px;top:'+(-R-bh)+'px;width:'+bw+'px;height:'+bh+'px;border-radius:'+rad+';font-size:'+fs+'px;background:'+pt.bg+';color:'+pt.fg+';transform:rotate('+(-ang)+'deg)">'+pt.g+'</span>'
+      +'</div>';
+ });
+ html+='</div>';
+ return L.divIcon({className:'pmk',html,iconSize:[W,W],iconAnchor:[C,C]});
+}
+// Re-skin all markers when the map crosses the bloom threshold (collapsed <-> flower).
+function reskinMarkers(){
+ const ax=activeAxis();
+ for(const [id,m] of Object.entries(state.markers)){ const p=state._pById[id]; if(p) m.setIcon(placeIcon(p,id===state.selected,ax)); }
 }
 function drawMarkers(){
  Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={}; state._pById={};
