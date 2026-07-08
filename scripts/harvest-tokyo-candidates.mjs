@@ -28,15 +28,15 @@ for (const [id, task] of Object.entries(TASKS)) {
   for (const c of cands) all.push({ ...c, circle: id });
 }
 
+// Dedup KEY: Tabelog numeric id when present (collapses romaji-variant names that share a
+// listing, e.g. 悦納 / 悦納（えつのう）/ injoy → 13249962), else normalized JA name.
+const tabId = u => { const m = (u || '').match(/\/(\d{6,})\/?/); return m ? 't' + m[1] : null; };
 const seen = new Map();
 for (const c of all) {
-  const k = norm(c.name_ja);
-  if (!k) continue;
+  const k = tabId(c.tabelog_url) || ('n' + norm(c.name_ja));
+  if (k === 'n') continue;
   if (!seen.has(k)) seen.set(k, c);
-  else { // prefer the record that carries a tabelog_url
-    const prev = seen.get(k);
-    if (!prev.tabelog_url && c.tabelog_url) seen.set(k, c);
-  }
+  else { const prev = seen.get(k); if (!prev.tabelog_url && c.tabelog_url) seen.set(k, c); }
 }
 const deduped = [...seen.values()];
 const withUrl = deduped.filter(c => c.tabelog_url && /tabelog\.com/.test(c.tabelog_url));
