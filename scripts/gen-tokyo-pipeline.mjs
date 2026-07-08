@@ -67,7 +67,7 @@ Return up to 8 NEW places. For each: name_ja (exact), area (district + nearest l
 phase('Discover')
 const seen = new Set(); const queue = [];
 let round = 0, dry = 0;
-while (round < 4 && dry < 2) {
+while (round < 12 && dry < 2) {
   round++;
   const avoid = queue.length ? queue.map(c => c.name_ja).join('、') : '';
   const disc = await parallel(ANGLES.map((q, i) => () => agent(discPrompt(q, avoid), { label: A.id + ' disc r' + round + ' #' + i, phase: 'Discover', schema: DISCOVERY_SCHEMA, model: 'haiku' }).then(r => (r && r.candidates) || []).catch(() => [])));

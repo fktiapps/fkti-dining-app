@@ -1,7 +1,12 @@
 // Collect the 8 verify shards' kept[] records into data/_tokyo_disc.json (input to
 // build-tokyo-merge.mjs). Reads each shard workflow's task output file (.result.kept).
 import fs from 'fs';
-const TASKS = ['wejoiayj9', 'woh97nqp9', 'w362rluzs', 'wqz164n1b', 'wcx7x8l94', 'wc12jl5h6', 'w0svivyd9', 'wjazcdvox'];
+const TASKS = [
+  // shards 0-7 (first 400)
+  'wejoiayj9', 'woh97nqp9', 'w362rluzs', 'wqz164n1b', 'wcx7x8l94', 'wc12jl5h6', 'w0svivyd9', 'wjazcdvox',
+  // shards 8-15 (remaining 429)
+  'wh76mpzb0', 'w8366pak7', 'w0n6hfzgk', 'w586w2v3b', 'w53bxm8ge', 'wj9dj5cly', 'wgnwx9sek', 'wc7zai1dz',
+];
 const DIR = '/tmp/claude-0/-home-user-fkti-dining-app/3ad9a1de-30bc-5204-a99e-3293ca1d76eb/tasks';
 
 let kept = [], missing = [];
