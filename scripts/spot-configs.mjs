@@ -18,6 +18,34 @@ export const CONFIGS = {
     ],
     comfort: 'A Tokyo spot near Asakusa/Shibuya/Suidōbashi/Shinjuku; a little Japanese or pointing helps.',
   },
+  // Per-circle Tokyo configs — run as 4 PARALLEL workflows so each gets its own
+  // concurrency budget (the cap is per-workflow = min(16, cores-2); this box has 4 cores
+  // → 2/workflow, so 4 workflows ≈ 8 concurrent I/O-bound agents). Harvest all four into
+  // data/_tokyo_disc.json, then build-tokyo-merge.mjs filters against the tokyo union config.
+  tokyo_asakusa: {
+    label: 'Tokyo · Asakusa', subtitle: '浅草寺 · ベジ・グルテンフリー',
+    centers: [{ name: 'Sensōji (Asakusa)', area: '浅草寺 浅草 東京', lat: 35.7148, lng: 139.7967, r: 0.8 }],
+    specialties: ['浅草 ラーメン 名店 食べログ', '浅草 ヴィーガン 精進料理 グルテンフリー 食べログ', '浅草 老舗 天ぷら 蕎麦 どぜう 名物 食べログ'],
+    comfort: 'A spot near Sensōji in Asakusa; a little Japanese or pointing helps.',
+  },
+  tokyo_shibuya: {
+    label: 'Tokyo · Shibuya', subtitle: '渋谷スクランブル · ベジ・グルテンフリー',
+    centers: [{ name: 'Shibuya Scramble', area: '渋谷スクランブル交差点 渋谷 東京', lat: 35.6595, lng: 139.7005, r: 0.8 }],
+    specialties: ['渋谷 ラーメン 名店 食べログ', '渋谷 ヴィーガン グルテンフリー カフェ 食べログ', 'つけ麺 まぜそば 渋谷 食べログ'],
+    comfort: 'A spot near Shibuya Scramble; a little Japanese or pointing helps.',
+  },
+  tokyo_suidobashi: {
+    label: 'Tokyo · Suidōbashi', subtitle: '水道橋・神保町 · ベジ・グルテンフリー',
+    centers: [{ name: 'Suidōbashi Station', area: '水道橋駅 神保町 千代田区 東京', lat: 35.7017, lng: 139.7539, r: 0.8 }],
+    specialties: ['神保町 水道橋 ラーメン 食べログ', '神保町 水道橋 ヴィーガン グルテンフリー カフェ 食べログ', 'つけ麺 神保町 カレー 名店 食べログ'],
+    comfort: 'A spot near Suidōbashi / Jimbocho; a little Japanese or pointing helps.',
+  },
+  tokyo_shinjuku: {
+    label: 'Tokyo · Shinjuku', subtitle: '新宿駅 · ベジ・グルテンフリー',
+    centers: [{ name: 'Shinjuku Station', area: '新宿駅 新宿 東京', lat: 35.6896, lng: 139.7006, r: 0.8 }],
+    specialties: ['新宿 ラーメン 名店 食べログ', '新宿 ヴィーガン グルテンフリー 食べログ', 'つけ麺 まぜそば 新宿 名店 食べログ'],
+    comfort: 'A spot near Shinjuku Station; a little Japanese or pointing helps.',
+  },
   nagano: {
     label: 'Nagano', subtitle: '善光寺 · ベジ・グルテンフリー',
     centers: [{ name: 'Zenkō-ji', area: '善光寺 長野', lat: 36.6614, lng: 138.1872, r: 1.61 }],
