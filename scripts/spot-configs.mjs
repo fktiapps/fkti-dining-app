@@ -1,6 +1,23 @@
 // Tight-radius "spot sweep" city configs. r = radius in km from each center.
 // Multi-center cities (toba) union their circles. Used by gen-spot-workflow.mjs + build-spot.mjs.
 export const CONFIGS = {
+  tokyo: {
+    label: 'Tokyo', subtitle: '浅草・渋谷・水道橋・新宿 · ベジ・グルテンフリー',
+    // Four 1-mile-diameter circles (≈0.8 km radius) per Greg. Union of the four.
+    centers: [
+      { name: 'Sensōji (Asakusa)', area: '浅草寺 浅草 東京', lat: 35.7148, lng: 139.7967, r: 0.8 },
+      { name: 'Shibuya Scramble', area: '渋谷スクランブル交差点 渋谷 東京', lat: 35.6595, lng: 139.7005, r: 0.8 },
+      { name: 'Suidōbashi Station', area: '水道橋駅 神保町 千代田区 東京', lat: 35.7017, lng: 139.7539, r: 0.8 },
+      { name: 'Shinjuku Station', area: '新宿駅 新宿 東京', lat: 35.6896, lng: 139.7006, r: 0.8 },
+    ],
+    specialties: [
+      '浅草 ラーメン 名店 食べログ', '渋谷 ラーメン 名店 食べログ', '新宿 ラーメン 名店 食べログ', '神保町 水道橋 ラーメン 食べログ',
+      'つけ麺 まぜそば 東京 名店 食べログ', 'ヴィーガン ラーメン 東京 食べログ', 'グルテンフリー ラーメン 米粉麺 東京',
+      '渋谷 ヴィーガン グルテンフリー カフェ 食べログ', '新宿 ヴィーガン グルテンフリー 食べログ', '浅草 ヴィーガン 精進料理 グルテンフリー 食べログ',
+      '浅草 老舗 食堂 天ぷら 蕎麦 名物 食べログ',
+    ],
+    comfort: 'A Tokyo spot near Asakusa/Shibuya/Suidōbashi/Shinjuku; a little Japanese or pointing helps.',
+  },
   nagano: {
     label: 'Nagano', subtitle: '善光寺 · ベジ・グルテンフリー',
     centers: [{ name: 'Zenkō-ji', area: '善光寺 長野', lat: 36.6614, lng: 138.1872, r: 1.61 }],

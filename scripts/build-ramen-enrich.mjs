@@ -51,6 +51,7 @@ for (const [city, list] of Object.entries(byCity)) {
   total += n;
 }
 
-// bump SW v51 -> v52
-for (const f of ['sw.js', 'index.html']) { let s = fs.readFileSync(f, 'utf8'); s = s.split('dcd-v51').join('dcd-v52'); fs.writeFileSync(f, s); }
-console.log(`TOTAL ramen-enriched: ${total} | unmatched: ${unmatched.length ? unmatched : 'none'} | meta-leak pantheon (review): ${metaLeaks.length ? metaLeaks : 'NONE'} | SW -> dcd-v52`);
+// bump SW (generic: find current dcd-v<N> and increment)
+let swv = '?';
+for (const f of ['sw.js', 'index.html']) { let s = fs.readFileSync(f, 'utf8'); const m = s.match(/dcd-v(\d+)/); if (m) { swv = Number(m[1]) + 1; s = s.split(`dcd-v${m[1]}`).join(`dcd-v${swv}`); fs.writeFileSync(f, s); } }
+console.log(`TOTAL ramen-enriched: ${total} | unmatched: ${unmatched.length ? unmatched : 'none'} | meta-leak pantheon (review): ${metaLeaks.length ? metaLeaks : 'NONE'} | SW -> dcd-v${swv}`);

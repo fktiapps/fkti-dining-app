@@ -3,7 +3,8 @@
 // Output kept[] = [{id, city, ramen}] -> data/_ramen_enrich.json -> build-ramen-enrich.mjs.
 import fs from 'fs';
 
-const CITIES = ['kyoto', 'kanazawa', 'nara', 'hiroshima'];
+// Cities to enrich: CLI args override the default set (e.g. `node gen-ramen-pass-workflow.mjs tokyo`).
+const CITIES = process.argv.slice(2).length ? process.argv.slice(2) : ['kyoto', 'kanazawa', 'nara', 'hiroshima'];
 // Human first-hand notes to honor (research/human_ramen_notes.md). Keep private DCP stories OUT.
 const HUMAN_NOTES = {
   'ChIJ58xq4ZkHAWAReKyfPh-M-lk': 'Owner is Katagiri. The bowl rests entirely on its broth: it LOOKS heavy and dark (black/brown) but tastes surprisingly LIGHT and PROFOUNDLY DEEP — because the broth is built from pork MEAT, not bones. Reflect this in pantheon/broth notes; set chef context to Katagiri. (Do NOT mention any allergy/soy story — that is private DCP only.)',
