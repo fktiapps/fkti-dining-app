@@ -12,7 +12,43 @@ const existing = JSON.parse(fs.readFileSync(`data/${city}.json`, 'utf8'));
 const box = bbox(cfg);
 
 const hav = (a, b, c, d) => { const R = 6371, t = Math.PI / 180; const x = Math.sin((c - a) * t / 2) ** 2 + Math.cos(a * t) * Math.cos(c * t) * Math.sin((d - b) * t / 2) ** 2; return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x)); };
-const nearAnyCenter = r => r.lat != null && cfg.centers.some(c => hav(c.lat, c.lng, r.lat, r.lng) <= c.r + 0.05);
+
+// The agent proxy blocks msearch.gsi.go.jp, so verify agents returned lat/lng=null for most
+// records. Recover map position deterministically from address_ja: chōme centroid where known,
+// else ward centre, plus a small name-seeded jitter so pins in the same block don't stack.
+// (Marked approx so the UI/notes can flag it; precise geocode can refresh later when unblocked.)
+const CHOME = [
+  // Asakusa / Taitō
+  ['浅草１丁目|浅草1丁目', 35.7112, 139.7966], ['浅草２丁目|浅草2丁目', 35.7145, 139.7952], ['浅草３丁目|浅草3丁目', 35.7166, 139.7945],
+  ['浅草４丁目|浅草4丁目', 35.7181, 139.7958], ['浅草５丁目|浅草5丁目', 35.7195, 139.7950], ['浅草６丁目|浅草6丁目', 35.7205, 139.7975],
+  ['花川戸１丁目|花川戸1丁目', 35.7118, 139.7984], ['花川戸２丁目|花川戸2丁目', 35.7138, 139.7986],
+  ['西浅草１丁目|西浅草1丁目', 35.7128, 139.7935], ['西浅草２丁目|西浅草2丁目', 35.7146, 139.7918], ['西浅草３丁目|西浅草3丁目', 35.7162, 139.7902],
+  ['駒形１丁目|駒形1丁目', 35.7096, 139.7965], ['駒形２丁目|駒形2丁目', 35.7080, 139.7958],
+  ['雷門１丁目|雷門1丁目', 35.7106, 139.7972], ['雷門２丁目|雷門2丁目', 35.7100, 139.7950],
+  ['松が谷', 35.7156, 139.7886], ['寿', 35.7075, 139.7940], ['蔵前', 35.7040, 139.7920], ['竜泉', 35.7245, 139.7930], ['千束', 35.7205, 139.7915],
+  // Suidōbashi / Jimbocho / Chiyoda·Bunkyō
+  ['神田三崎町', 35.7010, 139.7530], ['神田神保町', 35.6958, 139.7575], ['神田猿楽町', 35.6976, 139.7588], ['神田小川町', 35.6965, 139.7605],
+  ['後楽', 35.7042, 139.7515], ['本郷', 35.7085, 139.7595], ['春日', 35.7085, 139.7520], ['一ツ橋', 35.6958, 139.7570], ['西神田', 35.6985, 139.7548],
+  // Shibuya
+  ['宇田川町', 35.6615, 139.6985], ['神南', 35.6642, 139.6992], ['道玄坂', 35.6578, 139.6975], ['桜丘町', 35.6565, 139.6988],
+  ['松濤', 35.6595, 139.6942], ['神泉町', 35.6572, 139.6930], ['円山町', 35.6577, 139.6958], ['宇田川', 35.6615, 139.6985],
+  ['渋谷１丁目|渋谷1丁目', 35.6605, 139.7035], ['渋谷２丁目|渋谷2丁目', 35.6595, 139.7055], ['渋谷３丁目|渋谷3丁目', 35.6565, 139.7045],
+  ['東１丁目|東1丁目', 35.6558, 139.7062], ['道玄坂２丁目|道玄坂2丁目', 35.6570, 139.6960],
+  // Shinjuku
+  ['新宿三丁目|新宿３丁目', 35.6912, 139.7052], ['新宿二丁目|新宿２丁目', 35.6892, 139.7078], ['新宿一丁目|新宿１丁目', 35.6875, 139.7095],
+  ['新宿四丁目|新宿４丁目', 35.6885, 139.7040], ['新宿五丁目|新宿５丁目', 35.6935, 139.7075],
+  ['西新宿一丁目|西新宿1丁目', 35.6905, 139.6958], ['西新宿七丁目|西新宿7丁目', 35.6962, 139.6935], ['西新宿', 35.6925, 139.6945],
+  ['歌舞伎町', 35.6952, 139.7020], ['千駄ヶ谷', 35.6810, 139.7100], ['新宿御苑', 35.6875, 139.7100],
+];
+const WARD = [['台東区', 35.7148, 139.7967], ['千代田区', 35.7010, 139.7539], ['文京区', 35.7042, 139.7515], ['渋谷区', 35.6595, 139.7005], ['新宿区', 35.6905, 139.7010]];
+const hashJit = (s, amp) => { let h = 0; for (const c of (s || '')) h = (h * 31 + c.charCodeAt(0)) | 0; const a = ((h >>> 0) % 1000) / 1000, b = ((h >>> 8) % 1000) / 1000; return [(a - 0.5) * 2 * amp, (b - 0.5) * 2 * amp]; };
+function geocodeApprox(r) {
+  const addr = `${r.address_ja || ''} ${r.neighborhood || ''}`;
+  for (const [pat, lat, lng] of CHOME) if (new RegExp(pat).test(addr)) { const [dy, dx] = hashJit(r.name_ja, 0.0012); return { lat: +(lat + dy).toFixed(6), lng: +(lng + dx).toFixed(6), approx: 'chome' }; }
+  for (const [w, lat, lng] of WARD) if (addr.includes(w)) { const [dy, dx] = hashJit(r.name_ja, 0.004); return { lat: +(lat + dy).toFixed(6), lng: +(lng + dx).toFixed(6), approx: 'ward' }; }
+  return null;
+}
+const nearAnyCenter = r => r.lat != null && cfg.centers.some(c => hav(c.lat, c.lng, r.lat, r.lng) <= c.r + 0.25);
 const norm = s => (s || '').replace(/[\s　・（）()「」、,.。\-本店店]/g, '').toLowerCase();
 const jpName = n => (n || '').replace(/\s*[（(][^）)]*[）)]\s*$/, '').trim();
 
@@ -46,7 +82,10 @@ const added = [], skipped = [], catCount = {}, czCount = {};
 for (const r of kept) {
   const nk = norm(r.name_ja);
   if (seen.has(nk)) { skipped.push(r.name_ja + ' (dup)'); continue; } seen.add(nk);
-  if (!nearAnyCenter(r)) { skipped.push(`${r.name_ja} (outside radius)`); continue; }
+  // Fill missing coordinates deterministically from the address (proxy blocked live geocoding).
+  let approx = null;
+  if (r.lat == null || r.lng == null) { const g = geocodeApprox(r); if (g) { r.lat = g.lat; r.lng = g.lng; approx = g.approx; } }
+  if (!nearAnyCenter(r)) { skipped.push(`${r.name_ja} (outside radius / ungeocodable)`); continue; }
   const hours = {}; let openLate = false;
   for (let i = 0; i < 7; i++) { const day = parseDay((r.hours_week || [])[i] || 'closed'); hours[String(i)] = day; for (const [, c] of day) if (c >= '22:00' || c <= '03:00') openLate = true; }
   let base = slugify(r.name_en) || 'tky', id = `${city}_${base}`, n = 2;
@@ -70,7 +109,8 @@ for (const r of kept) {
     flags: { reservation: !!r.reservation_required, cash_only: !!r.cash_only, halal: false, open_late: openLate },
     neighborhood: (r.neighborhood || '').slice(0, 60), cuisine, cuisine_type: cz,
     website: r.official_url || tab || null, gmaps: gmapsLink(r.name_ja, r.address_ja),
-    notes: `${mpPrefix}${(b.background || r.gf_detail || '').slice(0, 280)}`.trim(),
+    notes: `${mpPrefix}${(b.background || r.gf_detail || '').slice(0, 280)}${approx ? ' · 📍 Approx. map location — confirm the exact spot (auto-placed from address).' : ''}`.trim(),
+    loc_approx: approx,
     menu_url: tab ? tab.replace(/\/?$/, '/') + 'dtlmenu/' : null,
     chef_bio: { chef_name: b.chef_name ?? null, roles: arr(b.roles).length ? b.roles : ['owner'], origin: b.origin ?? null, background: b.background ?? null, philosophy: b.philosophy ?? null, specialty: b.specialty ?? null, anecdotes: cleanAnec(b.anecdotes), japanese_sources_summary: '', confidence: ['high', 'medium', 'low', 'none'].includes(b.confidence) ? b.confidence : 'none', sources: arr(b.sources) },
     safety: { dedicated_fryer: typeof s.dedicated_fryer === 'boolean' ? s.dedicated_fryer : null, gf_cross_contamination: cleanAnec(s.gf_cross_contamination), soy_sauce_wheat: cleanAnec(s.soy_sauce_wheat), vegan_cross_contact: cleanAnec(s.vegan_cross_contact), staff_allergy_handling: cleanAnec(s.staff_allergy_handling), positives: cleanAnec(s.positives), confidence: ['high', 'medium', 'low', 'none'].includes(s.confidence) ? s.confidence : 'none', last_checked: '2026-07-08' },
