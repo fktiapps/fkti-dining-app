@@ -1,6 +1,20 @@
 # GF SAFETY REVIEW — TOKYO — GREG SIGN-OFF WORKLIST
 Generated 2026-07-08 · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
 
+## ✅ OWNER SIGN-OFF (resolved 2026-07-08 · Greg)
+
+Final human gate applied to the 8 retained dedicated/high GF places:
+
+**Kept at their tier (6):** BIOSSA (dedicated), 松竹圓カフェ (dedicated), otaco (dedicated), RICE HACK (dedicated), LA VORO (high), Fleur de Sarrasin (high).
+
+**Downgraded to `options` (2):**
+- まるごとVegan Dining Asakusa — staff can't guarantee seasoning cross-contact; gluten beer on premises.
+- Daughter Boutique — no independent celiac corroboration; online/wholesale workshop.
+
+The app floor (confirm with the kitchen + show the card) still stands on every place, including the 6 kept top-tier.
+
+---
+
 **76 GF-positive / vegan-positive places audited. 49 auto-downgrades applied (committed). 8 retained dedicated/high — listed below for your final gate.**
 
 Per protocol, auto-downgrades apply immediately (more caution is always safe). KEEPs need your sign-off because a retained dedicated/high is the only way the app can over-promise. Nothing here says "just go" — the app floor (confirm with the kitchen + show the card) still stands on every one.
