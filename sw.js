@@ -1,12 +1,12 @@
 // Deeply Connected Dining — service worker. Bump VERSION to force an update.
-const VERSION = 'dcd-v114';
+const VERSION = 'dcd-v115';
 const SHELL = `shell-${VERSION}`;
 const DATA  = `data-${VERSION}`;
 const TILES = `tiles-${VERSION}`;
 const MAXTILES = 1200; // rough cap so the tile cache can't grow forever
 
 const SHELL_ASSETS = [
-  './', './index.html', './gate.js', './manifest.webmanifest',
+  './', './index.html', './gate.js', './dcp-launch.js', './manifest.webmanifest',
   './dcp-tool.html', './dcp-gate.js', './dcp.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/favicon.png', './icons/apple-touch-icon.png',
   'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css',
