@@ -3,8 +3,8 @@
    offline); falls back to travel.fkti.org/api/me. Logs under [dcp-launch] so we can see why the
    button does or doesn't appear. Keep OWNER_ID / OWNER_EMAIL in sync with dcp-gate.js. */
 (function () {
-  var OWNER_ID = 'BOLD-FUJI-47';
-  var OWNER_EMAIL = 'gjswork@yahoo.com';
+  var OWNER_SUBS = [10];          // Travel account id(s) allowed to see the editor (sub / id)
+  var OWNER_NAMES = ['Greg'];     // fallback match by display name
   var TRAVEL = 'https://travel.fkti.org';
   var LS_TOK = 'fkti_auth', LS_OK = 'dcp_owner_ok';
   var MAX_AGE = 30 * 24 * 3600 * 1000;
@@ -26,8 +26,12 @@
   }
   function matches(obj) {
     if (obj == null) return false;
-    var hay = ''; try { hay = JSON.stringify(obj).toLowerCase(); } catch (e) { hay = String(obj).toLowerCase(); }
-    return (OWNER_ID && hay.indexOf(OWNER_ID.toLowerCase()) >= 0) || (OWNER_EMAIL && hay.indexOf(OWNER_EMAIL.toLowerCase()) >= 0);
+    var u = obj.user || obj;
+    var id = u.sub != null ? u.sub : (u.id != null ? u.id : null);
+    if (id != null && OWNER_SUBS.indexOf(Number(id)) >= 0) return true;
+    var nm = u.name || u.username || '';
+    if (nm && OWNER_NAMES.indexOf(nm) >= 0) return true;
+    return false;
   }
   function cacheOK(t) { try { localStorage.setItem(LS_OK, fp(t) + ':' + Date.now()); } catch (e) {} }
   function cachedOK(t) { try { var v = localStorage.getItem(LS_OK); if (!v) return false; var p = v.split(':'); return p[0] === fp(t) && (Date.now() - Number(p[1] || 0)) < MAX_AGE; } catch (e) { return false; } }

@@ -45,13 +45,13 @@
 
 <script>
 (function () {
-  var OWNER_ID = 'BOLD-FUJI-47', OWNER_EMAIL = 'gjswork@yahoo.com';
+  var OWNER_SUBS = [10], OWNER_NAMES = ['Greg'];
   var TRAVEL = 'https://travel.fkti.org', LS_TOK = 'fkti_auth', LS_OK = 'dcp_owner_ok';
   function $(id){return document.getElementById(id);}
   function tok(){ try{var t=localStorage.getItem(LS_TOK); if(t) return t;}catch(e){} var m=document.cookie.match(/(?:^|;\s*)fkti_auth=([^;]+)/); return m?decodeURIComponent(m[1]):null; }
   function fp(t){return (t||'').slice(-24);}
   function jwtPayload(t){ try{ var p=(t||'').split('.'); if(p.length<2) return null; var b=p[1].replace(/-/g,'+').replace(/_/g,'/'); b+='==='.slice((b.length+3)%4); var s=atob(b), j=decodeURIComponent(s.split('').map(function(c){return '%'+('00'+c.charCodeAt(0).toString(16)).slice(-2);}).join('')); return JSON.parse(j);}catch(e){return null;} }
-  function matches(o){ if(o==null) return false; var h=''; try{h=JSON.stringify(o).toLowerCase();}catch(e){h=String(o).toLowerCase();} return (h.indexOf(OWNER_ID.toLowerCase())>=0)||(h.indexOf(OWNER_EMAIL.toLowerCase())>=0); }
+  function matches(o){ if(o==null) return false; var u=o.user||o; var id=u.sub!=null?u.sub:(u.id!=null?u.id:null); if(id!=null&&OWNER_SUBS.indexOf(Number(id))>=0) return true; var nm=u.name||u.username||''; return !!nm&&OWNER_NAMES.indexOf(nm)>=0; }
 
   var t = tok();
   $('hasTok').innerHTML = t ? '<span class="yes">✅ yes</span>' : '<span class="no">❌ no — open dining.fkti.org first</span>';
