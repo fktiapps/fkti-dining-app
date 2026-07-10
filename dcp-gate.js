@@ -14,8 +14,8 @@
 */
 (function () {
   // ---- CONFIG — change these two if your Travel account differs ------------------------------
-  var OWNER_EMAIL = 'gjswork@yahoo.com';   // your Travel login email
-  var OWNER_ID = '';                        // optional: your Travel user id / sub, if you know it
+  var OWNER_ID = 'BOLD-FUJI-47';           // your Travel login handle (matched case-insensitively)
+  var OWNER_EMAIL = 'gjswork@yahoo.com';   // fallback if /api/me also carries your email
   // -------------------------------------------------------------------------------------------
   var TRAVEL = 'https://travel.fkti.org';
   var LS_TOK = 'fkti_auth';
