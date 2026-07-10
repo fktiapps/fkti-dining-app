@@ -1,5 +1,5 @@
 // Deeply Connected Dining — service worker. Bump VERSION to force an update.
-const VERSION = 'dcd-v117';
+const VERSION = 'dcd-v118';
 const SHELL = `shell-${VERSION}`;
 const DATA  = `data-${VERSION}`;
 const TILES = `tiles-${VERSION}`;
@@ -15,7 +15,9 @@ const SHELL_ASSETS = [
 
 self.addEventListener('install', e => {
   e.waitUntil(Promise.all([
-    caches.open(SHELL).then(c => c.addAll(SHELL_ASSETS)),
+    // Tolerant precache: add each asset individually so ONE failed fetch (e.g. a CDN blip or a
+    // mid-deploy 404) can't reject the whole install and leave the SW wedged with an empty cache.
+    caches.open(SHELL).then(c => Promise.allSettled(SHELL_ASSETS.map(a => c.add(a)))),
     // Precache the city data so the app works offline after first install.
     // Reads the manifest and caches every city file it lists (scales as cities are added).
     caches.open(DATA).then(async c => {
@@ -71,11 +73,29 @@ self.addEventListener('fetch', e => {
   // Do not cache the AI endpoint
   if (url.pathname.startsWith('/api/')) return;
 
-  // App shell + CDN: cache-first, fall back to network
+  // Page navigations: NETWORK-FIRST so the shell is always fresh (fixes stale-cache issues),
+  // fall back to cache, then index, then a minimal page — this branch can NEVER reject, so a
+  // wedged cache can't produce ERR_FAILED on a real page.
+  if (e.request.mode === 'navigate') {
+    e.respondWith((async () => {
+      try {
+        const net = await fetch(e.request);
+        if (net && net.status === 200 && url.origin === location.origin) {
+          const copy = net.clone(); caches.open(SHELL).then(c => c.put(e.request, copy));
+        }
+        if (net) return net;
+      } catch (_) { /* offline — fall through to cache */ }
+      return (await caches.match(e.request)) || (await caches.match('./index.html')) || (await caches.match('./'))
+        || new Response('<!doctype html><meta charset=utf-8><body style="font:16px system-ui;padding:24px">Offline — reconnect and reload.</body>', { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+    })());
+    return;
+  }
+
+  // Other shell assets (scripts/styles/CDN): cache-first, fall back to network, always resolve.
   e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request).then(r => {
     if (url.origin === location.origin || url.hostname.includes('cdnjs')) {
       const copy = r.clone(); caches.open(SHELL).then(c => c.put(e.request, copy));
     }
     return r;
-  }).catch(() => caches.match('./index.html'))));
+  }).catch(() => caches.match(e.request) || caches.match('./index.html') || Response.error())));
 });
