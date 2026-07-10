@@ -6,6 +6,9 @@ const TASKS = [
   'wejoiayj9', 'woh97nqp9', 'w362rluzs', 'wqz164n1b', 'wcx7x8l94', 'wc12jl5h6', 'w0svivyd9', 'wjazcdvox',
   // shards 8-15 (remaining 429)
   'wh76mpzb0', 'w8366pak7', 'w0n6hfzgk', 'w586w2v3b', 'w53bxm8ge', 'wj9dj5cly', 'wgnwx9sek', 'wc7zai1dz',
+  // shards 16-27 (wave 2: the 719 unverified after the spend-limit cut, geocode-free verify)
+  'wxx428u6b', 'wtcndfmmy', 'wslhr21ux', 'wer13vjii', 'waa92u9ia', 'wkofcgo89',
+  'wt27q39lt', 'wm7a7vc8f', 'wani7curb', 'whv2t6rmy', 'wys03p6aw', 'whnez9jei',
 ];
 const DIR = '/tmp/claude-0/-home-user-fkti-dining-app/3ad9a1de-30bc-5204-a99e-3293ca1d76eb/tasks';
 
