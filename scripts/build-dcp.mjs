@@ -1,6 +1,7 @@
 // Apply a DCP patch exported from dcp-tool.html onto the city data.
-// Patch shape: { <city>: { <id>: { greg_note, people?, order?, visited, _new_name?,
+// Patch shape: { <city>: { <id>: { greg_note, people?, order?, visited, tier?, _new_name?,
 //   photos?: [{ file, caption, data(base64 jpeg dataURL) }] } } }
+//   tier: 'deep' (deeply connected — years) | 'reviewed' (Greg visited once/twice). Missing = deep.
 // Photos are written to img/dcp/<file> and referenced by URL (never base64 in the data).
 // Usage: node scripts/build-dcp.mjs <patch.json>
 import fs from 'fs';
@@ -38,6 +39,7 @@ for (const [city, entries] of Object.entries(patch)) {
     }
     p.dcp = {
       greg_note: note, visited: dcp.visited || null,
+      tier: dcp.tier === 'reviewed' ? 'reviewed' : 'deep',
       ...(dcp.people ? { people: dcp.people } : {}),
       ...(dcp.order ? { order: dcp.order } : {}),
       ...(photos.length ? { photos } : {}),

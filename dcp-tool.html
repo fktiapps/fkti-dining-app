@@ -26,6 +26,12 @@
   .primary{background:var(--sakura);color:#fff}
   .ghost{background:#fff;border:1px solid var(--line)}
   .pill{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12px;color:var(--muted)}
+  .tierseg{display:flex;gap:8px;margin:6px 0}
+  .tierbtn{flex:1;text-align:center;line-height:1.25}
+  .tierbtn small{display:block;font-weight:400;font-size:11px;color:var(--muted)}
+  .tierbtn.on{background:var(--sakura);color:#fff;border-color:var(--sakura)}
+  .tierbtn.on small{color:#fff;opacity:.9}
+  .tierbtn.on[data-tier="reviewed"]{background:#5B7C99;border-color:#5B7C99}
   .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
   .results{max-height:220px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
   .res{padding:9px 11px;border-bottom:1px solid #f0eada;cursor:pointer}
@@ -69,7 +75,13 @@
     <div id="selName" style="font-weight:700;font-size:16px"></div>
     <div class="muted" id="selMeta"></div>
 
-    <label>The story — why this place is deeply connected</label>
+    <label>Type of entry</label>
+    <div class="tierseg">
+      <button type="button" class="ghost tierbtn" data-tier="deep">🌸 Deeply Connected<small>been going for years</small></button>
+      <button type="button" class="ghost tierbtn" data-tier="reviewed">✍️ Greg reviewed<small>visited once or twice</small></button>
+    </div>
+
+    <label id="noteLabel">The story — why this place is deeply connected</label>
     <textarea id="note" placeholder="The owner, the relationship, the moment, what makes it matter…"></textarea>
 
     <label>The people (owner / family / who you met)</label>
@@ -153,22 +165,33 @@ function search(){
   box.style.display='block';
   box.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>pick(el.dataset.id));
 }
+// Deeply Connected (years) vs Greg reviewed (once/twice). New entries default to a review — a
+// deeply-connected place is a deliberate, earned designation.
+function setTier(t){
+  if(!current)return; current.tier=(t==='deep')?'deep':'reviewed';
+  document.querySelectorAll('.tierbtn').forEach(b=>b.classList.toggle('on',b.dataset.tier===current.tier));
+  const deep=current.tier==='deep';
+  $('noteLabel').textContent=deep?'The story — why this place is deeply connected':'Your review';
+  $('note').placeholder=deep?'The owner, the relationship, the moment, what makes it matter…':'What you had, how it was, the vibe — would you go back?';
+}
 function pick(id){
   const p=PLACES.find(x=>x.id===id)||(drafts[id]&&{id,name:drafts[id].name,city:drafts[id].city});
   if(!p)return;
   const dr=drafts[id]||{};
-  current={id:p.id,name:p.name,city:p.city,isNew:!!dr.isNew,photos:(dr.photos||[]).slice()};
+  current={id:p.id,name:p.name,city:p.city,isNew:!!dr.isNew,photos:(dr.photos||[]).slice(),tier:dr.tier||'reviewed'};
   $('selName').textContent=p.name; $('selMeta').textContent=p.city+' · '+p.id+(dr.isNew?' · NEW (stub)':'');
   $('note').value=dr.greg_note||''; $('people').value=dr.people||''; $('order').value=dr.order||''; $('visited').value=dr.visited||'';
+  setTier(current.tier);
   $('editor').style.display='block'; $('saveMsg').textContent='';
   $('results').style.display='none'; renderThumbs(); $('editor').scrollIntoView({behavior:'smooth'});
 }
 function newPlace(){
   const name=prompt('New place name (include JP + English if you can):'); if(!name)return;
   const city=(prompt('City (kyoto / kanazawa / nara / hiroshima / other):','kyoto')||'other').trim().toLowerCase();
-  current={id:slug(name),name,city,isNew:true,photos:[]};
+  current={id:slug(name),name,city,isNew:true,photos:[],tier:'reviewed'};
   $('selName').textContent=name; $('selMeta').textContent=city+' · '+current.id+' · NEW (stub)';
   $('note').value='';$('people').value='';$('order').value='';$('visited').value='';
+  setTier('reviewed');
   $('editor').style.display='block'; $('saveMsg').textContent=''; renderThumbs(); $('editor').scrollIntoView({behavior:'smooth'});
 }
 async function renderThumbs(){
@@ -197,20 +220,20 @@ async function addPhotos(files,type){
 }
 function save(){
   if(!current)return;
-  drafts[current.id]={greg_note:$('note').value.trim(),people:$('people').value.trim(),order:$('order').value.trim(),visited:$('visited').value,name:current.name,city:current.city,isNew:!!current.isNew,photos:current.photos};
+  drafts[current.id]={greg_note:$('note').value.trim(),people:$('people').value.trim(),order:$('order').value.trim(),visited:$('visited').value,tier:current.tier||'reviewed',name:current.name,city:current.city,isNew:!!current.isNew,photos:current.photos};
   localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));
   $('saveMsg').textContent='saved ✓'; renderDrafts();
 }
 function renderDrafts(){
   const ids=Object.keys(drafts); $('cnt').textContent=ids.length;
-  $('drafts').innerHTML=ids.map(id=>{const d=drafts[id];const np=(d.photos||[]).length;return `<div class="card" style="margin:8px 0"><div class="row"><strong>${d.name}</strong> <span class="pill">${d.city}</span>${d.isNew?'<span class="pill">new</span>':''}${np?`<span class="pill">📷 ${np}</span>`:''}<button class="ghost" data-edit="${id}" style="margin-left:auto">edit</button><button class="ghost" data-del="${id}">✕</button></div><div class="muted">${(d.greg_note||'').slice(0,140)||'(empty)'}</div><div class="muted">${d.visited||'no date'}</div></div>`;}).join('');
+  $('drafts').innerHTML=ids.map(id=>{const d=drafts[id];const np=(d.photos||[]).length;return `<div class="card" style="margin:8px 0"><div class="row"><strong>${d.name}</strong> <span class="pill">${d.city}</span><span class="pill">${d.tier==='deep'?'🌸 deep':'✍️ review'}</span>${d.isNew?'<span class="pill">new</span>':''}${np?`<span class="pill">📷 ${np}</span>`:''}<button class="ghost" data-edit="${id}" style="margin-left:auto">edit</button><button class="ghost" data-del="${id}">✕</button></div><div class="muted">${(d.greg_note||'').slice(0,140)||'(empty)'}</div><div class="muted">${d.visited||'no date'}</div></div>`;}).join('');
   $('drafts').querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>pick(b.dataset.edit));
   $('drafts').querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{if(confirm('Delete this draft (and its photos)?')){for(const ph of (drafts[b.dataset.del].photos||[]))await delPhotoIDB(ph.key);delete drafts[b.dataset.del];localStorage.setItem(LS_DRAFTS,JSON.stringify(drafts));renderDrafts();}});
 }
 async function buildPatch(withPhotos){
   const out={};
   for(const [id,d] of Object.entries(drafts)){
-    const e={greg_note:d.greg_note,people:d.people||'',order:d.order||'',visited:d.visited||null};
+    const e={greg_note:d.greg_note,people:d.people||'',order:d.order||'',visited:d.visited||null,tier:d.tier||'reviewed'};
     if(d.isNew) e._new_name=d.name;
     if(withPhotos && (d.photos||[]).length){
       e.photos=[]; let n=1;
@@ -231,6 +254,7 @@ async function copyNotes(){
   try{ await navigator.clipboard.writeText(JSON.stringify(out,null,2)); alert('Notes copied (text only, no photos). Paste to Claude or into a file.'); }
   catch(_){ alert('Copy failed — use Export instead.'); }
 }
+document.querySelectorAll('.tierbtn').forEach(b=>b.onclick=()=>setTier(b.dataset.tier));
 $('loadBtn').onclick=load; $('q').oninput=search; $('newBtn').onclick=newPlace;
 $('saveBtn').onclick=save; $('cancelBtn').onclick=()=>{$('editor').style.display='none';};
 document.querySelectorAll('#photoBtns [data-ptype]').forEach(b=>b.onclick=()=>{pendingType=b.dataset.ptype;$('photoIn').click();});

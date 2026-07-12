@@ -165,6 +165,9 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .dcp-confirm{width:100%;margin-top:16px;padding:14px;border-radius:12px;background:var(--ink);color:#EDEFF8;font-size:14px;font-weight:700;touch-action:manipulation}
 .dcp-cancel{width:100%;margin-top:8px;padding:10px;border-radius:12px;background:none;color:var(--muted);font-size:13px;touch-action:manipulation}
 .dcp-note{background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:14px;margin:10px 0;font-size:13px;line-height:1.6;color:#5a3e00}
+.dcp-badge.reviewed{background:#EAF1F6;border:1.5px solid #5B7C99;color:#2C4A63}
+.dcp-badge.reviewed:active{background:#dce8f0}
+.dcp-note.reviewed{background:#EAF1F6;border:1px solid #a8c0d4;color:#26384a}
 .btn-more{background:var(--ver);color:#fff;padding:12px;border-radius:12px;font-size:13.5px;font-weight:600}
 .btn-bio{background:var(--ink);color:#EDEFF8;padding:12px;border-radius:12px;font-size:13.5px;font-weight:600;text-align:center}
 .btn-menu{padding:12px;border-radius:12px;font-size:13.5px;font-weight:600;text-align:center;text-decoration:none;display:block}
@@ -1408,7 +1411,7 @@ function _renderDetail(p){
   <div class="dmeta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${p.cuisine}${state.me?` · ${fmtDist(haversine(state.me.lat,state.me.lng,p.lat,p.lng))} away`:''}</div>
   ${p.category==='MOM_AND_POP'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;color:#5a3e00"><b>🏮 Mom &amp; Pop</b> — independently owned, under 30 seats, beloved by locals. <b>Maximum 4 people.</b> Dietary options vary — check the GF and vegan notes below. The experience here is the point.</div>`:''}
   ${renderComfort(p)}
-  ${p.dcp?`<button class="dcp-badge" id="dcpBtn">🌸 Deeply Connected Place — tap to read Greg's note</button>`:(p.category==='MOM_AND_POP'&&!p.dcp?`<div style="font-size:11px;color:var(--muted);text-align:center;margin:6px 0">Greg's note coming after the trip</div>`:'')}  
+  ${p.dcp?(dcpTier(p.dcp)==='reviewed'?`<button class="dcp-badge reviewed" id="dcpBtn">✍️ Greg reviewed here — tap to read</button>`:`<button class="dcp-badge" id="dcpBtn">🌸 Deeply Connected Place — tap to read Greg's note</button>`):(p.category==='MOM_AND_POP'&&!p.dcp?`<div style="font-size:11px;color:var(--muted);text-align:center;margin:6px 0">Greg's note coming after the trip</div>`:'')}
   <div class="dstatus">${openTag(p)}</div>
   ${flags.length?`<div class="flagchips">${flags.map(f=>`<span class="flagchip">${f}</span>`).join('')}</div>`:''}
   <div class="panel dietui"><h3>Gluten-free</h3>
@@ -1751,17 +1754,25 @@ function renderComfort(p){
 let dcpAcknowledged=false;
 let pendingDCPPlace=null;
 
+// A place is "deeply connected" (years-long relationship) unless explicitly marked as a one-off
+// "Greg reviewed" (visited once or twice). Missing tier = deeply connected (backward compatible).
+function dcpTier(d){return (d&&d.tier==='reviewed')?'reviewed':'deep';}
+
 function openDCP(p){
  if(!p.dcp) return;
  pendingDCPPlace=p;
+ // A one-off review isn't a deep relationship — show it directly, skip the acknowledgment gate.
+ if(dcpTier(p.dcp)==='reviewed'){ showDCPNote(p); return; }
  if(dcpAcknowledged){ showDCPNote(p); return; }
  document.getElementById('dcpModal').classList.add('open');
 }
 function showDCPNote(p){
  const out=document.getElementById('moreOut');
  const d=p.dcp||{}, TY={owner:'👤 Owner',menu:'📋 Menu',dish:'🍽 Signature',storefront:'🏠 The place',other:'📷'};
+ const reviewed=dcpTier(d)==='reviewed';
+ const header=reviewed?`✍️ Greg's review:`:`🌸 Greg's note:`;
  const photos=(d.photos||[]).map(ph=>`<figure style="margin:0"><img src="${ph.src}" alt="${(ph.caption||'').replace(/"/g,'&quot;')}" loading="lazy" style="width:100%;border-radius:10px;display:block"/><figcaption style="font-size:11px;color:var(--muted);margin-top:3px">${TY[ph.type]||'📷'}${ph.caption?' · '+ph.caption:''}</figcaption></figure>`).join('');
- out.innerHTML=`<div class="dcp-note"><b>🌸 Greg's note:</b><br><br>${d.greg_note||''}`
+ out.innerHTML=`<div class="dcp-note${reviewed?' reviewed':''}"><b>${header}</b><br><br>${d.greg_note||''}`
    +`${d.people?`<br><br><b>👤 The people:</b> ${d.people}`:''}`
    +`${d.order?`<br><br><b>🍽 What to order:</b> ${d.order}`:''}`
    +`${photos?`<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px">${photos}</div>`:''}`
