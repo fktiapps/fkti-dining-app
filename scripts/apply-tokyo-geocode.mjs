@@ -14,13 +14,19 @@ const hav = (a, b, c, e) => { const R = 6371, t = Math.PI / 180; const x = Math.
 const inBox = (lat, lng) => lat >= box.latMin - 0.01 && lat <= box.latMax + 0.01 && lng >= box.lngMin - 0.01 && lng <= box.lngMax + 0.01;
 const APPROX_NOTE = ' · 📍 Approx. map location — confirm the exact spot (auto-placed from address).';
 
-let accepted = 0, rejOut = 0, rejFar = 0, notFound = 0, dup = 0;
+// A result that just echoes our own approximate pin back (source points at tokyo.json / a
+// local file / localhost) is NOT an independent confirmation — accepting it would launder an
+// approximate coordinate into "precise". Reject those; they stay flagged approximate.
+const selfCite = s => /tokyo\.json|file:\/\/|localhost|127\.0\.0\.1|^\s*$/i.test(s || '');
+
+let accepted = 0, rejOut = 0, rejFar = 0, notFound = 0, dup = 0, rejSelf = 0;
 const seen = new Set();
 for (const r of rows) {
   const p = byId.get(r.id);
   if (!p || !p.loc_approx) continue;              // only refine pins still marked approx
   if (seen.has(r.id)) { dup++; continue; } seen.add(r.id);
   if (!r.found || r.lat == null || r.lng == null) { notFound++; continue; }
+  if (selfCite(r.source)) { rejSelf++; continue; } // echoed our own pin — not a real source
   const lat = Number(r.lat), lng = Number(r.lng);
   if (!inBox(lat, lng)) { rejOut++; continue; }
   const dist = hav(p.lat, p.lng, lat, lng);        // p.lat/lng is the current approx pin
@@ -40,5 +46,5 @@ let swv = '?';
 for (const f of ['sw.js']) { let s = fs.readFileSync(f, 'utf8'); const m = s.match(/dcd-v(\d+)/); if (m) { swv = Number(m[1]) + 1; s = s.split(`dcd-v${m[1]}`).join(`dcd-v${swv}`); fs.writeFileSync(f, s); } }
 const stillApprox = d.places.filter(p => p.loc_approx).length;
 console.log(`geocode applied: ${accepted} pins made precise | still approx: ${stillApprox}`);
-console.log(`rejected: ${rejOut} out-of-box, ${rejFar} >1.2km from estimate, ${notFound} not-found, ${dup} dup rows`);
+console.log(`rejected: ${rejOut} out-of-box, ${rejFar} >1.2km from estimate, ${rejSelf} self-cited, ${notFound} not-found, ${dup} dup rows`);
 console.log(`SW -> dcd-v${swv}`);
