@@ -52,6 +52,14 @@ export const CONFIGS = {
     specialties: ['信州そば', '戸隠そば', 'おやき', '精進料理 善光寺', '甘味処 長野'],
     comfort: 'A local spot near Zenkō-ji; a little Japanese or pointing helps.',
   },
+  // A 500 m circle around Nagano Station (~2 km south of Zenkō-ji, outside the nagano circle).
+  // Discovered separately, then MERGED into data/nagano.json (dedupe against the existing 104).
+  nagano_station: {
+    label: 'Nagano · Station', subtitle: '長野駅 · ベジ・グルテンフリー',
+    centers: [{ name: 'Nagano Station', area: '長野駅 長野', lat: 36.6432, lng: 138.1889, r: 0.5 }],
+    specialties: ['信州そば 長野駅', 'ラーメン 長野駅 名店', 'おやき 長野', 'ヴィーガン グルテンフリー 長野駅', '長野駅 居酒屋 郷土料理', '長野駅 定食 食堂'],
+    comfort: 'A spot around Nagano Station; a little Japanese or pointing helps.',
+  },
   nagoya: {
     label: 'Nagoya', subtitle: '名古屋城 · ベジ・グルテンフリー',
     centers: [{ name: 'Nagoya Castle', area: '名古屋城 周辺 名古屋', lat: 35.1856, lng: 136.8997, r: 1.61 }],
