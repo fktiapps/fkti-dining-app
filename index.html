@@ -658,7 +658,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v89';
+const APP_BUILD='dcd-v131';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -884,12 +884,34 @@ function reskinMarkers(){
  const ax=activeAxis();
  for(const [id,m] of Object.entries(state.markers)){ const p=state._pById[id]; if(p) m.setIcon(placeIcon(p,id===state.selected,ax)); }
 }
+// Display-only de-stack: many places share an identical landmark/centroid pin
+// (approx coords), so their markers overlap exactly and read as duplicates. Fan
+// co-located markers out in a small golden-angle spiral for DISPLAY only —
+// stored p.lat/p.lng (and all distance math) are untouched.
+function destackCoords(places){
+ const groups={}; for(const p of places){ const k=p.lat.toFixed(5)+','+p.lng.toFixed(5); (groups[k]=groups[k]||[]).push(p); }
+ const pos={};
+ for(const k in groups){
+  const g=groups[k];
+  if(g.length<2){ pos[g[0].id]=[g[0].lat,g[0].lng]; continue; }
+  const lat0=g[0].lat, lng0=g[0].lng, mPerLat=111000, mPerLng=111000*Math.cos(lat0*Math.PI/180);
+  g.forEach((p,i)=>{
+   if(i===0){ pos[p.id]=[lat0,lng0]; return; } // keep first on the true pin
+   const ang=i*2.399963, rad=9+7*Math.sqrt(i); // golden angle, ~9m step
+   pos[p.id]=[lat0 + (rad*Math.sin(ang))/mPerLat, lng0 + (rad*Math.cos(ang))/mPerLng];
+  });
+ }
+ return pos;
+}
 function drawMarkers(){
  Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={}; state._pById={};
  const ax=activeAxis();
- (state.cities[state.active]?.places||[]).forEach(p=>{
+ const places=state.cities[state.active]?.places||[];
+ const pos=destackCoords(places);
+ places.forEach(p=>{
   state._pById[p.id]=p;
-  const m=L.marker([p.lat,p.lng],{icon:placeIcon(p,false,ax),keyboard:false});
+  const ll=pos[p.id]||[p.lat,p.lng];
+  const m=L.marker(ll,{icon:placeIcon(p,false,ax),keyboard:false});
   m.on('click',()=>selectPlace(p.id)); m.addTo(map); state.markers[p.id]=m;
  });
 }
