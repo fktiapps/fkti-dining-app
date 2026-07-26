@@ -4,11 +4,13 @@ export const CONFIGS = {
   tokyo: {
     label: 'Tokyo', subtitle: '浅草・渋谷・水道橋・新宿 · ベジ・グルテンフリー',
     // Four 1-mile-diameter circles (≈0.8 km radius) per Greg. Union of the four.
+    // Expanded to five 3-mile-radius (4.83 km) circles per Greg — union ≈ all of central Tokyo.
     centers: [
-      { name: 'Sensōji (Asakusa)', area: '浅草寺 浅草 東京', lat: 35.7148, lng: 139.7967, r: 0.8 },
-      { name: 'Shibuya Scramble', area: '渋谷スクランブル交差点 渋谷 東京', lat: 35.6595, lng: 139.7005, r: 0.8 },
-      { name: 'Suidōbashi Station', area: '水道橋駅 神保町 千代田区 東京', lat: 35.7017, lng: 139.7539, r: 0.8 },
-      { name: 'Shinjuku Station', area: '新宿駅 新宿 東京', lat: 35.6896, lng: 139.7006, r: 0.8 },
+      { name: 'Tokyo Station (center)', area: '東京駅 丸の内 日本橋 銀座 神田 東京', lat: 35.6812, lng: 139.7671, r: 4.83 },
+      { name: 'Sensōji (Asakusa)', area: '浅草寺 浅草 東京', lat: 35.7148, lng: 139.7967, r: 4.83 },
+      { name: 'Shibuya Scramble', area: '渋谷スクランブル交差点 渋谷 東京', lat: 35.6595, lng: 139.7005, r: 4.83 },
+      { name: 'Suidōbashi Station', area: '水道橋駅 神保町 千代田区 東京', lat: 35.7017, lng: 139.7539, r: 4.83 },
+      { name: 'Shinjuku Station', area: '新宿駅 新宿 東京', lat: 35.6896, lng: 139.7006, r: 4.83 },
     ],
     specialties: [
       '浅草 ラーメン 名店 食べログ', '渋谷 ラーメン 名店 食べログ', '新宿 ラーメン 名店 食べログ', '神保町 水道橋 ラーメン 食べログ',
