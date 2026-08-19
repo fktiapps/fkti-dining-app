@@ -5517,7 +5517,67 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "ramen": {
+    "broth_base": [
+     "chicken",
+     "tonkotsu"
+    ],
+    "broth_texture": "paitan",
+    "tare": [
+     "shoyu",
+     "miso"
+    ],
+    "aroma_oil": [
+     "other"
+    ],
+    "richness": "kotteri",
+    "noodles": {
+     "thickness": "thin",
+     "shape": "straight",
+     "hydration": "unknown",
+     "handmade": null,
+     "notes": "Thin straight noodles — the right body for a soup this heavy, since they carry broth up out of the bowl instead of diluting it. Maker and hydration are not published."
+    },
+    "regional_style": [],
+    "sub_genre": [
+     "ramen"
+    ],
+    "signature_bowl": "粗濾醤油ラーメン — the \"coarse-strained\" soy bowl, and the shop's most-ordered. The chicken-and-pork broth is deliberately under-filtered so the fine solids stay suspended: it pours cloudy, drinks thick, and coats the noodles rather than running off them. The other two pillars of a seven-soup menu are an ebi-miso bowl built on shrimp, and a Matsusaka-beef horumon miso ramen (roughly ¥1,100–¥1,300) that swaps the pork out for braised offal from the yakiniku side of the business.",
+    "chashu": "Thick-cut pork chashu, laid on in slabs rather than shaved — exactly the hand you would expect from a shop whose front room is a horumon yakiniku grill. On the Matsusaka-beef bowl the chashu steps aside entirely for a heap of braised Matsusaka beef offal, the most distinctive protein in any Toba bowl.",
+    "notable_toppings": [
+     "thick-cut pork chashu",
+     "Matsusaka beef horumon (on the beef miso bowl)",
+     "spring onion",
+     "chicken wing tips (tebasaki), as a side"
+    ],
+    "gf": {
+     "status": "no",
+     "note": "Wheat chukamen, wheat soy-sauce tare, and a miso variant that may carry barley. No gluten-free option."
+    },
+    "vegan": {
+     "status": "no",
+     "note": "Chicken-and-pork bone broth in every bowl; the toppings are pork chashu or beef offal."
+    },
+    "pantheon": "Toba is a fishing port, but the soul of this soup is not the sea — it is the grill out front. Ura de Yatte Sou is literally the back room of Taishū Horumon Yakiniku Sō, opened on New Year's Eve 2019 so you could finish a night of offal and shochu without leaving the building, and the broth follows the meat: chicken and pork bones boiled hard into a paitan, then only roughly strained, so what reaches you is sticky, sediment-heavy and unapologetically animal. That 粗濾 (coarse-strain) decision is the whole identity — most shops chase clarity, this one keeps the murk on purpose, because murk is body. It belongs to no regional school but to the shime-no-ippai tradition: the 11pm bowl, salt and fat aimed squarely at a stomach already full of grilled intestine. The Matsusaka-beef horumon bowl is the local twist, folding Mie's most famous beef into a miso soup that eats more like a hotpot than a ramen — and the arm-wrestling discount tells you exactly how seriously the room takes itself.",
+    "profile": {
+     "richness": 5,
+     "oiliness": 4,
+     "clarity": 1,
+     "tare_strength": 4,
+     "noodle_firmness": 3,
+     "aroma_punch": 3
+    },
+    "confidence": "medium",
+    "sources": [
+     "https://www.instagram.com/uradeyatteso/",
+     "https://www.iseshima-kanko.jp/gourmet/121036",
+     "https://tabelog.com/en/mie/A2403/A240302/24020560/dtlrvwlst/",
+     "https://torus201102.com/ise-shima/archives/2868",
+     "https://www.hotpepper.jp/strJ001295905/"
+    ],
+    "last_checked": "2026-08-19"
+   }
   },
   {
    "id": "toba_toba_kokusai_hotel_washo",
@@ -6538,7 +6598,62 @@
     "level": "japanese",
     "note": "A small, family-run neighborhood diner where some Japanese will go a long way and English is unlikely; the owner (\"obachan\") is described by regulars as warm and kind."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "ramen": {
+    "broth_base": [
+     "chicken"
+    ],
+    "broth_texture": "chintan",
+    "tare": [
+     "shoyu"
+    ],
+    "aroma_oil": [
+     "none"
+    ],
+    "richness": "assari",
+    "noodles": {
+     "thickness": "medium",
+     "shape": "straight",
+     "hydration": "unknown",
+     "handmade": null,
+     "notes": "Thin-to-medium straight noodles, boiled soft in the diner manner rather than kept firm. No maker or spec is published."
+    },
+    "regional_style": [
+     "machi-shokudo chuka soba"
+    ],
+    "sub_genre": [
+     "ramen"
+    ],
+    "signature_bowl": "A plain 中華そば in the neighbourhood-diner idiom — clear chicken soup, soft straight noodles, under ¥1,000, sharing a menu page with udon, curry udon and set meals. The bowl regulars actually build their order around is the karaage: the fried chicken here is what the shop is known for, crisp-shelled and still juicy inside, arriving either as a set beside the noodles or piled straight into them.",
+    "chashu": "Not documented. No published photograph or write-up describes the chashu at Sasazuki, and it is quite possible the karaage is the protein that matters — in shokudo of this vintage the fried chicken often displaces the pork on the ramen altogether.",
+    "notable_toppings": [
+     "karaage (fried chicken)"
+    ],
+    "gf": {
+     "status": "no",
+     "note": "Wheat chukamen, in a kitchen boiling udon in the same water. No gluten-free option."
+    },
+    "vegan": {
+     "status": "no",
+     "note": "Chicken broth, and the udon side of the menu runs on fish dashi."
+    },
+    "pantheon": "This is not a ramen shop and has never claimed to be one — it is a five-seat machi no shokudo two minutes from Nakanogō Station, running since 1978, where the ramen sits between the curry udon and the fried-chicken teishoku. That places it in the great unnamed category of Japanese noodle cooking: shokudo chūka soba, the bowl that exists in every small town and belongs to no pantheon at all. What is documented is a chicken-led soup, light but with enough savour to hold up, over thin-to-medium straight noodles cooked soft; the tare is nowhere published, and a conventional shoyu is an inference from the idiom rather than a verified fact. Toba is a seafood town, but nothing here points to a fish-forward broth — the character comes instead from the room, and from an elderly proprietress who remembers what you ordered last time and sends you off with pickles and boiled sweets you did not ask for. Come for the karaage and the welcome, not for the anatomy of the soup.",
+    "profile": {
+     "richness": 2,
+     "oiliness": 2,
+     "clarity": 4,
+     "tare_strength": 2,
+     "noodle_firmness": 2,
+     "aroma_punch": 1
+    },
+    "confidence": "low",
+    "sources": [
+     "https://tabelog.com/mie/A2403/A240302/24004178/",
+     "https://retty.me/area/PRE24/ARE234/SUB23403/100000554620/",
+     "https://torus201102.com/ise-shima/archives/2868"
+    ],
+    "last_checked": "2026-08-19"
+   }
   },
   {
    "id": "toba_nagatokan",
@@ -8564,7 +8679,66 @@
     "level": "japanese",
     "note": "A local neighborhood Chinese diner where Japanese is expected and English is unlikely; basic Japanese or a translation app will make ordering smoother."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "ramen": {
+    "broth_base": [
+     "gyokai"
+    ],
+    "broth_texture": "chintan",
+    "tare": [
+     "shoyu"
+    ],
+    "aroma_oil": [
+     "none"
+    ],
+    "richness": "medium",
+    "noodles": {
+     "thickness": "medium",
+     "shape": "straight",
+     "hydration": "unknown",
+     "handmade": null,
+     "notes": "Straight noodles, described as medium to medium-thick — the plain machine-cut chukamen town-Chinese kitchens have bought in for decades, not a specialist's noodle."
+    },
+    "regional_style": [
+     "machi-chuka chuka soba"
+    ],
+    "sub_genre": [
+     "ramen"
+    ],
+    "signature_bowl": "The house ramen, or the ¥630 gomoku ramen with its scatter of vegetables and seafood across the top. Firsthand accounts describe a soup that is emphatically 節系 — dried-fish-flake dashi — and far more assertive than the price suggests: not the thin, apologetic soup you expect from a ¥600 diner bowl, but something with a smoky katsuo backbone that keeps going after the noodles are gone. Gyoza at ¥420 is the standard companion, and the ramen is only one line on a full machi-chuka menu of sweet-and-sour pork, mapo tofu, chuka-don and fried rice.",
+    "chashu": "Thin rounds of sliced pork chashu laid over the noodles in the old town-Chinese manner — a garnish rather than a centrepiece. It shares the surface with kamaboko, and that pink-and-white fish cake is the tell: this is a coastal Showa bowl, dressed the way a seaside kitchen dresses things.",
+    "notable_toppings": [
+     "kamaboko (fish cake)",
+     "bean sprouts",
+     "chopped spring onion",
+     "menma",
+     "nori"
+    ],
+    "gf": {
+     "status": "no",
+     "note": "Wheat chukamen and a wheat soy-sauce tare, in a Chinese kitchen full of shared wheat. No gluten-free option."
+    },
+    "vegan": {
+     "status": "no",
+     "note": "The broth is built on dried-fish dashi and the bowl carries pork and kamaboko."
+    },
+    "pantheon": "Benkei is a Showa-era machi-chūka — a family-run town-Chinese diner ten minutes on foot from Toba Station, three tables and two tatami alcoves, prices that have barely moved in decades. The soul of its ramen is 節: dried-fish flakes, the cheapest and most Japanese thing a Chinese kitchen can reach for, and in a fishing port that is exactly the right instinct. You taste smoke and sea before you taste anything Chinese, and the soup reads closer to a good soba tsuyu than to a ramen broth. What sits underneath the fish is not published, so whether chicken or pork bones support it is unverified — and one aggregator lists the soup as salt-led where the fuller firsthand account describes something darker and fish-driven, so read the shoyu tare here as likely rather than confirmed. The dressing is not in doubt: chashu, bean sprouts, spring onion, menma, and a slice of kamaboko. That fish cake is the argument for eating here — the topping that marks the bowl as belonging to a port town rather than to any ramen lineage, and one that has all but vanished from Japanese ramen everywhere else.",
+    "profile": {
+     "richness": 3,
+     "oiliness": 2,
+     "clarity": 4,
+     "tare_strength": 3,
+     "noodle_firmness": 3,
+     "aroma_punch": 3
+    },
+    "confidence": "low",
+    "sources": [
+     "https://tabelog.com/en/mie/A2403/A240302/24002414/",
+     "https://retty.me/area/PRE24/ARE234/SUB23403/LCAT5/CAT290/",
+     "https://www.hotpepper.jp/strJ000426810/"
+    ],
+    "last_checked": "2026-08-19"
+   }
   },
   {
    "id": "toba_izakaya_aji_no_yamamoto",
