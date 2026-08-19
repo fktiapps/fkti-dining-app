@@ -53,6 +53,7 @@ const wanted = args.filter(a => !a.startsWith('--'));
 const man = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
 const cities = (man.cities || []).filter(c => c.bounds && (!wanted.length || wanted.includes(c.id)));
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const failures = [];
 
 async function overpass(query) {
   for (let a = 0; a < MIRRORS.length * 3; a++) {
@@ -65,7 +66,7 @@ async function overpass(query) {
       return JSON.parse(text);
     } catch (e) {
       process.stderr.write(`    retry (${url.split('/')[2]}: ${e.message})\n`);
-      await sleep(4000 + a * 3000);
+      await sleep(8000 + a * 6000);
     }
   }
   throw new Error('all Overpass mirrors failed');
@@ -89,7 +90,16 @@ for (const c of cities) {
       : `[out:json][timeout:90];(nwr["shop"~"^(supermarket|greengrocer|health_food|organic)$"](${bbox});nwr["shop"="department_store"]["name"~"成城石井|カルディ|イオン"](${bbox}););out center tags;`;
 
     process.stderr.write(`${c.id} ${layer}: querying Overpass...\n`);
-    const data = await overpass(q);
+    let data;
+    try {
+      data = await overpass(q);
+    } catch (e) {
+      // Overpass rate-limits hard. Losing one city must not abandon the rest —
+      // an earlier run aborted at Nara and left five cities un-harvested.
+      failures.push(`${c.id} ${layer}`);
+      process.stderr.write(`  ${c.id} ${layer}: FAILED (${e.message}) — continuing\n`);
+      continue;
+    }
 
     const seen = new Set();
     const rows = [];
@@ -129,4 +139,10 @@ for (const c of cities) {
     process.stderr.write(`  ${c.id} ${layer}: ${rows.length} -> ${file}\n`);
     await sleep(2000);
   }
+}
+
+if (failures.length) {
+  process.stderr.write(`\nFAILED (Overpass unavailable): ${failures.join(', ')}\n`);
+  process.stderr.write('Re-run for just those cities once the rate limit clears.\n');
+  process.exitCode = 1;
 }
