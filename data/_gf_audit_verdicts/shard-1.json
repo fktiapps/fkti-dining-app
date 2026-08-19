@@ -1,0 +1,157 @@
+[
+ {
+  "id": "nagano_enishi",
+  "city": "nagano",
+  "name": "Enishi (縁-enishi- sorghum&glutenfree)",
+  "current_tier": "dedicated",
+  "verdict": "keep",
+  "recommended_tier": "dedicated",
+  "reasoning": "I tried to break this by hunting for wheat products on the premises, a closure, a shared-facility disclaimer, or any glutening report, and found none. Five mutually independent Japanese sources (Web-Komachi, Osakesuki/Aozora-meal visit report, Nagano BooooN, Nagano City Promotion interview, Deli-Koma listing) all independently state the workshop never brings wheat in at all — 「小麦は一切持ち込まない、グルテンフリー工房併設」 / 「小麦を一切持ち込まないグルテンフリーの工房で作られたパン」 — which is the shop's own policy repeated verbatim, plus a FindMeGlutenFree listing with a GF traveler's review confirming 'everything is sorghum based and gluten free' after eating ~5 items with no ill effect. The one genuine gap: the Nagano BooooN piece discloses ingredient-level wheat-free status but says nothing about facility control, and no source documents sorghum/rice flour milling-facility contamination controls; egg and dairy DO appear in some items, so the allergen card still matters. Own explicit claim + independent celiac-grade corroboration both present, so the dedicated bar is met.",
+  "sources": [
+   "https://www.web-komachi.com/?p=107764",
+   "https://osakesuki.jp/aozorameal/information/1645/",
+   "https://nagano.boooon.site/report/227/",
+   "https://nagano-citypromotion.com/nagalab/people/people12604/",
+   "https://www.findmeglutenfree.com/biz/enishi/6730605039058944",
+   "https://news.yahoo.co.jp/expert/articles/8edc23be7ea67e476f2fc969c505389baf5568ed",
+   "https://nagano.mypl.net/article/open-close_nagano/73672",
+   "https://akebono-shop.com/?mode=cate&cbid=2863392&csid=0"
+  ],
+  "independent_source_count": 5,
+  "red_flags": [
+   "No published statement on the sourced sorghum/rice flour's own milling-facility contamination controls — the wheat-free claim covers the shop's 工房 only.",
+   "Some baked goods contain egg and/or dairy; 卵・乳・小麦不使用 applies to specific items (丸パン, donuts), not the whole case.",
+   "Only one celiac-grade corroboration exists (a single FMGF review), and FMGF's own badge reads 'Gluten-Free Takeout Restaurant', not 'Dedicated' — its page returned 403 so the review text is from search-index snippet, not directly verified.",
+   "Name collision hazard: a separate, unrelated 酒処 縁（えにし） izakaya in Nagano appears on aggregator lists — do not confuse.",
+   "Latest confirmed operating evidence is 2023-2024 era; no 2026 re-confirmation of hours was obtainable (own site enishi-sorghum.com would not resolve on repeated fetches)."
+  ],
+  "plain_rice": "N/A — retail bakery/sweets counter, no cooked gohan served.",
+  "identity_ok": true,
+  "identity_note": "Confirmed: 縁-enishi- sorghum&glutenfree, 長野県長野市若里2-1-23, opened 2023-04-08, operated by AKEBONO. Distinct from the unrelated 酒処 縁（えにし） in Nagano.",
+  "needs_greg": true
+ },
+ {
+  "id": "nagano_riz_karuizawa",
+  "city": "nagano",
+  "name": "Riz Karuizawa (リズ カルイザワ)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "I specifically hunted the classic 米粉パン trap — added vital wheat gluten (活性グルテン), which Japan's Consumer Affairs Agency warns causes wheat-allergy incidents in rice-flour breads — and the published ingredient list (特別栽培米コシヒカリの米粉・キビ砂糖・ココナツオイル・こめ油・白神こだま酵母・天然塩, plus 大豆粉/アーモンド粉/ひえ粉 in some items) contains no gluten, and no source shows any wheat product sold. But 'dedicated' fails on evidence, not on suspicion: there is no shop statement of a wheat-free facility or CC protocol anywhere I could reach, the in-store allergen board covers only egg and milk, one of the very sources cited on the record (naganogourmetbekkan) tells readers to verify allergens with staff rather than assume wheat-free, and the only celiac-grade item is a FindMeGlutenFree page I could not load (403) whose badge reads 'Gluten-Free Friendly Bakery', not 'Dedicated'. Four independent Japanese sources do consistently describe a rice-flour-only gluten-free bakery, which clears the `high` bar; nothing clears the dedicated bar.",
+  "sources": [
+   "https://www.weeeeks.jp/shop/riz_karuizawa/",
+   "https://pikyosama.exblog.jp/33142144/",
+   "https://naganogourmetbekkan.net/rizkaruizawa/",
+   "https://www.web-komachi.com/?p=145598",
+   "https://simple-yuumin.com/riz-karuizawa-17310",
+   "https://www.findmeglutenfree.com/biz/riz/6512591004631040",
+   "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/pdf/syokuhin1549.pdf"
+  ],
+  "independent_source_count": 4,
+  "red_flags": [
+   "No shop-published wheat-free-facility or cross-contamination statement found; the in-store allergen board covers egg and milk ONLY, not wheat.",
+   "naganogourmetbekkan explicitly advises verifying allergens with staff rather than assuming the shop is entirely wheat-free.",
+   "FindMeGlutenFree badge is 'Gluten-Free Friendly Bakery', not 'Dedicated' (page 403 — not directly verified); the single reviewer is described as gluten-intolerant, not celiac.",
+   "Generic sector risk (CAA advisory): 米粉パン frequently contains added gluten — Riz's published ingredients do not, but there is no allergen label or ingredient card confirmed on the product itself.",
+   "Multi-flour bakery (soy, almond, millet) — relevant for other allergens and shows a shared mixing environment, even if wheat-free.",
+   "Tiny window-service operation, Fri/Sat/Sun + alternate Mon 11:00-15:00 only; easy to find closed.",
+   "Geographically not Nagano City — it is Karuizawa (発地, Kitasaku-gun), ~70 km away."
+  ],
+  "plain_rice": "N/A — takeaway bakery window, no cooked gohan served.",
+  "identity_ok": true,
+  "identity_note": "Business confirmed: Riz Karuizawa, レイクニュータウン軽井沢 NAGAYA-B, 北佐久郡軽井沢町発地553-3, opened 2023. Note the record files it under city 'nagano' while it is in Karuizawa Town — prefecture-level bucketing, not a wrong business. Also distinct from the unrelated 'Riz Gluten-Free' in Toronto, which dominates English search results.",
+  "needs_greg": true
+ },
+ {
+  "id": "toba_yamada_sanpou",
+  "city": "toba",
+  "name": "Yamada Sanpou (山田三方)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "The entire gluten-free claim traces to exactly ONE source — the shop's own 2024-03-03 news post — which the record itself concedes is a self-declaration. The apparent second source, a Tabelog review titled 『グルテンフリー米粉にリニューアル』, is derivative: the reviewer simply restates the shop's announcement wording (「生地にもカスタードにもチョコクリームにも三重県産米粉を使用し、完全グルテンフリーになりました」), so it is not independent verification of handling. I searched for any celiac-grade listing (FindMeGlutenFree, HappyCow, GF-Japan lists) and for allergen labeling and found nothing at all; the shop's own site publishes no allergen statement, makes no wheat-free-facility claim, and sells other items (粒あん, ice cream) whose ingredients are undisclosed. Per the hard rule, a single source cannot support dedicated or high; the shop's specific, credible product claim supports `options` with mandatory phone confirmation.",
+  "sources": [
+   "https://yamadasampou.com/news/137/",
+   "https://yamadasampou.com/",
+   "https://tabelog.com/mie/A2403/A240301/24019099/dtlrvwlst/B452334907/",
+   "https://www.iseshima-kanko.jp/gourmet/3083",
+   "https://yamadasanpou.stores.jp/"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "Single-source claim: only the shop's own announcement; the Tabelog review restates that announcement rather than independently verifying handling.",
+   "Zero celiac-grade corroboration — not on FindMeGlutenFree, HappyCow, or any GF-Japan list I could find.",
+   "No wheat-free-facility statement and no allergen labeling published anywhere; the announcement covers the 三方焼 product line only.",
+   "Shop also sells 粒あん and ice cream with no disclosed ingredients — commercial anko and ice cream are common vectors for wheat-derived thickeners/inclusions.",
+   "Griddle-baked filled cake on shared plates/utensils in a tiny counter shop; no separation protocol documented.",
+   "定休日 不定休 (irregular closing days) — may be shut without notice.",
+   "Domain/handle inconsistency in the record: website yamadasampou.com but store link yamadasampou.stores.jp, while the live store is yamadasanpou.stores.jp."
+  ],
+  "plain_rice": "N/A — single-product wagashi counter, no cooked gohan served.",
+  "identity_ok": true,
+  "identity_note": "Business correctly identified: 山田三方, 三重県伊勢市本町2-1号 駅前ビル1階, opened 2022-05-20, 9:00-18:00, taiyaki/大判焼き category. BUT the record files it under city 'toba' when it is in ISE CITY at Iseshi Station — the neighborhood field says Ise, so this is a city-bucket mismatch the caretaker should confirm is intentional.",
+  "needs_greg": false
+ },
+ {
+  "id": "hiro_miyajima_base",
+  "city": "hiroshima",
+  "name": "ミヤジマベース (Miyajima Base)",
+  "current_tier": "high",
+  "verdict": "keep",
+  "recommended_tier": "high",
+  "reasoning": "I went looking for a reason to drop this below high and instead found the prior downgrade from dedicated fully vindicated plus two independent confirmations that high holds. The disproof of 'dedicated' is now explicit and concrete: the celiac blogger at Endless Distances states 'there are currently NO dedicated gluten free restaurants in Hiroshima' AND that 'their eel conger bowl contains gluten, but it is prepared separately and they warned me about this' — so wheat is demonstrably present in the kitchen. Supporting high: the same firsthand celiac account documents rice flour, gluten-free soy sauce, separate oil and separate utensils, and the Japanese allergy-specialist outlet DESSA independently confirms 「食事は全て小麦・卵・乳不使用」 with allergen labeling printed on the menu, alongside the shop's own 「食事は小麦・卵・乳完全不使用」 and a FMGF/atly listing with GF reviews and no illness reports. One serious historical red flag: they previously marketed items as gluten-free while using ordinary soy sauce and only corrected it after a celiac advocate confronted them.",
+  "sources": [
+   "https://www.endlessdistances.com/gluten-free-hiroshima-japan/",
+   "https://dessa-allergy.com/akane20241115/",
+   "https://miyajima-base.com/",
+   "https://miyajima-base.com/allergy/",
+   "https://hiroshima-starters.com/life/tellme_miyajima-base.html",
+   "https://www.findmeglutenfree.com/biz/miyajima-base/4538960132571136",
+   "https://www.atly.com/gluten-free/location/MiyajimaBase"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "NOT dedicated: the anago (conger eel) bowl contains gluten and is prepared in the same kitchen — wheat is on the premises.",
+   "Track record flag — the shop once sold items labeled gluten-free while using regular wheat soy sauce; corrected only after a celiac customer intervened. Self-declarations here have been wrong before.",
+   "DESSA notes 「※ドリンクメニューなど一部はアレルゲン使用です」 — drinks are NOT covered by the wheat/egg/dairy-free claim.",
+   "'Separate oil' for the GF item logically implies a second, non-GF oil exists in the same kitchen.",
+   "No published cross-contamination protocol; the allergy page renders only headings, so the actual allergen table could not be read.",
+   "Seasonal/irregular closures (e.g. a winter closure Jan 20-26) and hours published only via Google Maps."
+  ],
+  "plain_rice": "Likely yes — curry and rice-bowl dishes mean cooked white rice is on hand; order gohan plain, no curry roux, no tare, and confirm the anago-bowl sauce never touches it.",
+  "identity_ok": true,
+  "identity_note": "Confirmed: CAFE ミヤジマベース, 広島県廿日市市宮島町310, ~5 min from Itsukushima Shrine, rice-flour karaage + spice curry cafe with coworking, open as of the most recent sources.",
+  "needs_greg": true
+ },
+ {
+  "id": "hiro_ninin",
+  "city": "hiroshima",
+  "name": "ニニン (ninin)",
+  "current_tier": "high",
+  "verdict": "keep",
+  "recommended_tier": "high",
+  "reasoning": "I tried to find a wheat item on the menu, a glutening report, or evidence the GF claim covers only part of the offering, and came up empty across Tabelog's 16 reviews, the BASE online shop, and four Japanese food-media write-ups. The shop's own branding is a whole-business claim (Instagram: 「手あみ焙煎コーヒー┆プラントベース・グルテンフリー」), and the strongest handling evidence is a direct owner quote at Modokimaru on screening ingredients for hidden wheat — 「小麦粉が含まれているものもあるので、入ってないものだけ使ってます」 (about plant milks) — corroborated by pecomag and masacoffee describing the sweets as 小麦・乳・卵を使わない. What I could NOT find is any celiac-grade source at all: no FindMeGlutenFree entry, no HappyCow celiac review, and it is absent from the Endless Distances Hiroshima celiac guide, and no source documents any cross-contamination control. Two-plus independent credible sources of real GF handling keep it at high; nothing supports dedicated.",
+  "sources": [
+   "https://www.modokimaru.com/entry/gourmet/231208",
+   "https://pecomag.jp/39122/",
+   "https://masacoffee.jp/ninin",
+   "https://note.com/hitokuchime_1031/n/nfca56136e61b",
+   "https://www.instagram.com/ninin_hiroshima/",
+   "https://nininshop.base.shop/",
+   "https://tabelog.com/en/hiroshima/A3401/A340118/34030741/dtlrvwlst/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "Zero celiac-grade corroboration: no FindMeGlutenFree or HappyCow celiac review, and absent from the Endless Distances Hiroshima celiac guide.",
+   "No cross-contamination protocol published anywhere; the BASE online shop lists no ingredients or allergen statements for any product.",
+   "pecomag scopes the GF claim to the sweets rather than the premises; Modokimaru explicitly stops short of saying every item is wheat-free.",
+   "Owner-level diligence is documented at the INGREDIENT level (screening plant milks) — nothing documented at the facility/equipment level.",
+   "Small two-person cafe; the 'allergic child can choose anything' account is a warm anecdote, not a verified handling standard.",
+   "Closed Tue/Wed, 10:00-18:00 — verify before travelling."
+  ],
+  "plain_rice": "N/A — coffee stand with baked sweets only; no cooked gohan served (genmaicha and a 米粉 carrot cake are the only rice-derived items).",
+  "identity_ok": true,
+  "identity_note": "Confirmed: ninin, 広島市中区白島北町12-2, ~5 min from JR Shin-Hakushima Stn, opened 2023-03-27, husband-and-wife hand-roast coffee stand with plant-based/GF sweets. Category in the record ('coffee stand and cafe') matches Tabelog's コーヒースタンド classification.",
+  "needs_greg": true
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": "kz_conconto",
+  "city": "kanazawa",
+  "name": "Conconto Kashiten (コンコント菓子店)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "Identity confirmed (石川県金沢市横川5-267, 代表 大平弘二, opened May 2017) and the shop is still trading, but I disproved the label's central premise. The record's whole case rests on a 2017 Kanazawa Keizai Shimbun article quoting 「全商品…特定原材料7品目は使わず、米や豆など植物性の食材のみでつくる」 — and the shop's OWN PR Times release of 2025-10-02 states 「2025年からは乳製品・卵も取り入れた『Oishii糀スイーツ』シリーズを本格展開」 with a product whose 主な原材料 are 脱脂粉乳, 北海道産生クリーム, 米粉 and 卵. Two of the 7 designated allergens are therefore now handled in that kitchen, so the inference 'wheat is never present on site' no longer follows, and no current wheat/gluten statement, no celiac-grade listing (not on the japan-glutenfree.com all-GF bakery list, no HappyCow/FindMeGlutenFree celiac review) corroborates it. Rice-flour sweets almost certainly remain, so options — not dedicated.",
+  "sources": [
+   "https://prtimes.jp/main/html/rd/p/000000001.000166108.html",
+   "https://kanazawa.keizai.biz/headline/2831/",
+   "http://asap.blog.jp/archives/23742295.html",
+   "https://manpuku-kanazawa.com/concont-maron/",
+   "https://www.kanazawabiyori.com/spot/spot_13194.html",
+   "https://jp.japan-glutenfree.com/bakery-gf/"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "Shop's own 2025 press release confirms it now uses 乳製品 and 卵 — the '7 allergens never enter this kitchen' basis for the dedicated label is factually obsolete",
+   "gf_detail currently asserts 'no wheat is used or baked anywhere on site' and 'cross-contact risk is very low' — an active over-claim that must be rewritten",
+   "vegan_status 'full' is now FALSE (dairy + egg line since 2025) — separate safety-relevant error outside the GF tier",
+   "All evidence in the record dates to 2017; nothing post-dates the 2025 product-line change",
+   "No celiac-grade corroboration found anywhere; not on the national all-GF bakery list",
+   "Unconfirmed chatter about a relocation from the Yokogawa site — could not verify either way"
+  ],
+  "plain_rice": "No — patisserie/cafe only, no plain gohan served.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "kz_miron",
+  "city": "kanazawa",
+  "name": "Miron Rice-Flour Bakery (ふぁすとふーど＆お米パン miron)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "Identity confirmed (〒929-0323 河北郡津幡町津幡ニ504-1, tel 076-255-2382, opened May 2022, active on the Tsubata town business directory). The bakery side holds up: the shop states 「パン生地は小麦・卵・乳・香料・保存料を使用しておりません」, it is listed on the national all-GF bakery guide (jp.japan-glutenfree.com, ★★★★, a list whose stated criterion is 店内の商品はすべて小麦不使用), and independent food media report 「完全グルテンフリー」. What I disproved is the whole-premises claim: this is a 「ふぁすとふーど」 shop selling fried karaage and hamburger bento, and its own directory entry hedges with 「基本的に原材料はグルテンフリーにこだわっております」 — 基本的に, not 全て. No source documents the fryer, the coating flour, or whether the bento seasoning uses wheat 醤油, so dedicated is not supportable; the bread/chiffon/cookie side still clears the high bar.",
+  "sources": [
+   "https://tubatabiz.shoko.or.jp/company/432/",
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://umaumatankentai.com/report/1457/",
+   "https://www.weekend-kanazawa.com/entry/miron",
+   "https://manpuku-kanazawa.com/miron/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "Shop's own wording is hedged — 「基本的に原材料はグルテンフリー」 — and the hard no-wheat statement is scoped to パン生地 only, not the premises",
+   "Fast-food/bento operation with a fryer (karaage, hamburger); no dedicated-fryer or coating-flour statement found in any source",
+   "No 醤油/tamari statement anywhere — bento seasoning wheat content undocumented",
+   "No celiac-grade review (no HappyCow/FindMeGlutenFree entry); corroboration is a curated GF list plus Japanese food media, not celiac testimony",
+   "Record cites the stale glutenfree.empacede.co.jp URL, which now 301s to jp.japan-glutenfree.com",
+   "Not in Kanazawa — Tsubata-cho, Kahoku-gun, ~20 min by train"
+  ],
+  "plain_rice": "Yes — sells おにぎり and bento built on 特別栽培米コシヒカリ; ask for plain unseasoned rice, not the seasoned/fried bento sides.",
+  "identity_ok": true,
+  "identity_note": "Correctly described, but filed under city 'kanazawa' while physically in Tsubata-cho, Kahoku-gun, Ishikawa — the record does disclose this.",
+  "needs_greg": true
+ },
+ {
+  "id": "kz_soya",
+  "city": "kanazawa",
+  "name": "SOYA (宗屋)",
+  "current_tier": "dedicated",
+  "verdict": "keep",
+  "recommended_tier": "dedicated",
+  "reasoning": "I tried hard to break this one and could not. Identity confirmed (〒929-0113 石川県能美市大成町チ81-1, ~5 min from JR Nomi-Neagari, opened Nov 2021, still trading — site notice dated 2025-12-27 and the online shop carries 2025/2026 stock). The shop's own explicit claim is unambiguous and repeated: 「小麦粉は一切使わず」, 「小麦、乳、卵不使用のパン生地をベースにしております」, 「小麦、卵、乳製品を一切つかわないグルテンフリーの玄米パン」, cookies 「特定原材料27品目不使用」, with in-house milling of their own organic brown rice. Independent celiac-grade corroboration exists: the national all-GF bakery guide lists 宗屋 at ★★★★★ with the note 「小麦粉、小麦グルテンは使用していません」 under a criterion of 店内の商品はすべて小麦不使用, and separate Japanese food blogs and Ishikawa TV coverage report 小麦不使用. I found no glutening report, no wheat product line, and no shared-facility caveat anywhere.",
+  "sources": [
+   "https://soya-come.com/",
+   "https://soya-come.com/menu/bread/",
+   "https://soya-come.com/shop-info/",
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://asap.blog.jp/archives/48554960.html",
+   "https://yasapan.shop-pro.jp/",
+   "https://www.ishikawa-tv.com/palette/%E8%83%BD%E7%BE%8E%E5%B8%82%E5%A4%A7%E6%88%90%E7%94%BA%E3%80%80part-3/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "No published third-party certification or ppm testing — the wheat-free facility is a self-declaration, corroborated but not laboratory-verified",
+   "Savory rolls (curry bread, bacon epi, cheese) may carry soy-derived seasoning; no explicit tamari/GF-soy statement published",
+   "Not in Kanazawa — Nomi City, ~40 min south; a day trip or mail order, not a walk-up",
+   "Record cites the stale glutenfree.empacede.co.jp URL, which now 301s to jp.japan-glutenfree.com"
+  ],
+  "plain_rice": "Partly — sells rice-based おにぎり; no plain-gohan table service (it is a bakery, not a restaurant).",
+  "identity_ok": true,
+  "identity_note": "Correctly described, but filed under city 'kanazawa' while physically in Nomi City, Ishikawa — the record does disclose this.",
+  "needs_greg": true
+ },
+ {
+  "id": "kz_kokone",
+  "city": "kanazawa",
+  "name": "Komeko Chiffon Kokone (米粉シフォン 心寧)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "Identity confirmed and the shop is alive (石川県加賀市小菅波町1-130 クロスガーデン加賀2F, opened 2024-01-20, Tabelog carries a review as recent as 2026-06). What fails is the evidence chain. The record's load-bearing quote 「調理場含め、作業場等に小麦粉は一切置いていない」 is cited to kagakokone.thebase.in/p/00001, and that BASE store is now dead — it 302s to thebase.com, so the shop's own statement is no longer verifiable at the cited source. The only live trace is weekend-kanazawa relaying it in hearsay form 「…小麦アレルギーの方も安心して食べられるそう」; ishikawa-style.com and the asap.blog visit report make no wheat or gluten statement at all, the shop is absent from the national all-GF bakery list, and there is no HappyCow or FindMeGlutenFree celiac review. That is one underlying source — the shop itself — so the hard rule caps this at options.",
+  "sources": [
+   "https://www.weekend-kanazawa.com/entry/kokone",
+   "https://ishikawa-style.com/kokone_chiffon/",
+   "https://asap.blog.jp/archives/51137217.html",
+   "https://tabelog.com/ishikawa/A1702/A170201/17014369/",
+   "https://www.instagram.com/kokone_chiffon/",
+   "https://jp.japan-glutenfree.com/bakery-gf/"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "The shop's own cited evidence page (kagakokone.thebase.in) is DEAD — redirects to thebase.com; the verbatim no-wheat-on-premises quote could not be reproduced at any live source",
+   "Only surviving version of the claim is a local blog relaying it with the hearsay marker 「そう」",
+   "Not on the national all-GF bakery list; no celiac-grade review found",
+   "Uses eggs (加賀市産の卵) — not a plant-based/allergen-free operation, so no allergen-program inference is available",
+   "Operates on the 2F of a shared commercial building (クロスガーデン加賀); no information on whether baking is on-site or in a shared commercial kitchen",
+   "Phone number differs between sources (090-9765-9267 vs 080-6357-7056)",
+   "Not in Kanazawa — Kaga City, near Kaga-Onsen Station"
+  ],
+  "plain_rice": "No — chiffon cake and coffee only, no gohan.",
+  "identity_ok": true,
+  "identity_note": "Correctly described, but filed under city 'kanazawa' while physically in Kaga City, Ishikawa (~30+ min by limited express) — the record does disclose this.",
+  "needs_greg": false
+ },
+ {
+  "id": "kz_qui_hakusan",
+  "city": "kanazawa",
+  "name": "Hakusan Quiche House QUI (白山キッシュハウス QUI)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "Identity confirmed (〒920-2114 石川県白山市八幡町ヌ26-1, tel 076-214-6939, 11:00-16:00 LO, closed Tuesdays, Hakusan City local-production recommended shop). The ingredient side survives — I pulled the full 原材料 for the quiche set and found no 小麦 and no 醤油, with 自家製タルト生地 built on 米粉(白山市製造), corn starch, almond powder and rice oil, and the shop does claim 「当店のキッシュは全てグルテンフリーとなっております」. But the label cannot stand: the ONLY allergen protocol the shop publishes is 「全ての商品にたまご・乳製品を使用」 plus 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 — a shared-facility warning written for egg and dairy that makes no gluten guarantee at all. The two apparent corroborations (urara-hakusanbito tourism page, tefutefusanpo blog) both explicitly relay the shop's own marketing rather than verify it, the shop is absent from the national all-GF bakery list, and no celiac-grade review exists. One underlying source, no cross-contact statement — options.",
+  "sources": [
+   "https://www.qui-hakusan.com/",
+   "https://www.qui-hakusan.com/products/%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E7%B1%B3%E7%B2%89%E3%82%AD%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BB%E3%83%83%E3%83%88",
+   "https://www.urara-hakusanbito.com/gourmet/detail_1460.html",
+   "https://www.tefutefusanpo.net/2020-06-17-123000/",
+   "https://www.city.hakusan.lg.jp/machi/chisanchisyo/1004942/1005039/1005066.html",
+   "https://jp.japan-glutenfree.com/bakery-gf/"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "Published shared-facility warning 「全ての商品が同じ場所で作られております」 with NO gluten/wheat cross-contamination statement anywhere",
+   "「全ての商品にたまご・乳製品を使用」 — allergen disclosure is built around egg and dairy; gluten is simply not addressed as a handling question",
+   "Both 'corroborating' sources are relaying the shop's own claim; the tourism page is marketing copy, not verification",
+   "Not on the national all-GF bakery list; no HappyCow/FindMeGlutenFree celiac review",
+   "Savory quiches carry ブイヨン and 塩麴; no tamari/GF-soy statement published for any savory item",
+   "Not in Kanazawa — Hakusan City, Shishiku Kogen area, requires a car or bus",
+   "Reports of a Korinbo Tokyu Square outlet — a department-store counter would be a different, likely worse, cross-contact environment than the main shop; unverified"
+  ],
+  "plain_rice": "No — quiche, rice-flour bread, tarts and cookies only; no plain gohan.",
+  "identity_ok": true,
+  "identity_note": "Correctly described, but filed under city 'kanazawa' while physically in Hakusan City, Ishikawa — the record does disclose this.",
+  "needs_greg": false
+ }
+]

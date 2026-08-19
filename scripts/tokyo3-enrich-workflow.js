@@ -12,7 +12,9 @@ export const meta = {
   phases: [{ title: 'Enrich' }],
 }
 const A = (typeof args === 'string' ? JSON.parse(args) : args) || {};
-const TARGETS = A.targets || [];
+// targetsEnc = encodeURIComponent(JSON.stringify(targets)) - keeps the tool-call
+// args pure-ASCII so Japanese names don't trip the permission-dialog renderer.
+const TARGETS = A.targetsEnc ? JSON.parse(decodeURIComponent(A.targetsEnc)) : (A.targets || []);
 
 const SCHEMA = {
   type: 'object', additionalProperties: false,
@@ -64,20 +66,20 @@ PLACE
   name: ${t.name}
   neighborhood (approx): ${t.neighborhood}
   cuisine signal: ${t.cuisine}
-  known website: ${t.website || '(none — find it)'}
+  known website: ${t.website || '(none - find it)'}
   google maps: ${t.gmaps || ''}
 
 DO THIS
 1. WebFetch the restaurant's own website if known; otherwise WebSearch to find it, then fetch it. Also fetch/search its Tabelog page and a maps link.
-2. Real coordinates: derive precise lat/lng from the official site / maps / address (Chōme-level). Only set lat/lng if you are confident — otherwise OMIT them (the approx pin stays).
+2. Real coordinates: derive precise lat/lng from the official site / maps / address (Chome-level). Only set lat/lng if you are confident - otherwise OMIT them (the approx pin stays).
 3. Hours: hours_raw (human string) + hours_status ('regular' if a fixed weekly schedule, else 'irregular').
-4. Gluten-free (be strict — a celiac may rely on this):
+4. Gluten-free (be strict - a celiac may rely on this):
    - 'dedicated' only if a dedicated GF kitchen/fryer; 'high' strong focus; 'options' some real GF items; 'ask' unclear; 'no' clearly not.
-   - 十割/juwari soba is NOT gluten-free (wheat cross-contamination + wheat-soy-sauce tsuyu) → 'ask' at best, and SAY SO in gf_detail.
+   - Juwari (10-wari) soba is NOT gluten-free (wheat cross-contamination + wheat-soy-sauce tsuyu) -> 'ask' at best, and SAY SO in gf_detail.
    - gf_detail: concrete, cite the wheat risks you actually found (soy sauce, tempura batter, shared fryer, flour dusting).
 5. Vegan: full/options/limited/ask/no. Flag hidden dashi/bonito. vegan_detail concrete.
 6. category: reclassify if the evidence warrants (BOTH/GF/VEGAN/SHOJIN/MOM_AND_POP/OMNI).
-7. chef_bio: chef_name, background, philosophy, specialty, up to 3 anecdotes each with a source URL, confidence, sources[]. Empty/low confidence is fine if nothing found — do NOT invent.
+7. chef_bio: chef_name, background, philosophy, specialty, up to 3 anecdotes each with a source URL, confidence, sources[]. Empty/low confidence is fine if nothing found - do NOT invent.
 8. safety: fryer, cross-contamination notes, staff allergy handling, positives, confidence, last_checked '2026-07-26'.
 9. cultural_comfort.level: guide_only / japanese / konnichiwa / english (how much English/help a foreign diner can expect).
 10. enrich_confidence overall, and sources[] (every URL you actually used).

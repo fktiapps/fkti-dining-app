@@ -1,0 +1,71 @@
+{
+ "version": "2026-08-13",
+ "title": "Reliable-Chain GF / Vegan Guide",
+ "disclaimer": "Decision support, not a safety guarantee. These are nationwide chains that give a celiac or vegan a dependable FALLBACK when no curated restaurant is nearby. Each is reliable ONLY for the specific item named below — never the standard menu. Nothing here is certified gluten-free; always declare your allergy and confirm at the branch (menus rotate seasonally).",
+ "tiers": {
+  "gf": { "reliable": "A specific item is genuinely wheat-free (often sealed/retort) — celiac-defensible", "limited": "Navigable but strict — you must order around the wheat; shared-kitchen risk", "none": "Not celiac-safe — wheat is unavoidable" },
+  "vegan": { "reliable": "A specific item is genuinely animal-free", "limited": "Only by assembling / one narrow item; hidden-animal traps", "none": "No reliable plant-based option" }
+ },
+ "chains": {
+  "coco_ichibanya": {
+   "name": "CoCo Ichibanya", "name_ja": "カレーハウスCoCo壱番屋", "icon": "🍛",
+   "gf": { "tier": "reliable", "best": "特定原材料を使用していないカレー (allergen-free retort curry) over plain rice", "detail": "The standard roux is WHEAT. The safe path is the sealed low-allergen curry — wheat-free, heated inside its sealed pouch and poured over plain rice specifically to avoid kitchen cross-contact. Genuinely celiac-oriented. NO toppings are allowed on it (officially refused). Contains apple + honey — fine for celiacs but flag an apple allergy." },
+   "vegan": { "tier": "reliable", "best": "ココイチベジカレー (veggie-sauce curry) + vegetable toppings", "detail": "The veggie sauce is officially animal-free (no dashi/honey/dairy/meat). Cooked in-store on shared equipment, so it suits dietary vegans but is NOT celiac-safe. Avoid cheese/egg/meat/katsu toppings." },
+   "both_gf_and_vegan": "NO. The wheat-free retort curry contains honey (not vegan) and takes no add-ons; the veggie curry is cooked on wheat-shared equipment (not GF). A single order cannot be both.",
+   "caveats": ["Standard curry roux = wheat (unsafe for celiac)", "Shared fryer for all fried items (katsu, croquette) — cross-contact", "Low-allergen pouch curry: no toppings; contains apple + honey", "Veggie sauce is animal-free but shares production line with dairy", "Confirm the low-allergen curry is stocked at the branch — some may not carry it"],
+   "phrases": [
+    { "ja": "小麦アレルギーがあります。特定原材料を使用していないカレーをください。", "romaji": "Komugi arerugii ga arimasu. Tokutei-genzairyou o shiyou shite inai karee o kudasai.", "en": "I have a wheat allergy. The allergen-free curry, please." },
+    { "ja": "ココイチベジカレーをください。動物性の材料は食べられません。", "romaji": "Kokoichi beji-karee o kudasai. Doubutsusei no zairyou wa taberaremasen.", "en": "Veggie curry, please. I can't eat animal ingredients." }
+   ],
+   "sources": ["https://www.ichibanya.co.jp/menu/list.html?cid=8", "https://www.ichibanya.co.jp/menu/detail.html?id=1366", "https://www.ichibanya.co.jp/menu/pdf/allergy.pdf", "https://un-gluten.com/glutenfree-cocoichi/", "https://vegegohan.com/restaurant/cocoichibanya-vegetarian-vegan-menu/"]
+  },
+  "mos_burger": {
+   "name": "MOS Burger", "name_ja": "モスバーガー", "icon": "🍔",
+   "gf": { "tier": "limited", "best": "ポークサンド〈米粉〉 or ポークロール〈米粉〉 (Low-Allergen Menu)", "detail": "One wheat-free item: the Low-Allergen pork burger/hot-dog on a 100% Yamagata rice-flour bun, heated sealed in its bag (deliberate anti-cross-contamination) — the most celiac-defensible burger on any JP chain. But NOT certified GF (MOS admits possible contamination) and it contains PORK (not vegan). Never the fries/nuggets (shared fryer). Na-Tsumi lettuce-wrapped burgers ALL contain wheat (teriyaki = wheat soy sauce)." },
+   "vegan": { "tier": "limited", "best": "米粉入りバンズのアボカドバジルバーガー + plant-based basil tartar", "detail": "One Plant-Based-certified item (no egg/dairy/meat/gelatin as ingredients). Its 'rice-flour' bun is rice flour BLENDED with wheat — so it is NOT gluten-free. Cooked on grills shared with meat/egg/dairy (fine for dietary vegans, not for allergy). WARNING: the standard 'soy' patties (ソイモス etc.) contain egg white + chicken — soy ≠ vegan. (The old Green Burger was discontinued May 2026.)" },
+   "both_gf_and_vegan": "NO. The GF item is pork; the vegan item's bun contains wheat.",
+   "caveats": ["'Soy' patty ≠ vegan: standard soy burgers contain egg white + chicken", "Na-Tsumi lettuce burgers all contain wheat", "The vegan avocado burger's rice-flour bun is wheat-blended (not GF)", "Fries/nuggets share fryer oil (celiac-unsafe)", "Menu rotates seasonally — re-check the live allergen PDF"],
+   "phrases": [
+    { "ja": "低アレルゲンメニューのポークサンド〈米粉〉をください。", "romaji": "Tei-arerugen menyuu no pooku-sando (komeko) o kudasai.", "en": "The low-allergen Pork Burger (rice flour), please." },
+    { "ja": "これは動物性の材料（肉・卵・乳）が入っていますか？", "romaji": "Kore wa doubutsusei no shokuzai (niku, tamago, nyuu) ga haitte imasu ka?", "en": "Does this contain any animal ingredients (meat/egg/dairy)?" }
+   ],
+   "sources": ["https://www.mos.jp/menu/pdf/allergy.pdf", "https://www.mos.jp/mori/sentaku/article_20220608/", "https://prtimes.jp/main/html/rd/p/000000581.000075449.html", "https://un-gluten.com/glutenfree-mosburger/"]
+  },
+  "starbucks": {
+   "name": "Starbucks", "name_ja": "スターバックス", "icon": "☕",
+   "gf": { "tier": "none", "best": "—", "detail": "No gluten-free FOOD. Drinks are fine (coffee/tea/espresso), but sandwiches and most bakes contain wheat, and nothing is prepared as gluten-free. Not a celiac food option." },
+   "vegan": { "tier": "limited", "best": "Any drink with soy/oat/almond milk; ask for the current プラントベース food item", "detail": "Plant milk (soy/oat/almond) swaps into any drink. There is a rotating SEASONAL plant-based food line (past items: soy-patty muffin, soy bolognese, mango mousse, lemon cake). Officially 'not intended for strict vegans' (shared facilities, possible trace additives) and offered 'excluding select stores' — a reliable vegan-DRINK stop and a decent food fallback, not a guaranteed vegan meal." },
+   "both_gf_and_vegan": "NO GF food at all.",
+   "caveats": ["Food line is seasonal/rotating — the exact item changes", "'Excluding select stores' — not every branch carries plant-based food", "Not certified strict-vegan (shared facilities)", "Whipped cream/most cakes are dairy — specify plant milk and no whip"],
+   "phrases": [
+    { "ja": "ミルクを豆乳（オーツミルク）に変更できますか？", "romaji": "Miruku o tounyuu (ootsu-miruku) ni henkou dekimasu ka?", "en": "Can I change the milk to soy (oat) milk?" },
+    { "ja": "プラントベースのフードはありますか？", "romaji": "Purantobeesu no fuudo wa arimasu ka?", "en": "Do you have a plant-based food item?" }
+   ],
+   "sources": ["https://fooddiversity.today/en/article_181292.html", "https://thejapaneserose.com/starbucks-in-japan-the-vegan-guide/", "https://vegconomist.com/gastronomy-food-service/food-service/starbucks-japan-vegan-options/"]
+  },
+  "gusto": {
+   "name": "Gusto", "name_ja": "ガスト", "icon": "🍴",
+   "gf": { "tier": "limited", "best": "Sirloin / 'red beef' steak ordered SALT-only (no sauce, no bread) + plain or multigrain rice", "detail": "Navigable but strict, at a meat/wheat-forward family restaurant. Skylark publishes a per-item allergen tool (but it excludes cross-contamination). Order the steak with salt only; add plain veg sides. AVOID: table soy sauce (wheat), teriyaki/demi-glace/curry roux (wheat), miso soup (麩 fu = wheat gluten), hamburg steak (breadcrumbs), fries (shared fryer)." },
+   "vegan": { "tier": "none", "best": "— (assemble plain rice + a confirmed veg side at best)", "detail": "Not reliable. Skylark's plant-based 'soy-meat' line is at the sibling brand COCO'S, NOT Gusto. Gusto's low-allergen kids items still contain meat. Best possible: plain rice + a vegetable side confirmed free of bacon/cheese/dashi/egg." },
+   "both_gf_and_vegan": "NO reliable vegan item to combine.",
+   "caveats": ["Allergen tool excludes cross-contamination; shared grill/fryer", "Table soy sauce, teriyaki, demi-glace, curry roux all contain wheat", "Miso soup contains fu (wheat gluten)", "Hamburg steak contains breadcrumbs", "The plant-based soy-meat menu is COCO'S, not Gusto"],
+   "phrases": [
+    { "ja": "小麦アレルギーです。醤油とソースは抜いてください。", "romaji": "Komugi arerugii desu. Shouyu to soosu wa nuite kudasai.", "en": "I have a wheat allergy. Please leave off the soy sauce and sauce." },
+    { "ja": "アレルゲン一覧表を見せていただけますか？", "romaji": "Arerugen ichiran-hyou o misete itadakemasu ka?", "en": "May I see the allergen chart?" }
+   ],
+   "sources": ["https://allergy.skylark.co.jp/scene_irregular?brand=010016", "https://faq.skylark.co.jp/faq/show/48", "https://jp.japan-glutenfree.com/familyrestaurant/"]
+  },
+  "saizeriya": {
+   "name": "Saizeriya", "name_ja": "サイゼリヤ", "icon": "🍝",
+   "gf": { "tier": "none", "best": "— (wheat-avoidance only: plain rice, arrosticini lamb skewers, mozzarella, cooked greens)", "detail": "Celiac-safe: NO. A cheap Italian chain built on pasta/pizza/bread in a shared kitchen, with no low-allergen menu. The allergen chart lists some wheat-free items (plain rice, arrosticini grilled lamb, buffalo mozzarella, soft-cooked broccoli/spinach), but cross-contamination is expected — wheat-AVOIDANCE only, not safe for a reactive celiac." },
+   "vegan": { "tier": "limited", "best": "Green salad WITHOUT dressing + plain rice + potatoes/cooked greens", "detail": "No certified-vegan item, but you can assemble a plate. The house dressing contains EGG — order salads dressing-nuki. AVOID: penne arrabbiata (anchovy), corn cream soup (dairy + wheat), spicy chicken (wheat + egg). Minestrone broth type is unconfirmed — ask." },
+   "both_gf_and_vegan": "A dressing-free salad + plain rice is roughly both, but still shares a wheat-heavy kitchen (not celiac-safe).",
+   "caveats": ["Shared wheat-heavy kitchen — not safe for reactive celiacs", "House dressing contains egg — order salads 'dressing-nuki'", "Penne arrabbiata contains anchovy (not vegan)", "Corn cream soup = wheat + dairy", "Minestrone broth may be meat stock — ask"],
+   "phrases": [
+    { "ja": "ドレッシング抜きでお願いします。", "romaji": "Doresshingu nuki de onegai shimasu.", "en": "Without dressing, please (the dressing has egg)." },
+    { "ja": "小麦を使っていない料理はどれですか？", "romaji": "Komugi o tsukatte inai ryouri wa dore desu ka?", "en": "Which dishes use no wheat?" }
+   ],
+   "sources": ["https://allergy.saizeriya.co.jp/allergy", "https://isitveganjapan.com/food-on-the-go/fast-food/", "https://87maru.info/2018/08/10/saizeriya/"]
+  }
+ }
+}

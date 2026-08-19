@@ -16,8 +16,23 @@ floor stands: we never say "safe, just go" — every place carries "confirm with
 
 ## EVIDENCE BAR (a label only holds if it meets its bar; else drop a rung)
 GF:
-- `dedicated` — the restaurant's OWN explicit GF/celiac claim AND ≥1 independent celiac-grade corroboration
-  (FindMeGlutenFree/HappyCow celiac reviews, a GF-Japan list). Missing either → cannot be dedicated.
+- `dedicated` — the restaurant's OWN explicit GF claim AND ≥1 independent corroboration.
+  Corroboration means a source that is genuinely independent AND first-hand: a celiac/GF platform
+  entry (FindMeGlutenFree, HappyCow, a GF-Japan list), *or* a journalist or blogger who actually
+  visited and reported what they saw. Missing either half → cannot be dedicated.
+
+  **VOCABULARY IS NOT EVIDENCE** (Greg, 2026-08-19). Do NOT downgrade a shop for saying
+  「グルテンフリー」 or 「小麦アレルギー対応」 instead of セリアック. In Japan グルテンフリー is the ordinary
+  term and セリアック is rarely used even by shops that run genuinely dedicated kitchens; requiring
+  the word eliminates good options without reducing anyone's risk. Likewise, absence from
+  FindMeGlutenFree or HappyCow is NOT itself a disqualifier — those platforms are English-language
+  and thinly populated outside the big cities. Judge the substance: is there an independent
+  first-hand account, and does the shop's own claim cover the FACILITY or only the PRODUCT?
+  What still disqualifies, regardless of wording:
+    - the shop's claim is scoped to products while wheat is handled on the premises;
+    - the shop itself declines to guarantee (「完全なコンタミ対応ではありません」 and similar);
+    - the only "corroboration" reprints the shop's own copy without a visit;
+    - a gluten grain is present unresolved (barley in 押麦/もち麦/十八穀米, malt, rye, uncertified oats).
 - `high` — ≥2 independent credible sources of real GF handling; NOTE the shared-kitchen cross-contamination caveat.
 - `options` — some naturally-GF/adaptable dishes, NO special handling → must state cross-contamination risk +
   "confirm ingredients AND prep."

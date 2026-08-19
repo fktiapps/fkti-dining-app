@@ -1,0 +1,165 @@
+[
+ {
+  "id": "vm_gen",
+  "city": "kyoto",
+  "name": "玄gen (Gen)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "I tried to find wheat on the premises, a hidden wheat menu line, a closure, or a glutening report and found none: identity is confirmed (玄gen 京都大宮通店, 上京区花開院町127ハイムいすず1F, takeout GF+vegan), the own site states すべてグルテンフリー&ヴィーガン / 小麦粉・乳製品・卵・肉・魚・白砂糖・化学調味料不使用, and the shop's own blog post dated 2026-03-12 opens with 本日も営業しています, so it is open and structurally wheat-free. What I could NOT find is the second half of the dedicated bar: no celiac (セリアック) claim by the shop, no published cross-contamination protocol, no documented tamari/wheat-free shoyu, and total absence from every celiac-grade source I checked (endlessdistances' celiac Kyoto guide, atly's 17-spot celiac-friendly Kyoto list, and FindMeGlutenFree/HappyCow returned nothing for it). Independent corroboration is real but non-celiac-grade — Leaf Kyoto's 2021 shop feature (all-gluten-free menu) and a 2020 Hachidory vegan-directory entry (全てVEGANメニューでグルテンフリーでもあります) — which clears high but not dedicated.",
+  "sources": [
+   "https://takeout-gen.com/",
+   "https://takeout-gen.com/blog/20260312-3296/",
+   "https://www.leafkyoto.net/en/store/211020-kyoto-gen/",
+   "https://hachidory.com/restaurant/00/id=1442/",
+   "https://www.endlessdistances.com/gluten-free-kyoto-japan/",
+   "https://www.atly.com/best/gluten-free/celiac-friendly-japan-kyoto"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "No explicit celiac/セリアック claim anywhere by the shop",
+   "No celiac-grade corroboration: absent from FindMeGlutenFree, atly celiac Kyoto list, and endlessdistances celiac Kyoto guide",
+   "Soy sauce / seasoning brand still undocumented — no tamari confirmation despite curry, bento and 塩麹 dishes",
+   "No published cross-contamination or allergen-handling protocol",
+   "Takeout-only with 不定休 irregular closures — call before travelling",
+   "Best independent sources are 2020-2021 vintage; only the shop's own blog is current"
+  ],
+  "plain_rice": "Not documented as a standalone item. It is a takeout bento shop and rice is the base of most boxes, but no plain unseasoned gohan is listed — ask, and note bento rice may be seasoned or mixed.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "kyo_au_petit_foreau",
+  "city": "kyoto",
+  "name": "Au petit Foreau pâtissière (オ・プチフォロ・パティシエール)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "I set out to disprove the whole-shop wheat-free claim and succeeded on the record's own evidence: the owner's blog (ameblo.jp/petit-foreau, cited ON the record) lists a mixed lineup where only some items carry ヴィーガン・小麦フリー / 乳・小麦フリー labels while ショートケーキ and ガトーショコラ sit alongside them — i.e. one kitchen baking both wheat and rice-flour goods, which the protocol bars from dedicated outright. The independent sources do not rescue it: Leaf Kyoto (2022) says only that she blends 米粉・大豆粉・アーモンドプードル instead of wheat and never confirms every item is GF, and kyoto-ethical-market (2023) frames the gluten-free claim at the single-product level (the 0% cheesecake). The ONLY source asserting 全商品グルテンフリー＆プラントベース is ashiya-obentofesta.com, which I opened and found to be a グルテンフリー大辞典 content hub bylined 管理人 — an aggregator, not independent celiac-grade corroboration, and a single source cannot support dedicated/high under the hard rule. Compounding this, the operation looks close to dormant: Tabelog shows 月2回ほどの営業／現在は予約のみ with its listing last edited Feb 2023, the owner's blog stops at Feb 2020, and no celiac guide lists it.",
+  "sources": [
+   "https://ameblo.jp/petit-foreau/",
+   "https://www.leafkyoto.net/en/store/221115-kyoto-petitforeau/",
+   "https://kyoto-ethical-market.com/gourmet/petitforeau/",
+   "https://japanese-heart.com/introduce/petitforeau/",
+   "https://ashiya-obentofesta.com/kyoto-gf/",
+   "https://tabelog.com/kyoto/A2601/A260203/26034174/",
+   "https://petitforeau.stores.jp/"
+  ],
+  "independent_source_count": 0,
+  "red_flags": [
+   "Owner's own blog shows wheat cakes (ショートケーキ, ガトーショコラ) sold alongside per-item 小麦フリー products — mixed patisserie kitchen, disqualifying for dedicated",
+   "Per-item 小麦フリー labelling implies other items are NOT wheat-free",
+   "Sole source for 全商品グルテンフリー is ashiya-obentofesta.com, a content-farm aggregator (byline 管理人) — single, non-celiac-grade",
+   "Leaf Kyoto and kyoto-ethical-market both stop short of confirming shop-wide GF; kyoto-ethical-market's GF claim is product-specific",
+   "Operating status doubtful: 月2-3回のみ営業, 予約のみ, Tabelog info last edited Feb 2023, owner's blog silent since Feb 2020",
+   "Signature 0% cheesecake uses 白味噌 — miso can be barley/wheat-based and is undocumented here",
+   "Absent from every celiac-grade guide (FindMeGlutenFree, atly, endlessdistances)"
+  ],
+  "plain_rice": null,
+  "identity_ok": true,
+  "identity_note": "Right shop (Nijo, 中京区, ケーキ/洋菓子, relaunched Sept 2021 as plant-based/GF), but it is effectively a 2-3-day-a-month reservation-only operation with no verified activity since 2023 — confirm it still exists and has an open day before routing anyone there.",
+  "needs_greg": false
+ },
+ {
+  "id": "kyo_mushiyashinai",
+  "city": "kyoto",
+  "name": "Mushiyashinai (むしやしない)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "Identity checks out and there is NO same-romaji soba confusion here: this is the soy-milk patisserie at 京都市左京区一乗寺里ノ西町78 (own site 648471.com, Tabelog 26003357, category ケーキ/カフェ), open and trading, and Japanese searches for a same-name Kyoto soba house turned up nothing. The label itself collapses on the shop's OWN documents: their FAQ states 「当店では同じ工房にて乳、卵を使用した商品を製造しております」 and then explicitly disclaims 「ほんの微量でも発症される方については、お客様各位にてご判断いただけますようお願いいたします」 — a shared workshop plus a trace-amount self-disclaimer, which is the opposite of a celiac-safe dedicated facility. Their own site carries no 全商品グルテンフリー or 完全グルテンフリー banner at all; グルテンフリー is a product CATEGORY sitting beside per-item 卵・乳・小麦不使用 labels, and their GF senbei lists plain 醤油 (脱脂加工大豆) with no wheat-free documentation. I also checked the record's cited corroboration and it does not hold: the co-trip article (701134, published 2025-10-04) never says 全商品グルテンフリー — it says GF and vegan is 「もうひとつのコンセプト」 (one of their concepts) — so the quote on the record is misattributed, and a 2018 first-hand Japanese report notes 「小麦を使ってあるケーキもあるから確認したんだよ」.",
+  "sources": [
+   "https://648471.com/",
+   "https://648471.com/fr/11",
+   "https://648471.com/fr/13",
+   "https://648471.com/item-list",
+   "https://648471.raku-uru.jp/item-detail/1309657",
+   "https://co-trip.jp/article/701134",
+   "https://nhkomorebi.com/mushiyashinai/",
+   "https://tabelog.com/kyoto/A2601/A260303/26003357/",
+   "https://www.trumpwaikiki.jp/article-065.html"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "Shop's own FAQ: 同じ工房にて乳、卵を使用した商品を製造 — shared workshop, not a dedicated line",
+   "Shop's own trace-amount disclaimer: 「ほんの微量でも発症される方については、お客様各位にてご判断いただけますようお願いいたします」 — the shop itself declines to vouch for trace-sensitive customers, i.e. celiacs",
+   "No 全商品グルテンフリー / 完全グルテンフリー claim on the shop's own site; グルテンフリー is one product category among several",
+   "MISATTRIBUTED EVIDENCE on the record: the co-trip quote 「全商品グルテンフリー」 does not appear in co-trip article 701134, which instead calls GF+vegan 'another concept'",
+   "Per-item 卵・乳・小麦不使用 labelling implies non-wheat-free items exist in the catalogue",
+   "GF senbei ingredient list shows 醤油 with no wheat-free/tamari documentation; 豆乳醤油プリン likewise unresolved",
+   "Historic first-hand report (2018) confirms some cakes contained wheat — the pre-2023 baseline was a mixed kitchen",
+   "The Oct-2023 完全グルテンフリー化 renovation claim could not be verified on any primary page of the shop's own site",
+   "No celiac-grade corroboration anywhere (absent from FindMeGlutenFree, atly, endlessdistances); a Kyoto GF guide classes local shops like this as ゆるグルテンフリー"
+  ],
+  "plain_rice": null,
+  "identity_ok": true,
+  "identity_note": "Identity verified with extra care per the Kyoto-confusion warning: this IS the Ichijoji rice-flour/soy-milk confectionery (648471.com = mu-shi-ya-shi-na-i), NOT a soba house, and no same-name Kyoto soba shop surfaced in Japanese searches. The identity is fine; the gf_detail text on the record is what is wrong.",
+  "needs_greg": false
+ },
+ {
+  "id": "kyo_vegan_sweets_courier",
+  "city": "kyoto",
+  "name": "Vegan Sweets Courier (クーリエ)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "I hunted for a wheat product line, a shared-facility warning, or a glutening report and found none: identity is confirmed (株式会社クーリエ, Kyoto factory shipping nationwide, Higashiyama storefront), the entire catalogue is 米粉-based, the own claim is explicit (「グルテン、卵、乳製品、白砂糖を使わず、米粉で作ったスイーツ」 with 特別栽培の米粉・有機豆乳・オーガニックメープルシロップ), and the retail allergen listing on SweetsVillage declares 特定原材料 as 大豆・アーモンド・ごま・くるみ with no wheat and no 「同一工場で小麦を含む製品を製造」 warning. What fails the dedicated bar is the corroboration side: there is no celiac (セリアック) claim by the company, no published cross-contamination protocol or dedicated-facility certification, and no celiac-grade source lists it (absent from FindMeGlutenFree Kyoto, atly's celiac Kyoto list, and endlessdistances' celiac Kyoto guide). Two independent non-celiac-grade sources — the Kyoto rice-flour-sweets guide kameoka-up.net and the producer profile on merryna.jp — support real GF handling, which clears high but not dedicated.",
+  "sources": [
+   "https://www.vegansweets.jp/",
+   "https://shop.vegansweets.jp/products/kurure-12piece",
+   "https://shop.sweetsvillage.com/collections/vegansweets",
+   "https://kameoka-up.net/komekosweets/",
+   "https://merryna.jp/producer/1375",
+   "https://www.endlessdistances.com/gluten-free-kyoto-japan/",
+   "https://www.atly.com/best/gluten-free/celiac-friendly-japan-kyoto"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "No explicit celiac/セリアック claim and no published contamination protocol — 'dedicated facility' is inferred from the product line, not stated by the company",
+   "No celiac-grade corroboration: absent from FindMeGlutenFree, atly celiac Kyoto list, and endlessdistances celiac Kyoto guide",
+   "No third-party GF certification or allergen-audit documentation found",
+   "Physical Higashiyama storefront is Saturdays-only (11:00-18:00); otherwise mail-order or advance reservation — not a walk-in option",
+   "vegansweets.jp/concept and shop.vegansweets.jp/pages/about both returned 404 during this audit — two cited URLs on the record are dead"
+  ],
+  "plain_rice": null,
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "kyo_warewarewa_arashiyama",
+  "city": "kyoto",
+  "name": "Warewarewa Arashiyama (和レ和レ和 アラシヤマ)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "This one is actively disproven, not merely unsupported. A first-hand Japanese visit report (nhkomorebi, Oct 2024, a wheat-allergy-focused blogger) states the miso soup uses 小麦入りの「白だし」, the ochazuke dashi likewise uses 白だし, the pickles contain wheat, and warns 「一部の調味料に小麦を使用しているものもあるため、重度の小麦アレルギーの方は注意が必要です」 — directly contradicting the record's 'no wheat flour is used anywhere on the menu' and its 小麦不使用の調味料を厳選 claim. A second Kyoto GF guide independently classes this shop under ゆるグルテンフリー, i.e. main ingredients avoid wheat but 調味料などには含まれている可能性があり and celiacs must be careful. Critically, BOTH of the record's cross-contamination pillars (完全に独立した厨房で調理 and 小麦不使用の調味料を厳選) trace to one source only — ashiya-obentofesta.com, a グルテンフリー大辞典 content-farm bylined 管理人 — which the hard rule bars from supporting dedicated/high alone; the operator's own PRTIMES release says すべてのメニューがグルテンフリー but says nothing about seasonings, dashi, soy sauce or a separate kitchen, and the shop's own page on bread-espresso.jp carries no gluten-free claim or allergen statement at all. The menu also leans on soy sauce (京鴨の照玉丼 teriyaki, きつねうどん simmered abura-age) with no tamari documentation.",
+  "sources": [
+   "https://nhkomorebi.com/warewarewa-kyoto/",
+   "https://www.trumpwaikiki.jp/article-065.html",
+   "https://prtimes.jp/main/html/rd/p/000000065.000035358.html",
+   "https://www.bread-espresso.jp/shop/warewarewa_arashiyama.html",
+   "https://rurubu.jp/andmore/article/22319",
+   "https://ashiya-obentofesta.com/kyoto-gf/",
+   "https://co-trip.jp/article/665381"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "DISCONFIRMED: first-hand report says the 白だし used in miso soup and ochazuke contains wheat (小麦入りの白だし), and the pickles contain wheat",
+   "Same report's explicit warning: 「一部の調味料に小麦を使用しているものもあるため、重度の小麦アレルギーの方は注意が必要です」",
+   "A second Kyoto GF guide classifies it as ゆるグルテンフリー — seasonings may contain gluten, celiacs beware",
+   "Both cross-contamination pillars on the record (完全に独立した厨房, 小麦不使用の調味料を厳選) come from ONE content-farm source (ashiya-obentofesta.com, byline 管理人) — hard-rule violation",
+   "The shop's OWN page carries no gluten-free claim, no allergen statement, no disclaimer",
+   "Operator's PRTIMES claim すべてのメニューがグルテンフリー is silent on 調味料/醤油/だし — the exact place the wheat actually is",
+   "Soy-sauce-heavy menu (照玉丼 teriyaki, きつねうどん) with no tamari/GF-shoyu documentation",
+   "Parent company is a bakery group (パンとエスプレッソと / 株式会社日と々と) — brand-level wheat handling, though no bread was found at this location",
+   "Absent from FindMeGlutenFree, atly celiac Kyoto list, and endlessdistances celiac Kyoto guide",
+   "Highest-risk record in this shard: labelled 'Dedicated · celiac-safe' while serving wheat-containing shirodashi"
+  ],
+  "plain_rice": "Yes — it is a teishoku house, so plain gohan is available. Order it plain and unseasoned, skip the miso soup, the pickles and anything dashi- or tsuyu-based, since the shirodashi is reported to contain wheat.",
+  "identity_ok": true,
+  "identity_note": "Correct shop: 和レ和レ和 アラシヤマ, 京都市右京区嵯峨天龍寺芒ノ馬場町3-14, opened 2024-09-09 by 株式会社日と々と (パンとエスプレッソと), still operating. Only discrepancy is hours — the official page lists 8:00-18:00 (L.O.17:00) while the record's cited material and some listings say 8:00-21:00.",
+  "needs_greg": false
+ }
+]

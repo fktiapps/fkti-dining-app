@@ -138,7 +138,16 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "dedicated",
+     "to": "dedicated",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "cultural_comfort": {
     "level": "english",
@@ -854,7 +863,7 @@
      "https://cafe-koyomi.com/",
      "https://vegewel.com/en/restaurant/2142",
      "https://tabelog.com/en/nara/A2901/A290101/29009902/",
-     "https://glutenfree.empacede.co.jp/cafe-gf-kyoto/"
+     "https://jp.japan-glutenfree.com/cafe-gf-kyoto/"
     ],
     "protocol": "REVIEW_PROTOCOL.md adversarial GF pass"
    },
@@ -862,7 +871,7 @@
     "https://cafe-koyomi.com/",
     "https://vegewel.com/en/restaurant/2142",
     "https://tabelog.com/en/nara/A2901/A290101/29009902/",
-    "https://glutenfree.empacede.co.jp/cafe-gf-kyoto/"
+    "https://jp.japan-glutenfree.com/cafe-gf-kyoto/"
    ],
    "mom_and_pop": false,
    "has_menu": true,
@@ -1249,7 +1258,16 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "dedicated",
+     "to": "dedicated",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "cultural_comfort": {
     "level": "english",
@@ -8118,7 +8136,12 @@
       "14:30"
      ]
     ],
-    "1": [],
+    "1": [
+     [
+      "11:30",
+      "14:30"
+     ]
+    ],
     "2": [],
     "3": [
      [
@@ -8200,7 +8223,7 @@
     ]
    },
    "safety": {
-    "dedicated_fryer": null,
+    "dedicated_fryer": false,
     "gf_cross_contamination": [
      {
       "text": "A soba kitchen serving both nihachi (wheat-blended) and jūwari noodles cooked in shared water means heavy wheat cross-contact; no gluten-free preparation is documented.",
@@ -8219,8 +8242,22 @@
       "source": "https://nihon-soba.jp/tabearuki/kinki/nara/2021/09/22/12538/"
      }
     ],
-    "staff_allergy_handling": [],
-    "positives": [],
+    "staff_allergy_handling": [
+     {
+      "text": "No published gluten-free/allergen policy and no reservations; celiac accommodations must be requested in person and are unverified.",
+      "source": "https://tabelog.com/en/nara/A2901/A290101/29000692/"
+     }
+    ],
+    "positives": [
+     {
+      "text": "Genuine jūwari (100% buckwheat) and a hand-ground tebiki soba (10/day) are on the menu, so a wheat-free noodle is actually available.",
+      "source": "https://nihon-soba.jp/"
+     },
+     {
+      "text": "Stone-ground flour and hand-cut noodles; rare Hiroshima Hiba heirloom buckwheat for the tebiki.",
+      "source": "https://soba-discovery.com/osoba-inshokuten/sobakiri-momoyotsuki/"
+     }
+    ],
     "confidence": "low",
     "last_checked": "2026-06-23"
    },
@@ -8234,7 +8271,9 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0,
+   "merge_note": "Merged 1 duplicate record(s): nara_momoyozuki (ask). Kept this record's tier \"no\"."
   },
   {
    "id": "nara_sobakiri_nishimoto",
@@ -16052,7 +16091,16 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "dedicated",
+     "to": "dedicated",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -44029,9 +44077,9 @@
    "neighborhood": "Kitamachi (Hōren-chō) / ~8–10 min walk from Kintetsu Nara Stn",
    "cuisine": "Bakery",
    "cuisine_type": "other",
-   "website": "https://hibimurakami.com/",
+   "website": "",
    "gmaps": "https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E3%80%85%E3%83%A0%E3%83%A9%E3%82%AB%E3%83%9F%20%E5%A5%88%E8%89%AF%E7%9C%8C%E5%A5%88%E8%89%AF%E5%B8%82%E6%B3%95%E8%93%AE%E7%94%BA1026-2",
-   "notes": "[Mom & Pop] A small bakery in Nara's quiet Kitamachi (Horen-cho) district, a short walk north of Kintetsu Nara Station along the Saho River. It was founded by the Murakami family to be a neighborhood bread shop rooted in their home city of Nara.",
+   "notes": "[2026-08-19] Former official domain hibimurakami.com has lapsed and now serves an Indonesian gambling site; the link was removed. Verify the business is still trading. [Mom & Pop] A small bakery in Nara's quiet Kitamachi (Horen-cho) district, a short walk north of Kintetsu Nara Station along the Saho River. It was founded by the Murakami family to be a neighborhood bread shop rooted in their home city of Nara.",
    "menu_url": "https://tabelog.com/nara/A2901/A290101/29011215/dtlmenu/",
    "chef_bio": {
     "chef_name": "Murakami",
@@ -46587,7 +46635,7 @@
    },
    "menu_url": "https://naragen.buyshop.jp/",
    "cultural_comfort": null,
-   "cuisine_type": "soba",
+   "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -46641,9 +46689,9 @@
    "category": "GF",
    "lat": 34.672001,
    "lng": 135.833302,
-   "gf_confidence": "high",
-   "gf_label": "Fully gluten-free",
-   "gf_detail": "Dedicated 100% rice-flour bagel bakery — the shop bakes no wheat at all. Own claim: 「国産米粉100％を使用した無添加でグルテンフリーのもちもち食感が特徴」 (100% domestic rice flour, additive-free, gluten-free, chewy texture). Because every product is 米粉-based there is no wheat flour on premises, but this is a tiny home-scale operation that opened 7 Nov 2025 and also runs rice-flour bread classes; there is no published celiac cross-contact protocol, so highly-sensitive coeliacs should confirm mix-in ingredients (some bagels use cheese, bacon or chocolate) and any shared equipment.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: high→options. I tried to find a second genuinely independent source and could not: both cited write-ups (bagel-atsume and nara.goguynet) are November 2025 opening announcements reprinting the shop's own launch copy, there is no FindMeGlutenFree/HappyCow/celiac corroboration anywhere, and when I fetched the shop's only official channel (Instagram, which the record uses as its website) the visible bio does not surface an explicit グルテンフリー or 米粉100% statement at all. Against that sits a concrete unresolved wheat vector the record itself flagged and nobody has closed: the 焦がしみたらし×チーズ bagel, since mitarashi glaze is soy-sauce based and default Japanese soy sauce is wheat; the bacon epi is a second unverified processed-meat vector. This is a two-days-a-week micro-bakery that opened nine months ago and also runs bread classes on the same premises, with zero published allergen handling. One source cannot support high — capped at options.] Dedicated 100% rice-flour bagel bakery — the shop bakes no wheat at all. Own claim: 「国産米粉100％を使用した無添加でグルテンフリーのもちもち食感が特徴」 (100% domestic rice flour, additive-free, gluten-free, chewy texture). Because every product is 米粉-based there is no wheat flour on premises, but this is a tiny home-scale operation that opened 7 Nov 2025 and also runs rice-flour bread classes; there is no published celiac cross-contact protocol, so highly-sensitive coeliacs should confirm mix-in ingredients (some bagels use cheese, bacon or chocolate) and any shared equipment.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "Bagels are 米粉 (rice flour) and additive-free, so plainer varieties (プレーン, 玄米ブレンド, 黒糖栗, ほうじ茶あんこ, ごまあんこ) may be plant-based, but several flavors contain animal products — チーズ (cheese), ベーコンエピ (bacon), ピーナッツバター, and ホワイトチョコ / クランベリーチョコ. No explicit vegan labelling; confirm dairy/egg per flavor with the shop.",
@@ -46709,7 +46757,7 @@
    },
    "menu_url": "https://www.instagram.com/happysmile_komeko/",
    "cultural_comfort": null,
-   "cuisine_type": "GF bagel bakery",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -46747,7 +46795,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-02"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -46755,7 +46803,34 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "high",
+    "to": "options",
+    "why": "I tried to find a second genuinely independent source and could not: both cited write-ups (bagel-atsume and nara.goguynet) are November 2025 opening announcements reprinting the shop's own launch copy, there is no FindMeGlutenFree/HappyCow/celiac corroboration anywhere, and when I fetched the shop's only official channel (Instagram, which the record uses as its website) the visible bio does not surface an explicit グルテンフリー or 米粉100% statement at all. Against that sits a concrete unresolved wheat vector the record itself flagged and nobody has closed: the 焦がしみたらし×チーズ bagel, since mitarashi glaze is soy-sauce based and default Japanese soy sauce is wheat; the bacon epi is a second unverified processed-meat vector. This is a two-days-a-week micro-bakery that opened nine months ago and also runs bread classes on the same premises, with zero published allergen handling. One source cannot support high — capped at options.",
+    "independent_source_count": 1,
+    "red_flags": [
+     "焦がしみたらし×チーズ bagel — mitarashi glaze is soy-sauce based; wheat soy sauce is not excluded by any source",
+     "Bacon epi: Japanese processed bacon seasoning can carry wheat; no ingredient disclosure",
+     "Both independent sources are reprints of the same November 2025 opening announcement — not independent corroboration",
+     "Shop's own Instagram bio does not surface an explicit gluten-free / 100%-rice-flour claim; the claim reaches us only second-hand",
+     "Brand-new (opened 7 Nov 2025) owner-operated micro-bakery, open only Tue and Sun from 12:00; also hosts baking classes on the premises",
+     "Address discrepancy between sources: 紀寺町565-1 (local news) vs 紀寺町585-1 (Instagram bio) — verify before travelling",
+     "No celiac-grade review on any GF platform"
+    ],
+    "plain_rice": null,
+    "identity_ok": true,
+    "identity_note": "Business exists and is trading, but the street number differs between the local news article (紀寺町565-1) and the Instagram bio (紀寺町585-1); confirm the address before sending anyone.",
+    "sources": [
+     "https://bagel-atsume.com/magazine/magazine-happysmile_komeko-1/",
+     "https://nara.goguynet.jp/2025/11/17/post-55833/",
+     "https://www.instagram.com/happysmile_komeko/"
+    ]
+   }
   },
   {
    "id": "nara_icaro",
@@ -46870,13 +46945,13 @@
     "sources": [
      "https://pizzeria-icaro.jp/",
      "https://pizzeria-icaro.jp/gluten-free/",
-     "https://glutenfree.empacede.co.jp/gf-pizza/",
+     "https://jp.japan-glutenfree.com/gf-pizza/",
      "https://www.instagram.com/pizzeria_icaro/"
     ]
    },
    "menu_url": "https://pizzeria-icaro.jp/menu/",
    "cultural_comfort": null,
-   "cuisine_type": "Neapolitan pizza",
+   "cuisine_type": "italian",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -46886,7 +46961,7 @@
      },
      {
       "text": "empacede reports GF pizzas are baked in a separate dedicated stone oven at a facility where wheat is not brought in, while regular wheat pizzas use the large in-store wood-fired oven.",
-      "source": "https://glutenfree.empacede.co.jp/gf-pizza/"
+      "source": "https://jp.japan-glutenfree.com/gf-pizza/"
      },
      {
       "text": "This is nonetheless a full wheat pizzeria with an active wood-fired oven, so airborne flour and shared in-store handling remain a celiac cross-contact risk — confirm baking/plating separation on the day.",
@@ -46933,9 +47008,9 @@
    "category": "BOTH",
    "lat": 34.6946,
    "lng": 135.7815,
-   "gf_confidence": "high",
-   "gf_label": "Fully gluten-free",
-   "gf_detail": "Wholly gluten-free & vegan patisserie — the shop states 「すべての商品がグルテンフリー」 (all products are gluten-free) and 「植物由来の材料だけで」, made without wheat, eggs, dairy or refined sugar. Baking is done with rice flour (and oats/oatmeal) and no wheat flour is used on the premises, so cross-contact from wheat is inherently very low. However, the shop publishes no explicit celiac cross-contamination protocol, and the use of oats (naturally GF but commonly wheat-cross-contaminated unless certified) is a caveat for sensitive celiacs — hence high rather than dedicated.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: high→options. The record's headline quote すべての商品がグルテンフリー is attributed to the shop, but reading laccola.com and the laccola.base.shop storefront directly, the shop makes NO blanket all-products-gluten-free claim — it brands itself vegan & glutenfree sweets and states 小麦・卵・乳製品・白砂糖は不使用 on individual items only; that blanket quote actually traces to komeko-palette.com, which is a rival rice-flour bread e-commerce site running an SEO listicle, not an independent auditor. That leaves the Yahoo News/ナラクロ opening piece as the single genuinely independent source, which cannot support high. Compounding it: laccola sells an entire オートミールクッキー category and nowhere on the site, the storefront or any source is there a certified-gluten-free-oat sourcing statement — in Japan oats are routinely milled alongside wheat and barley, so this is a live gluten vector, not a theoretical one. Mildly reassuring counter-finding: the product-level 特定原材料 allergen notices name almonds, soy and tree nuts but never 小麦, consistent with a wheat-free workshop.] Wholly gluten-free & vegan patisserie — the shop states 「すべての商品がグルテンフリー」 (all products are gluten-free) and 「植物由来の材料だけで」, made without wheat, eggs, dairy or refined sugar. Baking is done with rice flour (and oats/oatmeal) and no wheat flour is used on the premises, so cross-contact from wheat is inherently very low. However, the shop publishes no explicit celiac cross-contamination protocol, and the use of oats (naturally GF but commonly wheat-cross-contaminated unless certified) is a caveat for sensitive celiacs — hence high rather than dedicated.",
    "vegan_status": "full",
    "vegan_label": "Fully vegan",
    "vegan_detail": "100% plant-based sweets shop — every item is vegan, made without eggs, dairy or white sugar, using rice flour, oats, koji/amazake, spices and herbs. The whole concept is 「植物由来の材料だけで」 (plant-derived materials only).",
@@ -47013,17 +47088,27 @@
    },
    "menu_url": "https://laccola.base.shop/items/all",
    "cultural_comfort": null,
-   "cuisine_type": "GF vegan patisserie",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
      {
       "text": "「すべての商品がグルテンフリー」— all products are gluten-free and no wheat flour is baked on the premises, making wheat cross-contact inherently very low.",
-      "source": "https://komeko-palette.com/blogs/blog/blog_111"
+      "source": "https://komeko-palette.com/blogs/blog/blog_111",
+      "source_independence": {
+       "date": "2026-08-19",
+       "level": "relay",
+       "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
+      }
      },
      {
       "text": "Some baked goods use oats/oatmeal alongside rice flour; oats are naturally GF but are a common cross-contamination vector unless certified, so highly sensitive celiacs should confirm sourcing.",
-      "source": "https://komeko-palette.com/blogs/blog/blog_111"
+      "source": "https://komeko-palette.com/blogs/blog/blog_111",
+      "source_independence": {
+       "date": "2026-08-19",
+       "level": "relay",
+       "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
+      }
      }
     ],
     "soy_sauce_wheat": [],
@@ -47046,11 +47131,16 @@
      },
      {
       "text": "Made without eggs, dairy and refined sugar; rice flour and koji based.",
-      "source": "https://komeko-palette.com/blogs/blog/blog_111"
+      "source": "https://komeko-palette.com/blogs/blog/blog_111",
+      "source_independence": {
+       "date": "2026-08-19",
+       "level": "relay",
+       "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
+      }
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-02"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47058,152 +47148,38 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 8,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
-  },
-  {
-   "id": "nara_momoyozuki",
-   "name": "Sobakiri Momoyozuki (そば切り 百夜月)",
-   "category": "OMNI",
-   "lat": 34.6858,
-   "lng": 135.8286,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "Momoyozuki offers a genuine jūwari (100% buckwheat) soba and a hand-ground tebiki soba capped at 1日10食限定 (10 servings a day) — the tebiki using rare 広島比婆在来 (Hiba heirloom buckwheat from Hiroshima) — so the noodle can be celiac-plausible. BUT the same shop also serves 二八 (20% wheat) soba and wheat tempura, which are almost certainly cooked in the same boiling water and oil, and the tsuyu is a soy-sauce dashi (wheat unless tamari). There is no venue gluten-free page. A celiac must specifically order the jūwari or tebiki, request tamari tsuyu, avoid all tempura, and confirm a dedicated pot of boiling water — none of which is verified, so treat as ask.",
-   "vegan_status": "ask",
-   "vegan_detail": "Not a vegan kitchen; the standard tsuyu is a bonito/dashi base. Some tofu and vegetable sides exist and a plain seasonal tsuke-soba might be adaptable, but any plant-based option must be confirmed for hidden dashi.",
-   "vegan_label": "Vegan — ask",
-   "hours_raw": "Mon/Thu/Fri 11:30–14:30; Sat/Sun 11:30–14:30 & 17:30–19:30; closed Tue & Wed",
-   "hours": {
-    "0": [
-     [
-      "11:30",
-      "14:30"
-     ],
-     [
-      "17:30",
-      "19:30"
-     ]
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "high",
+    "to": "options",
+    "why": "The record's headline quote すべての商品がグルテンフリー is attributed to the shop, but reading laccola.com and the laccola.base.shop storefront directly, the shop makes NO blanket all-products-gluten-free claim — it brands itself vegan & glutenfree sweets and states 小麦・卵・乳製品・白砂糖は不使用 on individual items only; that blanket quote actually traces to komeko-palette.com, which is a rival rice-flour bread e-commerce site running an SEO listicle, not an independent auditor. That leaves the Yahoo News/ナラクロ opening piece as the single genuinely independent source, which cannot support high. Compounding it: laccola sells an entire オートミールクッキー category and nowhere on the site, the storefront or any source is there a certified-gluten-free-oat sourcing statement — in Japan oats are routinely milled alongside wheat and barley, so this is a live gluten vector, not a theoretical one. Mildly reassuring counter-finding: the product-level 特定原材料 allergen notices name almonds, soy and tree nuts but never 小麦, consistent with a wheat-free workshop.",
+    "independent_source_count": 1,
+    "red_flags": [
+     "MISATTRIBUTED QUOTE: すべての商品がグルテンフリー is not on laccola's own site; it comes from komeko-palette.com, a competing rice-flour bread retailer's SEO guide",
+     "Full オートミールクッキー product category with no certified-GF-oat sourcing statement — oats in Japan are a standard wheat/barley cross-contamination vector",
+     "Product pages carry 製造所ではアレルゲン特定原材料等を含む材料を使用しています — a shared-facility allergen disclaimer (it names almonds/soy/nuts, not wheat, but it is still an uncontrolled-facility notice)",
+     "No cross-contamination, dedicated-workshop or allergen-handling protocol published anywhere",
+     "No FindMeGlutenFree / HappyCow celiac-grade review located; the apparent FMGF hit was a search-engine paraphrase, not a verified listing",
+     "Closed Sun/Mon/Tue — narrow visiting window"
     ],
-    "1": [
-     [
-      "11:30",
-      "14:30"
-     ]
-    ],
-    "2": [],
-    "3": [],
-    "4": [
-     [
-      "11:30",
-      "14:30"
-     ]
-    ],
-    "5": [
-     [
-      "11:30",
-      "14:30"
-     ]
-    ],
-    "6": [
-     [
-      "11:30",
-      "14:30"
-     ],
-     [
-      "17:30",
-      "19:30"
-     ]
-    ]
-   },
-   "hours_status": "regular",
-   "flags": {
-    "reservation": false,
-    "cash_only": true,
-    "halal": false,
-    "open_late": false
-   },
-   "neighborhood": "中筋町 (Nakasuji-cho), Kitamachi, Nara City",
-   "cuisine": "Soba (jūwari / nihachi / hand-ground)",
-   "website": "http://blog.goo.ne.jp/momoyoduki",
-   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%81%9D%E3%81%B0%E5%88%87%E3%82%8A%20%E7%99%BE%E5%A4%9C%E6%9C%88%20%E4%B8%AD%E7%AD%8B%E7%94%BA%20%E5%A5%88%E8%89%AF%E5%B8%82%20Japan",
-   "notes": "[GF] A Tabelog soba-100 shop a 1-minute walk from Kintetsu Nara Station serving jūwari and rare hand-ground (tebiki, 10/day) 100% buckwheat soba. The jūwari/tebiki noodle is celiac-plausible, but because the shop also makes 20%-wheat nihachi soba and wheat tempura in the same kitchen, cross-contact in the boiling water and oil is the real hazard — order jūwari/tebiki, ask for tamari tsuyu, skip tempura, and confirm dedicated water. No reservations, cash only.",
-   "chef_bio": {
-    "chef_name": null,
-    "roles": [
-     "owner",
-     "soba chef"
-    ],
-    "origin": "Japan",
-    "background": "Momoyozuki is a small, modern owner-run soba shop in Nara's Nakasuji-cho, a minute from Kintetsu Nara Station, known for lines at the door. The owner cites influence from Osaka's celebrated そば切り凡愚 (Soba-kiri Bongu) and emphasizes stone-ground flour and hand-cut noodles. Diners choose among nihachi, aromatic jūwari, and a limited hand-ground tebiki soba (10 servings a day). The shop rotates regional buckwheat across its grades — verified examples include Fukui/Maruoka for the tebiki and Gunma/Akagi for the nihachi and jūwari at one point, and a summer nihachi from Hiroshima's Hiwa (比和) area. Seasonal tsuke-soba rotate roughly every two months.",
-    "philosophy": "Stone-ground, hand-cut soba; showcase regional buckwheat that rotates through the seasons, including a daily-limited hand-ground batch.",
-    "specialty": "Tebiki (hand-ground, 10/day) and jūwari soba; seasonal tsuke-soba",
-    "anecdotes": [
-     {
-      "text": "The hand-ground tebiki soba is limited to 10 servings a day; the shop changes its buckwheat sourcing by season and grade (e.g. Fukui/Maruoka for the tebiki, a summer Hiroshima/Hiwa nihachi).",
-      "source": "https://soba-discovery.com/osoba-inshokuten/sobakiri-momoyotsuki/"
-     },
-     {
-      "text": "The owner draws influence from Osaka's renowned Soba-kiri Bongu, and the seasonal tsuke-soba changes roughly every two months.",
-      "source": "https://nara-gourmet.com/momoyoduki/"
-     }
-    ],
-    "japanese_sources_summary": "奈良グルメ図鑑・そばdiscovery・Tabelog によれば、二八/十割/手挽き（1日10食限定）の三段構えで、産地の蕎麦を季節ごとに使い分ける（手挽きは福井・丸岡産、夏の二八は広島・比和産など）。大阪『そば切り凡愚』の影響、つけそばは約2か月替わり。店の公式グルテンフリー表示は無い。",
-    "confidence": "medium",
+    "plain_rice": null,
+    "identity_ok": true,
+    "identity_note": "Identity confirmed — vegan & gluten-free patisserie at 奈良市西大寺東町2-1-4, opened 29 July 2022, open 11:00-17:30 Wed-Sat, physical shop plus BASE online store. The old laccola.wixsite.com URL now 301-redirects to laccola.com.",
     "sources": [
-     "https://nara-gourmet.com/momoyoduki/",
-     "https://tabelog.com/en/nara/A2901/A290101/29000692/",
-     "https://soba-discovery.com/osoba-inshokuten/sobakiri-momoyotsuki/"
+     "https://www.laccola.com/",
+     "https://laccola.base.shop/",
+     "https://laccola.base.shop/items/all",
+     "https://komeko-palette.com/blogs/blog/blog_111",
+     "https://komepan-navi.com/laccola/",
+     "https://news.yahoo.co.jp/expert/articles/77f3e3a7b26d4079dc1e8c6b327cbc92558a1f2a",
+     "https://rebake.me/shops/nara/narashi/1526",
+     "https://tabelog.com/en/nara/A2901/A290101/29013298/"
     ]
-   },
-   "menu_url": null,
-   "cultural_comfort": null,
-   "cuisine_type": "soba",
-   "safety": {
-    "dedicated_fryer": false,
-    "gf_cross_contamination": [
-     {
-      "text": "The shop serves 20%-wheat nihachi soba and wheat tempura alongside jūwari; shared boiling water and shared tempura oil make cross-contact likely and a dedicated GF pot is unconfirmed.",
-      "source": "https://nara-gourmet.com/momoyoduki/"
-     }
-    ],
-    "soy_sauce_wheat": [
-     {
-      "text": "Standard tsuyu is a soy-sauce dashi; ordinary soy sauce contains wheat, so a tamari dip must be requested and is unverified.",
-      "source": "https://tabelog.com/en/nara/A2901/A290101/29000692/"
-     }
-    ],
-    "vegan_cross_contact": [
-     {
-      "text": "Tsuyu/dashi is bonito-based; any plant-based bowl needs confirmation of hidden fish dashi.",
-      "source": "https://nara-gourmet.com/momoyoduki/"
-     }
-    ],
-    "staff_allergy_handling": [
-     {
-      "text": "No published gluten-free/allergen policy and no reservations; celiac accommodations must be requested in person and are unverified.",
-      "source": "https://tabelog.com/en/nara/A2901/A290101/29000692/"
-     }
-    ],
-    "positives": [
-     {
-      "text": "Genuine jūwari (100% buckwheat) and a hand-ground tebiki soba (10/day) are on the menu, so a wheat-free noodle is actually available.",
-      "source": "https://nihon-soba.jp/"
-     },
-     {
-      "text": "Stone-ground flour and hand-cut noodles; rare Hiroshima Hiba heirloom buckwheat for the tebiki.",
-      "source": "https://soba-discovery.com/osoba-inshokuten/sobakiri-momoyotsuki/"
-     }
-    ],
-    "confidence": "medium",
-    "last_checked": "2026-07-02"
-   },
-   "has_menu": true,
-   "menu_verified": "partial",
-   "menu_gf_count": 2,
-   "menu_gf_meals": 2,
-   "menu_vegan_count": 0,
-   "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   }
   },
   {
    "id": "nara_pukku",
@@ -47211,9 +47187,9 @@
    "category": "GF",
    "lat": 34.7183,
    "lng": 135.7331,
-   "gf_confidence": "high",
-   "gf_label": "Fully gluten-free",
-   "gf_detail": "米粉シフォンケーキ専門店 — a rice-flour chiffon specialist where every cake is 100% rice flour and wheat-free. The shop states its signature 「100年しふぉん」 is 「米粉100%のグルテンフリー」 and describes its baking as 「小麦粉不使用（グルテンフリー）」, using 九州産米粉 plus 吉野本葛 (Yoshino kudzu) and 170-year-old 米飴 rice syrup. No wheat is baked on premises, so cross-contact risk from flour is low; however the attached café also serves a lunch (まんPUKKUランチ) whose full-menu gluten-free status is not individually documented, and there is no explicitly published celiac cross-contact protocol — hence high rather than dedicated. Celiacs should confirm the lunch/morning items are also 米粉 before ordering.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: high→options. I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and its cookie boxes carry the declared allergen set 卵・乳・小麦・くるみ — wheat is mixed and baked daily in the same small patisserie kitchen as the rice-flour chiffon, with no allergen or cross-contact statement published anywhere. The 米粉/グルテンフリー wording in every source is scoped to the chiffon and 100年しふぉん products only (an ingredient claim, 小麦粉不使用, not a facility or celiac claim), and it all traces to the shop's own PR — narakko, nara-gourmet and atpress are promotional echoes of one source, not independent GF verification. There is zero celiac-grade corroboration: PUKKU appears on no FindMeGlutenFree, HappyCow, Atly or gluten-free-japan listing, so no celiac has ever reported eating here safely (equally, I found no 'got glutened' report — the record simply has no celiac evidence in either direction). The chiffon itself is genuinely wheat-free by ingredient (卵・米粉・牛乳・きび砂糖・米油・レモン果汁), which is why this lands at options rather than ask, but 'high' is not defensible for a shop that bakes wheat flour alongside it.] 米粉シフォンケーキ専門店 — a rice-flour chiffon specialist where every cake is 100% rice flour and wheat-free. The shop states its signature 「100年しふぉん」 is 「米粉100%のグルテンフリー」 and describes its baking as 「小麦粉不使用（グルテンフリー）」, using 九州産米粉 plus 吉野本葛 (Yoshino kudzu) and 170-year-old 米飴 rice syrup. Wheat IS baked on the premises — the shop’s own ingredient listing shows 薄力粉 in its cookies, galettes bretonnes and butter-sand cookies, and its tins declare 卵・乳・小麦・くるみ — so flour cross-contact is a live risk in this small kitchen. The GF wording is scoped to the chiffon dough only. In addition, the attached café also serves a lunch (まんPUKKUランチ) whose full-menu gluten-free status is not individually documented, and there is no explicitly published celiac cross-contact protocol — hence options. Celiacs should confirm the lunch/morning items are also 米粉 before ordering.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
    "vegan_detail": "Chiffon cakes are built on 赤鶏の卵 (red-chicken eggs) and 北海道産牛乳 (Hokkaido milk), with 生クリーム (fresh cream) fillings — not vegan. No vegan options are advertised.",
@@ -47300,7 +47276,7 @@
    },
    "menu_url": "https://pukku.amebaownd.com/",
    "cultural_comfort": null,
-   "cuisine_type": "Chiffon patisserie / café",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -47338,7 +47314,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-02"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47346,7 +47322,42 @@
    "menu_gf_meals": 1,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "high",
+    "to": "options",
+    "why": "I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and its cookie boxes carry the declared allergen set 卵・乳・小麦・くるみ — wheat is mixed and baked daily in the same small patisserie kitchen as the rice-flour chiffon, with no allergen or cross-contact statement published anywhere. The 米粉/グルテンフリー wording in every source is scoped to the chiffon and 100年しふぉん products only (an ingredient claim, 小麦粉不使用, not a facility or celiac claim), and it all traces to the shop's own PR — narakko, nara-gourmet and atpress are promotional echoes of one source, not independent GF verification. There is zero celiac-grade corroboration: PUKKU appears on no FindMeGlutenFree, HappyCow, Atly or gluten-free-japan listing, so no celiac has ever reported eating here safely (equally, I found no 'got glutened' report — the record simply has no celiac evidence in either direction). The chiffon itself is genuinely wheat-free by ingredient (卵・米粉・牛乳・きび砂糖・米油・レモン果汁), which is why this lands at options rather than ask, but 'high' is not defensible for a shop that bakes wheat flour alongside it.",
+    "independent_source_count": 0,
+    "red_flags": [
+     "RECORD CONTAINS A FALSE SAFETY CLAIM: gf_detail says 'No wheat is baked on premises' — the shop's own 原材料 page lists 薄力粉 (wheat cake flour) in クッキー, ガレット・ブルトンヌ and バターサンドクッキー. This sentence must be rewritten before the record ships.",
+     "Shared kitchen: wheat flour is handled and baked on site daily; airborne flour CC risk for a celiac is real and unmitigated.",
+     "Cookie boxes / icing cookies / galettes declare allergens 卵・乳・小麦・くるみ; the shop sells these over the same counter as the chiffon.",
+     "No published allergen, cross-contact or celiac protocol of any kind — not on the site, not on the ingredient page, not on the ordering pages.",
+     "Zero celiac-grade sources: no FindMeGlutenFree, HappyCow, Atly, Vegewel or gluten-free-japan listing exists for this shop.",
+     "All five sources on the record trace back to the shop's own PR/promotional material (atpress release, local gourmet media) — not independent GF verification.",
+     "GF wording is 小麦粉不使用 (wheat-FLOUR-free), an ingredient statement, and is scoped to the chiffon line only — never to the shop, the cafe, or the lunch.",
+     "まんPUKKUランチ is NOT documented gluten-free: mains include 米粉のチキン南蛮 (deep-fried, nanban vinegar sauce + tartare) and 生姜焼き-style pork — soy sauce is wheat by default and the fryer is shared. Miso soup may use barley miso. None of this is verified.",
+     "メレンゲクッキー contains アーモンドパウダー but no flour — incidental, not evidence of GF policy.",
+     "Deep-frying on premises for the lunch service = shared-oil risk independent of the flour issue."
+    ],
+    "plain_rice": "Yes, but only as part of the reserved まんPUKKUランチ set, which comes with 3種類のミニおにぎり (three mini onigiri) and miso soup — the onigiri fillings/seasonings and the miso are undocumented, so this is not a reliable plain-rice fallback. There is no plain unseasoned gohan sold on its own.",
+    "identity_ok": true,
+    "identity_note": null,
+    "sources": [
+     "https://minne.com/items/27613710",
+     "https://minne.com/items/42196478",
+     "https://minne.com/items/44119570",
+     "https://pukku.amebaownd.com/pages/1820686/static",
+     "https://www.narakko.jp/pukku-cw/",
+     "https://www.atpress.ne.jp/news/559840",
+     "https://nara.goguynet.jp/2023/06/28/pukku-renew/",
+     "https://www.hotpepper.jp/strJ001279930/"
+    ]
+   }
   },
   {
    "id": "nara_aimo",
@@ -47354,9 +47365,9 @@
    "category": "GF",
    "lat": 34.6871,
    "lng": 135.7106,
-   "gf_confidence": "dedicated",
-   "gf_label": "Dedicated · celiac-safe",
-   "gf_detail": "Aimo is a fully wheat-free bakery in Higashi-Ikoma where every product is gluten-free — rated ★★★★★ (all products gluten-free) by the curated JP celiac guide glutenfree.empacede.co.jp. The shop's own claim is 「パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です。米粉ではなくお米から作っています」— the bread uses no eggs, dairy, soy milk, wheat flour or sugar and, notably, is made from whole rice (生米/お米) rather than rice flour. Because no wheat flour is handled anywhere on the premises, cross-contact risk is minimal; still, confirm on the day whether any topping or filling (e.g. cakes) introduces other allergens.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→options. The label was disproved by the shop itself. Aimo's own Instagram bio — the record's own cited source — carries 「※アレルギー対応店ではございません※」 ('this is NOT an allergen-accommodation store'), which is an explicit refusal to stand behind allergen safety and is flatly incompatible with a 'Dedicated · celiac-safe' label. Beyond that, corroboration collapses to a single point: the curated Japan GF guide entry (now jp.japan-glutenfree.com/bakery-gf) is itself just a verbatim reprint of the shop's own sentence, and I found no Tabelog page for the bakery, no blog write-ups, no HappyCow or FindMeGlutenFree entry, and no independent diner account at all. The shop's wheat-free statement is also scoped to 「パン」 (bread) only — it does not cover the 米粉マフィン, cakes, fillings or the separate 2F lifestyle-goods/art café, whose menu I could not verify. Under the hard single-source rule this cannot hold dedicated or high.] Aimo is a fully wheat-free bakery in Higashi-Ikoma where every product is gluten-free — rated ★★★★★ (all products gluten-free) by the curated JP celiac guide jp.japan-glutenfree.com. The shop's own claim is 「パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です。米粉ではなくお米から作っています」— the bread uses no eggs, dairy, soy milk, wheat flour or sugar and, notably, is made from whole rice (生米/お米) rather than rice flour. Because no wheat flour is handled anywhere on the premises, cross-contact risk is minimal; still, confirm on the day whether any topping or filling (e.g. cakes) introduces other allergens.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "The core breads are made with no eggs, dairy or soy milk (卵・牛乳・豆乳不使用), so the maru bread, campagne, raisin and anpan are plant-based. However dairy items such as the cheese balls and cheesecake are not vegan, so it is an options venue rather than fully vegan.",
@@ -47409,54 +47420,54 @@
      "baker"
     ],
     "origin": "Ikoma, Nara, Japan",
-    "background": "Aimo is a small independent gluten-free bakery-cafe in the Higashi-Ikoma residential district of Ikoma City, Nara. Its distinguishing method is baking bread directly from whole rice grains (生米/お米) rather than from rice flour, a technique popularised in Japan through the 生米パン (raw-rice bread) movement. The shop deliberately excludes eggs, dairy, soy milk, wheat flour and sugar from its bread. It is listed and rated five stars in the curated celiac guide glutenfree.empacede.co.jp (entry #65).",
+    "background": "Aimo is a small independent gluten-free bakery-cafe in the Higashi-Ikoma residential district of Ikoma City, Nara. Its distinguishing method is baking bread directly from whole rice grains (生米/お米) rather than from rice flour, a technique popularised in Japan through the 生米パン (raw-rice bread) movement. The shop deliberately excludes eggs, dairy, soy milk, wheat flour and sugar from its bread. It is listed and rated five stars in the curated celiac guide jp.japan-glutenfree.com (entry #65).",
     "philosophy": "Make bread that is gentle for people avoiding wheat and common allergens, using whole rice instead of flour so the bread is naturally free of wheat.",
     "specialty": "Whole-rice (namagome) breads — round bread, campagne, cheese ball, raisin and anpan — all made without wheat, egg, dairy or sugar.",
     "anecdotes": [
      {
       "text": "The bakery emphasises that its bread is made 米粉ではなくお米から (from rice itself, not rice flour) — 'パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です' — an unusual point of pride even among gluten-free bakeries.",
-      "source": "https://glutenfree.empacede.co.jp/bakery-gf"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
      }
     ],
-    "japanese_sources_summary": "curated celiac guide glutenfree.empacede.co.jp (entry #65, ★★★★★) quotes the shop: 「パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です。米粉ではなくお米から作っています。」 breads incl. カンパーニュ・丸パン・レーズン等; also shop Instagram @aimoikoma.",
+    "japanese_sources_summary": "curated celiac guide jp.japan-glutenfree.com (entry #65, ★★★★★) quotes the shop: 「パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です。米粉ではなくお米から作っています。」 breads incl. カンパーニュ・丸パン・レーズン等; also shop Instagram @aimoikoma.",
     "confidence": "medium",
     "sources": [
-     "https://glutenfree.empacede.co.jp/bakery-gf",
+     "https://jp.japan-glutenfree.com/bakery-gf/",
      "https://www.instagram.com/aimoikoma/"
     ]
    },
    "menu_url": null,
    "cultural_comfort": null,
-   "cuisine_type": "GF bakery",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
      {
       "text": "Fully wheat-free premises — the guide rates every product gluten-free (★★★★★) and the shop states its bread uses no wheat flour and is made from whole rice, so flour cross-contact is minimal.",
-      "source": "https://glutenfree.empacede.co.jp/bakery-gf"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Breads are egg/dairy/soy-milk-free, but dairy-based items (cheese balls, cheesecake) are made in the same kitchen; vegans should ask which items contain dairy.",
-      "source": "https://glutenfree.empacede.co.jp/bakery-gf"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Shop's own statement: 「パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です。米粉ではなくお米から作っています」",
-      "source": "https://glutenfree.empacede.co.jp/bakery-gf"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
      }
     ],
     "positives": [
      {
       "text": "All products gluten-free; ★★★★★ celiac rating in a curated Japanese GF guide.",
-      "source": "https://glutenfree.empacede.co.jp/bakery-gf"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-02"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47464,7 +47475,34 @@
    "menu_gf_meals": 4,
    "menu_vegan_count": 5,
    "menu_vegan_meals": 4,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "dedicated",
+    "to": "options",
+    "why": "The label was disproved by the shop itself. Aimo's own Instagram bio — the record's own cited source — carries 「※アレルギー対応店ではございません※」 ('this is NOT an allergen-accommodation store'), which is an explicit refusal to stand behind allergen safety and is flatly incompatible with a 'Dedicated · celiac-safe' label. Beyond that, corroboration collapses to a single point: the curated Japan GF guide entry (now jp.japan-glutenfree.com/bakery-gf) is itself just a verbatim reprint of the shop's own sentence, and I found no Tabelog page for the bakery, no blog write-ups, no HappyCow or FindMeGlutenFree entry, and no independent diner account at all. The shop's wheat-free statement is also scoped to 「パン」 (bread) only — it does not cover the 米粉マフィン, cakes, fillings or the separate 2F lifestyle-goods/art café, whose menu I could not verify. Under the hard single-source rule this cannot hold dedicated or high.",
+    "independent_source_count": 1,
+    "red_flags": [
+     "DECISIVE: shop's own Instagram bio states 「※アレルギー対応店ではございません※」 — explicitly not an allergen-accommodation store",
+     "Single-source evidence — the GF guide entry is a verbatim reprint of the shop's own sentence, not independent verification (hard rule: caps at options/ask)",
+     "Shop's wheat-free claim is scoped to bread (パン) only; muffins, cakes, fillings and toppings are not covered by any sourced statement",
+     "Separate 2F lifestyle-goods/art café run under the same roof — its menu and whether it handles wheat is unverified",
+     "Hours conflict across sources (guide: closed Tue/Sun/Mon 11:00-16:30; another listing: open Tue-Fri 11:00-15:30, closed Sat/Sun/Mon)",
+     "Zero independent diner reports of any kind — no Tabelog, HappyCow, FindMeGlutenFree or blog coverage located",
+     "The record's cited source domain jp.japan-glutenfree.com now 301-redirects to jp.japan-glutenfree.com — update the stored URL"
+    ],
+    "plain_rice": "No — bakery only, no gohan served. Products are rice-based bread/muffins, and savoury breads carry toppings (昆布の佃煮, ねぎみそ) that are soy-sauce/miso-based and not GF-confirmed.",
+    "identity_ok": true,
+    "identity_note": "Right shop confirmed (@aimoikoma, 奈良県生駒市東生駒2-207-371, tel 0743-25-1827). But it is in IKOMA CITY, not Nara city — roughly 20 min by Kintetsu from Kintetsu-Nara — so the city='nara' bucket is a regional grouping, not a walkable Nara stop. Also note a separate unrelated 'あいも' soft-serve shop exists near 菜畑 on Tabelog; do not confuse them.",
+    "sources": [
+     "https://www.instagram.com/aimoikoma/",
+     "https://jp.japan-glutenfree.com/bakery-gf/",
+     "https://jp.japan-glutenfree.com/bakery-gf/"
+    ]
+   }
   },
   {
    "id": "nara_udon_ichigo_ichie",
@@ -47527,7 +47565,6 @@
     "level": "english",
     "note": "Small but visitor-friendly — the menu is in English and the shop is used to overseas guests. Counter seating; order at the counter and watch the noodles being made."
    },
-   "cultural_comfort_note": "Small but visitor-friendly — the menu is in English and the shop is used to overseas guests. Counter seating; order at the counter and watch the noodles being made.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,

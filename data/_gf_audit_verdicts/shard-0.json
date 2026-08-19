@@ -1,0 +1,165 @@
+[
+ {
+  "id": "hiro_baker_theta",
+  "city": "hiroshima",
+  "name": "Baker theta (ベイカー シータ)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "I tried to find the shop's OWN explicit no-wheat claim and could not: Baker theta has no website (Instagram @theta.komekopan only), and every '米粉100％ / 小麦粉不使用' statement in the record traces to third-party bloggers (mrs.living, pianikako), not to the shop. Worse, the two most allergy-literate sources both hedge the same way — alleco titles it 「グルテンフリーの米粉パンがメインのお店」 (rice-flour bread is the MAIN line, not the only line) and explicitly refuses to vouch for contamination: 「コンタミについては訪問前に必ずお店に確認をお取りください」; the japan-glutenfree.com guide repeats the 「メインとした」 wording even though its own list criterion is 「工房・店内に小麦粉を一切持ち込まず、すべての商品がグルテンフリー」. That internal contradiction plus a missing first-party claim breaks the dedicated bar. It does clear `high` — the japan-glutenfree GF-Japan list, mrs.living's 米粉100％ report and alleco's per-item 小麦不使用 labelling are ≥2 independent credible sources of real GF handling — but the shared-equipment question is unanswered and must be asked at the counter.",
+  "sources": [
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://alleco.jp/%E3%80%90%E5%8D%B5%E3%83%BB%E4%B9%B3%E3%83%BB%E5%B0%8F%E9%BA%A6%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%E5%AF%BE%E5%BF%9C%E3%80%91%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC/",
+   "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552",
+   "https://pianikako.work/post-1560/",
+   "https://komepan-navi.com/baker-theta/",
+   "https://www.bm-peekaboo.com/gourmet/142519/",
+   "https://www.instagram.com/theta.komekopan/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "No first-party GF/no-wheat statement located anywhere — shop has no website, only Instagram; all '小麦粉不使用' claims are third-party paraphrase",
+   "Two sources describe rice-flour bread as 「メイン」 (the main line), which does not exclude wheat items on the premises",
+   "The only allergy-specialist source explicitly declines to vouch for cross-contact: 「コンタミについては訪問前に必ずお店に確認をお取りください」",
+   "bm-peekaboo's roundup describes it only as 無添加 / egg-and-dairy-allergy friendly — it does NOT corroborate wheat-free",
+   "Allergen labelling is per-item (小麦不使用 on specific breads), which implies item-level rather than facility-level wheat exclusion",
+   "No FindMeGlutenFree, HappyCow or Legal Nomads celiac listing; absent from Legal Nomads' Hiroshima entries",
+   "Region-specific trap confirmed nearby: Hiroshima 米粉 bakeries (Bakery Peace, 米粉パン工房 源) commonly blend 20% 小麦グルテン into 'rice flour' bread — must confirm Baker theta does not"
+  ],
+  "plain_rice": "No — takeout bakery, no gohan served. Not a plain-rice fallback.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "hiro_cocoroba",
+  "city": "hiroshima",
+  "name": "CoCoRoBA (米粉ぱん CoCoRoBA)",
+  "current_tier": "dedicated",
+  "verdict": "keep",
+  "recommended_tier": "dedicated",
+  "reasoning": "I tried to break this one on three fronts — a hidden wheat line, added 小麦グルテン (the standard Hiroshima rice-flour-bakery trap), and closure — and failed on all three. The shop's own site carries the first-party claim (page title 「完全グルテンフリー米粉パン専門店」 plus 「国産米粉のみを使用し…グルテンフリーのおいしいパン生地作りに取り組みました」 and 「3大食物アレルギー（小麦・卵・乳）の方や健康志向の方にも、安心してお召し上がりいただけます」), and two separate GF-specialist lists corroborate at FACILITY level: japan-glutenfree.com includes it under the criterion 「工房・店内に小麦粉を一切持ち込まず、すべての商品がグルテンフリー」, and komeko-palette states it does not use any wheat flour in manufacturing and has 'completely eliminated the risk of wheat contamination from manufacturing equipment or cooking utensils.' Four further independent Japanese sources (alleco, family-dr, mamanpere, nh-times) agree, family-dr noting all items carry allergy labelling; the shop is absent from japan-glutenfree's closed-shops register and is trading normally. No negative celiac report, no glutening account, and no evidence of wheat gluten being added exists.",
+  "sources": [
+   "https://cocoroba2022.com/",
+   "https://cocoroba2022.com/company/",
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://komeko-palette.com/en/blogs/blog/hiroshima",
+   "https://komeko-palette.com/blogs/blog/hiroshima",
+   "https://www.family-dr.jp/?entry=22115",
+   "https://mamanpere.jp/topics/gourmet/cocoroba.html",
+   "https://nh-times.jp/post-22634/",
+   "https://alleco.jp/",
+   "https://oyakodetanoshimou.com/cocoroba-bread/",
+   "https://jp.japan-glutenfree.com/closedshop/"
+  ],
+  "independent_source_count": 5,
+  "red_flags": [
+   "No third-party lab testing or ppm certification — the no-wheat-on-premises claim rests on the shop's word plus two GF-guide editors, not on assay",
+   "Cheese and chocolate varieties contain dairy (乳) — matters for the vegan label, not the GF one",
+   "Savory toasts (tuna, mentaiko-garlic) carry sauces/seasonings that were never itemised; wheat soy sauce cannot be ruled out on those specific items",
+   "Sells out and closes early; closed Wednesdays — trip risk, not a safety risk"
+  ],
+  "plain_rice": "No — bakery only, no gohan served.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "hiro_kotonoha",
+  "city": "hiroshima",
+  "name": "Kotonoha (コトノハ)",
+  "current_tier": "dedicated",
+  "verdict": "keep",
+  "recommended_tier": "dedicated",
+  "reasoning": "I set out to show this was just another self-declared 'gluten free' Japanese sweets shop with no celiac-grade backing, and instead found the opposite: Legal Nomads' celiac-authored Japan guide lists a shop at Kotonoha's EXACT address (〒731-0154 広島市安佐南区上安2-16-18 第2松田ビル102) described as making 'gluten, dairy, and sugar free snacks and treats for celiacs to enjoy' — romanised there as 'Kohotona Gallery', a garbled reading of コトノハ. That satisfies the independent celiac-grade leg; the first-party leg is the shop's own 〜Vegan & Gluten-free 工房〜 branding and 「小麦粉・卵・乳製品・白砂糖を使わず、米粉を使った焼き菓子を焼いています」. Two further independent visit reports (modokimaru, family-dr's roundup: 「卵、乳製品不使用、グルテンフリーの」) agree, and the shop is not on japan-glutenfree's closure register. I found no glutening account and no evidence of wheat in the workshop — but note the shop never publishes a cross-contact protocol, so the dedicated call rests on the wheat simply never entering a one-person 工房.",
+  "sources": [
+   "https://www.legalnomads.com/gluten-free/japan/",
+   "https://kotonoha-sweets.com/",
+   "https://www.modokimaru.com/entry/gourmet/210523",
+   "https://www.family-dr.jp/?entry=22115",
+   "https://www.bm-peekaboo.com/gourmet/5-129/",
+   "https://kotonoha-sweets.com/livinghiroshima-pickup/",
+   "https://kotonoha-sweets.com/alleco-pickup/",
+   "https://jp.japan-glutenfree.com/closedshop/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "Legal Nomads lists it under the garbled name 'Kohotona Gallery' — address matches exactly, but a traveller searching that name will not find the shop",
+   "Shop publishes NO cross-contamination / コンタミ policy and makes no celiac-specific statement of its own",
+   "Tiny one-person workshop; no allergen labelling regime documented on the level CoCoRoBA has",
+   "Operating-status volatility: open only Wed–Sat 10:00–16:00, closes when sold out, and recent Instagram activity references equipment trouble and ad-hoc closures — phone 080-9581-1144 before travelling",
+   "Absent from japan-glutenfree.com's all-GF list, though that list covers bread bakeries only, so the absence is not probative here",
+   "Sweets only — this is not a meal stop"
+  ],
+  "plain_rice": "No — baked-sweets shop only (muffins, chiffon/pound cake, cookies, florentines). No gohan.",
+  "identity_ok": true,
+  "identity_note": "Identity confirmed at 広島市安佐南区上安2-16-18, but the celiac-grade corroborating source (Legal Nomads) romanises the shop as 'Kohotona Gallery'; matched by address, not by name. Worth recording the alias.",
+  "needs_greg": true
+ },
+ {
+  "id": "hiro_maimaiko",
+  "city": "hiroshima",
+  "name": "Maimaiko (まいまいこ)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.",
+  "sources": [
+   "https://www.ekiten.jp/shop_26684706/",
+   "https://www.bm-peekaboo.com/gourmet/142519/",
+   "https://www.atelier-shion.com/home/maimaiko/",
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://www.legalnomads.com/gluten-free/japan/",
+   "https://www.instagram.com/maimaiko_komeko/"
+  ],
+  "independent_source_count": 0,
+  "red_flags": [
+   "Sole substantive source is the shop's own ekiten listing — self-authored, so the no-cross-contamination claim is unverified by anyone",
+   "Zero independent celiac-grade corroboration found: not on japan-glutenfree.com's all-GF bakery list, Legal Nomads, FindMeGlutenFree, HappyCow, or komeko-palette",
+   "atelier-shion is a vendor/pickup partner selling まいまいこ product, not an independent source",
+   "bm-peekaboo mentions the shop exists but does NOT corroborate wheat-free handling",
+   "Hiroshima region trap: neighbouring 米粉 bakeries blend 20% 小麦グルテン into 'rice flour' bread — nobody outside the shop has checked whether Maimaiko does",
+   "Open Fri/Sat/Sun and holidays only, 10:00–17:00 or until sold out; takeout only"
+  ],
+  "plain_rice": "No — takeout bakery/sweets only, no gohan.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": false
+ },
+ {
+  "id": "nagano_cocochouchou",
+  "city": "nagano",
+  "name": "CocoChouChou (ココシュシュ)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.",
+  "sources": [
+   "https://chouchou-sweets.com/faq/",
+   "https://chouchou-sweets.com/about/",
+   "https://chouchou-sweets.com/",
+   "https://www.web-komachi.com/?p=139536",
+   "https://www.web-komachi.com/?p=67392",
+   "https://nagatabe.com/cocochouchou/",
+   "https://shinshu-oyako.com/cocochouchou/",
+   "https://vegans-life.jp/article/t636_kw8vz46",
+   "https://www.happycow.net/reviews/cocochouchou-nagano-144912",
+   "https://cocochouchou-netshop.com/",
+   "https://jp.japan-glutenfree.com/closedshop/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "Shop's own FAQ explicitly refuses an allergy guarantee: 「全ての食物アレルギーの方がお召し上がりになれるとは限りません」 — it positions as vegan/GF-by-recipe, not as celiac-safe",
+   "No dedicated-facility, shared-line or コンタミ statement anywhere on the shop's site; no celiac (セリアック) language at all",
+   "Absent from every celiac-grade GF-Japan resource checked (japan-glutenfree.com, komeko-palette, Legal Nomads); HappyCow listing exists but its reviews could not be retrieved and are NOT being counted",
+   "Relocated to 北石堂町 and opened a CAFE; cafe-exclusive menu was still 検討中 in the coverage found — new wheat vectors are not yet documented",
+   "Heavy nut use (cashew, almond, hazelnut) — separate allergen risk",
+   "web-komachi's two articles share a publisher and count as ONE independent source; gourmetpress item reads as PR and was not counted",
+   "Sweets/chocolate only — not a meal"
+  ],
+  "plain_rice": "No — patisserie/sweets shop, no gohan served.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ }
+]

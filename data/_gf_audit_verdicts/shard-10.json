@@ -1,0 +1,146 @@
+[
+ {
+  "id": "kyo_hirose_okomeya_cafe",
+  "city": "kyoto",
+  "name": "Hirose Okomeya Cafe (廣瀬米穀店 お米屋カフェ)",
+  "current_tier": "high",
+  "verdict": "keep",
+  "recommended_tier": "high",
+  "reasoning": "I tried to disprove this by (a) checking whether a 米穀店 also stocks barley (押麦/もち麦/雑穀 — gluten) alongside rice, (b) hunting for wheat items in the cafe line, and (c) looking for any glutening report. I found none: the shop's own live site (Obon notice posted three days before this audit, so it is open and trading) titles itself 「廣瀬米穀店お米屋カフェ | グルテンフリー」 and states 「米の販売とグルテンフリー商品の製造・販売をしています」, and three independent Japanese sources corroborate a wheat-free, 100%-rice-flour line — mypl.net local media quotes 「小麦粉・白砂糖を一切使用せず、米粉100%で作っている」, the asahipac rice-trade note.com feature describes bread made from rice only (no wheat and no rice-flour blend), and Kyoto City's furusato-nozei catalogue lists the product as グルテンフリー「米屋のお米パン」. What I could NOT find is any celiac-grade source (no FindMeGlutenFree/HappyCow celiac review) and any published allergen-control or cross-contamination statement, so this clears `high` on composition evidence but must not be called dedicated.",
+  "sources": [
+   "https://www.okomeyacafe.com/",
+   "https://nishikyo-minami-kyoto.mypl.net/article/sweets_minami-kyoto/24051",
+   "https://note.com/asahipac_press/n/nc3478da88e48",
+   "https://local-media.heteml.net/archives/40640",
+   "https://www.furusato-tax.jp/product/detail/26100/5749179",
+   "https://www.komekomeister.com/2022/08/04/",
+   "https://tabelog.com/kyoto/A2601/A260604/26032574/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "No published allergen-control / cross-contamination protocol anywhere — composition is wheat-free but handling is undocumented",
+   "No celiac-grade corroboration (no FMGF/HappyCow celiac review) — all corroboration is Japanese local media and trade press",
+   "It is a working rice merchant with an in-house 精米 mill; Japanese rice shops commonly also sell 押麦/もち麦 (barley = gluten). No evidence found that this one does, but the product range should be eyeballed on the day",
+   "Very limited windows: rice bread Wednesdays only (11:30-), chiffon Tue-Sat (11:00-) — an unplanned visit may find nothing GF for sale"
+  ],
+  "plain_rice": "No cooked gohan is served — it is a rice shop with a bake-café (chiffon, rusks, rice bread). It does sell raw self-milled rice, which is the safest thing in the building, but not a meal.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "kyo_ikariya_beika",
+  "city": "kyoto",
+  "name": "Ikariya Beika Kyoto (イカリヤベイカ京都)",
+  "current_tier": "high",
+  "verdict": "keep",
+  "recommended_tier": "high",
+  "reasoning": "The disproof target here was that a 米粉バウム can still legally contain 小麦でんぷん or be baked on a shared wheat line — baumkuchen is a wheat product by default. I pulled the shop's own site (STORY and PRODUCTS pages, http://www.ikariya-beika-kyoto.com) and found it never uses the words グルテンフリー or 小麦不使用 at all, which is itself a caution; but the decisive item is the Isetan Mitsukoshi (JR Kyoto Isetan) online-store listing for the 自家製粉米粉バウム「フワフワ」, whose retailer allergen marks are 卵 and 乳 ONLY — no 小麦 — with the text 「小麦粉不使用なので小麦粉がお召し上がりいただけない方にもお楽しみいただける商品たちです」. That plus the company's own atpress releases (「米粉で作ったグルテンフリーのバウムクーヘン」), KYOTOLIFE local media, and the magewappa blog (「メニューはすべて米粉を使ったグルテンフリーです」) clears the `high` bar. No allergen/contamination protocol is published anywhere and I found no celiac-grade review, so it cannot go higher.",
+  "sources": [
+   "https://isetan.mistore.jp/kyoto/product/0130900000000000000002562417.html",
+   "https://www.atpress.ne.jp/news/380386",
+   "https://www.atpress.ne.jp/news/350691",
+   "https://www.life-info.co.jp/ikariya-beika-kyoto/",
+   "https://magewappablog.com/beika",
+   "https://yurugf.com/glutenfree-souvenirs-kyoto/",
+   "http://www.ikariya-beika-kyoto.com/products/baum/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "The shop's OWN website (STORY / PRODUCTS / SHOP) never says グルテンフリー or 小麦不使用 — the GF framing lives only in its PR releases and third-party writeups",
+   "No allergen or 同一製造ライン / cross-contamination statement published on the site or the online store; I could not retrieve a full 原材料 list from the shop's own storefront (JS-rendered)",
+   "Contains 卵 and 乳 (Isetan allergen marks) — the record's vegan_status 'no' is correct",
+   "Small in-store eat-in area serves coffee and accompaniments that are NOT covered by the baked-goods no-wheat claim — unverified",
+   "Record's website field https://ikariya-beika-kyoto.com does not resolve (apex has no DNS record); only http://www.ikariya-beika-kyoto.com works, and its HTTPS presents a self-signed certificate"
+  ],
+  "plain_rice": "No — confectionery only (baumkuchen). No cooked rice served; the rice here is milled into flour.",
+  "identity_ok": true,
+  "identity_note": "Business identity, address (京都三条高倉, Karasuma-Oike) and trading status all confirmed. Only defect is the record's website URL: the apex domain ikariya-beika-kyoto.com does not resolve — should be http://www.ikariya-beika-kyoto.com/",
+  "needs_greg": true
+ },
+ {
+  "id": "kyo_oshokuya_kappa",
+  "city": "kyoto",
+  "name": "Oshokuya Kappa (京都イタリアン 欧食屋Kappa)",
+  "current_tier": "high",
+  "verdict": "keep",
+  "recommended_tier": "high",
+  "reasoning": "This was the flagged high-risk Italian record and I went at it hardest: I checked for surviving wheat pasta/focaccia, for a spelt-style 'still gluten' substitute, for shared pasta water, and for any glutening report in English or Japanese. All three fail to disprove. The owner's Sept-2024 blog post and the shop's Japanese AND English homepages confirm a full conversion (「小麦粉を一切つかわず」); the FindMeGlutenFree listing carries an owner statement going further — 「小麦粉を含め麦系は現在一切使用していません」 (no barley-family grains either, which rules out the spelt trap) — and the Hot Pepper menu page states 「当店のお料理はすべてグルテンフリーです」 with 自家製米粉パン. FMGF shows 126 recent ratings, 'reported to be dedicated gluten-free', community-reported 'dedicated gluten-free pasta pot and water', and I read roughly two dozen reviews from self-identified symptomatic celiacs — every single symptom field said 'No symptoms', with zero glutening reports found. It stays at `high` and NOT dedicated because the shop itself explicitly refuses to accommodate a medical wheat allergy.",
+  "sources": [
+   "https://www.findmeglutenfree.com/biz/kappa/6044042853220352",
+   "https://www.5kappa.com/",
+   "https://www.5kappa.com/english.html",
+   "https://www.5kappa.com/fcblog/2024/09/14/",
+   "https://jp.japan-glutenfree.com/cafe-gf-kyoto/",
+   "https://www.hotpepper.jp/strJ001190898/food/",
+   "https://vegewel.com/en/restaurant/2527"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "The shop's own site, in Japanese and English, explicitly declines wheat-allergy accommodation: 「小麦を使った料理はございませんが、わからないところで紛れ込んでしまう可能性もございますので、小麦アレルギーに対応はしておりません」 / 'we cannot accommodate wheat allergies'. This is why it must not be labelled dedicated",
+   "FMGF reported GF items include 'Beer (Gluten-Reduced)' — gluten-REDUCED (enzyme-treated barley) beer is NOT celiac-safe and is inconsistent with the owner's '麦系は一切使用していません' claim. A celiac must decline the beer",
+   "The GF pizza crust is bought in from an outside supplier (Pizza Icaro per a recent reviewer), so crust safety depends on a third party, not the kitchen",
+   "Owner frames the conversion as a health/lifestyle choice, not an allergy programme ('this is not because of allergies') — motivation is wellness, which historically correlates with looser protocol",
+   "Effectively a one-chef operation; multiple reviewers note the chef works alone, so protocol quality is entirely person-dependent"
+  ],
+  "plain_rice": "Not a rice-bowl restaurant. Risotto is on the menu and is widely reported GF, and house-made 米粉 bread and rice croquettes are served, but plain unseasoned gohan is not a standard item — do not plan on it here.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": true
+ },
+ {
+  "id": "kyo_senza_x",
+  "city": "kyoto",
+  "name": "Senza X kyoto",
+  "current_tier": "high",
+  "verdict": "downgrade",
+  "recommended_tier": "ask",
+  "reasoning": "The gluten-free substance of this record survives — Tabelog's own listing text still reads 「当店は小麦・グルテン・卵・乳製品を使用しないイタリア料理ベースのレストランです」 and kyotopi confirms imported corn/rice pasta, 米粉 bread, and that the inherited pizzeria wood oven is unused. What does NOT survive is that the place is operable. Tabelog carries the banner 「現在、スタッフ不足のため当面の間、休業しております」, and the official domain www.senza-x.com no longer serves the restaurant at all — it now returns an unrelated Korean sports-betting/toto page, and www.senza-x.com/en (its former booking page, still in search indexes) 404s. A lapsed domain plus a ~1-year staff-shortage 休業 (reservations stopped Sept 2025; this audit is Aug 2026) is functionally a closure, and an app must not route a celiac child to a shut door under a `high` badge.",
+  "sources": [
+   "https://tabelog.com/kyoto/A2601/A260301/26040638/",
+   "https://kyotopi.jp/articles/FdcL1",
+   "https://r.gnavi.co.jp/5vgzn9e20000/",
+   "https://www.senza-x.com/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "TEMPORARILY CLOSED per Tabelog: 「現在、スタッフ不足のため当面の間、休業しております」 — closed since roughly September 2025",
+   "Official domain lost: https://www.senza-x.com/ now serves an unrelated Korean gambling/toto site, and the former /en booking page returns 404. Treat the business web presence as dead",
+   "No reopening date announced anywhere I could find; gnavi listing survives but carries no status and its own 'information may have changed' disclaimer",
+   "A wood-fired pizza oven inherited from the previous pizzeria is still on site, and kyotopi records the intent to eventually use it (「ゆくゆくはこれを使ったメニューも提供できれば」) — if it is ever fired, the no-wheat-in-the-building premise changes",
+   "Record should probably be marked closed/removed rather than merely downgraded"
+  ],
+  "plain_rice": "Not applicable while closed. When trading it was an Italian free-from kitchen (corn/rice pasta, 米粉 bread), not a rice restaurant — no plain gohan.",
+  "identity_ok": false,
+  "identity_note": "Business and address (左京区岡崎円勝寺町36-3) are correct, but the record's website https://www.senza-x.com/ is no longer the restaurant's — the domain has lapsed and now hosts an unrelated Korean sports-betting site. The record must not link it. Status is 休業, not open.",
+  "needs_greg": false
+ },
+ {
+  "id": "nagoya_creperiz",
+  "city": "nagoya",
+  "name": "Creperiz Stand Nagoya (Creperiz Stand Nagoya)",
+  "current_tier": "high",
+  "verdict": "downgrade",
+  "recommended_tier": "ask",
+  "reasoning": "I set out to disprove the 100%-rice-flour claim and instead disproved the address. Nagoya Jouhou — the same local outlet the record cites as its primary source — has retitled and retagged its article 【移転準備中】…『Creperiz Stand』大須→名駅 with the 閉店 tag and the line 「こちらのお店は大須での営業を終了し、名古屋駅エリアでの移転準備中です」, last modified 2026-05-24. The Instagram account's most recent activity is February 2025 and its bio still says 名古屋・大須に上陸. So the Osu location in the record's neighborhood field is shut and no reopened Nagoya-Station address exists; Vegewel still lists the dead Osu address, which is stale. On the GF merits the wheat-free claim is decent (local news 「メニューは全て小麦不使用」 plus a wheat-allergic blogger's first-hand account that even the custard is rice-flour) but there is no operating shop to attach it to, and no cross-contamination protocol was ever published.",
+  "sources": [
+   "https://jouhou.nagoya/creperiz-stand/",
+   "https://nhkomorebi.com/osu-crepe/",
+   "https://vegewel.com/ja/restaurant/2544",
+   "https://www.instagram.com/creperiz_sta.nagoya/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "CLOSED at the listed location: Nagoya Jouhou tags the shop 閉店 and states the Osu store has ceased trading, pending relocation to the Nagoya Station area (article last updated 2026-05-24)",
+   "No confirmed new address anywhere; Instagram shows no posts since ~February 2025, so the relocation is unverified and may not have happened",
+   "The record's neighborhood field still points users to 中区大須 (大須3-30-25 合点承知ビル), which is defunct",
+   "Vegewel still lists the shop as open at the dead Osu address — a stale directory entry, not corroboration of current operation",
+   "No formal celiac cross-contamination protocol was ever published; the only handling evidence is one wheat-allergic blogger's account of asking staff",
+   "It is a takeout crepe stand with shared griddle/utensils in a food-hall booth — even when it reopens, that setting is inherently unverifiable without an on-site check"
+  ],
+  "plain_rice": "No — crepes only, no cooked rice served. (Rice appears only as the ゆめぴりか flour in the batter and custard.)",
+  "identity_ok": false,
+  "identity_note": "Correct business, but the location is wrong/stale: the 中区大須 shop in the record has closed and the shop is 移転準備中 toward the Nagoya Station area with no confirmed address or reopening date. The record's 'website' is a local news article, not an official site; the only official channel is Instagram @creperiz_sta.nagoya, which has been quiet since Feb 2025.",
+  "needs_greg": false
+ }
+]

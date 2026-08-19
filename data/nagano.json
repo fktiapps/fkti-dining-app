@@ -920,7 +920,12 @@
      },
      {
       "text": "Chicken tempura (wheat batter) is a flagship menu item; dedicated fryer status is undocumented.",
-      "source": "https://prtimes.jp/main/html/rd/p/000000171.000044858.html"
+      "source": "https://prtimes.jp/main/html/rd/p/000000171.000044858.html",
+      "source_independence": {
+       "date": "2026-08-19",
+       "level": "relay",
+       "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
+      }
      }
     ],
     "soy_sauce_wheat": [
@@ -12189,9 +12194,9 @@
    "category": "BOTH",
    "lat": 36.646338,
    "lng": 138.184997,
-   "gf_confidence": "dedicated",
-   "gf_label": "Dedicated · celiac-safe",
-   "gf_detail": "A fully dedicated vegan & gluten-free confectionery workshop where wheat flour is never used on the premises. The venue states 「小麦粉は不使用。米粉やアーモンドの粉などを使います」 (no wheat flour is used; rice flour and almond flour are used instead) and describes itself as 「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」 (sweets made without egg, dairy, wheat, or white sugar). Because the entire product line and kitchen are wheat-free, structural cross-contact risk is very low, though the shop does not advertise formal celiac certification or lab testing, so confirming with staff is still wise for a highly sensitive celiac.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→high. The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.] A fully dedicated vegan & gluten-free confectionery workshop where wheat flour is never used on the premises. The venue states 「小麦粉は不使用。米粉やアーモンドの粉などを使います」 (no wheat flour is used; rice flour and almond flour are used instead) and describes itself as 「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」 (sweets made without egg, dairy, wheat, or white sugar). Because the entire product line and kitchen are wheat-free, structural cross-contact risk is very low, though the shop does not advertise formal celiac certification or lab testing, so confirming with staff is still wise for a highly sensitive celiac.",
    "vegan_status": "full",
    "vegan_label": "Fully vegan",
    "vegan_detail": "100% plant-based. The brand's own tagline is 「ヴィーガン＆グルテンフリーのおいしい手作りお菓子屋さん」 and every product is made 「卵・乳製品・小麦・白砂糖不使用」 (no egg, dairy, wheat, or white sugar). Creams and chocolates are built on cashew nut, coconut oil, and house-made cashew-nut milk, with additives avoided (「着色料、増粘剤、保存料などの添加物はできる限り使いません」).",
@@ -12272,7 +12277,7 @@
    },
    "menu_url": "https://cocochouchou-netshop.com/",
    "cultural_comfort": null,
-   "cuisine_type": "Vegan & gluten-free patisserie / sweets shop",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -12314,7 +12319,16 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "high",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "has_menu": true,
    "menu_verified": "authoritative",
@@ -12322,7 +12336,42 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 11,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "dedicated",
+    "to": "high",
+    "why": "The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.",
+    "independent_source_count": 3,
+    "red_flags": [
+     "Shop's own FAQ explicitly refuses an allergy guarantee: 「全ての食物アレルギーの方がお召し上がりになれるとは限りません」 — it positions as vegan/GF-by-recipe, not as celiac-safe",
+     "No dedicated-facility, shared-line or コンタミ statement anywhere on the shop's site; no celiac (セリアック) language at all",
+     "Absent from every celiac-grade GF-Japan resource checked (japan-glutenfree.com, komeko-palette, Legal Nomads); HappyCow listing exists but its reviews could not be retrieved and are NOT being counted",
+     "Relocated to 北石堂町 and opened a CAFE; cafe-exclusive menu was still 検討中 in the coverage found — new wheat vectors are not yet documented",
+     "Heavy nut use (cashew, almond, hazelnut) — separate allergen risk",
+     "web-komachi's two articles share a publisher and count as ONE independent source; gourmetpress item reads as PR and was not counted",
+     "Sweets/chocolate only — not a meal"
+    ],
+    "plain_rice": "No — patisserie/sweets shop, no gohan served.",
+    "identity_ok": true,
+    "identity_note": null,
+    "sources": [
+     "https://chouchou-sweets.com/faq/",
+     "https://chouchou-sweets.com/about/",
+     "https://chouchou-sweets.com/",
+     "https://www.web-komachi.com/?p=139536",
+     "https://www.web-komachi.com/?p=67392",
+     "https://nagatabe.com/cocochouchou/",
+     "https://shinshu-oyako.com/cocochouchou/",
+     "https://vegans-life.jp/article/t636_kw8vz46",
+     "https://www.happycow.net/reviews/cocochouchou-nagano-144912",
+     "https://cocochouchou-netshop.com/",
+     "https://jp.japan-glutenfree.com/closedshop/"
+    ]
+   }
   },
   {
    "id": "nagano_doon",
@@ -12420,7 +12469,7 @@
    },
    "menu_url": "https://www.shokudoindoyama.com/",
    "cultural_comfort": null,
-   "cuisine_type": "Indian curry",
+   "cuisine_type": "curry",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -12462,7 +12511,12 @@
    "menu_gf_meals": 8,
    "menu_vegan_count": 2,
    "menu_vegan_meals": 2,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "outside_city": {
+    "municipality": "うら町",
+    "km": 51,
+    "note": "Filed under Nagano but actually 51 km away in うら町 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_enishi",
@@ -12548,7 +12602,7 @@
    },
    "menu_url": "https://enishi-sorghum.com/menu/",
    "cultural_comfort": null,
-   "cuisine_type": "GF bakery",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -12590,7 +12644,16 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "dedicated",
+     "to": "dedicated",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -12598,7 +12661,37 @@
    "menu_gf_meals": 2,
    "menu_vegan_count": 5,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "keep",
+    "from": "dedicated",
+    "to": "dedicated",
+    "why": "I tried to break this by hunting for wheat products on the premises, a closure, a shared-facility disclaimer, or any glutening report, and found none. Five mutually independent Japanese sources (Web-Komachi, Osakesuki/Aozora-meal visit report, Nagano BooooN, Nagano City Promotion interview, Deli-Koma listing) all independently state the workshop never brings wheat in at all — 「小麦は一切持ち込まない、グルテンフリー工房併設」 / 「小麦を一切持ち込まないグルテンフリーの工房で作られたパン」 — which is the shop's own policy repeated verbatim, plus a FindMeGlutenFree listing with a GF traveler's review confirming 'everything is sorghum based and gluten free' after eating ~5 items with no ill effect. The one genuine gap: the Nagano BooooN piece discloses ingredient-level wheat-free status but says nothing about facility control, and no source documents sorghum/rice flour milling-facility contamination controls; egg and dairy DO appear in some items, so the allergen card still matters. Own explicit claim + independent celiac-grade corroboration both present, so the dedicated bar is met.",
+    "independent_source_count": 5,
+    "red_flags": [
+     "No published statement on the sourced sorghum/rice flour's own milling-facility contamination controls — the wheat-free claim covers the shop's 工房 only.",
+     "Some baked goods contain egg and/or dairy; 卵・乳・小麦不使用 applies to specific items (丸パン, donuts), not the whole case.",
+     "Only one celiac-grade corroboration exists (a single FMGF review), and FMGF's own badge reads 'Gluten-Free Takeout Restaurant', not 'Dedicated' — its page returned 403 so the review text is from search-index snippet, not directly verified.",
+     "Name collision hazard: a separate, unrelated 酒処 縁（えにし） izakaya in Nagano appears on aggregator lists — do not confuse.",
+     "Latest confirmed operating evidence is 2023-2024 era; no 2026 re-confirmation of hours was obtainable (own site enishi-sorghum.com would not resolve on repeated fetches)."
+    ],
+    "plain_rice": "N/A — retail bakery/sweets counter, no cooked gohan served.",
+    "identity_ok": true,
+    "identity_note": "Confirmed: 縁-enishi- sorghum&glutenfree, 長野県長野市若里2-1-23, opened 2023-04-08, operated by AKEBONO. Distinct from the unrelated 酒処 縁（えにし） in Nagano.",
+    "sources": [
+     "https://www.web-komachi.com/?p=107764",
+     "https://osakesuki.jp/aozorameal/information/1645/",
+     "https://nagano.boooon.site/report/227/",
+     "https://nagano-citypromotion.com/nagalab/people/people12604/",
+     "https://www.findmeglutenfree.com/biz/enishi/6730605039058944",
+     "https://news.yahoo.co.jp/expert/articles/8edc23be7ea67e476f2fc969c505389baf5568ed",
+     "https://nagano.mypl.net/article/open-close_nagano/73672",
+     "https://akebono-shop.com/?mode=cate&cbid=2863392&csid=0"
+    ]
+   }
   },
   {
    "id": "nagano_fuwafuwa",
@@ -12606,9 +12699,9 @@
    "category": "GF",
    "lat": 36.51851,
    "lng": 137.856528,
-   "gf_confidence": "high",
-   "gf_label": "Fully gluten-free",
-   "gf_detail": "A rice-flour pancake specialty café — every pancake is 米粉100%, so there is no wheat flour and no wheat pasta on the premises (the seed's 'shared pasta menu' does not exist; the savory items are also rice-flour pancakes). The venue's own claim: 「100％米粉を使った、ふわふわのパンケーキ」 and 「パンケーキは、米粉100%使用と砂糖を減らすことにより…罪悪感なく食べられるギルトフリー」. IMPORTANT caveat for celiac: this is a 'gluten-free pancake' shop, NOT a certified celiac kitchen, and no formal cross-contact protocol is published — the sweet pancakes (berry, fruit, caramel-nut, kids) are the reliably GF core, but savory pancakes such as the ハーブ鶏の照り焼き (herb-chicken teriyaki) and 信州サーモン use teriyaki/soy-based sauces that are wheat unless tamari, so confirm the sauce or stick to the sweet fruit pancakes.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: high→options. DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,380, 野菜たっぷりトマトソースパスタ ¥1,280) with the note that the standard pasta uses wheat and butter and that gluten-free rice pasta is an opt-in substitution; Vegewel independently classifies the venue as 'Pasta / Pancake' cuisine with a 'Gluten-Free Menu' (a GF subset), not a wheat-free kitchen. So this is a shared kitchen boiling wheat pasta — shared water, colanders and utensils are a textbook cross-contact vector — on top of the already-flagged wheat teriyaki/soy sauces on the savory pancakes. The pancakes really are 米粉100% and I found no glutening report, but a mixed kitchen with no allergen protocol and no celiac-grade review cannot hold 'high'.] A rice-flour pancake specialty café — every pancake is 米粉100%, so there is no wheat flour and no wheat pasta on the premises (the seed's 'shared pasta menu' does not exist; the savory items are also rice-flour pancakes). The venue's own claim: 「100％米粉を使った、ふわふわのパンケーキ」 and 「パンケーキは、米粉100%使用と砂糖を減らすことにより…罪悪感なく食べられるギルトフリー」. IMPORTANT caveat for celiac: this is a 'gluten-free pancake' shop, NOT a certified celiac kitchen, and no formal cross-contact protocol is published — the sweet pancakes (berry, fruit, caramel-nut, kids) are the reliably GF core, but savory pancakes such as the ハーブ鶏の照り焼き (herb-chicken teriyaki) and 信州サーモン use teriyaki/soy-based sauces that are wheat unless tamari, so confirm the sauce or stick to the sweet fruit pancakes.",
    "vegan_status": "limited",
    "vegan_detail": "Dairy is avoided — the whipped cream is soy-milk based (豆乳ホイップ) — and organic fruit/veg are used. However the pancake batter contains egg (free-range 平飼い卵), so the pancakes themselves are not vegan. Only drinks such as the craft cola are reliably plant-based; ask before ordering if strict vegan.",
    "hours_raw": "Wed 12:00–16:00 / Thu–Sun 11:30–17:00 (last order 16:00). Closed Mon & Tue plus irregular days off (check Instagram for opening days).",
@@ -12688,7 +12781,7 @@
    },
    "menu_url": "https://cafe-fuwafuwa.com/menu/",
    "cultural_comfort": null,
-   "cuisine_type": "pancake café",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -12722,7 +12815,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -12731,7 +12824,41 @@
    "menu_vegan_count": 1,
    "menu_vegan_meals": 0,
    "mom_and_pop": false,
-   "menu_gf_ask_count": 3
+   "menu_gf_ask_count": 3,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "high",
+    "to": "options",
+    "why": "DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,380, 野菜たっぷりトマトソースパスタ ¥1,280) with the note that the standard pasta uses wheat and butter and that gluten-free rice pasta is an opt-in substitution; Vegewel independently classifies the venue as 'Pasta / Pancake' cuisine with a 'Gluten-Free Menu' (a GF subset), not a wheat-free kitchen. So this is a shared kitchen boiling wheat pasta — shared water, colanders and utensils are a textbook cross-contact vector — on top of the already-flagged wheat teriyaki/soy sauces on the savory pancakes. The pancakes really are 米粉100% and I found no glutening report, but a mixed kitchen with no allergen protocol and no celiac-grade review cannot hold 'high'.",
+    "independent_source_count": 2,
+    "red_flags": [
+     "WHEAT ON PREMISES: the pasta menu uses wheat pasta by default, with rice pasta only as a substitution — the record explicitly denied this",
+     "Shared boiling water / pots between wheat and rice pasta is undocumented and is the primary cross-contact risk",
+     "Savory pancakes (ハーブ鶏の照り焼き, 信州サーモン, 安曇野豚のベーコンエッグ) use teriyaki/soy-based sauces — wheat unless tamari is confirmed",
+     "No allergen or celiac protocol published; Vegewel classes it as having a 'gluten-free menu', not as a GF establishment",
+     "No FindMeGlutenFree or HappyCow celiac review found",
+     "Website inconsistency: record lists cafe-fuwafuwa.com (currently returning an SSL/526 error) while Vegewel lists fuwafuwa-pancake.com; opening days also conflict across sources (Sun/Mon closed vs Mon-Wed open) — confirm before travelling"
+    ],
+    "plain_rice": "No. Pancake and pasta cafe; plain unseasoned gohan is not served.",
+    "identity_ok": true,
+    "identity_note": "Venue is correct (大町市大町1601-2, 文化会館サン・アルプス大町棟内), but the record's cuisine description is wrong — it is a pancake AND pasta cafe, not a wheat-free pancake-only shop.",
+    "sources": [
+     "https://cafe-fuwafuwa.com/menu/",
+     "https://vegewel.com/en/restaurant/2117",
+     "https://www.web-komachi.com/?p=99836",
+     "https://echohall.jp/cafefuwafuwa/",
+     "https://www.deli-koma.com/dk/shop/?clid=1024609",
+     "https://blog.nagano-ken.jp/hokuan/foods/18262.html"
+    ]
+   },
+   "outside_city": {
+    "municipality": "大町市大町",
+    "km": 34,
+    "note": "Filed under Nagano but actually 34 km away in 大町市大町 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_harutonari",
@@ -12828,7 +12955,7 @@
    },
    "menu_url": null,
    "cultural_comfort": null,
-   "cuisine_type": "GF café",
+   "cuisine_type": "cafe",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -12862,7 +12989,16 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "high",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -12870,7 +13006,41 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 2,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "keep",
+    "from": "high",
+    "to": "high",
+    "why": "I tried to break this by checking whether any wheat flour is actually used on premises and whether the record's own cited sources say what it claims. The GF claim does survive on two genuinely independent legs: Web-Komachi states 「グルテンフリーであることに加え、白砂糖も不使用」 for the Nagano rice-flour cakes, and a wheat-allergic Japanese blogger (gf-akane) visited and describes it as 「グルテンフリーのお菓子を提供する…カフェ」 with no adverse reaction; the shop's own Instagram bio independently claims 「グルテンフリーのお菓子と心地良い雰囲気を提供している大人の隠れ家カフェ」 and the account is active into Aug 2026. What I DID disprove is the record's sourcing: matsumoto.keizai.biz/headline/4296 — cited three times in the record's evidence block, including for the cross-contamination finding — contains NO mention of gluten-free, wheat, allergy or cross-contact at all; it only says 「米粉を使ったケーキやタルト」 and lists beer and sparkling wine. No source anywhere documents a wheat-free kitchen, so the record's gf_label \"Fully gluten-free\" and its inference that this is an \"effectively wheat-free kitchen\" are unsupported and should be softened; the menu also includes キッシュ (quiche) whose crust flour I could not verify.",
+    "independent_source_count": 2,
+    "red_flags": [
+     "Record's most-cited source (matsumoto.keizai.biz/headline/4296) does NOT mention gluten-free, wheat or cross-contamination anywhere — the evidence block misattributes three findings to it",
+     "No source documents a wheat-free kitchen or absence of wheat flour on premises; 'effectively wheat-free kitchen' is the record's own inference, not evidence",
+     "Menu includes キッシュ (quiche) — crust flour unverified",
+     "Beer and sparkling wine served on premises (gluten source in the room)",
+     "Shop's own listing at nakamachi.org says only 「米の粉を使った甘み」 — it does not claim gluten-free",
+     "gf_label 'Fully gluten-free' over-claims; shop's own words are 'gluten-free sweets' (お菓子), not a GF kitchen",
+     "Second press source (mgpress.jp NEW!OPEN piece) now returns 404"
+    ],
+    "plain_rice": "No — sweets-and-coffee café, no rice dishes. Not a plain-gohan option.",
+    "identity_ok": true,
+    "identity_note": "Identity confirmed: rice-flour sweets café inside なかまちのなか中村屋, 松本市中央3-4-12, opened 13 April 2025, Instagram @harutonari.2023 active into Aug 2026. Record's 'Matsumoto' neighborhood is right; note the record is filed under city 'nagano' though the shop is in Matsumoto.",
+    "sources": [
+     "https://www.web-komachi.com/?p=210128",
+     "https://ameblo.jp/gf-akane/entry-12911932045.html",
+     "https://www.instagram.com/harutonari.2023/",
+     "https://matsumoto.keizai.biz/headline/4296/",
+     "https://nakamachi.org/shopmember/harutonari"
+    ]
+   },
+   "outside_city": {
+    "municipality": "まちのなか中村",
+    "km": 51,
+    "note": "Filed under Nagano but actually 51 km away in まちのなか中村 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_hibidonut",
@@ -12956,7 +13126,7 @@
    },
    "menu_url": "https://www.instagram.com/hibi.donut.matsumoto/?hl=ja",
    "cultural_comfort": null,
-   "cuisine_type": "donuts",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -12992,7 +13162,12 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "outside_city": {
+    "municipality": "松本市",
+    "km": 51,
+    "note": "Filed under Nagano but actually 51 km away in 松本市 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_jinenya_karuizawa",
@@ -13084,13 +13259,13 @@
    },
    "menu_url": "https://jinenya.wixsite.com/jinenyakaruizawa/blank-11",
    "cultural_comfort": null,
-   "cuisine_type": "Vegan / macrobiotic",
+   "cuisine_type": "cafe",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
      {
       "text": "「小麦粉を使ったメニューと、調理器具、食器を共用しているので、重篤な小麦アレルギーの場合は、お店の方に相談した方がよいです。」— shared cooking equipment and dishware with wheat dishes.",
-      "source": "https://glutenfree.empacede.co.jp/cafe-gf-hokuriku/"
+      "source": "https://jp.japan-glutenfree.com/"
      }
     ],
     "soy_sauce_wheat": [
@@ -13114,7 +13289,7 @@
     "positives": [
      {
       "text": "Roughly one-third of the menu is gluten-free, built on brown rice / rice flour, and empacede rates it ★★★.",
-      "source": "https://glutenfree.empacede.co.jp/cafe-gf-hokuriku/"
+      "source": "https://jp.japan-glutenfree.com/"
      }
     ],
     "confidence": "medium",
@@ -13126,7 +13301,12 @@
    "menu_gf_meals": 11,
    "menu_vegan_count": 13,
    "menu_vegan_meals": 11,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "outside_city": {
+    "municipality": "Karuizawa Town",
+    "km": 51,
+    "note": "Filed under Nagano but actually 51 km away in Karuizawa Town — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_mabushiya",
@@ -13250,7 +13430,7 @@
    },
    "menu_url": null,
    "cultural_comfort": null,
-   "cuisine_type": "Ramen",
+   "cuisine_type": "ramen",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -13387,7 +13567,7 @@
    },
    "menu_url": null,
    "cultural_comfort": null,
-   "cuisine_type": "Ryokan kaiseki",
+   "cuisine_type": "kaiseki",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -13429,7 +13609,12 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "outside_city": {
+    "municipality": "Yamanouchi Town",
+    "km": 22,
+    "note": "Filed under Nagano but actually 22 km away in Yamanouchi Town — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_nico_simply",
@@ -13534,17 +13719,17 @@
    },
    "menu_url": "https://www.nicosimply.com/menu",
    "cultural_comfort": null,
-   "cuisine_type": "Italian",
+   "cuisine_type": "italian",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
      {
       "text": "GF pizza and pasta are provided only as a paid substitution; the same kitchen makes wheat natural-yeast pizza and durum-wheat fresh pasta, and no dedicated GF prep line, oven or boiling water is documented — cross-contact risk is real.",
-      "source": "https://glutenfree.empacede.co.jp/cafe-gf-hokuriku/"
+      "source": "https://jp.japan-glutenfree.com/"
      },
      {
       "text": "「ピザとパスタをメインとするレストランで、追加料金でピザとパスタをグルテンフリーにすることができます。」— GF is described as an add-on swap, not a separate celiac-safe kitchen.",
-      "source": "https://glutenfree.empacede.co.jp/cafe-gf-hokuriku/"
+      "source": "https://jp.japan-glutenfree.com/"
      }
     ],
     "soy_sauce_wheat": [
@@ -13562,13 +13747,13 @@
     "staff_allergy_handling": [
      {
       "text": "Staff will make pizza/pasta gluten-free on request for an extra charge, indicating willingness to accommodate; degree of cross-contact care is not documented — verify by phone.",
-      "source": "https://glutenfree.empacede.co.jp/cafe-gf-hokuriku/"
+      "source": "https://jp.japan-glutenfree.com/"
      }
     ],
     "positives": [
      {
       "text": "★★★★★ top rating in the empacede JP gluten-free guide for making both pizza and pasta GF on request.",
-      "source": "https://glutenfree.empacede.co.jp/cafe-gf-hokuriku/"
+      "source": "https://jp.japan-glutenfree.com/"
      },
      {
       "text": "Additive-free, organic kitchen using no chemical seasonings and no white sugar, with GF/vegan-friendly salad bar.",
@@ -13585,7 +13770,12 @@
    "menu_vegan_count": 2,
    "menu_vegan_meals": 2,
    "mom_and_pop": false,
-   "menu_gf_ask_count": 1
+   "menu_gf_ask_count": 1,
+   "outside_city": {
+    "municipality": "中野市",
+    "km": 18,
+    "note": "Filed under Nagano but actually 18 km away in 中野市 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_ramen_sen",
@@ -13753,7 +13943,12 @@
    "menu_vegan_count": 1,
    "menu_vegan_meals": 1,
    "mom_and_pop": false,
-   "menu_gf_ask_count": 2
+   "menu_gf_ask_count": 2,
+   "outside_city": {
+    "municipality": "安曇野市",
+    "km": 45,
+    "note": "Filed under Nagano but actually 45 km away in 安曇野市 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_riz_karuizawa",
@@ -13761,9 +13956,9 @@
    "category": "GF",
    "lat": 36.299688,
    "lng": 138.617253,
-   "gf_confidence": "dedicated",
-   "gf_label": "Dedicated · celiac-safe",
-   "gf_detail": "A dedicated 米粉（rice-flour）gluten-free bakery in Karuizawa's Lake New Town — everything sold is gluten-free, with NO wheat flour used on the premises. The shop bakes 「グルテンフリーのパン」from 米粉 (specially-cultivated Koshihikari rice flour) with 白神こだま酵母; one source notes some breads also blend 大豆粉 (soy flour), which is still gluten-free. The owner trained under 大塚せつ子, a pioneer of Japanese rice-flour baking (「米粉の母」). Because it is a rice-flour-only kitchen, cross-contact risk is very low, but an allergen card is posted for milk/soy, so celiac guests can also confirm dairy per item.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→high. I specifically hunted the classic 米粉パン trap — added vital wheat gluten (活性グルテン), which Japan's Consumer Affairs Agency warns causes wheat-allergy incidents in rice-flour breads — and the published ingredient list (特別栽培米コシヒカリの米粉・キビ砂糖・ココナツオイル・こめ油・白神こだま酵母・天然塩, plus 大豆粉/アーモンド粉/ひえ粉 in some items) contains no gluten, and no source shows any wheat product sold. But 'dedicated' fails on evidence, not on suspicion: there is no shop statement of a wheat-free facility or CC protocol anywhere I could reach, the in-store allergen board covers only egg and milk, one of the very sources cited on the record (naganogourmetbekkan) tells readers to verify allergens with staff rather than assume wheat-free, and the only celiac-grade item is a FindMeGlutenFree page I could not load (403) whose badge reads 'Gluten-Free Friendly Bakery', not 'Dedicated'. Four independent Japanese sources do consistently describe a rice-flour-only gluten-free bakery, which clears the `high` bar; nothing clears the dedicated bar.] A dedicated 米粉（rice-flour）gluten-free bakery in Karuizawa's Lake New Town — everything sold is gluten-free, with NO wheat flour used on the premises. The shop bakes 「グルテンフリーのパン」from 米粉 (specially-cultivated Koshihikari rice flour) with 白神こだま酵母; one source notes some breads also blend 大豆粉 (soy flour), which is still gluten-free. The owner trained under 大塚せつ子, a pioneer of Japanese rice-flour baking (「米粉の母」). Because it is a rice-flour-only kitchen, cross-contact risk is very low, but an allergen card is posted for milk/soy, so celiac guests can also confirm dairy per item.",
    "vegan_status": "limited",
    "vegan_detail": "A bakery, not fully vegan — the range includes meat items (bacon ears ¥330, wiener roll ¥390) and egg-based bakes (chiffon), so it is not a vegan venue. Plain rice-flour loaves and baguettes (baked with coconut oil / brown sugar) may be plant-based, but confirm egg/dairy per item.",
    "hours_raw": "11:00–15:00; open Fri, Sat, Sun plus alternate Mondays. Closed Tue–Thu. Winter closure from December to mid-March (seasonal).",
@@ -13839,7 +14034,7 @@
    },
    "menu_url": null,
    "cultural_comfort": null,
-   "cuisine_type": "GF bakery",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -13872,7 +14067,16 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "high",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -13880,7 +14084,43 @@
    "menu_gf_meals": 1,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "dedicated",
+    "to": "high",
+    "why": "I specifically hunted the classic 米粉パン trap — added vital wheat gluten (活性グルテン), which Japan's Consumer Affairs Agency warns causes wheat-allergy incidents in rice-flour breads — and the published ingredient list (特別栽培米コシヒカリの米粉・キビ砂糖・ココナツオイル・こめ油・白神こだま酵母・天然塩, plus 大豆粉/アーモンド粉/ひえ粉 in some items) contains no gluten, and no source shows any wheat product sold. But 'dedicated' fails on evidence, not on suspicion: there is no shop statement of a wheat-free facility or CC protocol anywhere I could reach, the in-store allergen board covers only egg and milk, one of the very sources cited on the record (naganogourmetbekkan) tells readers to verify allergens with staff rather than assume wheat-free, and the only celiac-grade item is a FindMeGlutenFree page I could not load (403) whose badge reads 'Gluten-Free Friendly Bakery', not 'Dedicated'. Four independent Japanese sources do consistently describe a rice-flour-only gluten-free bakery, which clears the `high` bar; nothing clears the dedicated bar.",
+    "independent_source_count": 4,
+    "red_flags": [
+     "No shop-published wheat-free-facility or cross-contamination statement found; the in-store allergen board covers egg and milk ONLY, not wheat.",
+     "naganogourmetbekkan explicitly advises verifying allergens with staff rather than assuming the shop is entirely wheat-free.",
+     "FindMeGlutenFree badge is 'Gluten-Free Friendly Bakery', not 'Dedicated' (page 403 — not directly verified); the single reviewer is described as gluten-intolerant, not celiac.",
+     "Generic sector risk (CAA advisory): 米粉パン frequently contains added gluten — Riz's published ingredients do not, but there is no allergen label or ingredient card confirmed on the product itself.",
+     "Multi-flour bakery (soy, almond, millet) — relevant for other allergens and shows a shared mixing environment, even if wheat-free.",
+     "Tiny window-service operation, Fri/Sat/Sun + alternate Mon 11:00-15:00 only; easy to find closed.",
+     "Geographically not Nagano City — it is Karuizawa (発地, Kitasaku-gun), ~70 km away."
+    ],
+    "plain_rice": "N/A — takeaway bakery window, no cooked gohan served.",
+    "identity_ok": true,
+    "identity_note": "Business confirmed: Riz Karuizawa, レイクニュータウン軽井沢 NAGAYA-B, 北佐久郡軽井沢町発地553-3, opened 2023. Note the record files it under city 'nagano' while it is in Karuizawa Town — prefecture-level bucketing, not a wrong business. Also distinct from the unrelated 'Riz Gluten-Free' in Toronto, which dominates English search results.",
+    "sources": [
+     "https://www.weeeeks.jp/shop/riz_karuizawa/",
+     "https://pikyosama.exblog.jp/33142144/",
+     "https://naganogourmetbekkan.net/rizkaruizawa/",
+     "https://www.web-komachi.com/?p=145598",
+     "https://simple-yuumin.com/riz-karuizawa-17310",
+     "https://www.findmeglutenfree.com/biz/riz/6512591004631040",
+     "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/pdf/syokuhin1549.pdf"
+    ]
+   },
+   "outside_city": {
+    "municipality": "Karuizawa Town",
+    "km": 56,
+    "note": "Filed under Nagano but actually 56 km away in Karuizawa Town — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_roots_cafe",
@@ -13976,7 +14216,7 @@
    },
    "menu_url": "http://www.rootscafehakuba.com/menu/",
    "cultural_comfort": null,
-   "cuisine_type": "Vegan cafe",
+   "cuisine_type": "cafe",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14023,7 +14263,12 @@
    "menu_vegan_count": 9,
    "menu_vegan_meals": 5,
    "mom_and_pop": false,
-   "menu_gf_ask_count": 4
+   "menu_gf_ask_count": 4,
+   "outside_city": {
+    "municipality": "白馬村",
+    "km": 32,
+    "note": "Filed under Nagano but actually 32 km away in 白馬村 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_soba_ten_karuizawa",
@@ -14031,9 +14276,9 @@
    "category": "GF",
    "lat": 36.343907,
    "lng": 138.634335,
-   "gf_confidence": "high",
-   "gf_label": "Fully gluten-free",
-   "gf_detail": "A 十割そば (100% buckwheat) specialist that opened July 2025 by JR Karuizawa station, and one of the best celiac soba finds in Nagano because — unlike the main-branch soba — BOTH the dipping sauce and the tempura are gluten-free. The shop states 「つなぎを一切使わない十割そば」 (no wheat binder), uses 木島平産そば粉100% with 打ち粉不使用 (no wheat dusting flour), serves 「本店と同じグルテンフリーのつゆ」, and makes tempura from 「米粉と蕎麦粉を合わせて揚げたグルテンフリーの天ぷら」 (rice + buckwheat flour, no wheat). Rated high rather than dedicated: it is a soba-only kitchen (no wheat udon/ramen), but public sources do not explicitly confirm a separate dedicated boiling pot, so a celiac should confirm 別鍋/専用茹で湯 on arrival.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: high→options. I set out to verify the record's two load-bearing claims — 打ち粉不使用 and a グルテンフリーのつゆ — against the shop's own material plus an independent source, and the label did not survive. The GF tsuyu claim IS real and shop-stated (Instagram bio: 「天ぷら、蕎麦つゆ完全グルテンフリー🌿 信州蕎麦粉100%の十割蕎麦」; HotPepper: 「天ぷらも小麦粉を一切使用せず、そば粉と米粉をブレンドして作っています」), but the 打ち粉不使用 claim is NOT in the cited Karuizawa source at all — Web-Komachi p=235130 never mentions 打ち粉; that statement belongs to the SEPARATE Nagano-Station main branch article (p=100169: 「長野県・木島平産そば粉100％で作る十割そばは打ち粉不使用」), so the record has imported a main-branch fact and the 木島平産 sourcing onto the Karuizawa branch, which its own sources describe as 信州産. Decisively, the shop's OWN HotPepper listing carries the disclaimer 「尚、小麦を使用した製品も一部製造しております」 with the English line \"While we offer gluten-free ingredients, cross-contact may occur in our kitchen\" — the shop itself states wheat products are made on premises and that kitchen cross-contact can occur, which directly contradicts a 'Fully gluten-free' label and rules out the record's assumed soba-only wheat-free kitchen. Independent corroboration is also thin to nonexistent: Web-Komachi is a gourmet-media open-announcement piece, the pikyosama blog only relays 「完全グルテンフリーだそうです」 (hearsay, non-celiac blogger, asked staff nothing, observed nothing), and the shop is absent from the japan-glutenfree.com GF soba shop guide — so under the HARD RULE this is effectively one source and cannot hold high.] A 十割そば (100% buckwheat) specialist that opened July 2025 by JR Karuizawa station, and one of the best celiac soba finds in Nagano because — unlike the main-branch soba — BOTH the dipping sauce and the tempura are gluten-free. The shop states 「つなぎを一切使わない十割そば」 (no wheat binder), uses 木島平産そば粉100% with 打ち粉不使用 (no wheat dusting flour), serves 「本店と同じグルテンフリーのつゆ」, and makes tempura from 「米粉と蕎麦粉を合わせて揚げたグルテンフリーの天ぷら」 (rice + buckwheat flour, no wheat). Rated high rather than dedicated: it is a soba-only kitchen (no wheat udon/ramen), but public sources do not explicitly confirm a separate dedicated boiling pot, so a celiac should confirm 別鍋/専用茹で湯 on arrival.",
    "vegan_status": "options",
    "vegan_detail": "Buckwheat noodles and vegetable/mushroom tempura are plant-based, but the tsuyu is a standard dashi-based sauce (likely bonito), so most soba dishes are not vegan. Vegetable options (野菜そば, 舞茸天, 季節の野菜天) can suit vegans if you confirm the dashi and batter contain no fish/egg.",
    "hours_raw": "11:00–15:00 / 17:00–21:00, closed Mon. Opened July 2025.",
@@ -14141,7 +14386,7 @@
    },
    "menu_url": "https://www.hotpepper.jp/strJ004510232/food/",
    "cultural_comfort": null,
-   "cuisine_type": "Soba",
+   "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14175,7 +14420,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "authoritative",
@@ -14183,7 +14428,44 @@
    "menu_gf_meals": 13,
    "menu_vegan_count": 3,
    "menu_vegan_meals": 1,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "high",
+    "to": "options",
+    "why": "I set out to verify the record's two load-bearing claims — 打ち粉不使用 and a グルテンフリーのつゆ — against the shop's own material plus an independent source, and the label did not survive. The GF tsuyu claim IS real and shop-stated (Instagram bio: 「天ぷら、蕎麦つゆ完全グルテンフリー🌿 信州蕎麦粉100%の十割蕎麦」; HotPepper: 「天ぷらも小麦粉を一切使用せず、そば粉と米粉をブレンドして作っています」), but the 打ち粉不使用 claim is NOT in the cited Karuizawa source at all — Web-Komachi p=235130 never mentions 打ち粉; that statement belongs to the SEPARATE Nagano-Station main branch article (p=100169: 「長野県・木島平産そば粉100％で作る十割そばは打ち粉不使用」), so the record has imported a main-branch fact and the 木島平産 sourcing onto the Karuizawa branch, which its own sources describe as 信州産. Decisively, the shop's OWN HotPepper listing carries the disclaimer 「尚、小麦を使用した製品も一部製造しております」 with the English line \"While we offer gluten-free ingredients, cross-contact may occur in our kitchen\" — the shop itself states wheat products are made on premises and that kitchen cross-contact can occur, which directly contradicts a 'Fully gluten-free' label and rules out the record's assumed soba-only wheat-free kitchen. Independent corroboration is also thin to nonexistent: Web-Komachi is a gourmet-media open-announcement piece, the pikyosama blog only relays 「完全グルテンフリーだそうです」 (hearsay, non-celiac blogger, asked staff nothing, observed nothing), and the shop is absent from the japan-glutenfree.com GF soba shop guide — so under the HARD RULE this is effectively one source and cannot hold high.",
+    "independent_source_count": 1,
+    "red_flags": [
+     "SHOP'S OWN DISCLAIMER: 「尚、小麦を使用した製品も一部製造しております」 / \"While we offer gluten-free ingredients, cross-contact may occur in our kitchen\" — wheat IS on premises and the shop disclaims cross-contact",
+     "打ち粉不使用 is NOT stated for the Karuizawa branch by any source; the record mis-attributes the main-branch (長野駅前) fact to Web-Komachi p=235130, which never mentions 打ち粉",
+     "木島平産そば粉100% is the main branch's sourcing; Karuizawa sources say 信州産 (Kijimadaira + Yatsugatake foothills)",
+     "No dedicated/separate boiling pot documented anywhere — and with wheat products confirmed on premises, shared-pot risk is now live, not hypothetical",
+     "Only 'independent' write-up (Web-Komachi) is a PR-style opening announcement; the blog corroboration is explicit hearsay (「だそうです」) from a non-celiac writer who asked staff nothing",
+     "Not listed on the japan-glutenfree.com gluten-free soba shop guide — no celiac-grade corroboration exists",
+     "Record's gf_detail asserts the tsuyu differs from the main branch; Web-Komachi actually says 「本店と同じグルテンフリーのつゆ」 — the record's own narrative contradicts its source"
+    ],
+    "plain_rice": "Partly — lunch/limited rice-bowl sets exist (天丼・ローストビーフ丼), so plain white rice is likely orderable on request, but every donburi tare is a wheat-soy risk. Order plain unseasoned gohan only, no sauce.",
+    "identity_ok": true,
+    "identity_note": "Business identity confirmed and still open: 十割そば shop, 軽井沢町軽井沢東6-1 芦沢ビル2F, ~2-3 min from Karuizawa Stn north exit, opened July 2025, second branch of the 長野駅前 shop; Instagram @ten_karuizawa active with a 1-year anniversary post in 2026. However the record's noodle-sourcing detail (木島平産) and the 打ち粉不使用 claim describe the MAIN branch, not this one.",
+    "sources": [
+     "https://www.hotpepper.jp/strJ004510232/",
+     "https://www.hotpepper.jp/strJ004510232/lunch/",
+     "https://www.hotpepper.jp/strJ004510232/food/",
+     "https://www.instagram.com/ten_karuizawa/",
+     "https://www.web-komachi.com/?p=235130",
+     "https://www.web-komachi.com/?p=100169",
+     "https://pikyosama.exblog.jp/38300948/",
+     "https://jp.japan-glutenfree.com/gf-soba/"
+    ]
+   },
+   "outside_city": {
+    "municipality": "Karuizawa Town",
+    "km": 53,
+    "note": "Filed under Nagano but actually 53 km away in Karuizawa Town — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_soba_ten_nagano",
@@ -14266,7 +14548,7 @@
    },
    "menu_url": "https://www.web-komachi.com/?p=100169",
    "cultural_comfort": null,
-   "cuisine_type": "Soba",
+   "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14403,7 +14685,7 @@
    },
    "menu_url": "https://sorebana.stores.jp/",
    "cultural_comfort": null,
-   "cuisine_type": "GF bakery",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14437,7 +14719,16 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19",
+    "owner_signoff": {
+     "decision": "keep",
+     "from": "high",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-19",
+     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+     "bulk": true
+    }
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -14445,7 +14736,40 @@
    "menu_gf_meals": 1,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "keep",
+    "from": "high",
+    "to": "high",
+    "why": "I tried to disprove the 'all products gluten-free' claim by looking for wheat baking on premises, a shared kitchen, or a closure, and found none. The claim holds on three independent legs: Matsumoto Keizai Shimbun's 2020 opening piece interviews owner 三宅利佳 and reports 「グルテンフリーの焼き菓子」 plus 「三宅さん自身もグルテンフリーの生活をしており」; 号外NET 松本 visited independently in 2020 and again in 2022 and describes a gluten-free confectionery using organic/pesticide-free ingredients; and a wheat-allergic blogger (gf-akane) bought and ate the rice-flour bread sandwiches and dorayaki in June 2025 with no adverse reaction, recording the shop's own 【全商品グルテンフリー】 and 「小麦粉・白砂糖を使わず」 copy. The shop's own site independently states 「グルテンフリーのお菓子と喫茶」. I could not verify the record's 'mills her own rice' detail (the press only says she varies rice varieties by product), I found no 2026 confirmation that she is still trading, and the record's operational description is wrong in ways worth fixing.",
+    "independent_source_count": 3,
+    "red_flags": [
+     "No source anywhere states a cross-contamination or shared-equipment policy — the wheat-free-kitchen conclusion rests entirely on the owner's product claim plus her own GF lifestyle",
+     "Record says 'takeout by advance phone reservation'; sources show an attached 喫茶/eat-in tea room with seating — the record understates the format",
+     "Record says 'opens only a few days a month'; 号外NET reports Thu/Fri/Sat weekly and the shop's own site says 12:00-17:00 不定休. Schedule appears to have narrowed by 2025 but is genuinely unstable — always confirm the day",
+     "'She mills her own rice' is not supported by any source I could reach; press only says she selects different rice varieties per product",
+     "No evidence of operation in 2026 (newest confirmation is June 2025); sorebana.stores.jp returned 403 so stock/activity could not be checked",
+     "Record's own gf_detail concedes only single-source corroboration — in fact there are three, but none address handling"
+    ],
+    "plain_rice": "No — rice-flour bakery and tea room, no cooked-rice dishes. Not a plain-gohan option.",
+    "identity_ok": true,
+    "identity_note": "Identity confirmed: グルテンフリーのお菓子と喫茶 そればな, 松本市北深志1-11-7, tel 0263-88-6718, owner 三宅利佳, opened 24 May 2020 in the former 'Fiddle' bakery premises. Record's 北深志1丁目 address and solo-owner description are correct. Note the record is filed under city 'nagano' though the shop is in Matsumoto.",
+    "sources": [
+     "https://matsumoto.keizai.biz/headline/3115/",
+     "http://sorebana.jp/",
+     "https://ameblo.jp/gf-akane/entry-12912728334.html",
+     "https://matsumoto.goguynet.jp/2022/04/08/matsumotosorebana/",
+     "https://matsumoto.goguynet.jp/2020/06/24/matumotosorebana/"
+    ]
+   },
+   "outside_city": {
+    "municipality": "松本市",
+    "km": 51,
+    "note": "Filed under Nagano but actually 51 km away in 松本市 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_suryadev",
@@ -14532,7 +14856,7 @@
    },
    "menu_url": null,
    "cultural_comfort": null,
-   "cuisine_type": "Vegan South Indian",
+   "cuisine_type": "curry",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14672,7 +14996,7 @@
    },
    "menu_url": "https://tadachiya.co.jp/the-gate",
    "cultural_comfort": null,
-   "cuisine_type": "churro café",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14820,7 +15144,7 @@
    },
    "menu_url": "https://temariya.shop/products/",
    "cultural_comfort": null,
-   "cuisine_type": "Sweets retail",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -14862,7 +15186,12 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "outside_city": {
+    "municipality": "松本市",
+    "km": 52,
+    "note": "Filed under Nagano but actually 52 km away in 松本市 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "nagano_ramen_misoya",
@@ -14910,7 +15239,6 @@
     "level": "konnichiwa",
     "note": "A busy, famous ramen counter by the station; point-and-order works, a little Japanese helps."
    },
-   "cultural_comfort_note": "A busy, famous ramen counter by the station; point-and-order works, a little Japanese helps.",
    "cuisine_type": "ramen",
    "safety": {
     "dedicated_fryer": null,
@@ -14977,7 +15305,6 @@
     "level": "konnichiwa",
     "note": "Station-front ramen shop used to visitors; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "Station-front ramen shop used to visitors; a little Japanese or pointing helps.",
    "cuisine_type": "ramen",
    "safety": {
     "dedicated_fryer": null,
@@ -15083,7 +15410,6 @@
     "level": "konnichiwa",
     "note": "A convenient soba house right by the station; used to travelers."
    },
-   "cultural_comfort_note": "A convenient soba house right by the station; used to travelers.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -15152,7 +15478,6 @@
     "level": "japanese",
     "note": "A fast tachigui (stand-and-eat) counter — Japanese-only, order by ticket/pointing, eat quickly."
    },
-   "cultural_comfort_note": "A fast tachigui (stand-and-eat) counter — Japanese-only, order by ticket/pointing, eat quickly.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -15214,7 +15539,6 @@
     "level": "konnichiwa",
     "note": "A big, tourist-friendly Shinshu izakaya; reservations easy, some English likely."
    },
-   "cultural_comfort_note": "A big, tourist-friendly Shinshu izakaya; reservations easy, some English likely.",
    "cuisine_type": "izakaya",
    "safety": {
     "dedicated_fryer": null,
@@ -15276,7 +15600,6 @@
     "level": "konnichiwa",
     "note": "A relaxed soba-and-local-food spot a few minutes from the station."
    },
-   "cultural_comfort_note": "A relaxed soba-and-local-food spot a few minutes from the station.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -15340,7 +15663,6 @@
     "level": "konnichiwa",
     "note": "A grab-and-go local specialty stop; simple to order."
    },
-   "cultural_comfort_note": "A grab-and-go local specialty stop; simple to order.",
    "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
@@ -15402,7 +15724,6 @@
     "level": "konnichiwa",
     "note": "A small, calm counter izakaya; a little Japanese helps."
    },
-   "cultural_comfort_note": "A small, calm counter izakaya; a little Japanese helps.",
    "cuisine_type": "izakaya",
    "safety": {
     "dedicated_fryer": null,
@@ -15464,7 +15785,6 @@
     "level": "konnichiwa",
     "note": "A big, casual group izakaya on the main street; easy for visitors."
    },
-   "cultural_comfort_note": "A big, casual group izakaya on the main street; easy for visitors.",
    "cuisine_type": "izakaya",
    "safety": {
     "dedicated_fryer": null,
@@ -15529,7 +15849,6 @@
     "level": "konnichiwa",
     "note": "A craft-beer pub used to visitors; casual and welcoming."
    },
-   "cultural_comfort_note": "A craft-beer pub used to visitors; casual and welcoming.",
    "cuisine_type": "izakaya",
    "safety": {
     "dedicated_fryer": null,
@@ -15604,7 +15923,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "obanzai",
    "safety": {
     "dedicated_fryer": null,
@@ -15664,7 +15982,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
@@ -15724,7 +16041,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -15784,7 +16100,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -15844,7 +16159,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
@@ -15904,7 +16218,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -15964,7 +16277,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -16024,7 +16336,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "yoshoku",
    "safety": {
     "dedicated_fryer": null,
@@ -16084,7 +16395,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "izakaya",
    "safety": {
     "dedicated_fryer": null,
@@ -16144,7 +16454,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "yakitori",
    "safety": {
     "dedicated_fryer": null,
@@ -16204,7 +16513,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "yoshoku",
    "safety": {
     "dedicated_fryer": null,
@@ -16264,7 +16572,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "yoshoku",
    "safety": {
     "dedicated_fryer": null,
@@ -16324,7 +16631,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,
@@ -16384,7 +16690,6 @@
     "level": "konnichiwa",
     "note": "A spot around Nagano Station; a little Japanese or pointing helps."
    },
-   "cultural_comfort_note": "A spot around Nagano Station; a little Japanese or pointing helps.",
    "cuisine_type": "udon_soba",
    "safety": {
     "dedicated_fryer": null,

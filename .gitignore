@@ -9,3 +9,6 @@ scratchpad/
 .env
 *.local
 .claude/scheduled_tasks.lock
+
+# audit intermediates — regenerable from the worklist, and noisy in diffs
+data/_gf_audit_shards/

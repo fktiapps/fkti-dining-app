@@ -1,0 +1,154 @@
+[
+ {
+  "id": "nagoya_ve_tree",
+  "city": "nagoya",
+  "name": "Ve Tree (ヴィーツリー)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "I tried to find wheat in the building or a celiac-grade source that would either confirm or kill the 'dedicated' label. The shop's own claim survives intact and is consistent across all its properties (乳卵小麦不使用; all sweets vegan + GF, no wheat flour, no white sugar), and two independent local outlets that physically visited (Living Nagoya, Kelly) describe rice-flour tart crusts, muffins and cookies — enough for `high`. But `dedicated` requires celiac-grade corroboration and I could not find any: Ve Tree is absent from the curated Japan GF guide (jp.japan-glutenfree.com), absent from a Japanese GF blogger's own Nagoya gluten-free roundup, and no FindMeGlutenFree entry surfaced; HappyCow/Vegewel list it but as vegan directories with no retrievable celiac review. The Living Nagoya reporter also notes 輸入オートミールクッキー (imported oatmeal cookies) sold as retail stock, so 'no gluten anywhere on the premises' is overstated, and the shop now opens Saturdays 10:00-17:00 only with cooking classes run in the same dining area.",
+  "sources": [
+   "https://vegebio.jp/lp/shopinfo/",
+   "https://vegebio.jp/company/",
+   "https://mrs.living.jp/nagoya/newopen/reporter/4545060",
+   "https://kelly-net.jp/enjoytoday/2022032900002857939.html",
+   "https://vegewel.com/en/restaurant/2070",
+   "https://www.happycow.net/reviews/ve-tree-nagoya-279486",
+   "https://jp.japan-glutenfree.com/bakery-gf/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "No celiac-grade corroboration found — not listed on the curated Japan GF guide, not on FindMeGlutenFree, and omitted from a Japanese GF blogger's Nagoya GF roundup",
+   "Imported oatmeal cookies (輸入オートミールクッキー) sold as retail stock — oats are a routine wheat-cross-contact item unless certified GF; contradicts 'no wheat anywhere on the premises'",
+   "Shop's own current page shows Saturdays only, 10:00-17:00 — far narrower than the Tue/Thu/Sat hours still cached by Vegewel/HappyCow/Gnavi; verify opening before travelling",
+   "Cooking classes are held in the same dining area on closed days (shop says these are also wheat-free, but this is unverified by anyone but the shop)",
+   "No stated allergen/cross-contact protocol; no コンタミ statement anywhere",
+   "Katakana in the record (ヴィーツリー) differs from Japanese listings (ビートゥリー / ヴィツリー) — same shop, but search the address, not the kana"
+  ],
+  "plain_rice": "No — sweets-only shop, no gohan served. Rice appears only as 米粉 in baked goods.",
+  "identity_ok": true,
+  "identity_note": "Confirmed as the same business: 名古屋市北区鳩岡2-7-1 とよビル平成1F, operated by vegebio (est. 2014-07-01), opened as a shop 2022-01-11. Record's website URL www.vetree.vegebio.jp now 301-redirects to vegebio.jp/lp/shopinfo/. Note the shop is one arm of a company whose main business is cooking classes, confectionery manufacture and mail order.",
+  "needs_greg": true
+ },
+ {
+  "id": "nara_aimo",
+  "city": "nara",
+  "name": "Aimo (あいも)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "The label was disproved by the shop itself. Aimo's own Instagram bio — the record's own cited source — carries 「※アレルギー対応店ではございません※」 ('this is NOT an allergen-accommodation store'), which is an explicit refusal to stand behind allergen safety and is flatly incompatible with a 'Dedicated · celiac-safe' label. Beyond that, corroboration collapses to a single point: the curated Japan GF guide entry (now jp.japan-glutenfree.com/bakery-gf) is itself just a verbatim reprint of the shop's own sentence, and I found no Tabelog page for the bakery, no blog write-ups, no HappyCow or FindMeGlutenFree entry, and no independent diner account at all. The shop's wheat-free statement is also scoped to 「パン」 (bread) only — it does not cover the 米粉マフィン, cakes, fillings or the separate 2F lifestyle-goods/art café, whose menu I could not verify. Under the hard single-source rule this cannot hold dedicated or high.",
+  "sources": [
+   "https://www.instagram.com/aimoikoma/",
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://glutenfree.empacede.co.jp/bakery-gf/"
+  ],
+  "independent_source_count": 1,
+  "red_flags": [
+   "DECISIVE: shop's own Instagram bio states 「※アレルギー対応店ではございません※」 — explicitly not an allergen-accommodation store",
+   "Single-source evidence — the GF guide entry is a verbatim reprint of the shop's own sentence, not independent verification (hard rule: caps at options/ask)",
+   "Shop's wheat-free claim is scoped to bread (パン) only; muffins, cakes, fillings and toppings are not covered by any sourced statement",
+   "Separate 2F lifestyle-goods/art café run under the same roof — its menu and whether it handles wheat is unverified",
+   "Hours conflict across sources (guide: closed Tue/Sun/Mon 11:00-16:30; another listing: open Tue-Fri 11:00-15:30, closed Sat/Sun/Mon)",
+   "Zero independent diner reports of any kind — no Tabelog, HappyCow, FindMeGlutenFree or blog coverage located",
+   "The record's cited source domain glutenfree.empacede.co.jp now 301-redirects to jp.japan-glutenfree.com — update the stored URL"
+  ],
+  "plain_rice": "No — bakery only, no gohan served. Products are rice-based bread/muffins, and savoury breads carry toppings (昆布の佃煮, ねぎみそ) that are soy-sauce/miso-based and not GF-confirmed.",
+  "identity_ok": true,
+  "identity_note": "Right shop confirmed (@aimoikoma, 奈良県生駒市東生駒2-207-371, tel 0743-25-1827). But it is in IKOMA CITY, not Nara city — roughly 20 min by Kintetsu from Kintetsu-Nara — so the city='nara' bucket is a regional grouping, not a walkable Nara stop. Also note a separate unrelated 'あいも' soft-serve shop exists near 菜畑 on Tabelog; do not confuse them.",
+  "needs_greg": false
+ },
+ {
+  "id": "himeji_miinas",
+  "city": "himeji",
+  "name": "Miinas (ミーナーズ)",
+  "current_tier": "high",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "I set out to resolve the record's own flagged wheat/rice-flour contradiction and to find real GF handling. The bagel question resolves in the shop's favour — an independent Tabelog diner (Jan 2026) confirms 「国産有機米粉100％のベーグル」, matching the owner-interviewed keizai.biz — so the himeji-spice.net 国産小麦100% line is likely an error. But the label still fails: the owner's own words in keizai.biz frame the menu as 「グルテンフリーを意識した内容」 ('content MINDFUL of gluten-free'), not wheat-free, and himeji-spice.net independently describes the cooking as using 「有機素材や国産小麦」 (organic ingredients AND domestic wheat) — an unresolved second wheat reference, not a single transcription slip. There is no stated allergen protocol anywhere, barley beer (Hakodate Pilsner) is poured on premises, the wrap menu includes teriyaki (wheat soy sauce, unconfirmed) and karaage (frying, no dedicated-fryer claim), and the cafe is only ~10 months old with four Tabelog reviews, zero celiac-grade coverage, and no FindMeGlutenFree or HappyCow presence.",
+  "sources": [
+   "https://himeji.keizai.biz/headline/2862",
+   "https://tabelog.com/hyogo/A2805/A280501/28074323/dtlrvwlst/B514443897/",
+   "https://tabelog.com/hyogo/A2805/A280501/28074323/dtlrvwlst/",
+   "https://budou-chan.jp/open-miinas/",
+   "https://himeji-spice.net/gourmet/7909/",
+   "https://www.instagram.com/miinas.cafe/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "Owner's own framing is 「グルテンフリーを意識した内容」 — 'mindful of gluten-free', NOT a wheat-free kitchen claim",
+   "himeji-spice.net states twice that wheat is used (bagels 国産小麦100%; cooking uses 有機素材や国産小麦) — contradicted by keizai.biz and a Tabelog diner, but never retracted or resolved by the shop",
+   "Hakodate Pilsner (barley beer) served on premises",
+   "Teriyaki wrap almost certainly uses wheat soy sauce; no tamari confirmed",
+   "Karaage wrap implies deep frying with no dedicated-fryer or shared-oil statement",
+   "No allergen/cross-contact protocol stated by any source",
+   "Very new venue (opened 2025-10-01), only 4 Tabelog reviews (avg 3.05), zero celiac-grade coverage anywhere",
+   "Owner is a wheat-trained (Germany/France) pastry chef — wheat competence and equipment plausibly present"
+  ],
+  "plain_rice": "Partly — 酵素玄米おにぎり (enzyme brown-rice onigiri) is on the morning plate, but that is fermented/aged brown rice, often salted, not plain white gohan. Ask for unseasoned rice and confirm no soy sauce or furikake.",
+  "identity_ok": true,
+  "identity_note": "Right shop, still open. 姫路市飾西, ~1 min walk from JR 余部駅 (Bantan Line), opened 2025-10-01, cafe co-located with a dog trimming salon. Tabelog shows it operating with a review as recent as Jan 2026, hours 9:00-18:00, closed Thursdays.",
+  "needs_greg": false
+ },
+ {
+  "id": "himeji_reborn_curry",
+  "city": "himeji",
+  "name": "Reborn Curry (リボーンカレー)",
+  "current_tier": "high",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "This was the scrutiny target and the label breaks on the shop's own menu. The official HotPepper menu carries the line 「サモサは揚げ餃子風です。サモサ以外グルテンフリーです。」 — 'the samosa is fried-gyoza style; everything EXCEPT the samosa is gluten-free' — i.e. the shop itself confirms wheat gyoza wrappers are deep-fried in its kitchen, and tanosu independently reports the samosa is made with 餃子の皮. The side menu also lists タンドリーチキン唐揚げ and パコラ, both deep-fried, with no dedicated fryer or separate-oil claim from any source, and the flagship ¥1,870 Reborn Obanzai lunch (10/day) puts that same karaage on the plate alongside the curry — so a celiac ordering the headline lunch set eats out of the shared fryer. Every 'gluten-free' citation traces back to one origin: the shop's own marketing, echoed by four local Himeji promo outlets (KissPress, tanosu, budou-chan, keizai.biz) covering the May 2024 opening; there is no celiac-grade source, no FindMeGlutenFree/HappyCow entry, and no allergen protocol. The shop's own 「グレインフリー」 (grain-free) wording for a curry served over rice further shows the terminology is marketing, not allergen rigour.",
+  "sources": [
+   "https://www.hotpepper.jp/strJ003762517/food/",
+   "https://akr1411680673.owst.jp/",
+   "https://kisspress.jp/articles/47999/",
+   "https://tanosu.com/gourmet/167718/",
+   "https://budou-chan.jp/gourmet-reborn_curry/",
+   "https://himeji.keizai.biz/headline/2556/",
+   "https://travel.navitime.com/ja/area/jp/spot/01125-J003762517/"
+  ],
+  "independent_source_count": 0,
+  "red_flags": [
+   "DECISIVE: shop's own menu says 「サモサ以外グルテンフリーです」 — the samosa is NOT gluten-free, and it is a deep-fried wheat gyoza wrapper (餃子の皮) cooked on premises",
+   "SHARED FRYER: wheat samosa, タンドリーチキン唐揚げ and パコラ are all deep-fried with no dedicated-fryer or separate-oil claim anywhere",
+   "The flagship Reborn Obanzai Lunch (¥1,870, 10/day) INCLUDES 唐揚げ from that shared oil — the record's advice to 'stick to the curry plates' does not cover the shop's signature set",
+   "Zero independent verification — all GF claims trace to the shop's marketing, repeated by four local Himeji promo outlets covering the same 2024 opening; no celiac-grade source exists",
+   "Shop markets curry served over rice as 「グレインフリー」 (grain-free), which is factually wrong — the allergen vocabulary is promotional, not rigorous",
+   "15 vs 16 spice count differs between the record/press and the official site; the blend's wheat status is nowhere documented (commercial masala/curry powder is sometimes cut with wheat flour)",
+   "Soy sauce use unconfirmed; no tamari statement",
+   "No allergen protocol, no allergen chart, no staff-training statement"
+  ],
+  "plain_rice": "Probably yes — rice is the base of every curry plate — but the rice may be spiced/turmeric-cooked and it is plated in the same kitchen. Order rice plain and unseasoned, and confirm no fried garnish is added.",
+  "identity_ok": true,
+  "identity_note": "Right shop, right category, still open as of Aug 2026. 兵庫県姫路市岡田354-1 バルビゾン岡田1F (107), opened 2024-05-01, spice-curry specialist with a record-player concept, near 手柄駅. HotPepper files it under 洋食 / 飾磨・英賀保・亀山 and Navitime as カフェ — a directory-category quirk, not a different business. Hours: Mon/Fri-Sun 11:00-15:00 & 17:00-21:00, Thu lunch only, closed Tue-Wed.",
+  "needs_greg": false
+ },
+ {
+  "id": "kz_petitpas",
+  "city": "kanazawa",
+  "name": "Petit pas (お米の粉の研究所 プティパ)",
+  "current_tier": "high",
+  "verdict": "downgrade",
+  "recommended_tier": "options",
+  "reasoning": "I could not disprove the shop's substantive claim, but I could not corroborate it either, and that is what sinks the tier. All five URLs on the record resolve to the same operator's two domains (kaffee-konditorei.saloon.jp and kaffee-konditorei.com), so the record is a single source dressed as five. Searching outward found nothing: Petit pas is absent from the curated Japan GF guide's national all-GF bakery list, absent from FindMeGlutenFree's Kanazawa bakery/celiac pages (which surface Cafe Tamon and Wagome instead), and I found no Tabelog entry, no news article, no HappyCow listing and no Japanese blog write-up. The shop's own pages do state 「当店でお出しするパンメニューはすべて国産米粉パンになります」 and 「当店のケーキ・デザートはすべて小麦粉不使用です」, which is a strong and specific claim, and the .com page identifies the front-of-house as カフェコンディトライ ワイー with プティパ as the rice-flour lab that bakes for it — but a konditorei that was previously a wheat patisserie needs outside confirmation of the conversion, and none exists. Hard single-source rule applies.",
+  "sources": [
+   "https://kaffee-konditorei.saloon.jp/index.html",
+   "https://www.kaffee-konditorei.com/homemade.html",
+   "https://jp.japan-glutenfree.com/bakery-gf/",
+   "https://www.findmeglutenfree.com/jp/kanazawa/bakeries"
+  ],
+  "independent_source_count": 0,
+  "red_flags": [
+   "All record sources are the same business's own two domains — a single source presented as five; hard rule caps this at options/ask",
+   "No independent corroboration found anywhere: not on the Japan GF guide's all-GF bakery list, not on FindMeGlutenFree Kanazawa, no HappyCow, no Tabelog, no news, no blog",
+   "Record conflates two entities: Petit pas (お米の粉の研究所, the rice-flour bakery) and kaffee konditorei Y (the cafe it supplies) — the claimed 'entire kitchen converted to GF' is asserted only by the operator",
+   "A konditorei with a wheat-patisserie history and no outside verification of the conversion is exactly the case the evidence bar exists for",
+   "No allergen/cross-contact protocol, no dedicated-equipment statement; the site itself is largely unchanged since ~2021 so current status is stale",
+   "Two live domains for one business with differing content — confirm which premises is actually trading before sending anyone"
+  ],
+  "plain_rice": "No — bakery-cafe, no gohan served. Rice appears only as 米粉 (100% domestic 山田錦 rice flour) in bread and cakes.",
+  "identity_ok": false,
+  "identity_note": "Ambiguous. The record treats 'Petit pas' and 'kaffee konditorei Y' as one venue; kaffee-konditorei.com describes カフェコンディトライ ワイー as the cafe and refers to プティパ as a separate rice-flour facility where its bread is baked daily. Address 金沢市大額3-182, tel 076-298-1181, closed Tue/Wed. Current 2026 trading status could not be confirmed from any source — the shop's own site content dates to the 2021 relaunch and no third party has written about it since. Phone-verify before listing.",
+  "needs_greg": false
+ }
+]

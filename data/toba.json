@@ -9553,7 +9553,7 @@
    },
    "menu_url": "https://www.miyakohotels.ne.jp/shima/restaurant/",
    "cultural_comfort": null,
-   "cuisine_type": "hotel-fine-dining",
+   "cuisine_type": "kaiseki",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -9680,7 +9680,7 @@
    },
    "menu_url": "https://map.yahoo.co.jp/v3/place/LX-xai7_U-o/menu?filter=menu",
    "cultural_comfort": null,
-   "cuisine_type": "bakery-cafe",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -9714,7 +9714,12 @@
    "menu_vegan_meals": 3,
    "gf_label": "Some GF options",
    "mom_and_pop": false,
-   "menu_gf_ask_count": 3
+   "menu_gf_ask_count": 3,
+   "outside_city": {
+    "municipality": "栗真中山町",
+    "km": 43,
+    "note": "Filed under Toba but actually 43 km away in 栗真中山町 — plan it as a separate trip, not an evening out."
+   }
   },
   {
    "id": "toba_ukanomitama",
@@ -9854,9 +9859,9 @@
    "category": "GF",
    "lat": 34.491023,
    "lng": 136.708222,
-   "gf_confidence": "dedicated",
-   "gf_label": "Dedicated · celiac-safe",
-   "gf_detail": "Single-product wagashi shop selling 三方焼 (sanpou-yaki, a taiyaki-style filled cake). The owner announced (2024-03-03) that the entire line is now all-gluten-free: 「三方焼は【オールグルテンフリー】になりました。生地はすでに米粉で作っていましたが、中に入っているカスタードクリーム・チョコクリームも米粉を使用しています。」and adds 「小麦粉アレルギーの方にも安心して…お召し上がりいただけます。」The batter is rice flour (米粉) and even the custard and chocolate creams are rice-flour-thickened; anko is naturally wheat-free. This is the shop's own claim on a single product line, so no wheat flour should be on premises — but because it is a self-declaration (not a certified celiac facility), a parent should phone ahead (070-8978-0276) to confirm no wheat is handled anywhere before serving a celiac child.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→options. The entire gluten-free claim traces to exactly ONE source — the shop's own 2024-03-03 news post — which the record itself concedes is a self-declaration. The apparent second source, a Tabelog review titled 『グルテンフリー米粉にリニューアル』, is derivative: the reviewer simply restates the shop's announcement wording (「生地にもカスタードにもチョコクリームにも三重県産米粉を使用し、完全グルテンフリーになりました」), so it is not independent verification of handling. I searched for any celiac-grade listing (FindMeGlutenFree, HappyCow, GF-Japan lists) and for allergen labeling and found nothing at all; the shop's own site publishes no allergen statement, makes no wheat-free-facility claim, and sells other items (粒あん, ice cream) whose ingredients are undisclosed. Per the hard rule, a single source cannot support dedicated or high; the shop's specific, credible product claim supports `options` with mandatory phone confirmation.] Single-product wagashi shop selling 三方焼 (sanpou-yaki, a taiyaki-style filled cake). The owner announced (2024-03-03) that the entire line is now all-gluten-free: 「三方焼は【オールグルテンフリー】になりました。生地はすでに米粉で作っていましたが、中に入っているカスタードクリーム・チョコクリームも米粉を使用しています。」and adds 「小麦粉アレルギーの方にも安心して…お召し上がりいただけます。」The batter is rice flour (米粉) and even the custard and chocolate creams are rice-flour-thickened; anko is naturally wheat-free. This is the shop's own claim on a single product line, so no wheat flour should be on premises — but because it is a self-declaration (not a certified celiac facility), a parent should phone ahead (070-8978-0276) to confirm no wheat is handled anywhere before serving a celiac child.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "The あずき (azuki/red-bean) sanpou-yaki and the shaved-ice (三方氷) are plant-based; the custard and chocolate-cream sanpou-yaki and the ice-cream items contain dairy/egg. No explicit vegan labeling — confirm the bean-paste and batter contain no dairy.",
@@ -9943,7 +9948,7 @@
    },
    "menu_url": "https://yamadasampou.stores.jp/",
    "cultural_comfort": null,
-   "cuisine_type": "wagashi",
+   "cuisine_type": "sweets",
    "safety": {
     "dedicated_fryer": null,
     "gf_cross_contamination": [
@@ -9971,7 +9976,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-07-03"
+    "last_checked": "2026-08-19"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -9979,7 +9984,36 @@
    "menu_gf_meals": 0,
    "menu_vegan_count": 2,
    "menu_vegan_meals": 0,
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "gf_review": {
+    "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
+    "date": "2026-08-19",
+    "by": "Claude (adversarial pass)",
+    "verdict": "downgrade",
+    "from": "dedicated",
+    "to": "options",
+    "why": "The entire gluten-free claim traces to exactly ONE source — the shop's own 2024-03-03 news post — which the record itself concedes is a self-declaration. The apparent second source, a Tabelog review titled 『グルテンフリー米粉にリニューアル』, is derivative: the reviewer simply restates the shop's announcement wording (「生地にもカスタードにもチョコクリームにも三重県産米粉を使用し、完全グルテンフリーになりました」), so it is not independent verification of handling. I searched for any celiac-grade listing (FindMeGlutenFree, HappyCow, GF-Japan lists) and for allergen labeling and found nothing at all; the shop's own site publishes no allergen statement, makes no wheat-free-facility claim, and sells other items (粒あん, ice cream) whose ingredients are undisclosed. Per the hard rule, a single source cannot support dedicated or high; the shop's specific, credible product claim supports `options` with mandatory phone confirmation.",
+    "independent_source_count": 1,
+    "red_flags": [
+     "Single-source claim: only the shop's own announcement; the Tabelog review restates that announcement rather than independently verifying handling.",
+     "Zero celiac-grade corroboration — not on FindMeGlutenFree, HappyCow, or any GF-Japan list I could find.",
+     "No wheat-free-facility statement and no allergen labeling published anywhere; the announcement covers the 三方焼 product line only.",
+     "Shop also sells 粒あん and ice cream with no disclosed ingredients — commercial anko and ice cream are common vectors for wheat-derived thickeners/inclusions.",
+     "Griddle-baked filled cake on shared plates/utensils in a tiny counter shop; no separation protocol documented.",
+     "定休日 不定休 (irregular closing days) — may be shut without notice.",
+     "Domain/handle inconsistency in the record: website yamadasampou.com but store link yamadasampou.stores.jp, while the live store is yamadasanpou.stores.jp."
+    ],
+    "plain_rice": "N/A — single-product wagashi counter, no cooked gohan served.",
+    "identity_ok": true,
+    "identity_note": "Business correctly identified: 山田三方, 三重県伊勢市本町2-1号 駅前ビル1階, opened 2022-05-20, 9:00-18:00, taiyaki/大判焼き category. BUT the record files it under city 'toba' when it is in ISE CITY at Iseshi Station — the neighborhood field says Ise, so this is a city-bucket mismatch the caretaker should confirm is intentional.",
+    "sources": [
+     "https://yamadasampou.com/news/137/",
+     "https://yamadasampou.com/",
+     "https://tabelog.com/mie/A2403/A240301/24019099/dtlrvwlst/B452334907/",
+     "https://www.iseshima-kanko.jp/gourmet/3083",
+     "https://yamadasanpou.stores.jp/"
+    ]
+   }
   }
  ]
 }

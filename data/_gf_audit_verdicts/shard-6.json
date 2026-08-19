@@ -1,0 +1,156 @@
+[
+ {
+  "id": "nagoya_corpo",
+  "city": "nagoya",
+  "name": "COrPO (やさしいスイーツカフェ COrPO)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "Identity and the wheat-free premises claim survive: the shop's own site states 「小麦を使用しない、全てグルテンフリーの商品を提供しております」 and an independent Nagoya GF guide corroborates 「店内に小麦を一切持ち込まないことです」. What I could NOT confirm, and what breaks `dedicated`, is celiac-grade scope: the shop's claim is framed as 小麦不使用 (wheat-only), and its own lunch menu serves 「18穀米」 as the rice base for both the ロコモコ and the kids' hamburger plate — Japanese 18-grain blends conventionally include 押麦/もち麦/大麦 (barley), which is a gluten grain for celiacs, and I found no ingredient list resolving COrPO's specific blend. The same menu lists 「クルトン」 (croutons) on the shrimp-avocado salad plate, another unresolved wheat vector. No FindMeGlutenFree/HappyCow celiac review or GF-Japan list entry attesting celiac-grade handling was found; the two Japanese blogs relied on are a wheat-allergy (not celiac) blogger and a general city-guide, and the GF guide notes COrPO still uses eggs and dairy, showing a limited free-from scope.",
+  "sources": [
+   "https://cafe-corpo.owst.jp/",
+   "https://cafe-corpo.owst.jp/foods",
+   "https://www.hotpepper.jp/strJ001246261/",
+   "https://ashiya-obentofesta.com/nagoya-gf/",
+   "https://nhkomorebi.com/corpo/",
+   "https://nagonavi.com/2218/",
+   "https://nhkomorebi.com/barley/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "18穀米 (18-grain rice) is the rice base for two lunch plates; such blends routinely contain 押麦/もち麦/大麦 (barley) — a gluten grain for celiacs. Composition unresolved.",
+   "クルトン (croutons) listed on the エビとアボカドのカクテルサラダ plate — wheat vector unless rice-bread-based; unconfirmed.",
+   "Shop's own claim is 小麦不使用 (wheat-only framing), not 'no gluten grains'. Barley/rye/oats never addressed.",
+   "No celiac-grade corroboration (no FMGF/HappyCow celiac review or GF-Japan list entry) found.",
+   "Not vegan-adjacent: GF guide notes eggs and dairy are used, so the free-from scope is narrower than the record implies."
+  ],
+  "plain_rice": "Not reliably — the rice actually served with lunch plates is 18穀米 (multigrain), not plain gohan, and that blend may itself contain barley. Ask specifically for plain white rice or stick to the 米粉パン.",
+  "identity_ok": true,
+  "identity_note": null,
+  "needs_greg": false
+ },
+ {
+  "id": "nagoya_en_kitchen",
+  "city": "nagoya",
+  "name": "en-kitchen cafe (エンキッチン)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "I set out to verify the record's central `dedicated` evidence — the quote 「店内の全てのメニューが小麦・卵・乳製品不使用…調理器具も完全に分けており、小麦粉の持ち込みは一切禁止」 attributed to nhkomorebi.com/en-kitchen/ — and it does not hold: that page says only 「お店のメニューはすべて小麦、卵、乳製品不使用です」 and in fact raises a concern, 「調味料やコンタミネーションの危険が心配です」. The separated-utensils / no-wheat-flour-on-premises language belongs to a DIFFERENT Nagoya shop (みちのり亭) and appears to have been misattributed to en-kitchen. Decisively, the FindMeGlutenFree listing for en-kitchen Cafe is explicitly NOT dedicated — it is marked 'Accommodating gluten-free' with 'some risk of cross-contamination'. The genuine, multiply-sourced fact is that the entire menu is wheat/egg/dairy-free (own site, FMGF, nhkomorebi, nagoya-meshi, KELLY), which supports `high` but not `dedicated`; en-kitchen's own site never claims separated equipment, a wheat ban, or tamari.",
+  "sources": [
+   "https://en-kitchen.com/about-us/",
+   "https://www.findmeglutenfree.com/biz/en-kitchen-cafe/6657475904929792",
+   "https://www.atly.com/gluten-free/location/en-kitchen-Cafe1",
+   "https://nhkomorebi.com/en-kitchen/",
+   "https://nagoya-meshi.com/recommend/cafe/enkitchencafe",
+   "https://kelly-net.jp/enjoytoday/2023033109211082241.html",
+   "https://tabelog.com/aichi/A2301/A230105/23060152/dtlmenu/"
+  ],
+  "independent_source_count": 3,
+  "red_flags": [
+   "Record's key 'separated utensils / wheat flour banned from premises' quote is MISATTRIBUTED — that language belongs to みちのり亭, not en-kitchen.",
+   "FindMeGlutenFree lists en-kitchen as 'accommodating', NOT dedicated, and flags 'some risk of cross-contamination'.",
+   "The cited GF blogger (naco) explicitly voices concern about seasonings and cross-contamination at this shop.",
+   "No tamari / wheat-free soy sauce confirmation anywhere; the record's soy-sauce evidence is an inference, not a sourced statement.",
+   "Shop's own site frames itself as a 野菜カフェ using no egg/dairy/wheat — it makes no allergen-control or celiac claim."
+  ],
+  "plain_rice": "Likely yes — rice is served with the 健美膳 / curry sets and the kitchen uses no wheat, so plain unseasoned gohan should be obtainable. Still confirm it is not takikomi or soy-seasoned.",
+  "identity_ok": true,
+  "identity_note": "Correct shop confirmed (中区大井町3-31 パレス大井1F, 1 min from Higashi-Betsuin Stn, opened 2016, owner Chiaki). The record's neighborhood string '中区大井町 (Higashi-Betsuin, Naka-ku)' is accurate.",
+  "needs_greg": false
+ },
+ {
+  "id": "nagoya_harunohana",
+  "city": "nagoya",
+  "name": "Haruno-hana (はるのはな)",
+  "current_tier": "dedicated",
+  "verdict": "downgrade",
+  "recommended_tier": "high",
+  "reasoning": "The disproof came from the shop itself. Haruno-hana's own online store carries the verbatim disclaimer 「使用する食材には同一製造ラインでアレルゲン28品目を扱っているものもあります。完全なコンタミ対応ではありません。」 — some ingredients are handled on production lines running all 28 allergens, and this is NOT complete cross-contamination management — followed by 「万が一の責任は一切負えませんので、十分にご検討の上、ご購入をお願い致します。」, an explicit refusal of liability. A shop that itself declines to claim contamination control cannot carry `dedicated · celiac-safe`. Their in-house 100% 米粉 / 小麦・卵・乳不使用 production is real and independently reported by local news and a GF guide, so `high` holds, but I found no FindMeGlutenFree/HappyCow celiac review or any celiac-grade attestation for this very new shop (opened 4 Apr 2025; cafe from ~May 2025).",
+  "sources": [
+   "https://haruno-hana.com/",
+   "https://haruno-hana.com/shop/",
+   "https://haruhanapan.base.shop/items/all",
+   "https://chiku-san.com/20250326-harunohana-kayaba-open/",
+   "https://nagoyameito-chikusa.goguynet.jp/2025/03/27/harunohana/",
+   "https://bagel-atsume.com/magazine/magazine-bagel_haruhana-1/",
+   "https://ashiya-obentofesta.com/nagoya-gf/",
+   "https://www.instagram.com/bagel_haruhana/"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "Shop's OWN disclaimer: 「完全なコンタミ対応ではありません」 — explicitly not full cross-contamination control; ingredients may come from 28-allergen shared lines.",
+   "Shop explicitly disclaims all liability for allergic reactions (「万が一の責任は一切負えません」).",
+   "Very new business (storefront opened April 2025); no celiac-grade review found in any language.",
+   "Nut-containing products are made in a separated space with separate boiling pots — which implies non-nut items are NOT separated, i.e. separation is allergen-specific, not blanket.",
+   "Irregular opening days (営業日は月によって変動) — verify before travelling.",
+   "Own site makes no facility-level wheat-ban or dedicated-equipment claim, contrary to the record's framing."
+  ],
+  "plain_rice": "No — this is a rice-flour bakery and small cafe, not a rice-meal shop. Bread/bagels, not gohan.",
+  "identity_ok": true,
+  "identity_note": "Correct shop (千種区萱場2-13-22, Aichi's first 米粉ベーグル specialist, owner Eriko Kondo). Note it is a three-part operation — bakery, GF cafe, and a rice-flour bread CLASS (教室) — so members of the public cook on site.",
+  "needs_greg": false
+ },
+ {
+  "id": "nagoya_komeko_palette",
+  "city": "nagoya",
+  "name": "Komeko no Mise Palette (こめこの店Palette)",
+  "current_tier": "dedicated",
+  "verdict": "keep",
+  "recommended_tier": "dedicated",
+  "reasoning": "I tried to break this one two ways and failed. First, the record's headline quote is cited to a URL where I could not find it, so I hunted the phrase directly: it is genuine, appearing on the shop's own site as 「当店は小麦を一切使用しない米粉パン専門工場で製造しています。製造施設内への小麦持ち込みは完全禁止、米粉パン専用の設備・器具のみを使用し、コンタミネーション（混入）リスクはゼロ。」, and the shop explicitly names セリアック病 as a population it serves. Second, for independent celiac-grade corroboration, FindMeGlutenFree lists こめこの店Palette as a Dedicated Gluten-Free Cafe and ranks it among Nagoya's most celiac-friendly restaurants, with positive celiac-community reviews and no 'got glutened' or adverse report found. Own explicit claim plus independent celiac-grade corroboration clears the `dedicated` bar; remaining gaps are operational, not structural.",
+  "sources": [
+   "https://komeko-palette.com/",
+   "https://komeko-palette.com/en/pages/about",
+   "https://komeko-palette.com/en/collections/glutenfree_nagoya",
+   "https://www.findmeglutenfree.com/biz/palette/4849702538969088",
+   "https://www.findmeglutenfree.com/jp/nagoya/celiac-friendly",
+   "https://tabelog.com/en/aichi/A2301/A230110/23082110/",
+   "https://www.hotpepper.jp/strJ003451073",
+   "https://mt.tokai-tv.com/gourmet_info/006111.html"
+  ],
+  "independent_source_count": 2,
+  "red_flags": [
+   "不定期営業 — irregular opening days; both the shop and FMGF say to phone (080-9560-4339) or check Instagram @palette_ym before going. High risk of a wasted trip.",
+   "The 'zero contamination risk' language describes the 米粉パン製造工場 (bread/bagel factory). The cafe also plates 餃子・焼売・カレー・唐揚げ; no separate statement covers the cafe kitchen line.",
+   "No 醤油/tamari statement anywhere — the gyoza/shumai dipping sauce and any savory seasoning are undocumented and must be asked about.",
+   "'コンタミネーションリスクはゼロ' is an absolute marketing claim; treat as the shop's intent, not a verified audit.",
+   "Brand runs nationwide mail-order with per-city SEO landing pages (Sendai, etc.) — only the 名古屋市北区 site is an actual storefront."
+  ],
+  "plain_rice": "Probably yes — the cafe serves 定食 (gyoza/shumai set meals) and 米粉カレー, so plain gohan is on hand. Order it unseasoned and skip the dipping sauce.",
+  "identity_ok": true,
+  "identity_note": "Confirmed: 名古屋市北区東大杉町4-39-2, listed on Tabelog under Morishita, consistent with the record's 'near Ozone/Morishita'. Do not confuse the physical shop with the brand's city-targeted mail-order landing pages (e.g. a 'Sendai' page exists but is not a branch).",
+  "needs_greg": true
+ },
+ {
+  "id": "nagoya_michinori_tei",
+  "city": "nagoya",
+  "name": "Michinori-tei (みちのり亭)",
+  "current_tier": "dedicated",
+  "verdict": "keep",
+  "recommended_tier": "dedicated",
+  "reasoning": "The strongest attack available was on source independence, and it landed partially: nhkomorebi.com — cited three times in the record as corroboration, including for the separated-equipment and tamari claims — is naco's OWN blog, and naco is the founder of みちのり弁当/みちのり亭. Those citations are first-party, not independent, so the record over-counts its evidence. However the label still survives, because genuinely independent celiac-grade corroboration exists: FindMeGlutenFree lists みちのり亭 as a Dedicated Gluten-Free Restaurant among Nagoya's most celiac-friendly, with reviewers reporting the owner explains her wheat allergy and that no wheat or barley is permitted in the kitchen. Crucially the scope is gluten-grain-wide, not wheat-only — 「小麦はもちろん、大麦、ライ麦、オーツ麦など、グルテンを含む穀物を一切使用しない」 — with 米粉 breading and wheat-free tamari. I found no 'got glutened' report for this shop.",
+  "sources": [
+   "https://michinoritei.com/",
+   "https://gf-michinori.jp/blogs/news/michinori-tei-open",
+   "https://www.findmeglutenfree.com/biz/michinori-tei/4691344077750272",
+   "https://www.findmeglutenfree.com/jp/nagoya/celiac-friendly",
+   "https://ashiya-obentofesta.com/nagoya-gf/",
+   "https://co-trip.jp/article/683284",
+   "https://jouhou.nagoya/michinoritei-meieki/",
+   "https://prtimes.jp/main/html/rd/p/000000003.000110380.html",
+   "https://www.tripadvisor.com/Restaurant_Review-g298106-d27132692-Reviews-Gluten_Free_Michinori_Bento-Nagoya_Aichi_Prefecture_Tokai_Chubu.html"
+  ],
+  "independent_source_count": 4,
+  "red_flags": [
+   "SOURCE INDEPENDENCE: nhkomorebi.com is the owner's (naco's) own blog — the record cites it as third-party corroboration for the separated-equipment, tamari and staff-handling claims. Those are first-party and must not be counted as independent.",
+   "Shop-acknowledged caveat: 「一部調味料の製造工場では小麦を扱っている場合があります」 — some condiment suppliers also process wheat; highly sensitive celiacs should confirm the specific item on arrival.",
+   "Fried items (手羽先, みそかつ, tempura-style) are central to the menu; the fryer is wheat-free only because the whole premises is — there is no independent audit of the oil.",
+   "Record lists one location; the business now shows TWO (名古屋駅店 中村区椿町8-7 2F and 泉店 東区泉3-20-23). Verify which branch a user is sent to, and whether the 泉店 has the same controls."
+  ],
+  "plain_rice": "Yes — teishoku/gozen sets and onigiri are core menu items and the whole premises is gluten-grain-free, so plain gohan is safe here. This is the most reliable plain-rice option of the five.",
+  "identity_ok": true,
+  "identity_note": "Correct and distinct from the takeaway みちのり弁当 (Nishi-ku), as the record states. Nakamura-ku Tsubaki-cho address confirmed. However a second branch (泉店, Higashi-ku) now exists that the record does not capture.",
+  "needs_greg": true
+ }
+]
