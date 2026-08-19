@@ -4598,7 +4598,8 @@
     "level": "japanese",
     "note": "A small, traditional neighborhood kissaten where Japanese-language ability and a polite, low-key approach will make the visit much smoother; assume no English support."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": false
   },
   {
    "id": "toba_ephemere",
@@ -6993,135 +6994,11 @@
     "level": "guide_only",
     "note": "A grab-and-go fried fish-cake kiosk right by the station gates; quick point-and-buy with minimal conversation, fine for any comfort level but not a place to discuss allergens in depth."
    },
-   "mom_and_pop": false
-  },
-  {
-   "id": "toba_toba_kyubei",
-   "name": "鳥羽 久兵衛 (Toba Kyubei)",
-   "category": "MOM_AND_POP",
-   "lat": 34.482834,
-   "lng": 136.840759,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
-   "gf_detail": "A traditional yakitori izakaya with no indication of gluten-free accommodation. Yakitori is glazed in tare sauce, which is made from wheat-containing soy sauce (shoyu), and the kitchen also serves fried dishes and other izakaya fare. Dashi and seasonings used for izakaya dishes typically contain wheat-based soy sauce. There is no information on a dedicated fryer or any allergen handling. Celiacs should treat this as unsafe unless they can confirm details directly in advance, and even salt-only (shio) skewers carry shared-grill cross-contamination risk.",
-   "vegan_status": "no",
-   "vegan_label": "Not vegan",
-   "vegan_detail": "This is a yakitori (grilled chicken) and izakaya specializing in Ise chicken and local seafood; the entire concept is animal-based. Even vegetable skewers and side dishes would be cooked on the same grill as chicken/fish and seasoned with bonito/katsuo dashi and wheat soy sauce. No vegan options indicated.",
-   "hours_raw": "18:00–24:00 (hours and closing days may change, so confirm before visiting)",
-   "hours": {
-    "0": [
-     [
-      "18:00",
-      "24:00"
-     ]
-    ],
-    "1": [
-     [
-      "18:00",
-      "24:00"
-     ]
-    ],
-    "2": [
-     [
-      "18:00",
-      "24:00"
-     ]
-    ],
-    "3": [
-     [
-      "18:00",
-      "24:00"
-     ]
-    ],
-    "4": [
-     [
-      "18:00",
-      "24:00"
-     ]
-    ],
-    "5": [
-     [
-      "18:00",
-      "24:00"
-     ]
-    ],
-    "6": []
-   },
-   "hours_status": "irregular",
-   "flags": {
-    "reservation": false,
-    "cash_only": true,
-    "halal": false,
-    "open_late": true
-   },
-   "neighborhood": "Toba 2-chome, east of Toba Stn",
-   "cuisine": "Yakitori / izakaya",
-   "cuisine_type": "yakitori",
-   "website": "http://pc-nct.biz/kyube/",
-   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E7%BE%BD%20%E4%B9%85%E5%85%B5%E8%A1%9B%20%E4%B8%89%E9%87%8D%E7%9C%8C%E9%B3%A5%E7%BE%BD%E5%B8%82%E9%B3%A5%E7%BE%BD2-4-3",
-   "notes": "[Mom & Pop] Founded in 1971, Kyubei is described as the oldest yakitori izakaya in Toba, a small grill-side tavern just east of the station that has been part of the local drinking culture for decades.",
-   "menu_url": "https://tabelog.com/mie/A2403/A240302/24005241/dtlmenu/",
-   "chef_bio": {
-    "chef_name": null,
-    "roles": [
-     "yakitori izakaya"
-    ],
-    "origin": "Toba, Mie Prefecture",
-    "background": "Founded in 1971, Kyubei is described as the oldest yakitori izakaya in Toba, a small grill-side tavern just east of the station that has been part of the local drinking culture for decades.",
-    "philosophy": "A focus on the local pantry: sake from Mie Prefecture, fish from local waters, and Ise chicken on the skewers.",
-    "specialty": "Charcoal-grilled yakitori made with Ise chicken, served alongside local seafood and Mie-brewed sake.",
-    "anecdotes": [
-     {
-      "text": "Billed as the oldest yakitori izakaya in Toba, having opened in 1971.",
-      "source": "https://www.toba.gr.jp/eat/2062/"
-     },
-     {
-      "text": "The shop puts together a regional spread: Mie-prefecture sake, local seafood, and Ise chicken.",
-      "source": "http://pc-nct.biz/kyube/"
-     }
-    ],
-    "japanese_sources_summary": "toba.gr.jp confirms founding in 1971, described as the oldest yakitori izakaya in Toba, sourcing Mie sake, local seafood, and Ise chicken; located at 2-4-3 Toba near the station.",
-    "confidence": "medium",
-    "sources": [
-     "https://www.toba.gr.jp/eat/2062/",
-     "http://pc-nct.biz/kyube/",
-     "https://tabelog.com/mie/A2403/A240302/24005241/"
-    ]
-   },
-   "safety": {
-    "dedicated_fryer": null,
-    "gf_cross_contamination": [
-     {
-      "text": "Yakitori is grilled on a shared charcoal grill and izakaya fare includes fried items; no allergen separation is indicated.",
-      "source": "https://tabelog.com/mie/A2403/A240302/24005241/"
-     }
-    ],
-    "soy_sauce_wheat": [
-     {
-      "text": "Yakitori tare and izakaya seasonings are based on standard Japanese soy sauce, which contains wheat; no gluten-free options are mentioned.",
-      "source": "https://tabelog.com/mie/A2403/A240302/24005241/"
-     }
-    ],
-    "vegan_cross_contact": [
-     {
-      "text": "An Ise-chicken yakitori and seafood izakaya with no vegan menu; vegetable items would share the grill and likely use bonito/katsuo dashi.",
-      "source": "http://pc-nct.biz/kyube/"
-     }
-    ],
-    "staff_allergy_handling": [],
-    "positives": [],
-    "confidence": "low",
-    "last_checked": "2026-06-26"
-   },
-   "cultural_comfort": {
-    "level": "japanese",
-    "note": "A small, long-running local yakitori izakaya with counter and tatami seating; comfortable for those at ease in a traditional Japanese izakaya setting, with little expectation of English support."
-   },
-   "mom_and_pop": true,
+   "mom_and_pop": false,
    "has_menu": true,
    "menu_verified": "authoritative",
    "menu_gf_count": 0,
-   "menu_gf_ask_count": 23,
+   "menu_gf_ask_count": 0,
    "menu_vegan_count": 0,
    "menu_vegan_meals": 0
   },
@@ -7246,7 +7123,13 @@
     "level": "japanese",
     "note": "A small, local ferry-terminal café where staff likely speak little English, so a few Japanese phrases or a translation app will help you order and ask about ingredients."
    },
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "has_menu": true,
+   "menu_verified": "provisional",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 0,
+   "menu_vegan_count": 1,
+   "menu_vegan_meals": 0
   },
   {
    "id": "toba_hinoyama_lab",
@@ -7488,7 +7371,13 @@
     "level": "guide_only",
     "note": "A casual, no-frills ferry-terminal café where ordering is simple and staff bring food to your table; little to no English is expected, so point-to-menu or basic Japanese works best."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "partial",
+   "menu_gf_count": 1,
+   "menu_gf_ask_count": 0,
+   "menu_vegan_count": 1,
+   "menu_vegan_meals": 0
   },
   {
    "id": "toba_musea_coffee_toba_aquari",
@@ -7995,7 +7884,13 @@
     "level": "japanese",
     "note": "A small local souvenir shop where staff likely speak mainly Japanese; pointing at flavors works fine for a quick takeout purchase, but expect little English."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 0,
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0
   },
   {
    "id": "toba_senmonten",
@@ -8676,7 +8571,13 @@
     "level": "japanese",
     "note": "A neighborhood branch of a national takeout-bento chain; ordering is simple counter Japanese and English is not expected, so come ready to point at the menu or use a few Japanese phrases."
    },
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 2,
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0
   },
   {
    "id": "toba_benkei",
@@ -9385,9 +9286,9 @@
    "category": "MOM_AND_POP",
    "lat": 34.482834,
    "lng": 136.840759,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "No gluten-free program and no information published about wheat or allergen handling. As a traditional yakitori/izakaya, the core risks are: yakitori tare and most seasonings made with wheat-containing soy sauce (shoyu); dashi and broths likely seasoned with soy sauce/mirin; and fried items (the menu includes fried shrimp, crispy potato-bacon, and seared/fried dishes) sharing oil with breaded items — no dedicated fryer is indicated. Shio (salt-only) skewers may exist but cross-contact with tare brushes and shared grill is unconfirmed. A celiac should not assume any dish is safe without a detailed phone conversation in Japanese; treat as ask-only, leaning toward no.",
+   "gf_confidence": "no",
+   "gf_label": "Not gluten-free",
+   "gf_detail": "A traditional yakitori izakaya with no indication of gluten-free accommodation. Yakitori is glazed in tare sauce, which is made from wheat-containing soy sauce (shoyu), and the kitchen also serves fried dishes and other izakaya fare. Dashi and seasonings used for izakaya dishes typically contain wheat-based soy sauce. There is no information on a dedicated fryer or any allergen handling. Celiacs should treat this as unsafe unless they can confirm details directly in advance, and even salt-only (shio) skewers carry shared-grill cross-contamination risk.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
    "vegan_detail": "A long-running yakitori and seafood izakaya with no advertised vegan or vegetarian menu. Nearly all dishes are built around chicken, pork, or fish; even the complimentary appetizer is local wakame seaweed and the tsukidashi/small plates lean on fish-based dashi and bonito. Tare (sweet skewer glaze) and most seasonings are soy-sauce based. A vegan diner would need to call ahead and ask directly whether anything (e.g. plain grilled vegetables) can be prepared without animal-derived dashi, broth, or bonito — assume hidden katsuo/fish stock otherwise.",
@@ -9512,7 +9413,8 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 23,
    "menu_vegan_count": 0,
-   "menu_vegan_meals": 0
+   "menu_vegan_meals": 0,
+   "merge_note": "Merged 1 duplicate record(s): toba_toba_kyubei (no). Tier lowered \"ask\" → \"no\" — the most cautious in the group, since a merge must never raise a safety label."
   },
   {
    "id": "toba_uoshin",

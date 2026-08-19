@@ -43,6 +43,14 @@ function aliases(name) {
   const m = s.match(/^([^（(]*)[（(]([^）)]*)[）)]/);
   if (m) {
     out.add(norm(m[1]));
+    // Split ONLY on separators, never on nested brackets.
+    //
+    // Splitting on brackets was tried to catch "久兵衛 (Kyubei (Toba Kyubei))" and it
+    // deleted six real Tokyo shops: "浅草むぎとろ 本店 (Asakusa Mugitoro (Honten))"
+    // yielded the standalone alias "honten", and "(… (Suidobashi))" yielded
+    // "suidobashi" — branch and district qualifiers that dozens of unrelated shops
+    // share. Everything carrying one collapsed into a single group with one
+    // survivor. A fragment of a parenthetical is not an identity.
     for (const alt of m[2].split(/[/／・]/)) out.add(norm(alt));
   }
   out.add(norm(s.replace(/[（(].*?[）)]/g, ' ')));
@@ -70,10 +78,24 @@ function fillFrom(t, d) {
   }
 }
 
+// Least permissive first. Used when merging ungated duplicates with different
+// tiers — the merge takes the most cautious of them.
+const PERMISSIVENESS = { no: 0, ask: 1, options: 2, high: 3, dedicated: 4 };
+
 const score = r => (r.safety?.owner_signoff?.decision ? 1e9 : 0) +
                    (r.loc_approx ? 0 : 1e6) + JSON.stringify(r).length;
 
+// Verified duplicates that no safe heuristic catches. Kept as an explicit, tiny
+// list because the alternative — loosening the matcher until it finds them — is
+// what deleted six real shops. Each entry is a pair confirmed by identical
+// coordinates, identical website AND an identical menu.
+const KNOWN_DUPLICATES = [
+  { city: 'toba', keep: 'toba_kyubei_toba_kyubei', drop: 'toba_toba_kyubei',
+    why: 'same coordinates (34.482834,136.840759), same website, same Tabelog id 24005241, identical 41-item menu' },
+];
+
 const review = [];
+const allSurvivors = new Map();
 let grandTotal = 0;
 
 for (const city of cities) {
@@ -96,6 +118,13 @@ for (const city of cities) {
     }
   }
 
+  // fold in the verified pairs before grouping
+  for (const kd of KNOWN_DUPLICATES) {
+    if (kd.city !== city) continue;
+    const has = id => places.some(p => p.id === id);
+    if (has(kd.keep) && has(kd.drop)) union(kd.drop, kd.keep);
+  }
+
   const groups = new Map();
   for (const p of places) {
     const r = find(p.id);
@@ -111,12 +140,30 @@ for (const city of cities) {
     rs.sort((a, b) => score(b) - score(a));
     const [keep, ...rest] = rs;
     const tierConflict = new Set(rs.map(r => r.gf_confidence)).size > 1;
-    for (const d of rest) { fillFrom(keep, d); drop.add(d.id); survivorOf.set(d.id, keep.id); }
+    for (const d of rest) { fillFrom(keep, d); drop.add(d.id); survivorOf.set(d.id, keep.id); allSurvivors.set(d.id, keep.id); }
+
     if (tierConflict) {
+      const gated = keep.safety?.owner_signoff?.decision;
+      const before = keep.gf_confidence;
+      // A human gate is final and wins outright. Otherwise adopt the MOST CAUTIOUS
+      // tier in the group: the richest record wins the content, but merging must
+      // never raise a safety label. A false "safe" costs more than a false "ask",
+      // and depth is not evidence about wheat.
+      if (!gated) {
+        const safest = rs.reduce((a, b) => (PERMISSIVENESS[a.gf_confidence] <= PERMISSIVENESS[b.gf_confidence] ? a : b));
+        if (safest.gf_confidence !== before) {
+          keep.gf_confidence = safest.gf_confidence;
+          keep.gf_label = safest.gf_label;
+          keep.gf_detail = safest.gf_detail || keep.gf_detail;
+        }
+      }
       keep.merge_note = `Merged ${rest.length} duplicate record(s): ` +
         rest.map(d => `${d.id} (${d.gf_confidence})`).join(', ') +
-        `. Kept this record's tier "${keep.gf_confidence}"` +
-        (keep.safety?.owner_signoff?.decision ? ' (human-gated).' : '.');
+        (gated
+          ? `. Kept this record's tier "${keep.gf_confidence}" (human-gated).`
+          : before === keep.gf_confidence
+            ? `. Tier "${keep.gf_confidence}" was already the most cautious in the group.`
+            : `. Tier lowered "${before}" → "${keep.gf_confidence}" — the most cautious in the group, since a merge must never raise a safety label.`);
     }
     merged++;
     console.log(`${city}: ${rs.length} -> ${keep.id} [${keep.gf_confidence}${keep.safety?.owner_signoff?.decision ? ' GATED' : ''}] ${keep.name.slice(0, 42)}`);
@@ -151,4 +198,24 @@ for (const city of cities) {
 }
 
 fs.writeFileSync('data/_dupe_review.json', JSON.stringify(review, null, 1));
+
+// Persist droppedId -> survivingId so LATER pipeline steps can follow a record
+// that moved. Research files are keyed by the id that existed when the research
+// ran; without this, a menu whose record was merged away is reported unmatched
+// and silently not applied.
+// Cumulative, not per-run: a merge that happened on an earlier invocation still
+// needs to be followable, and the pipeline is idempotent so a later run finds
+// nothing left to merge and would otherwise write an empty map.
+{
+  const f = 'data/_dupe_survivors.json';
+  const prev = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {};
+  const next = { ...prev, ...Object.fromEntries(allSurvivors) };
+  // collapse chains: A->B, B->C becomes A->C
+  for (const k of Object.keys(next)) {
+    let v = next[k], hops = 0;
+    while (next[v] && hops++ < 10) v = next[v];
+    next[k] = v;
+  }
+  fs.writeFileSync(f, JSON.stringify(next, null, 1));
+}
 console.log(`\n${grandTotal} duplicate records removed; ${review.length} far-apart alias matches left for manual review -> data/_dupe_review.json`);

@@ -10611,472 +10611,6 @@
    }
   ]
  },
- "toba_toba_kyubei": {
-  "verified": "authoritative",
-  "confidence": "high",
-  "sources": [
-   "http://pc-nct.biz/kyube/",
-   "https://web.archive.org/web/20231210005115/http://pc-nct.biz/kyube/html/ryouri.html",
-   "https://web.archive.org/web/20040824121316/http://www.pc-nct.biz/kyube/html/ryouri.html",
-   "https://web.archive.org/web/20040830132527/http://pc-nct.biz/kyube/index.html",
-   "https://tabelog.com/mie/A2403/A240302/24005241/"
-  ],
-  "price_note": "Prices approximate — may change. Transcribed verbatim from the shop's own 料理 (menu) page at pc-nct.biz/kyube/html/ryouri.html; that domain has since lapsed, so these are the last prices the shop itself published (page content last revised c.2016, archived 2023). Drink prices are not included because the shop published its drink list as images that were never archived.",
-  "last_checked": "2026-08-19",
-  "items": [
-   {
-    "ja": "もも",
-    "romaji": "Momo",
-    "en": "Chicken thigh, plain — the juicy dark-meat skewer, the default order",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Two skewers to an order and every cut on this list is ¥300. The shop uses 伊勢鶏 (Ise-dori), a Mie-raised branded chicken. Grilled over charcoal; ask for shio (salt) or tare (sweet soy glaze) — tare contains wheat.",
-    "dish_key": "momo_yakitori"
-   },
-   {
-    "ja": "ねぎま",
-    "romaji": "Negima",
-    "en": "Thigh meat alternated with chunks of Japanese leek",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "The classic pairing: the leek steams inside and sweetens as it chars. 'Negi' = leek, 'ma' = in between.",
-    "dish_key": "negima"
-   },
-   {
-    "ja": "せせり",
-    "romaji": "Seseri",
-    "en": "Neck meat — a small, hard-working muscle, springy and unusually rich",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Only a few dozen grams come off each bird, so it is a connoisseur's cut. Chewy-juicy rather than tender.",
-    "dish_key": "seseri"
-   },
-   {
-    "ja": "おっぽ",
-    "romaji": "Oppo",
-    "en": "Chicken tail — the fatty parson's nose, elsewhere called bonjiri",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "One nub per chicken. Almost all fat and collagen; it crisps outside and bursts hot inside. 'Oppo' is this shop's homely word for what other menus print as ぼんじり.",
-    "dish_key": "bonjiri"
-   },
-   {
-    "ja": "きも",
-    "romaji": "Kimo",
-    "en": "Chicken liver — soft, mineral, almost custard-like when done right",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "'Kimo' is the everyday word for liver; most menus print レバー. Usually glazed with tare — ask for salt if you want it lighter.",
-    "dish_key": "chicken_liver"
-   },
-   {
-    "ja": "ハート",
-    "romaji": "Hāto",
-    "en": "Chicken heart — small, dense, clean-tasting, with a satisfying snap",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Written here as 'heart' in katakana; elsewhere ハツ (hatsu). Two or three hearts are threaded per skewer.",
-    "dish_key": "chicken_heart"
-   },
-   {
-    "ja": "砂肝",
-    "romaji": "Sunagimo",
-    "en": "Gizzard — the muscular grinding stomach, crunchy and lean",
-    "price": "¥300",
-    "section": "伊勢鶏 串焼き / Ise-Chicken Skewers",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "The signature crunch of a yakitori counter, with almost no fat. Best with just salt and lemon.",
-    "dish_key": "sunagimo"
-   },
-   {
-    "ja": "手羽先の唐揚げ",
-    "romaji": "Tebasaki no Karaage",
-    "en": "Deep-fried chicken wings, two to an order",
-    "price": "¥480",
-    "section": "揚げ物 / Deep-fried",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Wings are a Nagoya-area obsession and Mie sits next door; expect them crisp, peppery and sticky. Floured before frying, so not gluten-free.",
-    "dish_key": "tebasaki_karaage"
-   },
-   {
-    "ja": "皮の唐揚げ",
-    "romaji": "Kawa no Karaage",
-    "en": "Deep-fried chicken skin — crackling-crisp shards",
-    "price": "¥450",
-    "section": "揚げ物 / Deep-fried",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Pure skin fried until it shatters. A great beer snack; nothing lean about it.",
-    "dish_key": "chicken_skin_karaage"
-   },
-   {
-    "ja": "もも唐揚げ",
-    "romaji": "Momo Karaage",
-    "en": "Marinated boneless chicken thigh, deep-fried Japanese-style",
-    "price": "¥700",
-    "section": "揚げ物 / Deep-fried",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Karaage: thigh marinated in soy, sake and ginger, dusted in flour and starch, fried twice. Squeeze the lemon before anyone else does.",
-    "dish_key": "momo_karaage"
-   },
-   {
-    "ja": "ナンコツ唐揚げ",
-    "romaji": "Nankotsu Karaage",
-    "en": "Deep-fried chicken cartilage — all crunch, no meat",
-    "price": "¥550",
-    "section": "揚げ物 / Deep-fried",
-    "gf": "no",
-    "vegan": "no",
-    "note": "The knobbly cartilage from the breastbone or knee, eaten whole. The texture is the entire point.",
-    "dish_key": "nankotsu_karaage"
-   },
-   {
-    "ja": "もも串カツ",
-    "romaji": "Momo Kushikatsu",
-    "en": "Skewered chicken thigh in breadcrumbs, deep-fried — three skewers",
-    "price": "¥550",
-    "section": "揚げ物 / Deep-fried",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Kushikatsu = crumbed and fried on a stick, dipped in a thin sweet-savoury sauce. Panko, so wheat.",
-    "dish_key": "momo_kushikatsu"
-   },
-   {
-    "ja": "お造り盛合せ",
-    "romaji": "Otsukuri Moriawase",
-    "en": "Assorted sashimi of whatever came in off the boats that day",
-    "price": "¥1,300",
-    "section": "海鮮 / Seafood",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "The shop's own page says the glass case is full of Toba's catch and that the day's omakase sashimi platter is the thing to order. Toba is a working port on the mouth of Ise Bay, so the line-up changes daily. Soy for dipping contains wheat.",
-    "dish_key": "sashimi_moriawase"
-   },
-   {
-    "ja": "マグロのアボガドわさび和",
-    "romaji": "Maguro no Abogado Wasabi-ae",
-    "en": "Cubes of raw tuna tossed with avocado in a wasabi dressing",
-    "price": "¥680",
-    "section": "海鮮 / Seafood",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "A modern izakaya standard — the avocado's fat stands in for tuna belly. Soy-based dressing.",
-    "dish_key": "maguro_avocado"
-   },
-   {
-    "ja": "サーモンのカルパッチョ",
-    "romaji": "Sāmon no Carpaccio",
-    "en": "Thin-sliced raw salmon dressed with oil, citrus and herbs",
-    "price": "¥680",
-    "section": "海鮮 / Seafood",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Italian in name only — a Japanese izakaya invention that is now on nearly every menu in the country.",
-    "dish_key": "salmon_carpaccio"
-   },
-   {
-    "ja": "ホタテしょうゆ焼",
-    "romaji": "Hotate Shōyu-yaki",
-    "en": "Scallop grilled and finished with soy sauce",
-    "price": "¥600",
-    "section": "海鮮 / Seafood",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Butter-soft in the middle with the soy caramelising at the edges. Soy sauce means wheat.",
-    "dish_key": "hotate_shoyuyaki"
-   },
-   {
-    "ja": "うたせえび唐揚げ",
-    "romaji": "Utase-ebi Karaage",
-    "en": "Small local shrimp deep-fried whole — shells, heads and all",
-    "price": "¥550",
-    "section": "海鮮 / Seafood",
-    "gf": "no",
-    "vegan": "no",
-    "note": "'Utase' refers to the traditional Ise Bay sail-trawlers (utase-bune) that catch these little shrimp. Eat them entire, like a savoury crisp.",
-    "dish_key": "utase_ebi_karaage"
-   },
-   {
-    "ja": "いくらおろし",
-    "romaji": "Ikura Oroshi",
-    "en": "Salmon roe piled on grated daikon radish",
-    "price": "¥400",
-    "section": "海鮮 / Seafood",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "The cold, peppery radish cuts the salt and pop of the roe. Ikura is cured in soy, so wheat is likely.",
-    "dish_key": "ikura_oroshi"
-   },
-   {
-    "ja": "おでん各種",
-    "romaji": "Oden Kakushu",
-    "en": "Autumn/winter only — assorted items simmered in dashi, from ¥130 a piece",
-    "price": "¥130〜",
-    "section": "肴 / Small Plates",
-    "gf": "no",
-    "vegan": "no",
-    "note": "You choose pieces one at a time from the simmering pot: daikon, egg, konnyaku, fish cakes. Marked 秋・冬限定 (autumn and winter only).",
-    "dish_key": "oden"
-   },
-   {
-    "ja": "ぴり辛きゅうり",
-    "romaji": "Piri-kara Kyūri",
-    "en": "Cucumber batons in a lightly chilli-spiked dressing",
-    "price": "¥380",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "ask",
-    "note": "The cheap, cold, crunchy thing you order first while you read the rest of the menu.",
-    "dish_key": "pirikara_kyuri"
-   },
-   {
-    "ja": "梅ちりめんやっこ",
-    "romaji": "Ume Chirimen Yakko",
-    "en": "Chilled tofu topped with sour plum paste and tiny dried whitebait",
-    "price": "¥400",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Hiyayakko (cold tofu) dressed up: umeboshi plum for sourness, chirimen-jako whitebait for salt and crunch.",
-    "dish_key": "ume_chirimen_yakko"
-   },
-   {
-    "ja": "おつまみクリームチーズ",
-    "romaji": "Otsumami Cream Cheese",
-    "en": "Cream cheese served as a drinking snack",
-    "price": "¥400",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Usually cubed and often smoked or topped with something salty — a very common Japanese pairing with sake and shochu.",
-    "dish_key": "cream_cheese_snack"
-   },
-   {
-    "ja": "生春巻き",
-    "romaji": "Nama Harumaki",
-    "en": "Fresh rice-paper summer rolls, unfried",
-    "price": "¥680",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Vietnamese-style rolls with prawn and vegetables. Rice paper is wheat-free but the filling and dipping sauce usually are not.",
-    "dish_key": "nama_harumaki"
-   },
-   {
-    "ja": "シーザーサラダ",
-    "romaji": "Caesar Salad",
-    "en": "Caesar salad",
-    "price": "¥680",
-    "section": "肴 / Small Plates",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Romaine, cheese, creamy dressing and croutons — the croutons and dressing are the wheat problem.",
-    "dish_key": "caesar_salad"
-   },
-   {
-    "ja": "湯豆腐",
-    "romaji": "Yudōfu",
-    "en": "Tofu gently simmered in a kombu broth at your table",
-    "price": "¥550",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "ask",
-    "note": "Barely-cooked tofu scooped out with a slotted spoon and dipped in ponzu or soy. Warming and very plain by design.",
-    "dish_key": "yudofu"
-   },
-   {
-    "ja": "カンパチあらだき",
-    "romaji": "Kanpachi Aradaki",
-    "en": "Amberjack collar and head bones simmered in sweet soy",
-    "price": "¥580",
-    "section": "肴 / Small Plates",
-    "gf": "no",
-    "vegan": "no",
-    "note": "'Ara' is the frame left after filleting — cheeks, collar and belly, widely considered the best-eating parts of the fish. Messy, cheap and delicious. Simmered in soy and mirin.",
-    "dish_key": "kanpachi_aradaki"
-   },
-   {
-    "ja": "しゅうまいきのこバター焼き",
-    "romaji": "Shūmai Kinoko Butter-yaki",
-    "en": "Pork shumai dumplings pan-fried with mushrooms and butter",
-    "price": "¥700",
-    "section": "肴 / Small Plates",
-    "gf": "no",
-    "vegan": "no",
-    "note": "A house fixture — the shop was already selling butter-fried shumai back in 2004. Dumpling wrappers are wheat.",
-    "dish_key": "shumai_butter"
-   },
-   {
-    "ja": "アツアツカニみそグラタン",
-    "romaji": "Atsu-atsu Kani-miso Gratin",
-    "en": "Piping-hot gratin made with crab and crab tomalley",
-    "price": "¥880",
-    "section": "肴 / Small Plates",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Kani-miso is the brown, intensely savoury paste inside a crab's shell, baked here under a bubbling white sauce. Roux = wheat.",
-    "dish_key": "kanimiso_gratin"
-   },
-   {
-    "ja": "ホルモン味噌焼き",
-    "romaji": "Horumon Miso-yaki",
-    "en": "Offal stir-grilled in miso",
-    "price": "¥700",
-    "section": "肴 / Small Plates",
-    "gf": "no",
-    "vegan": "no",
-    "note": "'Horumon' is izakaya shorthand for pork or beef guts — chewy, fatty and made for beer. Miso commonly contains wheat.",
-    "dish_key": "horumon_misoyaki"
-   },
-   {
-    "ja": "エレベーター",
-    "romaji": "Erebētā",
-    "en": "A house dish the shop only ever calls 'Elevator'",
-    "price": "¥380",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "ask",
-    "note": "Listed immediately before トマベー and ジャガベー, the shop's bacon-wrapped pair, so it is probably another of that family — but the name is the owners' own joke and is nowhere explained. Worth pointing at and asking.",
-    "dish_key": "elevator"
-   },
-   {
-    "ja": "トマベー",
-    "romaji": "Tomabē",
-    "en": "Bacon-wrapped tomato",
-    "price": "¥400",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "'Toma' from tomato, 'bē' from bacon. Grilled until the bacon crisps and the tomato collapses into it.",
-    "dish_key": "tomabe"
-   },
-   {
-    "ja": "ジャガベー",
-    "romaji": "Jagabē",
-    "en": "Potato and bacon fried in butter",
-    "price": "¥700",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "The shop's older menu spelled it out: じゃが苋ベーコンバター炒め. A long-running favourite here.",
-    "dish_key": "jagabe"
-   },
-   {
-    "ja": "さめのたれ",
-    "romaji": "Same no Tare",
-    "en": "Wind-dried salted shark, warmed and torn into strips",
-    "price": "¥450",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "An Ise-Shima speciality found almost nowhere else in Japan: shark meat air-dried in the sea wind, historically offered at Ise Jingu and eaten at New Year. Chewy, faintly ammoniac, deeply savoury — a genuine local curiosity.",
-    "dish_key": "same_no_tare"
-   },
-   {
-    "ja": "出巻玉子",
-    "romaji": "Dashimaki Tamago",
-    "en": "Rolled omelette made with dashi — soft, juicy, served warm",
-    "price": "¥600",
-    "section": "肴 / Small Plates",
-    "gf": "ask",
-    "vegan": "no",
-    "note": "Egg beaten with dashi stock and rolled layer over layer in a rectangular pan. Contains bonito dashi and usually a splash of soy.",
-    "dish_key": "dashimaki_tamago"
-   },
-   {
-    "ja": "お茶漬け",
-    "romaji": "Ochazuke",
-    "en": "A bowl of rice with hot tea or dashi poured over it",
-    "price": "¥700",
-    "section": "食事 / Rice & Noodles",
-    "gf": "ask",
-    "vegan": "ask",
-    "note": "The classic end-of-drinking dish: plain rice, a savoury topping, hot liquid poured over to wash the evening down.",
-    "dish_key": "ochazuke"
-   },
-   {
-    "ja": "焼おにぎり",
-    "romaji": "Yaki-onigiri",
-    "en": "Grilled rice ball, brushed with soy sauce and charred",
-    "price": "¥500",
-    "section": "食事 / Rice & Noodles",
-    "gf": "no",
-    "vegan": "ask",
-    "note": "The crust is the point — soy-lacquered rice toasted until it crackles. Soy sauce contains wheat.",
-    "dish_key": "yaki_onigiri"
-   },
-   {
-    "ja": "おにぎり(3ヶ)",
-    "romaji": "Onigiri (3-ko)",
-    "en": "Three plain rice balls",
-    "price": "¥480",
-    "section": "食事 / Rice & Noodles",
-    "gf": "ask",
-    "vegan": "ask",
-    "note": "Hand-formed salted rice, usually wrapped in nori, sometimes with a filling. Ordered to soak up the drink.",
-    "dish_key": "onigiri"
-   },
-   {
-    "ja": "天むす(2ヶ)",
-    "romaji": "Tenmusu (2-ko)",
-    "en": "Two rice balls with a shrimp tempura tail poking out",
-    "price": "¥450",
-    "section": "食事 / Rice & Noodles",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Tenmusu were invented in Mie (Tsu city) before Nagoya adopted them — so this is a local dish on home ground. Tempura batter is wheat.",
-    "dish_key": "tenmusu"
-   },
-   {
-    "ja": "和風焼そば",
-    "romaji": "Wafū Yakisoba",
-    "en": "Fried wheat noodles, Japanese-style rather than sauce-heavy",
-    "price": "¥600",
-    "section": "食事 / Rice & Noodles",
-    "gf": "no",
-    "vegan": "no",
-    "note": "'Wafu' means seasoned with soy and dashi instead of the usual thick brown yakisoba sauce. Wheat noodles.",
-    "dish_key": "wafu_yakisoba"
-   },
-   {
-    "ja": "穴子の天ぷら",
-    "romaji": "Anago no Tempura",
-    "en": "Conger eel in tempura batter",
-    "price": "¥600",
-    "section": "食事 / Rice & Noodles",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Saltwater eel — lighter and more delicate than the grilled freshwater unagi. Batter is wheat.",
-    "dish_key": "anago_tempura"
-   },
-   {
-    "ja": "赤だし",
-    "romaji": "Akadashi",
-    "en": "Red miso soup",
-    "price": "¥230",
-    "section": "食事 / Rice & Noodles",
-    "gf": "no",
-    "vegan": "no",
-    "note": "Made with dark, salty mame-miso, the Tokai region's own style — sharper and less sweet than Tokyo's pale miso soup. Bonito dashi.",
-    "dish_key": "akadashi"
-   }
-  ]
- },
  "toba_kyubei_toba_kyubei": {
   "verified": "authoritative",
   "confidence": "high",
@@ -11558,7 +11092,7 @@
    "https://map.yahoo.co.jp/v3/place/YCyXKMqHxuM/review/",
    "https://ekitan.com/local-info/gourmet/spot/spid-1bdc64b4a7ce71e5e2f5476f084787d9"
   ],
-  "price_note": "No prices found anywhere. The shop publishes no menu online — its Tabelog 料理メニュー page is empty, Gurunavi carries none, and its Instagram and Facebook post no price lists — so every item below is a dish named by diners or by the shop's own event announcements, with no price attached. Diners describe it as inexpensive; the Tabelog spend band is ¥3,000–¥3,999. Cash only, and smoking is allowed indoors.",
+  "price_note": "Prices approximate — may change. In fact no prices were found anywhere: the shop publishes no menu online — its Tabelog 料理メニュー page is empty, Gurunavi carries none, and its Instagram and Facebook post no price lists — so every item below is a dish named by diners or by the shop's own event announcements, with no price attached. Diners describe it as inexpensive; the Tabelog spend band is ¥3,000–¥3,999. Cash only, and smoking is allowed indoors.",
   "last_checked": "2026-08-19",
   "items": [
    {
@@ -12502,7 +12036,7 @@
    "https://tabelog.com/mie/A2403/A240302/24004178/dtlrvwlst/B444227937/",
    "https://ameblo.jp/fmk3776/entry-12570789057.html"
   ],
-  "price_note": "Prices transcribed from the shop's own printed menu sheet and daily whiteboard, photographed July 2023. Approximate — may change.",
+  "price_note": "Prices approximate — may change. Transcribed from the shop's own printed menu sheet and daily whiteboard, photographed July 2023.",
   "last_checked": "2026-08-19",
   "items": [
    {
@@ -12738,7 +12272,7 @@
    "https://www.ekiten.jp/shop_2074768/",
    "https://retty.me/area/PRE24/ARE234/SUB23403/100000303220/menu/"
   ],
-  "price_note": "Transcribed from photographs of the shop's own in-store printed menu card (latest posted version). The menu states すべて税込み価格です — all prices tax-included. Approximate — may change.",
+  "price_note": "Prices approximate — may change. Transcribed from photographs of the shop's own in-store printed menu card (latest posted version). The menu states すべて税込み価格です — all prices tax-included.",
   "last_checked": "2026-08-19",
   "items": [
    {
@@ -13307,6 +12841,783 @@
     "vegan": "vegan",
     "note": "The shop makes a point of it: the beans are roasted and blended by Kira Tsuyoshi of Cafe de UN Daniel's, a national siphon-barista champion.",
     "dish_key": "blend_coffee"
+   }
+  ]
+ },
+ "toba_isoage_maruten_toba_eki_": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.marutenn.co.jp/kintetsutobaekiten/",
+   "https://www.marutenn.co.jp/products",
+   "https://www.marutenn.co.jp/products_st_tako",
+   "https://www.marutenn.co.jp/products_st_cheese",
+   "https://www.marutenn.co.jp/products_st_ebimayo",
+   "https://www.marutenn.co.jp/products_ten_tako",
+   "https://www.marutenn.co.jp/products_ten_ika",
+   "https://www.marutenn.co.jp/products_ten_kaisen",
+   "https://www.marutenn.co.jp/products_ten_jagabutter",
+   "https://www.marutenn.co.jp/products_ten_shogarenkon",
+   "https://www.marutenn.co.jp/products_ten_ebiasari",
+   "https://www.marutenn.co.jp/products_ten_corn",
+   "https://www.marutenn.co.jp/products_set_tsudoi",
+   "https://www.marutenn.co.jp/products_set_chigiriage",
+   "https://www.marutenn.co.jp/products_set_goshikiage",
+   "https://www.maruten-online.jp/"
+  ],
+  "price_note": "Prices approximate — may change. Prices are tax-included, per piece, from the maker's own product pages. This is a standing takeaway counter inside Kintetsu Toba station (9:00–18:00, no closing day) — everything is fried to order and eaten on the spot or on the train.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "たこ棒",
+    "romaji": "Tako-bō",
+    "en": "Octopus fishcake on a stick, deep-fried",
+    "price": "¥430",
+    "section": "棒 / On a stick",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop's number-one seller since it opened, and the thing to order if you order one thing. Chunks of raw octopus and red pickled ginger folded through surimi (fish paste), hand-rolled onto a stick and deep-fried to order — springy, hot, with a ginger bite. Every Maruten product contains wheat, egg, salmon and soy.",
+    "dish_key": "tako_bo"
+   },
+   {
+    "ja": "チーズ棒",
+    "romaji": "Chīzu-bō",
+    "en": "Fishcake stick with a whole cheese stick inside",
+    "price": "¥400",
+    "section": "棒 / On a stick",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A stick of process cheese wrapped entirely in surimi and fried, so it oozes when you bite it. Deliberately a mild, low-salt cheese that never fully melts, so it does not run down your hand. The children's and first-timer's choice.",
+    "dish_key": "cheese_bo"
+   },
+   {
+    "ja": "海老マヨ棒",
+    "romaji": "Ebi-mayo-bō",
+    "en": "Prawn-and-mayonnaise fishcake stick",
+    "price": "¥420",
+    "section": "棒 / On a stick",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Large prawns kept deliberately whole so they stay snappy, with mayonnaise and finely chopped onion for sweetness. High repeat-order rate, per the maker. Contains prawn, apple and gelatin as well as the usual wheat and egg.",
+    "dish_key": "ebi_mayo_bo"
+   },
+   {
+    "ja": "たこ天",
+    "romaji": "Tako-ten",
+    "en": "The octopus stick, flattened into a patty",
+    "price": "¥430",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same recipe as tako-bō but pressed flat, which makes it easier to cut up, put in a lunchbox or cook with. Slice it and the octopus and pink ginger show as a mosaic.",
+    "dish_key": "tako_ten"
+   },
+   {
+    "ja": "いか天",
+    "romaji": "Ika-ten",
+    "en": "Squid fishcake patty",
+    "price": "¥390",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Only the body of the squid is used, briefly boiled so it does not shrink or toughen, and deliberately left unseasoned so the sweetness of the surimi itself comes through. The skin is left on for colour. The purest expression of what Maruten's fish paste tastes like.",
+    "dish_key": "ika_ten"
+   },
+   {
+    "ja": "海鮮かき揚げ天",
+    "romaji": "Kaisen Kakiage-ten",
+    "en": "Mixed seafood-and-vegetable fritter cake",
+    "price": "¥390",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Six ingredients in equal seafood-to-vegetable proportions: squid, small scallop adductors, wood-ear mushroom, carrot, onion and lotus root. Eats like a kakiage tempura but with a fishcake body holding it together.",
+    "dish_key": "kaisen_kakiage_ten"
+   },
+   {
+    "ja": "海老あさり天",
+    "romaji": "Ebi-asari-ten",
+    "en": "Prawn and clam fishcake patty",
+    "price": "¥400",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Big snappy prawns plus asari clams that are first lightly simmered in bonito dashi, so their flavour bleeds into the paste. The richest of the seafood ones. Contains prawn.",
+    "dish_key": "ebi_asari_ten"
+   },
+   {
+    "ja": "じゃがバター天",
+    "romaji": "Jaga-butter-ten",
+    "en": "Potato-and-butter fishcake patty",
+    "price": "¥350",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Roughly a third potato — big chunks of parboiled Danshaku potato in a paste enriched with butter and yamaimo, then dusted with green nori after frying. Genuinely tastes like the Hokkaido street snack of buttered potato. Contains dairy and yam.",
+    "dish_key": "jagabutter_ten"
+   },
+   {
+    "ja": "生姜れんこん天",
+    "romaji": "Shōga-renkon-ten",
+    "en": "Lotus root and pickled-ginger fishcake patty",
+    "price": "¥320",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The cheapest and one of the most popular. Lotus root cut thick enough to stay crunchy, plus lots of red pickled ginger. The maker leaves its usual mirin out of this one so the paste stays white against the pink ginger. Good cold as well as hot.",
+    "dish_key": "shoga_renkon_ten"
+   },
+   {
+    "ja": "もろこしチーズ天",
+    "romaji": "Morokoshi Chīzu-ten",
+    "en": "Sweetcorn and cheese fishcake patty",
+    "price": "¥390",
+    "section": "天 / Flat fried cakes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Half sweetcorn by weight, kept whole so the kernels pop, with cheese and small scallop adductors for depth. Sweet, salty and savoury at once — the one children reach for. Contains dairy.",
+    "dish_key": "morokoshi_cheese_ten"
+   },
+   {
+    "ja": "つどい",
+    "romaji": "Tsudoi",
+    "en": "Assortment pack: seven popular kinds in smaller sizes",
+    "price": "¥1,200",
+    "section": "セット / Packs to take away",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Refrigerated, keeps about 5 days. Seven of the shop's best sellers made slightly smaller so one person can get through the range. The sensible souvenir if you are staying somewhere with a fridge. Contains wheat, egg, dairy, yam, soy, salmon, squid and sesame.",
+    "dish_key": "tsudoi_set"
+   },
+   {
+    "ja": "ちぎり揚げ",
+    "romaji": "Chigiri-age",
+    "en": "Small vegetable-based fishcake pieces",
+    "price": "¥720",
+    "section": "セット / Packs to take away",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bite-size and vegetable-heavy. Meant to be dropped into a hot pot or an oden broth as much as eaten straight, which is exactly how Japanese households use fried fishcake. Keeps about 5 days chilled.",
+    "dish_key": "chigiri_age"
+   },
+   {
+    "ja": "五色揚げ",
+    "romaji": "Goshiki-age",
+    "en": "Five-colour vacuum pack — 10 pieces, 2 each of five kinds",
+    "price": "¥1,200",
+    "section": "セット / Packs to take away",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Octopus, prawn, sesame, onion and mountain-vegetable, vacuum-sealed so it keeps about a month chilled. The pack to buy if you are travelling on for a while. Contains prawn, wheat, egg, sesame, salmon and soy.",
+    "dish_key": "goshiki_age"
+   }
+  ]
+ },
+ "toba_sea_lounge_s_y_m": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://www.toba.gr.jp/eat/1819/",
+   "https://tabelog.com/mie/A2403/A240302/24015353/dtlrvwlst/",
+   "https://www.instagram.com/p/CjTws71PhkD/",
+   "https://r.gnavi.co.jp/b8jegks60000/"
+  ],
+  "price_note": "Prices approximate — may change. No menu is posted online by the shop; every price below comes from dated customer reports (2022–2025). Toba's tourism association notes the café also offers 'various set meals' that are not documented anywhere. Open 07:00–17:00, closed Wednesdays. You order at the counter, sit where you like and are called to collect; you pay on the way out.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "モーニングセット",
+    "romaji": "Morning Set",
+    "en": "Morning set: toast, fried egg and a drink",
+    "price": "¥500",
+    "section": "モーニング / Morning",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The reason to come. Served from 07:00 on the 2nd floor of the Toba Marine Terminal, with the whole of Toba Bay and the island ferries in front of you. Customers consistently describe it as a generous plate for the money — thick toast, a fried egg and a drink.",
+    "dish_key": "morning_set"
+   },
+   {
+    "ja": "カレーライス",
+    "romaji": "Curry Rice",
+    "en": "Japanese curry with rice",
+    "price": "¥600",
+    "section": "食事 / Meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Reported in 2025 as long-simmered, with the vegetables and meat cooked down into the sauce. Japanese curry is thickened with a wheat-flour roux, so never gluten-free.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "伊勢うどん",
+    "romaji": "Ise Udon",
+    "en": "Ise udon — very soft fat wheat noodles in dark sweet tamari tare",
+    "price": "¥500",
+    "section": "食事 / Meals",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The Ise-Shima speciality, and nothing like ordinary udon: the noodles are boiled for an hour until they lose all bite, and instead of soup there is only a small pool of near-black sweet tamari sauce at the bottom of the bowl, which you stir through. Pilgrims to Ise Jingu ate it because it was quick and easy on the stomach. Usually topped with spring onion, sometimes an egg. The tare normally contains bonito.",
+    "dish_key": "ise_udon"
+   },
+   {
+    "ja": "缶ビール",
+    "romaji": "Kan Bīru",
+    "en": "Canned beer",
+    "price": "¥400",
+    "section": "ドリンク / Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Yes, at a ferry-terminal café from 7am. Barley beer, so not gluten-free.",
+    "dish_key": "canned_beer"
+   }
+  ]
+ },
+ "toba_kissa_shiosai": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.isewanferry.co.jp/publics/index/1/detail=1/b_id=1122/r_id=1309/",
+   "https://www.isewanferry.co.jp/smarts/index/51/",
+   "https://tabelog.com/mie/A2403/A240302/24020854/dtlrvwlst/",
+   "https://r.gnavi.co.jp/d2varnh60000/"
+  ],
+  "price_note": "Prices approximate — may change. The morning menu below is published by Ise-Wan Ferry, the operator of the terminal; the coffee price is from a 2024 customer report. No full drinks list is posted anywhere. Open 7:40–17:40; the morning service runs 7:40–11:00 and can be taken away onto the boat.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "たまごサンドイッチ モーニングサービス",
+    "romaji": "Tamago Sandwich Morning Service",
+    "en": "Egg sandwich morning set: sandwich, salad and a drink",
+    "price": "¥500",
+    "section": "モーニングサービス / Morning sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "'Morning service' is a Tokai-region institution: order a drink before 11:00 and food comes with it for almost nothing. Japanese egg sandwiches are made with a soft mayonnaise-heavy egg filling on crustless white bread. Drink is your choice of coffee, tea or orange juice. This café sits on the 2nd floor of the Toba ferry terminal, so it is the natural stop before the Irago boat.",
+    "dish_key": "tamago_sando_morning"
+   },
+   {
+    "ja": "ハムサンドイッチ モーニングサービス",
+    "romaji": "Ham Sandwich Morning Service",
+    "en": "Ham sandwich morning set: sandwich, salad and a drink",
+    "price": "¥500",
+    "section": "モーニングサービス / Morning sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The same set with ham. Choose coffee, black tea or orange juice.",
+    "dish_key": "ham_sando_morning"
+   },
+   {
+    "ja": "トースト モーニングサービス",
+    "romaji": "Toast Morning Service",
+    "en": "Toast morning set: thick-cut toast, salad and a drink",
+    "price": "¥500",
+    "section": "モーニングサービス / Morning sets",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Japanese café toast is a single very thick slice, buttered. The plainest of the three sets.",
+    "dish_key": "toast_morning"
+   },
+   {
+    "ja": "ホットコーヒー",
+    "romaji": "Hot Coffee",
+    "en": "Hot coffee",
+    "price": "¥380",
+    "section": "ドリンク / Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Ordered on its own outside morning hours. A ferry-terminal coffee with a view of the boats — modest, cheap, and exactly what it needs to be.",
+    "dish_key": "hot_coffee"
+   }
+  ]
+ },
+ "toba_iseshima_karinto": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://web.archive.org/web/20180825022829/http://iseshimakarinto.com/product/",
+   "https://web.archive.org/web/20180825012226/http://iseshimakarinto.com/giftbox/",
+   "https://web.archive.org/web/20240520022222/http://iseshimakarinto.com/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/",
+   "https://ameblo.jp/ichijoikuno/entry-12838583439.html",
+   "https://ab.jcci.or.jp/article/106665/",
+   "https://www.instagram.com/iseshimakarinto/",
+   "https://tabelog.com/mie/A2403/A240302/24014214/"
+  ],
+  "price_note": "Prices approximate — may change. The flavour names and descriptions come from the shop's own product list (iseshimakarinto.com), which as of August 2026 returns a server error and was read through the Internet Archive; that list priced every single-flavour box at ¥400 + tax (¥432) for 70 g. A visitor in January 2024 reported ¥500 for a 50 g box, so the ¥500 figures below are the more recent street price. Gift boxes on the shop's own list were ¥1,080 (2 flavours), ¥1,998 (4) and ¥2,916 (6) tax included; a January 2025 trade article gives ¥3,330 for the 6-flavour box.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "伊勢茶かりんとー",
+    "romaji": "Ise-cha Karintō",
+    "en": "Matcha karintō — fried dough sticks coated in Ise green tea sugar",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Karintō is one of Japan's oldest sweets: strips of wheat dough deep-fried until hard and crisp, then rolled in sugar. Here the dough is Mie-grown 'Ayahikari' wheat flour blended with okara (soy-milk pulp) from a yuba maker, and the coating is matcha from Ise tea — a leaf with over a thousand years of history in the old province of Ise. Bright green and grassy-bitter against the sugar.",
+    "dish_key": "ise_cha_karinto"
+   },
+   {
+    "ja": "伊勢和紅茶かりんとー",
+    "romaji": "Ise Wa-kōcha Karintō",
+    "en": "Japanese black-tea karintō",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "'Wa-kōcha' is black tea made from Japanese green-tea leaves — softer and less tannic than Indian black tea. The powdered leaf goes into the sugar coating, giving a gentle astringency and a perfume that lingers.",
+    "dish_key": "ise_wakocha_karinto"
+   },
+   {
+    "ja": "伊勢志摩 あおさかりんとー",
+    "romaji": "Ise-Shima Aosa Karintō",
+    "en": "Aosa seaweed karintō, sugar-coated",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Mie produces more aosa (sea lettuce) than any other prefecture and a third of it comes from Ise-Shima. The seaweed is worked into the dough itself, so you get a green, distinctly seaside smell under the sugar. The shop's most local flavour.",
+    "dish_key": "aosa_karinto"
+   },
+   {
+    "ja": "伊勢志摩 あおさ 塩味かりんとー",
+    "romaji": "Ise-Shima Aosa Shioaji Karintō",
+    "en": "Aosa seaweed karintō, salted instead of sugared",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The same aosa dough finished with natural salt rather than sugar — savoury, and the version to buy if you want something to eat with beer rather than tea.",
+    "dish_key": "aosa_shio_karinto"
+   },
+   {
+    "ja": "伊勢志摩 あおさひじき 伊勢醬油味かりんとー",
+    "romaji": "Ise-Shima Aosa Hijiki Ise-shōyu Karintō",
+    "en": "Aosa and hijiki seaweed karintō glazed with Ise soy sauce",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Adds 'hime-hijiki', the branded hijiki seaweed from Sugashima island just off Toba, to the aosa dough — iron, calcium and fibre — then glazes it with Ise shōyu, the local soy sauce offered to Ise Jingu each year. Tastes like an old-fashioned soy rice cracker crossed with a sweet.",
+    "dish_key": "aosa_hijiki_shoyu_karinto"
+   },
+   {
+    "ja": "伊勢志摩 ちりめんじゃこ 塩味かりんとー",
+    "romaji": "Ise-Shima Chirimen-jako Shioaji Karintō",
+    "en": "Salted karintō studded with tiny dried whitebait",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Baby sardines landed in Ise Bay and sun-dried by the producers, worked into the dough. Salty, fishy and savoury — closer to a bar snack than a sweet. Contains fish.",
+    "dish_key": "chirimen_jako_karinto"
+   },
+   {
+    "ja": "鳥羽 やまとたちばなかりんとー",
+    "romaji": "Toba Yamato-tachibana Karintō",
+    "en": "Karintō flavoured with yamato-tachibana, Japan's native citrus",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Tachibana is a sacred tree in Japan — Emperor Suinin, who founded Ise Jingu, is said to have sought it as an elixir of long life — and it is the official tree of Toba city. One of the very few citrus species truly native to Japan. Sharp, sweet-sour, intensely perfumed.",
+    "dish_key": "yamato_tachibana_karinto"
+   },
+   {
+    "ja": "熊野 みかんかりんとー",
+    "romaji": "Kumano Mikan Karintō",
+    "en": "Mandarin-orange karintō",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Mikan grown in the warm southern part of Mie around the Kumano Kodō pilgrimage trails. Bright and citrus-sweet; the trade press notes it goes surprisingly well with beer.",
+    "dish_key": "kumano_mikan_karinto"
+   },
+   {
+    "ja": "三重さくら味かりんとー",
+    "romaji": "Mie Sakura-aji Karintō",
+    "en": "Cherry-blossom karintō",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Mie-grown cherry petals are salt-pickled, chopped fine and folded into the dough; cherry-leaf powder goes into the sugar. The result tastes like sakura-mochi — floral, faintly salty, unmistakably spring.",
+    "dish_key": "mie_sakura_karinto"
+   },
+   {
+    "ja": "四日市 九鬼のごまかりんとー",
+    "romaji": "Yokkaichi Kuki no Goma Karintō",
+    "en": "Sesame karintō, sugar-coated",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The sesame comes from Kuki Sangyō in Yokkaichi, founded by a descendant of Kuki Yoshitaka — the warlord who commanded Oda Nobunaga's navy from Toba Castle, right here in town. Deeply toasty.",
+    "dish_key": "kuki_goma_karinto"
+   },
+   {
+    "ja": "四日市 九鬼のごま 黒糖味かりんとー",
+    "romaji": "Yokkaichi Kuki no Goma Kokutō-aji Karintō",
+    "en": "Sesame karintō coated in black sugar",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The same sesame dough finished with kokutō (unrefined black cane sugar) instead of white — darker, more molasses-like, and the closest thing here to classic old-Tokyo karintō.",
+    "dish_key": "kuki_goma_kokuto_karinto"
+   },
+   {
+    "ja": "玉城 おから 黒糖味かりんとー",
+    "romaji": "Tamaki Okara Kokutō-aji Karintō",
+    "en": "Okara (soy pulp) karintō in black sugar",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Made with okara from Iseya Toubei, a yuba specialist in Tamaki town using only Mie-contract-grown 'Fukuyutaka' soybeans. Plain and beany against the black sugar — the simplest flavour in the range.",
+    "dish_key": "tamaki_okara_karinto"
+   },
+   {
+    "ja": "サミット乾杯酒 作味かりんとー",
+    "romaji": "Summit Kanpai-shu 'Zaku' Aji Karintō",
+    "en": "Karintō made with sake lees from 'Zaku', the sake used for the G7 Ise-Shima Summit toast",
+    "price": "¥500",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Zaku, brewed by Shimizu Seizaburō Shōten in Suzuka, was the toasting sake at the 2016 G7 Ise-Shima Summit. Its sake kasu (lees) goes into both the dough and the syrup, giving a flowery aroma and a taste close to amazake. Trace alcohol from the lees.",
+    "dish_key": "zaku_karinto"
+   },
+   {
+    "ja": "伊勢海老かりんとー",
+    "romaji": "Ise-ebi Karintō",
+    "en": "Ise spiny lobster karintō",
+    "price": "",
+    "section": "かりんとー / Karintō flavours",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A newer addition, reported by a visitor in 2024 rather than listed on the shop's own archived page. Uses Ise-Shima's emblem shellfish — the local souvenir joke made edible. Contains crustacean.",
+    "dish_key": "ise_ebi_karinto"
+   },
+   {
+    "ja": "ギフトボックス 6個入",
+    "romaji": "Gift Box 6-ko iri",
+    "en": "Gift box, six flavours of your choice",
+    "price": "¥3,330",
+    "section": "ギフト / Gift boxes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "You pick the six flavours yourself. The obvious purchase if you want to taste the range — aosa, Ise tea, mikan, black tea and sakura are the ones the shop pushes. Nitrogen-flushed foil bags, no preservatives.",
+    "dish_key": "gift_box_6"
+   },
+   {
+    "ja": "ギフトボックス 4個入",
+    "romaji": "Gift Box 4-ko iri",
+    "en": "Gift box, four flavours of your choice",
+    "price": "",
+    "section": "ギフト / Gift boxes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Mid-size box; the shop's own older list priced it at ¥1,998 tax included.",
+    "dish_key": "gift_box_4"
+   },
+   {
+    "ja": "ギフトボックス 2個入",
+    "romaji": "Gift Box 2-ko iri",
+    "en": "Gift box, two flavours of your choice",
+    "price": "",
+    "section": "ギフト / Gift boxes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The small gift; the shop's own older list priced it at ¥1,080 tax included. A minute's walk from Mikimoto Pearl Island, so an easy last stop.",
+    "dish_key": "gift_box_2"
+   }
+  ]
+ },
+ "toba_honke_kamadoya_toba_ten": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.honkekamadoya.co.jp/menu/",
+   "https://www.honkekamadoya.co.jp/shop/%E9%B3%A5%E7%BE%BD%E5%BA%97/",
+   "https://tabelog.com/en/mie/A2403/A240302/24012516/"
+  ],
+  "price_note": "Prices approximate — may change. Kamadoya is a national bento chain and this is its corporate menu, cooked to order at the branch about 300 m from Toba station. The full list runs to well over 100 lines; below is the core of it. Most mains also come as an 'okazu' (dish only, no rice) version about ¥100–200 cheaper, and a 'Special' version with extra sides for about ¥230 more.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "のり弁当",
+    "romaji": "Nori Bentō",
+    "en": "The classic seaweed lunchbox: rice, a sheet of nori, white fish fry and sides",
+    "price": "¥450",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Japan's cheapest and most beloved bento format. A layer of rice, soy-soaked nori laid across it, then fried white fish, a fried chikuwa fishcake and kinpira burdock on top. Everything on it is either breaded or soy-seasoned.",
+    "dish_key": "nori_bento"
+   },
+   {
+    "ja": "のりタルタル弁当",
+    "romaji": "Nori Tartar Bentō",
+    "en": "Nori bento with tartare sauce over the fish",
+    "price": "¥480",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same box, with a thick stripe of egg tartare. Thirty yen very well spent.",
+    "dish_key": "nori_tartar_bento"
+   },
+   {
+    "ja": "菜っぱめし弁当",
+    "romaji": "Nappa-meshi Bentō",
+    "en": "Rice mixed with chopped salted greens, with sides",
+    "price": "¥490",
+    "section": "新メニュー / New",
+    "gf": "no",
+    "vegan": "no",
+    "note": "'Nappa-meshi' is rice tossed with finely chopped pickled leaf greens — savoury, slightly sour, and much lighter than a fried bento.",
+    "dish_key": "nappa_meshi_bento"
+   },
+   {
+    "ja": "あじフライ弁当",
+    "romaji": "Aji-fry Bentō",
+    "en": "Breaded fried horse mackerel bento",
+    "price": "¥470",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Aji (horse mackerel) split flat, crumbed and fried — an everyday Japanese fish that is oilier and more flavourful than cod. Eaten with sauce or tartare.",
+    "dish_key": "aji_fry_bento"
+   },
+   {
+    "ja": "シャケ弁当",
+    "romaji": "Shake Bentō",
+    "en": "Grilled salted salmon bento",
+    "price": "¥600",
+    "section": "メイン弁当 / Main bento",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A fillet of salted, grilled salmon over rice — the most traditional Japanese lunchbox there is, and the least fried thing on this menu. Deluxe version ¥790.",
+    "dish_key": "shake_bento"
+   },
+   {
+    "ja": "ザ・幕の内",
+    "romaji": "The Makunouchi",
+    "en": "Makunouchi bento — a compartment box with many small dishes",
+    "price": "¥690",
+    "section": "スペシャルメニュー / Special",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Makunouchi means 'between the acts': the box originally eaten at the interval of a kabuki play. A little of everything — grilled fish, a fried item, egg, simmered vegetables, pickles — over plain rice. The version with seasoned mixed rice is ¥800.",
+    "dish_key": "makunouchi"
+   },
+   {
+    "ja": "うなぎ弁当",
+    "romaji": "Unagi Bentō",
+    "en": "Grilled eel over rice, in a box",
+    "price": "¥850",
+    "section": "スペシャルメニュー / Special",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Freshwater eel grilled and lacquered with a sweet soy tare. A summer-stamina dish in Japan and normally far more expensive than this. The lidded lacquer-bowl version, una-jū, is ¥1,250.",
+    "dish_key": "unagi_bento"
+   },
+   {
+    "ja": "うな重",
+    "romaji": "Una-jū",
+    "en": "Grilled eel over rice in a lacquered box, the proper presentation",
+    "price": "¥1,250",
+    "section": "スペシャルメニュー / Special",
+    "gf": "no",
+    "vegan": "no",
+    "note": "More eel, better box. The tare is soy-and-mirin based, so wheat.",
+    "dish_key": "unaju"
+   },
+   {
+    "ja": "ヒレカツ弁当",
+    "romaji": "Hire-katsu Bentō",
+    "en": "Breaded fried pork fillet bento",
+    "price": "¥650",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "'Hire' is the tenderloin — leaner and softer than the usual loin cut. Panko-crumbed and served with tonkatsu sauce.",
+    "dish_key": "hire_katsu_bento"
+   },
+   {
+    "ja": "デミグラスハンバーグ弁当",
+    "romaji": "Demi-glace Hamburg Bentō",
+    "en": "Hamburg steak in demi-glace sauce over rice",
+    "price": "¥560",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The Japanese yōshoku staple: a minced-meat patty bound with panko, under a dark brown sauce built on a flour roux.",
+    "dish_key": "demi_hamburg_bento"
+   },
+   {
+    "ja": "おろしハンバーグ弁当",
+    "romaji": "Oroshi Hamburg Bentō",
+    "en": "Hamburg steak topped with grated daikon and soy-ponzu",
+    "price": "¥660",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The lighter Japanese treatment — grated white radish and a citrus-soy dressing instead of gravy. Cuts the richness completely.",
+    "dish_key": "oroshi_hamburg_bento"
+   },
+   {
+    "ja": "チキン南蛮弁当",
+    "romaji": "Chicken Nanban Bentō",
+    "en": "Fried chicken in sweet vinegar sauce with tartare",
+    "price": "¥680",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A Miyazaki invention now eaten nationwide: battered chicken dunked in sweet-sour vinegar sauce, then buried under egg tartare. Sweet, sharp and rich all at once.",
+    "dish_key": "chicken_nanban_bento"
+   },
+   {
+    "ja": "豚しょうが焼弁当",
+    "romaji": "Buta Shōgayaki Bentō",
+    "en": "Ginger-fried pork over rice",
+    "price": "¥720",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Thin pork slices fried with grated ginger, soy and mirin — the definitive Japanese home dinner. Soy-based, so wheat.",
+    "dish_key": "shogayaki_bento"
+   },
+   {
+    "ja": "４ケ入りカラアゲ弁当",
+    "romaji": "4-ko iri Karaage Bentō",
+    "en": "Four pieces of Japanese fried chicken with rice",
+    "price": "¥680",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Marinated in soy and ginger, starch-dusted, fried. Five-piece version ¥760.",
+    "dish_key": "karaage_bento_4"
+   },
+   {
+    "ja": "牛焼肉弁当",
+    "romaji": "Gyū Yakiniku Bentō",
+    "en": "Grilled beef in yakiniku sauce over rice",
+    "price": "¥800",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sliced beef fried in the sweet soy-garlic sauce used at Japanese barbecue restaurants.",
+    "dish_key": "gyu_yakiniku_bento"
+   },
+   {
+    "ja": "豚なす弁当",
+    "romaji": "Buta Nasu Bentō",
+    "en": "Pork and aubergine stir-fried in miso",
+    "price": "¥670",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Aubergine soaks up the miso and the pork fat and goes silky. One of the better-value hot boxes here. Miso contains wheat in most commercial blends.",
+    "dish_key": "buta_nasu_bento"
+   },
+   {
+    "ja": "おこさま弁当",
+    "romaji": "Okosama Bentō",
+    "en": "Children's bento",
+    "price": "¥540",
+    "section": "メイン弁当 / Main bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Small portions of the mild favourites — typically fried chicken, a small hamburg, sausage and rice.",
+    "dish_key": "okosama_bento"
+   },
+   {
+    "ja": "かつ丼",
+    "romaji": "Katsu-don",
+    "en": "Breaded pork cutlet simmered with onion and egg over rice",
+    "price": "¥670",
+    "section": "丼 / Rice bowls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The cutlet is cooked a second time in a sweet soy-dashi broth with onion, then set with beaten egg and slid over rice. Soft, sweet and savoury — nothing stays crisp, and that is the point.",
+    "dish_key": "katsu_don"
+   },
+   {
+    "ja": "親子丼",
+    "romaji": "Oyako-don",
+    "en": "Chicken and egg simmered over rice",
+    "price": "¥530",
+    "section": "丼 / Rice bowls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "'Parent and child' — chicken and egg in the same bowl. The gentlest thing on this menu. With a raw egg yolk on top (tsukimi) it is ¥600.",
+    "dish_key": "oyako_don"
+   },
+   {
+    "ja": "チャーシュー丼",
+    "romaji": "Chāshū-don",
+    "en": "Braised pork belly slices over rice",
+    "price": "¥580",
+    "section": "丼 / Rice bowls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The same rolled, soy-braised pork that tops ramen, laid over rice with its sauce. ¥650 with a soft egg.",
+    "dish_key": "chashu_don"
+   },
+   {
+    "ja": "ビーフカレー",
+    "romaji": "Beef Curry",
+    "en": "Japanese beef curry with rice",
+    "price": "¥600",
+    "section": "カレー / Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Japanese curry is thick, sweet and mild — closer to a brown stew than an Indian curry — and it is thickened with a wheat-flour roux, so never gluten-free. Pork-cutlet version ¥850.",
+    "dish_key": "beef_curry"
+   },
+   {
+    "ja": "ロースカツカレー",
+    "romaji": "Rōsu-katsu Curry",
+    "en": "Japanese curry with a breaded pork loin cutlet on top",
+    "price": "¥850",
+    "section": "カレー / Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The full comfort order. Cutlet, curry, rice.",
+    "dish_key": "rosukatsu_curry"
+   },
+   {
+    "ja": "チャーハン",
+    "romaji": "Chāhan",
+    "en": "Japanese-Chinese fried rice",
+    "price": "¥390",
+    "section": "サイドメニュー / Sides",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg, spring onion and small pieces of pork, fried with soy. Sold as a side, but it is a meal.",
+    "dish_key": "chahan"
+   },
+   {
+    "ja": "焼きそば",
+    "romaji": "Yakisoba",
+    "en": "Fried wheat noodles in sweet-savoury sauce",
+    "price": "¥410",
+    "section": "サイドメニュー / Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Steamed wheat noodles fried with cabbage and pork in a thick fruity-brown yakisoba sauce, usually topped with green nori and pickled ginger. Festival food.",
+    "dish_key": "yakisoba"
+   },
+   {
+    "ja": "ちくわ天のせうどん",
+    "romaji": "Chikuwa-ten nose Udon",
+    "en": "Hot udon topped with a battered tube-shaped fishcake",
+    "price": "¥360",
+    "section": "うどん・そば / Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chikuwa is fish paste steamed around a rod so it comes out as a hollow tube; here it is battered and dropped on the noodles, where it soaks up the broth. The cheapest hot meal on the menu.",
+    "dish_key": "chikuwa_ten_udon"
    }
   ]
  }

@@ -21,6 +21,9 @@ const VEGAN = new Set(['vegan', 'ask', 'no', '']);
 
 if (!fs.existsSync(DIR)) { console.log(`no ${DIR} — nothing to merge`); process.exit(0); }
 
+const survivors = fs.existsSync('data/_dupe_survivors.json')
+  ? JSON.parse(fs.readFileSync('data/_dupe_survivors.json', 'utf8')) : {};
+
 // The city is encoded in the filename, but agents checkpoint into shards with
 // assorted decorations: nara.json, toba2.json, _nagano_partA.json, himeji2_part1.json.
 // Recognise the city anywhere in the name rather than silently skipping a shard —
@@ -88,8 +91,12 @@ for (const city of CITIES) {
   const menus = JSON.parse(fs.readFileSync(mp, 'utf8'));
   let dirtyMenus = false, dirtyCity = false;
 
-  for (const [id, entry] of Object.entries(entries)) {
-    if (!ids.has(id)) { unmatched++; bad.push(`${city}/${id}: no matching record`); continue; }
+  for (const [rawId, entry] of Object.entries(entries)) {
+    // Follow a record that was merged into a duplicate survivor after this
+    // research was written — otherwise the menu is silently dropped.
+    const id = (!ids.has(rawId) && survivors[rawId]) ? survivors[rawId] : rawId;
+    if (id !== rawId) console.log(`  ~ ${rawId} -> ${id} (merged duplicate)`);
+    if (!ids.has(id)) { unmatched++; bad.push(`${city}/${rawId}: no matching record`); continue; }
     const errs = problems(entry, id);
     if (errs.length) { rejected++; bad.push(`${city}/${id}: ${errs.slice(0, 4).join('; ')}`); continue; }
 
