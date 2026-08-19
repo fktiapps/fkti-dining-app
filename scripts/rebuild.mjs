@@ -18,6 +18,8 @@ const STEPS = [
   ['dedupe-tokyo.mjs',                'collapse _2/_3 harvest-suffix duplicates'],
   ['merge-dupes.mjs',                 'collapse cross-script duplicates'],
   ['merge-tokyo3-enrich.mjs',         'merge deep-enrich results (tier-gated)'],
+  ['merge-ramen.mjs',                 'merge researched ramen blocks (schema-validated)'],
+  ['merge-menus.mjs',                 'merge researched menus + derived menu flags'],
   ['backfill-signoff-2026-07-02.mjs', 'record the 2026-07-02 audit on its records'],
   ['apply-gf-audit.mjs',              'apply adversarial pass-3 verdicts'],
   ['apply-owner-signoff.mjs',         "RE-ASSERT Greg's human gate (must follow the audit)"],

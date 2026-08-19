@@ -108,6 +108,81 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
   writeCity('nagoya', j);
 }
 
+// ---------------------------------------------------- closures and stale claims
+// Surfaced by the menu research pass. A closure is flagged, not deleted: the
+// evidence is a shop Instagram bio that cannot be re-read programmatically, so a
+// prominent warning is honest where a silent deletion would be an unverifiable
+// judgement. The GF downgrade applies immediately — more caution is always safe.
+{
+  const j = readCity('hiroshima');
+  let dirty = false;
+
+  const tamaru = j.places.find(r => r.id === 'hiro_vegan_fruits_cafe_tamaru');
+  if (tamaru && tamaru.hours_status !== 'closed') {
+    tamaru.hours_status = 'closed';
+    tamaru.notes = `[${DATE}] REPORTED PERMANENTLY CLOSED on 2024-03-03. The branch's own Instagram bio reads 「2024年３月3日閉店いたしました」 and Tabelog carries a 掲載保留 (listing suspended) banner. Verify before travelling; the parent TAMARU fruit business continues elsewhere. ` + (tamaru.notes || '');
+    edits.push('hiroshima/Vegan Fruits Cafe Tamaru: marked closed (reported 2024-03-03)');
+    dirty = true;
+  }
+
+  const lente = j.places.find(r => r.id === 'hiro_cafe_lente');
+  if (lente && lente.gf_confidence === 'options') {
+    lente.gf_confidence = 'ask';
+    lente.gf_label = 'GF — ask';
+    lente.gf_detail = `[Downgraded ${DATE}: options→ask] The 2019 press describing a gluten-free risotto is contradicted by a FindMeGlutenFree reviewer (~Aug 2026) who reports speaking to the chef and being told he no longer provides gluten-free food. The risotto is also miso-based with the miso unnamed, and the shop is absent from a Feb-2026 Miyajima gluten-free roundup that lists only confirmed shops. ` + (lente.gf_detail || '');
+    edits.push('hiroshima/Cafe Lente: GF options→ask (2019 GF claim contradicted by a 2026 first-hand report)');
+    dirty = true;
+  }
+
+  if (dirty) writeCity('hiroshima', j);
+}
+
+// A dead official domain on a record that still links it.
+{
+  const j = readCity('kyoto');
+  let dirty = false;
+  for (const r of j.places) {
+    if (!String(r.website || '').includes('5w-kyoto.com')) continue;
+    r.website = '';
+    r.notes = `[${DATE}] Official domain 5w-kyoto.com no longer resolves; link removed. ` + (r.notes || '');
+    edits.push(`kyoto/${r.name.split(' (')[0]}: cleared dead domain 5w-kyoto.com`);
+    dirty = true;
+  }
+  if (dirty) writeCity('kyoto', j);
+}
+
+// ---------------------------------------------------- wrong / dead websites
+// Found during the menu pass and re-verified here: one record links a DIFFERENT
+// business, two link domains that no longer resolve. A link to the wrong
+// restaurant is worse than no link — it shows a stranger's menu and hours.
+const BAD_SITES = [
+  { city: 'nagoya', match: 'WOK',
+    was: 'r.goope.jp/wok',
+    to: 'https://www.instagram.com/wok_nagoya/',
+    why: 'the linked site is a different WOK restaurant in 東京都武蔵村山市伊奈平, verified by its own address line. The Nagoya shop (西区城北町, opened June 2026) has no website; Instagram is its only channel.' },
+  { city: 'nara', match: '楽夢菜',
+    was: 'ramuna.jp',
+    to: '',
+    why: 'ramuna.jp no longer resolves (DNS failure).' },
+  { city: 'kanazawa', match: 'てんてん',
+    was: 'tenten-bou7.com',
+    to: '',
+    why: 'tenten-bou7.com no longer resolves (DNS failure), and no evidence of trading in 2026 was found — the shop is reservation-only and its published menu has not changed since 2015. Confirm it is still open before relying on this entry.' },
+];
+for (const b of BAD_SITES) {
+  const j = readCity(b.city);
+  let dirty = false;
+  for (const r of j.places) {
+    if (!r.name.includes(b.match)) continue;
+    if (!String(r.website || '').includes(b.was)) continue;
+    r.website = b.to;
+    r.notes = `[${DATE}] Website corrected: ${b.why} ` + (r.notes || '');
+    edits.push(`${b.city}/${r.name.split(' (')[0]}: ${b.to ? 'repointed' : 'cleared'} website (${b.was})`);
+    dirty = true;
+  }
+  if (dirty) writeCity(b.city, j);
+}
+
 // ---------------------------------------------------- lapsed / hijacked domains
 // scripts/check-links.mjs found restaurant domains that have lapsed and now serve
 // gambling sites. Linking these from the app would send a user looking for a

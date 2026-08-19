@@ -19918,5 +19918,519 @@
     "dish_key": "select-lunch"
    }
   ]
+ },
+ "nagoya_the_garden_lounge": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.espacionagoya.com/restaurant-bar/lounge/",
+   "https://grpespacio.wpcomstaging.com/wp-content/uploads/2025/07/TGL_07.pdf",
+   "https://grpespacio.wpcomstaging.com/wp-content/uploads/2025/07/244f53e71a35c19f7438cff4121a3995.pdf",
+   "https://grpespacio.wpcomstaging.com/wp-content/uploads/2025/07/Aniversary_option.pdf",
+   "https://www.espacionagoya.com/restaurant-bar/food-allergy/",
+   "https://www.tablecheck.com/ja/the-garden-lounge"
+  ],
+  "price_note": "Prices approximate — may change.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "ガトーショコラ　オーツミルクストロベリーアイスクリーム",
+    "romaji": "gatoo shokora, ootsu-miruku sutoroberii aisukuriimu",
+    "en": "Gateau chocolat with oat-milk strawberry ice cream",
+    "price": "¥2,000",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Carries the hotel's own VEGAN + GLUTEN FREE icons on the a la carte PDF. The hotel states plainly that every dish shares one kitchen and one set of washing equipment, so trace gluten is possible — declare celiac when you book, not on arrival.",
+    "dish_key": "gateau_chocolat_vegan"
+   },
+   {
+    "ja": "生姜香オーツミルクパンナコッタ　メープルシトラスソルベ",
+    "romaji": "shouga-kaori ootsu-miruku panna kotta, meepuru shitorasu sorube",
+    "en": "Ginger oat-milk panna cotta with maple citrus sorbet",
+    "price": "¥2,000",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Hotel's own VEGAN + GLUTEN FREE icons; oat milk in place of dairy. Oats are not certified gluten-free in Japan, so skip it if you react to oats. Shared-kitchen caveat applies.",
+    "dish_key": "oat_panna_cotta"
+   },
+   {
+    "ja": "フレッシュフルーツプレート",
+    "romaji": "furesshu furuutsu pureeto",
+    "en": "Fresh fruit plate",
+    "price": "¥4,000",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Hotel's own VEGAN + GLUTEN FREE icons; the safest sweet on the card because nothing is cooked or coated.",
+    "dish_key": "fresh_fruit_plate"
+   },
+   {
+    "ja": "愛知県田原市産ベビーリーフと彩り鮮やかなガーデンサラダ",
+    "romaji": "tahara-san bebii riifu to gaaden sarada",
+    "en": "Tahara baby-leaf garden salad",
+    "price": "¥2,200",
+    "section": "Salad",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Hotel's own VEGETARIAN + VEGAN + GLUTEN FREE icons. Still confirm the dressing on the day — the icon describes the plate as the kitchen builds it, not a substitution.",
+    "dish_key": "garden_salad"
+   },
+   {
+    "ja": "百年とうふと彩り野菜のニースサラダ",
+    "romaji": "hyakunen toufu to irodori yasai no niisu sarada",
+    "en": "Kusumura hundred-year tofu and vegetable salade nicoise",
+    "price": "¥3,300",
+    "section": "Salad",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "The hotel icons this GLUTEN FREE but deliberately NOT vegan — a nicoise normally carries egg and/or anchovy. Ask what the animal component is before treating it as plant-based.",
+    "dish_key": "tofu_nicoise"
+   },
+   {
+    "ja": "イタリア産ブッラータチーズと高糖度トマトのカプレーゼ",
+    "romaji": "burraata chiizu to koutoudo tomato no kapureeze",
+    "en": "Burrata and high-sugar tomato caprese",
+    "price": "¥3,800",
+    "section": "Salad",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Hotel's own GLUTEN FREE icon. Dairy burrata — vegetarian but not vegan.",
+    "dish_key": "burrata_caprese"
+   },
+   {
+    "ja": "ベジタブルスープ",
+    "romaji": "bejitaburu suupu",
+    "en": "Vegetable soup",
+    "price": "¥1,800",
+    "section": "Soup",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Hotel's own VEGAN + GLUTEN FREE icons — one of the very few hot savoury items the kitchen itself flags both ways.",
+    "dish_key": "vegetable_soup"
+   },
+   {
+    "ja": "本日のリストレーションスープ",
+    "romaji": "honjitsu no risutoreeshon suupu",
+    "en": "Restoration soup of the day",
+    "price": "¥2,000",
+    "section": "Soup",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A zero-waste vegetable-offcut soup that changes daily and carries no dietary icon. Stock base and any flour thickening are unstated — ask for the day's build.",
+    "dish_key": "restoration_soup"
+   },
+   {
+    "ja": "１０種の野菜と大豆ミートのキーマカレー　コンディメント添え",
+    "romaji": "juusshu no yasai to daizu miito no kiima karee",
+    "en": "Ten-vegetable and soy-meat keema curry with condiments",
+    "price": "¥3,200",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The hotel icons this VEGAN but pointedly does NOT icon it gluten free — assume the curry base carries wheat (roux or soy sauce). A good vegan choice, not a celiac one.",
+    "dish_key": "soy_keema_curry"
+   },
+   {
+    "ja": "中東風ひよこ豆のコロッケ「ファラフェル」タヒニ風味噌ソース",
+    "romaji": "faraferu, tahini-fuu miso soosu",
+    "en": "Middle-Eastern falafel with tahini-style miso sauce",
+    "price": "¥3,000",
+    "section": "Main dish",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "VEGAN icon only, no GF icon. The miso sauce is the problem — Japanese miso is often barley (mugi) miso — and falafel is commonly bound and fried with flour. Ask about the miso and about the fryer.",
+    "dish_key": "falafel_miso_tahini"
+   },
+   {
+    "ja": "米粉バンズのクリスピーおからバーガー",
+    "romaji": "komeko banzu no kurisupii okara baagaa",
+    "en": "Crispy okara burger on a rice-flour bun",
+    "price": "¥3,000",
+    "section": "Sandwiches",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The bun is rice flour, but 'crispy' okara patties are normally floured or crumbed, and the icon column on this PDF page is misaligned so we cannot read which icon belongs to this line. Do not read the rice-flour bun as a gluten-free meal — ask about the patty coating and the fryer.",
+    "dish_key": "okara_burger"
+   },
+   {
+    "ja": "トリュフ風味のフレンチフライポテト　オニオンディップ",
+    "romaji": "toryufu-fuumi no furenchi furai poteto, onion dippu",
+    "en": "Truffle-scented french fries with onion dip",
+    "price": "¥1,800",
+    "section": "Light meal",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Potato is wheat-free by nature, but this kitchen also deep-fries breaded prawns and karaage and gives the fries no GF icon. Ask whether the fryer is shared, and about dairy in the dip.",
+    "dish_key": "truffle_fries"
+   },
+   {
+    "ja": "チーズの盛り合わせ",
+    "romaji": "chiizu no moriawase",
+    "en": "Assorted cheese plate",
+    "price": "¥4,200",
+    "section": "Light meal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mozzarella with wasabi stem, grilled cheese with aonori, gouda and ricotta, plus a whey caramel sauce. Dairy throughout, and it is normally served with crackers or bread — ask for it without.",
+    "dish_key": "cheese_plate"
+   },
+   {
+    "ja": "ランチセットメニュー",
+    "romaji": "ranchi setto menyuu",
+    "en": "Lunch set: amuse, choice of main, dessert, bread, coffee or tea",
+    "price": "¥5,800",
+    "section": "Lunch course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Served 11:30–13:30 L.O. Bread is part of the set and every main is meat or seafood. The kitchen will build a low-allergen version only if you declare at the time of booking. Prices exclude the 15% service charge.",
+    "dish_key": "lunch_set"
+   },
+   {
+    "ja": "ディナーセットメニュー（３品）",
+    "romaji": "dinaa setto menyuu (sanpin)",
+    "en": "Dinner set: appetizer, choice of main, sweets",
+    "price": "¥7,800",
+    "section": "Dinner course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "17:30–20:30 L.O. Same wheat-and-animal caveats as the lunch set. The four-course version adding a fish course is ¥10,800.",
+    "dish_key": "dinner_set_3"
+   },
+   {
+    "ja": "大海老のフライ　タルタルソースを添えて",
+    "romaji": "oo-ebi no furai, tarutaru soosu wo soete",
+    "en": "Fried jumbo prawns with tartare sauce",
+    "price": "¥4,200",
+    "section": "Main dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Breaded and deep-fried — wheat in the crumb, and this is the fryer that creates the shared-oil risk for everything else fried here.",
+    "dish_key": "fried_prawns"
+   },
+   {
+    "ja": "段戸高原牛のボロネーゼ　リガトーニ",
+    "romaji": "dando-kougen-gyuu no boroneeze, rigatooni",
+    "en": "Dando-kogen beef bolognese with rigatoni",
+    "price": "¥3,500",
+    "section": "Pasta",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat pasta. Listed so a celiac can rule it out at a glance.",
+    "dish_key": "bolognese_rigatoni"
+   },
+   {
+    "ja": "こだわり卵と岡崎おうはんのオムライス",
+    "romaji": "kodawari tamago to okazaki-ouhan no omuraisu",
+    "en": "Omurice with Okazaki Ouhan chicken",
+    "price": "¥3,600",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-based, but omurice rice is normally seasoned with soy sauce or a wheat-thickened demi-glace. Egg and chicken rule out vegan.",
+    "dish_key": "omurice"
+   },
+   {
+    "ja": "愛知県産「恋マンゴー」のかき氷　自家製練乳エスプーマ",
+    "romaji": "koi mangoo no kakigoori, jikasei ren'nyuu esupuuma",
+    "en": "Aichi 'Koi Mango' shaved ice with house condensed-milk espuma",
+    "price": "¥5,800",
+    "section": "Seasonal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Summer 2026 item, from 14:00, ten servings a day. Ice and mango are wheat-free in themselves, but the condensed-milk espuma is dairy and no GF icon is given.",
+    "dish_key": "koi_mango_kakigori"
+   },
+   {
+    "ja": "オーガニック フレッシュ 抹茶ラテ",
+    "romaji": "oaganikku furesshu maccha rate",
+    "en": "Organic fresh matcha latte",
+    "price": "¥1,900",
+    "section": "Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Ishikawa Seicha organic matcha. The default is dairy — ask for a plant milk if you need one.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "生デコレーションケーキ（４号）",
+    "romaji": "nama dekoreeshon keeki (yon-gou)",
+    "en": "Fresh-cream decoration cake (12cm)",
+    "price": "¥3,500",
+    "section": "Anniversary option",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Anniversary add-on, three days' notice. Wheat sponge. A message plate on its own is free.",
+    "dish_key": "anniversary_cake"
+   }
+  ]
+ },
+ "nagoya_wok": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://www.instagram.com/wok_nagoya/",
+   "https://tabelog.com/aichi/A2301/A230109/23096865/",
+   "https://tblg.k-img.com/restaurant/images/Rvw/366924/2fe5572cee1c854e38d4a331eb9d1ae8.jpg",
+   "https://yuutexii.hatenablog.com/entry/2026/07/08/"
+  ],
+  "price_note": "Prices approximate — may change.",
+  "last_checked": "2026-08-19",
+  "items": [
+   {
+    "ja": "カレーライス（ライス＆カリー）",
+    "romaji": "karee raisu (raisu ando karii)",
+    "en": "Rice & curry plate: choice of chicken, fish or pork curry, plus two vegetable curries, rice, salad and papadum",
+    "price": "¥1,000",
+    "section": "カレーライス / Rice & curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The house plate. Sri Lankan curries are coconut-and-spice based rather than wheat-thickened, but this shop publishes nothing at all about wheat, soy sauce or its fryer — treat it as unverified and ask. Meat or fish as standard.",
+    "dish_key": "rice_and_curry_plate"
+   },
+   {
+    "ja": "チキンカレー",
+    "romaji": "chikin karee",
+    "en": "Chicken curry (plate option)",
+    "price": "",
+    "section": "カレーライス / Rice & curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "One of three protein choices on the ¥1,000 plate. Coconut-based; wheat status unconfirmed by the shop.",
+    "dish_key": "chicken_curry"
+   },
+   {
+    "ja": "フィッシュカレー",
+    "romaji": "fisshu karee",
+    "en": "Fish curry (plate option)",
+    "price": "",
+    "section": "カレーライス / Rice & curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mackerel in a thin coconut gravy per a first-hand review. Fish, so not vegan; wheat status unconfirmed.",
+    "dish_key": "fish_curry"
+   },
+   {
+    "ja": "ポークカレー",
+    "romaji": "pooku karee",
+    "en": "Pork curry (plate option)",
+    "price": "",
+    "section": "カレーライス / Rice & curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Third protein choice on the plate. Wheat status unconfirmed.",
+    "dish_key": "pork_curry"
+   },
+   {
+    "ja": "２つ野菜カレー",
+    "romaji": "futatsu yasai karee",
+    "en": "Two vegetable curries (included with the plate)",
+    "price": "",
+    "section": "カレーライス / Rice & curry",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Green bean in coconut milk and a spicy potato, per a first-hand review. Sri Lankan vegetable curries very often carry Maldive fish (umbalakada), so ask specifically before calling these vegan. Not sold separately.",
+    "dish_key": "two_vegetable_curries"
+   },
+   {
+    "ja": "ライス（バスマティ）",
+    "romaji": "raisu (basumati)",
+    "en": "Basmati rice",
+    "price": "",
+    "section": "カレーライス / Rice & curry",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain long-grain basmati — the one component here that is wheat-free by nature. Ask for it plain and watch the shared serving spoon.",
+    "dish_key": "basmati_rice"
+   },
+   {
+    "ja": "パパド",
+    "romaji": "papado",
+    "en": "Papadum (lentil wafer)",
+    "price": "",
+    "section": "カレーライス / Rice & curry",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Lentil flour, so wheat-free as a recipe — but this kitchen deep-fries wheat-pastry rolls, breadcrumbed fish cutlets and patties, and its own till groups them all as fried items. Assume shared oil unless they tell you otherwise.",
+    "dish_key": "papadum"
+   },
+   {
+    "ja": "ミックスフライドライス",
+    "romaji": "mikkusu furaido raisu",
+    "en": "Mixed fried rice",
+    "price": "¥750",
+    "section": "フライドライス / Fried rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sri Lankan fried rice is normally finished with soy sauce, which is wheat-based by default, and 'mixed' means egg plus meat or seafood. Ask for tamari or skip it.",
+    "dish_key": "mixed_fried_rice"
+   },
+   {
+    "ja": "チキンコットゥ",
+    "romaji": "chikin kottu",
+    "en": "Chicken kottu roti",
+    "price": "¥700",
+    "section": "コットゥ / Kottu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kottu is chopped godhamba roti — wheat flatbread by definition. Not an option for celiac. (A blog photo caption says ¥600; the shop's own board and a same-visit receipt both say ¥700.)",
+    "dish_key": "chicken_kottu"
+   },
+   {
+    "ja": "チーズコットゥ",
+    "romaji": "chiizu kottu",
+    "en": "Cheese kottu roti",
+    "price": "¥800",
+    "section": "コットゥ / Kottu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same wheat roti base, with cheese. Neither gluten-free nor vegan.",
+    "dish_key": "cheese_kottu"
+   },
+   {
+    "ja": "ミックスヌードル",
+    "romaji": "mikkusu nuudoru",
+    "en": "Mixed noodles",
+    "price": "¥600",
+    "section": "コットゥ / Kottu",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Noodles here are wheat unless the shop says otherwise, and 'mixed' usually means egg and meat.",
+    "dish_key": "mixed_noodles"
+   },
+   {
+    "ja": "チキンロール",
+    "romaji": "chikin rooru",
+    "en": "Chicken roll (crumbed pancake roll)",
+    "price": "¥200",
+    "section": "サイトディッシュ / Side dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A Sri Lankan short eat: wheat pancake wrapper, crumbed and deep-fried. Wheat twice over.",
+    "dish_key": "chicken_roll"
+   },
+   {
+    "ja": "魚カツレツ（１個）",
+    "romaji": "sakana katsuretsu",
+    "en": "Fish cutlet (1 pc)",
+    "price": "¥100",
+    "section": "サイトディッシュ / Side dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Breadcrumbed and deep-fried. Wheat.",
+    "dish_key": "fish_cutlet"
+   },
+   {
+    "ja": "パティ（１個）",
+    "romaji": "pati",
+    "en": "Patty (1 pc)",
+    "price": "¥100",
+    "section": "サイトディッシュ / Side dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat-pastry turnover. Wheat.",
+    "dish_key": "patty"
+   },
+   {
+    "ja": "スリランカ風ワタラッパン",
+    "romaji": "suriranka-fuu wataraappan",
+    "en": "Sri Lankan watalappan (jaggery coconut custard)",
+    "price": "¥220",
+    "section": "デザート / Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "From the shop's own dessert card. Watalappan is jaggery, coconut milk and egg — usually flour-free, but confirm. Egg rules out vegan.",
+    "dish_key": "watalappan"
+   },
+   {
+    "ja": "プリン",
+    "romaji": "purin",
+    "en": "Custard pudding",
+    "price": "¥200",
+    "section": "デザート / Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "From the shop's own dessert card. Egg-and-dairy custard; caramel is usually flour-free but unconfirmed here.",
+    "dish_key": "purin"
+   },
+   {
+    "ja": "コーヒームース",
+    "romaji": "koohii muusu",
+    "en": "Coffee mousse",
+    "price": "¥270",
+    "section": "デザート / Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy, and likely gelatin or egg. No ingredient information is published.",
+    "dish_key": "coffee_mousse"
+   },
+   {
+    "ja": "ホットティー",
+    "romaji": "hotto tii",
+    "en": "Hot tea",
+    "price": "¥200",
+    "section": "ドリンク / Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Ceylon tea. Say if you want it black — milk tea is the Sri Lankan default.",
+    "dish_key": "hot_tea"
+   },
+   {
+    "ja": "アイスティー",
+    "romaji": "aisu tii",
+    "en": "Iced tea",
+    "price": "¥200",
+    "section": "ドリンク / Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Same milk caveat as the hot tea.",
+    "dish_key": "iced_tea"
+   },
+   {
+    "ja": "ホットコーヒー",
+    "romaji": "hotto koohii",
+    "en": "Hot coffee",
+    "price": "¥200",
+    "section": "ドリンク / Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Ask for it black if you need it dairy-free.",
+    "dish_key": "hot_coffee"
+   },
+   {
+    "ja": "アイスコーヒー",
+    "romaji": "aisu koohii",
+    "en": "Iced coffee",
+    "price": "¥200",
+    "section": "ドリンク / Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Ask for it black if you need it dairy-free.",
+    "dish_key": "iced_coffee"
+   },
+   {
+    "ja": "マンゴージュース",
+    "romaji": "mangoo juusu",
+    "en": "Mango juice",
+    "price": "¥300",
+    "section": "ジュース / Juice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Mango drinks in Sri Lankan shops are often blended with milk — confirm before treating it as plant-based.",
+    "dish_key": "mango_juice"
+   },
+   {
+    "ja": "ファールーダ",
+    "romaji": "faaruuda",
+    "en": "Faluda (rose milk with basil seed, jelly and ice cream)",
+    "price": "¥300",
+    "section": "ジュース / Juice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk, rose syrup, basil seed, jelly and a scoop of ice cream. Dairy for certain; the jelly may be gelatin and ice cream can carry a wheat-based stabiliser or a wafer.",
+    "dish_key": "faluda"
+   }
+  ]
  }
 }
