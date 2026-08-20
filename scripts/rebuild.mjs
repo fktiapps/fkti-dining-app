@@ -18,7 +18,12 @@ const STEPS = [
   ['dedupe-tokyo.mjs',                'collapse _2/_3 harvest-suffix duplicates'],
   ['merge-dupes.mjs',                 'collapse cross-script duplicates'],
   ['merge-tokyo3-enrich.mjs',         'merge deep-enrich results (tier-gated)'],
-  ['merge-tokyo-enrich-verdicts.mjs', 'apply enrich coords; queue name/existence changes', ['--apply']],
+  ['merge-tokyo-enrich-verdicts.mjs', 'apply enrich coords + names; hide unverifiable records', ['--apply']],
+  // Second dedupe pass: applying the enrich names can REVEAL a duplicate the first
+  // pass could not see. かんだまつや and 神田まつや 本店 were the same shop listed twice
+  // by the sweep, in kana and in kanji, and only became detectable once the rename
+  // made the names identical — at which point they also share coordinates exactly.
+  ['merge-dupes.mjs',                 'collapse duplicates the renames just revealed'],
   ['merge-ramen.mjs',                 'merge researched ramen blocks (schema-validated)'],
   ['merge-menus.mjs',                 'merge researched menus + derived menu flags'],
   ['backfill-signoff-2026-07-02.mjs', 'record the 2026-07-02 audit on its records'],
@@ -36,6 +41,10 @@ const STEPS = [
   ['quarantine-orphan-menus.mjs',      'pull menus whose record was deduped away', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
+  // Last, because it hashes the shipped files and must see their final state. The
+  // service worker keys every cache off VERSION, so without this a returning user
+  // keeps serving the old city data no matter how many times we deploy.
+  ['bump-build.mjs',                  'bump the SW cache version iff shipped content changed'],
 ];
 
 const run = (script, args = []) => {

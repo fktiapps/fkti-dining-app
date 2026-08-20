@@ -9,7 +9,10 @@ const MARGIN = 0.01;                       // ~1.1km of slack
 const man = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
 
 for (const c of man.cities) {
-  const places = readCity(c.id).places;
+  // Hidden records are never drawn, so they must not stretch the map either. A
+  // record hidden precisely because nobody could confirm its location is the last
+  // thing that should set the initial viewport.
+  const places = readCity(c.id).places.filter(p => !p.hidden);
   const lats = places.map(p => p.lat), lngs = places.map(p => p.lng);
   const fitted = [
     [+(Math.min(...lats) - MARGIN).toFixed(4), +(Math.min(...lngs) - MARGIN).toFixed(4)],
