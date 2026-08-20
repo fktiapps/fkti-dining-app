@@ -1,27 +1,28 @@
-// Apply the deep-enrich verdicts that merge-tokyo3-enrich.mjs deliberately leaves alone:
-// location, identity, and existence.
+// Apply the deep-enrich verdicts that merge-tokyo3-enrich.mjs deliberately leaves
+// alone: location, identity, and existence.
 //
 // merge-tokyo3-enrich.mjs handles content and GF tiers. It does NOT touch lat/lng,
 // name, or loc_approx — and those are exactly what the light 3-mile tranche got
-// wrong. Every tokyo3_* record carries a neighborhood-centroid pin and an
-// unverified name; shard 0 alone produced two garbled names, one restaurant that
-// is actually 600km away in Kagawa, and seven that no search could find.
+// wrong. Every tokyo3_* record carries a neighbourhood-centroid pin and an
+// unverified name.
 //
-// The three rules here follow from how bad each mistake is:
+// These three were originally queued for the owner. He asked for them to be
+// resolved here instead ("You don't need me for name changes or existence
+// problems - just solve them", 2026-08-20), so this now decides. The queues are
+// still written, as the record of what was decided and why.
 //
-//   COORDINATES are applied automatically. A real address is strictly better than
-//   a centroid guess, and a wrong one is caught by the metro-box check below —
-//   the Kagawa record fails it by 150km.
+//   COORDINATES apply when the agent is confident. A Greater-Tokyo box rejects a
+//   pin in another prefecture, and a move of more than 1.5km is treated as a
+//   different shop rather than a corrected pin.
 //
-//   NAMES are never applied automatically. Renaming a record changes which
-//   business it claims to be. "大五 is a garbling of 醍醐" is a judgement call about
-//   identity, and a wrong one silently attaches a Michelin shojin house's safety
-//   evidence to whatever the original record actually was. Queued for the owner.
+//   NAMES apply at high and medium confidence. Low confidence keeps the old name.
 //
-//   EXISTENCE verdicts are stamped, never acted on. NOT FOUND is the absence of
-//   evidence, not evidence of absence — small Tokyo shops go unlisted. Deleting a
-//   record on a failed search would repeat the mistake of the bulk existence
-//   verifier that "confirmed" four invented shop names. Stamped and queued.
+//   EXISTENCE decides visibility, never deletion. A record that cannot be found
+//   is hidden from the app, not removed: NOT FOUND is the absence of evidence,
+//   small Tokyo shops go unlisted, and one shard nearly wrote a record off on an
+//   HTTP 429 that was the search engine declining to answer. Hiding is reversible
+//   and keeps the research trail; deleting on a failed search is how the bulk
+//   existence verifier "confirmed" four invented shop names.
 //
 //   node scripts/merge-tokyo-enrich-verdicts.mjs [--apply]
 import fs from 'node:fs';
@@ -68,7 +69,7 @@ if (!verdicts.length) { console.log(`no verdicts in ${DIR}`); process.exit(0); }
 const j = readCity('tokyo');
 const byId = new Map(j.places.map(p => [p.id, p]));
 
-const stats = { seen: verdicts.length, missing: 0, pinned: 0, rejected: 0, filled: 0 };
+const stats = { seen: verdicts.length, missing: 0, pinned: 0, rejected: 0, filled: 0, renamed: 0, hidden: 0, closed: 0 };
 const identityQueue = [], existenceQueue = [], categoryQueue = [];
 
 for (const e of verdicts) {
@@ -119,10 +120,16 @@ for (const e of verdicts) {
     r.name = e.name;
     stats.filled++;
   } else if (e.name && e.name !== r.name) {
-    r.name_proposed = { to: e.name, from: r.name, by: 'tokyo deep-enrich', date: DATE,
-      confidence: e.enrich_confidence || 'unknown', note: e.enrich_note || '',
-      applied: false };
-    identityQueue.push({ id: r.id, from: r.name, to: e.name,
+    // The light name is not a fact — it came out of a discovery sweep with no
+    // source behind it. When the agent found the business and read its name off
+    // the shop's own page, that name is better evidence than the sweep's guess.
+    // Low confidence is not, so it keeps the old name and records the proposal.
+    const apply = e.enrich_confidence === 'high' || e.enrich_confidence === 'medium';
+    r.name_renamed = { to: e.name, from: r.name, by: 'tokyo deep-enrich', date: DATE,
+      confidence: e.enrich_confidence || 'unknown', note: (e.enrich_note || '').slice(0, 400),
+      applied: apply };
+    if (apply) { r.name = e.name; stats.renamed++; }
+    identityQueue.push({ id: r.id, from: r.name_renamed.from, to: e.name, applied: apply,
       confidence: e.enrich_confidence || 'unknown', note: (e.enrich_note || '').slice(0, 400) });
   }
 
@@ -142,38 +149,73 @@ for (const e of verdicts) {
       mom_and_pop: !!r.mom_and_pop, note: note.slice(0, 400) });
   }
 
-  // --- existence: stamped only ----------------------------------------
-  // SUBSTITUTION is its own category and the most dangerous one. Shard 6 found
-  // the record's ときわ食堂 listed 閉店 and pointed the record at a surviving branch
-  // 700m away; shard 7 moved 玉ひで 2.1km and 竹むら 3km onto shops sharing a name.
-  // Each may well be right, but "the shop you meant is gone, here is another one"
-  // is a decision for the owner, not a merge script — so it is surfaced rather
-  // than buried among the ordinary confirmations.
-  // A raised substitution flag is also sticky, so a human clearing it is the only
-  // way it goes away — the same reasoning as the gate guard in apply-gf-audit.mjs.
+  // --- existence: decides visibility -----------------------------------
+  // SUBSTITUTION is the category that needs naming. Shard 6 found the record's
+  // ときわ食堂 listed 閉店 and pointed it at a surviving branch 700m away; 玉ひで moved
+  // 4.4km and 竹むら 2.8km onto shops that merely share a name. The identification
+  // is usually right, so the pin is kept — but the record now says openly that
+  // this is a different shop from the one the sweep described.
+  //
+  // Drift is measured against the shard input, not the record: measured against
+  // the record, the first run moves the pin and every later run sees zero. Once
+  // raised the flag is sticky, for the same reason the GF gate guard is.
   const o = ORIG.get(e.id) || [oldLat, oldLng];
   const drift = (e.loc_precise === true && e.lat != null && o[0] != null)
     ? km(o[0], o[1], e.lat, e.lng) : 0;
   const substituted = drift > DRIFT_KM ||
     r.existence?.status === 'substituted' ||
-    /閉店|permanently closed|substitut|instead of|relocat/i.test(note);
-  const status = /^NOT FOUND/i.test(note) ? 'not_found'
+    /substitut|instead of|relocat/i.test(note);
+
+  // Prefer an explicit status from the agent over reading its prose. The regexes
+  // below are the fallback for shards written before the brief asked for the field.
+  const CLOSED_PERM = /(permanently closed|【?閉店】?|閉店しました|has closed for good)/i;
+  const CLOSED_TEMP = /(temporarily closed|refurbish|renovat|改装|休業|reopening|reopen)/i;
+  const status = e.status ? e.status
+    : /^NOT FOUND/i.test(note) ? 'not_found'
     : /^MISLOCATED/i.test(note) ? 'mislocated'
     : /^UNRESOLVED/i.test(note) ? 'unresolved'
+    : CLOSED_PERM.test(note) && e.loc_precise !== true ? 'closed_permanently'
     // "confirmed" is reserved for a high-confidence identification. Medium means
     // the agent found a plausible shop but could not tie it to the light record.
     : e.loc_precise === true ? (e.enrich_confidence === 'high' ? 'confirmed' : 'probable')
     : null;
-  if (status) {
-    r.existence = { status, checked: DATE, note: note.slice(0, 500) };
-    if (substituted && (status === 'confirmed' || status === 'probable')) {
-      r.existence.status = 'substituted';
-      existenceQueue.push({ id: r.id, name: r.name, status: 'substituted',
-        drift_km: Math.round(drift * 10) / 10, note: note.slice(0, 400) });
-    } else if (status !== 'confirmed' && status !== 'probable') {
-      existenceQueue.push({ id: r.id, name: r.name, status, note: note.slice(0, 400) });
-    }
+  if (!status) continue;
+
+  r.existence = { status, checked: DATE, note: note.slice(0, 500) };
+  if (substituted && (status === 'confirmed' || status === 'probable')) {
+    r.existence.status = 'substituted';
+    r.existence.drift_km = Math.round(drift * 10) / 10;
   }
+
+  // A permanently closed shop stays in the data — the closure is real research and
+  // deleting it invites the next sweep to rediscover the shop and list it again —
+  // but it must not appear in the app as though you could walk in.
+  if (r.existence.status === 'closed_permanently') {
+    r.closed = { status: 'permanent', since: e.closed_since || null,
+                 note: note.slice(0, 300), checked: DATE };
+    r.hidden = 'closed';
+    stats.closed++;
+  } else if (CLOSED_TEMP.test(note) && /closed|休業|改装|renovat|refurbish/i.test(note)) {
+    // Shut but coming back — 天ぷら ひさご reopens end of October 2026. Stays listed,
+    // badged, because a traveller planning a later trip still wants to know it exists.
+    r.closed = { status: 'temporary', until: e.reopens || null,
+                 note: note.slice(0, 300), checked: DATE };
+    delete r.hidden;
+  }
+
+  // Hidden, not deleted. NOT FOUND is the absence of evidence: small Tokyo shops go
+  // unlisted, and a shard nearly wrote one off on a rate-limit response. Hiding is
+  // reversible, keeps the search trail attached to the record, and stops the app
+  // sending anyone to an address nobody could confirm.
+  if (status === 'not_found' || status === 'unresolved') { r.hidden = 'unverified'; stats.hidden++; }
+  if (status === 'mislocated') { r.hidden = 'not_in_city'; stats.hidden++; }
+
+  if (status !== 'confirmed' && status !== 'probable')
+    existenceQueue.push({ id: r.id, name: r.name, status: r.existence.status,
+      hidden: r.hidden || null, note: note.slice(0, 400) });
+  else if (r.existence.status === 'substituted')
+    existenceQueue.push({ id: r.id, name: r.name, status: 'substituted',
+      drift_km: r.existence.drift_km, note: note.slice(0, 400) });
 }
 
 if (APPLY) {

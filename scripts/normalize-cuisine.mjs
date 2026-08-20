@@ -11,6 +11,8 @@ export const CANON = new Set([
   'izakaya','tofu','shojin','sweets','other',
   // promoted this pass
   'oden','oyster','chanko','french','italian','cafe','thai',
+  // added by the Tokyo deep-enrich pass
+  'sukiyaki',
 ]);
 
 // explicit, auditable map. Every non-canon value observed in the data gets a home.
@@ -20,6 +22,12 @@ const MAP = {
   // rather than adding a chip that would split the same restaurants across two
   // filters. トンテキ is a pork cutlet in gravy — a yoshoku dish, not a category.
   'teishoku':'shokudo', 'tonteki':'yoshoku', 'tonkatsu':'katsu',
+  // Sukiyaki and shabu-shabu earn their own chip rather than folding into
+  // chanko: a beef-at-the-table restaurant is a different evening from a
+  // sumo hotpot, and five of these were sitting in 'other', which tells a
+  // traveller nothing.
+  'shabu_shabu':'sukiyaki', 'shabushabu':'sukiyaki', 'sukiyaki_shabu':'sukiyaki',
+  'nabe':'sukiyaki', 'hotpot':'sukiyaki',
 
   // --- sweets / bakery / patisserie family ---
   'GF bakery':'sweets','bakery':'sweets','GF patisserie':'sweets','patisserie':'sweets',

@@ -239,3 +239,45 @@ New traps:
   Also add `< /dev/null` to curl inside a `while read` loop.
 - web.archive.org was returning 503 "temporarily offline" during this tranche, so
   the Wayback route in the list above was unavailable.
+
+## Tooling added in the Nagoya second tranche (2026-08-20)
+
+- **`scripts/_tbphotos.py`** now does the Tabelog menu-photo work for you:
+  `python scripts/_tbphotos.py aichi/A2301/A230109/23001639` prints every menu
+  photo as `YYYY/MM  <full-res url>  <caption>`, newest first. Two details it
+  encodes, both of which cost an hour to find:
+  - The photo JSON is **HTML-escaped in the page** (`&quot;imagePath&quot;`), so
+    a regex for `"imagePath"` matches nothing. Unescape before parsing.
+  - Tabelog links `640x640_rect_<hash>.jpg`. Strip that prefix to get
+    `<hash>.jpg`, the full-resolution original. The cropped one is useless for
+    reading a menu card.
+- **STUDIO CMS sites (`studio.design`) render nothing to curl but hand over the
+  whole menu.** Symptom: a tiny HTML shell with `__NUXT_DATA__` and
+  `api.studiodesignapp.com`, no text. Recipe:
+  1. `snapshot_path` is in the `__NUXT_DATA__` payload —
+     `https://storage.googleapis.com/studio-publish/projects/<proj>/<snap>/`.
+  2. `<snapshot_path>index.json` → `pages[]`, each with `id` (the URL path),
+     `uuid` and `symbolIds`.
+  3. `<snapshot_path>page-views/<page uuid>.json` and
+     `<snapshot_path>symbol-views/<symbol uuid>.json`.
+  4. Walk the JSON pulling keys `text`, `text0`…`textN` and `data`; strip tags.
+  The bucket refuses `objects.list`, and the file naming is not guessable — it
+  is `page-views/` and `symbol-views/`, which you find by grepping the Nuxt
+  bundle for `function fq(` / `function mq(`. hosa.nagoya's entire priced menu,
+  including three full kaiseki course compositions, came out this way.
+
+## More traps caught (Nagoya, 2026-08)
+
+- **The `website` field on a worklist record can be the wrong business.**
+  `shiboriya.com` is 「しぼりや旅館」, a ryokan in 南知多 an hour down the
+  peninsula — not しぼりや 丸の内店, the Nagoya fry shop. They are related (the
+  ryokan family opened the Nagoya shop in March 2026) which is exactly why the
+  domain looks right. Open the site and read its `<title>` before trusting it.
+- **Sushi/ramen shops with one dish still deserve an entry.** 拉麺しま sells
+  しょうゆらーめん and nothing else, in three sizes plus a pork upgrade. Six
+  honest items beat padding to hit a count.
+- **A chef's-omakase French house is not an honest empty.** Brillance posts one
+  course and a 70-bottle champagne list on its own (公式) Tabelog page, and a
+  dated 2026 review lists the ten plates one by one. Course price + drinks from
+  the shop's own listing = `authoritative`; label the plates clearly as one
+  seating's rotating line-up.

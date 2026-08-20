@@ -1,100 +1,18 @@
 [
  {
-  "id": "tokyo3_kamiya",
-  "from": "精進料理 大五",
-  "to": "精進料理 醍醐",
-  "confidence": "high",
-  "note": "NAME CORRECTION. The light record read 「精進料理 大五」. No restaurant of that name exists in Tokyo: 大五 and 醍醐 are both read *daigo*, and the only shōjin restaurant at Kamiyachō is 精進料理 醍醐 at Atago 2-3-1 — same station, same cuisine, same reading. Tabelog's nationwide search returns no 精進料理 大五. Treated as a transcription error and enriched as 醍醐; the coordinates given are Daigo's. Also note the light rec"
+  "id": "tokyo3__382",
+  "from": "鶏蕎麦 十番",
+  "to": "鶏そば十番156（ICHIKORO）",
+  "applied": false,
+  "confidence": "low",
+  "note": "NAME CORRECTION. The light record read 「鶏蕎麦 十番」 at Ebisu. No business of that bare name exists; the shop the name is a garbling of is 鶏そば十番156 (ICHIKORO), a chicken-paitan ramen bar. Two caveats that matter more than the correction: (a) the brand's home is Azabu-juban 2-1-10, Minato-ku, not Ebisu — the Ebisu branch (渋谷区恵比寿西1-7-5 篠崎ビル1F) exists only as a ZZZ-prefixed, i.e. deactivated, Uber Eats st"
  },
  {
-  "id": "tokyo3__117",
-  "from": "築地本院精進料理",
-  "to": "築地本願寺 日本料理 紫水",
+  "id": "tokyo3__407",
+  "from": "大坂屋 そば店",
+  "to": "虎ノ門 大坂屋 砂場",
+  "applied": true,
   "confidence": "medium",
-  "note": "NAME CORRECTION. The light record read 「築地本院精進料理」, which is not a business name — 本院 is a garbling of 本願寺. The entity that actually serves 精進料理 at Tsukiji Hongan-ji is 日本料理 紫水 in the temple's 第一伝道会館. Confidence is 'medium' because that identification is an inference, though a well-supported one; the coordinates are Shisui's and the original approximate pin was already within ~100 m of them."
- },
- {
-  "id": "tokyo3__6",
-  "from": "梅もと",
-  "to": "梅もと ヤエチカ店",
-  "confidence": "high",
-  "note": "CONFIRMED and pinned. The light record read only 「梅もと」 with a Yaesu / Tokyo Station neighborhood; the branch that matches is 梅もと ヤエチカ店 in the Yaechika underground arcade, and the name has been made specific. CATEGORY FLAG: filed as MOM_AND_POP, but Umemoto is a chain brand now owned and operated by ちよだ鮨 — 株式会社梅もと was absorbed on 1 October 2022 and no longer exists. Suggest recategorising as chain."
- },
- {
-  "id": "tokyo3__11",
-  "from": "とんかつ かつ芝",
-  "to": "とんかつ芝",
-  "confidence": "medium",
-  "note": "NAME CORRECTION. The light record read 「とんかつ かつ芝」 in 「中央区 丸の内」. No business called かつ芝 exists anywhere in Japan — a Yahoo Japan exact-phrase search for かつ芝 returns only the place panel for とんかつ芝 plus unrelated 芝海老かつ (shrimp cutlet) hits. とんかつ芝 is a real Tokyo tonkatsu shop and the near-exact name match, so the record has been re-pointed to it. NOTE FOR A HUMAN: this also moves the pin about 2.5 km"
- },
- {
-  "id": "tokyo3_o",
-  "from": "十割蕎麦酒場ちゃぼうず 大手町",
-  "to": "十割蕎麦酒場 ちゃぼうず 大手町店",
-  "confidence": "high",
-  "note": "CONFIRMED and pinned. The light record read 「十割蕎麦酒場ちゃぼうず 大手町」; the registered name is 十割蕎麦酒場 ちゃぼうず 大手町店 and the postal address is Marunouchi 1-1-3 (the Nippon Life Marunouchi Garden Tower), which is directly connected to Ōtemachi station — so the sweep's 'Otemachi' label is right even though the address says Marunouchi. GLUTEN FLAG for the merge: the light record inherited gf_confidence 'ask' and "
- },
- {
-  "id": "tokyo3_o_32",
-  "from": "そばと天ぷら 石楽 大手町店",
-  "to": "そばと天ぷら 石楽 大手町パークビルヂング",
-  "confidence": "high",
-  "note": "CONFIRMED and pinned, with a name correction of detail: the light record read 「そばと天ぷら 石楽 大手町店」; the registered name is そばと天ぷら 石楽 大手町パークビルヂング. GLUTEN FLAG: the light record's cuisine string called it 'stone-mill ground noodles' with gf 'ask'; the operator's own brand name is 石臼挽き二八そば — explicitly 20% wheat — so gf has been set to 'no'. CATEGORY FLAG: filed as MOM_AND_POP, but this is one of 46 rest"
- },
- {
-  "id": "tokyo3__39",
-  "from": "野田岩 日本橋高島屋特別食堂",
-  "to": "五代目 野田岩 日本橋高島屋特別食堂",
-  "confidence": "high",
-  "note": "CONFIRMED and pinned. The light record's name was right; it has been given the house's full trading name, 五代目 野田岩. The pin has moved: the sweep had 35.684/139.774, the real location is 35.680886/139.773156 (Nihonbashi Takashimaya main building, 8F). Two source conflicts are recorded rather than resolved — Takashimaya's own page says 本館 8F and 11:00–20:00 (L.O. 19:00) while Tabelog says 新館 and 11:0"
- },
- {
-  "id": "tokyo3_a_245",
-  "from": "浅草じゅらく",
-  "to": "浅草聚楽",
-  "confidence": "high",
-  "note": "NAME CORRECTION. The light record read 「浅草じゅらく」, the kana rendering; the business writes itself 浅草聚楽 (read アサクサジュラク) on its own site, its booking page and Tabelog. Confirmed at 台東区浅草1-23-9 on the Shin-Nakamise arcade; coordinates moved from the neighbourhood centroid (35.7118/139.7967) to the street address (35.712284/139.793780), cross-checked between Tabelog's geo and the GSI address geocoder (3"
- },
- {
-  "id": "tokyo3__255",
-  "from": "ときわ食堂",
-  "to": "浅草 ときわ食堂",
-  "confidence": "medium",
-  "note": "AMBIGUOUS RECORD — RESOLVED TO THE SURVIVING SHOP, NEEDS AN OWNER DECISION. The light record read 「ときわ食堂」 with the neighbourhood 「台東区合羽橋」. There were two candidates in Taito-ku and the Kappabashi one is dead: ときわ食堂 at 台東区西浅草2-23-8 (35.714173/139.789978), the shop Japanese bloggers write about as 「合羽橋ときわ食堂」/「浅草・合羽橋『ときわ食堂』」, is listed by Tabelog as 【閉店】 — permanently closed (tabelog 13077960). A thi"
- },
- {
-  "id": "tokyo3__266",
-  "from": "蔵前 肉乃大山",
-  "to": "肉の大山",
-  "confidence": "high",
-  "note": "NAME CORRECTION + LOCATION CORRECTION. The light record read 「蔵前 肉乃大山」 in 蔵前・浅草橋 with a 焼肉 genre. The business is 肉の大山 (の, not 乃), and it is not in Kuramae: it stands at 台東区上野6-13-2 by Ameyoko, 2.2 km from the sweep's pin. Coordinates moved from 35.7118/139.7967 to 35.710401/139.775251 (Tabelog geo; GSI address geocoder independently returns 35.710377/139.775269). The genre is also wrong — this is"
- },
- {
-  "id": "tokyo3__285",
-  "from": "六常庵",
-  "to": "蕎美季創 六常庵",
-  "confidence": "high",
-  "note": "CONFIRMED. The light record's name 六常庵 and its 千代田区 水道橋 neighbourhood are both correct; the full trading name is 蕎美季創 六常庵 and has been written into `name`. Coordinates replaced with the exact address (神田三崎町2-13-1 田辺ビル 1F). The light record's cuisine tag 手打ち蕎麦 is right but its implicit dietary reading is not — the shop states both its soba are 二八 (20% wheat), so gf moved ask→no and vegan limited→no"
- },
- {
-  "id": "tokyo3__294",
-  "from": "玉ひで",
-  "to": "鳥料理 玉ひで",
-  "confidence": "high",
-  "note": "LOCATION CORRECTION. The light record placed 玉ひで in 根津・千駄木, 3 minutes from Nezu station, at 35.722/139.766. It is not there and never has been: 鳥料理 玉ひで is at 中央区日本橋人形町1-17-10, 132 m from Ningyōchō station and about 2.1 km south-east of the light record's pin, confirmed by the shop's own site, its Tabelog listing and a Yahoo News report of the October 2025 reopening. Name and coordinates corrected;"
- },
- {
-  "id": "tokyo3__310",
-  "from": "トンテキ 新宿",
-  "to": "トンテキ食堂 なかむら",
-  "confidence": "medium",
-  "note": "NAME CORRECTION (inferential — flagging for the human pass). The light record read 「トンテキ 新宿」, which is a description, not a business name; no restaurant is registered under it. Tabelog's nationwide トンテキ search returns exactly one tonteki specialist anywhere in Shinjuku — トンテキ食堂 なかむら at 新宿3-3-9 伍名館 B1F, 120 m from Shinjuku-sanchōme — which matches the light record's cuisine (豚肉ステーキ) and its stated "
- },
- {
-  "id": "tokyo3__319",
-  "from": "新宿思い出横丁",
-  "to": "新宿西口思い出横丁",
-  "confidence": "medium",
-  "note": "CATEGORY FLAG — needs a human decision. 新宿西口思い出横丁 is real and correctly located, but it is a lane of ~80 businesses, not a single restaurant, and it is filed here as MOM_AND_POP with a name (「新宿思い出横丁」) that is the district rather than a shop. Either recategorise it as a district/area entry or delete it and replace it with specific tenants. Coordinates corrected from the neighbourhood centroid to t"
+  "note": "NAME CORRECTION — and a neighbourhood correction, which needs a human's eye. The light record read 「大坂屋 そば店」 at Azabu-juban. There is no 大坂屋 in Azabu-juban: the Azabu-juban Shopping Street Association's own member directory (398 shops, checked in full) contains no such name, and Yahoo Japan searches for 麻布十番 大坂屋 そば店 return the district's real soba houses (麻布永坂 更科本店, 永坂更科 布屋太兵衛 麻布総本店, 総本家 更科堀井) and"
  }
 ]

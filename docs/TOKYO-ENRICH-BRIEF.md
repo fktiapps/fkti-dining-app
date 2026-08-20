@@ -49,6 +49,20 @@ directly costs real restaurants their place in the app.
 **Never invent** a bio, a menu item, an address, a coordinate, or a safety assurance.
 An empty field always beats a plausible one. "Low confidence" is a good answer.
 
+## Say the verdict in a field, not only in prose
+
+Set **`status`** on every record — the merge reads it directly instead of parsing
+your note, which is far less fragile:
+
+`confirmed` · `probable` (found a plausible shop but nothing ties it to the light
+record) · `closed_permanently` · `not_found` · `mislocated` · `unresolved`
+
+If the shop is shut, add `closed_since` (permanent) or `reopens` (temporary, e.g.
+"end of October 2026") as plain strings. A **permanently closed** shop is hidden
+from the app; a **temporarily closed** one keeps its listing with a reopening badge,
+so the distinction matters. Still write the `enrich_note` — the status says what, the
+note says how you know.
+
 ## Fields (omit any you cannot evidence)
 
 `id` (unchanged, required) · `name` · `lat` · `lng` · `loc_precise` (true **only** with a

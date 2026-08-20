@@ -87,6 +87,25 @@ const drive = await page.evaluate(async () => {
   out.outsideText = (document.querySelector('.outside') || {}).textContent
     ? document.querySelector('.outside').textContent.trim().slice(0, 78) : '';
 
+  // Records the enrichment could not verify, could not place in this city, or found
+  // permanently shut must never reach the list. This is the check that matters most
+  // of the ones here: it is the difference between a hidden record and a traveller
+  // standing outside a shop that closed in 2020.
+  const tokyo = MANIFEST.cities.find(c => c.id === 'tokyo');
+  await ensureCity(tokyo);
+  state.active = 'tokyo';
+  render();
+  await sleep(1200);
+  const tp = state.cities.tokyo.places;
+  out.tokyoTotal = tp.length;
+  out.tokyoHidden = tp.filter(p => p.hidden).length;
+  const shownIds = new Set([...document.querySelectorAll('.card[data-id]')].map(e => e.dataset.id));
+  out.hiddenLeaked = tp.filter(p => p.hidden && shownIds.has(p.id)).length;
+  out.tokyoShown = shownIds.size;
+  state.active = 'nagano';
+  render();
+  await sleep(900);
+
   const withRamen = state.cities.nagano.places.find(p => p.ramen);
   if (withRamen) {
     try {
@@ -118,10 +137,12 @@ if (boot.bodyChars < 200) fail.push('page rendered almost no text');
 if (!boot.manifestLoaded) fail.push('MANIFEST did not load');
 if (boot.cityCount !== 9) fail.push('expected 9 cities, got ' + boot.cityCount);
 if (boot.placesLoaded < 100) fail.push('only ' + boot.placesLoaded + ' places for ' + boot.activeCity);
-if (boot.labelKeys < 28) fail.push('CUISINE_LABELS has ' + boot.labelKeys + ' entries, expected >= 28');
+if (boot.labelKeys < 29) fail.push('CUISINE_LABELS has ' + boot.labelKeys + ' entries, expected >= 29');
 if (rawSlugChips.length) fail.push('cuisine chips showing raw slugs: ' + rawSlugChips.join(', '));
 if (!drive.naganoPlaces) fail.push('city switch to nagano loaded no places');
 if (!drive.outsideBadges) fail.push('no outside_city badge rendered in nagano (9 records carry one)');
+if (!drive.tokyoHidden) fail.push('no hidden Tokyo records — the existence pass should have hidden some');
+if (drive.hiddenLeaked) fail.push(drive.hiddenLeaked + ' hidden record(s) rendered in the list');
 if (drive.detailError) fail.push('detail sheet threw: ' + drive.detailError);
 if (errors.length) fail.push(errors.length + ' console error(s)');
 if (failedRequests.length) fail.push(failedRequests.length + ' failed request(s)');

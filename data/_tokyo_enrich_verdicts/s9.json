@@ -1,0 +1,755 @@
+[
+ {
+  "id": "tokyo3__336",
+  "lat": 35.712,
+  "lng": 139.704,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop called そばの花 / 蕎麦の花 exists in Takadanobaba",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says 高田馬場 / around Takadanobaba Station (JR Yamanote, Seibu Shinjuku, Tozai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. Note that if it is a soba shop at all, the default answer in Japan is no: the tsuyu is wheat soy sauce and almost every neighbourhood soba shop cuts nihachi (20% wheat) and dusts the board with wheat flour.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified. The light record's 'vegan: limited' was inferred from the genre label 蕎麦 and is not supported by any source.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. No shop of this name operates in Takadanobaba. Tabelog's own Takadanobaba soba list (新宿区高田馬場のそば) returns nine shops — つけ蕎麦安土 高田馬場本店, 手打そば もり, 竹乃家, 手打蕎麦 nobu, 美濃屋文右衛門 高田馬場店, 名代 富士そば 高田馬場駅前店, 寿々木家, 松月庵, へぎそば 昆 高田馬場店 — and none of them is そばの花. The only Tokyo business ever listed under the name 蕎麦の花 is a Shimbashi shop that moved to 東京都港区麻布十番1-5-1 in February 2014 (its old listing is tagged 【移転】); it once served organic stone-ground soba and galettes with soy-based 'meat', but Tabelog now files the Azabu-juban address under 串揚げ (kushiage), so even that trail does not lead to a soba shop, and Azabu-juban is 8 km from Takadanobaba on the other side of the city. There is also a 油そば かつの花 in the Waseda/Takadanobaba ramen scene, which is abura-soba, not soba, and a different name.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for 「そばの花 高田馬場」, 「site:tabelog.com そばの花 東京」, 「site:tabelog.com 蕎麦の花 高田馬場」 and 「そば処 花 高田馬場 蕎麦」; Tabelog's Takadanobaba soba category page was fetched and read in full; the two Tabelog listings for 蕎麦の花 (Shimbashi 13165412, marked 【移転】, and Azabu-juban 13154966) were fetched directly and their addresses and genres read. Nothing places a そばの花 in Takadanobaba.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/C13104/C36239/rstLst/soba/",
+    "https://tabelog.com/tokyo/A1301/A130101/13165412/",
+    "https://tabelog.com/tokyo/A1307/A130702/13154966/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing honest can be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/C13104/C36239/rstLst/soba/",
+   "https://tabelog.com/tokyo/A1301/A130101/13165412/",
+   "https://tabelog.com/tokyo/A1307/A130702/13154966/"
+  ],
+  "enrich_note": "NOT FOUND. Searched Yahoo Japan for 「そばの花 高田馬場」, 「site:tabelog.com そばの花 東京」, 「site:tabelog.com 蕎麦の花 高田馬場」, 「そば処 花 高田馬場 蕎麦」 — all returned unrelated shops (神楽坂 坂の花, 北前そば 高田屋 麹町店, 油そば かつの花). Fetched Tabelog's full Takadanobaba soba list: nine shops, none named そばの花. Fetched both Tabelog listings for 蕎麦の花: Shimbashi (13165412, 【移転】 moved) and 麻布十番1-5-1 (13154966, now filed as 串揚げ) — 8 km from Takadanobaba and the wrong genre. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__344",
+  "lat": 35.712,
+  "lng": 139.704,
+  "loc_precise": false,
+  "address_ja": "〒604-8035 京都市中京区寺町三条下る — NOT Tokyo. This is 三嶋亭's head house.",
+  "enrich_confidence": "low",
+  "cuisine": "Meiji-era sukiyaki house — marbled beef cooked at the table in a machiya with a tsubo-niwa courtyard garden — but it is in Kyoto, not Takadanobaba",
+  "cuisine_type": "sukiyaki",
+  "neighborhood": "COULD NOT VERIFY any Tokyo location. The business is at Teramachi-Sanjō-sagaru, Nakagyō-ku, Kyoto — 8 min from Keihan Sanjō, 5 min from Kyoto Shiyakusho-mae on the Tōzai line.",
+  "website": "https://www.mishima-tei.co.jp/",
+  "menu_url": "https://www.mishima-tei.co.jp/shop/honten.html",
+  "hours_raw": "お料理 11時～21時（最終入店 20時）／精肉販売 9時～19時　定休日：火曜日・他不定休（祝日の場合は振替） — these are the Kyoto head shop's hours.",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "No gluten-free claim anywhere on the site. Sukiyaki warishita is soy sauce, mirin and sugar, and Japanese soy sauce is wheat by default, so a celiac would have to raise it directly. Not assessed further, because the record's location is wrong — see the note below before using anything here.",
+  "vegan_status": "no",
+  "vegan_detail": "A beef restaurant that also runs a retail butcher counter. The whole menu is sukiyaki and beef kaiseki, and the raw-egg dip is standard. There is nothing vegan here.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "五代目主人 (fifth-generation proprietor)"
+   ],
+   "origin": "Teramachi-Sanjō, Nakagyō-ku, Kyoto",
+   "background": "三嶋亭 was founded in 明治6年 (1873) and is one of the oldest sukiyaki houses in Japan; the site is written around the 五代目 (fifth-generation master), who keeps a personal Instagram and a 『五代目の想い ~Taro's Way~』 page. The building keeps a tsubo-niwa courtyard garden, a large tatami banquet room, and a ranma carving of 「鹿と紅葉」 by the late lacquer artist 番浦省吾; the shop says the decorative cherry wood in the rooms dates from the founding. None of this belongs to Tokyo. The company's own アクセス page lists exactly three shops — 本店 (寺町三条下る), 高島屋京都店 (下京区四条通河原町西入ル真町52) and 大丸京都店 (下京区四条通高倉西入ル立売西町79) — plus the sister restaurant 翁樹庵 (中京区麩屋町通三条上る油屋町87). Every one of them is in Kyoto. No Tokyo bio has therefore been written.",
+   "philosophy": "霜降りすき焼き京懐石 — marbled sukiyaki in the Kyoto kaiseki idiom, in a house kept much as it was at the founding.",
+   "specialty": "Table-side sukiyaki of marbled beef; beef kaiseki courses; a retail 精肉 (butcher) counter and bentō.",
+   "anecdotes": [],
+   "japanese_sources_summary": "mishima-tei.co.jp gives 創業明治6年, the head-shop address 〒604-8035 京都市中京区寺町三条下る, the phone 075-221-0003, the 11:00–21:00 / last entry 20:00 hours, the Tuesday closing, the 精肉販売 9:00–19:00 counter, and an アクセス page listing all three shops — all Kyoto. Tabelog files 三嶋亭 本店 under kyoto/A2601/A260201 (京都市役所前/すき焼き). A Yahoo Japan search for 「site:tabelog.com 三嶋亭 東京」 surfaced no Tokyo 三嶋亭; the closest Tokyo hit, Tabelog 13243707, is 『新宿 松阪牛 高級すき焼きと蟹 三嶋』 at 新宿区新宿3-21-4 第二サンパークビル3F — a different, unrelated shop whose name is 三嶋, not 三嶋亭, and which is an izakaya-style sukiyaki-and-crab place rather than a Meiji-era house.",
+   "confidence": "low",
+   "sources": [
+    "https://www.mishima-tei.co.jp/access/",
+    "https://www.mishima-tei.co.jp/shop/honten.html",
+    "https://tabelog.com/tokyo/A1304/A130401/13243707/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — record is mislocated",
+   "note": "Do not send anyone in Takadanobaba here. 三嶋亭 is a Kyoto institution with three shops, all of them in Kyoto, roughly 370 km from Shinjuku. The Tokyo pin has been left at its original approximate coordinates and loc_precise is false; the record should be deleted from the Tokyo dataset."
+  },
+  "sources": [
+   "https://www.mishima-tei.co.jp/",
+   "https://www.mishima-tei.co.jp/access/",
+   "https://www.mishima-tei.co.jp/shop/honten.html",
+   "https://tabelog.com/tokyo/A1304/A130401/13243707/"
+  ],
+  "enrich_note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. 三嶋亭 (founded 1873) is a Kyoto sukiyaki house; its own アクセス page lists its complete estate as 本店 (京都市中京区寺町三条下る), 高島屋京都店 and 大丸京都店, with the sister shop 翁樹庵 also in Kyoto. There is no Tokyo branch, and nothing of the name in Takadanobaba. The only Tokyo lookalike is 『新宿 松阪牛 高級すき焼きと蟹 三嶋』 (新宿区新宿3-21-4, Tabelog 13243707) — a different business with a different name. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__348",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop called 丸永 exists in Tokyo",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says 中野坂上駅 (Marunouchi / Toei Ōedo lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. No restaurant named 丸永 exists in Tokyo: the Tabelog listings that surface for those characters are in Saitama and Hokkaidō, while the Tokyo hits are all 丸長 — 丸長中華そば店 at 杉並区荻窪4-31-12 (marked 【閉店】) and つけそば 丸長 目白店 at 新宿区下落合3-19-4 — a different name and a tsukemen shop, not a soba house. The one shop near Nakano-sakaue that fits the record's genre is 自家製粉 手打そば 丸屋 (Maruya) at 東京都中野区中野1-5-5, 35.701562/139.678050, ten minutes' walk from Nakano-sakaue on the Marunouchi line and twelve from Higashi-Nakano; it mills its own buckwheat, opens 11:30–14:00 Monday to Saturday, closes Sundays, is cash only, all non-smoking, and runs about ¥1,000–1,999 for lunch (Tabelog 3.37 from 66 reviews, tel 03-3367-0688). 丸屋 differs from 丸永 by one character and is the likeliest thing the sweep meant, but nothing in any source connects the two names, so the record has not been renamed and the original approximate pin has been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for 「site:tabelog.com 蕎麦 丸永」 (returned Saitama and Hokkaidō only), 「丸永 蕎麦 中野坂上」 (returned 丸屋), 「\"丸永\" そば 東京都」 and 「site:tabelog.com 丸永 東京」 (returned 丸長 listings). The two Tokyo 丸長 pages and the 丸屋 page were fetched directly and their addresses, hours and coordinates read.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/13050342/",
+    "https://tabelog.com/tokyo/A1319/A131906/13013584/",
+    "https://tabelog.com/tokyo/A1305/A130502/13003851/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. If a human confirms that 丸永 is a garbling of 自家製粉 手打そば 丸屋, that shop is a small, cash-only, lunch-only counter — no English, no cards, and no gluten story worth relying on. Until then the record should be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/13050342/",
+   "https://tabelog.com/tokyo/A1319/A131906/13013584/",
+   "https://tabelog.com/tokyo/A1305/A130502/13003851/"
+  ],
+  "enrich_note": "NOT FOUND — needs a human. Searched Yahoo Japan for 「site:tabelog.com 蕎麦 丸永」 (only Saitama/Hokkaidō results), 「丸永 蕎麦 中野坂上」, 「\"丸永\" そば 東京都」 and 「site:tabelog.com 丸永 東京」 (only 丸長 results: 丸長中華そば店 荻窪 【閉店】, つけそば 丸長 目白店). No 丸永 exists in Tokyo. Nearest candidate, one character away and in the right place and genre: 自家製粉 手打そば 丸屋, 東京都中野区中野1-5-5, 35.701562/139.678050, 中野坂上駅徒歩10分, 11:30–14:00 Mon–Sat, closed Sun, cash only (Tabelog 13050342). Not renamed, because no source links the two names. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__351",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 中野の台所 could be found in Nakano",
+  "cuisine_type": "teishoku",
+  "neighborhood": "Unverified. The light record says 中野駅南口 (Nakano Station south exit, JR Chūō / Sōbu and Tōzai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 「中野の台所」 appears on the web almost entirely as a phrase rather than a shop name — 'Nakano's kitchen', used of the old market quarter around Nakano Broadway. The only businesses using it are a bentō-delivery service (lunchfactory.jp) and 「みんなの台所 中野屋」, which is at 北九州市小倉南区徳吉1-1-9 in Fukuoka Prefecture, 1,000 km away, and whose own site was fetched to confirm that address. Tabelog's full teishoku/shokudō list for Nakano Station was read and contains no 中野の台所; the shops there are 桃園食堂 本丸, 三好弥, 美華, やまねこ亭, わしや・ごはん処, レストラン憩, 丸子亭, 食堂 高ひろ 中野店 and a run of chains. Rather than pin the record on a guess, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for 「中野の台所 中野駅 定食」, 「中野の台所 中野 定食 食堂」 and the exact phrase 「\"中野の台所\"」; Tabelog's 中野駅 定食・食堂 category list was fetched and read in full; kitchen-nakanoya.com was fetched and gives a Kitakyushu address.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/R7049/rstLst/teishoku/",
+    "https://kitchen-nakanoya.com/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing honest can be said about the door. Recommend the record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/R7049/rstLst/teishoku/",
+   "https://kitchen-nakanoya.com/"
+  ],
+  "enrich_note": "NOT FOUND. Searched Yahoo Japan for 「中野の台所 中野駅 定食」, 「中野の台所 中野 定食 食堂」 and the exact phrase 「\"中野の台所\"」 — the phrase is used descriptively of the Nakano Broadway market quarter, plus a bentō delivery service; the only business with a similar name, 「みんなの台所 中野屋」, is in Kitakyushu, Fukuoka (site fetched, 北九州市小倉南区徳吉1-1-9). Fetched Tabelog's complete 中野駅 定食・食堂 list: no 中野の台所. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__353",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no mazesoba shop named 次郎坂 could be found anywhere in Japan",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 中野坂上駅 (Marunouchi / Toei Ōedo lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed as a specific business, but the genre answers itself: mazesoba is a wheat-flour ramen noodle served without soup in a wheat soy-sauce tare. Whatever shop this record is reaching for, it is not gluten-free.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed as a specific business. Mazesoba is built on pork or chicken tare, minced pork and egg yolk; the genre is a no.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. A nationwide search on 次郎坂 returns the Kumano Kodō trail section 曽根次郎坂・太郎坂 in Mie Prefecture and a Tokyo skewer restaurant called 次郎：坂の上の福 in Shimura-Sakaue (Itabashi) — a different name, a different genre and a different station. Tabelog's own 油そば・まぜそば and 台湾まぜそば lists for Nakano-sakaue were read and contain ラーメン天華, 中華そば 千波, 坂上刀削麺 and 東京煮干屋本舗 中野本店, none of which is 次郎坂. It is possible the sweep collided 「坂上」 (Sakaue, from 中野坂上) with a shop name; nothing confirms it, so the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for the exact phrase 「\"次郎坂\" まぜそば」 and 「site:tabelog.com 中野坂上 まぜそば」. The second returned Tabelog's Nakano-sakaue abura-soba/mazesoba and Taiwan-mazesoba category pages, which were read.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131903/R7059/rstLst/MC0131/",
+    "https://tabelog.com/tokyo/A1319/A131903/R7059/rstLst/MC0132/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend the record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131903/R7059/rstLst/MC0131/",
+   "https://tabelog.com/tokyo/A1319/A131903/R7059/rstLst/MC0132/"
+  ],
+  "enrich_note": "NOT FOUND. Searched Yahoo Japan for 「\"次郎坂\" まぜそば」 (returns the Kumano Kodō trail 曽根次郎坂・太郎坂 in Mie, and 次郎：坂の上の福, a skewer shop in Shimura-Sakaue, Itabashi) and 「site:tabelog.com 中野坂上 まぜそば」; read Tabelog's Nakano-sakaue 油そば・まぜそば and 台湾まぜそば lists — the shops there are ラーメン天華, 中華そば 千波, 坂上刀削麺, 東京煮干屋本舗 中野本店. No 次郎坂 anywhere. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__357",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no oden shop or shokudō named 小田商店 could be found in Nakano",
+  "cuisine_type": "oden",
+  "neighborhood": "Unverified. The light record says 中野駅南口 (Nakano Station south exit).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. For context, oden is one of the harder Japanese dishes for a celiac anyway: the broth is soy-sauce based, and 竹輪, 薩摩揚げ and はんぺん commonly carry wheat starch or flour.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified. Oden broth is katsuo-and-kombu dashi as a rule, so the light record's 'vegan: limited' is an assumption, not a finding.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The 小田商店 businesses that exist are elsewhere: 有限会社 小田商店 at 千葉県千葉市若葉区千城台南4-4-1 (a sake retailer, confirmed on the 宮寒梅 brewery's dealer list), a Kumamoto karashi-renkon maker trading as 株式会社小田商店, and shops of the name in Kyoto and Kobe. Tabelog's own oden list for Nakano Station was read in full and contains no 小田商店. The record's name also carries the prefix 「個人店」 ('independent shop'), which reads like a descriptor the sweep glued onto the name rather than part of it. Rather than pin the record on a guess, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for 「\"小田商店\" 中野 おでん」, 「site:tabelog.com 小田商店 東京」 and 「\"小田商店\" 東京都中野区」. The 宮寒梅 dealer list was fetched and gives the only well-documented 小田商店 as a Chiba sake shop; the same list's only Nakano-ku entry is 株式会社柴田屋酒店 at 中野区中央5-3-11. Tabelog's 中野駅 おでん category list was fetched and read.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/R7049/rstLst/oden/",
+    "http://miyakanbai.com/%E5%8F%96%E6%89%B1%E5%BA%97/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing honest can be said about the door. Recommend the record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/R7049/rstLst/oden/",
+   "http://miyakanbai.com/%E5%8F%96%E6%89%B1%E5%BA%97/"
+  ],
+  "enrich_note": "NOT FOUND. Searched Yahoo Japan for 「\"小田商店\" 中野 おでん」, 「site:tabelog.com 小田商店 東京」 and 「\"小田商店\" 東京都中野区」 — every documented 小田商店 is elsewhere (有限会社小田商店, 千葉市若葉区千城台南4-4-1; a Kumamoto karashi-renkon maker; shops in Kyoto and Kobe). Fetched Tabelog's complete 中野駅 おでん list: no 小田商店. Fetched the 宮寒梅 dealer directory: its only Nakano-ku entry is 柴田屋酒店, 中野区中央5-3-11. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__369",
+  "name": "蕎麦 神山",
+  "lat": 35.663369,
+  "lng": 139.694797,
+  "loc_precise": true,
+  "address_ja": "〒150-0047 東京都渋谷区神山町10-8",
+  "enrich_confidence": "high",
+  "cuisine": "Hidden hand-cut soba house in the back streets of Oku-Shibuya: buckwheat stone-milled every morning and cut behind glass, seiro at lunch for around ¥1,000–2,000, and reservation-only soba-kaiseki courses at ¥5,500 / ¥7,700 / ¥11,000 in the evening, with roughly fifty sake",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Kamiyama-chō 10-8 in Oku-Shibuya, a residential lane behind Bunkamura — 684 m from Shinsen (Keiō Inokashira line), about 10–12 min on foot from Shibuya Station",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "月・火・水・木・金 12:00-14:00／17:30-21:30（L.O. 21:00）　土 12:00-20:00　日・祝日 定休　※夜は前日までの予約制・コースのみ（5,500円／7,700円／11,000円、2名様から）／土曜日のみ予約不可・蕎麦無くなり次第閉店",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "No gluten-free claim of any kind, and wheat is unavoidable. The shop's booking copy says 十割蕎麦を毎朝石臼挽き — juwari, 100% buckwheat in the dough — but juwari is not gluten-free in a Japanese soba shop: the board is dusted with 打ち粉 and the tsuyu is ordinary wheat soy sauce, with no gluten-free tamari named anywhere. The evening courses also carry tempura (reviewers who arrive unbooked report being asked 「天ぷらはないけどいいですか？」, i.e. tempura is a booked-course item), and the 板わさ kamaboko served as a shokuzen plate is a fish cake that usually carries wheat starch. Treat this as a no.",
+  "vegan_status": "no",
+  "vegan_detail": "The tsuyu and the soba-yu service are built on bonito dashi, and the house dish is 牛すじ肉の蕎麦湯抜き — beef tendon simmered three days in soba-boiling water, which means the soba water itself is not neutral here. The course format is a soba-ya kaiseki with fish, egg (甘い卵焼き is a standard shokuzen plate) and meat throughout. There is no vegan set and no plant-based tsuyu.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "owner-chef (name not published on any source that could be opened)"
+   ],
+   "origin": "Kamiyama-chō, Shibuya-ku",
+   "background": "The shop opened on 1 April 2006 and appears on Tabelog under the earlier name 清山 (Kiyoyama) before becoming 神山, taking the name of the street it stands on. It is a deliberately hard-to-find room: reviewers describe it as 「渋谷の最奥、神泉からもほど近い住宅街の路地にひっそりと佇む」 — a lane in the residential far end of Shibuya near Shinsen — and as a long-standing fixture of the 奥渋 (Oku-Shibuya) scene. Twenty seats over two floors (a basement counter of fourteen plus private rooms, and a first floor of eighteen when both are open; Hot Pepper currently lists twelve seats and first-floor-only service), with two half-private rooms and one six-seat private room, all non-smoking, free Wi-Fi. The buckwheat is domestic and stone-milled on the premises each morning, and the cutting is done behind glass so guests can watch powder become noodle; the water used for the dough and the boil is spring water from Mt Haruna in Gunma. Alongside the soba the kitchen runs a three-day beef-tendon simmer finished in soba-yu, and the cellar holds around fifty sake plus craft beer and a house shōchū blend. The room doubles as a rental photography studio through CFAC (¥10,000/hr stills, ¥15,000/hr video), which is how much of the room description reaches the web. No chef's name is published on any source that could be opened, so none has been invented.",
+   "philosophy": "A soba house as a quiet room away from Shibuya — 隠れ家 (hideaway) framing, own-milled buckwheat, and soba as the finish to a drinking course rather than a quick lunch.",
+   "specialty": "せいろ (plain cold soba with tsuyu); 牛すじ肉の蕎麦湯抜き, beef tendon simmered three days in soba-boiling water; reservation-only evening courses at ¥5,500 / ¥7,700 / ¥11,000; about fifty Japanese sake.",
+   "anecdotes": [
+    {
+     "text": "Turn up in the evening without a booking and the greeting is a negotiation: reviewers report being asked 「予約なしだったので、天ぷらはないけどいいですか？」 — 'you have no reservation, so there's no tempura, is that all right?' — before being seated.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13022696/"
+    },
+    {
+     "text": "The noodles are cut behind glass and the buckwheat is stone-milled each morning; the shop uses spring water from Mt Haruna for the dough and the boil.",
+     "source": "https://www.hotpepper.jp/strJ001128325/"
+    },
+    {
+     "text": "The room is let out as a photo studio when it is not serving — ¥10,000 an hour for stills, ¥15,000 for video, 10:00–22:00, with a surcharge if normal service has to stop.",
+     "source": "https://kamiyama.mystrikingly.com/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13022696 gives the address 東京都渋谷区神山町10-8, the coordinates 35.663369/139.694797, the phone 03-3460-0088, the 2006-04-01 opening date, the former name 清山, the weekday 12:00–14:00 / 17:30–21:30 and Saturday 12:00–20:00 hours, the Sunday/holiday closure, the course prices ¥5,500/¥7,700/¥11,000 with a two-person minimum, the note that Saturday takes no bookings and closes when the soba runs out, plus 20 seats, private rooms, all non-smoking, cards/IC/PayPay accepted and a 10% service charge. Hot Pepper strJ001128325 adds the stone-milled domestic buckwheat, the Mt Haruna spring water, the 牛すじ肉の蕎麦湯抜き, the ~50 sake and a lower course tier (¥4,400/¥6,600/¥9,900) — the two price sets disagree, so the Tabelog figures are used and the Hot Pepper ones noted. kamiyama.mystrikingly.com is the shop's studio-rental page and describes the two floors and seat counts. The domain www.soba-kamiyama.com, cited by that page as the restaurant's site, now serves a parked ad page and is not usable as a source, so no website has been recorded.",
+   "confidence": "medium",
+   "sources": [
+    "https://tabelog.com/tokyo/A1303/A130301/13022696/",
+    "https://www.hotpepper.jp/strJ001128325/",
+    "https://kamiyama.mystrikingly.com/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Soba is cut on a board dusted with 打ち粉 and boiled in shared water; tempura runs on the booked courses. Nothing here is protected from wheat.",
+     "source": "https://www.hotpepper.jp/strJ001128325/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The tsuyu is a conventional soba-shop dipping sauce; no gluten-free tamari is named anywhere. Assume wheat in every sauce and simmered dish.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13022696/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Bonito dashi in the tsuyu, egg in the 卵焼き, and the house braise is beef tendon cooked in the soba water itself — the soba-yu poured at the end of the meal is not a neutral liquid here.",
+     "source": "https://www.hotpepper.jp/strJ001128325/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Evening service is booked-course-only for two or more, so dietary questions can be raised at the time of booking rather than at the door.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13022696/"
+    },
+    {
+     "text": "All seats non-smoking; cards (VISA/Master/JCB/AMEX/Diners), transport IC and PayPay accepted; free Wi-Fi; private and half-private rooms for 2 and 6. Children of primary-school age and up are accepted with one order each.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13022696/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Moderate",
+   "note": "A composed, modern room rather than a tourist door, and it takes a little planning. Lunch (12:00–14:00) is the easy entry: a seiro and a beer, walk-in. Evenings are reservation-only, courses only, two people minimum, with a 10% service charge and a 10% private-room charge on top — so a solo traveller cannot simply turn up after 17:30. No English menu is documented and there is no working shop website (the domain the studio page cites is now a parked ad page), so booking is by phone in Japanese on 03-3460-0088 or through Tabelog's online reservation. Cards, Suica and PayPay all work, and everything is non-smoking. Closed Sundays and public holidays; Saturday is walk-in only and closes when the soba runs out."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13022696/",
+   "https://www.hotpepper.jp/strJ001128325/",
+   "https://kamiyama.mystrikingly.com/"
+  ],
+  "enrich_note": "CONFIRMED. Real shop; exact address and coordinates now set from Tabelog (東京都渋谷区神山町10-8, 35.663369/139.694797). Two caveats for the merge: (1) course prices disagree between Tabelog (¥5,500/¥7,700/¥11,000) and Hot Pepper (¥4,400/¥6,600/¥9,900) — Tabelog's are used; (2) the record's gf/vegan tiers have been downgraded from the sweep's 'ask/limited' to 'no/no' — the shop cuts juwari but the tsuyu is wheat soy sauce, the courses carry tempura, and the signature braise is beef simmered in the soba water. No chef name is published anywhere that could be opened, so chef_name is left null."
+ },
+ {
+  "id": "tokyo3__370",
+  "name": "福田屋",
+  "lat": 35.659792,
+  "lng": 139.697628,
+  "loc_precise": true,
+  "address_ja": "〒150-0043 東京都渋谷区道玄坂2-25-15 福田ビル 2F",
+  "enrich_confidence": "high",
+  "cuisine": "A 1952 neighbourhood soba house up a stair off Dōgenzaka: forty seats, greenery through the windows, and a long machi-soba card from のりかけせいろ at ¥1,100 to 天ちらせいろ at ¥2,600 — lunch only now, cash only",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Dōgenzaka 2-25-15, in the Dōgenzaka-kōji lane behind the Yamada Denki building — 351 m from Shibuya Station, 3 min from the Keiō Inokashira west exit and from the Hanzōmon / Den-en-toshi exits, 6 min from JR",
+  "website": null,
+  "menu_url": "https://tabelog.com/tokyo/A1303/A130301/13001915/dtlmenu/",
+  "hours_raw": "月・火・水・木・金・土 11:00-14:30　日・祝日 定休　※店主がご高齢のため、夜の営業は止めてランチのみになりました",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat is structural and there is no gluten-free claim. This is a conventional Tokyo machi-soba: the tsuyu is wheat soy sauce (no tamari named anywhere), the board is dusted with 打ち粉, and the card is built around tempura — 天ちらせいろ ¥2,600, 天せいろ ¥2,000, かき揚げせいろ ¥1,700, カレー南蛮そば ¥1,700, all battered or roux-thickened. Even the plainest せいろ is dipped in wheat. There is nothing here for a celiac.",
+  "vegan_status": "no",
+  "vegan_detail": "The tsuyu is a bonito dashi and it is on every dish, hot and cold; 玉子とじ, 鴨せいろ, とり団子せいろ and 納豆そば run through the card, and the fryer handles prawn, squid and vegetables together. 野菜天せいろ (¥1,700) and the seasonal 冷やしなすそば (¥1,500, April–October) are vegetable dishes on paper, but they are still served with the fish-dashi tsuyu and out of a shared fryer, so they are not vegan.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "owner-proprietor (name not published; now elderly)"
+   ],
+   "origin": "Dōgenzaka, Shibuya-ku",
+   "background": "福田屋 opened in 1952 and has held the same lane in Dōgenzaka ever since, through every rebuild of Shibuya around it — it now sits on the second floor of the Fukuda Building, the family's own block, up a stair off Dōgenzaka-kōji behind Yamada Denki. Forty seats over two-tops, four-tops and one large communal table; windows that look onto greenery, which local write-ups repeatedly call 都会のオアシス, an urban oasis a hundred metres from the Shibuya scramble; all non-smoking, with a smoking spot outside; no cards, no e-money, no QR payment, cash only. What is worth knowing before planning a trip is that the shop has contracted: 「店主がご高齢のため、夜の営業は止めてランチのみになりました」 — the proprietor is elderly, so evening service has been dropped and it now opens only 11:00–14:30, Monday to Saturday. The card is still a full machi-soba card of about seventy-four dishes, priced ¥1,100–¥2,600, and Tabelog's menu page was last updated in May 2026, so it is current. Neither the proprietor's name nor the family line is published on any source that could be opened; no bio has been invented for them.",
+   "philosophy": "Not stated by the shop. What the sources show is a plain, consistent machi-soba kitchen — the local write-ups keep using the phrase 安定のクォリティ, 'the reliable quality', of a shop that has been doing the same thing since 1952.",
+   "specialty": "天ちらせいろ ¥2,600 (two prawns, squid, vegetables); 天せいろ ¥2,000; かき揚げせいろ / かき揚げそば ¥1,700; 鴨せいろ ¥1,700; 冷やしたぬきそば ¥1,300; 巣ごもりそば ¥1,500; seasonal 冷やしなすそば ¥1,500 (April–October).",
+   "anecdotes": [
+    {
+     "text": "The shop dates itself to 1952 — a local write-up marks it as the year Yoshio Shirai became Japan's first world boxing champion — and it is still in the family building, 福田ビル, that carries its name.",
+     "source": "https://soba-aqua.com/fukudaya-shibuya/"
+    },
+    {
+     "text": "Evening service has been given up because the proprietor is now elderly; the shop runs lunch only, 11:00 to 14:30.",
+     "source": "https://soba-aqua.com/fukudaya-shibuya/"
+    },
+    {
+     "text": "Forty seats with a view of greenery through the windows, three minutes from the Shibuya scramble.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13001915/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13001915 gives the address 東京都渋谷区道玄坂2-25-15 福田ビル2F, the coordinates 35.659792/139.697628, the phone 03-3476-6437, the 1952 opening year, the 11:00–14:30 Monday–Saturday hours with Sunday and public holidays closed, 40 seats (2×2, 4×7 and a large table), all non-smoking with an outdoor smoking spot, cash only, no private room, no group bookings, and a ¥1,000–¥1,999 budget; its menu page (updated 2026-05-22) carries the full priced card quoted above. Hot Pepper strJ000613385 repeats the address and the walking times. soba-aqua.com's visit report supplies the 1952 dating, the switch to lunch-only because the proprietor is elderly, and the ¥1,300 冷やしなすそば as ordered. No shop website exists.",
+   "confidence": "medium",
+   "sources": [
+    "https://tabelog.com/tokyo/A1303/A130301/13001915/",
+    "https://tabelog.com/tokyo/A1303/A130301/13001915/dtlmenu/",
+    "https://soba-aqua.com/fukudaya-shibuya/",
+    "https://www.hotpepper.jp/strJ000613385/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Soba and udon come off the same card and the same boil, and the tempura fryer runs through the whole service. Wheat is in the tsuyu regardless.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13001915/dtlmenu/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "A 1952 machi-soba tsuyu — soy sauce, mirin, dashi. No gluten-free tamari is named on the menu or anywhere else, so assume wheat in every bowl and every dipping cup.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13001915/dtlmenu/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Bonito dashi in every tsuyu; duck, chicken-meatball, egg and natto dishes on the same card; prawn and squid through the same fryer as the vegetable tempura.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13001915/dtlmenu/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "All seats non-smoking (the smoking spot is outside the shop), 40 seats with room to sit rather than a stand-up counter, and a quiet lane rather than the Dōgenzaka crowd.",
+     "source": "https://tabelog.com/tokyo/A1303/A130301/13001915/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Moderate",
+   "note": "An old-Shibuya lunch counter, welcoming but unadapted. Cash only — no cards, no IC, no QR — so bring yen. No English menu is documented and no shop website exists; the card is Japanese, and Tabelog's photographed menu page is the practical way to choose before you go. Open 11:00–14:30 only, Monday to Saturday; closed Sundays and public holidays, and closed every evening since the proprietor stopped running dinner. Forty seats and no group reservations, so at 12:30 on a weekday expect to queue. Second floor, up a stair — not step-free. The compensations are real: three minutes from Shibuya Station, non-smoking, calm, green out of the window, and ¥1,100–¥2,000 will feed you well."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13001915/",
+   "https://tabelog.com/tokyo/A1303/A130301/13001915/dtlmenu/",
+   "https://soba-aqua.com/fukudaya-shibuya/",
+   "https://www.hotpepper.jp/strJ000613385/"
+  ],
+  "enrich_note": "CONFIRMED. Real shop; exact address and coordinates set from Tabelog (東京都渋谷区道玄坂2-25-15 福田ビル2F, 35.659792/139.697628). Two things a human should know: the shop is lunch-only now (11:00–14:30) because the proprietor is elderly, so any evening listing would be wrong; and it is cash-only on a second floor with no lift. gf/vegan tiers downgraded from the sweep's 'ask/limited' to 'no/no' — bonito tsuyu on everything and a tempura-led card. No proprietor's name is published anywhere, so chef_name is left null."
+ },
+ {
+  "id": "tokyo3__373",
+  "lat": 35.665,
+  "lng": 139.712,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba restaurant named 神田 exists near Aoyama-itchome",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says 青山一丁目駅 (Ginza, Hanzōmon and Toei Ōedo lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and the name looks like a place rather than a shop. 神田 is a district on the other side of central Tokyo, about 4 km from Aoyama-itchome, and every 老舗 soba result for those characters belongs to it — かんだやぶそば (founded 1880, the oldest surviving Yabu), 神田まつや, 神田 味喜庵. Nothing named 神田 trades as a soba shop in Minato-ku. The soba shops actually at or near Aoyama-itchome and Omotesandō are 青山 川上庵, 手打 しまだ, おそば 古道, 蕎麦青乃, しろう, 蕎麦きり みよた, ひごの屋 青山本店 and the juwari specialist 十割蕎麦 否否三杯; there is also a Michelin-starred kaiseki restaurant read 「かんだ」 in Moto-Azabu, but it is Japanese kaiseki, not soba, and not in Aoyama. The likeliest reading is that the sweep captured the words 神田 and 老舗蕎麦 from a Kanda soba article and attached them to an Aoyama centroid. Rather than pin the record on a guess, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for 「蕎麦 神田 青山一丁目 老舗」 (returned only Kanda-district shops plus 十割蕎麦 否否三杯 at Aoyama-itchome) and 「site:tabelog.com そば 神田 港区 赤坂 青山」 (returned only Tabelog's Minato-ku / Kita-Aoyama / Minami-Aoyama soba category pages, with no shop of the name). Tabelog's Aoyama–Omotesandō soba category list was fetched and read in full.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1306/A130602/R6875/rstLst/soba/",
+    "https://tabelog.com/tokyo/C13103/rstLst/soba/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing honest can be said about the door. Recommend the record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1306/A130602/R6875/rstLst/soba/",
+   "https://tabelog.com/tokyo/C13103/rstLst/soba/"
+  ],
+  "enrich_note": "NOT FOUND. Searched Yahoo Japan for 「蕎麦 神田 青山一丁目 老舗」 and 「site:tabelog.com そば 神田 港区 赤坂 青山」; read Tabelog's Aoyama/Omotesandō soba list in full. Every 老舗 soba result named 神田 is in the Kanda district 4 km away (かんだやぶそば 1880, 神田まつや, 神田 味喜庵); no shop of that name trades in Minato-ku. Probable artefact of the sweep pairing a Kanda soba article with an Aoyama centroid pin. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_a_378",
+  "lat": 35.665,
+  "lng": 139.712,
+  "loc_precise": false,
+  "address_ja": "〒520-0113 滋賀県大津市坂本4-11-40 — NOT Tokyo. This is the only 鶴喜 hand-cut soba house left.",
+  "enrich_confidence": "low",
+  "cuisine": "A 300-year soba house at the foot of Mt Hiei, purveyor to Enryaku-ji — nihachi soba and a sweet kaeshi carried in the same pot since the Edo period — but it is in Sakamoto, Ōtsu, Shiga, not in Aoyama",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "COULD NOT VERIFY any Tokyo location. 手打蕎麦 鶴屋喜八 (本家鶴喜そば) is at Sakamoto 4-11-40, Ōtsu, Shiga; the separate 鶴喜そば製菓 company runs shops at Karasaki (Ōtsu), Yamashina (Kyoto) and two on Mt Hiei.",
+  "website": "https://www.tsurukisoba.com/",
+  "menu_url": null,
+  "hours_raw": "営業時間 11:00～16:00（L.O.15:30）　定休日 1/26、2/16、3/23、4/20、5/25、6/29、7/27、8/24・25、10/26、12/21 — these are the Shiga head shop's hours.",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not gluten-free, and the shop says so itself: 「江戸時代の蕎麦の継承をしているため二八蕎麦です」 — it cuts nihachi, 80% buckwheat to 20% wheat, and specifies that both the buckwheat and the wheat are domestically grown. The tsuyu is a 300-year-old sweet kaeshi built on soy sauce. Not assessed further, because the record's location is wrong.",
+  "vegan_status": "no",
+  "vegan_detail": "The tsuyu is a soy-and-dashi kaeshi and the card is a general soba-house card. Nothing published suggests a plant-based option. Not assessed further, because the record's location is wrong.",
+  "chef_bio": {
+   "chef_name": "上延昌洋 (Masahiro Jōen)",
+   "roles": [
+    "代表取締役社長, 株式会社 本家つる㐂 (ninth generation)"
+   ],
+   "origin": "Sakamoto, Ōtsu, Shiga — at the foot of Mt Hiei",
+   "background": "The house dates itself to 享保元年 (1716), when a man called 鶴屋喜八 opened a soba shop in the village of Sakamoto below Enryaku-ji; the shop's name is his. Because Enryaku-ji's abbots were imperial princes, the family were called up the mountain to make soba for visitors from the Kyoto Gosho, and the shop still trades on being 延暦寺御用達 and, through that connection, 宮家御用達. The ninth-generation president, 上延昌洋, writes that he learned to cut soba at the same 手打台 that has stood there since 1716, as the eighth-generation chairman did before him and as the tenth-generation cutter does now, and that he does the gift wrapping and the garden sweeping himself at night so that hand-cutting is never squeezed. In 2025 he finished a six-year project to reproduce the shop's soba as a dried noodle for elderly regulars and for children who had moved to Tokyo and could not get home. Two separate companies now carry the 鶴喜 name: 株式会社本家つる㐂 (手打蕎麦 鶴屋喜八), which consolidated its branches and states 「支店統合し、現在は一店舗のみで経営しております」 — one shop only, in Sakamoto; and 鶴喜そば製菓株式会社 at 坂本2-12-33, whose four outlets are Karasaki, Yamashina in Kyoto, and two on Mt Hiei at the Daikōdō and the Warōdō. Neither has a Tokyo shop. An Akasaka branch is remembered in old blog and video material, but it is gone, and no current source places any 鶴喜 in Tokyo. All of this belongs to Shiga, so it has not been written up as a Tokyo bio.",
+   "philosophy": "手打の統一 — one shop, so that every noodle is cut by hand on the founding board; three hundred years of the same sweet kaeshi kept in the same pot.",
+   "specialty": "Nihachi hand-cut soba from domestic buckwheat and domestic wheat; the house sweet kaeshi tsuyu; a dried-noodle gift set launched in 2025.",
+   "anecdotes": [
+    {
+     "text": "The dried-noodle project began with a customer's letter: elderly parents still living in Sakamoto, children in Tokyo, and no way to hand over Tsuruki's soba on a flying visit a month before New Year — the shop could not sell its hand-cut soba because it does not keep overnight.",
+     "source": "https://www.tsurukisoba.com/info/1172/"
+    },
+    {
+     "text": "For the packaging, the president asked the Shiga calligrapher Shūren to write the two characters 手打 — but first sat her in front of the family's butsudan to hear the three-hundred-year oral history after a reading of the Heart Sutra.",
+     "source": "https://www.tsurukisoba.com/info/1172/"
+    }
+   ],
+   "japanese_sources_summary": "tsurukisoba.com (株式会社本家つる㐂) gives the address 滋賀県大津市坂本4-11-40, the phone 077-578-0002, the 11:00–16:00 hours and the dated closing days, the president's name 上延昌洋, the 享保元年 founding, the 延暦寺御用達 / 宮家御用達 claim, the nihachi statement 「江戸時代の蕎麦の継承をしているため二八蕎麦です」, and the flat statement that the company consolidated its branches and now runs one shop only. tsurukisoba.co.jp (鶴喜そば製菓株式会社, 坂本2-12-33) is the separate confectionery/restaurant company; its shop guide lists 唐崎店 (大津市唐崎1-23-1), 山科店 (京都市山科区小山北溝町1), 比叡山店 大講堂 and 比叡山店 和労堂 (both 大津市坂本本町4220). Tabelog files 鶴喜/鶴屋喜八 under shiga/A2501/A250101 (坂本比叡山口) and kyoto/A2601. Yahoo Japan searches for 「鶴喜蕎麦 東京」, 「鶴喜そば 東京 支店 出店」 and 「鶴喜そば 赤坂店 閉店」 produced no operating Tokyo shop.",
+   "confidence": "medium",
+   "sources": [
+    "https://www.tsurukisoba.com/info/1172/",
+    "https://tsurukisoba.co.jp/",
+    "https://tsurukisoba.co.jp/shopguide/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — record is mislocated",
+   "note": "Do not send anyone in Aoyama here. Every 鶴喜 soba shop is in Shiga or Kyoto — the hand-cut head shop in Sakamoto, Ōtsu, and the four 鶴喜そば製菓 outlets at Karasaki, Yamashina and on Mt Hiei — roughly 400 km from Aoyama-itchome. An Akasaka branch existed at some point in the past and is closed. The Tokyo pin has been left at its original approximate coordinates and loc_precise is false; the record should be deleted from the Tokyo dataset."
+  },
+  "sources": [
+   "https://www.tsurukisoba.com/info/1172/",
+   "https://tsurukisoba.co.jp/",
+   "https://tsurukisoba.co.jp/shopguide/"
+  ],
+  "enrich_note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. 鶴喜/鶴屋喜八 (founded 1716, purveyor to Enryaku-ji) is a Shiga business. Its own site states 「支店統合し、現在は一店舗のみで経営しております」 with the address 滋賀県大津市坂本4-11-40; the separate 鶴喜そば製菓 company's shop guide lists four outlets, all in Shiga or Kyoto. Yahoo Japan searches on 「鶴喜蕎麦 東京」, 「鶴喜そば 東京 支店 出店」 and 「鶴喜そば 赤坂店 閉店」 surfaced only a defunct Akasaka branch in old blog/video material — nothing operating in Tokyo, and nothing in Aoyama. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_a_380",
+  "lat": 35.665,
+  "lng": 139.712,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tempura restaurant named 天ぷら小松 could be found in Aoyama or anywhere in Tokyo",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says 青山 / Aoyama.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed as a specific business. The genre answers itself: tempura batter is wheat flour, the fryer is shared, and the tentsuyu is wheat soy sauce. No tempura shop is gluten-free unless it says so in detail, and this one could not even be located.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed as a specific business. Tempura counters fry prawn and fish in the same oil as the vegetables, and the tentsuyu is a bonito dashi.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The characters 天ぷら + 小松 resolve on the web to Komatsu City in Ishikawa Prefecture (小松うどん; a sashimi-and-tempura shop by the south exit of Komatsu Station) and to a shop in California, not to Aoyama. Tabelog's Aoyama-area tempura results are てんぷら 天翔 at 港区北青山2-7-13 プラセオ青山ビル1F and 天ぷら 天青 at 港区南青山4-1-3, neither of which is 小松. It is also worth noting that 小松菜 (komatsuna) is a common tempura ingredient, which is a plausible way for the word to have been scraped out of a menu and mistaken for a shop name. Rather than pin the record on a guess, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Searches run: Yahoo Japan for 「天ぷら 小松 青山」 (returned 天翔 and 天青 in Aoyama, plus a Torrance, California shop) and 「site:tabelog.com \"天ぷら小松\"」 (returned only Komatsu City, Ishikawa results and one unrelated Shimbashi kappō). The two Aoyama tempura listings were fetched and their addresses read. Nothing of the name exists in Tokyo.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1306/A130603/13214300/",
+    "https://tabelog.com/tokyo/A1306/A130603/13016592/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing honest can be said about the door. Recommend the record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1306/A130603/13214300/",
+   "https://tabelog.com/tokyo/A1306/A130603/13016592/"
+  ],
+  "enrich_note": "NOT FOUND. Searched Yahoo Japan for 「天ぷら 小松 青山」 and 「site:tabelog.com \"天ぷら小松\"」 — the first returns 天翔 (港区北青山2-7-13) and 天青 (港区南青山4-1-3), the second returns only Komatsu City, Ishikawa. No 天ぷら小松 exists in Tokyo. Possible artefact: 小松菜 is a standard tempura ingredient and may have been scraped from a menu as a shop name. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__381",
+  "name": "恵比寿横丁",
+  "lat": 35.648107,
+  "lng": 139.710696,
+  "loc_precise": true,
+  "address_ja": "〒150-0013 東京都渋谷区恵比寿1-7-4 第一協栄ビル1F",
+  "enrich_confidence": "high",
+  "cuisine": "Not one restaurant but a covered alley of about nineteen tiny counters under red lanterns — charcoal grill, Kyoto-style oden, kushiage, horse- and beef-nigiri, a mushroom specialist, a small bistro — where you drink at one and move to the next, most of them open from late afternoon until around 3 a.m.",
+  "cuisine_type": "izakaya",
+  "neighborhood": "Ebisu 1-7-4, a short covered arcade off the street outside Ebisu Station's west exit — 187 m from JR Ebisu (Yamanote / Saikyō), 2–3 min on foot, 3 min from the Hibiya line",
+  "website": "https://ebisu-yokocho.com/",
+  "menu_url": "https://ebisu-yokocho.com/shop/",
+  "hours_raw": "店舗により異なる（多くは夕方～翌3時頃、不定休）。「忘れ物・予約・営業時間については各店に直接お問い合わせ下さい」／「こちら営業時間は、予告無しに変更される場合もございます」",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Nineteen independent counters, not one of which publishes an allergen statement, and the food is wheat from end to end: 串揚げ ぶるどっく deep-fries in panko breadcrumbs; でんらく is 京風おでん, whose broth is soy sauce and whose 竹輪 and 薩摩揚げ commonly carry wheat starch; 純ちゃん is a Hakata izakaya; there are teppanyaki, hormone-teppan and pork-yakiniku counters whose tare is soy-based; and every one of them seasons with ordinary wheat soy sauce. The stalls are open-fronted along a single narrow lane, with grills and a fryer running side by side. Nothing here can be made safe for a celiac, and there is no one at a venue level to ask — each shop is its own operator.",
+  "vegan_status": "ask",
+  "vegan_detail": "No shop in the alley publishes a vegan option, and the published genres are meat- and fish-led: charcoal grill, meat sushi, pork yakiniku, hormone teppan, hamayaki shellfish, sashimi and robatayaki. Two of the nineteen at least point in a plant direction — きのこ料理きのこ, a mushroom-cuisine counter, and a wine-and-vegetables stall — but a Japanese izakaya's vegetable plates are still seasoned with wheat soy sauce and finished with bonito dashi or katsuobushi as a matter of course, and none of these kitchens says otherwise. Treat it as something to ask about at the individual counter, in Japanese, before ordering; the alley's whole premise of grazing across several shops makes it hard to hold a line.",
+  "chef_bio": {
+   "chef_name": "浜倉好宣 (Yoshinobu Hamakura)",
+   "roles": [
+    "creator / producer of 恵比寿横丁",
+    "founder, 株式会社浜倉的商店製作所 (Hamakura-teki Shōten Seisakusho)"
+   ],
+   "origin": "Ebisu, Shibuya-ku — the site of the former 山下ショッピングセンター",
+   "background": "恵比寿横丁 is a made thing, and knowing that makes it easier to read. The site was a public market called 山下ショッピングセンター; as Ebisu Station was redeveloped through the 2000s, that one corner was left behind and shuttered, with a single fish seller still trading when 浜倉好宣 found it. He opened the alley in 2008 with thirteen counters — the number has since grown to around nineteen or twenty — under the banner of what his company calls ほっこり横丁, a 'cosy alley' where a teenager and a retiree can end up drinking at the same plank. Hamakura, born June 1967, went on to build a whole genre of these revived-market drinking halls through 株式会社浜倉的商店製作所, and 恵比寿横丁 is the one that made his name. The individual counters are separately run and separately named — 炭火焼 まるや, でんらく (京風おでん), 浜椿 (紹興酒家), 純ちゃん (博多居酒屋), 串揚げ ぶるどっく, 魚〇 (浜焼き酒場), 銀〇 (ホイル焼き酒場), 牛〇 (牛酒場), 貝〇 (刺身・炉端焼き), 豚焼セレブ にん肉, 達磨天狗 (ホルモン鉄板), 肉寿司, 魚串, Bistro maman, うめ月 (鉄板焼き), きのこ料理きのこ, 馬ルタン羊人 (馬肉・生ラム), 高橋さん and 姫島 — so there is no single chef and none is claimed here.",
+   "philosophy": "ほっこり横丁 — reviving a dead market street as a place where strangers of every age drink elbow to elbow. The venue's own line for the project is 「かつて慣れ親しんだ『山下ショッピングセンター』。商店街として栄えていた通り道にふたたび人が集まり、楽しいこと、おもしろいこと、あの時の時間がよみがえる」.",
+   "specialty": "Alley-hopping across nineteen counters: charcoal-grilled skewers, Kyoto-style oden, kushiage, horse- and beef-nigiri at 肉寿司, hamayaki shellfish, teppanyaki, mushroom cookery and a small bistro — most of them serving until around 3 a.m.",
+   "anecdotes": [
+    {
+     "text": "When Hamakura found the site, the 山下ショッピングセンター was a public market that had emptied out as the rest of Ebisu was rebuilt around it — one fishmonger was still trading among the shutters. 「オープンしたのは2008年。もともと『山下ショッピングセンター』という公設市場だった。」",
+     "source": "https://news.yahoo.co.jp/feature/716/"
+    },
+    {
+     "text": "It opened with thirteen counters inside a forty-year-old shell, and the format — an artificial yokocho built into a dead shopping street — became a template Hamakura's company repeated across Tokyo.",
+     "source": "https://in-shoku.info/foodfighters/vol226.html"
+    },
+    {
+     "text": "The alley's own house rules are refreshingly blunt: bookings, lost property and opening hours are the individual shops' business, not the yokocho's — 「忘れ物・予約・営業時間については各店に直接お問い合わせ下さい」 — and most, but not all, of them will do takeaway.",
+     "source": "https://ebisu-yokocho.com/top.html"
+    }
+   ],
+   "japanese_sources_summary": "ebisu-yokocho.com is the official site: its shop directory lists the counters by number, name, genre and phone (19 entries, from 炭火焼 まるや to 馬ルタン羊人 and 姫島) with a per-shop opening-hours grid, and states that hours change without notice and that reservations must be made with each shop directly. gotokyo.org (Tokyo's official tourism site) gives the address 東京都渋谷区恵比寿1-7-4 and 'JR Ebisu, 2 min'. The Yahoo News Japan long-form feature on 浜倉好宣 dates the opening to 2008 and identifies the site as the former 公設市場 山下ショッピングセンター, left stranded by the 2000s redevelopment of Ebisu Station. in-shoku.info's profile gives Hamakura's birth month (June 1967), the thirteen-shop original format, the forty-year-old building and the ほっこり横丁 concept — though it dates the opening to 2010 and names the predecessor building differently, so the Yahoo News / official-site version has been preferred. Tabelog 13109981 (恵比寿横丁 肉寿司) confirms the building as 第一協栄ビル1F, gives the coordinates 35.648107/139.710696, 187 m from Ebisu Station, 16:00–03:00, no reservations, 不定休.",
+   "confidence": "medium",
+   "sources": [
+    "https://ebisu-yokocho.com/shop/",
+    "https://ebisu-yokocho.com/top.html",
+    "https://news.yahoo.co.jp/feature/716/",
+    "https://in-shoku.info/foodfighters/vol226.html",
+    "https://www.gotokyo.org/jp/spot/451/index.html"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A single narrow covered lane of open-fronted counters: a panko deep-fryer (串揚げ ぶるどっく), charcoal grills, teppan plates and an oden pot all within a few metres of each other. Shared surfaces and airborne flour are unavoidable, and no shop publishes an allergen policy.",
+     "source": "https://ebisu-yokocho.com/shop/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Every genre in the alley is soy-sauce-seasoned — Kyoto-style oden broth, yakiniku and hormone tare, robata, hamayaki. No gluten-free tamari is named by any of the nineteen shops.",
+     "source": "https://ebisu-yokocho.com/shop/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Grills and plates are shared between meat, fish and vegetables at every counter; the two plant-leaning stalls (きのこ料理きのこ and the wine-and-vegetables counter) sit in the same lane and publish nothing about dashi or katsuobushi.",
+     "source": "https://ebisu-yokocho.com/shop/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Every shop's phone number is published on the official directory, so a Japanese-speaking friend or hotel concierge can ring one specific counter ahead rather than negotiating in the crowd.",
+     "source": "https://ebisu-yokocho.com/shop/"
+    },
+    {
+     "text": "Ground level and step-free from the street, 187 m from Ebisu Station, and open until roughly 3 a.m. — a workable late option when kitchens elsewhere have closed.",
+     "source": "https://tabelog.com/tokyo/A1303/A130302/13109981/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Lively — easy to enter, hard to control",
+   "note": "One of the friendliest doors in Tokyo and one of the worst rooms for anyone managing a diet. The alley is open to the street, step-free, two minutes from Ebisu Station, visibly full of foreign visitors, and nobody minds a stranger sitting down; several counters take cards and the 肉寿司 stall runs 16:00–03:00 with no bookings. But the seats are shoulder-to-shoulder plank benches, it is loud, it is smoky from charcoal, and the whole premise is grazing across several kitchens in one night — which means having the allergy conversation four or five times, in Japanese, standing up, in a crowd, with nineteen separate operators who share no policy. If someone in the party is celiac, treat this as a place to have a drink rather than to eat. Hours vary by shop and change without notice; the official directory carries each counter's own phone number and hours grid."
+  },
+  "sources": [
+   "https://ebisu-yokocho.com/",
+   "https://ebisu-yokocho.com/shop/",
+   "https://ebisu-yokocho.com/top.html",
+   "https://news.yahoo.co.jp/feature/716/",
+   "https://in-shoku.info/foodfighters/vol226.html",
+   "https://www.gotokyo.org/jp/spot/451/index.html",
+   "https://tabelog.com/tokyo/A1303/A130302/13109981/"
+  ],
+  "enrich_note": "CONFIRMED, with a CATEGORY FLAG. 恵比寿横丁 exists and the address and coordinates are now exact (東京都渋谷区恵比寿1-7-4 第一協栄ビル1F, 35.648107/139.710696, taken from the Tabelog listing of 恵比寿横丁 肉寿司 inside it). But it is not a MOM_AND_POP restaurant — it is a 2008-built covered alley of about nineteen independently run counters, produced by 浜倉好宣 of 浜倉的商店製作所 on the site of the derelict 山下ショッピングセンター public market. Suggest recategorising as a venue / food-alley entry, and note that hours, reservations and payment differ per shop. gf downgraded from the sweep's 'ask' to 'no' (panko fryer, oden, soy-based tare, no allergen policy at any of the nineteen); vegan set to 'ask' rather than the sweep's 'limited' — two counters lean plant-ward but none publishes a dashi-free claim. Sources disagree on the opening year (Yahoo News and the official site support 2008; one trade profile says 2010) — 2008 used."
+ }
+]

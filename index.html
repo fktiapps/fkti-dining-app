@@ -316,6 +316,16 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .ack-confirm{background:var(--ver);color:#fff}
 .ack-back{background:#1A1E2E;color:#9AA0B6;margin-top:8px}
 
+/* Shut, but coming back. Permanently closed records are hidden outright; this is
+   for the ones with a reopening date, which a traveller planning a later trip
+   still wants to see. Red rather than the amber of .outside: "you cannot eat here
+   today" is a harder fact than "this is a train ride away". */
+.shut{
+  display:block; margin-top:4px; font-size:11.5px; line-height:1.45;
+  color:#7c1d1d; background:#FBE3E3; border:1px solid #d46b6b;
+  border-radius:6px; padding:4px 7px;
+}
+
 /* A record filed under one city but physically in another municipality — the app
    must say so before a traveller plans an evening around a 51km pin. */
 .outside{
@@ -658,7 +668,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 <script>
 const CAT_COLORS={BOTH:'#2E7D32',GF:'#1565C0',VEGAN:'#00897B',SHOJIN:'#6A1B9A',OMNI:'#EF6C00',MOM_AND_POP:'#8B4513'};
 const CAT_NAME={BOTH:'Vegan + GF',GF:'GF-dedicated',VEGAN:'Vegan',SHOJIN:'Shojin',OMNI:'Omnivore · both options',MOM_AND_POP:'Mom & Pop 🏮'};
-const CUISINE_LABELS={udon_soba:'Udon / Soba',ramen:'Ramen / Chūka',donburi:'Donburi',shokudo:'Shokudō',katsu:'Tonkatsu / Katsu',tempura:'Tempura',kaiseki:'Kaiseki / Kappō',sushi:'Sushi',yakitori:'Yakitori / Kushiyaki',okonomiyaki:'Okonomiyaki / Teppan',gyoza:'Gyoza',unagi:'Unagi',oden:'Oden',oyster:'Oysters',chanko:'Chanko Nabe',curry:'Curry',kissaten:'Kissaten',cafe:'Café',yoshoku:'Yōshoku',obanzai:'Obanzai',izakaya:'Izakaya',tofu:'Tofu / Yuba',shojin:'Shōjin',sweets:'Sweets / Bakery',italian:'Italian',french:'French',thai:'Thai',other:'Other'};
+const CUISINE_LABELS={udon_soba:'Udon / Soba',ramen:'Ramen / Chūka',donburi:'Donburi',shokudo:'Shokudō',katsu:'Tonkatsu / Katsu',tempura:'Tempura',kaiseki:'Kaiseki / Kappō',sushi:'Sushi',yakitori:'Yakitori / Kushiyaki',okonomiyaki:'Okonomiyaki / Teppan',gyoza:'Gyoza',unagi:'Unagi',oden:'Oden',oyster:'Oysters',chanko:'Chanko Nabe',sukiyaki:'Sukiyaki / Shabu-shabu',curry:'Curry',kissaten:'Kissaten',cafe:'Café',yoshoku:'Yōshoku',obanzai:'Obanzai',izakaya:'Izakaya',tofu:'Tofu / Yuba',shojin:'Shōjin',sweets:'Sweets / Bakery',italian:'Italian',french:'French',thai:'Thai',other:'Other'};
 function buildCuisineChips(){
  const row=document.getElementById('cuisineRow'); if(!row) return;
  const places=state.cities[state.active]?.places||[];
@@ -755,6 +765,11 @@ function openState(p){
 function visiblePlaces(){
  const f=state.filters; const all=state.cities[state.active]?.places||[];
  let r=all.filter(p=>{
+  // A record the enrichment could not find, could not place in this city, or found
+  // permanently shut must not be offered as somewhere to eat tonight. It stays in
+  // the data with its search trail — hiding is reversible, deleting is not — but a
+  // listing you cannot walk into is worse than no listing.
+  if(p.hidden) return false;
   const gfL=f.gf||0, vgL=f.vegan||0;
   // GF dial (1:1 with the tiers): 1=Dedicated only · 2=+Fully-GF(high) · 3=+Options · 4=+Ask(negotiable) · 5=Need rice (all + survival). 'no' shows only at 5.
   const GF=[null,['dedicated'],['dedicated','high'],['dedicated','high','options'],['dedicated','high','options','ask']];
@@ -1164,7 +1179,14 @@ function badgeGF(p){
  const cls=['dedicated','high'].includes(p.gf_confidence)?'b-safe':(p.gf_confidence==='options'?'b-caution':'b-unknown');
  return `<span class="badge dietui ${cls}">GF · ${p.gf_label.split('·')[0].trim().replace(' staff','')}</span>`;
 }
-function openTag(p){const s=openState(p);return s===true?'<span class="open-now">● Open now</span>':s===false?'<span class="open-no">Closed now</span>':'<span class="open-vary">Hours vary</span>';}
+// Temporarily-shut shops keep their listing but must never read "Open now" off a
+// stale hours block — the hours are still published, the door is still locked.
+function SHUT_LINE(p){
+ if(!p.closed || p.closed.status!=='temporary') return '';
+ const until=p.closed.until?` — expected to reopen ${escHtml(p.closed.until)}`:'';
+ return `<div class="shut">🚧 Temporarily closed${until}</div>`;
+}
+function openTag(p){if(p.closed&&p.closed.status==='temporary')return '<span class="open-no">Temporarily closed</span>';const s=openState(p);return s===true?'<span class="open-now">● Open now</span>':s===false?'<span class="open-no">Closed now</span>':'<span class="open-vary">Hours vary</span>';}
 function render(){
  if(state.groupActive){const z=computeZones();syncMarkers([]);drawGroupMarkers(z);renderGroupList(z);return;}
  if(groupLayer){map.removeLayer(groupLayer);groupLayer=null;}
@@ -1177,6 +1199,7 @@ function render(){
    <div class="main">
     <div class="nm">${p.name}</div>
     <div class="meta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${openTag(p)}</div>
+    ${SHUT_LINE(p)}
     ${p.outside_city?`<div class="outside">🚃 ${p.outside_city.km} km from ${CITY_LABEL()}${p.outside_city.municipality?' · '+escHtml(p.outside_city.municipality):''} — a separate trip</div>`:''}
     <div class="badges">${badgeGF(p)}<span class="badge b-vegan dietui">${p.vegan_label}</span>
      ${p.flags.reservation?'<span class="badge b-unknown">Reservation</span>':''}
@@ -1481,6 +1504,7 @@ function _renderDetail(p){
  ds.innerHTML=`
   <div class="dtitle">${p.name}</div>
   <div class="dmeta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${p.cuisine}${state.me?` · ${fmtDist(haversine(state.me.lat,state.me.lng,p.lat,p.lng))} away`:''}</div>
+  ${SHUT_LINE(p)}
   ${p.outside_city?`<div class="outside">🚃 ${escHtml(p.outside_city.note)}</div>`:''}
   ${p.category==='MOM_AND_POP'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;color:#5a3e00"><b>🏮 Mom &amp; Pop</b> — independently owned, under 30 seats, beloved by locals. <b>Maximum 4 people.</b> Dietary options vary — check the GF and vegan notes below. The experience here is the point.</div>`:''}
   ${renderComfort(p)}
