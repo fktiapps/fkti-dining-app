@@ -24,13 +24,15 @@ if (!fs.existsSync(DIR)) { console.log(`no ${DIR} — nothing to merge`); proces
 const survivors = fs.existsSync('data/_dupe_survivors.json')
   ? JSON.parse(fs.readFileSync('data/_dupe_survivors.json', 'utf8')) : {};
 
-// The city is encoded in the filename, but agents checkpoint into shards with
-// assorted decorations: nara.json, toba2.json, _nagano_partA.json, himeji2_part1.json.
-// Recognise the city anywhere in the name rather than silently skipping a shard —
-// a skipped shard is lost research that nothing else would report.
-// Agents checkpoint into shard files and sometimes into a subdirectory
-// (data/_menu_verdicts/_toba_parts/). Walk one level in so a nested shard is not
-// silently ignored — that already cost 10 menus once.
+// Resolve each entry's city from the RECORD IDS it contains, not from the
+// filename. Agents name their shards freely — nara.json, toba2.json,
+// _nagano2_b3.json, _part_MINE1.json — and a filename-based parser silently
+// skipped 22 Kyoto shops that were sitting in files called _part_B/_C/_E.
+// The ids are unambiguous and always present, so use those and keep the
+// filename only as a tie-breaker.
+const idCity = new Map();
+for (const c of CITIES) for (const r of readCity(c).places) idCity.set(r.id, c);
+
 const files = [];
 for (const f of fs.readdirSync(DIR)) {
   const full = `${DIR}/${f}`;
@@ -38,15 +40,20 @@ for (const f of fs.readdirSync(DIR)) {
     for (const g of fs.readdirSync(full)) if (g.endsWith('.json')) files.push(`${f}/${g}`);
   } else if (f.endsWith('.json')) files.push(f);
 }
+
 const byCity = {};
 for (const f of files) {
-  const stem = f.replace(/\.json$/, '').replace(/\//g, '_').toLowerCase();
-  const city = CITIES.find(c => stem.replace(/[^a-z]/g, '').startsWith(c) || stem.includes(c));
-  if (!city) { console.log(`  ?? ${f}: no city in the filename — SKIPPED, check this`); continue; }
-  byCity[city] = Object.assign(byCity[city] || {}, JSON.parse(fs.readFileSync(`${DIR}/${f}`, 'utf8')));
+  const obj = JSON.parse(fs.readFileSync(`${DIR}/${f}`, 'utf8'));
+  const unplaced = [];
+  for (const [id, entry] of Object.entries(obj)) {
+    const city = idCity.get(id) || idCity.get(survivors[id]);
+    if (!city) { unplaced.push(id); continue; }
+    (byCity[city] = byCity[city] || {})[id] = entry;
+  }
+  if (unplaced.length) console.log(`  ?? ${f}: ${unplaced.length} id(s) match no record — ${unplaced.slice(0, 3).join(', ')}`);
 }
 
-function problems(entry, id) {
+function problems(entry, id, unexplained = []) {
   const p = [];
   if (!VERIFIED.has(entry.verified)) p.push(`verified "${entry.verified}"`);
   if (!CONF.has(entry.confidence)) p.push(`confidence "${entry.confidence}"`);
@@ -64,10 +71,10 @@ function problems(entry, id) {
     // Beer, malt and barley drinks are deliberately NOT exempt: 麦茶 is barley and
     // beer is the single most common thing mistaken for gluten-free.
     const label = `${it.ja || ''} ${it.en || ''} ${it.romaji || ''}`;
-    const plainDrink = /(juice|water|tea|coffee|espresso|latte|americano|cocoa|cola|soda|wine|sake|smoothie)|ジュース|ラテ|ティー|ウーロン|烏龍|緑茶|煎茶|ほうじ|コーヒー|カフェオレ|エスプレッソ|ココア|ワイン|日本酒|ソーダ|スムージー|タイザー|ジンジャーエール/i.test(label);
+    const plainDrink = /(juice|water|tea|coffee|espresso|latte|mocha|americano|cocoa|cola|soda|wine|sake|smoothie|chai)|ジュース|ラテ|ティー|モカ|チャイ|ウーロン|烏龍|緑茶|煎茶|ほうじ|コーヒー|カフェオレ|カフェモカ|エスプレッソ|ココア|ワイン|日本酒|ソーダ|スムージー|タイザー|ジンジャーエール/i.test(label);
     const glutenDrink = /(beer|ale|lager|malt|barley|whisk|highball)|ビール|麦茶|麦焼酎|ハイボール|生中|発泡酒/i.test(label);
     if (it.gf === 'gf' && !String(it.note || '').trim() && (!plainDrink || glutenDrink))
-      p.push(`${at}: gf="gf" with an empty note`);
+      unexplained.push(it);
     if (it.gf === 'gf' && glutenDrink)
       p.push(`${at}: gf="gf" on a barley/malt drink — beer and 麦茶 are not gluten-free`);
   });
@@ -78,7 +85,7 @@ function problems(entry, id) {
   return p;
 }
 
-let merged = 0, empty = 0, rejected = 0, unmatched = 0, items = 0, auth = 0;
+let merged = 0, empty = 0, rejected = 0, unmatched = 0, items = 0, auth = 0, repaired = 0;
 const bad = [];
 
 for (const city of CITIES) {
@@ -97,8 +104,18 @@ for (const city of CITIES) {
     const id = (!ids.has(rawId) && survivors[rawId]) ? survivors[rawId] : rawId;
     if (id !== rawId) console.log(`  ~ ${rawId} -> ${id} (merged duplicate)`);
     if (!ids.has(id)) { unmatched++; bad.push(`${city}/${rawId}: no matching record`); continue; }
-    const errs = problems(entry, id);
+    // An unexplained gf flag is a per-ITEM defect. Rejecting the whole entry
+    // would throw away a shop's entire researched menu over one line, so repair
+    // the item instead: drop it to "ask" and say why. That is the cautious
+    // direction, and it keeps the rest of the research.
+    const unexplained = [];
+    const errs = problems(entry, id, unexplained);
     if (errs.length) { rejected++; bad.push(`${city}/${id}: ${errs.slice(0, 4).join('; ')}`); continue; }
+    for (const it of unexplained) {
+      it.gf = 'ask';
+      it.note = 'Flagged gluten-free during research with no reason recorded, so downgraded to "ask" on merge. Plain rice and similar are usually fine, but confirm the seasoning and the serving scoop.';
+      repaired++;
+    }
 
     const n = entry.items.length;
     if (!n) { empty++; }                       // honest "no menu published" — recorded, not merged
