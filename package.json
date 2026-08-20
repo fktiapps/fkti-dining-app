@@ -19,7 +19,9 @@
     "check:links": "node scripts/check-links.mjs",
     "check:citations": "node scripts/verify-citations.mjs && node scripts/flag-unverified-citations.mjs",
     "build:survival": "node scripts/build-survival.mjs",
-    "build:chains": "node scripts/build-chains.mjs"
+    "build:chains": "node scripts/build-chains.mjs",
+    "smoke": "node scripts/smoke-app.mjs",
+    "serve": "node scripts/static-serve.mjs"
   },
   "devDependencies": {
     "wrangler": "4.103.0"
