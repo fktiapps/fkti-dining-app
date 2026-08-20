@@ -37,7 +37,7 @@ const STEPS = [
   // research agents (teishoku, tonteki, tonkatsu), which the first pass ran too
   // early to see. Idempotent, so running it twice costs nothing and stops a raw
   // slug reaching the filter chips.
-  ['normalize-cuisine.mjs',           're-map slugs introduced by the merge steps'],
+  ['normalize-cuisine.mjs',           're-map slugs introduced by the merge steps', ['--lenient']],
   ['quarantine-orphan-menus.mjs',      'pull menus whose record was deduped away', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],

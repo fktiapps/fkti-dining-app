@@ -26,6 +26,36 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
   writeCity('nara', j);
 }
 
+// ---------------------------------------------------------------- NAGANO
+{
+  const j = readCity('nagano');
+  for (const r of find(j.places, 'いろは堂')) {
+    // The only record in the whole dataset carrying a GF tier above "ask" on an
+    // entirely empty safety block: no cross-contamination finding, no soy-sauce
+    // finding, no staff-handling note, no positives, no website. Its own gf_detail
+    // asks the reader to "confirm which items are the GF version" — which is the
+    // definition of "ask", not "options".
+    //
+    // An oyaki shop is exactly where this matters. The wheat dough is worked on the
+    // same board and steamed in the same steamer as anything else; "offers a
+    // gluten-free option" from an unsourced note tells a celiac nothing about
+    // whether it is safe for them. Downgrades are always safe (REVIEW_PROTOCOL.md:
+    // a false "safe" can glutenate a kid, a false "ask" makes them double-check),
+    // so this drops until someone can evidence it.
+    if (r.gf_confidence === 'options') {
+      r.gf_confidence = 'ask';
+      r.gf_label = 'GF — ask';
+      r.gf_detail = `[Downgraded ${DATE}] No evidence behind the previous "some GF options" label — ` +
+        'the record carried no cross-contamination finding, no soy-sauce finding, no staff-handling ' +
+        'note and no source of any kind. ' + r.gf_detail +
+        ' Oyaki dough is worked and steamed alongside wheat dough, so treat the GF item as unverified ' +
+        'until the shop confirms how it is made and kept separate.';
+      edits.push('nagano/いろは堂: gf options -> ask (tier rested on no evidence at all)');
+    }
+  }
+  writeCity('nagano', j);
+}
+
 // ---------------------------------------------------------------- KANAZAWA
 {
   const j = readCity('kanazawa');

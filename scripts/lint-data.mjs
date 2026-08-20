@@ -26,6 +26,10 @@ const GF_CONF  = new Set(['dedicated','high','options','ask','no']);
 const VEGAN    = new Set(['full','options','limited','ask','no']);
 const HOURS_ST = new Set(['regular','irregular','seasonal','varies','closed','unknown','by_reservation']);
 const TOP_TIER = new Set(['dedicated','high']);
+const CLAIMS_SAFER = new Set(['dedicated','high','options']);
+const EVIDENCE_FIELDS = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact',
+                         'staff_allergy_handling','positives'];
+const evidenceCount = r => EVIDENCE_FIELDS.reduce((n, f) => n + ((r.safety?.[f]) || []).length, 0);
 
 const man = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
 const bounds = Object.fromEntries(man.cities.map(c => [c.id, c.bounds]));
@@ -89,6 +93,17 @@ for (const city of CITIES) {
     const sg = r.safety?.owner_signoff;
     if (sg?.decision && sg.to && sg.to !== r.gf_confidence)
       err(city, `${at}: gf_confidence="${r.gf_confidence}" contradicts owner_signoff.to="${sg.to}" (${sg.by} ${sg.date}) — a machine pass overwrote the human gate`);
+
+    // A GF tier above "ask" is a claim that this shop is safer than the default, and
+    // the safety block is where the reason lives. いろは堂 shipped as "some GF options"
+    // on an entirely empty block — no cross-contamination finding, no soy-sauce
+    // finding, no staff note, no source — while its own text asked the reader to
+    // "confirm which items are the GF version". That is "ask" wearing a better label.
+    // Every other record in nine cities already satisfies this, so it is an error:
+    // the pipeline should refuse to ship an unevidenced safety claim, not warn about it.
+    if (!r.hidden && CLAIMS_SAFER.has(r.gf_confidence) && evidenceCount(r) === 0)
+      err(city, `${at}: gf_confidence="${r.gf_confidence}" with no safety evidence at all — ` +
+                'a tier above "ask" has to say why (REVIEW_PROTOCOL.md)');
 
     if (TOP_TIER.has(r.gf_confidence)) {
       topTier++;

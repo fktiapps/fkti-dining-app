@@ -28,6 +28,9 @@ const MAP = {
   // traveller nothing.
   'shabu_shabu':'sukiyaki', 'shabushabu':'sukiyaki', 'sukiyaki_shabu':'sukiyaki',
   'nabe':'sukiyaki', 'hotpot':'sukiyaki',
+  // A matcha stand is a cafe. Splitting it off would scatter the same shops across
+  // two chips without telling a traveller anything they cannot read in the name.
+  'matcha_cafe':'cafe', 'matcha':'cafe', 'teahouse':'cafe', 'coffee':'cafe',
 
   // --- sweets / bakery / patisserie family ---
   'GF bakery':'sweets','bakery':'sweets','GF patisserie':'sweets','patisserie':'sweets',
@@ -88,5 +91,24 @@ for (const city of CITIES) {
 
 fs.writeFileSync('data/_cuisine_normalize_log.tsv', log.join('\n'));
 console.log(`remapped ${changed} records; ${promoted} already on promoted slugs`);
-if (unmapped.size) { console.log('UNMAPPED (fix the table):'); [...unmapped].forEach(v => console.log('  ' + v)); process.exit(1); }
+// The first pass FAILS on an unknown slug, because the filter vocabulary is curated
+// and every value should get a deliberate home. The second pass (after the merges)
+// runs --lenient: research agents coin new words constantly — teishoku, tonteki,
+// tonkatsu, sukiyaki, matcha_cafe all arrived this way — and a rebuild that wedges
+// on one of them stops thirty agents' work from landing. Lenient falls back to
+// 'other', which is honest, and shouts the list so the word gets curated properly
+// on the next pass rather than silently becoming permanent.
+if (unmapped.size) {
+  const lenient = process.argv.includes('--lenient');
+  console.log(lenient ? 'UNMAPPED — parked in "other", add them to the table:'
+                      : 'UNMAPPED (fix the table):');
+  [...unmapped].forEach(v => console.log('  ' + v));
+  if (!lenient) process.exit(1);
+  for (const c of CITIES) {
+    const j = readCity(c);
+    let n = 0;
+    for (const r of j.places) if (unmapped.has(r.cuisine_type)) { r.cuisine_type = 'other'; n++; }
+    if (n) { writeCity(c, j); console.log(`  ${c}: ${n} record(s) -> other`); }
+  }
+}
 console.log('no unmapped values remain');

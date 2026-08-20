@@ -1,0 +1,263 @@
+[
+ {
+  "id": "tokyo3__75",
+  "status": "not_found",
+  "lat": 35.6717,
+  "lng": 139.765,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop named 蕎麦 さくら / そば さくら exists in Kyōbashi or anywhere in Chūō-ku",
+  "cuisine_type": "soba",
+  "neighborhood": "Unverified. The light record says 京橋 / Ginza line Kyōbashi Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's own complete listing of soba shops in 中央区京橋 contains six businesses — 僖ニ成ル食 京橋, そばよし 京橋店, 更科丸屋, 京橋 恵み屋, 蕎麦きり 京橋 山茂登 and 小諸そば 宝町店 — and none of them is named さくら, 桜 or サクラ. The nearest name in the ward is 桜橋 丸屋, a soba shop at 中央区八丁堀3-9-10 near Takaracho, which is neither 'Sakura' as a shop name nor in Kyōbashi. Soba shops actually called さくら do exist in Tokyo — そば処 さくら (文京区小石川2-25-12), さくら家 (両国), 蕎麦と甘味 さくら (稲城市), 心蕎人 さくら (府中市), そば茶屋 さくら (花小金井) — but every one of them is kilometres from Kyōbashi and nothing connects any of them to this record. Osaka's Kyōbashi was checked as well, since 京橋 is a district name in both cities; Tabelog's Osaka-Kyōbashi soba ranking (浪花そば ツイン21店, 麺処 NAKAJIMA, そじ坊 京阪モール京橋店, 麺家 京橋外回り店, 手打ちそば 庄八 and others) has no さくら either.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan (the only engine that answers a scripted request) was queried four times — 蕎麦 さくら 京橋 中央区 / そば さくら 中央区 京橋 食べログ / 蕎麦 さくら 東京都 中央区 銀座 京橋 そば屋 / そば さくら 京橋 大阪 蕎麦 — all returning HTTP 200 with real results, none of which was a Kyōbashi さくら. Tabelog's Kyōbashi soba index page (tokyo/C13102/C36103/rstLst/soba/) was opened directly and read in full: six shops, no さくら.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/C13102/C36103/rstLst/soba/",
+    "https://tabelog.com/tokyo/A1302/A130202/13043225/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/C13102/C36103/rstLst/soba/",
+   "https://tabelog.com/tokyo/A1302/A130202/13043225/"
+  ],
+  "enrich_note": "NOT FOUND. Searches actually run, each returning HTTP 200 with results: Yahoo Japan on 「蕎麦 さくら 京橋 中央区」, 「そば さくら 中央区 京橋 食べログ」, 「蕎麦 さくら 東京都 中央区 銀座 京橋 そば屋」 and 「そば さくら 京橋 大阪 蕎麦」 (the last to rule out Osaka's Kyōbashi); plus a direct read of Tabelog's Kyōbashi soba index, which lists all six soba shops in 中央区京橋 and contains no さくら. Several Tokyo soba shops named さくら exist (Koishikawa, Ryōgoku, Inagi, Fuchū, Hanakoganei) but none in or near Kyōbashi, so none can be pinned to this record. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__80",
+  "status": "not_found",
+  "lat": 35.678,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba restaurant named おかめ exists at Yaesu; the only おかめ that ever traded there was a sweet shop that left in 2007",
+  "cuisine_type": "soba",
+  "neighborhood": "Unverified. The light record says 八重洲 / JR Yaesu exit, Tokyo Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and there is good reason to think the light record is not a real business at all. 「おかめそば」 is a generic Edo dish name — a kake-soba with kamaboko, shiitake and greens laid out to resemble the Okame mask, said to have been invented at 太田庵 in Negishi in the late Edo period — so a discovery sweep could easily have turned the dish into a shop. The only actual おかめ that ever traded at Yaesu was 甘味おかめ 八重洲店, a 甘味処 (anmitsu and ohagi, not soba) at 中央区八重洲1, which Tabelog's own store note records as having moved out in September 2007 (【2007年9月中央区八重洲1より移転】) to Yūrakuchō Itocia, where it trades today as 甘味おかめ 有楽町店 (千代田区有楽町2-7-1 有楽町イトシア イトシアプラザ1F, 03-3211-0585, 11:00–20:00, closed Mondays). The chain's other branches are 麹町 (本店) and 東京交通会館. A reviewer writing in 2018 says plainly that the Yaesu shop had been gone for about ten years, lost to the Yaesu redevelopment. Nothing named おかめ appears among the soba shops in the Yaesu underground mall either — that list runs 蕎麦きり みよた 八重洲店, 梅もと 八重洲地下街店, 石臼挽き蕎麦 そと一 東京ミッドタウン八重洲店, 玉丁本店 八重洲店, おらが蕎麦 and 蕎麦29東京.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan queries 「蕎麦処 おかめ 八重洲 東京駅 そば」, 「そば おかめ 八重洲 東京駅 立ち食い 蕎麦処」, 「site:tabelog.com おかめ 中央区八重洲」, 「甘味おかめ 八重洲店 閉店 東京駅」 and 「八重洲地下街 そば 蕎麦 店舗一覧」 all returned HTTP 200 with results. The Tabelog page for 甘味おかめ 有楽町店 (13011479) was fetched directly and confirms the genre 甘味処・かき氷, the Yūrakuchō address, and that the shop is not closed. No source of any kind places a 蕎麦処 おかめ at Yaesu.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1301/A130102/13011479/",
+    "https://tabelog.com/tokyo/A1301/A130102/13011479/dtlmenu/photo/",
+    "https://www.kotsukaikan.co.jp/special/18823/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. If a traveller is standing at the Yaesu exit wanting this name, the honest answer is that 甘味おかめ moved to Yūrakuchō Itocia in 2007 and serves anmitsu and ohagi, not soba. Recommend the record be deleted."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1301/A130102/13011479/",
+   "https://tabelog.com/tokyo/A1301/A130102/13011479/dtlmenu/photo/",
+   "https://www.kotsukaikan.co.jp/special/18823/"
+  ],
+  "enrich_note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「蕎麦処 おかめ 八重洲 東京駅 そば」, 「そば おかめ 八重洲 東京駅 立ち食い 蕎麦処」, 「site:tabelog.com おかめ 中央区八重洲」, 「甘味おかめ 八重洲店 閉店 東京駅」 and 「八重洲地下街 そば 蕎麦 店舗一覧」; plus a direct fetch of Tabelog 13011479. Result: the only おかめ ever at Yaesu was the 甘味処 甘味おかめ 八重洲店 (中央区八重洲1), which relocated to Yūrakuchō Itocia in September 2007 and is a sweet shop, not a soba shop. 「おかめそば」 is also a generic Edo soba dish, which is the likely origin of this phantom name. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__86",
+  "status": "confirmed",
+  "name": "中村藤吉本店 銀座店",
+  "lat": 35.669893,
+  "lng": 139.764457,
+  "loc_precise": true,
+  "address_ja": "〒104-0061 東京都中央区銀座6-10-1 GINZA SIX 4F",
+  "enrich_confidence": "high",
+  "cuisine": "The Uji tea house's Ginza tea room: a bowl of thin green cha-soba under a slab of fried tofu in clear dashi, then the matcha desserts people actually queue for — 生茶ゼリイ ¥1,430, まるとパフェ ¥1,485, the Ginza-only 別製まるとパフェ ¥2,200 and 宇治きん氷[抹茶] ¥1,980. Roughly ¥1,000–¥3,000 a head",
+  "cuisine_type": "matcha_cafe",
+  "neighborhood": "Ginza 6-chōme, 4th floor of GINZA SIX — 2 min (222 m) from Ginza Station exit A3 (Ginza / Marunouchi / Hibiya lines)",
+  "website": "https://tokichi.jp/pages/ginza-store-page",
+  "menu_url": "https://tokichi.jp/blogs/menu/ginza",
+  "hours_raw": "10:30〜20:30（カフェ L.O.19:30／食べログ掲載は L.O.19:45）・茶舗も10:30〜20:30。営業時間、休館日はGINZA SIXに準じます。予約不可",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable. 茶そば is a wheat-flour noodle with matcha kneaded into the dough — it is not buckwheat-only and is not gluten-free in any preparation — and its tsuyu is ordinary wheat soy sauce with dashi. The company does publish per-store allergen charts covering all six restaurant locations including Ginza, which is more than most Japanese tea houses do, but the same page states 「他のメニューと同一の厨房、共通の調理器具や食器で調理、提供をしております」 and 「アレルゲンが完全に除去されるわけではございません」 — shared kitchen, shared utensils, no removal guarantee. The dessert side is built on castella-type baked goods and wafers. Nothing here is safe for a celiac; a pot of tea is.",
+  "vegan_status": "no",
+  "vegan_detail": "The cha-soba is served in a bonito dashi broth; the parfaits and kakigōri are built on dairy ice cream and cream, and the house baked goods (うじていら, マルトベイク) are egg-and-butter. A plain pot of tea is of course vegan, and tea is the whole point of the place — but as a meal or a dessert stop this is not a vegan destination and nothing on the menu is labelled as such.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "株式会社中村藤吉本店 — Uji tea merchant, founded 1854"
+   ],
+   "origin": "Uji, Kyoto — the house has stood on the same plot since its founding",
+   "background": "中村藤吉本店 is not a Tokyo restaurant that happens to sell tea; it is a 170-year-old Uji tea merchant that opened a tea room in Ginza. The founder, 中村藤吉 (1832–1896), was the fourth child of 小中村六兵衛 and 中村トサ, and set up as a tea dealer in Uji in 1854 (安政元年). The third generation, 卯吉, was elected mayor of Uji Town in 1912. The firm incorporated in 1949 as 株式会社中村藤吉本店. Its Uji premises were taken into Uji's Important Cultural Landscape designation in February 2009 as a representative group of Meiji-period tea-merchant buildings, and the Taishō-era garden on the same grounds became a Kyoto prefectural cultural property in 2017; the Byōdōin branch occupies the surviving building of 菊屋萬碧楼, an Edo-period restaurant-inn. Nine retail locations now exist, of which Ginza (GINZA SIX 4F) and Azabudai are the two in Tokyo. The house tea, 中村茶, is a deliberately transgressive blend of seven leaf types including tencha, the raw material of matcha — sencha and gyokuro are not normally blended, and the shop's own copy frames doing it anyway as play. The Ginza room seats 50, takes no reservations, and gives every arriving guest a pot of the day's welcome tea (gyokuro, when reviewers describe it) with the hot-water flask left on the table so you pour your own.",
+   "philosophy": "「日本茶をたのしむ起点」 — tea first, and everything on the plate arranged to show what the leaf can do rather than to be a dessert with matcha added.",
+   "specialty": "生茶ゼリイ; まるとパフェ (抹茶 / ほうじ茶); the Ginza-exclusive 別製まるとパフェ made with the house's 別製 matcha; 宇治きん氷[抹茶]; and the cha-soba lunch.",
+   "anecdotes": [
+    {
+     "text": "Reviewers consistently describe a queue outside the shop and a row of waiting chairs along the wall behind it — arriving before noon at a weekend is the difference between sitting straight down and standing in line.",
+     "source": "https://tabelog.com/tokyo/A1301/A130101/13207589/"
+    },
+    {
+     "text": "A 2025 diner's account of the Ginza cha-soba: thin noodles with real buckwheat-and-matcha aroma under one large piece of fried tofu with mitsuba, in a restrained dashi — filling enough that she skipped dessert and vowed to come back for it.",
+     "source": "https://ameblo.jp/aketalove/entry-12884473102.html"
+    },
+    {
+     "text": "The 別製まるとパフェ at ¥2,200 exists only at Ginza and is made with a matcha the house grades 別製 — the same conceit as the Uji main store's tiered parfaits, but with a grade not sold at the other branches.",
+     "source": "https://www.enjoytokyo.jp/article/110360/"
+    }
+   ],
+   "japanese_sources_summary": "tokichi.jp's Ginza store page gives the address 〒104-0061 東京都中央区銀座6丁目10-1 GINZA SIX 4F, the phone 03-6264-5168, and 10:30–20:30 for both tea shop and café with L.O. 19:30, hours following GINZA SIX. tokichi.jp/pages/menu-allergens publishes per-store allergen charts for six locations including Ginza and states the shared-kitchen caveat verbatim. tokichi.jp/pages/history gives 1854, the founder's dates, the 1912 mayoralty, the 1949 incorporation and the 2009/2017 heritage designations. Tabelog 13207589 confirms the address, 03-6264-5168, 10:30–20:30 L.O.19:45, 予約不可, 50 seats, no private rooms, cards/e-money/QR accepted, and a 3.45 rating over 987 reviews with dessert prices.",
+   "confidence": "high",
+   "sources": [
+    "https://tokichi.jp/pages/ginza-store-page",
+    "https://tokichi.jp/pages/history",
+    "https://tokichi.jp/pages/menu-allergens",
+    "https://tabelog.com/tokyo/A1301/A130101/13207589/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "The company's own allergen page states that dishes are cooked and served 「他のメニューと同一の厨房、共通の調理器具や食器で」 and that 「アレルゲンが完全に除去されるわけではございません」 — one kitchen, shared utensils, no removal guarantee.",
+     "source": "https://tokichi.jp/pages/menu-allergens"
+    },
+    {
+     "text": "茶そば is wheat-flour noodle dough with matcha worked into it, boiled in the same water as everything else on the noodle side.",
+     "source": "https://ameblo.jp/aketalove/entry-12884473102.html"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Standard wheat shōyu assumed in the soba tsuyu; no tamari or gluten-free seasoning is mentioned anywhere on the site.",
+     "source": "https://tokichi.jp/blogs/menu/ginza"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The cha-soba is served in bonito dashi; parfaits and kakigōri use dairy ice cream and cream; the baked goods are egg-and-butter.",
+     "source": "https://tabelog.com/tokyo/A1301/A130101/13207589/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "Per-store allergen charts are published for all six restaurant locations including Ginza, and a customer line (0120-137-555, 10:00–17:00, closed Sundays) is given for allergen questions. The charts are images rather than text, so they must be read on the page.",
+     "source": "https://tokichi.jp/pages/menu-allergens"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Published, store-specific allergen information and an honest cross-contact disclaimer — the shop tells you what it cannot promise instead of implying safety.",
+     "source": "https://tokichi.jp/pages/menu-allergens"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "A department-store tea room on the 4th floor of GINZA SIX, two minutes from Ginza Station exit A3. No reservations, so expect a queue at weekends and around 3 pm; the wait is managed with chairs outside the door. Fifty seats, an English-friendly retail environment, cards, e-money and QR payment accepted, a photo menu, and a welcome pot of tea brought to the table with the flask left beside it so you pour your own. If you keep gluten out, treat this as a tea-only stop — order a pot and skip the food."
+  },
+  "sources": [
+   "https://tokichi.jp/pages/ginza-store-page",
+   "https://tokichi.jp/blogs/menu/ginza",
+   "https://tokichi.jp/pages/menu-allergens",
+   "https://tokichi.jp/pages/history",
+   "https://tabelog.com/tokyo/A1301/A130101/13207589/",
+   "https://tabelog.com/tokyo/A1301/A130101/13207589/dtlmenu/",
+   "https://ameblo.jp/aketalove/entry-12884473102.html",
+   "https://www.enjoytokyo.jp/article/110360/"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「中村藤吉本店」 pinned in Tsukiji/Ginza. 中村藤吉本店 is the company name and its 本店 is in Uji, Kyoto, some 370 km away. The Tokyo entity is 中村藤吉本店 銀座店 on GINZA SIX 4F, which does serve the 茶そば and matcha dishes the light record describes, so the record is real and does belong in Tokyo — only the name and the pin were wrong. Coordinates moved from the approximate 35.6717/139.765 to the store's own 35.669893/139.764457 (Tabelog), about 350 m. Note there is a second Tokyo branch, 麻布台店, if a future pass wants it."
+ },
+ {
+  "id": "tokyo3__87",
+  "status": "unresolved",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tempura restaurant named 中島 / なかしま exists in Tsukiji",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says 築地 / Tsukiji Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business itself could not be identified. (Any tempura kitchen is a wheat-batter kitchen regardless, so the light record's gf 'no' is at least directionally right.)",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Three near-name candidates exist and none of them fits. (1) 天ぷら なかがわ, 東京都中央区築地2-14-2 築地NYビル 1F, two minutes from Tsukiji Station exit 2 — right trade, right neighbourhood, rated 3.7 over ~294 reviews, and second in Tabelog's Tsukiji tempura ranking. But its name is なかがわ, not 中島, and calling this the record's business would be a guess rather than an identification. (2) 築地 奈可嶋 (Tsukiji Nakashima), a sushi-and-sōzai counter brand run by the 80-year-old fish wholesaler 中島水産 — its outlets are department-store food halls (Ōfuna Lumine Wing, Ikebukuro ISP, Hamamatsu Entetsu), not a Tsukiji tempura shop, and 築地 in the name is a brand word. (3) 中島商店, a dried- and salted-fish wholesaler in the Tsukiji outer market — a shop, not a restaurant. Tabelog's Tsukiji tempura ranking (旬恵庵 あら垣, なかがわ, 清壽, てんぷら黒川, つきじ天辰 本店, 天ぷらバル 天むす 銀座 たけぞう, てんぷら天朝) contains no 中島. Rather than pin the record on なかがわ by phonetic resemblance, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan queries 「つきじ 中島 天ぷら 築地 東京 老舗」, 「\"つきじ中島\" OR \"築地 中島\" 天ぷら 中央区」, 「中島 築地 場外市場 天ぷら 店 食べログ」, the exact string 「つきじ中島」 and the nationwide 「天ぷら 中島 東京 店 食べログ 老舗」 all returned HTTP 200 with results. The exact-name query surfaced Tabelog 13002379 = 天ぷら なかがわ and the 中島水産 sōzai brand 築地 奈可嶋; the nationwide 天ぷら 中島 query surfaced only 新宿割烹 中嶋 and 中嶋 (人形町), which are kappō restaurants, not Tsukiji tempura.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1313/A131301/13002379/",
+    "https://s.tabelog.com/tempura/tokyo/A1313/A131301/rank",
+    "https://tkjm.jp/tsukijijougai/store138/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. If a future pass wants a real old Tsukiji tempura counter in its place, 天ぷら なかがわ (中央区築地2-14-2, Tsukiji exit 2, 2 min) and つきじ天辰 本店 (中央区築地7-11-12) are both genuine and well reviewed — but neither is this record."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1313/A131301/13002379/",
+   "https://s.tabelog.com/tempura/tokyo/A1313/A131301/rank",
+   "https://tkjm.jp/tsukijijougai/store138/"
+  ],
+  "enrich_note": "UNRESOLVED. Every search leg ran and returned HTTP 200: Yahoo Japan on 「つきじ 中島 天ぷら 築地 東京 老舗」, 「\"つきじ中島\" OR \"築地 中島\" 天ぷら 中央区」, 「中島 築地 場外市場 天ぷら 店 食べログ」, the exact string 「つきじ中島」, and the nationwide 「天ぷら 中島 東京 店 食べログ 老舗」; plus a direct read of Tabelog's Tsukiji tempura ranking. Nearest candidates: 天ぷら なかがわ (中央区築地2-14-2 築地NYビル1F — right trade and neighbourhood, wrong name), 築地 奈可嶋 (a 中島水産 department-store sushi/sōzai brand, not a Tsukiji restaurant) and 中島商店 (a dried-fish wholesaler in the outer market). None is a 老舗天ぷら屋 called 中島. Coordinates unchanged, loc_precise:false."
+ }
+]
