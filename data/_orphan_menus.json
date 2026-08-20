@@ -1,0 +1,446 @@
+[
+ {
+  "city": "kyoto",
+  "id": "vm_saishoku_ryori_f_effe",
+  "items": 13,
+  "candidates": [],
+  "menu": {
+   "verified": "authoritative",
+   "confidence": "high",
+   "sources": [
+    "https://www.naturale-f.com/",
+    "https://www.naturale-f.com/course.html",
+    "https://tabelog.com/en/kyoto/A2601/A260201/26034641/",
+    "https://note.com/miyabism_net/n/n1b248245018b"
+   ],
+   "price_note": "Prices approximate — may change.",
+   "last_checked": "2026-06-25",
+   "items": [
+    {
+     "ja": "おまかせコース",
+     "romaji": "Omakase Kosu",
+     "en": "Chef's choice full course (amuse, appetizer platter, soup, pasta, mains, rice-flour bread, dessert platter, coffee/tea)",
+     "price": "¥5,000",
+     "section": "Set meals",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Vegan; but the included pasta course uses spelt (ancient wheat) so contains gluten unless GF pasta requested in advance",
+     "dish_key": "chefs_tasting_course"
+    },
+    {
+     "ja": "おまかせライトコース",
+     "romaji": "Omakase Raito Kosu",
+     "en": "Chef's choice light course (amuse, appetizer platter, soup, pasta, mains)",
+     "price": "¥4,000",
+     "section": "Set meals",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Vegan; included spelt pasta contains gluten unless GF pasta requested in advance",
+     "dish_key": "chefs_tasting_course_light"
+    },
+    {
+     "ja": "プレートセット",
+     "romaji": "Pureto Setto",
+     "en": "Lunch plate set (salad, soup, main, 5-6 sides, enzyme brown rice)",
+     "price": "¥2,000",
+     "section": "Set meals",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Vegan; brown rice base is GF but sides/seasonings vary so confirm GF in advance",
+     "dish_key": "lunch_plate_set"
+    },
+    {
+     "ja": "カレーセット",
+     "romaji": "Kare Setto",
+     "en": "Curry set (salad, soup, 3-4 sides, daily curry, enzyme brown rice)",
+     "price": "¥2,000",
+     "section": "Set meals",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Vegan; curry roux may use wheat flour, confirm GF in advance",
+     "dish_key": "curry_set"
+    },
+    {
+     "ja": "古代小麦スパゲティセット",
+     "romaji": "Kodai Komugi Supageti Setto",
+     "en": "Spelt spaghetti set (salad, soup, 3-4 sides, daily pasta)",
+     "price": "¥2,000",
+     "section": "Set meals",
+     "gf": "no",
+     "vegan": "vegan",
+     "note": "Vegan but pasta is spelt (ancient wheat) = contains gluten; GF pasta swap available +¥200 on request",
+     "dish_key": "pasta_set"
+    },
+    {
+     "ja": "季節野菜のカレー 酵素玄米付き",
+     "romaji": "Kisetsu Yasai no Kare Koso Genmai Tsuki",
+     "en": "Seasonal vegetable curry with enzyme brown rice",
+     "price": "¥1,200",
+     "section": "Mains",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Vegan (e.g. chickpea, lotus root, burdock, daikon); curry roux may contain wheat, confirm GF",
+     "dish_key": "vegetable_curry"
+    },
+    {
+     "ja": "本日のスパゲティ",
+     "romaji": "Honjitsu no Supageti",
+     "en": "Daily spaghetti (e.g. soy-meat bolognese or tomato sauce)",
+     "price": "¥1,300",
+     "section": "Pasta",
+     "gf": "no",
+     "vegan": "vegan",
+     "note": "Vegan but spelt (ancient wheat) pasta contains gluten; GF pasta available +¥200 on request",
+     "dish_key": "spaghetti"
+    },
+    {
+     "ja": "ヴィーガンチーズ盛り合わせ",
+     "romaji": "Vigan Chizu Moriawase",
+     "en": "Vegan cheese platter",
+     "price": "¥600 (4 pieces) / ¥1,200 (8 pieces)",
+     "section": "Small plates",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Dairy-free vegan cheese; confirm GF as some vegan cheeses use wheat-based binders",
+     "dish_key": "vegan_cheese_plate"
+    },
+    {
+     "ja": "米粉パン（2個）",
+     "romaji": "Komeko Pan (2-ko)",
+     "en": "Rice flour bread (2 pieces)",
+     "price": "¥300",
+     "section": "Sides",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Made from rice flour (no wheat flour) and vegan; confirm no shared-kitchen cross-contact for celiac",
+     "dish_key": "rice_flour_bread"
+    },
+    {
+     "ja": "酵素玄米",
+     "romaji": "Koso Genmai",
+     "en": "Enzyme-fermented brown rice",
+     "price": "¥300",
+     "section": "Sides",
+     "gf": "gf",
+     "vegan": "vegan",
+     "note": "Plain fermented brown rice; naturally gluten-free and vegan",
+     "dish_key": "brown_rice"
+    },
+    {
+     "ja": "デザート盛り合わせ",
+     "romaji": "Dezato Moriawase",
+     "en": "Assorted dessert platter",
+     "price": "¥600",
+     "section": "Dessert",
+     "gf": "ask",
+     "vegan": "vegan",
+     "note": "Vegan, no dairy/eggs/refined sugar; confirm GF as some items may contain wheat flour",
+     "dish_key": "dessert_platter"
+    },
+    {
+     "ja": "コーヒー／紅茶／ハーブティー",
+     "romaji": "Kohi / Kocha / Habu Ti",
+     "en": "Coffee / black tea / herbal tea",
+     "price": "¥400",
+     "section": "Drinks",
+     "gf": "gf",
+     "vegan": "vegan",
+     "note": "Plain hot beverage; gluten-free and vegan",
+     "dish_key": "coffee_tea"
+    },
+    {
+     "ja": "叶コーヒー",
+     "romaji": "Kanae Kohi",
+     "en": "Kanae coffee",
+     "price": "¥500",
+     "section": "Drinks",
+     "gf": "gf",
+     "vegan": "vegan",
+     "note": "Specialty coffee; gluten-free and vegan",
+     "dish_key": "specialty_coffee"
+    }
+   ]
+  }
+ },
+ {
+  "city": "nara",
+  "id": "nara_tengaibou",
+  "items": 2,
+  "candidates": [],
+  "menu": {
+   "verified": true,
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/nara/A2901/A290101/29009679/",
+    "https://tabelog.com/en/nara/A2901/A290101/29009679/"
+   ],
+   "price_note": "Prices approximate — may change.",
+   "last_checked": "2026-07-03",
+   "items": [
+    {
+     "ja": "コーヒー（自家焙煎）",
+     "romaji": "kohi (jikabaisen)",
+     "en": "Self-roasted coffee",
+     "price": null,
+     "section": "ドリンク (drink)",
+     "gf": "gf",
+     "vegan": "vegan",
+     "note": "Black self-roasted coffee — naturally gluten-free and vegan. Price not published; verify in person.",
+     "dish_key": "coffee"
+    },
+    {
+     "ja": "チーズケーキとコーヒー",
+     "romaji": "chizukeki to kohi",
+     "en": "Cheesecake with coffee (set)",
+     "price": "¥1,050",
+     "section": "セット (set)",
+     "gf": "",
+     "vegan": "",
+     "note": "The coffee is GF, but the cheesecake almost certainly contains wheat flour (and dairy/egg). Order coffee alone unless the shop confirms a flourless cheesecake. Full menu is largely undocumented online — verify sweets on-site.",
+     "dish_key": "cheesecake_coffee_set"
+    }
+   ]
+  }
+ },
+ {
+  "city": "nara",
+  "id": "nara_naramachi_nakamuraya",
+  "items": 12,
+  "candidates": [],
+  "menu": {
+   "verified": true,
+   "confidence": "medium",
+   "sources": [
+    "https://nakamuraya-nara.jp/",
+    "https://nakamuraya-nara.jp/menu.html"
+   ],
+   "price_note": "Prices approximate — may change.",
+   "last_checked": "2026-07-03",
+   "items": [
+    {
+     "ja": "Pranzo del Giorno 1",
+     "romaji": "Puranzo deru joruno 1",
+     "en": "Lunch course 1 — 7 courses",
+     "price": "¥3,900",
+     "section": "Lunch Courses",
+     "gf": "ask",
+     "vegan": "ask",
+     "note": "Tasting course; pasta courses are wheat but chef may adapt — arrange GF when booking.",
+     "dish_key": "lunch_course_1"
+    },
+    {
+     "ja": "Pranzo del Giorno 2",
+     "romaji": "Puranzo deru joruno 2",
+     "en": "Lunch course 2 — 8 courses",
+     "price": "¥5,500",
+     "section": "Lunch Courses",
+     "gf": "ask",
+     "vegan": "ask",
+     "note": "Tasting course; arrange GF when booking.",
+     "dish_key": "lunch_course_2"
+    },
+    {
+     "ja": "Menu Degustazione 1",
+     "romaji": "Menyū degusutatsione 1",
+     "en": "Dinner tasting menu 1 — 8 courses",
+     "price": "¥7,500",
+     "section": "Dinner Courses",
+     "gf": "ask",
+     "vegan": "ask",
+     "note": "Tasting course; arrange GF when booking.",
+     "dish_key": "dinner_degustazione_1"
+    },
+    {
+     "ja": "Menu Speciale",
+     "romaji": "Menyū supechāre",
+     "en": "Special menu — 9 courses (2-day advance reservation)",
+     "price": "¥13,000",
+     "section": "Dinner Courses",
+     "gf": "ask",
+     "vegan": "ask",
+     "note": "Tasting course; arrange GF when booking.",
+     "dish_key": "dinner_speciale"
+    },
+    {
+     "ja": "炙り秋刀魚のマリネ",
+     "romaji": "Aburi sanma no marine",
+     "en": "Marinated seared saury",
+     "price": "",
+     "section": "Antipasti",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Confirm the marinade has no soy sauce/wheat.",
+     "dish_key": "marinated_saury"
+    },
+    {
+     "ja": "ヴィテッロ トンナート ピエモンテ風",
+     "romaji": "Viterro tonnāto piemonte-fū",
+     "en": "Vitello tonnato, Piedmont style (veal with tuna sauce)",
+     "price": "",
+     "section": "Antipasti",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Tonnato sauce is usually GF (tuna/egg/capers) — confirm no wheat.",
+     "dish_key": "vitello_tonnato"
+    },
+    {
+     "ja": "真ダコのヴァポーレとソプレッサータ",
+     "romaji": "Madako no vapōre to sopuressāta",
+     "en": "Steamed octopus with soppressata salami",
+     "price": "",
+     "section": "Antipasti",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Octopus and salami are usually GF — confirm salami has no wheat filler.",
+     "dish_key": "octopus_soppressata"
+    },
+    {
+     "ja": "鮑とフレッシュハーブのフェデリーニ サルデーニャ産ボッタルガ",
+     "romaji": "Awabi to furesshu hābu no federīni Sarudēnya-san bottaruga",
+     "en": "Abalone & fresh-herb fedelini with Sardinian bottarga",
+     "price": "",
+     "section": "Primo (Pasta)",
+     "gf": "",
+     "vegan": "",
+     "note": "Wheat pasta.",
+     "dish_key": "fedelini_abalone"
+    },
+    {
+     "ja": "生ハムとマスカルポーネのムース詰めトルテッローニ セージバターソース",
+     "romaji": "Namahamu to masukarupōne no mūsu-zume torutellōni sēji batā sōsu",
+     "en": "Prosciutto & mascarpone-mousse tortelloni, sage butter sauce",
+     "price": "",
+     "section": "Primo (Pasta)",
+     "gf": "",
+     "vegan": "",
+     "note": "Wheat pasta; contains dairy.",
+     "dish_key": "tortelloni_prosciutto"
+    },
+    {
+     "ja": "天然鮮魚のアクアパッツァ",
+     "romaji": "Tennen sengyo no akua pattsa",
+     "en": "Acqua pazza of wild fresh fish",
+     "price": "",
+     "section": "Secondo (Fish)",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Acqua pazza (fish, tomato, olives, wine) is typically wheat-free — confirm.",
+     "dish_key": "acqua_pazza"
+    },
+    {
+     "ja": "知床牛のタリアータと季節野菜",
+     "romaji": "Shiretoko-gyū no tariāta to kisetsu yasai",
+     "en": "Shiretoko beef tagliata with seasonal vegetables",
+     "price": "",
+     "section": "Secondo (Meat)",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Grilled beef can be GF — confirm the sauce/balsamic glaze has no wheat.",
+     "dish_key": "beef_tagliata"
+    },
+    {
+     "ja": "ドルチェ",
+     "romaji": "Doruche",
+     "en": "Dolce (dessert of the day)",
+     "price": "",
+     "section": "Dolce",
+     "gf": "",
+     "vegan": "",
+     "note": "Desserts typically contain wheat.",
+     "dish_key": "dolce"
+    }
+   ]
+  }
+ },
+ {
+  "city": "nara",
+  "id": "nara_kissa_saho",
+  "items": 6,
+  "candidates": [
+   {
+    "id": "nara_kissa_to_keishoku_saho",
+    "name": "喫茶と軽食 佐保 (Kissa to Keishoku Saho)",
+    "shared": 2
+   }
+  ],
+  "menu": {
+   "verified": true,
+   "confidence": "low",
+   "sources": [
+    "https://www.narakko.jp/saho/",
+    "https://www.hotpepper.jp/strJ004122551/",
+    "https://tabelog.com/en/nara/A2901/A290101/29010643/"
+   ],
+   "price_note": "Prices approximate — may change.",
+   "last_checked": "2026-07-03",
+   "items": [
+    {
+     "ja": "モーニングサービス",
+     "romaji": "Mōningu sābisu",
+     "en": "Morning service set",
+     "price": "¥400",
+     "section": "Morning",
+     "gf": "",
+     "vegan": "",
+     "note": "Typically toast-based — wheat.",
+     "dish_key": "morning_service"
+    },
+    {
+     "ja": "焼き豚炒飯",
+     "romaji": "Yakibuta chāhan",
+     "en": "Roast-pork fried rice",
+     "price": "¥600",
+     "section": "Set meals",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Fried rice is usually seasoned with soy sauce (wheat); ask for salt seasoning only.",
+     "dish_key": "roast_pork_fried_rice"
+    },
+    {
+     "ja": "定食（8種）",
+     "romaji": "Teishoku (8-shu)",
+     "en": "Set meals — 8 varieties (e.g. tonkatsu, grilled meat)",
+     "price": "¥600–¥700",
+     "section": "Set meals",
+     "gf": "ask",
+     "vegan": "ask",
+     "note": "Varies by dish; tonkatsu is wheat, grilled-meat versions may be fixable — confirm each. Backyard organic vegetables used.",
+     "dish_key": "teishoku_varieties"
+    },
+    {
+     "ja": "ピラフ",
+     "romaji": "Pirafu",
+     "en": "Pilaf",
+     "price": "single-dish price",
+     "section": "Single dishes",
+     "gf": "ask",
+     "vegan": "",
+     "note": "Rice-based; ask about butter/soy seasoning and broth.",
+     "dish_key": "pilaf"
+    },
+    {
+     "ja": "スパゲティ",
+     "romaji": "Supagetti",
+     "en": "Spaghetti",
+     "price": "single-dish price",
+     "section": "Single dishes",
+     "gf": "",
+     "vegan": "ask",
+     "note": "Wheat pasta.",
+     "dish_key": "spaghetti"
+    },
+    {
+     "ja": "ドリンク各種",
+     "romaji": "Dorinku kakushu",
+     "en": "Beverages (all types)",
+     "price": "¥350",
+     "section": "Drinks",
+     "gf": "ask",
+     "vegan": "ask",
+     "note": "Black coffee/tea is GF/vegan; milk drinks are not vegan. Confirm.",
+     "dish_key": "drinks"
+    }
+   ]
+  }
+ }
+]

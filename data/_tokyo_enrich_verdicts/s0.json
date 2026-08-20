@@ -1,0 +1,619 @@
+[
+ {
+  "id": "tokyo3_kamiya",
+  "name": "精進料理 醍醐",
+  "lat": 35.663520,
+  "lng": 139.748972,
+  "loc_precise": true,
+  "address_ja": "〒105-0002 東京都港区愛宕2-3-1 201",
+  "enrich_confidence": "high",
+  "cuisine": "Michelin-starred shōjin kaiseki in a 1950 sukiya-zukuri house with its own garden — courses only, ¥17,800–¥34,000",
+  "cuisine_type": "shojin",
+  "neighborhood": "Atago 2-chōme, at the foot of Atago-yama — 5 min from Kamiyachō (Hibiya line, exit 3), 3 min from Onarimon (Toei Mita line, exit A5)",
+  "website": "https://www.atago-daigo.jp/",
+  "menu_url": "https://www.atago-daigo.jp/",
+  "hours_raw": "昼の部 11:30～（最終入店 13:00）／夜の部 17:00～（最終入店 20:00）　定休日：年始のみ",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "No gluten-free claim anywhere. Every course includes 揚物 (a fried course, wheat batter) and the seasoning base is ordinary wheat soy sauce; 麩 (wheat gluten) is standard in shōjin. The kitchen does take written dietary requests by the day before, so a celiac should raise it at booking — but nothing published shows they run a wheat-free line.",
+  "vegan_status": "options",
+  "vegan_detail": "Not vegan by default: the restaurant's own site states 「料理の一部に少量の鰹節と卵を使用しております」 — some dishes carry a little bonito flake and egg. It also states that a completely animal-free preparation is available if you tell them by the previous day (前日までにお申し付けください). So vegan is possible, but only as a pre-arranged version of the course.",
+  "chef_bio": {
+   "chef_name": "野村祐介 (Yusuke Nomura)",
+   "roles": ["四代目 (fourth-generation owner-chef)"],
+   "origin": "Atago, Minato-ku — the family house at the foot of Atago-yama, where the restaurant has stood since 1950",
+   "background": "Daigo has been cooking shōjin at the foot of Atago-yama since 1950, and Yusuke Nomura is the fourth generation of his family to run it. The building is a sukiya-zukuri wooden house with a Japanese garden — eight private rooms, no main dining room at all, so every meal happens behind a sliding door with the garden on the other side of it: new green in spring, maples in autumn. You arrive off a Minato-ku street, take a private lift from the ground floor, and a doorman meets you; guests routinely describe the switch from central Tokyo to silence and a faint smell of incense as the first course of the evening. Nomura writes that the kitchen buys every morning from the Toyosu produce market and from growers around the country, and that he keeps the menu his predecessors set while letting it move with the times — 「創業以来の献立を守りつつ、時代と共に進化した精進料理」. There is no à la carte: four kaiseki courses, ¥17,800 (lunch only) to ¥34,000, each running the full 八寸–煮物–揚物–強肴–甘味 shape with vegetables, tofu, fu and dried goods standing in for everything else. The house has carried Michelin stars for well over a decade — ANA's 2023 press material describes it as a two-star restaurant — and the room is now largely booked by overseas guests. Nomura's stated philosophy is Buddhist and blunt about hospitality rather than austerity: he runs the house on the 三心, the 'three minds' of the temple kitchen — 大心 (an unbiased, free mind), 喜心 (a mind that enjoys hosting) and 老心 (a mind of care and attention) — and says shōjin should be enjoyed with all five senses rather than endured.",
+   "philosophy": "「三心」— 大心・喜心・老心, the Zen temple-kitchen virtues, applied to guests and staff alike; shōjin as something to be enjoyed with all five senses, not a penance.",
+   "specialty": "Kaiseki-format shōjin courses (蘭 ¥34,000 / 竹 ¥30,000 / 梅 ¥26,000 / 菊 ¥17,800 lunch only), served in one of eight private tatami rooms overlooking the garden.",
+   "anecdotes": [
+    {"text": "The building has stood at the foot of Atago-yama since the restaurant opened in 1950; guests take a private lift from street level and are met by a doorman, which is unusual enough in Tokyo that reviewers mention it before they mention the food.", "source": "https://www.atago-daigo.jp/"},
+    {"text": "Eight private rooms only, holding 2 to 58 people — parties over 30 get a tatami room. There is no shared dining room.", "source": "https://www.atago-daigo.jp/"},
+    {"text": "A 2025 diner reports the chopsticks are 雷除箸 ('thunder-warding chopsticks'), which you are invited to take home.", "source": "https://tabelog.com/tokyo/A1307/A130704/13001484/"}
+   ],
+   "japanese_sources_summary": "The shop's own site (atago-daigo.jp) carries the fourth-generation owner's signed greeting, the 1950 founding date, the four course menus with prices, the room count, the hours, and — importantly for this app — the explicit allergen line about bonito and egg. Tabelog's listing confirms the address, the 神谷町駅から366m distance, the phone number, the 1950 opening, 100 seats/8 private rooms, and the 15% service charge. ANA's 2023 corporate release describes Daigo as a two-Michelin-star shōjin restaurant.",
+   "confidence": "high",
+   "sources": ["https://www.atago-daigo.jp/", "https://tabelog.com/tokyo/A1307/A130704/13001484/", "https://www.anahd.co.jp/group/pr/202308/20230808-2.html"]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {"text": "A shared kaiseki kitchen that fries a 揚物 course for every guest. No dedicated fryer or wheat-free line is claimed anywhere.", "source": "https://www.atago-daigo.jp/"}
+   ],
+   "soy_sauce_wheat": [
+    {"text": "No tamari or wheat-free soy sauce is mentioned; assume ordinary wheat shōyu throughout, plus 麩 (wheat gluten), which is a staple protein in shōjin cooking.", "source": "https://www.atago-daigo.jp/"}
+   ],
+   "vegan_cross_contact": [
+    {"text": "The restaurant states plainly that a small amount of bonito flake and egg is used in part of the course. This is a shōjin house in style, not a vegan one by default.", "source": "https://www.atago-daigo.jp/"}
+   ],
+   "staff_allergy_handling": [
+    {"text": "「動物性の食材を一切使用しない調理をご希望の方は前日までにお申し付けください」 — a fully animal-free version is prepared on request with one day's notice. That is a real, published accommodation, but it addresses veganism, not gluten.", "source": "https://www.atago-daigo.jp/"}
+   ],
+   "positives": [
+    {"text": "Course-only, fully reserved, kitchen-controlled service with a day's notice on the booking — the format that most easily absorbs a dietary request, if you make it in Japanese when you book.", "source": "https://www.atago-daigo.jp/"}
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Reservation-only and expensive: courses ¥17,800–¥34,000 plus a 15% service charge, cancellation 50% from two days out and 100% on the day. The site has an English page and the room is mostly international guests these days, but booking is by phone (03-3431-0811) or a Japanese web form, and any dietary request has to land the day before — write it out in Japanese or book through a concierge. Shoes off, private tatami room, no dress code published but dress as you would for a kaiseki house."
+  },
+  "sources": [
+   "https://www.atago-daigo.jp/",
+   "https://tabelog.com/tokyo/A1307/A130704/13001484/",
+   "https://www.anahd.co.jp/group/pr/202308/20230808-2.html",
+   "https://guide.michelin.com/jp/ja/tokyo-region/tokyo/restaurant/daigo"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「精進料理 大五」. No restaurant of that name exists in Tokyo: 大五 and 醍醐 are both read *daigo*, and the only shōjin restaurant at Kamiyachō is 精進料理 醍醐 at Atago 2-3-1 — same station, same cuisine, same reading. Tabelog's nationwide search returns no 精進料理 大五. Treated as a transcription error and enriched as 醍醐; the coordinates given are Daigo's. Also note the light record's 「5 min walk from Ginza」 is wrong — Ginza is ~2.5 km away; it is 5 min from Kamiyachō."
+ },
+ {
+  "id": "tokyo3__117",
+  "name": "築地本願寺 日本料理 紫水",
+  "lat": 35.666057,
+  "lng": 139.771866,
+  "loc_precise": true,
+  "address_ja": "〒104-0045 東京都中央区築地3-15-1 築地本願寺第一伝道会館内",
+  "enrich_confidence": "medium",
+  "cuisine": "Temple-hall Japanese restaurant inside Tsukiji Hongan-ji — everyday soba/donburi/set-meal menu, with a pre-ordered shōjin course (精進料理「のぞみ」¥4,200) alongside it",
+  "cuisine_type": "shojin",
+  "neighborhood": "Tsukiji 3-15-1, inside the temple's Dai-ichi Dendō Kaikan on the Hongan-ji grounds — 1 min from Tsukiji (Hibiya line, Hongan-ji exit), 5 min from Higashi-Ginza",
+  "website": "https://tsukijihongwanji-kaikan.jp/restaurant.html",
+  "menu_url": "https://tsukijihongwanji-kaikan.jp/restaurant.html",
+  "hours_raw": "紫水 11:00～14:00（伝道会館の公式ページ）／食べログ掲載は 11:00～21:00・ランチ営業は15時まで・17時以降は要予約。ティーラウンジ 9:00～17:00。定休日：年末年始",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable. The shōjin course is built around 車麩 (wheat gluten, served as mock kakuni) and 干瓢/湯葉 in wheat-soy seasoning; the standing menu is tempura sets, tempura-soba, ten-don and katsu. Wheat is in the centre of the dish, not at the edge.",
+  "vegan_status": "limited",
+  "vegan_detail": "There is a genuine shōjin set — 精進料理「のぞみ」¥4,200 — but the kaikan's own page says it is taken by advance order only, minimum four people, three days ahead (4名様より事前申し込み・3日前まで). Everything else on the menu is fish or chicken (sashimi zen, grilled fish, oyako-don, kaisen-don) and the soba tsuyu will be bonito dashi. Whether the shōjin course's own dashi is konbu-only is not published — ask when ordering. For a solo traveller turning up, this is not a vegan meal.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": ["operated by 会館開発株式会社 for Tsukiji Hongan-ji"],
+   "origin": "Tsukiji Hongan-ji, the Jōdo Shinshū Hongan-ji-ha temple in Chūō-ku",
+   "background": "Shisui is the restaurant on the ground floor of Tsukiji Hongan-ji's Dai-ichi Dendō Kaikan, the hall beside Itō Chūta's famous 1934 stone temple. It exists first to feed the temple's own traffic — the meal after a memorial service, the reception after a funeral, the wedding party — which is why it seats 280 across tables, tatami and twelve private rooms and can be booked out for fifty and more. Alongside that it runs an ordinary, cheap, well-liked lunch counter: a sashimi zen at ¥1,580, a weekday oyako-don at ¥1,260, mon-zen seiro soba at ¥830, with the temple's own club members getting five percent off. The shōjin is a separate, deliberate thing rather than the house style — 精進料理「のぞみ」at ¥4,200, ordered three days ahead for four or more, and built the way funeral shōjin has always been built in Japan: tofu, kanpyō, yuba and nori assembled to look convincingly like a fish, and kuruma-fu braised to pass for pork kakuni. No individual chef is named publicly; the kitchen is run by 会館開発株式会社, the temple's hall-management company, and its own copy talks about 料理人のおもてなしの思い rather than a personality.",
+   "philosophy": "Temple hospitality: the meal that follows a service. Seasonal Japanese cooking priced for congregation and neighbourhood rather than for the Ginza expense account next door.",
+   "specialty": "精進料理「のぞみ」¥4,200 (advance order, 4+ people, 3 days); mock-fish of tofu/kanpyō/yuba/nori and kuruma-fu 'kakuni'; ten-seiro soba with the house dashi; the ¥1,580 sashimi zen at lunch.",
+   "anecdotes": [
+    {"text": "The kaikan's own page shows the shōjin course photographed as its two party pieces: a whole 'fish' built from tofu, kanpyō, yuba and nori, and kuruma-fu braised to look like pork kakuni — both described as having been shown on television.", "source": "https://tsukijihongwanji-kaikan.jp/restaurant.html"},
+    {"text": "Reviewers note that a large share of the room is people eating after a memorial service — 'I had the bentō after my grandfather's third-anniversary rites' is a normal Tabelog entry here.", "source": "https://tabelog.com/tokyo/A1313/A131301/13113878/"},
+    {"text": "The old business-lunch service has been discontinued, but the soba survived it and is what regulars come back for.", "source": "https://tabelog.com/tokyo/A1313/A131301/13113878/"}
+   ],
+   "japanese_sources_summary": "築地本願寺伝道会館's own restaurant page carries the full priced menu, the shōjin course terms (¥4,200, 4名様より, 3日前まで), the 11:00–14:00 hours for 紫水 and 9:00–17:00 for the tea lounge, and the address. Tabelog confirms the address inside 第一伝道会館, the 280 seats, the phone number, the 12月30日～1月4日 closure and a broader 11:00–21:00 operating window with lunch to 15:00 and evening by reservation — hence hours_status 'irregular'.",
+   "confidence": "medium",
+   "sources": ["https://tsukijihongwanji-kaikan.jp/restaurant.html", "https://tabelog.com/tokyo/A1313/A131301/13113878/", "https://tsukijihongwanji.jp/enjoy/meal-stay/"]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {"text": "A 280-seat banquet kitchen turning out tempura, soba and katsu all day. Wheat flour and wheat noodles are in constant use; no wheat-free handling is claimed.", "source": "https://tsukijihongwanji-kaikan.jp/restaurant.html"}
+   ],
+   "soy_sauce_wheat": [
+    {"text": "Standard wheat shōyu assumed throughout; no tamari mentioned. The shōjin course itself uses 車麩 — wheat gluten — as a main component.", "source": "https://tsukijihongwanji-kaikan.jp/restaurant.html"}
+   ],
+   "vegan_cross_contact": [
+    {"text": "The everyday menu is fish- and chicken-led (sashimi zen, grilled fish, kaisen-don, oyako-don) and the soba tsuyu is a bonito dashi. The shōjin course is prepared to order in the same kitchen; the kaikan does not publish whether its dashi is konbu-only.", "source": "https://tsukijihongwanji-kaikan.jp/restaurant.html"}
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {"text": "A real, priced, published shōjin course rather than an improvised vegetable plate — and a temple context where the request is routine rather than strange.", "source": "https://tsukijihongwanji-kaikan.jp/restaurant.html"}
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Walking in for lunch is easy — it is a large, plainly signed hall restaurant on the temple grounds, one minute from Tsukiji station's Hongan-ji exit, and you can point at a photo menu. Getting the shōjin course is the hard part: it needs a Japanese phone call to 03-3544-0551 three days ahead and a party of four. Expect a lot of black suits: much of the room is here after a memorial service, so keep the volume down. The temple's café Tsumugi and the ground-floor tea lounge (9:00–17:00) are the walk-in options if the restaurant is closed."
+  },
+  "sources": [
+   "https://tsukijihongwanji-kaikan.jp/restaurant.html",
+   "https://tabelog.com/tokyo/A1313/A131301/13113878/",
+   "https://tsukijihongwanji.jp/enjoy/meal-stay/"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「築地本院精進料理」, which is not a business name — 本院 is a garbling of 本願寺. The entity that actually serves 精進料理 at Tsukiji Hongan-ji is 日本料理 紫水 in the temple's 第一伝道会館. Confidence is 'medium' because that identification is an inference, though a well-supported one; the coordinates are Shisui's and the original approximate pin was already within ~100 m of them."
+ },
+ {
+  "id": "tokyo3__173",
+  "name": "こまきしょくどう 鎌倉不識庵",
+  "lat": 35.699696,
+  "lng": 139.773144,
+  "loc_precise": true,
+  "address_ja": "〒101-0022 東京都千代田区神田練塀町8-2 CHABARA内",
+  "enrich_confidence": "high",
+  "cuisine": "Casual 'café-style' shōjin teishoku counter under the Akihabara rail viaduct — everything plant-based, and oriental-vegan (no garlic, onion, leek, chives or rakkyō)",
+  "cuisine_type": "shojin",
+  "neighborhood": "CHABARA AKI-OKA MARCHE, in the arches under the JR viaduct at Kanda Neribei-chō 8-2 — 2 min from Akihabara Station's Denki-gai (Electric Town) exit, 168 m from the station",
+  "website": "https://www.kamakura-komaki.com/",
+  "menu_url": "https://www.kamakura-komaki.com/#menu",
+  "hours_raw": "11:00～20:00（L.O. 19:30）・定休日なし（公式サイト／千代田区観光協会）。食べログ掲載は 月～金 11:00-16:00・17:00-19:30、土日 11:00-19:30 — 平日の中休みは店に確認を。",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Plant-based is not gluten-free. The kitchen leans on wheat soy sauce, miso and 麩 (wheat gluten), and the menu includes curry and an omurice; no gluten-free claim is made anywhere. Rice, the miso soup base and several of the nine small dishes may well be safe, but you would be asking dish by dish. Nobody here has published a wheat-free protocol.",
+  "vegan_status": "full",
+  "vegan_detail": "Genuinely full, and stricter than most: no meat, fish, egg, dairy or honey anywhere on the menu including the desserts, no bonito or fish dashi (the stock is plant-based), and no 五葷 — garlic, chives, onion, leek or rakkyō — so it also works for oriental vegans and for monks who can only eat shōjin. The Chiyoda tourism office and the shop's own materials both state this outright.",
+  "chef_bio": {
+   "chef_name": "藤井小牧 (Komaki Fujii)",
+   "roles": ["店主 / okami (owner-proprietor)", "author of 『こまき食堂』(Fusosha)", "member of 「メイドイン東京の会」, a group supporting Tokyo growers and producers"],
+   "origin": "Kamakura — she grew up in the household of Fushiki-an, her parents' shōjin practice",
+   "background": "Komaki Fujii was born into shōjin cooking and did not choose it so much as inherit it. Her father, 藤井宗哲 (Sōtetsu Fujii, d. 2006), was a Rinzai priest who served as tenzo — head of the kitchen — at Kenchō-ji, the head temple of the Rinzai school in Kamakura, and became one of the best-known writers on temple food in Japan. Her mother, 藤井まり (Mari Fujii, b. 1947), has run the shōjin cooking school Fushiki-an from their Kamakura house for more than thirty years and teaches in Paris, London, Scandinavia and the United States. Komaki grew up eating what her mother cooked from what the Kamakura coast and fields gave up that week; the family barely ate out. The formative memory she keeps returning to is not a dish. During the boom years a stream of people arrived at her father's door in some kind of trouble with food — unable to work out what or how to eat any more — and she watched them leave lighter than they came in. Her father's line 「食事はエサではなく、心を育むもの」 — food is not feed, it is what raises the heart — is the sentence the restaurant runs on. She opened Komaki Shokudō in July 2013, in the arches under the Akihabara viaduct at CHABARA, and named the format 'café-style shōjin': twenty seats behind a wooden lattice screen, ¥1,000-ish set meals, no hush, no ceremony. The signature 口福定食 is nine seasonal side dishes with rice and miso soup — nine because 九椀菜 has its own meaning in shōjin — and the rest of the menu goes places temple food normally doesn't: an egg-free 精進オムライス, a curry, a matcha parfait, anmitsu, warabimochi, all of it plant-based and free of the five pungent roots. Her working principle is 受け入れる, to accept: office workers, tourists, families with allergies and monks who can eat nothing else all come through the same twenty seats, and she thinks the job is to hand each of them something safe without making a performance of it. Regulars — including, she says, one office worker who came four times a week — turn up for the way it makes them feel rather than for the Buddhism. She writes a running column, 「こまきしょくどうからこんにちは」, for the magazine Tennen Seikatsu.",
+   "philosophy": "「食事はエサではなく、心を育むもの」 — her father's words. Accept whoever comes: shōjin is broad enough to feed any dietary minority if you use knowledge and technique rather than making the guest apologise. And, from the shop's own manifesto, that ordinary daily eating is how a food culture actually survives.",
+   "specialty": "口福定食 — nine seasonal small dishes with rice and miso soup, the 九椀菜 of shōjin. Also the egg-free 精進オムライス, the curry, and an entirely plant-based dessert list (matcha parfait, anmitsu, warabimochi).",
+   "anecdotes": [
+    {"text": "Everything, desserts included, avoids the 五葷 — garlic, chives, onion, leek, rakkyō — so the restaurant works for oriental vegans and for ordained monks, not just for vegans in the Western sense.", "source": "https://visit-chiyoda.tokyo/app/spot/detail/926"},
+    {"text": "Fujii was nervous about opening in Akihabara of all places. Her answer to whether it worked: 「一度食べると身体が分かってくれる」 — eat it once and your body understands.", "source": "https://vegewel.com/ja/style/komakishokudo"},
+    {"text": "The shop's own text describes what the founders learned wandering through Japanese and world food: that wakame is at its best just after the first spring wind, that the hands of the miso and mirin makers are as clean as a girl's, and that some ingredients are quietly dying out.", "source": "https://www.kamakura-komaki.com/"},
+    {"text": "'Shokudō' here is written to be read as 食堂 and heard as 食堂(じきどう) — the refectory of a Zen monastery.", "source": "https://www.kamakura-komaki.com/"}
+   ],
+   "japanese_sources_summary": "The shop's own site carries the concept text, the address, the 11:00–20:00 (L.O.19:30) hours, the 20-seat/6-seat-private-room layout and the reservation policy. Chiyoda City's tourism site independently confirms address, hours, no closing day, English and Chinese menus, and states plainly that every menu item is vegan and free of the five pungent roots, with a plant-based dashi. Vegewel's two-part interview supplies the family history — father Sōtetsu Fujii, tenzo at Kenchō-ji; mother Mari Fujii of Fushiki-an — the prices, and the 'acceptance' philosophy. Tennen Seikatsu's author bio gives her full name, 藤井小牧, and her book. Fushiki-an's own site confirms Mari Fujii's biography and her husband's death in 2006. Tabelog adds the 2013-07-23 opening date and the phone number.",
+   "confidence": "high",
+   "sources": ["https://www.kamakura-komaki.com/", "https://visit-chiyoda.tokyo/app/spot/detail/926", "https://vegewel.com/ja/style/komakishokudo", "https://tennenseikatsu.jp/_ct/17440701", "http://kamakurafushikian.com/20160409top-2/20160409profile/"]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {"text": "A twenty-seat kitchen with no gluten-free claim, cooking curry, omurice and fried items alongside everything else. Assume shared pans and shared surfaces.", "source": "https://www.kamakura-komaki.com/"}
+   ],
+   "soy_sauce_wheat": [
+    {"text": "No tamari or wheat-free soy sauce is advertised; the shop's own copy is proud of its 発酵調味料 (fermented seasonings) generally, which in practice means ordinary shōyu and miso. 麩 — wheat gluten — is a standard shōjin protein.", "source": "https://www.kamakura-komaki.com/"}
+   ],
+   "vegan_cross_contact": [
+    {"text": "Effectively none: there is no meat, fish, egg, dairy or honey in the building, and the dashi is plant-based. This is one of the few Tokyo kitchens where a vegan is not eating around the menu.", "source": "https://visit-chiyoda.tokyo/app/spot/detail/926"}
+   ],
+   "staff_allergy_handling": [
+    {"text": "Fujii's stated working principle is that anyone with a dietary restriction should be able to eat here without having to negotiate — the shop describes families with allergies and monks with shōjin-only diets as regular customers. That is a vegan/oriental-vegan competence, not a demonstrated coeliac one.", "source": "https://vegewel.com/ja/style/komakishokudo"}
+   ],
+   "positives": [
+    {"text": "English and Chinese menus are available (Chiyoda City tourism).", "source": "https://visit-chiyoda.tokyo/app/spot/detail/926"},
+    {"text": "Desserts are vegan too, which is rare — matcha parfait, anmitsu and warabimochi with no dairy, egg or honey.", "source": "https://visit-chiyoda.tokyo/app/spot/detail/926"}
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "About the least intimidating shōjin in Tokyo. It sits inside CHABARA, the food market in the arches under the Akihabara viaduct, two minutes from the Electric Town exit — you walk in off a public market floor, not through a temple gate. Twenty seats behind a wooden lattice, English and Chinese menus, cards and IC/PayPay accepted, sets from around ¥1,000. Reservations are preferred (the site has a form) and the private room can only be added to another booking, +¥550 a head. No parking. Open daily; the official hours are 11:00–20:00 with last orders 19:30, though Tabelog shows a weekday break between 16:00 and 17:00 — worth a check if you are coming mid-afternoon."
+  },
+  "sources": [
+   "https://www.kamakura-komaki.com/",
+   "https://visit-chiyoda.tokyo/app/spot/detail/926",
+   "https://vegewel.com/ja/style/komakishokudo",
+   "https://vegewel.com/ja/style/komakishokudo-part2",
+   "https://tennenseikatsu.jp/_ct/17440701",
+   "http://kamakurafushikian.com/20160409top-2/20160409profile/",
+   "https://tabelog.com/tokyo/A1310/A131001/13157986/"
+  ]
+ },
+ {
+  "id": "tokyo3_sora",
+  "lat": 35.7118,
+  "lng": 139.7967,
+  "loc_precise": false,
+  "address_ja": "〒761-0121 香川県高松市牟礼町牟礼2500-2 — NOT Tokyo. This is the only 精進カフェ 宙sora that exists.",
+  "enrich_confidence": "low",
+  "cuisine": "Shōjin / oriental-vegan café — but it is in Mure, Takamatsu, Kagawa, not in Asakusa",
+  "cuisine_type": "shojin",
+  "neighborhood": "COULD NOT VERIFY any Tokyo location. The business by this name is at Mure-chō Mure 2500-2, Takamatsu, Kagawa (Tabelog files it under Kagawa/Yakuri).",
+  "website": "https://shoujinn-cafe-sora.jimdofree.com/",
+  "menu_url": null,
+  "hours_raw": "11:00～15:00（L.O.14:00）・不定休（毎週月曜＋数日）・完全予約制 — these are the Kagawa shop's hours.",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "No gluten-free claim. Not assessed further, because the record's location is wrong — see the note below before using anything here.",
+  "vegan_status": "full",
+  "vegan_detail": "The real shop (in Kagawa) states it uses no meat, fish, egg or dairy and no 五葷 (garlic, chives, onion, leek, rakkyō) — plant ingredients only, organic and additive-free seasonings. That is a genuine full-vegan/oriental-vegan kitchen. It is simply not in Tokyo.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": ["sole owner-operator (一人で運営)"],
+   "origin": "Mure, Takamatsu, Kagawa",
+   "background": "The shop's own site is written in the first person by a single owner who cooks, serves and runs the place alone, which is why it takes reservations only and warns that you may be kept waiting. She writes that she named it 精進カフェ 宙 because cooking, facing each customer, and running the shop are themselves her 精進 — her practice. Beyond lunch she does a 夜宙菜食コース roughly every other month on announced dates, bentō to order from one box with a day's notice, catering for yoga and hiking events, and moxibustion and craft workshops. A Setouchi Press interview profiles the owner as 稲垣希. All of this belongs to a café in Kagawa Prefecture, so it has not been written up as a Tokyo bio.",
+   "philosophy": "Cooking as practice; organic, additive-free seasonings; hospitality as something one person can hold to.",
+   "specialty": "Weekly shōjin plate lunch; occasional evening vegetarian course; takeaway bentō to order.",
+   "anecdotes": [],
+   "japanese_sources_summary": "shoujinn-cafe-sora.jimdofree.com gives the address 〒761-0121 香川県高松市牟礼町牟礼2500-2, the phone 087-808-8800, the 11:00–15:00 reservation-only hours, the no-meat/fish/egg/dairy/五葷 statement and the one-person operation. Tabelog files 精進カフェ宙 under kagawa/A3701/A370101 (八栗). Setouchi Press interviews the owner. No source of any kind places a shop of this name in Tokyo or Asakusa.",
+   "confidence": "low",
+   "sources": ["https://shoujinn-cafe-sora.jimdofree.com/", "https://tabelog.com/kagawa/A3701/A370101/37011155/", "https://setouchipress.com/sora/"]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — record is mislocated",
+   "note": "Do not send anyone in Tokyo here. The only 精進カフェ 宙sora is a one-woman, reservation-only café in Mure, Takamatsu, Kagawa Prefecture — roughly 600 km from Asakusa. The Tokyo pin has been left at its original approximate coordinates and loc_precise is false; the record should be deleted from the Tokyo dataset (or moved to a Kagawa file if one ever exists)."
+  },
+  "sources": [
+   "https://shoujinn-cafe-sora.jimdofree.com/",
+   "https://tabelog.com/kagawa/A3701/A370101/37011155/",
+   "https://setouchipress.com/sora/"
+  ],
+  "enrich_note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. Verified by the shop's own site and by its Tabelog listing that 精進カフェ 宙sora is in Kagawa Prefecture, not Asakusa. Coordinates left unchanged and loc_precise:false."
+ },
+ {
+  "id": "tokyo3__298",
+  "lat": 35.722,
+  "lng": 139.766,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tofu or shōjin restaurant named 越後屋 could be found in Nezu/Sendagi",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 根津・千駄木, 3 min from Sendagi Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified. The light record's 'vegan: full' was inferred from the word 豆腐 and is not supported by anything.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Two different businesses in the area carry the name 越後屋 and neither matches the record. (1) 越後屋豆腐店, a tofu maker at 文京区白山2-8-16 — right trade, wrong neighbourhood (Hakusan, on the Mita line, about 1.5 km from Sendagi), open 5:00–19:30 and under ¥999, i.e. a retail tofu shop rather than a restaurant — and Tabelog flags it 【閉店】, closed. (2) 越後屋酒店 at 台東区谷中3-13-2, four minutes from Sendagi Station — right neighbourhood, but it is a liquor shop with a five-seat standing bar (kakuuchi), open 11:00–20:00, closed Tuesdays; nothing about it is tofu or shōjin. Neither supports a SHOJIN, vegan-full record. Rather than pin the record on a guess, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan searches on 越後屋＋根津/千駄木/豆腐/精進 return only 豆腐room Dy's (a different, unrelated Sendagi tofu restaurant), 越後屋酒店 (Yanaka, standing bar) and the closed 越後屋豆腐店 (Hakusan). Tabelog carries listings for the latter two; both were fetched and their addresses and hours read directly.",
+   "confidence": "low",
+   "sources": ["https://tabelog.com/tokyo/A1323/A132301/13091591/", "https://tabelog.com/tokyo/A1311/A131106/13125633/"]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Two same-named candidates exist in the wider Yanesen area and neither is a shōjin or tofu restaurant; one of them is closed. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1323/A132301/13091591/",
+   "https://tabelog.com/tokyo/A1311/A131106/13125633/"
+  ],
+  "enrich_note": "UNRESOLVED. Nearest candidates: 越後屋豆腐店 (文京区白山2-8-16, 35.715133/139.749029, marked 閉店/closed) and 越後屋酒店 (台東区谷中3-13-2, 35.727751/139.765293, a five-seat standing sake bar). Neither is shōjin. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__324",
+  "lat": 35.693,
+  "lng": 139.735,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop named つき庵 exists in Tokyo",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says Ichigaya Station, Shinjuku-ku.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. Note for whoever re-sources this: soba in Tokyo is almost always nihachi (20% wheat), and even jūwari shops share flour, water and wheat-soy tsuyu, so a 'shōjin soba' record should never be marked GF-safe without direct evidence.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: full' was inferred from the words 精進蕎麦・ヴィーガン対応 and is unsupported; standard soba tsuyu is bonito dashi.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide free-word search for つき庵 returns no restaurant of that name anywhere in Tokyo (nearest hits are 茶房もちつき庵 in Aichi, さつき庵 in Nagano, みつき庵 in Ishikawa). A Yahoo Japan search for つき庵＋市ヶ谷＋蕎麦 returns other Ichigaya soba shops (九段 三日月庵, 松月庵番町, 蕎楽亭, 手打そば大川や) but nothing by this name, and a separate search for vegan/shōjin soba near Ichigaya surfaces only unrelated shops elsewhere in Tokyo (Vegan Soba Tokyo Ayler, Sobaful). On the evidence available this looks like a name generated during the breadth sweep rather than a real business.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan — both return nothing for a Tokyo つき庵.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search + Yahoo Japan both negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__355",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 精進料理 光の庭 exists in Tokyo",
+  "cuisine_type": "shojin",
+  "neighborhood": "Unverified. The light record says Nakano-shimbashi.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: full' was inferred from the word 精進料理 and is unsupported.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide name search for 光の庭 returns no restaurant of that name (the closest hits are 炭火焼鳥 光の鶏 in Tokyo and unrelated garden cafés in Hokkaidō and Kōchi). A Yahoo Japan search for 精進料理 光の庭 中野新橋 returns only general articles about shōjin cuisine and no business listing. On the evidence available this appears to be a name generated during the breadth sweep rather than a real business.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan — both negative.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search + Yahoo Japan both negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__376",
+  "lat": 35.665,
+  "lng": 139.712,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 香雲院 exists in Tokyo",
+  "cuisine_type": "shojin",
+  "neighborhood": "Unverified. The light record says Omotesandō.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: full' was inferred from the word 精進料理 and is unsupported.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide name search for 香雲院 returns nothing at all. A Yahoo Japan search for 香雲院 with 表参道 and 精進料理 returns other, real Tokyo shōjin restaurants (月心居, 伯雲 at Gaienmae, 八雲茶寮) but no business by this name; searching the bare name in quotes returns only temple-history and genealogy pages, i.e. 香雲院 as a posthumous Buddhist name, not a restaurant. On the evidence available this appears to be a name generated during the breadth sweep rather than a real business. If the intended shop was Omotesandō-area shōjin, the plausible real candidates are 月心居 and 伯雲 (外苑前) — but that is a guess and has not been substituted here.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan (including an exact-phrase search) — both negative.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search + Yahoo Japan exact-phrase search both negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__401",
+  "lat": 35.6485,
+  "lng": 139.703,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named グリーンナリッシュ exists in Tokyo",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says Daikanyama.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: full' was inferred from the word ヴィーガンレストラン and is unsupported.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide name search for グリーンナリッシュ returns nothing resembling it (nearest phonetic hits are グリーンフラッシュ in Okinawa and グリーンディッシュ in Shizuoka). A Yahoo Japan search for グリーンナリッシュ 代官山 ヴィーガン returns the real Daikanyama vegan café GOOD GREEN THINGS DAIKANYAMA (in TENOHA Daikanyama) and various vegan round-ups, but nothing by this name. It is possible the sweep garbled GOOD GREEN THINGS, but that is a guess and no substitution has been made here.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan — both negative.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search + Yahoo Japan both negative. Possible garbling of GOOD GREEN THINGS DAIKANYAMA (tabelog 13310552) but NOT substituted — unverified. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__417",
+  "lat": 35.672,
+  "lng": 139.736,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 菜味庵 exists in Tokyo",
+  "cuisine_type": "shojin",
+  "neighborhood": "Unverified. The light record gives two contradictory areas — 西麻布 and 赤坂見附駅 — which are 2 km apart.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: full' was inferred from the word 精進料理 and is unsupported.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide name search for 菜味庵 returns nothing. A Yahoo Japan exact-phrase search returns only 酒肴旬菜「味庵」しものせき, an izakaya in Shimonoseki, Yamaguchi — a different name broken at a different place. The light record's own neighbourhood field is internally inconsistent (Nishi-Azabu and Akasaka-mitsuke are about 2 km apart), which is itself a sign of a low-quality sweep entry. On the evidence available this appears to be a name generated during the breadth sweep rather than a real business.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan exact-phrase search — both negative for Tokyo.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search + Yahoo Japan exact-phrase search both negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__441",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 精進料理 一乗寺 exists in Tokyo",
+  "cuisine_type": "shojin",
+  "neighborhood": "Unverified. The light record says Shinsen, Shibuya-ku — and misattributes Shinsen Station to the Hanzōmon line; it is a Keiō Inokashira line station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: full' was inferred from the word 精進料理 and is unsupported.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide name search for 一乗寺 returns only Kyoto businesses — Ichijōji is a well-known Kyoto neighbourhood, and every hit (一乗寺中谷, 一乗寺とうふ, 麺屋 極鶏 一乗寺本店 and so on) is named after it. Nothing in Tokyo. A Yahoo Japan search for 精進料理 一乗寺 神泉 渋谷 returns only general shōjin round-ups and unrelated Shinsen restaurants (割烹 佐乃家). The record also gets the station line wrong, another sweep-quality signal. On the evidence available this appears to be a name generated during the breadth sweep rather than a real business.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan — both negative for a Tokyo 一乗寺.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search returns only Kyoto's Ichijōji district businesses; Yahoo Japan negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__3",
+  "lat": 35.682656,
+  "lng": 139.764595,
+  "loc_precise": true,
+  "address_ja": "〒100-6507 東京都千代田区丸の内1-5-1 新丸の内ビルディング 7F（丸の内ハウス内）",
+  "enrich_confidence": "high",
+  "cuisine": "Soba-izakaya on the 7th floor of the Shin-Marunouchi Building: stone-milled domestic nihachi (80:20) soba, skewered kushi-ten tempura, motsu-nikomi and a long sake list",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Marunouchi 1-5-1, 7F of the Shin-Marunouchi Building in the Marunouchi House restaurant floor — 1 min from Tokyo Station's Marunouchi subway line, 2 min from the JR Marunouchi exit, 304 m from the station",
+  "website": "https://sobakichi-style.jp/",
+  "menu_url": "https://sobakichi-style.jp/menu.html",
+  "hours_raw": "月・火・水・木・土・日・祝 11:00～22:45（L.O. 21:45）／金 11:00～翌02:00（L.O. 01:00）　定休日：1月1日ほか、新丸ビル・丸の内ハウスに準ずる臨時休業あり",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat is structural here. The house soba is nihachi — 80% buckwheat, 20% wheat flour — so even the plain mori is not gluten-free; the signature kushi-ten are battered and deep-fried; the tsuyu is built on soy sauce (they source it from Nagano), which is wheat by default. There is no gluten-free item and no wheat-free handling.",
+  "vegan_status": "no",
+  "vegan_detail": "The soba tsuyu is a bonito dashi and the kitchen's whole point is fish, chicken and pork small plates around it. A few sides are plant-based on paper (edamame, chilled tomato, pickled aubergine, konnyaku), but there is no vegan set, no plant-based tsuyu, and the fryer is shared with fish and meat. Treat it as a no.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": ["brand of 株式会社フォーシーズ (FOUR SEEDS Corporation)", "soba division led by 野窪 (Nokubo), trained under 高橋邦弘"],
+   "origin": "Marunouchi, Tokyo — the branch opened 20 March 2018 on the Marunouchi House floor of the Shin-Marunouchi Building",
+   "background": "Honest framing first: this is not a mom-and-pop shop and should probably not be filed as one. Sobakichi is a seven-branch brand run by FOUR SEEDS Corporation — the company behind Pizza-La — and the Shin-Marunouchi branch opened in March 2018. What makes it worth a record anyway is where the soba came from. Four Seeds went into soba in 2002 with 吉祥庵 in Mejiro, and did it under the supervision of 高橋邦弘, the Takahashi of Take-yabu, a man the trade genuinely calls the god of soba-making. The company's soba manager, Nokubo, came up through Four Seeds' Italian restaurant TO THE HERBS as floor staff and had never touched buckwheat; he learned to cut soba from Takahashi and Takahashi's apprentices, at one point making day-return trips to Hiroshima to train, and describes what he took away as a feel for water — 'at this hydration you get this soba'. The result is a nihachi cut for throat-feel rather than for rusticity: domestic buckwheat stone-milled in-house, water run through a filter and softened so the dashi draws better, soy sauce from Nagano, wasabi from the company's own garden. The concept is 蕎麦屋で一杯, 'a drink at the soba shop' — the old Edo habit of drinking your way through small plates and finishing with a cold seiro, transplanted to the seventh floor of an office tower with a view, frog mascots on the walls, QR-code ordering and an English menu. Dinner runs to motsu-nikomi at ¥400, a five-skewer kushi-ten assortment at ¥650 and the house 夜鳴き蕎麦 with beef in a thickened broth at ¥800; lunch is soba-and-donburi sets from ¥780. It is open until 22:45 and until 2 a.m. on Fridays, 66 seats, no private rooms.",
+   "philosophy": "「蕎麦屋で一杯」 — the soba shop as a place to drink, with the noodles as the finish rather than the meal; 挽きたて・打ちたて・茹でたて (freshly milled, freshly cut, freshly boiled) as the house standard.",
+   "specialty": "Nihachi soba from domestic buckwheat stone-milled on site; 名物！串天 skewered seasonal tempura (¥120–¥250 a skewer, assortments at ¥650/¥1,000); slow-simmered motsu-nikomi ¥400; 夜鳴き蕎麦 with beef ¥800; a long sake list with tasting flights.",
+   "anecdotes": [
+    {"text": "Nokubo, who now runs Four Seeds' soba division, started as floor staff at the group's Italian chain and knew nothing about the kitchen: 'soba-making started from complete amateur'. He trained under Kunihiro Takahashi, including day trips to Hiroshima where Takahashi was then based.", "source": "https://note.com/fourseeds1980/n/n974e509cac12"},
+    {"text": "On making soba in a city without clean water: they run every drop through a filter and wash the noodles in soft water specifically so the dashi draws better. The soy sauce comes from Nagano and the wasabi from a company garden.", "source": "https://note.com/fourseeds1980/n/n974e509cac12"},
+    {"text": "The room is decorated with original frog characters — a pun the shop leans into — and orders are placed by QR code, with an English menu and photographs added for overseas guests.", "source": "https://tabelog.com/tokyo/A1302/A130201/13038511/"}
+   ],
+   "japanese_sources_summary": "sobakichi-style.jp gives the branch address, phone and the chain-wide priced menu (with the caveat 「価格や商品は店舗により一部異なります」). Four Seeds' official note interview with the soba division manager supplies the 2002 吉祥庵 origin, the Takahashi Kunihiro supervision, the training story, the nihachi decision, the water/soy-sauce/wasabi sourcing and the 22-shop/5-brand scale. Tabelog confirms the exact address (新丸の内ビルディング7F), the coordinates, the 2018-03-20 opening, 66 seats, the Friday 2 a.m. close, and the reservation rules (no lunch bookings; dinner bookable 17:00–19:00 only). Marunouchi.com lists it as a Shin-Marunouchi tenant.",
+   "confidence": "medium",
+   "sources": ["https://sobakichi-style.jp/", "https://note.com/fourseeds1980/n/n974e509cac12", "https://tabelog.com/tokyo/A1302/A130201/13038511/", "https://www.marunouchi.com/tenants/4704/", "https://www.four-seeds.co.jp/brand/sobakichi"]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {"text": "Soba and udon are boiled in the same water and the kushi-ten fryer runs all service. Wheat flour is in the noodle itself, so there is nothing to protect.", "source": "https://sobakichi-style.jp/menu.html"}
+   ],
+   "soy_sauce_wheat": [
+    {"text": "The tsuyu is built on soy sauce sourced from Nagano; no tamari or wheat-free soy is mentioned. Assume wheat in every dipping sauce and simmered dish.", "source": "https://note.com/fourseeds1980/n/n974e509cac12"}
+   ],
+   "vegan_cross_contact": [
+    {"text": "Bonito dashi in the tsuyu, and the shared fryer handles kisu, scallop, prawn, chicken and pork skewers.", "source": "https://sobakichi-style.jp/menu.html"}
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {"text": "English menu, photo menu and QR-code digital ordering — the practical accessibility is good even though the dietary answer is no.", "source": "https://tabelog.com/tokyo/A1302/A130201/13038511/"},
+    {"text": "Step-free: listed as wheelchair-accessible, all non-smoking, counter and sofa seating, free Wi-Fi.", "source": "https://tabelog.com/tokyo/A1302/A130201/13038511/"}
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "One of the easiest doors in the shard. It is on the Marunouchi House restaurant floor, 7F of the Shin-Marunouchi Building, one minute from Tokyo Station — a bright, non-smoking, 66-seat room with a view, English and photo menus, QR-code ordering, all cards, IC money and QR payments accepted, and staff used to visitors. Lunch is walk-in only (no bookings); dinner reservations are taken only for 17:00–19:00 arrivals. Open to 22:45, and to 2 a.m. on Fridays."
+  },
+  "sources": [
+   "https://sobakichi-style.jp/",
+   "https://sobakichi-style.jp/menu.html",
+   "https://note.com/fourseeds1980/n/n974e509cac12",
+   "https://tabelog.com/tokyo/A1302/A130201/13038511/",
+   "https://www.marunouchi.com/tenants/4704/",
+   "https://www.four-seeds.co.jp/brand/sobakichi",
+   "https://r.gnavi.co.jp/a634273/"
+  ],
+  "enrich_note": "CATEGORY FLAG: filed as MOM_AND_POP, but Sobakichi is a seven-branch corporate brand of 株式会社フォーシーズ (the Pizza-La group). Suggest recategorising as OMNI/chain. The record is otherwise sound and the coordinates are now exact."
+ }
+]

@@ -18,6 +18,7 @@ const STEPS = [
   ['dedupe-tokyo.mjs',                'collapse _2/_3 harvest-suffix duplicates'],
   ['merge-dupes.mjs',                 'collapse cross-script duplicates'],
   ['merge-tokyo3-enrich.mjs',         'merge deep-enrich results (tier-gated)'],
+  ['merge-tokyo-enrich-verdicts.mjs', 'apply enrich coords; queue name/existence changes', ['--apply']],
   ['merge-ramen.mjs',                 'merge researched ramen blocks (schema-validated)'],
   ['merge-menus.mjs',                 'merge researched menus + derived menu flags'],
   ['backfill-signoff-2026-07-02.mjs', 'record the 2026-07-02 audit on its records'],
@@ -27,13 +28,14 @@ const STEPS = [
   ['fix-source-independence.mjs',     'mark first-party and relay citations'],
   ['fix-city-assignment.mjs',         'flag records filed under the wrong city'],
   ['apply-audit-corrections.mjs',     'fix the factual errors the audit surfaced'],
+  ['quarantine-orphan-menus.mjs',      'pull menus whose record was deduped away', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
 ];
 
-const run = (script) => {
+const run = (script, args = []) => {
   try {
-    return execFileSync(process.execPath, [`scripts/${script}`], { encoding: 'utf8' });
+    return execFileSync(process.execPath, [`scripts/${script}`, ...args], { encoding: 'utf8' });
   } catch (e) {
     process.stdout.write((e.stdout || '') + (e.stderr || ''));
     console.error(`\n[FAIL] ${script}`);
@@ -41,9 +43,9 @@ const run = (script) => {
   }
 };
 
-for (const [script, why] of STEPS) {
+for (const [script, why, args] of STEPS) {
   console.log(`\n>> ${script} - ${why}`);
-  process.stdout.write(run(script).split('\n').slice(-6).join('\n'));
+  process.stdout.write(run(script, args).split('\n').slice(-6).join('\n'));
 }
 
 console.log('\n>> lint-data.mjs - verify');
