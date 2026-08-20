@@ -44,6 +44,10 @@ const STEPS = [
   // Last, because it hashes the shipped files and must see their final state. The
   // service worker keys every cache off VERSION, so without this a returning user
   // keeps serving the old city data no matter how many times we deploy.
+  // Warn-only: the enrichment reads restaurants' own marketing, and some of it makes
+  // medical claims. This app is used by people managing a real medical condition —
+  // it must not become a channel for a soba shop's cancer-prevention copy.
+  ['flag-health-claims.mjs',          'surface medical claims picked up from shop marketing'],
   ['bump-build.mjs',                  'bump the SW cache version iff shipped content changed'],
 ];
 
