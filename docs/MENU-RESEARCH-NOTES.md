@@ -192,3 +192,50 @@ If a shop publishes nothing anywhere reachable, emit `"items": []` with
 `confidence: "low"` and the sources you actually checked. Six entries across
 Himeji and Toba are honest empties. A fabricated menu is far worse than a blank
 one — somebody orders from this.
+
+## Added by the Nara tranche 2 agent (48 shops)
+
+Two techniques that were not in this file and carried most of the tranche:
+
+- **Tabelog `/dtlmenu/` 404s but the rest of Tabelog does not.** Japanese
+  `/dtlmenu/` URLs returned 404 for 41 of 44 shops — as documented. But
+  `<shop>/dtlphotolst/1/smp2/<page>/` and `<shop>/dtlrvwlst/` both return 200 to
+  curl with a browser UA, and the photo `alt` attributes are user-written dish
+  captions, often *with the price in them*. Scrape `alt="<shop name> - <caption>"`
+  and filter on the shop name: captions prefixed `料理写真:` / `ドリンク写真:`
+  belong to the *related-shops* widget, i.e. a different restaurant, and will
+  silently poison the entry if you keep them. Review pages give a second harvest:
+  grep lines containing 円 or ¥. This produced 15–25 usable items for shops with
+  no web presence at all.
+- **`nara-gourmet.com` (奈良グルメ図鑑)** is a one-man Nara restaurant
+  encyclopedia with a per-shop page carrying dish-by-dish descriptions, the
+  address, and often several years of menu history. Slugs are romanised
+  (`/shanghairou/`, `/mamekura/`); find them with a `search.yahoo.co.jp` query of
+  `<shop name> 奈良グルメ図鑑`. Other cities will have an equivalent local site —
+  look for one before grinding through blogs.
+
+Sources that earned `authoritative` here beyond the shop's own domain: HotPepper
+`strJ*` pages (`/food/`, `/drink/`), Hitosara `/food.html` and `/course.html`,
+and Gnavi shop sites (`*.gorp.jp` renders as a JSON blob whose `menu.all.list`
+points at `r.gnavi.co.jp/<id>/menu1|menu2|lunch`, which are plain HTML).
+
+New traps:
+
+- **HotPepper name collisions are worse than Tabelog's.** A yahoo search for
+  「旬菜と地酒 野良」(Nara) returned `strJ003498518`, which is
+  「旬菜旬魚と地酒 野良のまたたび」in *Niigata* — a full, plausible, entirely
+  wrong menu. Always read the address block on the HotPepper page before using it.
+- **Shops rename and the old Tabelog entry keeps the menu.** 奈良三条カレー本店
+  is 和牛スジカレー奈良本店 at the same address (橋本町28); the new listing has
+  almost nothing, the old one has the whole menu. Confirm by address, then say so
+  in the note.
+- **Two unrelated "Kohaku" in one Nara worklist** — こはく。 the bakery in
+  Horen-cho and 喫茶古白 inside 七福食堂 in Naramachi. Nothing about the names
+  distinguishes them.
+- WebSearch's 200-call session budget was already spent before this tranche
+  started. `search.yahoo.co.jp` via curl carried the whole job.
+- Under Git Bash, `python ... > file.txt` writes CRLF; a trailing `\r` on a URL
+  makes curl return `000` and look like a network failure. `tr -d '\r'` first.
+  Also add `< /dev/null` to curl inside a `while read` loop.
+- web.archive.org was returning 503 "temporarily offline" during this tranche, so
+  the Wayback route in the list above was unavailable.

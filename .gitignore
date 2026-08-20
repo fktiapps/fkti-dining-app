@@ -16,8 +16,12 @@ data/_gf_audit_shards/
 # Agent scratch space — fetched pages, working briefs, helper scripts.
 # Never a deliverable. Subagents pick their own directory names, so this is a
 # pattern rather than a list; two different ones got committed before it existed.
+# Subagents choose their own scratch directory names — tmpwork/, .tmpx/,
+# .scratch2a/ have all been committed by accident. Match broadly, and prefer
+# explicit `git add <path>` over `git add -A` while agents are writing.
 tmpwork/
-.tmpx/
 .tmp*/
-_scratch/
 tmp_*/
+*scratch*/
+.scratch*
+_work/

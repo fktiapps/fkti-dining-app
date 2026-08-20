@@ -118,6 +118,39 @@ for (const city of cities) {
     }
   }
 
+  // SIGNAL: an identical menu at the same coordinates.
+  //
+  // Two records sharing a byte-identical item list of 4+ dishes AND sitting
+  // within 50m are the same shop — no two businesses at one address publish the
+  // same menu. This catches what exact-alias matching cannot: 「セアブラノ神 壬生本店」
+  // vs 「らーめん セアブラノ神 壬生本店」 and 「矢場とん 名古屋城金シャチ横丁店」 vs
+  // 「名古屋名物 みそかつ 矢場とん 名古屋城 金シャチ横丁店」, where one record simply
+  // carries a descriptive prefix.
+  //
+  // Unlike every name heuristic tried here, this cannot over-merge: chain
+  // branches share a menu but not an address (Ramen Tengu's two shops publish
+  // the same list 3.9km apart and are correctly left alone).
+  {
+    const mp = `data/${city}_menus.json`;
+    if (fs.existsSync(mp)) {
+      const menus = JSON.parse(fs.readFileSync(mp, 'utf8'));
+      const sig = new Map();
+      for (const p of places) {
+        const items = (menus[p.id] || {}).items || [];
+        if (items.length < 4) continue;
+        const k = items.map(i => String(i.ja || i.en || '').trim()).sort().join('|');
+        if (!sig.has(k)) sig.set(k, []);
+        sig.get(k).push(p);
+      }
+      for (const group of sig.values()) {
+        if (group.length < 2) continue;
+        for (let i = 0; i < group.length; i++)
+          for (let j = i + 1; j < group.length; j++)
+            if (km(group[i], group[j]) < 0.05) union(group[i].id, group[j].id);
+      }
+    }
+  }
+
   // fold in the verified pairs before grouping
   for (const kd of KNOWN_DUPLICATES) {
     if (kd.city !== city) continue;
