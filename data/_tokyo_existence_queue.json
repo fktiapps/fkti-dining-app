@@ -203,6 +203,41 @@
   "note": "UNRESOLVED. Every search leg ran and returned HTTP 200: Yahoo Japan on 「つきじ 中島 天ぷら 築地 東京 老舗」, 「\"つきじ中島\" OR \"築地 中島\" 天ぷら 中央区」, 「中島 築地 場外市場 天ぷら 店 食べログ」, the exact string 「つきじ中島」, and the nationwide 「天ぷら 中島 東京 店 食べログ 老舗」; plus a direct read of Tabelog's Tsukiji tempura ranking. Nearest candidates: 天ぷら なかがわ (中央区築地2-14-2 築地NYビル1F — right trade and neighbourhood, wrong name), 築地 奈可嶋 (a 中島水産 department-sto"
  },
  {
+  "id": "tokyo3__90",
+  "name": "新しき村",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「\"新しき村\" そば 蕎麦 東京 銀座 中央区 店」, 「新しき村 蕎麦 食べログ 店舗」 and 「そば 新しき村 東京都 蕎麦屋 手打ち」. Every hit was about 武者小路実篤's 1918 utopian commune 新しき村 (Kijō, Miyazaki and Moroyama, Saitama) or about the soba shops of Moroyama-machi, the town the commune stands in. There is no restaurant of this name in Tokyo. Coordinates unchanged, loc_precise:f"
+ },
+ {
+  "id": "tokyo3__102",
+  "name": "市場食堂",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「市場食堂 築地 中央区 海鮮丼 食べログ」, 「\"市場食堂\" 築地 場外市場 中央区 店 住所」, 「市場食堂 東京都 食べログ 店名」 and 「築地 にっぽん漁港食堂 中央区築地4-16-2 営業時間」; plus Tabelog's 中央区築地 kaisen-don index (38 shops) and its Tsukiji-Shijō 食堂 index. No business named 市場食堂 exists in Chūō-ku. Real Tokyo shops of that name are at Kita-Senju, Kodaira, Tōyōchō and Senju-Ōhashi, all attache"
+ },
+ {
+  "id": "tokyo3__114",
+  "name": "並木藪蕎麦",
+  "status": "substituted",
+  "drift_km": 5.1,
+  "note": "PIN CORRECTION. The name in the light record was right — 並木藪蕎麦 is real and one of Tokyo's best-known soba houses — but the record placed it at 銀座一丁目駅 / 築地駅 近く (中央区), 35.6717/139.765. It is in Asakusa: 〒111-0034 東京都台東区雷門2-11-9, confirmed both by the 藪睦会 member roll and by Tabelog, about 4.3 km north-east of the light pin. Coordinates moved to 35.709685/139.795954 (Tabelog map page) and loc_precise "
+ },
+ {
+  "id": "tokyo3__115",
+  "name": "築地そばたかや",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches actually run, all HTTP 200: Yahoo Japan on 「築地 そば たかや 中央区 蕎麦 つけそば」, 「中央区築地 そば 蕎麦 店 一覧 食べログ たかや」, the exact phrase 「\"築地そばたかや\"」 — for which Yahoo returned its explicit no-exact-match notice — 「そば たかや 東京 中央区 築地 閉店」 and 「酒場 たかや 十割蕎麦 天ぷら 住所 食べログ 有楽町線」; plus direct reads of Tabelog's 築地 soba index (all 22 shops) and its 中央区築地 soba index. No shop named たかや exists in Chūō-ku. The two r"
+ },
+ {
+  "id": "tokyo3__127",
+  "name": "蕎麦 田中鮒",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「蕎麦 田中 茅場町 中央区 そば屋 食べログ」, the bare exact string 「\"田中鮒\"」 (which returned only a blog essay using it as an example of an impossible personal name, plus an unrelated motor-racing post), 「そば 田中屋 茅場町 日本橋 中央区 蕎麦」 and 「\"蕎麦 田中\" 茅場町 東京 そば店」; plus a direct read of Tabelog's complete Hatchōbori–Kayabachō–Shinkawa soba index (20 shops"
+ },
+ {
   "id": "tokyo3__190",
   "name": "明神そば",
   "status": "closed_permanently",

@@ -1,0 +1,842 @@
+{
+ "nagoya_koshitsu_kaiseki_hosatei": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.hosa.nagoya/cuisine",
+   "https://www.hosa.nagoya/cuisine/hosa",
+   "https://www.hosa.nagoya/cuisine/kinjo",
+   "https://www.hosa.nagoya/cuisine/hitsumabushi",
+   "https://www.hosa.nagoya/cuisine/drink",
+   "https://s.tabelog.com/aichi/A2301/A230101/23080611/",
+   "https://s.tabelog.com/aichi/A2301/A230101/23080611/dtlmenu/?photo=1"
+  ],
+  "price_note": "Prices approximate — may change. Courses and compositions transcribed from the shop's own site (hosa.nagoya), snapshot dated 2026/07; the kaiseki line-up is seasonal and the version published at this check is the autumn one.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "会席料理「蓬左」",
+    "romaji": "Kaiseki Ryori \"Hōsatei\"",
+    "en": "\"Hōsa\" kaiseki course — nine courses",
+    "price": "¥5,500",
+    "section": "会席料理 / Kaiseki courses (private room, reservation required)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The house course and the reason to book the private room: nine small courses in the classic kaiseki running order — appetiser, clear soup, a composed plate, sashimi, grilled, fried, hotpot, rice, sweet. Reserve by 17:00 two days ahead; you cannot request a specific room. The tempura course and the soy-based seasonings put wheat through it, and dashi runs through the whole meal.",
+    "dish_key": "kaiseki_hosa"
+   },
+   {
+    "ja": "会席料理「金城」",
+    "romaji": "Kaiseki Ryori \"Kinjō\"",
+    "en": "\"Kinjō\" kaiseki course — eight courses, weekdays only",
+    "price": "¥3,800",
+    "section": "会席料理 / Kaiseki courses (private room, reservation required)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shorter weekday-only course, named for Nagoya Castle (金城 is its old poetic name). Same shape as the ¥5,500 course but drops the clear soup and simplifies the composed plate — the cheapest way into the private rooms. Wheat via the tempura and the soy seasonings.",
+    "dish_key": "kaiseki_kinjo"
+   },
+   {
+    "ja": "一色産ひつまぶし和膳",
+    "romaji": "Isshiki-san Hitsumabushi Wazen",
+    "en": "Hitsumabushi set with eel from Isshiki",
+    "price": "¥5,500",
+    "section": "会席料理 / Kaiseki courses (private room, reservation required)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A four-part set built around hitsumabushi — grilled eel from Isshiki in Aichi, the country's biggest eel-farming town, chopped over rice in a wooden tub. Eat it in three stages: quarter the rice, take the first plain, the second with the yakumi (spring onion, wasabi, nori), the third with dashi poured over as ochazuke, then the fourth whichever way you liked best. The eel tare is wheat soy sauce.",
+    "dish_key": "hitsumabushi_wazen"
+   },
+   {
+    "ja": "おまかせ会席",
+    "romaji": "Omakase Kaiseki",
+    "en": "Chef's choice kaiseki",
+    "price": "¥8,800 / ¥11,000",
+    "section": "会席料理 / Kaiseki courses (private room, reservation required)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Two price points of a chef's-choice course, above the two fixed ones — this is also the tier used for evening banquets (from ten people, ¥8,800 each, 17:00–21:00). Everything is bought that morning from the market, so the content is decided on the day.",
+    "dish_key": "omakase_kaiseki"
+   },
+   {
+    "ja": "先附：鯛の焼霜　舞茸　蕃茄　加減酢ジュレかけ",
+    "romaji": "Sakizuke: Tai no Yakishimo, Maitake, Banka, Kagenzu Jure-gake",
+    "en": "Opener: seared sea bream, maitake mushroom, tomato, seasoned-vinegar jelly",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "先附 (sakizuke) is the first tiny plate of a kaiseki, the equivalent of an amuse. 焼霜 means the fish is blowtorched on the skin side only and chilled, so the skin is smoky and the flesh raw. 蕃茄 is an old written form of tomato. The 加減酢 dressing usually contains dashi and sometimes soy, so ask.",
+    "dish_key": "sakizuke_seared_bream"
+   },
+   {
+    "ja": "御椀：梭子魚の菊花沢煮仕立て",
+    "romaji": "Owan: Kamasu no Kikka Sawani-jitate",
+    "en": "Clear soup: barracuda with chrysanthemum petals, sawani style",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The 御椀 is the lacquer bowl of clear dashi soup that is the technical showpiece of a kaiseki — lift the lid and smell it before drinking. 梭子魚 is barracuda; 沢煮 is a light peppery broth with fine-cut vegetables. Bonito dashi rules it out for vegans; the seasoning may include a splash of light soy.",
+    "dish_key": "owan_barracuda"
+   },
+   {
+    "ja": "口取：月見豆腐　鹿児島和牛ステーキ　秋野菜炊合わせ",
+    "romaji": "Kuchitori: Tsukimi-dōfu, Kagoshima Wagyū Sutēki, Akiyasai Takiawase",
+    "en": "Composed plate: \"moon-viewing\" tofu, Kagoshima wagyu steak, simmered autumn vegetables",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "口取 is the plate of several small things served together. 月見豆腐 is tofu topped with an egg yolk standing in for the harvest moon; 炊合わせ means each vegetable is simmered separately in its own dashi so it keeps its own colour and flavour, then arranged together. The steak sauce is wheat soy.",
+    "dish_key": "kuchitori_composed"
+   },
+   {
+    "ja": "造り：本日の活魚",
+    "romaji": "Tsukuri: Honjitsu no Katsugyo",
+    "en": "Sashimi: today's live-caught fish",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "造り is the sashimi course; 活魚 means the fish was alive in the tank, so what arrives depends on the morning market. The fish itself is clean — it is the soy sauce beside it that is wheat, so ask for tamari if you need it.",
+    "dish_key": "tsukuri_sashimi"
+   },
+   {
+    "ja": "焼物：秋味と占地　杉板焼き",
+    "romaji": "Yakimono: Akiaji to Shimeji, Sugiita-yaki",
+    "en": "Grilled course: autumn salmon and shimeji mushrooms cooked on a cedar plank",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "秋味 is the trade name for autumn-run chum salmon; 占地 is shimeji. 杉板焼き cooks it on a sheet of cedar over the fire so the wood resin perfumes the fish — you will smell it before it lands. Whether the glaze contains soy or miso is the thing to ask.",
+    "dish_key": "yakimono_cedar_salmon"
+   },
+   {
+    "ja": "揚物：穴子と二種の野菜　天麩羅",
+    "romaji": "Agemono: Anago to Nishu no Yasai Tempura",
+    "en": "Fried course: conger eel and two vegetables, tempura",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "穴子 is saltwater conger eel — milder and fluffier than the freshwater unagi in hitsumabushi, and superb as tempura. This is the unambiguous wheat course: tempura batter is wheat flour, and the tentsuyu dipping broth is dashi plus soy.",
+    "dish_key": "agemono_anago_tempura"
+   },
+   {
+    "ja": "鍋物：名古屋コーチン　玉子とじ鍋",
+    "romaji": "Nabemono: Nagoya Cochin, Tamago-toji Nabe",
+    "en": "Hotpot: Nagoya Cochin chicken bound with egg",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "名古屋コーチン is Aichi's own heritage chicken breed — firmer and far more flavourful than supermarket bird, and one of the genuinely local things on this menu. 玉子とじ means beaten egg is poured over at the last moment and left barely set. The simmering liquid is dashi, soy and mirin.",
+    "dish_key": "nabe_nagoya_cochin"
+   },
+   {
+    "ja": "食事：愛知県産ゆめまつり",
+    "romaji": "Shokuji: Aichi-ken-san Yumematsuri",
+    "en": "Rice course: Aichi-grown \"Yumematsuri\" rice",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "食事 near the end of a kaiseki means rice, pickles and miso soup. ゆめまつり is a rice variety bred in Aichi. The rice itself is plain steamed white rice and is wheat-free and plant-based — the pickles and the miso alongside it are not necessarily either.",
+    "dish_key": "shokuji_yumematsuri_rice"
+   },
+   {
+    "ja": "甘味：特製あんみつ",
+    "romaji": "Kanmi: Tokusei Anmitsu",
+    "en": "Sweet: house anmitsu",
+    "price": "",
+    "section": "会席「蓬左」の献立 / Inside the ¥5,500 course",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Anmitsu is cubes of firm agar jelly with sweet azuki bean paste, fruit and black-sugar syrup poured over — cool, not very sweet, and the standard way a kaiseki finishes. Agar is seaweed and the beans are beans, so it is often accidentally suitable, but shiratama dumplings, gyūhi and the odd sponge topping vary by kitchen; ask.",
+    "dish_key": "kanmi_anmitsu"
+   },
+   {
+    "ja": "八寸：月見豆腐　締め鯖寿司　兎百合根　烏賊黄身焼き　銀杏　零余子",
+    "romaji": "Hassun: Tsukimi-dōfu, Shime-saba Zushi, Usagi Yurine, Ika Kimiyaki, Ginnan, Mukago",
+    "en": "Assorted platter in the hitsumabushi set: moon tofu, vinegared mackerel sushi, lily bulb shaped as a rabbit, squid glazed with egg yolk, ginkgo nuts, yam bulbils",
+    "price": "",
+    "section": "一色産ひつまぶし和膳の献立 / Inside the hitsumabushi set",
+    "gf": "no",
+    "vegan": "no",
+    "note": "八寸 is the seasonal showpiece platter, named for the eight-sun (24 cm) cedar tray it is served on, and it is where the kitchen shows off — here a rabbit carved from lily bulb and a moon of egg yolk, both autumn moon-viewing references. 銀杏 are ginkgo nuts, 零余子 the tiny bulbs that grow on yam vines. The 締め鯖 is cured in vinegar, and its sushi rice plus the glazes bring soy in.",
+    "dish_key": "hassun_platter"
+   },
+   {
+    "ja": "お抹茶　和三盆糖付",
+    "romaji": "O-matcha, Wasanbon-tō-tsuki",
+    "en": "Whisked matcha with a wasanbon sugar sweet",
+    "price": "¥700",
+    "section": "カフェドリンク / Café drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Proper whisked matcha served with a piece of wasanbon — a fine-grained Japanese sugar pressed into a shape, eaten first so the sweetness cushions the tea's bitterness. Wasanbon is just sugarcane, but ask whether the sweet is plain pressed sugar or a wagashi with bean paste or gyūhi in it.",
+    "dish_key": "matcha_wasanbon"
+   },
+   {
+    "ja": "蓬左ブレンド珈琲",
+    "romaji": "Hōsa Burendo Kōhii",
+    "en": "Hōsa blend coffee",
+    "price": "",
+    "section": "カフェドリンク / Café drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The house blend, with a decaf version on the same list — useful to know in a building where almost everything else is tea. Black coffee is wheat-free and plant-based; milk is the only thing to decline.",
+    "dish_key": "hosa_blend_coffee"
+   },
+   {
+    "ja": "醸し人九平次 純米大吟醸／名古屋",
+    "romaji": "Kamoshibito Kuheiji Junmai Daiginjō / Nagoya",
+    "en": "Kuheiji junmai daiginjo sake, from Nagoya",
+    "price": "¥1,200",
+    "section": "日本酒 / Sake",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The city's most internationally known sake house — a Nagoya brewery that also farms rice in Hyōgo and makes wine in Burgundy, and the obvious local thing to drink here. Junmai daiginjo means rice, water and koji only, no added alcohol. Sake is made from rice, but brewers are not required to declare fining agents, so a strict celiac may still want to ask.",
+    "dish_key": "sake_kuheiji"
+   }
+  ]
+ },
+ "nagoya_shiboriyan_marunouchi": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/aichi/A2301/A230102/23095600/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/351220/958413d0629b9147f61fc4c569431e95.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/348552/0b396f48cd7f1d405ed897ecf513e077.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/348552/1b01483374301babe33f2cf38da0cbae.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/351220/facade1bf2b6eb5991905e7e53223a28.jpg",
+   "https://s.tabelog.com/aichi/A2301/A230102/23095600/",
+   "https://www.instagram.com/shiboriyanishiki/"
+  ],
+  "price_note": "Prices approximate — may change. Transcribed from the shop's own A-board and in-store menu card photographed 2026/03, weeks after it opened; the struck-through higher figures are the standard prices and the red ones are the lunch-time special.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "しぼりや定食 A",
+    "romaji": "Shiboriya Teishoku A",
+    "en": "Set meal A — one prawn fry, one piece of itoyori fry",
+    "price": "¥1,100",
+    "section": "定食 / Set meals (lunch-time special price; normally ¥1,300)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The board lists exactly what is in each set. A gets you 海老フライ 1本 (one prawn), いとより 1枚 (one fillet of golden threadfin bream), 小鉢 (a small side), おしんこ (pickles), ご飯 (rice) and お味噌汁 (miso soup). Everything fried here is panko-crumbed, so wheat throughout; large rice is free at lunch.",
+    "dish_key": "shiboriya_teishoku_a"
+   },
+   {
+    "ja": "しぼりや定食 B",
+    "romaji": "Shiboriya Teishoku B",
+    "en": "Set meal B — two prawn fries",
+    "price": "¥1,300",
+    "section": "定食 / Set meals (lunch-time special price; normally ¥1,500)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The pure ebi-fry option and the one to order if you came for Nagoya's signature fried prawn: 海老フライ 2本 plus small side, pickles, rice and miso soup. Panko is wheat and the tartare sauce it comes with is egg-based.",
+    "dish_key": "shiboriya_teishoku_b"
+   },
+   {
+    "ja": "しぼりや定食 C",
+    "romaji": "Shiboriya Teishoku C",
+    "en": "Set meal C — one prawn fry and two pieces of pork fillet katsu",
+    "price": "¥1,400",
+    "section": "定食 / Set meals (lunch-time special price; normally ¥1,600)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The biggest set: 海老フライ 1本 plus ひれかつ 2枚 — hire-katsu is the lean tenderloin cut, drier and less rich than the fatty loin (rōsu) most tonkatsu shops use — with small side, pickles, rice and miso soup. Panko is wheat; if you want it Nagoya-style, this is what a miso-katsu tare would be poured over, but ask whether they serve one.",
+    "dish_key": "shiboriya_teishoku_c"
+   },
+   {
+    "ja": "しぼりや定食 D",
+    "romaji": "Shiboriya Teishoku D",
+    "en": "Set meal D — three pieces of itoyori fry",
+    "price": "¥1,100",
+    "section": "定食 / Set meals (lunch-time special price; normally ¥1,300)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The all-fish set: いとより 3枚 with small side, pickles, rice and miso soup. This is the one that shows where the shop comes from — the family runs a ryokan on the coast at Minami-Chita, and the fish is the point rather than the pork. Panko is wheat.",
+    "dish_key": "shiboriya_teishoku_d"
+   },
+   {
+    "ja": "海老フライ",
+    "romaji": "Ebi Furai",
+    "en": "Deep-fried breaded prawn",
+    "price": "",
+    "section": "定食の内容 / What's in the sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Nagoya's most-loved fried thing and the reason this shop exists: a big prawn straightened out, dipped in flour, egg and panko and deep-fried, served with tartare sauce and a lemon wedge. Flour and panko are both wheat.",
+    "dish_key": "ebi_fry"
+   },
+   {
+    "ja": "いとより",
+    "romaji": "Itoyori",
+    "en": "Golden threadfin bream, crumbed and fried",
+    "price": "",
+    "section": "定食の内容 / What's in the sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Itoyori-dai is a pink-skinned sea bream with a long thread trailing from its tail fin, prized for delicate white flesh that stays soft when fried. You will almost never see it on a fried-food menu outside a coastal shop — its presence here is the ryokan showing through. Panko is wheat.",
+    "dish_key": "itoyori_fry"
+   },
+   {
+    "ja": "ひれかつ",
+    "romaji": "Hirekatsu",
+    "en": "Breaded fried pork tenderloin",
+    "price": "",
+    "section": "定食の内容 / What's in the sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Hire is the tenderloin — the leanest cut, cut into thick medallions rather than one flat sheet, so it comes out juicy without the fat rim of a rōsu katsu. Wheat flour and panko.",
+    "dish_key": "hirekatsu"
+   },
+   {
+    "ja": "しぼりや弁当 A",
+    "romaji": "Shiboriya Bentō A",
+    "en": "Takeaway bento A — one prawn fry, one itoyori fry",
+    "price": "¥1,100",
+    "section": "お弁当 / Takeaway bento (special price; normally ¥1,300)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The bento board mirrors the set-meal board item for item, minus the miso soup, packed in a black tray with rice, salad and a tub of tartare. Same free large rice. Panko is wheat.",
+    "dish_key": "shiboriya_bento_a"
+   },
+   {
+    "ja": "しぼりや弁当 B",
+    "romaji": "Shiboriya Bentō B",
+    "en": "Takeaway bento B — two prawn fries",
+    "price": "¥1,300",
+    "section": "お弁当 / Takeaway bento (special price; normally ¥1,500)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Two whole panko prawns laid diagonally over the rice — the version to carry into Nagoya Castle park. Wheat.",
+    "dish_key": "shiboriya_bento_b"
+   },
+   {
+    "ja": "しぼりや弁当 C",
+    "romaji": "Shiboriya Bentō C",
+    "en": "Takeaway bento C — one prawn fry and two pork fillet katsu",
+    "price": "¥1,400",
+    "section": "お弁当 / Takeaway bento (special price; normally ¥1,650)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The mixed prawn-and-pork box, the most substantial of the four. Wheat.",
+    "dish_key": "shiboriya_bento_c"
+   },
+   {
+    "ja": "しぼりや弁当 D",
+    "romaji": "Shiboriya Bentō D",
+    "en": "Takeaway bento D — three itoyori fries",
+    "price": "¥1,100",
+    "section": "お弁当 / Takeaway bento (special price; normally ¥1,300)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "All-fish box. Wheat.",
+    "dish_key": "shiboriya_bento_d"
+   },
+   {
+    "ja": "えびとかつ お弁当",
+    "romaji": "Ebi to Katsu O-bentō",
+    "en": "\"Prawn and katsu\" bento — from ¥800",
+    "price": "¥800",
+    "section": "お弁当 / Takeaway bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The street sign advertises takeaway boxes from ¥800, below the four lettered bento — a cheaper entry box under the shop's own tagline, \"prawn and katsu\". Wheat throughout.",
+    "dish_key": "ebi_to_katsu_bento"
+   },
+   {
+    "ja": "ご飯大盛無料",
+    "romaji": "Gohan Ōmori Muryō",
+    "en": "Free upgrade to a large rice",
+    "price": "¥0",
+    "section": "定食 / Set meals",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Printed in red across the top of both boards: the large rice costs nothing between 11:15 and 14:00, so say 大盛で (ōmori de) when you pay. Plain steamed white rice is the one wheat-free, plant-based thing in a shop that otherwise fries everything in panko — though it is scooped in that same kitchen. You pay at the register before sitting down; cash or PayPay only.",
+    "dish_key": "free_large_rice"
+   }
+  ]
+ },
+ "nagoya_brillance": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.espacionagoya.com/restaurant-bar/brillance",
+   "https://en.espacionagoya.com/restaurant-bar/brillance",
+   "https://s.tabelog.com/aichi/A2301/A230109/23093577/party/",
+   "https://s.tabelog.com/aichi/A2301/A230109/23093577/dtlmenu/",
+   "https://s.tabelog.com/aichi/A2301/A230109/23093577/dtlrvwlst/B526879539/",
+   "https://s.tabelog.com/aichi/A2301/A230109/23093577/dtlrvwlst/B524765574/"
+  ],
+  "price_note": "Prices approximate — may change. Course price from the restaurant's own (公式) listing, updated 2026/07/31; drink prices from its own drink list updated 2026/05/29. A 15% service charge is added. The individual plates below are one 2026 seating's line-up — the menu is a chef's omakase and rotates constantly.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "おまかせコース（10品）",
+    "romaji": "Omakase Kōsu (jippin)",
+    "en": "Chef's tasting menu, ten courses",
+    "price": "¥35,420",
+    "section": "コース / Course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "There is one menu and this is it — a ten-course omakase, no à la carte. The restaurant is the Nagoya project of Shūzō Kishida of Tokyo's three-star Quintessence, with a head chef trained at Quintessence and at a two-star house in Paris. Reservation only, two people minimum, 16 and over, elegant-casual dress, 15% service on top. They ask for every diner's allergies and dislikes at booking and say they may not be able to accommodate anything raised on the day — so this is the rare high-end French kitchen where declaring coeliac in advance genuinely gets acted on.",
+    "dish_key": "omakase_course"
+   },
+   {
+    "ja": "ヒラメ、赤満願寺、サブレ",
+    "romaji": "Hirame, Aka-Manganji, Sablé",
+    "en": "Flounder, red Manganji pepper, sablé",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The opening bite. Manganji is a Kyoto heirloom sweet pepper, mild and thin-skinned, here in its red ripened form; the sablé is a savoury shortbread base. Sablé is butter and wheat flour.",
+    "dish_key": "hirame_manganji_sable"
+   },
+   {
+    "ja": "くりスープ、豚ホホ肉",
+    "romaji": "Kuri Sūpu, Buta Hoho-niku",
+    "en": "Chestnut soup with pork cheek",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chestnut velouté with slow-braised pork cheek — the cheek is worked muscle, so it goes gelatinous rather than dry. Velouté is classically thickened with a flour roux, though a chestnut soup often does not need one; ask.",
+    "dish_key": "chestnut_soup_pork_cheek"
+   },
+   {
+    "ja": "ヤギのミルクのババロア、百合根、マカダミアンナッツ、オリーブオイル",
+    "romaji": "Yagi no Miruku no Babaroa, Yurine, Makadamian Nattsu, Oriibu Oiru",
+    "en": "Goat's-milk bavarois, lily bulb, macadamia, olive oil",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A savoury bavarois — cream set with gelatine, here from goat's milk, so it carries the tang without the barnyard. 百合根 (yurine) is the edible bulb of a lily, scale by scale like a garlic head but sweet and floury when cooked; it is a Japanese ingredient French kitchens here love. Dairy and gelatine.",
+    "dish_key": "goat_milk_bavarois"
+   },
+   {
+    "ja": "海老芋、イカスミ、アオリイカ",
+    "romaji": "Ebiimo, Ikasumi, Aoriika",
+    "en": "Shrimp taro, squid ink, bigfin reef squid",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "海老芋 is a taro variety curved and striped like a prawn, dense and sweet, a prestige winter vegetable in Japanese cooking. アオリイカ is bigfin reef squid — the sweetest and most expensive of the squids. Squid ink dishes sometimes carry a flour-thickened sauce; ask.",
+    "dish_key": "ebiimo_squid_ink"
+   },
+   {
+    "ja": "牛ランプ肉、生ハム、クルトン",
+    "romaji": "Gyū Ranpu-niku, Nama-hamu, Kuruton",
+    "en": "Beef rump, cured ham, croutons",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Rump is the cut just above the sirloin — lean, deeply beefy, and a deliberate choice over fattier wagyu cuts. Croutons are fried bread: wheat.",
+    "dish_key": "beef_rump_ham_crouton"
+   },
+   {
+    "ja": "フランス　ブルターニュオマール、ビスクソース",
+    "romaji": "Furansu Buruaanyu Omāru, Bisuku Sōsu",
+    "en": "Brittany lobster with bisque sauce",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Blue lobster from Brittany, the benchmark European lobster, with a sauce built from its own roasted shells. Classical bisque is thickened with rice or flour and finished with cognac — worth asking which.",
+    "dish_key": "brittany_lobster_bisque"
+   },
+   {
+    "ja": "かも、めぐみがも、ゴボウ",
+    "romaji": "Kamo, Megumi-gamo, Gobō",
+    "en": "Duck (\"Megumi\" duck) with burdock root",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The main meat course. めぐみ鴨 is a named Japanese duck brand; ゴボウ is burdock, a long woody root with an earthy, almost smoky flavour that Japan eats as a vegetable and Europe mostly doesn't. Duck sauces are usually reduced stock and wine, but ask about flour and soy.",
+    "dish_key": "duck_gobo"
+   },
+   {
+    "ja": "マカロン、マスカルポーネ、安納芋",
+    "romaji": "Makaron, Masukarupōne, Annōimo",
+    "en": "Macaron, mascarpone, Anno sweet potato",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "安納芋 is a sweet potato from Tanegashima so sugary and moist it eats like custard when baked. A true macaron is almond flour, egg white and sugar with no wheat, but pastry sections vary and share benches — ask rather than assume.",
+    "dish_key": "macaron_mascarpone_annoimo"
+   },
+   {
+    "ja": "メレンゲアイス",
+    "romaji": "Merenge Aisu",
+    "en": "Meringue with ice cream",
+    "price": "",
+    "section": "コースの一例 / One seating's line-up",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The closing sweet. Meringue is egg white and sugar only, so the wheat question is whatever is under it. Dairy either way.",
+    "dish_key": "meringue_ice"
+   },
+   {
+    "ja": "ワインペアリング",
+    "romaji": "Wain Pearingu",
+    "en": "Wine pairing (aperitif not included)",
+    "price": "¥22,000",
+    "section": "ドリンク / Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "From ¥22,000, poured by a sommelier across the ten courses; the printed note says the aperitif is charged separately. Wine is grape, but fining agents (egg white, isinglass, casein) are not declared on Japanese labels, so a strict vegan should ask.",
+    "dish_key": "wine_pairing"
+   },
+   {
+    "ja": "グラスシャンパン",
+    "romaji": "Gurasu Shanpan",
+    "en": "Champagne by the glass",
+    "price": "¥6,000",
+    "section": "ドリンク / Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "From ¥6,000 a glass. The bottle list behind it is one of the most serious in the city — over seventy champagnes from Egly-Ouriet and Selosse to Salon and a Krug Clos d'Ambonnay, and it is worth asking to see it even if you drink the pairing.",
+    "dish_key": "glass_champagne"
+   },
+   {
+    "ja": "グラスワイン（白・赤）",
+    "romaji": "Gurasu Wain (Shiro / Aka)",
+    "en": "White or red wine by the glass",
+    "price": "¥4,200",
+    "section": "ドリンク / Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "From ¥4,200 a glass, either colour. Same fining caveat as the pairing.",
+    "dish_key": "glass_wine"
+   },
+   {
+    "ja": "飴細工のお花",
+    "romaji": "Amezaiku no Ohana",
+    "en": "Pulled-sugar flower (celebration piece)",
+    "price": "¥2,200",
+    "section": "オプション / Add-on",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A hand-pulled sugar flower for a birthday or anniversary, ¥2,200 each, ordered by noon the day before; they will not write a name or message on it. Boiled sugar work is normally just sugar, glucose and colour.",
+    "dish_key": "amezaiku_flower"
+   }
+  ]
+ },
+ "nagoya_tantanmen_senmonten_meny": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/aichi/A2301/A230109/23092513/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/365993/13ed8f0a35573167dbebc8435281a56c.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/352662/c18f89f91d12eea6aece01c21a248311.jpg",
+   "https://s.tabelog.com/aichi/A2301/A230109/23092513/",
+   "https://www.instagram.com/p/DIlI80YvsNq/"
+  ],
+  "price_note": "Prices approximate — may change. Transcribed from the shop's own ticket machine photographed 2026/04 and its chalk A-board photographed 2026/06.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "担々麺　並",
+    "romaji": "Tantanmen (nami)",
+    "en": "Tantanmen, regular size",
+    "price": "¥1,000",
+    "section": "担々麺 / Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop's core bowl, advertised on the board as 濃厚胡麻が効いた — \"thick with sesame\". Japanese tantanmen is a soup noodle: a creamy sesame-paste-and-soy-milk broth over wheat noodles, topped with spicy minced pork and greens. Not the dry Sichuan original. Wheat noodles, wheat-soy seasoning, pork.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "担々麺　大",
+    "romaji": "Tantanmen (dai)",
+    "en": "Tantanmen, large",
+    "price": "¥1,100",
+    "section": "担々麺 / Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "More noodles for ¥100. The machine offers three sizes on every bowl — 並 regular, 大 large, 特大 extra large — so pick the row, not just the column.",
+    "dish_key": "tantanmen_large"
+   },
+   {
+    "ja": "担々麺　特大",
+    "romaji": "Tantanmen (tokudai)",
+    "en": "Tantanmen, extra large",
+    "price": "¥1,150",
+    "section": "担々麺 / Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The top size, only ¥50 above large — the best value on the machine if you are hungry.",
+    "dish_key": "tantanmen_xl"
+   },
+   {
+    "ja": "麻辣担々麺　並",
+    "romaji": "Māra Tantanmen (nami)",
+    "en": "Mala tantanmen, regular",
+    "price": "¥1,100",
+    "section": "担々麺 / Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The board calls it 痺れる旨さ — \"delicious numbness\". 麻辣 (mala) is the Sichuan pairing of 麻 numbing Sichuan pepper and 辣 chilli heat; the tingling lip-buzz is the point, and it is a different sensation from plain spiciness. Large ¥1,200, extra large ¥1,250. Wheat noodles.",
+    "dish_key": "mala_tantanmen"
+   },
+   {
+    "ja": "チャーシュー担々麺　並",
+    "romaji": "Chāshū Tantanmen (nami)",
+    "en": "Tantanmen with extra braised pork, regular",
+    "price": "¥1,200",
+    "section": "担々麺 / Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The standard bowl loaded with the shop's own chāshū, which the A-board calls 高豚名物 — the house speciality. Large ¥1,300, extra large ¥1,350. Chāshū is braised in a soy-based liquid, so wheat twice over.",
+    "dish_key": "chashu_tantanmen"
+   },
+   {
+    "ja": "チャーシュー麻辣担々麺　並",
+    "romaji": "Chāshū Māra Tantanmen (nami)",
+    "en": "Mala tantanmen with extra braised pork, regular",
+    "price": "¥1,300",
+    "section": "担々麺 / Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The maximal bowl: numbing-spicy broth plus the full pork load. Large ¥1,400, extra large ¥1,450.",
+    "dish_key": "chashu_mala_tantanmen"
+   },
+   {
+    "ja": "担々まぜそば（追い飯付）",
+    "romaji": "Tantan Mazesoba (oimeshi-tsuki)",
+    "en": "Brothless tantan mazesoba, with a rice chaser included",
+    "price": "¥1,200",
+    "section": "まぜそば / Mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The board bills it 胡麻と磯の融合 — sesame meets the sea, i.e. wakame was added to it. Mazesoba has no soup: thick noodles, a concentrated sauce and toppings at the bottom of the bowl that you stir hard yourself before eating. 追い飯 is the ritual finish — when the noodles are gone you tip the small bowl of rice into the leftover sauce and eat that too, and it is included in the price here. Wheat noodles.",
+    "dish_key": "tantan_mazesoba"
+   },
+   {
+    "ja": "辛増し　1辛 / 2辛 / 3辛",
+    "romaji": "Kara-mashi: ichi-kara / ni-kara / san-kara",
+    "en": "Extra heat, levels 1 / 2 / 3",
+    "price": "¥100 / ¥150 / ¥200",
+    "section": "トッピング / Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Buy a separate ticket to step the chilli up. The default bowls are already properly spicy, so treat level 1 as a real increase rather than a nudge. Chilli oil bases sometimes carry soy or fermented bean paste; ask if it matters.",
+    "dish_key": "kara_mashi"
+   },
+   {
+    "ja": "水餃子　6個",
+    "romaji": "Suigyōza (rokko)",
+    "en": "Boiled dumplings, six pieces",
+    "price": "¥430",
+    "section": "サイド / Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Boiled rather than pan-fried, so the wrapper stays slippery and soft — the northern-Chinese way and a much better match for a sesame broth than crisp gyoza. Wheat wrappers, pork filling.",
+    "dish_key": "suigyoza"
+   },
+   {
+    "ja": "塩辣油水餃子　6個",
+    "romaji": "Shio Rāyu Suigyōza (rokko)",
+    "en": "Boiled dumplings with salt and aromatic chilli oil, six pieces",
+    "price": "¥530",
+    "section": "サイド / Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The A-board version — 塩と香味ラー油で食べる, eaten with salt and fragrant chilli oil instead of a vinegar-soy dip. ¥100 more than plain and the better order. Wheat wrappers.",
+    "dish_key": "shio_rayu_suigyoza"
+   },
+   {
+    "ja": "Aセット（水餃子4個＋ライス）",
+    "romaji": "Ē Setto",
+    "en": "Set A — four boiled dumplings plus rice",
+    "price": "¥450 / ¥500 / ¥550",
+    "section": "セット / Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Three prices for three rice sizes: small ¥450, medium ¥500, large ¥550. Ordered alongside a bowl of noodles, not instead of one.",
+    "dish_key": "set_a"
+   },
+   {
+    "ja": "Bセット（こく旨辣油水餃子4個＋ライス）",
+    "romaji": "Bii Setto",
+    "en": "Set B — four chilli-oil dumplings plus rice",
+    "price": "¥550 / ¥600 / ¥650",
+    "section": "セット / Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same idea as Set A with the rich chilli-oil dumplings: rice small ¥550, medium ¥600, large ¥650.",
+    "dish_key": "set_b"
+   },
+   {
+    "ja": "Cセット（ミニチャーシュー丼）",
+    "romaji": "Shii Setto (Mini Chāshū-don)",
+    "en": "Set C — mini braised-pork rice bowl",
+    "price": "¥450",
+    "section": "セット / Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A small bowl of rice under sliced chāshū, listed on the A-board at the same ¥450. The classic thing to order alongside a spicy bowl to cool it down. Soy-braised pork means wheat.",
+    "dish_key": "set_c_chashu_don"
+   },
+   {
+    "ja": "ライス　小 / 中 / 大",
+    "romaji": "Raisu: shō / chū / dai",
+    "en": "Plain rice, small / medium / large",
+    "price": "¥150 / ¥200 / ¥250",
+    "section": "サイド / Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed white rice, unseasoned — the only wheat-free, plant-based thing on the machine, and useful either as a heat-quencher or as a substitute 追い飯 for the mazesoba. It is scooped in a kitchen full of wheat noodles, so it is survival food rather than a safe meal.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "厚切りチャーシュー　1枚",
+    "romaji": "Atsugiri Chāshū (ichimai)",
+    "en": "Thick-cut braised pork, one slice",
+    "price": "¥210",
+    "section": "トッピング / Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A single thick slab rather than the usual paper-thin sheets — this is the cut the shop is named for (高豚 reads \"Haiton\", literally \"high pork\"). Soy-braised: wheat.",
+    "dish_key": "atsugiri_chashu"
+   },
+   {
+    "ja": "チャーシュー盛り",
+    "romaji": "Chāshū-mori",
+    "en": "Plate of braised pork",
+    "price": "¥600",
+    "section": "トッピング / Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A whole plate of the chāshū as a dish in its own right — order it with a beer rather than on top of a bowl. Soy-braised: wheat.",
+    "dish_key": "chashu_mori"
+   },
+   {
+    "ja": "ネギ",
+    "romaji": "Negi",
+    "en": "Extra spring onion",
+    "price": "¥120",
+    "section": "トッピング / Toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "A pile of shredded Japanese spring onion, flagged on the machine with a hand-written 大盛ネギ tag. Just the vegetable — no seasoning, no wheat.",
+    "dish_key": "extra_negi"
+   },
+   {
+    "ja": "ちょい呑みビールセット",
+    "romaji": "Choi-nomi Biiru Setto",
+    "en": "\"Quick drink\" beer set",
+    "price": "¥1,000",
+    "section": "ドリンク / Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Advertised on the street board: a beer plus a snack for ¥1,000, aimed at the Friday and Saturday late shift when the shop stays open to 22:00. Beer is malted barley.",
+    "dish_key": "choinomi_beer_set"
+   },
+   {
+    "ja": "アサヒスーパードライ / サッポロ赤星",
+    "romaji": "Asahi Sūpā Dorai / Sapporo Akaboshi",
+    "en": "Asahi Super Dry / Sapporo Lager \"Red Star\"",
+    "price": "¥800",
+    "section": "ドリンク / Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "赤星 is the old-fashioned Sapporo Lager in the red-star bottle — a heavier, maltier beer than Super Dry and the one older Japanese drinkers order on purpose. Barley: not gluten-free.",
+    "dish_key": "beer_bottles"
+   },
+   {
+    "ja": "サントリー角ハイボール / レモンチューハイ / ビンコーラ",
+    "romaji": "Santorii Kaku Haibōru / Remon Chūhai / Bin Kōra",
+    "en": "Suntory Kaku highball / lemon chūhai / bottled cola",
+    "price": "¥550 / ¥500 / ¥400",
+    "section": "ドリンク / Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "角 is Suntory's yellow-labelled house whisky and the highball made from it is Japan's default drink with fried and spicy food. Chūhai is shōchū with soda and flavouring. Both are distilled, which removes gluten protein in practice, but coeliacs who react to grain spirits should stick to the cola.",
+    "dish_key": "highball_chuhai_cola"
+   }
+  ]
+ },
+ "nagoya_ramen_shima": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/aichi/A2301/A230109/23066626/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/350140/39105c06faf05fdf9795a4fcfcea12a9.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/356300/caea042e28f7f18888cb9d48c86b3835.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/343667/b3c5585759ecbcfb146f5d7c62a2d155.jpg",
+   "https://s.tabelog.com/aichi/A2301/A230109/23066626/",
+   "https://s.tabelog.com/aichi/A2301/A230109/23066626/dtlrvwlst/"
+  ],
+  "price_note": "Prices approximate — may change. Transcribed from the shop's own printed menu sheet inside the shop (photographed 2026/03) and the identical weathered card by the door (photographed 2026/04); prices are marked 税込, tax included.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "しょうゆらーめん　並",
+    "romaji": "Shōyu Rāmen (nami)",
+    "en": "Soy-sauce ramen, regular",
+    "price": "¥500",
+    "section": "らーめん / Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The whole menu is this one bowl in four configurations. Old-school Nagoya shōyu ramen — a clear brown soy-seasoned broth, straight thin wheat noodles, a few slices of pork, menma and spring onion. ¥500 in 2026 is genuinely extraordinary and is why people cross town for it. Wheat noodles and wheat soy sauce; the broth is animal. Five counter seats, no ticket machine, cash only, smoking allowed; you order by saying the size — 並 (nami), 一人半 (ichininhan) or 大盛 (ōmori) — and whether you want チャーシュー.",
+    "dish_key": "shoyu_ramen"
+   },
+   {
+    "ja": "しょうゆらーめん　一人半",
+    "romaji": "Shōyu Rāmen (ichininhan)",
+    "en": "Soy-sauce ramen, one-and-a-half portions",
+    "price": "¥600",
+    "section": "らーめん / Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "一人半 literally means \"one and a half people\" — the middle size, between regular and large. An unusual old-shop way of writing it that you will rarely see elsewhere. Wheat.",
+    "dish_key": "shoyu_ramen_1_5"
+   },
+   {
+    "ja": "しょうゆらーめん　大盛",
+    "romaji": "Shōyu Rāmen (ōmori)",
+    "en": "Soy-sauce ramen, large",
+    "price": "¥700",
+    "section": "らーめん / Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The biggest bowl, still under ¥1,000. Wheat.",
+    "dish_key": "shoyu_ramen_large"
+   },
+   {
+    "ja": "チャーシュー麺",
+    "romaji": "Chāshū-men",
+    "en": "Ramen loaded with braised pork — add ¥200 to any size",
+    "price": "¥700",
+    "section": "らーめん / Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The card reads チャーシュー麺　各200円増 — the pork upgrade costs ¥200 on top of whichever size you pick, so ¥700 on a regular, ¥800 on the one-and-a-half, ¥900 on a large. Chāshū is simmered in soy: wheat.",
+    "dish_key": "chashu_men"
+   },
+   {
+    "ja": "にんにく",
+    "romaji": "Ninniku",
+    "en": "Garlic (available on request)",
+    "price": "",
+    "section": "薬味 / Condiments",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The card carries a separate note — ※にんにく有ります — that garlic is available; say にんにく入れてください to have it crushed into the bowl. No price shown, so it appears to be free. Plain garlic is just garlic.",
+    "dish_key": "garlic"
+   }
+  ]
+ }
+}

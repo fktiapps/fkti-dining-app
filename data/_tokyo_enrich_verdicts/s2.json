@@ -259,5 +259,578 @@
    "https://tkjm.jp/tsukijijougai/store138/"
   ],
   "enrich_note": "UNRESOLVED. Every search leg ran and returned HTTP 200: Yahoo Japan on 「つきじ 中島 天ぷら 築地 東京 老舗」, 「\"つきじ中島\" OR \"築地 中島\" 天ぷら 中央区」, 「中島 築地 場外市場 天ぷら 店 食べログ」, the exact string 「つきじ中島」, and the nationwide 「天ぷら 中島 東京 店 食べログ 老舗」; plus a direct read of Tabelog's Tsukiji tempura ranking. Nearest candidates: 天ぷら なかがわ (中央区築地2-14-2 築地NYビル1F — right trade and neighbourhood, wrong name), 築地 奈可嶋 (a 中島水産 department-store sushi/sōzai brand, not a Tsukiji restaurant) and 中島商店 (a dried-fish wholesaler in the outer market). None is a 老舗天ぷら屋 called 中島. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__88",
+  "status": "confirmed",
+  "name": "築地すし鮮 総本店",
+  "lat": 35.669032,
+  "lng": 139.77153,
+  "loc_precise": true,
+  "address_ja": "〒104-0045 東京都中央区築地1-9-6 アロア築地ビル1F",
+  "enrich_confidence": "medium",
+  "cuisine": "A 78-seat Tsukiji sushi-and-sake house that buys whole bluefin over 150 kg and runs from late morning until five in the morning — a ¥1,848 nigiri set at lunch, courses at ¥5,500 / ¥9,680 / ¥13,200 at night, and thirty-odd sake plus Japanese wine alongside",
+  "cuisine_type": "sushi",
+  "neighborhood": "Tsukiji 1-chōme, on the Shintomicho side of the district — 3 min from Tsukiji (Hibiya line, exit 4), 5 min from Shintomichō (Yūrakuchō line, exit 4), and walkable from Higashi-Ginza",
+  "website": "https://tsukijisushisen-souhonten.com/",
+  "menu_url": "https://tsukijisushisen-souhonten.com/",
+  "hours_raw": "11:00〜翌5:00（L.O. 4:30）・年中無休。お通し550円／人。全席禁煙",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Nothing gluten-related is published — no allergen chart, no gluten-free claim, no tamari. Assume the table soy sauce is ordinary wheat shōyu, and that the nikiri brushed on the nigiri, the anago and unagi tare, and the tamago (mirin and shōyu) all carry wheat. The kitchen also sends out 一品料理 alongside the sushi, which in a house of this type means fried items in the same oil. Plain sashimi with your own soy sauce is the only route a celiac could take here, and it needs to be negotiated at the counter in Japanese.",
+  "vegan_status": "limited",
+  "vegan_detail": "Not published either way. A sushi counter can always make kappa-maki and will usually have inari, but this is a tuna house: the courses are fish from first plate to last, the miso soup will be bonito dashi, and the tamago is egg. Nothing on the site is labelled vegetarian or vegan. Treat it as a place a vegan can sit at with a companion, not a place to eat a meal.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by 株式会社クプロ (Cpro Co., Ltd.), 福岡市博多区神屋町3-26"
+   ],
+   "origin": "Tsukiji 1-chōme — the flagship of a small Fukuoka-run group",
+   "background": "築地すし鮮 is the core brand of 株式会社クプロ, a Fukuoka company headquartered at 福岡市博多区神屋町3-26 which runs four restaurant brands across roughly seven outlets — 築地すし鮮 itself, 出前や鮮吉 (delivery sushi), 天ぷら・寿司 博多 春宵, and the ramen shop 鳳凛 — alongside a fitness business. Under the すし鮮 name the group operates the Tsukiji 総本店, a 福岡総本店, a 4丁目場外市場店 in the Tsukiji outer market, plus 浅草雷門店, 恵比寿東口店 and 西中洲店. The Tsukiji 総本店 is the one this record belongs to and is the group's showpiece: its whole selling point is buying a bluefin tuna of 150 kg and up in one piece and cutting it in the shop, which is why the fatty cuts are the thing reviewers write about and why a ¥1,848 lunch set gets called extraordinary value in a district where lunch sushi routinely runs double that. No individual itamae is named publicly; the company's copy talks about 職人 in the plural and about 日本の食文化の真髄 rather than about a personality. The 11:00-to-5 a.m. licence is the other distinguishing fact — this is one of the very few places in Tsukiji where you can eat proper sushi at three in the morning, and the room seats 78, so it functions as much as a late-night drinking house as a sushi counter.",
+   "philosophy": "One whole tuna, cut in-house, sold from lunchtime to dawn.",
+   "specialty": "本まぐろ from a single 150 kg-plus fish; the ¥1,848 lunch nigiri set; おすすめ彩コース ¥5,500 (7 dishes, walk-ins accepted), 月コース ¥9,680 (6 dishes), 雪コース ¥13,200 (7 dishes); 30-plus sake and Japanese wines.",
+   "anecdotes": [
+    {
+     "text": "The shop's own copy leads on the whole-fish purchase — 「一本買い」 of a bluefin over 150 kg — rather than on a chef's name; the tuna, not the itamae, is the brand.",
+     "source": "https://tsukijisushisen-souhonten.com/"
+    },
+    {
+     "text": "Reviewers single out the ¥1,848 lunch nigiri set as exceptional value for Tsukiji, which is what fills the 78 seats in the middle of the day.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13029445/"
+    },
+    {
+     "text": "The kitchen runs to 4:30 a.m. last order, 365 days a year — an unusual licence for a sushi house and the reason the room turns into a late drinking spot after the market crowd has gone.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13029445/"
+    }
+   ],
+   "japanese_sources_summary": "tsukijisushisen-souhonten.com gives the address 〒104-0045 東京都中央区築地1-9-6 アロア築地ビル1F, 11:00–05:00 (L.O. 04:30), 無休, courses from ¥5,500 and ¥9,680, a ¥550 per-person otoshi and a fully non-smoking room. Tabelog 13029445 confirms the same address, the Hibiya-line Tsukiji exit-4 3-minute and Shintomichō exit-4 5-minute walks, genre 寿司・海鮮・居酒屋, 78 seats, lunch ¥1,000–1,999 / dinner ¥5,000–5,999, the ¥1,848 lunch set and the ¥13,200 雪コース, with a 3.09 rating over 183 reviews, and gives the coordinates used here. cpro-group.com's company page identifies the operator, its Fukuoka address, its four brands and its outlet counts; hotpepper.jp/gstr00545 lists the six すし鮮 branches.",
+   "confidence": "medium",
+   "sources": [
+    "https://tsukijisushisen-souhonten.com/",
+    "https://tabelog.com/tokyo/A1313/A131301/13029445/",
+    "https://www.cpro-group.com/sushisen/company/",
+    "https://www.hotpepper.jp/gstr00545/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "No allergen information of any kind is published — no chart, no statement, no gluten-free claim. A 78-seat izakaya-style kitchen sending out fried 一品料理 alongside the sushi.",
+     "source": "https://tsukijisushisen-souhonten.com/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Ordinary wheat shōyu must be assumed: no tamari or gluten-free seasoning is mentioned anywhere, and the nikiri, anago/unagi tare and tamago seasoning are all shōyu-based by default.",
+     "source": "https://tsukijisushisen-souhonten.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The courses are fish throughout and the miso soup will be bonito dashi; nothing on the menu is marked vegetarian or vegan.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13029445/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Easy to walk into — a large ground-floor room three minutes from Tsukiji station exit 4, open every day from 11:00 to 5:00 a.m., fully non-smoking, with a photographed course menu and online booking. Two things to know: a ¥550 per-person otoshi (a compulsory appetiser charge) is added at dinner, which surprises visitors who read it as a cover charge; and if you have a wheat allergy you will need Japanese to work through the soy sauce, the nikiri and the tare with the counter, because none of it is written down."
+  },
+  "sources": [
+   "https://tsukijisushisen-souhonten.com/",
+   "https://tabelog.com/tokyo/A1313/A131301/13029445/",
+   "https://tabelog.com/tokyo/A1313/A131301/13029445/dtlmap/",
+   "https://www.cpro-group.com/sushisen/company/",
+   "https://www.hotpepper.jp/gstr00545/",
+   "https://g420319.gorp.jp/"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「鮮寿司」, which is not a business name; it is 「すし鮮」 with the characters reversed. The shop is 築地すし鮮 総本店 at 中央区築地1-9-6 アロア築地ビル1F, and it is the only sushi restaurant in the district whose access line names both of the light record's stations — 築地駅 exit 4 (3 min) and 新富町駅 exit 4 (5 min) — which is what ties the identification down. Confidence is 'medium' because the name match is an inference, though the neighbourhood agreement is exact. Coordinates moved from the approximate 35.666/139.77 to the shop's own 35.669032/139.77153 (Tabelog), about 350 m. Note the same operator also runs 築地すし鮮 4丁目場外市場店 in the outer market, which is a different address."
+ },
+ {
+  "id": "tokyo3__90",
+  "status": "not_found",
+  "lat": 35.6717,
+  "lng": 139.765,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba restaurant named 新しき村 exists in Tokyo; the name belongs to a utopian farming commune, not a shop",
+  "cuisine_type": "soba",
+  "neighborhood": "Unverified. The light record says 築地・銀座駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and the name almost certainly does not belong to a restaurant. 新しき村 (Atarashiki-mura, 'the new village') is the utopian agricultural commune founded by the novelist 武者小路実篤 in 1918 — originally in Kijō, Miyazaki, and since 1939 also at Moroyama in Iruma-gun, Saitama. It is a住community and a Mushanokōji museum subject, and every search on the phrase returns literary and local-history material about him, not a menu. Searching the name together with 蕎麦 pulls up the soba shops of Moroyama-machi in Saitama — 久兵衛屋 毛呂山店, 蕎麦料理 すみや, 木村そば屋, 文七, もろやま 田中屋, 増味屋, お食事処 清滝, 東雲とり福 — because that is the town the commune sits in, and not one of them is called 新しき村. Nothing of the name exists in Ginza, Tsukiji or anywhere else in Chūō-ku.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan queries 「\"新しき村\" そば 蕎麦 東京 銀座 中央区 店」, 「新しき村 蕎麦 食べログ 店舗」 and 「そば 新しき村 東京都 蕎麦屋 手打ち」 all returned HTTP 200 with results. Every result was either Mushanokōji Saneatsu material or the Saitama soba-shop index for Moroyama-machi, the town where the commune stands. No Tabelog, gnavi, hotpepper, retty or hitosara listing for a restaurant of this name exists.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/saitama/C11326/rstLst/soba/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify any business. Recommend the record be deleted — the name belongs to Mushanokōji Saneatsu's commune, not to a shop."
+  },
+  "sources": [
+   "https://tabelog.com/saitama/C11326/rstLst/soba/"
+  ],
+  "enrich_note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「\"新しき村\" そば 蕎麦 東京 銀座 中央区 店」, 「新しき村 蕎麦 食べログ 店舗」 and 「そば 新しき村 東京都 蕎麦屋 手打ち」. Every hit was about 武者小路実篤's 1918 utopian commune 新しき村 (Kijō, Miyazaki and Moroyama, Saitama) or about the soba shops of Moroyama-machi, the town the commune stands in. There is no restaurant of this name in Tokyo. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__96",
+  "status": "probable",
+  "name": "築地食堂 源ちゃん",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "A 126-outlet chain of set-meal and donburi canteens supplied from Toyosu market — grilled-fish teishoku and kaisen-don at office-lunch prices — but it has no branch in Tsukiji at all",
+  "cuisine_type": "teishoku",
+  "neighborhood": "NOT in Tsukiji. The brand name says 築地 but the chain has no Tsukiji outlet; its only Chūō-ku branch is 晴海トリトン店, 東京都中央区晴海1-8-16 晴海トリトンスクエア3階, about 2 km away near Kachidoki.",
+  "website": "https://genchan.jp/",
+  "menu_url": "https://genchan.jp/shop/",
+  "hours_raw": "晴海トリトン店：ランチ 11:00〜15:00（L.O.14:00）／ディナー 17:00〜22:00（L.O.21:00）・定休日は施設休館日に準ずる・TEL 03-5547-1161",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "The operator, 株式会社サイプレス, does publish per-store allergen PDFs for 築地食堂源ちゃん at cyp-jp.com/allergy/, which is genuinely more than most Japanese teishoku chains offer — but the format is the standard 28-item allergen grid, not a gluten-free programme. The menu itself is against you: teishoku chains of this kind are built on grilled fish glazed with wheat shōyu and mirin, fried items (kara-age, fry, tempura) out of a shared fryer, and miso soup. Nothing here is prepared wheat-free. Read the store's own PDF before ordering, and expect to end up with plain rice and sashimi.",
+  "vegan_status": "no",
+  "vegan_detail": "A fish canteen. Every set is built on grilled or raw seafood, the rice comes with bonito-dashi miso soup, and no vegetarian or vegan item is listed. Nothing published suggests a plant-based option exists.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "brand of 株式会社サイプレス (CYPRESS CO., LTD.)"
+   ],
+   "origin": "Tokyo — a brand name, not a Tsukiji address",
+   "background": "築地食堂 源ちゃん is not an independent Tsukiji restaurant; it is the flagship brand of 株式会社サイプレス, a company that began in 1993 with a kushiage shop called 串えもん and has opened continuously since, reaching 126 outlets across 36 brands by 2025 — 64 openings and a net gain of 37 stores since the pandemic. All outlets are directly operated rather than franchised, and the group spans washoku, conveyor sushi, western, noodle and café formats from Hokkaidō to Kyūshū. The 源ちゃん format is a market canteen: fish sourced through Toyosu and direct-from-producer routes, served as teishoku and donburi, with each outlet given slightly different menu and interior so the chain does not read as one. There is a spin-off counter format, スタンド源ちゃん. Crucially for this record, the chain's own store index lists no branch anywhere in 築地 — the Tokyo outlets are 五反田TOC, 汐留シティセンター, 新宿御苑, 新宿NSビル, 深川ギャザリア, 神保町, 晴海トリトン, 東京オペラシティ, 池袋サンシャインシティ, 飯田橋, 品川シーズンテラス, TFT有明, 有明ガーデン, 両国江戸NOREN, 大井競馬場 and アクアシティお台場 — and the only one in Chūō-ku is 晴海トリトン店 at 中央区晴海1-8-16. The 築地 in the name is heritage branding for a market the company no longer buys at; its own strapline now reads 「豊洲市場と産直ルートから」.",
+   "philosophy": "Market fish at canteen prices, one directly-operated store at a time.",
+   "specialty": "Grilled-fish teishoku and kaisen-don sourced through Toyosu; a slightly different menu at every branch.",
+   "anecdotes": [
+    {
+     "text": "The company told investors in November 2025 that it had opened 64 stores since the pandemic for a net gain of 37, reaching 126 outlets across 36 brands, with 源ちゃん as the core.",
+     "source": "https://finance.logmi.jp/articles/383385"
+    },
+    {
+     "text": "Most branches run their own X account — @tsukiji_genchan for the chain, then @genchan_akb for Akihabara, @genchan_opera for Opera City, @genchan_hts for Harumi Triton and so on — which is unusual for a chain this size and is part of the deliberate policy of making each store feel local.",
+     "source": "https://genchan.jp/"
+    },
+    {
+     "text": "The 人形町店 (中央区日本橋人形町3-5-9) has closed; Tabelog carries it as 【閉店】.",
+     "source": "https://tabelog.com/tokyo/A1302/A130204/13142742/"
+    }
+   ],
+   "japanese_sources_summary": "genchan.jp/shop/ is the chain's own store index and was read in full: it lists every 築地食堂源ちゃん and スタンド源ちゃん outlet with postal addresses, and contains no Tsukiji branch — the sole Chūō-ku entry is 〒104-0053 東京都中央区晴海1-8-16 晴海トリトンスクエア3階. The Harumi Triton store page gives 03-5547-1161, lunch 11:00–15:00 (L.O.14:00), dinner 17:00–22:00 (L.O.21:00) and closure following the building. cyp-jp.com identifies the operator and carries the per-brand allergen pages; finance.logmi.jp/articles/383385 gives the 126-store, 36-brand figures and the 1993 串えもん origin.",
+   "confidence": "medium",
+   "sources": [
+    "https://genchan.jp/shop/",
+    "https://cyp-jp.com/brand/genchan/",
+    "https://cyp-jp.com/allergy/",
+    "https://finance.logmi.jp/articles/383385"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Teishoku-chain kitchens run a shared fryer for kara-age, fry and tempura alongside the grilled-fish line; no wheat-free handling is claimed anywhere.",
+     "source": "https://cyp-jp.com/allergy/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Standard wheat shōyu throughout — grill glazes, simmered dishes and donburi tare. No tamari is mentioned.",
+     "source": "https://genchan.jp/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Every set is seafood-based and the miso soup is bonito dashi; no vegetarian item is listed.",
+     "source": "https://genchan.jp/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "株式会社サイプレス publishes downloadable allergen tables per brand and per store for 築地食堂源ちゃん, so a diner can check the 28-item grid before ordering.",
+     "source": "https://cyp-jp.com/allergy/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Published per-store allergen tables — unusual for a canteen chain at this price point.",
+     "source": "https://cyp-jp.com/allergy/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "If the record is repointed to 晴海トリトン店 it is an easy meal: a shopping-complex canteen on the third floor of Harumi Triton Square, photo menu, cards and QR payment, no reservation needed. But do not send anyone to Tsukiji looking for this name — there is no branch there, and the nearest one is a 2 km walk or a ride to Kachidoki."
+  },
+  "sources": [
+   "https://genchan.jp/",
+   "https://genchan.jp/shop/",
+   "https://cyp-jp.com/brand/genchan/",
+   "https://cyp-jp.com/allergy/",
+   "https://finance.logmi.jp/articles/383385",
+   "https://tabelog.com/tokyo/A1302/A130204/13142742/"
+  ],
+  "enrich_note": "NAME CORRECTION, but the pin cannot be honoured. The light record read 「築地食堂源記」; the real brand is 築地食堂 源ちゃん, a 126-outlet chain run by 株式会社サイプレス. The chain's own store index was read in full and contains NO branch in 築地 — the 築地 in the name is heritage branding, and the company's current strapline sources from Toyosu. The only Chūō-ku outlet is 晴海トリトン店 (〒104-0053 中央区晴海1-8-16 晴海トリトンスクエア3階, 03-5547-1161), roughly 2 km from the record's pin. Coordinates therefore left unchanged and loc_precise:false; the merge should either delete this record or repoint it to the Harumi Triton address. FOR THE HUMAN: this record and tokyo3__109 (「築地食堂 源」) are the same brand — they are duplicates and only one should survive, if either does. Because this is a chain, it may belong in data/tokyo_chains.json rather than the main file."
+ },
+ {
+  "id": "tokyo3__102",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 市場食堂 is a generic phrase for 'market canteen'; no business of that name exists in Tsukiji or anywhere in Chūō-ku",
+  "cuisine_type": "kaisendon",
+  "neighborhood": "Unverified. The light record says 中央区築地, 築地駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 市場食堂 reads in Japanese as 'the market canteen' and is used descriptively of any eating place inside a wholesale market, which is the likely origin of this record: a sweep over Tsukiji text would pick the phrase up constantly. Businesses actually registered under the name exist in Tokyo, but all of them are far from Chūō-ku and attached to other markets — 市場食堂 さかなや (足立区千住4-11-6, Kita-Senju), 海鮮 市場食堂 (Kodaira), 市場の食堂 (Tōyōchō), 市場めし とくだ屋 (千住大橋), 伊勢屋食堂 in the Yodobashi market at Ōkubo. Tabelog's index of 食堂 around Tsukiji-Shijō station lists 大衆食堂 てんぐ大ホール 銀座ナイン店, 土鍋炊きご飯 おこめとおかず 東銀座店, 築地食堂源ちゃん 汐留シティセンター店 and 銀座 美菜莉 — no 市場食堂. The nearest thing in the outer market itself is 築地 にっぽん漁港食堂 (中央区築地4-16-2, inside にっぽん漁港市場, 8:00–15:00, closed Wednesdays, 海鮮3種丼 ¥1,000), which is a real market canteen but is not called 市場食堂 and cannot be assumed to be this record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan queries 「市場食堂 築地 中央区 海鮮丼 食べログ」, 「\"市場食堂\" 築地 場外市場 中央区 店 住所」, 「市場食堂 東京都 食べログ 店名」 and 「築地 にっぽん漁港食堂 中央区築地4-16-2 営業時間」 all returned HTTP 200 with results. None placed a business named 市場食堂 in Chūō-ku. Tabelog's 中央区築地 kaisen-don index (38 shops) and its Tsukiji-Shijō 食堂 index were both surfaced and contain no 市場食堂.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/C13102/C36108/rstLst/RC011105/",
+    "https://s.tabelog.com/tokyo/A1313/A131301/R6343/rstLst/teishoku/",
+    "https://tabelog.com/tokyo/A1313/A131301/13169961/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. If a future pass wants a genuine market canteen in the Tsukiji outer market to stand in its place, 築地 にっぽん漁港食堂 (中央区築地4-16-2, 2 min from Tsukiji-Shijō exit A1, 8:00–15:00, closed Wednesdays) is real — but it is not this record."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/C13102/C36108/rstLst/RC011105/",
+   "https://s.tabelog.com/tokyo/A1313/A131301/R6343/rstLst/teishoku/",
+   "https://tabelog.com/tokyo/A1313/A131301/13169961/"
+  ],
+  "enrich_note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「市場食堂 築地 中央区 海鮮丼 食べログ」, 「\"市場食堂\" 築地 場外市場 中央区 店 住所」, 「市場食堂 東京都 食べログ 店名」 and 「築地 にっぽん漁港食堂 中央区築地4-16-2 営業時間」; plus Tabelog's 中央区築地 kaisen-don index (38 shops) and its Tsukiji-Shijō 食堂 index. No business named 市場食堂 exists in Chūō-ku. Real Tokyo shops of that name are at Kita-Senju, Kodaira, Tōyōchō and Senju-Ōhashi, all attached to other markets. 市場食堂 is also simply the Japanese for 'market canteen', which is the likely source of this phantom name. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__109",
+  "status": "probable",
+  "name": "築地食堂 源ちゃん",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "A 126-outlet chain of set-meal and donburi canteens supplied from Toyosu market — grilled-fish teishoku and kaisen-don at office-lunch prices — but it has no branch in Tsukiji at all",
+  "cuisine_type": "teishoku",
+  "neighborhood": "NOT in Tsukiji. The brand name says 築地 but the chain has no Tsukiji outlet; its only Chūō-ku branch is 晴海トリトン店, 東京都中央区晴海1-8-16 晴海トリトンスクエア3階, about 2 km away near Kachidoki.",
+  "website": "https://genchan.jp/",
+  "menu_url": "https://genchan.jp/shop/",
+  "hours_raw": "晴海トリトン店：ランチ 11:00〜15:00（L.O.14:00）／ディナー 17:00〜22:00（L.O.21:00）・定休日は施設休館日に準ずる・TEL 03-5547-1161",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "The operator, 株式会社サイプレス, publishes per-store allergen PDFs for 築地食堂源ちゃん at cyp-jp.com/allergy/ — a 28-item allergen grid, not a gluten-free programme. The menu is against you: grilled fish glazed with wheat shōyu and mirin, fried items out of a shared fryer, and miso soup. Nothing is prepared wheat-free.",
+  "vegan_status": "no",
+  "vegan_detail": "A fish canteen. Every set is built on grilled or raw seafood with bonito-dashi miso soup; no vegetarian or vegan item is listed.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "brand of 株式会社サイプレス (CYPRESS CO., LTD.)"
+   ],
+   "origin": "Tokyo — a brand name, not a Tsukiji address",
+   "background": "See tokyo3__96, which is the same business: 築地食堂 源ちゃん is the flagship brand of 株式会社サイプレス, a company that began in 1993 with the kushiage shop 串えもん and had reached 126 directly-operated outlets across 36 brands by 2025. The 源ちゃん format is a market canteen — Toyosu and direct-from-producer fish served as teishoku and donburi, with each outlet given a slightly different menu and interior. The chain's own store index lists no branch anywhere in 築地; the sole Chūō-ku outlet is 晴海トリトン店 at 中央区晴海1-8-16 晴海トリトンスクエア3階 (03-5547-1161). The 築地 in the name is heritage branding — the company's current strapline reads 「豊洲市場と産直ルートから」. The 人形町店 at 中央区日本橋人形町3-5-9 has closed and is carried on Tabelog as 【閉店】.",
+   "philosophy": "Market fish at canteen prices, one directly-operated store at a time.",
+   "specialty": "Grilled-fish teishoku and kaisen-don sourced through Toyosu; a slightly different menu at every branch.",
+   "anecdotes": [],
+   "japanese_sources_summary": "genchan.jp/shop/ (the chain's own complete store index, read in full — no Tsukiji branch, sole Chūō-ku entry 〒104-0053 中央区晴海1-8-16), the Harumi Triton store page (03-5547-1161, lunch 11:00–15:00 L.O.14:00, dinner 17:00–22:00 L.O.21:00), cyp-jp.com (operator and allergen pages), finance.logmi.jp/articles/383385 (126 stores, 36 brands, 1993 origin).",
+   "confidence": "medium",
+   "sources": [
+    "https://genchan.jp/shop/",
+    "https://cyp-jp.com/brand/genchan/",
+    "https://cyp-jp.com/allergy/",
+    "https://finance.logmi.jp/articles/383385"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Teishoku-chain kitchens run a shared fryer for kara-age, fry and tempura alongside the grilled-fish line; no wheat-free handling is claimed.",
+     "source": "https://cyp-jp.com/allergy/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Standard wheat shōyu throughout — grill glazes, simmered dishes and donburi tare. No tamari is mentioned.",
+     "source": "https://genchan.jp/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Every set is seafood-based and the miso soup is bonito dashi; no vegetarian item is listed.",
+     "source": "https://genchan.jp/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "株式会社サイプレス publishes downloadable allergen tables per brand and per store for 築地食堂源ちゃん.",
+     "source": "https://cyp-jp.com/allergy/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Published per-store allergen tables — unusual for a canteen chain at this price point.",
+     "source": "https://cyp-jp.com/allergy/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "Easy if repointed to 晴海トリトン店 — a shopping-complex canteen on the third floor of Harumi Triton Square, photo menu, cards and QR payment, no reservation needed. But do not send anyone to Tsukiji looking for this name; there is no branch there."
+  },
+  "sources": [
+   "https://genchan.jp/",
+   "https://genchan.jp/shop/",
+   "https://cyp-jp.com/brand/genchan/",
+   "https://cyp-jp.com/allergy/",
+   "https://finance.logmi.jp/articles/383385",
+   "https://tabelog.com/tokyo/A1302/A130204/13142742/"
+  ],
+  "enrich_note": "DUPLICATE of tokyo3__96 — same business. The light record read 「築地食堂 源」; the real brand is 築地食堂 源ちゃん, the 126-outlet chain run by 株式会社サイプレス. The chain's own store index was read in full and contains NO branch in 築地; the only Chūō-ku outlet is 晴海トリトン店 (〒104-0053 中央区晴海1-8-16 晴海トリトンスクエア3階, 03-5547-1161), roughly 2 km from the pin. Coordinates unchanged, loc_precise:false. FOR THE HUMAN: tokyo3__96 (「築地食堂源記」) and this record are the same brand and must not both ship; because it is a chain it may belong in data/tokyo_chains.json rather than the main file."
+ },
+ {
+  "id": "tokyo3__114",
+  "status": "confirmed",
+  "name": "並木藪蕎麦",
+  "lat": 35.709685,
+  "lng": 139.795954,
+  "loc_precise": true,
+  "address_ja": "〒111-0034 東京都台東区雷門2-11-9",
+  "enrich_confidence": "high",
+  "cuisine": "The Asakusa house of the Yabu lineage, open since 1913: a small ¥850 zaru you dip only the tip of, because the tsuyu is famously black and salty — then nori-kake ¥1,100–1,300, ten-zaru ¥2,000–2,300 and winter kamo-nanban ¥2,100, eaten standing on a warm flask of sake",
+  "cuisine_type": "soba",
+  "neighborhood": "Kaminarimon 2-chōme, one street back from Kaminarimon gate — 1 min (172 m) from Asakusa Station exits A4/A5 (Ginza line, Toei Asakusa line), 5 min from the Tōbu Isesaki line terminus",
+  "website": "http://yabusoba.co.jp/mutsumi/top.html",
+  "menu_url": "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/",
+  "hours_raw": "月・火・金・土・日 11:00〜19:30（L.O.19:00）／水・木 定休日。予約不可。全席禁煙。カード可（VISA・Master・JCB・AMEX）、交通系電子マネー・nanaco・WAON可、QRコード決済不可",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable, and not close. Yabu-school soba is a wheat-blended dough, the boards are dusted with 打ち粉 (wheat flour), and the tsuyu this shop is actually famous for is a very dark, very concentrated wheat soy sauce — the whole point of the house style. Half the menu is tempura (天ざる, 天ぷらそば, 天ぷら ¥1,700) fried in the same small kitchen. No allergen information is published and nothing gluten-free is claimed. Even the plain zaru cannot be made safe here.",
+  "vegan_status": "no",
+  "vegan_detail": "The tsuyu is a bonito-and-shōyu kaeshi — there is no version of eating soba here without it — and the 玉子とじ and 花巻 are egg and dashi. Of the cold sides, 焼きのり (¥850) and わさび芋 (¥850, grated yam) are plant-based in themselves, but 板わさ is fish kamaboko and everything is served alongside the same dashi. This is not a place to eat a vegan meal.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "member house of 藪睦会 (the Yabu guild), founded 1913"
+   ],
+   "origin": "Kaminarimon, Asakusa — a free-standing house one street off the Kaminarimon gate",
+   "background": "並木藪蕎麦 opened in 1913 and is one of the three houses usually named as the 藪御三家 alongside かんだやぶそば in Kanda-Awajichō and 池の端藪蕎麦 in Yushima — all three appear on the membership roll of 藪睦会, the Yabu guild, which lists 並木藪蕎麦 at 台東区雷門2-11-9, tel. 03-3841-1340. The guild's own account of the lineage traces it to 蔦屋, a shop at 根津団子坂 in the closing years of the Edo period; the name やぶそば is said to come from the district being called 薮下, and the 蔦屋 signboard passed to 神田やぶそば, around which the guild formed more than eighty years ago. What makes Namiki its own thing rather than a branch is the tsuyu. The shop's own line is 「濃い汁の 老舗の味に 並木藪」 — a dark, salty, concentrated dip that regulars take only on the tip of the noodle, and which first-timers who plunge the whole bundle in find undrinkable. Portions are correspondingly small and large servings are not offered; the intended shape of a visit is a flask of warm sake with 板わさ, 焼きのり or わさび芋, then a fast ¥850 zaru to finish. The room is a single storey with 36 seats — two six-tops, a four-top and five four-seat raised tatami boxes — no private rooms, no reservations, no large parties. Tabelog has selected it for そば百名店 EAST in 2017, 2018, 2019, 2021, 2024 and 2025, and it holds a 3.67 average over roughly 2,600 reviews.",
+   "philosophy": "Edo-style Yabu soba: strong dark tsuyu, small servings, sake first and noodles last.",
+   "specialty": "ざるそば ¥850 (2023 menu); のりかけ ¥1,100 (listed at ¥1,300 on the current Tabelog display); 天ざる and 天ぷらそば ¥2,000 (¥2,300 currently); 鴨南蛮 ¥2,100, November to March only; 板わさ, 焼きのり and わさび芋 at ¥850 as sake companions.",
+   "anecdotes": [
+    {
+     "text": "The shop's own PR copy is a verse — 「濃い汁の 老舗の味に 並木藪」 — and goes on to describe the intended visit: warm sake, good snacks, soba to finish, 'the stylish way to eat'.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/"
+    },
+    {
+     "text": "Large servings are refused: a 2025 diner recording a のりかけそば here notes 「※大盛りは不可でした」.",
+     "source": "https://ameblo.jp/naritasanomotesandoukai/entry-12894078366.html"
+    },
+    {
+     "text": "The 鴨南蛮 is on the menu only from November to March, printed with its own date range — a survival of the seasonal Edo practice rather than a marketing device.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/"
+    },
+    {
+     "text": "The 藪睦会 roll shows how far the school spread from one Nezu shop: from かんだやぶそば and 池の端藪蕎麦 through 薮伊豆総本店 in Nihonbashi and 上野薮蕎麦総本店 out to Hachiōji, Kawagoe, Kōfu, Izu-Kōgen and Kumamoto.",
+     "source": "http://yabusoba.co.jp/mutsumi/member.html"
+    }
+   ],
+   "japanese_sources_summary": "yabusoba.co.jp (藪睦会) carries the lineage account — 蔦屋 at 根津団子坂, the 薮下 etymology, the transfer of the signboard to 神田やぶそば, the guild's eighty-plus years — and its member roll gives 並木藪蕎麦 台東区雷門2-11-9 tel.03-3841-1340. Tabelog 13003650 gives the same address, 172 m from Asakusa Station with the A4/A5 exits one minute away and Tōbu five, 03-3841-1340, 予約不可, 11:00–19:30 L.O.19:00 with Wednesday and Thursday closed, 36 seats in the exact configuration quoted, all non-smoking, no parking, オープン日 1913年, budget ¥1,000–1,999 both services, the 百名店 selections and the 15-item March 2023 menu with prices. Its map page supplied the coordinates.",
+   "confidence": "high",
+   "sources": [
+    "http://yabusoba.co.jp/mutsumi/yaburight.html",
+    "http://yabusoba.co.jp/mutsumi/member.html",
+    "https://tabelog.com/tokyo/A1311/A131102/13003650/",
+    "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A 36-seat house kitchen running tempura (天ざる, 天ぷらそば, 天ぷら ¥1,700) alongside the noodle boards; wheat 打ち粉 is standard on Yabu-school boards and no wheat-free handling is claimed anywhere.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The house is known specifically for an unusually dark and concentrated wheat-soy tsuyu — 「濃い汁の 老舗の味に 並木藪」 is the shop's own line. There is no tamari version and no way to eat the soba without it.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The tsuyu is bonito dashi; 玉子とじ and 花巻 involve egg and dashi; 板わさ is fish kamaboko. Only 焼きのり and わさび芋 are plant-based on their own.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "A tiny, quiet, old room a minute from Kaminarimon, and it runs on unwritten etiquette rather than on English. No reservations and no large parties — turn up, wait, sit where you are put. Dip only the last inch of the noodles in the tsuyu; it is meant to be that strong. Large servings are refused, so order a side and a flask of sake if you want a full meal. Cards and Suica are fine but QR payment is not, and the shop is closed Wednesdays and Thursdays, which catches a lot of visitors out. Photograph-light menu, so knowing 「ざる」「天ざる」「のりかけ」 helps."
+  },
+  "sources": [
+   "http://yabusoba.co.jp/mutsumi/top.html",
+   "http://yabusoba.co.jp/mutsumi/yaburight.html",
+   "http://yabusoba.co.jp/mutsumi/member.html",
+   "https://tabelog.com/tokyo/A1311/A131102/13003650/",
+   "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmenu/",
+   "https://tabelog.com/tokyo/A1311/A131102/13003650/dtlmap/",
+   "https://r.gnavi.co.jp/pwrvhdk60000/",
+   "https://ameblo.jp/naritasanomotesandoukai/entry-12894078366.html"
+  ],
+  "enrich_note": "PIN CORRECTION. The name in the light record was right — 並木藪蕎麦 is real and one of Tokyo's best-known soba houses — but the record placed it at 銀座一丁目駅 / 築地駅 近く (中央区), 35.6717/139.765. It is in Asakusa: 〒111-0034 東京都台東区雷門2-11-9, confirmed both by the 藪睦会 member roll and by Tabelog, about 4.3 km north-east of the light pin. Coordinates moved to 35.709685/139.795954 (Tabelog map page) and loc_precise set true. Menu prices are from Tabelog's March 2023 menu capture; the current Tabelog display shows のりかけ at ¥1,300 and 天ぷらそば at ¥2,300, so treat the 2023 figures as a floor."
+ },
+ {
+  "id": "tokyo3__115",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop named たかや exists in Tsukiji or anywhere in Chūō-ku",
+  "cuisine_type": "soba",
+  "neighborhood": "Unverified. The light record says 築地駅 周辺 (中央区).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Yahoo Japan reports outright that no page matches the exact string 「築地そばたかや」 (「順番も含め完全に一致するウェブページは見つかりませんでした」). Tabelog's complete Tsukiji soba index was read directly — 湊上むら, 新富町 丸安, 蕎麦和食はたり, ZEN SOBA, 築地さらしなの里, 小諸そば 銀座木挽町店, かべす, 日本料理 紫水, 木挽町 湯津上屋, 天花そば, バル蕎麦 コシブウ, 手打ち蕎麦 成冨, へぎそば処 うち田, 築地藪そば, つぐみ食堂 銀座店, 築地 布恒更科, ゆで太郎 入船店, 小諸そば 新富町店, ゆで太郎 築地2丁目店, 日本橋元禄 隠居 — and contains no たかや, タカヤ, 高屋 or 孝屋. Two real businesses carry the name elsewhere and neither is in Chūō-ku: そば たかや in Tachikawa (a 45-to-51-year-old shop, formerly 羽衣町高尾亭, relaunched under the たかや name, 042-595-6922, self-milled せいろ/粗挽き/田舎 three-way tasting), and 酒場 たかや at 千代田区神田三崎町2-2-13 八千代ビル1 near Suidōbashi, an izakaya doing freshly-cut jūwari soba and tempura. The Tachikawa shop is 40 km west of Tsukiji; the Suidōbashi one is a different ward and a different format.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan queries 「築地 そば たかや 中央区 蕎麦 つけそば」, 「中央区築地 そば 蕎麦 店 一覧 食べログ たかや」, the exact string 「\"築地そばたかや\"」 (explicit no-match message returned), 「そば たかや 東京 中央区 築地 閉店」 and 「酒場 たかや 十割蕎麦 天ぷら 住所 食べログ 有楽町線」 all ran and returned HTTP 200. Tabelog's 築地 soba index (22 shops) and its 中央区築地 soba index were both opened and read. Nothing named たかや exists in the ward, open or closed.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1313/A131301/rstLst/soba/",
+    "https://soba-takaya.com/",
+    "https://s.tabelog.com/tokyo/A1310/A131003/13220739/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1313/A131301/rstLst/soba/",
+   "https://soba-takaya.com/",
+   "https://s.tabelog.com/tokyo/A1310/A131003/13220739/"
+  ],
+  "enrich_note": "NOT FOUND. Searches actually run, all HTTP 200: Yahoo Japan on 「築地 そば たかや 中央区 蕎麦 つけそば」, 「中央区築地 そば 蕎麦 店 一覧 食べログ たかや」, the exact phrase 「\"築地そばたかや\"」 — for which Yahoo returned its explicit no-exact-match notice — 「そば たかや 東京 中央区 築地 閉店」 and 「酒場 たかや 十割蕎麦 天ぷら 住所 食べログ 有楽町線」; plus direct reads of Tabelog's 築地 soba index (all 22 shops) and its 中央区築地 soba index. No shop named たかや exists in Chūō-ku. The two real たかや soba businesses are そば たかや in Tachikawa (ex-羽衣町高尾亭, ~40 km west) and 酒場 たかや at 千代田区神田三崎町2-2-13 near Suidōbashi; neither can be pinned to this record. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__127",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 「田中鮒」 is not a business name and returns no results anywhere; no soba shop containing 田中 or 鮒 exists around Kayabachō",
+  "cuisine_type": "soba",
+  "neighborhood": "Unverified. The light record says 茅場町駅周辺.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and 「田中鮒」 does not appear to be a name at all. A bare Yahoo search on the exact string returns two pages, neither of them a business: a Japanese blog essay that uses 田中鮒 as an example of a personal name that could not exist, and a motor-racing post. Tabelog's complete soba index for the Hatchōbori–Kayabachō–Shinkawa area was read directly — 瓦.Tokyo 茅場町本店, 亀鶴庵, やまなし 八丁堀本店, 鶏鬨 新川店, 蕎麦懐石 茅場町 更科, 桂庵 新富店, 手打ちそば 梠炉, 小諸そば 茅場町店, 桂庵 八丁堀店, 長寿庵, そば処 亀島, 永盛, 亀よし, 小諸そば 亀島橋店, 小諸そば 八丁堀駅前店, 小諸そば 茅場さくら通り店, 蓮, がんぎ 新川二丁目店, 兜町 丸屋, ゆで太郎 新川2丁目店 — and not one contains 田中 or 鮒. The nearest same-sound candidates are 蕎麦たかね 茅場町店 and 蕎麦たかね 日本橋茅場町店 (茅場町駅 4 min, jūwari soba and kakiage around ¥800, closed Sundays and holidays), which share no characters with 田中鮒; and 明月庵 ぎんざ田中屋, a 1958 Ginza soba house whose branches are 本店, 松屋店 and ヨドバシHD池袋ビル店 — none in Kayabachō. Neither can be assumed to be this record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan queries 「蕎麦 田中 茅場町 中央区 そば屋 食べログ」, the bare exact string 「\"田中鮒\"」, 「そば 田中屋 茅場町 日本橋 中央区 蕎麦」 and 「\"蕎麦 田中\" 茅場町 東京 そば店」 all ran and returned HTTP 200 with results — none of them a Kayabachō business of that name. Tabelog's A130203 (八丁堀・茅場町・新川) soba index was opened and read in full: twenty shops, no 田中, no 鮒.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130203/rstLst/soba/",
+    "https://tabelog.com/tokyo/A1302/A130203/13235015/",
+    "http://www.soba-tanakaya.com/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. If a future pass wants a real Kayabachō soba shop, 蕎麦たかね 茅場町店 (茅場町駅 4 min, stone-milled jūwari, under ¥1,000, closed Sundays and holidays) and 蕎麦懐石 茅場町 更科 are both genuine — but neither is this record."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130203/rstLst/soba/",
+   "https://tabelog.com/tokyo/A1302/A130203/13235015/",
+   "http://www.soba-tanakaya.com/"
+  ],
+  "enrich_note": "NOT FOUND. Searches actually run, all HTTP 200 with results: Yahoo Japan on 「蕎麦 田中 茅場町 中央区 そば屋 食べログ」, the bare exact string 「\"田中鮒\"」 (which returned only a blog essay using it as an example of an impossible personal name, plus an unrelated motor-racing post), 「そば 田中屋 茅場町 日本橋 中央区 蕎麦」 and 「\"蕎麦 田中\" 茅場町 東京 そば店」; plus a direct read of Tabelog's complete Hatchōbori–Kayabachō–Shinkawa soba index (20 shops), which contains no 田中 and no 鮒. The name appears to be a garbling with no real referent. Coordinates unchanged, loc_precise:false."
  }
 ]
