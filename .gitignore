@@ -29,3 +29,6 @@ _work/
 # agent scratch (each agent invents its own name)
 .enrich_tmp/
 scripts/_*.py
+
+# incremental agent partials — only finished sN.json shards are inputs
+data/_*_verdicts/_*_part_*.json

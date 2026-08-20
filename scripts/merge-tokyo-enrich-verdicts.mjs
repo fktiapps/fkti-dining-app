@@ -61,9 +61,20 @@ for (const f of fs.existsSync(SHARDS) ? fs.readdirSync(SHARDS).filter(f => f.end
   for (const r of JSON.parse(fs.readFileSync(`${SHARDS}/${f}`, 'utf8')))
     ORIG.set(r.id, [r.lat, r.lng]);
 
+// Only finished shards. Agents write incrementally to avoid losing a whole shard to
+// an API drop, and those partials land in the same directory (_s5_part_a.json). A
+// loose *.json glob reads half-written work now and double-counts it when the real
+// s5.json arrives, so the filename must be exactly sN.json.
+const FINISHED = /^s\d+\.json$/;
 const verdicts = [];
-for (const f of fs.existsSync(DIR) ? fs.readdirSync(DIR).filter(f => f.endsWith('.json')) : [])
-  verdicts.push(...JSON.parse(fs.readFileSync(`${DIR}/${f}`, 'utf8')));
+const seenIds = new Set();
+for (const f of fs.existsSync(DIR) ? fs.readdirSync(DIR).filter(f => FINISHED.test(f)) : []) {
+  for (const v of JSON.parse(fs.readFileSync(`${DIR}/${f}`, 'utf8'))) {
+    if (seenIds.has(v.id)) continue;   // a re-run shard supersedes nothing; first wins
+    seenIds.add(v.id);
+    verdicts.push(v);
+  }
+}
 if (!verdicts.length) { console.log(`no verdicts in ${DIR}`); process.exit(0); }
 
 const j = readCity('tokyo');
