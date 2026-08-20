@@ -15,6 +15,12 @@ export const CANON = new Set([
 
 // explicit, auditable map. Every non-canon value observed in the data gets a home.
 const MAP = {
+  // --- slugs the Tokyo deep-enrich agents coined (2026-08-20) ---
+  // 定食屋 IS a shokudo; the two words name the same kind of shop, so this folds
+  // rather than adding a chip that would split the same restaurants across two
+  // filters. トンテキ is a pork cutlet in gravy — a yoshoku dish, not a category.
+  'teishoku':'shokudo', 'tonteki':'yoshoku', 'tonkatsu':'katsu',
+
   // --- sweets / bakery / patisserie family ---
   'GF bakery':'sweets','bakery':'sweets','GF patisserie':'sweets','patisserie':'sweets',
   'Patisserie':'sweets','Pâtisserie / GF sweets':'sweets','baumkuchen':'sweets',

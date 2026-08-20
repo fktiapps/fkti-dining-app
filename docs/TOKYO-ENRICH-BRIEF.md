@@ -34,6 +34,18 @@ inventing details to fill the gap is not.
 | Name garbled, real business identified | Enrich under the corrected name; put it in `name`; `enrich_note` starting `NAME CORRECTION.` saying what the light record read and what the evidence shows |
 | Cannot locate | `enrich_confidence:"low"`, `loc_precise:false`, coords unchanged, `enrich_note` starting `NOT FOUND.` naming exactly which searches you ran and what each returned |
 
+### A failed query is not a negative result
+
+Shards run in parallel and Yahoo Japan rate-limits: a shard-8 record was almost
+written off as NOT FOUND on an **HTTP 429**, which is the search engine declining to
+answer, not the search engine answering "no". Tabelog 403s the same way.
+
+If a search leg returns 429, 403, or a timeout, **say so in the note and back off and
+retry it** before concluding anything. Only write `NOT FOUND.` when every leg
+actually ran and actually came back empty, and name the response you got from each.
+The not-found rate across this tranche is running near 60%, so an inflated one
+directly costs real restaurants their place in the app.
+
 **Never invent** a bio, a menu item, an address, a coordinate, or a safety assurance.
 An empty field always beats a plausible one. "Low confidence" is a good answer.
 

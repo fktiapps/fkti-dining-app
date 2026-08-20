@@ -1,0 +1,734 @@
+[
+ {
+  "id": "tokyo3_a_245",
+  "name": "浅草聚楽",
+  "lat": 35.712284,
+  "lng": 139.793780,
+  "loc_precise": true,
+  "address_ja": "〒111-0032 東京都台東区浅草1-23-9",
+  "enrich_confidence": "high",
+  "cuisine": "A 118-seat Shōwa family restaurant on the Shin-Nakamise arcade doing 和洋中 under one roof — donburi, fried cutlets, curry and yōshoku plates, mostly ¥1,000–¥2,000, no reservations, open every day of the year",
+  "cuisine_type": "yoshoku",
+  "neighborhood": "Shin-Nakamise covered arcade, Asakusa 1-chōme — 3 min from Asakusa Station on the Tsukuba Express (225 m), 8 min from Asakusa Station on the Ginza line / Toei Asakusa line / Tobu Isesaki line",
+  "website": "https://juraku.com/rest/restaurant",
+  "menu_url": "https://juraku-asakusa.owst.jp",
+  "hours_raw": "月・火・水・木・金・土・日・祝 11:00 - 20:00（L.O. 料理19:30）／年中無休",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Nothing published. Neither the company site, the restaurant's own booking page nor Tabelog carries an allergen chart, a gluten-free line or any wheat statement, and the kitchen's centre of gravity is exactly the wheat zone — katsudon, fried cutlets, curry, yōshoku. Sauces and donburi broths will be ordinary wheat shōyu unless the shop says otherwise, and a busy 118-seat family restaurant will be running one fryer for everything. There is plain rice and there are non-fried plates, so this is not a hopeless room, but you would be negotiating dish by dish with no published protocol behind you. Honest default only.",
+  "vegan_status": "limited",
+  "vegan_detail": "No vegan or vegetarian menu is advertised anywhere. It is a 和洋中 family restaurant built on pork cutlets, egg-bound donburi and Western plates; assume bonito or chicken stock in the soups and wheat shōyu in the seasoning. A vegan would be down to rice, pickles and possibly a plain vegetable dish, each of which still needs checking for dashi.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "Asakusa 1-chōme, on the Shin-Nakamise arcade behind Kaminarimon",
+   "background": "There is no chef-proprietor here, and the record should not pretend otherwise. 浅草聚楽 is one outlet of 株式会社聚楽, a Tokyo hospitality company founded on 10 March 1924 (Taishō 13) that marked its centenary in 2024. The company's own corporate page describes a business spanning business hotels, resort hotels and restaurants, with roughly 400 full-time and 950 part-time staff and 29 restaurant sites — 25 in Tokyo, 3 in Niigata, 1 in Miyagi — plus 牛角 and 温野菜 franchises operated through its subsidiary 株式会社ワールドダイニング. Its two Taito-ku restaurants are this one and レストランじゅらく 上野駅前店 at 上野6-11-11. Neither takes reservations. The Asakusa branch's own page states the concept plainly: an affordable, high-volume family restaurant with sofa seating aimed at families and groups, no private rooms, no counter, no tatami — the kind of large postwar dining hall that has mostly disappeared from central Tokyo. No founder name, no head chef and no kitchen lineage is published for the Asakusa site.",
+   "philosophy": "",
+   "specialty": "Donburi, 揚げ物 and yōshoku — the genres Tabelog files it under.",
+   "anecdotes": [],
+   "japanese_sources_summary": "株式会社聚楽's corporate page supplies the 1924-03-10 founding, the centenary, the staff count and the 29-restaurant footprint. The company's restaurant page gives the Asakusa address, phone and the no-reservations policy. The restaurant's own booking site (juraku-asakusa.owst.jp) gives hours, 118 seats, the payment methods and the 和洋中 concept. Tabelog independently confirms address, hours, seat count and genre.",
+   "confidence": "medium",
+   "sources": [
+    "https://juraku.com/company",
+    "https://juraku.com/rest/restaurant",
+    "https://juraku-asakusa.owst.jp",
+    "https://tabelog.com/tokyo/A1311/A131102/13034921/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "118 seats, family-restaurant throughput, and a menu whose backbone is fried cutlets and curry. Shared fryer and shared surfaces should be assumed; nothing published suggests any separation.",
+     "source": "https://juraku-asakusa.owst.jp"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "No tamari or wheat-free soy sauce is mentioned by the company or the shop. Donburi tare and yōshoku sauces will be ordinary wheat shōyu by default.",
+     "source": "https://juraku.com/rest/restaurant"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Meat, egg and fish are handled throughout; there is no plant-based line and no dashi statement.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13034921/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "No allergen chart, no allergy contact procedure and no dietary note appears on the company site, the shop's booking page or Tabelog. Reservations are not accepted, so there is no booking channel through which to raise a restriction in advance — you would be asking at the table.",
+     "source": "https://juraku.com/rest/restaurant"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Cards (VISA, Mastercard, Amex, Diners, JCB, Discover, UnionPay), IC money (Suica, PASMO, ICOCA, iD, QUICPay) and QR (PayPay, d払い, メルペイ, Alipay, WeChat Pay) are all accepted — unusually broad for an old Asakusa dining hall, and it means no cash scramble.",
+     "source": "https://juraku-asakusa.owst.jp"
+    },
+    {
+     "text": "Open 11:00–20:00 every day with no closing day, which makes it a reliable fallback when the Asakusa specialists are shut.",
+     "source": "https://juraku-asakusa.owst.jp"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "About as low-friction as Asakusa gets. It sits on the covered Shin-Nakamise arcade three minutes from the Tsukuba Express exit, seats 118 on sofas and chairs, takes no reservations (so you just walk in), accepts every card and QR system in common use, and runs 11:00–20:00 daily. Lunch and dinner both land around ¥1,500–¥2,000. There is no private room, no counter and no tatami — it is a big bright room, which is a virtue if you are travelling with children or a group. What it does not give you is a kitchen conversation: no allergen documentation, no reservation channel to warn them, and staff turnover typical of a large family restaurant."
+  },
+  "sources": [
+   "https://juraku.com/rest/restaurant",
+   "https://juraku.com/company",
+   "https://juraku-asakusa.owst.jp",
+   "https://tabelog.com/tokyo/A1311/A131102/13034921/",
+   "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都台東区浅草1-23-9"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「浅草じゅらく」, the kana rendering; the business writes itself 浅草聚楽 (read アサクサジュラク) on its own site, its booking page and Tabelog. Confirmed at 台東区浅草1-23-9 on the Shin-Nakamise arcade; coordinates moved from the neighbourhood centroid (35.7118/139.7967) to the street address (35.712284/139.793780), cross-checked between Tabelog's geo and the GSI address geocoder (35.712276/139.793793). CATEGORY FLAG: filed as MOM_AND_POP, but this is one of 29 restaurant sites of 株式会社聚楽, a hotel-and-restaurant company founded in 1924 with ~400 full-time staff, and its sister company franchises 牛角 and 温野菜. Suggest recategorising as OMNI/chain. The sweep's 「昭和レトロ食堂・定食」 descriptor is roughly fair in atmosphere but the genre is 丼・揚げ物・洋食, not teishoku."
+ },
+ {
+  "id": "tokyo3__255",
+  "name": "浅草 ときわ食堂",
+  "lat": 35.711085,
+  "lng": 139.796063,
+  "loc_precise": true,
+  "address_ja": "〒111-0032 東京都台東区浅草1-3-3",
+  "enrich_confidence": "medium",
+  "cuisine": "Century-old Asakusa teishoku hall a minute from Kaminarimon, open from 9 a.m. for breakfast — grilled and simmered fish, its own wild-caught aji fry ¥1,080, katsudon ¥1,680, tonkatsu teishoku ¥1,880, single small plates from ¥100",
+  "cuisine_type": "teishoku",
+  "neighborhood": "Asakusa 1-chōme, just west of Kaminarimon — 152 m from Asakusa Station (Ginza line / Toei Asakusa line / Tobu Isesaki line), 5 min from the Tsukuba Express exit",
+  "website": "http://www.asakusa-tokiwa.com/",
+  "menu_url": "http://www.asakusa-tokiwa.com/",
+  "hours_raw": "月・火・木・金 09:00 - 22:00（L.O.21:30）／土・日・祝 08:30 - 22:00（L.O.21:30）／水曜定休（食べログ）。老舗紹介記事では平日9:00-22:30・土日祝8:00-22:30、水曜定休 — 開店/閉店時刻に出典間で±30分の差があるので朝一・閉店間際は要確認。",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "No gluten-free claim and no allergen sheet anywhere on the shop's site or Tabelog. The menu board is a mix of genuinely wheat-free-looking things (sashimi, grilled fish, ほうれん草おひたし ¥350, ほうれん草ごま和え ¥400, 目玉焼き ¥380, とろろ ¥380, 納豆・梅干・生卵・やきのり ¥100 each, plain rice ¥330/¥380) and things that are pure wheat — かつ丼, とんかつ, あじフライ, ハムカツ, 餃子, 鍋焼きうどん ¥1,200. Everything savoury is seasoned with ordinary wheat shōyu, the miso soups may be barley miso, and the fryer runs all day. Ordering rice, a grilled fish and pickles is a plausible survival meal but is not a protocol the shop has published or agreed to, so this stays an honest 'ask'.",
+  "vegan_status": "limited",
+  "vegan_detail": "Not built for it, but not empty either: ほうれん草おひたし, ほうれん草ごま和え, 辛味噌きゅうり ¥480, 茄子味噌 ¥880, とろろ, なめこおろし, お新香 and plain rice all exist as single plates. The traps are the ones that always apply — ほうれん草おひたし is normally dressed with bonito dashi and topped with かつお節, the miso soups are dashi-based, and 茄子味噌 usually carries dashi in the miso. Nothing on the site addresses any of this. Treat as limited, and expect to interrogate every stock.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by 株式会社ときわ"
+   ],
+   "origin": "Honjo Koume (now Sumida-ku) by descent; Asakusa 1-chōme since 1936",
+   "background": "The shop dates itself to 1922 (Taishō 11), when it opened as the fifth branch of the ときわ食堂 head office in 本所小梅 — the Honjo Koume district that is now part of Sumida-ku. It moved to its present site beside Kaminarimon in 1936, was burned out in the war, and was rebuilt on the same ground. Tabelog files the opening year as 1911, a decade earlier than the shop's own account; the discrepancy is unresolved and is left flagged rather than smoothed over. What is not in dispute is the position this branch occupies in the family: it is the root from which a good number of the ときわ食堂 shops scattered across Tokyo — Sugamo, Ōtsuka, Komagome, Bakurochō, Kameari and the rest — descend as spin-offs, and the shop is a member of the 浅草商店連合会. No proprietor's name and no chef is published on the shop's own site, which is a single scrolling image of the 献立 and nothing else; the only personal note the menu makes is that 「当店のアジは店主が目利きした天然アジを使用」 — the master picks the wild aji himself, and the price moves with the market. The kitchen's own nominated specialities, printed as ときわ特撰, are that 天然あじフライ (¥1,080), the 豆腐すてーき in a house tare said to be handed down through the generations (¥980), 肉生姜焼き (¥980), とん皿 (¥980), 茄子味噌 (¥880) and a 自家製ぎっしり餃子 (¥600).",
+   "philosophy": "",
+   "specialty": "天然あじフライ ¥1,080 (wild horse mackerel the master selects himself), 豆腐すてーき ¥980 in a house tare, かつ丼 ¥1,680, とんかつ定食 ¥1,880, 鍋焼きうどん ¥1,200.",
+   "anecdotes": [
+    {
+     "text": "The shop opened in 1922 as the fifth branch of the ときわ食堂 head office in Honjo Koume, moved next to Sensō-ji's Kaminarimon in 1936, burned during the war and was rebuilt on the same spot — and is described as the root of many of the ときわ食堂 shops now spread across Tokyo.",
+     "source": "http://shinise.tv/tokiwashokudo-asakusa/"
+    },
+    {
+     "text": "The menu prints its prices in vertical kanji numerals — 一六八〇 for the katsudon — and adds that if you order the large rice and leave it, there is a surcharge.",
+     "source": "http://www.asakusa-tokiwa.com/"
+    }
+   ],
+   "japanese_sources_summary": "The shop's own site is a single 献立 page and supplies the whole price list and the ときわ特撰 house specialities. Tabelog gives address, 152 m from Asakusa Station, 36 seats, Wednesday closing, the 9:00/8:30 opening times and an opening year of 1911. shinise.tv, an old-shop directory, gives the 1922 founding, the Honjo Koume parentage, the 1936 move, the wartime fire and rebuild, and slightly different hours (9:00–22:30 weekdays, 8:00–22:30 weekends). 浅草商店連合会 lists it as a member business.",
+   "confidence": "medium",
+   "sources": [
+    "http://www.asakusa-tokiwa.com/",
+    "https://tabelog.com/tokyo/A1311/A131102/13039346/",
+    "http://shinise.tv/tokiwashokudo-asakusa/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "36 seats, a single kitchen turning out katsudon, tonkatsu, aji fry, ham katsu, gyoza and nabeyaki udon from 9 a.m. to 10 p.m. Shared fryer, shared boiling water and shared surfaces are the working assumption; no separation is claimed.",
+     "source": "http://www.asakusa-tokiwa.com/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "No tamari or wheat-free shōyu is mentioned. The house tare on the 豆腐すてーき is described as 代々続く特製ダレ — a generations-old recipe — which in a Shōwa shokudō means ordinary wheat soy sauce and mirin. The nameko soup is 赤味噌仕立て; other miso is unspecified and could be barley.",
+     "source": "http://www.asakusa-tokiwa.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Fish, pork and egg are everywhere on the board and the dashi is not documented. The vegetable plates (ほうれん草おひたし, ごま和え, 辛味噌きゅうり, 茄子味噌) are the only plausible vegan candidates and each of them conventionally contains bonito.",
+     "source": "http://www.asakusa-tokiwa.com/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "Nothing published. The shop's entire web presence is a photographed menu; there is no allergen page, no contact form and no dietary note. Any request happens verbally, in Japanese, at a busy counter.",
+     "source": "http://www.asakusa-tokiwa.com/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Opens at 9:00 on weekdays and 8:30 at weekends — one of very few places in Asakusa where a rice-and-grilled-fish breakfast is possible before the crowds, which is also the calmest time to attempt a dietary conversation.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13039346/"
+    },
+    {
+     "text": "Almost everything is orderable as a single small plate (¥100–¥1,000) rather than a fixed set, so you can assemble a meal from components you have individually checked instead of accepting a tray.",
+     "source": "http://www.asakusa-tokiwa.com/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Moderate",
+   "note": "A 36-seat working shokudō 152 m from Kaminarimon, open 9:00–22:00 with Wednesdays closed. The room is easy — communal tables, no dress code, ¥1,000–¥2,000 a head, tourists and Asakusa locals side by side from breakfast onward — but the operating language is Japanese and the menu is a vertical-kanji board with no English version published. The à-la-carte structure is the friendly part: point at single plates and build your own tray. Come at opening rather than at 12:30 if you need to ask about ingredients."
+  },
+  "sources": [
+   "http://www.asakusa-tokiwa.com/",
+   "https://tabelog.com/tokyo/A1311/A131102/13039346/",
+   "http://shinise.tv/tokiwashokudo-asakusa/",
+   "https://tabelog.com/tokyo/A1311/A131102/13077960/",
+   "https://tabelog.com/tokyo/A1311/A131104/13049622/"
+  ],
+  "enrich_note": "AMBIGUOUS RECORD — RESOLVED TO THE SURVIVING SHOP, NEEDS AN OWNER DECISION. The light record read 「ときわ食堂」 with the neighbourhood 「台東区合羽橋」. There were two candidates in Taito-ku and the Kappabashi one is dead: ときわ食堂 at 台東区西浅草2-23-8 (35.714173/139.789978), the shop Japanese bloggers write about as 「合羽橋ときわ食堂」/「浅草・合羽橋『ときわ食堂』」, is listed by Tabelog as 【閉店】 — permanently closed (tabelog 13077960). A third ときわ食堂 exists at 台東区入谷1-1-2 (opened 1956, tabelog 13049622), which is not Kappabashi either. The only open shop in the ward carrying this name in a form matching the sweep's 「定食・昭和食堂」 description is 浅草 ときわ食堂 at 浅草1-3-3, and that is what has been enriched here, with coordinates moved to it (35.711085/139.796063, Tabelog geo, cross-checked against the GSI geocoder at 35.711086/139.795898). If the owner would rather the record be deleted than relocated 700 m from its stated neighbourhood, delete it — the substitution is a judgement call, not an identification. Secondary flag: the shop's own history says 1922, Tabelog says 1911; left unreconciled. Also note the name is shared with the unrelated 巣鴨ときわ食堂 group, so this record should not be merged with any Sugamo/Ōtsuka/Komagome entry."
+ },
+ {
+  "id": "tokyo3__256",
+  "name": "水口食堂",
+  "lat": 35.713534,
+  "lng": 139.793773,
+  "loc_precise": true,
+  "address_ja": "〒111-0032 東京都台東区浅草2-4-9",
+  "enrich_confidence": "high",
+  "cuisine": "A 1950 teishoku hall in Asakusa Rokku with more than a hundred dishes on the wall — simmered and grilled fish ¥500–¥580, its own 'iributa' pork-and-vegetable stir-fry ¥630, hand-made croquettes ¥450, any of them turned into a set for +¥400; 90 seats over two floors including a 30-seat tatami room",
+  "cuisine_type": "teishoku",
+  "neighborhood": "Asakusa Rokku, Asakusa 2-chōme — 1 min from Asakusa Station on the Tsukuba Express (125 m), 7 min from Ginza-line Asakusa or Tawaramachi",
+  "website": "http://asakusa-mizuguch.main.jp/index.html",
+  "menu_url": "http://asakusa-mizuguch.main.jp/menu.html",
+  "hours_raw": "月～金 10:00－20:30（L.O.20:00）／土・日 10:00－20:30（L.O.20:00）／水曜定休（公式サイト）。食べログは月・火・木・金・土・日 10:00-20:30（L.O.料理20:00）・水曜定休で一致。定休日以外の休みは公式HP・SNS参照。",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "No gluten-free claim, no allergen chart, nothing on the subject on the shop's own site or Tabelog. The published menu does contain a real spine of naturally wheat-free-looking dishes — まぐろ刺身 ¥1,300, たこ刺身 ¥800, さば煮/かれい煮/赤だい煮 ¥500 each, さけ焼・さば焼・あじ開き ¥500, ししゃも ¥580 — alongside a full fry section (トンカツ, 海老フライ, 手作りコロッケ, 串カツ, メンチカツ, 鶏唐揚) that shares one fryer. The decisive unknown is seasoning: 煮魚 in a Tokyo shokudō is simmered in wheat soy sauce and mirin, the 照焼 items certainly are, and no tamari is mentioned. Sashimi with plain rice, ordered without the soy dish, is the only combination that looks defensible, and even that needs the kitchen's confirmation. Honest 'ask'; do not upgrade this on the strength of the sashimi list alone.",
+  "vegan_status": "limited",
+  "vegan_detail": "Very thin. The menu's only plausible plant dishes are 野菜炒め ¥630 (usually cooked in the same wok and pork fat as the rest of the 炒物 section) and マーボ豆腐 ¥630 (conventionally made with minced pork), plus rice and pickles. Everything else on the board is fish, pork, or egg; the 玉子料理 section is explicitly promoted as the breakfast menu. Miso soup and 煮魚 broths are dashi. Nothing on the site addresses dashi, and there is no vegetarian marking of any kind.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "family-run 定食屋, no chef named publicly"
+   ],
+   "origin": "Asakusa Rokku (浅草六区), Taito-ku",
+   "background": "The shop's own site states it plainly and without embellishment: 「当店は1950年（昭和25年）より浅草六区で定食屋（水口食堂）として営業をはじめ、75年を迎えました」 — trading in Asakusa Rokku since 1950, seventy-five years in 2025. Tabelog independently records the 1950 opening and preserves the older signboard name, 食事処 酒肴 浅草 水口. Rokku is the old cinema and variety-hall quarter behind Sensō-ji, and the restaurant is one of the survivors of that world: two floors, 90 seats, a 30-seat tatami room upstairs still used for 宴会, and a menu of over a hundred items that the shop advertises as its point of pride (「100種類以上ある自慢のメニュー」). It positions itself for both 地元の方 and 観光客. No proprietor's name, no lineage and no chef biography is published anywhere — the site is a plain 2010-vintage HTML brochure with a menu page, a drinks page, a banquet page, an access page and an English section. What the site does keep is a press list, which is the closest thing to a character sketch available: 『東京人』2010 No.285, 『REAL』2010.1, 『Meets Regional』東京あたらしい下町, 『東京 せんべろ食堂』, 『食楽』11月号 and 『下町の味と心意気 浅草』 — that is, the shop is written up as a cheap-drinking and downtown-nostalgia destination as much as a canteen, and the REAL piece framed it as 「懐かしい家庭の味」, the taste of home you had forgotten. The menu bears that out: the sashimi section notes that まぐろ刺身 and まぐろぶつ切 have been loss-leading service items since the day it opened, the fry section says the croquettes are made by hand every morning, and the stir-fry section tells the undecided to order the house original いり豚.",
+   "philosophy": "",
+   "specialty": "いり豚 (the house original pork stir-fry, ¥630 / ¥1,030 as a set), 手作りコロッケ ¥450 made fresh each morning, ミックスフライ ¥830 (kisu, scallop, croquette, kara-age), まぐろ刺身 ¥1,300 and まぐろぶつ切 ¥800 — service items since 1950.",
+   "anecdotes": [
+    {
+     "text": "The menu page states that まぐろ刺身 and まぐろぶつ切 have been the shop's loss-leading 'service items' since the day it opened in 1950.",
+     "source": "http://asakusa-mizuguch.main.jp/menu.html"
+    },
+    {
+     "text": "Rice size is a priced variable, not a courtesy: a set with small rice is ¥50 less, with large rice ¥100 more.",
+     "source": "http://asakusa-mizuguch.main.jp/menu.html"
+    },
+    {
+     "text": "Tabelog still carries the shop's older signboard name, 食事処 酒肴 浅草 水口, and notes it as a 瓶コーク提供店 — one of the shrinking number of places that still serves Coke in the glass bottle.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13020182/"
+    }
+   ],
+   "japanese_sources_summary": "The shop's own site gives the 1950 founding, the Rokku location, the 75th anniversary, the full priced menu, the address 〒111-0032 東京都台東区浅草2丁目4番9号, the phone 03-3844-2725, hours 10:00–20:30 (L.O. 20:00) with Wednesday closing, and the seat breakdown (1F 36 chairs; 2F 24 chairs + 30 tatami). It also runs an English section. Tabelog independently confirms address, 1950 opening, 90 seats, Wednesday closing and the same hours, adds the old shop name and links the shop's X account. The GSI address geocoder returns 35.713535/139.793793 for 浅草二丁目4番9号, matching Tabelog's geo to five decimal places.",
+   "confidence": "medium",
+   "sources": [
+    "http://asakusa-mizuguch.main.jp/index.html",
+    "http://asakusa-mizuguch.main.jp/menu.html",
+    "http://asakusa-mizuguch.main.jp/access.html",
+    "https://tabelog.com/tokyo/A1311/A131102/13020182/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A dedicated fry section — トンカツ, 海老フライ, いかフライ, キスフライ, あじフライ, チキンカツ, メンチカツ, 串カツ, 手作りコロッケ, 鶏唐揚 — runs alongside everything else in a 90-seat two-floor operation. One fryer, panko in the air, shared tongs. No separation is claimed.",
+     "source": "http://asakusa-mizuguch.main.jp/menu.html"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The 煮魚 section (さば煮, かれい煮, 赤だい煮, まぐろ煮, all ¥500) and the 照焼 items (ぶり照焼, まぐろ照焼, ¥580) are by construction wheat-soy-and-mirin dishes. No tamari or gluten-free shōyu is offered or mentioned anywhere on the site.",
+     "source": "http://asakusa-mizuguch.main.jp/menu.html"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Fish, pork and egg are handled across the whole menu; the 炒物 wok does both 野菜炒め and マーボ豆腐 with pork. Dashi is undocumented.",
+     "source": "http://asakusa-mizuguch.main.jp/menu.html"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "Nothing published on allergies. There is, however, a working e-mail address (mizuguchisyokudou@yahoo.co.jp) and a phone line on every page, which is more contact surface than most Asakusa shokudō offer — a written question in advance is at least possible here.",
+     "source": "http://asakusa-mizuguch.main.jp/index.html"
+    }
+   ],
+   "positives": [
+    {
+     "text": "The shop maintains an English section of its own site (asakusa-mizuguch.main.jp/english/), rare for a 1950 neighbourhood canteen.",
+     "source": "http://asakusa-mizuguch.main.jp/index.html"
+    },
+    {
+     "text": "Everything on the menu is priced both as a single plate and as a set, so a visitor can order components individually and avoid the parts they cannot eat rather than being handed a fixed tray.",
+     "source": "http://asakusa-mizuguch.main.jp/menu.html"
+    },
+    {
+     "text": "125 m from the Tsukuba Express Asakusa exit and open continuously 10:00–20:30, so no lunch-break gap to plan around.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13020182/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "A big, plain, well-lit canteen in Asakusa Rokku — 36 chairs downstairs, 24 chairs and a 30-seat tatami room upstairs, ¥1,000–¥2,000 a head, open straight through from 10:00 to 20:30 with Wednesdays closed. Tourists are expected and there is an English page on the shop's own site; the wall menu is Japanese, but the printed online menu is item-by-item with prices, so you can arrive knowing what you want. There is a phone and an e-mail address published, which is the practical route for a dietary question — ask before you go rather than across a busy counter. Bring the second floor into play if you are a group; it is the room they use for banquets."
+  },
+  "sources": [
+   "http://asakusa-mizuguch.main.jp/index.html",
+   "http://asakusa-mizuguch.main.jp/menu.html",
+   "http://asakusa-mizuguch.main.jp/access.html",
+   "http://asakusa-mizuguch.main.jp/english/",
+   "https://tabelog.com/tokyo/A1311/A131102/13020182/",
+   "https://x.com/Asks_Mizuguchi",
+   "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都台東区浅草2-4-9"
+  ],
+  "enrich_note": "CONFIRMED as read. 水口食堂 exists at 台東区浅草2-4-9 and is trading; name, address, 1950 founding, hours and seat count all agree between the shop's own site and Tabelog. Coordinates moved from the neighbourhood centroid (35.7118/139.7967) to the street address (35.713534/139.793773 from Tabelog's geo; the GSI address geocoder independently returns 35.713535/139.793793). Tabelog also records the former signboard name 食事処 酒肴 浅草 水口, which is what the shop's own domain and site header still use — worth keeping as an alias so the record does not read as a duplicate later."
+ },
+ {
+  "id": "tokyo3__259",
+  "lat": 35.7118,
+  "lng": 139.7967,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop named そば処 大喜 exists in Taito-ku or anywhere in Tokyo",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says Kuramae / Asakusabashi, Taito-ku.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. Note for whoever re-sources this: a Tokyo soba record must never be marked GF-safe on the strength of the word 蕎麦. Standard nihachi is 20% wheat, jūwari boards are dusted with 打ち粉 wheat flour, the noodles share boiling water with udon in most shops, and the tsuyu is wheat soy sauce.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. Any soba record inherits the bonito-dashi tsuyu problem by default.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide free-word search for 「そば処 大喜」 returns exactly one exact-name match in Japan and it is 500 km away: そば処 大喜 at 三国港, Sakai City, Fukui Prefecture (tabelog 18000266). The remaining hits are all near-misses in other prefectures — そば処多喜 (Yamagata), そば処 三喜 (Miyagi), そば処 大鶴 (Kyoto), そば処 大西 (Mie), そば処 大村 (Tokyo, but Chōfu/A1328, not Taito). A Tabelog search restricted to 大喜 plus 台東区 returns a single business, らーめん天神下 大喜 — a ramen shop in the Naka-Okachimachi/Yushima area, not a soba shop and not in Kuramae. A Yahoo Japan exact-phrase search for 「そば処 大喜」 with 東京 and 台東区 returned no restaurant at all, and a broader Yahoo search for そば処 大喜 蔵前 surfaced only きそば 栄久 (an actual Kuramae soba shop, under a different name), the Fukui shop, and the Tenjinshita ramen shop. On the evidence available there is no 老舗蕎麦 called 大喜 in Kuramae or Asakusabashi.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two independent checks — Tabelog nationwide name search and Yahoo Japan exact-phrase search — both fail to place a そば処 大喜 in Tokyo. The only exact-name business in the country is in Fukui; the only 大喜 in Taito-ku is a ramen shop.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide free-word search for そば処 大喜 (only exact match: 三国港, 福井県坂井市 — tabelog 18000266) and for 大喜 + 台東区 (only match: らーめん天神下 大喜, a ramen shop, tabelog 13319335); Yahoo Japan exact-phrase search for 「そば処 大喜」東京 台東区 returned no restaurant. The Fukui shop is NOT being substituted — the name is too generic to assert identity across 500 km, unlike a distinctive one. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__260",
+  "lat": 35.708,
+  "lng": 139.7745,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no business named 中志 exists in Taito-ku",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says Kuramae / Okachimachi, Taito-ku.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed, but the genre disposes of it: tempura is wheat batter by definition, the tentsuyu is wheat soy sauce and the fryer is shared with everything else. If this record is ever re-sourced to a real tempura shop, 'no' is the correct label unless that shop has an explicit rice-flour, dedicated-oil protocol.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed. Edomae tempura batter is egg-and-wheat and the dipping sauce is bonito dashi.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide search for 中志 returns no restaurant of that name anywhere; the closest hits are うなぎ割烹中志満 in 千代田区平河町 (Hanzōmon — an unagi kappō, not tempura, and 3 km from the pin), なか志ま旅館 in Akita, and a scatter of unrelated 志-containing names. A Yahoo Japan exact-phrase search for 「中志」 with 上野 / 御徒町 / 天ぷら returned nothing resembling a restaurant, and a search for 台東区 中志 店 returned only unrelated businesses. Searching instead by what the light record describes — an old-established tempura house near Ueno/Okachimachi — surfaces the two obvious real candidates, 天寿ゞ (天寿々, 上野御徒町, founded 昭和3年/1928) and 天麩羅 中清 (Asakusa, founded 1870), plus 天庄 広小路店 and 雷門 三定. 中清 is read *Nakasei* against 中志 *Nakashi*, which makes it the least implausible garbling, but it is in Asakusa rather than Okachimachi and nothing links it to this record beyond the coincidence of the first character. No substitution has been made.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search and two Yahoo Japan searches all fail to place any business called 中志 in Taito-ku.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search for 中志 returns no such restaurant (nearest: うなぎ割烹中志満, 千代田区平河町); Yahoo Japan exact-phrase searches for 「中志」+上野/御徒町/天ぷら and for 台東区 中志 店 both negative. Possible garbling of 天麩羅 中清 (Asakusa, 1870) or of 天寿ゞ (上野御徒町, 1928) but NOT substituted — no evidence connects either to this record. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__261",
+  "lat": 35.705,
+  "lng": 139.791,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no unagi restaurant named 大黒屋 exists in Kuramae or anywhere in Taito-ku",
+  "cuisine_type": "unagi",
+  "neighborhood": "Unverified. The light record says Kuramae, Taito-ku.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. Note for re-sourcing: unagi is one of the harder Japanese genres for coeliacs, because the kabayaki tare is wheat soy sauce reduced with mirin and brushed on over a shared charcoal grill, and almost no unagi house offers a tamari version. A recovered unagi record should start at 'ask' at best.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed; the genre is eel.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. There is a real うなぎ大黒屋 group, but it is a Kanagawa/Meguro operation — branches at 鎌倉常盤, 新横浜, 目黒八雲 and 横須賀追浜 — with no Taito-ku outlet on its own store list or in any directory. Tabelog searches for 大黒屋 蔵前, for うなぎ 大黒屋 台東区, and for うなぎ 蔵前 all fail to place it: the unagi shops the last of those actually returns around Asakusa and Kuramae are 駒形前川 浅草本店, うなぎ 色川, 小柳, 今井総本店, 江戸前うなぎ 釜めし 江戸定 and, across the river, 魚政 and 藤吉 — no 大黒屋 among them. The only restaurant called 大黒屋 in the whole of Taito-ku is 蕎亭 大黒屋 at 浅草4-39-2 (tabelog 13003757), which is a soba kaiseki opened in 1977, serving dinner only Thursday to Saturday at ¥6,000–¥7,999, 18 seats, cash only — not unagi and not Kuramae. Asakusa's famous 大黒家 (note the different final character) at 浅草1-38-10 is a tempura house, not an unagi house. Nothing supports 「蔵前 鰻 大黒屋」.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Three Tabelog searches (大黒屋 蔵前 / うなぎ 大黒屋 台東区 / うなぎ 蔵前) and a Yahoo Japan search for 蔵前 うなぎ 大黒屋 all fail to place an unagi 大黒屋 in Taito-ku; Yahoo returns only the Kanagawa/Meguro うなぎ大黒屋 chain.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog searches for 大黒屋 蔵前, うなぎ 大黒屋 台東区 and うなぎ 蔵前 return no unagi 大黒屋 in Taito-ku; Yahoo Japan returns only the unrelated うなぎ大黒屋 chain in Kanagawa and Meguro (鎌倉常盤 / 新横浜 / 目黒八雲 / 横須賀追浜). The only 大黒屋 restaurant in Taito-ku is 蕎亭 大黒屋, a 1977 soba kaiseki at 浅草4-39-2 — different genre, different district, NOT substituted. Asakusa's 大黒家 (different character) is tempura. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__265",
+  "lat": 35.705,
+  "lng": 139.791,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named みかどや exists in Kuramae or Taito-ku",
+  "cuisine_type": "teishoku",
+  "neighborhood": "Unverified. The light record says Kuramae, Taito-ku.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business could not be found.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide search for みかどや returns 御門屋 (a Meguro-based chain of Chinese buns and gyoza with branches at 本店, 学芸大学, 中目黒, 自由が丘, 二子玉川 — all Meguro/Setagaya), 美加登家 in Shimane, 美加登屋 in Fukushima, and みかどや / みかど屋 / みかど家 in Gifu, Okayama, Yamagata, Toyama and Kanagawa. None is in Taito-ku, and a Tabelog search for みかど 台東区 returns nothing in Tokyo at all. A Yahoo Japan search for 蔵前 みかどや 台東区 returns exactly one Taito-ku business of that name — 株式会社みかどや in 台東区松が谷 — and it is a 質屋, a pawnshop, listed with the Tokyo pawnbrokers' cooperative. A second Yahoo search for 蔵前 定食 みかどや 食堂 returned no matching business. 松が谷 is one district north of Kuramae, so the sweep may have picked the pawnshop's name off a map and dressed it as a 老舗食堂; that is speculation, but there is certainly no restaurant behind this record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search plus two Yahoo Japan searches: the only Taito-ku みかどや is a pawnshop in Matsugaya, and every restaurant of that name is in another prefecture or in Meguro/Setagaya.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search for みかどや (and for みかど 台東区) places no restaurant of that name in Tokyo's Taito-ku; the 御門屋 hits are a Meguro/Setagaya chain. Yahoo Japan finds one Taito-ku みかどや — 株式会社みかどや, 台東区松が谷 — which is a pawnshop (質屋), not a 食堂. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__266",
+  "name": "肉の大山",
+  "lat": 35.710401,
+  "lng": 139.775251,
+  "loc_precise": true,
+  "address_ja": "〒110-0005 東京都台東区上野6-13-2",
+  "enrich_confidence": "high",
+  "cuisine": "Meat-wholesaler-run Ueno institution on the Ameyoko side — deep-fried menchi-katsu from ¥180 and korokke from ¥110 handed out of the street window, steaks, hamburgers and beer in the 73-seat room behind it; lunch sets ¥748–¥2,200, standing space for about twenty, cash only at the counter",
+  "cuisine_type": "yoshoku",
+  "neighborhood": "Ueno 6-chōme, on the Ameyoko side of the station — 2 min from JR Ueno (Hirokōji exit), 5 min from JR Okachimachi (north exit), 165 m from Keisei Ueno",
+  "website": "http://www.ohyama.com/ueno",
+  "menu_url": "http://www.ohyama.com/ueno",
+  "hours_raw": "月・火・水・木・金・土 11:00 - 23:00（L.O. 料理22:15／ドリンク22:30）／日・祝 11:00 - 22:00（L.O. 料理21:15／ドリンク21:30）／無休（元日を除く）。自社サイトはランチ 平日11:00-15:00・土日祝11:00-14:00、ディナー 平日15:00-23:00・土14:00-23:00・日祝14:00-22:00 と区分表示。",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "No allergen information is published by the shop or its parent company, and the house signatures are the wrong shape for a coeliac: やみつきメンチ ¥180, 特製メンチ ¥270 and やみつきコロッケ ¥110 are all panko-crumbed and deep-fried, from a fryer that is running continuously at a street window. What makes this an 'ask' rather than a flat 'no' is that the business is a meat wholesaler's own restaurant, so plain grilled steak and hamburger exist as a category — but hamburger patties conventionally contain breadcrumbs, and steak sauces and tare in this kind of room are wheat shōyu unless proven otherwise. There is no evidence of any wheat-free handling. Do not upgrade without asking the kitchen directly.",
+  "vegan_status": "no",
+  "vegan_detail": "This is the retail restaurant of a meat wholesaler (株式会社大山, 食肉卸直営) and the entire proposition is beef and pork. No vegan or vegetarian item is advertised, and the fryer, grill and stock are all animal. There is nothing here for a vegan.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by 株式会社大山 (food-meat wholesaler, 直営 restaurant)"
+   ],
+   "origin": "Ueno 6-chōme, Taito-ku — the Ameyoko end of Ueno station",
+   "background": "肉の大山 is the 直営 restaurant of 株式会社大山, a wholesale meat business, and it works the way that origin implies: a fry window opening onto the Ueno street where menchi-katsu and croquettes go out at ¥110–¥270 to people walking past, and behind it a 73-seat room plus standing space for around twenty where the same company's beef becomes steaks, hamburgers and set meals from ¥748 to ¥2,200. The shop's Instagram handle is ohyama_ueno1932, which points to a 1932 founding; that year is not stated in prose on the pages examined, so it is recorded here as an inference from the handle rather than as a confirmed date. No chef is named, and none is claimed — the selling point is the supply chain, not a cook. The Ueno branch is not alone: the company also runs 肉の大山 outlets in Kinshichō (tabelog 13244380), Chiba, Matsudo, Nagareyama Ōtakanomori and the Moriya service area on the Jōban Expressway, which makes this a small chain rather than the 個人店 the sweep recorded. Payment at the shop front is cash only.",
+   "philosophy": "",
+   "specialty": "やみつきメンチ ¥180, 特製メンチ ¥270, やみつきコロッケ ¥110 from the street window; steaks, hamburgers and lunch sets ¥748–¥2,200 inside.",
+   "anecdotes": [
+    {
+     "text": "The company describes the restaurant as a 食肉卸直営 — a meat wholesaler's own dining room — which is why a ¥110 croquette and a steak set share the same counter.",
+     "source": "http://www.ohyama.com/ueno"
+    },
+    {
+     "text": "Payment at the shop front is cash only, and there is a standing-drink space at the entrance for about twenty people.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13016728/"
+    }
+   ],
+   "japanese_sources_summary": "The company's own Ueno page gives the address 〒110-0005 東京都台東区上野6-13-2, the split lunch/dinner hours, the sample menu with prices and the 食肉卸直営 framing. Tabelog independently confirms the address, the 11:00–23:00 / 11:00–22:00 hours with 無休 (except New Year's Day), 73 seats plus a ~20-person standing area, cash-only at the front, the ¥1,000–¥1,999 budget band and the official Instagram account ohyama_ueno1932. The GSI address geocoder returns 35.710377/139.775269 for 上野六丁目13番2号, matching Tabelog's geo.",
+   "confidence": "medium",
+   "sources": [
+    "http://www.ohyama.com/ueno",
+    "https://tabelog.com/tokyo/A1311/A131101/13016728/",
+    "https://www.instagram.com/ohyama_ueno1932/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A continuously running panko fryer at a street window is the core of the business. Menchi, croquettes and kara-age share oil, crumb and tongs with everything else; there is no separated preparation and none is claimed.",
+     "source": "http://www.ohyama.com/ueno"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "No tamari or wheat-free soy sauce is mentioned by the shop or the parent company. Steak and hamburger sauces in a Japanese yōshoku room are wheat shōyu, mirin and often a Worcester-style sauce, all of which carry wheat.",
+     "source": "http://www.ohyama.com/ueno"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Total. It is a meat wholesaler's restaurant; there is no plant-based line, no separate equipment and no vegetarian item on the published menu.",
+     "source": "http://www.ohyama.com/ueno"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "No allergen chart, no allergy statement and no dietary contact route appears on the company page or Tabelog. High-volume street-window service leaves little room for a detailed conversation at the counter.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13016728/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Open 11:00–23:00 six days and 11:00–22:00 on Sundays and holidays, with no closing day except New Year's Day — a genuinely reliable late option next to Ueno station.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13016728/"
+    },
+    {
+     "text": "Prices are posted item by item on the company's own page, so you can see exactly what a plate contains and costs before committing.",
+     "source": "http://www.ohyama.com/ueno"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "One of the least ceremonious rooms in Ueno: you can buy a ¥110 croquette at the window without going in at all, or take one of 73 seats for a steak set at ¥748–¥2,200, or stand at the front with a beer. Two minutes from JR Ueno's Hirokōji exit, open every day but New Year's Day, 11:00 to 23:00. Bring cash — the shop front takes nothing else. It is loud, fast and used to Ameyoko foot traffic, which cuts both ways: no one will look at you oddly, and no one has time for a long ingredients discussion."
+  },
+  "sources": [
+   "http://www.ohyama.com/ueno",
+   "https://tabelog.com/tokyo/A1311/A131101/13016728/",
+   "https://www.instagram.com/ohyama_ueno1932/",
+   "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都台東区上野6-13-2"
+  ],
+  "enrich_note": "NAME CORRECTION + LOCATION CORRECTION. The light record read 「蔵前 肉乃大山」 in 蔵前・浅草橋 with a 焼肉 genre. The business is 肉の大山 (の, not 乃), and it is not in Kuramae: it stands at 台東区上野6-13-2 by Ameyoko, 2.2 km from the sweep's pin. Coordinates moved from 35.7118/139.7967 to 35.710401/139.775251 (Tabelog geo; GSI address geocoder independently returns 35.710377/139.775269). The genre is also wrong — this is a meat wholesaler's yōshoku restaurant and fry window (menchi, korokke, steaks, hamburgers), not a 焼肉 grill-your-own. CATEGORY FLAG: filed as MOM_AND_POP / 個人店, but 株式会社大山 runs at least six 肉の大山 outlets (Ueno, Kinshichō, Chiba, Matsudo, Nagareyama Ōtakanomori, Moriya SA); suggest recategorising as a small chain. One unresolved detail left deliberately soft: the official Instagram handle is ohyama_ueno1932, implying a 1932 founding, but no page examined states the year in prose, so it is not asserted as fact."
+ },
+ {
+  "id": "tokyo3__267",
+  "lat": 35.696,
+  "lng": 139.793,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 両国館 exists, in Ryōgoku or elsewhere",
+  "cuisine_type": "chanko",
+  "neighborhood": "Unverified. The light record says Ryōgoku, near Ryōgoku Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. Note for re-sourcing: chanko-nabe is not a safe default. The broths are usually built on soy sauce or miso (wheat and often barley), the pots routinely carry tsumire and fried tofu, and the standard finish is either udon or ramen dropped into the same pot at the end of the meal, so even a rice shime does not undo the contamination.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed; chanko is a chicken- and fish-stock genre by construction.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide search for 両国館 returns no restaurant of that name anywhere in Japan (the two hits are a station bentō counter in Tokyo Station and a Azabu-Jūban yakitori shop, matched on unrelated characters). A Tabelog search for ちゃんこ 両国 returns the real Ryōgoku chanko field — ちゃんこ霧島 両国本店, ちゃんこ霧島 両国江戸NOREN店, 安美 両国総本店, ちゃんこ道場 本店 and 両国駅前店, ちゃんこ 両国, 両国 ひびき, ちゃんこ川﨑 and 両国国技館 地下大広間 — and there is no 両国館 among them. The phrase 「相撲火鍋」 is the giveaway: 火鍋 is the Chinese word for hot pot, and 相撲火鍋 is how Chinese-language tour platforms (Klook, KKday) market Ryōgoku chanko to visitors from Taiwan, Hong Kong and mainland China. On Klook the listing reads 「東京 正宗相撲火鍋 ちゃんこ霧島 両国江戸NOREN店」. So the record appears to be a Chinese marketing phrase welded to a half-remembered venue name. Two candidate real entities sit behind it — ちゃんこ霧島 両国江戸NOREN店 (the shop actually sold under that phrase) and 両国国技館 地下大広間 (the Kokugikan basement hall, which serves chanko but only during a honbasho tournament) — and neither can be asserted from the evidence. Neither has been substituted.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide search for 両国館 is negative; Tabelog's ちゃんこ 両国 listing contains no such shop; Yahoo Japan for 相撲火鍋 両国館 returns only Chinese-language tour-platform listings for ちゃんこ霧島 両国江戸NOREN店 and general Ryōgoku chanko guides.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND / UNRESOLVED. Tabelog nationwide search for 両国館 returns no such restaurant; Tabelog's ちゃんこ 両国 area listing does not contain it. Yahoo Japan for 相撲火鍋 両国館 returns only Chinese-language tour-platform pages — 「東京 正宗相撲火鍋 ちゃんこ霧島 両国江戸NOREN店」 on Klook and KKday — which suggests the name is a Chinese hot-pot marketing phrase (火鍋) attached to a venue that does not exist under this name. Nearest candidates: ちゃんこ霧島 両国江戸NOREN店 (tabelog 13202196) and 両国国技館 地下大広間 (tabelog 13209122, open only during tournaments). NOT substituted — the identification cannot be made from the evidence. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__268",
+  "lat": 35.696,
+  "lng": 139.793,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no chanko restaurant named 富岡 exists in Ryōgoku",
+  "cuisine_type": "chanko",
+  "neighborhood": "Unverified. The light record says Ryōgoku, near Ryōgoku Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. The chanko caveat above applies to any replacement: soy or miso base, fried tofu and tsumire in the pot, and a udon or ramen shime at the end of the meal.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed; chanko is a chicken- and fish-stock genre.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's search for ちゃんこ富岡 returns the whole Ryōgoku chanko field without producing it — ちゃんこ川﨑, ちゃんこ霧島 両国本店 and 江戸NOREN店, ちゃんこ道場 本店 and 両国駅前店, ちゃんこ井筒, ちゃんこ部屋 — and a Tabelog search for 富岡 restricted to 墨田区 returns nothing at all. A Yahoo Japan search for ちゃんこ 富岡 両国 likewise returns only other shops: ちゃんこ友路, ちゃんこ道場, 安美 両国総本店, ちゃんこ 両国 (the former 大島部屋 stable-master's place) and general Ryōgoku chanko round-ups. 富岡 is a real and prominent Tokyo place-name — 江東区富岡, the district of 富岡八幡宮 — about 2.5 km south of Ryōgoku, which is a plausible source for a name hallucinated during a breadth sweep, but no chanko business attaches to it. The nearest-sounding real Ryōgoku shops are ちゃんこ友路 (Tomoji) and ちゃんこ巴潟 (Tomoegata); neither is a defensible identification and neither has been substituted.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Two Tabelog searches (ちゃんこ富岡, 富岡 墨田区) and one Yahoo Japan search all fail to place a ちゃんこ 富岡 in Ryōgoku or anywhere in Sumida-ku.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog searches for ちゃんこ富岡 and for 富岡 墨田区 both return nothing; Yahoo Japan for ちゃんこ 富岡 両国 returns only unrelated Ryōgoku shops (ちゃんこ友路, ちゃんこ道場, 安美 両国総本店, ちゃんこ 両国). Possible confusion with ちゃんこ友路 or ちゃんこ巴潟, or with the 江東区富岡 place-name, but NOT substituted. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__269",
+  "lat": 35.696,
+  "lng": 139.793,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop called 蕎麦 翁 exists in Ryōgoku",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says Ryōgoku, near Ryōgoku Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. For any replacement: 翁 is a soba lineage name, not a gluten-free signal. Nihachi is 20% wheat, jūwari boards are dusted with wheat 打ち粉, and the tsuyu is wheat soy sauce. Several 翁-lineage shops also serve tempura, which puts a wheat fryer in the same small kitchen.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. Soba tsuyu is bonito dashi by default.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established as written. Tabelog's nationwide search for 蕎麦 翁 returns a long list of 翁-lineage soba shops — 狭山翁, しながわ翁, 安曇野翁, 山形翁, 伊勢翁, 伊達翁, 蕎麦切り 翁 (Setagaya), 蕎麦 吉祥 翁 (Kichijōji) — none of them in Ryōgoku or Sumida-ku. The one shop in the right corner of the map is ふかがわ翁 at 江東区常盤2-12-12 (tabelog 13244447, 35.685082/139.798294), nine counter seats, soba and tempura, ¥3,000–¥3,999 for dinner, closed Tuesdays and Wednesdays — but it opened on 31 January 2020, which flatly contradicts the sweep's 「老舗蕎麦」, and it sits 1.3 km south of the pin in Kiyosumi-Shirakawa rather than in Ryōgoku. Tabelog files it under the same area code as Ryōgoku (A131201), which is probably how the name reached the sweep. A Yahoo Japan search for 両国 蕎麦 翁 老舗 returns the genuinely notable Ryōgoku soba shops — 江戸蕎麦ほそ川 (Michelin-listed), 江戸蕎麦手打處 岩ぶち, 日本ばし やぶ久 両国江戸NOREN店 — and no 翁. No substitution has been made.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search places no 翁 soba shop in Ryōgoku or Sumida-ku; the nearest, ふかがわ翁 in Kōtō-ku, is a 2020 opening and not a 老舗. Yahoo Japan's Ryōgoku soba results contain no 翁.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search for 蕎麦 翁 returns no shop in Ryōgoku or Sumida-ku; Yahoo Japan for 両国 蕎麦 翁 老舗 returns only ほそ川, 岩ぶち and やぶ久. Nearest candidate is ふかがわ翁, 江東区常盤2-12-12 (tabelog 13244447), filed by Tabelog under the same A131201 area code as Ryōgoku — but it opened 2020-01-31 (so is not 老舗), has nine seats, and is 1.3 km from the pin at Kiyosumi-Shirakawa. NOT substituted — the identification is unverified. Coordinates unchanged, loc_precise:false. Candidate for deletion, or re-sourcing as a separate new record for ふかがわ翁 if the owner wants it."
+ },
+ {
+  "id": "tokyo3__270",
+  "lat": 35.696,
+  "lng": 139.793,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 安兵衛 exists in Ryōgoku or Sumida-ku",
+  "cuisine_type": "teishoku",
+  "neighborhood": "Unverified. The light record says Ryōgoku, near Ryōgoku Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed. The light record's 「江戸前ちゃんこ・定食」 framing is a chicken- and fish-stock genre in any case.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide search for 安兵衛 returns shops in Osaka, Fukuoka, Kōchi, Tokushima, Niigata, Gunma, Kanagawa and four in Tokyo — えびすの安兵衛 (Ebisu), 安兵衛 and 安兵衛 別館 (both Shinjuku/A130401), and 割烹 安兵衛 (Nihonbashi/A130202) — none in Sumida-ku. Tabelog searches for 安兵衛 両国 and 安兵衛 墨田区 both return nothing. A Tabelog search for 丼めし returns no Ryōgoku business either. A Yahoo Japan search for 両国 丼めし 安兵衛 surfaces only 安兵衛寿し, a sushi shop in Kinshichō, and the unrelated Kōchi gyoza chain 屋台餃子 安兵衛. Nothing supports a 江戸前ちゃんこ・定食 shop called 丼めし 安兵衛 in Ryōgoku.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four Tabelog searches (安兵衛, 安兵衛 両国, 安兵衛 墨田区, 丼めし) and one Yahoo Japan search all fail to place this business; the nearest same-name shop is 安兵衛寿し in Kinshichō, a different genre.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide search for 安兵衛 places no shop of that name in Sumida-ku (Tokyo hits are in Ebisu, Shinjuku ×2 and Nihonbashi); Tabelog searches for 安兵衛 両国, 安兵衛 墨田区 and 丼めし all negative; Yahoo Japan for 両国 丼めし 安兵衛 returns only 安兵衛寿し in Kinshichō and the Kōchi gyoza chain. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ }
+]

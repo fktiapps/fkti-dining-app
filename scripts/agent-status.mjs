@@ -28,4 +28,26 @@ for (const t of TRANCHES) {
   console.log(`  brief: ${t.brief}   ->  ${t.out}`);
   console.log(`  pending: ${pending.map(num).join(' ') || '(none)'}`);
 }
+// Running tally of what the enrichment is actually finding. The not-found rate is
+// the number that matters: the tokyo3 tranche shipped 421 records carrying no
+// source at all, and how many of them are real businesses is still an open
+// question. Keep it computed from the verdicts rather than remembered.
+const VD = 'data/_tokyo_enrich_verdicts';
+if (fs.existsSync(VD)) {
+  const tally = {}; let n = 0;
+  for (const f of fs.readdirSync(VD).filter(f => f.endsWith('.json'))) {
+    for (const r of JSON.parse(fs.readFileSync(`${VD}/${f}`, 'utf8'))) {
+      const note = String(r.enrich_note || '');
+      const k = /^NOT FOUND/i.test(note) ? 'not_found'
+        : /^MISLOCATED/i.test(note) ? 'mislocated'
+        : /^UNRESOLVED/i.test(note) ? 'unresolved'
+        : r.loc_precise === true ? 'located' : 'other';
+      tally[k] = (tally[k] || 0) + 1; n++;
+    }
+  }
+  console.log(`\nenrichment outcomes so far (${n} records):`);
+  for (const [k, v] of Object.entries(tally).sort((a, b) => b[1] - a[1]))
+    console.log(`  ${k.padEnd(12)} ${String(v).padStart(4)}  ${Math.round(v / n * 100)}%`);
+}
+
 console.log('\nDispatch is capped, not queued — launch only as many as there are free slots.');

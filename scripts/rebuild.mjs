@@ -28,6 +28,11 @@ const STEPS = [
   ['fix-source-independence.mjs',     'mark first-party and relay citations'],
   ['fix-city-assignment.mjs',         'flag records filed under the wrong city'],
   ['apply-audit-corrections.mjs',     'fix the factual errors the audit surfaced'],
+  // Second pass: the merge steps above introduce cuisine_type slugs coined by the
+  // research agents (teishoku, tonteki, tonkatsu), which the first pass ran too
+  // early to see. Idempotent, so running it twice costs nothing and stops a raw
+  // slug reaching the filter chips.
+  ['normalize-cuisine.mjs',           're-map slugs introduced by the merge steps'],
   ['quarantine-orphan-menus.mjs',      'pull menus whose record was deduped away', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
