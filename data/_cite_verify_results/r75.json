@@ -1,0 +1,81 @@
+[
+ {
+  "id": "hiro_yamadaya_miyajima_honten",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Signature products (momiji manju, kiriyoka) are wheat-flour cakes made in a shared confectionery production environment; no gluten-free handling is documented.",
+  "url": "https://momiji-yamadaya.co.jp/",
+  "verdict": "unsupported",
+  "found": "Cited root page carries only 「宮島の老舗 もみじ饅頭・桐葉菓(とうようか) やまだ屋」 and nav links — no ingredient, allergen or production text of any kind (小麦/アレルギー/原材料 all return zero hits). On the operator's own allergen table at https://yamadaya-shop.jp/f/zairyou the claim is HALF WRONG: 桐葉菓(とうようか) is 「砂糖（国内製造）、小豆、もち粉、卵、米飴…バター、鶏卵加工品」 with 「アレルギー物質（特定原材料） 乳、卵」 — もち粉 (glutinous RICE flour), no 小麦 declared. Momiji manju is wheat: 「砂糖（国内製造）、小豆、卵、小麦粉…」「特定原材料 小麦、乳、卵」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 21.1 KB) on momiji-yamadaya.co.jp/; 200 on /tenpo/; 200 (plain curl, 100.6 KB) on yamadaya-shop.jp/f/zairyou; 200 on yamadaya-shop.jp/c/yamadaya/momiji/koshian/115",
+  "method": "1 plain fetch of the cited root, then followed the site's own オンラインショップ link to yamadaya-shop.jp and its 原材料・アレルギー表示 page (/f/zairyou) — no proxy, UA switch, Wayback or search engine needed",
+  "note": "Two defects. (a) Wrong source: a corporate root page cannot evidence an ingredient or cross-contact claim; repoint to https://yamadaya-shop.jp/f/zairyou. (b) Factual error: 桐葉菓 is not a wheat-flour cake — it is もち粉-based and its statutory 特定原材料 line names only 乳 and 卵. The same holds for the whole 餅 series (餅栗, 餅ずんだ, 餅抹茶, 餅チョコ, 餅いちご). Naming their flagship 桐葉菓 as wheat is exactly the error that sends a celiac past a shop that has label-wheat-free items. What the page does NOT say is anything about shared lines: every entry reads 「アレルギー物質（推奨原材料） -」, i.e. no 小麦 contamination is declared for 桐葉菓, so 'shared confectionery production environment' is the record's inference, not the operator's statement — reword it as an inference or drop it."
+ },
+ {
+  "id": "hiro_yamadaya_miyajima_honten",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Momiji manju is an egg-based castella cake; no vegan products or egg/dairy-free handling are documented.",
+  "url": "https://momiji-yamadaya.co.jp/",
+  "verdict": "wrong_source",
+  "found": "もみじ饅頭(こしあん) 原材料 「砂糖（国内製造）、小豆、卵、小麦粉、米飴、砂糖結合水飴、ぶどう糖、異性化液糖、鶏卵加工品（卵・乳成分を含む）／乳化剤、膨張剤」／「アレルギー物質（特定原材料） 小麦、乳、卵」 — 卵 appears in all 22 momiji-manju varieties and 乳 in nearly all; ふわもち桜 additionally lists はちみつ (honey).",
+  "correct_url": "https://yamadaya-shop.jp/f/zairyou",
+  "http": "200 (plain curl) on both the cited root and the allergen table",
+  "method": "1 plain fetch; the operator's own 原材料・アレルギー表示 index carries the full statutory ingredient line for ~45 products",
+  "note": "The egg half is true and now has a real citation — but the second half overstates. One own-brand product on that table, 富久者有智(ふくわうち), is 「砂糖（国内製造）、小豆、きな粉（大豆）、水飴／着色料（紅麹、クチナシ）」 with 「アレルギー物質（特定原材料） -」: no egg, no dairy, no honey, no wheat. It is the only such item in the range, so 'no egg/dairy-free product' as written is false. Repoint the URL and reword to 'only one item in the range is egg- and dairy-free'."
+ },
+ {
+  "id": "hiro_yamadaya_miyajima_honten",
+  "city": "hiroshima",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://yamadaya-shop.jp/f/zairyou",
+   "https://yamadaya-shop.jp/c/yamadaya/momiji/koshian/115",
+   "https://momiji-yamadaya.co.jp/tenpo/"
+  ],
+  "why": "ask — the record's 'Not gluten-free' rests on the assertion that both signature products are wheat-flour cakes, and that is wrong for one of them. The operator's statutory allergen table gives 桐葉菓(とうようか) as もち粉-based with 「特定原材料 乳、卵」 and no 小麦, the same for the entire 餅 series, and 富久者有智 carries no 特定原材料 at all. Wheat labelling is legally mandatory in Japan, so these are declared wheat-free products, not guesses. No segregation or cross-contact control is documented anywhere on the site and the momiji-manju batter is wheat, so nothing above 'ask' is defensible — but 'no' tells a celiac on Miyajima there is nothing here, and the operator's own label says otherwise."
+ },
+ {
+  "id": "hiro_yamadaya_miyajima_honten",
+  "city": "hiroshima",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://yamadaya-shop.jp/f/zairyou",
+   "https://momiji-yamadaya.co.jp/tenpo/"
+  ],
+  "why": "limited — 富久者有智(ふくわうち) is 「砂糖（国内製造）、小豆、きな粉（大豆）、水飴／着色料（紅麹、クチナシ）」, an entirely plant-based own-brand 和菓子 sold under やまだ屋銘菓, with 「アレルギー物質（特定原材料） -」. Exactly one item out of roughly 45 and the shop makes no vegan claim, so 'limited' rather than 'options'; but 'no' is contradicted by the operator's own ingredient line. Everything else carries 卵 and/or 乳 (ふわもち桜 adds はちみつ), and /tenpo/ warns 「店舗によってお取扱い商品が異なる場合がございます」, so the detail text should name the one item and say stock varies by store."
+ },
+ {
+  "id": "hiro_yamamura_chaya",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Anagomeshi and the rice bowls are seasoned with standard Japanese soy sauce/tare, which contains wheat; udon is also wheat-based.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34007695/dtlmenu/photo/",
+  "verdict": "unsupported",
+  "found": "The cited page's only menu content is 12 photographs of the shop's handwritten menu board (alt=「山村茶屋 - 山村茶屋さんメニュー(2023年2月)」), with 「コース（0）料理（0）ドリンク（0）ランチ（0）」 — no itemised text menu exists on Tabelog for this shop. Its text carries the review-derived keyword block 「穴子／穴子丼／あなごめし／肉うどん／カキフライ／焼き飯／吸い物／ウツボ／ぶり／甘酒」. Whole-page string search: 醤油 0, しょうゆ 0, タレ 0, たれ 0, だし 0, 出汁 0 hits.",
+  "correct_url": null,
+  "http": "200 (plain curl, 163 KB) on tabelog.com/.../dtlmenu/photo/ and 200 with an iPhone UA on the same; s.tabelog.com returned 404 for this path on BOTH UAs; 200 (plain curl, 206 KB) on the parent listing 34007695/",
+  "method": "1 plain fetch of the cited page — worked first try, no mobile-host fallback needed. Worth recording for the next agent: at this run the desktop tabelog.com host answered a plain curl on both listing and dtlmenu paths, while s.tabelog.com 404s on dtlmenu/photo, i.e. the usual mobile-host workaround is the WRONG route for menu pages.",
+  "note": "The udon half is supported — 肉うどん is in the cited page's keyword block and a review on the parent listing says 「メニューも米系からうどん類まで」. The soy-sauce half is not on the page in any form: 醤油 appears nowhere, so 'seasoned with standard Japanese soy sauce/tare, which contains wheat' is cuisine convention written as if sourced. A page of menu PHOTOGRAPHS is a weak citation in principle — nothing in it is checkable by a reader or a re-verifier. Repoint to the parent listing and reword the soy-sauce clause as an explicit assumption. Separately, gf_detail's claim that 'omurice is made with wheat-containing seasonings' has no support either: オムライス appears on neither page."
+ },
+ {
+  "id": "hiro_yamamura_chaya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen centers on conger eel, oysters, eggs, and fish-based dashi, so cross-contact with animal products is unavoidable across the menu.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34007695/dtlmenu/photo/",
+  "verdict": "supported",
+  "found": "Cited page keyword block: 「穴子／穴子丼／あなごめし／カキフライ／ウツボ／ぶり／吸い物／肉うどん／焼き飯」. On the parent listing a 2025/03 reviewer adds 「私は牡蠿丼をセレクトしましたが、大きな牡蠿がたくさん卵とじ…」 and 「まずはおでんを数名ずつでシェアして」.",
+  "correct_url": null,
+  "http": "200 (plain curl) on cited page and parent listing",
+  "method": "1 plain fetch",
+  "note": "The conclusion holds: conger eel, oysters, yellowtail, moray eel and a clear 吸い物 are all on the cited page, so no plant-only order is available. But two of the four named items are NOT on the cited page — 卵 and 出汁/だし return zero hits there; the egg evidence (牡蠿丼の卵とじ) is on the parent listing 34007695/, which is also the record's website field, so citing the parent would make every element checkable. Trading status OK: no 閉店 banner, hours 「[月]10:00-14:00 [火]10:00-14:00 [水]定休日 [木]定休日 [金][土][日]10:00-14:00」 matching the record exactly, address 広島県廃日市市宮島町藤の棚公園内, most recent 口コミ 2025/03 across 19 reviews. gf 'no' and vegan 'no' are both correct — no tier change."
+ }
+]

@@ -142,5 +142,83 @@
    "https://momijido.com/agemomi/"
   ],
   "why": "The operator's own allergen table lists 卵 in all six momiji manju varieties — 【こしあん】「あん（砂糖、小豆） 卵 砂糖 小麦粉 水あめ」 — so even the plain bean-paste item is not vegan, and クリーム/チョコレート/チーズ add 乳. /shop states Nibanya's entire range is 「揚げもみじ®、揚げもみソフト、ドリンクセット」, i.e. the fried manju plus a dairy soft serve. There is no plant-based item to have 'limited' access to."
+ },
+ {
+  "id": "hiro_nakamuraya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Food offerings (toast, morning set) use butter and egg; no dairy-free or vegan options are documented, so only black coffee is reliably plant-based.",
+  "url": "https://tabiyomi.yomiuri-ryokou.co.jp/article/002259.html",
+  "verdict": "supported",
+  "found": "Cited page, photo caption: 「ブレンドコーヒー450円と、トーストを両面鉄板で焼くバタートースト250円　※掲載時のデータです」. The article also records 「一昨年、2代目店主の夫・昭博（あきひろ）さんが病で倒れてからは、メニューを簡素化してほぼ一人で店に立っている」 — the menu has been cut back to essentially coffee and butter toast.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited page, then Ecosia to cross-check the shop's other coverage",
+  "note": "Butter and the conclusion hold. Drop 'and egg' and 'morning set' — neither is on the cited page (卵/たまご/玉子/モーニング appear zero times in it). Do NOT import them from ことりっぷ's four-cafe roundup: the ハムエッグサンド with 玉子焼き there belongs to てらにし珈琲店 本店, a different shop in the same article. If the morning set matters, ことりっぷ does say 「今回紹介している4軒はすべてモーニングを提供している」 (2021, before the menu was simplified)."
+ },
+ {
+  "id": "hiro_nakamuraya",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Coffee is self-roasted and brewed nel-drip; plain black coffee is naturally gluten-free and vegan.",
+  "url": "https://tabiyomi.yomiuri-ryokou.co.jp/article/002259.html",
+  "verdict": "unsupported",
+  "found": "The cited page says the opposite of the roasting half: 「店内が想像できない外観。入り口左の大型焙煎機は昭博さんが倒れてから止まったままだ」 — the large roaster by the entrance has stood idle since the second-generation owner fell ill (the article dates that to 一昨年, i.e. ~2021; published 旅行読売 2023年8月号 / web 2023-10-16). Its only other roasting mention is historical: 「後年、失火で店の半分が焼け、豆の焙煎だけをしていた年もあったそうだ」. ネル and ドリップ appear zero times on the page.",
+  "correct_url": null,
+  "http": "200 plain curl; Ecosia 200 for the cross-checks",
+  "method": "plain fetch of the cited page, string-counted for ネル/ドリップ/自家焙煎/卵, then Ecosia for independent coverage",
+  "note": "Two separate problems. (1) 'Self-roasted' is contradicted by the cited page — the roaster has been stopped for years; ことりっぷ's 2021 「貴重な焙煎機を使って、ていねいに直火焙煎された」 predates that and should not be used as current. (2) 'Nel-drip' is true but comes from elsewhere: note.com/hiroshima_coffee/n/n7aef72222508 (2024-06-04) has 「ネルドリップコーヒーを淹れながら穏やかに昔話をしてくださるのは店主の中村陽子さん」. Beware the same roundup trap as the vegan line — ことりっぷ's 「粗めに挽いた自家焙煎豆を、ネルドリップで…」 is about てらにし珈琲店, not 中村屋. Rewrite as 'coffee is brewed nel-drip (the in-house roaster has been out of use since the owner's illness)' and cite the note.com piece. Shop is trading: japanhomeycafes.com (2026-01) and note.com both give 11:00-16:00, closed Sun-Tue, matching the cited article."
+ },
+ {
+  "id": "hiro_negian_nagarekawa_ten",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Hiroshima-style okonomiyaki uses a wheat-flour batter and wheat noodles cooked on a shared teppan griddle, making cross-contact with gluten unavoidable.",
+  "url": "https://negian.owst.jp/",
+  "verdict": "supported",
+  "found": "Cited root: 「お好み焼き 鉄板焼き ねぎ庵 流川店」, 「素材・麺・ねぎにこだわり鉄板焼メニューが自慢のねぎ庵」, 「手作りの鉄板自家製料理」, and 「ボリューム満点の鉄板・お好み焼きコース…4500円以上のコースからは、焼きそばが食べ放題！！」 — okonomiyaki, noodles and everything else on one teppan.",
+  "correct_url": null,
+  "http": "200 plain curl for /, /foods, /courses, /en/foods",
+  "method": "plain fetch of the cited root plus its own /foods menu",
+  "note": "Supported. /foods makes it worse in a useful way: every okonomiyaki carries イカ天 (wheat-battered squid tempura), そば/うどん are swap options and paid doubles, and 広島名物 includes がんす (crumbed fried fishcake). Nothing on the site mentions allergens or a separate cooking surface."
+ },
+ {
+  "id": "hiro_negian_nagarekawa_ten",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Teppanyaki and okonomiyaki dishes are seasoned with standard sauces and soy sauce, which contain wheat.",
+  "url": "https://negian.owst.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited root never mentions sauce or soy sauce. Its own /foods page does: toppings 「中マヨor外マヨ/ピリ辛ソース 各55円」 and 「激辛ソース/からしマヨ 各77円」; 「焼きおにぎり 各440円(税込) (醤油バター、チーズ、明太マヨ、梅しそ)」 names soy sauce outright; and 「塩マヨとんぺい…オタフクアイデアコンテスト全国 第1位 獲得！」 ties the kitchen to Otafuku, the wheat-containing okonomiyaki sauce.",
+  "correct_url": "https://negian.owst.jp/foods",
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited root, then the site's own /foods menu",
+  "note": "True but cited to the wrong page on the right site — repoint to https://negian.owst.jp/foods, which names ソース, 醤油バター and the Otafuku connection explicitly."
+ },
+ {
+  "id": "hiro_negian_nagarekawa_ten",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes are prepared on a shared griddle with pork, egg, oysters, and beef, so vegan separation is not provided.",
+  "url": "https://negian.owst.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited root evidences only the oysters and the shared teppan (「広島産牡蠣やこだわりの素材」, 「【牡蠣の鉄板焼き】牡蠣とキノコ焼き 968円」). All four proteins are on /foods: pork (「豚キムチ」, 「せんじがら」, とんぺい, 「肉玉そば」), egg (「たまごW」, 「月見ねぎ庵スペシャル」, 「オムレツ焼きそば」), oysters (「広島県産かき 550円」, 「かきホーレン」, 「かきの酒蒸し」) and beef (「和牛コーネ 1,133円」, 「牛すじ煮込み 693円」).",
+  "correct_url": "https://negian.owst.jp/foods",
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited root, then the site's own /foods menu",
+  "note": "Claim is right; repoint to /foods, which itemises all four. The plant-looking items are traps worth recording: 大根梅サラダ, 枝豆, トマトスライス and the 漬物 are the only candidates, and everything else on the board shares the same griddle."
+ },
+ {
+  "id": "hiro_negian_nagarekawa_ten",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "An English menu is available, which helps travelers identify ingredients before ordering.",
+  "url": "https://negian.owst.jp/",
+  "verdict": "supported",
+  "found": "Cited root, 詳細情報 → 設備: 「英語メニュー あり」, and the page header carries a live switcher 「language 日本語 English 한국어 中文(繁体字) 中文(简体字)」. /en/foods renders the full board in English with per-item components, e.g. \"[Staff Recommendation] Mayo Special … Medium mayonnaise, squid tempura, egg W\".",
+  "correct_url": null,
+  "http": "200 plain curl for / and /en/foods",
+  "method": "plain fetch of the cited root, then the English menu it links to",
+  "note": "Supported, but add a warning to the positive rather than leaving it bare: the English menu lists dish components, not allergens, and it renders そば as \"soba\" — \"Meat and egg soba\", \"Yakisoba (Udon)\" — which in Hiroshima okonomiyaki is wheat ramen noodle, not buckwheat. A celiac reading 'soba' as buckwheat here would be badly misled, so the English menu is a navigation aid, not a safety aid."
  }
 ]

@@ -108,5 +108,128 @@
    "https://www.koshiyamakanseido.jp/cafe-kan"
   ],
   "why": "Open and relocated: 「武蔵ヶ辻から尾張町に移転し、リニューアルオープンしています」, current address 石川県金沢市尾張町2-11-29, 10:30-18:00 (L.O. 17:30), 水曜定休. The record already carries the Owaricho address and coordinates, so no fix needed — logged so a later sweep does not re-open this."
+ },
+ {
+  "id": "kz_cafe_yasuecho_jardin",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Sweets such as scones and the kuzu milk pudding are prepared fresh to order, so the owner is closely involved in each dish and could be asked about ingredients in person.",
+  "url": "https://www.weekend-kanazawa.com/entry/yasuechojardin",
+  "verdict": "supported",
+  "found": "「看板メニューは、注文を受けてから焼き上げる「スコーン」（800円）。できあがるまで30分ほどかかりますが…」/「材料は宝達志水町の伝統的製法で作られる「宝達葛」と、きび砂糖、牛乳、生クリーム。注文を受けてから練り始め、20分ほどかけて仕上げます。」/「食べることが大好きで、自身で味わい納得したものだけを提供。」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch (article dated 2025-08-10)",
+  "note": "Made-to-order and owner-run are both documented verbatim; the trailing 'could be asked about ingredients in person' is the app's own inference, not the article's words — fine as written but flag it as inference, not source text."
+ },
+ {
+  "id": "kz_cafe_yasuecho_jardin",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "(gf_detail) The signature items are thick wheat pancakes and freshly baked scones",
+  "url": "https://www.weekend-kanazawa.com/entry/yasuechojardin",
+  "verdict": "unsupported",
+  "found": "The article names the signature as scones only — 「看板メニューは、注文を受けてから焼き上げる「スコーン」（800円）」 — plus 宝達くずミルクプリン, コーヒー and パッションフルーツスカッシュ. No pancake appears anywhere on the page.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch; full article text read end to end",
+  "note": "Drop 'thick wheat pancakes' from gf_detail — it is not this venue's menu on the only cited source. The scone half stands."
+ },
+ {
+  "id": "kz_cafe_yasuecho_jardin",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.weekend-kanazawa.com/entry/yasuechojardin"
+  ],
+  "why": "ask — the record calls the venue wheat-centric on the strength of a pancake it does not serve. The article publishes the full four-ingredient list of the 宝達くずミルクプリン (宝達葛, きび砂糖, 牛乳, 生クリーム, topped きな粉+黒蜜) — every one wheat-free — made to order in 20 minutes by a hands-on owner who tastes and approves each item. That is exactly an 'ask' situation, not a 'no'. Caveat for the human gate: scones are baked to order in the same small machiya kitchen, so airborne flour is a live risk and must stay in gf_detail."
+ },
+ {
+  "id": "kz_cafe_yasuecho_jardin",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.weekend-kanazawa.com/entry/yasuechojardin"
+  ],
+  "why": "Open. Visited by the 週末、金沢。 editorial team for the article dated 2025-08-10; 営業時間 12:00-17:30, 定休日 金曜・不定休, 住所 石川県金沢市安江町18-12 Machiya5 1F."
+ },
+ {
+  "id": "kz_cialda",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Signature menu is wheat-heavy (napolitan pasta, pizza toast, ham pilaf, toast); shared kitchen with no documented allergen handling.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17006926/",
+  "verdict": "moved",
+  "found": "Tabelog carries no menu block for this shop. The wheat items survive only in the auto-generated 関連のキーワード cloud — ピラフ / ピザトースト / ナポリタン / ホットケーキ / カツカレー / チーズケーキ — and in a reviewer's title 「丁寧なピザトースト」 (大トロ（よっしー）, 2024/05 visit). Genre is 喫茶店. Nothing on the page mentions ham, allergens, or kitchen handling.",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA (desktop host not attempted separately); Yahoo Japan SERP also 200",
+  "method": "2 mobile-host Tabelog fetch + 4 Yahoo Japan search (Ecosia 403 Firewall, Brave 429, DuckDuckGo lite bot-challenge on this run)",
+  "note": "Substance holds — it is a Showa kissaten built on napolitan/pizza toast/pilaf — but 'ham pilaf' is unevidenced anywhere I could reach; say 'pilaf'. 'No documented allergen handling' is true by silence, which is all a Tabelog listing can ever show. Keep gf 'no'."
+ },
+ {
+  "id": "kz_cialda",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes are built on ham, cheese, butter and dairy; no documented dairy-free or plant-based preparation.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17006926/",
+  "verdict": "moved",
+  "found": "Dairy is evidenced by the keyword cloud only — チーズケーキ, ソフトクリーム, ウインナーコーヒー, メロンソーダ (i.e. cream-float), ガムシロップ. ハム and バター appear nowhere on the page.",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA",
+  "method": "2 mobile-host Tabelog fetch + 4 Yahoo Japan search",
+  "note": "Conclusion is right and vegan 'no' should stand (cheesecake, soft-serve, Vienna coffee), but two of the four named ingredients — ham and butter — are invented specificity. Reword to the items the source actually shows."
+ },
+ {
+  "id": "kz_cialda",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17006926/",
+   "https://search.yahoo.co.jp/search?p=%E3%83%81%E3%83%A3%E3%83%AB%E3%83%80+%E9%87%91%E6%B2%A2+%E4%B8%8B%E5%A0%A4%E7%94%BA+%E3%83%94%E3%83%A9%E3%83%95"
+  ],
+  "why": "Open. Tabelog shows 10:00-18:30, 定休日 無休, 25席, 石川県金沢市下堤町20 堤町ビル1F, with a reviewer visit logged 2025/09; Yahoo's place card reads 営業中. Unrelated but worth carrying: 全席喫煙可 — smoking permitted at every seat."
+ },
+ {
+  "id": "kz_curio_espresso_and_vinta",
+  "city": "kanazawa",
+  "field": "staff_allergy_handling",
+  "quote": "Staff speak English, which makes it easier for a foreign visitor to ask about ingredients and allergens directly.",
+  "url": "https://food-japon.com/p/curio-espresso",
+  "verdict": "supported",
+  "found": "「人気の理由① 英語が通じる … 当たり前のように英語が飛び交っているので、ここだけ金沢じゃないような独特な空間ですよ。」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch (article dated 2024-05-18)",
+  "note": "The English half is directly supported. The consequence — that allergens can therefore be discussed — is the app's inference; the article says nothing about allergens, so do not let this field imply an allergen protocol exists."
+ },
+ {
+  "id": "kz_curio_espresso_and_vinta",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "English-speaking owners and staff at an American-style cafe make communicating dietary needs straightforward.",
+  "url": "https://food-japon.com/p/curio-espresso",
+  "verdict": "supported",
+  "found": "「このお店は、アメリカの珈琲の聖地と言われるシアトルのカフェにいらっしゃった大徳裕子さんと旦那さんのガヤゴ・ソルさんご夫婦が営業されています。」 plus 「金沢市安江町の一角にある雰囲気もステキなシアトル系カフェです」 and 人気の理由① 英語が通じる.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch",
+  "note": "Owner-operated by a Seattle-returned couple; English and Seattle-style are both on the page. 'Dietary needs straightforward' remains inference — the article's food list (BBQポークサンド, ブレックファーストサンド with scrambled egg/bacon/cheese, キャロットケーキ, 天然酵母パン, カフェラテ) shows no GF or plant-milk item, so gf 'ask' and vegan 'ask' are both correct as they stand."
+ },
+ {
+  "id": "kz_curio_espresso_and_vinta",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.ecosia.org/search?q=Curio%20Espresso%20Kanazawa",
+   "https://www.instagram.com/curioespresso/",
+   "https://tabelog.com/ishikawa/A1701/A170101/17008983/"
+  ],
+  "why": "Open. Tripadvisor reviews dated Apr 2026 and May 2026 surfaced on the Ecosia place card, the shop's Instagram carries an August operating-days notice, and Tabelog lists 08:00-15:00 with 火・水定休 at 石川県金沢市安江町1-13. Note the cited food-japon article contradicts itself on opening time (header says 8:00, body says 「朝は9時から営業」); Tabelog's 08:00 is the one corroborated."
  }
 ]

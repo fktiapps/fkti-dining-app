@@ -1,0 +1,79 @@
+[
+ {
+  "id": "kz_omicho_shokudo",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Menu is built on sashimi, tempura, and tonkatsu; tempura and tonkatsu are wheat-battered/breaded and fried, with high cross-contamination risk for shared fryers.",
+  "url": "https://www.ohmicho-syokudo.com/",
+  "verdict": "supported",
+  "found": "Homepage: 「名物の〝海鮮丼〟をはじめ、お刺身や天ぷら、揚げたてのとんかつなど、メインを選べる定食も人気メニューの一つ。」",
+  "correct_url": null,
+  "http": "302 on https://www.ohmicho-syokudo.com/ then 200 at /sp/ (iPhone UA, follow redirects)",
+  "method": "1 plain curl with iPhone UA (-L required; the root 302s to /sp/)",
+  "note": "Menu composition is verbatim on the cited page; the 'shared fryers' half is inference, no source states one fryer. The bigger miss is on /menu.html: 生麩田楽 680円 (nama-fu = pure wheat gluten) and うどん 450円 both sit on the a-la-carte list and neither appears in gf_detail — add them."
+ },
+ {
+  "id": "kz_omicho_shokudo",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Sashimi and seafood bowls are served with standard Japanese soy sauce, which is wheat-based; no wheat-free soy sauce is mentioned.",
+  "url": "https://www.ohmicho-syokudo.com/",
+  "verdict": "wrong_source",
+  "found": "The cited homepage never mentions 醤油. /menu.html does: 「いかの醤油焼き 780円」 alongside 「海鮮丼」「刺身盛り合わせ」, and 「うどん…昆布と鰹から引いた出汁が決め手」.",
+  "correct_url": "https://www.ohmicho-syokudo.com/menu.html",
+  "http": "200 (iPhone UA, -L) for both root/sp and menu.html",
+  "method": "1 plain curl with iPhone UA, then site link-walk to menu.html",
+  "note": "Repoint to /menu.html, which documents soy sauce as an actual cooking ingredient (いかの醤油焼き). Note that 'sashimi is served with wheat shoyu' remains a category assumption — no page says which shoyu the table bottle holds."
+ },
+ {
+  "id": "kz_omicho_shokudo",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen is centered on fish and seafood prepared daily; broths and dishes are dashi/fish based with no documented vegan preparation.",
+  "url": "https://www.ohmicho-syokudo.com/",
+  "verdict": "supported",
+  "found": "「当店の一日は、活気溢れる近江町市場での仕入れから始まります。店主が毎朝、自らの目で確かめた魚介や野菜だけを買い付ける。」 plus 「名物の〝海鮮丼〟をはじめ、お刺身や天ぷら…」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, -L)",
+  "method": "1 plain curl with iPhone UA",
+  "note": "Daily-fish sourcing is on the cited page; the dashi half is proven only on /menu.html (「昆布と鰹から引いた出汁が決め手」 for the udon), so cite menu.html for the stock claim. vegan: no is correct."
+ },
+ {
+  "id": "kz_omicho_shokudo",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.ohmicho-syokudo.com/takeout.html",
+   "https://www.ohmicho-syokudo.com/menu.html"
+  ],
+  "why": "gf_detail asserts 'no gluten-free menu, dedicated preparation, or allergen handling is documented', but the operator's own takeout page states 「※アレルギー対応が可能ですので、ご要望のある方はご相談ください。」 — allergy accommodation on request. That is documented allergen handling (scoped to pre-ordered オードブル platters), and the menu carries naturally GF anchors (刺身盛り合わせ, のどぐろ塩焼き, 金時草の酢の物). The wheat load is real (tempura, tonkatsu, うどん, 生麩田楽, one likely shared fryer), so this is 'ask and pre-arrange', not 'high' — but a flat 'no' both misstates the page and overstates the closure of the door."
+ },
+ {
+  "id": "kz_omicho_shunsai",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "The menu centers on sashimi, torched nodoguro and seafood bowls, which are eaten with Japanese soy sauce (brewed with wheat); no wheat-free soy alternative is documented.",
+  "url": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/",
+  "verdict": "unsupported",
+  "found": "Retty page menu evidence: 「こちらのおすすめは「炙りのどぐろ」と「せんべろセット」だ。せんべろセットは生ビールにお刺身の盛り合わせ（3点）と小鉢がついて1,000円」. The word 醤油 does not appear anywhere on the page.",
+  "correct_url": null,
+  "http": "406 on retty.me with both iPhone and desktop UA; 200 via web.archive.org snapshot 20250501004035",
+  "method": "route 3 — Wayback (https://web.archive.org/web/2023/<url>) after plain and iPhone-UA curl both returned 406",
+  "note": "Sashimi/炙りのどぐろ is supported; the soy-sauce sentence is not on the page in either direction. Either soften it to a stated assumption or cite a source that shows the condiment. Separately: the せんべろセット is built on 生ビール — barley beer is the loudest gluten item here and gf_detail does not name it."
+ },
+ {
+  "id": "kz_omicho_shunsai",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "An entirely seafood-based market counter (oysters, sea urchin, scallops, sashimi, nodoguro) with no documented plant-based options; cross-contact with fish is unavoidable here.",
+  "url": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/",
+  "verdict": "supported",
+  "found": "「ここで切ってもらったノドグロ、大トロ、バイ貝、ウニの刺身や生牡蠣、身をほぐしたズワイガニを食べながら、お酒も飲めます。」 and 「岩牡蠣！」; genre listed as 魚介・海鮮料理／海鮮丼／丼もの, no plant dish anywhere on the page.",
+  "correct_url": null,
+  "http": "406 live (both UAs); 200 via Wayback 20250501004035",
+  "method": "route 3 — Wayback",
+  "note": "Supported, with one wording nit: the page evidences oysters, sea urchin, snow crab and nodoguro but never scallops (ホタテ) — drop scallops or cite it. vegan: no is correct."
+ }
+]

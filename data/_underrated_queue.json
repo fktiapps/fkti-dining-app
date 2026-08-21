@@ -382,6 +382,35 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_fujiiya_miyajima_honten",
+  "name": "藤い屋 宮島本店 (Fujiiya Miyajima Honten)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000023",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000010",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000001",
+   "https://momiji-manju.jp/fujiiya/"
+  ],
+  "why": "Fujiiya publishes a complete 原材料 list and an explicit アレルギー line for every product, and at least two of its lines declare no wheat at all — 花虎白 is 「原材料：砂糖、フランボワーズ／マンゴ／西洋梨、寒天」 with 「アレルギー：不使用」, and 淡雪花 declares 「アレルギー：ゼラチン」 only. A blanket 'no' tells a celiac there is nothing here, which the maker's own labelling contradicts. 'ask' is the honest tier: real wheat-free items exist and are labelled, but Fujiiya publishes no cross-contamination or segregation statement and the main line is wheat castella, so a celiac must still confirm handling in store."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_fujiiya_miyajima_honten",
+  "name": "藤い屋 宮島本店 (Fujiiya Miyajima Honten)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000023",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000010",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000001"
+  ],
+  "why": "花虎白 is sugar, fruit purée and 寒天 (agar, seaweed) with 「アレルギー：不使用」 — plant-only, per the maker's own declaration, and named on the record's cited page as part of the Miyajima lineup. Everything else is animal-containing and should stay flagged: momiji manju is 卵・小麦 castella, 淡雪花 is set with ゼラチン, and 杓子せんべい and the sablés carry egg, butter and dairy. One documented plant-only item in an otherwise animal-heavy range is 'limited', not 'no'."
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_gallery_miyazato",
   "name": "ぎゃらりぃ宮郷 (Gallery Miyazato)",
   "field": "gf_confidence",

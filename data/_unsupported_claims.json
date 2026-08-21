@@ -2098,6 +2098,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_nakamuraya",
+  "name": "中村屋 (Nakamuraya)",
+  "field": "positives",
+  "text": "Coffee is self-roasted and brewed nel-drip; plain black coffee is naturally gluten-free and vegan.",
+  "source": "https://tabiyomi.yomiuri-ryokou.co.jp/article/002259.html",
+  "why": "Two separate problems. (1) 'Self-roasted' is contradicted by the cited page — the roaster has been stopped for years; ことりっぷ's 2021 「貴重な焙煎機を使って、ていねいに直火焙煎された」 predates that and should not be used as current. (2) 'Nel-drip' is true but comes from elsewhere: note.com/hiroshima_coffee/n/n7aef72222508 (20"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_shirunashi_tantanmen_aji",
   "name": "汁なし担担麺 味源 (Shirunashi Tantanmen Ajigen)",
   "field": "soy_sauce_wheat",
@@ -2260,6 +2269,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_dontsuki_hidari",
+  "name": "どんつき左 (Dontsuki Hidari)",
+  "field": "staff_allergy_handling",
+  "text": "The owner's site asks guests to review allergy and disliked-ingredient information before booking, indicating allergies ",
+  "source": "https://dontuki.sg-hiroshima.com/",
+  "why": "ALARMING — this one is backwards and needs rewriting before it misleads someone. The first half is on the cited page; the second half ('allergies can be discussed at reservation') is the opposite of what the house says. Dontsuki Hidari REFUSES bookings from guests with pronounced food allergies, sta"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kiyomori_chaya",
   "name": "清盛茶屋 (Kiyomori Chaya)",
   "field": "vegan_cross_contact",
@@ -2359,6 +2377,24 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_fujiiya_miyajima_honten",
+  "name": "藤い屋 宮島本店 (Fujiiya Miyajima Honten)",
+  "field": "gf_cross_contamination",
+  "text": "The entire product line is wheat-flour-based (castella-batter momiji manju and a wheat/rice/mochi 'momiji mochi'), so th",
+  "source": "https://momiji-manju.jp/fujiiya/",
+  "why": "Most of this sentence is right and gf 'no' is a defensible bottom line, but the absolutism is false and the cited page says so itself. Fujiiya publishes per-item 原材料 and アレルギー for its whole range, and at least two lines carry no wheat at all — 花虎白 is declared 「アレルギー：不使用」 (sugar + fruit + agar) and 淡"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_fujiiya_miyajima_honten",
+  "name": "藤い屋 宮島本店 (Fujiiya Miyajima Honten)",
+  "field": "positives",
+  "text": "Momiji manju are made fresh on-site and the shop emphasizes no preservatives and carefully selected ingredients.",
+  "source": "https://momiji-manju.jp/fujiiya/",
+  "why": "Three sub-claims, none on the cited page. 'Carefully selected ingredients' is real and citable (Fujiiya's own wording: bespoke-milled flour and eggs from neighbouring farms; the maker's product page also reads 「小麦、小豆、卵といった3つの素材は、特に厳選されたものを使用しています」). 'Made fresh on-site' is only third-party (焼きたてもみじ饅"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_steak_aohige",
   "name": "ステーキ青ひげ (Steak Aohige)",
   "field": "soy_sauce_wheat",
@@ -2401,6 +2437,15 @@
   "text": "The dipping broth and tare for tsukemen rely on standard Japanese soy sauce, which contains wheat.",
   "source": "https://www.menbajintoku.jp/",
   "why": "The soy-sauce attribution is not on the cited page and should be replaced with the seasoning the operator does name — 辛味噌 — which carries its own gluten risk, since 麦味噌 (barley miso) is standard in western Japan; that keeps the field true and better-sourced."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_tonkatsu_ryori_sachi",
+  "name": "とんかつ料理 さち (Tonkatsu Ryori Sachi)",
+  "field": "soy_sauce_wheat",
+  "text": "The house dipping sauce is a secret soy-sauce/Worcestershire-style tare mixed with grated daikon, which typically contai",
+  "source": "https://naka-hiroshima.mypl.net/article/lunch_hiroshima/67241",
+  "why": "DEFECT. The article states the tare is 秘伝 (undisclosed) and explicitly CONTRASTS it with the usual tonkatsu sauce — 'soy-sauce/Worcestershire-style' is invented and points the reader the wrong way. No source anywhere states this tare's ingredients. Reword to: composition undisclosed, treat as unknow"
  },
  {
   "city": "hiroshima",

@@ -50,5 +50,44 @@
   "http": "200 (iPhone UA, 522.9 KB) on s.tabelog.com/hiroshima/A3401/A340111/34014338/ and its /dtlmenu/ (Tabelog serves the mobile host without a challenge; desktop tabelog.com was not needed)",
   "method": "2 iPhone UA on s.tabelog.com (the desktop URL the record cites), plus a whole-page string search for every noun in the claim",
   "note": "Both dishes in the claim are invented for this venue — neither mackerel nor kimchi is on the cited page, and neither seasoning word occurs on it. This reads as cuisine convention written as if sourced, which is the pattern the brief warns about. The correction is easy and makes the record safer, because the real wheat here is far larger than soy sauce: チキン南蛮 (flour-and-egg batter, tarutaru sauce), コロッケ (panko), ハンバーグ (breadcrumb binder), カツカレー and 唐揚 — a 定食 chain whose menu is mostly fried. And the cited page's own keyword list includes 麦茶: barley tea, gluten, poured free at a set-meal shop, which a celiac would meet before the food arrives. Rewrite the claim around those and cite this same page, which supports them. gf: no and vegan: no stay correct. Trading status OK and the record can be trusted as current: reviews dated 2026/03, 2025/12 and 2025/04, 無休, 11:00-21:00, address 中区紙屋町2丁目2-6. Note this is a four-branch chain (白島店 etc.) — keep future citations on the 紙屋町 id 34014338."
+ },
+ {
+  "id": "hiro_yakeppachi",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki is wheat-batter based and cooked on a shared griddle alongside noodles and other floured items, so cross-contact with gluten is inherent to the cooking style.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340108/34033951/",
+  "verdict": "supported",
+  "found": "Genre line 「やけっぱち 八丁堀駅/お好み焼き」; keyword block 「広島風お好み焼き」「鉄板焼」; a 2025/10 review describing the reopening 「…元のあのビルを改装して、お好み焼き鉄板焼き屋さんとして、移転オ[ープン]」; and a 2026/02 review ordering 「豚もやし 牛コウネ焼き お好み焼きそば きゅうり」 — okonomiyaki with soba noodles.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 505.5 KB) on s.tabelog.com/hiroshima/A3401/A340108/34033951/ and 200 (152.1 KB) on its /dtlrvwlst/; no challenge, no proxy needed",
+  "method": "2 iPhone UA on s.tabelog.com for the cited desktop URL plus its review list",
+  "note": "Every element holds: Hiroshima-style okonomiyaki (a thin wheat crepe by definition), a teppan, and soba noodles ordered in the same sitting, all on the cited page. Two honest caveats to log: the page never prints 小麦, so the wheat itself is cuisine fact rather than a site quote, and 'shared griddle' is an inference from 鉄板焼 — the page does not say there is only one griddle. Neither weakens gf: no, which is right. Worth adding from the same page: 牛すじカレー煮込み is the house speciality and Japanese curry roux is a wheat product, an exposure independent of the griddle."
+ },
+ {
+  "id": "hiro_yakeppachi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Okonomi/teppan sauces and the izakaya's soy-seasoned dishes use standard wheat-containing soy sauce; no gluten-free sauce is documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340108/34033951/",
+  "verdict": "unsupported",
+  "found": "null — the page fetched in full and 醤油 (0 hits), しょうゆ (0) and ソース (0) appear nowhere on it, neither in the shop record, the four reviews, nor the keyword block.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 505.5 KB) on s.tabelog.com/hiroshima/A3401/A340108/34033951/; /dtlmenu/ carries no menu data at all (コース0/料理0/ドリンク0/ランチ0)",
+  "method": "2 iPhone UA on s.tabelog.com + whole-page string search for every seasoning noun in the claim",
+  "note": "The substance is almost certainly true — a Hiroshima okonomiyaki shop uses okonomi sauce, which is wheat- and soy-based — but this page does not say so, and the record states it as sourced. There is no menu on the Tabelog entry to fall back on either. Either reword it as an explicit assumption about Hiroshima-style okonomiyaki, or find the shop's own menu. Also fix the wording: 'the izakaya's' is out of date. The 2025/10 review records that the original izakaya やけっぱち CLOSED and the Hakushima branch owner's son reopened the same building as an お好み焼き鉄板焼き屋 — this listing is the okonomiyaki successor, not the izakaya. Meanwhile the real documented wheat on this page goes unmentioned in the record: the house 牛すじカレー煮込み (curry roux) and the お好み焼きそば noodles."
+ },
+ {
+  "id": "hiro_yakeppachi",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes share a single teppan griddle used for meat, egg and seafood, and okonomiyaki batter/dashi contain egg and bonito, so vegan separation is not feasible here.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340108/34033951/",
+  "verdict": "supported",
+  "found": "Keyword block 「鰹節」「鉄板焼」「豚もやし」「コウネ」「牛すじカレー」「クリームチーズ」「チーズ」; a 2026/05 review 「お好み焼きの前にビールとチーズ奴、名物の牛すじカレー煮込みを注文。クリームチーズに鰹節とお…」; a 2025/10 review titled 「名物ケイタマありますよ」 (鶏玉 — chicken-and-egg okonomiyaki); a 2026/02 review ordering 「豚もやし 牛コウネ焼き」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 505.5 KB) on s.tabelog.com/…/34033951/ and 200 on /dtlrvwlst/",
+  "method": "2 iPhone UA on s.tabelog.com for the cited page and its review list",
+  "note": "The substance is well evidenced on the cited page: bonito flakes are in the keyword list and a diner reports them scattered over cream cheese, pork, beef koune and beef tendon are all ordered off the griddle, and cheese appears twice — so vegan: no is right. Two precision fixes. First, 'a SINGLE teppan' is not on the page; the page only establishes 鉄板焼, so say 'a shared griddle'. Second, the egg is real but reaches the page indirectly — 卵/玉子 score zero as strings; the evidence is the review title 名物ケイタマ, i.e. 鶏玉, the chicken-and-egg okonomiyaki — cite that rather than asserting the batter contains egg, which the page does not address. Trading status OK and recently so: reviews dated 2025/10, 2026/02, 2026/04 and 2026/05, hours 16:00-22:00, closed Tuesdays, 中区八丁堀11-4 島村ビル2F. Note the 閉店 string on this page refers to the predecessor izakaya, not to the current shop — do not let a keyword sweep mistake it for a closure."
  }
 ]

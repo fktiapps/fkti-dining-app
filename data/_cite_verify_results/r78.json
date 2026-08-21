@@ -1,0 +1,54 @@
+[
+ {
+  "id": "kz_higashiyama_mizuho",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Menu relies on soy sauce, dashi, and cured/pickled seafood; no gluten-free accommodation is documented, so cross-contamination should be assumed.",
+  "url": "https://www.h-mizuho.jp/",
+  "verdict": "supported",
+  "found": "ご飯のお供 … いくら醤油漬け 800円 / いかのこうじ漬け / こんかさば / ほたるいか沖漬け / 季節のぬか漬け; lunch sets are 「一汁六菜 2,200円」「一汁七菜」「のどぐろ定食」. The whole site (ご挨拶/お昼ご飯/ご飯のおとも/お米/食材へのこだわり/交通案内) contains no allergen, gluten or アレルギー wording of any kind.",
+  "correct_url": null,
+  "http": "200 (plain curl, no UA trick needed)",
+  "method": "1 plain fetch of the cited official site",
+  "note": "Holds. Soy-marinated and koji/nuka-cured seafood are literally itemised and the site is silent on allergens, so 'assume cross-contamination' is fair. One precision point for a rewrite: 'dashi' is inferred from the 一汁 (soup) in 一汁六菜 — the page never uses the word だし. Note also that nothing wheat-FLOUR appears anywhere (no tempura, no noodles, no fried food); the gluten here is seasoning-borne only."
+ },
+ {
+  "id": "kz_higashiyama_mizuho",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Soy-marinated dishes such as ikura shoyu-zuke are signature items, indicating standard (wheat-containing) soy sauce is used.",
+  "url": "https://www.h-mizuho.jp/",
+  "verdict": "supported",
+  "found": "「ご飯にのせる贅沢な一品　いくら醤油漬け　800円（税込880円）」 — listed twice on the ご飯のお供 menu, and in English as 'Salmon roe in soy sauce', alongside 'Hotaru-ika Okizuke (Firefly squid pickled in soy sauce)'.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited official site",
+  "note": "The dish and its billing as a headline item are on the page verbatim. The '(wheat-containing)' half is inference — the site names no soy-sauce brand or type — but it is the correct default and the record does not overstate it as a finding."
+ },
+ {
+  "id": "kz_higashiyama_mizuho",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Set meals and small plates are seafood- and dashi-based; no vegan preparation is documented.",
+  "url": "https://www.h-mizuho.jp/",
+  "verdict": "supported",
+  "found": "「のどぐろ定食 3,500円」 and the ご飯のお供 list — いくら醤油漬け, のどぐろの干物, いかのこうじ漬け, こんかさば, ほたるいか沖漬け, お刺身小鉢, 能登鶏卵 — with no vegan, vegetarian or ビーガン wording anywhere on the site.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited official site",
+  "note": "Direction is right but the wording overshoots slightly: the sets are described as 土鍋ご飯 + 「おいしいおばんざい」 (home-style side dishes, largely vegetable) with a 能登野菜プディング dessert — it is only the のどぐろ定食 and the お供 plates that are seafood. The load-bearing part, 'no vegan preparation is documented', is true by silence."
+ },
+ {
+  "id": "kz_imoya_cafe_tano",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Desserts are made to order at the counter in front of you, so you can see the ingredients and speak directly with the owner-chef about what goes into each dish.",
+  "url": "https://www.kanazawalabo.net/shop/shop.shtml?s=1268&e=241&t=22",
+  "verdict": "supported",
+  "found": "「店内の席はカウンターで４席ほど。こじんまりとした内装ですが、その分マスターとの距離が近く、会話が弾みます。店主さんもとてもおしゃべり好きで」 + 「目の前でお芋スイーツが丁寧に作られ、運ばれてきます。」 Reader reviews on the same page repeat it: 「目の前で作ってくれるので楽しみながらわくわくします」 and 「ブリュレは何度も焼いて丁寧に仕上げていてその工程を目の前で見ることができ」.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited kanazawalabo page (article dated 2022-08-26, reviews 2019–2022)",
+  "note": "Made-in-front-of-you and the talkative owner-chef are both on the page. The clause 'so you can see the ingredients ... about what goes into each dish' is the record's own inference — the source never mentions ingredients, allergens or asking about them — and since this sits in positives it is the sentence a coeliac would lean on; reword to what the source actually says (open counter prep, owner within talking distance) rather than implying ingredient disclosure."
+ }
+]
