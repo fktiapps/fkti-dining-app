@@ -1,0 +1,178 @@
+[
+ {
+  "id": "vm_kyoto_baisenya",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The signature and essentially only food dish is wheat noodle tsukemen; wheat is present in the kitchen, so any gluten-free request cannot be considered safe.",
+  "url": "https://vegemap.org/en/list/kyoto/all-vegan/kyoto-baisenya/",
+  "verdict": "supported",
+  "found": "・Vegan Tsukemen with a drink set only (Strictly by pre-booking / Allergens: Wheat)　1,500 yen",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "Cited page states the single menu item is a tsukemen whose declared allergen is wheat; GF 'no' is correct."
+ },
+ {
+  "id": "vm_kyoto_baisenya",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Whether seasonings or any soy sauce in the broth are wheat-free is not stated; wheat is listed as an allergen for the tsukemen.",
+  "url": "https://vegemap.org/en/list/kyoto/all-vegan/kyoto-baisenya/",
+  "verdict": "supported",
+  "found": "Allergens: Wheat — and the page's only ingredient sentence is 'The soup is made with gentle-on-the-body ingredients such as donko and kombu broth, and soy milk as a base.' (no soy-sauce statement anywhere).",
+  "http": "200 plain curl",
+  "method": "plain fetch; cross-checked operator booking page https://tol-app.jp/s/kyotobaisenya (200, iPhone UA)",
+  "note": "Correctly framed as an absence, not an invented shoyu warning; wheat is declared for the noodles regardless, so nothing turns on the tare."
+ },
+ {
+  "id": "vm_kyoto_baisenya",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The entire menu is vegan with no animal ingredients, so risk of cross-contact with meat, fish, dairy or egg is effectively eliminated. The broth uses donko (dried shiitake) and kombu dashi with soy milk, not fish dashi.",
+  "url": "https://vegemap.org/en/list/kyoto/all-vegan/kyoto-baisenya/",
+  "verdict": "supported",
+  "found": "Listed under 'All Vegan' ('No meat, fish, shellfish, dairy, eggs, honey, or any other animal dishes'); 'a renewal of the popular animal-free vegan ramen'; 'The soup is made with gentle-on-the-body ingredients such as donko and kombu broth, and soy milk as a base.'",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "Page says donko + kombu + soy milk and never mentions fish dashi; donko is dried shiitake, so the gloss is accurate."
+ },
+ {
+  "id": "vm_kyoto_baisenya",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Fully vegan kitchen, so vegan diners do not need to worry about hidden animal ingredients or shared meat/fish surfaces.",
+  "url": "https://vegemap.org/en/list/kyoto/all-vegan/kyoto-baisenya/",
+  "verdict": "supported",
+  "found": "Category badge 'All Vegan'; single-item menu is the vegan tsukemen; operator page 「動物性食材不使用のヴィーガンラーメンをリニューアルし」",
+  "http": "200 plain curl; tol-app.jp 200",
+  "method": "plain fetch + operator first-party booking page",
+  "note": "vegan 'full' holds — one dish, animal-free, confirmed first-party in Japanese."
+ },
+ {
+  "id": "vm_kyoto_baisenya",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Plant-based broth using shiitake and kombu dashi instead of fish/bonito dashi.",
+  "url": "https://vegemap.org/en/list/kyoto/all-vegan/kyoto-baisenya/",
+  "verdict": "supported",
+  "found": "'The soup is made with gentle-on-the-body ingredients such as donko and kombu broth, and soy milk as a base.'",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "Verbatim on the cited page."
+ },
+ {
+  "id": "vm_kyoto_baisenya",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tol-app.jp/s/kyotobaisenya",
+   "https://vegemap.org/en/list/kyoto/all-vegan/kyoto-baisenya/"
+  ],
+  "why": "freee予約 (ex-tol) booking page fetched 200 on 2026-08-21 with the ヴィーガンつけ麻 1,500円 service still listed and a live 予約する button; no 閉店 notice anywhere. Reservation-only operation since June 2023, so a traveller must pre-book — walk-ins are not served."
+ },
+ {
+  "id": "vm_salon_fu",
+  "city": "kyoto",
+  "field": "staff_allergy_handling",
+  "quote": "The directory listing advises customers to tell staff about their vegetarian/vegan needs and any allergies and to choose a menu item accordingly, implying ordering decisions should be confirmed with staff at the venue.",
+  "url": "https://vegemap.org/en/list/kyoto/vegan-options/salon_fu_kyp_en/",
+  "verdict": "supported",
+  "found": "'We recommend that you choose a menu after telling the staff about vegetarian / vegan support, and your potential allergies.'",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "WEAK: that sentence is VegeMap's site-wide footer boilerplate — byte-identical on every listing incl. vm_kyoto_baisenya — not a statement about this venue. The listing body says only 'Macrobiotic cafe'; the record's staff_allergy_handling rests on nothing venue-specific and should be reworded as 'no venue-specific allergy policy published'."
+ },
+ {
+  "id": "vm_salon_fu",
+  "city": "kyoto",
+  "field": "name/identity",
+  "quote": "サロン・フ (Salon Fu)",
+  "url": "https://vegemap.org/en/list/kyoto/vegan-options/salon_fu_kyp_en/",
+  "verdict": "wrong_source",
+  "found": "庵（いおり）、京都府京都市右京区宇多野御池町20-13、075-461-5911、精進料理 ＊要予約 — same address AND same phone as our 'Salon Fu' record; Tabelog: 完全予約制のマクロビオティックベースの精進料理の店",
+  "correct_url": "https://vegemap.org/list/%e4%ba%ac%e9%83%bd/%e5%85%a8%e3%81%a6%e3%83%b4%e3%82%a3%e3%83%bc%e3%82%ac%e3%83%b3/iori/",
+  "http": "vegemap 200; tabelog 26005102 200 via s.tabelog.com iPhone UA; Ecosia 200",
+  "method": "plain fetch, then Ecosia (Brave/Yahoo JP both HTTP 429, DDG-lite 202 challenge, Bing 200)",
+  "note": "UNFINDABLE NAME. The venue does not trade as 'Salon Fu' — it is 庵（いおり）/ Iori, a reservation-only macrobiotic shojin-ryori house. A traveller searching 'Salon Fu Kyoto' finds nothing; Tabelog, Yahoo Map, ekiten and jpvs.org all index it as 庵. Add 庵（いおり）/ Iori as the primary name and keep Salon Fu as an alias."
+ },
+ {
+  "id": "vm_salon_fu",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "full",
+  "evidence": [
+   "https://vegemap.org/list/%e4%ba%ac%e9%83%bd/%e5%85%a8%e3%81%a6%e3%83%b4%e3%82%a3%e3%83%bc%e3%82%ac%e3%83%b3/iori/",
+   "https://vegemap.org/type/%E5%85%A8%E3%81%A6%E3%83%B4%E3%82%A3%E3%83%BC%E3%82%AC%E3%83%B3/",
+   "https://tabelog.com/kyoto/A2601/A260402/26005102/",
+   "http://www.jpvs.org/menu-restaurant/"
+  ],
+  "why": "The SAME operator — identical address 宇多野御池町20-13 and identical phone 075-461-5911 — is carried on VegeMap's Japanese site as 庵（いおり） under 飲食店（全てヴィーガン）, i.e. all-vegan by VegeMap's own definition (no meat, fish, egg, dairy or honey), described as 精進料理 ＊要予約; jpvs.org lists the same address as ビーガン対応、化学調味料無. Only the English 'Salon Fu' listing says Vegan Options. Human gate should confirm the two listings are one venue (they share address+phone) before promoting."
+ },
+ {
+  "id": "vm_salon_fu",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260402/26005102/",
+   "https://vegemap.org/en/list/kyoto/vegan-options/salon_fu_kyp_en/"
+  ],
+  "why": "Tabelog detail page for 庵 (26005102) fetched 200 via s.tabelog.com on 2026-08-21 carrying no rst-status badge (閉店 / 休業 / 移転 / 掲載保留 all absent); VegeMap still lists it. Reservation-only (完全予約制) — no walk-ins."
+ },
+ {
+  "id": "vm_salon_fu",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "(no gf claim cited in shard)",
+  "url": null,
+  "verdict": "unsupported",
+  "found": "精進料理 / macrobiotic kaiseki — no allergen page published by the venue on any route tried.",
+  "http": "n/a",
+  "method": "Ecosia + Tabelog detail page",
+  "note": "ADVISORY, not a citation defect: gf 'ask' is right, but shojin-ryori kitchens make heavy use of 生麻 / 車麻 (pure wheat gluten) and 醇酯/醒油-based simmering. Record should name those two as the specific hazards to ask about rather than leaving gf_cross_contamination empty."
+ },
+ {
+  "id": "vm_sushizen",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "No soy sauce details published; standard sushi-shop shoyu generally contains wheat. Assume wheat-containing soy sauce unless confirmed otherwise.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260202/26001255/dtlmenu/",
+  "verdict": "supported",
+  "found": "The 28-item 料理 list carries no seasoning or allergen line of any kind; the page's only ingredient sentence is 「滋賀県産のコシヒカリを使ったご飯の上にびっしりと沙山のネタと錦糸卵」.",
+  "http": "200 via s.tabelog.com (iPhone UA); the cited /en/.../dtlmenu/ URL returned the JAPANESE TOP page, not the menu — the menu renders only at https://s.tabelog.com/kyoto/A2601/A260202/26001255/dtlmenu/",
+  "method": "iPhone UA on s.tabelog.com (route 1 desktop host was not needed)",
+  "note": "Absence is correctly stated and shoyu is genuinely present in a sushi shop's own product, so this is NOT a genre-invented warning — but the record should name the concrete wheat vectors it can see on this very menu (穴子押寿司/穴子ちらし tsume, and the simmered kanpyo/shiitake inside 太巻き) rather than only table soy sauce."
+ },
+ {
+  "id": "vm_sushizen",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "This is a seafood-focused sushi kitchen; vegan rolls (cucumber, plum-shiso) are prepared in a space that primarily handles raw fish, so cross-contact with fish is likely.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260202/26001255/dtlmenu/",
+  "verdict": "supported",
+  "found": "Menu is dominated by fish items (鉄火丼 3,000円、穴子ちらし 2,200円、鯖姿寿し 5,000円、鱧箱寿し 1,400円…); shop profile field 料理：魚料理にこだわる, 19 seats, one counter.",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA (JP host)",
+  "note": "Accurate. Also note the signature ちらし is topped with 錦糸卵 (egg), so the shop's flagship dish is not vegetarian either."
+ },
+ {
+  "id": "vm_sushizen",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "A couple of genuinely plant-based maki are on the menu: cucumber roll (¥900) and plum-shiso roll (¥900).",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260202/26001255/dtlmenu/",
+  "verdict": "supported",
+  "found": "胡瓜巻 900円 2本 ・ 梅しそ巻 900円 2本 (menu list, 更新日 2025/06/12)",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA (JP host); prices verified verbatim",
+  "note": "Both prices exact. INCOMPLETE IN THE HELPFUL DIRECTION: 新香巻 900円 (pickled-daikon roll) is a third plant-based maki on the same list and is not mentioned; 三色巻 1,800円 is part-tekka so is not one."
+ },
+ {
+  "id": "vm_sushizen",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260202/26001255/"
+  ],
+  "why": "Tabelog detail page 200 on 2026-08-21 with no rst-status badge (閉店/休業/移転/掲載保留 absent) and user reviews dated 2026/07 and 2026/04. Hours 10:00–18:00 Mon–Fri, closed Sat/Sun/holidays, ※なくなり次第終了 — a visitor arriving at a weekend finds it shut."
+ }
+]

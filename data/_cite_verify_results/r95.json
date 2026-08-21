@@ -207,5 +207,90 @@
    "https://x.com/ikedayakyoto"
   ],
   "why": "Tabelog detail page for 池田屋 一乗寺店 fetched 200 on 2026-08-21 (iPhone UA) with live 営業時間 and 定休日 and no 閉店 / 休業 / 移転 / 掲載保留 marker. It lists twitter.com/ikedayakyoto as the shop's official account, which independently confirms the record's own website field points at the right handle."
+ },
+ {
+  "id": "kyr_ramen_jiro_kyoto_ten",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "All bowls use wheat noodles boiled in a shared pot with a wheat-based soy tare; there is no gluten-free preparation or separation, so cross-contamination is unavoidable.",
+  "url": "https://ramen-jiro-pc3.com/kyoto/",
+  "verdict": "supported",
+  "found": "「麺は平打ちで太めのストレート。硬さはちょいデロ。サクサク食べ進められる。量は二郎標準より気持ち多めな感じ。」 and the complete price list, which is wheat-noodle ramen and nothing else: ラーメン並 1000円 / 中盛り 1000円 / 大盛 1050円 / 半分 900円, plus 豚まし券, 生卵, 九条ネギ, 脂飯, 辛いラーメン変更券, 生姜.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Supported in substance: the entire menu is wheat noodles, there is no gluten-free item, and the only listed customisation is 汁抜き (no soup). But note precisely what the page does NOT say: it never mentions a shared pot and never states the tare's composition. Reword to the documented facts — a single-product wheat-noodle shop with no gluten-free option — rather than asserting a boiling-water mechanism this page cannot evidence."
+ },
+ {
+  "id": "kyr_ramen_jiro_kyoto_ten",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tare is a soy-sauce base typical of Jiro-style ramen, which uses wheat-containing soy sauce; soy sauce is also offered as a counter condiment.",
+  "url": "https://ramen-jiro-pc3.com/kyoto/",
+  "verdict": "supported",
+  "found": "「卓上香辛料は粒コショウ、粉コショウ、一味唐辛子、ラー油、しょうゆダレ」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "The second half is evidenced word for word — しょうゆダレ sits on the counter as a self-serve condiment, which matters because it puts shoyu within reach of every bowl and every shared spoon regardless of what is in the soup. The first half (tare composition) is Jiro general knowledge, not on this page; keep it flagged as an inference. Wider caveat on this citation: ramen-jiro-pc3.com is an enthusiast catalogue site (ラーメン二郎 PC店III), not an official shop page — Jiro branches have no official web presence, so it is the best available authority, but the record should not imply it is the shop speaking."
+ },
+ {
+  "id": "kyr_ramen_jiro_kyoto_ten",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The broth is a pork and back-fat stock and bowls include chashu pork; even the vegetable topping (boiled bean sprouts and cabbage) is served in pork broth, so no item is free of animal products.",
+  "url": "https://ramen-jiro-pc3.com/kyoto/",
+  "verdict": "supported",
+  "found": "「京都店のぶたは特徴的で、大判で肉厚特大のぶた。柔らかさも丁度よく味もしっかり。」 「スープは乳化寄りだが、優しい味。」 「ヤサイはモヤシ：キャベツ＝8：2くらいで、茹で具合はミディアム。」 plus 豚まし券300円 and 脂飯150円 on the price list.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Supported. The pork is documented three ways — the ぶた topping, the 豚まし (extra-pork) ticket and 脂飯 (fat rice) — and the ヤサイ is exactly the 8:2 bean-sprout/cabbage mound the record describes, served in the same bowl. One precision note: the page says only 「スープは乳化寄り」 and never names the stock, so 'pork and back-fat stock' is inferred from the toppings and from Jiro convention rather than stated. Also add 生卵 (raw egg, 100 yen) to the animal-product list."
+ },
+ {
+  "id": "kyr_ramen_jiro_kyoto_ten",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://ramen-jiro-pc3.com/kyoto/",
+   "https://tabelog.com/kyoto/A2601/A260303/26028749/"
+  ],
+  "why": "Cited page fetched 200 on 2026-08-21 carrying a Copyright2026 footer and current trading details: 住所 京都府京都市左京区一乗寺里ノ前4番, 定休日 水曜日, 営業時間 11:00-14:00 (土日のみ14:30まで) / 18:00 (土日17:30から)-21:30 (日曜のみ20時半まで). Tabelog detail page also 200 (iPhone UA) with no 閉店 / 休業 / 移転 / 掲載保留 marker."
+ },
+ {
+  "id": "kyr_ramen_kura",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tare is made from honjozo (conventionally brewed, wheat-containing) soy sauce combined with kombu, fish stock and white dashi, so the shoyu base contains wheat.",
+  "url": "https://kuroboushi.exblog.jp/242188427/",
+  "verdict": "supported",
+  "found": "「スープは昆布や魚節、白だしに本醸造の醤油のカエシが合わさり、昔ながらのはんなりとした優しい味わいのスープとなっています。」",
+  "correct_url": null,
+  "http": "403 plain curl; 403 desktop-Chrome UA; 200 with iPhone UA; Wayback 2024 snapshot also 200 as a backstop",
+  "method": "Route 1 failed, route 1b (iPhone UA) worked. Record for the next agent: kuroboushi.exblog.jp 403s a plain curl AND a desktop UA but answers an iPhone UA. Wayback was reachable but not needed.",
+  "note": "Verbatim match — every element of the claim sits in one sentence. ADD the wheat source the record leaves out: 白だし (shirodashi) is conventionally built on 白醤油, which is majority WHEAT, so this bowl has TWO independent shoyu-family wheat inputs, the 本醸造 kaeshi and the shirodashi, and 'white, light, delicate' is the opposite of a safety signal here. Also note the record carries no gf_cross_contamination claim at all even though the page names the noodles outright: 「麺は京都の老舗製麺所 麵屋棣鄂(ていがく)製の中太平打ち縮れ麺を使用されており」 — a citable wheat fact going unused."
+ },
+ {
+  "id": "kyr_ramen_kura",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The Kyoto dashi broth is built on kombu plus fish/seafood stock and white dashi, and bowls carry pork chashu and fried beef intestine, so the kitchen handles animal products throughout.",
+  "url": "https://kuroboushi.exblog.jp/242188427/",
+  "verdict": "supported",
+  "found": "「具材は、チャーシュー、ネギ、カス、その上からマー油が回しかけられています。」 「チャーシューは薄切り豚バラチャーシューが数枚載っており」 「「かす」は関西名物の天かすではなく、牛の腸を時間をかけてあげたもので、和牛顔負けの高価な食材となっています。」",
+  "correct_url": null,
+  "http": "200 with iPhone UA (403 plain, 403 desktop UA)",
+  "method": "iPhone-UA fetch",
+  "note": "Supported verbatim, including the unusual かす — the page goes out of its way to say it is NOT 天かす (tempura scraps) but slow-fried beef intestine, which is exactly what our record says and is worth keeping so nobody 'corrects' it back to batter. 魚節 in the dashi is a second animal input already covered. Add マー油 (black-garlic oil) to the finish. LOUD access finding this record should carry: the shop has no street entrance. Per the page you take a numbered wooden tally from outside and are walked through 「BIGOLI京都本店」, a bolognese / fresh-pasta specialist, and across its courtyard into a Taisho-era 蔵 with 8 counter seats; Tabelog gives the address itself as 「京都府京都市中京区阪東屋町664-7 BIGOLI」. A coeliac cannot reach this table without passing through a wheat-pasta restaurant's service area, and service is self-serve throughout (「お水、お箸、蓮華、お絞りなどはセルフ」 plus self-clearing and self-checkout), so shared touch points are the operating model rather than an accident."
+ },
+ {
+  "id": "kyr_ramen_kura",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26040902/",
+   "https://kuroboushi.exblog.jp/242188427/"
+  ],
+  "why": "Tabelog detail page for らーめん 蔵 (烏丸) fetched 200 on 2026-08-21 (iPhone UA), address 京都府京都市中京区阪東屋町664-7 BIGOLI, live 営業時間 block, no 閉店 / 休業 / 移転 / 掲載保留 marker. The cited blog post (2024-05-19) records the opening as 3月9日 and gives 11:30-21:00, tel 075-748-1570. Pipeline note: because this venue sits inside another business, if BIGOLI's status ever changes, access to 蔵 changes with it."
  }
 ]

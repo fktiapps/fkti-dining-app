@@ -1,0 +1,106 @@
+[
+ {
+  "id": "kyr_ramen_mugyu_vol_2_karasu",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature bowls use a soy-sauce (shoyu) based tare, and conventional shoyu is brewed with wheat — this is the seasoning backbone of the broth.",
+  "url": "https://www.kyoto-gourmet.info/kyoto-ramen/soy-sauce/mugyu-vol-2",
+  "verdict": "supported",
+  "found": "「ラーメンムギュvol.2の『おにばら 黒』は, めっちゃ旨い ! ! 程よい醤油のコクとキレ…純系名古屋コーチン, 愛媛梶田醤油の再仕込み醤油と, 本枯れ節を使っていて, 素材の良さがスープに出ていますね。」 The site files the shop under ホーム > 京都 ラーメン > 醤油.",
+  "correct_url": null,
+  "http": "200 plain curl (247KB, real article, title 「ラーメンムギュ vol.2 烏丸蛸薬師店 - 京都グルメ食べ歩きガイド」)",
+  "method": "1 plain fetch of the cited page; then Ecosia + the brewery's own shop for the named soy sauce; iPhone-UA s.tabelog.com for trading",
+  "note": "Better than the record claims, and it should be upgraded from genre-inference to named evidence: the page names the actual brewery, 愛媛梶田醤油 (梶田商店 / Kajita Shoten, Ozu, Ehime — note the romanisation, its own domain is kazita.jp), and its 再仕込み醤油「梶田泰嗣」 product page states 原材料：大豆（愛媛産）・小麦（愛媛産）・食塩（鳴門産）. That is first-party wheat, not an assumption. Two cautions: (a) the article describes only おにばら 黒; the menu also carries おにばら 白 and 濃厚鶏そば whose tare is never described, so 'the signature bowls' (plural) over-scopes — say 'the 黒 bowl', since the wheat that covers every bowl here is the noodles, not the tare; (b) the brewery page also says 丸大豆純正醤油 — 丸大豆 describes the soy, not the wheat, and must not be read as any kind of wheat-free marker."
+ },
+ {
+  "id": "kyr_ramen_mugyu_vol_2_karasu",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26031480/",
+   "https://www.kyoto-gourmet.info/kyoto-ramen/soy-sauce/mugyu-vol-2"
+  ],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA, s.tabelog.com): score 3.55 / 434 reviews, most recent visit 2026/06 and a review quoting an August 2026 visit ('8/17㈪〜19㈭は夏季休業のようですね' — a summer closure, not a shutdown). Live hours 月〜土 11:00-22:30 (L.O. 22:00), 日 定休日, 17 seats, tel 075-221-2588, 京都府京都市中京区一蓮社町298-13. No 閉店/休業/掲載保留 banner. One flag for the record's address field: Tabelog carries 「※このお店は以前の場所から移転しています」 — the shop has relocated at some point, so verify the stored coordinates against 蛸薬師通烏丸東入ル 一蓮社町298-13."
+ },
+ {
+  "id": "kyr_ramen_nagata",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The shoyu (soy sauce) tare that flavors the broth is standard Japanese soy sauce, which contains wheat.",
+  "url": "http://gcjapan-kyoto.com/ramen-nagata/",
+  "verdict": "supported",
+  "found": "「昔懐かしい醤油ラーメンがいただける『ラーメンながた』…地元の人に愛されるお店にしたいと、地鶏のメスのみを使用した混じりけのない醤油ラーメンを提供してくれます。」 Menu: 「かけラーメン 500円／あぶらそば 500円／醤油ラーメン 700円／白湯ラーメン 800円／ハーフ＆ハーフ750円」.",
+  "correct_url": null,
+  "http": "200 plain curl over HTTP (909KB; live article on グッチジャパンの京都最新グルメ, dated 2022.01.18)",
+  "method": "1 plain fetch of the cited page; iPhone-UA s.tabelog.com for identity and trading",
+  "note": "The shop genuinely sells a 醤油ラーメン and it is the house speciality, so the claim's subject is real — but the page names no soy-sauce brand and says nothing about wheat, so 'standard Japanese soy sauce, which contains wheat' is entirely our inference and should be labelled as such rather than quoted as sourced. Two additions the page does support and the record misses: the 白湯ラーメン and ハーフ＆ハーフ are chicken-paitan bowls whose seasoning is not shoyu (do not let the shoyu warning swallow them), and the shop's 名物 唐揚げ is fried in the same small kitchen — 「醤油で味付けされたもやしの上にドでかい唐揚げ」 — which is a firmer wheat hazard than the tare is."
+ },
+ {
+  "id": "kyr_ramen_nagata",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260303/26036605/",
+   "http://gcjapan-kyoto.com/ramen-nagata/"
+  ],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA) and carries the 公式 badge — 「お店の営業情報は店舗関係者によって公開されています」, i.e. hours maintained by the operator. Score 3.44 / 90 reviews, 京都府京都市左京区北白川西伊織町13-5 (matches the cited article exactly), tel 070-8581-6918, 火〜土 11:00-15:00 & 17:00-21:00, 日祝 11:00-15:00, 月 定休日. Opened 2021-10-14 per the article. No closure marker of any kind."
+ },
+ {
+  "id": "kyr_ramen_okura_ichijoji_ten",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Shoyu and shio tare at a standard Japanese ramen shop are made with conventional wheat-based soy sauce; no gluten-free soy sauce is indicated.",
+  "url": "https://www.hotpepper.jp/strJ000645666/",
+  "verdict": "unsupported",
+  "found": "The page documents the bowls but never a tare. Menu: 「しょうゆラーメン 650円」「唐揚げ定食 ラーメン代金+300円」; おすすめ料理 「唐揚げ／しょうゆらぁめん／新魚介系らぁめん」; keyword 「醤油ラーメン」. It also documents the SHIO bowl as a separate item: review 「しおラーメン｜塩のだしが気に入りました、麺が美味しかったです。」 Nothing on the page states what either tare is made from.",
+  "correct_url": null,
+  "http": "200 plain curl (83KB, live listing)",
+  "method": "1 plain fetch of the cited HotPepper page; iPhone-UA s.tabelog.com/kyoto/A2601/A260303/26003982/ to cross-check hours and current trading",
+  "note": "This is the soy-sauce-from-genre defect, and it is aimed at the wrong bowl. The shoyu half is fine to keep as an explicit inference (a しょうゆラーメン is on the menu, and no gluten-free soy sauce is indicated anywhere — that part is true). But 'shio tare ... made with conventional wheat-based soy sauce' is a contradiction in terms and appears nowhere on the page: a 塩 tare is salt-based, and the shop's 塩 bowl is a live, separately-ordered item — Tabelog's most recent review (2026/07) is titled 「聖地『一乗寺』のコスパ最強店で久々の『塩』！」. Delete 'and shio' and let the wheat warning rest where it is actually unarguable at this shop: the noodles, the 唐揚げ dredge and the 餃子 wrappers. gf stays 'no' either way, so nothing about safety changes — but the reason given has to be true."
+ },
+ {
+  "id": "kyr_ramen_okura_ichijoji_ten",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are animal-based (pork/chicken and a ten-fish seafood blend) and the shared kitchen also fries karaage and cooks gyoza, so no plant-based bowl can be assumed clean.",
+  "url": "https://www.hotpepper.jp/strJ000645666/",
+  "verdict": "supported",
+  "found": "おすすめ料理 「唐揚げ」「新魚介系らぁめん」; 「唐揚げ定食 ラーメン代金+300円」; キーワード 「からあげ／にんにく料理／とんかつ／餃子／醤油ラーメン」; 口コミ 「とんかつ定食｜とんかつがジューシーで…」 and 「こってりラーメンで有名ですが、個人的には新魚介系ラーメンがお勧めです…実は揚げシュウマイが激ウマです」; 席数 9席（カウンター席のみ）.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Conclusion holds and holds easily — every documented item is meat or fish (karaage, tonkatsu, gyoza, fried shumai, seafood ramen) in a nine-seat counter-only kitchen, and no vegetarian or vegan item appears at all. But cut the invented specificity: the page never says the broth is pork/chicken, and 'a ten-fish seafood blend' corresponds to nothing on it — the source text is 「新魚介系らぁめん」, which just means a new seafood-based bowl. 魚介 is not 'ten fish'. Say what is on the page: a こってり shop whose entire documented menu is animal-based."
+ },
+ {
+  "id": "kyr_ramen_okura_ichijoji_ten",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260303/26003982/",
+   "https://www.hotpepper.jp/strJ000645666/"
+  ],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA): score 3.16 / 76 reviews with visits logged 2026/07, 2025/02 and 2024/02; 京都府京都市左京区一乗寺赤ノ宮町20, tel 075-702-6006, 月・水〜日 11:00-22:00, 火 定休日. No 閉店/休業/移転/掲載保留 marker. Note for whoever edits the record: the cited HotPepper listing is STALE on hours — it advertises 「ただいま営業中 11:00～翌5:00」 and 「定休日 なし」, and its newest user reviews are from 2014 and 2018. Tabelog's operator-current 11:00-22:00 with a Tuesday closure should win."
+ },
+ {
+  "id": "kyr_ramen_sen_no_kaze_shijo_",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The 京の醤油 (Kyoto soy sauce) ramen is built on a soy-sauce tare, which in standard Japanese ramen contains wheat.",
+  "url": "https://tabelog.com/kyoto/A2601/A260202/26016307/",
+  "verdict": "supported",
+  "found": "The named bowl is on the cited page, in a user review: 「今回は「京の醤油」(830円)を頂きました！豚骨ベースだと思うんですが、豚骨風味はそこまで強くなく、味噌ラーメンかな？っと思うくらいあっさりとしたラーメンです。」 The page's 関連のキーワード also list 醤油ラーメン, alongside 塩ラーメン, 塩とんこつ and ピリ辛味噌.",
+  "correct_url": null,
+  "http": "200 iPhone UA on s.tabelog.com (524KB); desktop host not needed",
+  "method": "2 — iPhone UA on s.tabelog.com, the route the brief flags for Tabelog detail pages",
+  "note": "The bowl exists and is named on the page, so this is not invented — but everything after the bowl name is our inference: the cited page is a directory listing and describes no tare, no soy sauce and no supplier. Label it as inference. More important for the record's shape: 京の醤油 is one bowl among several and NOT the flagship — the shop's own keyword profile and its reviewers lead with 塩とんこつ (「おいしい豚骨塩ラーメンが食べられる…今回は豚骨塩味の「塩玉」1210円を」), so a soy-sauce warning must not be widened into a whole-shop statement. The whole-shop wheat here is the noodles plus the 餃子/つけ麺 the listing files the shop under (ラーメン、つけ麺、餃子)."
+ },
+ {
+  "id": "kyr_ramen_sen_no_kaze_shijo_",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260202/26016307/"
+  ],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA): score 3.12 / 116 reviews, most recent logged visit 2025/09, 3,445 saves. Live hours 月・木〜日 12:00-21:00, 火・水 定休日; 京都府京都市中京区新京極通り四条上ル中之町580, tel 075-255-0181. No 閉店/休業/移転/掲載保留 banner."
+ }
+]

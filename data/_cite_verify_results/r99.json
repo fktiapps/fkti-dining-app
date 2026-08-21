@@ -1,0 +1,54 @@
+[
+ {
+  "id": "kyr_zuishin",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Authentic Chinese dishes and tare here typically use wheat-based soy sauce; no wheat-free soy sauce is indicated.",
+  "url": "https://osumituki.com/kyoto-ramen/130891.html",
+  "verdict": "unsupported",
+  "found": "The article never mentions soy sauce, tare or any seasoning. It prints the shop's full price list — 「ラーメン 650円 / チャーシュー麺 820円 / 味噌ラーメン 750円 / チャンポン麺 750円 / 野菜ラーメン 750円 / 中華やきそば 750円 / 揚げそば 750円 / 炒飯 650円 … 中華丼 750円 / 天津飯 750円 / 麻婆丼 750円」 — and describes only the fried noodles it ate: 「麺は平打ちの太麺を揚げたもので香ばしさが引き立ちます」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA); no fallback needed",
+  "note": "Soy-sauce warning invented from the genre label — the cited page contains zero evidence about seasoning, and the one tare the menu DOES name is 味噌 (味噌ラーメン), not 醤油. Repoint this citation at what the page actually proves: the gluten here is the wheat noodles (ラーメン, 中華やきそば, 揚げそば = deep-fried flat wheat noodles) and the あんかけ rice bowls, not an unevidenced shoyu. Also worth correcting in the record: the article insists 「中華料理ではありません『中国料理』です」 while our cuisine field says 'Authentic Chinese / chuka-soba' — and no chuka-soba is on the price list."
+ },
+ {
+  "id": "mp_hideyoshi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is an okonomiyaki, teppanyaki, and kushiage (battered fried skewers) restaurant. Okonomiyaki batter is wheat-flour based, kushiage skewers are breaded and deep-fried, and dishes such as yakiudon are wheat-based. Everything is cooked on a shared teppan griddle and in shared fryer oil, so gluten cross-contamination should be assumed. This is not a celiac-safe environment, and no gluten-free accommodation is documented.",
+  "url": "https://tabelog.com/kyoto/A2601/A260401/26014902/",
+  "verdict": "supported",
+  "found": "Genre line: 「西院駅（阪急）/お好み焼き､ 鉄板焼き､ 串揚げ」. Reviews on the same page name the individual dishes: 「おすすめのねぎ焼きミックスと 焼きうどん（しょうゆ味）とご飯」 (2024/11) and 「枝豆に串カツ、牛串、玉ねぎ…」 (2026/04). Nothing anywhere on the page mentions allergens or gluten-free.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited detail page, plus its /dtlmenu/ sub-page",
+  "note": "Holds on the page's own words — genre, negiyaki, yakiudon and kushikatsu are all named there, so this is not a genre inference. One caveat for the editor: Tabelog carries no itemised menu for this shop (コース0/料理0/ドリンク0/ランチ0, only 34 menu photos), so the dish names come from reviews rather than a posted menu; 'shared fryer oil' is our inference and is not stated on the page."
+ },
+ {
+  "id": "mp_hideyoshi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Okonomiyaki sauce and soy sauce are central to the cooking here, and most Japanese soy sauce and okonomiyaki/yakisoba-style sauces contain wheat. Assume these contain wheat unless staff confirm otherwise.",
+  "url": "https://tabelog.com/kyoto/A2601/A260401/26014902/",
+  "verdict": "supported",
+  "found": "A 2024/11 review on the cited page orders 「焼きうどん（しょうゆ味）」 — a soy-sauce-flavoured yakiudon, named as such — and adds 「タレはお好みで甘口と辛口」, i.e. the house serves a sweet and a hot tare.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Unusually for this field, the shoyu is evidenced rather than assumed: a named menu item is 焼きうどん（しょうゆ味）. The claim's scope is right. Suggest citing that review sentence in the record so the next reader can see the shoyu is documented, not inferred from the okonomiyaki genre."
+ },
+ {
+  "id": "mp_hideyoshi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan options are documented. The menu centers on eggs, meat, and seafood (negiyaki with eggs, meat and beef skewers, fried udon), and everything shares a griddle used for animal products. There is no indication of plant-based accommodation.",
+  "url": "https://tabelog.com/kyoto/A2601/A260401/26014902/",
+  "verdict": "supported",
+  "found": "「ねぎ焼きはねぎたっぷりで卵2個乗り」 (negiyaki topped with two eggs) and 「枝豆に串カツ、牛串、玉ねぎ…」 (kushikatsu, beef skewers) — both from reviews on the cited page. No vegetarian or vegan wording appears anywhere on it.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Supported, and the specific items the claim names (eggs on the negiyaki, beef skewers) are literally on the page. 'Seafood' is the one word not evidenced — no seafood item appears on the page; the animal products actually documented are egg, beef and pork."
+ }
+]

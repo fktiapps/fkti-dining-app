@@ -299,5 +299,64 @@
    "https://www.motomachira-men.com/motomachiramen"
   ],
   "why": "Three independent signals, checked 2026-08-21. (1) Tabelog 26019599 (京都北山元町らーめん, 東洞院通錦小路下る阪東屋町664-27) now carries 「このお店は店舗情報の確認が取れていないため掲載保留中です。」 — listing suspended — and its most recent visit review is 2025/10. (2) A different shop, 先斗町華楽 烏丸店 (Tabelog 26045534), is registered at the SAME address, 阪東屋町664-27, and reviewers who visited in 2026/08 describe it as 「26/8/3 NewOpen…元町ラーメン跡地に新たに昼夜おそばがいただけるお店がオープン」 and 「元、元町ラーメンの跡地」 — 跡地 meaning the former premises. (3) The shop's own domain motomachira-men.com has lapsed: it last served real content on 2025-11-09 per Wayback and by the 2026-04-12 capture had become a parked page monetised through yfdpco4.com/sk-park.php, with a TLS certificate that no longer matches the domain. So: closed between 2025-10 and 2026-08-03, permanently, premises re-let. This is 閉店, not 休業中. Note for the record: reviewers say the successor 先斗町華楽 烏丸店 claims to carry on 「元町ラーメンの味」, but that is a different business and inherits none of our verification."
+ },
+ {
+  "id": "kyr_kyoto_nijo_menya_susuru",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "中華麺（小麦）と熟成醤油のかえしが基本で、グルテンフリー麺や専用調理ラインの記載は確認できない。小麦の交差接触は避けられないと考えるのが安全。",
+  "url": "https://prtimes.jp/main/html/rd/p/000000057.000100887.html",
+  "verdict": "wrong_source",
+  "found": "The press release only ever calls the noodle 「特注の麺」 and never names wheat. 京都速報's opening report does, explicitly: 「麺は全粒粉を使用し、やや短めでもっちりとした食感が特徴。スープとの絡みが良く、豊かな小麦の香りを感じます。」 The press release does independently document other wheat: 「九州産黒豚の焼き餃子(5個)…香ばしく焼き上げた皮のパリッとした食感」.",
+  "correct_url": "https://kyo-soku.com/2025/10/20/susuru/",
+  "http": "200 prtimes (plain, iPhone UA); 200 kyo-soku (plain, iPhone UA); 200 tabelog dtlmenu (iPhone UA). Ecosia alternated 200/403 across queries; Yahoo Japan 429; Brave 429; DuckDuckGo html+lite bot challenge; Mojeek 403; Instagram login-walled.",
+  "method": "1 plain fetch of the cited URL; Ecosia exact-phrase search for \"麺屋 啜る\" 京都 (the only engine that answered); 1 plain fetch of the source that names the wheat",
+  "note": "Claim is true; upgrade the citation. 全粒粉 (wholemeal WHEAT flour) is stronger evidence than 'assume 中華麺 is wheat' — say it outright. Also swap 「かえし」 for the shop's own word 「熟成醤油」, and add the 焼き餃子 wrapper as documented wheat in the same kitchen. No gluten-free noodle or dedicated line is mentioned by any source; that absence statement is accurate."
+ },
+ {
+  "id": "kyr_kyoto_nijo_menya_susuru",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "看板メニューは『熟成醤油』のかえしを用いる。一般的な醸造醤油は小麦を含むため、醤油由来の小麦混入を前提に判断するのが妥当。",
+  "url": "https://prtimes.jp/main/html/rd/p/000000057.000100887.html",
+  "verdict": "supported",
+  "found": "「主力商品は、澄んだ鶏清湯にまろやかな熟成醤油を合わせ、繊細さと奥行きを兼ね備えた「熟成醤油らぁ麺」。」 and 「熟成醤油の深い味わいと国産鶏から抽出したおダシの旨味が融合。…熟成醤油の豊かな香りをあわせ」",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "Supported. 熟成 describes ageing only and says nothing about wheat either way, so the reasoning step is the right one — but note that the 和牛らぁ麺 is also 醤油-based (「A5ランク和牛から溶け出す旨みが醤油のまろやかさと見事に調和し」, 京都速報) and the 炙り和牛めし uses a 甘辛ダレ, so shoyu is not confined to the signature bowl."
+ },
+ {
+  "id": "kyr_kyoto_nijo_menya_susuru",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "『ヴィーガン白湯』『ヴィーガン担々』は動物性不使用をうたう専用メニューだが、同一厨房で鶏清湯・煮干し・A5和牛・豚餃子などを調理しており、麺の茹で湯や調理器具の共用、交差接触の管理についての明記はない。",
+  "url": "https://prtimes.jp/main/html/rd/p/000000057.000100887.html",
+  "verdict": "supported",
+  "found": "「動物性食材を一切使わず、豆乳と香味野菜で丁寧に仕上げたコク深いヴィーガン白湯らぁ麺。」 set against 「国産鶏と鰹と煮干から抽出される…極上ダシ」, 「【A5ランク和牛使用】和牛らぁ麺」, 「九州産黒豚の焼き餃子」, 「レアチャーシューマヨ丼」, 「満月たまごの生卵」. The release says nothing whatever about separate pots, utensils or boiling water.",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch + 1 京都速報 fetch to confirm the vegan bowls are on the standing menu",
+  "note": "Accurate and well-calibrated — the shop's own claim is about INGREDIENTS (動物性食材を一切使わず), not about handling, and our text draws exactly that line. Two additions worth making: the vegan 担担 has no published description anywhere, and its non-vegan sibling is built on 自家製の芝麻醤 — a vegan tantan tare frequently carries 甜麺醤, which is wheat — so treat that bowl's gluten status as unknown rather than assumed. がんもどき is tofu-based (not seitan — no 車麩 problem here) but is commonly bound with 小麦粉 or でん粉 and deep-fried, so it is not a safe GF topping either."
+ },
+ {
+  "id": "kyr_kyoto_nijo_menya_susuru",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "豆乳と香味野菜でつくる動物性不使用のヴィーガン白湯らぁ麺（トッピングはがんもどき・赤水菜）と、ヴィーガン担々らぁ麺を常設しており、プラントベースの一杯を注文できる。",
+  "url": "https://prtimes.jp/main/html/rd/p/000000057.000100887.html",
+  "verdict": "moved",
+  "found": "Current wording: 「ヴィーガン 白湯らぁ麺 ¥1,200(税込) 動物性食材を一切使わず、豆乳と香味野菜で丁寧に仕上げたコク深いヴィーガン白湯らぁ麺。トッピングには旨味豊かながんもどき、彩り鮮やかな紅芯大根など多彩な野菜を盛り付けました。」 plus 「ヴィーガン 担担らぁ麺 ¥1,250(税込)」.",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch; standing-menu status cross-checked against 京都速報's opening menu list",
+  "note": "Substance supported — 豆乳, 香味野菜, 動物性食材を一切使わず, がんもどき, and both vegan bowls listed as regular menu items (also in 京都速報's menu list, so 常設 is fair). One factual fix: the garnish is 紅芯大根 (red-heart / watermelon radish), NOT 赤水菜 (red mizuna). Correct it. Also good that our text says 豆乳 rather than calling the creaminess dairy — this is the shop where that mistranslation would have been easy to make."
+ },
+ {
+  "id": "kyr_kyoto_nijo_menya_susuru",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26043843/dtlmenu/",
+   "https://prtimes.jp/main/html/rd/p/000000057.000100887.html"
+  ],
+  "why": "Opened 2025-10-16 per the operator's own press release (株式会社エフリード), 定休日 無休. Tabelog 26043843 fetched 2026-08-21 (HTTP 200, iPhone UA) carries visit reviews dated 2026/08 and two from 2026/07, with no 閉店 or 休業 notice; the shop's Instagram posted a reel in April 2026. Explicit open verdict."
  }
 ]
