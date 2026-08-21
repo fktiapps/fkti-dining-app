@@ -102,5 +102,109 @@
   "http": "200 (plain curl, 88.8 KB) on modokimaru.com, desktop UA; the record's own website https://www.yaki-murakami.com/ returned 403 Forbidden (1,026 B server default page) on plain, iPhone and desktop UAs and with and without www; web.archive.org PLAYBACK was 503 'Internet Archive services are temporarily offline' at this run, though its CDX API answered 200; 200 (iPhone UA, 535.5 KB) on s.tabelog.com/hiroshima/A3401/A340112/34030698/",
   "method": "1 plain fetch of the cited blog post; 1+2+3 attempted on the venue's own site (403 on every UA, Wayback playback down); Ecosia (https://www.ecosia.org/search?q=yaki-murakami.com) found the Tabelog id — Ecosia answered first try",
   "note": "The two halves have opposite fates and the field label is on the wrong one. The ramen shime is verbatim on the cited page and is the genuine gluten hazard, so move that sentence to a gf_cross_contamination or menu claim citing this URL. The soy-sauce-and-mirin tare is not on the page and looks like yakitori convention asserted as fact — and here the convention may actually be wrong: this shop reads salt-forward, its shime is a 鶏塩らーめん, and Tabelog's keyword block for it is 鶏塩／鶏スープ／わさび／黄身 with タレ and 醤油 scoring zero across 57 reviews. Either drop the tare sentence or ask the shop. gf: no is still correct on the ramen alone; vegan: no is correct (an all-chicken counter, 10 seats). No tier change. Two housekeeping items: the record's website field https://www.yaki-murakami.com/ 403s on every route I tried and should be replaced with the Tabelog id 34030698 or the shop's Instagram, which the article links; and the cited article is an opening-day report dated 2023-04-08 that says so itself (「オープン初日にお邪魔したので、まだ馴染んでいない感じでした」「メニューはまだ絞ってある感じで、一品メニューは次第に増えていく」) — a three-year-old first-day menu is a weak basis for any current claim. Trading status OK: address 中区立町5-20 matches the article, hours 17:00-23:00, closed Sundays, reviews dated 2026/03, 2026/06 and 2026/07, no 閉店 or 移転 anywhere."
+ },
+ {
+  "id": "hiro_yakigaki_no_hayashi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Oyster dishes are seasoned in the traditional Japanese style (soy sauce, ponzu), which normally contains wheat; no gluten-free seasoning is documented.",
+  "url": "http://www.yakigaki-no-hayashi.co.jp/",
+  "verdict": "wrong_source",
+  "found": "Nothing on the cited root — 醤油 (0 hits) and ポン酢 (0) do not occur on it. The support is on the shop's own menu pages: 「かきおろし … ほどよい酸味の自家製酢醤油で、大根おろしと牡蠣の身を和えました」 and 「牡蠣の甘辛煮 … 濃香な味わいの牡蠣を甘辛く煮た、ご飯が進む一品」 on /menu.html, plus 「はやし特製のタレがたっぷり染み込んだ宮島名物のあなご」 and 「自家製のタレが染み込んだあなご」 on /etc.html.",
+  "correct_url": "https://www.yakigaki-no-hayashi.co.jp/menu.html",
+  "http": "200 (plain curl, 22.4 KB) on the cited http:// root, which 301s to https://www.; 200 on /menu.html (25.7 KB), /etc.html (22.1 KB), /howto.html, /shopinfo.html and /fcblog/ — plain desktop UA throughout, no UA switch or proxy needed",
+  "method": "1 plain fetch of the cited root and then of the four menu/info pages it links; Ecosia (https://www.ecosia.org/search?q=) for the Tabelog trading check — answered first try",
+  "note": "Re-point to /menu.html, where the seasoning is printed. Two corrections while you are there. The seasoning is 酢醤油 (house vinegar-soy), not ポン酢 — ponzu appears nowhere on the site, so drop it or say 酢醤油. Far more important, the record is citing a minor exposure and has missed the shop's real gluten profile, which is on /etc.html and /menu.html and is large: かきフライ 2,100円 and 特選かきフライ (panko), とんかつ定食 2,800円, えびフライ定食 3,200円, かつ丼, 唐揚げ, フライドポテト — all through one fryer — plus かきうどん 1,500円, 天ぷらうどん 1,200円, ざるそば 900円, 天ざるそば 1,900円 and 野菜天ぷら 1,650円. A shop that boils udon and soba and runs a panko fryer is a wheat kitchen, and none of that is in the record. Note ざるそば in a general restaurant is normally wheat-blended, and its つゆ is soy-and-dashi."
+ },
+ {
+  "id": "hiro_yakigaki_no_hayashi",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is an oyster specialty kitchen; effectively all dishes are oyster/seafood based, so there is no separation suitable for vegan diners.",
+  "url": "http://www.yakigaki-no-hayashi.co.jp/",
+  "verdict": "unsupported",
+  "found": "The cited root supports only the first clause — 「広島県・宮島にある牡蠣専門店『焼がきのはやし』」. The operative clause is contradicted by the operator's own その他お品書き page: 「牡蠣や、あなごが苦手な方でもお食事を楽しんでいただけるよう、定食やうどん・おそばなど、多彩なメニューをご用意しております。お子様向けのメニューもございますので、ご家族連れの方にもおすすめです。」 — followed by とんかつ定食, えびフライ定食, かつ丼, 唐揚げ, 天ぷらうどん, ざるそば, グリーンサラダ, 枝豆, フライドポテト, アイスクリーム.",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited root and on /etc.html and /menu.html; desktop UA, no fallback needed",
+  "method": "1 plain fetch of the cited page, then of the site's own 牡蠣お品書き and その他お品書き pages",
+  "note": "The conclusion (vegan: no) is right but the stated reason is false and the shop's own site says so. This is not an oyster-only kitchen: it runs a pork-cutlet, prawn and chicken menu alongside noodles and a children's menu, and it explicitly advertises that for people who dislike oysters and conger. Rewrite the reasoning, because a reader who checks the source will find it contradicted. The correct reason for vegan: no is that the nominally plant items are not vegan in practice — ざるそば and うどん are served with a dashi-based つゆ, 野菜天ぷら batter is egg-and-wheat, and フライドポテト shares the fryer with とんかつ, えびフライ and かきフライ — none of which the record says. Nothing on any page of the site mentions vegan, vegetarian, plant-based or allergen handling."
+ },
+ {
+  "id": "hiro_yakigaki_no_hayashi",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The shop has reportedly conducted norovirus testing on its oysters for about ten years with zero detections, indicating attention to oyster food safety (note: this concerns shellfish safety, not allergen handling).",
+  "url": "http://www.yakigaki-no-hayashi.co.jp/",
+  "verdict": "supported",
+  "found": "「大黒神島周辺の海は水温が安定していて、塩分濃度が高いため牡蠣の育ちも良く、品質も安定しています。自社で10年ほどノロウイルスの検査を行っていますが、一度も検出されたことがありません。」 The menu page puts it slightly higher: 「牡蠣養殖の理想とされる『清浄海域』で採れた地御前牡蠣は、十数年続く検査で一度もウイルスが検出されたことがありません。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 22.4 KB) on the cited root; 200 on /menu.html and /fcblog/",
+  "method": "1 plain fetch of the cited page plus /menu.html for the corroborating wording",
+  "note": "Verbatim on the cited page, and the record's parenthetical caveat is exactly right — this is a shellfish-virus claim and says nothing about gluten or allergens, so it must not be read as a safety signal for either layer. Note the wording is the shop's own unaudited assertion ('自社で' — in-house testing), not third-party certification; keep 'reportedly', which the record already does. The menu page's 十数年 is a slightly stronger figure than the root's 10年ほど if you want the higher number, but keep the citation on whichever page you quote. Trading status OK: /fcblog/ is live with a working 2026年8月 calendar and a 価格改定のお知らせ as its latest post, and Tabelog 34002301 (1,053 reviews) shows no 閉店. One stale-content warning for the record: the root page still displays a 改装工事 notice reading 「2024年1月15日から改装工事に入らせていただきます。3月にリニューアルオープン予定です」 and an obon notice built around 8月14日（水）, i.e. 2024 — the shop reopened, but do not harvest hours or closures from the root's news block. Current hours on the same page: 10:30-17:00 (L.O. 16:30), 廿日市市宮島町505-1."
+ },
+ {
+  "id": "hiro_yakigaki_no_hayashi",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.yakigaki-no-hayashi.co.jp/menu.html",
+   "https://www.yakigaki-no-hayashi.co.jp/etc.html",
+   "http://www.yakigaki-no-hayashi.co.jp/"
+  ],
+  "why": "ask — the house speciality is naturally gluten-free and is not a dish the record's 'no' lets a celiac consider: 焼がき is cooked and served in the shell with nothing added (「大粒の身全体に火が通るよう、細心の注意を払って焼き上げる…殻の中で蒸し焼きにするので旨味が凝縮され」, 2ケ 1,500円), and 生がき is sold year-round (「1年中安心・安全で美味しい生がきをお楽しみいただけます」). Neither has batter, sauce or a shared cooking surface documented. It should not go above ask: the same kitchen boils かきうどん, 天ぷらうどん, ざるそば and 天ざるそば and runs one fryer for かきフライ, とんかつ, えびフライ and 唐揚げ, no allergen handling is documented anywhere on the site, and the sauced oyster dishes (自家製酢醤油の かきおろし, 甘辛煮) do contain soy. 'ask' tells a celiac to order the in-shell oysters and check; 'no' tells them not to come."
+ },
+ {
+  "id": "hiro_yakitori_kakehashi_kanay",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "As a yakitori and izakaya kitchen, grilled skewers, fried items, and the hotpot share seasonings and surfaces built on wheat-containing soy sauce and tare; no gluten-free handling is documented.",
+  "url": "https://y656003.gorp.jp/",
+  "verdict": "wrong_source",
+  "found": "Nothing on the cited page — タレ/たれ (0 hits), 醤油 (0), 揚げ/唐揚 (0) across the whole JSON payload, which describes the opposite: 「備長炭と岩塩で引き出す地鶏の真価」「『土佐備長炭』を用い、熟練の職人が一本一本、丁寧に焼き上げます」. The support is on the shop's Gnavi menu pages: 「はらみ（たれ）500円」 and 「宮崎から送って頂いている濃旨刺身醤油もしくは山葵とお塩で召し上がってください」 and 「せせり（おろしポン酢）550円」 on /menu4/, and 「地鶏 水炊き（〆物はラーメンか雑炊をお選びください。）」／「鶏白湯ラーメン 900円」／「フルーツトマト 醤油麹 800円」 on /menu1/.",
+  "correct_url": "https://r.gnavi.co.jp/m896cfh60000/menu4/",
+  "http": "200 (plain curl, 27.4 KB) on y656003.gorp.jp — the page is a single Gnavi JSON payload, so grep the raw body rather than rendered text; 200 on r.gnavi.co.jp/0001909000/menu4, /menu1 and /menu3, each redirecting to the m896cfh60000 id (111 KB / 108 KB / 152 KB). Desktop UA, no UA switch or proxy needed anywhere",
+  "method": "1 plain fetch of the cited page, then of the three Gnavi menu pages its own JSON links (menu4 焼鳥/串物, menu1 一品料理/水炊き, menu3 コース)",
+  "note": "The claim is broadly true but nothing on the cited URL says any of it, and the cited URL actively says the shop seasons with 岩塩 — so a reader checking the source would conclude the record is wrong. Re-point to the Gnavi menu pages, where tare, sashimi soy sauce and ponzu are all printed. Then fix two details. 'Fried items' is not documented — the only fried thing on the whole menu is 佐々木豆腐の厚揚げ 600円, and no fryer, karaage or tempura appears. And the record has missed the largest gluten exposure in the shop: the 水炊き 〆 is 「ラーメンか雑炊をお選びください」 and 鶏白湯ラーメン is sold separately at 900円 — wheat noodles boiled in the same house broth, which matters far more than the tare. Also worth recording: the grill genuinely does mix salt and tare skewers (ねぎま（塩）, せせり（塩）, 塩つくね（わさび） alongside はらみ（たれ）), so the shared-surface half of the claim stands on menu4."
+ },
+ {
+  "id": "hiro_yakitori_kakehashi_kanay",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Tare and dipping/seasoning sauces for the grilled chicken are based on standard Japanese soy sauce, which contains wheat.",
+  "url": "https://y656003.gorp.jp/",
+  "verdict": "wrong_source",
+  "found": "Not on the cited page (タレ 0 hits, 醤油 0). On the shop's own Gnavi 焼鳥/串物 page: 「はらみ（たれ）500円」, 「せせり（おろしポン酢）550円」 and, for the 地鶏のたたき/お造り, 「宮崎から送って頂いている濃旨刺身醤油もしくは山葵とお塩で召し上がってください」. The same page also states the salt side: 「味の要にはフランス産『ゲランドの塩』を選定」.",
+  "correct_url": "https://r.gnavi.co.jp/m896cfh60000/menu4/",
+  "http": "200 (plain curl) on y656003.gorp.jp and on r.gnavi.co.jp/m896cfh60000/menu4/; desktop UA throughout, no fallback needed",
+  "method": "1 plain fetch of the cited page, then of the Gnavi 焼鳥/串物 menu it links",
+  "note": "True, but sourced to a page that says the opposite emphasis. Move the citation to menu4 and, when you do, add the qualifier the evidence forces: soy sauce here is per-item, not blanket. Tare appears on exactly one skewer in the printed list (はらみ), the shop's stated 味の要 is Guérande salt, and several skewers are sold explicitly as 塩 — ねぎま（塩）650円, せせり（塩）500円, 塩つくね（からし）450円, 塩つくね（わさび）450円. The 刺身醤油 is the firmest soy evidence and it belongs to the raw dishes, not the grill. One nuance for the wheat argument itself: 濃旨刺身醤油 from Miyazaki is usually a sweetened 再仕込み/たまり-style sauce, which may be wheat-brewed or may not — do not state the wheat content as documented; the site does not name a brand."
+ },
+ {
+  "id": "hiro_yakitori_kakehashi_kanay",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is built entirely around chicken, with broths and seasonings of animal/soy origin, so plant-based dishes would share equipment and stocks with meat.",
+  "url": "https://y656003.gorp.jp/",
+  "verdict": "supported",
+  "found": "「焼鳥 かけはし 銀山 - 熟成地鶏の焼鳥と水炊き」; 「全国から厳選した銘柄地鶏を、料理に合わせて使い分けております。焼鳥は…『秋田 比内地鶏』『三重 熊野地鶏』『愛媛 媛っこ地鶏』の3種を。水炊きには…『みやざき地頭鶏』を使用します」; 「鍋の主役を務めるのは…『みやざき地頭鶏』…白濁したスープを纏わせれば」; course lines 「〆は自慢の卵かけご飯」 and 「地鶏お造り」. Corroborated on Gnavi /menu1/: 「4種類の地鶏ガラを長時間炊き上げ、個性が複雑に絡み合う特製スープ」 and 「丸鶏を捌き、骨の髄まで使い切る」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 27.4 KB) on the cited page; 200 on r.gnavi.co.jp/m896cfh60000/menu1/ and /menu3/",
+  "method": "1 plain fetch of the cited page plus its linked Gnavi menu pages for corroboration",
+  "note": "Well supported on the cited page — all five こだわり blocks are about branded jidori, both the grill and the pot are chicken, and the shime is a raw-egg rice bowl. vegan: no is correct. Two precisions. The 'seasonings of…soy origin' clause is not evidenced on the cited page (醤油 scores zero there); it is only evidenced on the Gnavi menu, so either drop that clause or cite menu4. And the phrase 'built entirely around chicken' has two documented exceptions worth naming so the record survives a reader's spot-check: 佐々木豆腐の厚揚げ 600円 and フルーツトマト 醤油麹 800円 on /menu1/ are the only non-chicken items in the shop — both are still off-limits, the tofu because it is deep-fried with no dedicated oil documented and the tomato because 醤油麹 is a wheat-brewed soy ferment, which also makes it a gluten item the gf claims miss."
+ },
+ {
+  "id": "hiro_yakitori_kakehashi_kanay",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://r.gnavi.co.jp/m896cfh60000/menu4/",
+   "https://y656003.gorp.jp/",
+   "https://r.gnavi.co.jp/m896cfh60000/menu1/"
+  ],
+  "why": "ask — the record's 'no' rests on the two soy/tare claims above, and both failed verification against the URL they cite; the cited page instead says the shop's whole method is charcoal and salt (「備長炭と岩塩で引き出す地鶏の真価」, and on Gnavi 「味の要にはフランス産『ゲランドの塩』を選定」). Salt-seasoned skewers are printed as orderable line items — ねぎま（塩）650円, せせり（塩）500円, 塩つくね（わさび）450円, 塩つくね（からし）450円 — against exactly one tare skewer (はらみ（たれ）500円) in the same list, so a celiac has something specific to ask for. It must not go above ask, and the reasons should stay on the record: the grill is shared with the tare skewer, the 水炊き 〆 is 「ラーメンか雑炊」 with 鶏白湯ラーメン also sold at 900円, the raw dishes come with 濃旨刺身醤油, フルーツトマト is dressed in 醤油麹, and the site documents no allergen handling at all. Trading status OK — Gnavi's live availability calendar shows open dates from 2026-08-21 onward, photos updated 2026-04-30, address 中区銀山町11-23 西川ビル2F, 18:00-23:00 closed Sundays."
  }
 ]

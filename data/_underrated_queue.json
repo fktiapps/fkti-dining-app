@@ -241,6 +241,20 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__174",
+  "name": "味農家（みのや）",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.minoyavege.com/",
+   "https://www.minoyavege.com/course.html",
+   "https://www.minoyavege.com/english.html"
+  ],
+  "why": "MILDLY under-rated, with a hard ceiling. The whole menu is a single gluten-free course by design (「お料理はすべてヴィーガン対応・グルテンフリー」), there is no second non-GF course sharing the kitchen, it is reservation-only with nothing pre-batched, and it is cooked by one chef who takes dietary requests in advance — that is documented provision, i.e. 'options', not 'ask'. But it must NOT go above that, because the operator disclaims the safety framing itself: 「なぜグルテンフリーにしているのですか？ アレルギー対応としてではなく、グルテンを外すことで野菜そのものの繊細な味わいをより引き出せると考え、たどり着いた調理法です。」 The GF is culinary, not an allergy protocol; the soy sauce and miso are never specified; and the course page hedges with 「※グルテンフリーにも対応いたします」."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__225",
   "name": "味農家",
   "field": "gf_confidence",
@@ -500,6 +514,34 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_yakigaki_no_hayashi",
+  "name": "焼がきのはやし (Yakigaki no Hayashi)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.yakigaki-no-hayashi.co.jp/menu.html",
+   "https://www.yakigaki-no-hayashi.co.jp/etc.html",
+   "http://www.yakigaki-no-hayashi.co.jp/"
+  ],
+  "why": "ask — the house speciality is naturally gluten-free and is not a dish the record's 'no' lets a celiac consider: 焼がき is cooked and served in the shell with nothing added (「大粒の身全体に火が通るよう、細心の注意を払って焼き上げる…殻の中で蒸し焼きにするので旨味が凝縮され」, 2ケ 1,500円), and 生がき is sold year-round (「1年中安心・安全で美味しい生がきをお楽しみいただけます」). Neither has batter, sauce or a shared cooking surface documented. It should not go above ask: the same kitchen boils かきうどん, 天ぷらうどん, ざるそば and 天ざるそば and runs one fryer for かきフライ, とんかつ, えびフライ and 唐揚げ, no allergen handling is documented anywhere on the site, and the sauced oyster dishes (自家製酢醤油の かきおろし, 甘辛煮) do contain soy. 'ask' tells a celiac to order the in-shell oysters and check; 'no' tells them not to come."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yakitori_kakehashi_kanay",
+  "name": "焼鳥かけはし 銀山 (Yakitori Kakehashi Kanayama)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://r.gnavi.co.jp/m896cfh60000/menu4/",
+   "https://y656003.gorp.jp/",
+   "https://r.gnavi.co.jp/m896cfh60000/menu1/"
+  ],
+  "why": "ask — the record's 'no' rests on the two soy/tare claims above, and both failed verification against the URL they cite; the cited page instead says the shop's whole method is charcoal and salt (「備長炭と岩塩で引き出す地鶏の真価」, and on Gnavi 「味の要にはフランス産『ゲランドの塩』を選定」). Salt-seasoned skewers are printed as orderable line items — ねぎま（塩）650円, せせり（塩）500円, 塩つくね（わさび）450円, 塩つくね（からし）450円 — against exactly one tare skewer (はらみ（たれ）500円) in the same list, so a celiac has something specific to ask for. It must not go above ask, and the reasons should stay on the record: the grill is shared with the tare skewer, the 水炊き 〆 is 「ラーメンか雑炊」 with 鶏白湯ラーメン also sold at 900円, the raw dishes come with 濃旨刺身醤油, フルーツトマト is dressed in 醤油麹, and the site documents no allergen handling at all. Trading status OK — Gnavi's live availability calendar shows open dates from 2026-08-21 onward, photos updated 2026-04-30, address 中区銀山町11-23 西川ビル2F, 18:00-23:00 closed Sundays."
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_yamadaya_miyajima_honten",
   "name": "やまだ屋 宮島本店 (Yamadaya Miyajima Honten)",
   "field": "gf_confidence",
@@ -524,6 +566,19 @@
    "https://momiji-yamadaya.co.jp/tenpo/"
   ],
   "why": "limited — 富久者有智(ふくわうち) is 「砂糖（国内製造）、小豆、きな粉（大豆）、水飴／着色料（紅麹、クチナシ）」, an entirely plant-based own-brand 和菓子 sold under やまだ屋銘菓, with 「アレルギー物質（特定原材料） -」. Exactly one item out of roughly 45 and the shop makes no vegan claim, so 'limited' rather than 'options'; but 'no' is contradicted by the operator's own ingredient line. Everything else carries 卵 and/or 乳 (ふわもち桜 adds はちみつ), and /tenpo/ warns 「店舗によってお取扱い商品が異なる場合がございます」, so the detail text should name the one item and say stock varies by store."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yamashiroya",
+  "name": "山代屋 (Yamashiroya)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/hiroshima/A3402/A340202/34017418/",
+   "https://tabelog.com/hiroshima/A3402/A340202/34017418/dtlrvwlst/"
+  ],
+  "why": "ask — the record's 'no' is argued entirely from the two wheat dishes (anagomeshi tare, udon) and never accounts for what else is on the menu. Tabelog's 口コミに含まれるメニュー list for this shop includes 焼きがき(2) and 焼き牡蠿(2), and a 2026/05 diner writes 「注文したのは焼きガキと日本酒『幻』です」 — oysters grilled in the shell need no batter and no sauce — plus かき氷(3), a shaved ice. That is the same reasoning this sweep already accepted for hiro_kakiya (r61, no → ask). It is a weaker case than Kakiya's, because Kakiya is oyster-only while this kitchen simultaneously boils wheat udon and brushes a tare, and there is no operator statement about allergens at all — which is precisely why 'ask' and not 'options' is the ceiling. 'no' currently tells a celiac at the Karamon gate that there is nothing orderable, and the shop's own review record says otherwise."
  },
  {
   "city": "kanazawa",
@@ -552,18 +607,6 @@
  },
  {
   "city": "kanazawa",
-  "id": "kz_cafe_yasuecho_jardin",
-  "name": "カフェ 安江町ジャルダン (Cafe Yasuecho Jardin)",
-  "field": "gf_confidence",
-  "current": "no",
-  "recommended": "ask",
-  "evidence": [
-   "https://www.weekend-kanazawa.com/entry/yasuechojardin"
-  ],
-  "why": "ask — the record calls the venue wheat-centric on the strength of a pancake it does not serve. The article publishes the full four-ingredient list of the 宝達くずミルクプリン (宝達葛, きび砂糖, 牛乳, 生クリーム, topped きな粉+黒蜜) — every one wheat-free — made to order in 20 minutes by a hands-on owner who tastes and approves each item. That is exactly an 'ask' situation, not a 'no'. Caveat for the human gate: scones are baked to order in the same small machiya kitchen, so airborne flour is a live risk and must stay in gf_detail."
- },
- {
-  "city": "kanazawa",
   "id": "kz_fruit_murahata_honten",
   "name": "フルーツむらはた 本店 (Fruit Murahata Honten)",
   "field": "gf_confidence",
@@ -574,6 +617,68 @@
    "https://www.murahata.co.jp/kanazawa-parfait/"
   ],
   "why": "The published menu is not wheat-free but it is not wheat-only either: 「◎まるごと夕張メロン 2,500円」「■フルーツごろごろジュレMIX 648円」「◎シャインマスカットソーダ 700円」「◎水蜜桃ヨーグルト」 are whole fruit, jelly, soda and yoghurt items that contain no wheat by construction, sold beside the ワッフル/タルト items. 'no' reads as 'nothing here is safe', which is wrong for a fruit parlour; 'ask' is honest because the company publishes no allergen policy anywhere on its site."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_genzaemon_katamachi_ten",
+  "name": "源左ェ門 片町店 (Genzaemon Katamachi-ten)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://r796201.gorp.jp/"
+  ],
+  "why": "The record's only stated reason for 'no' is factually wrong about this shop: it cites soy-seasoned jibuni and grilled fish, but the menu carries 「のどぐろ塩焼き」 (salt-grilled) and 「刺身盛合わせ」 alongside 「岩ガキ、香箱カニ、ズワイガニなど旬の食材」 — sashimi, salt-grilled fish and raw shellfish are wheat-free as served if soy sauce is declined. Real wheat risk remains (能登牛のすき焼き in the courses, 煮物, an undocumented blackboard menu) and the shop publishes no allergen policy, so 'ask' rather than any higher tier."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_indomeshi_tirupati",
+  "name": "インドめし ティルパティ (Indomeshi Tirupati)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.indomeshi.com/menu",
+   "https://kaname-kanazawa.com/tirupati/"
+  ],
+  "why": "A flat 'Not gluten-free' rests on the record's claim that no GF handling is documented; that is now false. The shop tags six named curries (ダールマッカーニ, ベジタブルカレー, アルパラック, パラックパニール, パラックチーズ, ビンディパニールマサラ) 「グルテンフリー」 on its own menu, and sells サフランライス separately — a real, orderable plate for a coeliac to enquire about. This is a recommendation to 'ask', explicitly NOT above it, because the same badge sits on ベジタブルランチ and ベジタブルセット whose printed contents are 大きいナン, サモサ and 野菜の天ぷら: the shop's GF judgement cannot be taken at face value, and it bakes naan in a tandoor all service. 'no', though, tells a coeliac not to bother enquiring about the one set of dishes here that might actually work."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kanazawa_omicho_ichiba_m",
+  "name": "金沢近江町市場 みやむら (Kanazawa Omicho Ichiba Miyamura)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "options",
+  "evidence": [
+   "https://ohmicho-ichiba.com/fish/shop11301/"
+  ],
+  "why": "This is a retail fishmonger, not a kitchen, and its own listing documents whole crab boiled in nothing but 天然の塩 and 浄化水 plus raw 甘えび/白がすえび/しまえび sold as fresh seafood — naturally gluten-free purchases with no wheat step. The only wheat is the house-made kabayaki tare on the eel and loach, which is a separate product line. 'no' currently warns a celiac away from a counter that sells them plain boiled crab."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kanazawaya_coffee_ten_om",
+  "name": "金澤屋珈琲店 近江町市場店 (Kanazawaya Coffee Ten Omicho Ichiba-ten)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "options",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17005545/",
+   "https://www.krf.co.jp/"
+  ],
+  "why": "The record's own positives text says a plain hand-dripped or iced coffee here is a low-risk gluten-free choice, and the Tabelog listing (ジャンル 喫茶店, hand-dripped coffee confirmed by a 2026/01 reviewer, coffee beans sold) shows the core product is exactly that. A gf tier of 'no' contradicts the record's own detail text and warns celiacs off black coffee. 'options' with the caveat that the shop also sells 焼き菓子/ケーキ is the accurate reading."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kanazawaya_coffee_ten_om",
+  "name": "金澤屋珈琲店 近江町市場店 (Kanazawaya Coffee Ten Omicho Ichiba-ten)",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "limited",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17005545/"
+  ],
+  "why": "Plain black drip coffee and iced coffee are documented here and are unambiguously plant-based, so there is nothing for a vegan to ask about before ordering one; 'ask' overstates the uncertainty. 'limited' is the honest tier — a vegan can drink here, but no plant milk is documented, and every reviewer photo is of a dairy latte."
  },
  {
   "city": "kanazawa",
@@ -590,6 +695,43 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_kincharyo_honten",
+  "name": "金茶寮 本店 (Kincharyo Honten)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://kincharyou.co.jp/cuisine/",
+   "https://kincharyou.co.jp/news/"
+  ],
+  "why": "ask — the record is internally inconsistent: it awards vegan_status 'ask' on the reasoning that 'a plant-based course might be arranged if requested well ahead', then awards gf_confidence 'no' on exactly the same facts. The page documents the mechanism for both — 「離れのお部屋は一名様から二〇名様まで承っております」 and 「人数、内容の変更は三日前の正午までにご連絡お願い致します」 — a made-to-order kaiseki in a detached private room that accepts content changes three days out. 'ask' is the correct tier for a place with no GF programme but a real advance-request channel; 'no' should be reserved for kitchens where the answer cannot change. Not higher than 'ask': no allergen information is published anywhere on the site, soy-sauce preparations (土佐煮, 柚庵焼き) are on the standard bento, and /news/ advertises お座敷天婦羅."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_morihachi_saryo_omicho",
+  "name": "森八茶寮 近江町 (Morihachi Saryo Omicho)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://morihachi.net/menu/"
+  ],
+  "why": "The published 茶寮 menu runs to sixteen items and exactly one of them is a wheat food (the どら焼き in the coffee set, which the page itself says may be substituted). Everything else is agar, kudzu, bean or rice based: ところてん, 豆かん, くずきり, あんみつ, 黒羊羹「玄」, 上生菓子, かき氷 with house syrup, アイス餡添. Labelling this 'no' with 'Not suitable for celiacs' warns a reader off a tea salon that is naturally almost entirely wheat-free; the actual problem is that no allergen protocol is published anywhere, which is what 'ask' says."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_morihachi_saryo_omicho",
+  "name": "森八茶寮 近江町 (Morihachi Saryo Omicho)",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://morihachi.net/menu/"
+  ],
+  "why": "Four items are plant-based as ordinarily made and are listed by name with prices: ところてん 850円, 豆かん 850円, くずきり 900円, あんみつ 1,100円 - and the dairy version is separately listed as クリームあんみつ, so the plain one is not ambiguous. The sweetener used throughout is 黒蜜 / 森八特製の蜜 (sugar syrup), not honey. A named, orderable set of plant-based items is what 'options' describes."
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_omicho_shokudo",
   "name": "近江町食堂 (Omicho Shokudo)",
   "field": "gf_confidence",
@@ -600,5 +742,20 @@
    "https://www.ohmicho-syokudo.com/menu.html"
   ],
   "why": "gf_detail asserts 'no gluten-free menu, dedicated preparation, or allergen handling is documented', but the operator's own takeout page states 「※アレルギー対応が可能ですので、ご要望のある方はご相談ください。」 — allergy accommodation on request. That is documented allergen handling (scoped to pre-ordered オードブル platters), and the menu carries naturally GF anchors (刺身盛り合わせ, のどぐろ塩焼き, 金時草の酢の物). The wheat load is real (tempura, tonkatsu, うどん, 生麩田楽, one likely shared fryer), so this is 'ask and pre-arrange', not 'high' — but a flat 'no' both misstates the page and overstates the closure of the door."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_rakugan_moroeya_nishicha",
+  "name": "落雁諸江屋 西茶屋菓寮 味和以 (Rakugan Moroeya Nishichaya Karyo Ajiwai)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://moroeya.co.jp/news/summer-menu/",
+   "https://moroeya.net/?pid=23984687",
+   "https://moroeya.net/?pid=159296586",
+   "https://moroeya.net/?pid=7630852"
+  ],
+  "why": "gf_detail rests on 'no allergen information or cross-contact controls are published', and the first half is simply wrong — Moroeya publishes a per-item 【アレルギー表示】 (塩どら焼 「小麦・卵・乳・山芋」; しょうゆ落がん 「醤油に小麦、大豆を含みます。」; 十二ヶ月 and 加州香 「なし」), which is exactly the information a celiac needs to choose. On top of that the branch's own published café menu contains no wheat item at all: three かき氷, three 冷やし寒天, 白小豆ぜんざい with 白玉, 白ゴマしるこ, and 生菓子/干菓子 with matcha. That is a documented set of gluten-free-by-ingredient options, i.e. 'options'. It is not higher: the shop bakes どら焼 and ぼうろ on the same premises, publishes no cross-contact statement, and the 生菓子 rotates (栗きんとん from September), so a celiac must still confirm the day's namagashi."
  }
 ]

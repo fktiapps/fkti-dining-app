@@ -1,0 +1,41 @@
+[
+ {
+  "id": "kz_turban_curry_sohonten",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Curry roux is wheat-flour based and the signature toppings are breaded/fried cutlets and croquettes, so wheat is pervasive throughout the kitchen.",
+  "url": "https://r266500.gorp.jp/",
+  "verdict": "wrong_source",
+  "found": "Gnavi page carries the cutlet/roux half only: 「『金沢カレー』とは…濃厚でどろっとした黒いルーが特徴のカレー！代表的なメニューがロースカツカレー。」 and 「お客様にアツアツ揚げたてをお召し上がりいただけるよう、ご注文を頂いてから心をこめて作っております。」 It never says the roux is wheat-flour based and never mentions a croquette. The croquette half is on the operator's own menu page: 「クリームコロッケカレー ホワイトソースから作る玉ねぎたっぷりの自家製クリームコロッケ。」 plus ロースカツ/チキンカツ/エビフライ.",
+  "correct_url": "http://www.turbancurry.com/product.html",
+  "http": "200 (gorp.jp, iPhone UA); 200 (turbancurry.com plain); turbancurry.com/menu 404 — the menu lives at /product.html",
+  "method": "1 plain fetch (both hosts); no proxy or archive needed",
+  "note": "Claim is true but half-cited: add http://www.turbancurry.com/product.html, whose クリームコロッケ「ホワイトソースから作る」 evidences both the croquette and a flour-thickened white sauce. Neither page states the curry roux itself contains wheat flour — soften that to 'thick dark roux, wheat flour not declared' or cite an allergen source."
+ },
+ {
+  "id": "kz_turban_curry_sohonten",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is centered on pork cutlet, sausage, hamburg steak and a meat-stock roux; no plant-based items are documented.",
+  "url": "https://r266500.gorp.jp/",
+  "verdict": "unsupported",
+  "found": "The cited page documents a vegetable curry in its own こだわり block: 「【季節限定メニュー】金沢の伝統野菜「加賀野菜」を使ったオリジナルカレーが味わえます。秋から春にかけては、加賀れんこんと五郎島金時の天ぷらを盛り付けた野菜好きのためのカレー。野菜が好きな方や健康志向の方におすすめのメニューです。」 The operator's menu page adds 野菜玉子カレー. The page also never says the roux is meat-stock based.",
+  "correct_url": null,
+  "http": "200 (gorp.jp, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "'No plant-based items are documented' is contradicted by the cited page itself, which advertises a seasonal Kaga-vegetable curry (renkon + Gorojima sweet-potato tempura). vegan_status 'no' still stands — the same dark roux and wheat tempura batter are shared — but reword to 'a seasonal vegetable curry exists, but on the shared meat-stock-style roux'. Separately: gorp and the official site both give hours as 11:00–20:00 (L.O. 19:30) 年中無休, while the record carries 11:00-21:00 (L.O. 20:30)."
+ },
+ {
+  "id": "kz_uouma",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "House sushi soy sauce is blended on a Kanazawa Ohno shoyu base; conventional Japanese soy sauce contains wheat.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop70701/",
+  "verdict": "supported",
+  "found": "「地魚、旬の魚を中心に扱い、「地産地消」と推進するべく奥能登のこしひかりを名水\"白山霊水\"で焚き上げ、旧鶴来町の純米酢で合わせたシャリを、金沢大野醤油をベースに合わせた寿し醤油でお出ししています。米・酢・水・醤油の全て地物で作るバランスの良いお寿司をお召し上がっていただけます。」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "Venue-specific half is verbatim on the cited page. Ohno shoyu is koikuchi (wheat-brewed), so the wheat inference is correct; the page itself says nothing about wheat or allergens, which is fine for a 'no' rating. Page is live and lists the shop as trading (11:00頃～16:00頃, 不定休)."
+ }
+]

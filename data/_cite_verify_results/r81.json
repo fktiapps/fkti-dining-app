@@ -1,0 +1,110 @@
+[
+ {
+  "id": "kz_kusuriya_cafe",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Menu is built around vegetable-forward seasonal soups, soy-milk potages, rice, pickles and herbal teas, so plant-based and lighter dishes are part of the regular offering.",
+  "url": "https://www.weekend-kanazawa.com/entry/kusuriya-cafe",
+  "verdict": "unsupported",
+  "found": "Cited page: 「季節の薬膳スープランチ」（1,200円）… 月替わりのメニューで、この日は「カブと里芋のミネストローネ」… 塩のみで味付けし / 「カボチャの豆乳ポタージュ」にはシナモンをひとさじ / 「薬膳スパイスケーキ」（500円）… 「ローズレーズンティー」（650円）。米・ごはん・漬物・佃煮 appear NOWHERE on the page (grep: 米=0, 漬物=0, 佃煮=0).",
+  "correct_url": "https://kusuriyac.amebaownd.com/",
+  "http": "200 (plain curl, first try) for the cited page; 200 (iPhone UA) for kusuriyac.amebaownd.com. Engines: Ecosia 403 bot-wall, Brave 429 captcha, DuckDuckGo-lite captcha, Bing 200 but returned unrelated ad-industry spam; Yahoo Japan 200 and was the only engine that answered.",
+  "method": "plain fetch of cited page + plain/iPhone-UA fetch of the operator site + Yahoo Japan",
+  "note": "TWO defects. (1) The rice-and-pickles half is not on the cited page at all; it is on the operator's own site: 「・ごはん（石川県産）・自家製つくだにと漬け物」. Re-cite https://kusuriyac.amebaownd.com/. (2) Worse, that same official page shows the monthly soup lunch is routinely NOT plant-based: Sep 2022 「トウガンときのこの中華風スープ」contains 豚肉 plus 杏仁豆腐; Aug 2022 dessert is 「ヨーグルトのはちみつきな粉かけ」 (yogurt AND honey); Nov 2020 「ぽかぽかサムゲタン風スープ」contains 鶏肉. The inference that plant-based dishes are the regular offering is contradicted by the operator in 3 of the 3 set menus it publishes."
+ },
+ {
+  "id": "kz_kusuriya_cafe",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "ask",
+  "evidence": ["https://kusuriyac.amebaownd.com/", "https://www.weekend-kanazawa.com/entry/kusuriya-cafe"],
+  "why": "The cafe publishes one set lunch per month and every set it has published contains an animal product: pork in the Sept 2022 winter-melon soup, chicken in the Nov 2020 samgyetang-style soup, and yogurt with honey as the Aug 2022 dessert. 'Some vegan options' overstates a menu whose single main dish is animal-based by default; the record's own vegan_detail already tells the reader to confirm the soup base on the day, which is what 'ask' means."
+ },
+ {
+  "id": "kz_lawrence_junkissa_lauren",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "The core offering is simply brewed black coffee served without sugar or milk, which is inherently plant-based and free of common food allergens.",
+  "url": "https://arnon.jp/lawrence/",
+  "verdict": "unsupported",
+  "found": "「スペシャルホットコーヒー(450円) を２つオーダー。このお店はフードメニューというものがなく、サービスでお菓子が付いてくる程度。まさに純純喫茶といった趣である。」「更にいうと砂糖やミルクなるものも付いてこない。」",
+  "correct_url": null,
+  "http": "200 (plain curl) for arnon.jp; 200 for the Tabelog detail page via s.tabelog.com with an iPhone UA",
+  "method": "plain fetch + mobile-host Tabelog fetch for the trading check",
+  "note": "The 'black coffee, no sugar or milk' half is verbatim on the page. The safety half is contradicted by the sentence immediately before it on the same page: 「サービスでお菓子が付いてくる」 - an unlabelled complimentary confection arrives with every coffee. 'Free of common food allergens' is a false assurance; rewrite as 'the coffee itself is plain, but an unlabelled free sweet is served alongside - decline or ask'. Tabelog's own keyword cloud for the shop also lists お菓子・ココア・レモンティ. Trading status OK: no 【閉店】 marker on Tabelog, 営業時間 15:00-19:00, 20 seats, オープン日 1966年5月5日."
+ },
+ {
+  "id": "kz_le_mars",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Reservations (ideally the previous day) are encouraged and can be made by phone or via Facebook/Instagram direct message, which gives diners a chance to discuss requests in advance.",
+  "url": "https://www.lemars2005.com/",
+  "verdict": "supported",
+  "found": "「なるべく前日までのご予約をお願いしております。自動音声予約は受け付けておりません。ご了承ください。フェイスブックやインスタグラムのダイレクトメッセージでもご予約を受け付けておりますので、そちらもご利用ください。」 plus Tel 076(262)5343 in the site header.",
+  "correct_url": null,
+  "http": "200 (plain curl, desktop UA). This is a Wix site but it serves its body text in the initial HTML, so no JSON/__NEXT_DATA__ fallback was needed.",
+  "method": "plain fetch",
+  "note": "Clean. One nuance: 'gives diners a chance to discuss requests in advance' is the record's own inference - the site never mentions dietary accommodation, and its self-description is 「シュークルートやカスレなどフランスの田舎料理と一緒にフランスワインやベルギービールをお楽しみいただけます」, i.e. wheat beer and flour-thickened stews. Do not let the reservation line read as an allergy-accommodation promise. Site is live and actively maintained (current 営業についてのお知らせ block, lunch 12:00-13:30 LO, dinner 18:00-21:00 LO)."
+ },
+ {
+  "id": "kz_morihachi_saryo_omicho",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "A wagashi-focused tea salon where flour-, wheat-, and bean-based sweets share preparation and plating; no gluten-free protocol is documented and cross-contact should be assumed.",
+  "url": "https://morihachi.net/menu/",
+  "verdict": "supported",
+  "found": "The 茶寮メニュー lists exactly one overt wheat item - 「コーヒー・お菓子セット もち皮 どら焼き「宝達」をコーヒーのお供にどうぞ ※セットのお菓子は変更になることがございます 810円」 - beside bean sweets 「お抹茶・黒羊羹「玄」セット」「豆かん」「あんみつ」「ぜんざい」. grep of the page: アレルギー=0, 小麦=0, グルテン=0, 卵=0, 乳=0, i.e. no allergen information of any kind.",
+  "correct_url": null,
+  "http": "200 (plain curl, desktop UA). https://morihachi.net/shop/ is 404; the store list lives at https://morihachi.net/info/ (200).",
+  "method": "plain fetch + Yahoo Japan, used to confirm the Omicho branch really is a tea salon rather than a retail counter",
+  "note": "The documented-absence half is solid - the page carries zero allergen text. 'Share preparation and plating' is the record's inference, not a documented fact; soften that wording. Branch check PASSED: Tabelog lists 森八 茶寮 近江町 at 石川県金沢市下堤町17-1, 「近江町市場に隣接した和風喫茶」, matching this record's coordinates, so this is not a sibling-branch citation even though morihachi.net's footer address is the Otemachi honten and 森八茶寮/info lists a 茶寮 only under 森八 本店."
+ },
+ {
+  "id": "kz_morihachi_saryo_omicho",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Menu mixes plant-based wagashi (an, mochi, kanten, kuzukiri) with dairy/egg items (kakigori toppings, dorayaki, certain confections); no vegan labeling, so cross-contact and hidden animal ingredients are possible.",
+  "url": "https://morihachi.net/menu/",
+  "verdict": "moved",
+  "found": "Plant-based side: 「ところてん」「豆かん」「くずきり」「あんみつ」「お抹茶・上生菓子セット」. Animal side: 「アイス 餡添（バニラ）」「アイス 餡添（抹茶）」「クリームあんみつ」 and 「どら焼き「宝達」」. The kakigori entries read 「かき氷　能登産ブルーベリー / かき氷　宇治抹茶 - 金沢氷室を使用した滑らかな口どけと森八特製の蜜でお召し上がり下さい」.",
+  "correct_url": null,
+  "http": "200 (plain curl, desktop UA)",
+  "method": "plain fetch",
+  "note": "FALSE WARNING to fix. The shaved ice is not a dairy item: both kakigori are dressed with 森八特製の蜜 (house syrup) and nothing else - no cream, no ice cream, no condensed milk appears in either entry. The genuinely animal items are the two 「アイス 餡添」 and 「クリームあんみつ」, all three named as such, plus egg-and-wheat どら焼き. Swap 'kakigori toppings' for those so a vegan is not steered away from a syrup-only shaved ice."
+ },
+ {
+  "id": "kz_morihachi_saryo_omicho",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Picture menu and clearly priced matcha-and-sweet sets make ordering straightforward; many traditional offerings (matcha, an-based and agar sweets) are incidentally plant-based.",
+  "url": "https://morihachi.net/menu/",
+  "verdict": "supported",
+  "found": "「お抹茶・上生菓子セット 季節によって変わる上生菓子とお抹茶のセットは当店１番人気 950円」「加賀献上棒茶・上生菓子セット 950円」「お煎茶・上生菓子セット 950円」「冷抹茶・上生菓子セット 1,000円」「表示は全て税込価格です。」; the page carries 23 <img> elements, i.e. a photo per item.",
+  "correct_url": null,
+  "http": "200 (plain curl, desktop UA)",
+  "method": "plain fetch",
+  "note": "Accurate as written."
+ },
+ {
+  "id": "kz_morihachi_saryo_omicho",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": ["https://morihachi.net/menu/"],
+  "why": "The published 茶寮 menu runs to sixteen items and exactly one of them is a wheat food (the どら焼き in the coffee set, which the page itself says may be substituted). Everything else is agar, kudzu, bean or rice based: ところてん, 豆かん, くずきり, あんみつ, 黒羊羹「玄」, 上生菓子, かき氷 with house syrup, アイス餡添. Labelling this 'no' with 'Not suitable for celiacs' warns a reader off a tea salon that is naturally almost entirely wheat-free; the actual problem is that no allergen protocol is published anywhere, which is what 'ask' says."
+ },
+ {
+  "id": "kz_morihachi_saryo_omicho",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": ["https://morihachi.net/menu/"],
+  "why": "Four items are plant-based as ordinarily made and are listed by name with prices: ところてん 850円, 豆かん 850円, くずきり 900円, あんみつ 1,100円 - and the dairy version is separately listed as クリームあんみつ, so the plain one is not ambiguous. The sweetener used throughout is 黒蜜 / 森八特製の蜜 (sugar syrup), not honey. A named, orderable set of plant-based items is what 'options' describes."
+ }
+]

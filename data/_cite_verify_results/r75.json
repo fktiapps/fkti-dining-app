@@ -77,5 +77,81 @@
   "http": "200 (plain curl) on cited page and parent listing",
   "method": "1 plain fetch",
   "note": "The conclusion holds: conger eel, oysters, yellowtail, moray eel and a clear 吸い物 are all on the cited page, so no plant-only order is available. But two of the four named items are NOT on the cited page — 卵 and 出汁/だし return zero hits there; the egg evidence (牡蠿丼の卵とじ) is on the parent listing 34007695/, which is also the record's website field, so citing the parent would make every element checkable. Trading status OK: no 閉店 banner, hours 「[月]10:00-14:00 [火]10:00-14:00 [水]定休日 [木]定休日 [金][土][日]10:00-14:00」 matching the record exactly, address 広島県廃日市市宮島町藤の棚公園内, most recent 口コミ 2025/03 across 19 reviews. gf 'no' and vegan 'no' are both correct — no tier change."
+ },
+ {
+  "id": "hiro_yamashiroya",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Anago is finished with a wheat-based soy-sauce tare and udon is a wheat noodle, so gluten is present throughout the core menu; no GF handling is documented.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34017418/",
+  "verdict": "supported",
+  "found": "ジャンル「あなご、うどん、海鮮」（udon is one of the shop's three registered genres）; keyword block 「焼き牡蠿／あなごめし／穴子丼／吸い物／肉うどん」; 口コミに含まれるメニュー 「あなごめし(5)、釜玉うどん(4)、かき氷(3)、焼きがき(2)」; 2026/05 review 「創業以来継ぎ足してきたタレで焼かれているらしい」; 2023/12 review 「肉うどん美味しかったなぁー 出汁も甘めでうどんはやや細め。穴子丼も甘めのタレでおいしい！」",
+  "correct_url": null,
+  "http": "200 (plain curl, 213 KB) on the cited listing; 200 (plain curl, 366 KB) on /dtlrvwlst/",
+  "method": "1 plain fetch of the cited page, plus the review list for the tare and udon quotes",
+  "note": "The conclusion is sound and the udon half is now hard-sourced: うどん is one of the shop's three Tabelog genres, 肉うどん and 釜玉うどん are named menu items, and 釜玉 also means raw egg. Two corrections to the wording. (a) 'wheat-based soy-sauce tare' — the tare is documented (創業以来継ぎ足してきたタレ, 甘めのタレ) but its COMPOSITION is not: 醤油 and しょうゆ return zero hits across the listing and the review list, so 'soy-sauce' is the record's inference. (b) The shop opened in 2004 as a 蕃麦専門店 and a reviewer states 「2009年にあなごめし&牡蠣、うどん等を提供する和食店へ転換されました。今、蕎麦はメニューにありません。」 — no soba on the current menu, so do not add a buckwheat clause."
+ },
+ {
+  "id": "hiro_yamashiroya",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The anagomeshi glaze/seasoning is soy-sauce based, which in Japan is typically brewed with wheat.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34017418/",
+  "verdict": "unsupported",
+  "found": "醤油 0 hits, しょうゆ 0 hits, だし/出汁 0 hits on the cited listing (出汁 appears only in a review on /dtlrvwlst/, about the udon broth). What the page does carry is タレ without composition: 「個性派タレのあなごめし」 (review title) and 「創業以来継ぎ足してきたタレで焼かれているらしい。タレも割とあっさり薄味だから、卓上の山椒をかけるとグレード…」",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited listing and on /dtlrvwlst/",
+  "method": "1 plain fetch + whole-page string search for 醤油/しょうゆ/たれ/タレ on both pages",
+  "note": "Same defect as the sibling Miyajima records: the tare exists on the page, its being soy-sauce-based does not. One reviewer explicitly calls this shop's tare 'individualistic' (個性派タレ) and another calls it あっさり薄味 — not the standard sweet-dark anago tsume — and Tabelog's keyword list for this shop includes ワインビネガー, so assuming a conventional soy-sauce reduction here is less safe than usual, not more. Keep the gluten warning (the udon alone carries it) but reword the tare clause as an assumption, or ask the shop."
+ },
+ {
+  "id": "hiro_yamashiroya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen centers on conger eel and oysters; no vegan-safe preparation indicated.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34017418/",
+  "verdict": "supported",
+  "found": "ジャンル「あなご、うどん、海鮮」; keyword block leads with 焼き牡蠿、あなごめし、穴子、穴子丼、ぶり、たらこ、吸い物; 口コミメニュー 焼きがき(2)、焼き牡蠿(2)、釜玉うどん(4). Nothing on the page mentions vegetarian, vegan, 植物性 or a meat-free set.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Supported as written. Two animal vectors the vegan_detail should add because they are on the page: 釜玉うどん is raw EGG over hot udon (the record mentions eggs nowhere for this venue), and たらこ (cod roe) and ぶり (yellowtail) appear in the keyword block. Trading status OK: no 閉店 banner — the only 閉店/移転 strings on the page are Tabelog's standard 「閉店・休業・移転・重複の報告」 footer link; address 広島県廃日市市宮島町102, hours 11:00-16:00 daily with 「※売り切り次第終了する場合もあります」 — both match the record verbatim; 78 reviews, most recent 2026/05."
+ },
+ {
+  "id": "hiro_yamashiroya",
+  "city": "hiroshima",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/hiroshima/A3402/A340202/34017418/",
+   "https://tabelog.com/hiroshima/A3402/A340202/34017418/dtlrvwlst/"
+  ],
+  "why": "ask — the record's 'no' is argued entirely from the two wheat dishes (anagomeshi tare, udon) and never accounts for what else is on the menu. Tabelog's 口コミに含まれるメニュー list for this shop includes 焼きがき(2) and 焼き牡蠿(2), and a 2026/05 diner writes 「注文したのは焼きガキと日本酒『幻』です」 — oysters grilled in the shell need no batter and no sauce — plus かき氷(3), a shaved ice. That is the same reasoning this sweep already accepted for hiro_kakiya (r61, no → ask). It is a weaker case than Kakiya's, because Kakiya is oyster-only while this kitchen simultaneously boils wheat udon and brushes a tare, and there is no operator statement about allergens at all — which is precisely why 'ask' and not 'options' is the ceiling. 'no' currently tells a celiac at the Karamon gate that there is nothing orderable, and the shop's own review record says otherwise."
+ },
+ {
+  "id": "hiro_yoshizushi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Edomae nigiri is conventionally brushed with nikiri (a wheat-based soy sauce reduction); no gluten-free soy sauce is documented for this restaurant.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340113/34016480/",
+  "verdict": "unsupported",
+  "found": "煮切/ニキリ/にきり return ZERO hits on the cited page and zero on the shop's own site. What the page does carry: keyword block 「穴子、トリュフ、シャリ、昆布、江戸前、赤酢、炋り、梅肉、コハダ、酢味噌、昆布締め、白焼、生姜醤油」 and the operator's own copy 「“その日のベスト”を尽くし提供する寿司は、素材の良さを最大限に引き出せるよう、江戸前の技法を駆使し、おまかせコースのみでご用意しております」 and 「江戸前の〆める・漬ける・ねかせるなど、丁寧な仕事でお寿司を味わっていただけます」 (shop's official gorp page).",
+  "correct_url": null,
+  "http": "200 (plain curl, 210 KB) on tabelog.com/.../34016480/; 200 (plain curl, 10 KB) on y996200.gorp.jp/ — gorp serves a __NEXT_DATA__-style JSON blob inline, so the copy is readable without JS rendering",
+  "method": "1 plain fetch of both; no UA switch, proxy, Wayback or search engine needed at this run",
+  "note": "The claim's mechanism is genre convention written as if sourced — nikiri is nowhere on the cited page. Replace it with three wheat vectors the page and the shop's own site DO document, which are stronger: (1) 生姜醤油 (ginger soy sauce) is in Tabelog's keyword list, i.e. diners record soy sauce actually being served here; (2) 酢味噌 (vinegared miso) and 穴子 (anago, conventionally finished with a soy tsume) are also in it; (3) the operator states 「漬ける」 (marinating) as a core technique and sells おまかせコースのみ at 22,000-33,000 yen — omakase-only means a celiac cannot decline individual pieces, which is the real reason gf 'no' is right and should be in gf_detail. 'No gluten-free soy sauce is documented' is a correct absence claim: アレル / グルテン return zero hits on both pages."
+ },
+ {
+  "id": "hiro_yoshizushi",
+  "city": "hiroshima",
+  "kind": "trading",
+  "status": "open_relocated",
+  "evidence": [
+   "https://tabelog.com/hiroshima/A3401/A340113/34016480/",
+   "https://y996200.gorp.jp/"
+  ],
+  "why": "Not closed — flagged only so the relocation is on the record. Tabelog carries the banner 「このお店は「広島市中区小町1-28」から移転しています。※移転前の情報は最新のものとは異なります」; the current address is 広島県広島市中区本通8-11 ヤオキンビル1F and the shop's own gorp JSON-LD gives geo 34.39261056661214 / 132.4592125877316. The record's lat/lng (34.392559 / 132.459183) and neighborhood ('Hondori, Naka-ku') already match the NEW site, so no data fix is needed — but any older citation pointing at 小町1-28 would now be a sibling-address defect. Listing is 公式 (operator-claimed), takes online reservations, 9 counter seats, hours 月-土 18:00-22:00 / 日・祝日定休日 matching the record. Freshness caveat: the pinned notice 「お盆休みについて 8月15日（金）〜17日（月）」 is a 2025 calendar (15 Aug 2026 is a Saturday), and the newest review is 2024/11, so the operator last edited around mid-2025."
  }
 ]

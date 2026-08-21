@@ -51,6 +51,7 @@ const STEPS = [
   ['flag-bare-root-citations.mjs',    'mark safety claims cited to a guide front page', ['--apply']],
   ['fix-menu-promotions.mjs',         'hold down diet labels that contradict their own detail text', ['--apply']],
   ['flag-vegan-contradictions.mjs',   'hold down "fully vegan" contradicted by the menu', ['--apply']],
+  ['flag-divergent-duplicates.mjs',   "align duplicate pairs whose safety labels disagree", ['--apply']],
   ['flag-borrowed-evidence.mjs',      "flag records citing another shop's evidence", ['--apply']],
   ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],
   ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],

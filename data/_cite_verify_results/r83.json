@@ -37,5 +37,74 @@
   "http": "200 both (plain desktop-UA curl)",
   "method": "1 plain fetch of the cited URL, then food-japon.com/p/salon-kawamura, then mame-kawamura.com/items/ for the retail 原材料 lines",
   "note": "FALSE ASSURANCE: the only source that documents the warabi mochi says the plate 「ミルクがセットされている」 — it is served WITH a cup of milk, so presenting it as a dairy-free plant-based pick is wrong unless the reader knows to decline the milk. Repoint the citation and add the milk caveat. (Separately for GF, /store/ prints 醤油 as a stated component of かわむらパルフェ and ジェノワーズ/クランブル in the kakigori — wheat the gf_detail does not mention.)"
+ },
+ {
+  "id": "kz_sashimiya",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Menu centers on sashimi, seafood bowls, tempura, and jibuni, all of which rely on soy sauce and dashi; tempura adds wheat batter. No gluten-free options are documented.",
+  "url": "https://www.sashimiya.jp/",
+  "verdict": "supported",
+  "found": "「当店では単品メニューの他に、加賀野菜を使った天ぷらやお寿司、お刺身、石川の郷土料理「治部煮」などが楽しめるコース料理もございます。」 and 「豪快に鮮魚を盛り付けた海鮮丼をはじめとした、様々な美味しい海鮮料理が人気です。」 — sashimi, kaisen-don, tempura and jibuni are all named on the cited root page. The soy-sauce element is only explicit one click away, on /menu_drink.html: 「治部煮 1,000円」「海老天麩羅 1,000円」「加賀野菜天麩羅 1,000円」「白海老唐揚げ」「かにのクリームコロッケ」「うなぎ蒲焼き」「金沢大野の醤油シロップソフト 650円」 and 「※丼物には、みそ汁と漬物が付いています。」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl). Note: this site soft-404s — /menu.html and /lunch.html both return the index page with HTTP 200; the real menu is /menu_drink.html and /kaisen_lunch.html.",
+  "method": "1 plain fetch of the cited root, then crawled the in-page nav to /menu_drink.html and /kaisen_lunch.html",
+  "note": "Claim stands, but the citation is the landing page. Repoint to https://www.sashimiya.jp/menu_drink.html, which prices the jibuni, both tempura and even a 醤油-syrup soft serve — that page proves the soy sauce the root page only implies."
+ },
+ {
+  "id": "kz_sashimiya",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Entirely seafood- and meat-driven (sashimi, seafood bowls, Noto beef), with dashi-based cooked dishes; no vegan or vegetarian items are documented.",
+  "url": "https://www.sashimiya.jp/",
+  "verdict": "supported",
+  "found": "「また巷で話題のうにとお肉を合わせて食べる「うにと能登牛」や塩辛各種など、お酒の肴にぴったりの逸品も多数ございます。」 and 「元魚屋の店主が長年培ってきた技術で素材の旨みを引き出してご提供します。人気の海鮮丼はもちろん、高級魚のど黒を使った逸品などをご用意。」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch of the cited root, plus /menu_drink.html for the full à la carte list",
+  "note": "Supported. One precision point: the full menu does carry a few incidental plant items (茶豆 500円, もろきゅう 400円, 野菜サラダ 600円, 加賀野菜天麩羅, ライス 200円), so \"no vegan or vegetarian items are documented\" is absolute where \"no vegan meal or vegan preparation\" would be exact. Does not change the vegan \"no\" tier — there is no vegan programme here."
+ },
+ {
+  "id": "kz_shijimaya_honpo_honten_k",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Signature cafe items are rice-koji amazake, amazake soda and koji-based gelato, which are plant-friendly and naturally wheat-free options rather than dairy- or meat-forward dishes.",
+  "url": "https://www.kanazawabiyori.com/spot/spot_13041.html",
+  "verdict": "unsupported",
+  "found": "The page supports only the item NAMES — 「「かぶら寿し」などで培ってきた糀についての知見をいかして、甘酒や甘酒ソーダ、ジェラートをオリジナル・メニューとして開発した。」 plus 「甘酒プレーン360円、甘酒ソーダ420円…甘酒ジェラート520円、甘酒ゆずバジルジェラート520円」. It says nothing about plant-friendly or wheat-free, and it carries 「※掲載されている情報は、2020年2月4日以前に取材した内容です」. The operator CONTRADICTS the safety half: on kabura.jp every one of the nine 加賀・能登こだわりジェラート flavours declares 「アレルギー表示 一部に乳成分を含む」, the 9-flavour set declares 「一部に小麦・大豆・乳成分・卵を含む」, and 花きんじょう（ジェラート） individually declares 「一部に小麦・大豆・乳成分・卵を含む」 — wheat. 加賀金城味噌 and 加賀片瓜粕漬 add 卵.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl) for kanazawabiyori and for every kabura.jp product page",
+  "method": "1 plain fetch of the cited URL, then kabura.jp /products/list?category_id=6 and each of the nine gelato detail pages for the maker’s own allergen labels; Yahoo Japan search to confirm the cafe is still trading",
+  "note": "FALSE ASSURANCE, both axes. The gelato is NOT wheat-free (花きんじょう declares 小麦) and NOT plant-friendly (all nine flavours declare 乳成分, two declare 卵). The genuinely safe item is the amazake: 「材料はお米と米糀のみなので、からだに優しいノンアルコールです」 with a blank アレルギー表示 (kabura.jp/products/detail/300). Rewrite the positive around the amazake and amazake soda only, and name 花きんじょう as the flavour a celiac must avoid. The 2020 flavours cited (甘酒ジェラート, 甘酒ゆずバジル) are no longer in the range. Cafe itself is still trading — Kanazawa city tourism 2026 page and Tabelog both give カフェ 9:00-17:00 (L.O. 16:30), closed December."
+ },
+ {
+  "id": "kz_shijimaya_honpo_honten_k",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.kabura.jp/products/list?category_id=6",
+   "https://www.kabura.jp/products/detail/161",
+   "https://www.kabura.jp/products/detail/163",
+   "https://www.kabura.jp/products/detail/162",
+   "https://www.kabura.jp/products/detail/300"
+  ],
+  "why": "limited — the record’s vegan_detail names the gelato, and 加賀棒茶 specifically, as plant-friendly, but the maker labels 加賀棒茶（ジェラート）「一部に乳成分を含む」 and describes it as 「棒茶の香ばしさとミルクのコクが優しく口の中に広がります」; 奥能登ミルク is 「奥能登の牧場ミルクの搾りたて」; 加賀金城味噌 is 「金城味噌に卵黄を加えた」. All nine flavours declare dairy and two declare egg, so zero gelato is vegan. What survives is drinks: the amazake is 「お米と米糀のみ」 and the amazake soda is built on it. Vegan choice exists but is confined to the drinks list, which is “limited”, not “options”."
+ },
+ {
+  "id": "kz_shijimaya_honpo_honten_k",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.kabura.jp/products/detail/300",
+   "https://www.kabura.jp/products/list?category_id=6",
+   "https://www.kabura.jp/products/detail/159"
+  ],
+  "why": "options — the record hedges that 「koji/fermented products often involve shared production with wheat-containing items」, but the operator publishes a per-item allergen label and it exonerates most of the cafe range: the 甘酒 is 「材料はお米と米糀のみ」 with a blank アレルギー表示, and eight of the nine gelato flavours declare 乳成分 (and sometimes 卵/大豆) with no 小麦 at all. Exactly one flavour, 花きんじょう, declares 小麦. That is a documented wheat-free choice rather than a blanket unknown. Not higher than options: the in-store cafe menu is not itemised and the 2020-era 甘酒ジェラート is no longer in the labelled retail range, so a celiac still has to name the flavour and ask."
  }
 ]

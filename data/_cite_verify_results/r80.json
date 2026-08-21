@@ -164,5 +164,83 @@
    "https://kincharyou.co.jp/news/"
   ],
   "why": "ask — the record is internally inconsistent: it awards vegan_status 'ask' on the reasoning that 'a plant-based course might be arranged if requested well ahead', then awards gf_confidence 'no' on exactly the same facts. The page documents the mechanism for both — 「離れのお部屋は一名様から二〇名様まで承っております」 and 「人数、内容の変更は三日前の正午までにご連絡お願い致します」 — a made-to-order kaiseki in a detached private room that accepts content changes three days out. 'ask' is the correct tier for a place with no GF programme but a real advance-request channel; 'no' should be reserved for kitchens where the answer cannot change. Not higher than 'ask': no allergen information is published anywhere on the site, soy-sauce preparations (土佐煮, 柚庵焼き) are on the standard bento, and /news/ advertises お座敷天婦羅."
+ },
+ {
+  "id": "kz_kisetsu_oden_jun",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "The shared oden pot simmers wheat-containing items (kuruma-fu wheat gluten, house-made fishcakes) in the same soy-sauce-and-dashi broth, so all items share gluten-laden liquid — there is no way to avoid cross-contamination for a single broth pot.",
+  "url": "https://intojapanwaraku.com/travel/258099/",
+  "verdict": "unsupported",
+  "found": "The article itemises this shop's oden and 車麩 is not among them: 「加賀れんこんや紅しょうがなどをすり身とあわせたオリジナルの種」「おでん種にも五郎島金時（ごろうじまきんとき）や能登産のきのこ類が入ったり」「豆腐は揚げ豆腐、焼き豆腐とそれぞれにおいしい店を使い分ける」「定番に加えて、きのこ、焼きなす、加賀れんこんのおでんもあります」「プチトマトの入る自家製練り物「トマトボール」280円」. Nothing says the 練り物 is wheat-bound either — 「すり身とあわせたオリジナルの種」 names no binder.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL; then Ecosia for the Tabelog listing (17013788), fetched detail + dtlmenu + dtlrvwlst with an iPhone UA",
+  "note": "The two wheat items named are not evidenced. 車麩 appears for this shop ONLY as an auto-generated Tabelog keyword tag (beside 羅臼昆布, がんもどき) with no menu line or review sentence behind it — too thin to cite. The gluten conclusion is still correct, but for a different reason (大野醬油 in the broth, and a Tabelog review describes the お通し as 「加賀レンコン、ちくわ、さつまいもの天ぷら」). Rewrite the sentence around those."
+ },
+ {
+  "id": "kz_kisetsu_oden_jun",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "The dashi is finished with Kanazawa's Ohno soy sauce (大野醤油), a standard wheat-fermented Japanese soy sauce, used throughout the broth.",
+  "url": "https://intojapanwaraku.com/travel/258099/",
+  "verdict": "supported",
+  "found": "「出汁は、羅臼（らうす）昆布と青魚をブレンドした削り節。そこに金沢が誇る「大野醬油」、塩と砂糖で調味。」 — the owner 西村純也 is quoted immediately after: 「塩みと甘み、ギリギリまで攻めて調えます」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Verbatim support, and the single strongest gluten fact for this record — 大野醬油 is a Kanazawa koikuchi, i.e. wheat-brewed. Note the article spells it 大野醬油 (old-form 醬); the record's 大野醤油 will not string-match."
+ },
+ {
+  "id": "kz_kisetsu_oden_jun",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The base broth is a bonito (katsuobushi) and kombu dashi, so even vegetable items are simmered in fish-derived stock.",
+  "url": "https://intojapanwaraku.com/travel/258099/",
+  "verdict": "supported",
+  "found": "「出汁は、羅臼（らうす）昆布と青魚をブレンドした削り節。」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Substance supported — fish-derived stock, so the vegetable oden is not vegan. But the species is wrong: the article says 青魚の削り節 (blue-backed fish shavings) blended with 羅臼昆布, not katsuobushi. Fix the wording in vegan_detail. Same paragraph does not support the record's separate mention of 'beef-tendon skewers' — no 牛すじ appears anywhere in the article."
+ },
+ {
+  "id": "kz_kisetsu_ryori_oden_kuroy",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Oden is simmered communally in a shared dashi pot that includes wheat-based items such as fried gluten/fu cakes, so all oden shares broth with gluten-containing ingredients.",
+  "url": "http://www.oden-kuroyuri.com",
+  "verdict": "wrong_source",
+  "found": "The cited root page has no oden item list at all. The support is one click away on /oden.html: 「車麩　350円　生麩を棒に巻きつけて焼き上げた車麩は、金沢市内のお麩屋さんで作られたものを使用しています。だしをたっぷりと吸い込ませることでとろけるような食感に。」 The same price list carries 海老天・ごぼう天・丸天・角天・ちくわ・天玉・シュウマイ・ロールキャベツ・餅きんちゃく.",
+  "correct_url": "https://www.oden-kuroyuri.com/oden.html",
+  "http": "200 for both (iPhone UA; http:// root redirects to https://www.)",
+  "method": "1 plain fetch of the cited root, then a link crawl of the site's own nav to oden.html / menu.html / lunch.html",
+  "note": "Claim is TRUE and unusually well evidenced — repoint to /oden.html. 車麩 is described as 生麩 rolled and baked, i.e. pure wheat gluten, and the description says it soaks up the shared broth. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kz_kisetsu_ryori_oden_kuroy",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "The oden broth and seasonings are soy-sauce based; standard Japanese soy sauce contains wheat, and no wheat-free tamari is mentioned.",
+  "url": "http://www.oden-kuroyuri.com",
+  "verdict": "unsupported",
+  "found": "The shop describes its broth without any soy sauce: 「当店では、削り方の異なる2種類の鰹節と煮干し、昆布から丁寧に引いた秘伝のだしを使用しています。創業から70年以上、継ぎ足しながら大切に守り続けてきただしは、ほんのり甘く、あっさりとした優しい味わいが特徴です。」 (/oden.html). Neither the root nor oden.html, menu.html, lunch.html or english.html contains 醤油, アレルギー, 小麦 or グルテン.",
+  "correct_url": null,
+  "http": "200 (root, oden, menu, lunch, concept, english — all iPhone UA)",
+  "method": "1 plain fetch of the cited root plus five sub-pages from the site nav",
+  "note": "Not a tier problem — gluten is proven here by 車麩 and the 天 items, not by soy sauce — but the sentence asserts something the operator's own dashi description does not say. Re-base it on /oden.html's ingredient list or mark it as an assumption."
+ },
+ {
+  "id": "kz_kisetsu_ryori_oden_kuroy",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The base broth is a fish/bonito dashi and the menu is seafood-centric, so vegetable items are cooked in animal-derived stock.",
+  "url": "http://www.oden-kuroyuri.com",
+  "verdict": "wrong_source",
+  "found": "The root only says 「代々受け継いできた秘伝のだし」 with no composition, plus 「近江町市場から仕入れる鮮魚の「刺身盛り合わせ」や、店内の生け簀で管理しご注文を受けてから捌く「岩魚洗い」」. The dashi composition is on /oden.html: 「削り方の異なる2種類の鰹節と煮干し、昆布から丁寧に引いた秘伝のだし」, and the oden list includes 梅貝・ほたて貝・鰯つみれ・すじ煮込み.",
+  "correct_url": "https://www.oden-kuroyuri.com/oden.html",
+  "http": "200 (iPhone UA)",
+  "method": "1 plain fetch of the cited root, then the site's own /oden.html",
+  "note": "Claim is TRUE; repoint to /oden.html, which names 鰹節 and 煮干し explicitly. Worth adding for readers: the plant items on that list (大根・じゃがいも・こんにゃく・糸こん・ふき・たけのこ・ぜんまい・ごぼう・焼き豆腐・厚揚げ) all sit in that same fish stock, so none is vegan. vegan_status 'no' is correct."
  }
 ]

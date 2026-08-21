@@ -180,5 +180,94 @@
   "http": "200 (plain curl) on the cited page; 200 (iPhone UA) on s.tabelog.com/.../34022794/",
   "method": "1 plain fetch of the cited page; Tabelog via iPhone UA to test the pork element",
   "note": "Chicken, shrimp and squid are each verbatim with prices on the cited page, and it is a 12-seat counter kitchen where every dish comes off the same wok line, so the cross-contact conclusion is sound. One inference to label as such: the cited page never says the mapo dishes contain pork - it names 麻婆ナス and 麻辣豆腐 only, with no 豚/挽肉 anywhere on the page. Pork at this venue is real but the evidence is elsewhere: a Tabelog review lists 酢豚 among what the party ate. Either soften to 'mapo dishes, which conventionally use pork mince' or cite Tabelog for the pork. Note also that the two nominally plant dishes seen here - 春菊の炒め (an off-menu verbal offer) and 空芯菜の炒め物 (Tabelog) - come off the same wok and would conventionally be finished with oyster or XO sauce, so vegan: no stands."
+ },
+ {
+  "id": "hiro_tetta",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "A single shared teppan griddle is used for all dishes, including wheat-batter okonomiyaki and noodles, so heavy gluten cross-contact is unavoidable.",
+  "url": "https://www.hotpepper.jp/strJ000714826/",
+  "verdict": "supported",
+  "found": "「お好み焼・鉄板焼 鉄太（てった）」／「カウンター席のみの店内は、毎日たくさんのお客様で活気いっぱい♪亭主の元気な接客に…」／総席数 10席／おすすめ料理「お好み焼き（そば）」／メニュー抜粋「麺なし 700円」「そば又はうどん 800円」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 79.9 KB) on the cited root; 200 (iPhone UA) on /strJ000714826/food/; 200 (iPhone UA) on s.tabelog.com/hiroshima/A3401/A340110/34008870/",
+  "method": "1 plain fetch with an iPhone UA on the cited HotPepper root, then the same host's /food/ page for the item list, then Tabelog for the trading check",
+  "note": "Supported on the cited page: a 10-seat counter-only okonomiyaki/teppanyaki shop cooking in front of the guest cannot have a second griddle, and both the wheat batter and the noodles are named in the root's own menu excerpt. The /food/ page adds four wheat items the record should list, two of which are not okonomiyaki at all: 鉄太特製餃子 600円 (wheat gyoza wrappers), 馬力チヂミ焼 700円 (wheat-flour chijimi), いか天 as a 300円 topping, and 醤油焼きうどん 800円. Also flag the trap item: 「麺なし（肉・玉子）700円」 is a noodle-free okonomiyaki, still a wheat-batter pancake on a wheat-covered griddle, and must not be presented as a GF workaround. Trading status OK: HotPepper live, 18:00-翌3:00, 定休日 なし, 広島市中区薬研堀4-13; Tabelog 34008870 carries no 閉店/移転 banner. Caveat on freshness - HotPepper prints 「※更新日が2021/3/31以前の情報は、当時の価格及び税率に基づく情報となります」 and the page has zero reviews, so treat the prices as indicative."
+ },
+ {
+  "id": "hiro_tetta",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are finished with okonomiyaki/soy-style sauces that are typically wheat-based; no gluten-free sauce is mentioned.",
+  "url": "https://www.hotpepper.jp/strJ000714826/",
+  "verdict": "wrong_source",
+  "found": "引用元ルートには ソース・醤油 とも0件。同ホストの /food/ には明記あり:「醤油焼きうどん 800円」／「ホルモン焼き（塩orタレ）… タレは何種類もの味噌を1時間以上かけて炊いたもの。」／「鉄太のお好み焼きの麺は特製ダシを絡めて焼き上げます」／「ホルモン焼き（塩・味噌）」「せせり焼き（塩・味噌）」「もやし炒め（塩・味噌）」",
+  "correct_url": "https://www.hotpepper.jp/strJ000714826/food/",
+  "http": "200 (iPhone UA) on both the cited root and /food/",
+  "method": "1 plain fetch with an iPhone UA on the cited root + exact-string search for ソース/醤油/タレ, then the same on /food/ which is where the terms actually live",
+  "note": "The claim is true but the cited page does not carry it - the strings ソース and 醤油 return zero hits on the HotPepper root, which prints only three dish names and a six-line menu excerpt. Repoint the citation to /food/, where 醤油焼きうどん is a named 800-yen dish and three more dishes are finished with a house 味噌ダレ. Two things to fix in the record's wording while repointing: (a) the shop's documented finishing seasonings are miso tare and soy, not okonomiyaki sauce, and western-Japan 味噌 is frequently 麦味噌 (barley) - a gluten route the record never mentions; (b) 「特製ダシを絡めて焼き上げます」 means the okonomiyaki noodles are tossed in a house dashi before griddling, so the noodle stage carries its own seasoning risk. No gluten-free sauce is mentioned anywhere on either page, so that half stands."
+ },
+ {
+  "id": "hiro_tetta",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The griddle is used for meat, seafood (sea urchin), egg and Wagyu offal, so any item would share surfaces with animal products.",
+  "url": "https://www.hotpepper.jp/strJ000714826/",
+  "verdict": "supported",
+  "found": "引用元ルート:「大人気のウニホーレン!!」／おすすめ料理「ホルモン焼き（塩orタレ）」「ウニホーレン」／メニュー抜粋「広島カキ（6コ）1200円」／店名「お好み焼・鉄板焼 鉄太」。和牛・玉子は /food/ が明示:「黒毛和牛のホルモン使用★」「和牛ミノ 1000円」「特上和牛Ａ5（極上ヒレ／サーロイン）4500円」「玉子はいつも、世羅から送られる、双子を使ってます♪」",
+  "correct_url": null,
+  "http": "200 (iPhone UA) on the cited root and on /food/",
+  "method": "1 plain fetch with an iPhone UA on the cited root, then /food/ to test the two adjectives the root does not carry",
+  "note": "The conclusion holds on the cited page - sea urchin (ウニホーレン), offal (ホルモン焼き) and Hiroshima oysters are all on the root of a counter-only teppan shop. But two of the four things the claim names are NOT on the root: the strings 和牛 and 玉子/卵 all return zero hits there. Both are on /food/ (黒毛和牛のホルモン, 和牛ミノ, 特上和牛A5, and the twin-yolk 玉子 in every okonomiyaki), so add that URL rather than leave the Wagyu and egg qualifiers unsourced. vegan: no is correct and if anything under-stated: the plant-looking items 「ほうれん草炒め 600円」「べっぴんジャガイモ 500円」「もやし炒め（塩・味噌）600円」「きのこバター 600円」 sit between 国産ホルモンミックス and 海鮮スペシャル on the same 10-seat griddle, and きのこバター is butter outright."
+ },
+ {
+  "id": "hiro_tonkatsu_katsumaru",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "All cutlets are coated in wheat panko breading and deep-fried, and the house curry is flour-thickened, so wheat is pervasive across the menu and shared fryers are used.",
+  "url": "https://www.toyokanko-g.co.jp/katsumaru/",
+  "verdict": "supported",
+  "found": "「深いコクとうま味、香ばしさの秘密。それは、豚の背脂から作るラードを独自配合でブレンドした揚油。厳選した豚肉を、サクッとジューシーに揚げ、美しい黄金色へと仕上げます。」／「とんかつはもちろん、鮮魚かつ、熱々鉄板定食など25種類以上のメニューを取り揃えております。かつまるカレー付き定食も大好評です。」／新着 2026/6/30「ロースかつぶっかけそばなどのさっぱり夏メニューが登場！」／2026/4/30「厚切りロースのしあわせかつサンド」",
+  "correct_url": null,
+  "http": "200 (plain curl, 13.9 KB) on the cited page. Its グランドメニュー is image-only and the linked pdf/202607.pdf (2.0 MB) is a scan - pdftotext -enc UTF-8 -nopgbrk returns 0 bytes, so no item-level ingredient text exists on this site.",
+  "method": "1 plain fetch of the cited page + exact-string search for パン粉/小麦/衣/醤油/ソース/アレル; pdftotext on the linked menu PDF (no extractable text)",
+  "note": "The load-bearing part is on the cited page - a single house-blended 揚油 that all the pork is fried in, 25+ cutlet dishes, plus two wheat items the record does not list and should: ロースかつぶっかけそば (July/August limited, wheat soba) and 厚切りロースのしあわせかつサンド (bread). Two sub-claims are NOT on the page and should be reworded as conventions rather than sourced facts: the words パン粉, 衣 and 小麦 return zero hits (とんかつ is panko-breaded by definition, but this page never says so), and the curry-is-flour-thickened claim actually cuts against the page's own description - 「3日間かけて作ったかつまるカレーは、野菜が溶け込み、まろやかな甘みとうまみが広がります」 attributes the body to dissolved vegetables, not roux. Japanese katsu curry is overwhelmingly roux-based so the risk assessment is right, but as filed it reads as sourced and is not. Trading status OK and current: 新着情報 dated 2026/6/30 with an 8月 event banner, 広島市中区本通4-25, 平日11:00-15:30/17:30-22:00, 土日祝11:00-22:00."
+ },
+ {
+  "id": "hiro_tonkatsu_katsumaru",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Standard tonkatsu sauce and Japanese soy-based seasonings used with cutlets contain wheat; no wheat-free seasoning is documented.",
+  "url": "https://www.toyokanko-g.co.jp/katsumaru/",
+  "verdict": "supported",
+  "found": "「5月1日新発売！１番人気のロースかつを自家製ソースで味わう「厚切りロースのしあわせかつサンド」」／「定食（ご飯・味噌汁・漬物付）」（同一ページ内に3回反復）",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited page + exact-string search for ソース/醤油/味噌/アレル/グルテン/小麦",
+  "note": "The cited page names a house tonkatsu sauce in its own words (自家製ソース) and puts 味噌汁 in every teishoku, and アレル/アレルギー/グルテン/小麦 return zero hits across the whole site, so both halves of the claim are evidenced. Note for the detail text: 自家製 means house-made, not wheat-free - a house tonkatsu sauce is still a fruit-and-vegetable Worcestershire base that conventionally carries soy sauce, and the 味噌汁 that comes with every set is a second wheat/barley route plus fish dashi. The shop publishes no allergen table at all: the グランドメニュー is an image and the linked menu PDF is a scan with zero extractable text, so a celiac has nothing to read before arriving."
+ },
+ {
+  "id": "hiro_tonkatsu_katsumaru",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Frying oil is custom-blended with pork back fat, so all fried items carry animal fat regardless of topping.",
+  "url": "https://www.toyokanko-g.co.jp/katsumaru/",
+  "verdict": "supported",
+  "found": "「深いコクとうま味、香ばしさの秘密。それは、豚の背脂から作るラードを独自配合でブレンドした揚油。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited page",
+  "note": "Exact and unambiguous - the shop leads with the fact that its frying oil is a custom blend containing lard rendered from pork back fat, so every deep-fried item on the menu is animal-fat-fried by design and no topping change can alter that. This is the strongest single citation in the shard and should be quoted verbatim in the record's vegan detail text, because it is the kind of fact a vegan cannot infer from a menu. Reinforcing: every 定食 is 「ご飯・味噌汁・漬物付」 (dashi in the miso soup) and the flagship proteins are 石見ポーク and 広島産牡蠣. vegan: no is correct with no ambiguity."
+ },
+ {
+  "id": "hiro_teppan_murataya",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "limited",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.teppan-murataya.com/"
+  ],
+  "why": "The shop's own site documents no vegan item: every warm dish crosses the single griddle it describes as taking 「肉、魚介、野菜」 together, the nominally plant plates carry butter, egg or bacon (エリンギバター, ニラ玉もやし, 焼きポテトサラダ with ベーコンとバター醤油とチーズ), and the only cold plates that miss the griddle are トマトスライス 380円 and 大根と梅しそのパリパリサラダ 700円, the latter with an unstated dressing. One plate of sliced tomato is not a 'limited' selection, and 'limited' also sits oddly beside the record's own detail text saying vegetable items share the surface with animal products; ask is the honest posture, backed by the shop's off-menu offer 「メニューに無い料理でも素材があればお作りします」."
  }
 ]

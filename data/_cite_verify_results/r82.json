@@ -75,5 +75,134 @@
   "http": "406 live (both UAs); 200 via Wayback 20250501004035",
   "method": "route 3 — Wayback",
   "note": "Supported, with one wording nit: the page evidences oysters, sea urchin, snow crab and nodoguro but never scallops (ホタテ) — drop scallops or cite it. vegan: no is correct."
+ },
+ {
+  "id": "kz_oumicho_doteya",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "The kitchen fries pufferfish and chicken (wheat-flour batter) and grills skewers in a tiny shared counter space, so cross-contact with wheat is effectively unavoidable.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop75901/",
+  "verdict": "unsupported",
+  "found": "「人気のふぐのからあげは、外はサクサク、中はジューシー。」 / 「さらに、能登の塩や伝統醤油で漬け込んだ、旨みをたっぷりの唐揚げは…」 / 「すべて店内で仕込み、揚げたて・出来たてをご提供。」 / 「立ち飲みスタイルで、日本酒や生ビール、ハイボールとともに」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain curl)",
+  "method": "1 plain curl with iPhone UA",
+  "note": "PARTLY A FALSE WARNING. The frying, the two fried items and the tiny standing counter are all on the page — but the page never states the coating, and Japanese からあげ is normally dusted with 片栗粉 (potato starch), not wheat flour. Do not assert 'wheat-flour batter'. The gluten that IS documented is the 伝統醤油 the karaage is marinated in, the 大野醤油 in the dote-yaki pot, and the 生ビール on the drink list — rewrite around those. Nothing on this page mentions grilled skewers either; どて焼き is sold 2本 (skewered), which is a different dish."
+ },
+ {
+  "id": "kz_oumicho_doteya",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature doteyaki is simmered in Kaga miso and Ono soy sauce, both of which are wheat-fermented and not gluten-free.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop75901/",
+  "verdict": "unsupported",
+  "found": "「看板の金沢どて焼きは、108年の歴史を持つ加賀味噌と、まろやかな甘みが特徴の大野醤油を使い、職人が毎日丁寧に仕込み、じっくりと煮込んでいます。」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain curl); kagamiso.or.jp 200 with -k (expired/mismatched cert on the www host, 200 on the bare host); hashie.co.jp 200; maff.go.jp 200",
+  "method": "1 plain curl with iPhone UA for the citation, then Ecosia (https://www.ecosia.org/search?q=...) for the two ingredient checks — Ecosia answered both first try",
+  "note": "FALSE WARNING on the miso half. The two ingredients are verbatim on the page, but 加賀味噌 is a RICE miso, not a wheat one: its own trade body writes 「加賀みそ…米こうじを多く使い、長期間熟成させた濃厚な味とコクが特徴です」 (https://kagamiso.or.jp/) and 橋栄醤油みそ 「石川の味噌は、米麹と大豆と塩をまぜて仕込む米味噌です。『加賀みそ・能登みそ』と呼ばれ」 (https://hashie.co.jp/miso.html) — 米麹・大豆・塩, no wheat and no barley. The 大野醤油 half is correct and is the whole gluten case here: MAFF's にっぽん伝統食図鑑 lists its 主な使用食材 as 「大豆、小麦、食塩、海洋深層水、種麹、アミノ酸液」 (https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/ono_syoyu.html). Strike 'both' and 'Kaga miso'; keep Ono shoyu. gf: no still stands on the shoyu, the marinade and the beer."
+ },
+ {
+  "id": "kz_oumicho_doteya",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes center on meat skewers, doteni (simmered offal) and seafood; even non-meat items share the same simmering and frying station, so no dish can be considered free of animal products.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop75901/",
+  "verdict": "supported",
+  "found": "Full documented menu: 「・看板メニュー：金沢どて焼き（2本 500円）・人気：ふぐのからあげ（小 800円／大 1,000円）・ちょい食べに：のと塩からあげ（2個 500円～）・アルコール各種」, all 「すべて店内で仕込み」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain curl)",
+  "method": "1 plain curl with iPhone UA",
+  "note": "Conclusion is right — every food item the operator lists is meat or fish, so vegan: no is correct — but the wording invents detail: 「doteni (simmered offal)」 appears nowhere on the page, which names どて焼き, ふぐのからあげ and のと塩からあげ only. Replace the offal phrasing with the three items actually listed."
+ },
+ {
+  "id": "kz_pino",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Sauces and dressings are all made in-house, so staff can describe what goes into a dish if you ask, though no formal allergen handling is documented.",
+  "url": "https://kanazawa-tsu.com/recommend/pino-kanazawa-katamachi/",
+  "verdict": "supported",
+  "found": "「ソースやドレッシングもすべて手作りだというから、店主夫妻の並々ならぬ愛情が伝わってくる。」 (Kanazawa Town Management Organization feature, 取材日 2022/9/27)",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl); s.tabelog.com detail page 200 with iPhone UA",
+  "method": "1 plain curl (desktop UA) for the article; 1 mobile-host Tabelog fetch for trading status",
+  "note": "In-house sauces are verbatim; the 'staff can describe what goes into a dish' half is the reviewer's inference, not a quote — though the same article's 「平日は店主夫妻が2人できりもりしている」 makes it a fair one, so mark it as inference rather than deleting it. Trading status OK: Tabelog still lists 片町2-7-6, 11:30-20:30, no 閉店 marker (定休日 now 水・木, vs 水曜 in the 2022 article). gf: no and vegan: no are both right — the menu is waffles, パフェ, オムライス, ドリア, スパゲティ, カレー, all wheat/egg/dairy."
+ },
+ {
+  "id": "kz_rakugan_moroeya_nishicha",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Traditional menu of rakugan, zenzai, kakigori and namagashi is largely rice-, bean- and sugar-based, which often suits plant-based diners, though no allergen labeling is published.",
+  "url": "https://moroeya.co.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited root is a corporate splash page; the only line about this branch is 「西茶屋菓寮は、季節毎に和菓子やかき氷、お茶を楽しむ事が出来ます。」 The actual 味和以 menu is published at /news/summer-menu/ (2026.05.20): 「・宇治金時かき氷 １０００円…味替えの練乳を添えて ・和三盆金時かき氷…大納言小豆と白玉入り ・梅みつかき氷 ・白玉入り白小豆ぜんざい ９５０円 ・栗入り白ゴマしるこ ・冷やし寒天（梅みつ／柚子みつ／和三盆みつ）・生菓子とお抹茶 ・干菓子とお抹茶」.",
+  "correct_url": "https://moroeya.co.jp/news/summer-menu/",
+  "http": "200 on all moroeya.co.jp pages (plain desktop-UA curl); moroeya.net product pages 200 but served EUC-JP — decode before grepping or the text is mojibake",
+  "method": "1 plain curl of the cited root, then site link-walk to /news/summer-menu/, /shop/ and the moroeya.net product pages",
+  "note": "TWO defects. (1) Bare-root citation — repoint to /news/summer-menu/, which is the branch's own menu. (2) 'no allergen labeling is published' is FALSE: every product page carries an 【アレルギー表示】 line — 塩どら焼 「小麦・卵・乳・山芋」, しょうゆ落がん 「醤油に小麦、大豆を含みます。」, 十二ヶ月 麩焼きせんべい 「なし」, 加州香 「なし」. Also add the one dairy item the 'suits plant-based diners' line walks past: the flagship 宇治金時かき氷 is served 「味替えの練乳を添えて」 — condensed milk. Two smaller flags for the ask text: 綾たちばな is a ゼリー with no gelatin/agar disclosure, and 加州香 is sold as a そば落雁 while declaring 【アレルギー表示】なし, which a buckwheat-allergic reader should query in person. Seasonal: 菓寮 runs 夏メニュー 5/27–10/9 and shuts from the last Sunday of December to Jan 3, hours currently 10:00–17:00 (LO 16:30)."
+ },
+ {
+  "id": "kz_rakugan_moroeya_nishicha",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://moroeya.co.jp/news/summer-menu/",
+   "https://moroeya.net/?pid=23984687",
+   "https://moroeya.net/?pid=159296586",
+   "https://moroeya.net/?pid=7630852"
+  ],
+  "why": "gf_detail rests on 'no allergen information or cross-contact controls are published', and the first half is simply wrong — Moroeya publishes a per-item 【アレルギー表示】 (塩どら焼 「小麦・卵・乳・山芋」; しょうゆ落がん 「醤油に小麦、大豆を含みます。」; 十二ヶ月 and 加州香 「なし」), which is exactly the information a celiac needs to choose. On top of that the branch's own published café menu contains no wheat item at all: three かき氷, three 冷やし寒天, 白小豆ぜんざい with 白玉, 白ゴマしるこ, and 生菓子/干菓子 with matcha. That is a documented set of gluten-free-by-ingredient options, i.e. 'options'. It is not higher: the shop bakes どら焼 and ぼうろ on the same premises, publishes no cross-contact statement, and the 生菓子 rotates (栗きんとん from September), so a celiac must still confirm the day's namagashi."
+ },
+ {
+  "id": "kz_ramen_minatoya",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles and shoyu/miso seasonings are central to every documented bowl; broth uses chicken, fish, and kombu. No gluten-free option is mentioned.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop73701/",
+  "verdict": "supported",
+  "found": "「鶏、魚、昆布、野菜など、ふんだんに材料を使い、沸騰寸前ギリギリの火加減でコトコト煮込んだ天然素材由来のクリアなスープです。醤油などに僅かな添加物が含まれていますので完全無添加とまではいきませんが…」 plus the full menu 「中華そば しょう油・塩 740円／味噌 800円、野菜ラーメン…、チャーシュー麺…、加賀酒粕ラーメン吟醸 1040円、治部煮ラーメン 1490円」 (2026年5月現在).",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain curl)",
+  "method": "1 plain curl with iPhone UA",
+  "note": "Supported verbatim, and gf: no is right. Two items worth naming in gf_detail: 治部煮ラーメン — jibu-ni is thickened with wheat flour, so it is gluten twice over — and 加賀酒粕ラーメン, sake lees, which some readers avoid for alcohol rather than gluten."
+ },
+ {
+  "id": "kz_ramen_minatoya",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Shoyu and miso chuka soba are core menu items, indicating wheat-containing soy sauce/miso in the seasoning base.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop73701/",
+  "verdict": "unsupported",
+  "found": "「中華そば しょう油・塩 740円 味噌 800円」 and 「醤油などに僅かな添加物が含まれていますので…」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain curl)",
+  "method": "1 plain curl with iPhone UA; miso composition cross-checked via Ecosia",
+  "note": "FALSE WARNING on the miso half. The two bowls and the use of 醤油 are on the page and the shoyu inference is sound, but miso is not a wheat ferment — the regional style is a rice miso (加賀みそ: 「米こうじを多く使い、長期間熟成させた」, https://kagamiso.or.jp/; 「石川の味噌は、米麹と大豆と塩をまぜて仕込む米味噌です」, https://hashie.co.jp/miso.html). Only 麦味噌 carries a cereal, and that is barley, not wheat, and nothing here indicates 麦味噌. Drop 'miso' from the wheat sentence; the wheat noodles and the soy sauce already carry gf: no on their own."
+ },
+ {
+  "id": "kz_ramen_minatoya",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "House broth is made from chicken and fish; even vegetable ramen variations are not confirmed to use a plant-only stock.",
+  "url": "https://ohmicho-ichiba.com/gourmet/shop73701/",
+  "verdict": "supported",
+  "found": "「鶏、魚、昆布、野菜など、ふんだんに材料を使い…煮込んだ天然素材由来のクリアなスープです。」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain curl)",
+  "method": "1 plain curl with iPhone UA",
+  "note": "Supported, and in fact understated — the operator describes ONE house スープ, built on 鶏 and 魚, and 野菜ラーメン appears as a topping variant of it, not as a separate stock. 'Not confirmed to use a plant-only stock' should read 'uses the same chicken-and-fish stock'."
+ },
+ {
+  "id": "kz_ramen_minatoya",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "limited",
+  "recommended": "no",
+  "evidence": [
+   "https://ohmicho-ichiba.com/gourmet/shop73701/"
+  ],
+  "why": "'Limited vegan' implies something on this menu can be eaten. The operator documents a single house stock — 「鶏、魚、昆布、野菜など…煮込んだ天然素材由来のクリアなスープです」 — and every bowl listed (中華そば, 野菜ラーメン, チャーシュー麺, 加賀酒粕ラーメン, 治部煮ラーメン) is served in it; 野菜ラーメン is a vegetable topping on chicken-and-fish soup, not a vegan bowl. There is no plant-only item anywhere on the page, so 'no' is the accurate label and 'limited' invites a vegan to order the 野菜ラーメン believing it is for them."
  }
 ]

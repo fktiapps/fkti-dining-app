@@ -50,5 +50,172 @@
   "http": "200 (plain curl)",
   "method": "1 plain fetch of the cited kanazawalabo page (article dated 2022-08-26, reviews 2019–2022)",
   "note": "Made-in-front-of-you and the talkative owner-chef are both on the page. The clause 'so you can see the ingredients ... about what goes into each dish' is the record's own inference — the source never mentions ingredients, allergens or asking about them — and since this sits in positives it is the sentence a coeliac would lean on; reword to what the source actually says (open counter prep, owner within talking distance) rather than implying ingredient disclosure."
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "The kitchen centers on a tandoor oven baking wheat-flour naan, so airborne flour and shared surfaces make cross-contact likely; no gluten-free handling is documented.",
+  "url": "https://kaname-kanazawa.com/tirupati/",
+  "verdict": "wrong_source",
+  "found": "The cited kaname article (2025-07-18) never mentions a tandoor, wheat flour, or allergens at all — its only naan reference is 「本日のカレー2種にナン・ライス・サラダ・ドリンク・デザートがついて」 and an online-shop mention. The operator's own menu is where the tandoor lives: 「ポレコスングル｜タンドルで焼き上げる豚肉　塩味」, plus タンドリーチキン/チキンテッカ/タンドリープローン and ten naan variants (プレーンナン/ガーリックナン/チーズナン/セサミナン/ミントナン/マサラクルチャ…) and ナンピザ baked on naan dough.",
+  "correct_url": "https://www.indomeshi.com/menu",
+  "http": "200 kaname (plain curl); 200 indomeshi.com/menu (plain curl, Wix — text is present in the server HTML, no JS needed)",
+  "method": "1 plain fetch of the cited article + plain fetch of the operator's own MENU page, then parsed the embedded Wix Restaurants menu JSON for per-item labels",
+  "note": "LOUD. Re-cite to https://www.indomeshi.com/menu — but the second half of this claim is now FALSE and must be rewritten: gluten-free handling IS documented, and it is documented wrongly. See the next row."
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "no gluten-free protocol, no dedicated fryer or prep area mentioned (gf_detail: 'there is no documented gluten-free protocol')",
+  "url": "https://www.indomeshi.com/",
+  "verdict": "unsupported",
+  "found": "The operator runs a per-item 「グルテンフリー」 badge (Wix label id c05c3ba3-0917-4257-ac8b-4677a754bfbb) on its own MENU page. It is applied to six curries (パラックチーズ, パラックパニール, アルパラック, ベジタブルカレー, ビンディパニールマサラ, ダールマッカーニ) — and ALSO to 「ベジタブルランチ　☆お肉の入らないヘルシーなランチです☆／サラダorスープ・カレー2種（ほうれん草カレー・野菜カレー）・大きいナン・ミニライス・ドリンク」 and to 「ベジタブルセット　☆ベジタリアンの方にオススメ☆／・サラダまたはスープ・パパド・野菜の天ぷら・サモサ（インド風コロッケ）・選べるカレー２種・大きいナン・ミニライス・自家製ヨーグルト」.",
+  "correct_url": "https://www.indomeshi.com/menu",
+  "http": "200 (plain curl; Wix server-rendered HTML carries both the visible badge markup and the menu JSON)",
+  "method": "plain fetch of the operator site + extraction of the embedded Wix Restaurants menu payload (labels[] per item)",
+  "note": "ALARMING — this is a live false assurance on the venue's OWN site, not in our data. Two items carrying the shop's グルテンフリー badge list 大きいナン (naan), サモサ (samosa) and 野菜の天ぷら (tempura) in their own descriptions. A coeliac who trusts that badge orders wheat three ways. Our record's gf_detail sentence 'there is no documented gluten-free protocol' is factually wrong and, worse, hides this: rewrite it to say the shop publishes a gluten-free badge and that the badge is demonstrably unreliable, naming the two sets. (Charitable reading — the badge may be meant as 'can be made GF, swap the naan' — but as displayed it reads as a claim about the item as listed.)"
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The vegetarian vegetable curry uses soy-meat dumplings and the menu relies heavily on dairy (naan, kulfi, likely cream/paneer dishes); no vegan-specific separation is documented, so confirm ghee/butter/milk per dish.",
+  "url": "https://kaname-kanazawa.com/tirupati/",
+  "verdict": "supported",
+  "found": "「野菜カレーに入っている団子は、大豆ミートを使用。食べた感じはお肉そのものでしたが、大豆なのでヘルシーで体にやさしく、ベジタリアンの方でも安心して食べられます。」 and 「『クルフィ』とは、カルダモンやサフランといったスパイスを加え、牛乳で煮詰めたインド風ミルクアイスのこと。」 The 'likely paneer/cream' hedge is now confirmable on the operator's menu: パラックパニール（ほうれん草とカッテージチーズ）, パラックチーズ, ビンディパニールマサラ, ダールマッカーニ, バターチキン, and 自家製ヨーグルト bundled into the ベジタブルセット.",
+  "correct_url": null,
+  "http": "200 kaname (plain curl); 200 indomeshi.com/menu (plain curl)",
+  "method": "1 plain fetch of the cited article + operator menu for the paneer/dairy confirmation",
+  "note": "Supported, and the article's wording is worth quoting precisely in the record: the source says ベジタリアンの方でも安心して食べられます — vegetarian, never vegan. Add https://www.indomeshi.com/menu as a second citation so 'likely cream/paneer' can stop being a guess."
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Offers a dedicated vegetable curry and vegetable set aimed at vegetarians, plus a choice of Koshihikari rice instead of naan.",
+  "url": "https://kaname-kanazawa.com/tirupati/",
+  "verdict": "supported",
+  "found": "「単品メニューはもちろん、『ペアディナー』や野菜メニューを中心とした『ベジタブルセット』、『デザートセット』など…」 and the chef's own words 「塩はヒマラヤ岩塩、お米はコシヒカリを使用しています。」 The operator's menu confirms the named items: 「ベジタブルカレー｜日替わりで旬の野菜を使ったカレー」 and 「ベジタブルセット　☆ベジタリアンの方にオススメ☆」.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited article, cross-checked against indomeshi.com/menu",
+  "note": "Holds. One correction for accuracy: 'rice instead of naan' is not how the sets work — every set on the operator's menu bundles BOTH 大きいナン and ミニライス, so a naan-free plate has to be requested, not chosen from the menu."
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Uses Himalayan rock salt and reduces oil for a lighter, more health-conscious style of Indian cooking.",
+  "url": "https://kaname-kanazawa.com/tirupati/",
+  "verdict": "supported",
+  "found": "Chef Mohan Kumar, quoted directly: 「塩はヒマラヤ岩塩、お米はコシヒカリを使用しています。通常のインドカレーは、油を多く使いますが、なるべく使わないようにヘルシーに仕上げています。本場の味はそのままに、良いものを気軽に皆さんに食べていただきたいからです。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited article",
+  "note": "Verbatim from the operator's own quoted words in the cited article. No action needed."
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.indomeshi.com/menu",
+   "https://kaname-kanazawa.com/tirupati/"
+  ],
+  "why": "A flat 'Not gluten-free' rests on the record's claim that no GF handling is documented; that is now false. The shop tags six named curries (ダールマッカーニ, ベジタブルカレー, アルパラック, パラックパニール, パラックチーズ, ビンディパニールマサラ) 「グルテンフリー」 on its own menu, and sells サフランライス separately — a real, orderable plate for a coeliac to enquire about. This is a recommendation to 'ask', explicitly NOT above it, because the same badge sits on ベジタブルランチ and ベジタブルセット whose printed contents are 大きいナン, サモサ and 野菜の天ぷら: the shop's GF judgement cannot be taken at face value, and it bakes naan in a tandoor all service. 'no', though, tells a coeliac not to bother enquiring about the one set of dishes here that might actually work."
+ },
+ {
+  "id": "kz_indomeshi_tirupati",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.indomeshi.com/menu",
+   "https://kaname-kanazawa.com/tirupati/"
+  ],
+  "why": "'Some vegan options' asserts vegan options exist; nothing documents one, and the record's own vegan_detail already concedes 'not confirmed dairy-free or egg-free... must ask specifically about ghee, butter, milk, yogurt and cream in each dish' — label contradicting its own detail. The evidence cuts against the label: the article calls the veg curry 「ベジタリアンの方でも安心して食べられます」 (vegetarian, not vegan), the vegetarian set ships with 自家製ヨーグルト, the other meat-free curries are cheese dishes (パラックパニール, パラックチーズ, ビンディパニールマサラ), and ダールマッカーニ is by definition a butter-and-cream dal. Only 「ベジタブルカレー｜日替わりで旬の野菜」 is even a candidate and its ghee content is unstated. 'ask' is what the evidence supports."
+ },
+ {
+  "id": "kz_issho",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Hojicha roasted tea, the shop's core offering, is naturally gluten-free and vegan.",
+  "url": "https://issho.kagaboucha.com/",
+  "verdict": "supported",
+  "found": "喫茶 section: 「焙じ茶　季節の菓子付き　1,540円(税込)」 — the single café offering. お買いもの: 「良質な一番摘みの茎を焙じた献上加賀棒茶をはじめ、品質にこだわった焙じ茶をご用意しております。お茶のいれ方なども、お気軽にお尋ねください。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited official site",
+  "note": "Hojicha as the core offering is on the page; that roasted tea is gluten-free and vegan is an ingredient fact needing no source (加賀棒茶 is roasted tea stem — note for future readers that this is NOT 麦茶, which is barley). One material omission the record should carry: the café menu is a single bundled set, 焙じ茶 WITH 季節の菓子 at ¥1,540 — tea alone is not listed, so the wagashi a coeliac or vegan has to clear is not optional but attached to the only thing you can order. Trading status confirmed OPEN as of 2026-08-21: latest お知らせ 2026年07月27日, gallery show 2026年8月5日〜8月23日, opening calendar populated through 2027年8月, hours 12:00-17:00 (L.O.16:30) 定休日 月曜・火曜 — matches the record."
+ },
+ {
+  "id": "kz_izakaya_kappo_genzaemon_",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Cooking centers on regional Kaga dishes, sashimi with soy sauce, miso-grilled hoba miso, and dashi-based preparations",
+  "url": "https://genzaemonkiguramachi.gorp.jp/",
+  "verdict": "supported",
+  "found": "Menu items on the operator's Gnavi page: 「刺身盛合わせ」「帆立朴葉(ほおば)みそ焼き」「ふぐぬか漬け」「天ぷら盛合わせ」「自家製かにコロッケ」, and the shop's own blurb 「金沢港で水揚げされた新鮮な魚介をぜひお刺身でお召し上がりください。刺身盛り合わせは1人前1,800円（税込）、単品のお造りは700円（税込）～。また地元の加賀野菜をふんだんに使い、金沢らしい料理をお楽しみいただけます。」 Courses: 「≪のど黒の塩焼き、旬の魚のあら炊き付き≫お任せ会席コース」.",
+  "correct_url": null,
+  "http": "200 (plain curl; gorp.jp is Gnavi-backed and serves the full menu as JSON inside the HTML)",
+  "method": "1 plain fetch of the cited official page, then read the embedded Gnavi menu/course JSON",
+  "note": "The dish inventory checks out item by item, hoba miso included. Two things the record is MISSING and should add: 「天ぷら盛合わせ」 — a deep-fried wheat-batter platter, a bigger and more concrete gluten hazard than the seasoning argument the record leads with — and 「自家製かにコロッケ」, breadcrumbed. Also note the record's name says 木倉町本店 while the operator's own page is 木倉町店; the coordinates match the site's JSON-LD (36.5618/136.6515) exactly, so this is the right branch, just a name to tidy."
+ },
+ {
+  "id": "kz_izakaya_kappo_genzaemon_",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "all typically using wheat-containing soy sauce and miso (gf_detail: 'the kitchen relies heavily on wheat-containing soy sauce and miso')",
+  "url": "https://genzaemonkiguramachi.gorp.jp/",
+  "verdict": "unsupported",
+  "found": "Nothing. The page names no soy sauce or miso brand or type; the only miso reference is the dish name 「帆立朴葉(ほおば)みそ焼き」.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited official page + full-text scan for 味噌/みそ/醤油/アレル/グルテン (no allergen wording of any kind on the page)",
+  "note": "FALSE WARNING — flag for correction. Calling miso 'wheat-containing' is wrong as a blanket statement: most Japanese miso is 米味噌 (rice koji + soybean + salt) with no wheat and no barley, and Ishikawa's own 加賀味噌 is a rice miso. Only 麦味噌 is a gluten grain (barley), and 豆味噌 such as 八丁味噌 is soy alone. The soy-sauce half of the sentence is a sound default and should stay; the miso half should be dropped or narrowed to 'ask whether the miso is 麦味噌'. As written it steers a coeliac away from a category that is usually safe, in the same class of defect as the 八丁味噌 and Mitsuwa-sauce false alarms. The record has plenty of real wheat to point at here — tempura, korokke, soy sauce — so it loses nothing by getting this right."
+ },
+ {
+  "id": "kz_izakaya_kappo_genzaemon_",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is fish- and meat-forward (Kanazawa Port sashimi, nodoguro, Noto beef sukiyaki) with dashi used throughout, so vegetable dishes are not free of animal products.",
+  "url": "https://genzaemonkiguramachi.gorp.jp/",
+  "verdict": "supported",
+  "found": "All three named items are verbatim: 「金沢港で水揚げされた新鮮な魚介をぜひお刺身でお召し上がりください」, 「≪のど黒の塩焼き、能登牛のすき焼き付き≫お任せ会席コース≪飲み放題付き≫ 10,000円（税込）」. And the vegetable half is directly evidenced rather than inferred: 「地元加賀野菜をふんだんにつかったメニューはいかがですか？『加賀太胡瓜』のかにあんかけや、酢の物なども美味しいですよ♪」 — the flagship Kaga-vegetable dish is served under a CRAB sauce.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited official page + embedded Gnavi menu JSON",
+  "note": "Holds, and can be made stronger: quote 「加賀太胡瓜のかにあんかけ」 instead of leaning on 'dashi is used throughout', which the page never states. Trading status OPEN — the Gnavi reservation module returns live availability for 2026-08-21 and 2026-08-22."
+ },
+ {
+  "id": "kz_jardin_paul_bocuse",
+  "city": "kanazawa",
+  "field": "staff_allergy_handling",
+  "quote": "Allergy consultations are accepted at the time of reservation.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17006156/",
+  "verdict": "supported",
+  "found": "On the cited Tabelog page, printed under every course block: 「※食材アレルギーをお持ちの方はご予約時にお申し出・ご相談ください。」 Independently corroborated on the operator's own menu page, appended to each course: 「※食物アレルギーをお持ちのお客様は事前にお申し付けください。」",
+  "correct_url": null,
+  "http": "200 tabelog (s.tabelog.com detail page, iPhone UA — desktop host was not needed but the mobile UA is what was used); 200 hiramatsurestaurant.jp (plain curl)",
+  "method": "iPhone-UA fetch of the cited Tabelog detail page + plain fetch of the operator site for independent corroboration",
+  "note": "Verbatim, and now double-sourced. Worth adding https://www.hiramatsurestaurant.jp/paulbocuse-jardin/menu/ as a second citation so the claim does not depend on Tabelog alone."
+ },
+ {
+  "id": "kz_jardin_paul_bocuse",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "A vegetarian menu is available with advance arrangement.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17006156/",
+  "verdict": "supported",
+  "found": "Tabelog shop-info table, row 料理: 「ベジタリアンメニューあり」. That is the whole of it — three words in a facility-attributes table.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com detail page, iPhone UA)",
+  "method": "iPhone-UA fetch of the cited Tabelog detail page; also fetched the operator's own site and menu page, which never use the word ベジタリアン at all",
+  "note": "The existence of a vegetarian menu is supported; the qualifier 'with advance arrangement' is not — no page says it, including the operator's own. Keep the qualifier only if reworded as a sensible suggestion rather than a stated house rule. Separately, the record is RIGHT not to read this as vegan: ベジタリアン is vegetarian, and a Paul Bocuse kitchen runs on butter, cream and meat/fish stock, so vegan 'ask' is the correct call. Trading status OPEN — operator site carries events dated 2026/08/08 and a fair 11/13 gala announcement."
  }
 ]
