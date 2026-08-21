@@ -111,6 +111,33 @@ Recommend only; nothing you write promotes a record. Upgrades pass through
 REVIEW_PROTOCOL.md's human gate, because a tier above "ask" is the one thing in this
 app that can make someone stop checking for themselves.
 
+## What this sweep has actually found — look for these
+
+Every one of these is a real defect from an earlier shard, not a hypothetical:
+
+- **`vegan: full` on a venue serving meat, fish, dairy or honey.** The single most
+  common defect. GYUMON was labelled fully vegan with 25 items on its own menu marked
+  non-vegan, including A5和牛ラーメン.
+- **A branch citing its SIBLING branch's evidence.** MOON and BACK Kiyamachi's ten
+  sources all print the other branch's address, a kilometre away.
+- **A claim transplanted from a different venue in the same article.** en-kitchen's
+  dedicated-utensil assurance belongs to みちのり亭.
+- **A quote cut before its own ただし / ※ exception.** CHOICE's "100% gluten-free"
+  omits 「except Asakura's pasta, made of ancient wheat」 — 古代小麦 is wheat.
+- **A quote that exists nowhere on the web.** Check the exact string before believing it.
+- **A citation to a guide's bare root**, which cannot evidence anything venue-specific.
+- **A label contradicting its own detail text** — `options` above "Not suitable for celiacs".
+- **A dedicated/high badge on a business that has closed**, sometimes beside a claim
+  reading "Confirmed open".
+- **A lapsed domain** re-registered as casino or gambling content, still linked.
+- **車麩 / グルテンカツ / 生麩 on a vegan menu** — seitan is pure wheat gluten, vegan and
+  dangerous, and a celiac reading the vegan list meets the worst item in the shop.
+- **Mistranslation.** 植物性 means plant-based, NOT wheat-free. 丸大豆 describes the soy,
+  not the wheat — 丸大豆醤油 is wheat-brewed and is NOT a gluten-free soy sauce.
+- **もち麦 / 押麦 / 麦茶 / 麦味噌** — all barley, all gluten, all easy to miss.
+- **Records wrong in BOTH directions**: warning against something harmless while
+  omitting the operator's own admission of contamination.
+
 ## Output
 
 Write a JSON array to the path you are given. One object per item:
