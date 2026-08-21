@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_bakery_roti",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "A wheat-flour bakery; flour is handled openly throughout, so airborne and surface gluten cross-contact is unavoidable. No gluten-free production documented.",
+  "url": "https://good-tomorrow.com/blog/blog-34036/",
+  "verdict": "supported",
+  "found": "「ベーカリー Rotiの店内に入ると、親しみやすい落ち着ける空間。そして焼きたてパンの香ばしい良い香りがします。パンはお店の中央と窓側にたくさん陳列されていました。」 plus 「ベーカリー Rotiには購入したパンを店内で食べられるイートインスペースがあります」. The article names only wheat breads (フレンチトースト, ロールパン, フランスパン生地のフランフラン) and says nothing about gluten-free anything.",
+  "correct_url": null,
+  "http": "200 (plain curl, 107 KB)",
+  "method": "1 plain fetch",
+  "note": "Claim stands, but trim the unevidenced half: the article never enters the kitchen, so \"flour is handled openly throughout\" is inference — what IS documented is open display of baked bread across the sales floor plus an eat-in area. Also note the source is a Hiroshima estate agent's blog covering TWO bakeries; the 「小麦はカナダ産1cw」 line belongs to ル・ミトロン, not Roti — do not let that migrate into this record."
+ },
+ {
+  "id": "hiro_bakery_roti",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Breads and fillings include dairy, egg, meat, and seafood; no separation from animal ingredients is documented.",
+  "url": "https://good-tomorrow.com/blog/blog-34036/",
+  "verdict": "supported",
+  "found": "「ちょっと珍しいなと思ったパンが、カニクリームがおいしそうな ずわいがに 。クリームチーズとオレンジをあわせた クリームチーズとオレンジ 。スモークチーズとポテトサラダをあわせた 士幌ポテト。」 and 「フランスパン生地にバターを練り込み、シロップがぬられているフランフラン」; the shop's most popular item is フレンチトースト.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Dairy (cream cheese, smoked cheese, butter), seafood (snow-crab cream) and egg (French toast, potato salad) are all on the page; MEAT is not — no meat bread is named in the Roti section. Drop \"meat\" or evidence it separately. vegan: ask is the right call for a bakery whose every documented item is animal-containing."
+ },
+ {
+  "id": "hiro_biogaia_talks_baiogaia_t",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The kitchen is built around fermented foods and a body-friendly, health-conscious concept, so wholesome ingredients are a stated focus.",
+  "url": "https://www.biogaia-talks.com/",
+  "verdict": "supported",
+  "found": "Page title: 「【BioGaia TALKS紙屋町東駅2分】お食事で健康に◎発酵食品を取り入れた身体に優しい\"腸活\"メニューを満喫」; body: 「北欧スウェーデン生まれのバイオガイアが手がける、親子で楽しむ菌活カフェです。L.ロイテリ菌メニューと緑あふれる癒しの空間で、心とからだを優しくいたわります。」",
+  "correct_url": null,
+  "http": "200 (plain curl); Shopify-hosted, text present in the shell",
+  "method": "1 plain fetch",
+  "note": "Verbatim support — fermented food (発酵食品/菌活/L.ロイテリ菌) and body-friendly health concept are both the operator's own words. Trading confirmed: 平日11:00-18:00 / 土日祝11:00-17:00, 定休日 毎週月, © 2026. Caveat for the GF layer: a 発酵食品 concept is a gluten RISK signal, not a safe one (miso, shoyu, amazake, koji), so gf: ask is correct and must not drift upward on this citation."
+ },
+ {
+  "id": "hiro_bunchan",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki is cooked on a shared teppan griddle alongside wheat batter and wheat-based noodles; no gluten-free handling is documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340114/34001572/",
+  "verdict": "supported",
+  "found": "Review 「うどんにして失敗、そばにすべきだった〜 … そばを寸胴鍋で茹でてから鉄板で焼いています。」 and 「店内はカープのポスターが貼られたクリーム色の壁、オープンキッチンでコンパクトな…」; genre お好み焼き, keyword tags include 小麦 and 広島風.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com with iPhone UA); desktop tabelog.com also 200 on plain curl (212 KB)",
+  "method": "1 plain fetch (desktop) + 2 mobile-host fetch with iPhone UA",
+  "note": "Strongly supported and better than the record says: a reviewer documents wheat noodles boiled in a stockpot then finished on the same griddle, in an open kitchen with 15 seats. Cross-contact is documented, not merely inferred."
+ }
+]

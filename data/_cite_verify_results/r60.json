@@ -76,5 +76,44 @@
   "http": "200 plain curl (desktop host)",
   "method": "plain fetch of the cited Tabelog detail page",
   "note": "Verbatim, but it is Tabelog's self-reported facility checkbox with no dish named anywhere — the record's 'ask' caveat is doing the real work and should stay. SEPARATE DEFECT on this record: the website field https://issai-itsukushima.com/ is a LAPSED DOMAIN — NXDOMAIN on dns.google, curl returns 000 over http/https and with/without www; last Wayback capture 2022-01-08. The venue is still trading (Tabelog lists 09:00-15:30 / 17:00-21:00, closed Mondays; an Instagram reel dated 2026-06-19 features it), so replace the dead link with the Tabelog or Hitosara page rather than dropping the record."
+ },
+ {
+  "id": "hiro_iwamura",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Anago-meshi is served with a glaze/tare conventionally made from wheat-containing soy sauce, and the menu also includes udon (wheat noodles); no gluten-free preparation is documented.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34002540/",
+  "verdict": "supported",
+  "found": "店舗基本情報 → ジャンル「あなご、うどん、丼」; 関連のキーワード for this shop include 穴子丼, カキフライ, カキフライ定食, 肉うどん, カツ丼, ざるそば. Corroborated by miyajima-komachi's 2026 ranking entry: 「④ 岩むら … ・あなご料理 ・牡蠣料理 ・うどん ※お子様可」.",
+  "correct_url": null,
+  "http": "200 plain curl (desktop host). NOTE the record's menu_url https://tabelog.com/hiroshima/A3402/A340202/34002540/dtlmenu/ returns 404 — dead link.",
+  "method": "plain fetch of the cited Tabelog detail page, plus miyajima-komachi anago ranking",
+  "note": "Udon is confirmed on the cited page's genre line, and the 'conventionally' framing on the tare is honest — no source states this shop's tare recipe. Two things to fix on the record: (1) menu_url 404s, and (2) the gluten load is wider than the record says — カキフライ (panko-fried oyster), カツ丼 and 肉うどん appear in this shop's own Tabelog keyword set, and ざるそば does too, which is the classic GF trap a celiac would otherwise reach for."
+ },
+ {
+  "id": "hiro_iwamura",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is built entirely around conger eel and fish/dashi-based rice bowls and udon; no plant-only preparation is documented and cross-contact with fish is effectively unavoidable.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34002540/",
+  "verdict": "supported",
+  "found": "ジャンル「あなご、うどん、丼」, 営業時間 11:00-16:30, 木曜定休; miyajima-komachi 2026: 「あなごめし専門店ではないけれど…穴子以外のメニューも豊富にそろっています。・あなご料理 ・牡蠣料理 ・うどん」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited Tabelog detail page, plus miyajima-komachi anago ranking (2026 update)",
+  "note": "Conclusion holds — nothing plant-only is documented and animal cross-contact is unavoidable. But 'built entirely around conger eel' is too narrow and contradicts the record's own chef_bio line 'A focus on a single dish done one way': the shop also runs oyster dishes, katsudon, meat udon and fried oyster sets, and miyajima-komachi explicitly files it under 'あなごめし以外もいろいろ食べたい'. Widen the wording to eel + oyster + pork/meat rather than eel alone."
+ },
+ {
+  "id": "hiro_iwamura_momijiya",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The bean paste filling is made simply from carefully selected Hokkaido azuki beans and white granulated sugar, with no documented additives.",
+  "url": "https://hatsukaichi-concierge.media/article/detail/208",
+  "verdict": "supported",
+  "found": "「厳選された北海道産の小豆と白双糖（ザラメ）を使用しております。手間暇かけ、丁寧にアクを取り除き、しっかり煮詰めたあんこです。えぐみのない小豆の風味と上品な甘さをお楽しみください。」 — the article quoting Iwamura Momijiya's own HP.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited hatsukaichi-concierge article; official iwamura-momijiya.com (Wix) also fetched 200 and is live",
+  "note": "Verbatim and correctly attributed to this shop. Two cautions. (1) 白双糖 is coarse Japanese crystal sugar (zarame), not 'white granulated sugar' — a small mistranslation worth fixing. (2) TRANSPLANT RISK: the only 「一切添加物を使用していない」 (no additives whatsoever) sentence in this article belongs to a DIFFERENT shop, だいこん屋, four paragraphs down — the Iwamura quote makes no additive claim, so 'no documented additives' must stay an absence statement and must never harden into an assurance. The article also calls the shell カステラ (castella — flour, egg, sugar), which is the citable basis for the record's not-vegan / not-GF verdicts."
  }
 ]

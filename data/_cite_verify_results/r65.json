@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_nihon_ryori_kodama",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Traditional Japanese kaiseki of this style relies on dashi and soy sauce, which is typically wheat-based; no gluten-free preparation is documented.",
+  "url": "https://magazine.hitosara.com/article/2542/",
+  "verdict": "supported",
+  "found": "「料理はおまかせのコースのみ。丸２日かけて煮込んだ『子持ち鮎の甘露煮』や、仕上がりに3日かける『栗の渋皮煮』などの前菜からも、児玉さんのきめ細かな仕事ぶり…」／「瀬戸内海の大きめの鮑を薄くそぎ、椎茸やグリーンアスパラなどと、特製味噌で和えてオーブンで焼き上げています。」",
+  "correct_url": null,
+  "http": "200 (plain curl; iPhone UA also 200, same body)",
+  "method": "plain fetch",
+  "note": "Holds, and the page names concrete carriers the record only gestures at: 甘露煮 is by definition a soy-sauce-and-mirin simmer, and 特製味噌 is house miso (wheat or barley koji unless stated otherwise). The article carries no allergen, gluten or substitution statement anywhere, so 'no gluten-free preparation is documented' is literally true of this page. gf_confidence 'ask' is appropriate for a 3-groups-a-night omakase where the chef controls every dish; no tier change."
+ },
+ {
+  "id": "hiro_nihon_ryori_kodama",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Courses are built on seafood and fish-based dashi (abalone, scallop, mackerel), so animal products are integral throughout the omakase.",
+  "url": "https://magazine.hitosara.com/article/2542/",
+  "verdict": "supported",
+  "found": "「瀬戸内海の魚介、中国山地で獲れる山の幸などを巧みに盛り込み」／『鮑の味噌風味焼』（鮑＝abalone）／『帆立貝のしんじょ』（帆立貝＝scallop）／『鯖寿司』（鯖＝mackerel）／『子持ち鮎の甘露煮』（roe-bearing sweetfish）",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Precisely supported — the article's three showcased dishes are exactly the abalone, scallop and mackerel the record names, and the menu is おまかせのコースのみ so there is no à-la-carte escape route. vegan_status 'no' is correct; no tier change. Trading: open — the venue's own Gurunavi page https://y747100.gorp.jp/ returns 200 with live hours (火～日 dinner 17:30-22:00) and no 閉店 notice; the hitosara article itself is stale (更新日 2021.07.25)."
+ },
+ {
+  "id": "hiro_nihon_ryori_mamefuku",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a traditional Japanese restaurant relying on dashi, soy sauce and seasoned broths, dishes here almost certainly use wheat-containing soy sauce; no allergy or gluten information is published.",
+  "url": "https://www.mamefuku-hiroshima.com/",
+  "verdict": "supported",
+  "found": "Own お品書き/ランチ menu, verbatim: 「ごきげん巻とうどん 1,500円」「ちらし寿しとうどん 2,200円」「にぎりと紙鍋うどん 2,800円」「海鮮カレーうどん 1,650円」「上天丼 2,800円」「まめ福コロッケ定食 1,700円」「古処鶏からあげ定食 1,700円」「車海老食パンチーズ巻揚 2,640円」「穴子の焼霜造り又白焼又かば焼き」「めばるの煮付」「わけぎのぬた和え」「海鮮カレーライス」. No allergen or gluten text appears anywhere on the site.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch",
+  "note": "The claim is true but far weaker than the evidence. The record hedges on 'almost certainly ... soy sauce' while this venue's own menu prints outright wheat in four udon dishes, tempura/上天丼, korokke, karaage, Japanese curry roux and 車海老食パンチーズ巻揚 — a prawn wrapped in 食パン (white bread). Rewrite the claim around the named udon/tempura/bread items; a celiac needs the hard facts, not an inference about tare. gf 'no' is correct."
+ },
+ {
+  "id": "hiro_nihon_ryori_mamefuku",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is fish- and seafood-centered with dashi-based seasoning throughout, so vegan diners would face fish stock and animal ingredients in most dishes.",
+  "url": "https://www.mamefuku-hiroshima.com/",
+  "verdict": "supported",
+  "found": "「瀬戸内海で育まれる天然魚を活かした海鮮料理」／「特に注力しているのが、季節の鮮魚。…店主自ら市内の市場をほぼ毎日訪れ…瀬戸内の天然魚を中心に」／「コースは鮮魚・野菜料理が中心ですが、お肉料理もご用意しております」. Menu also lists 鯨のサエズリ 2,750円, 鯨のベーコン 2,750円, 牛カルビの炭火焼, 牛ハラミの西京焼, 古処鶏のモモ唐揚, だし巻玉子, いぶりがっこブルーチーズ.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Supported by the operator's own words. Worth adding to the record: the à-la-carte list carries whale (鯨のサエズリ / 鯨のベーコン) alongside beef and chicken — a fact many vegan and vegetarian travellers would want flagged explicitly. vegan_status 'no' is correct; no tier change. Trading: open — site live, current tax-inclusive prices, hours 昼11:30-14:30 / 夜17:30-22:00, 定休日 日曜日, no closure notice."
+ }
+]

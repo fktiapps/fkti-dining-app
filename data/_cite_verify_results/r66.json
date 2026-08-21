@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_okonomi_damashii_goku",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Hiroshima-style okonomiyaki here is finished with a standard okonomiyaki/soy-based sauce, which contains wheat; the batter and noodles are also wheat.",
+  "url": "https://www.go-kuu.info",
+  "verdict": "wrong_source",
+  "found": "Root page says only 「伝統の手押し焼きが生みだす肉、玉子、野菜、麺、ソースの一体感」 and 「極細のしかも生麺を使用した『肉玉そば』のみを提供する専門店」 — sauce and fresh noodles are named, but the word 小麦 never appears on it. The site's OKONOMIYAKI? page does say it: 「小麦粉を水で溶いて薄く焼き」 and 「小麦粉とキャベツをベースに」.",
+  "correct_url": "https://www.go-kuu.info/okonomiyaki",
+  "http": "200 plain curl (453KB); 200 iPhone UA; subpages /okonomiyaki and /general-8 both 200",
+  "method": "1 plain fetch of cited root + plain fetch of two Wix subpages",
+  "note": "Re-cite the wheat-flour half to https://www.go-kuu.info/okonomiyaki, which states 小麦粉とキャベツをベース outright; the root only evidences that sauce and 生麺 are used. The 'sauce contains wheat' half is still uncited inference — no page on this site names the sauce brand or its ingredients, so word it as an assumption rather than a sourced fact."
+ },
+ {
+  "id": "hiro_okonomi_teppanyaki_dojo_",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat-flour okonomiyaki batter and wheat noodles are cooked on a shared teppan griddle alongside all other dishes, so cross-contact with gluten is unavoidable.",
+  "url": "https://okonomiyaki-mihera-hiroshima.owst.jp/",
+  "verdict": "wrong_source",
+  "http": "404 plain curl, 404 iPhone UA, 404 desktop UA, zero bytes each; Wayback availability API returns {\"archived_snapshots\": {}} — never archived",
+  "method": "3 fetch routes + Wayback availability API + Ecosia SERP",
+  "found": "Live Gnavi/gorp official page lists 「まずは定番！肉玉そば/うどん」 as the top seller and 「お好み焼きの他、お酒が進む鉄板焼き料理も豊富にご用意しています！」 — wheat noodles (そば/うどん) cooked on the same teppan as the rest of the menu.",
+  "correct_url": "https://ya23000.gorp.jp/",
+  "note": "The cited owst.jp host is dead (404, never archived) so it evidences nothing at all — repoint all three of this record's claims to https://ya23000.gorp.jp/ (or Tabelog https://tabelog.com/hiroshima/A3401/A340108/34027752/). The shop itself is trading: its gorp PR line reads 「【中区幟町】お好み焼き・鉄板焼き三箆（みへら）元気に営業中！」."
+ },
+ {
+  "id": "hiro_okonomi_teppanyaki_dojo_",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are finished with Hiroshima-style okonomiyaki sauce, which is wheat-based; no wheat-free sauce alternative is documented.",
+  "url": "https://okonomiyaki-mihera-hiroshima.owst.jp/",
+  "verdict": "unreachable",
+  "http": "404 on all three UA routes; no Wayback snapshot exists",
+  "method": "3 fetch routes + Wayback availability API + Ecosia SERP",
+  "found": null,
+  "correct_url": null,
+  "note": "Dead citation, and the replacement source does not carry the claim either: ya23000.gorp.jp names 担々ソース and ホワイトソース toppings but gives no sauce ingredients, so 'wheat-based sauce' stays unevidenced inference. The negative half ('no wheat-free alternative documented') is fair — nothing on the live pages mentions any allergen accommodation."
+ },
+ {
+  "id": "hiro_okonomi_teppanyaki_dojo_",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The single shared teppan is used for pork, chicken, seafood and egg, so any non-meat item would be cooked on the same surface as animal products.",
+  "url": "https://okonomiyaki-mihera-hiroshima.owst.jp/",
+  "verdict": "wrong_source",
+  "http": "404 on all three UA routes; no Wayback snapshot",
+  "method": "3 fetch routes + Wayback availability API + Ecosia SERP",
+  "found": "「山椒の効いた担々ソースでピリ辛な担々焼き(豚ミンチ・ネギ・目玉焼き)…白焼き（ホワイトソース・Wチーズ）」 and 「納豆を玉子で包んだ《とん平納豆》や《天使のエビガーリック焼き》、広島ならではの《ウニほーれん》や《牛こうね》」 — pork mince, fried egg, cheese, prawn, sea urchin and beef, all teppan dishes.",
+  "correct_url": "https://ya23000.gorp.jp/",
+  "note": "Claim is true and now documentable: repoint to https://ya23000.gorp.jp/, whose own copy lists pork mince, egg, cheese, prawn, uni and beef cooked on the teppan."
+ }
+]

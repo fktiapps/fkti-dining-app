@@ -1,12 +1,21 @@
 [
  {
   "city": "tokyo",
-  "id": "tokyo_shinjuku_dialogue",
-  "name": "新宿ダイアログ (Shinjuku Dialogue)",
+  "id": "tokyo3__161",
+  "name": "野菜居酒屋 玄氣",
+  "field": "vegan_status",
+  "from": "full",
+  "to": "options",
+  "why": "OVER-rated, severely. The venue's own menu has a category literally titled 「肉、魚、チーズ、卵」 and sells クジラのステーキ (whale steak) ¥3,500, グラスフェッドビーフカイノミのステーキ ¥3,500, 上州豚肩ロース, 生ウニ軍艦焼き, 水だこ, 天然ヒラメ, 宮城のホヤ, 究極フランクフルト, 極上だし巻きたまご, 伝説ベーコンのチーズ焼き and a チーズクレープ. Its own site says 「肉や魚も食べられる」「お肉もお魚もあり存分に楽しめます」「ビーガンの方と肉好きの方がお互い気にせずお食事をお楽しみ頂けます」, and Vegewel records that only about a third of the bakery's breads are vegan. There are genuine vegan dishes (ビーガンチーズ items, the ¥3,500 vegan course, 玄米 okonomiyaki), so 'options' is the honest tier — 'full' is not defensible on any source."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__236",
+  "name": "ベジキッチン",
   "field": "gf_confidence",
-  "from": "ask",
-  "to": "no",
-  "why": "The only thing holding this above 'no' is a gluten-free guide listing that does not exist — jp.japan-glutenfree.com's current page, its own site search and its closed-shops page all return nothing for 新宿ダイアログ, and Wayback has no snapshot showing it ever did. Meanwhile every operator that IS documented handles wheat: f.-on is a BAKERY&CAFE serving house-baked bagels, Saturday's ノムカフェ serves ciabatta made of 「小麦粉とじゃがいもと塩だけ」, Wednesday's macrobiotic Teru cafe seasons with 「自然醸造の味噌や醤油」, and 百福's evening course includes a 醬油漬け fish dish. No operator publishes any gluten protocol. 'GF — ask' implies there is something to ask about; here the published answer is already no."
+  "from": "options",
+  "to": "ask",
+  "why": "Recorded as a deliberate no-change against the pending restore. The gf_uncited_downgrade note invites restoring 'options' once evidence is attached — the evidence this sweep found argues the other way. What turned up is a full page of soy-sauce-seasoned Indo-Chinese cooking in the same kitchen and zero allergen provision anywhere. The naturally gluten-free South Indian staples are real but the venue makes no gluten statement of any kind. 'ask' is correct."
  },
  {
   "city": "tokyo",

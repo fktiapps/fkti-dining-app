@@ -206,5 +206,94 @@
   "http": "200 via iPhone UA, redirected to s.tabelog.com as the brief predicts; Restaurant + FAQPage JSON-LD both present",
   "method": "iPhone UA fetch of the cited Tabelog detail page, read from its JSON-LD",
   "note": "Better than recorded — the cited page names the actual product (ミツワソース) rather than a generic sauce type, so quote it. The same reviews also give two more wheat carriers this record omits: the そば/うどん noodle layer folded into every 肉玉 and the イカ天 tempura topping. Trading confirmed on the same page: closed Mondays, 11:30-14:00 / 17:30-22:00, 108 reviews, 3.42."
+ },
+ {
+  "id": "hiro_mikuniya",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Gluten-free is accommodated only on advance request rather than by default; the standard dinner curry may use wheat-based roux/thickener, so confirm a wheat-free preparation when booking.",
+  "url": "https://miyajimamikuniya.com/meals/",
+  "verdict": "supported",
+  "found": "「グルテンフリーにも対応可能ですので、ご希望の方は事前にお知らせください。」",
+  "correct_url": null,
+  "http": "200 (plain curl, no UA games needed)",
+  "method": "plain fetch of the cited page",
+  "note": "The advance-request half is verbatim. The roux half is inference — the page never states the curry's thickener, and the operator says nothing about wheat either way. Keep the 'confirm when booking' instruction, drop 'may use wheat-based roux' or mark it clearly as an assumption rather than a source claim."
+ },
+ {
+  "id": "hiro_mikuniya",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Self-service breakfast includes bread and cereal, presenting shared-surface gluten exposure at the morning buffet.",
+  "url": "https://miyajimamikuniya.com/meals/",
+  "verdict": "supported",
+  "found": "「三國屋では、お客様に快適な1日の始まりを迎えていただくため、簡単な朝食 食パン、シリアル、オートミール、スープなどを 無料でご用意しております。時間：05:30～09:30 / スタイル：セルフサービス」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Verbatim, and the page adds one the record misses — オートミール, oats, which are routinely wheat-cross-contaminated in Japan and sit on the same self-service counter as the 食パン. Temper it slightly though: the FAQ page says GF can be arranged at breakfast as well as dinner (夕朝食において…グルテンフリーの対応が可能です), so it is a shared buffet that can be pre-arranged around, not an unavoidable exposure."
+ },
+ {
+  "id": "hiro_mikuniya",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Japanese curry seasoning and soy sauce usually contain wheat; ask that the vegan curry be made with wheat-free/tamari seasoning for a gluten-free order.",
+  "url": "https://miyajimamikuniya.com/meals/",
+  "verdict": "unsupported",
+  "found": "Nothing. The cited page carries no ingredient, seasoning or allergen list of any kind — its entire dinner text is the curry paragraph, and 醤油 appears nowhere on the page or on the FAQ page.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch of the cited page plus /faq/ and /en/meals/, string-searched for 醤油/しょうゆ/たまり/小麦",
+  "note": "Generic category advice with no source behind it, attached to a venue that actually documents gluten-free accommodation — cite 「グルテンフリーにも対応可能」 and the FAQ instead, and note separately that the stated dinner includes 味噌汁 (miso soup), where 麦味噌 barley miso is the western-Japan default and is the concrete wheat/barley question to ask when booking."
+ },
+ {
+  "id": "hiro_mikuniya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The dinner curry is stated to contain no animal-derived ingredients at all (動物性食材は一切使用しておりません).",
+  "url": "https://miyajimamikuniya.com/meals/",
+  "verdict": "supported",
+  "found": "「当館の夕食には、毎日丁寧に手作りする「三國屋オリジナルカレー」をご用意しております。動物性食材は一切使用しておりません。ベジタリアン・ヴィーガンのお客様はもちろん、どなた様にも安心してお召し上がりいただけます。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Exact-string match, quoted correctly and with no ただし/※ exception following it — checked the full page and the EN route. This is a clean operator statement, one of the strongest in the shard."
+ },
+ {
+  "id": "hiro_mikuniya",
+  "city": "hiroshima",
+  "field": "staff_allergy_handling",
+  "quote": "The house explicitly invites guests needing gluten-free to notify them in advance so they can accommodate it.",
+  "url": "https://miyajimamikuniya.com/meals/",
+  "verdict": "supported",
+  "found": "「グルテンフリーにも対応可能ですので、ご希望の方は事前にお知らせください。」 — and, corroborating on a second page, 「Q 食事アレルギーについて　A 夕朝食において、ベジタリアンやビーガン、グルテンフリーの対応が可能です。該当される方は事前にお知らせください。」",
+  "correct_url": null,
+  "http": "200 (plain curl) on both /meals/ and /faq/",
+  "method": "plain fetch of the cited page, then of /faq/ for corroboration",
+  "note": "Supported twice over. Add https://miyajimamikuniya.com/faq/ as a second source — it is the stronger one, because it extends the gluten-free offer to breakfast as well as dinner (夕朝食において)."
+ },
+ {
+  "id": "hiro_mikuniya",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "One of very few gluten-free-accommodating and fully vegan dinner options actually on Miyajima island, where evening dining is scarce.",
+  "url": "https://miyajimamikuniya.com/meals/",
+  "verdict": "supported",
+  "found": "「宮島は朝夕に営業している飲食店が非常に少ないため、シリアルや食パンなどの簡単な朝食とカレーと味噌汁などの簡単な夕食（ヴィーガン対応）をご用意いたします。」 — the scarcity premise is the operator's own stated reason for serving food at all.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Both halves supported on the cited page. One caveat for accuracy: the dinner is described as カレーと味噌汁 and the ヴィーガン対応 label covers the set, but only the curry carries the explicit 動物性食材は一切使用しておりません — the miso soup is not separately declared, so word it as 'the curry is stated animal-free' rather than letting the whole tray inherit it."
+ },
+ {
+  "id": "hiro_kotobukiya_coffee_nobori",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.poppo-cafe.co.jp/nobori/"
+  ],
+  "why": "The operator's own page documents 「約30種のコーヒー豆」 sold by hand-drip — 「ハンドドリップメニューは、新鮮な豆をその場で挽き、ハンドドリップで丁寧においれします。約30種のコーヒー豆からお好きな豆をお選びいただけます。」 — so a plant-based visitor has a real, documented, dairy-free order at a coffee specialist, not merely a theoretical one. 'no' also contradicts the record's own positives line, which already says black coffee here is naturally plant-based. 'limited' rather than 'options' because it is drinks only: the same page markets 珈琲ソフト (soft serve), 珈琲ゼリーソフト, バタートースト and 専用のマシーンで焼くオリジナルパニーニ, and no plant milk is advertised anywhere on the site."
  }
 ]

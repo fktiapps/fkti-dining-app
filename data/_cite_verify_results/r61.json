@@ -89,5 +89,44 @@
   "http": "200 for the cited root; 200 for all Gnavi menu tabs",
   "method": "plain fetch of the cited root, then the four Gnavi menu tabs",
   "note": "Substance holds and is now citable, but the cited root states none of it, and one named ingredient is wrong: あなご / conger eel appears on NO menu tab of this venue — it reads as transplanted from a sibling Hiroshima oyster izakaya (IPPO, in this same shard, does serve あなご). Drop conger eel, cite menu1, and name the 水晶焼 shared plate instead."
+ },
+ {
+  "id": "hiro_kakibune_kanawa",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The restaurant's oyster and seafood dishes use Japanese soy sauce, ponzu, and dashi-based seasonings, which standardly contain wheat; fried oysters are breaded in wheat flour. No gluten-free preparation is documented.",
+  "url": "https://www.kanawa.co.jp/",
+  "verdict": "wrong_source",
+  "found": "Branch page 「旬の味覚を大切にした料理を提供。焼き牟蠿、蒸し牟蠿、牟蠿フライなど、多彩な調理法で四季折々の味わいを堪能できます」",
+  "correct_url": "https://www.kanawa.co.jp/wakyu",
+  "http": "200 for the cited root and for /wakyu (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root, then crawled its internal links to the branch pages",
+  "note": "kanawa.co.jp/ is a GROUP corporate portal for five separate businesses (かき船かなわ 和久 / 瞬戸, かなわekie店, 和久バル, OYSTER FARM) — no dish, no seasoning, no allergen text anywhere on it, so it cannot evidence a per-dish claim. 牟蠿フライ is confirmed at /wakyu (re-cite there); the soy-sauce / ponzu / dashi half is stated on no Kanawa page I could reach and should be softened to \"not documented\" rather than asserted. Note also that 「かき船 かなわ」 is now two boats at one mooring — the record should say which."
+ },
+ {
+  "id": "hiro_kakibune_kanawa",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The entire menu is oyster- and seafood-centered with fish-based dashi; there is no documented vegan or vegetarian preparation.",
+  "url": "https://www.kanawa.co.jp/",
+  "verdict": "wrong_source",
+  "found": "/wakyu: 「こだわり抜いた広島産牟蠿…牟蠿の魅力を最大限に引き出します」、「日本料理の伝統を守りながらも…」 — an oyster-centred kaiseki floor with no vegan or vegetarian line anywhere on the site",
+  "correct_url": "https://www.kanawa.co.jp/wakyu",
+  "http": "200 for the cited root and for /wakyu",
+  "method": "plain fetch of the cited root, then the branch pages it links",
+  "note": "vegan:\"no\" is correct but the citation is a bare group portal. Re-cite /wakyu. One phrase is not documented: \"fish-based dashi\" appears on no Kanawa page — true of Japanese kaiseki generally but asserted here as if sourced; either drop it or mark it as an inference."
+ },
+ {
+  "id": "hiro_kakiden",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are seasoned in the standard Japanese style with soy sauce, which contains wheat; no wheat-free soy sauce is mentioned.",
+  "url": "https://www.kakiden-setouchiryouri.com/menu.html",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited menu page; full お品書き renders in the static HTML",
+  "note": "The cited page carries the complete food and drink menu and the word 醤油 does not appear on it once — the soy-sauce framing is asserted, not sourced. gf:\"no\" is nevertheless right, and the SAME page proves it far better: にゅう麺 950円 (nyumen = wheat somen), 長野県直送盛りそば 800円 (Japanese soba is normally 20% wheat), plus ten fried items — 天ぷらの盛り合わせ、カキフライ、かきの天ぷら、煮穴子の天ぷら、小いわしの天ぷら、鶏の唐揚げ、小海老の唐揚げ、蓮根はさみ揚げ、茄子チーズベーコンのはさみ揚げ、カマンベールチーズの包み揚げ. Rewrite the claim onto those. Separately: this record carries NO vegan claim at all while vegan is set to \"no\" — the gap should be filled (the menu is fish/dairy/meat throughout, only 奥豆腐、トマトスライス、漬物盛り合わせ、五色納豆 come close and all are standard bonito-dressed izakaya items)."
  }
 ]

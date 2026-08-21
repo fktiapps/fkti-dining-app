@@ -24,9 +24,21 @@ const RANK = { no: 0, ask: 1, options: 2, limited: 2, high: 3, full: 3, dedicate
 // vanished from every dial. Anything that is not EXACTLY an enum value is not a tier.
 const GF_TIERS = new Set(['dedicated', 'high', 'options', 'ask', 'no']);
 const VG_TIERS = new Set(['full', 'options', 'limited', 'ask', 'no']);
+// Parse, then validate — do not simply reject. Agents overwhelmingly write the tier
+// FIRST and then explain: "ask — REJECT the pending promotion to high", "options
+// (label 'Vegan options')", "full — RESTORE. The mid-sweep downgrade is wrong". A
+// guard that discarded all of those threw away 14 real findings in one shard, among
+// them the downgrade for a venue selling whale steak under a "Fully vegan" label.
+//
+// So take the leading token and require IT to be an exact enum value. That recovers
+// the finding without ever writing prose into a field the filters match on — the
+// failure this guard exists to prevent.
 const tierOf = (field, v) => {
-  const t = String(v == null ? '' : v).trim().toLowerCase();
-  return (field === 'gf_confidence' ? GF_TIERS : VG_TIERS).has(t) ? t : null;
+  const raw = String(v == null ? '' : v).trim().toLowerCase();
+  const ok = field === 'gf_confidence' ? GF_TIERS : VG_TIERS;
+  if (ok.has(raw)) return raw;
+  const head = raw.split(/[^a-z]+/)[0];      // first alphabetic run
+  return ok.has(head) ? head : null;
 };
 
 const byId = new Map();

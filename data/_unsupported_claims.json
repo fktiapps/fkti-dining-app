@@ -2089,6 +2089,33 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_hiroshima_kakidokoro_tai",
+  "name": "広島牡蠣処 大衆酒場バケツ 立町店 (Hiroshima Kakidokoro Taishu Sakaba Baketsu T)",
+  "field": "soy_sauce_wheat",
+  "text": "Standard Japanese seafood izakaya dishes here rely on conventional wheat-based soy sauce; no gluten-free soy sauce is do",
+  "source": "https://tabelog.com/hiroshima/A3401/A340112/34026949/",
+  "why": "醤油 / しょうゆ / ポン酢 appear ZERO times on the cited page or its menu tab, so the page cannot evidence a soy-sauce claim. The nearest real seasoning evidence there is 「甘辛く煮詰めた牛すじ肉」 (a soy-mirin braise) and タルタルソース. Either repoint the entry at that sujikon line or drop the soy sentence — the record's wheat"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_hiroshima_kara_tsukemen_",
+  "name": "廣島辛つけ麺 くじら屋 (Hiroshima Kara Tsukemen Kujiraya)",
+  "field": "soy_sauce_wheat",
+  "text": "The broth uses a soy-style seasoning typical of Hiroshima tsukemen, which is normally wheat-based; no wheat-free tamari ",
+  "source": "https://www.modokimaru.com/entry/gourmet/220603",
+  "why": "The cited article never mentions soy sauce; it describes the tare as oyster-and-scallop dashi. The soy inference is imported from the generic Hiroshima-tsukemen style, not from this source. Say so, or cite a Hiroshima-tsukemen reference separately — do not attribute it to this blog."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_kakiden",
+  "name": "かき傳 (Kakiden)",
+  "field": "soy_sauce_wheat",
+  "text": "Dishes are seasoned in the standard Japanese style with soy sauce, which contains wheat; no wheat-free soy sauce is ment",
+  "source": "https://www.kakiden-setouchiryouri.com/menu.html",
+  "why": "The cited page carries the complete food and drink menu and the word 醤油 does not appear on it once — the soy-sauce framing is asserted, not sourced. gf:\"no\" is nevertheless right, and the SAME page proves it far better: にゅう麺 950円 (nyumen = wheat somen), 長野県直送盛りそば 800円 (Japanese soba is normally 20% "
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kaki_to_suishouyaki_ku",
   "name": "かきと水晶焼き 空 (Kaki to Suishouyaki Ku)",
   "field": "soy_sauce_wheat",
@@ -2131,6 +2158,15 @@
   "text": "Dishes are seasoned with soy-sauce-based seasonings; standard Japanese soy sauce contains wheat.",
   "source": "https://irori-sasa.jp/",
   "why": "Unsupported — pure genre assumption, no soy sauce mentioned anywhere on this operator's site. The real, documented wheat exposure is stronger and should replace it: every course lists 揚物, the fugu courses list 唐揚, and /lunch/ sells a 茶そば御膳 with 天ぷら (chasoba is wheat noodles). gf_confidence 'no' rema"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_menba_jintoku",
+  "name": "麺場神徳 (Menba Jintoku)",
+  "field": "soy_sauce_wheat",
+  "text": "The dipping broth and tare for tsukemen rely on standard Japanese soy sauce, which contains wheat.",
+  "source": "https://www.menbajintoku.jp/",
+  "why": "The soy-sauce attribution is not on the cited page and should be replaced with the seasoning the operator does name — 辛味噌 — which carries its own gluten risk, since 麦味噌 (barley miso) is standard in western Japan; that keeps the field true and better-sourced."
  },
  {
   "city": "hiroshima",
@@ -2221,6 +2257,15 @@
   "text": "Core items such as rice-flour chiffon cakes and florentine contain egg and dairy; no vegan-dedicated equipment or claims",
   "source": "https://www.atelier-shion.com/home/maimaiko/",
   "why": "The 'contain egg and dairy' half is an inference (chiffon needs egg, florentine needs butter), not something this page says. Either source it or reword to 'ingredients are not published; egg and dairy are likely'. The 'no vegan claims published' half IS supported by absence, and vegan_status 'ask' i"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_mikuniya",
+  "name": "Miyajima Guest House Mikuniya (宮島ゲストハウス三國屋)",
+  "field": "soy_sauce_wheat",
+  "text": "Japanese curry seasoning and soy sauce usually contain wheat; ask that the vegan curry be made with wheat-free/tamari se",
+  "source": "https://miyajimamikuniya.com/meals/",
+  "why": "Generic category advice with no source behind it, attached to a venue that actually documents gluten-free accommodation — cite 「グルテンフリーにも対応可能」 and the FAQ instead, and note separately that the stated dinner includes 味噌汁 (miso soup), where 麦味噌 barley miso is the western-Japan default and is the concr"
  },
  {
   "city": "hiroshima",

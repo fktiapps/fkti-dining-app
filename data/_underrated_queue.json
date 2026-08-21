@@ -241,6 +241,33 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__225",
+  "name": "味農家",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.minoyavege.com/",
+   "https://www.minoyavege.com/course.html",
+   "https://www.minoyavege.com/english.html"
+  ],
+  "why": "UNDER-rated for the same reasons as tokyo3__174: one gluten-free course by design, no second non-GF course to share the kitchen with, reservation-only with nothing pre-batched, one chef, advance dietary requests accepted in writing. Ceiling is 'options' and no higher, because the operator states the gluten-free is a culinary choice — 「アレルギー対応としてではなく」 — and never names the shoyu or miso."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__225",
+  "name": "味農家",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "full",
+  "evidence": [
+   "https://www.minoyavege.com/",
+   "https://www.minoyavege.com/english.html"
+  ],
+  "why": "Recorded as a NEGATIVE result, now urgent. During this sweep a sibling process moved this record from vegan_status 'full' to 'options'. That is correct for four of the five 'Fully vegan' records in this shard but WRONG here: the operator states 「肉・魚・卵を一切使わない本格和食のコース」 and 「出汁は昆布と野菜のみで丁寧に取り、動物性のものは使用しておりません」, and the English site says 'All courses are vegan-friendly and gluten-free.' Worse, its duplicate tokyo3__174 was left at 'full', so one restaurant now shows two different vegan tiers in the app."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__235",
   "name": "グルテンフリー ティーズキッチン 上野広小路店",
   "field": "gf_confidence",
@@ -365,5 +392,17 @@
    "https://onhome2.seesaa.net/article/2024-03-02-6.html"
   ],
   "why": "The operator's own current menu states the パキスタンカレー is chicken and vegetables simmered in olive oil with spices, 「水は使わず味付けは塩のみ」 — salt only, so no soy sauce and no wheat roux — served with rice and a carrot salad, and the blog photo confirms it arrives on turmeric rice with a キャロットラペ. ぜんざい (azuki with grilled mochi), 白玉冷やしぜんざい, お抹茶単品 and 甘酒 are likewise wheat-free by composition. 'no' with the detail text saying 'at most a plain coffee or tea' denies a celiac a documented flour-free main dish; 'ask' is honest because the same small kitchen bakes chiffon cake daily and toasts bread, so cross-contact is real and unprotocolled."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_kotobukiya_coffee_nobori",
+  "name": "寿屋珈琲 幟町店 (Kotobukiya Coffee Noboricho)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.poppo-cafe.co.jp/nobori/"
+  ],
+  "why": "The operator's own page documents 「約30種のコーヒー豆」 sold by hand-drip — 「ハンドドリップメニューは、新鮮な豆をその場で挽き、ハンドドリップで丁寧においれします。約30種のコーヒー豆からお好きな豆をお選びいただけます。」 — so a plant-based visitor has a real, documented, dairy-free order at a coffee specialist, not merely a theoretical one. 'no' also contradicts the record's own positives line, which already says black coffee here is naturally plant-based. 'limited' rather than 'options' because it is drinks only: the same page markets 珈琲ソフト (soft serve), 珈琲ゼリーソフト, バタートースト and 専用のマシーンで焼くオリジナルパニーニ, and no plant milk is advertised anywhere on the site."
  }
 ]

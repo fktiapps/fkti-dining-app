@@ -128,5 +128,70 @@
   "http": "200 (plain curl, 85KB)",
   "method": "1 plain fetch",
   "note": "Supported. Only two items on the whole page are plausibly plant-based (枝豆, 広島菜キムチ — kimchi usually carries fish sauce/shrimp), so vegan_status 'no' is right. Minor wording nit: the site does not state there is exactly ONE griddle; say 'shared teppan' rather than 'single'."
+ },
+ {
+  "id": "hiro_hoshiimama_ikkyo",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "No gluten-free handling is documented; the menu includes fried items (tuna rare-cutlet), and Japanese izakaya cooking relies on wheat-based soy sauce, so cross-contamination should be assumed.",
+  "url": "https://ikkyou.owst.jp/",
+  "verdict": "supported",
+  "found": "「【数量限定】マグロのレアカツ 1,650円 (税込)」 is on the cited landing page; アレル/グルテン/小麦 return zero hits there.",
+  "correct_url": null,
+  "http": "200 ikkyou.owst.jp (plain curl, 39KB); 200 ikkyou.owst.jp/menu (courses only); 200 hotpepper /strJ001232599/food/ (plain curl, 100KB)",
+  "method": "1 plain fetch of the cited page + 1 plain fetch of the operator's own linked Hot Pepper food menu",
+  "note": "Supported, but badly understated. The operator's linked Hot Pepper menu (updated 2025/04/08) has a whole 【揚げ物】 section — 地蛸の唐揚げ, こいわし天ぷら, さきいか天ぷら, 蓮根はさみ揚げ, 若鳥の唐揚げ, 自家製がんす, 白肉天ぷら, ポテトフライ — plus 牡蠣フライ and 穴子の天ぷら under 【海鮮】. がんす in particular is a breaded Hiroshima fish cake. Cite https://www.hotpepper.jp/strJ001232599/food/ and note the potato fries share that fryer."
+ },
+ {
+  "id": "hiro_hoshiimama_ikkyo",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a traditional Japanese izakaya, standard soy sauce (wheat-containing) is used across sashimi, simmered and grilled dishes; no wheat-free tamari is mentioned.",
+  "url": "https://ikkyou.owst.jp/",
+  "verdict": "wrong_source",
+  "found": "醤油 is zero hits on the cited page AND on the Hot Pepper menu. What IS documented, on Hot Pepper: 「高宮鶏　せせり 塩/味噌たれ/自家製ぽん酢の味付けより、お選び頂けます。」, the same for 石見ポークタン, 「旬魚の西京焼き 自家製の西京味噌で漬け込んだ」, and 「だし茶漬け」. The cited landing page carries only 「和牛こうね炙り…自家製ポン酢との相性抜群！」.",
+  "correct_url": "https://www.hotpepper.jp/strJ001232599/food/",
+  "http": "200 both (plain curl)",
+  "method": "1 plain fetch of the cited page + 1 plain fetch of the linked Hot Pepper food menu",
+  "note": "Reword and re-cite. No page names 醤油; the documented seasonings are house ponzu, miso-dare and saikyo miso. Ponzu is soy-sauce-based and miso is commonly barley or wheat miso, so the gluten conclusion holds — but say what the sources actually show instead of asserting bare soy sauce, and note the salt option offered on the grilled meats, which is a real lead for a celiac who asks."
+ },
+ {
+  "id": "hiro_hoshiimama_ikkyo",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is centered on fish, oysters, anago, chicken, horse and beef, with bonito dashi typical of the cuisine; no vegan preparations are documented.",
+  "url": "https://ikkyou.owst.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited landing page shows only three dishes — マグロのレアカツ, 馬刺し：上ロース, 和牛こうね炙り — so tuna, horse and beef only. Oysters, anago and chicken are on the Hot Pepper menu instead: 「江田島産　牡蠣だし蒸し」「牡蠣フライ」「穴子刺し」「穴子の天ぷら」「広島高宮鶏の蒸し鶏サラダ」「高宮鶏　せせり」, with the shop strapline 「広島/流川/生牡蠣/穴子刺し/地物料理/刺し身/和食/鍋/個室/地酒/宴会/居酒屋/飲み放題」.",
+  "correct_url": "https://www.hotpepper.jp/strJ001232599/food/",
+  "http": "200 both (plain curl)",
+  "method": "1 plain fetch of the cited page + 1 plain fetch of the linked Hot Pepper food menu",
+  "note": "Claim is entirely true but half of it is not on the cited page — swap the citation to the Hot Pepper food menu, which carries every species named. The 'bonito dashi typical of the cuisine' clause is still inference (no page says 鰹だし; 牡蠣だし蒸し is oyster dashi). Vegan 'no' is right, though 自家製豆腐, 茶豆枝豆, セロリ浅漬け, 自家製ゆず大根 and 山芋たんざく exist and the record should not imply the menu is 100% animal."
+ },
+ {
+  "id": "hiro_ichigakusho_mikansei",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The curry is cooked without any oil/fat, using a base of vegetables, fruits, and spices, which can suit health-conscious and lighter-eating diners.",
+  "url": "https://ichigakushou.jimdofree.com/",
+  "verdict": "supported",
+  "found": "Cited homepage: 「油を使っていないのでとってもヘルシーなカレーです。」. The full sentence the claim paraphrases is one page deeper, on /カレーメニュー/: 「油 を使っておらず 、こだわりの 手作り仕様 です。野菜 ・ フルーツ ・多数の 特性スパイス を使用しており、たいへん ヘルシー なのですが、 奥深い 仕上がりとなっております。」",
+  "correct_url": null,
+  "http": "200 homepage (plain curl, 46KB); 200 /カレーメニュー/; 200 /一品料理メニュー/; 200 Yahoo Japan SERP (iPhone UA)",
+  "method": "1 plain fetch of the cited page + 2 plain fetches of menu subpages + Yahoo Japan search for trading status",
+  "note": "Supported — but the homepage only evidences 'oil-free and healthy'; the vegetables/fruits/spices half needs https://ichigakushou.jimdofree.com/%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/ added as a second citation. GF side-note worth adding to gf_detail: an oil-free curry cannot be built on a conventional 小麦粉+油 roux, so this is one of the rarer izakaya-adjacent places where asking about wheat could actually pay off. Trading status confirmed OPEN — Yahoo/Tabelog shows 営業中 with reviews dated 2026/6/22, 2026/5/11 and 2026/5/5."
+ },
+ {
+  "id": "hiro_ichigakusho_mikansei",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "ask",
+  "evidence": [
+   "https://ichigakushou.jimdofree.com/%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/",
+   "https://ichigakushou.jimdofree.com/%E4%B8%80%E5%93%81%E6%96%99%E7%90%86%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/",
+   "https://ichigakushou.jimdofree.com/"
+  ],
+  "why": "Nothing on this operator's site claims a vegan or vegetarian item — ベジタリアン/ヴィーガン/植物性 are zero hits across the homepage, curry menu and a-la-carte menu. The curry list is chicken, pork-ginger, beef, egg, seafood, hamburg and a フルーツカレー finished 「バターで柔らかくリンゴを焼いて」, and the evening a-la-carte is cheese, ham steak, pork loin and grilled fish. The only candidates are ベーシックカレー and とーふカレー, whose shared roux composition is nowhere documented, and a 2026 Tabelog review describes a day-curry with ホワイトソース. 'Some vegan options' asserts more than any source shows; 'ask' matches the record's own vegan_detail, which already says ingredients 'are not documented as vegan'."
  }
 ]

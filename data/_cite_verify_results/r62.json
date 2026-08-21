@@ -128,5 +128,82 @@
   "http": "200 (s.tabelog.com, iPhone UA)",
   "method": "route 1 — iPhone UA on the mobile host",
   "note": "Supported; vegan_status 'no' is correct. The 'likely fish dashi' clause is inference — this is a grill counter, not a dashi kitchen — so soften it to the shared charcoal grill, which is the actual documented hazard. Trading confirmed: 営業時間 09:00-19:00, most recent 口コミ dated 2026/08."
+ },
+ {
+  "id": "hiro_kikkawa_shichiura_do",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The shop is a wheat-flour momiji manju bakery, so the environment is inherently flour-heavy and not suitable for gluten avoidance.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34016261/",
+  "verdict": "supported",
+  "found": "Tabelog 七浦堂: genre 「和菓子」; review 「宮島で最安値の紅葉饅頭♪ … 宮島郵便局のある交差点の対面にある「吉川七浦堂」さん。1923年(大正12年)創業、店主は吉川進氏。」; 関連のキーワード 「饅頭／こし餡／紅葉／もみじまんじゅう／カステラ／菓子」.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA, 512KB)",
+  "method": "route 1 — iPhone UA on the s.tabelog.com mobile host",
+  "note": "Supported that this is a momiji-manju-only wagashi shop, and カステラ in the keyword list pins the batter as castella-style (wheat + egg). Caveat for the rewrite: the word 小麦 appears nowhere on the page, and 'flour-heavy environment / airborne flour' is an inference — momiji manju is a poured batter in an iron mould, not a dusted-flour bakery, so the honest hazard is that every product is wheat, not airborne dust. Trading confirmed: 営業時間 10:00-17:00, no 閉店 banner, 43 reviews."
+ },
+ {
+  "id": "hiro_kimuraya_honten",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "All momiji manju are baked from a wheat-flour batter, so the entire product line contains gluten; there is no gluten-free option.",
+  "url": "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain curl with iPhone UA, 136KB, article dated 2023年12月13日)",
+  "method": "route 1 plain fetch, then followed the article's own linked 10-maker comparison piece",
+  "note": "The cited article fetched fine and is genuinely about this shop, but it publishes NO ingredient list and never writes 小麦 or 小麦粉 — it discusses 生地 texture, 乳化剤不使用, こしあん, 豆乳クリーム and チーズ only. The claim is true as category knowledge (the same blog's https://oyakodetanoshimou.com/momijimanju-report/ prints 原材料 for ten makers and every one reads 小麦粉 + 卵), but that article does NOT cover 木村家本店, so it cannot serve as a substitute citation for this shop. Either soften the claim to a category statement or find a 木村家本店 ingredient label."
+ },
+ {
+  "id": "hiro_kimuraya_honten",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The shop makes dairy-based fillings (cheese, soy-milk cream) alongside the bean-paste varieties in the same small operation, so cross-contact for a strict vegan cannot be ruled out.",
+  "url": "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+  "verdict": "unsupported",
+  "found": "「店員さんにおすすめを尋ねると、個人的なおすすめは豆乳クリームとのことなので、購入♪」 and separately 「こちらはチーズ。…チーズの面積が小さく分厚いので、よりチーズの歯ごたえが感じられました。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 plain fetch",
+  "note": "MISTRANSLATION DEFECT. 豆乳クリーム is SOY-MILK cream — plant-based, not dairy. The record files it under 'dairy-based fillings', which is the same 植物性/丸大豆 error class the brief warns about, and it is the one item at this shop a vegan might actually be steered toward. Cheese is real dairy and is on the page, so rewrite as: 'the shop makes a dairy cheese filling alongside a soy-milk cream and the bean pastes in one small operation'. The cross-contact conclusion survives; the parenthetical does not."
+ },
+ {
+  "id": "hiro_kimuraya_honten",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Momiji manju here are made without emulsifiers or additives, keeping the original traditional recipe.",
+  "url": "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+  "verdict": "supported",
+  "found": "「こちらのもみじ饅頭は、なんと乳化剤不使用！たくさんもみじ饅頭を知っているつもりですが、乳化剤不使用のもみじ饅頭は他に知りません！」 and 「昭和8年の創業より、配合を変えず昔ながらの生地にこだわり、乳化剤等を使用せず製造されているため、しっかりした歯ごたえのある生地になっている」.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 plain fetch",
+  "note": "Squarely supported on emulsifiers and on the unchanged 昭和8年 recipe. One trim: the article says 「乳化剤も添加物のひとつなので」 — emulsifier is ONE additive — it never claims the product is additive-free, so 'or additives' overstates it. Say 'without emulsifiers'. Shop is trading: Tabelog 34005287 live, 1933年(昭和8年)創業, 定休日 不定休, no 閉店 flag."
+ },
+ {
+  "id": "hiro_kimuraya_honten",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+   "https://oyakodetanoshimou.com/momijimanju-report/"
+  ],
+  "why": "Every momiji-manju maker with a published 原材料 in the same blog's ten-maker comparison lists 卵 (and several list 乳 or 蜂蜜) in the castella batter, and 木村家本店 states it has not changed its 昭和8年 配合; there is no documented egg-free item, so 'ask' invites a vegan to hunt for something that does not exist. Note the repo's near-identical neighbour もみじ饅頭 木村屋 (hiro_momiji_manju_kimuraya) already carries 'no' on exactly this reasoning — the two records should not disagree."
+ },
+ {
+  "id": "hiro_kimuraya_honten",
+  "city": "hiroshima",
+  "field": "identity",
+  "quote": "木村家本店 (Kimuraya Honten) vs もみじ饅頭 木村屋 (hiro_momiji_manju_kimuraya)",
+  "url": "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+  "verdict": "supported",
+  "found": "「こちらの近くにも「木村屋」というもみじ饅頭店があり、そちらと混同されがちですが、こちらは「木村家本店」です。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 plain fetch",
+  "note": "Sibling-confusion check PASSES: these are two genuinely different Miyajima shops and each record cites its own dedicated article (…/kimuraya-honten-momijimanju-miyajima/ vs …/miyajima-momijimanju-kimuraya/). The source itself flags that visitors mix them up. Map defect only: both records carry the identical placeholder pin 34.2986/132.3215, so they stack — 木村家本店 is at 宮島町844-1 by the 商店街 entrance next to ミヤトヨ本店."
  }
 ]
