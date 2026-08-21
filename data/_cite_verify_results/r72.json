@@ -128,5 +128,57 @@
   "http": "200 (plain curl) on the cited page; 200 (iPhone UA) on the three gnavi menu pages",
   "method": "1 plain fetch of the cited page, then exact-string search for 醤油/しょうゆ/ソース across it and across all three gnavi item menus",
   "note": "The cited page names no sauce and no soy sauce at all - the strings 醤油, しょうゆ and ソース return zero hits there and on every gnavi menu page, so this is cuisine convention written as if sourced. The claim is very probably true of the shop, but as filed it is unevidenced and should be reworded as an explicit assumption. Meanwhile the seasoning the shop DOES document is a bigger miss: 「広島の味噌をブレンド！修竜特製の味噌ダレ使用！！」 - western-Japan miso blends commonly include 麦味噌, which is barley, i.e. gluten by a route the record never mentions. Also unlisted: 辛めん 385円 and the キムチ topping."
+ },
+ {
+  "id": "hiro_teppanyaki_okonomiyaki_s",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The griddle is shared with pork, seafood, offal and egg, so any item would have animal-product cross-contact.",
+  "url": "https://y188000.gorp.jp/",
+  "verdict": "supported",
+  "found": "引用元ページ:「使用してる卵は全部黄身が２つ入っている修竜こだわり卵を使用」（卵）／「和牛ステーキや1年中食べれる広島名物牡蠣、広島の隠れた名物グルメのウニホーレンなど」（牛・牡蠣・雲丹）／コース名「＜120分飲み放題付＞うにホーレン・ホルモン・牡蠣付 Bコース」「ホルモン・ステーキ付 Aコース」（ホルモン＝もつ）。豚は引用元に0件だが r.gnavi.co.jp/0000718883/menu2 に 豚キムチ・ナス豚・豚ニラ玉・豚耳、menu1 に「お好み焼き（肉・玉子入り）」",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited page; 200 (iPhone UA) on r.gnavi.co.jp/0000718883/menu1 and menu2",
+  "method": "1 plain fetch of the cited page's embedded JSON, then the two gnavi item menus for the pork term",
+  "note": "Egg, seafood (oysters, sea urchin), offal (ホルモン) and beef are all on the cited page, and everything is cooked on the shop's teppan, so the claim's substance holds. Pork is the one named animal absent from the cited page - it is explicit on the gnavi menu (豚キムチ, ナス豚, 豚ニラ玉, 豚耳, and 肉入り okonomiyaki), so add https://r.gnavi.co.jp/0000718883/menu2 rather than leave it unsourced. No vegan or vegetarian item is advertised anywhere; the nearest plant dishes (ねぎ焼き, 山芋ふわとろ焼き) contain egg and share the griddle, so vegan: no is correct."
+ },
+ {
+  "id": "hiro_teranishi_coffee_honten",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "An oat-milk iced coffee is offered, giving a plant-milk option alongside black self-roasted coffee.",
+  "url": "https://magazine.cliiip.jp/gourmet/2056/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain curl, 70.8 KB) on the cited article; 200 (plain curl) on teranishicoffee.com root, /メニュー-1/本店メニュー/ and /メニュー-1/国泰寺店メニュー/; Ecosia answered 200 first try",
+  "method": "1 plain fetch of the cited page + exact-string search for オーツ/オート麦/えん麦/燕麦/oat/ソイ/豆乳/アイス; then the operator's own two branch menu pages; then Ecosia (https://www.ecosia.org/search?q=てらにし珈琲+オーツミルク)",
+  "note": "SERIOUS - this claim has no source anywhere. The cited page is a 2021-05-13 founder interview with 寺西隆幸 about how the shop was started; the strings オーツ, オート麦, えん麦, 燕麦, oat, ソイ, 豆乳 and even アイス return ZERO hits on it, and it never lists a drink menu at all. The operator's own menu pages are worse than silent, they point the other way: 本店 lists ブレンドコーヒー/アイスオーレ/ココア/琥珀の女王/フレッシュジュース, 国泰寺店 lists ブレンドコーヒー/カフェオレ/紅茶/ソフトクリーム, and the site's about text says 「ミルクは珈琲に一番合うよう調整した自家製ミルクを」 - a house-tuned DAIRY milk, which the cited interview also dwells on (「ミルクもコーヒーに合うよう1㏄ずつスポイトで調整して」). Ecosia found no page connecting this shop to oat milk. Delete the claim: a vegan or dairy-allergic reader would travel to 宝町 for a plant milk that is not on either branch's menu. Two smaller fixes from the same fetches: the cited article's shop box prints TEL 082-242-3850 for 本店, but the operator's site gives 082-249-3850 for 本店 and 082-242-3850 for 国泰寺店, so the article has the branches crossed; hours 8:00-18:30, 定休日 日曜・祝日 agree on both. Trading status OK: teranishicoffee.com live, both branches listed, site notice board last updated 2025/02/10."
+ },
+ {
+  "id": "hiro_tetsujin_chuka_kimura",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes use soy sauce, XO sauce and other Chinese seasonings that are typically wheat-containing, and the menu includes ramen and fried rice.",
+  "url": "https://www.modokimaru.com/entry/gourmet/250128",
+  "verdict": "supported",
+  "found": "「▼甲イカのXO醤炒め(2500円)」／「▼にんにく炒飯(1700円)」／「▼葱ラーメン(1500円) ネギの存在感もちょうど良く、スッキリとシメれるラーメン。」／「▼エビチリ(2000円) 少し酸味がきいたピリ辛。ケチャップが奥行きにいるのかな。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 94.5 KB) on the cited blog post; 200 (iPhone UA) on s.tabelog.com/hiroshima/A3401/A340110/34022794/ for the trading check",
+  "method": "1 plain fetch of the cited page; iPhone UA on the s.tabelog.com mirror for corroboration and trading status",
+  "note": "Three of the four elements are verbatim on the cited page - XO醤, 炒飯 and ラーメン are each named with prices, and ramen noodles are the single most concrete wheat item in the record. Caveat to record honestly: the word 醤油 appears nowhere on the cited page, so the soy-sauce half is Chinese-cuisine convention rather than something this source states; XO醤 does carry it (commercial XO sauce is built on soy sauce and often oyster sauce). Tabelog adds two wheat vectors the record misses: 酢豚 and 骨付き唐揚げ, both flour- or starch-dredged and deep-fried in shared oil. Trading status OK: Tabelog 34022794 shows no 閉店/移転 banner, 広島市中区銀山町11-23, 18:00-23:00, closed 日・祝, matching the blog's 2025-01-28 field notes."
+ },
+ {
+  "id": "hiro_tetsujin_chuka_kimura",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen is meat- and seafood-forward (chicken, shrimp, squid; pork-based mapo dishes), so heavy shared-equipment animal cross-contact is expected.",
+  "url": "https://www.modokimaru.com/entry/gourmet/250128",
+  "verdict": "supported",
+  "found": "「▼蒸し鶏の冷製葱生姜風味(1800円) 鶏肉はかなりの厚みがありました」（鶏）／「▼エビチリ(2000円)」（海老）／「▼甲イカのXO醤炒め(2500円)」（イカ）／「▼麻婆ナス(1800円)」「▼麻辣豆腐(2000円)」／「カウンターは12席かな。テーブル6席ありました」（オープンキッチンのカウンター中華）",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited page; 200 (iPhone UA) on s.tabelog.com/.../34022794/",
+  "method": "1 plain fetch of the cited page; Tabelog via iPhone UA to test the pork element",
+  "note": "Chicken, shrimp and squid are each verbatim with prices on the cited page, and it is a 12-seat counter kitchen where every dish comes off the same wok line, so the cross-contact conclusion is sound. One inference to label as such: the cited page never says the mapo dishes contain pork - it names 麻婆ナス and 麻辣豆腐 only, with no 豚/挽肉 anywhere on the page. Pork at this venue is real but the evidence is elsewhere: a Tabelog review lists 酢豚 among what the party ate. Either soften to 'mapo dishes, which conventionally use pork mince' or cite Tabelog for the pork. Note also that the two nominally plant dishes seen here - 春菊の炒め (an off-menu verbal offer) and 空芯菜の炒め物 (Tabelog) - come off the same wok and would conventionally be finished with oyster or XO sauce, so vegan: no stands."
  }
 ]

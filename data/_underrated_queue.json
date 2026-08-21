@@ -499,6 +499,33 @@
   "why": "The shop's own menu labels ポテサラチーズ焼 as 「ベジタリアン可」 with the note 「肉・魚が含まれませんのでベジタリアンの方にもお食事頂けます」, and lists four self-made tofu dishes including a mozzarella-free 豆富のカプレーゼ served cold. That is an operator who already thinks about excluding meat and fish, so a vegan has something concrete to ask about; 'no' tells a reader not to bother. Still not 'options' — every flagged item contains cheese or egg and nothing is stated to be vegan."
  },
  {
+  "city": "hiroshima",
+  "id": "hiro_yamadaya_miyajima_honten",
+  "name": "やまだ屋 宮島本店 (Yamadaya Miyajima Honten)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://yamadaya-shop.jp/f/zairyou",
+   "https://yamadaya-shop.jp/c/yamadaya/momiji/koshian/115",
+   "https://momiji-yamadaya.co.jp/tenpo/"
+  ],
+  "why": "ask — the record's 'Not gluten-free' rests on the assertion that both signature products are wheat-flour cakes, and that is wrong for one of them. The operator's statutory allergen table gives 桐葉菓(とうようか) as もち粉-based with 「特定原材料 乳、卵」 and no 小麦, the same for the entire 餅 series, and 富久者有智 carries no 特定原材料 at all. Wheat labelling is legally mandatory in Japan, so these are declared wheat-free products, not guesses. No segregation or cross-contact control is documented anywhere on the site and the momiji-manju batter is wheat, so nothing above 'ask' is defensible — but 'no' tells a celiac on Miyajima there is nothing here, and the operator's own label says otherwise."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yamadaya_miyajima_honten",
+  "name": "やまだ屋 宮島本店 (Yamadaya Miyajima Honten)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://yamadaya-shop.jp/f/zairyou",
+   "https://momiji-yamadaya.co.jp/tenpo/"
+  ],
+  "why": "limited — 富久者有智(ふくわうち) is 「砂糖（国内製造）、小豆、きな粉（大豆）、水飴／着色料（紅麹、クチナシ）」, an entirely plant-based own-brand 和菓子 sold under やまだ屋銘菓, with 「アレルギー物質（特定原材料） -」. Exactly one item out of roughly 45 and the shop makes no vegan claim, so 'limited' rather than 'options'; but 'no' is contradicted by the operator's own ingredient line. Everything else carries 卵 and/or 乳 (ふわもち桜 adds はちみつ), and /tenpo/ warns 「店舗によってお取扱い商品が異なる場合がございます」, so the detail text should name the one item and say stock varies by store."
+ },
+ {
   "city": "kanazawa",
   "id": "kz_amanatto_kawamura",
   "name": "甘納豆かわむら (Amanatto Kawamura)",
@@ -525,6 +552,18 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_cafe_yasuecho_jardin",
+  "name": "カフェ 安江町ジャルダン (Cafe Yasuecho Jardin)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.weekend-kanazawa.com/entry/yasuechojardin"
+  ],
+  "why": "ask — the record calls the venue wheat-centric on the strength of a pancake it does not serve. The article publishes the full four-ingredient list of the 宝達くずミルクプリン (宝達葛, きび砂糖, 牛乳, 生クリーム, topped きな粉+黒蜜) — every one wheat-free — made to order in 20 minutes by a hands-on owner who tastes and approves each item. That is exactly an 'ask' situation, not a 'no'. Caveat for the human gate: scones are baked to order in the same small machiya kitchen, so airborne flour is a live risk and must stay in gf_detail."
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_fruit_murahata_honten",
   "name": "フルーツむらはた 本店 (Fruit Murahata Honten)",
   "field": "gf_confidence",
@@ -535,5 +574,31 @@
    "https://www.murahata.co.jp/kanazawa-parfait/"
   ],
   "why": "The published menu is not wheat-free but it is not wheat-only either: 「◎まるごと夕張メロン 2,500円」「■フルーツごろごろジュレMIX 648円」「◎シャインマスカットソーダ 700円」「◎水蜜桃ヨーグルト」 are whole fruit, jelly, soda and yoghurt items that contain no wheat by construction, sold beside the ワッフル/タルト items. 'no' reads as 'nothing here is safe', which is wrong for a fruit parlour; 'ask' is honest because the company publishes no allergen policy anywhere on its site."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kanmi_cafe_chayu",
+  "name": "甘味カフェ 茶ゆ (Kanmi Cafe Chayu)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "options",
+  "evidence": [
+   "http://chayu.info/",
+   "https://www.weekend-kanazawa.com/entry/chayu"
+  ],
+  "why": "options — the operator states in its own words that its signature item's wafer is gluten-free: 東山アイスもなか 「原材料に北陸産もち米のみを用いた最中種は自然な甘みと香ばしい風味が特徴のグルテンフリー」, and it publishes an アレルギー原材料 line for every gelato flavour, of which exactly one (金沢大野醤油＆焦がしキャラメル: 乳/卵/大豆/小麦) contains 小麦. 雪見アイスもなか is 最中種＋求肥＋粒餡 and the 2F menu is わらび餅・あんみつ・寒天・餡子 — all rice/agar/bean. Not 'high': どら焼き/チョコどら生地 and the deep-fried 金沢おでんカレーパン are made and handled in the same small shop, and no cross-contact protocol is published. But 'no' is wrong in the dangerous direction — it warns a celiac off a shop that labels its allergens and sells a rice-wafer signature."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_omicho_shokudo",
+  "name": "近江町食堂 (Omicho Shokudo)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.ohmicho-syokudo.com/takeout.html",
+   "https://www.ohmicho-syokudo.com/menu.html"
+  ],
+  "why": "gf_detail asserts 'no gluten-free menu, dedicated preparation, or allergen handling is documented', but the operator's own takeout page states 「※アレルギー対応が可能ですので、ご要望のある方はご相談ください。」 — allergy accommodation on request. That is documented allergen handling (scoped to pre-ordered オードブル platters), and the menu carries naturally GF anchors (刺身盛り合わせ, のどぐろ塩焼き, 金時草の酢の物). The wheat load is real (tempura, tonkatsu, うどん, 生麩田楽, one likely shared fryer), so this is 'ask and pre-arrange', not 'high' — but a flat 'no' both misstates the page and overstates the closure of the door."
  }
 ]

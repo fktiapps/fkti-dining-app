@@ -519,19 +519,22 @@
     "gf_cross_contamination": [
      {
       "text": "Menu relies on soy sauce, dashi, and cured/pickled seafood; no gluten-free accommodation is documented, so cross-contamination should be assumed.",
-      "source": "https://www.h-mizuho.jp/"
+      "source": "https://www.h-mizuho.jp/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Soy-marinated dishes such as ikura shoyu-zuke are signature items, indicating standard (wheat-containing) soy sauce is used.",
-      "source": "https://www.h-mizuho.jp/"
+      "source": "https://www.h-mizuho.jp/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Set meals and small plates are seafood- and dashi-based; no vegan preparation is documented.",
-      "source": "https://www.h-mizuho.jp/"
+      "source": "https://www.h-mizuho.jp/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -650,21 +653,26 @@
     "gf_cross_contamination": [
      {
       "text": "Menu is wheat-heavy (noodle-based vegan curries, tantanmen, cakes and tiramisu), so a shared kitchen handling flour and noodles is expected. No gluten-free precautions are documented.",
-      "source": "https://manpuku-kanazawa.com/farment-cafe/"
+      "source": "https://manpuku-kanazawa.com/farmentcafe/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://manpuku-kanazawa.com/farment-cafe/"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "This is a mixed vegan / non-vegan kitchen. The signature cheesecake is topped with Parmesan and dairy lattes are served, so vegan dishes are prepared in a kitchen that also handles cheese and dairy; no separate vegan prep is documented.",
-      "source": "https://manpuku-kanazawa.com/farment-cafe/"
+      "source": "https://manpuku-kanazawa.com/farment-cafe/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
     "positives": [
      {
       "text": "Offers a genuine, well-liked vegan menu (spicy vegan keema curry, green curry noodles, taco rice, vegan tantanmen) described as satisfying despite containing no meat.",
-      "source": "https://manpuku-kanazawa.com/farment-cafe/"
+      "source": "https://manpuku-kanazawa.com/farmentcafe/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://manpuku-kanazawa.com/farment-cafe/"
      }
     ],
     "confidence": "low",
@@ -680,7 +688,13 @@
    "menu_gf_count": 1,
    "menu_gf_ask_count": 4,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-08-21",
+    "note": "Open. Opened 2020-12 at 石川県金沢市乙丸町甲162 (TEL 076-299-7238), covered again by 週末、金沢。 on 2024-09-30 and listed in Hot Ishikawa's 【2026】金沢の人気かき氷11選 dated 2026-07-07 with the same address and 12:00 opening. 年中無休, dogs allowed indoors."
+   }
   },
   {
    "id": "kz_omicho_shokudo",
@@ -812,19 +826,23 @@
     "gf_cross_contamination": [
      {
       "text": "Menu is built on sashimi, tempura, and tonkatsu; tempura and tonkatsu are wheat-battered/breaded and fried, with high cross-contamination risk for shared fryers.",
-      "source": "https://www.ohmicho-syokudo.com/"
+      "source": "https://www.ohmicho-syokudo.com/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Sashimi and seafood bowls are served with standard Japanese soy sauce, which is wheat-based; no wheat-free soy sauce is mentioned.",
-      "source": "https://www.ohmicho-syokudo.com/"
+      "source": "https://www.ohmicho-syokudo.com/menu.html",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.ohmicho-syokudo.com/"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Kitchen is centered on fish and seafood prepared daily; broths and dishes are dashi/fish based with no documented vegan preparation.",
-      "source": "https://www.ohmicho-syokudo.com/"
+      "source": "https://www.ohmicho-syokudo.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -3823,21 +3841,27 @@
     "gf_cross_contamination": [
      {
       "text": "Signature sweets are served in wheat-based monaka wafers and dorayaki; no gluten-free handling or allergen control is documented for the shared sweets kitchen.",
-      "source": "https://www.weekend-kanazawa.com/entry/chayu"
+      "source": "https://www.weekend-kanazawa.com/entry/chayu",
+      "unsupported": "2026-08-20",
+      "why": "FALSE WARNING. 最中種 is glutinous rice, not wheat, and the shop says so in the word グルテンフリー; warabi mochi named in gf_detail is also not wheat. Only どら焼き / チョコどら and the 金沢おでんカレーパン are wheat. Rewrite the detail to name the wheat items instead of the rice ones, and drop 'no allergen control is document"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "The shop centers on dairy gelato made with Noto/Ishikawa milk; sorbets and gelato are likely scooped and prepared with shared equipment, so dairy cross-contact for plant-based diners is not addressed.",
-      "source": "https://www.weekend-kanazawa.com/entry/chayu"
+      "source": "http://chayu.info/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.weekend-kanazawa.com/entry/chayu"
      }
     ],
     "staff_allergy_handling": [],
     "positives": [
      {
       "text": "Fruit sorbets such as Noto Yanagida blueberry and seasonal Kanazawa watermelon are listed as plant-based flavors, giving non-dairy diners at least some options.",
-      "source": "https://www.weekend-kanazawa.com/entry/chayu"
+      "source": "https://www.weekend-kanazawa.com/entry/chayu",
+      "unsupported": "2026-08-20",
+      "why": "FALSE ASSURANCE risk: 金沢すいか is a gelato on this shop's dairy base, not a sorbet. Keep 能登柳田ブルーベリー・ソルベ as the plant-based example and delete the watermelon; the shop rotates 12 flavours so a vegan must check the 乳 line on the day."
      }
     ],
     "confidence": "low",
@@ -6318,14 +6342,16 @@
     "vegan_cross_contact": [
      {
       "text": "Signature anmitsu dishes are typically served with the shop's homemade dairy ice cream, so plant-based diners should ask for it to be omitted.",
-      "source": "https://rurubu.jp/andmore/spot/80016536"
+      "source": "https://rurubu.jp/andmore/spot/80016536",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
     "positives": [
      {
       "text": "Core components are made in-house (anko from Tamba Dainagon beans, shiratama, kanten, ice cream), so ingredients are simple and known to the makers.",
-      "source": "https://rurubu.jp/andmore/spot/80016536"
+      "source": "https://rurubu.jp/andmore/spot/80016536",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -6341,7 +6367,13 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 3,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-08-21",
+    "note": "The operator's own site now leads with 「☆ 閉店のご挨拶 ☆」: 「２０００年５月に開店いたしました当店は 誠に勝手ながら この６月１日をもちまして正式に閉店することにいたしました」, signed 「２０２６年 ６月 甘味処 金花糖 女将」. The owner cites 古希を過ぎ、体力の衰え after 26 years. Permanently closed as of 1 June 2026; the rurubu listing is stale and still shows 12～17時 / 火・水曜定休."
+   }
   },
   {
    "id": "kz_tsubomi",
@@ -7277,14 +7309,18 @@
     "gf_cross_contamination": [
      {
       "text": "Signature menu is wheat-heavy (napolitan pasta, pizza toast, ham pilaf, toast); shared kitchen with no documented allergen handling.",
-      "source": "https://tabelog.com/ishikawa/A1701/A170101/17006926/"
+      "source": "https://tabelog.com/ishikawa/A1701/A170101/17006926/",
+      "verified": "2026-08-20",
+      "source_wording": "Tabelog carries no menu block for this shop. The wheat items survive only in the auto-generated 関連のキーワード cloud — ピラフ / ピザトースト / ナポリタン / ホットケーキ / カツカレー / チーズケーキ — and in a reviewer's title 「丁寧なピザトースト」 (大トロ（よっしー）, 2024/05 visit). Genre is 喫茶店. Nothing on the page mentions ham, allergens, or kitchen ha"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Dishes are built on ham, cheese, butter and dairy; no documented dairy-free or plant-based preparation.",
-      "source": "https://tabelog.com/ishikawa/A1701/A170101/17006926/"
+      "source": "https://tabelog.com/ishikawa/A1701/A170101/17006926/",
+      "verified": "2026-08-20",
+      "source_wording": "Dairy is evidenced by the keyword cloud only — チーズケーキ, ソフトクリーム, ウインナーコーヒー, メロンソーダ (i.e. cream-float), ガムシロップ. ハム and バター appear nowhere on the page."
      }
     ],
     "staff_allergy_handling": [],
@@ -7302,7 +7338,13 @@
    "menu_gf_count": 9,
    "menu_gf_ask_count": 5,
    "menu_vegan_count": 5,
-   "menu_vegan_meals": 5
+   "menu_vegan_meals": 5,
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-08-21",
+    "note": "Open. Tabelog shows 10:00-18:30, 定休日 無休, 25席, 石川県金沢市下堤町20 堤町ビル1F, with a reviewer visit logged 2025/09; Yahoo's place card reads 営業中. Unrelated but worth carrying: 全席喫煙可 — smoking permitted at every seat."
+   }
   },
   {
    "id": "kz_pino",
@@ -11878,13 +11920,15 @@
     "staff_allergy_handling": [
      {
       "text": "Staff speak English, which makes it easier for a foreign visitor to ask about ingredients and allergens directly.",
-      "source": "https://food-japon.com/p/curio-espresso"
+      "source": "https://food-japon.com/p/curio-espresso",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "English-speaking owners and staff at an American-style cafe make communicating dietary needs straightforward.",
-      "source": "https://food-japon.com/p/curio-espresso"
+      "source": "https://food-japon.com/p/curio-espresso",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -11900,7 +11944,13 @@
    "menu_gf_count": 14,
    "menu_gf_ask_count": 4,
    "menu_vegan_count": 5,
-   "menu_vegan_meals": 5
+   "menu_vegan_meals": 5,
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-08-21",
+    "note": "Open. Tripadvisor reviews dated Apr 2026 and May 2026 surfaced on the Ecosia place card, the shop's Instagram carries an August operating-days notice, and Tabelog lists 08:00-15:00 with 火・水定休 at 石川県金沢市安江町1-13. Note the cited food-japon article contradicts itself on opening time (header says 8:00, body says 「朝は9時から営業」); Tabelog's 08:00 is the one corroborated."
+   }
   },
   {
    "id": "kz_cafe_yasuecho_jardin",
@@ -12005,7 +12055,8 @@
     "positives": [
      {
       "text": "Sweets such as scones and the kuzu milk pudding are prepared fresh to order, so the owner is closely involved in each dish and could be asked about ingredients in person.",
-      "source": "https://www.weekend-kanazawa.com/entry/yasuechojardin"
+      "source": "https://www.weekend-kanazawa.com/entry/yasuechojardin",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -12021,7 +12072,13 @@
    "menu_gf_count": 12,
    "menu_gf_ask_count": 3,
    "menu_gf_meals": 3,
-   "menu_vegan_count": 7
+   "menu_vegan_count": 7,
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-08-21",
+    "note": "Open. Visited by the 週末、金沢。 editorial team for the article dated 2025-08-10; 営業時間 12:00-17:30, 定休日 金曜・不定休, 住所 石川県金沢市安江町18-12 Machiya5 1F."
+   }
   },
   {
    "id": "kz_kappo_matsuyoshi",
@@ -14191,13 +14248,16 @@
     "soy_sauce_wheat": [
      {
       "text": "The menu centers on sashimi, torched nodoguro and seafood bowls, which are eaten with Japanese soy sauce (brewed with wheat); no wheat-free soy alternative is documented.",
-      "source": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/"
+      "source": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/",
+      "unsupported": "2026-08-20",
+      "why": "Sashimi/炙りのどぐろ is supported; the soy-sauce sentence is not on the page in either direction. Either soften it to a stated assumption or cite a source that shows the condiment. Separately: the せんべろセット is built on 生ビール — barley beer is the loudest gluten item here and gf_detail does not name it."
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "An entirely seafood-based market counter (oysters, sea urchin, scallops, sashimi, nodoguro) with no documented plant-based options; cross-contact with fish is unavoidable here.",
-      "source": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/"
+      "source": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -18846,7 +18906,8 @@
     "positives": [
      {
       "text": "Desserts are made to order at the counter in front of you, so you can see the ingredients and speak directly with the owner-chef about what goes into each dish.",
-      "source": "https://www.kanazawalabo.net/shop/shop.shtml?s=1268&e=241&t=22"
+      "source": "https://www.kanazawalabo.net/shop/shop.shtml?s=1268&e=241&t=22",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -27026,19 +27087,25 @@
     "gf_cross_contamination": [
      {
       "text": "Gyoza wrappers are wheat-based and prepared in a shared kitchen; no gluten-free handling is documented.",
-      "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/"
+      "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+      "verified": "2026-08-20",
+      "source_wording": "Tabelog genre is 野町駅/餃子; the 関連のキーワード cloud is ギョーザ / シソ餃子 / しそ / クリームコロッケ / 唐揚 / 揚げ物 / 豚足 / 牛すじ煮込み and a 2025/09 review headed 「「第六お得セット」でギョーザ、しそギョーザは両方食べておきたい！」. The page states nothing about wrapper composition, kitchens or allergens."
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Dishes and dipping rely on standard soy sauce (wheat-containing) and dashi typical of town-Chinese/izakaya cooking.",
-      "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/"
+      "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+      "unsupported": "2026-08-20",
+      "why": "The cited page contains no reference to soy sauce, dipping sauce or dashi of any kind. Plausible for a gyoza izakaya but wholly uncited; reword as an explicit assumption or remove the citation."
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Menu is built around meat, seafood, and animal/fish dashi; no vegan preparation or separation is documented.",
-      "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/"
+      "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+      "verified": "2026-08-20",
+      "source_wording": "関連のキーワード: 豚足, 牛すじ煮込み, 牛スジ, 唐揚, 肉汁, ぶり, トロ, 梅貝, エスカルゴ, クリームコロッケ, 納豆; review detail 「●牛すじ煮込み、396円 ・甘く炊かれたすじはとろっとしていて美味しいです！」 (2025/09 visit)."
      }
     ],
     "staff_allergy_handling": [],
@@ -27056,7 +27123,13 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-08-21",
+    "note": "Open. Tabelog shows 月-土 17:00-23:30 (L.O. 23:00), 日曜定休, 石川県金沢市神田1-2-20, 33 reviews with visits logged 2025/01 and 2025/09. 全席喫煙可."
+   }
   },
   {
    "id": "kz_horumon_yu_chan",
@@ -29795,7 +29868,7 @@
    "lng": 136.64065437,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. Identity confirmed (〒920-2114 石川県白山市八幡町ヌ26-1, tel 076-214-6939, 11:00-16:00 LO, closed Tuesdays, Hakusan City local-production recommended shop). The ingredient side survives — I pulled the full 原材料 for the quiche set and found no 小麦 and no 醤油, with 自家製タルト生地 built on 米粉(白山市製造), corn starch, almond powder and rice oil, and the shop does claim 「当店のキッシュは全てグルテンフリーとなっております」. But the label cannot stand: the ONLY allergen protocol the shop publishes is 「全ての商品にたまご・乳製品を使用」 plus 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 — a shared-facility warning written for egg and dairy that makes no gluten guarantee at all. The two apparent corroborations (urara-hakusanbito tourism page, tefutefusanpo blog) both explicitly relay the shop's own marketing rather than verify it, the shop is absent from the national all-GF bakery list, and no celiac-grade review exists. One underlying source, no cross-contact statement — options.] A gluten-free rice-flour quiche specialist (地元の米粉を使ったグルテンフリーキッシュの専門店) at the foot of Shishiku Kogen. The tart shell is 100% rice flour milled in Hakusan and the shop states 「当店のキッシュは全てグルテンフリーとなっております。」 (all our quiches are gluten-free) — the entire menu, quiche plus rice-flour breads/tarts/cookies, is rice-flour based with no wheat products made on-site, so it functions as a dedicated GF kitchen. Important caveat: the shop's shared-facility warning 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 is written for egg and dairy and makes NO explicit wheat/gluten cross-contamination statement, nor is there a certification. A sensitive celiac should phone (076-214-6939) to confirm wheat handling.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. Identity confirmed (〒920-2114 石川県白山市八幡町ヌ26-1, tel 076-214-6939, 11:00-16:00 LO, closed Tuesdays, Hakusan City local-production recommended shop). The ingredient side survives — I pulled the full 原材料 for the quiche set and found no 小麦 and no 醤油, with 自家製タルト生地 built on 米粉(白山市製造), corn starch, almond powder and rice oil, and the shop does claim 「当店のキッシュは全てグルテンフリーとなっております」. But the label cannot stand: the ONLY allergen protocol the shop publishes is 「全ての商品にたまご・乳製品を使用」 plus 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 — a shared-facility warning written for egg and dairy that makes no gluten guarantee at all. The two apparent corroborations (urara-hakusanbito tourism page, tefutefusanpo blog) both explicitly relay the shop's own marketing rather than verify it, the shop is absent from the national all-GF bakery list, and no celiac-grade review exists. One underlying source, no cross-contact statement — options.] A gluten-free rice-flour quiche specialist (地元の米粉を使ったグルテンフリーキッシュの専門店) at the foot of Shishiku Kogen. The tart shell is 100% rice flour milled in Hakusan and the shop states 「当店のキッシュは全てグルテンフリーとなっております。」 (all our quiches are gluten-free) — the entire menu, quiche plus rice-flour breads/tarts/cookies, is rice-flour based with no wheat products made on-site, so it functions as a dedicated GF kitchen. Important caveat: the shop's shared-facility warning 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 is written for egg and dairy and makes NO explicit wheat/gluten cross-contamination statement, nor is there a certification. A sensitive celiac should phone (076-214-6939) to confirm wheat handling.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
    "vegan_detail": "The everyday menu is not vegan — every quiche contains egg and most contain cheese, though the custard uses egg plus soy-milk cream (卵と豆乳クリーム) rather than dairy cream, making it lighter than a classic quiche. True 動物性不使用 vegan items appear only as rotating limited specials (e.g. a vegan vegetable-and-soy-cream quiche and an avocado-chocolate soy-cream tart at a 2022 pop-up), not on the standard menu. A vegan visitor must check Instagram (@hakusan_qui) for current availability.",

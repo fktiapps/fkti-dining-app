@@ -231,5 +231,105 @@
    "https://tabelog.com/ishikawa/A1701/A170101/17008983/"
   ],
   "why": "Open. Tripadvisor reviews dated Apr 2026 and May 2026 surfaced on the Ecosia place card, the shop's Instagram carries an August operating-days notice, and Tabelog lists 08:00-15:00 with 火・水定休 at 石川県金沢市安江町1-13. Note the cited food-japon article contradicts itself on opening time (header says 8:00, body says 「朝は9時から営業」); Tabelog's 08:00 is the one corroborated."
+ },
+ {
+  "id": "kz_dairoku_gyoza_no_mise",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Gyoza wrappers are wheat-based and prepared in a shared kitchen; no gluten-free handling is documented.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+  "verdict": "moved",
+  "found": "Tabelog genre is 野町駅/餃子; the 関連のキーワード cloud is ギョーザ / シソ餃子 / しそ / クリームコロッケ / 唐揚 / 揚げ物 / 豚足 / 牛すじ煮込み and a 2025/09 review headed 「「第六お得セット」でギョーザ、しそギョーザは両方食べておきたい！」. The page states nothing about wrapper composition, kitchens or allergens.",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA",
+  "method": "2 mobile-host Tabelog fetch",
+  "note": "Conclusion is right and gf 'no' must stand, but the page evidences only 'this is a gyoza shop' — wrapper composition is general knowledge, not source text. Stronger evidence sits on the same page and is missing from the record: 唐揚 and クリームコロッケ (wheat-breaded) alongside 揚げ物 means a shared fryer, which is the concrete celiac hazard here."
+ },
+ {
+  "id": "kz_dairoku_gyoza_no_mise",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes and dipping rely on standard soy sauce (wheat-containing) and dashi typical of town-Chinese/izakaya cooking.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA",
+  "method": "2 mobile-host Tabelog fetch; grepped the rendered page for 醤油 / タレ / 出汁 / ラー油 / 酢 — zero hits",
+  "note": "The cited page contains no reference to soy sauce, dipping sauce or dashi of any kind. Plausible for a gyoza izakaya but wholly uncited; reword as an explicit assumption or remove the citation."
+ },
+ {
+  "id": "kz_dairoku_gyoza_no_mise",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is built around meat, seafood, and animal/fish dashi; no vegan preparation or separation is documented.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+  "verdict": "moved",
+  "found": "関連のキーワード: 豚足, 牛すじ煮込み, 牛スジ, 唐揚, 肉汁, ぶり, トロ, 梅貝, エスカルゴ, クリームコロッケ, 納豆; review detail 「●牛すじ煮込み、396円 ・甘く炊かれたすじはとろっとしていて美味しいです！」 (2025/09 visit).",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA",
+  "method": "2 mobile-host Tabelog fetch",
+  "note": "Meat and seafood are amply evidenced and vegan 'no' is correct; the 'animal/fish dashi' clause specifically is not on the page. Also note the record's vegan_detail lists 'sashimi and Kanazawa oden' — the page shows ぶり/トロ/梅貝 but no oden, so trim that."
+ },
+ {
+  "id": "kz_dairoku_gyoza_no_mise",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17002526/"
+  ],
+  "why": "Open. Tabelog shows 月-土 17:00-23:30 (L.O. 23:00), 日曜定休, 石川県金沢市神田1-2-20, 33 reviews with visits logged 2025/01 and 2025/09. 全席喫煙可."
+ },
+ {
+  "id": "kz_farment_cafe",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Offers a genuine, well-liked vegan menu (spicy vegan keema curry, green curry noodles, taco rice, vegan tantanmen) described as satisfying despite containing no meat.",
+  "url": "https://manpuku-kanazawa.com/farment-cafe/",
+  "verdict": "wrong_source",
+  "found": "「【FOOD】 グリーンカレーヌードル 1,000円／ファーメントカレー 1,000円／スパイシーキーマカレー 1,050円／タコライス 1,000円／ヴィーガン担々麺 1,280円」 and 「ヴィーガンメニューでお肉を全く使っていないとは思えないほど、スパイシーで美味しい！…サクサクのフライドオニオンがトッピングされていて…お肉なしだけど十分満足感ありましたー。」",
+  "correct_url": "https://manpuku-kanazawa.com/farmentcafe/",
+  "http": "200 both URLs (plain desktop-UA curl); Ecosia SERP 200",
+  "method": "1 plain fetch of the cited URL, then 4 Ecosia search (Brave 429, DuckDuckGo lite bot-challenge, Yahoo Japan 200 on other queries) which surfaced the sibling article, then 1 plain fetch of that",
+  "note": "Same site, wrong article. The cited page (2023-11-08, the cheesecake write-up) says only 「カレーのメニューも豊富！ヴィーガンだけど美味しさも追求したという、こだわりがつまったスパイスカレーです。」 — no keema, no noodles, no taco rice, no tantanmen, and no satisfaction quote. Every one of those, including the fried-onion topping detail, is at https://manpuku-kanazawa.com/farmentcafe/ (2021-07-19). Repoint the citation."
+ },
+ {
+  "id": "kz_farment_cafe",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Menu is wheat-heavy (noodle-based vegan curries, tantanmen, cakes and tiramisu), so a shared kitchen handling flour and noodles is expected. No gluten-free precautions are documented.",
+  "url": "https://manpuku-kanazawa.com/farment-cafe/",
+  "verdict": "wrong_source",
+  "found": "The cited page supports only the sweets half — 「その他、テリーヌやガトーショコラ、ティラミスや白いコーヒープリンなどのオリジナルスイーツメニューがラインナップしていました。」 The noodles are on the sibling article: 「グリーンカレーヌードル 1,000円 … ヴィーガン担々麺 1,280円」.",
+  "correct_url": "https://manpuku-kanazawa.com/farmentcafe/",
+  "http": "200 both URLs (plain desktop-UA curl)",
+  "method": "1 plain fetch + 4 Ecosia search + 1 plain fetch of the sibling article",
+  "note": "LOUD, and a gluten hazard the record misses entirely: the sibling article says the スパイシーキーマカレー — the very dish the app promotes to vegans — is served on 「五穀米」. Gokokumai routinely contains 押麦 or もち麦, i.e. barley, so the flagship vegan curry may be gluten-bearing in the grain itself, not just by cross-contact. gf 'no' stays; add the 五穀米 caveat and cite both URLs."
+ },
+ {
+  "id": "kz_farment_cafe",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "This is a mixed vegan / non-vegan kitchen. The signature cheesecake is topped with Parmesan and dairy lattes are served, so vegan dishes are prepared in a kitchen that also handles cheese and dairy; no separate vegan prep is documented.",
+  "url": "https://manpuku-kanazawa.com/farment-cafe/",
+  "verdict": "supported",
+  "found": "「スクエアのチーズケーキに、まあるくトッピングされているのはチーズクリームで、さらに、パルメザンチーズかな？ちょっと塩気のある削られたチーズがパラパラと散りばめられています。」 plus 「ティラミスラテやプリンラテなど」 and カフェラテセット.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch",
+  "note": "Supported, with one wording fix: the blogger guesses at the cheese — 「パルメザンかな？」 — so the record should not state Parmesan as fact. 'Grated salty hard cheese' is what the source actually supports; the dairy conclusion is unaffected."
+ },
+ {
+  "id": "kz_farment_cafe",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://manpuku-kanazawa.com/farment-cafe/",
+   "https://www.hot-ishikawa.jp/blog/detail_500.html",
+   "https://www.weekend-kanazawa.com/entry/farmentcafe-cafe5"
+  ],
+  "why": "Open. Opened 2020-12 at 石川県金沢市乙丸町甲162 (TEL 076-299-7238), covered again by 週末、金沢。 on 2024-09-30 and listed in Hot Ishikawa's 【2026】金沢の人気かき氷11選 dated 2026-07-07 with the same address and 12:00 opening. 年中無休, dogs allowed indoors."
  }
 ]

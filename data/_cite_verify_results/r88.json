@@ -1,0 +1,54 @@
+[
+ {
+  "id": "kyr_chuugokusai_taihou",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Noodles are wheat-based (the dry tantanmen uses thin Kagawa wheat noodles), and the kitchen runs Sichuan/Chinese dishes with soy-based sauces and fried items, so heavy gluten cross-contact is inherent.",
+  "url": "https://gcjapan-kyoto.com/taiho/",
+  "verdict": "supported",
+  "found": "「汁なし担々麵 1,320円 … 香川県産の細いうどんに四川の唐辛子と山椒の香りが絡みあう。」 and 「メニューは前菜系から点心、炒め物、丼、麺など豊富なラインナップ。」 plus 「焼きぎょうざ 5個 550円 … 柔らかい皮に包まれ味わい深い。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited page; trading status cross-checked on s.tabelog.com/kyoto/A2601/A260203/26003254/ with an iPhone UA (200, live, 四川料理/中華料理, no 閉店 banner)",
+  "note": "Correct: 香川県産の細いうどん is literally Kagawa wheat udon, so the 汁なし担々麺 line is verbatim. Two strengthenings worth making: the page also lists 焼きぎょうざ with 「柔らかい皮」 (wheat gyoza wrappers) and 点心 as a whole menu category, which are firmer wheat vectors than the inferred 'fried items'. 'Soy-based sauces' is inference — the page says 甘辛極旨タレ / 旨タレ, never 醤油; keep the claim but stop attributing the soy wording to this source."
+ },
+ {
+  "id": "kyr_chuugokusai_taihou",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is meat-forward (glazed pork, beef mapo tofu, chicken, pork tantanmen); no vegan dishes or separated plant-based prep were documented.",
+  "url": "https://gcjapan-kyoto.com/taiho/",
+  "verdict": "moved",
+  "found": "「てりどんきんし地獄盛り … 錦糸玉子の上に旨タレが絡む豚肉がたっぷりと。」「牛肉麻婆豆腐 1,760円 … ぷりっと豆腐と牛肉」「軍鶏のよだれ鶏 ハーフ 1,100円」. The 汁なし担々麵 entry describes only 「香川県産の細いうどんに四川の唐辛子と山椒の香りが絡みあう」 — no pork is named.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited page",
+  "note": "Meat-forward is well supported, but 'pork tantanmen' is not on this page — the tantanmen description names noodles and Sichuan chilli/sansho only. Also the page's own text adds 錦糸玉子 (shredded egg) on the signature てりどん, a non-vegan item the record misses. Swap 'pork tantanmen' for 'egg-topped signature teridon'."
+ },
+ {
+  "id": "kyr_daiichi_asahi_katsura_te",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is described as a pork-bone base seasoned with a deeply flavored soy sauce (shoyu), which in this style is virtually always wheat-containing.",
+  "url": "https://gourpass.com/221da/",
+  "verdict": "supported",
+  "found": "「50年以上続く京都の有名老舗ラーメン店からのれん分け。豚骨ベースで深みのある醤油・たっぷりの野菜スープなので後味もさっぱり！」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited page; trading status cross-checked on s.tabelog.com/kyoto/A2601/A260401/26013188/ (200, live, 3.36 / 98 reviews, no 閉店 banner)",
+  "note": "Verbatim: 豚骨ベースで深みのある醤油. The wheat inference on brewed shoyu is the record's own and is standard; the page states no ingredients. Worth adding the far more direct wheat vectors this same page lists: 餃子 250円, 半チャーハンセット and 焼めし/焼飯 (fried rice cooked with the same shoyu), and a whole 定食 range built on them."
+ },
+ {
+  "id": "kyr_daiichi_asahi_katsura_te",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is a pork-bone (tonkotsu) base and bowls are topped with roast pork, so animal products are integral to the dishes.",
+  "url": "https://gourpass.com/221da/",
+  "verdict": "supported",
+  "found": "「豚骨ベースで…」 plus the menu: 「チャーシューメン 800円」「焼豚 大 650円 / 小 400円」「ターロー（大）1,000円」「特上 焼肉丼 500円」「豚キムチ 420円」「焼豚定食（ミニラーメン・ライス・焼豚・漬物）980円」.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited page",
+  "note": "Supported and then some — pork appears in the broth, the chashu, the ターロー, the 焼肉丼 and seven of the nine 定食. The only near-vegan item on the page is もやし炒め定食, and it is served with the ramen, so do not soften this one."
+ }
+]

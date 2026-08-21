@@ -34,6 +34,16 @@ const IS_GLUTEN = [
   ['麸',     'fu — wheat gluten'],
 ];
 const MAY_BE_GLUTEN = [
+  // Multigrain rice blends. 五穀/雑穀/十六穀 are recipes, not standards, and the common
+  // commercial mixes include 押麦 or もち麦 — barley. A vegan keema curry served on
+  // 五穀米 reads as the safe choice on a menu and may be the only gluten on the plate.
+  // Not "no", because plenty of blends are barley-free: it is a question to ask.
+  ['五穀米', 'gokokumai — multigrain rice; these blends routinely include 押麦/もち麦 barley'],
+  ['雑穀米', 'zakkokumai — multigrain rice; ask whether the blend contains 押麦/もち麦'],
+  ['十六穀', 'jūrokkoku — 16-grain rice; commercial blends usually contain barley'],
+  ['十八穀', 'jūhachikoku — 18-grain rice; commercial blends usually contain barley'],
+  ['十穀',   'jukkoku — multigrain rice; ask about barley'],
+  ['五穀',   'gokoku — multigrain; ask whether the blend contains barley'],
   ['大豆ミート', 'soy meat — usually extruded with wheat gluten as a binder; ask which brand'],
   ['ソイミート', 'soy meat — usually extruded with wheat gluten as a binder; ask which brand'],
   ['soy meat',  'soy meat — usually extruded with wheat gluten as a binder; ask which brand'],

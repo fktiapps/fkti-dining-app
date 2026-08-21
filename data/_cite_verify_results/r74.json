@@ -89,5 +89,18 @@
   "http": "200 (iPhone UA, 505.5 KB) on s.tabelog.com/…/34033951/ and 200 on /dtlrvwlst/",
   "method": "2 iPhone UA on s.tabelog.com for the cited page and its review list",
   "note": "The substance is well evidenced on the cited page: bonito flakes are in the keyword list and a diner reports them scattered over cream cheese, pork, beef koune and beef tendon are all ordered off the griddle, and cheese appears twice — so vegan: no is right. Two precision fixes. First, 'a SINGLE teppan' is not on the page; the page only establishes 鉄板焼, so say 'a shared griddle'. Second, the egg is real but reaches the page indirectly — 卵/玉子 score zero as strings; the evidence is the review title 名物ケイタマ, i.e. 鶏玉, the chicken-and-egg okonomiyaki — cite that rather than asserting the batter contains egg, which the page does not address. Trading status OK and recently so: reviews dated 2025/10, 2026/02, 2026/04 and 2026/05, hours 16:00-22:00, closed Tuesdays, 中区八丁堀11-4 島村ビル2F. Note the 閉店 string on this page refers to the predecessor izakaya, not to the current shop — do not let a keyword sweep mistake it for a closure."
+ },
+ {
+  "id": "hiro_yaki_murakami",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Yakitori tare glaze is soy-sauce and mirin based, which contains wheat; the meal is also often finished with a wheat-noodle chicken ramen.",
+  "url": "https://www.modokimaru.com/entry/gourmet/230408",
+  "verdict": "unsupported",
+  "found": "Second half only: 「▼鶏塩らーめん(600円) シンプルなラーメン。適度な塩っけがシメに向いています。」 The first half has no basis on the page — タレ (0 hits), たれ (0), 醤油 (0), みりん/味醂 (0). The article walks the whole order (地鶏とりわさ、せせり、かわ、はつ、砂肝、血肝、手羽先、地鶏つくね) and names no seasoning for any skewer.",
+  "correct_url": null,
+  "http": "200 (plain curl, 88.8 KB) on modokimaru.com, desktop UA; the record's own website https://www.yaki-murakami.com/ returned 403 Forbidden (1,026 B server default page) on plain, iPhone and desktop UAs and with and without www; web.archive.org PLAYBACK was 503 'Internet Archive services are temporarily offline' at this run, though its CDX API answered 200; 200 (iPhone UA, 535.5 KB) on s.tabelog.com/hiroshima/A3401/A340112/34030698/",
+  "method": "1 plain fetch of the cited blog post; 1+2+3 attempted on the venue's own site (403 on every UA, Wayback playback down); Ecosia (https://www.ecosia.org/search?q=yaki-murakami.com) found the Tabelog id — Ecosia answered first try",
+  "note": "The two halves have opposite fates and the field label is on the wrong one. The ramen shime is verbatim on the cited page and is the genuine gluten hazard, so move that sentence to a gf_cross_contamination or menu claim citing this URL. The soy-sauce-and-mirin tare is not on the page and looks like yakitori convention asserted as fact — and here the convention may actually be wrong: this shop reads salt-forward, its shime is a 鶏塩らーめん, and Tabelog's keyword block for it is 鶏塩／鶏スープ／わさび／黄身 with タレ and 醤油 scoring zero across 57 reviews. Either drop the tare sentence or ask the shop. gf: no is still correct on the ramen alone; vegan: no is correct (an all-chicken counter, 10 seats). No tier change. Two housekeeping items: the record's website field https://www.yaki-murakami.com/ 403s on every route I tried and should be replaced with the Tabelog id 34030698 or the shop's Instagram, which the article links; and the cited article is an opening-day report dated 2023-04-08 that says so itself (「オープン初日にお邪魔したので、まだ馴染んでいない感じでした」「メニューはまだ絞ってある感じで、一品メニューは次第に増えていく」) — a three-year-old first-day menu is a weak basis for any current claim. Trading status OK: address 中区立町5-20 matches the article, hours 17:00-23:00, closed Sundays, reviews dated 2026/03, 2026/06 and 2026/07, no 閉店 or 移転 anywhere."
  }
 ]

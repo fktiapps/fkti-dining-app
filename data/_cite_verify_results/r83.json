@@ -1,0 +1,41 @@
+[
+ {
+  "id": "kz_sabou_bar_gauche",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Siphon-brewed coffee (Toraja blend) and herbal teas are available and can be ordered plain, which are naturally suitable options for plant-based and gluten-avoiding guests.",
+  "url": "https://food-japon.com/p/goshu",
+  "verdict": "supported",
+  "found": "「茶房タイムは、コーヒーやハーブティーなどとケーキや同店オリジナルのカレーなどが頂けます。何と言っても、サイフォンで淹れてくれるコーヒーは頼まずにはいられません（夜も可能）。」 and 「●サイフォン珈琲 トラジャブレンド豆使用。おかわりポット付きで３杯分くらい楽しめます。」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl; identical 200 with iPhone UA)",
+  "method": "1 plain fetch of the cited URL, full article read",
+  "note": "Both the Toraja siphon coffee and the herbal tea are on the cited page verbatim; the 'can be ordered plain / naturally suitable' half is the record's own inference, not a source statement, but nothing on the page contradicts it. Same page also confirms the curry: 「ルーに入れてあるクミン」 over saffron rice — a roux-based curry, consistent with the record's gf 'no'."
+ },
+ {
+  "id": "kz_salon_de_the_kawamura",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Parfaits and kakigori include ice cream and condensed milk, so shared scoops and prep surfaces could contact dairy even on otherwise plant-based bean and warabi items.",
+  "url": "https://mame-kawamura.com/store/",
+  "verdict": "wrong_source",
+  "found": "練乳 (condensed milk) appears nowhere on /store/. It is on food-japon's salon write-up: 「ブルーベリークリームチーズのかき氷 … 氷の中には練乳バニラアイス入り」 (and 「とろりとかかっているのは練乳ではなく…したたり餅」 on the strawberry ice, i.e. one kakigori explicitly is NOT condensed milk). /store/ does independently evidence dairy — 「かわむらパルフェ … 甘納豆、抹茶、加賀棒茶、アプリコット、マスカルポーネ、珈琲、豆乳、そして醤油」, 「かわむらプレート … アイスをお付けして提供しております」, 「かき氷 桃 … シャンティチョコブラン、ジェノワーズ」, 「味平かぼちゃ … かぼちゃチーズプリン」 — but not as ice cream + condensed milk, and it lists no warabi item at all.",
+  "correct_url": "https://food-japon.com/p/salon-kawamura",
+  "http": "200 both (plain desktop-UA curl). mame-kawamura.com/salon/ and /menu/ both 404 to the homepage shell.",
+  "method": "1 plain fetch of the cited URL, read the whole Salon de The section, then fetched food-japon.com/p/salon-kawamura to locate the 練乳 wording",
+  "note": "Repoint to https://food-japon.com/p/salon-kawamura for the condensed-milk element; if the citation must stay on /store/, reword to the dairy actually printed there (mascarpone in the parfait, ice cream on the plate, chantilly chocolat blanc and pumpkin cheese pudding in the kakigori)."
+ },
+ {
+  "id": "kz_salon_de_the_kawamura",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Warabi mochi is served with kinako (soybean flour) and kuromitsu (black sugar syrup), and amanatto, yokan and bean jellies are typically dairy-free options for plant-based guests.",
+  "url": "https://mame-kawamura.com/store/",
+  "verdict": "wrong_source",
+  "found": "/store/ has no warabi, no kinako and no kuromitsu — its salon menu is かわむらパルフェ / かわむらプレート / 桃のかき氷 / 味平かぼちゃのかき氷 / 三色豆茶 / 国造柚子ソーダ. The claim's support is at food-japon: 「●本蕨もち 本蕨を使用したわらび餅。きな粉が見るからに味が濃く美味しそう。… 波照間島の黒糖を使った自家製黒蜜がこちらもコクがあり美味しいこと。ミルクがセットされているのですが残ったきな粉を入れてドリンクにできるという丁寧な配慮もワンプレートに詰め込んであります。」",
+  "correct_url": "https://food-japon.com/p/salon-kawamura",
+  "http": "200 both (plain desktop-UA curl)",
+  "method": "1 plain fetch of the cited URL, then food-japon.com/p/salon-kawamura, then mame-kawamura.com/items/ for the retail 原材料 lines",
+  "note": "FALSE ASSURANCE: the only source that documents the warabi mochi says the plate 「ミルクがセットされている」 — it is served WITH a cup of milk, so presenting it as a dairy-free plant-based pick is wrong unless the reader knows to decline the milk. Repoint the citation and add the milk caveat. (Separately for GF, /store/ prints 醤油 as a stated component of かわむらパルフェ and ジェノワーズ/クランブル in the kakigori — wheat the gf_detail does not mention.)"
+ }
+]

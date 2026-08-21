@@ -1981,6 +1981,24 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_kanmi_cafe_chayu",
+  "name": "甘味カフェ 茶ゆ (Kanmi Cafe Chayu)",
+  "field": "gf_cross_contamination",
+  "text": "Signature sweets are served in wheat-based monaka wafers and dorayaki; no gluten-free handling or allergen control is do",
+  "source": "https://www.weekend-kanazawa.com/entry/chayu",
+  "why": "FALSE WARNING. 最中種 is glutinous rice, not wheat, and the shop says so in the word グルテンフリー; warabi mochi named in gf_detail is also not wheat. Only どら焼き / チョコどら and the 金沢おでんカレーパン are wheat. Rewrite the detail to name the wheat items instead of the rice ones, and drop 'no allergen control is document"
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kanmi_cafe_chayu",
+  "name": "甘味カフェ 茶ゆ (Kanmi Cafe Chayu)",
+  "field": "positives",
+  "text": "Fruit sorbets such as Noto Yanagida blueberry and seasonal Kanazawa watermelon are listed as plant-based flavors, giving",
+  "source": "https://www.weekend-kanazawa.com/entry/chayu",
+  "why": "FALSE ASSURANCE risk: 金沢すいか is a gelato on this shop's dairy base, not a sorbet. Keep 能登柳田ブルーベリー・ソルベ as the plant-based example and delete the watermelon; the shop rotates 12 flavours so a vegan must check the 乳 line on the day."
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_coil",
   "name": "コイル (COIL)",
   "field": "soy_sauce_wheat",
@@ -2035,12 +2053,30 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_omicho_shunsai",
+  "name": "近江町旬彩 (Omicho Shunsai)",
+  "field": "soy_sauce_wheat",
+  "text": "The menu centers on sashimi, torched nodoguro and seafood bowls, which are eaten with Japanese soy sauce (brewed with wh",
+  "source": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/",
+  "why": "Sashimi/炙りのどぐろ is supported; the soy-sauce sentence is not on the page in either direction. Either soften it to a stated assumption or cite a source that shows the condiment. Separately: the せんべろセット is built on 生ビール — barley beer is the loudest gluten item here and gf_detail does not name it."
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_amatsubo_jimonotei",
   "name": "あまつぼ じもの亭 (Amatsubo Jimonotei)",
   "field": "soy_sauce_wheat",
   "text": "Sashimi seafood bowls are served with standard Japanese soy sauce, which contains wheat.",
   "source": "https://www.weekend-kanazawa.com/entry/jimonotei_amatsubo",
   "why": "The cited article never mentions 醤油/soy sauce anywhere — it covers the 金沢丼, the oden and the sake list only. The claim is a reasonable inference about a kaisen-don shop but no source states it; reword as an assumption or drop the citation."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_dairoku_gyoza_no_mise",
+  "name": "第六ギョーザの店 (Dairoku Gyoza no Mise)",
+  "field": "soy_sauce_wheat",
+  "text": "Dishes and dipping rely on standard soy sauce (wheat-containing) and dashi typical of town-Chinese/izakaya cooking.",
+  "source": "https://tabelog.com/ishikawa/A1701/A170101/17002526/",
+  "why": "The cited page contains no reference to soy sauce, dipping sauce or dashi of any kind. Plausible for a gyoza izakaya but wholly uncited; reword as an explicit assumption or remove the citation."
  },
  {
   "city": "kanazawa",
@@ -2305,12 +2341,30 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_teranishi_coffee_honten",
+  "name": "てらにし珈琲本店 (Teranishi Coffee Honten)",
+  "field": "positives",
+  "text": "An oat-milk iced coffee is offered, giving a plant-milk option alongside black self-roasted coffee.",
+  "source": "https://magazine.cliiip.jp/gourmet/2056/",
+  "why": "SERIOUS - this claim has no source anywhere. The cited page is a 2021-05-13 founder interview with 寺西隆幸 about how the shop was started; the strings オーツ, オート麦, えん麦, 燕麦, oat, ソイ, 豆乳 and even アイス return ZERO hits on it, and it never lists a drink menu at all. The operator's own menu pages are worse tha"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kaiya_ren",
   "name": "貝や 廉 (Kaiya Ren)",
   "field": "vegan_cross_contact",
   "text": "The kitchen is entirely shellfish- and seafood-based (oysters, shellfish sashimi, fish/shellfish dashi), so any plant it",
   "source": "https://r.gnavi.co.jp/3mrsyfct0000/",
   "why": "ALARMING: this is the record's own citation contradicting the record. vegan_detail asserts 'There is no documented plant-based menu' while the page it cites advertises 「ベジタリアンメニューご相談」. The shellfish-cross-contact conclusion is still sound (the operator page names 貝出汁の茶碗蒸し and an all-shellfish concep"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yamamura_chaya",
+  "name": "山村茶屋 (Yamamura Chaya)",
+  "field": "soy_sauce_wheat",
+  "text": "Anagomeshi and the rice bowls are seasoned with standard Japanese soy sauce/tare, which contains wheat; udon is also whe",
+  "source": "https://tabelog.com/hiroshima/A3402/A340202/34007695/dtlmenu/photo/",
+  "why": "The udon half is supported — 肉うどん is in the cited page's keyword block and a review on the parent listing says 「メニューも米系からうどん類まで」. The soy-sauce half is not on the page in any form: 醤油 appears nowhere, so 'seasoned with standard Japanese soy sauce/tare, which contains wheat' is cuisine convention wri"
  },
  {
   "city": "hiroshima",
@@ -2368,6 +2422,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_yamadaya_miyajima_honten",
+  "name": "やまだ屋 宮島本店 (Yamadaya Miyajima Honten)",
+  "field": "gf_cross_contamination",
+  "text": "Signature products (momiji manju, kiriyoka) are wheat-flour cakes made in a shared confectionery production environment;",
+  "source": "https://momiji-yamadaya.co.jp/",
+  "why": "Two defects. (a) Wrong source: a corporate root page cannot evidence an ingredient or cross-contact claim; repoint to https://yamadaya-shop.jp/f/zairyou. (b) Factual error: 桐葉菓 is not a wheat-flour cake — it is もち粉-based and its statutory 特定原材料 line names only 乳 and 卵. The same holds for the whole 餅"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_ganso_hassho",
   "name": "元祖八昌 (Ganso Hassho)",
   "field": "soy_sauce_wheat",
@@ -2401,6 +2464,15 @@
   "text": "As a teppanyaki steakhouse, dishes are conventionally seasoned with wheat-based Japanese soy sauce and tare; no gluten-f",
   "source": "https://www.aohige.jp/steak",
   "why": "The cited page is the branch top page and says nothing whatever about seasoning — 醤油, タレ and every allergen string return zero hits across the entire ステーキ青ひげ site, so the second half of the claim (nothing documented) is verified, but the first half (wheat soy sauce and tare) is cuisine convention pr"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yakeppachi",
+  "name": "やけっぱち (Yakeppachi)",
+  "field": "soy_sauce_wheat",
+  "text": "Okonomi/teppan sauces and the izakaya's soy-seasoned dishes use standard wheat-containing soy sauce; no gluten-free sauc",
+  "source": "https://tabelog.com/hiroshima/A3401/A340108/34033951/",
+  "why": "The substance is almost certainly true — a Hiroshima okonomiyaki shop uses okonomi sauce, which is wheat- and soy-based — but this page does not say so, and the record states it as sourced. There is no menu on the Tabelog entry to fall back on either. Either reword it as an explicit assumption about"
  },
  {
   "city": "hiroshima",
@@ -2455,6 +2527,15 @@
   "text": "As a Japanese natural-food kitchen, miso and soy-sauce-based seasonings used here typically contain wheat; no wheat-free",
   "source": "https://www.bm-peekaboo.com/gourmet/7-80/",
   "why": "This one is wrong in the direction that penalises a safe venue. The cited page documents a wheat-free miso and the record cites it to assert the miso probably contains wheat; 米みそ is not 麦味噌. Rewrite to 'the miso is a rice miso (有機米みそ), which is wheat-free; the soy sauce is undocumented, so ask' — th"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yaki_murakami",
+  "name": "焼 むらかみ (Yaki Murakami)",
+  "field": "soy_sauce_wheat",
+  "text": "Yakitori tare glaze is soy-sauce and mirin based, which contains wheat; the meal is also often finished with a wheat-noo",
+  "source": "https://www.modokimaru.com/entry/gourmet/230408",
+  "why": "The two halves have opposite fates and the field label is on the wrong one. The ramen shime is verbatim on the cited page and is the genuine gluten hazard, so move that sentence to a gf_cross_contamination or menu claim citing this URL. The soy-sauce-and-mirin tare is not on the page and looks like "
  },
  {
   "city": "hiroshima",

@@ -1,0 +1,168 @@
+[
+ {
+  "id": "kz_kanmi_cafe_chayu",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Signature sweets are served in wheat-based monaka wafers and dorayaki; no gluten-free handling or allergen control is documented for the shared sweets kitchen.",
+  "url": "https://www.weekend-kanazawa.com/entry/chayu",
+  "verdict": "unsupported",
+  "found": "The cited article says only 「手作りの最中やどら焼きにサンドして食べるのが「茶ゆ」流の食べ方なんですよ〜。」 and 「竹炭を配合して仕上げた香ばしい最中」 — it never calls the monaka wheat-based and says nothing about allergen handling. The shop's OWN site contradicts the claim outright: 東山アイスもなか is described as 「特注型で一枚毎に職人が手焼き、原材料に北陸産もち米のみを用いた最中種は自然な甘みと香ばしい風味が特徴のグルテンフリー。」 and every gelato flavour carries a printed 「アレルギー原材料」 line.",
+  "correct_url": null,
+  "http": "200 (weekend-kanazawa, plain curl); 200 (chayu.info, iPhone UA)",
+  "method": "1 plain fetch of the cited URL; then plain fetch of the operator's own site http://chayu.info/ (iPhone UA) for the menu and allergen text",
+  "note": "FALSE WARNING. 最中種 is glutinous rice, not wheat, and the shop says so in the word グルテンフリー; warabi mochi named in gf_detail is also not wheat. Only どら焼き / チョコどら and the 金沢おでんカレーパン are wheat. Rewrite the detail to name the wheat items instead of the rice ones, and drop 'no allergen control is documented' — the shop publishes per-flavour allergens."
+ },
+ {
+  "id": "kz_kanmi_cafe_chayu",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The shop centers on dairy gelato made with Noto/Ishikawa milk; sorbets and gelato are likely scooped and prepared with shared equipment, so dairy cross-contact for plant-based diners is not addressed.",
+  "url": "https://www.weekend-kanazawa.com/entry/chayu",
+  "verdict": "wrong_source",
+  "found": "The cited article never mentions milk at all — the closest line is 「奥能登の自然素材の美味しさが凝縮」. The milk-sourcing claim is true and is on the shop's own site: 「牧草地は自家製完熟堆肥により投入し健全な牧草の育成、牛に優しい管理をしている奥能登八戸の限定した酪農家からの生乳を使用しています。」 and 「奥能登八戸限定酪農家生乳の生乳をベースに…」",
+  "correct_url": "http://chayu.info/",
+  "http": "200 (both, iPhone UA)",
+  "method": "1 plain fetch of the cited URL, then the operator's own site",
+  "note": "Repoint to http://chayu.info/ (厳選素材 section). Note the 'shared equipment' half is an inference documented by neither page — the shop's flavour list actually shows the reverse signal: every dairy flavour prints アレルギー原材料：乳 while 能登柳田ブルーベリー・ソルベ prints no allergen line at all."
+ },
+ {
+  "id": "kz_kanmi_cafe_chayu",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Fruit sorbets such as Noto Yanagida blueberry and seasonal Kanazawa watermelon are listed as plant-based flavors, giving non-dairy diners at least some options.",
+  "url": "https://www.weekend-kanazawa.com/entry/chayu",
+  "verdict": "unsupported",
+  "found": "Blueberry half IS verbatim on the page: 「無農薬の新鮮なブルーベリーのみを使ったソルベは、甘酸っぱくて後味さっぱり！」 (「能登柳田ブルーベリー (ソルベ)」450円). The watermelon half is contradicted on the same page: 「金沢すいか」(450円) は「すいかの瑞々しさをぎゅっと詰め込んだ…爽やかなジェラートです」 — printed as ジェラート, not ソルベ, and served 「求肥のもっちりとした弾力が…」. The shop's own flavour list confirms only 能登柳田ブルーベリー・ソルベ has no 乳 allergen line.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited URL, cross-checked against http://chayu.info/ flavour list",
+  "note": "FALSE ASSURANCE risk: 金沢すいか is a gelato on this shop's dairy base, not a sorbet. Keep 能登柳田ブルーベリー・ソルベ as the plant-based example and delete the watermelon; the shop rotates 12 flavours so a vegan must check the 乳 line on the day."
+ },
+ {
+  "id": "kz_kanmi_cafe_chayu",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "options",
+  "evidence": [
+   "http://chayu.info/",
+   "https://www.weekend-kanazawa.com/entry/chayu"
+  ],
+  "why": "options — the operator states in its own words that its signature item's wafer is gluten-free: 東山アイスもなか 「原材料に北陸産もち米のみを用いた最中種は自然な甘みと香ばしい風味が特徴のグルテンフリー」, and it publishes an アレルギー原材料 line for every gelato flavour, of which exactly one (金沢大野醤油＆焦がしキャラメル: 乳/卵/大豆/小麦) contains 小麦. 雪見アイスもなか is 最中種＋求肥＋粒餡 and the 2F menu is わらび餅・あんみつ・寒天・餡子 — all rice/agar/bean. Not 'high': どら焼き/チョコどら生地 and the deep-fried 金沢おでんカレーパン are made and handled in the same small shop, and no cross-contact protocol is published. But 'no' is wrong in the dangerous direction — it warns a celiac off a shop that labels its allergens and sells a rice-wafer signature."
+ },
+ {
+  "id": "kz_kanmidokoro_kinkato",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Signature anmitsu dishes are typically served with the shop's homemade dairy ice cream, so plant-based diners should ask for it to be omitted.",
+  "url": "https://rurubu.jp/andmore/spot/80016536",
+  "verdict": "supported",
+  "found": "「丹波大納言を使った餡、白玉、寒天、アイスクリームまですべて自家製。…フルーツたっぷりのクリームあんみつ900円が人気。」 plus the photo caption 「人気No.1商品 クリームあんみつ」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Supported, and the same sentence names a dairy-free alternative the record omits: 「オレンジリキュールが香る白みつ付きの紅茶あんみつ850円」 is anmitsu without the cream. Moot in practice — see the trading finding below."
+ },
+ {
+  "id": "kz_kanmidokoro_kinkato",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Core components are made in-house (anko from Tamba Dainagon beans, shiratama, kanten, ice cream), so ingredients are simple and known to the makers.",
+  "url": "https://rurubu.jp/andmore/spot/80016536",
+  "verdict": "supported",
+  "found": "「丹波大納言を使った餡、白玉、寒天、アイスクリームまですべて自家製。」 — the four components in the claim, in the same order, verbatim.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Verbatim match. The shop's own site adds 「２６年間、餡子をはじめ殆どのものを手作りにこだわり、一人で暖簾を守ってまいりました」."
+ },
+ {
+  "id": "kz_kanmidokoro_kinkato",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "closed_permanently",
+  "evidence": [
+   "http://fubako.s150.xrea.com/"
+  ],
+  "why": "The operator's own site now leads with 「☆ 閉店のご挨拶 ☆」: 「２０００年５月に開店いたしました当店は 誠に勝手ながら この６月１日をもちまして正式に閉店することにいたしました」, signed 「２０２６年 ６月 甘味処 金花糖 女将」. The owner cites 古希を過ぎ、体力の衰え after 26 years. Permanently closed as of 1 June 2026; the rurubu listing is stale and still shows 12～17時 / 火・水曜定休."
+ },
+ {
+  "id": "kz_kawabata_sengyoten_katam",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Sashimi and grilled seafood are served with standard Japanese soy sauce, which contains wheat; no wheat-free tamari is documented.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17005272/",
+  "verdict": "unsupported",
+  "found": "The page confirms the food but never mentions soy sauce, wheat or allergens: 「その日に仕入れた魚介を、お刺身や七輪焼など様々なメニューで堪能」「お刺身の5種盛り合わせや、店内の生簀から揚げた魚貝類を自分の焼き加減で味わえる七輪焼などがおすすめです」. There is no 醤油 / アレルギー / 小麦 string anywhere on the listing.",
+  "correct_url": null,
+  "http": "403 on tabelog.com with a desktop UA; 200 on s.tabelog.com with an iPhone UA (curl followed the redirect automatically)",
+  "method": "2 — iPhone UA; the desktop host refused, the mobile host served the full detail page including JSON-LD",
+  "note": "The soy-sauce-contains-wheat part is a category default, not something this page says. Keep the caution but stop citing this URL for it — cite a general 醤油 reference, or drop the citation and phrase it as an assumption. The page does support the dish types, which is a separate claim."
+ },
+ {
+  "id": "kz_kawabata_sengyoten_katam",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is centered on fish and shellfish with fish-based dashi; no vegan-safe preparations are documented.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17005272/",
+  "verdict": "supported",
+  "found": "「新鮮な魚介を焼魚やぶりしゃぶなど多彩なメニューで楽しめる当店。お刺身の5種盛り合わせや、店内の生簀から揚げた魚貝類を自分の焼き加減で味わえる七輪焼などがおすすめです」, category line 「野町駅/居酒屋､ 海鮮､ 寿司」, and こだわり 「新鮮な魚介をお刺身や焼き魚など多彩なメニューで味わう」「生簀から揚げたばかりの魚貝類を七輪焼で堪能」. Nothing vegetarian or vegan appears anywhere.",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com (iPhone UA)",
+  "method": "2 — iPhone UA on the Tabelog detail page",
+  "note": "Supported on the fish/shellfish centring. The 'fish-based dashi' specific is not printed on this page — ぶりしゃぶ implies a broth but the page does not name the stock — so soften that half or drop it."
+ },
+ {
+  "id": "kz_kincharyo_honten",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "As a Kaga-cuisine kaiseki ryotei, menus rely on dashi and soy-based seasonings; no allergen or gluten information is published, so wheat-containing soy sauce should be assumed present.",
+  "url": "https://kincharyou.co.jp/cuisine/",
+  "verdict": "supported",
+  "found": "The itemised 春のお弁当 names two dishes that are soy-sauce preparations by definition: 「永楽：筍土佐煮　木の芽」 (tosa-ni = soy sauce + katsuobushi) and 「焼き物　桜鱒柚庵焼き」 (yuan-yaki = a soy-sauce/mirin/yuzu marinade), plus 「味噌椀」. The 夕席懐石 and 昼席懐石 lists both run 先付、前菜、吸い物、お造り、焼き物、炊合せ、酢の物、お食事、留椀、香の物 — dashi courses throughout. The page carries no アレルギー / 小麦 / グルテン text of any kind.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL; also checked https://kincharyou.co.jp/news/",
+  "note": "Supported. Reinforcing evidence on /news/: a 2024/07/01 plan 「◇夏休み特別企画◇風景絶品の天望の間でお座敷天婦羅を！」 — tempura service, i.e. wheat batter and a shared fryer."
+ },
+ {
+  "id": "kz_kincharyo_honten",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Courses are built around sashimi, grilled fish and simmered seafood alongside dashi, so animal ingredients and cross-contact are pervasive on the standard menus.",
+  "url": "https://kincharyou.co.jp/cuisine/",
+  "verdict": "supported",
+  "found": "「お造り　白身、鮪」「焼き物　桜鱒柚庵焼き」「織部：蛍烏賊　酢取り茗荷」「ギヤマン：鯛龍飛巻」「黄瀬戸：白魚美人粉揚」「お食事　蒸し寿司（海老、鮭、錦糸卵、でんぷ、胡麻昆布）」, and every course list includes 吸い物 / 留椀.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Supported. Two plant dishes do appear in the same bento (菜の花白和え, こごみ胡麻和え) but 白和え is tofu-based and normally dashi-seasoned, so they are not evidence of a vegan option."
+ },
+ {
+  "id": "kz_kincharyo_honten",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Meals are served in private rooms by reservation, so dietary requests can in principle be discussed directly with the kitchen when booking ahead.",
+  "url": "https://kincharyou.co.jp/cuisine/",
+  "verdict": "supported",
+  "found": "「離れのお部屋は一名様から二〇名様まで承っております。」 and, in the cancellation policy, 「人数、内容の変更は三日前の正午までにご連絡お願い致します。」 — the ryotei explicitly takes changes to the CONTENT of a booked meal up to noon three days ahead.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain fetch)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Supported, and stronger than the record credits: 内容の変更 is a documented mechanism for a dietary request, not just an inference from private-room service."
+ },
+ {
+  "id": "kz_kincharyo_honten",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://kincharyou.co.jp/cuisine/",
+   "https://kincharyou.co.jp/news/"
+  ],
+  "why": "ask — the record is internally inconsistent: it awards vegan_status 'ask' on the reasoning that 'a plant-based course might be arranged if requested well ahead', then awards gf_confidence 'no' on exactly the same facts. The page documents the mechanism for both — 「離れのお部屋は一名様から二〇名様まで承っております」 and 「人数、内容の変更は三日前の正午までにご連絡お願い致します」 — a made-to-order kaiseki in a detached private room that accepts content changes three days out. 'ask' is the correct tier for a place with no GF programme but a real advance-request channel; 'no' should be reserved for kitchens where the answer cannot change. Not higher than 'ask': no allergen information is published anywhere on the site, soy-sauce preparations (土佐煮, 柚庵焼き) are on the standard bento, and /news/ advertises お座敷天婦羅."
+ }
+]
