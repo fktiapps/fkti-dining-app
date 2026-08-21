@@ -114,5 +114,138 @@
   "http": "200 (plain curl, 76 KB); 200 (iPhone UA, 521 KB) on tabelog.com/.../26043587/",
   "method": "1 plain fetch of the cited article, plus an iPhone-UA fetch of the Tabelog listing to check the broth base and trading status.",
   "note": "Conclusion holds — a two-item menu, both bowls topped with 豚バラ肉. Two corrections. (a) 'Pork-based' is not on the cited page: it says 清湯スープ without naming the stock animal. The pork base is corroborated only in the Tabelog keyword block (清湯／清湯スープ／豚骨／ラード), so cite that alongside. (b) The record omits the article's headline animal ingredient — 生卵, a raw egg served on the side with the standard bowl and the thing the reviewer builds the whole tasting note around. Trading status OK: Tabelog 26043587, 97 reviews, most recent visit 2026/07, no 閉店 or 掲載保留. Hours defect worth fixing: Tabelog gives 月・火・水・木 11:00-19:00 and 金・土・日・祝日 11:00-21:00, and the record's hours OBJECT matches that exactly, but its hours_raw prose says 'Sun-Thu 11:00-19:00; Fri, Sat and holidays 11:00-21:00' — the prose puts Sunday in the wrong group and disagrees with the machine-readable field beside it. Separately, the cited page's 「営業時間：11:00〜19:00 定休日：不定休」 is opening-week data from 2025-09-04 and is now superseded; the record's '年中無休(年末年始も営業)' comes from Tabelog and is right."
+ },
+ {
+  "id": "kyr_ambitious_hana",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The dipping broth is a thick pork-bone-and-seafood tare-based tsukejiru, and the spicy version is miso-based (辛醤つけめん); these standard ramen/tsukemen seasonings contain wheat-based soy/miso.",
+  "url": "https://tabelog.com/kyoto/A2601/A260503/26017374/",
+  "verdict": "supported",
+  "found": "The cited listing carries 「2011年に京都市左京区で創業した【あんびしゃす花】タピオカ粉を練り込んだ麺と土鍋で提供される熱々のつけ汁が自慢の、長年この地で愛されるお店です。」, the menu line 「辛醤つけめん 1050円」, and a keyword block containing 豚骨, 醤油ラーメン, タピオカ, 小麦, 割りスープ. Its /dtlmenu/ page adds one user-registered item: 「『こく旨しょうゆつけ麺』790円」 (updated 2015/04/07).",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 527 KB) on the cited listing; 200 (iPhone UA, 142 KB) on .../dtlmenu/",
+  "method": "iPhone-UA fetch of the cited listing plus its /dtlmenu/ page. tabelog.com answered directly; s.tabelog.com was not needed.",
+  "note": "Two named details in the claim are NOT on the cited page and one of them is a mistranslation. (a) 魚介 returns 0 hits — 'pork-bone-and-SEAFOOD (豚骨魚介)' is the record's own addition; only 豚骨 is in the keyword block. (b) 辛醤 is not miso. 醤 is jang/sauce (as in 豆板醤, 甜麺醤); 味噌 returns 0 hits on both the listing and the menu page, so 'the spicy version is miso-based' is an inference drawn from a character that does not carry that meaning. Fix both, and lean instead on what IS there: 「こく旨しょうゆつけ麺」 and the 醤油ラーメン / 小麦 keywords, which evidence a wheat-brewed soy tsukejiru directly. The record gets one thing exactly right and it is worth protecting: the noodles are 「タピオカ粉を練り込んだ麺」, and gf_detail correctly reads that as tapioca blended INTO a wheat noodle rather than as a gluten-free noodle — the keyword block's 小麦 backs that up. Trading status OK: hours on the listing (月・土・日 11:00-14:30 / 17:30-22:00, 木・金 17:30-22:30, 火・水 定休) match the record exactly, 265 reviews, most recent visit 2025/06, no 閉店 or 掲載保留 banner."
+ },
+ {
+  "id": "kyr_chikara_mochi_shokudo_ka",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat-noodle-centric diner (chūka soba, udon, soba) sharing one small kitchen; no gluten-free accommodation noted.",
+  "url": "https://kyotopi.jp/articles/GZjPd",
+  "verdict": "supported",
+  "found": "「メニューはうどんそば麺類と丼物が中心ですが、定食もあり。」, 「こじんまりとした店内は、いかにも昭和スタイルの昔懐かしい雰囲気。」, 「壁にも掲げられています。その奥が厨房。」, and the bowl itself: 「麺は細めのストレート麺。」 The owner confirms the constraint in his own words elsewhere: 「厨房のスペースや設備が限られているため、この羽釜ではあんこを炊くだけでなく、赤飯やもち米を蒸したりもします」 (2代目店主 柿仲清隆, digistyle-kyoto.com/magazine/25081).",
+  "correct_url": null,
+  "http": "200 (plain curl, 82 KB) on kyotopi.jp/articles/GZjPd; 200 (plain curl, 73 KB) on fukakusa-flower.com/tikaramochishokudo; 500 on www.fukakusa-flower.com/shop007.html (the 関連サイト link printed by the cited article itself); 200 (iPhone UA, 78 KB) on digistyle-kyoto.com/magazine/25081; 200 (iPhone UA, 517 KB) on tabelog.com/.../26020476/",
+  "method": "1 plain fetch of the cited article, then the record's own website field, then Ecosia (the only engine answering at this run) to find the Tabelog listing and the owner interview.",
+  "note": "The noodle half is supported and 小麦/グルテン/アレル return 0 hits, so 'no gluten-free accommodation noted' is fair. But 'wheat-noodle-centric' as a summary of the whole shop is incomplete in the direction that costs a celiac a meal. The operator's own listing gives the range as 「麺類、丼物、季節物（ざるそば・冷麺など）、いなり寿司・おはぎ・お赤飯等」, and the shop's namesake 餅 line is documented ingredient by ingredient in an interview with the second-generation owner: 「原料となる小豆は北海道十勝産を使用し、２種類のザラメ糖で自家製のあんこを炊いています」 and 「もち米は佐賀県産ヒヨクモチ」 and 「きな粉のおはぎの中にも、同じ粒あんが入っています」. もち米・小豆・ザラメ糖・きな粉 contains no wheat, the ohagi is boiled and steamed in a 羽釜 used only for anko, sekihan and mochi rice, and it is sold from a separate counter at the shop front (「こちらでは店頭に独立した販売スペースがあり、店員さんが一人店番をされてました」). See the gf_confidence tier_recommendation on this record. Trading status OK: Tabelog 26020476 (same address 伏見区深草直違橋2-425 and same phone 075-642-0249), 月〜土 10:00-18:00 日定休 matching the record's hours object, most recent review 2026/01, menu photos updated 2026/06, no 閉店 banner — this is worth confirming because many 力餅食堂 branches have closed (淡路 2009, 相川 2020, 西郷通 2022/09, 門真銀座 2023/10, 阿倍野 2026/02) and the cited article is from 2020."
+ },
+ {
+  "id": "kyr_chikara_mochi_shokudo_ka",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Signature bowl uses char siu pork, fish-cake kamaboko and a dashi-based broth; no plant-based preparation indicated.",
+  "url": "https://kyotopi.jp/articles/GZjPd",
+  "verdict": "supported",
+  "found": "「チャーシュー意外と厚切り。」, 「かまぼこが2種類入っているのが、うどんそば麺類のお店の中華そばらしいというか。そして九条ネギとメンマもたっぷり。」, 「まずはスープ。かなり淡麗で色も薄め…ラーメンスープというよりうどん用の出汁に近いような。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 82 KB)",
+  "method": "1 plain fetch",
+  "note": "All three elements of the first clause are on the page verbatim, and the chuka soba is correctly described. The second clause is where this record is wrong. The same page shows a takeaway operation the record ignores: 「そして、力餅食堂に共通の販売スタイル。こんな風におはぎやおいなりさんをテイクアウトで購入することができます…こちらでは店頭に独立した販売スペースがあり」. Ohagi at this shop is もち米・自家製あんこ（小豆＋ザラメ糖）, with a きな粉 version, per the owner's own interview, and the Tabelog keyword block for the shop lists 力餅／餅／赤飯／あんこ／きなこ／柏餅／持ち帰り. Those are plant-based items sold daily from a counter that is physically separate from the kitchen. 'No plant-based preparation indicated' is contradicted by the operator's own product list. See the vegan_status tier_recommendation. Note also that いなり寿司 is NOT in that group — its abura-age is simmered in dashi and soy and should stay listed as non-vegan; the record is right to name it, just filed under the wrong conclusion."
+ },
+ {
+  "id": "kyr_chikara_mochi_shokudo_ka",
+  "city": "kyoto",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.digistyle-kyoto.com/magazine/25081",
+   "https://fukakusa-flower.com/tikaramochishokudo",
+   "https://kyotopi.jp/articles/GZjPd",
+   "https://tabelog.com/kyoto/A2601/A260601/26020476/"
+  ],
+  "why": "limited — the shop's namesake products are documented plant-based by the owner himself. 2代目店主 柿仲清隆 describes the ohagi as 「原料となる小豆は北海道十勝産を使用し、２種類のザラメ糖で自家製のあんこを炊いています」 with 「もち米は佐賀県産ヒヨクモチ」 and a きな粉 variant over the same 粒あん: glutinous rice, azuki, zarame sugar, roasted soy flour, and nothing else named. The Fukakusa shopping-street official listing gives the shop's range as 「麺類、丼物、季節物（ざるそば・冷麺など）、いなり寿司・おはぎ・お赤飯等」, and the Tabelog keyword block adds 赤飯, あんこ, きなこ, 柏餅 and 持ち帰り. 赤飯 (glutinous rice steamed with azuki) and 柏餅 (rice flour and anko) are plant-based on the same basis. These are sold from a dedicated counter at the shop front, not from the diner service. 'limited' rather than 'options' because the shop advertises nothing as vegan, publishes no ingredient statement, and everything cooked to order — 中華そば, 丼, 定食, いなり寿司 — is animal-based; a vegan gets confectionery and rice, not a meal. But 'Not vegan' as it stands tells a plant-based reader in Fukakusa that there is nothing here, and the operator's own product line says otherwise."
+ },
+ {
+  "id": "kyr_chikara_mochi_shokudo_ka",
+  "city": "kyoto",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.digistyle-kyoto.com/magazine/25081",
+   "https://fukakusa-flower.com/tikaramochishokudo",
+   "https://tabelog.com/kyoto/A2601/A260601/26020476/"
+  ],
+  "why": "ask — the record's 'no' rests on the shop being wheat-noodle-centric, which is true of the food it cooks to order but not of the counter at its door. The ohagi is もち米（佐賀県産ヒヨクモチ）plus 自家製あんこ（北海道十勝産小豆＋２種類のザラメ糖）, with a きな粉 version, and the 赤飯 is glutinous rice steamed with azuki — no wheat ingredient in either, from the owner's own account. The owner also says the 羽釜 used for them handles only anko, sekihan and mochi rice, and the kyotopi report puts the sales point in a 「店頭に独立した販売スペース」 away from the noodle kitchen. That is not a gluten-free claim and must not be written as one: the operator publishes no allergen statement, the kitchen is explicitly cramped (「厨房のスペースや設備が限られている」) and boils udon, soba and chuka soba, and the shop also sells 柏餅 and inari sushi whose soy seasoning is wheat-brewed. 'ask' is the honest tier — it tells a celiac there is something here worth a question, without promising an answer. Nothing above 'ask' is defensible."
+ },
+ {
+  "id": "kyr_chinyu_ichijoji_honten",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The ramen uses a traditional soy-based (shoyu) tare, which in a shop of this style is wheat-based; no gluten-free tare or noodles are offered.",
+  "url": "https://www.chinyu.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited root page says nothing about the tare. Whole-page string search on chinyu.jp/: 醤油 1 hit, and it is a 2015/8/11 news item about a limited-run product at a DIFFERENT branch (「河原町六角店のみ期間限定、新作ラーメン『冷やしラーメン冷鶏・醤油』を販売いたします」); 小麦 0, グルテン 0, アレル 0. The support is one click away on the same site, at https://www.chinyu.jp/history/ : 「老舗の醤油でまろやかな風味に、新鮮な背脂をチャッチャと振れば、永久不変のソウルフードの出来上がり。」 and 「文化二年創業【松野醤油】様の木樽で育った醸造醤油がベース。」 and 「北海道の小麦が香る、中細ストレートの低加水麺。」",
+  "correct_url": "https://www.chinyu.jp/history/",
+  "http": "200 (plain curl, 29.7 KB) on chinyu.jp/; 200 (plain curl, 7.3 KB) on chinyu.jp/history/; 200 on chinyu.jp/menu/; 404 on chinyu.jp/shop/",
+  "method": "1 plain fetch of the cited root, then the site's own nav links (珍遊とは → /history/, メニュー → /menu/). No UA switch, proxy, Wayback or search engine needed for chinyu.jp.",
+  "note": "Repoint to /history/, which is far stronger than the record claims. It does not merely imply wheat — it names 小麦 outright in the noodle (「北海道の小麦が香る…低加水麺」) and names the tare's actual supplier, 松野醤油 of Kyoto Takagamine. That maker's own online store publishes the label for the product line in question: 昔づくり こいくち 「【原材料名】小麦（国産）、脱脂加工大豆、大豆、食塩、砂糖/アルコール」 (matsunoshouyu-onlinestore.com/view/item/000000000046) — wheat is the first ingredient. So the record's hedge 'which in a shop of this style is wheat-based' can be replaced with a sourced fact. Separately, the record's gf_detail says karaage is 'breaded/wheat-seasoned'; the menu lists 唐あげ and 塩麹唐揚げ, and Japanese karaage is as often potato-starch dredged, so that specific assumption is unevidenced — while 餃子/餃子定食, which are certainly wheat, are on the menu page and go unmentioned. Trading status OK, and recently eventful: the operator's own お知らせ shows 「6月1日 一乗寺本店・店内改装に伴う休業のお知らせ」 (2026/06/01) followed by 「【一乗寺本店リニューアルオープンイベント開催】」 (2026/07/22), so the honten was shut for a refit this summer and has reopened. Hours on the same page (11:00～24:00, ラストオーダー23:30, 定休日 水曜日（祝日の場合は営業）) match the record exactly."
+ },
+ {
+  "id": "kyr_chinyu_ichijoji_honten",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is animal-based throughout — a chicken-bone stock enriched with pork back fat — so there is no non-animal stock prepared on site.",
+  "url": "https://www.chinyu.jp/",
+  "verdict": "supported",
+  "found": "The cited root page carries the shop's own recommendation block 「オススメの一品 中華そば — 鶏白湯スープに背脂チャッチャ系」 and the site tagline 「昭和25年創業、中華そば専門店 珍遊（ちんゆう）。鶏白湯背脂系、京都ラーメンの源流です。京都にて3店舗営業中。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 29.7 KB)",
+  "method": "1 plain fetch",
+  "note": "Supported, and the fuller version on /history/ is worth citing alongside: 「鶏ガラ・丸鶏・モミジ等々じっくり炊き出し乳化させ、コラーゲンたっぷりの白湯スープに仕上げます。新鮮な鶏脂（チーユ）と背脂が味のスパイス。」 One precision point: 白湯 is a single emulsified stock, so 'no non-animal stock prepared on site' is a safe reading of a one-broth shop — but it is the record's inference, not a statement by the operator. The /menu/ page confirms there is no plant-based bowl: the only ramen is 中華そば, toppings are 玉子・味玉・焼豚増し・メンマ・半キムチ・三種盛り, and every 定食 is built on 唐あげ, 餃子, 半チャン, チャー丼 or ブタキムチ丼. vegan 'no' and gf 'no' are both correct — no tier change."
+ },
+ {
+  "id": "kyr_chinyu_kawaramachi_rokka",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles are boiled in shared water and the broth/tare contain wheat-based shoyu; a shared ramen kitchen offers no gluten-free path or separation.",
+  "url": "https://www.chinyu.jp/history/",
+  "verdict": "supported",
+  "found": "「北海道の小麦が香る、中細ストレートの低加水麺。コツっとあたるコシから次第にモチっとした食感に変化します。」 and 「文化二年創業【松野醤油】様の木樽で育った醸造醤油がベース。継ぎ足し継ぎ足し熟成された自慢の漬けタレは、創業依頼の肉の旨みが凝縮されています。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 7.3 KB)",
+  "method": "1 plain fetch",
+  "note": "The wheat facts are on the page and are unusually explicit for a ramen shop — 小麦 is named in the noodle and the tare's maker is named, not assumed. Two clauses are not on the page and should be marked as inference: 'boiled in shared water' (茹で/釜/湯 all return 0 hits) and 'no gluten-free path or separation' (グルテン 0, アレル 0 — the site is silent on allergens rather than saying there is no path). The conclusion is still right, since the single ramen the shop sells is a wheat noodle in a wheat-shoyu tare and there is no second product to separate. One structural caveat a human should note: this is a BRANCH record whose three sources all sit on a page whose own title is 「珍遊とは｜中華そば専門店 珍遊 京都一乗寺本店」, i.e. the other branch's name. In this case that is acceptable rather than a defect — chinyu.jp is a single-company site describing one recipe across 「京都にて3店舗営業中」 — but it is worth writing down so the next reviewer does not have to re-derive it."
+ },
+ {
+  "id": "kyr_chinyu_kawaramachi_rokka",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tare is described as an aged/traditional soy sauce ('老舗の醤油でまろやかな風味に'), and Japanese brewed shoyu is almost always made with wheat — treat the seasoning as wheat-containing.",
+  "url": "https://www.chinyu.jp/history/",
+  "verdict": "supported",
+  "found": "The quoted string is verbatim on the page: 「鶏ガラ・丸鶏・モミジ等々じっくりと炊き出しコラーゲンたっぷりの白湯スープに仕上げます。老舗の醤油でまろやかな風味に、新鮮な背脂をチャッチャと振れば、永久不変のソウルフードの出来上がり。」 The same page identifies the 老舗: 「文化二年創業【松野醤油】様の木樽で育った醸造醤油がベース。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 7.3 KB) on chinyu.jp/history/; 200 (iPhone UA, 21 KB) on matsunoshouyu-onlinestore.com/view/item/000000000046",
+  "method": "1 plain fetch for the quote; then Ecosia (the only engine answering at this run — Brave and Yahoo Japan both 429, Mojeek 403, DuckDuckGo lite HTTP 202 empty) to find 松野醤油's own online store, then a direct fetch of that product page.",
+  "note": "Quote checks out character for character — the rare case in this shard where a Japanese quotation was recorded exactly. The hedge can now be retired: the tare's maker is named on the same page as 松野醤油 (文化二年創業, Kyoto Takagamine), and 松野醤油's own online store publishes 昔づくり こいくち 「【原材料名】小麦（国産）、脱脂加工大豆、大豆、食塩、砂糖/アルコール」 — 小麦 first on the statutory label. Rewrite 'almost always made with wheat' as 'the named supplier's own label leads with 小麦', which is a fact a reader can check rather than a rule of thumb. Note the record also asserts wheat in the BROTH; the broth is a chicken 白湯 and the wheat enters via the tare, so 'broth/tare' should be tightened to the tare."
+ },
+ {
+  "id": "kyr_chinyu_kawaramachi_rokka",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The base broth is chicken paitan (chicken bones, whole chicken, chicken feet) finished with animal back fat, so every bowl is animal-based with no plant-based stock available.",
+  "url": "https://www.chinyu.jp/history/",
+  "verdict": "supported",
+  "found": "「鶏ガラ・丸鶏・モミジ等々じっくり炊き出し乳化させ、コラーゲンたっぷりの白湯スープに仕上げます。新鮮な鶏脂（チーユ）と背脂が味のスパイス。飽きの来ない奥行きある味わいです。」 — 鶏ガラ (chicken bones), 丸鶏 (whole chicken), モミジ (chicken feet), 鶏脂 (chicken fat) and 背脂 (pork back fat) are all named on the cited page.",
+  "correct_url": null,
+  "http": "200 (plain curl, 7.3 KB)",
+  "method": "1 plain fetch",
+  "note": "Every named element is on the page verbatim; this is the best-evidenced claim in the shard. Two refinements. The record's vegan_detail adds 'bowls are topped with chashu pork', which is true but lives on /menu/ (焼豚増し, チャー丼定食, ブタキムチ丼定食) rather than on /history/ — cite both if the chashu is to stay in the text. And 'no plant-based stock available' is the record's inference from a one-broth shop rather than an operator statement; the /menu/ page supports it, since the only ramen is 中華そば and every 定食 is 唐あげ, 餃子, 半チャン, チャー丼 or ブタキムチ丼. vegan 'no' and gf 'no' are both correct — no tier change. Trading status OK: the operator's own front page lists this branch among three currently trading, 「河原町六角店 営業時間 11：00～23：30（ラストオーダー23：00）定休日 なし」, with no closure notice (the closures on that page are 葛野大路四条店, ended 2019/12/14, and 大津店, announced 2021/05/11 — neither is this record). But the record's hours are wrong in both variants it offers: it says '11:00–24:00 (daily); some listings show 11:00–23:00', while the operator says 11:00–23:30 with last order 23:00. Fix to 11:00–23:30, no closing day."
  }
 ]

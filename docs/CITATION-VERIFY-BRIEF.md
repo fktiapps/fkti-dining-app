@@ -125,6 +125,13 @@ Every one of these is a real defect from an earlier shard, not a hypothetical:
 - **白醤油 is majority WHEAT**, the opposite of tamari. "White, light, delicate" reasoning
   picks the single worst bowl on the menu.
 - **五穀米 / 雑穀米 / 十六穀米** — multigrain blends routinely contain 押麦 or もち麦.
+- **A DISCLAIMER READ AS AN ACCOMMODATION.** Twice now, and it is the worst inversion
+  in the set. どんつき ひだり's record says allergies "can be discussed at reservation";
+  the house's own page refuses allergy bookings, says trace carry-over is unavoidable
+  and its chefs can do nothing if a reaction occurs. 芝生's staff_allergy_handling reads
+  as an offer to advise; the linked PDF says 「厨房では調理器具や食器の区別なく、小麦粉・乳製品・
+  卵を使用して調理」「揚げ油は使い分けいたしておりません…お客様ご自身でご判断ください」. When a shop
+  publishes an allergen page, read whether it is promising something or refusing to.
 - **Records wrong in BOTH directions**: warning against something harmless while
   omitting the operator's own admission of contamination.
 

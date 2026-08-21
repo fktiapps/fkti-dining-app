@@ -433,6 +433,33 @@
  },
  {
   "city": "kyoto",
+  "id": "ChIJ1ZkRawAJAWARUlQkpI7Sh94",
+  "name": "Rin Halal Japanese & Vegetarian",
+  "field": "gf_cross_contamination",
+  "text": "This is a Kyoto-style izakaya whose signature dish is a wagyu offal hot pot (horumon nabe) built on a white-miso broth. ",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26029496/",
+  "why": "SEVERE: all three safety claims on this record were transplanted from 祇園和肴 RIN, a different Gion business a few hundred metres away that happens to share the syllable 'RIN'. Nothing on the cited page describes this venue. Delete all three and re-source. The transplanted text also does active harm in"
+ },
+ {
+  "city": "kyoto",
+  "id": "ChIJ1ZkRawAJAWARUlQkpI7Sh94",
+  "name": "Rin Halal Japanese & Vegetarian",
+  "field": "soy_sauce_wheat",
+  "text": "Dishes here lean on miso and typical Japanese seasonings; most Japanese soy sauce and miso-based broths contain wheat. A",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26029496/",
+  "why": "Transplanted with the rest. The conclusion (assume gluten, ask) is not unreasonable for the real venue — an Instagram post dated 2026-06-05 describes eating 'Vegetable Yaki Udon and vegetable croquet' there, both wheat — but nothing on the cited page evidences it. gf_confidence 'ask' remains the rig"
+ },
+ {
+  "city": "kyoto",
+  "id": "ChIJ1ZkRawAJAWARUlQkpI7Sh94",
+  "name": "Rin Halal Japanese & Vegetarian",
+  "field": "vegan_cross_contact",
+  "text": "The kitchen centers on wagyu and offal hot pot, and broths in this style are typically made with bonito/meat-based dashi",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26029496/",
+  "why": "'No documented dedicated vegan menu or separate-prep process' is the opposite of what the venue's own directory listing states. vegan_status 'options' is already correct, so no tier move is needed — but the detail text must stop describing an offal hot pot. Trading check: no evidence of closure; Hal"
+ },
+ {
+  "city": "kyoto",
   "id": "ChIJMw-hjc0HAWARcCZcUSfaHA8",
   "name": "MOS & CAFE – Nijo Station",
   "field": "soy_sauce_wheat",
@@ -511,6 +538,15 @@
   "text": "Not a dedicated gluten-free kitchen and not listed as a celiac-friendly place; staff understand 'wheat allergy' (the mor",
   "source": "https://www.findmeglutenfree.com/biz/kerala-indian-restaurant/5143618005893120",
   "why": "The cited page contradicts two thirds of this claim. It IS a celiac-facing listing with 10 recent ratings and multiple self-identified celiac reviewers, and the phrase 'wheat allergy' occurs nowhere - reviewers report staff understanding 'gluten free' and 'cross-contact' specifically. Only 'no dedic"
+ },
+ {
+  "city": "kyoto",
+  "id": "ChIJ58xq4ZkHAWAReKyfPh-M-lk",
+  "name": "ラーメン親爺 (Ramen Oyaji)",
+  "field": "gf_cross_contamination",
+  "text": "Wheat noodles are cooked in shared boiling water and the soy-based soup is central to every bowl, so cross-contamination",
+  "source": "https://kyotopi.jp/articles/i3B2W",
+  "why": "Not a safety error — everything on this menu is wheat anyway — but the 'shared boiling water' sentence is invented for this citation, and it is the exact phrase that produced a wrongful downgrade at Menbaka. It is also a duplicate gf_cross_contamination entry citing the same URL as the one above. Me"
  },
  {
   "city": "kyoto",

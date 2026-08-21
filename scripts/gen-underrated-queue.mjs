@@ -93,7 +93,7 @@ const SEED = [
          'dairy, says allergy language does not exist when it does, and publishes stale hours.' },
 ];
 
-const recs = [], downgrades = [], malformed = [], closures = [], shopClaims = [], stillOpen = [];
+const recs = [], downgrades = [], malformed = [], closures = [], shopClaims = [], stillOpen = [], suspended = [];
 for (const s of SEED) {
   const hit = byId.get(s.id);
   if (!hit) { console.log(`  (seed id not found, skipping: ${s.id})`); continue; }
@@ -120,6 +120,16 @@ if (fs.existsSync(DIR))
       if (/^trading(_status)?$/.test(String(v.kind || '')) && /^(open|trading)$/i.test(String(v.status || ''))) {
         const h = byId.get(v.id);
         if (h) stillOpen.push({ city: h.city, id: v.id, name: h.r.name, why: String(v.why || '').slice(0, 300) });
+        continue;
+      }
+      // 休業中 is not 閉店. 油そば大革命 金閣寺店 is marked 「休業中」 by its own operator, with
+      // a 2026/04 review on file — suspended, not gone. Hiding it would be wrong and so
+      // would leaving it looking open, so it keeps its listing with a reopening badge,
+      // the state SHUT_LINE already renders. The agent drew that distinction carefully;
+      // dropping it because the router only knew one word would have thrown it away.
+      if (/^trading(_status)?$/.test(String(v.kind || '')) && /closed_temporarily|temporar/i.test(String(v.status || ''))) {
+        const h = byId.get(v.id);
+        if (h) suspended.push({ city: h.city, id: v.id, name: h.r.name, why: String(v.why || '').slice(0, 300) });
         continue;
       }
       if (/^trading(_status)?$/.test(String(v.kind || '')) || v.status === 'closed_permanently' ||
@@ -201,6 +211,19 @@ if (APPLY && closures.length) {
 console.log(closures.filter(c => !c.already).length + ' venue(s) found closed and hidden' +
             (closures.length ? ' (' + closures.length + ' reported)' : ''));
 closures.forEach(c => console.log('  ' + c.city + '/' + String(c.name).slice(0, 34) + (c.already ? '  (already hidden)' : '')));
+if (APPLY && suspended.length) {
+  for (const c of CITIES) {
+    const j = readCity(c); let dirty = false;
+    for (const sp of suspended.filter(x => x.city === c)) {
+      const r = j.places.find(x => x.id === sp.id);
+      if (!r || r.hidden) continue;
+      r.closed = { status: 'temporary', until: null, note: sp.why, checked: '2026-08-21' };
+      dirty = true;
+    }
+    if (dirty) writeCity(c, j);
+  }
+}
+if (suspended.length) console.log(suspended.length + ' venue(s) suspended (休業中), badged rather than hidden');
 if (APPLY && stillOpen.length) {
   for (const c of CITIES) {
     const j = readCity(c); let dirty = false;
