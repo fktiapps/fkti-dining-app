@@ -38,6 +38,16 @@
 // areas, not in the tranche as a whole, and the fix is to re-discover the bad
 // clusters from a sourced method rather than to sift their records one by one.
 //
+// Hypothesis 3 — cross-city place names — DOES NOT HOLD, and runs backwards. 日本橋
+// and 中央区 exist in Tokyo AND Osaka, so a sweep confusing them would explain some
+// misses. It does not: 7% of not-found records claim an ambiguous place name against
+// 20% of located ones. The trap is real in individual cases (a shard hit 「たか鳥 京橋店」
+// in Osaka's Kyōbashi, and 魚新 matches a live Kuromon fishmonger at 大阪市中央区日本橋)
+// but it is not what is driving the rate.
+//
+// Three explanations tested, one holds. Stop theorising and let the per-record
+// verification say what these records are.
+//
 //   node scripts/analyse-notfound.mjs
 import fs from 'node:fs';
 import { readCity } from './lib-city.mjs';

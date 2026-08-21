@@ -571,5 +571,245 @@
    "http://www.88ya.net/marunouchi/"
   ],
   "enrich_note": "Confirmed. 四国 88屋 丸の内本店（はちはちや）is at 〒100-0005 千代田区丸の内1-4-1 丸の内永楽ビルディング iiyo!! B1F, phone 03-6273-4560, per Marunouchi.com's tenant listing, gnavi and Tabelog; coordinates moved to that building. Note it shares the building with another record in this shard, tokyo3_iiyo — both are in the iiyo!! basement of the Marunouchi Eiraku Building, so their pins will sit on top of each other and may need de-stacking. The shop's own site at 88ya.net is a Shift-JIS frameset from which no content could be extracted, and the operator's corporate site s-leading.co.jp returned HTTP 403 on three attempts including a desktop-UA retry; the company details come instead from the Imabari employment portal's profile of 株式会社瀬戸内しまなみリーディング and a job listing carrying its registration. GF raised from the light record's 'ask' — still ask, but with a concrete route: the menu itself offers the straw-grilled tataki with salt instead of ponzu."
+ },
+ {
+  "id": "tokyo3_m",
+  "name": "天ぷら日本酒 天喜代 東京駅店",
+  "status": "confirmed",
+  "lat": 35.680276,
+  "lng": 139.768235,
+  "loc_precise": true,
+  "address_ja": "〒100-0005 東京都千代田区丸の内1-9-1 グランルーフB1（グランスタ八重洲内）",
+  "enrich_confidence": "high",
+  "cuisine": "A tempura-and-sake counter inside the station, run by the 1927 Shimotakaido sushi house Asahizushi — seasonal seafood and vegetables fried in a safflower-oil blend in an open kitchen, with dishes you will not find at a normal tempura shop: sea urchin wrapped in nori and fried, whole Kujūkuri clams fried in the shell, and a sake list chosen dish by dish; about ¥1,000–¥1,500 at lunch, ¥2,000–¥3,000 at night, banquet courses ¥7,000–¥8,000 with two hours of drinks",
+  "cuisine_type": "tempura",
+  "neighborhood": "Marunouchi 1-9-1, B1 of GranRoof inside the Gransta Yaesu concourse — through the JR Yaesu underground central exit, past Tokyo Okashi Land and right at Sushisei in front of Daimaru; 3 min from JR Tokyo Station, 5 min from the Marunouchi subway line",
+  "website": "https://tenkiyo-tokyo.owst.jp/",
+  "menu_url": "https://tenkiyo-tokyo.owst.jp/",
+  "hours_raw": "月～日・祝日・祝前日 11:00～22:00（料理L.O.21:00／ドリンクL.O.21:00）　グランスタ八重洲に準ずる　定休日：無",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "A tempura specialist with an open kitchen and one fryer. Everything is wheat batter, including the two house signatures (uni wrapped in nori, whole clam in the shell), and the tentsuyu is wheat soy sauce. The oil is a safflower blend — the light record was right about that, and the operator says so in its own listings — but safflower oil is a lightness claim, not an allergen one. No gluten-free item, no allergen sheet, no separate fryer. The sake list is a further reason for care: most junmai is fine, but the shop makes no statement about it.",
+  "vegan_status": "no",
+  "vegan_detail": "Built on the parent company's sushi buying: prawns, seasonal fish, sea urchin, clams. Vegetable tempura exists inside the courses but shares the fryer with seafood and the dipping sauce is a bonito tentsuyu. Nothing vegan is offered.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "a tempura brand of 旭鮨總本店株式会社 (Asahizushi Sōhonten Co., Ltd.), 下高井戸"
+   ],
+   "origin": "Shimotakaido, Setagaya-ku — the parent company's first shop, on the Keiō line",
+   "background": "Tenkiyo is the tempura arm of a Setagaya sushi company whose own history is better than most standalone restaurants'. The founder, Kanjirō Takano, was a tabi craftsman who went independent in 1916 and hung out a sign reading 旭屋; on 1 February 1927 he opened a soba shop called Asahiya beside Shimotakaido station on the Keiō line, and that is the date the company counts as its founding. The character 旭 was chosen over the ordinary 朝日 for a reason the company still explains on its site: 旭 breaks apart into 九日, nine days — one short of ten, one short of completion — as a standing reminder never to feel finished. The Pacific War killed the business; Asahiya was forced to close in 1944. It came back in 1949, under the postwar law reopening food and drink premises, as 旭鮨 doing 鮨委託加工 — commissioned sushi processing — because rice was still controlled: a customer handed over a gō of rice, the shop turned it into sushi for a fee of 60 yen, and since eating on the premises was forbidden the whole trade was delivery, with the rice collected when the dishes were fetched back. Controls lifted in 1950, the firm incorporated in 1952, put a counter into the Keiō department store food hall in Shinjuku in 1964, and renamed itself Asahizushi Sōhonten in 1968. It now runs about twenty shops around Tokyo — sushi, fugu, tempura and Japanese cooking — with 90 permanent and 216 part-time staff and turnover around ¥2bn, and it reaches its centenary in 2027. Its own line about that is 「まだまだ100年です」 — a hundred years is still not much. Tenkiyo is the tempura format, at Tokyo Station and at Fujisawa, and the pitch is specific: because a sushi company is doing the buying, the fish on the counter is not what a tempura shop would normally get, and the sake is chosen against the individual dish rather than as a list. The frying is done in front of the room in an open kitchen; the shop's own description leans on the sound and smell of it as part of the meal.",
+   "philosophy": "「お客様に喜びを」 — give the customer joy; and the founder's 旭, the character that means one day short of completion.",
+   "specialty": "うに磯辺天婦羅 (sea urchin in nori, fried), 蛤姿揚げ (whole Kujūkuri clam fried in the shell), and tempura courses matched to sake — the ¥7,000 Kaze course and the ¥8,000 Sora course.",
+   "anecdotes": [
+    {
+     "text": "The company name is a private instruction. 旭 was picked instead of 朝日 because it decomposes into 九日 — nine days out of ten — so that the family would never feel the job was done.",
+     "source": "https://www.asahizushi.com/about_us/"
+    },
+    {
+     "text": "In 1949 the shop could not legally serve food on the premises. Customers brought a gō of rice, the shop turned it into sushi for 60 yen, and the rice was collected when the delivery dishes were picked up.",
+     "source": "https://www.asahizushi.com/about_us/"
+    },
+    {
+     "text": "The Shimotakaido main shop is currently being rebuilt, and the company reached its 99th year in February 2026 — the centenary falls in 2027.",
+     "source": "https://www.asahizushi.com/"
+    }
+   ],
+   "japanese_sources_summary": "The branch's own site (tenkiyo-tokyo.owst.jp) gives 東京都千代田区丸の内1-9-1 グランルーフB1, phone 03-6269-9926, 11:00–22:00 daily with no closing day, 33 seats (8 counter, 25 table), all non-smoking, barrier-free, cards and every major e-money and QR wallet accepted, the ¥1,001–1,500 lunch and ¥2,001–3,000 dinner averages, the cancellation terms, walking directions from the Yaesu underground central exit, and menus in English, Korean and both Chinese scripts. It states plainly that the shop is run by 旭鮨総本店. Tabelog (13160654) and gnavi confirm the address; the Fujisawa sister branch's listings state that the tempura is fried in a safflower blend (紅花ブレンドの油). asahizushi.com carries the company chronology from 1916 and the corporate profile: founded 1 February 1927, incorporated 13 March 1952, capital ¥45m, turnover about ¥2bn in FY2024, 20 shops, head office in Akatsutsumi, Setagaya-ku.",
+   "confidence": "high",
+   "sources": [
+    "https://tenkiyo-tokyo.owst.jp/",
+    "https://www.asahizushi.com/about_us/",
+    "https://www.asahizushi.com/company/",
+    "https://tabelog.com/kanagawa/A1404/A140404/14008835/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Open-kitchen tempura counter, one fryer, everything battered in wheat flour.",
+     "source": "https://tenkiyo-tokyo.owst.jp/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Tentsuyu and the teishoku seasonings are ordinary wheat soy sauce; no tamari is named anywhere by the shop or its parent.",
+     "source": "https://tenkiyo-tokyo.owst.jp/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The kitchen's stated advantage is that a sushi company buys its fish; sea urchin, clams and seasonal seafood run through the same oil as the vegetables.",
+     "source": "https://tenkiyo-tokyo.owst.jp/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Menus in English, Korean, simplified and traditional Chinese, so ingredients can at least be read before ordering.",
+     "source": "https://tenkiyo-tokyo.owst.jp/"
+    },
+    {
+     "text": "Counter seating at an open kitchen — you can watch what goes into the oil.",
+     "source": "https://tenkiyo-tokyo.owst.jp/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy for visitors",
+   "note": "Inside Tokyo Station, open 11:00–22:00 every day with no closing day, barrier-free, all seats non-smoking, and menus in five languages. Credit cards, Suica and PASMO, and the Chinese QR wallets are all accepted. 33 seats, 8 of them at the counter; online booking through Hot Pepper or gnavi, or phone 03-6269-9926. Note the cancellation terms — a course booking incurs 50% after 22:00 the night before, and a seat-only booking ¥1,000 after 15:00 on the day. Takeout is available if the counter is full."
+  },
+  "sources": [
+   "https://tenkiyo-tokyo.owst.jp/",
+   "https://www.asahizushi.com/",
+   "https://www.asahizushi.com/about_us/",
+   "https://www.asahizushi.com/company/",
+   "https://tabelog.com/tokyo/A1302/A130201/13160654/",
+   "https://r.gnavi.co.jp/fw9zynah0000/",
+   "https://www.gransta.jp/mall/gransta_yaesu/tenkiyo/",
+   "https://tabelog.com/kanagawa/A1404/A140404/14008835/"
+  ],
+  "enrich_note": "Confirmed, with a small name fix. The light record read 「天ぷら 天喜代 東京駅グランルーフ店」; the shop's own name is 天ぷら日本酒 天喜代 東京駅店, and Tabelog and gnavi both file it as 天喜代 東京駅店. GranRoof is where it is, not part of the name. Address 〒100-0005 千代田区丸の内1-9-1 グランルーフB1, inside Gransta Yaesu, phone 03-6269-9926, from the shop's own site; coordinates moved to the GranRoof structure (OpenStreetMap) — note that 丸の内1-9-1 covers the whole Yaesu-side station complex, so the pin is building-level rather than door-level. The light record's 'safflower oil' detail checks out: the operator's own listings for the sister branch say the tempura is fried in a 紅花ブレンド oil. The operator is 旭鮨總本店, a Shimotakaido sushi company founded in 1927 that turns 100 in 2027, and its published history is the source of the bio."
+ },
+ {
+  "id": "tokyo3__35",
+  "name": "竹末東京Premium",
+  "status": "confirmed",
+  "lat": 35.70813,
+  "lng": 139.817642,
+  "loc_precise": true,
+  "address_ja": "〒130-0002 東京都墨田区業平5-14-7 フラーリシ押上 1F",
+  "enrich_confidence": "high",
+  "cuisine": "A twelve-seat ramen counter under the Skytree that cooks each bowl in front of you — silky chicken paitan from birds killed to order under direct farm contract, the house 鶏ホタテそば finished with scallop, plus shōyu and shio soba, a chicken tsukemen and irregular one-day limited bowls; ¥1,000–¥1,999 a head, cash or card",
+  "cuisine_type": "ramen",
+  "neighborhood": "Narihira 5-chōme, Sumida-ku — about 10 minutes east of Oshiage station along the road south of Tokyo Skytree (Toei Asakusa, Hanzōmon, Keisei Oshiage and Tobu Skytree lines); 35 m from Jikkenbashi bridge. This is NOT Marunouchi",
+  "website": null,
+  "menu_url": "https://tabelog.com/tokyo/A1312/A131203/13167920/dtlmenu/",
+  "hours_raw": "11:00～15:00（料理L.O.14:45）／17:00～21:00（料理L.O.20:45）　火曜定休（祝日は営業）※突発の休業や限定麺は公式X（@takesuetokyo）で告知　予約不可",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat noodles and a soy-sauce tare — the shōyu soba is the house's oldest bowl and even the shio and paitan bowls are seasoned with soy-based tare unless the shop says otherwise, which it does not. One of its signature bowls is a jirō-style built on Kanno Seimen thick wheat noodles, and a food-media write-up of it explicitly describes the wheat aroma as part of the dish. No allergen information is published, the shop has no working website, and twelve seats and one pot mean nothing can be separated. Not a possibility for a celiac.",
+  "vegan_status": "no",
+  "vegan_detail": "The entire premise is chicken — whole birds boiled down for the paitan, the chicken fat emulsified into it, contracted farms slaughtering after the order goes in — plus scallop, mackerel-pike and squid on the seasonal bowls, chāshū, egg and a meat-and-egg rice bowl. There is no vegetable bowl and no plant-based broth.",
+  "chef_bio": {
+   "chef_name": "大江翼 (Tsubasa Ōe)",
+   "roles": [
+    "店主 — owner-chef since taking the shop over independently in 2020"
+   ],
+   "origin": "Oshiage, Sumida-ku; the parent shop is 竹末 in Sakura, Tochigi",
+   "background": "Takesue Tokyo Premium opened on 30 April 2014 as the Tokyo outpost of a well-known Tochigi shop, ラーメン専門店 E.Y竹末, and traded on that reputation from its first day. In 2020, six years in, the manager Tsubasa Ōe took it over as his own — 独立継承, an independent succession rather than a franchise renewal — and it is his kitchen now. The house term for what happens at the counter is RAMEN LIVE TUNE: rather than assembling bowls out of sight, every bowl is finished in front of the twelve seats, which the shop cheerfully admits is an operation that breaks the normal rules of ramen service. The sourcing is the other half of it. Everything is domestic, and the chicken is bought on direct contract with farms that begin the process only once the order has gone in, so the birds arrive unusually fresh; the fat emulsifies into a paitan the trade press describes as closer to a potage — creamy and silky, but finishing light enough to drink the bowl dry. Ōe's stated rule is that he will not make ramen that sits heavy on the stomach, and the shop's most famous bowl, the 鶏ホタテそば, is chicken paitan lifted with scallop. It has been named to Tabelog's Ramen Hyakumeiten every year from 2017 to 2023 — seven consecutive years, which the shop's own X profile leads with — and holds a 3.77 rating over more than 2,000 reviews. Limited bowls appear without warning on anniversaries or on a whim, and closures are announced only on X, so regulars check the account before travelling.",
+   "philosophy": "「RAMEN LIVE TUNE」 — the bowl built in front of the guest as performance; and a refusal to make ramen that leaves you heavy.",
+   "specialty": "鶏ホタテそば — chicken paitan with scallop — plus 醤油そば, 塩そば and a chicken tsukemen; occasional trout and seasonal-fish bowls.",
+   "anecdotes": [
+    {
+     "text": "The chicken is contracted directly with farms which only slaughter after the order is placed, which is why the paitan behaves like a potage.",
+     "source": "https://ramen-journey.com/html/page75.html"
+    },
+    {
+     "text": "Twelve seats, no reservations, and cushions laid out on the pavement outside for the queue.",
+     "source": "https://tabelog.com/tokyo/A1312/A131203/13167920/"
+    },
+    {
+     "text": "Ōe took the shop over from the Tochigi parent as his own in 2020, six years after it opened, and it has been on Tabelog's ramen top-100 list every year from 2017 to 2023.",
+     "source": "https://ramen-journey.com/html/page75.html"
+    }
+   ],
+   "japanese_sources_summary": "The operator's page at dzh-takesue.com (株式会社ダイヤモンドZホールディングス) gives 東京都墨田区業平5-14-7 フラーリシ押上, the Tuesday closure, and a menu list (醤油そば, 塩そば, 鶏そば, 鶏ホタテそば, 鶏つけそば, ヤシオマスの塩そば). Tabelog (13167920) gives the 30 April 2014 opening, phone 03-6240-4846, no reservations, 12 seats (8 counter, 4 table), all non-smoking, free Wi-Fi, cards and e-money accepted, delivery, the 11:00–15:00 and 17:00–21:00 hours with last orders, the ¥1,000–1,999 budget, and Hyakumeiten selection every year 2017–2023. Ramen Journey's shop file gives the E.Y竹末 parentage, the 2020 independent succession by 大江翼, the direct chicken contracts and the RAMEN LIVE TUNE concept. Takumen lists the postcode 〒130-0002 and phone 03-5610-4649. The shop's own domain takesue-tokyo-premium.com no longer resolves (NXDOMAIN); the last Wayback capture, 7 September 2025, is already a parked lander, so the X account @takesuetokyo is the live channel.",
+   "confidence": "high",
+   "sources": [
+    "http://dzh-takesue.com/shopinformation-takesuetokyo/",
+    "https://tabelog.com/tokyo/A1312/A131203/13167920/",
+    "https://ramen-journey.com/html/page75.html",
+    "https://www.takumen.com/shops/640"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Twelve seats, one noodle pot, one stove, bowls finished at the counter. Nothing can be run separately here.",
+     "source": "https://tabelog.com/tokyo/A1312/A131203/13167920/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Shōyu soba is a core bowl and no wheat-free tamari is mentioned; assume soy-sauce tare across the menu.",
+     "source": "http://dzh-takesue.com/shopinformation-takesuetokyo/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Whole-chicken paitan is the base of the shop; scallop, fish and pork run through the rest.",
+     "source": "https://ramen-journey.com/html/page75.html"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "A twelve-seat counter with no reservations, no English menu advertised, and a queue that can spill onto the pavement — check the X account @takesuetokyo before going, because Tuesday is the closing day, unscheduled closures happen, and the day's limited bowls are announced only there. Cards, e-money and QR payment are accepted and there is free Wi-Fi. It is family-friendly by ramen-counter standards: a children's menu, prams allowed inside, and children of any age welcome. Practical point for a visitor: it is a ten-minute walk east of Oshiage station past the Skytree, not anywhere near Tokyo Station."
+  },
+  "sources": [
+   "http://dzh-takesue.com/shopinformation-takesuetokyo/",
+   "https://tabelog.com/tokyo/A1312/A131203/13167920/",
+   "https://ramen-journey.com/html/page75.html",
+   "https://www.takumen.com/shops/640",
+   "https://x.com/takesuetokyo",
+   "https://retty.me/area/PRE13/ARE9/SUB904/100000917624/"
+  ],
+  "enrich_note": "Confirmed as a business, but the light record's location was wrong by about 4.5 km and that is the headline. The light record filed 竹末東京プレミアム under 丸の内 / 東京駅 at 35.6812, 139.7671. The shop is at 〒130-0002 東京都墨田区業平5-14-7 フラーリシ押上 1F, in Oshiage under the Skytree — confirmed by the operator's own page (dzh-takesue.com), Tabelog, Takumen and Ramen Journey, all giving the same street address. Coordinates corrected to that address (GSI geocode of 業平5-14-7) and the neighborhood rewritten; this is a within-Tokyo fix, not a MISLOCATED RECORD in the out-of-city sense. Two smaller corrections: the light record's cuisine 'Tsukemen' is off — this is primarily a chicken-paitan and shōyu/shio soba shop with one tsukemen on the board — and its gf/vegan 'ask' is too generous, both are now 'no'. The shop's own domain takesue-tokyo-premium.com no longer resolves and the September 2025 Wayback capture is already a parked page, so website is left null and the X account is cited instead."
+ },
+ {
+  "id": "tokyo3__36",
+  "status": "unresolved",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": "COULD NOT VERIFY a business. The nearest thing the name matches is a facility, 東京ラーメン横丁, at 〒104-0028 東京都中央区八重洲2-1 八重洲地下街 北1号 — which is Chūō-ku Yaesu, not the Marunouchi basement the light record gives.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — no business was identified. If the intended target is the 東京ラーメン横丁 arcade, all seven of its tenants are wheat-noodle ramen shops (shōyu, miso, tonkotsu, iekei, jirō, abura-soba), so nothing there would be gluten-free regardless.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — no business was identified. The seven shops in the arcade of that name are all pork- or chicken-broth ramen counters.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": "No business was identified, so there is nobody to write about. For the record: 東京ラーメン横丁 is a seven-shop ramen arcade in the Yaechika underground mall on the Yaesu side of Tokyo Station, opened around the concept of ramen as an everyday food you come back to. Its current tenants are 長岡食堂 (Nagaoka ginger shōyu), いと井 (white miso wok-fried), 風雲児 (chicken paitan tsukemen), 町田商店 (iekei), 豚山 (jirō-style), 元祖油堂 (abura-soba) and がっとん. Each is a separate business with its own Tabelog entry filed as '〜 東京ラーメン横丁店'. JR East publishes an explainer article whose entire purpose is to stop people confusing this arcade with 東京ラーメンストリート, which is a different facility one level down in Tokyo Station Ichibangai — and which is where another record in this shard, 六厘舎, actually sits.",
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "tokyo-ramenyokocho.com is the arcade's official site: address 〒104-0028 東京都中央区八重洲2丁目1番 八重洲地下街北1号, 11:00–23:00 (L.O. 22:30), holidays following the mall, 2 min from the JR Tokyo Station Yaesu north exit and about 6 min from Nihonbashi station, seven tenants each with Japanese, English, Chinese and Korean menus. JR East's JRE Media article (updated 20 November 2024) contrasts it with 東京ラーメンストリート and gives directions to both. Tabelog's Yaechika premise listing shows the individual shops filed under their own names with a 東京ラーメン横丁店 suffix. No Tabelog entry, no directory listing and no company registration exists for a restaurant called simply 「ラーメン横丁」 anywhere in Chiyoda-ku.",
+   "confidence": "low",
+   "sources": [
+    "https://tokyo-ramenyokocho.com/",
+    "https://media.jreast.co.jp/articles/129"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — no business identified",
+   "note": "Nothing should be shown to a user under this record as it stands. If the record is kept at all, it would have to be re-cut as one of the seven individual shops in the 東京ラーメン横丁 arcade, each of which is a real business with its own address, hours and menus in four languages."
+  },
+  "sources": [
+   "https://tokyo-ramenyokocho.com/",
+   "https://media.jreast.co.jp/articles/129",
+   "https://tabelog.com/tokyo/P017769/premiseLst/ramen/",
+   "https://tabelog.com/tokyo/A1302/A130201/13273045/"
+  ],
+  "enrich_note": "GENERIC PHRASE: 「ラーメン横丁」 is a category word — 'ramen alley' — not the name of a business, and no restaurant trades under it. Every search leg ran and returned; none returned a shop. Yahoo Japan searches for 「ラーメン横丁」丸の内 地下, for 食べログ ラーメン横丁 店舗 千代田区 and for 東京ラーメン横丁 all returned HTTP 200 with results, and what they returned were facilities and their tenants: 東京ラーメン横丁 in the Yaechika underground mall, 御徒町ラーメン横丁 in Taitō-ku, and Sapporo's original. Tabelog's Yaechika premise index lists the individual businesses as 風雲児 東京ラーメン横丁店, ラーメン豚山 東京ラーメン横丁店, いと井 東京ラーメン横丁店, がっとん 東京ラーメン横丁店 and 元祖油堂 東京ラーメン横丁店 — the yokocho is the address, the shop name is the part in front of it. The closest real thing to what the light record intended is that arcade: 〒104-0028 東京都中央区八重洲2-1 八重洲地下街 北1号, 11:00–23:00, seven ramen shops, 2 min from the Yaesu north exit. Note that even that does not match the light record's stated location — the record says 丸の内地下 / 東京駅 (Chiyoda-ku), and the arcade is in Chūō-ku Yaesu; JR East publishes an article specifically because people confuse it with 東京ラーメンストリート on the Marunouchi-address side, which is where this shard's 六厘舎 record sits. Coordinates left unchanged and loc_precise false. Recommendation: do not merge this as a restaurant. Either drop it, or replace it with one or more of the seven named tenants."
  }
 ]

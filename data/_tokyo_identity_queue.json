@@ -8,6 +8,102 @@
   "note": "NAME CORRECTION. The light record read 「鶏蕎麦 十番」 at Ebisu. No business of that bare name exists; the shop the name is a garbling of is 鶏そば十番156 (ICHIKORO), a chicken-paitan ramen bar. Two caveats that matter more than the correction: (a) the brand's home is Azabu-juban 2-1-10, Minato-ku, not Ebisu — the Ebisu branch (渋谷区恵比寿西1-7-5 篠崎ビル1F) exists only as a ZZZ-prefixed, i.e. deactivated, Uber Eats st"
  },
  {
+  "id": "tokyo3_",
+  "from": "六厘舎",
+  "to": "六厘舎 東京ラーメンストリート店",
+  "applied": true,
+  "confidence": "high",
+  "note": "CONFIRMED. The light record's 六厘舎 / 丸の内・東京駅 / つけ麺 is right on every count; what it lacked was the branch and the address. 六厘舎 has five Tokyo locations (Ōsaki, Tokyo Station, Skytree Solamachi, Haneda, Ueno), and the one at this pin is 六厘舎 東京ラーメンストリート店 at 千代田区丸の内1-9-1, Tokyo Station Ichibangai B1 — verified against the operator's own store locator, the Tokyo Station Ichibangai shop page and Tabelog"
+ },
+ {
+  "id": "tokyo3_ky",
+  "from": "ふくべ",
+  "to": "通人の酒席 ふくべ",
+  "applied": true,
+  "confidence": "high",
+  "note": "CONFIRMED. Nationwide Yahoo Japan search on 「ふくべ 八重洲 居酒屋 日本酒」 returned the Tabelog, Hitosara, Hot Pepper, Retty and San-tatsu listings all agreeing on 東京都中央区八重洲1-4-5 / 03-3271-6065. Coordinates taken from Tabelog's own embedded geodata (35.6825690887168 / 139.77154865439437), which moves the pin ~130 m from the neighbourhood centroid. Name expanded to the shop's full trading name 通人の酒席 ふくべ; 「ふくべ」 "
+ },
+ {
+  "id": "tokyo3_ky_62",
+  "from": "京料理と創作和食 刻 八重洲店",
+  "to": "京料理と創作和食 刻（KIZAMI）",
+  "applied": false,
+  "confidence": "low",
+  "note": "PROBABLE — real business, current operation unconfirmed. The name in the light record is correct, but the shop has moved: Tabelog flags 京料理と創作和食 刻 八重洲店 (八重洲2-5-7 三興ビル1F) as 【移転】 and links a successor page, 刻 (KIZAMI), at 京橋1-5-1 5F; Gurunavi carries the old trading name at the new address with live hours and a working phone. Against that, the successor Tabelog page has zero reviews, and the shop's"
+ },
+ {
+  "id": "tokyo3_ky_63",
+  "from": "肉の蔵 八重洲日本橋店",
+  "to": "黄金出汁鍋と厳選肉料理 居酒屋 肉の蔵 八重洲日本橋店",
+  "applied": true,
+  "confidence": "medium",
+  "note": "CONFIRMED. Yahoo Japan search on 「肉の蔵 八重洲日本橋店」 (run through a fetcher after direct curl hit HTTP 429 twice and had to be abandoned for that leg) returned Hot Pepper, Tabelog, Jalan, Retty and Yahoo Map listings that all agree on 東京都中央区京橋1-5-1. The Hot Pepper page was then fetched and read in full: last updated 2026-03-06, with visitor reviews dated December 2025 and April 2026, so the shop is trad"
+ },
+ {
+  "id": "tokyo3_tokyo_ky",
+  "from": "お箸とグラス TOKYO 八重洲日本橋店",
+  "to": "東北うまいもん居酒屋 地鶏×旬菜 お箸とグラス -TOKYO- 八重洲日本橋店",
+  "applied": true,
+  "confidence": "medium",
+  "note": "CONFIRMED. Yahoo Japan search on 「お箸とグラス TOKYO 八重洲日本橋店」 (run through a fetcher — direct curl to Yahoo was returning HTTP 429 at the time and that leg was retried and abandoned rather than read as a negative) returned Hot Pepper, Tabelog, Gurunavi, Jalan, Retty and Yahoo Map listings agreeing on 〒104-0031 東京都中央区京橋1-5-1. The Hot Pepper page was fetched and read in full: updated 2026-07-11, six revie"
+ },
+ {
+  "id": "tokyo3_y_66",
+  "from": "玉乃光酒蔵",
+  "to": "玉乃光酒蔵 八重洲地下街店",
+  "applied": true,
+  "confidence": "high",
+  "note": "CLOSED PERMANENTLY. The name in the light record is correct and the business was real. Yahoo Japan search on 「玉乃光酒蔵 八重洲」 (run through a fetcher; direct curl to Yahoo was returning HTTP 429 and that leg was retried and set aside rather than counted as empty) returned Tabelog, Hot Pepper, Jalan, Hanako and San-tatsu listings, with Tabelog headed 【閉店】. The Tabelog page and its date-sorted review list"
+ },
+ {
+  "id": "tokyo3__76",
+  "from": "つけ麺 つじ田",
+  "to": "つじ田 日本橋八重洲店",
+  "applied": true,
+  "confidence": "high",
+  "note": "NAME CORRECTION. The light record read 「つけ麼 つじ田」 with a Yaesu centroid pin; the business is つじ田 日本橋八重洲店 at 中央区八重洲1-4-6 八重洲境井ビル1F, confirmed on Tabelog (address, 16 counter seats, hours, 2013-07-10 opening) and consistent with the brand's own site. Coordinates replaced with the real address's, loc_precise:true — the sweep's pin was about 150 m off."
+ },
+ {
+  "id": "tokyo3__83",
+  "from": "寿司清",
+  "to": "築地寿司清 築地本店",
+  "applied": true,
+  "confidence": "medium",
+  "note": "NAME CORRECTION. The light record read 「寿司清」, which is a short form rather than a trading name; the business in Tsukiji is 築地寿司清, and the address closest to the sweep's pin is the 1889 original, 築地寿司清 築地本店 at 中央区築地4-13-9. Confidence is 'medium' only because the record named no branch and the company's sister counter 築地新館 stands 60 m away at 築地4-13-5 (35.665254 / 139.770915, 70 seats, later hours, "
+ },
+ {
+  "id": "tokyo3__84",
+  "from": "築地玉寿司",
+  "to": "築地玉寿司 築地本店",
+  "applied": true,
+  "confidence": "high",
+  "note": "NAME CORRECTION (branch only). The light record read 「築地玉寿司」, which is the chain name; the business at the record's Tsukiji pin is the founding branch, 築地玉寿司 築地本店 at 中央区築地1-9-4, confirmed on both Tabelog and the company's own site (address, 1924 opening, 35 seats, daily 11:00-15:00 / 17:00-22:00). One caution for the merge: the chain has a second Tsukiji branch, 築地玉寿司 晴海通り店, 250 m from Tsukiji sta"
+ },
+ {
+  "id": "tokyo3__108",
+  "from": "銀座 篝 (かがり)",
+  "to": "銀座 篝 本店",
+  "applied": true,
+  "confidence": "high",
+  "note": "CUISINE CORRECTION. The light record's name was right but its cuisine was not: it read 「Yakitori」, and 銀座 篝 is a chicken-paitan ramen counter, not a yakitori house. Business confirmed via Tabelog (13230021) and the operator's own BASE shop; address 中央区銀座6-4-12 1F, phone 03-6263-8900, and coordinates taken from Tabelog's map data, so the neighbourhood-centroid pin has been replaced with the real on"
+ },
+ {
+  "id": "tokyo3__111",
+  "from": "銀座 竹葉亭",
+  "to": "竹葉亭 銀座店",
+  "applied": true,
+  "confidence": "high",
+  "note": "Confirmed. The light record's 「銀座 竹葉亭」 is 竹葉亭 銀座店 at 〒104-0061 東京都中央区銀座5-8-3, phone 03-3571-0677; identity, hours and menu all taken from the shop's own official page and cross-checked against Tabelog 13002552 and Yahoo's business card. Coordinates are the shop's own structured geo data (35.670766 / 139.765231), replacing the neighbourhood-centroid pin. Note the house is distinct from 東京竹葉亭's Kans"
+ },
+ {
+  "id": "tokyo3__113",
+  "from": "天ぷら 近藤",
+  "to": "てんぷら 近藤",
+  "applied": true,
+  "confidence": "high",
+  "note": "Confirmed, with a location correction. The light record filed 天ぷら 近藤 as 「築地駅 徒歩（中央区）」 and pinned it on the Tsukiji centroid; the restaurant is in Ginza, 〒104-0061 東京都中央区銀座5-5-13 坂口ビル9F — same ward, but about 800 m away and served by Ginza Station exit B5, not Tsukiji. Identity, address, phone (03-5568-0923), hours, prices and the chef's biography all come from the restaurant's own site, cross-chec"
+ },
+ {
   "id": "tokyo3__96",
   "from": "築地食堂源記",
   "to": "築地食堂 源ちゃん",

@@ -458,5 +458,333 @@
    "https://www.jalan.net/gourmet/grm_foomoojH000786850/"
   ],
   "enrich_note": "CONFIRMED. Yahoo Japan search on 「お箸とグラス TOKYO 八重洲日本橋店」 (run through a fetcher — direct curl to Yahoo was returning HTTP 429 at the time and that leg was retried and abandoned rather than read as a negative) returned Hot Pepper, Tabelog, Gurunavi, Jalan, Retty and Yahoo Map listings agreeing on 〒104-0031 東京都中央区京橋1-5-1. The Hot Pepper page was fetched and read in full: updated 2026-07-11, six reviews with the most recent dated May 2026, and online availability open through October 2026 — the shop is trading. Name expanded to the full trading name (the light record had only the middle of it). Coordinates are Tabelog's embedded geodata. DUPLICATE WARNING for the merge: this record, tokyo3_ky_63 (肉の蔵 八重洲日本橋店) and tokyo3_ky_62 (刻) share the address 京橋1-5-1, identical coordinates, identical hours, identical 80-seat/60-guest capacity, identical service and seat charges and consecutive 03-4588-17xx phone numbers; a Hot Pepper reviewer of this very shop says they are the same place with only the name changed. They should probably not all ship as separate pins."
+ },
+ {
+  "id": "tokyo3_y_66",
+  "name": "玉乃光酒蔵 八重洲地下街店",
+  "status": "closed_permanently",
+  "closed_since": "Marked 【閉店】 on Tabelog; the last of its 149 visitor reviews is dated December 2020, and the branch is absent from Yaechika's current restaurant directory (checked 2026-08-20). Best estimate: closed around 2021.",
+  "lat": 35.679259,
+  "lng": 139.768463,
+  "loc_precise": true,
+  "address_ja": "東京都中央区八重洲地下街南1号 八重洲地下街 オレンジロード — 閉店",
+  "enrich_confidence": "high",
+  "cuisine": "Was the Tokyo tap-room of the Kyoto brewery Tamanohikari, a 95-seat sake hall on Orange Road in the Yaesu underground mall — junmai sake by the glass with sashimi, tuna nakaochi bowls, yakitori and tonjiru, opening at 08:00 on weekdays with a morning menu and an early-bird set under ¥1,000. Now closed.",
+  "cuisine_type": "izakaya",
+  "neighborhood": "Yaesu underground mall, Orange Road, immediately outside Tokyo Station's Yaesu south exit — 224 m from Tokyo Station",
+  "website": "https://tamanohikari.co.jp/",
+  "menu_url": null,
+  "hours_raw": "（閉店時点）平日 8:00～22:30（L.O. フード21:30／ドリンク21:45）※朝メニュー 8:00〜10:00、ランチ 10:00〜／土日祝 11:00～21:30（L.O. 20:30）／定休日：無休",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Moot — the shop is closed. While it was open there was no gluten-free claim; it was an izakaya board of sashimi, fried plates, yakitori and tonjiru with ordinary wheat shōyu throughout. The sake itself was gluten-free, as junmai sake is.",
+  "vegan_status": "no",
+  "vegan_detail": "Moot — the shop is closed. The menu was fish- and pork-led (sashimi, maguro nakaochi don, tonjiru, yakitori) and nothing vegan was offered.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "directly operated outlet of 玉乃光酒造株式会社 (Tamanohikari Sake Brewing Co., Kyoto Fushimi)"
+   ],
+   "origin": "Fushimi, Kyoto — the brewery was founded in Wakayama in 1673 (Enpō 1) and moved to Fushimi's water country some seventy years ago",
+   "background": "Tamanohikari Sakagura was the brewery's own drinking hall in Tokyo, sitting on Orange Road in the Yaesu underground mall a few seconds from Tokyo Station's Yaesu south exit. Tamanohikari itself is a serious house: founded in 1673, it reached its 350th year in 2023, and in 1964 it broke ranks with an industry then dominated by alcohol-, sugar- and amino-acid-fortified sake to revive junmai — rice, water and kōji only — which it has made ever since. The Tokyo hall put that range in front of commuters at 95 seats (5 at the counter, 90 at tables), all non-smoking, no reservations, cards and Suica accepted. It ran from 08:00 on weekdays with a breakfast menu, and reviewers remember a ¥700 early-bird set, a maguro nakaochi bowl with pork soup at ¥950, brown-rice options and good yakitori — the appeal being that you could drink good Kyoto junmai right up to the Shinkansen gates. Tabelog now heads the page 【閉店】 and its last review is December 2020. The brewery's current website has no restaurant or directly-operated-outlet section at all, so there is no successor Tokyo bar.",
+   "philosophy": "Junmai only — rice, water and kōji, a food sake meant to be drunk with a meal.",
+   "specialty": "Kyoto junmai by the glass; maguro nakaochi don with tonjiru ¥950; the ¥700 早割 morning set; yakitori.",
+   "anecdotes": [
+    {
+     "text": "Tabelog's own listing notes that although Yaechika's website published afternoon-onward hours, the shop was in fact open from 08:00 — a sake bar serving breakfast beside the Shinkansen gates.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13011510/"
+    },
+    {
+     "text": "A March 2019 reviewer summed up the appeal in three words — 旨い、近い、便利 (good, close, convenient) — because you could drink until the last moment before boarding.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13011510/dtlrvwlst/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13011510 is headed 【閉店】玉乃光酒蔵 八重洲地下街店, gives 東京都中央区八重洲地下街南1号 八重洲地下街 オレンジロード, phone 03-3274-6888, 95 seats (counter 5 / table 90), all non-smoking, cards and transit IC accepted, weekday 8:00–22:30 and weekend 11:00–21:30 hours, 無休, and lists http://www.yaechika.com/ as its homepage. Its review list, sorted by visit date, ends at December 2020. Yaechika's own restaurant directory, read in full on 2026-08-20, contains no 玉乃光. The brewery's site tamanohikari.co.jp carries company, product and online-shop sections only — no restaurant — and /shop/ 404s.",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130201/13011510/",
+    "https://tabelog.com/tokyo/A1302/A130201/13011510/dtlrvwlst/",
+    "https://tamanohikari.co.jp/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — permanently closed",
+   "note": "Do not send anyone here. The unit on Orange Road is gone and Yaechika's current directory has no Tamanohikari. The brewery has no other Tokyo bar — its website lists company information, products and an online shop only. If someone wants Kyoto junmai near the station, they will have to look elsewhere; ふくべ, two minutes away in Yaesu 1-chōme, is the obvious substitute and is in this same shard."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130201/13011510/",
+   "https://tabelog.com/tokyo/A1302/A130201/13011510/dtlrvwlst/",
+   "https://tamanohikari.co.jp/",
+   "https://www.yaechika.com/shop-search/"
+  ],
+  "enrich_note": "CLOSED PERMANENTLY. The name in the light record is correct and the business was real. Yahoo Japan search on 「玉乃光酒蔵 八重洲」 (run through a fetcher; direct curl to Yahoo was returning HTTP 429 and that leg was retried and set aside rather than counted as empty) returned Tabelog, Hot Pepper, Jalan, Hanako and San-tatsu listings, with Tabelog headed 【閉店】. The Tabelog page and its date-sorted review list were then fetched directly: last visit December 2020. Yaechika's own restaurant directory was read in full and contains no 玉乃光. The brewery's site was fetched and has no restaurant section, so there is no successor outlet to redirect to. Coordinates set to Tabelog's embedded geodata for the former unit; recommend hiding the record."
+ },
+ {
+  "id": "tokyo3__67",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — Menya Musashi is a real and well-known Tokyo ramen group, but it has no branch at Tokyo Station, Yaesu, Kyōbashi or Nihombashi",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record places it at 八重洲 / 東京駅; no Menya Musashi outlet exists there.",
+  "website": "https://menya634.co.jp/",
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no such branch exists at this location. For what it is worth, Menya Musashi anywhere is wheat ramen in a soy-based tare and would be 'no' on the gluten tier; the light record's 'ask' was not based on anything.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no such branch exists at this location. The group's soups are pork, chicken and seafood.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Menya Musashi is real: a Tokyo ramen group founded in Nishi-Shinjuku, known for a double soup of animal and seafood stock and for naming each shop after a different Musashi epithet. Its official store list, fetched in full on 2026-08-20, carries fifteen shops — 創始 麺屋武蔵 (西新宿7-2-6), 二天 (東池袋), 武骨 (御徒町), 虎洞 (吉祥寺), 武骨外伝 (渋谷), 鷹虎 (高田馬場), 神山 (内神田3-8-7), 武仁 and 巌虎 (秋葉原), 虎嘯 (六本木), 武骨相傳 (上野), 道貫 (田町), 浜松町店, 五輪洞 (西新宿8-5-3) and 弍弟麺屋武蔵 岸本翔太 (Takatsu, Kawasaki). None of them is at Tokyo Station, Yaesu, Kyōbashi or Nihombashi. The nearest is 麺屋武蔵 神山 at 千代田区内神田3-8-7, one minute from Kanda Station's west exit and roughly 1.2 km north-west of this record's pin. The record has therefore been left where it was rather than moved onto a shop it may have nothing to do with.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "menya634.co.jp/storelist/ was fetched directly and lists all fifteen group shops with addresses and station directions; no Tokyo Station, Yaesu, Kyōbashi or Nihombashi branch appears. Yahoo Japan search on 「麺屋武蔵 東京駅 八重洲 店舗一覧」 returned only the Akihabara, Roppongi, Ueno, Shinjuku, Ikebukuro and Kichijōji shops. The official Tokyo Ramen Street tenant list at 東京駅一番街 was also fetched and read: its ten current tenants are 東京煮干 らーめん玉, そらのいろ NIPPON, 六厘舎, 塩らーめん専門 ひるがお, とんこつらーめん 俺式 純, 東京駅 斑鳩, 花道庵, 革新家 TOKYO, 津軽煮干 ひらこ屋 and 食堂はせ川 — no 麺屋武蔵.",
+   "confidence": "low",
+   "sources": [
+    "https://menya634.co.jp/storelist/",
+    "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "There is no Menya Musashi at Tokyo Station, so nothing can be said about a door that does not exist. If a traveller specifically wants Menya Musashi, the nearest branch is 神山 at 千代田区内神田3-8-7, one minute from Kanda Station west exit — one stop up the Yamanote line. Recommend the record be deleted or re-pointed at that shop by someone who can confirm it independently."
+  },
+  "sources": [
+   "https://menya634.co.jp/storelist/",
+   "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+  ],
+  "enrich_note": "NOT FOUND. The brand is real but the shop at this location is not. Searches run: (1) direct curl to Yahoo Japan on 「麺屋武蔵 東京駅 八重洲 店舗」 — HTTP 429, i.e. the engine declined to answer; retried and then routed through a fetcher instead, which returned only the Akihabara, Roppongi, Ueno, Shinjuku, Ikebukuro and Kichijōji branches and no Tokyo Station one. (2) The group's own official store list at menya634.co.jp/storelist/ — fetched directly, HTTP 200, fifteen shops listed with addresses, none at Tokyo Station, Yaesu, Kyōbashi or Nihombashi; nearest is 神山 in Uchi-Kanda, ~1.2 km away. (3) The official 東京ラーメンストリート tenant page at 東京駅一番街 — fetched directly, HTTP 200, ten tenants, no 麺屋武蔵. The light record's cuisine label 'Rich Tonkotsu Ramen' also does not describe Menya Musashi, whose signature is a double animal-and-seafood soup, which adds to the impression that this row was assembled rather than observed. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__68",
+  "status": "not_found",
+  "lat": 35.678,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen shop of this name exists in Tokyo; the name appears to be three unrelated fragments joined together",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 京橋 / 京橋駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The string 「濃麺 真鯛らーめん 稲田」 does not correspond to any restaurant that could be found. Each of its three parts belongs to something real but different: 濃麺 is the prefix of 濃麺 海月, a rich-broth shop in Higashi-Nihombashi; 真鯛らーめん (sea-bream ramen) is the signature of 麺魚 and of several unrelated shops in Kinshichō, Osaka's Nagahoribashi and Funabashi, plus 濃厚真鯛らーめん 鯛麺 in Motomachi, Kōbe; and 稲田 as a shop name resolves to らぁ麺稲田 in Hakata, Fukuoka. The only 稲田 in Yaesu is 稲田屋 はなれ 八重洲店, a Tottori brewery's washoku izakaya, which is not a ramen shop at all. The light record also contradicts itself, listing the cuisine as 'Tsukemen' while the name says らーめん. Nothing has been invented here and the original approximate pin has been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan searches on 「濃麺 真鯛らーめん 稲田」 and on 「真鯛らーめん 京橋 中央区 ラーメン 稲田」 returned only らぁ麺稲田 (福岡市博多区美野島2-26-27), 濃厚真鯛らーめん 鯛麺 (兵庫県元町), and 真鯛らーめん shops in 錦糸町, 長堀橋 (Osaka) and 船橋 (Chiba). Gurunavi's nationwide keyword search for 八重洲 turned up 稲田屋 はなれ 八重洲店, a 鳥取蔵元の和食居酒屋, not a ramen shop. The official 東京ラーメンストリート tenant list at 東京駅一番街 was fetched and read in full: ten tenants, none of them this. No source of any kind places a shop of this name in Kyōbashi or anywhere else in Tokyo.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/fukuoka/A4001/A400104/40059494/",
+    "https://tabelog.com/hyogo/A2801/A280102/28059479/",
+    "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. The candidates that share fragments of the name are in Fukuoka, Kōbe, Osaka, Chiba and Kinshichō, and the one 稲田 in Yaesu is an izakaya rather than a ramen shop. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/fukuoka/A4001/A400104/40059494/",
+   "https://tabelog.com/hyogo/A2801/A280102/28059479/",
+   "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) direct curl to Yahoo Japan on the exact name — HTTP 429, the engine declining to answer rather than answering 'no'; retried once, still 429, so the leg was re-run through a fetcher, which returned らぁ麺稲田 in Hakata and 濃厚真鯛らーめん 鯛麺 in Kōbe and nothing in Tokyo. (2) Yahoo Japan on 「真鯛らーめん 京橋 中央区 ラーメン 稲田」 — 真鯛らーめん shops in Kinshichō, Osaka Nagahoribashi and Funabashi only; nothing in Chūō-ku. (3) Gurunavi nationwide keyword search including 八重洲 — surfaced 稲田屋 はなれ 八重洲店, a Tottori-brewery washoku izakaya, which is not this. (4) The official 東京ラーメンストリート tenant list at 東京駅一番街 — fetched directly, HTTP 200, ten tenants (東京煮干 らーめん玉, そらのいろ NIPPON, 六厘舎, ひるがお, 俺式 純, 東京駅 斑鳩, 花道庵, 革新家 TOKYO, ひらこ屋, 食堂はせ川), none matching. (5) Tabelog's Kyōbashi-area listing pages were fetched but return a category-filtered set rather than a full local index, so that leg is inconclusive rather than negative. The name reads as a composite of three unrelated real shop names, and the record's own cuisine field ('Tsukemen') contradicts the らーめん in the name. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__69",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no 大勝軒 of any kind operates at Tokyo Station or Yaesu; the only 大勝軒 that was ever in this part of Chūō-ku is closed, and it was a neighbourhood Chinese restaurant rather than a tsukemen specialist",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 八重洲 / 東京駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no such shop exists at this location.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no such shop exists at this location.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established at this address. 大勝軒 is a real and much-branched Tokyo ramen name, but none of its lines reaches Yaesu. The three candidates found, and why none of them fits: (1) 大勝軒, 東京都中央区日本橋本町1-3-3 — a 48-seat machi-chūka that opened on 17 November 1933, served ramen, gyōza and shūmai under ¥999, closed Sat/Sun/holidays, and is now marked 【閉店】 on Tabelog, reportedly a casualty of the Nihombashi redevelopment. It is the nearest 大勝軒 to the pin, about 700 m north-east, but it is shut and it was a Chinese restaurant, not the tsukemen house the light record describes. (2) 元祖つけ麺 東池袋大勝軒 — the actual originator of tsukemen, in Higashi-Ikebukuro, with no Chūō-ku branch. (3) 銀座 大勝軒 — a two-shop ramen and tsukemen operation whose own website announces that the Ginza branch closed at the end of July 2023, leaving Nakakasai and Ichinoe in Edogawa-ku. Nothing supports a 大勝軒 at Tokyo Station, so the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan searches on 「大勝軒 東京駅 八重洲 つけ麺」 and 「大勝軒 日本橋 京橋 中央区 ラーメン」 returned 東池袋大勝軒 (tai-sho-ken.jp), 銀座 大勝軒 (taishoken.com) and the Nihombashi-Honchō 大勝軒, the last flagged closed. Tabelog 13032155 was fetched directly and is headed 【閉店】大勝軒, 東京都中央区日本橋本町1-3-3, 三越前駅A1出口より徒歩3分, 48 seats, weekday 11:00–14:30 and 17:00–21:00, オープン日 1933年11月17日, embedded geodata 35.685883/139.775854. taishoken.com was fetched directly and carries a notice headed 2025.06.03 stating that the Ginza branch closed at the end of July 2023, with the remaining shops at 江戸川区中葛西1-31-5 and 江戸川区一之江2-7-7. The official 東京ラーメンストリート tenant list at 東京駅一番街 was fetched and read in full: ten tenants, no 大勝軒.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130202/13032155/",
+    "https://www.taishoken.com/",
+    "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify a trading business, so nothing can honestly be said about the door. The nearest same-named shop, in Nihombashi-Honchō, is closed; the Ginza one closed in July 2023; the tsukemen original is in Higashi-Ikebukuro. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130202/13032155/",
+   "https://www.taishoken.com/",
+   "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) direct curl to Yahoo Japan on 「大勝軒 日本橋 京橋 中央区 ラーメン」 — HTTP 429, the engine declining to answer; retried, still 429, so the leg was re-run through a fetcher. (2) Yahoo Japan on 「大勝軒 東京駅 八重洲 つけ麺」 — returned 東池袋大勝軒 (Ikebukuro) and 銀座 大勝軒 only, plus a note that the Tokyo Station tsukemen shop people think of is Tomita, a different house. (3) Yahoo Japan on 「大勝軒 日本橋 京橋 中央区 ラーメン」 — one Chūō-ku result, 中華料理 大勝軒 at 日本橋本町1-3-3, flagged closed. (4) That Tabelog page fetched directly, HTTP 200, confirms 【閉店】, opened 1933, a 48-seat Chinese restaurant. (5) taishoken.com fetched directly, HTTP 200 — Ginza branch closed end of July 2023. (6) The official 東京ラーメンストリート tenant list fetched directly, HTTP 200, ten tenants, no 大勝軒. Nearest candidates and their coordinates: 大勝軒 日本橋本町1-3-3 at 35.685883/139.775854 (closed). Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__71",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no yakitori shop called たか木 exists anywhere in Tokyo, let alone at Yaesu",
+  "cuisine_type": "yakitori",
+  "neighborhood": "Unverified. The light record says 八重洲 / 東京駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. A site-restricted Tabelog search for shops named たか木 returns four, none of them in Tokyo's centre and none of them at Yaesu: 酒と肴のたか木 (izakaya/anglerfish/yakitori, Ishioka, Ibaraki), たか木 (izakaya, Numazu, Shizuoka), たか木 (yakitori/izakaya/motsunabe, Higashi-ku, Fukuoka City) and WASHOKU たか木 (Japanese cuisine, Miyazaki City). The two Tokyo shops with near-identical readings are 焼鳥 髙木 in 杉並区上井草1-24-13, out by Iogi on the Seibu Shinjuku line, and やきとり たかぎ in 大田区北千束1-56-5 near Ōokayama — both a long way from Chūō-ku. One trap is worth recording for whoever revisits this: a Yahoo search for 「たか木 京橋 焼鳥」 surfaces 地鶏専門 たか鳥 京橋店, which looks like a hit and is not — its own page gives 大阪府大阪市都島区東野田町3-7-1 東シャトービル, i.e. Osaka's Kyōbashi, not Tokyo's. The original approximate pin has been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan searches on 「焼き鶏 たか木 東京」, on 「たか木 八重洲 京橋 焼鳥」 and on a site:tabelog.com restriction for たか木 returned, between them, four Tabelog たか木 pages — Ishioka, Numazu, Fukuoka and Miyazaki — plus 焼鳥 髙木 (Kamiigusa, Suginami) and やきとり たかぎ (Kitasenzoku, Ōta). None is in Chūō-ku or Chiyoda-ku. takatorikyobashi.gorp.jp was fetched directly and its own JSON gives 〒534-0024 大阪府大阪市都島区東野田町3-7-1 with geodata 34.698221/135.535278, confirming that the たか鳥 京橋店 result belongs to Osaka.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1321/A132105/13297959/",
+    "https://tabelog.com/tokyo/A1317/A131711/13265429/",
+    "https://takatorikyobashi.gorp.jp/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Every same-named candidate is in Suginami, Ōta, Ibaraki, Shizuoka, Fukuoka or Miyazaki, and the one that appears to be in Kyōbashi is in Osaka. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1321/A132105/13297959/",
+   "https://tabelog.com/tokyo/A1317/A131711/13265429/",
+   "https://takatorikyobashi.gorp.jp/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) direct curl to Yahoo Japan — HTTP 429 throughout this stretch of the shard, the engine declining to answer rather than answering 'no'; retried repeatedly and then routed through a fetcher for every leg below. (2) Yahoo Japan on 「焼き鶏 たか木 東京」 — 焼鳥 髙木 (杉並区上井草1-24-13, Iogi) and やきとり たかぎ (大田区北千束1-56-5, Ōokayama), neither in central Tokyo. (3) Yahoo Japan on 「たか木 八重洲 京橋 焼鳥」 — no たか木 at all; the top hit was 地鶏専門 たか鳥 京橋店, which I fetched directly (HTTP 200) and which turns out to be at 大阪府大阪市都島区東野田町3-7-1, Osaka's Kyōbashi, so it is not a name-correction candidate. (4) Yahoo Japan restricted to site:tabelog.com for たか木 — four shops, in Ishioka (Ibaraki), Numazu (Shizuoka), Fukuoka City and Miyazaki City; no Tokyo yakitori shop of that name exists on Tabelog. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__73",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — there is no つけ麺 さんじ at Tokyo Station or Yaesu. A real and well-regarded shop called さんじ exists in Tokyo, but it is in Higashi-Ueno, about 3.5 km north.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 八重洲 / 東京駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business at this location could not be identified. The light record's flat 'no' was not based on anything published.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business at this location could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established at this address. The one さんじ that exists in Tokyo is a ramen and tsukemen shop at 東京都台東区東上野3-25-12 池田工芸本社ビル 1F, three minutes from Inarichō Station (Ginza line, exit 1) — 35.710731/139.780442, roughly 3.5 km north of this record's pin. It is a serious shop rather than a coincidence of naming: 3.71 on Tabelog across 1,292 reviews, saved by more than 51,000 people, ¥1,000–1,999 either meal, closed Sundays, ticket machine at the door, and known for a 濃厚煮干し (thick niboshi) ramen around ¥850–1,100 plus seasonal limited bowls and 和え玉 add-ons; it regularly sells out before closing. But nothing ties it to Yaesu — it has no branch, and the light record's own description ('Tsukemen & Mazesoba', 東京駅) matches neither its location nor its signature. The original approximate coordinates have been left in place rather than moved onto a shop the record may have nothing to do with.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Yahoo Japan search on 「つけ麺 さんじ ラーメン」 returned a single Tokyo candidate, さんじ at Inarichō, across all top results. Its Tabelog page (13136639) was then fetched directly: 東京都台東区東上野3-25-12 池田工芸本社ビル1F, 東京メトロ銀座線 稲荷町駅1番出口より徒歩3分, genre ラーメン／つけ麺, 3.71 from 1,292 reviews, 定休日 日曜日, ¥1,000–1,999, embedded geodata 35.710731/139.780442, with reviews as recent as July 2026. The official 東京ラーメンストリート tenant list at 東京駅一番街 was fetched and read in full: its ten tenants are 東京煮干 らーめん玉, そらのいろ NIPPON, 六厘舎, 塩らーめん専門 ひるがお, とんこつらーめん 俺式 純, 東京駅 斑鳩, 花道庵, 革新家 TOKYO, 津軽煮干 ひらこ屋 and 食堂はせ川 — no さんじ.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131101/13136639/",
+    "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify a business at the recorded location, so nothing can honestly be said about the door there. If someone actually wants さんじ, it is at 東京都台東区東上野3-25-12, three minutes from Inarichō on the Ginza line, closed Sundays, ticket machine at the entrance, and it sells out — go at opening, not at lunchtime. Recommend this record be deleted, or re-pointed at the Inarichō shop by someone who can confirm independently that they are the same business."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13136639/",
+   "https://www.tokyoeki-1bangai.co.jp/street/ramen/"
+  ],
+  "enrich_note": "NOT FOUND at the recorded location. Searches run and what each returned: (1) direct curl to Yahoo Japan — HTTP 429 across this stretch of the shard, i.e. the engine declining to answer; retried and then routed through a fetcher. (2) Yahoo Japan on 「つけ麺 さんじ ラーメン」 — every top result pointed to one shop, さんじ in Inarichō, Taitō-ku; nothing at Tokyo Station or Yaesu. (3) That Tabelog page fetched directly, HTTP 200 — 東京都台東区東上野3-25-12, 3.71/1,292 reviews, trading as of July 2026, no branches listed. (4) The official 東京ラーメンストリート tenant list at 東京駅一番街 fetched directly, HTTP 200 — ten tenants, no さんじ. Nearest candidate and its coordinates: さんじ, 35.710731/139.780442, about 3.5 km north of the pin. Coordinates unchanged, loc_precise:false."
  }
 ]

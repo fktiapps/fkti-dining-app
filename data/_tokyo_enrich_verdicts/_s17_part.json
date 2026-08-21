@@ -1,5 +1,127 @@
 [
  {
+  "id": "tokyo3__94",
+  "name": "つきじ海賓",
+  "status": "mislocated",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "Not a Tsukiji restaurant — つきじ海賓 is a delivery/takeaway sushi chain (宅配寿司) with fifty branches, none of them in Chūō-ku. Nothing to eat at this pin.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified for this pin. The nearest つきじ海賓 branch to Tsukiji is 荒川東尾久店 at 東京都荒川区東尾久1-6-4, roughly 8 km north; the chain has five Tokyo branches in all, plus stores across Kanagawa, Saitama and Shizuoka.",
+  "website": "https://www.tsukiji-kaihin.com/",
+  "menu_url": "https://www.tsukiji-kaihin.com/",
+  "hours_raw": "店舗により 11:00～20:45 または 11:00～21:30（宅配・持ち帰り）",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed against this record, because there is no shop at this location. As a general matter the chain is a nigiri-and-maki delivery operation and the site does publish a カロリー・アレルギー情報 page, which is more than most — but nothing was verified here, and no gluten-free claim was found. The light record's 'ask' is left in place rather than upgraded.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed against this record. The chain's menu is nigiri, maki, unagi, tempura and kamameshi sets; no vegan provision was found, and in any case no branch exists at this address.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by サンライズ・サービス (Sunrise Service)"
+   ],
+   "origin": "Not Tsukiji — the name is branding, not an address",
+   "background": "Tsukiji Kaihin is a delivery-and-takeaway sushi chain, one of several brands under Sunrise Service alongside 釜福, おすし日和, 夢膳, 春夏秋冬, 維新 and 三崎市場. Its own store-locator data lists fifty branches: the bulk of them in Kanagawa — Atsugi, Isehara, Odawara, Ōfuna, Kawasaki, Rokkakubashi, Katase, Tsurugamine — with others in Saitama, Shizuoka and five in Tokyo. Not one is in Chūō-ku, and none is anywhere near Tsukiji. The five Tokyo shops are 荒川東尾久店 (荒川区東尾久1-6-4), 大泉学園店 (練馬区東大泉4-12-4), 葛飾お花茶屋店 (葛飾区お花茶屋3-26-13), 成瀬店 (町田市成瀬1-2-6) and 西新井店 (足立区西新井本町2-5-5). These are order-and-deliver kitchens rather than restaurants — the site's front door is a postcode box asking where to deliver to, not a table booking — so even the real branches are not places a traveller sits down in. The 「つきじ」 in the name is the same market-invoking branding that dozens of Japanese sushi chains use; it does not indicate a Tsukiji shop or a Tsukiji supply line that the company documents.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "The chain's own store finder is a JavaScript app, so its underlying data file (json_shop.php, referenced from the shop page bundle) was fetched directly: it returns fifty branches with addresses, phone numbers and hours, of which exactly five are in Tokyo and none is in Chūō-ku or contains 築地 in its address. That is a definitive negative from the company's own data rather than an inference from a failed search. Yahoo Japan searches on つきじ海賓 return only Kanagawa, Saitama and Tokyo-suburb branches on Tabelog, Hot Pepper, Uber Eats, Demae-can and Yahoo Maps.",
+   "confidence": "high",
+   "sources": [
+    "https://www.tsukiji-kaihin.com/shop/",
+    "https://www.tsukiji-kaihin.com/json_shop.php"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "There is nothing here to walk into. つきじ海賓 is a delivery brand whose nearest outlet to this pin is about 8 km away in Arakawa, and even that is a kitchen taking phone and app orders rather than a room with seats. Recommend the record be dropped from the Tsukiji listings rather than re-pinned: a delivery chain with no Chūō-ku presence is not useful to someone standing in the outer market."
+  },
+  "sources": [
+   "https://www.tsukiji-kaihin.com/shop/",
+   "https://www.tsukiji-kaihin.com/json_shop.php"
+  ],
+  "enrich_note": "MISLOCATED RECORD — the business exists but not here, and not as a restaurant. 「つきじ海賓」 is a 宅配寿司 (delivery sushi) chain run by サンライズ・サービス, and its own store data — fetched directly from json_shop.php, the file its JavaScript store-finder reads — lists fifty branches, of which five are in Tokyo (Arakawa, Nerima, Katsushika, Adachi, Machida) and none is in Chūō-ku or has 築地 in its address. The nearest to this pin is 荒川東尾久店, about 8 km north. The 「つきじ」 is brand naming, not a location. Separately, the Tsukiji outer-market association's own eating-and-drinking directory was scraped in full (105 shops across 寿司 / 海鮮丼 / お食事 / 喫茶・軽食・居酒屋 / 玉子焼 / 魚河岸飲食) and contains no 海賓. Coordinates left unchanged and loc_precise false; the record should be deleted rather than re-pinned."
+ },
+ {
+  "id": "tokyo3__95",
+  "name": "竹若",
+  "status": "closed_permanently",
+  "closed_since": "March 2021 — 株式会社竹若 closed all its restaurants by then; the company was put into bankruptcy by the Tokyo District Court on 1 September 2021 and dissolved on 10 July 2024",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "medium",
+  "cuisine": "CLOSED — Takewaka ran ikesu kaiseki and Edomae sushi in Tsukiji (live-tank seafood, sushi counters, a 106-seat banquet floor), not the ラーメン the light record recorded. Both Tsukiji rooms are shut.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Formerly Tsukiji 1-chōme and Tsukiji 4-chōme, 3 min from Tsukiji station (Tokyo Metro Hibiya line) — both premises now closed.",
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessable — the business is closed. For what it is worth, neither Tsukiji room published any allergen information while trading, and both were soy-and-dashi Japanese kitchens (sushi, tempura-inclusive kaiseki, live-tank fish), so nothing here was ever a gluten-free prospect.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessable — the business is closed. Both rooms were seafood houses built around live-tank fish and Edomae sushi; no vegan provision was published.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "株式会社竹若 (Takewaka Co., Ltd.), established 17 February 1988 — dissolved 10 July 2024"
+   ],
+   "origin": "Tsukiji, Chūō-ku",
+   "background": "Takewaka was a Tokyo restaurant company founded on 17 February 1988 that ran kaiseki rooms, sushi counters and bakeries under the 築地竹若 name — the flagship being いけす懐石 築地竹若, live-tank kaiseki. In Tsukiji itself it had two addresses: 鮨 竹若 本館 at 中央区築地1-13-11 高橋ビル1F, a 24-seat sushi counter opened on 8 August 2001 and open weekdays only, and さかな竹若 築地本店 at 中央区築地4-7-5 築地KYビル B1F, a 106-seat basement with private rooms for parties up to thirty. The company went debt-insolvent and was taken over by Asakuma in February 2020; the pandemic finished it. Every branch was closed by March 2021, illegal multi-lease arrangements by the former management came to light that April, the parent resolved on 14 July 2021 to file for bankruptcy, and the Tokyo District Court opened bankruptcy proceedings on 1 September 2021 against debts of ¥9.97 billion. The legal entity was dissolved on 10 July 2024. Tabelog now carries both Tsukiji listings under a 【閉店】 banner, along with 鮨 竹若 別館, 築地竹若 池袋店 and たけわか 築地駅前店. The brand name has not vanished entirely — 築地 竹若 counters still trade in station retail at Tokyo Station Gransta, Ecute Shinagawa and Tobu Funabashi under separate operation, and a September 2021 notice from a separately-run group stressed that it was 完全に別経営 from the bankrupt company — but there is no 竹若 restaurant left in Tsukiji.",
+   "philosophy": "",
+   "specialty": "Formerly いけす懐石 (live-tank kaiseki) and Edomae sushi.",
+   "anecdotes": [
+    {
+     "text": "Japanese Wikipedia records the company as founded 17 February 1988, absorbed by Asakuma on 29 February 2020, with 「2021年3月をもって全店舗が閉店した」 — every branch closed by March 2021 — and bankruptcy proceedings opened by the Tokyo District Court on 1 September 2021 over ¥9.97 billion of debt.",
+     "source": "https://ja.wikipedia.org/wiki/%E7%AB%B9%E8%8B%A5_(%E9%A3%B2%E9%A3%9F%E6%A5%AD)"
+    },
+    {
+     "text": "鮨 竹若 本館 at 築地1-13-11 opened on 8 August 2001, seated 24 across a 16-seat counter and two tables, ran 11:15–14:00 and 17:00–22:00 on weekdays only, and is now marked 【閉店】.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13046852/"
+    },
+    {
+     "text": "さかな竹若 築地本店 at 築地4-7-5, a 106-seat basement with private rooms taking parties of thirty and more and a 10% service charge, is likewise marked 【閉店】.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13004980/"
+    }
+   ],
+   "japanese_sources_summary": "Japanese Wikipedia's article on 竹若 (飲食業) gives the corporate timeline — 1988 founding, 2020 acquisition by Asakuma, all branches closed by March 2021, bankruptcy opened 1 September 2021, dissolution 10 July 2024. Both Tsukiji Tabelog listings were opened directly and both display 「このお店は現在閉店しております」 along with their former addresses, seat counts, hours and opening dates. A Livedoor News item of 1 September 2021 reports the bankruptcy of the operator of 「いけす懐石 築地竹若」.",
+   "confidence": "high",
+   "sources": [
+    "https://ja.wikipedia.org/wiki/%E7%AB%B9%E8%8B%A5_(%E9%A3%B2%E9%A3%9F%E6%A5%AD)",
+    "https://tabelog.com/tokyo/A1313/A131301/13046852/",
+    "https://tabelog.com/tokyo/A1313/A131301/13004980/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Closed, so there is no door to describe. If someone is hunting the name, the surviving 築地 竹若 counters are takeaway sushi and bentō in station retail — Tokyo Station Gransta, Ecute Shinagawa, Tobu Funabashi — run separately from the company that failed. Nothing called 竹若 remains in Tsukiji."
+  },
+  "sources": [
+   "https://ja.wikipedia.org/wiki/%E7%AB%B9%E8%8B%A5_(%E9%A3%B2%E9%A3%9F%E6%A5%AD)",
+   "https://tabelog.com/tokyo/A1313/A131301/13046852/",
+   "https://tabelog.com/tokyo/A1313/A131301/13004980/"
+  ],
+  "enrich_note": "PERMANENTLY CLOSED. 「竹若」 was a real Tsukiji name but the business behind it is gone. Both Tsukiji premises — 鮨 竹若 本館 (中央区築地1-13-11 高橋ビル1F, opened 2001-08-08) and さかな竹若 築地本店 (中央区築地4-7-5 築地KYビル B1F) — carry Tabelog's 【閉店】 banner, as do 鮨 竹若 別館, 築地竹若 池袋店 and たけわか 築地駅前店. Japanese Wikipedia's corporate article confirms why: 株式会社竹若 was taken over by Asakuma in February 2020, closed every branch by March 2021, and had bankruptcy proceedings opened against it by the Tokyo District Court on 1 September 2021 over ¥9.97 billion of debt, with dissolution on 10 July 2024. The light record's cuisine label ラーメン is also wrong — Takewaka was ikesu kaiseki and Edomae sushi. Coordinates left at the original approximate pin and loc_precise set false, because two different former addresses carry the name and pinning one of them would imply a shop that is no longer there. Note for the merge: 築地 竹若 branded counters do still trade at Tokyo Station Gransta and Ecute Shinagawa under separate operation, so a future sweep may surface the name again legitimately — just not in Tsukiji."
+ },
+ {
   "id": "tokyo3__97",
   "name": "築地寿司清 築地本店",
   "status": "confirmed",
@@ -87,6 +209,99 @@
    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/"
   ],
   "enrich_note": "Confirmed. The light record's 「築地寿司清」 is the real 築地寿司清 築地本店 at 中央区築地4-13-9; name extended to the branch name. Address, hours, menu and prices read off the company's own store page (the site is HTTP-only and its TLS certificate does not match, so it must be fetched over http); the outer-market association lists the shop in its official 寿司 directory. Coordinates are the GSI Japan geocode of 築地4-13-9, about 600 m from the neighbourhood-centroid pin the light record carried."
+ },
+ {
+  "id": "tokyo3__98",
+  "name": "日本橋海鮮丼 つじ半 日本橋本店",
+  "status": "confirmed",
+  "lat": 35.680725,
+  "lng": 139.771561,
+  "loc_precise": true,
+  "address_ja": "東京都中央区日本橋3-1-15 久栄ビル1F",
+  "enrich_confidence": "high",
+  "cuisine": "One dish, four grades: a cone of sashimi built up over rice, dressed with yolk-soy at the table and finished by pouring hot sea-bream dashi over what is left to make chazuke — 梅 ¥1,350, 竹 ¥1,850, 松 ¥2,500, 特上 ¥3,900. Twelve counter seats, no bookings, and a queue most of the day.",
+  "cuisine_type": "kaisendon",
+  "neighborhood": "Nihonbashi 3-chōme — 2 min from Nihonbashi station (Ginza / Tōzai / Toei Asakusa lines, exit B3), 5 min from Tokyo station's Yaesu north exit, 6 min from Kyōbashi. This is NOT Tsukiji: it is about 1.8 km north, on the far side of Ginza.",
+  "website": "https://www.tsujihan-jp.com/",
+  "menu_url": "https://www.tsujihan-jp.com/",
+  "hours_raw": "10:00～21:30（L.O.21:00）※食べログ掲載の別表記では[月～金]11:00～21:00（L.O.20:30）　定休日：年末年始を除く不定休",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable, and the wheat is structural rather than incidental. The bowl is finished at the table with 黄身醤油 — yolk beaten into soy sauce — poured over the fish, and the closing act is hot tai dashi poured over the rice to make chazuke, which is again soy-seasoned. Wheat shōyu is therefore in the dish twice, by design, and there is no version served without it. The company publishes no allergen information at all, and this is a twelve-seat counter turning a queue over as fast as it can, with no scope to build a substitute sauce.",
+  "vegan_status": "no",
+  "vegan_detail": "There is exactly one dish and it is raw fish: tuna, salmon roe, sea urchin and crab in varying quantities depending on the grade, dressed in an egg-yolk sauce and finished with sea-bream dashi. Nothing on the menu is vegan or could be adapted.",
+  "chef_bio": {
+   "chef_name": "辻田雄大 (Yudai Tsujita) and 金子真也 (Shinya Kaneko)",
+   "roles": [
+    "co-founders",
+    "辻田雄大 — founder of the ramen house つじ田",
+    "金子真也 — founder of 日本橋天丼 金子半之助"
+   ],
+   "origin": "Nihonbashi, Chūō-ku — opened 13 September 2012",
+   "background": "Tsujihan is a collaboration between two childhood friends who had each already made a name in a single dish: Yudai Tsujita, whose ramen shop つじ田 built a following on tsukemen, and Shinya Kaneko, whose 日本橋天丼 金子半之助 does one tendon and does it to a queue. The name is a contraction of both. Their account of the origin is that they had eaten a kaiseki-style seafood bowl in their younger years that they loved, and they wanted to put it within reach of ordinary money rather than leaving it as a set-course luxury — hence one dish, four grades, and the cheapest at ¥1,350. The format is deliberately narrow: twelve counter seats in a small ground-floor unit in a Nihonbashi office building, no reservations at any branch, no cards, no e-money, no QR payment, all seats non-smoking, and a queue that regulars describe as forty to fifty minutes at lunch. The bowl comes as a mound of sashimi over rice; a small plate of sashimi arrives first, which the house style says to save for the chazuke at the end, when hot sea-bream dashi is poured over the remaining rice. From the one shop it has grown to a small group — Kagurazaka, Akasaka, Muromachi, Roppongi Midtown, Fujimi — but the Nihonbashi original is the one people queue at, with a Tabelog score of 3.59 across nearly 2,700 reviews.",
+   "philosophy": "「贅沢な海鮮丼を、手の届く値段で」 — take the expensive seafood bowl out of the kaiseki course and sell it over a counter at lunch prices.",
+   "specialty": "ぜいたく丼 in four grades — 梅 ¥1,350 (nine kinds of fish, ikura and fatty tuna), 竹 ¥1,850 (adds crab and extra ikura), 松 ¥2,500 (adds uni and crab), 特上 ¥3,900; all finished as 鯛だし茶漬け.",
+   "anecdotes": [
+    {
+     "text": "The two founders are childhood friends: Tsujita made his name in ramen with つじ田, Kaneko in tendon with 金子半之助, and Tsujihan is the seafood bowl they had loved when younger, rebuilt at a price ordinary people could pay.",
+     "source": "https://www.tsujihan-jp.com/"
+    },
+    {
+     "text": "Tabelog records the opening date as 13 September 2012 and notes the menu is only the four grades of ぜいたく丼, with the contents changing by season.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    },
+    {
+     "text": "An October 2025 reviewer queued forty to fifty minutes at lunch and noted that so many customers now come from abroad that Korean- and English-language menus are kept at the counter.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    },
+    {
+     "text": "An August 2026 visitor turned up at 10:20 expecting an 11:00 opening and found the shop had already opened at 10:00 — and a queue of ten that grew past twenty behind them.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    }
+   ],
+   "japanese_sources_summary": "The company's own site carries the founding story, the two founders' names and prior businesses, the four grades with prices current from 1 April 2025, and the statement that no branch takes reservations. Tabelog's shop page for the 日本橋本店 was opened directly and supplies the address 東京都中央区日本橋3-1-15 久栄ビル1F, the phone 03-6262-0823, the B3-exit walking directions, the 2012-09-13 opening date, 12 counter seats, 全席禁煙, カード不可・電子マネー不可・QRコード決済不可, and two differing sets of published hours — hence hours_status 'irregular'. Reviews dated August 2026 confirm normal trading. No allergen page exists on either source.",
+   "confidence": "high",
+   "sources": [
+    "https://www.tsujihan-jp.com/",
+    "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "No fryer and no noodle line, but no wheat-free handling either — and the wheat here arrives in the sauce, not as a stray crumb.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Wheat shōyu is in the dish twice by design: the 黄身醤油 poured over the sashimi, and the soy-seasoned tai dashi poured over the rice for the closing chazuke. No tamari is named anywhere.",
+     "source": "https://www.tsujihan-jp.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "A single-dish raw-fish counter with egg yolk in the sauce and bonito-and-sea-bream dashi at the finish. There is no non-animal option.",
+     "source": "https://www.tsujihan-jp.com/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Korean- and English-language menus are kept at the counter for the large share of overseas customers, so at least the ordering is not a barrier.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "As easy as a queue can be. English and Korean menus are on the counter, the choice is only which of four grades you want, and children are welcome. Plan around the two obstacles: the wait, which reviewers put at forty to fifty minutes at peak lunch — go mid-afternoon or near the 10:00 opening — and the payment, which is cash only at the counter, no cards, no IC, no QR. Twelve seats, no reservations at any branch, all non-smoking. One piece of local etiquette worth knowing: the small plate of sashimi served at the start is meant to be held back and eaten with the sea-bream chazuke at the end, not finished first."
+  },
+  "sources": [
+   "https://www.tsujihan-jp.com/",
+   "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+  ],
+  "enrich_note": "Confirmed, but neither the location nor the cuisine in the light record was right. 「つじ半」 is 日本橋海鮮丼 つじ半 日本橋本店 at 中央区日本橋3-1-15 久栄ビル1F — a kaisen-don counter in Nihonbashi, about 1.8 km north of the Tsukiji pin the sweep gave it, not in 中央区築地 at all. It is also not a 玉子焼き/卵焼き専門 shop; that label appears to have slipped a row in the sweep, since the record below it carries 天ぷら against the actual tamagoyaki specialist 大定. Coordinates moved to the GSI Japan geocode of 日本橋3-1-15. Two different sets of opening hours are published (the company site and Tabelog's own header give 10:00–21:30, while Tabelog's free-text field gives weekdays 11:00–21:00), so hours_status is 'irregular' and both are recorded verbatim."
  },
  {
   "id": "tokyo3__99",

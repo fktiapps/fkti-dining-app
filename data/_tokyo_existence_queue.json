@@ -182,6 +182,261 @@
   "note": "NOT FOUND at Azabu-juban. Searches run: Yahoo Japan exact-phrase 「そば処 十八番」 → one hit, a Facebook page for a shop opened August 2014 at 板橋区大山東町58-7; Yahoo Japan そば処 十八番 板橋区大山東町 蕎麦 → Tabelog 13175407 for 十八番 at that address, 104 m from Oyama Station; Yahoo Japan 麻布十番 十割そば 十八番 蕎麦屋 → Tabelog's Azabu-juban soba top-9, no 十八番; and the Azabu-juban Shopping Street Association's full 398-shop directory, wh"
  },
  {
+  "id": "tokyo3__421",
+  "name": "そば処 曽根崎",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Four legs, all of which actually ran and returned HTTP 200: Yahoo Japan exact-phrase \"そば処 曽根崎\" (Osaka only), Yahoo Japan site:tabelog.com そば処 曽根崎 (Osaka only), Yahoo Japan そば処 曽根崎 溜池山王 (Tameike-sannō soba rankings, no such shop), and a full read of Tabelog's Akasaka soba area list A130801 (20 shops, none named 曽根崎). Tabelog's free-word search endpoint returned HTTP 404 to curl and was w"
+ },
+ {
+  "id": "tokyo3__426",
+  "name": "赤坂 おか田",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Three Yahoo Japan legs all ran (HTTP 200) and all came back without an Akasaka eel house named おか田: \"赤坂 おか田\" うなぎ, site:tabelog.com 赤坂 おか田, and \"おか田\" 赤坂 東京 店. Several real おか田 businesses exist in Tokyo (Uchisaiwaichō yakitori, Roppongi washoku, Kodenmachō soba, Monzen-Nakachō standing bar, Asakusa jidori) but none is unagi and none is in Akasaka; the actual Akasaka eel houses are 宮川本廛, 丸"
+ },
+ {
+  "id": "tokyo3__430",
+  "name": "肉そば 奥山",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. The exact phrase 肉そば 奥山 resolves on the Japanese web only to 奥山佳恵's kodomoe.net ramen column 『ラーメン天国』第四十六回「横濱飯店☆肉そば」, not to a restaurant. Legs run, all HTTP 200: Yahoo Japan exact phrase; Yahoo Japan 肉そば 奥山 赤坂; Yahoo Japan site:tabelog.com 奥山 そば 赤坂 (returns only おく山 in Itabashi-ku Narimasu, Tabelog 13067111); and a full read of Tabelog's Akasaka soba area list A130801 (20 shops, no 奥山)"
+ },
+ {
+  "id": "tokyo3__433",
+  "name": "蕎麦切り 白月",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Four legs, all of which ran and returned HTTP 200: Yahoo Japan exact-phrase \"蕎麦切り 白月\" (returns そば切り 百夜月 in Nara and 蕎麦切り 照月 in Nikkō); Yahoo Japan \"白月\" 蕎麦 東京 (白月 turns out to be a sake served at 蕎麦前 ごとう in Daikanyama, and a Kyoto shop 好事家 白月); Yahoo Japan site:tabelog.com 白月 そば (Hakata, Itami and Nagano hits only); and a full read of Tabelog's Shinsen-station soba area list (20 shops, n"
+ },
+ {
+  "id": "tokyo3__435",
+  "name": "手打ちそば 福そば",
+  "status": "substituted",
+  "drift_km": 0,
+  "note": "PROBABLE, NOT CONFIRMED — needs a human decision. Exactly one 福そば exists in Tokyo and it is at 中央区日本橋人形町1-16-3, a stand-up soba counter in Amazake-yokochō, roughly 7 km from this record's Shinsen pin. Two of the light record's three attributes contradict it: the shop is not in Shinsen, and it is not 手打ち (its noodles are made to spec by an outside noodle maker). Only the distinctive name matches. L"
+ },
+ {
+  "id": "tokyo3__438",
+  "name": "天ぷら 小島",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. No tempura shop named 小島 trades near Ikejiri-Ōhashi: Tabelog's Ikejiri-Ōhashi tempura area list (five shops: 天ぷら たんご, 天ぷら 筧, 日日うどん, 旬彩なないろ, 夢吟坊 三宿本店) contains none. The only 小島 tempura business in this part of Tokyo was 天ぷらとワイン 小島 学芸大店 (目黒区鷹番3-3-16, a branch of a Nagoya tempura-and-wine chain, not a 老舗), which opened 30 Sep 2023 and CLOSED at the end of February 2025 — the unit is now ワ"
+ },
+ {
+  "id": "tokyo3__439",
+  "name": "个食堂 ひとさじ",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. The name is corrupt on its face — 个 is a simplified-Chinese character and searching it returns only Chinese articles about university canteens. Five legs, all HTTP 200: Yahoo Japan \"个食堂\"; \"个食堂\" OR \"ひとさじ\" 定食 渋谷 神泉; \"ひとさじ\" 食堂 東京 定食; site:tabelog.com ひとさじ 東京 (returns HITOSAJI, a curry shop in Ōsaki, and 創作麺 ひとすじ in Hōnanchō); 食堂 ひとさじ 渋谷区 (returns 渋谷食堂ひとしな at 渋谷区宇田川町33-1, one kana away but "
+ },
+ {
+  "id": "tokyo3__445",
+  "name": "そば家 神月",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Five legs, all of which ran and returned HTTP 200: Yahoo Japan そば家 神月 東京; Yahoo Japan exact-phrase \"そば家 神月\" (Yahoo explicitly reports no exact match and falls back to a Shimane packaged-soba product, 出雲そば「神在月」); Yahoo Japan site:tabelog.com 神月 そば 東京; Yahoo Japan 神月 そば 池尻大橋; and Tabelog itself — a nationwide free-word search for 神月, which returns seven real 神月 businesses in Chiba, Hyōgo,"
+ },
+ {
+  "id": "tokyo3__447",
+  "name": "象本店",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. 象本店 is not the name of any restaurant in Japan. Six legs ran and returned HTTP 200, all negative: Yahoo Japan exact-phrase \"象本店\" 焼き鳥 新橋 (Yahoo states outright that no exact match exists); Yahoo Japan exact-phrase \"象本店\" alone (~1,140 results, not one a business — the string occurs as 対象／本店 line breaks in bank notices and as manglings of 総本店); Yahoo Japan site:tabelog.com 象 新橋 焼き鳥 本店; Tab"
+ },
+ {
+  "id": "tokyo3__453",
+  "name": "新橋 蕎麦",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND — and specifically, not a shop name. 「新橋 蕎麦」 is a district plus a genre. Four legs ran and returned HTTP 200, all negative: Yahoo Japan exact-phrase \"新橋蕎麦\" 店 (every hit uses the string descriptively — a Retty review of 芝新橋 おそば 能登治, a hashtag on かめや 新橋店, Shimbashi soba round-ups); Tabelog's nationwide free-word search for 新橋蕎麦 and again for 新橋そば, both of which return only real, differentl"
+ },
+ {
+  "id": "tokyo3_y_61",
+  "name": "天麩羅 えびのや 八重洲地下街店",
+  "status": "closed_permanently",
+  "hidden": "closed",
+  "note": "CLOSED PERMANENTLY. The name in the light record is correct and the business was real, but it is shut. Yahoo Japan search on 「天麩羅 えびのや 八重洲地下街店」 and again on 「えびのや 八重洲地下街 閉店」 both surfaced the Tabelog page headed 【閉店】; the page was opened directly and confirms it, with the last of 78 reviews dated March 2024. Yaechika's own restaurant directory was then fetched and read in full — roughly 90 tenants"
+ },
+ {
+  "id": "tokyo3_ky_62",
+  "name": "京料理と創作和食 刻 八重洲店",
+  "status": "low_confidence_pin",
+  "proposed": [
+   35.678565,
+   139.76979
+  ],
+  "note": "PROBABLE — real business, current operation unconfirmed. The name in the light record is correct, but the shop has moved: Tabelog flags 京料理と創作和食 刻 八重洲店 (八重洲2-5-7 三興ビル1F) as 【移転】 and links a successor page, 刻 (KIZAMI), at 京橋1-5-1 5F; Gurunavi carries the old trading name at the new address with live hours and a working phone. Against that, the successor Tabelog page has zero reviews, and the shop's own official site (ghjw609.gorp.jp) now serves an empty page. Coordinates moved to the new Kyōbashi address using Tabelog's embedded geodata. DUPLICATE WARNING for the merge: 京橋1-5-1 is the same address as two other records in this shard, tokyo3_ky_63 (肉の蔵 八重洲日本橋店) and tokyo3_tokyo_ky (お箸とグラス TOKYO 八重洲日本橋店), which share coordinates with this one and are almost certainly the same 80-seat operation under different brand names — a Hot Pepper reviewer says as much in as many words. Searches run: Yahoo Japan on 「京料理と創作和食 刻 八重洲店」 and again on 「刻 KIZAMI 京橋1-5-1 居酒屋」; both Tabelog pages and the Gurunavi page fetched and read; the official gorp site fetched (HTTP 200, empty payload); Hot Pepper keyword search 404'd and Retty returned HTTP 406."
+ },
+ {
+  "id": "tokyo3_y_66",
+  "name": "玉乃光酒蔵 八重洲地下街店",
+  "status": "closed_permanently",
+  "hidden": "closed",
+  "note": "CLOSED PERMANENTLY. The name in the light record is correct and the business was real. Yahoo Japan search on 「玉乃光酒蔵 八重洲」 (run through a fetcher; direct curl to Yahoo was returning HTTP 429 and that leg was retried and set aside rather than counted as empty) returned Tabelog, Hot Pepper, Jalan, Hanako and San-tatsu listings, with Tabelog headed 【閉店】. The Tabelog page and its date-sorted review list"
+ },
+ {
+  "id": "tokyo3__67",
+  "name": "麺屋武蔵",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. The brand is real but the shop at this location is not. Searches run: (1) direct curl to Yahoo Japan on 「麺屋武蔵 東京駅 八重洲 店舗」 — HTTP 429, i.e. the engine declined to answer; retried and then routed through a fetcher instead, which returned only the Akihabara, Roppongi, Ueno, Shinjuku, Ikebukuro and Kichijōji branches and no Tokyo Station one. (2) The group's own official store list at menya"
+ },
+ {
+  "id": "tokyo3__68",
+  "name": "濃麺 真鯛らーめん 稲田",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) direct curl to Yahoo Japan on the exact name — HTTP 429, the engine declining to answer rather than answering 'no'; retried once, still 429, so the leg was re-run through a fetcher, which returned らぁ麺稲田 in Hakata and 濃厚真鯛らーめん 鯛麺 in Kōbe and nothing in Tokyo. (2) Yahoo Japan on 「真鯛らーめん 京橋 中央区 ラーメン 稲田」 — 真鯛らーめん shops in Kinshichō, Osaka Nagahoribas"
+ },
+ {
+  "id": "tokyo3__69",
+  "name": "大勝軒",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) direct curl to Yahoo Japan on 「大勝軒 日本橋 京橋 中央区 ラーメン」 — HTTP 429, the engine declining to answer; retried, still 429, so the leg was re-run through a fetcher. (2) Yahoo Japan on 「大勝軒 東京駅 八重洲 つけ麺」 — returned 東池袋大勝軒 (Ikebukuro) and 銀座 大勝軒 only, plus a note that the Tokyo Station tsukemen shop people think of is Tomita, a different house. (3) Yahoo Ja"
+ },
+ {
+  "id": "tokyo3__71",
+  "name": "焼き鶏 たか木",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) direct curl to Yahoo Japan — HTTP 429 throughout this stretch of the shard, the engine declining to answer rather than answering 'no'; retried repeatedly and then routed through a fetcher for every leg below. (2) Yahoo Japan on 「焼き鶏 たか木 東京」 — 焼鳥 髙木 (杉並区上井草1-24-13, Iogi) and やきとり たかぎ (大田区北千束1-56-5, Ōokayama), neither in central Tokyo. (3) Yahoo Ja"
+ },
+ {
+  "id": "tokyo3__73",
+  "name": "つけ麺 さんじ",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND at the recorded location. Searches run and what each returned: (1) direct curl to Yahoo Japan — HTTP 429 across this stretch of the shard, i.e. the engine declining to answer; retried and then routed through a fetcher. (2) Yahoo Japan on 「つけ麺 さんじ ラーメン」 — every top result pointed to one shop, さんじ in Inarichō, Taitō-ku; nothing at Tokyo Station or Yaesu. (3) That Tabelog page fetched direc"
+ },
+ {
+  "id": "tokyo3__74",
+  "name": "和食処 瑞穂",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「和食処 瑞穂」 (HTTP 200) — exactly one hit, 妙義グリーンホテル＆テラス, a hotel in Tomioka, Gunma, unrelated. (2) Tabelog 「瑞穂 京橋」 (HTTP 200) — 0 results. (3) Tabelog 「和食 瑞穂 中央区」 (HTTP 200) — 0 results. (4) Yahoo Japan 「和食処 瑞穂 京橋」 (HTTP 200) — returned 髨処 瑞穂 in Nagoya's Shin-sakae and the permanently closed 和食処 みつはし near Takaracho; no K"
+ },
+ {
+  "id": "tokyo3__77",
+  "name": "天ぷら 大黒",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「天ぷら 大黒」 (HTTP 200) — 15 results, all character near-misses (天ぷら大吉 Osaka, 天ぷら 大樹 Kitakyushu, 天ぷら 大塚 Iriya, 大黒門 Fukuoka); no 天ぷら 大黒 anywhere. (2) Tabelog 「天ぷら 大黒 東京」 and 「大黒 天ぷら 中央区」 (HTTP 200) — 0 results each. (3) Tabelog 「天ぷら 京橋」 (HTTP 200) — the Tokyo-Kyobashi entries are てんぷら 深町 (4.05) and the permanently closed 天"
+ },
+ {
+  "id": "tokyo3__78",
+  "name": "もんじゃ焼き ねぎ八",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「ねぎ八」 (HTTP 200) — 15 results, all character bleed (荒木町 光樹, 御料理 ふじ田, たこ八 森地下店 …), no ねぎ八. (2) Tabelog 「ねぎ八 東京」 (HTTP 200) — 0 results. (3) Tabelog 「もんじゃ 八重洲」 (HTTP 200) — 6 results: もんじゃ 八百八 (Osaka), monja houses in Kinshicho / Tsukishima / Honjo-Azumabashi, and a Gong Cha in Gransta Yaesu; no monja shop in Yaesu itse"
+ },
+ {
+  "id": "tokyo3__79",
+  "name": "鮨 よし田",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「黢 よし田」 (HTTP 200) — 15 shops, the Tokyo ones being 黢よし田 in Hiroo, 松阪牛 よし田 in Hatsudai, やきとん よし田 in Kameari and 季節料理 手打薐麼 よし田 in Shimura-sakaue; none in Kyobashi. (2) Tabelog 「よし田 中央区」 (HTTP 200) — 0 results. (3) Yahoo Japan 「\"よし田\" 黢 寿司 京橋 中央区」 (HTTP 200) — 銀座よし田 (割烹, 銀座7-5-10), a 【閉店】よし田 in Nihonbashi, an ekiten page"
+ },
+ {
+  "id": "tokyo3__81",
+  "name": "らーめん 一騎当千",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「一騎当千」 (HTTP 200) — one real namesake, 一騎当千 at Nakano-Fujimichō (油そば・まぜそば, rating 3.05), 7 km from Kyobashi; the other fourteen hits are unrelated. (2) Tabelog 「一騎当千 ラーメン」 (HTTP 200) — 0 results. (3) Yahoo Japan 「らーめん 一騎当千 京橋」 (HTTP 200) — every hit is Osaka's Kyobashi (らーめん 世界一 京橋本店, 麺屋いち山). (4) Yahoo Japan 「\"一騎当千\" ら"
+ },
+ {
+  "id": "tokyo3__85",
+  "name": "美山",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「美山」 (HTTP 200) — 15 businesses, every one outside Tokyo (a Kansai/Kanagawa shabu-shabu chain, 美山荘 in Kyoto, 美山飯店 in Kawasaki, 市場食堂 中華 美山 in Totsuka). (2) Tabelog 「美山 築地」 (HTTP 200) — 0 results. (3) Tabelog 「美山 中央区」 and 「美山 東京」 (HTTP 200) — 0 results each. (4) Tabelog 「美山 ラーメン」 (HTTP 200) — 15 results, all character b"
+ },
+ {
+  "id": "tokyo3__89",
+  "name": "麺達磨",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「麼達磨」 (HTTP 200) — 15 results, all だるま / 達磨 shops elsewhere (純手打ち だるま Nakano, だるま大使 Takasaki, ラーメン 達磨食堂 Nagoya, 喜多方ラーメン 達磨 Nikko …); none spelled 麼達磨 and none in Chuo-ku. (2) Tabelog 「達磨 築地」 (HTTP 200) — the only Tsukiji hit is たいやき神田達磨 築地店, a taiyaki stand. (3) Yahoo Japan 「\"麼達磨\" ラーメン」 (HTTP 200, via a second fetch p"
+ },
+ {
+  "id": "tokyo3__91",
+  "name": "寿司大",
+  "status": "substituted",
+  "drift_km": 2.7,
+  "note": "RELOCATED, NOT MISLOCATED. 寿司大 is real and open, but it has not been in Tsukiji since 2018: Tabelog states 「このお店は「中央区築地5-2-1」から移転しています」 and gives the current address as 江東区豊洲6-5-1, inside Toyosu Market's block 6, open since September 2018. The light record's 中央区築地 pin was therefore about 9 km out; coordinates have been replaced with the Toyosu ones and loc_precise set true. This is still Tokyo, so"
+ },
+ {
+  "id": "tokyo3__92",
+  "name": "大和寿司",
+  "status": "substituted",
+  "drift_km": 2.8,
+  "note": "RELOCATED, NOT MISLOCATED. 大和寿司 is real and open, but it left Tsukiji with the market: Tabelog states 「このお店は「中央区築地5-2-1」から移転しています」, gives the current address as 江東区豊洲6-3-1 inside Toyosu Market's block 5, an opening date of 13 October 2018, and the remark 「築地場内市場の大和寿司が豊洲市場に移転」. The light record's 中央区築地 pin was about 9 km out; coordinates replaced with the Toyosu ones, loc_precise:true. Still Tokyo,"
+ },
+ {
+  "id": "tokyo3__110",
+  "name": "築地 中島",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED. Every leg ran and returned an answer; none of them was a restaurant. Yahoo Japan on 「築地 中島 つけ麺」 (HTTP 200) returned Tabelog's Tsukiji tsukemen round-ups, which list no 中島; 「築地 中島 場外市場」 (200) returned only the outer market's own general pages; 「中島 築地駅 周辺」 (200) returned 築地中島水産, a fresh-fish retailer with its head office in Atami, Shizuoka; 「中島 site:tsukiji.or.jp」 (200) returned 中島商店, a "
+ },
+ {
+  "id": "tokyo3__112",
+  "name": "つきじ丸田水産",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back with an answer. Yahoo Japan on 「つきじ丸田水産」 (HTTP 200) returned 丸玉水産 and マルタ食品, both real Tsukiji outer-market traders, and nothing named 丸田水産; 「丸田水産 築地」 (200) was answered with the spelling-correction prompt 「丸太水産 築地ではありませんか？」 and the 丸玉水産 business card; a quoted nationwide search on the exact string 丸田水産 (200) returned only businesses of that name in Wakayama,"
+ },
+ {
+  "id": "tokyo3__116",
+  "name": "弓場醗酵",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Four Yahoo Japan legs ran, all returned HTTP 200, and all came back empty of any such business. 「弓場醗酵」 returned 弓場貿易株式会社 of Kagoshima and the Yuba agricultural commune in Brazil; 「弓場醗酵 ラーメン」 returned 発酵ラーメン izuru in Yokohama, explicitly flagged 未指定：弓場 — the search engine saying it could not match that word at all; 「弓場発酵」 returned miso and yuba articles only; 「弓場 中央区 東京 店」 returned Gin y"
+ },
+ {
+  "id": "tokyo3__118",
+  "name": "もも仁（もも仁）",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Five Yahoo Japan legs ran, all HTTP 200, none returning a business of this name. 「もも仁 人形町」 returned 鉄板焼レストラン 仁 JIN (中央区日本橋人形町1-1-15, teppanyaki) and other 仁 shops, with Yahoo flagging the もも half as unmatched; the quoted exact-string search returned a pixiv fan tag, a wrestling card, a Kirihara classical-Japanese textbook page and a seasonal shaved ice named もも仁 at a café in Ebina, Kana"
+ },
+ {
+  "id": "tokyo3__119",
+  "name": "玉らない",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "GENERIC PHRASE: 「玉らない」 is not a garbled shop name but the stock expression たまらない ('irresistible') written with the kanji 玉 for the pun, so this record never named a business in the first place. Evidence: a quoted Yahoo Japan search on the exact string (HTTP 200) returns only the phrase in running prose — an Okinawa travel piece, two record-collector posts, a school sports-day page 「どうにも玉らない」 — and"
+ },
+ {
+  "id": "tokyo3_various_vendors",
+  "name": "甘酒横丁 (various vendors)",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "GENERIC PHRASE: 「甘酒横丁 (various vendors)」 names a shopping street, not a business — the record's own parenthesis says so. Amazake-yokochō is real and was confirmed (the shotengai association's own site amazakeyokocho.jp, HTTP 200, gives its extent across 中央区日本橋人形町／浜町 and its four member categories; Yahoo's place card gives 人形町駅 A2 徒歩0分, association phone 03-3666-7662 and hours 「店舗により異なる」; GO TOKYO "
+ },
+ {
+  "id": "tokyo3__121",
+  "name": "ぼたん",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED. Four Yahoo Japan legs ran, all HTTP 200, none producing an eel restaurant called ぼたん in Ningyōchō. The only Tokyo business of that name is 鳥すきやき ぼたん (〒101-0041 千代田区神田須田町1-15, 03-3251-0577, founded 1897, chicken sukiyaki, 11:30–21:00) with its branch 鳥料理 ぼたん 日本橋店 (千代田区鍛冶町1-9-19 GEMS新日本橋 3F) — a different ward, about 1.7 km from the pin, and chicken rather than the record's claimed unagi"
+ },
+ {
+  "id": "tokyo3__122",
+  "name": "魚新",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED — needs a human. Every leg ran and returned HTTP 200; the problem is not absence of results but that three different businesses share the name and none of them fits. Nearest by distance is 日本橋天ぷら魚新 (中央区日本橋1-4-1 コレド日本橋4F, 35.682439/139.774820, ~700 m from the pin, right ward), but it is tempura rather than the record's 'fresh seafood' and the evidence says it has stopped trading — Yahoo "
+ },
+ {
+  "id": "tokyo3__124",
+  "name": "福ろ",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Five Yahoo Japan legs ran, all HTTP 200, all returning results and none returning this business. 「福ろ 人形町」 gave 萬福楼, 十四郎 and 文福 人形町, with Yahoo flagging 未指定：ろ and 未指定：福 — the engine reporting it could not match part of the name; the quoted exact-string search gave only 箸福ろ chopstick sleeves, an Okinawan 福ろール roll cake and 福ろうじ商店街 in Osaka; 「福ろ 日本橋 人形町 中央区 料理」 gave 福 (人形町/食堂), 中華料理 福 (中央区"
+ },
+ {
   "id": "tokyo3__75",
   "name": "蕎麦 さくら",
   "status": "not_found",

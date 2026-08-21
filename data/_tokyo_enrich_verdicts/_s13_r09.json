@@ -1,0 +1,53 @@
+{
+ "id": "tokyo3__36",
+ "status": "unresolved",
+ "lat": 35.6812,
+ "lng": 139.7671,
+ "loc_precise": false,
+ "address_ja": null,
+ "enrich_confidence": "low",
+ "cuisine": null,
+ "cuisine_type": null,
+ "neighborhood": "COULD NOT VERIFY a business. The nearest thing the name matches is a facility, 東京ラーメン横丁, at 〒104-0028 東京都中央区八重洲2-1 八重洲地下街 北1号 — which is Chūō-ku Yaesu, not the Marunouchi basement the light record gives.",
+ "website": null,
+ "menu_url": null,
+ "hours_raw": null,
+ "hours_status": "irregular",
+ "gf_confidence": "no",
+ "gf_detail": "Not assessed — no business was identified. If the intended target is the 東京ラーメン横丁 arcade, all seven of its tenants are wheat-noodle ramen shops (shōyu, miso, tonkotsu, iekei, jirō, abura-soba), so nothing there would be gluten-free regardless.",
+ "vegan_status": "no",
+ "vegan_detail": "Not assessed — no business was identified. The seven shops in the arcade of that name are all pork- or chicken-broth ramen counters.",
+ "chef_bio": {
+  "chef_name": null,
+  "roles": [],
+  "origin": null,
+  "background": "No business was identified, so there is nobody to write about. For the record: 東京ラーメン横丁 is a seven-shop ramen arcade in the Yaechika underground mall on the Yaesu side of Tokyo Station, opened around the concept of ramen as an everyday food you come back to. Its current tenants are 長岡食堂 (Nagaoka ginger shōyu), いと井 (white miso wok-fried), 風雲児 (chicken paitan tsukemen), 町田商店 (iekei), 豚山 (jirō-style), 元祖油堂 (abura-soba) and がっとん. Each is a separate business with its own Tabelog entry filed as '〜 東京ラーメン横丁店'. JR East publishes an explainer article whose entire purpose is to stop people confusing this arcade with 東京ラーメンストリート, which is a different facility one level down in Tokyo Station Ichibangai — and which is where another record in this shard, 六厘舎, actually sits.",
+  "philosophy": null,
+  "specialty": null,
+  "anecdotes": [],
+  "japanese_sources_summary": "tokyo-ramenyokocho.com is the arcade's official site: address 〒104-0028 東京都中央区八重洲2丁目1番 八重洲地下街北1号, 11:00–23:00 (L.O. 22:30), holidays following the mall, 2 min from the JR Tokyo Station Yaesu north exit and about 6 min from Nihonbashi station, seven tenants each with Japanese, English, Chinese and Korean menus. JR East's JRE Media article (updated 20 November 2024) contrasts it with 東京ラーメンストリート and gives directions to both. Tabelog's Yaechika premise listing shows the individual shops filed under their own names with a 東京ラーメン横丁店 suffix. No Tabelog entry, no directory listing and no company registration exists for a restaurant called simply 「ラーメン横丁」 anywhere in Chiyoda-ku.",
+  "confidence": "low",
+  "sources": [
+   "https://tokyo-ramenyokocho.com/",
+   "https://media.jreast.co.jp/articles/129"
+  ]
+ },
+ "safety": {
+  "gf_cross_contamination": [],
+  "soy_sauce_wheat": [],
+  "vegan_cross_contact": [],
+  "staff_allergy_handling": [],
+  "positives": []
+ },
+ "cultural_comfort": {
+  "level": "N/A — no business identified",
+  "note": "Nothing should be shown to a user under this record as it stands. If the record is kept at all, it would have to be re-cut as one of the seven individual shops in the 東京ラーメン横丁 arcade, each of which is a real business with its own address, hours and menus in four languages."
+ },
+ "sources": [
+  "https://tokyo-ramenyokocho.com/",
+  "https://media.jreast.co.jp/articles/129",
+  "https://tabelog.com/tokyo/P017769/premiseLst/ramen/",
+  "https://tabelog.com/tokyo/A1302/A130201/13273045/"
+ ],
+ "enrich_note": "GENERIC PHRASE: 「ラーメン横丁」 is a category word — 'ramen alley' — not the name of a business, and no restaurant trades under it. Every search leg ran and returned; none returned a shop. Yahoo Japan searches for 「ラーメン横丁」丸の内 地下, for 食べログ ラーメン横丁 店舗 千代田区 and for 東京ラーメン横丁 all returned HTTP 200 with results, and what they returned were facilities and their tenants: 東京ラーメン横丁 in the Yaechika underground mall, 御徒町ラーメン横丁 in Taitō-ku, and Sapporo's original. Tabelog's Yaechika premise index lists the individual businesses as 風雲児 東京ラーメン横丁店, ラーメン豚山 東京ラーメン横丁店, いと井 東京ラーメン横丁店, がっとん 東京ラーメン横丁店 and 元祖油堂 東京ラーメン横丁店 — the yokocho is the address, the shop name is the part in front of it. The closest real thing to what the light record intended is that arcade: 〒104-0028 東京都中央区八重洲2-1 八重洲地下街 北1号, 11:00–23:00, seven ramen shops, 2 min from the Yaesu north exit. Note that even that does not match the light record's stated location — the record says 丸の内地下 / 東京駅 (Chiyoda-ku), and the arcade is in Chūō-ku Yaesu; JR East publishes an article specifically because people confuse it with 東京ラーメンストリート on the Marunouchi-address side, which is where this shard's 六厘舎 record sits. Coordinates left unchanged and loc_precise false. Recommendation: do not merge this as a restaurant. Either drop it, or replace it with one or more of the seven named tenants."
+}
