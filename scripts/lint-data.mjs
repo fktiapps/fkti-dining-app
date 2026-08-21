@@ -95,8 +95,18 @@ for (const city of CITIES) {
     // awaiting Greg is a WARNING — the work is done, the gate is queued.
     // The gate is the authority. If the shipped tier disagrees with what Greg
     // signed off, something overwrote a human decision — always an error.
+    // The one legitimate way a signed-off tier moves: the evidence it was granted on
+    // was checked against its sources and found not to support it. That is not a
+    // machine overwriting a human decision, it is a human decision resting on a
+    // premise that turned out to be false — and it is recorded on the record, with
+    // the count, so the override is auditable rather than silent. Everything else
+    // that moves a signed-off tier is still an error.
+    const held = r.gf_uncited_downgrade;
+    const legitOverride = held && held.disproven > 0 && r.gf_confidence === 'ask';
     const sg = r.safety?.owner_signoff;
-    if (sg?.decision && sg.to && sg.to !== r.gf_confidence)
+    if (legitOverride)
+      warn(city, `${at}: held at "ask" over sign-off — ${held.disproven} claim(s) disproven against their sources; needs Greg's re-review`);
+    else if (sg?.decision && sg.to && sg.to !== r.gf_confidence)
       err(city, `${at}: gf_confidence="${r.gf_confidence}" contradicts owner_signoff.to="${sg.to}" (${sg.by} ${sg.date}) — a machine pass overwrote the human gate`);
 
     // A GF tier above "ask" is a claim that this shop is safer than the default, and

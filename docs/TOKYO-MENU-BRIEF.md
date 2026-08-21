@@ -23,7 +23,7 @@ Write to `data/_menu_verdicts/tokyo_sN.json` — an object keyed by record id:
 ```json
 {
   "<record id>": {
-    "verified": "authoritative | true | partial | provisional",
+    "verified": "authoritative | partial | provisional",
     "confidence": "high | medium | low",
     "sources": ["https://…"],
     "price_note": "Prices approximate — may change.",

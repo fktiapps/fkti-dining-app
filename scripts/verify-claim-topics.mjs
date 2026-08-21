@@ -1,3 +1,5 @@
+// TRIAGE, not a defect detector. Read this before quoting any number from it.
+//
 // Does the cited page even discuss what the claim is about?
 //
 // verify-citations.mjs can only check claims wrapped in 「」 — 124 of 7,928. The rest
@@ -46,7 +48,36 @@ const CONCEPTS = {
              page:  /soba|buckwheat|十割|二八|打ち粉|そば|蕎麦/i },
 };
 
+// A NEGATIVE claim is evidenced by the topic's ABSENCE, so this check inverts on it
+// and would otherwise flag every one as a mismatch. "No published allergen-handling
+// policy was found" cited to a Tabelog stub that indeed says nothing about allergens
+// is a correct citation, not a broken one — the stub is the evidence.
+//
+// This is most of what the first run flagged: 1,953 apparent mismatches, dominated by
+// exactly this shape. Reporting that as a defect rate would have been wrong, and
+// alarmingly so given what the sweep is for.
+// Two claim shapes this check cannot judge, both excluded rather than flagged:
+//
+// NEGATIVE claims are evidenced by the topic's ABSENCE. "No published allergen
+// policy was found", cited to a listing that indeed says nothing about allergens, is
+// a correct citation — the silence is the evidence.
+//
+// INFERENCE claims cite a source for their PREMISE and reason to the conclusion.
+// "As a traditional sushi counter, soy sauce (typically brewed with wheat) is used
+// throughout" cites Tabelog to establish what kind of restaurant it is; Tabelog will
+// never mention soy sauce, and it does not need to. The reasoning is sound, hedged
+// and honest, and flagging it as a bad citation would be wrong.
+//
+// Between them these are most of what a naive run flags — the first pass reported
+// 1,953 mismatches and would have read as a 30% fabrication rate. What survives both
+// filters is a TRIAGE signal for the agent sweep, not an accusation: it says "an
+// agent should look at this one sooner", nothing more. Only a human-directed agent
+// reading the page can say whether a claim is supported.
+const INFERENCE = /\b(typically|usually|generally|likely|presumably|probably|as (a|an|is) \w+|standard practice|by default|in most|assume[ds]?|would be|is expected)\b|と思われ|一般的に|通常/i;
+const NEGATIVE = /^\s*(no|none|not|neither|nothing)\b|\bno (source|published|information|evidence|documented|allergen|specific|dedicated|mention|record|data)\b|\b(is|was|were|are) not (documented|published|specified|stated|listed|found|available)\b|\bnot (documented|published|specified|disclosed|stated|available|found)\b|\bcould not be (found|verified|confirmed)\b|\bno .{0,24} (was|were) found\b|\bassume\b/i;
+
 const jobs = [];
+let negatives = 0, inferences = 0;
 for (const city of CITIES)
   for (const r of readCity(city).places) {
     if (r.hidden) continue;
@@ -54,12 +85,16 @@ for (const city of CITIES)
       for (const e of (r.safety?.[f]) || []) {
         if (typeof e !== 'object' || !url(e?.source)) continue;
         const text = String(e.text || '');
+        if (NEGATIVE.test(text)) { negatives++; continue; }
+        if (INFERENCE.test(text)) { inferences++; continue; }
         const fired = Object.entries(CONCEPTS).filter(([, c]) => c.claim.test(text)).map(([k]) => k);
         if (!fired.length) continue;               // nothing testable in this claim
         jobs.push({ city, id: r.id, name: r.name, field: f, url: e.source, text, fired });
       }
   }
-console.log(`${jobs.length} cited claim(s) with a testable topic`);
+console.log(`${jobs.length} cited claim(s) with a testable positive assertion`);
+console.log(`${negatives} negative claim(s) skipped — for those, the topic's absence IS the evidence`);
+console.log(`${inferences} inference claim(s) skipped — they cite a source for their premise, not their conclusion`);
 
 const urls = [...new Set(jobs.map(j => j.url))].slice(0, LIMIT);
 console.log(`fetching ${urls.length} unique source page(s)...\n`);

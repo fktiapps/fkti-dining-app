@@ -1,0 +1,786 @@
+[
+ {
+  "id": "tokyo3__93",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no business called 「なか目」 could be found in Tsukiji, in Chūō-ku, or anywhere else in Japan.",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 中央区築地, near Tsukiji station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. The light record's 'no' was inferred from the words カツ丼・和食 and is not supported by anything.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 「なか目」 does not appear to be the name of any restaurant. A quoted-phrase search on Yahoo Japan returns no business of that name at all — the engine offers 「中目」 as a correction and every result is either the Nakameguro district or a coincidental mid-sentence occurrence of なか + 目 ('among them, before my eyes'). A Tsukiji-scoped search on 築地 なか目 カツ丼 returns the neighbourhood's actual katsudon shops and nothing resembling the name: とんかつ丸七 (Monzen-nakachō, with a Ginza branch 411 m from Tsukiji), かつ平 (5 min from Tsukiji station), 幸軒 in the outer market, 豊ちゃん, 築地かつ誠, とんかつ和幸 聖路加ガーデン築地店, とんかつ銀座梅林. Yahoo's own local module, asked for かつ丼・とんかつ shops around 中央区築地, returns eleven and none of them is なか目. The Tsukiji outer-market association's full eating-and-drinking directory — 105 shops, scraped across the 寿司 / 海鮮丼 / お食事 / 喫茶・軽食・居酒屋 / 玉子焼 / 魚河岸飲食 categories — contains no なか目 either. The nearest thing to an explanation is that なか目 is a common contraction of 中目黒 (Nakameguro), a district in Meguro-ku about 8 km west, which would make this a place name rather than a business; but that is a guess and nothing in the record supports it, so it is not being recorded as a finding.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Search legs actually run, and what each returned. (1) Yahoo Japan, 「\"なか目\" 東京 飲食店 食べログ」 — HTTP 200, no matching business; engine suggested 「中目」 and returned Nakameguro pages. (2) Yahoo Japan, 「\"なか目\" 店名 レストラン」 — HTTP 200, same, no business of the name. (3) Yahoo Japan, 「築地 なか目 カツ丼 店」 — HTTP 200, returned other Tsukiji katsudon shops, no match. (4) Yahoo Japan local module, 「中央区築地 かつ丼 とんかつ 店 一覧」 — HTTP 200, eleven shops listed within walking distance, no match. (5) Tsukiji outer-market association official directory, six food categories fetched in full (105 shops) — HTTP 200, no match. Not attempted successfully: Tabelog's nationwide keyword-search endpoint, which answers scripted requests with HTTP 404 regardless of cookies, referer or mobile user-agent — individual Tabelog shop pages fetch fine, but the name-search index could not be queried directly, so the Tabelog coverage here is second-hand through Yahoo Japan's index of it.",
+   "confidence": "low",
+   "sources": [
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and results: Yahoo Japan on the exact phrase 「\"なか目\"」 with 東京/飲食店/食べログ and again with 店名/レストラン — both HTTP 200, both returned no business of that name, with the engine proposing 「中目」 and surfacing only Nakameguro pages and coincidental mid-sentence matches; Yahoo Japan on 「築地 なか目 カツ丼 店」 — HTTP 200, returned Tsukiji's real katsudon shops (丸七, かつ平, 幸軒, 豊ちゃん, かつ誠, 和幸 聖路加ガーデン築地店, 銀座梅林) and no match; Yahoo Japan's local module for かつ丼・とんかつ around 中央区築地 — HTTP 200, eleven shops within walking distance, no match; the Tsukiji outer-market association's own directory, all six food categories fetched in full (105 shops) — HTTP 200, no match. One search leg could not be run: Tabelog's nationwide keyword-search endpoint returns HTTP 404 to scripted requests under every URL form, cookie jar and referer tried, so Tabelog was only reachable through Yahoo Japan's index and through direct shop URLs. That gap is stated rather than counted as a negative. Coordinates unchanged, loc_precise false."
+ },
+ {
+  "id": "tokyo3__94",
+  "name": "つきじ海賓",
+  "status": "mislocated",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "Not a Tsukiji restaurant — つきじ海賓 is a delivery/takeaway sushi chain (宅配寿司) with fifty branches, none of them in Chūō-ku. Nothing to eat at this pin.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified for this pin. The nearest つきじ海賓 branch to Tsukiji is 荒川東尾久店 at 東京都荒川区東尾久1-6-4, roughly 8 km north; the chain has five Tokyo branches in all, plus stores across Kanagawa, Saitama and Shizuoka.",
+  "website": "https://www.tsukiji-kaihin.com/",
+  "menu_url": "https://www.tsukiji-kaihin.com/",
+  "hours_raw": "店舗により 11:00～20:45 または 11:00～21:30（宅配・持ち帰り）",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed against this record, because there is no shop at this location. As a general matter the chain is a nigiri-and-maki delivery operation and the site does publish a カロリー・アレルギー情報 page, which is more than most — but nothing was verified here, and no gluten-free claim was found. The light record's 'ask' is left in place rather than upgraded.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed against this record. The chain's menu is nigiri, maki, unagi, tempura and kamameshi sets; no vegan provision was found, and in any case no branch exists at this address.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by サンライズ・サービス (Sunrise Service)"
+   ],
+   "origin": "Not Tsukiji — the name is branding, not an address",
+   "background": "Tsukiji Kaihin is a delivery-and-takeaway sushi chain, one of several brands under Sunrise Service alongside 釜福, おすし日和, 夢膳, 春夏秋冬, 維新 and 三崎市場. Its own store-locator data lists fifty branches: the bulk of them in Kanagawa — Atsugi, Isehara, Odawara, Ōfuna, Kawasaki, Rokkakubashi, Katase, Tsurugamine — with others in Saitama, Shizuoka and five in Tokyo. Not one is in Chūō-ku, and none is anywhere near Tsukiji. The five Tokyo shops are 荒川東尾久店 (荒川区東尾久1-6-4), 大泉学園店 (練馬区東大泉4-12-4), 葛飾お花茶屋店 (葛飾区お花茶屋3-26-13), 成瀬店 (町田市成瀬1-2-6) and 西新井店 (足立区西新井本町2-5-5). These are order-and-deliver kitchens rather than restaurants — the site's front door is a postcode box asking where to deliver to, not a table booking — so even the real branches are not places a traveller sits down in. The 「つきじ」 in the name is the same market-invoking branding that dozens of Japanese sushi chains use; it does not indicate a Tsukiji shop or a Tsukiji supply line that the company documents.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "The chain's own store finder is a JavaScript app, so its underlying data file (json_shop.php, referenced from the shop page bundle) was fetched directly: it returns fifty branches with addresses, phone numbers and hours, of which exactly five are in Tokyo and none is in Chūō-ku or contains 築地 in its address. That is a definitive negative from the company's own data rather than an inference from a failed search. Yahoo Japan searches on つきじ海賓 return only Kanagawa, Saitama and Tokyo-suburb branches on Tabelog, Hot Pepper, Uber Eats, Demae-can and Yahoo Maps.",
+   "confidence": "high",
+   "sources": [
+    "https://www.tsukiji-kaihin.com/shop/",
+    "https://www.tsukiji-kaihin.com/json_shop.php"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "There is nothing here to walk into. つきじ海賓 is a delivery brand whose nearest outlet to this pin is about 8 km away in Arakawa, and even that is a kitchen taking phone and app orders rather than a room with seats. Recommend the record be dropped from the Tsukiji listings rather than re-pinned: a delivery chain with no Chūō-ku presence is not useful to someone standing in the outer market."
+  },
+  "sources": [
+   "https://www.tsukiji-kaihin.com/shop/",
+   "https://www.tsukiji-kaihin.com/json_shop.php"
+  ],
+  "enrich_note": "MISLOCATED RECORD — the business exists but not here, and not as a restaurant. 「つきじ海賓」 is a 宅配寿司 (delivery sushi) chain run by サンライズ・サービス, and its own store data — fetched directly from json_shop.php, the file its JavaScript store-finder reads — lists fifty branches, of which five are in Tokyo (Arakawa, Nerima, Katsushika, Adachi, Machida) and none is in Chūō-ku or has 築地 in its address. The nearest to this pin is 荒川東尾久店, about 8 km north. The 「つきじ」 is brand naming, not a location. Separately, the Tsukiji outer-market association's own eating-and-drinking directory was scraped in full (105 shops across 寿司 / 海鮮丼 / お食事 / 喫茶・軽食・居酒屋 / 玉子焼 / 魚河岸飲食) and contains no 海賓. Coordinates left unchanged and loc_precise false; the record should be deleted rather than re-pinned."
+ },
+ {
+  "id": "tokyo3__95",
+  "name": "竹若",
+  "status": "closed_permanently",
+  "closed_since": "March 2021 — 株式会社竹若 closed all its restaurants by then; the company was put into bankruptcy by the Tokyo District Court on 1 September 2021 and dissolved on 10 July 2024",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "medium",
+  "cuisine": "CLOSED — Takewaka ran ikesu kaiseki and Edomae sushi in Tsukiji (live-tank seafood, sushi counters, a 106-seat banquet floor), not the ラーメン the light record recorded. Both Tsukiji rooms are shut.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Formerly Tsukiji 1-chōme and Tsukiji 4-chōme, 3 min from Tsukiji station (Tokyo Metro Hibiya line) — both premises now closed.",
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessable — the business is closed. For what it is worth, neither Tsukiji room published any allergen information while trading, and both were soy-and-dashi Japanese kitchens (sushi, tempura-inclusive kaiseki, live-tank fish), so nothing here was ever a gluten-free prospect.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessable — the business is closed. Both rooms were seafood houses built around live-tank fish and Edomae sushi; no vegan provision was published.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "株式会社竹若 (Takewaka Co., Ltd.), established 17 February 1988 — dissolved 10 July 2024"
+   ],
+   "origin": "Tsukiji, Chūō-ku",
+   "background": "Takewaka was a Tokyo restaurant company founded on 17 February 1988 that ran kaiseki rooms, sushi counters and bakeries under the 築地竹若 name — the flagship being いけす懐石 築地竹若, live-tank kaiseki. In Tsukiji itself it had two addresses: 鮨 竹若 本館 at 中央区築地1-13-11 高橋ビル1F, a 24-seat sushi counter opened on 8 August 2001 and open weekdays only, and さかな竹若 築地本店 at 中央区築地4-7-5 築地KYビル B1F, a 106-seat basement with private rooms for parties up to thirty. The company went debt-insolvent and was taken over by Asakuma in February 2020; the pandemic finished it. Every branch was closed by March 2021, illegal multi-lease arrangements by the former management came to light that April, the parent resolved on 14 July 2021 to file for bankruptcy, and the Tokyo District Court opened bankruptcy proceedings on 1 September 2021 against debts of ¥9.97 billion. The legal entity was dissolved on 10 July 2024. Tabelog now carries both Tsukiji listings under a 【閉店】 banner, along with 鮨 竹若 別館, 築地竹若 池袋店 and たけわか 築地駅前店. The brand name has not vanished entirely — 築地 竹若 counters still trade in station retail at Tokyo Station Gransta, Ecute Shinagawa and Tobu Funabashi under separate operation, and a September 2021 notice from a separately-run group stressed that it was 完全に別経営 from the bankrupt company — but there is no 竹若 restaurant left in Tsukiji.",
+   "philosophy": "",
+   "specialty": "Formerly いけす懐石 (live-tank kaiseki) and Edomae sushi.",
+   "anecdotes": [
+    {
+     "text": "Japanese Wikipedia records the company as founded 17 February 1988, absorbed by Asakuma on 29 February 2020, with 「2021年3月をもって全店舗が閉店した」 — every branch closed by March 2021 — and bankruptcy proceedings opened by the Tokyo District Court on 1 September 2021 over ¥9.97 billion of debt.",
+     "source": "https://ja.wikipedia.org/wiki/%E7%AB%B9%E8%8B%A5_(%E9%A3%B2%E9%A3%9F%E6%A5%AD)"
+    },
+    {
+     "text": "鮨 竹若 本館 at 築地1-13-11 opened on 8 August 2001, seated 24 across a 16-seat counter and two tables, ran 11:15–14:00 and 17:00–22:00 on weekdays only, and is now marked 【閉店】.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13046852/"
+    },
+    {
+     "text": "さかな竹若 築地本店 at 築地4-7-5, a 106-seat basement with private rooms taking parties of thirty and more and a 10% service charge, is likewise marked 【閉店】.",
+     "source": "https://tabelog.com/tokyo/A1313/A131301/13004980/"
+    }
+   ],
+   "japanese_sources_summary": "Japanese Wikipedia's article on 竹若 (飲食業) gives the corporate timeline — 1988 founding, 2020 acquisition by Asakuma, all branches closed by March 2021, bankruptcy opened 1 September 2021, dissolution 10 July 2024. Both Tsukiji Tabelog listings were opened directly and both display 「このお店は現在閉店しております」 along with their former addresses, seat counts, hours and opening dates. A Livedoor News item of 1 September 2021 reports the bankruptcy of the operator of 「いけす懐石 築地竹若」.",
+   "confidence": "high",
+   "sources": [
+    "https://ja.wikipedia.org/wiki/%E7%AB%B9%E8%8B%A5_(%E9%A3%B2%E9%A3%9F%E6%A5%AD)",
+    "https://tabelog.com/tokyo/A1313/A131301/13046852/",
+    "https://tabelog.com/tokyo/A1313/A131301/13004980/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Closed, so there is no door to describe. If someone is hunting the name, the surviving 築地 竹若 counters are takeaway sushi and bentō in station retail — Tokyo Station Gransta, Ecute Shinagawa, Tobu Funabashi — run separately from the company that failed. Nothing called 竹若 remains in Tsukiji."
+  },
+  "sources": [
+   "https://ja.wikipedia.org/wiki/%E7%AB%B9%E8%8B%A5_(%E9%A3%B2%E9%A3%9F%E6%A5%AD)",
+   "https://tabelog.com/tokyo/A1313/A131301/13046852/",
+   "https://tabelog.com/tokyo/A1313/A131301/13004980/"
+  ],
+  "enrich_note": "PERMANENTLY CLOSED. 「竹若」 was a real Tsukiji name but the business behind it is gone. Both Tsukiji premises — 鮨 竹若 本館 (中央区築地1-13-11 高橋ビル1F, opened 2001-08-08) and さかな竹若 築地本店 (中央区築地4-7-5 築地KYビル B1F) — carry Tabelog's 【閉店】 banner, as do 鮨 竹若 別館, 築地竹若 池袋店 and たけわか 築地駅前店. Japanese Wikipedia's corporate article confirms why: 株式会社竹若 was taken over by Asakuma in February 2020, closed every branch by March 2021, and had bankruptcy proceedings opened against it by the Tokyo District Court on 1 September 2021 over ¥9.97 billion of debt, with dissolution on 10 July 2024. The light record's cuisine label ラーメン is also wrong — Takewaka was ikesu kaiseki and Edomae sushi. Coordinates left at the original approximate pin and loc_precise set false, because two different former addresses carry the name and pinning one of them would imply a shop that is no longer there. Note for the merge: 築地 竹若 branded counters do still trade at Tokyo Station Gransta and Ecute Shinagawa under separate operation, so a future sweep may surface the name again legitimately — just not in Tsukiji."
+ },
+ {
+  "id": "tokyo3__97",
+  "name": "築地寿司清 築地本店",
+  "status": "confirmed",
+  "lat": 35.664791,
+  "lng": 139.770477,
+  "loc_precise": true,
+  "address_ja": "〒104-0045 東京都中央区築地4-13-9",
+  "enrich_confidence": "high",
+  "cuisine": "Edomae sushi counter in the Tsukiji outer market, open since 1889 — nigiri à la carte at ¥220–660 a piece, or sets at ¥1,850 (和) / ¥3,500 (匠) / ¥4,500 (おまかせ) / ¥6,000 (おまかせ極); the lunch 大名ちらし is ¥2,500. Reckon ¥2,500 at lunch, ¥4,000 at night.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Tsukiji 4-chōme, inside the outer market — 5 min from Tsukiji (Tokyo Metro Hibiya line), 3 min from Tsukijishijō (Toei Ōedo line)",
+  "website": "http://www.tsukijisushisay.co.jp/",
+  "menu_url": "http://www.tsukijisushisay.co.jp/store/honten.html",
+  "hours_raw": "【平日】10:00～14:30（L.O.14:00）／17:00～20:30（L.O.20:00・最終入店19:30）【土日祝】10:00～20:30（L.O.20:00・最終入店19:30）　定休日：水曜日",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "No gluten-free claim and no allergen page anywhere on the company site. This is a straight Edomae counter: the nikiri brushed on the nigiri is ordinary wheat shōyu, the anago is finished with a soy-mirin tsume, and the tamagoyaki that goes on the counter in this market is made with soy sauce as a matter of course (the neighbouring specialist 大定, two doors along at 4-13-11, prints 「原材料の一部に小麦、大豆を含む」 on its own egg blocks). Nothing published shows a tamari line or any wheat-free handling. A celiac would be relying entirely on an unrehearsed conversation with the itamae.",
+  "vegan_status": "no",
+  "vegan_detail": "Nothing on the published menu is vegan. Nigiri, sashimi platters, shellfish, house shiokara, grilled squid legs, anago shirayaki, tuna-and-negi skewers — the only non-animal items are the drinks. No vegetable course exists.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by 築地寿司清株式会社 (TSUKIJISUSHISAY CO., LTD.)"
+   ],
+   "origin": "Tsukiji, Chūō-ku — founded here in 明治22年 (1889)",
+   "background": "Tsukiji Sushisei is one of the market's genuine old houses: the company's own site dates the founding to 明治22年 (1889) and describes 130-odd years of Edomae technique, now buying from Toyosu since the inner market moved. From that one counter it has become a department-store sushi group of roughly thirty branches — Ginza, Hibiya Chanter, Tokyo Station Gransta, Isetan Shinjuku, Mitsukoshi Nihonbashi, and on to Kyoto, Osaka, Nagoya, Niigata and Hakata — but the 築地本店 at 4-13-9 remains the flagship, with a 16-seat counter downstairs, a 10-seat counter and 8 table seats upstairs. The house style is deliberately unintimidating for a shop of its age: pieces are individually priced from ¥220, the room is entirely non-smoking, and cards, IC cards and phone payment are all taken. No individual chef is named publicly; the company presents the kitchen collectively as 板前の確かな技.",
+   "philosophy": "「本物の江戸前寿司」をより多くの方に気軽に — real Edomae sushi at a price an ordinary person can walk in and pay.",
+   "specialty": "おまかせ-極- ¥6,000 (counter only); the ¥2,500 大名ちらし at lunch; anago shirayaki ¥1,800; house-made shiokara ¥600.",
+   "anecdotes": [
+    {
+     "text": "The shop lists its own founding as 明治22年 (1889) and now sources from Toyosu rather than the old Tsukiji inner market — the site's phrasing is 「豊洲市場の厳選した素材で、130余年の歴史で培ってきた『本物の江戸前寿司』」.",
+     "source": "http://www.tsukijisushisay.co.jp/"
+    },
+    {
+     "text": "There are two Sushisei counters a few metres apart in the market — 築地本店 and 築地新館 — and the company's news page has had to tell customers when one closes for building work and the other stays open.",
+     "source": "http://www.tsukijisushisay.co.jp/"
+    },
+    {
+     "text": "It is one of the eateries listed by the Tsukiji outer-market association itself in the 寿司 category of its official shop directory.",
+     "source": "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/"
+    }
+   ],
+   "japanese_sources_summary": "The company site's 築地本店 page carries the full priced menu, the address 〒104-0045 東京都中央区築地4-13-9, phone 03-3541-7720, the weekday/weekend hours, the Wednesday closure, the seat counts and the payment methods, and was read directly. The outer-market association's own 寿司 category listing includes 築地寿司清 本店 and confirms it as a market member. Tabelog's listing, seen through Yahoo Japan's aggregated result rather than opened directly, agrees on the address, the phone number and a 10:00 opening.",
+   "confidence": "high",
+   "sources": [
+    "http://www.tsukijisushisay.co.jp/",
+    "http://www.tsukijisushisay.co.jp/store/honten.html",
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A sushi counter, so no flour or noodle line — but no wheat-free protocol is claimed either, and the same hands and cloths work every piece.",
+     "source": "http://www.tsukijisushisay.co.jp/store/honten.html"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Standard wheat shōyu assumed throughout; no gluten-free tamari is named anywhere on the site, and the anago is served with a soy-and-mirin tsume.",
+     "source": "http://www.tsukijisushisay.co.jp/store/honten.html"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Whole menu is fish and shellfish; there is no vegetable set and no dashi disclosure.",
+     "source": "http://www.tsukijisushisay.co.jp/store/honten.html"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Per-piece pricing from ¥220 means you can order round the things you cannot eat rather than commit to a fixed course; the counter is entirely non-smoking and takes cards.",
+     "source": "http://www.tsukijisushisay.co.jp/store/honten.html"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "One of the least intimidating old sushi counters in Tokyo. It opens at 10:00, so you can eat sushi at a civilised hour without the pre-dawn market queue; walk-ins are the norm and reservations are only taken from 17:00. Prices are printed per piece, all seats are non-smoking, and credit cards, IC cards and phone payment are accepted, which is not a given in this market. Closed Wednesdays — the day the market itself is shut — so check the market calendar before you go. Dietary requests would need to be made in Japanese at the counter."
+  },
+  "sources": [
+   "http://www.tsukijisushisay.co.jp/",
+   "http://www.tsukijisushisay.co.jp/store/honten.html",
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/"
+  ],
+  "enrich_note": "Confirmed. The light record's 「築地寿司清」 is the real 築地寿司清 築地本店 at 中央区築地4-13-9; name extended to the branch name. Address, hours, menu and prices read off the company's own store page (the site is HTTP-only and its TLS certificate does not match, so it must be fetched over http); the outer-market association lists the shop in its official 寿司 directory. Coordinates are the GSI Japan geocode of 築地4-13-9, about 600 m from the neighbourhood-centroid pin the light record carried."
+ },
+ {
+  "id": "tokyo3__98",
+  "name": "日本橋海鮮丼 つじ半 日本橋本店",
+  "status": "confirmed",
+  "lat": 35.680725,
+  "lng": 139.771561,
+  "loc_precise": true,
+  "address_ja": "東京都中央区日本橋3-1-15 久栄ビル1F",
+  "enrich_confidence": "high",
+  "cuisine": "One dish, four grades: a cone of sashimi built up over rice, dressed with yolk-soy at the table and finished by pouring hot sea-bream dashi over what is left to make chazuke — 梅 ¥1,350, 竹 ¥1,850, 松 ¥2,500, 特上 ¥3,900. Twelve counter seats, no bookings, and a queue most of the day.",
+  "cuisine_type": "kaisendon",
+  "neighborhood": "Nihonbashi 3-chōme — 2 min from Nihonbashi station (Ginza / Tōzai / Toei Asakusa lines, exit B3), 5 min from Tokyo station's Yaesu north exit, 6 min from Kyōbashi. This is NOT Tsukiji: it is about 1.8 km north, on the far side of Ginza.",
+  "website": "https://www.tsujihan-jp.com/",
+  "menu_url": "https://www.tsujihan-jp.com/",
+  "hours_raw": "10:00～21:30（L.O.21:00）※食べログ掲載の別表記では[月～金]11:00～21:00（L.O.20:30）　定休日：年末年始を除く不定休",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable, and the wheat is structural rather than incidental. The bowl is finished at the table with 黄身醤油 — yolk beaten into soy sauce — poured over the fish, and the closing act is hot tai dashi poured over the rice to make chazuke, which is again soy-seasoned. Wheat shōyu is therefore in the dish twice, by design, and there is no version served without it. The company publishes no allergen information at all, and this is a twelve-seat counter turning a queue over as fast as it can, with no scope to build a substitute sauce.",
+  "vegan_status": "no",
+  "vegan_detail": "There is exactly one dish and it is raw fish: tuna, salmon roe, sea urchin and crab in varying quantities depending on the grade, dressed in an egg-yolk sauce and finished with sea-bream dashi. Nothing on the menu is vegan or could be adapted.",
+  "chef_bio": {
+   "chef_name": "辻田雄大 (Yudai Tsujita) and 金子真也 (Shinya Kaneko)",
+   "roles": [
+    "co-founders",
+    "辻田雄大 — founder of the ramen house つじ田",
+    "金子真也 — founder of 日本橋天丼 金子半之助"
+   ],
+   "origin": "Nihonbashi, Chūō-ku — opened 13 September 2012",
+   "background": "Tsujihan is a collaboration between two childhood friends who had each already made a name in a single dish: Yudai Tsujita, whose ramen shop つじ田 built a following on tsukemen, and Shinya Kaneko, whose 日本橋天丼 金子半之助 does one tendon and does it to a queue. The name is a contraction of both. Their account of the origin is that they had eaten a kaiseki-style seafood bowl in their younger years that they loved, and they wanted to put it within reach of ordinary money rather than leaving it as a set-course luxury — hence one dish, four grades, and the cheapest at ¥1,350. The format is deliberately narrow: twelve counter seats in a small ground-floor unit in a Nihonbashi office building, no reservations at any branch, no cards, no e-money, no QR payment, all seats non-smoking, and a queue that regulars describe as forty to fifty minutes at lunch. The bowl comes as a mound of sashimi over rice; a small plate of sashimi arrives first, which the house style says to save for the chazuke at the end, when hot sea-bream dashi is poured over the remaining rice. From the one shop it has grown to a small group — Kagurazaka, Akasaka, Muromachi, Roppongi Midtown, Fujimi — but the Nihonbashi original is the one people queue at, with a Tabelog score of 3.59 across nearly 2,700 reviews.",
+   "philosophy": "「贅沢な海鮮丼を、手の届く値段で」 — take the expensive seafood bowl out of the kaiseki course and sell it over a counter at lunch prices.",
+   "specialty": "ぜいたく丼 in four grades — 梅 ¥1,350 (nine kinds of fish, ikura and fatty tuna), 竹 ¥1,850 (adds crab and extra ikura), 松 ¥2,500 (adds uni and crab), 特上 ¥3,900; all finished as 鯛だし茶漬け.",
+   "anecdotes": [
+    {
+     "text": "The two founders are childhood friends: Tsujita made his name in ramen with つじ田, Kaneko in tendon with 金子半之助, and Tsujihan is the seafood bowl they had loved when younger, rebuilt at a price ordinary people could pay.",
+     "source": "https://www.tsujihan-jp.com/"
+    },
+    {
+     "text": "Tabelog records the opening date as 13 September 2012 and notes the menu is only the four grades of ぜいたく丼, with the contents changing by season.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    },
+    {
+     "text": "An October 2025 reviewer queued forty to fifty minutes at lunch and noted that so many customers now come from abroad that Korean- and English-language menus are kept at the counter.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    },
+    {
+     "text": "An August 2026 visitor turned up at 10:20 expecting an 11:00 opening and found the shop had already opened at 10:00 — and a queue of ten that grew past twenty behind them.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    }
+   ],
+   "japanese_sources_summary": "The company's own site carries the founding story, the two founders' names and prior businesses, the four grades with prices current from 1 April 2025, and the statement that no branch takes reservations. Tabelog's shop page for the 日本橋本店 was opened directly and supplies the address 東京都中央区日本橋3-1-15 久栄ビル1F, the phone 03-6262-0823, the B3-exit walking directions, the 2012-09-13 opening date, 12 counter seats, 全席禁煙, カード不可・電子マネー不可・QRコード決済不可, and two differing sets of published hours — hence hours_status 'irregular'. Reviews dated August 2026 confirm normal trading. No allergen page exists on either source.",
+   "confidence": "high",
+   "sources": [
+    "https://www.tsujihan-jp.com/",
+    "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "No fryer and no noodle line, but no wheat-free handling either — and the wheat here arrives in the sauce, not as a stray crumb.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Wheat shōyu is in the dish twice by design: the 黄身醤油 poured over the sashimi, and the soy-seasoned tai dashi poured over the rice for the closing chazuke. No tamari is named anywhere.",
+     "source": "https://www.tsujihan-jp.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "A single-dish raw-fish counter with egg yolk in the sauce and bonito-and-sea-bream dashi at the finish. There is no non-animal option.",
+     "source": "https://www.tsujihan-jp.com/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Korean- and English-language menus are kept at the counter for the large share of overseas customers, so at least the ordering is not a barrier.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "As easy as a queue can be. English and Korean menus are on the counter, the choice is only which of four grades you want, and children are welcome. Plan around the two obstacles: the wait, which reviewers put at forty to fifty minutes at peak lunch — go mid-afternoon or near the 10:00 opening — and the payment, which is cash only at the counter, no cards, no IC, no QR. Twelve seats, no reservations at any branch, all non-smoking. One piece of local etiquette worth knowing: the small plate of sashimi served at the start is meant to be held back and eaten with the sea-bream chazuke at the end, not finished first."
+  },
+  "sources": [
+   "https://www.tsujihan-jp.com/",
+   "https://tabelog.com/tokyo/A1302/A130202/13146590/"
+  ],
+  "enrich_note": "Confirmed, but neither the location nor the cuisine in the light record was right. 「つじ半」 is 日本橋海鮮丼 つじ半 日本橋本店 at 中央区日本橋3-1-15 久栄ビル1F — a kaisen-don counter in Nihonbashi, about 1.8 km north of the Tsukiji pin the sweep gave it, not in 中央区築地 at all. It is also not a 玉子焼き/卵焼き専門 shop; that label appears to have slipped a row in the sweep, since the record below it carries 天ぷら against the actual tamagoyaki specialist 大定. Coordinates moved to the GSI Japan geocode of 日本橋3-1-15. Two different sets of opening hours are published (the company site and Tabelog's own header give 10:00–21:30, while Tabelog's free-text field gives weekdays 11:00–21:00), so hours_status is 'irregular' and both are recorded verbatim."
+ },
+ {
+  "id": "tokyo3__99",
+  "name": "大定 場外本店",
+  "status": "confirmed",
+  "lat": 35.664894,
+  "lng": 139.770248,
+  "loc_precise": true,
+  "address_ja": "〒104-0045 東京都中央区築地4-13-11",
+  "enrich_confidence": "high",
+  "cuisine": "Tamagoyaki specialist trading since 1924 — hand-rolled Edo-style egg blocks sold whole over the counter, from ¥680 for the standard つきじ野 (about 560 g) to ¥1,400 for the darker, coarser 江戸前 (about 650 g); takeaway only, no seats.",
+  "cuisine_type": "tamagoyaki",
+  "neighborhood": "Tsukiji 4-chōme, in the outer market — about 4 min from Tsukiji (Tokyo Metro Hibiya line, exit 1) and 4 min from Tsukijishijō (Toei Ōedo line)",
+  "hours_raw": "6:00～15:00（公式サイトの営業時間変更告知）。他掲載では 4:00～14:30（土曜は15:00まで）。日曜・祝日・市場休市日は休業。",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Ruled out on the shop's own labelling, not on inference. Daisada printed a full ingredient list for each product, and every one ends 「原材料の一部に小麦、大豆を含む」 — contains wheat and soy. The standard つきじ野 is 「鶏卵、上白糖、薄口醤油、塩、クエン酸、調味料（アミノ酸等）」 and the 江戸前 is 「鶏卵、上白糖、本膳醤油、塩、調味料（アミノ酸等）」, the shop naming ヒゲタの本膳醤油 as the soy it uses. Wheat soy sauce is in the batter itself, so there is no version of this that a celiac can eat.",
+  "vegan_status": "no",
+  "vegan_detail": "The product is egg. 鶏卵 is the first ingredient of every item; the shop specifies 地養卵 from Chiba. Nothing here is vegan or could be made so.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "有限会社 大定 (Daisada Ltd.), family firm"
+   ],
+   "origin": "Tsukiji, Chūō-ku — trading in the Tokyo Central Wholesale Market since 大正13年 (1924)",
+   "background": "Daisada is one of the handful of tamagoyaki houses that made Tsukiji's reputation for the thing, and it is a wholesaler first: its own copy says it has traded in the 東京築地中央卸売市場 for close to a century and supplies sushi restaurants, ryōriya and supermarkets across the country, with the retail counter at 築地4-13-11 as the shop-front of that business. Everything is 手焼き — rolled one block at a time by hand — and the house is specific about materials in a way most market shops are not: 地養卵 eggs, ヒゲタの本膳醤油, sea salt from Akō, and Hokkaidō alkaline water. The two anchors of the range are 「つきじ野」, the pale, gently sweet block aimed at high-end sushi counters, and 「江戸前」, a revival of the recipe the firm made in its founding years for the Imperial Household Agency and high-class caterers — the egg is whisked less, so white and yolk stay in visible contrast and the scorch marks and layers stand out. There is a seasonal line on top of that (涼梅 and 枝豆 in summer, 松茸焼 and 紅葉 in autumn, 伊達巻 in limited numbers for New Year) and an eight-piece sampler box. A second counter trades inside Toyosu market's 魚がし横丁. No individual chef is named; it is run as 有限会社 大定.",
+   "philosophy": "「信頼の味」 — a wholesaler's reliability, one block at a time, hand-rolled.",
+   "specialty": "つきじ野 ¥680 (the standard, for sushi counters); 江戸前 ¥1,400 (the founding-era recipe); 江戸だし焼; 伊達巻 at New Year; seasonal 涼梅, 枝豆, 松茸焼, 紅葉.",
+   "anecdotes": [
+    {
+     "text": "The 江戸前 block is sold as a revival of the recipe Daisada made in its earliest years, when it was a designated supplier to the 宮内庁 and to high-class caterers — whisked less than a modern tamagoyaki so the white and yolk stay in contrast.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000001"
+    },
+    {
+     "text": "The shop's own customer quotes are market people: 「甘いの苦手なんだよね。こういう玉子焼が関東にあってうれしい。」 from a man who works for a seafood company.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000001"
+    },
+    {
+     "text": "Daisada's website announced a change of opening hours at the Tsukiji main shop to 6:00–15:00; older listings still print the market-trader hours of 4:00 onward.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/"
+    }
+   ],
+   "japanese_sources_summary": "daisada.jp no longer resolves to the shop — the domain now serves a Plesk default page — so the company's own text was read from the Internet Archive's 2019-12-16 capture, which carries the founding year 大正13年, the 手焼き method, the named ingredients and the hours change, and from the archived product pages, which carry the full 原材料 lists including the wheat declaration. Chūō-ku's official tourism guide and several Tokyo tamagoyaki round-ups, seen via Yahoo Japan search results rather than opened directly, independently give the address 東京都中央区築地4-13-11 and the phone 03-3541-6964.",
+   "confidence": "high",
+   "sources": [
+    "http://web.archive.org/web/20191216115815/http://daisada.jp/",
+    "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000009",
+    "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000001"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Moot — the wheat is an ingredient, not a contaminant. Every product line declares 「原材料の一部に小麦、大豆を含む」.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000009"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Named explicitly: 薄口醤油 in つきじ野, and ヒゲタの本膳醤油 in 江戸前. Both are wheat-brewed shōyu, and both go into the egg mixture before it is rolled.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000001"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The product is egg. Not applicable.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000009"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "A per-product 原材料 list was published for every item, which is more disclosure than most market stalls give — the wheat declaration is unambiguous rather than something you have to ask about.",
+     "source": "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000009"
+    }
+   ],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "A takeaway counter, not a restaurant: you point, you pay, you carry a block of tamagoyaki away — no Japanese needed and no seat to negotiate. The catch is the clock. It is a market shop that opens before dawn and shuts in the early afternoon, and it closes on Sundays, public holidays and every 市場休市日, so check the Tsukiji market calendar rather than turning up on a whim. Assume cash. Blocks keep five days refrigerated, which makes this a good thing to buy for a hotel-room breakfast; there is a second Daisada counter inside Toyosu market's Uogashi Yokochō if you are over there instead."
+  },
+  "sources": [
+   "http://web.archive.org/web/20191216115815/http://daisada.jp/",
+   "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000009",
+   "http://web.archive.org/web/20191216115815/http://daisada.jp/shop/item.php?i=000001"
+  ],
+  "enrich_note": "Confirmed, with the light record's cuisine label corrected. 「大定」 is real and is at 中央区築地4-13-11, but it is a 玉子焼 (tamagoyaki) specialist, not the 天ぷら the sweep recorded — the labels in this shard look shifted by one row, since the record above it carries 玉子焼き専門 against a kaisen-don shop. Name extended to 大定 場外本店 to distinguish it from the firm's Toyosu counter. The shop's own domain daisada.jp has lapsed and now serves a Plesk default page, so `website` is deliberately left off and the company's own text — founding year, method, hours change and the per-product 原材料 lists — was read from the Internet Archive's 2019-12-16 capture instead. Coordinates are the GSI Japan geocode of 築地4-13-11."
+ },
+ {
+  "id": "tokyo3__100",
+  "name": "岸田屋",
+  "status": "confirmed",
+  "lat": 35.662361,
+  "lng": 139.779846,
+  "loc_precise": true,
+  "address_ja": "東京都中央区月島3-15-12",
+  "enrich_confidence": "high",
+  "cuisine": "The Tsukishima drinking house people queue for — a 19-seat コの字 counter built around one pot of 牛にこみ, beef offal simmered soft under a heap of raw negi (¥950 as of June 2026), with nikudōfu, potato salad, nuta and simmered anago alongside; about ¥2,000–4,000 a head, cash only, no reservations.",
+  "cuisine_type": "izakaya",
+  "neighborhood": "Tsukishima 3-chōme — 4 min from Tsukishima station (Toei Ōedo line), 7 min from Tsukishima (Tokyo Metro Yūrakuchō line), 6 min from Kachidoki. This is NOT Tsukiji: it is across the Sumida on Tsukishima island, about 1.3 km east of the pin the light record carried.",
+  "hours_raw": "火・水・木・金・土 16:00～21:00　定休日：月曜日、日曜日、祝日",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "No gluten-free provision and none plausible here. The house dish is 煮込み simmered for hours in miso and soy — wheat shōyu by default — and the nikudōfu, the simmered anago and the nuta dressing come off the same seasoning shelf. There is no website, no allergen sheet and no English menu, and the room is nineteen counter seats working a five-hour service with a queue outside; this is not a kitchen that can stop and build a wheat-free plate. Nothing published claims a tamari or any wheat-free handling.",
+  "vegan_status": "no",
+  "vegan_detail": "A beef-offal house. The signature stew, the nikudōfu, the anago and the shirasu are all animal; the potato salad carries mayonnaise and the nuta is a vinegared-miso dressing normally built over fish or shellfish. Tabelog lists no vegetable course, and there is nothing on the board a vegan could eat.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "family-run taishū-sakaba; no chef or proprietor named publicly"
+   ],
+   "origin": "Tsukishima, Chūō-ku",
+   "background": "Kishidaya is the reason people who are not chasing monjayaki still get off at Tsukishima. Tabelog's shop record gives an opening date of 1900 and notes that it started life as an お汁粉 shop — a sweet red-bean soup counter — and only became the izakaya it is now in 1966. What it became is one of the most admired drinking houses in Tokyo: selected for Tabelog's 居酒屋 百名店 EAST in 2021, 2022, 2024 and 2025, scoring 3.71 across more than 1,400 reviews. The room is nineteen seats around a コの字 counter, no tables, no private space, no bookings taken, all of it non-smoking, and cash only — no cards, no e-money, no QR payment. The door opens at 16:00 and reviewers describe timing their arrival to make the first sitting; it closes Sundays, Mondays and public holidays. The board is short and the star is 牛にこみ, offal simmered until it gives way, buried under raw spring onion — the running line among regulars is that the negi is not a garnish but a requirement. No individual proprietor is put forward publicly: the identity of the place is the counter and the pot.",
+   "philosophy": "Taishū-sakaba in the old sense — one famous dish, a short board, cash in hand, and no concessions to convenience.",
+   "specialty": "牛にこみ ¥950 (June 2026) — the beef-offal stew under a mound of negi; also 肉豆腐, ぬた, 穴子煮付, ポテトサラダ.",
+   "anecdotes": [
+    {
+     "text": "Tabelog's shop data records the business as opening in 1900 as an お汁粉 (sweet bean soup) shop and converting to the present izakaya in 1966 — 「1900年にお汁粉の店として創業、1966年に現在の居酒屋に」.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    },
+    {
+     "text": "Selected for Tabelog's 居酒屋 百名店 EAST in 2021, 2022, 2024 and 2025 — a top-hundred izakaya in eastern Japan four times over.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    },
+    {
+     "text": "Because it takes no reservations, getting in means queueing: a July 2026 reviewer writes that it is not an enormous line, but you have to aim early if you want the first sitting.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    },
+    {
+     "text": "A June 2026 visitor describes ducking under a noren that visibly shows its age into a loud コの字 counter, ordering a cold Kirin bottle and then, inevitably, the nikomi — the offal astonishingly soft under a pile of negi.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    }
+   ],
+   "japanese_sources_summary": "Kishidaya has no website. Its Tabelog shop page was opened directly and supplies the address 東京都中央区月島3-15-12, phone 03-3531-1974, 予約不可, the Tue–Sat 16:00–21:00 hours with Monday/Sunday/holiday closure, the ¥3,000–3,999 headline budget against a ¥2,000–2,999 figure from actual reviewer spend, 19 counter-only seats, 全席禁煙, カード不可・電子マネー不可・QRコード決済不可, the four 百名店 selections, the 1900 opening as an お汁粉 shop and 1966 conversion, and the current 牛にこみ price of ¥950. Reviews dated June and July 2026 confirm it is trading normally.",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "No allergen information exists in any form, and there is no room to ask: nineteen seats, one pot, a five-hour service and a queue on the pavement.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Standard wheat shōyu and miso assumed throughout — the signature dish is a long-simmered miso-and-soy nikomi and the anago, nikudōfu and nuta are seasoned from the same shelf. No tamari is claimed anywhere.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Beef offal is the house speciality and the stockpot is the centre of the kitchen; Tabelog lists no vegetable-only preparation on the board.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "All nineteen seats are non-smoking, which is not typical of a sakaba of this vintage.",
+     "source": "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Japanese needed",
+   "note": "The hard end of Tokyo drinking, and gloriously so. No reservations, no website, no English menu, nineteen seats on one コの字 counter, and a queue before the 16:00 opening — aim for the first sitting or expect to wait. Payment is cash only: no cards, no IC, no QR. The board is handwritten in Japanese and service moves fast, so ordering is expected to be quick and in Japanese, and a dietary negotiation would not land. Closed Sundays, Mondays and public holidays. Worth the trouble if you want the real article, but if you are travelling with a restriction this is not the place to test it — and note it is on Tsukishima, one Ōedo-line stop past the market district, not in Tsukiji at all."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+  ],
+  "enrich_note": "Confirmed, but the light record put it in the wrong place and gave it the wrong food. 「岸田屋」 is real: a taishū-sakaba at 中央区月島3-15-12, 4 min from Tsukishima station on the Ōedo line, trading Tue–Sat 16:00–21:00 and reviewed as recently as July 2026. It is not in Tsukiji — it is about 1.3 km east across the Sumida — and it is not 海産物/新鮮魚介 but a beef-offal stew house. Its Tabelog page dates the business to 1900 (as an お汁粉 shop, izakaya from 1966), which contradicts the 明治10年/1877 founding that some review write-ups repeat; the shop record is used here. Coordinates moved to the GSI Japan geocode of 月島3-15-12. Nothing called 岸田屋 appears anywhere in the Tsukiji outer-market association's own eating-and-drinking directory, which was scraped in full (寿司 / 海鮮丼 / お食事 / 喫茶・軽食・居酒屋 / 玉子焼 / 魚河岸飲食 — 105 shops), so there is no second Tsukiji business of that name that this could be instead."
+ },
+ {
+  "id": "tokyo3__101",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant called 「文花」 could be found in Tsukiji or anywhere in Chūō-ku.",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 中央区築地, near Tsukiji station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. GENERIC PHRASE: 文花 is not a restaurant name at all but a Tokyo place name — 墨田区文花, a residential chōme in Sumida-ku about 5 km north-east of Tsukiji, near Kinshichō and Oshiage. Every search on the word behaves accordingly: Yahoo Japan on 「文花 築地 中央区 和食 店 食べログ」 returns Tabelog's generic 築地 和食 and 中央区築地 和食 category pages with the note 未指定：文花 — that is, Tabelog itself reporting that the term was not matched — while a wider search on 「\"文花\" 店 寿司 OR 割烹 OR 和食 東京都」 returns only businesses located in Sumida-ku's Bunka district (すし上等 文花店, 銀のさら 文花店, 米山裕 at 墨田区文花2-3-14) and NAVITIME's list of eateries around 文花三丁目. In other words the string names a neighbourhood in a different ward, and the sweep appears to have recorded it as if it were a shop. Nothing called 文花 appears in the Tsukiji outer-market association's own eating-and-drinking directory either, which was scraped in full across six food categories (105 shops). No 和食/江戸前料理 business of this name exists in Tsukiji to enrich.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Search legs actually run, and what each returned. (1) Yahoo Japan, 「文花 築地 中央区 和食 店 食べログ」 — HTTP 200, no business matched; Tabelog's own category results carried 未指定：文花. (2) Yahoo Japan, 「\"文花\" 店 寿司 OR 割烹 OR 和食 東京都」 — HTTP 200, all hits are businesses sited in 墨田区文花, none named 文花. (3) Tsukiji outer-market association official directory, six food categories fetched in full (105 shops) — HTTP 200, no match. Not attempted successfully: Tabelog's nationwide keyword-search endpoint returns HTTP 404 to scripted requests under every URL form tried, so Tabelog coverage here is second-hand through Yahoo Japan's index of it.",
+   "confidence": "low",
+   "sources": [
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify any business, so nothing can honestly be said about the door. Recommend the record be deleted rather than re-sourced — the name appears to be a district in Sumida-ku rather than a shop."
+  },
+  "sources": [
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/"
+  ],
+  "enrich_note": "NOT FOUND. GENERIC PHRASE: 「文花」 is a Tokyo place name — 墨田区文花, a residential district in Sumida-ku about 5 km north-east — not a business name, so this record may never have named a shop at all. Searches run and results: Yahoo Japan on 「文花 築地 中央区 和食 店 食べログ」 — HTTP 200, no business matched, and the Tabelog category pages it returned carried Tabelog's own 未指定：文花 marker meaning the term went unmatched; Yahoo Japan on 「\"文花\" 店 寿司 OR 割烹 OR 和食 東京都」 — HTTP 200, every hit is a business located in Sumida-ku's Bunka district (すし上等 文花店, 銀のさら 文花店, 米山裕 at 墨田区文花2-3-14) and none is named 文花; the Tsukiji outer-market association's own directory, all six food categories fetched in full (105 shops) — HTTP 200, no match. One leg could not be run: Tabelog's nationwide keyword-search endpoint answers scripted requests with HTTP 404 under every URL form, cookie jar and referer tried, so Tabelog was reachable only through Yahoo Japan's index and direct shop URLs; that gap is stated rather than counted as a negative. Coordinates unchanged, loc_precise false."
+ },
+ {
+  "id": "tokyo3__103",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no business called 「本鮪つなぎ」 exists on the searchable Japanese web.",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 中央区築地, near Tsukiji station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and the negative here is unusually clean: a quoted-phrase search on Yahoo Japan for 「\"本鮪つなぎ\"」 returns the engine's explicit statement that no page matching the phrase in that order exists — 「順番も含め完全に一致するウェブページは見つかりませんでした」 — and then falls back to unrelated pages about bluefin tuna. GENERIC PHRASE: the string reads as two food words rather than a shop name; 本鮪 is simply the fish (bluefin) and つなぎ is a binding agent or a link, so this may be a description that was recorded as if it were a business. Real Tsukiji bluefin specialists do exist and none of them is called this: 築地 うに虎 (本まぐろ専門店, 中央区築地4-9-7 中富水産第一ビル1F), 築地 傳 本店 (run by the 70-year-old Tsukiji tuna wholesaler 山喜之, now buying at Toyosu), 築地 いなせや (famous for まぐろのすき焼き), つきじ鈴富 (the Toyosu tuna nakaoroshi 鈴富's own sushi counter), and 二代目鮪 囮 in Meguro. The Tsukiji outer-market association's own directory, scraped in full across six food categories (105 shops, including the まぐろ category), contains nothing resembling the name. Rather than attach the record to one of the real tuna houses on a guess, the original approximate coordinates have been left in place.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Search legs actually run, and what each returned. (1) Yahoo Japan, exact phrase 「\"本鮪つなぎ\"」 — HTTP 200, engine states outright that no page matches the phrase in that order. (2) Yahoo Japan, 「本鮪つなぎ 東京 店」 — HTTP 200, returned real but differently-named tuna specialists (築地 うに虎, 二代目鮪 囮, つきじ鈴富) and a Kyokuyo farmed-bluefin brand PDF, no match. (3) Yahoo Japan, 「つなぎ 築地 まぐろ 居酒屋 食べログ」 — HTTP 200, returned 築地 傳 本店, 築地 いなせや, 築地さかな一番 and Tabelog category pages, no match. (4) Tsukiji outer-market association official directory including the まぐろ category, fetched in full (105 shops) — HTTP 200, no match. Not attempted successfully: Tabelog's nationwide keyword-search endpoint returns HTTP 404 to scripted requests under every URL form tried, so Tabelog coverage here is second-hand through Yahoo Japan's index of it.",
+   "confidence": "low",
+   "sources": [
+    "https://www.tsukiji.or.jp/shoplist/cat-a/cat-1/",
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. If the intent was a Tsukiji bluefin specialist, the real ones are 築地 うに虎 at 築地4-9-7, 築地 傳 本店 and 築地 いなせや — but none of them is called 本鮪つなぎ and none should be substituted into this record without fresh sourcing."
+  },
+  "sources": [
+   "https://www.tsukiji.or.jp/shoplist/cat-a/cat-1/",
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and results: Yahoo Japan on the exact phrase 「\"本鮪つなぎ\"」 — HTTP 200, and the engine answered explicitly that no page matches the phrase in that order (「順番も含め完全に一致するウェブページは見つかりませんでした」); Yahoo Japan on 「本鮪つなぎ 東京 店」 — HTTP 200, returned real but differently-named tuna houses (築地 うに虎 at 築地4-9-7, 二代目鮪 囮, つきじ鈴富) plus a Kyokuyo farmed-bluefin brand document, no match; Yahoo Japan on 「つなぎ 築地 まぐろ 居酒屋 食べログ」 — HTTP 200, returned 築地 傳 本店, 築地 いなせや and 築地さかな一番, no match; the Tsukiji outer-market association's own directory including its まぐろ category, fetched in full (105 shops) — HTTP 200, no match. GENERIC PHRASE: the string reads as two food words — 本鮪 is the fish, つなぎ a binder or link — rather than a business name, so this record may never have named a shop. One leg could not be run: Tabelog's nationwide keyword-search endpoint answers scripted requests with HTTP 404 under every URL form, cookie jar and referer tried, so Tabelog was reachable only through Yahoo Japan's index and direct shop URLs; that gap is stated rather than counted as a negative. Coordinates unchanged, loc_precise false."
+ },
+ {
+  "id": "tokyo3__105",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — this record does not name a business. 「月島もんじゃ界隈 - 築地近辺」 translates as 'the Tsukishima monja quarter — around Tsukiji', which is a description of an area, not a shop.",
+  "cuisine_type": "monjayaki",
+  "neighborhood": "Unverified as a business. The phrase points at 月島西仲通り商店街 — Tsukishima's 'Monja Street' — which runs from Tsukishima station (Tokyo Metro Yūrakuchō line / Toei Ōedo line) and holds several dozen monjayaki shops. That is roughly 1.5 km east of the Tsukiji pin this record carries.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessable, and worth a warning if anyone tries to rescue this record with a real shop: monjayaki is wheat batter by definition — thin flour-and-dashi batter poured onto a shared teppan, usually with Worcester-style sauce and often soy — so it is one of the least gluten-friendly dishes in Tokyo, and the griddles are shared between parties. The light record's 'ask' should not be read as encouragement.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessable. Generically, monja batter is normally mixed with bonito dashi and the standard fillings are pork, squid, prawn, cod roe and cheese; a vegan monja would have to be arranged shop by shop and no shop is named here.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "GENERIC PHRASE: this record never named a business. 「月島もんじゃ界隈 - 築地近辺」 is a descriptive phrase — 界隈 means 'the neighbourhood of', so the whole string reads 'the Tsukishima monjayaki quarter, near Tsukiji'. It is the kind of area label a discovery sweep produces when it summarises a district rather than finding a shop in it, and the English cuisine text the sweep attached ('Okonomiyaki & Monjayaki, traditional local favorite') is a category description in the same vein. There is a real thing behind the phrase: 月島西仲通り商店街, universally called もんじゃストリート, a shopping street running north from Tsukishima station lined with several dozen monjayaki houses — the best-known being 月島もんじゃ もへじ 本店, 月島もんじゃ だるま 月島本店 and こぼれや. But it is a street, not a restaurant, it is on Tsukishima island rather than in Tsukiji, and no single business can be attached to this record without inventing one. It should be deleted rather than enriched; if the app wants monja, individual Tsukishima shops should be sourced as their own records.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "No shop-level search was warranted, because the string is not a shop name. The Tsukiji outer-market association's own eating-and-drinking directory was scraped in full across six food categories (105 shops) and contains no monjayaki house at all — the dish belongs to Tsukishima, not to the Tsukiji market. Tabelog's Tsukishima izakaya ranking, reached while verifying a separate record in this shard, lists the monja street's shops (月島もんじゃ もへじ 本店, こぼれや 総本店, こぼれや 縁, だるま) as neighbours of that address, confirming the quarter exists and where it is.",
+   "confidence": "low",
+   "sources": [
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+    "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "There is no door here to describe — the record points at a shopping street, not a business. Recommend deletion. If monjayaki is wanted in the app, the shops on 月島西仲通り商店街 should be added individually, with the caveat that the dish is wheat batter cooked on a griddle shared with other diners."
+  },
+  "sources": [
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+   "https://tabelog.com/tokyo/A1313/A131302/13002239/"
+  ],
+  "enrich_note": "GENERIC PHRASE: 「月島もんじゃ界隈 - 築地近辺」 is not a garbled shop name, it is an area description — 界隈 means 'the neighbourhood of', so the string reads 'the Tsukishima monjayaki quarter, near Tsukiji', and the cuisine text the sweep attached ('Okonomiyaki & Monjayaki, traditional local favorite') is a category label rather than a shop's own description. This record therefore never named a business, which is a different failure from a shop that could not be located, and no amount of searching would resolve it. The real referent is 月島西仲通り商店街, the もんじゃストリート running from Tsukishima station, about 1.5 km east of this pin and on the far side of the Sumida from Tsukiji; the outer-market association's own directory (105 shops across six food categories, fetched in full) contains no monjayaki house at all. Recommend deletion rather than re-sourcing: individual Tsukishima monja shops should be added as their own records if the app wants the dish. Coordinates unchanged, loc_precise false."
+ },
+ {
+  "id": "tokyo3__106",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — there is no sushi shop called 福寿司 in Tsukiji. The name is common elsewhere in Tokyo; the nearest is about 2 km away.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified. The light record says 中央区築地, near Tsukiji station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified. The light record's 'no' was inferred from the word Sushi.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 福寿司 is one of the commonest sushi-shop names in Japan, so the searches return plenty — just nothing in Tsukiji. Yahoo Japan's local module, asked for 福寿司 sushi shops around 中央区築地, returns fourteen results and reports the distance of every one of them: the closest three are 4.1 km, 4.2 km and 5.0 km from Tsukiji station. Widened to the whole Tokyo area the same module returns forty-eight, the nearest of which are 福寿司 near Sumiyoshi station in Kōtō-ku (about 2.5 km north-east), 福寿司 in Kichijōji, 福寿司 at 渋谷区上原1-17-11 in Yoyogi-Uehara, and 福寿司 at 中央区八重洲1-4-4 — the last being in the same ward but by Tokyo station, some 2 km from the market. What Tsukiji does have is a differently named shop that a garbling could plausibly have come from: 築地 すし処 福音 (ふくね) at 中央区築地3-4-6 小竹ビル1F, one minute from Tsukiji station exit A3, phone 03-3544-5568, with its own site at sushi-fukune.com and weekday lunch from 11:45. Sharing only the character 福, that is a resemblance and not evidence, so it has not been substituted in — the record is recorded as not found rather than name-corrected. The Tsukiji outer-market association's own eating-and-drinking directory, scraped in full across six food categories (105 shops, of which the 寿司 category alone lists more than twenty houses), contains no 福寿司.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Search legs actually run, and what each returned. (1) Yahoo Japan, 「築地 福寿司 中央区築地 寿司 住所」 — HTTP 200; its local module listed fourteen 福寿司 shops around 中央区築地 with the nearest at 4.1 km, and the Tsukiji-proper hits were 鮨 ふくじゅ (中央区銀座5-8-17) and 築地 すし処 福音 (中央区築地3-4-6), neither of which is 福寿司. (2) Yahoo Japan, 「\"福寿司\" 築地 場外市場」 — HTTP 200, returned Tsukiji sushi shops of other names (築地すし一番 4丁目場外市場店 at 築地4-8-6, 築地玉寿司) and no 福寿司. (3) Yahoo Japan, 「\"福寿司\" 東京 寿司店 住所」 — HTTP 200, forty-eight results across the Tokyo area, nearest in Sumiyoshi, Kichijōji, Yoyogi-Uehara and Yaesu; none in Tsukiji. (4) Tsukiji outer-market association official directory, six food categories fetched in full (105 shops) — HTTP 200, no 福寿司. Not attempted successfully: Tabelog's nationwide keyword-search endpoint returns HTTP 404 to scripted requests under every URL form tried, so Tabelog coverage here is second-hand through Yahoo Japan's index of it.",
+   "confidence": "low",
+   "sources": [
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/",
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-13/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced. Do not silently swap in 築地 すし処 福音 at 築地3-4-6 — it is a real Tsukiji sushi shop and a plausible garbling target, but the only thing linking it to this record is the character 福."
+  },
+  "sources": [
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-12/",
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-13/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and results: Yahoo Japan on 「築地 福寿司 中央区築地 寿司 住所」 — HTTP 200, whose local module listed fourteen 福寿司 shops ranked by distance from Tsukiji station with the nearest at 4.1 km; Yahoo Japan on 「\"福寿司\" 築地 場外市場」 — HTTP 200, returned other Tsukiji sushi houses (築地すし一番 4丁目場外市場店 at 築地4-8-6, 築地玉寿司) and no 福寿司; Yahoo Japan on 「\"福寿司\" 東京 寿司店 住所」 — HTTP 200, forty-eight Tokyo-area results, nearest in Sumiyoshi, Kichijōji, Yoyogi-Uehara (渋谷区上原1-17-11) and Yaesu (中央区八重洲1-4-4), none in Tsukiji; the Tsukiji outer-market association's own directory, all six food categories fetched in full (105 shops) — HTTP 200, no 福寿司. Nearest plausible garbling target, deliberately NOT substituted: 築地 すし処 福音 (ふくね) at 中央区築地3-4-6 小竹ビル1F, 1 min from Tsukiji exit A3, own site sushi-fukune.com — it shares only the character 福 with the recorded name, which is resemblance, not evidence. One leg could not be run: Tabelog's nationwide keyword-search endpoint answers scripted requests with HTTP 404 under every URL form, cookie jar and referer tried, so Tabelog was reachable only through Yahoo Japan's index and direct shop URLs; that gap is stated rather than counted as a negative. Coordinates unchanged, loc_precise false."
+ },
+ {
+  "id": "tokyo3__107",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — there is no ramen shop called 大門 in Tsukiji. 大門 is a station and district in Minato-ku, about 2.5 km away.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 中央区築地, near Tsukiji station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessable, and worth stating plainly for anyone tempted to rescue the record with a real ramen shop: ramen noodles are wheat, the tare in almost every Tokyo bowl is wheat soy sauce, and shared noodle water makes a ramen counter one of the worst rooms in Japan for a celiac. The light record's 'ask' should not be read as encouragement.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessable — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. GENERIC PHRASE: 「築地 大門」 pairs two Tokyo place names rather than naming a business — 大門 is a Toei Asakusa/Ōedo line station and the district around it in Minato-ku (芝大門), roughly 2.5 km south-west of Tsukiji, and it is also the name of the old entertainment quarter in Hakodate that gives 函館ラーメン its 大門 label. Every search behaves accordingly. Yahoo Japan's local module, asked for ramen shops around 中央区築地, returns 128 within range and names the close ones — 牡蠣と貝 at 15 m, 若葉 at 170 m, 幸軒 at 149 m, 北海道らーめん みそ熊 築地店 at 305 m — with no 大門 among them; Tabelog's own 中央区築地 and 築地駅 ramen category pages list 麺屋NOBUNAGA, 築地 かわむら, 東京築地 やよい麺, 壱角家 築地店, 山田のうなぎ うな骨らーめん 築地本店, 鳥藤とりそばスタンド, MAZE TOKYO and 幸軒, again with no 大門, and Yahoo's snippet for both carried the marker 未指定：大門, meaning the term went unmatched. Searching 「\"築地\" \"大門店\" ラーメン」 returns only Minato-ku shops at 大門 station — 鶏ポタラーメン THANK 大門店 (港区芝大門2-1-13), 東京らあめんタワー 芝大門本店, 函館らーめん 大門, リンガーハット大門店, らーめんバリ男 大門店 — none of which is in Tsukiji or called 築地 大門. The Tsukiji outer-market association's own eating-and-drinking directory, scraped in full across six food categories (105 shops), contains no 大門 either. Nothing here can be enriched without inventing a shop.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Search legs actually run, and what each returned. (1) Yahoo Japan, 「築地 大門 ラーメン 中央区築地 店」 — HTTP 200; its local module returned 128 ramen shops around 中央区築地 with the nearest named and no 大門 among them, and the Tabelog category pages it surfaced carried 未指定：大門. (2) Yahoo Japan, 「\"大門\" ラーメン 東京 店 築地 場外」 — HTTP 200, all 大門 hits are Minato-ku shops at 大門 station. (3) Yahoo Japan, 「\"築地\" \"大門店\" ラーメン」 — HTTP 200, same result; no chain operates a 築地 大門店 ramen shop. (4) Tsukiji outer-market association official directory, six food categories fetched in full (105 shops) — HTTP 200, no match. Not attempted successfully: Tabelog's nationwide keyword-search endpoint returns HTTP 404 to scripted requests under every URL form tried, so Tabelog coverage here is second-hand through Yahoo Japan's index of it.",
+   "confidence": "low",
+   "sources": [
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+    "https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted rather than re-sourced — the name appears to pair two Tokyo place names rather than to identify a shop."
+  },
+  "sources": [
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-14/",
+   "https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/"
+  ],
+  "enrich_note": "NOT FOUND. GENERIC PHRASE: 「築地 大門」 pairs two Tokyo place names rather than naming a business — 大門 is a Toei Asakusa/Ōedo line station and the 芝大門 district in Minato-ku about 2.5 km away, and also the Hakodate quarter that labels 函館ラーメン — so this record may never have named a shop. Searches run and results: Yahoo Japan on 「築地 大門 ラーメン 中央区築地 店」 — HTTP 200, its local module returning 128 ramen shops around 中央区築地 (nearest: 牡蠣と貝 15 m, 幸軒 149 m, 若葉 170 m, みそ熊 築地店 305 m) with no 大門, and Tabelog's 中央区築地 and 築地駅 ramen category pages carrying Tabelog's own 未指定：大門 marker; Yahoo Japan on 「\"大門\" ラーメン 東京 店 築地 場外」 — HTTP 200, every 大門 hit a Minato-ku shop at 大門 station (鶏ポタラーメン THANK 大門店 at 港区芝大門2-1-13, 東京らあめんタワー 芝大門本店, 函館らーめん 大門, リンガーハット大門店, バリ男 大門店); Yahoo Japan on 「\"築地\" \"大門店\" ラーメン」 — HTTP 200, no chain operates a 築地 大門店; the Tsukiji outer-market association's own directory, all six food categories fetched in full (105 shops) — HTTP 200, no match. One leg could not be run: Tabelog's nationwide keyword-search endpoint answers scripted requests with HTTP 404 under every URL form, cookie jar and referer tried, so Tabelog was reachable only through Yahoo Japan's index and direct shop URLs; that gap is stated rather than counted as a negative. Coordinates unchanged, loc_precise false."
+ }
+]

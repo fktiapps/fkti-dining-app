@@ -32,6 +32,15 @@ const MAP = {
   // two chips without telling a traveller anything they cannot read in the name.
   'matcha_cafe':'cafe', 'matcha':'cafe', 'teahouse':'cafe', 'coffee':'cafe',
 
+  // From the Tokyo enrich shards. Folded into existing chips rather than given new
+  // ones: a filter row is only useful while a traveller can scan it, and splitting
+  // tsukemen from ramen or udon from udon_soba would divide the same shops across
+  // two chips without telling anyone anything they cannot read in the shop's name.
+  'tsukemen':'ramen', 'tantanmen':'ramen', 'chinese':'ramen', 'mazesoba':'ramen',
+  'udon':'udon_soba', 'kaisendon':'donburi', 'monjayaki':'okonomiyaki',
+  'anago':'unagi',            // conger rather than freshwater eel, but the same counter
+  'tamagoyaki':'other', 'israeli':'other',
+
   // --- sweets / bakery / patisserie family ---
   'GF bakery':'sweets','bakery':'sweets','GF patisserie':'sweets','patisserie':'sweets',
   'Patisserie':'sweets','Pâtisserie / GF sweets':'sweets','baumkuchen':'sweets',

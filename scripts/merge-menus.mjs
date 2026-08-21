@@ -15,6 +15,12 @@ const DRY = process.argv.includes('--dry');
 const DIR = 'data/_menu_verdicts';
 
 const VERIFIED = new Set(['authoritative', 'partial', 'provisional']);
+// "true" is the legacy value from before this vocabulary existed — 89 shipped menus
+// still carry it, and the agent brief wrongly listed it as valid, so agents kept
+// producing it. It means "verified, but not from a first-party source", which is
+// exactly `partial`. Fold it rather than reject a shop's whole researched menu over
+// one word.
+const VERIFIED_ALIAS = { true: 'partial', 'true': 'partial', verified: 'partial' };
 const CONF = new Set(['high', 'medium', 'low']);
 const GF = new Set(['gf', 'ask', 'no', '']);
 const VEGAN = new Set(['vegan', 'ask', 'no', '']);
@@ -55,6 +61,7 @@ for (const f of files) {
 
 function problems(entry, id, unexplained = []) {
   const p = [];
+  if (VERIFIED_ALIAS[entry.verified]) entry.verified = VERIFIED_ALIAS[entry.verified];
   if (!VERIFIED.has(entry.verified)) p.push(`verified "${entry.verified}"`);
   if (!CONF.has(entry.confidence)) p.push(`confidence "${entry.confidence}"`);
   if (!Array.isArray(entry.sources) || !entry.sources.length) p.push('no sources');

@@ -285,9 +285,9 @@
     "en": "Soy-meat karaage plate",
     "price": "¥1,500",
     "section": "Meals",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Karaage coating is typically wheat/starch — not GF; ask.",
+    "note": "⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. ⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. Karaage coating is typically wheat/starch — not GF; ask.",
     "dish_key": "soy_meat_karaage"
    },
    {
@@ -4614,9 +4614,9 @@
     "en": "Fu (wheat-gluten) manju",
     "price": "¥330",
     "section": "Dessert",
-    "gf": "",
+    "gf": "no",
     "vegan": "vegan",
-    "note": "Wrapper is wheat gluten (fu). Never GF.",
+    "note": "⚠ fu — wheat gluten. Vegan but NOT gluten-free. Wrapper is wheat gluten (fu). Never GF.",
     "dish_key": "fu-manju"
    }
   ]
@@ -5062,9 +5062,9 @@
     "en": "Soy-meat 'fried chicken' (karaage)",
     "price": "¥1,584",
     "section": "Lunch",
-    "gf": "gf",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Labeled gluten-free by the restaurant. Shared fryer/kitchen — cross-contact caution.",
+    "note": "⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. ⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. Labeled gluten-free by the restaurant. Shared fryer/kitchen — cross-contact caution.",
     "dish_key": "soy-meat-karaage"
    },
    {
@@ -5205,9 +5205,9 @@
     "en": "Kurumafu (wheat-gluten) cutlet, 2 cut",
     "price": "¥1,380",
     "section": "Rice sets",
-    "gf": "",
+    "gf": "no",
     "vegan": "vegan",
-    "note": "Kurumafu is wheat gluten — NOT gluten-free.",
+    "note": "⚠ kurumafu — seitan, pure wheat gluten. Vegan but NOT gluten-free. Kurumafu is wheat gluten — NOT gluten-free.",
     "dish_key": "kurumafu-katsu"
    },
    {
@@ -5283,9 +5283,9 @@
     "en": "Wheat-gluten (fu) cutlet set, 2 pieces",
     "price": "¥1,380",
     "section": "Rice sets",
-    "gf": "",
+    "gf": "no",
     "vegan": "vegan",
-    "note": "Kurumafu is wheat gluten (seitan) — contains wheat, NOT gluten-free.",
+    "note": "⚠ kurumafu — seitan, pure wheat gluten. Vegan but NOT gluten-free. Kurumafu is wheat gluten (seitan) — contains wheat, NOT gluten-free.",
     "dish_key": "fu_cutlet_2"
    },
    {
@@ -5294,9 +5294,9 @@
     "en": "Wheat-gluten (fu) cutlet set, 3 pieces",
     "price": "¥1,490",
     "section": "Rice sets",
-    "gf": "",
+    "gf": "no",
     "vegan": "vegan",
-    "note": "Wheat gluten — NOT gluten-free.",
+    "note": "⚠ kurumafu — seitan, pure wheat gluten. Vegan but NOT gluten-free. Wheat gluten — NOT gluten-free.",
     "dish_key": "fu_cutlet_3"
    },
    {
@@ -5815,9 +5815,9 @@
     "en": "Chicken-nanban-style organic soy meat",
     "price": "¥900",
     "section": "Mains",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Nanban style uses wheat batter and soy-sauce-based sauce — NOT gluten-free.",
+    "note": "⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. ⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. Nanban style uses wheat batter and soy-sauce-based sauce — NOT gluten-free.",
     "dish_key": "soy_meat_nanban"
    },
    {
@@ -18423,9 +18423,9 @@
     "en": "Soy-meat cutlet curry",
     "price": "¥1,180",
     "section": "Mains",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Breaded soy cutlet + Japanese curry roux — both wheat.",
+    "note": "⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. ⚠ soy meat — usually extruded with wheat gluten as a binder; ask which brand. Vegan but gluten status must be confirmed. Breaded soy cutlet + Japanese curry roux — both wheat.",
     "dish_key": "soy_katsu_curry"
    },
    {
@@ -78691,6 +78691,578 @@
     "vegan": "no",
     "note": "2026-06の店頭ポスター。天ぷら・フライを含む構成のため小麦。内容は要確認。",
     "dish_key": "summer_course"
+   }
+  ]
+ },
+ "hiro_gelateria_baccano": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://baccano.jpn.com/",
+   "https://baccano.jpn.com/aboutus.php",
+   "https://baccano-gelateria.stores.jp/",
+   "https://s.tabelog.com/hiroshima/A3402/A340202/34019869/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/375107/f2e14a312784d2cd094f91245b858950.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/375538/0b681b3c2fce3b3c8fea7a6906b89bac.jpg"
+  ],
+  "price_note": "Transcribed from the shop's own overhead menu board and its HOW TO ORDER card, both photographed 2026/08 — current. Cash or PayPay only. Prices approximate — may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "ジェラート シングル（1種）",
+    "romaji": "gelato single",
+    "en": "Gelato, single — one flavour, in a cup or a cone",
+    "price": "¥500",
+    "section": "Gelato",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "コーンを選ぶと小麦。カップでも同店は自家製ビスケット（小麦）でジェラートビスコットを作る工房を併設しており、共用設備での微量混入は要確認。ミルクベースのジェラートは乳製品。",
+    "dish_key": "gelato_single"
+   },
+   {
+    "ja": "ジェラート ダブル（2種）",
+    "romaji": "gelato double",
+    "en": "Gelato, double — two flavours, in a cup or a cone",
+    "price": "¥600",
+    "section": "Gelato",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "同上。カップかコーンかを選べる（コーン＝小麦）。",
+    "dish_key": "gelato_double"
+   },
+   {
+    "ja": "ソルベ（フレーバーの一部）",
+    "romaji": "sorbetto",
+    "en": "Sorbet — some of the daily flavours are dairy-free sorbet rather than milk gelato",
+    "price": "¥500",
+    "section": "Gelato",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ショーケースに『3種のベリーソルベ』などソルベ表示のフレーバーが並ぶ。ソルベは通常乳製品不使用だが、同じディッシャー・同じケースを使うため厳格なビーガンには要確認。値段はシングル価格。",
+    "dish_key": "sorbetto"
+   },
+   {
+    "ja": "アフォガート",
+    "romaji": "affogato",
+    "en": "Affogato — espresso poured over gelato",
+    "price": "¥700",
+    "section": "Cafe menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "ジェラート＋エスプレッソ。乳製品。ビスケットが添えられる場合は小麦。",
+    "dish_key": "affogato"
+   },
+   {
+    "ja": "5種プレートセット（ドリンク付）",
+    "romaji": "5-shu plate set",
+    "en": "Five-flavour gelato plate with a drink",
+    "price": "¥1,200",
+    "section": "Cafe menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "写真では小さなクッキー／ウエハースが添えられている＝小麦の可能性。外してもらえるか要確認。",
+    "dish_key": "gelato_plate_set"
+   },
+   {
+    "ja": "コーヒー（Hot/Iced）",
+    "romaji": "kōhī",
+    "en": "Coffee, hot or iced",
+    "price": "¥450",
+    "section": "Drink",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ミルクの有無を指定のこと。",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "紅茶（Hot/Iced）",
+    "romaji": "kōcha",
+    "en": "Black tea, hot or iced",
+    "price": "¥450",
+    "section": "Drink",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "",
+    "dish_key": "black_tea"
+   },
+   {
+    "ja": "みかんジュース",
+    "romaji": "mikan juice",
+    "en": "Mandarin juice",
+    "price": "¥450",
+    "section": "Drink",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "",
+    "dish_key": "mikan_juice"
+   },
+   {
+    "ja": "自家製ジンジャーエール",
+    "romaji": "jikasei ginger ale",
+    "en": "House-made ginger ale",
+    "price": "¥550",
+    "section": "Drink",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "自家製シロップ。原材料を要確認。",
+    "dish_key": "house_ginger_ale"
+   },
+   {
+    "ja": "本日のフレーバー（日替わり18種類）",
+    "romaji": "honjitsu no flavor",
+    "en": "The day's flavours — the shop aims to keep 18 in the case, with seasonal ones on top",
+    "price": "",
+    "section": "Gelato",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "自社サイトに『ジェラートは日替わりで18種類。季節限定フレーバーもご用意』『保存料や着色料も使用しておりません』と明記。2026/08のケースに出ていたのは黒ごま・トマト・桃・3種のベリーソルベ・広島レモン・マンゴー・パインなど。日によって入れ替わるので、当日の札を見て選ぶこと。",
+    "dish_key": "daily_flavours"
+   },
+   {
+    "ja": "ジェラートビスコット",
+    "romaji": "gelato biscotto",
+    "en": "Gelato sandwiched in the shop's own biscuit — five of its popular flavours",
+    "price": "",
+    "section": "Takeaway / online",
+    "gf": "no",
+    "vegan": "no",
+    "note": "自家製ビスケットで挟むため小麦。自社サイトの新商品案内より。店頭在庫は要確認。",
+    "dish_key": "gelato_biscotto"
+   },
+   {
+    "ja": "BACCANO ジェラートBOX 6個セット（130ml×6）",
+    "romaji": "gelato box 6",
+    "en": "Gelato gift box, 6 tubs of 130 ml (online shop, shipped)",
+    "price": "¥3,000",
+    "section": "Takeaway / online",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "公式オンラインストア（baccano-gelateria.stores.jp）の価格。店頭販売ではなく発送商品。",
+    "dish_key": "gelato_box_6"
+   },
+   {
+    "ja": "BACCANO ジェラートBOX 12個セット（130ml×12）",
+    "romaji": "gelato box 12",
+    "en": "Gelato gift box, 12 tubs of 130 ml (online shop, shipped)",
+    "price": "¥6,000",
+    "section": "Takeaway / online",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "同オンラインストアの価格。",
+    "dish_key": "gelato_box_12"
+   }
+  ]
+ },
+ "hiro_kijima_shoten": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3402/A340202/34017538/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/362980/70c22a5dd0c1d25b6f361f7300387b25.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/329487/2953968ca98bc2c0c86d44b1a84116ea.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/351146/f86d21d7f9cb79ba12d3f17377b0090e.jpg"
+  ],
+  "price_note": "Transcribed from the shop's own laminated card photographed 2026/05; the hanging wooden name-tags outside list the same flavours. The 2025/11 version of the same card was ¥650–¥800, so prices moved up roughly ¥80 — the 2026/05 figures are used here. Prices approximate — may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "焼き牡蠣 バター醤油（1人前2個）",
+    "romaji": "yaki-gaki batā shōyu",
+    "en": "Grilled oysters, butter & soy sauce (shop's No.1), 2 pieces",
+    "price": "¥800",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "醤油＝小麦。乳（バター）。",
+    "dish_key": "grilled_oyster_soy_butter"
+   },
+   {
+    "ja": "焼き牡蠣 ポン酢かけ（1人前2個）",
+    "romaji": "yaki-gaki ponzu-gake",
+    "en": "Grilled oysters with ponzu (No.2, the light option), 2 pieces",
+    "price": "¥780",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ポン酢は醤油ベース＝小麦。",
+    "dish_key": "grilled_oyster_ponzu"
+   },
+   {
+    "ja": "焼き牡蠣 ガーリックバター（1人前2個）",
+    "romaji": "yaki-gaki garlic butter",
+    "en": "Grilled oysters, garlic butter (No.3, the rich option), 2 pieces",
+    "price": "¥800",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "乳（バター）。醤油を隠し味に使っていないか要確認。",
+    "dish_key": "grilled_oyster_garlic_butter"
+   },
+   {
+    "ja": "焼き牡蠣 ガーリックオリーブ（数量限定）（1人前2個）",
+    "romaji": "yaki-gaki garlic olive",
+    "en": "Grilled oysters, garlic & olive oil (limited quantity), 2 pieces",
+    "price": "¥780",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "表示は¥800から¥780に値引き。オリーブオイル・にんにくのみなら小麦不使用の可能性。味付けの内訳を要確認。",
+    "dish_key": "grilled_oyster_garlic_olive"
+   },
+   {
+    "ja": "焼き牡蠣 レモンバジル＆オリーブオイル（1人前2個）",
+    "romaji": "yaki-gaki lemon basil & olive oil",
+    "en": "Grilled oysters, lemon-basil & olive oil, 2 pieces",
+    "price": "¥800",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "油・レモン・バジルのみなら小麦不使用の可能性。要確認。",
+    "dish_key": "grilled_oyster_lemon_basil"
+   },
+   {
+    "ja": "焼き牡蠣 ぶちうま牡蠣ラー油（ちょい辛）（1人前2個）",
+    "romaji": "yaki-gaki buchi-uma kaki rāyu",
+    "en": "Grilled oysters with the house oyster chilli oil (mildly hot), 2 pieces",
+    "price": "¥800",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "牡蠣ラー油の市販品は醤油・大豆たん白を含むものが大半＝小麦。",
+    "dish_key": "grilled_oyster_chilli_oil"
+   },
+   {
+    "ja": "焼き牡蠣 わさび醤油（スパイシー）（1人前2個）",
+    "romaji": "yaki-gaki wasabi shōyu",
+    "en": "Grilled oysters, wasabi soy sauce (spicy), 2 pieces",
+    "price": "¥780",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "醤油＝小麦。練りわさびにも小麦系のつなぎが入ることがある。",
+    "dish_key": "grilled_oyster_wasabi_soy"
+   },
+   {
+    "ja": "焼き牡蠣 ゆずこしょう（スパイシー）（1人前2個）",
+    "romaji": "yaki-gaki yuzu-koshō",
+    "en": "Grilled oysters with yuzu-kosho (spicy), 2 pieces",
+    "price": "¥780",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "柚子胡椒は柚子・唐辛子・塩のみの製品が多いが銘柄次第。醤油を足していないか要確認。",
+    "dish_key": "grilled_oyster_yuzukosho"
+   },
+   {
+    "ja": "焼き牡蠣 レモスコ（レモン風味のタバスコ＋ポン酢）（ちょい辛）（1人前2個）",
+    "romaji": "yaki-gaki Lemosco",
+    "en": "Grilled oysters with Lemosco — Hiroshima lemon hot sauce plus ponzu (mildly hot), 2 pieces",
+    "price": "¥780",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ポン酢併用＝小麦醤油。レモスコ単体は広島名物の唐辛子レモン酢。",
+    "dish_key": "grilled_oyster_lemosco"
+   },
+   {
+    "ja": "焼き牡蠣 レモンのせ（1人前2個）",
+    "romaji": "yaki-gaki lemon-nose",
+    "en": "Grilled oysters topped with Hiroshima lemon, 2 pieces",
+    "price": "¥780",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "牡蠣＋レモンのみなら小麦不使用。タレを添えないよう伝えれば最も無難な一皿。当店のレモンは広島レモン使用と明記。",
+    "dish_key": "grilled_oyster_lemon"
+   },
+   {
+    "ja": "焼き牡蠣 トマトチーズ（1人前2個）",
+    "romaji": "yaki-gaki tomato cheese",
+    "en": "Grilled oysters with tomato & cheese, 2 pieces",
+    "price": "¥900",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "乳。ソースの原材料を要確認。",
+    "dish_key": "grilled_oyster_tomato_cheese"
+   },
+   {
+    "ja": "スライスレモン追加（1人前につき）",
+    "romaji": "slice lemon tsuika",
+    "en": "Extra sliced lemon (per serving)",
+    "price": "+¥50",
+    "section": "焼き牡蠣 Grilled oysters (1 serving = 2 oysters)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "広島レモンの輪切りのみ。他の材料を含まない単品トッピングのため小麦・動物性ともに不使用。",
+    "dish_key": "extra_lemon_slice"
+   },
+   {
+    "ja": "あなごチーズちくわ",
+    "romaji": "anago cheese chikuwa",
+    "en": "Grilled fish-paste tube with conger eel & cheese — the shop's Miyajima No.1",
+    "price": "¥350",
+    "section": "ちくわ Chikuwa",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ちくわは小麦でんぷんを含む製品が多く、あなごのタレも小麦醤油。乳（チーズ）。",
+    "dish_key": "anago_cheese_chikuwa"
+   },
+   {
+    "ja": "あなごちくわ",
+    "romaji": "anago chikuwa",
+    "en": "Grilled fish-paste tube with conger eel",
+    "price": "¥330",
+    "section": "ちくわ Chikuwa",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ちくわの小麦でんぷん＋あなごのタレ（小麦醤油）。",
+    "dish_key": "anago_chikuwa"
+   },
+   {
+    "ja": "たこちくわ",
+    "romaji": "tako chikuwa",
+    "en": "Grilled fish-paste tube with octopus",
+    "price": "¥330",
+    "section": "ちくわ Chikuwa",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "ちくわの原材料に小麦でんぷんが入る製品が多い。銘柄の表示を要確認。",
+    "dish_key": "tako_chikuwa"
+   },
+   {
+    "ja": "たいちくわ",
+    "romaji": "tai chikuwa",
+    "en": "Grilled fish-paste tube with sea bream",
+    "price": "¥330",
+    "section": "ちくわ Chikuwa",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "同上。ちくわは小麦でんぷんを含む製品が多い。",
+    "dish_key": "tai_chikuwa"
+   }
+  ]
+ },
+ "hiro_miyajima_hanayashiki": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3402/A340202/34011869/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/364310/eea8579bf6963de948b5549b8c36894f.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/363990/dc138d8a2417035462960514d5021d63.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/283743/8ae5d7ec04e74c69fbc44d4720fcd03a.jpg"
+  ],
+  "price_note": "Prices from the shop's own bilingual A-board photographed 2026/06 (drinks board 2026/01). The same board in 2025/02 ran ¥600/¥800 — the 2026 card is ¥750/¥900/¥1,000, so quote the newer one. Prices approximate — may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "ぶち旨 特選 焼きがき（一皿2個）",
+    "romaji": "buchi-uma tokusen yaki-gaki",
+    "en": "Choice grilled oysters, 2 pieces",
+    "price": "¥750",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "素焼きの牡蠣自体は小麦不使用だが、ポン酢・タレを添える場合は小麦醤油。何もかけずに出せるか要確認。 · Shellfish, so not vegan. Plain grilled oyster is wheat-free in itself; ask them to serve it with nothing on it, as ponzu and tare are wheat soy sauce.",
+    "dish_key": "grilled_oyster_plain"
+   },
+   {
+    "ja": "ぶち旨 チーズ焼きがき（一皿2個）",
+    "romaji": "cheese yaki-gaki",
+    "en": "Grilled oysters with melted cheese, 2 pieces",
+    "price": "¥1,000",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "乳製品。牡蠣にとろけるチーズをのせて焼いたもの。下味のタレの有無を要確認。",
+    "dish_key": "grilled_oyster_cheese"
+   },
+   {
+    "ja": "ぶち旨 しょう油バター焼きがき（一皿2個）",
+    "romaji": "shōyu batā yaki-gaki",
+    "en": "Soy-sauce-butter grilled oysters, 2 pieces",
+    "price": "¥900",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "しょう油＝小麦。乳（バター）。",
+    "dish_key": "grilled_oyster_soy_butter"
+   },
+   {
+    "ja": "ぶち旨 みそバター焼きがき（一皿2個）",
+    "romaji": "miso batā yaki-gaki",
+    "en": "Miso-butter grilled oysters, 2 pieces",
+    "price": "¥900",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味噌は麦味噌・合わせ味噌の可能性が高く小麦/大麦。乳（バター）。",
+    "dish_key": "grilled_oyster_miso_butter"
+   },
+   {
+    "ja": "ぶち旨 ゆずみそバター焼きがき（一皿2個）",
+    "romaji": "yuzu-miso batā yaki-gaki",
+    "en": "Citron-miso-butter grilled oysters, 2 pieces",
+    "price": "¥900",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味噌＋バター。麦味噌の可能性。",
+    "dish_key": "grilled_oyster_yuzu_miso_butter"
+   },
+   {
+    "ja": "ぶち旨 あなご焼きがき（一皿2個）",
+    "romaji": "anago yaki-gaki",
+    "en": "Grilled oysters topped with conger eel, 2 pieces",
+    "price": "¥1,200",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "あなごのタレ＝小麦醤油＋みりん。",
+    "dish_key": "grilled_oyster_anago"
+   },
+   {
+    "ja": "ぶち旨 広島レモンしょう油バター焼きがき（一皿2個）",
+    "romaji": "Hiroshima lemon shōyu batā yaki-gaki",
+    "en": "Hiroshima-lemon soy-sauce-butter grilled oysters, 2 pieces",
+    "price": "¥1,000",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "しょう油＝小麦。",
+    "dish_key": "grilled_oyster_lemon_soy_butter"
+   },
+   {
+    "ja": "ぶち旨 広島レモンみそバター焼きがき（一皿2個）",
+    "romaji": "Hiroshima lemon miso batā yaki-gaki",
+    "en": "Hiroshima-lemon miso-butter grilled oysters, 2 pieces",
+    "price": "¥1,000",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味噌＋バター。",
+    "dish_key": "grilled_oyster_lemon_miso_butter"
+   },
+   {
+    "ja": "ぶち旨 広島レモン粒マスタード焼きがき（ハニー醤油）（一皿2個）",
+    "romaji": "Hiroshima lemon tsubu-mustard yaki-gaki",
+    "en": "Hiroshima-lemon whole-grain-mustard grilled oysters (honey soy sauce), 2 pieces",
+    "price": "¥1,000",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ハニー醤油＝小麦醤油。蜂蜜使用。",
+    "dish_key": "grilled_oyster_mustard"
+   },
+   {
+    "ja": "ぶち旨 特製ホワイトソース焼きがき（一皿2個）",
+    "romaji": "tokusei white sauce yaki-gaki",
+    "en": "Grilled oysters in the house white sauce, 2 pieces",
+    "price": "¥1,000",
+    "section": "Grilled oysters 焼きがき",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ホワイトソースは小麦粉のルー。乳。",
+    "dish_key": "grilled_oyster_white_sauce"
+   },
+   {
+    "ja": "広島レモンビール（一杯）",
+    "romaji": "Hiroshima lemon beer",
+    "en": "Hiroshima lemon beer, 1 glass",
+    "price": "¥700",
+    "section": "Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "ビール＝麦芽。",
+    "dish_key": "lemon_beer"
+   },
+   {
+    "ja": "生ビール（一杯）",
+    "romaji": "nama bīru",
+    "en": "Draft beer, 1 glass",
+    "price": "¥600",
+    "section": "Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "麦芽。",
+    "dish_key": "draft_beer"
+   },
+   {
+    "ja": "レモンコーラ（Musetta Cola）",
+    "romaji": "lemon cola",
+    "en": "Hiroshima-lemon craft cola",
+    "price": "¥500",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "宮島クラフトコーラ「Musetta Cola」。スパイス・レモンのシロップ。原材料表示未確認。",
+    "dish_key": "craft_cola_lemon"
+   },
+   {
+    "ja": "ライトコーラ（Musetta Cola）",
+    "romaji": "light cola",
+    "en": "Light craft cola",
+    "price": "¥500",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "同上。原材料表示未確認。",
+    "dish_key": "craft_cola_light"
+   },
+   {
+    "ja": "レモンスカッシュ",
+    "romaji": "lemon squash",
+    "en": "Spiced lemon squash",
+    "price": "¥500",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "「レスカ」。スパイス香る炭酸レモン。原材料表示未確認。",
+    "dish_key": "lemon_squash"
+   },
+   {
+    "ja": "レモネード",
+    "romaji": "lemonade",
+    "en": "Spiced lemonade",
+    "price": "¥500",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "スパイス香るレモネード。原材料表示未確認。",
+    "dish_key": "lemonade"
+   },
+   {
+    "ja": "レモンサワー",
+    "romaji": "lemon sour",
+    "en": "Lemon sour",
+    "price": "¥600",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ベースの焼酎が麦焼酎なら不可。銘柄要確認。",
+    "dish_key": "lemon_sour"
+   },
+   {
+    "ja": "生搾り柚子レモンソーダ",
+    "romaji": "nama-shibori yuzu lemon soda",
+    "en": "Fresh-squeezed yuzu & lemon soda",
+    "price": "¥600",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "原材料表示未確認。",
+    "dish_key": "yuzu_lemon_soda"
+   },
+   {
+    "ja": "梅酒ソーダ",
+    "romaji": "umeshu soda",
+    "en": "Plum wine soda",
+    "price": "¥600",
+    "section": "Musetta Cola drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "梅酒のベース酒（ブランデー/麦焼酎等）要確認。",
+    "dish_key": "umeshu_soda"
    }
   ]
  }

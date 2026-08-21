@@ -1847,9 +1847,9 @@
    "category": "VEGAN",
    "lat": 34.394417,
    "lng": 132.458633,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "Gluten-free options are clearly marked on the menu, and some sets can be made gluten-free (e.g. by omitting a sauce). The Enzyme Brown Rice Ball Set is labeled both vegan and gluten-free, and gluten-free sweets are made in-house. However, the cafe is not a dedicated gluten-free kitchen — wheat-based items (e.g. a wheat-gluten cutlet sandwich, scones, muffins) are made in the same space, and there is no documented dedicated fryer or formal cross-contamination protocol. Celiac travelers should confirm directly. Note that ordinary soy sauce contains wheat; the source material does not confirm whether a GF tamari is used in GF dishes, so ask.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. Gluten-free options are clearly marked on the menu, and some sets can be made gluten-free (e.g. by omitting a sauce). The Enzyme Brown Rice Ball Set is labeled both vegan and gluten-free, and gluten-free sweets are made in-house. However, the cafe is not a dedicated gluten-free kitchen — wheat-based items (e.g. a wheat-gluten cutlet sandwich, scones, muffins) are made in the same space, and there is no documented dedicated fryer or formal cross-contamination protocol. Celiac travelers should confirm directly. Note that ordinary soy sauce contains wheat; the source material does not confirm whether a GF tamari is used in GF dishes, so ask.",
    "vegan_status": "options",
    "vegan_label": "Vegan options",
    "vegan_detail": "Strongly vegan-friendly: nearly all dishes are vegan, with only a small handful using chicken (a karaage / fried-chicken set made from open-air-raised Yamaguchi poultry). Signature vegan dishes include the lentil hamburger and millet croquette sets served with enzyme-fermented brown rice, plus vegan sweets (raw hemp chocolate tart, vegan muffins and scones). Vegetables are organic and locally grown in Hiroshima; no chemical seasonings or GMO foods are used. Because the kitchen also prepares the chicken item, strict vegans may wish to confirm cross-contact, though the menu is built around plant-based dishes.",
@@ -1943,30 +1943,37 @@
     "gf_cross_contamination": [
      {
       "text": "Gluten-free items are marked on the menu and some dishes can be made gluten-free (e.g. by removing a sauce), but the kitchen also prepares wheat-based items so it is not a dedicated gluten-free environment.",
-      "source": "https://gethiroshima.com/dining/kissa-saeki-organic-cafe-kitchen/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340111/34019567/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://gethiroshima.com/dining/kissa-saeki-organic-cafe-kitchen/"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Almost all dishes are vegan-friendly except a small number that use chicken; vegan sweets and sets are clearly labeled.",
-      "source": "https://gethiroshima.com/dining/kissa-saeki-organic-cafe-kitchen/"
+      "source": "https://gethiroshima.com/dining/kissa-saeki-organic-cafe-kitchen/",
+      "unsupported": "2026-08-20",
+      "why": "Two errors, one of them a vegan-safety error: the claim says 'except a small number that use chicken' and omits the daily FISH lunch entirely, and 'almost all dishes' overstates a menu that is roughly half non-vegan. Tabelog adds a third: the ベリーラッシー uses 自家製ヨーグルト. Rewrite as 'a large, clearly-label"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "The cafe explicitly welcomes diners with food allergies, vegetarians/vegans, and those with religious dietary restrictions, describing its approach as 'food barrier-free' dining.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340111/34019567/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340111/34019567/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Menus are in English and Japanese with clear vegan and gluten-free icons, and items like the Enzyme Brown Rice Ball Set are labeled both vegan and gluten-free.",
-      "source": "https://vegewel.com/en/restaurant/1026"
+      "source": "https://vegewel.com/en/restaurant/1026",
+      "verified": "2026-08-20"
      },
      {
       "text": "Organic Hiroshima-grown vegetables, no chemical seasonings, and no genetically modified foods are used.",
-      "source": "https://vegewel.com/en/restaurant/1026"
+      "source": "https://vegewel.com/en/restaurant/1026",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -1982,7 +1989,14 @@
    "menu_gf_count": 4,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 2,
-   "menu_vegan_count": 8
+   "menu_vegan_count": 8,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": false,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "hiro_yakigaki_no_hayashi",
@@ -7378,7 +7392,13 @@
     "level": "konnichiwa",
     "note": "A casual walk-up oyster stall used to many foreign visitors, so pointing at the charcoal-grilled oysters and a few Japanese words will get you served comfortably."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 9,
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0
   },
   {
    "id": "hiro_kaki_hiyokko_shoten_hiro",
@@ -12450,7 +12470,13 @@
     "level": "konnichiwa",
     "note": "A relaxed walk-up oyster stand on the main tourist street where a friendly greeting and pointing at the oysters is enough; English is not guaranteed but the casual order-and-eat format makes it easy for a foreign student."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 1,
+   "menu_gf_ask_count": 8,
+   "menu_vegan_count": 1,
+   "menu_vegan_meals": 1
   },
   {
    "id": "hiro_shirunashi_tantanmen_sen_2",
@@ -13151,7 +13177,9 @@
     "positives": [
      {
       "text": "Offers a rice-flour (米粉) Basque cheesecake described as made without wheat, giving a genuine wheat-free dessert choice in a heritage sweets shop.",
-      "source": "https://www.modokimaru.com/entry/gourmet/250625"
+      "source": "https://www.instagram.com/reel/DKdgy9wyecv/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.modokimaru.com/entry/gourmet/250625"
      }
     ],
     "confidence": "low",
@@ -18461,7 +18489,13 @@
     "level": "konnichiwa",
     "note": "A friendly family-run gelato counter where pointing at the colorful case and a few words of Japanese go a long way; the upstairs tatami room is shoes-off and asks each person to order something."
    },
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 12,
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0
   },
   {
    "id": "hiro_hiroshima_taishu_izakaya",
@@ -57711,7 +57745,7 @@
    "lng": 132.40698,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
    "vegan_detail": "No vegan claims are published, and the core lineup (rice-flour chiffon cakes, florentine, buttery baked goods) typically contains egg and dairy. Some items such as the basil crackers or 'kimagure' cookie sets may be plant-based, but this is unconfirmed — vegans should ask the shop about each item.",

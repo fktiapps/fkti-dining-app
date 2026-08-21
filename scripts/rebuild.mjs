@@ -41,6 +41,12 @@ const STEPS = [
   ['quarantine-orphan-menus.mjs',      'pull menus whose record was deduped away', ['--apply']],
   // Must follow every tier-setting pass. A GF label above "ask" that cites nothing
   // gets held down until a source is attached — see the script header.
+  // Must precede enforce-cited-claims: it is what marks a claim unsupported, and
+  // that mark is what the enforcement acts on.
+  // After merge-menus, before the tier passes: an item that is vegan AND made of
+  // wheat gluten is the one place where the two diet layers cross badly.
+  ['flag-vegan-gluten-traps.mjs',     'flag vegan menu items made of wheat gluten', ['--apply']],
+  ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],
   ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
