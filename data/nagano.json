@@ -13015,9 +13015,9 @@
    "category": "GF",
    "lat": 36.51851,
    "lng": 137.856528,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "[Adversarial GF review 2026-08-19: high→options. DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,380, 野菜たっぷりトマトソースパスタ ¥1,280) with the note that the standard pasta uses wheat and butter and that gluten-free rice pasta is an opt-in substitution; Vegewel independently classifies the venue as 'Pasta / Pancake' cuisine with a 'Gluten-Free Menu' (a GF subset), not a wheat-free kitchen. So this is a shared kitchen boiling wheat pasta — shared water, colanders and utensils are a textbook cross-contact vector — on top of the already-flagged wheat teriyaki/soy sauces on the savory pancakes. The pancakes really are 米粉100% and I found no glutening report, but a mixed kitchen with no allergen protocol and no celiac-grade review cannot hold 'high'.] A rice-flour pancake specialty café — every pancake is 米粉100%, so there is no wheat flour and no wheat pasta on the premises (the seed's 'shared pasta menu' does not exist; the savory items are also rice-flour pancakes). The venue's own claim: 「100％米粉を使った、ふわふわのパンケーキ」 and 「パンケーキは、米粉100%使用と砂糖を減らすことにより…罪悪感なく食べられるギルトフリー」. IMPORTANT caveat for celiac: this is a 'gluten-free pancake' shop, NOT a certified celiac kitchen, and no formal cross-contact protocol is published — the sweet pancakes (berry, fruit, caramel-nut, kids) are the reliably GF core, but savory pancakes such as the ハーブ鶏の照り焼き (herb-chicken teriyaki) and 信州サーモン use teriyaki/soy-based sauces that are wheat unless tamari, so confirm the sauce or stick to the sweet fruit pancakes.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,380, 野菜たっぷりトマトソースパスタ ¥1,280) with the note that the standard pasta uses wheat and butter and that gluten-free rice pasta is an opt-in substitution; Vegewel independently classifies the venue as 'Pasta / Pancake' cuisine with a 'Gluten-Free Menu' (a GF subset), not a wheat-free kitchen. So this is a shared kitchen boiling wheat pasta — shared water, colanders and utensils are a textbook cross-contact vector — on top of the already-flagged wheat teriyaki/soy sauces on the savory pancakes. The pancakes really are 米粉100% and I found no glutening report, but a mixed kitchen with no allergen protocol and no celiac-grade review cannot hold 'high'.] A rice-flour pancake specialty café — every pancake is 米粉100%, so there is no wheat flour and no wheat pasta on the premises (the seed's 'shared pasta menu' does not exist; the savory items are also rice-flour pancakes). The venue's own claim: 「100％米粉を使った、ふわふわのパンケーキ」 and 「パンケーキは、米粉100%使用と砂糖を減らすことにより…罪悪感なく食べられるギルトフリー」. IMPORTANT caveat for celiac: this is a 'gluten-free pancake' shop, NOT a certified celiac kitchen, and no formal cross-contact protocol is published — the sweet pancakes (berry, fruit, caramel-nut, kids) are the reliably GF core, but savory pancakes such as the ハーブ鶏の照り焼き (herb-chicken teriyaki) and 信州サーモン use teriyaki/soy-based sauces that are wheat unless tamari, so confirm the sauce or stick to the sweet fruit pancakes.",
    "vegan_status": "limited",
    "vegan_detail": "Dairy is avoided — the whipped cream is soy-milk based (豆乳ホイップ) — and organic fruit/veg are used. However the pancake batter contains egg (free-range 平飼い卵), so the pancakes themselves are not vegan. Only drinks such as the craft cola are reliably plant-based; ask before ordering if strict vegan.",
    "hours_raw": "Wed 12:00–16:00 / Thu–Sun 11:30–17:00 (last order 16:00). Closed Mon & Tue plus irregular days off (check Instagram for opening days).",
@@ -13103,31 +13103,40 @@
     "gf_cross_contamination": [
      {
       "text": "Entire pancake range is 米粉100% (100% rice flour); no wheat flour or wheat pasta is used on the premises, so batter-level cross-contact is inherently low. However no formal celiac cross-contact protocol is published.",
-      "source": "https://www.web-komachi.com/?p=99836"
+      "source": "https://www.web-komachi.com/?p=99836",
+      "unsupported": "2026-08-20",
+      "why": "CONTRADICTED, safety-critical: the cited page only supports '100% rice flour pancakes'. The venue's own site (archived) states 「※パスタは小麦とバターを使用しています。ご希望の方は、グルテンフリーのライスパスタへ変更可能です。」 — wheat pasta IS cooked on the premises, and blog.nagano-ken.jp (cited elsewhere in this same record) says 「サラダや平日限定のパスタな"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Savory pancakes such as ハーブ鶏の照り焼き (herb-chicken teriyaki, described as 甘じょっぱい / sweet-salty) and the Shinshu salmon plate use teriyaki/soy-based sauces that are wheat unless tamari — a celiac should confirm the sauce or choose the sweet pancakes.",
-      "source": "https://blog.nagano-ken.jp/hokuan/foods/18262.html"
+      "source": "https://blog.nagano-ken.jp/hokuan/foods/18262.html",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Whipped cream is soy-milk based (dairy-free) but pancake batter contains free-range egg, so pancakes are not vegan.",
-      "source": "https://www.web-komachi.com/?p=99836"
+      "source": "https://echohall.jp/cafefuwafuwa/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.web-komachi.com/?p=99836"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "No published allergy/celiac handling protocol found; the shop markets 'gluten-free pancakes' but is not a certified celiac kitchen. Communicate celiac disease directly at ordering.",
-      "source": "https://cafe-fuwafuwa.com/"
+      "source": "https://cafe-fuwafuwa.com/",
+      "unverifiable": "2026-08-20",
+      "why": "526 Cloudflare (origin SSL) live; 200 via Wayback"
      }
     ],
     "positives": [
      {
       "text": "Concept is 100% rice flour with no wheat flour on premises, plus reduced sugar, soy-milk cream, organic local produce and Nagano red sorghum — a genuinely rice-flour-first kitchen, unusual on the Hakuba route.",
-      "source": "https://echohall.jp/cafefuwafuwa/"
+      "source": "https://echohall.jp/cafefuwafuwa/",
+      "unsupported": "2026-08-20",
+      "why": "echohall supports rice flour / reduced sugar / soy-milk cream but says nothing about red sorghum or organic produce (those are on the venue site: 「厳選米粉・長野県産赤ソルガム粉を使ったふわふわパンケーキ」). And 'no wheat flour on premises' is false — same site sells wheat pasta. Also geographically wrong: this cafe is in Omach"
      }
     ],
     "confidence": "medium",
@@ -13174,6 +13183,13 @@
     "municipality": "大町市大町",
     "km": 34,
     "note": "Filed under Nagano but actually 34 km away in 大町市大町 — plan it as a separate trip, not an evening out."
+   },
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 2,
+    "overrides_signoff": false,
+    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
   },
   {
@@ -13462,11 +13478,13 @@
     "gf_cross_contamination": [
      {
       "text": "Shop makes both 米粉 (wheat-free) and 小麦粉 (wheat) donuts in the same small kitchen; no dedicated GF fryer or line is stated by the venue, so cross-contact is plausible.",
-      "source": "https://matsumoto.keizai.biz/headline/4257/"
+      "source": "https://matsumoto.keizai.biz/headline/4257/",
+      "verified": "2026-08-20"
      },
      {
       "text": "GF blogger warns: 「それ以外のドーナツは小麦を使用していますので、アレルギー表示を必ずご確認ください」 (other donuts use wheat — always check the allergen label) and does not confirm dedicated equipment.",
-      "source": "https://ameblo.jp/gf-akane/entry-12911932045.html"
+      "source": "https://ameblo.jp/gf-akane/entry-12911932045.html",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
@@ -13474,13 +13492,15 @@
     "staff_allergy_handling": [
      {
       "text": "No published allergen-handling protocol; blogger advises confirming allergen labels in person. Ask directly about separate frying oil for the 米粉 donuts.",
-      "source": "https://ameblo.jp/gf-akane/entry-12911932045.html"
+      "source": "https://ameblo.jp/gf-akane/entry-12911932045.html",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "The 米粉 old-fashioned donuts are made with in-house-milled rice flour and are described as 小麦粉不使用 (wheat-flour-free).",
-      "source": "https://www.web-komachi.com/?p=198502"
+      "source": "https://www.web-komachi.com/?p=198502",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",

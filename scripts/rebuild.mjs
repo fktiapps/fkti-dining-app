@@ -48,6 +48,7 @@ const STEPS = [
   ['flag-vegan-gluten-traps.mjs',     'flag vegan menu items made of wheat gluten', ['--apply']],
   // After merge-menus: it reads the shop's own researched menu as evidence against
   // the shop's own diet label.
+  ['fix-menu-promotions.mjs',         'revert menu-count promotions that contradict the record', ['--apply']],
   ['flag-vegan-contradictions.mjs',   'hold down "fully vegan" contradicted by the menu', ['--apply']],
   ['flag-borrowed-evidence.mjs',      "flag records citing another shop's evidence", ['--apply']],
   ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],

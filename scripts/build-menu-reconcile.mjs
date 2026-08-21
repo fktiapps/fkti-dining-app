@@ -50,7 +50,14 @@ for (const [id, m] of Object.entries(menus)) {
     vUp.push(`${was} → ${vt}  [${vgMeals} meals / ${vgItems} items]  ${p.name}`);
   }
   // GF: a real GF MEAL → "options" (cap). Tokens (rice+tea) don't count. Never celiac-safe from menu.
-  if (gfMeals >= 1 && ['no', 'ask'].includes(p.gf_confidence)) {
+  // Do NOT promote past the record's own words. This promoted shops to "options"
+  // while their researched gf_detail said "Not suitable for celiacs", and appended
+  // its reasoning rather than replacing, so the label and the prose beneath it
+  // contradicted each other. Counting menu items is weak evidence — one of these
+  // menus came off a Tabelog page last updated in 2011 — and it does not outrank a
+  // researcher's explicit sentence. See fix-menu-promotions.mjs.
+  const saysNot = /not suitable for celiac|no gluten-free|not gluten[- ]free|unsuitable for celiac/i.test(p.gf_detail || '');
+  if (gfMeals >= 1 && !saysNot && ['no', 'ask'].includes(p.gf_confidence)) {
     const was = p.gf_confidence; p.gf_confidence = 'options'; p.gf_label = 'Some GF options';
     p.gf_detail = (p.gf_detail || '') + ` (Menu review: ${gfMeals} gluten-free meal option${gfMeals === 1 ? '' : 's'} on the documented menu — but the kitchen is NOT certified GF; confirm cross-contamination, and for grilled/teppan items ask for a freshly-cleaned grill; if you can't be sure it's clean, don't risk it.)`;
     gUp.push(`${was} → options  [${gfMeals} GF meals]  ${p.name}`);
