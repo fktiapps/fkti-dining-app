@@ -93,7 +93,7 @@ const SEED = [
          'dairy, says allergy language does not exist when it does, and publishes stale hours.' },
 ];
 
-const recs = [], downgrades = [], malformed = [], closures = [], shopClaims = [];
+const recs = [], downgrades = [], malformed = [], closures = [], shopClaims = [], stillOpen = [];
 for (const s of SEED) {
   const hit = byId.get(s.id);
   if (!hit) { console.log(`  (seed id not found, skipping: ${s.id})`); continue; }
@@ -112,6 +112,16 @@ if (fs.existsSync(DIR))
       // away — leaving two confirmed-closed venues shipping with nowhere for the
       // finding to go. GLUTEN FREE CAFE avan had every branch shut and its own domain
       // NXDOMAIN; 京都茶寮翠泉 新宿店 closed 2026-08-03 「再開日未定」.
+      // An explicit "still open" verdict is worth as much as a closure. そば処はしもと
+      // looks shut from this repo's links — dead Peraichi site, and its Tabelog id now
+      // shows a different, closed shop — but Yahoo!マップ says 営業中 and its Instagram
+      // posted in July 2026. The agent logged it open precisely so a later sweep would
+      // not hide a trading business on link rot. Record that, so nothing does.
+      if (/^trading(_status)?$/.test(String(v.kind || '')) && /^(open|trading)$/i.test(String(v.status || ''))) {
+        const h = byId.get(v.id);
+        if (h) stillOpen.push({ city: h.city, id: v.id, name: h.r.name, why: String(v.why || '').slice(0, 300) });
+        continue;
+      }
       if (/^trading(_status)?$/.test(String(v.kind || '')) || v.status === 'closed_permanently' ||
           /^closed(_permanently)?$/i.test(String(v.recommended || ''))) {
         const h = byId.get(v.id);
@@ -191,6 +201,20 @@ if (APPLY && closures.length) {
 console.log(closures.filter(c => !c.already).length + ' venue(s) found closed and hidden' +
             (closures.length ? ' (' + closures.length + ' reported)' : ''));
 closures.forEach(c => console.log('  ' + c.city + '/' + String(c.name).slice(0, 34) + (c.already ? '  (already hidden)' : '')));
+if (APPLY && stillOpen.length) {
+  for (const c of CITIES) {
+    const j = readCity(c); let dirty = false;
+    for (const so of stillOpen.filter(x => x.city === c)) {
+      const r = j.places.find(x => x.id === so.id);
+      if (!r) continue;
+      r.trading_verified = { date: '2026-08-21', why: so.why };
+      if (r.hidden === 'closed') { delete r.hidden; delete r.closed; }   // restore a wrongly-hidden shop
+      dirty = true;
+    }
+    if (dirty) writeCity(c, j);
+  }
+}
+if (stillOpen.length) console.log(stillOpen.length + ' venue(s) confirmed still trading despite dead links');
 if (APPLY && shopClaims.length) {
   for (const c of CITIES) {
     const j = readCity(c); let dirty = false;

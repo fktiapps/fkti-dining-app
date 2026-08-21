@@ -259,5 +259,84 @@
   "http": "200 (plain curl with curl's DEFAULT UA, 126 KB) on 4travel.jp — but 403 Access Denied (Akamai edge, Reference #18.b1813217) when the SAME url was fetched with a desktop Chrome UA. Recording that inversion because it is the opposite of the usual advice: on 4travel at this run, sending a browser UA is what gets you blocked. 200 (plain curl, 208 KB) on tabelog.com/.../34017723/.",
   "method": "1 plain fetch (default UA) of the cited 4travel page; desktop-UA retry 403'd; cross-checked against the record's own Tabelog listing",
   "note": "Two defects. (a) The claim is contradicted by its own source: a reviewer on the cited page ate a 珈琲とケーキのセット, and クリームあずき is dairy — so 'rather than … heavy wheat-based dishes' and 'plant-based … starting point' are both overstated. Tabelog adds ミルクレープ and カステラ, i.e. this cafe sells layered crepe cake and castella, and gf_detail currently names no wheat item at all — add these three. (b) The cited page is STALE: all 8 reviews are 2014–2018 visits, newest posted 2019/01/10, and the venue's specific plum-syrup kakigori is one reviewer's 2014 order, not a menu listing. Trading status OK on fresher evidence: Tabelog 34017723 shows 口コミ dated 2026/08, no 閉店 banner (the only 閉店/移転 strings are the standard footer report link), address 広島県廃日市市宮島町260 (matching 4travel), hours 月・火・金・土・日 11:00-17:00 / 水・木定休日 「■定休日 加えて不定休」 — matching the record verbatim. gf 'ask' and vegan 'ask' both remain correct: the wheat and dairy items are real but so are 抹茶、かき氷、々んざい、羊翫、白玉, and nothing documents ingredients — no tier change, but the detail text needs the named wheat/dairy items."
+ },
+ {
+  "id": "hiro_yukarin_no_daidokoro",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Menu includes a herb-butter soy-flavored beef steak; standard Japanese soy sauce contains wheat, so soy-seasoned dishes here should be assumed to contain gluten.",
+  "url": "https://yukarinnno-daidokoro.com/",
+  "verdict": "supported",
+  "found": "Cited page, Food block: 「契約農家から直送された新鮮有機野菜をはじめ、四季折々の食材は旨味抜群。イベリコチョリソーと干しイチジク、ムール貝の白ワイン蒸し、自家製香草バター醤油風味の牛肉のステーキなど、野菜料理や魚介料理、肉料理まで、さまざまな自家製イタリアンをお召し上がりください。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 16.5 KB) on the cited root — SSR, the Policy/Food copy is in the HTML. /food.html and /course.html also 200 but are EMPTY shells (7.5 KB of HTML → 325 chars of text): the dish list is injected client-side by https://static.ccmphp.com/menu/1.2.0/tabelog.js into <div class=\"CMS-MENU\" cms-store-id=\"8162\">. Read the JS, found its backend, and fetched the menu as JSON: https://j7mlluopxa.execute-api.ap-northeast-1.amazonaws.com/v1/8162 → 200, 95.8 KB, keys menu_dom/course_dom/drink_dom/lunch_dom/course_details_dom/url. The domain in the record's website field is 'yukarinnno-daidokoro.com' with a TRIPLE n — that is correct, not a typo: yukarinno-daidokoro.com (double n) does not resolve (NXDOMAIN).",
+  "method": "2 JS-rendered-page route, resolved by reading the embed script and calling its API directly rather than giving up on the menu; cross-checked against Tabelog 34030631, which the API's own url field names as the menu's source",
+  "note": "Verbatim, and the claim is honestly framed — it says 'should be assumed', so the wheat step is flagged as an inference rather than smuggled in as a source fact. Two additions from the shop's live menu feed, which nobody has cited yet: the soy-sauce dishes are not one but three (山芬バター醤油炒め 700円, 蓮根のバター醤油炒め 700円, 牛肉のステーキ 1,800円), and the bigger gluten risks are elsewhere entirely: 濃厚デミグラスソースの煮込みハンバーグ (flour roux), ケサディーヤ, 激辛ソーセージのグリルトルティヤ添え (wheat tortillas), 海老とブロッコリーのトマトパスタ, ペンネアラビアータ, 揚げ出し豆腐 洋風. gf 'no' is right; gf_detail should name these."
+ },
+ {
+  "id": "hiro_yukarin_no_daidokoro",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The kitchen uses fresh organic vegetables from contracted farmers, so plant-forward sides may be available on request.",
+  "url": "https://yukarinnno-daidokoro.com/",
+  "verdict": "supported",
+  "found": "「契約農家から直送された新鮮有機野菜をはじめ、四季折々の食材は旨味抜群。」 and, in the Policy block, 「まるごとブロッコリーのガーリックオイルがけや牛肉のステーキなど、美味しい料理が盛りだくさん。」 The menu feed prices it: 丸ごとブロッコリーのガーリックオイルかけ 880円.",
+  "correct_url": null,
+  "http": "200 (plain curl, 16.5 KB) on the cited root — SSR, the Policy/Food copy is in the HTML. /food.html and /course.html also 200 but are EMPTY shells (7.5 KB of HTML → 325 chars of text): the dish list is injected client-side by https://static.ccmphp.com/menu/1.2.0/tabelog.js into <div class=\"CMS-MENU\" cms-store-id=\"8162\">. Read the JS, found its backend, and fetched the menu as JSON: https://j7mlluopxa.execute-api.ap-northeast-1.amazonaws.com/v1/8162 → 200, 95.8 KB, keys menu_dom/course_dom/drink_dom/lunch_dom/course_details_dom/url. The domain in the record's website field is 'yukarinnno-daidokoro.com' with a TRIPLE n — that is correct, not a typo: yukarinno-daidokoro.com (double n) does not resolve (NXDOMAIN).",
+  "method": "2 JS-rendered-page route, resolved by reading the embed script and calling its API directly rather than giving up on the menu; cross-checked against Tabelog 34030631, which the API's own url field names as the menu's source",
+  "note": "Supported, and stronger than 'may be available on request' — the broccoli dish is a priced standing menu item, not something to negotiate. Trading status OK but the record's own hours note is now resolvable: Tabelog 34030631 gives 月・水・木・金・土・日 18:00-02:00 (L.O. 01:00) / 火定休日, matching the record's listing half; the official site's 定休日 FIELD does not state a weekly closing day at all — it contains a stale one-off notice, 「5月6日（火）通常営業 5月13日（火）〜15日（木）臨時休業」 — so the record's parenthetical 'official site states normally open Tuesdays' is a misreading of a one-week exception. Also worth recording: the shop RELOCATED — 「このお店は「広島市中区大手町1-4-31」から移転しています」; current address 広島市中区胡町2-11, and the record's lat/lng 34.392204/132.466217 is already on the new site. Freshness caveat: newest Tabelog review 2025/12, site ©2025, and the AirReserve calendar (airrsv.net/mitsuboshiyataihiroshima) currently returns 「選択可能な予約メニューがありません」 — no bookable slots, which is a soft signal, not a closure."
+ },
+ {
+  "id": "hiro_yukarin_no_daidokoro",
+  "city": "hiroshima",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://yukarinnno-daidokoro.com/",
+   "https://j7mlluopxa.execute-api.ap-northeast-1.amazonaws.com/v1/8162",
+   "https://tabelog.com/hiroshima/A3401/A340110/34030631/"
+  ],
+  "why": "limited — the record's own vegan_detail already concedes the dish (‘whole roasted broccoli with garlic oil’) and then withholds the tier on the ground that ‘there is no indication these are prepared without animal products’. The live menu answers that: this kitchen names its fats in the dish titles, and it distinguishes them consistently — 蓮根のバター醤油炒め and 山芬バター醤油炒め say BUTTER, とろ～りチーズの豚もやし炒め says CHEESE, while 丸ごとブロッコリーのガーリックオイルかけ (880円) says garlic OIL. One priced, standing, plant-only side plus the operator's 契約農家 organic-vegetable sourcing is what 'limited' is for; 'no' means a vegan should not walk in, and that is not what this menu says. Same basis this sweep used at r58 (hiro_hiroshima_taishu_izakaya, no → limited). Not higher than 'limited': it is one item out of 22, everything else on the list is meat, seafood, egg, cheese or pasta, and no allergen or preparation detail is published."
+ },
+ {
+  "id": "kz_akadama_honten",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Oden ingredients including wheat-gluten 車麸 are simmered together in shared communal pots, so even non-wheat items share the same broth.",
+  "url": "https://www.oden-akadama.com/pages/117/",
+  "verdict": "supported",
+  "found": "「金沢おでんとは、車麸、赤巻、ふかし、バイ貝、カニ面、金沢銀杏（ぎんなん）を使ったひろず、源助大根などの加賀野菜といった金沢独特の具と、各店が大切にするだしを用いたものと定義されています。」／「赤玉本店では、金沢おでんの代表的な具材、車麸や赤巻、バイ貝を始め、定番の大根やキス科のにぎすを使用したつみれなど、厳選された食材をもとに丁寧に一つ一つ手作りしています。」／「毎日欠かさずつぎ足し続けている秘伝のおでん出汁…旬の加賀野菜や、一つひとつ丹精込めて作られた練り物からにじみ出るうまみ成分がたっぷりと溶け込んでいます」",
+  "correct_url": null,
+  "http": "200 (plain curl, 85.3 KB) on the cited page; 200 (plain curl, 123 KB) on the site root",
+  "method": "1 plain fetch — no UA switch, proxy, Wayback or search engine needed",
+  "note": "Fully supported, and the shared-pot mechanism is actually stated more strongly than the record claims: the stock is a つぎ足し master broth replenished daily since 1947, and the operator explicitly says the vegetables' and fish cakes' flavours dissolve INTO it — so the gluten from 車麸 is in the liquid every other item sits in, not merely adjacent to it. Two wheat vectors to add: they run 約40種類 of oden-dane and the 練り物 family named here (赤巻、ふかし、にぎすのつみれ、ひろず) are the class of product routinely bound with wheat starch, and カニ面 likewise."
+ },
+ {
+  "id": "kz_akadama_honten",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "The 'black dashi' and stewed dishes use 大野醤油 (Oono soy sauce), a traditional whole-soybean soy sauce that contains wheat.",
+  "url": "https://www.oden-akadama.com/pages/117/",
+  "verdict": "supported",
+  "found": "「赤玉本店では、「おでん出汁＝白出汁」と、「黒出汁」の２種類のお出汁を使い分けています。名物の『牛すじ煮込み』や『湯豆腐』に使われるのは、秘伝のおでん出汁に金沢の大野醤油を加えたほんのり甘い黒出汁です。」／「赤玉本店では、無着色・無添加のオリジナルブレンドの丸大豆醤油を使用。」",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited page and the root",
+  "method": "1 plain fetch",
+  "note": "Supported, and this record gets right the exact thing the brief warns about: the operator advertises 丸大豆醤油 and 無添加, which reads as clean-label and is routinely mistranslated as wheat-free — 丸大豆 describes whole soybeans, not the absence of wheat, and 大野のうまくち醤油 is a koji-brewed こいくち-family soy sauce, i.e. wheat. The record says 'whole-soybean soy sauce that CONTAINS wheat', which is correct. One caveat for whoever reads this next: the word 小麦 is printed nowhere on the page (小麦 0 hits, アレル 0 hits), so the wheat step is a standard-brewing inference, correctly drawn but not quoted — if a hard citation is wanted it has to come from the 大野醤油 maker's own label, not from Akadama. Note also 無添加 refers to additives, not allergens."
+ },
+ {
+  "id": "kz_akadama_honten",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The base white dashi is made from kombu and dried sardines (niboshi), so all simmered items, including vegetables, sit in fish stock.",
+  "url": "https://www.oden-akadama.com/pages/117/",
+  "verdict": "supported",
+  "found": "「以降、毎日欠かさずつぎ足し続けている秘伝のおでん出汁は、厳選された昆布と煎り干しをベースに、金沢のおいしい水で手間暉かけて煮出した、手作りならではのやさしい味わい。」／「赤玉本店では、「おでん出汁＝白出汁」と、「黒出汁」の２種類のお出汁を使い分けています。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Verbatim: 昆布と煎り干し is the base of the white dashi, the black dashi is that same stock plus soy sauce, so BOTH broths are fish, and 源助大根 and the other 加賀野菜 sit in it. vegan 'no' is correct; no tier change. DATA DEFECT on this record, unrelated to citations: the stored hours are wrong. The operator's current site (footer of the cited page and of the root) says 「平日・土12:00～15:00、16:00～23:00 日祝12:00～15:00、16:00〜22:00 各階共にラストオーダーは閉店30分前」 and 「定休日 月曜日」 — i.e. there is now a 15:00-16:00 break, Saturday follows the WEEKDAY pattern (not the Sunday one), and the two floors no longer keep different hours. The record stores 1F Tue-Fri 12:00-22:00 continuous, Sat grouped with Sun/holidays, and a separate 2F 17:00-22:00 schedule; all three are stale. Trading status OK and unusually well evidenced: the cited page carries a LIVE queue widget — 「赤玉 本店 待ち組数： 1 組 待ち時間： 約10分」 — so the shop was seating customers at fetch time; address 石川県金沢市片町2丁目21番地2号, invoice registration T4220001000691."
  }
 ]

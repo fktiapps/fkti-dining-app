@@ -595,6 +595,20 @@
   "why": "options — the record's vegan_detail states 'There is no published vegan or vegetarian set menu', and that is false. This shop's own menu carries two, both flagged ビーガン in the item name: 「[要予約]※当日予約可 【ヴィーガン対応】菜食懐石」 6,200円 (湯葉豆腐と黒胡麻豆腐のお造り・アボカドと南瓜の豆腐サラダ・湯葉と野菜の豆乳しゃぶしゃぶ・ふく福豆冨 二色あん掛け・生麸田楽・大豆ミートの湯葉カツと大根餅・湯葉豆腐の蒲焼き・湯葉吸物・生湯葉のあん掛け御飯・香の物・デザート) and 「【ヴィーガン対応】菜食ランチ」 4,200円. Both are 要予約 but explicitly ※当日予約可. 'ask' tells a vegan to go and enquire; the operator has already published the answer, with prices and full course content. Not 'full' — the surrounding kitchen is wagyu, unagi, crab and dashimaki, and the vegan course is a bookable exception, not the house style. NOTE for whoever applies this: the vegan course itself contains 生麸 (raw wheat gluten) and a 湯葉カツ, so this upgrade must NOT be mirrored on gf_confidence."
  },
  {
+  "city": "hiroshima",
+  "id": "hiro_yukarin_no_daidokoro",
+  "name": "ゆかりんの台所 (Yukarin no Daidokoro)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://yukarinnno-daidokoro.com/",
+   "https://j7mlluopxa.execute-api.ap-northeast-1.amazonaws.com/v1/8162",
+   "https://tabelog.com/hiroshima/A3401/A340110/34030631/"
+  ],
+  "why": "limited — the record's own vegan_detail already concedes the dish (‘whole roasted broccoli with garlic oil’) and then withholds the tier on the ground that ‘there is no indication these are prepared without animal products’. The live menu answers that: this kitchen names its fats in the dish titles, and it distinguishes them consistently — 蓮根のバター醤油炒め and 山芬バター醤油炒め say BUTTER, とろ～りチーズの豚もやし炒め says CHEESE, while 丸ごとブロッコリーのガーリックオイルかけ (880円) says garlic OIL. One priced, standing, plant-only side plus the operator's 契約農家 organic-vegetable sourcing is what 'limited' is for; 'no' means a vegan should not walk in, and that is not what this menu says. Same basis this sweep used at r58 (hiro_hiroshima_taishu_izakaya, no → limited). Not higher than 'limited': it is one item out of 22, everything else on the list is meat, seafood, egg, cheese or pasta, and no allergen or preparation detail is published."
+ },
+ {
   "city": "kanazawa",
   "id": "kz_amanatto_kawamura",
   "name": "甘納豆かわむら (Amanatto Kawamura)",
@@ -618,6 +632,18 @@
    "https://mame-kawamura.com/items/"
   ],
   "why": "options — the record's vegan_detail hedges that 'some confections … may use dairy, eggs or honey', but the shop's own itemised 原材料 lists show zero animal ingredients across the whole retail range (beans, nuts, chestnut, sweet potato, citrus, olive, sugar, trehalose, reduced starch syrup). The 2F tea salon is separately branded and unlisted, which is why this is 'options' with an ask-at-the-salon caveat rather than 'full'."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_cafe_yasuecho_jardin",
+  "name": "カフェ 安江町ジャルダン (Cafe Yasuecho Jardin)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.weekend-kanazawa.com/entry/yasuechojardin"
+  ],
+  "why": "ask — the record calls the venue wheat-centric on the strength of a pancake it does not serve. The article publishes the full four-ingredient list of the 宝達くずミルクプリン (宝達葛, きび砂糖, 牛乳, 生クリーム, topped きな粉+黒蜜) — every one wheat-free — made to order in 20 minutes by a hands-on owner who tastes and approves each item. That is exactly an 'ask' situation, not a 'no'. Caveat for the human gate: scones are baked to order in the same small machiya kitchen, so airborne flour is a live risk and must stay in gf_detail."
  },
  {
   "city": "kanazawa",
