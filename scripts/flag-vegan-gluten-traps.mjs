@@ -1,4 +1,4 @@
-// Menu items that are vegan AND made of gluten.
+// Menu items made of wheat gluten that do not say so.
 //
 // A verification agent found 車麩かつサンド listed under a shop's *Vegan* lunch sets.
 // 車麩 is seitan — pure wheat gluten, the single most concentrated source there is.
@@ -66,7 +66,8 @@ for (const city of CITIES) {
                   was, becomes: grade, why, claimed_safe: was === 'gf' });
       if (APPLY) {
         it.gf = grade;
-        it.note = `⚠ ${why}. Vegan but ${grade === 'no' ? 'NOT gluten-free' : 'gluten status must be confirmed'}. ` + (it.note || '');
+        const veganLine = it.vegan === 'vegan' ? 'Vegan but ' : '';
+        it.note = `⚠ ${why}. ${veganLine}${grade === 'no' ? 'NOT gluten-free' : 'gluten status must be confirmed'}. ` + (it.note || '');
       }
     }
   }

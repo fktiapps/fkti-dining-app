@@ -3898,9 +3898,9 @@
    "category": "MOM_AND_POP",
    "lat": 34.485886,
    "lng": 136.844208,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "Naturally GF-friendly items exist: plainly charcoal-grilled (素焼き) shellfish — oysters, sazae, abalone, scallops — and sashimi. However there is no published allergen handling and no dedicated fryer information. The danger points are wheat-containing soy sauce used in/over sazae tsuboyaki (turban-shell broth often seasoned with shoyu) and any dipping soy sauce, plus possible shared grill/utensil surfaces. A celiac should request items grilled plain with no soy sauce / no shared brush, and ask before eating tsuboyaki. Treat as \"ask on site.\"",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. Naturally GF-friendly items exist: plainly charcoal-grilled (素焼き) shellfish — oysters, sazae, abalone, scallops — and sashimi. However there is no published allergen handling and no dedicated fryer information. The danger points are wheat-containing soy sauce used in/over sazae tsuboyaki (turban-shell broth often seasoned with shoyu) and any dipping soy sauce, plus possible shared grill/utensil surfaces. A celiac should request items grilled plain with no soy sauce / no shared brush, and ask before eating tsuboyaki. Treat as \"ask on site.\"",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
    "vegan_detail": "This is a dedicated shellfish/seafood grill and souvenir shop; the entire menu is oysters, turban shell, abalone, spiny lobster, clams, scallops and sashimi. There are no plant-based dishes, and grills, broths and sauces are seafood-based. Not suitable for vegans.",
@@ -3990,26 +3990,31 @@
     "gf_cross_contamination": [
      {
       "text": "No published allergen or cross-contamination policy; shellfish are grilled on shared charcoal grills and a celiac should ask for items grilled plain without soy sauce or a shared basting brush.",
-      "source": "https://tabelog.com/mie/A2403/A240302/24013111/"
+      "source": "https://tabelog.com/mie/A2403/A240302/24013111/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Sazae tsuboyaki (turban shell) and dipping sauces are commonly seasoned with wheat-containing soy sauce; confirm before eating and ask for no-shoyu preparation if you need strict GF.",
-      "source": "https://www.toba.gr.jp/eat/1836/"
+      "source": "https://www.toba.gr.jp/eat/1836/",
+      "unsupported": "2026-08-20",
+      "why": "The Toba tourism-association page carries NO information about soy sauce, seasoning or sauces at all — the whole cited page is the four lines quoted. The advisory may be true as general knowledge about さざえのつぼ焼き, but nothing on this URL says it. The only wheat/soy item actually evidenced for this sho"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Entirely a shellfish/seafood operation with seafood-based grills and broths; not suitable for vegans and cross-contact with animal products is unavoidable.",
-      "source": "https://tabelog.com/mie/A2403/A240302/24013111/"
+      "source": "https://tabelog.com/mie/A2403/A240302/24013111/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
     "positives": [
      {
       "text": "Plainly charcoal-grilled (素焼き) shellfish and sashimi are naturally gluten-free when served without soy sauce, giving a celiac workable options if requested.",
-      "source": "https://tabelog.com/mie/A2403/A240302/24013111/"
+      "source": "https://tabelog.com/mie/A2403/A240302/24013111/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -4025,7 +4030,14 @@
    "menu_gf_count": 11,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 11,
-   "menu_vegan_count": 1
+   "menu_vegan_count": 1,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": false,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "toba_mizunuma_sazae_ten",
@@ -9800,8 +9812,8 @@
    "category": "VEGAN",
    "lat": 34.759965,
    "lng": 136.525242,
-   "gf_confidence": "options",
-   "gf_detail": "A homemade-yeast (自家製酵母) bakery-café whose signature items are 「自家製酵母で焼くビーガングルテンフリーなベーグル、マフィンやケーキ」(vegan gluten-free bagels, muffins and cakes) — so genuine vegan GF baked goods and raw-food dishes exist. HOWEVER the same kitchen also bakes wheat sourdough bread (自家製酵母パン, plain パン ¥290–650), wheat castella (te-teくまのカステラ ¥1,078) and wheat pasta lunches, so flour is airborne in a shared space. This is options-level, NOT dedicated: cross-contact from wheat baking is a real risk for a celiac child. Also note location — this shop is in Tsu, roughly 35–40 km north of Ise, off the Toba/Ise-Shima route (only worth it if passing through Tsu on Rt.23).",
+   "gf_confidence": "ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. A homemade-yeast (自家製酵母) bakery-café whose signature items are 「自家製酵母で焼くビーガングルテンフリーなベーグル、マフィンやケーキ」(vegan gluten-free bagels, muffins and cakes) — so genuine vegan GF baked goods and raw-food dishes exist. HOWEVER the same kitchen also bakes wheat sourdough bread (自家製酵母パン, plain パン ¥290–650), wheat castella (te-teくまのカステラ ¥1,078) and wheat pasta lunches, so flour is airborne in a shared space. This is options-level, NOT dedicated: cross-contact from wheat baking is a real risk for a celiac child. Also note location — this shop is in Tsu, roughly 35–40 km north of Ise, off the Toba/Ise-Shima route (only worth it if passing through Tsu on Rt.23).",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "Strong plant-based/macrobiotic focus: vegan GF bagels, muffins and cakes, a half-raw lunch, vegan 'butter chicken' curry with raw-food sides, and vegan parfaits/tarts. Not fully vegan (also serves dairy/egg bakes), but many vegan choices.",
@@ -9883,7 +9895,9 @@
     "gf_cross_contamination": [
      {
       "text": "Shared kitchen bakes wheat sourdough (自家製酵母パン, パン ¥290–650), wheat castella and pasta alongside the vegan GF items — airborne flour and shared surfaces make cross-contact likely. Not dedicated; risky for celiac.",
-      "source": "https://tabelog.com/mie/A2401/A240101/24014795/"
+      "source": "https://tabelog.com/mie/A2401/A240101/24014795/",
+      "unsupported": "2026-08-20",
+      "why": "SAFETY-CRITICAL, OVER-STATES THE RISK. Three named wheat items: two are absent from the cited page and one is contradicted. (a) 'te-teくまのカステラ ¥1,078' exists nowhere — the only カステラ strings on the page are a DIFFERENT nearby shop in the ranking widget (デ カルネロ カステ 津本店) and a reviewer's simile 「中はカステラの"
      }
     ],
     "soy_sauce_wheat": [],
@@ -9891,13 +9905,15 @@
     "staff_allergy_handling": [
      {
       "text": "No published allergen-control protocol; GF is a product category, not a certified celiac program. Ask directly how GF items are separated from wheat baking.",
-      "source": "https://vegewel.com/ja/restaurant/2027"
+      "source": "https://vegewel.com/ja/restaurant/2027",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Genuine vegan gluten-free bagels, muffins and cakes made with homemade yeast; raw-food and macrobiotic options.",
-      "source": "https://vegewel.com/ja/restaurant/2027"
+      "source": "https://vegewel.com/ja/restaurant/2027",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -9909,13 +9925,20 @@
    "menu_gf_meals": 1,
    "menu_vegan_count": 6,
    "menu_vegan_meals": 3,
-   "gf_label": "Some GF options",
+   "gf_label": "GF — ask",
    "mom_and_pop": false,
    "menu_gf_ask_count": 3,
    "outside_city": {
     "municipality": "栗真中山町",
     "km": 43,
     "note": "Filed under Toba but actually 43 km away in 栗真中山町 — plan it as a separate trip, not an evening out."
+   },
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": false,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
   },
   {
@@ -10017,7 +10040,8 @@
     "gf_cross_contamination": [
      {
       "text": "Shared tourist-market café kitchen with no celiac-specific or wheat-free-kitchen claim; GF items are curated menu items (some likely naturally GF). Cross-contact unverified — ask staff per item.",
-      "source": "https://vegewel.com/ja/restaurant/2565"
+      "source": "https://vegewel.com/ja/restaurant/2565",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
@@ -10025,17 +10049,21 @@
     "staff_allergy_handling": [
      {
       "text": "Vegewel lists GF menu available and vegan/vegetarian modification possible, implying staff accommodate dietary requests; no formal allergy protocol published.",
-      "source": "https://vegewel.com/ja/restaurant/2565"
+      "source": "https://vegewel.com/ja/restaurant/2565",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Own-farm pesticide-free (無農薬) herbs and fruit; organic focus; registered Mie health-support shop.",
-      "source": "https://www.healthy.pref.mie.lg.jp/shop/%E8%8C%B6%E5%B1%8B%E3%82%A6%E3%82%AB%E3%83%8E%E3%83%9F%E3%82%BF%E3%83%9E/"
+      "source": "https://tokowakaya.com/blogs/news/ber_ukanomitama_open",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.healthy.pref.mie.lg.jp/shop/%E8%8C%B6%E5%B1%8B%E3%82%A6%E3%82%AB%E3%83%8E%E3%83%9F%E3%82%BF%E3%83%9E/"
      },
      {
       "text": "Open 9:00–17:00 year-round; easy sightseeing stop by Meoto Iwa, one stop from Toba.",
-      "source": "https://tokowakaya.com/blogs/news/ber_ukanomitama_open"
+      "source": "https://tokowakaya.com/blogs/news/ber_ukanomitama_open",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -10151,7 +10179,8 @@
     "gf_cross_contamination": [
      {
       "text": "Owner's claim is that the entire single-product line is rice flour (米粉), including custard and chocolate creams, so wheat flour should not be present — but this is a self-declaration, not a certified allergen-controlled facility; confirm by phone for a celiac child.",
-      "source": "https://yamadasampou.com/news/137/"
+      "source": "https://yamadasampou.com/news/137/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
@@ -10159,17 +10188,20 @@
     "staff_allergy_handling": [
      {
       "text": "「小麦粉アレルギーの方にも安心して…お召し上がりいただけます」— shop states wheat-allergy customers can eat safely.",
-      "source": "https://yamadasampou.com/news/137/"
+      "source": "https://yamadasampou.com/news/137/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Whole product line converted to all-gluten-free rice flour (batter + creams); anko naturally wheat-free.",
-      "source": "https://yamadasampou.com/news/137/"
+      "source": "https://yamadasampou.com/news/137/",
+      "verified": "2026-08-20"
      },
      {
       "text": "2 minutes from Iseshi Station, on the main Ise Jingu approach route.",
-      "source": "https://www.iseshima-kanko.jp/gourmet/3083"
+      "source": "https://www.iseshima-kanko.jp/gourmet/3083",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",

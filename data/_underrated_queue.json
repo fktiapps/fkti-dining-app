@@ -1,0 +1,46 @@
+[
+ {
+  "city": "nagoya",
+  "id": "nagoya_bitte",
+  "name": "Gluten Free BITTE (グルテンフリーBITTE)",
+  "field": "gf_confidence",
+  "current": "options",
+  "recommended": "dedicated",
+  "evidence": [],
+  "why": "Describes itself as 「コンタミネーションを徹底管理した小麦不使用・完全グルテンフリーのお店」; 小麦 unticked on all 24 catalogued products; gluten-intolerant owner-baker. Also filed under Nagoya but located in 尾張旭市, and since April 2026 opens once a month by reservation.",
+  "source": "transcribed from agent prose"
+ },
+ {
+  "city": "nara",
+  "id": "nara_laccola",
+  "name": "laccola (ラッコラ)",
+  "field": "gf_confidence",
+  "current": "options",
+  "recommended": "high",
+  "evidence": [],
+  "why": "The high->options downgrade rested on \"the shop makes no blanket GF claim\". laccola.com's own header and meta description do make one, and every storefront item is 米粉-based with no 小麦 in any 原材料. Keep the uncertified-oat caveat, whose real evidence is laccola.base.shop rather than the komeko-palette page cited.",
+  "source": "transcribed from agent prose"
+ },
+ {
+  "city": "nara",
+  "id": "nara_shika_san_chocolat",
+  "name": "しかさんしょこら（Shika san chocolat） (Shika san chocolat)",
+  "field": "gf_confidence",
+  "current": "options",
+  "recommended": "high",
+  "evidence": [],
+  "why": "Single-product shop excluding 小麦粉, 米粉 and baking powder outright, corroborated by two sources, yet sits at options.",
+  "source": "transcribed from agent prose"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_menbaka_ichidai_menbaka_",
+  "name": "めん馬鹿一代 (Menbaka Ichidai (Menbaka Fire Ramen))",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "high",
+  "evidence": [],
+  "why": "The 2026-07-02 downgrade cites a \"shared boiling water\" line the owner has publicly retracted as outdated menu phrasing. Across 38 FMGF reviews: a dedicated separate pot, symptomatic celiacs reporting no reaction, and the two \"not safe\" reviews are from people who read the stale line and left without eating.",
+  "source": "transcribed from agent prose"
+ }
+]

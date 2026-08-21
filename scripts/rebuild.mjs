@@ -55,6 +55,7 @@ const STEPS = [
   ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],
   ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
+  ['gen-underrated-queue.mjs',        'collect upgrade recommendations for the human gate'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
   // Last, because it hashes the shipped files and must see their final state. The
   // service worker keys every cache off VERSION, so without this a returning user

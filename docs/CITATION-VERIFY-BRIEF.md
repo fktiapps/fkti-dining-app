@@ -79,6 +79,28 @@ For record sweeps also return, once per record, a `record_verdict`:
 `defective` (at least one claim is unsupported anywhere) · `blocked` (too much
 unreachable to judge).
 
+## Say when a record is UNDER-rated, not only when it is over-rated
+
+A review that only ever moves labels down is not an honest review. Menbaka Fire Ramen
+was downgraded on a "shared boiling water" line the owner had publicly retracted;
+BITTE carries `options` while describing itself as 「コンタミネーションを徹底管理した小麦
+不使用・完全グルテンフリーのお店」 with 小麦 unticked on all 24 of its products. Denying a
+celiac a genuinely safe place is a real cost, and this app exists to find them.
+
+So on every record sweep, add one `tier_recommendation` object per record when the
+evidence supports a tier DIFFERENT from the one the record carries:
+
+```json
+{ "id": "<record id>", "kind": "tier_recommendation",
+  "field": "gf_confidence" | "vegan_status",
+  "current": "options", "recommended": "high",
+  "evidence": ["<url>", "..."], "why": "<one or two sentences>" }
+```
+
+Recommend only; nothing you write promotes a record. Upgrades pass through
+REVIEW_PROTOCOL.md's human gate, because a tier above "ask" is the one thing in this
+app that can make someone stop checking for themselves.
+
 ## Output
 
 Write a JSON array to the path you are given. One object per item:
