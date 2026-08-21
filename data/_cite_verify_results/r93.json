@@ -1,0 +1,137 @@
+[
+ {
+  "id": "kyr_menya_kiyo_ichijoji",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "House-made wheat noodles are boiled to order in shared ramen water; no gluten-free preparation exists, so cross-contamination with wheat is unavoidable.",
+  "url": "https://yukou-kiyo.com/kiyo.html",
+  "verdict": "supported",
+  "found": "「自家製麺 併設の自社製麺所で毎朝製麺した自家製麺は醤油ベースのスープによく絡み、モチモチとしたコシのある食感が特徴です。」 The page is a shoyu-ramen 専門店 page with an in-house noodle factory and carries no allergen, gluten-free or celiac wording anywhere.",
+  "correct_url": null,
+  "http": "200 (plain curl, no UA needed)",
+  "method": "1 plain fetch",
+  "note": "Core claim stands: own-milled ramen noodles, zero GF provision on the operator's own page. Narrow the wording — the page never mentions a shared noodle-boiler, that half is our inference; and the group's 麺屋優光 page states the noodles are 「全粒粉による小麦の香りと、うどん粉をブレンド」, i.e. wheat plus udon flour, which is the stronger sentence to cite."
+ },
+ {
+  "id": "kyr_menya_kiyo_ichijoji",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth's defining element is a special soy-sauce (shoyu) tare made with traditional Kyoto soy sauce; Japanese soy sauce is normally brewed with wheat, so the broth contains wheat-derived gluten.",
+  "url": "https://yukou-kiyo.com/kiyo.html",
+  "verdict": "supported",
+  "found": "「京都の出汁文化を地元京都、日本、そして世界に発信することを目標にした醤油ラーメン専門店です。」 and 「チャーシューの油と混ざることで完成する麺屋聖の特製醤油スープを3種類ご用意しております。出汁、醤油の美味しさを感じてください。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Shoyu-tare claim is supported verbatim (three 特製醤油スープ). But the page says 京都の出汁 culture, not Kyoto SOY SAUCE — the 「京都醤油など数種類の醤油をブレンド」 line exists only on the Nagoya-Sakae branch's Instagram, which is sibling-branch evidence. Reword to 'a house special shoyu soup' unless an Ichijoji-specific source for the Kyoto-shoyu blend is found. No 小麦不使用 or tamari claim is made anywhere, so the wheat inference is the safe reading."
+ },
+ {
+  "id": "kyr_menya_kiyo_ichijoji",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is built on shellfish dashi (oyster, clam, shrimp) and the shop's centerpiece is pork chashu; no vegan or vegetarian bowl is offered, so there is no animal-free option to protect from cross-contact.",
+  "url": "https://yukou-kiyo.com/kiyo.html",
+  "verdict": "wrong_source",
+  "found": "The cited official page never says 貝出汁 at all — it says only 出汁/醤油. The shellfish detail is on a March-2026 Ichijoji visit report: 「貝出汁ベースの醤油ラーメン。牡蠣、あさり、しじみの旨味を凝縮した一杯」 (address-matched: 京都府京都市左京区一乗寺払殿町48 コーポ吉沢).",
+  "correct_url": "https://58-gourmet.blog.jp/archives/29686125.html",
+  "http": "200 official (plain); 200 58-gourmet (iPhone UA); 200 Ecosia search",
+  "method": "1 plain fetch + Ecosia exact-term search + 1 iPhone-UA fetch of the blog",
+  "note": "Two fixes. (1) Attach the 58-gourmet post for the shellfish dashi; the official page only evidences the pork half (「独自の方法で豚肉を徹底的にやわらかくし」) and the all-meat menu (肉餃子/豚丼), which does support 'no vegan bowl'. (2) The third shellfish is wrong: しじみ is a freshwater CLAM, not shrimp — 牡蠣・あさり・しじみ. A shellfish-allergic reader avoiding crustaceans is being given the wrong hazard. Also flag the cited page as menu-stale: it still lists ギフト/シンプル/しるし 800円 while the shop moved to 淡竹/真竹/黒竹 with rare pork chashu by March 2026."
+ },
+ {
+  "id": "kyr_menya_kiyo_ichijoji",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://yukou-kiyo.com/kiyo.html",
+   "https://58-gourmet.blog.jp/archives/29686125.html",
+   "https://tabelog.com/kyoto/A2601/A260303/26031309/"
+  ],
+  "why": "Open. The group's own site still lists 麺屋聖kiyo among its live branches with 京都市左京区一乗寺払殿町48 コーポ吉沢, tel 075-606-5459, 11:00-15:00 / 17:30-22:00, 定休日 木曜・不定休; a March-2026 visit report (published 2026-04-09) eats there and gives the same address and phone; Tabelog 26031309 carries no 閉店/移転/掲載保留 banner. Only change is a menu rename (ギフト/シンプル/しるし → 淡竹/真竹/黒竹) and a switch to rare chashu."
+ },
+ {
+  "id": "kyr_menya_roman",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is finished with a soy-based (shoyu) seasoning and soy sauce is available at the table for adjustment — standard wheat-containing shoyu, not gluten-free.",
+  "url": "https://osumituki.com/kyoto-ramen/224634.html",
+  "verdict": "supported",
+  "found": "「スープは「鶏ガラ・野菜」がスープベース（出汁）。味付け（タレ）は醤油ダレですが塩味控えめで鶏の旨味を味わうラーメンという感じです。」 and 「卓上に醤油ダレ（ラーメンダレ）があるので調整すると良いでしょう。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Exact match, both halves — shoyu tare and a table-side shoyu bottle. Strengthen the record with the noodle sourcing the same page gives: 「製麺所は…麺屋棣鄂（ていがく）」, a wheat ramen-noodle maker, and note the 和牛ラーメン / 和牛ユッケ重 / とりチャーシュー丼 line-up which independently confirms vegan_status 'no'."
+ },
+ {
+  "id": "kyr_menya_roman",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://osumituki.com/kyoto-ramen/224634.html"
+  ],
+  "why": "Open, and very new. The only source is a same-week opening report: 「2026年1月29日に開業（創業）するラーメン店「麺家ろまん」」, visited on day two (2026-01-30), address 〒600-8216 京都府京都市下京区木津屋橋通室町東入東塩小路町５７９−２４ ハウス２４, hours 11:00-15:00 L.O. / 17:00-22:00 L.O., 定休日 記載なし. No later source exists yet and the record has no website, so treat trading status as unconfirmed after Jan 2026 rather than stale."
+ },
+ {
+  "id": "kyr_menya_ryugen",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The defining feature of the bowl is a deep, jet-black soy-sauce broth/tare in the Shinpuku Saikan style; soy-sauce tare of this type is standard wheat-based shoyu, so the ramen should be treated as containing wheat.",
+  "url": "https://gcjapan-kyoto.com/ryugen/",
+  "verdict": "supported",
+  "found": "「新福菜館出身の店主さんが切り盛りするラーメン店。新福のDNA感じるブラック醤油ラーメンとヤキメシは絶品。」 and 「中華そば 850円 漆黒のブラックスープ。醤油の香り感じる鶏ガラ豚骨醬油スープは醤油の風味に豚骨のコクと旨味が絶妙にマッチ。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch, corroborated by 1 plain fetch of the shop's own site",
+  "note": "Fully supported, including the Shinpuku-Saikan lineage. The shop's own menu page corroborates it four times over (中華そば 「適度な醤油の香り」, チャーシュー麺 「醤油ダレの味が染み込んだチャーシュー」, 味付煮卵 「特製の醤油ダレに漬け込んだ」, 焼き飯 「醤油の香ばしさ」) — add http://ryugen.asia/menu as a second source. No tamari, no 小麦不使用, no allergen page anywhere; price is now 900円 not 850円."
+ },
+ {
+  "id": "kyr_menya_ryugen",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is a pork-bone and chicken base with pork-loin chashu, and the yakimeshi is cooked with pork; there are no plant-based items, so cross-contact with animal products is total.",
+  "url": "https://gcjapan-kyoto.com/ryugen/",
+  "verdict": "supported",
+  "found": "「鶏ガラ豚骨醬油スープ」 and 「豚ロースチャーシュー、もやし、刻みネギとともに豪快に食せます。」 The yakimeshi-contains-pork half is NOT on this page (it says only 「隠し味を入れて炒めたヤキメシ」); it is on the shop's own menu: 「焼き飯…たっぷり入ったチャーシューから出る旨味成分と醤油の香ばしさがよくマッチして」.",
+  "correct_url": "http://ryugen.asia/menu",
+  "http": "200 gcjapan (plain); 200 ryugen.asia (plain)",
+  "method": "1 plain fetch + 1 plain fetch of the operator site",
+  "note": "Claim is true but split across two pages — attach http://ryugen.asia/menu for the pork-in-yakimeshi element. The operator menu also adds 生卵 and 味付煮卵 (egg) and キムチ, so 'no plant-based items' holds: the only non-animal lines are ライス, メンマ, ネギ and beer."
+ },
+ {
+  "id": "kyr_menya_ryugen",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "closed_temporarily",
+  "evidence": [
+   "http://ryugen.asia/info",
+   "http://ryugen.asia/"
+  ],
+  "why": "NOT closed — 長期臨時休業, and the distinction matters. The shop's own news page, posted 2026/07/24 14:31 under the heading 「長期臨時休業のお知らせ」, says 「誠に勝手ながら来月8月の4日からまたしばらくお休みさせて頂きます」「再開時期は当ホームページ、Instagram、店頭の貼り紙にて告知致します」. So it has been shut since 2026-08-04 with no announced reopening date, and today is 2026-08-21. Context from the same feed: 2026/07/09 「来たる7月21日に開店10周年を迎えます。度々の長期臨時休業やメニュー変更等ご迷惑をお掛けして」 and 2026/06/18 「体調面の問題で…ヤキメシの販売を休止」 — these are recurring health-related closures by a 10-year-old owner-operated shop, and it reopened once already on 2026/04/23 (「営業再開のお知らせ」). The site is live and updated daily (visitor counter dated 2026.08.21). Show the record with a 'temporarily closed, check before travelling' state; do NOT hide it as 閉店."
+ },
+ {
+  "id": "kyr_menya_sawaki",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowls are shoyu-tonkotsu based; the soy-sauce tare used in this style of ramen standardly contains wheat.",
+  "url": "https://gcjapan-kyoto.com/ramen-nishiki/",
+  "verdict": "supported",
+  "found": "「家系ラーメン 中 肉増し 1,150円 濃厚な豚骨のコクに、醤油の強さ、まろやかな甘みが感じられます。」 and 「中華そば/唐揚げセット 1,050円 …豚清湯醤油スープは出汁と芳醇な醤油の食欲がそそります。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + iPhone-UA fetch of s.tabelog.com to confirm identity",
+  "note": "Right shop despite the misleading slug: the URL says ramen-nishiki because the article opens 「2021年にオープンした「中華そば 錦 本店」。2023年10月に店名を「麺家 澤希」へリニューアルしています」 — same premises, renamed, not a sibling branch. Two accuracy fixes: (a) 'the bowls are shoyu-tonkotsu' over-generalises a deliberately multi-style menu (家系・淡麗系・博多系・京都醤油系・昔ながらの中華そば・魚介・豚骨・塩・台湾) — say the flagship 家系 and 中華そば are shoyu-tonkotsu; (b) the page carries harder gluten evidence than the tare inference: 「五島製麺の太麺」 wheat noodles, and a 唐揚げ set (＋380円で唐揚げ3個とごはんセット) that means a shared fryer. Address on the page 京都府京都市左京区一乗寺北大丸町14 フラッツ一乗館 1F matches Tabelog 26036477 exactly."
+ },
+ {
+  "id": "kyr_menya_sawaki",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://gcjapan-kyoto.com/ramen-nishiki/",
+   "https://tabelog.com/kyoto/A2601/A260303/26036477/"
+  ],
+  "why": "Open. Tabelog 26036477 (fetched with an iPhone UA on s.tabelog.com) shows no 閉店/移転/掲載保留 banner and lists live hours 月・水・木・金・土 11:00-14:00 / 18:00-23:30, 火 11:00-14:00, 日 11:00-14:00 / 18:00-22:00, tel 090-5884-5266, 予約不可, カード不可. The article was last updated 2025-01-05 and gives the same phone number and address."
+ }
+]

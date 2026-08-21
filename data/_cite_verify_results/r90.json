@@ -1,0 +1,152 @@
+[
+ {
+  "id": "kyr_kanton_ryori_hosen",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The signature dish is wheat Chinese noodles tossed in mustard-soy sauce under a chicken/kombu broth an; spring rolls, shumai and fried rice are cooked in shared woks — gluten is pervasive throughout the menu.",
+  "url": "https://brutus.jp/karashisoba_kyoto/",
+  "verdict": "supported",
+  "found": "「ゆでた中華麺をカラシ醤油で和え、その上に鶏ガラと昆布でとったスープのあんをかけるというもの」 and, in the 鳳泉 Information block, 「タケノコたっぷりのハルマキ、クワイ入りのシュウマイ、トマト牛肉など、〈鳳舞〉譲りのメニューがそのまま健在。」",
+  "http": "200 (plain curl, iPhone UA, follows 301 to https://brutus.jp/post-232383/)",
+  "method": "1 plain fetch with -L (the cited slug is a permanent redirect); cross-checked against Tabelog dtlmenu with iPhone UA",
+  "note": "Core is solid: wheat 中華麺 + カラシ醤油 + ハルマキ + シュウマイ are all on the cited page for 鳳泉 specifically. Two clauses are NOT: the page never mentions fried rice at 鳳泉 (ヤキメシ belongs to 〈平安〉's block, and 炒飯 appears only as a Tabelog user keyword — https://tabelog.com/kyoto/A2601/A260202/26014396/dtlmenu/), and no source anywhere says 'shared woks'. Drop or re-source those two. Also update the citation URL to the redirect target. One correction worth adding: the あん is thickened with 片栗粉 (potato starch), not flour."
+ },
+ {
+  "id": "kyr_kanton_ryori_hosen",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The karashi-soba is dressed in カラシ醤油 (mustard soy sauce); standard Japanese/Chinese soy sauce is wheat-based.",
+  "url": "https://brutus.jp/karashisoba_kyoto/",
+  "verdict": "supported",
+  "found": "「麺がゆで上がったらカラシ醤油を溶き入れておいた小鍋に投入、箸で素早く絡めて皿に盛る。」 and 「ゆでた中華麺をカラシ醤油で和え」",
+  "http": "200 (plain curl, iPhone UA, -L)",
+  "method": "1 plain fetch",
+  "note": "The カラシ醤油 dressing is on the page verbatim. The second half ('standard soy sauce is wheat-based') is correct general fact but is background, not something this page states — keep it flagged as general knowledge, not as a sourced claim about 鳳泉. Separately, the article notes 鳳舞楼 blends セモリナ粉 (durum wheat) into its noodle flour; that is the sibling shop, not 鳳泉, so do not transplant it."
+ },
+ {
+  "id": "kyr_kanton_ryori_hosen",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are made from chicken bone and kombu, and the signature noodle is shrimp-and-chicken (エビカシワソバ); no plant-only preparations indicated.",
+  "url": "https://brutus.jp/karashisoba_kyoto/",
+  "verdict": "supported",
+  "found": "「鳳舞系の中華と巷の中華を分ける最大の違い。それは料理のベースとなるスープを鶏ガラと昆布でとること。」, 「〈鳳泉〉ではスープに利尻昆布を使用。」 and 「淡い味わいの「撈麺（エビカシワソバ）」」",
+  "http": "200 (plain curl, iPhone UA, -L)",
+  "method": "1 plain fetch",
+  "note": "Fully supported for 鳳泉 by name. Tabelog's own menu list (焼売／エビカシワソバ／叉焼麺／古老肉) contains no plant-only dish either. vegan_status 'no' is correct."
+ },
+ {
+  "id": "kyr_kanton_ryori_hosen",
+  "city": "kyoto",
+  "field": "staff_allergy_handling",
+  "quote": "The kitchen will adjust the amount of mustard to order, including making the dish with no mustard at all — showing willingness to customize, though this is a seasoning preference and not an allergen-handling policy.",
+  "url": "https://brutus.jp/karashisoba_kyoto/",
+  "verdict": "moved",
+  "found": "「カラシの量を自由に注文できるのは〈鳳泉〉。…「カラシ抜きのカラシソバを頼む方も」」 AND, in the same Information block, 「カラシ多め・少なめ、エビ抜き、カシワ抜き、ネギ抜きなどにも対応可。」",
+  "http": "200 (plain curl, iPhone UA, -L)",
+  "method": "1 plain fetch",
+  "note": "Our text UNDERSTATES the page. The article does not only say mustard can be dialled up or down — it says エビ抜き (shrimp omitted) and カシワ抜き (chicken omitted) are also accepted. エビ抜き is a shellfish-allergen accommodation, not a seasoning preference, so the closing clause ('this is a seasoning preference and not an allergen-handling policy') is contradicted by the cited page. Rewrite to name the 抜き options; still no wheat-free option exists, so gf_confidence stays 'no'."
+ },
+ {
+  "id": "kyr_kanton_ryori_hosen",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260202/26014396/",
+   "https://brutus.jp/post-232383/"
+  ],
+  "why": "Tabelog detail page (fetched 2026-08-21, iPhone UA, HTTP 200) shows live hours 水〜日 11:30-14:30 / 17:00-20:00, 定休日 月・火, a 2025/09 visit review, and 中国料理 百名店 2024 selection. No 閉店 or 休業 banner. Explicit open verdict — do not hide this record on link rot."
+ },
+ {
+  "id": "kyr_karajishi_honten",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The spicy tare and seasoning are built on a minced-meat, garlic and scallion base typical of Japanese spicy noodles, which generally relies on wheat-containing soy/seasoning; no wheat-free tare is advertised.",
+  "url": "https://tabelog.com/kyoto/A2601/A260401/26022556/dtlmenu/",
+  "verdict": "unsupported",
+  "found": "The page's only description of the bowl is 「辛さはもちろん、ニンニク・ニラ・溶き卵・ミンチ肉の旨みが絶妙の逸品。」 — garlic, NIRA (Chinese chives, not scallion), egg and minced meat. The word 醤油 does not appear anywhere on the menu page, and no tare composition is given.",
+  "http": "200 (s.tabelog.com content via tabelog.com, iPhone UA); desktop UA not needed",
+  "method": "1 plain fetch with iPhone UA + Ecosia search (Yahoo/Brave not attempted; Ecosia answered first try)",
+  "note": "The soy-sauce hazard is pure inference with a citation that never mentions soy sauce. Replace it with the two things this page DOES document: (a) 麦飯 — barley rice — is the standard rice in every set (しそ餃子セット, よくばりセット, all ビビン雑炊セット) and is also sold as a side, so barley gluten is on the table independently of any tare; (b) the alternate noodle ちぢれ卵麺 is wheat. Also fix 'scallion' → ニラ."
+ },
+ {
+  "id": "kyr_karajishi_honten",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All noodle and broth preparations share a kitchen centered on pork cartilage, minced meat and egg, so cross-contact with animal products is unavoidable.",
+  "url": "https://tabelog.com/kyoto/A2601/A260401/26022556/dtlmenu/",
+  "verdict": "supported",
+  "found": "「ニンニク・ニラ・溶き卵・ミンチ肉の旨みが絶妙の逸品」, 「コラーゲンたっぷりの豚なんこつをとろとろになるまで煮込みました」, 「月見とろとろなんこつ丼（生卵or温泉卵）」, plus a 佐賀牛・伊万里牛 collaboration curry and ちぢれ卵麺.",
+  "http": "200 (iPhone UA)",
+  "method": "1 plain fetch with iPhone UA",
+  "note": "Supported and if anything understated — beef (佐賀牛・伊万里牛) and whole raw/onsen egg are on the menu too. vegan_status 'no' is correct; there is no plant-only bowl."
+ },
+ {
+  "id": "kyr_karajishi_honten",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "(no gf_cross_contamination claim recorded for this venue)",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog menu: 「＜麺＞ こんにゃく麺（極細・太麺）／ちぢれ卵麺 麺をお選びください。」 — the shop offers a noodle NAMED 'konjac noodle'. Two independent diners were told by staff what it actually is: Retty 2023 review 「こんにゃく麺はこんにゃくは入っていなくて蕎麦粉を主に使った麺との事。」 and men789 blog 「ちなみに、こんにゃく麺はコンニャクは一切入っていなくて、そば粉を練り込んだ冷麺風の麺だそうです」.",
+  "correct_url": "https://retty.me/area/PRE26/ARE660/SUB11003/100000826797/18179167/",
+  "http": "200 tabelog (iPhone UA); 200 retty.me (iPhone UA); 200 men789.blog.fc2.com (desktop UA); Ecosia 200",
+  "method": "Ecosia search for 辛獅子 京都 こんにゃく麺, then 2 plain fetches",
+  "note": "LOUD, and the record is silent on it. A celiac scanning this menu sees 'こんにゃく麺' and reads it as a naturally wheat-free option — konjac is glucomannan. It is not konjac. Staff describe it as a 冷麺-style noodle built on そば粉, and Japanese そば粉/冷麺 noodles are near-universally bound with wheat flour or wheat starch. Add an explicit warning naming this noodle; do NOT let it read as a gluten-free choice. gf_confidence stays 'no' precisely because of this."
+ },
+ {
+  "id": "kyr_karajishi_honten",
+  "kind": "shop_claim_false",
+  "claim": "「＜麺＞ こんにゃく麺（極細・太麺）／ちぢれ卵麺」 — a noodle sold on the menu as こんにゃく麺 (konjac noodle)",
+  "contradicted_by": "Staff, quoted by two separate diners: 「こんにゃく麺はこんにゃくは入っていなくて蕎麦粉を主に使った麺との事」 (Retty, 2023) and 「こんにゃく麺はコンニャクは一切入っていなくて、そば粉を練り込んだ冷麺風の麺だそうです」 (men789 blog). It is a buckwheat/reimen-style noodle containing no konjac.",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260401/26022556/dtlmenu/",
+   "https://retty.me/area/PRE26/ARE660/SUB11003/100000826797/18179167/",
+   "http://men789.blog.fc2.com/blog-entry-1366.html"
+  ],
+  "why": "The menu name tells an allergy-aware visitor the noodle is konjac and therefore wheat-free, when by the shop's own staff account it is a そば粉 冷麺-type noodle — the class of noodle that in Japan almost always carries wheat flour or wheat starch as a binder."
+ },
+ {
+  "id": "kyr_karajishi_honten",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260401/26022556/"
+  ],
+  "why": "Fetched 2026-08-21 (HTTP 200, iPhone UA): the listing carries the 公式 badge (「お店の営業情報は店舗関係者によって公開されています」), live hours 09:00-15:30 with 不定休, 89 reviews, and a 2013-08-01 open date. No 閉店 / 休業中 notice. Explicit open verdict."
+ },
+ {
+  "id": "kyr_kobushi_ramen",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Shoyu-based ramen tare at Japanese ramen shops is normally made with wheat-containing soy sauce, and the noodles are wheat; no gluten-free preparation is indicated here.",
+  "url": "https://tabelog.com/kyoto/A2601/A260203/26017616/",
+  "verdict": "wrong_source",
+  "found": "The cited top page never uses the word 醤油 — its own keyword cloud is 鴨／のどぐろ／煮干し／羅臼昆布／塩ラーメン／鶏白湯／細麺, which points at shio and paitan, not shoyu. The menu page one level down states it outright: 「基本の醤油ラーメン ＜１番人気＞ ※どちらかの醤油ダレを選んでください ・拳ラーメン「濃」 濃口醤油 ・拳ラーメン「淡」 淡口醤油」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260203/26017616/dtlmenu/",
+  "http": "200 both (tabelog.com, iPhone UA, plain curl — no proxy or Wayback needed)",
+  "method": "1 plain fetch of the cited URL, then 1 plain fetch of /dtlmenu/",
+  "note": "Claim is true; citation points one level too high. Re-cite to /dtlmenu/. Worth writing into the record: the two tare choices are 濃口醤油 and 淡口醤油 — usukuchi is the 'light, pale, delicate' soy sauce that English-speaking celiacs sometimes read as the gentler option, and it is fully wheat-brewed (and saltier than koikuchi). Neither choice is wheat-free."
+ },
+ {
+  "id": "kyr_kobushi_ramen",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broths and toppings are animal-based (duck, fish niboshi, pork, chicken); no separate vegan preparation is noted.",
+  "url": "https://tabelog.com/kyoto/A2601/A260203/26017616/",
+  "verdict": "supported",
+  "found": "Page keyword set 鴨／ノドグロ／のどぐろ／煮干し／鶏白湯／但馬牛／ぶり／鮮魚, a 2026/04 review of 「特上京鴨のどぐろ煮干しそば2300円」, and the menu's 鷄白湯ナックルパンチ / 拳チャーシュー麺 / 煮玉子 toppings.",
+  "http": "200 (iPhone UA)",
+  "method": "1 plain fetch (cited URL) + 1 fetch of /dtlmenu/ to check for a vegan bowl",
+  "note": "Supported. Two small fixes: pork is not named on the cited page (チャーシュー on the menu page is), and 但馬牛 (beef) belongs in the list. The 汁なし担々麺 and 拳流 油そば carry a 卵ご飯 set, so no bowl is close to vegan. vegan_status 'no' is correct."
+ },
+ {
+  "id": "kyr_kobushi_ramen",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26017616/"
+  ],
+  "why": "Fetched 2026-08-21 (HTTP 200, iPhone UA): live hours with 定休日 水曜日, reviews dated 2026/04, and ラーメン 百名店 WEST 2025 selection. The page's own history note records an earlier closure and its end — 「店主の入院のため休業、2022/8/8より営業再開」 — i.e. a 休業 that has already been resolved, not a 閉店. Explicit open verdict."
+ }
+]

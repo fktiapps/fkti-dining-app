@@ -1,0 +1,242 @@
+[
+ {
+  "id": "kyr_menya_yukou",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is built on a soy-sauce (shoyu) based tare, which conventionally contains wheat.",
+  "url": "https://yukou-kiyo.com/yukou.html",
+  "verdict": "supported",
+  "found": "自家製麺 section: 「全粒粉による小麦の香りと、うどん粉をブレンドし独自の製法で生み出した強いコシが特徴です。醤油ベースのスープにもよく絡みます。」",
+  "correct_url": null,
+  "http": "200 (plain curl, no UA needed)",
+  "method": "1 — plain fetch",
+  "note": "Fully supported and in fact understated: the operator's own page names BOTH the wheat hazards — 醤油ベース soup and noodles blended from 全粒粉 (wholemeal wheat) + うどん粉 (udon wheat flour), made fresh every morning. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kyr_menya_yukou",
+  "city": "kyoto",
+  "field": "vegan_detail",
+  "quote": "All bowls are built on a shellfish (oyster, clam, shrimp) dashi combined with a soy-based tare, and the signature topping is low-temperature seared rare pork charshiu.",
+  "url": "https://yukou-kiyo.com/yukou.html",
+  "verdict": "wrong_source",
+  "found": "The cited Karasuma-Oike page never mentions shellfish; it lists only 淡竹/真竹/黒竹 by name plus 鶏餃子, レア焼豚丼, 煮玉子. The shellfish wording (牡蠣、あさり、しじみ) appears on the SIBLING page yukou-kawaramachi.html. Independent support for this branch: takemachelin 「京都では珍しい貝出汁系のラーメン」「スープは貝類の旨味が滲み出ている」.",
+  "correct_url": "https://www.takemachelin.com/2024/07/yuko.html",
+  "http": "200 (plain curl) for yukou.html; 200 (iPhone UA) for takemachelin",
+  "method": "1 — plain fetch, then iPhone-UA fetch of the takemachelin review",
+  "note": "SIBLING-BRANCH RISK, but the claim survives: the oyster/clam/shijimi wording is the Kawaramachi branch's copy, yet takemachelin independently confirms Karasuma-Oike is a 貝出汁 shop. Re-cite to takemachelin. Note the shrimp (エビ) element is evidenced nowhere — drop it. vegan_status 'no' is correct either way (鶏餃子 and レア焼豚 are on the page)."
+ },
+ {
+  "id": "kyr_menya_yukou",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://yukou-kiyo.com/yukou.html"
+  ],
+  "why": "Fetched 2026-08-21, HTTP 200. The group site's own 店舗情報 nav lists 麺屋優光 first among nine trading shops; the page carries current pricing (淡竹/真竹/黒竹 800円), Tel 075-256-3434, 京都市中京区場之町588, 11:00〜15:00 / 17:30〜22:00, 定休日 木曜. No 閉店 or 休業 wording anywhere."
+ },
+ {
+  "id": "kyr_menya_yukou_kawaramachi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Broths and tare are built on blended Kyoto soy sauces, which in Japan are standardly brewed with wheat; combined with wheat ramen noodles this makes the bowls unsuitable for celiacs.",
+  "url": "https://yukou-kiyo.com/yukou-kawaramachi.html",
+  "verdict": "supported",
+  "found": "貝らーめん blurb: 「牡蠣、あさり、しじみの旨味を引き出すため、京都の醤油をベースに数種類ブレンドしたあっさりとしたらーめんです。」 and the intro 「京都の伝統的な醤油に鰹と昆布と肉の旨味が加わった醤油らーめん」.",
+  "correct_url": null,
+  "http": "200 (plain curl, no UA needed)",
+  "method": "1 — plain fetch",
+  "note": "The Kyoto-soy-blend half is verbatim on the page. Caveat for the editor: 京都の醤油 is a regional style, not a wheat declaration — no 小麦 statement appears on this page, and the wheat-noodle half is inferred from 'らーめん', not printed. The conclusion is right; the wording should read as inference, not as something the shop published."
+ },
+ {
+  "id": "kyr_menya_yukou_kawaramachi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All broths are animal-based (shellfish dashi, duck/bonito/kombu, meat-enriched shoyu) and bowls carry pork chashu and egg, so there is no plant-based separation.",
+  "url": "https://yukou-kiyo.com/yukou-kawaramachi.html",
+  "verdict": "supported",
+  "found": "Every element is on the page: 「牡蠣、あさり、しじみの旨味を閉じ込めた貝らーめん」;「鴨の脂に昆布と鰹の出汁を合わせ、さらにたっぷりの鰹を追い出し」;「京都の伝統的な醤油に鰹と昆布と肉の旨味が加わった醤油らーめん」; menu carries 炙りレアチャーシュー丼, 肉餃子, 煮玉子.",
+  "correct_url": null,
+  "http": "200 (plain curl, no UA needed)",
+  "method": "1 — plain fetch",
+  "note": "Point-for-point supported by the operator's own page, including the 煮玉子 topping. vegan_status 'no' is correct; no change."
+ },
+ {
+  "id": "kyr_menya_yukou_kawaramachi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://yukou-kiyo.com/yukou-kawaramachi.html"
+  ],
+  "why": "Fetched 2026-08-21, HTTP 200. Own page live with current prices (貝らーめん 850円, 鴨つけ麺 950円), Tel 075-365-8818, 京都市下京区稲荷町329番地（高島屋京都店の2軒南隣）, 11:00〜22:00, 定休日 不定休, Instagram @menya.yukou.kawaramachi. Listed on the group's 店舗情報 nav. No closure wording."
+ },
+ {
+  "id": "kyr_mugi_no_yoake",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The entire kitchen is built around wheat: custom wheat noodles are the centerpiece and are made and handled throughout the space, so flour/gluten cross-contact is unavoidable.",
+  "url": "https://genjitsutouhi.com/mugi-no-yoake-kyoto/",
+  "verdict": "supported",
+  "found": "「店主が製粉会社勤務時代に蓄えた知識をフル活用した自家製麺で、関西ではほとんど出回っていない山口県産の「せときらら」という品種を中心に小麦を配合しています。」 plus 「卒業後は大手製粉会社に就職して製粉技術を学んだ後に独立した」. The shop name itself is 麦 (wheat).",
+  "correct_url": null,
+  "http": "200 (iPhone UA; page is plain WordPress and would also answer a bare curl)",
+  "method": "1 — iPhone-UA fetch; corroborated on s.tabelog.com 26037048 (iPhone UA, 200)",
+  "note": "Supported. The named wheat cultivar せときらら is milled and blended in-house by an ex-flour-company chef, and a current Tabelog review reads 「全粒粉入りの平打ち麺は、小麦の芳醇な香りが広がる」 — 全粒粉 is wholemeal wheat. 'Handled throughout the space' is our inference, not the article's words, but the wheat-centred conclusion is beyond doubt. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kyr_mugi_no_yoake",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowls are dashi-shoyu (soy-sauce based). Standard ramen soy-sauce tare typically contains wheat, and no wheat-free tare is indicated.",
+  "url": "https://genjitsutouhi.com/mugi-no-yoake-kyoto/",
+  "verdict": "supported",
+  "found": "「一口目はややオイリーで、上品な甘さと少しだけ山椒の刺激を感じる醤油スープ。出汁は鶏豚魚介でとっているとのこと」 and the menu board 「牛醤油と山椒の中華そば　850円」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "1 — iPhone-UA fetch",
+  "note": "The 醤油 base is stated twice (soup description and a 牛醤油 menu item). The wheat inference is standard and unrebutted — the article says nothing about the tare's brewing, so 'no wheat-free tare is indicated' is true by silence, correctly phrased."
+ },
+ {
+  "id": "kyr_mugi_no_yoake",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are made from chicken, pork and seafood dashi and bowls feature scallop, beef or duck, so there is no animal-free preparation here.",
+  "url": "https://genjitsutouhi.com/mugi-no-yoake-kyoto/",
+  "verdict": "supported",
+  "found": "「出汁は鶏豚魚介でとっているとのことですが」; menu 「帆立と山椒の中華そば　850円」「牛醤油と山椒の中華そば　850円」; limited bowl 「鴨と山椒の中華そば」 with 「トッピングはレア鴨肉にメンマ、刻みネギとぶどう山椒の実」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "1 — iPhone-UA fetch",
+  "note": "Every element — chicken/pork/seafood dashi, scallop, beef, duck — is verbatim on the cited page. vegan_status 'no' is correct; no change."
+ },
+ {
+  "id": "kyr_mugi_no_yoake",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26037048/",
+   "https://genjitsutouhi.com/mugi-no-yoake-kyoto/"
+  ],
+  "why": "Fetched 2026-08-21. s.tabelog.com 26037048 returned 200 with no 【閉店】 or 掲載保留 marker, 834 reviews, 受賞・選出歴 'ラーメン 百名店 2025 選出店' and a featured summer-2026 review of the 夏季限定 冷やし中華. Hours listed 11:00-15:00 / 18:00-20:00 (Sat 17:30-20:00), 不定休、SNSでご確認お願いします. Trading normally."
+ },
+ {
+  "id": "kyr_narukami",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles, gyoza with wheat wrappers, and a likely wheat-based soy tare are all prepared in the same small kitchen; no gluten-free handling is indicated.",
+  "url": "https://r.gnavi.co.jp/2a8tmur10000/",
+  "verdict": "moved",
+  "found": "The live Rakuten Gurunavi page has been reduced to a stub. It still carries the trading name 「中華そば・餃子専門店 なるかみ」, 「総席数 14席」, 定休日 月曜日・木曜日 and a user-sourced menu (ラーメン / チャーシューメン) — but the descriptive copy that carried the broth and tare detail has been deleted in the Rakuten migration.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, live) — content materially reduced vs. the cited version",
+  "method": "1 — iPhone-UA fetch of the live page, then 3 — Wayback snapshot 20220308083235 to establish what the page said when it was cited",
+  "note": "STALE, NOT INVENTED. The shop's own trading name evidences wheat noodles + gyoza in one 14-seat kitchen, so the claim stands, but the page has lost the text the record leaned on. Re-cite alongside https://tabelog.com/kyoto/A2601/A260501/26000510/ (14席・カウンター10席、テーブル4席). gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kyr_narukami",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is a soy-sauce (shoyu) style tare, which in standard Japanese ramen is brewed with wheat-containing soy sauce.",
+  "url": "https://r.gnavi.co.jp/2a8tmur10000/",
+  "verdict": "wrong_source",
+  "found": "Nothing on the live page — the word 醤油 no longer appears on it at all. The supporting sentence survives in the archived version of the same listing: 「これぞ本格と呼べる京都背脂系醤油ラーメンのお店。厳選した鶏ガラのみを使い丁寧に煮出したスープは…」",
+  "correct_url": "http://web.archive.org/web/20220308083235/https://r.gnavi.co.jp/2a8tmur10000/",
+  "http": "200 (iPhone UA) live; 200 Wayback 20220308083235",
+  "method": "1 — iPhone-UA fetch, then 3 — Wayback Machine",
+  "note": "The claim is true and was correctly sourced when written; Gurunavi deleted the copy. Cite the Wayback snapshot (or Tabelog) rather than the bare live stub, which can evidence nothing about the broth."
+ },
+ {
+  "id": "kyr_narukami",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is 100% chicken bones with pork back fat and chashu pork; gyoza typically contain pork. No animal-free preparation.",
+  "url": "https://r.gnavi.co.jp/2a8tmur10000/",
+  "verdict": "wrong_source",
+  "found": "Archived Gurunavi copy: 「鶏ガラ100%のスープに、背脂を散らした京都ラーメンの王道!。ぴりっとした一味が隠し味の、あっさりしたコクのあるスープ。」 The live page retains only a user-listed チャーシューメン.",
+  "correct_url": "http://web.archive.org/web/20220308083235/https://r.gnavi.co.jp/2a8tmur10000/",
+  "http": "200 (iPhone UA) live; 200 Wayback 20220308083235",
+  "method": "1 — iPhone-UA fetch, then 3 — Wayback Machine",
+  "note": "鶏ガラ100% and 背脂 are verbatim in the archive, so the substance is right; only the pointer is stale. The 'gyoza typically contain pork' half remains an assumption no source states — keep it flagged as such. vegan_status 'no' is correct."
+ },
+ {
+  "id": "kyr_narukami",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260501/26000510/",
+   "https://r.gnavi.co.jp/2a8tmur10000/"
+  ],
+  "why": "Fetched 2026-08-21. Tabelog 26000510 returned 200 with no 【閉店】 marker and reviews dated 2026/02, 2025/12 and 2025/11; hours 11:30-14:00 / 17:30-21:00, 定休日 第2週水曜日・木曜日以外の週の月曜日・木曜日 (現在定休日が変更されています). Gurunavi listing also live with phone 075-464-6760. IMPORTANT: the Tabelog note 「スープ品切れで早期閉店あります」 means the shop closes EARLY when the soup runs out — it is not a 閉店 shutdown notice and must not be read as one."
+ },
+ {
+  "id": "kyr_nekomata",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The abura soba is dressed with a soy-based tare; standard Japanese soy sauce/tare contains wheat, and the noodles themselves are wheat — no wheat-free tare is advertised.",
+  "url": "https://kyotopi.jp/articles/DLt7w",
+  "verdict": "supported",
+  "found": "「どんぶりの底に入ったごま油や、しょうゆベースのタレに、ラー油、酢などの調味料を好みでかけ、麺に絡めて食べる。」;「こだわりの油そばは３種類、醤油風味、辛味噌、海老香る天然塩味です。」;「醤油ベースの元祖　油そばの大（700円）を注文しました。」;「きしめんのような平打ちの麺に、太メンマ、角切りのチャーシュー、ねぎ、ナルトがトッピングされています。」",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "1 — iPhone-UA fetch of the cited kyotopi article",
+  "note": "Supported on every limb: shoyu tare named three times, and 平打ちの麺 explicitly compared to きしめん (a wheat noodle). Add a hazard the record misses — the second of the three styles is 辛味噌, and miso may be 麦味噌 (barley); it is not documented either way here, so it should be named as an unknown rather than left off. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kyr_nekomata",
+  "city": "kyoto",
+  "field": "vegan_detail",
+  "quote": "side dishes include chicken tempura, cutlet skewers and dumplings",
+  "url": "https://kyotopi.jp/articles/DLt7w",
+  "verdict": "unsupported",
+  "found": "Nothing. The cited article states 「メニュー表はこちらです。ほんとにメインは油そばのみ。」 — the menu is abura soba and essentially nothing else. Tabelog 26021980's dtlmenu page carries no menu items at all, and an Ecosia sweep surfaced no source listing 唐揚げ / 串カツ / 餃子 at this shop.",
+  "correct_url": null,
+  "http": "200 kyotopi (iPhone UA); 200 s.tabelog.com dtlmenu (iPhone UA, empty menu); 200 Ecosia",
+  "method": "1 — iPhone-UA fetch, then 4 — Ecosia search (Yahoo Japan not attempted; Ecosia answered first try)",
+  "note": "INVENTED DETAIL. The three named side dishes appear in no source and are contradicted by the cited article's 「メインは油そばのみ」. Delete them. The vegan_status 'no' verdict itself survives on the documented 角切りのチャーシュー and ナルト (fish cake) in the base bowl — cite those instead."
+ },
+ {
+  "id": "kyr_nekomata",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260301/26021980/",
+   "https://kyotopi.jp/articles/DLt7w"
+  ],
+  "why": "Fetched 2026-08-21. s.tabelog.com 26021980 returned 200, no 【閉店】 or 掲載保留 marker, phone 075-551-5088, 京都府京都市東山区清水4-138, hours 10:00-20:00 L.O.19:45, 定休日 不定休. An Ecosia knowledge panel carries Tripadvisor reviews dated Jul 2026 and Apr 2026, so the shop was serving within the last two months. Trading."
+ },
+ {
+  "id": "kyr_nishiazabu_curry_tsukeme",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "All signature dishes use custom wheat noodles from Asakusa Kaikaro; there is no gluten-free noodle option and no separate preparation, so cross-contamination with wheat is unavoidable.",
+  "url": "http://kareota.com/archives/23983",
+  "verdict": "supported",
+  "found": "「麺は全国的にも有名な浅草の「開花楼」特注の中太平麺。」 and the lineup 「「カレーらぁ麺」「カレーつけ麺」「カレー油そば」」 — all three are noodle dishes off the same 開花楼 supply.",
+  "correct_url": null,
+  "http": "200 (iPhone UA over plain http; the site has no https redirect)",
+  "method": "1 — iPhone-UA fetch",
+  "note": "Supported. Two additions the record should carry: the reviewer's bowl was 「らぁ麺＋小ライス(ワンタン付き)」 — ワンタン wrappers are wheat, a second wheat item in the same bowl — and the standard finish is 「カレースープによるおじや」, rice tipped into curry broth that has held wheat noodles, so even the rice course is contaminated. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kyr_nishiazabu_curry_tsukeme",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Curry broths are made from beef cheek and a seafood/fish dashi base, so all bowls share an animal-and-fish broth; no vegan/vegetarian preparation exists.",
+  "url": "http://kareota.com/archives/23983",
+  "verdict": "supported",
+  "found": "「土台にある牛ほほ肉・魚介によるスープの存在感も一体となっています。」 — 牛ほほ肉 is beef cheek and 魚介 is seafood, exactly as recorded. The same bowl carries ワンタン and Tabelog's featured 2025/11 review orders 「チャーシュー入りカレーらぁ麺」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA over plain http)",
+  "method": "1 — iPhone-UA fetch; corroborated on s.tabelog.com 26025018 (200)",
+  "note": "Verbatim support for both halves. vegan_status 'no' is correct; no change."
+ },
+ {
+  "id": "kyr_nishiazabu_curry_tsukeme",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26025018/",
+   "http://kareota.com/archives/23983"
+  ],
+  "why": "Fetched 2026-08-21. s.tabelog.com 26025018 returned 200 titled 「なんだっ亭 - 京都河原町/つけ麺」 with no 【閉店】 marker, a featured review dated 2025/11 (チャーシュー入りカレーらぁ麺 1,300円), phone 075-746-4001, 京都府京都市中京区中之町565-18, hours 11:30-16:00 / 18:00-21:00, 定休日 不定休. CAUTION for anyone re-checking: kareota.com's sidebar prints 「【閉店】『アジル』」 — that closure tag belongs to a different Kyoto shop in the site's related-posts list, not to なんだっ亭."
+ }
+]

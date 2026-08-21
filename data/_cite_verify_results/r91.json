@@ -1,0 +1,133 @@
+[
+ {
+  "id": "kyr_kyoto_ramen_kinzan_shich",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles are boiled in shared water, and the soy-sauce tare is wheat-based, so gluten contact is inherent to every bowl.",
+  "url": "https://kyotopi.jp/articles/FjJ2j",
+  "verdict": "supported",
+  "found": "「京都ラーメンの定番、老舗 近藤製麺の麺を使用。」「歯切れがよく、ほどよいコシのあるストレート中細麺で、小麦の風味もしっかり感じられます。」",
+  "correct_url": null,
+  "http": "200 (66,501 bytes) — plain curl with an iPhone UA on the first try; article carries an update stamp of 2025年9月16日",
+  "method": "route 1 — plain fetch of the cited page; no UA fallback, proxy or Wayback needed",
+  "note": "The wheat half is stronger than the record claims: the page literally prints 小麦 in the noodle description (近藤製麺 straight medium-thin noodles). But two of the three steps are inference, not quotation — the page never describes the noodle boiler, so 'boiled in shared water' is not sourced here, and it never says the 醤油 contains wheat. Quote the 小麦の風味 line and drop or re-cite the shared-water assertion."
+ },
+ {
+  "id": "kyr_kyoto_ramen_kinzan_shich",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The black soup is seasoned with aged soy sauce (from Oyama and Goko breweries), which is wheat-based.",
+  "url": "https://kyotopi.jp/articles/FjJ2j",
+  "verdict": "supported",
+  "found": "「漆黒のスープは豚骨の旨みがベース。醤油のキレとコクが効きつつ…」 / 「醤油は老舗 小山醤油と五光醤油を使用されているそうです。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 — plain fetch",
+  "note": "Substance is on the page but the record mistranslates it twice. 老舗 means long-established — it describes the BREWERIES, not an ageing process; the page makes no claim about aged soy sauce. And 小山醤油 romanises as KOYAMA, not 'Oyama'; a celiac chasing an allergen sheet under the wrong brewery name finds nothing. 'Which is wheat-based' is general knowledge, not on this page — sound on a gf:no record, but do not present it as sourced."
+ },
+ {
+  "id": "kyr_kyoto_ramen_kinzan_shich",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is pork-bone based and finished with back fat; pork chashu tops the bowls, so there is no vegan-safe preparation line.",
+  "url": "https://kyotopi.jp/articles/FjJ2j",
+  "verdict": "supported",
+  "found": "「漆黒のスープは豚骨の旨みがベース。醤油のキレとコクが効きつつ、背脂の甘みで全体がまろやかにまとまります。」 / 「京都高原豚のチャーシュー2種、九条ねぎ、もやし、メンマ、背脂がのります。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 — plain fetch",
+  "note": "Fully supported, verbatim: 豚骨 base, 背脂 finish and two cuts of 京都高原豚 chashu are all in the tasting section, and the house style is billed throughout as 背脂豚骨醤油. Nothing to change."
+ },
+ {
+  "id": "kyr_kyoto_ramen_kinzan_shich",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://kyotopi.jp/articles/FjJ2j",
+   "https://kinsan075.official.ec/"
+  ],
+  "why": "Cited Kyotopi feature was updated 2025-09-16 and prints current hours for the Shichijo Honten (11:30〜14:30 / 18:00〜23:30, 定休日 日曜日＋不定休); the operator's own EC store kinsan075.official.ec answered 200 and still lists shop products. No 閉店 or 休業 notice on either. Trading as of 2026-08-21."
+ },
+ {
+  "id": "kyr_kyoto_toripaitan_soba_ju",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The shoyu and miso seasoning variants of the chicken-paitan soba are based on tare/sauces that conventionally contain wheat; no wheat-free seasoning is indicated.",
+  "url": "https://www.leafkyoto.net/en/store/250903-kyoto-toripaitansobajunkarasuma/",
+  "verdict": "unsupported",
+  "found": "The cited Leaf KYOTO page names exactly one flavoured bowl — 'Miso bubble chicken white soup with wontons, 1,540 yen' — and no soy-sauce bowl anywhere. The operator's own お品書き confirms the whole line-up is three bowls, none of them shoyu: 泡鶏白湯そば / ゆず塩泡鶏白湯そば / 味噌泡鶏白湯そば, and the only tare it names is 「塩ダレは北海道産玉ねぎをソテーし、甘味を隠し味にしました。」 — a SALT tare.",
+  "correct_url": "https://shijokarasuma.chukasoba-jun.com/",
+  "http": "200 (82,371 bytes) leafkyoto.net, plain curl; 200 (131,791 bytes) shijokarasuma.chukasoba-jun.com, plain curl",
+  "method": "route 1 — plain fetch of the cited page, then a plain fetch of the operator's own site to check the menu",
+  "note": "There is no shoyu bowl at this branch, so the record warns about a seasoning the shop does not sell, and the one tare the operator documents is 塩ダレ. Replace the claim with the wheat that is actually on the menu and far more certain: ワンタン wrappers are the default upsell on all three bowls, the noodles are custom wheat noodles ('custom-made medium-thick noodles with a chewy texture'), and からあげ sets are sold. Treat the 味噌 bowl as unverified rather than assumed — the miso type is never stated, and 麦味噌 would be barley."
+ },
+ {
+  "id": "kyr_kyoto_toripaitan_soba_ju",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All broths are animal-based (chicken paitan plus pork bones) and bowls are topped with pork chashu, so there is no vegan-safe preparation; cross-contact with meat and animal stock is inherent.",
+  "url": "https://www.leafkyoto.net/en/store/250903-kyoto-toripaitansobajunkarasuma/",
+  "verdict": "supported",
+  "found": "«The chicken shiratsuyu soup is carefully emulsified one cup at a time using a blender to create a mild, espuma-like soup, which is topped with rare pork chashu pork.» The pork-bone half is NOT on this page; it is on the operator's site: 「鹿児島産の鶏をメインに、少しの宮崎・大分の豚骨を強火で煮込んだ濃厚鶏豚スープ」 plus 「チャーシューは豚バラのとろとろ煮豚」.",
+  "correct_url": "https://shijokarasuma.chukasoba-jun.com/",
+  "http": "200 on both hosts, plain curl",
+  "method": "route 1 — plain fetch of the cited page plus the operator's site",
+  "note": "Claim is true and the cited page carries the chicken soup and the rare pork chashu verbatim, but 'plus pork bones' is evidenced only on the operator's site — add https://shijokarasuma.chukasoba-jun.com/ so that half is actually sourced. Two more animal vectors the record misses: 鶏丼 and 肉生姜めし sides, and the fish stock (宗田鰹・サバ節・うるめ・煮干し・アサリ) in the yuzu-shio bowl."
+ },
+ {
+  "id": "kyr_kyoto_toripaitan_soba_ju",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://shijokarasuma.chukasoba-jun.com/",
+   "https://www.leafkyoto.net/en/store/250903-kyoto-toripaitansobajunkarasuma/"
+  ],
+  "why": "Operator's own site answered 200 and its top banner is a 2026 notice — 「2026年　GW営業時間のお知らせ 2026年4月29日(水)～5月6(水)日まで営業時間を1時間延長。」 — so it was maintained within the last four months. Branch opened 2025-08-13 per Leaf KYOTO. No closure or suspension notice. Trading."
+ },
+ {
+  "id": "kyr_kyoto_wamen_yukichi_honp",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Bowls use a soy-sauce / dashi tare typical of Japanese chuka-soba, which standardly contains wheat-based soy sauce; no wheat-free tare is advertised.",
+  "url": "https://kyo-soku.com/2024/11/08/yukichi/",
+  "verdict": "unsupported",
+  "found": "The cited page never uses the words 醤油, タレ or 中華そば about this branch. Its only description of the bowl is 「スープにトリュフオイルをたっぷりと使ったラーメン屋」 and 「ラーメンはトリュフオイルがたっぷり。香りは強く、スープはまるでフレンチのようです。」 The one soy-derived item it does name belongs to the steak: 「聖護院かぶらが入ったポン酢や沖縄の塩につけて食べます。」",
+  "correct_url": "https://m-yukichi.jp/",
+  "http": "200 (61,682 bytes) kyo-soku.com, plain curl; 200 (148,482 bytes) m-yukichi.jp, plain curl; m-yukichi.jp/shop/ 200, /store/ and /shopinfo/ 404",
+  "method": "route 1 — plain fetch of the cited page, then the operator's own site and its 店舗情報 page",
+  "note": "The tare sentence is invented from the genre label, not read off this page — this Kyoto branch is a truffle-oil 和麺 served with an A5 wagyu steak, not a chuka-soba, and no tare is described anywhere. Two solid wheat vectors are available instead: the ポン酢 dip served with the steak (ponzu is soy-sauce based and normally wheat-brewed), and the operator's own noodle statement 「自慢の自家製麺も、その日のうちにご提供し…細麺、太麺、手もみ麵」 at https://m-yukichi.jp/. Keep gf:no; re-source the reasoning."
+ },
+ {
+  "id": "kyr_kyoto_wamen_yukichi_honp",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://m-yukichi.jp/shop/",
+   "https://kyo-soku.com/2024/11/08/yukichi/"
+  ],
+  "why": "The operator's own 店舗情報 page still lists 「京都和麺 諭吉本舗 / 京都府京都市中京区寺町通蛸薬師上る東側町506−1 / 営業時間 11:30～15:00 17:00～21:30」, matching the record's address. The group site is actively maintained — its embedded X feed carries posts dated 21-08-2026. Note the hours have changed since the cited 2024 article (which gave 17:00-21:00, 定休日 無休); take hours from m-yukichi.jp/shop/. Trading."
+ },
+ {
+  "id": "kyr_makaikei_ramen_sankanba",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowls use a soy-based (shoyu) tare, which in Japanese ramen is virtually always wheat-containing soy sauce.",
+  "url": "https://noodlers.jp/3kanba-3sb/",
+  "verdict": "unsupported",
+  "found": "The page's own menu breakdown is 「メインとなる麺メニューは、衝撃の豚（豚骨魚介）・黄金の鶏（鶏塩清湯）・皇帝の油そば（汁なし油そば）の3種類。」 — tonkotsu-gyokai, chicken SHIO clear soup, and an abura-soba. No shoyu bowl and no tare of any kind is described. The single 醤油ダレ on the page belongs to a side dish, not a bowl: 「サクサクの脂身に甘めの醤油ダレとマヨのハーモニーがたまらん！」 (チャーシューライス 300円).",
+  "correct_url": null,
+  "http": "200 (131,079 bytes), plain curl with iPhone UA; article dated 2024-04-20",
+  "method": "route 1 — plain fetch of the cited page; trading cross-checked on s.tabelog.com/kyoto/A2601/A260401/26038145/ (200, iPhone UA)",
+  "note": "This is the transplant defect: the soy tare on the page is on the チャーシューライス, and the record has moved it onto the ramen. Two of the three bowls are explicitly not shoyu (塩清湯 and 油そば). Cite the unambiguous wheat instead — 「麺は太めの平打ち麺！」 is a flat wheat noodle, and it is stated for the very bowl reviewed. If the soy claim is kept, attach it to the chashu rice with the quote above."
+ },
+ {
+  "id": "kyr_makaikei_ramen_sankanba",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://s.tabelog.com/kyoto/A2601/A260401/26038145/",
+   "https://noodlers.jp/3kanba-3sb/"
+  ],
+  "why": "Tabelog 26038145 answered 200 with an iPhone UA as a live listing titled 「魔界系ラーメン三冠馬 - 西京極/ラーメン」, carrying normal 営業時間/定休日 blocks and no 閉店, 移転, 休業 or 掲載保留 banner. Trading as of 2026-08-21."
+ }
+]
