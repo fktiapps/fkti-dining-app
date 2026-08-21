@@ -1,0 +1,67 @@
+[
+ {
+  "id": "nagoya_teuchi_soba_sougen",
+  "city": "nagoya",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat-containing niwari (80% buckwheat / 20% wheat) and sarashina soba are made in the same kitchen as the juwari (100% buckwheat) soba; shared surfaces and equipment are likely.",
+  "url": "https://tabelog.com/aichi/A2301/A230103/23005149/",
+  "verdict": "unsupported",
+  "found": "手間を惜しまず自家製粉した蕎麦粉100%の「細挽き十割そば」とそばの実の中心部の粉のみを使用した「更科そば」をご提供しております。",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "1 mobile-host fetch + 3 Wayback for the shop's own /about",
+  "note": "NIWARI IS NOT ON THE MENU. Both the cited Tabelog page and the shop's own archived about page say the shop offers exactly two soba: 十割 and 更科; a review records staff asking 「蕎麦は十割でよろしいですか」 because juwari is the default. Neither page says the sarashina contains wheat. Rewrite the shared-kitchen claim around what the pages DO prove: 天ぷら 990円 / 天ざる 2,490円 / 天丼 are battered and fried on site, which is the real wheat vector."
+ },
+ {
+  "id": "nagoya_teuchi_soba_sougen",
+  "city": "nagoya",
+  "field": "soy_sauce_wheat",
+  "quote": "The tsuyu is built on a 20-year-old kaeshi made with Shinshu shoyu — standard Japanese soy sauce brewed with wheat. All broth-based and dipping dishes will contain wheat-derived soy sauce.",
+  "url": "http://www.soba-sougen.com/about",
+  "verdict": "moved",
+  "found": "創愿のつゆの決め手となる醤油は、当店開業以来変わることのない店主 こだわり の醤油を使用しております。… 醤油を信州より取り寄せております。 (web.archive.org/web/20180828153042)",
+  "correct_url": null,
+  "http": "NXDOMAIN live; 200 via Wayback 2018-08-28",
+  "method": "3 Wayback Machine (plain fetch failed, DNS does not resolve)",
+  "note": "DEAD DOMAIN — soba-sougen.com no longer resolves and the Nov-2025 Wayback captures show it re-registered as a parked ad farm (/ads/apartment-for-rent, /advertiser-wanted). The record's `website` field must be moved off this domain (use the Tabelog page). Substance survives: Shinshu shoyu since opening, plus Tabelog's 「濃い口とたまり醤油をブレンドした“黒だし”」 and 「関西風の醤油」. The '20-year-old kaeshi' detail is on no reachable page — drop it."
+ },
+ {
+  "id": "nagoya_teuchi_soba_sougen",
+  "city": "nagoya",
+  "field": "vegan_cross_contact",
+  "quote": "Tempura is on the menu, meaning wheat-batter frying takes place in the kitchen. Duck (kamo) and pork dipping broths are signature items, so animal products are central to the cooking environment.",
+  "url": "https://tabelog.com/aichi/A2301/A230103/23005149/",
+  "verdict": "unsupported",
+  "found": "素揚げ野菜入り 黒 鴨汁そば … 素揚げ野菜入り 白 鴨汁そば … 素揚げ野菜入り 赤 海老つけ汁そば … 「白鴨汁そば」は関西風の醤油を使い鰹節の風味を最大限に引き出した“白だし”",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 mobile-host fetch of the page and its /dtlmenu/",
+  "note": "PORK IS INVENTED. 豚 appears nowhere on the cited page or the menu page. The three signature tsukejiru are 黒鴨 / 白鴨 / 赤海老 — duck, duck and SHRIMP. Swap 'pork' for 'shrimp'; the vegan conclusion is unaffected and is strengthened by 鰹節 in the white dashi, 鴨ロース and だしまき (egg)."
+ },
+ {
+  "id": "nagoya_teuchi_soba_sougen",
+  "city": "nagoya",
+  "field": "staff_allergy_handling",
+  "quote": "No allergy menu, allergy statement, or staff allergy-handling protocol has been published on any source reviewed. Guests with serious allergies should call 052-951-1226 before visiting.",
+  "url": "https://tabelog.com/aichi/A2301/A230103/23005149/",
+  "verdict": "unsupported",
+  "found": "お蕎麦アレルギーのお客様にはご来店をご遠慮いただいております。",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 mobile-host fetch",
+  "note": "CONTRADICTED BY THE CITED PAGE. It says 'customers with a buckwheat allergy are asked to refrain from visiting' — that IS a published allergy statement, and a consequential one: this shop declines allergy patrons rather than accommodating them. Rewrite as 'the shop publicly asks buckwheat-allergic guests not to visit and publishes no wheat/gluten protocol'. Phone 052-951-1226 verified on the same page."
+ },
+ {
+  "id": "nagoya_teuchi_soba_sougen",
+  "city": "nagoya",
+  "field": "positives",
+  "quote": "Juwari soba (十割そば, 100% buckwheat, no wheat flour in the noodle itself) is a standing menu option and represents a genuine wheat-free noodle choice for those avoiding gluten by preference.",
+  "url": "https://tabelog.com/aichi/A2301/A230103/23005149/",
+  "verdict": "supported",
+  "found": "自家製粉した蕎麦粉100%の「細挽き十割そば」… 【＜要予約＞揚げたて天ぷらコース】小鉢、天ぷら9品…十割ざるそば",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 mobile-host fetch",
+  "note": "Supported; juwari is in fact the house default. Keep the 打ち粉 / wheat-tsuyu caveat — this stays a preference option, not celiac-safe."
+ }
+]

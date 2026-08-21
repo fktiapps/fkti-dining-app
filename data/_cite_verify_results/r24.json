@@ -1,0 +1,67 @@
+[
+ {
+  "id": "nagano_suryadev",
+  "city": "nagano",
+  "field": "gf_cross_contamination",
+  "quote": "GF is by advance request only — 「グルテンフリー対応できます。事前にご連絡ください」 — so the default meal is not prepared in a gluten-free workflow. Wheat items (chapati/roti/naan on North Indian thali, papad, barley non-alcoholic beer) and possibly wheat-containing asafoetida (hing) are used in the same small kitchen...",
+  "url": "https://search-ethnic.com/gourmet/surya_dev/",
+  "verdict": "wrong_source",
+  "found": "グルテンフリー対応できます。事前にご連絡ください。",
+  "correct_url": "https://vegewel.com/ja/restaurant/2480",
+  "http": "200",
+  "method": "1 plain fetch (iPhone UA), both URLs",
+  "note": "The quoted sentence is NOT on search-ethnic.com — it is verbatim on the Vegewel page cited by the record's OTHER claims. Repoint the source. Separately, the wheat-item list is largely unevidenced: search-ethnic's full meal photo-log shows only パパダム (papadam) and the drinks are マサラチャーエ/ドリップコーヒー/豆乳ラッシー — no naan/chapati, no barley beer anywhere on either page. Vegewel DOES support 北インドのターリープレート a few times a month, which is the only real wheat vector; delete the invented 'barley non-alcoholic beer' and 'wheat-containing hing' details."
+ },
+ {
+  "id": "nagano_suryadev",
+  "city": "nagano",
+  "field": "soy_sauce_wheat",
+  "quote": "South Indian cooking here uses no soy sauce; seasoning is via sambar/rasam spice bases, so wheat-in-soy-sauce is not a typical exposure. Not explicitly documented — confirm on reservation.",
+  "url": "https://vegewel.com/ja/restaurant/2480",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Low severity. The Vegewel page says nothing about soy sauce; it supports only 「南インド料理ミールスを中心に」. The sambar/rasam detail is however on search-ethnic (サンバル, ラッサム itemised on the plate) — cite that if the inference is kept. Claim already self-flags 'Not explicitly documented', so it is honest, just uncited."
+ },
+ {
+  "id": "nagano_suryadev",
+  "city": "nagano",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen is 100% vegan (all-vegan, no meat/fish/dairy/egg and no garlic or onion), so there is no animal-product cross-contact risk.",
+  "url": "https://search-ethnic.com/gourmet/surya_dev/",
+  "verdict": "supported",
+  "found": "お料理のメニューは、「バナナリーフミールス」（1,500円）のみ。All veganです。 … お肉やお魚はおろか、ニンニクも玉ねぎも使わない料理であるにもかかわらず、どうしてこんなに旨味が出せるのか不思議なほどです。",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Solid: the single food item is All vegan and the page states no meat, no fish, no garlic, no onion. Vegewel independently records 五葷不使用. Caveat worth flagging in the record, not a defect: the itemised plate includes ヨーグルト and the drink list a 豆乳ラッシー — the yoghurt is presumably plant-based given 'All vegan', but neither page says so explicitly. vegan: full is correctly rated."
+ },
+ {
+  "id": "nagano_suryadev",
+  "city": "nagano",
+  "field": "staff_allergy_handling",
+  "quote": "Reservation-only with English-speaking staff and an English menu; the venue explicitly offers gluten-free accommodation when notified in advance, indicating willingness to handle dietary requests.",
+  "url": "https://vegewel.com/ja/restaurant/2480",
+  "verdict": "supported",
+  "found": "ご予約の方が優先となっています。… グルテンフリー対応できます。事前にご連絡ください。 … 英語スタッフ / 英語メニュー",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "All three elements are on the page. One wording correction: it is 予約優先 (reservation PRIORITY, five fixed seatings 11:30–13:30), not reservation-ONLY — soften the record text so a walk-in celiac is not told the door is shut."
+ },
+ {
+  "id": "nagano_suryadev",
+  "city": "nagano",
+  "field": "positives",
+  "quote": "Fully vegan, no garlic/onion, largely rice- and lentil-based South Indian cuisine that is naturally low in wheat, plus a stated willingness to do gluten-free on advance notice — a good starting point for a celiac if arranged carefully.",
+  "url": "https://vegewel.com/ja/restaurant/2480",
+  "verdict": "supported",
+  "found": "南インド料理ミールスを中心に、月に数回、ドーサプレートやビリヤニプレート、北インドのターリープレートを提供しています。（五葷不使用）… グルテンフリー対応できます。事前にご連絡ください。",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Supported apart from 'fully vegan', which lives on search-ethnic ('All veganです'), not here — Vegewel only ticks ビーガンメニューあり alongside ベジタリアン/オリエンタルベジ. Trading confirmed: s.tabelog.com/nagano/A2001/A200101/20025327/ shows no 閉店 flag; Vegewel entry updated 2024-11-18."
+ }
+]
