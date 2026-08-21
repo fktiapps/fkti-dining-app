@@ -503,5 +503,277 @@
    "https://amarettoo.com/seafoodedofuji/"
   ],
   "enrich_note": "Confirmed. A nationwide Tabelog keyword search for 江戸富士 (HTTP 200, 84件) returns exactly two restaurants with that exact name — this one, 13071145, and an unrelated 江戸富士 in Aichi (23088069) — and the Tokyo one is at 文京区湯島2-7-7, filed under 御茶ノ水 with the genre 寿司・海鮮丼. That matches all three of the light record's fields: 湯島, 御茶ノ水駅周辺, and 海鮮丼・寿司. A Yahoo Japan search for 江戸富士 湯島 海鮮丼 店主 (HTTP 200) returned four independent visit write-ups plus the Tabelog review index, all at the same address, one of which supplies the bowl's name and price. Coordinates updated to Tabelog's (35.704023, 139.765287), about 530 m north of the sweep's approximate pin. No website exists — Tabelog lists none and none of the write-ups link one — so website and menu_url are left null rather than guessed. gf_confidence is 'ask' rather than 'options': raw fish over rice is superficially promising, but nothing is published about the shōyu, the sushi-rice seasoning or the miso, and the shop cannot be checked in advance except by telephone in Japanese."
+ },
+ {
+  "id": "tokyo3__193",
+  "status": "confirmed",
+  "name": "誠鮨",
+  "lat": 35.698822,
+  "lng": 139.765075,
+  "loc_precise": true,
+  "address_ja": "東京都千代田区神田駿河台4-3 新お茶の水ビル B1F",
+  "enrich_confidence": "high",
+  "cuisine": "An Edomae sushi counter that has been in the basement of the Shin-Ochanomizu Building since 1981, doing the slow work — simmering, curing, marinating — rather than just slicing. Lunch is a limited-run 特選ちらし at ¥1,300; nigiri sets run ¥3,500 (上) and ¥4,500 (特上) with a soup, おまかせ nigiri ¥6,000, and the 誠 course from ¥12,000 including a drink.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Kanda-Surugadai 4-chōme — one minute from JR Ochanomizu's Hijiribashi exit (Chūō-Sōbu line) and one minute from Shin-Ochanomizu (Tokyo Metro Chiyoda line), which is exactly where the light record placed it; 6 minutes from Ochanomizu on the Marunouchi line. The shop is in the basement of the Shin-Ochanomizu Building, 114 m from the station.",
+  "website": "http://makoto-sushi.jp/",
+  "menu_url": "http://makoto-sushi.jp/menu/",
+  "hours_raw": "[月～金] 11:30～14:00／17:00～21:30 (L.O.)　定休日：日曜・祝日",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "No gluten-free claim, no allergen information, and two specific things on this counter make wheat likelier than a diner might assume. First, the shop is proud of exactly the preparations that carry it: it describes doing 「煮る」「締める」「漬け込む」 Edomae work on the fish, and it singles out its かんぴょう — simmered gourd, cooked in soy sauce and mirin — as a house specialty alongside the ガリ. Second, its shari is 「数種類のお酢をオリジナルの配合でブレンド」, a proprietary blend of several vinegars, which is precisely the kind of detail that cannot be assumed wheat-free without asking, since grain vinegars in Japan may be wheat-derived. Nikiri brushed onto nigiri is wheat shōyu unless stated otherwise. Against that, this is a counter with a chef in front of you and a menu that says outright 「ご予算に応じて調理致します」 — they will build to request — so a wheat-avoiding diner has somewhere to start. Ask about the shari blend and the nikiri specifically, and expect the kanpyō and any simmered anago to be off the table.",
+  "vegan_status": "no",
+  "vegan_detail": "An Edomae sushi-ya whose entire identity is fish. Tabelog records 魚料理にこだわる; the course structure runs 先付け・刺身・焼物・煮物・寿司・お椀・デザート and the お椀 will be a katsuo or kombu-and-katsuo dashi. There is no vegetable course and no plant-based option advertised.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "大将・店主 (owner-chef; not named on the shop's site)"
+   ],
+   "origin": "Kanda-Surugadai, Chiyoda-ku — the shop has never moved from the Shin-Ochanomizu Building basement",
+   "background": "誠鮨 opened in 1981 (昭和56年) in the basement of the 新お茶の水ビル and has traded there ever since, describing itself as 「地元に愛されて」 — a neighbourhood shop for the offices and hospitals of Surugadai rather than a destination. Its stated principle is a pun on its own name: 「誠実であること」を大切に, keeping faith, applied to the sushi, the room and the service. The kitchen leans on the unglamorous half of Edomae technique — the fish is simmered, cured or marinated over time rather than simply cut, and the shop makes a point that its ガリ and かんぴょう are made in-house with as much care as the fish. The rice is its other claim: a proprietary blend of several vinegars, aimed at a soft mouthfeel that lifts the seafood, and the shari is re-cut twice a day so it is served at the right temperature. The room is dressed seasonally, with craft pieces changed for occasions like Momo-no-sekku and Tango-no-sekku. It seats 24 — a ten-seat counter plus tables — takes reservations, accepts all the major cards, and can be hired for parties of up to fifty. The menu is printed in Japanese and English. Tabelog rates it 3.34, with a dinner spend of ¥10,000–¥14,999 against a ¥1,000–¥1,999 lunch.",
+   "philosophy": "「誠実であること」 — to be sincere; the shop takes its name as its instruction.",
+   "specialty": "The lunch-only 特選ちらし at ¥1,300, made in limited numbers and changed with the season; おまかせ寿司 at ¥6,000; the 誠 course from ¥12,000. In-house ガリ and かんぴょう are named by the shop as points of pride.",
+   "anecdotes": [
+    {
+     "text": "The shop cuts its sushi rice twice a day rather than once, purely so that it reaches the customer at the right temperature.",
+     "source": "http://makoto-sushi.jp/about/"
+    },
+    {
+     "text": "It sells the side dishes as hard as the fish: 「鮨屋の華である、鮮度のよい厳選した鮨ネタはもちろん自慢ですが、ガリやかんぴょうなど、手間を惜しまず拵えた副菜も当店の自慢です」.",
+     "source": "http://makoto-sushi.jp/about/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13025203 lists 誠鮨 under 御茶ノ水/寿司 at 東京都千代田区神田駿河台4-3 新お茶の水ビルB1F, tel 03-3295-8537, coordinates 35.69882/139.76507, 1 minute from JR Ochanomizu's Hijiribashi exit and 1 minute from Shin-Ochanomizu (114 m), weekday hours 11:30–14:00 and 17:00–21:30 L.O. closed Sundays and public holidays, 24 seats (10 counter, plus tables), reservations accepted, VISA/Master/JCB/AMEX/Diners, all non-smoking, private hire up to 50, 日本酒あり and 魚料理にこだわる, an opening year of 1981, and a 3.34 rating. The shop's own site makoto-sushi.jp confirms the 昭和56年 founding in the same basement, the 「誠実であること」 principle, the multi-vinegar shari blend cut twice daily, the in-house ガリ and かんぴょう, and the 煮る/締める/漬け込む Edomae work; its お品書き page gives the full bilingual price list — 上にぎり ¥3,500, 特上にぎり ¥4,500, 上ちらし ¥3,500, 特上ちらし ¥4,500, おまかせ寿司 ¥6,000, the 誠 course from ¥12,000 with a beer or soft drink included, and the lunch-only 特選ちらし at ¥1,300 in limited numbers.",
+   "confidence": "high",
+   "sources": [
+    "http://makoto-sushi.jp/",
+    "http://makoto-sushi.jp/about/",
+    "http://makoto-sushi.jp/menu/",
+    "https://tabelog.com/tokyo/A1310/A131002/13025203/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "No allergen information is published anywhere on the shop's site or its Tabelog page, and no gluten-free preparation is claimed.",
+     "source": "http://makoto-sushi.jp/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The shop's named side specialty かんぴょう is a soy-sauce-simmered preparation, and it describes 煮る and 漬け込む as core to its Edomae work — all standard wheat-shōyu constructions. No tamari is mentioned.",
+     "source": "http://makoto-sushi.jp/about/"
+    },
+    {
+     "text": "The shari is a proprietary blend of several vinegars — 「数種類のお酢をオリジナルの配合でブレンド」 — whose composition is not published, so it cannot be assumed free of grain-derived vinegar.",
+     "source": "http://makoto-sushi.jp/about/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "An Edomae sushi counter; Tabelog records 魚料理にこだわる and the course runs through sashimi, grilled, simmered, sushi and a soup course. No plant-based option exists.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13025203/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "The shop states on its menu page that it will cook to the customer's budget and requirements — 「その他、ご予算に応じて調理致します」 / 'We can arrange the menu on your budget' — which is an opening for a dietary request made at reservation, though nothing about allergies is promised.",
+     "source": "http://makoto-sushi.jp/menu/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "The menu is published in Japanese and English, so a non-Japanese-speaking diner can at least read what is being offered before asking about it.",
+     "source": "http://makoto-sushi.jp/menu/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Unusually approachable for an Edomae counter",
+   "note": "One minute from Ochanomizu's Hijiribashi exit and one from Shin-Ochanomizu, but it is in a basement — go down into the Shin-Ochanomizu Building rather than looking for a street frontage. The menu is bilingual Japanese/English with prices tax-included, which removes most of the anxiety of a sushi counter; there are tables as well as the ten-seat counter, children are welcomed at every age, and all the major cards are accepted. Lunch is the low-risk way in: the ¥1,300 特選ちらし is made in limited numbers, so go early in the 11:30–14:00 window. Closed Sundays and public holidays. Reservations on 03-3295-8537; the shop says it will build a menu to your budget, which is also the right moment to raise a dietary restriction. It has been here since 1981 and reads as a local office-district shop, not a tourist one."
+  },
+  "sources": [
+   "http://makoto-sushi.jp/",
+   "http://makoto-sushi.jp/about/",
+   "http://makoto-sushi.jp/menu/",
+   "https://tabelog.com/tokyo/A1310/A131002/13025203/"
+  ],
+  "enrich_note": "Confirmed. A nationwide Tabelog keyword search for 誠鮨 (HTTP 200, 48件) returns eight restaurants with that exact name across Japan — Hokkaidō (two), Kanagawa, Gunma, Aomori, Tochigi and Tokyo — and exactly one in Tokyo: 13025203 at 神田駿河台4-3 新お茶の水ビルB1F, one minute from 新御茶ノ水駅, which is precisely the station the light record names, with the genre 寿司 matching the sweep's 江戸前寿司. The shop's own site makoto-sushi.jp independently confirms the address, the basement location and the 1981 founding, and describes the sushi as 江戸前 in its own page title. Coordinates updated to Tabelog's (35.698822, 139.765075), about 40 m from the sweep's approximate pin. gf_confidence stays at the light record's 'ask' but the detail is now evidenced rather than assumed — the shop's own copy names kanpyō and long simmering/curing work, and describes an undisclosed multi-vinegar shari blend."
+ },
+ {
+  "id": "tokyo3__194",
+  "status": "confirmed",
+  "name": "粋庵",
+  "lat": 35.697728,
+  "lng": 139.768152,
+  "loc_precise": true,
+  "address_ja": "東京都千代田区神田淡路町2-105 ワテラスアネックス 0102",
+  "enrich_confidence": "high",
+  "cuisine": "A wa-modern Japanese restaurant on the Waterras Annex ground floor, opened April 2025: hon-maguro handled by a specialist, Ōmi beef bought from a dedicated supplier, and seasonal tempura, in courses at ¥8,000–¥9,999 for dinner against a ¥1,000–¥1,999 lunch, with a serious sake, shōchū and wine list. Twenty-eight seats, private rooms for two to six, and a ¥500 cover.",
+  "cuisine_type": "kaiseki",
+  "neighborhood": "Kanda-Awajichō 2-chōme, in the Waterras Annex — 3 minutes from JR Ochanomizu (Chūō-Sōbu line), 3 minutes and 240 m from Shin-Ochanomizu (Tokyo Metro Chiyoda line), 3 minutes from Awajichō (Tokyo Metro Marunouchi line).",
+  "website": "https://www.suian-japan.com/",
+  "menu_url": "https://www.suian-japan.com/",
+  "hours_raw": "月・火・水・木・金・祝前日・祝後日 11:30 - 14:00 (料理L.O. 13:40) ／ 17:00 - 22:00 (料理L.O. 21:00)　土 11:30 - 15:00 (料理L.O. 14:40) ／ 16:00 - 21:00 (料理L.O. 20:00)　日・祝日 定休日",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Nothing is published about allergens, and the shop's three headline items include one that is flatly out: the 天ぷら it advertises is wheat batter, fried in oil shared with everything else fried that service. The 本マグロ and 近江牛 sides of the menu are more negotiable in principle — but a wa-modern kaiseki kitchen seasons almost everything with wheat shōyu and mirin, and no gluten-free tamari is named. What this restaurant does have that most of the shard does not is the machinery for a conversation: it takes reservations, has private rooms, publishes an English menu, and is a 2025-opened room used for 接待 where dietary requests at booking are routine. Ask when you reserve, name the tempura and the soy sauce explicitly, and treat 'ask' as genuinely open here rather than as a polite no.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not advertised, but not obviously impossible. Tabelog records the kitchen as 野菜料理にこだわる as well as 魚料理にこだわる, and the format is a course built around seasonal ingredients, which is the format most able to substitute — but the named draws are tuna and Ōmi beef, and the dashi under a Japanese course is katsuo unless the kitchen is told otherwise. There is no published vegan course and no HappyCow-style listing. A vegan meal here would have to be arranged in advance, in Japanese or through the English menu contact, and confirmed as free of dashi and egg.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "料理長 (head chef; not named on the restaurant's site)"
+   ],
+   "origin": "Kanda-Awajichō, Chiyoda-ku — the Waterras Annex, the retail podium of the Waterras redevelopment beside Ochanomizu",
+   "background": "粋庵 opened on 8 April 2025 on the ground floor of the Waterras Annex, the low-rise retail building of the Waterras complex between Ochanomizu and Awajichō. It presents itself as a 和モダン Japanese restaurant built for entertaining — 「接待やデートで使いたい和モダンな和食料理店」 — with three things at the centre of the menu: carefully selected hon-maguro, which the shop says is handled 「職人技でその魅力を最大限に引き出し」; Ōmi beef sourced from a dedicated specialist supplier; and tempura made from whatever is in season. Around that sits a drinks list the restaurant treats as equal billing, with sake, shōchū and wine all flagged by Tabelog as 「こだわる」. The room seats 28 across an eight-seat counter and twenty at tables, with private rooms for two, four and six, and can be taken over for parties up to fifty; there is a projector, power at the seats and free wi-fi, it is wheelchair-accessible, and there is an English menu and a children's menu. Payment is unusually open for a Japanese restaurant of this level — every major card including UnionPay, all the common electronic money, and PayPay, d払い, au PAY, Alipay, WeChat Pay and Merpay — with a ¥500 charge per person and no service charge. Tabelog rates it 3.31, which mostly reflects how new it is.",
+   "philosophy": "「心ほどける、粋な味わいとともに」 — the shop's own line: carefully made Japanese food and warm hospitality in a calm room.",
+   "specialty": "本マグロ, 近江牛 and seasonal 天ぷら — the three items the restaurant names for itself — served in courses, with a sake and wine list treated as part of the offer.",
+   "anecdotes": [
+    {
+     "text": "The restaurant describes its own audience plainly: 「接待やデートで使いたい和モダンな和食料理店。厳選した本マグロ、近江牛、四季折々の食材を使った天ぷらを味わえる贅沢なコースが魅力です。」",
+     "source": "https://www.suian-japan.com/"
+    },
+    {
+     "text": "It is unusually well equipped for a Japanese restaurant — projector, power sockets at the seats, free wi-fi, wheelchair access, an English menu and a children's menu — which is what a Waterras ground-floor unit built for corporate entertaining looks like.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13307697/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13307697 lists 粋庵 under 新御茶ノ水/日本料理・海鮮・天ぷら at 東京都千代田区神田淡路町2-105 ワテラスアネックス0102, coordinates 35.69773/139.76815, 240 m and 3 minutes from Shin-Ochanomizu with JR Ochanomizu and Awajichō also 3 minutes away, tel 03-6206-4317 (booking line 050-5596-2821), an opening date of 2025年4月8日, 28 seats (8 counter, 20 table) with private rooms for 2/4/6 and hire up to 50, a ¥500 charge and no service charge, dinner budget ¥8,000–¥9,999 against ¥1,000–¥1,999 at lunch, weekday hours 11:30–14:00 and 17:00–22:00 with longer Saturday service and closure on Sundays and public holidays, an English menu, a children's menu, wheelchair access, free wi-fi, and 野菜料理にこだわる alongside 魚料理にこだわる. The restaurant's own site suian-japan.com confirms the identity and the ワテラス/御茶ノ水 location, gives the tagline 「心ほどける、粋な味わいとともに」, and describes the menu as 厳選した本マグロ, 近江牛 and seasonal tempura in course form. The official Instagram is @suian.japan.",
+   "confidence": "medium",
+   "sources": [
+    "https://www.suian-japan.com/",
+    "https://tabelog.com/tokyo/A1310/A131002/13307697/",
+    "https://www.instagram.com/suian.japan/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Tempura is one of the three things the restaurant advertises, so wheat batter and a shared fryer are in the kitchen every service. No allergen information is published and no gluten-free preparation is claimed.",
+     "source": "https://www.suian-japan.com/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "A 和モダン Japanese course kitchen with no tamari or gluten-free seasoning named anywhere; wheat shōyu and mirin should be assumed throughout.",
+     "source": "https://www.suian-japan.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The named centrepieces are hon-maguro and Ōmi beef, and the underlying dashi of a Japanese course is katsuo unless the kitchen is asked to change it.",
+     "source": "https://www.suian-japan.com/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Reservations, private rooms and an English menu mean a dietary request can actually be made and understood in advance — the practical prerequisite for eating safely at a Japanese course restaurant.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13307697/"
+    },
+    {
+     "text": "Tabelog records the kitchen as 野菜料理にこだわる as well as 魚料理にこだわる, so vegetables are treated as more than garnish.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13307697/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Among the easiest fine-ish Japanese rooms in the area",
+   "note": "Ground floor of the Waterras Annex, three minutes from Ochanomizu, Shin-Ochanomizu and Awajichō alike — the light record's 「新御茶ノ水駅 (ワテラス)」 is exactly right. There is an English menu, free wi-fi, power at the seats, step-free access and a children's menu, and it takes almost every form of payment including UnionPay, Alipay and WeChat Pay, which makes it unusually low-friction for a visitor. Book: it has 28 seats and private rooms for two to six, and it is a room used for business entertaining, so walk-ins at dinner are a gamble. There is a ¥500 cover per person and no service charge. Closed Sundays and public holidays; Saturday runs a longer lunch (to 15:00) and an earlier dinner (16:00–21:00). Because it opened in April 2025 there is very little independent review coverage yet — the picture here comes from the restaurant's own copy and its Tabelog profile, so treat the food description as the house's claim rather than as a verdict."
+  },
+  "sources": [
+   "https://www.suian-japan.com/",
+   "https://tabelog.com/tokyo/A1310/A131002/13307697/",
+   "https://www.instagram.com/suian.japan/"
+  ],
+  "enrich_note": "Confirmed. A nationwide Tabelog keyword search for 粋庵 (HTTP 200, 128件) returns four restaurants with that exact name — in Nara, Shimane, Tokyo and (as 四季彩粋庵/珈琲専心粋庵 etc.) several compounds — and exactly one Tokyo 粋庵: 13307697 at 神田淡路町2-105 ワテラスアネックス, filed under 新御茶ノ水. That matches the light record on all three counts: the station, the ワテラス building named in the sweep's neighbourhood string, and the 日本料理・プレミアム genre. The restaurant's own site suian-japan.com independently confirms the Ochanomizu location and the wa-modern Japanese identity. Coordinates updated to Tabelog's (35.697728, 139.768152), about 290 m from the sweep's approximate pin. Caveat for the reviewer: the shop opened on 8 April 2025 and its site is a Wix page whose menu content did not render to a scripted fetch, so prices here come from Tabelog's budget bands and the dish list from the restaurant's own meta description, not from a published お品書き. gf and vegan are both left at 'ask' — advertised tempura rules out a higher gluten tier, but the reservation, private-room and English-menu infrastructure make a pre-arranged meal genuinely plausible, which is why neither is set to 'no'."
+ },
+ {
+  "id": "tokyo3__195",
+  "status": "confirmed",
+  "name": "日乃屋 本店",
+  "lat": 35.703214,
+  "lng": 139.765706,
+  "loc_precise": true,
+  "address_ja": "〒113-0034 東京都文京区湯島2-2-1 東邦深澤ビル 1F",
+  "enrich_confidence": "high",
+  "cuisine": "The Yushima original of 日乃屋カレー, the chain that grew from this 19-seat room to about a hundred shops and on to California and Taiwan. The house roux is sold on a single line — 「始まり甘く、後より辛い、余韻残りしカレールウ」, sweet at the first mouthful, hot afterwards, and lingering — and the honten also keeps the chūka-soba and tsukemen the chain shops dropped. Sub-¥1,000.",
+  "cuisine_type": "curry",
+  "neighborhood": "Yushima 2-chōme, Bunkyō-ku — 405 m and about 6 minutes from JR Ochanomizu's Hijiribashi exit: north past the Yushima Seidō crossing, over the Shimizuzaka-shita junction and left. About 10 minutes west along Kuramaebashi-dōri from Suehirochō (Tokyo Metro Ginza line).",
+  "website": "https://hinoya.jp/",
+  "menu_url": "https://hinoya.jp/menu/",
+  "hours_raw": "月 11:00 - 15:00 (L.O. 14:30)／17:00 - 20:00 (L.O. 19:30)　火・水・木・金 11:00 - 20:00 (L.O. 19:30)　土 11:00 - 15:00 (L.O. 14:30)　日・祝日 定休日　■ 定休日 不定休有／ラストオーダーは閉店30分前",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "No, and this one is not close. The company's whole proposition is 「日本のカレー、昔からある皆が食べ慣れた、あの懐かしくも深みのあるカレー」 — Japanese-style curry, which is by definition a roux thickened with wheat flour, and the shop describes the roux as made by its own in-house method with no substitution claimed. The honten additionally boils wheat chūka-soba and tsukemen noodles in the same small kitchen (Tabelog files it as カレー、ラーメン、つけ麺), and the signature item is a breadcrumbed katsu — the 名物カツカレー, now also sold as a 三元豚・プレミアムカツカレー. No allergen information is published on hinoya.jp and no gluten-free item exists at any branch.",
+  "vegan_status": "no",
+  "vegan_detail": "Correcting the light record, which carried vegan_status 'options': nothing supports that. The company describes buying meat from the west of Japan, branded eggs, and vegetables chosen nationally, and the standard bowls are katsu, pork and beef; the honten also runs a chūka-soba stock. A newer 印度式カレー roux is advertised as 「スパイスとベジタブルが効きまくり」, but that is a description of flavour, not a vegan claim, and the site says explicitly that whether a branch carries it varies. No vegan or vegetarian item is listed anywhere on the official site, and Japanese curry roux routinely contains animal extract and honey.",
+  "chef_bio": {
+   "chef_name": "日浦大 (Dai Hiura)",
+   "roles": [
+    "代表者 (representative director, 有限会社ノアランド / Noahland Ltd.)"
+   ],
+   "origin": "Yushima 2-chōme, Bunkyō-ku — the company's registered head office is this building, 東京都文京区湯島2-2-1 東邦深澤ビル1階",
+   "background": "有限会社ノアランド was founded in August 2004 and the Yushima honten is both the first 日乃屋カレー and, to this day, the company's registered address — the head office is the shop. The house line, printed at the top of the company's own page, is 「始まり甘く、後より辛い、余韻残りしカレールウ」: sweet at the start, hot afterwards, with an aftertaste that stays. The company is explicit that it is not chasing modern curry styles — 「昨今ありとあらゆるスタイルのカレーが世に出回っていますが、日乃屋は一貫して日本のカレー、昔からある皆が食べ慣れた、あの懐かしくも深みのあるカレーを日々追求しております」 — and that the goal is not 'sweet!' or 'hot!' but 「美味かった。また来るよ！」. It is equally blunt about buying: meat from western Japan, branded eggs, vegetables chosen nationally by season, and a spice blend so complicated that 「作っている本人が間違えてしまうくらいの種類の調合」; wholesalers, it says, complain about how hard the company is on sourcing and on price. The chain went from this room to 97 shops by January 2023 and has since added dozens more, including San Francisco, San Jose and Berkeley in California, Qingdao, and Kaohsiung. Its retort-pouch curry range won a Gold Award at OMOTENASHI Selection 2025. The honten is 19 seats — 11 at the counter, 8 at tables — cash only, all non-smoking, no reservations, with takeaway; it is the branch that still serves chūka-soba and tsukemen alongside the curry, which the company site treats as part of the same craft: 「中華そばのスープ。カレーのルウも日乃屋ならではの手法が用いられております」.",
+   "philosophy": "始まり甘く、後より辛い、余韻残りしカレールウ — and beyond the taste, getting the customer to 「美味かった。また来るよ！」 rather than merely to a reaction.",
+   "specialty": "名物カツカレー — the katsu curry the chain is known for, now also in a 三元豚・プレミアムカツカレー version; the newer 印度式カレー roux at selected branches; and, at the honten specifically, 中華そば and つけ麺.",
+   "anecdotes": [
+    {
+     "text": "The head office of a hundred-shop chain is still the counter it started at: the company's 会社概要 gives its 所在地 as 〒113-0034 東京都文京区湯島2-2-1 東邦深澤ビル1階 — the honten's address.",
+     "source": "https://hinoya.jp/company/"
+    },
+    {
+     "text": "On sourcing, the company quotes its own suppliers against itself: 「日乃屋さんは仕入れうるさいからね（値段交渉も）…」と問屋さんから泣かれることもあります.",
+     "source": "https://hinoya.jp/about_hinoya/"
+    },
+    {
+     "text": "The chain's retort-pouch curry took a Gold Award at OMOTENASHI Selection 2025, and the pouches are sold over the counter as souvenirs at a growing number of branches.",
+     "source": "https://hinoya.jp/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13129028 lists 日乃屋 本店 under 御茶ノ水/カレー・ラーメン・つけ麺 at 東京都文京区湯島2-2-1 東邦深澤ビル1F, tel 03-3814-8533, coordinates 35.70321/139.76571, 405 m from JR Ochanomizu with walking directions past Yushima Seidō, 19 seats (11 counter, 8 table), 予約不可, cash only with no cards or electronic money, all non-smoking, takeaway available, hours 11:00–20:00 Tue–Fri with a midday break on Mondays and a 15:00 finish on Saturdays, closed Sundays and public holidays with 不定休有, a sub-¥1,000 spend, rating 3.32, homepage hinoya.jp and official X @hinoya_koushiki. The official site hinoya.jp confirms the brand line 「始まり甘く、後より辛い、余韻残りしカレールウ」, the deliberate commitment to old-fashioned Japanese curry, the sourcing policy, the 名物カツカレー and its 三元豚 premium version, the newer 印度式カレー roux (availability varies by branch), and the OMOTENASHI Selection 2025 Gold Award; its 会社概要 page gives 有限会社ノアランド, representative 日浦大, establishment August 2004, capital ¥3m, 97 shops as of January 2023, and a head-office address identical to the honten, together with a dated shop-opening log running from 2012 to 2025 and including San Francisco (2021), Berkeley (2024), Qingdao (2024), San Jose (2025) and Kaohsiung (2025).",
+   "confidence": "high",
+   "sources": [
+    "https://hinoya.jp/",
+    "https://hinoya.jp/about_hinoya/",
+    "https://hinoya.jp/company/",
+    "https://tabelog.com/tokyo/A1310/A131002/13129028/",
+    "https://x.com/hinoya_koushiki"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A 19-seat kitchen that fries breadcrumbed katsu and boils wheat chūka-soba and tsukemen noodles alongside the curry. No allergen information is published and no wheat-free item exists.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13129028/"
+    },
+    {
+     "text": "The product itself is Japanese-style curry roux — the company's stated commitment is to 「日本のカレー」, which is flour-thickened by definition.",
+     "source": "https://hinoya.jp/about_hinoya/"
+    }
+   ],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [
+    {
+     "text": "The company describes sourcing meat from western Japan and branded eggs as base ingredients, and the honten additionally makes a chūka-soba stock; the signature dish is a pork katsu.",
+     "source": "https://hinoya.jp/about_hinoya/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Very easy — but cash, and a walk",
+   "note": "Six minutes north of JR Ochanomizu's Hijiribashi exit, past Yushima Seidō — a pleasant walk but further than the 御茶ノ水駅周辺 label suggests, and in Bunkyō-ku rather than Chiyoda. Nineteen seats, no reservations, takeaway available, and cash only: no cards, no electronic money, no QR payment. Closed Sundays and public holidays, with occasional unscheduled closures (不定休有), a 15:00 finish on Saturdays and a 15:00–17:00 break on Mondays; last orders are half an hour before closing. There is an English section on the brand site (HINOYA CURRY (ENGLISH)) even though the honten itself does not advertise an English menu, and curry ordering is simple enough that language is rarely the obstacle. If you want the chain's newer 印度式カレー roux, ring first — the company says availability varies by branch. Retort-pouch curry is sold over the counter and makes a genuinely good souvenir."
+  },
+  "sources": [
+   "https://hinoya.jp/",
+   "https://hinoya.jp/about_hinoya/",
+   "https://hinoya.jp/company/",
+   "https://tabelog.com/tokyo/A1310/A131002/13129028/",
+   "https://x.com/hinoya_koushiki"
+  ],
+  "enrich_note": "Confirmed. A nationwide Tabelog keyword search for 日乃屋 (HTTP 200, 165件) returns 日乃屋 本店 as its first hit, 13129028, at 東京都文京区湯島2-2-1 東邦深澤ビル1F — 405 m from JR Ochanomizu, matching the light record's 御茶ノ水駅周辺 — with the genre カレー、ラーメン、つけ麺 against the sweep's 「カレー・定食」. The identification is nailed down independently by the company register on hinoya.jp/company, which gives 有限会社ノアランド's 所在地 as the same building and floor; every other 日乃屋 on Tabelog is a branded 日乃屋カレー branch elsewhere. Coordinates updated to Tabelog's (35.703214, 139.765706), about 440 m north of the sweep's approximate pin, and the postcode 〒113-0034 is taken from the company's own registration rather than inferred. One correction carried into the record: the light record had vegan_status 'options', which nothing on the official site supports — it has been changed to 'no', with the reasoning set out in vegan_detail so a reviewer can see what was and was not found."
  }
 ]

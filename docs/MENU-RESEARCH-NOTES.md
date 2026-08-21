@@ -297,3 +297,105 @@ Second directory that answers curl cleanly: `r.gnavi.co.jp/area/jp/rs/?fw=<keywo
 
 Reminder from the same pass: **HTTP 429 is the engine refusing to answer, not
 answering "no".** Back off and retry; never let a rate-limit become a negative result.
+
+## Added by the Tokyo shard s1 agent (2026-08, 15 shops, 452 items, zero empties)
+
+**The best single source in this whole tranche was a PDF allergen chart on the
+shop's own site.** Three of fifteen shops publish one, and each turned a pile of
+guesses into item-level fact:
+
+- 浅草 更科天狐 — `/wp-content/uploads/2026/03/Allergen-List.pdf`, a 14-allergen
+  grid in Japanese *and* English covering every dish.
+- WithGreen — `withgreen.club/wordpress/wp/wp-content/uploads/2026…アレルギー…pdf`,
+  a 28-allergen grid with a separate line for **every topping and every
+  dressing**, which is exactly the granularity a build-your-own bowl needs.
+- 追分だんご本舗 — no PDF, but a `特定原材料` line on each product page. The
+  *absence* of a line is informative on a site that does label: mitarashi,
+  生醤油, のり巻, 胡麻たれ all read 小麦; the bean-paste skewers read nothing.
+
+Look for `アレルギー`, `特定原材料`, `Allergen` in the page's `href` list before
+you start reasoning from ingredients. It is a two-minute check that beats an
+hour of inference.
+
+**Read allergen grids as images, not as text.** `fitz` page text returns the
+✖️/🔴 marks in reading order with no column positions, and a row with a merged
+cell silently shifts every mark after it by one — which would have mislabelled
+更科天狐's 蕎麦前盛り合わせ as wheat-free when it actually carries **大麦 (barley)
+via 山ウニ**. Render at 170–400 dpi, crop to the label column plus the first
+seven allergen columns, and Read the PNG. The column order on both Japanese
+charts was 卵 乳 小麦 …, so a narrow left crop answers the gluten question.
+
+**A wheat-free Japanese restaurant does exist and it will still have one trap
+dish.** 更科天狐 is a genuine gluten-free soba shop — 十割 *and* 更科, and the
+tsuyu, the tempura batter, the yakitori tare, the ponzu and the soy are all
+house wheat-free versions. Its own card prints 「※グルテンが入っています」on
+exactly one item (やま幸鮪の手巻き, smoked soy) and the barley hides in the
+sobamae platter that all three courses include. Do not let a shop's headline
+claim stop you reading the per-item chart.
+
+**Tabelog `/dtlmenu/` on the smartphone host is now the reliable first call.**
+9 of 13 shops returned a real priced item list. Size tells you which: a ~520KB
+response is the shop top page (fall-through, i.e. "no menu registered"); a
+140–260KB response is an actual menu. Check `更新日` — 追分だんご was 2010,
+色川 2018, ガパオ食堂 2021 (10–15% below the shop's current site prices), while
+くわんね was 2026/08/03 and MENSHO 2026/06/26. Old registrations are a trap, not
+a source. The `/dtlmenu/lunch/` and `/dtlmenu/drink/` sub-tabs **404** — those
+counts on the page need JS, so use `?photo=1` for the rest of the card.
+
+**`scripts/_tbphotos.py` carried five shops on its own** — the entire menu for
+ビストロ福昇亭, 肥後一文字や, 国際秘羊館, アタクカフェ and らーめんはやし, none of
+which publish anything. Three details worth knowing:
+
+- Photograph a board twice and you can *date-check a price*. アタクカフェ's
+  handwritten lunch board was shot 2024-03, 2024-04 and 2025-12 with identical
+  figures — that turns "two-year-old photo" into "prices have held for two
+  years" and justifies `confidence: high`.
+- Ticket-machine photos are a completeness check the board is not. はやし's
+  2026-06 machine has exactly three live buttons matching the board, so you can
+  state that is the whole menu rather than hoping.
+- Shops post their own allergy notices in the window. はやし's reads
+  「魚介類・エビ・鶏肉・豚肉・醤油等の材料を使用しています」— shop-sourced, and
+  the shrimp is not something you would have inferred from a soy ramen.
+
+**STUDIO CMS, second sighting** (ガパオ食堂, after hosa.nagoya). The recipe in the
+Nagoya section works unchanged, plus one thing it does not say: dish *names*
+often live in a CMS collection and render as literal `{{title}}` in the
+page-view JSON, while the Japanese sub-name and the price come through paired in
+`text1`/`text2`. Recover the names by matching the Japanese sub-name against the
+shop's own (stale) Tabelog list — and where no name is evidenced, leave `romaji`
+empty rather than inventing a Thai transliteration.
+
+**Gnavi `*.gorp.jp` is a JSON blob** (already noted for Nara) and it worked
+again: 色川's `menu.all.list[].url` → `r.gnavi.co.jp/0001033061/menu1/`. Watch
+for the shop's own page disagreeing with itself — the photo caption said ¥4,800
+where the table said ¥4,900. Take the table.
+
+**New traps:**
+
+- **A ramen shop that is a lamb izakaya after 14:00.** 国際秘羊館's street
+  A-board reads 【昼限定】…11:00〜14:00; the ramen order slip is the *lunch*
+  menu and the evening is Hokkaido jingisukan with a ¥500 otoshi and no
+  published prices. Same room, two restaurants — cf. MAZEMEN プルダ in Kyoto.
+- **Miyazaki 冷や汁 is traditionally 麦味噌**, i.e. barley, i.e. gluten. The
+  prefecture's signature dish is a gluten trap and nothing about the name says
+  so. Same question applies to any Kyushu miso dish (くわんね's なめろう).
+- **"Okara bread" is not wheat-free.** HealthyTOKYO's おからパン sandwiches sit
+  deliberately *outside* the printed "Gluten-free Line Up" heading on its own
+  board. A 100% vegan café is not a gluten-free café; read which section a
+  dish is printed under.
+- **The dressing carries the wheat, not the salad.** Two WithGreen bowls
+  (スモークチキンのシーザー, 蒸し鶏とりんご) are clear of 小麦 undressed and only
+  fail because of the *recommended* dressing — and dressings swap free. That is
+  a real, actionable answer for a diner, and you only get it from a chart that
+  lists the dressings separately.
+- **A shop's COVID-era "closed for the time being" notice may be dead HTML.**
+  追分だんご本舗's site still shows the 2022 tearoom suspension — but it is
+  inside an HTML comment, and a 2026-04-29 shop announcement reopened the
+  tearoom shaved-ice season. Check the news feed before recording a closure.
+
+**Windows/Bash note:** a heredoc-built Python script much over ~15KB fails the
+Bash tool with `ENAMETOOLONG: uv_spawn`. Write per-shop JSON fragments with the
+Write tool into a `_sN_parts/` directory and merge them with a ten-line script
+that orders keys by the shard file — that also gives you the brief's
+"save every 4 shops" for free, and the merge script is the natural place to
+hang a validator (gf/vegan enum, `gf` with empty note, malt drink flagged `gf`).
