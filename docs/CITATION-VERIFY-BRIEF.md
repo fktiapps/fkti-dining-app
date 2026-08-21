@@ -44,8 +44,10 @@ because it treated "I found something" as "it checks out". Do not repeat that.
 HTTP 429 is the engine refusing to answer, not answering "no". Back off and retry.
 
 **Fetch reality, checked 2026-08-21** — this changes, so try the simple thing first.
-HappyCow and FindMeGlutenFree now answer a plain desktop Chrome User-Agent; the
-r.jina.ai proxy that earlier shards needed is DEAD for both. Tabelog answers on
+HappyCow and FindMeGlutenFree now answer a plain curl with an iPhone or desktop Chrome
+User-Agent. **r.jina.ai returns a Cloudflare 403 for every host** — the proxy earlier
+shards relied on is gone, so do not reach for it. CAA and other Japanese government
+PDFs need `pdftotext -enc UTF-8 -nopgbrk`; `-layout` yields nothing on them. Tabelog answers on
 `s.tabelog.com` with an iPhone UA. Tabelog's `/rstLst/?sk=` search silently ignores
 the keyword and returns promoted listings — a false negative generator; use what
 `/rst/rstsearch/?sk=` redirects to. web.archive.org has been intermittently 503.

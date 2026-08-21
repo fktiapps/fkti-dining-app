@@ -53,6 +53,20 @@ const SEED = [
     why: 'The dedicated->options downgrade rests on an allergy-LIABILITY disclaimer rather ' +
          'than any wheat on the premises. The cited guide, updated 2026-07-26, lists it among ' +
          '90 shops where 「工房・店内に小麦粉を一切持ち込まず」.' },
+  { id: 'tokyo_asakusa_sarashina_tenko', field: 'gf_confidence', recommended: 'high',
+    why: 'Found independently by two agents on two different passes. The record is twice ' +
+         'told "no source confirms a dedicated fryer / cross-contamination handling" while ' +
+         'its OWN cited FMGF page carries 7 dedicated-GF-fryer reports plus dedicated-kitchen ' +
+         "and glove-change reports. Separately, the menu pass read the shop's own 14-allergen " +
+         'PDF: 小麦 and 大麦 are clear on the noodles, tsuyu, tempura, karaage and yakitori tare. ' +
+         'Two printed exceptions must survive any promotion — やま幸鮪の手巻き is marked ' +
+         '「グルテンが入っています」, and 蕎麦前盛り合わせ carries 大麦 via 山ウニ and is built into all ' +
+         'three courses.' },
+  { id: 'himeji_almondou', field: 'gf_confidence', recommended: 'options',
+    why: "Rated 'Not gluten-free' while the shop's own site states the curry uses no wheat " +
+         'flour and passed a third-party gluten/gliadin test with NONE DETECTED, the report ' +
+         'displayed in store. The record also has 18 spices for 21, calls almond-milk lattes ' +
+         'dairy, says allergy language does not exist when it does, and publishes stale hours.' },
 ];
 
 const recs = [];

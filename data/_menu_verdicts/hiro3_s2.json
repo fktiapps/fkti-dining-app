@@ -1198,5 +1198,648 @@
     "dish_key": "kaki_agedashi"
    }
   ]
+ },
+ "hiro_yamashiroya": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3402/A340202/34017418/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/375872/07e6b1111f9a9d72163bf143ca6c2c1f.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/375872/8bf34025576e64c7287a08180cb6327c.jpg"
+  ],
+  "price_note": "Read off the shop's own laminated table cards photographed 2026-08 - about as current as a menu photograph gets. For comparison the same card in 2025-01 listed anago-meshi at 2,200 yen with a 2,500 yen large size and grilled oysters at 600 yen, so the shop has since settled on one anago size at 2,500 and put the oysters up to 700. Prices approximate - may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "あなごめし",
+    "romaji": "anago-meshi",
+    "en": "Grilled conger eel over rice - the Miyajima dish, and essentially the whole menu here",
+    "price": "¥2,500",
+    "section": "お食事 Food (2026-08 table card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The card notes the rice is Hiroshima-grown Koshihikari. Anago is grilled with a soy-and-mirin tare, and the rice underneath is cooked in eel stock seasoned with soy sauce - wheat both times. This is the only hot dish the shop sells.",
+    "dish_key": "anago_meshi"
+   },
+   {
+    "ja": "焼がき（二個）",
+    "romaji": "yaki-gaki (ni-ko)",
+    "en": "Two oysters grilled in the shell",
+    "price": "¥700",
+    "section": "お食事 Food (2026-08 table card)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Grilled on the half shell with nothing but their own liquor, so the oyster itself is clean - the question is whether ponzu or soy sauce arrives with it. Ask for lemon. (A separate street sign for 山根商店, the oyster stall by the shop, prices its own plate of two lower; that is a different business, so use the in-shop card.)",
+    "dish_key": "yaki_gaki"
+   },
+   {
+    "ja": "幻（まぼろし）大吟醸",
+    "romaji": "Maboroshi daiginjo",
+    "en": "Maboroshi daiginjo sake - Nakao Brewery, Takehara",
+    "price": "¥1,100",
+    "section": "日本酒 Sake (2026-08 table card)",
+    "gf": "",
+    "vegan": "",
+    "note": "The card's own note: polishing ratio 38%, sake meter value +3, fermented with a yeast isolated from apple skin, giving a rich aroma with a clean sweetness. The dearest pour on the card.",
+    "dish_key": "sake_maboroshi"
+   },
+   {
+    "ja": "瑞冠（ずいかん）「こわっぱ」純米吟醸",
+    "romaji": "Zuikan 'Kowappa' junmai ginjo",
+    "en": "Zuikan 'Kowappa' junmai ginjo sake - Yamaoka Brewery, Kounu",
+    "price": "¥800",
+    "section": "日本酒 Sake (2026-08 table card)",
+    "gf": "",
+    "vegan": "",
+    "note": "Card gives polishing 55%, sake meter +6. A dry Hiroshima junmai ginjo.",
+    "dish_key": "sake_zuikan"
+   },
+   {
+    "ja": "誠鏡（せいきょう）超辛口 本醸造",
+    "romaji": "Seikyo chokarakuchi honjozo",
+    "en": "Seikyo extra-dry honjozo sake - Nakao Brewery, Takehara",
+    "price": "¥550",
+    "section": "日本酒 Sake (2026-08 table card)",
+    "gf": "ask",
+    "vegan": "",
+    "note": "Polishing 68%, sake meter +8 - the driest thing on the card. Honjozo has a small amount of distilled alcohol added; the base is still rice, but unlike junmai it is not a pure rice sake, so a strict celiac may want to ask what the added spirit is made from.",
+    "dish_key": "sake_seikyo_karakuchi"
+   },
+   {
+    "ja": "誠鏡（せいきょう）純米酒",
+    "romaji": "Seikyo junmai-shu",
+    "en": "Seikyo junmai sake - Nakao Brewery, Takehara",
+    "price": "¥550",
+    "section": "日本酒 Sake (2026-08 table card)",
+    "gf": "",
+    "vegan": "",
+    "note": "Polishing 65%, sake meter +1. Card describes a mellow aroma and the savour particular to a junmai; it has taken a bronze at the International Wine Challenge. Rice and koji only.",
+    "dish_key": "sake_seikyo_junmai"
+   },
+   {
+    "ja": "生ビール（エビス）",
+    "romaji": "nama biru (Yebisu)",
+    "en": "Draught Yebisu beer",
+    "price": "¥600",
+    "section": "ビール Beer (2026-08 table card)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Barley malt - never gluten-free.",
+    "dish_key": "draft_beer"
+   },
+   {
+    "ja": "宮島ビール（330ml）",
+    "romaji": "Miyajima Beer (330ml)",
+    "en": "Miyajima Beer, 330ml bottle - the island's own craft brew",
+    "price": "¥850",
+    "section": "ビール Beer (2026-08 table card)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Local craft beer brewed for Miyajima. Malt-based, so not gluten-free.",
+    "dish_key": "miyajima_beer"
+   },
+   {
+    "ja": "コーラ",
+    "romaji": "kora",
+    "en": "Cola",
+    "price": "¥350",
+    "section": "ソフトドリンク Soft drinks (2026-08 table card)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Bottled cola - no wheat, no animal products.",
+    "dish_key": "cola"
+   },
+   {
+    "ja": "アップルジュース",
+    "romaji": "appuru jusu",
+    "en": "Apple juice",
+    "price": "¥350",
+    "section": "ソフトドリンク Soft drinks (2026-08 table card)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Bottled juice.",
+    "dish_key": "apple_juice"
+   },
+   {
+    "ja": "オレンジジュース",
+    "romaji": "orenji jusu",
+    "en": "Orange juice",
+    "price": "¥350",
+    "section": "ソフトドリンク Soft drinks (2026-08 table card)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Bottled juice.",
+    "dish_key": "orange_juice"
+   },
+   {
+    "ja": "ウーロン茶",
+    "romaji": "uron-cha",
+    "en": "Oolong tea",
+    "price": "¥300",
+    "section": "ソフトドリンク Soft drinks (2026-08 table card)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain oolong - tea leaf and water, no barley. (Unlike mugicha, which is barley and is not gluten-free.)",
+    "dish_key": "oolong_tea"
+   }
+  ]
+ },
+ "hiro_kaeruttei": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3401/A340114/34002510/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/172918/7db12ed86895df82a8b0437f21d16b2c.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/172918/341c996916ed93d6e9ec9e977227622f.jpg",
+   "http://www.okonomimura.jp/floor/4f-kaeruttei.html"
+  ],
+  "price_note": "Transcribed from the shop's own laminated menu cards photographed 2022-04 - the only pictures of them online, and four years old, so treat every figure as a floor rather than the current price. The okonomimura.jp floor page for this stall did not respond at all when checked (connection times out), so there is no newer published list. Prices approximate - may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "肉・玉子",
+    "romaji": "niku tamago",
+    "en": "Okonomiyaki with pork and egg, no noodles",
+    "price": "¥770",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card composition: pork and egg. Wheat batter and a wheat-and-soy okonomi sauce on a shared griddle. Cheapest way in.",
+    "dish_key": "okonomiyaki_niku_tama"
+   },
+   {
+    "ja": "肉・玉子・そば（うどん）",
+    "romaji": "niku tamago soba (udon)",
+    "en": "The standard: pork, egg and a layer of soba or udon noodles",
+    "price": "¥850",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card lets you pick soba or udon - both wheat. This is the default Hiroshima order.",
+    "dish_key": "okonomiyaki_niku_tama_soba"
+   },
+   {
+    "ja": "スペシャル",
+    "romaji": "supesharu",
+    "en": "Special - pork, egg, squid-tempura crisp and noodles",
+    "price": "¥1,050",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card composition: pork, egg, ika-ten, soba or udon. The ika-ten is a wheat-battered fried squid cracker.",
+    "dish_key": "okonomiyaki_special"
+   },
+   {
+    "ja": "たべてみんさい焼",
+    "romaji": "tabete minsai yaki",
+    "en": "'Go on, try it' okonomiyaki - pork, egg, double squid crisp, spring onion and noodles",
+    "price": "¥1,150",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The name is Hiroshima dialect for 'give it a try'. Card composition: pork, egg, double ika-ten, negi, soba or udon.",
+    "dish_key": "tabete_minsai_yaki"
+   },
+   {
+    "ja": "バーグ焼",
+    "romaji": "bagu yaki",
+    "en": "Okonomiyaki with a hamburger patty inside - the shop's own recommendation",
+    "price": "¥1,150",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card marks this its recommendation and suggests adding cheese for 170 yen. Composition: pork, egg, hamburg patty, soba or udon. Japanese hamburg patties are bound with panko, i.e. more wheat.",
+    "dish_key": "bagu_yaki"
+   },
+   {
+    "ja": "デラックス",
+    "romaji": "derakkusu",
+    "en": "Deluxe - pork, egg, fresh squid, fresh prawn and noodles",
+    "price": "¥1,400",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card composition as listed. Wheat batter, noodles, sauce.",
+    "dish_key": "okonomiyaki_deluxe"
+   },
+   {
+    "ja": "スタミナデラックス",
+    "romaji": "sutamina derakkusu",
+    "en": "Stamina deluxe - pork, egg, kimchi, garlic, squid crisp and noodles",
+    "price": "¥1,400",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kimchi in Japan is normally made with fish sauce or dried shrimp as well as chilli, so this is not vegetarian either.",
+    "dish_key": "stamina_deluxe"
+   },
+   {
+    "ja": "カキデラックス",
+    "romaji": "kaki derakkusu",
+    "en": "Oyster deluxe - pork, egg, Hiroshima oysters, spring onion and noodles",
+    "price": "¥1,400",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The Hiroshima combination worth ordering here: local oysters folded into the pancake.",
+    "dish_key": "kaki_deluxe"
+   },
+   {
+    "ja": "具だくさんデラックス",
+    "romaji": "gudakusan derakkusu",
+    "en": "Everything-in deluxe - pork, egg, fresh squid, fresh prawn, squid crisp, spring onion and noodles",
+    "price": "¥1,700",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dearest pancake on the card.",
+    "dish_key": "gudakusan_deluxe"
+   },
+   {
+    "ja": "ねぎ焼",
+    "romaji": "negi-yaki",
+    "en": "Spring-onion okonomiyaki - pork, egg and a mountain of green onion",
+    "price": "¥850",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter under the onion.",
+    "dish_key": "negi_yaki"
+   },
+   {
+    "ja": "ねぎ焼しょうゆ風味",
+    "romaji": "negi-yaki shoyu fumi",
+    "en": "Spring-onion okonomiyaki finished with soy sauce instead of the sweet brown sauce",
+    "price": "¥1,100",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy sauce rather than okonomi sauce - lighter tasting, but soy sauce is wheat too.",
+    "dish_key": "negi_yaki_shoyu"
+   },
+   {
+    "ja": "デラックスねぎ焼",
+    "romaji": "derakkusu negi-yaki",
+    "en": "Deluxe spring-onion okonomiyaki with fresh squid and prawn",
+    "price": "¥1,400",
+    "section": "お好み焼き Okonomiyaki (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card composition: pork, egg, fresh squid, fresh prawn, negi.",
+    "dish_key": "deluxe_negi_yaki"
+   },
+   {
+    "ja": "焼そば（うどん）",
+    "romaji": "yakisoba (udon)",
+    "en": "Plain griddled noodles, soba or udon, on their own",
+    "price": "¥850",
+    "section": "鉄板 Griddle noodles (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles fried in the sauce - no pancake around them.",
+    "dish_key": "yakisoba"
+   },
+   {
+    "ja": "デラックス焼そば（うどん）",
+    "romaji": "derakkusu yakisoba (udon)",
+    "en": "Deluxe griddled noodles with pork, fresh squid and prawn",
+    "price": "¥1,400",
+    "section": "鉄板 Griddle noodles (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Card composition as listed.",
+    "dish_key": "deluxe_yakisoba"
+   },
+   {
+    "ja": "塩焼きそば（うどん）",
+    "romaji": "shio yakisoba (udon)",
+    "en": "Salt-seasoned griddled noodles with pork, bacon and shiso leaf",
+    "price": "¥1,100",
+    "section": "鉄板 Griddle noodles (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Salt rather than brown sauce, but the noodles themselves are wheat.",
+    "dish_key": "shio_yakisoba"
+   },
+   {
+    "ja": "トッピング：広島カキ・ホタテ",
+    "romaji": "toppingu: Hiroshima kaki, hotate",
+    "en": "Add Hiroshima oysters or scallops",
+    "price": "各¥440",
+    "section": "トッピング Toppings (2022-04 card)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Shellfish itself is clean; the pancake and sauce it lands on are not.",
+    "dish_key": "topping_kaki_hotate"
+   },
+   {
+    "ja": "トッピング：生イカ・生エビ・スジこん・マヨッナ・キムチ・タコ",
+    "romaji": "toppingu: nama-ika, nama-ebi, sujikon, mayotsuna, kimuchi, tako",
+    "en": "Add fresh squid, fresh prawn, beef-tendon-and-konjac, tuna mayo, kimchi or octopus",
+    "price": "各¥330",
+    "section": "トッピング Toppings (2022-04 card)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sujikon - beef tendon simmered with konjac - is a Hiroshima okonomiyaki classic and is simmered in soy sauce, so that one is a firm no. The others are wheat-free in themselves.",
+    "dish_key": "topping_mid"
+   },
+   {
+    "ja": "トッピング：もち・イカ天・チーズ・コーン・ポテト・納豆・にんにく・ねぎ・玉ねぎ・しその葉",
+    "romaji": "toppingu: mochi, ika-ten, chizu, kon, poteto, natto, ninniku, negi, tamanegi, shiso no ha",
+    "en": "Add rice cake, squid crisp, cheese, corn, potato, natto, garlic, spring onion, onion or shiso leaf",
+    "price": "各¥170",
+    "section": "トッピング Toppings (2022-04 card)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ika-ten is wheat-battered and natto comes with a soy-sauce sachet, so the group as a whole is not gluten-free; mochi, corn, potato, garlic and the alliums are individually fine but go onto a wheat pancake.",
+    "dish_key": "topping_cheap"
+   },
+   {
+    "ja": "牛タン（ニンニク醤油）",
+    "romaji": "gyutan (ninniku shoyu)",
+    "en": "Griddled beef tongue with garlic soy sauce",
+    "price": "¥1,100",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Garlic soy sauce - wheat. Dearest snack on the board.",
+    "dish_key": "gyutan"
+   },
+   {
+    "ja": "カルビ（ニンニク醤油）",
+    "romaji": "karubi (ninniku shoyu)",
+    "en": "Griddled beef short rib with garlic soy sauce",
+    "price": "¥880",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-based seasoning.",
+    "dish_key": "karubi"
+   },
+   {
+    "ja": "ホルモンジャン",
+    "romaji": "horumon jan",
+    "en": "Griddled beef offal in chilli-bean sauce",
+    "price": "¥880",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "'Jan' means the doubanjiang-style chilli-miso sauce; Japanese chilli-bean pastes usually contain wheat.",
+    "dish_key": "horumon_jan"
+   },
+   {
+    "ja": "広島かき鉄板焼（バター・ベーコン・蒸し）",
+    "romaji": "Hiroshima kaki teppanyaki",
+    "en": "Hiroshima oysters on the griddle - butter, bacon or steamed",
+    "price": "¥990",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Three preparations under one price. The steamed version is the closest to gluten-free here - ask that it be done with sake and no soy sauce.",
+    "dish_key": "kaki_teppanyaki"
+   },
+   {
+    "ja": "とん平",
+    "romaji": "tonpei",
+    "en": "Pork in a thin omelette on the griddle",
+    "price": "¥770",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Finished with okonomi sauce and mayonnaise.",
+    "dish_key": "tonpeiyaki"
+   },
+   {
+    "ja": "豚キムチ",
+    "romaji": "buta kimuchi",
+    "en": "Griddled pork and kimchi",
+    "price": "¥770",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kimchi is normally made with fish sauce; the pan is shared with wheat batter.",
+    "dish_key": "buta_kimchi"
+   },
+   {
+    "ja": "豚しょうが焼",
+    "romaji": "buta shogayaki",
+    "en": "Ginger pork on the griddle",
+    "price": "¥770",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shogayaki sauce is soy sauce, mirin and ginger - wheat.",
+    "dish_key": "shogayaki"
+   },
+   {
+    "ja": "スジ煮込",
+    "romaji": "suji nikomi",
+    "en": "Simmered beef tendon",
+    "price": "¥550",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Long-simmered in soy sauce and miso.",
+    "dish_key": "suji_nikomi"
+   },
+   {
+    "ja": "豚ミミ",
+    "romaji": "buta mimi",
+    "en": "Pig's ear",
+    "price": "¥550",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Usually served cold with ponzu or a vinegar dressing - ponzu is soy sauce, so ask.",
+    "dish_key": "buta_mimi"
+   },
+   {
+    "ja": "豚足",
+    "romaji": "tonsoku",
+    "en": "Pig's trotter",
+    "price": "¥550",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Griddled; dip usually ponzu.",
+    "dish_key": "tonsoku"
+   },
+   {
+    "ja": "エノキ（バター醤油）",
+    "romaji": "enoki (bata shoyu)",
+    "en": "Enoki mushrooms in butter and soy",
+    "price": "¥440",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy sauce and butter.",
+    "dish_key": "enoki_bata"
+   },
+   {
+    "ja": "キムチ",
+    "romaji": "kimuchi",
+    "en": "Kimchi, as a side",
+    "price": "¥385",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Japanese-made kimchi usually contains fish sauce, dried shrimp or bonito extract, and sometimes soy sauce. Ask before treating it as either.",
+    "dish_key": "kimchi_side"
+   },
+   {
+    "ja": "いわし",
+    "romaji": "iwashi",
+    "en": "Grilled sardine",
+    "price": "¥330",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "If it is salt-grilled it is fine in itself; ask whether a soy dip comes with it.",
+    "dish_key": "iwashi"
+   },
+   {
+    "ja": "枝豆",
+    "romaji": "edamame",
+    "en": "Salted edamame",
+    "price": "¥220",
+    "section": "おつまみ Griddle snacks (2022-04 board)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Boiled green soy beans with salt only - nothing else is added, and they are not cooked on the wheat griddle. The one thing on this whole menu a celiac can eat, and the cheapest item on the board.",
+    "dish_key": "edamame"
+   },
+   {
+    "ja": "生ビール",
+    "romaji": "nama biru",
+    "en": "Draught beer",
+    "price": "¥550",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Barley malt.",
+    "dish_key": "draft_beer"
+   },
+   {
+    "ja": "瓶ビール",
+    "romaji": "bin biru",
+    "en": "Bottled beer",
+    "price": "¥660",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Barley malt.",
+    "dish_key": "bottle_beer"
+   },
+   {
+    "ja": "ハイボール",
+    "romaji": "haiboru",
+    "en": "Whisky highball",
+    "price": "¥440",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Whisky is a malt/grain spirit - treat as not gluten-free.",
+    "dish_key": "highball"
+   },
+   {
+    "ja": "焼酎（麦・芋）水割り・お湯割り・ロック",
+    "romaji": "shochu (mugi / imo)",
+    "en": "Shochu, barley or sweet potato - with water, with hot water, or on the rocks",
+    "price": "¥440",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "no",
+    "vegan": "",
+    "note": "The board names both bases. Mugi-jochu is barley and is not gluten-free; ask for the imo (sweet potato) one if that matters.",
+    "dish_key": "shochu"
+   },
+   {
+    "ja": "日本酒（グラス）",
+    "romaji": "nihonshu (gurasu)",
+    "en": "Sake by the glass",
+    "price": "¥440",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "",
+    "vegan": "",
+    "note": "Brand not given.",
+    "dish_key": "sake_glass"
+   },
+   {
+    "ja": "冷酒（ボトル）",
+    "romaji": "reishu (botoru)",
+    "en": "Chilled sake by the bottle",
+    "price": "¥1,100",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "",
+    "vegan": "",
+    "note": "The board's printed 880 yen has been struck out and 1,100 handwritten over it - already repriced once by 2022.",
+    "dish_key": "reishu_bottle"
+   },
+   {
+    "ja": "微発泡清酒 TEDDAN（ボトル）",
+    "romaji": "bihappo seishu TEDDAN (botoru)",
+    "en": "TEDDAN lightly sparkling sake, bottle",
+    "price": "¥700",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "",
+    "vegan": "",
+    "note": "A gently fizzy sake - a good match for a griddle meal.",
+    "dish_key": "teddan"
+   },
+   {
+    "ja": "チューハイ 各種",
+    "romaji": "chuhai kakushu",
+    "en": "Shochu highballs - lemon, calpis, lime, grapefruit, kyoho grape, oolong and others; on the rocks available",
+    "price": "各¥500",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "ask",
+    "vegan": "",
+    "note": "Base shochu unstated and the board offers a barley one elsewhere, so ask which base goes into these.",
+    "dish_key": "chuhai"
+   },
+   {
+    "ja": "サングリア（赤・白ワインベース）",
+    "romaji": "sanguria",
+    "en": "Sangria, red or white wine base",
+    "price": "各¥550",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "",
+    "vegan": "ask",
+    "note": "Wine-based; some wines are fined with animal products.",
+    "dish_key": "sangria"
+   },
+   {
+    "ja": "ワイン（ボトル・赤／白）",
+    "romaji": "wain (botoru)",
+    "en": "Wine by the bottle, red or white",
+    "price": "¥1,320～",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "",
+    "vegan": "ask",
+    "note": "From price; grape variety unstated.",
+    "dish_key": "wine_bottle"
+   },
+   {
+    "ja": "ノンアルコールビール",
+    "romaji": "non-arukoru biru",
+    "en": "Alcohol-free beer",
+    "price": "¥330",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Still brewed from barley malt - alcohol-free is not gluten-free.",
+    "dish_key": "na_beer"
+   },
+   {
+    "ja": "ソフトドリンク 各種",
+    "romaji": "sofuto dorinku kakushu",
+    "en": "Soft drinks - cola, orange, calpis, oolong tea, ramune, ginger ale",
+    "price": "各¥220",
+    "section": "お飲み物 Drinks (2022-04 board)",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "All six named on the board are wheat-free; calpis is a milk drink, so not vegan. Cheapest drinks in the building.",
+    "dish_key": "soft_drink"
+   }
+  ]
  }
 }
