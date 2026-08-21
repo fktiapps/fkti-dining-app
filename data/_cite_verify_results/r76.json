@@ -1,0 +1,112 @@
+[
+ {
+  "id": "kz_amanatto_kawamura",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Amanatto and other sweets are made without artificial coloring or preservatives, following traditional handcrafted methods.",
+  "url": "https://mame-kawamura.com/store/",
+  "verdict": "wrong_source",
+  "found": "「使わない材料1 漂白剤・着色料 … 使わない材料2 保存料 かわむらでは手間ひまを惜しむことなくお品が完成するのに時間をかけているので、使用する必要がありません。」 and 「製法へのこだわり 機械化はせず、手炊きに拘り、羽釜で炊く作業 … 昔ながらの「おくどさん」を使い、六時間かけ職人が豆の動きを見ながら火加減を調整する」 — both on /philosophy/, not /store/.",
+  "correct_url": "https://mame-kawamura.com/philosophy/",
+  "http": "200 (both /store/ and /philosophy/, plain desktop-UA curl)",
+  "method": "1 plain fetch of the cited URL, then a site-link crawl to /philosophy/, /about/, /items/",
+  "note": "Claim is TRUE but cited to the wrong page: /store/ is a hours-address-parking page with no ingredient text at all. Repoint the citation to https://mame-kawamura.com/philosophy/."
+ },
+ {
+  "id": "kz_amanatto_kawamura",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://mame-kawamura.com/items/",
+   "https://mame-kawamura.com/philosophy/"
+  ],
+  "why": "options — the maker prints a full 原材料 line for every retail item and not one contains wheat: 22 of the amanatto are 「豆、砂糖、有機砂糖／甘味料（トレハロース）、還元水飴」, the rest are 栗/芋/クルミ/ピーカン/カシューナッツ/柚子/伊予柑/ブラッドオレンジ/オリーブ plus sugar, and the philosophy page states 「甘納豆は、純粋に豆と砂糖だけで作る菓子」. Still not dedicated — the 2F salon de thé menu is not itemised and the きな粉 item lists 澱粉 of unstated origin — so this is 'options', not 'high'."
+ },
+ {
+  "id": "kz_amanatto_kawamura",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://mame-kawamura.com/items/"
+  ],
+  "why": "options — the record's vegan_detail hedges that 'some confections … may use dairy, eggs or honey', but the shop's own itemised 原材料 lists show zero animal ingredients across the whole retail range (beans, nuts, chestnut, sweet potato, citrus, olive, sugar, trehalose, reduced starch syrup). The 2F tea salon is separately branded and unlisted, which is why this is 'options' with an ask-at-the-salon caveat rather than 'full'."
+ },
+ {
+  "id": "kz_amatsubo_jimonotei",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Sashimi seafood bowls are served with standard Japanese soy sauce, which contains wheat.",
+  "url": "https://www.weekend-kanazawa.com/entry/jimonotei_amatsubo",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch; full article text read end to end",
+  "note": "The cited article never mentions 醤油/soy sauce anywhere — it covers the 金沢丼, the oden and the sake list only. The claim is a reasonable inference about a kaisen-don shop but no source states it; reword as an assumption or drop the citation."
+ },
+ {
+  "id": "kz_amatsubo_jimonotei",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "All featured dishes are seafood-based and oden shares a bonito-dashi simmering broth, so there is no separation from animal ingredients.",
+  "url": "https://www.weekend-kanazawa.com/entry/jimonotei_amatsubo",
+  "verdict": "supported",
+  "found": "「出汁は、昆布と鰹をベースに、酒と塩のみのシンプルな調味で仕上げるのが創業当時からのこだわり。」 and 「甘エビや梅貝、ぶり、鯛、カニ、いくらなど、近江町市場で仕入れた活きのいいネタがなんと11種類！」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch",
+  "note": "Directly supported — the article states the oden dashi is kombu+katsuobushi and every featured dish is seafood."
+ },
+ {
+  "id": "kz_amatsubo_jimonotei",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "(gf_detail) oden 'served alongside wheat-containing items and dipping sauces'",
+  "url": "https://www.weekend-kanazawa.com/entry/jimonotei_amatsubo",
+  "verdict": "moved",
+  "found": "「定番の大根やつみれに、車麩や梅貝、金時草麩、赤巻といった金沢ならではの具材が入った、大満足の一皿です。」 — the 金沢おでん盛 (¥2,180) contains 車麩 AND 金時草麩.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch",
+  "note": "LOUD — 麩 is pure wheat gluten, and TWO fu items sit in the shop's signature oden platter simmering in the shared pot, so every item in that pot is gluten-contaminated. 'Wheat-containing items' is far too vague: name 車麩 and 金時草麩 in gf_detail. gf 'no' is correct and should stay."
+ },
+ {
+  "id": "kz_amatsubo_jimonotei",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.weekend-kanazawa.com/entry/jimonotei_amatsubo"
+  ],
+  "why": "Open. The article (dated 2025-03-27) reports the venue opened 2025-02-03 in Omicho Market: 「昨年12月に惜しまれながら閉店した「じもの亭」でしたが、…「あまつぼ」が引き継ぎ、店名新たに生まれ変わりました。」 The Dec-2024 closure belongs to the PREDECESSOR じもの亭, not to this record — do not let that 閉店 wording trip an automated closure sweep."
+ },
+ {
+  "id": "kz_cafe_kan_honten",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "The cafe's own site states it offers low-calorie menus with minimal allergens and many gluten-free options, reflecting its fermented-adzuki health concept.",
+  "url": "https://www.koshiyamakanseido.jp/cafe-kan",
+  "verdict": "supported",
+  "found": "「和菓子を中心にしたメニューはカロリーも低くアレルギー物質の使用も少なく、グルテンフリーなどの健康志向の方にも食べれるメニューも多くあり喜ばれると思います。」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch",
+  "note": "Verbatim on the cited page. But note the Japanese is softer than the English rendering — it says 'many menu items that even health-conscious people such as the gluten-free can eat', a marketing sentence, not an allergen protocol; the same page lists パン and 抹茶生どら焼きプレート, both wheat. Keep gf at 'ask'."
+ },
+ {
+  "id": "kz_cafe_kan_honten",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.koshiyamakanseido.jp/cafe-kan"
+  ],
+  "why": "Open and relocated: 「武蔵ヶ辻から尾張町に移転し、リニューアルオープンしています」, current address 石川県金沢市尾張町2-11-29, 10:30-18:00 (L.O. 17:30), 水曜定休. The record already carries the Owaricho address and coordinates, so no fix needed — logged so a later sweep does not re-open this."
+ }
+]

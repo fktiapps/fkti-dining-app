@@ -76,5 +76,71 @@
   "http": "tabelog.com 302 → s.tabelog.com, which returns 200 with an iPhone UA; the desktop host alone gives no usable body",
   "method": "iPhone-UA fetch of s.tabelog.com for the cited listing, plus its /dtlmenu/ subpage",
   "note": "Substance holds — the tare is on the cited page and 醤油麹/味噌 are named on its menu tab — but the cited page itself never says 醤油, so cite /dtlmenu/ alongside it. Two wording fixes: there is no oyster 'bowl' on the menu (it is かき飯定食), and the bigger untracked gluten sources are 穴子天丼 (tempura), カキフライ and かきのおかき揚げ. Also: the record's website field https://miyajimashokudo.jp/ is NXDOMAIN, and tabelog's listed homepage http://www.miyajima-shokudo.jp/menu.html is NXDOMAIN too; the only Wayback capture of miyajimashokudo.jp (2025-01-07) is the site of みやじま食堂別館, a different, mainland branch. The shop itself is trading (tabelog 公式, 無休 11:00-20:00, reviews and Instagram posts through 2026)."
+ },
+ {
+  "id": "hiro_momiji_manju_kimuraya",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "All momiji manju are baked from a shared wheat-flour batter on the same griddle, so the entire product line contains gluten with no gluten-free preparation.",
+  "url": "https://oyakodetanoshimou.com/miyajima-momijimanju-kimuraya/",
+  "verdict": "supported",
+  "found": "Cited article: 「こしあん・つぶあん・カスタードクリーム・チョコレート　120円／レーズン・クリームチーズ　130円」 — the whole product line — and of the plain bean-paste one, 「卵をたっぷり使ったカステラ生地と、甘さ控えめのあんこです」. The shop's own site (kimuraya-miyajima.com) lists the identical six plus a new 「おこもみじ」, 「広島の名産品であるお好み焼きともみじ饅頭を組み合わせたユニークなおやつ」.",
+  "correct_url": null,
+  "http": "200 plain curl for the cited article; 200 plain curl for kimuraya-miyajima.com (Wix, server-rendered)",
+  "method": "plain fetch of the cited page, then the shop's own site to confirm the current line-up",
+  "note": "Substance holds — every item shares one カステラ生地 shell and there is no allergen or gluten-free page anywhere. Two wording fixes: the article never writes 小麦 (wheat is implied by カステラ生地, not stated) and it says nothing about a griddle, so drop 'on the same griddle'. Worth adding: the new おこもみじ is an okonomiyaki crossover, i.e. more wheat, not less."
+ },
+ {
+  "id": "hiro_momiji_manju_kimuraya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The batter is egg- and flour-based and fillings include dairy cream cheese, custard, and chocolate; bean-paste versions share the same egg-flour shell, so there is no vegan-safe item.",
+  "url": "https://oyakodetanoshimou.com/miyajima-momijimanju-kimuraya/",
+  "verdict": "supported",
+  "found": "「こしあん 卵をたっぷり使ったカステラ生地と、甘さ控えめのあんこです」 (the egg batter is described under the bean-paste variety itself) and 「デンマーク産ナチュラルクリームチーズを使用してあるとのことで、なめらかでコクのある味わい」, alongside the カスタードクリーム and チョコレート varieties in the price list.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "Fully supported, and precisely so — the cited article attaches the egg-heavy castella batter to the こしあん item specifically, which is the exact point a vegan reader would test. No change needed."
+ },
+ {
+  "id": "hiro_momijido_nibanya",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The shop deep-fries wheat-batter momiji manju; there is no gluten-free menu and no published statement about a dedicated fryer, so cross-contamination should be assumed.",
+  "url": "https://momijido.com/about/",
+  "verdict": "supported",
+  "found": "Cited /about/: 「紅葉堂のもみじまんじゅうのふんわりふっくらとしたカステラ生地に、料理人とともに試行錯誤し作り上げました独自の衣をまとわせ天ぷらにし、販売を開始し」, and the same page records 「平成18年　紅葉堂弐番屋をオープン…揚げもみじ®をはじめ…が、カフェスペースにて楽しめます」, so the statement is branch-specific. The wheat is spelled out on the same site: /zairyo 「小麦 瀬戸内の国産小麦100%に切り替え」, and momijido.com/pdf/allergy_2024.pdf lists 小麦粉 as a core ingredient of all six varieties. /agemomi/ describes the coating as 「揚げもみじ®専用生地」 mixed with water — a flour batter.",
+  "correct_url": null,
+  "http": "200 plain curl for /about/, /zairyo, /agemomi/, /shop; the allergy PDF fetched 200 and read with pdftotext -enc UTF-8 -nopgbrk",
+  "method": "plain fetch of the cited page, then the site's own ingredient page, shop page and allergy PDF",
+  "note": "Supported and then some. Strengthen the citation with https://momijido.com/pdf/allergy_2024.pdf — it is a per-product allergen table with 小麦粉 ticked on every line, which is far better evidence than a company-history page, and it confirms there is no gluten-free variant to ask for."
+ },
+ {
+  "id": "hiro_momijido_nibanya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Cream and cheese fillings (dairy) are prepared in the same kitchen as the anko items, and the castella batter contains egg; no separation for vegan diners is documented.",
+  "url": "https://momijido.com/about/",
+  "verdict": "supported",
+  "found": "Cited /about/: 「紅葉堂では、伝統のこしあんのほか、つぶあん、抹茶、クリーム、チョコレート、チーズを製造しており」 — one maker, one line, dairy and bean paste together. The egg half is on the same site rather than this page: /zairyo 「卵 純国産鶏「もみじ」の卵を100%使用…このもみじ卵を100%使用する事でたくさん空気を含んだカステラ生地ができ」, and the allergy PDF lists 卵 in every single variety including 【こしあん】 「あん（砂糖、小豆） 卵 砂糖 小麦粉 水あめ」.",
+  "correct_url": null,
+  "http": "200 plain curl throughout; PDF via pdftotext -enc UTF-8 -nopgbrk",
+  "method": "plain fetch of the cited page, then /zairyo and the allergy PDF for the egg claim",
+  "note": "Supported, but cite the allergy PDF for the egg statement — /about/ does not mention egg. The PDF is also grounds for a tier change (see the vegan_status recommendation): egg is in the bean-paste item too, so nothing at this shop is vegan."
+ },
+ {
+  "id": "hiro_momijido_nibanya",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "limited",
+  "recommended": "no",
+  "evidence": [
+   "https://momijido.com/pdf/allergy_2024.pdf",
+   "https://momijido.com/zairyo",
+   "https://momijido.com/shop",
+   "https://momijido.com/agemomi/"
+  ],
+  "why": "The operator's own allergen table lists 卵 in all six momiji manju varieties — 【こしあん】「あん（砂糖、小豆） 卵 砂糖 小麦粉 水あめ」 — so even the plain bean-paste item is not vegan, and クリーム/チョコレート/チーズ add 乳. /shop states Nibanya's entire range is 「揚げもみじ®、揚げもみソフト、ドリンクセット」, i.e. the fried manju plus a dairy soft serve. There is no plant-based item to have 'limited' access to."
  }
 ]

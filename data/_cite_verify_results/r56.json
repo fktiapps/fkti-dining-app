@@ -166,5 +166,83 @@
   "http": "200 (plain curl)",
   "method": "1 plain fetch",
   "note": "Verbatim on the cited root. Separately, the record's gf_detail asserts the roux 'in this style typically includes wheat flour' — no page on gariber.org says so, and unlike the Mitsuwa case there is no allergen label to check, so mark that as an assumption. gf 'no' and vegan 'no' both hold: the full menu (bacon, sausage, shrimp, octopus/squid, cheese, onsen egg, 宮崎黒毛和牛ステーキ) contains no vegan dish, and every dish sits on the beef base. Trading status OK: site live, 営業時間 11:00～21:00 (LO 20:30), 定休日 不定休."
+ },
+ {
+  "id": "hiro_gelateria_baccano",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "No gluten-free protocol is documented; shared scoops and a common gelato case mean cross-contact between flavors and with any wheat cones is possible. Request a cup and ask staff per flavor.",
+  "url": "https://japan-stroll.com/gourmet/gelateria-baccano/",
+  "verdict": "supported",
+  "found": "「18種類のジェラートが丁寧に並べられており」「注文はシングルサイズかダブルサイズを選び、カップかコーンを選択するシステム」; nothing on the page mentions gluten, wheat or allergens.",
+  "correct_url": null,
+  "http": "200 (plain curl); baccano.jpn.com 200 (plain curl)",
+  "method": "1 plain fetch of the cited article + 1 plain fetch of the official site",
+  "note": "Supported: one shared showcase of 18 flavours, cup-or-cone at the counter, no allergen policy anywhere. 'Shared scoops' specifically is not stated — the showcase is. The article adds a hazard the record misses: 「ビスケットなどもすべて手作りにこだわっており」 — the shop bakes its own biscuits on the premises, so there is house flour in the building, not just bought-in cones. Worth folding into gf_detail."
+ },
+ {
+  "id": "hiro_gelateria_baccano",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The gelato base is dairy (Chichiyasu Hiroshima milk); fruit sorbet-style flavors may be dairy-free but are produced in the same kitchen, so cross-contact with milk is possible. Confirm specific flavors with staff.",
+  "url": "https://japan-stroll.com/gourmet/gelateria-baccano/",
+  "verdict": "supported",
+  "found": "「ジェラートのベースには地元企業チチヤスの「広島のおいしい牛乳」を使用。」「梅雨明けのタイミングにはシャーベット系のさっぱりとしたジェラートが人気で、いちごやパインなどが上位にランクインするそうです。」「広島レモンのジェラートは、瀬戸田産レモンのストレート果汁を使用」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Both halves verbatim — the Chichiyasu 「広島のおいしい牛乳」 base and the existence of シャーベット系 flavours. The article never says any flavour is dairy-free, so vegan_status 'ask' is the right tier and the record's wording correctly stops short of claiming vegan options."
+ },
+ {
+  "id": "hiro_gelateria_baccano",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Gelato is made in-house with no artificial coloring, flavoring, or preservatives, and the milk base and many ingredients are locally sourced, which gives clear visibility into what is in each flavor.",
+  "url": "https://japan-stroll.com/gourmet/gelateria-baccano/",
+  "verdict": "supported",
+  "found": "「BACCANOのジェラートは、すべて無着色、無香料、保存料不使用で作られています。ショーケースに並ぶカラフルなジェラートは、すべて素材そのものの色。」「店主の土居悦子さんは地産地消を大切に考えており、ジェラートのベースには地元企業チチヤスの「広島のおいしい牛乳」を使用。5、6月には宮島の契約農家でとれるいちごを使ったジェラートも登場します。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Fully supported verbatim, article dated 2026.01.30. Trading status OK: baccano.jpn.com resolves 200 and is live; article gives 営業時間 11:00-17:00 / 定休日 不定休 with weather closures announced on Instagram — consistent with the record's hours_status 'irregular'."
+ },
+ {
+  "id": "hiro_gomenya_ebisu_dori_goji_",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Menu is built on wheat noodles (Kure reimen, ramen, tsukemen) and a soy/seafood-based sauce; a shared noodle kitchen means heavy gluten presence and high cross-contamination risk.",
+  "url": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
+  "verdict": "supported",
+  "found": "「呉の名物である「呉冷麺」を中心に、ラーメンや豊富なサイドメニューが揃っています。」「呉冷麺最大の特徴である、コシの強い平打ち麺。」 Official site corroborates: 「麺は平打ち、モチモチ食感」「生麺にからむ熱々の極上スープ」 (gomenya.jp/).",
+  "correct_url": null,
+  "http": "200 (plain curl) shuccho-jiro; 200 (plain curl) gomenya.jp/ and /stores/",
+  "method": "1 plain fetch + string search of the cited page + plain fetches of the venue's own site",
+  "note": "Kure reimen and ramen are supported; つけ麺 is NOT — the eight つけ麺 hits on that page all belong to the sidebar's other venues (ばくだん屋 広島つけ麺, 広島つけ麺かず 福山店), i.e. a dish transplanted from a different restaurant on the same page. Remove tsukemen or source it. 醤油/しょうゆ score zero hits on the page, so the 'soy-based' half is unsourced too — see the soy_sauce_wheat item. gomenya.jp/menu/ is an unfinished template page (サンプルメニュー1-4 / 「ここに説明文が入ります」) and cannot evidence anything."
+ },
+ {
+  "id": "hiro_gomenya_ebisu_dori_goji_",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The sauce/broth is described as soy- and seafood-based, which in Japanese noodle shops typically uses wheat-containing soy sauce.",
+  "url": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
+  "verdict": "unsupported",
+  "found": "What the page actually says: 「その激しい刺激のすぐ後ろに、魚介や甘酸っぱさが凝縮された深い「旨み」がしっかりと感じられ」 — seafood and sweet-sour, no soy. Official site likewise: 「特有の甘酸っぱい中にも辛みのきいたタレ」.",
+  "correct_url": null,
+  "http": "200 (plain curl); 醤油 = 0 hits, しょうゆ = 0 hits, 小麦 = 0 hits on the cited page",
+  "method": "1 plain fetch + exact-string search on the cited page, cross-checked against gomenya.jp/",
+  "note": "'described as soy- and seafood-based' misquotes the source: no source describes the tare as soy. The real, sourced gluten hazard here is the wheat 平打ち麺 itself, which is enough for gf 'no' — the tare claim should be reworded as an unverified assumption rather than attributed to this blog."
+ },
+ {
+  "id": "hiro_gomenya_ebisu_dori_goji_",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Signature dish and sides include shrimp, pork chashu, egg and fish-derived umami; no vegan preparation documented.",
+  "url": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
+  "verdict": "supported",
+  "found": "「平打ちの麺の上に、きゅうり、エビ、チャーシュー、ゆで卵が綺麗に盛り付けられた呉冷麺。」「魚介や甘酸っぱさが凝縮された深い「旨み」」「「呉麺屋チャーハン」は、並盛でもしっかりとした満足感。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Every element is verbatim — shrimp, chashu, boiled egg, seafood umami, plus the fried rice. vegan 'no' is correct. TRADING/IDENTITY FLAG unrelated to the claim: the cited blog gives 呉麺屋 胡通り店 at 広島市中区堀川町4-18 with 19:00-04:00 / 定休日 日曜日, but the operator's own 店舗情報 (https://gomenya.jp/stores/) lists only two branches — 【えびす通り店】広島市中区堀川町1-36 サンプラザビル1F and 【アクアセンター街店】広島市中区基町6-27. 胡通り and えびす通り are the same street (胡 is read ebisu), so this is almost certainly one shop under two names, but the street numbers do not match and the record's address/pin should be reconciled against the official listing."
  }
 ]

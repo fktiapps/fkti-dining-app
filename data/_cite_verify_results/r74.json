@@ -1,0 +1,28 @@
+[
+ {
+  "id": "hiro_uochishin_hiroshima_hatc",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Sashimi, simmered, and grilled seafood dishes are served with standard Japanese soy sauce and ponzu, which contain wheat.",
+  "url": "https://uochishin-hiroshima.com/",
+  "verdict": "wrong_source",
+  "found": "Nothing on the cited root page: the strings 醤油／しょうゆ／ポン酢／刺身／お造り all return zero hits on https://uochishin-hiroshima.com/ , which carries only 宴会/個室/access boilerplate. The support is one click away on the site's own food page: 「鮮魚のお造り 748円（税込）」／「炙りしめ鯖～薬味ポン酢～ 748円（税込）」／「穴子たれ焼き 968円（税込）」",
+  "correct_url": "https://uochishin-hiroshima.com/food/",
+  "http": "200 (plain curl, 56.5 KB) on the cited root, identical 200 with an iPhone UA; 301→200 on /food/, /course/, /drink/ (needs -L, the bare path 301s); 200 (iPhone UA) on hotpepper.jp/strJ001127365/; Ecosia answered the trading query first try",
+  "method": "1 plain fetch of the cited page, then of the site's own /food/, /course/ and /drink/ pages; Ecosia (https://www.ecosia.org/search?q=) for the Tabelog trading check",
+  "note": "The claim is true of this venue but the cited URL cannot evidence it — the root page names no dish and no seasoning at all. Re-point the citation at https://uochishin-hiroshima.com/food/ , where ポン酢 and たれ焼き are printed verbatim. Note the record is citing the weaker half of the gluten story: the food page also lists 穴子一本天ぷら 1,078円, 小鰯の天ぷら 638円, 牡蠣フライ 858円 and a 揚げ物 section, plus 牡蠣の山芋とろろ鉄板〜お好み焼き風〜 — wheat batter and panko are a far larger exposure here than the soy sauce, and none of it is in the record. 麦焼酎 (barley shochu, 一番札) is on the drink page too. gf: no and vegan: no are both correct — every 前菜 is fish, egg, or dashi-based — so no tier change. Trading status OK: Tabelog is live with a May 2025 menu update and no 閉店 banner, address 中区堀川町5-14 matching the site. One thing to fix separately: the 八丁堀店 site's own ネット予約 button points at hotpepper.jp/strJ001127365, which resolves to the SIBLING 広島流川店 — do not harvest hours or menu from that page for this record."
+ },
+ {
+  "id": "hiro_vegan_fruits_cafe_tamaru",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The entire menu is plant-based, made without eggs, dairy, or white sugar, so vegan diners do not need to scrutinize individual dishes.",
+  "url": "https://restaurant-guide.jp/introduce/vegan-tamaru/",
+  "verdict": "supported",
+  "found": "「果物とビーガンに特化したカフェ。卵や乳製品などの動物性食材や白砂糖は一切使わず、果物や穀物を用いたスイーツがそろう。」 and the page's own English rendering: \"This cafe serves vegan sweets made of fruits and grains, without white sugar and any animal products such as eggs or dairy products.\"",
+  "correct_url": null,
+  "http": "200 (plain curl, 100.6 KB) on restaurant-guide.jp; 200 (iPhone UA) on s.tabelog.com/hiroshima/A3401/A340111/34027886/ and its /dtlrvwlst/ and /dtlmenu/; instagram.com returned a 613 KB login shell (no og: tags) on both the post and the profile; web.archive.org/wayback/available 429, but the CDX API answered",
+  "method": "1 plain fetch of the cited page; iPhone UA for Tabelog; Ecosia (https://www.ecosia.org/search?q=) for the closure/dairy cross-check — Ecosia answered, Wayback's availability endpoint 429'd",
+  "note": "Claim verified almost word for word, and it is venue-specific: the page's address 広島市中区紙屋町2-2-2 源吉兆庵2階 matches this branch, not the non-vegan sibling TAMARU shops (中の棚店, 広島レモン店), so this is not a sibling-branch mis-cite. TWO things a human should chase before this record's vegan: full is trusted. (1) A phone-verified Tabelog reviewer who visited 2023/09 writes 「広島のヴィーガンカフェ、ミルクで作っているソフトクリームもあり！」 — a first-hand report of a DAIRY soft-serve on sale. It may be loose usage for almond/soy milk, but it directly contradicts 'do not need to scrutinize individual dishes' and needs an answer from the shop; I am not recommending a downgrade on one ambiguous line. (2) The record's website field is instagram.com/veganfruitscafetamaru_kamiya, an account last archived in 2022 and referenced nowhere current; every 2023-2025 source (Tabelog, Lemon8) points at @fruits_cafe_tamaru instead — swap it. gf: ask is right: the menu is フルーツサンド (bread), オートミール and 穀物-based sweets, so wheat is present and no allergen handling is documented anywhere. Trading status OK, with a caveat: no 閉店 banner on Tabelog (hours 10:30-20:30, 本通駅から101m) and Lemon8 listicles from Jan and Apr 2025 still recommend it, but Tabelog reviews stop at 2023/09 and a Feb 2024 Instagram post on the branch account carries a customer writing 「広島県内ではここでしか食べられないパフェやフルーツトーストを喜んで食べていました、今後もしも可能であれば別店舗でもソイメニューを扱っていただける…」 in the past tense — read as a possible end of the soy/vegan line at this branch. Instagram would not serve the post text to any route I tried, so this is unresolved, not established."
+ }
+]

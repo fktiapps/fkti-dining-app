@@ -395,6 +395,20 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "name": "広島大衆居酒屋 十升 流川通り店 (Hiroshima Taishu Izakaya Tomasu Nagarekawa-d)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://tomasu-nagarekawa.com/menu/",
+   "https://www.thomas-hiroshima.com/concept.html",
+   "https://www.thomas-hiroshima.com/specialty.html"
+  ],
+  "why": "The shop's own printed menu carries several plant-only dishes — 銀杏の塩炒り (ginkgo and salt), 茹で枝豆, トマトスライス, やみつききゅうり, セロリの浅漬け, らっきょう, ポテトフライ — and this record's own menu_verified entry already flags 16 items vegan, so a flat 'no' contradicts the record's own data. 'limited' rather than 'options' because only three or four are certain (the asazuke and pickle brines commonly carry dashi or soy and would need a staff check), and nothing on the menu is labelled vegan by the shop."
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kaiya_ren",
   "name": "貝や 廉 (Kaiya Ren)",
   "field": "vegan_status",
@@ -442,5 +456,42 @@
    "https://www.poppo-cafe.co.jp/nobori/"
   ],
   "why": "The operator's own page documents 「約30種のコーヒー豆」 sold by hand-drip — 「ハンドドリップメニューは、新鮮な豆をその場で挽き、ハンドドリップで丁寧においれします。約30種のコーヒー豆からお好きな豆をお選びいただけます。」 — so a plant-based visitor has a real, documented, dairy-free order at a coffee specialist, not merely a theoretical one. 'no' also contradicts the record's own positives line, which already says black coffee here is naturally plant-based. 'limited' rather than 'options' because it is drinks only: the same page markets 珈琲ソフト (soft serve), 珈琲ゼリーソフト, バタートースト and 専用のマシーンで焼くオリジナルパニーニ, and no plant milk is advertised anywhere on the site."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_okonomiyaki_matochan",
+  "name": "お好み焼まとちゃん (Okonomiyaki Matochan)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://okonomi-matochan.com/"
+  ],
+  "why": "The shop's own menu labels ポテサラチーズ焼 as 「ベジタリアン可」 with the note 「肉・魚が含まれませんのでベジタリアンの方にもお食事頂けます」, and lists four self-made tofu dishes including a mozzarella-free 豆富のカプレーゼ served cold. That is an operator who already thinks about excluding meat and fish, so a vegan has something concrete to ask about; 'no' tells a reader not to bother. Still not 'options' — every flagged item contains cheese or egg and nothing is stated to be vegan."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_amanatto_kawamura",
+  "name": "甘納豆かわむら (Amanatto Kawamura)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://mame-kawamura.com/items/",
+   "https://mame-kawamura.com/philosophy/"
+  ],
+  "why": "options — the maker prints a full 原材料 line for every retail item and not one contains wheat: 22 of the amanatto are 「豆、砂糖、有機砂糖／甘味料（トレハロース）、還元水飴」, the rest are 栗/芋/クルミ/ピーカン/カシューナッツ/柚子/伊予柑/ブラッドオレンジ/オリーブ plus sugar, and the philosophy page states 「甘納豆は、純粋に豆と砂糖だけで作る菓子」. Still not dedicated — the 2F salon de thé menu is not itemised and the きな粉 item lists 澱粉 of unstated origin — so this is 'options', not 'high'."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_amanatto_kawamura",
+  "name": "甘納豆かわむら (Amanatto Kawamura)",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://mame-kawamura.com/items/"
+  ],
+  "why": "options — the record's vegan_detail hedges that 'some confections … may use dairy, eggs or honey', but the shop's own itemised 原材料 lists show zero animal ingredients across the whole retail range (beans, nuts, chestnut, sweet potato, citrus, olive, sugar, trehalose, reduced starch syrup). The 2F tea salon is separately branded and unlisted, which is why this is 'options' with an ask-at-the-salon caveat rather than 'full'."
  }
 ]

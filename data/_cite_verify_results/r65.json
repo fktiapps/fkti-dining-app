@@ -154,5 +154,44 @@
   "http": "200 (plain curl, iPhone UA)",
   "method": "plain fetch of the operator's own menu page",
   "note": "Checked because the sweep covers vegan_status. Holding at 'ask' is defensible but a human may want to consider 'limited': わらびもち with 黒蜜/きなこ, 大納言あずきの白玉ぜんざい, きなこ黒みつ白玉だんご and 宇治抹茶 are all plant-based by composition, while 冷やしクリームぜんざい, アイスクリーム and コーヒーフロート are dairy and the savoury side is anago plus dashi-based noodle broth. Nothing on the menu is declared vegan and no allergen or ingredient sheet is published, so I am not raising a formal recommendation on composition alone. Trading: open — official site live, 10:00-15:00, 「売り切れ時は閉店が早くなります」, 18 seats, 廿日市市宮島町319-4, no closure notice; note the record's city is hiroshima but the venue is on Miyajima in Hatsukaichi."
+ },
+ {
+  "id": "hiro_ok_shokudo",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Korean cooking here uses standard soy sauce and gochujang, which typically contain wheat, and the pancake (chijimi) batter and Korean ramen are wheat-based.",
+  "url": "https://www.hotpepper.jp/strJ000521315/",
+  "verdict": "wrong_source",
+  "found": "On the cited HotPepper page the ONLY substantive content is one 2011 user review: 「こんなに美味しい韓国料理は初めて！ 2年前から通ってます。2年前に初めて食べたのがチヂミでした。今までのチヂミが何だったのだろうかと思いました。表面はカリカリしていて、中はモチモチしているチヂミ。他のお店では食べられなくなりま…」. Everything else is blank: 営業時間 －, 定休日 －, 総席数 －, ジャンル その他グルメ, and the page's own disclaimer 「このページは、Alikeが提供する情報、およびユーザーの投稿をもとに作成しています。掲載情報は不正確な場合がありますので、事前にご確認の上ご来店ください。」 The words 韓国ラーメン, コチュジャン and 醤油 appear nowhere on it.",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340109/34009560/",
+  "http": "200 (plain curl, iPhone UA) — page served fine; it is a near-empty auto-generated stub, not a fetch failure",
+  "method": "plain fetch, then cross-checked against the record's own website field on Tabelog",
+  "note": "The claim is true but the citation only carries a fragment of it. HotPepper evidences 韓国料理 and チヂミ (a wheat-flour pancake) and nothing else; the 韓国ラーメン half is evidenced on Tabelog 34009560 — same venue, same address 広島県広島市中区田中町5-3 — whose keyword panel lists both 韓国ラーメン and チヂミ. Re-cite to the Tabelog page, and drop or separately source the コチュジャン / 醤油 assertions, which no fetched page supports. gf 'no' remains correct on the chijimi and Korean ramen alone. Trading: open — Tabelog shows 11:30-14:00 / 17:30-22:00 and carries no 閉店 or 掲載保留 badge; be aware the sole HotPepper review is 15 years old (2011/03/26)."
+ },
+ {
+  "id": "hiro_okagesan",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a Japanese seafood/sushi/izakaya kitchen, dishes rely on standard soy sauce, which is brewed with wheat; no wheat-free soy sauce is documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340114/34017898/",
+  "verdict": "supported",
+  "found": "JSON-LD on the cited page: 「\"servesCuisine\":\"海鮮、寿司、食堂\"」. Reviews and menu captions on the same page: 「・竹の子八方煮 750円」「・鯛味噌漬け焼き 880円 しっかりと味噌の風味を感じられました。」「万願寺の炊いたのとか和風のカンジャンセウとか自家製ツナとか気の利いたつまみ。」「そしてカレー揚げ出し豆腐。」 plus menu photos captioned 「刺身盛り合わせ わさび」「赤だし しそ」「うどん・ケーキ」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA; Restaurant + FAQPage JSON-LD present)",
+  "method": "plain fetch with iPhone UA",
+  "note": "Supported, and by named dishes rather than by genre alone: カンジャンセウ is 간장새우, soy-sauce-marinated prawn — 간장/醤油 is in the dish name; 八方煮 is a soy-and-mirin hachiho simmer; 赤だし and 味噌漬け are miso. No allergen or wheat-free statement appears anywhere on the listing, so the second half is literally true. The record still misses the two hardest wheat items visible on the page — a user photo captioned 「うどん・ケーキ」 and カレー揚げ出し豆腐 (dusted and deep-fried). Also worth carrying into the record: 「※夜営業はお寿司提供しておりません」 — sushi is lunch-only."
+ },
+ {
+  "id": "hiro_okagesan",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is centered on fish and seafood with fish-based dashi; shared prep makes this unsuitable for strict vegan or vegetarian diners.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340114/34017898/",
+  "verdict": "supported",
+  "found": "「\"servesCuisine\":\"海鮮、寿司、食堂\"」／page title 「おかげさん - 立町/海鮮 | 食べログ」／「突き出しは塩モツ煮。臭み一切なしのキレ感ある味にあったまってはじまる。」「和風のカンジャンセウとか自家製ツナとか」「・鯛味噌漬け焼き 880円」／menu photos 「刺身盛り合わせ わさび」「赤だし しそ」",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "plain fetch with iPhone UA",
+  "note": "Directly supported, and stronger than the record states: the compulsory 突き出し (unrefusable seated appetiser) documented on this page is 塩モツ煮, salted offal stew — a vegan or vegetarian diner is served animal product before ordering anything. 自家製シーチキン/ツナ, カンジャンセウ and 刺身盛り合わせ confirm the seafood centre. The page says only 赤だし, never 鰹だし, so 'fish-based dashi' is inference. vegan_status 'no' is correct. Trading: open — Tabelog 3.08 from 22 reviews, hours 11:30-14:00 / 17:30-22:00, 日曜・祝日 定休, ランチ不定休 売り切れ次第終了, no 閉店/移転/掲載保留 badge."
  }
 ]

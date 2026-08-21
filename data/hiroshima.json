@@ -1096,7 +1096,9 @@
     "soy_sauce_wheat": [
      {
       "text": "Signature anago and oyster dishes are seasoned/glazed in the Japanese style, which uses wheat-based soy sauce; no gluten-free soy sauce is documented.",
-      "source": "https://tabiiro.jp/gourmet/s/304768-hatsukaichi-mizuha/menu/50646/"
+      "source": "http://mizuhaso.co.jp/shibai/menu/don.html",
+      "verified": "2026-08-20",
+      "repointed_from": "https://tabiiro.jp/gourmet/s/304768-hatsukaichi-mizuha/menu/50646/"
      }
     ],
     "vegan_cross_contact": [],
@@ -4556,8 +4558,8 @@
    "gf_confidence": "no",
    "gf_label": "Not gluten-free",
    "gf_detail": "Not gluten-free. The signature 揚げもみじ (fried momiji) is a castella-based momiji manju (wheat flour and egg) coated in a wheat-flour tempura batter and deep-fried; the plain steamed momiji manju is likewise made from wheat-flour castella batter. There are no gluten-free items and no documented allergy accommodation. Celiac and gluten-sensitive diners should avoid this shop entirely.",
-   "vegan_status": "limited",
-   "vegan_label": "Limited vegan",
+   "vegan_status": "no",
+   "vegan_label": "Not vegan",
    "vegan_detail": "Not a vegan destination. The momiji manju and 揚げもみじ are made with a castella batter that contains egg, and the cream and cheese fillings contain dairy. The anko (red bean) filling itself is typically plant-based, but the surrounding cake/batter is not, and the shop publishes no vegan or allergen information, so no item can be confirmed vegan. Strict vegans should treat this as off-limits; at most, ask staff about ingredients.",
    "hours_raw": "Around 9:30-17:30 (varies by season; until around 17:00 in the off-season)",
    "hours": {
@@ -4650,14 +4652,16 @@
     "gf_cross_contamination": [
      {
       "text": "The shop deep-fries wheat-batter momiji manju; there is no gluten-free menu and no published statement about a dedicated fryer, so cross-contamination should be assumed.",
-      "source": "https://momijido.com/about/"
+      "source": "https://momijido.com/about/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Cream and cheese fillings (dairy) are prepared in the same kitchen as the anko items, and the castella batter contains egg; no separation for vegan diners is documented.",
-      "source": "https://momijido.com/about/"
+      "source": "https://momijido.com/about/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -4675,7 +4679,13 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "sweep_downgrade": {
+    "field": "vegan_status",
+    "from": "limited",
+    "to": "no",
+    "why": "The operator's own allergen table lists 卵 in all six momiji manju varieties — 【こしあん】「あん（砂糖、小豆） 卵 砂糖 小麦粉 水あめ」 — so even the plain bean-paste item is not vegan, and クリーム/チョコレート/チーズ add 乳. /shop states Nibanya's entire range is 「揚げもみじ®、揚げもみソフト、ドリンクセット」, i.e. the fried manju plus a dairy soft serve. There is no plant-based item to have 'limited' access to."
+   }
   },
   {
    "id": "hiro_kappo_ryokan_oshokuji_ya",
@@ -5796,7 +5806,7 @@
       "text": "Anago-meshi and the rice sets are seasoned with Japanese soy-sauce-based tare, which standardly contains wheat; no wheat-free seasoning is mentioned.",
       "source": "https://www.miyajima-ichiwa.com/en/menue1",
       "verified": "2026-08-20",
-      "repointed_from": "https://www.miyajima-ichiwa.com/en"
+      "repointed_from": "https://www.miyajima-ichiwa.com/en/menue1"
      }
     ],
     "vegan_cross_contact": [
@@ -6419,14 +6429,16 @@
     "gf_cross_contamination": [
      {
       "text": "Bread is baked on-site and toast, sandwiches, napolitan and gratin are core menu items, so wheat is pervasive in the kitchen; no gluten-free handling is documented.",
-      "source": "https://tabetainjya.com/archives/nakaku1/post_4704/"
+      "source": "https://tabetainjya.com/archives/nakaku1/post_4704/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Menu is built on eggs, dairy and meat (egg morning sets, gratin, napolitan, curry); no separate vegan preparation is documented.",
-      "source": "https://tabetainjya.com/archives/nakaku1/post_4704/"
+      "source": "https://tabetainjya.com/archives/nakaku1/post_4704/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -6716,7 +6728,7 @@
       "text": "The standard dandan noodles include minced meat, so vegan diners cannot rely on the regular dish; no separate vegan preparation is documented.",
       "source": "https://tabelog.com/hiroshima/A3401/A340108/34000252/",
       "verified": "2026-08-20",
-      "repointed_from": "https://oomin77.com/blog-entry-365.html"
+      "repointed_from": "https://tabelog.com/hiroshima/A3401/A340108/34000252/"
      }
     ],
     "staff_allergy_handling": [],
@@ -6992,13 +7004,15 @@
     "soy_sauce_wheat": [
      {
       "text": "The dipping sauce is described as soy-based, and standard soy sauce contains wheat.",
-      "source": "https://motto.super-men.jp/store/401/"
+      "source": "https://motto.super-men.jp/store/401/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The dipping broth is built on seafood (魚介) stock alongside vegetables, so it is not suitable for vegans/vegetarians.",
-      "source": "https://motto.super-men.jp/store/401/"
+      "source": "https://motto.super-men.jp/store/401/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -7882,7 +7896,7 @@
       "text": "Core dish is wheat noodles; soy-sauce version uses standard soy sauce. A shared kitchen handling wheat throughout means high gluten cross-contact risk.",
       "source": "https://musashibo.co.jp/product/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e6%8b%85%e9%ba%ba%ef%bc%88%e7%94%9f%e9%ba%ba%ef%bc%89%e8%8a%b3%e9%86%87%e9%86%a4%e6%b2%b9/",
       "verified": "2026-08-20",
-      "repointed_from": "https://musashibo.co.jp/"
+      "repointed_from": "https://musashibo.co.jp/product/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e6%8b%85%e9%ba%ba%ef%bc%88%e7%94%9f%e9%ba%ba%ef%bc%89%e8%8a%b3%e9%86%87%e9%86%a4%e6%b2%b9/"
      }
     ],
     "soy_sauce_wheat": [
@@ -8143,7 +8157,8 @@
     "soy_sauce_wheat": [
      {
       "text": "The signature anago-meshi and other dishes are finished with a soy-based sauce, which in Japan is normally brewed with wheat and is not gluten-free.",
-      "source": "https://kashikoguma.com/miyajima-anago/"
+      "source": "https://kashikoguma.com/miyajima-anago/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
@@ -8827,13 +8842,15 @@
     "soy_sauce_wheat": [
      {
       "text": "The signature anago-don is finished with a house sweet-savory sauce that is soy-sauce based, which in Japan standardly contains wheat; oyster udon uses wheat noodles and fried oysters use wheat batter.",
-      "source": "https://tabiiro.jp/gourmet/s/309955-hatsukaichi-umeyama/"
+      "source": "https://tabiiro.jp/gourmet/s/309955-hatsukaichi-umeyama/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The menu is entirely seafood-based (conger eel, oysters, shellfish) with dashi and soy seasonings; no plant-only preparations are documented.",
-      "source": "https://tabiiro.jp/gourmet/s/309955-hatsukaichi-umeyama/"
+      "source": "https://tabiiro.jp/gourmet/s/309955-hatsukaichi-umeyama/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -9176,7 +9193,7 @@
       "text": "The dish is built on minced pork and animal-derived seasoning typical of tantan noodles; no vegan preparation is documented.",
       "source": "http://spicymasara.com/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e3%80%85%e9%ba%ba%e3%81%a8%e3%81%af%ef%bc%9f/",
       "verified": "2026-08-20",
-      "repointed_from": "https://rurubu.jp/andmore/article/16185"
+      "repointed_from": "http://spicymasara.com/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e3%80%85%e9%ba%ba%e3%81%a8%e3%81%af%ef%bc%9f/"
      }
     ],
     "staff_allergy_handling": [],
@@ -10674,7 +10691,7 @@
       "text": "The dish is built on wheat noodles, so the entire menu centers on gluten; there is no documented gluten-free preparation or separate handling.",
       "source": "https://musashibo.co.jp/product/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e6%8b%85%e9%ba%ba%ef%bc%88%e7%94%9f%e9%ba%ba%ef%bc%89%e8%8a%b3%e9%86%87%e9%86%a4%e6%b2%b9/",
       "verified": "2026-08-20",
-      "repointed_from": "https://musashibo.co.jp/"
+      "repointed_from": "https://musashibo.co.jp/product/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e6%8b%85%e9%ba%ba%ef%bc%88%e7%94%9f%e9%ba%ba%ef%bc%89%e8%8a%b3%e9%86%87%e9%86%a4%e6%b2%b9/"
      }
     ],
     "soy_sauce_wheat": [
@@ -10682,7 +10699,7 @@
       "text": "The savory sauce for shiru-nashi tantanmen is typically soy-sauce based, which in Japan generally contains wheat; no gluten-free tamari is documented.",
       "source": "https://musashibo.co.jp/product/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e6%8b%85%e9%ba%ba%ef%bc%88%e7%94%9f%e9%ba%ba%ef%bc%89%e6%bf%83%e5%8e%9a%e8%83%a1%e9%ba%bb/",
       "verified": "2026-08-20",
-      "repointed_from": "https://musashibo.co.jp/"
+      "repointed_from": "https://musashibo.co.jp/product/%e6%b1%81%e3%81%aa%e3%81%97%e6%8b%85%e6%8b%85%e9%ba%ba%ef%bc%88%e7%94%9f%e9%ba%ba%ef%bc%89%e6%bf%83%e5%8e%9a%e8%83%a1%e9%ba%bb/"
      }
     ],
     "vegan_cross_contact": [
@@ -13372,7 +13389,8 @@
     "soy_sauce_wheat": [
      {
       "text": "Anago and oyster dishes and okonomiyaki are standard Hiroshima preparations that use wheat-based soy sauce/tare and wheat-flour batter; no gluten-free preparation is documented.",
-      "source": "https://www.miyajima.or.jp/member/food.html"
+      "source": "https://www.miyajima.or.jp/member/food.html",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
@@ -13380,7 +13398,8 @@
     "positives": [
      {
       "text": "An English menu is available, which can help travelers identify ingredients before ordering.",
-      "source": "https://www.miyajima.or.jp/member/food.html"
+      "source": "https://www.miyajima.or.jp/member/food.html",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -17001,14 +17020,16 @@
     "gf_cross_contamination": [
      {
       "text": "Cooked on a shared teppan griddle alongside wheat batter, wheat-based sauce, and noodles; high gluten cross-contact is inherent to the cuisine.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340114/34016446/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340114/34016446/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Shared griddle used for pork, egg, and seafood; not suitable for strict vegans.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340114/34016446/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340114/34016446/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -18571,21 +18592,24 @@
     "gf_cross_contamination": [
      {
       "text": "No gluten-free protocol is documented; shared scoops and a common gelato case mean cross-contact between flavors and with any wheat cones is possible. Request a cup and ask staff per flavor.",
-      "source": "https://japan-stroll.com/gourmet/gelateria-baccano/"
+      "source": "https://japan-stroll.com/gourmet/gelateria-baccano/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "The gelato base is dairy (Chichiyasu Hiroshima milk); fruit sorbet-style flavors may be dairy-free but are produced in the same kitchen, so cross-contact with milk is possible. Confirm specific flavors with staff.",
-      "source": "https://japan-stroll.com/gourmet/gelateria-baccano/"
+      "source": "https://japan-stroll.com/gourmet/gelateria-baccano/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
     "positives": [
      {
       "text": "Gelato is made in-house with no artificial coloring, flavoring, or preservatives, and the milk base and many ingredients are locally sourced, which gives clear visibility into what is in each flavor.",
-      "source": "https://japan-stroll.com/gourmet/gelateria-baccano/"
+      "source": "https://japan-stroll.com/gourmet/gelateria-baccano/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -18702,19 +18726,23 @@
     "gf_cross_contamination": [
      {
       "text": "Menu features multiple breaded deep-fried items (homemade gansu fish-paste fritters, lever katsu breaded liver, fried oysters, anago tempura) that share fryer oil, presenting wheat cross-contamination risk.",
-      "source": "https://www.thomas-hiroshima.com/concept.html"
+      "source": "https://www.thomas-hiroshima.com/concept.html",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Dishes are seasoned with standard Japanese soy sauce and soy-based dressings (e.g., anago sashimi with wasabi-soy or ponzu), which are wheat-containing; no gluten-free tamari is mentioned.",
-      "source": "https://www.thomas-hiroshima.com/concept.html"
+      "source": "https://www.thomas-hiroshima.com/concept.html",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "A seafood- and meat-centric izakaya (oysters, conger eel, pork offal, liver, chicken, sashimi) using fish-based dashi and seasonings; no documented vegan dishes or separate preparation.",
-      "source": "https://www.thomas-hiroshima.com/concept.html"
+      "source": "https://www.thomas-hiroshima.com/concept.html",
+      "unsupported": "2026-08-20",
+      "why": "The animal-centric half is true and easy to evidence, but 'no documented vegan dishes' is contradicted by the cited page itself — boiled edamame is printed on it — and by this record's own data/hiroshima_menus.json entry, which is menu_verified:true and flags 16 items vegan. The record is arguing ag"
      }
     ],
     "staff_allergy_handling": [],
@@ -20020,13 +20048,15 @@
     "soy_sauce_wheat": [
      {
       "text": "Core dishes (sashimi, simmered seafood, miso-based hot pots) rely on Japanese soy sauce and miso, which typically contain wheat; no gluten-free preparation is documented.",
-      "source": "http://www.siki-sai.com/"
+      "source": "http://www.siki-sai.com/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "All featured dishes are seafood- and fish-dashi-based (oysters, sashimi, fish/crab hot pots); no vegan or vegetarian options are documented.",
-      "source": "http://www.siki-sai.com/"
+      "source": "http://www.siki-sai.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -23213,13 +23243,16 @@
     "soy_sauce_wheat": [
      {
       "text": "Anago and rice-bowl dishes are served with Japanese soy sauce and tare, which are standard wheat-containing seasonings; no gluten-free alternative is mentioned.",
-      "source": "https://miyajima-ohtani.sakura.ne.jp/cuisin.html"
+      "source": "https://miyajima-ohtani.sakura.ne.jp/cuisin.html",
+      "unsupported": "2026-08-20",
+      "why": "The page contains no 醤油, no たれ/タレ and no allergen statement, so the claim as worded is not on the cited source — but the same page carries far stronger and more explicit gluten evidence that the record is ignoring: 「当店では、かきフライ、かき丼、かきうどんなどでご提供しています」「かつ丼・親子丼・カツカレーなどもあります」「麺類は肉・かき・きつね・天ぷらうどん、そばなど豊富にとりそ"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The menu centers on oysters, conger eel and other seafood plus meat and egg donburi, with fish-based dashi broths; there are no documented vegan items or separate vegan preparation.",
-      "source": "https://miyajima-ohtani.sakura.ne.jp/cuisin.html"
+      "source": "https://miyajima-ohtani.sakura.ne.jp/cuisin.html",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -24057,7 +24090,8 @@
     "positives": [
      {
       "text": "All seats are non-smoking.",
-      "source": "https://tabelog.com/hiroshima/A3402/A340202/34012090/"
+      "source": "https://tabelog.com/hiroshima/A3402/A340202/34012090/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -26267,19 +26301,22 @@
     "gf_cross_contamination": [
      {
       "text": "Core dishes (okonomiyaki batter, layered wheat noodles, deep-fried あげおこ, and breaded fried oysters) are all wheat-based and cooked on shared teppan/fryer surfaces; no gluten-free preparation is documented.",
-      "source": "https://okonomi-matochan.com/"
+      "source": "https://okonomi-matochan.com/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Dishes are finished with wheat-based okonomiyaki/Otafuku sauce and soy-sauce-based seasonings (e.g., ponzu), which typically contain wheat.",
-      "source": "https://okonomi-matochan.com/"
+      "source": "https://okonomi-matochan.com/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The menu is built around egg, pork, oysters, squid, shrimp, and fish-based dashi/toppings cooked on a shared griddle; no vegan preparation is documented.",
-      "source": "https://okonomi-matochan.com/"
+      "source": "https://okonomi-matochan.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -28008,26 +28045,31 @@
     "gf_cross_contamination": [
      {
       "text": "Okonomiyaki batter and the topping noodles are wheat-based and cooked on a shared teppan griddle alongside many other dishes, so cross-contact with gluten is effectively unavoidable.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Hiroshima okonomiyaki is finished with okonomiyaki sauce, which is typically wheat/soy-based; no gluten-free sauce is documented.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+      "unsupported": "2026-08-20",
+      "why": "Rewrite rather than re-cite: the same page evidences wheat-brewed soy sauce directly (two 醤油 dishes plus ponzu), which is stronger than an assumption about a sauce the page never names. As written the claim asserts something the citation does not contain."
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Pork, beef, chicken, egg, and local oysters are cooked on the same shared teppan as any vegetable dishes, so cross-contact with animal products is likely.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
     "positives": [
      {
       "text": "The menu page notes that some vegetarian options are available, so a flexitarian diner may find a few plant-leaning dishes by asking.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -29734,7 +29776,7 @@
       "text": "Anagomeshi and oyster dishes at this kind of eatery are conventionally prepared with Japanese soy sauce / tare, which contains wheat; no gluten-free preparation is documented.",
       "source": "https://4travel.jp/dm_shisetsu/10180622",
       "unsupported": "2026-08-20",
-      "why": "Dishes confirmed; the wheat assertion is unsourced inference resting on a citation that carries zero ingredient content. Also stale — 4travel's newest review here is dated 2019, so it cannot evidence current practice either way — and the live URL 403s every user-agent, so a reader who clicks it gets"
+      "why": "Dishes confirmed; the wheat assertion is unsourced inference resting on a citation with zero ingredient content, and the live URL 403s every user-agent so a reader who clicks it gets nothing. The claim IS evidenceable elsewhere and should be re-cited: MAFF's うちの郷土料理「あなご飯 広島県」 defines the dish as 「穴子"
      }
     ],
     "vegan_cross_contact": [],
@@ -32611,13 +32653,15 @@
     "soy_sauce_wheat": [
      {
       "text": "As a Japanese seafood/sushi/izakaya kitchen, dishes rely on standard soy sauce, which is brewed with wheat; no wheat-free soy sauce is documented.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340114/34017898/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340114/34017898/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The menu is centered on fish and seafood with fish-based dashi; shared prep makes this unsuitable for strict vegan or vegetarian diners.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340114/34017898/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340114/34017898/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -33719,13 +33763,15 @@
     "soy_sauce_wheat": [
      {
       "text": "The restaurant specializes in sukiyaki, which is cooked in a warishita sauce based on wheat-containing soy sauce; no gluten-free version is mentioned.",
-      "source": "https://www.tablecheck.com/ja/rokumeikan-miyajima"
+      "source": "https://www.tablecheck.com/ja/rokumeikan-miyajima",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Menu sets are centered on Hiroshima beef and include local egg and dashi-based broth, with no documented vegan or vegetarian alternative.",
-      "source": "https://www.tablecheck.com/ja/rokumeikan-miyajima"
+      "source": "https://www.tablecheck.com/ja/rokumeikan-miyajima",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -37178,19 +37224,22 @@
     "soy_sauce_wheat": [
      {
       "text": "Hiroshima-style okonomiyaki and typical griddle/izakaya seasonings rely on wheat-flour batter and wheat-based soy/okonomiyaki sauce; no gluten-free sauces are documented.",
-      "source": "https://www.teppan-murataya.com/"
+      "source": "https://www.teppan-murataya.com/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "All cooking is done on a shared iron griddle used for beef, seafood, and egg dishes, so vegetable items are prepared on the same surface as animal products.",
-      "source": "https://www.teppan-murataya.com/"
+      "source": "https://www.teppan-murataya.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "The kitchen accommodates custom requests when ingredients are available, but no formal allergy or dietary handling is documented.",
-      "source": "https://www.teppan-murataya.com/"
+      "source": "https://www.teppan-murataya.com/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [],
@@ -38276,7 +38325,8 @@
     "soy_sauce_wheat": [
      {
       "text": "Sashimi, grilled and simmered seafood dishes at this izakaya are served with standard Japanese soy sauce, which is brewed with wheat.",
-      "source": "https://romanza.owst.jp"
+      "source": "https://romanza.owst.jp",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
@@ -38671,13 +38721,15 @@
     "soy_sauce_wheat": [
      {
       "text": "Menu centers on anago rice and oyster dishes, which in this region are conventionally prepared with standard wheat-based soy sauce/tare; no gluten-free seasoning is indicated.",
-      "source": "https://tabelog.com/hiroshima/A3402/A340202/34021900/"
+      "source": "https://tabelog.com/hiroshima/A3402/A340202/34021900/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The kitchen is oyster- and conger-eel-focused, so shared equipment and stocks make vegan dining impractical here.",
-      "source": "https://tabelog.com/hiroshima/A3402/A340202/34021900/"
+      "source": "https://tabelog.com/hiroshima/A3402/A340202/34021900/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -40515,7 +40567,7 @@
       "text": "Beef and seafood are grilled together on a single shared L-shaped teppan, so any plant items would share the same cooking surface as meat and fish.",
       "source": "https://www.aohige.jp/steak/concept",
       "verified": "2026-08-20",
-      "repointed_from": "https://www.aohige.jp/steak"
+      "repointed_from": "https://www.aohige.jp/steak/concept"
      }
     ],
     "staff_allergy_handling": [],
@@ -41832,7 +41884,8 @@
     "soy_sauce_wheat": [
      {
       "text": "The okonomiyaki is finished with Otafuku-style okonomiyaki sauce, which is wheat-based; combined with the wheat-flour batter and wheat noodles, the dishes are not suitable for gluten-free diners.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340121/34007431/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340121/34007431/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
@@ -43974,8 +44027,9 @@
     "soy_sauce_wheat": [
      {
       "text": "Menu is built on oysters, white-grilled anago, small sardines and teppanyaki, which in Japanese cooking typically use wheat-based soy sauce and seasonings; no gluten-free preparation is documented.",
-      "source": "https://miyamae-hanare.owst.jp/",
-      "verified": "2026-08-20"
+      "source": "https://tabelog.com/hiroshima/A3401/A340117/34031300/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://miyamae-hanare.owst.jp/"
      }
     ],
     "vegan_cross_contact": [
@@ -45378,13 +45432,15 @@
     "soy_sauce_wheat": [
      {
       "text": "Dishes are Japanese seafood preparations (sashimi, seared fish, oysters) typically served with wheat-based soy sauce; no gluten-free soy sauce is mentioned.",
-      "source": "https://www.hotpepper.jp/strJ004577434/"
+      "source": "https://www.hotpepper.jp/strJ004577434/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The kitchen is centered on fish, oysters, and grilled meat, so vegan diners face pervasive cross-contact with animal ingredients.",
-      "source": "https://www.hotpepper.jp/strJ004577434/"
+      "source": "https://www.hotpepper.jp/strJ004577434/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -45505,7 +45561,9 @@
     "soy_sauce_wheat": [
      {
       "text": "Grilled and simmered meat dishes use standard Japanese soy sauce, which is brewed with wheat, and the signature demi-glace stew is built on a wheat-flour roux.",
-      "source": "https://hitosara.com/0031119126/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340101/34013197/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://hitosara.com/0031119126/"
      }
     ],
     "vegan_cross_contact": [],
@@ -49913,7 +49971,7 @@
       "text": "The signature anago-meshi is finished with a soy-sauce-based tare, which in Japan virtually always contains wheat; tempura and oyster dishes likewise involve wheat.",
       "source": "https://www.m-yamaichi.sakura.ne.jp/sub3.html",
       "verified": "2026-08-20",
-      "repointed_from": "http://umahiro.jp/pc/shop/?tenpo=90"
+      "repointed_from": "https://www.m-yamaichi.sakura.ne.jp/sub3.html"
      }
     ],
     "vegan_cross_contact": [
@@ -50891,7 +50949,8 @@
     "soy_sauce_wheat": [
      {
       "text": "Okonomiyaki and teppan izakaya dishes here are finished with standard wheat-based okonomiyaki/soy sauces; no wheat-free sauce is documented.",
-      "source": "https://www.hiroshima-akayakien.com/menu.html"
+      "source": "https://www.hiroshima-akayakien.com/menu.html",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
@@ -51873,13 +51932,15 @@
     "soy_sauce_wheat": [
      {
       "text": "As a traditional Japanese izakaya, dishes are seasoned with standard (wheat-based) soy sauce and dashi; no wheat-free soy sauce is mentioned.",
-      "source": "https://hitosara.com/0006062319/"
+      "source": "https://hitosara.com/0006062319/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "The kitchen centers on fish and shellfish, so vegan dishes would share preparation surfaces and fish-based dashi/soy seasoning.",
-      "source": "https://hitosara.com/0006062319/"
+      "source": "https://hitosara.com/0006062319/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -52116,19 +52177,23 @@
     "gf_cross_contamination": [
      {
       "text": "Menu is built on wheat noodles (Kure reimen, ramen, tsukemen) and a soy/seafood-based sauce; a shared noodle kitchen means heavy gluten presence and high cross-contamination risk.",
-      "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/"
+      "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "The sauce/broth is described as soy- and seafood-based, which in Japanese noodle shops typically uses wheat-containing soy sauce.",
-      "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/"
+      "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
+      "unsupported": "2026-08-20",
+      "why": "'described as soy- and seafood-based' misquotes the source: no source describes the tare as soy. The real, sourced gluten hazard here is the wheat 平打ち麺 itself, which is enough for gf 'no' — the tare claim should be reworded as an unverified assumption rather than attributed to this blog."
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Signature dish and sides include shrimp, pork chashu, egg and fish-derived umami; no vegan preparation documented.",
-      "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/"
+      "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -55085,14 +55150,16 @@
     "gf_cross_contamination": [
      {
       "text": "All momiji manju are baked from a shared wheat-flour batter on the same griddle, so the entire product line contains gluten with no gluten-free preparation.",
-      "source": "https://oyakodetanoshimou.com/miyajima-momijimanju-kimuraya/"
+      "source": "https://oyakodetanoshimou.com/miyajima-momijimanju-kimuraya/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "The batter is egg- and flour-based and fillings include dairy cream cheese, custard, and chocolate; bean-paste versions share the same egg-flour shell, so there is no vegan-safe item.",
-      "source": "https://oyakodetanoshimou.com/miyajima-momijimanju-kimuraya/"
+      "source": "https://oyakodetanoshimou.com/miyajima-momijimanju-kimuraya/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -55431,7 +55498,9 @@
     "soy_sauce_wheat": [
      {
       "text": "Korean cooking here uses standard soy sauce and gochujang, which typically contain wheat, and the pancake (chijimi) batter and Korean ramen are wheat-based.",
-      "source": "https://www.hotpepper.jp/strJ000521315/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340109/34009560/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.hotpepper.jp/strJ000521315/"
      }
     ],
     "vegan_cross_contact": [],
@@ -56183,19 +56252,22 @@
     "gf_cross_contamination": [
      {
       "text": "Okonomiyaki uses a wheat-flour batter and wheat noodles, and is cooked on the same shared iron griddle as all other dishes, so gluten cross-contact on the teppan is effectively unavoidable.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Savory teppanyaki and ponzu-dressed dishes (e.g., octopus with ponzu) rely on Japanese soy sauce / ponzu, which standardly contain wheat; no wheat-free seasoning is advertised.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Nearly all dishes involve fish, shellfish, beef, pork or egg, and plant items are cooked on the same teppan as seafood and meat; no separated vegan preparation is described.",
-      "source": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/"
+      "source": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [],
@@ -58168,7 +58240,7 @@
    "lng": 132.40698,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
    "vegan_detail": "No vegan claims are published, and the core lineup (rice-flour chiffon cakes, florentine, buttery baked goods) typically contains egg and dairy. Some items such as the basil crackers or 'kimagure' cookie sets may be plant-based, but this is unconfirmed — vegans should ask the shop about each item.",

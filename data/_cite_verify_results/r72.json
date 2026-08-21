@@ -1,0 +1,80 @@
+[
+ {
+  "id": "hiro_teppan_murataya",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Hiroshima-style okonomiyaki and typical griddle/izakaya seasonings rely on wheat-flour batter and wheat-based soy/okonomiyaki sauce; no gluten-free sauces are documented.",
+  "url": "https://www.teppan-murataya.com/",
+  "verdict": "supported",
+  "found": "「お好み焼き （そば・うどん） 各880円」／「広島名物のお好み焼きは食事としてのイメージが強いですが、飲みの〆としても定番。甘辛いソースが焼けた香りやガツンとしたボリューム感は…」／「鉄板の上で潰したじゃがいもにベーコンとバター醤油を加え、チーズをかけて蒸らし」／〆: 焼きそば 800円・焼うどん 800円",
+  "correct_url": null,
+  "http": "200 (plain curl, 41.7 KB, full text in HTML - not JS-rendered)",
+  "method": "1 plain fetch of the cited page + whole-page string search for 醤油/ソース/小麦/グルテン/アレル",
+  "note": "The page names an actual sweet-savoury okonomiyaki sauce (甘辛いソース), an actual soy sauce (バター醤油 on the 焼きポテトサラダ) and wheat noodles three ways (お好み焼き そば・うどん, 焼きそば, 焼うどん), so the substance is on the cited page rather than assumed. The words 小麦, グルテン and アレル return zero hits site-wide, which supports the 'no gluten-free sauces are documented' half. Two wheat vectors the record should add: とん平焼き 680円 and ひと口ピッツァ 780円, both cooked on the same griddle."
+ },
+ {
+  "id": "hiro_teppan_murataya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "All cooking is done on a shared iron griddle used for beef, seafood, and egg dishes, so vegetable items are prepared on the same surface as animal products.",
+  "url": "https://www.teppan-murataya.com/",
+  "verdict": "supported",
+  "found": "「村田屋の自慢は、なんといっても鉄板焼きメニュー！肉、魚介、野菜など様々な素材を豪快に焼き上げ、上質な料理に仕上げていきます。」／「村田屋では、だし巻き玉子も鉄板で焼き上げます！…牛肉を煮込んだ旨味満載のだしを使用する事で」／「なんとポテサラも鉄板で作っちゃうんです！鉄板の上で潰したじゃがいもにベーコンとバター醤油を加え、チーズをかけて蒸らし」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited page",
+  "note": "The single griddle taking meat, seafood and vegetables together is stated in the shop's own words, and the egg roll and the potato salad are both explicitly cooked on it, so the claim holds verbatim. Worth adding to the detail text: the だし巻き玉子's dashi is simmered BEEF stock (牛すじのだしで巻くだし巻き玉子), so the egg dish is not merely cross-contacted but beef-containing. Of the nominally plant items only トマトスライス 380円 and 大根と梅しそのパリパリサラダ 700円 are cold plates that miss the griddle; れんこん焼き, エリンギバター and ニラ玉もやし all involve butter, egg or the shared teppan. vegan: limited is defensible on those two cold plates but sits at the very bottom of that band."
+ },
+ {
+  "id": "hiro_teppan_murataya",
+  "city": "hiroshima",
+  "field": "staff_allergy_handling",
+  "quote": "The kitchen accommodates custom requests when ingredients are available, but no formal allergy or dietary handling is documented.",
+  "url": "https://www.teppan-murataya.com/",
+  "verdict": "supported",
+  "found": "「お客様に心から楽しんでいただきたいという想いから、メニューに無い料理でも素材があればお作りしますので、ぜひ気軽に、お客様の「食べたい！」を聞かせてください！」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited page",
+  "note": "Both halves check out on the cited page: the off-menu offer is verbatim, and アレル/アレルギー/グルテン/小麦/ベジタリアン/ヴィーガン all return zero hits across the whole site, so 'no formal allergy handling is documented' is an absence actually verified rather than assumed. Note the off-menu offer is about ingredient availability, not about substitution or separated preparation - it should not be read by a celiac as an accommodation signal. Trading status OK: site live, 広島市中区流川町1-20 田中ビル1F, 18:00-5:00 (L.O.4:30), 定休日 無し, 14 seats, no 閉店 notice."
+ },
+ {
+  "id": "hiro_teppan_yojiro",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki uses a wheat-flour batter and wheat noodles, and is cooked on the same shared iron griddle as all other dishes, so gluten cross-contact on the teppan is effectively unavoidable.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/",
+  "verdict": "supported",
+  "found": "【広島お好み焼き】ようじろう焼き 1,280円／広島スぺシャル 1,980円／チーズ焼き 1,080円／肉玉そば 880円 ＋【鉄板】厚切りベーコン・ブロッコリーのアヒージョ・エリンギバター焼き・鉄板出し巻き玉子、および「県産豚鉄板焼き」（ジャンル表記: 胡町駅/鉄板焼き､ 海鮮､ 居酒屋、更新日 2026/05/15）",
+  "correct_url": null,
+  "http": "200 (iPhone UA on s.tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/, 157 KB); desktop tabelog.com host not attempted after the mobile host answered first try",
+  "method": "1 plain fetch with an iPhone User-Agent against the s.tabelog.com mirror of the cited dtlmenu URL",
+  "note": "The cited menu page carries a dedicated 広島お好み焼き block with four wheat-batter items including 肉玉そば (Hiroshima 'soba' is wheat chuka-men), and a 鉄板 block plus a 鉄板焼き genre tag, so batter, noodles and the shared griddle are all on the page. Two further wheat sources the record misses and should list: がんす 600円 (panko-breaded fried fishcake, a Hiroshima staple) and ハニーバゲット -アイス添え- 780円. Trading status OK and worth recording: オープン日 2026年5月1日 - this venue opened three months ago, no 閉店/移転 string anywhere on the page, tel 082-909-9759."
+ },
+ {
+  "id": "hiro_teppan_yojiro",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Savory teppanyaki and ponzu-dressed dishes (e.g., octopus with ponzu) rely on Japanese soy sauce / ponzu, which standardly contain wheat; no wheat-free seasoning is advertised.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/",
+  "verdict": "supported",
+  "found": "「地たこ 各 980円 ・ぶつぎりポン酢 ・酒盗焼き」／「牛コウネ炙り 各 1,380円 ・おろしポン酢 ・卵黄たれ」／「牡蠣 下記各 1,280円 バター炒め／おろしポン酢／アヒージョ」／「真鯛の白子ポン酢 880円」／「タンのねぎ塩焼き 780円」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, s.tabelog.com)",
+  "method": "1 plain fetch with an iPhone UA; the record's own worked example was searched as an exact string on the page",
+  "note": "The record's parenthetical example is verbatim on the cited page - 地たこ ぶつぎりポン酢 - and ポン酢 recurs on three more dishes, plus a 卵黄たれ and two 酒盗 items (酒盗 is fermented fish innards, usually soy-seasoned). Ponzu is soy-sauce based and Japanese koikuchi soy sauce is wheat-brewed, so the wheat inference is sound; the page itself never discusses seasoning composition, and nothing gluten-free is advertised, which is exactly what the claim says."
+ },
+ {
+  "id": "hiro_teppan_yojiro",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Nearly all dishes involve fish, shellfish, beef, pork or egg, and plant items are cooked on the same teppan as seafood and meat; no separated vegan preparation is described.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340109/34034554/dtlmenu/",
+  "verdict": "supported",
+  "found": "37品中: お刺身盛り合わせ／真鯛の白子ポン酢／県産豚鉄板焼き／タンのねぎ塩焼き／ハラミのサイコロステーキ／世羅みのり牛たたき・ステーキ／焼きせんじがら／がんす／地たこ／牛コウネ炙り／殻付きかなわの牡蠣／うにホーレン／厚切りベーコン／鉄板出し巻き玉子／牛ガーリックライス／海鮮茶漬け。植物性らしき品は ブロッコリーのアヒージョ 780円・エリンギバター焼き 580円・たたききゅうり 480円・葉わさび 500円・広島葉キムチ 550円 のみ",
+  "correct_url": null,
+  "http": "200 (iPhone UA, s.tabelog.com)",
+  "method": "1 plain fetch with an iPhone UA; counted the full 37-item 料理 list on the cited page",
+  "note": "Overwhelmingly confirmed - the seafood/meat share of the menu is not an estimate but a count, and the 鉄板 block puts the only warm plant items (ブロッコリーのアヒージョ, エリンギバター焼き) on the same griddle as 厚切りベーコン and the egg roll. エリンギバター焼き is butter, so it is not vegan even before cross-contact, and 広島葉キムチ is a commercial kimchi that commonly carries fish sauce or shrimp - neither should be offered to a vegan reader. vegan: no is correct."
+ }
+]

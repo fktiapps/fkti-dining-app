@@ -115,5 +115,107 @@
   "http": "200 plain curl (77KB)",
   "method": "1 plain fetch",
   "note": "Fully supported by the article's own account — seafood and egg are cracked straight onto the griddle, meat cooked alongside. Venue is trading: Tabelog 34014823 shows current hours with no 閉店/掲載保留 badge."
+ },
+ {
+  "id": "hiro_okonomiyaki_matochan",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Core dishes (okonomiyaki batter, layered wheat noodles, deep-fried あげおこ, and breaded fried oysters) are all wheat-based and cooked on shared teppan/fryer surfaces; no gluten-free preparation is documented.",
+  "url": "https://okonomi-matochan.com/",
+  "verdict": "supported",
+  "found": "「新名物『あげおこ』…『そば入り』『イカ入り』『牡蠣入り』『チーズ入り』の広島お好み焼きならではのメニュー」、「カキフライ 1,350円…極鮮王の生産者グループがパン粉までこだわって開発したカキフライです」、「肉玉そばorうどん 1,040円」、「エビイカスペシャル…エビ・イカ・大葉・イカ天入りのお好み焼です」.",
+  "correct_url": null,
+  "http": "200 plain curl (53KB)",
+  "method": "1 plain fetch",
+  "note": "Fully supported, and the page is actually more damning than the claim: パン粉 (wheat breadcrumbs) is named outright on the oyster fry, and the menu adds イカ天, ミックスフライ (エビフライ/ヒレカツ/唐揚げ), 串カツ, チーズトースト and 「人に作ってもらったラーメン」 built from サッポロ一番/出前一丁/うまかっちゃん instant wheat noodles — all sharing the same fryer and teppan."
+ },
+ {
+  "id": "hiro_okonomiyaki_matochan",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are finished with wheat-based okonomiyaki/Otafuku sauce and soy-sauce-based seasonings (e.g., ponzu), which typically contain wheat.",
+  "url": "https://okonomi-matochan.com/",
+  "verdict": "supported",
+  "found": "「ソースはオタフクソースかネギポンジュレを選べます」、「牡蠣ポン 1,550円…ポン酢も店内でブレンドしたオリジナルポン酢でお召し上がりいただけます」、「本気の焼きそば…焼き方、ソースの配合に拘った焼きそば」、「セセリのみぞれポン酢」.",
+  "correct_url": null,
+  "http": "200 plain curl (53KB)",
+  "method": "1 plain fetch",
+  "note": "Otafuku sauce and house-blended ponzu are both named by the shop itself; Otafuku お好みソース declares 小麦, so the conclusion holds. Also on the page and not in the record: 「やげん軟骨の味噌焼」 uses a 信州味噌 marinade — a further soy/koji seasoning to ask about."
+ },
+ {
+  "id": "hiro_okonomiyaki_matochan",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is built around egg, pork, oysters, squid, shrimp, and fish-based dashi/toppings cooked on a shared griddle; no vegan preparation is documented.",
+  "url": "https://okonomi-matochan.com/",
+  "verdict": "supported",
+  "found": "Menu carries 牡蠣スペシャル, カキフライ, エビイカスペシャル, 広島熟成鶏の唐揚げ, ネギたますじコン (牛すじ), 串カツ (豚), 焼き鳥, 玉子焼き, セセリ — all teppan/fryer items. No item is labelled vegan.",
+  "correct_url": null,
+  "http": "200 plain curl (53KB)",
+  "method": "1 plain fetch",
+  "note": "The claim is accurate, but it is one-sided: the same page explicitly documents 「ポテサラチーズ焼（ベジタリアン可）… 肉・魚が含まれませんのでベジタリアンの方にもお食事頂けます」 plus four house-made tofu dishes (豆富のカプレーゼ 「モッツァレラチーズの代わりに自家製の豆富を使用」, 揚げ出し豆腐, もっちり豆富, とわとろ豆富). The record should say the operator flags a meat-and-fish-free item — it is vegetarian, not vegan (cheese + 半熟目玉焼き) — rather than implying the menu is silent on diet."
+ },
+ {
+  "id": "hiro_okonomiyaki_matochan",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://okonomi-matochan.com/"
+  ],
+  "why": "The shop's own menu labels ポテサラチーズ焼 as 「ベジタリアン可」 with the note 「肉・魚が含まれませんのでベジタリアンの方にもお食事頂けます」, and lists four self-made tofu dishes including a mozzarella-free 豆富のカプレーゼ served cold. That is an operator who already thinks about excluding meat and fish, so a vegan has something concrete to ask about; 'no' tells a reader not to bother. Still not 'options' — every flagged item contains cheese or egg and nothing is stated to be vegan."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppan_kushi",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki batter and the topping noodles are wheat-based and cooked on a shared teppan griddle alongside many other dishes, so cross-contact with gluten is effectively unavoidable.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+  "verdict": "supported",
+  "found": "Menu cassettes list 肉玉そば, 肉玉うどん, やまだ焼き, 焼きそば, 焼きうどん, 塩焼きそば, めんダブル, めんハーフ, イカ天 and やまだのチャーハン, under the page title 「料理メニュー : お好み焼き・鉄板串焼き やまだ - 紙屋町西/お好み焼き」.",
+  "correct_url": null,
+  "http": "200 via iPhone UA on tabelog.com (211KB); desktop route not needed",
+  "method": "iPhone-UA fetch (route 1 fallback)",
+  "note": "Supported. Wheat noodles appear both as the okonomiyaki filling and as standalone yakisoba/yakiudon, and イカ天 (squid tempura) is a paid topping — all on one griddle in a 鉄板串焼き house."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppan_kushi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Hiroshima okonomiyaki is finished with okonomiyaki sauce, which is typically wheat/soy-based; no gluten-free sauce is documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+  "verdict": "unsupported",
+  "found": "The words お好みソース / okonomiyaki sauce do not appear anywhere on the cited menu page. What it does list is 「ささみのわさび醤油」、「アスパラベーコンとキノコのバター醤油炒め」、「つくねおろしポン酢」、「豚肉ともやしの蒸し焼きポン酢」、「広島産カキ レモンペッパーソース」.",
+  "correct_url": null,
+  "http": "200 via iPhone UA on tabelog.com",
+  "method": "iPhone-UA fetch",
+  "note": "Rewrite rather than re-cite: the same page evidences wheat-brewed soy sauce directly (two 醤油 dishes plus ponzu), which is stronger than an assumption about a sauce the page never names. As written the claim asserts something the citation does not contain."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppan_kushi",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Pork, beef, chicken, egg, and local oysters are cooked on the same shared teppan as any vegetable dishes, so cross-contact with animal products is likely.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+  "verdict": "supported",
+  "found": "豚バラ, しそ豚巻き, アスパラ豚巻き, 牛ハラミ, サイコロステーキ, 鶏モモステーキ, ささみ×3, せせり, ハツ, 肝, ホルモン炒め, 一夜干しホルモン, だし巻き玉子×3, 「広島産カキ レモンペッパーソース」 — sitting on the same menu as もやし炒め and 野菜炒め.",
+  "correct_url": null,
+  "http": "200 via iPhone UA on tabelog.com",
+  "method": "iPhone-UA fetch",
+  "note": "Supported: every named vegetable dish (もやし炒め, 野菜炒め, 野菜焼き) is a griddle item on a menu dominated by pork, beef, offal, chicken, egg and oysters."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppan_kushi",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The menu page notes that some vegetarian options are available, so a flexitarian diner may find a few plant-leaning dishes by asking.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340116/34025449/dtlmenu/",
+  "verdict": "supported",
+  "found": "The page's 料理 attribute row reads exactly 「ベジタリアンメニューあり」.",
+  "correct_url": null,
+  "http": "200 via iPhone UA on tabelog.com",
+  "method": "iPhone-UA fetch",
+  "note": "Verbatim match on the cited page. Concrete plant-leaning items on the same page a diner can name when asking: 野菜焼き 850円, 野菜炒め, もやし炒め, 塩うまキャベツ, トマトスライス, 冷奴. The record's existing vegan tier 'ask' is the right one; no change recommended. No 閉店 or 掲載保留 badge on the listing."
  }
 ]

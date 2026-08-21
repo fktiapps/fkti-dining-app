@@ -5,12 +5,12 @@
   "field": "soy_sauce_wheat",
   "quote": "Menu is built on oysters, white-grilled anago, small sardines and teppanyaki, which in Japanese cooking typically use wheat-based soy sauce and seasonings; no gluten-free preparation is documented.",
   "url": "https://miyamae-hanare.owst.jp/",
-  "verdict": "supported",
-  "found": "牡蠣・穴子・小鰯・鉄板焼き、多数の地酒をご用意したアットホームな瀬戸内料理店です。 / 広島県産 地穴子の白焼 2200円(税込)～",
-  "correct_url": null,
-  "http": "200 (plain curl 34,650 B; iPhone UA 63,007 B — same content, more lazy-loaded blocks)",
-  "method": "1 (plain fetch), plus /menu/ on the same host",
-  "note": "The menu composition and the total absence of allergy/gluten-free wording are both on the page, so the claim's premise and its 'not documented' half hold; but the page names no soy sauce at all (the anago 白焼 is served わさびとレモン — white-grilled, no tare), so the wheat pathway is the dipping shoyu and the general seasoning, not a documented ingredient. Word it as an inference."
+  "verdict": "wrong_source",
+  "found": "On Tabelog 34031300 (the shop's own listing): 「さらに、焼き穴子のおむすび。一本分を贅沢に使った一品で、香ばしさと甘辛いタレのバランスが絶妙。」 and, in the same reviews, 「カキフライは衣が軽く」「広島らしい“がんす”も外せません」「とうもろこしの天ぷらも」「締めのうどん カラスミがかかってます」.",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340117/34031300/",
+  "http": "owst.jp 200 (plain 34,650 B; iPhone UA 63,007 B). Tabelog 200 (514,636 B, iPhone UA)",
+  "method": "1 (plain fetch) on the cited owst.jp page and its /menu/ tab, then 1 with an iPhone UA on the Tabelog detail page + its Restaurant/FAQPage JSON-LD",
+  "note": "The cited owst.jp page names NO seasoning at all — 醤油 appears 0 times, and its one grilled-anago item is 白焼 served わさびとレモン, i.e. deliberately without tare. The claim is nevertheless true and the evidence is one URL away: Tabelog's listing documents a 甘辛いタレ on the grilled-anago onigiri plus a much heavier wheat load than the record admits — カキフライ, がんす (panko-breaded), とうもろこしの天ぷら and a 締めのうどん. Repoint the citation and add those four items; 'no gluten-free preparation is documented' still holds (グルテン/小麦 0 hits on both pages). TRADING: current — reviews to 2025/11, no Tabelog status badge; note Tabelog says 定休日 火・水 while the shop's own site says 水 only."
  },
  {
   "id": "hiro_hiroshima_kaki_miyamae_h",
@@ -219,5 +219,109 @@
   "http": "200; /dtlmenu/ also 200 but lists コース(0)・料理(0)・ドリンク(0)・ランチ(0) — this listing has no itemised menu, only 82 menu photos",
   "method": "1 (iPhone UA) on the detail page and on /dtlmenu/, then a targeted 牡蠣/かき/カキ scan of both",
   "note": "Textbook transplant defect: the 'oyster ramen' was picked up from a neighbouring 食べログまとめ banner about other Hiroshima-station restaurants, not from this shop, and it appears on no menu tab. Delete that clause. vegan_status 'no' still stands on the pork-bone broth, pork-belly chashu and 煮込み alone. TRADING: current — reviews to 2026/04, hours and 定休日月・日 match the record."
+ },
+ {
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Menu features multiple breaded deep-fried items (homemade gansu fish-paste fritters, lever katsu breaded liver, fried oysters, anago tempura) that share fryer oil, presenting wheat cross-contamination risk.",
+  "url": "https://www.thomas-hiroshima.com/concept.html",
+  "verdict": "supported",
+  "found": "「がんすとは、白身魚のすり身に野菜やピリ辛の香辛料などを入れて混ぜ、パン粉をつけて揚げたものです。…当店ではご注文をいただいてからパン粉をつけて揚げるので、出来立てをお楽しみいただけます。」 plus the price list on the same page: カキフライ 780円 / 天ぷら 780円 / 穴子の揚げ出し 1,200円 / 地だこの天ぷら 650円 / 白肉の天ぷら 800円 / 自家製がんす 450円 / せんじがら 350円",
+  "correct_url": null,
+  "http": "200 (21,101 B desktop; iPhone UA redirects to /sp/concept.html, 18,170 B)",
+  "method": "1 (plain fetch), then the same site's /specialty.html full price list and the shop's other official domain tomasu-nagarekawa.com",
+  "note": "Core claim supported outright — panko is named explicitly and at least six fried items sit on one price list. Two named items are miscited though: レバカツ is NOT on concept.html (on thomas-hiroshima.com it survives only inside commented-out HTML, i.e. retired from that site) and 穴子天ぷら is not there either. Both ARE current on the shop's other official site — 「新鮮なレバーをカラっと揚げた「レバカツ」」 on https://tomasu-nagarekawa.com/ and 穴子天ぷら 1,650円 on https://tomasu-nagarekawa.com/menu/. Add that URL. The live menu is also far wheat-heavier than the record says: 名物和風まぜそば, 汁なし担々麺, チャーシュー麺, 牛骨スープ辛麺, ホルモン餃子, れんこんはさみ揚げ, さきいかの天ぷら, とうもろこしの天ぷら, 揚げもみじまんじゅう."
+ },
+ {
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are seasoned with standard Japanese soy sauce and soy-based dressings (e.g., anago sashimi with wasabi-soy or ponzu), which are wheat-containing; no gluten-free tamari is mentioned.",
+  "url": "https://www.thomas-hiroshima.com/concept.html",
+  "verdict": "supported",
+  "found": "「しっかりと下処理を施した穴子はお刺身でもご提供しています。脂ののった白身を皮目を炙ってわさび醤油で食べるお刺身と、薄造りにしてポン酢で食べる生ちりの2種類があります。」",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 (plain fetch)",
+  "note": "Verbatim, including both the wasabi-shoyu and the ponzu variant. Two more soy carriers are on the live menu and could be cited: 山芋の牡蠣醤油漬け 450円 and 名物和風まぜそば, whose tare is described as 「太ちぢれ麺に牡蠣油、チャーシューの煮汁をベースにして作った和風のたれ」. No tamari or wheat-free soy is claimed anywhere on either official domain."
+ },
+ {
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "A seafood- and meat-centric izakaya (oysters, conger eel, pork offal, liver, chicken, sashimi) using fish-based dashi and seasonings; no documented vegan dishes or separate preparation.",
+  "url": "https://www.thomas-hiroshima.com/concept.html",
+  "verdict": "unsupported",
+  "found": "The cited page's own 定番メニュー block reads 「茹で枝豆 300円」, and its スピード block on the sister page adds 「やみつききゅうり」「トマトスライス」. The live menu at https://tomasu-nagarekawa.com/menu/ prints 茹で枝豆 350円, トマトスライス 350円, やみつききゅうり 350円, セロリの浅漬け 500円, 銀杏の塩炒り 580円, 広島菜漬け 350円, らっきょう 350円, 坦々もやし 500円, 坦々豆腐 500円.",
+  "correct_url": "https://tomasu-nagarekawa.com/menu/",
+  "http": "200 on concept.html; 200 on tomasu-nagarekawa.com/menu/ (31,322 B, plain fetch)",
+  "method": "1 (plain fetch) on the cited page, the sister official domain and the record's own verified menu file",
+  "note": "The animal-centric half is true and easy to evidence, but 'no documented vegan dishes' is contradicted by the cited page itself — boiled edamame is printed on it — and by this record's own data/hiroshima_menus.json entry, which is menu_verified:true and flags 16 items vegan. The record is arguing against its own menu. See the tier_recommendation filed alongside this."
+ },
+ {
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "city": "hiroshima",
+  "field": "trading_status",
+  "quote": "hours_raw: 'Mon, Tue, Thu-Sun & holidays: 11:00-09:00 (next day) (nearly 24 hours); closed Wednesdays'",
+  "url": "https://www.thomas-hiroshima.com/concept.html",
+  "verdict": "unsupported",
+  "found": "Both official domains say the opposite: 「営業時間 24時間営業 ※日曜日 朝9時閉店、月曜日 15時開店…／定休日 日曜」 (thomas-hiroshima.com) and 「0:00～24:00※24時間営業、日曜日は0:00～翌9:00、月曜日は0:00～15:00、祝日の月曜日は8:00～翌3:00／定休日 日曜日」 (tomasu-nagarekawa.com, Ⓒ2025).",
+  "correct_url": "https://tomasu-nagarekawa.com/",
+  "http": "200 on both official sites; Tabelog 34021104 also 200 (491 KB, iPhone UA)",
+  "method": "1 (plain fetch) on both official domains, cross-checked against the Tabelog FAQ hours block",
+  "note": "The record's closed-day comes from Tabelog, which says [水] 定休日 and 11:00-09:00 daily. Both of the shop's own sites say it trades 24 hours and closes SUNDAY (Sun 09:00 to Mon 15:00). A visitor following the record would find it open on Wednesday and shut on Sunday. Trust the operator's own pages and correct the record. The venue is otherwise plainly trading — Ⓒ2025 site, Tabelog reviews to 2025/11."
+ },
+ {
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://tomasu-nagarekawa.com/menu/",
+   "https://www.thomas-hiroshima.com/concept.html",
+   "https://www.thomas-hiroshima.com/specialty.html"
+  ],
+  "why": "The shop's own printed menu carries several plant-only dishes — 銀杏の塩炒り (ginkgo and salt), 茹で枝豆, トマトスライス, やみつききゅうり, セロリの浅漬け, らっきょう, ポテトフライ — and this record's own menu_verified entry already flags 16 items vegan, so a flat 'no' contradicts the record's own data. 'limited' rather than 'options' because only three or four are certain (the asazuke and pickle brines commonly carry dashi or soy and would need a staff check), and nothing on the menu is labelled vegan by the shop."
+ },
+ {
+  "id": "hiro_hiroshima_taishu_izakaya",
+  "city": "hiroshima",
+  "field": "menu_vegan_flag",
+  "quote": "data/hiroshima_menus.json item 「山芋の牡蠣醤油漬け」 carries vegan: \"vegan\", with note 'Oyster soy-sauce marinade contains wheat.'",
+  "url": "https://tomasu-nagarekawa.com/menu/",
+  "verdict": "unsupported",
+  "found": "「■スピード 山芋の牡蠣醤油漬け・・・450円」 — 牡蠣醤油 is oyster-extract soy sauce.",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 (plain fetch) of the official menu page",
+  "note": "ALARM (small but exactly the catalogued defect): a dish dressed in OYSTER soy sauce is flagged vegan in the menu file, and its own note only warns about the wheat. A vegan reader filtering this venue's menu is handed a shellfish dish. Clear the vegan flag on that item."
+ },
+ {
+  "id": "hiro_hiroshima_tsukemen_hiko_",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The dipping sauce is described as soy-based, and standard soy sauce contains wheat.",
+  "url": "https://motto.super-men.jp/store/401/",
+  "verdict": "supported",
+  "found": "「モチモチで歯切れの良い麺と、野菜と魚介がベースの後口スッキリな醤油ダレが特徴。」",
+  "correct_url": null,
+  "http": "200 (13,570 B, identical under plain and iPhone UA — small static page, no JS shell)",
+  "method": "1 (plain fetch)",
+  "note": "Verbatim: 醤油ダレ is the shop's stated tare, and no wheat-free soy is claimed (グルテン and 小麦 appear 0 times on the page and on the Tabelog listing). One staleness caveat for the human: this is a 2022 campaign page — its coupon expires 2022年2月15日 and its hours (11:00～翌3:00, 定休日 不定) no longer match Tabelog's current 11:00-13:30 / 18:30-04:30, which is what the record correctly carries."
+ },
+ {
+  "id": "hiro_hiroshima_tsukemen_hiko_",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The dipping broth is built on seafood (魚介) stock alongside vegetables, so it is not suitable for vegans/vegetarians.",
+  "url": "https://motto.super-men.jp/store/401/",
+  "verdict": "supported",
+  "found": "「野菜と魚介がベースの後口スッキリな醤油ダレが特徴。」 and, for the noodle-free option the record mentions, 「罪悪感ゼロを求める人には麺なしのリャンサイも用意。」",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 (plain fetch)",
+  "note": "Supported verbatim, including the リャンサイ caveat — the veg-only bowl still meets the same fish-based tare, so it is not a vegan escape hatch. One internal inconsistency to tidy, not a citation defect: this record's ramen.vegan.status is 'ask' while the top-level vegan_status is 'no'; the evidence supports 'no' and the ramen block should follow it. TRADING: current — Tabelog 34011059 reviews to 2026/08 and its hours match the record exactly."
  }
 ]

@@ -35,8 +35,8 @@
   "found": "The page is a bare 4travel venue listing for 花菱, 広島県廿日市市宮島町856, with 9 traveller reviews. It confirms the dishes — 「頂いた穴子めしと焼き牡蠣は普通に美味しかった」「かき釜飯」「あなごめしは国産の天然あなごを使用していて」 — but mentions no soy sauce, no tare, no ingredients, no allergens and no gluten anywhere.",
   "correct_url": null,
   "http": "403 on the live URL with plain curl, iPhone UA and desktop Chrome UA alike; 200 via Wayback (capture 2024-09-12)",
-  "method": "1 plain, 2 iPhone UA, 3 desktop UA (all 403), then Wayback",
-  "note": "Dishes confirmed; the wheat assertion is unsourced inference resting on a citation that carries zero ingredient content. Also stale — 4travel's newest review here is dated 2019, so it cannot evidence current practice either way — and the live URL 403s every user-agent, so a reader who clicks it gets nothing. Reword as an explicit assumption or re-cite."
+  "method": "1 plain, 2 iPhone UA, 3 desktop UA (all 403), then Wayback; 4 Yahoo Japan for trading status",
+  "note": "Dishes confirmed; the wheat assertion is unsourced inference resting on a citation with zero ingredient content, and the live URL 403s every user-agent so a reader who clicks it gets nothing. The claim IS evidenceable elsewhere and should be re-cited: MAFF's うちの郷土料理「あなご飯 広島県」 defines the dish as 「穴子を背開きにし、醤油ベースのタレを塗って焼き、ご飯の上に乗せた丼料理」, and third-party guides describe 花菱's own 名物 as 「特製のタレを用いた『あなごめし』」. Trading status is fine — Yahoo/Tabelog show a 2025-07 review and 10:30–15:00 hours — but 4travel's own newest review is 2019, so it is stale as well as silent."
  },
  {
   "id": "hiro_hanasansho_hatchobori_te",
@@ -179,5 +179,31 @@
   "http": "404 live, 200 via Wayback",
   "method": "1 plain fetch (404), then 3 Wayback; Tabelog 34003302 confirms the genre line つけ麺、ラーメン、焼肉",
   "note": "Fully supported and understated: katsuo dashi, chashu and boiled egg are verbatim, the ramen is also 豚骨, and the same room becomes a wagyu yakiniku restaurant every evening (Tabelog genre: つけ麺、ラーメン、焼肉). vegan 'no' is right. Fix the dead link as above."
+ },
+ {
+  "id": "hiro_hiroshima_akayaki_en_eki",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Okonomiyaki and teppan izakaya dishes here are finished with standard wheat-based okonomiyaki/soy sauces; no wheat-free sauce is documented.",
+  "url": "https://www.hiroshima-akayakien.com/menu.html",
+  "verdict": "supported",
+  "found": "「素材や技に自信があるため、ソースは薄塗りが基本です。そのまま召し上がるもよし、卓上のソースやマヨネーズでカスタマイズするもよし。」 Plus soy-based dressings across the à la carte list: 「鳥皮ぽん酢」「和牛ホルモン（塩・たれ）」「地だこポン酢」. No allergen statement and no wheat-free sauce anywhere on the page.",
+  "correct_url": null,
+  "http": "200 (iPhone UA, plain https)",
+  "method": "1 — plain fetch with iPhone UA of the cited menu page",
+  "note": "Supported, and the page holds two things the record should add. First a trap: 「米粉をブレンドした生地」 — rice flour is BLENDED into the okonomiyaki batter, not substituted, so a diner who sees 米粉 must not read it as gluten-free; and the noodles are 「おっこん用に開発された『磯野製麺』さんの生麺」, fresh wheat noodles boiled to order. Second, the tabletop 「卓上のソースやマヨネーズ」 are shared self-serve bottles, a contact vector on top of the sauce itself. Site is live and the venue is trading (17:30–22:00, closed Sundays). vegan 'no' is right — every food line is meat, fish, egg or dairy, and the few vegetable items (岩国れんこん焼, ポテトフライ) come off the same griddle and fryer."
+ },
+ {
+  "id": "hiro_hiroshima_fu_okonomiyaki_2",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The okonomiyaki is finished with Otafuku-style okonomiyaki sauce, which is wheat-based; combined with the wheat-flour batter and wheat noodles, the dishes are not suitable for gluten-free diners.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340121/34007431/",
+  "verdict": "supported",
+  "found": "Review (2026/08 visit): 「長い間、大福ソースを扱っていると思っていたのですがオタフクソースです」. Another: 「袋麺のそばを鉄板に乗せてオタフクソースを絡めて本体にドッキングし1回転」. A third: 「オタフクソースを垂らしかけたら…」. Noodle supplier named: 「麺はうどんもそばも山本食品です」. 関連のキーワード include 「オタフクソース」 and 「小麦」.",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA (Restaurant JSON-LD present)",
+  "method": "1 — mobile-host Tabelog fetch with iPhone UA; plus a Yahoo Japan check of Otafuku's own allergen FAQ",
+  "note": "STRONGER THAN WRITTEN — drop the hedge. Three separate reviewers name Otafuku sauce by brand, so it is not 'Otafuku-style', it is Otafuku, and Otafuku's own FAQ states 「『お好みソース（本格）』に含まれるアレルギー物質の『小麦』は、原材料の醤油に由来しています」 (contact.otafuku.co.jp/hc/ja/articles/5467333678607, updated 2024-07-10). Cite that alongside the Tabelog page and the claim stops being inference. Also add: the sauce is tossed onto the noodles ON the griddle before assembly, so it coats the shared iron surface, and the finishing shakers 「胡椒・七味・ガーリック・青のり」 are communal. Trading confirmed, newest review 2026/08. vegan 'no' correct — pork, egg, ホルモン, ステーキ and ソーセージ all share the one griddle."
  }
 ]

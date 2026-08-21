@@ -115,5 +115,70 @@
   "http": "200 plain curl for oomin77.com; 200 iPhone UA for tabelog (desktop UA not needed); Ecosia 200, Yahoo Japan 200, Brave 429",
   "method": "plain fetch of the cited post, then iPhone-UA fetch of tabelog and its /dtlrvwlst/ — the ひき肉 sentence sits in the page's Review JSON-LD, so search the raw HTML, not the rendered text",
   "note": "Claim is true, citation is wrong: swap to the tabelog listing, which carries the minced-meat sentence in two 2025 reviews. Trading status confirmed current on the way: reviews dated 2025/02 and 2025/10, no 閉店 or 掲載保留 marker."
+ },
+ {
+  "id": "hiro_rokumeikan",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The restaurant specializes in sukiyaki, which is cooked in a warishita sauce based on wheat-containing soy sauce; no gluten-free version is mentioned.",
+  "url": "https://www.tablecheck.com/ja/rokumeikan-miyajima",
+  "verdict": "supported",
+  "found": "「宮島のすき焼き専門店「ろくめいかん」。…広島牛をはじめ、野菜や卵、調味料まで、できる限り地元・広島の食材を使用。素材本来の味を大切にしながら、一組一組丁寧にすき焼きをご提供しています。」 Genre line: 「すき焼き , 日本料理」. All four listed sets are 広島牛すき焼き. No allergen or gluten-free wording anywhere on the page.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "Sukiyaki specialisation and the absence of a gluten-free version are both on the page. The words 割下 and 醤油 are not — the page says only 調味料 — so the warishita composition is dish-category knowledge, not a site statement; word it that way. Worth adding what the page does list: every set includes 赤出汁 and 広島のたまご alongside the beef."
+ },
+ {
+  "id": "hiro_rokumeikan",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Menu sets are centered on Hiroshima beef and include local egg and dashi-based broth, with no documented vegan or vegetarian alternative.",
+  "url": "https://www.tablecheck.com/ja/rokumeikan-miyajima",
+  "verdict": "supported",
+  "found": "All four published sets read 「広島牛すき焼き／広島牛（80g〜200g）／厳選野菜、焼き豆腐／広島のたまご／副菜／ご飯、赤出汁」 (すき焼き昼御膳 梅・竹・松 and すき焼き夜御膳 梅, ¥3,300–¥7,800). No meat-free set is offered.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "Verbatim support: beef, egg and 赤出汁 in every single set, and the raw egg is the sukiyaki dip so it is not optional. Trading status current — the page takes reservations for August 2026."
+ },
+ {
+  "id": "hiro_romanza",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Sashimi, grilled and simmered seafood dishes at this izakaya are served with standard Japanese soy sauce, which is brewed with wheat.",
+  "url": "https://romanza.owst.jp",
+  "verdict": "supported",
+  "found": "On the site's own food menu (https://romanza.owst.jp/foods): 「本日の海鮮お刺身をすり胡麻と醤油で味付け だし茶をかけて」, 「畑のホウレン草と海のウニがバター醤油で絶妙のマッチング！当店人気Ｎo1広島ご当地料理」 (うにほうれん), 「コロコロタコを茎ワサビで和えてカキ醤油で味付けしました。」, plus 蒲焼のタレ on 【穴子の一本天ぷら】 and 甘辛い焼き鳥のたれ. The cited root page carries the sashimi platter and 塩だれ but never the word 醤油.",
+  "correct_url": null,
+  "http": "200 plain curl for the root; /foods, /courses, /lunches also 200 (note the paths are plural — /food/ and /course/ return an empty shell)",
+  "method": "plain fetch of the cited root, then its /foods menu page found from the root's own hrefs",
+  "note": "Claim is true and the operator's own words prove it, but point the citation at https://romanza.owst.jp/foods where the 醤油 sentences actually live. Also add the bigger gluten hazards the same page lists and the record does not: 【太刀魚の天ぷら】【穴子の一本天ぷら】【小いわし天ぷら】【牛ホルモンの天ぷら】, 【カキフライ】 with tartare, がんす (breaded surimi fry) and 【山芋ろまん焼き】, an okonomiyaki — batter and breading, not just seasoning."
+ },
+ {
+  "id": "hiro_ruhe_brasil",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Bread is baked on-site and toast, sandwiches, napolitan and gratin are core menu items, so wheat is pervasive in the kitchen; no gluten-free handling is documented.",
+  "url": "https://tabetainjya.com/archives/nakaku1/post_4704/",
+  "verdict": "supported",
+  "found": "「店の隣にはパンを焼くキッチンが併設されているそうで、焼きあがったパンたちが奥から運ばれてきては店頭に並べられます。」 and 「モーニングのメニューはこの5種類ですが、このほか、ナポリタンやグラタン、ミックスピザなども朝から注文することができます。」 The five morning sets are 「Aモーニング（パン・ゆで卵・サラダ…）／Bモーニング（パン・目玉焼き…）／サンドモーニング（サンドイッチ…）／カレーモーニング（カレーライス…）／バタートーストモーニング（トースト…）」.",
+  "correct_url": null,
+  "http": "200 plain curl; tabelog 34006008 answered 200 with an iPhone UA",
+  "method": "plain fetch of the cited article, then iPhone-UA fetch of the record's tabelog page for a trading check",
+  "note": "Holds, and the article is actually stronger than the claim: the bakery is an attached kitchen (併設) with finished bread carried through the seating area, i.e. airborne flour, not just wheat dishes. Every one of the five morning sets contains bread or rice-plus-roux. Article is dated 公開2016/07/31 更新2022/04/14, so re-verify hours before relying on them; the venue itself is trading (tabelog reviews dated 2025/07 and 2026/06, no 閉店 badge)."
+ },
+ {
+  "id": "hiro_ruhe_brasil",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is built on eggs, dairy and meat (egg morning sets, gratin, napolitan, curry); no separate vegan preparation is documented.",
+  "url": "https://tabetainjya.com/archives/nakaku1/post_4704/",
+  "verdict": "supported",
+  "found": "「Aモーニング（パン・ゆで卵・サラダ・コーヒーor紅茶）」「Bモーニング（パン・目玉焼き・サラダ・コーヒーor紅茶）」「カレーモーニング（カレーライス・コーヒーor紅茶）」 plus 「ナポリタンやグラタン、ミックスピザなども朝から注文することができます」 and 「バタートーストモーニング」.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited article",
+  "note": "Eggs, butter, gratin and pizza cheese are all on the page as claimed. One precision point: 'meat' is inferred rather than stated — the article names curry, napolitan and mixed pizza but never their fillings. The egg and dairy evidence alone carries vegan: no, so drop the meat assertion or attribute it as typical of a Showa kissaten."
  }
 ]

@@ -115,5 +115,44 @@
   "http": "200 (plain curl) on both the cited page and /steak/concept",
   "method": "1 plain fetch of the cited page (no L字/鉄板 string on it at all), then link-scrape to /steak/concept where the sentence lives",
   "note": "The claim is true and unusually well documented — but not on the URL cited. The 'single L-shaped teppan' sentence is on /steak/concept, which also closes the loop the claim needs: 「つなぎ目一つない」 (one seamless plate, no separated zones) and 「この特別な鉄板ではお好み焼きを除くすべての広島名物を…ご提供します」 (everything but okonomiyaki is cooked on it). Recite to /steak/concept. Supporting menu evidence at /steak/menu, where 鉄板焼 お肉 (広島牛ヒレ/サーロイン/赤身/コウネ/ハンバーグ) and 鉄板焼 海鮮 (伊勢海老/アワビ/ホタテ/車海老/穴子/タコ/カキ) are two headings on one griddle list, and the nominally plant items — 野菜の盛り合わせ, きのこの盛り合わせ, 湯来名物 子持ちこんにゃくステーキ — are on that same 鉄板焼 list. vegan: no is correct. Trading status OK: /steak/shop gives 中区大手町1丁目7-23 ラフォーレビル2階 (matches the record's pin) and the top page's news feed carries dated items through 2026/08/21."
+ },
+ {
+  "id": "hiro_susumu",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Cooked on a shared teppan griddle alongside wheat batter, wheat-based sauce, and noodles; high gluten cross-contact is inherent to the cuisine.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340114/34016446/",
+  "verdict": "supported",
+  "found": "ジャンル: お好み焼き ／ 口コミ「進（すすむ）一番人気は、『スペシャル』！ 豚肉・玉子・ネギ・キャベツに加え、カキ・エビ・イカ、そしてソバor…」／「この『お好み共和国 ひろしま村』さんはお好みソースをオタフクソースに統一しています。2つ隣の『お好み村』がミツワソースで統一されていることを考えると意味深です。」／関連キーワード: オタフクソース、太麺、蒸し焼き",
+  "correct_url": null,
+  "http": "200 (iPhone UA on s.tabelog.com; desktop tabelog.com not attempted after the mobile host answered, 518 KB)",
+  "method": "2 iPhone UA on s.tabelog.com — the route the brief flags as reliable for Tabelog DETAIL pages; the page carried the full 店舗情報 block and FAQ",
+  "note": "Wheat sauce and wheat noodles are both concretely evidenced, and better than the record states: a reviewer records that the whole お好み共和国 ひろしま村 building standardises on オタフクソース (a wheat-shoyu-based okonomiyaki sauce), which is a named brand rather than a generic assumption, and the noodles show as ソバ/太麺 in both a review and the keyword list. 'Shared teppan griddle' is not literally worded anywhere on the page for 進 itself — it is genre-implied only. SEPARATE DEFECT, not about this claim: the record's neighborhood and notes place Susumu 'inside Okonomimura, the iconic multi-floor okonomiyaki building', but the address on this page is 新天地5-23 お好み共和国 ひろしま村 2F and the same reviewer explicitly distinguishes the two buildings — お好み村 is 「2つ隣」, two doors away. Fix the venue identity."
+ },
+ {
+  "id": "hiro_susumu",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Shared griddle used for pork, egg, and seafood; not suitable for strict vegans.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340114/34016446/",
+  "verdict": "supported",
+  "found": "「進（すすむ）一番人気は、『スペシャル』！ 豚肉・玉子・ネギ・キャベツに加え、カキ・エビ・イカ、そしてソバor...」／「豪華にスペシャルそば1800円をいただきました。イカ、エビ、牡蠣も入っていて美味しかったです」",
+  "correct_url": null,
+  "http": "200 (iPhone UA on s.tabelog.com)",
+  "method": "2 iPhone UA on s.tabelog.com",
+  "note": "Pork, egg and three kinds of seafood are named on the page by two independent reviewers, and no vegan or vegetable-only item appears anywhere on it. vegan: no is correct. Trading status OK: no 閉店 banner, hours 月・水〜日 11:00-23:00 with 火 定休日 (matching the record's hours_raw, and resolving its 'one directory listing notes Wednesday' hedge in favour of Tuesday), and the most recent review is 2026/07."
+ },
+ {
+  "id": "hiro_taishu_niku_kappo_niku_j",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Grilled and simmered meat dishes use standard Japanese soy sauce, which is brewed with wheat, and the signature demi-glace stew is built on a wheat-flour roux.",
+  "url": "https://hitosara.com/0031119126/",
+  "verdict": "wrong_source",
+  "found": "Tabelog 34013197: 「一から仕込んだデミグラスソースで、和牛ホホ肉をじっくりと煮込んだ「肉煮込み(バゲット付)」はおすすめ。…バゲットにたっぷりソースをかけて食べるのも◎そのほか前菜から、がっつり食べられる「肉煮込みハンバーグ」まで」／menu line 「合鴨の赤ワイン醤油煮」／official site: 「肉煮込み、本日の前菜、ゆかりのとり天などこだわりの創作料理の数々！」",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340101/34013197/",
+  "http": "hitosara 200 (plain curl) but content-empty; s.tabelog.com/hiroshima/A3401/A340101/34013197/ 200 (iPhone UA); nikujiru.owst.jp 200 (plain curl); www.meetmill.jp and meetmill.jp both NXDOMAIN (curl 6, and 8.8.8.8 returns Non-existent domain); web.archive.org returned HTTP 429 twice",
+  "method": "1 plain fetch of the cited page, then Ecosia (https://www.ecosia.org/search?q=肉じるしるし+広島+流川) which answered first try and surfaced both the real official site and the Tabelog id; 2 iPhone UA for the Tabelog detail page",
+  "note": "The cited hitosara page is an unclaimed stub — name, phone, address, hours and nothing else; it has no menu, no dish text and an 'お店の写真を募集しています' placeholder, so it cannot evidence a seasoning claim of any kind. This is the 'citation that cannot evidence anything venue-specific' pattern. The claim is nonetheless TRUE and well evidenced at the Tabelog detail page: the demi-glace stew is described as made from scratch, and 醤油 appears literally on the menu in 合鴨の赤ワイン醤油煮. Recite to Tabelog. Two additions for gf_detail: the signature 肉煮込み is served バゲット付 (a baguette on the plate, straight wheat, and the sauce is meant to be poured over it), and the course menus include ゆかりのとり天, battered fried chicken. The 'wheat-flour roux' wording is still an inference — the sources say デミグラスソース from scratch, not roux. SEPARATE DEFECT: the record's website field, https://www.meetmill.jp/, is a dead domain (NXDOMAIN, not a 404) — replace it with the live official site https://nikujiru.owst.jp/. The venue itself is trading: Tabelog shows no 閉店 banner, address 中区流川町8-27 Wakeビル1F matching the record's pin, and the owst.jp official site is serving current course pricing."
  }
 ]
