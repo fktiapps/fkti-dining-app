@@ -1,0 +1,161 @@
+[
+ {
+  "id": "tokyo3__389",
+  "status": "not_found",
+  "lat": 35.647,
+  "lng": 139.71,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 五ノ神水産 is a real Tokyo ramen brand but it has no Ebisu branch; nothing exists at the address this record implies",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 恵比寿, 2 min from Ebisu Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed for this record — the branch could not be shown to exist. (For the real 五ノ神水産 in Kanda: wheat noodles in wheat-soy tare, so 'no' regardless.)",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the branch could not be shown to exist. The parent brand's bowls are fish- and pork-stock based.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established for an Ebisu shop, because no Ebisu shop exists. 五ノ神水産 is one brand of 株式会社五ノ神製作所, whose own shop directory (gonokamiseisakusho.com/shop.html) lists exactly five domestic outlets — らーめんいつ樹 本店, つけ麺 五ノ神製作所 (Shinjuku-sanchōme), 鮮魚らーめん 五ノ神水産 (Kanda-Tamachi, Chiyoda-ku), らーめん 五ノ神精肉店 (Higashi-Akiru), つけ麺 五ノ神製作所 名古屋驛麺通り店 — plus Taipei and Taichung. Ebisu is not among them, and never appears in the company's own pages.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four legs run, all answered. (1) Tabelog nationwide keyword search for 五ノ神水産 (desktop UA, rstLst?vs=1&sk=/sw=) returned HTTP 200 and exactly one shop of that name in Japan — 五ノ神水産, 千代田区神田多町2-9-6, Tabelog 13163444. (2) Gnavi free-word search for 五ノ神 returned HTTP 200 and three shops of the group, all listed above; none in Shibuya-ku. (3) The operator's own site gonokamiseisakusho.com/shop.html returned HTTP 200 and lists the full outlet roster — no Ebisu. (4) Yahoo Japan searches for 「五ノ神水産 恵比寿店」 and 「五ノ神水産 恵比寿店 閉店」 both returned HTTP 200 and every hit pointed at the Kanda shop (official site, Tabelog 13163444, the shop's X account @g_suisan). No page anywhere refers to an Ebisu location, open or closed.",
+   "confidence": "low",
+   "sources": [
+    "https://gonokamiseisakusho.com/shop.html",
+    "https://gonokamiseisakusho.com/kanda.html",
+    "https://tabelog.com/tokyo/A1310/A131002/13163444/",
+    "https://r.gnavi.co.jp/er7dvbtp0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No such shop, so nothing can be said about the door. If a traveller wants this brand, the actual shop is 鮮魚らーめん 五ノ神水産 at 千代田区神田多町2-9-6, about 5.5 km north-east of the pin — and that shop is already in this dataset as record tokyo3__143 (shard 20). Recommend deleting this record rather than moving it, to avoid a duplicate pin."
+  },
+  "sources": [
+   "https://gonokamiseisakusho.com/shop.html",
+   "https://gonokamiseisakusho.com/kanda.html",
+   "https://tabelog.com/tokyo/A1310/A131002/13163444/",
+   "https://r.gnavi.co.jp/er7dvbtp0000/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「五ノ神水産」 (HTTP 200) — one hit in all Japan, the Kanda shop 13163444; Gnavi free-word 「五ノ神」 (HTTP 200, total 45 rows) — the group's three Tokyo-area shops, all outside Shibuya-ku; the operator's own outlet list gonokamiseisakusho.com/shop.html (HTTP 200) — five domestic shops, no Ebisu; Yahoo Japan 「五ノ神水産 恵比寿店」 and 「…恵比寿店 閉店」 (HTTP 200 both) — every result about the Kanda shop, nothing about an Ebisu branch open or closed. There is no 五ノ神水産 恵比寿店. DUPLICATE RISK FOR A HUMAN: the real 五ノ神水産 (神田多町2-9-6) is already enriched in this tranche as tokyo3__143 in shard 20, so this record should be deleted, not re-pointed. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__390",
+  "status": "not_found",
+  "lat": 35.647,
+  "lng": 139.71,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no Okinawan or regional-cuisine izakaya called おとーり could be found in Ebisu",
+  "cuisine_type": "izakaya",
+  "neighborhood": "Unverified. The light record says 恵比寿, Ebisu Station west exit.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified in Ebisu.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified in Ebisu.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 「おとーり」 is the Miyako-jima round-of-awamori drinking custom, so it is a natural name for an Okinawan izakaya, but exactly one restaurant in Japan carries it: オトーリ at 東京都中野区本町5-4-7 亀太川ビル1F, 158 m from Nakano-shinbashi station on the Marunouchi branch line — an Okinawan izakaya opened recently, 11:00–14:00 and 18:00–24:00, ¥2,000–¥2,999, tel 03-5340-7377. That is 8 km north-west of Ebisu and cannot be the shop this record describes.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Three legs run, all answered. (1) Tabelog nationwide keyword search 「おとーり」 (HTTP 200) returned オトーリ 13304223 (Nakano-ku) at the top and then unrelated おとなり/おとり shops; nothing in Shibuya-ku. (2) Gnavi free-word 「おとーり」 (HTTP 200) returned total:1 — the same Nakano-shinbashi 沖縄料理 shop, Gnavi id 8g1rre9g0000; the narrower Gnavi query 「おとーり 恵比寿」 returned total:0. (3) Yahoo Japan 「おとーり 恵比寿 沖縄料理」 (HTTP 200) returned the same Nakano shop across Tabelog, Hot Pepper (strJ003917045), Retty, Uber Eats and Instagram @otoor_i; the Hot Pepper page was opened directly and gives 中野区 / 中野新橋駅徒歩2分. A later Yahoo re-check of 「恵比寿 沖縄料理 おとーり 居酒屋」 came back HTTP 429 (rate limit, not a negative), but the first three legs are consistent and sufficient.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131903/13304223/",
+    "https://www.hotpepper.jp/strJ003917045/",
+    "https://r.gnavi.co.jp/8g1rre9g0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. The only same-named shop in Japan is in Nakano, not Ebisu. Recommend this record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131903/13304223/",
+   "https://www.hotpepper.jp/strJ003917045/",
+   "https://r.gnavi.co.jp/8g1rre9g0000/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「おとーり」 (HTTP 200) — one exact-name hit in Japan, オトーリ 13304223 at 中野区本町5-4-7, plus near-miss おとなり/おとり shops; Gnavi free-word 「おとーり」 (HTTP 200) — total:1, the same Nakano-shinbashi Okinawan izakaya, and 「おとーり 恵比寿」 (HTTP 200) — total:0; Yahoo Japan 「おとーり 恵比寿 沖縄料理」 (HTTP 200) — all hits resolve to that same Nakano shop, and its Hot Pepper page, opened directly, confirms 中野区 / 中野新橋駅徒歩2分. One later Yahoo re-check returned HTTP 429 (engine declining, not a negative) but did not change the picture. Nothing named おとーり trades in Ebisu. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__392",
+  "status": "not_found",
+  "lat": 35.6485,
+  "lng": 139.703,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant named フロソー could be found anywhere in Japan, let alone in Daikanyama",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 代官山, near Daikanyama Station (Tōkyū Tōyoko line).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The string フロソー returns no restaurant in either major Japanese directory, and no near-neighbour in Daikanyama suggests itself: the katakana shops the engines offer instead are falò (an Italian grill), FLOW, FLO and フロー, none of them ramen and none of them a plausible reading of this record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four legs run, all answered. (1) Tabelog nationwide keyword search 「フロソー」 (HTTP 200) — no shop of that name; the fuzzy fallbacks were FLO (Ikebukuro), FLOW (Kobe), 麺屋FLOW 長原店, フロー (Osaka), FUSOU. (2) Gnavi free-word 「フロソー」 (HTTP 200) — total:0. (3) Yahoo Japan 「フロソー 代官山 ラーメン」 (HTTP 200) — no page containing the name; hits were generic Tokyo ramen round-ups (AFURI, MENSHO, 蘭州拉麺). (4) DuckDuckGo html endpoint 「フロソー 代官山」 (HTTP 200) — ten results, all Daikanyama businesses with unrelated names (falò, SOLSO HOME, リストランテaso, sowi).",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/rstLst/?vs=1&sk=%E3%83%95%E3%83%AD%E3%82%BD%E3%83%BC",
+    "https://r.gnavi.co.jp/area/jp/rs/?fw=%E3%83%95%E3%83%AD%E3%82%BD%E3%83%BC"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. No same-named or near-named ramen shop exists in Daikanyama. Recommend this record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/rstLst/?vs=1&sk=%E3%83%95%E3%83%AD%E3%82%BD%E3%83%BC",
+   "https://r.gnavi.co.jp/area/jp/rs/?fw=%E3%83%95%E3%83%AD%E3%82%BD%E3%83%BC"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「フロソー」 (HTTP 200) — zero exact matches, fuzzy fallbacks only (FLO, FLOW, 麺屋FLOW 長原店, フロー, FUSOU), none in Shibuya-ku; Gnavi free-word 「フロソー」 (HTTP 200) — total:0; Yahoo Japan 「フロソー 代官山 ラーメン」 (HTTP 200) — no page carries the name, only generic Tokyo ramen listicles; DuckDuckGo 「フロソー 代官山」 (HTTP 200) — ten Daikanyama results, none matching. No candidate garbling suggested itself either. Coordinates unchanged, loc_precise:false."
+ }
+]

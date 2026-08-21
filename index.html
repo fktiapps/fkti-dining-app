@@ -705,7 +705,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v173';
+const APP_BUILD='dcd-v174';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -724,6 +724,20 @@ const OWN_ALL=true;
 let MANIFEST=null;
 function cityUnlocked(c){ return !!c && (OWN_ALL || c.free===true); }
 function manifestCity(id){ return MANIFEST && MANIFEST.cities.find(c=>c.id===id); }
+// The tier IS the label. Storing them separately let them drift: 593 vegan and 334 GF
+// records shipped with a stored label that disagreed with their own tier, because
+// every pass that moved a tier had to remember to move the label too, and not all of
+// them did. A tonkotsu ramen shop was displaying as "Fully vegan".
+//
+// Deriving it here makes that class of bug impossible in the app regardless of what
+// the data says. sync-diet-labels.mjs repairs the stored fields for anything else
+// that reads them, and lint errors if they drift again.
+const GF_LABEL = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
+                   options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
+const VEGAN_LABEL = { full:'Fully vegan', options:'Some vegan options',
+                      limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
+function gfLabel(p){ return GF_LABEL[p.gf_confidence] || p.gf_label || 'GF — ask'; }
+function veganLabel(p){ return VEGAN_LABEL[p.vegan_status] || p.vegan_label || 'Vegan — ask'; }
 function CITY_LABEL(){ const c=manifestCity(state.active); return c?c.name:'the city centre'; }
 function cityAt(lat,lng){
  if(!MANIFEST) return null;
@@ -1203,7 +1217,7 @@ function learnSpeak(){speakJa(LEARN[_lc].cards[_lorder[_li]].ja);}
 // ---------- render ----------
 function badgeGF(p){
  const cls=['dedicated','high'].includes(p.gf_confidence)?'b-safe':(p.gf_confidence==='options'?'b-caution':'b-unknown');
- return `<span class="badge dietui ${cls}">GF · ${p.gf_label.split('·')[0].trim().replace(' staff','')}</span>`;
+ return `<span class="badge dietui ${cls}">GF · ${gfLabel(p).split('·')[0].trim().replace(' staff','')}</span>`;
 }
 // Temporarily-shut shops keep their listing but must never read "Open now" off a
 // stale hours block — the hours are still published, the door is still locked.
@@ -1227,7 +1241,7 @@ function render(){
     <div class="meta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${openTag(p)}</div>
     ${SHUT_LINE(p)}
     ${p.outside_city?`<div class="outside">🚃 ${p.outside_city.km} km from ${CITY_LABEL()}${p.outside_city.municipality?' · '+escHtml(p.outside_city.municipality):''} — a separate trip</div>`:''}
-    <div class="badges">${badgeGF(p)}<span class="badge b-vegan dietui">${p.vegan_label}</span>
+    <div class="badges">${badgeGF(p)}<span class="badge b-vegan dietui">${veganLabel(p)}</span>
      ${p.flags.reservation?'<span class="badge b-unknown">Reservation</span>':''}
      ${p.flags.cash_only?'<span class="badge b-unknown">Cash only</span>':''}</div>
    </div>
@@ -1538,9 +1552,9 @@ function _renderDetail(p){
   <div class="dstatus">${openTag(p)}</div>
   ${flags.length?`<div class="flagchips">${flags.map(f=>`<span class="flagchip">${f}</span>`).join('')}</div>`:''}
   <div class="panel dietui"><h3>Gluten-free</h3>
-   <div class="gfbig"><span class="dot" style="width:11px;height:11px;border-radius:50%;background:${['dedicated','high'].includes(p.gf_confidence)?'var(--safe)':p.gf_confidence==='options'?'var(--caution)':'var(--unknown)'}"></span>${p.gf_label}</div>
+   <div class="gfbig"><span class="dot" style="width:11px;height:11px;border-radius:50%;background:${['dedicated','high'].includes(p.gf_confidence)?'var(--safe)':p.gf_confidence==='options'?'var(--caution)':'var(--unknown)'}"></span>${gfLabel(p)}</div>
    ${p.gf_detail?`<div class="det">${p.gf_detail}</div>`:''}</div>
-  <div class="panel dietui"><h3>Vegan</h3><div class="gfbig" style="color:#00796B">${p.vegan_label}</div>${p.vegan_detail?`<div class="det">${p.vegan_detail}</div>`:''}</div>
+  <div class="panel dietui"><h3>Vegan</h3><div class="gfbig" style="color:#00796B">${veganLabel(p)}</div>${p.vegan_detail?`<div class="det">${p.vegan_detail}</div>`:''}</div>
   <div class="panel"><h3>Hours <span style="color:var(--muted);font-weight:400">(Japan time)</span></h3>${hoursHtml}</div>
   <div class="panel"><h3>What makes this place special?</h3><div class="note">${p.highlight||p.notes}</div></div>
   ${p.ramen?renderRamenPanel(p.ramen):''}

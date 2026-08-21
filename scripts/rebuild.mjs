@@ -54,6 +54,9 @@ const STEPS = [
   ['flag-borrowed-evidence.mjs',      "flag records citing another shop's evidence", ['--apply']],
   ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],
   ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],
+  // Last of the data passes: every tier change above must be reflected in its label.
+  ['sync-diet-labels.mjs',            'make stored diet labels agree with their tier', ['--apply']],
+  ['flag-self-admitted-doubt.mjs',    'hide records whose own text says they were never verified', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-underrated-queue.mjs',        'collect upgrade recommendations for the human gate'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],

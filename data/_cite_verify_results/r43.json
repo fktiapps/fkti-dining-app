@@ -1,0 +1,193 @@
+[
+ {
+  "id": "tokyo_tenkane",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "No product-level confirmation was found on whether the tentsuyu dipping sauce uses standard (wheat-containing) soy sauce or a gluten-free alternative; as a traditional Edomae tempura restaurant it should be assumed to use standard soy sauce unless confirmed otherwise by phone.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「味の要である天つゆ。鹿児島県枕崎産本節を都度削りながら引いた風味豊かなかつお出汁に、二代目の頃より60年以上絶やすことなく継ぎ足してきた秘伝のもとつゆを合わせております。」 — the official こだわり section describes the tentsuyu in detail (katsuo dashi + a 60-year continuously-replenished secret motosuyu) and names no soy sauce type and no wheat-free option anywhere on the site.",
+  "correct_url": "https://www.tenkane.tokyo/",
+  "http": "200 (plain fetch, desktop Chrome UA)",
+  "method": "1 plain fetch of the official site (uncited claim — went and found the source)",
+  "note": "UNCITED but evidenceable. Attach https://www.tenkane.tokyo/ (こだわり → 天つゆ) as the source: the restaurant publishes a paragraph on exactly this sauce, says only katsuo dashi + inherited motosuyu, and offers no wheat-free variant — which is what the claim asserts. Secondary point for the record text: tempura batter here is wheat flour by definition (「黄金色の薄衣」), so gf 'no' is right regardless of the sauce."
+ },
+ {
+  "id": "tokyo_tofu_ryori_kichiza_keio_",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "No source explicitly states whether wheat-free (tamari-style) soy sauce is available; traditional kaiseki restaurants of this type typically use standard wheat-containing shoyu unless otherwise noted.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Official menu pages carry, verbatim at the foot of every one: 「【アレルギー食材のコンタミネーションについて】※当店では、同一の調理器具・洗浄機を使用しておりますので、微量でも反応してしまう可能性があるお客様は、係の者にお申し付けください。」 No tamari or wheat-free shoyu appears anywhere; the sets listed are 海老と茄子の天ぷら / 天ぷら盛り合わせ / 鱧の天ぷら, 冷やしうどん, 海老天丼（5本）, ゆば焼売, すき焼き, 国産うな重.",
+  "correct_url": "https://kioicho-kichiza.com/menu/menu/",
+  "http": "200 (plain fetch; note http://kioicho-kichiza.com/shinjuku/ in the record 301s to the site root)",
+  "method": "1 plain fetch of the official site + 3 fetches of its /menu/ sub-pages (uncited claim — went and found the source)",
+  "note": "UNCITED but evidenceable, and the claim UNDER-states the risk. Attach https://kioicho-kichiza.com/menu/menu/ : it is silent on tamari as the claim says, but it also carries the operator's OWN admission of shared cooking utensils and shared dishwashers, and the menu is wheat-heavy (udon, three tempura courses, ebi-tendon, yuba shumai, sukiyaki warishita, unagi tare). Rewrite the detail to quote the コンタミネーション notice rather than inferring from 'restaurants of this type'."
+ },
+ {
+  "id": "tokyo_tofu_ryori_kichiza_keio_",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Core ingredient (Nikko tofu/yuba) is naturally gluten-free and plant-based, giving a strong base to work from if staff confirm sauce and dashi ingredients.",
+  "url": "https://www.keionet.com/info/shinjuku/gourmet/030028.html",
+  "verdict": "supported",
+  "found": "「「吉座」の職人が旬の素材を心を込めて、お客様にご提供いたします。日光の名水にこだわった日光豆冨が楽しめます。」 and the listed 会席 opens 「・日光豆冨・くみ上げゆば・豆冨三種前菜…」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch",
+  "note": "Supported as far as it goes — the Keio page does put Nikko tofu/yuba at the centre. Caveat worth adding to the record: the very same 会席 on that page continues 「・湯葉の包み揚げ・牛肉の朴葉焼き」, i.e. a deep-fried yuba parcel and beef, so the 'strong base' is surrounded by fryer and animal items on the house's own flagship set."
+ },
+ {
+  "id": "tokyo_tofu_ryori_kichiza_keio_",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "repairable",
+  "note": "One uncited claim, now evidenceable at https://kioicho-kichiza.com/menu/menu/ ; one cited claim supported."
+ },
+ {
+  "id": "tokyo_tenkane",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "repairable",
+  "note": "Single uncited claim, evidenceable at the official site's 天つゆ paragraph."
+ },
+ {
+  "id": "tokyo_tofu_ryori_kichiza_keio_",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://kioicho-kichiza.com/menu/menu/",
+   "https://kioicho-kichiza.com/menu/season/",
+   "https://kioicho-kichiza.com/menu/kichiza_osusume/"
+  ],
+  "why": "The operator's own menu pages state 「当店では、同一の調理器具・洗浄機を使用しております」 — shared cooking equipment and shared washing, admitted in writing — over a menu whose set courses include 冷やしうどん, 天ぷら盛り合わせ, 海老と茄子の天ぷら, 鱧の天ぷら, 海老天丼, ゆば焼売, すき焼き and 鰻重. The record's gf_detail currently calls the shared fryer 'unconfirmed'; it is confirmed, by the restaurant. 'ask' invites a celiac to negotiate in a kitchen that has already said it cannot separate."
+ },
+ {
+  "id": "tokyo_tokyo_dominica",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "No dedicated gluten-free fryer or prep line is confirmed; fried toppings are likely cooked in shared equipment.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Official menu: 「京鴨ももとささみフライ … レアな揚がり具合のささみフライはトッピングでも大人気です！」, 「野菜 … 女性に人気の素揚げしたお野菜をたっぷり堪能できます」, plus ハンバーグ / チーズハンバーグ / つくね. A grep of the whole official site (top, /menu/, /about/) returns ZERO occurrences of グルテン, アレル, 小麦, ヴィーガン or ベジタリアン.",
+  "correct_url": "https://yellowspice.jp/menu/",
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch each of the site root, /menu/ and /about/ (uncited claim — went and found the source)",
+  "note": "UNCITED but evidenceable. Attach https://yellowspice.jp/menu/ : breaded duck-tenderloin fry is a headline topping and vegetables are 素揚げ, so a shared fryer is all but explicit, and the operator publishes no allergen information of any kind. Also worth flagging in gf_detail: ハンバーグ and つくね are conventional wheat-binder items sharing the same soup."
+ },
+ {
+  "id": "tokyo_tokyo_dominica",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "The restaurant describes its soup as built on dozens of spices plus a \"wa-fu dashi\" (Japanese-style stock); Japanese-style dashi is conventionally made with bonito flakes (katsuobushi) and/or kelp, and the restaurant does not state that a fish-free or plant-based stock option exists.",
+  "url": "https://yellowspice.jp/about/",
+  "verdict": "wrong_source",
+  "found": "「数十種類のスパイスと和風だしを使用したスープをベースに、どなたでも食べ易く、飽きのこない、でもひと口で感動と驚きを与えるスープカレーとなっております。」 — this sentence is on the site root and on /menu/, NOT on /about/.",
+  "correct_url": "https://yellowspice.jp/menu/",
+  "http": "200 (plain fetch) for both the cited page and the correct one",
+  "method": "1 plain fetch of the cited page, then 2 more of the root and /menu/ to locate the string",
+  "note": "CITATION TO THE WRONG PAGE. /about/ is the 会社概要 corporate-profile page — company name, address, capital, three business lines — and contains no description of the soup at all. The claim is true; repoint it to https://yellowspice.jp/menu/ . Bonus non-vegan fact that /about/ DOES carry and the record omits: 「事業内容２．京鴨の卸業・鴨料理の店舗運営」, i.e. the parent company is a Kyoto-duck wholesaler and every named soup curry on the menu is duck, chicken, pork, beef, cheese, oyster or natto."
+ },
+ {
+  "id": "tokyo_tokyo_dominica",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "repairable",
+  "note": "Both claims are true; one is uncited and one points at the corporate-profile page instead of the menu page. Both fixed by https://yellowspice.jp/menu/ ."
+ },
+ {
+  "id": "tokyo_tori_yoshi",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "The kitchen fries items such as cartilage karaage and cooks all yakitori on a shared charcoal grill; no separate gluten-free preparation area, fryer, or grill section is mentioned anywhere.",
+  "url": "https://www.hotpepper.jp/strJ000032378/catchword/",
+  "verdict": "wrong_source",
+  "found": "On https://www.hotpepper.jp/strJ000032378/food/ : 「軟骨の唐揚げ」, 「鶏の唐揚げ」, 「鶏のから揚げハーフ」 as separate menu lines, above 「浅草の水炊きと炭火焼きの店」 and 「炭火串焼きセット」. Corroborated on s.tabelog.com/tokyo/A1311/A131102/13010490/dtlmenu/ (「軟骨のから揚げ」). No allergen or gluten-free note on either.",
+  "correct_url": "https://www.hotpepper.jp/strJ000032378/food/",
+  "http": "302 on the cited /catchword/ URL → 200 at the store root; 200 on /food/",
+  "method": "1 plain fetch (no-follow, to see the 302) + 1 followed fetch + 1 fetch of /food/ + 1 mobile-host Tabelog menu fetch",
+  "note": "The cited /catchword/ path no longer exists — it 302s to the store root, where 唐揚げ survives only as a search tag and 軟骨 only inside a customer review about the tsukune. The claim's actual evidence (軟骨の唐揚げ as a listed menu item) is one directory over at /food/. Repoint it. GF-relevant detail neither source's citation captures, from the same HotPepper page: 「つなぎを一切使用していないため」 — the tsukune/だんご is made with NO binder, which is one of the few genuinely wheat-free things on this menu."
+ },
+ {
+  "id": "tokyo_tori_yoshi",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "The menu's core dishes (oyako-don sauce, yakitori tare, clear soup/broths) are soy- and dashi-based; standard Japanese soy sauce and tare contain wheat, and no wheat-free soy sauce or tare alternative is advertised.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「まず一口食べると、口に広がるのは濃いめの出汁、醤油のような美味しい味です。」 (oyako-don) and 「焼き鳥は柔らかく、炭火の風味がしっかり感じられ香ばしい。タレは甘辛でご飯がすすむ味付けです。」 (yakitori tare) and 「添えられた鶏スープは澄みきった上品な味わい」 (clear chicken soup) — all three of the claim's named dishes, in one first-hand visit report.",
+  "correct_url": "https://taito.follow-up.co.jp/gourmet/asakusa-toriyoshi-20251023/",
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch (uncited claim — went and found the source)",
+  "note": "UNCITED but well evidenceable; the taito-ku article already cited elsewhere on this record independently describes all three sauce/broth vectors. Attach it. Nobody on any source advertises a wheat-free shoyu or tare here."
+ },
+ {
+  "id": "tokyo_tori_yoshi",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "The entire menu is chicken-based (yakitori, oyako-don, mizutaki hot pot); shared grills, fryers, and chicken-bone broths are used throughout with no vegetarian or vegan prep line identified.",
+  "url": "https://taito.follow-up.co.jp/gourmet/asakusa-toriyoshi-20251023/",
+  "verdict": "supported",
+  "found": "「メニューは鶏料理が中心。」「ランチメニューは丼ものが中心。親子丼、焼鳥丼、唐揚げ膳、坦々茶漬け風の鶏スープ丼など、鶏料理だけでこれだけ選べるのは嬉しいポイント。」「カウンター越しには厨房が見え、炭火焼きの香りがほのかに漂います。」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch",
+  "note": "Supported on substance — the article is explicit that the menu is chicken throughout, names a karaage set (fryer) and a chicken-soup bowl, and describes the open charcoal grill. One inaccuracy of attribution: the 'mizutaki hot pot' detail is NOT in this article; it comes from HotPepper (「浅草の水炊きと炭火焼きの店」/「【名物鍋】コラーゲンスープの水炊き」). Either drop the mizutaki parenthesis or add the HotPepper URL alongside."
+ },
+ {
+  "id": "tokyo_tori_yoshi",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "repairable",
+  "note": "No false claims. One dead citation path (/catchword/ → /food/), one uncited claim now sourced, one supported claim carrying a detail borrowed from a second source."
+ },
+ {
+  "id": "tokyo_trevo_trevo_coffee_meals",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "No information found on whether vegan drinks/sweets are prepared separately from dairy/egg-containing items in this small shared kitchen.",
+  "url": null,
+  "verdict": "unsupported",
+  "found": "Nothing to separate: no vegan drink or sweet at trevo is evidenced by any source I could reach. The Tabelog drink menu is registered with 0 items, the Instagram bio reads 「seasonal brunch / bikini sandwich / specialty coffee」, and the ten DuckDuckGo results for trevo + オーツミルク return only trevo's cheese-sandwich coverage.",
+  "correct_url": null,
+  "http": "200 on s.tabelog.com (iPhone UA), 200 on the DDG HTML endpoint; Yahoo Japan returned 429",
+  "method": "iPhone-UA mobile-host Tabelog (top + dtlmenu), DuckDuckGo HTML search, Instagram bio via search snippet",
+  "note": "The claim presupposes vegan items that no source establishes. See the paired 'positives' finding — the vegan_detail on this record was built from a DIFFERENT cafe's paragraph in the cited article. Once that is removed there is no vegan item left to ask about, and this sentence should be deleted rather than sourced."
+ },
+ {
+  "id": "tokyo_trevo_trevo_coffee_meals",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Cafe lattes can be made with oat milk, soy milk, or almond milk instead of dairy.",
+  "url": "https://rtrp.jp/articles/135948/",
+  "verdict": "unsupported",
+  "found": "The sentence 「カフェラテは、牛乳を使わずにオーツ、ソイ、アーモンドの中から選べます🥛」 IS on this page — but it sits in section ①Be green by KIELO COFFEE, a different cafe. trevo is section ③, and its whole text reads: 「黒トリュフが香るSNS映え確実のビキニサンドイッチはとろけるチーズがたまらない！…ボンボンコーヒーという練乳入りのアイスコーヒーやオリーブオイルと岩塩をつけて食べるバスクチーズケーキ」 — truffle-and-melted-cheese sandwich, condensed-milk iced coffee, Basque cheesecake.",
+  "correct_url": null,
+  "http": "200 (plain fetch, 1.2MB listicle)",
+  "method": "1 plain fetch, then read the article section by section to see which venue each paragraph belongs to",
+  "note": "CLAIM TRANSPLANTED FROM ANOTHER VENUE IN THE SAME ARTICLE. And it is not the only one: the record's vegan_detail also says 'at least one source mentioned a vegan cheesecake and banana bread on the menu' — 「ヴィーガンチーズケーキ ￥500 / バナナブレッド ￥380」 is likewise Be green's order list from section ①. Every vegan positive on this record belongs to Be green by KIELO COFFEE. Delete both; trevo's own listed items are cheese, condensed milk and cream cheese."
+ },
+ {
+  "id": "tokyo_trevo_trevo_coffee_meals",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "defective",
+  "note": "The record's sole vegan evidence is another cafe's paragraph in the cited listicle, and nothing else supports it. Trading status is fine (open; 「売り切れ次第閉店」 means sells-out-early, not closed)."
+ },
+ {
+  "id": "tokyo_trevo_trevo_coffee_meals",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "no",
+  "evidence": [
+   "https://rtrp.jp/articles/135948/",
+   "https://s.tabelog.com/tokyo/A1310/A131003/13272311/dtlmenu/",
+   "https://www.instagram.com/trevo_3_trevo/"
+  ],
+  "why": "Both statements holding up 'Vegan options' — the oat/soy/almond latte and the vegan cheesecake + banana bread — are quoted from section ① of the cited article, which is Be green by KIELO COFFEE, not trevo. trevo's own paragraph in that same article lists a melted-cheese truffle sandwich, condensed-milk coffee and Basque cheesecake; Tabelog registers no drink menu; no source anywhere evidences a plant milk here. With the transplant removed the record has zero vegan evidence. If a reviewer prefers not to assert a negative, 'ask' is the conservative floor, but 'options' is not defensible."
+ }
+]

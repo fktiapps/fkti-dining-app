@@ -1,0 +1,232 @@
+[
+ {
+  "id": "hiro_tonkatsu_16",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Cutlets are coated in wheat flour and panko (bread crumbs) and deep-fried, so the breading is wheat-based and the shared fryer carries gluten.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "washoku-style.jp: 「衣は多くの名店が使用している中屋パン粉工場のパン粉を取り寄せています。かなり粗めの衣で」 — and the shop told a Tabelog reviewer 「豚の甘みを引立てる爲、パン粉に就いては、糖度が低い小麥を敢へて擇び、鹽も意圖的に使用してゐるとの事です」 (they deliberately choose LOW-SUGAR WHEAT for the panko).",
+  "correct_url": "https://washoku-style.jp/archives/11741",
+  "http": "200 (plain fetch); Tabelog review 200 via s.tabelog.com iPhone UA",
+  "method": "Route 4 (Yahoo Japan search on the venue name) then plain fetch; corroborated by route 1 on the Tabelog review page",
+  "note": "UNCITED but TRUE and now evidenceable. Attach https://washoku-style.jp/archives/11741 (Nakaya-factory panko, coarse crumb) and https://tabelog.com/hiroshima/A3401/A340109/34028048/dtlrvwlst/B461079867/ (shop's own statement that the panko wheat is deliberately chosen). Caveat: no source names a wheat-flour DUSTING step - trim that half of the sentence or hedge it; the panko half is documented."
+ },
+ {
+  "id": "hiro_tonkatsu_16",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The table is set with a traditional-style soy sauce, which is wheat-based, alongside a house-made sauce typically also containing wheat.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「卓上にあるのは海井上塩、井上古式醤油、自家製ソース、自家製ドレッシングです。奥出雲の井上古式醤油は非常に旨み、コクのある醤油でとんかつの味を引き立てます。ソース、ドレッシングも奥行きのある味です。」 Inoue Shoyu publishes 井上古式醤油's ingredients as 「大豆・小麦・塩のみ」.",
+  "correct_url": "https://washoku-style.jp/archives/11741",
+  "http": "200 (plain fetch)",
+  "method": "Route 4 (Yahoo Japan) + plain fetch; second Yahoo query to confirm the shoyu's declared ingredients",
+  "note": "UNCITED but TRUE and unusually precise: the table soy sauce is named (奥出雲 井上古式醤油, a naturally-brewed koikuchi declared as soy + WHEAT + salt) and BOTH the sauce and the dressing are 自家製 (house-made), exactly as the claim says. Corroborated independently by a Tabelog reviewer listing 「卓上に置いてあるとんかつソース、醬油、鹽、ドレッシング」. Attach the washoku-style URL."
+ },
+ {
+  "id": "hiro_tonkatsu_16",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Everything is pork-based and fried in a lard blend (Dutch lard plus house-rendered lard), so there is animal fat throughout the kitchen.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「油はオランダ産ラードが主体ということです。面白いのは自家製ラードを加えていることです。ここまでする店はなかなか見かけません。」",
+  "correct_url": "https://washoku-style.jp/archives/11741",
+  "http": "200 (plain fetch)",
+  "method": "Route 4 (Yahoo Japan on the shop name + ラード) + plain fetch",
+  "note": "UNCITED but TRUE almost verbatim - Dutch-produced lard as the base plus house-rendered lard added. This is also the strongest cross-contact line on the page (single shared animal-fat fryer). Attach https://washoku-style.jp/archives/11741 to all three claims; the record needs no wording change, only a citation."
+ },
+ {
+  "id": "hiro_tonkatsu_16",
+  "city": "hiroshima",
+  "field": "record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": "https://washoku-style.jp/archives/11741",
+  "http": "200",
+  "method": "Yahoo Japan + plain fetch + Tabelog mobile host",
+  "note": "All three claims were source:null; all three are true and all three are supported by ONE page. gf 'no' / vegan 'no' are correct - panko is wheat, frying medium is lard. Trading status: OPEN (Tabelog 3.67, 150 reviews, latest visit 2026/08, とんかつ百名店2026 selection). No tier change."
+ },
+ {
+  "id": "kz_kura",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat-flour udon is made in the same kitchen and soba is typically cut with some wheat, so gluten cross-contact is likely.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Retty lists the shop's genres as 「そば（蕎麦） カレーうどん うどん」 and a reviewer writes 「鴨せいろを頂きましたが、蕎麦は二八で表面がツルっとした喉越しの良いタイプ。」 (nihachi = 80% buckwheat / 20% WHEAT). Tabelog files the shop under 「そば、カレーうどん」.",
+  "correct_url": "https://retty.me/area/PRE17/ARE155/SUB15501/100000725826/",
+  "http": "200 (plain fetch)",
+  "method": "Route 4 (Yahoo Japan) then plain fetch of Retty + s.tabelog.com iPhone UA",
+  "note": "UNCITED but TRUE and now better than 'typically': a diner records the soba as 二八 (explicitly a 20% wheat binder), and both Tabelog and Retty carry curry-udon as a listed genre, so wheat noodles are genuinely in the same kitchen. Attach the Retty URL (and https://tabelog.com/ishikawa/A1701/A170101/17000073/ for the そば/カレーうどん genre). Tabelog keywords also include カツ丼 - a second wheat/fryer vector worth adding."
+ },
+ {
+  "id": "kz_kura",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Soba tsuyu / dipping sauce is based on wheat-containing soy sauce.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a - searched, not found",
+  "method": "Route 4 (Yahoo Japan on the shop name + つゆ/醤油) plus full reads of Tabelog, Retty and the Kanazawa guide listings",
+  "note": "No page anywhere states what soy sauce Kura's tsuyu uses; sources describe it only as 「つけ汁」 with 「焼き鯖干し」 dashi. This is a generic-inference claim, not an evidenced one - soften it to 'assume wheat soy sauce unless staff confirm', or leave it flagged. Do NOT mark it unsupported: it is almost certainly true, just undocumented for this shop."
+ },
+ {
+  "id": "kz_kura",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Broths and tsuyu use fish (katsuo) dashi; the signature bowl is duck.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「鴨せいろを頂きましたが…つけ汁は焼きネギに鴨肉とオーソドックスですが出汁が独特です。焼き鯖干しの香りが強く…鴨肉も美味かったし味わったことの無い美味い鴨せいろです。」",
+  "correct_url": "https://retty.me/area/PRE17/ARE155/SUB15501/100000725826/",
+  "http": "200 (plain fetch)",
+  "method": "Route 4 (Yahoo Japan) then plain fetch of Retty; 鴨 also appears in Tabelog's 関連のキーワード for the shop",
+  "note": "UNCITED but TRUE in substance, WRONG IN DETAIL: the dashi reviewers single out is 焼き鯖干し (grilled dried MACKEREL), not katsuo. Change the parenthetical to '(fish / grilled-dried-mackerel dashi)' - still fish, so the vegan verdict is unchanged, but naming the wrong fish is exactly the kind of detail error this sweep exists to catch. Duck (鴨せいろ) is confirmed."
+ },
+ {
+  "id": "kz_kura",
+  "city": "kanazawa",
+  "field": "record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": "https://retty.me/area/PRE17/ARE155/SUB15501/100000725826/",
+  "http": "200",
+  "method": "Yahoo Japan + Retty + Tabelog mobile host",
+  "note": "All three claims source:null; two are now evidenceable at one URL, one (soy sauce) stays uncited. See the two tier_recommendation objects. Trading status: OPEN (Tabelog 3.4/89 reviews, Yahoo 4.35/32, latest visits 2026/05; regular hours 11:00-15:00, closed Tue)."
+ },
+ {
+  "id": "kz_kura",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://retty.me/area/PRE17/ARE155/SUB15501/100000725826/",
+   "https://tabelog.com/ishikawa/A1701/A170101/17000073/"
+  ],
+  "why": "This is not an 'unverified, ask staff' case, it is a documented no. A diner records the soba itself as 二八 (20% wheat binder), Tabelog and Retty both file the shop under カレーうどん/うどん, and Tabelog's keyword list includes カツ丼. There is no wheat-free item and nothing for staff to confirm; 'ask' invites a celiac to make a phone call that can only end one way."
+ },
+ {
+  "id": "kz_kura",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://retty.me/area/PRE17/ARE155/SUB15501/100000725826/"
+  ],
+  "why": "The tsuyu's defining ingredient is 焼き鯖干し (grilled dried mackerel) dashi and the house bowl is 鴨せいろ (duck). Fish dashi is in the dipping sauce that arrives with every soba order, so there is no vegan path even by omission - 'no' is the honest label, not 'ask'."
+ },
+ {
+  "id": "kz_sushidokoro_asanogawa",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "As a traditional sushi house, dishes are served with standard (wheat-based) soy sauce and seasonings; no gluten-free soy sauce or celiac accommodation is documented.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "The venue's own official page carries only 「◆寿司コース 夜13200円～昼5500円～」 and the gnavi menu tabs resolve to a single 「おまかせ」 course at each service (lunch ¥11,000 / dinner ¥22,000, both now repriced upward). There is no allergen page, no ingredient list, and no mention of 醤油 type, tamari or アレルギー anywhere on the site.",
+  "correct_url": "https://sushiasanogawa.gorp.jp/",
+  "http": "200 (plain fetch; the page is a JSON/__NEXT_DATA__-style blob, route 2)",
+  "method": "Route 2 - the gorp.jp page renders from an embedded JSON payload, read directly; plus the two gnavi menu sub-pages",
+  "note": "UNCITED, and the source was sitting in the record's own website field. The claim is an absence claim and the official page genuinely is silent on soy sauce and allergies, so it is fair as written - just cite https://sushiasanogawa.gorp.jp/ (and https://r.gnavi.co.jp/0001468191/menu1/ for the omakase-only course structure). One nuance worth adding: this is a pure omakase counter, so 'no accommodation documented' should not be read as 'the chef would refuse' - it means nothing is published."
+ },
+ {
+  "id": "kz_sushidokoro_asanogawa",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is entirely seafood-based (raw fish, shellfish, fish dashi), so vegan diners cannot avoid cross-contact; no plant-based menu exists.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「【金沢 主計町の一角 「小松弥助」の大将協力の寿司店】妥協しない技で寿司に向き合い、心を込めておもてなし致します。」 and 「全国から厳選した食材を使用し、職人によるこだわりの寿司や一品料理をご提供いたします。」 - the entire menu module lists 夜のコース / お昼のメニュー / 日本酒・焼酎 / ワイン / ドリンク and nothing else.",
+  "correct_url": "https://sushiasanogawa.gorp.jp/",
+  "http": "200 (plain fetch, JSON payload)",
+  "method": "Route 2 (embedded JSON) on the official page + plain fetch of both gnavi menu sub-pages",
+  "note": "UNCITED but TRUE. The official site is a sushi counter with omakase-only courses and no vegetable or plant-based option published. Cite https://sushiasanogawa.gorp.jp/. Note the site also has 「お子様連れNG」 and 「ペットNG」 - a strictly-run counter, which reinforces that nothing off-menu is advertised."
+ },
+ {
+  "id": "kz_sushidokoro_asanogawa",
+  "city": "kanazawa",
+  "field": "record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": "https://sushiasanogawa.gorp.jp/",
+  "http": "200",
+  "method": "Route 2 (JSON payload) + gnavi sub-pages + Yahoo Japan for trading status",
+  "note": "Both claims source:null and both are supported by the record's OWN website field, which was never copied into the source. gf 'no' / vegan 'no' both correct. Trading status: OPEN (Tabelog 3.36 / 99 reviews; Instagram coverage as recent as 2026-08-11; the group has since also opened a Tokyo Station Hotel branch under the same name - beware of sibling-branch citations here in future)."
+ },
+ {
+  "id": "ChIJ35LBKyGpAWAR1YMywG-JY28",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a casual counter in an open-air food court where curry, hot dogs and other quick bites are served side by side. Curry sauces are usually thickened with wheat flour and hot dogs come on wheat buns, so a shared cooking and prep area like this carries a real risk of gluten cross-contact. Treat it as not safe for celiac diners unless staff can confirm a specific gluten-free preparation.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260403/26044755/",
+  "verdict": "supported",
+  "found": "「屋外フードコートのような作りで、お寿司屋やラーメン屋さんなど色々なお店が軒を連ねています。カレーとホットドッグの両看板のお店のようで、外国の方も多く利用されています。」 plus 「チキンカツカレー ドリンクコンボ 2400円」「カツは揚げたてサクサクで、フライドオニオンが良いアクセントに」「ホットドッグはパンの倍ほどの長さがあるソーセージ…付け合わせのフライドポテトも揚げたてで」. Tabelog files the venue under カレー.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA; English page, Japanese page and the record's single review)",
+  "method": "Route 1 (mobile host) on the cited page, then the same record's Japanese page and review, where the untruncated text lives",
+  "note": "Supported, and the evidence is stronger than the claim: the outdoor food court, the curry-AND-hot-dog signage, a breaded チキンカツ and fried potatoes all appear. NOTE the English page truncates the review to the first sentence - the substance is at https://tabelog.com/kyoto/A2601/A260403/26044755/dtlrvwlst/B525136196/ , which is the URL to cite if you want the quote to be findable by a reader. Also: the record's cuisine field says 'Pizza/Italian' while Tabelog's category is カレー and the only documented food is curry, katsu and hot dogs - fix the cuisine field."
+ },
+ {
+  "id": "ChIJ35LBKyGpAWAR1YMywG-JY28",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "No information about the soy sauce or seasonings used here is documented. Most Japanese soy sauce contains wheat, so assume curry, sauces and toppings may include wheat-based seasoning until staff confirm otherwise.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a - Tabelog record read in full (menu 0 items, set menu 0, food 0, drink 0)",
+  "method": "Route 1 (mobile host) on both language versions of the Tabelog record plus its review; route 4 turned up nothing on seasonings",
+  "note": "Self-referentially true - nothing is documented, and the Tabelog record does have a literally empty menu section. If you want a citation for the absence, https://tabelog.com/en/kyoto/A2601/A260403/26044755/ is the honest one. No repair needed beyond attaching that."
+ },
+ {
+  "id": "ChIJ35LBKyGpAWAR1YMywG-JY28",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan-specific dishes or preparation details are documented for this spot, and the menu leans on curry and hot dogs. Shared equipment in a food-court setting makes cross-contact with meat and dairy likely. Vegan diners should confirm ingredients and handling directly with the counter.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「カレーとホットドッグの両看板のお店のようで」 / 「チキンカツカレー ドリンクコンボ 2400円」 / 「ホットドッグはパンの倍ほどの長さがあるソーセージのインパクトが凄いです」, and Tabelog's 関連のキーワード for the venue: ホットドッグ・フライドポテト・ソーセージ・フライドオニオン・ポタージュスープ・チキンカツカレー.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260403/26044755/dtlrvwlst/B525136196/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "Route 1 (mobile host) on the record's review page",
+  "note": "UNCITED but TRUE - and it flatly contradicts the record's own label. See the tier_recommendation."
+ },
+ {
+  "id": "ChIJ35LBKyGpAWAR1YMywG-JY28",
+  "city": "kyoto",
+  "field": "record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260403/26044755/dtlrvwlst/B525136196/",
+  "http": "200",
+  "method": "Route 1 (mobile host), three pages of the same Tabelog record",
+  "note": "The cited claim checks out; two uncited claims are repairable from the same record. The real defect is the label-vs-text contradiction flagged below. Trading status: OPEN (Tabelog hours 10:00-16:30 daily, review visit 2026/03). Two data-hygiene fixes: cuisine says 'Pizza/Italian' where the only evidence is curry/hot dogs, and hours_raw says 9:00-16:30 where Tabelog says 10:00-16:30."
+ },
+ {
+  "id": "ChIJ35LBKyGpAWAR1YMywG-JY28",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "options",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260403/26044755/dtlrvwlst/B525136196/",
+   "https://tabelog.com/en/kyoto/A2601/A260403/26044755/"
+  ],
+  "why": "LABEL CONTRADICTS ITS OWN DETAIL TEXT. The record shows vegan_label 'Vegan options' and vegan_detail 'vegan/vegetarian options available' while its own vegan_cross_contact text says 'No vegan-specific dishes or preparation details are documented' and menu_vegan_count / menu_vegan_meals are both 0. The only documented food is chicken-katsu curry, a hot dog, sausage and fried potatoes; no source anywhere says 'vegan'. 'options' is an unearned promise - downgrade to 'ask' (a case could be made for 'no', but asserting absence from one review would overshoot)."
+ }
+]

@@ -26,6 +26,10 @@ const GF_CONF  = new Set(['dedicated','high','options','ask','no']);
 const VEGAN    = new Set(['full','options','limited','ask','no']);
 const HOURS_ST = new Set(['regular','irregular','seasonal','varies','closed','unknown','by_reservation']);
 const TOP_TIER = new Set(['dedicated','high']);
+const GF_LABELS = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
+                    options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
+const VG_LABELS = { full:'Fully vegan', options:'Some vegan options',
+                    limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
 const CLAIMS_SAFER = new Set(['dedicated','high','options']);
 const EVIDENCE_FIELDS = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact',
                          'staff_allergy_handling','positives'];
@@ -119,6 +123,16 @@ for (const city of CITIES) {
     if (!r.hidden && CLAIMS_SAFER.has(r.gf_confidence) && evidenceCount(r) === 0)
       err(city, `${at}: gf_confidence="${r.gf_confidence}" with no safety evidence at all — ` +
                 'a tier above "ask" has to cite a source (REVIEW_PROTOCOL.md)');
+
+    // A stored label contradicting its tier is how a tonkotsu ramen shop came to
+    // display as "Fully vegan": index.html rendered vegan_label directly, and every
+    // pass that moved a tier had to remember to move the label too. The app derives
+    // both now, and sync-diet-labels.mjs repairs the stored fields — this stops them
+    // drifting apart again.
+    if (GF_LABELS[r.gf_confidence] && r.gf_label && r.gf_label !== GF_LABELS[r.gf_confidence])
+      err(city, `${at}: gf_label "${r.gf_label}" contradicts gf_confidence "${r.gf_confidence}"`);
+    if (VG_LABELS[r.vegan_status] && r.vegan_label && r.vegan_label !== VG_LABELS[r.vegan_status])
+      err(city, `${at}: vegan_label "${r.vegan_label}" contradicts vegan_status "${r.vegan_status}"`);
 
     if (TOP_TIER.has(r.gf_confidence)) {
       topTier++;

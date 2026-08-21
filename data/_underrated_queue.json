@@ -86,5 +86,59 @@
   "evidence": [],
   "why": "Rated 'Not gluten-free' while the shop's own site states the curry uses no wheat flour and passed a third-party gluten/gliadin test with NONE DETECTED, the report displayed in store. The record also has 18 spices for 21, calls almond-milk lattes dairy, says allergy language does not exist when it does, and publishes stale hours.",
   "source": "transcribed from agent prose"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo_beppinsha",
+  "name": "Bistro Beppinsha (カリー＆ワイン ビストロべっぴん舎 お茶の水本店)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.beppinsya.com/",
+   "https://www.beppinsya.com/%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/",
+   "https://rurubu.jp/andmore/article/2701",
+   "https://tabelog.com/en/tokyo/A1310/A131002/13198751/"
+  ],
+  "why": "The operator's masthead is 「Gluten Free Spice Curry」 and it states 「小麦粉を使わないグルテンフリーカリー」 / 「The spice curry without wheat flour」, corroborated independently by rurubu's own tasting note 「小麦粉を使っていないのでスープのようにさらさら」. The live menu is four curries and beer — there is no bread, naan, roux or fried side for a GF item to be an 'option' among — and dinner, course and à-la-carte service are currently suspended, so the shared-bistro-sides risk the record cites is not being run. A wheat-free-by-design core menu declared by the operator and corroborated by a third party is 'options', not 'ask'. Hold at 'options' and no higher: the seasoning (soy/Worcester) is undisclosed and there is no allergy protocol, so the 'confirm the seasoning' hedge must stay in gf_detail."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo_kamiyama",
+  "name": "神山（旧店名：清山） (Kamiyama)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.hotpepper.jp/strJ001128325/food/",
+   "https://www.pasaporte.co.jp/kamiyama/"
+  ],
+  "why": "The record downgrades to a flat 'Not gluten-free' on the explicit ground that 'there is no confirmation the noodles are consistently 十割 rather than the common 二八 blend' — but the operator's own HotPepper page says exactly that: 「十割で季節により厳選された蕎麦。塩でもお召し上がり頂けます。」 100% buckwheat, and a salt service that removes the wheat-soy tsuyu from the plate. This is a recommendation to 'ask', NOT above it: 打ち粉 dusting flour is unresolved, tempura is on the menu, and there is no allergen protocol — 十割 alone is never celiac-safe. But 'no' is telling a celiac not to bother asking about the one dish here they might actually be able to eat."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__104",
+  "name": "築地本願寺キッチン",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.enjoytokyo.jp/article/109438/",
+   "https://tsukijihongwanji.jp/enjoy/meal-stay/",
+   "https://shop.pronto.co.jp/detail/9038/"
+  ],
+  "why": "This is a DOWNWARD correction of a displayed label, not of the stored tier. The stored vegan_status 'ask' is defensible, but vegan_label 'Fully vegan' and category 'VEGAN' are what the app actually shows, and they are contradicted by the venue's signature dish: six confirmed animal items in the 18-dish set (湯葉いくら, 海苔明太, タコの塩麴和え, 築地紀文のお魚とうふおぼろ揚, 合鴨の山椒焼き, ちりめん) plus 卵焼き. Set vegan_status 'limited', rewrite vegan_label to match, and move the record out of category VEGAN."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_a_375",
+  "name": "玄米菜食",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "http://www.mominoki-house.net/"
+  ],
+  "why": "The venue's own site publishes a named 「グルテンフリー・五葷抜き / Gluten-Free」 menu section with six priced items, in Japanese, English and Chinese. Under REVIEW_PROTOCOL that is 'some naturally-GF/adaptable dishes, NO special handling' — options, and capped there because it is a single source with no independent corroboration and no dedicated fryer claimed. The mandatory cross-contamination text must say: the same kitchen deep-fries wheat spring rolls and tempura, one GF-line item (揚げ餅) is itself deep-fried, the mock-meat karaage is seitan (the venue's own English menu calls it 'gluten chicken'), and neither tamari nor the miso type is stated."
  }
 ]
