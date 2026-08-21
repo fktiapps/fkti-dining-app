@@ -3122,5 +3122,1011 @@
     "dish_key": "mame_daifuku"
    }
   ]
+ },
+ "tokyo_kokusai_hiyoukan": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/tokyo/A1303/A130301/13318827/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/370685/cc80e8a771339a5c83cae9af3a8e5a63.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/348467/c41d5e8c56b5dff6bc5a293dc4897d73.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/346838/ebcf7a92e81db300c0ae14da45e03330.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/348467/f6a506da226495c100a4fd9fcec25551.jpg",
+   "https://www.instagram.com/kokusaihiyoukan/"
+  ],
+  "price_note": "Read at full resolution from photographs of the shop's own order slip (メニュー兼注文票) dated 2026-07, cross-checked against the 2026-03 Japanese and English versions of the same slip and the painted street A-board. Prices as printed. IMPORTANT: this is the LUNCH ramen operation only — the red A-board reads 【昼限定】昔ながらの博多豚骨 ¥1,000, 11:00〜14:00. At night the same room is a Hokkaido jingisukan (grilled-lamb) izakaya, with an entirely separate menu and a ¥500 otoshi table charge; its prices are not published anywhere reachable and are not listed here. You order by circling items on the slip and writing your own total.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "豚骨ラーメン",
+    "romaji": "tonkotsu ramen",
+    "en": "The lunch bowl: an old-style Hakata tonkotsu — thin straight noodles in a milky pork-bone broth. One kaedama (noodle refill) is free, and the counter expects you to use it",
+    "price": "¥1,000",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "細麺は小麦、豚骨スープにも醤油・タレ。Hakata noodles are wheat and the tare is soy-based. Pork broth. Choose your noodle firmness on the slip: バリカタ 20 sec / かため 30 / ふつう 40 / ちょいやわ 50 / やわめ 60.",
+    "dish_key": "hakata_tonkotsu_ramen"
+   },
+   {
+    "ja": "月見ラーメン",
+    "romaji": "tsukimi ramen",
+    "en": "The tonkotsu with a raw egg dropped in",
+    "price": "¥1,100",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "麺＝小麦、卵あり。Wheat noodles plus raw egg.",
+    "dish_key": "tsukimi_ramen"
+   },
+   {
+    "ja": "味玉ラーメン",
+    "romaji": "ajitama ramen",
+    "en": "The tonkotsu with a marinated soft-boiled egg",
+    "price": "¥1,200",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味玉の漬け地は醤油＝小麦。The marinated egg is steeped in soy, so wheat twice over.",
+    "dish_key": "ajitama_ramen"
+   },
+   {
+    "ja": "特製ラーメン",
+    "romaji": "tokusei ramen",
+    "en": "The loaded bowl — the shop's recommendation. Comes with rock nori, wakame and the tsukimi egg on top; swap the raw egg for a marinated one for ¥100 more",
+    "price": "¥1,300",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "店の注記：「岩のり・わかめ・月見が乗っています。味玉は+100で変更できます」。麺・タレとも小麦。The shop's own note explains the toppings. Wheat noodles and soy tare.",
+    "dish_key": "tokusei_ramen"
+   },
+   {
+    "ja": "海苔玉ラーメン",
+    "romaji": "noritama ramen",
+    "en": "Ramen with rock nori and egg — listed on the 2026-03 slip as 'Ramen with Seaweed and Egg'",
+    "price": "¥1,300",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2026年3月の注文票に掲載。2026年7月の票では特製ラーメンに統合されている。On the March 2026 slip; the July 2026 slip folds this into 特製ラーメン. Wheat noodles.",
+    "dish_key": "noritama_ramen"
+   },
+   {
+    "ja": "肉ワカメラーメン",
+    "romaji": "niku wakame ramen",
+    "en": "Ramen with extra chashu and wakame seaweed — 'Ramen with Meat and Wakame Seaweed' on the shop's own English slip",
+    "price": "¥1,300",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2026年3月の注文票に掲載。チャーシューの煮汁も醤油。On the March 2026 slip. The chashu braise is soy-based.",
+    "dish_key": "niku_wakame_ramen"
+   },
+   {
+    "ja": "特製月見ラーメン",
+    "romaji": "tokusei tsukimi ramen",
+    "en": "The loaded bowl with the raw egg; +¥100 converts it to a soft salted egg",
+    "price": "¥1,400",
+    "section": "らーめん Lunch ramen (11:00–14:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2026年3月の注文票に掲載、「+100円で半熟塩卵に変更できます」。On the March 2026 slip with the shop's note about upgrading to the 半熟塩卵.",
+    "dish_key": "tokusei_tsukimi_ramen"
+   },
+   {
+    "ja": "豚骨ミニカレー",
+    "romaji": "tonkotsu mini curry",
+    "en": "A small curry made by cooking spices into the pork-bone broth — the shop flags it as recommended, and it is the thing regulars add to the ramen",
+    "price": "¥300",
+    "section": "ごはん Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "店の注記：「豚骨で炊いた特製スパイスカレーです」。日本のカレーは小麦粉のルウが一般的で、豚骨ベース。The shop's own note calls it a spice curry cooked in tonkotsu. Japanese curry is normally roux-thickened with wheat, and this one is built on pork broth either way.",
+    "dish_key": "tonkotsu_mini_curry"
+   },
+   {
+    "ja": "カレーライス",
+    "romaji": "curry rice",
+    "en": "Full-size curry rice",
+    "price": "¥300",
+    "section": "ごはん Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2026年3月の注文票に掲載。ルウは小麦粉、豚骨ベース。On the March 2026 slip. Wheat roux, pork base.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "白ごはん／ライス",
+    "romaji": "shiro-gohan / rice",
+    "en": "Plain white rice — ¥100 on the July 2026 slip, ¥200 on the March one",
+    "price": "¥100〜¥200",
+    "section": "ごはん Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "白米のみ。Plain steamed rice with nothing on it — the only wheat-free, animal-free thing on the lunch slip. The price moved between the two dated slips, so read the card.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "替え玉（2回目）",
+    "romaji": "kaedama (2 kai-me)",
+    "en": "Noodle refill — the first one is free, the second costs this. Say 'kaedama, please' and hold onto some broth",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "麺は小麦。Hakata-style wheat noodles.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "半替え玉（2回目）",
+    "romaji": "han-kaedama (2 kai-me)",
+    "en": "Half-portion noodle refill",
+    "price": "¥100",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "麺は小麦。",
+    "dish_key": "han_kaedama"
+   },
+   {
+    "ja": "ネギ増し",
+    "romaji": "negi mashi",
+    "en": "Extra spring onion",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "生ネギのみ。Raw spring onion only — no seasoning, no wheat, no animal product. (It goes into a wheat bowl, but the topping itself is clean.)",
+    "dish_key": "topping_negi"
+   },
+   {
+    "ja": "キクラゲ増し",
+    "romaji": "kikurage mashi",
+    "en": "Extra wood-ear mushroom — the crunchy black strands that define a Hakata bowl",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "キクラゲの味付け（醤油・ごま油）が一般的。Wood-ear is usually pre-seasoned with soy and sesame oil — ask.",
+    "dish_key": "topping_kikurage"
+   },
+   {
+    "ja": "岩海苔",
+    "romaji": "iwa-nori",
+    "en": "Rock nori — the shop marks this one as recommended",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "岩のりの佃煮風味付けに醤油を使う場合がある。Rock nori is sometimes served plain and sometimes soy-simmered — ask which.",
+    "dish_key": "topping_iwanori"
+   },
+   {
+    "ja": "生わかめ",
+    "romaji": "nama wakame",
+    "en": "Fresh wakame seaweed — also marked recommended",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "生わかめのみで調味なし。Plain fresh wakame, no seasoning.",
+    "dish_key": "topping_wakame"
+   },
+   {
+    "ja": "もやし増し",
+    "romaji": "moyashi mashi",
+    "en": "Extra bean sprouts",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "2026年3月の注文票に掲載。もやしのみ。On the March 2026 slip. Plain sprouts.",
+    "dish_key": "topping_moyashi"
+   },
+   {
+    "ja": "肉増し",
+    "romaji": "niku mashi",
+    "en": "Extra chashu pork",
+    "price": "¥300",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "チャーシューの煮汁は醤油＝小麦。Chashu is braised in soy.",
+    "dish_key": "topping_chashu"
+   },
+   {
+    "ja": "味玉",
+    "romaji": "ajitama",
+    "en": "Marinated soft-boiled egg",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "漬け地は醤油＝小麦。Soy marinade.",
+    "dish_key": "topping_ajitama"
+   },
+   {
+    "ja": "半熟塩卵",
+    "romaji": "hanjuku shio-tamago",
+    "en": "Soft-boiled salt-cured egg — the salt version rather than the soy one",
+    "price": "¥200",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2026年3月の注文票に掲載。「塩」表記だが漬け地の詳細は未公表。On the March 2026 slip. Salt-cured rather than soy-cured, which is promising — but the cure is not itemised, so ask.",
+    "dish_key": "topping_shio_tamago"
+   },
+   {
+    "ja": "生卵",
+    "romaji": "nama tamago",
+    "en": "Raw egg",
+    "price": "¥100",
+    "section": "トッピング Toppings",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "生卵のみ、調味なし。A plain raw egg — no seasoning, so no wheat. Not vegan.",
+    "dish_key": "topping_raw_egg"
+   },
+   {
+    "ja": "夜の部：北海道ジンギスカン（羊肉）",
+    "romaji": "yoru no bu — Hokkaido jingisukan",
+    "en": "Evenings the room becomes a Hokkaido lamb restaurant — the wall boards advertise 'THE KINDAN RAMU' grilled lamb, a vegetable set, kimchi, draught beer, Akaboshi bottled lager, IPA, fresh lemon sour and umeboshi sour. A ¥500 otoshi (cover) applies in the evening but not at ramen lunch",
+    "price": "",
+    "section": "夜の部 Evening (jingisukan izakaya)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "価格は店内掲示のみで公開情報なし。ジンギスカンのタレは醤油・果物ベース＝小麦、ビール類は麦芽。No evening prices are published anywhere reachable — this entry records that the evening operation exists and is a different restaurant in the same room, so you can see the ramen slip and still be handed a lamb menu at 18:00. Jingisukan dipping sauce is soy-and-fruit based, i.e. wheat, and every beer listed is malt.",
+    "dish_key": "evening_jingisukan"
+   }
+  ]
+ },
+ "tokyo_atacu_cafe": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/tokyo/A1310/A131003/13287249/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/244441/bf89808e93d84fe820c647ca9b9883d3.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/238551/eb895300932569138ef30e1f3bd9e7ee.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/332147/10135191be07037ecf951287682e1d35.jpg",
+   "https://www.instagram.com/atacucafe/"
+  ],
+  "price_note": "Read at full resolution from photographs of the shop's own handwritten Lunch and Drink boards. The board was photographed in 2024-03, 2024-04 and again in 2025-12 with identical figures, so these prices have held for two years and are current. Every lunch comes with soup, a small side dish and dessert. Take the same lunch away as a bento and it is ¥200 less.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "旅するタコライス（Japan テリヤキ／Korea コチュジャン／Mexico シーザー／Thai チリ）",
+    "romaji": "tabi suru taco rice",
+    "en": "'Taco rice that travels' — the Okinawan taco-rice bowl reworked four ways, and you pick the country: Japan (teriyaki), Korea (gochujang), Mexico (Caesar) or Thai (chilli). Comes with soup, a small side and dessert",
+    "price": "¥1,000",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "テリヤキは醤油＝小麦、コチュジャンも小麦麹を含むのが一般的、シーザードレッシングはアンチョビ・卵・乳。Teriyaki is soy, so wheat; Korean gochujang is normally fermented with wheat; Caesar dressing carries anchovy, egg and dairy. The Thai chilli version is the only one with a chance — ask.",
+    "dish_key": "tabisuru_taco_rice"
+   },
+   {
+    "ja": "スシボウル（マグロとろたく＋ワサビマヨソース）",
+    "romaji": "sushi bowl (maguro torotaku + wasabi mayo sauce)",
+    "en": "Sushi bowl — chopped tuna with takuan pickle under a wasabi mayonnaise",
+    "price": "¥1,000",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "ワサビマヨは卵、寿司飯や添え醤油に小麦の可能性。Wasabi mayo means egg; the rice seasoning and any soy served alongside are the wheat risk — ask.",
+    "dish_key": "sushi_bowl"
+   },
+   {
+    "ja": "キーマカレー（辛さレベル1〜10）",
+    "romaji": "keema curry (karasa level 1–10)",
+    "en": "Keema curry, with the heat set anywhere from 1 to 10 — say a number when you order",
+    "price": "¥1,000",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "スパイスから作るキーマならルウ不要だが、店は原材料を公開していない。A from-scratch keema needs no wheat roux, unlike a Japanese curry — but this shop publishes no ingredients, so ask whether flour or a commercial roux goes in. Minced meat.",
+    "dish_key": "keema_curry"
+   },
+   {
+    "ja": "グリーンサラダボウル（おにぎり or トースト付）",
+    "romaji": "green salad bowl (onigiri or toast tsuki)",
+    "en": "Green salad bowl, served with either a rice ball or toast — choose the onigiri and the plate changes character entirely",
+    "price": "¥1,000",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "トーストは小麦。おにぎりを選べば小麦回避の可能性があるが、ドレッシングと具材は未公開。Pick toast and it is wheat; pick the onigiri and it may not be — but the dressing and the rice-ball filling are not published, so ask. Dressings commonly carry soy sauce or dairy.",
+    "dish_key": "green_salad_bowl"
+   },
+   {
+    "ja": "オムライス",
+    "romaji": "omurice",
+    "en": "Omurice — the shop's board carries a handwritten apology that ingredient costs forced the price up",
+    "price": "¥1,200",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "店の手書き注記：「材料が高くなっている為、値上げしました。すみません」。ケチャップライスに使うウスターソースやデミグラスは小麦、卵あり。Omurice sauces (Worcester, demi-glace, or a soy-spiked ketchup rice) are wheat-based, and the dish is wrapped in egg.",
+    "dish_key": "omurice"
+   },
+   {
+    "ja": "なんでもリクエストオーダー（パスタ・ドリアなどなど）",
+    "romaji": "nandemo request order",
+    "en": "Request anything — the board invites you to ask for pasta, doria or whatever else, at market price. Currently marked 'coming soon'",
+    "price": "時価",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ボードに「coming soon」の付箋あり。パスタ・ドリアはいずれも小麦。The board has a 'coming soon' sticker over part of this line, so it may not be running. Pasta and doria are both wheat — but a request-anything policy is exactly the opening a restricted diet needs. Worth asking in person.",
+    "dish_key": "request_order"
+   },
+   {
+    "ja": "煮込みハンバーグ ビーフシチュー",
+    "romaji": "nikomi hamburg beef stew",
+    "en": "Hamburg steak simmered in beef stew. Currently marked 'coming soon' on the board",
+    "price": "¥1,500",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ボードに「coming soon」の付箋あり。デミグラス／シチューのルウは小麦、ハンバーグのつなぎはパン粉。Marked coming soon. Stew roux is wheat and the patty binder is panko.",
+    "dish_key": "nikomi_hamburg"
+   },
+   {
+    "ja": "ランチドリンク（ICEコーヒー／ICEティー）",
+    "romaji": "lunch drink (ice coffee / ice tea)",
+    "en": "Add an iced coffee or iced tea to any lunch",
+    "price": "+¥200",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "ブラックであれば植物性。Plant-only if taken black.",
+    "dish_key": "lunch_drink_add"
+   },
+   {
+    "ja": "お弁当テイクアウト",
+    "romaji": "obento takeout",
+    "en": "Take any lunch away as a bento and it is ¥200 cheaper",
+    "price": "−¥200",
+    "section": "Lunch（スープ・小鉢・デザート付き）",
+    "gf": "",
+    "vegan": "",
+    "note": "同じ料理の持ち帰り。Same dishes, boxed.",
+    "dish_key": "bento_takeout"
+   },
+   {
+    "ja": "竹炭ドリップコーヒー",
+    "romaji": "chikutan drip coffee",
+    "en": "Bamboo-charcoal drip coffee — the café's signature, filtered through bamboo charcoal",
+    "price": "¥400",
+    "section": "Drink — HOT",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "コーヒーのみ。Black coffee.",
+    "dish_key": "bamboo_charcoal_drip_coffee"
+   },
+   {
+    "ja": "竹炭アメリカーノ",
+    "romaji": "chikutan americano",
+    "en": "Bamboo-charcoal americano",
+    "price": "¥400",
+    "section": "Drink — HOT",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "bamboo_charcoal_americano"
+   },
+   {
+    "ja": "カフェラテ",
+    "romaji": "cafe latte",
+    "en": "Café latte",
+    "price": "¥500",
+    "section": "Drink — HOT",
+    "gf": "",
+    "vegan": "no",
+    "note": "牛乳使用。Dairy milk; plant-milk substitution is not advertised — ask.",
+    "dish_key": "cafe_latte"
+   },
+   {
+    "ja": "カプチーノ（ストレート／キャラメル／チョコ）",
+    "romaji": "cappuccino (straight / caramel / choco)",
+    "en": "Cappuccino — plain, caramel or chocolate",
+    "price": "¥600",
+    "section": "Drink — HOT",
+    "gf": "",
+    "vegan": "no",
+    "note": "牛乳使用。Dairy.",
+    "dish_key": "cappuccino"
+   },
+   {
+    "ja": "ニルギリ産紅茶",
+    "romaji": "Nilgiri-san kocha",
+    "en": "Nilgiri black tea from southern India",
+    "price": "¥500",
+    "section": "Drink — HOT",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "茶葉のみ。Straight tea leaf — not a barley tea.",
+    "dish_key": "nilgiri_tea"
+   },
+   {
+    "ja": "コールドブリューコーヒー",
+    "romaji": "cold brew coffee",
+    "en": "Cold brew coffee",
+    "price": "¥400",
+    "section": "Drink — ICE",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "cold_brew"
+   },
+   {
+    "ja": "アイスラテ",
+    "romaji": "ice latte",
+    "en": "Iced latte",
+    "price": "¥500",
+    "section": "Drink — ICE",
+    "gf": "",
+    "vegan": "no",
+    "note": "牛乳使用。Dairy.",
+    "dish_key": "iced_latte"
+   },
+   {
+    "ja": "クリームラテ（ストレート／キャラメル／チョコ）",
+    "romaji": "cream latte (straight / caramel / choco)",
+    "en": "Cream latte — plain, caramel or chocolate",
+    "price": "¥600",
+    "section": "Drink — ICE",
+    "gf": "",
+    "vegan": "no",
+    "note": "生クリーム・牛乳。Cream and dairy milk.",
+    "dish_key": "cream_latte"
+   },
+   {
+    "ja": "ニルギリ産アイスティー",
+    "romaji": "Nilgiri-san ice tea",
+    "en": "Iced Nilgiri tea",
+    "price": "¥400",
+    "section": "Drink — ICE",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "iced_nilgiri_tea"
+   },
+   {
+    "ja": "アイスチャイ",
+    "romaji": "ice chai",
+    "en": "Iced chai",
+    "price": "¥500",
+    "section": "Drink — ICE",
+    "gf": "",
+    "vegan": "no",
+    "note": "チャイは牛乳ベース。Chai is milk-based here; plant-milk is not advertised.",
+    "dish_key": "iced_chai"
+   },
+   {
+    "ja": "本日のフルーツスムージー",
+    "romaji": "honjitsu no fruit smoothie",
+    "en": "The day's fruit smoothie",
+    "price": "¥700",
+    "section": "Drink — Juice",
+    "gf": "",
+    "vegan": "ask",
+    "note": "ヨーグルトや牛乳が入る場合あり、内容は日替わり。Smoothies often carry yoghurt or milk and the fruit changes daily — ask.",
+    "dish_key": "fruit_smoothie"
+   },
+   {
+    "ja": "本日のフルーツソーダ",
+    "romaji": "honjitsu no fruit soda",
+    "en": "The day's fruit soda",
+    "price": "",
+    "section": "Drink — Juice",
+    "gf": "",
+    "vegan": "ask",
+    "note": "ボードに価格の記載なし（スムージーの¥700と並記されているが本品の価格線は空欄）。The board lists this line without its own price — the ¥700 sits against the smoothie above it. Read the board rather than assume the same figure.",
+    "dish_key": "fruit_soda"
+   }
+  ]
+ },
+ "tokyo_hayashi": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/tokyo/A1303/A130301/13003367/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/363978/ff0a7a6d5ba6635efe5d3d408f3786c2.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/363978/be46bc0983bbd484ac64dfdfeaa460a0.jpg",
+   "https://s.tabelog.com/tokyo/A1303/A130301/13003367/dtlmenu/"
+  ],
+  "price_note": "Read from photographs of the shop's own bilingual window board and its ticket machine, both dated 2026-06 — the machine has exactly three live buttons and they match the board, so this is the whole menu. Cash only. Open 11:30–15:30 and closes the moment the soup runs out; shut Wednesdays and Sundays. The window also asks that children of primary-school age and under not be brought in. A Tabelog user card updated 2025-11 adds the off-menu 塩らーめん.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "らーめん",
+    "romaji": "ramen",
+    "en": "The bowl this counter has been famous for since the 1970s and which has made the Tabelog ramen Hyakumeiten list every year since 2017: a dark soy broth built on fish, dried shrimp, chicken and pork, with a heap of chopped raw onion on top. The onion is the point — do not push it aside",
+    "price": "¥1,000",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "店自らが掲示：「当店では魚介類・エビ・鶏肉・豚肉・醤油等の材料を使用しています」。醤油＝小麦、中華麺＝小麦。The shop posts its own allergy notice in the window naming fish, shrimp, chicken, pork and soy sauce — soy sauce means wheat, and the noodles are wheat too. That notice is unusually forthcoming for a ramen counter and is worth reading if you have a shellfish allergy.",
+    "dish_key": "shoyu_ramen"
+   },
+   {
+    "ja": "味玉らーめん",
+    "romaji": "ajitama ramen",
+    "en": "The same bowl with a marinated soft-boiled egg",
+    "price": "¥1,100",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "麺・スープ・味玉の漬け地すべて醤油＝小麦。Wheat in the noodles, the broth and the egg marinade.",
+    "dish_key": "ajitama_ramen"
+   },
+   {
+    "ja": "焼豚らーめん（味玉付き）",
+    "romaji": "chashu ramen (ajitama tsuki)",
+    "en": "The bowl piled with chashu pork, marinated egg included",
+    "price": "¥1,500",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "焼豚の煮汁も醤油。The chashu braise is soy as well.",
+    "dish_key": "chashu_ramen"
+   },
+   {
+    "ja": "塩らーめん（裏メニュー）",
+    "romaji": "shio ramen (ura menu)",
+    "en": "The off-menu salt version. It is not on the ticket machine or the board: buy a normal ¥1,000 ticket, and when you hand it over say 塩味で (shio-aji de). No extra charge",
+    "price": "¥1,000",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "食べログの利用者登録メニュー（更新日2025/11/24）による裏メニュー。塩でも麺は小麦、スープのベースは同じ魚介・鶏・豚。Recorded on the shop's Tabelog page by a user (updated 2025-11-24), not by the shop — but the ordering instruction is specific enough to be worth carrying. Salt tare instead of soy, but the noodles are still wheat and the stock is the same fish-chicken-pork base.",
+    "dish_key": "shio_ramen_secret"
+   }
+  ]
+ },
+ "tokyo_miyazaki_fu_do_quwanne": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/tokyo/A1304/A130401/13219087/dtlmenu/",
+   "https://s.tabelog.com/tokyo/A1304/A130401/13219087/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/372866/9ad4222b94ad04fe7bc3c75cdaaa11c9.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/371082/a7ac3b90858f5acd0c9b352dc6781416.jpg",
+   "https://www.konne.jp/restaurant/"
+  ],
+  "price_note": "The lunch teishoku, the add-ons, the desserts and the soft drinks are read from photographs of the shop's own bound menu book dated 2026-07. The evening à la carte and courses come from the shop's Tabelog listing, updated 2026-08-03 — very recent, and written in the shop's own promotional voice, but registered rather than owner-verified, so treat those figures as strong rather than certain. Tax included. The restaurant is the 2F of 新宿みやざき館 KONNE, Miyazaki Prefecture's Tokyo showcase on Shinjuku Southern Terrace — the shop notes that supply may force substitutions and that not every ingredient is from Miyazaki. Open 11:00–15:00 (L.O. 14:30) and 17:00–21:00 (L.O. 20:00).",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "冷や汁定食",
+    "romaji": "hiyajiru teishoku",
+    "en": "Miyazaki's defining dish and the reason to come at lunch: cold miso-and-grilled-aji soup, thick with sesame, tofu, shiso, myoga and cucumber, poured over rice. Set includes two sashimi, a mini chicken nanban, rice, miso soup and pickles. Rice size S/M/L, large +¥50",
+    "price": "¥1,950",
+    "section": "くわんねの定食 Lunch teishoku (2026-07 book)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "冷や汁は麦味噌を使うのが宮崎の伝統で、麦＝グルテン。だしは鰹・鯵。加えてチキン南蛮は小麦衣。Hiyajiru in Miyazaki is traditionally made with 麦味噌 (barley miso), and barley is gluten — this is exactly the trap the dish sets. The stock is grilled horse mackerel and bonito, and the set includes a wheat-battered chicken nanban. Ask which miso if it matters.",
+    "dish_key": "hiyajiru_teishoku"
+   },
+   {
+    "ja": "かつおめし定食",
+    "romaji": "katsuo-meshi teishoku",
+    "en": "Bonito from Nichinan, cured in soy and sesame, eaten first straight over rice and then as chazuke with the dashi poured on — the fishing-town way. With a small side, a katsuobushi salad, rice and miso soup",
+    "price": "¥1,850",
+    "section": "くわんねの定食 Lunch teishoku (2026-07 book)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "漬け地は醤油＝小麦、出汁茶漬けの出汁も醤油系。The cure is soy sauce and the pouring dashi is soy-seasoned.",
+    "dish_key": "katsuo_meshi_teishoku"
+   },
+   {
+    "ja": "“炭薫る”みやざき地頭鶏親子丼定食",
+    "romaji": "sumi kaoru Miyazaki jitokko oyakodon teishoku",
+    "en": "Oyakodon made with charcoal-grilled Miyazaki jitokko chicken, so the egg-and-chicken bowl carries smoke through it",
+    "price": "¥1,850",
+    "section": "くわんねの定食 Lunch teishoku (2026-07 book)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "親子丼の割下は醤油・味醂＝小麦、卵あり。Oyakodon simmering liquid is soy and mirin; contains egg. The shop notes the egg is not necessarily a jidori egg.",
+    "dish_key": "oyakodon_teishoku"
+   },
+   {
+    "ja": "ご飯大盛り",
+    "romaji": "gohan omori",
+    "en": "Upsize the rice on any teishoku",
+    "price": "+¥50",
+    "section": "くわんねの定食 Lunch teishoku (2026-07 book)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "白米のみ。Plain rice.",
+    "dish_key": "rice_upsize"
+   },
+   {
+    "ja": "ちょいたし：刺身2種盛り",
+    "romaji": "choitashi — sashimi ni-shu mori",
+    "en": "Lunch add-on: two kinds of sashimi, with the house sweet-soy sauce made from Miyazaki soy",
+    "price": "+¥650",
+    "section": "ちょいたし5選 Lunch add-ons (2026-07 book)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "宮崎の甘口醤油で作る自家製醤油餡＝小麦。The house sauce is built on Miyazaki's sweet soy sauce — wheat. Ask for salt if you need to avoid it; the fish itself is clean.",
+    "dish_key": "choitashi_sashimi"
+   },
+   {
+    "ja": "ちょいたし：若鶏ミニチキン南蛮",
+    "romaji": "choitashi — wakadori mini chicken nanban",
+    "en": "Lunch add-on: a small chicken nanban — fried chicken in sweet vinegar under tartare sauce. Miyazaki invented the dish and this shop won gold in the national karaage grand prix for it",
+    "price": "+¥650",
+    "section": "ちょいたし5選 Lunch add-ons (2026-07 book)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣は小麦・卵、甘酢は醤油ベース、タルタルは卵・乳。Wheat batter, soy-based sweet vinegar, egg-and-dairy tartare. Nothing about chicken nanban is gluten-free.",
+    "dish_key": "choitashi_mini_chicken_nanban"
+   },
+   {
+    "ja": "ちょいたし：みやざき地頭鶏むね身たたき",
+    "romaji": "choitashi — Miyazaki jitokko mune-mi tataki",
+    "en": "Lunch add-on: jitokko chicken breast seared outside, raw inside, sliced thin. The shop describes it as bouncy and full-flavoured",
+    "price": "+¥1,200",
+    "section": "ちょいたし5選 Lunch add-ons (2026-07 book)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "つけダレの内容は未表示。The dipping sauce is not itemised on the book — ask, since ponzu and soy are the usual accompaniments. Note this is raw chicken, served deliberately.",
+    "dish_key": "choitashi_jitokko_tataki"
+   },
+   {
+    "ja": "ちょいたし：蔵の厚焼き卵焼き",
+    "romaji": "choitashi — kura no atsuyaki tamagoyaki",
+    "en": "Lunch add-on: the thick rolled omelette the shop compares to a custard pudding",
+    "price": "",
+    "section": "ちょいたし5選 Lunch add-ons (2026-07 book)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "写真では価格欄が読み取れず。À la carte it is ¥600; the add-on price was not legible in the photographed page, so it is left empty rather than guessed. Rolled omelette is normally seasoned with dashi and soy — ask.",
+    "dish_key": "choitashi_atsuyaki_tamago"
+   },
+   {
+    "ja": "みやざき地頭鶏の炭火焼き",
+    "romaji": "Miyazaki jitokko no sumibiyaki",
+    "en": "The dish Miyazaki is known for nationally: jitokko chicken — a slow-grown native breed raised four to five months — charred hard over charcoal so it comes out black, smoky and genuinely chewy",
+    "price": "¥2,000",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "炭火焼きは塩のみの場合と醤油ダレの場合がある。Charcoal-grilled jitokko is often salt-only, which would make it one of the safer dishes here — but the shop does not say, and柚子胡椒 and soy are the usual partners. Ask for 塩のみ.",
+    "dish_key": "jitokko_sumibiyaki"
+   },
+   {
+    "ja": "宮崎牛の炭火焼き",
+    "romaji": "Miyazaki-gyu no sumibiyaki",
+    "en": "Charcoal-grilled Miyazaki beef — the brand requires Japanese Black cattle raised in the prefecture and graded 4 or above",
+    "price": "¥2,700",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "つけダレ・味付けは未表示。Seasoning not published — ask for salt only.",
+    "dish_key": "miyazaki_gyu_sumibiyaki"
+   },
+   {
+    "ja": "おいも豚の炭火焼",
+    "romaji": "oimo-buta no sumibiyaki",
+    "en": "Charcoal-grilled 'sweet-potato pork' — pigs fed a blend of sweet potato and barley, which the shop says gives soft meat and sweet fat",
+    "price": "¥1,900",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "餌に大麦を使うが、飼料の麦が肉のグルテンになるわけではない。味付けが未表示のため要確認。The barley is in the feed, not the meat — feed does not transfer gluten. The unknown is the seasoning, which is not published. Ask.",
+    "dish_key": "oimo_buta_sumibiyaki"
+   },
+   {
+    "ja": "ダブル南蛮",
+    "romaji": "double nanban",
+    "en": "Gold medallist in the 11th national Karaage Grand Prix, chicken-nanban division: the young-chicken nanban served with a shiitake nanban alongside",
+    "price": "¥1,450",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣は小麦・卵、甘酢は醤油、タルタルは卵・乳。Wheat batter, soy sweet-vinegar, egg-and-dairy tartare — and the shiitake half is battered the same way, so it is not the vegetarian escape it looks like.",
+    "dish_key": "double_nanban"
+   },
+   {
+    "ja": "鮮魚のお造り",
+    "romaji": "sengyo no otsukuri",
+    "en": "Sashimi of the day's fish — priced per person, minimum two",
+    "price": "¥1,000／人（2人前より）",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "宮崎の甘口醤油（マルタニ醤油）を使用＝小麦。Served with Miyazaki's characteristically sweet soy sauce — wheat. Ask for salt and wasabi.",
+    "dish_key": "sashimi_platter"
+   },
+   {
+    "ja": "宮崎県産鮮魚のなめろう",
+    "romaji": "Miyazaki-kensan sengyo no namero",
+    "en": "Namero — fish chopped on the board together with miso and aromatics until it turns into a paste. The shop hides yuzu-kosho in theirs",
+    "price": "¥650",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "宮崎は麦味噌の産地であり、なめろうの味噌が麦味噌なら大麦＝グルテン。Miyazaki is barley-miso country, and if the miso in this namero is 麦味噌 it carries gluten. Ask which miso — this is not a paranoid question in this prefecture.",
+    "dish_key": "namero"
+   },
+   {
+    "ja": "みやざき地頭鶏入りフランク（一個）",
+    "romaji": "Miyazaki jitokko-iri frank (ikko)",
+    "en": "A frankfurter packed with jitokko chicken",
+    "price": "¥650",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "ソーセージの結着材に小麦を使う場合がある。Sausage binders often carry wheat — ask.",
+    "dish_key": "jitokko_frank"
+   },
+   {
+    "ja": "地鶏明太春巻き（2本）",
+    "romaji": "jidori mentai harumaki (2 hon)",
+    "en": "Spring rolls of chicken and mentaiko with melting cheese and shiso",
+    "price": "¥900",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "春巻きの皮は小麦、明太子の調味液にも醤油、チーズは乳。Spring-roll wrappers are wheat; mentaiko cure carries soy; cheese is dairy.",
+    "dish_key": "jidori_mentai_harumaki"
+   },
+   {
+    "ja": "みやざき地頭鶏砂肝コンフィ",
+    "romaji": "Miyazaki jitokko sunagimo confit",
+    "en": "Jitokko gizzards confited in jitokko chicken fat — chicken cooked in chicken",
+    "price": "¥1,200",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "味付けは未公開。Seasoning not published — a salt-and-fat confit could be wheat-free but ask.",
+    "dish_key": "sunagimo_confit"
+   },
+   {
+    "ja": "みやざき地頭鶏入り梅水晶",
+    "romaji": "Miyazaki jitokko-iri ume-suisho",
+    "en": "Ume-suisho — shark cartilage in plum paste, made here with jitokko chicken through it. Crunchy, sour, built for shochu",
+    "price": "¥650",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "梅水晶の調味に醤油・みりんを使うことが多い。Usually seasoned with soy and mirin — ask.",
+    "dish_key": "ume_suisho"
+   },
+   {
+    "ja": "クリームチーズの甘醤油漬け",
+    "romaji": "cream cheese no ama-shoyu zuke",
+    "en": "Cream cheese steeped in Marutani soy sauce — Miyazaki's sweet soy — until the flavour goes all the way through",
+    "price": "¥550",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "醤油漬け＝小麦、チーズ＝乳。Soy-cured, so wheat, and dairy.",
+    "dish_key": "cream_cheese_shoyu_zuke"
+   },
+   {
+    "ja": "蔵の厚焼き 卵焼き",
+    "romaji": "kura no atsuyaki tamagoyaki",
+    "en": "Thick rolled omelette with, the shop says, the mouthfeel of a custard pudding",
+    "price": "¥600",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "だし巻きの出汁・調味に醤油を使うのが一般的。Rolled omelette is normally seasoned with dashi and soy — ask. Egg.",
+    "dish_key": "atsuyaki_tamagoyaki"
+   },
+   {
+    "ja": "おびの天ぷら",
+    "romaji": "Obi no tempura",
+    "en": "Obiten — not tempura in the usual sense but a Nichinan speciality going back centuries: fish paste blended with tofu and brown sugar, then deep-fried into a sweet, dense cake",
+    "price": "¥650",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "すり身のつなぎに小麦粉、味付けに醤油、共用の揚げ油。Fish-paste cakes are bound with wheat flour, seasoned with soy and fried in a shared fryer.",
+    "dish_key": "obiten"
+   },
+   {
+    "ja": "マキシマムポテトフライ",
+    "romaji": "Maximum potato fry",
+    "en": "Chips dusted with Maximum — the all-purpose spice mix Miyazaki households put on everything",
+    "price": "¥600",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "共用フライヤーで唐揚げ・天ぷらと同じ油を使う。マキシマムの原材料にも要確認。The fryer is shared with wheat-battered karaage and obiten, so cross-contact is certain. Check the Maximum spice blend too.",
+    "dish_key": "maximum_potato_fry"
+   },
+   {
+    "ja": "漬物の盛り合わせ",
+    "romaji": "tsukemono no moriawase",
+    "en": "Assorted pickles",
+    "price": "¥600",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "漬物の漬け床に醤油・鰹だしを使うものがある。Some pickles are steeped in soy or bonito dashi — ask which ones are on the plate.",
+    "dish_key": "pickle_platter"
+   },
+   {
+    "ja": "なまり節のシーザーサラダ",
+    "romaji": "namaribushi no Caesar salad",
+    "en": "Caesar salad with namaribushi — half-dried steamed bonito, flaked over the leaves",
+    "price": "¥750",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "シーザードレッシングはアンチョビ・卵・チーズ、クルトンは小麦。Caesar dressing means anchovy, egg and cheese, and croutons are wheat.",
+    "dish_key": "namaribushi_caesar"
+   },
+   {
+    "ja": "メヒカリの唐揚げ",
+    "romaji": "mehikari no karaage",
+    "en": "Deep-fried mehikari — the small green-eyed deep-sea fish landed off Nobeoka, eaten whole",
+    "price": "¥700",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "唐揚げの衣は小麦粉・片栗粉、下味に醤油。Karaage coating is wheat and potato starch with a soy marinade.",
+    "dish_key": "mehikari_karaage"
+   },
+   {
+    "ja": "冷や汁セット",
+    "romaji": "hiyajiru set",
+    "en": "The cold miso soup over rice, offered as the finisher to a course or an à la carte evening",
+    "price": "¥1,000",
+    "section": "〆 Finishers (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "宮崎の冷や汁は麦味噌が伝統＝大麦。焼き鯵・鰹だしも入る。Miyazaki hiyajiru is traditionally barley miso — gluten — plus grilled aji and bonito stock.",
+    "dish_key": "hiyajiru_set"
+   },
+   {
+    "ja": "カツオ飯セット",
+    "romaji": "katsuo-meshi set",
+    "en": "The soy-cured bonito over rice, as an evening finisher",
+    "price": "¥1,400",
+    "section": "〆 Finishers (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "漬け地は醤油＝小麦。Soy cure.",
+    "dish_key": "katsuo_meshi_set"
+   },
+   {
+    "ja": "“炭薫る”みやざき地頭鶏親子丼",
+    "romaji": "sumi kaoru Miyazaki jitokko oyakodon",
+    "en": "The charcoal-grilled jitokko oyakodon, as an evening finisher",
+    "price": "¥1,600",
+    "section": "〆 Finishers (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下は醤油・味醂＝小麦、卵あり。Soy-and-mirin base, egg.",
+    "dish_key": "oyakodon_finisher"
+   },
+   {
+    "ja": "宮崎ごちそう御膳",
+    "romaji": "Miyazaki gochiso gozen",
+    "en": "The Miyazaki feast tray — the shop's set-piece plate, marked as recommended",
+    "price": "¥3,800",
+    "section": "アラカルト À la carte (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "構成品は未公開だが、南蛮・冷や汁・炭火焼きなど小麦を含む定番が入る想定。Contents not itemised; expect it to include the nanban and hiyajiru, both of which carry wheat.",
+    "dish_key": "miyazaki_gochiso_gozen"
+   },
+   {
+    "ja": "ご飯セット（ご飯とお味噌汁）",
+    "romaji": "gohan set (gohan to omisoshiru)",
+    "en": "Rice and miso soup",
+    "price": "¥550",
+    "section": "〆 Finishers (evening)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "宮崎は麦味噌文化圏、味噌の種類を要確認。だしは鰹。Miyazaki is barley-miso country, so ask which miso; the dashi will be bonito either way.",
+    "dish_key": "gohan_set"
+   },
+   {
+    "ja": "マルタ二醤油アイス",
+    "romaji": "Marutani shoyu ice",
+    "en": "Soy-sauce ice cream made with Marutani, Miyazaki's sweet soy — savoury-sweet and much better than it sounds",
+    "price": "¥450",
+    "section": "甘味 Sweets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "醤油＝小麦、アイス＝乳。Soy sauce means wheat; ice cream means dairy.",
+    "dish_key": "shoyu_ice_cream"
+   },
+   {
+    "ja": "宮崎県産フローズンカットマンゴー",
+    "romaji": "Miyazaki-kensan frozen cut mango",
+    "en": "Frozen Miyazaki mango, cut — the prefecture's most famous fruit",
+    "price": "¥550",
+    "section": "甘味 Sweets",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "冷凍したマンゴー果肉のみ、加工調味なし。Nothing but frozen mango flesh — no wheat, no dairy, no additives. The one dessert here that clears both diets.",
+    "dish_key": "frozen_mango"
+   },
+   {
+    "ja": "チーズ饅頭にアイスを添えて",
+    "romaji": "cheese manju ni ice wo soete",
+    "en": "Miyazaki's own confection: a short pastry shell around cream cheese, served here warm with ice cream. With a teishoku, +¥550",
+    "price": "¥660（定食と一緒の場合 +¥550）",
+    "section": "デザート Dessert (2026-07 book)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "饅頭の皮は小麦粉、中はクリームチーズ、アイスは乳。The shell is wheat pastry, the filling is cream cheese and the ice cream is dairy.",
+    "dish_key": "cheese_manju_ice"
+   },
+   {
+    "ja": "マンゴーソーダ（宮崎県産マンゴー果肉入り）",
+    "romaji": "mango soda",
+    "en": "Mango soda with pieces of Miyazaki mango in it. With a teishoku, +¥660",
+    "price": "¥770（定食と一緒の場合 +¥660）",
+    "section": "ソフトドリンク Soft drinks (2026-07 book)",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "果肉と炭酸。Fruit and carbonation.",
+    "dish_key": "mango_soda"
+   },
+   {
+    "ja": "平兵衛酢はちみつソーダ",
+    "romaji": "heibeizu hachimitsu soda",
+    "en": "Soda made with heibeizu — a rare citrus grown almost nowhere but Miyazaki — and honey. Gently sour. With a teishoku, +¥330",
+    "price": "¥440（定食と一緒の場合 +¥330）",
+    "section": "ソフトドリンク Soft drinks (2026-07 book)",
+    "gf": "",
+    "vegan": "no",
+    "note": "はちみつ使用のためヴィーガン不可。Contains honey, so not vegan.",
+    "dish_key": "heibeizu_honey_soda"
+   },
+   {
+    "ja": "日向夏ソーダ",
+    "romaji": "hyuganatsu soda",
+    "en": "Soda made with hyuganatsu, the Miyazaki citrus eaten with its white pith on — the shop's own note explains that is the trick to it",
+    "price": "¥440（定食と一緒の場合 +¥330）",
+    "section": "ソフトドリンク Soft drinks (2026-07 book)",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "柑橘と炭酸。Citrus and soda.",
+    "dish_key": "hyuganatsu_soda"
+   },
+   {
+    "ja": "愛のスコール（ご当地ドリンク）",
+    "romaji": "Ai no Squall",
+    "en": "Squall — the milky carbonated soft drink invented in Miyazaki in 1971 and still made by Nanyo Foods. Local to the point of being a mascot. With a teishoku, +¥330",
+    "price": "¥440（定食と一緒の場合 +¥330）",
+    "section": "ソフトドリンク Soft drinks (2026-07 book)",
+    "gf": "",
+    "vegan": "no",
+    "note": "乳性炭酸飲料のため乳成分あり。A milk-type carbonated drink — contains dairy.",
+    "dish_key": "ai_no_squall"
+   },
+   {
+    "ja": "だれやみコース（当日可）",
+    "romaji": "dareyami course",
+    "en": "Four courses: seasonal starters, sashimi of the day, the charcoal-grilled jitokko, and a Miyazaki hassun tray. 'Dareyami' is the local word for the evening drink that stops you being tired. Bookable same day",
+    "price": "¥4,500",
+    "section": "コース Courses (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "刺身の甘口醤油、八寸の煮物など醤油多用。Soy sauce runs through the sashimi and the hassun tray. Ask well in advance for a restricted diet.",
+    "dish_key": "dareyami_course"
+   },
+   {
+    "ja": "くわんね地鶏コース（当日可）",
+    "romaji": "Quwanne jidori course",
+    "en": "Eight courses: seasonal starters, sashimi of the day, a small hotpot, the charcoal-grilled jitokko, a palate cleanser, a Miyazaki hassun tray, then either katsuo-meshi or hiyajiru to finish, and dessert. 'Quwanne' is Miyazaki dialect for 'eat up'. Bookable same day",
+    "price": "¥6,500",
+    "section": "コース Courses (evening)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "〆に冷や汁を選ぶと麦味噌の可能性、小鍋・八寸にも醤油。If you pick hiyajiru as the finisher you may be getting barley miso; the hotpot and hassun are soy-seasoned regardless.",
+    "dish_key": "quwanne_jidori_course"
+   }
+  ]
  }
 }

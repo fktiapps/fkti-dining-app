@@ -26724,7 +26724,13 @@
     "level": "konnichiwa",
     "note": "A friendly traditional sweets shop on the Miyajima approach where you can point at what you want and buy individual momiji manju; a smile and basic Japanese greetings go a long way, and English is limited."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 0,
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0
   },
   {
    "id": "hiro_yamashiroya",
@@ -30403,7 +30409,13 @@
     "level": "english",
     "note": "The owner, known as Ron, speaks English and is used to welcoming foreign visitors, so an exchange student can order and chat comfortably at the counter."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 17,
+   "menu_vegan_count": 4,
+   "menu_vegan_meals": 4
   },
   {
    "id": "hiro_kaeruttei",
@@ -32109,7 +32121,13 @@
     "level": "japanese",
     "note": "A historic, well-loved local oden house where Japanese is the working language and payment is cash only, so come with some basic phrases or a translation app and be ready to point at what looks good on the counter."
    },
-   "mom_and_pop": false
+   "mom_and_pop": false,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 74,
+   "menu_vegan_count": 17,
+   "menu_vegan_meals": 1
   },
   {
    "id": "hiro_oden_suekichi",
@@ -32991,9 +33009,9 @@
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
    "gf_detail": "Not gluten-free oriented. Documented dishes (soy-sauce ramen, gyoza, soy-meat karaage, mapo tofu over rice) typically involve wheat via noodles, dumpling skins, batter, regular soy sauce, and wheat-gluten soy meat. A GF diner must ask; no GF accommodation is documented.",
-   "vegan_status": "full",
-   "vegan_label": "Fully vegan",
-   "vegan_detail": "Effectively fully plant-based: multiple reviews state it uses no meat, fish, or eggs, and it operates as shojin (Buddhist temple) style Chinese cuisine. Dishes such as mapo tofu and karaage use soy meat, with plant-based broth. No dairy was noted in described dishes, though dairy was not explicitly ruled out by every source; confirm if strictly vegan.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "[Held at \"some vegan options\" 2026-08-20] The shop's own menu in this app lists 1 item(s) with animal products (e.g. 親子丼). Effectively fully plant-based: multiple reviews state it uses no meat, fish, or eggs, and it operates as shojin (Buddhist temple) style Chinese cuisine. Dishes such as mapo tofu and karaage use soy meat, with plant-based broth. No dairy was noted in described dishes, though dairy was not explicitly ruled out by every source; confirm if strictly vegan.",
    "hours_raw": "11:00-15:00, 17:00-22:00 (sources vary slightly; Tabelog lists 11:30-14:00, 18:00-22:00). Hours and closed days may change; confirm with the shop before visiting.",
    "hours": {
     "0": [
@@ -33151,7 +33169,21 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 12,
    "menu_vegan_count": 0,
-   "menu_vegan_meals": 0
+   "menu_vegan_meals": 0,
+   "vegan_menu_contradiction": {
+    "date": "2026-08-20",
+    "items": 1,
+    "explicit": 1,
+    "examples": [
+     {
+      "item": "親子丼",
+      "what": "chicken",
+      "marked": "no",
+      "note": "Oyakodon is bound with beaten EGG — this is one of the few egg dishes here, so not vegan. The broth is soy-sauce based"
+     }
+    ],
+    "note": "This record's own researched menu names 1 item(s) containing animal products, so \"fully vegan\" is not right. Held at \"some vegan options\"."
+   }
   },
   {
    "id": "hiro_miyajima_cuillere",
@@ -35161,7 +35193,13 @@
     "level": "japanese",
     "note": "A tiny six-seat counter run by a couple where the chef chats passionately about the pork in Japanese, so a basic grasp of Japanese (or a translation app) and advance reservations will make the visit much smoother for a foreign student."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 4,
+   "menu_vegan_count": 11,
+   "menu_vegan_meals": 1
   },
   {
    "id": "hiro_tonkatsu_no_kikuya",
@@ -57745,7 +57783,7 @@
    "lng": 132.40698,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
    "vegan_detail": "No vegan claims are published, and the core lineup (rice-flour chiffon cakes, florentine, buttery baked goods) typically contains egg and dairy. Some items such as the basil crackers or 'kimagure' cookie sets may be plant-based, but this is unconfirmed — vegans should ask the shop about each item.",
