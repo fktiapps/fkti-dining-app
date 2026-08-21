@@ -316,6 +316,32 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .ack-confirm{background:var(--ver);color:#fff}
 .ack-back{background:#1A1E2E;color:#9AA0B6;margin-top:8px}
 
+/* Citations. Trust is the product on the GF and vegan layers, so a claim either
+   shows where it came from or says it cannot. The numbered marker is small but
+   deliberately a link colour — a reader must be able to tell at a glance which
+   claims they can check, and the muted "uncited" tag makes the other kind
+   impossible to mistake for evidence. */
+.cite{
+  color:var(--ver); font-weight:700; font-size:11px; text-decoration:none;
+  padding:0 2px; white-space:nowrap;
+}
+.cite:hover{text-decoration:underline}
+li.uncited{color:#7c8299}
+.nocite{
+  font-size:10px; font-weight:700; letter-spacing:.03em; text-transform:uppercase;
+  color:#8a6d1f; background:#FBF3DD; border:1px solid #d9bd6a;
+  border-radius:4px; padding:0 4px; margin-left:3px; white-space:nowrap;
+}
+.cites{margin-top:10px; font-size:11.5px}
+.cites ol{margin:4px 0 0; padding-left:20px; color:var(--muted)}
+.cites a{color:var(--ver); text-decoration:none; word-break:break-all}
+.cites a:hover{text-decoration:underline}
+.nocite-note{
+  margin-top:8px; font-size:11.5px; line-height:1.45;
+  color:#7a4a12; background:#FBF0DD; border:1px solid #d4a84b;
+  border-radius:6px; padding:5px 7px;
+}
+
 /* Shut, but coming back. Permanently closed records are hidden outright; this is
    for the ones with a reopening date, which a traveller planning a later trip
    still wants to see. Red rather than the amber of .outside: "you cannot eat here
@@ -679,7 +705,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v151';
+const APP_BUILD='dcd-v152';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1592,8 +1618,31 @@ async function fetchLive(p,out){
   </div>`;
  }
 }
+// Every safety claim carries its source, or says out loud that it has none.
+//
+// Trust is the whole product on the GF and vegan layers: a reader deciding whether
+// to eat somewhere has to be able to check the claim, not just read it. Previously
+// an uncited finding rendered IDENTICALLY to a sourced one — same bullet, same
+// weight — and 518 findings in this dataset have no source field at all. Prose that
+// reads as authoritative and cannot be traced is worse than no prose, because the
+// reader has no way to tell which kind they are looking at.
+//
+// So: sourced claims get a numbered, clickable citation. Uncited claims are marked
+// as uncited, in muted type, and the panel says how many of each there are.
 function renderSummary(j){
- const sec=(title,items)=> items&&items.length?`<b>${title}</b><ul style="margin:4px 0 10px;padding-left:18px">${items.map(it=>`<li>${it.text||it} ${it.source?`<a href="${it.source}" target="_blank" rel="noopener" style="color:var(--ver)">source</a>`:''}</li>`).join('')}</ul>`:'';
+ const cites = [];                       // one entry per distinct source, numbered
+ const citeNo = u => { const i = cites.indexOf(u); return i >= 0 ? i + 1 : cites.push(u); };
+ let sourced = 0, uncited = 0;
+
+ const li = it => {
+  const text = (it && it.text) || (typeof it === 'string' ? it : '') || '';
+  const src  = it && it.source;
+  if (src) { sourced++; const n = citeNo(src);
+   return `<li>${escHtml(text)} <a class="cite" href="${escHtml(src)}" target="_blank" rel="noopener" title="${escHtml(src)}">[${n}]</a></li>`; }
+  uncited++;
+  return `<li class="uncited">${escHtml(text)} <span class="nocite" title="No source recorded for this claim — treat it as unverified">uncited</span></li>`;
+ };
+ const sec=(title,items)=> items&&items.length?`<b>${title}</b><ul style="margin:4px 0 10px;padding-left:18px">${items.map(li).join('')}</ul>`:'';
  const fryer = j.dedicated_fryer===true
    ? `<div style="font-weight:700;color:var(--safe);margin-bottom:8px">✓ Dedicated fryer reported</div>`
    : j.dedicated_fryer===false
@@ -1606,9 +1655,13 @@ function renderSummary(j){
    ${sec('Staff & allergy handling',j.staff_allergy_handling)}
    ${sec('What reviewers liked',j.positives)}
    ${(!j.gf_cross_contamination?.length && !j.soy_sauce_wheat?.length && !j.vegan_cross_contact?.length)?'<div style="color:#46506b">No specific cross-contamination reports surfaced — that’s not a guarantee; confirm with staff.</div>':''}
+   ${cites.length?`<div class="cites"><b>Citations</b><ol>${cites.map(u=>`<li><a href="${escHtml(u)}" target="_blank" rel="noopener">${escHtml(hostOf(u))}</a></li>`).join('')}</ol></div>`:''}
+   ${uncited?`<div class="nocite-note">⚠ ${uncited} of ${sourced+uncited} claim${sourced+uncited===1?'':'s'} above ${uncited===1?'has':'have'} no recorded source. Treat ${uncited===1?'it':'them'} as unverified and confirm with staff.</div>`:''}
    <div style="font-size:11px;color:var(--muted);margin-top:8px">Confidence: ${j.confidence||'—'} · as of ${j.last_checked||'recently'} · always confirm with staff.</div>
  </div>`;
 }
+// Show the reader who is talking, not a bare URL.
+function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(_){ return u; } }
 
 // ---------- Menu scan: "what can I eat here?" (GF / vegan) ----------
 function downscaleImage(file,maxPx=1400,quality=0.72){

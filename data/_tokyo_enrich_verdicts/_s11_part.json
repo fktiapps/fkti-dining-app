@@ -407,5 +407,153 @@
   },
   "sources": [],
   "enrich_note": "NOT FOUND. The name is corrupt on its face — 个 is a simplified-Chinese character and searching it returns only Chinese articles about university canteens. Five legs, all HTTP 200: Yahoo Japan \"个食堂\"; \"个食堂\" OR \"ひとさじ\" 定食 渋谷 神泉; \"ひとさじ\" 食堂 東京 定食; site:tabelog.com ひとさじ 東京 (returns HITOSAJI, a curry shop in Ōsaki, and 創作麺 ひとすじ in Hōnanchō); 食堂 ひとさじ 渋谷区 (returns 渋谷食堂ひとしな at 渋谷区宇田川町33-1, one kana away but in Udagawachō and, per a direct fetch of Tabelog 13289211, 長期休業中 since January 2024). No teishoku shop named ひとさじ trades in Shinsen. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__445",
+  "status": "not_found",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no soba shop called 神月 exists at Ikejiri-Ōhashi, anywhere in Shibuya-ku, or anywhere in Tokyo",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "Unverified. The light record says 渋谷区池尻 / Ikejiri-Ōhashi (Tōkyū Den-en-toshi line) — but 池尻 is in Setagaya-ku, not Shibuya-ku, the same sweep-quality error this shard's tempura record (tokyo3__438) carries.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. The light record's 'ask' is unsourced. Recorded for the file: a 老舗 soba house is not a gluten-free option by default; nihachi noodles are 20 percent wheat flour, the board is dusted with 打ち粉 wheat flour, and the tsuyu is wheat soy sauce.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. 'limited' was inferred from the word 蕎麦 and is unsupported; soba tsuyu is bonito dashi by default.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, because no such business exists. 神月 is a real Japanese restaurant name, but nowhere near this pin and never on soba: Tabelog's nationwide keyword search returns らーめん神月 and らーめん神月 小倉町店 (Chiba, Wakaba-ku and Ogura-dai), 神月 in Tsudanuma (seafood izakaya), 神月 神戸六甲道店 (Hyōgo, motsunabe), 神月 in Iwakuni (Yamaguchi, ramen/shokudō), 飛騨牛茶寮 神月 in Gero (Gifu, Hida beef), 旬味 神月 in Hirano (Osaka, Japanese) and 和奏 神月 平塚店 (Kanagawa) — not one in Tokyo and not one a soba shop. The prefix そば家 is likewise real but provincial: Tabelog's nationwide list for it runs 十割そば家 (Akita), そば家 幸 (Okinawa), そば家 一創庵 (Ehime), そば家 和味 (Ibaraki), 雪むろそば家 小さな空 (Niigata), そば家やまき (Fukushima), そば家 平朗 (Kanagawa) and 大城そば家 (Okinawa); the only Tokyo entries are 肉そば家 笑梟 in Nishi-Shinjuku and しなそば家 in Kachidoki, both ramen-adjacent and neither called 神月. The nearest name-alike to this pin is きそば 光月 at 世田谷区下馬4-2-9, and Yahoo's own map card marks it 閉業 (closed) — a different character, a different shop, and out of business, so not a candidate. The soba shops that actually trade at Ikejiri-Ōhashi are そば懐石 おきな, 東京 土山人, 伊勢海老蕎麦 清正, 花しずく, 朝日屋, そば処 しおじま, 長寿庵 and 狐虎.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Five legs, every one of which actually ran and returned HTTP 200, all negative. (1) Yahoo Japan そば家 神月 東京 — no matching business; top hits are 松月庵 in Daikanyama and general soba listicles. (2) Yahoo Japan exact-phrase \"そば家 神月\" — Yahoo reports 「順番も含め完全に一致するウェブページは見つかりませんでした」 and falls back to 出雲そば「神在月」, a packaged Izumo soba product from Shimane. (3) Yahoo Japan site:tabelog.com 神月 そば 東京 — returns そばがみ (Hibiya), 手打ちそば 石月 新丸ビル, 松月 (Aoi), 神山 (Shinsen) and two Tabelog reviewers whose handle is 神月うさ; no shop named 神月. (4) Yahoo Japan 神月 そば 池尻大橋 — returns 池尻蕎麦 (世田谷区池尻3-2-3), 長寿庵, 土山人 and NAVITIME's soba list for the station, with no 神月. (5) Tabelog itself — its nationwide free-word search for 神月, plus its Ikejiri-Ōhashi soba area list A1317/A131705 read in full (16 shops). Note on method: Tabelog's short-form endpoint /rstLst/?sk= silently ignores the keyword and returns a generic promoted-listing page, so it was NOT counted as a negative; the working search URL is the one /rst/rstsearch/ 302-redirects to, and that is the one used.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced. If a human wants a real soba option at this pin, そば懐石 おきな and 東京 土山人 are both on Tabelog's Ikejiri-Ōhashi list — but they are different businesses and would need their own records."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1317/A131705/rstLst/soba/"
+  ],
+  "enrich_note": "NOT FOUND. Five legs, all of which ran and returned HTTP 200: Yahoo Japan そば家 神月 東京; Yahoo Japan exact-phrase \"そば家 神月\" (Yahoo explicitly reports no exact match and falls back to a Shimane packaged-soba product, 出雲そば「神在月」); Yahoo Japan site:tabelog.com 神月 そば 東京; Yahoo Japan 神月 そば 池尻大橋; and Tabelog itself — a nationwide free-word search for 神月, which returns seven real 神月 businesses in Chiba, Hyōgo, Yamaguchi, Gifu, Osaka and Kanagawa, none in Tokyo and none serving soba, plus a full read of the Ikejiri-Ōhashi soba area list A131705 (16 shops: そば懐石 おきな, 東京 土山人, 伊勢海老蕎麦 清正, 花しずく, 朝日屋, そば処 しおじま, 長寿庵, 狐虎, 日日うどん, 十方 鮨, 和ビストロ 一, 酒と麺 タイノタイ 池尻本店, らんぷ, 食堂 さんた, よいしょ, 笑吉 — no 神月). The light record also files 池尻 under Shibuya-ku when it is Setagaya-ku. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3_",
+  "name": "六厘舎 東京ラーメンストリート店",
+  "status": "confirmed",
+  "lat": 35.68038,
+  "lng": 139.76788,
+  "loc_precise": true,
+  "address_ja": "〒100-0005 東京都千代田区丸の内1-9-1 東京駅一番街 B1F 東京ラーメンストリート内",
+  "enrich_confidence": "high",
+  "cuisine": "The tsukemen that set off Japan's thick-broth craze — extra-thick noodles dipped in a pork-and-seafood broth simmered down and then crushed by hand until the ingredients lose their shape. Tabelog's budget band is under ¥1,000, and this is the only 六厘舎 that serves a 朝つけめん, from 07:30.",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Tokyo Ramen Street, B1 of Tokyo Station Ichibangai on the Yaesu side — inside the station complex, 120 m from Tokyo Station (JR lines and the Marunouchi line); come out of the Yaesu South ticket gate and take the stairs signed 東京駅一番街 before you reach the street.",
+  "website": "https://rokurinsha.com/",
+  "menu_url": "https://rokurinsha.com/menu/",
+  "hours_raw": "07:30～09:45（L.O. 09:30）／10:00～23:00（L.O. 22:30）　月～日・祝日・祝前日とも同じ、定休日なし",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "A firm no, and not a close call. The shop's whole identity is 極太麺 — thick Chinese-style wheat noodles — so wheat is the dish, not a contaminant, and one boiler serves a 26-seat counter. The tsukedare is a long-reduced pork-and-fish broth finished with soy sauce, which contains wheat by default in Japan and is nowhere claimed to be a wheat-free tamari. 松富士食品 does publish an allergen chart for the brand at rokurinsha.com/storage/rokurinsha-allergen.pdf — it was downloaded successfully (HTTP 200, 685 KB) but is a scanned/outlined PDF whose text could not be extracted here, so its contents are NOT being reported. Nothing on the brand site, on Tabelog or on the Tokyo Station Ichibangai listing offers a gluten-free noodle or any wheat-free handling.",
+  "vegan_status": "no",
+  "vegan_detail": "No. The broth is animal on both axes — pork bones plus fish, with a 魚粉 finish that is part of the house style — and the standard bowls carry chāshū and a marinated egg. There is no plant-based broth, no vegan bowl, and no way to have the noodles without the dipping broth.",
+  "chef_bio": {
+   "chef_name": "三田遼斉 (Mita; the given name is written 遼斉 on Japanese Wikipedia and 遼生 in some ramen blogs, so treat the reading as unsettled)",
+   "roles": [
+    "founder of 六厘舎 (2005)"
+   ],
+   "origin": "Ōsaki, Shinagawa-ku, Tokyo — where the first shop opened",
+   "background": "六厘舎 opened on 18 April 2005 as a single shop in Ōsaki, Shinagawa-ku, and very nearly failed: the first months were quiet enough that Japanese Wikipedia calls it 危機的状況. What saved it was the founder abandoning the safe recipe for the one he actually wanted — 超濃厚スープ・極太麺, an ultra-concentrated broth with extra-thick noodles. Magazines and television picked it up, it took the tsukemen prize at TOKYO1週間's ramen-of-the-year awards in both 2006 and 2007, and the queue became the story: routinely more than a hundred people, a standard wait of about two hours, two and a half hours or more over long weekends. The queue is also what killed the original shop — the neighbours had had enough and no fix was in sight, so the Ōsaki honten closed on 29 August 2010, with people queueing overnight for the last 350 bowls. The brand survived through its branches, including this Tokyo Station shop, which had opened on 17 June 2009. The honten came back one day a week from January 2012 (Saturdays only), then reopened properly at Ōsaki With City on 18 April 2014 — the founding anniversary, to the day. A fire near that dining room's air conditioner on 9 March 2015 shut it for eight months; it reopened on 27 November 2015. The house style is described on the company's own About page as 「ガサツで荒々しく男らしいつけめん」 — rough, unrefined, masculine — and the broth is made by simmering a large volume of ingredients for a long time and then crushing them by hand until they lose their form, to pull out the last of the umami. The brand is run by 株式会社松富士食品 of 千代田区内神田2-2-5, incorporated in November 2008 against a founding date of 18 April 2005, which also operates 舎鈴, トナリ, ジャンクガレッジ and 次念序; in December 2025 松屋フーズホールディングス bought its parent 松富士 outright, for about ¥9.1 billion, to expand into tsukemen, completing on 5 January 2026. Whether the founder is still in the kitchen is not stated in anything that was read, and is not claimed here.",
+   "philosophy": "「ガサツで荒々しく男らしいつけめん」 — deliberately rough and unrefined; and 現在進行形の味, a flavour still being adjusted, so the company is explicit that today's bowl is not the founding recipe.",
+   "specialty": "つけめん and 特製つけめん with the ultra-thick noodles; 味玉つけめん; 生七味つけめん; 中華そば; and, only at this branch, 特製朝つけめん served from 07:30.",
+   "anecdotes": [
+    {
+     "text": "The Ōsaki original shut on 29 August 2010 purely because of its own queue — over a hundred people at a time, a two-hour standard wait, and neighbours who could no longer live with it. People queued overnight for the last 350 bowls.",
+     "source": "https://ja.wikipedia.org/wiki/%E5%85%AD%E5%8E%98%E8%88%8E"
+    },
+    {
+     "text": "It reopened at Ōsaki With City on 18 April 2014 — the anniversary of the 2005 founding, to the day.",
+     "source": "https://ja.wikipedia.org/wiki/%E5%85%AD%E5%8E%98%E8%88%8E"
+    },
+    {
+     "text": "The broth is not merely simmered: after hours in the pot the ingredients are crushed by hand until they lose their form, which is how the company describes getting the last of the umami out.",
+     "source": "https://rokurinsha.com/about/"
+    }
+   ],
+   "japanese_sources_summary": "The brand site rokurinsha.com carries the house style and the menu, and its About page gives the 「ガサツで荒々しく」 line and the hand-crushing method. The operator's store locator (shop.mtfj.co.jp/stores/61) gives this branch as 六厘舎 東京ラーメンストリート店, 〒100-0005 東京都千代田区丸の内1-9-1 東京駅一番街B1F, 03-3286-0166, 07:30–09:45 and 10:00–23:00 every day of the week. Tokyo Station Ichibangai's own shop page repeats the B1 Tokyo Ramen Street location, the phone number and the two service periods, and calls out the morning tsukemen. Tabelog 13093047 gives 26 seats (10 counter, 8 across two-tops), 120 m from Tokyo Station, opened 17 June 2009, budget under ¥999, cash plus transport e-money, and a run of ラーメン TOKYO 百名店 selections from 2017 through 2025. Japanese Wikipedia, read from the raw wikitext, supplies the founder, the 2005-04-18 founding in Ōsaki, the TOKYO1週間 awards, the 2010 closure and its cause, the 2014 reopening, the 2015 fire, the corporate details of 松富士食品 and the 2025–26 松屋フーズ acquisition.",
+   "confidence": "high",
+   "sources": [
+    "https://ja.wikipedia.org/wiki/%E5%85%AD%E5%8E%98%E8%88%8E",
+    "https://rokurinsha.com/about/",
+    "https://shop.mtfj.co.jp/stores/61",
+    "https://tabelog.com/tokyo/A1302/A130201/13093047/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Wheat is the product, not a trace: 極太麺 are thick wheat noodles and one boiler serves the whole 26-seat counter. There is no gluten-free noodle and no separate line.",
+     "source": "https://rokurinsha.com/menu/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The dipping broth is finished with soy sauce; no tamari or wheat-free soy is mentioned on the brand site, the operator's store page or Tabelog.",
+     "source": "https://rokurinsha.com/about/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork-and-fish broth with a fish-powder finish, chāshū and marinated egg on the standard bowls. Nothing on the menu is animal-free.",
+     "source": "https://rokurinsha.com/menu/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "An allergen chart PDF is published for the brand and was retrieved successfully, but it is a scanned/outlined document whose text could not be extracted, so no claim is made about what it says. Treat the link as something to open on a phone at the counter, not as an assurance.",
+     "source": "https://rokurinsha.com/storage/rokurinsha-allergen.pdf"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Ticket-machine ordering and a managed queue mean no negotiation in Japanese is needed — which cuts both ways: easy to order, but nobody to ask about ingredients mid-service.",
+     "source": "https://tokyo-station-guide.com/tokyo/rokurinsha/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "About as approachable as a famous Tokyo ramen shop gets: it is inside Tokyo Station, signposted in English along Tokyo Ramen Street, and you queue, choose from the pictures while you wait, then buy a ticket from the machine before sitting. Staff hand out aprons so the thick broth does not ruin your shirt, and one first-timer's account records a 23-minute wait behind about twenty people at 1:15 pm. Regular size is filling; large is a lot. Cash or transport IC (Suica and the like); Tabelog lists no credit cards. 26 seats, so it is a counter meal, not a table to linger at."
+  },
+  "sources": [
+   "https://rokurinsha.com/",
+   "https://rokurinsha.com/about/",
+   "https://rokurinsha.com/menu/",
+   "https://rokurinsha.com/storage/rokurinsha-allergen.pdf",
+   "https://shop.mtfj.co.jp/stores/61",
+   "https://www.tokyoeki-1bangai.co.jp/shop/detail/?cd=000044",
+   "https://tabelog.com/tokyo/A1302/A130201/13093047/",
+   "https://ja.wikipedia.org/wiki/%E5%85%AD%E5%8E%98%E8%88%8E",
+   "https://tokyo-station-guide.com/tokyo/rokurinsha/"
+  ],
+  "enrich_note": "CONFIRMED. The light record's 六厘舎 / 丸の内・東京駅 / つけ麺 is right on every count; what it lacked was the branch and the address. 六厘舎 has five Tokyo locations (Ōsaki, Tokyo Station, Skytree Solamachi, Haneda, Ueno), and the one at this pin is 六厘舎 東京ラーメンストリート店 at 千代田区丸の内1-9-1, Tokyo Station Ichibangai B1 — verified against the operator's own store locator, the Tokyo Station Ichibangai shop page and Tabelog 13093047, all of which agree on the address, the phone number (03-3286-0166) and the two daily service periods. The name field has been made branch-specific for that reason; this is a disambiguation, not a name correction. Coordinates moved from the neighbourhood centroid to the Tokyo Ramen Street food court itself (OpenStreetMap node 4646514992, 35.68038 / 139.76788); loc_precise is now true. GF is a hard no — thick wheat noodles are the dish. The brand's allergen PDF was fetched successfully but is unreadable as text, so nothing is asserted from it."
  }
 ]

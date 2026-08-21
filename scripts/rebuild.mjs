@@ -39,6 +39,9 @@ const STEPS = [
   // slug reaching the filter chips.
   ['normalize-cuisine.mjs',           're-map slugs introduced by the merge steps', ['--lenient']],
   ['quarantine-orphan-menus.mjs',      'pull menus whose record was deduped away', ['--apply']],
+  // Must follow every tier-setting pass. A GF label above "ask" that cites nothing
+  // gets held down until a source is attached — see the script header.
+  ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
   // Last, because it hashes the shipped files and must see their final state. The

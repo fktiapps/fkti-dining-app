@@ -29,7 +29,12 @@ const TOP_TIER = new Set(['dedicated','high']);
 const CLAIMS_SAFER = new Set(['dedicated','high','options']);
 const EVIDENCE_FIELDS = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact',
                          'staff_allergy_handling','positives'];
-const evidenceCount = r => EVIDENCE_FIELDS.reduce((n, f) => n + ((r.safety?.[f]) || []).length, 0);
+// Only CITED findings count. Counting bare findings was a hole: 518 findings across
+// 68 Tokyo records are stored as plain strings with no source field at all, and they
+// sailed through a check that merely asked whether findings existed. Prose that
+// cannot be traced is not evidence for a safety label, however authoritative it reads.
+const isCited = e => typeof e === 'object' && e && typeof e.source === 'string' && /^https?:\/\//.test(e.source);
+const evidenceCount = r => EVIDENCE_FIELDS.reduce((n, f) => n + ((r.safety?.[f]) || []).filter(isCited).length, 0);
 
 const man = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
 const bounds = Object.fromEntries(man.cities.map(c => [c.id, c.bounds]));
@@ -103,7 +108,7 @@ for (const city of CITIES) {
     // the pipeline should refuse to ship an unevidenced safety claim, not warn about it.
     if (!r.hidden && CLAIMS_SAFER.has(r.gf_confidence) && evidenceCount(r) === 0)
       err(city, `${at}: gf_confidence="${r.gf_confidence}" with no safety evidence at all — ` +
-                'a tier above "ask" has to say why (REVIEW_PROTOCOL.md)');
+                'a tier above "ask" has to cite a source (REVIEW_PROTOCOL.md)');
 
     if (TOP_TIER.has(r.gf_confidence)) {
       topTier++;

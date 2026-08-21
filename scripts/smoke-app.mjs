@@ -106,6 +106,38 @@ const drive = await page.evaluate(async () => {
   render();
   await sleep(900);
 
+  // Citations are the trust mechanism on the GF/vegan layers: a claim either shows
+  // where it came from or says it cannot. Assert BOTH halves render — a sourced
+  // finding must produce a clickable citation, and an uncited one must be marked as
+  // uncited rather than passing as evidence.
+  await ensureCity(MANIFEST.cities.find(c => c.id === 'tokyo'));
+  const url = u => typeof u === 'string' && /^https?:\/\//.test(u);
+  const EVF = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact','staff_allergy_handling','positives'];
+  const findings = p => EVF.flatMap(f => (p.safety && p.safety[f]) || []);
+  const all = [...state.cities.tokyo.places, ...state.cities.nagano.places];
+  const cited = all.find(p => findings(p).some(e => e && url(e.source)));
+  const bare  = all.find(p => findings(p).length && findings(p).every(e => typeof e === 'string'));
+  if (cited) {
+    _renderDetail(cited);
+    tellMore(cited);            // the panel is behind the 🛡️ Food Safety button
+    await sleep(900);
+    out.citedShop = cited.name.slice(0, 24);
+    out.citeLinks = document.querySelectorAll('a.cite').length;
+    out.citeList  = document.querySelectorAll('.cites ol li').length;
+  }
+  if (bare) {
+    _renderDetail(bare);
+    tellMore(bare);
+    await sleep(900);
+    out.bareShop = bare.name.slice(0, 24);
+    out.uncitedTags = document.querySelectorAll('.nocite').length;
+    out.uncitedNote = document.querySelectorAll('.nocite-note').length;
+    out.bareCiteLinks = document.querySelectorAll('a.cite').length;
+  }
+  state.active = 'nagano';
+  render();
+  await sleep(600);
+
   const withRamen = state.cities.nagano.places.find(p => p.ramen);
   if (withRamen) {
     try {
@@ -143,6 +175,10 @@ if (!drive.naganoPlaces) fail.push('city switch to nagano loaded no places');
 if (!drive.outsideBadges) fail.push('no outside_city badge rendered in nagano (9 records carry one)');
 if (!drive.tokyoHidden) fail.push('no hidden Tokyo records — the existence pass should have hidden some');
 if (drive.hiddenLeaked) fail.push(drive.hiddenLeaked + ' hidden record(s) rendered in the list');
+if (!drive.citeLinks) fail.push('a record with sourced safety findings rendered no [n] citation links');
+if (!drive.citeList) fail.push('citation list did not render for a sourced record');
+if (drive.bareShop && !drive.uncitedTags) fail.push('uncited findings rendered with no "uncited" marker — they read as evidence');
+if (drive.bareShop && !drive.uncitedNote) fail.push('no summary warning shown for a record whose claims are all uncited');
 if (drive.detailError) fail.push('detail sheet threw: ' + drive.detailError);
 if (errors.length) fail.push(errors.length + ' console error(s)');
 if (failedRequests.length) fail.push(failedRequests.length + ' failed request(s)');
