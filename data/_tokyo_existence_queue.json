@@ -252,6 +252,34 @@
   "note": "NOT FOUND — and specifically, not a shop name. 「新橋 蕎麦」 is a district plus a genre. Four legs ran and returned HTTP 200, all negative: Yahoo Japan exact-phrase \"新橋蕎麦\" 店 (every hit uses the string descriptively — a Retty review of 芝新橋 おそば 能登治, a hashtag on かめや 新橋店, Shimbashi soba round-ups); Tabelog's nationwide free-word search for 新橋蕎麦 and again for 新橋そば, both of which return only real, differentl"
  },
  {
+  "id": "tokyo3__9",
+  "name": "つけ麺 大",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs actually run, and what each returned: (1) Tabelog nationwide free-word search, three spellings — tabelog.com/rstLst/?sw=つけ麺大, ?sw=つけめん 大, ?sw=つけ麺　大, each HTTP 200 with 20 results, none named 「つけ麺 大」; nearest are つけ麺 大輝 (Ōta-ku), つけ麺 大和 (Adachi-ku), つけ麺 大将 (Okayama), つけ麺 大雄 (Kanagawa) and the 元祖中華つけ麺大王 chain. (2) Full Tabelog ramen listing for the record's own area, tabelog.com/toky"
+ },
+ {
+  "id": "tokyo3__13",
+  "name": "ラーメン・ロック",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs actually run, and what each returned: (1) Tabelog nationwide free-word search, two spellings — tabelog.com/rstLst/?sw=ラーメン ロック and ?sw=らーめん ロック, both HTTP 200 with 20 results each — no 「ラーメン・ロック」; the only near-namesake is ラーメンロックマウンテン (tabelog 13292884), which is at Omotesandō in Shibuya-ku, not Marunouchi, and is a different name, so no correction is claimed. (2) Full Tabelog ram"
+ },
+ {
+  "id": "tokyo3__15",
+  "name": "八幡屋 本店",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND at the stated location. Legs actually run, and what each returned: (1) Yahoo Japan web search for 八幡屋 ラーメン 丸の内 東京駅 — this one leg did answer HTTP 200 (fetched through a second client while direct curl was rate-limited) and returned enjoytokyo's 八幡屋 spot page, yawataya.co.jp's stockist list, unagimen-yawataya.com, and otherwise unrelated Tokyo Station ramen articles; following the first o"
+ },
+ {
+  "id": "tokyo3__21",
+  "name": "四川担担麺 阿吽 キッテグランシェ店",
+  "status": "closed_permanently",
+  "hidden": "closed",
+  "note": "PERMANENTLY CLOSED. The shop existed and the light record's name is correct, but it is shut. Evidence: (1) tabelog.com/tokyo/A1302/A130201/13231656/ fetched HTTP 200 with a desktop UA is headed 【閉店】 and carries the line 「このお店は現在閉店しております」; (2) the Japanese blog reerac.net, which reviewed the shop in 2022, has since added a dated note at the top of its post — 「※「四川担々麺 阿吽 キッテグランシェ店」は2024年2月末に閉店しました」 "
+ },
+ {
   "id": "tokyo3_y_61",
   "name": "天麩羅 えびのや 八重洲地下街店",
   "status": "closed_permanently",
@@ -374,6 +402,69 @@
   "note": "RELOCATED, NOT MISLOCATED. 大和寿司 is real and open, but it left Tsukiji with the market: Tabelog states 「このお店は「中央区築地5-2-1」から移転しています」, gives the current address as 江東区豊洲6-3-1 inside Toyosu Market's block 5, an opening date of 13 October 2018, and the remark 「築地場内市場の大和寿司が豊洲市場に移転」. The light record's 中央区築地 pin was about 9 km out; coordinates replaced with the Toyosu ones, loc_precise:true. Still Tokyo,"
  },
  {
+  "id": "tokyo3__93",
+  "name": "なか目",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and results: Yahoo Japan on the exact phrase 「\"なか目\"」 with 東京/飲食店/食べログ and again with 店名/レストラン — both HTTP 200, both returned no business of that name, with the engine proposing 「中目」 and surfacing only Nakameguro pages and coincidental mid-sentence matches; Yahoo Japan on 「築地 なか目 カツ丼 店」 — HTTP 200, returned Tsukiji's real katsudon shops (丸七, かつ平, 幸軒, 豊ちゃん, かつ誠, 和幸 聖路加ガーデン築地店"
+ },
+ {
+  "id": "tokyo3__94",
+  "name": "つきじ海賓",
+  "status": "mislocated",
+  "hidden": "not_in_city",
+  "note": "MISLOCATED RECORD — the business exists but not here, and not as a restaurant. 「つきじ海賓」 is a 宅配寿司 (delivery sushi) chain run by サンライズ・サービス, and its own store data — fetched directly from json_shop.php, the file its JavaScript store-finder reads — lists fifty branches, of which five are in Tokyo (Arakawa, Nerima, Katsushika, Adachi, Machida) and none is in Chūō-ku or has 築地 in its address. The neare"
+ },
+ {
+  "id": "tokyo3__95",
+  "name": "竹若",
+  "status": "closed_permanently",
+  "hidden": "closed",
+  "note": "PERMANENTLY CLOSED. 「竹若」 was a real Tsukiji name but the business behind it is gone. Both Tsukiji premises — 鮨 竹若 本館 (中央区築地1-13-11 高橋ビル1F, opened 2001-08-08) and さかな竹若 築地本店 (中央区築地4-7-5 築地KYビル B1F) — carry Tabelog's 【閉店】 banner, as do 鮨 竹若 別館, 築地竹若 池袋店 and たけわか 築地駅前店. Japanese Wikipedia's corporate article confirms why: 株式会社竹若 was taken over by Asakuma in February 2020, closed every branch by March"
+ },
+ {
+  "id": "tokyo3__98",
+  "name": "日本橋海鮮丼 つじ半 日本橋本店",
+  "status": "substituted",
+  "drift_km": 1.6,
+  "note": "Confirmed, but neither the location nor the cuisine in the light record was right. 「つじ半」 is 日本橋海鮮丼 つじ半 日本橋本店 at 中央区日本橋3-1-15 久栄ビル1F — a kaisen-don counter in Nihonbashi, about 1.8 km north of the Tsukiji pin the sweep gave it, not in 中央区築地 at all. It is also not a 玉子焼き/卵焼き専門 shop; that label appears to have slipped a row in the sweep, since the record below it carries 天ぷら against the actual tamago"
+ },
+ {
+  "id": "tokyo3__101",
+  "name": "文花",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. GENERIC PHRASE: 「文花」 is a Tokyo place name — 墨田区文花, a residential district in Sumida-ku about 5 km north-east — not a business name, so this record may never have named a shop at all. Searches run and results: Yahoo Japan on 「文花 築地 中央区 和食 店 食べログ」 — HTTP 200, no business matched, and the Tabelog category pages it returned carried Tabelog's own 未指定：文花 marker meaning the term went unmatche"
+ },
+ {
+  "id": "tokyo3__103",
+  "name": "本鮪つなぎ",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and results: Yahoo Japan on the exact phrase 「\"本鮪つなぎ\"」 — HTTP 200, and the engine answered explicitly that no page matches the phrase in that order (「順番も含め完全に一致するウェブページは見つかりませんでした」); Yahoo Japan on 「本鮪つなぎ 東京 店」 — HTTP 200, returned real but differently-named tuna houses (築地 うに虎 at 築地4-9-7, 二代目鮪 囮, つきじ鈴富) plus a Kyokuyo farmed-bluefin brand document, no match; Yahoo Japan on"
+ },
+ {
+  "id": "tokyo3__105",
+  "name": "月島もんじゃ界隈 - 築地近辺",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "GENERIC PHRASE: 「月島もんじゃ界隈 - 築地近辺」 is not a garbled shop name, it is an area description — 界隈 means 'the neighbourhood of', so the string reads 'the Tsukishima monjayaki quarter, near Tsukiji', and the cuisine text the sweep attached ('Okonomiyaki & Monjayaki, traditional local favorite') is a category label rather than a shop's own description. This record therefore never named a business, which i"
+ },
+ {
+  "id": "tokyo3__106",
+  "name": "築地 福寿司",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and results: Yahoo Japan on 「築地 福寿司 中央区築地 寿司 住所」 — HTTP 200, whose local module listed fourteen 福寿司 shops ranked by distance from Tsukiji station with the nearest at 4.1 km; Yahoo Japan on 「\"福寿司\" 築地 場外市場」 — HTTP 200, returned other Tsukiji sushi houses (築地すし一番 4丁目場外市場店 at 築地4-8-6, 築地玉寿司) and no 福寿司; Yahoo Japan on 「\"福寿司\" 東京 寿司店 住所」 — HTTP 200, forty-eight Tokyo-area results"
+ },
+ {
+  "id": "tokyo3__107",
+  "name": "築地 大門",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. GENERIC PHRASE: 「築地 大門」 pairs two Tokyo place names rather than naming a business — 大門 is a Toei Asakusa/Ōedo line station and the 芝大門 district in Minato-ku about 2.5 km away, and also the Hakodate quarter that labels 函館ラーメン — so this record may never have named a shop. Searches run and results: Yahoo Japan on 「築地 大門 ラーメン 中央区築地 店」 — HTTP 200, its local module returning 128 ramen shops a"
+ },
+ {
   "id": "tokyo3__110",
   "name": "築地 中島",
   "status": "unresolved",
@@ -435,6 +526,69 @@
   "status": "not_found",
   "hidden": "unverified",
   "note": "NOT FOUND. Five Yahoo Japan legs ran, all HTTP 200, all returning results and none returning this business. 「福ろ 人形町」 gave 萬福楼, 十四郎 and 文福 人形町, with Yahoo flagging 未指定：ろ and 未指定：福 — the engine reporting it could not match part of the name; the quoted exact-string search gave only 箸福ろ chopstick sleeves, an Okinawan 福ろール roll cake and 福ろうじ商店街 in Osaka; 「福ろ 日本橋 人形町 中央区 料理」 gave 福 (人形町/食堂), 中華料理 福 (中央区"
+ },
+ {
+  "id": "tokyo3__125",
+  "name": "竜雲",
+  "status": "mislocated",
+  "hidden": "not_in_city",
+  "note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. The light record read 「竜雲」, ラーメン・つけ麺, 人形町駅周辺. A nationwide Tabelog keyword search (s.tabelog.com/rstLst/?sk=竜雲, HTTP 200, 68件) returns exactly one restaurant with that name: 竜雲 at 香川県高松市仏生山町甲3207-2 法然寺境内, whose Tabelog genre is うどん、ラーメン、つけ麺 — the same 「ラーメン・つけ麺」 string the sweep recorded, which is what makes the mislocation more likely t"
+ },
+ {
+  "id": "tokyo3__128",
+  "name": "江ろ幸",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide keyword search, s.tabelog.com/rstLst/?sk=江ろ幸 with an iPhone user-agent — HTTP 200, 0件, zero restaurants of that name anywhere in Japan. (2) Yahoo Japan 「site:tabelog.com 江ろ幸 うなぎ」 — HTTP 200, ten results, none of them a shop of that name (Fukuyama and Shiga unagi list pages). (3) Yahoo Japan 「江ろ幸 日本橋」 — HTTP 200, eight results,"
+ },
+ {
+  "id": "tokyo3__130",
+  "name": "大将",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. GENERIC PHRASE: 「大将」 is not a business name but the ordinary Japanese term of address for the chef-owner standing behind a tempura, sushi or yakitori counter — the word a customer calls out to order — so this record most likely never named a business at all, which is a different failure from a shop that merely could not be located. Searches run, and what each returned: (1) Tabelog natio"
+ },
+ {
+  "id": "tokyo3__131",
+  "name": "釜めし 太郎",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide keyword search sk=釜めし 太郎 (HTTP 200) — 0件; the only fuzzy hits were めし太郎, a shokudō in Kasugai, Aichi, and another めし太郎 in Kinokawa, Wakayama. (2) The same search without the space, sk=釜めし太郎 (HTTP 200) — again 0件 and the same two unrelated shops. (3) Tabelog area search sa=人形町 sk=釜めし (HTTP 200) — only 2件 in the neighbourhood, 魚"
+ },
+ {
+  "id": "tokyo3_k",
+  "name": "黒船",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog area search sa=茅場町 sk=黒船 (HTTP 200, 123 fuzzy hits) — nearest same-name results were 黒船 松屋銀座店 at 1,498 m (the wagashi brand's department-store counter, tabelog 13047986), 黒船屋 新橋店 at 2,289 m, and 鮨 黒舟 at Sumiyoshi; nothing in Kayabachō. (2) Tabelog area search sa=日本橋 sk=黒船 (HTTP 200, 140 hits) — 黒船 松屋銀座店, 黒船 上野松坂屋店, 黒船屋 新橋店; nothing in Ni"
+ },
+ {
+  "id": "tokyo3_n_136",
+  "name": "みつば",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. GENERIC PHRASE: 「みつば」 is mitsuba, Japanese wild parsley — a garnish herb dropped into clear soup and chawanmushi — not a shop name, and the accompanying descriptor 'Okra kaiseki - seasonal, signature local specialty' is not a cuisine category that exists in Japan; on both counts this record looks like it never named a business, which is a different problem from a shop that could not be "
+ },
+ {
+  "id": "tokyo3_k_137",
+  "name": "丸源",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog area search sa=茅場町 sk=丸源 (HTTP 200, 21 fuzzy hits) — the only shop actually called 丸源 is at Shin-Okachimachi, 2,784 m away (tabelog 13081552); nothing in Chūō-ku. (2) Tabelog nationwide sk=丸源 (HTTP 200, 328 hits) — dominated by 丸源ラーメン branches in Sapporo, Miyamaedaira, Tarumi, Toyonaka, Suminoe, Amagasaki and Nerima-Sekimachi, plus indep"
+ },
+ {
+  "id": "tokyo3_n_138",
+  "name": "三河屋",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide sk=三河屋 天ぷら (HTTP 200) — 0件; no tempura restaurant of that name exists anywhere in Japan on Tabelog. (2) Tabelog area search sa=人形町 sk=三河屋 (HTTP 200, 147 fuzzy hits) — nearest were 三河屋綾部商店 at Ochanomizu 2,165 m away (a sake dealer, tabelog 13059874), 銀座三河屋 at Shinbashi 2,737 m, みかわや in Ginza, and 大衆割烹 三州屋 銀座本店; none in Ningyōch"
+ },
+ {
+  "id": "tokyo3_k_139",
+  "name": "朧月",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND — and flagged for a human, because this record carried an unsourced safety claim. The light record read 「朧月」, 'Kaiseki - seasonal, gluten-aware preparations available', 茅場町. Searches run, and what each returned: (1) Tabelog area search sa=茅場町 sk=朧月 (HTTP 200, 87 fuzzy hits) — the only shop of that name within reach is 銀座 朧月 at 1,924 m in Ginza (tabelog 13300963), and it is a ramen and ts"
  },
  {
   "id": "tokyo3__75",

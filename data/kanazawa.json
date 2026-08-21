@@ -4646,9 +4646,9 @@
    "category": "OMNI",
    "lat": 36.572151,
    "lng": 136.656372,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "COIL advertises a dedicated gluten-free course (bookable via TableCheck). However, the venue is a shared sushi/tempura kitchen handling wheat-based items, and no dedicated gluten-free fryer, separate prep area, or wheat-free soy sauce is documented. Japanese soy sauce typically contains wheat. Celiac travelers should confirm directly with staff before relying on it; treat as accommodating rather than truly celiac-safe.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. COIL advertises a dedicated gluten-free course (bookable via TableCheck). However, the venue is a shared sushi/tempura kitchen handling wheat-based items, and no dedicated gluten-free fryer, separate prep area, or wheat-free soy sauce is documented. Japanese soy sauce typically contains wheat. Celiac travelers should confirm directly with staff before relying on it; treat as accommodating rather than truly celiac-safe.",
    "vegan_status": "options",
    "vegan_label": "Vegan options",
    "vegan_detail": "COIL offers a dedicated vegan / 精進 hand-roll set (精進プレート, e.g. 8-ingredient set ~¥2,880) introduced for guests with diverse dietary backgrounds. Vegan ingredients include perilla (shiso), avocado, soy-based meat ('大豆ミート坦々' and chili con carne), mixed beans, takuan, marinated paprika, cucumber, corn, mushroom stir-fry, and a soy-milk mayonnaise made without dairy or eggs. The core menu is omnivorous (fish, seafood, roast beef, cheese), so vegan items are prepared in a shared, seafood-heavy kitchen.",
@@ -4744,35 +4744,44 @@
     "gf_cross_contamination": [
      {
       "text": "COIL is a shared sushi and tempura kitchen handling wheat-based items; no dedicated gluten-free prep area or fryer is documented, so cross-contact with wheat is likely despite the gluten-free course.",
-      "source": "https://tabelog.com/ishikawa/A1701/A170101/17011442/"
+      "source": "https://tabelog.com/rst/rstdtl_party_dtl?LstAre=A170101&LstPrf=A1701&pal=ishikawa&pplan_id=287623449&rcd=17011442",
+      "verified": "2026-08-20",
+      "repointed_from": "https://tabelog.com/rst/rstdtl_party_dtl?LstAre=A170101&LstPrf=A1701&pal=ishikawa&pplan_id=287623449&rcd=17011442"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "No wheat-free tamari is documented; standard Japanese soy sauce used with sushi typically contains wheat, so the soy sauce here should be assumed to contain wheat unless staff confirm otherwise.",
-      "source": "https://www.weekend-kanazawa.com/entry/coil-sushi"
+      "source": "https://www.weekend-kanazawa.com/entry/coil-sushi",
+      "unsupported": "2026-08-20",
+      "why": "The cited article never mentions soy sauce or gluten at all — it is a vegan/精進 hosomaki piece; cite COIL's GF-course plan page instead, which itemises the course (米粉 tempura, GF neta) with no tamari/GF-soy-sauce claim anywhere."
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Vegan/精進 ingredients are assembled in the same venue that serves fish, seafood, roast beef and cheese; shared rice, surfaces and utensils mean cross-contact with animal products is possible.",
-      "source": "https://coil-japan.jp/"
+      "source": "https://coil-japan.jp/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Staff actively created and demonstrate vegan/精進 and gluten-free sets for guests with diverse dietary needs, but no formal allergen protocol is published.",
-      "source": "https://www.weekend-kanazawa.com/entry/coil-sushi"
+      "source": "https://www.weekend-kanazawa.com/entry/coil-sushi",
+      "unsupported": "2026-08-20",
+      "why": "Two defects: the cited article covers only the 精進/vegan set (no gluten-free anywhere in it), and 'no formal allergen protocol is published' is false — COIL publishes one, and it is an exclusion: 「セリアック病や重度のアレルギーなど…ご利用をお控えいただいております」. Rewrite the field around that sentence."
      }
     ],
     "positives": [
      {
       "text": "Offers clearly labeled dedicated vegan/精進 and gluten-free hand-roll courses, bookable in advance, which is unusual for a Kanazawa sushi venue.",
-      "source": "https://coil-japan.jp/"
+      "source": "https://coil-japan.jp/",
+      "verified": "2026-08-20"
      },
      {
       "text": "The vegan soy-milk mayonnaise is explicitly made without dairy or eggs.",
-      "source": "https://www.weekend-kanazawa.com/entry/coil-sushi"
+      "source": "https://www.weekend-kanazawa.com/entry/coil-sushi",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -4788,7 +4797,14 @@
    "menu_gf_count": 1,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 1,
-   "menu_vegan_count": 3
+   "menu_vegan_count": 3,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 2,
+    "overrides_signoff": false,
+    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "kz_morimori_sushi_omicho_te",
@@ -11167,9 +11183,9 @@
    "category": "GF",
    "lat": 36.588394,
    "lng": 136.641159,
-   "gf_confidence": "dedicated",
-   "gf_label": "Dedicated gluten-free",
-   "gf_detail": "Dedicated 100% rice flour (国産コシヒカリ米粉) bakery with no wheat, eggs, dairy, or nuts used anywhere in the workshop. Bread is leavened with house-made apple yeast instead of using gluten or thickeners, and the shop deliberately avoids the seven mandatory allergen ingredients. As an entirely wheat-free production environment, it is one of the safest options in Kanazawa for celiac and gluten-sensitive travelers. No explicit certified-celiac/PPM testing was documented, but the no-wheat-on-premises policy is stated clearly.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. Dedicated 100% rice flour (国産コシヒカリ米粉) bakery with no wheat, eggs, dairy, or nuts used anywhere in the workshop. Bread is leavened with house-made apple yeast instead of using gluten or thickeners, and the shop deliberately avoids the seven mandatory allergen ingredients. As an entirely wheat-free production environment, it is one of the safest options in Kanazawa for celiac and gluten-sensitive travelers. No explicit certified-celiac/PPM testing was documented, but the no-wheat-on-premises policy is stated clearly.",
    "vegan_status": "options",
    "vegan_label": "Vegan options",
    "vegan_detail": "Many items are egg- and dairy-free by design, and the shop explicitly offers vegan cakes (soy-milk based) and a range of rice flour breads and muffins. Not everything is guaranteed vegan (some pizzas use additive-free cheese), so vegans should confirm the specific item, but a substantial vegan selection is available.",
@@ -11254,30 +11270,37 @@
     "gf_cross_contamination": [
      {
       "text": "No wheat, eggs, dairy, or nuts are used anywhere in the workshop, making it a fully wheat-free production environment.",
-      "source": "https://wagome.net/"
+      "source": "https://wagome.net/",
+      "unsupported": "2026-08-20",
+      "why": "ALARM: the dairy element is contradicted by the shop's own coverage — kanazawa.keizai.biz/headline/2277/ (cited on this same record) describes 米粉の生地に無添加チーズをトッピングしたジェノベーゼピザ and アンチョビー＆チーズピザ, and this record's own vegan claim admits pizzas use cheese. The defensible narrower claim, 'gluten-free factor"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Many items are egg- and dairy-free by design and dedicated vegan (soy-milk) cakes are offered, but some products such as pizzas use additive-free cheese, so confirm the specific item.",
-      "source": "https://wagome.net/"
+      "source": "https://wagome.net/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "The shop was founded specifically to serve people with food allergies and deliberately avoids the seven mandatory allergen ingredients, so staff are highly allergy-aware, though no individual-order cross-contamination protocol was documented in reviews.",
-      "source": "https://kanazawa.keizai.biz/headline/2277/"
+      "source": "https://kanazawa.keizai.biz/headline/2277/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "100% domestic Koshihikari rice flour, additive-free, leavened with house-made apple yeast; no wheat gluten used.",
-      "source": "https://kanazawa.keizai.biz/headline/2277/"
+      "source": "https://kanazawa.keizai.biz/headline/2277/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Entire workshop is free of wheat, egg, dairy, and nuts, which is rare and reassuring for celiac and allergy travelers.",
-      "source": "https://wagome.net/"
+      "source": "https://wagome.net/",
+      "unsupported": "2026-08-20",
+      "why": "Duplicate of the gf_cross_contamination overreach and equally contradicted by the shop's cheese pizzas; the reassuring 'entire workshop free of dairy' wording should be removed rather than re-sourced."
      }
     ],
     "confidence": "high",
@@ -11302,7 +11325,14 @@
    "menu_gf_count": 10,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 10,
-   "menu_vegan_count": 10
+   "menu_vegan_count": 10,
+   "gf_uncited_downgrade": {
+    "from": "dedicated",
+    "date": "2026-08-20",
+    "disproven": 2,
+    "overrides_signoff": true,
+    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "kz_kanazawa_curry_hunton_ri",
@@ -28111,35 +28141,43 @@
     "gf_cross_contamination": [
      {
       "text": "パンはすべてグルテンフリー — no wheat flour is used on premises; listed in Japan's national all-GF bakery guide as a wheat-free bakery (★★★★).",
-      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Rice-flour and specially-cultivated Koshihikari rice are the base for bread, bento, onigiri, chiffon and cookies.",
-      "source": "https://www.weekend-kanazawa.com/entry/miron"
+      "source": "https://www.weekend-kanazawa.com/entry/miron",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Bento items (e.g. stewed hamburger, karaage) may involve seasonings/coatings — as an allergy-focused rice-flour shop these are intended to be wheat-free, but confirm the specific bento before ordering if highly sensitive.",
-      "source": "https://manpuku-kanazawa.com/miron/"
+      "source": "https://manpuku-kanazawa.com/miron/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Most breads are egg-free and several are dairy-free vegan; a few items are free of all 28 major/minor allergens.",
-      "source": "https://www.weekend-kanazawa.com/entry/miron"
+      "source": "https://manpuku-kanazawa.com/miron/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://manpuku-kanazawa.com/miron/"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Shop was founded specifically to serve a child's egg/milk allergy, and its concept is food that allergy families can eat with confidence.",
-      "source": "https://www.weekend-kanazawa.com/entry/miron"
+      "source": "https://www.weekend-kanazawa.com/entry/miron",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Wheat-free rice-flour bakery listed in the national GF bakery directory; egg-free and partly vegan; run by an allergy-parent owner.",
-      "source": "https://jp.japan-glutenfree.com/bakery-gf/"
+      "source": "https://manpuku-kanazawa.com/miron/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://manpuku-kanazawa.com/miron/"
      }
     ],
     "confidence": "medium",
@@ -28636,9 +28674,9 @@
    "category": "BOTH",
    "lat": 36.44972,
    "lng": 136.46056,
-   "gf_confidence": "dedicated",
-   "gf_label": "Dedicated · celiac-safe",
-   "gf_detail": "A dedicated 100% gluten-free bakery in Nomi City that uses no wheat at all: 「小麦、乳、卵不使用のパン生地」 (bread dough with no wheat, dairy or egg) and cookies that are 「特定原材料27品目不使用」 (free of all 27 designated allergens). It mills its own organic, pesticide-free brown rice into 玄米粉/米粉 in-house, using only flour milled within three days. Because the entire facility is wheat-free and largely plant-based, cross-contact risk is minimal. It sits ~40 min south of Kanazawa (Nomi City, 5 min from JR Nomi-Neagari Sta), so plan a day-trip or use the mail-order shop (frozen shipping).",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. A dedicated 100% gluten-free bakery in Nomi City that uses no wheat at all: 「小麦、乳、卵不使用のパン生地」 (bread dough with no wheat, dairy or egg) and cookies that are 「特定原材料27品目不使用」 (free of all 27 designated allergens). It mills its own organic, pesticide-free brown rice into 玄米粉/米粉 in-house, using only flour milled within three days. Because the entire facility is wheat-free and largely plant-based, cross-contact risk is minimal. It sits ~40 min south of Kanazawa (Nomi City, 5 min from JR Nomi-Neagari Sta), so plan a day-trip or use the mail-order shop (frozen shipping).",
    "vegan_status": "full",
    "vegan_label": "Fully vegan",
    "vegan_detail": "Products are made without wheat, egg or dairy and are described as vegan-friendly, using organic brown rice flour, vegetables and 餡 (bean paste). Effectively a plant-based bakery - confirm any honey-sweetened item if strictly vegan.",
@@ -28727,31 +28765,38 @@
     "gf_cross_contamination": [
      {
       "text": "Entirely wheat-free facility with in-house brown-rice milling; no wheat flour is handled on site, so cross-contact is minimal.",
-      "source": "https://soya-come.com/menu/bread/"
+      "source": "https://soya-come.com/menu/bread/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Bakery items; savory rolls use soy but products are labelled 小麦・卵・乳不使用 (no wheat). Confirm any tamari/soy component if highly sensitive.",
-      "source": "https://soya-come.com/menu/bread/"
+      "source": "https://soya-come.com/menu/bread/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Products are wheat-, egg- and dairy-free and vegan-friendly; whole bakery is plant-based.",
-      "source": "https://soya-come.com/menu/bread/"
+      "source": "https://soya-come.com/menu/bread/",
+      "unsupported": "2026-08-20",
+      "why": "ALARM: this claim is not merely uncited, it is contradicted by the shop's own catalogue — sausage, bacon, tuna, cheese and cream-cheese breads are sold. The record's vegan:'full' label is wrong and should be downgraded (vegan options exist, but the bakery is not plant-based); the 小麦・乳・卵不使用 wording a"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Founded by an allergy parent specifically for allergy families; cookies made free of all 27 designated allergens.",
-      "source": "https://soya-come.com/shop-info/"
+      "source": "https://soya-come.com/shop-info/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "「小麦、乳、卵不使用のパン生地」 and cookies 「特定原材料27品目不使用」 - dedicated GF, allergen-conscious bakery listed in empacede's fully-GF guide.",
-      "source": "https://soya-come.com/menu/bread/"
+      "source": "https://jp.japan-glutenfree.com/bakery-gf/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://jp.japan-glutenfree.com/bakery-gf/"
      }
     ],
     "confidence": "high",
@@ -28805,6 +28850,13 @@
     "municipality": "大成町",
     "km": 22,
     "note": "Filed under Kanazawa but actually 22 km away in 大成町 — plan it as a separate trip, not an evening out."
+   },
+   "gf_uncited_downgrade": {
+    "from": "dedicated",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": true,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
   },
   {
@@ -29028,31 +29080,37 @@
     "gf_cross_contamination": [
      {
       "text": "Wheat-free claim is worded for the シフォン生地 (batter) specifically; no dedicated/certified whole-kitchen statement was found, so cross-contact is unconfirmed.",
-      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace"
+      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Not applicable — dessert/bakery shop.",
-      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace"
+      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Uses 地養卵 eggs throughout; not vegan.",
-      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace"
+      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Owner explicitly aims for cake 'everyone can eat safely,' driven by her own health experience.",
-      "source": "https://www.chunichi.co.jp/article/1183820"
+      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.weekend-kanazawa.com/entry/chiffon-grace"
      }
     ],
     "positives": [
      {
       "text": "Rice flour throughout, including handmade rice-flour cookies in the orange sandwich; no wheat flour or white sugar in the batter.",
-      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace"
+      "source": "https://www.weekend-kanazawa.com/entry/chiffon-grace",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",

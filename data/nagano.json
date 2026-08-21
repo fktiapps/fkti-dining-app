@@ -12484,9 +12484,9 @@
    "category": "BOTH",
    "lat": 36.646338,
    "lng": 138.184997,
-   "gf_confidence": "high",
-   "gf_label": "Strong GF focus",
-   "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→high. The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.] A fully dedicated vegan & gluten-free confectionery workshop where wheat flour is never used on the premises. The venue states 「小麦粉は不使用。米粉やアーモンドの粉などを使います」 (no wheat flour is used; rice flour and almond flour are used instead) and describes itself as 「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」 (sweets made without egg, dairy, wheat, or white sugar). Because the entire product line and kitchen are wheat-free, structural cross-contact risk is very low, though the shop does not advertise formal celiac certification or lab testing, so confirming with staff is still wise for a highly sensitive celiac.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.] A fully dedicated vegan & gluten-free confectionery workshop where wheat flour is never used on the premises. The venue states 「小麦粉は不使用。米粉やアーモンドの粉などを使います」 (no wheat flour is used; rice flour and almond flour are used instead) and describes itself as 「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」 (sweets made without egg, dairy, wheat, or white sugar). Because the entire product line and kitchen are wheat-free, structural cross-contact risk is very low, though the shop does not advertise formal celiac certification or lab testing, so confirming with staff is still wise for a highly sensitive celiac.",
    "vegan_status": "full",
    "vegan_label": "Fully vegan",
    "vegan_detail": "100% plant-based. The brand's own tagline is 「ヴィーガン＆グルテンフリーのおいしい手作りお菓子屋さん」 and every product is made 「卵・乳製品・小麦・白砂糖不使用」 (no egg, dairy, wheat, or white sugar). Creams and chocolates are built on cashew nut, coconut oil, and house-made cashew-nut milk, with additives avoided (「着色料、増粘剤、保存料などの添加物はできる限り使いません」).",
@@ -12573,39 +12573,47 @@
     "gf_cross_contamination": [
      {
       "text": "小麦粉は完全不使用で、米粉やアーモンドの粉などを使用。工房全体がグルテンフリー専用のため小麦の混入リスクは構造的に極めて低い。",
-      "source": "https://chouchou-sweets.com/"
+      "source": "https://chouchou-sweets.com/",
+      "verified": "2026-08-20"
      },
      {
       "text": "「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」と全商品を明記。",
-      "source": "https://cocochouchou-netshop.com/"
+      "source": "https://cocochouchou-netshop.com/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "スイーツ専門店のため醤油・味噌など小麦を含む発酵調味料は使用しない。該当なし。",
-      "source": "https://chouchou-sweets.com/"
+      "source": "https://chouchou-sweets.com/",
+      "unsupported": "2026-08-20",
+      "why": "Sweets-only catalogue is confirmed, but the claim's specific denial is contradicted: Web-Komachi records that the butter-cream contains 信州味噌 — miso, which can be barley/wheat-based — so the flat 「醤油・味噌など…使用しない」 is factually wrong — miso IS used. 信州味噌 is normally 米味噌 (rice), so likely fine, but the r"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "工房全体が完全ヴィーガンで卵・乳製品を一切扱わないため、動物性食材との交差接触リスクはない。",
-      "source": "https://cocochouchou-netshop.com/"
+      "source": "https://cocochouchou-netshop.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "店主はカフェ商品開発時に食物アレルギーを研究し、3大アレルゲン不使用スイーツの製造販売から創業。アレルギー対応が事業の中核。",
-      "source": "https://www.web-komachi.com/?p=139536"
+      "source": "https://www.web-komachi.com/?p=139536",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "小麦を一切扱わない完全グルテンフリー＆ヴィーガンの菓子工房で、全商品が対象。添加物も「できる限り使いません」。",
-      "source": "https://chouchou-sweets.com/"
+      "source": "https://chouchou-sweets.com/",
+      "verified": "2026-08-20"
      },
      {
       "text": "全国にファンを持つ人気店で通販実績も豊富。長野駅善光寺口から徒歩数分とアクセス良好。",
-      "source": "https://www.web-komachi.com/?p=67392"
+      "source": "https://www.web-komachi.com/?p=67392",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",
@@ -12661,6 +12669,13 @@
      "https://cocochouchou-netshop.com/",
      "https://jp.japan-glutenfree.com/closedshop/"
     ]
+   },
+   "gf_uncited_downgrade": {
+    "from": "high",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": true,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
   },
   {

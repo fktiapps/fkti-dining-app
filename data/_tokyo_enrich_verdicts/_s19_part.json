@@ -188,5 +188,497 @@
   },
   "sources": [],
   "enrich_note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide keyword search, s.tabelog.com/rstLst/?sk=江ろ幸 with an iPhone user-agent — HTTP 200, 0件, zero restaurants of that name anywhere in Japan. (2) Yahoo Japan 「site:tabelog.com 江ろ幸 うなぎ」 — HTTP 200, ten results, none of them a shop of that name (Fukuyama and Shiga unagi list pages). (3) Yahoo Japan 「江ろ幸 日本橋」 — HTTP 200, eight results, all unrelated (a Yokohama sushi site, a SUUMO rental listing, Instagram reels). (4) Yahoo Japan exact-phrase 「\"江ろ幸\"」 — HTTP 200, two results, both 5ch mirror junk. (5) Yahoo Japan 「site:hitosara.com OR site:r.gnavi.co.jp 江ろ幸」 — HTTP 200, results were an Aomori restaurant, no match. (6) Testing a possible garbling, Yahoo Japan 「江戸幸 うなぎ 日本橋」 and 「site:tabelog.com 日本橋 うなぎ 老舗 江」 — HTTP 200, both returned うなぎ割烹 大江戸 (新日本橋, tabelog 13000314) and いづもや, neither of which is a plausible reading of 江ろ幸. (7) A follow-up Yahoo leg 「うなぎ 江ろ幸 東京」 was re-run twice and came back HTTP 429 both times (rate-limited, not a negative), so it is not counted as evidence either way; the Tabelog 0件 result is the load-bearing one. No unagi shop called 江ろ幸 could be placed in Nihonbashi or anywhere in Japan. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__130",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no business was identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a tempura restaurant called 大将 in Ningyōchō, Nihonbashi or anywhere in Chūō-ku.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. GENERIC PHRASE: 「大将」 is not a business name but the ordinary Japanese term of address for the chef-owner standing behind a tempura, sushi or yakitori counter — the word a customer calls out to order — so this record most likely never named a business at all, which is a different failure from a shop that merely could not be located. Searches run, and what each returned: (1) Tabelog nationwide keyword search sk=大将 天ぷら (HTTP 200) — 0件 exact; the 35 fuzzy hits are Osaka and Nagoya tempura restaurants with unrelated names. (2) Tabelog area search sa=人形町 sk=大将 (HTTP 200, 457 fuzzy hits) — the only near match is 若大将 本店, an izakaya 117 m from Ningyōchō station (tabelog 13085808), not a tempura shop and not called 大将. (3) Tabelog area search sa=日本橋 sk=大将 (HTTP 200, 450 fuzzy hits) — nearest were 若大将 本店 and 新川大勝軒飯店, neither a match. (4) Ecosia/Bing 「人形町 天ぷら 大将」 (HTTP 200) — returned Ningyōchō's actual tempura shops (天ぷら やぐち, and tabelog 13201969) plus blog posts using 大将 to mean 'the chef'; no shop of that name. Yahoo Japan was unavailable for this record — every attempt in that window returned HTTP 429, which is the engine declining to answer rather than answering no — so the Tabelog and Bing legs are the load-bearing ones. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__131",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no business was identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a kamameshi restaurant called 太郎 in Ningyōchō or anywhere in Japan.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide keyword search sk=釜めし 太郎 (HTTP 200) — 0件; the only fuzzy hits were めし太郎, a shokudō in Kasugai, Aichi, and another めし太郎 in Kinokawa, Wakayama. (2) The same search without the space, sk=釜めし太郎 (HTTP 200) — again 0件 and the same two unrelated shops. (3) Tabelog area search sa=人形町 sk=釜めし (HTTP 200) — only 2件 in the neighbourhood, 魚釜 日本橋横山町店 (13171197) and よし田 (13032165); neither is called 太郎. (4) Tabelog area search sa=人形町 sk=太郎 (HTTP 200, 115 hits) — nearest were ゆで太郎 人形町2丁目店 (a standing-soba chain, 255 m), TARO TOKYO ONIGIRI 人形町ファクトリー and もつ次郎; none serves kamameshi. (5) Yahoo Japan 「人形町 釜めし 太郎」 and 「site:tabelog.com 釜めし 太郎 人形町」 (both HTTP 200, run before the rate limit set in) — returned Tabelog's own Ningyōchō kamameshi round-up and 竈門ご飯 松しま, with no shop of this name. (6) Ecosia/Bing 「人形町 釜めし 太郎 店」 (HTTP 200) — no matching business. Worth flagging for the human reviewer: 釜めし is a dish word and 太郎 is the most generic given name in Japanese, so this may well be a description rather than a shop name; it is not filed as GENERIC PHRASE only because the pair is still shaped like a real shop name, in the way めし太郎 above is. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_n",
+  "status": "confirmed",
+  "name": "中国料理 龍門 浜町本店",
+  "lat": 35.688829,
+  "lng": 139.787151,
+  "loc_precise": true,
+  "address_ja": "〒103-0007 東京都中央区日本橋浜町2-37-10 浜商事ビル",
+  "enrich_confidence": "medium",
+  "cuisine": "A big, cheap, genuinely Chinese-run machi-chūka over two floors — 100-plus dishes from ¥300, lunch from ¥950, a three-dishes-from-68 set at ¥1,780, and house Peking duck at ¥4,200 for a half bird; the plate regulars come back for is the 黒酢の酢豚, black-vinegar sweet-and-sour pork, ¥1,080",
+  "cuisine_type": "chinese",
+  "neighborhood": "Nihonbashi-Hamachō 2-chōme, ten seconds from Hamachō station exit A1 (Toei Shinjuku line) behind the Meijiza theatre — about 600 m east of Ningyōchō station (Hibiya and Toei Asakusa lines), which HotPepper also lists among its nearest stations",
+  "website": "https://www.hotpepper.jp/strJ000816251/",
+  "menu_url": "https://www.hotpepper.jp/strJ000816251/food/",
+  "hours_raw": "月～金 11:00～15:00（L.O. 14:55）／17:00～23:00（L.O. 22:30）　土 11:00～15:00／17:00～22:00（L.O. 21:30）　祝日 11:00～15:00／17:00～22:00　定休日：日曜日（食べログ）",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable. The published menu is wheat end to end: eight noodle dishes (ラーメン ¥850, タン麺, 坦々麺, ワンタンメン, 海鮮五目焼きそば), a whole 揚げ物 section of battered and floured frying (鶏の唐揚げ, 揚げワンタン, 油淋鶏, 黒酢の酢豚), wrappers through the entire 点心 list (餃子, 小籠包, ニラ饅頭, 春巻き), and Peking duck served with wheat pancakes. The seasoning base is ordinary wheat 醤油 with oyster sauce and starch-thickened gravies; no gluten-free claim, no tamari, and no allergen information is published on HotPepper or Tabelog. The one non-wheat noodle, 焼きビーフン ¥1,050, is rice vermicelli but is wok-fried in shared pans and sauced with soy.",
+  "vegan_status": "ask",
+  "vegan_detail": "Nothing is published either way and nothing on the menu is labelled vegetarian. The plausible candidates are all cold 前菜 — 冷やしトマト ¥600, 冷製胡瓜 ¥650, ジャガイモ千切りの塩和え ¥680, ザーサイ ¥600 — plus ほうれん草炒め ¥700 among the hot vegetables. But 中華風豆腐 and ピータン豆腐 carry preserved egg, 麻婆豆腐 / 麻婆茄子 / 麻婆春雨 are normally built on minced pork, and a machi-chūka kitchen this size usually seasons its vegetable stir-fries with chicken stock or lard. Treat each of these as a question to ask, not an option to assume.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "Chinese-run family operation; no chef named publicly"
+   ],
+   "origin": "Nihonbashi-Hamachō, Chūō-ku — behind the Meijiza theatre",
+   "background": "龍門 is the older of two sibling shops: a reviewer who eats at the Kodenmachō branch monthly writes that he only discovered the Hamachō shop behind the Meijiza, and that staff told him Hamachō opened first. It is a 95-seat room over two floors, white-walled and plain rather than smart, with cooks the reviewers hear speaking Cantonese and Mandarin and a Japanese-speaking floor manager. Ordering is by tablet; payment takes cards, transport IC and the full run of QR wallets including Alipay and WeChat Pay. The shop's own promotional copy leans on banquet trade — private hire, 宴会 courses from ¥3,500 with two hours of free drinks, and an offer to cook Chinese dishes that are not on the menu if you ask in advance — which is what a 95-seat room between a theatre and an office district lives on. HotPepper reviewers score it 4.8 over 68 reviews, mostly 友人・知人と (56%) and 会社の宴会 (22%); Tabelog's harder-marking crowd gives 3.30 over 62.",
+   "philosophy": null,
+   "specialty": "黒酢の酢豚 ¥1,080, the dish reviewers name first; 自家製北京ダック, ¥4,200 a half bird or ¥8,000 whole; the ¥1,780 three-dish set chosen from 68 items; ¥950 lunches.",
+   "anecdotes": [
+    {
+     "text": "A regular of the Kodenmachō branch found the Hamachō shop by accident behind the Meijiza and was told by staff that Hamachō was the original — 「スタッフに伺うと、浜町店が先にオープンしたそうです」.",
+     "source": "https://tabelog.com/tokyo/A1302/A130204/13101467/"
+    },
+    {
+     "text": "Another reviewer describes walking past for months while shopping at the greengrocer opposite before working up the nerve to eat alone: 「勇気を出してお一人様で入店して来ました。店構えはお洒落では無く普通の町中華」.",
+     "source": "https://tabelog.com/tokyo/A1302/A130204/13101467/"
+    },
+    {
+     "text": "The shop advertises that it will cook off-menu Chinese dishes on advance request — 「メニューに載っていない中国料理もお作り致します」.",
+     "source": "https://tabelog.com/tokyo/A1302/A130204/13101467/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13101467 gives the name 龍門, the address 東京都中央区日本橋浜町2-37-10, coordinates 35.68883/139.78715, tel 03-6661-9276, 95 seats, genre 中華料理・四川料理, a ¥3,000–¥3,999 band, hours 11:00–15:00 and 17:00–23:00 with Sunday closed, and a 3.30 rating over 62 reviews. HotPepper strJ000816251 lists the same shop as 中国料理 龍門 浜町本店 at 日本橋浜町2-37-10 浜商事ビル, one minute from Hamachō exit A1, with the full priced food menu last updated 2026-05-04 and a 4.8 rating over 68 reviews. Tabelog 13191364 is the sibling 中国料理龍門 小伝馬町店 at 日本橋大伝馬町1-3 アスカVビル B1F, seven minutes on foot from Ningyōchō exit A5.",
+   "confidence": "medium",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130204/13101467/",
+    "https://www.hotpepper.jp/strJ000816251/",
+    "https://www.hotpepper.jp/strJ000816251/food/",
+    "https://tabelog.com/tokyo/A1302/A130204/13191364/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A 95-seat machi-chūka with a dedicated deep-fry section and eight wheat-noodle dishes. Flour, wrappers and noodles are in constant use across shared woks and one fryer; no wheat-free handling is claimed.",
+     "source": "https://www.hotpepper.jp/strJ000816251/food/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Ordinary wheat 醤油 should be assumed throughout, alongside oyster sauce and starch-thickened gravies. No tamari or gluten-free seasoning appears on the menu or in either directory listing.",
+     "source": "https://www.hotpepper.jp/strJ000816251/food/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The vegetable section sits on the same line as pork, beef and seafood: 麻婆 dishes are normally pork-based, ピータン豆腐 and カニ玉 carry egg, and stir-fry stock is not declared.",
+     "source": "https://www.hotpepper.jp/strJ000816251/food/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Ordering is by tablet, which lets you read every dish name at your own pace instead of negotiating at speed — useful if you are checking ingredients word by word.",
+     "source": "https://tabelog.com/tokyo/A1302/A130204/13101467/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy, but bring your own Japanese for ingredients",
+   "note": "One of the easiest rooms in the area to walk into alone — 95 seats over two floors, tablet ordering, no reservation needed at lunch, and every payment method including Alipay and WeChat Pay. Reviewers specifically note that solo diners are normal here. Floor staff answer in polite Japanese but the kitchen is Cantonese- and Mandarin-speaking, so an allergy conversation is better written down than spoken; there is no English menu and no published allergen chart. Evenings tilt towards company parties and the room is loud. Note the branch ambiguity flagged in the enrich note: if you head for Ningyōchō rather than Hamachō, the sibling 中国料理龍門 小伝馬町店 (日本橋大伝馬町1-3, 7 min from exit A5) is the one you reach first."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130204/13101467/",
+   "https://www.hotpepper.jp/strJ000816251/",
+   "https://www.hotpepper.jp/strJ000816251/food/",
+   "https://tabelog.com/tokyo/A1302/A130204/13191364/"
+  ],
+  "enrich_note": "Confirmed as a real Tokyo business, but the light record's description was wrong and the branch is ambiguous. The record read 「龍門」, 'Ramen / Tsukemen - celebrated local favorite', 人形町. 龍門 is not a ramen shop: it is a 95-seat Chinese restaurant, filed by Tabelog under 中華料理・四川料理, whose menu carries ramen at ¥850 as one line among a hundred. The cuisine string has been rewritten accordingly. On location there are two sibling shops inside the same Tabelog district (人形町・小伝馬町): 龍門 浜町本店 at 日本橋浜町2-37-10, whose Tabelog name matches the light record's 「龍門」 exactly and which HotPepper lists with 人形町 among its nearest stations, and 中国料理龍門 小伝馬町店 at 日本橋大伝馬町1-3, which is the closer of the two to Ningyōchō station (7 min from exit A5). The approximate pin sat almost equidistant between them. This record has been enriched as the Hamachō main store on the strength of the exact name match and the staff's own account that Hamachō opened first; enrich_confidence is 'medium' because a human reviewer may reasonably prefer the Kodenmachō branch given the recorded neighbourhood."
+ },
+ {
+  "id": "tokyo3_k",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no business was identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a tsukemen shop called 黒船 at Kayabachō or anywhere in Chūō-ku. The name does belong to two real Tokyo businesses — the wagashi maker 黒船, whose dorayaki counters sit inside Matsuya Ginza and Matsuzakaya Ueno, and the ramen chain 麺屋 黒船, whose branches are at Shinbashi, Okachimachi, Komae and Chitose-Karasuyama — but neither has a Kayabachō outlet.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog area search sa=茅場町 sk=黒船 (HTTP 200, 123 fuzzy hits) — nearest same-name results were 黒船 松屋銀座店 at 1,498 m (the wagashi brand's department-store counter, tabelog 13047986), 黒船屋 新橋店 at 2,289 m, and 鮨 黒舟 at Sumiyoshi; nothing in Kayabachō. (2) Tabelog area search sa=日本橋 sk=黒船 (HTTP 200, 140 hits) — 黒船 松屋銀座店, 黒船 上野松坂屋店, 黒船屋 新橋店; nothing in Nihonbashi either. (3) The decisive leg: Tabelog area search sa=茅場町 sk=つけ麺 (HTTP 200) returns the complete tsukemen list for Kayabachō — 21件, headed by 三豊麺 茅場町店 (245 m), 由丸 茅場町店 (196 m), 麺屋NOBUNAGA 茅場町店 (111 m), めん處 さんば, 麺や 七彩, つじ田 日本橋人形町店 and 麺屋 音 人形町店 — and no shop in it is called 黒船. (4) Tabelog nationwide sk=黒船 つけ麺 (HTTP 200) — 1件, つけ麺 繁田 in Rokkōmichi, Hyōgo. (5) Tabelog nationwide sk=麺屋 黒船 (HTTP 200, 20 hits) — the closest same-name shops are 麺屋 黒船 園田店 in Hyōgo and 鰻屋 黒船 in Saitama and Sakai. (6) Yahoo Japan 「site:tabelog.com 黒船 つけ麺 東京」 (HTTP 200, run before the rate limit) — returned the 麺屋 黒船 chain branches (新橋本店 13014722, 御徒町店 13026072, 狛江店 13028505, 千歳烏山 13044603, and 小金井前原店 13090933 which is marked 【閉店】); none in Chūō-ku. (7) Ecosia/Bing 「茅場町 つけ麺 黒船」 (HTTP 200) — returned 麺屋 黒船 御徒町店 in Ueno and Tabelog's own Kayabachō tsukemen list page; no Kayabachō 黒船. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_n_136",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no business was identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a restaurant called みつば in Ningyōchō, and no directory anywhere lists a cuisine category resembling the light record's 'Okra kaiseki'.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. GENERIC PHRASE: 「みつば」 is mitsuba, Japanese wild parsley — a garnish herb dropped into clear soup and chawanmushi — not a shop name, and the accompanying descriptor 'Okra kaiseki - seasonal, signature local specialty' is not a cuisine category that exists in Japan; on both counts this record looks like it never named a business, which is a different problem from a shop that could not be located. Searches run, and what each returned: (1) Tabelog area search sa=人形町 sk=みつば (HTTP 200, 302 fuzzy hits) — the nearest name matches are all 「みつばち」 (honeybee), not みつば: 甘味処 みつばち 本店 at Yushima 2,646 m away, みつば養蜂 あきばちさん at Akihabara 1,516 m, みつばちcoffee and みつばちバル; none is a kaiseki restaurant and none is in Ningyōchō. (2) Tabelog area search sa=茅場町 sk=みつば (HTTP 200, 274 hits) — the same four honeybee shops, all 2 km away. (3) Tabelog nationwide sk=みつば 人形町 (HTTP 200) — 0件. (4) Ecosia/Bing 「人形町 みつば 三つ葉 店 和食」 (HTTP 200) — returned the Ningyōchō shopping association's own PDF newsletter and unrelated Chūō-ku restaurants; no shop of this name. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_k_137",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no business was identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a ramen shop called 丸源 at Kayabachō or anywhere in Chūō-ku. 丸源ラーメン is a nationwide chain with branches across Hokkaidō, Kanagawa, Hyōgo, Ōsaka and suburban Tokyo; the independent 丸源 shops on Tabelog are an unagi restaurant in Kiryū, Gunma, a yakiniku place in Yamagata and a shokudō in Akita.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog area search sa=茅場町 sk=丸源 (HTTP 200, 21 fuzzy hits) — the only shop actually called 丸源 is at Shin-Okachimachi, 2,784 m away (tabelog 13081552); nothing in Chūō-ku. (2) Tabelog nationwide sk=丸源 (HTTP 200, 328 hits) — dominated by 丸源ラーメン branches in Sapporo, Miyamaedaira, Tarumi, Toyonaka, Suminoe, Amagasaki and Nerima-Sekimachi, plus independents 丸源 (unagi, Kiryū, Gunma), 丸源 七日町店 (yakiniku, Yamagata) and 丸源食堂 (Akita); none in Chūō-ku. (3) Tabelog area search sa=茅場町 sk=ラーメン (HTTP 200, 104 hits) — the ramen list for Kayabachō, headed by 小楠国 日本橋店 (56 m), 刀削麺酒家 茅場町店 (91 m), たつ昇, 麺や 久 and 日本橋 鳥久; no 丸源 anywhere in it. (4) Yahoo Japan 「site:tabelog.com 丸源 茅場町 ラーメン」 (HTTP 200, run before the rate limit) — returned only suburban 丸源ラーメン branches (江戸川鹿骨, 大泉学園, 小金井, 南国バイパス, 新鎌ヶ谷); none in Kayabachō. Also worth recording for the human reviewer: the light record described this as a 'beloved mom-and-pop establishment', but every 丸源 that turns up in ramen is a branch of a nationwide chain, so the descriptor and the name pull in opposite directions. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_n_138",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no business was identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a tempura restaurant called 三河屋 in Ningyōchō, in Nihonbashi, or anywhere on Tabelog nationwide.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide sk=三河屋 天ぷら (HTTP 200) — 0件; no tempura restaurant of that name exists anywhere in Japan on Tabelog. (2) Tabelog area search sa=人形町 sk=三河屋 (HTTP 200, 147 fuzzy hits) — nearest were 三河屋綾部商店 at Ochanomizu 2,165 m away (a sake dealer, tabelog 13059874), 銀座三河屋 at Shinbashi 2,737 m, みかわや in Ginza, and 大衆割烹 三州屋 銀座本店; none in Ningyōchō, none tempura. (3) Tabelog area search sa=日本橋 sk=三河屋 (HTTP 200, 162 hits) — the same four, all 1.1–2.2 km away in Ginza or Ochanomizu. (4) Ecosia/Bing 「人形町 三河屋 天ぷら 店」 (HTTP 200) — returned Ningyōchō's actual tempura shop (tabelog 13248312, with matching hitosara and blog write-ups of 天ぷら やぐち) but nothing called 三河屋. Worth noting for the human reviewer: 三河屋 is the archetypal name for a neighbourhood sake-and-provisions dealer in Japan rather than for a tempura restaurant, so the name and the recorded cuisine sit oddly together; it is not filed as GENERIC PHRASE because 〜屋 is a real shop-name form, unlike a bare dish word. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_k_139",
+  "status": "not_found",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "NO EVIDENCE FOR THE LIGHT RECORD'S CLAIM. The sweep record carried 'Kaiseki - seasonal, gluten-aware preparations available'. No source of any kind supports that: no restaurant called 朧月 could be found at Kayabachō, and the only 朧月 within 2 km is a Ginza ramen and tsukemen shop that makes no gluten claim at all. This assurance must not be carried forward into the app.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no business was identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No directory lists a kaiseki restaurant called 朧月 at Kayabachō or anywhere in Chūō-ku. The name belongs to 銀座 朧月, a ramen and tsukemen shop in Ginza that relocated from Yūrakuchō, and to 中華そば 朧月 in Nagoya — both noodle shops, neither kaiseki.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND — and flagged for a human, because this record carried an unsourced safety claim. The light record read 「朧月」, 'Kaiseki - seasonal, gluten-aware preparations available', 茅場町. Searches run, and what each returned: (1) Tabelog area search sa=茅場町 sk=朧月 (HTTP 200, 87 fuzzy hits) — the only shop of that name within reach is 銀座 朧月 at 1,924 m in Ginza (tabelog 13300963), and it is a ramen and tsukemen shop, not a kaiseki restaurant. (2) Tabelog area search sa=日本橋 sk=朧月 (HTTP 200, 88 hits) — the same single result at 1,704 m. (3) Yahoo Japan 「site:tabelog.com 朧月 茅場町」 (HTTP 200, run before the rate limit) — returned 銀座 朧月 review pages, one noting it moved from Yūrakuchō, plus 中華そば 朧月 in Nagoya (東別院); nothing at Kayabachō and nothing kaiseki. (4) The Kayabachō-wide Tabelog lists for both ラーメン (104 hits) and つけ麺 (21 hits), fetched for the sibling records in this shard, contain no 朧月 either. The 'gluten-aware preparations available' line in the sweep record has no source behind it and should be treated as fabricated, not merely unverified. Coordinates left unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__140",
+  "status": "confirmed",
+  "name": "麺屋 周郷 神田店",
+  "lat": 35.691093,
+  "lng": 139.768801,
+  "loc_precise": true,
+  "address_ja": "〒101-0047 東京都千代田区内神田2-9-11",
+  "enrich_confidence": "high",
+  "cuisine": "Seven counter seats doing one thing: 赤つけ麺, the Kanda branch's chilli version of the house tsukemen — the master's Shinbashi soup carried over and finished with a rāyu built from spices the staff grind on a stone mill every morning, about ¥1,300 for the 辛つけ麺 and ¥1,000–¥1,999 all in",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Uchi-Kanda 2-chōme, 245 m and two minutes from Kanda station's west exit (JR Yamanote, Chūō, Keihin-Tōhoku and Tokyo Metro Ginza lines) — a block from the queue at わいず, in what reviewers call Kanda's ramen war zone",
+  "website": "https://www.mensugo.com/",
+  "menu_url": "https://www.mensugo.com/",
+  "hours_raw": "[月・火・木・金曜日] 昼営業 11:00-15:00（ラストオーダー14:30）／夜営業 18:00-22:00（ラストオーダー21:30）　[水・土・日曜日] 定休日　※食材切れの場合は早閉めすることがございます。※より良い味をご提供するため、神田店は定休日(臨時休業)がございます。",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable, and not close. The entire product is a bowl of thick wheat noodles — Tabelog's own tags for the shop are つけ麺・太麺・ストレート麺 — and the dipping broth starts from a kaeshi the owner states is built on Akita-prefecture soy sauce, i.e. ordinary wheat shōyu. There is no gluten-free claim anywhere on the shop's site, its Instagram, or Tabelog, no tamari, and no published allergen information. With seven seats and one noodle boiler there is no separable line.",
+  "vegan_status": "no",
+  "vegan_detail": "Not possible. The house soup is explicitly an animal-and-fish stock: the shop describes pressure-cooking the base and then layering three kinds of kombu, three kinds of fish and shiitake over it, and the standard bowl is served with chāshū. There is no vegetable or plant-based option on a menu that consists of one dish in two or three sizes.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "店主 (owner-chef, based at the Shinbashi honten; makes the soup for every branch)"
+   ],
+   "origin": "Shinbashi, Minato-ku — 麺屋周郷's original five-seat counter at 新橋4-19-1",
+   "background": "麺屋周郷 began as a five-seat tsukemen counter in Shinbashi under the motto 「完成なき一杯を目指して」 — aiming for a bowl that is never finished. The owner still makes the soup for every branch himself at the honten and sends it out, which is unusual enough that the shop says so on its front page. The Kanda shop opened on 1 September 2023 as 神田周郷 and does not reproduce the Shinbashi bowl: it takes the same soup and turns it into 赤つけ麺, adding a chilli oil made from spices ground on a stone mill each morning and then layering several more spices on top of that. It is seven counter seats, no reservations, cash only, and it shuts on Wednesdays, Saturdays and Sundays — three days a week — with a standing notice that it also closes at short notice 「より良い味をご提供するため」. Reviewers describe an 11:00 opening with six people already waiting, the bowls finished in one lot, and a shop that has recently re-plated onto better vessels; several note the owner himself is often behind the counter here rather than at Shinbashi. Tabelog has it at 3.69 across 799 reviews. The group also sells the two bowls frozen by mail order at ¥1,600 each.",
+   "philosophy": "完成なき一杯を目指して — aiming for a bowl that is never finished; keep evolving in order to make it better.",
+   "specialty": "赤つけ麺特製 — the Kanda-only chilli tsukemen, with the stone-milled rāyu; 辛つけ麺 at about ¥1,300; reviewers say the bowl is designed to be completed by ordering the 〆 rice at the end.",
+   "anecdotes": [
+    {
+     "text": "The Kanda bowl is not the Shinbashi bowl: the shop's own copy says the master's soup is finished here with 「毎朝職人が石臼で挽いたスパイスで作る香り高い辣油」 — a chilli oil from spices ground on a stone mill each morning.",
+     "source": "https://www.mensugo.com/"
+    },
+    {
+     "text": "A March 2026 reviewer arrived at 10:57 and was sixth in line; the bowl came at 11:10 because the shop finishes a whole lot at once. He noted the vessels had been upgraded and that the owner was working the counter.",
+     "source": "https://s.tabelog.com/tokyo/A1310/A131002/13288886/"
+    },
+    {
+     "text": "An August 2026 reviewer walked over from Nihonbashi, found a twenty-deep queue at the neighbouring famous shop わいず, moved on — and found 周郷 full too.",
+     "source": "https://s.tabelog.com/tokyo/A1310/A131002/13288886/"
+    }
+   ],
+   "japanese_sources_summary": "mensugo.com, the shop's own site, gives the Kanda address 東京都千代田区内神田2-9-11, the Mon/Tue/Thu/Fri 11:00–15:00 and 18:00–22:00 hours with Wed/Sat/Sun closed, cash-only payment, the 「完成なき一杯を目指して」 motto, the description of the Shinbashi soup (pressure-cooked base, three kombu, three fish, shiitake, Akita-shōyu kaeshi) and of the Kanda 赤つけ麺 with its stone-milled morning rāyu, plus mail-order at ¥1,600 a portion. Tabelog 13288886 confirms the same address, coordinates 35.69109/139.76880, tel 070-1244-0227, 7 counter seats, 予約不可, an opening date of 2023年9月1日, a ¥1,000–¥1,999 band, and a 3.69 rating over 799 reviews; a reviewer prices the 辛つけ麺 at ¥1,300. The shop's official accounts are Instagram @menya_sugo_aka and X @men_sugo_aka.",
+   "confidence": "high",
+   "sources": [
+    "https://www.mensugo.com/",
+    "https://s.tabelog.com/tokyo/A1310/A131002/13288886/",
+    "https://www.instagram.com/menya_sugo_aka/",
+    "https://x.com/men_sugo_aka"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A seven-seat counter with one noodle boiler turning out nothing but thick wheat tsukemen. There is no second line and no wheat-free preparation is claimed.",
+     "source": "https://s.tabelog.com/tokyo/A1310/A131002/13288886/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The shop states its kaeshi is built on Akita-prefecture soy sauce — ordinary wheat shōyu. No tamari or gluten-free seasoning is mentioned.",
+     "source": "https://www.mensugo.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The soup is described by the shop as a pressure-cooked stock layered with three kinds of kombu, three kinds of fish and shiitake, and the bowl comes with chāshū. There is no plant-based version.",
+     "source": "https://www.mensugo.com/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Straightforward, if you can queue",
+   "note": "Two minutes from Kanda west exit, no reservations, cash only — bring notes. Seven counter seats and a shop that cooks in lots means arriving before 11:00 or after 13:30 if you do not want to wait; reviewers routinely report six or more people ahead of them at opening. Check before you go: the Kanda branch closes three days a week (Wed, Sat, Sun), warns that it shuts early when ingredients run out, and posts unscheduled closures on its site banner and on Instagram @menya_sugo_aka. Note this shop is genuinely spicy — 赤 in 赤つけ麺 means the chilli version, and it is the only style Kanda serves; the plain bowl is at the Shinbashi honten, 東京都港区新橋4-19-1. No English menu, but the menu is effectively one dish."
+  },
+  "sources": [
+   "https://www.mensugo.com/",
+   "https://s.tabelog.com/tokyo/A1310/A131002/13288886/",
+   "https://www.instagram.com/menya_sugo_aka/",
+   "https://x.com/men_sugo_aka"
+  ],
+  "enrich_note": "Confirmed exactly as recorded, including the branch suffix — the one clean find in this shard. Tabelog 13288886 and the shop's own site mensugo.com agree on 麺屋 周郷 神田店 at 東京都千代田区内神田2-9-11, two minutes from Kanda station west exit, つけ麺, opened 1 September 2023, seven counter seats, no reservations, cash only. Coordinates are Tabelog's own (35.691093, 139.768801), about 300 m from the original approximate pin. One correction to carry into the app: the shop's site gives Wednesday, Saturday and Sunday as closing days for Kanda, whereas Tabelog's hours block still shows a Sunday 11:00–15:30 service; the shop's own page is the later and more authoritative of the two, so hours_raw follows it and hours_status is 'irregular' — the shop itself warns of early closes and unscheduled 臨時休業."
  }
 ]

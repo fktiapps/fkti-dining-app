@@ -464,6 +464,167 @@
   "enrich_note": "Confirmed. Yahoo Japan name search returned the shop's own site, the gnavi official page and Tabelog 13228195; all fetched HTTP 200. Tabelog (flagged 公式) and gnavi agree on 東京都千代田区丸の内3-2-3 丸の内二重橋ビルB1 and phone 03-6268-0985. Tabelog's GeoCoordinates 35.67770793791139 / 139.76174378319038 replace the neighborhood-centroid pin; gnavi's JSON-LD gives 35.67772809763267 / 139.76141915828384, about 26 m away, which is the same building entrance. hours_status is 'irregular' because the two official channels disagree on dinner service (Tabelog 17:30–22:00 Mon–Thu vs gnavi 17:30–23:00 Mon–Fri), on seat count (32 vs 30) and on children (子供可 vs お子様連れNG). loc_precise set true."
  },
  {
+  "id": "tokyo3__9",
+  "name": "つけ麺 大",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tsukemen shop named 「つけ麺 大」 could be found in Marunouchi, at Tokyo Station, or anywhere else in Japan",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Unverified. The light record says 千代田区 丸の内, near Tokyo Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. Note for whoever re-sources this: every tsukemen shop actually trading in this district (六厘舎, 松戸富田麺絆, つじ田, らぁ麺すぎ本, トナリ, 舎鈴) is wheat noodle plus wheat-shōyu tare, so a tsukemen record here should never be marked GF-workable without direct evidence.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: no' is a default, not a finding.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide free-word search for つけ麺大 / つけめん 大 / つけ麺　大 returns no restaurant of that name anywhere in Japan — the nearest hits are つけ麺 大輝 (Tokyo, Ōta-ku), つけ麺 大和 (Tokyo, Adachi-ku), つけ麺 大将 (Okayama), つけ麺　大雄 向井町店 (Kanagawa) and the 元祖中華つけ麺大王 chain, none of which is in Chiyoda-ku. The complete Tabelog ramen listing for the Tokyo Station / Marunouchi / Ōtemachi / Yaesu area (A1302/A130201, 77 shops) contains no shop by this name, and an area-scoped Tabelog free-word search across A1302 for つけ麺 大 returns only unrelated shops. The landlord tenant lists for both ramen halls in the station — 東京ラーメンストリート on the B1 of 東京駅一番街 (家系ラーメン 革新家 TOKYO, ひるがお, 食堂はせ川, そらのいろ NIPPON, 津軽煮干 ひらこ屋, 東京駅 斑鳩, 東京煮干し らーめん玉, 俺式 純, 味噌麺処 花道庵, 六厘舎) and 東京ラーメン横丁 in the Yaesu underground mall (長岡食堂, いと井, 風雲児, 町田商店, 豚山, 元祖油堂, がっとん) — contain no such shop either. NAVITIME's tsukemen listing for 千代田区丸の内 returns 六厘舎, ひるがお, 松戸富田麺絆, トナリ 丸の内店 and 舎鈴 and nothing else. On the evidence available this reads as a name generated during the breadth sweep, not a business.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four independent checks — Tabelog nationwide free-word search, the full Tabelog ramen listing for the Tokyo Station area, the two station landlord tenant lists, and NAVITIME's 千代田区丸の内 tsukemen category — all come back without a shop of this name.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [
+   "https://tabelog.com/rstLst/?sw=%E3%81%A4%E3%81%91%E9%BA%BA%E5%A4%A7",
+   "https://tabelog.com/tokyo/A1302/A130201/rstLst/ramen/",
+   "https://www.tokyoeki-1bangai.co.jp/shop/?area=area3&floor=b1f",
+   "https://tokyo-ramenyokocho.com/",
+   "https://www.navitime.co.jp/category/00/13101055000/?tags=100554"
+  ],
+  "enrich_note": "NOT FOUND. Legs actually run, and what each returned: (1) Tabelog nationwide free-word search, three spellings — tabelog.com/rstLst/?sw=つけ麺大, ?sw=つけめん 大, ?sw=つけ麺　大, each HTTP 200 with 20 results, none named 「つけ麺 大」; nearest are つけ麺 大輝 (Ōta-ku), つけ麺 大和 (Adachi-ku), つけ麺 大将 (Okayama), つけ麺 大雄 (Kanagawa) and the 元祖中華つけ麺大王 chain. (2) Full Tabelog ramen listing for the record's own area, tabelog.com/tokyo/A1302/A130201/rstLst/ramen/ pages 1–4, HTTP 200, 77 shops enumerated — no match. (3) Area-scoped Tabelog free-word across A1302 (東京・日本橋), HTTP 200, 20 results — no match. (4) Landlord tenant lists: tokyoeki-1bangai.co.jp Tokyo Ramen Street floor guide and tokyo-ramenyokocho.com, both HTTP 200, all 17 tenants enumerated — no match. (5) NAVITIME 千代田区丸の内 tsukemen category, HTTP 200 — no match. (6) Yahoo Japan: the web vertical returned HTTP 429 (rate-limited, i.e. the engine declining to answer, not a negative) on repeated attempts over ~30 minutes, including through a second client; the Yahoo image vertical did answer HTTP 200 for 「つけ麺 大 東京駅 丸の内 ラーメン店」 and surfaced only the same known shops (六厘舎, 松戸富田麺絆, かね田, つじ田, らぁ麺すぎ本). Coordinates unchanged, loc_precise:false. Candidate for deletion; if it is kept, the Yahoo web leg should be re-run once the rate limit clears."
+ },
+ {
+  "id": "tokyo3__13",
+  "name": "ラーメン・ロック",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen shop named 「ラーメン・ロック」 could be found in Chiyoda-ku or anywhere else in Japan",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 千代田区 丸の内.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found. The light record's phrase 'accessible for dietary requests' is not sourced to anything and should not be carried forward: no ramen counter in this district publishes gluten-free handling.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: no' is a default, not a finding.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Tabelog's nationwide free-word search for ラーメン ロック and らーめん ロック returns no shop by that name; the only near-namesake is ラーメンロックマウンテン (ROCK MOUNTAIN), which is in Jingūmae, Shibuya-ku, near Omotesandō station — a different name and roughly 5 km from Marunouchi — with the remaining hits being ラーメンロッジ (Nerima), ラーメンロッキー 新得狩勝店 (Hokkaidō), サッポロラーメン エゾ麺ロック (Nagoya), LION ROCK (Ibaraki) and various bars. The complete Tabelog ramen listing for the Tokyo Station / Marunouchi / Ōtemachi / Yaesu area (A1302/A130201, 77 shops) contains no shop with ロック in the name, and an area-scoped Tabelog free-word search for ロック across A1302 returns only bars and bistros (クラフトロック ブリューパブ, ビストロ ラヴァロック 丸の内, Rock Around The Clock and similar). The landlord tenant lists for 東京ラーメンストリート and 東京ラーメン横丁 — 17 shops between them — contain nothing of the kind. On the evidence available this reads as a name generated during the breadth sweep, not a business.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four independent checks — Tabelog nationwide free-word search (two spellings), the full Tabelog ramen listing for the Tokyo Station area, an area-scoped Tabelog keyword search, and the two station landlord tenant lists — all come back without a shop of this name.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [
+   "https://tabelog.com/rstLst/?sw=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E3%83%AD%E3%83%83%E3%82%AF",
+   "https://tabelog.com/tokyo/A1302/A130201/rstLst/ramen/",
+   "https://tabelog.com/tokyo/A1306/A130602/13292884/",
+   "https://www.tokyoeki-1bangai.co.jp/shop/?area=area3&floor=b1f",
+   "https://tokyo-ramenyokocho.com/"
+  ],
+  "enrich_note": "NOT FOUND. Legs actually run, and what each returned: (1) Tabelog nationwide free-word search, two spellings — tabelog.com/rstLst/?sw=ラーメン ロック and ?sw=らーめん ロック, both HTTP 200 with 20 results each — no 「ラーメン・ロック」; the only near-namesake is ラーメンロックマウンテン (tabelog 13292884), which is at Omotesandō in Shibuya-ku, not Marunouchi, and is a different name, so no correction is claimed. (2) Full Tabelog ramen listing for the record's own area, tabelog.com/tokyo/A1302/A130201/rstLst/ramen/ pages 1–4, HTTP 200, 77 shops enumerated — nothing with ロック in the name. (3) Area-scoped Tabelog free-word for ロック across A1302, HTTP 200, 20 results — all bars, bistros and unrelated restaurants. (4) Landlord tenant lists: tokyoeki-1bangai.co.jp Tokyo Ramen Street floor guide (10 tenants) and tokyo-ramenyokocho.com (7 tenants), both HTTP 200 — no match. (5) Yahoo Japan: the web vertical returned HTTP 429 (rate-limited, not a negative) on repeated attempts over ~30 minutes; the image vertical did answer HTTP 200 for 「ラーメン ロック 千代田区丸の内」 and surfaced only ラーメンロックマウンテン (Omotesandō), ロックンロールワン (Akasaka-mitsuke) and unrelated Marunouchi shops. Coordinates unchanged, loc_precise:false. Candidate for deletion; if it is kept, the Yahoo web leg should be re-run once the rate limit clears."
+ },
+ {
+  "id": "tokyo3__15",
+  "name": "八幡屋 本店",
+  "status": "not_found",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen shop named 八幡屋, and no 八幡屋 本店 of any kind, exists near Tokyo Station. The businesses that do carry the name are elsewhere.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified, and the light record's own geography is wrong: it says 中央区 丸の内, but Marunouchi is in Chiyoda-ku, not Chūō-ku.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found at the stated location. The light record's 'gf: ask' is a default, not a finding.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'vegan: ask' is a default, not a finding.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established for any Tokyo Station business. What the name does belong to, all of it verified and all of it elsewhere: (a) らーめん 八幡屋 / 和風鰻麺 八幡屋, a ramen and tsukemen shop at 千葉県市原市潤井戸1307-7, opposite its parent eel restaurant 八幡屋 at 潤井戸1307-16, nearest station Chiharadai — about 50 km from Tokyo Station; (b) 八幡屋本店, a restaurant in Saitama Prefecture (Tabelog 11030313); (c) 八幡屋, a fugu restaurant at Okachimachi in Taitō-ku (Tabelog 13078664); (d) 和銅最中本舗 八幡屋本店, a confectioner (yahatayahonten.com); (e) 根元 八幡屋礒五郎, the shichimi maker founded in Nagano whose 本店 is at the Zenkō-ji gate in Nagano City — its Tokyo presence is stock carried by DEAN & DELUCA and similar retailers, including the GranSta counter inside Tokyo Station at 千代田区丸の内1-9-1, but that is another company's shop selling its product, not a 八幡屋 outlet and not a restaurant; (f) 八幡屋商店 / ヤハタソース, a sauce maker; (g) 八幡屋 in Higashi-Mukōjima, Sumida-ku, an oden-dane specialist which closed in August 2021. None of these is a ramen shop near Tokyo Station, and the light record's own ward is wrong, which is itself a sign the entry was generated rather than observed.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog's nationwide free-word search for 八幡屋 lists twenty holders of the name across Chiba, Aichi, Yamagata, Fukushima, Saitama, Fukuoka, Osaka, Ishikawa, Shizuoka, Gifu, Nagano, Kagoshima, Shiga and Iwate — none in Chiyoda-ku or Chūō-ku. The full Tabelog ramen listing for the Tokyo Station area (77 shops) has no 八幡屋. unagimen-yawataya.com places the ramen 八幡屋 in Ichihara, Chiba. yawataya.co.jp places 根元 八幡屋礒五郎's 本店 at the Zenkō-ji gate in Nagano and lists its Tokyo outlets as stockist counters inside other retailers.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/rstLst/?sw=%E5%85%AB%E5%B9%A1%E5%B1%8B",
+    "https://unagimen-yawataya.com/shop/",
+    "https://www.yawataya.co.jp/store/list.php"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found at or near the stated location, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced. Do not resolve it to the Chiba ramen 八幡屋 or to 八幡屋礒五郎's GranSta stockist counter — neither matches the record."
+  },
+  "sources": [
+   "https://tabelog.com/rstLst/?sw=%E5%85%AB%E5%B9%A1%E5%B1%8B",
+   "https://tabelog.com/tokyo/A1302/A130201/rstLst/ramen/",
+   "https://unagimen-yawataya.com/shop/",
+   "https://www.yawataya.co.jp/store/list.php",
+   "https://www.tokyoeki-1bangai.co.jp/shop/?area=area3&floor=b1f",
+   "https://tokyo-ramenyokocho.com/"
+  ],
+  "enrich_note": "NOT FOUND at the stated location. Legs actually run, and what each returned: (1) Yahoo Japan web search for 八幡屋 ラーメン 丸の内 東京駅 — this one leg did answer HTTP 200 (fetched through a second client while direct curl was rate-limited) and returned enjoytokyo's 八幡屋 spot page, yawataya.co.jp's stockist list, unagimen-yawataya.com, and otherwise unrelated Tokyo Station ramen articles; following the first of those, enjoytokyo l_20006662 gives the address 〒290-0171 千葉県市原市潤井戸1307-16 — Ichihara, Chiba. (2) Tabelog nationwide free-word search for 八幡屋, HTTP 200, 20 results across fourteen prefectures — none in Chiyoda-ku or Chūō-ku; the only 八幡屋本店 on the list is in Saitama. (3) Full Tabelog ramen listing for the record's own area, A1302/A130201 pages 1–4, HTTP 200, 77 shops enumerated — no 八幡屋. (4) Area-scoped Tabelog free-word for 八幡屋 across A1302, HTTP 200 — 17 results, none named 八幡屋. (5) Landlord tenant lists for 東京ラーメンストリート and 東京ラーメン横丁, both HTTP 200 — no match. (6) gnavi Tokyo-wide keyword search for 八幡屋, HTTP 200 — zero restaurant results. (7) The operator sites: unagimen-yawataya.com/shop/ confirms the ramen 八幡屋 is at 千葉県市原市潤井戸1307-7 opposite its eel-restaurant parent, and yawataya.co.jp/store/list.php confirms 根元 八幡屋礒五郎's 本店 is at the Zenkō-ji gate in Nagano with only stockist counters in Tokyo. Filed as not_found rather than mislocated because 八幡屋 is a common trade name with many unrelated holders and nothing ties the light record to any one of them. Coordinates unchanged, loc_precise:false. Also worth flagging: the light record places Marunouchi in 中央区, which is factually wrong — Marunouchi is in Chiyoda-ku."
+ },
+ {
   "id": "tokyo3__17",
   "name": "東京煮干し らーめん玉 東京駅店",
   "status": "confirmed",

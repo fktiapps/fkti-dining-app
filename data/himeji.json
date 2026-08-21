@@ -4130,9 +4130,9 @@
    "category": "MOM_AND_POP",
    "lat": 34.830097,
    "lng": 134.693497,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "Plain shaved ice with fruit syrup is naturally wheat-free. Kinako (roasted soy) and mochi toppings are glutinous-rice-based and wheat-free in isolation, but cross-contamination in a small kitchen is unknown. No allergen disclosure is published, no certified GF claim exists. Soy sauce is not used in kakigori preparation so wheat-in-shoyu is not a concern here. Guests with celiac disease should confirm specific toppings and kitchen handling before ordering.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. Plain shaved ice with fruit syrup is naturally wheat-free. Kinako (roasted soy) and mochi toppings are glutinous-rice-based and wheat-free in isolation, but cross-contamination in a small kitchen is unknown. No allergen disclosure is published, no certified GF claim exists. Soy sauce is not used in kakigori preparation so wheat-in-shoyu is not a concern here. Guests with celiac disease should confirm specific toppings and kitchen handling before ordering.",
    "vegan_status": "options",
    "vegan_label": "Vegan options",
    "vegan_detail": "The base shaved ice (Shinshu deep-spring water) is vegan. Fruit-syrup items such as the citrus blend appear dairy-free, but several signature items include condensed milk (練乳), whipped cream, or mochi sauce. No dedicated vegan labeling; hidden dashi is not a concern in a kakigori shop, but dairy presence in popular items is real. Confirm individual flavors on the day.",
@@ -4224,35 +4224,44 @@
     "gf_cross_contamination": [
      {
       "text": "No allergen or cross-contamination information is published by the shop. Kitchen size (approximately 6 tsubo total) means separation may be limited.",
-      "source": "https://tabelog.com/hyogo/A2805/A280501/28069704/"
+      "source": "https://himeji.keizai.biz/headline/2550/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://himeji.keizai.biz/headline/2550/"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Soy sauce is not used in kakigori preparation, so wheat-via-shoyu is not a relevant risk for this format.",
-      "source": "https://tanosu.com/gourmet/158113/"
+      "source": "https://tanosu.com/gourmet/158113/",
+      "unsupported": "2026-08-20",
+      "why": "The tanosu article contains no occurrence of 醤油, しょうゆ, 小麦, グルテン or アレル at all — it cannot support a statement about soy sauce, and the shop's own menu carries two adjacent wheat vectors the record never addresses: a 白味噌小豆 (white-miso) kakigori seen in Tabelog reviews and the 漬物 pickles served alongs"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Condensed milk and whipped cream are used in several items and prepared in the same small counter kitchen; dairy cross-contact cannot be ruled out for fruit-only orders.",
-      "source": "https://tanosu.com/gourmet/158113/"
+      "source": "https://tanosu.com/gourmet/158113/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "No information on staff allergy-awareness training or handling protocols has been published. The shop has not advertised any allergen accommodation service.",
-      "source": "https://tabelog.com/hyogo/A2805/A280501/28069704/"
+      "source": "https://tabelog.com/hyogo/A2805/A280501/28069704/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Shaved ice with pure fruit syrup (no dairy topping) is a simple, naturally wheat-free preparation that avoids most common gluten sources.",
-      "source": "https://himeji.keizai.biz/headline/2550"
+      "source": "https://himeji.keizai.biz/headline/2550",
+      "unsupported": "2026-08-20",
+      "why": "ALARMING — the cited page describes no dairy-free fruit-syrup item, and the other two cited sources contradict the premise: KissPress says 「ふわふわの氷に、練乳と生のフルーツをそのままクラッシュした完全非加熱シロップもたっぷりと」 and tanosu says 「すべてのかき氷に使用する練乳」, i.e. condensed milk goes on as standard. A 'pure fruit syrup, no dairy topping' "
      },
      {
       "text": "All syrups are prepared without heat (non-heated raw syrup) from fresh fruit, with no mention of added thickeners or wheat-containing stabilizers.",
-      "source": "https://kisspress.jp/articles/49278/"
+      "source": "https://kisspress.jp/articles/49278/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -4268,7 +4277,14 @@
    "menu_gf_count": 5,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 4,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 2,
+    "overrides_signoff": false,
+    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "himeji_sumibiyaki_danshu",
@@ -13860,35 +13876,41 @@
     "gf_cross_contamination": [
      {
       "text": "No wheat is used anywhere in the production process — the dough is 100% rice flour. Cross-contamination from wheat within this shop is very low risk by design, though no formal certification is published.",
-      "source": "https://market.deli-picks.com/products/fd000008"
+      "source": "https://market.deli-picks.com/products/fd000008",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "No soy sauce or wheat-containing condiments are used. This is a sweet pastry shop; soy sauce is not part of any product.",
-      "source": "https://market.deli-picks.com/products/fd000008"
+      "source": "https://market.deli-picks.com/products/fd000008",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Egg and dairy are present in all products (dough contains egg, cow's milk, and soy milk; custard filling adds more egg and dairy). There is no vegan-safe option on the menu.",
-      "source": "https://market.deli-picks.com/products/fd000009"
+      "source": "https://market.deli-picks.com/products/fd000009",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "No published allergy-handling protocol found for this location. The concept is wheat-free by design, which simplifies wheat-allergy inquiries, but staff are not confirmed to speak English or handle complex allergy queries in writing.",
-      "source": "https://tabelog.com/en/hyogo/A2805/A280501/28069274/"
+      "source": "https://tabelog.com/en/hyogo/A2805/A280501/28069274/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Entire menu is wheat-free by concept — rice flour is the only flour used in all products, making this a naturally safe environment for wheat-allergic diners without needing to scrutinize individual items.",
-      "source": "https://market.deli-picks.com/products/fd000008"
+      "source": "https://market.deli-picks.com/products/fd000008",
+      "verified": "2026-08-20"
      },
      {
       "text": "Allergen declarations on chain products list only egg and dairy — wheat is absent from the ingredient list entirely.",
-      "source": "https://market.deli-picks.com/products/fd000008"
+      "source": "https://market.deli-picks.com/products/fd000008",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",
@@ -15107,35 +15129,41 @@
     "gf_cross_contamination": [
      {
       "text": "No dedicated gluten-free certification or allergen sheet is published. The kitchen is very small (8 seats); cross-contamination risk is unconfirmed.",
-      "source": "https://tabelog.com/hyogo/A2805/A280501/28060653/"
+      "source": "https://tabelog.com/hyogo/A2805/A280501/28060653/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "No soy sauce or wheat-based sauce is used in traditional warabi mochi preparation. The core product (bracken starch + sugar + kinako/sesame) does not contain wheat.",
-      "source": "https://boost-ngs.com/%E3%80%90%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%80%91%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%81%AE%E5%8E%9F%E6%9D%90%E6%96%99%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F%E3%80%9C%E3%82%A2%E3%83%AC%E3%83%AB/"
+      "source": "https://boost-ngs.com/%E3%80%90%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%80%91%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%81%AE%E5%8E%9F%E6%9D%90%E6%96%99%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F%E3%80%9C%E3%82%A2%E3%83%AC%E3%83%AB/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Soft-serve ice cream is served alongside warabi mochi; dairy cross-contact is possible if equipment is shared. WARABI-TA drink ingredients unconfirmed.",
-      "source": "https://www.warabimochi-kadofuji.com/shop/%E5%A7%AB%E8%B7%AF%E6%9C%AC%E5%BA%97/"
+      "source": "https://www.warabimochi-kadofuji.com/shop/%E5%A7%AB%E8%B7%AF%E6%9C%AC%E5%BA%97/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "No published allergen handling protocol found. Visitors with severe allergies should call 079-284-1318 before visiting.",
-      "source": "https://tabelog.com/hyogo/A2805/A280501/28060653/"
+      "source": "https://tabelog.com/hyogo/A2805/A280501/28060653/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Uses domestic hon-warabi-ko (bracken-root starch) — a wheat-free, naturally gluten-absent base ingredient, confirmed by the shop's own materials.",
-      "source": "https://www.warabimochi-kadofuji.com/about/"
+      "source": "https://www.warabimochi-kadofuji.com/about/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Core wagashi preparation (warabi mochi + kinako/sesame) involves no animal broths, sauces, or hidden wheat ingredients typical of savory Japanese cooking.",
-      "source": "https://boost-ngs.com/%E3%80%90%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%80%91%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%81%AE%E5%8E%9F%E6%9D%90%E6%96%99%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F%E3%80%9C%E3%82%A2%E3%83%AC%E3%83%AB/"
+      "source": "https://boost-ngs.com/%E3%80%90%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%80%91%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%E3%81%AE%E5%8E%9F%E6%9D%90%E6%96%99%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F%E3%80%9C%E3%82%A2%E3%83%AC%E3%83%AB/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "low",
@@ -17751,39 +17779,52 @@
     "gf_cross_contamination": [
      {
       "text": "「卵・乳製品・小麦を持ち込まない」 — eggs, dairy, and wheat are never brought into the workshop, eliminating wheat-flour cross-contact at source.",
-      "source": "https://www.miel-yakigashi.com/"
+      "source": "https://lumierellc.net/lumieres-sweets/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.miel-yakigashi.com/"
      },
      {
       "text": "「当店のお菓子は全てグルテンフリーです」 — every product in the shop is gluten-free.",
-      "source": "https://netshop.lumierellc.net/"
+      "source": "https://netshop.lumierellc.net/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Sweets bakery — no soy sauce used; base ingredients are rice flour, soy milk, sugar, rapeseed oil, almonds, aluminum-free baking powder.",
-      "source": "https://sweetsguide.jp/shop/44055"
+      "source": "https://lumierellc.net/lumieres-sweets/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://sweetsguide.jp/shop/44055"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "No egg, dairy, or butter used anywhere; soy milk and rapeseed oil replace animal products. Honey status per-item unconfirmed given the shop name 'Miel'.",
-      "source": "https://sweetsguide.jp/shop/44055"
+      "source": "https://lumierellc.net/lumieres-sweets/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://sweetsguide.jp/shop/44055"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Staff conduct allergy intake interviews (アレルギーの聞き取り) and make custom products, including soy-free, on consultation.",
-      "source": "https://sweetsguide.jp/shop/44055"
+      "source": "https://lumierellc.net/lumieres-sweets/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://sweetsguide.jp/shop/44055"
      }
     ],
     "positives": [
      {
       "text": "Founded specifically to serve children with food allergies so they can eat safely alongside everyone.",
-      "source": "https://lumierellc.net/"
+      "source": "https://lumierellc.net/",
+      "verified": "2026-08-20",
+      "source_wording": "アレルギーがあるからと皆と一緒のケーキが食べられない。そんな思いをしているお子様の笑顔のため、安心してお召し上がりいただけるお菓子を作っております。"
      },
      {
       "text": "Dedicated wheat-free facility with an explicit no-wheat-on-premises policy.",
-      "source": "https://www.miel-yakigashi.com/"
+      "source": "https://lumierellc.net/lumieres-sweets/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.miel-yakigashi.com/"
      }
     ],
     "confidence": "medium",
@@ -18093,39 +18134,48 @@
     "gf_cross_contamination": [
      {
       "text": "「工房では小麦粉を使用しません」— no wheat flour is used anywhere in the workshop, so flour cross-contact is not a factor.",
-      "source": "https://milbake.crayonsite.info/"
+      "source": "https://milbake.crayonsite.info/",
+      "verified": "2026-08-20"
      },
      {
       "text": "All bread is described as 米粉100%; breads are 「小麦・乳・卵・ナッツ不使用」 per the shop.",
-      "source": "https://tanosu.com/gourmet/156118/"
+      "source": "https://local-prime.com/news/mil-bake_himeji/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://local-prime.com/news/mil-bake_himeji/"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Bakery — no soy sauce in products. 豆乳ロールパン contains soy milk (not soy sauce); soy-sensitive guests should note it.",
-      "source": "https://milbake.crayonsite.info/p/2/"
+      "source": "https://milbake.crayonsite.info/p/2/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Egg and dairy are used in the same wheat-free workshop for sweets and cakes; vegans should stick to the plain 米粉 breads listed as egg/dairy-free.",
-      "source": "https://milbake.crayonsite.info/p/2/"
+      "source": "https://milbake.crayonsite.info/p/2/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Owner is herself a wheat-allergic former pâtissier who built the shop specifically for wheat allergy / intolerance / medically wheat-restricted customers; fruit allergies and preferences accommodated on request.",
-      "source": "https://local-prime.com/news/mil-bake_himeji/"
+      "source": "https://tanosu.com/gourmet/156118/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://tanosu.com/gourmet/156118/"
      }
     ],
     "positives": [
      {
       "text": "Entirely wheat-free rice-flour workshop run by an allergy-affected owner — 「なるべく身体に負担のない材料で」, using domestic rice flour, potato starch, rice oil, beet sugar and sea salt.",
-      "source": "https://milbake.crayonsite.info/"
+      "source": "https://milbake.crayonsite.info/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Breads free of wheat, dairy, egg and nuts — usable by celiac and vegan guests alike.",
-      "source": "https://local-prime.com/news/mil-bake_himeji/"
+      "source": "https://local-prime.com/news/mil-bake_himeji/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",

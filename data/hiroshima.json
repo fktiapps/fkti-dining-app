@@ -560,9 +560,9 @@
    "category": "VEGAN",
    "lat": 34.390308,
    "lng": 132.449753,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "The restaurant explicitly labels certain menu items gluten-free, including a vegan potato croquette set and a soy-meat \"fried chicken\" dish. It is not a dedicated gluten-free kitchen, and other menu items (e.g., dishes using regular soy sauce) contain wheat. There is no documented dedicated fryer or cross-contamination protocol, so celiacs should call ahead (082-236-9303). GF options exist and are marked, but verify per dish.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. The restaurant explicitly labels certain menu items gluten-free, including a vegan potato croquette set and a soy-meat \"fried chicken\" dish. It is not a dedicated gluten-free kitchen, and other menu items (e.g., dishes using regular soy sauce) contain wheat. There is no documented dedicated fryer or cross-contamination protocol, so celiacs should call ahead (082-236-9303). GF options exist and are marked, but verify per dish.",
    "vegan_status": "options",
    "vegan_label": "Vegan options",
    "vegan_detail": "A natural-food eatery with several clearly plant-based options: a vegan potato croquette set, soy-meat \"fried chicken,\" tofu sets, and dishes built around tofu/soy meat with island-grown organic vegetables, citrus and wild plants. However, the menu is NOT fully vegan — it also serves fish (seared bonito/katsuo tataki), chicken (free-range heritage-breed fried chicken, tofu-chicken tsukune) and other animal products. Vegans can eat well here but must select the plant-based items specifically.",
@@ -670,28 +670,34 @@
     "soy_sauce_wheat": [
      {
       "text": "The kitchen uses traditional island-made soy sauce in many dishes; standard Japanese soy sauce contains wheat, so non-GF-labeled dishes should be assumed to contain wheat.",
-      "source": "https://pecomag.jp/1263/"
+      "source": "https://pecomag.jp/1263/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
     "staff_allergy_handling": [
      {
       "text": "No specific cross-contamination protocols or allergen warnings are published; the cafe was founded partly to serve people with allergy concerns, and customers with allergies are advised to contact the restaurant directly at 082-236-9303.",
-      "source": "https://pecomag.jp/1263/"
+      "source": "https://pecomag.jp/1263/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Specific menu items are explicitly labeled gluten-free, including a vegan potato croquette set and a soy-meat fried 'chicken' dish.",
-      "source": "https://yotte-ne-shimakara.com/"
+      "source": "https://yotte-ne-shimakara.com/",
+      "verified": "2026-08-20"
      },
      {
       "text": "All seasonings are additive-free, rice is pesticide-free, oil is non-GMO cold-pressed rapeseed, and chicken is free-range and antibiotic-free.",
-      "source": "https://yotte-ne-shimakara.com/"
+      "source": "https://yotte-ne-shimakara.com/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Clearly identified plant-based options (vegan croquette, soy meat, tofu sets) make it straightforward for vegans to order safely.",
-      "source": "https://yotte-ne-shimakara.com/"
+      "source": "https://yotte-ne-shimakara.com/",
+      "unsupported": "2026-08-20",
+      "why": "The only 豆腐 set on the menu is おから入り鶏つくねとお豆腐御膳 — it contains chicken tsukune, so listing 'tofu sets' as a plant-based option is wrong and would mislead a vegan; keep only the ヴィーガンコロッケ and 大豆ミート唐揚げ (and note the トマトポタージュ served with both is not stated dairy-free)."
      }
     ],
     "confidence": "medium",
@@ -707,7 +713,14 @@
    "menu_gf_count": 4,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 2,
-   "menu_vegan_count": 4
+   "menu_vegan_count": 4,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": false,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "hiro_fujitaya",
@@ -7023,9 +7036,9 @@
    "category": "GF",
    "lat": 34.2986,
    "lng": 132.3215,
-   "gf_confidence": "high",
-   "gf_label": "Strong GF focus",
-   "gf_detail": "⚠ Safety review 2026-07-02: downgraded dedicated→high. Open, legit, allergen-aware GF karaage/curry cafe (rice-flour karaage, GF soy sauce); celiac blogger ate safely, 'very clued up on celiac, separate oil.' But 'dedicated' fails: same source explicitly says 'NOT dedicated gluten free'; own page hedges 'MOST dishes' wheat/egg/dairy-free; 'separate' GF oil implies a non-GF fryer = shared-kitchen CC. — Prior note: A dedicated gluten-free cafe: every dish on the menu is made without wheat, egg, or dairy. The signature non-fried rice-flour karaage uses rice flour and gluten-free (wheat-free) soy sauce, and they fry it in separate, dedicated oil to avoid cross-contact. The owner is a former dietician who developed the recipes and pays close attention to seasonings. Staff are knowledgeable about celiac disease and adjusted their practices (switching to gluten-free soy sauce) after feedback from a celiac customer. Widely regarded by celiac travelers as the safest place to eat on Miyajima.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. ⚠ Safety review 2026-07-02: downgraded dedicated→high. Open, legit, allergen-aware GF karaage/curry cafe (rice-flour karaage, GF soy sauce); celiac blogger ate safely, 'very clued up on celiac, separate oil.' But 'dedicated' fails: same source explicitly says 'NOT dedicated gluten free'; own page hedges 'MOST dishes' wheat/egg/dairy-free; 'separate' GF oil implies a non-GF fryer = shared-kitchen CC. — Prior note: A dedicated gluten-free cafe: every dish on the menu is made without wheat, egg, or dairy. The signature non-fried rice-flour karaage uses rice flour and gluten-free (wheat-free) soy sauce, and they fry it in separate, dedicated oil to avoid cross-contact. The owner is a former dietician who developed the recipes and pays close attention to seasonings. Staff are knowledgeable about celiac disease and adjusted their practices (switching to gluten-free soy sauce) after feedback from a celiac customer. Widely regarded by celiac travelers as the safest place to eat on Miyajima.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan options",
    "vegan_detail": "Not a vegan venue. The two signature mains are animal-based: rice-flour karaage (chicken) and a spiced beef/beef-tongue curry. Dishes are free of egg and dairy, so some sides, the lemon squash, and donuts may suit vegans, but the headline dishes contain meat. Vegans should ask about specific items before ordering.",
@@ -7122,42 +7135,51 @@
     "gf_cross_contamination": [
      {
       "text": "They fry the karaage in separate, dedicated oil so there is no cross-contact.",
-      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/"
+      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/",
+      "verified": "2026-08-20"
      },
      {
       "text": "The entire menu is free of wheat, egg, and dairy, so there are no gluten-containing dishes prepared in the same kitchen.",
-      "source": "https://miyajima-base.com/about-us/"
+      "source": "https://miyajima-base.com/about-us/",
+      "unsupported": "2026-08-20",
+      "why": "ALARMING — the record's own other source contradicts the conclusion. endlessdistances.com, cited three times on this same record, states: 'Anyway, Miyajima Base is not dedicated gluten free. Their eel conger bowl contains gluten, but it is prepared separately and they warned me about this.' Mitigati"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "They use gluten-free (wheat-free) soy sauce; seasonings are also wheat-free.",
-      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/"
+      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/",
+      "verified": "2026-08-20"
      },
      {
       "text": "The owner, a former dietician, developed the recipes and is careful about seasonings being wheat-free.",
-      "source": "https://miyajima-base.com/about-us/"
+      "source": "https://miyajima-base.com/about-us/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
     "staff_allergy_handling": [
      {
       "text": "Staff are very knowledgeable about celiac disease and changed their practices (adopting gluten-free soy sauce) after learning from a celiac customer.",
-      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/"
+      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/",
+      "verified": "2026-08-20"
      },
      {
       "text": "The owner worked about ten years as a dietician across schools, hospitals, and corporate cafeterias before opening the cafe.",
-      "source": "https://miyajima-base.com/about-us/"
+      "source": "https://miyajima-base.com/about-us/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Described as probably the best place for celiacs to eat anywhere on Miyajima Island, with carefully prepared, excellent karaage.",
-      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/"
+      "source": "https://www.endlessdistances.com/gluten-free-hiroshima-japan/",
+      "verified": "2026-08-20"
      },
      {
       "text": "All meals are wheat-, egg-, and dairy-free and recommended for those seeking a gluten-free meal.",
-      "source": "https://miyajima-base.com/"
+      "source": "https://miyajima-base.com/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",
@@ -7218,7 +7240,14 @@
    "menu_gf_count": 8,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 3,
-   "menu_vegan_count": 3
+   "menu_vegan_count": 3,
+   "gf_uncited_downgrade": {
+    "from": "high",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": true,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "hiro_miyajima_hanayashiki",
@@ -8195,7 +8224,13 @@
     "level": "japanese",
     "note": "A small, mostly Japanese-language local shop where island residents eat; pointing at the photo menu works, but little English is documented, so a few basic Japanese phrases help."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 0,
+   "menu_vegan_count": 0,
+   "menu_vegan_meals": 0
   },
   {
    "id": "hiro_hakataya",
@@ -11215,7 +11250,13 @@
     "level": "konnichiwa",
     "note": "A small, friendly counter-style neighborhood okonomiyaki shop where a few words of Japanese and a smile go a long way; English menus are not documented, so a foreign student should be comfortable pointing and ordering simple dishes."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 17,
+   "menu_vegan_count": 2,
+   "menu_vegan_meals": 2
   },
   {
    "id": "hiro_tokaichi_sabou",
@@ -11575,17 +11616,21 @@
     "staff_allergy_handling": [
      {
       "text": "The cafe displays clear, illustrated allergen and vegan labeling, and the full menu with ingredient information is published online so guests can verify before visiting.",
-      "source": "https://dessa-allergy.com/akane20240823/"
+      "source": "https://dessa-allergy.com/akane20240823/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Entirely plant-based menu using organic, pesticide- and additive-free ingredients with no animal products, eggs or refined white sugar.",
-      "source": "https://akushucafe.com/organic/"
+      "source": "https://akushucafe.com/organic/",
+      "verified": "2026-08-20"
      },
      {
       "text": "The silk rice soft serve and its accompanying rice/mochi crackers are documented as egg-, dairy- and wheat-free, and described as gluten-free in an allergy-focused review.",
-      "source": "https://dessa-allergy.com/akane20240823/"
+      "source": "https://akushucafe.com/organic/menu/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://akushucafe.com/organic/menu/"
      }
     ],
     "confidence": "high",
@@ -13464,7 +13509,8 @@
     "soy_sauce_wheat": [
      {
       "text": "The shop states that wheat is completely avoided even in seasonings such as soy sauce, and no wheat flour or gluten-containing ingredients are used in any item.",
-      "source": "https://hiroshima.keizai.biz/headline/3640/"
+      "source": "https://hiroshima.keizai.biz/headline/3640/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [],
@@ -13472,11 +13518,13 @@
     "positives": [
      {
       "text": "Entirely dedicated gluten-free kitchen: all menu items are gluten-free, with rice flour replacing breadcrumbs in fried dishes and wheat excluded even from seasonings.",
-      "source": "https://nakanotana-mall.com/introduce/youandi/"
+      "source": "https://nakanotana-mall.com/introduce/youandi/",
+      "verified": "2026-08-20"
      },
      {
       "text": "A genuinely vegan bento with no animal-derived ingredients, based on traditional Japanese shojin (Buddhist) cuisine, is offered daily (limited to 10).",
-      "source": "https://nakanotana-mall.com/introduce/youandi/"
+      "source": "https://nakanotana-mall.com/introduce/youandi/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",
@@ -13885,7 +13933,13 @@
     "level": "japanese",
     "note": "This is a tiny 10-seat late-night counter shop in the nightlife district where the cook works the griddle right in front of you, so a little Japanese and an easygoing attitude help; pointing at the popular 肉玉そば works fine, but bring cash and don't expect English."
    },
-   "mom_and_pop": true
+   "mom_and_pop": true,
+   "has_menu": true,
+   "menu_verified": "authoritative",
+   "menu_gf_count": 0,
+   "menu_gf_ask_count": 4,
+   "menu_vegan_count": 2,
+   "menu_vegan_meals": 2
   },
   {
    "id": "hiro_daichi",
@@ -40934,30 +40988,35 @@
     "gf_cross_contamination": [
      {
       "text": "The entire menu is wheat-free, so there are no wheat-flour products in the kitchen, but no formal celiac cross-contamination protocol has been published.",
-      "source": "https://pecomag.jp/39122/"
+      "source": "https://pecomag.jp/39122/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "All sweets and food are fully plant-based with no animal products on the menu, eliminating dairy/egg cross-contact at the recipe level.",
-      "source": "https://www.modokimaru.com/entry/gourmet/231208"
+      "source": "https://www.modokimaru.com/entry/gourmet/231208",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "The owner explicitly verifies that plant milks and ingredients contain no wheat, choosing only wheat-free products; a documented anecdote describes a parent being told their allergic child could safely choose anything in the shop.",
-      "source": "https://www.modokimaru.com/entry/gourmet/231208"
+      "source": "https://www.modokimaru.com/entry/gourmet/231208",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "A dedicated plant-based and gluten-free cafe — every item is made without eggs, dairy, or wheat, so vegan and gluten-free guests can order anything on the menu.",
-      "source": "https://www.modokimaru.com/entry/gourmet/231208"
+      "source": "https://www.modokimaru.com/entry/gourmet/231208",
+      "verified": "2026-08-20"
      },
      {
       "text": "Sweets are also made without white sugar, artificial coloring, or preservatives.",
-      "source": "https://note.com/hitokuchime_1031/n/nfca56136e61b"
+      "source": "https://note.com/hitokuchime_1031/n/nfca56136e61b",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -56685,9 +56744,9 @@
    "category": "GF",
    "lat": 34.42345,
    "lng": 132.513982,
-   "gf_confidence": "high",
-   "gf_label": "Strong GF focus",
-   "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→high. I tried to find the shop's OWN explicit no-wheat claim and could not: Baker theta has no website (Instagram @theta.komekopan only), and every '米粉100％ / 小麦粉不使用' statement in the record traces to third-party bloggers (mrs.living, pianikako), not to the shop. Worse, the two most allergy-literate sources both hedge the same way — alleco titles it 「グルテンフリーの米粉パンがメインのお店」 (rice-flour bread is the MAIN line, not the only line) and explicitly refuses to vouch for contamination: 「コンタミについては訪問前に必ずお店に確認をお取りください」; the japan-glutenfree.com guide repeats the 「メインとした」 wording even though its own list criterion is 「工房・店内に小麦粉を一切持ち込まず、すべての商品がグルテンフリー」. That internal contradiction plus a missing first-party claim breaks the dedicated bar. It does clear `high` — the japan-glutenfree GF-Japan list, mrs.living's 米粉100％ report and alleco's per-item 小麦不使用 labelling are ≥2 independent credible sources of real GF handling — but the shared-equipment question is unanswered and must be asked at the counter.] Baker theta is a 100% rice-flour bakery that uses no wheat flour at all; the venue and local press describe it as 「米粉100％の身体に優しいパン」 (100% rice-flour bread that is gentle on the body) and a グルテンフリーの米粉パン屋さん (gluten-free rice-flour bakery), with 小麦粉不使用 (no wheat flour used). Individual breads are additionally labelled 小麦不使用 (wheat-free) alongside egg/dairy flags, e.g. ガーリックフランス is 卵・乳・小麦不使用. Because the entire kitchen is rice-flour based there is no wheat on the premises to cross-contaminate, but one allergy-focused source advises 「コンタミについては訪問前に必ずお店に確認をお取りください」 (confirm cross-contamination directly with the shop before visiting), so a celiac should still confirm shared-equipment handling on arrival.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. I tried to find the shop's OWN explicit no-wheat claim and could not: Baker theta has no website (Instagram @theta.komekopan only), and every '米粉100％ / 小麦粉不使用' statement in the record traces to third-party bloggers (mrs.living, pianikako), not to the shop. Worse, the two most allergy-literate sources both hedge the same way — alleco titles it 「グルテンフリーの米粉パンがメインのお店」 (rice-flour bread is the MAIN line, not the only line) and explicitly refuses to vouch for contamination: 「コンタミについては訪問前に必ずお店に確認をお取りください」; the japan-glutenfree.com guide repeats the 「メインとした」 wording even though its own list criterion is 「工房・店内に小麦粉を一切持ち込まず、すべての商品がグルテンフリー」. That internal contradiction plus a missing first-party claim breaks the dedicated bar. It does clear `high` — the japan-glutenfree GF-Japan list, mrs.living's 米粉100％ report and alleco's per-item 小麦不使用 labelling are ≥2 independent credible sources of real GF handling — but the shared-equipment question is unanswered and must be asked at the counter.] Baker theta is a 100% rice-flour bakery that uses no wheat flour at all; the venue and local press describe it as 「米粉100％の身体に優しいパン」 (100% rice-flour bread that is gentle on the body) and a グルテンフリーの米粉パン屋さん (gluten-free rice-flour bakery), with 小麦粉不使用 (no wheat flour used). Individual breads are additionally labelled 小麦不使用 (wheat-free) alongside egg/dairy flags, e.g. ガーリックフランス is 卵・乳・小麦不使用. Because the entire kitchen is rice-flour based there is no wheat on the premises to cross-contaminate, but one allergy-focused source advises 「コンタミについては訪問前に必ずお店に確認をお取りください」 (confirm cross-contamination directly with the shop before visiting), so a celiac should still confirm shared-equipment handling on arrival.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "Not a vegan shop — the range includes egg sandwiches (平飼い卵のサンド), dairy butter breads and cheese/mentaiko/chicken items — but there are clearly vegan choices. ガーリックフランス (garlic French) is labelled 卵・乳・小麦不使用・ヴィーガン (egg/dairy/wheat-free, vegan), a ヴィーガンバター (vegan butter) spread is sold, and among the rice-flour scones the chunk-chocolate and black-sesame-kinako varieties are 卵不使用・乳不使用 (egg- and dairy-free). Ask staff, as recipes vary by day.",
@@ -56775,39 +56834,53 @@
     "gf_cross_contamination": [
      {
       "text": "Allergy-focused source explicitly advises confirming cross-contamination with the shop before visiting: 「コンタミについては訪問前に必ずお店に確認をお取りください」.",
-      "source": "https://alleco.jp/"
+      "source": "https://alleco.jp/",
+      "unsupported": "2026-08-20",
+      "why": "ALARMING. alleco.jp fetched fine (200, 776KB). It is a food-allergy travel blog about Okinawa/Ishigaki. Its live sitemaps (post-sitemap.xml: 69 posts, alleco_store-sitemap.xml: 4 stores) and the Wayback CDX index of 2,781 distinct alleco.jp URLs contain NO page for Baker theta / ベイカーシータ. The homepag"
      },
      {
       "text": "The entire bakery is 米粉100％ with no wheat flour used (小麦粉不使用), so there is no wheat on the premises to cross-contaminate.",
-      "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552"
+      "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552",
+      "unsupported": "2026-08-20",
+      "why": "This is the brief's own example: a page saying the bread is gluten-free rice flour does not support 'no wheat on the premises'. It is a 2023 reader-correspondent outing post, not an allergen source, and it is the only evidence behind a gf=high label."
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "This is a rice-flour bakery, not a restaurant; soy sauce is not a featured ingredient and no wheat-based seasoning claims were found. Savory items such as mentaiko French and shio-koji chicken should still be checked for wheat-containing sauces.",
-      "source": "https://alleco.jp/"
+      "source": "https://alleco.jp/",
+      "unsupported": "2026-08-20",
+      "why": "alleco.jp fetched fine (200, 776KB). It is a food-allergy travel blog about Okinawa/Ishigaki. Its live sitemaps (post-sitemap.xml: 69 posts, alleco_store-sitemap.xml: 4 stores) and the Wayback CDX index of 2,781 distinct alleco.jp URLs contain NO page for Baker theta / ベイカーシータ. The homepage contains"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Egg (平飼い卵のサンド), dairy (butter breads, cheese items) and fish (明太フランス) are handled in the same bakery, so vegan customers should ask about shared surfaces.",
-      "source": "https://alleco.jp/"
+      "source": "https://alleco.jp/",
+      "unsupported": "2026-08-20",
+      "why": "alleco.jp fetched fine (200, 776KB). It is a food-allergy travel blog about Okinawa/Ishigaki. Its live sitemaps (post-sitemap.xml: 69 posts, alleco_store-sitemap.xml: 4 stores) and the Wayback CDX index of 2,781 distinct alleco.jp URLs contain NO page for Baker theta / ベイカーシータ. The homepage contains"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Each product is individually labelled with allergen flags such as 卵不使用・乳不使用・小麦不使用 (egg/dairy/wheat-free), making allergen status easy to verify at the shop.",
-      "source": "https://alleco.jp/"
+      "source": "https://alleco.jp/",
+      "unsupported": "2026-08-20",
+      "why": "ALARMING. alleco.jp fetched fine (200, 776KB). It is a food-allergy travel blog about Okinawa/Ishigaki. Its live sitemaps (post-sitemap.xml: 69 posts, alleco_store-sitemap.xml: 4 stores) and the Wayback CDX index of 2,781 distinct alleco.jp URLs contain NO page for Baker theta / ベイカーシータ. The homepag"
      }
     ],
     "positives": [
      {
       "text": "100% rice-flour bakery with no wheat flour used anywhere — 「米粉100％の身体に優しいパン」— which is unusually safe for celiacs.",
-      "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552"
+      "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552",
+      "verified": "2026-08-20",
+      "source_wording": "Current wording is the headline 「【東区上温品】米粉100％の身体に優しい『Baker theta（ベイカー シータ）』」 — 米粉100％の身体に優しい qualifies the shop, not パン, and the record's quotation marks imply a verbatim string that is not on the page."
      },
      {
       "text": "Additive-free concept catering explicitly to egg and dairy allergies, with per-item allergen labelling.",
-      "source": "https://komepan-navi.com/baker-theta/"
+      "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552",
+      "verified": "2026-08-20",
+      "repointed_from": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/5050552"
      }
     ],
     "confidence": "medium",
@@ -56859,6 +56932,13 @@
      "https://www.bm-peekaboo.com/gourmet/142519/",
      "https://www.instagram.com/theta.komekopan/"
     ]
+   },
+   "gf_uncited_downgrade": {
+    "from": "high",
+    "date": "2026-08-20",
+    "disproven": 5,
+    "overrides_signoff": true,
+    "note": "Tier held down: 5 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
   },
   {
@@ -57116,29 +57196,36 @@
        "date": "2026-08-19",
        "level": "relay",
        "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
-      }
+      },
+      "verified": "2026-08-20"
      },
      {
       "text": "Shop describes itself as a fully gluten-free rice-flour bread specialist (完全グルテンフリー米粉パン専門店).",
-      "source": "https://cocoroba2022.com/"
+      "source": "https://cocoroba2022.com/",
+      "verified": "2026-08-20",
+      "source_wording": "Current self-description on cocoroba2022.com is 「米粉ぱん CoCoRoBAは、2022年11月に広島市佐伯区にて米粉パン専門店としてオープンしました。」 plus 「国産米粉のみを使用し、余計な添加物を含まないグルテンフリーのおいしいパン生地作りに取り組みました。3大食物アレルギー（小麦・卵・乳）の方や健康志向の方にも、安心してお召し上がりいただけます。（チーズ・チョコのみ「乳」が含まれています)」. The word 完全 does not appear in the page text."
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Bakery, not a restaurant; savory toasts (tuna, mentaiko garlic) may use seasonings/sauces — celiacs should confirm those specific items, though plain breads carry no wheat.",
-      "source": "https://mamanpere.jp/topics/gourmet/cocoroba.html"
+      "source": "https://mamanpere.jp/topics/gourmet/cocoroba.html",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Cheese and chocolate varieties contain dairy; savory toasts contain fish. Plain breads are egg- and dairy-free.",
-      "source": "https://cocoroba2022.com/"
+      "source": "https://cocoroba2022.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Positioned explicitly for the three major food allergies (wheat, egg, dairy); allergy-aware operation.",
-      "source": "https://alleco.jp/"
+      "source": "https://alleco.jp/%E3%80%90%E9%A3%9F%E7%89%A9%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%E5%AF%BE%E5%BF%9C%E3%80%91%E7%B1%B3%E7%B2%89%E3%83%91%E3%83%B3%E5%B0%82%E9%96%80%E5%BA%97cocoroba%E3%82%B3%E3%82%B3%E3%83%AD/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://alleco.jp/%E3%80%90%E9%A3%9F%E7%89%A9%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%E5%AF%BE%E5%BF%9C%E3%80%91%E7%B1%B3%E7%B2%89%E3%83%91%E3%83%B3%E5%B0%82%E9%96%80%E5%BA%97cocoroba%E3%82%B3%E3%82%B3%E3%83%AD/"
      }
     ],
     "positives": [
@@ -57149,11 +57236,13 @@
        "date": "2026-08-19",
        "level": "relay",
        "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
-      }
+      },
+      "verified": "2026-08-20"
      },
      {
       "text": "Nationwide online shop lets celiacs order the same GF breads remotely.",
-      "source": "https://cocoroba.base.ec"
+      "source": "https://cocoroba.base.ec",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",
@@ -57438,39 +57527,46 @@
     "gf_cross_contamination": [
      {
       "text": "Bakes only with rice flour; no wheat flour used anywhere, so cross-contact risk in the workshop is minimal.",
-      "source": "https://kotonoha-sweets.com/"
+      "source": "https://kotonoha-sweets.com/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Self-described Vegan & Gluten-free 工房 making sweets without wheat flour, egg, dairy or white sugar.",
-      "source": "https://www.modokimaru.com/entry/gourmet/210523"
+      "source": "https://www.modokimaru.com/entry/gourmet/210523",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Sweets-only shop; no soy sauce / savory wheat seasonings involved.",
-      "source": "https://kotonoha-sweets.com/"
+      "source": "https://kotonoha-sweets.com/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Fully plant-based — no eggs, dairy or animal products in the baked goods.",
-      "source": "https://kotonoha-sweets.com/"
+      "source": "https://kotonoha-sweets.com/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Mission is snacks anyone can eat safely, including allergy sufferers; featured by allergy-focused guide alleco.",
-      "source": "https://kotonoha-sweets.com/alleco-pickup/"
+      "source": "https://kotonoha-sweets.com/alleco-pickup/",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "Entirely wheat-free premises using only rice flour — strong protection against gluten cross-contact.",
-      "source": "https://kotonoha-sweets.com/"
+      "source": "https://kotonoha-sweets.com/",
+      "verified": "2026-08-20"
      },
      {
       "text": "Nationwide shipping (free over ¥4,500) for the same vegan GF sweets.",
-      "source": "https://kotonoha-sweets.com/"
+      "source": "https://kotonoha-sweets.com/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "high",
@@ -58810,13 +58906,15 @@
     "gf_cross_contamination": [
      {
       "text": "Dedicated rice-flour udon operation using 100% domestic rice flour; the shop states 「小麦粉不使用」 (no wheat flour used). No formal cross-contact/allergen protocol has been published, so confirm equipment is not shared with any wheat item.",
-      "source": "https://www.bm-peekaboo.com/gourmet/ok-undo/"
+      "source": "https://www.bm-peekaboo.com/gourmet/ok-undo/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "The shop states 「出汁やタレなどもすべてグルテンフリー」 (the dashi, sauces and tare are all gluten-free), implying wheat-free soy/tare; confirm the specific bowl's tare is the gluten-free one.",
-      "source": "https://www.bm-peekaboo.com/gourmet/ok-undo/"
+      "source": "https://www.bm-peekaboo.com/gourmet/ok-undo/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
@@ -58827,7 +58925,8 @@
        "date": "2026-08-19",
        "level": "relay",
        "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
-      }
+      },
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
@@ -58838,13 +58937,15 @@
        "date": "2026-08-19",
        "level": "relay",
        "note": "This source reprints shop marketing rather than reporting a visit (a curated hub or a press release). It corroborates that a claim was MADE, not that it was verified."
-      }
+      },
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "100% domestic rice-flour noodles; all dashi and sauces advertised as gluten-free — a genuine celiac-safe savory meal.",
-      "source": "https://www.bm-peekaboo.com/gourmet/ok-undo/"
+      "source": "https://www.bm-peekaboo.com/gourmet/ok-undo/",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -58902,9 +59003,9 @@
    "category": "OMNI",
    "lat": 34.2992,
    "lng": 132.3229,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "A kappo-style kaiseki ryokan right by the Miyajima ferry terminal that will convert its multi-course meals to gluten-free ON REQUEST. Its own site states 「可能な限り、全てのお料理をグルテンフリー仕様に変更できます。また、各種アレルギー対応のお食事も可能ですので、事前にお電話にて詳細をお知らせくださいませ」— i.e. as far as possible all dishes can be remade gluten-free, and various allergies accommodated, but you MUST phone in advance. Because this is a shared ryokan kitchen (wheat soy sauce, tempura, wheat-thickened sauces are all normally present) rather than a dedicated GF facility, this caps at 'options': the conversion depends on advance notice and careful kitchen handling, so a celiac should call, explain celiac disease (セリアック病／小麦アレルギー), and confirm cross-contact precautions.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. A kappo-style kaiseki ryokan right by the Miyajima ferry terminal that will convert its multi-course meals to gluten-free ON REQUEST. Its own site states 「可能な限り、全てのお料理をグルテンフリー仕様に変更できます。また、各種アレルギー対応のお食事も可能ですので、事前にお電話にて詳細をお知らせくださいませ」— i.e. as far as possible all dishes can be remade gluten-free, and various allergies accommodated, but you MUST phone in advance. Because this is a shared ryokan kitchen (wheat soy sauce, tempura, wheat-thickened sauces are all normally present) rather than a dedicated GF facility, this caps at 'options': the conversion depends on advance notice and careful kitchen handling, so a celiac should call, explain celiac disease (セリアック病／小麦アレルギー), and confirm cross-contact precautions.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "Offers a fully plant-based vegetarian/vegan kaiseki course in which vegetables are styled to resemble meat and fish, with even the seasonings kept animal-free; the venue explicitly markets to vegetarian, vegan and halal-conscious guests. Groups can mix — some diners take the vegan course while others eat the standard meal. Arrange in advance so the plant-based course can be prepared.",
@@ -59000,31 +59101,37 @@
     "gf_cross_contamination": [
      {
       "text": "Shared ryokan kitchen, not a dedicated GF facility; GF is achieved by remaking dishes on request. Confirm cross-contact precautions when phoning ahead.",
-      "source": "https://yamaichibekkan.com/vegetarian.html"
+      "source": "https://yamaichibekkan.com/vegetarian.html",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Standard kaiseki uses wheat-based soy sauce; the venue says dishes can be changed to gluten-free 「可能な限り、全てのお料理をグルテンフリー仕様に変更できます」 — confirm tamari/wheat-free seasoning is used for your meal.",
-      "source": "https://yamaichibekkan.com/vegetarian.html"
+      "source": "https://yamaichibekkan.com/vegetarian.html",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Dedicated plant-based kaiseki course prepared to be animal-free including seasonings; still a shared kitchen, so arrange in advance.",
-      "source": "https://yamaichibekkan.com/vegetarian.html"
+      "source": "https://yamaichibekkan.com/vegetarian.html",
+      "unsupported": "2026-08-20",
+      "why": "'including seasonings' is not on the page for the vegan course — the only seasoning assurance is in the Muslim-friendly block (「ハラル料理の調味料は、アルコール、豚肉由来の原材料を一切使用していない物を使用しております」), i.e. transplanted from a different diet policy; the page is silent on dashi/seasoning for the 完全菜食 course, so that assuranc"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "The venue explicitly requests advance phone contact to arrange allergy/GF meals: 「事前にお電話にて詳細をお知らせくださいませ」 (TEL 0829-44-0700).",
-      "source": "https://yamaichibekkan.com/vegetarian.html"
+      "source": "https://yamaichibekkan.com/vegetarian.html",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "One of the only GF-accommodating dining spots on Miyajima island itself; willing to convert full courses to gluten-free with notice.",
-      "source": "https://yamaichibekkan.com/vegetarian.html"
+      "source": "https://yamaichibekkan.com/vegetarian.html",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -59037,7 +59144,14 @@
    "menu_vegan_count": 1,
    "menu_vegan_meals": 1,
    "mom_and_pop": false,
-   "menu_gf_ask_count": 1
+   "menu_gf_ask_count": 1,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 1,
+    "overrides_signoff": false,
+    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   }
  ]
 }
