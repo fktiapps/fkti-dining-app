@@ -24,6 +24,19 @@
   "note": "SIBLING-BRANCH CITATION: the article covers KIELO COFFEE AKIHABARA (1F Daiichi Kyowa Building, 1-29-4 Taito, Taito-ku), which the operator lists as a separate shop from KIELO COFFEE ASAKUSA (1F, 2-10-5 Kaminarimon, 3 min from Asakusa Station). Wording is right, venue is wrong; nothing here evidences the Asakusa branch's lineup."
  },
  {
+  "id": "tokyo_kielo_coffee_asakusa",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "defective",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "Cited release page is dead and unarchived; the only surviving citation documents the AKIHABARA sibling branch, not Asakusa. No live source evidences this venue."
+ },
+ {
   "id": "tokyo_marugoto_vegan_dining_as",
   "city": "tokyo",
   "field": "gf_cross_contamination",
@@ -96,6 +109,19 @@
   "http": "200",
   "method": "plain fetch",
   "note": "Supported (the homepage repeats it: 「オーナー及びスタッフは全員ヴィーガン」). Minor nuance: the recruit copy says 全員ヴィーガンまたはベジタリアン."
+ },
+ {
+  "id": "tokyo_marugoto_vegan_dining_as",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "defective",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "Four of six claims are supported or repairable, but the positives line asserts organic/pesticide-free vegetables that appear on no page of the site. Separately: the record quotes only visitor reviews in gf_cross_contamination and omits the operators own harder caveat, 完全にグルテンフリー対応のレストランとして運営しているわけではないため、アレルギーの方に対して確実に大丈夫です、というお約束はできません, plus the allergy PDFs 揚げ物は全て同じフライヤーの油で揚げています. Conversely the record UNDER-rates gf as options when the operator states all in-store food is gluten-free and FMGF lists it as dedicated gluten-free."
  },
  {
   "id": "tokyo_milan_nataraj_shibuya",
@@ -173,6 +199,19 @@
   "note": "ALARM: the cited URL 404s and Wayback holds NO capture of any manpuku-veggie.com URL containing 'nataraj' in the site's whole archived history — this citation looks invented, not stale. The fact itself is true and is stated on the operator's own concept page."
  },
  {
+  "id": "tokyo_milan_nataraj_shibuya",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "defective",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "vegan is recorded as full but the cited Vegewel page says 料理は全てベジタリアン対応。インドの慣習から一部乳製品を使用しているメニューもあります and the branch menu sells paneer curry, ghee paratha and butter naan (他のナンは乳製品が入っています). Should be vegetarian with vegan options. One citation (manpuku-veggie nataraj-farm) appears fabricated; one claim was uncited."
+ },
+ {
   "id": "tokyo_oyasai_kozara_ryori_no_w",
   "city": "tokyo",
   "field": "vegan_cross_contact",
@@ -207,6 +246,19 @@
   "http": "200",
   "method": "plain fetch, tag-by-tag comparison against a Vegewel listing that IS gluten-free-tagged",
   "note": "ALARM — GF OVER-RATING: this is the record's ONLY gluten-related citation and it is pure directory framing. Vegewel offers a GF filter, but this venue is not tagged for it, so the page is evidence AGAINST a gluten-free reading, not for one. The record's gf:'options' rests on nothing."
+ },
+ {
+  "id": "tokyo_oyasai_kozara_ryori_no_w",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "defective",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "All three claims fail at their cited URLs. The gf rating rests solely on being listed in a directory that HAS a gluten-free filter while this venue is NOT tagged for it. The vegan:full rating rests on a 2017 interview; the shop has since rebranded to オーガニックレストラン＆バー and its official domain vegan-kiboko.com now serves a hosting DOMAIN ERROR page (dark since between 2025-12-09 and 2026-03-09), though the business itself still trades per its current Yahoo/Tabelog hours."
  },
  {
   "id": "tokyo_peace_table_shibuya_doge",
@@ -257,5 +309,131 @@
   "http": "200",
   "method": "plain fetch of both pages",
   "note": "ALARM — VENUE CLOSED: Tabelog 13261855 is headed 【閉店】PEACE TABLE 渋谷道玄坂店 with 「このお店は現在閉店しております。」, the older listing 13246808 is headed 【移転】, and the restaurant's own domain peacetable-vegan.com now resolves to a Russian online-casino affiliate site (Vavada Partners). The ikyu page still shows 「リニューアル準備の為、6/30でPEACE TABLEを一旦クローズ致します」. This record should be delisted, not just re-cited."
+ },
+ {
+  "id": "tokyo_peace_table_shibuya_doge",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "defective",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "VENUE CLOSED — Tabelog 13261855 「このお店は現在閉店しております。」 and peacetable-vegan.com is now a Russian casino affiliate site. Two blog-sourced claims are fine, but both ikyu-sourced claims cite the wrong page and the whole record should be delisted."
+ },
+ {
+  "id": "tokyo_sacya_shibuya_scramble_s",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Offers a Shibuya-exclusive vegan and gluten-free matcha cookie sandwich made with rice flour, plus soy milk and oat milk substitute options for matcha lattes.",
+  "url": "https://www.tokyu-dept.co.jp/tokyufoodshow/shibuyasweets/sacya.html",
+  "verdict": "wrong_source",
+  "found": "Cookie half (archived copy only): 渋谷スクランブルスクエア店限定のSACYA抹茶ビーガンクッキー / SACYA VEGAN MATCHA COOKIE ￥690 / 動物性の食品が使用されていないため… / クッキー生地には米粉が使用されています。 / 米粉が使われたホロホロの生地がおいしい～グルテンフリーだから罪悪感なく食べれるね。 Milk half (live, different URL): 'milk change — soy +¥80, oats +¥120' on the MATCHA LATTE, from SACYA's own current menu.",
+  "correct_url": "https://www.sacya.co.jp/sacya-shibuya-scsq/",
+  "http": "404 live on the cited URL (both iPhone and desktop UA); Wayback captures 20251107155614 and 20260311011908 return the real article",
+  "method": "plain fetch → 404, then Wayback Machine for the cookie; SACYA's own store page + its linked Drive menu image for the milk options",
+  "note": "Split the claim. The soy/oat milk-change option is live and verifiable on SACYA's own menu — cite that. The cookie half survives only at http://web.archive.org/web/20251107155614/https://www.tokyu-dept.co.jp/tokyufoodshow/shibuyasweets/sacya.html, AND the SACYA VEGAN MATCHA COOKIE does not appear on the shop's current menu image at all, so treat it as possibly discontinued rather than a standing offer. Note also the source of 'gluten-free' is a department-store sweets-blog reviewer's aside about rice flour, not a kitchen statement — thin for a celiac. Branch is trading (site live, 10:00–21:00 daily)."
+ },
+ {
+  "id": "tokyo_sacya_shibuya_scramble_s",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "Sole claim is true but its cited page 404s; the milk-substitution half is live on SACYAs own menu and the cookie half survives only in Wayback and is absent from the current menu."
+ },
+ {
+  "id": "tokyo_sansou_cafe",
+  "city": "tokyo",
+  "field": "staff_allergy_handling",
+  "quote": "Extent of allergy accommodation can vary by situation, so guests with concerns are advised to consult staff directly when visiting.",
+  "url": "https://kanzashi-tokyoasakusa.com/activity/activity-6173/",
+  "verdict": "supported",
+  "found": "※アレルギー対応の範囲は状況によって異なります。心配な方は来店時にスタッフへ相談するのがおすすめです。",
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Verbatim. Worth knowing the page is a nearby hotel's marketing article (THE KANZASHI TOKYO ASAKUSA), so this hedge is the hotel's wording, not the cafe's own statement — but the record reports it accurately as a hedge, which is the safe direction."
+ },
+ {
+  "id": "tokyo_sansou_cafe",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "The cafe minimizes food additives and trans fats and builds its menu around easily digestible dishes centered on enzyme brown rice.",
+  "url": "https://sansoucafe.com/",
+  "verdict": "supported",
+  "found": "季節の食材を生かし、消化を助けるスパイスや厳選した調味料を使い、添加物やトランス脂肪酸は極力使用していません。 / 添加物を控え、消化に良い酵素玄米を中心に、心と身体が自然と整う食事を気軽に楽しめるカフェです。",
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Supported verbatim, and the record correctly preserves the 極力 hedge as 'minimizes' rather than 'free of'."
+ },
+ {
+  "id": "tokyo_sansou_cafe",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "clean",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "Both claims found verbatim at their cited URLs, hedges intact, both sources live."
+ },
+ {
+  "id": "tokyo_shabu_shabu_retasu_shibu",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Each guest is served their own individual shabu-shabu pot rather than sharing one communal pot with the table, which is the core '一人一鍋' (one person, one pot) concept of the restaurant.",
+  "url": "https://www.shabushabu-let-us.com/concept.html",
+  "verdict": "supported",
+  "found": "一人に一つの鍋なので、好きな具材を好きな食べ方で、好きなだけ、自分のペースでお楽しみいただけます。 (page title: 「一人一鍋」しゃぶしゃぶの新しいカタチ)",
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Supported, and independently confirmed for this branch by HotPepper: 「１席に１鍋がセッティングされている為…」. Caveat for the GF reading: the per-guest pot removes pot-sharing but not the shared 〆 station — 中華生麺 (wheat) is on the same finishing menu — nor the 29 shared タレ・薬味, which are not documented as wheat-free."
+ },
+ {
+  "id": "tokyo_shabu_shabu_retasu_shibu",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "The restaurant's signature dashi is described as an additive-free stock made from five kinds of selected bonito (katsuobushi) flakes, used across its broths.",
+  "url": "https://www.shabushabu-let-us.com/concept.html",
+  "verdict": "supported",
+  "found": "毎朝、厳選した５種の削り節でひいた無添加の一番出汁をベースに、飲んでも美味しい８種のお出汁をご用意しております。",
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Supported. Two precision points: 削り節 is 'shaved dried-fish flakes' generally, not specifically 鰹節/bonito, so 'five kinds of bonito' is a slight over-translation; and 'ベースに' means all EIGHT broths sit on that fish stock — including the one this branch markets as 匠の昆布だし (kombu dashi), which is a real trap for a vegan diner. That undercuts the record's vegan:'ask' rating; 'no' or an explicit warning fits the evidence better."
+ },
+ {
+  "id": "tokyo_shabu_shabu_retasu_shibu",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "A gluten-free Chinese noodle is offered as one of the finishing-course choices, alongside regular noodles, pho, egg porridge, and cheese risotto.",
+  "url": "https://www.hotpepper.jp/strJ001222844/",
+  "verdict": "wrong_source",
+  "found": "〆のバリエーションも豊富です。・中華生麺・グルテンフリーの中華麺・玄米フォー・玉子雑炊セット・チーズリゾットセット・とろろ雑穀雑炊セット — and the 【〆セット -麺もの-】 block listing グルテンフリーの中華麺 and 玄米フォー",
+  "correct_url": "https://www.hotpepper.jp/strJ001222844/food/",
+  "http": "200",
+  "method": "plain fetch of the cited top page (zero occurrences of グルテン or 中華麺 in its HTML), then the /food/ sub-page",
+  "note": "Claim is accurate but the cited top page does not carry it; repoint to the /food/ menu sub-page. Correct branch (しゃぶしゃぶれたす 渋谷センター街店, 宇田川町28-2), trading."
+ },
+ {
+  "id": "tokyo_shabu_shabu_retasu_shibu",
+  "city": "tokyo",
+  "field": "_record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": null,
+  "http": null,
+  "method": "record sweep",
+  "note": "Two claims supported verbatim; the gluten-free noodle claim needs repointing from the HotPepper top page to its /food/ sub-page. Flag: all eight broths are built on the same fish stock, which does not support a vegan:ask rating."
  }
 ]

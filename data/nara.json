@@ -32215,7 +32215,7 @@
       "text": "Profile states the cafe is gluten-free, halal and kosher friendly with fresh vegetables and herbs.",
       "source": "https://rurubu.jp/andmore/article/23707",
       "verified": "2026-08-20",
-      "repointed_from": "https://www.instagram.com/natural_cafe.komorebi/"
+      "repointed_from": "https://rurubu.jp/andmore/article/23707"
      }
     ],
     "confidence": "medium",
@@ -32983,9 +32983,9 @@
    "category": "VEGAN",
    "lat": 34.68293,
    "lng": 135.827957,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
-   "gf_detail": "Curries are described as gluten-free, and a gluten-free naan can be made with advance notice (standard naan is wheat). The kitchen is not a dedicated gluten-free facility — wheat naan is prepared on-site, so cross-contact is possible. Celiac travelers should call ahead (0742-23-0808) to arrange gluten-free options and discuss preparation.",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. Curries are described as gluten-free, and a gluten-free naan can be made with advance notice (standard naan is wheat). The kitchen is not a dedicated gluten-free facility — wheat naan is prepared on-site, so cross-contact is possible. Celiac travelers should call ahead (0742-23-0808) to arrange gluten-free options and discuss preparation.",
    "vegan_status": "options",
    "vegan_label": "Vegan options",
    "vegan_detail": "Strong, clearly-labeled vegan offerings, not just incidental. There is a dedicated vegan dal bhat (around ¥1,738), vegan biryani, plant-based yogurt, and naan made from Nara-prefecture flour without egg, milk, or baking powder. The kitchen avoids animal fats and commercial oils, and the signature dal bhat is made free of wheat flour, plant oils, sugar, and dairy. Halal meat dishes are also served, so confirm the vegan version when ordering.",
@@ -33079,30 +33079,38 @@
     "gf_cross_contamination": [
      {
       "text": "Curries are labeled gluten-free and a gluten-free naan can be made on advance request, but standard wheat naan is baked on-site, so the kitchen is not a dedicated gluten-free environment and cross-contact is possible.",
-      "source": "https://www.narakko.jp/ponte-rosso/"
+      "source": "https://www.narakko.jp/ponte-rosso/",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [],
     "vegan_cross_contact": [
      {
       "text": "Halal meat dishes are prepared in the same kitchen as the vegan and vegetarian items, so diners should specify the vegan version (e.g., vegan dal bhat) when ordering.",
-      "source": "https://www.narakko.jp/ponte-rosso/"
+      "source": "https://www.narakko.jp/ponte-rosso/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "The kitchen explicitly avoids animal fats, commercial oils, and additives, and offers dedicated halal, vegetarian, and vegan dishes, indicating staff routinely accommodate dietary needs; specific allergen protocols were not documented, so confirm by phone (0742-23-0808).",
-      "source": "https://www.narakko.jp/ponte-rosso/"
+      "source": "https://www.narakko.jp/ponte-rosso/",
+      "unsupported": "2026-08-20",
+      "why": "'ANIMAL FATS' IS AN INVERSION. The page says the kitchen avoids 業務用油 (commercial oils), 添加物 (additives) and, in the dal bhat, the 四毒 - 小麦粉, 植物油脂 (PLANT oils), 甘い物 and 乳製品. Animal fat is never mentioned, and the same page shows the kitchen using Yotsuba BUTTER and fresh eggs in its pound cake and off"
      }
     ],
     "positives": [
      {
       "text": "Dedicated vegan dal bhat, vegan biryani, and plant-based yogurt are on the menu, plus naan made without egg, milk, or baking powder.",
-      "source": "https://www.narakko.jp/ponte-rosso/"
+      "source": "https://tabelog.com/nara/A2901/A290101/29000943/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.narakko.jp/ponte-rosso/"
      },
      {
       "text": "All meat is halal-certified, and sweets are made with cane sugar instead of white sugar.",
-      "source": "https://narashikanko.or.jp/school/spot/detail_10409.html"
+      "source": "https://narashikanko.or.jp/school/spot/detail_10409.html",
+      "unsupported": "2026-08-20",
+      "why": "NEITHER HALF IS ANYWHERE. 砂糖 / きび砂糖 returns zero hits on this page, on narakko and on Tabelog, so 'cane sugar instead of white sugar' is unsourced - and it sits oddly beside narakko's 四毒 line, which says the dal bhat avoids 甘い物 altogether. 'Halal-certified' is also an upgrade the page does not make:"
      }
     ],
     "confidence": "medium",
@@ -33118,7 +33126,14 @@
    "menu_gf_count": 3,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 2,
-   "menu_vegan_count": 2
+   "menu_vegan_count": 2,
+   "gf_uncited_downgrade": {
+    "from": "options",
+    "date": "2026-08-20",
+    "disproven": 2,
+    "overrides_signoff": false,
+    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
+   }
   },
   {
    "id": "nara_somi_sweets_coffee",
@@ -47580,7 +47595,7 @@
    "lng": 135.7331,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and its cookie boxes carry the declared allergen set 卵・乳・小麦・くるみ — wheat is mixed and baked daily in the same small patisserie kitchen as the rice-flour chiffon, with no allergen or cross-contact statement published anywhere. The 米粉/グルテンフリー wording in every source is scoped to the chiffon and 100年しふぉん products only (an ingredient claim, 小麦粉不使用, not a facility or celiac claim), and it all traces to the shop's own PR — narakko, nara-gourmet and atpress are promotional echoes of one source, not independent GF verification. There is zero celiac-grade corroboration: PUKKU appears on no FindMeGlutenFree, HappyCow, Atly or gluten-free-japan listing, so no celiac has ever reported eating here safely (equally, I found no 'got glutened' report — the record simply has no celiac evidence in either direction). The chiffon itself is genuinely wheat-free by ingredient (卵・米粉・牛乳・きび砂糖・米油・レモン果汁), which is why this lands at options rather than ask, but 'high' is not defensible for a shop that bakes wheat flour alongside it.] 米粉シフォンケーキ専門店 — a rice-flour chiffon specialist where every cake is 100% rice flour and wheat-free. The shop states its signature 「100年しふぉん」 is 「米粉100%のグルテンフリー」 and describes its baking as 「小麦粉不使用（グルテンフリー）」, using 九州産米粉 plus 吉野本葛 (Yoshino kudzu) and 170-year-old 米飴 rice syrup. Wheat IS baked on the premises — the shop’s own ingredient listing shows 薄力粉 in its cookies, galettes bretonnes and butter-sand cookies, and its tins declare 卵・乳・小麦・くるみ — so flour cross-contact is a live risk in this small kitchen. The GF wording is scoped to the chiffon dough only. In addition, the attached café also serves a lunch (まんPUKKUランチ) whose full-menu gluten-free status is not individually documented, and there is no explicitly published celiac cross-contact protocol — hence options. Celiacs should confirm the lunch/morning items are also 米粉 before ordering.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and its cookie boxes carry the declared allergen set 卵・乳・小麦・くるみ — wheat is mixed and baked daily in the same small patisserie kitchen as the rice-flour chiffon, with no allergen or cross-contact statement published anywhere. The 米粉/グルテンフリー wording in every source is scoped to the chiffon and 100年しふぉん products only (an ingredient claim, 小麦粉不使用, not a facility or celiac claim), and it all traces to the shop's own PR — narakko, nara-gourmet and atpress are promotional echoes of one source, not independent GF verification. There is zero celiac-grade corroboration: PUKKU appears on no FindMeGlutenFree, HappyCow, Atly or gluten-free-japan listing, so no celiac has ever reported eating here safely (equally, I found no 'got glutened' report — the record simply has no celiac evidence in either direction). The chiffon itself is genuinely wheat-free by ingredient (卵・米粉・牛乳・きび砂糖・米油・レモン果汁), which is why this lands at options rather than ask, but 'high' is not defensible for a shop that bakes wheat flour alongside it.] 米粉シフォンケーキ専門店 — a rice-flour chiffon specialist where every cake is 100% rice flour and wheat-free. The shop states its signature 「100年しふぉん」 is 「米粉100%のグルテンフリー」 and describes its baking as 「小麦粉不使用（グルテンフリー）」, using 九州産米粉 plus 吉野本葛 (Yoshino kudzu) and 170-year-old 米飴 rice syrup. Wheat IS baked on the premises — the shop’s own ingredient listing shows 薄力粉 in its cookies, galettes bretonnes and butter-sand cookies, and its tins declare 卵・乳・小麦・くるみ — so flour cross-contact is a live risk in this small kitchen. The GF wording is scoped to the chiffon dough only. In addition, the attached café also serves a lunch (まんPUKKUランチ) whose full-menu gluten-free status is not individually documented, and there is no explicitly published celiac cross-contact protocol — hence options. Celiacs should confirm the lunch/morning items are also 米粉 before ordering.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
    "vegan_detail": "Chiffon cakes are built on 赤鶏の卵 (red-chicken eggs) and 北海道産牛乳 (Hokkaido milk), with 生クリーム (fresh cream) fillings — not vegan. No vegan options are advertised.",

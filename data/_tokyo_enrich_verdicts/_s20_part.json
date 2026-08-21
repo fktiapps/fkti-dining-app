@@ -1,0 +1,545 @@
+[
+ {
+  "id": "tokyo3__141",
+  "name": "麺屋武蔵 神山",
+  "status": "confirmed",
+  "lat": 35.691045,
+  "lng": 139.769708,
+  "loc_precise": true,
+  "address_ja": "〒101-0047 東京都千代田区内神田3-8-7 グラン・フォークス神田ビル 1F",
+  "enrich_confidence": "high",
+  "cuisine": "The Kanda branch of the Menya Musashi group — a double soup of chicken-and-pork stock married to katsuobushi and niboshi, poured over thick noodles and topped with the house 蒲焼きチャーシュー: pork belly steamed for hours to render the fat, marinated in tare, then finished under a salamander so it crisps like grilled eel. Ramen and tsukemen (plain, rich, spicy), roughly ¥1,000–¥1,900.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Uchi-Kanda 3-chōme — 2 min from Kanda station's west exit (JR Chūō / Yamanote / Keihin-Tōhoku), 4 min from Kanda on the Tokyo Metro Ginza line (exit 1), 6 min from Shin-Nihombashi on the Sōbu line",
+  "website": "https://menya634.co.jp/storelist/kanda/",
+  "menu_url": "https://menya634.co.jp/storelist/kanda/",
+  "hours_raw": "平日 11:00～22:30／土・日・祝 11:00～22:00　定休日：無休",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable for coeliac. Wheat noodles are the dish; the group's own page for Kanzan describes a shōyu-based double soup and a chāshū marinated in tare (wheat soy sauce) before grilling. No gluten-free claim, no rice-noodle option and no allergen chart anywhere on menya634.co.jp.",
+  "vegan_status": "no",
+  "vegan_detail": "Animal from the ground up — the soup is chicken carcass and pork bone plus bonito flake and niboshi, and every bowl on the Kanzan board is built on it. There is no vegetable soup and no vegan topping set.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "麺屋武蔵グループ (Menya Musashi Co., Ltd.) — group branch; individual branch chef not named publicly"
+   ],
+   "origin": "Nishi-Shinjuku — the group's 総本店 opened there in 1996",
+   "background": "Kanzan is one of fourteen Tokyo shops in the Menya Musashi group, which opened its first store in Nishi-Shinjuku in 1996 and is routinely filed in Japanese ramen writing among the 「96年組」, the 1996 cohort credited with turning ramen from a counter trade into a service business. The group's own vision page makes that the whole argument: before 1996, it says, the ramen shop was 「主」 — the master cooked, and if the bowl was good then a dirty room and brusque service were considered beside the point; Musashi's founding idea was 「食べる喜びのあるラーメン屋を作りたい」, a shop where the pleasure is the whole visit rather than only the soup. Every branch carries its own name and its own bowl instead of a chain recipe — 二天 in Ikebukuro fries pork and chicken tempura into it, 虎洞 in Kichijōji makes a chāshū sausage, 武骨 in Okachimachi runs white/black/red tonkotsu — and Kanzan, opened in Kanda in 2009, is the one that does the kabayaki chāshū. The group also runs shops in Hong Kong, Taiwan, Singapore, China, Ukraine, Los Angeles, Indonesia and Seattle. No individual chef is named for the Kanda branch on the company site.",
+   "philosophy": "「革新にして上質」 and 「お客様に喜んでいただく」 — innovation and quality judged by the customer's whole experience rather than the bowl alone. The company writes that a recipe is only a score, and that the cooking depends on who plays it.",
+   "specialty": "蒲焼きチャーシュー — pork belly long-steamed to drop the fat, tare-marinated, then crisped under a salamander in the manner of grilled eel, over the 二刀流 double soup (animal stock plus katsuobushi and niboshi).",
+   "anecdotes": [
+    {
+     "text": "Menya Musashi's own vision page claims the shop as a turning point in ramen history: 「今でも日本のラーメンの歴史を、大きく変えたエポックメーカーの“96年組”と言われております」.",
+     "source": "https://menya634.co.jp/vision/"
+    },
+    {
+     "text": "Tabelog reviewers warn that the map pin is a block off — 「食べログの地図だと、路地一本ズレていて」 — so navigate by the street address (内神田3-8-7) rather than by the pin.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13061115/"
+    }
+   ],
+   "japanese_sources_summary": "menya634.co.jp's Kanda store page gives the address 東京都千代田区内神田3-8-7 グラン・フォークス神田ビル, the 2009 opening, weekday 11:00–22:30 / weekend 11:00–22:00 hours, no closing day, and the kabayaki-chāshū description. Tabelog 13061115 confirms the same address and phone (03-3256-3634), 17 counter seats, all non-smoking, a ¥1,000–¥1,999 band, and 1,046 ratings at 3.42. Gnavi 41fd91bd0000 independently lists 〒101-0047 内神田3-8-7 and 神田駅西口 徒歩1分. The GSI address-search API geocodes 内神田3-8-7 to 139.76973, 35.691032 — within ~20 m of the Tabelog coordinates used here.",
+   "confidence": "high",
+   "sources": [
+    "https://menya634.co.jp/storelist/kanda/",
+    "https://menya634.co.jp/vision/",
+    "https://tabelog.com/tokyo/A1310/A131002/13061115/",
+    "https://r.gnavi.co.jp/41fd91bd0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A 17-seat wheat-noodle counter. Noodles are boiled in a shared pot and the whole menu is ramen or tsukemen; there is nothing wheat-free on it and no allergen handling is published.",
+     "source": "https://menya634.co.jp/storelist/kanda/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Shōyu tare and a tare-marinated chāshū. Ordinary wheat soy sauce must be assumed — no tamari is named anywhere on the group's site.",
+     "source": "https://menya634.co.jp/storelist/kanda/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Chicken-and-pork stock combined with katsuobushi and niboshi is the base of every bowl.",
+     "source": "https://menya634.co.jp/storelist/kanda/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "The group's service-first founding philosophy means staff are unusually attentive by ramen-counter standards, so a question asked at the ticket machine will at least be heard out — but nothing published suggests they can answer it with a wheat-free bowl.",
+     "source": "https://menya634.co.jp/vision/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Ticket-machine ordering, counter only, 17 seats, a queue at lunch. Menya Musashi is one of the most foreigner-familiar ramen groups in Tokyo — the corporate site runs in five languages and there are branches in Seattle and Los Angeles — so pointing at a button works fine. It is two minutes from Kanda's west exit, but Tabelog's pin sits one alley off; walk to 内神田3-8-7. Solo diners are the norm."
+  },
+  "sources": [
+   "https://menya634.co.jp/storelist/kanda/",
+   "https://menya634.co.jp/vision/",
+   "https://tabelog.com/tokyo/A1310/A131002/13061115/",
+   "https://r.gnavi.co.jp/41fd91bd0000/",
+   "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%86%85%E7%A5%9E%E7%94%B03-8-7"
+  ],
+  "enrich_note": "Confirmed. The light record's name 「麺屋武蔵 神山」 is exactly right; Kanzan is the group's Kanda branch. Verified against the group's own store page, Tabelog 13061115 and Gnavi 41fd91bd0000, all giving 千代田区内神田3-8-7. The approximate pin (35.6918, 139.771) was ~150 m northeast of the real shop; coordinates replaced with Tabelog's shop coordinates, which the GSI address geocoder corroborates to within ~20 m."
+ },
+ {
+  "id": "tokyo3__142",
+  "name": "味噌ラーメン＆つけ麺 麺処 神田",
+  "status": "confirmed",
+  "lat": 35.692958,
+  "lng": 139.770916,
+  "loc_precise": true,
+  "address_ja": "〒101-0047 東京都千代田区内神田3-20-6 Kanda ex 1F",
+  "enrich_confidence": "high",
+  "cuisine": "A 12-seat miso counter one minute from Kanda's north exit: thick, high-viscosity miso soup with a hard salt edge, mid-thick noodles and a stack of very thick chāshū — free extra vegetables, extra garlic and a small rice come with the ticket. Bowls run roughly ¥900–¥1,250 (味卵味噌チャーシュー麺 ¥1,250).",
+  "cuisine_type": "ramen",
+  "neighborhood": "Uchi-Kanda 3-chōme — 1 min from JR Kanda station's north exit (Yamanote / Chūō / Keihin-Tōhoku)",
+  "website": null,
+  "menu_url": "https://www.ubereats.com/jp-en/store/%E5%91%B3%E5%99%8C%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%26%E3%81%A4%E3%81%91%E9%BA%BA-%E9%BA%BA%E5%87%A6-%E7%A5%9E%E7%94%B0/",
+  "hours_raw": "月～日 11:00～24:00（年末年始：1月1日・2日 店休、1月3日 11:00～24:00）",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable. Miso ramen is the entire menu — wheat noodles in a shared pot, and miso tare that in a shop of this style is normally cut with soy sauce; nothing gluten-free is claimed and no allergen sheet exists. Assume wheat in the noodles, the tare and the chāshū marinade.",
+  "vegan_status": "no",
+  "vegan_detail": "Pork-forward by design: the selling point is a stack of thick pork chāshū on a pork-and-miso soup, with a marinated egg on the flagship bowl. No vegetable broth, no vegan option.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "independent owner-operator; not named publicly"
+   ],
+   "origin": "Kanda, Chiyoda-ku",
+   "background": "A newcomer rather than an institution — the shop opened in 2023 on the Kanda side street behind the north exit and was written up that September by the ramen site Ramental as 「神田の新店」. It is a plain, cheap, high-volume miso counter of twelve seats, all non-smoking, ticket machine at the door, open from eleven in the morning to midnight seven days a week, which in an office district like Kanda means it catches the late shift as much as the lunch rush. Reviewers describe the bowl as deliberately unsubtle: thick, viscous, salt-forward miso, mid-thick noodles with enough backbone to survive it, and a visually startling pile of thick-cut chāshū, with free 野菜・ニンニク増量 and a small rice thrown in — the 'obviously filling' school of ramen rather than the refined one. No owner is named on any listing and the shop keeps no website; ordering, menu and communication all run through the ticket machine and a delivery page.",
+   "philosophy": null,
+   "specialty": "味卵味噌チャーシュー麺 (¥1,250) — miso ramen with a marinated egg and a stack of thick-cut chāshū, with free vegetable and garlic increase.",
+   "anecdotes": [
+    {
+     "text": "A 2026 Tabelog reviewer notes the ticket machine prints 「味卵」 while the single-item menu says 「味玉」 — a small inconsistency regulars find funny — and that staff ask at hand-over whether you want the vegetables and garlic doubled.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13288962/"
+    },
+    {
+     "text": "The shop was covered as a Kanda new opening by ramental.net in September 2023.",
+     "source": "https://ramental.net/2023/09/12/mendokoro-kanda/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13288962 gives 千代田区内神田3-20-6 Kanda ex 1F, tel 03-6690-8551, 12 counter seats, all non-smoking, a ~￥999-and-under price band, 11:00–24:00 every day with 1/1 and 1/2 closed, JR神田駅北口 徒歩1分, and 276 ratings at 3.52. Ramendb (s/152540) and Ramental list the same shop as 「麺処 神田」; Uber Eats and Retty list it under the fuller signboard name 「味噌ラーメン＆つけ麺 麺処 神田」, which is what the light record was echoing. GSI geocodes 内神田3-20-6 to 139.771133, 35.69289 — ~25 m from the Tabelog coordinates.",
+   "confidence": "medium",
+   "sources": [
+    "https://tabelog.com/tokyo/A1310/A131002/13288962/",
+    "https://ramendb.supleks.jp/s/152540.html",
+    "https://ramental.net/2023/09/12/mendokoro-kanda/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Twelve seats, one noodle pot, a menu that is wheat noodles and nothing else. No allergen information published anywhere.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13288962/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Miso tare in this style of shop is normally cut with soy sauce, and the chāshū is tare-braised. Wheat must be assumed; no tamari is claimed.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13288962/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork stock, pork chāshū and marinated egg are the point of the bowl.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13288962/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Ticket machine, twelve counter stools, no English signage reported and no website. One question does get asked out loud at hand-over — whether you want the free vegetable and garlic increase — so a nod covers it. The compensation is the hours: open until midnight seven days a week, and a Tabelog reviewer found it half-empty at 22:10 on a weekday, which makes it one of the easier late meals near Kanda station."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1310/A131002/13288962/",
+   "https://ramendb.supleks.jp/s/152540.html",
+   "https://ramental.net/2023/09/12/mendokoro-kanda/",
+   "https://retty.me/area/PRE13/ARE11/SUB1101/100001824851/"
+  ],
+  "enrich_note": "Confirmed. The light record's 「味噌ラーメン つけ麺 麺処 神田」 is the shop's full signboard name, which Uber Eats and Retty render as 「味噌ラーメン＆つけ麺 麺処 神田」 and which Tabelog and Ramendb shorten to 「麺処 神田」 — same business, 内神田3-20-6, opened 2023. Not a garbling. The approximate pin was ~90 m off; coordinates replaced with the Tabelog shop coordinates, corroborated to ~25 m by the GSI geocoder for 内神田3-20-6."
+ },
+ {
+  "id": "tokyo3__143",
+  "name": "鮮魚らーめん 五ノ神水産",
+  "status": "confirmed",
+  "lat": 35.693832,
+  "lng": 139.768777,
+  "loc_precise": true,
+  "address_ja": "〒101-0046 東京都千代田区神田多町2-9-6 田中ビル別館 1F",
+  "enrich_confidence": "high",
+  "cuisine": "「魚を飲んでみませんか？」 — a fish-obsessed ramen bar whose signature soup, 銀だら搾り, is made from roasted silver cod and water and nothing else: ¥1,000 for the ramen, ¥1,300 for the crab-pressed tsukemen, ¥1,000 for the lobster-tomato tsukemen, ¥900 for shrimp abura-soba, with egg and extra-meat tiers on top.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Kanda Tachō 2-chōme — 4 min from Awajichō (Tokyo Metro Marunouchi line) and Ogawamachi (Toei Shinjuku line), 6 min from JR Kanda's north exit",
+  "website": "https://gonokamiseisakusho.com/kanda.html",
+  "menu_url": "https://gonokamiseisakusho.com/kanda.html",
+  "hours_raw": "月・火・木・金 11:00～15:00／17:00～21:00　土 11:00～21:00　水・日 定休　※不定休あり・Xにて要確認",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable, despite an unusually clean base. The 銀だら搾り broth genuinely is roasted silver cod and water — but the noodles are wheat, made by the group's own 五ノ神製麺所, and neither the tare nor the tsukemen dipping liquor is published as wheat-free. There is no gluten-free claim and no allergen sheet on gonokamiseisakusho.com.",
+  "vegan_status": "no",
+  "vegan_detail": "The entire concept is fish. Silver cod, crab, lobster and shrimp are the four soups; chāshū and marinated egg are the standard toppings. There is nothing plant-based on the board.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "株式会社五ノ神製作所 (Gonokami Seisakusho Co., Ltd.) — group-operated; branch chef not named publicly"
+   ],
+   "origin": "Shinjuku — the group's first shop, つけ麺 五ノ神製作所, is in Shinjuku Sanchōme",
+   "background": "Gonokami Suisan is the fish arm of the Gonokami Seisakusho group, whose Shinjuku original built its name on a lobster-and-tomato tsukemen and which now runs its own noodle factory, 五ノ神製麺所, and a shop in Taiwan. The Kanda branch states its concept in four words on its own page — 「魚を飲んでみませんか？」, would you like to drink a fish — and follows it literally: the house soup, 銀だら搾り, is roasted silver cod and water, with no stock animal behind it. That produces a bowl reviewers describe as aggressively, almost confrontationally fishy; Ramen Walker filed its television segment under 「やり過ぎ“たら”美味かった」, roughly 'they overdid the cod and it was delicious'. The rest of the board rotates other shellfish through the same idea — a crab-pressed tsukemen, the group's lobster-tomato tsukemen, a shrimp-oil abura-soba, and limited runs like a gindara 'junk' bowl with baked cheese rice. Fifteen seats, counter-led, a Tabelog score of 3.71 across 1,517 ratings. No individual chef is named; the company publishes a monthly all-store operating calendar instead, which is the honest signal that the hours move.",
+   "philosophy": "「魚を飲んでみませんか？」 — a soup that is the fish itself rather than a fish note laid over an animal base.",
+   "specialty": "らーめん銀だら搾り ¥1,000 (roasted silver cod and water); つけ麺蟹搾り ¥1,300; オマール海老トマトつけ麺 ¥1,000; 海老油そば ¥900.",
+   "anecdotes": [
+    {
+     "text": "A Tabelog reviewer went for the crab-pressed tsukemen, saw the 「鮮魚ラーメン」 sign and admits to thinking 「鮮魚…ラーメン？ｗ」 before reading the shop's 'drink a fish' concept line.",
+     "source": "https://tabelog.com/tokyo/A1310/A131002/13163444/"
+    },
+    {
+     "text": "Ramen Walker covered the shop on television as 「やり過ぎ“たら”美味かった衝撃の新感覚麺」.",
+     "source": "https://ramen.walkerplus.com/tv/76/"
+    },
+    {
+     "text": "The parent company posts a fresh 「全店舗営業予定」 calendar at the end of every month — the closing days genuinely move, and the shop's X account is the stated place to check.",
+     "source": "https://gonokamiseisakusho.com/"
+    }
+   ],
+   "japanese_sources_summary": "gonokamiseisakusho.com/kanda.html carries the concept line 「魚を飲んでみませんか？」, the 銀だら搾り description (roasted silver cod and water only) and the full priced menu quoted above. Tabelog 13163444 gives 千代田区神田多町2-9-6 田中ビル別館1F, tel 03-6206-8814, 15 seats (11 counter plus two 2-tops), all non-smoking, Wednesday and Sunday closed with 不定休, and the Awajichō/Ogawamachi 4-min access. Gnavi er7dvbtp0000 lists it independently at 淡路町駅 徒歩2分. GSI geocodes 神田多町2-9-6 to 139.768631, 35.693966 — ~20 m from the Tabelog coordinates.",
+   "confidence": "high",
+   "sources": [
+    "https://gonokamiseisakusho.com/kanda.html",
+    "https://gonokamiseisakusho.com/",
+    "https://tabelog.com/tokyo/A1310/A131002/13163444/",
+    "https://ramen.walkerplus.com/tv/76/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Wheat noodles from the group's own 五ノ神製麺所, boiled in a shared pot; the whole menu is noodles. No wheat-free preparation is offered or claimed.",
+     "source": "https://gonokamiseisakusho.com/kanda.html"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "No tamari is named. The tare and the tsukemen dipping liquor should be assumed to contain wheat soy sauce even though the base soup itself is only cod and water.",
+     "source": "https://gonokamiseisakusho.com/kanda.html"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Silver cod, crab, lobster and shrimp are the four soups; there is no plant-based bowl and no vegan topping.",
+     "source": "https://gonokamiseisakusho.com/kanda.html"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Unusually transparent about the base: the shop states plainly that 銀だら搾り is roasted silver cod and water, which is more than most ramen counters will tell you about what is in the pot.",
+     "source": "https://gonokamiseisakusho.com/kanda.html"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Fifteen seats, counter-led, and a menu the shop itself prints with English glosses (Ramen silver cod squeezing, Tsukemen crab squeezed) — awkward English, but enough to order by. The real friction is the hours: Wednesday and Sunday off plus genuine 不定休, so check the company's monthly calendar or the shop's X account before travelling. Come at lunch or right at 17:00; the mid-afternoon gap is real."
+  },
+  "sources": [
+   "https://gonokamiseisakusho.com/kanda.html",
+   "https://gonokamiseisakusho.com/",
+   "https://tabelog.com/tokyo/A1310/A131002/13163444/",
+   "https://ramen.walkerplus.com/tv/76/",
+   "https://r.gnavi.co.jp/er7dvbtp0000/"
+  ],
+  "enrich_note": "Confirmed. Light record read 「五ノ神水産」; the shop's own page and signboard read 「鮮魚らーめん 五ノ神水産」, the same business with its full prefix restored — not a garbling. Verified on the operator's own site (gonokamiseisakusho.com/kanda.html), Tabelog 13163444 and Gnavi er7dvbtp0000, all at 千代田区神田多町2-9-6. The light record filed it under 神田; it is in fact nearer Awajichō/Ogawamachi. Approximate pin was ~200 m east; coordinates replaced with the shop's, corroborated to ~20 m by the GSI geocoder."
+ },
+ {
+  "id": "tokyo3__145",
+  "name": "ギャラリー珈琲店 古瀬戸",
+  "status": "confirmed",
+  "lat": 35.695686,
+  "lng": 139.759398,
+  "loc_precise": true,
+  "address_ja": "〒101-0051 東京都千代田区神田神保町1-7 ＮＳＥビル 1F",
+  "enrich_confidence": "high",
+  "cuisine": "A 1988 Jimbōchō kissaten that doubles as a rental gallery — red walls, blue ceiling, a four-year mural finished in 1992, charcoal-roasted single-origin coffee from Hagihara Coffee in Kobe (straight coffee about ¥700), three curries, sandwiches, and the house cheese-custard choux cream; chiffon cake ¥650 with ¥100 off as a set. Cash only.",
+  "cuisine_type": "cafe",
+  "neighborhood": "Kanda-Jimbōchō 1-chōme, on the book-shop street — 1 min from Jimbōchō station (Toei Mita / Toei Shinjuku / Tokyo Metro Hanzōmon lines, exit A5)",
+  "website": "https://gallerykoseto.shopinfo.jp/",
+  "menu_url": "https://tabelog.com/tokyo/A1310/A131003/13011635/dtlmenu/photo/",
+  "hours_raw": "10:00～20:00（年中無休）※食べログ掲載では木曜のみ 10:00～18:00",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Coffee is safe; nothing on the food side is. The kitchen's three signatures are Japanese-style curry (roux-thickened with wheat flour in this genre — no flour-free version is claimed), sandwiches on bread, and wheat-flour bakery — chiffon cake and choux pastry. No gluten-free claim, no allergen sheet, and no separate preparation is described anywhere on the shop's own site, on Tabelog or in the Santatsu feature. Come for the coffee and the room, eat elsewhere.",
+  "vegan_status": "limited",
+  "vegan_detail": "Black coffee and tea only. The curries include a beef curry; the cakes and choux are built on egg, butter and cheese custard; the sandwiches are dairy-and-egg territory. No plant milk is advertised and no vegan item appears on any published menu. A vegan can sit here happily with a straight coffee — that is the whole of it.",
+  "chef_bio": {
+   "chef_name": "加藤 (Katō) — owner; 桜井美智子 (Michiko Sakurai), shop manager",
+   "roles": [
+    "owner-founder",
+    "shop manager"
+   ],
+   "origin": "Jimbōchō, Chiyoda-ku — the sister shop 古瀬戸珈琲店 opened nearby in 1980",
+   "background": "Koseto opened in 1988 as the gallery-bearing sister of 古瀬戸珈琲店, which the same owner had started in 1980 a few streets away in the same Jimbōchō book district. The owner, Katō, built it on a single idea — 「アートを日常に」, art in ordinary life — and then commissioned the room to prove it. The exterior mural was painted by Ōe Akiyo while she was still a student at Tokyo University of the Arts and an acquaintance of the owner; the interior wall was painted by 鬼頭まあこ (Maako Kido) over four years and finished in 1992, with her piece 「浮かぶ桃」 partly repainted around 2011. The red walls are not decoration but working gallery surface: the shop rents them out by section, with a semi-private area given over to exhibitions full-time, and photographers and painters have shown there for decades. Regulars point out that red walls are unusual in galleries but standard in museums, which is why the work hangs well. The coffee is charcoal-roasted beans from Hagihara Coffee in Kobe, poured as house blends and as straights — the mochas get singled out for depth. Manager Sakurai Michiko runs the floor and describes the customers, with the mildness of someone who has watched a book district's readers for years, as 「素敵な方々」. Seventy seats, all non-smoking, open every day, cash only, no Wi-Fi — a deliberate refusal of the laptop café.",
+   "philosophy": "「アートを日常に」 — art brought into the everyday, so that a cup of coffee is taken inside a working gallery rather than beside a poster.",
+   "specialty": "Charcoal-roasted Hagihara straight coffee (~¥700); cheese-custard choux cream; chiffon cake ¥650; three curries.",
+   "anecdotes": [
+    {
+     "text": "The interior mural took the painter Maako Kido four years and was completed in 1992; her 「浮かぶ桃」 was partly repainted around 2011.",
+     "source": "https://san-tatsu.jp/articles/381815/"
+    },
+    {
+     "text": "The exterior wall was painted by Ōe Akiyo, then a student at Tokyo University of the Arts and a friend of the owner.",
+     "source": "https://san-tatsu.jp/articles/381815/"
+    },
+    {
+     "text": "The red walls are rented out to exhibitors by section — regulars note that red is rare in galleries but standard in museums, and that pictures hang unusually well on them.",
+     "source": "https://san-tatsu.jp/articles/381815/"
+    }
+   ],
+   "japanese_sources_summary": "The shop's own site (gallerykoseto.shopinfo.jp) gives the address 東京都千代田区神田神保町1-7, phone 03-3294-7941, 10:00–20:00 年中無休, cash only, no Wi-Fi, fully non-smoking, and describes the room as 「アートに包まれた空間です」 with the Kido murals and a rotating hang. Tabelog 13011635 confirms the same address in the ＮＳＥビル 1F, 70 seats, a 1988 opening, a ~￥999 price band, 神保町駅 徒歩1分, and 412 ratings at 3.57 — but lists Thursday as 10:00–18:00 against the site's flat 10:00–20:00, hence hours_status 'irregular'. Santatsu (san-tatsu.jp/articles/381815) carries the 1980/1988 sister-shop history, the owner Katō, the manager Sakurai Michiko, both muralists, the Hagihara Coffee sourcing and the gallery-rental model. GSI geocodes 神田神保町1-7 to 139.759201, 35.695789 — ~20 m from the Tabelog coordinates.",
+   "confidence": "high",
+   "sources": [
+    "https://gallerykoseto.shopinfo.jp/",
+    "https://tabelog.com/tokyo/A1310/A131003/13011635/",
+    "https://san-tatsu.jp/articles/381815/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A kissaten kitchen turning out curry, sandwiches, chiffon cake and choux pastry — wheat flour is in continuous use in a small space, and no wheat-free handling is described.",
+     "source": "https://tabelog.com/tokyo/A1310/A131003/13011635/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Not a soy-sauce kitchen, but Japanese-style curry roux is itself wheat-flour-based; that, not shōyu, is the gluten route here.",
+     "source": "https://san-tatsu.jp/articles/381815/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Beef curry on the menu; the pastry is cheese custard, egg and butter. No plant milk is advertised.",
+     "source": "https://san-tatsu.jp/articles/381815/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Straight charcoal-roasted coffee, poured black, is a genuinely safe order for both diets — and the room is the reason to come.",
+     "source": "https://san-tatsu.jp/articles/381815/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "A walk-in kissaten one minute from Jimbōchō station, seventy seats, open every day from ten to eight, entirely non-smoking. Bring cash — no cards — and do not expect Wi-Fi; this is a room for reading, which suits the book district it sits in. Ordering is straightforward pointing, and lingering over one coffee is the accepted behaviour rather than a transgression. Combine it with the second-hand bookshops on Yasukuni-dōri."
+  },
+  "sources": [
+   "https://gallerykoseto.shopinfo.jp/",
+   "https://tabelog.com/tokyo/A1310/A131003/13011635/",
+   "https://san-tatsu.jp/articles/381815/",
+   "https://r.gnavi.co.jp/rd93x3850000/"
+  ],
+  "enrich_note": "Confirmed. The light record's name 「ギャラリー珈琲店 古瀬戸」 is exact and matches Tabelog 13011635 and the shop's own site. Note there are two related shops in Jimbōchō under the Koseto name — this one (ギャラリー珈琲店 古瀬戸, 神田神保町1-7, opened 1988) and its 1980 elder sibling 古瀬戸珈琲店 (Tabelog 13006272); Gnavi lists both. Coordinates moved from the neighbourhood centroid to the shop's own, corroborated to ~20 m by the GSI geocoder for 神田神保町1-7. GF downgraded from the light record's 'ask' to 'no': every food item published is wheat-based."
+ },
+ {
+  "id": "tokyo3_tokyo",
+  "name": "こってりらーめん なりたけ TOKYO 錦糸町店",
+  "status": "confirmed",
+  "lat": 35.698039,
+  "lng": 139.813534,
+  "loc_precise": true,
+  "address_ja": "〒130-0013 東京都墨田区錦糸3-3-2",
+  "enrich_confidence": "high",
+  "cuisine": "The Tokyo flagship of a Chiba 背脂チャッチャ house: simmered pork back-fat shaken through a flat strainer over the bowl (the chatcha sound is where the style's name comes from), on a heavy shōyu or miso soup with firm, wavy medium-thick house noodles. 醤油らーめん ¥1,000, 味噌らーめん ¥1,050, 特製みそつけめん ¥1,100; back-fat volume is set to taste, gyōza ¥400, weekday lunch set ¥250. Open until three in the morning.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Kinshi 3-chōme — 3 min from JR Kinshichō station's north exit (Sōbu line) and from Kinshichō on the Tokyo Metro Hanzōmon line",
+  "website": "https://naritake.co.jp/",
+  "menu_url": "https://naritake.co.jp/menu/",
+  "hours_raw": "月・火・木・金・土・日 11:00～翌3:00　水曜定休",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable. The noodles are wheat and made in the company's own factory in Inage; the company's own menu page describes the tsukemen dough as one where 「噛みしめれば小麦の香りが広がる」 — the wheat is the selling point. Both soups are shōyu- or miso-tare based with pork back fat; no gluten-free claim, no allergen chart on naritake.co.jp.",
+  "vegan_status": "no",
+  "vegan_detail": "Pork back fat is the entire concept, over a pork-and-chicken soup, with chāshū and marinated egg as toppings and gyōza on the side. There is no vegetable option; even the fish-dashi bowl (a Chiba-branch exclusive, not served here) is built on a pork/chicken/niboshi triple stock.",
+  "chef_bio": {
+   "chef_name": "成田 (Narita) — founder",
+   "roles": [
+    "founder of 有限会社なりたけ"
+   ],
+   "origin": "Funabashi, Chiba — the company office is still at 前原西 in Funabashi",
+   "background": "Naritake was founded on 1 March 1996 by a man named Narita, who trained at 'Ramen Benkei' before opening his own shop; the name is simply his surname. Twenty-nine years on, 有限会社なりたけ is a seventy-person company running five directly-operated shops — Tsudanuma, Motoyawata, Makuhari and a Fukuoka branch in Nishijin, plus this one, the Tokyo flagship, opened in Kinshichō in 2009 and the only Tokyo address the company lists. The house style is 背脂チャッチャ: pork back fat, simmered and then shaken vigorously through a flat strainer held over the bowl, so it falls in a snow of emulsified fat — the chatcha is the noise the strainer makes, and it is what the style is named after. The noodles are wavy medium-thick and made daily at the company's own factory in Inage, developed specifically to carry that much fat without collapsing. Ordering is by fat level; the shop is orange-signed, counter-only, and open from eleven in the morning until three the following morning, which is what makes it a Kinshichō institution rather than merely a good bowl — it is the last hot thing available on that side of the river. The brand has since opened in Paris.",
+   "philosophy": "Unapologetic 背脂こってり: rich by intention, with the fat level handed to the customer as a dial rather than hidden.",
+   "specialty": "醤油らーめん ¥1,000 — the shop's most-ordered bowl, a clean-edged shōyu soup carrying the back-fat richness; 味噌らーめん ¥1,050; 特製みそつけめん ¥1,100, three misos and more than ten ingredients and spices blended into a pork-bone dipping sauce.",
+   "anecdotes": [
+    {
+     "text": "The founder trained at 'Ramen Benkei' before opening the first Naritake in 1996; the shop carries his own surname.",
+     "source": "https://san-tatsu.jp/articles/218403/"
+    },
+    {
+     "text": "Kinshichō was the brand's first Tokyo shop, opening in 2009, and remains the only Tokyo address on the company's store list.",
+     "source": "https://naritake.co.jp/company/"
+    },
+    {
+     "text": "The company's own menu page notes that 背脂 can be dialled to taste on the standard bowl, and left out entirely on the miso tsukemen — 「背脂無しも選べます」.",
+     "source": "https://naritake.co.jp/menu/"
+    }
+   ],
+   "japanese_sources_summary": "naritake.co.jp/company gives 有限会社なりたけ, founded 平成8年3月1日 (1 March 1996), office at 千葉県船橋市前原西2-34-9-102, 70 staff, five directly-run shops, and lists 錦糸町店 at 東京都墨田区錦糸3-3-2 — the sole Tokyo location. naritake.co.jp/menu carries current prices (醤油 ¥1,000, 味噌 ¥1,050, 特製みそつけめん ¥1,100, ぎょうざ ¥400, ランチセット ¥250 to 15:00 weekdays) and the in-house noodle description. Tabelog 13116484 lists 「なりたけ TOKYO 錦糸町店」 at the same address, tel 03-5637-7456, counter-only seating, 11:00–翌3:00 with Wednesday closed, 錦糸町駅北口 徒歩3分, and 1,286 ratings at 3.59. Santatsu (san-tatsu.jp/articles/218403) supplies the 2009 Tokyo-flagship opening, the founder's Benkei training, the Inage noodle factory and the chatcha etymology. GSI geocodes 錦糸3-3-2 to 139.813507, 35.698071 — within ~5 m of the Tabelog coordinates.",
+   "confidence": "high",
+   "sources": [
+    "https://naritake.co.jp/locations/159/%E9%8C%A6%E7%B3%B8%E7%94%BA%E5%BA%97/",
+    "https://naritake.co.jp/company/",
+    "https://naritake.co.jp/menu/",
+    "https://tabelog.com/tokyo/A1312/A131201/13116484/",
+    "https://san-tatsu.jp/articles/218403/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Wheat noodles from the company's own Inage factory, boiled in a shared pot; gyōza wrappers in the same kitchen. Nothing wheat-free is offered.",
+     "source": "https://naritake.co.jp/menu/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Both flagship soups are shōyu- or miso-tare based and the miso tsukemen sauce blends three misos with ten-plus ingredients. No tamari is named; assume wheat throughout.",
+     "source": "https://naritake.co.jp/menu/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork back fat is shaken over every standard bowl and the stock is pork and chicken. Chāshū, marinated egg and gyōza are the toppings and sides.",
+     "source": "https://naritake.co.jp/menu/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "One genuinely useful control for a sensitive stomach, though not for gluten: the back-fat quantity is adjustable to taste, and the miso tsukemen can be ordered 背脂無し.",
+     "source": "https://naritake.co.jp/menu/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Counter-only, orange sign, no English menu published. The one thing you will be asked is how much 背脂 you want — 「普通」 for normal, 「少なめ」 for less — and getting that question right is most of the transaction. Open to 3am six days a week (closed Wednesdays), three minutes from Kinshichō's north exit, so it is the reliable late meal in a district where most kitchens shut at eleven. Expect a queue at peak lunch and after midnight on weekends."
+  },
+  "sources": [
+   "https://naritake.co.jp/locations/159/%E9%8C%A6%E7%B3%B8%E7%94%BA%E5%BA%97/",
+   "https://naritake.co.jp/company/",
+   "https://naritake.co.jp/menu/",
+   "https://tabelog.com/tokyo/A1312/A131201/13116484/",
+   "https://san-tatsu.jp/articles/218403/"
+  ],
+  "enrich_note": "Confirmed. Light record read 「なりたけ TOKYO 錦糸町店」, which is exactly how Tabelog 13116484 names it; the company's own store list calls the same shop simply 錦糸町店 and the brand signboard is 「こってりらーめん なりたけ」, so the name has been given here in full. Verified on naritake.co.jp (company page listing 東京都墨田区錦糸3-3-2 as the only Tokyo shop), on Tabelog and in a Santatsu feature. Approximate pin was ~150 m off; coordinates replaced with the Tabelog shop coordinates, which the GSI geocoder for 錦糸3-3-2 matches to ~5 m."
+ },
+ {
+  "id": "tokyo3__155",
+  "name": "タイ国料理レストラン タイランド",
+  "status": "confirmed",
+  "lat": 35.699175,
+  "lng": 139.814135,
+  "loc_precise": true,
+  "address_ja": "〒130-0013 東京都墨田区錦糸3-12-10",
+  "enrich_confidence": "high",
+  "cuisine": "Kinshichō's veteran Thai house, open since August 1986 and run as the direct restaurant arm of a Thai-food import trader — vegetables, fish and seasonings flown and shipped in from Thailand, with a Thai kitchen and Thai floor staff. Green curry, tom yum goong, som tam thai with the heat set to order, Thai suki; Thai-style ramen ¥850, som tam ¥1,100, yam nua ¥1,350, steamed sea bass with lemon ¥2,350. Budget around ¥2,000–¥3,000 at dinner.",
+  "cuisine_type": "thai",
+  "neighborhood": "Kinshi 3-chōme, on the Kinshi Park side — 3 min from Kinshichō on the Tokyo Metro Hanzōmon line (exit 4), 5 min from JR Kinshichō's north exit, 1 min from the Kinshi-kōen-mae bus stop",
+  "website": null,
+  "menu_url": "https://tabelog.com/tokyo/A1312/A131201/13002968/dtlmenu/",
+  "hours_raw": "火～金 11:30～15:00（L.O.14:30）／17:00～21:00（L.O.20:30）　土・日・祝 11:30～21:00（L.O.20:30）　月曜定休　※ホットペッパー掲載では夜23:00まで",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Genuinely worth asking, but nothing is claimed. Thai cooking gives you a real starting hand — som tam, yam nua, tom yum goong and the curries are rice-and-fish-sauce dishes rather than wheat ones, and the restaurant imports its own seasonings from Thailand rather than substituting Japanese ones, which lowers the odds of wheat shōyu creeping in. Against that: soy sauce, oyster sauce and seasoning sauce are standard in a Thai kitchen and most Thai brands contain wheat; the menu carries a Thai-style ramen and fried items; and no allergen information is published on Tabelog, Hot Pepper or Gnavi. The owner's stated habit of explaining dishes to customers who do not know Thai food is the opening — ask which dishes use シーユー/オイスターソース before ordering.",
+  "vegan_status": "ask",
+  "vegan_detail": "Fish sauce (ナンプラー) and dried shrimp are the backbone of Thai seasoning and are almost certainly in the som tam and the curry pastes; the green curry will normally carry chicken and fish sauce. There is no published vegetarian or vegan section. A Thai kitchen with Thai staff can usually build a vegetable dish to order — 「ジェー」 (jay) is the word — but this shop makes no such claim, so treat it as a conversation, not an option.",
+  "chef_bio": {
+   "chef_name": "鈴木庸一 (Yōichi Suzuki) — proprietor/manager",
+   "roles": [
+    "proprietor (店主)",
+    "operated as the direct restaurant arm of a Thai food import trading company"
+   ],
+   "origin": "Shizuoka Prefecture (b. 12 June 1969); the restaurant has been in Kinshi 3-chōme since 1986",
+   "background": "Thailand opened in August 1986, which makes it older than the 'Little Thailand' reputation Kinshichō later acquired — by the time Japanese media started writing about the Thai bars and grocers clustered around the station, this restaurant had already been feeding the neighbourhood for two decades. It is not an independent's kitchen but the直営 restaurant of a Thai-food import trading company, and Suzuki is candid that this is the point: the vegetables, the fish and the seasonings come in by air and sea from Thailand, the kitchen and the floor are staffed by Thai cooks and servers, and what lands on the table is meant to be what would land on a table in Bangkok rather than a Japanese reading of it. Suzuki, from Shizuoka and born in 1969, describes his own job as translation more than cooking — 「タイ料理を分かっていない方が多いので、丁寧に説明するようにしている」 — talking customers through unfamiliar dishes so they can find a way into them, and setting the chilli on the som tam to whatever the diner can actually take. His personal motto, given to a Sumida ward profile, is a single word: 「バランス」. Fifty to sixty seats over a wide, unhurried room that takes groups; in a 2012 interview the shop's small boast was that it stocked large bottles of Singha shipped straight from Thailand when almost nowhere in Tokyo did.",
+   "philosophy": "「バランス」 — and authenticity as a supply chain rather than a slogan: import the ingredients, hire the cooks, then explain the food to whoever walks in.",
+   "specialty": "Green curry and tom yum goong (the two perennials), som tam thai with adjustable heat, Thai suki, steamed sea bass with lemon ¥2,350, yam nua ¥1,350.",
+   "anecdotes": [
+    {
+     "text": "Suzuki on the operation: 「タイ食材の商社の直営で、厨房もサービスもタイ人スタッフ」 — the restaurant is run by the importer, with a Thai kitchen and Thai floor staff.",
+     "source": "https://www.sumida-jikan.com/request/area/owners_profile_d/500/"
+    },
+    {
+     "text": "In a 2012 ward interview the shop's distinguishing detail was large bottles of Singha imported direct from Thailand — a rarity in Tokyo at the time.",
+     "source": "https://www.sumida-jikan.com/request/area/owners_profile_d/500/"
+    },
+    {
+     "text": "AERA's 【昭和な名店】 feature files it as the Kinshichō place to eat Thai street food that Japanese diners have not met.",
+     "source": "https://dot.asahi.com/articles/-/84102"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13002968 gives 東京都墨田区錦糸3-12-10, tel 03-3626-3885, an August 1986 opening, 50 seats, a ¥2,000–¥2,999 band, Monday closed, and 560 ratings at 3.49, with the Hanzōmon-line exit-4 3-min / JR north-exit 5-min / Kinshi-kōen-mae bus 1-min access. Hot Pepper strJ000128909 lists the same address with 60 seats and a later 23:00 close, which is why hours are marked irregular. Gnavi 4ybzmu7k0000 files it as 「レストランタイランド」 at 錦糸町駅4番口 徒歩3分. The Sumida ward business profile (sumida-jikan.com) names the proprietor 鈴木庸一, born 12 June 1969 in Shizuoka, and carries the import-trading-company background, the Thai staffing, the signature dishes and the 「バランス」 motto. GSI geocodes 錦糸3-12-10 to 139.814178, 35.699108 — within ~10 m of the Tabelog coordinates.",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1312/A131201/13002968/",
+    "https://www.hotpepper.jp/strJ000128909/",
+    "https://www.sumida-jikan.com/request/area/owners_profile_d/500/",
+    "https://r.gnavi.co.jp/4ybzmu7k0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A 50–60 seat general Thai kitchen with a noodle dish and fried items on the menu; no separate wheat-free preparation is claimed and no allergen sheet is published.",
+     "source": "https://tabelog.com/tokyo/A1312/A131201/13002968/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Thai seasoning sauces — light soy (สีอิ๊ว), oyster sauce, seasoning sauce — normally contain wheat, and this kitchen imports Thai brands rather than substituting Japanese ones, so the question is which dishes use them, not whether the shop stocks them. Nothing is published either way.",
+     "source": "https://www.sumida-jikan.com/request/area/owners_profile_d/500/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Fish sauce and dried shrimp are standard in som tam and in curry pastes; the green curry is normally chicken. No vegetarian or vegan menu section exists.",
+     "source": "https://tabelog.com/tokyo/A1312/A131201/13002968/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "The proprietor's own stated practice is to explain dishes carefully to customers unfamiliar with Thai food, and som tam heat is adjusted on request — evidence that a dietary conversation will be entertained, though not that it will be guaranteed.",
+     "source": "https://www.sumida-jikan.com/request/area/owners_profile_d/500/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Rice-based cuisine with an imported Thai larder and a Thai kitchen brigade: the raw odds of an accidental wheat dish are lower here than at a Japanese-style izakaya, and there are naturally wheat-free candidates on the board (som tam, yam nua, tom yum goong).",
+     "source": "https://www.sumida-jikan.com/request/area/owners_profile_d/500/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "A forty-year-old neighbourhood restaurant rather than a scene — fifty-odd seats, wide tables, groups welcome, lunch service from 11:30 and a break in the afternoon on weekdays but straight through at weekends. Thai floor staff and an owner whose declared habit is explaining the food make this an unusually good room in which to ask a question in imperfect Japanese or English. Closed Mondays. It sits on the Kinshi Park side of the station, in the same few blocks as Kinshichō's Thai grocers and bars."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1312/A131201/13002968/",
+   "https://www.hotpepper.jp/strJ000128909/",
+   "https://www.sumida-jikan.com/request/area/owners_profile_d/500/",
+   "https://r.gnavi.co.jp/4ybzmu7k0000/",
+   "https://dot.asahi.com/articles/-/84102"
+  ],
+  "enrich_note": "Confirmed, and not a generic phrase despite appearances. 「タイランド」 is the actual registered shop name — Tabelog 13002968 files it under exactly that single word — while Gnavi lists the same business as 「レストランタイランド」 and the Sumida ward profile as 「タイ国料理レストラン『タイランド』」; the full form is used here. Same address, phone and 1986 opening across all three. Approximate pin was ~250 m away; coordinates replaced with the shop's, corroborated to ~10 m by the GSI geocoder for 錦糸3-12-10. GF and vegan both left at 'ask' as the light record had them — the cuisine is promising, the shop publishes nothing, and the owner is on record as willing to talk diners through the menu."
+ }
+]

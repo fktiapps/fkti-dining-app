@@ -26,6 +26,30 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
   writeCity('nara', j);
 }
 
+// ---------------------------------------------------------------- NAGOYA (2)
+{
+  const j = readCity('nagoya');
+  for (const r of find(j.places, 'Vegedeco')) {
+    // Not a restaurant any more. The Lab's own site announced on 2019-09-23 that from
+    // October 2019 it stopped retail and became a cooking-class studio; the record's
+    // website and menu_url now point at a ¥6,600 class booking page. It was still
+    // shipping with a GF category, Fri-Sun takeout hours and menu counts.
+    //
+    // Hidden rather than deleted, like every other existence finding here: the record
+    // and its research stay, and a later pass can restore it if the Lab starts serving
+    // food again.
+    if (!r.hidden) {
+      r.hidden = 'not_a_venue';
+      r.existence = { status: 'not_a_venue', checked: DATE,
+        note: 'Ceased retail food service in October 2019 (own announcement 2019-09-23) and ' +
+              'operates as a cooking-class studio. The cited website and menu_url are a class ' +
+              'booking page.' };
+      edits.push('nagoya/Vegedeco Salad Lab: hidden — a cooking-class studio since 2019, not a food venue');
+    }
+  }
+  writeCity('nagoya', j);
+}
+
 // ---------------------------------------------------------------- NAGANO
 {
   const j = readCity('nagano');

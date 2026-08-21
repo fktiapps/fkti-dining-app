@@ -1,0 +1,76 @@
+{
+ "id": "tokyo3__181",
+ "status": "confirmed",
+ "name": "割烹たなか",
+ "lat": 35.697764,
+ "lng": 139.774617,
+ "loc_precise": true,
+ "address_ja": "〒101-0025 東京都千代田区神田佐久間町1-16 大橋ビル 1F",
+ "enrich_confidence": "high",
+ "cuisine": "A kappō running two completely different services: at lunch a queue for the 魚がし丼 (about ¥1,100) — big, thick-cut sashimi over rice eaten with the house sesame dare, sold until it runs out — and in the evening a proper counter-and-tatami kappō where reviewers' bills land at ¥6,000–¥7,999.",
+ "cuisine_type": "kappo",
+ "neighborhood": "Kanda-Sakumachō 1-chōme, Chiyoda-ku — 96 m from Akihabara station's Shōwa-dōri exit (JR Yamanote, Keihin-Tōhoku, Chūō-Sōbu and Tsukuba Express), about 350 m from Iwamotochō (Toei Shinjuku line).",
+ "website": null,
+ "menu_url": null,
+ "hours_raw": "[月~金] 11:30～なくなり次第終了／17:00～22:30　定休日：土曜日・日曜日・祝日、水曜日はランチ休業",
+ "hours_status": "irregular",
+ "gf_confidence": "ask",
+ "gf_detail": "Nothing published either way, and the signature dish is a problem: the 魚がし丼 is dressed in a ゴマダレ, and a Japanese sesame dare is normally built on wheat shōyu — no gluten-free tamari is claimed anywhere. Tempura and simmered dishes on the evening kappō menu are the usual wheat-batter and wheat-shōyu constructions. On the other hand this is a small kappō with a chef at the counter and reservations taken for dinner, so plain sashimi without the dare is the kind of thing that can be asked for in advance. Treat it as ask-at-booking, not as a shop with a gluten-free line.",
+ "vegan_status": "no",
+ "vegan_detail": "A seafood house. Tabelog's genre string is 日本料理、海鮮、海鮮丼, the lunch service is a single sashimi bowl, and the dashi behind everything else will be katsuo. No vegetable-only course is advertised and nothing suggests one exists.",
+ "chef_bio": {
+  "chef_name": null,
+  "roles": [
+   "板前・店主 (owner-chef; not named in any source found)"
+  ],
+  "origin": "Kanda-Sakumachō, Chiyoda-ku — a ground-floor unit in the Ōhashi building, one block off Shōwa-dōri behind Akihabara station",
+  "background": "割烹たなか is a 20-seat kappō (6 counter, 10 on the tatami, 4 at tables) tucked behind Akihabara station on the Shōwa-dōri side, and it is known locally for a lunch that has nothing to do with the electronics district: the 魚がし丼, a bowl of large, thickly cut sashimi over rice served with the house sesame dare for about ¥1,100, sold weekdays from 11:30 until it runs out. Lunch is walk-in only — the shop takes no lunch bookings — and there is no Wednesday lunch. In the evening it works as a conventional kappō, closed weekends and public holidays, with cards accepted (JCB, AMEX, Diners) and private hire possible; reviewers' evening spend clusters at ¥6,000–¥7,999 against a ¥1,000–¥1,999 lunch. Tabelog rates it 3.55.",
+  "philosophy": null,
+  "specialty": "魚がし丼 — the sashimi-over-rice lunch bowl with sesame dare, about ¥1,100.",
+  "anecdotes": [
+   {
+    "text": "A TikTok clip of the lunch bowl (@tokyo_foods, May 2023) has been viewed about 151,000 times and repeats the house line: 「ランチ営業時間 月・火・木・金 11:30～売り切れ次第ランチ終了／定休日 土・日・祝／◆魚がし丼1100」.",
+    "source": "https://hamoni.jp/shop/nTINrLh2bdsTioBNN77B"
+   }
+  ],
+  "japanese_sources_summary": "Tabelog 13026551 gives 割烹たなか at 東京都千代田区神田佐久間町1-16 大橋ビル1F, tel 03-3253-5152, coordinates 35.69776/139.77462, 96 m from Akihabara station, genre 日本料理・海鮮・海鮮丼, weekday-only hours 11:30 until sold out and 17:00–22:30, closed Sat/Sun/holidays with no Wednesday lunch, reservations for dinner but not lunch, 6 counter + 10 tatami + 4 table seats, all non-smoking, cards accepted, rating 3.55. The aggregator HAMONI carries the same phone number and the address in postal form (〒101-0025 東京都千代田区神田佐久間町1丁目16-1 大橋ビル) and summarises the shop as 「看板メニューの魚がし丼を中心とした海鮮丼定食が特徴。新鮮で大ぶりなネタをゴマダレで味わえる」. Retty also lists it under 秋葉原/割烹・小料理屋. No official website was found — see the enrich_note for a trap here.",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/tokyo/A1310/A131001/13026551/",
+   "https://hamoni.jp/shop/nTINrLh2bdsTioBNN77B",
+   "https://retty.me/area/PRE13/ARE11/SUB1102/100000872684/"
+  ]
+ },
+ "safety": {
+  "gf_cross_contamination": [
+   {
+    "text": "No allergen information is published and no gluten-free preparation is claimed. A small kappō kitchen frying tempura in the evening shares its space with everything else on the menu.",
+    "source": "https://tabelog.com/tokyo/A1310/A131001/13026551/"
+   }
+  ],
+  "soy_sauce_wheat": [
+   {
+    "text": "The signature 魚がし丼 is served with a ゴマダレ, normally built on ordinary wheat soy sauce; the shop names no tamari or wheat-free seasoning.",
+    "source": "https://hamoni.jp/shop/nTINrLh2bdsTioBNN77B"
+   }
+  ],
+  "vegan_cross_contact": [
+   {
+    "text": "Filed by Tabelog as 日本料理・海鮮・海鮮丼 with a raw-fish bowl as the only lunch; no plant-based option is listed.",
+    "source": "https://tabelog.com/tokyo/A1310/A131001/13026551/"
+   }
+  ],
+  "staff_allergy_handling": [],
+  "positives": []
+ },
+ "cultural_comfort": {
+  "level": "Easy at lunch, book for dinner",
+  "note": "Ninety seconds from Akihabara's Shōwa-dōri exit, which is exactly where the light record put it. Lunch is walk-in only and no reservations are taken, so go before the bowl sells out; there is no Wednesday lunch, and the shop is closed all weekend and on public holidays. Dinner takes reservations on 03-3253-5152 and accepts JCB, AMEX and Diners, but lunch is effectively cash-and-go and the counter is small. No English menu is advertised and there is no website, so a phone call in Japanese — or asking a hotel to call — is the only way to raise a dietary request before you arrive."
+ },
+ "sources": [
+  "https://tabelog.com/tokyo/A1310/A131001/13026551/",
+  "https://hamoni.jp/shop/nTINrLh2bdsTioBNN77B",
+  "https://retty.me/area/PRE13/ARE11/SUB1102/100000872684/"
+ ],
+ "enrich_note": "Confirmed, and it is genuinely the shop the sweep meant. A nationwide Tabelog keyword search for 割烹 たなか (HTTP 200, 13件) returns thirteen restaurants, of which exactly one is in Tokyo's Akihabara area: 13026551 at 神田佐久間町1-16, 96 m from Akihabara station — matching the light record's 「昭和通り口, 秋葉原駅近く」 — and its Tabelog genre 日本料理・海鮮・海鮮丼 matches the sweep's 「割烹・海鮮丼ランチ」 exactly. The other twelve are in Niigata, Nagasaki, Mie, Gifu, Ishikawa, Aichi, Kanagawa, Toyama and Ehime, plus 割烹 多なか in Adachi-ku. Coordinates updated to Tabelog's (35.697764, 139.774617). One trap worth recording: the aggregator HAMONI lists this shop's official site as kappou-tanaka.com — that domain was fetched (HTTP 200) and is 割烹たなか矢上店, the Nagasaki restaurant, so it has NOT been used as the website here. Tabelog lists no homepage for the Akihabara shop and a nationwide gnavi search (r.gnavi.co.jp/area/jp/rs/?fw=割烹たなか 秋葉原, HTTP 200) returned 1件 with no usable listing page, so website is left null rather than guessed."
+}

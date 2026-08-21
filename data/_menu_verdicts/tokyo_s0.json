@@ -2944,5 +2944,670 @@
     "dish_key": "ice_pail"
    }
   ]
+ },
+ "tokyo_nyorosuke_tatsumiya_asak": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://kiwa-group.co.jp/wp5/wp-content/uploads/2025/12/nyorosuke_asakusa_grand_2511.pdf",
+   "https://kiwa-group.co.jp/nyorosuke_asakusa/"
+  ],
+  "price_note": "Prices approximate — may change. Transcribed from the shop group's own GRAND MENU PDF (file stamped 25_11, i.e. November 2025); the sheet's own footer reads 価格は税込です — all figures tax-included. The PDF's Japanese is embedded as outlines and cannot be copied out, so it was read from a rendered image. The record's cuisine field says 'Doenjou', which is a garbling of どㄨう (dojo, loach) — this is an eel-and-loach house, not a Korean doenjang restaurant.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "どぜうちび鍋",
+    "romaji": "dozeu chibi-nabe",
+    "en": "Asakusa's own dish in a one-person pot — whole loaches simmered at your table in sweet soy broth, buried under raw spring onion. Orderable from one person, which is rare for this dish",
+    "price": "¥2,600",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat.",
+    "dish_key": "dojo_nabe"
+   },
+   {
+    "ja": "どぜう柳川ちび鍋",
+    "romaji": "dozeu Yanagawa chibi-nabe",
+    "en": "Yanagawa-nabe in a one-person pot — boned loach with burdock, finished with beaten egg",
+    "price": "¥2,800",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat. 卵とじ。Egg-bound.",
+    "dish_key": "yanagawa_nabe"
+   },
+   {
+    "ja": "お江戸の葱鮪鍋",
+    "romaji": "o-Edo no negima nabe",
+    "en": "Negima-nabe — fatty tuna belly and spring onion in a soy broth, an Edo dish from when tuna belly was the cheap cut. From two portions",
+    "price": "¥8,800",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat. 二人前より。Minimum two.",
+    "dish_key": "negima_nabe"
+   },
+   {
+    "ja": "牛すきやき 特選神戸牛",
+    "romaji": "gyū sukiyaki, tokusen Kōbe-gyū",
+    "en": "Sukiyaki with選 Kobe beef, for two",
+    "price": "¥24,000",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat. 二人前より。Minimum two.",
+    "dish_key": "sukiyaki_kobe"
+   },
+   {
+    "ja": "牛すきやき 特選黒毛和牛",
+    "romaji": "gyū sukiyaki, tokusen kuroge wagyū",
+    "en": "Sukiyaki with selected kuroge wagyu, for two",
+    "price": "¥15,000",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat. 二人前より。",
+    "dish_key": "sukiyaki_kuroge"
+   },
+   {
+    "ja": "牛しゃぶしゃぶ 特選神戸牛",
+    "romaji": "gyū shabu-shabu, tokusen Kōbe-gyū",
+    "en": "Shabu-shabu with selected Kobe beef, for two",
+    "price": "¥24,000",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ポン酢・ごまだれ＝醤油。Both dips are soy-based. 二人前より。",
+    "dish_key": "shabu_kobe"
+   },
+   {
+    "ja": "牛しゃぶしゃぶ 特選黒毛和牛",
+    "romaji": "gyū shabu-shabu, tokusen kuroge wagyū",
+    "en": "Shabu-shabu with selected kuroge wagyu, for two",
+    "price": "¥15,000",
+    "section": "名物 鍋 Hot pot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ポン酢・ごまだれ＝醤油。二人前より。",
+    "dish_key": "shabu_kuroge"
+   },
+   {
+    "ja": "ごはんセット",
+    "romaji": "gohan set",
+    "en": "Rice, soup and pickles to go with the pot",
+    "price": "¥660",
+    "section": "名物 鍋 Hot pot",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "味噌汁の味噌種別・出汁未記載。Miso type and stock not published.",
+    "dish_key": "rice_set"
+   },
+   {
+    "ja": "鰻地焼（白焼／蒲焼）",
+    "romaji": "unagi jiyaki (shirayaki / kabayaki)",
+    "en": "Grilled eel, your choice: shirayaki (no glaze, eat it with salt and wasabi) or kabayaki (lacquered in the sweet soy glaze). Same price either way",
+    "price": "¥4,950",
+    "section": "鰻あれこれ Eel dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "**白焼を選べば醤油だれを回避できる** — 塗りだれなし。The shirayaki is the one eel dish here served WITHOUT the wheat-soy glaze; confirm nothing is brushed on. The kabayaki is definitively wheat.",
+    "dish_key": "unagi_shirayaki_kabayaki"
+   },
+   {
+    "ja": "鰻肝串",
+    "romaji": "unagi kimo-gushi",
+    "en": "Grilled eel-liver skewer",
+    "price": "¥880",
+    "section": "鰻あれこれ Eel dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat.",
+    "dish_key": "unagi_liver_skewer"
+   },
+   {
+    "ja": "うざく",
+    "romaji": "uzaku",
+    "en": "Uzaku — grilled eel and cucumber in vinegar dressing, the classic summer eel-house starter",
+    "price": "¥1,410",
+    "section": "鰻あれこれ Eel dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "三杯酢＝醤油、鰻は蒲焼。Sanbaizu contains soy, and the eel is glazed.",
+    "dish_key": "uzaku"
+   },
+   {
+    "ja": "鰻肝ポンズ",
+    "romaji": "unagi kimo ponzu",
+    "en": "Eel liver in ponzu",
+    "price": "¥880",
+    "section": "鰻あれこれ Eel dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ポン酢＝醤油。Ponzu contains wheat soy.",
+    "dish_key": "unagi_liver_ponzu"
+   },
+   {
+    "ja": "鰻煮凍り",
+    "romaji": "unagi nikogori",
+    "en": "Jellied eel — eel set in its own cooking liquor",
+    "price": "¥860",
+    "section": "鰻あれこれ Eel dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "煮汁＝醤油。The aspic is the soy cooking liquor.",
+    "dish_key": "unagi_nikogori"
+   },
+   {
+    "ja": "骨せんべい",
+    "romaji": "hone senbei",
+    "en": "Eel-bone crackers — the spines deep-fried until they shatter",
+    "price": "¥550",
+    "section": "鰻あれこれ Eel dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "素揚げなら小麦なしだが共用フライヤー、塩以外の調味は未記載。Likely fried plain without batter, but the fryer is shared with breaded items and the seasoning is not published.",
+    "dish_key": "hone_senbei"
+   },
+   {
+    "ja": "鰻重 特上",
+    "romaji": "unajū tokujō",
+    "en": "Unaju, top grade — grilled eel over rice in a lacquer box",
+    "price": "¥9,240",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat. 蒲焼のたれ。The kabayaki glaze.",
+    "dish_key": "unaju_tokujo"
+   },
+   {
+    "ja": "鰻重 上",
+    "romaji": "unajū jō",
+    "en": "Unaju, upper grade",
+    "price": "¥7,040",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat.",
+    "dish_key": "unaju_jo"
+   },
+   {
+    "ja": "鰻重 並",
+    "romaji": "unajū nami",
+    "en": "Unaju, standard grade — the cheapest way into the house speciality",
+    "price": "¥4,950",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat.",
+    "dish_key": "unaju_nami"
+   },
+   {
+    "ja": "ひつまぶし 特上",
+    "romaji": "hitsumabushi tokujō",
+    "en": "Hitsumabushi, top grade — eel chopped over rice; eat a quarter plain, a quarter with condiments, a quarter with dashi poured over, then whichever you liked best",
+    "price": "¥9,570",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat. 出汁も醤油ベース。The pouring dashi is soy-based too.",
+    "dish_key": "hitsumabushi_tokujo"
+   },
+   {
+    "ja": "ひつまぶし 上",
+    "romaji": "hitsumabushi jō",
+    "en": "Hitsumabushi, upper grade",
+    "price": "¥7,370",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat.",
+    "dish_key": "hitsumabushi_jo"
+   },
+   {
+    "ja": "ひつまぶし 並",
+    "romaji": "hitsumabushi nami",
+    "en": "Hitsumabushi, standard grade",
+    "price": "¥5,280",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "割下・タレは醤油＋味醂＝小麦。The pot broth and the glaze are soy-and-mirin, so wheat.",
+    "dish_key": "hitsumabushi_nami"
+   },
+   {
+    "ja": "びっくり天丼 特上",
+    "romaji": "bikkuri tendon tokujō",
+    "en": "'Surprise tendon' — the house speciality, tempura piled over rice, top grade",
+    "price": "¥3,800",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣＝小麦、丼だれ＝醤油。Wheat batter and soy donburi sauce.",
+    "dish_key": "bikkuri_tendon_tokujo"
+   },
+   {
+    "ja": "びっくり天丼 上",
+    "romaji": "bikkuri tendon jō",
+    "en": "'Surprise tendon', upper grade — the cheapest full meal on the menu",
+    "price": "¥2,200",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣＝小麦、丼だれ＝醤油。",
+    "dish_key": "bikkuri_tendon_jo"
+   },
+   {
+    "ja": "鰻天丼 特上",
+    "romaji": "unagi tendon tokujō",
+    "en": "Eel tempura bowl, top grade — eel battered and fried rather than grilled",
+    "price": "¥3,300",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣＝小麦、丼だれ＝醤油。",
+    "dish_key": "unagi_tendon_tokujo"
+   },
+   {
+    "ja": "鰻天丼 上",
+    "romaji": "unagi tendon jō",
+    "en": "Eel tempura bowl, upper grade",
+    "price": "¥2,200",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣＝小麦、丼だれ＝醤油。",
+    "dish_key": "unagi_tendon_jo"
+   },
+   {
+    "ja": "肝吸",
+    "romaji": "kimosui",
+    "en": "Clear soup with eel liver in it — what an unaju is meant to be eaten with",
+    "price": "¥330",
+    "section": "御食事 Rice meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "吸い地＝薄口醤油。The clear stock is seasoned with light soy.",
+    "dish_key": "kimosui"
+   },
+   {
+    "ja": "ごはん大盛",
+    "romaji": "gohan ōmori",
+    "en": "Large rice upgrade",
+    "price": "¥110",
+    "section": "御食事 Rice meals",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "白米のみ。Plain white rice.",
+    "dish_key": "big_rice"
+   },
+   {
+    "ja": "大海老天ぷら",
+    "romaji": "ō-ebi tempura",
+    "en": "King prawn tempura, one piece",
+    "price": "¥1,600",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣＝小麦。Wheat batter.",
+    "dish_key": "king_prawn_tempura"
+   },
+   {
+    "ja": "鰻天ぷら",
+    "romaji": "unagi tempura",
+    "en": "Whole eel tempura",
+    "price": "¥4,950",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣＝小麦。",
+    "dish_key": "eel_tempura"
+   },
+   {
+    "ja": "辛味こんにゃく",
+    "romaji": "karami konnyaku",
+    "en": "Spicy konjac",
+    "price": "¥550",
+    "section": "一品肴 Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "味付けに醤油の可能性大。Almost certainly soy-seasoned — ask.",
+    "dish_key": "spicy_konnyaku"
+   },
+   {
+    "ja": "どぜう唐揚",
+    "romaji": "dozeu karaage",
+    "en": "Deep-fried whole loaches — crisp enough to eat bones and all",
+    "price": "¥1,500",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "唐揚げ粉＝小麦、下味に醤油。Wheat coating, soy marinade.",
+    "dish_key": "dojo_karaage"
+   },
+   {
+    "ja": "鯨刺",
+    "romaji": "kujira sashi",
+    "en": "Whale sashimi — note this restaurant serves whale",
+    "price": "¥2,200",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "刺身醤油＝小麦。Wheat soy dip.",
+    "dish_key": "whale_sashimi"
+   },
+   {
+    "ja": "鯨ユッケ",
+    "romaji": "kujira yukke",
+    "en": "Whale yukhoe — raw whale dressed Korean-style with egg yolk",
+    "price": "¥2,200",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ユッケだれ＝醤油・コチュジャン（小麦）。Yukhoe dressing is soy and gochujang, both wheat.",
+    "dish_key": "whale_yukhoe"
+   },
+   {
+    "ja": "葱豆腐",
+    "romaji": "negi dōfu",
+    "en": "Tofu with chopped spring onion",
+    "price": "¥550",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "醤油をかけて食す。Eaten with wheat soy sauce; tofu itself is soy only.",
+    "dish_key": "negi_tofu"
+   },
+   {
+    "ja": "たたき胡瓜",
+    "romaji": "tataki kyūri",
+    "en": "Smashed cucumber",
+    "price": "¥550",
+    "section": "一品肴 Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "和え調味料未記載。Dressing not published.",
+    "dish_key": "tataki_kyuri"
+   },
+   {
+    "ja": "漬けもの盛り",
+    "romaji": "tsukemono mori",
+    "en": "Assorted pickles",
+    "price": "¥750",
+    "section": "一品肴 Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "漬け床未記載。Pickling medium not published.",
+    "dish_key": "pickle_platter"
+   },
+   {
+    "ja": "特大海老フライ",
+    "romaji": "tokudai ebi furai",
+    "en": "Extra-large breaded fried prawn",
+    "price": "¥3,300",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "パン粉・小麦。Breadcrumbs and flour.",
+    "dish_key": "jumbo_ebi_fry"
+   },
+   {
+    "ja": "海老フライ",
+    "romaji": "ebi furai",
+    "en": "Breaded fried prawn",
+    "price": "¥2,200",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "パン粉・小麦。",
+    "dish_key": "ebi_fry"
+   },
+   {
+    "ja": "鮪フライタルタルソース",
+    "romaji": "maguro furai tartar sauce",
+    "en": "Breaded fried tuna with tartare sauce",
+    "price": "¥1,800",
+    "section": "一品肴 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "パン粉・小麦、タルタル＝卵。Breaded; tartare contains egg.",
+    "dish_key": "maguro_fry"
+   }
+  ]
+ },
+ "tokyo_vegeater": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://s.tabelog.com/tokyo/A1303/A130301/13257077/dtlmenu/?photo=1",
+   "https://tblg.k-img.com/restaurant/images/Rvw/247617/ad81621c71ce0bfff4a84d4c075d126e.jpg",
+   "https://tblg.k-img.com/restaurant/images/Rvw/247617/4532bbf3e6539a884b8ac6d6f9399069.jpg",
+   "https://vegeater.imachika.com/store/vegeater",
+   "https://s.tabelog.com/tokyo/A1303/A130301/13257077/"
+  ],
+  "price_note": "Prices approximate — may change. Transcribed from full-resolution photographs of the shop's OWN printed lunch card and its two chalk boards, dated 2024/05. **Check before travelling: the shop's own domain vegeater.jp no longer resolves, and its current listing page (vegeater.imachika.com) shows 臨時休業 — temporarily closed — with no opening hours on the Tabelog record either.** Every board carries the shop's own line ★ All Vegan ★, and the printed card prints a four-item allergen key: Wheat 小麦 / Apple りんご / Soy 大豆 / Orange オレンジ, with icons against each dish.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "THE BURGER",
+    "romaji": "the burger",
+    "en": "The plain one — house patty, bun, lettuce, red onion, tomato jam and garlic aioli. The shop's aioli is vegan, like everything else here",
+    "price": "¥1,300",
+    "section": "Burgers",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "店のアレルゲン表示は【小麦・大豆】。The shop's own allergen icons on this burger are WHEAT and SOY — the bun is wheat. All-vegan kitchen, so the aioli is egg-free.",
+    "dish_key": "vegan_burger_plain"
+   },
+   {
+    "ja": "PULLED JACK BURGER",
+    "romaji": "pulled jack burger",
+    "en": "The chef's pick — house patty and bun with pulled jackfruit, coleslaw, daikon sprouts and a bourbon BBQ sauce. Jackfruit shredded to pass for pulled pork",
+    "price": "¥1,500",
+    "section": "Burgers",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "店のアレルゲン表示は【小麦・大豆・りんご・オレンジ】。The shop's own icons: wheat, soy, apple, orange (the BBQ sauce brings the fruit).",
+    "dish_key": "vegan_burger_pulled_jack"
+   },
+   {
+    "ja": "セットメニュー（ポテトフライ／オニオンリング／ラタトゥイユ）",
+    "romaji": "set menu",
+    "en": "Every burger comes with one of: chips, onion rings or ratatouille — the card's line is 下記セットメニューより1品お選びください",
+    "price": "",
+    "section": "Burgers",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "オニオンリングの衣は小麦。Onion rings are wheat-battered; the ratatouille is the wheat-free choice, but the fryer is shared.",
+    "dish_key": "burger_set_side"
+   },
+   {
+    "ja": "セット追加（スープ／ミニサラダ）",
+    "romaji": "set tsuika",
+    "en": "Upgrade the burger side to soup or a mini salad",
+    "price": "+¥100",
+    "section": "Burgers",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "スープの内容未記載。Soup contents not published.",
+    "dish_key": "burger_set_upgrade"
+   },
+   {
+    "ja": "TODAY's PASTA 本日のパスタ",
+    "romaji": "honjitsu no pasta",
+    "en": "Today's pasta — the card says to ask a member of staff; made with fresh pasta and the composition changes with the day's numbers",
+    "price": "¥1,000",
+    "section": "Pasta",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "生パスタ使用＝小麦。The card states 生パスタ (fresh pasta) — wheat. Comes with a mini salad.",
+    "dish_key": "vegan_daily_pasta"
+   },
+   {
+    "ja": "TODAY's SALAD 本日のサラダ",
+    "romaji": "honjitsu no salad",
+    "en": "Today's salad — ask a member of staff. Comes with the house original smoothie",
+    "price": "¥1,000",
+    "section": "Salad",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "ドレッシングの原材料未記載（醤油の場合あり）。Dressing not published. Set includes オリジナルスムージー.",
+    "dish_key": "vegan_daily_salad"
+   },
+   {
+    "ja": "自家製ラー油大葉餃子",
+    "romaji": "jikasei rāyu ōba gyōza",
+    "en": "House chilli-oil gyoza with shiso — the dinner board's opener, and entirely plant-based",
+    "price": "¥600",
+    "section": "ディナー Dinner board",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "餃子の皮＝小麦。The wrapper is wheat.",
+    "dish_key": "vegan_gyoza"
+   },
+   {
+    "ja": "ゴロっとポテトフライ",
+    "romaji": "gorotto potato fry",
+    "en": "Chunky chips",
+    "price": "¥700",
+    "section": "ディナー Dinner board",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "ビア衣のオニオンと油を共用の可能性。Likely shares the fryer with the beer-battered onion — ask.",
+    "dish_key": "chunky_chips"
+   },
+   {
+    "ja": "特製衣のビアバターオニオン",
+    "romaji": "tokusei koromo no beer butter onion",
+    "en": "Onion in the house BEER batter, 'butter'-finished — the dinner board's showpiece",
+    "price": "¥800",
+    "section": "ディナー Dinner board",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "ビア衣＝ビール（大麦麦芽）＋小麦粉。Beer batter: barley malt AND wheat flour. As far from gluten-free as anything on this menu, despite being vegan.",
+    "dish_key": "beer_batter_onion"
+   },
+   {
+    "ja": "パスタ各種",
+    "romaji": "pasta kakushu",
+    "en": "Pasta, various — dinner service",
+    "price": "¥1,000〜",
+    "section": "ディナー Dinner board",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "生パスタ＝小麦。Fresh wheat pasta.",
+    "dish_key": "dinner_pasta"
+   },
+   {
+    "ja": "生クラフトビール",
+    "romaji": "nama craft beer",
+    "en": "Draught craft beer",
+    "price": "¥900",
+    "section": "ディナー Dinner board",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "麦芽＝gluten。Barley malt.",
+    "dish_key": "draught_craft_beer"
+   },
+   {
+    "ja": "瓶クラフトビール",
+    "romaji": "bin craft beer",
+    "en": "Bottled craft beer",
+    "price": "¥800",
+    "section": "ディナー Dinner board",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "麦芽＝gluten。Barley malt.",
+    "dish_key": "bottled_craft_beer"
+   },
+   {
+    "ja": "ハイボール等カクテル各種",
+    "romaji": "highball nado cocktail kakushu",
+    "en": "Highballs and cocktails, any of them",
+    "price": "¥500",
+    "section": "ディナー Dinner board",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "ハイボールのウイスキーは大麦麦芽由来。The highball's whisky comes from barley malt; other cocktails vary — name the base.",
+    "dish_key": "cocktails"
+   },
+   {
+    "ja": "焼酎各種",
+    "romaji": "shōchū kakushu",
+    "en": "Shochu, any of them",
+    "price": "¥800",
+    "section": "ディナー Dinner board",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "銘柄未記載。麦焼酎なら大麦。Bottles not named — a 麦 shochu would be barley.",
+    "dish_key": "shochu"
+   },
+   {
+    "ja": "グラスワイン",
+    "romaji": "glass wine",
+    "en": "Wine by the glass",
+    "price": "¥500",
+    "section": "ディナー Dinner board",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "全品ヴィーガンを掲げる店なので清澄剤も植物性の可能性が高いが、明記はなし。An all-vegan house, so the wine is probably vegan-fined, but the board does not say so.",
+    "dish_key": "glass_wine"
+   },
+   {
+    "ja": "ボトルワイン",
+    "romaji": "bottle wine",
+    "en": "Wine by the bottle",
+    "price": "¥3,500〜",
+    "section": "ディナー Dinner board",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "同上。Same.",
+    "dish_key": "bottle_wine"
+   },
+   {
+    "ja": "セットドリンク（ロングブラック HOT／ICED）",
+    "romaji": "set drink: long black",
+    "en": "Long black, hot or iced — brewed from a Tamazawa Coffee espresso blend. The lunch set-drink list is a flat ¥200",
+    "price": "¥200",
+    "section": "Set Drink",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "コーヒーのみ。Coffee and water.",
+    "dish_key": "set_long_black"
+   },
+   {
+    "ja": "セットドリンク（アイスティー／緑茶／烏龍茶）",
+    "romaji": "set drink: teas",
+    "en": "Iced black tea, green tea or oolong tea with your lunch set",
+    "price": "¥200",
+    "section": "Set Drink",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "茶葉のみ＝麦茶ではない。Tea leaf only — none of these is 麦茶 (barley tea).",
+    "dish_key": "set_teas"
+   },
+   {
+    "ja": "セットドリンク（リンゴ／オレンジ／グレープフルーツ／パイナップルジュース）",
+    "romaji": "set drink: juices",
+    "en": "Apple, orange, grapefruit or pineapple juice with your lunch set",
+    "price": "¥200",
+    "section": "Set Drink",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "果汁のみ。店のアレルゲン表示に【りんご】【オレンジ】あり。Juice only — but note the card's allergen key flags apple and orange.",
+    "dish_key": "set_juices"
+   },
+   {
+    "ja": "追加サイド（ポテトフライ／オニオンリング／ラタトゥイユ／ミニサラダ／スープ）",
+    "romaji": "tsuika side",
+    "en": "Extra sides, any of them at a flat price",
+    "price": "¥300",
+    "section": "Additional Sides",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "オニオンリングは小麦の衣。Onion rings are wheat-battered; the others are not, but share a kitchen.",
+    "dish_key": "additional_sides"
+   }
+  ]
  }
 }

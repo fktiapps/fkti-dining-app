@@ -42,6 +42,17 @@ const SEED = [
          'publicly retracted as outdated menu phrasing. Across 38 FMGF reviews: a dedicated ' +
          'separate pot, symptomatic celiacs reporting no reaction, and the two "not safe" ' +
          'reviews are from people who read the stale line and left without eating.' },
+  { id: 'nara_big_mountain_cafe_farm', field: 'gf_confidence', recommended: 'high',
+    why: 'Cut high->options largely on a HappyCow line no agent can reach (Incapsula blocks ' +
+         'every UA, proxy and Wayback). Every reachable source contradicts it: FMGF titles ' +
+         'it "Dedicated Gluten-Free Restaurant in Nara" with 20 dedicated-fryer reports, 24 ' +
+         '"Dedicated GF" tags, zero symptom reports and a review six days old; Tabelog ' +
+         'publishes a 28-allergen pre-booking protocol naming 小麦. safety.dedicated_fryer is ' +
+         'still null on the record.' },
+  { id: 'nara_aimo', field: 'gf_confidence', recommended: 'high',
+    why: 'The dedicated->options downgrade rests on an allergy-LIABILITY disclaimer rather ' +
+         'than any wheat on the premises. The cited guide, updated 2026-07-26, lists it among ' +
+         '90 shops where 「工房・店内に小麦粉を一切持ち込まず」.' },
 ];
 
 const recs = [];
