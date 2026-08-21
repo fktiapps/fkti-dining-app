@@ -1,0 +1,78 @@
+[
+ {
+  "id": "kyr_raamenya_fujitora", "city": "kyoto", "field": "gf_cross_contamination",
+  "quote": "House-made wheat noodles are milled and cut fresh in the shop every morning, so wheat flour handling is central to the kitchen and cross-contact is unavoidable.",
+  "url": "https://www.leafkyoto.net/en/store/231220-kyoto-fuditora/",
+  "verdict": "supported",
+  "found": "JA original: 「ラーメン好きゆえにスープはもちろん、麺やワンタンなど、店で提供するものはほとんどを手作りする渕原さん。自家製麺は小麦の香りを感じられる麺を目指し、毎朝店内で製麺しているそう。」 EN mirror: \"His homemade noodles are made in the restaurant every morning to give them the aroma of wheat.\"",
+  "correct_url": null,
+  "http": "200 plain curl (EN /en/store/ path); 200 plain curl (JA /store/ path)",
+  "method": "1 plain fetch, EN page as cited, then the JA original to check the auto-translation",
+  "note": "Substance holds — in-house noodle production every morning, wheat explicitly named. Trim two words: 製麺 is noodle-MAKING, not milling, so \"milled\" overstates it; and \"cross-contact is unavoidable\" is our inference, not the page's words. Note the record's website field is https://x.com/fujitoramen while Leaf and Tabelog both give Instagram @fujitora_uzumasa (Tabelog lists x AND instagram as official)."
+ },
+ {
+  "id": "kyr_raamenya_fujitora", "city": "kyoto", "field": "soy_sauce_wheat",
+  "quote": "The shoyu tare blends six soy sauces (based on Kaneiwa of Wakayama and Suehiro of Hyogo) — standard wheat-fermented Japanese shoyu — so the soy ramen is wheat-based at its core.",
+  "url": "https://www.leafkyoto.net/en/store/231220-kyoto-fuditora/",
+  "verdict": "supported",
+  "found": "JA: 「醤油らぁ麺1100円。和歌山［カネイワ醤油］と兵庫［末廣醤油］の醤油をベースに6種類をブレンド。」 EN: \"A blend of six kinds of soy sauce based on soy sauce from Kaneiwa Soy Sauce in Wakayama and Suehiro Soy Sauce in Hyogo.\"",
+  "correct_url": null,
+  "http": "200 plain curl (both EN and JA)",
+  "method": "1 plain fetch each; cross-checked EN auto-translation against JA source text",
+  "note": "Verbatim match, both makers correctly attributed. Two cautions for whoever edits this record: (a) the page's own primary-image caption is a STALE earlier draft reading 「醤油らぁ麺1000円…和歌山［カネイワ醤油］と滋賀［水谷醤油］」 — do not cite the caption, cite the body; (b) the shop also runs a SHIO bowl whose かえし is salt-based, so \"the soy ramen is wheat-based\" is correctly scoped and must not be widened to \"all bowls\" — the wheat that covers all bowls is the noodles, not the tare."
+ },
+ {
+  "id": "kyr_raamenya_fujitora", "city": "kyoto", "field": "vegan_cross_contact",
+  "quote": "Broth is made from jidori chicken bones, kurobuta pork and pork back bone and finished with chicken oil; toppings include pork chashu, ground pork and meat-filled wontons, so no bowl is free of animal products.",
+  "url": "https://www.leafkyoto.net/en/store/231220-kyoto-fuditora/",
+  "verdict": "supported",
+  "found": "「スープは地鶏の鶏ガラ、黒豚のゲンコツと背ガラを使い、塩or醤油のかえしで淡麗な味わいに整えられている。」 and 「鹿児島の美湯豚の肉を使用したチャーシューはモモとバラの2種類。自家製のワンタン350円の追加もおすすめ」",
+  "correct_url": null,
+  "http": "200 plain curl (both EN and JA)",
+  "method": "1 plain fetch",
+  "note": "Core is exact (jidori chicken bones + kurobuta knuckle + back bone; Kagoshima Biyuton pork chashu, thigh and belly). Two details are NOT on the page and should be cut: 鶏油/\"chicken oil\" appears nowhere, and the wontons are described only as 自家製のワンタン — no filling is stated, so \"ground pork and meat-filled wontons\" is invented specificity. The documented chicken-and-pork stock already carries the conclusion without them."
+ },
+ {
+  "id": "kyr_raamenya_fujitora", "kind": "trading", "status": "open",
+  "evidence": ["https://tabelog.com/kyoto/A2601/A260402/26040084/", "https://www.leafkyoto.net/store/231220-kyoto-fuditora/"],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA) with live hours 月・日 11:00-14:00 / 水木金土 11:00-14:00 & 18:00-20:00, 火 定休日, 13 seats, open date 2023-09-23, official x + instagram accounts listed. No 閉店, 休業, 移転 or 掲載保留 banner anywhere on the page."
+ },
+ {
+  "id": "kyr_ramen_akatsuki", "city": "kyoto", "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles are boiled in shared water, and the broth is finished with a soy-sauce tare that is essentially always wheat-based — pervasive gluten with no separation.",
+  "url": "https://kyotopi.jp/articles/eTYbB",
+  "verdict": "supported",
+  "found": "Headline 「京都の実力派豚骨醤油ラーメン！北白川の創業30年近い「ラーメン あかつき」」 and 「コシのある細めのストレート麺が美味しいっす。」 Menu as described: 「メニューは、ラーメンの他に具だくさんのあかつきスペシャルもあり。旨辛や魚介ラーメンもあります。餃子や唐揚げといったサイドメニューや定食もあります。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "The conclusion holds — every documented item is a wheat-noodle ramen, plus 餃子 (wheat wrappers) and 唐揚げ (flour-dredged); no gluten-free anything is mentioned. But \"boiled in shared water\" is OUR mechanism, not the page's, and this repo has been burned once already by asserting a shared-water line a source did not carry. Reword to what is documented: a shoyu-tonkotsu shop whose whole menu is wheat, with no separation described."
+ },
+ {
+  "id": "kyr_ramen_akatsuki", "city": "kyoto", "field": "soy_sauce_wheat",
+  "quote": "The bowl is a shoyu (soy sauce) ramen finished with a Japanese-dashi soy tare; standard Japanese shoyu is brewed with wheat.",
+  "url": "https://kyotopi.jp/articles/eTYbB",
+  "verdict": "supported",
+  "found": "「京都の実力派豚骨醤油ラーメン！」 (headline and 豚骨醤油 keyword tag) and 「背脂のコクや甘味を感じる、豚骨と鶏のスープ。独特な臭みや雑味などはまったくなくて、見た目よりかなりアッサリしてるのが特徴です！」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "The shoyu half is documented (豚骨醤油, tagged twice). \"Japanese-dashi soy tare\" is NOT — the page describes a pork-bone-and-chicken soup with back fat and no 和出汁/魚介 element in the tare at all. The likely source of the confusion is a different bowl on the same menu, 「旨辛や魚介ラーメンもあります」. Delete \"Japanese-dashi\"; it adds nothing and is the classic same-article transplant."
+ },
+ {
+  "id": "kyr_ramen_akatsuki", "city": "kyoto", "field": "vegan_cross_contact",
+  "quote": "The base soup is a pork-bone and chicken broth with back-fat and braised pork char siu; there is no animal-free preparation, so all bowls carry animal product.",
+  "url": "https://kyotopi.jp/articles/eTYbB",
+  "verdict": "supported",
+  "found": "「背脂のコクや甘味を感じる、豚骨と鶏のスープ。」「ラーメン並、ねぎ多め、煮卵トッピングです。ねぎもチャーシューも背脂もたっぷり！！」「とろっと柔らかく食べやすいチャーシュー。チューシュー増しもおすすめ。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Clean verbatim support for every element — 豚骨と鶏 broth, 背脂, チャーシュー — plus 煮卵, 餃子 and 唐揚げ elsewhere on the page. Nothing to change."
+ },
+ {
+  "id": "kyr_ramen_akatsuki", "kind": "trading", "status": "open",
+  "evidence": ["https://tabelog.com/kyoto/A2601/A260302/26000999/", "https://kyotopi.jp/articles/eTYbB"],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA) with live hours and no 閉店/休業/移転/掲載保留 marker. Cited article (updated 2023-05-06) gives 営業時間 11:30～翌3:00 (L.O. 翌2:45), 定休日 無休, tel 075-702-8070, 京都市左京区北白川別当町13. Caution for the next agent: the same page's sidebar carries a headline about ますたに 北白川本店 going 無期限休業 — that is a DIFFERENT shop up the road, not Akatsuki."
+ }
+]

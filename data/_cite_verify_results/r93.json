@@ -195,5 +195,80 @@
    "https://www.instagram.com/menya.shourin/"
   ],
   "why": "Open and actively trading in 2026. The cited kyotopi article was updated 2025-10-12; a KBS-Kyoto TV tie-in article dated 2026-04-22 features the 辛肉まぜそば and locates the shop at 京都市北区・上賀茂, 京都市バス志久呂橋から徒歩約7分; the shop's own Instagram bio (surfaced via Ecosia) reads 「⛩️京都上賀茂⛩️ 市内最北端\"秘密基地\" 【名物】肉白湯そば」 with a February-2026 reel announcing a takeaway 辛肉まぜそば丼. Address 京都市北区上賀茂西後藤町11-7 is consistent across kyotopi, Yahoo Map and Gnavi. No closure signal anywhere."
+ },
+ {
+  "id": "kyr_menya_tantanken",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "A tantanmen specialist serving wheat noodles in sesame/soy-seasoned animal broth alongside shrimp wonton; gluten is central to the menu and no gluten-free handling has been described.",
+  "url": "https://osumituki.com/kyoto-ramen/223852.html",
+  "verdict": "supported",
+  "found": "「メニューを見てみると「汁あり担担麺・汁なし担担麺・海老ワンタン麺」などをお店で食べることができます。」 and 「麺は…太さは中太の角ストレート麺で…製麺所は京都発祥で1931年創業の老舗「麺屋棣鄂（ていがく）」」. The page carries no allergen or gluten-free wording.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + iPhone-UA fetch of s.tabelog.com for trading status",
+  "note": "Supported. Worth spelling out for the reader: 海老ワンタン wrappers are wheat sheets, so the wonton bowl is a SECOND wheat item on top of the noodles, and it also puts shrimp — a separate declared allergen — in the same pot. Every bowl on the menu is wheat; there is no rice-noodle or GF option to ask for."
+ },
+ {
+  "id": "kyr_menya_tantanken",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Soy sauce is provided as a table condiment and the seasoning base is sesame/soy-style; standard Japanese soy sauce contains wheat, and no wheat-free tamari is indicated.",
+  "url": "https://osumituki.com/kyoto-ramen/223852.html",
+  "verdict": "supported",
+  "found": "「調味料は「ラー油・にんにく辣油・粉唐辛子（一味）・花椒・黒胡椒・塩・醤油・お酢」です。」 — 醤油 is listed among the table condiments. But the tare itself is described as sesame only: 「味付け（タレ）は程良い香りのゴマペーストです。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "The table-condiment half matches verbatim; the 'seasoning base is sesame/soy' half over-reads the page, which attributes the tare to sesame paste alone and never says the tare contains shoyu. Narrow it to: shoyu sits on the table as an optional condiment, the described tare is sesame. This does not make the shop safer — the noodles and the wonton skins are wheat regardless — but the record should not put shoyu in the bowl when the source puts it on the table."
+ },
+ {
+  "id": "kyr_menya_tantanken",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The broth is animal-based (chicken with some pork) and shrimp wonton is on the menu, so the kitchen is not set up for vegan separation.",
+  "url": "https://osumituki.com/kyoto-ramen/223852.html",
+  "verdict": "supported",
+  "found": "「スープは飲んでみると「豚少々・鶏メイン」がスープベース（出汁）で野菜も使われています。」 and 「トッピングは「ミンチ・チャーシュー・刻み白ねぎ・細ねぎ・ピーナッツ・青梗菜」…チャーシューも柔らかい豚ウデ（肩）肉が使われていて」, plus 海老ワンタン麺 on the menu.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Exact match, right down to the pork/chicken ratio. Add the peanut topping (ピーナッツ) to the record's allergen notes — a tantanmen bowl with visible peanuts is worth flagging for nut-allergic readers, and none of our fields currently mention it."
+ },
+ {
+  "id": "kyr_menya_tantanken",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://osumituki.com/kyoto-ramen/223852.html",
+   "https://tabelog.com/kyoto/A2601/A260401/26043896/"
+  ],
+  "why": "Open, and new. Opening report 「2025年10月23日に開業（創業）したラーメン店というか担々麺のお店「麺屋 坦坦軒」」, address 京都市北区（衣笠・平野神社前）; Tabelog 26043896 (iPhone UA) confirms 京都府京都市北区平野上八丁柳町35-4, tel 075-461-7277, 11:30-21:00 with 水 定休日, QR payment accepted, and shows no 閉店/移転/掲載保留 banner. One trap for any automated closure sweep: the premises previously held the Michelin-Bib-Gourmand Chinese restaurant 黒猫軒, and the source says 「以前は「黒猫軒」…があったところです。その黒猫軒が担々麺のお店として再起動したのが「麺屋 坦坦軒」」 — the 黒猫軒 closure belongs to the predecessor name, not to this record. Also note the sign spells it 坦坦軒 while Tabelog files it as 麺屋　担担軒 (「屋号の方の担は「坦」になっていました」)."
+ },
+ {
+  "id": "kyr_menya_tsuki",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature abura-soba is dressed in a house-made sweet-spicy soy (shoyu) tare, which is wheat-based; combined with the wheat noodles this dish is not gluten-free.",
+  "url": "https://osumituki.com/kyoto-ramen/224923.html",
+  "verdict": "supported",
+  "found": "「自家製「甘辛醤油ダレ・香味油」に極太麺を使ったお店のメインメニュー油そばです。」 and 「製麺所は京都発祥で1931年創業の老舗「麺屋棣鄂（ていがく）」です。ほどよいコシの極太麺は…」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + Yahoo Japan search for current trading (Ecosia 403, Brave 429 on this run)",
+  "note": "Supported verbatim, house-made shoyu tare and named wheat-noodle maker. One translation nit: 甘辛 here is sweet-and-savoury, not sweet-and-spicy — the article makes the point that chilli oil is optional (「ラー油とお酢無しでも美味しく食べられる」), so 'sweet-spicy' misdescribes the dish. Additions the record should carry: 鶏そば is finished with a カエシ (also shoyu), 出汁そば is a 魚介/昆布 dashi bowl, and the 岡山唐揚げ side means a battered shared fryer."
+ },
+ {
+  "id": "kyr_menya_tsuki",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://osumituki.com/kyoto-ramen/224923.html",
+   "https://www.instagram.com/menya_tuki/",
+   "https://tabelog.com/kyoto/A2601/A260201/26046196/"
+  ],
+  "why": "Open. Opened 2026-02-22 (the source's 「20226年2月22日」 is a typo for 2026) at 京都府京都市左京区下鴨西半木町88, in the unit that previously held めんや 龍神 and briefly 沖縄そば ちばる — again, those closures belong to predecessor names, not to this record. Yahoo Japan results show the shop's own Instagram bio giving the same address with 【営業時間】11:00~14:30 17:00~25:30 定休日(不定期) ※SNSに記載致します (matching the record's hours, 25:30 = 01:30), and a Tabelog entry already carrying 22 reviews and a 3.1 score. No closure signal."
  }
 ]

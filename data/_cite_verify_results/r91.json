@@ -200,5 +200,64 @@
    "https://s.tabelog.com/kyoto/A2601/A260401/26015968/"
   ],
   "why": "Tabelog 26015968 answered 200 as a live listing 「まる担 おがわ - 桂/担々麺」 at 京都府京都市西京区樫原山ノ上町7-19 with current hours 月・水〜日 12:00-14:00 (L.O. 13:30) / 18:00-22:00 (L.O. 21:30), 火 定休日, and no 閉店 or 休業 banner. Flagged because the cited Kyotopi article is old (it embeds a 2015 tweet) and gives 10:00～14:00 — take the hours from Tabelog, not from the citation. Trading."
+ },
+ {
+  "id": "kyr_men_star_mu_lucky",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tori-shoyu bowl is built on a sweet soy-sauce tare, which in Japanese ramen is virtually always wheat-based soy sauce.",
+  "url": "https://noodlers.jp/mura-ts/",
+  "verdict": "supported",
+  "found": "「本日のオーダー とり醤油らーめん　800円」/「スープはあっさりした鶏清湯。鰹出汁が効いた和風テイストで美味しい！甘めの醤油がこのスープによく合ってる。」",
+  "correct_url": null,
+  "http": "200 (122,297 bytes), plain curl with iPhone UA",
+  "method": "route 1 — plain fetch of the cited page; trading located via Ecosia (Yahoo Japan not attempted; Ecosia answered 200 first try) and confirmed on s.tabelog.com/kyoto/A2601/A260604/26039767/ (200, iPhone UA)",
+  "note": "'Sweet soy sauce' is verbatim (甘めの醤油) on the bowl named. The page says 醤油, not タレ, so soften 'tare' to 'seasoning', and the wheat step is the record's own general knowledge rather than a quote. Two harder gluten vectors sit unused on the same page: the noodles are 「ストレートの細麺」 from 麺屋棣鄂 (a wheat maker), and the side menu carries マグロカツ and エビタルタルカツ — breaded, deep-fried cutlets sharing the fryer. Add those; they are certain where the shoyu inference is not."
+ },
+ {
+  "id": "kyr_men_star_mu_lucky",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://s.tabelog.com/kyoto/A2601/A260604/26039767/",
+   "https://noodlers.jp/mura-ts/"
+  ],
+  "why": "Tabelog 26039767 answered 200 as a live listing 「麺スター む・ラッキー - 十条（近鉄）/ラーメン」 at 京都府京都市南区西九条森本町18 — the same address as the cited review — with current hours 月-土 11:30-14:30, 日 定休日, and no 閉店 / 休業 / 掲載保留 banner. Lunch-only house. Recorded because the record's only link is an Instagram handle, which is a weak trading signal; the cited article gives 11:00-14:30, Tabelog now gives 11:30. Trading."
+ },
+ {
+  "id": "kyr_men_ya_tori_no_keiji_kyo",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Tori-shoyu (soy-sauce) bowls use a soy-based tare; Japanese shoyu is normally brewed with wheat. No gluten-free tare is advertised.",
+  "url": "https://kyotopi.jp/articles/T4U6V",
+  "verdict": "supported",
+  "found": "「ラーメンは鶏白湯1種をベースに、多彩なフレーバーを展開。鶏そば（塩・醤油）を軸に、フロマージュ（チーズ）、トリュフ、レッド（ラー油）、ブラック（マー油）、グリーン（抹茶）と個性的なラインナップが揃います。」",
+  "correct_url": null,
+  "http": "200 (65,730 bytes) kyotopi.jp, plain curl with iPhone UA; 200 (35,707 bytes) keiji-project.com/all/353/, plain curl",
+  "method": "route 1 — plain fetch of the cited page, then the operator's own opening announcement",
+  "note": "The page confirms a 醤油 bowl exists (it is one of the two axis flavours) and states no gluten-free option, so the claim stands. But it never describes the tare's composition, and the reviewer actually ordered the 塩 — so 'uses a soy-based tare' is a genre inference. The certain gluten this record should lead with is the noodle: 「麺はツルツルとした中太平打ち麺。コシと弾力があり」, on all bowls since the base soup is one. Worth adding for allergen breadth: フロマージュ (cheese) and 煮玉子 are dairy/egg, and レッド/ブラック are chilli and garlic oils."
+ },
+ {
+  "id": "kyr_men_ya_tori_no_keiji_kyo",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All broths are chicken-based (chicken + water simmered 8+ hours) and toppings include chicken chashu, so there is no vegan-safe preparation; cross-contact with animal stock is inherent to every bowl.",
+  "url": "https://kyotopi.jp/articles/T4U6V",
+  "verdict": "supported",
+  "found": "「新鮮な国産鶏と水のみを長時間炊き上げて作るスープは、野菜を使っていないのに甘みを感じるほどまろやかでクリーミー。」 and 「鶏チャーシューは低温調理で仕上げられたむねとももの2種。」 The cited page says 長時間 (a long time), not eight hours; the '8+ hours' figure comes from the operator's own announcement: 「新鮮な国産鶏と水だけで8時間以上炊き込んだ濃厚でクリーミーなスープが自慢です。」",
+  "correct_url": "https://keiji-project.com/all/353/",
+  "http": "200 both hosts, plain curl",
+  "method": "route 1 — plain fetch of the cited page, then keiji-project.com/all/353/ to trace the eight-hour figure",
+  "note": "Claim is true and strongly evidenced — one chicken-paitan base for the whole menu, chicken-and-water only, chicken chashu — so there is genuinely no vegan bowl. The one repair: '8+ hours' is not in the cited source and reads as a fabricated specific until you add https://keiji-project.com/all/353/, which is where 8時間以上 actually appears (that URL is already the record's website field). Also note the page's own line 「野菜を使っていないのに」 — the broth contains no vegetables at all, which is a cleaner statement of the same point."
+ },
+ {
+  "id": "kyr_men_ya_tori_no_keiji_kyo",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://keiji-project.com/all/353/",
+   "https://kyotopi.jp/articles/T4U6V"
+  ],
+  "why": "The operator's own site answered 200 and still lists KYOTO 四条河原町店 in its live branch navigation, with the opening notice dated 2025.09.10 for a 2025-09-12 opening and full details 「営業時間 10:30～24:30(L.O.24:00)・定休日 なし・075-708-5620・京都府京都市下京区真町95-1 トップハットビル1F」. Cited Kyotopi article agrees on address and hours. No closure or suspension notice. Trading."
  }
 ]
