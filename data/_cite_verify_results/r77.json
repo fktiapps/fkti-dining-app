@@ -1,0 +1,93 @@
+[
+ {
+  "id": "kz_fruit_murahata_honten",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Built around fresh seasonal fruit, so naturally fruit-forward, though parfaits include dairy and wheat-based items.",
+  "url": "https://www.murahata.co.jp/",
+  "verdict": "wrong_source",
+  "found": "Cited root carries only corporate copy —「日本のフルーツ専門企業として、フルーツの可能性を追求し」— and no menu at all. The company's SEASONAL SPECIAL MENU page is where the food is: 「◎シャインマスカットパフェ 2,400円」「◎シャインマスカットとワッフルの盛合せ 1,900円」「◎シャインマスカットタルト 1,400円」「◎シャインマスカットとパンナコッタの盛合せ」「◎国産ブルーベリーのチーズケーキ」「◎水蜜桃ヨーグルト」「■金澤パフェ【プリン】810円」.",
+  "correct_url": "https://www.murahata.co.jp/seasonal/",
+  "http": "200 plain curl on root (20.2 KB); 200 iPhone UA; 200 on /seasonal/ (31.4 KB) and /kanazawa-parfait/ (5.3 KB)",
+  "method": "1 plain fetch of the cited root, then two same-site subpage fetches (route 1 sufficed; no proxy or Wayback needed)",
+  "note": "Repoint to https://www.murahata.co.jp/seasonal/. The root evidences nothing about food. The seasonal page evidences the wheat side hard — ワッフル and タルト are sold as parfait accompaniments — and the dairy side (プリン, パンナコッタ, チーズケーキ, ヨーグルト). Strictly, no page says wheat is IN the parfait glass; what is documented is wheat items served alongside on the same plate/counter, so word it that way. Trading: active, news items dated 2026/08/14 and 2026/08/01; head office 金沢市武蔵町2-12, parlour 東山3-2-18."
+ },
+ {
+  "id": "kz_fruit_murahata_honten",
+  "city": "kanazawa",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.murahata.co.jp/seasonal/",
+   "https://www.murahata.co.jp/kanazawa-parfait/"
+  ],
+  "why": "The published menu is not wheat-free but it is not wheat-only either: 「◎まるごと夕張メロン 2,500円」「■フルーツごろごろジュレMIX 648円」「◎シャインマスカットソーダ 700円」「◎水蜜桃ヨーグルト」 are whole fruit, jelly, soda and yoghurt items that contain no wheat by construction, sold beside the ワッフル/タルト items. 'no' reads as 'nothing here is safe', which is wrong for a fruit parlour; 'ask' is honest because the company publishes no allergen policy anywhere on its site."
+ },
+ {
+  "id": "kz_fukushimaya",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Soba shops typically blend buckwheat with wheat flour and share boiling water and fryers with wheat udon and tempura; no gluten-free handling is documented.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17002080/",
+  "verdict": "supported",
+  "found": "Category line 「野町駅/そば､ うどん」; reviewer 「福島屋さんといううどん・そば・丼のお店があります…メニューを見ると、うどんやお蕎麦、素麺や冷やし中華、そして各種丼をやられてます。今回は天ぷらうどん（1,200円）を注文」; menu keyword block lists ざるそば・天ぷらうどん・鍋焼きうどん・にしんそば・素麺・冷やし中華. The strings アレルギー, グルテン and 小麦 return zero hits on the whole page.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA, 517 KB); desktop host not needed",
+  "method": "1 mobile-host Tabelog fetch + whole-page string search for アレルギー/グルテン/小麦/醤油/出汁",
+  "note": "The venue-specific halves hold: wheat udon, somen, chilled ramen and tempura share this one small lunch-only kitchen with the soba, and the listing is completely silent on allergens. The 'share boiling water and fryers' detail is inference, not something the page states — reword as 'wheat udon, somen, chilled ramen and tempura are cooked in the same kitchen' and it becomes fully sourced. Trading OK: 11:30-14:30 Mon-Wed/Fri-Sun, 木曜定休, no 閉店 banner; note the shop is at 片町2丁目 behind 香林坊東急スクエア even though Tabelog files it under 野町駅."
+ },
+ {
+  "id": "kz_fukushimaya",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Broth/tsuyu is dashi- and soy-sauce-based, and standard Japanese soy sauce contains wheat.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17002080/",
+  "verdict": "unsupported",
+  "found": "Nothing. 醤油, しょうゆ, つゆ, 出汁, だし, ダシ, 鰹, かつお and 昆布 all return ZERO hits on the cited page. The nearest thing to a broth description is the keyword 「関西風」 and the review's 「あっさり」「濃厚」 tags.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "1 mobile-host Tabelog fetch + exhaustive string search for every broth/soy term",
+  "note": "Entirely uncited: this page never discusses the tsuyu at all, so the claim is cuisine convention presented as sourced fact. The conclusion is almost certainly right for a 120-year-old Kansai-style soba/udon house, but say so as an explicit assumption or find a source that actually describes the broth."
+ },
+ {
+  "id": "kz_fukushimaya",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Dashi broth is fish/bonito based and the menu features tempura, fish, and pork dishes; no vegan preparation is indicated.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17002080/",
+  "verdict": "supported",
+  "found": "Menu keyword block: 「カツ丼」「親子丼セット」「にしんそば」「にしん」「ぶり」「かまぼこ」「かしわ」「天ぷらうどん」「冷やし中華」. ベジタリアン, ヴィーガン and 精進 return zero hits.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "1 mobile-host Tabelog fetch + string search",
+  "note": "The menu half is fully documented — pork katsu-don, chicken oyako-don, herring soba, yellowtail, kamaboko and tempura — and nothing vegan appears anywhere on the listing, so vegan: no is right. The 'dashi is fish/bonito based' half is NOT on this page (出汁/鰹 zero hits); it is a safe inference given にしんそば and かまぼこ, but it should not be worded as sourced."
+ },
+ {
+  "id": "kz_fukuzushi",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "As a traditional sushi restaurant, soy sauce (which normally contains wheat) is integral to the meal; no gluten-free or wheat-free soy sauce is documented.",
+  "url": "https://tabelog.com/ishikawa/a1701/a170101/17002446/",
+  "verdict": "supported",
+  "found": "Official shop copy on the cited page: 「オリジナルの寿司酢や醤油で味わう寿司をはじめ」 and the PR headline 「“新鮮さ”にこだわった関西寿司◆オリジナルの寿司酢や醤油で」, expanded as 「当店オリジナルブレンドの寿司酢を使用◎また醤油も、素材が引き立つようオリジナルの味付け」. たまり, タマリ, グルテン, 小麦 and アレルギー all return zero hits.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA, 541 KB)",
+  "method": "1 mobile-host Tabelog fetch + string search for 醤油/たまり/グルテン/小麦/アレルギー",
+  "note": "Better evidenced than the record realises: this is not just 'sushi implies soy sauce' — the shop's own copy makes soy sauce a signature, an in-house blend it seasons itself, and gives no ingredient list. A celiac cannot even fall back on 'it's a known bottled brand'. Worth adding the 「オリジナルの…醤油」 quote to the record. Trading OK: 定休日 日曜日, live reservation calendar showing dates from 8/21, 162 reviews, no 閉店 banner."
+ },
+ {
+  "id": "kz_fukuzushi",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is centered on raw fish and seafood, so vegan diners would face pervasive fish/seafood contact with no documented plant-based options.",
+  "url": "https://tabelog.com/ishikawa/a1701/a170101/17002446/",
+  "verdict": "supported",
+  "found": "「“新鮮さ”にこだわった魚介は、白身魚を中心に北陸の海の幸や旬の魚がご堪能いただけます…「かわはぎの肝和え」などの一品も多彩にご用意」; course listings 「当店自慢の寿司と刺身に、つきだしとみそ汁も付いた全4品」「のどぐろ塩焼き・こだわり寿司・刺身など」. ベジタリアン/ヴィーガン/精進/野菜 return zero hits across all 10 courses.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "1 mobile-host Tabelog fetch + string search",
+  "note": "Fully supported. Every one of the 10 published courses is seafood-built (nodoguro, kawahagi liver, sashimi, nigiri) and there is no vegetarian or vegan item anywhere on the listing. Note the omakase-only structure means even a vegan side order is not on offer."
+ }
+]

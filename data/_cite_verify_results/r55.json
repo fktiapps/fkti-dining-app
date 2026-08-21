@@ -141,5 +141,149 @@
   "http": "200 (iPhone UA)",
   "method": "plain fetch",
   "note": "Directly supported, and if anything understated: pork, egg, squid, oyster, prawn, wagyu offal, heart and chicken thigh are all named on the cited page, and the branch is counter-seating-only so every order crosses one griddle. vegan_status 'no' is correct. Branch trading status: open — /shop/285/ gives 10:00–23:00 (L.O 22:30), 定休日 なし."
+ },
+ {
+  "id": "hiro_dontsuki_hidari",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a Japanese shellfish izakaya, dishes are expected to use wheat-based Japanese soy sauce and standard seasonings; no gluten-free soy sauce is mentioned.",
+  "url": "https://dontuki.sg-hiroshima.com/",
+  "verdict": "wrong_source",
+  "found": "「・昆布、鰹節、魚介類、醤油、味噌のエッセンスが少しでも食べれない方。」— listed by the house among the guests it will NOT accept a reservation from.",
+  "correct_url": "https://dontuki.sg-hiroshima.com/info/47.html",
+  "http": "200 (plain curl, iPhone UA) for both the cited root and /info/47.html",
+  "method": "plain fetch, then walked the five /info/ posts linked from the cited page",
+  "note": "The claim is true but stops short of the operator's own, much stronger statement, which is not on the cited page: on /info/47.html the house says outright that 醤油 and 味噌 essence is in everything it serves and turns away anyone who cannot eat it. Cite /info/47.html and quote the house — it converts an inference into a first-party admission."
+ },
+ {
+  "id": "hiro_dontsuki_hidari",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is built entirely around shellfish and seafood; the house states that those who dislike shellfish will find nothing to eat, so no plant-only meal is offered.",
+  "url": "https://dontuki.sg-hiroshima.com/",
+  "verdict": "wrong_source",
+  "found": "「当店は和食店ですので、誠に勝手ではございますが以下の内容に該当されてしまった方につきましては、ご予約をお受けできかねます。… ・魚介類・海産物が食べられない、食べたくない方。（加熱調理をしても食べられない方）… ・野菜だけ、肉だけ、魚だけしか食べられない、食べたくない方。」",
+  "correct_url": "https://dontuki.sg-hiroshima.com/info/47.html",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root, then /info/47.html which the root links as 「苦手食材について」",
+  "note": "Substance confirmed and then some — but the cited root does not carry the house statement, /info/47.html does, so re-point the citation. Two wording fixes: the house says 魚介類・海産物 (seafood generally), not specifically shellfish; and it goes further than 'no plant-only meal is offered' — it explicitly refuses reservations from anyone who wants to eat 野菜だけ. A vegan should not book here at all."
+ },
+ {
+  "id": "hiro_dontsuki_hidari",
+  "city": "hiroshima",
+  "field": "staff_allergy_handling",
+  "quote": "The owner's site asks guests to review allergy and disliked-ingredient information before booking, indicating allergies can be discussed at reservation by phone or LINE.",
+  "url": "https://dontuki.sg-hiroshima.com/",
+  "verdict": "unsupported",
+  "http": "200 (plain curl, iPhone UA)",
+  "found": "Cited page: 「information より「キャンセル料について」「苦手食材について」を必ず閲覧・御理解の上ご予約くださいます様、切にお願い申し上げます。」— but the linked page (/info/47.html) says: 「・極度に食物に対する苦手及びアレルギーを訴える方。（理由は、当店の厨房は沢山の食材を扱っており、苦手食材を献立から外したとしても少しは料理に入り込む可能性を否定できない為、アレルギー症状が出ても、私達板前ではどうすることもできないのとアレルギー症状に対しての対処方法や医学的知識がない為、お客様の健康を考えた上である事をご理解ください）」— also a reservation-refusal category.",
+  "correct_url": null,
+  "method": "plain fetch of the cited root, then the 苦手食材 page it links (/info/47.html)",
+  "note": "ALARMING — this one is backwards and needs rewriting before it misleads someone. The first half is on the cited page; the second half ('allergies can be discussed at reservation') is the opposite of what the house says. Dontsuki Hidari REFUSES bookings from guests with pronounced food allergies, states its kitchen handles many ingredients so trace carry-over into a dish cannot be ruled out even when an ingredient is removed from the menu, and says its chefs have no medical knowledge and can do nothing if a reaction occurs. The one genuine nuance the record got right: /info/63.html says 「ご要望（料金、料理内容、アレルギー）は前日までにお電話にて対応可能です」 — requests can be raised by phone the day before, but only within the limits set by /info/47.html. Re-word to: allergy guests are asked NOT to book; contamination is admitted; staff decline responsibility."
+ },
+ {
+  "id": "hiro_dontsuki_hidari",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Cooking fats are limited to extra-virgin olive oil and plant-based safflower oil with low trans-fat content, and the kitchen avoids chemical seasonings and preservatives.",
+  "url": "https://dontuki.sg-hiroshima.com/",
+  "verdict": "supported",
+  "found": "「当店の使用油は、EXVオリーブオイル、植物性べに花油を中心にトランス脂肪酸0.3％以下の油のみ（自社規定）使用させて頂いております。【0.3％以上の白絞油、サラダ油、天ぷら油、コーン油、混合油などは使用しておりません。】当店は、化学調味料、保存料は使用しておりません。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Verbatim on the cited page, under the heading 「お約束」. One precision fix: the house says EXV olive and safflower oil are what it works 中心に (centres on) and that ONLY oils under 0.3% trans fat are used — 'limited to' those two oils is slightly stronger than the source. Trading status: open — latest 8月営業日 notice dated 2026/07/30; 17:30–23:00, 日曜日定休; door is locked, ring the intercom."
+ },
+ {
+  "id": "hiro_fuji_no_chaya_sato_no_mi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The anago bowl is served with a sweet soy-based tare, which in this style of dish is wheat-containing soy sauce; no allergen information is published.",
+  "url": "https://miyajima-komachi.shopinfo.jp/posts/39023523?categoryIds=4287346",
+  "verdict": "supported",
+  "found": "「少し薄めの穴子にたっぷりとタレが、塗ってあり、白ご飯にも掛かっています。ここのタレはかなり甘い感じがします。」",
+  "correct_url": null,
+  "http": "200 — the first fetch returned gzip garbage; --compressed fixed it (63KB)",
+  "method": "plain fetch with iPhone UA + --compressed; corroborated on the venue's own Tabelog JSON-LD",
+  "note": "The sweet tare is confirmed verbatim and the page publishes no allergen data — but the record misses the far bigger wheat load printed in the same article: the standalone あなご丼 has been DISCONTINUED and the only way to get the anago bowl is the 「ミニあなご丼きつねうどんセット（¥1500）」 — 「うどんがメインのようですね」. Tabelog reviews on the record's own website URL add ミニ穴子ドンとざる蕎麦セット, たぬきうどん and きつねうどん. Udon and soba, not the tare, are the headline gluten here. Trading status: the article warns 「普段はあまり営業されていない … 正月、GW、お盆、秋の紅葉シーズンに不定休で営業」 and Tabelog lists 定休日 不定休 — a celiac should not plan around this shop being open."
+ },
+ {
+  "id": "hiro_fujiiya_miyajima_honten",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The entire product line is wheat-flour-based (castella-batter momiji manju and a wheat/rice/mochi 'momiji mochi'), so the shop is not a gluten-free environment and no allergen-segregated preparation is documented.",
+  "url": "https://momiji-manju.jp/fujiiya/",
+  "verdict": "unsupported",
+  "found": "The SAME cited page refutes 'entire': 「もみじのカタチをしているけれど、もみじ饅頭とは製法や原料がまったく違う商品もあります。藤い屋のいろはもみじです。豆を丁寧に炊き、砂糖と寒天を煮詰めた皮で包みます。」 and it lists 淡雪花 and 花虎白 under 藤い屋のサブメニュー. Fujiiya's own shop then publishes: 花虎白 —「原材料：〈フランボワーズ〉砂糖（国内製造）、フランボワーズ、寒天…／アレルギー：不使用」; 淡雪花 —「原材料：砂糖、水飴、氷餅（餅粉、澱粉）、レモン、ゼラチン、生姜、寒天／アレルギー：ゼラチン」.",
+  "correct_url": null,
+  "http": "cited page 200 (iPhone UA). Fujiiya's own www.fujiiya.co.jp returns 403 to plain curl, iPhone UA, desktop UA, WebFetch AND to the Wayback crawler (every fujiiya.co.jp snapshot since 2022 is archived as 403) — the maker's own site is unusable as a source. The COCONCA online shop (www.fujiiya-coconca.shop) answers 200 and is where the allergen data lives.",
+  "method": "plain fetch of the cited page; Yahoo search for the maker's ingredient wording; then per-item fetches of the official COCONCA shop",
+  "note": "Most of this sentence is right and gf 'no' is a defensible bottom line, but the absolutism is false and the cited page says so itself. Fujiiya publishes per-item 原材料 and アレルギー for its whole range, and at least two lines carry no wheat at all — 花虎白 is declared 「アレルギー：不使用」 (sugar + fruit + agar) and 淡雪花 declares gelatin only. Drop 'the entire product line'; keep 'no allergen-segregated preparation is documented', which is true (no contamination statement exists anywhere). See the paired tier_recommendation."
+ },
+ {
+  "id": "hiro_fujiiya_miyajima_honten",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Momiji manju batter is a wheat-and-egg castella; custard cream and chocolate fillings are also not plant-based, and no vegan version is documented.",
+  "url": "https://momiji-manju.jp/fujiiya/",
+  "verdict": "wrong_source",
+  "found": "「[ふっくらと焼き上げるカステラ] あんを包むカステラは、近隣の農場から新鮮な卵を仕入れ、たっぷり使ってふっくらと焼き上げます。小麦粉は、小麦本来の旨味が感じられるように専用に製粉してもらった独自のものを使用しています。」/「原材料：砂糖（国内製造）、卵、小豆、小麦粉、水飴／乳化剤、膨張剤」/「アレルギー：卵、小麦」 — and the lineup page lists もみじまんじゅうカスタードクリーム and もみじまんじゅうチョコレート alongside こしあん・つぶあん・抹茶あん.",
+  "correct_url": "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000001&category_code=ct5",
+  "http": "cited page 200; www.fujiiya.co.jp 403 on every route including Wayback; www.fujiiya-coconca.shop 200 (iPhone UA)",
+  "method": "plain fetch of the cited page, then Yahoo search, then the maker's own COCONCA online shop item pages",
+  "note": "Every element of the claim is true, but NONE of it is on the cited page: momiji-manju.jp names only こしあん and つぶあん for Fujiiya, never mentions egg, and never mentions custard or chocolate. The real support is Fujiiya's own shop, which prints the full ingredient list and 「アレルギー：卵、小麦」 and sells the 5-flavour range including custard cream and chocolate. Re-point the citation there. Add the parallel finding: 淡雪花 is animal-derived for a different reason — ゼラチン, not egg or dairy."
+ },
+ {
+  "id": "hiro_fujiiya_miyajima_honten",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Momiji manju are made fresh on-site and the shop emphasizes no preservatives and carefully selected ingredients.",
+  "url": "https://momiji-manju.jp/fujiiya/",
+  "verdict": "unsupported",
+  "found": "Nothing on the cited page says any of this. It says only 「藤い屋のもみじ饅頭は、北海道産のこしあんとつぶあん、ふっくらと焼き上げるカステラにこだわったもみじ饅頭です。」 The nearest real support, on Fujiiya's own shop, is 「近隣の農場から新鮮な卵を仕入れ」「小麦粉は … 専用に製粉してもらった独自のものを使用」「職人が型に刷毛で油を塗りながら焼いていきます」 — plus an 原材料 list (砂糖、卵、小豆、小麦粉、水飴／乳化剤、膨張剤) that contains no preservative.",
+  "correct_url": null,
+  "http": "cited page 200; www.fujiiya.co.jp 403 on every route including Wayback; www.fujiiya-coconca.shop 200",
+  "method": "plain fetch; Yahoo search for 保存料不使用 + 厳選; COCONCA shop item pages",
+  "note": "Three sub-claims, none on the cited page. 'Carefully selected ingredients' is real and citable (Fujiiya's own wording: bespoke-milled flour and eggs from neighbouring farms; the maker's product page also reads 「小麦、小豆、卵といった3つの素材は、特に厳選されたものを使用しています」). 'Made fresh on-site' is only third-party (焼きたてもみじ饅頭 at the 宮島本店) and the packaged goods carry a 12-day 日保ち, so it needs qualifying to the shopfront. 'The shop emphasizes no preservatives' could NOT be found anywhere — Fujiiya never makes that claim; the most that is true is that 保存料 does not appear in the ingredient list. Delete the 'emphasizes' framing or restate it as an observation about the ingredient list. Trading status: open, 8:30–18:00, 不定休."
+ },
+ {
+  "id": "hiro_fujiiya_miyajima_honten",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000023",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000010",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000001",
+   "https://momiji-manju.jp/fujiiya/"
+  ],
+  "why": "Fujiiya publishes a complete 原材料 list and an explicit アレルギー line for every product, and at least two of its lines declare no wheat at all — 花虎白 is 「原材料：砂糖、フランボワーズ／マンゴ／西洋梨、寒天」 with 「アレルギー：不使用」, and 淡雪花 declares 「アレルギー：ゼラチン」 only. A blanket 'no' tells a celiac there is nothing here, which the maker's own labelling contradicts. 'ask' is the honest tier: real wheat-free items exist and are labelled, but Fujiiya publishes no cross-contamination or segregation statement and the main line is wheat castella, so a celiac must still confirm handling in store."
+ },
+ {
+  "id": "hiro_fujiiya_miyajima_honten",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "limited",
+  "evidence": [
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000023",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000010",
+   "https://www.fujiiya-coconca.shop/smartphone/detail.html?id=000000000001"
+  ],
+  "why": "花虎白 is sugar, fruit purée and 寒天 (agar, seaweed) with 「アレルギー：不使用」 — plant-only, per the maker's own declaration, and named on the record's cited page as part of the Miyajima lineup. Everything else is animal-containing and should stay flagged: momiji manju is 卵・小麦 castella, 淡雪花 is set with ゼラチン, and 杓子せんべい and the sablés carry egg, butter and dairy. One documented plant-only item in an otherwise animal-heavy range is 'limited', not 'no'."
+ },
+ {
+  "id": "hiro_fukuromachi_wine_shokudo",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Kitchen makes a point of using fresh vegetables from contract and own farms, so plant-based plates are part of the everyday menu.",
+  "url": "https://in-smart.co.jp/shopinfo/le-jyanjyan/",
+  "verdict": "wrong_source",
+  "found": "「旬のお魚や契約農場から仕入れるお野菜をふんだんに使用した、素材にこだわり抜いたJYAN JYANの各種コース。」— on the venue's own Gnavi page (mirrored at its official gorp.jp micro-site). The same listing also carries 「ベジタリアンメニューご相談」 under サービス.",
+  "correct_url": "https://r.gnavi.co.jp/8mns283t0000/",
+  "http": "cited page 200 (29KB); r.gnavi.co.jp 200 (111KB); y121528.gorp.jp 200; in-smart wp-json 403 (fell back to the sitemap + per-page fetches)",
+  "method": "plain fetch of the cited page, Wayback (2025-01 and 2026-02 snapshots), a sweep of all 16 sibling in-smart.co.jp shop pages, then Yahoo search which surfaced the Gnavi listing",
+  "note": "The contract-farm sourcing is real but lives on Gnavi, not on the cited in-smart page — which never mentions farms, in the live version or in any Wayback snapshot back to Jan 2025, and no sibling restaurant in the in-smart group mentions them either. Two corrections when you re-point it: the source says 契約農場 only, so drop 'and own farms' (unsourced); and 'plant-based plates are part of the everyday menu' is not supported — the vegetables appear in courses served 「旬のお魚や」 alongside seasonal fish, and the only vegetable-forward offering on the official page is 「金・土限定ランチ「マルシェテーブル」約15種類の旬野菜に、季節の果物や肉・魚料理を彩り豊かに盛り合わせた」, i.e. Friday/Saturday lunch only and plated with meat and fish. The genuinely useful line for this record is Gnavi's 「ベジタリアンメニューご相談」, which is what justifies the existing vegan 'ask'. Trading status: open — Mon–Sat 17:30–23:00 (L.O. 22:00), Fri/Sat lunch 11:00–15:00, 日曜定休."
  }
 ]

@@ -1999,6 +1999,15 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_fukushimaya",
+  "name": "福島屋 (Fukushimaya)",
+  "field": "soy_sauce_wheat",
+  "text": "Broth/tsuyu is dashi- and soy-sauce-based, and standard Japanese soy sauce contains wheat.",
+  "source": "https://tabelog.com/ishikawa/A1701/A170101/17002080/",
+  "why": "Entirely uncited: this page never discusses the tsuyu at all, so the claim is cuisine convention presented as sourced fact. The conclusion is almost certainly right for a 120-year-old Kansai-style soba/udon house, but say so as an explicit assumption or find a source that actually describes the brot"
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_natural_grocery_store_mi",
   "name": "Natural Grocery Store midoriya（ミドリヤ） (Natural Grocery Store midoriya)",
   "field": "staff_allergy_handling",
@@ -2071,6 +2080,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_shintenchi_micchan",
+  "name": "新天地 みっちゃん (Shintenchi Micchan)",
+  "field": "soy_sauce_wheat",
+  "text": "Okonomiyaki is finished with a standard wheat-based okonomiyaki sauce (not gluten-free).",
+  "source": "https://www.mitchan.co.jp/menu/index.html",
+  "why": "The cited menu page never uses the words ソース or 醤油 at all — the only sauce-adjacent line is a 40-yen マヨネーズ topping. The claim is almost certainly true but is currently uncited. Two repair options: (a) cite the shop's own https://www.mitchan.co.jp/history/index.html, which describes okonomiyaki sauce"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kissa_saeki_organic_cafe",
   "name": "喫茶さえき (Kissa Saeki (Organic cafe & kitchen))",
   "field": "vegan_cross_contact",
@@ -2089,12 +2107,30 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_watashi_no_shokutaku_kam",
+  "name": "わたしの食卓 紙屋町店 (Watashi no Shokutaku Kamiyacho-ten)",
+  "field": "soy_sauce_wheat",
+  "text": "Set meals such as miso-simmered mackerel and pork kimchi rely on regular soy sauce and miso, which contain wheat.",
+  "source": "https://tabelog.com/hiroshima/A3401/A340111/34014338/",
+  "why": "Both dishes in the claim are invented for this venue — neither mackerel nor kimchi is on the cited page, and neither seasoning word occurs on it. This reads as cuisine convention written as if sourced, which is the pattern the brief warns about. The correction is easy and makes the record safer, bec"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_rindo",
   "name": "竜胆 (Rindo)",
   "field": "soy_sauce_wheat",
   "text": "The dandan sauce is a savory Sichuan-style seasoning typically built on soy/sesame-based components; no gluten-free prep",
   "source": "https://oomin77.com/blog-entry-365.html",
   "why": "Both the soy and the sesame components are invented for this page, and the citation is a 16-year-old blog with a stale price. The gf: no conclusion needs none of it — this is a single-dish 汁なし担々麺 shop, so the wheat is the dish. Tabelog's 2025/02 review gives the current wording: 「しっかり痺れる山椒と、コクのある甘辛だ"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_teppanyaki_okonomiyaki_s",
+  "name": "鉄板焼 お好み焼 修竜 薬研堀本店 (Teppanyaki Okonomiyaki Shuryu Yagenbori Hont)",
+  "field": "soy_sauce_wheat",
+  "text": "Teppanyaki and okonomiyaki here are finished with standard sauces and soy sauce, which contain wheat.",
+  "source": "https://y188000.gorp.jp/",
+  "why": "The cited page names no sauce and no soy sauce at all - the strings 醤油, しょうゆ and ソース return zero hits there and on every gnavi menu page, so this is cuisine convention written as if sourced. The claim is very probably true of the shop, but as filed it is unevidenced and should be reworded as an expl"
  },
  {
   "city": "hiroshima",
@@ -2113,6 +2149,24 @@
   "text": "The kitchen is a single-dish wheat-noodle counter; noodles are boiled in shared water and the sauce contains gluten-bear",
   "source": "https://ikusumu.com/funairi/kisaku.html",
   "why": "Two mechanisms in this claim are asserted rather than sourced: the page never mentions shared boiling water, and it names the tare as chicken-and-niboshi dashi with sansho, not a soy-based seasoning. What the page does support is that every noodle dish on the menu is wheat. Reword to that and drop t"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_okonomiyaki_teppanyaki_f",
+  "name": "お好み焼き・鉄板焼 福ちゃん (Okonomiyaki Teppanyaki Fukuchan)",
+  "field": "gf_cross_contamination",
+  "text": "Hiroshima-style okonomiyaki is assembled on a shared griddle from a wheat-flour batter and includes wheat noodles, so he",
+  "source": "https://tokaichi.com/okonomiyaki/fukuchan/",
+  "why": "Identity is right — the article's 広島市中区十日市町2-2-17 / 082-961-4120 matches Tabelog 34007450 exactly — but the page never mentions wheat flour or noodles. The shared teppan half is fair; the noodle half is invented and should be dropped or sourced elsewhere. Also worth recording on this venue: the arti"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_okonomiyaki_teppanyaki_f",
+  "name": "お好み焼き・鉄板焼 福ちゃん (Okonomiyaki Teppanyaki Fukuchan)",
+  "field": "vegan_cross_contact",
+  "text": "The griddle is oiled with pork lard and the house sauce uses Hiroshima oysters, so vegan diners face animal-product cont",
+  "source": "https://tokaichi.com/okonomiyaki/fukuchan/",
+  "why": "Half-invented claim. Split it: keep the oyster-in-the-sauce finding, which is genuinely strong (the house sauce itself is not vegan or shellfish-free, and that is easy for a diner to miss), and delete 'the griddle is oiled with pork lard' unless a source is found — nothing on the cited page says it."
  },
  {
   "city": "hiroshima",
@@ -2347,6 +2401,15 @@
   "text": "The dipping broth and tare for tsukemen rely on standard Japanese soy sauce, which contains wheat.",
   "source": "https://www.menbajintoku.jp/",
   "why": "The soy-sauce attribution is not on the cited page and should be replaced with the seasoning the operator does name — 辛味噌 — which carries its own gluten risk, since 麦味噌 (barley miso) is standard in western Japan; that keeps the field true and better-sourced."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_shizenshoku_restaurant_k",
+  "name": "自然食レストラン かんな (Shizenshoku Restaurant Kanna)",
+  "field": "soy_sauce_wheat",
+  "text": "As a Japanese natural-food kitchen, miso and soy-sauce-based seasonings used here typically contain wheat; no wheat-free",
+  "source": "https://www.bm-peekaboo.com/gourmet/7-80/",
+  "why": "This one is wrong in the direction that penalises a safe venue. The cited page documents a wheat-free miso and the record cites it to assert the miso probably contains wheat; 米みそ is not 麦味噌. Rewrite to 'the miso is a rice miso (有機米みそ), which is wheat-free; the soy sauce is undocumented, so ask' — th"
  },
  {
   "city": "hiroshima",

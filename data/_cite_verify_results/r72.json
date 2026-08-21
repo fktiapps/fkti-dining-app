@@ -76,5 +76,57 @@
   "http": "200 (iPhone UA, s.tabelog.com)",
   "method": "1 plain fetch with an iPhone UA; counted the full 37-item 料理 list on the cited page",
   "note": "Overwhelmingly confirmed - the seafood/meat share of the menu is not an estimate but a count, and the 鉄板 block puts the only warm plant items (ブロッコリーのアヒージョ, エリンギバター焼き) on the same griddle as 厚切りベーコン and the egg roll. エリンギバター焼き is butter, so it is not vegan even before cross-contact, and 広島葉キムチ is a commercial kimchi that commonly carries fish sauce or shrimp - neither should be offered to a vegan reader. vegan: no is correct."
+ },
+ {
+  "id": "hiro_teppanya_benbee_hatchobo",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Cooking is done on a shared teppan iron griddle where wheat-based okonomiyaki batter, noodles, and sauces are prepared, making gluten cross-contact effectively unavoidable.",
+  "url": "https://bennbee-hattyoubori-hiroshima.owst.jp/",
+  "verdict": "supported",
+  "found": "「６メートルの鉄板カウンター！目の前で調理する臨場感が味わえるのは、鉄板焼きの醍醐味。」／「定番の広島流お好み焼きや広島県産牡蠣フライ、特製スープと一緒にお召し上がりいただく名物の弁兵衛ギョーザなど、全9品で2時間飲み放題も…」／「更には広島流お好み焼き弁兵衛海鮮スペシャルを含む全9品に…」",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited root, on /menu and on /takeouts",
+  "method": "1 plain fetch of the cited root; then /menu (courses only) and /takeouts on the same host for the item-level detail",
+  "note": "The cited root does carry the load-bearing facts: a single 6-metre teppan counter with everything cooked in front of the guest, 広島流お好み焼き in all three courses, plus two wheat items the record does not list - 弁兵衛ギョーザ (wheat gyoza wrappers) and 広島県産牡蠣フライ (panko). The 'noodles' element is NOT on the root; it is one click away at /takeouts, which spells out every okonomiyaki as 「麺、玉子、豚肉、キャベツ」 and adds 焼きそば/焼うどん 900円 and an イカ天 topping. Cite https://bennbee-hattyoubori-hiroshima.owst.jp/takeouts alongside the root for the noodle clause. One trap to record in the detail text: 野菜肉玉 748円 is described as 「麺ナシ、玉子、豚肉、どっさりキャベツ」 - a noodle-free okonomiyaki is still a wheat-batter pancake on a wheat-contaminated griddle and must not read as a GF option. Trading status OK: 広島市中区八丁堀16-2, 11:30-14:30/17:00-23:00, 定休日 年末年始 only, 68 seats, live HotPepper booking (strJ000631992)."
+ },
+ {
+  "id": "hiro_teppanya_benbee_hatchobo",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The shared griddle is used for pork, seafood, egg, and beef, so plant-only dishes cannot be guaranteed free of animal-product contact.",
+  "url": "https://bennbee-hattyoubori-hiroshima.owst.jp/",
+  "verdict": "supported",
+  "found": "根拠（cited root）:「６メートルの鉄板カウンター！目の前で調理する」＋「ウニほうれん，牛ステーキ，広島流お好み・・全9品」「和牛コーネ，国産サーロイン」「オマール海老,和牛コーネ，鮑ステーキ」「広島県産牡蠣フライ」。豚・卵は同ホスト /takeouts が明示:「肉玉そば 900円 — 麺、玉子、豚肉、キャベツ」、トッピング「ホルモン/ホタテ/牡蠣 561円」",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited root and on /takeouts",
+  "method": "1 plain fetch of the cited root, then /takeouts on the same host to pin the pork and egg terms",
+  "note": "Beef and seafood are verbatim on the cited root (牛ステーキ, 和牛コーネ, 国産サーロイン, オマール海老, 鮑, 牡蠣フライ, ウニほうれん) and the single shared 6m griddle is the shop's own headline, so the substance holds. Pork and egg are only implied on the root - they are explicit at /takeouts, where every okonomiyaki reads 「麺、玉子、豚肉、キャベツ」, so add that URL to the evidence list rather than leaving two of the four named animals unsourced. No vegan, vegetarian or plant-based item appears anywhere on the site and 英語メニュー is listed as なし, so vegan: no is correct and there is no accommodation signal to soften it."
+ },
+ {
+  "id": "hiro_teppanyaki_okonomiyaki_s",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Cooking is done on a shared teppan griddle where wheat-batter okonomiyaki and wheat noodles are prepared, making cross-contact with gluten effectively unavoidable.",
+  "url": "https://y188000.gorp.jp/",
+  "verdict": "supported",
+  "found": "「こだわり3 広島風こだわりのお好み焼き◆使用してる卵は全部黄身が２つ入っている修竜こだわり卵を使用。さらに麺の美味しさが違います。オーナー自らが探し当てた究極の麺を使用！」／おすすめ「麺はそば派？うどん派？」／メニュー区分「◆広島流鉄板焼き」「◆広島流お好焼き」／JSON-LD servesCuisine: 「広島お好焼き鉄板居酒屋」",
+  "correct_url": null,
+  "http": "200 (plain curl, 21 KB). Page is a JSON blob rendered client-side - the readable text lives in the embedded JSON, not in HTML tags, so a naive tag-stripper still recovers it but a screen-reader-style extractor may not.",
+  "method": "1 plain fetch of the cited page + read of its embedded JSON/JSON-LD; gnavi item pages r.gnavi.co.jp/0000718883/menu1-3 fetched with an iPhone UA for corroboration (200 each)",
+  "note": "Fully supported on the cited page: the shop advertises its noodles twice (究極の麺, 麺はそば派？うどん派？) and runs okonomiyaki and teppanyaki off the same griddle as its two menu headings. The gnavi menu confirms and sharpens it - 「お好み焼き（肉・玉子入り）そば or うどん 990円」, 焼きそば・焼きうどん, ホルモンうどん, 塩やきそば, 辛めん, and an イカ天 topping (squid tempura, wheat batter) scattered on the shared teppan. Worth adding: 山芋ふわとろ焼き 825円 is the closest thing to a batter-light item and is still cooked on the same surface, so it is not a GF workaround."
+ },
+ {
+  "id": "hiro_teppanyaki_okonomiyaki_s",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Teppanyaki and okonomiyaki here are finished with standard sauces and soy sauce, which contain wheat.",
+  "url": "https://y188000.gorp.jp/",
+  "verdict": "unsupported",
+  "found": "醤油・しょうゆ・ソース の文字列は引用元ページに0件（r.gnavi.co.jp/0000718883/menu1-3 にも0件）。ページが実際に述べる調味料は味噌のみ: 「広島の味噌をブレンド！修竜特製の味噌ダレ使用！！」（ホルモン（小腸）990円）",
+  "correct_url": null,
+  "http": "200 (plain curl) on the cited page; 200 (iPhone UA) on the three gnavi menu pages",
+  "method": "1 plain fetch of the cited page, then exact-string search for 醤油/しょうゆ/ソース across it and across all three gnavi item menus",
+  "note": "The cited page names no sauce and no soy sauce at all - the strings 醤油, しょうゆ and ソース return zero hits there and on every gnavi menu page, so this is cuisine convention written as if sourced. The claim is very probably true of the shop, but as filed it is unevidenced and should be reworded as an explicit assumption. Meanwhile the seasoning the shop DOES document is a bigger miss: 「広島の味噌をブレンド！修竜特製の味噌ダレ使用！！」 - western-Japan miso blends commonly include 麦味噌, which is barley, i.e. gluten by a route the record never mentions. Also unlisted: 辛めん 385円 and the キムチ topping."
  }
 ]

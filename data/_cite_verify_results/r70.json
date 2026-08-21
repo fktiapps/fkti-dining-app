@@ -180,5 +180,70 @@
   "http": "200, plain curl",
   "method": "plain fetch of the cited page",
   "note": "Accurate, including the 'mixed directly into the noodles' detail, which the site's own how-to-eat steps state. Same duplicate-record flag as this record's gf entry."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_sen_2",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The kitchen is built around wheat noodles and a wheat-based soy tare, so any dish risks gluten contact; no gluten-free preparation is documented.",
+  "url": "https://ajibana.jp/trend/2033/",
+  "verdict": "wrong_source",
+  "found": "The cited article is headed 「【担担麺】汁なし担担麺専門 キング軒 東京店」（東京都／港区）and describes the TOKYO branch at 東京都港区芝公園2-10-5, not the Hiroshima Hondori shop. Its wheat line — 「性質の異なる小麦粉を独自配合した中細ストレート麺を使用し、茹で時間はわずか55秒。」 — is about that branch. The chain's own menu page carries the citable allergen statement: 「※ アレルギー表記／ 小麦・卵・そば（当店でそば粉は使用しておりませんが、麺製造工場にてそば粉を使った製品も製造されている為の表記となっております）」.",
+  "correct_url": "https://kingken.world/menu/",
+  "http": "200 plain curl for ajibana; 200 plain curl for kingken.world/, /menu/, /kodawari/, /shop/ and /shop/page/2/",
+  "method": "plain fetch of the cited page, then the chain's own site for branch-correct evidence",
+  "note": "SIBLING-BRANCH CITATION ACROSS CITIES: a Hiroshima record is evidenced entirely by an article about the Tokyo branch, 800 km away. Re-cite kingken.world/menu/, whose declared allergens are 小麦・卵・そば and which adds a fact the record is missing — the noodle factory also produces buckwheat products, so soba is a declared cross-contact risk on top of the wheat."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_sen_2",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The soy tare is hand-made using a 'King-ken' soy sauce specially commissioned from Kawanaka Shoyu (founded 1906), a conventional wheat-fermented Japanese soy sauce.",
+  "url": "https://ajibana.jp/trend/2033/",
+  "verdict": "wrong_source",
+  "found": "The cited article says only 「麺、醤油は広島の老舗メーカーに特注し」 — an unnamed long-established Hiroshima maker. Neither 川中 nor 1906/明治39年 appears on it. The chain's own こだわり page is where the claim actually comes from, almost word for word: 「醤油タレは明治39年創業の川中醤油に特注した「キング軒用醤油」を使用し手作りしております。」 (明治39年 = 1906).",
+  "correct_url": "https://kingken.world/kodawari/",
+  "http": "200 plain curl for both",
+  "method": "plain fetch of the cited page, then the chain's own こだわり page, which carries the verbatim source of the claim",
+  "note": "The claim is accurate down to the founding year and the 手作り detail, but every specific in it is on kingken.world/kodawari/ and none of it is on the cited article. Swap the URL. Note the 'wheat-fermented' conclusion is still category knowledge — neither page states 小麦 for the soy sauce itself; the menu page's 小麦 allergen declaration is the closest thing."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_sen_2",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The signature dish includes a minced-pork topping and is prepared in a kitchen dedicated to meat-based dandan noodles, so vegan cross-contact is unavoidable.",
+  "url": "https://ajibana.jp/trend/2033/",
+  "verdict": "wrong_source",
+  "found": "The pork line does exist on the cited page — 「肉味噌は国産の豚肉を使用し、粗挽きのものを複数の調味料で炒め煮して」 — as does 「スープは鶏ガラをベースに炊きあげた清湯」 and 「メニューは「広島式汁なし担担麺」のみで、トッピングも「ネギ盛り」「セロリ」「温泉玉子」の３品のみ」. But all of it describes the Tokyo branch. The chain page states the meat chain-wide: 「もちろん挽肉についても甘味や旨味にこだわってその時でベストな物を使用しております。」",
+  "correct_url": "https://kingken.world/kodawari/",
+  "http": "200 plain curl for both",
+  "method": "plain fetch of the cited page, then the chain's own こだわり and menu pages",
+  "note": "vegan: no is correct and, if anything, understated — a chicken 清湯 goes into every bowl alongside the pork niku-miso, and the only three toppings include a 温泉玉子. Move the citation to kingken.world/kodawari/ so a Hiroshima record stops resting on a Tokyo article."
+ },
+ {
+  "id": "hiro_shizenshoku_restaurant_k",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a Japanese natural-food kitchen, miso and soy-sauce-based seasonings used here typically contain wheat; no wheat-free seasoning is documented.",
+  "url": "https://www.bm-peekaboo.com/gourmet/7-80/",
+  "verdict": "unsupported",
+  "found": "The page's only seasoning statement about this venue says the opposite: 「人気の味噌汁に使用されている青森県産の「有機米みそ」は、余計なものを入れず、木樽仕込みでゆっくりと熟成・発酵させた自然な味わいです。」 有機米みそ is an organic RICE miso — rice koji, soy and salt, no barley and no wheat — and 「余計なものを入れず」 explicitly rules out extra ingredients. 醤油 is never mentioned in this venue's paragraph at all.",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "This one is wrong in the direction that penalises a safe venue. The cited page documents a wheat-free miso and the record cites it to assert the miso probably contains wheat; 米みそ is not 麦味噌. Rewrite to 'the miso is a rice miso (有機米みそ), which is wheat-free; the soy sauce is undocumented, so ask' — the gf: ask tier is right, but the reason given to the reader is currently false."
+ },
+ {
+  "id": "hiro_shizenshoku_restaurant_k",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Cooking emphasizes pesticide-free and organic vegetables and additive-free, traditionally fermented seasonings, which appeals to clean-eating diners.",
+  "url": "https://www.bm-peekaboo.com/gourmet/7-80/",
+  "verdict": "supported",
+  "found": "「広島県内の農園で採れた無農薬・有機野菜を中心とした日替わりランチや、無農薬レモンを使ったレモンケーキなどのデザートもいただけますよ。また、人気の味噌汁に使用されている青森県産の「有機米みそ」は、余計なものを入れず、木樽仕込みでゆっくりと熟成・発酵させた自然な味わいです。」",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "Accurate on every element — 無農薬・有機野菜, 無農薬レモン, and a 木樽仕込み additive-free miso. Caveat for whoever reads this next: the source is a seven-shop listicle whose photo for this venue is credited 「出典： photoAC ※画像はイメージです」 (stock image), and the paragraph carries no allergen or vegan information whatsoever, so it cannot support either tier on its own."
  }
 ]

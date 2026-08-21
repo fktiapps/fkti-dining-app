@@ -128,5 +128,70 @@
   "http": "200 (plain fetch)",
   "method": "1 (plain fetch)",
   "note": "Supported as written for the named dishes, but soften 'All featured dishes': the site's own 単品メニュー list includes generic 「サラダ」 and 「炒め物」 categories whose contents are not specified, so the honest statement is 'every dish the site names is seafood-based and no vegan option is documented'. vegan:no stands."
+ },
+ {
+  "id": "hiro_shintenchi_micchan",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The core dish is assembled on a shared iron griddle from a wheat-flour batter and wheat noodles; flour and gluten are pervasive throughout the cooking surface, so cross-contamination is unavoidable for a gluten-sensitive diner.",
+  "url": "https://www.mitchan.co.jp/menu/index.html",
+  "verdict": "supported",
+  "found": "Page header 「広島 お好み焼き　鉄板焼き　メニュー　みっちゃん　新天地」. Every okonomiyaki lists wheat noodles as a base component — 「特製デラックス  生いか・生えび・いか天・そば又はうどん・肉・玉子」, 「そば又はうどん・肉・玉子　930円」 — plus 「いか天」 and toppings 「そば・うどん  各200円」. The same 鉄板 carries 豚カルビ焼, いか焼, ねぎ焼（一銭洋食）, もやしいため.",
+  "correct_url": null,
+  "http": "200 (plain fetch); page is Shift-JIS (cp932) — decode as cp932 or the text is mojibake",
+  "method": "1 (plain fetch) + cp932 decode",
+  "note": "Supported. Note the single non-noodle option, 「肉玉入（麺なし）730円」, still shares the griddle and is still batter-based, so 'unavoidable' holds. Encoding tip for the next agent: mitchan.co.jp serves cp932 with no charset header."
+ },
+ {
+  "id": "hiro_shintenchi_micchan",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Okonomiyaki is finished with a standard wheat-based okonomiyaki sauce (not gluten-free).",
+  "url": "https://www.mitchan.co.jp/menu/index.html",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain fetch, cp932)",
+  "method": "1 (plain fetch) + cp932 decode; site link-walk (/guide/, /history/, /profile/ all 200; /kodawari/ 404); Ecosia search for オタフク お好みソース 原材料 小麦",
+  "note": "The cited menu page never uses the words ソース or 醤油 at all — the only sauce-adjacent line is a 40-yen マヨネーズ topping. The claim is almost certainly true but is currently uncited. Two repair options: (a) cite the shop's own https://www.mitchan.co.jp/history/index.html, which describes okonomiyaki sauce as a Worcester-sauce derivative used on the dish but never names wheat; (b) cite a manufacturer allergen listing — Otafuku お好みソース is declared 特定原材料8品目: 小麦 (e.g. sej.co.jp product page) — but nothing on mitchan.co.jp names the brand, so that attribution would be an assumption. Cleanest fix: drop this claim and lean on the already-solid noodle/batter evidence."
+ },
+ {
+  "id": "hiro_shintenchi_micchan",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Pork, egg, squid/shrimp and bonito-style toppings are standard on the shared griddle, so vegan cross-contact is unavoidable.",
+  "url": "https://www.mitchan.co.jp/menu/index.html",
+  "verdict": "supported",
+  "found": "「そば又はうどん・肉・玉子　930円」 (meat and egg in the base item), 「特製デラックス  生いか・生えび・いか天…」, toppings 「もち・ねぎ・にんにく・豚肉他」 and 「えび・いか・ベーコン・キムチ他」, plus 豚カルビ焼 / 白肉（牛のミノ）/ 豚トロ / 砂ずり / エビ焼 on the same griddle.",
+  "correct_url": null,
+  "http": "200 (plain fetch, cp932)",
+  "method": "1 (plain fetch) + cp932 decode",
+  "note": "Pork, egg, squid and shrimp are all verbatim on the page; the 'bonito-style' element is NOT — no かつお / 青のり line appears in the menu. Trim that word or the claim overstates its source. Trading: /profile/index.html is current (full weekly hours, closed Mon & Thu) and the top page advertises PayPay/AUpay/コイPay."
+ },
+ {
+  "id": "hiro_shinzan",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Shabu-shabu and hot pot are served with ponzu and miso-based sauces/broths, which are typically wheat-containing soy seasonings.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340113/34007488/dtlmenu",
+  "verdict": "supported",
+  "found": "「猪のしゃぶしゃぶ（ポン酢・ごま味噌だれ）  4,200 円」 and 「ぼたん鍋（猪の味噌炊き鍋）  4,200 円」 — ponzu and sesame-miso dare are named in the dish titles themselves.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com/.../dtlmenu/, iPhone UA, 174KB)",
+  "method": "2 (mobile host) + Restaurant JSON-LD",
+  "note": "Strongest citation in this shard — the seasonings are in the menu text verbatim. Caveat to record: Tabelog stamps this list 「更新日 : 2009/08/06」 and warns 「これらのメニューは、ユーザーの方々が任意で登録したもの」, so it is user-submitted and 17 years old; the shop is still trading (hours listed, 29 reviews, 全席禁煙, note 【広島市中区本通9-2より移転】). Extra uncited wheat: 山菜天ぷら, にゅうめん, 鍋焼きうどん, 冷そうめん."
+ },
+ {
+  "id": "hiro_shinzan",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is built around boar and game meat with meat/fish-based hot pot broths, so even tofu and vegetable dishes share a thoroughly non-vegan cooking environment.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340113/34007488/dtlmenu",
+  "verdict": "supported",
+  "found": "Genre 「肉料理､ しゃぶしゃぶ､ 鍋」; menu is 猪 (boar) and きじ (pheasant) throughout — ぼたん鍋, 猪のしゃぶしゃぶ, 特選猪しゃぶしゃぶ, 猪焼肉, きじ焼肉, 子猪骨付塩焼, ぼたん刺, きじ雑炊 — with 湯豆腐 600円 and 冷奴 500円 as the only plant items, alongside 山菜盛り合わせ and 山菜天ぷら.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "2 (mobile host) + JSON-LD",
+  "note": "Supported, and the record's wording is accurate: tofu and sansai items exist but sit inside a boar/game kitchen. vegan:no stands."
  }
 ]

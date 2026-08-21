@@ -1,5 +1,12 @@
 // Check every stored website / menu_url for liveness.
 //
+// BLOCKED_NOT_DEAD: a 403 is a site refusing THIS fetcher, not a dead link, and a
+// first run reported 1,086 "dead" of which 995 were tabelog.com bot-blocking us. That
+// number is worse than no number — it buries the ~30 genuinely dead domains in noise
+// and teaches the reader to ignore the report. 404 and DNS failure mean gone; 403 and
+// timeout mean unknown; they are counted separately and always have been worth
+// separating.
+//
 // Motivated by a real failure: senza-x.com lapsed and now serves a Korean
 // gambling site, and the app was still linking it as a restaurant's official
 // page. Dead links are a nuisance; lapsed-and-repurposed domains are worse.

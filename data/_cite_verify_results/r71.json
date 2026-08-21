@@ -154,5 +154,57 @@
   "http": "hitosara 200 (plain curl) but content-empty; s.tabelog.com/hiroshima/A3401/A340101/34013197/ 200 (iPhone UA); nikujiru.owst.jp 200 (plain curl); www.meetmill.jp and meetmill.jp both NXDOMAIN (curl 6, and 8.8.8.8 returns Non-existent domain); web.archive.org returned HTTP 429 twice",
   "method": "1 plain fetch of the cited page, then Ecosia (https://www.ecosia.org/search?q=肉じるしるし+広島+流川) which answered first try and surfaced both the real official site and the Tabelog id; 2 iPhone UA for the Tabelog detail page",
   "note": "The cited hitosara page is an unclaimed stub — name, phone, address, hours and nothing else; it has no menu, no dish text and an 'お店の写真を募集しています' placeholder, so it cannot evidence a seasoning claim of any kind. This is the 'citation that cannot evidence anything venue-specific' pattern. The claim is nonetheless TRUE and well evidenced at the Tabelog detail page: the demi-glace stew is described as made from scratch, and 醤油 appears literally on the menu in 合鴨の赤ワイン醤油煮. Recite to Tabelog. Two additions for gf_detail: the signature 肉煮込み is served バゲット付 (a baguette on the plate, straight wheat, and the sauce is meant to be poured over it), and the course menus include ゆかりのとり天, battered fried chicken. The 'wheat-flour roux' wording is still an inference — the sources say デミグラスソース from scratch, not roux. SEPARATE DEFECT: the record's website field, https://www.meetmill.jp/, is a dead domain (NXDOMAIN, not a 404) — replace it with the live official site https://nikujiru.owst.jp/. The venue itself is trading: Tabelog shows no 閉店 banner, address 中区流川町8-27 Wakeビル1F matching the record's pin, and the owst.jp official site is serving current course pricing."
+ },
+ {
+  "id": "hiro_taishu_shokudo_yunosuke",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Menu centers on fried town-Chinese dishes, dumplings/shumai and soy-sauce-seasoned plates, so wheat and shared frying are expected throughout the kitchen.",
+  "url": "https://www.modokimaru.com/entry/gourmet/230502",
+  "verdict": "wrong_source",
+  "found": "Tabelog 34030844 review titles and keyword list: 「【本通】これぞ大衆食堂の醍醐味！「遊のすけ」で味わう、圧倒的ボリュームと白米が止まらない絶品油淋鶏」／「前回はオープンして1ヶ月位して伺ったが、拉麺がハマらなくて行かなくなってしまった」／関連キーワード: 唐揚、中華そば、酢豚、油淋鶏、シュウマイ、麻婆豆腐定食、鶏唐揚",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340113/34030844/",
+  "http": "modokimaru.com 200 (plain curl, 88 KB); s.tabelog.com/hiroshima/A3401/A340113/34030844/ 200 (iPhone UA, 522 KB)",
+  "method": "1 plain fetch of the cited blog, then 2 iPhone UA on s.tabelog.com for the record's own website field",
+  "note": "The cited blog is a single-visit opening-week post from 2023-05-02 covering exactly one dish (肉しゅうまい定食). It supports the shumai and the soy-sauce halves — 「▼游のすけ 肉しゅうまい(4ヶ)定食(900円) 内容はご飯にスープ。漬物にサラダといった感じ」 and 「ニラ醤油をしっかり目につけた方が良いですね」 — but says nothing at all about fried dishes or a fryer, so 'fried town-Chinese dishes' and 'shared frying' are unevidenced on it. The claim is nevertheless true and better sourced at the record's OWN website, the Tabelog page, which documents 油淋鶏, 唐揚/鶏唐揚 and 酢豚 (all deep-fried) plus 中華そば and 拉麺 — wheat noodles, a bigger gluten item than anything the record currently names. Recite to the Tabelog URL and add ramen to gf_detail. Separately, the cited blog is now stale on the operating facts: it lists 【時間】11:00～22:00【休み】月曜, whereas Tabelog shows 月・水〜土 17:00-23:00, 日 11:30-23:00, 火 定休日 — which matches the record's hours_raw, so the record is right and the blog is the outdated one."
+ },
+ {
+  "id": "hiro_taishu_shokudo_yunosuke",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Town-Chinese set meals and izakaya dishes are seasoned with standard Japanese/Chinese soy-sauce-based seasonings, which contain wheat.",
+  "url": "https://www.modokimaru.com/entry/gourmet/230502",
+  "verdict": "supported",
+  "found": "「むっちりでねちっりした食感です。ニラ醤油をしっかり目につけた方が良いですね。」（肉しゅうまい定食）／「2023年4月25日オープン。町中華×ネオ居酒屋の大衆食堂とのことです。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + string search for 醤油 on the cited page",
+  "note": "醤油 is literally on the cited page and, better still, as a dip the diner is told to apply generously — ニラ醤油 — so this is a documented use rather than a cuisine assumption, which is unusual for this field. The 'contains wheat' step is standard 本醸造醤油 knowledge, not something the page asserts. Tabelog's keyword list corroborates with ニラ and adds 酢豚 and 麻婆豆腐定食, both soy-seasoned."
+ },
+ {
+  "id": "hiro_taishu_shokudo_yunosuke",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes are meat- and fish-forward (pork shumai, set meals with soup); no plant-based or vegan preparation is documented.",
+  "url": "https://www.modokimaru.com/entry/gourmet/230502",
+  "verdict": "supported",
+  "found": "「▼游のすけ 肉しゅうまい(4ヶ)定食(900円) 内容はご飯にスープ。漬物にサラダといった感じ。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "The one dish the blog covers is a meat shumai set with rice, soup, pickles and salad, and nothing plant-based or vegan appears on the page. Supported as far as it goes, though a one-dish blog post is thin evidence for a whole-kitchen statement — the Tabelog keyword list (唐揚, 酢豚, 鶏そぼろ, タン, 麻婆豆腐定食) makes the same point across ~21 set meals and would be the stronger citation. Trading status OK: Tabelog shows no 閉店 banner, オープン日 2023年4月25日, address 中区本通1-22 佐藤ビル1F matching the record's pin, 51 reviews with the most recent 2025/12."
+ },
+ {
+  "id": "hiro_tenshinkaku",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Drinks are simple and many are naturally gluten-free and dairy-free, such as black drip coffee, tea, and the Hiroshima lemon soda.",
+  "url": "https://japan-stroll.com/guide/gourmet/tenshinkaku/",
+  "verdict": "supported",
+  "found": "「ドリップコーヒー（660円）、広島レモンソーダ（880円）、紅茶（770円）のほか、ケーキセットはチーズケーキ／広島レモンケーキをドリンク代＋660円で選択可能です。」（operator's own page carries the identical list: 「[ ドリンク ] ドリップコーヒー 660円／広島レモンソーダ 880円／紅茶 770円 [ セットメニュー ] ケーキセット ＋660円 チーズケーキ／広島レモンケーキ」）",
+  "correct_url": null,
+  "http": "japan-stroll.com 200 (plain curl, 97.9 KB); itsuki-miyajima.com/shop/tenshinkaku/ 200 (plain curl)",
+  "method": "1 plain fetch of the cited page, then a plain fetch of the operator's own shop page (the record's website field) to check it",
+  "note": "The three drinks are named on the cited page and the operator's own page lists exactly the same three at the same prices, so the factual core is solid; 'naturally gluten-free and dairy-free' is the reviewer's inference — neither page mentions gluten, dairy or allergens, and no milk drink or plant-milk option is listed anywhere, which is what actually makes ask/ask the right tier. Two cautions. (1) The cited page is the weaker of the two and is internally inconsistent: it gives the seat charge as both 席料550円 and 入場料500円, and coffee as both 110円 and 660円, and it alone claims 「アルコールはクラフトビールを中心に数種用意され」 — craft beer, i.e. barley, which appears nowhere on the operator's menu and which the record's positives line would obscure if true. Recite to https://itsuki-miyajima.com/shop/tenshinkaku/, and either verify or drop the beer question. (2) Trading status OK and the record's hours hedge can be tightened: the operator's page states 営業時間 PM1:00〜PM5:00, 定休日 無休, so the record's 'one owner interview noted Wednesday/Thursday closures' is contradicted by the operator — that Wed/Thu pattern is 松大珈琲's, a different Miyajima cafe in this same shard."
  }
 ]
