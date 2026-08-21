@@ -638,5 +638,168 @@
    "https://glutenfree.co.jp/コンサルティング/"
   ],
   "why": "This record's own gf_detail opens \"This is one of the safest GF options in Tokyo for a celiac\" while the label reads 'ask' — the label contradicts its own detail text, in the direction that costs a celiac a genuinely safe meal. The venue states 「小麦・大麦・ライ麦を使わない料理や飲み物を提供しています」, is certified by The Gluten Intolerance Group (「The gluten intolerance group からアジア初のグルテンフリー認証を受けた」, GFCO programme), wraps its gyoza and batters its karaage in rice flour, and has no wheat batter on site for the shared fryer to carry. The only residual risks are supplier-level (「材料によっては同じ工場内で小麦を取り扱っている」) and a no-guarantee note that is explicitly about NON-gluten allergies. If 'dedicated' is reserved in this app for venues with zero acknowledged supplier-level cross-contact, then 'high' is the correct floor — but 'ask' is indefensible here."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Small 26-seat counter that simultaneously boils regular wheat ramen noodles — shared water/ladles/counter surface",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "東京駅一番街 shop guide: 座席 26席, B1 東京ラーメンストリート. Official page: 「小麦アレルギーの方は茹で釜を別にて対応させていただきます。」…「※コンタミネーションの可能性はございます。ご理解の上、お召し上がり下さい。」",
+  "correct_url": "https://www.tokyoeki-1bangai.co.jp/shop/detail/?cd=000038",
+  "http": "200",
+  "method": "plain fetch of the Tokyo Station Ichibangai shop guide + the record's own cited official page",
+  "note": "26 seats confirmed by the mall operator. The wheat-noodle line is confirmed by implication in the shop's own words — it offers a SEPARATE boiling kettle for wheat-allergy orders, which only makes sense because the default kettle boils wheat, and it warns of contamination in the same breath. 'Shared ladles/counter surface' is the record's own inference, not stated anywhere; soften it."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Flagship 醤油らーめん uses 生醤油 (wheat-based raw soy sauce); shoyu-based bowls and standard tsuyu carry wheat",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「醤油らーめん — 日本最大級の地鶏［天草大王］と香味野菜、岡直三郎商店の［生醤油］で仕上げたキレのあるスープ」",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of the record's own `website` URL",
+  "note": "Verbatim, and the brand of shoyu is even named (岡直三郎商店). 生醤油 here is unpasteurised koikuchi, i.e. wheat-brewed — the record reads it correctly. The citation was simply never attached."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Not a dedicated GF kitchen or fryer — separate-pot handling should be confirmed in person",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「※コンタミネーションの可能性はございます。ご理解の上、お召し上がり下さい。」 (printed under BOTH the グルテンフリー塩ラーメン and the ヴィーガン水餃子)",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of the official store page",
+  "note": "Correct that it is not a dedicated GF kitchen, and the shop says so itself. But 'separate-pot handling should be confirmed in person' understates it: the separate kettle is published STANDING POLICY, not something a diner has to negotiate. Reword to 'the shop states it uses a separate kettle and still warns contamination is possible'."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "醤油らーめん and other shoyu bowls use wheat-containing soy sauce; choose the salt (塩) GF base instead",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「グルテンフリー塩ラーメン — 食材から小麦をすべて取り除いた塩らーめんです。スープは醤油らーめんと同じ天草大王スープを使用しており、旨味溢れる一杯です。」 Corroborated: 「島根県雲南市『宮内舎』の玄米麺を使用した小麦不使用のラーメンです。タレや油、トッピングにも小麦不使用です。」",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "official store page + ramen21.jp shop write-up",
+  "note": "Supported, and the advice is exactly right. Worth adding the reassuring detail the record omits: the wheat is removed from the TARE, OIL and TOPPINGS too, not only the noodle — the GF shio shares the same 天草大王 chicken stock as the shoyu bowl, minus the shoyu tare. Also note this bowl is NOT vegan (chicken stock)."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen also runs chicken and pork/clam broths; the default キノコベジソバ includes chicken chashu and mushroom oil and must be ordered without them to be vegan",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「キノコベジソバ …※鶏チャーシュー、マッシュルームオイルを除くとヴィーガン対応です。」 Broths published: 天草大王 chicken (醤油らーめん / グルテンフリー塩ラーメン) and ホンビノス貝・昆布・鰹 (貝塩らーめん).",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of the official store page",
+  "note": "The キノコベジソバ half is word-for-word from the shop's own asterisked note — excellent claim, it just had no citation. But 'pork' is not evidenced: the published broths are chicken and clam/kombu/bonito, with no tonkotsu on this branch's menu. Drop 'pork' or source it."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "貝塩らーめん contains bonito and shellfish — confirm no dashi/bonito on any 'vegetable' bowl",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「貝塩らーめん[限定40食]14:00~ — ホンビノス貝、昆布、鰹をベースとした塩らーめんです。」",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of the official store page",
+  "note": "Verbatim: 鰹 (bonito) and ホンビノス貝 (hard clam) both named by the shop. Add that it is a 40-bowl limited item from 14:00, which is useful ordering context."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "staff_allergy_handling",
+  "quote": "Staff inquire about wheat allergy and reportedly use a separate cooking pot for the GF order; contamination risk still acknowledged",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「小麦アレルギー対応といたしまして、ご注文された際にホールスタッフにより、小麦アレルギーの有り無しをお伺い致します。小麦アレルギーの方は茹で釜を別にて対応させていただきます。」…「※コンタミネーションの可能性はございます。」",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of the record's own `website` URL",
+  "note": "Word-for-word on all three parts. Delete 'reportedly' — this is the operator's published policy on its own site, not hearsay. This is the single most important sentence on the record and it was uncited; that is why the label got held down."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Purpose-built gluten-free SHIO (salt) ramen using brown-rice noodles, developed by the founder specifically for wheat-allergy and celiac diners",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Founder 宮崎千尋: 「翌2015年には、島根の農家さんから玄米麺を仕入れ、グルテンフリーラーメンを開発。小麦アレルギーやセリアック病のお客様にも召し上がっていただけることになりました。」 Store page: 「グルテンフリー塩ラーメン — 食材から小麦をすべて取り除いた塩らーめんです。」 Noodle sourced from 島根県雲南市『宮内舎』 (Time Out Tokyo, ramen21.jp).",
+  "correct_url": "https://soranoiro-vege.com/greeting/",
+  "http": "200",
+  "method": "Yahoo Japan search → the company's own 代表挨拶 page, cross-checked against Time Out Tokyo and ramen21.jp",
+  "note": "Fully supported including the word セリアック病 — the founder names celiac disease explicitly, which is rare in Japan and is exactly the substance the owner's ruling asks us to judge on. Add the noodle maker (宮内舎, Unnan, Shimane) so the brown-rice detail is citable too."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Vegan water-gyoza with rice-flour wrapper; gluten-free version available on request",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「ヴィーガン水餃子 — 動物系食材を使用せず、皮にも米粉を使った水餃子です。グルテンフリーにも対応出来ますので、スタッフまでお申し付けください。※コンタミネーションの可能性はございます。」",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of the official store page",
+  "note": "Verbatim on all three elements. Carry the shop's contamination asterisk across with it — the record currently states the positive without the caveat the shop attaches to it."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Official/Ichibangai listings state staff ask about wheat allergy and cook the order in a separate pot",
+  "url": null,
+  "verdict": "unsupported",
+  "found": "The 東京駅一番街 listing carries only seats (26席), hours, phone and a blurb — 「全粒粉入りの麺が豆乳とマッシュルームのスープに絡むヘルシーな『ベジソバ』…」. It says nothing about wheat allergy, staff questions or a separate kettle.",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "plain fetch of https://www.tokyoeki-1bangai.co.jp/shop/detail/?cd=000038",
+  "note": "Mis-attributed to two sources when only one says it. The separate-kettle policy is on the OFFICIAL site alone; the mall listing does not corroborate it. Drop 'Ichibangai' — and note the mall blurb adds a fact the record misses: the ベジソバ noodle is 全粒粉入り, i.e. wholemeal WHEAT, so the 'veggie' bowl is not a gluten-avoidance route."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "English menus and a location very used to allergy and vegan requests",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Official store page: 「インバウンドのお客様もとても多いです！」 and 「王道の旨味ラーメン、ベジソバ、ヴィーガン、グルテンフリーと日本の玄関口の東京駅ならではのラインナップ。」",
+  "correct_url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+  "http": "200",
+  "method": "official store page + Ichibangai shop guide",
+  "note": "The second half is supported in the shop's own words. 'English menus' is NOT — nothing on the official site, the Ichibangai listing or Time Out documents an English menu at the counter (the Ichibangai SITE has language toggles, which is not the same thing). Either drop it or downgrade to 'no English menu documented'."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "city": "tokyo",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "Near-total repair: 9 of 11 claims turn out to be verbatim on the shop's own site or its founder's message — the very pages the record already stored as `website`. Two defects: 'pork' broth that this branch does not serve, and a separate-kettle policy mis-attributed to the Tokyo Station Ichibangai listing (which does not mention it), plus an undocumented 'English menus'. Trading status confirmed OPEN: B1 東京ラーメンストリート, 26席, 9:00-23:00, 年中無休. The gf_detail's own hold note says the label is held at 'ask' only because nothing was traceable — that condition no longer applies; see tier_recommendation. vegan 'options' is correct (ヴィーガン担々麺 and ヴィーガン水餃子 are fully vegan; キノコベジソバ is vegan only on request)."
+ },
+ {
+  "id": "tokyo3_y_28",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
+   "https://soranoiro-vege.com/greeting/",
+   "https://www.timeout.jp/tokyo/ja/restaurants/soranoiro-nippon"
+  ],
+  "why": "The record's gf_detail states in terms that it is 「[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is.」 It is now traceable, on the shop's own pages: a グルテンフリー塩ラーメン 「食材から小麦をすべて取り除いた」 on brown-rice noodles from 宮内舎 in Shimane; staff who proactively ask every customer 「小麦アレルギーの有り無しをお伺い致します」; a separate boiling kettle 「茹で釜を別にて対応させていただきます」; wheat removed from tare, oil and toppings; and the founder stating he developed it so 小麦アレルギーやセリアック病 customers could eat. That is a documented GF menu item with a named protocol — 'options', not 'ask'. It should NOT go higher: the shop itself prints 「※コンタミネーションの可能性はございます」 on that very bowl and the counter boils 全粒粉入り wheat noodles alongside."
  }
 ]

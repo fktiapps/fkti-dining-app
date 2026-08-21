@@ -34,6 +34,27 @@ inventing details to fill the gap is not.
 | Name garbled, real business identified | Enrich under the corrected name; put it in `name`; `enrich_note` starting `NAME CORRECTION.` saying what the light record read and what the evidence shows |
 | Cannot locate | `enrich_confidence:"low"`, `loc_precise:false`, coords unchanged, `enrich_note` starting `NOT FOUND.` naming exactly which searches you ran and what each returned |
 
+### Some of these names were never shop names
+
+The sweep that produced this tranche scraped some things that are not businesses, and
+recognising the shape saves an hour of searching for something that cannot be found:
+
+- **Tabelog REVIEWER HANDLES.** 「ラーメン もぐ男」 and 「ラーメン あまぐ」 both trace to
+  usernames on Tabelog review pages, with a genre word glued on the front. If a name
+  reads like a person's handle rather than a shop, check Tabelog's reviewer pages
+  before concluding anything.
+- **Dish and category words.** 「市場食堂」, 「ベジプレート 中野」, 「グルテンフリー・パスタ 中野」 —
+  a dish, a plate, a search phrase.
+- **Place and district labels.** 「甘酒横丁」, 「月島もんじゃ界隈」, 「新橋 おでん」, 「新橋 寿司」 —
+  an area plus a genre is not a business.
+- **Businesses in other prefectures**, whose Tabelog genre string matches the sweep's
+  descriptor verbatim: a Kagawa udon shop, a Saga bakery, a Tottori port market 570 km
+  away, a Bali beach restaurant.
+
+Start `enrich_note` with `GENERIC PHRASE:` for a dish or district label, and say which
+of these shapes you think it is. A record that never named a business is a different
+problem from a shop that could not be located, and only the first is safe to discard.
+
 ### A failed query is not a negative result
 
 Shards run in parallel and Yahoo Japan rate-limits: a shard-8 record was almost

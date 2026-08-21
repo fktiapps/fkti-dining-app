@@ -1,21 +1,21 @@
 [
  {
   "city": "kyoto",
-  "id": "mp_coffee_cattleya_coffee_k",
-  "name": "COFFEE Cattleya （コーヒーカトレヤ）【旧店名】祇園喫茶 カトレヤ (COFFEE Cattleya (Coffee Katoreya / Gion )",
+  "id": "mp_grill_yamamoto",
+  "name": "グリルやまもと (Grill Yamamoto)",
   "field": "gf_confidence",
   "from": "ask",
   "to": "no",
-  "why": "The record's own gf_detail already says \"Not celiac-safe ... A celiac should avoid food items here\", and the cited page shows the entire food menu is toast and cake with no allergen handling — an \"ask\" badge above that text invites a celiac to go and ask a shop that (a) has nothing for them and (b) is not currently open. Same label-contradicts-its-own-detail shape the brief flags. Lower confidence than the trading finding: if \"ask\" is this app's floor for kissaten, ignore."
+  "why": "The record's own gf_detail says \"should not be considered safe for celiac diners\", the cited article puts 麩 (wheat gluten) in the miso soup that comes with the plate, and the kitchen is one elderly cook running one fryer for croquettes, shrimp fry and cutlets. There is nothing here to ask FOR. Same consistency point as Grill Fukuya; low confidence if \"ask\" is the app's floor for unlabelled yoshoku."
  },
  {
-  "city": "kyoto",
-  "id": "mp_grill_fukuya_coffee_gril",
-  "name": "グリル富久屋 (Grill Fukuya)",
-  "field": "gf_confidence",
+  "city": "tokyo",
+  "id": "tokyo_shanti_soup_curry_shibuy",
+  "name": "シャンティ スープカリー（渋谷店） (Shanti Soup Curry (Shibuya))",
+  "field": "vegan_status",
   "from": "ask",
   "to": "no",
-  "why": "The record's own gf_detail reads \"Not celiac-safe ... Assume not suitable for strict gluten avoidance\", and the 65-item menu is cutlets, croquettes, fried prawn, sandwiches, hayashi, curry, spaghetti and omelette rice with no allergen data and no GF item. That is the same profile the app already scores \"no\" for 辛麺屋 鯱輪 in this shard. Consistency call, not a safety change."
+  "why": "The chain states on its own page that the house soup is built by adding pork back fat — 「薬膳効果の高いヘルシーなスープに、背脂を加えて、こってりさとコクをだし」 — and every one of the eleven Original-soup items and every Saigon-soup item on the menu is chicken, pork, beef, egg, dumpling or seafood; the one 'vegetable' option (ベジタブルスープカレー) is served in that same pork-fat base, and the shop's own serving tip is to pour nam pla on the rice. No plant-based broth, dashi-free option or vegan labelling exists on any page of the site. 'Vegan — ask' invites a vegan to make a phone call that the published evidence has already answered."
  },
  {
   "city": "tokyo",

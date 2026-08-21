@@ -180,5 +180,110 @@
   "http": "200 via s.tabelog.com with an iPhone UA",
   "method": "1 mobile-host Tabelog fetch + 1 plain fetch of the group site",
   "note": "TRADING — confirmed (公式 listing, live hours). gf_confidence 'no' and vegan_status 'no' are both CORRECT — wheat Sanuki noodles, iriko dashi, self-serve shared tempura counter — no tier change. Two clean-ups: the record's single claim was uncited and now has a branch-level URL, and the hours hedge can be dropped — Tabelog's official entry matches the record's 10:00-15:00 / 不定休 exactly, so the parenthetical 'older sources cite 10:00-23:30 as historical hours, possibly outdated' resolves to: yes, outdated. flags.cash_only=true is independently confirmed by a reviewer."
+ },
+ {
+  "id": "tokyo_soul_food_india_suido_ba",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "No specific gluten cross-contamination statement was found; naan and other wheat items are prepared in the same kitchen and tandoor as curries.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「炭火の窯で焼くナンやタンドーリチキン ─ 当店でお出しするナンはすべてインドの土釜で炭火焼きをしているため、香ばしい香りが立ちます。…タンドーリチキンは炭火で焼くことで。スパイシーな香りが立ち」",
+  "correct_url": "https://soulfoodindia.com/concept.html",
+  "http": "200",
+  "method": "route 4 (claim was uncited) — plain fetch of all 10 pages of the branch site plus a keyword grep",
+  "note": "UNCITED, and now directly evidenceable in the shop's own words — better than the record's hedge. The こだわり page states that ALL naan is baked in the single Indian clay tandoor, and that the tandoori chicken is charcoal-grilled in it too, so wheat dough and meat share one oven. Absence half also holds: アレルギ / アレルゲン / 小麦 / グルテン appear ZERO times across the whole site (index, concept, lunch, dinner, limited, course, drink, takeout, shopinfo, staff). Add one hazard the record misses: the dinner menu carries 「インドの焼きそば チョーミン」 (chow mein — wheat noodles) and 「きのこのバター醤油風味」 (butter-soy-sauce mushrooms), so wheat reaches the wok side of the kitchen as well as the tandoor."
+ },
+ {
+  "id": "tokyo_soul_food_india_suido_ba",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "No specific vegan cross-contact statement found; curries and naan may be finished with ghee, butter, or yogurt-based dough unless requested otherwise.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「特におススメはバターチキンカリーで、バターたっぷりの辛くない甘いカリーなので、どんな方にも人気のメニューです」 (concept.html) and the dinner list: 「+プラス￥400でナン→とろ～りチーズナン」「インドの新味覚ヨーグルトサラダ「ライタ」」「きのこのバター醤油風味」",
+  "correct_url": "https://soulfoodindia.com/concept.html",
+  "http": "200",
+  "method": "route 4 (claim was uncited) — plain fetch of the branch's concept and dinner pages",
+  "note": "UNCITED but supportable. Correction to the wording: ギー appears nowhere on the site — what IS documented is butter (バターたっぷり in the house-recommended butter chicken), cheese naan as a paid upgrade on every set, yogurt (ライタ), and butter-soy mushrooms. Say 'butter, cheese and yogurt are used liberally across the menu and no dairy-free preparation is advertised' rather than guessing at ghee. Every naan also comes out of the same tandoor as the tandoori chicken (see the gf row), which is a vegan cross-contact fact in its own right."
+ },
+ {
+  "id": "tokyo_soul_food_india_suido_ba",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "A vegetable curry (ベジタブルカレー, mild) is offered as a standing option on both the lunch and dinner menus, served with naan or rice.",
+  "url": "https://soulfoodindia.com/lunch.html",
+  "verdict": "supported",
+  "found": "「Aセット サラダ・ドリンク付き チキンカリー/ベジタブルカリー/キーマカリー/バターチキンカリー/サグチキン/日替わりカリー からお好きな1種 … ナンおかわり無料！ライス大盛無料！￥1100」",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 plain fetch of the cited page + 1 of dinner.html",
+  "note": "Supported on the cited page for the lunch half, and the dinner half checks out too — 「ベジタブルカリー ￥1200」 is a standing single-item line on https://soulfoodindia.com/dinner.html, which should be added as a second citation. Two wording fixes: the shop spells it ベジタブルカリー (not カレー), and 'mild' is not stated anywhere on the site — the only curry the shop calls 辛くない is the butter chicken. Drop 'mild' or verify it with staff."
+ },
+ {
+  "id": "tokyo_soul_food_india_suido_ba",
+  "city": "tokyo",
+  "field": "record_verdict",
+  "quote": "record-level assessment: gf_confidence=ask, vegan_status=ask, trading",
+  "url": "https://soulfoodindia.com/",
+  "verdict": "repairable",
+  "found": "Branch-specific site (title: 「水道橋駅周辺のインドカリー屋「ソウルフードインディア水道橋店」」), footer 「2024 - ソウルフードインディア」, live lunch/dinner/limited/course/takeout menus, staff page, Facebook @soulfoodindia.suidobashi and an Ameblo blog linked.",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetches of all 10 pages of the official branch site",
+  "note": "TRADING — confirmed (branch-specific live site with current menus; nothing suggests closure). gf_confidence 'ask' and vegan_status 'ask' are both CORRECT — a rice-plus-vegetable-curry meal is plausible but the shop publishes no allergen or dairy-free information at all, so neither can move up. Repairs: both the gf and vegan claims were uncited and both now have the shop's own concept.html as evidence; 'ghee' should be replaced with the butter/cheese/yogurt that the site actually documents; 'mild' should be dropped from the positives claim; and dinner.html should be added as a second citation there."
+ },
+ {
+  "id": "tokyo_shanti_soup_curry_shibuy",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "No confirmation found on whether soy sauce or other seasonings used are wheat-free; standard Japanese shoyu (which contains wheat) is likely used unless confirmed otherwise by staff.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「当店スタッフがスープカレーのおいしい食べ方について、まじめに考えてみました。ナンプラー（味に深みがでる）やレモン（さっぱり）をライスにかけても美味しいです！」",
+  "correct_url": "http://www.shanticurry.com/soup_curry.html",
+  "http": "200",
+  "method": "route 4 (claim was uncited) — plain fetch of the chain's four content pages plus a keyword grep",
+  "note": "UNCITED, AND POINTED AT THE WRONG SEASONING. 醤油 appears ZERO times anywhere on shanticurry.com, so the shoyu warning is invented for this venue. The seasoning the shop actually puts on the table and recommends by name is NAM PLA (ナンプラー, fish sauce) — which is a hidden NON-VEGAN hazard the vegan_detail does not mention, and a seasoning whose Japanese-market versions must be read for wheat. Rewrite the claim around nam pla and cite this page; keep a generic 'no allergen information is published' line for shoyu rather than asserting it is used."
+ },
+ {
+  "id": "tokyo_shanti_soup_curry_shibuy",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Vegetable-forward curry options (e.g. taro, paprika, and other vegetables) exist alongside the signature chicken soup curry, and at least one review characterized the restaurant as offering 'a good choice for vegetarians and meat eaters.'",
+  "url": "https://www.tripadvisor.com/Restaurant_Review-g1066456-d1892437-Reviews-Shanti_Shibuya-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html",
+  "verdict": "unsupported",
+  "found": "The cited URL 301s to https://www.tripadvisor.com/Restaurants-g1066456-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html — 「THE 10 BEST Restaurants in Shibuya (Updated August 2026)」, a city list with no Shanti entry. archive.org/wayback/available returns NO snapshots for the review URL at any timestamp. The vegetable half is real, on the shop's own page: 「ベジタブルスープカレー 1300円 里芋やパプリカなど色とりどりの野菜をふんだんに使ったヘルシーメニューです。」",
+  "correct_url": null,
+  "http": "403 with a desktop UA (Cloudflare), 200 with an iPhone UA — then a 301 to the city list",
+  "method": "routes 1 and 3 — desktop then iPhone UA on TripAdvisor, plus the Wayback availability API, plus a plain fetch of shanticurry.com/food.html",
+  "note": "THE CITATION IS DEAD AND THE QUOTE IS UNVERIFIABLE. The TripAdvisor POI d1892437 no longer exists; the URL now lands on a Shibuya city list, which cannot evidence anything venue-specific, and Wayback has never archived it, so 'a good choice for vegetarians and meat eaters' cannot be shown to have existed. Worse, it is CONTRADICTED by the shop's own copy: 「20種類以上のスパイスを調合し、薬膳効果の高いヘルシーなスープに、背脂を加えて、こってりさとコクをだし」 — the base soup carries PORK BACK FAT, so even the ベジタブルスープカレー is not vegetarian. Delete the review quote; keep the taro/paprika half and cite http://www.shanticurry.com/food.html instead."
+ },
+ {
+  "id": "tokyo_shanti_soup_curry_shibuy",
+  "city": "tokyo",
+  "field": "record_verdict",
+  "quote": "record-level assessment: gf_confidence=ask, vegan_status=ask, trading (relocated to B1 at the same address)",
+  "url": "https://tabelog.com/tokyo/A1303/A130301/13293343/",
+  "verdict": "defective",
+  "found": "Tabelog: シャンティ　スープカリー, 総合得点 3.17, 口コミ 88, 保存 1345, hours 11:00-23:30 daily, address 「東京都渋谷区道玄坂2-7-4 渋谷第一ビル B1」. Reviewer: 「道玄坂に店舗があった頃は何度か訪問していた／今回は移転後初の訪問／京王井の頭線 渋谷駅西口を出てすぐ／地下1階にお店がある／QRコードで注文するシステムだが、地下で電波がほとんど届かない」. Shop page: 「SHANTi 渋谷店 〒150-0043 東京都渋谷区道玄坂2-7-4 終日 11:00～23:30（L.O 23:00） 金・土 11:30～7:00（L.O7:00） 定休日 : 年中無休」.",
+  "correct_url": null,
+  "http": "200 via s.tabelog.com with an iPhone UA",
+  "method": "1 mobile-host Tabelog fetch + plain fetches of four shanticurry.com pages + 1 TripAdvisor redirect trace",
+  "note": "TRADING — confirmed, but RELOCATED: the branch is now in the B1 of 渋谷第一ビル at the same 道玄坂2-7-4 block, straight out of the Keio Inokashira west exit, and ordering is by QR code with almost no phone signal underground. Update the address/floor and note the reception problem. gf_confidence 'ask' is correct. VEGAN_STATUS 'ask' IS OVER-RATED — see the tier_recommendation. Defective on citations: the positives claim's TripAdvisor source is a dead POI redirecting to a city list and its quote is unverifiable and contradicted by the shop's own 背脂 line. Two further hazards to add: 「MOMOと野菜のスープカレー … MOMOは…日本で言う水餃子です」 puts WHEAT DUMPLINGS in the soup, and ハンバーグ/角煮 sit on the same list; the chain also warns 「※各店舗によって取り扱いメニュー、値段が異なります」, so branch-level confirmation is required. Coordinates are ~175 m north-west of Tabelog's 35.658594, 139.698619."
+ },
+ {
+  "id": "tokyo_shanti_soup_curry_shibuy",
+  "kind": "tier_recommendation",
+  "city": "tokyo",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "http://www.shanticurry.com/soup_curry.html",
+   "http://www.shanticurry.com/food.html"
+  ],
+  "why": "The chain states on its own page that the house soup is built by adding pork back fat — 「薬膳効果の高いヘルシーなスープに、背脂を加えて、こってりさとコクをだし」 — and every one of the eleven Original-soup items and every Saigon-soup item on the menu is chicken, pork, beef, egg, dumpling or seafood; the one 'vegetable' option (ベジタブルスープカレー) is served in that same pork-fat base, and the shop's own serving tip is to pour nam pla on the rice. No plant-based broth, dashi-free option or vegan labelling exists on any page of the site. 'Vegan — ask' invites a vegan to make a phone call that the published evidence has already answered.",
+  "note": "Downgrade, not an upgrade. Recommendation only — routed to the REVIEW_PROTOCOL.md human gate like any other tier change."
  }
 ]

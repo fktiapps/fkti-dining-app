@@ -370,5 +370,172 @@
    "https://tabelog.com/kyoto/A2601/A260201/26004641/dtlmenu/"
   ],
   "why": "The record's own gf_detail reads \"Not celiac-safe ... Assume not suitable for strict gluten avoidance\", and the 65-item menu is cutlets, croquettes, fried prawn, sandwiches, hayashi, curry, spaghetti and omelette rice with no allergen data and no GF item. That is the same profile the app already scores \"no\" for 辛麺屋 鯱輪 in this shard. Consistency call, not a safety change."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a traditional Western-style (yoshoku) kitchen built around wheat-heavy dishes. Signature items include breaded, deep-fried cream croquettes (with a flour-based bechamel filling), shrimp fry, fried white fish, and chicken cutlet, all of which are coated in wheat flour and breadcrumbs and fried.",
+  "url": "https://kyotopi.jp/articles/LlImQ",
+  "verdict": "supported",
+  "found": "「ぷっくりと大きめのクリームコロッケ２つと大海老フライ」 / 「比較的薄目の衣に柔らかいベシャメルがぎっしり」 / 「他、ミックスフライ、パスタ、選べるランチタイムメニューなど」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Cream croquettes with a bechamel filling and shrimp fry are verbatim. 'Fried white fish' and 'chicken cutlet' are NOT on this page — 白身魚 appears in a Tabelog photo caption 「ハンバーグに白身魚！」 and チキンカツ in the k2hair post 「この日の日替わりランチは、チキンカツとハンバーグでした」; cite those if the items stay. MISSED WHEAT VECTOR on the very page cited: 「お味噌汁にはお麩とネギが浮かんでいます。赤だし仕立て。」 — 麩 is baked wheat gluten, floating in the soup that comes with every plate. Add it; it is the one thing here a celiac would not see coming."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The hamburger steak is served in a demi-glace cream sauce; demi-glace and roux-style yoshoku sauces are typically flour-thickened. Not suitable for celiac diners.",
+  "url": "https://k2hair.exblog.jp/29703473/",
+  "verdict": "wrong_source",
+  "found": "The cited k2hair post never mentions demi-glace — it says only 「この日の日替わりランチは、チキンカツとハンバーグでした」 and 「ソースもドレッシングも手作りで美味しかったです」. The demi-glace sentence is on the OTHER source the record already uses: 「ハンバーグも特徴的で、ソースがトマト寄りのデミグラスソースに生クリームを入れたマイルド仕立て。それが店のオリジナル感をかもしていました」 (kyotopi).",
+  "correct_url": "https://kyotopi.jp/articles/LlImQ",
+  "http": "200 (plain fetch) for both",
+  "method": "plain fetch of both cited pages and comparison",
+  "note": "The two sources are swapped. Repoint the demi-glace-cream claim to https://kyotopi.jp/articles/LlImQ ; keep k2hair for チキンカツ and for the two-person operation."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Fried items and breaded foods share the same fryer in a small one-cook kitchen, so cross-contamination of any non-fried item with wheat is very likely. No gluten-free accommodation is indicated.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「シェフは高齢の男性でした。配膳の女性の方と2人でランチタイムのみ営業されていました。」 (k2hair, 2023) and 「厨房に立つご主人は以前に比べ腰も曲がり…ただ、今は若い方がサービスをされていて」 (kyotopi) — one cook, one server, 20 seats.",
+  "correct_url": "https://k2hair.exblog.jp/29703473/",
+  "http": "200 (plain fetch)",
+  "method": "uncited claim → hunted across the two pages the record already cites",
+  "note": "UNCITED. The one-cook kitchen is documented twice over; the shared-fryer conclusion follows from it plus the fried menu, and no source anywhere states a dedicated fryer. Attach k2hair (or kyotopi) and the claim stands as written."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Sauces and dressings are homemade with no published ingredient lists; standard Japanese soy sauce (which usually contains wheat) is a common base in yoshoku sauces. Assume gluten is present unless confirmed otherwise with the owner.",
+  "url": "https://kyotopi.jp/articles/LlImQ",
+  "verdict": "supported",
+  "found": "「恐らく自家製と思われるマヨネーズのマイルドでクリーミーな酸味」 / 「旬の新玉ねぎたっぷりで、自家製ドレッシングも相まって」 / 「特製ソースとの味わいも美味」 — homemade sauces, dressing and mayonnaise, no ingredients given anywhere on the page.",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "The operative half — homemade sauces with no published ingredients — is on the page. Soy sauce itself is never mentioned there, and the claim already frames the shoyu point as an assumption. Worth noting the page's actual named wheat is 麩 in the 赤だし, not shoyu."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan or vegetarian options are indicated. The menu centers on meat, fish, fried foods, demi-glace/cream sauces, and homemade mayonnaise (egg). Dishes commonly come with sides like cream croquettes even on lighter plates, so dairy and egg are pervasive.",
+  "url": "https://kyotopi.jp/articles/LlImQ",
+  "verdict": "supported",
+  "found": "「ランチタイムメニュー1080円、エビフライとクリームコロッケをチョイス」 / 「ぷっくりと大きめのクリームコロッケ２つと大海老フライ、たっぷりのサラダとオーロラソースで和えたマカロニサラダ」 / 「デミグラスソースに生クリームを入れたマイルド仕立て」 / 「恐らく自家製と思われるマヨネーズ」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Every element is on the page, including the cream croquettes riding along on a lighter plate. The 赤だし miso soup would also carry dashi. Accurate as written."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "staff_allergy_handling",
+  "quote": "No information about allergy handling is documented. The shop is run by a single elderly chef with a small operation; diners with strict dietary needs should call ahead and confirm directly. Phone: 075-593-0054.",
+  "url": "https://tabelog.com/kyoto/A2601/A260603/26007562/",
+  "verdict": "supported",
+  "found": "Tabelog listing: 予約・お問い合わせ 075-593-0054 ・ 席数 20席（カウンター5席 テーブル4席2卓と6席１卓） ・ 営業時間 11:30-14:00, 水 定休日, 第一三日曜日休み — and no allergy or allergen field anywhere on it.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "mobile-host fetch",
+  "note": "Phone and small-operation facts check out on the cited page, and the allergy-silence is genuine. 'Single elderly chef' is not a Tabelog fact — it comes from kyotopi and k2hair; add one of those if that phrase stays."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Cooking is done from scratch in-house, with handmade sauces, dressings, and mayonnaise, so the owner can speak directly to what goes into each dish if you ask.",
+  "url": "https://kyotopi.jp/articles/LlImQ",
+  "verdict": "supported",
+  "found": "「恐らく自家製と思われるマヨネーズ」 / 「自家製ドレッシングも相まって」 / 「特製ソース」 — corroborated by k2hair: 「ソースもドレッシングも手作りで美味しかったです」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Handmade sauces, dressing and mayonnaise are on the page. The 'owner can tell you what's in it' part is inference, but a fair one for a one-cook kitchen — and it is phrased as an if-you-ask, not a guarantee."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "One swapped citation (demi-glace attributed to k2hair, which never mentions it) and one uncited claim, both fixable from pages the record already holds. Nothing false. Shop trading: Tabelog 11:30-14:00, closed Wed + one Sunday a month."
+ },
+ {
+  "id": "mp_grill_yamamoto",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://kyotopi.jp/articles/LlImQ",
+   "https://tabelog.com/kyoto/A2601/A260603/26007562/"
+  ],
+  "why": "The record's own gf_detail says \"should not be considered safe for celiac diners\", the cited article puts 麩 (wheat gluten) in the miso soup that comes with the plate, and the kitchen is one elderly cook running one fryer for croquettes, shrimp fry and cutlets. There is nothing here to ask FOR. Same consistency point as Grill Fukuya; low confidence if \"ask\" is the app's floor for unlabelled yoshoku."
+ },
+ {
+  "id": "mp_kaminari_enmachi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a charcoal yakitori grill. Tare-glazed skewers are brushed with a sweet soy-based sauce that contains wheat, and salt (shio) skewers, while sauce-free, are cooked on the same shared grill as the tare skewers. Cross-contact from shared grill surfaces and basting is likely. Not celiac-safe.",
+  "url": "https://kyotopi.jp/articles/lQGhI",
+  "verdict": "supported",
+  "found": "「こちらでは備長炭を使用した炭火焼で伯方の塩を使用とのこと」 and, in the same sitting, 「まずはタレ漬けのねぎま、せせりは塩で」 / 「コロンとした形が愛らしいタレつくね」 / 「背ぎも。わりとタレたっぷり漬けて香ばしく焼かれている」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Binchotan charcoal, tare skewers and shio skewers off the same grill — all verbatim on the cited page. Accurate as written, and correctly branch-matched (this is the 円町 article, not the honten's)."
+ },
+ {
+  "id": "mp_kaminari_enmachi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tare (basting glaze) on yakitori is a soy-sauce-based sauce, and standard Japanese soy sauce contains wheat. Tare-glazed skewers should be treated as containing wheat. No wheat-free soy sauce is documented here.",
+  "url": "https://kyotopi.jp/articles/lQGhI",
+  "verdict": "supported",
+  "found": "「タレはわりとこってりとしたタイプの味わいでお酒が進みます」 / 「タレ漬けのねぎま」 / 「タレつくね」 — and no tamari, wheat-free shoyu or allergen note anywhere on the page.",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "The tare and the absence of any wheat-free alternative are both genuinely on the page. What the tare is made of is not stated there, and the claim already presents that as the standard assumption."
+ },
+ {
+  "id": "mp_kaminari_enmachi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "This is a chicken yakitori specialist with no documented vegan offerings; the menu centers on chicken skewers, and even vegetable items are cooked on a grill shared with meat. Not suitable for vegans.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「もちろん焼鳥中心。単品メニュー、ご飯ものもありますが、やはり串もの中心」 / 「焼じゃが … しっとりほくほくじゃがいもの切れ目に差し込まれたバターが溶けていく感じ」 / 「ささみのチーズ焼き」 / 「ご飯ものには特製の雷丼。ご飯の上にねぎま、九条ネギ、海苔がトッピングされ、こってりの焼鳥タレを追いがけ」",
+  "correct_url": "https://kyotopi.jp/articles/lQGhI",
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "uncited claim → hunted; support is on the page the record already cites three times",
+  "note": "UNCITED, and the page makes the point harder than the record does: the shop's one vegetable dish, 焼じゃが, has BUTTER melted into it, so it is non-vegan before the shared-grill argument is even reached. Attach https://kyotopi.jp/articles/lQGhI and mention the butter."
+ },
+ {
+  "id": "mp_kaminari_enmachi",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Salt-grilled (shio) skewers are seasoned only with Hakata salt rather than the wheat-containing tare, so the seasoning itself is wheat-free - but they share the grill with tare skewers, so this does not make them celiac-safe. Confirm directly with staff.",
+  "url": "https://kyotopi.jp/articles/lQGhI",
+  "verdict": "supported",
+  "found": "「こちらでは備長炭を使用した炭火焼で伯方の塩を使用とのこと」 and 「せせり、程よい塩加減で炭火焼きの香ばしさがダイレクトに味に加わります」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "伯方の塩 is named on the page. Small correction: 伯方 is Hakata Island in the Seto Inland Sea (Ehime), a different Hakata from Fukuoka's — 'Hakata salt' reads as the Fukuoka one to an English reader. Otherwise exact, and the refusal to promote shio skewers to safe is the right call."
+ },
+ {
+  "id": "mp_kaminari_enmachi",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "Three of four claims are supported verbatim by the correctly branch-matched article; the fourth is uncited and its evidence is on that same page. The strongest record in this shard."
  }
 ]
