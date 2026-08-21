@@ -1,0 +1,118 @@
+[
+ {
+  "id": "kyr_abura_soba_yumin",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowls are abura soba dressed in an oil-and-tare sauce of the standard type, which is based on wheat-containing soy sauce; no wheat-free tare is offered.",
+  "url": "https://osumituki.com/kyoto-ramen/223472.html",
+  "verdict": "wrong_source",
+  "found": "Cited page never characterises the tare. It says only 「タレは旨味をよく感じて、少しクリーミーな甘みもあります…通常の油そばと同じタレを使っているそうです」 and 「麺は通常の油そばだと自家製麺だそうです。今回食べた『背脂ヤサイあぶらそば』は発注したもので…ワシワシとした二郎らしい麺」. Whole-page string search: 醤油 1 hit and it is a SIDEBAR LINK to a different shop's article (「京都定番豚醤油ラーメン店 – 北区 – 京都ラーメン 豚やどっ」); しょうゆ 0, 小麦 0, グルテン 0, アレル 0. The claim IS evidenced on the record's own website field: the Tabelog listing's review-derived keyword block reads 「油そば／醤油ダレ／太麺／ラー油／…／小麦／…／国産小麦」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260302/26043824/",
+  "http": "200 (plain curl, 799 KB) on osumituki.com/kyoto-ramen/223472.html; 200 (iPhone UA, 525 KB) on tabelog.com/.../26043824/",
+  "method": "1 plain fetch of the cited blog post (worked first try, no UA switch or proxy needed), then an iPhone-UA fetch of the record's own Tabelog listing. Note for the next agent: at this run the DESKTOP tabelog.com host answered fine with an iPhone UA on listing pages; s.tabelog.com was not needed.",
+  "note": "Repoint to the Tabelog listing, which carries 醤油ダレ and 小麦/国産小麦 in its keyword block. The osumituki article is a good source for the shop's existence, opening date, menu and hours, but it says nothing about soy sauce or wheat — as written the record cites a page that cannot evidence its own seasoning claim. Two things the cited page DOES support and the record uses correctly: the split noodle sourcing (自家製麺 for the standard bowls, a bought-in Jiro-style noodle for the 背脂ヤサイ bowl) and the hours."
+ },
+ {
+  "id": "kyr_abura_soba_yumin",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Bowls are built on pork fat (背脂), fatty pork, eggs and mayo-based toppings shared across the kitchen; there is no plant-based bowl and no separation from animal ingredients.",
+  "url": "https://osumituki.com/kyoto-ramen/223472.html",
+  "verdict": "supported",
+  "found": "「見た目は白色のラーメンどんぶりに『チャーシュー1枚・もやし・キャベツ・大きな海苔1枚・メンマ・ニンニク・ナルト』がトッピングされていて…」, 「ニンニクと背脂を加えることで二郎っぽい味わいになっている」 (背脂 appears 18 times), and the complete menu: 「あぶらそば（750円）／辛味あぶらそば（850円）／背脂ヤサイあぶらそば（850円）／ライス 並・大」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 799 KB)",
+  "method": "1 plain fetch",
+  "note": "Conclusion holds — the entire menu is three bowls plus rice, every bowl carries チャーシュー, and there is no plant-based option. But two of the four named ingredients are not on this page: 卵/玉子 0 hits and マヨ 0 hits. Egg IS real (the Tabelog keyword block carries 卵黄); mayo is not corroborated anywhere I looked and should be deleted. Conversely the page names an animal item the record misses — ナルト, a fish-paste garnish standard on the 背脂ヤサイ bowl. Also 'shared across the kitchen' and 'no separation' are the record's inference, not anything the page states."
+ },
+ {
+  "id": "kyr_aburasoba_daikakumei_kin",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The dish is built on a soy-sauce-based tare mixed through wheat noodles; standard Japanese soy sauce tare contains wheat, making the sauce as well as the noodles unsuitable for gluten avoidance.",
+  "url": "https://news.yahoo.co.jp/expert/articles/140c446660382da91687cf6a70ad2f9fd7dcda82",
+  "verdict": "unsupported",
+  "found": "The cited article is genuinely about this shop (「今回お伺いしたのは、京都市北区にある［油そば 大革命 金閣寺店］さん」, address 京都市北区衣笠天神森町6-1) but contains no seasoning claim at all. Whole-page string search: タレ 0, たれ 0, 小麦 0, グルテン 0, アレル 0; 醤油 1 hit and it is a RELATED-ARTICLE HEADLINE for a different shop (「創業49年の店で漆黒の醤油スープと丼を覆うチャーシューを確かめた！！」). Its only ingredient text is 【麺】プリプリとした食感の、ややウェーブがかった麺 and 【チャーシュー】しっとりと柔らかいチャーシューがたっぷり. The nearest real evidence, the operator's own brand site, names miso and not soy: 「スープを使わず、タレや味噌で麺を和える独自のあえ麺」 (https://daikakumei.jp/). No allergen or 原材料 page exists on that site (アレル 0, 小麦 0, 原材料 0 across root, menu.html and stores.html).",
+  "correct_url": null,
+  "http": "200 (plain curl, 133 KB) and 200 (iPhone UA, 98 KB) on news.yahoo.co.jp — both routes worked; 200 (iPhone UA) on daikakumei.jp root, menu.html, stores.html",
+  "method": "1 plain fetch, then iPhone UA to confirm nothing was hidden behind the UA; then the operator's brand site, found via Ecosia (https://www.ecosia.org/search?q=) — the only engine that answered at this run. Brave 429, Yahoo Japan 429, Mojeek 403, DuckDuckGo lite returned HTTP 202 with an empty body, and the built-in web search budget was exhausted.",
+  "note": "No page anywhere names a soy tare for this shop. The record should either drop the soy-sauce assertion or rewrite it as an explicit cuisine-convention inference. Two further staleness problems on the same record: (a) the shop stopped selling 油そば in August 2025 and dropped the word from its name — it is now 「大革命 金閣寺店」, an あえ麺 shop (https://osumituki.com/closed/223251.html, 2025.08.30), so the record's name and its 'abura soba' framing are out of date; (b) see the trading object on this record — the operator's own store page currently marks this branch 休業中."
+ },
+ {
+  "id": "kyr_aburasoba_daikakumei_kin",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Bowls center on pork (chashu / pork belly) and meat-miso, with karaage on set menus; the kitchen is meat-forward and offers no plant-based bowl.",
+  "url": "https://news.yahoo.co.jp/expert/articles/140c446660382da91687cf6a70ad2f9fd7dcda82",
+  "verdict": "wrong_source",
+  "found": "The pork half is on the cited page — 「『肉盛り油そば』1000円 たっぷり載せられたバラ肉がポイント」 and 「しっとりと柔らかいチャーシューがたっぷり！！」. The meat-miso and karaage halves are NOT: 肉味噌/肉みそ 0 hits, 唐揚/から揚 0 hits, 定食/セット 0 hits on that page. What it does say is 「卓上にはラー油やお酢以外におろしにんにくや辛味噌なども用意されており」 — 辛味噌 is CHILI miso, a table condiment, not 肉味噌. Both missing halves are documented elsewhere: 「今回は『肉みそ あえ麺』を注文。辛い肉味噌が入っている『あえ麺』です…トッピングは『刻みチャーシュー・半熟玉子・白ネギ・刻み海苔・刻み玉ねぎ』がデフォルトになりました…唐揚げとライスは『お得セット（＋350円）』というセットメニュー」 (osumituki 223251), and the brand's own copy 「こだわりの肉味噌 厳選されたひき肉と特製の味噌をじっくりと炒め上げた自慢の肉味噌」 plus 「トッピング：チャーシュー、メンマ、ネギ、海苔、温泉卵」 and menu items 釜玉／肉玉／唐揚げ／ヤンニョム風唐揚げ／チャーマヨ丼／TKG (daikakumei.jp).",
+  "correct_url": "https://osumituki.com/closed/223251.html",
+  "http": "200 (plain curl) on the cited Yahoo article; 200 (iPhone UA, 790 KB) on osumituki.com/closed/223251.html; 200 (iPhone UA) on daikakumei.jp/menu.html",
+  "method": "1 plain fetch of the cited article, then Ecosia to locate the operator's site and the follow-up article; Ecosia answered the first query and 403'd on the second, so pace queries.",
+  "note": "The claim is true but the citation reads 辛味噌 as 肉味噌 — one of those is a chili paste on the table and the other is minced pork, and only the second is on this shop's menu. Repoint to osumituki 223251 (or daikakumei.jp), which name the 肉みそあえ麺, the half-boiled egg default topping, the 釜玉/TKG raw-egg bowls and the karaage set. Worth adding to the record: eggs are now a DEFAULT topping, not an add-on, and 釜玉 and TKG are egg-centred bowls — vegan 'no' is if anything understated."
+ },
+ {
+  "id": "kyr_aburasoba_daikakumei_kin",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "closed_temporarily",
+  "evidence": [
+   "https://daikakumei.jp/stores.html",
+   "https://tabelog.com/kyoto/A2601/A260501/26042989/",
+   "https://osumituki.com/closed/223251.html"
+  ],
+  "why": "The operator's own store list marks this branch, and only this branch of five, as shut: 「金閣寺店 休業中 / 住所 〒603-8375 京都府京都市北区衣笠天神森町６−１ / 営業時間 現在休業中 / 定休日 月曜日 / 電話番号 0753662301」 — the address matches the record exactly. Tabelog independently agrees: the listing carries 「このお店は店舗情報の確認が取れていないため掲載保留中です。」 Checked 2026-08-21. I am deliberately NOT calling this closed_permanently: the operator's word is 休業中 (suspended), not 閉店, no closing date is given, and the most recent Tabelog review is a 2026/04 visit titled 「リニューアルオープン」, so the branch was trading four months ago. A human should decide whether the app hides it; what is certain is that the record currently shows a shop the operator says is not open, under a name (「油そば 大革命 金閣寺店」) it stopped using in August 2025."
+ },
+ {
+  "id": "kyr_akete_mo_kurete_mo",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowls are built on a sweet soy-based tare over wheat noodles, so wheat is present in both the seasoning and the noodles.",
+  "url": "https://osumituki.com/kyoto-ramen/221708.html",
+  "verdict": "supported",
+  "found": "「スープを飲んでみると『豚がスープベース（出汁）。味付け（タレ）は甘い醤油で辛さ控えめ』の二郎系ラーメンらしい味わい。甘い醤油がガツンと味わえる癖になる味わいが二郎系の特徴です。」 and earlier 「スープは甘めの醤油味にシッカリとした豚骨の風味を感じる二郎系ラーメンそのものの味わい」. 醤油 appears 6 times on the page.",
+  "correct_url": null,
+  "http": "200 (plain curl, 791 KB)",
+  "method": "1 plain fetch — worked first try, no UA switch, proxy, Wayback or search engine needed.",
+  "note": "The tare half is on the page verbatim and is the strongest of the four osumituki citations in this shard. The noodle half is inference: the page says only 「麺はワシワシとした極太麺」 and 小麦 returns 0 hits. Wheat is safe to assume for a Jiro-style 極太麺, and it is corroborated on the shop's Tabelog listing (26043251) whose keyword block carries 小麦 alongside 豚骨 and ピリ辛味噌 — worth adding as a second source so the wheat element is checkable rather than assumed. Note the record's website field is an Instagram page (instagram.com/akekure_kyoto), which returns only the JS login shell to any fetch; Tabelog is the citable trading-status source here."
+ },
+ {
+  "id": "kyr_akete_mo_kurete_mo",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Pork-bone broth, large chashu, and pork back-fat are standard across the menu, with no meat-free preparation noted.",
+  "url": "https://osumituki.com/kyoto-ramen/221708.html",
+  "verdict": "supported",
+  "found": "「二郎系ラーメン（二郎インスパイア）を食べることができるお店で豚肉とモヤシが山盛りになっている豚ベースの甘いスープで食べるラーメンです」, 「豚がスープベース（出汁）」, 「シッカリとした豚骨の風味」, and the bowl as served: 「見た目は白色のラーメンどんぶりに『チャーシュー・もやし・背脂・にんにく』がトッピングされていて」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 791 KB)",
+  "method": "1 plain fetch",
+  "note": "All three named elements are on the page and vegan 'no' is correct — the shop sells one dish in two formats (汁あり/汁なし) and both carry chashu and back fat. One wording correction: 'large chashu' overstates the source, which says 「チャーシューは柔らかくて量もちょうど良いです」 (a just-right amount), and the record's vegan_detail escalates this further to 'large slabs of chashu'. Trading status OK — Tabelog 26043251 shows 月〜土・祝 11:00-14:00 / 18:00-22:00, 日曜定休, matching the record exactly, with a 2026/07 review and no 閉店 or 掲載保留 banner. Context the record could use: the shop is a 2025-04-01 rename of Yume Wo Katare Kyoto II under that group's own rule that a shop closes or renames after three years, so the name is expected to change again around 2028."
+ },
+ {
+  "id": "kyr_akichan_ramen",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The chuka soba is seasoned with a sharp soy-and-salt tare typical of the style; soy sauce in Japanese ramen is normally wheat-based, so the broth should be assumed to contain wheat.",
+  "url": "https://kyotopi.jp/articles/Ag7Gc",
+  "verdict": "supported",
+  "found": "「脂をしっかり使った熱々の清湯スープ。じっくり引き出した旨みに、脂由来のコクとほのかな甘みが重なり、キリッと効かせた醤油と塩味が全体を引き締めます。」 The noodle is named too: 「麺は『新宿だるま製麺所』の平打ち麺」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 76 KB)",
+  "method": "1 plain fetch — worked first try; kyotopi.jp needed no UA switch or proxy at this run.",
+  "note": "'Sharp soy-and-salt' is on the page almost word for word, and the record is honest that the wheat step is an assumption ('should be assumed'), which is the right way to write an inference. 小麦 and グルテン both return 0 hits, so nothing on this page or on the Tabelog listing documents the noodle's flour or any allergen handling — the assumption is sound for a 製麺所 ramen noodle but remains unverified, and the detail text should say so."
+ },
+ {
+  "id": "kyr_akichan_ramen",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is a pork-based clear consomme and bowls are topped with chashu pork belly, so all standard items contain animal products.",
+  "url": "https://kyotopi.jp/articles/Ag7Gc",
+  "verdict": "supported",
+  "found": "「今回いただいたのは『中華そば＋生卵』。脂がたっぷり浮いたスープに、器いっぱいの豚バラ肉、濃いめに味付けされたメンマ、そして白ネギがトッピング。生卵は別皿提供で、麺をつけても、上からのせても楽しめます。」 plus 「脂をしっかり使った熱々の清湯スープ」 and 「チャーシューは驚きのボリューム」. The menu is only two items: 「メニューは『中華そば』と『もり中華』の2種類」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 76 KB); 200 (iPhone UA, 521 KB) on tabelog.com/.../26043587/",
+  "method": "1 plain fetch of the cited article, plus an iPhone-UA fetch of the Tabelog listing to check the broth base and trading status.",
+  "note": "Conclusion holds — a two-item menu, both bowls topped with 豚バラ肉. Two corrections. (a) 'Pork-based' is not on the cited page: it says 清湯スープ without naming the stock animal. The pork base is corroborated only in the Tabelog keyword block (清湯／清湯スープ／豚骨／ラード), so cite that alongside. (b) The record omits the article's headline animal ingredient — 生卵, a raw egg served on the side with the standard bowl and the thing the reviewer builds the whole tasting note around. Trading status OK: Tabelog 26043587, 97 reviews, most recent visit 2026/07, no 閉店 or 掲載保留. Hours defect worth fixing: Tabelog gives 月・火・水・木 11:00-19:00 and 金・土・日・祝日 11:00-21:00, and the record's hours OBJECT matches that exactly, but its hours_raw prose says 'Sun-Thu 11:00-19:00; Fri, Sat and holidays 11:00-21:00' — the prose puts Sunday in the wrong group and disagrees with the machine-readable field beside it. Separately, the cited page's 「営業時間：11:00〜19:00 定休日：不定休」 is opening-week data from 2025-09-04 and is now superseded; the record's '年中無休(年末年始も営業)' comes from Tabelog and is right."
+ }
+]

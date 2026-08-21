@@ -154,6 +154,20 @@ const drive = await page.evaluate(async () => {
   render();
   await sleep(700);
 
+  // A shop advertising gluten-free on a wheat dish is the loudest thing this app has
+  // to say. Assert it actually renders.
+  await ensureCity(MANIFEST.cities.find(c => c.id === 'kanazawa'));
+  const falseClaim = state.cities.kanazawa.places.find(p => p.shop_claim_false);
+  if (falseClaim) {
+    _renderDetail(falseClaim);
+    await sleep(700);
+    out.shopFalseShop = falseClaim.name.slice(0, 24);
+    out.shopFalseShown = document.querySelectorAll('.shopfalse').length;
+  }
+  state.active = 'nagano';
+  render();
+  await sleep(600);
+
   const withRamen = state.cities.nagano.places.find(p => p.ramen);
   if (withRamen) {
     try {

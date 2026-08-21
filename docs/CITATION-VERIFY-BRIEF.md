@@ -108,9 +108,40 @@ Every one of these is a real defect from an earlier shard, not a hypothetical:
   identically to a regex. It needs your judgement, not a pattern.
 - **Mistranslation.** 植物性 means plant-based, NOT wheat-free. 丸大豆 describes the soy,
   not the wheat — 丸大豆醤油 is wheat-brewed and is NOT a gluten-free soy sauce.
-- **もち麦 / 押麦 / 麦茶 / 麦味噌** — all barley, all gluten, all easy to miss.
+- **もち麦 / 押麦 / 麦茶 / 麦味噌** — all barley, all gluten, all easy to miss. But 米味噌,
+  豆味噌, 加賀味噌 and 八丁味噌 are wheat-free and barley-free: three records have been
+  caught warning readers off those.
+- **RYE.** ライ麦 is NOT on Japan's statutory allergen list, so it never appears on an
+  アレルギー表 — a celiac scanning for 小麦 finds nothing and orders it. One Kyoto shop's
+  noodles are 「ドイツ産ライ麦を使った全粒粉麺」 while its record speculated about tare.
+- **白醤油 is majority WHEAT**, the opposite of tamari. "White, light, delicate" reasoning
+  picks the single worst bowl on the menu.
+- **五穀米 / 雑穀米 / 十六穀米** — multigrain blends routinely contain 押麦 or もち麦.
 - **Records wrong in BOTH directions**: warning against something harmless while
   omitting the operator's own admission of contamination.
+
+## When the SHOP's own claim is false, say so out loud
+
+The most dangerous thing this sweep has found is not a mistake in our record. It is a
+restaurant advertising 「グルテンフリー」 on a dish that contains wheat.
+
+Tirupati's own site puts a グルテンフリー badge on ベジタブルランチ and ベジタブルセット whose
+printed contents are 大きいナン, サモサ and 野菜の天ぷら. A coeliac who trusts the badge —
+which is exactly what a badge is for — eats three wheat items. Our record made it
+worse by saying only that "no gluten-free protocol is documented", which reads as an
+absence of information rather than the presence of a hazard.
+
+If you find this, emit it as its own object so it reaches the reader rather than just
+correcting our text:
+
+```json
+{ "id": "<record id>", "kind": "shop_claim_false",
+  "claim": "<what the shop advertises, verbatim and in its own language>",
+  "contradicted_by": "<what is actually in the dish, from the shop's own page>",
+  "evidence": ["<url>"], "why": "<one sentence>" }
+```
+
+A traveller needs to be told the badge is wrong. Being quiet about it protects nobody.
 
 ## Closure is not a tier
 

@@ -242,5 +242,81 @@
   "http": "200 (iPhone UA)",
   "method": "1 plain fetch of the cited root, then the site's own /oden.html",
   "note": "Claim is TRUE; repoint to /oden.html, which names 鰹節 and 煮干し explicitly. Worth adding for readers: the plant items on that list (大根・じゃがいも・こんにゃく・糸こん・ふき・たけのこ・ぜんまい・ごぼう・焼き豆腐・厚揚げ) all sit in that same fish stock, so none is vegan. vegan_status 'no' is correct."
+ },
+ {
+  "id": "kz_kitchen_yuki_musashi_ten",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Japanese curry roux is thickened with wheat flour and the signature cutlets are coated in wheat breadcrumbs and deep-fried, so the core menu is inherently wheat-based.",
+  "url": "https://kitchen-yuki.co.jp/",
+  "verdict": "unsupported",
+  "found": "The cited page is the company's corporate/mail-order site for a DIFFERENT shop: the address block reads 「石川県白山市幸明町331-1 TEL.076-275-5946」 and its お店紹介 section contains exactly one entry, 「白山市（旧松任市）本店」. The 武蔵/エムザ branch is not listed anywhere on the site (confirmed by enumerating every post via /index.php?rest_route=/wp/v2/posts — 10 posts, no branch page). The page mentions 「カレー・ベーキライス・スパゲティ」 and 「金沢ブラックカレー」 but never wheat flour, roux, cutlets or breadcrumbs.",
+  "correct_url": null,
+  "http": "200 (iPhone UA) for the root and all seven ?cat= pages and the WP REST posts endpoint",
+  "method": "1 plain fetch of the cited URL, then the site's WordPress REST API (/index.php?rest_route=/wp/v2/posts) to enumerate every page; then Yahoo Japan for the branch",
+  "note": "Sibling/HQ-citation defect: a Kanazawa branch record evidenced entirely from the Hakusan head office's site. Katsu curry at THIS branch is attested by a Retty review 「エムザ店はカレーとハヤシライスにメニューを絞ったお店です。金沢カレーの定番カツカレーをいただきました」 — but see the trading finding: the branch is closed, so the right fix is to hide the record, not re-cite it."
+ },
+ {
+  "id": "kz_kitchen_yuki_musashi_ten",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The curry sauce and menu are meat-based (pork and chicken cutlets, hayashi rice), with no documented vegetarian or vegan preparation.",
+  "url": "https://kitchen-yuki.co.jp/",
+  "verdict": "unsupported",
+  "found": "The cited root names 「ウインナーイタリアンスパ」 and a retail product 「キッチンユキ 老舗洋食屋さんの金沢ミートソース」 — meat, but not the claim's cutlets or hayashi, and not for this branch. Nothing on the site describes the curry sauce's base. The nearest real support is a Retty review of the エムザ branch: 「白山市の本店はメニューが豊富なレストランですが、エムザ店はカレーとハヤシライスにメニューを絞ったお店です。金沢カレーの定番カツカレーをいただきましたが、ドロッ…」",
+  "correct_url": "https://retty.me/area/PRE17/ARE155/SUB15501/100001738137/",
+  "http": "200 (kitchen-yuki.co.jp, iPhone UA); 406 on a direct fetch of the Retty page — the text above is from the Yahoo Japan result snippet, which reproduces it verbatim",
+  "method": "1 plain fetch; then Yahoo Japan (Ecosia had started 403-ing by this point; Brave returned 429, Mojeek 403, DuckDuckGo lite 202-challenge)",
+  "note": "Same HQ-citation defect. Retty independently confirms the branch sold カツカレー and ハヤシライス, which is what the record asserts — but the branch has closed, so hide rather than re-cite."
+ },
+ {
+  "id": "kz_kitchen_yuki_musashi_ten",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "closed_permanently",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17014312/",
+   "https://kanazawa.keizai.biz/headline/4069/",
+   "https://gogocurry.com/blogs/news/2026-07-03"
+  ],
+  "why": "Closed 21 June 2026. Tabelog 17014312 is titled 「【閉店】キッチン ユキ - 北鉄金沢/洋食」 at 「石川県金沢市武蔵町15-1 金沢エムザ B1F」 and states 「このお店は現在閉店しております。」 Kanazawa Keizai Shimbun (2026-07-08) reports 「ゴーゴーカレー金沢エムザ店」が7月5日、百貨店「金沢エムザ」（金沢市武蔵町）地下1階にオープンした。6月21日に閉店したカレー店「金沢カレー キッチンユキ」の店舗を居抜きで活用する同店」 and gives the reason: 「事業計画の都合でエムザから退店するキッチンユキ」. Go Go Curry's own 2026-07-03 release says the same. The operator's site now lists only the 白山市（旧松任市）本店, which remains open — that is a separate venue at 石川県白山市幸明町331-1, not this record."
+ },
+ {
+  "id": "kz_koryori_to_oden_kankuro",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Oden and small-plate izakaya cooking in Japan standardly uses wheat-containing soy sauce and dashi; no gluten-free preparation is documented for this kitchen.",
+  "url": "https://www.weekend-kanazawa.com/entry/kankurou",
+  "verdict": "unsupported",
+  "found": "The cited article describes the food in detail but contains no 醤油, 小麦, グルテン or アレルギー string anywhere. Its only stock sentences are 「京鴨のガラをじっくり煮込んだ鴨出汁のおでん」 and 「鰹に昆布、干し椎茸から出汁をとった、どこかホッとする優しい味わいの王道おでん」.",
+  "correct_url": null,
+  "http": "200 (plain curl, desktop default UA)",
+  "method": "1 plain fetch of the cited URL; then Ecosia to find the same publisher's venue page",
+  "note": "The gf 'no' rating is right but the cited sentence is a category assumption. Far better evidence exists at the SAME publisher's venue feature (2025/5/14, https://colorfulcompany.jp/kanazawa/venues/12533 ), which prints the shop's own menu: 「京風おでん（約10種）165円～ 和をベースとした鰹出汁の王道おでん。車麩、焼ちくわ、鰯だんご、牛すじおでん等。」 plus 「〆の鴨葱そば 825円～」. 車麩 is pure wheat gluten sitting in the shared pot, and そば is near-universally wheat-cut — cite those instead."
+ },
+ {
+  "id": "kz_koryori_to_oden_kankuro",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are animal-based (duck-bone stock; bonito and dried-fish/shiitake dashi) and signature items center on fish, scallop, egg and meat, so vegan dishes and avoidance of animal cross-contact are not provided.",
+  "url": "https://www.weekend-kanazawa.com/entry/kankurou",
+  "verdict": "supported",
+  "found": "「フレンチ出身のシェフが手がける、京鴨のガラをじっくり煮込んだ鴨出汁のおでんです！」「鰹に昆布、干し椎茸から出汁をとった、どこかホッとする優しい味わいの王道おでん」「ホタテをぎゅっと凝縮したクリーミーな「帆立はんぺん」(200円)」「一番人気の「鰯だんご」(250円)」「「玉子〜洋風〜」(150円)」「「スモークサーモン炙り」(680円)」「ステーキやローストビーフなどおでん以外の料理も大充実！」",
+  "correct_url": null,
+  "http": "200 (plain curl, desktop default UA)",
+  "method": "1 plain fetch of the cited URL",
+  "note": "Supported. One wording fix: 「干し椎茸」 is dried SHIITAKE, a plant ingredient — the record's 'dried-fish/shiitake dashi' fuses two different things. The animal components here are the 鴨ガラ and the 鰹; the shiitake and 昆布 are not."
+ },
+ {
+  "id": "kz_koryori_to_oden_kankuro",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "closed_permanently",
+  "evidence": [
+   "https://www.instagram.com/kankurooden/",
+   "https://ra0u900.gorp.jp/",
+   "https://colorfulcompany.jp/kanazawa/venues/12533?isFeaturePage=1"
+  ],
+  "why": "The shop's own Instagram account @kankurooden (「燗九郎-小料理とおでん-」) now carries the bio 「9/28閉店。ありがとうございました」 — an own-account closing announcement in the past tense. The record's cited website https://ra0u900.gorp.jp/ returns a Gnavi 「404 Not Found ご指定のページが見つかりません。」 shell. Year: the same publisher's venue feature was still running a coupon for the shop on 2025年05月14日 (百万石音楽祭2025特別企画), and 28 Sep 2026 has not yet occurred, so the closing date is 28 September 2025. Flagging the year as inferred rather than read: the live Instagram profile requires a login and the bio text above came from the Ecosia index; Wayback has no usable snapshot of the profile. Tabelog 17012323 and hitosara 0031422048 both still show it as trading (latest Tabelog review 2024/09 訪問) — stale listings, not counter-evidence."
  }
 ]

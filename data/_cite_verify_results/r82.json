@@ -204,5 +204,57 @@
    "https://ohmicho-ichiba.com/gourmet/shop73701/"
   ],
   "why": "'Limited vegan' implies something on this menu can be eaten. The operator documents a single house stock — 「鶏、魚、昆布、野菜など…煮込んだ天然素材由来のクリアなスープです」 — and every bowl listed (中華そば, 野菜ラーメン, チャーシュー麺, 加賀酒粕ラーメン, 治部煮ラーメン) is served in it; 野菜ラーメン is a vegetable topping on chicken-and-fish soup, not a vegan bowl. There is no plant-only item anywhere on the page, so 'no' is the accurate label and 'limited' invites a vegan to order the 野菜ラーメン believing it is for them."
+ },
+ {
+  "id": "kz_ryotei_otomoro",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Traditional Kaga kaiseki here relies on soy sauce and dashi-based seasoning; standard Japanese soy sauce contains wheat, and the signature jibu-ni is traditionally thickened with wheat flour.",
+  "url": "https://ootomorou.co.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited root never uses the words 醤油, 出汁 or 小麦 — the whole site is silent on all three. Support is elsewhere: /ryotei states 「加賀料理『鯛の唐蒸し』『治部煮』など金沢の郷土料理をご堪能いただけます。…※加賀料理の場合コースに必ず治部煮と鯛の唐蒸しが入ります。」, and Otonami's booking page for this very restaurant describes the dish as 「鴨肉に小麦粉をまぶし、金沢の特産品であるすだれ麩や加賀野菜と共に煮た料理」.",
+  "correct_url": "https://ootomorou.co.jp/ryotei",
+  "http": "200 on every ootomorou.co.jp page and on otonami.jp (plain desktop-UA curl); Ecosia answered the recipe search first try",
+  "method": "1 plain curl of the cited root + link-walk to /ryotei, /bento, /sozai, then Ecosia for the 治部煮 composition (Yomiuri, Nikkei and Otonami all agree)",
+  "note": "Claim is true but cited to a page that evidences none of it, and it UNDERSTATES the hazard twice. (1) The wheat is not just a thickener — 大友楼's jibu-ni contains すだれ麩, which is wheat gluten in solid form, the 車麩/生麩 category. (2) /ryotei says the Kaga course ALWAYS contains 治部煮, so this is not avoidable by ordering around it; only the alternative 日本料理 course escapes it. Repoint to /ryotei and add すだれ麩. The soy-sauce sentence itself remains uncited on any 大友楼 page."
+ },
+ {
+  "id": "kz_ryotei_otomoro",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Cooking is centered on fish/bonito dashi and seafood (sea bream, jibu-ni), so plant-only dishes are not part of the documented menu and shared stocks would be used throughout the kitchen.",
+  "url": "https://ootomorou.co.jp/",
+  "verdict": "wrong_source",
+  "found": "/ryotei carries the substance: 「※加賀料理の場合コースに必ず治部煮と鯛の唐蒸しが入ります。」 and the course structures 「八寸・吸物・造り・焼物・煮物・食事・水菓子」 (吸物 = dashi soup, 造り = sashimi). The cited root only offers 「豊かな加賀百万石の海や山からとれる鮮度の高い食材を活かしたお料理」.",
+  "correct_url": "https://ootomorou.co.jp/ryotei",
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain curl of the cited root + site link-walk",
+  "note": "Right conclusion, wrong page, and it misses the one line that actually justifies vegan: ask rather than vegan: no — /ryotei says 「※ご予算に合わせてのおまかせ料理もご用意可能です。お問い合わせください。」 and 「加賀百万石の土地が育んだ有機野菜をふんだんに使用した料理」. A bespoke course is offered on request (3 days ahead, 4 people up for the named plans). Note also that jibu-ni is duck/chicken, not seafood — the quote files it under 'seafood' beside sea bream. No bonito is named anywhere on the site; 吸物 is the inference. Keep gf: no — the site publishes no allergen information of any kind, and the bento range adds 天ぷら・エビフライ・ミルフィーユカツ."
+ },
+ {
+  "id": "kz_sabo_soshin",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Kakigori is served with the ice and syrup separate, so guests can control sweetness and see what they are adding.",
+  "url": "https://www.navitime.co.jp/poi?spot=02301-2500067",
+  "verdict": "wrong_source",
+  "found": "Kanazawa Biyori's kakigori guide (2024/7/23): 「夏の限定メニューとして、8種類の和風かき氷が登場。氷とシロップが別々になっているため、好みの甘さを調整しながら楽しめる。」 with 【かき氷トッピングメニュー】各100円: 「小倉小豆、白玉3個、アイスクリーム各種、練乳、クリーム、シロップ各種、おかわり氷」.",
+  "correct_url": "https://www.kanazawabiyori.com/special/shaved-ice-kanazawa",
+  "http": "navitime 200 (iPhone UA); s.tabelog.com 200 (iPhone UA); kanazawabiyori 200 (desktop UA); Ecosia 200 for the exact-phrase search",
+  "method": "1 plain curl of the cited NAVITIME page, 1 mobile-host Tabelog fetch, then Ecosia on the quoted string — Ecosia answered where the claim actually lives",
+  "note": "The NAVITIME page says nothing of the sort; its only kakigori mention is a 2020 user review of a coffee-plus-mini-kakigori set, and its blurb runs 「コーヒー専門店で…手作りのチーズケーキや抹茶ブランマンジェ、和風パフェなどのスイーツも好評」. Repoint to Kanazawa Biyori. WATCH-OUT for whoever edits this: the near-identical sentence 「別添えのシロップをかけて楽しむこちらのかき氷には、生麩もたくさん入っていて」 belongs to a DIFFERENT shop — 不室茶屋, the 加賀麩 不室屋 café — in a Tabelog matome that lists 素心 immediately above it (https://s.tabelog.com/smartphone/matome/20973/). Do not let that one migrate here: 生麩 is pure wheat gluten and 素心's kakigori has none."
+ },
+ {
+  "id": "kz_sabo_soshin",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.kanazawabiyori.com/special/shaved-ice-kanazawa",
+   "https://www.navitime.co.jp/poi?spot=02301-2500067",
+   "https://s.tabelog.com/ishikawa/A1701/A170101/17001035/"
+  ],
+  "why": "FALSE WARNING. gf_detail says the menu 'centers on wheat- and dairy-based items' and calls it 'Not suitable for celiacs', but nothing documented here centers on wheat. NAVITIME describes a 「コーヒー専門店」 pouring cup-by-cup hand drip, whose sweets are 「手作りのチーズケーキや抹茶ブランマンジェ、和風パフェ」 — blancmange is a starch/milk set dessert, not a wheat one — and Kanazawa Biyori documents eight 和風かき氷 served with 「氷とシロップが別々」 plus a topping list that is entirely wheat-free (小倉小豆、白玉3個、アイスクリーム各種、練乳、クリーム、シロップ各種). Tabelog files the shop under カフェ／かき氷. A celiac reading 'no' walks past a coffee-and-shaved-ice shop where most of the menu has no wheat in it. It is not higher than 'ask': no allergen labelling is published, no cross-contact statement exists, the 上生菓子 rotate, and the cheesecake almost certainly has a biscuit base."
  }
 ]

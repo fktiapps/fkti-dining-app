@@ -106,5 +106,110 @@
    "https://www.kabura.jp/products/detail/159"
   ],
   "why": "options — the record hedges that 「koji/fermented products often involve shared production with wheat-containing items」, but the operator publishes a per-item allergen label and it exonerates most of the cafe range: the 甘酒 is 「材料はお米と米糀のみ」 with a blank アレルギー表示, and eight of the nine gelato flavours declare 乳成分 (and sometimes 卵/大豆) with no 小麦 at all. Exactly one flavour, 花きんじょう, declares 小麦. That is a documented wheat-free choice rather than a blanket unknown. Not higher than options: the in-store cafe menu is not itemised and the 2020-era 甘酒ジェラート is no longer in the labelled retail range, so a celiac still has to name the flavour and ask."
+ },
+ {
+  "id": "kz_shiki_no_table",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Signature jibu-ni coats the meat in wheat flour, so wheat is integral to the kitchen’s core dish.",
+  "url": "https://shikinotable.gorp.jp/",
+  "verdict": "unreachable",
+  "found": null,
+  "correct_url": null,
+  "http": "404 Not Found (plain desktop-UA curl, iPhone UA identical): 「ご指定のページが見つかりません。指定されたURLは見つかりませんでした。」 — a 633-byte gorp.jp error page, not a site. Wayback CDX answered (last 200 capture 20260422235531) but web.archive.org PLAYBACK returned HTTP 503 \"Internet Archive services are temporarily offline\" on every attempt this run, so the archived copy could not be read.",
+  "method": "1 plain fetch of the cited URL, 2 iPhone UA, 3 Wayback (CDX ok, playback 503 all run), 4 Yahoo Japan + Ecosia searches which led to aokicooking.com and shikinotable.com",
+  "note": "Cited domain is dead. Moot in practice — see the trading object: this venue closed and became 酒彩AO on 2026-01-05. The operator’s surviving mail-order arm (shikinotable.com) does still sell 鴨じぶ / 鶏じぶ / じぶ煮丼 plus 麩まんじゅう and 大門そうめん, all wheat, so the claim is not in doubt — only its citation is."
+ },
+ {
+  "id": "kz_shiki_no_table",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Regional kaiseki dishes are built on soy-sauce and mirin based dashi, which in standard Japanese cooking contains wheat.",
+  "url": "https://shikinotable.gorp.jp/",
+  "verdict": "unreachable",
+  "found": null,
+  "correct_url": null,
+  "http": "404 Not Found (plain desktop-UA curl, iPhone UA identical): 「ご指定のページが見つかりません。指定されたURLは見つかりませんでした。」 — a 633-byte gorp.jp error page, not a site. Wayback CDX answered (last 200 capture 20260422235531) but web.archive.org PLAYBACK returned HTTP 503 \"Internet Archive services are temporarily offline\" on every attempt this run, so the archived copy could not be read.",
+  "method": "1 plain fetch of the cited URL, 2 iPhone UA, 3 Wayback (CDX ok, playback 503 all run), 4 Yahoo Japan + Ecosia searches which led to aokicooking.com and shikinotable.com",
+  "note": "Cited domain is dead; no replacement sought because the record should be hidden as closed."
+ },
+ {
+  "id": "kz_shiki_no_table",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes rely on duck/chicken and Sea of Japan fish with seafood/bonito dashi; no vegan preparation is documented.",
+  "url": "https://shikinotable.gorp.jp/",
+  "verdict": "unreachable",
+  "found": null,
+  "correct_url": null,
+  "http": "404 Not Found (plain desktop-UA curl, iPhone UA identical): 「ご指定のページが見つかりません。指定されたURLは見つかりませんでした。」 — a 633-byte gorp.jp error page, not a site. Wayback CDX answered (last 200 capture 20260422235531) but web.archive.org PLAYBACK returned HTTP 503 \"Internet Archive services are temporarily offline\" on every attempt this run, so the archived copy could not be read.",
+  "method": "1 plain fetch of the cited URL, 2 iPhone UA, 3 Wayback (CDX ok, playback 503 all run), 4 Yahoo Japan + Ecosia searches which led to aokicooking.com and shikinotable.com",
+  "note": "Cited domain is dead. Corroborated only indirectly by shikinotable.com’s duck/chicken jibu and 能登・天然ぶり燻製 range."
+ },
+ {
+  "id": "kz_shiki_no_table",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Run by a veteran cuisine researcher and cooking-school principal, so the kitchen is knowledgeable about ingredients; reservations are recommended and allow diners to discuss needs in advance.",
+  "url": "https://shikinotable.gorp.jp/",
+  "verdict": "unreachable",
+  "found": null,
+  "correct_url": null,
+  "http": "404 Not Found (plain desktop-UA curl, iPhone UA identical): 「ご指定のページが見つかりません。指定されたURLは見つかりませんでした。」 — a 633-byte gorp.jp error page, not a site. Wayback CDX answered (last 200 capture 20260422235531) but web.archive.org PLAYBACK returned HTTP 503 \"Internet Archive services are temporarily offline\" on every attempt this run, so the archived copy could not be read.",
+  "method": "1 plain fetch of the cited URL, 2 iPhone UA, 3 Wayback (CDX ok, playback 503 all run), 4 Yahoo Japan + Ecosia searches which led to aokicooking.com and shikinotable.com",
+  "note": "Cited domain is dead. The 食文化研究家 青木悦子 attribution is confirmed at aokicooking.com and shikinotable.com, but the restaurant she ran is gone, so the reassurance no longer describes anything a diner can visit."
+ },
+ {
+  "id": "kz_shiki_no_table",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "closed_permanently",
+  "evidence": [
+   "https://aokicooking.com/news/archives/5",
+   "https://aokicooking.com/",
+   "https://shikinotable.com/",
+   "https://tabelog.com/ishikawa/A1701/A170101/17015680/",
+   "https://tabelog.com/ishikawa/A1701/A170101/17000716/",
+   "https://shikinotable.gorp.jp/"
+  ],
+  "why": "Closed and replaced, with the operator saying so. 四季のテーブル occupied 石川県金沢市長町1-1-17 青木クッキングスクール1F. Its parent, 青木クッキングスクール, published 「【酒彩 AO 新規OPENのお知らせ】2026年1月5日「酒彩 AO」新規OPENいたしました。」 (posted 2026/03/25) and its site nav now reads 酒彩AO where the restaurant used to be; the name 四季のテーブル survives there only as 「四季のテーブルショッピング」, a mail-order shop. Tabelog 17015680 is 酒彩AO at the same 長町1-1-17 with オープン日 2026年1月5日. The old Tabelog entry 17000716 now carries the alert 「このお店は店舗情報の確認が取れていないため掲載保留中です。」, Yahoo!マップ labels 四季のテーブル 閉業, and the record’s own website shikinotable.gorp.jp returns 404 (Wayback CDX shows it was still 200 on 2026-04-22). Best date: the restaurant had ceased by 2026-01-05, when 酒彩AO opened in its room."
+ },
+ {
+  "id": "kz_soba_dokoro_hashimoto",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Cold oroshi soba is served with a soy/dashi tsuyu, which in Japan is normally made with wheat-containing soy sauce.",
+  "url": "https://www.weekend-kanazawa.com/entry/hanare",
+  "verdict": "unsupported",
+  "found": "The article describes the tsuyu and never mentions 醤油 or soy sauce at all: 「右側の大きな器に入っているのは、大根おろしの絞り汁とだし汁を混ぜたもの。こちらをそばにかけ、よ～く絡めていただきます。」 The only other liquid it names is 出汁の旨味.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch of the cited URL, whole article read; then Yahoo Japan to trace the shop’s name history and current status",
+  "note": "The soy-sauce inference is reasonable for an Echizen oroshi tsuyu but no source states it — reword as an assumption or cite something that does. Two corrections while here. (1) GOOD CATCH BY THE RECORD, leave it alone: the article says 「福井県産のそば粉を100％使用」, which is 100% Fukui-GROWN buckwheat flour, not 100%-buckwheat noodles, and the gf_detail correctly reads it that way. (2) The record’s menu_url, tabelog 17013613, no longer belongs to this shop — it now renders as 「そば処 にしの縁」 (tel 090-2159-4018, 10:00-16:00), a different operator at the same 野町2-24-2 that Yahoo!マップ marks 閉業. Repoint or drop that link."
+ },
+ {
+  "id": "kz_soba_dokoro_hashimoto",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The standard tsuyu is dashi-based and the recommended dish adds aburaage; no fish-free or animal-free preparation is documented.",
+  "url": "https://www.weekend-kanazawa.com/entry/hanare",
+  "verdict": "supported",
+  "found": "「右側の大きな器に入っているのは、大根おろしの絞り汁とだし汁を混ぜたもの。」 and 「こちらは店主イチオシの「油揚げ入りおろしそば」（1,600円）。上にのっている油揚げは、福井県の老舗油揚げ店「谷口屋」から、わざわざ取り寄せているものなんですって！」",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch of the cited URL, whole article read",
+  "note": "FALSE WARNING inside a supported claim. Both facts are on the page, but 油揚げ is deep-fried tofu — the same article calls it 「大豆の濃厚な旨みが、そばと一緒にいただくと倍増します」 — so it is fully plant-based and belongs nowhere near a vegan_cross_contact note. Listing it there tells a vegan the chef’s recommended dish is a problem when the only animal element is the bonito dashi. Strike the aburaage clause and keep the dashi one."
+ },
+ {
+  "id": "kz_soba_dokoro_hashimoto",
+  "city": "kanazawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://map.yahoo.co.jp/",
+   "https://www.instagram.com/",
+   "https://www.youtube.com/"
+  ],
+  "why": "NOT closed — logged because three signals look like closure and are not. The record’s website sobahashimoto.hp.peraichi.com is 404 (the Peraichi page was deleted), its Tabelog id resolves to a different, 閉業 shop, and its cited article names a third name. But the shop trades: Yahoo!マップ lists 「そば処 はしもと」 at 石川県金沢市野町2丁目24-2 as 営業中, tel 076-269-4100, 11:00-17:00, 定休日 水曜日と第2第4木曜日 — matching the record’s hours exactly — and Instagram 「蕎麦処はしもと」 posted a soba-making reel on 2026/7/22. Name history: opened 2022-08-07 as 手打ち蕎麦 はなれ, renamed そば処 はしもと by September 2022 (Retty, 2022/9/14: 「店名がはなれからはしもとに変わってました」), phone 090-3765-7445 carried across both, as 石川テレビ’s 2023/1/23 piece confirms. No trading action needed; fix the dead website and menu links instead."
  }
 ]

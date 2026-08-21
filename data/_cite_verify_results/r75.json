@@ -153,5 +153,111 @@
    "https://y996200.gorp.jp/"
   ],
   "why": "Not closed — flagged only so the relocation is on the record. Tabelog carries the banner 「このお店は「広島市中区小町1-28」から移転しています。※移転前の情報は最新のものとは異なります」; the current address is 広島県広島市中区本通8-11 ヤオキンビル1F and the shop's own gorp JSON-LD gives geo 34.39261056661214 / 132.4592125877316. The record's lat/lng (34.392559 / 132.459183) and neighborhood ('Hondori, Naka-ku') already match the NEW site, so no data fix is needed — but any older citation pointing at 小町1-28 would now be a sibling-address defect. Listing is 公式 (operator-claimed), takes online reservations, 9 counter seats, hours 月-土 18:00-22:00 / 日・祝日定休日 matching the record. Freshness caveat: the pinned notice 「お盆休みについて 8月15日（金）〜17日（月）」 is a 2025 calendar (15 Aug 2026 is a Saturday), and the newest review is 2024/11, so the operator last edited around mid-2025."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "field": "staff_allergy_handling",
+  "quote": "Allergy accommodation is offered only on a limited basis to guests who reserve in advance, and only for eggs, dairy, buckwheat, peanuts, crab, shrimp, and walnuts; allergens outside that list cannot be handled.",
+  "url": "https://www.umenohana.co.jp/stores/detail/57",
+  "verdict": "supported",
+  "found": "「※アレルギー対応はお客様への安全・安心を最優先に、ご予約いただいたお客様に限り承っております。尚、「卵・乳・蕃麦・落花生・蟹・えび・くるみ」以外のアレルギー対応致しかねます。予め、ご了承ください。」",
+  "correct_url": null,
+  "http": "200 (plain curl, 80 KB) on the cited store page — SSR-rendered, so the shop info and the allergy notice are in the HTML. The MENU tab on that page is broken for everyone: it renders 「おすすめメニューの読み込みに失敗しました」 and 「メニューカテゴリーがありません」 because the Nuxt payload ships apiBase:\"http://localhost:8000\". Recovered the menu from the same site's server-side API instead: /api/shops/57 200, /api/shops/57/menu-categories 200, /api/shops/57/menu-categories/{6,7,209,210} 200. /api/menus, /api/shops/57/menus, /api/brands/1/menus all 404. /brands/detail/1 and /menu return 200 but are JS-only shells (330 KB of HTML strips to 645 chars of text).",
+  "method": "2 JS-rendered-page route: the cited page is server-rendered so a plain curl got the allergy notice, but its menu module is dead, so I walked the site's own JSON API (/api/shops/57/menu-categories then /api/shops/57/menu-categories/<id>) to read the actual dishes. No proxy, UA switch, Wayback or search engine was needed at this run.",
+  "note": "Verbatim on the cited page, element for element — the best-sourced claim in this shard. It is also the single most consequential line for a celiac: 小麦 is deliberately absent from a list that names six of the eight statutory 特定原材料, so this is not an information gap, it is the operator declining wheat accommodation in writing. That should be quoted in gf_detail rather than paraphrased."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Soy-sauce-based seasonings and wheat-battered fried yuba/tempura items are used throughout the kitchen, so gluten cross-contact is likely; the restaurant does not list wheat among the allergens it can accommodate.",
+  "url": "https://www.umenohana.co.jp/stores/detail/57",
+  "verdict": "supported",
+  "found": "Second clause verbatim (the アレルギー対応 notice above, with 小麦 absent from the accommodated list). The tempura/fried-yuba clause is NOT on the cited page but is confirmed on the same shop's own menu API: 梶の花懐石「匠」 「大海老と豆腐真丈の天婦羅と彩り湯葉揚げ」, 法要懐石 「ユメカサゴと豆腐真丈の天婦羅と湯葉揚げ」, 福まめ膳 「揚げだしごま豆腐」「湯葉揚げ豆腐真丈の天婦羅」, plus 湯葉グラタン, 和風海老ドリア, かにしゅうまい/とうふしゅうまい, 麸まんじゅう, 鰻セイロ.",
+  "correct_url": null,
+  "http": "200 (plain curl, 80 KB) on the cited store page — SSR-rendered, so the shop info and the allergy notice are in the HTML. The MENU tab on that page is broken for everyone: it renders 「おすすめメニューの読み込みに失敗しました」 and 「メニューカテゴリーがありません」 because the Nuxt payload ships apiBase:\"http://localhost:8000\". Recovered the menu from the same site's server-side API instead: /api/shops/57 200, /api/shops/57/menu-categories 200, /api/shops/57/menu-categories/{6,7,209,210} 200. /api/menus, /api/shops/57/menus, /api/brands/1/menus all 404. /brands/detail/1 and /menu return 200 but are JS-only shells (330 KB of HTML strips to 645 chars of text).",
+  "method": "2 JS-rendered-page route: the cited page is server-rendered so a plain curl got the allergy notice, but its menu module is dead, so I walked the site's own JSON API (/api/shops/57/menu-categories then /api/shops/57/menu-categories/<id>) to read the actual dishes. No proxy, UA switch, Wayback or search engine was needed at this run.",
+  "note": "Conclusion sound, sourcing half-right — attach https://www.umenohana.co.jp/api/shops/57/menu-categories/6 (and /7 for lunch) so the wheat items are checkable. CRITICAL OMISSION the record misses entirely: 生麸田楽 appears in EVERY 懐石 and EVERY ランチ course on this shop's menu without exception, including both vegan courses. 生麸 (nama-fu) is raw wheat gluten — not a trace risk, a whole course item made of gluten — and 麸まんじゅう closes the two お祝い懐石. A celiac who reads 'soy-sauce seasonings and tempura' will think they can steer around it; they cannot. Rewrite gf_cross_contamination to lead with 生麸."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Kaiseki dishes use standard Japanese soy sauce and dashi, which typically contain wheat.",
+  "url": "https://www.umenohana.co.jp/stores/detail/57",
+  "verdict": "unsupported",
+  "found": "醤油 0 hits, しょうゆ 0 hits, だし 0 hits, 出汁 0 hits, 小麦 0 hits on the cited page. The page's only food copy is 「湯葉と豆腐という伝統の食材をベースに四季折々の旬の味覚を組み合わせながら、和食の新境地を切り開く創作懐石を提供致します」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 80 KB) on the cited store page — SSR-rendered, so the shop info and the allergy notice are in the HTML. The MENU tab on that page is broken for everyone: it renders 「おすすめメニューの読み込みに失敗しました」 and 「メニューカテゴリーがありません」 because the Nuxt payload ships apiBase:\"http://localhost:8000\". Recovered the menu from the same site's server-side API instead: /api/shops/57 200, /api/shops/57/menu-categories 200, /api/shops/57/menu-categories/{6,7,209,210} 200. /api/menus, /api/shops/57/menus, /api/brands/1/menus all 404. /brands/detail/1 and /menu return 200 but are JS-only shells (330 KB of HTML strips to 645 chars of text).",
+  "method": "2 JS-rendered-page route: the cited page is server-rendered so a plain curl got the allergy notice, but its menu module is dead, so I walked the site's own JSON API (/api/shops/57/menu-categories then /api/shops/57/menu-categories/<id>) to read the actual dishes. No proxy, UA switch, Wayback or search engine was needed at this run.",
+  "note": "Genre convention written as if sourced, and it is also the weakest of the wheat arguments available here. Drop it or reword as an assumption, and replace it with what the shop's own menu actually documents: 生麸田楽 in every course, 天婦羅, しゅうまい, 麸まんじゅう, 湯葉グラタン, ドリア, 鰻セイロ — and the operator's written refusal to handle allergens outside 卵・乳・蕃麦・落花生・蟹・えび・くるみ. One genuine soy-sauce-family item does exist on the menu (鰻セイロ — unagi kabayaki tare), if a sourced soy clause is wanted."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Tofu and yuba dishes share a kitchen with seafood, egg, and dairy preparations; standard dashi may contain fish, so plant-only diners should request accommodation in advance.",
+  "url": "https://www.umenohana.co.jp/stores/detail/57",
+  "verdict": "wrong_source",
+  "found": "On this shop's own menu API: 黢の湯葉とろろ掛け、茶碗蒸し、かにしゅうまい、すわいかに酢、黒毛和牛のしゃぶしゃぶ、銀だらの西京焼き、豆乳入りだし巻き玉子、鰻の蒲焼き、鶏の照り焼き、有頭海老、鯖寿司、湯葉グラタン、豆腐レアチーズケーキ. The cited page carries none of this — its only pointer to animal ingredients is 卵・乳・蟹・えび appearing in the allergy-accommodation list.",
+  "correct_url": "https://www.umenohana.co.jp/api/shops/57/menu-categories/6",
+  "http": "200 (plain curl, 80 KB) on the cited store page — SSR-rendered, so the shop info and the allergy notice are in the HTML. The MENU tab on that page is broken for everyone: it renders 「おすすめメニューの読み込みに失敗しました」 and 「メニューカテゴリーがありません」 because the Nuxt payload ships apiBase:\"http://localhost:8000\". Recovered the menu from the same site's server-side API instead: /api/shops/57 200, /api/shops/57/menu-categories 200, /api/shops/57/menu-categories/{6,7,209,210} 200. /api/menus, /api/shops/57/menus, /api/brands/1/menus all 404. /brands/detail/1 and /menu return 200 but are JS-only shells (330 KB of HTML strips to 645 chars of text).",
+  "method": "2 JS-rendered-page route: the cited page is server-rendered so a plain curl got the allergy notice, but its menu module is dead, so I walked the site's own JSON API (/api/shops/57/menu-categories then /api/shops/57/menu-categories/<id>) to read the actual dishes. No proxy, UA switch, Wayback or search engine was needed at this run.",
+  "note": "The shared-kitchen half is true and now sourced. The last clause is now WRONG and should be rewritten: this shop publishes two dedicated vegan courses — 「[要予約]※当日予約可 【ヴィーガン対応】菜食懐石」 6,200円 and 「[要予約]※当日予約可 【ヴィーガン対応】菜食ランチ」 4,200円 — so a plant-only diner is not 'requesting accommodation', they are ordering a published course, and same-day booking is explicitly allowed. See the vegan_status tier_recommendation."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The core ingredients are house-made tofu and freshly pulled yuba, so plant-forward diners have genuinely soy-centered options to build a meal around when they arrange it ahead.",
+  "url": "https://www.umenohana.co.jp/stores/detail/57",
+  "verdict": "supported",
+  "found": "「「湯葉と豆腐の店 梅の花」ではお客様の健康を考えて、安心してお召し上がりいただける素材を吹味し、一品一品を丁寧に、丹精込めて作っています。湯葉と豆腐という伝統の食材をベースに四季折々の旬の味覚を組み合わせながら、和食の新境地を切り開く創作懐石を提供致します」 (※ spelling as rendered; the page reads 吟味).",
+  "correct_url": null,
+  "http": "200 (plain curl, 80 KB) on the cited store page — SSR-rendered, so the shop info and the allergy notice are in the HTML. The MENU tab on that page is broken for everyone: it renders 「おすすめメニューの読み込みに失敗しました」 and 「メニューカテゴリーがありません」 because the Nuxt payload ships apiBase:\"http://localhost:8000\". Recovered the menu from the same site's server-side API instead: /api/shops/57 200, /api/shops/57/menu-categories 200, /api/shops/57/menu-categories/{6,7,209,210} 200. /api/menus, /api/shops/57/menus, /api/brands/1/menus all 404. /brands/detail/1 and /menu return 200 but are JS-only shells (330 KB of HTML strips to 645 chars of text).",
+  "method": "2 JS-rendered-page route: the cited page is server-rendered so a plain curl got the allergy notice, but its menu module is dead, so I walked the site's own JSON API (/api/shops/57/menu-categories then /api/shops/57/menu-categories/<id>) to read the actual dishes. No proxy, UA switch, Wayback or search engine was needed at this run.",
+  "note": "The soy-centred substance is supported. Two wording fixes. (a) 'house-made tofu / freshly pulled yuba' is not on this page — the nearest support is 一品一品を丁寧に作っています plus the menu's 引き上げ湯葉 nabe and 生湯葉のあん掛け御飯; the record's separate 'Hokkaido Toyomusume soybeans' detail is cited nowhere at all. (b) 'when they arrange it ahead' understates — the vegan courses are marked ※当日予約可 (same-day booking accepted). WARNING for the GF layer: both vegan courses contain 生麸田楽 and 大豆ミートの湯葉カツ, i.e. the plant-based route through this menu is the WHEAT-GLUTEN route — exactly the seitan-on-a-vegan-menu trap. Do not let the vegan upgrade pull gf upward."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.umenohana.co.jp/api/shops/57/menu-categories/6",
+   "https://www.umenohana.co.jp/api/shops/57/menu-categories/7",
+   "https://www.umenohana.co.jp/stores/detail/57"
+  ],
+  "why": "options — the record's vegan_detail states 'There is no published vegan or vegetarian set menu', and that is false. This shop's own menu carries two, both flagged ビーガン in the item name: 「[要予約]※当日予約可 【ヴィーガン対応】菜食懐石」 6,200円 (湯葉豆腐と黒胡麻豆腐のお造り・アボカドと南瓜の豆腐サラダ・湯葉と野菜の豆乳しゃぶしゃぶ・ふく福豆冨 二色あん掛け・生麸田楽・大豆ミートの湯葉カツと大根餅・湯葉豆腐の蒲焼き・湯葉吸物・生湯葉のあん掛け御飯・香の物・デザート) and 「【ヴィーガン対応】菜食ランチ」 4,200円. Both are 要予約 but explicitly ※当日予約可. 'ask' tells a vegan to go and enquire; the operator has already published the answer, with prices and full course content. Not 'full' — the surrounding kitchen is wagyu, unagi, crab and dashimaki, and the vegan course is a bookable exception, not the house style. NOTE for whoever applies this: the vegan course itself contains 生麸 (raw wheat gluten) and a 湯葉カツ, so this upgrade must NOT be mirrored on gf_confidence."
+ },
+ {
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "city": "hiroshima",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://www.umenohana.co.jp/stores/detail/57",
+   "https://www.umenohana.co.jp/api/shops/57/menu-categories/6",
+   "https://www.umenohana.co.jp/api/shops/57/menu-categories/7"
+  ],
+  "why": "no — 'ask' invites a celiac to ask a question this operator has already answered in writing on the cited page: 「「卵・乳・蕃麦・落花生・蟹・えび・くるみ」以外のアレルギー対応致しかねます」 — wheat is named-by-omission from a list containing six of the eight statutory allergens, so this is a documented refusal, not an unknown. The menu backs it up: 生麸田楽 (raw wheat gluten) is in every single 懐石 and ランチ course including both vegan ones, 天婦羅 and しゅうまい recur throughout, the celebration courses close with 麸まんじゅう, and the プラス400円 rice upgrade is 鰻セイロ or 和風海老ドリア. There is no wheat-free course and no route to build one, because the courses are fixed. This is the same reasoning applied at r51/tokyo3_near_s ('ask' invites a question already answered)."
+ },
+ {
+  "id": "hiro_yukari_chaya",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Menu is built around matcha, fruit-syrup shaved ice, and red-bean zenzai rather than fried or heavy wheat-based dishes, which can give plant-based or wheat-avoiding diners a starting point to ask about.",
+  "url": "https://4travel.jp/dm_shisetsu/11368643",
+  "verdict": "unsupported",
+  "found": "The enumeration is on the page — 「抹茶、和菓子セットと栗ぜんざいをオーダーしました」、「オーナー手製の梅シロップのかかったかき氷」、「クリームあずき（７００円）と冷たい抹茶（５００円）」 — but the SAME page contradicts the 'rather than … wheat-based dishes' half: 「縁側の席で、庭を眺めながら、珈琲とケーキのセットをいただきました」 and 「白玉やかき氷などとお茶やコーヒーです」. Tabelog 34017723 (the record's own website field) makes it explicit — keyword block: ケーキセット、ミルクレープ、カステラ、ミルク、宇治金時、栗羊翫、白玉、小豆、餅.",
+  "correct_url": null,
+  "http": "200 (plain curl with curl's DEFAULT UA, 126 KB) on 4travel.jp — but 403 Access Denied (Akamai edge, Reference #18.b1813217) when the SAME url was fetched with a desktop Chrome UA. Recording that inversion because it is the opposite of the usual advice: on 4travel at this run, sending a browser UA is what gets you blocked. 200 (plain curl, 208 KB) on tabelog.com/.../34017723/.",
+  "method": "1 plain fetch (default UA) of the cited 4travel page; desktop-UA retry 403'd; cross-checked against the record's own Tabelog listing",
+  "note": "Two defects. (a) The claim is contradicted by its own source: a reviewer on the cited page ate a 珈琲とケーキのセット, and クリームあずき is dairy — so 'rather than … heavy wheat-based dishes' and 'plant-based … starting point' are both overstated. Tabelog adds ミルクレープ and カステラ, i.e. this cafe sells layered crepe cake and castella, and gf_detail currently names no wheat item at all — add these three. (b) The cited page is STALE: all 8 reviews are 2014–2018 visits, newest posted 2019/01/10, and the venue's specific plum-syrup kakigori is one reviewer's 2014 order, not a menu listing. Trading status OK on fresher evidence: Tabelog 34017723 shows 口コミ dated 2026/08, no 閉店 banner (the only 閉店/移転 strings are the standard footer report link), address 広島県廃日市市宮島町260 (matching 4travel), hours 月・火・金・土・日 11:00-17:00 / 水・木定休日 「■定休日 加えて不定休」 — matching the record verbatim. gf 'ask' and vegan 'ask' both remain correct: the wheat and dairy items are real but so are 抹茶、かき氷、々んざい、羊翫、白玉, and nothing documents ingredients — no tier change, but the detail text needs the named wheat/dairy items."
  }
 ]

@@ -180,5 +180,167 @@
   "http": "200 (s.tabelog.com, iPhone UA); 200 (kyotopi plain curl)",
   "method": "mobile-host Tabelog fetch + cited kyotopi article",
   "note": "Open, trading, visited two weeks ago; hours, coordinates and the sister-shop note in the record are all correct. Note for the sibling-branch trap: the SAIIN 『ラーメン 尋』 is a different shop with a different taste (「味は全くの別物」) — do not let evidence cross between them."
+ },
+ {
+  "id": "kyr_chuka_soba_masutani_kita",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is a chicken-bone soup combined with soy sauce (鶏ガラでとったスープに醤油を合わせた), and the soy-sauce tare in this style is virtually always wheat-based.",
+  "url": "https://kyotopi.jp/articles/4Q4Y2",
+  "verdict": "supported",
+  "found": "「こちらでは鶏ガラでとったスープに醤油を合わせた豚背脂スープ。それもちょっと濁りもある濃厚さ。」 — the parenthetical in the record is a verbatim substring of the cited article.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited kyotopi article (dated 2022-02-05)",
+  "note": "Verbatim match. Also on the same page: 「メニューは基本ラーメンのみ…ライスとおつけもんくらい」 and 「麺は細ストレート麺」 — one wheat noodle, no sides, nothing gluten-free. But see the trading flag: this branch shut on 2026-07-19."
+ },
+ {
+  "id": "kyr_chuka_soba_masutani_kita",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The signature bowl uses chicken-bone broth with pork back fat and chashu, with no plant-based version offered.",
+  "url": "https://kyotopi.jp/articles/4Q4Y2",
+  "verdict": "supported",
+  "found": "「鶏ガラでとったスープに醤油を合わせた豚背脂スープ」 / 「中央には京都ラーメンの定番九条ネギ、チャーシュー、メンマが乗っています」 / 「メニューは基本ラーメンのみ。チャーハンだのから揚げだの餃子だのといったサイドメニューはありません。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited kyotopi article",
+  "note": "Fully supported — pork back fat is in the broth itself, so even a topping-free bowl is not vegetarian. Corroborated by the operator interview at https://kyotopi.jp/articles/ramenmasutanihonten-kyugyo: 「鶏ガラベースのスープは…背脂のコクと甘みが一体となった一杯」."
+ },
+ {
+  "id": "kyr_chuka_soba_masutani_kita",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "closed_permanently",
+  "evidence": [
+   "https://kyotopi.jp/articles/ramenmasutanihonten-kyugyo",
+   "https://tabelog.com/kyoto/A2601/A260302/26001839/",
+   "https://www.change.org/p/%E4%BA%AC%E9%83%BD-%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0-%E3%81%BE%E3%81%99%E3%81%9F%E3%81%AB%E5%8C%97%E7%99%BD%E5%B7%9D%E6%9C%AC%E5%BA%97-%E3%81%AE%E5%96%B6%E6%A5%AD%E3%82%92%E7%B6%99%E7%B6%9A%E3%81%97%E3%81%A6%E6%AC%B2%E3%81%97%E3%81%84%E6%B0%97%E6%8C%81%E3%81%A1%E3%82%92%E6%84%9F%E8%AC%9D%E3%81%A8%E5%85%B1%E3%81%AB%E4%BC%9D%E3%81%88%E3%81%9F%E3%81%84"
+  ],
+  "why": "SHUT SINCE 2026-07-19 — one month before this sweep, and the record still shows 'Tue-Sun 10:00-15:00, 16:00-19:00' as if open. Precise status: 無期限休業 (indefinite suspension), which the operator explicitly distinguishes from 廃業; I am filing it as closed_permanently so the record is hidden, because there is no reopening date and the operator says reopening is currently not feasible. Kyotopi interviewed the company president (article dated 2026-06-11): 「そんな同店が、2026年7月19日（日）をもって無期限休業することがわかりました。」 Cause: 「休業の大きな要因のひとつが建物の老朽化です…近年の原材料費や光熱費などの高騰も重なり」. Future: 「営業体制は梅小路エリアにある『ますたに梅小路店』へ集約する方針です」 and on reopening 「『いつか再開したい気持ちはある』としながらも…現時点では難しい」. Independently corroborated on Tabelog by two reviewers who queued for the final days (「✅26/7/19をもって無期限長期休業」; 「今週末7/19(日)をもって長期休業に入るとの報が入ったのが約1ヶ月前…この日開店15分前の9時45分に到着で69番目」) and by a change.org petition opened 2026-07-07 asking the shop to keep trading. Note for whoever hides this: the SISTER branch ますたに梅小路店 is still open and is where the business has been consolidated — do not let this closure propagate to it. Also note the cited kyotopi review article (2022) and the Tabelog listing still print live-looking hours; the kyugyo article gives the final hours as 10:00〜14:45 / 16:00〜17:45, 定休日 月曜・第三水曜, which is where the record's 'some sources list 10:00–14:45 and 16:00–17:45' came from."
+ },
+ {
+  "id": "kyr_chuka_soba_mimio",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature bowl is a soy-sauce-seasoned chicken-and-dashi ramen; soy sauce tare is normally wheat-based, so the broth should be assumed to contain wheat/gluten.",
+  "url": "https://tabelog.com/kyoto/A2601/A260302/26027102/dtlmenu/",
+  "verdict": "wrong_source",
+  "found": "The cited dtlmenu page carries exactly ONE user-submitted item, last updated 2016/04/08, and it never mentions soy sauce: 「名物 中華そば 760円 — 鶏ガラとダシ、その他厳選された食材で丁寧にとられたスープ。細めでモチモチのストレート麺。老舗精肉店より仕入れる、国産豚バラ肉で作るチャーシューは絶品。」 The soy-sauce fact is stated at osumituki: 「ラーメンは昔懐かしい味わいの京都ラーメンで鶏・煮干しでとった出汁がきいたスープ。味は醤油味、メニューは他にこれのチャーシュー麺があります。」",
+  "correct_url": "https://osumituki.com/kyoto-ramen/145840.html",
+  "http": "200 (s.tabelog.com dtlmenu, iPhone UA); 200 (osumituki, iPhone UA); Ecosia SERP 200",
+  "method": "mobile-host Tabelog dtlmenu fetch, then Ecosia exact-name search which surfaced the osumituki article; Yahoo Japan not needed",
+  "note": "Claim is true, citation is wrong — repoint to https://osumituki.com/kyoto-ramen/145840.html. The cited page also carries a harder GF fact the record is not using: 「細めでモチモチのストレート麺」, i.e. wheat noodles, dated 2016. Also note the dtlmenu page is a decade-stale user upload, not the shop's menu."
+ },
+ {
+  "id": "kyr_chuka_soba_mimio",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is built on chicken bones and fish/dashi with pork-belly chashu, and pidan (egg) is a popular side - no vegan-safe preparation is offered.",
+  "url": "https://tabelog.com/kyoto/A2601/A260302/26027102/dtlmenu/",
+  "verdict": "wrong_source",
+  "found": "The cited dtlmenu page supports only the broth and chashu halves — 「鶏ガラとダシ…国産豚バラ肉で作るチャーシューは絶品」 — and lists no sides at all (料理 1件). The pidan side is at osumituki: 「他にも『キーシマ・肉吸い・中華おつまみ・ピータン』などもあって夜は飲みながらという使い方もできます。」 The fish half is at osumituki too (「鶏・煮干しでとった出汁」) and in a Tabelog review (「スープは鶏がらに魚介を合わせられており」).",
+  "correct_url": "https://osumituki.com/kyoto-ramen/145840.html",
+  "http": "200 (s.tabelog.com dtlmenu + main listing, iPhone UA); 200 (osumituki)",
+  "method": "mobile-host Tabelog dtlmenu + main listing fetch, Ecosia search for みみお ピータン, then osumituki fetch",
+  "note": "True but mis-cited — the pidan detail cannot come from a page with one registered item and no sides. Repoint to the osumituki article, which also adds 肉吸い (meat broth) to the animal-content list. vegan_status:no is correct and now better evidenced: 煮干し dashi means even a chashu-free bowl is fish-based."
+ },
+ {
+  "id": "kyr_chuka_soba_mimio",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260302/26027102/",
+   "https://osumituki.com/kyoto-ramen/145840.html"
+  ],
+  "why": "Open — Tabelog carries a 2026/04 visit, hours 水〜日 12:00-14:00 / 18:00-23:00, 月・火定休, at 京都市左京区吉田下大路町16, which matches the record exactly. BUT THE RECORD'S WEBSITE IS A DEAD DOMAIN: https://mimiox.org/ is NXDOMAIN (Google DNS 8.8.8.8: 'Non-existent domain'; curl: 'Could not resolve host'). It has not lapsed into casino content — it simply resolves to nothing — but it is a broken link on a live record and should be replaced with the Tabelog listing. The Wayback capture (https://web.archive.org/web/2025/https://mimiox.org/) shows the site was last touched in 2021 and advertised hours 11:30-14:30 / 17:30-22:30, which are NOT the current hours; anyone reviving that citation would publish wrong opening times. History note so a later sweep does not misread it: the Gion original (opened 2000-01-03) closed and the shop MOVED to Yoshida in March 2016 — Tabelog's 「※このお店は以前の場所から移転しています」 banner refers to that move, not to a closure."
+ },
+ {
+  "id": "kyr_chuka_soba_onigiri_maru_",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tare is described as aged re-brewed soy sauce from an established brewery (老舗蔵元の再仕込み熟成醤油), a wheat-based soy sauce.",
+  "url": "https://prtimes.jp/main/html/rd/p/000000011.000100887.html",
+  "verdict": "supported",
+  "found": "「国産鶏の芳醇な香りとコクのある深い出汁、老舗蔵元の再仕込み熟成醤油の豊かな風味と深みのバランスが特徴です。」 and, for the same bowl, 「再仕込み醤油をベースに３種の醤油をブレンドした醤油かえし」.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA, 166KB)",
+  "method": "1 plain fetch of the cited PR TIMES release (株式会社エフリード, opening announcement dated for 2023-12-27)",
+  "note": "Verbatim, and the 'wheat-based' gloss is right — 再仕込み醤油 is brewed from wheat and soybeans, then re-brewed in soy sauce instead of brine, so it is more soy-sauce-per-spoon, not less wheat. The existing source_independence 'relay' flag is correct: this is the operator's own release. The SAME release carries a much harder wheat fact the record is not citing: 「◯△専用特注中太麺は、小麦本来の甘みと薫りをお楽しみいただくよう全粒粉を使用」 and 「厳選された愛知県産小麦を使用した特注の全粒粉のもちもち麺」 — 小麦 named outright."
+ },
+ {
+  "id": "kyr_chuka_soba_onigiri_maru_",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Both signature broths are animal-based (domestic chicken with chicken oil; or scallop/clam/flying-fish/bonito-style seafood stock), so shared pots and water mean cross-contact with animal ingredients is inherent.",
+  "url": "https://prtimes.jp/main/html/rd/p/000000011.000100887.html",
+  "verdict": "moved",
+  "found": "生姜中華そば: 「厳選した国産鶏と濃厚で旨味の強い親鳥を惜しみなく使用し…じっくりと丁寧に抽出した鶏青湯スープ。低温でじっくりと生姜の薫りを移した香味油と、再仕込み醤油をベースに３種の醤油をブレンドした醤油かえし」. 貝だし中華そば: 「国産鶏の芳醇な香り、アゴ煮干しや利尻昆布で取ったおダシ、帆立とあさりの煮出し汁が調和し」. Plus 籠肉つけそば 「極薄にスライスした牛肉をさっと煮込んで」 and TKM 「満月たまご」.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited PR TIMES release",
+  "note": "vegan:no is right and understated — beef (籠肉つけそば), egg (TKM, 満月たまご, 醤油漬け卵黄), salmon roe and rare chashu on the onigiri all come from the same release. Two wording fixes: the ginger bowl's aroma oil is GINGER oil (生姜の薫りを移した香味油), not 'chicken oil'; and the shellfish bowl's fish element is アゴ煮干し (flying-fish niboshi) and 利尻昆布, not 'bonito-style' — the only 鰹 in the shop is on the 生おかかおにぎり and the 唐揚げ's かつおふりかけ. The record's `ramen.aroma_oil` also lists lard_seabura and its signature_bowl says 'floated with melting back fat'; no back fat appears anywhere in the release."
+ },
+ {
+  "id": "kyr_chuka_soba_onigiri_maru_",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "…the onigiri are an additional wheat-free side but the ramen itself is built on wheat.",
+  "url": "https://prtimes.jp/main/html/rd/p/000000011.000100887.html",
+  "verdict": "unsupported",
+  "found": "The release describes every rice ball with a seasoning the claim ignores: 「生おかかおにぎり」= 「甘辛のタレと鰹節を混ぜ合わせ」; 「レアチャーシュー卵黄」= 「塩こうじで漬け込み…レアチャーシュー、奇跡の玉子『満月たまご』の醤油漬けを上に乗せて」; the karaage that shares the fryer is 「衣にまとうパリッと食感のかつおふりかけと甘辛い手羽先風のタレ」.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the cited PR TIMES release, read against the record's gf_detail prose",
+  "note": "LOUD, and it is the rare defect in the REASSURING direction: gf_detail tells a celiac the onigiri are 'wheat-free'. Nothing supports that. 甘辛のタレ and 醤油漬け are soy-sauce dressings, i.e. wheat, on two of the four rice balls, and the wholemeal-wheat noodles are worked at the same counter. The structured menu layer already gets this right (menu_gf_count 0, menu_gf_ask_count 5) — it is the free-text gf_detail that contradicts it. Delete 'wheat-free' or downgrade it to 'ask'."
+ },
+ {
+  "id": "kyr_chuka_soba_onigiri_maru_",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260603/26040547/",
+   "https://prtimes.jp/main/html/rd/p/000000011.000100887.html"
+  ],
+  "why": "Open. Tabelog JSON-LD gives 京都市山科区竹鼻竹ノ街道町35-32, geo 34.9903/135.8165 (record: 34.99007/135.81633), 155 reviews, and a current summer-limited bowl reviewed this season (「淡涼冷やしそば（夏季限定）」). Tabelog hours 11:00-15:00 / 17:30-22:00 all seven days match the record and the release (「営業時間：全日：11:00-15:00/17:30-22:00(L.O.21:30) 定休日：無休」). One reviewer prints 17:00-21:00 — that is a reviewer's own note, not the listing."
+ },
+ {
+  "id": "kyr_chuka_soba_takayasu",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles boiled in shared water; signature broth served over wheat-kansui noodles. No gluten-free accommodation indicated.",
+  "url": "http://www.takayasuramen.com/",
+  "verdict": "supported",
+  "found": "Operator's own site: 「当店の特徴であるミルキーなまったり系の白濁のスープは、豚骨・鶏がらベースに24時間掛けて作られています。さらにスープに絡みやすいようかん水の加減を調整した特注の麺を使用…」 The whole corporate site — 高安 / 是空 / 高安是空 pages, お持ち帰り and 美味しい作り方 — contains no allergen, gluten or 小麦 statement of any kind.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the operator's own site (the cited URL)",
+  "note": "かん水 named by the operator itself, which pins the noodles as alkaline wheat ramen noodles. 'Boiled in shared water' is inference — the site never describes the pots — but there is one custom noodle across the brand, so it holds. Absence of GF accommodation is confirmed across the whole site."
+ },
+ {
+  "id": "kyr_chuka_soba_takayasu",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All featured items are pork/chicken-bone broth based with pork, beef-sinew, and fried-chicken toppings; no vegan/vegetarian preparation noted.",
+  "url": "http://www.takayasuramen.com/",
+  "verdict": "supported",
+  "found": "「豚骨・鶏がらベースに24時間掛けて作られています」 / 「スジ肉の煮込みが入る限定商品『スジラーメン』は一番のお勧めです」 / 「当店の唐揚げは、カレー風味。そのボリューム、味ともにご満足頂ける一品です」 / 「自家製の『謹製味玉』は大きな卵で…」 Menu block: 中華そば ¥980, チャーシューメン ¥1380, スジラーメン(数量限定) ¥1480, からあげ定食 ¥1940.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch of the operator's own site",
+  "note": "Fully supported, and the egg (謹製味玉) is worth adding. Caution for a later sweep: takayasuramen.com is the 高安株式会社 CORPORATE site and also carries 是空 (上京区今出川通堀川) and 高安是空. Only the 一乗寺高槻町10 block belongs to this record — do not let the 是空 牛トロラーメン or tartare-sauce karaage migrate onto it."
+ },
+ {
+  "id": "kyr_chuka_soba_takayasu",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260303/26001199/",
+   "http://www.takayasuramen.com/"
+  ],
+  "why": "Open, with a reviewer visit logged 2026年8月13日 (「スジラーメン…13時54分到着（外待ち9名）」) plus 2026/07 and 2025/11 visits; 2,206 reviews. Tabelog address 京都市左京区一乗寺高槻町10 and geo 35.04511/135.78514 match the record (35.044914/135.785324). Two freshness notes: (1) Tabelog gives 11:30-02:00 daily 不定休, which is what the record carries, but the operator's own site says 営業時間 AM11:30～AM3:00 — an hour later — so the two disagree and the record follows the more conservative one. (2) The own site's 定休日 field says 「『お知らせ』をご覧ください」, and the お知らせ block is still unfilled placeholder text (「タイトルタイトルタイトル / ここに内容が入ります」), so the closed-day pointer on the operator's own site leads nowhere; Tabelog's own note 「不定休 ●臨時休業日があります。店頭もしくは公式ホームページにてご確認下さい」 therefore cannot be acted on either."
  }
 ]

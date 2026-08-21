@@ -342,6 +342,17 @@ li.uncited{color:#7c8299}
   border-radius:6px; padding:5px 7px;
 }
 
+/* The shop's OWN gluten-free claim, contradicted by the shop's own menu. Loudest
+   element in the app, because it is the one hazard a careful reader cannot avoid by
+   being careful: they did the right thing, read the badge, and the badge lied. */
+.shopfalse{
+  display:block; margin:8px 0; font-size:12.5px; line-height:1.5; font-weight:600;
+  color:#fff; background:#B3261E; border-radius:8px; padding:8px 10px;
+}
+.shopfalse .sf-what{display:block;font-weight:800;margin-bottom:3px}
+.shopfalse .sf-src{display:block;font-weight:500;margin-top:4px;font-size:11px;opacity:.92}
+.shopfalse a{color:#fff;text-decoration:underline}
+
 /* Shut, but coming back. Permanently closed records are hidden outright; this is
    for the ones with a reopening date, which a traveller planning a later trip
    still wants to see. Red rather than the amber of .outside: "you cannot eat here
@@ -705,7 +716,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v191';
+const APP_BUILD='dcd-v195';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1227,6 +1238,13 @@ function badgeGF(p){
 }
 // Temporarily-shut shops keep their listing but must never read "Open now" off a
 // stale hours block — the hours are still published, the door is still locked.
+function SHOP_CLAIM_FALSE(p){
+ var c=p.shop_claim_false; if(!c) return "";
+ var u=(c.evidence&&c.evidence[0])||"";
+ var src=u ? "<span class=\"sf-src\">Checked against the shop's own page: <a href=\""+escHtml(u)+"\" target=\"_blank\" rel=\"noopener\">"+escHtml(hostOf(u))+"</a></span>" : "";
+ return "<div class=\"shopfalse\"><span class=\"sf-what\">⚠ This shop's own gluten-free claim does not hold up</span>"
+   + escHtml(c.claim) + " — " + escHtml(c.contradicted_by) + src + "</div>";
+}
 function SHUT_LINE(p){
  if(!p.closed || p.closed.status!=='temporary') return '';
  const until=p.closed.until?` — expected to reopen ${escHtml(p.closed.until)}`:'';
@@ -1550,6 +1568,7 @@ function _renderDetail(p){
  ds.innerHTML=`
   <div class="dtitle">${p.name}</div>
   <div class="dmeta">${CAT_NAME[p.category]} · ${p.neighborhood} · ${p.cuisine}${state.me?` · ${fmtDist(haversine(state.me.lat,state.me.lng,p.lat,p.lng))} away`:''}</div>
+  ${SHOP_CLAIM_FALSE(p)}
   ${SHUT_LINE(p)}
   ${p.outside_city?`<div class="outside">🚃 ${escHtml(p.outside_city.note)}</div>`:''}
   ${p.category==='MOM_AND_POP'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;color:#5a3e00"><b>🏮 Mom &amp; Pop</b> — independently owned, under 30 seats, beloved by locals. <b>Maximum 4 people.</b> Dietary options vary — check the GF and vegan notes below. The experience here is the point.</div>`:''}

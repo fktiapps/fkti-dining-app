@@ -93,7 +93,7 @@ const SEED = [
          'dairy, says allergy language does not exist when it does, and publishes stale hours.' },
 ];
 
-const recs = [], downgrades = [], malformed = [], closures = [];
+const recs = [], downgrades = [], malformed = [], closures = [], shopClaims = [];
 for (const s of SEED) {
   const hit = byId.get(s.id);
   if (!hit) { console.log(`  (seed id not found, skipping: ${s.id})`); continue; }
@@ -117,6 +117,16 @@ if (fs.existsSync(DIR))
         const h = byId.get(v.id);
         if (h) closures.push({ city: h.city, id: v.id, name: h.r.name,
           already: !!h.r.hidden, why: String(v.why || v.note || '').slice(0, 400) });
+        continue;
+      }
+      // A restaurant advertising gluten-free on a wheat dish is a hazard the reader
+      // must be told about, not a defect in our prose to be quietly corrected.
+      if (v.kind === 'shop_claim_false') {
+        const h = byId.get(v.id);
+        if (h) shopClaims.push({ city: h.city, id: v.id, name: h.r.name,
+          claim: String(v.claim || '').slice(0, 200),
+          contradicted_by: String(v.contradicted_by || '').slice(0, 300),
+          evidence: v.evidence || [], why: String(v.why || '').slice(0, 300) });
         continue;
       }
       if (v.kind !== 'tier_recommendation') continue;
@@ -181,6 +191,25 @@ if (APPLY && closures.length) {
 console.log(closures.filter(c => !c.already).length + ' venue(s) found closed and hidden' +
             (closures.length ? ' (' + closures.length + ' reported)' : ''));
 closures.forEach(c => console.log('  ' + c.city + '/' + String(c.name).slice(0, 34) + (c.already ? '  (already hidden)' : '')));
+if (APPLY && shopClaims.length) {
+  for (const c of CITIES) {
+    const j = readCity(c); let dirty = false;
+    for (const sc of shopClaims.filter(x => x.city === c)) {
+      const r = j.places.find(x => x.id === sc.id);
+      if (!r) continue;
+      r.shop_claim_false = { claim: sc.claim, contradicted_by: sc.contradicted_by,
+                             evidence: sc.evidence, why: sc.why, date: '2026-08-21' };
+      dirty = true;
+    }
+    if (dirty) writeCity(c, j);
+  }
+}
+if (shopClaims.length) {
+  console.log('');
+  console.log(shopClaims.length + " venue(s) advertising a gluten-free claim their own menu contradicts:");
+  shopClaims.forEach(x => console.log('  ' + x.city + '/' + String(x.name).slice(0, 30) + '  ' + x.claim.slice(0, 60)));
+  fs.writeFileSync('data/_shop_claims_false.json', JSON.stringify(shopClaims, null, 1));
+}
 fs.writeFileSync('data/_sweep_closures.json', JSON.stringify(closures, null, 1));
 
 console.log(`${downgrades.length} evidence-backed downgrade(s) ${APPLY ? 'applied' : 'found (dry run)'}`);

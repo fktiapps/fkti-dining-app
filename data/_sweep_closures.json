@@ -17,7 +17,7 @@
   "city": "hiroshima",
   "id": "hiro_yoshizushi",
   "name": "吉鮨 (Yoshizushi)",
-  "already": false,
+  "already": true,
   "why": "Not closed — flagged only so the relocation is on the record. Tabelog carries the banner 「このお店は「広島市中区小町1-28」から移転しています。※移転前の情報は最新のものとは異なります」; the current address is 広島県広島市中区本通8-11 ヤオキンビル1F and the shop's own gorp JSON-LD gives geo 34.39261056661214 / 132.4592125877316. The record's lat/lng (34.392559 / 132.459183) and neighborhood ('Hondori, Naka-ku') already match the NEW site, so no data fix is n"
  },
  {
@@ -75,5 +75,68 @@
   "name": "甘味処 金花糖 (Kanmidokoro Kinkato)",
   "already": true,
   "why": "The operator's own site now leads with 「☆ 閉店のご挨拶 ☆」: 「２０００年５月に開店いたしました当店は 誠に勝手ながら この６月１日をもちまして正式に閉店することにいたしました」, signed 「２０２６年 ６月 甘味処 金花糖 女将」. The owner cites 古希を過ぎ、体力の衰え after 26 years. Permanently closed as of 1 June 2026; the rurubu listing is stale and still shows 12～17時 / 火・水曜定休."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kitchen_yuki_musashi_ten",
+  "name": "キッチンユキ 武蔵店 (Kitchen Yuki Musashi-ten)",
+  "already": true,
+  "why": "Closed 21 June 2026. Tabelog 17014312 is titled 「【閉店】キッチン ユキ - 北鉄金沢/洋食」 at 「石川県金沢市武蔵町15-1 金沢エムザ B1F」 and states 「このお店は現在閉店しております。」 Kanazawa Keizai Shimbun (2026-07-08) reports 「ゴーゴーカレー金沢エムザ店」が7月5日、百貨店「金沢エムザ」（金沢市武蔵町）地下1階にオープンした。6月21日に閉店したカレー店「金沢カレー キッチンユキ」の店舗を居抜きで活用する同店」 and gives the reason: 「事業計画の都合でエムザから退店するキッチンユキ」. Go Go Curry's own 2026-07-03 release says the same. The operator's site now list"
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_koryori_to_oden_kankuro",
+  "name": "小料理とおでん 燗九郎 (Koryori to Oden Kankuro)",
+  "already": true,
+  "why": "The shop's own Instagram account @kankurooden (「燗九郎-小料理とおでん-」) now carries the bio 「9/28閉店。ありがとうございました」 — an own-account closing announcement in the past tense. The record's cited website https://ra0u900.gorp.jp/ returns a Gnavi 「404 Not Found ご指定のページが見つかりません。」 shell. Year: the same publisher's venue feature was still running a coupon for the shop on 2025年05月14日 (百万石音楽祭2025特別企画), and 28 Sep 2026 h"
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_shiki_no_table",
+  "name": "四季のテーブル (Shiki no Table)",
+  "already": true,
+  "why": "Closed and replaced, with the operator saying so. 四季のテーブル occupied 石川県金沢市長町1-1-17 青木クッキングスクール1F. Its parent, 青木クッキングスクール, published 「【酒彩 AO 新規OPENのお知らせ】2026年1月5日「酒彩 AO」新規OPENいたしました。」 (posted 2026/03/25) and its site nav now reads 酒彩AO where the restaurant used to be; the name 四季のテーブル survives there only as 「四季のテーブルショッピング」, a mail-order shop. Tabelog 17015680 is 酒彩AO at the same 長町1-1-17 with オープン日"
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_soba_dokoro_hashimoto",
+  "name": "そば処 はしもと (Soba-dokoro Hashimoto)",
+  "already": true,
+  "why": "NOT closed — logged because three signals look like closure and are not. The record’s website sobahashimoto.hp.peraichi.com is 404 (the Peraichi page was deleted), its Tabelog id resolves to a different, 閉業 shop, and its cited article names a third name. But the shop trades: Yahoo!マップ lists 「そば処 はしもと」 at 石川県金沢市野町2丁目24-2 as 営業中, tel 076-269-4100, 11:00-17:00, 定休日 水曜日と第2第4木曜日 — matching the record’s"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_aburasoba_daikakumei_kin",
+  "name": "油そば 大革命 金閣寺店 (Aburasoba Daikakumei Kinkakuji-ten)",
+  "already": true,
+  "why": "The operator's own store list marks this branch, and only this branch of five, as shut: 「金閣寺店 休業中 / 住所 〒603-8375 京都府京都市北区衣笠天神森町６−１ / 営業時間 現在休業中 / 定休日 月曜日 / 電話番号 0753662301」 — the address matches the record exactly. Tabelog independently agrees: the listing carries 「このお店は店舗情報の確認が取れていないため掲載保留中です。」 Checked 2026-08-21. I am deliberately NOT calling this closed_permanently: the operator's word is 休業中 ("
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_chuka_soba_masutani_kita",
+  "name": "中華そば ますたに 北白川本店 (Chuka Soba Masutani Kitashirakawa Honten)",
+  "already": true,
+  "why": "SHUT SINCE 2026-07-19 — one month before this sweep, and the record still shows 'Tue-Sun 10:00-15:00, 16:00-19:00' as if open. Precise status: 無期限休業 (indefinite suspension), which the operator explicitly distinguishes from 廃業; I am filing it as closed_permanently so the record is hidden, because there is no reopening date and the operator says reopening is currently not feasible. Kyotopi interview"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_chuka_soba_mimio",
+  "name": "中華そば みみお (Chuka Soba Mimio)",
+  "already": true,
+  "why": "Open — Tabelog carries a 2026/04 visit, hours 水〜日 12:00-14:00 / 18:00-23:00, 月・火定休, at 京都市左京区吉田下大路町16, which matches the record exactly. BUT THE RECORD'S WEBSITE IS A DEAD DOMAIN: https://mimiox.org/ is NXDOMAIN (Google DNS 8.8.8.8: 'Non-existent domain'; curl: 'Could not resolve host'). It has not lapsed into casino content — it simply resolves to nothing — but it is a broken link on a live recor"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_chuka_soba_onigiri_maru_",
+  "name": "中華そば おにぎり ◯△ (Chuka Soba Onigiri Maru-Sankaku)",
+  "already": false,
+  "why": "Open. Tabelog JSON-LD gives 京都市山科区竹鼻竹ノ街道町35-32, geo 34.9903/135.8165 (record: 34.99007/135.81633), 155 reviews, and a current summer-limited bowl reviewed this season (「淡涼冷やしそば（夏季限定）」). Tabelog hours 11:00-15:00 / 17:30-22:00 all seven days match the record and the release (「営業時間：全日：11:00-15:00/17:30-22:00(L.O.21:30) 定休日：無休」). One reviewer prints 17:00-21:00 — that is a reviewer's own note, not th"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_chuka_soba_takayasu",
+  "name": "中華そば 高安 (Chuka Soba Takayasu)",
+  "already": false,
+  "why": "Open, with a reviewer visit logged 2026年8月13日 (「スジラーメン…13時54分到着（外待ち9名）」) plus 2026/07 and 2025/11 visits; 2,206 reviews. Tabelog address 京都市左京区一乗寺高槻町10 and geo 35.04511/135.78514 match the record (35.044914/135.785324). Two freshness notes: (1) Tabelog gives 11:30-02:00 daily 不定休, which is what the record carries, but the operator's own site says 営業時間 AM11:30～AM3:00 — an hour later — so the two di"
  }
 ]

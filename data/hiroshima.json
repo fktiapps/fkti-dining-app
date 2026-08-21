@@ -2106,7 +2106,7 @@
       "text": "Oyster dishes are seasoned in the traditional Japanese style (soy sauce, ponzu), which normally contains wheat; no gluten-free seasoning is documented.",
       "source": "https://www.yakigaki-no-hayashi.co.jp/menu.html",
       "verified": "2026-08-20",
-      "repointed_from": "http://www.yakigaki-no-hayashi.co.jp/"
+      "repointed_from": "https://www.yakigaki-no-hayashi.co.jp/menu.html"
      }
     ],
     "vegan_cross_contact": [
@@ -23573,7 +23573,7 @@
       "text": "Food items center on egg, dairy, meat and fish (egg sandwiches, grilled-meat lunches, salmon/tarako pasta); no separate vegan preparation is documented.",
       "source": "https://tabetainjya.com/archives/nakaku1/g/",
       "verified": "2026-08-20",
-      "repointed_from": "https://hread.home-tv.co.jp/post-273011/"
+      "repointed_from": "https://tabetainjya.com/archives/nakaku1/g/"
      }
     ],
     "staff_allergy_handling": [],
@@ -25426,7 +25426,7 @@
       "text": "As a yakitori and izakaya kitchen, grilled skewers, fried items, and the hotpot share seasonings and surfaces built on wheat-containing soy sauce and tare; no gluten-free handling is documented.",
       "source": "https://r.gnavi.co.jp/m896cfh60000/menu4/",
       "verified": "2026-08-20",
-      "repointed_from": "https://y656003.gorp.jp/"
+      "repointed_from": "https://r.gnavi.co.jp/m896cfh60000/menu4/"
      }
     ],
     "soy_sauce_wheat": [
@@ -25434,7 +25434,7 @@
       "text": "Tare and dipping/seasoning sauces for the grilled chicken are based on standard Japanese soy sauce, which contains wheat.",
       "source": "https://r.gnavi.co.jp/m896cfh60000/menu4/",
       "verified": "2026-08-20",
-      "repointed_from": "https://y656003.gorp.jp/"
+      "repointed_from": "https://r.gnavi.co.jp/m896cfh60000/menu4/"
      }
     ],
     "vegan_cross_contact": [
@@ -36537,7 +36537,9 @@
     "positives": [
      {
       "text": "Menu is built around matcha, fruit-syrup shaved ice, and red-bean zenzai rather than fried or heavy wheat-based dishes, which can give plant-based or wheat-avoiding diners a starting point to ask about.",
-      "source": "https://4travel.jp/dm_shisetsu/11368643"
+      "source": "https://4travel.jp/dm_shisetsu/11368643",
+      "unsupported": "2026-08-20",
+      "why": "Two defects. (a) The claim is contradicted by its own source: a reviewer on the cited page ate a 珈琲とケーキのセット, and クリームあずき is dairy — so 'rather than … heavy wheat-based dishes' and 'plant-based … starting point' are both overstated. Tabelog adds ミルクレープ and カステラ, i.e. this cafe sells layered crepe cak"
      }
     ],
     "confidence": "low",
@@ -43907,7 +43909,7 @@
       "text": "Dishes are finished with okonomiyaki/soy-style sauces that are typically wheat-based; no gluten-free sauce is mentioned.",
       "source": "https://www.hotpepper.jp/strJ000714826/food/",
       "verified": "2026-08-20",
-      "repointed_from": "https://www.hotpepper.jp/strJ000714826/"
+      "repointed_from": "https://www.hotpepper.jp/strJ000714826/food/"
      }
     ],
     "vegan_cross_contact": [
@@ -52356,8 +52358,8 @@
    "category": "OMNI",
    "lat": 34.396297,
    "lng": 132.474472,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
+   "gf_confidence": "no",
+   "gf_label": "Not gluten-free",
    "gf_detail": "Not a gluten-free establishment. The menu is built around tofu and yuba (soy products), but kaiseki courses rely heavily on Japanese soy sauce and dashi, which typically contain wheat, and fried yuba/tempura-style items use wheat batter. The restaurant only handles a fixed list of allergens (eggs, dairy, buckwheat, peanuts, crab, shrimp, walnuts) by advance reservation and explicitly states it cannot accommodate allergens beyond that list — wheat/gluten is not among them. A celiac or strict gluten-free diner should not rely on this restaurant; ask in detail when reserving.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
@@ -52476,31 +52478,38 @@
     "gf_cross_contamination": [
      {
       "text": "Soy-sauce-based seasonings and wheat-battered fried yuba/tempura items are used throughout the kitchen, so gluten cross-contact is likely; the restaurant does not list wheat among the allergens it can accommodate.",
-      "source": "https://www.umenohana.co.jp/stores/detail/57"
+      "source": "https://www.umenohana.co.jp/stores/detail/57",
+      "verified": "2026-08-20"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Kaiseki dishes use standard Japanese soy sauce and dashi, which typically contain wheat.",
-      "source": "https://www.umenohana.co.jp/stores/detail/57"
+      "source": "https://www.umenohana.co.jp/stores/detail/57",
+      "unsupported": "2026-08-20",
+      "why": "Genre convention written as if sourced, and it is also the weakest of the wheat arguments available here. Drop it or reword as an assumption, and replace it with what the shop's own menu actually documents: 生麸田楽 in every course, 天婦羅, しゅうまい, 麸まんじゅう, 湯葉グラタン, ドリア, 鰻セイロ — and the operator's written refu"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Tofu and yuba dishes share a kitchen with seafood, egg, and dairy preparations; standard dashi may contain fish, so plant-only diners should request accommodation in advance.",
-      "source": "https://www.umenohana.co.jp/stores/detail/57"
+      "source": "https://www.umenohana.co.jp/api/shops/57/menu-categories/6",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.umenohana.co.jp/api/shops/57/menu-categories/6"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Allergy accommodation is offered only on a limited basis to guests who reserve in advance, and only for eggs, dairy, buckwheat, peanuts, crab, shrimp, and walnuts; allergens outside that list cannot be handled.",
-      "source": "https://www.umenohana.co.jp/stores/detail/57"
+      "source": "https://www.umenohana.co.jp/stores/detail/57",
+      "verified": "2026-08-20"
      }
     ],
     "positives": [
      {
       "text": "The core ingredients are house-made tofu and freshly pulled yuba, so plant-forward diners have genuinely soy-centered options to build a meal around when they arrange it ahead.",
-      "source": "https://www.umenohana.co.jp/stores/detail/57"
+      "source": "https://www.umenohana.co.jp/stores/detail/57",
+      "verified": "2026-08-20"
      }
     ],
     "confidence": "medium",
@@ -52516,7 +52525,13 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 15,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 9
+   "menu_vegan_count": 9,
+   "sweep_downgrade": {
+    "field": "gf_confidence",
+    "from": "ask",
+    "to": "no",
+    "why": "no — 'ask' invites a celiac to ask a question this operator has already answered in writing on the cited page: 「「卵・乳・蕃麦・落花生・蟹・えび・くるみ」以外のアレルギー対応致しかねます」 — wheat is named-by-omission from a list containing six of the eight statutory allergens, so this is a documented refusal, not an unknown. The menu backs it up: 生麸田楽 (raw wheat gluten) is in every single 懐石 and ランチ course including both vegan ones, "
+   }
   },
   {
    "id": "hiro_oyatsu_cafe_yurumu",
@@ -58385,7 +58400,7 @@
    "lng": 132.40698,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. The record's entire case is one document — the shop's own ekiten business listing, which is written by the business itself, so 「小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 is a first-party assertion, not corroboration. I hunted specifically for the second leg and failed: bm-peekaboo's Hiroshima roundup describes the products (米粉食パン, chiffon, cookies, waffles) but makes NO wheat-free or facility statement; atelier-shion is a resale/pickup vendor for まいまいこ便, i.e. a commercial partner, not an independent reviewer, and says only 「100％米粉」. Most tellingly, Maimaiko is a rice-flour BREAD bakery yet is absent from japan-glutenfree.com's 90-shop national list of bakeries meeting 「工房・店内に小麦粉を一切持ち込まず」 — the one list where it would belong if the claim were externally verified — and absent from Legal Nomads, FindMeGlutenFree, HappyCow and komeko-palette. Under the HARD RULE a single source caps at options/ask; I found nothing contradicting the shop's claim, so options, not ask.] A 100% rice-flour bakery and sweets shop that uses no wheat at all. The shop's own listing states 「100％米粉(グルテンフリー)のお菓子とパンの店です。小麦粉アレルギーの方に配慮しており、小麦粉は一切使用しておりません。厨房の調理過程で小麦粉が混入することもありません」 (a 100% rice-flour gluten-free sweets and bread shop; considerate of those with wheat allergy; no wheat flour used at all; no wheat flour contamination during the kitchen preparation process). No evidence the shop also bakes wheat or serves barley beer, so it reads as a dedicated GF kitchen. Takeout only; naturally low cross-contact risk, though celiacs may still wish to confirm shared equipment/ingredient sourcing directly.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
    "vegan_detail": "No vegan claims are published, and the core lineup (rice-flour chiffon cakes, florentine, buttery baked goods) typically contains egg and dairy. Some items such as the basil crackers or 'kimagure' cookie sets may be plant-based, but this is unconfirmed — vegans should ask the shop about each item.",

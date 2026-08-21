@@ -667,6 +667,15 @@
  },
  {
   "city": "kyoto",
+  "id": "kyr_gion_duck_noodles",
+  "name": "ギオンダックヌードル (Gion Duck Noodles)",
+  "field": "soy_sauce_wheat",
+  "text": "No ingredient breakdown of the tare/soy sauce is published; standard ramen shoyu tare is wheat-based, so wheat should be",
+  "source": "http://gcjapan-kyoto.com/gion-duck-noodles/",
+  "why": "SAFETY DEFECT, and it points the reader at the wrong grain. The claim rests on an assumed wheat shoyu tare while the page — and the shop's own current Tabelog blurb, 「麺は鴨の旨みに負けないよう、ドイツ産ライ麦を使った風味豊かな全粒粉麺を採用」, and a 2026-07-29 Yahoo News piece, 「麺は、ドイツ産ライ麦を使った自家製の全粒粉麺」 — state plainly that the noodles "
+ },
+ {
+  "city": "kyoto",
   "id": "kyr_chuka_ryori_ban",
   "name": "中華料理 鷭 (Chuka Ryori Ban)",
   "field": "gf_cross_contamination",
@@ -682,6 +691,15 @@
   "text": "Chinese-style ramen and stir-fry seasoning almost certainly use standard wheat-based shoyu/Chinese sauces; no wheat-free",
   "source": "https://tabelog.com/kyoto/A2601/A260302/26025271/",
   "why": "Claim is inference presented as sourced. What the cited page DOES prove is more useful and should be used instead: the bowl is 中華そば, i.e. wheat kansui noodles, which is a harder wheat fact than the shoyu guess."
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_aburasoba_daikakumei_kin",
+  "name": "油そば 大革命 金閣寺店 (Aburasoba Daikakumei Kinkakuji-ten)",
+  "field": "soy_sauce_wheat",
+  "text": "The dish is built on a soy-sauce-based tare mixed through wheat noodles; standard Japanese soy sauce tare contains wheat",
+  "source": "https://news.yahoo.co.jp/expert/articles/140c446660382da91687cf6a70ad2f9fd7dcda82",
+  "why": "No page anywhere names a soy tare for this shop. The record should either drop the soy-sauce assertion or rewrite it as an explicit cuisine-convention inference. Two further staleness problems on the same record: (a) the shop stopped selling 油そば in August 2025 and dropped the word from its name — it"
  },
  {
   "city": "kyoto",
@@ -2089,6 +2107,15 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_nakatani_tofu",
+  "name": "中谷とうふ (Nakatani Tofu)",
+  "field": "positives",
+  "text": "The signature items — soy milk soft serve and tofu ice cream — are made from soybeans rather than dairy, making the core",
+  "source": "https://travel.yahoo.co.jp/kanko/spot-00019837/",
+  "why": "'Rather than dairy' is the record's inference, not anything a source states - soft-serve mixes routinely carry milk solids, so this is an unearned assurance to a vegan. What IS documented and should be cited instead: the plain tofu is 「北陸のエンレイ大豆と能登の塩田にがりだけを使った豆腐」 (soybeans and nigari only) at co-tri"
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_natural_grocery_store_mi",
   "name": "Natural Grocery Store midoriya（ミドリヤ） (Natural Grocery Store midoriya)",
   "field": "staff_allergy_handling",
@@ -2125,12 +2152,48 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_kitchen_yuki_musashi_ten",
+  "name": "キッチンユキ 武蔵店 (Kitchen Yuki Musashi-ten)",
+  "field": "gf_cross_contamination",
+  "text": "Japanese curry roux is thickened with wheat flour and the signature cutlets are coated in wheat breadcrumbs and deep-fri",
+  "source": "https://kitchen-yuki.co.jp/",
+  "why": "Sibling/HQ-citation defect: a Kanazawa branch record evidenced entirely from the Hakusan head office's site. Katsu curry at THIS branch is attested by a Retty review 「エムザ店はカレーとハヤシライスにメニューを絞ったお店です。金沢カレーの定番カツカレーをいただきました」 — but see the trading finding: the branch is closed, so the right fix is to hide "
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_kitchen_yuki_musashi_ten",
+  "name": "キッチンユキ 武蔵店 (Kitchen Yuki Musashi-ten)",
+  "field": "vegan_cross_contact",
+  "text": "The curry sauce and menu are meat-based (pork and chicken cutlets, hayashi rice), with no documented vegetarian or vegan",
+  "source": "https://kitchen-yuki.co.jp/",
+  "why": "Same HQ-citation defect. Retty independently confirms the branch sold カツカレー and ハヤシライス, which is what the record asserts — but the branch has closed, so hide rather than re-cite."
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_omicho_shunsai",
   "name": "近江町旬彩 (Omicho Shunsai)",
   "field": "soy_sauce_wheat",
   "text": "The menu centers on sashimi, torched nodoguro and seafood bowls, which are eaten with Japanese soy sauce (brewed with wh",
   "source": "https://retty.me/area/PRE17/ARE155/SUB15501/100000879179/",
   "why": "Sashimi/炙りのどぐろ is supported; the soy-sauce sentence is not on the page in either direction. Either soften it to a stated assumption or cite a source that shows the condiment. Separately: the せんべろセット is built on 生ビール — barley beer is the loudest gluten item here and gf_detail does not name it."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_yakiniku_horumon_shibafu",
+  "name": "焼肉ホルモン 芝生 (Yakiniku Horumon Shibafu)",
+  "field": "vegan_cross_contact",
+  "text": "Menu is entirely grilled beef and beef offal cooked on shared griddles; no plant-based offerings documented.",
+  "source": "https://horumon-shibafu.com/",
+  "why": "'No plant-based offerings documented' is contradicted by the operator's own documents. vegan_status 'no' is still the right destination call for a horumon house, but the claim overshoots and should name the vegetable sides."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_yakiniku_horumon_shibafu",
+  "name": "焼肉ホルモン 芝生 (Yakiniku Horumon Shibafu)",
+  "field": "staff_allergy_handling",
+  "text": "The official site notes that allergy information is available (linked on the site), so diners with allergies can request",
+  "source": "https://horumon-shibafu.com/",
+  "why": "Backwards on the point that matters. The shop does not offer to advise: it states the kitchen does not separate utensils, dishes or fryer oil, uses wheat flour, dairy and egg throughout, guarantees no separation, and puts the decision on the diner after consulting a doctor. Rewrite as: 'publishes a "
  },
  {
   "city": "kanazawa",
@@ -2152,12 +2215,30 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_koryori_to_oden_kankuro",
+  "name": "小料理とおでん 燗九郎 (Koryori to Oden Kankuro)",
+  "field": "soy_sauce_wheat",
+  "text": "Oden and small-plate izakaya cooking in Japan standardly uses wheat-containing soy sauce and dashi; no gluten-free prepa",
+  "source": "https://www.weekend-kanazawa.com/entry/kankurou",
+  "why": "The gf 'no' rating is right but the cited sentence is a category assumption. Far better evidence exists at the SAME publisher's venue feature (2025/5/14, https://colorfulcompany.jp/kanazawa/venues/12533 ), which prints the shop's own menu: 「京風おでん（約10種）165円～ 和をベースとした鰹出汁の王道おでん。車麩、焼ちくわ、鰯だんご、牛すじおでん等。」 p"
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_kusuriya_cafe",
   "name": "薬屋カフェ (Kusuriya Cafe)",
   "field": "positives",
   "text": "Menu is built around vegetable-forward seasonal soups, soy-milk potages, rice, pickles and herbal teas, so plant-based a",
   "source": "https://www.weekend-kanazawa.com/entry/kusuriya-cafe",
   "why": "TWO defects. (1) The rice-and-pickles half is not on the cited page at all; it is on the operator's own site: 「・ごはん（石川県産）・自家製つくだにと漬け物」. Re-cite https://kusuriyac.amebaownd.com/. (2) Worse, that same official page shows the monthly soup lunch is routinely NOT plant-based: Sep 2022 「トウガンときのこの中華風スープ」co"
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_shijimaya_honpo_honten_k",
+  "name": "四十萬谷本舗 本店（金沢町家発酵カフェ） (Shijimaya Honpo Honten (Kanazawa Machiya Hak)",
+  "field": "positives",
+  "text": "Signature cafe items are rice-koji amazake, amazake soda and koji-based gelato, which are plant-friendly and naturally w",
+  "source": "https://www.kanazawabiyori.com/spot/spot_13041.html",
+  "why": "FALSE ASSURANCE, both axes. The gelato is NOT wheat-free (花きんじょう declares 小麦) and NOT plant-friendly (all nine flavours declare 乳成分, two declare 卵). The genuinely safe item is the amazake: 「材料はお米と米糀のみなので、からだに優しいノンアルコールです」 with a blank アレルギー表示 (kabura.jp/products/detail/300). Rewrite the positive aro"
  },
  {
   "city": "kanazawa",
@@ -2224,6 +2305,15 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_soba_dokoro_hashimoto",
+  "name": "そば処 はしもと (Soba-dokoro Hashimoto)",
+  "field": "soy_sauce_wheat",
+  "text": "Cold oroshi soba is served with a soy/dashi tsuyu, which in Japan is normally made with wheat-containing soy sauce.",
+  "source": "https://www.weekend-kanazawa.com/entry/hanare",
+  "why": "The soy-sauce inference is reasonable for an Echizen oroshi tsuyu but no source states it — reword as an assumption or cite something that does. Two corrections while here. (1) GOOD CATCH BY THE RECORD, leave it alone: the article says 「福井県産のそば粉を100％使用」, which is 100% Fukui-GROWN buckwheat flour, no"
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_kanazawa_kagami",
   "name": "金澤 かが美 (Kanazawa Kagami)",
   "field": "gf_cross_contamination",
@@ -2239,6 +2329,24 @@
   "text": "Sashimi and grilled seafood are served with standard Japanese soy sauce, which contains wheat; no wheat-free tamari is d",
   "source": "https://tabelog.com/ishikawa/A1701/A170101/17005272/",
   "why": "The soy-sauce-contains-wheat part is a category default, not something this page says. Keep the caution but stop citing this URL for it — cite a general 醤油 reference, or drop the citation and phrase it as an assumption. The page does support the dish types, which is a separate claim."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_okahisa",
+  "name": "岡久 (Okahisa)",
+  "field": "soy_sauce_wheat",
+  "text": "Standard wheat-containing soy sauce and tare marinades are typical for this style of grill; no wheat-free tare is docume",
+  "source": "https://tabelog.com/ishikawa/A1701/A170101/17003654/",
+  "why": "This is a statement about what is 'typical for this style of grill', not about Okahisa, and the cited page carries nothing on soy sauce. The absence half ('no wheat-free tare is documented') is fair. Either drop the citation and mark the sentence as a general-category assumption, or replace it with "
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_yakiniku_horumon_kuromar",
+  "name": "焼肉ホルモンくろまる (Yakiniku Horumon Kuromaru)",
+  "field": "vegan_cross_contact",
+  "text": "An all-meat grill concept; the only plant item noted is a complimentary cabbage starter, and all cooking happens on gril",
+  "source": "https://kuromaru5529.owst.jp/",
+  "why": "Two errors against the cited page: the vegetable sides are erased, and the otoshi cabbage is priced at 220 yen, not free. vegan_status 'no' still stands (kimchi and namul at Korean-style grills routinely carry fish or animal aminos and nothing here is documented plant-only), but the text should read"
  },
  {
   "city": "kanazawa",
@@ -2629,6 +2737,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_yukari_chaya",
+  "name": "遊鹿里茶屋 (Yukari Chaya)",
+  "field": "positives",
+  "text": "Menu is built around matcha, fruit-syrup shaved ice, and red-bean zenzai rather than fried or heavy wheat-based dishes, ",
+  "source": "https://4travel.jp/dm_shisetsu/11368643",
+  "why": "Two defects. (a) The claim is contradicted by its own source: a reviewer on the cited page ate a 珈琲とケーキのセット, and クリームあずき is dairy — so 'rather than … heavy wheat-based dishes' and 'plant-based … starting point' are both overstated. Tabelog adds ミルクレープ and カステラ, i.e. this cafe sells layered crepe cak"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_ganso_hassho",
   "name": "元祖八昌 (Ganso Hassho)",
   "field": "soy_sauce_wheat",
@@ -2752,6 +2869,15 @@
   "text": "The sauce/broth is described as soy- and seafood-based, which in Japanese noodle shops typically uses wheat-containing s",
   "source": "https://shuccho-jiro.com/hiroshima-gomenya-kure-reimen/",
   "why": "'described as soy- and seafood-based' misquotes the source: no source describes the tare as soy. The real, sourced gluten hazard here is the wheat 平打ち麺 itself, which is enough for gf 'no' — the tare claim should be reworded as an unverified assumption rather than attributed to this blog."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "name": "湯葉と豆腐の店 梅の花 広島店 (Yuba to Tofu no Mise Ume no Hana Hiroshima-t)",
+  "field": "soy_sauce_wheat",
+  "text": "Kaiseki dishes use standard Japanese soy sauce and dashi, which typically contain wheat.",
+  "source": "https://www.umenohana.co.jp/stores/detail/57",
+  "why": "Genre convention written as if sourced, and it is also the weakest of the wheat arguments available here. Drop it or reword as an assumption, and replace it with what the shop's own menu actually documents: 生麸田楽 in every course, 天婦羅, しゅうまい, 麸まんじゅう, 湯葉グラタン, ドリア, 鰻セイロ — and the operator's written refu"
  },
  {
   "city": "hiroshima",

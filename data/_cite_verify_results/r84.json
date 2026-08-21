@@ -154,5 +154,145 @@
   "http": "200 plain curl",
   "method": "plain fetch of the cited root page",
   "note": "Supported. Worth naming the specific vegan traps on the same page, because they read as safe: 「魚粉がけポテトフライ」 is chips dusted with fish powder, 「シーザーサラダ」 is anchovy/cheese-dressed, and 冷奴/枝豆 are the only near-plant items with no preparation detail given."
+ },
+ {
+  "id": "kz_teuchi_soba_hoyasake",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "No gluten-free measures documented; soba and udon plus wheat-based tsuyu and tempura share the same kitchen.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17004885/",
+  "verdict": "supported",
+  "found": "Review on the cited page (Poggianti1958): 「女将さん曰く、うどんが名物で少し細めの麺は小松市産の大麦を使用したうどんで、凄くコシがあり食べ応えがあります。」 and (カピラニア光線) 「まず驚いたのが、蕎麦屋さんなのにうどん推し。」 The page's 関連のキーワード block lists 大麦, 小麦, とろろうどん, つけうどん, 讃岐うどん, 肉うどん, 汁そば, 鰹節, かまぼこ.",
+  "correct_url": null,
+  "http": "200 iPhone UA; Restaurant + FAQPage JSON-LD present and carried the review text",
+  "method": "iPhone-UA fetch of the cited Tabelog detail page, then parsed its Restaurant JSON-LD for full review bodies",
+  "note": "BARLEY, and it is the house specialty. The cited page has the proprietress herself saying the signature udon is made with 大麦 (barley) from Komatsu — hard gluten, stated by the operator, and the record never mentions it; it currently rests the whole case on 'soba is typically cut with wheat'. Add 大麦うどん. Separately, drop 'tempura': 天ぷら appears nowhere on this page for this shop (the 天ぷら hits belong to てんぷら的場 in the nearby-ranking block), so it is an unevidenced element sitting in an otherwise sound claim."
+ },
+ {
+  "id": "kz_teuchi_soba_hoyasake",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Broths and dipping sauces are dashi/soy-based and not specified as wheat-free; standard Japanese soy sauce contains wheat.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17004885/",
+  "verdict": "supported",
+  "found": "Cited page review: 「麺はコシがあり、おつゆも美味しい」; keyword block lists 鰹節. The 店舗基本情報 section carries no allergen, seasoning or wheat-free statement of any kind.",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "iPhone-UA fetch of the cited Tabelog detail page",
+  "note": "Honestly framed as an absence claim and the page does document no wheat-free seasoning. But this field is doing the wrong work here: the concrete, operator-stated gluten on this page is the 大麦 (barley) udon, not an inferred soy sauce."
+ },
+ {
+  "id": "kz_teuchi_soba_hoyasake",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Noodle broths typically use bonito (fish) dashi; no vegan or plant-based broth is documented.",
+  "url": "https://tabelog.com/ishikawa/A1701/A170101/17004885/",
+  "verdict": "supported",
+  "found": "Cited page 関連のキーワード: 鰹節, かまぼこ, うずら, 肉うどん — bonito flakes, fish cake, quail egg and meat udon. No vegan or plant-based broth appears anywhere on the page.",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "iPhone-UA fetch of the cited Tabelog detail page",
+  "note": "Supported. Keeping vegan_status at 'ask' is defensible — 月見とろろ / とろろそば / なめこそば are plausible plant bases and nothing rules out a plain order — but the record should say plainly that the tsuyu is bonito-based per the page's own keywords, so an 'ask' reader knows exactly what to ask about."
+ },
+ {
+  "id": "kz_teuchi_soba_koyori",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Soba noodles are buckwheat-based but the kitchen also fries tempura and uses wheat-containing soy sauce in the broth; no gluten-free protocol is documented.",
+  "url": "https://nihon-soba.jp/tabearuki/chubu/ishikawa/2022/08/18/13429/",
+  "verdict": "supported",
+  "found": "「女房と娘は天ぷらざるそば、当方は鴨ざるそばを頼みました」「天ぷらそばをいただいた女房と娘の評価も上々」「醤油は地元産の丸大豆醤油を使っているとのこと」「戸隠から仕入れた抜き実（信濃一号）を店主自らが挽いた蕎麦粉で打ったもの」",
+  "correct_url": null,
+  "http": "200 (plain curl; iPhone UA identical)",
+  "method": "plain fetch of the cited nihon-soba.jp report",
+  "note": "Every element of the claim is on the cited page, tempura included. One gap worth closing: the article never states the soba's buckwheat ratio, and 戸隠そば is conventionally 二八 (20% wheat flour), so the noodles themselves should not be implied wheat-free either."
+ },
+ {
+  "id": "kz_teuchi_soba_koyori",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "The dipping broth is finished with local round-soybean soy sauce, which contains wheat.",
+  "url": "https://nihon-soba.jp/tabearuki/chubu/ishikawa/2022/08/18/13429/",
+  "verdict": "supported",
+  "found": "「帰りがけに店主に尋ねたところ、鰹の本枯れ節と鯖節と利尻昆布で出汁を取っているとのことでした。… 醤油は地元産の丸大豆醤油を使っているとのこと。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch of the cited nihon-soba.jp report",
+  "note": "Correct, and correctly translated — worth recording as a positive. 丸大豆 describes whole soybeans, not the absence of wheat, and 丸大豆醤油 is wheat-brewed; this record reads it right where the same phrase has been mis-read as 'gluten-free soy sauce' elsewhere in the dataset. Sourced from the owner directly."
+ },
+ {
+  "id": "kz_teuchi_soba_koyori",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The broth is built on bonito and mackerel dashi, and duck dishes are a specialty, so animal products are central to the menu.",
+  "url": "https://nihon-soba.jp/tabearuki/chubu/ishikawa/2022/08/18/13429/",
+  "verdict": "supported",
+  "found": "「鰹の本枯れ節と鯖節と利尻昆布で出汁を取っているとのことでした」「当方は鴨ざるそばを頼みました」「つけ汁は鴨肉とネギ入りの温つゆで、山椒の粉付き」「鰹風味の出汁がよくきいた甘汁」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch of the cited nihon-soba.jp report",
+  "note": "Supported, owner-sourced. Operational note for the record, not a citation defect: the shop is now lunch-only and 完全予約制 (reservation-only, Tue–Sat 11:00–14:00 last entry, closed Sun/Mon/holidays per its own Instagram and Tabelog), which differs from the cited 2022 article's 11:30–15:00 / closed Wed–Thu."
+ },
+ {
+  "id": "kz_tsubomi",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Several signature sweets are naturally starch-based rather than wheat-based: honkuzukiri is made from Yoshino arrowroot (kudzu) and honwarabimochi from bracken starch, with kinako and kuromitsu.",
+  "url": "https://kaname-kanazawa.com/tsubomi/",
+  "verdict": "wrong_source",
+  "found": "The shop's own site states the starches and their origins outright — page title 「つぼみ｜金沢市柿木畠の和カフェ｜本葛と本蕨 素材にこだわる、和スイーツのお店です」 and the お品書き: 「本蕨もち 香りきなこ&黒みつ 熊本産本蕨粉（加賀棒茶付き）980円」, 「本葛きり 黒みつ 吉野産本葛粉（加賀棒茶付き）820円」, 「本葛もち 香りきなこ 吉野産本葛粉（加賀棒茶付き）820円」. The cited kaname article names 「本くずきり（特製黒みつ）」 and 「本わらびもち」 with きなこ/黒みつ but never says 吉野, 本葛粉 or 本蕨粉 anywhere.",
+  "correct_url": "http://tsubomi-kanazawa.jp/",
+  "http": "kaname-kanazawa.com 200 plain curl; tsubomi-kanazawa.jp 200 iPhone UA (plain HTML, no JS shell); its /306 /364 /394 news pages 200",
+  "method": "plain fetch of the cited article, then the record's own website field, which turned out to be the far better source",
+  "note": "The claim is true and understated — repoint it to the shop's own site. 本葛粉 and 本蕨粉 are 100% kudzu and 100% bracken starch (cheap warabimochi is usually potato/tapioca starch, and neither is wheat), the shop names the growing regions, and the whole published menu — 本蕨もち, 本葛きり, 本葛もち, 抹茶パフェ, 寒天の白玉クリームあんみつ, かき氷 — contains no wheat item at all, with 加賀棒茶 served alongside everything. The shop makes no allergen or 小麦 statement, so this stays a naturally-GF-menu finding, not a safety guarantee."
+ },
+ {
+  "id": "kz_tsubomi",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "http://tsubomi-kanazawa.jp/",
+   "https://kaname-kanazawa.com/tsubomi/"
+  ],
+  "why": "Three of the six published sweets are made from starches the shop names by origin — 吉野産本葛粉 (本葛きり, 本葛もち) and 熊本産本蕨粉 (本蕨もち) — served with きなこ and 黒みつ, and no item on the entire menu contains wheat; the shaved-ice syrups are 「すべて無添加の自家製」. That is REVIEW_PROTOCOL's 'some naturally-GF dishes, NO special handling' definition of options. It stays below high/dedicated because the shop publishes no allergen policy, no dedicated equipment and no 小麦 statement, so the record must keep stating the cross-contamination risk."
+ },
+ {
+  "id": "kz_tsubomi",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "http://tsubomi-kanazawa.jp/",
+   "https://kaname-kanazawa.com/tsubomi/"
+  ],
+  "why": "本葛きり (kudzu starch + 黒みつ), 本葛もち (kudzu starch + きなこ) and 本蕨もち (bracken starch + きなこ + 黒みつ) are plant-based by composition, as is the 加賀棒茶 that comes with every order and the 黒蜜きなこ shaved ice with its 無添加自家製 syrup; the dairy is confined to the 抹茶パフェ and the 白玉クリームあんみつ, which the record already flags. Weaker than the GF case — nothing is labelled vegan and shared serving utensils are undocumented — so it should not go above options."
+ },
+ {
+  "id": "kz_tsuchiya",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Coffee is paired with seasonal Japanese sweets like yokan and zenzai, several of which are traditionally plant-based, though the specific items are chosen by the house and not selectable.",
+  "url": "https://co-trip.jp/article/48301",
+  "verdict": "supported",
+  "found": "「席につくとまず、お茶と季節の和菓子が運ばれてきます。他の席の注文品では？と思ってしまいそうですが、これはウェルカムサービス。注文の品が出てくるまでの時間もゆっくりと楽しんでほしいという、ご主人のあたたかな心遣いです。」 and 「夏には『和三盆アイスコーヒー』、冬には『ぜんざい』が人気のメニュー。」",
+  "correct_url": null,
+  "http": "co-trip.jp 200 iPhone UA; the record's own website tuchiya.sakura.ne.jp resolves NXDOMAIN (curl 000 on http/https, www and apex); tabelog 200 iPhone UA; Yahoo Japan search 200 (Ecosia 403, Brave 429 at this run)",
+  "method": "plain/iPhone fetch of the cited co-trip article, DNS check on the record's website, then Yahoo Japan and the shop's Tabelog page for the yokan half",
+  "note": "The welcome-service framing and ぜんざい are verbatim on the cited page. 'Yokan' is NOT — it is real but evidenced elsewhere: Tabelog's 関連のキーワード for this shop lists 羊羹 and 栗羊羹, a review says 「ほどなく店主さんが、加賀棒茶とようかんを運んでくれました。これ、サービスです！」, and a TripAdvisor review says 「羊羹とお茶も出してくださり」. Add https://tabelog.com/ishikawa/A1701/A170101/17006894/ as the second citation. TWO DATA DEFECTS: (1) the record's website http://tuchiya.sakura.ne.jp/ is a dead domain — NXDOMAIN, not a 404 — and should be repointed to https://www.instagram.com/tsuchiya_cafe/, which is live (posts through 2026-03); (2) the shop is now Sat/Sun/holidays only per its own Instagram bio 「土・日・祝日営業 不定休 営業日、営業時間はGoogle mapにてご確認下さい」, so the record's 10:00–17:00 closed Mon/Tue listing is the stale one of the two it carries."
+ },
+ {
+  "id": "kz_tsuchiya",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17006894/",
+   "https://co-trip.jp/article/48301"
+  ],
+  "why": "The orderable menu is coffee-led and mostly naturally wheat-free — Tabelog's keyword block for the shop is コーヒー / 羊羹 / 栗羊羹 / ぜんざい / あんこ / 和三盆 / 抹茶 / 甘酒 / カフェ・オ・レ, and the free welcome item reviewers describe is 加賀棒茶と羊羹. The only wheat on the list is トースト / トーストセット, a separate toaster item. Calling the whole café 'Not gluten-free' overstates it; 'ask' keeps the reader verifying while not sending them past a coffee-and-yokan house. It must not go higher: no allergen handling is documented, it is a one-person operation, and the complimentary 季節の和菓子 arrives unbidden and unchosen, so a celiac has to decline or ask before it is set down."
  }
 ]

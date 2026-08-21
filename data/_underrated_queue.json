@@ -581,6 +581,20 @@
   "why": "ask — the record's 'no' is argued entirely from the two wheat dishes (anagomeshi tare, udon) and never accounts for what else is on the menu. Tabelog's 口コミに含まれるメニュー list for this shop includes 焼きがき(2) and 焼き牡蠿(2), and a 2026/05 diner writes 「注文したのは焼きガキと日本酒『幻』です」 — oysters grilled in the shell need no batter and no sauce — plus かき氷(3), a shaved ice. That is the same reasoning this sweep already accepted for hiro_kakiya (r61, no → ask). It is a weaker case than Kakiya's, because Kakiya is oyster-only while this kitchen simultaneously boils wheat udon and brushes a tare, and there is no operator statement about allergens at all — which is precisely why 'ask' and not 'options' is the ceiling. 'no' currently tells a celiac at the Karamon gate that there is nothing orderable, and the shop's own review record says otherwise."
  },
  {
+  "city": "hiroshima",
+  "id": "hiro_yuba_to_tofu_no_mise_ume",
+  "name": "湯葉と豆腐の店 梅の花 広島店 (Yuba to Tofu no Mise Ume no Hana Hiroshima-t)",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.umenohana.co.jp/api/shops/57/menu-categories/6",
+   "https://www.umenohana.co.jp/api/shops/57/menu-categories/7",
+   "https://www.umenohana.co.jp/stores/detail/57"
+  ],
+  "why": "options — the record's vegan_detail states 'There is no published vegan or vegetarian set menu', and that is false. This shop's own menu carries two, both flagged ビーガン in the item name: 「[要予約]※当日予約可 【ヴィーガン対応】菜食懐石」 6,200円 (湯葉豆腐と黒胡麻豆腐のお造り・アボカドと南瓜の豆腐サラダ・湯葉と野菜の豆乳しゃぶしゃぶ・ふく福豆冨 二色あん掛け・生麸田楽・大豆ミートの湯葉カツと大根餅・湯葉豆腐の蒲焼き・湯葉吸物・生湯葉のあん掛け御飯・香の物・デザート) and 「【ヴィーガン対応】菜食ランチ」 4,200円. Both are 要予約 but explicitly ※当日予約可. 'ask' tells a vegan to go and enquire; the operator has already published the answer, with prices and full course content. Not 'full' — the surrounding kitchen is wagyu, unagi, crab and dashimaki, and the vegan course is a bookable exception, not the house style. NOTE for whoever applies this: the vegan course itself contains 生麸 (raw wheat gluten) and a 湯葉カツ, so this upgrade must NOT be mirrored on gf_confidence."
+ },
+ {
   "city": "kanazawa",
   "id": "kz_amanatto_kawamura",
   "name": "甘納豆かわむら (Amanatto Kawamura)",
@@ -732,6 +746,18 @@
  },
  {
   "city": "kanazawa",
+  "id": "kz_omicho_kaisendonya_hirai",
+  "name": "近江町海鮮丼家ひら井 本店 (Omicho Kaisendonya Hirai Honten)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.kaisen-hirai.com/don.html"
+  ],
+  "why": "Seventeen of the twenty published bowls are raw seafood over rice with no cooked wheat component (甘えび丼, イクラ丼, 本マグロ漬け丼, 海鮮丼 and so on); the only wheat items are separately named and separately priced - ジャンボ海老天丼, 海鮮かきあげ丼, 特上うなぎ丼. The record's 'Not safe for celiacs' rests on 'dashi/seasonings are wheat-and-soy based', which no source states. The honest position is that no allergen programme is published and a shared tempura fryer is in the kitchen, so a celiac must ask and bring their own tamari - which is 'ask', not 'no'. Flagging as a judgement call for the human gate: the fryer risk is real, but a flat 'no' currently warns readers off seventeen bowls of plain raw fish on rice."
+ },
+ {
+  "city": "kanazawa",
   "id": "kz_omicho_shokudo",
   "name": "近江町食堂 (Omicho Shokudo)",
   "field": "gf_confidence",
@@ -757,5 +783,100 @@
    "https://moroeya.net/?pid=7630852"
   ],
   "why": "gf_detail rests on 'no allergen information or cross-contact controls are published', and the first half is simply wrong — Moroeya publishes a per-item 【アレルギー表示】 (塩どら焼 「小麦・卵・乳・山芋」; しょうゆ落がん 「醤油に小麦、大豆を含みます。」; 十二ヶ月 and 加州香 「なし」), which is exactly the information a celiac needs to choose. On top of that the branch's own published café menu contains no wheat item at all: three かき氷, three 冷やし寒天, 白小豆ぜんざい with 白玉, 白ゴマしるこ, and 生菓子/干菓子 with matcha. That is a documented set of gluten-free-by-ingredient options, i.e. 'options'. It is not higher: the shop bakes どら焼 and ぼうろ on the same premises, publishes no cross-contact statement, and the 生菓子 rotates (栗きんとん from September), so a celiac must still confirm the day's namagashi."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_sabo_soshin",
+  "name": "茶房 素心 (Sabo Soshin)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.kanazawabiyori.com/special/shaved-ice-kanazawa",
+   "https://www.navitime.co.jp/poi?spot=02301-2500067",
+   "https://s.tabelog.com/ishikawa/A1701/A170101/17001035/"
+  ],
+  "why": "FALSE WARNING. gf_detail says the menu 'centers on wheat- and dairy-based items' and calls it 'Not suitable for celiacs', but nothing documented here centers on wheat. NAVITIME describes a 「コーヒー専門店」 pouring cup-by-cup hand drip, whose sweets are 「手作りのチーズケーキや抹茶ブランマンジェ、和風パフェ」 — blancmange is a starch/milk set dessert, not a wheat one — and Kanazawa Biyori documents eight 和風かき氷 served with 「氷とシロップが別々」 plus a topping list that is entirely wheat-free (小倉小豆、白玉3個、アイスクリーム各種、練乳、クリーム、シロップ各種). Tabelog files the shop under カフェ／かき氷. A celiac reading 'no' walks past a coffee-and-shaved-ice shop where most of the menu has no wheat in it. It is not higher than 'ask': no allergen labelling is published, no cross-contact statement exists, the 上生菓子 rotate, and the cheesecake almost certainly has a biscuit base."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_shijimaya_honpo_honten_k",
+  "name": "四十萬谷本舗 本店（金沢町家発酵カフェ） (Shijimaya Honpo Honten (Kanazawa Machiya Hak)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.kabura.jp/products/detail/300",
+   "https://www.kabura.jp/products/list?category_id=6",
+   "https://www.kabura.jp/products/detail/159"
+  ],
+  "why": "options — the record hedges that 「koji/fermented products often involve shared production with wheat-containing items」, but the operator publishes a per-item allergen label and it exonerates most of the cafe range: the 甘酒 is 「材料はお米と米糀のみ」 with a blank アレルギー表示, and eight of the nine gelato flavours declare 乳成分 (and sometimes 卵/大豆) with no 小麦 at all. Exactly one flavour, 花きんじょう, declares 小麦. That is a documented wheat-free choice rather than a blanket unknown. Not higher than options: the in-store cafe menu is not itemised and the 2020-era 甘酒ジェラート is no longer in the labelled retail range, so a celiac still has to name the flavour and ask."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_tsubomi",
+  "name": "つぼみ (Tsubomi)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "http://tsubomi-kanazawa.jp/",
+   "https://kaname-kanazawa.com/tsubomi/"
+  ],
+  "why": "Three of the six published sweets are made from starches the shop names by origin — 吉野産本葛粉 (本葛きり, 本葛もち) and 熊本産本蕨粉 (本蕨もち) — served with きなこ and 黒みつ, and no item on the entire menu contains wheat; the shaved-ice syrups are 「すべて無添加の自家製」. That is REVIEW_PROTOCOL's 'some naturally-GF dishes, NO special handling' definition of options. It stays below high/dedicated because the shop publishes no allergen policy, no dedicated equipment and no 小麦 statement, so the record must keep stating the cross-contamination risk."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_tsubomi",
+  "name": "つぼみ (Tsubomi)",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "http://tsubomi-kanazawa.jp/",
+   "https://kaname-kanazawa.com/tsubomi/"
+  ],
+  "why": "本葛きり (kudzu starch + 黒みつ), 本葛もち (kudzu starch + きなこ) and 本蕨もち (bracken starch + きなこ + 黒みつ) are plant-based by composition, as is the 加賀棒茶 that comes with every order and the 黒蜜きなこ shaved ice with its 無添加自家製 syrup; the dairy is confined to the 抹茶パフェ and the 白玉クリームあんみつ, which the record already flags. Weaker than the GF case — nothing is labelled vegan and shared serving utensils are undocumented — so it should not go above options."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_tsuchiya",
+  "name": "土家 (Tsuchiya)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/ishikawa/A1701/A170101/17006894/",
+   "https://co-trip.jp/article/48301"
+  ],
+  "why": "The orderable menu is coffee-led and mostly naturally wheat-free — Tabelog's keyword block for the shop is コーヒー / 羊羹 / 栗羊羹 / ぜんざい / あんこ / 和三盆 / 抹茶 / 甘酒 / カフェ・オ・レ, and the free welcome item reviewers describe is 加賀棒茶と羊羹. The only wheat on the list is トースト / トーストセット, a separate toaster item. Calling the whole café 'Not gluten-free' overstates it; 'ask' keeps the reader verifying while not sending them past a coffee-and-yokan house. It must not go higher: no allergen handling is documented, it is a one-person operation, and the complimentary 季節の和菓子 arrives unbidden and unchosen, so a celiac has to decline or ask before it is set down."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_waguri_shiratsuyu",
+  "name": "和栗白露 (Waguri Shiratsuyu)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.wagurishiratsuyu.com/product-page/%E6%9C%B1%E8%8F%AF%E3%81%AF%E3%81%AD%E3%81%9A-%E5%B0%91%E3%81%97%E5%B0%8F%E3%81%95%E3%82%81",
+   "https://www.wagurishiratsuyu.com/product-page/%E6%A9%A1-%E3%81%A4%E3%82%8B%E3%81%B0%E3%81%BF-%E8%83%BD%E7%99%BB%E7%84%BC%E6%A0%97%E3%83%A2%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD",
+   "https://www.wagurishiratsuyu.com/product-page/%E8%8C%B6%E9%BC%A0-chanezu",
+   "https://www.wagurishiratsuyu.com/product-page/%E8%96%84%E5%A2%A8usuzumi",
+   "https://co-trip.jp/article/577796"
+  ],
+  "why": "The shop publishes per-product allergen declarations and does tick 小麦 where it applies (薄墨 pound cake 「アレルギー表記：卵、乳、小麦」; 二藍 and 菓子詰め合わせ 「乳、小麦、卵」), yet declares 乳 only for 朱華 and 橡 — both 「和栗をねりこんだ葛ねりと…和栗ペーストの新しい形のモンブラン」, i.e. kuzu-starch rather than flour — and 「アレルギー表記：なし」 for 茶鼠 (えがらまんじゅう of 和栗餡 in a 自家製粉したもち米 dough). A blanket 'Not gluten-free / Not safe for celiacs' misreads a shop that labels wheat honestly and sells items it declares wheat-free. 'ask' is the right tier: the in-café flagship 榛摺 really does contain スフレ・スポンジ, the kitchen is shared, and 支子 declares 乳 only while its description mentions スフレスポンジ — an inconsistency a celiac must resolve at the counter."
+ },
+ {
+  "city": "kanazawa",
+  "id": "kz_waguri_shiratsuyu",
+  "name": "和栗白露 (Waguri Shiratsuyu)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.wagurishiratsuyu.com/product-page/%E8%8C%B6%E9%BC%A0-chanezu"
+  ],
+  "why": "The record says 'No vegan dessert option is documented', but the shop's own page for 茶鼠 describes 「和栗のえがら 煉 neriは、契約農家で丁寧に育てられた和栗を餡にし、自家製粉したもち米の生地で包み上げた特別な一品」 with 「■アレルギー表記：なし」 — chestnut an in a self-milled glutinous-rice dough, no egg, no dairy declared. That is a documented plausibly-vegan item; 'ask' rather than 'no'."
  }
 ]
