@@ -227,6 +227,20 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__235",
+  "name": "グルテンフリー ティーズキッチン 上野広小路店",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "dedicated",
+  "evidence": [
+   "https://glutenfree.co.jp/about-us/",
+   "https://glutenfree.co.jp/menu/",
+   "https://glutenfree.co.jp/"
+  ],
+  "why": "THE MOST SEVERE UNDER-RATING IN THIS SHARD. A celiac searching this app is currently told to 'ask' at a restaurant that is named 'Gluten Free T's Kitchen', holds third-party certification from The Gluten Intolerance Group — 「アジア初のグルテンフリー認証」 — serves 「小麦・大麦・ライ麦を使わない料理や飲み物」 across the whole menu with no wheat item anywhere on the board, and discloses its only residual risk (supplier facilities that also handle wheat) unprompted. That is the textbook definition of 'dedicated'. The gf_uncited_downgrade note says 'Restore through REVIEW_PROTOCOL.md once evidence is attached' — this sweep attaches it: /about-us/ names the certifier verbatim, and /menu/ carries the wheat-free statement and the limited-space allergy caveat."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3_a_375",
   "name": "玄米菜食",
   "field": "gf_confidence",
@@ -236,6 +250,22 @@
    "http://www.mominoki-house.net/"
   ],
   "why": "The venue's own site publishes a named 「グルテンフリー・五葷抜き / Gluten-Free」 menu section with six priced items, in Japanese, English and Chinese. Under REVIEW_PROTOCOL that is 'some naturally-GF/adaptable dishes, NO special handling' — options, and capped there because it is a single source with no independent corroboration and no dedicated fryer claimed. The mandatory cross-contamination text must say: the same kitchen deep-fries wheat spring rolls and tempura, one GF-line item (揚げ餅) is itself deep-fried, the mock-meat karaage is seitan (the venue's own English menu calls it 'gluten chicken'), and neither tamari nor the miso type is stated."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_lei",
+  "name": "lei 小麦を使わない国産ビストロ 秋葉原",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://tabelog.com/tokyo/A1310/A131001/13306549/",
+   "https://tabelog.com/tokyo/A1310/A131001/13306549/dtlmenu/",
+   "https://kanda-curry.com/lei/",
+   "https://ameblo.jp/hinohinokoto/entry-12911602406.html",
+   "https://www.instagram.com/lei_akihabara/"
+  ],
+  "why": "UNDER-RATED. The record was cut to \"ask\" on 2026-08-20 solely because no finding cited a source (gf_uncited_downgrade from \"options\"); the sources exist and are unusually good for a Tokyo venue. The Tabelog listing is marked 公式 — owner-maintained — and reads 「小麦・添加物・化学調味料不使用の料理をご提供しています」 with こだわり 「【国産食材・無添加・無化調・小麦不使用】」; the manager is quoted by the Kanda Curry Grand Prix organisers saying 「グルテンフリーのビストロカレー … 小麦粉不使用」; the bread is 「小麦粉は一切使用せず」; and a gluten-free/wheat-allergy blogger visited and wrote 「シェフが小麦アレルギーとのことで相談もできて安心♫」. The shop opened 2025-01-06 and is trading now (reviews 2026-06, a social post four days ago). Restoring \"options\" is the minimum the evidence carries, and a human reviewer could reasonably argue \"high\" at the REVIEW_PROTOCOL gate. But the record's pending gf_proposed_tier of \"dedicated\" should be REFUSED, for three reasons no source rebuts: (1) every statement is 小麦/小麦粉 — wheat — and none of them says gluten-free as to barley, rye or oats; (2) the shop pours barley beer, listing 「限定プレミアムビール」 among its three headline こだわり, and both a Tabelog reviewer (「ガージェリーという都内でも4店舗ほでしか取り扱っていないビールがありました」) and Gargery's own stockist page put ガージェリー in this room; (3) no soy sauce or tamari brand is named and no cross-contamination protocol is published anywhere."
  },
  {
   "city": "tokyo",

@@ -666,5 +666,256 @@
    "http://www.tetsu102.com/"
   ],
   "enrich_note": "Confirmed, including that the branch is still trading — which was the thing worth checking, since arcade shops like this turn over. A nationwide Tabelog search for つけめんTETSU 御徒町 (double-encoded rstLst, HTTP 200, 3件) returns つけめんTETSU 御徒町らーめん横丁店 = 13176725 as the only match on that name; the detail page (iPhone UA, HTTP 200) gives 台東区上野5-10-14 御徒町ラーメン横丁 at 35.70594/139.77462, about 340 m from the sweep's approximate pin, so loc_precise is now true. The branch then appears by name, address and phone on the chain's own current SHOP LIST at tetsu102.com (HTTP 200, news current to 20 August 2026), which is the independent confirmation that it has not quietly closed. The light record's つけ麺 and 台東区上野 (Okachimachi Ramen Yokocho) both check out — the yokochō is in the registered address. The gluten verdict is unusually well-evidenced for a ramen shop: the brand states in its own words that udon flour is blended into the noodle."
+ },
+ {
+  "id": "tokyo3__227",
+  "status": "confirmed",
+  "name": "蒙古タンメン中本 御徒町店",
+  "lat": 35.705944,
+  "lng": 139.774386,
+  "loc_precise": true,
+  "address_ja": "〒110-0005 東京都台東区上野5-10-14 第二御徒町橋高架下",
+  "enrich_confidence": "high",
+  "cuisine": "The spicy-miso chain that trained Tokyo's chilli tolerance — a miso tanmen base piled with cabbage and pork, then graded from not-hot-at-all up through 蒙古タンメン (medium, the best seller) to the notorious 北極. Sub-¥1,000 bowls, 10:00 to 23:00, under the railway arches at Okachimachi.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Ueno 5-chōme, in the Dai-ni Okachimachi-bashi arches beneath the JR viaduct — a couple of minutes from Okachimachi (JR Yamanote/Keihin-Tōhoku), Naka-okachimachi (Tokyo Metro Hibiya line) and Suehirochō (Ginza line).",
+  "website": "https://www.moukotanmen-nakamoto.com/",
+  "menu_url": "https://www.moukotanmen-nakamoto.com/menu/menu_ramen/",
+  "hours_raw": "10:00 - 23:00　■定休日 年末年始（テイクアウトは開店30分前より電話で受付）",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Ruled out by the company itself, in writing, which is worth more than a guess. Its allergy page states that shared cooking equipment means 小麦 (wheat) may be present in any menu item, and then adds the line that settles it: 「当店で使用する調味料や業務用食材に関しまして、個別の原材料の使用、不使用を開示することは致しかねます。」 — they decline to disclose whether any given ingredient is or is not used in their seasonings and commercial food supplies. A kitchen that will not tell you what is in the sauce cannot be treated as safe. On top of that the noodles are wheat and are made on a shared production line where cross-contact is acknowledged, and the base is a miso-and-soy broth. Do not eat here on a gluten-free diet.",
+  "vegan_status": "no",
+  "vegan_detail": "No. Even the vegetable-heavy bowls are built on a pork-and-chicken-inclusive broth — the company's own allergen list names 牛肉, 豚肉, 鶏肉 and ゼラチン as possible in any item — and the standard tanmen carries pork. There is no plant-based bowl and the company will not confirm the composition of its stocks, so a vegan cannot verify anything here either.",
+  "chef_bio": {
+   "chef_name": "白根 誠 (Makoto Shirane)",
+   "roles": [
+    "二代目 (second-generation owner)",
+    "代表 of MAKOTO FOOD SERVICE"
+   ],
+   "origin": "Born 31 March 1960 and raised in Kumagaya, Saitama — 「暑いぜ熊谷！辛いぜ中本！」 as he puts it",
+   "background": "中本 opened in Kami-itabashi in 昭和43年 (1968) and built a following among students on a chilli-heavy Chinese-style ramen. Makoto Shirane was one of its regular customers before he was its owner: he took over the flavour and the name from the founder 中本正 as 二代目, and the business has traded as 蒙古タンメン中本 under MAKOTO FOOD SERVICE since 2000. It now runs shops across Tokyo, Saitama, Kanagawa and Chiba and beyond; the Okachimachi branch opened on 15 August 2008 in the arches under the JR viaduct, has 22 seats (16 counter, three tables of two) and holds a Tabelog 3.47 over 1,937 reviews. The shop runs its own limited specials — in August 2026 the Okachimachi kitchen was selling a staff-created 『中本風オロチョンラーメン』 for a fortnight.",
+   "philosophy": "Shirane on inheriting the name: 「先代が作ってくれたラーメンの中には、唐辛子と共にお客様に対する愛情もたくさん入っていました。この味を絶やしては二度とこのラーメンには出会えない、その一念が現在の中本とお客様を結びつけたのだと思っています。」 — he took the succession as a lifetime undertaking to keep the flavour and the sign alive.",
+   "specialty": "味噌タンメン (小辛) is the base of the whole menu and 蒙古タンメン (中辛) the best seller; the shop's own PR frames the range as 「全く辛くないメニューから少し辛め〜超激辛まで」, so a nervous eater and a chilli obsessive can sit at the same counter. Tsukemen, rice bowls and chilled summer bowls run alongside.",
+   "anecdotes": [
+    {
+     "text": "Asked which item on his own menu he eats, Shirane names the two opposite ends: 味噌タンメン and 冷し味噌ラーメン — 「その時は店主じゃなくてただの中本ファンです」.",
+     "source": "https://www.moukotanmen-nakamoto.com/tensyu/"
+    },
+    {
+     "text": "His stated goal for the chain, repeated to staff since the flagship opened, is simply 全国制覇 — the whole country.",
+     "source": "https://www.moukotanmen-nakamoto.com/tensyu/"
+    }
+   ],
+   "japanese_sources_summary": "The chain's own site moukotanmen-nakamoto.com is live and updated (news items dated 19, 12 and 6 August 2026) and lists 蒙古タンメン中本 御徒町 among its Tokyo shops, confirming the branch is trading. Its 店主ご挨拶 page gives the 昭和43年 opening, the succession from 先代 中本正 to 二代目 白根誠, his birth date of 31 March 1960 and Kumagaya upbringing, and his favourite items. Its アレルギーに関するご案内 page lists 卵・乳・小麦・えび・かに・そば・落花生 and two dozen more as possible in any item because of shared equipment, states that the company will not disclose the presence or absence of individual ingredients in its seasonings and commercial supplies, and answers the standing question about egg in the noodles: no egg as an ingredient, but the noodles share a production line with noodles that contain other allergens, so trace cross-contact is possible. Tabelog 13054332 gives 台東区上野5-10-14 第二御徒町橋高架下, 03-5688-1233, coordinates 35.70594/139.77439, opened 2008年8月15日, hours 10:00–23:00 closed 年末年始, 22 seats, all non-smoking, cards and transport IC accepted, takeaway, children welcome, budget ～￥999, and the PR line 「まずは当店基本メニューの味噌タンメン（小辛）、一番人気の蒙古タンメン（中辛）からお召し上がりください。」",
+   "confidence": "high",
+   "sources": [
+    "https://www.moukotanmen-nakamoto.com/tensyu/",
+    "https://www.moukotanmen-nakamoto.com/allergy/",
+    "https://www.moukotanmen-nakamoto.com/shop/",
+    "https://tabelog.com/tokyo/A1311/A131101/13054332/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Company statement: 「当店のメニューには、調理の際、アレルギー物質を含むメニューと共通の調理器具を使用しております」 — shared utensils across the whole menu, with 小麦 named among the allergens that may therefore appear in anything.",
+     "source": "https://www.moukotanmen-nakamoto.com/allergy/"
+    },
+    {
+     "text": "The noodles are produced on a line shared with other noodles, and the company says trace cross-contact allergens may be present as a result.",
+     "source": "https://www.moukotanmen-nakamoto.com/allergy/"
+    }
+   ],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [
+    {
+     "text": "The company publishes an allergy page but explicitly limits what it will answer: 「当店で使用する調味料や業務用食材に関しまして、個別の原材料の使用、不使用を開示することは致しかねます。」 It also states the guidance is a reference only and does not guarantee that a reaction can be prevented. Treat this as a shop that has declined to guarantee.",
+     "source": "https://www.moukotanmen-nakamoto.com/allergy/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "The company keeps a dedicated page for customers arriving in a wheelchair or with a guide dog — a level of published access thinking most ramen chains do not bother with.",
+     "source": "https://www.moukotanmen-nakamoto.com/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "high",
+   "note": "Easy to walk into: 22 seats with real tables as well as a counter, all non-smoking, cards and Suica-type IC accepted, children welcome, takeaway available (phone from 30 minutes before opening), and long hours — 10:00 to 23:00, closed only over New Year. The chain publishes guidance for wheelchair users and guide-dog handlers. The one thing to get right is heat: the scale runs from genuinely not spicy to the 北極 end, so start at 味噌タンメン (小辛) or 蒙古タンメン (中辛) and work up rather than being brave at the ticket machine. No English menu is advertised, but the numbered heat grading is easy to point at."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13054332/",
+   "https://www.moukotanmen-nakamoto.com/shop/",
+   "https://www.moukotanmen-nakamoto.com/allergy/",
+   "https://www.moukotanmen-nakamoto.com/tensyu/"
+  ],
+  "enrich_note": "Confirmed on both the directory and the operator's own site. A nationwide Tabelog search for 蒙古タンメン中本 御徒町 (double-encoded rstLst, HTTP 200, 16件) returns 蒙古タンメン中本 御徒町店 = 13054332 first; the detail page (iPhone UA, HTTP 200) gives 台東区上野5-10-14 第二御徒町橋高架下 at 35.70594/139.77439, about 340 m from the sweep's approximate pin, so loc_precise is now true. The chain's own 店舗のご案内 page (HTTP 200, site news current to 19 August 2026) lists 蒙古タンメン中本 御徒町 among its Tokyo branches, which is the independent confirmation it is still open. The light record's ラーメン・スパイシー味噌 and its 'Okachimachi Ramen Yokocho' neighbourhood both check out — this shop shares the 上野5-10-14 viaduct block with つけめんTETSU 御徒町らーめん横丁店, which is elsewhere in this same shard, so the two records are neighbours rather than duplicates. The gluten call is unusually well sourced for a ramen chain: the company's own allergy page names wheat as possible across the whole menu on shared equipment and then refuses to disclose individual ingredients, which under the project's rules is a disqualifier regardless of wording."
+ },
+ {
+  "id": "tokyo3_to",
+  "status": "confirmed",
+  "name": "らーめん 鴨to葱 御徒町店",
+  "lat": 35.708365,
+  "lng": 139.775279,
+  "loc_precise": true,
+  "address_ja": "〒110-0005 東京都台東区上野6-4-15",
+  "enrich_confidence": "high",
+  "cuisine": "Duck, spring onion and water — that is the entire stock, simmered low every morning from domestic aigamo — served clear in a glass-like bowl with duck chāshū, thick menma and two kinds of negi you choose yourself; the 鴨らーめん is about ¥1,080 and the 飲める親子丼 side (egg given ten seconds of heat) ¥420. Open 24 hours, queue included.",
+  "cuisine_type": "ramen",
+  "neighborhood": "Ueno 6-chōme, right on the Ameyoko strip — 1 min (84 m) from Okachimachi (JR Yamanote/Keihin-Tōhoku, north exit), 2 min from Ueno-hirokōji (Tokyo Metro Ginza line, exit A7), 2 min from Naka-okachimachi (Hibiya line, exit 4), 6 min from JR Ueno (Shinobazu exit).",
+  "website": "https://www.kamotonegi.com/shoprisuto/okachimachi/",
+  "menu_url": "https://www.kamotonegi.com/",
+  "hours_raw": "24時間営業（スープが無くなり次第終了）　定休日：無休　※2026年3月1日(土)より24時間営業に変更",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "The company's own recipe notes rule it out twice over. The noodles are 「国産全粒粉と小麦をブレンドした、鴨to葱オリジナルの特注麺」 — a custom wholemeal-and-wheat blend. The tare is built from 濃口生醬油, 淡口醤油 and 再仕込み醤油 sourced from Banshū Tatsuno, Chiba and Aichi: three grades of wheat soy sauce, one of them double-brewed. The famous clarity of the broth is not a sign of simplicity for a celiac — the stock may be only duck, onion and water, but everything added to it after that is wheat. There is no gluten-free option and none is claimed.",
+  "vegan_status": "no",
+  "vegan_detail": "No. Duck is the whole idea: the stock is domestic aigamo simmered with negi and water and nothing else, the topping is duck chāshū, and the signature side is an egg-and-poultry donburi. The company even markets the nutritional profile of duck fat on its front page. Nothing plant-based exists here.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "運営：らーめん鴨to葱 (kamotonegi) — the Okachimachi shop is the flagship of a group now running Asakusa, Shibuya-Miyamasuzaka, Shinjuku (Iito Lumine and Nishiguchi), Sugamo, Ikebukuro and Osaka branches"
+   ],
+   "origin": "Okachimachi, Taitō-ku — the original shop opened here on 28 June 2017 and the group has expanded outward from it",
+   "background": "らーめん 鴨to葱 opened at 上野6-4-15 on 28 June 2017 and became one of the most-queued ramen shops in Ueno on a single idea: a duck stock made of nothing but duck, spring onion and water. The company simmers selected domestic aigamo gently every morning; the ducks come from Kyoto, Aomori, Iwate and Saitama, the alliums are chosen by season and region from across Japan, and the water is purified. It switched to 24-hour trading on 1 March 2026. The room seats 19 with tables as well as counter, and reviewers note a heavily international clientele, staff largely from overseas working to a tight operations manual, and an annex across the street that helps turn the queue over. The group has grown fast — Asakusa opened in September 2025, Shinjuku-Nishiguchi in April 2026, Links Ikebukuro on 17 August 2026 — and has done a nationwide collaboration cup noodle and a residency at the Regent Hong Kong.",
+   "philosophy": "Its whole pitch is subtraction: 「当店の鴨だしは『鴨・葱・水』のみで出来ています。」 The company is also unusually candid about walking a claim back — a note on its own front page reads 「2024年8月、原材料の見直しを行い無化調の表記を取り下げました」, i.e. after reviewing its ingredients it withdrew its own 'no MSG' labelling rather than let it stand.",
+   "specialty": "鴨らーめん — clear duck-and-negi broth, duck chāshū, thick menma, and a choice of two negi from the day's three (whole white log, sliced white, ginger-dressed onion), with yuzu-koshō on the table as a mid-bowl change; about ¥1,080, with 鴨ラーメン〈上〉 around ¥1,480. The side to order is 『飲める親子丼』 ¥420 — 'drinkable oyakodon', egg given ten seconds of heat.",
+   "anecdotes": [
+    {
+     "text": "The bowl is part of the point — reviewers describe a clear glass-like vessel with the noodles laid in perfectly aligned lines, 「箸を入れるのが少しもったいなく感じるほど」.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13210392/"
+    },
+    {
+     "text": "You pick your own alliums: two of the day's three negi preparations, chosen when you hand over your ticket in the queue.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13210392/"
+    },
+    {
+     "text": "In August 2024 the company reviewed its ingredients and removed its own 無化調 (no added MSG) claim from its labelling — a shop taking a marketing line down rather than defending it.",
+     "source": "https://www.kamotonegi.com/"
+    }
+   ],
+   "japanese_sources_summary": "The company's own site kamotonegi.com is live and current (news dated 17 August 2026) and offers Japanese, English, Korean, Simplified and Traditional Chinese. Its front page sets out the recipe: stock of 鴨・葱・水 only from selected domestic aigamo simmered gently each morning; tare from 濃口生醬油, 淡口醤油 and 再仕込み醤油 sourced from 播州龍野, 千葉 and 愛知; ducks from 京都・青森・岩手・埼玉; noodles 「国産全粒粉と小麦をブレンドした…特注麺」; the 『飲める親子丼』 with a ten-second cook; and the August 2024 withdrawal of its 無化調 claim. Its 御徒町店 page gives 東京都台東区上野6-4-15, 24時間営業, 19席（テーブル席有り）, 全席禁煙, no cards / e-money / QR, reservations possible Monday–Thursday excluding holidays 11:00–21:00 with last entry 20:00, and access figures — Okachimachi north exit 84 m / 1 min, Ueno-hirokōji A7 132 m / 2 min, JR Ueno Shinobazu 415 m / 6 min. Tabelog 13210392 matches: 台東区上野6-4-15, coordinates 35.70837/139.77528, opened 2017年6月28日, 24-hour with 「3月1日(土)から営業時間を24時間営業とさせて頂きます」, 19 seats, all non-smoking, cash only, no reservations, homepage kamotonegi.com, 3.73 over 4,683 reviews, and the same station distances plus Naka-okachimachi exit 4 at 142 m.",
+   "confidence": "high",
+   "sources": [
+    "https://www.kamotonegi.com/",
+    "https://www.kamotonegi.com/shoprisuto/okachimachi/",
+    "https://tabelog.com/tokyo/A1311/A131101/13210392/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Nineteen seats and one boiler running a custom wholemeal-and-wheat noodle; the company names the flour blend itself as a feature of the bowl.",
+     "source": "https://www.kamotonegi.com/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The tare is a blend of three wheat soy sauces — 濃口生醬油, 淡口醤油 and 再仕込み醤油 from Banshū Tatsuno, Chiba and Aichi. The saikomi grade is brewed a second time using soy sauce in place of brine, so the wheat load is if anything higher than standard.",
+     "source": "https://www.kamotonegi.com/"
+    }
+   ],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "The company publishes its recipe components openly — duck origins, soy sauce grades and regions, flour blend — which is far more than most ramen shops disclose, and it withdrew its own no-MSG claim in August 2024 after reviewing ingredients rather than leaving it up. You can at least see what you are being served.",
+     "source": "https://www.kamotonegi.com/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "high",
+   "note": "Very approachable for a visitor and set up for one: the company's website runs in English, Korean, Simplified and Traditional Chinese, ordering is by ticket machine outside so no Japanese is needed, the room has tables as well as a counter, and it is open 24 hours a day, every day — so the queue that forms at lunch simply is not there at 03:00 or 09:00. Nineteen seats, all non-smoking. Bring cash: no cards, no electronic money, no QR payment. Reservations are possible but only Monday to Thursday excluding holidays, 11:00–21:00, last entry 20:00, through the company site. You will be asked to pick two of the day's three spring-onion preparations when you hand over your ticket, and there is yuzu-koshō on the table to change the bowl halfway through."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13210392/",
+   "https://www.kamotonegi.com/",
+   "https://www.kamotonegi.com/shoprisuto/okachimachi/"
+  ],
+  "enrich_note": "Confirmed against the operator's own site, but the Tabelog picture needs a warning for whoever merges this. A nationwide Tabelog search for 鴨to葱 (double-encoded rstLst, HTTP 200, 183件) and a narrower 鴨to葱 上野御徒町 (HTTP 200, 7件) return TWO listings for the flagship in A1311/A131101: 13210392 らーめん 鴨to葱 at 上野6-4-15, opened 2017-06-28, 19 seats, 4,683 reviews, linking kamotonegi.com; and 13312953 らーめん 鴨to葱 上野御徒町本店 at 上野6-3-5 大口ビル, opened 2024-07-11, 61 reviews. A review on the second says the flagship 「2024年7月から現在の場所に移転して営業しています」 and that the new site is directly opposite the old one; a review on the first describes an annex 「お店の斜め向かいにも離れがある」. I resolved this against the company itself: kamotonegi.com's own 御徒町店 page, current as of August 2026, gives the address as 東京都台東区上野6-4-15 — the first listing — so that is the address and those are the coordinates used here (35.708365/139.775279, about 90 m from the sweep's approximate pin, loc_precise true). The two buildings are roughly 60 m apart and the operation appears to span both, so a human should decide whether the app needs one pin or two, and watch for a duplicate record if 13312953 was also swept. Name set to the operator's own 「らーめん鴨to葱 御徒町店」; the light record read らーめん 鴨to葱, which is the brand rather than the branch. Its 台東区上野 (Okachimachi Station) and ラーメン・シンプル鴨 are both exactly right."
+ },
+ {
+  "id": "tokyo3__230",
+  "status": "confirmed",
+  "name": "すしと天ぷら とろ一 御徒町本店",
+  "lat": 35.708164,
+  "lng": 139.774288,
+  "loc_precise": true,
+  "address_ja": "〒110-0005 東京都台東区上野4-1-4 1F・2F・3F",
+  "enrich_confidence": "high",
+  "cuisine": "A three-floor sushi-and-tempura izakaya two minutes from Okachimachi that stays open until six in the morning — Toyosu fish brought in daily on the company's own vans, mild-vinegared shari, and an eight-course set at ¥3,300, or ¥4,950 with two hours of free-flow drinks.",
+  "cuisine_type": "sushi",
+  "neighborhood": "Ueno 4-chōme, between Ameyoko and Chūō-dōri — 2 min from Okachimachi (JR Yamanote/Keihin-Tōhoku), close to Ueno-hirokōji (Tokyo Metro Ginza line), Naka-okachimachi (Hibiya line) and Ueno-okachimachi (Toei Ōedo line).",
+  "website": "https://sushitotempura-toroichi-okachimachi.com/",
+  "menu_url": "https://sushitotempura-toroichi-okachimachi.com/course/",
+  "hours_raw": "月〜日・祝日・祝前日・祝後日 11:00 - 06:00（L.O. 05:30）　※コースの来店時間は11時00分〜28時00分",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "The name is half the problem: tempura is one of the two things this kitchen does, so a wheat-batter fryer runs all day beside the sushi counter, and every published course puts a 揚物 course of four seasonal tempura items in the middle of the meal. Add the standard wheat soy sauce at the table, the 餡掛け sauce on the ebi-shinjo small dish, and a 突き出し you do not choose, and there is no clean path through the menu. No allergen statement is published on the shop's own site. If someone in your party is celiac, this is the wrong room in a neighbourhood with better options.",
+  "vegan_status": "no",
+  "vegan_detail": "No. The house is built on Toyosu fish — sashimi, nigiri, a fish-stock 止椀 closing every course — and the vegetable dishes are fried in the same oil as the seafood. No plant-based course or dish appears on the shop's own course and menu pages.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "和食職人 (the kitchen's washoku chefs and sushi itamae; not individually named in published sources)",
+    "調理長 (head chef — the courses list a 調理長推奨の一品 but do not name him)"
+   ],
+   "origin": "Ueno 4-chōme, Taitō-ku — the shop opened here on 29 May 2018",
+   "background": "すしと天ぷら とろ一 御徒町本店 opened on 29 May 2018 and occupies all three floors of a freestanding building two minutes from Okachimachi station: 120 seats made up of a 10-seat counter, 80 table seats and 30 seats in semi-private tatami rooms, with private rooms for six to thirty and charter for parties of twenty to fifty. Its pitch is a combination that usually costs a great deal more — sushi and tempura in one sitting — at izakaya prices, and its distinguishing operational claim is that the fish is bought each morning at Toyosu by the company's own buyers and moved on its own vehicles so the cold chain stays under its control. The shari is deliberately gentle on the vinegar. The other distinguishing thing is the clock: last orders are 05:30 and the kitchen serves until 06:00, which makes it one of the few places in Ueno where a sushi course is available at four in the morning.",
+   "philosophy": "From the shop's own site: 「毎朝豊洲市場から目利きで仕入れた鮮魚を、自社配送で鮮度管理まで一貫して徹底」 — buying with their own eye at Toyosu and carrying it themselves, and 「その時々で美味しいお米を使った、お酢がきつすぎないマイルドなシャリで握ります」.",
+   "specialty": "The current eight-course set (from 1 July 2026): 前菜 酒肴三種盛 / 小鉢 季節野菜と海老真薯の餡掛け / 造り 旬の鮮魚三種盛 / 焼物 調理長推奨の一品 / 揚物 季節の天麩羅ネタ4種 / 寿司 本鮪の入ったお任せ握り6貫 / 止椀 / 甘味 — ¥3,300 food only, ¥4,950 with two hours of free-flow drinks, for parties of 2 to 20, 120 minutes. There is also a 「とろ一みやび御膳」 pairing sushi and tempura on one tray, aimed at lunch.",
+   "anecdotes": [
+    {
+     "text": "The shop advertises its own hours as the selling point — 「深夜6時まで営業！…観光で夜遅くまで上野を堪能した方や、飲み会後の2件目、3件目などに」 — a sushi and tempura house pitched explicitly as your second or third stop of the night.",
+     "source": "https://sushitotempura-toroichi-okachimachi.com/"
+    },
+    {
+     "text": "Course bookings are taken up to 28:00 — Japanese trade time for 4 a.m. — which tells you what kind of room this is after midnight.",
+     "source": "https://sushitotempura-toroichi-okachimachi.com/course/"
+    }
+   ],
+   "japanese_sources_summary": "The shop's own site (sushitotempura-toroichi-okachimachi.com, HTTP 200) is titled 【公式】すしと天ぷら とろ一 御徒町本店 — the light record's full name verbatim — and runs in Japanese, English, Korean and Chinese, with reservation phone 050-5269-8996. Its front page gives the Toyosu-direct sourcing with own-fleet delivery, the mild shari, 御徒町駅2分, 深夜6時まで営業, and the とろ一みやび御膳. Its course page prices the current 8-item set at ¥3,300 food-only and ¥4,950 with a 120-minute free-flow, both limited to 20 people a day, running from 2026年7月1日, arrival window 11:00–28:00. Tabelog 13228246 gives 台東区上野4-1-4 1F・2F・3F, 03-5846-7811, coordinates 35.70816/139.77429, opened 2018年5月29日, hours 11:00–06:00 (L.O. 05:30) seven days, 120 seats (counter 10, table 80, 座敷 semi-private 30), private rooms for 6–30, charter 20–50, 突き出し ¥550, cards including UnionPay, transport IC and Edy/nanaco/WAON/iD/QUICPay, PayPay, 全席禁煙 with a second-floor smoking room and an ashtray at the entrance, 一軒家レストラン, children of any age welcome, and — the detail that matters for a visitor — 複数言語メニューあり（英語、中国語簡体字、韓国語）and 写真付きメニューあり.",
+   "confidence": "high",
+   "sources": [
+    "https://sushitotempura-toroichi-okachimachi.com/",
+    "https://sushitotempura-toroichi-okachimachi.com/course/",
+    "https://tabelog.com/tokyo/A1311/A131101/13228246/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Tempura is half the concept — every course includes a 揚物 course of four seasonal tempura items — so a wheat-batter fryer runs continuously in the same kitchen as the sushi.",
+     "source": "https://sushitotempura-toroichi-okachimachi.com/course/"
+    },
+    {
+     "text": "The course also opens with an 餡掛け small dish (season vegetables and prawn shinjo in a thickened sauce) and a 突き出し charged at ¥550 that arrives without being ordered — two items a gluten-free diner cannot vet in advance.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13228246/"
+    }
+   ],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Menus exist in English, Simplified Chinese and Korean and carry photographs, and the shop takes reservations online — so a dietary question can be raised in advance and in writing rather than across a busy counter.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13228246/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "high",
+   "note": "Built for visitors and for large groups: multilingual menus (English, Simplified Chinese, Korean) with photographs, a website in four languages, online booking, every payment method that exists — cards including UnionPay, all the transport IC and e-money, PayPay — and 120 seats over three floors with private rooms from six to thirty and charter up to fifty. Children of any age are welcome. Open 11:00 to 06:00 seven days, which makes it the obvious late-night landing spot in Ueno. Two caveats: a ¥550 tsukidashi is charged automatically, and although the seating is non-smoking there is a smoking room on the second floor and an ashtray at the entrance."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13228246/",
+   "https://sushitotempura-toroichi-okachimachi.com/",
+   "https://sushitotempura-toroichi-okachimachi.com/course/"
+  ],
+  "enrich_note": "Confirmed, and the light record's name was more accurate than Tabelog's. A nationwide Tabelog search for とろ一 御徒町 (double-encoded rstLst, HTTP 200) returned 1件 — すしと天ぷら とろ一 = 13228246 — which lists the shop without the 御徒町本店 suffix; but the shop's own site is headed 【公式】すしと天ぷら とろ一 御徒町本店, exactly as the sweep recorded it, so the light record's name is kept unchanged. The Tabelog detail page (iPhone UA, HTTP 200) gives 台東区上野4-1-4 1F・2F・3F at 35.70816/139.77429, about 300 m from the sweep's approximate pin, and links the official domain; that site (HTTP 200) independently confirms the branch identity, the 御徒町駅2分 access, the 06:00 closing and the current course pricing dated from 1 July 2026, so it is demonstrably trading. The light record's 寿司・天ぷら is the shop's own name for itself. gf_confidence lowered from the light record's implicit reading to a firm 'no': a kitchen whose every course contains a four-item tempura service, with no allergen statement anywhere, is not an 'ask' room."
  }
 ]

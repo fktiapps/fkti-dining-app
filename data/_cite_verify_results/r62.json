@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hiro_kanseien",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Chinese dishes here are seasoned in the standard way with soy sauce, which is typically wheat-based, and the menu prominently features ramen and gyoza made with wheat.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340108/34003934/",
+  "verdict": "supported",
+  "found": "Tabelog header genre line 「胡町駅/中華料理､ ラーメン､ 餃子」 and the review title 「町中華の中華そば&半炒飯ランチ♪」; the linked dtlmenu lists 中華そば 650円, ギョーザ 500円, 焼そば, あげそば, 春巻, 天ぷら items and ジャジャーメン.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com detail, iPhone UA); 200 (s.tabelog.com/dtlmenu, iPhone UA)",
+  "method": "route 1 variant — plain curl with iPhone UA on the s.tabelog.com mobile host (desktop host not needed)",
+  "note": "The wheat-menu half is squarely on the cited page (genre = 中華料理・ラーメン・餃子); the soy-sauce clause is generic domain knowledge, not a statement on the page, so keep it worded as an inference. Page is live and trading: 営業時間 block present, no 閉店 banner. gf_confidence \"no\" and vegan_status \"no\" are both correct — the dtlmenu is meat/seafood throughout (ヤキブタ, 麻婆豆腐, エビチリ, かに玉) with only 野菜炒め/豆腐サラダ/ザーサイ as plant-leaning items, none documented vegan."
+ },
+ {
+  "id": "hiro_karakaratei_shintenchi_t",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The core dish is wheat-noodle tsukemen prepared in a shared noodle kitchen; no gluten-free handling is documented.",
+  "url": "https://www.hotpepper.jp/strJ000673815/",
+  "verdict": "supported",
+  "found": "HotPepper 唐々亭 新天地店: genre 「ラーメン／ラーメン全般」, hero label 「広島風つけ麺」, 「総席数 11席(カウンターのみ)」, 「つけダレの辛さ調節ＯＫ！…1倍から20倍」. The full 詳細情報 table (席/設備/その他) carries no allergen, gluten or 小麦 field of any kind.",
+  "correct_url": null,
+  "http": "200 (plain curl, 91KB); 200 (iPhone UA, 85KB) — both fine",
+  "method": "route 1 plain fetch; iPhone UA cross-check",
+  "note": "Supported, but the support is an absence: HotPepper simply has no allergen section. Counter-only 11 seats corroborates the single shared kitchen. Trading status confirmed: 営業時間 月～日、祝日、祝前日 11:30～翌3:30, 定休日なし (page 更新 2020/01/07), and the Tabelog detail page is live with no 閉店 flag."
+ },
+ {
+  "id": "hiro_karakaratei_shintenchi_t",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The spicy dipping sauce is a standard soy-sauce-based tsukemen broth, which contains wheat.",
+  "url": "https://www.hotpepper.jp/strJ000673815/",
+  "verdict": "wrong_source",
+  "found": "Tabelog review headline for this exact shop: 「辛い鰹出汁醤油で食べるつけ麺」 — spicy bonito-dashi SHOYU tsukemen. HotPepper only says 「コクと旨みがありながら、さっぱりとしたつけダレは1倍から20倍」 and never names soy sauce.",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340109/34003140/",
+  "http": "200 HotPepper (plain curl); 200 Tabelog (s.tabelog.com, iPhone UA)",
+  "method": "route 1 plain fetch on HotPepper, then iPhone-UA fetch of the Tabelog detail page already stored in the record's chef_bio.sources",
+  "note": "Claim is true but mis-cited. Re-point this citation to the Tabelog detail page, which is the only reachable source that states the tare is 出汁醤油."
+ },
+ {
+  "id": "hiro_karakaratei_shintenchi_t",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is built around pork chashu and dashi/animal-based broths; no plant-based or vegan preparation is documented.",
+  "url": "https://www.hotpepper.jp/strJ000673815/",
+  "verdict": "supported",
+  "found": "HotPepper menu block: 「チャーシュー盛り(定番) 初めての方は、まずはコレから。750円」, 「スペシャル盛り 1350円」, 「しゃぶしゃぶ盛りや山かけ盛りなど種類も色々」; a 口コミ adds 「夜は串揚げが1本から頼め…（おすすめはハムチーズとれんこん）」.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "route 1 plain fetch",
+  "note": "Pork chashu and shabu-shabu are on the cited page, so the claim stands; the 'dashi' half is only evidenced on Tabelog (「鰹出汁醤油」) — adding that URL would make the whole sentence citable. vegan_status \"no\" is correct: even the plant-topped なっとう盛り/山かけ盛り sit on a bonito-dashi shoyu tare."
+ },
+ {
+  "id": "hiro_karakaratei_shintenchi_t",
+  "city": "hiroshima",
+  "field": "website",
+  "quote": "http://www.gochi-machi.jp/hiroshima/shop.asp?id=203000111 (record's website field)",
+  "url": "http://www.gochi-machi.jp/hiroshima/shop.asp?id=203000111",
+  "verdict": "unreachable",
+  "found": null,
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340109/34003140/",
+  "http": "000 — curl: (6) Could not resolve host: www.gochi-machi.jp (DNS failure, repeated; plain and desktop UA, with and without -L)",
+  "method": "routes 1-3 attempted; the domain does not resolve at all, so no UA or proxy variation can help",
+  "note": "DEAD DOMAIN in the record's primary website field. gochi-machi.jp no longer resolves. Swap website to the live Tabelog page (or HotPepper strJ000673815) before this ships; also note Tabelog gives the address as 新天地1-15 NIIビル1F while HotPepper says 新天地1-14 — worth a one-line reconcile."
+ }
+]

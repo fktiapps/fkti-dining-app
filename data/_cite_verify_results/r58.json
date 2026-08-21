@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hiro_hiroshima_kaki_miyamae_h",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Menu is built on oysters, white-grilled anago, small sardines and teppanyaki, which in Japanese cooking typically use wheat-based soy sauce and seasonings; no gluten-free preparation is documented.",
+  "url": "https://miyamae-hanare.owst.jp/",
+  "verdict": "supported",
+  "found": "牡蠣・穴子・小鰯・鉄板焼き、多数の地酒をご用意したアットホームな瀬戸内料理店です。 / 広島県産 地穴子の白焼 2200円(税込)～",
+  "correct_url": null,
+  "http": "200 (plain curl 34,650 B; iPhone UA 63,007 B — same content, more lazy-loaded blocks)",
+  "method": "1 (plain fetch), plus /menu/ on the same host",
+  "note": "The menu composition and the total absence of allergy/gluten-free wording are both on the page, so the claim's premise and its 'not documented' half hold; but the page names no soy sauce at all (the anago 白焼 is served わさびとレモン — white-grilled, no tare), so the wheat pathway is the dipping shoyu and the general seasoning, not a documented ingredient. Word it as an inference."
+ },
+ {
+  "id": "hiro_hiroshima_kaki_miyamae_h",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "This is a seafood and oyster izakaya with no documented vegan or plant-based dishes; cross-contact with fish and shellfish should be expected throughout the kitchen.",
+  "url": "https://miyamae-hanare.owst.jp/",
+  "verdict": "supported",
+  "found": "牡蠣・穴子・小鰯・鉄板焼き…瀬戸内料理店 / おすすめ: 広島ブランド「牡蠣小町」生牡蠣2個、1,280円 / A5ランク和牛ステーキ 2380円～",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 (plain fetch)",
+  "note": "Fully supported: all three headline dishes are oyster, conger eel and A5 wagyu, and the seven course menus are all seafood/beef sets — nothing plant-based is offered. vegan_status 'no' is correct."
+ },
+ {
+  "id": "hiro_hiroshima_kaki_to_teppan_2",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Cooking is done on a shared teppan griddle, and Hiroshima-style okonomiyaki (wheat batter plus noodles) is cooked on the same surface as other dishes, making gluten cross-contact likely.",
+  "url": "https://kakitoteppanyakiichigoichie.owst.jp/",
+  "verdict": "supported",
+  "found": "【当店のコンセプト】…ウニホーレン、お好み焼き等の広島グルメと鉄板焼き料理が楽しめる小さな鉄板焼き店です / 目の前で調理する牡蠣の鉄板焼き",
+  "correct_url": null,
+  "http": "200 (plain curl 37,129 B; iPhone UA 37,665 B)",
+  "method": "1 (plain fetch)",
+  "note": "The shop calls itself a 小さな鉄板焼き店 (one small griddle) and puts お好み焼き on it alongside oysters cooked 目の前で — shared-surface cross-contact is documented, not inferred. Only the parenthetical 'plus noodles' is unevidenced here; the page says お好み焼き without specifying soba/udon."
+ },
+ {
+  "id": "hiro_hiroshima_kaki_to_teppan_2",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Grilled oysters are finished with butter-soy sauce or ponzu, and teppanyaki dishes use soy-based seasonings; standard Japanese soy sauce contains wheat.",
+  "url": "https://kakitoteppanyakiichigoichie.owst.jp/",
+  "verdict": "supported",
+  "found": "目の前で調理する牡蠣の鉄板焼きはバター醤油かポン酢で☆ / 広島牛のコウネ炙り…しょうが醤油で食べるのが抜群！",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 (plain fetch)",
+  "note": "Verbatim match — the shop's own text names バター醤油 on the oyster teppanyaki and しょうが醤油 on the Hiroshima-beef kouné. No brand or wheat-free tamari is named anywhere, so koikuchi is the default reading."
+ },
+ {
+  "id": "hiro_hiroshima_kaki_to_teppan_2",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The menu centers on oysters, sea urchin, conger eel, and Hiroshima beef cooked on a shared griddle with butter and soy seasonings; no plant-based or vegan options are documented.",
+  "url": "https://kakitoteppanyakiichigoichie.owst.jp/",
+  "verdict": "supported",
+  "found": "広島牡蠣、生牡蠣、うにほーれん、穴子刺身、コウネ、お好み焼き、鉄板焼等、広島の美味しいを丸ごと一娯一笑で完結",
+  "correct_url": null,
+  "http": "200",
+  "method": "1 (plain fetch)",
+  "note": "Supported; one small correction — the anago here is 穴子刺身 (sashimi), not a griddled item, and the ウニホーレン is served with a baguette, so the 'cooked on a shared griddle' clause over-generalises. vegan_status 'no' is unambiguously right."
+ }
+]

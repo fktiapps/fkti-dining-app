@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hiro_hiroshima_tsukemen_kazu_",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The dipping dashi for Hiroshima tsukemen is built on chashu and a savory soy-based sauce, which conventionally contains wheat; no gluten-free preparation is documented.",
+  "url": "https://r.gnavi.co.jp/axr1x3pk0000/",
+  "verdict": "wrong_source",
+  "found": "Gnavi says only 「天然利尻昆布とチャーシューで取ったダシはあっさりした味わいで、ゆでた野菜が甘みを添えています」 — zero occurrences of 醤油 on the whole page. The soy-sauce evidence is on the shop's own Tabelog page: 「つけダレの辛味はもとよりキレのある醤油ベースの味わいと酸味にマッチ」 and 「魚介系と野菜の出汁に醤油とチャーシュー煮汁のコクが足されている」.",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340121/34002135/",
+  "http": "200 gnavi (plain curl, 52KB); 200 tabelog (iPhone UA, 525KB)",
+  "method": "1 plain fetch (gnavi) + 1 mobile-UA fetch (tabelog detail page)",
+  "note": "Claim is TRUE but cited to the wrong page — Gnavi never mentions soy sauce. Re-cite to the Tabelog detail page, where two independent reviewers describe the tare as 醤油ベース. Neither page contains 小麦/グルテン/アレル, so 'no gluten-free preparation documented' stands by silence."
+ },
+ {
+  "id": "hiro_hiroshima_tsukemen_kazu_",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The signature broth is made with pork chashu, so the kitchen handles animal products throughout the core dish.",
+  "url": "https://r.gnavi.co.jp/axr1x3pk0000/",
+  "verdict": "supported",
+  "found": "「広島つけ麺で知られる「冷麺かず」では、天然利尻昆布とチャーシューで取ったダシはあっさりした味わい」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Supported. Tabelog reviews corroborate and add detail — a regular was told the cold soup is not 鶏ガラ/豚骨 but 昆布や鰹節類 plus chashu simmering liquid; still fish + pork, so vegan: no is correct, and the fish-stock component is worth adding to vegan_detail."
+ },
+ {
+  "id": "hiro_hiroshima_wanari",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Menu includes breaded/deep-fried oysters (kaki fry) and other fried items shared with wheat-based cooking; no dedicated gluten-free fryer or protocol is documented.",
+  "url": "https://www.hotpepper.jp/strJ001010070/",
+  "verdict": "supported",
+  "found": "「かきフライ　または　天ぷら（3個）」 and 「生がき・焼きがき・かきフライ・・・」; a 2018 review adds 「人気の穴子の天ぷらも食べることができました」. Page contains no アレルギー/グルテン/小麦 text of any kind.",
+  "correct_url": null,
+  "http": "200 (plain curl, 114KB)",
+  "method": "1 plain fetch",
+  "note": "Supported. Kaki-fry and tempura are both on the official Hot Pepper menu; the no-GF-protocol half is true by silence (no allergen section on the listing)."
+ },
+ {
+  "id": "hiro_hiroshima_wanari",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Japanese-style dishes use standard soy sauce, which contains wheat; no wheat-free seasoning is mentioned.",
+  "url": "https://www.hotpepper.jp/strJ001010070/",
+  "verdict": "unsupported",
+  "found": "The word 醤油 appears zero times on the page. The seasonings it does document point the other way: 「レモンと藻塩だけでお召し上がりいただきます」 (kaki fry), 「地穴子を白焼きにして、藻塩と山葵でいただきます」, 「オリーブオイルをかけて…」 (tako grill), 「素材の味を引き立たせるため、シンプルな調理法にてご提供」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 114KB)",
+  "method": "1 plain fetch + in-page keyword scan for 醤油/しょうゆ/たまり",
+  "note": "Unsupported, and mildly wrong in direction: the cited page's own copy stresses salt-and-lemon / moshio-and-wasabi / olive-oil finishing on the headline oyster, anago and octopus dishes. The soy-sauce line is an unevidenced genre assumption. Reword as an assumption or drop it; the wheat hazard here is the fry/tempura batter and the Italian pasta and bread, which are documented."
+ },
+ {
+  "id": "hiro_hiroshima_wanari",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen centers on seafood (oysters, anago, octopus, sashimi) and meat; vegetable dishes would share equipment and fish/dashi-based seasonings.",
+  "url": "https://www.hotpepper.jp/strJ001010070/",
+  "verdict": "supported",
+  "found": "Page strapline 「かき・たこ・穴子・広島地酒・ワイン・個室・ジビエ・Tボーンステーキ・ランチ」 plus menu items 焼きがき、たこ足のグリル、倉吉牛Tボーンステーキ、鹿もも肉のグリル、ねぎトロ、音戸ちりめんのカリカリサラダ.",
+  "correct_url": null,
+  "http": "200 (plain curl, 114KB)",
+  "method": "1 plain fetch",
+  "note": "Supported for the menu-composition half (even the salad is topped with dried whitebait). The 'shared equipment and fish/dashi seasonings' half is inference, not on the page — fine as reasoning but should not read as documented fact."
+ }
+]

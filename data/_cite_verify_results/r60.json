@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_indo_ryori_roopali_wakak",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Naan and the bread-based sets are wheat; in a shared Indian kitchen with flour and fried items, cross-contact with wheat is likely and no gluten-free handling is documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340121/34000779/dtlmenu/",
+  "verdict": "wrong_source",
+  "found": "Official menu: ナン 350円 / ガーリックナン / パラクナン / チーズナン / ベジタブルクルチャ ... ロティ【2P】「大麦粉を使ってタンドールで焼いたインドではポピュラーなパンです。」 (roopali.jp/menu.html); 前菜 lists ベジタブルパコラ, パニールパコラ, チキンパコラ, サモサ — a shared deep-fry station.",
+  "correct_url": "http://www.roopali.jp/menu.html",
+  "http": "200 plain curl (tabelog desktop host); iPhone UA returned 302. roopali.jp 200, Shift_JIS.",
+  "method": "plain fetch of the cited Tabelog dtlmenu, then plain fetch of the official site menu.html / lounch.html",
+  "note": "The cited Tabelog menu page carries 更新日 : 2009/08/06 and lists NO bread at all — no naan, no roti — so it cannot evidence a naan claim. Repoint to http://www.roopali.jp/menu.html, which lists 12 naan variants plus a roti the shop itself describes as 大麦粉 (barley flour — still gluten, and easy to mistake for a wheat-free option)."
+ },
+ {
+  "id": "hiro_indo_ryori_roopali_wakak",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Vegetable pakora is fried alongside paneer (cheese) pakora, and curries/naan commonly use ghee, butter, cream or yogurt, so plant-based dishes may share oil and dairy unless you ask staff to omit them.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340121/34000779/dtlmenu/",
+  "verdict": "supported",
+  "found": "「ベジタブルパコラ【6P】 …インド風 野菜の天ぷら 450円 / バニールパコラ【4P】 …インドのチーズの天ぷら 500円 / チキンパコラ【4P】 …バーベキューチキンのインドの天ぷら 600円」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited Tabelog dtlmenu page",
+  "note": "The shared-fryer half is on the cited page verbatim (veg, paneer and chicken pakora are all 天ぷら from one station). The dairy half is only generic there — the official menu proves it outright: ダールマッカニー is 「インドの豆にバターを加えた」 and バターチキンマサラ / パニール curries are butter- and cheese-based, so the dal a vegan would default to is the dairy trap. Cite http://www.roopali.jp/menu.html for that half."
+ },
+ {
+  "id": "hiro_indo_ryori_roopali_wakak",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Genuine meat-free items exist, including vegetable salad with beans, vegetable pakora, and vegetable/chickpea-style curries, so vegetarians have real choices.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340121/34000779/dtlmenu/",
+  "verdict": "wrong_source",
+  "found": "「ミックスベジタブルカレー ポテト・人参などの野菜カレー 930円 / チャナマサラ ひよこ豆のカレー 930円 / ドライベジタブルカレー 野菜のドライカレー / マタールマッシュルーム / アル・パラク じゃがいもとほうれん草のカレー」 and the set 「ベジタリアンターリ … 2360円」 (roopali.jp/menu.html)",
+  "correct_url": "http://www.roopali.jp/menu.html",
+  "http": "200 plain curl on both hosts",
+  "method": "plain fetch of the cited Tabelog dtlmenu, then the official menu.html",
+  "note": "Two-thirds of the claim is on the cited page (ルーパリサラダ …豆入り野菜サラダ, ベジタブルパコラ) but there is NO vegetable or chickpea curry on it — 'ベジタブルカレー' appears only in Tabelog's 関連のキーワード tag cloud, not the menu. The curries are real and are on the official menu, which also names a full ベジタリアンターリ set; repoint the citation there."
+ },
+ {
+  "id": "hiro_itasoba_kaoriya_kyobashi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The dipping sauces are soy-sauce and dashi based; standard Japanese soy sauce contains wheat.",
+  "url": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/4968095",
+  "verdict": "unsupported",
+  "found": "The article names the two dips only — 「こちらのセットにはもり汁とゴマダレの二つのつけダレが付いているので、両方の味を楽しめちゃいます」 — and says nothing about their composition, soy sauce, or wheat.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited mrs.living reporter article",
+  "note": "The claim is sound as general soba practice but the cited page never states it, and no source found gives this shop's tsuyu recipe. Stronger page-level wheat evidence exists instead: the live Tabelog menu (更新日 2026/06/13) lists たぬきそば (tenkasu = fried wheat batter), 月見きつねそば, 天ぷらそば and 天ぷらそば切り, and the cited article itself documents 天ぷら and だし巻き卵 inside the ¥1,680 set — cite those rather than an unevidenced soy-sauce line."
+ }
+]

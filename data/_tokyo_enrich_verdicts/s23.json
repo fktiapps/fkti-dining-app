@@ -763,5 +763,155 @@
    "https://www.hotpepper.jp/strJ002647737/"
   ],
   "enrich_note": "CLOSING PERMANENTLY — recommend hiding this record from the app. Located and fully verified: Tabelog 13246971 gives 東京都台東区松が谷1-3-15 佐野ビル1F, opened 25 May 2020, and coordinates were replaced with the Tabelog geo (35.711113, 139.786839), about 400 m west of the neighbourhood-centroid guess. The closure evidence is the operator's own notice in the Tabelog business-hours field, 「8月末で閉店」, plus the HotPepper listing that HAMONI records as the shop's official page now returning HTTP 404. Two caveats a human should resolve: (1) the notice does not name a year — I read it as 31 August 2026 because the notice is live on the listing today, 21 August 2026, and because Tabelog's own booking calendar on the page renders 2026年8月; (2) Tabelog has not yet applied its 【閉店】 badge, consistent with a shop still trading out its final ten days. Re-check the listing after 31 August 2026 and switch closed_since to a confirmed date. Content is otherwise fully enriched in case the closure turns out to be a relocation. No owner name is published by any source. A Yahoo Japan search for the closure returned an au Web Portal August-closures roundup for the Asakusa/Okachimachi/Tawaramachi area, but that article did not list this shop, so it neither confirms nor contradicts."
+ },
+ {
+  "id": "tokyo3__262",
+  "name": "メンドウガッコウ",
+  "status": "not_found",
+  "lat": 35.7118,
+  "lng": 139.7967,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen or tsukemen shop by this name, or by any plausible kanji rendering of it, exists in Kuramae, Asakusabashi or anywhere else in Japan that four directories could find",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 蔵前・浅草橋.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, because the business could not be established. The katakana string メンドウガッコウ reads as mendō-gakkō. The obvious kanji reconstruction is 麺道學校 / 麺道学校 — 'the way of noodles' plus 'school'. No restaurant by that name exists. What does exist under that reading is a different category of thing entirely: 大和麺学校 (the Yamato Noodle School, run by the noodle-machine maker 大和製作所), ラーメン学校 食の道場 and 東京国際ラーメンスクール — commercial training courses that teach people to open ramen shops. It is plausible that the discovery sweep collided a ramen-school name with a Kuramae address, but that is a guess and is recorded here as one, not as a finding.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Every leg below actually ran and actually returned. Tabelog keyword search (desktop UA, double-encoded keyword) for 「メンドウガッコウ」 — HTTP 200, zero rows. Tabelog for 「メンドウ」 — HTTP 200, results returned but the nearest matches are 麺道 in Aichi, 麺堂 in Miyagi/Ōita, 街道拉麺 めん道 in Iwate and 梨子麺堂 in Hyōgo; nothing in Tokyo. Tabelog for 「麺道」 — HTTP 200, twelve shops returned, none in Taitō-ku (the only Tokyo hits were つけ麺 道 and 麺道六善, both in A132403, north-west Tokyo, and neither is a phonetic match). Tabelog for 「麺道 がっこう」 — HTTP 200, four rows, all irrelevant (Okinawa, Aomori, Hyōgo). Tabelog area listing for 蔵前・浅草橋 ramen (tokyo/A1311/A131103/rstLst/ramen/, pages 1–4) — HTTP 200 each, 56 shops enumerated by name, no phonetic or orthographic match; the closest-sounding names in the area are 炭火焼濃厚中華そば 威風堂道 (ifū-dōdō) and 麺家笑の道, neither of which reads mendō-gakkō. Yahoo Japan for 「メンドウガッコウ 蔵前 ラーメン」 — HTTP 200, results returned but every food hit was a different Kuramae shop (麺屋 上々, らーめん改, 蔵前元楽総本店, MANNISH). Yahoo Japan for the quoted string 「\"メンドウガッコウ\"」 — HTTP 200, results returned, not one of them a restaurant. Yahoo Japan for 「麺道 學校 ラーメン 東京」 — HTTP 200, results were ramen-training schools only. Gnavi keyword search for 「メンドウガッコウ」 — HTTP 200, explicit 「該当するお店が見つかりませんでした」, no matching shop. No leg returned 429, 403 or a timeout; all nine came back empty of a matching business. One tool was unavailable rather than negative: the general web-search tool had exhausted its per-session budget and could not be used, so Google's index was not consulted.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "positives": [],
+   "staff_allergy_handling": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified, so nothing can honestly be said about it. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Nine search legs ran and all nine returned. Tabelog keyword search (double-encoded, desktop UA): 「メンドウガッコウ」 HTTP 200 / zero rows; 「メンドウ」 HTTP 200 / nearest hits 麺道 (Aichi), 麺堂 (Miyagi, Ōita), めん道 (Iwate), none in Tokyo; 「麺道」 HTTP 200 / no Taitō-ku shop; 「麺道 がっこう」 HTTP 200 / four irrelevant rows. Tabelog area listing tokyo/A1311/A131103/rstLst/ramen/ pages 1–4: HTTP 200 each, all 56 Kuramae/Asakusabashi ramen and tsukemen shops enumerated by name, no match. Yahoo Japan: 「メンドウガッコウ 蔵前 ラーメン」 HTTP 200 / only other Kuramae shops; quoted 「メンドウガッコウ」 HTTP 200 / no restaurant of any kind; 「麺道 學校 ラーメン 東京」 HTTP 200 / only ramen-training schools. Gnavi: 「メンドウガッコウ」 HTTP 200 / 「該当するお店が見つかりませんでした」. No leg was blocked — no 429, no 403, no timeout. The one gap: the general web-search tool had hit its session budget, so Google was not searched; if this record is re-run, that is the leg to add. Best available reading of the string is 麺道学校, which in Japanese belongs to ramen-school training businesses (大和麺学校, 食の道場, 東京国際ラーメンスクール), not to a restaurant — offered as a hypothesis only. Coordinates unchanged, loc_precise:false. Recommend deletion from data/tokyo.json unless a human can supply a source."
+ },
+ {
+  "id": "tokyo3__263",
+  "name": "塩ラーメン 蔵前",
+  "status": "unresolved",
+  "lat": 35.705,
+  "lng": 139.791,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 「塩ラーメン 蔵前」 is not the name of any business. It reads as a description (salt ramen, Kuramae), and at least two real Kuramae salt-ramen shops fit it equally well",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 蔵前.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed against a specific business, because none could be identified. Generic note only: every candidate shop is a wheat-noodle ramen shop, and a shio tare is still a soy- or fish-seasoned brine in a shared noodle pot. Nothing in this record should be read as a gluten-free lead.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The string is a category, not a shop sign, and the two businesses it most obviously points at are both real and both wrong to pick without evidence. (1) らーめん改 — 東京都台東区蔵前4-20-10 宮内ビル1F, 35.704449 / 139.790165, open 11:00–15:00 and 17:30–21:00 on weekdays, 11:00–21:00 at weekends, no closing day. It is in Kuramae proper, it is the Kuramae ramen shop most often written up, and its signature is a shio bowl — which makes it the closest single fit to 「塩ラーメン 蔵前」. Its Tabelog coordinates sit about 80 m from this light record's pin, which is suggestive but is exactly the sort of coincidence a neighbourhood-centroid pin produces. (2) 塩生姜らー麺専門店 MANNISH 蔵前店 — 東京都台東区浅草橋3-25-6, 35.701518 / 139.788436, a salt-and-ginger ramen specialist; Gnavi files the brand as 昆布の塩らー麺専門店 マニッシュ. It is literally a shio-ramen specialist with 蔵前 in its shop name, but it is a branch of a multi-shop brand rather than a Kuramae original, and it actually stands in Asakusabashi 3-chōme. Choosing between the two on the evidence available would be inventing a record, so neither has been written up here.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Every leg ran and returned. Tabelog keyword search (desktop UA, double-encoded) for 「塩ラーメン 蔵前」 — HTTP 200, results returned but no Kuramae shop of that name; the hits were 塩ラーメン空海 (Osaka), 塩ラーメン仁屋 府中店, and several ラーメン蔵 in Aomori, Saitama, Okayama and Kanagawa. Tabelog area listing tokyo/A1311/A131103/rstLst/ramen/ pages 1–4 — HTTP 200 each, all 56 Kuramae/Asakusabashi ramen shops enumerated by name; none is called 塩ラーメン 蔵前. Yahoo Japan for 「塩ラーメン 蔵前」 — HTTP 200, results returned, and the top food hits were 塩生姜らー麺専門店 MANNISH 蔵前店 and らーめん改, i.e. the search engine itself treats the string as a description and answers with those two. Gnavi keyword search for 「塩ラーメン蔵前」 — HTTP 200, exactly one result, 昆布の塩らー麺専門店 マニッシュ. Tabelog detail pages for both candidates were then fetched directly (13191776 and 13246875, HTTP 200 each) and their addresses, coordinates and hours read from the Restaurant JSON-LD. No leg returned 429, 403 or a timeout.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131103/13191776/",
+    "https://tabelog.com/tokyo/A1311/A131103/13246875/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No business was identified, so nothing can honestly be said about the door. Recommend the record be deleted, or replaced by a properly-sourced record for whichever of the two candidate shops was actually intended."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131103/13191776/",
+   "https://tabelog.com/tokyo/A1311/A131103/13246875/"
+  ],
+  "enrich_note": "NOT FOUND as a business — UNRESOLVED rather than absent. 「塩ラーメン 蔵前」 is a description, not a shop sign: no restaurant in Japan carries that name. Legs run, all HTTP 200, none blocked: Tabelog keyword 「塩ラーメン 蔵前」 (hits were 塩ラーメン空海 in Osaka, 塩ラーメン仁屋 府中店, and ラーメン蔵 in four other prefectures — nothing in Taitō-ku); Tabelog area listing for 蔵前・浅草橋 ramen, pages 1–4, all 56 shops enumerated, no match; Yahoo Japan 「塩ラーメン 蔵前」, which answered with らーめん改 and MANNISH 蔵前店; Gnavi 「塩ラーメン蔵前」, one result, 昆布の塩らー麺専門店 マニッシュ. Two genuine candidates, both verified by direct Tabelog fetch: らーめん改 at 台東区蔵前4-20-10 宮内ビル1F (35.704449/139.790165 — about 80 m from this record's pin, and the Kuramae shio bowl most written about) and 塩生姜らー麺専門店 MANNISH 蔵前店 at 台東区浅草橋3-25-6 (35.701518/139.788436, a branch of a multi-shop brand). Nothing distinguishes them as the intended referent, so neither was enriched. A human should either pick one and re-run it, or delete the record. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__271",
+  "name": "天ぷら 二八",
+  "status": "not_found",
+  "lat": 35.696,
+  "lng": 139.793,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tempura restaurant called 二八 exists in Ryōgoku or anywhere in Tokyo. 二八 (nihachi) is soba terminology, not a tempura shop name",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says 両国 / 両国駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed against a specific business, because none could be identified. Generic note only: every candidate here is either wheat-battered tempura or nihachi soba — 80% buckwheat, 20% wheat flour — so nothing in this record should be read as a gluten-free lead. Nihachi soba in particular is emphatically not gluten-free.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The likeliest explanation is that the sweep welded two things together. 二八 (nihachi) is a soba ratio — eight parts buckwheat to two parts wheat flour — and appears in the names of soba shops, never as a tempura shop's sign. In Ryōgoku the shop that carries it is 元禄二八そば 玉屋 (Tabelog 13017987), a hand-cut nihachi soba house founded in 1919 (大正8年) that also fries tempura; that is the only 二八 business in the district and it is a soba shop, not a tempura restaurant, so filing it under 江戸天ぷら・揚げ物 would be wrong. A second candidate is 天亀八 (てんかめはち), which was a 両国 tempura and Japanese restaurant at 東京都墨田区亀沢1-7-2 リビオレゾン両国1F (35.696180 / 139.797736) — the name shares the 天 and the 八 and the district, and the light record's latitude 35.696 matches it — but Tabelog marks it 【閉店】 and states 「このお店は現在閉店しております」, so even if it were the intended shop it is shut. Neither identification is strong enough to write a record on, so neither has been enriched.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Every leg ran and returned. Tabelog keyword search (desktop UA, double-encoded) for 「天ぷら 二八」 — HTTP 200, results returned but nothing matching: the hits were 天ぷら七八 朝倉本店 and 天ぷら七八 熊本嘉島店 (Fukuoka, Kumamoto), 天ぷら 天八 (Hokkaidō), 天ぷら喜八 (Yamagata) and various unrelated Tokyo and Aichi shops. Tabelog for 「にはち 天ぷら」 — HTTP 200, one row, 月 ニセコ天ぷら in Hokkaidō. Tabelog area listing tokyo/A1312/A131201/rstLst/tempura/ pages 1–2 — HTTP 200 each, all 26 tempura restaurants in the Ryōgoku/Kinshichō/Morishita area enumerated by name; none is called 二八. Yahoo Japan for 「天ぷら 二八 両国」 — HTTP 200, results returned, and every relevant hit was either 元禄二八そば 玉屋 (a soba shop) or 【閉店】天亀八 (a closed tempura restaurant). Yahoo Japan for 「\"天ぷら\" \"二八\" 店 東京 揚げ物」 — HTTP 200, results returned, all of them soba shops or general tempura articles. Gnavi keyword search for 「天ぷら二八」 — HTTP 200, about 30 results, all soba-and-tempura restaurants elsewhere in Japan (木曽駒 高蔵寺店, 多聞, 天麩羅懐石 凛, 木曽駒 守山店 and so on), none in Ryōgoku and none named 二八. Both candidate Tabelog pages were then fetched directly to check them (13002951 for 天亀八, HTTP 200, confirmed 閉店). No leg returned 429, 403 or a timeout.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1312/A131201/13002951/",
+    "https://tabelog.com/tokyo/A1312/A131201/13017987/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No business was identified, so nothing can honestly be said about the door. Recommend deletion, or replacement by a sourced record for 元禄二八そば 玉屋 if a soba shop is what was actually meant."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1312/A131201/13002951/",
+   "https://tabelog.com/tokyo/A1312/A131201/13017987/"
+  ],
+  "enrich_note": "NOT FOUND. No tempura restaurant named 二八 exists in Ryōgoku or anywhere in Tokyo. Legs run, all HTTP 200, none blocked, none timed out: Tabelog keyword 「天ぷら 二八」 (returned 天ぷら七八 in Fukuoka and Kumamoto, 天ぷら 天八 in Hokkaidō, 天ぷら喜八 in Yamagata — no Tokyo 二八); Tabelog keyword 「にはち 天ぷら」 (one row, a Hokkaidō shop); Tabelog area listing tokyo/A1312/A131201/rstLst/tempura/ pages 1–2, all 26 Ryōgoku-area tempura restaurants enumerated, no match; Yahoo Japan 「天ぷら 二八 両国」 and 「\"天ぷら\" \"二八\" 店 東京 揚げ物」, both of which returned only soba shops; Gnavi 「天ぷら二八」, about 30 results, all soba-tempura restaurants in other prefectures. 二八 is a soba ratio (80% buckwheat / 20% wheat), not a tempura shop name — that is almost certainly the source of the error. Two nearby candidates were checked and both rejected: 元禄二八そば 玉屋 (Tabelog 13017987), a 1919 hand-cut nihachi soba house in Ryōgoku that also serves tempura but is a soba shop; and 天亀八 (Tabelog 13002951) at 墨田区亀沢1-7-2, 35.696180/139.797736 — a Ryōgoku tempura restaurant whose latitude matches this record's pin, but which Tabelog marks 【閉店】 with 「このお店は現在閉店しております」. Neither tie is strong enough to enrich under a corrected name. Coordinates unchanged, loc_precise:false. Recommend deletion from data/tokyo.json. One gap if this is ever re-run: the general web-search tool had exhausted its session budget, so Google's index was not consulted."
  }
 ]

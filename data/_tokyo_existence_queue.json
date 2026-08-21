@@ -682,6 +682,34 @@
   "note": "Confirmed as a real Jimbōchō shop and confirmed permanently closed — this one needed care, because a plain Tabelog keyword search hides it. A nationwide search for 黒須 (HTTP 200, 699件) returns tofu shops, confectioners and convenience stores in Chiba, Saitama and Tochigi and no ramen shop at all, and a search for 神保町 黒須 (HTTP 200, 84件) returns unrelated Tokyo restaurants — the kind of result that w"
  },
  {
+  "id": "tokyo3__254",
+  "name": "杜都旬菜 合羽橋 ほていや",
+  "status": "closed_permanently",
+  "hidden": "closed",
+  "note": "CLOSING PERMANENTLY — recommend hiding this record from the app. Located and fully verified: Tabelog 13246971 gives 東京都台東区松が谷1-3-15 佐野ビル1F, opened 25 May 2020, and coordinates were replaced with the Tabelog geo (35.711113, 139.786839), about 400 m west of the neighbourhood-centroid guess. The closure evidence is the operator's own notice in the Tabelog business-hours field, 「8月末で閉店」, plus the HotP"
+ },
+ {
+  "id": "tokyo3__262",
+  "name": "メンドウガッコウ",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Nine search legs ran and all nine returned. Tabelog keyword search (double-encoded, desktop UA): 「メンドウガッコウ」 HTTP 200 / zero rows; 「メンドウ」 HTTP 200 / nearest hits 麺道 (Aichi), 麺堂 (Miyagi, Ōita), めん道 (Iwate), none in Tokyo; 「麺道」 HTTP 200 / no Taitō-ku shop; 「麺道 がっこう」 HTTP 200 / four irrelevant rows. Tabelog area listing tokyo/A1311/A131103/rstLst/ramen/ pages 1–4: HTTP 200 each, all 56 Kura"
+ },
+ {
+  "id": "tokyo3__263",
+  "name": "塩ラーメン 蔵前",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "NOT FOUND as a business — UNRESOLVED rather than absent. 「塩ラーメン 蔵前」 is a description, not a shop sign: no restaurant in Japan carries that name. Legs run, all HTTP 200, none blocked: Tabelog keyword 「塩ラーメン 蔵前」 (hits were 塩ラーメン空海 in Osaka, 塩ラーメン仁屋 府中店, and ラーメン蔵 in four other prefectures — nothing in Taitō-ku); Tabelog area listing for 蔵前・浅草橋 ramen, pages 1–4, all 56 shops enumerated, no match; Yah"
+ },
+ {
+  "id": "tokyo3__271",
+  "name": "天ぷら 二八",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. No tempura restaurant named 二八 exists in Ryōgoku or anywhere in Tokyo. Legs run, all HTTP 200, none blocked, none timed out: Tabelog keyword 「天ぷら 二八」 (returned 天ぷら七八 in Fukuoka and Kumamoto, 天ぷら 天八 in Hokkaidō, 天ぷら喜八 in Yamagata — no Tokyo 二八); Tabelog keyword 「にはち 天ぷら」 (one row, a Hokkaidō shop); Tabelog area listing tokyo/A1312/A131201/rstLst/tempura/ pages 1–2, all 26 Ryōgoku-area te"
+ },
+ {
   "id": "tokyo3__275",
   "name": "ラーメン 青竜",
   "status": "not_found",

@@ -100,7 +100,7 @@ if (fs.existsSync(DIR))
       // away — leaving two confirmed-closed venues shipping with nowhere for the
       // finding to go. GLUTEN FREE CAFE avan had every branch shut and its own domain
       // NXDOMAIN; 京都茶寮翠泉 新宿店 closed 2026-08-03 「再開日未定」.
-      if (v.kind === 'trading' || v.status === 'closed_permanently' ||
+      if (/^trading(_status)?$/.test(String(v.kind || '')) || v.status === 'closed_permanently' ||
           /^closed(_permanently)?$/i.test(String(v.recommended || ''))) {
         const h = byId.get(v.id);
         if (h) closures.push({ city: h.city, id: v.id, name: h.r.name,
@@ -110,6 +110,11 @@ if (fs.existsSync(DIR))
       if (v.kind !== 'tier_recommendation') continue;
       const hit = byId.get(v.id);
       if (!hit) continue;
+      // Never ask for a decision about a shop that is not there. avan was holding an
+      // unapplied gf_proposed_tier "dedicated" awaiting sign-off on a business whose
+      // every branch has closed and whose domain is NXDOMAIN. A queue that spends the
+      // reviewer's attention on closed venues is worse than a shorter queue.
+      if (hit.r.hidden) continue;
       const field = v.field === 'vegan_status' ? 'vegan_status' : 'gf_confidence';
       const rec = tierOf(field, v.recommended);
       if (!rec) { malformed.push({ id: v.id, field, got: String(v.recommended).slice(0, 60) }); continue; }

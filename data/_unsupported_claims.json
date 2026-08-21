@@ -1684,6 +1684,15 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__235",
+  "name": "グルテンフリー ティーズキッチン 上野広小路店",
+  "field": "positives",
+  "text": "No wheat-batter frying, so shared-oil cross-contamination is not a concern",
+  "source": null,
+  "why": "WRONG IN BOTH DIRECTIONS, and it omits the operator's own admission. For GLUTEN the record's conclusion happens to hold — there is no wheat batter in a wheat-free kitchen — but it states flatly that shared oil 'is not a concern' when the venue itself prints, in Japanese and English, that the same oi"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__264",
   "name": "カフェ フレッシュグリーン",
   "field": "gf_cross_contamination",
@@ -2062,12 +2071,48 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_fukuya_shokudo",
+  "name": "フクヤ食堂 (Fukuya Shokudo)",
+  "field": "soy_sauce_wheat",
+  "text": "Anago-meshi and oyster bowls are seasoned in the standard Japanese style with wheat-containing soy sauce; no gluten-free",
+  "source": "https://tabiiro.jp/gourmet/s/301624-hatsukaichi-fukuya-shokudo/",
+  "why": "The cited page names あなごめし and かき丼 but says nothing about soy sauce, tare or seasoning of any kind; the wheat-shoyu statement is a cuisine-convention inference presented as sourced fact. Reword as an explicit assumption or cite an anago-meshi tare ingredient source."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_kiyomori_chaya",
+  "name": "清盛茶屋 (Kiyomori Chaya)",
+  "field": "vegan_cross_contact",
+  "text": "The signature udon/soba broth is made with Seto Inland Sea dried sardines (niboshi), so noodle dishes are not vegetarian",
+  "source": "https://www.kiyomori-chaya.shop/",
+  "why": "The niboshi-broth detail is invented — the site never states what the つゆ is made from, and the 小いわし on the menu is a grilled side dish, not stock. Replace it with what the page does show: 肉うどん・そば, たまご丼, ビーフカレーライス, あなご丼, かき丼, 小いわし塩焼き and winter oyster dishes — an all-animal menu with no plant-based i"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_itasoba_kaoriya_kyobashi",
+  "name": "板蕎麦 香り家 京橋店 (Itasoba Kaoriya Kyobashi-ten)",
+  "field": "soy_sauce_wheat",
+  "text": "The dipping sauces are soy-sauce and dashi based; standard Japanese soy sauce contains wheat.",
+  "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/4968095",
+  "why": "The claim is sound as general soba practice but the cited page never states it, and no source found gives this shop's tsuyu recipe. Stronger page-level wheat evidence exists instead: the live Tabelog menu (更新日 2026/06/13) lists たぬきそば (tenkasu = fried wheat batter), 月見きつねそば, 天ぷらそば and 天ぷらそば切り, and th"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_r_cafe_kitchenette",
   "name": "アールカフェ キッチネッテ (R Cafe Kitchenette)",
   "field": "positives",
   "text": "Health-forward sourcing: grass-fed butter, naturally leavened bread, local Sunatani-dairy milk and seasonal Hiroshima ve",
   "source": "https://www.r-cafe.jp/lunch.html",
   "why": "'grass-fed butter' is a misread of grass-fed beef — the page has no butter claim at all. Fix to 'grass-fed beef'. The other three elements check out."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_hiroshima_wanari",
+  "name": "広島 わなり (Hiroshima Wanari)",
+  "field": "soy_sauce_wheat",
+  "text": "Japanese-style dishes use standard soy sauce, which contains wheat; no wheat-free seasoning is mentioned.",
+  "source": "https://www.hotpepper.jp/strJ001010070/",
+  "why": "Unsupported, and mildly wrong in direction: the cited page's own copy stresses salt-and-lemon / moshio-and-wasabi / olive-oil finishing on the headline oyster, anago and octopus dishes. The soy-sauce line is an unevidenced genre assumption. Reword as an assumption or drop it; the wheat hazard here i"
  },
  {
   "city": "hiroshima",

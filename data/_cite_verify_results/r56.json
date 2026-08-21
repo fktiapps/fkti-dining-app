@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_fukuya_shokudo",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Breaded/fried items (oyster fry, shrimp fry, tonkatsu) and wheat-based soy seasoning are central to the menu, so gluten exposure is pervasive; no gluten-free handling is documented.",
+  "url": "https://tabiiro.jp/gourmet/s/301624-hatsukaichi-fukuya-shokudo/",
+  "verdict": "supported",
+  "found": "ランチメニュー ◇かきフライ定食 ◇かき丼 ◇生かきレモン ◇酢がき ◇焼きがき ◇あなごめし ◇えびフライ定食 ◇とんかつ定食 ◇ハンバーグセット ◇焼きめし",
+  "correct_url": null,
+  "http": "200 (plain curl, 2.35MB)",
+  "method": "1 plain fetch",
+  "note": "The fried/breaded half is verbatim on the page (かきフライ定食/えびフライ定食/とんかつ定食) and the page is wholly silent on allergens, so 'no gluten-free handling documented' holds; the 'wheat-based soy seasoning' clause is inference and is not on this page — see the soy_sauce_wheat item."
+ },
+ {
+  "id": "hiro_fukuya_shokudo",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Anago-meshi and oyster bowls are seasoned in the standard Japanese style with wheat-containing soy sauce; no gluten-free tamari is mentioned.",
+  "url": "https://tabiiro.jp/gourmet/s/301624-hatsukaichi-fukuya-shokudo/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + full-page string search for 醤油/しょうゆ/タレ/たれ (zero hits)",
+  "note": "The cited page names あなごめし and かき丼 but says nothing about soy sauce, tare or seasoning of any kind; the wheat-shoyu statement is a cuisine-convention inference presented as sourced fact. Reword as an explicit assumption or cite an anago-meshi tare ingredient source."
+ },
+ {
+  "id": "hiro_fukuya_shokudo",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is built around oysters, conger eel and meat dishes, with fish/dashi-based seasoning throughout; no vegan-safe preparation is documented.",
+  "url": "https://tabiiro.jp/gourmet/s/301624-hatsukaichi-fukuya-shokudo/",
+  "verdict": "supported",
+  "found": "宮島特産のカキやアナゴをはじめ、和食、洋食、喫茶など幅広いメニューが揃う。おすすめは看板メニューでもある「あなごめし」だが、定食や丼ものなどのメニューも人気だ。",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Oysters, anago and meat (とんかつ定食/ハンバーグセット) are all on the cited page and no vegan item appears anywhere on it; only the 'fish/dashi-based seasoning throughout' clause is unsourced inference. Trading status OK: Tabelog 34006843 (s.tabelog.com, iPhone UA) shows no 閉店 banner, hours 09:00-17:00 daily / 不定休, most recent review 2024/11."
+ },
+ {
+  "id": "hiro_furaido_furaidou_momijid",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The plain whole roasted sweet potato (yaki-imo / Anno-imo) and roasted chestnuts are single-ingredient items that are naturally gluten-free and plant-based.",
+  "url": "https://kurika.jp/?page_id=789",
+  "verdict": "wrong_source",
+  "found": "店舗情報 page: 「風籟堂　紅葉谷店 【取り扱い商品】国産焼き栗　くり香／安納焼き芋／焼き芋ソフトクリーム／紅葉バターサンド」; chestnut page: 「無添加（栗だけの自然な甘味を味わえます。）」「厳選された国産栗を圧力式新製法で香ばしく焼き上げた…無添加なので栗本来の自然の甘さが…」",
+  "correct_url": "https://kurika.jp/?page_id=843",
+  "http": "200 plain on kurika.jp/?page_id=789, /?page_id=843, /?page_id=767, /?page_id=815",
+  "method": "1 plain fetch of the cited page, then plain fetches of the site's sibling pages found by link-scraping the root",
+  "note": "The cited product page evidences only the sweet-potato half (安納焼き芋) and never mentions chestnuts or the 紅葉谷 branch — its only shop reference is 風籟堂　宮島表参道店, the sibling branch. Recite to https://kurika.jp/?page_id=843 (names 紅葉谷店 and lists both 国産焼き栗 くり香 and 安納焼き芋) plus https://kurika.jp/?page_id=767 for the 無添加/栗だけ single-ingredient point. 'Naturally gluten-free and plant-based' remains the reviewer's inference — no page on the site says gluten or allergen anything."
+ }
+]
