@@ -63,6 +63,7 @@ const STEPS = [
   // Warn-only: the enrichment reads restaurants' own marketing, and some of it makes
   // medical claims. This app is used by people managing a real medical condition —
   // it must not become a channel for a soba shop's cancer-prevention copy.
+  ['flag-soy-sauce-errors.mjs',       'catch soy-sauce guidance that points the wrong way'],
   ['flag-health-claims.mjs',          'surface medical claims picked up from shop marketing'],
   ['bump-build.mjs',                  'bump the SW cache version iff shipped content changed'],
 ];
