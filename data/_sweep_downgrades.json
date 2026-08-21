@@ -97,5 +97,23 @@
   "from": "options",
   "to": "ask",
   "why": "Every plant-forward item this venue publishes is labelled ベジタリアン, never ヴィーガン: ベジタリアンカレー and ファラフェルサンド carry no dairy/egg disclosure, and the dessert/drink line is dairy- and honey-heavy (マタルパニール cottage cheese, 青玉プリン made of egg+milk+honey, プティン). No source in Japanese or English uses the word vegan for this branch, so 'options' asserts a confirmed vegan path that no publisher has confirmed."
+ },
+ {
+  "city": "kyoto",
+  "id": "mp_ichikawaya_coffee",
+  "name": "市川屋珈琲 (Ichikawaya Coffee)",
+  "field": "vegan_status",
+  "from": "limited",
+  "to": "no",
+  "why": "Not a thin-evidence case: the shop is a Tabelog corporate member and publishes its complete food menu (9 items, 更新日 2025/09/10) and drinks menu (15 items, 更新日 2025/09/05). Every food item contains egg, dairy or meat, and no plant milk appears on the drinks list, so a vegan can drink here but cannot eat here. 'limited' promises plant-based food that does not exist. The record also contradicts itself — vegan_status is 'limited' while vegan_detail reads \"Status set to 'ask' (unconfirmed)\" — so the two must be reconciled regardless."
+ },
+ {
+  "city": "kyoto",
+  "id": "mp_ichikawaya_coffee",
+  "name": "市川屋珈琲 (Ichikawaya Coffee)",
+  "field": "gf_confidence",
+  "from": "ask",
+  "to": "no",
+  "why": "'ask' is defined in REVIEW_PROTOCOL as the honest default when evidence is thin, and here it is not thin — the operator is a Tabelog corporate member publishing a complete, dated food menu. All nine items are wheat: three sandwiches on コッペパン or 食パン, バタートースト, the モーニングプレート (トースト), and the デミオムライス whose デミグラスソース is a wheat roux. Nothing on the page offers or hints at gluten-free provision. There is nothing left to ask, which is what 'no' records; leaving it at 'ask' invites a coeliac to spend a visit finding out what the menu already says. Human gate applies either way — this is a recommendation only."
  }
 ]

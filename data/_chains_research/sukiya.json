@@ -1,0 +1,37 @@
+{
+ "name": "Sukiya", "name_ja": "すき家", "icon": "🐂",
+ "gf": {
+  "tier": "limited",
+  "best": "お子様カレー (Kids' Curry) — the ONLY cooked dish on Sukiya's whole allergen table with 小麦「ー」. Otherwise: ライス + 鮭 (grilled salmon) + 店内紅生姜, no sauce.",
+  "detail": "Verified line-by-line against Sukiya's own アレルゲン一覧表 (28 items, updated 2026/8/18). EVERY 牛丼 — every size, every topping, plus 牛皿, 牛カレー, all 定食 and all 朝食 — carries 小麦「●」 (wheat AS AN INGREDIENT, not cross-contact): the tare is soy sauce, and the row also shows 大豆● and りんご● (apple in the tare). The gyudon is NOT gluten-free. The one wheat-free cooked item is お子様カレー (#130), whose entire 28-column row is dashes except 鶏肉● — a low-allergen kids' curry roux, quite unlike the adult カレールー (#44) which is 小麦●・乳●・牛肉●・大豆●. Wheat-free sides (小麦「ー」): 鮭 #157 (さけ only), 山かけ #159, おんたま/たまご #152-153, 店内紅生姜 #174 and 紅生姜（小袋）#175 (ZERO of the 28 allergens), 店内七味, 店内タバスコ, フライドにんにく, ベーコン, カットりんご. みそ汁 #147 is 小麦「△」 (cross-contact only — not 麦味噌). Watch the near-misses that DO carry wheat: 納豆 #154 (the tare), 味付のり #158, ポン酢 #172, おろしポン酢 #151, 高菜, 明太マヨ, all three bottled dressings. Rated limited, not reliable: nothing is sealed or served away from the kitchen, and Sukiya states 「店舗の調理者および厨房で調理器具や設備が共有されている場合があるため…意図しない混入が生じる可能性があります」."
+ },
+ "vegan": {
+  "tier": "limited",
+  "best": "冷やっこ (cold tofu) + サラダ（ドレッシング除く） + ライス + 店内紅生姜",
+  "detail": "No plant-based item exists — Sukiya has never listed one on the current menu (checked 2026-08-21) and there is no ベジ/プラントベース line. What the allergen table shows as free of every animal allergen: 冷やっこ #155 (大豆● only), サラダ（ドレッシング除く）#145 and オクラサラダ #146 (△ marks only), 青ねぎ #162, キムチ #180, 山かけ #159, 店内紅生姜 #174 (nothing at all), カットりんご, フライドにんにく. That assembles into a real if joyless plate. CRITICAL LIMIT: かつお節 and dashi are NOT among Japan's 28 allergens, so an allergen table can never rule them out — the みそ汁 and any tare are unverifiable and should be assumed to contain fish stock. All three bottled dressings contain egg and/or dairy plus wheat — order salads ドレッシング抜き."
+ },
+ "both_gf_and_vegan": "Weakly. ライス + サラダ（ドレッシング除く） + 店内紅生姜 is both wheat-free and animal-free per the table, but it is a side plate, not a meal. Adding 冷やっこ makes it a meal but the tofu row carries 小麦「△」 (cross-contact), so it stops being celiac-clean. The wheat-free お子様カレー contains chicken and is not vegan.",
+ "caveats": [
+  "EVERY gyudon is 小麦● — wheat as an ingredient, from the soy-sauce tare. A beef bowl here is not gluten-free.",
+  "麦茶 is on the menu and Sukiya's own English column calls it 'Barley Tea / 大麦茶' — yet its 小麦 column reads 「ー」, because barley is NOT one of Japan's 28 allergens. It is gluten. Do not trust the dash.",
+  "納豆, 味付のり, ポン酢 and おろしポン酢 all carry 小麦● from their tare — the 'safe-looking' sides are not safe.",
+  "紅生姜 (both counter pot and sachet) is the cleanest thing in the building: zero of 28 allergens.",
+  "みそ汁 is 小麦△ only (not 麦味噌) but is listed with 乳● and will contain dashi — not vegan.",
+  "お子様カレー is a children's menu item; confirm the branch will sell it to an adult.",
+  "Sukiya's table covers ingredients and supplier-line contact only; it explicitly does not guarantee against in-store cross-contact."
+ ],
+ "phrases": [
+  { "ja": "小麦アレルギーです。牛丼のタレは醤油なので食べられません。", "romaji": "Komugi arerugii desu. Gyuudon no tare wa shouyu na node taberaremasen.", "en": "I have a wheat allergy — I can't eat the gyudon, the tare is soy sauce." },
+  { "ja": "お子様カレーは小麦不使用と表示されています。注文できますか？", "romaji": "Okosama-karee wa komugi-fushiyou to hyouji sarete imasu. Chuumon dekimasu ka?", "en": "The kids' curry is listed as wheat-free. May I order it?" },
+  { "ja": "ライスと鮭と紅生姜だけをください。タレやソースは全て抜いてください。", "romaji": "Raisu to sake to benishouga dake o kudasai. Tare ya soosu wa subete nuite kudasai.", "en": "Just rice, grilled salmon and pickled ginger please — no tare or sauce at all." },
+  { "ja": "冷やっことサラダをドレッシング抜きでお願いします。動物性の材料は食べられません。", "romaji": "Hiyayakko to sarada o doresshingu-nuki de onegai shimasu. Doubutsusei no zairyou wa taberaremasen.", "en": "Cold tofu and salad with no dressing, please. I can't eat animal ingredients." }
+ ],
+ "sources": [
+  "https://images.zensho.co.jp/materials/sukiya/allergen/allergen.pdf",
+  "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
+  "https://www.sukiya.jp/menu/",
+  "https://www.sukiya.jp/menu/in/gyudon/115000/index.html"
+ ],
+ "allergen_page": "https://images.zensho.co.jp/materials/sukiya/allergen/allergen.pdf",
+ "checked": "2026-08-21"
+}

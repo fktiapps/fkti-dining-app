@@ -292,5 +292,90 @@
    "https://kuroboushi.exblog.jp/242188427/"
   ],
   "why": "Tabelog detail page for らーめん 蔵 (烏丸) fetched 200 on 2026-08-21 (iPhone UA), address 京都府京都市中京区阪東屋町664-7 BIGOLI, live 営業時間 block, no 閉店 / 休業 / 移転 / 掲載保留 marker. The cited blog post (2024-05-19) records the opening as 3月9日 and gives 11:30-21:00, tel 075-748-1570. Pipeline note: because this venue sits inside another business, if BIGOLI's status ever changes, access to 蔵 changes with it."
+ },
+ {
+  "id": "kyr_ramen_makisada",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "看板のまきさだラーメンは醤油ラーメンで、醤油（しょうゆ）ベースのタレを用いる。通常のしょうゆは小麦を含むため、グルテン回避者には不向き。",
+  "url": "https://www.kyoto-shiyakusho-lunch.net/archives/7353",
+  "verdict": "supported",
+  "found": "「「ラーメン まきさだ」は、中華の名店「京中華 牧定」が手掛けるカウンター席のみのラーメン店です。京都風醤油ラーメンが特徴。2026年4月27日にオープンしました。」 and 「唯一のラーメンメニューである「まきさだラーメン」」 / 「程なく運ばれてきたのは、たっぷりの白髪ネギと細切りチャーシューがのった醤油ラーメン」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Supported. Sharpen one point the page makes and the record does not: there is only ONE ramen on the menu (唯一のラーメンメニュー), so there is no non-shoyu bowl to fall back on — the whole shop is the shoyu bowl. The wheat-in-shoyu step is general knowledge correctly applied, not a page statement. Add the second, undocumented gluten item on the same ticket: the +300円 set is 「ごはんと焼売2つ付」 and 焼売 wrappers are wheat, which no field of this record currently names."
+ },
+ {
+  "id": "kyr_ramen_makisada",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "スープは動物系の出汁で、トッピングは細切りチャーシュー（豚）、サイドの焼売も豚肉。植物性のみの選択肢は確認できない。",
+  "url": "https://www.kyoto-shiyakusho-lunch.net/archives/7353",
+  "verdict": "supported",
+  "found": "「スープは、動物系のお出汁の旨みをしっかり感じつつ、後味はすっきりとした。」 「たっぷりの白髪ネギと細切りチャーシューがのった醤油ラーメン」 「セット(＋300円)は、ごはんと焼売2つ付。蒸したての焼売は一つ一つが大きく、食べると肉汁が口いっぱいに広がるジューシーさ」 「中には、クワイもはいっていてシャキシャキとした食感もたまりません」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Supported: 動物系のお出汁 is stated in those words, the chashu and the meat-juice shumai are both documented, and the article's whole menu account (one ramen, one set, sides) leaves no plant-only option — so '植物性のみの選択肢は確認できない' is honest. One precision fix: the page never names the SPECIES. It says 動物系, チャーシュー and 肉汁, so the parenthetical （豚） and '焼売も豚肉' are our inference from the 京中華 lineage, not the source's words. Either soften to 'animal-based stock, meat chashu and meat shumai' or find a menu that names the pork. Also worth recording: the shop opened 2026-04-27 and the article is from 2026-04-28, so no allergen policy exists anywhere yet — that is an absence of information, not an assurance."
+ },
+ {
+  "id": "kyr_ramen_makisada",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260202/26044914/",
+   "https://www.kyoto-shiyakusho-lunch.net/archives/7353"
+  ],
+  "why": "Tabelog detail page for ラーメン まきさだ (烏丸御池) fetched 200 on 2026-08-21 (iPhone UA) with live 営業時間 and 定休日 blocks and no 閉店 / 休業 / 移転 / 掲載保留 marker. Opened 2026-04-27 per the cited article (published 2026-04-28, updated 2026-04-30); roughly four months trading at the time of this sweep."
+ },
+ {
+  "id": "kyr_ramen_monsen_fushimi_sak",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "No source documents the tare composition, but a chicken-broth ramen of this style is conventionally seasoned with wheat-based shoyu; not confirmed gluten-free.",
+  "url": "https://totteoki.kyoto.travel/34668/",
+  "verdict": "unsupported",
+  "found": "Nothing. The word 醤油 does not appear on the page at all, and no tare or kaeshi is described for the ramen. What the page DOES name, and what our record ignores: 「麺は京都の老舗製麺所「麺屋棣鄂」の細麺で、濃厚スープによく絡まります」 and 「酒粕の濃度を薄くした「酒鶏らーめん」、デフォルトの鶏ラーメン、、黒ごま担々麺、白ごま坦々麺、カレーラーメンもあります。」 and 「ランチタイムには唐揚げ、餃子、カレーが付いたお得なセットメニューもあります。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch (Kyoto City Tourism Association site, no obstacles)",
+  "note": "LOUD, and the same shape as the いしる case in the brief: we pinned this shop's gluten on an assumed soy tare while its real, documented gluten sat unnamed on the very page we cited. The page names Menya Teigaku wheat noodles, a カレーラーメン, and a lunch set of 唐揚げ + 餃子 + カレー — Japanese curry roux is wheat-thickened, gyoza wrappers are wheat, karaage is flour-dredged. Cite those. Also correct a likely misreading in the other direction: the shop's signature is 酒粕らーめん (sake lees), and 酒粕 is a RICE by-product — it is not a gluten source and nothing in this record should imply it is (it does carry residual alcohol, which is a separate flag for some readers). The 特製ダレ used on the chicken chashu is undocumented in composition and is the honest place to say 'not confirmed'."
+ },
+ {
+  "id": "kyr_ramen_monsen_fushimi_sak",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The broth is a chicken-bone (tori-gara/tori-paitan) stock simmered with vegetables, so no bowl is free of animal product even before toppings.",
+  "url": "https://totteoki.kyoto.travel/34668/",
+  "verdict": "supported",
+  "found": "「スープは鶏ガラと野菜を長時間煮込んだ濃厚鶏白湯タイプで、ほのかに酒粕の香りが漂います。」 「チャーシューは鶏モモ肉を特製ダレでじっくりと煮込んだ鶏づくし。トッピングは白菜、大根、人参、ネギと種類豊富です。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Supported verbatim, both 鶏ガラ and 鶏白湯 in one sentence, and the vegetables are cooked in that stock exactly as the record says. Worth adding that the toppings are entirely plant (白菜, 大根, 人参, ネギ) yet sit in chicken paitan — a useful concrete illustration for a vegan reader of why plant toppings do not make a plant bowl."
+ },
+ {
+  "id": "kyr_ramen_monsen_fushimi_sak",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260601/26026963/",
+   "https://totteoki.kyoto.travel/34668/",
+   "http://fushimi-sakagura-kouji.com/"
+  ],
+  "why": "EXPLICIT OPEN VERDICT, recorded so this record is not hidden on link rot — see the shop_website_hijacked object below. The shop is trading: Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA) with 電話 075-603-0380, 営業時間 月・水・木・金・土・日 11:00-22:00 (L.O. 21:30), 火 定休日, 23 seats, opened 2016-02-18, 備考 伏水酒蔵小路, and no 閉店 / 休業 / 移転 / 掲載保留 marker. Its ONLY dead signal is the lapsed homepage domain, which is a fact about the domain and not about the business."
+ },
+ {
+  "id": "kyr_ramen_monsen_fushimi_sak",
+  "kind": "link_rot",
+  "field": "website",
+  "url": "http://monsen-taisyo.com/",
+  "evidence": [
+   "http://monsen-taisyo.com/",
+   "https://tabelog.com/kyoto/A2601/A260601/26026963/",
+   "http://fushimi-sakagura-kouji.com/"
+  ],
+  "why": "LOUD — the record's website field is a hijacked lapsed domain. http://monsen-taisyo.com/ returns HTTP 200 with 569 KB of Indonesian online-gambling content: page title 「Nx303: Info Link Resmi Zeus Slot Paling Kece Jawaranya Maxwin Hari Minggu」, with NX303 slot/APK promotion. This is the lapsed-domain-turned-casino defect from the brief, and Tabelog still lists the same dead URL as the shop's ホームページ, so it will keep propagating. Replace the website with https://tabelog.com/kyoto/A2601/A260601/26026963/ or the venue site http://fushimi-sakagura-kouji.com/ (伏水酒蔵小路, the food hall the shop sits inside). Do NOT let the dead link cause the record to be hidden — the shop itself is open; see the trading object above."
  }
 ]

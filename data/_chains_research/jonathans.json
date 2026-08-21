@@ -1,0 +1,47 @@
+{
+  "name": "Jonathan's",
+  "name_ja": "ジョナサン",
+  "icon": "🍽️",
+  "gf": {
+    "tier": "limited",
+    "best": "（低アレルゲン）おこさまカレー（ゼリー付き） — the low-allergen kids' curry, over Skylark's plain ライス",
+    "detail": "Skylark runs a per-item allergen search (allergy.skylark.co.jp, brand code 020001) and it is genuinely item-level. Searched for 小麦-free on 2026-08-21, the ONLY savoury dish that comes back on the whole in-store menu is 「（低アレルゲン）おこさまカレー（ゼリー付き）」, which the tool shows free of all 9 mandatory allergens (そば・落花生・小麦・卵・乳・えび・かに・くるみ・カシューナッツ). Skylark's own words: 「食物アレルギーをお持ちのお子様にも外食を楽しんで頂けるよう、低アレルゲンメニューをご用意しています。」 Everything else that returns wheat-free is rice, a side, a drink or a dessert: ライス, 十三穀米, みそ汁, フライドポテト, (トッピング)ほうれん草/コーン/ガーリックチップ, じゃがバター. There is NO wheat-free steak, hamburg, pasta or bread — those categories drop out of the results entirely. Held at 'limited' because Skylark states the item is cooked in the same kitchen with the same tools: 「調理器具、食器、揚げ油、衣（パン粉、てんぷら粉）、食材の保管場所は共有しております」 and 「工場・店舗での加工・盛付の過程で意図せず微量混入する場合を考慮（表示）しておりません。」"
+  },
+  "vegan": {
+    "tier": "none",
+    "best": "— (at best assemble ライス + (トッピング)ほうれん草 / (トッピング)コーン)",
+    "detail": "There is no plant-based line at Jonathan's and no way to verify one. Skylark publishes only the 9 MANDATORY allergens for this brand — 牛肉・豚肉・鶏肉・ゼラチン・大豆 belong to the 19-item extended list, of which Skylark says 「特定原材料に準ずるものにつきましては、一部ブランドのみ公開をしております」, and Jonathan's is not one of them. So for every dish on this menu the operator publishes no meat, no gelatin and no dashi data at all. Add Skylark's flat refusal to modify a dish and a vegan cannot get a verified meal here. The wheat-free sides that are probably plant-based (spinach, corn, garlic chips, plain rice) remain unverified for chicken extract and dashi."
+  },
+  "both_gf_and_vegan": "NO. The one wheat-free savoury item is a kids' curry with undisclosed meat content, and no dish at this brand has published meat/gelatin data.",
+  "caveats": [
+    "Skylark will NOT remove ingredients on request — 「お客様に、より安全にお食事をお楽しみいただくため、食材を抜くなどの対応はいたしかねますので、あらかじめご了承ください。」 Do not plan on a 'no sauce' order.",
+    "SHARED FRYER, stated outright: 「調理器具、食器、揚げ油、衣（パン粉、てんぷら粉）、食材の保管場所は共有しております」 — the wheat-free フライドポテト comes out of the same oil as breaded items.",
+    "The low-allergen curry is an おこさま (kids') item; Skylark nowhere says an adult may order it (COCO'S explicitly does — Skylark does not).",
+    "Every item page carries 「こちらの商品は取り扱いがない場合がございます」 — check the branch at store-info.skylark.co.jp/?allergy=1&brand=020001",
+    "十三穀米 (13-grain rice) returns as wheat-free, but 麦 (barley) is not a labelled allergen in Japan — assume multigrain rice contains 押麦.",
+    "みそ汁 shows as wheat-free at Jonathan's; barley miso (麦味噌) would not be flagged either. Same caution.",
+    "Table condiments are excluded from the data: 「お客様にお選びいただく商品（小鉢、ソース、ドレッシング等）、お好みでご使用いただく調味料（醤油、タバスコなど）はアレルギー情報に含まれておりません。」 — the table soy sauce is wheat.",
+    "ドリンクバー is not covered at all and 「各種ドリンクは共有の注ぎ口を使用しております」; 麦茶 (barley tea) is a standard drink-bar line."
+  ],
+  "phrases": [
+    {
+      "ja": "小麦アレルギーです。（低アレルゲン）おこさまカレーは大人でも注文できますか？",
+      "romaji": "Komugi arerugii desu. (Tei-arerugen) okosama-karee wa otona demo chuumon dekimasu ka?",
+      "en": "I have a wheat allergy. Can an adult order the low-allergen kids' curry?"
+    },
+    {
+      "ja": "アレルギー検索サイトで小麦不使用と出たメニューを注文したいです。",
+      "romaji": "Arerugii-kensaku-saito de komugi-fushiyou to deta menyuu o chuumon shitai desu.",
+      "en": "I'd like to order the item your allergen search lists as wheat-free."
+    }
+  ],
+  "sources": [
+    "https://allergy.skylark.co.jp/scene_irregular?brand=020001",
+    "https://allergy.skylark.co.jp/consideration",
+    "https://corp.skylark.co.jp/sustainability/social/customer/safe_and_secure/allergy.html",
+    "https://store-info.skylark.co.jp/?allergy=1&brand=020001",
+    "https://www.skylark.co.jp/jonathan/menu/"
+  ],
+  "allergen_page": "https://allergy.skylark.co.jp/scene_irregular?brand=020001",
+  "checked": "2026-08-21"
+}

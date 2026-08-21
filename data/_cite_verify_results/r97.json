@@ -1,6 +1,8 @@
 [
  {
-  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "gf_cross_contamination",
+  "id": "kyr_ramen_tsurumusha",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
   "quote": "In-house wheat noodles are made daily on the shop's own noodle machine, so the kitchen is a wheat-heavy environment.",
   "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
   "verdict": "supported",
@@ -11,7 +13,9 @@
   "note": "Exact: three named wheat flours, noodle machine beside the entrance, daily production, each portion hand-massaged. The machine is literally at the doorway, which strengthens the airborne-flour point rather than weakening it."
  },
  {
-  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "soy_sauce_wheat",
+  "id": "kyr_ramen_tsurumusha",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
   "quote": "The seasoning/tare and items like the house menma are soy-sauce (shoyu) based; Japanese soy sauce is typically brewed with wheat.",
   "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
   "verdict": "unsupported",
@@ -22,7 +26,9 @@
   "note": "GENRE-INVENTED SHOYU WARNING. The cited page states the tare is a kombu/shiitake/dried-scallop dashi and the house bowl is SHIO (salt) based; our record asserts a shoyu tare that this source contradicts. Only the menma half survives (醤油・みりん). gf_confidence 'no' is still correct — the wheat is the house-milled noodles, not the tare — but gf_detail's sentence 'the tare/seasoning is shoyu-based' must be rewritten to: shio tare from kombu/shiitake/scallop; the house menma is seasoned with soy sauce and mirin. Note the menu does list 和風らーめん and つけ麺 whose tare is undocumented, so scope any shoyu language to those, with a source."
  },
  {
-  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "vegan_cross_contact",
+  "id": "kyr_ramen_tsurumusha",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
   "quote": "All broth is animal-based (whole chicken plus pork bones and vegetables) and the tare includes dried scallop; toppings include pork chashu. No vegan/vegetarian option exists.",
   "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
   "verdict": "supported",
@@ -33,7 +39,9 @@
   "note": "Every element verifies: Omi whole chicken + pork bone + aromatic vegetables, 貝柱 (dried scallop) in the tare, pork shoulder-loin rare chashu. 'No vegan option exists' is our inference from the printed menu list (ちゃーしゅー麺/和風らーめん/つけ麺/ごはん/瓶ビール) rather than a statement on the page — true as far as the page goes, but flag it as inference."
  },
  {
-  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "positives",
+  "id": "kyr_ramen_tsurumusha",
+  "city": "kyoto",
+  "field": "positives",
   "quote": "No preservatives and no chemical seasonings (MSG) are used, reflecting an explicit safe-for-the-whole-family ethos.",
   "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
   "verdict": "supported",
@@ -44,7 +52,9 @@
   "note": "Verbatim, including the 安心して食べられるように framing our sentence paraphrases. Worth saying plainly in the record that additive-free is not an allergen claim."
  },
  {
-  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "positives",
+  "id": "kyr_ramen_tsurumusha",
+  "city": "kyoto",
+  "field": "positives",
   "quote": "Child seats and child cutlery are provided and children are actively welcomed.",
   "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
   "verdict": "supported",
@@ -55,7 +65,9 @@
   "note": "Exact. Unrelated data fix from the same page: it gives hours as 11:30〜14:00 LO / 18:00〜21:00 LO with 定休日 金曜 — our record's 11:00 openings on Mon/Wed/Sat/Sun are not from this source. Trading status open (article dated 2025.03.25; Tabelog detail page carries no 閉店 banner)."
  },
  {
-  "id": "kyr_ryouriya_terado", "city": "kyoto", "field": "gf_cross_contamination",
+  "id": "kyr_ryouriya_terado",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
   "quote": "The signature noodles are wheat and the curry dipping broth is described as having a thick wheat-flour consistency.",
   "url": "https://osumituki.com/kyoto-ramen/138131.html",
   "verdict": "supported",
@@ -66,7 +78,9 @@
   "note": "小麦粉多め ('generous wheat flour') is the blogger's own words about the curry, so the wheat is in the DIPPING BROTH as well as the noodles — a celiac cannot get round it by skipping the noodles. Also on the same menu: 冷やし中華 880円, another wheat noodle. One wording nit for the record: the garnish is あおさのり (aosa), not 青のり."
  },
  {
-  "id": "kyr_ryouriya_terado", "city": "kyoto", "field": "soy_sauce_wheat",
+  "id": "kyr_ryouriya_terado",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
   "quote": "A kappo serving sashimi and grilled fish; no wheat-free soy sauce or seasoning is indicated, so standard wheat-based soy sauce should be assumed.",
   "url": "https://osumituki.com/kyoto-ramen/138131.html",
   "verdict": "unsupported",
@@ -75,5 +89,198 @@
   "http": "200 plain curl",
   "method": "1 plain fetch; official site https://ryouriya-terado.com/ also checked (200) and names no seasoning",
   "note": "Genre inference wearing a citation. The source says nothing about soy sauce, and 'grilled fish' is not on it either. The page's real, quotable wheat hazard is the curry itself (小麦粉多め) — cite that. Either drop this entry or restate it honestly as an assumption with no source. Shop is trading: official site posted 2025.10.13 with a カレーつけ麺 price change, Tabelog detail page shows no 閉店 banner."
+ },
+ {
+  "id": "kyr_sai_ramen",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowls are built on wheat ramen noodles (sourced from the Kyoto noodle maker Teigaku) in a pork-bone broth; ramen tare of this style is wheat-based shoyu, so the dish contains wheat throughout.",
+  "url": "https://osumituki.com/kyoto-ramen/208984.html",
+  "verdict": "wrong_source",
+  "found": "Cited page supports the noodles and broth only: 「ストレートの中細麺で京都の老舗製麺所「麺屋棣鄂」の麺を使っていて」 and 「豚骨ベースの甘くクリーミーなスープ」. It says NOTHING about tare or soy sauce. Real soy-sauce evidence is at Kyotopi: 「唐辛子と胡麻を利かせた甘口醤油味系な煮込みソース」 (the wagyu-suji braise) and 「各テーブルに味変用のニラ醤油漬けもスタンバイ」.",
+  "correct_url": "https://kyotopi.jp/articles/9eAhE",
+  "http": "200 plain curl (osumituki); 200 iPhone-UA urllib (kyotopi); 200 iPhone-UA (noodlers.jp/sair01/)",
+  "method": "1 plain fetch for the cited URL, then 1 fetch each of two other record sources to find where the soy sauce is actually documented",
+  "note": "Keep osumituki for the noodles (麺屋棣鄂 — 'Teigaku' is the CORRECT reading, no romanisation problem here) and the tonkotsu broth. But 'ramen tare of this style is wheat-based shoyu' is genre inference with no source: no page found names this shop's tare, and Noodlers' 2025 tasting describes the soup only as 「ぽってりした鶏豚スープ…塩加減は程良い」. Rewrite to the shoyu that IS documented — the sweet chilli-sesame SOY braising sauce ladled over the wagyu suji, and the soy-pickled nira condiment on every table — and cite Kyotopi for it. Also fix the sibling URL in ramen.sources: it carries an extra path segment (/kyotokanko/kyoto-ramen/208984.html) that the safety block does not."
+ },
+ {
+  "id": "kyr_sai_ramen",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is pork-bone based and toppings include wagyu beef tendon, pork chashu, and fried chicken; no plant-based preparation is offered, so cross-contact with animal products is total.",
+  "url": "https://osumituki.com/kyoto-ramen/208984.html",
+  "verdict": "supported",
+  "found": "「豚骨ベースの甘くクリーミーなスープに、甘く煮込んだ和牛のスジがトッピングされたラーメン」「白色のラーメンどんぶりには「九条ねぎ・牛すじ・とろとろチャーシュー・メンマ」がトッピングされて」「ラーメンにはプラス210円で「唐揚げ1個・ライス（伊賀米）」をつけて定食にすることができます」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "All four elements verify against the printed menu (ラーメン890円 / 味玉ラーメン990円 / 和牛すじラーメン1290円 — nothing plant-based). vegan_status 'no' is correct and well evidenced. Trading: open — Noodlers visited and photographed the bowl in Feb 2025, Tabelog detail page carries no 閉店 banner; hours 11:00-15:00 / 17:30-20:30, closed Tue & Wed."
+ },
+ {
+  "id": "kyr_seabura_no_kami_slurp",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The tsukemen tare is described as a blend of two soy sauce varieties cut with kombu-infused water; standard soy sauce is wheat-based.",
+  "url": "https://magazine.tabelog.com/articles/420882",
+  "verdict": "unsupported",
+  "found": "The page splits these two things apart and our record has fused them. The dipping soup's tare is SALT: 「こちらは豚骨、鶏ガラをベースに塩ダレなどをブレンドし、そこにイベリコ豚のバラ肉を投入した清湯スープ。」 The two blended soy sauces are in the NOODLE marinade, not the soup: 「昆布水が染み込んだ麺、香り高い昆布と醤油（2種をブレンドしているそう）のフレーバーがしっかりあり」.",
+  "correct_url": null,
+  "http": "200 iPhone UA (plain curl also 200); official http://www.seaburanokami.jp/ 200 plain",
+  "method": "1 fetch of the cited article, then the shop's own menu page at seaburanokami.jp to confirm the current build",
+  "note": "SCRAMBLED, AND IT ERASES A 塩ダレ. The tsukemen's tare is 塩ダレ; the two-soy-sauce blend flavours the kombu water the noodles sit in. Our sentence transplants the shoyu onto the tare and drops the salt entirely. The gluten conclusion is unchanged and in fact stronger than we wrote it: the noodles are 「麺屋棣鄂」の小麦ふすまの麺 (wheat-BRAN noodles) and the kombu water itself carries soy sauce, so step 1 of the shop's own five-step eating instructions — 'slurp the noodles plain' — is already both wheat and shoyu. Rewrite accordingly. Separately, gf_detail's 'chicken collagen' is a misreading of 鶏ガラ, which is chicken CARCASS/bones."
+ },
+ {
+  "id": "kyr_seabura_no_kami_slurp",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The dipping broth is a pork-bone and chicken-collagen base finished with Iberico pork belly, and the bowl is topped with pork belly and sous-vide pork chashu — animal-based throughout.",
+  "url": "https://magazine.tabelog.com/articles/420882",
+  "verdict": "supported",
+  "found": "「豚骨、鶏ガラをベースに塩ダレなどをブレンドし、そこにイベリコ豚のバラ肉を投入した清湯スープ」「特製イベリコ豚つけ麺は、豚肩ロースのチャーシュー、味玉、白髪ネギなどが全盛り状態に」「醤油などで下味をつけ、低温調理でじっくりレアに仕上げています…赤身の旨みをしみじみ味わえる肩ロース」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "Substance holds; vegan_status 'no' is correct — pork bone, chicken carcass, Iberico belly in the soup, low-temperature pork chashu and 味玉 (egg) on the special. Two cuts of precision: 鶏ガラ is chicken bones, not 'collagen'; and the topping chashu is 豚肩ロース (shoulder loin) — the BELLY is what goes into the soup, so 'topped with pork belly' misplaces it. Also note the chashu is marinated 醤油などで — another documented soy-sauce contact point the soy_sauce_wheat entry missed while inventing one for the tare."
+ },
+ {
+  "id": "kyr_seabura_no_kami_slurp",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "http://www.seaburanokami.jp/",
+   "http://www.seaburanokami.jp/access",
+   "https://s.tabelog.com/kyoto/A2601/A260401/26035079/"
+  ],
+  "why": "Trading, but RENAMED and re-scoped since our record was written. The group's own NEWS＆TOPICS reads 「2026/6/19 slurp店改め、三条烏丸店リニューアルOPEN」 — as of 19 June 2026 the shop operates as セアブラノ神 三条烏丸店 at the same address (京都市中京区菱屋町33 珠光ビル三条1F). Tabelog now titles it 「セアブラノ神 slurp （【旧店名】slurp）」 with no closure banner. Two record fields are now stale: hours are 「平日 : 11:00〜15:30（ラストオーダー 15:00）」 — WEEKDAYS ONLY, not 'daily' as we have it; and it is no longer a tsukemen-only house — the shop's own menu page lists 生醤油らぁ麺, 豚骨鶏白湯らぁ麺 and 豚骨魚介まぜそば alongside the Iberico tsukemen. The 生醤油らぁ麺 in particular is a wheat-brewed shoyu bowl that our gf_detail does not mention."
+ },
+ {
+  "id": "kyr_seikatei",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat is pervasive: gyoza, shumai and spring-roll wrappers, Chinese noodles, and fried-rice/stir-fry seasonings all involve wheat, with shared woks and fryers typical of a town-Chinese kitchen.",
+  "url": "https://serai.jp/gourmet/1219078",
+  "verdict": "wrong_source",
+  "found": "Serai names only the gyoza (「皮に炒り胡麻を練りこんだ」, filling キャベツとニラ、豚肉だけ) and the shumai (「餡は老舗精肉店『銀閣寺大西』の豚ミンチに玉ネギと調味料を加えただけ」) — no spring rolls, no Chinese noodles, no shared-fryer statement anywhere. The shop's OWN menu carries all of it: 「はるまき（２本）¥638」「五目やきそば ¥869」「シュウマイ(五個) ¥638」「水餃子 ¥693」「胡麻餃子 ¥803」「エビパン揚げ物 ¥803」「エビころも揚げ ¥1,540」.",
+  "correct_url": "https://seikatei.skr.jp/menu/index.html",
+  "http": "200 iPhone UA (serai); 200 iPhone UA (seikatei.skr.jp, page is Shift-JIS/cp932 — decode as cp932 or it renders as mojibake)",
+  "method": "1 fetch of the cited magazine page, then the shop's own menu page to find where the dishes are actually listed",
+  "note": "Claim is TRUE but cited to a page that does not carry it — swap in the shop's own menu. That menu also adds two wheat items we never mention: エビパン揚げ物 (shrimp toast, on BREAD) and 紹興酒 by the pot, which is brewed with a wheat qu. And it names two things worth telling a celiac about in the other direction — 春雨 dishes (mung/potato starch) and ビーフン炒め (rice vermicelli) are wheat-free bases, the only plausible starting points here. 'Shared woks and fryers' remains our inference with no source; either drop it or say so."
+ },
+ {
+  "id": "kyr_seikatei",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are seasoned in the Chinese-Japanese style; standard soy sauce/seasonings contain wheat. No wheat-free seasoning is indicated.",
+  "url": "https://serai.jp/gourmet/1219078",
+  "verdict": "unsupported",
+  "found": "The page contradicts the last sentence outright: 「千切り野菜を炒めて冷ました「八宝絲」の味付けは、塩と日本酒のみ。その日本酒も料理酒ではなく、京都松井酒造の清酒を開業以来使う。」 and 「香りの強い香辛料は使わず、油も基本は大豆の白絞油（しらしめゆ）を用いる。」 The one soy sauce the page DOES document is the gyoza dip: 「酢醤油をつけて口に入れると、もちっとした皮の香ばしさと胡麻の風味が広がる。」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "Wrong in both directions at once. 'No wheat-free seasoning is indicated' is false — the cited page's whole point is a house style of salt, Kyoto sake (Matsui Shuzo seisyu, rice-brewed and wheat-free) and white-pressed soybean oil, with strong spices deliberately avoided; gf_detail's 'wheat-based soy sauce/seasoning are central' is the opposite of what the source says. Meanwhile the actual, quotable soy sauce on the page — the 酢醤油 served with the gyoza — goes unmentioned. Rewrite around 酢醤油 and keep gf_confidence 'no', which the wrappers and yakisoba carry on their own."
+ },
+ {
+  "id": "kyr_seikatei",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Pork is used throughout (gyoza, shumai, fried rice, noodle dishes) and stir-fries share oil and pans, so genuine vegan separation is not provided.",
+  "url": "https://serai.jp/gourmet/1219078",
+  "verdict": "supported",
+  "found": "「餡の具材は、キャベツとニラ、豚肉だけ。」「「焼売」638円。餡は老舗精肉店『銀閣寺大西』の豚ミンチに玉ネギと調味料を加えただけ。」「白ネギ、ショウガ、タケノコ、ニンジン、シイタケ、豚肉などを細切りにして炒め…「八宝絲」」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "Pork verifies three times over on the cited page. 'Fried rice, noodle dishes' and the shared-oil line are not on it — the 五目チャーハン is described only as 「さらっとして軽やか…まるでかやくご飯」. vegan_status 'no' is right, but note the record disagrees with itself: ramen.vegan.status is 'ask' while the top-level vegan_status is 'no'. Reconcile them."
+ },
+ {
+  "id": "kyr_seikatei",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Cooking is intentionally light on garlic and heavy oil — a gentler, cleaner style of Chinese food, though this is about palate rather than allergen safety.",
+  "url": "https://serai.jp/gourmet/1219078",
+  "verdict": "supported",
+  "found": "「祇園を訪れる旦那衆や芸舞妓の口に合うようにと、ニンニクなど強い香味や油を控えめにした花街好みの中華料理を生み出した。」 and 「香りの強い香辛料は使わず、油も基本は大豆の白絞油（しらしめゆ）を用いる。」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "Verbatim, and the record's own caveat ('palate rather than allergen safety') is the right framing. Trading: open — Tabelog detail page shows no 閉店 banner; Serai (Jun 2025) and the shop's own site both give 17:00–22:00, closed Mon and the 1st/3rd/5th Tue (our record says 1st & 3rd only)."
+ },
+ {
+  "id": "kyr_shinodaya",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The chuka-soba broth is a soy-based (shoyu) chicken stock; standard Japanese shoyu contains wheat.",
+  "url": "https://www.hotpepper.jp/mesitsu/entry/lc/1603034",
+  "verdict": "supported",
+  "found": "「澄んだスープはごくあっさりめの醤油味。鶏の出汁が生きています。」 and 「鶏ガラの出汁を使った昔ながらの醤油スープの優しい味わいがたまりません。麺は特注の細めストレート。」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "Exact — a rare case where the source names the shoyu itself rather than leaving us to infer it from genre. Two gaps worth filling from the SAME page, since safety.gf_cross_contamination is currently empty: the 皿盛's sauce is literally the UDON pot's broth — 「ルゥならぬカレーうどん用の餡かけ出汁をかけるのが特徴」 — and 「おくどさんには、ご飯用の釜（左）と、うどん用の出汁（中）、中華そばのスープ（右）が」 puts the udon dashi and the ramen soup side by side on one stove; the katsu is breaded and 「ラードで揚げてある」. Trading: open, no 閉店 banner on Tabelog. Note the cited article is from 2016-05-26 and gives hours 10:30–15:00 LO / 16:30–19:00 LO, closed SATURDAY."
+ },
+ {
+  "id": "kyr_shinuchi_eitaro",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "On-site hand-pulling of Sanuki udon means heavy wheat flour use in the kitchen, with airborne flour and shared boiling water creating cross-contamination risk for any wheat-sensitive diner.",
+  "url": "https://magazine.tabelog.com/articles/428068",
+  "verdict": "supported",
+  "found": "「同店の本格手打ち「さぬきうどん」はツルツルもちもちの弾力・歯ごたえに仕上げていて、だしには厳選カツオ節4種をブレンドした一番だしを使用しています。」 and 「麺はこだわりの国産小麦を使用し、かんすいを少なめにスープとの相性を高めたストレート細麺で、有名製麺所を3年かけて口説いて作ってもらった」.",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch; official kyoto-eitaro.com also 200",
+  "note": "The wheat is fully documented — 本格手打ち Sanuki udon in house, and the RAMEN noodles are explicitly 国産小麦. But 'hand-pulling' mistranslates 手打ち (hand-kneaded and cut; hand-PULLED would be 手延べ), and 'airborne flour and shared boiling water' is our own mechanism, not the source's — the same phrasing that produced a wrongful downgrade elsewhere in this app. Keep the conclusion, attribute the mechanism honestly. The page adds unsourced-by-us wheat we should name instead: 天カス served alongside every udon, 大海老天 / かきあげ天 out of a shared fryer, and 焼きギョーザ on the evening set."
+ },
+ {
+  "id": "kyr_shinuchi_eitaro",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The ramen tare is built on a soy sauce infused with the shop's udon dashi; standard Japanese soy sauce contains wheat, so the seasoning base is not gluten-free.",
+  "url": "https://magazine.tabelog.com/articles/428068",
+  "verdict": "supported",
+  "found": "「看板メニューの「ゆずラーメン」（並・1,100円/大盛・1,280円）は、背脂たっぷりの鶏がらスープに、うどん屋ならではのだしを馴染ませた醤油、更にゆずの搾り汁をたっぷり入れた爽やかな味わい。」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "Precisely supported — 「うどん屋ならではのだしを馴染ませた醤油」 is the source naming the shoyu itself, not us inferring it from genre. Scope caution for whoever edits: this covers the ゆずラーメン and the 中華そば. The shop's みそラーメン uses 京の西京味噌, which is a sweet white RICE miso — wheat-free and barley-free — so do not let a blanket shoyu sentence sweep 西京味噌 in as a hazard; the wheat in that bowl is the noodles."
+ },
+ {
+  "id": "kyr_shinuchi_eitaro",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is chicken-bone stock plus bonito (katsuo) dashi and kombu, and the yuzu ramen is finished with pork back fat; evening menu centers on wagyu shabu-shabu and sukiyaki, so animal products are pervasive.",
+  "url": "https://magazine.tabelog.com/articles/428068",
+  "verdict": "supported",
+  "found": "「7時間炊いた鶏ガラにカツオ一番だしを加えた、ゆずの香りが良いスープ」「背脂たっぷりの鶏がらスープ」「こだわりの和牛と京都特選もち豚のしゃぶしゃぶを堪能できる「しゃぶしゃぶコース」（6,600円）」; reviewer on the same page: 「鶏ガラをベースに鰹や昆布を合わせた鶏魚介の白湯スープに背脂が加えられた」.",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "vegan_status 'no' is solidly evidenced. One name to fix: the evening pot is 「うどんすき」 (udon-suki — the article's 「うどんすきセット」3,800円 with a katsuo/Hokkaido-kombu tsuyu and seafood), NOT sukiyaki; our record calls it sukiyaki in safety and 'udon-sukiyaki' in chef_bio. The distinction matters for gluten more than for vegans — udon-suki puts WHEAT UDON into the shared hot pot. Also the Hokkaido kombu belongs to that udon-suki tsuyu, not to the ramen broth. Trading: open — reopened Nov 2024 near Shijo-Omiya; Tabelog carries a 移転 (relocated) marker, no closure, address 京都市中京区壬生坊城町5-2, closed Sundays."
+ },
+ {
+  "id": "kyr_tantan_shijo_honten",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Tantan-men is built on wheat noodles with a sesame broth and a soy/miso-based meat tare that conventionally contains wheat; no gluten-free preparation is offered or noted.",
+  "url": "https://kyotopi.jp/articles/KWTT4",
+  "verdict": "unsupported",
+  "found": "The page describes only 「担々麺（並700円）青梗菜、ネギ、肉みそとシンプルなトッピングで、これぞ王道の担々麺です。」 and 「ゴマの風味をしっかり感じるクリーミーなスープに細麺がよく絡みます」. No tare is described, soy sauce is never mentioned, and the 肉みそ is named as a TOPPING, not as the tare.",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch; Tabelog detail page (s.tabelog.com, iPhone UA) checked for menu and branch identity",
+  "note": "Genre inference again, and it drags in a miso warning the source does not license. The 肉みそ's miso type is nowhere stated, and 米味噌 / 豆味噌 / 西京味噌 are wheat- AND barley-free — this app has already been caught warning readers off wheat-free misos. What IS documented is the noodles: 細麺 as standard with a 太麺 swap, plus 冷やし担々麺 in summer — ordinary wheat ramen noodles, which carry gf_confidence 'no' by themselves. Rewrite around the noodles and drop the tare speculation, or find a source that names the tare. Positive check: the article's 基本情報 gives 四条通千本西入ル壬生花井町23 ファミール四条1F, which matches our record — this is the right branch, not one of the unrelated 千本丸太町 / 木屋町 / 高槻 shops the honten has publicly disavowed."
+ },
+ {
+  "id": "kyr_tantan_shijo_honten",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The bowl is topped with pork meat miso and uses an animal-based broth/tare; no vegan or vegetarian version is available.",
+  "url": "https://kyotopi.jp/articles/KWTT4",
+  "verdict": "supported",
+  "found": "「担々麺（並700円）青梗菜、ネギ、肉みそとシンプルなトッピング」 and, on the sides, 「カニあんかけレタスチャーハン（小450円）お値段以上のカニ身が入っています。煎りたまごもいっぱい入っています。」",
+  "correct_url": null,
+  "http": "200 iPhone UA",
+  "method": "1 fetch",
+  "note": "vegan_status 'no' holds — 肉みそ is meat by definition and it is on every bowl the article shows, with crab and egg in the fried rice alongside. Two specifics are ours, not the page's: it says 肉みそ, not PORK meat miso, and it describes the soup only as 「ゴマの風味をしっかり感じるクリーミー」 with no animal base named. Soften those or source them. Trading: open — Tabelog lists 月火水金土日 11:30-15:00, 木曜定休 with 火曜不定休 and 「売切れ次第閉店」 (sells out, not shut); our record's hours match. The cited Kyotopi article is from 2018 and its 700円 prices are long stale."
  }
 ]

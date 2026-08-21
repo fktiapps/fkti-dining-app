@@ -68,6 +68,10 @@ const STEPS = [
   // medical claims. This app is used by people managing a real medical condition —
   // it must not become a channel for a soba shop's cancer-prevention copy.
   ['flag-soy-sauce-errors.mjs',       'catch soy-sauce guidance that points the wrong way'],
+  // Fetches ~1,700 links, so it is the slowest step here — but a 200 from a hijacked
+  // domain passes every other check in this pipeline, and the harm is a live link from
+  // a coeliac's dining app to a gambling site.
+  ['flag-hijacked-domains.mjs',       'clear links that lapsed into gambling or parked pages', ['--apply']],
   ['flag-health-claims.mjs',          'surface medical claims picked up from shop marketing'],
   ['bump-build.mjs',                  'bump the SW cache version iff shipped content changed'],
 ];

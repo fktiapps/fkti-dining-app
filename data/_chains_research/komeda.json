@@ -1,0 +1,57 @@
+{
+ "name": "Komeda's Coffee",
+ "name_ja": "コメダ珈琲店",
+ "icon": "☕",
+ "gf": {
+  "tier": "none",
+  "best": "—",
+  "detail": "No gluten-free FOOD. Komeda's own allergen search, filtered for 小麦 「含まない」, returns 69 drinks, 16 shaved-ice/dessert items and 4 kids drinks — but only 9 'foods', which are 小倉あん, ゆで玉子, ぬる豆乳, 手羽先, butter/margarine, two yoghurts and jam. The signature シロノワール, トースト, 小倉トースト, サンドイッチ, カツパン, ハンバーガー, グラタン and スパゲッティ are all wheat. Komeda states plainly 「揚げ物メニューで使用する揚げ油は、すべて共通のものを使用しています」 — one shared fryer for everything. Not a celiac food option."
+ },
+ "vegan": {
+  "tier": "limited",
+  "best": "ぬる豆乳 (a glass of warm soy milk) + 小倉あん（モーニング／トーストなし）; or 黒蜜きなこのぜんざい氷",
+  "detail": "IMPORTANT — ordinary Komeda branches are NOT a plant-milk café, and the plant-based sub-brand is a DIFFERENT SHOP. At a normal コメダ珈琲店 you cannot have your coffee with soy: every カフェオーレ, ミルクコーヒー, ホットティー ミルク and ココア is dairy, and Komeda's live menu API still carries a 豆乳 drink category (medium_type 1-2-5) that currently returns ZERO items nationally. The only soy item in the live allergen database is ぬる豆乳 — a plain glass of lukewarm soy milk. Filtering Komeda's own allergen search for no egg/dairy/wheat/beef/chicken/pork/gelatin leaves black coffee, tea, sodas and juices, plus exactly three foods — 小倉あん（モーニング／トーストなし）, ぬる豆乳, いちごジャム — and the shaved-ice range (いちご氷, 宇治抹茶氷, もも太郎氷, アサイーミックス氷, 黒蜜きなこのぜんざい氷). Komeda's famous free モーニング normally arrives as toast plus egg or あん; order the あん as トーストなし. === SEPARATE BRAND === KOMEDA is □ (コメダイズ) is the real plant-based answer, and it is a STANDALONE STOREFRONT, not a menu at ordinary branches — one shop only, KOMEDA is □ 東銀座店 in Chuo-ku, Tokyo (trading since 2020; it is brand_type 5 in Komeda's own system, separate from コメダ珈琲店 = 1). It is a full 「プラントベース（植物由来）の喫茶店」 with its own allergen PDF (updated 2026-07-29) in which EVERY food item shows 卵 and 乳成分 as 「－」. It stocks OAT, ALMOND and SOY: カフェオーツオーレ, オーツミルクコーヒー, アイスアーモンドオーレ, アイスアーモンドミルクコーヒー, ジェリコアーモンドミルク, 豆乳ウインナーコーヒー, and 豆乳クリーム（濃久里夢）in place of dairy 'fresh'. Food includes プラントベース ハンバーグ, 大豆ミートのボロネーゼ, soyハムカツ, a plant-based シロノワール with almond-milk soft-serve, and a plant-based morning toast. It is the one place on this list that matches Starbucks for a vegan — but you must travel to Higashi-Ginza for it."
+ },
+ "both_gf_and_vegan": "At ordinary Komeda: 小倉あん（モーニング／トーストなし）and the 黒蜜きなこのぜんざい氷 shaved ice are each listed wheat-free AND free of every animal allergen — a snack, not a meal, and the fryer is shared. At KOMEDA is □: everything is animal-free but the breads, pancakes and burger buns are 小麦 — plant-based is NOT gluten-free there.",
+ "caveats": [
+  "KOMEDA is □ (コメダイズ) is ONE standalone store in Tokyo (東銀座), NOT a menu available at ordinary Komeda branches — never send a traveller to a normal Komeda expecting it",
+  "Ordinary Komeda cannot make your coffee with soy — the 豆乳 drink category is currently empty; only ぬる豆乳 (plain warm soy milk) exists",
+  "Komeda's allergen search does NOT cover はちみつ (honey) or alcohol — the operator says to check each menu page; シロノワール syrup contains honey",
+  "「揚げ物メニューで使用する揚げ油は、すべて共通のものを使用しています」 — single shared fryer",
+  "At sibling brand おかげ庵 all in-store noodles are boiled in the same pot as そば",
+  "フレッシュ (the little milk pitcher) contains 乳成分 and 大豆 — refuse it",
+  "Even at KOMEDA is □: ingredients are fully plant-derived but animal products share the same equipment and tableware, so cross-contact is possible"
+ ],
+ "phrases": [
+  {
+   "ja": "ぬる豆乳をください。",
+   "romaji": "Nuru-tounyuu o kudasai.",
+   "en": "The warm soy milk, please."
+  },
+  {
+   "ja": "モーニングの小倉あんを、トーストなしでお願いします。",
+   "romaji": "Mooningu no ogura-an o, toosuto nashi de onegai shimasu.",
+   "en": "The morning red-bean paste, without the toast, please."
+  },
+  {
+   "ja": "フレッシュは要りません。",
+   "romaji": "Furesshu wa irimasen.",
+   "en": "No creamer, thank you."
+  },
+  {
+   "ja": "このお店に豆乳のコーヒーはありますか？",
+   "romaji": "Kono omise ni tounyuu no koohii wa arimasu ka?",
+   "en": "Does this branch do coffee with soy milk?"
+  }
+ ],
+ "sources": [
+  "https://www.komeda.co.jp/allergy_check/",
+  "https://eu.komeda.co.jp/v1/hp/allergy/search?brand_id=1&component_flg=false&component_id=1&component_id=2&component_id=3&component_id=14&component_id=18&component_id=19&component_id=24",
+  "https://eu.komeda.co.jp/v1/hp/menu?brand=1",
+  "https://www.komeda-is.com/",
+  "https://www.komeda-is.com/pdf/allergy.pdf",
+  "https://www.komeda-is.com/pdf/menu.pdf"
+ ],
+ "allergen_page": "https://www.komeda.co.jp/allergy_check/",
+ "checked": "2026-08-21"
+}

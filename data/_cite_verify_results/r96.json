@@ -102,5 +102,203 @@
    "https://tabelog.com/kyoto/A2601/A260202/26016307/"
   ],
   "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA): score 3.12 / 116 reviews, most recent logged visit 2025/09, 3,445 saves. Live hours 月・木〜日 12:00-21:00, 火・水 定休日; 京都府京都市中京区新京極通り四条上ル中之町580, tel 075-255-0181. No 閉店/休業/移転/掲載保留 banner."
+ },
+ {
+  "id": "kyr_ramen_senmonten_daiki",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The ramen uses wheat noodles cooked in shared water and a wheat-based light soy-sauce tare; there is no gluten-free preparation or separate handling.",
+  "url": "https://osumituki.com/kyotokanko/kyoto-ramen/102003.html",
+  "verdict": "supported",
+  "found": "「それに薄口醤油のカエシで軽く味がついていますが、薄くもなく濃くもなく…」 and 「麺は細めのストレート麺くらいでしょうか、低加水のストレート麺で、これも京都ラーメンにはよくあるものです。」 Menu on the page: 「しょうゆ（並）850円／しょうゆ（大）1050円／みそ（並）900円／みそ（大）1100円…」 Nothing gluten-free appears anywhere.",
+  "correct_url": null,
+  "http": "200 plain curl (798KB; Kyoto no Osumitsuki article dated 2017.12.23, updated 2023.01.04)",
+  "method": "1 plain fetch of the cited article; then the shop's own site rs-daiki.moo.jp (Shift-JIS, decoded cp932) for first-party menu and hours; iPhone-UA s.tabelog.com/kyoto/A2601/A260403/26003224/ for trading",
+  "note": "Noodles and tare are both verbatim on the page - this is one of the better-sourced records in the shard. Two corrections. (1) 'cooked in shared water' is again OUR mechanism, not the article's; the page never describes the boiler. Drop it or mark it as inference - the wheat noodles alone carry the conclusion. (2) The record treats the shop as shoyu-only. Its own site sells a 3-colour set of 醤油x2 / 味噌x2 / 塩x2 (https://rs-daiki.moo.jp/ryoukin.html), so there is a SHIO bowl and a MISO bowl in the house repertoire that the soy-sauce sentence does not cover. That changes nothing for gf - every bowl uses the same wheat noodles - but the reason must be scoped to the noodles, not the tare."
+ },
+ {
+  "id": "kyr_ramen_senmonten_daiki",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowl is seasoned with a light soy-sauce (薄口醤油) tare, which is wheat-based as standard Japanese soy sauce.",
+  "url": "https://osumituki.com/kyotokanko/kyoto-ramen/102003.html",
+  "verdict": "supported",
+  "found": "「スープは宮崎産の豚から取った出汁を使っていますが、京都ラーメンによくある獣臭さというのはありません。それに薄口醤油のカエシで軽く味がついていますが…京都ラーメンによくある背脂醤油ではなく、珍しく油分がよく浮いています。」 Corroborated first-party by the shop's own site: 「醤油が引き立てるキレのある後味のあるスープ」 (https://rs-daiki.moo.jp/iriguti.html).",
+  "correct_url": null,
+  "http": "200 plain curl; shop site 200 plain curl (Shift-JIS)",
+  "method": "1 plain fetch of the cited article, plus the shop's own pages as corroboration",
+  "note": "Exact verbatim match including the kanji 薄口醤油 - this is the standard to hold other records to. 薄口 is a genuine wheat soy sauce (light in COLOUR, not in wheat; it is if anything saltier than koikuchi), so the inference is sound, and note it is the opposite reading from 白醤油, which is majority wheat. Scope caution only: the shop also runs みそ and 塩 bowls per its own mail-order page, so this sentence describes the しょうゆ bowl, not 'the bowl'."
+ },
+ {
+  "id": "kyr_ramen_senmonten_daiki",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The broth is a pork bone stock and the bowl is topped with pork chashu, so all menu items are animal-based; no vegan options exist.",
+  "url": "https://osumituki.com/kyotokanko/kyoto-ramen/102003.html",
+  "verdict": "supported",
+  "found": "「ラーメン大輝さんは宮崎産の豚肉を使った脂身が濃厚なチャーシューに、マイルドな豚骨スープが特徴です。」「スープは宮崎産の豚から取った出汁を使っています」「・ラーメンは豚骨スープだがマイルドな味わい」 Toppings: 「チャーシュー（脂身多め）、細もやし、九条ねぎ」. The whole menu is しょうゆ/みそ ramen plus 付き出しチャーシュー and キムチ.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch; corroborated by the shop's own entrance page describing its Miyazaki pork and house-made chashu",
+  "note": "Fully supported and first-party corroborated - 豚骨 broth is stated three times on the cited page and the shop's own site leads with its Miyazaki pork. Nothing to change; vegan 'no' is correct."
+ },
+ {
+  "id": "kyr_ramen_senmonten_daiki",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260403/26003224/",
+   "https://rs-daiki.moo.jp/mise.html",
+   "https://osumituki.com/kyotokanko/kyoto-ramen/102003.html"
+  ],
+  "why": "Three independent live signals on 2026-08-21. (a) Tabelog detail 200 via iPhone UA: score 3.56 / 372 reviews with visits logged 2025/11, 2025/09 and 2025/08; 京都府京都市右京区梅津西浦町16, tel 075-882-9897, Tue-Fri 11:00-15:00, Sat/Sun 11:00-15:00 & 17:30-20:00, Monday and the 3rd Sunday closed; no closure or suspension marker. (b) The shop's own site rs-daiki.moo.jp answers 200 and its 店案内 page carries the same phone and address with matching hours. (c) Its mail-order form is still live. Note the cited article's prices (しょうゆ 850 yen) date to 2017-2022 and the article itself warns of 2022 changes, so treat the price fields as stale, not the trading status."
+ },
+ {
+  "id": "kyr_ramen_so_chikyu_kibo_de_",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Bowls center on house-made wheat noodles boiled in a shared pot; there is no gluten-free preparation, so cross-contamination is unavoidable.",
+  "url": "https://kyotopi.jp/articles/j20Q6",
+  "verdict": "supported",
+  "found": "「自家製の平打ち極太麺は、ほんのりちぢれた独特のフォルムが特徴。」「麺が茹で上がるタイミングで、スタッフから『お次の方、ニンニク入れますか？』とトッピングの好みを聞かれる」「メニューは基本的に『ラーメン』と『汁なし』の2種類。」「麺量は小が200g、中が300g、大が400g。」",
+  "correct_url": null,
+  "http": "200 plain curl (76KB; article updated 2025-05-04)",
+  "method": "1 plain fetch of the cited article; iPhone-UA s.tabelog.com/kyoto/A2601/A260601/26009396/ for trading",
+  "note": "Solid. House-made noodles are stated verbatim, the whole menu is two noodle dishes at 200-400g, and staff call orders as the noodles come out of the boiler. 'Wheat' itself is not printed - 平打ち極太麺 at a Jiro shop is wheat by definition, but say that as the inference it is. 'Shared pot' is again our wording rather than the page's; the page only shows a single continuous noodle-boiling line, which is enough. No GF anything is mentioned; gf 'no' is right."
+ },
+ {
+  "id": "kyr_ramen_so_chikyu_kibo_de_",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is seasoned with a soy-sauce (shoyu) tare, which in a Jiro-style shop is virtually always wheat-containing soy sauce.",
+  "url": "https://kyotopi.jp/articles/j20Q6",
+  "verdict": "supported",
+  "found": "「いわゆる非乳化系のスープで、醤油のキレが際立ちつつ、しっかりとした旨みの厚みが感じられる美味しさです。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "醤油 is named on the page for this shop's own soup, so the subject is documented rather than assumed from genre - that is the distinction that matters, and it is met here. Only the wheat step is inference (no brand or product is named anywhere), so word it as inference. Worth adding to the record: the shop lets you say カラメ to have extra tare added, i.e. the soy component is dialled UP on request, never off."
+ },
+ {
+  "id": "kyr_ramen_so_chikyu_kibo_de_",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All bowls share a pork-bone broth and pork back-fat; vegetable, garlic and fat toppings are added on top of the animal broth, so no bowl is free of animal products.",
+  "url": "https://kyotopi.jp/articles/j20Q6",
+  "verdict": "supported",
+  "found": "「チャーシュー（こちらでは“豚”）もたっぷりで、『豚ラーメン』にするとチャーシューだけで200g前後」「まるで塊のようなチャーシューが2枚…噂むたびに豚肉の旨みがじんわり広がって」「トッピングは『野菜・ニンニク・脂・一味』から選べ、それぞれ抜くことも増量も可能」「途中からはスープと甘い脂が混ざり合い」「いわゆる非乳化系のスープ」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Conclusion is right and the toppings sentence is verbatim. One precision fix: the page never writes 豚骨 - it says 非乳化系のスープ, which in Jiro usage means an un-emulsified pork stock, and pairs it with 豚 chashu and 甘い脂. Say 'un-emulsified pork-based soup with pork back fat (the page's own 非乳化系 / 脂)' rather than asserting a bone stock the page does not name. Also note for readers who try to order around it: 野菜・ニンニク・脂 can each be refused, which may look like a vegan route - it is not, because the soup and the 豚 are not optional. vegan 'no' is correct."
+ },
+ {
+  "id": "kyr_ramen_so_chikyu_kibo_de_",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260601/26009396/",
+   "https://kyotopi.jp/articles/j20Q6"
+  ],
+  "why": "Tabelog detail 200 via iPhone UA on 2026-08-21: score 3.57 / 569 reviews with visits logged 2026/07 and 2026/03 (one describing a summer limited menu on a weekday at 14:30 with other customers in the shop), 京都府京都市伏見区撞木町1153-9, tel 075-606-6787, Tue-Sat 11:00-14:45 & 18:00-23:45, Sun 11:00-21:45, Monday closed - identical to the cited article's hours. No closure marker. The cited Kyotopi article was itself updated 2025-05-04. Aside for the next agent: the same Kyotopi page's sidebar carries closure headlines for 中野屋 THE JIRO and らーめん大 京都深草店 and an indefinite-suspension headline for ますたに 北白川本店 - all DIFFERENT shops, do not attach them to this record."
+ },
+ {
+  "id": "kyr_ramen_sou_yume_wo_katare",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The bowl is built on ultra-thick hand-kneaded wheat noodles, a wheat-based shoyu tare, and pork-bone broth; gluten is unavoidable and there is no GF preparation.",
+  "url": "https://osumituki.com/kyoto-ramen/104056.html",
+  "verdict": "supported",
+  "found": "「麺を唹った感じではラーメン二郎らしく「極太平打ちの手もみ麺（自家製麺）」になっていました。」 and, decisively, 「麺は小麦の風味もよくしており、クセがないので食べやすい麺でした。」 Broth: 「スープの味は、非乳化の豚骨です。」 Menu is six SKUs, all noodles: ラーメン / 汁なし at 200g / 300g / 400g.",
+  "correct_url": null,
+  "http": "200 plain curl (799KB; article 2018.01.21, updated 2023.12.21)",
+  "method": "1 plain fetch of the cited article; iPhone-UA s.tabelog.com/kyoto/A2601/A260303/26003256/ for trading; Ecosia to test the tare claim",
+  "note": "The strongest wheat evidence in the shard: the page prints 小麦 in so many words about these noodles, so this record does not need any genre inference at all for gf. Two fixes. (1) Delete 'a wheat-based shoyu tare' from this sentence - see the soy_sauce_wheat item; the page names no tare, and the sentence does not need it. (2) The cited page's own photo caption reads 「ラーメン（300g)730円」 while its body text says 950円 for the same bowl - a stale caption, exactly the trap flagged on the Fujitora record. Cite the body, not the caption."
+ },
+ {
+  "id": "kyr_ramen_sou_yume_wo_katare",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is a soy-sauce (shoyu) seasoned pork-bone base; standard Japanese soy sauce contains wheat.",
+  "url": "https://osumituki.com/kyoto-ramen/104056.html",
+  "verdict": "unsupported",
+  "found": "The page describes the soup as 「スープの味は、非乳化の豚骨です。出汁としては「濃いめ」で「甘味」もあります。」 - pork bone, non-emulsified, no tare named. The ONLY 醤油 on the page is a table condiment: 「卓上調味料は「ブラックペッパー、一味、醤油」があります。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch of the cited page; then Ecosia (the only engine answering this session) for any first-party statement of the tare - none found",
+  "note": "This is the soy-sauce-from-genre pattern. The cited page says the soup is 非乳化の豚骨 and nothing else; the shoyu the record leans on is a BOTTLE ON THE COUNTER, not the seasoning of the broth. Nothing I could reach states this shop's kaeshi - the nearest thing is a licensed cup noodle, 「夢を語れ」監修 推しの一杯 旨豚ニンニク濃厚醤油, marketed as 醤油豚骨, which is a product endorsement and not evidence about the shop's pot. Rewrite the field to what is actually documented and is if anything more useful to a coeliac: the counter carries an unlabelled bottle of soy sauce that customers pour into the bowl themselves, and the free カラメ adjustment increases seasoning rather than removing it. gf stays 'no' on the 小麦 noodles regardless, so no safety label moves."
+ },
+ {
+  "id": "kyr_ramen_sou_yume_wo_katare",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Every bowl contains pork chashu, pork-bone broth, and back fat (背脂); no vegan or vegetarian preparation exists.",
+  "url": "https://osumituki.com/kyoto-ramen/104056.html",
+  "verdict": "supported",
+  "found": "「トッピングは「豚肉、もやし、キャベツ、背脂」で、食べきる自信がない場合は、「ニンニク入れますか？」と聞かれた時に「野菜少な目」と言えば良いでしょう。」「スープの味は、非乳化の豚骨です。」「豚肉は赤身の柔らかいタイプで…赤身は3つほど厚みのあるものが入っており、脂身もひとつ入っています。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Verbatim on every element, 背脂 included - the record even matches the page's own kanji. Nothing to change; vegan 'no' is correct. One identity caution for whoever edits this record: the same article lists a separate 「Yume Wo Katare Kyoto」 in 上京区中立売 (opened 2017-11-29) plus a Boston and a Tokyo branch. This record is the 一乗寺 original at 左京区一乗寺西杉ノ宮町48-1 - do not let sibling-branch evidence drift in."
+ },
+ {
+  "id": "kyr_ramen_sou_yume_wo_katare",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260303/26003256/",
+   "https://osumituki.com/kyoto-ramen/104056.html"
+  ],
+  "why": "Tabelog detail 200 via iPhone UA on 2026-08-21: score 3.44 / 391 reviews with visits logged 2026/08, 2026/07 and 2026/05 - i.e. within days of this sweep. 京都府京都市左京区一乗寺西杉ノ宮町48-1, 10 counter seats, Tue-Fri 17:00-23:00, Sat 12:00-15:00 & 17:00-23:00, Sun and Mon closed. No closure or suspension marker. Note the cited article's hours (土曜 12-15時, 17時-22有45分, closed Sun/Mon/Tue) are OUT OF DATE against Tabelog's Tue-Fri evening service - prefer Tabelog. Tabelog also lists no phone (不明の為情報お待ちしております), so do not populate a phone field from the article."
+ },
+ {
+  "id": "kyr_ramen_to_mazesoba_no_omi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen and mazesoba noodles from Kyoto maker Menya Teigaku (棣鄂) are the base of every bowl, cooked in a shared single-counter kitchen, so cross-contact with gluten is unavoidable.",
+  "url": "https://osumituki.com/kyoto-ramen/208414.html",
+  "verdict": "supported",
+  "found": "「麺を唹った感じではやや平打ちの中太麺で固めの茹で加減です。京都の老舗製麺所「麺屋棣鄂」の生麺を使っているので麺は結構美味しいです。」「店内は、カウンター席のみです。」 Menu is six noodle SKUs plus からあげ350円 and keema curry.",
+  "correct_url": null,
+  "http": "200 plain curl (823KB; article 2024.05.10, updated 2024.06.03)",
+  "method": "1 plain fetch of the cited article; Ecosia to locate the Tabelog listing; iPhone-UA s.tabelog.com/kyoto/A2601/A260603/26035959/ for trading and for the mazesoba toppings",
+  "note": "Supported, and the romanisation is RIGHT - 麺屋棣鄂 is read Men-ya Teigaku, and the record spells it correctly, which is what makes the maker findable at all. Keep it. Two additions: the shop also fries からあげ (flour dredge) and serves keema curry in the same eleven-seat counter kitchen, and one Tabelog reviewer describes the keema mazesoba as topped with カレールゥ - if that is a true roux it is a second wheat source, but the shop began life as a spice-curry house (CURRY SHOP LEE) where roux is often absent, so ask rather than assert. Do not claim the curry is wheat-thickened on present evidence."
+ },
+ {
+  "id": "kyr_ramen_to_mazesoba_no_omi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Bowls use wheat-based shoyu/curry sauces (e.g. gyokai-shoyu mazesoba and shoyu-seasoned ramen), which contain wheat.",
+  "url": "https://osumituki.com/kyoto-ramen/208414.html",
+  "verdict": "unsupported",
+  "found": "The cited page contradicts the ramen half of this sentence. Of the ramen the writer actually tasted, the 鶏豚骨ラーメン: 「スープを飲んでみたところ「豚骨・鶏ガラ」のスープ…クリーミーな口あたりでチキンコンソメの香りが強めに感じます。味付けはほんのり塩味がある程度でした。」 The shoyu that IS documented belongs to a mazesoba, not a ramen: the menu lists 魚介醤油まぜそば, and a Tabelog review adds 「相方は「魚介醤油まぜそば」をオーダー。こちらは醤油ダシに、チャーシュー、燻製卵、ネギ、海苔、ゴマ、ニンニク、背脂（？）がトッピング。」",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260603/26035959/dtlrvwlst/B452588413/",
+  "http": "200 plain curl on the cited article; 200 iPhone UA on the Tabelog review",
+  "method": "1 plain fetch of the cited page, then 2 (iPhone UA) on Tabelog for the dish that actually carries the soy sauce",
+  "note": "The exact pattern to watch for, and it lands on the wrong bowl. The record extends a soy-sauce warning to 'shoyu-seasoned ramen' at a shop whose own cited page says the ramen it tasted was seasoned ほんのり塩味 - lightly SALTY. A coeliac is not helped by being told the salt bowl is a soy bowl, and the shop's other ramen (鶏煎干・魚介鶏豚骨) have no tare described anywhere I could reach. Narrow the claim to the dish that earns it - 魚介醤油まぜそば, whose 醤油ダシ is documented at the Tabelog URL above - and drop 'curry sauces' until the roux question is settled. The wheat that covers every bowl here is the 麺屋棣鄂 noodles, which the record already has."
+ },
+ {
+  "id": "kyr_ramen_to_mazesoba_no_omi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are chicken/pork-bone based and mazesoba/keema use ground meat, house-made bacon, egg yolk, cheese and pork back fat; no plant-based preparation exists.",
+  "url": "https://osumituki.com/kyoto-ramen/208414.html",
+  "verdict": "wrong_source",
+  "found": "The cited page carries only the broth half: 「スープを飲んでみたところ「豚骨・鶏ガラ」のスープ…これは鶏豚骨をミキサーしたスープです。」 plus 「チャーシューは肩ロース」. The bacon, cheese, egg and back fat are real but live at a DIFFERENT url - Tabelog review by 京きのこ (visit 2022/08): 「「キーマカレーまぜそば」は、カレールゥと炙られた自家製ベーコンとチーズ、生卵がトッピングされて、これを、まぜまぜいただきます。」 and 「魚介醤油まぜそば…チャーシュー、燻製卵、ネギ、海苔、ゴマ、ニンニク、背脂（？）がトッピング。」",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260603/26035959/dtlrvwlst/B452588413/",
+  "http": "200 plain curl (article); 200 iPhone UA (Tabelog review)",
+  "method": "1 plain fetch of the cited page, then Ecosia to surface the review, then 2 (iPhone UA) to read it",
+  "note": "Good news for once: the oddly specific detail is NOT invented - house-made bacon, cheese and raw egg on the keema mazesoba, and chashu, smoked egg and 背脂 on the 魚介醤油まぜそば, are all documented, just not on the page we cite. Repoint the citation to the Tabelog review and the record becomes properly sourced. Two caveats to carry across: (a) the reviewer wrote 背脂（？） with a question mark, so record the back fat as reported-uncertain rather than as fact; (b) the review is from 2022/08, when the shop still traded as CURRY SHOP LEE, though both dishes survive on the 2024 ramen menu. 'Ground meat' is our own word - the page says キーマカレー and 台湾まぜそば, which conventionally use minced pork but are not spelled out. The conclusion, vegan 'no', is right either way: every broth is 豚骨・鶏ガラ and the only plant items on the page are toppings (岩海苔・ほうれん草・白ねぎ・メンマ) sitting in an animal soup."
+ },
+ {
+  "id": "kyr_ramen_to_mazesoba_no_omi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260603/26035959/",
+   "https://www.instagram.com/ramen_mazesoba_lee/",
+   "https://osumituki.com/kyoto-ramen/208414.html"
+  ],
+  "why": "Tabelog detail 200 via iPhone UA on 2026-08-21 with the 公式 badge - hours published by the operator. Score 3.34 / 72 reviews, visits logged 2025/09, 2025/07 and 2024/11; 京都府京都市山科区椾辻草海道町10-1 シャレー山科 1F, tel 075-585-3112, 11 seats, Tue-Sun 11:30-15:00 (L.O. 14:30) & 18:00-23:00 (L.O. 22:30), Monday closed. Independently, an Instagram post from the shop's account promoting an oyster tsukemen was indexed one day before this sweep, carrying the same address and hours. No closure marker. Two record-hygiene notes: Tabelog files this as 旧店名 Curry Shop lee, so the 2021-2023 curry-era reviews and photos on that listing describe a different menu; and the cited article's hours (including a Monday/Thursday 18:00-22:00 variant) are already superseded by the operator-published Tabelog hours."
  }
 ]

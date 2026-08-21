@@ -1,0 +1,37 @@
+{
+ "name": "Yoshinoya", "name_ja": "吉野家", "icon": "🍚",
+ "gf": {
+  "tier": "limited",
+  "best": "ご飯 + 鮭（単品）(grilled salmon, さけ only) + みそ汁 + 生野菜サラダ with NO dressing + 紅生姜. Kids' ミニカレー is the one wheat-free curry.",
+  "detail": "Yoshinoya answers the beef-bowl question itself, in print, on its own allergen sheet (メニュー全情報 257号, 2026年8月6日現在): 「※牛丼のアレルゲン『小麦』は醤油由来になります。」 — the gyudon's wheat comes from the soy sauce. Every size of 牛丼, plus 豚丼, 牛カルビ丼, 牛焼肉丼, 牛皿, every 定食 and every 朝定食, is 小麦○. But the à-la-carte sides are unusually clean and Yoshinoya lists them individually: 鮭（単品）= さけ and nothing else; 生野菜サラダ = ZERO of the 28 allergens; ご飯, 紅生姜, 山椒, 和からし = zero; みそ汁 = 大豆○ plus えび▲かに▲ (▲ is Yoshinoya's own mark for あおさ seaweed harvested by a method that mixes in shrimp/crab — not wheat); 豚汁, あさり汁, とろろ, とろろおくら, 冷汁, 塩さば（単品）, 玉子/半熟玉子, チーズ, ポテトサラダ, マヨソース and ウスターソース are all wheat-free. The kids' ミニカレー (271 kcal) is 牛肉・大豆・鶏肉・豚肉・バナナ・りんご with the 小麦 column EMPTY — a low-allergen roux, unlike the adult 黒カレー which is 小麦○乳○. Do not assume the innocent-looking sides: のり and 納豆（タレ・カラシ・ネギ含む）are both 小麦○, and so are BOTH table dressings (焙煎ごま and ノンオイル和風) and the しょうゆ. Limited, not reliable: Yoshinoya prints 「揚げ物は全て同じフライヤーで揚げています。その他、調理の過程において商品間・原材料間でのアレルギー物質の偶発的混入の可能性がございます。」"
+ },
+ "vegan": {
+  "tier": "none",
+  "best": "— (at best assemble ご飯 + 生野菜サラダ dressing-free + 紅生姜 + とろろ)",
+  "detail": "Nothing plant-based is sold. There is no ベジ/プラントベース item on the Yoshinoya menu as of 2026-08-21 and no tofu dish at all — no 冷奴, no soy patty, nothing. The only items with no animal allergen listed are ご飯, 生野菜サラダ (zero allergens), 紅生姜, 山椒, 和からし, とろろ (大豆・やまいも) and ウスターソース (大豆・りんご). That is rice and raw vegetables, not a meal. Both table dressings contain wheat and/or egg, so the salad must be eaten dry. The みそ汁 contains あおさ seaweed and, like every miso soup in this dataset, will contain dashi — dashi and かつお節 are not among Japan's 28 allergens and can never be ruled out from an allergen chart. A vegan should treat Yoshinoya as a place to buy plain rice, not dinner."
+ },
+ "both_gf_and_vegan": "Only as a side plate. ご飯 + 生野菜サラダ (no dressing) + 紅生姜 + とろろ are all wheat-free AND free of every listed animal allergen — but that is not a meal, and the とろろ tare cannot be cleared of dashi. The wheat-free ミニカレー contains beef, chicken and pork.",
+ "caveats": [
+  "Yoshinoya states in its own sheet that the 牛丼's wheat is from the soy sauce. The beef bowl is not gluten-free at any size.",
+  "「揚げ物は全て同じフライヤーで揚げています」 — one shared fryer for everything. から揚げ, かつ丼 and コロッケ contaminate that oil.",
+  "のり and 納豆 are 小麦○ from their tare; both table dressings and the table しょうゆ are 小麦○. ウスターソース is the only wheat-free bottle on the counter.",
+  "▲ in Yoshinoya's chart is not cross-contact in the usual sense: it means the あさり contains crab and the あおさ is harvested with shrimp/crab present.",
+  "Yoshinoya's chart explicitly excludes any seasoning you add yourself — those are listed separately at the bottom.",
+  "ミニカレー is a kids' portion; confirm the branch will sell it on its own.",
+  "No tofu, no plant-based item, no vegan main — this is the weakest of the four for a vegan."
+ ],
+ "phrases": [
+  { "ja": "小麦アレルギーです。牛丼のタレは醤油なので食べられません。", "romaji": "Komugi arerugii desu. Gyuudon no tare wa shouyu na node taberaremasen.", "en": "I have a wheat allergy — I can't have the gyudon, its tare is soy sauce." },
+  { "ja": "ご飯と鮭の単品とみそ汁と生野菜サラダをください。ドレッシングは抜いてください。", "romaji": "Gohan to sake no tanpin to misoshiru to nama-yasai sarada o kudasai. Doresshingu wa nuite kudasai.", "en": "Rice, the single grilled salmon, miso soup and the raw salad, please — no dressing." },
+  { "ja": "ミニカレーは小麦不使用と表示されています。単品で注文できますか？", "romaji": "Mini-karee wa komugi-fushiyou to hyouji sarete imasu. Tanpin de chuumon dekimasu ka?", "en": "The mini curry is listed as wheat-free. Can I order it on its own?" },
+  { "ja": "動物性の材料が入っていない料理はありますか？", "romaji": "Doubutsusei no zairyou ga haitte inai ryouri wa arimasu ka?", "en": "Is there any dish with no animal ingredients at all?" }
+ ],
+ "sources": [
+  "https://www.yoshinoya.com/pdf/allergy/",
+  "https://www.yoshinoya.com/contact/faq_product",
+  "https://www.yoshinoya.com/menu/",
+  "https://www.yoshinoya.com/menu/gyudon/"
+ ],
+ "allergen_page": "https://www.yoshinoya.com/pdf/allergy/",
+ "checked": "2026-08-21"
+}

@@ -1,0 +1,50 @@
+{
+ "name": "Tully's Coffee",
+ "name_ja": "タリーズコーヒー",
+ "icon": "☕",
+ "gf": {
+  "tier": "none",
+  "best": "—",
+  "detail": "No gluten-free FOOD. Tully's publishes per-item allergen PDFs (drinks and food separately), and the food PDF is sandwiches, bagel sandwiches, hot dogs, pastries and cakes — wheat throughout, with no low-allergen or rice-flour item. Allergen marks are 「●」contains and 「△」possible cross-contact, so the operator is explicitly flagging contamination. Drinks (coffee/espresso/tea) are fine. Not a celiac food option."
+ },
+ "vegan": {
+  "tier": "limited",
+  "best": "ソイラテ (Soy Latte), or ANY milk drink changed to soy milk for +55円 (tax incl.)",
+  "detail": "A reliable vegan-DRINK stop with soy, and nothing else. Tully's customize page offers 「Soy Milk ソイミルク — ミルク入りドリンクをソイミルクに変更すると、コクがありつつもあっさりした飲み口になります」 at ＋55円（税込）, so unlike Doutor the swap works into any milk drink. Soy is the ONLY plant milk: Tully's own allergen PDF prints the legend 「ミルクの種類／Types of milk ①牛乳・Milk ②豆乳・Soy milk」 — exactly two — and the string オーツ appears ZERO times in either the drink or the food allergen PDF, with no oat or almond on the customize list either. The allergen table gives ソイラテ a mark in 大豆 only, no 乳. There is NO plant-based FOOD whatsoever: the food PDF contains no プラントベース, no ヴィーガン, no 大豆ミート and no soy item at all. Drinks only."
+ },
+ "both_gf_and_vegan": "NO GF food at all, so nothing to combine. The soy drinks are vegan but are drinks.",
+ "caveats": [
+  "Soy is the only plant milk — the operator's own legend lists just 牛乳 and 豆乳; no oat, no almond",
+  "The soy swap is NOT free: +55円 (税込)",
+  "No plant-based food line of any kind — this is a drinks-only answer, unlike Starbucks",
+  "「△」in the allergen PDF marks possible cross-contamination",
+  "はちみつ (honey) is offered as a FREE customization — decline it if strict vegan",
+  "Decaf espresso (+65円) only at stores that carry it",
+  "Food menu rotates seasonally — re-check the live PDF"
+ ],
+ "phrases": [
+  {
+   "ja": "ソイラテをください。",
+   "romaji": "Soi-rate o kudasai.",
+   "en": "A soy latte, please."
+  },
+  {
+   "ja": "ミルクをソイミルクに変更してください。",
+   "romaji": "Miruku o soi-miruku ni henkou shite kudasai.",
+   "en": "Please change the milk to soy milk."
+  },
+  {
+   "ja": "はちみつは入れないでください。",
+   "romaji": "Hachimitsu wa irenaide kudasai.",
+   "en": "No honey, please."
+  }
+ ],
+ "sources": [
+  "https://www.tullys.co.jp/menu/allergy.html",
+  "https://www.tullys.co.jp/menu/pdf/drink.pdf",
+  "https://www.tullys.co.jp/menu/pdf/food.pdf",
+  "https://www.tullys.co.jp/menu/customize/"
+ ],
+ "allergen_page": "https://www.tullys.co.jp/menu/allergy.html",
+ "checked": "2026-08-21"
+}

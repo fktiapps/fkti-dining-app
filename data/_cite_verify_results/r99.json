@@ -50,5 +50,354 @@
   "http": "200, plain curl with iPhone UA, first attempt",
   "method": "1 plain fetch (iPhone UA)",
   "note": "Supported, and the specific items the claim names (eggs on the negiyaki, beef skewers) are literally on the page. 'Seafood' is the one word not evidenced — no seafood item appears on the page; the animal products actually documented are egg, beef and pork."
+ },
+ {
+  "id": "mp_ichikawaya_coffee",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a coffee shop whose signature items are fruit sandwiches and egg sandwiches made on wheat bread, plus baked goods. There is no advertised gluten-free menu and no verified GF accommodation, so it is not celiac-safe. A diner with celiac disease should avoid the bread and baked items and confirm any other order directly with staff.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260301/26026585/",
+  "verdict": "supported",
+  "found": "Cited page (corporate-member 'Official information'): \"Enjoy a variety of seasonal fruit sandwiches and satisfying meals!\" Its /dtlmenu/ sub-page prints the whole 9-item food menu (更新日 2025/09/10): 「たまごサンド 720円 — コッペパンにゆで卵を挟み」「季節のフルーツサンド 1,320円 — ふんわり食パンと軽い生クリームでどうぞ」「ベーコンとみぶ菜のサンド」「野菜とハムのミックスサンド」「バタートースト」「市川屋モーニングプレート — トースト、茹で卵、ベーコン、ソーセージ、サラダ」「デミオムライス — デミグラスソースとバターライス」. No allergen or gluten-free wording anywhere on the listing.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt (EN host and JA /dtlmenu/ both answered)",
+  "method": "1 plain fetch (iPhone UA) of the cited EN page, then its JA /dtlmenu/ and /dtlmenu/drink/ sub-pages for the itemised menu",
+  "note": "Substance holds and is now fully itemised. Two edits: 'plus baked goods' is not on the menu — there are no cakes or pastries, only バタートースト; and the wheat item the claim MISSES is the デミオムライス, whose デミグラスソース is a roux-thickened wheat sauce, so 'avoid the bread and baked items' would send a coeliac to the one non-bread dish that is also wheat. The honest summary is that all nine food items contain wheat."
+ },
+ {
+  "id": "mp_ichikawaya_coffee",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The menu centers on dairy (fresh cream, milk-based coffee drinks) and egg sandwiches, so vegan options are not advertised; vegan diners should ask staff what, if anything, can be prepared without animal products.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260301/26026585/",
+  "verdict": "supported",
+  "found": "From the same listing's menu pages: 「季節のフルーツサンド … 軽い生クリームでどうぞ」 (fresh dairy cream), 「たまごサンド … コッペパンにゆで卵を挟み」, and on the 15-item drinks list 「カフェオレ hot/ice」「ミルク」「ウィンナコーヒー — コーヒーにホイップクリームをのせて」「クリームコーヒー — アイスコーヒーにバニラアイスをのせました」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlmenu/ and /dtlmenu/drink/",
+  "note": "Supported, but 'ask staff what can be prepared' is now answerable from the published menu and the answer is nothing: all nine food items contain egg, dairy or meat, and the 15-item drinks list carries NO plant milk (ミルク, カフェオレ and 紅茶ミルク are all dairy). What IS vegan is drink-only — the 市川屋/青磁/馬町 blends taken black, 市川屋アイスコーヒー, 紅茶ストレート, レモンスカッシュ, オレンジジュース, ビール. Say that plainly rather than deferring to staff."
+ },
+ {
+  "id": "mp_ichikawaya_coffee",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "limited",
+  "recommended": "no",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260301/26026585/dtlmenu/",
+   "https://tabelog.com/kyoto/A2601/A260301/26026585/dtlmenu/drink/"
+  ],
+  "why": "Not a thin-evidence case: the shop is a Tabelog corporate member and publishes its complete food menu (9 items, 更新日 2025/09/10) and drinks menu (15 items, 更新日 2025/09/05). Every food item contains egg, dairy or meat, and no plant milk appears on the drinks list, so a vegan can drink here but cannot eat here. 'limited' promises plant-based food that does not exist. The record also contradicts itself — vegan_status is 'limited' while vegan_detail reads \"Status set to 'ask' (unconfirmed)\" — so the two must be reconciled regardless."
+ },
+ {
+  "id": "mp_ichikawaya_coffee",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/en/kyoto/A2601/A260301/26026585/",
+   "https://tabelog.com/kyoto/A2601/A260301/26026585/dtlmenu/"
+  ],
+  "why": "Trading normally as of this sweep: reviews dated June 2026, April 2026 and March 2026, and a Tabelog カフェ WEST 百名店 2025 selection displayed. Flagging a related hours defect — the operator-published hours read 「営業時間 08:00 - 17:00 ■定休日 なし」 (EN mirror: 'Mon, Tue, Wed, Thu, Fri, Sat, Sun 8:00 AM - 5:00 PM / Closed on: Open year-round') while our record says 'Mon, Wed–Sun 08:00–17:00' with hours_status 'irregular', inventing a Tuesday closure the shop does not have."
+ },
+ {
+  "id": "mp_marui_shokudo",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is not a celiac-safe restaurant. The core menu is built on wheat: chuka soba and ramen, udon, soba, and breaded/fried items like tonkatsu and fried fish. With shared pots, broths, and fryer in a small everyday diner, cross-contamination with gluten is effectively unavoidable.",
+  "url": "https://kyotopi.jp/articles/sh7kx",
+  "verdict": "supported",
+  "found": "「イワシフライや、鳥なんばんうどん定食、トンカツ定食、どれも700円以下ととってもリーズナブル」「ラーメン系のメニューはこちら。結構豊富で、定番のしょうゆから味噌、黒、チャンポンなど」「うどんやどんぶりも豊富」「食堂のラーメン、中華そば感がしていいですよね」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited kyotopi article; cross-checked the shop's Tabelog page for current hours",
+  "note": "Every wheat item the claim names is on the page except one: 蕎麦 (buckwheat soba) is NOT documented — the article lists ラーメン, うどん and どんぶり only, and 'そば' appears solely inside 中華そば, itself a wheat noodle. Drop the bare 'soba' so we are not describing a noodle the shop does not sell. 'Shared fryer' is our inference; the page documents fried items but says nothing about the fryer."
+ },
+ {
+  "id": "mp_marui_shokudo",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Documented signature dishes are wheat-based ramen and udon in soy-sauce broths, with no indication of any gluten-free preparation or separate cooking surfaces.",
+  "url": "https://kyotopi.jp/articles/sh7kx",
+  "verdict": "supported",
+  "found": "「今回は定番のチャーシューメンに。まさかの550円という破格の値付け。ラーメンは450円なので…」「醤油香る、鶏ガラベースのほっとする美味しいスープ」「うどんやどんぶりも豊富」, under the article's own title 「昭和レトロ食堂の素朴で美味しいラーメン！四条大宮の文化遺産「まるい食堂」」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Clean match — the signature bowl and its soy-sauce-scented chicken broth are both named on the cited page, and no allergen or GF wording appears in the article."
+ },
+ {
+  "id": "mp_marui_shokudo",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broths and seasonings are soy-sauce based (the chuka soba is a chicken-and-soy-sauce broth). Standard Japanese soy sauce and dashi typically contain wheat, so the soups and sauces here should be assumed to contain gluten.",
+  "url": "https://kyotopi.jp/articles/sh7kx",
+  "verdict": "supported",
+  "found": "「醤油香る、鶏ガラベースのほっとする美味しいスープ」 — soy-sauce-scented, chicken-bone-based soup — plus the ramen range 「定番のしょうゆから味噌、黒、チャンポンなど」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "The soy-sauce half is evidenced verbatim, unusually for this field. But FIX the clause 'soy sauce and dashi typically contain wheat': dashi is katsuobushi, niboshi and kombu — fish and kelp, wheat-free. Attaching wheat to dashi warns readers off something harmless. The wheat here is the soy sauce and the noodles. Also note the range includes a 味噌 bowl, whose tare is miso rather than shoyu, so scope the shoyu statement to the shoyu bowls; what covers every bowl is the wheat noodle."
+ },
+ {
+  "id": "mp_marui_shokudo",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Not suitable for vegans. The kitchen centers on chicken-based broths, pork (chashu), egg dishes, and dashi, all prepared in shared equipment; there is no indicated vegan option and high risk of animal-product cross-contact.",
+  "url": "https://kyotopi.jp/articles/sh7kx",
+  "verdict": "supported",
+  "found": "「醤油香る、鶏ガラベースの…スープ」 (chicken-bone base), 「どんぶり鉢一杯に具がのっていてリッチ。煮豚、メンマ、手切りネギ」 (simmered pork), 「だし巻きや、焼肉、野菜炒めなどのセットも」 (dashimaki egg, grilled meat).",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Supported. Two precision points: the topping is 煮豚 as the article writes it, not roast chashu; and the article does list a 野菜炒め set, so the accurate line is that no dish is verified animal-free (the wok and the shared kitchen are ours to infer), not that no vegetable dish exists."
+ },
+ {
+  "id": "mp_marui_shokudo",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26014109/",
+   "https://kyotopi.jp/articles/sh7kx"
+  ],
+  "why": "Trading. Tabelog carries reviews dated 2025/07 and 2025/02 and lists 月-金 11:30-15:00 / 15:00-19:30, 土 11:00-14:00, 日・祝 定休 — matching our record. The cited kyotopi article is the older picture (「お昼のみの営業」, 営業時間 11:30～15:00, 定休日 日曜・祝日), so do not 'correct' our hours back to the article."
+ },
+ {
+  "id": "mp_maruse",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a wheat-forward Japanese noodle shop. The menu is built on udon and soba (wheat noodles), with broths that are soy- and dashi-based and donburi that include tempura. There is no indication of any gluten-free preparation, and shared pots, broth, and prep surfaces make cross-contamination essentially unavoidable. Treat as not celiac-safe.",
+  "url": "https://tabelog.com/kyoto/A2601/A260604/26034163/",
+  "verdict": "supported",
+  "found": "The cited detail page shows only truncated snippets; the full text sits on the same listing's /dtlrvwlst/ sub-page: 「今日のランチは、『うどん処 まるせ』… メニューにはうどんをメインに丼が少しある典型的なうどん屋さんです」「定食、うどん、そば等の食堂です」「蕎麦(360円)と親子丼(570円)をいただきました」「今回は天ぷらとじ丼とあんかけうどんをオーダー。天ぷらとじ丼は一番高価なメニューだった…大きめの海老が一尾。『とじ』自体は出汁が強めで」「きつねうどんを。京都のきつねうどんって、刻みお揚げなのね」「カレー肉うどんが４９０円」. Genre line: 十条駅（近鉄）/麺類.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt; detail, /dtlmenu/ and /dtlrvwlst/ all answered",
+  "method": "1 plain fetch (iPhone UA) of the cited page, then /dtlmenu/ (empty — コース0/料理0/ドリンク0/ランチ0) and /dtlrvwlst/ for the untruncated reviews",
+  "note": "Claim holds, and the tempura donburi is real (天ぷらとじ丼). Two things to fix in the RECORD itself, which does not match this listing at all: gf_detail says 「The core dish is 中華そば — wheat-based ramen noodles … 蒲鉾/kamaboko」 and vegan_detail says the signature bowl features 豚バラチャーシュー and 蒲鉾 — no chashu and no kamaboko appear anywhere in the 13 reviews, and every reviewer calls it an うどん処 / うどん・そば・丼 shokudo. That reads like text transplanted from a ramen venue. And the biggest EVIDENCED gluten source is missing from both our claim and our record: the house runs a curry line (カレーうどん, カレー肉うどん ¥490, カレー丼, カレー肉丼), and Japanese curry roux is wheat flour."
+ },
+ {
+  "id": "mp_maruse",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Broths and donburi sauces rely on standard Japanese soy sauce and dashi, which typically contain wheat. No wheat-free soy alternative is indicated.",
+  "url": "https://tabelog.com/kyoto/A2601/A260604/26034163/",
+  "verdict": "unsupported",
+  "found": "Nothing. The word 醤油 appears nowhere on the listing — not on the detail page, not on /dtlmenu/ (which carries zero menu items), not in any of the 13 reviews on /dtlrvwlst/. The only seasoning any reviewer names is dashi: 「『とじ』自体は出汁が強めでご飯がすすむ」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlmenu/ and /dtlrvwlst/; searched all three for 醤油/しょうゆ/だし/出汁",
+  "note": "Soy-sauce warning invented from the genre, and it also gets the chemistry wrong: dashi is katsuobushi, niboshi and kombu — fish and kelp, wheat-free — so 'soy sauce and dashi, which typically contain wheat' warns a reader off a harmless ingredient. Kansai udon tsuyu is usually 薄口醤油 and so probably is wheat-brewed, but this page does not say so and the record should not claim it does. What this page DOES evidence, and what the record should cite instead: wheat udon and 蕎麦 noodles, 天ぷら batter on the 天ぷらとじ丼, and the curry roux in the カレーうどん/カレー丼 line."
+ },
+ {
+  "id": "mp_maruse",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan or vegetarian-specific options are documented. Dashi broths are fish/bonito-based and many dishes include meat, egg, or fishcake, so even noodle dishes are not vegan. Shared broth and prep make vegan cross-contact likely.",
+  "url": "https://tabelog.com/kyoto/A2601/A260604/26034163/",
+  "verdict": "supported",
+  "found": "From the same listing's /dtlrvwlst/: 「肉うどん」「カレー肉うどんが４９０円」「カレー肉丼を注文」「蕎麦(360円)と親子丼(570円)」「天ぷらとじ丼…『とじ』自体は出汁が強めで」. No vegetarian or vegan wording anywhere on the listing.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlrvwlst/",
+  "note": "Meat (肉うどん, カレー肉丼), egg (親子丼, 天ぷらとじ丼) and dashi are all documented, so the conclusion stands. 'Fishcake' is not — 蒲鉾 appears nowhere on this listing and should be dropped, as it should from vegan_detail. Also worth naming for the reader: きつねうどん (刻みお揚げ, fried tofu) is the one plant-based TOPPING on the page, and it is the dashi tsuyu underneath — not the topping — that rules it out."
+ },
+ {
+  "id": "mp_maruse",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260604/26034163/dtlrvwlst/"
+  ],
+  "why": "Trading. Reviews dated 2026/04, 2025/12, 2025/09, 2025/08 and 2025/02, all describing an operating shop run by an elderly couple. No 閉店 or 掲載保留 banner. Confirms our record's note that Tabelog's 営業時間 field is blank — it is, so hours genuinely have to come from the phone number 075-691-2685."
+ },
+ {
+  "id": "mp_miyako",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is an udon and shokudo kitchen built around wheat. Udon noodles, Chinese noodles (chuka soba), tonkatsu, and karaage all contain wheat, and they share the same kitchen, water, and surfaces. There is no indication of any gluten-free preparation, so it is not suitable for celiacs or anyone needing strict gluten avoidance.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260203/26015496/",
+  "verdict": "supported",
+  "found": "Genre line on the cited page: 'Umekoji Kyotonishi Sta./Udon (Wheat noodles), Cafeteria, Donburi (Rice bowl)' (JA: 梅小路京都西駅/うどん､ 食堂､ 丼). Dishes named in the listing's reviews: 「とんかつ定食」「けいらんうどん（550円税込）を注文。柔らかい麺と餡がちょうど良い」「肉うどん530円を注文」「みやこ食堂さんでたぬきうどんをいただきました…刻みのお揚げの餡掛けの京都式たぬき」「うどんや蕎麦が中心のようですが」. No allergen or gluten-free wording anywhere.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt (EN host); JA /dtlmenu/ and /dtlrvwlst/ also 200",
+  "method": "1 plain fetch (iPhone UA) of the cited EN page, then the JA /dtlmenu/ and /dtlrvwlst/ sub-pages of the same listing for dish names",
+  "note": "Udon and tonkatsu are documented; 'Chinese noodles (chuka soba)' and 'karaage' are NOT — neither 中華そば nor 唐揚げ appears anywhere on the listing, and they should be replaced with what is actually there: 蕎麦 (a reviewer says 「うどんや蕎麦が中心」), とんかつ定食, and the ankake line (けいらんうどん, 京都式たぬきうどん) whose 餡 is a separate thickened sauce worth naming."
+ },
+ {
+  "id": "mp_miyako",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Set meals, donburi, and noodle broths are built on a Japanese dashi and soy-sauce base. Standard Japanese soy sauce is brewed with wheat, so these dishes should be treated as containing wheat/gluten.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260203/26015496/",
+  "verdict": "supported",
+  "found": "One review on the listing names the soy sauce directly: 「塩コショウと少しの醤油で味付けされたシンプルイズベストな焼き飯でした」 (yakimeshi seasoned with salt, pepper and a little soy sauce).",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlrvwlst/; searched for 醤油/しょうゆ/出汁/だし",
+  "note": "Shoyu use is evidenced, but only for the 焼き飯 — no reviewer or menu line describes the tsuyu or the donburi sauces, so scope the sentence to what the page shows rather than asserting a dashi-and-soy base across the whole menu. And drop 'dashi' from the gluten sentence: dashi is fish and kelp, wheat-free; it belongs in the vegan claim, not this one."
+ },
+ {
+  "id": "mp_miyako",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes rely on fish-based dashi, egg, chicken, pork, and fish cake (kamaboko), and signature items like keiran udon, oyakodon, and the chicken hot-pot set are animal-based. There are no documented vegan options, and broths and shared cooking surfaces make animal-free dining impractical here.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260203/26015496/",
+  "verdict": "supported",
+  "found": "All three signature items the claim names are on the listing: 「けいらんうどん（550円税込）」 and 「老舗大衆食堂でけいらん助六！」 (egg), 「親子丼を頼んだ」「いなり寿司や、親子丼も美味しかったです！」 (chicken and egg), 「かしわ水炊き定食（定食ご飯は小）800円」 (chicken hot pot). Also 「肉鍋定食 ¥800」「肉うどん530円」「とんかつ定食」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlrvwlst/",
+  "note": "The named signature dishes check out verbatim, which is unusual and good. Two corrections: 'fish cake (kamaboko)' is not documented anywhere on the listing — drop it from the claim and from vegan_detail; and the plant-based-looking items a vegan would actually reach for are 京都式たぬきうどん (刻みのお揚げ) and いなり寿司/助六, both of which fail on the dashi tsuyu rather than on a topping. Saying that is more useful than a blanket 'shared cooking surfaces'."
+ },
+ {
+  "id": "mp_miyako",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/en/kyoto/A2601/A260203/26015496/",
+   "https://tabelog.com/kyoto/A2601/A260203/26015496/dtlrvwlst/"
+  ],
+  "why": "Trading. Two reviews dated 2026/03 plus 2025/10 and 2025/01, all describing service. Published hours 「月・水・木・金・土・日 09:00 - 20:00 / 火 定休日」 match our record exactly, so hours_status could move from 'irregular' to 'regular' — it is a plain six-day week with a Tuesday closure."
+ },
+ {
+  "id": "mp_oito",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Not celiac-safe. The food here is oden simmered in a shared dashi/soy-based broth. Many oden tane (fishcakes, hanpen, fried items) contain wheat and soy, and the single simmering pot shares ingredients across the whole menu, so assume cross-contamination throughout. No gluten-free accommodation is indicated.",
+  "url": "https://tabelog.com/kyoto/A2601/A260301/26001727/",
+  "verdict": "supported",
+  "found": "Genre line 「祇園四条駅/おでん､ 日本料理」 and, on the same listing's /dtlrvwlst/, 「至高のおだし。」「昼おでん定食、冷酒。ロールキャベツ、玉子、厚揚げ、大根、牛スジをいただきました」「忘れられない大人おでん！牛すじ大根は必食。」. No allergen or gluten-free wording appears anywhere on the listing.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt; /dtlmenu/ (0 items) and /dtlrvwlst/ also 200",
+  "method": "1 plain fetch (iPhone UA) of the cited page, then /dtlmenu/ and /dtlrvwlst/ of the same listing",
+  "note": "The conclusion holds but the STATED MECHANISM is wrong for this shop, and it warns readers off the wrong things. Not one fishcake or はんぺん appears on the listing; the tane reviewers actually name are 大根, 玉子, 厚揚げ, 牛すじ, ロールキャベツ, がんも and 昆布 — of which 大根, 玉子, 昆布, 厚揚げ and がんもどき are naturally wheat-free. The gluten a coeliac should ask about here is the tsuyu seasoning and the ロールキャベツ (usually bound with breadcrumbs or flour), not 練り物 the shop is not shown to serve. This is a 8-seat 完全予約制 counter with a chef in front of you, exactly the kind of place that can answer an allergen question, so 'assume cross-contamination throughout' should be paired with 'ask when you book'."
+ },
+ {
+  "id": "mp_oito",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The oden broth is dashi/soy-based. Most Japanese soy sauce is brewed with wheat, so the broth itself should be treated as containing gluten.",
+  "url": "https://tabelog.com/kyoto/A2601/A260301/26001727/",
+  "verdict": "unsupported",
+  "found": "醤油 appears nowhere on the listing — not on the detail page, not on /dtlmenu/ (コース0/料理0/ドリンク0/ランチ0), not in any of the 81 reviews. The only broth description any reviewer gives is 「至高のおだし。」 — supreme dashi — and 昆布 appears in the listing's own keyword block.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlmenu/ and /dtlrvwlst/; searched all three for 醤油/しょうゆ/だし/出汁/昆布",
+  "note": "Soy-sauce warning inferred from the oden genre with no page evidence. Worth being careful in both directions here: 京おでん tsuyu is characteristically pale, and pale is exactly where this dataset has gone wrong before — 薄口醤油 is wheat-brewed despite being light, so 'it looks clear' is not reassurance either. The honest record for this shop is that the tsuyu composition is undocumented and must be asked about at booking, not that it 'should be treated as containing gluten' on our say-so."
+ },
+ {
+  "id": "mp_oito",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Not suitable for vegans. Oden broth is built on dashi (typically bonito and/or kombu) and the same pot simmers fish, fishcakes, eggs and meat items like beef tendon, so plant-based items would share the animal-based broth.",
+  "url": "https://tabelog.com/kyoto/A2601/A260301/26001727/",
+  "verdict": "supported",
+  "found": "「至高のおだし。」 plus the tane list 「ロールキャベツ、玉子、厚揚げ、大根、牛スジをいただきました」 and 「牛すじ、めちゃめちゃうまい！」「忘れられない大人おでん！牛すじ大根は必食。」 from the listing's reviews.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA) of the cited page plus /dtlrvwlst/",
+  "note": "Egg and beef tendon are documented verbatim and they share the pot, so the verdict stands. Drop 'fishcakes' — not documented on this listing. And name the near-misses, because they are the useful part: 大根, 厚揚げ, がんも and 昆布 are plant items on the counter that fail only on the shared dashi and the 牛すじ simmering beside them."
+ },
+ {
+  "id": "mp_oito",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260301/26001727/",
+   "https://tabelog.com/kyoto/A2601/A260301/26001727/dtlrvwlst/"
+  ],
+  "why": "Trading, and popular — 18,010 saves, 81 reviews, most recent dated 2026/06 (「久々のおいとのおでん夜は一見さんおことわりだけどお昼は入れます」). But two access facts on the cited page are missing from or contradicted by our record, and both would waste a traveller's evening: 予約可否 is 「完全予約制」 and the 備考 reads 「夜の部は完全紹介制：一見客お断り ※小さなお子様は入店いただけませんので、ご了承ください。写真禁止です。」 — reservation-only, introduction-only after dark, no young children, no photography — while our record's flags say reservation:false. The page also lists 「■定休日 水曜日」, which our hours_raw omits entirely."
+ },
+ {
+  "id": "mp_tonkichi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a tonkatsu specialist: pork is breaded in wheat flour and panko and deep-fried, and the menu also features croquettes, shrimp fries, and cream croquettes. With a single owner running one fryer for all of these breaded items, shared-fryer cross-contamination with wheat is effectively unavoidable. Not celiac-safe.",
+  "url": "http://gcjapan-kyoto.com/tonkichi/",
+  "verdict": "supported",
+  "found": "「定番のとんかつ、とん吉定食が990円。ヒレや、ロース、エビフライに、コロッケにセットも。また生姜焼きや味噌焼きなどもありますよ。」「注文するととんかつを叩いて柔らかく伸ばしていきます。その後油でじっくり揚げていきますよ。カラット揚がったとんかつには…」「衣にたっぷり馴染むソース…」「店内はカウンター10席。」",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt (plain http:// as cited, no redirect to https needed)",
+  "method": "1 plain fetch (iPhone UA) of the cited グッチジャパンの京都最新グルメ article; cross-checked the shop's Tabelog listing for hours",
+  "note": "Breading (衣), deep-frying, katsu, croquettes and prawn fries are all on the page. Two items are not: 'cream croquettes' (the article says コロッケ, unqualified) and 'a single owner running one fryer' (the article says カウンター10席 and nothing about who cooks — that detail comes from our own notes field, not this source). Also missing from the claim and present on the page: 「カレーもやし」 in the set, and 味噌焼き / 生姜焼き as non-breaded alternatives, which is the first thing a coeliac would want to know about here."
+ },
+ {
+  "id": "mp_tonkichi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The house signature is a grated-daikon/onion sauce built on a demi-glace and Worcester-style base, which is typically wheat- and soy-derived. Set meals also include a pork soup (tonjiru) made with dashi and miso. These add further gluten exposure beyond the breading.",
+  "url": "http://gcjapan-kyoto.com/tonkichi/",
+  "verdict": "supported",
+  "found": "「衣にたっぷり馴染むソースはデミグラスやウィスターソースのコク、玉ねぎなど野菜の旨味がたっぷり感じられるオリジナルおろしソース。」 and 「ごはんと豚汁がつきますよ。豚汁は粉山椒がたっぷりで爽やかな一杯。」 The article's own headline is 「唯一無二のとんかつソース！」 and it calls the sauce 「長年継ぎ足される秘伝のソース」.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "The sauce half is evidenced almost verbatim and the wheat is real: デミグラス is a brown roux, i.e. wheat flour cooked in fat, so this sauce is a genuine gluten source and worth stating plainly rather than as 'typically wheat-derived'. Two fixes: the article names 玉ねぎ, not daikon, in the おろしソース — say onion; and DELETE the tonjiru from the gluten sentence. 豚汁 is pork, root vegetables, dashi and miso; the article specifies nothing beyond 粉山椒, and tonjiru miso is ordinarily 米味噌, which is wheat- and barley-free. Calling the soup a gluten exposure warns a coeliac off the one part of the set that probably is not one."
+ },
+ {
+  "id": "mp_tonkichi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The Worcester/demi-glace-style sauce and the miso/dashi pork soup are soy- and wheat-derived; most Japanese soy sauce and Worcester sauce contain wheat. Assume gluten is present in the sauces and soup.",
+  "url": "http://gcjapan-kyoto.com/tonkichi/",
+  "verdict": "unsupported",
+  "found": "醤油 appears nowhere in the article. The only seasoning descriptions are 「デミグラスやウィスターソースのコク、玉ねぎなど野菜の旨味…オリジナルおろしソース」 and 「豚汁は粉山椒がたっぷり」. Nothing describes soy sauce, and nothing describes the miso or the dashi.",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA); searched the full article text for 醤油/しょうゆ/たまり/だし/味噌",
+  "note": "A soy-sauce field filled in from the genre. The page does evidence wheat, but by a different route and in a different place — the デミグラス roux in the sauce, already covered by this record's gf_cross_contamination claim above. The soup half is worse than unsupported: it attaches wheat to 味噌 and to dashi, and 米味噌 (the ordinary tonjiru miso) and katsuo/kombu dashi are both wheat-free. Recommend deleting this claim rather than repointing it: there is no soy sauce to report at とん吉 on any source I could find, and leaving it in tells a coeliac to avoid the wrong bowl."
+ },
+ {
+  "id": "mp_tonkichi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "This is a pork-focused shop. Even the vegetable sides arrive within sets built around fried pork, and the signature pork soup is meat-based, so there is no realistically vegan meal here and cross-contact with animal products is pervasive.",
+  "url": "http://gcjapan-kyoto.com/tonkichi/",
+  "verdict": "supported",
+  "found": "「そしてショーケースにはズラリとカットされた自慢の豚肉が！」「ごはんと豚汁がつきますよ」「またとんかつの下にはポテトサラダ、キャベツ、トマト、カレーもやしがたっぷりと。」「海老フライはレモンとマヨネーズで」「店内には様々な豚のオブジェが並びます。」",
+  "correct_url": null,
+  "http": "200, plain curl with iPhone UA, first attempt",
+  "method": "1 plain fetch (iPhone UA)",
+  "note": "Fully supported, and the article's detail makes the point sharper than our wording does: the vegetables (potato salad, cabbage, tomato, カレーもやし) are plated UNDER the fried pork, so they arrive touching it; the potato salad and the prawn-fry mayonnaise are egg-based; and the soup is 豚汁 by name. There is no ambiguity to leave open here."
+ },
+ {
+  "id": "mp_tonkichi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "http://gcjapan-kyoto.com/tonkichi/",
+   "https://tabelog.com/kyoto/A2601/A260303/26002640/"
+  ],
+  "why": "Trading. The cited article is on a live, currently-maintained site (its sidebar links an article dated 2026年5月18日オープン) and prints 「■とん吉 075-721-0619 京都府京都市左京区一乗寺宮の東町51-5 12:00～15:00 17:00～22:00 木曜休み」; Tabelog agrees with 「12:00～15:00頃 17:30頃～22:00」 and marks 木 定休日, with reviews to 2025/03 across 190 reviews. FLAG: our record's hours_raw ('around 12:00–15:00; around 17:30–22:00') carries no closing day at all, and both sources say the shop is shut on Thursdays."
+ },
+ {
+  "id": "kyr_zuishin",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260603/26007864/",
+   "https://osumituki.com/kyoto-ramen/130891.html"
+  ],
+  "why": "Trading, on the evidence available. The Tabelog listing is live with 定休日 火曜日 and hours posted, its most recent review is dated 2024/09, and an Ecosia sweep (Yahoo Japan not attempted; Ecosia answered first try) returns current Retty, Hot Pepper, Yahoo!マップ, グルコミ and e-NAVITA entries with no 閉店 notice on any of them. Note the review flow is thin (5 reviews), so this is 'no evidence of closure' rather than a fresh sighting. One small enrichment from that sweep: グルコミ records that the shop takes PayPay and 楽天ペイ as well as cash, and names 油淋鶏 and ちゃんぽん麺."
+ },
+ {
+  "id": "mp_hideyoshi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260401/26014902/"
+  ],
+  "why": "Trading. Reviews dated 2026/04, 2024/11 and 2024/05, and the listing carries current operator hours 「火・水・木・金 17:00 - 04:00 / 土・日・祝日 12:00 - 04:00 / 月 定休日（但し祝日の場合は翌日）」, matching our record. Also on the page and missing from our flags: 予約可, カード可 (JCB/AMEX/Diners), 全席喫煙可 — the whole shop is a smoking room, which is worth a traveller knowing before a 4 a.m. finish."
+ },
+ {
+  "id": "mp_ichikawaya_coffee",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260301/26026585/dtlmenu/",
+   "https://tabelog.com/en/kyoto/A2601/A260301/26026585/"
+  ],
+  "why": "'ask' is defined in REVIEW_PROTOCOL as the honest default when evidence is thin, and here it is not thin — the operator is a Tabelog corporate member publishing a complete, dated food menu. All nine items are wheat: three sandwiches on コッペパン or 食パン, バタートースト, the モーニングプレート (トースト), and the デミオムライス whose デミグラスソース is a wheat roux. Nothing on the page offers or hints at gluten-free provision. There is nothing left to ask, which is what 'no' records; leaving it at 'ask' invites a coeliac to spend a visit finding out what the menu already says. Human gate applies either way — this is a recommendation only."
  }
 ]

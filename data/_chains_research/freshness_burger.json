@@ -1,0 +1,41 @@
+{
+ "name": "Freshness Burger",
+ "name_ja": "フレッシュネスバーガー",
+ "icon": "🥬",
+ "gf": {
+  "tier": "none",
+  "best": "—",
+  "detail": "Not celiac-navigable. Every single burger, dog, panini, morning item and kids item on the operator's own allergen chart (商品開発部門確認日 2026/2/16) carries 小麦 — there is no rice-flour bun and no low-allergen line, so Freshness has none of what makes MOS Burger workable. The only wheat-free rows on the whole grand menu are 北海道産フライドポテト, フレンチフライドポテト and れんこんフライ (all 大豆 only) — and all three come out of the same fryer as 国産チキンナゲット (小麦), フライドチキン (小麦) and ベーコンフライ (小麦), which Freshness acknowledges: 「各食材の製造工場や店舗での調理過程において、他の製品と製造ラインや厨房設備を共有している等の理由により、アレルギー原材料が付着・混入する場合がございます。」 Sauces are worse than they look — even アボカドサルサディップ is 小麦. That leaves drinks. Say so plainly and go elsewhere."
+ },
+ "vegan": {
+  "tier": "limited",
+  "best": "トマトサラダ (フレバル evening menu — the only row on the entire chart with no allergen at all), otherwise plain フライドポテト",
+  "detail": "There is NO plant-based patty on the current menu and none in the 2026 allergen chart — no soy patty, no 大豆ミート row, and nothing in the brand news back through October 2025. If Freshness ever ran one, it is not current. Vegetable-forward branding is not vegetable food here: ガーデンサラダバーガー contains 牛肉 AND 豚肉 (it is a beef-patty burger with salad on it), ベジタブルスープ contains 鶏肉 (chicken), and コールスローサラダ is 小麦・卵・大豆 (wheat and egg in the mayo). Every bun is 卵 and 乳. The only animal-free-by-ingredient items are トマトサラダ (フレバル, the 16:00-onward eat-in bar menu, not offered at every branch), the fries and れんこんフライ, and the black coffee / organic tea / lemonade line — no plant milk is listed anywhere on the drink chart. That is a snack, not a meal, and the fries share oil with fried chicken."
+ },
+ "both_gf_and_vegan": "Only トマトサラダ and the plain fries, which are neither a meal nor celiac-safe (shared fryer, shared kitchen). Effectively no.",
+ "caveats": [
+  "'Garden Salad Burger' is a BEEF burger — ガーデンサラダバーガー lists 牛肉 and 豚肉. Do not read the name as vegetarian.",
+  "ベジタブルスープ contains chicken (鶏肉); コールスローサラダ contains wheat and egg.",
+  "No rice-flour or gluten-free bun exists. Every bread item is 小麦・卵・乳.",
+  "Fries and れんこんフライ are wheat-free BY INGREDIENT but share the fryer with wheat-breaded chicken — celiac-unsafe.",
+  "No plant milk on the drinks chart; カフェラテ and カプチーノ are 乳.",
+  "フレバル (the item that carries トマトサラダ) is eat-in only, 16:00 onward, and 「空港店舗及び、一部の店舗では未販売」.",
+  "The chart explicitly excludes self-serve condiments: 「お客様のお好みでご使用いただけるスパイス類・コンディメント類はアレルギー情報に含まれておりません。」",
+  "Regional and limited-time items sit on separate pages of the same PDF and change often (e.g. 宇都宮野菜餃子バーガー = 小麦・乳・牛肉・大豆・鶏肉・豚肉・桃). Re-pull the PDF."
+ ],
+ "phrases": [
+  { "ja": "小麦を使っていないメニューはありますか？パンは全部小麦ですよね。", "romaji": "Komugi o tsukatte inai menyuu wa arimasu ka? Pan wa zenbu komugi desu yo ne.", "en": "Are there any items without wheat? All the buns contain wheat, don't they?" },
+  { "ja": "ポテトは鶏の唐揚げと同じ油で揚げていますか？", "romaji": "Poteto wa tori no karaage to onaji abura de agete imasu ka?", "en": "Are the fries cooked in the same oil as the fried chicken?" },
+  { "ja": "動物性の材料（肉・卵・乳）を使っていない商品はどれですか？", "romaji": "Doubutsusei no zairyou (niku, tamago, nyuu) o tsukatte inai shouhin wa dore desu ka?", "en": "Which items contain no animal ingredients (meat, egg, dairy)?" }
+ ],
+ "sources": [
+  "https://www.freshnessburger.co.jp/pdf/allergy.pdf",
+  "https://www.freshnessburger.co.jp/pdf/sanchi.pdf",
+  "https://www.freshnessburger.co.jp/qa",
+  "https://www.freshnessburger.co.jp/menu/sidemenu",
+  "https://www.freshnessburger.co.jp/menu/frebar",
+  "https://www.freshnessburger.co.jp/brandnews"
+ ],
+ "allergen_page": "https://www.freshnessburger.co.jp/pdf/allergy.pdf",
+ "checked": "2026-08-21"
+}

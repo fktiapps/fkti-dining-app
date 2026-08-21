@@ -1,0 +1,41 @@
+{
+ "name": "Subway",
+ "name_ja": "サブウェイ",
+ "icon": "🥪",
+ "gf": {
+  "tier": "limited",
+  "best": "ベジーデライト as a SALAD (サラダ, ¥760) — no bread — dressed with オイル＆ビネガー and 塩・こしょう only",
+  "detail": "The bun defeats a celiac completely: all four breads (ホワイト / ウィート / セサミ / ハニーオーツ) are 小麦 and there is no gluten-free bread in Japan. What saves Subway is that サラダ is a full menu CATEGORY — every sandwich is orderable as a bowl with the bread simply omitted. Subway's component-level allergen PDF (更新版 2026年7月22日) breaks each product into its parts, and the ベジーデライト salad's parts are: レタス・トマト・ピーマン・オニオン (all rows blank), オイル＆ビネガー (all rows blank — rapeseed oil + vinegar), 塩・こしょう (all rows blank). Accent vegetables ピクルス, オリーブ, ホットペッパー are likewise clean. That is a genuinely wheat-free composed item, documented ingredient by ingredient — better evidence than most of this dataset. What holds it to 'limited' rather than 'reliable' is where it is made: the same gloved hands, tongs and counter that handle bread all day, and the operator says so — 「製造工場内や、店舗での調理中に他の商品の原材料由来のアレルゲンの付着や混入(コンタミネーション)が発生することがあり、商品別アレルゲン情報は絶対的なものではありません。」 Ask for fresh gloves and a bowl straight from the stack. The default dressing traps: 野菜クリーミードレッシング is 小麦 AND 卵, マヨネーズタイプ is 卵, てり焼きソース is 小麦, バジルソース is 小麦, ケチャップ is 小麦. Only オイル＆ビネガー and 塩・こしょう are clean."
+ },
+ "vegan": {
+  "tier": "reliable",
+  "best": "ベジーデライト サラダ (¥760, 33 kcal) with オイル＆ビネガー + 塩・こしょう — lettuce, tomato, green pepper, onion, oil, vinegar, salt, pepper and nothing else",
+  "detail": "There is NO plant-based patty at Subway Japan — no プラントベース, no 大豆ミート, nothing of the kind anywhere in the 2026 allergen documentation; the only protein-free item is the vegetables themselves. But the ベジーデライト is not a token: the operator's own component table lists the whole item as vegetables plus oil, vinegar, salt and pepper, with no dairy, egg, meat, fish or honey component, and Subway lets you add unlimited free base vegetables and paid accent vegetables (オリーブ, ピクルス, ホットペッパー) at no dietary cost. It is animal-free by construction rather than by claim — Subway Japan makes no vegan certification and there is no plant milk in the drinks line. Two traps: order it as a SALAD (the sandwich version's bread is 卵-free but the sandwich still comes on wheat), and refuse the recommended toppings, which are たまご / チーズ / ベーコン. アボカドベジー looks like the vegan upgrade but its default 野菜クリーミードレッシング carries 小麦・卵・乳 — swap that dressing to オイル＆ビネガー and the avocado version works too."
+ },
+ "both_gf_and_vegan": "CLOSEST YES IN THIS FILE — ベジーデライト サラダ with oil & vinegar is animal-free AND wheat-free by ingredient, in one order, at a chain in every station. Treat it as fully vegan and as wheat-AVOIDANCE for a reactive celiac: it is assembled at a bread counter and Subway disclaims cross-contact in writing.",
+ "caveats": [
+  "Say サラダで (as a salad) or you get wheat bread — all four breads are 小麦, and there is no GF bread in Japan.",
+  "Only オイル＆ビネガー and 塩・こしょう are clean. 野菜クリーミードレッシング = 小麦・卵・乳/大豆; マヨネーズタイプ, シーザードレッシング = 卵; てり焼きソース, バジルソース, ケチャップ = 小麦.",
+  "The recommended toppings on ベジーデライト are たまご, チーズ, ベーコン — decline all of them.",
+  "Assembled on a shared bread counter with shared gloves and tongs; the operator explicitly disclaims コンタミネーション. Ask for glove change: not celiac-certified.",
+  "アボカドベジー's default dressing is the wheat-and-egg 野菜クリーミードレッシング — request オイル＆ビネガー instead.",
+  "No plant-based patty and no plant milk at Subway Japan as of the 2026-07-22 allergen edition.",
+  "Subway Japan is now run by ワタミ (WATAMI FAST CASUAL MANAGEMENT); menus and prices have been moving — re-pull the PDF.",
+  "Subway labels 32 items (the 28 plus 羊・魚・貝・アルコール) and will not answer about anything outside that list: 「上記28品目と『羊・魚・貝・アルコール』の4品目以外については、正確な情報がございませんので店舗ではお答えできません。」"
+ ],
+ "phrases": [
+  { "ja": "ベジーデライトをサラダでください。パンは要りません。", "romaji": "Bejii-deraito o sarada de kudasai. Pan wa irimasen.", "en": "A Veggie Delight as a salad, please — no bread." },
+  { "ja": "ドレッシングはオイル＆ビネガーと塩・こしょうだけでお願いします。他のソースは入れないでください。", "romaji": "Doresshingu wa oiru ando binegaa to shio-koshou dake de onegai shimasu. Hoka no soosu wa irenaide kudasai.", "en": "Oil & vinegar and salt & pepper only, please — no other sauces." },
+  { "ja": "小麦アレルギーです。手袋を新しいものに替えていただけますか？", "romaji": "Komugi arerugii desu. Tebukuro o atarashii mono ni kaete itadakemasu ka?", "en": "I have a wheat allergy — could you change to fresh gloves?" }
+ ],
+ "sources": [
+  "https://www.subway.co.jp/menu/allergy/",
+  "https://www.subway.co.jp/documents/pdf/allergy.pdf",
+  "https://www.subway.co.jp/documents/pdf/eiyo.pdf",
+  "https://www.subway.co.jp/menu/veggie-delight/",
+  "https://www.subway.co.jp/menu/category/salad/",
+  "https://www.subway.co.jp/menu/howtoorder/"
+ ],
+ "allergen_page": "https://www.subway.co.jp/menu/allergy/",
+ "checked": "2026-08-21"
+}

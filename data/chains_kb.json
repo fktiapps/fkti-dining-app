@@ -1,71 +1,1255 @@
 {
- "version": "2026-08-13",
+ "version": "2026-08-21",
  "title": "Reliable-Chain GF / Vegan Guide",
- "disclaimer": "Decision support, not a safety guarantee. These are nationwide chains that give a celiac or vegan a dependable FALLBACK when no curated restaurant is nearby. Each is reliable ONLY for the specific item named below — never the standard menu. Nothing here is certified gluten-free; always declare your allergy and confirm at the branch (menus rotate seasonally).",
+ "disclaimer": "Decision support, not a safety guarantee. These are nationwide chains that give a celiac or vegan a dependable FALLBACK when no curated restaurant is nearby. Each is reliable ONLY for the specific item named below — never the standard menu. Nothing here is certified gluten-free; always declare your allergy and confirm at the branch (menus rotate seasonally). IMPORTANT: Japan's mandatory allergen list does not include BARLEY. A 小麦 column reading 「ー」 says nothing about 大麦 — Sukiya labels its free tea \"Barley Tea / 大麦茶\" while its wheat column is blank, and Ootoya's 麦みそ soup and 五穀ご飯 read clean for the same reason. On a Japanese allergen table, barley is invisible by design.",
  "tiers": {
-  "gf": { "reliable": "A specific item is genuinely wheat-free (often sealed/retort) — celiac-defensible", "limited": "Navigable but strict — you must order around the wheat; shared-kitchen risk", "none": "Not celiac-safe — wheat is unavoidable" },
-  "vegan": { "reliable": "A specific item is genuinely animal-free", "limited": "Only by assembling / one narrow item; hidden-animal traps", "none": "No reliable plant-based option" }
+  "gf": {
+   "reliable": "A specific item is genuinely wheat-free (often sealed/retort) — celiac-defensible",
+   "limited": "Navigable but strict — you must order around the wheat; shared-kitchen risk",
+   "none": "Not celiac-safe — wheat is unavoidable"
+  },
+  "vegan": {
+   "reliable": "A specific item is genuinely animal-free",
+   "limited": "Only by assembling / one narrow item; hidden-animal traps",
+   "none": "No reliable plant-based option"
+  }
  },
  "chains": {
   "coco_ichibanya": {
-   "name": "CoCo Ichibanya", "name_ja": "カレーハウスCoCo壱番屋", "icon": "🍛",
-   "gf": { "tier": "reliable", "best": "特定原材料を使用していないカレー (allergen-free retort curry) over plain rice", "detail": "The standard roux is WHEAT. The safe path is the sealed low-allergen curry — wheat-free, heated inside its sealed pouch and poured over plain rice specifically to avoid kitchen cross-contact. Genuinely celiac-oriented. NO toppings are allowed on it (officially refused). Contains apple + honey — fine for celiacs but flag an apple allergy." },
-   "vegan": { "tier": "reliable", "best": "ココイチベジカレー (veggie-sauce curry) + vegetable toppings", "detail": "The veggie sauce is officially animal-free (no dashi/honey/dairy/meat). Cooked in-store on shared equipment, so it suits dietary vegans but is NOT celiac-safe. Avoid cheese/egg/meat/katsu toppings." },
+   "name": "CoCo Ichibanya",
+   "name_ja": "カレーハウスCoCo壱番屋",
+   "icon": "🍛",
+   "gf": {
+    "tier": "reliable",
+    "best": "特定原材料を使用していないカレー (allergen-free retort curry) over plain rice",
+    "detail": "The standard roux is WHEAT. The safe path is the sealed low-allergen curry — wheat-free, heated inside its sealed pouch and poured over plain rice specifically to avoid kitchen cross-contact. Genuinely celiac-oriented. NO toppings are allowed on it (officially refused). Contains apple + honey — fine for celiacs but flag an apple allergy."
+   },
+   "vegan": {
+    "tier": "reliable",
+    "best": "ココイチベジカレー (veggie-sauce curry) + vegetable toppings",
+    "detail": "The veggie sauce is officially animal-free (no dashi/honey/dairy/meat). Cooked in-store on shared equipment, so it suits dietary vegans but is NOT celiac-safe. Avoid cheese/egg/meat/katsu toppings."
+   },
    "both_gf_and_vegan": "NO. The wheat-free retort curry contains honey (not vegan) and takes no add-ons; the veggie curry is cooked on wheat-shared equipment (not GF). A single order cannot be both.",
-   "caveats": ["Standard curry roux = wheat (unsafe for celiac)", "Shared fryer for all fried items (katsu, croquette) — cross-contact", "Low-allergen pouch curry: no toppings; contains apple + honey", "Veggie sauce is animal-free but shares production line with dairy", "Confirm the low-allergen curry is stocked at the branch — some may not carry it"],
-   "phrases": [
-    { "ja": "小麦アレルギーがあります。特定原材料を使用していないカレーをください。", "romaji": "Komugi arerugii ga arimasu. Tokutei-genzairyou o shiyou shite inai karee o kudasai.", "en": "I have a wheat allergy. The allergen-free curry, please." },
-    { "ja": "ココイチベジカレーをください。動物性の材料は食べられません。", "romaji": "Kokoichi beji-karee o kudasai. Doubutsusei no zairyou wa taberaremasen.", "en": "Veggie curry, please. I can't eat animal ingredients." }
+   "caveats": [
+    "Standard curry roux = wheat (unsafe for celiac)",
+    "Shared fryer for all fried items (katsu, croquette) — cross-contact",
+    "Low-allergen pouch curry: no toppings; contains apple + honey",
+    "Veggie sauce is animal-free but shares production line with dairy",
+    "Confirm the low-allergen curry is stocked at the branch — some may not carry it"
    ],
-   "sources": ["https://www.ichibanya.co.jp/menu/list.html?cid=8", "https://www.ichibanya.co.jp/menu/detail.html?id=1366", "https://www.ichibanya.co.jp/menu/pdf/allergy.pdf", "https://un-gluten.com/glutenfree-cocoichi/", "https://vegegohan.com/restaurant/cocoichibanya-vegetarian-vegan-menu/"]
+   "phrases": [
+    {
+     "ja": "小麦アレルギーがあります。特定原材料を使用していないカレーをください。",
+     "romaji": "Komugi arerugii ga arimasu. Tokutei-genzairyou o shiyou shite inai karee o kudasai.",
+     "en": "I have a wheat allergy. The allergen-free curry, please."
+    },
+    {
+     "ja": "ココイチベジカレーをください。動物性の材料は食べられません。",
+     "romaji": "Kokoichi beji-karee o kudasai. Doubutsusei no zairyou wa taberaremasen.",
+     "en": "Veggie curry, please. I can't eat animal ingredients."
+    }
+   ],
+   "sources": [
+    "https://www.ichibanya.co.jp/menu/list.html?cid=8",
+    "https://www.ichibanya.co.jp/menu/detail.html?id=1366",
+    "https://www.ichibanya.co.jp/menu/pdf/allergy.pdf",
+    "https://un-gluten.com/glutenfree-cocoichi/",
+    "https://vegegohan.com/restaurant/cocoichibanya-vegetarian-vegan-menu/"
+   ]
   },
   "mos_burger": {
-   "name": "MOS Burger", "name_ja": "モスバーガー", "icon": "🍔",
-   "gf": { "tier": "limited", "best": "ポークサンド〈米粉〉 or ポークロール〈米粉〉 (Low-Allergen Menu)", "detail": "One wheat-free item: the Low-Allergen pork burger/hot-dog on a 100% Yamagata rice-flour bun, heated sealed in its bag (deliberate anti-cross-contamination) — the most celiac-defensible burger on any JP chain. But NOT certified GF (MOS admits possible contamination) and it contains PORK (not vegan). Never the fries/nuggets (shared fryer). Na-Tsumi lettuce-wrapped burgers ALL contain wheat (teriyaki = wheat soy sauce)." },
-   "vegan": { "tier": "limited", "best": "米粉入りバンズのアボカドバジルバーガー + plant-based basil tartar", "detail": "One Plant-Based-certified item (no egg/dairy/meat/gelatin as ingredients). Its 'rice-flour' bun is rice flour BLENDED with wheat — so it is NOT gluten-free. Cooked on grills shared with meat/egg/dairy (fine for dietary vegans, not for allergy). WARNING: the standard 'soy' patties (ソイモス etc.) contain egg white + chicken — soy ≠ vegan. (The old Green Burger was discontinued May 2026.)" },
+   "name": "MOS Burger",
+   "name_ja": "モスバーガー",
+   "icon": "🍔",
+   "gf": {
+    "tier": "limited",
+    "best": "ポークサンド〈米粉〉 or ポークロール〈米粉〉 (Low-Allergen Menu)",
+    "detail": "One wheat-free item: the Low-Allergen pork burger/hot-dog on a 100% Yamagata rice-flour bun, heated sealed in its bag (deliberate anti-cross-contamination) — the most celiac-defensible burger on any JP chain. But NOT certified GF (MOS admits possible contamination) and it contains PORK (not vegan). Never the fries/nuggets (shared fryer). Na-Tsumi lettuce-wrapped burgers ALL contain wheat (teriyaki = wheat soy sauce)."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "米粉入りバンズのアボカドバジルバーガー + plant-based basil tartar",
+    "detail": "One Plant-Based-certified item (no egg/dairy/meat/gelatin as ingredients). Its 'rice-flour' bun is rice flour BLENDED with wheat — so it is NOT gluten-free. Cooked on grills shared with meat/egg/dairy (fine for dietary vegans, not for allergy). WARNING: the standard 'soy' patties (ソイモス etc.) contain egg white + chicken — soy ≠ vegan. (The old Green Burger was discontinued May 2026.)"
+   },
    "both_gf_and_vegan": "NO. The GF item is pork; the vegan item's bun contains wheat.",
-   "caveats": ["'Soy' patty ≠ vegan: standard soy burgers contain egg white + chicken", "Na-Tsumi lettuce burgers all contain wheat", "The vegan avocado burger's rice-flour bun is wheat-blended (not GF)", "Fries/nuggets share fryer oil (celiac-unsafe)", "Menu rotates seasonally — re-check the live allergen PDF"],
-   "phrases": [
-    { "ja": "低アレルゲンメニューのポークサンド〈米粉〉をください。", "romaji": "Tei-arerugen menyuu no pooku-sando (komeko) o kudasai.", "en": "The low-allergen Pork Burger (rice flour), please." },
-    { "ja": "これは動物性の材料（肉・卵・乳）が入っていますか？", "romaji": "Kore wa doubutsusei no shokuzai (niku, tamago, nyuu) ga haitte imasu ka?", "en": "Does this contain any animal ingredients (meat/egg/dairy)?" }
+   "caveats": [
+    "'Soy' patty ≠ vegan: standard soy burgers contain egg white + chicken",
+    "Na-Tsumi lettuce burgers all contain wheat",
+    "The vegan avocado burger's rice-flour bun is wheat-blended (not GF)",
+    "Fries/nuggets share fryer oil (celiac-unsafe)",
+    "Menu rotates seasonally — re-check the live allergen PDF"
    ],
-   "sources": ["https://www.mos.jp/menu/pdf/allergy.pdf", "https://www.mos.jp/mori/sentaku/article_20220608/", "https://prtimes.jp/main/html/rd/p/000000581.000075449.html", "https://un-gluten.com/glutenfree-mosburger/"]
+   "phrases": [
+    {
+     "ja": "低アレルゲンメニューのポークサンド〈米粉〉をください。",
+     "romaji": "Tei-arerugen menyuu no pooku-sando (komeko) o kudasai.",
+     "en": "The low-allergen Pork Burger (rice flour), please."
+    },
+    {
+     "ja": "これは動物性の材料（肉・卵・乳）が入っていますか？",
+     "romaji": "Kore wa doubutsusei no shokuzai (niku, tamago, nyuu) ga haitte imasu ka?",
+     "en": "Does this contain any animal ingredients (meat/egg/dairy)?"
+    }
+   ],
+   "sources": [
+    "https://www.mos.jp/menu/pdf/allergy.pdf",
+    "https://www.mos.jp/mori/sentaku/article_20220608/",
+    "https://prtimes.jp/main/html/rd/p/000000581.000075449.html",
+    "https://un-gluten.com/glutenfree-mosburger/"
+   ]
   },
   "starbucks": {
-   "name": "Starbucks", "name_ja": "スターバックス", "icon": "☕",
-   "gf": { "tier": "none", "best": "—", "detail": "No gluten-free FOOD. Drinks are fine (coffee/tea/espresso), but sandwiches and most bakes contain wheat, and nothing is prepared as gluten-free. Not a celiac food option." },
-   "vegan": { "tier": "limited", "best": "Any drink with soy/oat/almond milk; ask for the current プラントベース food item", "detail": "Plant milk (soy/oat/almond) swaps into any drink. There is a rotating SEASONAL plant-based food line (past items: soy-patty muffin, soy bolognese, mango mousse, lemon cake). Officially 'not intended for strict vegans' (shared facilities, possible trace additives) and offered 'excluding select stores' — a reliable vegan-DRINK stop and a decent food fallback, not a guaranteed vegan meal." },
+   "name": "Starbucks",
+   "name_ja": "スターバックス",
+   "icon": "☕",
+   "gf": {
+    "tier": "none",
+    "best": "—",
+    "detail": "No gluten-free FOOD. Drinks are fine (coffee/tea/espresso), but sandwiches and most bakes contain wheat, and nothing is prepared as gluten-free. Not a celiac food option."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "Any drink with soy/oat/almond milk; ask for the current プラントベース food item",
+    "detail": "Plant milk (soy/oat/almond) swaps into any drink. There is a rotating SEASONAL plant-based food line (past items: soy-patty muffin, soy bolognese, mango mousse, lemon cake). Officially 'not intended for strict vegans' (shared facilities, possible trace additives) and offered 'excluding select stores' — a reliable vegan-DRINK stop and a decent food fallback, not a guaranteed vegan meal."
+   },
    "both_gf_and_vegan": "NO GF food at all.",
-   "caveats": ["Food line is seasonal/rotating — the exact item changes", "'Excluding select stores' — not every branch carries plant-based food", "Not certified strict-vegan (shared facilities)", "Whipped cream/most cakes are dairy — specify plant milk and no whip"],
-   "phrases": [
-    { "ja": "ミルクを豆乳（オーツミルク）に変更できますか？", "romaji": "Miruku o tounyuu (ootsu-miruku) ni henkou dekimasu ka?", "en": "Can I change the milk to soy (oat) milk?" },
-    { "ja": "プラントベースのフードはありますか？", "romaji": "Purantobeesu no fuudo wa arimasu ka?", "en": "Do you have a plant-based food item?" }
+   "caveats": [
+    "Food line is seasonal/rotating — the exact item changes",
+    "'Excluding select stores' — not every branch carries plant-based food",
+    "Not certified strict-vegan (shared facilities)",
+    "Whipped cream/most cakes are dairy — specify plant milk and no whip"
    ],
-   "sources": ["https://fooddiversity.today/en/article_181292.html", "https://thejapaneserose.com/starbucks-in-japan-the-vegan-guide/", "https://vegconomist.com/gastronomy-food-service/food-service/starbucks-japan-vegan-options/"]
+   "phrases": [
+    {
+     "ja": "ミルクを豆乳（オーツミルク）に変更できますか？",
+     "romaji": "Miruku o tounyuu (ootsu-miruku) ni henkou dekimasu ka?",
+     "en": "Can I change the milk to soy (oat) milk?"
+    },
+    {
+     "ja": "プラントベースのフードはありますか？",
+     "romaji": "Purantobeesu no fuudo wa arimasu ka?",
+     "en": "Do you have a plant-based food item?"
+    }
+   ],
+   "sources": [
+    "https://fooddiversity.today/en/article_181292.html",
+    "https://thejapaneserose.com/starbucks-in-japan-the-vegan-guide/",
+    "https://vegconomist.com/gastronomy-food-service/food-service/starbucks-japan-vegan-options/"
+   ]
   },
   "gusto": {
-   "name": "Gusto", "name_ja": "ガスト", "icon": "🍴",
-   "gf": { "tier": "limited", "best": "Sirloin / 'red beef' steak ordered SALT-only (no sauce, no bread) + plain or multigrain rice", "detail": "Navigable but strict, at a meat/wheat-forward family restaurant. Skylark publishes a per-item allergen tool (but it excludes cross-contamination). Order the steak with salt only; add plain veg sides. AVOID: table soy sauce (wheat), teriyaki/demi-glace/curry roux (wheat), miso soup (麩 fu = wheat gluten), hamburg steak (breadcrumbs), fries (shared fryer)." },
-   "vegan": { "tier": "none", "best": "— (assemble plain rice + a confirmed veg side at best)", "detail": "Not reliable. Skylark's plant-based 'soy-meat' line is at the sibling brand COCO'S, NOT Gusto. Gusto's low-allergen kids items still contain meat. Best possible: plain rice + a vegetable side confirmed free of bacon/cheese/dashi/egg." },
+   "name": "Gusto",
+   "name_ja": "ガスト",
+   "icon": "🍴",
+   "gf": {
+    "tier": "limited",
+    "best": "Sirloin / 'red beef' steak ordered SALT-only (no sauce, no bread) + plain or multigrain rice",
+    "detail": "Navigable but strict, at a meat/wheat-forward family restaurant. Skylark publishes a per-item allergen tool (but it excludes cross-contamination).  AVOID: table soy sauce (wheat), teriyaki/demi-glace/curry roux (wheat), miso soup (麩 fu = wheat gluten), hamburg steak (breadcrumbs), fries (shared fryer). [Corrected 2026-08-21] Skylark states in writing 「食材を抜くなどの対応はいたしかねます」 — it will NOT remove an ingredient on request, so any advice here to order something without its sauce is wrong. Skylark also publishes only the 9 mandatory allergens for its brands, so no meat, gelatin or dashi data exists for any dish."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (assemble plain rice + a confirmed veg side at best)",
+    "detail": "Not reliable. Skylark's plant-based 'soy-meat' line is at the sibling brand  Gusto's low-allergen kids items still contain meat. Best possible: plain rice + a vegetable side confirmed free of bacon/cheese/dashi/egg. [Corrected 2026-08-21] An earlier version pointed vegans at COCO'S for a soy-meat line that does not exist: COCO'S is Zensho, not a Skylark sibling, and its 大豆ミートハンバーグの十六穀米プレート contains 卵・乳・小麦・牛肉・鶏肉・豚肉・ゼラチン."
+   },
    "both_gf_and_vegan": "NO reliable vegan item to combine.",
-   "caveats": ["Allergen tool excludes cross-contamination; shared grill/fryer", "Table soy sauce, teriyaki, demi-glace, curry roux all contain wheat", "Miso soup contains fu (wheat gluten)", "Hamburg steak contains breadcrumbs", "The plant-based soy-meat menu is COCO'S, not Gusto"],
-   "phrases": [
-    { "ja": "小麦アレルギーです。醤油とソースは抜いてください。", "romaji": "Komugi arerugii desu. Shouyu to soosu wa nuite kudasai.", "en": "I have a wheat allergy. Please leave off the soy sauce and sauce." },
-    { "ja": "アレルゲン一覧表を見せていただけますか？", "romaji": "Arerugen ichiran-hyou o misete itadakemasu ka?", "en": "May I see the allergen chart?" }
+   "caveats": [
+    "Allergen tool excludes cross-contamination; shared grill/fryer",
+    "Table soy sauce, teriyaki, demi-glace, curry roux all contain wheat",
+    "Miso soup contains fu (wheat gluten)",
+    "Hamburg steak contains breadcrumbs",
+    "The plant-based soy-meat menu is COCO'S, not Gusto",
+    "Skylark refuses ingredient removal in writing; do not plan around a modified order."
    ],
-   "sources": ["https://allergy.skylark.co.jp/scene_irregular?brand=010016", "https://faq.skylark.co.jp/faq/show/48", "https://jp.japan-glutenfree.com/familyrestaurant/"]
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。醤油とソースは抜いてください。",
+     "romaji": "Komugi arerugii desu. Shouyu to soosu wa nuite kudasai.",
+     "en": "I have a wheat allergy. Please leave off the soy sauce and sauce."
+    },
+    {
+     "ja": "アレルゲン一覧表を見せていただけますか？",
+     "romaji": "Arerugen ichiran-hyou o misete itadakemasu ka?",
+     "en": "May I see the allergen chart?"
+    }
+   ],
+   "sources": [
+    "https://allergy.skylark.co.jp/scene_irregular?brand=010016",
+    "https://faq.skylark.co.jp/faq/show/48",
+    "https://jp.japan-glutenfree.com/familyrestaurant/"
+   ]
   },
   "saizeriya": {
-   "name": "Saizeriya", "name_ja": "サイゼリヤ", "icon": "🍝",
-   "gf": { "tier": "none", "best": "— (wheat-avoidance only: plain rice, arrosticini lamb skewers, mozzarella, cooked greens)", "detail": "Celiac-safe: NO. A cheap Italian chain built on pasta/pizza/bread in a shared kitchen, with no low-allergen menu. The allergen chart lists some wheat-free items (plain rice, arrosticini grilled lamb, buffalo mozzarella, soft-cooked broccoli/spinach), but cross-contamination is expected — wheat-AVOIDANCE only, not safe for a reactive celiac." },
-   "vegan": { "tier": "limited", "best": "Green salad WITHOUT dressing + plain rice + potatoes/cooked greens", "detail": "No certified-vegan item, but you can assemble a plate. The house dressing contains EGG — order salads dressing-nuki. AVOID: penne arrabbiata (anchovy), corn cream soup (dairy + wheat), spicy chicken (wheat + egg). Minestrone broth type is unconfirmed — ask." },
+   "name": "Saizeriya",
+   "name_ja": "サイゼリヤ",
+   "icon": "🍝",
+   "gf": {
+    "tier": "none",
+    "best": "— (wheat-avoidance only: plain rice, arrosticini lamb skewers, mozzarella, cooked greens)",
+    "detail": "Celiac-safe: NO. A cheap Italian chain built on pasta/pizza/bread in a shared kitchen, with no low-allergen menu. The allergen chart lists some wheat-free items (plain rice, arrosticini grilled lamb, buffalo mozzarella, soft-cooked broccoli/spinach), but cross-contamination is expected — wheat-AVOIDANCE only, not safe for a reactive celiac."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "Green salad WITHOUT dressing + plain rice + potatoes/cooked greens",
+    "detail": "No certified-vegan item, but you can assemble a plate. The house dressing contains EGG — order salads dressing-nuki. AVOID: penne arrabbiata (anchovy), corn cream soup (dairy + wheat), spicy chicken (wheat + egg). Minestrone broth type is unconfirmed — ask."
+   },
    "both_gf_and_vegan": "A dressing-free salad + plain rice is roughly both, but still shares a wheat-heavy kitchen (not celiac-safe).",
-   "caveats": ["Shared wheat-heavy kitchen — not safe for reactive celiacs", "House dressing contains egg — order salads 'dressing-nuki'", "Penne arrabbiata contains anchovy (not vegan)", "Corn cream soup = wheat + dairy", "Minestrone broth may be meat stock — ask"],
-   "phrases": [
-    { "ja": "ドレッシング抜きでお願いします。", "romaji": "Doresshingu nuki de onegai shimasu.", "en": "Without dressing, please (the dressing has egg)." },
-    { "ja": "小麦を使っていない料理はどれですか？", "romaji": "Komugi o tsukatte inai ryouri wa dore desu ka?", "en": "Which dishes use no wheat?" }
+   "caveats": [
+    "Shared wheat-heavy kitchen — not safe for reactive celiacs",
+    "House dressing contains egg — order salads 'dressing-nuki'",
+    "Penne arrabbiata contains anchovy (not vegan)",
+    "Corn cream soup = wheat + dairy",
+    "Minestrone broth may be meat stock — ask"
    ],
-   "sources": ["https://allergy.saizeriya.co.jp/allergy", "https://isitveganjapan.com/food-on-the-go/fast-food/", "https://87maru.info/2018/08/10/saizeriya/"]
+   "phrases": [
+    {
+     "ja": "ドレッシング抜きでお願いします。",
+     "romaji": "Doresshingu nuki de onegai shimasu.",
+     "en": "Without dressing, please (the dressing has egg)."
+    },
+    {
+     "ja": "小麦を使っていない料理はどれですか？",
+     "romaji": "Komugi o tsukatte inai ryouri wa dore desu ka?",
+     "en": "Which dishes use no wheat?"
+    }
+   ],
+   "sources": [
+    "https://allergy.saizeriya.co.jp/allergy",
+    "https://isitveganjapan.com/food-on-the-go/fast-food/",
+    "https://87maru.info/2018/08/10/saizeriya/"
+   ]
+  },
+  "bamiyan": {
+   "name": "Bamiyan",
+   "name_ja": "バーミヤン",
+   "icon": "🥟",
+   "gf": {
+    "tier": "limited",
+    "best": "低アレルゲンキッズカレー (kids) — for an adult: おつまみ焼ビーフン（ぴったりさいず） (rice vermicelli) + ごはん + ネギザーサイ",
+    "detail": "Same Skylark allergen search as Gusto and Jonathan's (brand code 170001), checked 2026-08-21. 「低アレルゲンキッズカレー」 comes back free of all 9 mandatory allergens. For an adult the useful find is 「おつまみ焼ビーフン（ぴったりさいず）」 — fried rice vermicelli, wheat-free (but it contains EGG). 「ネギザーサイ」 is wheat/egg/milk-free and 「ごはん」 (plain rice) is on the menu. THE HEADLINE IS THE NEGATIVE: search the 麺 category for wheat-free and you get five TOPPINGS (どっさり青ネギ, 海苔5枚, トッピング海老, トッピングほうれん草, 山盛りきくらげ) and zero noodles. Every ramen here is wheat, every gyoza is wheat, and the 飯 category returns only 「ごはん」 — no chahan, no ankake. Skylark also warns 「当社の麺類（そば含む）は同じ調理器具・釜で調理しています」, so even the bīfun is exposed to the noodle kettles."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (at best assemble ごはん + ネギザーサイ + トッピングほうれん草 + 山盛りきくらげ)",
+    "detail": "Not verifiable. Bamiyan publishes only the 9 mandatory allergens — no 鶏肉/豚肉/牛肉/ゼラチン data, which at a Chinese chain is precisely the data you need, because 鶏がら and pork stock sit in nearly every sauce and seasoning. The items above show no egg/milk/wheat, but that says nothing about chicken extract. There is no plant-based or 大豆ミート line at Bamiyan, and Skylark will not remove ingredients for you."
+   },
+   "both_gf_and_vegan": "NO. Nothing at this brand has published meat data, so no single order can be certified animal-free, wheat-free or not.",
+   "caveats": [
+    "NO wheat-free noodle exists — the 麺 search returns only toppings. Ramen, gyoza and the wheat-thickened sauces are all out.",
+    "「当社の麺類（そば含む）は同じ調理器具・釜で調理しています。敏感な方はご注意ください。」 — one kettle for everything.",
+    "SHARED FRYER: 「調理器具、食器、揚げ油、衣（パン粉、てんぷら粉）、食材の保管場所は共有しております」. 山盛りフライドポテト reads wheat-free but comes out of the gyoza/karaage oil.",
+    "おつまみ焼ビーフン contains EGG — wheat-free but not vegan.",
+    "Skylark refuses ingredient removal: 「食材を抜くなどの対応はいたしかねますので、あらかじめご了承ください。」",
+    "低アレルゲンキッズカレー is a キッズ item; adult ordering is not stated anywhere.",
+    "Trace contamination is explicitly NOT reflected: 「工場・店舗での加工・盛付の過程で意図せず微量混入する場合を考慮（表示）しておりません。」",
+    "Table soy sauce and chilli oil are excluded from the allergen data entirely.",
+    "ドリンクバー is outside the data and shares its spouts; 麦茶 (barley) is a standard line."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。小麦を使っていないのは焼ビーフンとごはんだけですか？",
+     "romaji": "Komugi arerugii desu. Komugi o tsukatte inai no wa yaki-biifun to gohan dake desu ka?",
+     "en": "I have a wheat allergy. Are the rice vermicelli and the plain rice the only wheat-free items?"
+    },
+    {
+     "ja": "このお料理に鶏がらスープや肉のだしは入っていますか？",
+     "romaji": "Kono o-ryouri ni torigara-suupu ya niku no dashi wa haitte imasu ka?",
+     "en": "Does this dish contain chicken stock or any meat broth?"
+    }
+   ],
+   "sources": [
+    "https://allergy.skylark.co.jp/scene_irregular?brand=170001",
+    "https://allergy.skylark.co.jp/consideration",
+    "https://corp.skylark.co.jp/sustainability/social/customer/safe_and_secure/allergy.html",
+    "https://store-info.skylark.co.jp/?allergy=1&brand=170001",
+    "https://www.skylark.co.jp/bamiyan/menu/"
+   ],
+   "allergen_page": "https://allergy.skylark.co.jp/scene_irregular?brand=170001",
+   "checked": "2026-08-21"
+  },
+  "cocos": {
+   "name": "COCO'S",
+   "name_ja": "ココス",
+   "icon": "🥞",
+   "gf": {
+    "tier": "limited",
+    "best": "低アレルゲンおこさまカレー (¥594) or 低アレルゲンおこさまハンバーグプレート (¥759) — and ADULTS MAY ORDER THEM",
+    "detail": "COCO'S (ココスジャパン, Zensho group — NOT Skylark, contrary to the note in the existing Gusto entry) runs the best-documented allergen tool of the four: Ta:bel publishes all 28 allergens per item, including 牛肉・豚肉・鶏肉・ゼラチン・大豆. It has a real 6-item low-allergen menu and its own words are 「アレルギーの原因となる9大アレルゲンを使用せずにお作りしています。」 where 「ココスでは、特定原材料8品目「卵・乳・小麦・そば・落花生（ピーナッツ）・えび・かに・くるみ」+大豆を9大アレルゲンと呼んでいます」 — soy is included, which is rare. Critically: 「※低アレルゲンメニューは、食事に制限のある大人の方もご注文いただけます。」 — an adult celiac may order it, unlike at any Skylark brand. The six items: 低アレルゲンおこさまハンバーグプレート (pork), 低アレルゲンおこさまカレー (chicken), 低アレルゲンおこさまホットドッグ (pork), 低アレルゲン米粉パン, 低アレルゲンいちごアイス, 低アレルゲンぶどうゼリー. Off the regular menu Ta:bel also clears 【単品】ライス, 彩り野菜のグリーンサラダ（ドレッシングは除く）and まぐろたたき小丼（みそ汁・醤油・わさびは除く）of wheat. Held at 'limited' rather than 'reliable' only because COCO'S says plainly there is no separate equipment: 「上記のメニューの加工・調理には、アレルギー物質9品目…を含む食品を加工・調理した装置・器具と共通のものを使用しております」 and 「アレルゲン除去食品ではありませんので、敏感な方はご注意ください」."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "低アレルゲン米粉パン (¥110) + 彩り野菜のグリーンサラダ（ドレッシングは除く）+ 【単品】ライス, then 低アレルゲンぶどうゼリー or 低アレルゲンいちごアイス",
+    "detail": "COCO'S has no plant-based menu line, but it is the only one of the four where you can PROVE a plate is animal-free, because Ta:bel covers 卵・乳・牛肉・豚肉・鶏肉・さけ・さば・えび・かに・いか・あわび・いくら・ゼラチン. Against that table, 低アレルゲン米粉パン, 低アレルゲンいちごアイス (yes — a dairy-free ice), 低アレルゲンぶどうゼリー (no gelatin), 彩り野菜のグリーンサラダ（ドレッシングは除く）and ライス each come back with a dash in all 28 columns. That is an assembled plate rather than a main, hence 'limited' — but every component is operator-verified rather than guessed."
+   },
+   "both_gf_and_vegan": "YES — the best both-diets answer of any chain in this file. 低アレルゲン米粉パン + 彩り野菜のグリーンサラダ（ドレッシングは除く）+ ライス + 低アレルゲンぶどうゼリー are each shown clear of all 28 allergens in COCO'S own Ta:bel table, so a single order is simultaneously wheat-free and animal-free. It is a light plate and it is still cooked on shared equipment, so it suits a dietary vegan and a careful — not a highly reactive — celiac.",
+   "caveats": [
+    "TRAP: 「大豆ミートハンバーグの十六穀米プレート」 is NOT vegan and NOT gluten-free. Ta:bel shows it containing 卵・乳・小麦・牛肉・鶏肉・豚肉・ゼラチン — 'soy meat' here means a soy-and-meat patty. It also sits on 十六穀米 (16-grain rice, i.e. barley).",
+    "No dedicated equipment: 「…アレルギー物質9品目（卵・乳・小麦・そば・落花生（ピーナッツ）・えび・かに・くるみ・大豆）を含む食品を加工・調理した装置・器具と共通のものを使用しております。」",
+    "SHARED FRYER — and COCO'S prints it in the item name: 「おこさまからあげ（同一の油で揚げております）」, 「おこさまフライドポテト（同一の油で揚げております）」.",
+    "「アレルゲン除去食品ではありませんので、敏感な方はご注意ください」 — allergen-removed food is explicitly not what this is.",
+    "低アレルゲンおこさまハンバーグプレート contains PORK and 低アレルゲンおこさまカレー contains CHICKEN — wheat-free, never vegan.",
+    "Items marked ▲/△ in Ta:bel share a supplier production line with that allergen — read the mark, not just the dash.",
+    "The green salad is only clear WITHOUT dressing (ドレッシングは除く); the tuna donburi only without soy sauce (醤油は除く).",
+    "「一部店舗で取扱商品、販売時間帯、価格が異なる場合がございます」 — the low-allergen line is not guaranteed at every branch."
+   ],
+   "phrases": [
+    {
+     "ja": "低アレルゲンメニューは大人でも注文できると伺いました。低アレルゲンおこさまカレーをください。",
+     "romaji": "Tei-arerugen menyuu wa otona demo chuumon dekiru to ukagaimashita. Tei-arerugen okosama-karee o kudasai.",
+     "en": "I understand adults may order the low-allergen menu. The low-allergen curry, please."
+    },
+    {
+     "ja": "低アレルゲン米粉パンと、ドレッシング抜きの彩り野菜のグリーンサラダをください。",
+     "romaji": "Tei-arerugen komeko-pan to, doresshingu-nuki no irodori-yasai no guriin-sarada o kudasai.",
+     "en": "The low-allergen rice-flour bread, and the mixed vegetable green salad with no dressing, please."
+    }
+   ],
+   "sources": [
+    "https://www.cocos-jpn.co.jp/menu/hypoallergenic/",
+    "https://www.cocos-jpn.co.jp/tabel/list.html",
+    "https://www.cocos-jpn.co.jp/tabel/",
+    "https://www.cocos-jpn.co.jp/vision/allergen.html"
+   ],
+   "allergen_page": "https://www.cocos-jpn.co.jp/tabel/",
+   "checked": "2026-08-21"
+  },
+  "dennys": {
+   "name": "Denny's",
+   "name_ja": "デニーズ",
+   "icon": "🍳",
+   "gf": {
+    "tier": "reliable",
+    "best": "低アレルゲンバーガープレート or 低アレルゲンプレート — ¥680 (税込 ¥748), apple juice included",
+    "detail": "Denny's Japan (デニーズジャパン, York Holdings) is the strongest celiac call of the four family restaurants, for a reason the others do not offer: it publishes the FULL RAW-INGREDIENT LIST of every low-allergen component, not just an allergen grid. 「低アレルゲンメニューは、特定原材料8品目（卵・乳・小麦・そば・落花生（ピーナッツ）・えび・かに・くるみ）を原材料に使用しないメニューです。」 Two plates at ¥748: 低アレルゲンプレート (低アレルゲンふりかけ + hamburg + sausage + ごはん + 野菜ミックス + apple juice) and 低アレルゲンバーガープレート (hamburg + sausage + 低アレルゲン米粉バンズ + 野菜ミックス + apple juice). The published lists are clean — 低アレルゲン米粉バンズ = 「米粉、なたね油、砂糖、食塩、ドライイースト／トレハロース、増粘多糖類」; the hamburg = 「豚肉、ソテーオニオン、でん粉、豚脂肪、食塩、砂糖、香辛料…」 — potato starch, no breadcrumb, no wheat anywhere in the chain of components. Denny's is also the only one of the four to describe an in-store allergen protocol: 「専用に調理器具・食器を管理させ、アレルゲンを含む食材と調理、加工をしないなどの従業員教育の実施等」. It keeps its own hedge and so does this entry: 「調理器具・機材、手などを介して他の食材が付着するなど、調理過程でのアレルギー物質の二次的混入の可能性をすべて防ぐことはできません。」 A named item, wheat-free by formulation, with published ingredients and a managed-utensil protocol — celiac-defensible, but declare the allergy and confirm at the branch."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "The plant half of the 低アレルゲンプレート — ごはん + 低アレルゲンふりかけ + 野菜ミックス + りんごジュース (plus the 米粉バンズ on the burger version)",
+    "detail": "There is no vegan menu line, but Denny's published ingredient lists let you verify individual components, and four are fully plant-based: 低アレルゲン米粉バンズ 「米粉、なたね油、砂糖、食塩、ドライイースト／トレハロース、増粘多糖類」; 低アレルゲンふりかけ 「煎り米、乾燥マッシュポテト、砂糖、うるちひえパフ、でん粉、食塩、トマトフレーク、オニオンエキス、かぼちゃ粉末、ほうれん草フレーク、還元水飴、昆布エキス、酵母エキス…」 (kombu and yeast, no katsuo); 野菜ミックス 「じゃがいも、とうもろこし、グリーンピース、にんじん」; りんごジュース 「りんご／香料」. The catch: they are sold only as parts of a plate whose hamburg and sausage are both PORK, so a vegan pays for and leaves the meat. Not a vegan meal — a verified vegan portion of a non-vegan plate."
+   },
+   "both_gf_and_vegan": "PARTIALLY — the rice-flour bun, the furikake, the vegetable mix and the apple juice on the 低アレルゲン plates are each documented free of wheat AND of any animal ingredient, so the plant components of one plate are genuinely both. But both plates are built on a pork hamburg and a pork sausage, there is no way to buy the plant parts alone, and Denny's does not offer the plate without the meat.",
+   "caveats": [
+    "SHARED FRYER, in Denny's own words: 「揚げ油は、エビ、カニ、小麦、卵、その他を含む食品の調理にも共用で使用しています。」 Nothing fried is celiac-safe.",
+    "「調理器具、及び食器、揚げ油は共有しております。店舗で使用する食材は、共有の保管場所で、共有の器具を使用しております。」 — that is the GENERAL menu; the low-allergen line is the exception with its own protocol, and even there 「絶対的なものではありません」.",
+    "「「スパゲティ」「うどん」「そば」「中華めん」等は、共有の機器で調理しております。」",
+    "The low-allergen hamburg AND sausage are both PORK — a vegan can eat only the plant components.",
+    "「※二番町店では、販売しておりません。」 — the low-allergen menu is not sold at every branch.",
+    "低アレルゲンケーキ (米粉と豆乳のケーキ〈苺〉) is wheat-free and dairy-free but contains GELATIN and soy — a GF dessert, not a vegan one.",
+    "「黒米ともち麦ごはん」 contains もち麦 = BARLEY. Barley is not a labelled allergen in Japan and will never appear in an allergen table.",
+    "TRAP, unverified: Denny's lists 「ふわふわ大豆ミートハンバーグのタコライス仕立て」. The allergen PDF's row alignment could not be read reliably enough to certify it, and every soy-meat patty checked at COCO'S and MOS turned out to contain egg, dairy and real meat. Ask before assuming.",
+    "「お好みでお使いいただく醤油、ソース、ケチャップなどの調味料は、内容に含まれておりません」 — table soy sauce is outside the data and is wheat.",
+    "Two 特別店 (新宿西口店・赤坂駅前店) have a different menu and a separate allergen PDF."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。低アレルゲンバーガープレートをお願いします。",
+     "romaji": "Komugi arerugii desu. Tei-arerugen baagaa-pureeto o onegai shimasu.",
+     "en": "I have a wheat allergy. The low-allergen burger plate, please."
+    },
+    {
+     "ja": "低アレルゲンメニューの原材料表を見せていただけますか？",
+     "romaji": "Tei-arerugen menyuu no genzairyou-hyou o misete itadakemasu ka?",
+     "en": "Could I see the ingredient list for the low-allergen menu?"
+    }
+   ],
+   "sources": [
+    "https://www.dennys.jp/safety/menu-information/",
+    "https://www.dennys.jp/safety/menu-contents/",
+    "https://www.dennys.jp/safety/raw-material/",
+    "https://www.dennys-jp.com/allergy.html",
+    "https://www.dennys-jp.com/pdf/allergen.pdf"
+   ],
+   "allergen_page": "https://www.dennys-jp.com/allergy.html",
+   "checked": "2026-08-21"
+  },
+  "doutor": {
+   "name": "Doutor",
+   "name_ja": "ドトールコーヒーショップ",
+   "icon": "☕",
+   "gf": {
+    "tier": "none",
+    "best": "—",
+    "detail": "No gluten-free FOOD. Doutor's own allergen tool, filtered for 小麦 「含まない」, returns just 9 items in the whole FOOD category (ketchup, margarine toast-spread, 3 jams, キッズカレー, ミニゼリー, あつあつカマンベール, 枝豆) and 12 in DESSERT (soft-serve cups, モンブラン, スイートポテト, 珈琲羊羹). Every ミラノサンド, ジャーマンドック, ホットサンド, トースト, pasta, doria and pastry is wheat. There is no low-allergen menu and no allergen-managed preparation — Doutor states 「工場製造時や店舗調理時に本来その商品に含まれていないアレルギー物質が混入する可能性があります」. Drinks are fine. Not a celiac food option. Also note 押し麦入りミネストローネ = barley (麦)."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "豆乳ラテ / 豆乳ティー / 抹茶豆乳ラテ (full soy series, hot + iced + caffeine-less) — plus 枝豆 or 珈琲羊羹 to eat",
+    "detail": "The deepest plant-MILK line of the four, but SOY ONLY. Doutor sells soy as its own named menu items rather than as a swap: 豆乳ラテ, 豆乳ティー, 抹茶豆乳ラテ, 豆乳オレ, 抹茶豆乳オレ, ホット豆乳, カフェインレス豆乳ラテ and every iced equivalent (アイス豆乳ラテ, アイス豆乳ティー, アイス抹茶豆乳オレ, アイス豆乳). Doutor's item-level table lists 豆乳ラテ and 豆乳ティー as containing 大豆 ONLY — no 乳, no 小麦: first-party proof they are genuinely dairy-free. There is NO oat and NO almond milk anywhere in the allergen database. For FOOD there is no plant-based line: filtering the whole catalogue for no egg/dairy/shrimp/crab/beef/salmon/mackerel/chicken/pork/gelatin/seafood leaves 61 items that are almost all drinks, sugars and jams — the only real foods are 枝豆 (edamame) and 珈琲羊羹 (sealed coffee-flavoured azuki yōkan). TRAP: ホットサンド 大豆のミート ('soy meat') is NOT vegan — Doutor's table marks it 卵, 乳, 小麦, ごま, 大豆, りんご."
+   },
+   "both_gf_and_vegan": "YES, but only as a snack: 枝豆 (edamame) and 珈琲羊羹 (sealed coffee yōkan) are each listed wheat-free AND free of every animal allergen in Doutor's own table. Neither is a meal, and both are served in a wheat-heavy shared kitchen.",
+   "caveats": [
+    "Soy only — no oat and no almond milk anywhere in Doutor's allergen database",
+    "Soy drinks are separate menu items, not a milk swap; Doutor publishes no substitution policy or surcharge",
+    "TRAP: ホットサンド 大豆のミート ('soy meat') contains egg, dairy AND wheat — not vegan, not GF",
+    "Even plain トースト is marked 乳 (dairy) — there is no vegan toast",
+    "押し麦入りミネストローネ contains barley (麦)",
+    "Almost every item is tagged 店舗限定 — stock genuinely varies by branch",
+    "Allergen table excludes cross-contamination; shared fryer for 唐揚げ / フライドポテト"
+   ],
+   "phrases": [
+    {
+     "ja": "豆乳ラテをください。",
+     "romaji": "Tounyuu-rate o kudasai.",
+     "en": "A soy latte, please."
+    },
+    {
+     "ja": "オーツミルクはありますか？",
+     "romaji": "Ootsu-miruku wa arimasu ka?",
+     "en": "Do you have oat milk? (expect no)"
+    },
+    {
+     "ja": "枝豆と珈琲羊羹をください。",
+     "romaji": "Edamame to koohii-youkan o kudasai.",
+     "en": "Edamame and the coffee yokan, please."
+    }
+   ],
+   "sources": [
+    "https://allergy.doutor.co.jp/allergy_check/doutor_coffee_shop/",
+    "https://allergy.doutor.co.jp/allergy_check/doutor_coffee_shop/item/detail/11001005",
+    "https://allergy.doutor.co.jp/allergy_check/doutor_coffee_shop/item/detail/11001013",
+    "https://allergy.doutor.co.jp/allergy_check/doutor_coffee_shop/item/detail/11002010",
+    "https://allergy.doutor.co.jp/allergy_check/doutor_coffee_shop/item/detail/11002049",
+    "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html"
+   ],
+   "allergen_page": "https://allergy.doutor.co.jp/allergy_check/doutor_coffee_shop/",
+   "checked": "2026-08-21"
+  },
+  "freshness_burger": {
+   "name": "Freshness Burger",
+   "name_ja": "フレッシュネスバーガー",
+   "icon": "🥬",
+   "gf": {
+    "tier": "none",
+    "best": "—",
+    "detail": "Not celiac-navigable. Every single burger, dog, panini, morning item and kids item on the operator's own allergen chart (商品開発部門確認日 2026/2/16) carries 小麦 — there is no rice-flour bun and no low-allergen line, so Freshness has none of what makes MOS Burger workable. The only wheat-free rows on the whole grand menu are 北海道産フライドポテト, フレンチフライドポテト and れんこんフライ (all 大豆 only) — and all three come out of the same fryer as 国産チキンナゲット (小麦), フライドチキン (小麦) and ベーコンフライ (小麦), which Freshness acknowledges: 「各食材の製造工場や店舗での調理過程において、他の製品と製造ラインや厨房設備を共有している等の理由により、アレルギー原材料が付着・混入する場合がございます。」 Sauces are worse than they look — even アボカドサルサディップ is 小麦. That leaves drinks. Say so plainly and go elsewhere."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "トマトサラダ (フレバル evening menu — the only row on the entire chart with no allergen at all), otherwise plain フライドポテト",
+    "detail": "There is NO plant-based patty on the current menu and none in the 2026 allergen chart — no soy patty, no 大豆ミート row, and nothing in the brand news back through October 2025. If Freshness ever ran one, it is not current. Vegetable-forward branding is not vegetable food here: ガーデンサラダバーガー contains 牛肉 AND 豚肉 (it is a beef-patty burger with salad on it), ベジタブルスープ contains 鶏肉 (chicken), and コールスローサラダ is 小麦・卵・大豆 (wheat and egg in the mayo). Every bun is 卵 and 乳. The only animal-free-by-ingredient items are トマトサラダ (フレバル, the 16:00-onward eat-in bar menu, not offered at every branch), the fries and れんこんフライ, and the black coffee / organic tea / lemonade line — no plant milk is listed anywhere on the drink chart. That is a snack, not a meal, and the fries share oil with fried chicken."
+   },
+   "both_gf_and_vegan": "Only トマトサラダ and the plain fries, which are neither a meal nor celiac-safe (shared fryer, shared kitchen). Effectively no.",
+   "caveats": [
+    "'Garden Salad Burger' is a BEEF burger — ガーデンサラダバーガー lists 牛肉 and 豚肉. Do not read the name as vegetarian.",
+    "ベジタブルスープ contains chicken (鶏肉); コールスローサラダ contains wheat and egg.",
+    "No rice-flour or gluten-free bun exists. Every bread item is 小麦・卵・乳.",
+    "Fries and れんこんフライ are wheat-free BY INGREDIENT but share the fryer with wheat-breaded chicken — celiac-unsafe.",
+    "No plant milk on the drinks chart; カフェラテ and カプチーノ are 乳.",
+    "フレバル (the item that carries トマトサラダ) is eat-in only, 16:00 onward, and 「空港店舗及び、一部の店舗では未販売」.",
+    "The chart explicitly excludes self-serve condiments: 「お客様のお好みでご使用いただけるスパイス類・コンディメント類はアレルギー情報に含まれておりません。」",
+    "Regional and limited-time items sit on separate pages of the same PDF and change often (e.g. 宇都宮野菜餃子バーガー = 小麦・乳・牛肉・大豆・鶏肉・豚肉・桃). Re-pull the PDF."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦を使っていないメニューはありますか？パンは全部小麦ですよね。",
+     "romaji": "Komugi o tsukatte inai menyuu wa arimasu ka? Pan wa zenbu komugi desu yo ne.",
+     "en": "Are there any items without wheat? All the buns contain wheat, don't they?"
+    },
+    {
+     "ja": "ポテトは鶏の唐揚げと同じ油で揚げていますか？",
+     "romaji": "Poteto wa tori no karaage to onaji abura de agete imasu ka?",
+     "en": "Are the fries cooked in the same oil as the fried chicken?"
+    },
+    {
+     "ja": "動物性の材料（肉・卵・乳）を使っていない商品はどれですか？",
+     "romaji": "Doubutsusei no zairyou (niku, tamago, nyuu) o tsukatte inai shouhin wa dore desu ka?",
+     "en": "Which items contain no animal ingredients (meat, egg, dairy)?"
+    }
+   ],
+   "sources": [
+    "https://www.freshnessburger.co.jp/pdf/allergy.pdf",
+    "https://www.freshnessburger.co.jp/pdf/sanchi.pdf",
+    "https://www.freshnessburger.co.jp/qa",
+    "https://www.freshnessburger.co.jp/menu/sidemenu",
+    "https://www.freshnessburger.co.jp/menu/frebar",
+    "https://www.freshnessburger.co.jp/brandnews"
+   ],
+   "allergen_page": "https://www.freshnessburger.co.jp/pdf/allergy.pdf",
+   "checked": "2026-08-21"
+  },
+  "jonathans": {
+   "name": "Jonathan's",
+   "name_ja": "ジョナサン",
+   "icon": "🍽️",
+   "gf": {
+    "tier": "limited",
+    "best": "（低アレルゲン）おこさまカレー（ゼリー付き） — the low-allergen kids' curry, over Skylark's plain ライス",
+    "detail": "Skylark runs a per-item allergen search (allergy.skylark.co.jp, brand code 020001) and it is genuinely item-level. Searched for 小麦-free on 2026-08-21, the ONLY savoury dish that comes back on the whole in-store menu is 「（低アレルゲン）おこさまカレー（ゼリー付き）」, which the tool shows free of all 9 mandatory allergens (そば・落花生・小麦・卵・乳・えび・かに・くるみ・カシューナッツ). Skylark's own words: 「食物アレルギーをお持ちのお子様にも外食を楽しんで頂けるよう、低アレルゲンメニューをご用意しています。」 Everything else that returns wheat-free is rice, a side, a drink or a dessert: ライス, 十三穀米, みそ汁, フライドポテト, (トッピング)ほうれん草/コーン/ガーリックチップ, じゃがバター. There is NO wheat-free steak, hamburg, pasta or bread — those categories drop out of the results entirely. Held at 'limited' because Skylark states the item is cooked in the same kitchen with the same tools: 「調理器具、食器、揚げ油、衣（パン粉、てんぷら粉）、食材の保管場所は共有しております」 and 「工場・店舗での加工・盛付の過程で意図せず微量混入する場合を考慮（表示）しておりません。」"
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (at best assemble ライス + (トッピング)ほうれん草 / (トッピング)コーン)",
+    "detail": "There is no plant-based line at Jonathan's and no way to verify one. Skylark publishes only the 9 MANDATORY allergens for this brand — 牛肉・豚肉・鶏肉・ゼラチン・大豆 belong to the 19-item extended list, of which Skylark says 「特定原材料に準ずるものにつきましては、一部ブランドのみ公開をしております」, and Jonathan's is not one of them. So for every dish on this menu the operator publishes no meat, no gelatin and no dashi data at all. Add Skylark's flat refusal to modify a dish and a vegan cannot get a verified meal here. The wheat-free sides that are probably plant-based (spinach, corn, garlic chips, plain rice) remain unverified for chicken extract and dashi."
+   },
+   "both_gf_and_vegan": "NO. The one wheat-free savoury item is a kids' curry with undisclosed meat content, and no dish at this brand has published meat/gelatin data.",
+   "caveats": [
+    "Skylark will NOT remove ingredients on request — 「お客様に、より安全にお食事をお楽しみいただくため、食材を抜くなどの対応はいたしかねますので、あらかじめご了承ください。」 Do not plan on a 'no sauce' order.",
+    "SHARED FRYER, stated outright: 「調理器具、食器、揚げ油、衣（パン粉、てんぷら粉）、食材の保管場所は共有しております」 — the wheat-free フライドポテト comes out of the same oil as breaded items.",
+    "The low-allergen curry is an おこさま (kids') item; Skylark nowhere says an adult may order it (COCO'S explicitly does — Skylark does not).",
+    "Every item page carries 「こちらの商品は取り扱いがない場合がございます」 — check the branch at store-info.skylark.co.jp/?allergy=1&brand=020001",
+    "十三穀米 (13-grain rice) returns as wheat-free, but 麦 (barley) is not a labelled allergen in Japan — assume multigrain rice contains 押麦.",
+    "みそ汁 shows as wheat-free at Jonathan's; barley miso (麦味噌) would not be flagged either. Same caution.",
+    "Table condiments are excluded from the data: 「お客様にお選びいただく商品（小鉢、ソース、ドレッシング等）、お好みでご使用いただく調味料（醤油、タバスコなど）はアレルギー情報に含まれておりません。」 — the table soy sauce is wheat.",
+    "ドリンクバー is not covered at all and 「各種ドリンクは共有の注ぎ口を使用しております」; 麦茶 (barley tea) is a standard drink-bar line."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。（低アレルゲン）おこさまカレーは大人でも注文できますか？",
+     "romaji": "Komugi arerugii desu. (Tei-arerugen) okosama-karee wa otona demo chuumon dekimasu ka?",
+     "en": "I have a wheat allergy. Can an adult order the low-allergen kids' curry?"
+    },
+    {
+     "ja": "アレルギー検索サイトで小麦不使用と出たメニューを注文したいです。",
+     "romaji": "Arerugii-kensaku-saito de komugi-fushiyou to deta menyuu o chuumon shitai desu.",
+     "en": "I'd like to order the item your allergen search lists as wheat-free."
+    }
+   ],
+   "sources": [
+    "https://allergy.skylark.co.jp/scene_irregular?brand=020001",
+    "https://allergy.skylark.co.jp/consideration",
+    "https://corp.skylark.co.jp/sustainability/social/customer/safe_and_secure/allergy.html",
+    "https://store-info.skylark.co.jp/?allergy=1&brand=020001",
+    "https://www.skylark.co.jp/jonathan/menu/"
+   ],
+   "allergen_page": "https://allergy.skylark.co.jp/scene_irregular?brand=020001",
+   "checked": "2026-08-21"
+  },
+  "komeda": {
+   "name": "Komeda's Coffee",
+   "name_ja": "コメダ珈琲店",
+   "icon": "☕",
+   "gf": {
+    "tier": "none",
+    "best": "—",
+    "detail": "No gluten-free FOOD. Komeda's own allergen search, filtered for 小麦 「含まない」, returns 69 drinks, 16 shaved-ice/dessert items and 4 kids drinks — but only 9 'foods', which are 小倉あん, ゆで玉子, ぬる豆乳, 手羽先, butter/margarine, two yoghurts and jam. The signature シロノワール, トースト, 小倉トースト, サンドイッチ, カツパン, ハンバーガー, グラタン and スパゲッティ are all wheat. Komeda states plainly 「揚げ物メニューで使用する揚げ油は、すべて共通のものを使用しています」 — one shared fryer for everything. Not a celiac food option."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "ぬる豆乳 (a glass of warm soy milk) + 小倉あん（モーニング／トーストなし）; or 黒蜜きなこのぜんざい氷",
+    "detail": "IMPORTANT — ordinary Komeda branches are NOT a plant-milk café, and the plant-based sub-brand is a DIFFERENT SHOP. At a normal コメダ珈琲店 you cannot have your coffee with soy: every カフェオーレ, ミルクコーヒー, ホットティー ミルク and ココア is dairy, and Komeda's live menu API still carries a 豆乳 drink category (medium_type 1-2-5) that currently returns ZERO items nationally. The only soy item in the live allergen database is ぬる豆乳 — a plain glass of lukewarm soy milk. Filtering Komeda's own allergen search for no egg/dairy/wheat/beef/chicken/pork/gelatin leaves black coffee, tea, sodas and juices, plus exactly three foods — 小倉あん（モーニング／トーストなし）, ぬる豆乳, いちごジャム — and the shaved-ice range (いちご氷, 宇治抹茶氷, もも太郎氷, アサイーミックス氷, 黒蜜きなこのぜんざい氷). Komeda's famous free モーニング normally arrives as toast plus egg or あん; order the あん as トーストなし. === SEPARATE BRAND === KOMEDA is □ (コメダイズ) is the real plant-based answer, and it is a STANDALONE STOREFRONT, not a menu at ordinary branches — one shop only, KOMEDA is □ 東銀座店 in Chuo-ku, Tokyo (trading since 2020; it is brand_type 5 in Komeda's own system, separate from コメダ珈琲店 = 1). It is a full 「プラントベース（植物由来）の喫茶店」 with its own allergen PDF (updated 2026-07-29) in which EVERY food item shows 卵 and 乳成分 as 「－」. It stocks OAT, ALMOND and SOY: カフェオーツオーレ, オーツミルクコーヒー, アイスアーモンドオーレ, アイスアーモンドミルクコーヒー, ジェリコアーモンドミルク, 豆乳ウインナーコーヒー, and 豆乳クリーム（濃久里夢）in place of dairy 'fresh'. Food includes プラントベース ハンバーグ, 大豆ミートのボロネーゼ, soyハムカツ, a plant-based シロノワール with almond-milk soft-serve, and a plant-based morning toast. It is the one place on this list that matches Starbucks for a vegan — but you must travel to Higashi-Ginza for it."
+   },
+   "both_gf_and_vegan": "At ordinary Komeda: 小倉あん（モーニング／トーストなし）and the 黒蜜きなこのぜんざい氷 shaved ice are each listed wheat-free AND free of every animal allergen — a snack, not a meal, and the fryer is shared. At KOMEDA is □: everything is animal-free but the breads, pancakes and burger buns are 小麦 — plant-based is NOT gluten-free there.",
+   "caveats": [
+    "KOMEDA is □ (コメダイズ) is ONE standalone store in Tokyo (東銀座), NOT a menu available at ordinary Komeda branches — never send a traveller to a normal Komeda expecting it",
+    "Ordinary Komeda cannot make your coffee with soy — the 豆乳 drink category is currently empty; only ぬる豆乳 (plain warm soy milk) exists",
+    "Komeda's allergen search does NOT cover はちみつ (honey) or alcohol — the operator says to check each menu page; シロノワール syrup contains honey",
+    "「揚げ物メニューで使用する揚げ油は、すべて共通のものを使用しています」 — single shared fryer",
+    "At sibling brand おかげ庵 all in-store noodles are boiled in the same pot as そば",
+    "フレッシュ (the little milk pitcher) contains 乳成分 and 大豆 — refuse it",
+    "Even at KOMEDA is □: ingredients are fully plant-derived but animal products share the same equipment and tableware, so cross-contact is possible"
+   ],
+   "phrases": [
+    {
+     "ja": "ぬる豆乳をください。",
+     "romaji": "Nuru-tounyuu o kudasai.",
+     "en": "The warm soy milk, please."
+    },
+    {
+     "ja": "モーニングの小倉あんを、トーストなしでお願いします。",
+     "romaji": "Mooningu no ogura-an o, toosuto nashi de onegai shimasu.",
+     "en": "The morning red-bean paste, without the toast, please."
+    },
+    {
+     "ja": "フレッシュは要りません。",
+     "romaji": "Furesshu wa irimasen.",
+     "en": "No creamer, thank you."
+    },
+    {
+     "ja": "このお店に豆乳のコーヒーはありますか？",
+     "romaji": "Kono omise ni tounyuu no koohii wa arimasu ka?",
+     "en": "Does this branch do coffee with soy milk?"
+    }
+   ],
+   "sources": [
+    "https://www.komeda.co.jp/allergy_check/",
+    "https://eu.komeda.co.jp/v1/hp/allergy/search?brand_id=1&component_flg=false&component_id=1&component_id=2&component_id=3&component_id=14&component_id=18&component_id=19&component_id=24",
+    "https://eu.komeda.co.jp/v1/hp/menu?brand=1",
+    "https://www.komeda-is.com/",
+    "https://www.komeda-is.com/pdf/allergy.pdf",
+    "https://www.komeda-is.com/pdf/menu.pdf"
+   ],
+   "allergen_page": "https://www.komeda.co.jp/allergy_check/",
+   "checked": "2026-08-21"
+  },
+  "kura_sushi": {
+   "name": "Kura Sushi",
+   "name_ja": "くら寿司",
+   "icon": "🐟",
+   "gf": {
+    "tier": "reliable",
+    "best": "Plain nigiri marked 「該当なし」 — 熟成まぐろ / 熟成中とろ / 熟成大とろ / 熟成びんちょうまぐろ, はまち, 熟成真鯛, 超熟成平目, 活〆かんぱち, ほたて, 真たこ, つぶ貝, 赤貝 — on the house shari, with わさび and しょうが, and NO soy sauce",
+    "detail": "Kura publishes the cleanest wheat evidence of any chain in this file. In their own allergen PDF (2026年8月21日現在) the row 「シャリ(合わせ酢)」 is marked 該当なし — the sushi rice AND its vinegar blend contain none of the 26 declared allergens, so the shari question is settled in your favour. 「わさび」, 「しょうが（薬味）」 (the gari), 「酢漬つけ合わせ」 and 「粉末緑茶」 (the free green-tea powder at the table) are ALL 該当なし as well. The plain nigiri listed above carry neither ● nor ▲, and Kura is not being careless with the ▲: they do stamp 小麦 ▲ on 鉄火巻, きゅうり巻 and 納豆, which pick it up from the のり line. So a named, documented, wheat-free plate genuinely exists — white-fish and tuna nigiri, wasabi, ginger, green tea. THE ONE THING THAT RUINS IT is the table soy sauce: the row 「しょうゆ」 is 小麦 ● + 大豆 ●. Do not pour it. Also refuse 「あまだれ」 (the sweet glaze on anago / unagi / 炙り items, 小麦 ●) and 「マヨネーズ」 (小麦 ●), which rules out every えびマヨ, コーン, サラダ and 炙りチーズ item."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "きゅうり巻 + 納豆軍艦 / 納豆一本巻, then 冷んやりフルーツ盛り, カットパイン, 巨峰シャーベット or 夢のベジふわ雪 いちご＆トマト",
+    "detail": "Assemblable and better-signposted than most. きゅうり巻 carries no ingredient allergen at all; 納豆 and 納豆一本巻 carry only 大豆; the shari itself is 該当なし. For dessert 冷んやりフルーツ盛り, 冷んやりマンゴー, カットパイン, 完熟アップルマンゴー, 巨峰シャーベット and 夢のベジふわ雪 いちご＆トマト are all clear of egg / dairy / gelatin, and 米粉クッキー プレーン is 該当なし. Traps: いなり contains さば (dashi) — the item that looks vegan is not; ALL miso soups (純味噌汁, あおさ入り, あさり入り, 天然魚の) carry さば ●; 大学芋スティック contains ゼラチン; 夢のベジふわ雪 グリーンスムージー, despite the 'vege' name, contains 乳成分; 「くら出汁」 itself is 小麦 ● + さば ●."
+   },
+   "both_gf_and_vegan": "Almost. Shari, wasabi, gari, powdered green tea, the 米粉クッキー and the fruit desserts are all wheat-free AND animal-free per the chart — but that is rice and dessert. The cucumber and natto rolls are animal-free yet carry a 小麦 ▲ picked up from the nori line, so a strict celiac vegan is left with shari + wasabi + fruit. Sushiro's きゅうり巻 / 新香巻 carry no wheat flag at all and are the better choice for that specific combination.",
+   "caveats": [
+    "Table soy sauce 「しょうゆ」 is 小麦 ● — the single thing that turns a safe plate unsafe. Bring tamari marked 小麦不使用",
+    "「あまだれ」 (sweet glaze on anago / unagi / 炙り items) and 「マヨネーズ」 both contain wheat",
+    "「くら出汁」 contains wheat + さば — it is in the dashimaki, the udon and the ramen",
+    "のり is ▲小麦 (shared line), which is why 鉄火巻・きゅうり巻・納豆 all pick up a ▲",
+    "Every fried item (からあげ, くらポテト, 天ぷら, コロッケ) has wheat as an INGREDIENT, not merely fryer contact — 天ぷら粉 is 小麦粉",
+    "All miso soups contain さば dashi — not vegan; いなり contains さば too",
+    "Operator hedge: 「加工センター、店舗では多くの商品を扱っているため、意図せず他の食材が混入・付着する場合があります」 and 「ご提供時の状態を保証する物ではございません」",
+    "The web 'allergen search' is really a PDF set at /app/app_allergen.html — carry the PDF offline",
+    "「▲印・・・アレルギー物質を含む製品と同じラインで製造しているもの」 — treat ▲ as a real signal; Kura applies it liberally, which is what makes their 該当なし rows trustworthy"
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。醤油は使いません。わさびだけでお願いします。",
+     "romaji": "Komugi arerugii desu. Shouyu wa tsukaimasen. Wasabi dake de onegai shimasu.",
+     "en": "I have a wheat allergy. I won't use soy sauce — just wasabi, please."
+    },
+    {
+     "ja": "あまだれ（タレ）はかけないでください。",
+     "romaji": "Amadare (tare) wa kakenaide kudasai.",
+     "en": "Please don't put the sweet sauce on it."
+    },
+    {
+     "ja": "アレルゲン表を見せていただけますか？シャリに小麦は入っていますか？",
+     "romaji": "Arerugen-hyou o misete itadakemasu ka? Shari ni komugi wa haitte imasu ka?",
+     "en": "May I see the allergen chart? Does the sushi rice contain wheat?"
+    }
+   ],
+   "sources": [
+    "https://www.kurasushi.co.jp/app/app_allergen.html",
+    "https://www.kurasushi.co.jp/common/pdf/kura_allergen.pdf",
+    "https://www.kurasushi.co.jp/common/pdf/kura_rawmaterial.pdf",
+    "https://www.kurasushi.co.jp/namba_sennichimae/allergen/"
+   ],
+   "allergen_page": "https://www.kurasushi.co.jp/app/app_allergen.html",
+   "checked": "2026-08-21"
+  },
+  "marugame_seimen": {
+   "name": "Marugame Seimen",
+   "name_ja": "丸亀製麺",
+   "icon": "🍜",
+   "gf": {
+    "tier": "none",
+    "best": "— (白ご飯 plain rice, 梅しそおむすび, and the plain 薬味 are the only wheat-free things on the board)",
+    "detail": "Wheat is the business model. The operator states 「丸亀製麺では、全国1軒1軒すべての店で、粉から打ち立ての麺をつくっています」 — every branch mills, kneads and cuts its noodles from flour on the premises, so there is airborne flour and a wheat boil-tank in the room you are standing in. Their own allergen CSV (allergen_260808, dated 2026-08-08) marks 小麦 on EVERY udon, EVERY tempura, and on all four table condiments — だし醤油, 天つゆ, 天丼のタレ, 天ぷらソース. Wheat-free rows do exist but are trivial: 白ご飯, 梅しそおむすび (no listed allergen at all), 梅おむすび / 菜めしおむすび / 高菜おむすび (soy), 鮭おむすび, and the toppings ねぎ・大根おろし・とろろ・わかめ・すだち・おろし生姜・わさび・七味・すりごま・温泉玉子・生玉子. That is a rice ball, not a meal, eaten in a flour cloud. The honest answer for a celiac is: walk past."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "梅しそおむすび (or 菜めし / 高菜おむすび) + 白ご飯 + free 薬味 (ねぎ, 大根おろし, わかめ, すだち)",
+    "detail": "No vegan hot dish exists. The dashi is fish: かけ / ぶっかけ / 釜揚げ / ざる / きつね all carry さば ● in the operator's own table, so every noodle bowl and every つゆ is out, as are とり飯, 親子丼 and カツ丼. What works is the rice counter: 梅しそおむすび shows NO listed allergen; 梅おむすび, 菜めしおむすび and 高菜おむすび show only 大豆 (plus sesame); 白ご飯 is clean. Toppings ねぎ, 大根おろし, とろろ, わかめ, すだち are clean. Trap: しそわかめおむすび contains 乳 + ゼラチン — it is not vegan despite the name — and いなり / こんぶ / 明太子 / ごましば onigiri all contain wheat (soy sauce)."
+   },
+   "both_gf_and_vegan": "Technically yes — 白ご飯 or 梅しそおむすび plus ねぎ / 大根おろし / わかめ / すだち is both wheat-free and animal-free per the operator's chart. But it is assembled at a counter where noodles are cut from flour all day, so it is wheat-AVOIDANCE, not celiac safety.",
+   "caveats": [
+    "Noodles are made from flour IN EVERY STORE — airborne flour, not merely a shared kitchen",
+    "All four table condiments contain wheat: だし醤油, 天つゆ, 天丼のタレ, 天ぷらソース",
+    "「※すべての天ぷらを同じフライヤーで調理しております」 — one fryer for every tempura, every fry and the うどーなつ doughnut",
+    "天かす (free tempura scraps, often self-serve) carries the allergens of EVERYTHING in that fryer — never let it near your bowl",
+    "Dashi contains さば — no udon broth is vegan, and 'vegetable' tempura is battered in wheat + egg",
+    "しそわかめおむすび contains dairy and gelatin; きつねあげ and 明太子 contain wheat",
+    "Operator hedge: 「商品に使用していない原材料であっても、店舗の厨房や原材料の製造工場では、器具や設備が共有されている場合があるため、それらのアレルギー物質が接触する可能性があります」"
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。うどんは食べられません。白ご飯とおむすびはありますか？",
+     "romaji": "Komugi arerugii desu. Udon wa taberaremasen. Shiro-gohan to omusubi wa arimasu ka?",
+     "en": "I have a wheat allergy, so I can't eat udon. Do you have plain rice and rice balls?"
+    },
+    {
+     "ja": "梅しそおむすびに動物性の材料は入っていますか？",
+     "romaji": "Ume-shiso omusubi ni doubutsusei no zairyou wa haitte imasu ka?",
+     "en": "Does the ume-shiso rice ball contain any animal ingredients?"
+    },
+    {
+     "ja": "天かすは入れないでください。",
+     "romaji": "Tenkasu wa irenaide kudasai.",
+     "en": "Please don't add the tempura scraps."
+    }
+   ],
+   "sources": [
+    "https://jp.marugame.com/menu/allergic/",
+    "https://files.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/6746653f31584be4811b7c3227a6cc20/allergen_260808.csv",
+    "https://jp.marugame.com/concept/udon/",
+    "https://jp.marugame.com/menu/gohanmono/"
+   ],
+   "allergen_page": "https://jp.marugame.com/menu/allergic/",
+   "checked": "2026-08-21"
+  },
+  "matsuya": {
+   "name": "Matsuya",
+   "name_ja": "松屋",
+   "icon": "🍱",
+   "gf": {
+    "tier": "limited",
+    "best": "牛焼肉定食 (Grilled Beef Set, ¥890) — Matsuya's own item page prints 小麦「－」. Also 豚ロース焼肉定食 ¥790 and the low-carb 牛焼肉生野菜セット, all 小麦「－」.",
+    "detail": "This is the strongest gluten result of the four gyūdon chains, and it is a complete hot meal, not a side plate. Matsuya publishes a per-item 28-allergen table (updated 2026年8月18日) AND repeats it on every product page; both show 牛焼肉定食 as 小麦－ / 大豆○ / 牛肉○ / 鶏肉△ / 豚肉△. Critically, Matsuya notes 「メインメニューにはみそ汁の栄養成分も含まれております」 — the free dine-in miso soup is already inside that row, and みそ汁 on its own is 大豆○ and nothing else. So 牛焼肉定食 = grilled beef + rice + miso soup, wheat-free by ingredient. THE DISTINCTION MATTERS AND IS EASY TO GET WRONG: 牛めし (the gyudon) is 小麦○, 松屋の牛焼肉丼 — the same beef in a bowl — is 小麦○ because the bowl gets a sauce, and カルビ焼肉定食 is 小麦○ from the カルビソース. Only the plain 焼肉 定食 is clean. Also wheat-free: ライス, 生野菜 (zero allergens; cabbage + sweetcorn), みそ汁, 豚汁, 冷奴, お新香, 国産とろろ, 鬼おろし, 焼きのり, 青ネギ, 富士山キムチ, '炙り'焼鮭, 生玉子/半熟玉子, ソーセージエッグ, 紅生姜, 七味, and the whole モーニング line (ソーセージエッグ定食, 豚汁朝定食, '炙り'焼鮭朝定食, Wで選べる玉子かけごはん). Rated limited not reliable because nothing is sealed and Matsuya states 「調理の過程上、アレルギー物質の二次混入をすべて防ぐことはできません」."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "ライス + 冷奴 (cold tofu) + 生野菜 + お新香 + 鬼おろし + 国産とろろ",
+    "detail": "No plant-based item is sold. There is no ベジ/プラントベース line on the Matsuya menu as of 2026-08-21, and the group's curry brand マイカリー食堂 (co-located inside many Matsuya branches) has no vegan curry either. But Matsuya has the widest set of animal-free sides of the four: 冷奴 (大豆○ ごま○ only), 生野菜 (zero allergens — 原産地 page confirms it is just cabbage and sweetcorn), 鬼おろし (zero allergens), お新香 (りんご○ only), 国産とろろ (やまいも○ only), 青ネギ, 焼きのり, ライス, 紅生姜. Of the counter bottles only フレンチドレッシング is free of egg/dairy (大豆○ りんご○); ごまドレッシング contains egg. UNVERIFIABLE RISK: dashi and かつお節 are not among Japan's 28 allergens, so the miso soup and any tofu tare cannot be cleared — treat みそ汁 as non-vegan. HARD TRAP: 豆乳ぷりん ('soy-milk pudding') looks vegan and is not — the table lists ゼラチン○."
+   },
+   "both_gf_and_vegan": "YES — genuinely, and this is the only one of the four gyūdon chains where it works. ライス + 冷奴 + 生野菜 + お新香 + 鬼おろし + 国産とろろ are ALL 小麦「－」 and all free of every animal allergen on Matsuya's own table. It is a cold plate rather than a hot meal, and dashi in any tofu tare stays unverifiable, but it is a real order.",
+   "caveats": [
+    "牛めし (the gyudon) is 小麦○ — wheat from the soy-sauce tare. Only the 焼肉 DEFINED AS 定食 is wheat-free.",
+    "松屋の牛焼肉丼 and カルビ焼肉定食 are both 小麦○. Same beef, different sauce. Order 牛焼肉定食 by name.",
+    "Every counter tare except French dressing contains wheat: 醤油, ポン酢だれ, バーベキューだれ, 焼肉のタレ甘口（カルビソース）, ごまドレッシング. Use salt and 紅生姜 only.",
+    "豆乳ぷりん contains ゼラチン — soy-milk pudding is not vegan.",
+    "納豆（ネギ付）is 小麦○ from its tare; ポテサラ and 炙りチーズポテト are 小麦○.",
+    "ブレンド茶 is on the drink list — Japanese blend teas commonly contain 大麦/はと麦 (barley = gluten), which the 28-item table can never show. Unconfirmed; avoid if reactive.",
+    "Matsuya's miso soup is 大豆 only (no 麦味噌, no 麩) but will contain dashi — wheat-free, not vegan.",
+    "Matsuya states outright that secondary contamination during cooking cannot be fully prevented."
+   ],
+   "phrases": [
+    {
+     "ja": "牛焼肉定食をください。タレとソースは全て抜いてください。小麦アレルギーです。",
+     "romaji": "Gyuu-yakiniku teishoku o kudasai. Tare to soosu wa subete nuite kudasai. Komugi arerugii desu.",
+     "en": "The Grilled Beef Set Meal, please — no tare, no sauce at all. I have a wheat allergy."
+    },
+    {
+     "ja": "牛めしではなく、牛焼肉「定食」です。丼のほうは小麦が入っています。",
+     "romaji": "Gyuumeshi de wa naku, gyuu-yakiniku 'teishoku' desu. Donburi no hou wa komugi ga haitte imasu.",
+     "en": "Not the beef bowl — the grilled beef SET MEAL. The bowl version contains wheat."
+    },
+    {
+     "ja": "冷奴・生野菜・お新香・とろろ・ライスをください。動物性の材料は食べられません。",
+     "romaji": "Hiyayakko, namayasai, oshinko, tororo, raisu o kudasai. Doubutsusei no zairyou wa taberaremasen.",
+     "en": "Cold tofu, raw vegetables, pickles, grated yam and rice, please. I can't eat animal ingredients."
+    },
+    {
+     "ja": "冷奴のタレにだしは入っていますか？",
+     "romaji": "Hiyayakko no tare ni dashi wa haitte imasu ka?",
+     "en": "Does the tofu's sauce contain fish stock (dashi)?"
+    }
+   ],
+   "sources": [
+    "https://www.matsuyafoods.co.jp/matsuya/safety/allergen.html",
+    "https://www.matsuyafoods.co.jp/matsuya/menu/teishoku/tei_gyuuyaki_hp_250422.html",
+    "https://www.matsuyafoods.co.jp/matsuya/menu/teishoku/tei_porkloin_hp_260630.html",
+    "https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/index.html",
+    "https://www.matsuyafoods.co.jp/matsuya/safety/gensanchi.html",
+    "https://www.matsuyafoods.co.jp/mycurry/menu/top_heisetsu_matsuya.html"
+   ],
+   "allergen_page": "https://www.matsuyafoods.co.jp/matsuya/safety/allergen.html",
+   "checked": "2026-08-21"
+  },
+  "nakau": {
+   "name": "Nakau",
+   "name_ja": "なか卯",
+   "icon": "🥚",
+   "gf": {
+    "tier": "limited",
+    "best": "お子様カレー丼ぶり (kids' curry bowl — 豚肉● and nothing else). Otherwise ライス + 銀鮭（単品） + 彩り野菜サラダ + 紅生姜.",
+    "detail": "The most hostile kitchen of the four, and the only one where even the miso soup fails. Nakau's own アレルゲン一覧表 (Zensho, 更新日2026年8月19日) shows 小麦「●」 on every 丼 (牛すき丼, 親子丼, カツ丼, 牛とじ丼, 鶏から丼, まぐろ丼, うな重), every 和風カレー, both 定食, all four 朝食 — AND on みそ汁 #91 (小麦●・さば●・大豆●), つけもの #84, のり #102, 納豆 #100, きつねあげ #108 and 旨だし醤油. Nakau is also an udon/soba house, and the sheet carries two disclosures the other three do not: 「うどんとそばを同じ調理器具（湯）で茹でております」 (udon and soba boiled in the same water) and 「揚げ物は同一の揚げ油を使用して調理しております」 (one shared fryer). A reactive celiac is standing in a room where wheat noodles are boiled continuously. What IS wheat-free on the sheet: お子様カレー丼ぶり #122 — the entire 28-column row is dashes except 豚肉● (a low-allergen kids' roux; the adult 和風カレー #32 is 小麦●); ライス #88 and 彩り野菜サラダ #93 and 紀州南高梅 #115 and すだち #117 and 紅生姜 and 山椒 (zero of 28); 銀鮭（単品）#101 (さけ●さば△); とろろ（単品）#99 (やまいも● only); こだわり卵/温たま #89-90; ベーコン #87; 追加チーズ #111. 具だくさんとん汁 #92 is 小麦△ (cross-contact only), unlike the plain miso soup."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (at best ライス + 彩り野菜サラダ + とろろ + 紀州南高梅 + すだち + 紅生姜)",
+    "detail": "Nothing plant-based is sold and no tofu dish exists on the menu. The only rows carrying no animal allergen are ライス, 彩り野菜サラダ, 紀州南高梅, すだち, 紅生姜, 山椒 and とろろ（単品）. Everything that would make a meal is built on animal stock or egg: 親子丼 is Nakau's signature and is chicken and egg; the うどん/そば tsuyu is 小麦・さば; きつねあげ (the vegetarian-looking fried tofu pouch) is 小麦●大豆● and is simmered in dashi; and かつお節オクラ is literally bonito flakes despite its blank allergen row — a perfect illustration that dashi and かつお節 are invisible to Japan's 28-item list. No vegan should plan a meal here."
+   },
+   "both_gf_and_vegan": "Only as a side plate: ライス + 彩り野菜サラダ + とろろ + 紀州南高梅 + すだち + 紅生姜 are all wheat-free and all free of every listed animal allergen. It is not a meal, and it is assembled in a kitchen that boils soba. The wheat-free お子様カレー丼ぶり contains pork.",
+   "caveats": [
+    "Every 丼, every うどん, every そば, both 定食 and all four 朝食 are 小麦● — wheat as an ingredient.",
+    "Nakau's みそ汁 is 小麦● — unlike Sukiya, Matsuya and Yoshinoya, whose miso soups are wheat-free. Do not assume miso soup is safe here.",
+    "「うどんとそばを同じ調理器具（湯）で茹でております」 — udon and soba share the same boiling water. A gluten-heavy kitchen by design.",
+    "「揚げ物は同一の揚げ油を使用して調理しております」 — one shared fryer (海老天ぷら, 鶏から).",
+    "つけもの (the pickles) and のり and 納豆 are all 小麦●. 旨だし醤油 at the counter is 小麦●大豆●.",
+    "紅生姜, 山椒, 紀州南高梅 and すだち carry none of the 28 allergens — the clean condiments.",
+    "かつお節オクラ shows a blank allergen row but is bonito flakes. Blank ≠ vegan: かつお節 and dashi are not listed allergens in Japan.",
+    "お子様カレー丼ぶり is a children's item; the SET version (#128) is 小麦△ because of what comes with it."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。うどんとそばを同じ湯で茹でていますか？",
+     "romaji": "Komugi arerugii desu. Udon to soba o onaji yu de yudete imasu ka?",
+     "en": "I have a wheat allergy. Are the udon and soba boiled in the same water?"
+    },
+    {
+     "ja": "ライスと銀鮭の単品と彩り野菜サラダをください。みそ汁は小麦が入っているので抜いてください。",
+     "romaji": "Raisu to ginzake no tanpin to irodori-yasai sarada o kudasai. Misoshiru wa komugi ga haitte iru node nuite kudasai.",
+     "en": "Rice, the single grilled salmon and the vegetable salad, please. No miso soup — it contains wheat."
+    },
+    {
+     "ja": "お子様カレー丼ぶりは小麦不使用と表示されています。注文できますか？",
+     "romaji": "Okosama-karee donburi wa komugi-fushiyou to hyouji sarete imasu. Chuumon dekimasu ka?",
+     "en": "The kids' curry bowl is listed as wheat-free. May I order it?"
+    },
+    {
+     "ja": "だしやかつお節が入っていない料理はありますか？",
+     "romaji": "Dashi ya katsuobushi ga haitte inai ryouri wa arimasu ka?",
+     "en": "Is there anything with no dashi or bonito flakes in it?"
+    }
+   ],
+   "sources": [
+    "https://images.zensho.co.jp/materials/nakau/allergen/allergen.pdf",
+    "https://images.zensho.co.jp/materials/nakau/allergen/foreign_menu.pdf",
+    "https://www.nakau.co.jp/jp/menu/index.html",
+    "https://www.nakau.co.jp/jp/index.html"
+   ],
+   "allergen_page": "https://images.zensho.co.jp/materials/nakau/allergen/allergen.pdf",
+   "checked": "2026-08-21"
+  },
+  "ootoya": {
+   "name": "Ootoya",
+   "name_ja": "大戸屋ごはん処",
+   "icon": "🐟",
+   "gf": {
+    "tier": "limited",
+    "best": "Order À LA CARTE, never the 定食: ミニしまほっけの炭火焼き (mini charcoal-grilled hokke — allergen table lists NOTHING) + ご飯 (plain white rice — lists nothing) + 味噌汁 (lists 大豆 only)",
+    "detail": "Ootoya publishes a real per-store 28-item allergen table, and it produces an unusually clean wheat-free plate — but ONLY if you build it yourself from single items. The composed 定食 sets are all 小麦: しまほっけの炭火焼き定食 = 小麦・ごま・大豆, さばの炭火焼き = 小麦・ごま・さば・大豆, メヌケ西京漬け = 小麦・大豆. The wheat is in the accompaniments, not the fish: 千切りキャベツ (the shredded-cabbage side, with its dressing) is itself 小麦・大豆. Strip them and the operator's own table shows ミニしまほっけの炭火焼き with no listed allergen at all, ご飯 with none, and 味噌汁 with 大豆 only — i.e. Ootoya's PLAIN miso soup is wheat-free, which is rare. Yes, plain salt-grilled fish is orderable — as the ミニ side. What kills the 'reliable' tier: Ootoya refuses all allergy accommodation in writing (「アレルギーによる調理方法の変更や、別の食材に変更するなどのご要望は受けておりません。」), and admits 「厨房器具、食器、茹で麺機、及び揚げ油は共有して使用しております。」 — utensils, crockery, the noodle boiler and the fryer oil are all shared, and they warn 「厨房内では、調理工程において意図せず使用食材に含まれないアレルギー物質が混入する場合があります。」 There is no sealed/low-allergen product line. Wheat-avoidance with excellent documentation, not a celiac guarantee."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (at best assemble ご飯 + ひんやり豆腐 + めかぶ, and accept an unquantified dashi risk)",
+    "detail": "The operator states it outright: 「大戸屋では現在、ヴィーガン・ベジタリアンの方向けの商品は展開しておりません。」 (FAQ Q6). There is no plant-based line, no soy patty, no vegetarian set. Items whose allergen rows look clean — ひんやり豆腐 (大豆), めかぶ (none), 明太子 (none, and it is fish roe), 大戸屋節 (none, and it is katsuobushi) — prove nothing about vegan status, because 鰹だし and 煮干し are NOT labelled allergens in Japan and are invisible in this table. Almost every side is finished with a dashi- or bonito-based tare. Combined with a blanket refusal to modify dishes, there is no defensible vegan meal here."
+   },
+   "both_gf_and_vegan": "NO. The wheat-free plate is grilled fish; there is no vegan item at all, by the operator's own statement.",
+   "caveats": [
+    "麦 TRAP — the allergen table CANNOT show barley. たっぷり野菜の麦みそ汁 and 麦みそ冷や汁 are made with 麦みそ (BARLEY miso) and are full of gluten, yet their allergen rows read only さば・大豆 / ごま・さば・大豆. Never order anything with 麦 in the name.",
+    "五穀ご飯 (multigrain rice) contains BARLEY — the item page says so explicitly: 「五穀ご飯には「ごま・大麦」が含まれます。」 Order plain 白米 (ご飯) instead. The table also notes 定食 allergens are quoted for the 白米 version only.",
+    "Ootoya refuses ALL allergy-driven changes: 「特定の食材、調味料等の変更のご要望はお受けできません。」 You cannot ask for a set without the cabbage — you must order the components separately.",
+    "Shared utensils, crockery, noodle boiler and fryer oil, per the operator. Anything 揚げ / 竜田 / かつ / フライ is celiac-unsafe by cross-contact regardless of its row.",
+    "Note the reversal on takeout: ミニしまほっけの炭火焼き lists NO allergens on the dine-in side menu but 小麦・大豆 in the 弁当 section — the bento version is not the same product. Check the section you are ordering from.",
+    "The allergen table is PER STORE (URL ends in the shop ID) and menus differ by branch — pull your own branch's table from the store's menu page.",
+    "Table-top 醤油 and seasonings are excluded from the allergen figures and are wheat.",
+    "とろろ looks harmless but is 小麦・さば・大豆・やまいも (dashi-shoyu). 納豆 here is 大豆 only, which is unusual — but the ちりめん/tare varies."
+   ],
+   "phrases": [
+    {
+     "ja": "定食ではなく、単品でお願いします。ミニしまほっけの炭火焼きと、ご飯と、味噌汁をください。",
+     "romaji": "Teishoku de wa naku, tanpin de onegai shimasu. Mini shimahokke no sumibiyaki to, gohan to, misoshiru o kudasai.",
+     "en": "Not the set — à la carte please. The mini grilled hokke, plain rice, and miso soup."
+    },
+    {
+     "ja": "小麦アレルギーです。麦みそのお味噌汁と五穀ご飯は大麦が入っているので避けたいです。",
+     "romaji": "Komugi arerugii desu. Mugimiso no omisoshiru to gokoku-gohan wa oomugi ga haitte iru node saketai desu.",
+     "en": "I have a wheat allergy. I need to avoid the barley-miso soup and the multigrain rice — they contain barley."
+    },
+    {
+     "ja": "千切りキャベツとドレッシングは抜いていただけますか？",
+     "romaji": "Sengiri kyabetsu to doresshingu wa nuite itadakemasu ka?",
+     "en": "Could I have it without the shredded cabbage and dressing?"
+    }
+   ],
+   "sources": [
+    "https://www.ootoya.com/menu_list/info/allergy/27194",
+    "https://www.ootoya.com/menu_about/",
+    "https://www.ootoya.com/faq/",
+    "https://www.ootoya.com/menu_list/view/27194/1308",
+    "https://www.ootoya.com/menu_info/place_of_origin/",
+    "https://www.ootoya.com/menu"
+   ],
+   "allergen_page": "https://www.ootoya.com/menu_list/info/allergy/27194",
+   "checked": "2026-08-21"
+  },
+  "ringer_hut": {
+   "name": "Ringer Hut",
+   "name_ja": "リンガーハット",
+   "icon": "🍲",
+   "gf": {
+    "tier": "none",
+    "best": "— (ごはん + 胡瓜漬け / 漬物（ぶらぶら漬け） and nothing else)",
+    "detail": "THERE IS NO GLUTEN-FREE LINE — checked 2026-08-21, and this is the finding. It is not in-store and it is not mail-order: no gluten-free or rice-flour item appears in the live allergen table (dated 2026/8/1), none exists in the official online shop rhk-shopping.jp, no URL on ringerhut.jp has ever contained 'gluten' (checked against the full Wayback index of the domain), and there is no press release announcing one. Two things get mistaken for it. (1) 低糖質麺 — a LOW-CARB noodle, genuinely available in-store as a swap on most champon; the operator's own chart marks it 小麦 ● (「低糖質麺長崎ちゃんぽん ●」). It is a wheat noodle with less starch. (2) The gyoza skin, sold as 「国産皮（小麦粉・米粉）使用」 — a wheat-AND-rice-flour blend, exactly the MOS Burger bun trap. On the live chart the only rows without a 小麦 ● are ごはん（100gあたり）, 胡瓜漬け, 漬物（ぶらぶら漬け）, 塩タレ, ゆず胡椒 and ちゃんぽんドレッシング — and every one still carries △ for shared equipment. Every ちゃんぽん, every 皿うどん, ぎょうざ, チャーハン, まぜめん, every sauce and even ぎょうざのタレ is wheat."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (ごはん + 胡瓜漬け at most)",
+    "detail": "Nothing. Even the vegetable-forward items are pork-and-shellfish stock. The operator's own supplement PDF states 「長崎ちゃんぽん類のスープ、長崎皿うどん類（太めん皿うどん含む）のスープ、豚肉を炒める調味料には「豚」アレルゲンが含まれています」 and 「長崎ちゃんぽん類、長崎皿うどん（太めん皿うどん含む）類、冷やしちゃんぽん、かきちゃんぽん、つけ麺、まぜめん、チャーハンには魚介エキス（あさり・ホタテ・牡蠣等）を使用しております」. 野菜たっぷりちゃんぽん — the signature 'loads of vegetables' bowl — and 野菜たっぷり食べるスープ both carry 豚 ●. The 「モグベジ食堂」 rebrand is vegetable-forward positioning (「元気な野菜食ダイニング」), NOT a vegan menu; do not read it as one."
+   },
+   "both_gf_and_vegan": "NO. Neither exists separately, so there is nothing to combine.",
+   "caveats": [
+    "低糖質麺 is LOW-CARB, not gluten-free — the operator's own chart marks it 小麦 ●",
+    "The gyoza skin 「小麦粉・米粉」 is a wheat/rice blend — 'rice flour' on a Ringer Hut label means nothing",
+    "All champon and sara-udon soups contain pork AND shellfish extract (あさり・ホタテ・牡蠣)",
+    "長崎ちゃんぽん noodles and soup also contain 乳 (dairy) per the supplement PDF",
+    "「モグベジ食堂」 = vegetable-forward branding, not vegan",
+    "野菜たっぷり食べるスープ — the healthiest-looking item on the board — is wheat AND pork",
+    "Operator hedge: 「本来はその商品に使わない食材が調理時に調理器具を共有する場合がありますので、接触する可能性があり絶対的なものではありません」"
+   ],
+   "phrases": [
+    {
+     "ja": "低糖質麺はグルテンフリーですか？小麦は使っていますか？",
+     "romaji": "Tei-toushitsu-men wa guruten-furii desu ka? Komugi wa tsukatte imasu ka?",
+     "en": "Is the low-carb noodle gluten-free? Does it use wheat?"
+    },
+    {
+     "ja": "小麦を使っていない料理はありますか？",
+     "romaji": "Komugi o tsukatte inai ryouri wa arimasu ka?",
+     "en": "Are there any dishes that use no wheat?"
+    },
+    {
+     "ja": "スープに豚肉や魚介のエキスは入っていますか？",
+     "romaji": "Suupu ni butaniku ya gyokai no ekisu wa haitte imasu ka?",
+     "en": "Does the soup contain pork or seafood extract?"
+    }
+   ],
+   "sources": [
+    "https://www.ringerhut.jp/quality/allergy-nutrition_value/",
+    "https://www.ringerhut.jp/quality/allergy-nutrition_value/pdf/allergy-nutrition_value_22.pdf",
+    "https://www.ringerhut.jp/quality/allergy-nutrition_value/pdf/allergy-nutrition-additional.pdf",
+    "https://www.ringerhut.jp/moguvege/",
+    "https://www.rhk-shopping.jp/"
+   ],
+   "allergen_page": "https://www.ringerhut.jp/quality/allergy-nutrition_value/",
+   "checked": "2026-08-21"
+  },
+  "st_marc": {
+   "name": "St. Marc Café",
+   "name_ja": "サンマルクカフェ",
+   "icon": "🥐",
+   "gf": {
+    "tier": "none",
+    "best": "—",
+    "detail": "No gluten-free FOOD, and the clearest 'no' of the four. The chain exists to sell the チョコクロ (chocolate croissant); the サンド, パン, パスタ and ドリア categories are wheat end to end. Filtering Saint Marc's own allergen tool for items containing no wheat/egg/dairy/shrimp/crab/beef/salmon/mackerel/chicken/pork/gelatin returns 55 results, and every one is a drink, an alcohol, a sugar or a retail item — except a single food, はちみつそらまめ (honey-coated broad beans). Their table carries the standard hedge 「器具等の共有により他の特定原材料が微量混入するおそれがあります」. Not a celiac food option."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (black coffee, tea, ゆず茶 or apple juice only)",
+    "detail": "The one chain here that fails a vegan outright. Saint Marc Café stocks NO plant milk of ANY kind: their complete allergen table (カフェメニュー別 カロリー・栄養成分・アレルゲン一覧表, last updated 2026-08-21) contains zero occurrences of 豆乳, オーツミルク or アーモンドミルク, and every カフェラテ, ロイヤルミルクティー, ほうじ茶ラテ, 抹茶ラテ and キャラメルマキアート is dairy. There is no soy option, no swap, and no surcharge to pay — it simply does not exist. There is also no plant-based food: of the 55 animal-allergen-free items the only edible one, はちみつそらまめ, contains HONEY. What is left for a vegan is サンマルクブレンド / アメリカン (black coffee), 紅茶 / べにふうき和紅茶 (black tea), ゆず茶, and アップルジュース. Treat this chain as a place to sit, not a place to eat or to get a latte."
+   },
+   "both_gf_and_vegan": "NO. No GF food and no vegan food. The only wheat-free food in the entire catalogue, はちみつそらまめ, contains honey.",
+   "caveats": [
+    "NO plant milk at all — no soy, no oat, no almond. Every latte / au lait / milk tea is dairy",
+    "The only animal-allergen-free FOOD in the whole catalogue, はちみつそらまめ, contains honey",
+    "Signature チョコクロ = wheat + dairy + egg",
+    "TRAP: クラムチャウダー is listed under ホットドリンク — it is a shellfish soup, not a drink",
+    "Dessert and smoothie range is dairy-heavy (練乳, ハーゲンダッツ, チーズケーキ風クリーム)",
+    "Allergen data excludes cross-contamination: 「器具等の共有により他の特定原材料が微量混入するおそれがあります」"
+   ],
+   "phrases": [
+    {
+     "ja": "豆乳やオーツミルクはありますか？",
+     "romaji": "Tounyuu ya ootsu-miruku wa arimasu ka?",
+     "en": "Do you have soy or oat milk? (the answer here is no)"
+    },
+    {
+     "ja": "ブレンドコーヒーをブラックでください。",
+     "romaji": "Burendo-koohii o burakku de kudasai.",
+     "en": "A blend coffee, black, please."
+    }
+   ],
+   "sources": [
+    "https://www.saint-marc-hd.jp/allergy_check/brand/04-O-A/",
+    "https://www.saint-marc-hd.jp/allergy_check/files/co/allergen/alle_cafe.pdf",
+    "https://www.saint-marc-hd.jp/allergy_check/brand/04-O-A/search/?contain=0&category=all",
+    "https://www.saint-marc-hd.com/saintmarc/menu/"
+   ],
+   "allergen_page": "https://www.saint-marc-hd.jp/allergy_check/brand/04-O-A/",
+   "checked": "2026-08-21"
+  },
+  "subway": {
+   "name": "Subway",
+   "name_ja": "サブウェイ",
+   "icon": "🥪",
+   "gf": {
+    "tier": "limited",
+    "best": "ベジーデライト as a SALAD (サラダ, ¥760) — no bread — dressed with オイル＆ビネガー and 塩・こしょう only",
+    "detail": "The bun defeats a celiac completely: all four breads (ホワイト / ウィート / セサミ / ハニーオーツ) are 小麦 and there is no gluten-free bread in Japan. What saves Subway is that サラダ is a full menu CATEGORY — every sandwich is orderable as a bowl with the bread simply omitted. Subway's component-level allergen PDF (更新版 2026年7月22日) breaks each product into its parts, and the ベジーデライト salad's parts are: レタス・トマト・ピーマン・オニオン (all rows blank), オイル＆ビネガー (all rows blank — rapeseed oil + vinegar), 塩・こしょう (all rows blank). Accent vegetables ピクルス, オリーブ, ホットペッパー are likewise clean. That is a genuinely wheat-free composed item, documented ingredient by ingredient — better evidence than most of this dataset. What holds it to 'limited' rather than 'reliable' is where it is made: the same gloved hands, tongs and counter that handle bread all day, and the operator says so — 「製造工場内や、店舗での調理中に他の商品の原材料由来のアレルゲンの付着や混入(コンタミネーション)が発生することがあり、商品別アレルゲン情報は絶対的なものではありません。」 Ask for fresh gloves and a bowl straight from the stack. The default dressing traps: 野菜クリーミードレッシング is 小麦 AND 卵, マヨネーズタイプ is 卵, てり焼きソース is 小麦, バジルソース is 小麦, ケチャップ is 小麦. Only オイル＆ビネガー and 塩・こしょう are clean."
+   },
+   "vegan": {
+    "tier": "reliable",
+    "best": "ベジーデライト サラダ (¥760, 33 kcal) with オイル＆ビネガー + 塩・こしょう — lettuce, tomato, green pepper, onion, oil, vinegar, salt, pepper and nothing else",
+    "detail": "There is NO plant-based patty at Subway Japan — no プラントベース, no 大豆ミート, nothing of the kind anywhere in the 2026 allergen documentation; the only protein-free item is the vegetables themselves. But the ベジーデライト is not a token: the operator's own component table lists the whole item as vegetables plus oil, vinegar, salt and pepper, with no dairy, egg, meat, fish or honey component, and Subway lets you add unlimited free base vegetables and paid accent vegetables (オリーブ, ピクルス, ホットペッパー) at no dietary cost. It is animal-free by construction rather than by claim — Subway Japan makes no vegan certification and there is no plant milk in the drinks line. Two traps: order it as a SALAD (the sandwich version's bread is 卵-free but the sandwich still comes on wheat), and refuse the recommended toppings, which are たまご / チーズ / ベーコン. アボカドベジー looks like the vegan upgrade but its default 野菜クリーミードレッシング carries 小麦・卵・乳 — swap that dressing to オイル＆ビネガー and the avocado version works too."
+   },
+   "both_gf_and_vegan": "CLOSEST YES IN THIS FILE — ベジーデライト サラダ with oil & vinegar is animal-free AND wheat-free by ingredient, in one order, at a chain in every station. Treat it as fully vegan and as wheat-AVOIDANCE for a reactive celiac: it is assembled at a bread counter and Subway disclaims cross-contact in writing.",
+   "caveats": [
+    "Say サラダで (as a salad) or you get wheat bread — all four breads are 小麦, and there is no GF bread in Japan.",
+    "Only オイル＆ビネガー and 塩・こしょう are clean. 野菜クリーミードレッシング = 小麦・卵・乳/大豆; マヨネーズタイプ, シーザードレッシング = 卵; てり焼きソース, バジルソース, ケチャップ = 小麦.",
+    "The recommended toppings on ベジーデライト are たまご, チーズ, ベーコン — decline all of them.",
+    "Assembled on a shared bread counter with shared gloves and tongs; the operator explicitly disclaims コンタミネーション. Ask for glove change: not celiac-certified.",
+    "アボカドベジー's default dressing is the wheat-and-egg 野菜クリーミードレッシング — request オイル＆ビネガー instead.",
+    "No plant-based patty and no plant milk at Subway Japan as of the 2026-07-22 allergen edition.",
+    "Subway Japan is now run by ワタミ (WATAMI FAST CASUAL MANAGEMENT); menus and prices have been moving — re-pull the PDF.",
+    "Subway labels 32 items (the 28 plus 羊・魚・貝・アルコール) and will not answer about anything outside that list: 「上記28品目と『羊・魚・貝・アルコール』の4品目以外については、正確な情報がございませんので店舗ではお答えできません。」"
+   ],
+   "phrases": [
+    {
+     "ja": "ベジーデライトをサラダでください。パンは要りません。",
+     "romaji": "Bejii-deraito o sarada de kudasai. Pan wa irimasen.",
+     "en": "A Veggie Delight as a salad, please — no bread."
+    },
+    {
+     "ja": "ドレッシングはオイル＆ビネガーと塩・こしょうだけでお願いします。他のソースは入れないでください。",
+     "romaji": "Doresshingu wa oiru ando binegaa to shio-koshou dake de onegai shimasu. Hoka no soosu wa irenaide kudasai.",
+     "en": "Oil & vinegar and salt & pepper only, please — no other sauces."
+    },
+    {
+     "ja": "小麦アレルギーです。手袋を新しいものに替えていただけますか？",
+     "romaji": "Komugi arerugii desu. Tebukuro o atarashii mono ni kaete itadakemasu ka?",
+     "en": "I have a wheat allergy — could you change to fresh gloves?"
+    }
+   ],
+   "sources": [
+    "https://www.subway.co.jp/menu/allergy/",
+    "https://www.subway.co.jp/documents/pdf/allergy.pdf",
+    "https://www.subway.co.jp/documents/pdf/eiyo.pdf",
+    "https://www.subway.co.jp/menu/veggie-delight/",
+    "https://www.subway.co.jp/menu/category/salad/",
+    "https://www.subway.co.jp/menu/howtoorder/"
+   ],
+   "allergen_page": "https://www.subway.co.jp/menu/allergy/",
+   "checked": "2026-08-21"
+  },
+  "sukiya": {
+   "name": "Sukiya",
+   "name_ja": "すき家",
+   "icon": "🐂",
+   "gf": {
+    "tier": "limited",
+    "best": "お子様カレー (Kids' Curry) — the ONLY cooked dish on Sukiya's whole allergen table with 小麦「ー」. Otherwise: ライス + 鮭 (grilled salmon) + 店内紅生姜, no sauce.",
+    "detail": "Verified line-by-line against Sukiya's own アレルゲン一覧表 (28 items, updated 2026/8/18). EVERY 牛丼 — every size, every topping, plus 牛皿, 牛カレー, all 定食 and all 朝食 — carries 小麦「●」 (wheat AS AN INGREDIENT, not cross-contact): the tare is soy sauce, and the row also shows 大豆● and りんご● (apple in the tare). The gyudon is NOT gluten-free. The one wheat-free cooked item is お子様カレー (#130), whose entire 28-column row is dashes except 鶏肉● — a low-allergen kids' curry roux, quite unlike the adult カレールー (#44) which is 小麦●・乳●・牛肉●・大豆●. Wheat-free sides (小麦「ー」): 鮭 #157 (さけ only), 山かけ #159, おんたま/たまご #152-153, 店内紅生姜 #174 and 紅生姜（小袋）#175 (ZERO of the 28 allergens), 店内七味, 店内タバスコ, フライドにんにく, ベーコン, カットりんご. みそ汁 #147 is 小麦「△」 (cross-contact only — not 麦味噌). Watch the near-misses that DO carry wheat: 納豆 #154 (the tare), 味付のり #158, ポン酢 #172, おろしポン酢 #151, 高菜, 明太マヨ, all three bottled dressings. Rated limited, not reliable: nothing is sealed or served away from the kitchen, and Sukiya states 「店舗の調理者および厨房で調理器具や設備が共有されている場合があるため…意図しない混入が生じる可能性があります」."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "冷やっこ (cold tofu) + サラダ（ドレッシング除く） + ライス + 店内紅生姜",
+    "detail": "No plant-based item exists — Sukiya has never listed one on the current menu (checked 2026-08-21) and there is no ベジ/プラントベース line. What the allergen table shows as free of every animal allergen: 冷やっこ #155 (大豆● only), サラダ（ドレッシング除く）#145 and オクラサラダ #146 (△ marks only), 青ねぎ #162, キムチ #180, 山かけ #159, 店内紅生姜 #174 (nothing at all), カットりんご, フライドにんにく. That assembles into a real if joyless plate. CRITICAL LIMIT: かつお節 and dashi are NOT among Japan's 28 allergens, so an allergen table can never rule them out — the みそ汁 and any tare are unverifiable and should be assumed to contain fish stock. All three bottled dressings contain egg and/or dairy plus wheat — order salads ドレッシング抜き."
+   },
+   "both_gf_and_vegan": "Weakly. ライス + サラダ（ドレッシング除く） + 店内紅生姜 is both wheat-free and animal-free per the table, but it is a side plate, not a meal. Adding 冷やっこ makes it a meal but the tofu row carries 小麦「△」 (cross-contact), so it stops being celiac-clean. The wheat-free お子様カレー contains chicken and is not vegan.",
+   "caveats": [
+    "EVERY gyudon is 小麦● — wheat as an ingredient, from the soy-sauce tare. A beef bowl here is not gluten-free.",
+    "麦茶 is on the menu and Sukiya's own English column calls it 'Barley Tea / 大麦茶' — yet its 小麦 column reads 「ー」, because barley is NOT one of Japan's 28 allergens. It is gluten. Do not trust the dash.",
+    "納豆, 味付のり, ポン酢 and おろしポン酢 all carry 小麦● from their tare — the 'safe-looking' sides are not safe.",
+    "紅生姜 (both counter pot and sachet) is the cleanest thing in the building: zero of 28 allergens.",
+    "みそ汁 is 小麦△ only (not 麦味噌) but is listed with 乳● and will contain dashi — not vegan.",
+    "お子様カレー is a children's menu item; confirm the branch will sell it to an adult.",
+    "Sukiya's table covers ingredients and supplier-line contact only; it explicitly does not guarantee against in-store cross-contact."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。牛丼のタレは醤油なので食べられません。",
+     "romaji": "Komugi arerugii desu. Gyuudon no tare wa shouyu na node taberaremasen.",
+     "en": "I have a wheat allergy — I can't eat the gyudon, the tare is soy sauce."
+    },
+    {
+     "ja": "お子様カレーは小麦不使用と表示されています。注文できますか？",
+     "romaji": "Okosama-karee wa komugi-fushiyou to hyouji sarete imasu. Chuumon dekimasu ka?",
+     "en": "The kids' curry is listed as wheat-free. May I order it?"
+    },
+    {
+     "ja": "ライスと鮭と紅生姜だけをください。タレやソースは全て抜いてください。",
+     "romaji": "Raisu to sake to benishouga dake o kudasai. Tare ya soosu wa subete nuite kudasai.",
+     "en": "Just rice, grilled salmon and pickled ginger please — no tare or sauce at all."
+    },
+    {
+     "ja": "冷やっことサラダをドレッシング抜きでお願いします。動物性の材料は食べられません。",
+     "romaji": "Hiyayakko to sarada o doresshingu-nuki de onegai shimasu. Doubutsusei no zairyou wa taberaremasen.",
+     "en": "Cold tofu and salad with no dressing, please. I can't eat animal ingredients."
+    }
+   ],
+   "sources": [
+    "https://images.zensho.co.jp/materials/sukiya/allergen/allergen.pdf",
+    "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
+    "https://www.sukiya.jp/menu/",
+    "https://www.sukiya.jp/menu/in/gyudon/115000/index.html"
+   ],
+   "allergen_page": "https://images.zensho.co.jp/materials/sukiya/allergen/allergen.pdf",
+   "checked": "2026-08-21"
+  },
+  "sushiro": {
+   "name": "Sushiro",
+   "name_ja": "スシロー",
+   "icon": "🍣",
+   "gf": {
+    "tier": "limited",
+    "best": "Plain nigiri whose allergen row is completely blank — サーモン, 活〆はまち, 活〆真鯛, えび / 大えび / 甘えび, たこ / 水たこ, つぶ貝, 赤貝, 天然こはだ, 蒸しほたて — eaten with wasabi only and NO soy sauce",
+    "detail": "The shari is clean: the row 「しゃり」 in Sushiro's own allergen PDF (2026/8/17更新) is completely blank — no wheat, no allergen of any kind — so the sushi-vinegar question is settled in your favour. About 195 of 441 rows carry no 小麦 ●. It is 'limited' rather than 'reliable' for three documented reasons. (1) A large block of the neta carries ○小麦, which Sushiro defines as 「工場で製造ラインを共有しています」 — that includes ALL tuna (赤身 / 中とろ / 大とろ / びん長 / 本鮪), いか, 国産ほたて貝柱, 天然真あじ, かつお and every 炙り item. The fish you would instinctively order is the flagged one. (2) ガリ carries ○小麦, ○大豆, ○りんご — the free pickled ginger sits on a wheat line. (3) The table soy sauce is not in the PDF at all, and every 醤油-dressed item that IS listed (煮切り醤油漬け, 焦がし醤油, 卵黄醤油がけ) is 小麦 ●. Order the blank-row neta, take wasabi, refuse the shoyu."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "きゅうり巻 / 梅きゅう巻 / 新香巻 / 小粒納豆軍艦 (or 小粒納豆巻ネギ抜き), then 大学いも or 果肉そのまマンゴーアイスバー",
+    "detail": "Assemblable, not a designed menu. きゅうり巻 and 梅きゅう巻 show no ingredient allergen at all; 新香巻 and 小粒納豆軍艦 / 巻 show only 大豆; 大学いも shows ごま + 大豆; 果肉そのまマンゴーアイスバー and 懐かしの赤肉メロンシャーベット are clean of dairy. Traps: EVERY miso soup (あさり, わかめとほうれん草, 茄子, あおさと海苔, 魚のアラ) carries さば ● — the dashi is fish; コーン軍艦 is bound with egg mayo; ラムネ入りレモングラニタ and ﾌﾟﾁｾﾞﾘｰ contain ゼラチン; 紅茶シャーベット and every アイス are dairy. Black coffee and ウーロン茶 are fine, though even those carry ○乳成分."
+   },
+   "both_gf_and_vegan": "YES, narrowly — and this is Sushiro's one real edge. きゅうり巻, 梅きゅう巻 and 新香巻 carry NO wheat mark (not even ○) and no animal ingredient, on a shari that is itself allergen-blank. Skip the gari (○小麦) and the table soy sauce, and a celiac vegan can genuinely eat a plate here.",
+   "caveats": [
+    "Table soy sauce is ordinary wheat shoyu and is NOT covered by the allergen PDF — bring your own tamari marked 小麦不使用",
+    "ALL tuna, いか, ほたて, あじ and every 炙り item carry ○小麦 (shared factory line)",
+    "ガリ carries ○小麦, ○大豆, ○りんご — decline it",
+    "天つゆ is 小麦 ●; ramen, udon and tempura share the kitchen the belt runs through",
+    "All miso soups contain さば dashi — not vegan",
+    "Operator hedge: 「本来そのメニューに含まれていない他のアレルギー物質が、工場製造時や店舗調理時に意図せず付着、混入する場合があります」",
+    "「限定メニューなど、掲載されていない商品がある場合があります」 — the seasonal board is not in the PDF; re-pull it before you go"
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。醤油は使いません。わさびだけでお願いします。",
+     "romaji": "Komugi arerugii desu. Shouyu wa tsukaimasen. Wasabi dake de onegai shimasu.",
+     "en": "I have a wheat allergy. I won't use soy sauce — just wasabi, please."
+    },
+    {
+     "ja": "自分の醤油（グルテンフリー）を持ち込んでもいいですか？",
+     "romaji": "Jibun no shouyu (guruten-furii) o mochikonde mo ii desu ka?",
+     "en": "May I use my own (gluten-free) soy sauce?"
+    },
+    {
+     "ja": "きゅうり巻と新香巻をください。動物性の材料は食べられません。",
+     "romaji": "Kyuuri-maki to shinko-maki o kudasai. Doubutsusei no zairyou wa taberaremasen.",
+     "en": "Cucumber roll and pickled-radish roll, please. I can't eat animal ingredients."
+    }
+   ],
+   "sources": [
+    "https://www.akindo-sushiro.co.jp/menu/allergy.html",
+    "https://www3.akindo-sushiro.co.jp/pdf/menu/allergy.pdf",
+    "https://www3.akindo-sushiro.co.jp/pdf/menu/allergy_dotonbori.pdf"
+   ],
+   "allergen_page": "https://www.akindo-sushiro.co.jp/menu/allergy.html",
+   "checked": "2026-08-21"
+  },
+  "tullys": {
+   "name": "Tully's Coffee",
+   "name_ja": "タリーズコーヒー",
+   "icon": "☕",
+   "gf": {
+    "tier": "none",
+    "best": "—",
+    "detail": "No gluten-free FOOD. Tully's publishes per-item allergen PDFs (drinks and food separately), and the food PDF is sandwiches, bagel sandwiches, hot dogs, pastries and cakes — wheat throughout, with no low-allergen or rice-flour item. Allergen marks are 「●」contains and 「△」possible cross-contact, so the operator is explicitly flagging contamination. Drinks (coffee/espresso/tea) are fine. Not a celiac food option."
+   },
+   "vegan": {
+    "tier": "limited",
+    "best": "ソイラテ (Soy Latte), or ANY milk drink changed to soy milk for +55円 (tax incl.)",
+    "detail": "A reliable vegan-DRINK stop with soy, and nothing else. Tully's customize page offers 「Soy Milk ソイミルク — ミルク入りドリンクをソイミルクに変更すると、コクがありつつもあっさりした飲み口になります」 at ＋55円（税込）, so unlike Doutor the swap works into any milk drink. Soy is the ONLY plant milk: Tully's own allergen PDF prints the legend 「ミルクの種類／Types of milk ①牛乳・Milk ②豆乳・Soy milk」 — exactly two — and the string オーツ appears ZERO times in either the drink or the food allergen PDF, with no oat or almond on the customize list either. The allergen table gives ソイラテ a mark in 大豆 only, no 乳. There is NO plant-based FOOD whatsoever: the food PDF contains no プラントベース, no ヴィーガン, no 大豆ミート and no soy item at all. Drinks only."
+   },
+   "both_gf_and_vegan": "NO GF food at all, so nothing to combine. The soy drinks are vegan but are drinks.",
+   "caveats": [
+    "Soy is the only plant milk — the operator's own legend lists just 牛乳 and 豆乳; no oat, no almond",
+    "The soy swap is NOT free: +55円 (税込)",
+    "No plant-based food line of any kind — this is a drinks-only answer, unlike Starbucks",
+    "「△」in the allergen PDF marks possible cross-contamination",
+    "はちみつ (honey) is offered as a FREE customization — decline it if strict vegan",
+    "Decaf espresso (+65円) only at stores that carry it",
+    "Food menu rotates seasonally — re-check the live PDF"
+   ],
+   "phrases": [
+    {
+     "ja": "ソイラテをください。",
+     "romaji": "Soi-rate o kudasai.",
+     "en": "A soy latte, please."
+    },
+    {
+     "ja": "ミルクをソイミルクに変更してください。",
+     "romaji": "Miruku o soi-miruku ni henkou shite kudasai.",
+     "en": "Please change the milk to soy milk."
+    },
+    {
+     "ja": "はちみつは入れないでください。",
+     "romaji": "Hachimitsu wa irenaide kudasai.",
+     "en": "No honey, please."
+    }
+   ],
+   "sources": [
+    "https://www.tullys.co.jp/menu/allergy.html",
+    "https://www.tullys.co.jp/menu/pdf/drink.pdf",
+    "https://www.tullys.co.jp/menu/pdf/food.pdf",
+    "https://www.tullys.co.jp/menu/customize/"
+   ],
+   "allergen_page": "https://www.tullys.co.jp/menu/allergy.html",
+   "checked": "2026-08-21"
+  },
+  "yayoiken": {
+   "name": "Yayoiken",
+   "name_ja": "やよい軒",
+   "icon": "🍚",
+   "gf": {
+    "tier": "limited",
+    "best": "しまほっけ定食 (grilled shimahokke set — table lists only 小麦・大豆) or サバの塩焼定食 (小麦・さば・大豆), with the MISO SOUP left untouched and no table soy sauce",
+    "detail": "Plenus publishes a genuine per-prefecture 28-item table (Tokyo: 更新日 2026/08/01) and per-item allergen chips on every product page, so the evidence is good — but unlike Ootoya there is no wheat-free composed plate for an adult. The salt-grilled-fish sets are the least-wheat items on the menu, and the wheat is traceable: みそ汁 on its own is 小麦・大豆, and しまほっけ定食 as a whole is ALSO only 小麦・大豆, so the soup is almost certainly the sole wheat source (an inference from the operator's numbers, not an operator statement). Set the soup aside and you have grilled fish + white rice. THE ONE TRULY WHEAT-FREE ITEM IS OFF-LIMITS: お子様カレー(低アレルゲン) has no 小麦 in the table (オレンジ・大豆・鶏肉・豚肉 only) — a proper low-allergen curry — but the product page says 「※7歳以下のお子様限定メニューです。」 and 「※一部店舗の限定メニューです。」 Children 7 and under, selected branches only. An adult celiac cannot order it. Wheat-free-adjacent sides per the table: 冷奴 (大豆 only), 国産大和芋のとろろ (やまいも only), 明太子 (nothing listed). 納豆 is 小麦 (the tare)."
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (冷奴 + white rice is the ceiling)",
+    "detail": "DO NOT TRUST THE 大豆ミート MENU. Yayoiken runs three soy-meat sets and the patty itself is genuinely plant-based — 「使用する大豆ミートは、100％植物性原料で作られており」 — but every one of the three dishes as served contains animal ingredients per the operator's own allergen table: 大豆ミートの野菜炒め定食 lists 鶏肉 AND 豚肉 (chicken and pork); 大豆ミートのしょうが焼定食 lists 卵 (egg); 大豆ミートのなす味噌と焼魚の定食 lists さば・鶏肉・ゼラチン (it is a fish set with gelatin). This is the MOS 'soy ≠ vegan' trap in a more misleading form — the marketing is a meat swap, not a vegan dish. Nothing else on the menu is animal-free: the 野菜サラダ carries 卵 (egg in the sesame dressing), みそ汁 and every teishoku broth is dashi-based, and dashi is not a labelled allergen so it never shows in the table. No vegan claim is made anywhere on the site."
+   },
+   "both_gf_and_vegan": "NO. The wheat-free-ish plates are grilled fish; the plant-marketed items contain chicken, pork, egg or fish; and the one genuinely wheat-free item is restricted to children 7 and under.",
+   "caveats": [
+    "THE MISO SOUP CONTAINS WHEAT. みそ汁 = 小麦・大豆, even though the page says 「信州仕込みの味噌を使用しております」 (Shinshu = rice miso). 豚汁 is 小麦・乳・大豆・鶏肉・豚肉. Do not drink either.",
+    "もち麦ごはん (the +30 yen rice upgrade) is BARLEY — refuse it and take plain 白米. 定食 rice is 「おかわり自由」 (free refills), but ordering mochimugi limits refills to white rice anyway.",
+    "The 大豆ミート sets contain chicken, pork, egg, mackerel or gelatin depending on which one — 100% plant-based patty, non-vegan dish.",
+    "お子様カレー(低アレルゲン) is wheat-free but restricted: 「7歳以下のお子様限定」 and 「一部店舗の限定メニュー」.",
+    "野菜サラダ = 小麦・卵・ごま・大豆; it is served pre-dressed 「野菜サラダには、ごまドレッシングをかけて提供しております」. Ask for it undressed or skip it.",
+    "納豆 is 小麦 (the tare), not clean — unusually, 冷奴 is 大豆 only.",
+    "Menus and allergen tables are PER PREFECTURE — swap the trailing number in the URL (13 = Tokyo) for the prefecture you are in, and there is a separate PDF for limited-menu branches.",
+    "Yayoiken publishes no cross-contamination statement at all; direct allergy questions go to お客様センター, not the branch."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。みそ汁は結構です。ごはんは白米でお願いします。",
+     "romaji": "Komugi arerugii desu. Misoshiru wa kekkou desu. Gohan wa hakumai de onegai shimasu.",
+     "en": "I have a wheat allergy. No miso soup, please. Plain white rice, not the barley rice."
+    },
+    {
+     "ja": "しまほっけ定食を、たれやソースなしでお願いします。",
+     "romaji": "Shimahokke teishoku o, tare ya soosu nashi de onegai shimasu.",
+     "en": "The grilled shimahokke set, with no sauce or tare."
+    },
+    {
+     "ja": "大豆ミートの定食に、肉・卵・魚は入っていますか？",
+     "romaji": "Daizu-miito no teishoku ni, niku, tamago, sakana wa haitte imasu ka?",
+     "en": "Do the soy-meat sets contain meat, egg or fish? (They do — check the chart.)"
+    }
+   ],
+   "sources": [
+    "https://www.yayoiken.com/menu_list/info/13",
+    "https://www.yayoiken.com/menu_list/view/13/697",
+    "https://www.yayoiken.com/menu_list/view/13/695",
+    "https://www.yayoiken.com/menu_list/view/13/639",
+    "https://www.yayoiken.com/menu_list/view/13/79",
+    "https://www.yayoiken.com/menu_list/view/13/755",
+    "https://www.yayoiken.com/menu_list/view/13/756",
+    "https://www.yayoiken.com/pdf/limited-store.pdf"
+   ],
+   "allergen_page": "https://www.yayoiken.com/menu_list/info/13",
+   "checked": "2026-08-21"
+  },
+  "yoshinoya": {
+   "name": "Yoshinoya",
+   "name_ja": "吉野家",
+   "icon": "🍚",
+   "gf": {
+    "tier": "limited",
+    "best": "ご飯 + 鮭（単品）(grilled salmon, さけ only) + みそ汁 + 生野菜サラダ with NO dressing + 紅生姜. Kids' ミニカレー is the one wheat-free curry.",
+    "detail": "Yoshinoya answers the beef-bowl question itself, in print, on its own allergen sheet (メニュー全情報 257号, 2026年8月6日現在): 「※牛丼のアレルゲン『小麦』は醤油由来になります。」 — the gyudon's wheat comes from the soy sauce. Every size of 牛丼, plus 豚丼, 牛カルビ丼, 牛焼肉丼, 牛皿, every 定食 and every 朝定食, is 小麦○. But the à-la-carte sides are unusually clean and Yoshinoya lists them individually: 鮭（単品）= さけ and nothing else; 生野菜サラダ = ZERO of the 28 allergens; ご飯, 紅生姜, 山椒, 和からし = zero; みそ汁 = 大豆○ plus えび▲かに▲ (▲ is Yoshinoya's own mark for あおさ seaweed harvested by a method that mixes in shrimp/crab — not wheat); 豚汁, あさり汁, とろろ, とろろおくら, 冷汁, 塩さば（単品）, 玉子/半熟玉子, チーズ, ポテトサラダ, マヨソース and ウスターソース are all wheat-free. The kids' ミニカレー (271 kcal) is 牛肉・大豆・鶏肉・豚肉・バナナ・りんご with the 小麦 column EMPTY — a low-allergen roux, unlike the adult 黒カレー which is 小麦○乳○. Do not assume the innocent-looking sides: のり and 納豆（タレ・カラシ・ネギ含む）are both 小麦○, and so are BOTH table dressings (焙煎ごま and ノンオイル和風) and the しょうゆ. Limited, not reliable: Yoshinoya prints 「揚げ物は全て同じフライヤーで揚げています。その他、調理の過程において商品間・原材料間でのアレルギー物質の偶発的混入の可能性がございます。」"
+   },
+   "vegan": {
+    "tier": "none",
+    "best": "— (at best assemble ご飯 + 生野菜サラダ dressing-free + 紅生姜 + とろろ)",
+    "detail": "Nothing plant-based is sold. There is no ベジ/プラントベース item on the Yoshinoya menu as of 2026-08-21 and no tofu dish at all — no 冷奴, no soy patty, nothing. The only items with no animal allergen listed are ご飯, 生野菜サラダ (zero allergens), 紅生姜, 山椒, 和からし, とろろ (大豆・やまいも) and ウスターソース (大豆・りんご). That is rice and raw vegetables, not a meal. Both table dressings contain wheat and/or egg, so the salad must be eaten dry. The みそ汁 contains あおさ seaweed and, like every miso soup in this dataset, will contain dashi — dashi and かつお節 are not among Japan's 28 allergens and can never be ruled out from an allergen chart. A vegan should treat Yoshinoya as a place to buy plain rice, not dinner."
+   },
+   "both_gf_and_vegan": "Only as a side plate. ご飯 + 生野菜サラダ (no dressing) + 紅生姜 + とろろ are all wheat-free AND free of every listed animal allergen — but that is not a meal, and the とろろ tare cannot be cleared of dashi. The wheat-free ミニカレー contains beef, chicken and pork.",
+   "caveats": [
+    "Yoshinoya states in its own sheet that the 牛丼's wheat is from the soy sauce. The beef bowl is not gluten-free at any size.",
+    "「揚げ物は全て同じフライヤーで揚げています」 — one shared fryer for everything. から揚げ, かつ丼 and コロッケ contaminate that oil.",
+    "のり and 納豆 are 小麦○ from their tare; both table dressings and the table しょうゆ are 小麦○. ウスターソース is the only wheat-free bottle on the counter.",
+    "▲ in Yoshinoya's chart is not cross-contact in the usual sense: it means the あさり contains crab and the あおさ is harvested with shrimp/crab present.",
+    "Yoshinoya's chart explicitly excludes any seasoning you add yourself — those are listed separately at the bottom.",
+    "ミニカレー is a kids' portion; confirm the branch will sell it on its own.",
+    "No tofu, no plant-based item, no vegan main — this is the weakest of the four for a vegan."
+   ],
+   "phrases": [
+    {
+     "ja": "小麦アレルギーです。牛丼のタレは醤油なので食べられません。",
+     "romaji": "Komugi arerugii desu. Gyuudon no tare wa shouyu na node taberaremasen.",
+     "en": "I have a wheat allergy — I can't have the gyudon, its tare is soy sauce."
+    },
+    {
+     "ja": "ご飯と鮭の単品とみそ汁と生野菜サラダをください。ドレッシングは抜いてください。",
+     "romaji": "Gohan to sake no tanpin to misoshiru to nama-yasai sarada o kudasai. Doresshingu wa nuite kudasai.",
+     "en": "Rice, the single grilled salmon, miso soup and the raw salad, please — no dressing."
+    },
+    {
+     "ja": "ミニカレーは小麦不使用と表示されています。単品で注文できますか？",
+     "romaji": "Mini-karee wa komugi-fushiyou to hyouji sarete imasu. Tanpin de chuumon dekimasu ka?",
+     "en": "The mini curry is listed as wheat-free. Can I order it on its own?"
+    },
+    {
+     "ja": "動物性の材料が入っていない料理はありますか？",
+     "romaji": "Doubutsusei no zairyou ga haitte inai ryouri wa arimasu ka?",
+     "en": "Is there any dish with no animal ingredients at all?"
+    }
+   ],
+   "sources": [
+    "https://www.yoshinoya.com/pdf/allergy/",
+    "https://www.yoshinoya.com/contact/faq_product",
+    "https://www.yoshinoya.com/menu/",
+    "https://www.yoshinoya.com/menu/gyudon/"
+   ],
+   "allergen_page": "https://www.yoshinoya.com/pdf/allergy/",
+   "checked": "2026-08-21"
   }
  }
 }

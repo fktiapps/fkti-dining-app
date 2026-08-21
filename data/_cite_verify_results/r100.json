@@ -174,5 +174,214 @@
    "https://tabelog.com/kyoto/A2601/A260202/26001255/"
   ],
   "why": "Tabelog detail page 200 on 2026-08-21 with no rst-status badge (閉店/休業/移転/掲載保留 absent) and user reviews dated 2026/07 and 2026/04. Hours 10:00–18:00 Mon–Fri, closed Sat/Sun/holidays, ※なくなり次第終了 — a visitor arriving at a weekend finds it shut."
+ },
+ {
+  "id": "nagano_cafe_fuwa",
+  "city": "nagano",
+  "field": "gf_cross_contamination",
+  "quote": "No allergen or cross-contamination information is published anywhere. The kitchen prepares wheat-heavy items (baked cakes, sandwiches, curry roux) alongside all other dishes, making cross-contact highly probable.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "verdict": "unsupported",
+  "found": "The cited Tabelog page mentions no cake, no sandwich and no curry roux. What it DOES carry, in its own 関連のキーワード block, is: タコライス・キーマカレー・グリーンカレー・車麸・煮込み・ぶり.",
+  "http": "200 via s.tabelog.com (iPhone UA); desktop host redirected to the same mobile page",
+  "method": "iPhone UA on Tabelog; corroborated via Ecosia + Yahoo Japan (Brave 429, DDG-lite 202 bot challenge, Bing 200 but no JP results)",
+  "note": "WRONG HAZARD NAMED. The two curries here are Thai green curry and keema — spice/paste based, not roux — while the shop's documented wheat item is 車麸 (kuruma-fu: PURE WHEAT GLUTEN), served as the standard 前菜 with lunches: 「前菜の車麸とかぼちゃのサラダ！」 (elelplanning.naganoblog.jp, 2019-07-22), 「かぼちゃのサラダと車麸の煮物がまた絶品」 (same blog, green-curry lunch), 「まず『車麸とカボチャ』の前菜」 (Yahoo!マップ review of the 煮込みハンバーグ). A celiac ordering a rice curry here still gets a wheat-gluten appetizer they were never warned about. Rewrite naming 車麸."
+ },
+ {
+  "id": "nagano_cafe_fuwa",
+  "city": "nagano",
+  "field": "soy_sauce_wheat",
+  "quote": "No tamari or gluten-free soy sauce mentioned. Standard wheat-containing soy sauce is assumed given the menu style (taco rice seasoning, curry, stewed dishes).",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "verdict": "supported",
+  "found": "No seasoning or allergen statement anywhere on the page; 関連のキーワード include タコライス、キーマカレー、グリーンカレー、煮込み.",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA on Tabelog",
+  "note": "Fair as written — flagged as an assumption and the dish types it names are on the page. The 煮物 that carries the shoyu is the 車麸 appetizer, which is itself wheat; say so."
+ },
+ {
+  "id": "nagano_cafe_fuwa",
+  "city": "nagano",
+  "field": "vegan_cross_contact",
+  "quote": "Meat and dairy are used throughout the kitchen in multiple dishes simultaneously; no vegan-safe prep area or labeling exists.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "verdict": "supported",
+  "found": "Reviews on the cited page: 「私はタコライスを注文、友だちはハンバーグランチ」、「ハンバーグをオーダー」; keywords ハンバーグ・ぶり・ミルク・ホットココア.",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA on Tabelog",
+  "note": "Accurate; vegan 'ask' is if anything generous for a hamburg-and-buri kitchen."
+ },
+ {
+  "id": "nagano_cafe_fuwa",
+  "city": "nagano",
+  "field": "staff_allergy_handling",
+  "quote": "No allergy-handling policy is documented on any source. The cafe is a small owner-operated establishment where the single owner/cook handles all preparation; direct inquiry by phone (026-232-7863) before visiting is the only way to assess safety.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "verdict": "unsupported",
+  "found": "Phone 026-232-7863 is correct on the page. Nothing on the page says one person cooks; a review on the same page says 「温かなスタッフさん」 (plural staff).",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA on Tabelog; blog fallback impossible — see trading note",
+  "note": "The 'single owner/cook' detail is invented; only the phone number checks out. Drop the staffing sentence or source it."
+ },
+ {
+  "id": "nagano_cafe_fuwa",
+  "city": "nagano",
+  "field": "positives",
+  "quote": "Small, owner-run kitchen means fewer hands and potentially more flexibility to accommodate requests — calling ahead in Japanese gives the best chance of a custom accommodation.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "verdict": "unsupported",
+  "found": "No staffing or accommodation statement on the cited page. Supportable positives that ARE there: 古民家 conversion, 「手作りのお食事。温かなスタッフさん」, 2 parking spaces, 予約可.",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA on Tabelog",
+  "note": "Speculation dressed as a positive. 予約可 (reservations accepted) is the real, citable basis for 'call ahead'."
+ },
+ {
+  "id": "nagano_cafe_fuwa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/nagano/A2001/A200101/20017948/",
+   "https://map.yahoo.co.jp/"
+  ],
+  "why": "Tabelog detail page 200 on 2026-08-21 with no rst-status badge; Yahoo!マップ shows the shop as 営業中 with 4.09/15 reviews and hours 〜17:00, 定休日 水・木. Caveats for the reader: newest Tabelog review is 2024/04, and the record's own `website` field http://matinami8.naganoblog.jp/ is DEAD — the whole naganoblog.jp platform fails to connect (curl 000 on the root and on other subdomains), last Wayback 200 for that blog is 2020-11-01 and its newest post is 2017-12-29. Replace the website field with the Tabelog/Yahoo listing."
+ },
+ {
+  "id": "nagano_haruhi",
+  "city": "nagano",
+  "field": "gf_cross_contamination",
+  "quote": "No GF items exist; the entire menu is wheat-based. Cross-contamination risk is high by default in a small kitchen producing wheat-flour cakes, tarts, and quiches.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017318/",
+  "verdict": "supported",
+  "found": "Genre line カフェ、ケーキ; reviews on the cited page name 「柿のタルト」、「キッシュプレート、ガトーショコラ」; keywords チーズケーキ・キッシュ・ロールケーキ・ガトーショコラ. 16 seats, one kitchen, ケーキ売切次第終了.",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA on Tabelog (top + dtlrvwlst)",
+  "note": "Cakes, tarts and quiche all verified verbatim. Minor overstatement: 'the entire menu is wheat-based' — the shop also runs かき氷 in summer (a reviewer saw the 「氷」 banner; sweets.nagano.jp lists 大人のかき氷). Shared cake kitchen keeps gf 'no' correct either way."
+ },
+ {
+  "id": "nagano_haruhi",
+  "city": "nagano",
+  "field": "vegan_cross_contact",
+  "quote": "All items contain dairy (butter, cream, cheese). No plant-based preparation space exists.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017318/",
+  "verdict": "supported",
+  "found": "Keywords チーズケーキ・レアチーズケーキ・ゴルゴンゾーラ・練乳・ミルク; review 「ゴルゴンゾーラのおいしいケーキが」.",
+  "http": "200 s.tabelog.com iPhone UA",
+  "method": "iPhone UA on Tabelog",
+  "note": "Substantively right for a patisserie. 'All items' is loose — りんごジュース and black coffee are on the same reviews — but nothing edible here is dairy-free."
+ },
+ {
+  "id": "nagano_haruhi",
+  "city": "nagano",
+  "field": "staff_allergy_handling",
+  "quote": "No allergen handling policies or staff training information is mentioned in any available source. The shop has no menu labeling for allergens.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20017318/",
+  "verdict": "supported",
+  "found": "Cited page has no allergen field at all and the phone field reads 「不明の為情報お待ちしております」; nothing on the owner's Instagram or Facebook either.",
+  "http": "200 s.tabelog.com iPhone UA; instagram.com/p/ 200 via og:description",
+  "method": "iPhone UA on Tabelog, then Instagram og:description; Yahoo Japan 200 for corroboration",
+  "note": "True — but the record's advice to phone ahead is now impossible: the owner states 「お店の電話はすでに解約しております」. Contact is Facebook/Instagram DM only, with replies taking days."
+ },
+ {
+  "id": "nagano_haruhi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.instagram.com/p/DOyyYDEEuio/",
+   "https://www.instagram.com/haruhi20130215/",
+   "https://tabelog.com/nagano/A2001/A200101/20017318/"
+  ],
+  "why": "OWN-ACCOUNT ANNOUNCEMENT, first-party, dated 2025-09-19 (fetched 200 via og:description on 2026-08-21): owner 矢澤智子 writes 「京都移住、移転の為昨年６月に善光寺門前のお店を閉店させていただきましたが。」 — the 上西之門町608 shop SHUT IN JUNE 2024. She then says 「不定期にはなりますが門前の春陽を営業しようと決めました」 and 「しばらくは、お持ち帰りのみ」. Current Instagram bio: 「現在、母の故郷、京都へ移住の準備の為、不定期営業です」. So: NOT permanently closed, but no longer the cafe our record describes — irregular opening days, TAKEAWAY ONLY, phone disconnected, Kyoto/Nagano dual base. Tabelog still shows 11:00-19:00 daily and its newest review is 2022/09; Yahoo!マップ flags 営業状況変更の可能性. A traveller following our record turns up at a shut door. Also: the owner posted 2025-01-10 warning about an impersonation account — the verified handle is @haruhi20130215."
+ },
+ {
+  "id": "nagano_patisserie_heigoro_honte",
+  "city": "nagano",
+  "field": "gf_cross_contamination",
+  "quote": "All shaved ice items list wheat as an allergen; the kitchen works with wheat-containing baked goods throughout. No mention of dedicated preparation areas.",
+  "url": "https://www.fujiyaheigoro.com/cafe/",
+  "verdict": "supported",
+  "found": "All five 2026 kakigori carry 小麦: ブルーベリー「アレルギー：乳成分・卵・小麦・アーモンド」、苺「乳成分・卵・小麦・大豆」、トロピカル「乳成分・卵・小麦・大豆」、ミルクティー「乳成分・小麦・オレンジ」、抹茶「乳成分・小麦・大豆」.",
+  "http": "200 plain curl, desktop UA",
+  "method": "plain fetch (route 1) — first-party site, no proxy needed",
+  "note": "Exact. The wheat is not incidental: it is baked into the ice itself (シュトロイゼル, メレンゲ, チーズケーキ, クランチ toppings), so 'ask them to leave the topping off' is not a route to safety. Add the page's own caveat 「※ 原材料および産地は、仕入れ状況により変更となる場合がございます」."
+ },
+ {
+  "id": "nagano_patisserie_heigoro_honte",
+  "city": "nagano",
+  "field": "soy_sauce_wheat",
+  "quote": "Not a savoury establishment; soy sauce is not used. However wheat is a declared allergen across all shaved ice menu items.",
+  "url": "https://www.fujiyaheigoro.com/cafe/",
+  "verdict": "supported",
+  "found": "Page is a patisserie cafe menu — kakigori plus hot/cold drinks only (Café Americano, Café Latte, 長野県産りんごジュース, pot teas); no soy sauce, no savoury dish anywhere; 小麦 on all five ices.",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "Correctly declines to invent a shoyu warning from genre — this is how the field should read when soy sauce genuinely is not in play. 大豆 on three items is soy the bean (streusel/crunch), not soy sauce."
+ },
+ {
+  "id": "nagano_patisserie_heigoro_honte",
+  "city": "nagano",
+  "field": "vegan_cross_contact",
+  "quote": "Eggs and dairy are core to all items; no vegan-safe preparation lines exist.",
+  "url": "https://www.fujiyaheigoro.com/cafe/",
+  "verdict": "supported",
+  "found": "乳成分 is declared on all five ices (plus 北海道練乳, 自家製ミルクジェラート, シャンティー); the house rule 「かき氷以外をご注文の場合は、ドリンク＋ケーキのご注文をお願いしております」 forces a dairy order.",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "Conclusion is right (nothing here is vegan) but the detail is loose: EGG is declared on only three of five — ミルクティー (乳成分・小麦・オレンジ) and 抹茶 (乳成分・小麦・大豆) list no 卵. Say 'dairy in every item, egg in most'."
+ },
+ {
+  "id": "nagano_patisserie_heigoro_honte",
+  "city": "nagano",
+  "field": "staff_allergy_handling",
+  "quote": "Allergen information is published per item on the website (milk, eggs, wheat, almonds, soy noted for shaved ice); no information is available about how staff handle allergy requests in person.",
+  "url": "https://www.fujiyaheigoro.com/cafe/",
+  "verdict": "supported",
+  "found": "Per-item アレルギー： lines on every kakigori; no staff/allergy-handling statement of any kind on the page.",
+  "http": "200 plain curl",
+  "method": "plain fetch (route 1)",
+  "note": "Add オレンジ to the allergen list (declared on the Milk Tea ice). Two page rules bear directly on an allergic visitor and are missing from the record: 「ご予約は承っておりません」 / 「お席・商品共にご予約は承っておりません」 — nothing can be arranged in advance, so any allergy conversation happens at the counter in a queue."
+ },
+ {
+  "id": "nagano_patisserie_heigoro_honte",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.fujiyaheigoro.com/cafe/"
+  ],
+  "why": "First-party site 200 on 2026-08-21. Live and current: the kakigori run is dated 2026年6月26日〜9月8日 and today falls in 第三弾（8月21日〜9月8日）; the page's Information block reads 'Aug 21 Fri カフェ 営業時間 月・火・金 11:00-17:00｜土・日 10:00-17:00' (so Wed/Thu closed). TRAP FOR THE NEXT READER: the same page still carries a notice dated 2025年6月7日 saying 「平五郎本店では当面の間 カフェ営業をお休みし 洋菓子の販売のみとしております」 with cafe service pointed across the street to THE FUJIYA GOHONJIN — that block is stale and quoting it would wrongly report the cafe shut. Separately the ONLINE SHOP is flagged 臨時休業中."
+ },
+ {
+  "id": "nagano_ramen_misoya",
+  "city": "nagano",
+  "field": "soy_sauce_wheat",
+  "quote": "Miso and the tare are wheat-containing; ramen noodles are wheat. Assume gluten throughout.",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20001391/",
+  "verdict": "unsupported",
+  "found": "The cited page says the opposite about the miso. Its own 関連のキーワード lead with 信州味噌 and its featured reviews read 「信州味噌のやさしい甘みが効いたスープ」 and 「長野駅で旨し信州味噌つけ麺」. 信州味噌工業協同組合: 「信州味噌は…米麹と大豆でつくる代表的な『米みそ』で、淡色で辛口を特徴とします」; a shop write-up calls it 「長野県産大豆と米で天然醸造された信州大吟醸味噌」.",
+  "correct_url": "https://shokutabinagano.com/ja/shop/2321/",
+  "http": "tabelog 200 s.tabelog.com iPhone UA; shinshu-miso.or.jp 200 plain curl; shokutabinagano.com 200 plain curl",
+  "method": "iPhone UA on Tabelog, then Ecosia (Brave 429, Yahoo JP 200, DDG-lite 202 challenge; BING RETURNED UNRELATED ENGLISH/CHINESE JUNK ALL RUN — treat Bing as broken today), then first-party allergen table",
+  "note": "THE MISO IS THE ONE THING HERE THAT IS NOT WHEAT. 信州味噌 is a 米味噌 — rice koji + soybeans, no wheat and no barley — so this record warns a celiac off exactly the ingredient the brief flags (米味噌/豆味噌 are safe). The real gluten, and it IS everywhere, is documented in a per-item allergen table nobody has cited: shokutabinagano.com/ja/shop/2321 marks 小麦 on ALL TEN ramen/tsukemen, and — more usefully — on ⑧メンマのせ (大豆・小麦) and ⑨ちゃあしゅう (大豆・小麦・豚肉), i.e. the shoyu-cured toppings carry wheat independently of the noodles. Only ⑩御飯 (plain rice) declares nothing. Rewrite as: noodles wheat (both the 極太麺 and the 長野県産小麦100% 石臼挽き粉麺), soy sauce in tare/chashu/menma wheat, MISO ITSELF wheat-free."
+ },
+ {
+  "id": "nagano_ramen_misoya",
+  "city": "nagano",
+  "field": "allergens_other",
+  "quote": "(not currently recorded)",
+  "url": "https://tabelog.com/en/nagano/A2001/A200101/20001391/",
+  "verdict": "wrong_source",
+  "found": "Per-item allergen icons at shokutabinagano.com/ja/shop/2321: every bowl declares 大豆・りんご・ゼラチン・小麦・豚肉・鶏肉・牛肉・ごま; ①味噌らぁめん additionally declares エビ (shrimp); the two つけめん declare くるみ (walnut); all four 辛味噌 bowls declare 落花生 (peanut, matching the review line 「表面には落花生の粒が散らしてあり」).",
+  "correct_url": "https://shokutabinagano.com/ja/shop/2321/",
+  "http": "200 plain curl; icon legend read from the theme's own icon PNGs",
+  "method": "Ecosia → first-party-supplied allergen table (YOKOSO project, 公益社団法人長野青年会議所)",
+  "note": "NEW EVIDENCE the record does not carry: a shrimp allergen in the plain miso ramen and peanut in every spicy bowl are the kind of thing a traveller needs and neither is currently anywhere in our record. Source caveat: the YOKOSO listing dates from the 2022-23 project and carries its own 「あくまで参考用。お店でよくご確認の上、ご注文ください」 disclaimer."
+ },
+ {
+  "id": "nagano_ramen_misoya",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/nagano/A2001/A200101/20001391/"
+  ],
+  "why": "Tabelog 200 on 2026-08-21, no rst-status badge, 1,462 reviews with the three most recent dated 2026/07, 2026/07 and 2026/06. Open 11:00-00:00 seven days, 13 counter seats, 予約不可 (no reservations), TEL 026-224-1183 — so an allergy conversation has to happen at the counter."
  }
 ]

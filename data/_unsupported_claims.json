@@ -550,6 +550,33 @@
  },
  {
   "city": "kyoto",
+  "id": "mp_oito",
+  "name": "おいと (Oito)",
+  "field": "soy_sauce_wheat",
+  "text": "The oden broth is dashi/soy-based. Most Japanese soy sauce is brewed with wheat, so the broth itself should be treated a",
+  "source": "https://tabelog.com/kyoto/A2601/A260301/26001727/",
+  "why": "Soy-sauce warning inferred from the oden genre with no page evidence. Worth being careful in both directions here: 京おでん tsuyu is characteristically pale, and pale is exactly where this dataset has gone wrong before — 薄口醤油 is wheat-brewed despite being light, so 'it looks clear' is not reassurance ei"
+ },
+ {
+  "city": "kyoto",
+  "id": "mp_tonkichi",
+  "name": "とん吉 (Tonkichi)",
+  "field": "soy_sauce_wheat",
+  "text": "The Worcester/demi-glace-style sauce and the miso/dashi pork soup are soy- and wheat-derived; most Japanese soy sauce an",
+  "source": "http://gcjapan-kyoto.com/tonkichi/",
+  "why": "A soy-sauce field filled in from the genre. The page does evidence wheat, but by a different route and in a different place — the デミグラス roux in the sauce, already covered by this record's gf_cross_contamination claim above. The soup half is worse than unsupported: it attaches wheat to 味噌 and to dash"
+ },
+ {
+  "city": "kyoto",
+  "id": "mp_maruse",
+  "name": "まるせ (Maruse)",
+  "field": "soy_sauce_wheat",
+  "text": "Broths and donburi sauces rely on standard Japanese soy sauce and dashi, which typically contain wheat. No wheat-free so",
+  "source": "https://tabelog.com/kyoto/A2601/A260604/26034163/",
+  "why": "Soy-sauce warning invented from the genre, and it also gets the chemistry wrong: dashi is katsuobushi, niboshi and kombu — fish and kelp, wheat-free — so 'soy sauce and dashi, which typically contain wheat' warns a reader off a harmless ingredient. Kansai udon tsuyu is usually 薄口醤油 and so probably i"
+ },
+ {
+  "city": "kyoto",
   "id": "mp_ryuen_gyoza_no_mise_ryue",
   "name": "龍園 (Ryuen (Gyoza no Mise Ryuen))",
   "field": "vegan_cross_contact",
@@ -703,6 +730,15 @@
  },
  {
   "city": "kyoto",
+  "id": "kyr_ramen_sou_yume_wo_katare",
+  "name": "ラーメン荘 夢を語れ (Ramen-sou Yume wo Katare)",
+  "field": "soy_sauce_wheat",
+  "text": "The broth is a soy-sauce (shoyu) seasoned pork-bone base; standard Japanese soy sauce contains wheat.",
+  "source": "https://osumituki.com/kyoto-ramen/104056.html",
+  "why": "This is the soy-sauce-from-genre pattern. The cited page says the soup is 非乳化の豚骨 and nothing else; the shoyu the record leans on is a BOTTLE ON THE COUNTER, not the seasoning of the broth. Nothing I could reach states this shop's kaeshi - the nearest thing is a licensed cup noodle, 「夢を語れ」監修 推しの一杯 旨豚"
+ },
+ {
+  "city": "kyoto",
   "id": "kyr_ramen_tsurumusha",
   "name": "らーめん 鶴武者 (Ramen Tsurumusha)",
   "field": "soy_sauce_wheat",
@@ -721,6 +757,42 @@
  },
  {
   "city": "kyoto",
+  "id": "kyr_yamanoya",
+  "name": "山の家 (Yamanoya)",
+  "field": "soy_sauce_wheat",
+  "text": "The chuka-soba uses wheat noodles in a soy-style broth; standard Japanese soy sauce and tare contain wheat. No wheat-fre",
+  "source": "https://kyotopi.jp/articles/KLAw8",
+  "why": "SOY-SAUCE WARNING INVENTED FROM GENRE — 'chuka-soba, therefore soy-style broth'. Nothing on the cited page or anywhere found says shoyu, and 'clear and 淡麗' is equally consistent with a shio tare. Also guard against the sibling-transplant risk: KLAw8 profiles EIGHT shops (山の家, 萬福, かどや食堂, 篠田屋, まるせ, みや"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_seikatei",
+  "name": "盛華亭 (Seikatei)",
+  "field": "soy_sauce_wheat",
+  "text": "Dishes are seasoned in the Chinese-Japanese style; standard soy sauce/seasonings contain wheat. No wheat-free seasoning ",
+  "source": "https://serai.jp/gourmet/1219078",
+  "why": "Wrong in both directions at once. 'No wheat-free seasoning is indicated' is false — the cited page's whole point is a house style of salt, Kyoto sake (Matsui Shuzo seisyu, rice-brewed and wheat-free) and white-pressed soybean oil, with strong spices deliberately avoided; gf_detail's 'wheat-based soy"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_tsukemen_yumenchu",
+  "name": "つけ麺 夢人 (Tsukemen Yumenchu)",
+  "field": "gf_cross_contamination",
+  "text": "Tsukemen-only shop: homemade wheat noodles in a fish-and-pork-bone broth with wheat-based soy seasoning typical of the s",
+  "source": "https://kyotopi.jp/articles/To2ci",
+  "why": "SOY-SAUCE WARNING INVENTED FROM GENRE — the exact defect pattern. The tsuke-jiru's described flavour driver is MISO (mackerel simmered in miso, blended into the broth), not shoyu, and the record aims a wheat warning at a seasoning nobody has documented. Two clauses do survive and should become the w"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_ramen_to_mazesoba_no_omi",
+  "name": "ラーメンとまぜそばのお店 Lee (Ramen to Mazesoba no Omise Lee)",
+  "field": "soy_sauce_wheat",
+  "text": "Bowls use wheat-based shoyu/curry sauces (e.g. gyokai-shoyu mazesoba and shoyu-seasoned ramen), which contain wheat.",
+  "source": "https://osumituki.com/kyoto-ramen/208414.html",
+  "why": "The exact pattern to watch for, and it lands on the wrong bowl. The record extends a soy-sauce warning to 'shoyu-seasoned ramen' at a shop whose own cited page says the ramen it tasted was seasoned ほんのり塩味 - lightly SALTY. A coeliac is not helped by being told the salt bowl is a soy bowl, and the sho"
+ },
+ {
+  "city": "kyoto",
   "id": "kyr_ra_men_hi_wa_mata_noboru",
   "name": "ラー麺 陽はまた昇る 伏見稲荷駅前本店 (Ra-men Hi wa Mata Noboru Fushimi Inari Ekima)",
   "field": "soy_sauce_wheat",
@@ -736,6 +808,15 @@
   "text": "Bowls use a soy-sauce / dashi tare typical of Japanese chuka-soba, which standardly contains wheat-based soy sauce; no w",
   "source": "https://kyo-soku.com/2024/11/08/yukichi/",
   "why": "The tare sentence is invented from the genre label, not read off this page — this Kyoto branch is a truffle-oil 和麺 served with an A5 wagyu steak, not a chuka-soba, and no tare is described anywhere. Two solid wheat vectors are available instead: the ポン酢 dip served with the steak (ponzu is soy-sauce "
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_tantan_shijo_honten",
+  "name": "担担 四条本店 (Tantan Shijo Honten)",
+  "field": "soy_sauce_wheat",
+  "text": "Tantan-men is built on wheat noodles with a sesame broth and a soy/miso-based meat tare that conventionally contains whe",
+  "source": "https://kyotopi.jp/articles/KWTT4",
+  "why": "Genre inference again, and it drags in a miso warning the source does not license. The 肉みそ's miso type is nowhere stated, and 米味噌 / 豆味噌 / 西京味噌 are wheat- AND barley-free — this app has already been caught warning readers off wheat-free misos. What IS documented is the noodles: 細麺 as standard with a "
  },
  {
   "city": "kyoto",
@@ -784,6 +865,24 @@
  },
  {
   "city": "kyoto",
+  "id": "kyr_ramen_monsen_fushimi_sak",
+  "name": "らーめん門扇 伏水酒蔵店 (Ramen Monsen Fushimi Sakagura-ten)",
+  "field": "soy_sauce_wheat",
+  "text": "No source documents the tare composition, but a chicken-broth ramen of this style is conventionally seasoned with wheat-",
+  "source": "https://totteoki.kyoto.travel/34668/",
+  "why": "LOUD, and the same shape as the いしる case in the brief: we pinned this shop's gluten on an assumed soy tare while its real, documented gluten sat unnamed on the very page we cited. The page names Menya Teigaku wheat noodles, a カレーラーメン, and a lunch set of 唐揚げ + 餃子 + カレー — Japanese curry roux is wheat-"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_ramen_okura_ichijoji_ten",
+  "name": "ラーメン大蔵 一乗寺店 (Ramen Okura Ichijoji-ten)",
+  "field": "soy_sauce_wheat",
+  "text": "Shoyu and shio tare at a standard Japanese ramen shop are made with conventional wheat-based soy sauce; no gluten-free s",
+  "source": "https://www.hotpepper.jp/strJ000645666/",
+  "why": "This is the soy-sauce-from-genre defect, and it is aimed at the wrong bowl. The shoyu half is fine to keep as an explicit inference (a しょうゆラーメン is on the menu, and no gluten-free soy sauce is indicated anywhere — that part is true). But 'shio tare ... made with conventional wheat-based soy sauce' is"
+ },
+ {
+  "city": "kyoto",
   "id": "kyr_kyoto_toripaitan_soba_ju",
   "name": "京都鶏白湯そば 純 四条烏丸 (Kyoto Toripaitan Soba Jun Shijo-Karasuma)",
   "field": "soy_sauce_wheat",
@@ -808,6 +907,15 @@
   "text": "Multiple dedicated vegan bowls are a permanent menu item, and the kitchen emphasizes additive-free ingredients, which is",
   "source": "https://osumituki.com/kyoto-ramen/201250.html",
   "why": "Both halves fail, and because this is a POSITIVES field it reassures a reader on borrowed evidence. 'The kitchen emphasizes additive-free ingredients' is lifted from the NAME of the additive-free Kyoto-PORK rare-chashu ramen — a claim transplanted from the one dish a vegan cannot eat. 'Permanent men"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_seabura_no_kami_slurp",
+  "name": "セアブラノ神 slurp (Seabura no Kami slurp)",
+  "field": "soy_sauce_wheat",
+  "text": "The tsukemen tare is described as a blend of two soy sauce varieties cut with kombu-infused water; standard soy sauce is",
+  "source": "https://magazine.tabelog.com/articles/420882",
+  "why": "SCRAMBLED, AND IT ERASES A 塩ダレ. The tsukemen's tare is 塩ダレ; the two-soy-sauce blend flavours the kombu water the noodles sit in. Our sentence transplants the shoyu onto the tare and drops the salt entirely. The gluten conclusion is unchanged and in fact stronger than we wrote it: the noodles are 「麺屋"
  },
  {
   "city": "kyoto",
@@ -3328,6 +3436,33 @@
   "text": "No information is published about the soba kitchen's wheat-handling practices. Traditional soba shops often mix in wheat",
   "source": "https://tabelog.com/en/nagano/A2001/A200101/20000487/",
   "why": "LOUD: the claim's operative assertion is FALSE and it under-warns. It is not 'unknown whether this shop processes wheat products on the same surfaces' — udon (100% wheat) is on the menu, documented by two of the record's own three sources. And the shop's number-one seller is さらしなそば, milled from the "
+ },
+ {
+  "city": "nagano",
+  "id": "nagano_cafe_fuwa",
+  "name": "Cafe風和 (Cafe Fuwa)",
+  "field": "gf_cross_contamination",
+  "text": "No allergen or cross-contamination information is published anywhere. The kitchen prepares wheat-heavy items (baked cake",
+  "source": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "why": "WRONG HAZARD NAMED. The two curries here are Thai green curry and keema — spice/paste based, not roux — while the shop's documented wheat item is 車麸 (kuruma-fu: PURE WHEAT GLUTEN), served as the standard 前菜 with lunches: 「前菜の車麸とかぼちゃのサラダ！」 (elelplanning.naganoblog.jp, 2019-07-22), 「かぼちゃのサラダと車麸の煮物がまた絶"
+ },
+ {
+  "city": "nagano",
+  "id": "nagano_cafe_fuwa",
+  "name": "Cafe風和 (Cafe Fuwa)",
+  "field": "staff_allergy_handling",
+  "text": "No allergy-handling policy is documented on any source. The cafe is a small owner-operated establishment where the singl",
+  "source": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "why": "The 'single owner/cook' detail is invented; only the phone number checks out. Drop the staffing sentence or source it."
+ },
+ {
+  "city": "nagano",
+  "id": "nagano_cafe_fuwa",
+  "name": "Cafe風和 (Cafe Fuwa)",
+  "field": "positives",
+  "text": "Small, owner-run kitchen means fewer hands and potentially more flexibility to accommodate requests — calling ahead in J",
+  "source": "https://tabelog.com/en/nagano/A2001/A200101/20017948/",
+  "why": "Speculation dressed as a positive. 予約可 (reservations accepted) is the real, citable basis for 'call ahead'."
  },
  {
   "city": "nagano",

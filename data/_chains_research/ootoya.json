@@ -1,0 +1,41 @@
+{
+ "name": "Ootoya",
+ "name_ja": "大戸屋ごはん処",
+ "icon": "🐟",
+ "gf": {
+  "tier": "limited",
+  "best": "Order À LA CARTE, never the 定食: ミニしまほっけの炭火焼き (mini charcoal-grilled hokke — allergen table lists NOTHING) + ご飯 (plain white rice — lists nothing) + 味噌汁 (lists 大豆 only)",
+  "detail": "Ootoya publishes a real per-store 28-item allergen table, and it produces an unusually clean wheat-free plate — but ONLY if you build it yourself from single items. The composed 定食 sets are all 小麦: しまほっけの炭火焼き定食 = 小麦・ごま・大豆, さばの炭火焼き = 小麦・ごま・さば・大豆, メヌケ西京漬け = 小麦・大豆. The wheat is in the accompaniments, not the fish: 千切りキャベツ (the shredded-cabbage side, with its dressing) is itself 小麦・大豆. Strip them and the operator's own table shows ミニしまほっけの炭火焼き with no listed allergen at all, ご飯 with none, and 味噌汁 with 大豆 only — i.e. Ootoya's PLAIN miso soup is wheat-free, which is rare. Yes, plain salt-grilled fish is orderable — as the ミニ side. What kills the 'reliable' tier: Ootoya refuses all allergy accommodation in writing (「アレルギーによる調理方法の変更や、別の食材に変更するなどのご要望は受けておりません。」), and admits 「厨房器具、食器、茹で麺機、及び揚げ油は共有して使用しております。」 — utensils, crockery, the noodle boiler and the fryer oil are all shared, and they warn 「厨房内では、調理工程において意図せず使用食材に含まれないアレルギー物質が混入する場合があります。」 There is no sealed/low-allergen product line. Wheat-avoidance with excellent documentation, not a celiac guarantee."
+ },
+ "vegan": {
+  "tier": "none",
+  "best": "— (at best assemble ご飯 + ひんやり豆腐 + めかぶ, and accept an unquantified dashi risk)",
+  "detail": "The operator states it outright: 「大戸屋では現在、ヴィーガン・ベジタリアンの方向けの商品は展開しておりません。」 (FAQ Q6). There is no plant-based line, no soy patty, no vegetarian set. Items whose allergen rows look clean — ひんやり豆腐 (大豆), めかぶ (none), 明太子 (none, and it is fish roe), 大戸屋節 (none, and it is katsuobushi) — prove nothing about vegan status, because 鰹だし and 煮干し are NOT labelled allergens in Japan and are invisible in this table. Almost every side is finished with a dashi- or bonito-based tare. Combined with a blanket refusal to modify dishes, there is no defensible vegan meal here."
+ },
+ "both_gf_and_vegan": "NO. The wheat-free plate is grilled fish; there is no vegan item at all, by the operator's own statement.",
+ "caveats": [
+  "麦 TRAP — the allergen table CANNOT show barley. たっぷり野菜の麦みそ汁 and 麦みそ冷や汁 are made with 麦みそ (BARLEY miso) and are full of gluten, yet their allergen rows read only さば・大豆 / ごま・さば・大豆. Never order anything with 麦 in the name.",
+  "五穀ご飯 (multigrain rice) contains BARLEY — the item page says so explicitly: 「五穀ご飯には「ごま・大麦」が含まれます。」 Order plain 白米 (ご飯) instead. The table also notes 定食 allergens are quoted for the 白米 version only.",
+  "Ootoya refuses ALL allergy-driven changes: 「特定の食材、調味料等の変更のご要望はお受けできません。」 You cannot ask for a set without the cabbage — you must order the components separately.",
+  "Shared utensils, crockery, noodle boiler and fryer oil, per the operator. Anything 揚げ / 竜田 / かつ / フライ is celiac-unsafe by cross-contact regardless of its row.",
+  "Note the reversal on takeout: ミニしまほっけの炭火焼き lists NO allergens on the dine-in side menu but 小麦・大豆 in the 弁当 section — the bento version is not the same product. Check the section you are ordering from.",
+  "The allergen table is PER STORE (URL ends in the shop ID) and menus differ by branch — pull your own branch's table from the store's menu page.",
+  "Table-top 醤油 and seasonings are excluded from the allergen figures and are wheat.",
+  "とろろ looks harmless but is 小麦・さば・大豆・やまいも (dashi-shoyu). 納豆 here is 大豆 only, which is unusual — but the ちりめん/tare varies."
+ ],
+ "phrases": [
+  { "ja": "定食ではなく、単品でお願いします。ミニしまほっけの炭火焼きと、ご飯と、味噌汁をください。", "romaji": "Teishoku de wa naku, tanpin de onegai shimasu. Mini shimahokke no sumibiyaki to, gohan to, misoshiru o kudasai.", "en": "Not the set — à la carte please. The mini grilled hokke, plain rice, and miso soup." },
+  { "ja": "小麦アレルギーです。麦みそのお味噌汁と五穀ご飯は大麦が入っているので避けたいです。", "romaji": "Komugi arerugii desu. Mugimiso no omisoshiru to gokoku-gohan wa oomugi ga haitte iru node saketai desu.", "en": "I have a wheat allergy. I need to avoid the barley-miso soup and the multigrain rice — they contain barley." },
+  { "ja": "千切りキャベツとドレッシングは抜いていただけますか？", "romaji": "Sengiri kyabetsu to doresshingu wa nuite itadakemasu ka?", "en": "Could I have it without the shredded cabbage and dressing?" }
+ ],
+ "sources": [
+  "https://www.ootoya.com/menu_list/info/allergy/27194",
+  "https://www.ootoya.com/menu_about/",
+  "https://www.ootoya.com/faq/",
+  "https://www.ootoya.com/menu_list/view/27194/1308",
+  "https://www.ootoya.com/menu_info/place_of_origin/",
+  "https://www.ootoya.com/menu"
+ ],
+ "allergen_page": "https://www.ootoya.com/menu_list/info/allergy/27194",
+ "checked": "2026-08-21"
+}
