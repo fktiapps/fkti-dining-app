@@ -1,0 +1,80 @@
+[
+ {
+  "id": "hiro_okonomiyaki_teppanyaki_k",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki is made on a shared teppan griddle using wheat batter and wheat noodles, so cross-contact with gluten is inherent across the menu.",
+  "url": "https://rurubu.jp/andmore/article/15786",
+  "verdict": "supported",
+  "found": "「生地の上にキャベツをたっぷりのせ、広島では定番のイカ天とネギを重ねていきます。」「麺はしっかりと下味をつけ、じっくりと焼きます。」 and, for the sole vegetable side, 「『焼きポテトサラダ』は、鉄板でジャガイモを潰しながら調理される」 — batter, noodles and squid tempura on one griddle, with the potato side cooked on that same griddle.",
+  "correct_url": null,
+  "http": "200 via iPhone UA on the plain URL (first route tried, no fallback needed)",
+  "method": "plain fetch with iPhone UA; HTML tag-stripped locally",
+  "note": "Article is venue-specific to こひなた (name, address 広島市中区大手町3-3-6, phone), not a generic okonomiyaki round-up, so it does evidence this venue. It never writes 小麦 explicitly — the wheat is carried by 生地/麺/イカ天 — and the strongest single line is the 焼きポテトサラダ being smashed and cooked on the same 鉄板."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppanyaki_k",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are finished with sweet okonomiyaki sauce (Otafuku-style), which is made with wheat.",
+  "url": "https://rurubu.jp/andmore/article/15786",
+  "verdict": "supported",
+  "found": "「『こひなた焼き』は、カリッと焼かれた麺とトロトロの半熟卵に辛口のオタフクソースが絡み合う、こひなたの人気メニューです。」 — the page names オタフクソース (Otafuku sauce) at this venue by brand.",
+  "correct_url": null,
+  "http": "200 via iPhone UA",
+  "method": "plain fetch with iPhone UA; brand cross-checked on Ecosia",
+  "note": "The venue-specific half (Otafuku sauce used here) is verbatim on the cited page; the 'made with wheat' half is product knowledge and is NOT on rurubu. Add Otafuku's own answer as a second source: https://contact.otafuku.co.jp/hc/ja/articles/5467333678607 — 「『お好みソース（本格）』に含まれるアレルギー物質の『小麦』は、原材料の醤油に由来しています。醤油以外に小麦の使用はございません。」"
+ },
+ {
+  "id": "hiro_okonomiyaki_teppanyaki_k",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Everything is cooked on one shared griddle alongside pork, egg, and seafood, so vegan separation is not feasible.",
+  "url": "https://rurubu.jp/andmore/article/15786",
+  "verdict": "supported",
+  "found": "「こひなた焼き（豚肉・卵・イカ天・ネギ）　1,000円（税込）」 and 「ジャガイモと、スパイスやチーズなどの調味料を合わせます。ポテトサラダには欠かせないマヨネーズもたっぷり使います！」「ポテトサラダの上にのっている温泉卵を崩しながら食べるのがおすすめです」",
+  "correct_url": null,
+  "http": "200 via iPhone UA",
+  "method": "plain fetch with iPhone UA",
+  "note": "Stronger than recorded: the one plant-looking dish on the page, 焼きポテトサラダ, itself carries cheese, mayonnaise and a soft-boiled egg on top and is cooked on the shared 鉄板 — so it is not a vegan fallback either."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppanyaki_k_3",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki, noodles, and griddle dishes share a common teppan; wheat batter and wheat-based sauces are central to the menu, so cross-contact with gluten is unavoidable.",
+  "url": "https://kuraya-kamiyacho.owst.jp/",
+  "verdict": "supported",
+  "found": "「全席に鉄板を完備しているので、個室でも熱々のまま楽しめます♪」「その他設備　全席に鉄板を設置」「お好み焼きのメニューは難と17品も！！」 and, in the course line-up, 「◆オススメ！鉄板ポテトサラダ…◆鉄板ホットケーキアイス添え」",
+  "correct_url": null,
+  "http": "200 via iPhone UA on the cited root (own/ownerside site, static HTML)",
+  "method": "plain fetch with iPhone UA",
+  "note": "Supported on the shared-griddle point, and better than recorded: a 鉄板ホットケーキ (wheat pancake) and a 鉄板ポテトサラダ are cooked on the same griddle at every seat, so the 'safe' vegetable and dessert items are cooked in the wheat path. The 'wheat-based sauces' clause is NOT on the page (see next item)."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppanyaki_k_3",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Standard Japanese soy sauce and okonomiyaki sauce (both typically wheat-containing) are used; no gluten-free sauce is mentioned.",
+  "url": "https://kuraya-kamiyacho.owst.jp/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 via iPhone UA; full page including 店舗詳細情報 and 詳細情報 blocks retrieved",
+  "method": "plain fetch with iPhone UA, then grep for 醤油/ソース/たれ/アレル across the whole document",
+  "note": "The page fetched completely and contains no occurrence of 醤油, ソース, たれ or any allergen statement — the only sauce-adjacent string is a dish name, 炙りネギチーズマヨ焼き. The second half ('no gluten-free sauce is mentioned') is true by absence, but the affirmative half is inferred from cuisine type, not read off this source. Reword to the wheat evidence the page does carry (17 お好み焼き, 鉄板ホットケーキ) or cite a menu source."
+ },
+ {
+  "id": "hiro_okonomiyaki_teppanyaki_k_3",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "All seats use a shared iron griddle that cooks oysters, beef, pork, and seafood, so any vegetable item would contact animal products.",
+  "url": "https://kuraya-kamiyacho.owst.jp/",
+  "verdict": "supported",
+  "found": "「全席に鉄板を完備」 plus the course contents 「◆オススメ！鉄板ポテトサラダ◆厚切り黒豚ベーコン◆牡蛎の鉄板酒蒸し◆ウニクレソン バケット添え◆オススメ！極上A5サーロインステーキ◆蔵屋スペシャル◆鉄板ホットケーキアイス添え」",
+  "correct_url": null,
+  "http": "200 via iPhone UA",
+  "method": "plain fetch with iPhone UA",
+  "note": "Exact match, with the specifics the claim asserts: oysters (牡蛎の鉄板酒蒸し), beef (A5サーロイン), pork (厚切り黒豚ベーコン), seafood (ウニ) — and the 鉄板ポテトサラダ sits in the same course, on the same griddle."
+ }
+]

@@ -128,5 +128,93 @@
   "http": "200 (plain curl, iPhone UA)",
   "method": "plain fetch of the cited menu page; full お品書き renders in the static HTML",
   "note": "The cited page carries the complete food and drink menu and the word 醤油 does not appear on it once — the soy-sauce framing is asserted, not sourced. gf:\"no\" is nevertheless right, and the SAME page proves it far better: にゅう麺 950円 (nyumen = wheat somen), 長野県直送盛りそば 800円 (Japanese soba is normally 20% wheat), plus ten fried items — 天ぷらの盛り合わせ、カキフライ、かきの天ぷら、煮穴子の天ぷら、小いわしの天ぷら、鶏の唐揚げ、小海老の唐揚げ、蓮根はさみ揚げ、茄子チーズベーコンのはさみ揚げ、カマンベールチーズの包み揚げ. Rewrite the claim onto those. Separately: this record carries NO vegan claim at all while vegan is set to \"no\" — the gap should be filled (the menu is fish/dairy/meat throughout, only 奥豆腐、トマトスライス、漬物盛り合わせ、五色納豆 come close and all are standard bonito-dressed izakaya items)."
+ },
+ {
+  "id": "hiro_kakigoya_fukuromachi_umi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The menu centers on oysters and seafood served grilled, steamed, and as sashimi, conventionally accompanied by Japanese soy sauce, which contains wheat; no wheat-free soy sauce is mentioned.",
+  "url": "https://umihei.com/",
+  "verdict": "supported",
+  "found": "The cited root carries the full お料理メニュー inline, including 「手羽先（コショウ焼き／しょうゆ焼）450円」 — soy sauce named outright — alongside 【名物☆がんがん焼き】(steamed), a ― 刺身 ― section and a ― 浜焼 ― section",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root, which renders the whole menu without JS",
+  "note": "Supported, and better than the record realises: しょうゆ焼 is an explicit soy-sauce item on the cited page, so the claim need not rest on \"conventionally\". Stronger wheat carriers on the same page go unmentioned — カキ鉄板ねぎ焼 (negiyaki, wheat batter), カキフライ, 小いわしフライ, 手羽先唐揚げ, なんこつ唐揚げ, 海老湯葉巻天ぷら, 穴子天ぷら, がんす, クリームチーズ鯛酒盗和え（クラッカー付）, and カキ味噌鍋 (miso). Worth adding."
+ },
+ {
+  "id": "hiro_kakigoya_fukuromachi_umi",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes are prepared on shared oyster grills and seafood stations, so any non-seafood item would carry a high risk of contact with shellfish and fish.",
+  "url": "https://umihei.com/",
+  "verdict": "supported",
+  "found": "― 揚げ物 ― lists フライドポテト 400円 in the same fryer section as 小いわしフライ、なんこつ唐揚げ、海老湯葉巻天ぷら、穴子天ぷら；― 浜焼 ― sells 「おすすめ浜焼5種（サザエ、車海老、ししゃも、がんす、いか一夜干し）」 as one plate",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root",
+  "note": "Supported. The clinching detail is that the only plant item in the fried section, フライドポテト, sits in the same list as four fish fries, and the five-item 浜焼 is sold as a single shared grill plate — cite those specifics rather than the generic \"shared stations\". vegan:\"no\" is correct: 冷やしトマト, 黒枝豆 and 手造り豆腐 are the only near-vegan items and all are standard bonito-dressed izakaya dishes."
+ },
+ {
+  "id": "hiro_kakiwai",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The house specialty is an oyster oil-preserve and the cafe also serves dairy-based cheesecake, so the kitchen routinely handles seafood and dairy; no separate vegan preparation is described.",
+  "url": "https://co-trip.jp/article/413394",
+  "verdict": "supported",
+  "found": "「『牟蠿祝』のメニューの中で、最も重要な位置を占めているのが「牟蠿屋のオイル漬け」です。これこそ、このカフェのコンセプトになっている看板メニューです」 and 「濃厚なレアチーズと甘酸っぱいレモンの幸福なコラボ」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited co-trip article, then cross-checked against the venue's current official menu",
+  "note": "Both halves are in the cited article verbatim. Caveat: the article is dated 2019-11-04 and co-trip footers it with 「掲載の内容は、記事公開時点のものです」, so pair it with the live menu at https://www.kakiwai.jp/menu, which still lists 牟蠿屋のオイル漬け ¥1,500 and 広島レモンレアチーズケーキ and now adds 生ハムの盛り合わせ ¥1,850 (pork) — a third animal item the record does not mention. Venue is trading (site live, Aug 2026)."
+ },
+ {
+  "id": "hiro_kakiya",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Oyster dishes are dressed with standard Japanese seasonings and the menu includes fried (breaded) oysters and oyster rice, which typically rely on wheat-based soy sauce, flour, and dashi; no gluten-free preparation is documented.",
+  "url": "https://www.kaki-ya.jp/",
+  "verdict": "supported",
+  "found": "Cited root: 「牟蠿屋定食…看板メニュー「焼き牟蠿2ケ」から「牟蠿フライ」「牟蠿めし」「牟蠿屋のオイル漬け」「牟蠿の味噌汁」など大満足の内容」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA; Wix site renders the text server-side)",
+  "method": "plain fetch of the cited root, then the site's own /foof menu page",
+  "note": "Fried oysters and oyster rice are both named on the cited root, so the claim stands. Two upgrades available on the venue's own menu page https://www.kaki-ya.jp/foof: the set also contains 牟蠿の佃煎 (soy-simmered — real soy-sauce evidence, not an inference), and 牟蠿屋のオイル漬け is described as 「牟蠿にオイスターソースを纏わせながら」 — oyster sauce is routinely wheat-thickened. Also flag 牟蠿の味噌汁 for barley miso."
+ },
+ {
+  "id": "hiro_kakiya",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Every dish is built around oysters (shellfish) cooked on a shared grill and fryer, so the kitchen is not suitable for vegan diners and there are no plant-only options.",
+  "url": "https://www.kaki-ya.jp/",
+  "verdict": "supported",
+  "found": "Cited root: 「宮島唯一、牟蠿だけを扱う専門店…牟蠿のみを提供し、牟蠿の美味しさを追求する」; menu page states outright 「No fish. No meat. Just Oysters. 当店のメニューに、魚も肉もございません。あるのはただひとつ、牟蠿だけ。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root plus /foof",
+  "note": "As strong as this gets — the venue states in its own words that oysters are the only thing it serves. vegan:\"no\" is unarguable. Add https://www.kaki-ya.jp/foof, which also reveals dairy (牟蠿グラタン: butter-garlic and cheese) that the vegan_detail omits."
+ },
+ {
+  "id": "hiro_kakiya",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.kaki-ya.jp/foof",
+   "https://www.kaki-ya.jp/"
+  ],
+  "why": "The venue's own menu page says 「No fish. No meat. Just Oysters」 and lists only five food items, two of which are naturally gluten-free as served: 焼き牟蠿 (oysters seared in the shell over open flame, no batter and no sauce) and 生牟蠿 (raw, Nov-Mar). Only 牟蠿フライ uses the fryer, and the wheat risks (佃煎, 味噌汁, the oyster-sauce oil-preserve) sit in separate dishes rather than in the grill line. \"Not gluten-free\" tells a celiac to skip a shop whose signature item is a bare grilled oyster; \"ask\" is the accurate call — it still requires the diner to confirm the grill and the set-meal sides themselves. No allergen policy is published, so nothing above ask is defensible."
+ },
+ {
+  "id": "hiro_kakiwai",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://www.kakiwai.jp/menu"
+  ],
+  "why": "The current official menu has exactly four food items: 広島レモンレアチーズケーキ, チョコレートケーキ, 牟蠿屋のオイル漬け ¥1,500 and 生ハムの盛り合わせ ¥1,850. The last two carry no batter, no noodle and no cooking step — the oil-preserve arrives as a jarred product from the affiliated 牟蠿屋 and the ham is sliced — so the record's \"cannot be assured anything is safe\" overstates a cake-and-drinks cafe where half the food menu is plated cold. The oil-preserve is made with オイスターソース, which is commonly wheat-thickened, and no allergen information is published, so \"ask\" — not anything higher — is what the evidence carries."
  }
 ]

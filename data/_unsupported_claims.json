@@ -2071,12 +2071,30 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_shirunashi_tantanmen_aji",
+  "name": "汁なし担担麺 味源 (Shirunashi Tantanmen Ajigen)",
+  "field": "soy_sauce_wheat",
+  "text": "The dish is a brothless dan dan noodle made with wheat noodles and a soy/sesame seasoning, which conventionally contains",
+  "source": "https://www.modokimaru.com/entry/gourmet/230223",
+  "why": "The cited blog post names the sauce base as chili oil (ラー油) with crushed nuts, sansho and zasai — it says nothing about a soy or sesame seasoning. The gf: no label is still right, but on grounds the page does support: it is a shirunashi tantanmen shop that also sells 中華そば, both wheat-noodle dishes. "
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_miyajima_base",
   "name": "ミヤジマベース (Miyajima Base)",
   "field": "gf_cross_contamination",
   "text": "The entire menu is free of wheat, egg, and dairy, so there are no gluten-containing dishes prepared in the same kitchen.",
   "source": "https://miyajima-base.com/about-us/",
   "why": "ALARMING — the record's own other source contradicts the conclusion. endlessdistances.com, cited three times on this same record, states: 'Anyway, Miyajima Base is not dedicated gluten free. Their eel conger bowl contains gluten, but it is prepared separately and they warned me about this.' Mitigati"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_shirunashi_tantanmen_kis_2",
+  "name": "汁なし担担麺 きさく (Shirunashi Tantanmen Kisaku)",
+  "field": "gf_cross_contamination",
+  "text": "The kitchen is a single-dish wheat-noodle counter; noodles are boiled in shared water and the sauce contains gluten-bear",
+  "source": "https://ikusumu.com/funairi/kisaku.html",
+  "why": "Two mechanisms in this claim are asserted rather than sourced: the page never mentions shared boiling water, and it names the tare as chicken-and-niboshi dashi with sansho, not a soy-based seasoning. What the page does support is that every noodle dish on the menu is wheat. Reword to that and drop t"
  },
  {
   "city": "hiroshima",
@@ -2089,12 +2107,39 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_shiomachi_sushi_tsurumi",
+  "name": "汐まち寿司 つるみ (Shiomachi Sushi Tsurumi)",
+  "field": "vegan_cross_contact",
+  "text": "Even the rice is cooked in a kombu-and-bonito dashi and bonito flakes are used within dishes, so fish products are perva",
+  "source": "https://hatsumeshi.com/shiomachizushitsurumi/",
+  "why": "The page contradicts the distinguishing half of the claim: the rice dashi is kombu-only (昆布だし), not kombu-and-bonito, and the same kombu dashi is reused for the soup. Bonito flakes in dishes is supported. Reword to 'bonito flakes are used within dishes; the rice and soup dashi is kombu' — the vegan:"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_hiroshima_kakidokoro_tai",
   "name": "広島牡蠣処 大衆酒場バケツ 立町店 (Hiroshima Kakidokoro Taishu Sakaba Baketsu T)",
   "field": "soy_sauce_wheat",
   "text": "Standard Japanese seafood izakaya dishes here rely on conventional wheat-based soy sauce; no gluten-free soy sauce is do",
   "source": "https://tabelog.com/hiroshima/A3401/A340112/34026949/",
   "why": "醤油 / しょうゆ / ポン酢 appear ZERO times on the cited page or its menu tab, so the page cannot evidence a soy-sauce claim. The nearest real seasoning evidence there is 「甘辛く煮詰めた牛すじ肉」 (a soy-mirin braise) and タルタルソース. Either repoint the entry at that sujikon line or drop the soy sentence — the record's wheat"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_okonomiyaki_junia",
+  "name": "お好み焼き じゅにあ (Okonomiyaki Junia)",
+  "field": "soy_sauce_wheat",
+  "text": "Okonomiyaki and Fuchu-yaki are finished with a standard sweet okonomiyaki sauce, which is wheat-and-soy based; the dishe",
+  "source": "https://junia-hiroshima.wixsite.com/okonomiyaki",
+  "why": "Sauce and noodles are documented as present, but nothing on the site states either is wheat- or soy-based, so the gluten assertion is inference presented as sourced. Cite the composition to https://www.htv.jp/program/okonomiyaki_old/backno/160730.html (Hiroshima TV's own visit to this shop, which wa"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_bunchan",
+  "name": "文ちゃん (Bunchan)",
+  "field": "soy_sauce_wheat",
+  "text": "Hiroshima okonomiyaki sauce is wheat-based, and standard soy sauce contains wheat; no gluten-free sauce is indicated.",
+  "source": "https://tabelog.com/hiroshima/A3401/A340114/34001572/",
+  "why": "The Tabelog page says nothing about soy sauce or okonomiyaki sauce; the only sauce token on it is the word ウスターソース inside the auto-generated review keyword cloud, which evidences nothing about what the shop uses. The venue's own menu page (Okonomimura) names no sauce brand either. Either drop the ve"
  },
  {
   "city": "hiroshima",
@@ -2125,6 +2170,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_oyster_smoked_bar_sango",
+  "name": "オイスター&スモークドバー サンゴ (Oyster & Smoked BAR SANGO)",
+  "field": "soy_sauce_wheat",
+  "text": "Izakaya-style oyster and smoked dishes here are typically seasoned with standard Japanese soy sauce, which contains whea",
+  "source": "https://www.hotpepper.jp/strJ001215656/",
+  "why": "gf: no is right but the stated reason is not on the page and mis-describes the venue — it is an oyster/smoked bar serving pizza, pasta, gratin, fried oyster, shrimp fritto and baguette, i.e. direct wheat in the dishes themselves. Replace the soy-sauce reasoning with those menu items."
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kiyomori_chaya",
   "name": "清盛茶屋 (Kiyomori Chaya)",
   "field": "vegan_cross_contact",
@@ -2140,6 +2194,42 @@
   "text": "The dipping sauces are soy-sauce and dashi based; standard Japanese soy sauce contains wheat.",
   "source": "https://mrs.living.jp/hiroshima/town_gourmet/reporter/4968095",
   "why": "The claim is sound as general soba practice but the cited page never states it, and no source found gives this shop's tsuyu recipe. Stronger page-level wheat evidence exists instead: the live Tabelog menu (更新日 2026/06/13) lists たぬきそば (tenkasu = fried wheat batter), 月見きつねそば, 天ぷらそば and 天ぷらそば切り, and th"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_kaiya_ren",
+  "name": "貝や 廉 (Kaiya Ren)",
+  "field": "vegan_cross_contact",
+  "text": "The kitchen is entirely shellfish- and seafood-based (oysters, shellfish sashimi, fish/shellfish dashi), so any plant it",
+  "source": "https://r.gnavi.co.jp/3mrsyfct0000/",
+  "why": "ALARMING: this is the record's own citation contradicting the record. vegan_detail asserts 'There is no documented plant-based menu' while the page it cites advertises 「ベジタリアンメニューご相談」. The shellfish-cross-contact conclusion is still sound (the operator page names 貝出汁の茶碗蒸し and an all-shellfish concep"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_kimuraya_honten",
+  "name": "木村家本店 (Kimuraya Honten)",
+  "field": "gf_cross_contamination",
+  "text": "All momiji manju are baked from a wheat-flour batter, so the entire product line contains gluten; there is no gluten-fre",
+  "source": "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+  "why": "The cited article fetched fine and is genuinely about this shop, but it publishes NO ingredient list and never writes 小麦 or 小麦粉 — it discusses 生地 texture, 乳化剤不使用, こしあん, 豆乳クリーム and チーズ only. The claim is true as category knowledge (the same blog's https://oyakodetanoshimou.com/momijimanju-report/ pri"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_kimuraya_honten",
+  "name": "木村家本店 (Kimuraya Honten)",
+  "field": "vegan_cross_contact",
+  "text": "The shop makes dairy-based fillings (cheese, soy-milk cream) alongside the bean-paste varieties in the same small operat",
+  "source": "https://oyakodetanoshimou.com/kimuraya-honten-momijimanju-miyajima/",
+  "why": "MISTRANSLATION DEFECT. 豆乳クリーム is SOY-MILK cream — plant-based, not dairy. The record files it under 'dairy-based fillings', which is the same 植物性/丸大豆 error class the brief warns about, and it is the one item at this shop a vegan might actually be steered toward. Cheese is real dairy and is on the pa"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_hanabishi",
+  "name": "花菱 (Hanabishi)",
+  "field": "soy_sauce_wheat",
+  "text": "Anagomeshi and oyster dishes at this kind of eatery are conventionally prepared with Japanese soy sauce / tare, which co",
+  "source": "https://4travel.jp/dm_shisetsu/10180622",
+  "why": "Dishes confirmed; the wheat assertion is unsourced inference resting on a citation that carries zero ingredient content. Also stale — 4travel's newest review here is dated 2019, so it cannot evidence current practice either way — and the live URL 403s every user-agent, so a reader who clicks it gets"
  },
  {
   "city": "hiroshima",
@@ -2161,6 +2251,42 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_ganso_hassho",
+  "name": "元祖八昌 (Ganso Hassho)",
+  "field": "soy_sauce_wheat",
+  "text": "The okonomiyaki is finished with Mitsuwa okonomiyaki sauce, a wheat-containing sauce.",
+  "source": "https://www.chugoku-np.co.jp/articles/-/346273",
+  "why": "LOUD, wrong direction — this warns a celiac off something the manufacturer labels wheat-free. Mitsuwa okonomiyaki sauce declares apple and soy only; the owner's own 「ちょい辛め」 matches ミツワお好みソースちょい辛#6, which is also りんご・大豆. Drop the sauce as a gluten source (or downgrade it to a shared-dispenser cross-c"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_puchi_heike",
+  "name": "プチ平家 (Puchi Heike)",
+  "field": "soy_sauce_wheat",
+  "text": "The signature anago rice is finished with a soy-sauce-based tare, which in standard Japanese preparation contains wheat.",
+  "source": "https://miyajima-jukeiso.com/putiheike/",
+  "why": "gf: no is correct but under-argued from the wrong detail. The page itself gives far stronger direct evidence than an inferred tare: udon and soba, tempura, tonkatsu, fried oyster and shrimp, karaage, curry roux and hot dogs all from one small counter kitchen. Rewrite the claim from the listed menu. "
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_shonenba",
+  "name": "焼念場 (Shonenba)",
+  "field": "soy_sauce_wheat",
+  "text": "Teppanyaki, yakitori and the signature miso-sauce dishes rely on standard Japanese soy sauce and miso, which contain whe",
+  "source": "https://www.syonenba.com/teppan.html",
+  "why": "The miso half is on the page (秘伝の旨辛みそダレ on both the 焼念場やき and the ホルモン辛みそ焼); the soy-sauce half is not — the word 醤油 appears nowhere on this site, and the claim is cuisine convention stated as if sourced. Yakitori is also not on this page at all (it lives on a separate 焼き鳥 tab), so citing teppan.htm"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_hiroshima_kinchaiya",
+  "name": "ひろしま きんちゃい屋 (Hiroshima Kinchaiya)",
+  "field": "soy_sauce_wheat",
+  "text": "Hiroshima okonomiyaki uses wheat-containing okonomiyaki/soy-based sauces; no wheat-free sauce is documented.",
+  "source": "https://tabelog.com/hiroshima/A3401/A340110/34031233/",
+  "why": "The cited listing never mentions sauce or soy sauce at all — the claim is a genre generalisation attached to a page that does not carry it. The record's gluten case does not need it (batter, 袋麺, イカ天 and a single griddle are all on the page); either drop the sentence or cite an okonomiyaki-sauce refe"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_menba_jintoku",
   "name": "麺場神徳 (Menba Jintoku)",
   "field": "soy_sauce_wheat",
@@ -2176,6 +2302,15 @@
   "text": "Japanese-style dishes use standard soy sauce, which contains wheat; no wheat-free seasoning is mentioned.",
   "source": "https://www.hotpepper.jp/strJ001010070/",
   "why": "Unsupported, and mildly wrong in direction: the cited page's own copy stresses salt-and-lemon / moshio-and-wasabi / olive-oil finishing on the headline oyster, anago and octopus dishes. The soy-sauce line is an unevidenced genre assumption. Reword as an assumption or drop it; the wheat hazard here i"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_hiroshima_ramen_takahiro",
+  "name": "広島らーめん たかひろ (Hiroshima Ramen Takahiro)",
+  "field": "vegan_cross_contact",
+  "text": "Broth is pork-bone based with chashu pork; oyster ramen and oden include seafood, so animal products are integral throug",
+  "source": "https://tabelog.com/hiroshima/A3401/A340121/34022511/",
+  "why": "Textbook transplant defect: the 'oyster ramen' was picked up from a neighbouring 食べログまとめ banner about other Hiroshima-station restaurants, not from this shop, and it appears on no menu tab. Delete that clause. vegan_status 'no' still stands on the pork-bone broth, pork-belly chashu and 煮込み alone. TR"
  },
  {
   "city": "hiroshima",

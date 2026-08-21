@@ -1,0 +1,41 @@
+[
+ {
+  "id": "hiro_miyajima_curry_pan_kenky",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "All products are wheat-flour curry breads fried in a shared kitchen, so there is no gluten-free safe option.",
+  "url": "https://bigset.jp/",
+  "verdict": "supported",
+  "found": "/point/: 「当店で具材に合わせ、一から作った5種類 (カレーパン生地、食パン生地、トマト生地、黒生地、辛みの一味生地)の生地で包み込み」 and 「ブラックペッパーを混ぜたパン粉で揚げ」 — all five doughs are bread doughs, every one of the 15+ listed items is a fried panko-crumbed curry bread, and one (ホエー豚角煮) adds a 「そば衣」 coating. No allergen or gluten-free page exists on the site.",
+  "correct_url": null,
+  "http": "200 plain curl for /, /about/, /point/, /shop/ (no UA needed)",
+  "method": "plain fetch of the cited root plus its three content subpages",
+  "note": "Holds fully: the entire product line is deep-fried wheat bread and the site documents no allergen handling. The 安全 language on /about/ refers to sourcing, not allergens."
+ },
+ {
+  "id": "hiro_miyajima_curry_pan_kenky",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Signature items contain oysters (shellfish) and other varieties contain wagyu beef; breads are not plant-based.",
+  "url": "https://bigset.jp/",
+  "verdict": "supported",
+  "found": "Cited root: 「広島産の牡蠣をはじめ広島黒毛和牛などの具材を使用した、唯一無二のオリジナルカレーパンを15種類以上取り揃えています。」 /point/ itemises 「名物宮島牡蠣カレーパン」(two Hiroshima oysters), 「雅　和牛カレーパン」, 「牛すじ黒カレーパン」, 「牛牛牛タンカレーパン」, 「とろ〜り半熟卵カレーパン」, モッツァレラチーズ, バターチキン, ホエー豚角煮.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited root plus the /point/ item list",
+  "note": "Supported on the cited root itself; /point/ adds item-level detail. Not one of the 15+ published items is plant-based."
+ },
+ {
+  "id": "hiro_miyajima_hanayashiki",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The grilled oysters are finished with soy-butter, miso-butter and lemon-soy-butter sauces, which use standard wheat-based Japanese soy sauce and miso.",
+  "url": "https://hatsukaichi-concierge.media/article/detail/371",
+  "verdict": "wrong_source",
+  "found": "The cited article's みやじま華屋敷 section says only 「王道の生牡蠣はもちろん、チーズベーコン牡蠣、レモン醤油バター牡蠣などの、変わった牡蠣メニューを楽しむことができます！」 — one of the three named sauces. The other two are evidenced elsewhere: rabico63 transcribes the board as 「しょう油バター 焼きがき 2個 ¥750 / みそバター 焼きがき 2個 ¥750」, and the Nohgaku Association guide says 「「みやじま華屋敷」の醤油バターや味噌バター」. The shop's own Threads/Instagram posts price 「醤油バター焼きガキ￥800」 and 「みそバター焼きガキ￥800」 and add 「味噌は色んな味噌をブレンドして作った特製味噌です」.",
+  "correct_url": "https://www.rabico63.com/entry/hanayasiki_miyazima",
+  "http": "cited article 200 plain curl; Ecosia 200 (desktop UA); tabelog answered on s.tabelog.com with an iPhone UA after a 302 off tabelog.com",
+  "method": "plain fetch of the cited page, then Ecosia search on the exact sauce names (Ecosia was the working engine this run)",
+  "note": "Claim is true but over-reaches its citation — the hatsukaichi article names only レモン醤油バター. Repoint to the rabico63 menu transcript or the shop's own Instagram/Threads posts. Separately: tabelog lists the shop homepage as http://hanayashiki.bambina.jp/, now NXDOMAIN; the shop itself is trading (tabelog 10:00-19:00, reviews to 2025/11)."
+ }
+]

@@ -50,5 +50,70 @@
   "found": "「山椒の効いた担々ソースでピリ辛な担々焼き(豚ミンチ・ネギ・目玉焼き)…白焼き（ホワイトソース・Wチーズ）」 and 「納豆を玉子で包んだ《とん平納豆》や《天使のエビガーリック焼き》、広島ならではの《ウニほーれん》や《牛こうね》」 — pork mince, fried egg, cheese, prawn, sea urchin and beef, all teppan dishes.",
   "correct_url": "https://ya23000.gorp.jp/",
   "note": "Claim is true and now documentable: repoint to https://ya23000.gorp.jp/, whose own copy lists pork mince, egg, cheese, prawn, uni and beef cooked on the teppan."
+ },
+ {
+  "id": "hiro_okonomiyaki_junia",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Okonomiyaki and Fuchu-yaki are finished with a standard sweet okonomiyaki sauce, which is wheat-and-soy based; the dishes are also built on wheat batter and wheat noodles.",
+  "url": "https://junia-hiroshima.wixsite.com/okonomiyaki",
+  "verdict": "unsupported",
+  "found": "The whole of what the cited Wix root says on ingredients is 「特に麺は、製麺屋さんも絶対の自信を持つ最高の茹で麺で仕上げています」 and 「キャベツの甘みとソースが抜群に合い」. The words 小麦 and 醤油 appear nowhere; the /menu page is an empty Wix placeholder reading only 「Menu What's on your menu?」.",
+  "correct_url": null,
+  "http": "200 plain curl (575KB) for root; /menu 200 but blank; /about_us 200",
+  "method": "1 plain fetch of cited root + 2 plain fetches of subpages",
+  "note": "Sauce and noodles are documented as present, but nothing on the site states either is wheat- or soy-based, so the gluten assertion is inference presented as sourced. Cite the composition to https://www.htv.jp/program/okonomiyaki_old/backno/160730.html (Hiroshima TV's own visit to this shop, which walks through 生地・キャベツ・牛脂ミンチ・卵・麺) and mark the sauce ingredient as an assumption."
+ },
+ {
+  "id": "hiro_okonomiyaki_junia",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The signature Fuchu-yaki is made with beef-fat mince, and a shared teppan is used for all dishes including meat, egg, and noodles, so vegan separation is not feasible.",
+  "url": "https://junia-hiroshima.wixsite.com/okonomiyaki",
+  "verdict": "wrong_source",
+  "found": "「ここで府中焼きの特徴！モヤシは入れず、豚バラではなく牛脂ミンチを使います。牛脂がキャベツに溶け、甘さは倍増！」 and 「しっかり火を通したら真ん中にくぼみを作り、そこに卵を投入！…麺はパリパリに焼き、キャベツの上にのせて完成です！」 — Hiroshima TV, 2016/07/30, page identifies the shop by address 広島市中区立町3-21 and TEL 082-247-1033.",
+  "correct_url": "https://www.htv.jp/program/okonomiyaki_old/backno/160730.html",
+  "http": "200 plain curl for cited Wix root; 200 for htv.jp; Ecosia SERP 200 (Yahoo Japan not needed)",
+  "method": "plain fetch of cited page, then Ecosia search on 府中焼き ミンチ, then plain fetch of the HTV article",
+  "note": "The 牛脂ミンチ (beef-fat mince) detail is correct but is nowhere on the cited Wix site — repoint to the HTV article, which states it outright and also confirms the egg and the griddled noodles. A Tabelog review of the same shop adds 「イカ天、天かす、そば、玉子も入ります。ミンチの牛脂も。」 (https://tabelog.com/hiroshima/A3401/A340112/34018451/), i.e. squid tempura and tenkasu — two more wheat items the record does not mention."
+ },
+ {
+  "id": "hiro_okonomiyaki_kishibe_2",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Everything is cooked on a single shared teppan griddle where wheat-batter okonomiyaki and wheat noodles are prepared, so cross-contact with gluten is unavoidable.",
+  "url": "https://hatsukaichi-concierge.media/article/detail/214",
+  "verdict": "supported",
+  "found": "「おばちゃんが注文を受けて、黙々と鉄板でお好み焼きを焼いていきます」、「いい感じになってきたら今度は麺を焼いていきます！ 麺も一緒に焼いていってほぼ完成の形になります」、「地元民は鉄板の上に載せたまま、少しずつ取って食べていくみたいです！」、and a quoted review noting 「他にも焼きそばやラーメン、鉄板焼のメニューがあります」.",
+  "correct_url": null,
+  "http": "200 plain curl (77KB)",
+  "method": "1 plain fetch",
+  "note": "Correctly cited: the article's own step-by-step shows the noodles griddled on the same teppan as everything else, and the venue also runs yakisoba and ramen. Cross-checked identity — article address 廿日市市宮島町483-2 matches the record's Tabelog entry 34014823 exactly, so this is not a sibling-branch mix-up."
+ },
+ {
+  "id": "hiro_okonomiyaki_kishibe_2",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are finished with sweet Otafuku-style okonomiyaki sauce, which is wheat-based.",
+  "url": "https://hatsukaichi-concierge.media/article/detail/214",
+  "verdict": "supported",
+  "found": "「最後にソースをつけていきます。ここで香ばしい匂いがして…」 plus the article's quoted Mr.カマクラ review: 「オタフクソースが甘く、しゃきしゃきとした野菜とよく合いますな。」",
+  "correct_url": null,
+  "http": "200 plain curl (77KB); Tabelog cross-check 200 via iPhone UA",
+  "method": "1 plain fetch + iPhone-UA Tabelog fetch for corroboration",
+  "note": "Otafuku sauce is named on the cited page by brand, and the shop's Tabelog FAQ block independently prints 「◉ソース：オタフク ◉そば：蒸し麺」. Otafuku お好みソース carries 小麦 in its declared allergens, so the wheat conclusion holds."
+ },
+ {
+  "id": "hiro_okonomiyaki_kishibe_2",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The shared griddle and dishes routinely involve pork, egg and seafood, so vegan cross-contact cannot be avoided.",
+  "url": "https://hatsukaichi-concierge.media/article/detail/214",
+  "verdict": "supported",
+  "found": "「オススメのスペシャルを注文しました。海鮮と卵を割ってスタートです」、「野菜と肉も一緒に焼いていきます！」, and the quoted reviews 「ネギたっぷり海鮮もたっぷり」 and 「キャベツともやしと肉と卵というシンプルな肉玉そばを注文」.",
+  "correct_url": null,
+  "http": "200 plain curl (77KB)",
+  "method": "1 plain fetch",
+  "note": "Fully supported by the article's own account — seafood and egg are cracked straight onto the griddle, meat cooked alongside. Venue is trading: Tabelog 34014823 shows current hours with no 閉店/掲載保留 badge."
  }
 ]

@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_oyster_smoked_bar_sango",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Izakaya-style oyster and smoked dishes here are typically seasoned with standard Japanese soy sauce, which contains wheat; no wheat-free seasoning is advertised.",
+  "url": "https://www.hotpepper.jp/strJ001215656/",
+  "verdict": "unsupported",
+  "found": "The words 醤油 / しょうゆ / ポン酢 appear nowhere on the listing top page, the /food/, /drink/ or /course/ tabs. The menu is Western-leaning: 「マルゲリータ ピッツァ 800円」「牡蠣とベーコンのピッツァ 880円」「本日のカキパスタ 880円」「カキグラタン 780円」「大粒カキフライ（４ヶ）780円」「甘エビのフリット 480円」「フライドポテト 380円」「バケット 200円」.",
+  "correct_url": null,
+  "http": "200 iPhone UA on /, /food/, /drink/, /course/ (plain curl also 200); the venue's own site www.sango-3515.com/sango/ returns 403 to every UA",
+  "method": "iPhone-UA fetch of the cited listing plus its three menu tabs, then string search for soy-sauce terms",
+  "note": "gf: no is right but the stated reason is not on the page and mis-describes the venue — it is an oyster/smoked bar serving pizza, pasta, gratin, fried oyster, shrimp fritto and baguette, i.e. direct wheat in the dishes themselves. Replace the soy-sauce reasoning with those menu items."
+ },
+ {
+  "id": "hiro_oyster_smoked_bar_sango",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen smokes and fries seafood, bacon, and cheese on shared equipment, so any vegetable item would share surfaces and oil with animal products.",
+  "url": "https://www.hotpepper.jp/strJ001215656/",
+  "verdict": "supported",
+  "found": "「3種盛燻製プレート／5種盛燻製プレート — 牡蠣・ベーコン・手羽元・いぶりがっこ・サーモン・卵・チーズ・タコetc日替わりでご提供いたします。」 (the /food/ tab of the cited listing). The same kitchen fries 大粒カキフライ, 甘エビのフリット and フライドポテト.",
+  "correct_url": null,
+  "http": "200 iPhone UA (also 200 plain)",
+  "method": "iPhone-UA fetch of the cited listing; ingredient breakdown is on its /food/ tab",
+  "note": "Exactly right, and the smoker line names oyster, bacon, egg, cheese and salmon rotating through one smoker, with the only plant items (いぶりがっこ, 枝豆, アボカド, ミックスナッツ, 広島菜のピクルス) sharing that smoker or the shared fryer. Consider citing the /food/ tab directly, where the sentence lives."
+ },
+ {
+  "id": "hiro_primevere",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Fresh fruit juices and Hiroshima-lemon lemonade/soda are fruit-based, giving plant-based and gluten-avoiding visitors a simple, naturally suitable option.",
+  "url": "https://pleasure-luck.com/967.html",
+  "verdict": "wrong_source",
+  "found": "The cited article covers only the fresh juices — 「沢山のフルーツがストックしてあり、注文が入ってから、このフルーツをミキサーにかけてフレッシュジュースを作ってもらえます。」 — and never uses the word レモン. The lemon drinks are documented at tabiiro: 「生搾りレモンをたっぷり使った、さわやかな自慢の一杯。自家製シロップは甘さ控えめで…「レモンソーダ」「レモネード」「レモンミルク」「レモンバナナミルク」と種類も豊富に揃う。」",
+  "correct_url": "https://tabiiro.jp/gourmet/s/312593-hatsukaichi-primevere/",
+  "http": "200 plain curl for pleasure-luck.com/967.html, primevere-miyajima.com and tabiiro.jp; Ecosia 200 and Yahoo Japan 200 both surfaced the tabiiro page, Brave 429",
+  "method": "plain fetch of the cited article and the official site, then Ecosia + Yahoo Japan search for プリムベェール 宮島 レモン",
+  "note": "Split the claim: cite pleasure-luck for the made-to-order fruit juice and tabiiro for the lemon drinks. Also drop 'Hiroshima-lemon' — no source says the lemons are Hiroshima-grown, only 生搾りレモン — and note that レモンミルク/レモンバナナミルク and the article's featured ミックスベリーミルク are dairy, and the shop's food is ライスバーガー「サンド de おにぎり」and 肉巻きおにぎり棒 (pork), so this is not a blanket plant-based endorsement."
+ },
+ {
+  "id": "hiro_puchi_heike",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature anago rice is finished with a soy-sauce-based tare, which in standard Japanese preparation contains wheat.",
+  "url": "https://miyajima-jukeiso.com/putiheike/",
+  "verdict": "unsupported",
+  "found": "The page names あなご飯定食 and あなご飯 but never mentions タレ, 醤油 or any seasoning. What it does list is 「うどん・そば：ざるうどん・そば、平家うどん・そば、天ぷらうどん・そば、月見うどん・そば、きつねうどん・そば」「定食：かきフライ定食、えびフライ定食、鶏唐揚げ定食、とんかつ定食」「カレー、カツカレー」「小イワシ天ぷら」 and 「２０１９年９月現在、カレー、ホットドッグ、アルコール等の食事を提供中。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "gf: no is correct but under-argued from the wrong detail. The page itself gives far stronger direct evidence than an inferred tare: udon and soba, tempura, tonkatsu, fried oyster and shrimp, karaage, curry roux and hot dogs all from one small counter kitchen. Rewrite the claim from the listed menu. Note also 「営業時間 不定期」 (irregular hours) and that the menu note is dated September 2019 — worth a freshness flag, not a closure."
+ }
+]

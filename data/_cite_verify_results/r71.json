@@ -1,0 +1,54 @@
+[
+ {
+  "id": "hiro_shodai_coffee",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "A foreign-language menu is available and the café has barrier-free access.",
+  "url": "https://www.miyajima.or.jp/member/food.html",
+  "verdict": "supported",
+  "found": "松大珈琲 … <li class=\"on\">バリアフリー対応</li> <li class=\"on\">外国語メニュー対応</li>（住所 廿日市市宮島町853-2／営業時間 8：00～16：00／定休日 水、木／16名（全席禁煙）／クレジットカード不可）",
+  "correct_url": null,
+  "http": "200 (plain curl, 87.6 KB)",
+  "method": "1 plain fetch",
+  "note": "Both halves are on the cited page as explicit flags, and the class=\"on\" markup distinguishes them from the negative form used for neighbouring shops (HENLY carries バリアフリー非対応), so this is a positive assertion, not an absence. The same block also confirms the record's hours (8:00-16:00, closed Wed/Thu) and adds 「昭和の名残りある純喫茶。ネルドリップやサイフォンで淹れる本格的な珈琲が味わえます。テイクアウトも可。」 — the only food/drink description the page carries. Nothing on the page mentions gluten, allergens, milk alternatives or snacks, so the record's gf_detail claim that the cafe 'also serves light snacks' is not evidenced here; ask/ask is the right tier. Trading status OK: currently listed as an active member of the Miyajima Tourist Association restaurant directory."
+ },
+ {
+  "id": "hiro_shonenba",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Single shared teppan (iron griddle) used for wheat-batter okonomiyaki, soy/miso-sauced meats and seafood, so high cross-contact risk for gluten.",
+  "url": "https://www.syonenba.com/teppan.html",
+  "verdict": "supported",
+  "found": "「店主がカウンター目の前の鉄板で焼き上げます」／「ゲタカルビとホルモンを、ニンニクの芽と白ネギとともに鉄板の上で豪快に焼き上げます」／「焼念場やきの味の決め手は、親父から受け継いだ秘伝の旨辛みそダレ」／【お好み焼き】定番！肉玉そば 780円・定番！肉玉うどん 780円・辛いやつ（イカ天・ハバネロ麺）1,150円／【トッピング】イカ天…そばW、うどんW／カキバター 1,180円",
+  "correct_url": null,
+  "http": "200 (plain curl) on syonenba.com/teppan.html and /; 200 (iPhone UA) on s.tabelog.com/hiroshima/A3401/A340121/34026349/",
+  "method": "1 plain fetch of the cited page and the site root; Ecosia (https://www.ecosia.org/search?q=) found the Tabelog id for the trading check — Ecosia answered first try",
+  "note": "Every element is on the cited page: one teppan in front of the counter, wheat-batter okonomiyaki with soba/udon noodles, a miso tare, and oysters. A Tabelog reviewer independently calls it 「カウンター前の大鉄板」, confirming a single griddle. Two wheat sources the record misses and should add: イカ天 (squid tempura, sold both as an okonomiyaki variant and as a 160円 topping) and 天かす — 「豚バラ・たっぷりねぎ・卵の上に天かすをどっさり！この天かすこそが、焼念場のとんぺい焼の主役なのです」 — tempura crumbs are scattered on the shared griddle, which is a worse cross-contact vector than the sauce. Trading status OK: Tabelog 34026349 shows no 閉店 banner, address 南区大須賀町10-5 matching, hours 17:00-00:00 / 不定休."
+ },
+ {
+  "id": "hiro_shonenba",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Teppanyaki, yakitori and the signature miso-sauce dishes rely on standard Japanese soy sauce and miso, which contain wheat.",
+  "url": "https://www.syonenba.com/teppan.html",
+  "verdict": "unsupported",
+  "found": "「焼念場やきの味の決め手は、親父から受け継いだ秘伝の旨辛みそダレ」（miso only — the strings 醤油／しょうゆ／ソース return zero hits on the cited page and on the site root)",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + whole-page string search for 醤油/しょうゆ/ソース on teppan.html and on the site root",
+  "note": "The miso half is on the page (秘伝の旨辛みそダレ on both the 焼念場やき and the ホルモン辛みそ焼); the soy-sauce half is not — the word 醤油 appears nowhere on this site, and the claim is cuisine convention stated as if sourced. Yakitori is also not on this page at all (it lives on a separate 焼き鳥 tab), so citing teppan.html for a yakitori claim is a mis-cite even before the soy-sauce question. Also note the miso itself is unspecified: western-Japan shops often use 麦味噌, which is barley — the wheat/barley risk is real but this page does not establish it. Reword as an explicit assumption, or cite the yakitori page for the yakitori clause."
+ },
+ {
+  "id": "hiro_shonenba",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "All cooking is done on a shared griddle used for oysters, beef offal, wagyu and chicken; no vegan-safe preparation is documented.",
+  "url": "https://www.syonenba.com/teppan.html",
+  "verdict": "supported",
+  "found": "「カキバター 1,180円」／「ホルモン 辛みそ焼 1,480円」／「広島では親しまれている定番部位…焼念場では、そんな広島名物「コーネ」を和牛でご提供しています」／「上質な国産牛！ゲタカルビとホルモンを…鉄板の上で豪快に焼き上げます」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch of the cited page + the site root for the cooking-station question",
+  "note": "Oysters, beef offal and wagyu koune are all verbatim on the cited page and no vegan item or plant-based preparation appears anywhere on the site, so the substance holds. One correction: 'ALL cooking is done on a shared griddle' overstates it — the site root describes 「鉄板と焼き場を眺めながらお食事ができる1階カウンター席」, i.e. a griddle AND a separate yakitori grill, and the chicken (「選び抜いた国産の鶏肉を使用し、一本一本丁寧に焼き上げています」) is cooked on that second station, not the teppan. Drop 'chicken' from the griddle list or say 'the griddle and the adjacent yakitori grill'. The nominally plant items on the menu (焼豆, エリンギバター, 茄子トマトチーズ, ねぎ焼) all carry butter or cheese and share the teppan, so vegan: no is correct."
+ }
+]

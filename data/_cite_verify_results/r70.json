@@ -1,0 +1,80 @@
+[
+ {
+  "id": "hiro_shiomachi_sushi_tsurumi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Sushi service and the sweet anago tare glaze rely on standard soy-sauce-based seasonings, which contain wheat; no wheat-free seasoning is documented.",
+  "url": "https://hatsumeshi.com/shiomachizushitsurumi/",
+  "verdict": "supported",
+  "found": "「穴子のタレで味付けされたごはんと酢飯の間に、煮穴子、釜揚げしらす、広島菜、かつおぶしを挟んだ一品。」 and, naming soy sauce outright, 「炙りホタテ焦がし醤油雲丹のせ」 (seared scallop with charred soy sauce).",
+  "correct_url": null,
+  "http": "200, plain curl, no UA needed",
+  "method": "plain fetch of the cited page",
+  "note": "Holds: the page states the anago tare seasons the rice and separately names 焦がし醤油 on a nigiri, so soy sauce is documented rather than merely assumed; wheat-brewing is category knowledge and no wheat-free seasoning appears anywhere on the page."
+ },
+ {
+  "id": "hiro_shiomachi_sushi_tsurumi",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Even the rice is cooked in a kombu-and-bonito dashi and bonito flakes are used within dishes, so fish products are pervasive throughout the kitchen.",
+  "url": "https://hatsumeshi.com/shiomachizushitsurumi/",
+  "verdict": "unsupported",
+  "found": "「米は2日間かけて水から出す昆布だしで炊き上げる。」 — kombu dashi only, cold-brewed over two days; and 「しゃり用と同じ昆布だしを使っている」 for the asari clear soup. かつおぶし appears only inside the anago oshizushi (「広島菜、かつおぶしを挟んだ一品」) and as 「粗目のかつおぶし」 on top of it.",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "The page contradicts the distinguishing half of the claim: the rice dashi is kombu-only (昆布だし), not kombu-and-bonito, and the same kombu dashi is reused for the soup. Bonito flakes in dishes is supported. Reword to 'bonito flakes are used within dishes; the rice and soup dashi is kombu' — the vegan: no verdict is unaffected, the menu is oysters, nodoguro, tuna, shirasu and anago throughout."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_aji",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The dish is a brothless dan dan noodle made with wheat noodles and a soy/sesame seasoning, which conventionally contains wheat-based soy sauce.",
+  "url": "https://www.modokimaru.com/entry/gourmet/230223",
+  "verdict": "unsupported",
+  "found": "「砕いたナッツの食感が非常に効いています。…ラー油が軸になっているのかな、コクのある味わいでシンプルに完成度高いです。」 The words 醤油 and ゴマ/胡麻 never appear on the page.",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "The cited blog post names the sauce base as chili oil (ラー油) with crushed nuts, sansho and zasai — it says nothing about a soy or sesame seasoning. The gf: no label is still right, but on grounds the page does support: it is a shirunashi tantanmen shop that also sells 中華そば, both wheat-noodle dishes. Rest the field on the wheat noodles, or cite a page that actually documents the tare."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_kis_2",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The kitchen is a single-dish wheat-noodle counter; noodles are boiled in shared water and the sauce contains gluten-bearing seasonings, so gluten contact is unavoidable.",
+  "url": "https://ikusumu.com/funairi/kisaku.html",
+  "verdict": "unsupported",
+  "found": "The page describes an 8-seat counter whose menu is 汁なし担担麺 (温玉入り), \"ピン坦麺\" and \"冷し汁なし担担麺\" (トマトベース) plus 50-yen rice, and gives the tare as 「鶏と煮干しの出汁を掛け合わせた秘伝のタレ」. Nothing about boiling water, shared pots, or any gluten-bearing seasoning in the sauce.",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "Two mechanisms in this claim are asserted rather than sourced: the page never mentions shared boiling water, and it names the tare as chicken-and-niboshi dashi with sansho, not a soy-based seasoning. What the page does support is that every noodle dish on the menu is wheat. Reword to that and drop the shared-water sentence unless a source is found for it."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_kis_2",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature sauce is a chicken-and-dried-sardine broth blend; no gluten-free soy sauce is indicated and standard wheat-based seasoning should be assumed.",
+  "url": "https://ikusumu.com/funairi/kisaku.html",
+  "verdict": "supported",
+  "found": "「鶏と煮干しの出汁を掛け合わせた秘伝のタレと、花椒の痺れるような辛さがクセになる旨さの秘密。」",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "The chicken-and-niboshi tare is verbatim on the page and the page indicates no gluten-free seasoning, so the claim as written is accurate. Note it rests on an absence — the page never names 醤油 at all."
+ },
+ {
+  "id": "hiro_shirunashi_tantanmen_kis_2",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The core dish uses ground meat and a fish/chicken broth sauce, and is prepared on a single shared counter line, so animal ingredients are integral to the only menu item.",
+  "url": "https://ikusumu.com/funairi/kisaku.html",
+  "verdict": "supported",
+  "found": "「通常トッピングは青ネギと挽肉のみという潔さ。鶏と煮干しの出汁を掛け合わせた秘伝のタレ…」 plus 「汁なし担担麺温玉入り」 (soft egg).",
+  "correct_url": null,
+  "http": "200, plain curl",
+  "method": "plain fetch of the cited page",
+  "note": "Ground pork topping and a chicken/niboshi tare are both stated on the page, so vegan: no is correct. Minor wording: 'the only menu item' overstates — the page lists three noodle variants (汁なし担担麺, ピン坦麺, 冷し汁なし担担麺) plus 50-yen rice; say 'every noodle variant' instead."
+ }
+]

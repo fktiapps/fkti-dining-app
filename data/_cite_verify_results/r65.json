@@ -50,5 +50,57 @@
   "http": "200 (plain curl, iPhone UA)",
   "method": "plain fetch",
   "note": "Supported by the operator's own words. Worth adding to the record: the à-la-carte list carries whale (鯨のサエズリ / 鯨のベーコン) alongside beef and chicken — a fact many vegan and vegetarian travellers would want flagged explicitly. vegan_status 'no' is correct; no tier change. Trading: open — site live, current tax-inclusive prices, hours 昼11:30-14:30 / 夜17:30-22:00, 定休日 日曜日, no closure notice."
+ },
+ {
+  "id": "hiro_niku_no_masui",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Tonkatsu and other fried cutlets are breaded in wheat flour and panko and deep-fried; frying oil is shared across breaded items, so heavy cross-contact with gluten is expected.",
+  "url": "https://gotrip.jp/2019/01/106466/",
+  "verdict": "supported",
+  "found": "「こちらのお店では様々な美味しいメニューが提供されている。自慢の牛肉料理に、鶏肉料理、トンカツに、カレーなどなど、様々な美味しいメニューが目白押しだ。」",
+  "correct_url": null,
+  "http": "200 (plain curl / iPhone UA)",
+  "method": "plain fetch",
+  "note": "The page documents トンカツ and カレー on the menu, which carries the claim: tonkatsu is panko-breaded by definition and Japanese curry is a wheat-flour roux. Two caveats for the record's wording — the shared-fryer sentence is an inference this page nowhere states, and the harder anchor sits on the record's own website field: Tabelog lists the venue's genre as 広島 × とんかつ. Cite the genre or the curry rather than an unevidenced fryer claim."
+ },
+ {
+  "id": "hiro_niku_no_masui",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes such as sukiyaki and Western-style preparations use standard Japanese soy sauce and sauces, which contain wheat.",
+  "url": "https://gotrip.jp/2019/01/106466/",
+  "verdict": "supported",
+  "found": "「創業1956年（昭和31年）の広島が誇る老舗洋食店、それが『肉のますゐ（ますい）』」／「その中でも特にオススメなのがすき焼き。美味しい肉を仲居さんが絶妙の加減で焼いてくれる…」／「しっかりと卵を溶いて、肉をくぐらせれば…」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Supported in substance: the page's headline dish is sukiyaki (warishita is soy sauce, mirin and sugar by definition) and it calls the venue a 洋食店 serving カレー, i.e. wheat-roux demi-glace and curry sauce. The page itself never prints the word 醤油, so the record is inferring; the curry named in the same sentence is the stronger, directly-documented wheat carrier. gf 'no' is correct."
+ },
+ {
+  "id": "hiro_niku_no_masui",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "This is a meat-focused, butcher-run restaurant where nearly every dish centers on beef or pork; no vegan or plant-based items are documented.",
+  "url": "https://gotrip.jp/2019/01/106466/",
+  "verdict": "supported",
+  "found": "「自慢の牛肉料理に、鶏肉料理、トンカツに、カレーなどなど」／「まず肉だが、ロースであるにもかかわらずしっかりとサシの入った美しい色。これを熱々の鉄板の上に牛脂を引いて…」／「しっかりと卵を溶いて、肉をくぐらせれば…」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Meat-centred is directly supported, and the page adds two animal facts the record misses: the sukiyaki is cooked on 牛脂 (beef tallow) on a shared griddle, and it is eaten dipped in raw beaten egg. One phrase is not evidenced here — 'butcher-run' appears nowhere on this page; it is an inference from the name 肉のますゐ. Drop it or cite it separately. vegan_status 'no' is correct. Trading: open — Tabelog 34001743 shows live hours 11:00-20:45, 定休日 水曜日・第2火曜日, and carries no 閉店/掲載保留 badge."
+ },
+ {
+  "id": "hiro_niku_no_yamakin",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Ginger pork and yakiniku use soy-based marinades and dipping sauces, which in Japan are normally made with wheat.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340108/34023826/",
+  "verdict": "supported",
+  "found": "Tabelog page header 「肉のやま金 - 八丁堀/焼肉」, PR text 「広島・八丁堀でBMS10以上の最高級A5黒毛和牛を堪能できる『肉のやま金』。生仕入れの鮮度抜群なホルモンや…牛骨を長時間煮込んだソルロンタンも絶品です。」 Reviews on the same page: 「豚盛りは生姜焼き。…濃厚なタレと玉ねぎの甘味が肉の旨味にフィットして絶品。」「メインのトンテキは…甘辛のタレに馴染んで絶品。」「秘伝のタレがご飯との相性良く」「途中で卓上の辛味噌をつけて」",
+  "correct_url": null,
+  "http": "200 (iPhone UA; plain desktop UA also served, iPhone UA used)",
+  "method": "plain fetch with iPhone UA (Tabelog detail page, Restaurant + FAQPage JSON-LD present)",
+  "note": "Both halves are documented on the cited page — 焼肉 as the genre and 生姜焼き as a named lunch dish, with タレ (甘辛のタレ / 秘伝のタレ / たれハラミ on the venue's own site y990200.gorp.jp) repeatedly described. The page never says 醤油 or 小麦, so this remains an inference, but a sound one. Two further wheat risks the record omits and should name: 卓上の辛味噌 (table chilli miso, normally barley- or wheat-koji) and トンテキ, whose sauce is the same tare. gf 'no' is correct; no allergen statement exists on Tabelog or the venue site. Trading: open — Tabelog shows 11:00-14:30 / 17:00-22:00 with no closure badge; own Gurunavi page live with images timestamped 2026."
  }
 ]

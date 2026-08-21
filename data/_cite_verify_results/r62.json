@@ -205,5 +205,57 @@
   "http": "200 (plain curl, iPhone UA)",
   "method": "route 1 plain fetch",
   "note": "Sibling-confusion check PASSES: these are two genuinely different Miyajima shops and each record cites its own dedicated article (…/kimuraya-honten-momijimanju-miyajima/ vs …/miyajima-momijimanju-kimuraya/). The source itself flags that visitors mix them up. Map defect only: both records carry the identical placeholder pin 34.2986/132.3215, so they stack — 木村家本店 is at 宮島町844-1 by the 商店街 entrance next to ミヤトヨ本店."
+ },
+ {
+  "id": "hiro_kissa_ebisuya",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Foreign-language menus are available, which can make it easier to ask about ingredients despite limited English.",
+  "url": "https://www.miyajima.or.jp/member/food.html",
+  "verdict": "supported",
+  "found": "宮島観光協会 member list, 喫茶えびすや block: 「喫茶えびすや ☎0829-44-0563 住所 廿日市市宮島町858 / 営業時間 10：00～16：00 ラストオーダー15：30 / 定休日 水曜日 / 収容人数 24名 / クレジットカード不可 / バリアフリー一部対応 / 外国語メニュー対応 / お店のウリ…宮島桟橋の近くで…人気はコーヒーとホットケーキです。」",
+  "correct_url": null,
+  "http": "200 (plain curl with iPhone UA, 87KB static HTML)",
+  "method": "route 1 plain fetch; read the block boundaries carefully because the list interleaves labels between shops",
+  "note": "Supported — 外国語メニュー対応 is this shop's own row. TRAP WORTH RECORDING: the line immediately ABOVE 喫茶えびすや on that page reads 外国語メニュー非対応, but it belongs to the preceding entry 島飯 縁-えにし; a naive scrape of that page would flip this verdict. Free upgrade available: the same block gives concrete hours (10:00-16:00, L.O. 15:30, closed Wednesdays, 24 seats), so the record's hours_raw 'Business hours irregular; closed Wed' / hours_status 'irregular' can be tightened to regular. Trading confirmed — the shop is a current 宮島観光協会 member."
+ },
+ {
+  "id": "hiro_kissa_shima",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The shop is a working bakery producing about ten kinds of bread and fifteen kinds of baked goods on site with Hokkaido wheat flour, so airborne flour and shared surfaces make cross-contamination very likely.",
+  "url": "https://kissa-shima.com/",
+  "verdict": "wrong_source",
+  "found": "Official site DOES carry the flour: 「基本的には、次の材料を使用して作っています。…宮島産はちみつ・瀬戸内産レモン・北海道産小麦粉・バター・牛乳・広島県産卵・きび砂糖・旬のフルーツをベースに、毎日食べても飽きないパンや、食べてほっとするお菓子作りを日々目指しています。」 The counts come from 広島経済新聞 2014.05.20: 「これまでも店頭で販売してきたが品数を増やし、パン10種類、焼き菓子15種類をそろえる。価格はいずれも150円～250円が中心。」",
+  "correct_url": "https://hiroshima.keizai.biz/headline/1859/",
+  "http": "200 kissa-shima.com (plain curl, iPhone UA); 200 hiroshima.keizai.biz; 200 web.archive.org/web/2022/",
+  "method": "route 1 plain fetch, then route 4 (Yahoo Japan on the exact string パン10種類 焼き菓子15種類), then route 3 Wayback to date the menu drift",
+  "note": "Split citation: the 北海道産小麦粉 half is on the cited site, the '10 breads / 15 baked goods' half is only in the 広島経済新聞 reopening piece — and that piece is dated 2014.05.20, so the counts are twelve years stale and should be given as 'as of the 2014 reopening' or dropped. Add the keizai.biz URL alongside the official site. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "hiro_kissa_shima",
+  "city": "hiroshima",
+  "field": "gf_detail",
+  "quote": "toast sets, sandwiches, pizza toast and curry over rice",
+  "url": "https://kissa-shima.com/",
+  "verdict": "unsupported",
+  "found": "Live menu (Aug 2026): クラシックセット, ハニートースト, 3種のチーズトースト, BLT, ハム&チーズ, ミックスサンドイッチ, 照り焼きチキン, レモンケーキ, 宮島ウィークエンドシトロン, coffee/lemonade. The 2022 Wayback copy additionally had ソーセージピザトースト.",
+  "correct_url": null,
+  "http": "200 live site; 200 Wayback 2022; 200 s.tabelog.com/…/34005933/dtlmenu/ (iPhone UA)",
+  "method": "routes 1, 3 and 4 — live fetch, Wayback 2022 snapshot, Tabelog menu page, Yahoo Japan",
+  "note": "Two stale/absent items in gf_detail and vegan_detail. 'Pizza toast' was real but has been dropped — it survives only in the 2022 Wayback copy as ソーセージピザトースト. 'Curry over rice' / 'beef curry' is evidenced NOWHERE: no カレー on the live site, the 2022 archive, or the Tabelog menu page. Remove the curry, which is the item a celiac would most fear (wheat roux), before it reads as a documented hazard at a shop that does not serve it."
+ },
+ {
+  "id": "hiro_kissa_shima",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Baked goods use butter, milk, eggs and honey, and savory dishes use meat and cheese; no separation from animal products is documented.",
+  "url": "https://kissa-shima.com/",
+  "verdict": "supported",
+  "found": "「宮島産はちみつ・瀬戸内産レモン・北海道産小麦粉・バター・牛乳・広島県産卵・きび砂糖・旬のフルーツをベースに」 — butter, milk, egg and honey named by the shop itself. Savory: 「BLT 950円 カリカリのベーコンとレタスとトマトの組み合わせ」, 「ハム&チーズ 950円 3種類のチーズ（モッツァレラ、チェダー、ゴーダ）とハム」, 「照り焼きチキン 1,100円」, 「3種のチーズトースト 550円」, 「ミックスサンドイッチ…スクランブルエッグ＆チーズ、ハム＆きゅうり」.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA, 44KB static HTML)",
+  "method": "route 1 plain fetch",
+  "note": "Fully supported and unusually well evidenced — the shop publishes its own base-ingredient list, honey included, which is the item most often missed. vegan_status 'no' is correct; the only near-miss items are the drinks (手作りレモネード, レモンスカッシュ, ブレンドコーヒー). Trading confirmed: 営業時間 8:30～17:00, 定休日 水曜日, 席数16, footer Ⓒ2025."
  }
 ]

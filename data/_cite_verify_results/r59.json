@@ -193,5 +193,57 @@
    "https://ichigakushou.jimdofree.com/"
   ],
   "why": "Nothing on this operator's site claims a vegan or vegetarian item — ベジタリアン/ヴィーガン/植物性 are zero hits across the homepage, curry menu and a-la-carte menu. The curry list is chicken, pork-ginger, beef, egg, seafood, hamburg and a フルーツカレー finished 「バターで柔らかくリンゴを焼いて」, and the evening a-la-carte is cheese, ham steak, pork loin and grilled fish. The only candidates are ベーシックカレー and とーふカレー, whose shared roux composition is nowhere documented, and a 2026 Tabelog review describes a day-curry with ホワイトソース. 'Some vegan options' asserts more than any source shows; 'ask' matches the record's own vegan_detail, which already says ingredients 'are not documented as vegan'."
+ },
+ {
+  "id": "hiro_ichimen_ten_ni_tsuzu",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The broths are shoyu (soy-sauce) based, and standard Japanese soy sauce is brewed with wheat.",
+  "url": "https://ramen.walkerplus.com/shop/chugoku/hiroshima/m34106376/",
+  "verdict": "supported",
+  "found": "Wayback snapshot of the cited page carries 「一麺天に通ず　カツオ醤油ラーメン＋煮玉子」 and 「一麺天に通ず 醤油ラーメン エビ　油そば エビ」. The shop's live menu still leads with 「カツオ醤油ラーメン 720円」/「醤油ラーメン カツオ」, and a 2026-07 review describes 「スープは、透明感のある鶏ガラ醤油」 and 「あっさりとした醤油ダレ」.",
+  "correct_url": null,
+  "http": "404 LIVE on the cited URL with BOTH iPhone and desktop UA; 200 via https://web.archive.org/web/20220626212016/... ; 200 Yahoo Japan SERP (iPhone UA)",
+  "method": "routes 1+2 failed (404 either UA), route 3 Wayback succeeded, route 4 Yahoo Japan corroborated with current menu",
+  "note": "DEAD LINK — ramen.walkerplus.com deleted this shop page; the app is shipping a 404 as its evidence. Claim itself is solid, so re-cite: the Wayback URL preserves it, and a 2026 review adds the strongest wheat evidence anywhere for this shop — 「麺は京都の「麺屋棣鄂製麺」の全粒粉入り中太ストレート麺」, i.e. whole-WHEAT-flour noodles named outright. Put that in gf_detail."
+ },
+ {
+  "id": "hiro_ichimen_ten_ni_tsuzu",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are made from fish and shellfish (nodoguro, bonito, shrimp), so no bowl can be made vegan or vegetarian on request.",
+  "url": "https://ramen.walkerplus.com/shop/chugoku/hiroshima/m34106376/",
+  "verdict": "supported",
+  "found": "Wayback snapshot documents bonito, shrimp and shellfish — 「カツオ醤油ラーメン」, 「醤油ラーメン エビ　油そば エビ」, 「オレンジと貝+煮玉子」, 「スープは麦と麺助の鰹の薫りそばに近く」 — plus チャーシュー and 煮玉子. のどぐろ is NOT in the snapshot; it is on the shop's current menu (のどぐろラーメン 850円 / のどぐろ煮干し / 冷やしノドグロ).",
+  "correct_url": null,
+  "http": "404 live (both UAs); 200 via Wayback 20220626212016; 200 Yahoo Japan SERP (iPhone UA)",
+  "method": "Wayback for the cited page + Yahoo Japan for the current menu",
+  "note": "Same dead link. Two corrections: (a) nodoguro is real but is evidenced only by the CURRENT menu, not the cited/archived page — cite it separately; (b) the broths are not purely fish — a 2026-07 review calls the ebi soup 「透明感のある鶏ガラ醤油」 and another 「スッキリとした動物系のスープ」, so chicken stock belongs in vegan_detail. Also soften 'no bowl can be made vegan on request' — no source addresses requests; the sourced statement is that every documented bowl contains animal stock. (Note for the next reader: the 「麦と麺助」 in the snapshot is an Osaka shop's name, not barley.)"
+ },
+ {
+  "id": "hiro_inachu",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature anago-meshi is finished with a sweet soy-based tare, and Japanese soy sauce is typically brewed with wheat, so the dish should be treated as containing gluten unless the kitchen confirms otherwise.",
+  "url": "https://news.yahoo.co.jp/expert/articles/a3394571278c23c8ec237767aa1d944f04ab3631",
+  "verdict": "supported",
+  "found": "「穴子はパリッと香ばしく、身はふわっと柔らかい。そして甘めのタレが程よくて、出汁のしみたご飯とのバランスも良く…」 and 「タレの濃さに頼らず穴子の焼き加減と旨みで勝負しているのが美味しさの秘訣でしょうか。」 A recent Tabelog review corroborates: 「タレは少々甘め。ご飯にもしっかり味がついていますね。」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 92KB); 200 Yahoo Japan SERP (iPhone UA)",
+  "method": "1 mobile-UA fetch of the cited article + Yahoo Japan corroboration",
+  "note": "Supported for the sweet tare; note that 醤油 appears ZERO times in the article, so 'soy-based' is the writer's inference, not the source's word. Bigger gap: the record's gf_detail lists only tare and tempura, but the shop's current menu also sells あなそば (anago soba) and かきうどん (oyster udon) — wheat noodles outright — plus カキフライ定食 and 牡蠣のからあげ. Those belong in gf_detail. Trading status confirmed OPEN, hours match the record exactly (Thu closed, 10:30-15:00 / 15:30 weekends)."
+ },
+ {
+  "id": "hiro_inachu",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The house rice is cooked in a dashi made from eel head, bones and kombu, so even the rice is not vegetarian.",
+  "url": "https://news.yahoo.co.jp/expert/articles/a3394571278c23c8ec237767aa1d944f04ab3631",
+  "verdict": "supported",
+  "found": "「「あなごめし」は炊き込む際に穴子の出汁（穴子の頭や骨、昆布などで出汁をとったもの）で炊いたご飯を使用しているのだとか。だから、風味がとっても豊かなんですよ。」",
+  "correct_url": null,
+  "http": "200 (iPhone UA, 92KB)",
+  "method": "1 mobile-UA fetch",
+  "note": "Verbatim match — the strongest citation in this shard. One honest caveat for whoever edits it: the writer frames that sentence as the general definition distinguishing 穴子丼 from あなごめし (「〜のだとか」), not as a statement he obtained from いな忠's kitchen. It is the right fact in the right article about this shop, but do not upgrade it to 'the shop told us'. A separate Tabelog review of this shop does note 「ご飯にもしっかり味がついていますね」, which is venue-specific corroboration."
  }
 ]

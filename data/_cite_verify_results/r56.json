@@ -101,5 +101,70 @@
    "https://onhome2.seesaa.net/article/2024-03-02-6.html"
   ],
   "why": "The operator's own current menu states the パキスタンカレー is chicken and vegetables simmered in olive oil with spices, 「水は使わず味付けは塩のみ」 — salt only, so no soy sauce and no wheat roux — served with rice and a carrot salad, and the blog photo confirms it arrives on turmeric rice with a キャロットラペ. ぜんざい (azuki with grilled mochi), 白玉冷やしぜんざい, お抹茶単品 and 甘酒 are likewise wheat-free by composition. 'no' with the detail text saying 'at most a plain coffee or tea' denies a celiac a documented flour-free main dish; 'ask' is honest because the same small kitchen bakes chiffon cake daily and toasts bread, so cross-contact is real and unprotocolled."
+ },
+ {
+  "id": "hiro_ganso_hassho",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "A single shared griddle (teppan) is used for all okonomiyaki, which are wheat-based and include wheat noodles; cross-contact with gluten is unavoidable.",
+  "url": "https://www.chugoku-np.co.jp/articles/-/346273",
+  "verdict": "supported",
+  "found": "「定番の「そば入り肉・卵」は小麦粉に卵やみりんなどを加えて味付けした生地を…」 (free preview cuts off here); article keyword tag 「お好み焼き・生麺」",
+  "correct_url": null,
+  "http": "200 live (plain curl) but paywalled at 残り940文字（全文：1095文字）; Wayback 20230920004134 also 200 and MORE truncated (残り979文字, and no ミツワ/小麦粉 sentence at all)",
+  "method": "1 plain fetch (best), then Wayback — the live free preview is the fuller of the two, so Wayback is not a fallback here",
+  "note": "The wheat basis is verbatim (小麦粉 batter, そば入り, 生麺 tag) so the safety conclusion stands, but the specific mechanism asserted — 'a single shared griddle used for all okonomiyaki' — appears nowhere in the accessible text and sits behind the paywall. Either soften it to the documented wheat batter + noodles, or cite something that actually shows the teppan."
+ },
+ {
+  "id": "hiro_ganso_hassho",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The okonomiyaki is finished with Mitsuwa okonomiyaki sauce, a wheat-containing sauce.",
+  "url": "https://www.chugoku-np.co.jp/articles/-/346273",
+  "verdict": "unsupported",
+  "found": "Article supports only the brand: 「うちのソースはサンフーズ（広島市南区）のミツワソース。ちょい辛めなんよ」と話す由香さん. The maker's own shop contradicts the wheat half — ミツワお好みソース 420g/1160g/2100g, ちょい辛#6, ガーリック風味 and 焼そばソース every one declares 「■本製品に含まれるアレルギー物質 りんご・大豆」 and thickens with コーンスターチ, with no 小麦 in 原材料 or allergens.",
+  "correct_url": null,
+  "http": "200 (plain curl) chugoku-np; 200 (desktop UA) www.mitsuwasauce.com/products/detail/1, /2, /3, /4, /8, /21; 200 Yahoo Japan SERP",
+  "method": "1 plain fetch + Yahoo Japan search on ミツワソース 原材料 小麦 + desktop-UA fetches of the manufacturer's product pages",
+  "note": "LOUD, wrong direction — this warns a celiac off something the manufacturer labels wheat-free. Mitsuwa okonomiyaki sauce declares apple and soy only; the owner's own 「ちょい辛め」 matches ミツワお好みソースちょい辛#6, which is also りんご・大豆. Drop the sauce as a gluten source (or downgrade it to a shared-dispenser cross-contact caveat) and keep the real hazards: the 小麦粉 batter and the 生麺 soba. Note third-party resellers (kioko.fr, hgurume.jp) do print 「大豆、小麦」 for Mitsuwa lines, so if the sauce is to stay flagged it must be on a current maker or package label, not a reseller. Trading status OK: s.tabelog.com/hiroshima/A3401/A340101/34000044/ (iPhone UA, 200) no 閉店 banner, latest review 2026/06; article last updated 2026/6/6, 営業時間 10:30-14:30, 定休日 日曜・祝日."
+ },
+ {
+  "id": "hiro_ganso_hassho",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Pork, egg, and the egg/mirin-seasoned wheat batter are cooked on the same shared griddle as all dishes.",
+  "url": "https://www.chugoku-np.co.jp/articles/-/346273",
+  "verdict": "supported",
+  "found": "「そば入り肉・卵」…「小麦粉に卵やみりんなどを加えて味付けした生地」",
+  "correct_url": null,
+  "http": "200 (plain curl, paywalled preview)",
+  "method": "1 plain fetch",
+  "note": "Meat, egg and the egg/mirin wheat batter are all in the free preview, so vegan_status 'no' is right. As with the GF item, the 'same shared griddle' mechanism is not in the accessible text — it is the only part of the sentence carrying no source."
+ },
+ {
+  "id": "hiro_gariber",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The single shared kitchen builds all curries on the same beef-based roux simmered for three days, so any vegetable order would carry meat-based stock; no separate vegan preparation is described.",
+  "url": "https://gariber.org/",
+  "verdict": "wrong_source",
+  "found": "「当店のカレーは全てビーフカレーがベースになっております。」 (gariber.org/menu.html, above the full curry list — ナスのカレー, しめじのカレー, キノコのカレー, トマトとナスのカレー, 納豆カレー all sit under that line)",
+  "correct_url": "https://gariber.org/menu.html",
+  "http": "200 (plain curl) on gariber.org/ and gariber.org/menu.html; gariber.org/menu/ and /policy/ are 404 — the site uses .html paths",
+  "method": "1 plain fetch of the cited root, then link-scraped the root and plain-fetched menu.html and policy.html",
+  "note": "The claim is true and the operator states it outright, but not at the cited URL. The root only says 「肉、野菜などは全て国産のみにこだわり…一から出汁を取り…完成までに3日間かけて作る」 — meat, scratch dashi and three days, never beef and never 'all curries'. Recite to https://gariber.org/menu.html, which is also where the vegetable-sounding options (ナス/しめじ/キノコ/トマト/納豆カレー) are listed directly beneath the all-beef-base statement — the exact trap a vegan would fall into. Root page is stale besides: it prices 山の幸スペシャル at 1,200円 where menu.html says 1,450円."
+ },
+ {
+  "id": "hiro_gariber",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "All meat and vegetables are sourced domestically (国産) and roughly 20 spices are blended in-house, reflecting transparency about ingredients.",
+  "url": "https://gariber.org/",
+  "verdict": "supported",
+  "found": "「肉、野菜などは全て国産のみにこだわり、約20種のスパイスを調合して使います。一から出汁を取り、丹念に混ぜながら、弱火でじっくり煮込み、ゆっくりと寝かして完成までに3日間かけて作る『こだわりのカレー』です。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Verbatim on the cited root. Separately, the record's gf_detail asserts the roux 'in this style typically includes wheat flour' — no page on gariber.org says so, and unlike the Mitsuwa case there is no allergen label to check, so mark that as an assumption. gf 'no' and vegan 'no' both hold: the full menu (bacon, sausage, shrimp, octopus/squid, cheese, onsen egg, 宮崎黒毛和牛ステーキ) contains no vegan dish, and every dish sits on the beef base. Trading status OK: site live, 営業時間 11:00～21:00 (LO 20:30), 定休日 不定休."
  }
 ]

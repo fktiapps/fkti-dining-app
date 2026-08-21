@@ -115,5 +115,69 @@
   "http": "200 plain curl",
   "method": "plain fetch of the cited hatsukaichi-concierge article; official iwamura-momijiya.com (Wix) also fetched 200 and is live",
   "note": "Verbatim and correctly attributed to this shop. Two cautions. (1) 白双糖 is coarse Japanese crystal sugar (zarame), not 'white granulated sugar' — a small mistranslation worth fixing. (2) TRANSPLANT RISK: the only 「一切添加物を使用していない」 (no additives whatsoever) sentence in this article belongs to a DIFFERENT shop, だいこん屋, four paragraphs down — the Iwamura quote makes no additive claim, so 'no documented additives' must stay an absence statement and must never harden into an assurance. The article also calls the shell カステラ (castella — flour, egg, sugar), which is the citable basis for the record's not-vegan / not-GF verdicts."
+ },
+ {
+  "id": "hiro_kaiya_ren",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Shellfish sashimi and grilled shellfish are served and seasoned in the Japanese style, which standardly uses wheat-based soy sauce; no gluten-free soy sauce is mentioned.",
+  "url": "https://r.gnavi.co.jp/3mrsyfct0000/",
+  "verdict": "wrong_source",
+  "found": "Operator's own live page: 「貝や廉と言ったらこれ！人気のメニュー 人気NO.1 貝刺 … 迷ったらこれ！店主のおすすめ３選 焼き牡蠣 / 牡蠣の釜飯 / 貝出汁の茶碗蒸し」 — same address 広島市中区薬研堀2-11, same phone 082-249-5550.",
+  "correct_url": "https://www.hiroshimagyoza.jp/public",
+  "http": "Gnavi 200 (desktop UA); hotpepper 404; public-hiroshima.com/kaiya-ren/ 301-redirects to hiroshimagyoza.jp/public; Tabelog dtlmenu 404 with content.",
+  "method": "desktop-UA curl on the cited Gnavi page, then the operator's site (reached by following the public-hiroshima.com redirect), then Tabelog for address/phone identity check",
+  "note": "The cited Gnavi page is a bare directory stub — it carries no dish list at all, so it cannot evidence sashimi or grilled shellfish; Tabelog is no better (「料理メニューはまだ投稿されていません」). The dishes are real and are named on the operator PUBLIC Inc.'s own page, verified as the same venue by address and phone. Also fix the record's website field: https://www.hotpepper.jp/strJ001199014/ returns 404. Soy-sauce composition is stated nowhere; keep it framed as convention."
+ },
+ {
+  "id": "hiro_kaiya_ren",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is entirely shellfish- and seafood-based (oysters, shellfish sashimi, fish/shellfish dashi), so any plant items would share equipment with seafood.",
+  "url": "https://r.gnavi.co.jp/3mrsyfct0000/",
+  "verdict": "unsupported",
+  "found": "The cited page lists no dishes whatsoever. What it DOES say, under メニューのサービス, is the opposite of the record's premise: 「ヘルシーメニューご相談」「ベジタリアンメニューご相談」 — a vegetarian menu on request.",
+  "correct_url": null,
+  "http": "200 desktop UA",
+  "method": "desktop-UA curl on the cited Gnavi page",
+  "note": "ALARMING: this is the record's own citation contradicting the record. vegan_detail asserts 'There is no documented plant-based menu' while the page it cites advertises 「ベジタリアンメニューご相談」. The shellfish-cross-contact conclusion is still sound (the operator page names 貝出汁の茶碗蒸し and an all-shellfish concept), but it must be sourced to https://www.hiroshimagyoza.jp/public, and the record must stop citing a page that says a vegetarian menu can be arranged while telling readers none exists."
+ },
+ {
+  "id": "hiro_kaiya_ren",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://r.gnavi.co.jp/3mrsyfct0000/",
+   "https://www.hiroshimagyoza.jp/public"
+  ],
+  "why": "The record's own cited Gnavi page lists 「ベジタリアンメニューご相談」 (vegetarian menu on consultation) under メニューのサービス, which is a documented accommodation, not an absence — the same class of self-reported evidence this sweep accepted as 'supported' for Itsukushima BARL Issai, which carries 'ask'. The kitchen is genuinely all-shellfish and 貝出汁 runs through it, so nothing above 'ask' is warranted, but a flat 'no' contradicts the shop's own listing and should be reviewed."
+ },
+ {
+  "id": "hiro_kaki_fry_kushi_to_bakush",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Core menu is breaded, deep-fried oyster skewers; coating is wheat flour and panko and items are fried in shared oil, so cross-contamination is inherent and unavoidable here.",
+  "url": "https://retty.me/area/PRE34/ARE258/SUB25801/100001662236/",
+  "verdict": "wrong_source",
+  "found": "Shop-published Tabelog menu (公式, 更新日 2025/09/01): 「牡蠣フライ（2個）500円 / 牡蠣フライ（3個）700円 / 牡蠣フライ（5個）1,100円 / あなごめし棒（1本）600円 / まるで生カキ（1個）600円 / まるで生カキ（2個）1,200円」 — six items, no others.",
+  "correct_url": "https://tabelog.com/hiroshima/A3402/A340202/34029693/dtlmenu/",
+  "http": "Retty: iPhone UA 406, iPhone UA + Accept headers 406, PLAIN no-UA curl 200 (the reverse of the usual pattern — worth remembering); no Wayback snapshot exists. r.jina.ai also 200. Tabelog 200 plain.",
+  "method": "plain no-UA curl on Retty after 406s from UA-bearing requests; then the shop's own Tabelog menu page",
+  "note": "The cited Retty page carries メニュー(0) and no ingredient text at all — it cannot evidence a breading or a fryer. Repoint to the shop-published Tabelog menu. THREE record fixes fall out of it: (1) the venue was RENAMED to 牡蠣フライ串専門 (Tabelog and Retty both show 【旧店名】牡蠣フライ串と麦酒) — the record still carries the old name; (2) the skewer is now あなごめし棒 at ¥600, not the ¥500 あなごめし串 the chef_bio cites from a 2022 article; (3) a new item まるで生カキ (low-temperature-cooked, 'like raw oyster' — the sole Retty review confirms it is not breaded) is on the menu, so 'core menu is breaded' is still fair but 'everything here is breaded' would not be. No source anywhere states the coating ingredients or shared oil; 牡蠣フライ is panko by definition, so say that rather than asserting undocumented fryer detail."
+ },
+ {
+  "id": "hiro_kaki_fry_kushi_to_bakush",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "All offerings are oyster (shellfish) or anago (eel) based and fried in the same oil; there are no plant-based items.",
+  "url": "https://retty.me/area/PRE34/ARE258/SUB25801/100001662236/",
+  "verdict": "wrong_source",
+  "found": "Shop-published Tabelog menu (公式, 2025/09/01) lists exactly six items, every one oyster or anago: 牡蠣フライ ×3 sizes, あなごめし棒, まるで生カキ ×2 sizes.",
+  "correct_url": "https://tabelog.com/hiroshima/A3402/A340202/34029693/dtlmenu/",
+  "http": "Retty 200 via plain no-UA curl (406 with any UA set); Tabelog 200 plain",
+  "method": "plain no-UA curl on Retty, then the shop's own Tabelog menu page",
+  "note": "The 'no plant-based items' half is now provable — the complete published menu is six animal items — but not from the cited Retty page, which lists no menu. Repoint to the Tabelog menu. Drop 'fried in the same oil' or soften it: まるで生カキ is not a fried item, and no source documents the fryer. Note also that Retty carries a second listing for this address, 100001817389, which looks like a duplicate worth checking against the dupe sweep."
  }
 ]
