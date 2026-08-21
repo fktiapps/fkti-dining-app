@@ -148,5 +148,133 @@
    "https://tabelog.com/kyoto/A2601/A260203/26017616/"
   ],
   "why": "Fetched 2026-08-21 (HTTP 200, iPhone UA): live hours with 定休日 水曜日, reviews dated 2026/04, and ラーメン 百名店 WEST 2025 selection. The page's own history note records an earlier closure and its end — 「店主の入院のため休業、2022/8/8より営業再開」 — i.e. a 休業 that has already been resolved, not a 閉店. Explicit open verdict."
+ },
+ {
+  "id": "kyr_kyo_kiyomizu_abura_soba_",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat-based abura soba noodles and a soy (wheat) tare are the core of every bowl; no gluten-free preparation is offered or mentioned.",
+  "url": "https://kyotopi.jp/articles/DLt7w",
+  "verdict": "moved",
+  "found": "「きしめんのような平打ちの麺」／「もちもちの平うちの麺」 (kishimen is wheat) and 「こだわりの油そばは３種類、醤油風味、辛味噌、海老香る天然塩味です。」 — plus 「鶏天ぷらのついたセットメニューや串カツや水餃子などの単品メニューもあります。」",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch; Ecosia used only to confirm the shop is still trading",
+  "note": "Wheat noodle: supported. 'Soy tare in every bowl': NOT what the page says — only one of the three bowls is 醤油風味; the others are 辛味噌 and 海老香る天然塩味. Two consequences worth writing in. (1) 辛味噌 — the miso type is not stated, and 麦味噌 (barley) is common in a spicy tare, so it is not a safer bowl, it is an unknown one; the 海老 salt bowl adds a shellfish allergen. (2) The page documents far harder gluten than the tare: 串カツ (wheat-crumbed, deep-fried), 水餃子 (wheat wrappers) and 鶏天ぷら (tempura batter) are all on the same menu, so there is a shared fryer and loose flour in a shop with 8 counter seats. Cite those instead of inferring."
+ },
+ {
+  "id": "kyr_kyo_kiyomizu_abura_soba_",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The dish is built on a soy-based (shoyu) tare, which in standard Japanese practice contains wheat.",
+  "url": "https://kyotopi.jp/articles/DLt7w",
+  "verdict": "supported",
+  "found": "「初訪問だったので醤油ベースの元祖　油そばの大（700円）を注文しました。」 and, quoting Wikipedia on abura soba generally, 「どんぶりの底に入ったごま油や、しょうゆベースのタレに、ラー油、酢などの調味料を好みでかけ」",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "Supported for the 醤油風味 bowl the writer ordered. Scope it to that bowl rather than to the shop — the same paragraph offers a 辛味噌 and a 塩 variant. The wheat-in-shoyu step is general fact, not page content."
+ },
+ {
+  "id": "kyr_kyo_kiyomizu_abura_soba_",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Bowls include diced chashu pork plus naruto fish cake and menma; no vegan/vegetarian version is described.",
+  "url": "https://kyotopi.jp/articles/DLt7w",
+  "verdict": "supported",
+  "found": "「きしめんのような平打ちの麺に、太メンマ、角切りのチャーシュー、ねぎ、ナルトがトッピングされています。」",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "Verbatim match, including the 角切り (diced) detail. Add that ナルト is surimi — most naruto is bound with wheat starch, so it is a gluten item as well as an animal one, which is useful on the GF side too. vegan_status 'no' is correct; the article describes no meat-free bowl and the 鶏天ぷら／串カツ／水餃子 sides are all animal."
+ },
+ {
+  "id": "kyr_kyo_kiyomizu_abura_soba_",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.instagram.com/noodleshop_nekomata/",
+   "https://tabelog.com/kyoto/A2601/A260301/26021980/dtlmenu/",
+   "https://www.ecosia.org/search?q=%E6%B2%B9%E3%81%9D%E3%81%B0+%E3%81%AD%E3%81%93%E3%81%BE%E3%81%9F+%E4%BA%AC%E9%83%BD+%E6%B8%85%E6%B0%B4"
+  ],
+  "why": "Checked 2026-08-21. Instagram bio still reads 「京都・清水寺のふもとにある油そば専門店 ー営業日ー AM10:00〜PM8:30(L/O PM8:00) …※定休日 日曜日※アルバイト募集中」 (actively hiring). Tripadvisor listing for Abura Soba Nekomata at 4-138 Kiyomizu carries reviews dated 2026年7月 and 2026年4月. Tabelog 26021980 is live with 82 reviews, no 閉店 mark. Explicit open verdict — note the cited kyotopi article is from 2016 and its 11:00〜21:00 / 水曜定休 hours are now stale (current: 10:00〜20:30, 日曜定休)."
+ },
+ {
+  "id": "kyr_kyo_ramen_sadakazu",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat ramen noodles are boiled in shared water; the dish is built on a wheat-containing soy-sauce tare. No gluten-free handling is mentioned anywhere.",
+  "url": "https://kyotopi.jp/articles/HaOIw",
+  "verdict": "supported",
+  "found": "「まろやかな醤油ダシ。」 and 「細い低加水ストレート麺。しこしこと良い歯触りと腰。」 The article also establishes the scale: 「なにせMax6名カウンター席のみ！な極小店」, 「ご主人1人で回されているお店だ」, and a menu of only ラーメン￥700 / 特製ラーメン￥900 (+ summer 冷やしラーメン).",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch + 1 Tabelog fetch (iPhone UA) for corroboration",
+  "note": "Supported, but 'boiled in shared water' is the weakest possible framing here and slightly misses the point: this is a six-seat, one-man shop that serves exactly one noodle, so there is no separate line to contaminate — the wheat is the dish itself, not a contaminant. Tabelog's keyword cloud for this shop even contains 小麦 outright. Reword to say the shop has a single wheat noodle and no alternative."
+ },
+ {
+  "id": "kyr_kyo_ramen_sadakazu",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is a soy-sauce (shoyu) base, which in standard Japanese ramen contains wheat-fermented soy sauce; no wheat-free tare is indicated.",
+  "url": "https://kyotopi.jp/articles/HaOIw",
+  "verdict": "supported",
+  "found": "「ビジュアル的にも古典的京都ラーメンの風貌。背脂ちゃっちゃ系だが、そんなに油はきつくない。まろやかな醤油ダシ。」",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "Supported. Tabelog independently tags the shop 醤油スープ／鶏ガラ醤油／背脂醤油. No wheat-free tare is claimed anywhere; correct."
+ },
+ {
+  "id": "kyr_kyo_ramen_sadakazu",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is chicken-bone based and finished with pork back-fat and chashu pork; there is no separate vegan preparation.",
+  "url": "https://kyotopi.jp/articles/HaOIw",
+  "verdict": "wrong_source",
+  "found": "The cited article evidences the pork half only — 「背脂ちゃっちゃ系」 and 「特製と普通のラーメンの差は、チャーシューの質の差です！とご主人。」 — and never says 鶏ガラ. The chicken-bone half is documented on Tabelog, whose keyword set for this shop includes 鶏ガラ, 鶏ガラ醤油, 豚骨 and 焼豚.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260301/26006196/",
+  "http": "200 kyotopi (plain, iPhone UA); 200 tabelog (iPhone UA)",
+  "method": "1 plain fetch of the cited URL + 1 Tabelog fetch to locate the missing half",
+  "note": "Conclusion is right, citation covers only part of it. Add the Tabelog URL for the 鶏ガラ claim, or drop 'chicken-bone based' from the sentence. Menu is two bowls, both pork-topped, so vegan_status 'no' stands."
+ },
+ {
+  "id": "kyr_kyo_ramen_sadakazu",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260301/26006196/"
+  ],
+  "why": "Fetched 2026-08-21 (HTTP 200, iPhone UA): live hours 月〜土 22:00-01:00, 日・祝 定休, note 「限定的昼営業(不定日)」, 332 reviews with visits dated 2026/06, 2026/03 and 2025/10. No 閉店 or 休業 banner. Explicit open verdict. Caveat for readers: the cited kyotopi article's 22:00〜25:00 hours still match, but it is a late-night, cash-quick, six-seat counter — the worst possible setting for an allergy conversation."
+ },
+ {
+  "id": "kyr_kyoto_kinkakuji_ramen_na",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Bowls are dressed with a three-year-aged soy-sauce (shoyu) tare; soy sauce of this type is wheat-based, making the shoyu bowls unsuitable for gluten-free diners.",
+  "url": "https://osumituki.com/kyotokanko/kyoto-ramen/195194.html",
+  "verdict": "wrong_source",
+  "found": "The cited osumituki article is the October-2023 opening write-up, when 「オープン当初は「鶏パイタンらーめん」のみの提供で、味は塩と醤油が選べるようになっていました。」 The strings 三年熟成 / 3年熟成 / 熟成 appear nowhere on it. The aged-soy bowl is documented elsewhere: Kyotopi (Feb 2024) 「スープは、鶏パイタン、3年熟成醤油の2種…私が三年熟成醤油を！…「特製 ３年熟成醤油らーめん」￥1320」, and it is a named menu item on ramendb and hitosara.",
+  "correct_url": "https://kyotopi.jp/articles/Rd3eJ",
+  "http": "200 osumituki (plain, iPhone UA); 200 kyotopi (plain, iPhone UA); Ecosia 200 for the exact-phrase search",
+  "method": "1 plain fetch of the cited URL, then Ecosia exact-phrase search for \"らーめんなか澤\" 醤油 熟成, then 1 plain fetch of the source that actually carries it",
+  "note": "The claim is true and the shop really does sell a 三年熟成醤油らーめん — but the cited page predates that bowl and cannot evidence it. Re-cite to https://kyotopi.jp/articles/Rd3eJ. Add while you are there: three-year ageing says nothing about wheat either way (a long-aged koikuchi is still wheat-brewed), and the salt bowls are not an escape — the same page shows 揚げたエノキ茸 (fried enoki) on every bowl and からあげ on the side menu, i.e. a shared fryer and dredging flour, plus 麺屋棣鄂/テイガク wheat noodles throughout."
+ },
+ {
+  "id": "kyr_kyoto_kinkakuji_ramen_na",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The single shared broth is an animal stock (chicken, pork, clam, fish); there is no separate vegetarian or vegan preparation, so no bowl can be made vegan.",
+  "url": "https://osumituki.com/kyotokanko/kyoto-ramen/195194.html",
+  "verdict": "supported",
+  "found": "「クアドラプルスープというのは4種類の食材で作るスープを合わせたもののことで…「鶏ガラ（京赤地鶏）・豚ガラ・しじみ・魚介（煮干し・ホタテ・鰹節・鯖節）」を合わせた…スープ」, plus 「炭焼きチャーシューの風味がスープに溶け込んで」 and a topping list of 三種チャーシュー・煮卵.",
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "1 plain fetch",
+  "note": "Supported almost word for word, and the animal load is heavier than we say — 鰹節/鯖節/ホタテ/煮干し on top of chicken, pork and shijimi, with pork chashu smoke deliberately dissolved into the soup. One factual update: 'single shared broth' is no longer true — the shop now runs two, 鶏パイタン (白湯) and 三年熟成醤油 (清湯) — but both are animal, so the conclusion holds. vegan_status 'no' is correct."
+ },
+ {
+  "id": "kyr_kyoto_kinkakuji_ramen_na",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260501/26040211/",
+   "https://kyotopi.jp/articles/Rd3eJ"
+  ],
+  "why": "Fetched 2026-08-21 (HTTP 200, iPhone UA): Tabelog 26040211 is live with reviews dated 2026/07, 2025/05 and 2024/10 and posted hours; no 閉店 or 休業 notice. Opened 2023-10-17 and has since added a second broth. Explicit open verdict."
  }
 ]

@@ -111,6 +111,12 @@ Every one of these is a real defect from an earlier shard, not a hypothetical:
 - **もち麦 / 押麦 / 麦茶 / 麦味噌** — all barley, all gluten, all easy to miss. But 米味噌,
   豆味噌, 加賀味噌 and 八丁味噌 are wheat-free and barley-free: three records have been
   caught warning readers off those.
+- **MACHINE-TRANSLATED PAGES ARE NOT EVIDENCE ABOUT INGREDIENTS.** 麺屋 猪一's cited Leaf
+  KYOTO page is auto-translated and twice calls the bowls "dashi soba (buckwheat
+  noodles)" — while the same page's Japanese says the noodles are stone-ground WHOLE
+  WHEAT. A celiac reading our source could conclude gluten-free from it. If a page is
+  machine-translated, verify the ingredient against the Japanese original or a
+  first-party source, and never quote the English.
 - **TAMARI IS NOT AUTOMATICALLY SAFE.** JAS たまり醤油 is LOW-wheat, not wheat-free.
   English-speaking celiacs read "tamari" as safe by definition and Japanese たまり often
   still contains wheat — only 「小麦不使用」 printed on that bottle settles it. One shop

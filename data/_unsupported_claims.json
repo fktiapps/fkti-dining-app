@@ -712,6 +712,15 @@
  },
  {
   "city": "kyoto",
+  "id": "kyr_kyoto_wamen_yukichi_honp",
+  "name": "京都和麺 諭吉本舗 (Kyoto Wamen Yukichi Honpo)",
+  "field": "soy_sauce_wheat",
+  "text": "Bowls use a soy-sauce / dashi tare typical of Japanese chuka-soba, which standardly contains wheat-based soy sauce; no w",
+  "source": "https://kyo-soku.com/2024/11/08/yukichi/",
+  "why": "The tare sentence is invented from the genre label, not read off this page — this Kyoto branch is a truffle-oil 和麺 served with an A5 wagyu steak, not a chuka-soba, and no tare is described anywhere. Two solid wheat vectors are available instead: the ポン酢 dip served with the steak (ponzu is soy-sauce "
+ },
+ {
+  "city": "kyoto",
   "id": "kyr_chuka_ryori_ban",
   "name": "中華料理 鷭 (Chuka Ryori Ban)",
   "field": "gf_cross_contamination",
@@ -727,6 +736,33 @@
   "text": "Chinese-style ramen and stir-fry seasoning almost certainly use standard wheat-based shoyu/Chinese sauces; no wheat-free",
   "source": "https://tabelog.com/kyoto/A2601/A260302/26025271/",
   "why": "Claim is inference presented as sourced. What the cited page DOES prove is more useful and should be used instead: the bowl is 中華そば, i.e. wheat kansui noodles, which is a harder wheat fact than the shoyu guess."
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_karajishi_honten",
+  "name": "辛獅子 本店 (Karajishi Honten)",
+  "field": "soy_sauce_wheat",
+  "text": "The spicy tare and seasoning are built on a minced-meat, garlic and scallion base typical of Japanese spicy noodles, whi",
+  "source": "https://tabelog.com/kyoto/A2601/A260401/26022556/dtlmenu/",
+  "why": "The soy-sauce hazard is pure inference with a citation that never mentions soy sauce. Replace it with the two things this page DOES document: (a) 麦飯 — barley rice — is the standard rice in every set (しそ餃子セット, よくばりセット, all ビビン雑炊セット) and is also sold as a side, so barley gluten is on the table indepen"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_makaikei_ramen_sankanba",
+  "name": "魔界系ラーメン三冠馬 (Makaikei Ramen Sankanba)",
+  "field": "soy_sauce_wheat",
+  "text": "The bowls use a soy-based (shoyu) tare, which in Japanese ramen is virtually always wheat-containing soy sauce.",
+  "source": "https://noodlers.jp/3kanba-3sb/",
+  "why": "This is the transplant defect: the soy tare on the page is on the チャーシューライス, and the record has moved it onto the ramen. Two of the three bowls are explicitly not shoyu (塩清湯 and 油そば). Cite the unambiguous wheat instead — 「麺は太めの平打ち麺！」 is a flat wheat noodle, and it is stated for the very bowl reviewe"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_kyoto_toripaitan_soba_ju",
+  "name": "京都鶏白湯そば 純 四条烏丸 (Kyoto Toripaitan Soba Jun Shijo-Karasuma)",
+  "field": "soy_sauce_wheat",
+  "text": "The shoyu and miso seasoning variants of the chicken-paitan soba are based on tare/sauces that conventionally contain wh",
+  "source": "https://www.leafkyoto.net/en/store/250903-kyoto-toripaitansobajunkarasuma/",
+  "why": "There is no shoyu bowl at this branch, so the record warns about a seasoning the shop does not sell, and the one tare the operator documents is 塩ダレ. Replace the claim with the wheat that is actually on the menu and far more certain: ワンタン wrappers are the default upsell on all three bowls, the noodle"
  },
  {
   "city": "kyoto",
@@ -754,6 +790,15 @@
   "text": "Gluten-free, vegan, vegetarian and no-pork (Muslim-friendly) bowls are offered as a reservation-only special set menu bo",
   "source": "https://www.fireramen.com/",
   "why": "MATERIAL MISREADING of the cited sentence. The site means a RESERVATION cannot be downgraded to the regular menu — not that dietary bowls require a reservation. The page marks the Walk in Course Menu as Vegetarian/Muslim-friendly/Gluten-free available, and an FMGF reviewer describes walking in witho"
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_menshou_ichiryu_manbai_k",
+  "name": "麺匠 一粒万倍 河原町店 (Menshou Ichiryu Manbai Kawaramachi-ten)",
+  "field": "soy_sauce_wheat",
+  "text": "The shoyu tare flavoring the broth is wheat-based soy sauce; allergen note lists wheat in both noodles and soy sauce.",
+  "source": "https://noodlers.jp/manbai-mus/",
+  "why": "First half holds (the page does describe a sharp 醤油 tare). Second half does not: the cited page contains no allergen note at all — the strings アレル and 小麦 appear nowhere on it, and no allergen table was found for this shop elsewhere. Delete the invented 'allergen note lists wheat' clause; the wheat-i"
  },
  {
   "city": "kyoto",

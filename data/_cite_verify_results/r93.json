@@ -133,5 +133,67 @@
    "https://tabelog.com/kyoto/A2601/A260303/26036477/"
   ],
   "why": "Open. Tabelog 26036477 (fetched with an iPhone UA on s.tabelog.com) shows no 閉店/移転/掲載保留 banner and lists live hours 月・水・木・金・土 11:00-14:00 / 18:00-23:30, 火 11:00-14:00, 日 11:00-14:00 / 18:00-22:00, tel 090-5884-5266, 予約不可, カード不可. The article was last updated 2025-01-05 and gives the same phone number and address."
+ },
+ {
+  "id": "kyr_menya_shinano",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broths are finished with soy-sauce-based tare (Japanese soy sauce / white soy sauce), which is wheat-containing, and the noodles are wheat ramen noodles.",
+  "url": "https://osumituki.com/kyoto-ramen/219157.html",
+  "verdict": "supported",
+  "found": "「トロっとした濃厚な鶏白湯のスープベース（出汁）に甘辛の風味がする黒醤油タレを合わせたシッカリとした味付けのラーメンです。」 and 「名物は泡白湯ラーメンで、鶏ガラと丸鶏の鶏白湯をスープベース（出汁）に白醤油ダレを合わせたクリーミーな濃厚スープで食べるラーメンです。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + iPhone-UA fetch of s.tabelog.com for trading status",
+  "note": "Supported on both tare types, and this record gets the hard one RIGHT — 白醤油 is the majority-wheat soy sauce, not a light/delicate safe one, and the shop's signature 泡白湯ラーメン is built on it. Leave that wording alone. Two additions from the same page: the 2024-09-01 relaunch (「屋号は変更なくスタッフとメニューが変わり、内容面で完全リニューアル」) means any pre-Sept-2024 menu evidence is stale, and 「唐揚げ1個とライス」 puts a battered-fry shared fryer on the premises. The noodles are described only as 細麺/太麺 — wheat is our (safe) inference, not the page's word."
+ },
+ {
+  "id": "kyr_menya_shinano",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260503/26035665/",
+   "https://osumituki.com/kyoto-ramen/219157.html"
+  ],
+  "why": "Open. Tabelog 26035665 (iPhone UA, s.tabelog.com) shows no 閉店/移転/掲載保留 banner, tel 075-754-8319, 京都府京都市左京区松ケ崎泉川町16-2, hours 月-日・祝 11:00-15:00 L.O. 15:00 / 17:00-20:30 L.O. 20:30, 20席, 全席禁煙, parking for 2. Business history on the blog: opened 2020-02-16 as 焼きそば専門店 TETSUpan Style+ しな埜, converted to ramen 2021-03-22, fully relaunched 2024-09-01 under the same name — a rename chain, never a closure."
+ },
+ {
+  "id": "kyr_menya_shourin",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Standard ramen tare and an emulsified chicken-pork broth are used; no allergen breakdown is published, but a wheat-based shoyu tare is typical for this style.",
+  "url": "https://kyotopi.jp/articles/D3SAv",
+  "verdict": "supported",
+  "found": "「まずはスープ。鶏豚骨ベースの白湯スープは乳化しており、ひと口すすれば厚みのある豊かな旨みに驚きます。」 and 「卓上にはタレや黒胡椒、酢などが用意されており、味変も楽しめます。」 The page publishes no allergen information of any kind.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch + Ecosia search for current trading",
+  "note": "Supported including its own hedge — the page confirms the emulsified chicken-pork broth and table-side tare and is silent on allergens, and the record says so rather than asserting shoyu as fact. Upgrade the evidence though: this page states the gluten outright, which the record does not use — 「麺は老舗「棣鄂（ていがく）」製のストレート中細麺。小麦の風味が豊かで、しなやかなコシと喉ごしの良さが特徴。」 小麦 is named. Cite that sentence instead of reasoning from tare; it is the only unambiguous wheat statement in the shard for this venue."
+ },
+ {
+  "id": "kyr_menya_shourin",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "All bowls are animal-based (chicken-pork bone broth, meat toppings, chicken paste); no vegan or vegetarian preparation exists, so cross-contact is unavoidable for plant-based diners.",
+  "url": "https://kyotopi.jp/articles/D3SAv",
+  "verdict": "supported",
+  "found": "「ラーメンは「肉白湯そば」「鶏中華そば」「辛肉まぜそば」の3種類。サイドメニューには鶏のからあげやごはん類も揃い充実。」, 「チャーシューに白ネギ、糸唐辛子、そして特製の鶏ペーストがのった」, 「スープの旨みをまとった豚ロースチャーシューは、しっとりやわらか。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Exact match on all three elements — the whole three-bowl menu is meat, the toppings are pork-loin chashu, and the 鶏ペースト is literally chicken paste stirred into the soup. Nothing plant-based exists on the page, so vegan_status 'no' is correct and no tier change is warranted. Minor: the article's own body says 左京区・上賀茂 while its 店舗情報 gives 京都市北区上賀茂西後藤町11-7 — the record's 'Kita-ku, Kamigamo' is right and the article's ward is the error."
+ },
+ {
+  "id": "kyr_menya_shourin",
+  "city": "kyoto",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://kyotopi.jp/articles/D3SAv",
+   "https://kyotokurasu.jp/kbs/tv/84278",
+   "https://www.instagram.com/menya.shourin/"
+  ],
+  "why": "Open and actively trading in 2026. The cited kyotopi article was updated 2025-10-12; a KBS-Kyoto TV tie-in article dated 2026-04-22 features the 辛肉まぜそば and locates the shop at 京都市北区・上賀茂, 京都市バス志久呂橋から徒歩約7分; the shop's own Instagram bio (surfaced via Ecosia) reads 「⛩️京都上賀茂⛩️ 市内最北端\"秘密基地\" 【名物】肉白湯そば」 with a February-2026 reel announcing a takeaway 辛肉まぜそば丼. Address 京都市北区上賀茂西後藤町11-7 is consistent across kyotopi, Yahoo Map and Gnavi. No closure signal anywhere."
  }
 ]

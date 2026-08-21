@@ -129,5 +129,76 @@
    "https://noodlers.jp/3kanba-3sb/"
   ],
   "why": "Tabelog 26038145 answered 200 with an iPhone UA as a live listing titled 「魔界系ラーメン三冠馬 - 西京極/ラーメン」, carrying normal 営業時間/定休日 blocks and no 閉店, 移転, 休業 or 掲載保留 banner. Trading as of 2026-08-21."
+ },
+ {
+  "id": "kyr_maruta_shoten",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The bowl is described as a 醤油 (soy sauce) shoyu tare over Kyoto pork clear broth; standard Japanese shoyu is wheat-based, so the tare should be assumed to contain wheat.",
+  "url": "https://osumituki.com/kyoto-ramen/222379.html",
+  "verdict": "supported",
+  "found": "「豚骨清湯（チンタン）に京都らしい醤油辛さ控えめの味付けです。懐かしい味わいで、昔ながらの京都豚骨清湯と呼べるラーメンと言えます。」 and, naming the tare explicitly, 「味付け（タレ）は醤油で辛さ控えめの京都ラーメンらしい味わい。」",
+  "correct_url": null,
+  "http": "200 (811,843 bytes), plain curl with iPhone UA; article dated 2025-05-30",
+  "method": "route 1 — plain fetch of the cited page; trading cross-checked on s.tabelog.com/kyoto/A2601/A260203/26043182/ (200, iPhone UA)",
+  "note": "Exact: the page uses the word タレ and names it 醤油, over 豚骨清湯. 'Standard Japanese shoyu is wheat-based' is the record's own general step and is sound, but is not printed here — do not present it as quoted. Worth adding a second, harder wheat vector from the same page: the reviewed set is 「醤油ラーメン 唐揚げセット」 and karaage is flour/starch-coated and deep-fried, and the noodle is 「少し太めの角ストレート麺」."
+ },
+ {
+  "id": "kyr_maruta_shoten",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is pork-bone clear soup and toppings include pork chashu; evening dishes center on chicken and pork, indicating heavy animal-product use throughout the kitchen.",
+  "url": "https://osumituki.com/kyoto-ramen/222379.html",
+  "verdict": "supported",
+  "found": "「豚骨清湯ラーメン店です」/「青ねぎ・チャーシュー数枚・もやし・メンマ」/「チャーシューは通常でも多めなのが京都らしいです。やや厚切りにカットされ脂のコクも感じられる美味しいチャーシューでした。」 and for the evening: 「2025年5月30日に新店オープン（開業）した夜営業の炭火焼き鳥店で昼のランチタイムに食べられるラーメンのお店です。」/「ただし、昼のランチタイムはラーメン店として営業しているので紹介します。」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 — plain fetch",
+  "note": "Supported, and the evening half is stronger than the record states: the house is not merely 'chicken and pork heavy' at night, it is a 炭火焼き鳥店 — a charcoal yakitori house — with ramen only at lunch. Say that plainly, because it also tells a reader the lunch window is the only ramen service (article gives 11時～14時; Tabelog 26043182 currently gives 11:00-14:45 / 17:30-22:30, 日 closed). 'Pork chashu' is the page's チャーシュー in a 豚骨 shop — reasonable, though the species of the chashu is not itself stated."
+ },
+ {
+  "id": "kyr_maruta_shoten",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://s.tabelog.com/kyoto/A2601/A260203/26043182/",
+   "https://osumituki.com/kyoto-ramen/222379.html"
+  ],
+  "why": "Tabelog 26043182 answered 200 as a live listing 「マルタ商店 - 円町/居酒屋」 with current hours 月-土 11:00-14:45 / 17:30-22:30, 日 定休日, and no 閉店 / 休業 / 掲載保留 banner. Shop opened 2025-05-30 per the cited review. Trading as of 2026-08-21."
+ },
+ {
+  "id": "kyr_marutan_ogawa",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Tantanmen here is made with wheat noodles in a sesame/miso/pork-based broth; this style of tare is wheat-based, so the dish is not gluten-free and no GF handling is indicated.",
+  "url": "https://kyotopi.jp/articles/4orck",
+  "verdict": "supported",
+  "found": "「担々麺はやっぱりストレートの細麺がよく合います。さすがテイガクさんの麺です。スープに負けない存在感です！」 and 「【ウマ辛】の味噌担々麺！600円 … 肉みそ、メンマ、チンゲン菜、モヤシ」. The page also records 替え玉 (noodle refills) and a 冷やし担々麺: 「麺もやっぱりストレートの細麺。」",
+  "correct_url": null,
+  "http": "200 (66,351 bytes), plain curl with iPhone UA",
+  "method": "route 1 — plain fetch; trading cross-checked on s.tabelog.com/kyoto/A2601/A260401/26015968/ (200, iPhone UA)",
+  "note": "The conclusion holds — wheat noodles from テイガク製麺 in every bowl, plus 替え玉 refills in the same pot, which is a better shared-water line than the record's generic one. But two supports are wrong. 'Sesame' and 'pork-based' appear nowhere on the page; the meat named is 肉みそ, species unstated. And 'this style of tare is wheat-based' is loose in the direction the brief warns about: the page names 味噌, and 米味噌 and 豆味噌 are wheat- and barley-free, so miso alone does not evidence gluten (whereas 麦味噌 would). Rest the gf:no on the noodles, which are certain."
+ },
+ {
+  "id": "kyr_marutan_ogawa",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth and toppings are meat-based (ground meat plus a pork/sesame/miso broth), so vegan diners cannot be accommodated.",
+  "url": "https://kyotopi.jp/articles/4orck",
+  "verdict": "supported",
+  "found": "「着丼しましたー。待っていました、味噌担々麺です。肉みそ、メンマ、チンゲン菜、モヤシ。。」 — 肉みそ is the ground-meat miso. The 冷やし担々麺 by contrast is listed as 「キムチ、チンゲン菜、モヤシ」 with no meat named.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 — plain fetch",
+  "note": "The ground-meat half is exact (肉みそ). 'Pork/sesame' is not on the page — the species and the sesame are both the record's assumption, so drop those two words. Note the honest counterweight the page does contain: the limited 冷やし担々麺's listed toppings are kimchi and vegetables only. That is not a vegan claim (kimchi is commonly made with fish sauce or shrimp, and the broth is undescribed) but it means 'toppings are meat-based' is not true of every bowl. Keep vegan:no; state it as no vegan preparation documented rather than as every bowl containing meat."
+ },
+ {
+  "id": "kyr_marutan_ogawa",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://s.tabelog.com/kyoto/A2601/A260401/26015968/"
+  ],
+  "why": "Tabelog 26015968 answered 200 as a live listing 「まる担 おがわ - 桂/担々麺」 at 京都府京都市西京区樫原山ノ上町7-19 with current hours 月・水〜日 12:00-14:00 (L.O. 13:30) / 18:00-22:00 (L.O. 21:30), 火 定休日, and no 閉店 or 休業 banner. Flagged because the cited Kyotopi article is old (it embeds a 2015 tweet) and gives 10:00～14:00 — take the hours from Tabelog, not from the citation. Trading."
  }
 ]

@@ -204,5 +204,125 @@
   "http": "200",
   "method": "plain curl, desktop UA",
   "note": "Verbatim on the page. Keep the framing narrow — pescatarian-relevant only, and it must not read as any kind of gluten or vegan reassurance given the whole-wheat noodles and 白醤油 tare."
+ },
+ {
+  "id": "kyr_menya_kagari_kiyamachi_t",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The shop's soy-based (shoyu) ramen uses a standard soy tare, which in Japanese ramen virtually always contains wheat; combined with wheat noodles this bowl is not gluten-free.",
+  "url": "https://kyotopi.jp/articles/qzFYe",
+  "verdict": "supported",
+  "found": "定番の醬油ラーメン（700円）鶏ガラと魚介を使った透明感のある醬油ラーメン。 / 麺はプリプリで少し縮れた中太麺。食感もよく歯切れのいい小麦香る麺です。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain curl, desktop UA",
+  "note": "Stronger than we recorded: the page names 小麦 for the noodles outright (小麦香る麺), so the wheat noodle half is direct evidence, not inference. Article address 京都市中京区紙屋町365 matches the record's Tabelog entry exactly — no sibling-branch mixup."
+ },
+ {
+  "id": "kyr_menya_kagari_kiyamachi_t",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Bowls are built on chicken, seafood, and tonkotsu (pork) broths and topped with seared chashu pork; the plant-based yuba topping is served in these animal broths.",
+  "url": "https://kyotopi.jp/articles/qzFYe",
+  "verdict": "supported",
+  "found": "とんこつラーメン、醬油ラーメン、焦がしにんにくの黒ラーメン、特製湯葉ラーメン。 / 鶏ガラと魚介を使った透明感のある醬油ラーメン。具材は炙りチャーシュー、メンマ、ねぎ、生湯葉 / シンプルな味わいの生湯葉ですが、醬油スープを風味をまとい美味しく。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain curl, desktop UA",
+  "note": "Every element checks out, including the important one: the 生湯葉 that reads as a plant-based topping is explicitly served sitting in the chicken-and-fish 醬油スープ. This record catches the trap correctly — leave the wording as is."
+ },
+ {
+  "id": "kyr_menya_kanae",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The shop offers a soy-sauce (shoyu) seasoning option; Japanese soy sauce is typically brewed with wheat, so this is not gluten-free.",
+  "url": "https://kyotopi.jp/articles/zlahG",
+  "verdict": "supported",
+  "found": "名物は「KANAEの二郎」。汁あり・汁なし、塩・醤油を選べます。定番は醤油ですが、少し珍しい塩がおすすめ。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain curl, desktop UA",
+  "note": "Shoyu option confirmed. Add the harder fact from the same page: 麺は、老舗 棣鄂製の二郎系向け太麺…小麦の風味 — wheat noodles named on the page, which currently has no citation in the gf field. Note also the 塩 option is NOT a gluten-free alternative: the shio tare is undocumented and the noodles are wheat either way."
+ },
+ {
+  "id": "kyr_menya_kanae",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The bowls are built on wagyu beef fat, beef Achilles tendon, and a dashi-based broth, so the kitchen is not vegan-safe.",
+  "url": "https://kyotopi.jp/articles/zlahG",
+  "verdict": "supported",
+  "found": "特徴は、豚背脂の代わりに和牛脂、煮豚チャーシューの代わりに牛アキレスを使用しており、キャベツは入っていません。 / 神戸牛や近江牛の脂を贅沢に使っていること。 / 煮豚チャーシューは別途追加できます",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain curl, desktop UA",
+  "note": "Conclusion is unarguable — wagyu fat and beef Achilles tendon are the whole dish — but 'a dashi-based broth' appears nowhere on the page; the page describes a 塩だれ/醤油 tare and 汁あり・汁なし. Drop the dashi clause and add instead that 煮豚チャーシュー (pork) is an optional add-on, which the page does state."
+ },
+ {
+  "id": "kyr_mendokoro_kawano",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26042581/",
+   "https://kyotopi.jp/articles/PZVoe"
+  ],
+  "why": "Tabelog detail page fetched 200 (iPhone UA) on 2026-08-21 as 麺処かわ乃 - 二条/ラーメン with no 閉店 / 掲載保留 / 休業 status badge or notification banner (the same fetch route did surface such a banner on another record in this shard, so its absence is informative). Kyotopi records the opening on 2025-02-15, article updated 2025-02-25."
+ },
+ {
+  "id": "kyr_menshou_ichiryu_manbai_k",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://www.instagram.com/ichiryumanbai_kawaramachi/",
+   "https://tabelog.com/kyoto/A2601/A260301/26033041/"
+  ],
+  "why": "Official Instagram @ichiryumanbai_kawaramachi is live and still lists 営業時間 11:00-27:00 L.O 26:30 at 〒604-8031 京都市中京区大黒町71 ワールド会館 1階; Tabelog, Retty, Ramen DB, Uber Eats and a Tripadvisor panel with 2026 opening hours all resolve to the same trading address. No closure notice found on Ecosia (2026-08-21)."
+ },
+ {
+  "id": "kyr_menya_garamon",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260503/26029577/"
+  ],
+  "why": "Tabelog detail page fetched 200 (iPhone UA) on 2026-08-21 as 麺や 賀ら茂ん（麺や がらもん）- 北大路/ラーメン with no 閉店 / 掲載保留 / 休業 badge. Caution: the only cited source is an osumituki article from 2017-09-21, so the MENU evidence is nine years old even though the shop is trading."
+ },
+ {
+  "id": "kyr_menya_ikku",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/en/kyoto/A2601/A260604/26030538/",
+   "https://osumituki.com/kyoto-ramen/106373.html"
+  ],
+  "why": "Tabelog English detail page fetched 200 (iPhone UA) on 2026-08-21 as Menya Ikku - Nishioji/Ramen with no closure badge; the cited osumituki article carries a maintained note that its menu, prices and hours were refreshed on 2024-10-24."
+ },
+ {
+  "id": "kyr_menya_inoichi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26032368/",
+   "https://www.leafkyoto.net/en/store/211225-kyoto-inoichi/"
+  ],
+  "why": "Tabelog detail page fetched 200 (iPhone UA) on 2026-08-21 as 麺屋 猪一（イノイチ）- 京都河原町/ラーメン with no 閉店 / 掲載保留 / 休業 badge; Leaf KYOTO still lists 11:00-14:30, 17:30-21:00, seven days a week."
+ },
+ {
+  "id": "kyr_menya_kagari_kiyamachi_t",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26023134/"
+  ],
+  "why": "Tabelog detail page fetched 200 (iPhone UA) on 2026-08-21 as 麺屋 かがり 木屋町店 - 京都河原町/ラーメン, JSON-LD address 京都市中京区紙屋町365, no 閉店 / 掲載保留 / 休業 badge. The cited Kyotopi article is old (embedded review tweet dated 2016-10-09), so hours and menu should be refreshed even though the shop is trading."
+ },
+ {
+  "id": "kyr_menya_kanae",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26043473/",
+   "https://kyotopi.jp/articles/zlahG"
+  ],
+  "why": "Tabelog detail page fetched 200 (iPhone UA) on 2026-08-21 as 麺屋 鼎（KANAE）- 四条大宮/ラーメン, JSON-LD address 京都市中京区壬生坊城町8-27, no closure badge; Kyotopi dates the opening to 2025年9月 and gives hours 11:00〜14:00 / 17:00〜23:00, closed Wed/Thu."
  }
 ]
