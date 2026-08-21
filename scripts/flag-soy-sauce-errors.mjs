@@ -11,7 +11,9 @@
 //
 // What is actually gluten-free in a Japanese kitchen:
 //   小麦不使用醤油 / グルテンフリー醤油 — says so outright, the only reliable wording
-//   たまり醤油 — usually wheat-free, but NOT always; the label has to be read
+//   たまり醤油 — LOW-wheat under JAS, not wheat-free by definition. English-speaking
+//           celiacs read 'tamari' as safe; Japanese たまり often still contains wheat.
+//           Only 「小麦不使用」 printed on that bottle makes it safe
 // What is not, however it is described:
 //   丸大豆醤油, 濃口, 薄口, 再仕込, 生醤油 — all wheat-brewed
 //   白醤油 — the WORST case, mostly wheat by design

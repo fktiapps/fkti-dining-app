@@ -211,5 +211,57 @@
    "https://www.youtube.com/"
   ],
   "why": "NOT closed — logged because three signals look like closure and are not. The record’s website sobahashimoto.hp.peraichi.com is 404 (the Peraichi page was deleted), its Tabelog id resolves to a different, 閉業 shop, and its cited article names a third name. But the shop trades: Yahoo!マップ lists 「そば処 はしもと」 at 石川県金沢市野町2丁目24-2 as 営業中, tel 076-269-4100, 11:00-17:00, 定休日 水曜日と第2第4木曜日 — matching the record’s hours exactly — and Instagram 「蕎麦処はしもと」 posted a soba-making reel on 2026/7/22. Name history: opened 2022-08-07 as 手打ち蕎麦 はなれ, renamed そば処 はしもと by September 2022 (Retty, 2022/9/14: 「店名がはなれからはしもとに変わってました」), phone 090-3765-7445 carried across both, as 石川テレビ’s 2023/1/23 piece confirms. No trading action needed; fix the dead website and menu links instead."
+ },
+ {
+  "id": "kz_sobadokoro_anan",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Hand-made soba is made and cut in a flour-heavy kitchen; wheat-based binder and shared surfaces make cross-contamination effectively certain.",
+  "url": "https://www.weekend-kanazawa.com/entry/soba-anan",
+  "verdict": "wrong_source",
+  "found": "The cited article supports the hand-cutting only — 「毎朝店内で手打ちしている蕎麦を、蔵王産の鴨肉の出汁が効いた温かいつゆにつけていただきます。」 and 「ズルッとのど越しのいい蕎麦は、北海道磯谷（いそや）産のそば粉を使用。」 — and says nothing about a wheat binder. The binder is evidenced on Tabelog, in a first-hand 2022/08 review by ゼミ鳥: 「この二八蕎麦が打ち立てで風味強いから成立している感じはありますね。」 二八 = 80% buckwheat / 20% wheat.",
+  "correct_url": "https://tabelog.com/ishikawa/A1701/A170101/17013323/dtlrvwlst/",
+  "http": "200 for the cited article (plain desktop-UA curl); 200 for Tabelog with an iPhone UA (desktop host redirects to s.tabelog.com)",
+  "method": "1 plain fetch of the cited URL, then Tabelog detail/menu page with an iPhone UA and a scan of its embedded review JSON",
+  "note": "Claim is true — cite the 二八 evidence rather than the NEW OPEN article, which only proves the soba is hand-cut on site. Note the reviewer is a Tabelog user, not the shop, so the wording should stay \"reported as nihachi\" rather than stated as shop policy."
+ },
+ {
+  "id": "kz_sobadokoro_anan",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Dipping broths and sauces are soy-sauce based, which standardly contains wheat.",
+  "url": "https://www.weekend-kanazawa.com/entry/soba-anan",
+  "verdict": "supported",
+  "found": "「蕎麦つゆは、一つひとつ表情が異なる抹茶茶碗で提供。湯呑みや醤油さしは、彩り華やかな九谷焼の器でもてなしてくれます。」 — a 醤油さし (soy-sauce cruet) is part of the table setting.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl)",
+  "method": "1 plain fetch of the cited URL, whole article read",
+  "note": "Soy sauce is on the table by the article’s own account, so the claim holds. Be precise though: the one tsuyu the article actually describes is duck-based — 「蔵王産の鴨肉の出汁が効いた温かいつゆ」 — so \"soy-sauce based\" is the table condiment plus the usual kaeshi, not something the source states about the tsuyu itself."
+ },
+ {
+  "id": "kz_sobadokoro_anan",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Kitchen handles duck, egg, cheese, and seafood/vegetable tempura; no vegan-segregated preparation is documented.",
+  "url": "https://www.weekend-kanazawa.com/entry/soba-anan",
+  "verdict": "unsupported",
+  "found": "Three of the four elements are verbatim on the page — 「蔵王産の鴨肉の出汁が効いた温かいつゆ」 (duck), 「たっぷりのパルメジャーノチーズに卵黄をトッピングした「チーズなお蕎麦」（1,300円）」 (cheese and egg yolk). The fourth is not: 天ぷら appears nowhere in the article, and the only 天ぷら string anywhere on the shop’s Tabelog page is inside an advert for a different restaurant (「蕎麦 宮川 そば、天ぷら、天丼」). The article instead describes 「ぶっかけおろし蕎麦」（1,000円）, 「せいろそば」 and 「地元の野菜や、旬の素材」.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl); Tabelog 200 with an iPhone UA",
+  "method": "1 plain fetch of the cited URL, then Tabelog detail/menu with an iPhone UA, grepping for 天ぷら/天麩羅",
+  "note": "Strike “seafood/vegetable tempura” — no source places a fryer in this kitchen, and it reads like it drifted in from a neighbouring listing. Duck, egg and Parmigiano stand on their own and are enough to justify the vegan “no”. Also refresh the hours: Tabelog now gives 水・木・金・土 11:30-15:00 / 17:00-21:00, 日 11:30-15:00, 定休日 月・火, against the record’s 17:00-22:00 and the 2022 article’s 定休日 月曜."
+ },
+ {
+  "id": "kz_sunny_bell_coffee",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Whole-bean purchases and plain black drip coffee are naturally free of gluten, dairy, and animal products.",
+  "url": "https://sunnybell.thebase.in/",
+  "verdict": "supported",
+  "found": "「＊この商品に関しましては、「豆のまま」のみの販売とさせていただきます。」 repeated across six whole-bean SKUs (200g/500g/1kg Mild Espresso and Hazel Espresso, plus 200g ルワンダ スカイヒル), each described purely as origin, altitude, varietal and roast — no additives listed anywhere.",
+  "correct_url": null,
+  "http": "200 (plain desktop-UA curl) for both / and /about; /items paginates behind JS but exposes the same six products",
+  "method": "1 plain fetch of the cited URL and /about, then Tabelog dtlmenu with an iPhone UA and Yahoo Japan for the shop’s two branches",
+  "note": "The bean half is on the page verbatim. The drip-coffee half is NOT — the BASE store sells beans only and lists no drinks; the shop’s /about page is what establishes it is a コーヒースタンド (「自家焙煎コーヒー販売＆コーヒースタンド(少し座席はあります)」). Cite /about alongside it. Two data corrections while here. (1) SIBLING-BRANCH BLEED: the record’s vegan_detail lists “tiramisu, soft-serve, pudding, parfaits”, but soft-serve, classic/Mont-Blanc/tiramisu puddings belong to the second branch, サニーベルコーヒー尾張町喫茶 (@sbcowarichou, 10:00-16:00), not to this 5-seat Kasaichimachi stand. Canelé and tiramisu ARE at this branch (kanazawa-tsu’s tiramisu round-up gives 「SUNNY BELL COFFEE … 金沢市笠市町5-8 … ティラミス（600円）」 and Tabelog photo tags carry both), so trim the list to those. (2) “No plant-milk option is documented” is correctly hedged — I could find no 豆乳/オーツミルク mention either way, so leave it as “not documented” rather than “not available”."
  }
 ]

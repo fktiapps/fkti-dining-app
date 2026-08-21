@@ -111,6 +111,14 @@ Every one of these is a real defect from an earlier shard, not a hypothetical:
 - **もち麦 / 押麦 / 麦茶 / 麦味噌** — all barley, all gluten, all easy to miss. But 米味噌,
   豆味噌, 加賀味噌 and 八丁味噌 are wheat-free and barley-free: three records have been
   caught warning readers off those.
+- **TAMARI IS NOT AUTOMATICALLY SAFE.** JAS たまり醤油 is LOW-wheat, not wheat-free.
+  English-speaking celiacs read "tamari" as safe by definition and Japanese たまり often
+  still contains wheat — only 「小麦不使用」 printed on that bottle settles it. One shop
+  advertises its tare as たまり醤油 twice, which reads to a visitor as a gluten-free
+  guarantee it never made.
+- **いしる / 魚醤 is fish and salt — wheat-free.** One record pinned a shop's gluten on
+  いしる while its real gluten — 車麩 in the oden, すだれ麩 in the jibuni, 大野醤油 — sat
+  unnamed on the page it should have cited.
 - **RYE.** ライ麦 is NOT on Japan's statutory allergen list, so it never appears on an
   アレルギー表 — a celiac scanning for 小麦 finds nothing and orders it. One Kyoto shop's
   noodles are 「ドイツ産ライ麦を使った全粒粉麺」 while its record speculated about tare.
