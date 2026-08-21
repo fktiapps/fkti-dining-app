@@ -153,15 +153,15 @@
   "correct_url": null,
   "http": "200 across official / Tabelog / Gurunavi / hitosara",
   "method": "4 fetches",
-  "note": "TRADING — open, no closure signal. GF tier 'no' is correct and well earned. But the record ships vegan_label 'Fully vegan' — rendered verbatim as the app's vegan badge (index.html:1230) and as the Vegan panel headline (index.html:1543) — on a venue selling horse tartare, wagyu, mackerel, tuna, sashimi and giant-prawn tempura. Its own vegan_detail says 'Plant-forward but NOT a vegan/精進 restaurant'. This is the GYUMON defect, live in the UI."
+  "note": "TRADING — open, no closure signal. GF tier 'no' is correct and well earned. But the record ships vegan_label 'Fully vegan' — rendered verbatim as the app's vegan badge (index.html:1230) and as the Vegan panel headline (index.html:1543) — on a venue selling horse tartare, wagyu, mackerel, tuna, sashimi and giant-prawn tempura. Its own vegan_detail says 'Plant-forward but NOT a vegan/精進 restaurant'. This is the GYUMON defect, live in the UI. [CONCURRENCY NOTE: data/tokyo.json changed under this sweep. At shard-read time this record carried vegan_label 'Fully vegan'; by write time a sibling process had corrected it (commits 41a57d0 'A tonkotsu ramen shop was displaying as \"Fully vegan\"', 1444b0e, a9f90ae). The finding below is retained as independent confirmation of that bug class, verified against the venue's own sources — no further action needed on this record's label.]"
  },
  {
   "id": "tokyo3__159",
   "kind": "tier_recommendation",
   "city": "tokyo",
   "field": "vegan_status",
-  "current": "limited (label 'Fully vegan', category VEGAN)",
-  "recommended": "limited (label 'Limited vegan options', category not VEGAN)",
+  "current": "limited (label was 'Fully vegan' at shard-read time; now 'Limited vegan')",
+  "recommended": "limited (label 'Limited vegan options') — LABEL ALREADY CORRECTED MID-SWEEP",
   "quote": "vegan_label='Fully vegan' on 神楽坂 おいしんぼ",
   "url": null,
   "verdict": "unsupported",
@@ -174,7 +174,7 @@
    "https://r.gnavi.co.jp/g507000/"
   ],
   "why": "OVER-rated. The venue's own menu sells 馬ユッケ, 黒毛和牛の握り, 牛ホホ肉江戸味噌煮, 地鶏柚子胡椒焼, 鯖の炙り棒すし, 三﨑鮪, 三浦鮮魚お刺身 and 大海老天丼, and Gurunavi bills it as 「湯葉・生麩料理とおばんざい・天草黒毛和牛」. No 精進 / kombu-only dashi is offered. The status field ('limited') is right; the LABEL is what is wrong, and the label is what the app displays.",
-  "note": "Label/status mismatch, not a status error. Repo-wide: 46 Tokyo records carry vegan_label 'Fully vegan' on a non-full vegan_status, 3 of them on vegan_status='no'."
+  "note": "Label/status mismatch, not a status error. Repo-wide: 46 Tokyo records carry vegan_label 'Fully vegan' on a non-full vegan_status, 3 of them on vegan_status='no'. [CONCURRENCY NOTE: data/tokyo.json changed under this sweep. At shard-read time this record carried vegan_label 'Fully vegan'; by write time a sibling process had corrected it (commits 41a57d0 'A tonkotsu ramen shop was displaying as \"Fully vegan\"', 1444b0e, a9f90ae). The finding below is retained as independent confirmation of that bug class, verified against the venue's own sources — no further action needed on this record's label.]"
  },
  {
   "id": "tokyo3__16",
@@ -310,7 +310,7 @@
   "id": "tokyo3__16",
   "city": "tokyo",
   "field": "record_verdict",
-  "quote": "record-level assessment: gf_confidence=ask, vegan_status=options, vegan_label='Fully vegan', trading",
+  "quote": "record-level assessment: gf_confidence=ask->options mid-sweep, vegan_status=options, vegan_label 'Fully vegan'->'Some vegan options' mid-sweep, trading",
   "url": "https://soranoiro-vege.com/store-menu/soranoiro-nippon/",
   "verdict": "repairable",
   "found": "Branch page live, 「営業時間 9:00〜23:00（LO22:30）／定休日 年中無休」; Tokyo Station Ichibangai listing active; Tabelog 13183558 carries reviews dated 2026/07. Corporate 店舗一覧 dated 「2025年10月現在」 lists そらのいろ NIPPON among six trading shops.",
@@ -324,8 +324,8 @@
   "kind": "tier_recommendation",
   "city": "tokyo",
   "field": "gf_confidence",
-  "current": "ask",
-  "recommended": "options",
+  "current": "ask at shard-read time; data/tokyo.json now already reads 'options'",
+  "recommended": "options — ALREADY APPLIED MID-SWEEP; this entry supplies the citations it was missing",
   "quote": "gf_confidence='ask' on そらのいろ NIPPON",
   "url": null,
   "verdict": "wrong_source",
@@ -338,15 +338,15 @@
    "https://soranoiro-vege.com/"
   ],
   "why": "UNDER-rated. This is not a venue you have to ask: the operator publishes a named permanent GF item (グルテンフリー塩ラーメン), states 「食材から小麦をすべて取り除いた」, commits in writing to a separate boiling kettle for wheat-allergic guests, has floor staff ask about wheat allergy at the point of order, offers a second GF-able item (ヴィーガン水餃子, 米粉 skin), and discloses residual contamination risk in its own words. Documented GF provision plus an honest contamination disclosure is the definition of 'options', not 'ask'. Not 'high' — the operator itself declines to guarantee.",
-  "note": "Recommendation only; passes through REVIEW_PROTOCOL.md's human gate. Record also carries gf_uncited_downgrade, which this evidence should clear."
+  "note": "Recommendation only; passes through REVIEW_PROTOCOL.md's human gate. Record also carries gf_uncited_downgrade, which this evidence should clear. [CONCURRENCY NOTE: by write time gf_confidence had already been moved ask->options by a sibling process. The recommendation stands as confirmation, and the evidence URLs above are what the gf_uncited_downgrade was waiting for.]"
  },
  {
   "id": "tokyo3__16",
   "kind": "tier_recommendation",
   "city": "tokyo",
   "field": "vegan_status",
-  "current": "options (label 'Fully vegan')",
-  "recommended": "options (label 'Vegan options')",
+  "current": "options (label was 'Fully vegan' at shard-read time; now 'Some vegan options')",
+  "recommended": "options (label 'Vegan options') — LABEL ALREADY CORRECTED MID-SWEEP",
   "quote": "vegan_label='Fully vegan' on そらのいろ NIPPON",
   "url": null,
   "verdict": "unsupported",
@@ -358,7 +358,7 @@
    "https://soranoiro-vege.com/store-menu/soranoiro-nippon/"
   ],
   "why": "OVER-rated LABEL. The branch sells 醤油らーめん (天草大王 chicken), 貝塩らーめん (ホンビノス貝・鰹) and 肉玉丼 (chashu + egg yolk), and its キノコベジソバ is vegan only with the 鶏チャーシュー removed and still ends in a cheese risotto. The status 'options' is correct; the displayed label is not.",
-  "note": "Same label/status mismatch class as tokyo3__159."
+  "note": "Same label/status mismatch class as tokyo3__159. [CONCURRENCY NOTE: data/tokyo.json changed under this sweep. At shard-read time this record carried vegan_label 'Fully vegan'; by write time a sibling process had corrected it (commits 41a57d0 'A tonkotsu ramen shop was displaying as \"Fully vegan\"', 1444b0e, a9f90ae). The finding below is retained as independent confirmation of that bug class, verified against the venue's own sources — no further action needed on this record's label.]"
  },
  {
   "id": "tokyo3__161",
@@ -675,15 +675,15 @@
   "correct_url": null,
   "http": "200 across index / course / story / english",
   "method": "4 plain fetches",
-  "note": "TRADING and unusually well documented — every claim on this record is repairable from the venue's own pages, and vegan_status='full' is genuinely earned here (肉・魚・卵を一切使わない). Three record-level problems: (1) it is a DUPLICATE of tokyo3__225 — same name, same website, same venue; (2) lat/lng 35.6984,139.7731 is ~1.0 km from 台東区鳥越1-5-5 and is byte-identical to tokyo3__161's coordinates (a different restaurant in 千代田区) — a placeholder; (3) hours_raw is 'Hours unverified — confirm' when the site publishes exact hours and closing days."
+  "note": "TRADING and unusually well documented — every claim on this record is repairable from the venue's own pages, and vegan_status='full' is genuinely earned here (肉・魚・卵を一切使わない). Three record-level problems: (1) it is a DUPLICATE of tokyo3__225 — same name, same website, same venue; (2) lat/lng 35.6984,139.7731 is ~1.0 km from 台東区鳥越1-5-5 and is byte-identical to tokyo3__161's coordinates (a different restaurant in 千代田区) — a placeholder; (3) hours_raw is 'Hours unverified — confirm' when the site publishes exact hours and closing days. [CONCURRENCY NOTE: this record still reads vegan_status 'full' / 'Fully vegan', which is CORRECT here — but its duplicate tokyo3__225 was moved to 'options' during this sweep, so the two records for one restaurant now contradict each other in the UI. Merging is now urgent, and 'full' is the value to keep.]"
  },
  {
   "id": "tokyo3__174",
   "kind": "tier_recommendation",
   "city": "tokyo",
   "field": "gf_confidence",
-  "current": "ask",
-  "recommended": "options — and NOT higher, on the operator's own words",
+  "current": "ask at shard-read time; data/tokyo.json now already reads 'options'",
+  "recommended": "options — ALREADY APPLIED MID-SWEEP; this entry supplies the citations it was missing",
   "quote": "gf_confidence='ask' on 味農家",
   "url": null,
   "verdict": "wrong_source",
@@ -697,7 +697,7 @@
    "https://www.minoyavege.com/english.html"
   ],
   "why": "MILDLY under-rated, with a hard ceiling. The whole menu is a single gluten-free course by design (「お料理はすべてヴィーガン対応・グルテンフリー」), there is no second non-GF course sharing the kitchen, it is reservation-only with nothing pre-batched, and it is cooked by one chef who takes dietary requests in advance — that is documented provision, i.e. 'options', not 'ask'. But it must NOT go above that, because the operator disclaims the safety framing itself: 「なぜグルテンフリーにしているのですか？ アレルギー対応としてではなく、グルテンを外すことで野菜そのものの繊細な味わいをより引き出せると考え、たどり着いた調理法です。」 The GF is culinary, not an allergy protocol; the soy sauce and miso are never specified; and the course page hedges with 「※グルテンフリーにも対応いたします」.",
-  "note": "Recommendation only. If the human gate prefers to hold at 'ask' on the strength of 「アレルギー対応としてではなく」, that is a defensible read — the point is that the file currently records no evidence either way. Apply to the surviving record after the tokyo3__174 / tokyo3__225 duplicate is merged."
+  "note": "Recommendation only. If the human gate prefers to hold at 'ask' on the strength of 「アレルギー対応としてではなく」, that is a defensible read — the point is that the file currently records no evidence either way. Apply to the surviving record after the tokyo3__174 / tokyo3__225 duplicate is merged. [CONCURRENCY NOTE: by write time gf_confidence had already been moved ask->options by a sibling process.]"
  },
  {
   "id": "tokyo3__213",
@@ -866,15 +866,15 @@
   "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13102977/dtlmenu/",
   "http": "200 (official, empty); 200 / 200 (both Tabelog listings)",
   "method": "Plain + iPhone-UA fetch of the official site, WP-JSON probe, Ecosia search, 4 Tabelog fetches",
-  "note": "TRADING — busy, 2026/07 reviews, moved to its current basement address and the move is recorded. Defects: (1) vegan_label 'Fully vegan' on a menu whose own key reads 「★印はヴィーガンの方でも召し上がれます」 — i.e. only the starred items are; (2) 'Halal-certified' is an unsupported credential; (3) 'Menu split into Vegan/Vegetarian/Jain categories' describes a menu that does not exist; (4) website and menu_url both point at a content-free stub — repoint menu_url to the Tabelog menu; (5) lat/lng 35.708,139.7745 is roughly right for THIS venue but is byte-identical to tokyo3__225 and tokyo3__236, which are elsewhere."
+  "note": "TRADING — busy, 2026/07 reviews, moved to its current basement address and the move is recorded. Defects: (1) vegan_label read 'Fully vegan' at shard-read time on a menu whose own key is 「★印はヴィーガンの方でも召し上がれます」 — corrected to 'Some vegan options' by a concurrent commit during this sweep; (2) 'Halal-certified' is an unsupported credential; (3) 'Menu split into Vegan/Vegetarian/Jain categories' describes a menu that does not exist; (4) website and menu_url both point at a content-free stub — repoint menu_url to the Tabelog menu; (5) lat/lng 35.708,139.7745 is roughly right for THIS venue but is byte-identical to tokyo3__225 and tokyo3__236, which are elsewhere."
  },
  {
   "id": "tokyo3__213",
   "kind": "tier_recommendation",
   "city": "tokyo",
   "field": "vegan_status",
-  "current": "options (label 'Fully vegan')",
-  "recommended": "options (label 'Vegan options')",
+  "current": "options (label was 'Fully vegan' at shard-read time; now 'Some vegan options')",
+  "recommended": "options (label 'Vegan options') — LABEL ALREADY CORRECTED MID-SWEEP",
   "quote": "vegan_label='Fully vegan' on ヴェジハーブサーガ",
   "url": null,
   "verdict": "unsupported",
@@ -886,7 +886,7 @@
    "https://s.tabelog.com/tokyo/A1311/A131101/13102977/dtlmenu/"
   ],
   "why": "OVER-rated LABEL. The venue's own menu key is 「★印はヴィーガンの方でも召し上がれます。」 — a marker that only exists because most items are not vegan. Roughly half the 85 items are dairy: eleven paneer/cheese dishes, two raitas, カード・ライス, ダール・マッカーニー, two lassis, halwa and kulfi, a thali built on 「ギー（ピュアバター）をぜいたくに使った」, and breads and dosa that arrive buttered by default. The status 'options' is exactly right; the displayed label is not.",
-  "note": "Fourth instance of the same label/status mismatch in this shard."
+  "note": "Fourth instance of the same label/status mismatch in this shard. [CONCURRENCY NOTE: data/tokyo.json changed under this sweep. At shard-read time this record carried vegan_label 'Fully vegan'; by write time a sibling process had corrected it (commits 41a57d0 'A tonkotsu ramen shop was displaying as \"Fully vegan\"', 1444b0e, a9f90ae). The finding below is retained as independent confirmation of that bug class, verified against the venue's own sources — no further action needed on this record's label.]"
  },
  {
   "id": "tokyo3__213",
@@ -1062,7 +1062,7 @@
   "correct_url": null,
   "http": "200 across index / course / story / english",
   "method": "4 plain fetches + cross-record comparison of data/tokyo.json",
-  "note": "TRADING, and the venue itself is excellent — but this RECORD is the defective twin. Two of its claims (a 'standard non-vegan/non-GF course' and a 'separate standard course [that] uses animal products') describe a menu that does not exist, and a third inflates a broth anecdote into a systematic seasonings audit. Merge into tokyo3__174, keeping tokyo3__174's cleaner claim set, and fix the coordinates to 台東区鳥越1-5-5 on the survivor."
+  "note": "TRADING, and the venue itself is excellent — but this RECORD is the defective twin. Two of its claims (a 'standard non-vegan/non-GF course' and a 'separate standard course [that] uses animal products') describe a menu that does not exist, and a third inflates a broth anecdote into a systematic seasonings audit. Merge into tokyo3__174, keeping tokyo3__174's cleaner claim set, and fix the coordinates to 台東区鳥越1-5-5 on the survivor. [CONCURRENCY NOTE: vegan_status on THIS record was changed from 'full' to 'options' mid-sweep while its duplicate tokyo3__174 kept 'full'. The venue is genuinely fully vegan; the duplicate pair now disagrees with itself.]"
  },
  {
   "id": "tokyo3__225",
@@ -1091,11 +1091,11 @@
   "kind": "tier_recommendation",
   "city": "tokyo",
   "field": "vegan_status",
-  "current": "full",
-  "recommended": "full — CONFIRMED, no change",
+  "current": "full at shard-read time; data/tokyo.json now reads 'options'",
+  "recommended": "full — RESTORE. The mid-sweep downgrade to 'options' is wrong for this venue.",
   "quote": "vegan_status='full' on 味農家",
   "url": null,
-  "verdict": "supported",
+  "verdict": "unsupported",
   "found": "「肉・魚・卵を一切使わない本格和食のコース」/「出汁は昆布と野菜のみ…動物性のものは使用しておりません」/'All courses are vegan-friendly and gluten-free.'",
   "correct_url": null,
   "http": "200",
@@ -1104,8 +1104,8 @@
    "https://www.minoyavege.com/",
    "https://www.minoyavege.com/english.html"
   ],
-  "why": "Recorded deliberately as a NEGATIVE result. Of the five records in this shard carrying the label 'Fully vegan', 味農家 is the only one that actually earns it — no meat, no fish, no egg, no animal dashi, stated by the operator in Japanese and English. Flagging it so the label-audit that follows from this sweep does not sweep it away with the four false positives.",
-  "note": "No action required beyond the duplicate merge."
+  "why": "Recorded as a NEGATIVE result, now urgent. During this sweep a sibling process moved this record from vegan_status 'full' to 'options'. That is correct for four of the five 'Fully vegan' records in this shard but WRONG here: the operator states 「肉・魚・卵を一切使わない本格和食のコース」 and 「出汁は昆布と野菜のみで丁寧に取り、動物性のものは使用しておりません」, and the English site says 'All courses are vegan-friendly and gluten-free.' Worse, its duplicate tokyo3__174 was left at 'full', so one restaurant now shows two different vegan tiers in the app.",
+  "note": "Collateral damage from an otherwise-correct label sweep. Merge tokyo3__174 and tokyo3__225 and keep vegan_status 'full'."
  },
  {
   "id": "tokyo3__235",
@@ -1304,5 +1304,202 @@
   ],
   "why": "Status is right. The record's own vegan_detail and the label should reflect that this is a per-item VEGAN-marked board where the majority of dishes qualify — including a vegan ramen and vegan gyoza — rather than an afterthought. about-us also states 「ベジタリアン、ヴィーガン、ペスカタリアンなど食の多様化に対応しています」. Not 'full': the same board sells pork buns, chicken and beef.",
   "note": "No status change requested; flagged so the vegan detail text can be evidenced rather than downgraded for lack of citation."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat naan/chapati/paratha/puri rolled and dusted in the same small kitchen — flour-dust cross-contact plausible",
+  "url": null,
+  "verdict": "uncited",
+  "found": "No operator menu exists anywhere: Tabelog 13168026 shows コース(0) 料理(0) ドリンク(0) ランチ(0) — the restaurant has never filled in a menu — and the Gurunavi listing r.gnavi.co.jp/3ekzuxc70000 (the record's own menu_url) carries address, seats, phone and payment only, no dishes. Tabelog reviews confirm bread-family items indirectly (パパド, マサラドーサ, パニプリ) but no source lists naan, chapati, paratha or puri for this venue.",
+  "correct_url": null,
+  "http": "200 (Tabelog top); 200 (Tabelog menu, empty); 200 (Gurunavi)",
+  "method": "Ecosia (Yahoo Japan returned its temporary-error page all session; DuckDuckGo and Mojeek served bot challenges) -> Tabelog top + menu + review pages + Gurunavi",
+  "note": "UNCITED and unverifiable as written. The four breads are a reasonable assumption for a North+South Indian restaurant but not one source names them here. Either verify from a menu photo on site (Tabelog holds 686 メニュー写真) or rewrite as a category caution."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Samosa/pastry is wheat; if it shares fryer oil with pakora/bonda/vada, that oil is cross-contaminated (fryer sharing unconfirmed — ask)",
+  "url": null,
+  "verdict": "uncited",
+  "found": "No source names samosa, pakora, bonda or vada at this venue, and no source describes the fryer.",
+  "correct_url": null,
+  "http": "200 / 200 / 200",
+  "method": "Tabelog top + menu + Gurunavi + Ecosia",
+  "note": "UNCITED. To its credit the claim already flags itself as unconfirmed ('fryer sharing unconfirmed — ask'), which is the honest way to carry an inference. Keep the hedge; do not upgrade the wording without a menu photo."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Asafoetida (hing) commonly contains wheat flour and is used in dal/sambar/chutneys — a hidden gluten source; ask directly",
+  "url": null,
+  "verdict": "uncited",
+  "found": "Nothing venue-specific. Tabelog reviews confirm サンバル and チャトニ are served; no ingredient information exists for either.",
+  "correct_url": null,
+  "http": "200 / 200",
+  "method": "Tabelog reviews + Gurunavi + Ecosia",
+  "note": "UNCITED, same as the identical claim on tokyo3__213 in this shard. Sound general knowledge about compounded hing, printed as if observed here. Reframe as a category caution."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "Indo-Chinese dishes (chow mein, Manchurian, Hakka noodles) use wheat-based soy sauce and wheat noodles — avoid if celiac",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "BRUTUS: 「西ベンガル・コルカタで中国系移民が作ったとされる、そのインド中華の波が、最近東京にもジワジワと。そこでメニューの丸々1ページをインド中華に割く、御徒町の〈ベジキッチン〉に行ってみた。シェズワン＝四川風もあるらしいが、とりあえず、インド中華を代表するといわれる、マンチュリアン＝満州風ソースに挑戦。トマトケチャップとインド醤油が味つけのキモとおぼしき、ニンニクと唐辛子のパンチが効いた甘辛い料理は…」 with 「ベジマンチュリアンと、それに合うと薦められたフライドライス。」 Corroborated by note.com (「御徒町ベジキッチンのインド中華」, discussing Hakka Noodle) and a livedoor blog (「南インドのトマトベースの汁ダクチョウミンは美味でした（御徒町ベジキッチン）」).",
+  "correct_url": "https://brutus.jp/post-243553/",
+  "http": "200 (brutus.jp, iPhone UA)",
+  "method": "Ecosia search on the exact dish names -> plain fetch of the BRUTUS article",
+  "note": "UNCITED but the best-evidenced claim on this record, from a named national magazine: a FULL PAGE of this venue's menu is Indo-Chinese, and BRUTUS identifies 「インド醤油」 (Indian soy sauce) as one of the two things carrying the Manchurian sauce. Chowmein and Hakka Noodle are both corroborated separately. Cite brutus.jp/post-243553/. Worth adding シェズワン (Schezwan) to the list of dishes to avoid."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "Ghee/butter, paneer, cream and yogurt used widely; plain naan usually brushed with butter — request oil instead of ghee and confirm per dish",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog review by o.tsy (訪問 2017/10), titled 「ヴィーガンメニューも充実」: 「ベジタリアン料理、でも乳製品はOKのようでチーズや牛乳の入ったメニューも多いですが、ヴィーガン用メニューは名前の脇に小さく緑のシールが貼ってあって親切です。」",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/dtlrvwlst/B219191819/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "Ecosia -> mobile-host Tabelog review page",
+  "note": "PARTLY SUPPORTED, by a diner rather than the operator. 「チーズや牛乳の入ったメニューも多い」 supports 'dairy used widely'. Ghee, paneer, cream and the buttered-naan detail are NOT evidenced for this venue — that detail is verbatim generic Indian-restaurant knowledge, and note that the buttered-bread default IS documented at ヴェジハーブサーガ down the road (tokyo3__213), which is likely where the pattern came from. Attribute only what the review says."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "staff_allergy_handling",
+  "quote": "English-speaking staff reported as friendly and able to distinguish vegan vs vegetarian; vegan items marked with a green dot on the menu",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Green marker: 「ヴィーガン用メニューは名前の脇に小さく緑のシールが貼ってあって親切です。」 (Tabelog review, 訪問 2017/10). English menu: Gurunavi 「外国語対応 | 外国語メニュー | 英語メニューあり」.",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/dtlrvwlst/B219191819/",
+  "http": "200 (Tabelog review); 200 (Gurunavi)",
+  "method": "Tabelog review + the record's own menu_url (Gurunavi)",
+  "note": "SPLIT, and the sourced half is better than the claim: the green marker is confirmed to mark VEGAN items specifically (ヴィーガン用メニュー), not merely vegetarian — which is the trap in Indian menus, where a green dot conventionally means vegetarian. It is a hand-applied 緑のシール on a physical menu, reported by ONE diner in 2017; nine years is a long time for a sticker. The 'friendly, English-speaking staff' half is contradicted by the same review: 「店員さんはずっと自由な感じ。(笑) Skypeか何かをずっとやってました。」 Cite the review and soften the staff claim."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "staff_allergy_handling",
+  "quote": "No evidence of a formal celiac/gluten allergen protocol or allergen chart — verbal confirmation only; small kitchen can get overwhelmed when full",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Absence confirmed: Tabelog 13168026 lists 「料理 | 野菜料理にこだわる、ベジタリアンメニューあり」 with no allergen entry, and its official menu section is entirely empty; Gurunavi lists 外国語メニュー and 席・設備 but no allergen information; there is no venue website at all (the record's website field is null). Size: 「席数 34席（１階:テーブル12席、２階:テーブル22席）」.",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/",
+  "http": "200 (Tabelog); 200 (Gurunavi)",
+  "method": "Tabelog top + menu + Gurunavi",
+  "note": "The allergen-protocol half is a true absence claim, verified across every listing this venue has. The 'small kitchen can get overwhelmed when full' half is unevidenced and arguably wrong — 34 seats over two floors is not small for the area, and the venue is a six-time Tabelog 百名店 selection handling that volume routinely. Drop the second half."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "100% vegetarian kitchen: no meat, no fish, no egg — removes bonito/dashi and fish-sauce cross-contact risk entirely",
+  "url": null,
+  "verdict": "uncited",
+  "found": "Nothing states 100% vegetarian for this venue. Tabelog's facet says only 「野菜料理にこだわる、ベジタリアンメニューあり」 (vegetarian menu AVAILABLE), the genre is インド料理/インドカレー/アジア・エスニック, and one review is headed 「ノンベジタリアンの私でも楽しめる野菜料理の数々でした」. A Tabelog review does describe a lunch as 「動物由来に一切頼らない純…」, but that is one dish, not the kitchen.",
+  "correct_url": null,
+  "http": "200 (Tabelog top); 200 (Tabelog menu, empty); 200 (Gurunavi)",
+  "method": "Tabelog top + menu + review list + Gurunavi + Ecosia",
+  "note": "UNCITED and NOT established — an important gap, because this sentence is the whole basis for 'no bonito/dashi risk'. Contrast tokyo3__213 in this same shard, where 「インド料理100％ベジタリアン、完全菜食主義の店」 is printed by the operator on Tabelog; here nothing equivalent exists. The name ベジキッチン / VEG KITCHEN and the vegan sticker system make it very likely true, but likely is not verified. Either find the operator's own statement or downgrade the certainty of 'entirely'."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Many naturally gluten-free, plant-based staples: rice/lentil dosa & idli, plain rice, dal, sambar, rassam",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog reviews confirm several by name: 「マサラドーサを食べたくて…メインのプレートには、ドーサ、サンバル、2種類のチャトニ。ドーサの中には、スパイシーなジャガイモが入っています」 (2026/07 visit); 「★豆入りマサラドーサ こちらは美味しかったです」 and 「サンバルの量は他店と変わらない印象」 (2017/10); 「刺激的な辛さのベジビリヤニ」 (2026/05); 「ヴィーガン向けながら旨味が強い南インドカレーランチ」.",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "Tabelog top page review excerpts + one full review page",
+  "note": "PARTLY SUPPORTED by diners, not by the venue. Dosa and sambar are confirmed repeatedly and recently; idli, dal and rassam are not named by any source. Note the GF caution the record omits: ドーサ here is served with チャトニ and サンバル whose seasonings are undisclosed, and the venue has a full Indo-Chinese page using インド醤油 in the same kitchen."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Vegan options clearly flagged (green dot) and staff will help identify them",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「ヴィーガン用メニューは名前の脇に小さく緑のシールが貼ってあって親切です。」 (Tabelog review, 訪問 2017/10)",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/dtlrvwlst/B219191819/",
+  "http": "200 (iPhone UA)",
+  "method": "1 mobile-host Tabelog review fetch",
+  "note": "Duplicate of the staff_allergy_handling claim; same single 2017 diner source, same staleness caveat. 'Staff will help identify them' is not in any source — the only staff observation on record is the opposite."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "English menu and English-capable staff",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Gurunavi: 「外国語対応 | 外国語メニュー | 英語メニューあり」.",
+  "correct_url": "https://r.gnavi.co.jp/3ekzuxc70000/",
+  "http": "200 (iPhone UA)",
+  "method": "1 fetch of the record's own menu_url",
+  "note": "The English-menu half is supported by the record's own already-stored menu_url — this citation was one fetch away. 'English-capable staff' is not stated anywhere; a 2026/05 Tabelog review notes 「スタッフさんもお客さんも現地の方のみで」."
+ },
+ {
+  "id": "tokyo3__236",
+  "city": "tokyo",
+  "field": "record_verdict",
+  "quote": "record-level assessment: gf_confidence=ask (gf_uncited_downgrade from options), vegan_status=options, trading; website field is NULL",
+  "url": "https://r.gnavi.co.jp/3ekzuxc70000/",
+  "verdict": "repairable",
+  "found": "TRADING and thriving: Tabelog 13168026 scores 3.51 over 540 reviews with visits logged 2026/07 and 2026/05, and holds アジア・エスニック百名店 2022, 2023 and 2024 plus カレー百名店 2017, 2018 and 2020. 住所 東京都台東区台東3-44-8; 34席（１階:テーブル12席、２階:テーブル22席）; 営業時間 11:00-15:00 / 17:00-22:00; 定休日 なし ※インドの特定の祝日（２日）のみ休業; オープン日 2014年5月3日; 禁煙・喫煙 分煙（11:00～13:00全面禁煙）.",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/",
+  "http": "200 (Tabelog top / menu / review); 200 (Gurunavi)",
+  "method": "Ecosia -> 3 mobile-host Tabelog fetches + Gurunavi + BRUTUS",
+  "note": "TRADING. This is the thinnest-sourced record in the shard: no website at all, an empty operator menu on Tabelog, and six of its eleven claims resting on generic Indian-restaurant knowledge rather than anything about this venue. Four items are now citable (Indo-Chinese/BRUTUS, the vegan green sticker, dairy, English menu, dosa/sambar). Two record-level facts are missing entirely and should be added: it is 分煙 with smoking permitted outside 11:00-13:00 — the only smoking venue in this shard, and worth surfacing — and it is a six-time Tabelog 百名店. Also lat/lng 35.708,139.7745 is copied from tokyo3__213 and sits ~0.4 km from 台東3-44-8."
+ },
+ {
+  "id": "tokyo3__236",
+  "kind": "tier_recommendation",
+  "city": "tokyo",
+  "field": "gf_confidence",
+  "current": "ask (gf_uncited_downgrade from 'options' on 2026-08-20)",
+  "recommended": "ask — CONFIRMED, do NOT restore 'options'",
+  "quote": "gf_confidence='ask' on ベジキッチン",
+  "url": null,
+  "verdict": "supported",
+  "found": "No allergen information on any listing; a full menu page of Indo-Chinese dishes seasoned with インド醤油 (BRUTUS); no venue website; the operator has never published a menu on Tabelog or Gurunavi.",
+  "correct_url": null,
+  "http": "200",
+  "method": "Tabelog + Gurunavi + BRUTUS",
+  "evidence": [
+   "https://brutus.jp/post-243553/",
+   "https://s.tabelog.com/tokyo/A1311/A131101/13168026/"
+  ],
+  "why": "Recorded as a deliberate no-change against the pending restore. The gf_uncited_downgrade note invites restoring 'options' once evidence is attached — the evidence this sweep found argues the other way. What turned up is a full page of soy-sauce-seasoned Indo-Chinese cooking in the same kitchen and zero allergen provision anywhere. The naturally gluten-free South Indian staples are real but the venue makes no gluten statement of any kind. 'ask' is correct.",
+  "note": "The 2026-08-20 downgrade should be marked resolved-as-correct rather than left pending."
+ },
+ {
+  "id": "tokyo3__236",
+  "kind": "tier_recommendation",
+  "city": "tokyo",
+  "field": "vegan_status",
+  "current": "options (label 'Some vegan options')",
+  "recommended": "options — CONFIRMED, no change",
+  "quote": "vegan_status='options' on ベジキッチン",
+  "url": null,
+  "verdict": "supported",
+  "found": "「ベジタリアン料理、でも乳製品はOKのようでチーズや牛乳の入ったメニューも多いですが、ヴィーガン用メニューは名前の脇に小さく緑のシールが貼ってあって親切です。」",
+  "correct_url": "https://s.tabelog.com/tokyo/A1311/A131101/13168026/dtlrvwlst/B219191819/",
+  "http": "200",
+  "method": "Tabelog review",
+  "evidence": [
+   "https://s.tabelog.com/tokyo/A1311/A131101/13168026/dtlrvwlst/B219191819/"
+  ],
+  "why": "Correct as it stands: a vegetarian kitchen where dairy is common but vegan items are individually marked is precisely 'options'. Flagged as a negative result so the label audit prompted by this shard does not move it in either direction — neither up to 'full' on the strength of the name ベジキッチン, nor down for want of an operator source.",
+  "note": "No action required."
  }
 ]

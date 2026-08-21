@@ -1,0 +1,93 @@
+[
+ {
+  "id": "hiro_kaki_hiyokko_shoten_hiro",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Menu includes fried oysters, oyster-and-root-vegetable tempura and oyster gratin; fried items share oil/breading typical of izakaya and no GF handling is documented.",
+  "url": "https://xn----w8t1b3czf572wmcbhz6atbv7i00h3g025v9w7cq12aviz.com/food",
+  "verdict": "supported",
+  "found": "牟蠿料理 page lists 「カキフライ 1コ 165円」、「牟蠿と根菜の揚げ出し 748円」、「牟蠿グラタン 1コ 275円」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA; desktop UA also 200)",
+  "method": "plain fetch of the cited /food page",
+  "note": "All three named items are on the cited page, so the claim stands; the same page also carries 牟蠿のペペロンチーノ (wheat pasta) and 【しめ】うどん — stronger wheat evidence than the fry oil, worth adding. Minor wording nit: 揚げ出し is flour/starch-dusted agedashi, not tempura."
+ },
+ {
+  "id": "hiro_kaki_hiyokko_shoten_hiro",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes such as oyster ponzu and pots rely on standard Japanese soy sauce/ponzu, which contain wheat; no wheat-free seasoning is documented.",
+  "url": "https://xn----w8t1b3czf572wmcbhz6atbv7i00h3g025v9w7cq12aviz.com/food",
+  "verdict": "supported",
+  "found": "「牟蠿ポン酢 638円」 and the -鍋- section 「牟蠿チゲ鍋・牟蠿豆乳鍋・牟蠿土手鍋（2人前）2,178円」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited /food page",
+  "note": "The named dishes (ponzu, three nabe) are on the cited page; the wheat-in-shoyu step is general knowledge rather than a page statement, and the page documents no allergen handling either way. 土手鍋 is miso-based — barley miso (麦味噌) is a live risk worth naming."
+ },
+ {
+  "id": "hiro_kaki_hiyokko_shoten_hiro",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Virtually all dishes are oyster- or seafood-based, so vegan diners cannot be reliably accommodated.",
+  "url": "https://xn----w8t1b3czf572wmcbhz6atbv7i00h3g025v9w7cq12aviz.com/food",
+  "verdict": "supported",
+  "found": "Every one of the ~20 items on the 牟蠿料理 page contains oyster, including the vegetable-sounding ones: 「牟蠿と彩り野菜のピクルス」、「牟蠿味噌野菜スティック」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited /food page",
+  "note": "Confirmed — even the two vegetable dishes are oyster-dressed, and the page adds dairy (チーズサラダ、グラタン、バターソテー) and egg (うずら). vegan:\"no\" is correct."
+ },
+ {
+  "id": "hiro_kaki_to_niku_no_mise_ipp",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Oyster and yakiton dishes are seasoned with standard Japanese soy sauce and tare, which contain wheat; no wheat-free seasoning is mentioned.",
+  "url": "https://ya22200.gorp.jp/",
+  "verdict": "wrong_source",
+  "found": "Gnavi dish menu: 「金垂牾　焼き牟蠿・バター醤油 680円」、「[海鮮]あなごたれ焼き 1,480円」＋wheat carriers 牟蠿ふらい、ホルモン天ぷら、チーズの天ぷら、鶏の唐揚げ、がんす、【追加具】うどん、サリ麺、揚げもみじ",
+  "correct_url": "https://r.gnavi.co.jp/0001674275/menu1",
+  "http": "200 for the cited root (iPhone UA); 200 for the Gnavi menu page",
+  "method": "plain fetch of the cited root, then the Gnavi menu module the root links to",
+  "note": "The cited root is a bare shop-top page carrying only a 60-word PR blurb — it lists no dish and no seasoning, so it cannot evidence a soy-sauce/tare claim. Re-cite the Gnavi dish menu, where バター醤油 and あなごたれ焼き are explicit and the fried/udon items are far stronger wheat evidence. Also fix \"yakiton\": the grill section is 炭火焼 beef tongue / pork / chicken, not yakiton."
+ },
+ {
+  "id": "hiro_kaki_to_niku_no_mise_ipp",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The entire menu is built around oysters and pork, with shared grills and fryers, so vegan separation is not provided.",
+  "url": "https://ya22200.gorp.jp/",
+  "verdict": "supported",
+  "found": "Root PR text: 「コンセプトは『牟蠿と肉』 牟蠿などの広島名物料理や、朝挽き豚を中心とした肉料理、豊富なお酒が楽しめるお店」",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root",
+  "note": "The oysters-and-pork half is stated verbatim on the cited root, but \"shared grills and fryers\" is not — add https://r.gnavi.co.jp/0001674275/menu1 as a second source, which shows one ◆炭火焼◆ charcoal grill running beef tongue, pork, chicken, conger and scallop together plus a fryer section. Every food item on that menu is animal-derived; vegan:\"no\" is correct."
+ },
+ {
+  "id": "hiro_kaki_to_suishouyaki_ku",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a Hiroshima izakaya the menu relies on standard Japanese seasonings, which are wheat-based soy sauce and ponzu; no gluten-free soy sauce is mentioned.",
+  "url": "https://y813900.gorp.jp/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the cited root, then all four Gnavi menu tabs (menu1-menu4)",
+  "note": "The cited root is a bare shop-top page, and neither it nor any of the four menu tabs mentions 醤油 or ポン酢 anywhere — the soy-sauce/ponzu grounding is asserted for this venue with nothing behind it. gf:\"no\" is still right, but on different and much better evidence at https://r.gnavi.co.jp/0001359255/menu1: 手仕込みカキフライ served with 「タルタルソース・ウスターソース」 (Worcester = wheat), がんす (wheat-battered fried kamaboko), ホルモン天ぷら, 小イワシの天ぷら. Swap the citation."
+ },
+ {
+  "id": "hiro_kaki_to_suishouyaki_ku",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Cooking surfaces and grills are shared across oysters, conger eel, beef, and pork, so plant-only items cannot be guaranteed free of animal contact.",
+  "url": "https://y813900.gorp.jp/",
+  "verdict": "wrong_source",
+  "found": "Gnavi menu: the house 水晶焼 crystal-plate grill runs 世羅みのり牛コウネ, お米ポーク（肩ロース／カルビ）, 広島ハーブ鶏（せせり／もも） and 焼き牟蠿 side by side, with 森崎農園ベビーリーフ the only plant item shown",
+  "correct_url": "https://r.gnavi.co.jp/0001359255/menu1",
+  "http": "200 for the cited root; 200 for all Gnavi menu tabs",
+  "method": "plain fetch of the cited root, then the four Gnavi menu tabs",
+  "note": "Substance holds and is now citable, but the cited root states none of it, and one named ingredient is wrong: あなご / conger eel appears on NO menu tab of this venue — it reads as transplanted from a sibling Hiroshima oyster izakaya (IPPO, in this same shard, does serve あなご). Drop conger eel, cite menu1, and name the 水晶焼 shared plate instead."
+ }
+]

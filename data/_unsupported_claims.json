@@ -919,6 +919,15 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_shinjuku_dialogue",
+  "name": "新宿ダイアログ (Shinjuku Dialogue)",
+  "field": "positives",
+  "text": "Listed on a Tokyo gluten-free guide site, which states the venue's menu/sweets avoid gluten, dairy, white sugar, trans f",
+  "source": "https://jp.japan-glutenfree.com/cafe-gf-tokyo/",
+  "why": "THE LOAD-BEARING GF CITATION DOES NOT EXIST. This is the sentence gf_detail is built on ('A gluten-free guide site lists this venue, stating that at least one of its rotating kitchens avoids gluten…') and the guide does not list the venue, has no archived version that did, and has not retired it to "
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo_trevo_trevo_coffee_meals",
   "name": "トレボ (trevo (Trevo Coffee & Meals))",
   "field": "vegan_cross_contact",
@@ -2080,6 +2089,15 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_kaki_to_suishouyaki_ku",
+  "name": "かきと水晶焼き 空 (Kaki to Suishouyaki Ku)",
+  "field": "soy_sauce_wheat",
+  "text": "As a Hiroshima izakaya the menu relies on standard Japanese seasonings, which are wheat-based soy sauce and ponzu; no gl",
+  "source": "https://y813900.gorp.jp/",
+  "why": "The cited root is a bare shop-top page, and neither it nor any of the four menu tabs mentions 醤油 or ポン酢 anywhere — the soy-sauce/ponzu grounding is asserted for this venue with nothing behind it. gf:\"no\" is still right, but on different and much better evidence at https://r.gnavi.co.jp/0001359255/me"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_kiyomori_chaya",
   "name": "清盛茶屋 (Kiyomori Chaya)",
   "field": "vegan_cross_contact",
@@ -2107,12 +2125,30 @@
  },
  {
   "city": "hiroshima",
+  "id": "hiro_hondori_sasa",
+  "name": "本通り 然然 (Hondori Sasa)",
+  "field": "soy_sauce_wheat",
+  "text": "Dishes are seasoned with soy-sauce-based seasonings; standard Japanese soy sauce contains wheat.",
+  "source": "https://irori-sasa.jp/",
+  "why": "Unsupported — pure genre assumption, no soy sauce mentioned anywhere on this operator's site. The real, documented wheat exposure is stronger and should replace it: every course lists 揚物, the fugu courses list 唐揚, and /lunch/ sells a 茶そば御膳 with 天ぷら (chasoba is wheat noodles). gf_confidence 'no' rema"
+ },
+ {
+  "city": "hiroshima",
   "id": "hiro_hiroshima_wanari",
   "name": "広島 わなり (Hiroshima Wanari)",
   "field": "soy_sauce_wheat",
   "text": "Japanese-style dishes use standard soy sauce, which contains wheat; no wheat-free seasoning is mentioned.",
   "source": "https://www.hotpepper.jp/strJ001010070/",
   "why": "Unsupported, and mildly wrong in direction: the cited page's own copy stresses salt-and-lemon / moshio-and-wasabi / olive-oil finishing on the headline oyster, anago and octopus dishes. The soy-sauce line is an unevidenced genre assumption. Reword as an assumption or drop it; the wheat hazard here i"
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_linden",
+  "name": "リンデン (Linden)",
+  "field": "positives",
+  "text": "Lunch options are described as vegetable-forward, which may give more flexibility for plant-based diners who ask about i",
+  "source": "https://4travel.jp/dm_shisetsu/11270298",
+  "why": "The 'vegetable-forward' phrase is real (野菜の割合がとにかく多く) but it describes a beef-patty-and-cream-sauce plate, so the cited page evidences the opposite of plant-based flexibility — a vegan reader following this line would order a hamburg steak. Rewrite to name the dishes, or drop the plant-based inferen"
  },
  {
   "city": "hiroshima",
@@ -2617,6 +2653,15 @@
   "text": "The chain serves Sanuki udon (wheat noodles) alongside the chicken menu. A shared kitchen environment with wheat-based n",
   "source": "https://oyahinaya-nishishinjuku.com/",
   "why": "SIBLING-BRANCH CITATION. The cited page is the Nishi-Shinjuku (Tokyo) branch, whose course ends in tarai Sanuki udon. The Himeji Ekimae branch's own menu has NO udon — its shime is 本格鶏白湯ラーメン (Himeji-branch exclusive) plus 塩むすび. Rewrite the wheat vector as ramen noodles + 若鶏の唐揚げ / 姫路おでん大根の唐揚げ (shared"
+ },
+ {
+  "city": "himeji",
+  "id": "himeji_juwari_soba_daidai",
+  "name": "十割そば 橙 (Juwari Soba Daidai)",
+  "field": "soy_sauce_wheat",
+  "text": "No source confirms what soy sauce brand or style is used in the tsuyu; standard koikuchi soy sauce contains wheat. Celia",
+  "source": "https://tabelog.com/hyogo/A2805/A280501/28063832/",
+  "why": "The ADVICE is correct — I could find nothing anywhere naming this shop's tsuyu — but the citation is inert and should not stand as evidence. The cited page has コース（0）料理（0）ドリンク（0）ランチ（0）, no published 営業時間, and four reviews; it is the same defect shape as citing a guide's bare root. Either mark the cl"
  },
  {
   "city": "himeji",

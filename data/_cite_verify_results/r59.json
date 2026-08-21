@@ -63,5 +63,70 @@
   "http": "200 (plain curl, 114KB)",
   "method": "1 plain fetch",
   "note": "Supported for the menu-composition half (even the salad is topped with dried whitebait). The 'shared equipment and fish/dashi seasonings' half is inference, not on the page — fine as reasoning but should not read as documented fact."
+ },
+ {
+  "id": "hiro_hondori_sasa",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes are seasoned with soy-sauce-based seasonings; standard Japanese soy sauce contains wheat.",
+  "url": "https://irori-sasa.jp/",
+  "verdict": "unsupported",
+  "found": "醤油 / タレ / 出汁 all return zero hits on the cited homepage, and zero again on https://irori-sasa.jp/lunch/ and https://irori-sasa.jp/takeout/. The official site describes only cooking methods (藁炙り焼き・原始焼き・薪焼き・炭火焼き) and 「瀬戸内の鮮魚、地元産のお野菜を中心に」 — never a seasoning.",
+  "correct_url": null,
+  "http": "200 homepage (plain curl, 83KB); 200 /lunch/; 200 /takeout/; /food/ 404",
+  "method": "1 plain fetch of the cited page + 2 plain fetches of the site's only two menu subpages, keyword-scanned",
+  "note": "Unsupported — pure genre assumption, no soy sauce mentioned anywhere on this operator's site. The real, documented wheat exposure is stronger and should replace it: every course lists 揚物, the fugu courses list 唐揚, and /lunch/ sells a 茶そば御膳 with 天ぷら (chasoba is wheat noodles). gf_confidence 'no' remains correct on that evidence."
+ },
+ {
+  "id": "hiro_hondori_sasa",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Cooking is centered on a shared hearth, kiln and charcoal grill used for fish, oysters and meat, so vegetable items would share fire and surfaces with animal proteins.",
+  "url": "https://irori-sasa.jp/",
+  "verdict": "wrong_source",
+  "found": "The homepage supports the hearth-and-fish half only: 「当店では「藁炙り焼き」「原始焼き」「薪焼き」「炭火焼き」の手法を使い分け」, 「囲炉裏のあるカウンターは…魚の焼ける音や香りが」, 「瀬戸内の鮮魚 旬の美味を厳選仕入れ」. Meat is documented one page over at /lunch/: 「旬魚とイベリコ豚ロース炭焼き」「和牛炭火焼き」「和牛とトマトのすき焼き」「牛ハラミ御膳」. Oysters appear on NEITHER page, nor on /takeout/ — 牡蠣/かき is zero hits site-wide.",
+  "correct_url": "https://irori-sasa.jp/lunch/",
+  "http": "200 all three pages (plain curl)",
+  "method": "1 plain fetch of the cited page + 2 plain fetches of the sibling menu pages",
+  "note": "Split citation: cite the homepage for the shared hearth and Setouchi fish, add https://irori-sasa.jp/lunch/ for the charcoal-grilled Iberico pork and wagyu. Then DELETE 'oysters' — it is unevidenced on this operator's whole site and also appears in the record's vegan_detail ('centers on seafood (oysters, Seto Inland Sea fish)'). Looks like a Hiroshima-genre assumption imported into a specific venue."
+ },
+ {
+  "id": "hiro_honke_soncho_no_mise",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Dishes are cooked on a shared teppan (griddle) where wheat-batter okonomiyaki and noodles are prepared, making cross-contact with gluten effectively unavoidable.",
+  "url": "https://sonchounomise.owst.jp/",
+  "verdict": "supported",
+  "found": "「村長デラックス 1,925円 そば・生イカ・エビ・チーズ・ネギかけ・豚肉・玉子、ボリュームたっぷりのお好み焼き♪」, 「そば・もち・チーズ入り 1,408円」, menu sections 【てっぱん焼きとおつまみ】 and 【てっぱん あつあつメニュー】, and 「広々空間と大きい鉄板が魅力的な店内です★」 / 「1階はカウンターとテーブル席の30席。お気軽感と目の前で焼いてくれるのがいい！」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 85KB)",
+  "method": "1 plain fetch",
+  "note": "Supported. Worth strengthening: the same shared griddle also turns out タコの天ぷら, じゃこ天 and 黒豚ギョーザ — three more wheat items — and the all-you-can-eat plan is okonomiyaki and negiyaki. Page carries no アレルギー/グルテン/小麦 text at all."
+ },
+ {
+  "id": "hiro_honke_soncho_no_mise",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Okonomiyaki is finished with okonomiyaki/Worcestershire-style sauce, which is wheat- and soy-based.",
+  "url": "https://sonchounomise.owst.jp/",
+  "verdict": "supported",
+  "found": "「そば・もち・チーズ入り 1,408円 (税込) お好み焼きのソースとチーズのトロトロ感が相性抜群！女性人気ナンバー1♪」 — the only occurrence of ソース on the page, and 醤油 is zero.",
+  "correct_url": null,
+  "http": "200 (plain curl, 85KB)",
+  "method": "1 plain fetch + keyword scan for ソース/醤油/小麦",
+  "note": "The shop page evidences THAT okonomiyaki sauce is used; it does not evidence what is in it — the wheat-and-soy composition is off-page product knowledge, and the field name (soy_sauce_wheat) overstates what the citation carries. Either reword to 'finished with okonomiyaki sauce' and keep this citation, or add a manufacturer allergen listing (Otafuku) for the wheat half. Not a safety error: the batter and soba noodles already make this a hard no."
+ },
+ {
+  "id": "hiro_honke_soncho_no_mise",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The single shared teppan is used for pork, egg, seafood and cheese dishes, so any item would share the same cooking surface as animal products.",
+  "url": "https://sonchounomise.owst.jp/",
+  "verdict": "supported",
+  "found": "「村長デラックス そば・生イカ・エビ・チーズ・ネギかけ・豚肉・玉子」 plus ［広島名産］かきバター焼き, 北海道産ホタテバター焼き, 黒豚ギョーザ, 牛すじ煮込み, ［広島名産］牛コウネ焼き, ［尾道名産］じゃこ天 — pork, egg, squid, shrimp, oyster, scallop, beef and cheese, against 「広々空間と大きい鉄板」.",
+  "correct_url": null,
+  "http": "200 (plain curl, 85KB)",
+  "method": "1 plain fetch",
+  "note": "Supported. Only two items on the whole page are plausibly plant-based (枝豆, 広島菜キムチ — kimchi usually carries fish sauce/shrimp), so vegan_status 'no' is right. Minor wording nit: the site does not state there is exactly ONE griddle; say 'shared teppan' rather than 'single'."
  }
 ]

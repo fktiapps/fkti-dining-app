@@ -50,5 +50,31 @@
   "http": "200 plain curl",
   "method": "plain fetch of the cited mrs.living reporter article",
   "note": "The claim is sound as general soba practice but the cited page never states it, and no source found gives this shop's tsuyu recipe. Stronger page-level wheat evidence exists instead: the live Tabelog menu (更新日 2026/06/13) lists たぬきそば (tenkasu = fried wheat batter), 月見きつねそば, 天ぷらそば and 天ぷらそば切り, and the cited article itself documents 天ぷら and だし巻き卵 inside the ¥1,680 set — cite those rather than an unevidenced soy-sauce line."
+ },
+ {
+  "id": "hiro_itsuki_coffee_miyajima",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "An English menu is available, which helps travelers communicate basic preferences when ordering.",
+  "url": "https://japan-stroll.com/guide/gourmet/itsuki-miyajima/",
+  "verdict": "supported",
+  "found": "「注文はスタンド形式でテイクアウトもスムーズ。英語メニューが用意されているため海外旅行者にも安心です。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited japan-stroll article",
+  "note": "Verbatim on the cited page. Same page also corroborates the record's ask-level detail — モーニングセット is a ham-and-cheese hot sandwich on Cadona pain de mie, the signature soft serve is 生クリーム-based, and 八天堂のクリームパン is sold at the counter — so both the wheat and the dairy pathways are now citable from one source. Note the article gives hours 9:00-19:00 (L.O. 18:30), 不定休, no credit cards (e-money/QR only)."
+ },
+ {
+  "id": "hiro_itsukushima_barl_issai",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "A vegetarian menu is listed as available, so there are at least some meat-free options on offer.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34022121/",
+  "verdict": "supported",
+  "found": "メニュー → 料理 →「ベジタリアンメニューあり」 (Tabelog shop-info panel)",
+  "correct_url": null,
+  "http": "200 plain curl (desktop host)",
+  "method": "plain fetch of the cited Tabelog detail page",
+  "note": "Verbatim, but it is Tabelog's self-reported facility checkbox with no dish named anywhere — the record's 'ask' caveat is doing the real work and should stay. SEPARATE DEFECT on this record: the website field https://issai-itsukushima.com/ is a LAPSED DOMAIN — NXDOMAIN on dns.google, curl returns 000 over http/https and with/without www; last Wayback capture 2022-01-08. The venue is still trading (Tabelog lists 09:00-15:30 / 17:00-21:00, closed Mondays; an Instagram reel dated 2026-06-19 features it), so replace the dead link with the Tabelog or Hitosara page rather than dropping the record."
  }
 ]

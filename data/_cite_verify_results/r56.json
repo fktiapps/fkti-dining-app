@@ -50,5 +50,56 @@
   "http": "200 plain on kurika.jp/?page_id=789, /?page_id=843, /?page_id=767, /?page_id=815",
   "method": "1 plain fetch of the cited page, then plain fetches of the site's sibling pages found by link-scraping the root",
   "note": "The cited product page evidences only the sweet-potato half (安納焼き芋) and never mentions chestnuts or the 紅葉谷 branch — its only shop reference is 風籟堂　宮島表参道店, the sibling branch. Recite to https://kurika.jp/?page_id=843 (names 紅葉谷店 and lists both 国産焼き栗 くり香 and 安納焼き芋) plus https://kurika.jp/?page_id=767 for the 無添加/栗だけ single-ingredient point. 'Naturally gluten-free and plant-based' remains the reviewer's inference — no page on the site says gluten or allergen anything."
+ },
+ {
+  "id": "hiro_furufuru",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "Seasonal fresh-pressed single-fruit juices are available, which are naturally plant-based and gluten-free, though preparation handling is not documented.",
+  "url": "https://tabetainjya.com/archives/nakaku1/furufuru/",
+  "verdict": "supported",
+  "found": "「旬の果実を使った100％のフレッシュジュースなのだとか」…「フルフルさんでは、1年を通して旬のフルーツを使ったフレッシュジュースを以下のラインナップで提供されています。いちご（1月～5月頃）／ゴールデンキウイ（5月～7月頃）／すもも（6月～8月頃）／ぶどう（6月～8月頃）／ピーチ（5月～7月頃）／ラ・フランス（11月頃～）／ざくろ（11月中旬頃～）」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch; trading status cross-checked on s.tabelog.com/hiroshima/A3401/A340114/34010971/ with an iPhone UA (200, no 閉店 banner, latest review 2026/06)",
+  "note": "Fully supported, including the 100% single-fruit point. Two things the same page adds that the record misses: the juices can be turned into a float with ice cream for +100円 (shared scoop / dairy vessel — relevant to the 'handling not documented' caveat), and the record's gf_detail assertion that 'the house-made pudding also is not gluten-free' is not supported anywhere — the article describes 自家製プリン as a soft custard under 生クリーム with no wheat component. That is a warning against something likely harmless; either evidence it or drop it. Article also lists 定休日 月曜日, 9時～18時."
+ },
+ {
+  "id": "hiro_gallery_miyazato",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat bread (pizza toast, cheese toast) and wheat-flour chiffon cake are core menu items prepared in a small café kitchen, so flour cross-contact is likely; no gluten-free handling is documented.",
+  "url": "https://onhome2.seesaa.net/article/2024-03-02-6.html",
+  "verdict": "supported",
+  "found": "「食事は、ピザトースト、チーズトースト、パキスタンカレー。」「６枚切り食パンで作ったピザトーストはチーズがたっぷり。パンは廿日市市にある「ラ・パン・ジュジュ」さんの自家製天然酵母パン。」",
+  "correct_url": null,
+  "http": "200 (plain curl) for the blog; 200 (plain curl, Shift_JIS) for ww4.tiki.ne.jp/~miyazato/menu20251101.html",
+  "method": "1 plain fetch of the cited blog + string search (シフォン/小麦/グルテン = 0 hits), then plain fetch of the official site and its 喫茶メニュー page",
+  "note": "The toast half is verbatim on the cited blog, but 'wheat-flour chiffon cake' appears nowhere on it — cite the official menu instead: http://ww4.tiki.ne.jp/~miyazato/menu20251101.html 「シフォンケーキ ※数量限定 毎日手作りしている紅茶（アールグレイ）のシフォンケーキです」. LOUD, other direction: that same official menu describes パキスタンカレー as 「鶏肉と野菜とたくさんのスパイスを、オリーブオイルでじっくり煮込みました。水は使わず味付けは塩のみ。」 — salt only, no soy sauce, no roux, served with rice and a carrot salad. The record's 'at most a plain coffee or tea would be advisable' is contradicted by the operator's own ingredient statement. See the tier_recommendation."
+ },
+ {
+  "id": "hiro_gallery_miyazato",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Dairy cheese (pizza/cheese toast) and chicken (Pakistani curry) are prepared in the same kitchen; no separate vegan preparation is documented.",
+  "url": "https://onhome2.seesaa.net/article/2024-03-02-6.html",
+  "verdict": "supported",
+  "found": "「このカレーは、鶏肉と野菜をスパイスとともに、水を使わずにオリーブオイルでじっくり煮込んだカレーです。」「チーズは、北海道の「よつば葉乳業」のチーズ。」「たぶん、チェダー、ゴーダ、モッツァレラをミックスしたチーズですね。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Both halves are verbatim on the cited page and the official 2025-11 menu corroborates (ピザトースト/チーズトースト both 北海道のよつ葉チーズ; パキスタンカレー 鶏肉). vegan_status 'ask' is correct — the official menu does carry plant-based items (甘酒 = koji amazake with grated ginger, ぜんざい with 焼いたお餅 in winter, オレンジジュース) but none are labelled vegan. Trading status OK: official site lists 定休日 水曜日 (matches the record), 営業時間 10:00-18:00 L.O.17:30, and gallery bookings scheduled through 2027."
+ },
+ {
+  "id": "hiro_gallery_miyazato",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "http://ww4.tiki.ne.jp/~miyazato/menu20251101.html",
+   "https://onhome2.seesaa.net/article/2024-03-02-6.html"
+  ],
+  "why": "The operator's own current menu states the パキスタンカレー is chicken and vegetables simmered in olive oil with spices, 「水は使わず味付けは塩のみ」 — salt only, so no soy sauce and no wheat roux — served with rice and a carrot salad, and the blog photo confirms it arrives on turmeric rice with a キャロットラペ. ぜんざい (azuki with grilled mochi), 白玉冷やしぜんざい, お抹茶単品 and 甘酒 are likewise wheat-free by composition. 'no' with the detail text saying 'at most a plain coffee or tea' denies a celiac a documented flour-free main dish; 'ask' is honest because the same small kitchen bakes chiffon cake daily and toasts bread, so cross-contact is real and unprotocolled."
  }
 ]

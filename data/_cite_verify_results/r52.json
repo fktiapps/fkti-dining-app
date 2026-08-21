@@ -801,5 +801,117 @@
    "https://www.timeout.jp/tokyo/ja/restaurants/soranoiro-nippon"
   ],
   "why": "The record's gf_detail states in terms that it is 「[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is.」 It is now traceable, on the shop's own pages: a グルテンフリー塩ラーメン 「食材から小麦をすべて取り除いた」 on brown-rice noodles from 宮内舎 in Shimane; staff who proactively ask every customer 「小麦アレルギーの有り無しをお伺い致します」; a separate boiling kettle 「茹で釜を別にて対応させていただきます」; wheat removed from tare, oil and toppings; and the founder stating he developed it so 小麦アレルギーやセリアック病 customers could eat. That is a documented GF menu item with a named protocol — 'options', not 'ask'. It should NOT go higher: the shop itself prints 「※コンタミネーションの可能性はございます」 on that very bowl and the counter boils 全粒粉入り wheat noodles alongside."
+ },
+ {
+  "id": "himeji_casa_isola_himeji_ekimae",
+  "city": "himeji",
+  "field": "soy_sauce_wheat",
+  "quote": "No explicit soy sauce usage confirmed, but the restaurant blends Japanese and Italian flavors (e.g., ponzu-dressed chicken, fusion small plates), making shoyu — which contains wheat — a realistic ingredient in some dishes. No GF soy sauce alternative has been identified.",
+  "url": "https://tabelog.com/hyogo/A2805/A280501/28052693/",
+  "verdict": "wrong_source",
+  "found": "HotPepper menu for the Himeji-Ekimae shop: 「炭火焼　ヒネ鶏ポン酢　880円（税込）」 — the ponzu chicken is real and on the menu, with 自家製アンチョビソースピザ, さば味噌クリームパスタ and 揚げ餅 坊勢島海苔ソース alongside it.",
+  "correct_url": "https://www.hotpepper.jp/strJ004634491/food/",
+  "http": "200 (tabelog answered on both www and s. with an iPhone UA)",
+  "method": "plain fetch of the cited tabelog page, then Yahoo Japan search for the venue name → HotPepper + the correct tabelog listing",
+  "note": "WRONG VENUE, and the wrong venue is CLOSED. The cited page 28052693 is カーサ イゾラ at 兵庫県姫路市飾磨区清水176 (飾磨駅, ~4 km from Himeji Station); tabelog itself banners it 「このお店は店舗情報の確認が取れていないため掲載保留中です」 and Yahoo Loco labels it 閉業. It also has zero menu data (コース0/料理0/ドリンク0/ランチ0), so it could never have evidenced a dish. The record's venue is カーサ イゾラ 姫路駅前店, 兵庫県姫路市南町60-2 クリスタル南町栄通ビル 1FA, 山陽姫路駅から86m, opened 2026-07-03 — tabelog https://tabelog.com/hyogo/A2805/A280501/28076968/. Repoint every claim on this record."
+ },
+ {
+  "id": "himeji_casa_isola_himeji_ekimae",
+  "city": "himeji",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen handles fish, seafood, meat, cheese, and eggs as central ingredients. No separation for plant-based diners is indicated.",
+  "url": "https://tabelog.com/hyogo/A2805/A280501/28052693/",
+  "verdict": "wrong_source",
+  "found": "HotPepper menu, Himeji-Ekimae shop: fish/seafood — 坊勢島のエビカツ, 坊勢島の小エビのアヒージョ, さば味噌クリームパスタ, シラスと海苔のピザ, 自家製アンチョビソースピザ; cheese — カリカリおつまみチーズ, クリームチーズ蜂蜜, アボカドとクリームチーズのオーブン焼き, チーズたっぷりホワイトピザ, マルゲリータ; egg — 厚焼きタマゴサンド, だし巻き玉子, 目玉焼き, 国産牛すじオムレツ, 玉子乗せナポリタン; meat — 生ハム, ベーコン, 赤身肉, 合鴨. Instagram bio (the record's own `website`): 「家島のシェフが作る創作料理 魚介とお肉料理充実しております‼️」",
+  "correct_url": "https://www.hotpepper.jp/strJ004634491/food/",
+  "http": "200",
+  "method": "HotPepper full food menu + the venue's own Instagram bio",
+  "note": "The claim is true and now heavily evidenced — but again, not by the cited page, which is the closed Shikama shop with no menu at all. Note the two nominally plant-ish items are still not vegan: スティックサラダ comes with バーニャカウダ (anchovy/dairy) or マヨネーズ."
+ },
+ {
+  "id": "himeji_casa_isola_himeji_ekimae",
+  "city": "himeji",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "Both claims are true; both cite a closed, different-town predecessor shop whose tabelog page carries zero menu data. Fix the citations to https://tabelog.com/hyogo/A2805/A280501/28076968/ and https://www.hotpepper.jp/strJ004634491/food/, and update address/hours to 兵庫県姫路市南町60-2 クリスタル南町栄通ビル 1FA, 17:30-23:00 (L.O.22:00), closed Mondays, opened 2026-07-03. GAP: the record carries NO gf_cross_contamination claim, yet the menu is built on ピッツァ, パスタ, サンド and バケット with an 極薄生地 pizza oven — that is the dominant gluten fact about this venue and it is simply missing. gf 'ask' and vegan 'ask' are both defensible once the missing wheat context is added."
+ },
+ {
+  "id": "himeji_juwari_soba_daidai",
+  "city": "himeji",
+  "field": "soy_sauce_wheat",
+  "quote": "No source confirms what soy sauce brand or style is used in the tsuyu; standard koikuchi soy sauce contains wheat. Celiac diners must ask.",
+  "url": "https://tabelog.com/hyogo/A2805/A280501/28063832/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (iPhone UA, www and s.tabelog both served)",
+  "method": "full read of the cited tabelog page; Yahoo Japan search for the venue; no official site or SNS exists",
+  "note": "The ADVICE is correct — I could find nothing anywhere naming this shop's tsuyu — but the citation is inert and should not stand as evidence. The cited page has コース（0）料理（0）ドリンク（0）ランチ（0）, no published 営業時間, and four reviews; it is the same defect shape as citing a guide's bare root. Either mark the claim `source: null` honestly or cite nothing at all, rather than implying a page confirmed the absence."
+ },
+ {
+  "id": "himeji_juwari_soba_daidai",
+  "city": "himeji",
+  "field": "positives",
+  "quote": "Noodles are stated to be 100% buckwheat (十割) with no wheat flour blended in, which is a prerequisite for any gluten-free consideration.",
+  "url": "https://tabelog.com/hyogo/A2805/A280501/28063832/",
+  "verdict": "moved",
+  "found": "The page carries 十割 only in the shop's trading name — 「十割そば 橙 (DAIDAI) 山陽姫路駅/そば」 — plus one diner review: 「姫路10割蕎麦屋さん 注文してから、粉から作り機械を使って練り込む為 凄く時間がかかる」.",
+  "correct_url": null,
+  "http": "200",
+  "method": "full read of the cited tabelog page + Yahoo Japan search",
+  "note": "'Stated to be' overstates it: the only sources are a SHOP NAME and one customer review — the shop makes no ingredient statement anywhere, because it publishes nothing. More importantly the record omits the two things that actually decide this for a celiac: 十割 soba is routinely handled with 打ち粉 (wheat dusting flour) at the cutting board, and the tsuyu is normally wheat-brewed shoyu. Per the standing rule that 十割 does not mean gluten-free, this 'positive' should be rewritten as a caveat, not a green flag. Also worth a phone check: tabelog publishes no opening hours for this shop and it has drawn 4 reviews since opening in 2022-04."
+ },
+ {
+  "id": "himeji_juwari_soba_daidai",
+  "city": "himeji",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "Both claims hang on a tabelog page with no menu, no hours and no ingredient information — it cannot evidence anything venue-specific. The soy-sauce advice is right but uncitable; the 十割 'positive' rests on the shop's name and one review and needs restating as a caveat (打ち粉 dusting flour, wheat tsuyu). gf 'ask' is the right tier and must not move up: nothing here evidences a gluten-free practice, only a noodle style. Trading status unconfirmed — Yahoo Loco still lists it as active at 兵庫県姫路市西駅前町51-5 (山陽百貨店 area) but no operator publishes hours."
+ },
+ {
+  "id": "himeji_kushiage_kikkou",
+  "city": "himeji",
+  "field": "gf_cross_contamination",
+  "quote": "All kushiage items are coated in panko (wheat breadcrumbs) and fried in a shared fryer. Cross-contamination with wheat is inherent and unavoidable across the entire menu.",
+  "url": "https://kushiage-kikkou.com/menu/",
+  "verdict": "wrong_source",
+  "found": "「02 素材の旨味を引き立てる\"パン粉\" — まるで粉雪のようにきめ細かなパン粉を使用。粗目のパン粉よりも油切れがよく、サクッとした食感で…ランチタイムは少し粗目でもちっとした食感のパン粉を使用。」 and 「01 …当店では、さらっとした口当たりと軽い食感の植物油にセロリやネギなどの香味野菜で香りづけしたオリジナルの揚げ油を使用しています。」",
+  "correct_url": "https://kushiage-kikkou.com/about/",
+  "http": "200",
+  "method": "plain fetch of the cited /menu/ page, then the site's きっこうのこだわり page",
+  "note": "Claim is right, citation is one page off. The cited /menu/ page lists only courses (串12種/15種/20種, 魚のカルパッチョ, 梅茶漬け, アイスクリーム) and never says panko or oil. The きっこうのこだわり page states BOTH in the shop's own words — a single house-blended frying oil for the whole menu, and panko as a named point of pride. Repoint to /about/."
+ },
+ {
+  "id": "himeji_kushiage_kikkou",
+  "city": "himeji",
+  "field": "soy_sauce_wheat",
+  "quote": "No soy sauce specifications are listed. Standard Japanese soy sauce (which contains wheat) is virtually certain to be used in marinades and dipping sauces; no tamari or gluten-free soy sauce is mentioned.",
+  "url": "https://kushiage-kikkou.com/menu/",
+  "verdict": "supported",
+  "found": "The cited page names its condiments and finishers with no soy sauce among them: 「味噌マヨネーズ 50円～」, 「梅茶漬け ※昆布茶漬けにも変更可能です」, and no tamari or GF alternative anywhere on the site.",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch of /menu/, /about/ and the site top",
+  "note": "Correctly scoped: the page really does list no soy sauce spec, so the claim's negative half is verifiable on the cited page. MISSING TRAP: the one condiment the shop DOES name is 味噌マヨネーズ, and 麦味噌 is barley — a gluten source in its own right that this record never mentions. Add it; the miso dip is the item a celiac would otherwise assume is safe."
+ },
+ {
+  "id": "himeji_kushiage_kikkou",
+  "city": "himeji",
+  "field": "vegan_cross_contact",
+  "quote": "All items are cooked in the same fryer as meat and seafood. No separation of animal products from vegetables is indicated.",
+  "url": "https://kushiage-kikkou.com/menu/",
+  "verdict": "wrong_source",
+  "found": "「当店では…植物油にセロリやネギなどの香味野菜で香りづけしたオリジナルの揚げ油を使用しています」 — one house oil, described in the singular, for a menu the same page describes as 「四季折々の海の幸・山の幸をふんだんに使用した…創作串」. Courses also bundle 魚のカルパッチョ and アイスクリーム.",
+  "correct_url": "https://kushiage-kikkou.com/about/",
+  "http": "200",
+  "method": "plain fetch of the きっこうのこだわり page + the cited menu page",
+  "note": "True and now citable from the shop's own description of a single original frying oil across a sea-and-mountain menu. Fair nuance for the vegan reader: the oil base itself is 植物油 (vegetable), so the objection is the shared bath and the panko (usually egg-washed), not an animal fat."
+ },
+ {
+  "id": "himeji_kushiage_kikkou",
+  "city": "himeji",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "All three claims are true; two point at /menu/ when the evidence is on /about/ (きっこうのこだわり), which states the panko and the single house frying oil outright. gf 'no' and vegan 'no' are both correct — night service is course-only, every course is 串揚げ plus 魚のカルパッチョ and アイスクリーム, and there is no à-la-carte escape. Trading status confirmed OPEN: 兵庫県姫路市南町12 北道ビル1F, 17:30-22:00 (Sun/hol to 21:00), closed Tuesdays. One gap worth filling: 味噌マヨネーズ is the house dip and barley miso is a live gluten risk the record does not mention."
  }
 ]

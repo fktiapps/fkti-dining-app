@@ -185,6 +185,20 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_shinjuku_dialogue",
+  "name": "新宿ダイアログ (Shinjuku Dialogue)",
+  "field": "vegan_status",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://vegewel.com/ja/restaurant/2416",
+   "https://www.timeout.jp/tokyo/ja/lgbt/shinjuku-dialog",
+   "https://vegewel.com/ja/style/shinjukudia"
+  ],
+  "why": "This is the honest upgrade this record has been denied. The Wednesday operator states in its own Vegewel listing 「当店はシェアカフェ新宿ダイアログで水曜日の11:00-17:00のみ営業しているヴィーガンのお店です」 — an entirely vegan kitchen on a known day and time, not a maybe. Time Out (2026-05-01) independently records that Saturday and Sunday lunchtime is 「体に優しい手作りスイーツやビーガンメニューを楽しめるカフェ」, and the venue's own Facebook bio advertises 「ヴィーガンのホームメイドケーキ」 for 毎週土・日12:00-17:00. Both Vegewel listings for the address carry ビーガンメニューあり. Three named, dated, day-specific vegan services is 'Some vegan options', not 'Vegan — ask'. It should NOT go higher: the same sources show 百福's meat-and-fish course on 月火水金 evenings and Vegewel notes 「バーのフードメニューはプラントベース料理以外も取り扱っている」, and the Wednesday operator itself warns 「他の曜日はヴィーガンではない他店様が営業しています」 — so vegan_detail must keep the day-of-week caveat prominently."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__104",
   "name": "築地本願寺キッチン",
   "field": "vegan_status",
@@ -338,5 +352,18 @@
    "https://www.timeout.jp/tokyo/ja/restaurants/soranoiro-nippon"
   ],
   "why": "The record's gf_detail states in terms that it is 「[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is.」 It is now traceable, on the shop's own pages: a グルテンフリー塩ラーメン 「食材から小麦をすべて取り除いた」 on brown-rice noodles from 宮内舎 in Shimane; staff who proactively ask every customer 「小麦アレルギーの有り無しをお伺い致します」; a separate boiling kettle 「茹で釜を別にて対応させていただきます」; wheat removed from tare, oil and toppings; and the founder stating he developed it so 小麦アレルギーやセリアック病 customers could eat. That is a documented GF menu item with a named protocol — 'options', not 'ask'. It should NOT go higher: the shop itself prints 「※コンタミネーションの可能性はございます」 on that very bowl and the counter boils 全粒粉入り wheat noodles alongside."
+ },
+ {
+  "city": "hiroshima",
+  "id": "hiro_gallery_miyazato",
+  "name": "ぎゃらりぃ宮郷 (Gallery Miyazato)",
+  "field": "gf_confidence",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "http://ww4.tiki.ne.jp/~miyazato/menu20251101.html",
+   "https://onhome2.seesaa.net/article/2024-03-02-6.html"
+  ],
+  "why": "The operator's own current menu states the パキスタンカレー is chicken and vegetables simmered in olive oil with spices, 「水は使わず味付けは塩のみ」 — salt only, so no soy sauce and no wheat roux — served with rice and a carrot salad, and the blog photo confirms it arrives on turmeric rice with a キャロットラペ. ぜんざい (azuki with grilled mochi), 白玉冷やしぜんざい, お抹茶単品 and 甘酒 are likewise wheat-free by composition. 'no' with the detail text saying 'at most a plain coffee or tea' denies a celiac a documented flour-free main dish; 'ask' is honest because the same small kitchen bakes chiffon cake daily and toasts bread, so cross-contact is real and unprotocolled."
  }
 ]

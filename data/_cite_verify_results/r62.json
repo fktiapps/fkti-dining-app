@@ -63,5 +63,70 @@
   "http": "000 — curl: (6) Could not resolve host: www.gochi-machi.jp (DNS failure, repeated; plain and desktop UA, with and without -L)",
   "method": "routes 1-3 attempted; the domain does not resolve at all, so no UA or proxy variation can help",
   "note": "DEAD DOMAIN in the record's primary website field. gochi-machi.jp no longer resolves. Swap website to the live Tabelog page (or HotPepper strJ000673815) before this ships; also note Tabelog gives the address as 新天地1-15 NIIビル1F while HotPepper says 新天地1-14 — worth a one-line reconcile."
+ },
+ {
+  "id": "hiro_katsutani_kashi_pan_po",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Entirely a wheat-flour koppe-pan bakery; there is no gluten-free product and no published allergen handling, so heavy cross-contact with wheat is inherent.",
+  "url": "https://katsutanipan.jp/",
+  "verdict": "supported",
+  "found": "Official site: 「コッペパン専門店としてオープンします。他にも美味しい食材を厳選し、その数は27種類。」 Every one of the 27 listed products is a koppe-pan roll, including 「広島お好み焼き … お好み焼きとコッペパンの出会い♪ 650yen」 and 「昔ながらのナポリタン 550yen」 (wheat pasta on a wheat roll).",
+  "correct_url": null,
+  "http": "200 (plain curl with iPhone UA, 49KB, full static HTML — no JS shell)",
+  "method": "route 1 plain fetch of the official site",
+  "note": "Supported. The 'no published allergen handling' half verified negatively: a grep of the entire rendered site for アレルギ / 小麦 / グルテン / 原材料 returns ZERO hits, so there is no allergen or ingredient disclosure at all. Site is actively trading — newest notice is 「2026年6月29日 夏季営業時間変更のお知らせ」, 営業時間 10:00-17:00, 毎週木曜日定休."
+ },
+ {
+  "id": "hiro_katsutani_kashi_pan_po",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Most buns contain dairy (margarine, cream cheese, custard, whipped cream), egg, or seafood/meat fillings, and the bread is not documented as vegan; ingredient and allergen disclosure is not provided.",
+  "url": "https://katsutanipan.jp/",
+  "verdict": "moved",
+  "found": "Live menu: 勝谷あんマーガリン, 自家製抹茶あんホイップ, 瀬戸内レモンあんとクリームチーズ, たっぷりカスタード, 海人の藻塩ミルククリーム, ラムレーズン, 粒入りピーナッツ, チョコレート, たまご(たまごサラダ), 野菜たまご, 昔ながらのナポリタン(粉チーズ), 北海道産コロッケ, チキン南蛮. Plant-leaning outliers: 勝谷あん 350yen and いちごジャム 350yen.",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "route 1 plain fetch",
+  "note": "Two wording corrections. (1) NO seafood filling exists on the current 27-item lineup — a grep for 牡蠣/カキ/かき returns zero, so the record's 'Miyajima oyster fry' (also repeated in vegan_detail and chef_bio.specialty) is stale or transplanted; drop 'seafood' or re-date it. (2) margarine is a vegetable fat, not dairy — listing it under 'dairy' is the wrong objection; the real vegan objection to マーガリン is that it is undisclosed and commonly contains milk solids. Everything else in the sentence is verbatim on the page. vegan_status 'no' remains right: the koppe-pan dough itself carries no ingredient disclosure."
+ },
+ {
+  "id": "hiro_kijima_shoten",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Oyster dishes and grilled-oyster seasoning rely on standard Japanese soy sauce and miso, which contain wheat; no gluten-free seasoning is documented.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34017538/",
+  "verdict": "moved",
+  "found": "Cited Tabelog page: genre 「かき、海鮮」, review title 「変幻自在な焼き牡蠣が楽しめます」, 関連のキーワード 「焼き牡蠣／バター醤油／レモン／ポン酢／穴子／ぶり」. A Yahoo Japan search of the shop surfaces the flavour list: 「ポン酢やバター醤油といった定番から、レモスコ、ラー油、柚子こしょう、わさび醤油、トマトチーズなど変わり種も」 and prices 焼き牡蠣 バター醤油 700円 / 焼き牡蠣 550円 / 焼牡蠣檸檬 600円.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com detail, iPhone UA); the /dtlmenu/ URL 302-redirects back to the detail page",
+  "method": "route 1 (iPhone UA on s.tabelog.com) then route 4 (Yahoo Japan search on the shop name)",
+  "note": "Soy sauce IS documented (バター醤油, わさび醤油, ポン酢 — all wheat-brewed) so that half stands. MISO is not: 味噌 appears nowhere on the cited page or in any source reached — delete it. Also SEPARATE DEFECT: the record's menu_url https://tabelog.com/hiroshima/A3402/A340202/34017538/dtlmenu/ is a 302 back to the detail page — Tabelog has no menu page for this shop, yet the record carries menu_verified: \"authoritative\". Downgrade that."
+ },
+ {
+  "id": "hiro_kijima_shoten",
+  "city": "hiroshima",
+  "field": "gf_detail",
+  "quote": "fried oysters are coated in wheat batter",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34017538/",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA); dtlmenu 302",
+  "method": "routes 1 and 4 — iPhone-UA Tabelog fetch plus Yahoo Japan search on 木島商店 宮島 焼き牡蠣 メニュー",
+  "note": "WRONG IN BOTH DIRECTIONS. No fried oyster (かきフライ) appears on the cited page, in its keyword cloud, or in any menu listing found — this is a charcoal GRILLED-oyster stand. Meanwhile the same gf_detail omits the shop's genuinely relevant items: a plain 焼き牡蠣 550円 and 焼牡蠣檸檬 600円 with nothing but lemon. Rewrite the hazard as the shared grill and the soy-sauce/butter flavours, not a battered item that does not exist."
+ },
+ {
+  "id": "hiro_kijima_shoten",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The entire menu is built around oysters and seafood, so plant-based diners face unavoidable shellfish/fish content and likely fish dashi in shared cooking.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34017538/",
+  "verdict": "supported",
+  "found": "Tabelog genre line 「かき、海鮮」; 関連のキーワード 「焼き牡蠣／穴子／ぶり」; review 「変幻自在な焼き牡蠣が楽しめます … 元々はお土産屋さんで、1996年開業」.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "route 1 — iPhone UA on the mobile host",
+  "note": "Supported; vegan_status 'no' is correct. The 'likely fish dashi' clause is inference — this is a grill counter, not a dashi kitchen — so soften it to the shared charcoal grill, which is the actual documented hazard. Trading confirmed: 営業時間 09:00-19:00, most recent 口コミ dated 2026/08."
  }
 ]

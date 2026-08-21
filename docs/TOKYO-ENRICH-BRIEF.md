@@ -126,6 +126,18 @@ Set `gf_confidence` to whatever the evidence supports. If you think a record mer
 `dedicated` or `high`, say so — the merge script holds every top-tier promotion for a
 separate adversarial pass and the owner's sign-off, so nothing ships on your word alone.
 
+## Search engines, same warning: try, do not assume
+
+Every engine bot-walls eventually and they take turns. In one session Yahoo Japan went
+from the only reliable route to HTTP 429 on every attempt; DuckDuckGo (both html and
+lite), Mojeek and Bing all returned bot challenges; Google was never reachable.
+**Ecosia — `https://www.ecosia.org/search?q=` — was the only working route** on the
+last shard and unlocked four repairs on its own. Brave has also worked.
+
+So keep a list and walk it: Yahoo Japan, Ecosia, Brave, Bing, DuckDuckGo lite. Record
+which one answered. And a search engine declining to answer is never evidence about a
+shop — an HTTP 429 or a bot challenge is a fact about the engine.
+
 ## Output
 
 Write a JSON array of your 12 result objects to `data/_tokyo_enrich_verdicts/sN.json`.

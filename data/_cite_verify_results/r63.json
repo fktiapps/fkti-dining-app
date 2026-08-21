@@ -154,5 +154,57 @@
   "http": "200 (plain curl)",
   "method": "plain fetch",
   "note": "Both halves verbatim — Omi-kurodori jidori chicken base plus Ibukijima iriko (the western-Japan word for niboshi), inside 炭火焼 西尾. One precision fix: the page says いりこ plus 4種類の乾物 total, not multiple dried fish specifically; also add the egg load (味玉, 卵かけ麺, 卵かけご飯), which the record omits."
+ },
+ {
+  "id": "hiro_menba_jintoku",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat noodles and wheat-based soy sauce are central to the menu, so gluten is present throughout the kitchen; no gluten-free handling is documented.",
+  "url": "https://www.menbajintoku.jp/",
+  "verdict": "supported",
+  "found": "「神徳特製の中太麺を魚介と豚骨のＷスープでご提供。」 plus 「特製薄皮餃子 400円」 on the same page; the site has three sections (コンセプト/メニュー/店舗紹介) and no allergen page.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch of the cited official site (single-page, all content inline)",
+  "note": "Supported, but the record misses a trap the same page sets: 「低糖麺・こんにゃく麺をご用意いたしております」 — konnyaku and 'low-sugar' noodles are offered on every bowl and read as a gluten-free swap to a diet-food-shaped reader. They are not: 低糖麺 is normally wheat-gluten-fortified, the つけダレ and 餃子 are unchanged, and it is one 14-seat kitchen. Add that explicitly so gf:'no' survives contact with the menu."
+ },
+ {
+  "id": "hiro_menba_jintoku",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The dipping broth and tare for tsukemen rely on standard Japanese soy sauce, which contains wheat.",
+  "url": "https://www.menbajintoku.jp/",
+  "verdict": "unsupported",
+  "found": "The page describes the broth twice and never says soy sauce: 「魚介と豚骨のＷスープ」 and 「辛味噌を入れた辛つけ麺もおススメ!」 — the only seasoning it actually names is 辛味噌. 醤油 appears nowhere on the site.",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch + string search for 醤油/しょうゆ across the whole single-page site",
+  "note": "The soy-sauce attribution is not on the cited page and should be replaced with the seasoning the operator does name — 辛味噌 — which carries its own gluten risk, since 麦味噌 (barley miso) is standard in western Japan; that keeps the field true and better-sourced."
+ },
+ {
+  "id": "hiro_menba_jintoku",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are made from fish stock and pork bone, and fish powder is used in dishes, so animal products are pervasive.",
+  "url": "https://www.menbajintoku.jp/",
+  "verdict": "supported",
+  "found": "「神徳特製の中太麺を魚介と豚骨のＷスープでご提供。」 and 「魚粉が効いたピリ辛の辛まぜそばや、サイドメニューも充実。」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "plain fetch",
+  "note": "Verbatim on the cited page; the toppings list (半熟味付卵, 大盛りチャーシュー) and 特製薄皮餃子 add more. Trading status confirmed: Yahoo Map lists it as an active つけ麺店 opening 19:00, and @menba_jintoku_hiroshima is current."
+ },
+ {
+  "id": "hiro_mikazuki",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Hiroshima-style okonomiyaki is finished with a standard okonomi/Worcester-type sauce that is wheat- and soy-based.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340101/34017286/",
+  "verdict": "supported",
+  "found": "Review body in the page's Restaurant JSON-LD: 「注文は肉玉そば880円！！…具材はキャベツ、もやし、豚肉、玉子、チーズ、そばなど！…麺はパリッパリで甘めのミツワソースと絡みめっちゃくちゃうまい！！」 — the sauce is named: ミツワソース (Mitsuwa, the Hiroshima okonomi sauce brand, brewed with 醤油).",
+  "correct_url": null,
+  "http": "200 via iPhone UA, redirected to s.tabelog.com as the brief predicts; Restaurant + FAQPage JSON-LD both present",
+  "method": "iPhone UA fetch of the cited Tabelog detail page, read from its JSON-LD",
+  "note": "Better than recorded — the cited page names the actual product (ミツワソース) rather than a generic sauce type, so quote it. The same reviews also give two more wheat carriers this record omits: the そば/うどん noodle layer folded into every 肉玉 and the イカ天 tempura topping. Trading confirmed on the same page: closed Mondays, 11:30-14:00 / 17:30-22:00, 108 reviews, 3.42."
  }
 ]
