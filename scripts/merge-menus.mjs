@@ -59,7 +59,7 @@ for (const f of files) {
   if (unplaced.length) console.log(`  ?? ${f}: ${unplaced.length} id(s) match no record — ${unplaced.slice(0, 3).join(', ')}`);
 }
 
-function problems(entry, id, unexplained = []) {
+function problems(entry, id, unexplained = [], badDrinks = []) {
   const p = [];
   if (VERIFIED_ALIAS[entry.verified]) entry.verified = VERIFIED_ALIAS[entry.verified];
   if (!VERIFIED.has(entry.verified)) p.push(`verified "${entry.verified}"`);
@@ -79,11 +79,28 @@ function problems(entry, id, unexplained = []) {
     // beer is the single most common thing mistaken for gluten-free.
     const label = `${it.ja || ''} ${it.en || ''} ${it.romaji || ''}`;
     const plainDrink = /(juice|water|tea|coffee|espresso|latte|mocha|americano|cocoa|cola|soda|wine|sake|smoothie|chai)|ジュース|ラテ|ティー|モカ|チャイ|ウーロン|烏龍|緑茶|煎茶|ほうじ|コーヒー|カフェオレ|カフェモカ|エスプレッソ|ココア|ワイン|日本酒|ソーダ|スムージー|タイザー|ジンジャーエール/i.test(label);
-    const glutenDrink = /(beer|ale|lager|malt|barley|whisk|highball)|ビール|麦茶|麦焼酎|ハイボール|生中|発泡酒/i.test(label);
+    // A highball is a spirit plus soda, so the gluten question is the SPIRIT, not the
+    // format. ラムハイボール is rum — sugarcane, nowhere near a grain — and blanket-
+    // rejecting every ハイボール threw out a shop's whole researched menu over a drink
+    // that is genuinely fine. Unqualified 「ハイボール」 still counts as gluten, because in
+    // Japan it means whisky by default; naming a non-grain spirit is what clears it.
+    // The English side needs word boundaries. Without them this matched the PROSE in
+    // an item description rather than its name: "Uji matcha WHISKed into milk",
+    // "pale pink" (ale), "Ginger Ale". Three shops had their entire researched menus
+    // rejected over a matcha latte, a guava juice and a ginger ale.
+    const nonGrainSpirit = /(ラムハイ|ラム酒|\brum\b|テキーラ|\btequila\b|芋焼酎|泡盛|ウォッカ|\bvodka\b)/i.test(label);
+    const gingerAle = /ginger ale|ジンジャーエール/i.test(label);   // a soft drink, no barley
+    const glutenDrink = !nonGrainSpirit && !gingerAle && (
+      /\b(beer|ale|lager|stout|malt|barley|whisky|whiskey|highball)\b/i.test(label) ||
+      /ビール|麦茶|麦焼酎|ハイボール|生中|発泡酒|ウイスキー/.test(label));
     if (it.gf === 'gf' && !String(it.note || '').trim() && (!plainDrink || glutenDrink))
       unexplained.push(it);
-    if (it.gf === 'gf' && glutenDrink)
-      p.push(`${at}: gf="gf" on a barley/malt drink — beer and 麦茶 are not gluten-free`);
+    // Same severity reasoning as the unexplained-gf repair below: one wrong drink
+    // flag is not grounds to discard a shop's whole researched menu. This rule has
+    // false-positived on a matcha latte ("whisked"), a guava juice ("pale pink"), a
+    // ginger ale and a bottle of mineral water — each costing an entire menu.
+    // Repair the item instead, and to "no": beer and 麦茶 are not a matter of asking.
+    if (it.gf === 'gf' && glutenDrink) badDrinks.push(it);
   });
 
   // authoritative means it came from the shop; that should show in the sources
@@ -115,9 +132,14 @@ for (const city of CITIES) {
     // would throw away a shop's entire researched menu over one line, so repair
     // the item instead: drop it to "ask" and say why. That is the cautious
     // direction, and it keeps the rest of the research.
-    const unexplained = [];
-    const errs = problems(entry, id, unexplained);
+    const unexplained = [], badDrinks = [];
+    const errs = problems(entry, id, unexplained, badDrinks);
     if (errs.length) { rejected++; bad.push(`${city}/${id}: ${errs.slice(0, 4).join('; ')}`); continue; }
+    for (const it of badDrinks) {
+      it.gf = 'no';
+      it.note = 'Flagged gluten-free during research, but this is a barley or malt drink — beer, 麦茶 and whisky highballs are not gluten-free. ' + (it.note || '');
+      repaired++;
+    }
     for (const it of unexplained) {
       it.gf = 'ask';
       it.note = 'Flagged gluten-free during research with no reason recorded, so downgraded to "ask" on merge. Plain rice and similar are usually fine, but confirm the seasoning and the serving scoop.';

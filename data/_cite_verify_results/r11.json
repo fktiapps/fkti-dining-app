@@ -388,5 +388,222 @@
   "http": "200",
   "method": "plain fetch, then site: search on Yahoo Japan to locate the municipal register entry",
   "note": "Claim is true - repoint it to the Hakusan City register page. The per-item allergen half belongs on the product page instead. Also worth the owner's attention: gf is set to 'options' for what is a whole-shop gluten-free rice-flour specialist; the only reason to hold it there is the shop's silence on wheat cross-contact, which is worth stating explicitly rather than implying."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "No source addresses shared vs. dedicated griddle, separate prep or flour-dust handling — cross-contact status is unpublished and unknown.",
+  "url": "https://www.weekend-kanazawa.com/entry/shiromcreperie",
+  "verdict": "supported",
+  "found": "Page's only gluten line is 「ガレットもクレープもグルテンフリーなのは魅力的なポイントの1つです♪」 - nothing about griddles, prep separation or flour dust.",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch; also checked the other five cited sources for any cross-contact wording",
+  "note": "Accurate absence claim. I checked all six sources on this record - none addresses the crepe/galette griddle or prep separation."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "A celiac/GF blogger (米粉とひのことひつじ) reported eating there with essentially no reaction — encouraging but a single anecdote, not a protocol.",
+  "url": "https://ameblo.jp/hinohinokoto/entry-12957112452.html",
+  "verdict": "supported",
+  "found": "ちなみにいずれもアレルギー反応はほとんどなかったので、やや強めのアレルギーの人でも大丈夫かと思います",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "The reaction report is verbatim and the blog name matches. But correct 'celiac': the blogger's own profile line reads 「小麦アレルギーで醤油も。他麦はOK！米粉推し！」 - wheat allergy, explicitly tolerating other gluten grains. That is materially weaker evidence than a celiac's and the record should not upgrade it."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "soy_sauce_wheat",
+  "quote": "Galettes are savory (Noto pork ragù, egg/cheese); no source specifies soy sauce or tamari use. Assume standard wheat-based seasonings unless confirmed.",
+  "url": "https://manpuku-kanazawa.com/shirom-creperie/",
+  "verdict": "supported",
+  "found": "【ガレット】能登豚ラグーソース 1,700円／ポパイ 1,600円／コンプレ 1,500円",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Noto pork ragu is verbatim on the menu list; the egg/cheese detail comes from food-japon's fuller menu (「能登豚キーマカレーガレット（卵、チーズ）」). No soy sauce or tamari is named on any of the six sources."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "Not vegan; butter, cream, cheese and egg are used throughout, so plant-based cross-contact is unmanaged.",
+  "url": "https://food-japon.com/p/shirom-creperie",
+  "verdict": "supported",
+  "found": "●能登豚キーマカレーガレット（卵、チーズ）／●ビスマルク風ガレット（卵、チーズ、トマトソース、生ハム）／●大人なチョコバナナ、生クリーム多め／ボルディエバターの芳醇なコク",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Egg, cheese, cured ham, cream and butter are all named on the cited page. vegan: no is correct."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "staff_allergy_handling",
+  "quote": "No published allergy-handling policy; owner directs customers to Instagram DM for reservations and questions.",
+  "url": "https://www.weekend-kanazawa.com/entry/shiromcreperie",
+  "verdict": "wrong_source",
+  "found": "Cited page says only 「※金・土曜のバー営業はInstagramをチェック」 plus a 公式Instagram link - no DM instruction. The DM detail is on manpuku: 「席数が限られているので、InstagramのDMからの事前予約をおすすめしているそうです。」",
+  "correct_url": "https://manpuku-kanazawa.com/shirom-creperie/",
+  "http": "200",
+  "method": "plain fetch of both",
+  "note": "Repoint to manpuku. Note the DM route is documented for reservations because of limited seating, not for allergy questions - the 'and questions' extension is the record's own addition."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Dessert crepes are documented as 100% Ishikawa rice flour, 小麦粉不使用 (no wheat flour) gluten-free.",
+  "url": "https://sukatanqueen120.exblog.jp/32186389/",
+  "verdict": "supported",
+  "found": "ガレットは鳥越のそば粉、クレープは米粉と小麦粉不使用のグルテンフリー。／・シュガーバター（エシレバター、すだき糖、１００％米粉）",
+  "correct_url": null,
+  "http": "403 with desktop UA / 200 with iPhone UA",
+  "method": "plain fetch 403'd, iPhone User-Agent returned the page",
+  "note": "「小麦粉不使用」 and 「１００％米粉」 are both verbatim. The 'Ishikawa' provenance is not on this page - it is on weekend-kanazawa 「100%石川県産米粉使用」 and food-japon 「米粉クレープの生地には石川県産米粉を使用」, either of which would carry that word."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Press states the shop aims to make all products gluten-free-compatible: 「全てグルテンフリーに対応した商品にする」.",
+  "url": "https://kanazawa.keizai.biz/headline/3525/",
+  "verdict": "supported",
+  "found": "ガレットで使うそば粉は鳥越産、クレープも県産米粉のみを使用。今後、クッキーなどの焼き菓子も店内で販売していく予定で、全てグルテンフリーに対応した商品にするという。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "The 「」 string is a genuine verbatim substring. Scope caveat worth carrying: in context the sentence is about the planned cookie/baked-goods line the shop said it would add, not a standing statement about the whole existing menu."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "field": "gf_cross_contamination",
+  "quote": "Wheat-based pita bread is central to the falafel sandwich and is served alongside hummus, so wheat is handled in the kitchen and the menu is not celiac-safe despite some rice-flour sweets being available.",
+  "url": "https://food-japon.com/p/siu-coffee-veg",
+  "verdict": "supported",
+  "found": "ファラエルは、中東などで食べられるひよこ豆をすりつぶして揚げたコロッケ。ピタパンで挟んであり、中にはナスなどの野菜やフムス（ひよこ豆のペースト）が入っています。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Pita and hummus are verbatim; ishikawa-style independently lists 「フムスとピタパン」 as a menu item. The wheat-in-pita step is the app's standard inference and is correctly stated as a limit rather than a shop claim. gf: options is right."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "field": "vegan_cross_contact",
+  "quote": "The cafe is fully plant-based, so there is no animal-product cross-contact risk across the menu.",
+  "url": "https://kanazawa.keizai.biz/headline/3893",
+  "verdict": "supported",
+  "found": "ビーガン料理を提供するカフェ「SIU.COFFEE +VEG（シウ・コーヒー・アンド・ベジ）」（金沢市幸町）が4月24日、オープンした。／金沢・幸町に築100年の町家ビーガンカフェ",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Local press calls it a vegan cafe outright and food-japon independently titles it 町家ヴィーガンカフェ. No animal item appears on any menu listing I found. vegan: full holds up."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "field": "staff_allergy_handling",
+  "quote": "The owner states a mission to provide 'the safest possible meals in Ishikawa,' indicating attention to ingredient safety, though no specific allergen or cross-contamination protocol is documented.",
+  "url": "https://ishikawa-style.com/siu-kanazawa20250424/",
+  "verdict": "supported",
+  "found": "「石川県に、できる限り安全な食事を」という想いを込めて営業されている「SIU.COFFEE +VEG」。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "The phrase is verbatim and the absence of any allergen protocol on the page is accurate. One attribution fix: the article presents it as the shop's 想い in the writer's own voice, not as something the owner said - 'the owner states' overstates it. The owner's only quoted words are in kanazawa.keizai.biz/headline/3893 and are about lifestyle, not safety."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Entirely vegan menu, so all dishes are free of meat, fish, dairy and egg.",
+  "url": "https://kanazawa.keizai.biz/headline/3893",
+  "verdict": "supported",
+  "found": "ビーガン料理を提供するカフェ／看板メニューは、コロッケや野菜などをピタパンに挟んだ「ファラフェルサンド」…ひよこ豆にゴマ、ニンニクなどを加えてペーストにしたディップ料理「フムス」（700円）も提供する。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Every item the article enumerates is plant-based and the venue is described as a vegan cafe. Corroborated by food-japon: 「動物性食材を使っていないとは思えない満足度」."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Offers genuinely gluten-free rice-flour (米粉) sweets — a gateau chocolate made with rice rather than wheat flour — for diners avoiding gluten.",
+  "url": "https://food-japon.com/p/siu-coffee-veg",
+  "verdict": "supported",
+  "found": "ケーキは石川県かほく市にある「atelier 絲（アトリエイト）」さん製の米粉ガトーショコラの抹茶味。",
+  "correct_url": null,
+  "http": "200",
+  "method": "plain fetch",
+  "note": "Verbatim. Worth adding to the record: the cake is bought in from atelier 絲 in Kahoku, not baked at SIU (keizai: 「米粉ケーキは料理店「atelier 絲」（かほく市）から取り寄せる」), so its gluten status depends on a third party's kitchen and it is then served in a kitchen that handles pita."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "field": "positives",
+  "quote": "Uses oat milk for coffee and house-made ginger syrup, supporting dairy-free ordering.",
+  "url": "https://ishikawa-style.com/siu-kanazawa20250424/",
+  "verdict": "wrong_source",
+  "found": "Cited page has the syrup - 「ジンジャーソーダは自家製のジンジャーシロップが絶品。」 - but the strings オーツ/オート/oat appear 0 times in it. Oat milk is on kanazawa.keizai.biz: 「自家製ジンジャーシロップを使う「ジンジャーソーダ」「ジンジャーオーツ」（以上、700円）、「オーツミルクブリュー」（600円）」, which carries both halves in one sentence.",
+  "correct_url": "https://kanazawa.keizai.biz/headline/3893",
+  "http": "200",
+  "method": "plain fetch + zero-hit string check on the cited page",
+  "note": "Repoint to the keizai article, which sources the oat milk and the house-made ginger syrup together."
+ },
+ {
+  "id": "kz_los_angeles_organic_natu",
+  "city": "kanazawa",
+  "record_verdict": "repairable",
+  "note": "3 of 4 claims verbatim on co-trip 50258 (vegan kitchen, named pesticide-free farms, Isehikari rice, soy-meat teriyaki/ginger items). One repair: the muffin claim's rice-flour + daily-handmade detail is not on the kanazawabiyori spot listing it cites (that page supports only 「グルテンフリーのスイーツ」); it is on co-trip. Staleness caveat for the owner: co-trip stamps the article 2016-05-09 and the kanazawabiyori listing describes the 2019 5th-anniversary menu, so nothing here is recent."
+ },
+ {
+  "id": "kz_love_for_all_2",
+  "city": "kanazawa",
+  "record_verdict": "defective",
+  "note": "ALARMING. 'Tabelog's listing states all menu items are gluten-free' is false twice over: the sentence is a single diner's April-2023 review, not listing data, and kanazawa-tsu prices a グルテンフリーバンズ at +330 yen, which means the default bun contains wheat. The same page also contradicts 'the menu is plant-based and animal-product-free' - it says 「メニューの多くが小麦不使用だったり、動物性の食材を使わないメニューも豊富」 (many, not all), prices ヴィーガンチーズ as a +220 yen swap (so default cheese is dairy) and features 「蟹たっぷりハントンライス」. The two homepage claims are verbatim and fine. Recommend: delete the Tabelog claim outright, rewrite the burger claim as an optional GF/vegan substitution, and drop vegan from full to options."
+ },
+ {
+  "id": "kz_my_chiffon",
+  "city": "kanazawa",
+  "record_verdict": "repairable",
+  "note": "4 of 5 claims verbatim on the weekend-kanazawa article, including 「小麦粉や乳製品、卵不使用」 as a true quote and the owner's child-allergy origin story. One repair: the oatmeal cross-contact caution is real but オートミール appears 0 times on the cited page - it is on kaname-kanazawa.com/mychiffon/. Also fill in website (currently null): https://www.instagram.com/mychiffon_kome/, whose bio 「シフォンはグルテンフリー、焼き菓子類はヴィーガン」 independently confirms the gf/vegan split the record records."
+ },
+ {
+  "id": "kz_natural_grocery_store_mi",
+  "city": "kanazawa",
+  "record_verdict": "defective",
+  "note": "The gluten claim is the strongest on this shard - manpuku says 「スコーン以外は小麦粉も不使用のグルテンフリー」 and the record correctly carries the scone/wheat exception even though weekend-kanazawa's 2023 piece contradicts it. Defect: the allergy claim asserts the shop 'labels baked goods as egg/butter/wheat-free where applicable', which is on none of the three cited articles - drop that clause. Repair: the 2020 weekend-kanazawa piece cited for the vegan framing contains no vegan or dairy wording at all and predates the May-2023 renovation; use manpuku instead. Also question vegan: full for a grocery whose shelves are described as 「オーガニックやヴィーガン認証商品など」 alongside 醤油・味噌・マヨネーズ・缶詰."
+ },
+ {
+  "id": "kz_petitpas",
+  "city": "kanazawa",
+  "record_verdict": "repairable",
+  "note": "Both quoted Japanese strings are genuinely verbatim and the egg/dairy claim is solid. Two repairs, both pointing at the same missing page - the shop's own salon.html: (1) 'no wheat flour anywhere in the shop' and (2) the owners' wheat allergy are stated there, not on the cited pages. Read salon.html before rewording: the shop says 「店内での使用しておりませんが副資材においてコンタミネーション…の可能性はゼロとは言い切れません。ご購入の際にはご自身での慎重なご判断をお願いいたします。」 - it refuses to call contamination zero, so 'cross-contact is essentially eliminated' is stronger than the shop's own claim and should be softened."
+ },
+ {
+  "id": "kz_qui_hakusan",
+  "city": "kanazawa",
+  "record_verdict": "defective",
+  "note": "5 of 8 claims are verbatim and well-judged, including the 「当店のキッシュは全てグルテンフリー」 quote and the correct reading that the shared-facility caveat is written for egg/dairy. Two defects, both on claims citing the bare homepage, which carries no allergen data at all: 'a pizza page lists shrimp and dairy' (the archived 米粉ピザセット page has no allergen block and no shrimp or dairy in its ingredients) and 'no wheat products are made on-site' (published nowhere - it is exactly the kitchen-level guarantee the shop has never made). One repair: the 白山市地産地消推奨店 certification is real but is on the city register, not the urara page cited. Also drop 'shrimp' from the allergen list - the disclosure names たまご・乳製品 only."
+ },
+ {
+  "id": "kz_shirom",
+  "city": "kanazawa",
+  "record_verdict": "repairable",
+  "note": "6 of 7 claims supported, including two verbatim 「」 quotes and a correct 'nothing published about the griddle' absence claim that I confirmed across all six sources. One repair: the Instagram-DM detail is on manpuku, not on the weekend-kanazawa page cited. Two wording fixes worth making: the ameblo blogger is wheat-allergic, not celiac (「小麦アレルギーで醤油も。他麦はOK！」) - the record upgrades her, which inflates the evidence; and the keizai 「全てグルテンフリーに対応した商品にする」 sentence is about a planned baked-goods line, not the standing menu. Note the exblog source needs an iPhone UA (desktop 403s)."
+ },
+ {
+  "id": "kz_siu_coffee_veg_shiu_coff",
+  "city": "kanazawa",
+  "record_verdict": "repairable",
+  "note": "5 of 6 claims verbatim; the pita/hummus wheat limit and the fully-vegan framing both hold across two independent outlets. One repair: the oat-milk claim cites ishikawa-style, where オーツ appears 0 times - kanazawa.keizai.biz carries oat milk and the house-made ginger syrup in one sentence. Two softenings: 'the owner states' the safety mission is the writer's framing (「という想いを込めて営業されている」), not an owner quote; and the 米粉 gateau chocolate is bought in from atelier 絲 in Kahoku rather than baked at SIU, so its gluten status rests on a third party's kitchen."
  }
 ]

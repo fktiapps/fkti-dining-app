@@ -46,6 +46,7 @@ const STEPS = [
   // After merge-menus, before the tier passes: an item that is vegan AND made of
   // wheat gluten is the one place where the two diet layers cross badly.
   ['flag-vegan-gluten-traps.mjs',     'flag vegan menu items made of wheat gluten', ['--apply']],
+  ['flag-borrowed-evidence.mjs',      "flag records citing another shop's evidence", ['--apply']],
   ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],
   ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],

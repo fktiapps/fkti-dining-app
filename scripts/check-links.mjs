@@ -31,7 +31,7 @@ console.log(`checking ${targets.length} links across ${cities.length} cities\n`)
 // A lapsed domain that now serves something else usually announces itself in the
 // html lang / title. These are the patterns that actually turned up.
 // Word-boundary anchored: an unanchored /toto/ matched "Totoro" and "tobamarche".
-const SUSPECT = /(toto ?site|togel|situs|casino|betting|slot ?gacor|viagra)|카지노|토토사이트|먹튀|Вавада|vavada|domain (is )?for sale|このドメインは/i;
+const SUSPECT = /\b(toto ?site|togel|situs|casino|betting|slot ?gacor|viagra)\b|카지노|토토사이트|먹튀|Вавада|vavada|domain (is )?for sale|このドメインは/i;
 
 async function check(t) {
   const ctl = new AbortController();
