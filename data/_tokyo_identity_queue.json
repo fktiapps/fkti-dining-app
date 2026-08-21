@@ -48,19 +48,51 @@
   "note": "MISLOCATED RECORD — the business exists but has no Tokyo presence; recommend deletion from data/tokyo.json. The light record's 豚骨ラーメン　風風 matches the tonkotsu chain 風風ラーメン by name and by cuisine, and the chain's own store list at fufuramen.com/shop/ names every branch by prefecture — Saitama, Shiga, Okayama, Shimane, Fukuoka, Okinawa — with nothing in Tokyo; the nearest are 朝霞東口店 and 志木南口店 in Saita"
  },
  {
-  "id": "tokyo3__325",
-  "from": "天ぷら山の上",
-  "to": "てんぷら山の上 御茶ノ水本店",
+  "id": "tokyo3__377",
+  "from": "一風堂",
+  "to": "博多 一風堂 南青山店",
   "applied": true,
   "confidence": "high",
-  "note": "Confirmed real, but TEMPORARILY CLOSED and the pin has been moved. The light record read 天ぷら山の上 / Ichigaya; the business is てんぷら山の上, the tempura arm of 山の上ホテル at 東京都千代田区神田駿河台1-1 - same ward, about 2.4 km east of the Ichigaya centroid, which has been replaced with GSI-verified coordinates for the real address. The honten has been shut since 2024-02-13 with the hotel, and the company's own site says"
+  "note": "NAME CORRECTION and CLOSURE. The light record read simply 「一風堂」 at 青山・表参道, which is a brand, not a shop. Exactly one Ippudo has ever stood in that neighbourhood - 博多 一風堂 南青山店, 港区南青山3-8-37 第2宮忠ビルB1, 300 m from the light record's approximate pin - and it is permanently closed, final day of business 19 June 2016 (Tabelog carries the 【閉店】 flag; the date comes from a customer who photographed the closu"
  },
  {
-  "id": "tokyo3__337",
-  "from": "ラーメン 凪",
-  "to": "なぎちゃんラーメン in白鳥会館",
+  "id": "tokyo3__379",
+  "from": "丹波黒豆の館",
+  "to": "黒豆の館（丹波篠山地域活性化センター）",
+  "applied": false,
+  "confidence": "low",
+  "note": "MISLOCATED RECORD - recommend deletion from data/tokyo.json. The business exists, but it is 黒豆の館, the 丹波篠山地域活性化センター at 兵庫県丹波篠山市下板井511-2 in Hyogo Prefecture, about 450 km west of Omotesando. Evidence: Tabelog's nationwide keyword search for 丹波黒豆の館 returns exactly one business in Japan and it is this one (listing 28015016, coordinates 35.101760 / 135.180000, tel 0795-90-8077); the operator's own liv"
+ },
+ {
+  "id": "tokyo3__388",
+  "from": "そら野 カフェ",
+  "to": "豆腐料理 空野 恵比寿 (とうふ 空野)",
+  "applied": true,
+  "confidence": "high",
+  "note": "NAME CORRECTION. The light record read 「そら野 カフェ」 at 恵比寿駅東口, described as 植物ベース・カフェ. There is no cafe by that name. An Ebisu-scoped Tabelog keyword search for そら野 (/tokyo/A1303/A130302/rstLst/?vs=1&sk=そら野, HTTP 200) returns exactly one business: 豆腐料理 空野 恵比寿 - same reading, Sorano - at 渋谷区恵比寿4-7-2 シーズエビス1F, which Tabelog and the operator both place 3 minutes from the JR Ebisu EAST exit, matching the"
+ },
+ {
+  "id": "tokyo3_r",
+  "from": "蔦 つけ麺",
+  "to": "Japanese Soba Noodles 蔦",
   "applied": true,
   "confidence": "medium",
-  "note": "NAME CORRECTION - flagged for a human. The light record read 'ラーメン 凪' at Takadanobaba Station. There is no ラーメン凪 in Takadanobaba: Tabelog's nationwide name search puts the 凪 chain at Shinjuku Golden-gai (13054766), Nishi-Shinjuku 7-chome (13141868), Shibuya Butao (13024273), Kamata Niboshi-o (13315364), Jimbocho (13315466), Tama Center (13265943) and Omiya, and Tabelog's full Takadanobaba ramen re"
+  "note": "NAME CORRECTION. The light record read 「蔦 つけ麺」 and placed it in 六本木 / 赤坂見附. 「蔦 つけ麺」 is not a business name; it is the shop name plus a genre word, and the genre word is the one Tabelog files this shop under (「ラーメン、つけ麺」), although the current menu is soba/ramen only with no tsukemen on it. A Tabelog nationwide search for 蔦 (HTTP 200) returns exactly one ramen shop of that name in Japan — Japanese S"
+ },
+ {
+  "id": "tokyo3__449",
+  "from": "新橋 鶏繁",
+  "to": "鶏繁 総本店",
+  "applied": true,
+  "confidence": "high",
+  "note": "Confirmed. The light record read 「新橋 鶏繁」 with genre 焼き鳥 and neighbourhood 港区新橋 / 新橋駅; that resolves to 鶏繁 総本店, the 1971 flagship of the 鶏繁 group, at 港区新橋2-9-17 竹本ビル1F. Evidence: (1) Tabelog nationwide keyword search for 鶏繁 (double-encoded rstLst form, desktop UA, HTTP 200, 55件) returns the group's eight Tokyo shops, of which exactly one is in 新橋 — 13012718, 鶏繁 総本店. Its Restaurant JSON-LD gives the"
+ },
+ {
+  "id": "tokyo3__454",
+  "from": "横浜ラーメン 田中",
+  "to": "横浜家系ラーメン 田中",
+  "applied": true,
+  "confidence": "medium",
+  "note": "NAME CORRECTION and LOCATION CORRECTION — flag for owner review. The light record read 「横浜ラーメン 田中」, genre ラーメン・豚骨, neighbourhood 港区新橋 / 新橋駅. Searches run and what each returned: (1) Tabelog nationwide keyword search for 横浜ラーメン 田中 (double-encoded rstLst form, desktop UA, HTTP 200, 60件) returns exactly one restaurant in Japan carrying that name — 13019056, 横浜家系ラーメン 田中 — and it is in Tokyo, but in 千代"
  }
 ]

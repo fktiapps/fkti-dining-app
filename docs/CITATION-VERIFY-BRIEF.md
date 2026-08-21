@@ -105,6 +105,20 @@ Every one of these is a real defect from an earlier shard, not a hypothetical:
 - **Records wrong in BOTH directions**: warning against something harmless while
   omitting the operator's own admission of contamination.
 
+## Closure is not a tier
+
+If a venue has shut, do NOT put "closed" in `tier_recommendation.recommended` — that
+field takes tier values only and anything else is discarded. Emit a separate object:
+
+```json
+{ "id": "<record id>", "kind": "trading", "status": "closed_permanently",
+  "evidence": ["<url>", "..."], "why": "<what you saw, with dates>" }
+```
+
+The pipeline hides those records. Say what you actually saw — a 閉店 banner, an
+NXDOMAIN domain, an own-account announcement, a suspended listing — and give the date,
+because "closed" and "closed since 2024" are different facts to a reader.
+
 ## Output
 
 Write a JSON array to the path you are given. One object per item:

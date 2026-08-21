@@ -81,7 +81,7 @@ const SEED = [
          'dairy, says allergy language does not exist when it does, and publishes stale hours.' },
 ];
 
-const recs = [], downgrades = [], malformed = [];
+const recs = [], downgrades = [], malformed = [], closures = [];
 for (const s of SEED) {
   const hit = byId.get(s.id);
   if (!hit) { console.log(`  (seed id not found, skipping: ${s.id})`); continue; }
@@ -95,6 +95,18 @@ if (fs.existsSync(DIR))
   for (const f of fs.readdirSync(DIR).filter(f => f.endsWith('.json') && !f.startsWith('_'))) {
     const j = JSON.parse(fs.readFileSync(`${DIR}/${f}`, 'utf8'));
     for (const v of (Array.isArray(j) ? j : (j.items || j.results || []))) {
+      // Closure is not a tier. An agent that finds a venue shut was writing
+      // recommended:"closed" into a tier field, which the enum guard correctly threw
+      // away — leaving two confirmed-closed venues shipping with nowhere for the
+      // finding to go. GLUTEN FREE CAFE avan had every branch shut and its own domain
+      // NXDOMAIN; 京都茶寮翠泉 新宿店 closed 2026-08-03 「再開日未定」.
+      if (v.kind === 'trading' || v.status === 'closed_permanently' ||
+          /^closed(_permanently)?$/i.test(String(v.recommended || ''))) {
+        const h = byId.get(v.id);
+        if (h) closures.push({ city: h.city, id: v.id, name: h.r.name,
+          already: !!h.r.hidden, why: String(v.why || v.note || '').slice(0, 400) });
+        continue;
+      }
       if (v.kind !== 'tier_recommendation') continue;
       const hit = byId.get(v.id);
       if (!hit) continue;
@@ -136,6 +148,24 @@ if (APPLY && downgrades.length) {
     if (dirty) writeCity(c, j);
   }
 }
+if (APPLY && closures.length) {
+  for (const c of CITIES) {
+    const j = readCity(c); let dirty = false;
+    for (const cl of closures.filter(x => x.city === c && !x.already)) {
+      const r = j.places.find(x => x.id === cl.id);
+      if (!r || r.hidden) continue;
+      r.hidden = 'closed';
+      r.closed = { status: 'permanent', checked: '2026-08-21', note: cl.why };
+      dirty = true;
+    }
+    if (dirty) writeCity(c, j);
+  }
+}
+console.log(closures.filter(c => !c.already).length + ' venue(s) found closed and hidden' +
+            (closures.length ? ' (' + closures.length + ' reported)' : ''));
+closures.forEach(c => console.log('  ' + c.city + '/' + String(c.name).slice(0, 34) + (c.already ? '  (already hidden)' : '')));
+fs.writeFileSync('data/_sweep_closures.json', JSON.stringify(closures, null, 1));
+
 console.log(`${downgrades.length} evidence-backed downgrade(s) ${APPLY ? 'applied' : 'found (dry run)'}`);
 for (const d of downgrades)
   console.log(`  ${d.city}/${String(d.name).slice(0, 28).padEnd(30)} ${d.field.replace('_confidence','').replace('_status','')} ${d.from} -> ${d.to}`);

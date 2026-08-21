@@ -425,5 +425,108 @@
   "http": "200 x5, 403 x1 (menuhunterai)",
   "method": "1 plain fetch of operator + kanda-curry + san-tatsu, mobile-host Tabelog, 4 Yahoo Japan exact-string search, 3 Wayback API",
   "note": "TRADING — confirmed (reviews this month, 百名店 2026). vegan_status 'no' correct; hours correct. THE DANGEROUS DEFECT: the record's notes field says '[GF] … Order any curry over plain Koshihikari rice, but tell them no fukujinzuke and skip the complimentary potage soup'. 'Any curry' is wrong. The operator's own menu says 「タンカレー … デミグラスソースが加わり」 and 「ハヤシライス — 共栄堂特製のデミグラスソースからできる」, and san-tatsu confirms 「タンカレーには、一から手づくりしたデミグラスソースも加えているという」. Demi-glace is a brown-roux sauce; the shop's 小麦粉を一切使わず statement is scoped to the spice sauce ONLY, and this is the same kitchen that bakes 野菜と小麦 into a roux for its soup. A celiac following this record's advice to the タンカレー — the shop's premium dish — is sent straight to wheat. Second defect: 'skip the potage' is written as a precaution when the operator states the soup contains 小麦 outright. Third: gf_confidence 'ask' contradicts gf_detail's own 'caps at options' (see tier_recommendation). Citation repairs: 2 wrong_source, 1 unreachable AI-generated aggregator that should be deleted, 1 uncited negative search."
+ },
+ {
+  "id": "tokyo_kyotei_daikokuya",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Noodles are 十割 (juwari) — 100% stone-ground buckwheat with no wheat flour mixed in — but no gluten-free protocol, allergen statement, or dedicated fryer was found in any source; tempura is on the menu, which typically involves a wheat-flour batter and shared fryer oil in traditional soba kitchens.",
+  "url": "https://nihon-soba.jp/tabearuki/kanto/tokyo/2022/07/04/13059/",
+  "verdict": "supported",
+  "found": "Owner, quoted directly: 「蕎麦はね、十割で妙高と秋田ともう一つブレンドしたやつ…２階の部屋で石臼で挽いてるの。８台電動で２台手動。ブレンドして最小限の加水で打ってます」 and 「季節の天麩羅はフキ、ゆり根、クワイ、舞茸、南瓜で薄い衣を纏った野菜はどれもサクッと軽く塩が合う」. The shop's own menu page confirms both: 「※そばは粗挽き入り手打ち十割蕎麦」, 「せいろ天盛り 2,700円」, 「天ぷらちらし（天ぷら盛合せ）車海老 2匹付 2,000円」.",
+  "correct_url": null,
+  "http": "200 (plain fetch) + 200 (operator menu page)",
+  "method": "1 plain fetch of the cited article + 1 plain fetch of the operator's TOP and MENU pages",
+  "note": "SUPPORTED, BUT IT MISSES THE BIGGEST WHEAT VECTOR IN THE SHOP. This is a 完全予約制 omakase course, and the course contains wheat by design. The shop's own menu lists 「鍋（要予約）葛飾区金町産自家栽培小麦使用 ・鴨すきうどんなべ」 — a duck-suki hotpot made with UDON from the owner's own home-grown wheat — and the cited article records it being served unasked as the opening course: 「初っ端の「鴨すき鍋」」, 「金町の畑で採れた小麦で作ったうどんです。良かったら食べて下さい」. Second miss: 「そば寿司は更科そばを使用しています」 — 更科そば is conventionally bound with wheat flour, so the record's blanket '十割, no wheat mixed in' does not cover the そば寿司 or the 茶蕎麦 used in it. A celiac reading this record would arrive expecting a 十割 kitchen and be handed wheat udon as course one."
+ },
+ {
+  "id": "tokyo_kyotei_daikokuya",
+  "city": "tokyo",
+  "field": "vegan_cross_contact",
+  "quote": "No source found describes the tsuyu (dipping sauce) recipe or confirms a bonito-free dashi option; traditional Edo-style soba tsuyu is generally dashi-based.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Operator menu: 「鴨すきうどんなべ 5,000円」「追加鴨肉」「たたみいわし」「板わさ（かごせい特上）」「だし巻き卵焼き（要予約）」「揚巻そば寿司・うなぎ巻そば寿司」「そば寿司…芝海老のおぼろ…が入っています」「天ぷらちらし…車海老 2匹付」. The cited-article course record: 「初っ端の「鴨すき鍋」…「そば焼き味噌」と炙った「たたみいわし」「焼き海苔」極細麺の茶蕎麦に鰻と蓮根を巻いた…「そば寿司」…「出汁巻きたまご」」. The shop's TOP page adds 「蕎亭 大黒屋の蕎麦料理には、魚の刺身や焼き物はございません。」",
+  "correct_url": "https://xn--2lq48w6oc2v6dhx0a.com/menu.html",
+  "http": "200 x2",
+  "method": "2 (uncited claim) — the operator's own MENU page plus the cited article's course narrative",
+  "note": "UNCITED, and far weaker than the facts allow. The tsuyu is indeed unspecified, but that is beside the point on a fixed omakase: duck hotpot, eel and shrimp soba-sushi, dashimaki egg, tatami-iwashi and itawasa are all in the course. Say that and cite the menu page. Useful counter-detail worth keeping from the shop's TOP page: it explicitly serves NO raw fish or grilled fish (「生魚を扱うと臭いがそばに移ることから」) — so do not write sashimi into this record the way the Kamiyama record does."
+ },
+ {
+  "id": "tokyo_kyotei_daikokuya",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Buckwheat is sourced directly from named growers in Niigata and Nagano and stone-milled fresh in-house daily using multiple traditional stone mills, rather than using pre-milled commercial flour.",
+  "url": "https://nihon-soba.jp/tabearuki/kanto/tokyo/2022/07/04/13059/",
+  "verdict": "unsupported",
+  "found": "Owner, verbatim: 「蕎麦はね、十割で妙高と秋田ともう一つブレンドしたやつ。さっきのそばがきは妙高ね。２階の部屋で石臼で挽いてるの。８台電動で２台手動。」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch of the cited article + cross-check against the operator's own TOP/MENU pages",
+  "note": "THREE FACTUAL ERRORS AGAINST THE PAGE IT CITES. (1) NAGANO IS NOT THERE — the owner says 妙高 (Niigata) and 秋田 (Akita) plus one unnamed third; Akita has been silently replaced by Nagano. (2) NO GROWERS ARE NAMED anywhere on the page — only prefectures, so 'sourced directly from named growers' is invented. (3) The mill count is 8 electric + 2 manual on the second floor, i.e. ten, and they are not all 'traditional' — the operator's own site says 「12台の石臼」, so the two sources already disagree and neither supports the record's phrasing. 'Stone-milled in-house' and 'not pre-milled commercial flour' are the parts that survive; the menu's 「妙高粗挽き」 corroborates Niigata. Rewrite as: 十割 blend of Myoko (Niigata) and Akita buckwheat plus a third, milled in-house on the second floor."
+ },
+ {
+  "id": "tokyo_kyotei_daikokuya",
+  "city": "tokyo",
+  "field": "record_verdict",
+  "quote": "record-level assessment: gf_confidence=ask, vegan_status=no, trading",
+  "url": "https://xn--2lq48w6oc2v6dhx0a.com/index.html",
+  "verdict": "defective",
+  "found": "Operator site live: 「ご予約制、コース料理のみ、木曜日・金曜日・土曜日の営業となります。前日までのご予約をお願いいたします。」「営業日 木曜日、金曜日、土曜日 / 営業時間 18時〜21時 / 予約電話番号 03-3874-2986」, plus a 令和6年10月1日 price-revision notice signed 菅野成雄 and a live Tabelog booking form. Tabelog is operator-managed (「お店の営業情報は店舗関係者によって公開されています」): 3.60 / 190 口コミ, 木・金・土 18:00-21:00, 月・火・水・日 定休日, 現金のみ, booking calendar open for 8/21/2026 onward.",
+  "correct_url": null,
+  "http": "200 x4",
+  "method": "1 plain fetch of the operator TOP + MENU + 1 mobile-host Tabelog + 1 plain fetch of the cited article",
+  "note": "TRADING — confirmed (operator-managed Tabelog, bookings open). vegan_status 'no' correct; gf_confidence 'ask' correct; the structured `hours` object (Thu/Fri/Sat 18:00-21:00) and the cash_only / reservation flags are all correct. Two repairs. (1) hours_raw still says 'Sources disagree: some list Thursday-Saturday 18:00-21:00 … others list Tuesday-Saturday 18:00-22:00, or a 12:00-14:00/17:00-22:00 split.' The operator resolves this in its own words — delete the hedge. (2) gf_detail must name the 鴨すきうどんなべ (owner's home-grown wheat udon, served as the opening course of the omakase) and the 更科 soba-sushi; as written, the record's only wheat warning is tempura, and tempura is not what will actually be put in front of a celiac here first. One citation is outright wrong on the source it names (Nagano / named growers)."
+ },
+ {
+  "id": "tokyo_kyoto_saryo_suisen_shinj",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "The soba dipping sauce (tsuyu) ingredients are not specified in any source found; standard Japanese soba tsuyu is made with wheat-containing soy sauce, but this has not been confirmed for this shop specifically.",
+  "url": null,
+  "verdict": "supported",
+  "found": "The brand's own shop page heads its FOOD section 「厳選素材と出汁の旨さが決め手」 and lists 「ざるそば」「京そば」「そば合い盛り」「鴨そば」「山かけそば」「とろろそば」 with no ingredient, allergen or tsuyu detail anywhere; the cited-elsewhere marri-marri article likewise never mentions つゆ.",
+  "correct_url": null,
+  "http": "200 x2",
+  "method": "1 plain fetch of the operator's shop page + 1 plain fetch of the marri-marri article (full-text grep for つゆ / 小麦 / アレルギー — zero hits)",
+  "note": "UNCITED (the data file records the non-URL string 'inference, unconfirmed by restaurant') but the absence is real and re-verified. The problem is what this record leaves OUT while hedging about tsuyu: the same menu sells 「からあげ 抹茶塩添え」 and 「フライドポテト 抹茶塩味」 — a fryer with wheat-coated karaage in it — and gf_cross_contamination on this record is an EMPTY array. That is the concrete wheat risk here, and it is unrecorded."
+ },
+ {
+  "id": "tokyo_kyoto_saryo_suisen_shinj",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "The house soba (including the signature matcha soba) is made in-house daily as 十割そば — 100% buckwheat flour with no wheat flour used as a binder in the noodle itself.",
+  "url": "https://marri-marri.jp/gentry/saryo-suisen-shinjuku/",
+  "verdict": "wrong_source",
+  "found": "On the cited page, 「十割」 appears ONLY in the page title (「…｜十割そばと出来立て温わらび餅」) and nowhere in the body; the body says only 「自家製生蕎麦・茶蕎麦」, quoting the official page. The operator states it directly, in its own English: 「【終日提供】そば合い盛り / Matcha Juwari and Juwari Combination Soba ¥1,040」.",
+  "correct_url": "https://saryo-suisen.com/shop/shinjuku/",
+  "http": "200 x2",
+  "method": "1 plain fetch of the cited article (full-text grep for 十割 — three hits, all the <title>/H1) + 1 plain fetch of the operator's page",
+  "note": "SEO-TITLE-ONLY CITATION. The article's body never supports the claim; the headline does. The claim is nonetheless TRUE and first-party — the brand's own menu names both noodles Juwari — so cite the operator instead. Two words still have to go: 'daily' is stated by no one, and per the brief 十割 does not make soba celiac-safe (打ち粉 and the tsuyu are both unaddressed here)."
+ },
+ {
+  "id": "tokyo_kyoto_saryo_suisen_shinj",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "limited",
+  "recommended": "ask",
+  "evidence": [
+   "https://saryo-suisen.com/shop/shinjuku/",
+   "https://marri-marri.jp/gentry/saryo-suisen-shinjuku/"
+  ],
+  "why": "'Limited vegan options' asserts that vegan options exist. The record's own vegan_detail hedges every single candidate ('likely vegan, but this was not explicitly confirmed'; 'has not been confirmed either way'), and the menu evidence now cuts against it: the three plain teas the detail leans on — 特選宇治抹茶, 京都宇治 煎茶, 京都宇治 玉露茎ほうじ茶 — are each served 「もちもちお抹茶三笠つき」, a mikasa/dorayaki pancake (wheat and egg), and the signature 翠泉パフェ is itemised by marri-marri as 「もちもちお抹茶三笠、抹茶のサクロール、粒あん、白玉、フィナンシェ、わらび餅、黒糖ゼリー」 — a financier is wheat, butter and egg white. Nothing on the menu is labelled vegan. 'ask' is what the evidence supports."
+ },
+ {
+  "id": "tokyo_kyoto_saryo_suisen_shinj",
+  "city": "tokyo",
+  "field": "record_verdict",
+  "quote": "record-level assessment: gf_confidence=ask, vegan_status=limited, TEMPORARILY CLOSED since 2026-08-03 with no reopening date",
+  "url": "https://saryo-suisen.com/shop/shinjuku/",
+  "verdict": "defective",
+  "found": "Brand's own NEWS block on the branch page, dated 2026.07.24: 「【新宿店】臨時休業のお知らせ … 【休業期間】2026年8月3日（月）〜 未定 なお、近隣店舗は通常通り営業しております。」 Independently confirmed by marri-marri: 「京都 茶寮翠泉 新宿店は、公式発表により2026年8月3日（月）から再開日未定で臨時休業しています」 (checked 2026年8月7日). The operator-managed Tabelog page has NOT been updated — it still shows 11:00-20:00, 定休日 なし, and its most recent review is 2026/07, before the closure.",
+  "correct_url": null,
+  "http": "200 x3",
+  "method": "1 plain fetch of the brand's branch page + 1 plain fetch of the cited article + 1 mobile-host Tabelog",
+  "note": "NOT TRADING. As of today (2026-08-21) this branch has been shut since 3 August with 再開日未定, and the record presents it as open with 定休日なし. This is the top-priority fix on the shard — the app would send someone to a closed shop, and Tabelog will not warn them because it is stale. Other repairs: (1) gf_cross_contamination is an empty array while the menu carries からあげ and フライドポテト through one fryer, plus a 三笠 (wheat pancake) served with every plain tea and a フィナンシェ inside the signature parfait — gf_detail hedges about 'cookie/cracker garnishes' when the sources name the actual items. (2) The one positives citation is an SEO title (see above); the fact is first-party on the operator's page. (3) vegan_status 'limited' is over-rated — see tier_recommendation. gf_confidence 'ask' is correct."
  }
 ]

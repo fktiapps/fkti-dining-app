@@ -171,6 +171,20 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "name": "肉汁水餃子 餃包 新宿店 (Nikujiru Suigyoza Gyopao Shinjuku-ten (Juicy)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://r.gnavi.co.jp/gp54tj320000/menu4/",
+   "https://gyopao-shinjuku.com/blog/%E6%9C%AC%E6%97%A5%E3%81%AE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%80%8C%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AE%E9%B6%8F%E8%82%89%E3%83%81%E3%83%9E%E3%82%AD%E3%80%8D/730/",
+   "https://gyopao-shinjuku.com/"
+  ],
+  "why": "The record treats the GF story as one marketing blog post, but the shop's operator-maintained Gurunavi menu labels roughly fifteen dishes 【グルテンフリー】 in a deliberate two-tier scheme that also marks 【グルテンフリー・ベジタリアン】 — 鶏肉チマキ, よだれ鶏, 蒸し鶏のネギソース, クラゲきゅうり, 麻辣ピーナッツ, 青菜の塩ナムル, 自家製極太メンマ, 胡麻ダレ冷やしトマト, パクチーだけのサラダ and more, most of them cold or steamed and never near the fryer. That is precisely the protocol definition of options: named adaptable dishes with no special handling. It cannot go above options — every source is the operator's own voice, which the HARD RULE caps — and the options text must carry two warnings the evidence now supports outright: the kitchen is a wheat water-dumpling line, and the shop deep-fries wheat gyoza and wheat spring rolls in the same oil as its own GF-labelled 油淋鶏, so that one labelled dish should be avoided. Left at ask, a celiac in Shinjuku is told nothing about fifteen dishes the operator has already labelled for them."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__104",
   "name": "築地本願寺キッチン",
   "field": "vegan_status",
@@ -252,5 +266,33 @@
    "https://tabelog.com/tokyo/A1310/A131003/13198272/"
   ],
   "why": "UNDER-RATED by one notch, and only for a paperwork reason: gf_uncited_downgrade records that this record was held down from \"options\" on 2026-08-20 solely because no safety finding cited a source. Sources now exist and are unambiguous — a named, priced, weekly-rotating rice-flour (米粉) gluten-free fettuccine at lunch, a documented +150 yen dinner substitution stated in Japanese and English, the bread deliberately omitted from the GF set, and Tabelog carrying 「グルテンフリーメニューあり」 as a venue attribute. That is 'options', not 'unknown'. It must NOT go above options: nothing published addresses shared pasta water, and that gap is the whole risk."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_rice_hack",
+  "name": "RICE HACK グルテンフリーベーカリー",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "dedicated",
+  "evidence": [
+   "https://www.findmeglutenfree.com/biz/ricehack-onden-house/5242488937906176",
+   "https://www.ondenhouse.jp/bakery/"
+  ],
+  "why": "UNDER-RATED, and the record already knows it: gf_proposed_tier reads to \"dedicated\", held at \"ask\" by gf_uncited_downgrade only because nothing cited a source. The sources exist. FindMeGlutenFree titles the listing 「Dedicated Gluten-Free Bakery in Shibuya City」 with 「Reported to be dedicated gluten-free」 over 122 recent ratings, and two independent celiac reviewers — one self-described Symptomatic Celiac — filed it Dedicated GF with 「No symptoms」 within the last month. The operator is a wholly rice-flour business (米粉使用グルテンフリー料理のカフェ、パン屋、料理教室) whose pizza it calls 完全グルテンフリー. Recommend only; a dedicated badge needs REVIEW_PROTOCOL.md pass 3 and human sign-off."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_t_s_kitchen",
+  "name": "グルテンフリー T's Kitchen 上野広小路店",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "dedicated",
+  "evidence": [
+   "https://glutenfree.co.jp/about-us/",
+   "https://glutenfree.co.jp/menu/",
+   "https://glutenfree.co.jp/",
+   "https://glutenfree.co.jp/コンサルティング/"
+  ],
+  "why": "This record's own gf_detail opens \"This is one of the safest GF options in Tokyo for a celiac\" while the label reads 'ask' — the label contradicts its own detail text, in the direction that costs a celiac a genuinely safe meal. The venue states 「小麦・大麦・ライ麦を使わない料理や飲み物を提供しています」, is certified by The Gluten Intolerance Group (「The gluten intolerance group からアジア初のグルテンフリー認証を受けた」, GFCO programme), wraps its gyoza and batters its karaage in rice flour, and has no wheat batter on site for the shared fryer to carry. The only residual risks are supplier-level (「材料によっては同じ工場内で小麦を取り扱っている」) and a no-guarantee note that is explicitly about NON-gluten allergies. If 'dedicated' is reserved in this app for venues with zero acknowledged supplier-level cross-contact, then 'high' is the correct floor — but 'ask' is indefensible here."
  }
 ]

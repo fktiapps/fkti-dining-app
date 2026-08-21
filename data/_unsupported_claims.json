@@ -829,6 +829,15 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_kyotei_daikokuya",
+  "name": "蕎亭 大黒屋 (Kyotei Daikokuya)",
+  "field": "positives",
+  "text": "Buckwheat is sourced directly from named growers in Niigata and Nagano and stone-milled fresh in-house daily using multi",
+  "source": "https://nihon-soba.jp/tabearuki/kanto/tokyo/2022/07/04/13059/",
+  "why": "THREE FACTUAL ERRORS AGAINST THE PAGE IT CITES. (1) NAGANO IS NOT THERE — the owner says 妙高 (Niigata) and 秋田 (Akita) plus one unnamed third; Akita has been silently replaced by Nagano. (2) NO GROWERS ARE NAMED anywhere on the page — only prefectures, so 'sourced directly from named growers' is inven"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo_daughter_boutique_tokyo",
   "name": "ドーター ブティック トーキョー (Daughter Boutique Tokyo)",
   "field": "gf_cross_contamination",
@@ -1240,6 +1249,42 @@
   "text": "No published allergen or dietary-accommodation information; would require a Japanese phone call to 03-3561-2647",
   "source": null,
   "why": "Over-warns. English and Korean menus are on offer and an English website exists, so \"would require a Japanese phone call\" is wrong. Reword: English and Korean menus exist but carry no allergen information, so a Japanese call to 03-3561-2647 is still the only way to ask about the kitchen."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_revive_kitchen_three_hibiy",
+  "name": "REVIVE KITCHEN THREE HIBIYA",
+  "field": "gf_cross_contamination",
+  "text": "Wheat-noodle tantanmen prepared in the same kitchen.",
+  "source": null,
+  "why": "Invented or long stale. Delete it. The real wheat vector at this venue is the wheat-tagged dessert and fried items (パルフェ 小麦, ヴィーガンハムカツ 小麦, ミルフィーユ 小麦, ドライフルーツケーキ 小麦, クレープ 小麦), not a tantanmen."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_revive_kitchen_three_hibiy",
+  "name": "REVIVE KITCHEN THREE HIBIYA",
+  "field": "soy_sauce_wheat",
+  "text": "Taco rice 'veggie meat' and various seasonings likely use wheat-based soy sauce/miso — confirm wheat-free tamari before ",
+  "source": null,
+  "why": "OVER-WARNS against the wrong dish. This venue labels wheat per item, and taco rice is one of the dishes it labels GF. Warning a celiac off a GF-tagged dish while the record misses the wheat-tagged flagship (see below) is the record wrong in both directions at once."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_revive_kitchen_three_hibiy",
+  "name": "REVIVE KITCHEN THREE HIBIYA",
+  "field": "vegan_cross_contact",
+  "text": "Vegetable clear soup (すまし汁) dashi not confirmed bonito-free — ask.",
+  "source": null,
+  "why": "OVER-WARNS. The suspicion is answered in public: the すまし汁 is 大根出汁, the tofu course is 精進だし. Replace the doubt with the fact, or drop the line — a MODERN SHOJIN kitchen naming its dashi should get credit for it."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_revive_kitchen_three_hibiy",
+  "name": "REVIVE KITCHEN THREE HIBIYA",
+  "field": "positives",
+  "text": "A clearly fully-vegan flagship meal stand.",
+  "source": null,
+  "why": "MOST DANGEROUS FINDING IN THIS SHARD. The venue's flagship 4,290-yen meal is advertised GF on the web page and marked 小麦 on its own printed menu. A celiac following this record's 'flagship' praise and the shop page's GF tag would order a wheat dish. Rewrite the positive as 'fully vegan flagship meal"
  },
  {
   "city": "tokyo",

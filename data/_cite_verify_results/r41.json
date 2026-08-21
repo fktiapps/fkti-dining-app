@@ -386,5 +386,109 @@
   "http": "200 on five sources; manpuku live host TLS-dead, read via Wayback; HappyCow 403 Incapsula",
   "method": "nepalico.com, note.com, findmeglutenfree.com, s.tabelog.com top + /dtlmenu/, chawanbushi.com, manpuku-veggie via Wayback",
   "note": "Two claims cite pages that do not carry them (note.com, chawanbushi) and one cites a dead path (manpuku); all three are repaired by the shop's Tabelog menu page plus the Wayback manpuku URL. One factual error to fix in both the claim and vegan_detail: the veg set adds nothing, it only drops the meat curry. TRADING: open — Tabelog 3.68 with 953 reviews to July 2026, 東京都渋谷区桜丘町30-18 メイサ南平台1F, opened 2010-09-24; hours Mon-Sat 11:30-15:00 (L.O. 14:40) and 18:00-23:00 (L.O. 22:30), Sunday closed, which matches the record hours_raw exactly. gf ask and vegan ask are both the right calls and no tier change is warranted; the new V-marking evidence strengthens the existing ask rather than moving it."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "No dedicated gluten-free prep area, fryer, or allergen protocol is confirmed; the kitchen's primary output is wheat-wrapper boiled dumplings, so cross-contact risk for a strict celiac diet is likely significant even when ordering the gluten-free chimaki item.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "The operator-maintained Gurunavi menu puts 「ひとくち揚げ餃子 759円」 and 「春巻き　揚げたてが美味しい手作り春巻き！ 649円」 on the same page as, and directly adjacent to, 「手仕込み油淋鶏【グルテンフリー】お店で毎日仕込んでいます。 803円」. No allergen chart, ppm figure or prep-area statement appears anywhere on the shop site or the Gurunavi listing.",
+  "correct_url": "https://r.gnavi.co.jp/gp54tj320000/menu4/",
+  "http": "200 (plain fetch, desktop Chrome UA)",
+  "method": "plain fetches of gyopao-shinjuku.com root, /menu-2/, /food-drink-english-edition/ (both image-only) and the Gurunavi listing + menu, reached from a Yahoo Japan search",
+  "note": "UNCITED, and the sharpest available evidence is missing from the record. The fryer is no longer hypothetical: the shop deep-fries WHEAT gyoza and WHEAT spring rolls in the same oil as the item it itself labels gluten-free (油淋鶏). That single sentence, cited to the Gurunavi menu, is the most useful thing this record could tell a celiac. The shop's own /menu-2/ and English menu pages are images with no readable text, so Gurunavi is the only machine-readable menu."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "FindMeGlutenFree's Shinjuku directory returns no listing or celiac review for this dumpling shop, despite covering the area — there is no independent celiac-grade evidence that anyone has eaten here safely.",
+  "url": "https://www.findmeglutenfree.com/jp/shinjuku-city",
+  "verdict": "supported",
+  "found": "The FMGF Shinjuku City directory renders 30 ranked venues (Paricolle Kabukicho, BONBONS DE K, Teppan Baby …). Grep for 餃包 / gyopao returns 0; the only \"Dumplings\" hits are GF menu items at other venues.",
+  "correct_url": null,
+  "http": "200 (plain fetch, desktop Chrome UA)",
+  "method": "1 plain fetch of the cited directory + grep",
+  "note": "Holds. Same caveat as elsewhere in this sweep: this is a ranked 30-item directory, not an exhaustive index, so it evidences \"not covered by FMGF\" rather than \"provably unlisted\" — and FMGF's own search is login-gated, so nobody can check further anonymously. Independent corroboration is genuinely absent: I found no celiac-authored account of this shop anywhere."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Aggregator coverage states the shop labels 餃子ソーセージ, 鶏肉チマキ, 油淋鶏 (deep-fried chicken) and 麻婆豆腐 as gluten-free. Yurinchi and mapo tofu conventionally use wheat soy sauce and wheat-flour coating/deep frying, contradicting the shop's unconfirmed GF-soy-sauce and no-dedicated-fryer status — indicating the 'GF' label reflects recipe wheat, not celiac cross-contact safety.",
+  "url": "https://un-gluten.com/glutenfree-restaurants-shinjuku/",
+  "verdict": "wrong_source",
+  "found": "The cited un-gluten.com article is 「新宿の人気グルテンフリーレストラン７選」 and names exactly seven venues — アインソフジャーニー, ミスターファーマー, モアハピネス, もうやんカレー, 800° Degrees, Where is a Dog, みせるま. 餃包 is NOT one of them; grep for 餃包 / 鶏肉チマキ / 油淋鶏 / 麻婆豆腐 / 水餃子 returns 0. The real labels are on the shop's Gurunavi menu: 「餃子ソーセージ【グルテンフリー】」, 「鶏肉チマキ【グルテンフリー】」, 「手仕込み油淋鶏【グルテンフリー】」, 「麻婆豆腐【グルテンフリー】お好みの辛さで！」.",
+  "correct_url": "https://r.gnavi.co.jp/gp54tj320000/menu4/",
+  "http": "200 (plain fetch) / 200 (Gurunavi)",
+  "method": "1 plain fetch of the cited page + grep for every named dish, then a Yahoo Japan search for 餃包 グルテンフリー 油淋鶏 麻婆豆腐 which surfaced the Gurunavi menu",
+  "note": "THE WORST DEFECT IN THIS SHARD. The cited page does not mention this restaurant AT ALL — it is a celiac blogger's Shinjuku top-seven list that excludes it. The claim's substance is nonetheless true and is now sourced to the shop's own Gurunavi menu, which labels roughly fifteen dishes 【グルテンフリー】 in a two-tier scheme that also flags 【グルテンフリー・ベジタリアン】. Repoint to Gurunavi. Note the irony worth recording: un-gluten.com is written by a diagnosed celiac who walks Shinjuku daily, and she does not list this shop."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "All gluten-free promotion originates from a single source — the restaurant's own 'おすすめ グルテンフリーの鶏肉チマキ' marketing blog — with no protocol, ppm, or dedicated-prep disclosure; secondary blogs only restate this shop-authored claim.",
+  "url": "https://gyopao-shinjuku.com/blog/730/",
+  "verdict": "wrong_source",
+  "found": "The cited short URL is a hard 404. The post lives only at the percent-encoded slug, dated 2020.08.20: 「”鶏肉チマキ” もち米の笹の葉包み蒸しで、【グルテンフリー】が女性人気の理由の一つです♪」.",
+  "correct_url": "https://gyopao-shinjuku.com/blog/%E6%9C%AC%E6%97%A5%E3%81%AE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%80%8C%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AE%E9%B6%8F%E8%82%89%E3%83%81%E3%83%9E%E3%82%AD%E3%80%8D/730/",
+  "http": "404 on the cited URL; 200 on the full-slug URL",
+  "method": "plain fetch of both URL forms",
+  "note": "DEAD URL — repoint to the full-slug version (the record already uses it for the positives claim, so the two claims can share one citation). The claim also needs re-framing on the facts: the GF promotion does NOT originate in a single blog post. The shop's Gurunavi menu carries about fifteen 【グルテンフリー】 labels covering cold, steamed and braised dishes, which is a far broader and more deliberate programme than one chimaki post. And \"secondary blogs only restate this\" is unevidenced — I found no secondary blogs about this shop's GF items at all. What IS true and should stay: no protocol, no ppm, no dedicated-prep disclosure anywhere."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "The shop is explicitly a 肉汁水餃子専門店 (juicy boiled water-dumpling specialty restaurant) whose entire production line is wheat wrappers, boiled in shared water — a structurally high cross-contact environment for celiac.",
+  "url": "https://gyopao-shinjuku.com/",
+  "verdict": "supported",
+  "found": "「当店は肉汁水餃子専門店として「新宿でいちばん幸せになれる場所」を目指しています。」 and 「水餃子の概念が変わる！当店自慢の”餃包”を是非ご賞味ください。」 / 「「肉汁水餃子 餃包」は本店・六本木店がトリップアドバイザー東京1位の「水餃子専門店」です。」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch of the cited root",
+  "note": "The 肉汁水餃子専門店 self-description is verbatim on the cited page. One honest caveat: \"boiled in shared water\" is a sound inference from 水餃子 but is not stated by the shop, so phrase it as an inference. The stronger, actually-documented vector is the deep fryer — 揚げ餃子 and 春巻き share it with the GF-labelled 油淋鶏 (see the Gurunavi menu)."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "The restaurant has proactively promoted a gluten-free chicken chimaki on its own blog as a recommendation for gluten-sensitive guests, indicating at least some staff awareness of gluten-free demand.",
+  "url": "https://gyopao-shinjuku.com/blog/%E6%9C%AC%E6%97%A5%E3%81%AE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%80%8C%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AE%E9%B6%8F%E8%82%89%E3%83%81%E3%83%9E%E3%82%AD%E3%80%8D/730/",
+  "verdict": "supported",
+  "found": "「本日のおすすめ「グルテンフリーの鶏肉チマキ」」 / 「もち米の笹の葉包み蒸しで、【グルテンフリー】が女性人気の理由の一つです♪」 / 「それにグルテンフリーだと罪悪感もないですよね（笑）」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch of the full-slug URL",
+  "note": "The proactive promotion is real and on the cited page. But the gloss \"as a recommendation for gluten-sensitive guests\" is NOT what the post says: it pitches gluten-free as a 女性人気 selling point and as 罪悪感もない — guilt-free — i.e. wellness-diet framing, not allergen framing. Reword to say the shop markets gluten-free as a lifestyle attribute, which is weaker evidence of allergen awareness than the record implies. The much better positive is the Gurunavi menu's fifteen-item labelled list."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "city": "tokyo",
+  "field": "record_verdict",
+  "quote": null,
+  "url": null,
+  "verdict": "repairable",
+  "found": null,
+  "correct_url": null,
+  "http": "200 on five sources; one cited URL 404",
+  "method": "gyopao-shinjuku.com root + /menu-2/ + English menu + both blog URL forms, findmeglutenfree.com, un-gluten.com, r.gnavi.co.jp listing + menu, Yahoo Japan",
+  "note": "Repairable but needs real work: one citation points at a page that never mentions the restaurant, one is a 404, and one claim is uncited — all three land on https://r.gnavi.co.jp/gp54tj320000/menu4/ or the full-slug blog URL. TRADING: open — 東京都新宿区新宿3-35-13 裕永ビル3F, 25 seats, site footer © 2026, and a new sibling 餃包 新宿東口駅前店 (gyopao-shinjuku-east.com) has since opened; keep future citations off the sibling. HOURS: the record hedges between two conflicting sets and picks the wrong one. The shop's OWN site says 「営業時間 全日：12:00～23:45」 and Gurunavi agrees (12:00-23:45, L.O. 23:00, drinks L.O. 23:15, 不定休日あり) — that is the set the record rejected as less authoritative. Replace the hedge. vegan no is correct (黒豚 dumplings, 角煮, よだれ鶏 throughout)."
+ },
+ {
+  "id": "tokyo_nikujiru_suigyoza_gyopao",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://r.gnavi.co.jp/gp54tj320000/menu4/",
+   "https://gyopao-shinjuku.com/blog/%E6%9C%AC%E6%97%A5%E3%81%AE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%80%8C%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AE%E9%B6%8F%E8%82%89%E3%83%81%E3%83%9E%E3%82%AD%E3%80%8D/730/",
+   "https://gyopao-shinjuku.com/"
+  ],
+  "why": "The record treats the GF story as one marketing blog post, but the shop's operator-maintained Gurunavi menu labels roughly fifteen dishes 【グルテンフリー】 in a deliberate two-tier scheme that also marks 【グルテンフリー・ベジタリアン】 — 鶏肉チマキ, よだれ鶏, 蒸し鶏のネギソース, クラゲきゅうり, 麻辣ピーナッツ, 青菜の塩ナムル, 自家製極太メンマ, 胡麻ダレ冷やしトマト, パクチーだけのサラダ and more, most of them cold or steamed and never near the fryer. That is precisely the protocol definition of options: named adaptable dishes with no special handling. It cannot go above options — every source is the operator's own voice, which the HARD RULE caps — and the options text must carry two warnings the evidence now supports outright: the kitchen is a wheat water-dumpling line, and the shop deep-fries wheat gyoza and wheat spring rolls in the same oil as its own GF-labelled 油淋鶏, so that one labelled dish should be avoided. Left at ask, a celiac in Shinjuku is told nothing about fifteen dishes the operator has already labelled for them."
  }
 ]

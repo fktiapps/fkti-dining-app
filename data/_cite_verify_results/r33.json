@@ -179,5 +179,196 @@
   "kind": "record_verdict",
   "verdict": "repairable",
   "note": "Nothing false. One uncited claim has its source waiting on a page the record already uses; ‘charcoal’ is imported from the sibling branch's article; and both gf claims rest on a 2016 write-up predating the shop's March-2024 change of management."
+ },
+ {
+  "id": "ChIJxaEJ-r0HAWARd97A1vZKx5A",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a traditional yakitori-and-fried-food izakaya and is not a safe choice for celiac diners. Yakitori is typically brushed or dipped in tare (a sweet glaze built on soy sauce, which almost always contains wheat), and shared grills and fryers make cross-contact with wheat very likely. No gluten-free option has been documented here. Confirm directly with staff before relying on anything.",
+  "url": "https://www.google.com/maps/place/?q=place_id:ChIJxaEJ-r0HAWARd97A1vZKx5A",
+  "verdict": "wrong_source",
+  "found": "A May-2026 visit log of 《円町 食べ処 飲み処 なみえ》 lists, in one sitting: かわ串 ・ ぼんじり (skewers) alongside とんかつ ・ 串カツ ・ 牡蠣フライ ・ わかさぎ唐揚げ ・ 小芋唐揚げ — breaded/floured deep-fried items and skewers out of the same small kitchen.",
+  "correct_url": "https://ameblo.jp/poncinq/entry-12965698595.html",
+  "http": "200 but content-free: the Google Maps URL returns the generic JS shell (<title>Google マップ</title>, generic og:description) with no venue name, no menu, no review text",
+  "method": "plain fetch of the cited URL (desktop Chrome UA, ja Accept-Language) → JS-only shell; then Yahoo Japan search for the venue",
+  "note": "BARE-PIN CITATION. A /maps/place/?q=place_id: URL is a map pin — it renders nothing server-side and can never evidence a menu, a grill or a fryer, so it is the same defect class as citing a guide's root. The claim itself is true and now has a page: the ameblo visit log names four separate deep-fried dishes plus chicken skewers."
+ },
+ {
+  "id": "ChIJxaEJ-r0HAWARd97A1vZKx5A",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Yakitori tare and dipping sauces are built on Japanese soy sauce, which is normally brewed with wheat. Even salt-seasoned (shio) skewers are not a guarantee of being gluten-free given shared grilling surfaces.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Same visit log: 秋刀魚の山椒煮 ・ だし巻き ・ マグロユッケ ・ 釜揚げしらすときゅうりの酢の物 ・ 湯葉とろとろ刺身 — a soy-sauce-dependent izakaya menu top to bottom.",
+  "correct_url": "https://ameblo.jp/poncinq/entry-12965698595.html",
+  "http": "200 (plain fetch)",
+  "method": "uncited claim → hunted via Yahoo Japan",
+  "note": "UNCITED. No page anywhere states what Namie's tare is made of — the shop has no website and is not on Tabelog. What IS evidenced is a menu built on simmered, rolled-egg and sashimi dishes that all lean on shoyu. Cite the ameblo log and keep the wheat statement as the assumption it is."
+ },
+ {
+  "id": "ChIJxaEJ-r0HAWARd97A1vZKx5A",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The menu centers on grilled chicken skewers and fried dishes, so there is no vegan offering. Any vegetable item would be cooked on the same grill and in the same oil as meat and is not free of animal cross-contact.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "アジのネギ生姜たたき ・ マグロユッケ ・ 秋刀魚の山椒煮 ・ トマトのチーズ焼き ・ かわ串 ・ とんかつ ・ 串カツ、牡蠣フライ ・ ぼんじり ・ だし巻き ・ 釜揚げしらす ・ わかさぎ唐揚げ",
+  "correct_url": "https://ameblo.jp/poncinq/entry-12965698595.html",
+  "http": "200 (plain fetch)",
+  "method": "uncited claim → hunted via Yahoo Japan",
+  "note": "UNCITED but comprehensively evidenced. Note the two nominally plant dishes on that list are traps of exactly the kind this sweep looks for: トマトのチーズ焼き is cheese, and 小芋唐揚げ / 湯葉 come out of the same oil as 牡蠣フライ and とんかつ. Attach the ameblo URL."
+ },
+ {
+  "id": "ChIJxaEJ-r0HAWARd97A1vZKx5A",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "All three claims are true and all three are now sourceable to one May-2026 visit log; none of them was sourceable before. The only cited URL on the record is a Google Maps pin that renders nothing."
+ },
+ {
+  "id": "kyr_karamenya_shachirin_kyot",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Bowls are built on wheat ramen noodles in a shared spicy-ramen kitchen; no gluten-free preparation is mentioned (per Leaf Kyoto).",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「名古屋発の旨辛にんにくラーメンが京都に登場」 / 「そそり立つニンニクをほぐして麺をすすると旨みもしっかりと感じられる」 — and no allergen or gluten-free note anywhere on the page.",
+  "correct_url": "https://www.leafkyoto.net/store/231017-kyoto-syachirin/",
+  "http": "200 (plain fetch)",
+  "method": "the claim names Leaf Kyoto in its own text but carries no URL; located via the site's 「?s=鯱輪」 search page",
+  "note": "ATTRIBUTION WITHOUT A URL. The record's safety block stores source:\"\" for all three claims while the prose says ‘per Leaf Kyoto’ / ‘per Osumituki’ — the citation was written into the sentence and the link dropped. Attach https://www.leafkyoto.net/store/231017-kyoto-syachirin/ ."
+ },
+ {
+  "id": "kyr_karamenya_shachirin_kyot",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The menu includes a soy-sauce ramen and a chili-based spicy tare; Japanese soy sauce and chili tares are typically wheat-containing, though the page does not list allergens (per Osumituki).",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「カウンター席がある店内では「旨辛まぜそば・旨辛ラーメン・醤油ラーメン」などを食べていくことができます」 and the itemised list 「醤油ラーメン 850円」",
+  "correct_url": "https://osumituki.com/kyoto-ramen/190325.html",
+  "http": "200 (plain fetch)",
+  "method": "the claim names Osumituki in its own text but carries no URL; located via Yahoo Japan",
+  "note": "The soy-sauce ramen is confirmed on the Osumituki page, along with the observation that no allergen data is published. ‘chili-based spicy tare’ is NOT the page's word — it calls the base 旨辛スープ (a long-simmered pork/chicken/vegetable broth with a three-chilli blend), not a tare. The record's gf_detail repeats ‘house chili tare’; correct both to ‘spicy broth’."
+ },
+ {
+  "id": "kyr_karamenya_shachirin_kyot",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Signature bowls are topped with stir-fried minced meat, seared chashu pork, back fat and a beaten egg over a meat broth; no plant-based option is offered (per Leaf Kyoto).",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「辛麺スーパー1150円。炒めたミンチ、モヤシ、ねぎ、ニンニクなど、具だくさんなことも特徴。バーナーで炙った厚切りチャーシュー、上品な甘さの背油など、一つひとつこだわり抜いている。さらには、溶き卵をかけて味をまろやかにしている」",
+  "correct_url": "https://www.leafkyoto.net/store/231017-kyoto-syachirin/",
+  "http": "200 (plain fetch)",
+  "method": "located via the site's 「?s=鯱輪」 search page",
+  "note": "Every element of this claim — minced meat, seared chashu, back fat, beaten egg — is one sentence on the Leaf Kyoto page, near-verbatim. Attach the URL and it becomes the best-evidenced claim on the record."
+ },
+ {
+  "id": "kyr_karamenya_shachirin_kyot",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "All three claims are accurate; all three were shipped with source:\"\" while naming their source inside the prose. Two URLs recovered (Leaf Kyoto, Osumituki). One wording fix: the spicy base is a broth, not a tare. Shop is trading — Instagram @shachirin_kyoto is live with 638 posts."
+ },
+ {
+  "id": "mp_coffee_cattleya_coffee_k",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a coffee house centered on toast, cake and light cafe fare, all of which involve wheat. Wheat is heavily present in the kitchen and cross-contact is highly likely, so the food menu is not celiac-safe.",
+  "url": "https://kyotopi.jp/articles/Oq2lV",
+  "verdict": "supported",
+  "found": "「フードはトーストやケーキ類。」 preceded by 「メニュー構成は”コーヒースタンド的”と表現すれば分かりやすいかも知れません。エスプレッソマシンで抽出するアメリカーノやカフェラテなど。」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Toast and cake are verbatim on the page. But the record's own gf_detail describes a kissaten 'centered on coffee and sandwiches ... cream soda' — that is the PRE-2024 shop. This 2024-07-13 article is reporting the relaunch, where the menu is a coffee stand: espresso drinks, toast, cake, beer and wine. Bring gf_detail into line with the page it cites."
+ },
+ {
+  "id": "mp_coffee_cattleya_coffee_k",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan options or dairy-free preparation are documented. Menu items center on coffee, espresso drinks, toast and cake; lattes and baked goods use dairy, and vegan suitability would need to be confirmed directly with the shop.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「エスプレッソマシンで抽出するアメリカーノやカフェラテなど。フードはトーストやケーキ類。ビールやワインなどアルコールも用意されています。」",
+  "correct_url": "https://kyotopi.jp/articles/Oq2lV",
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "uncited claim → hunted; support is on the page the record already cites for its gf claim",
+  "note": "UNCITED. The espresso-drinks / caffe-latte / toast / cake menu is one sentence on the kyotopi relaunch article, and the same article shows no plant-milk or vegan note. Attach that URL."
+ },
+ {
+  "id": "mp_coffee_cattleya_coffee_k",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Black brewed coffee and espresso (Americano) without milk are plausibly free of gluten and animal products, though this is not confirmed by any source and should be verified with staff.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「エスプレッソマシンで抽出するアメリカーノやカフェラテなど。」 and 「コーヒー豆は全国に名を馳せる福岡のロースター「COFFEE COUNTY」。」",
+  "correct_url": "https://kyotopi.jp/articles/Oq2lV",
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "uncited claim → hunted",
+  "note": "UNCITED. The Americano's existence is documented; the safety inference is the record's own and is already honestly hedged. Attach the URL for the menu half."
+ },
+ {
+  "id": "mp_coffee_cattleya_coffee_k",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "All three claims are true of the cited page; two simply had no URL attached. See the trading_status item — the citation work is fine but the record is presenting a shop that stopped serving on 2026-06-28 as open."
+ },
+ {
+  "id": "mp_coffee_cattleya_coffee_k",
+  "city": "kyoto",
+  "field": "trading_status",
+  "kind": "trading_status",
+  "quote": "Record carries hours_raw \"Wed–Sun 11:00–18:00\", hours_status \"regular\", and no closure flag.",
+  "url": "https://tabelog.com/kyoto/A2601/A260301/26002340/",
+  "verdict": "unsupported",
+  "found": "Tabelog's listing header reads 「このお店は店舗情報の確認が取れていないため掲載保留中です。」 (listing suspended, shop details unconfirmable). Its newest review is a 2026/06 visit — nothing after — and one review states 「6月28日をもって一旦休業されます」. Indexed Instagram announcements say 「店長さんが新しいお店を始められるため こちらのお店は2026年6月いっぱいで辞められるとのことです 最終営業日は6/28でCOFFEE Cattleyaは一旦休業 今後どうなるかは未定」 and 「COFFEE Cattleyaは6月で一旦休業となります。最終営業日は6/28(日)となります」 (6/28 fell on a Sunday in 2026).",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA) for the listing and review list; instagram.com/coffeecattleya returns a JS shell with no og tags",
+  "method": "mobile-host Tabelog fetch of listing + review list, plus Yahoo Japan indexed search of the shop's Instagram",
+  "note": "NOT CURRENTLY TRADING. The 1943-founded kissaten closed May 2024, relaunched 2024-07-03 under a new owner, and that relaunch ended 2026-06-28 with the future undecided. The app shows it as open with regular hours today (2026-08-21). Mark closed/hiatus pending on-the-ground confirmation."
+ },
+ {
+  "id": "mp_coffee_cattleya_coffee_k",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://kyotopi.jp/articles/Oq2lV",
+   "https://tabelog.com/kyoto/A2601/A260301/26002340/"
+  ],
+  "why": "The record's own gf_detail already says \"Not celiac-safe ... A celiac should avoid food items here\", and the cited page shows the entire food menu is toast and cake with no allergen handling — an \"ask\" badge above that text invites a celiac to go and ask a shop that (a) has nothing for them and (b) is not currently open. Same label-contradicts-its-own-detail shape the brief flags. Lower confidence than the trading finding: if \"ask\" is this app's floor for kissaten, ignore."
+ },
+ {
+  "id": "mp_grill_fukuya_coffee_gril",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "This is a classic yoshoku (Japanese-Western) restaurant whose core dishes are wheat- and soy-heavy: Fukuya Rice is built on ketchup rice with an omelet, and the menu centers on hamburg steak, breaded and fried cutlets (chicken cutlet), cream croquettes and a fried-item bento. Breading, demi-glace and similar sauces, and typical Japanese seasonings all generally involve wheat flour and soy-based sauces. No gluten-free preparation, dedicated fryer, or allergy accommodation is documented in any source, so this is not suitable for strict gluten avoidance and not vegan-friendly. Confirm any dietary needs directly with the restaurant.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog's 料理メニュー (65 items, updated 2026/01) carries フクヤライス 930円 ・ オムライス 900円 ・ ハンバーグステーキ 1,130円 ・ チキンカツレツ 1,130円 ・ ビーフカツレツ ・ ポークカツレツ ・ トンカツ ・ 一口カツレツ ・ 車海老フライ ・ カツサンドウィッチ ・ 洋食弁当（上/中） under the heading 「お弁当（店内でのお食事のみ赤だしが付きます）」, with no allergen column. For Fukuya Rice specifically, T JAPAN: 「片面だけ焼いた具だくさんの卵をケチャップライスにのせた名物の「フクヤライス」」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260201/26004641/dtlmenu/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "uncited claim → hunted; mobile-host Tabelog menu fetch + Yahoo Japan search for the Fukuya Rice description",
+  "note": "UNCITED, and one detail is wrong: there are NO cream croquettes on the menu — the croquettes are 車海老コロッケ (prawn) and ビーフコロッケ (beef). Fix that word, attach https://tabelog.com/kyoto/A2601/A260201/26004641/dtlmenu/ , and add https://www.tjapan.jp/food/17690028 for the ketchup-rice-plus-egg description. Separately: this text is filed under `positives` while being entirely a warning — the record has empty gf_cross_contamination / soy_sauce_wheat / vegan_cross_contact arrays and one over-stuffed `positives` entry doing all four jobs. Split it."
+ },
+ {
+  "id": "mp_grill_fukuya_coffee_gril",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "A single uncited claim carrying the whole record. Substance is right apart from 'cream croquettes'; the menu page evidences everything else. Shop is trading (Tabelog 12:00–21:00, closed Thu; menu updated 2026/01)."
+ },
+ {
+  "id": "mp_grill_fukuya_coffee_gril",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26004641/dtlmenu/"
+  ],
+  "why": "The record's own gf_detail reads \"Not celiac-safe ... Assume not suitable for strict gluten avoidance\", and the 65-item menu is cutlets, croquettes, fried prawn, sandwiches, hayashi, curry, spaghetti and omelette rice with no allergen data and no GF item. That is the same profile the app already scores \"no\" for 辛麺屋 鯱輪 in this shard. Consistency call, not a safety change."
  }
 ]

@@ -836,6 +836,202 @@
   "note": "NOT FOUND. Tabelog nationwide name search (スナックラーメン竜 = zero hits; スナックラーメン and ラーメン竜 = only unrelated shops outside Shinjuku-ku), Tabelog's Takadanobaba area ramen listing (tokyo/A1305/A130503, all 53 shops - no 竜/龍) and Gnavi free-word, twice, (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 and never answered. Coordinates unchanged, loc_precise:false"
  },
  {
+  "id": "tokyo3__346",
+  "name": "みけん",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog nationwide keyword search (tabelog.com/rstLst/?vs=1&sk=みけん, desktop UA, HTTP 200, 128 fuzzy hits): no business anywhere in Japan is called みけん - the hits are Miken Cafe in Kita-Asaka, Saitama, 美味研鑽 TETSU in Akihabara, 三代目 月見軒 and 蜀味軒, all substring matches. (2) Tabelog's complete Nakano ramen list (/tokyo/A1319/A131902/rstLst/ramen/, 4 page"
+ },
+ {
+  "id": "tokyo3__349",
+  "name": "天ぷら たけや",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and returned an actual empty result. (1) Tabelog's complete Nakano tempura list (/tokyo/A1319/A131902/rstLst/tempura/, HTTP 200, 11 shops - the whole genre for the area): 天ぷらと炉端大塩 中野店, 天ぷら 住友, 天ぷら新宿つな八 凛 中野店, 小出屋 天太, 千代田, 大衆酒場 だるま, 新中野ぎんや, 旬彩和膳 左がわ and three udon shops. No たけや. (2) Tabelog nationwide keyword search (?vs=1&sk=たけや, HTTP 200, 419 fuzzy hits): the tempura busi"
+ },
+ {
+  "id": "tokyo3__350",
+  "name": "寿司 なかや",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Nakano sushi list (/tokyo/A1319/A131902/rstLst/sushi/, pages 1-2, HTTP 200, all 38 shops read): すし政 中野本店, 松露鮨, 梅寿司, 鮨磯, 玉寿司 本店, 鮨 綴心, 鮨 かつた, 英鮨 中野北口店, 魚がし鮨 中野北口店 and the rest - no なかや. (2) Tabelog nationwide keyword search (?vs=1&sk=寿司なかや, HTTP 200, 39 fuzzy hits): the only 鮨 なかや in Japan is at 東京都葛飾区亀有 (Kameari, 438 m from the s"
+ },
+ {
+  "id": "tokyo3__354",
+  "name": "鰻 中野",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Nakano unagi list (/tokyo/A1319/A131902/rstLst/unagi/, HTTP 200, all 10 shops): 川二郎, いろは亭, 味治, 三河屋, 谷川, 宇奈とと 中野店, 玄品 中野 ふぐ・うなぎ料理, 鮨磯, 焼鳥 とよ田, ての字 中野マルイ店. None is called 「鰻 中野」. (2) Tabelog nationwide keyword search (?vs=1&sk=鰻中野, HTTP 200, 8 hits): every hit is a differently-named eel restaurant that happens to sit in the Nakano "
+ },
+ {
+  "id": "tokyo3__356",
+  "name": "ラーメン 太郎",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Nakano ramen list (/tokyo/A1319/A131902/rstLst/ramen/, 4 pages, HTTP 200 each, all 76 shops read): no 太郎 of any kind. (2) Tabelog nationwide keyword search (?vs=1&sk=ラーメン太郎, HTTP 200, 237 hits): there are ラーメン太郎 shops in Okayama, Yamagata, Ibaraki, Ishikawa, Saitama, Saga and Shizuoka, and exactly one in Tokyo - ラーメン太郎 at 練馬駅 178"
+ },
+ {
+  "id": "tokyo3__374",
+  "name": "力",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back with an actual empty result, not an error. (1) Tabelog ramen genre listings for all three Omotesando-area codes - A130601 Harajuku, A130602 Omotesando/Aoyama, A130603 Gaienmae/Aoyama-itchome - fetched page by page with a desktop UA (HTTP 200 each): 49 shops in total, none named 力 or ちから. (2) Tabelog area-scoped keyword search (/tokyo/A1306/rstLst/?vs=1&sk=力, "
+ },
+ {
+  "id": "tokyo3__377",
+  "name": "博多 一風堂 南青山店",
+  "status": "closed_permanently",
+  "hidden": "closed",
+  "note": "NAME CORRECTION and CLOSURE. The light record read simply 「一風堂」 at 青山・表参道, which is a brand, not a shop. Exactly one Ippudo has ever stood in that neighbourhood - 博多 一風堂 南青山店, 港区南青山3-8-37 第2宮忠ビルB1, 300 m from the light record's approximate pin - and it is permanently closed, final day of business 19 June 2016 (Tabelog carries the 【閉店】 flag; the date comes from a customer who photographed the closu"
+ },
+ {
+  "id": "tokyo3__379",
+  "name": "丹波黒豆の館",
+  "status": "mislocated",
+  "hidden": "not_in_city",
+  "note": "MISLOCATED RECORD - recommend deletion from data/tokyo.json. The business exists, but it is 黒豆の館, the 丹波篠山地域活性化センター at 兵庫県丹波篠山市下板井511-2 in Hyogo Prefecture, about 450 km west of Omotesando. Evidence: Tabelog's nationwide keyword search for 丹波黒豆の館 returns exactly one business in Japan and it is this one (listing 28015016, coordinates 35.101760 / 135.180000, tel 0795-90-8077); the operator's own liv"
+ },
+ {
+  "id": "tokyo3__383",
+  "name": "天ぷら 万両",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. This is the strongest negative in the shard - four independent legs, all HTTP 200, all genuinely empty. (1) Tabelog nationwide keyword search (?vs=1&sk=天ぷら万両, desktop UA, HTTP 200) returns 「お店 0件」 - zero results in the entire national index. (2) Tabelog Ebisu-scoped keyword search (/tokyo/A1303/A130302/rstLst/?vs=1&sk=万両, HTTP 200) also returns 0. (3) Tabelog's complete Ebisu tempura ge"
+ },
+ {
+  "id": "tokyo3__384",
+  "name": "寿司 さくら",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Ebisu sushi genre listing (/tokyo/A1303/A130302/rstLst/sushi/, pages 1-4, HTTP 200 each, all 79 shops read): no さくら. (2) Tabelog Ebisu-scoped keyword search for さくら (HTTP 200, 168 substring hits) surfaces 和 restaurant sacra, 魚串さくらさく 恵比寿横丁店, 鮨 美桜 and similar - no sushi-ya of this name. (3) Tabelog nationwide keyword search (?vs=1&"
+ },
+ {
+  "id": "tokyo3__389",
+  "name": "五ノ神水産 恵比寿店",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「五ノ神水産」 (HTTP 200) — one hit in all Japan, the Kanda shop 13163444; Gnavi free-word 「五ノ神」 (HTTP 200, total 45 rows) — the group's three Tokyo-area shops, all outside Shibuya-ku; the operator's own outlet list gonokamiseisakusho.com/shop.html (HTTP 200) — five domestic shops, no Ebisu; Yahoo Japan 「五ノ神水産 恵比寿店」 and 「…恵"
+ },
+ {
+  "id": "tokyo3__390",
+  "name": "おとーり恵比寿",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「おとーり」 (HTTP 200) — one exact-name hit in Japan, オトーリ 13304223 at 中野区本町5-4-7, plus near-miss おとなり/おとり shops; Gnavi free-word 「おとーり」 (HTTP 200) — total:1, the same Nakano-shinbashi Okinawan izakaya, and 「おとーり 恵比寿」 (HTTP 200) — total:0; Yahoo Japan 「おとーり 恵比寿 沖縄料理」 (HTTP 200) — all hits resolve to that same Nakano shop,"
+ },
+ {
+  "id": "tokyo3__392",
+  "name": "フロソー",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「フロソー」 (HTTP 200) — zero exact matches, fuzzy fallbacks only (FLO, FLOW, 麺屋FLOW 長原店, フロー, FUSOU), none in Shibuya-ku; Gnavi free-word 「フロソー」 (HTTP 200) — total:0; Yahoo Japan 「フロソー 代官山 ラーメン」 (HTTP 200) — no page carries the name, only generic Tokyo ramen listicles; DuckDuckGo 「フロソー 代官山」 (HTTP 200) — ten Daikanyama re"
+ },
+ {
+  "id": "tokyo3__395",
+  "name": "ラーメン 麗",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「ラーメン 麗」 (HTTP 200) — the only exact-name shop in Japan is ラーメン麗 at 神戸市中央区港島中町3-2-6; Gnavi free-word 「ラーメン 麗」 (HTTP 200) — the engine degraded to matching 「ラーメン」 (28,831 rows) and returned no exact-name Shibuya shop; Ecosia 「代官山 ラーメン 麗」 (HTTP 200) — only generic area ramen round-ups. Yahoo Japan was tried twice and r"
+ },
+ {
+  "id": "tokyo3__403",
+  "name": "寿司 ふじ本",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「寿司 ふじ本」 (HTTP 200) — six rows, the single exact-name shop being 寿司 ふじ本 in 大阪市北区東天満2-8-13; Gnavi free-word 「寿司 ふじ本」 (HTTP 200) — total:7, whose only ふじ本 is 鮨 漁火料理 吉祥寺 ふじ本 in Kichijōji; Ecosia and Brave searches for 寿司 ふじ本 代官山 (HTTP 200 both) — nothing places a ふじ本 in Daikanyama, only an unaddressed Google Play orderi"
+ },
+ {
+  "id": "tokyo3__404",
+  "name": "中華麺 竜馬",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword searches 「中華麺 竜馬」, 「竜馬 中華麺」 and 「中華麺 龍馬」 (HTTP 200 each) — no result rows at all; Tabelog 「らーめん 龍馬」 (HTTP 200) — a Kita-Senju shop (足立区千住1-39-6) and Kyushu 龍馬家 branches, none in Shibuya-ku; Gnavi free-word 「中華麺 竜馬」 (HTTP 200) — total:0; Ecosia 「中華麺 竜馬 代官山」 (HTTP 200) — nearest name on the page was らぁ麺や RYOMA 神楽坂 (新宿区神楽坂2-6-"
+ },
+ {
+  "id": "tokyo3_r",
+  "name": "Japanese Soba Noodles 蔦",
+  "status": "substituted",
+  "drift_km": 4.4,
+  "note": "NAME CORRECTION. The light record read 「蔦 つけ麺」 and placed it in 六本木 / 赤坂見附. 「蔦 つけ麺」 is not a business name; it is the shop name plus a genre word, and the genre word is the one Tabelog files this shop under (「ラーメン、つけ麺」), although the current menu is soba/ramen only with no tsukemen on it. A Tabelog nationwide search for 蔦 (HTTP 200) returns exactly one ramen shop of that name in Japan — Japanese S"
+ },
+ {
+  "id": "tokyo3__411",
+  "name": "尾賀",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「尾賀」 (HTTP 200) — one exact-name business in Japan, 珈琲館 尾賀 in Hyōgo, a coffee house; Tabelog 「すし 尾賀」 (HTTP 200) — seven rows, all 鮨おおが / 鮨おがわ / すし小川 near-misses, none in Minato-ku; Gnavi free-word 「尾賀」 and 「尾賀 六本木」 (HTTP 200 both) — total:0 each; Ecosia 「尾賀 六本木 鮨」 (HTTP 200) — nothing of the name. No edomae sushi cou"
+ },
+ {
+  "id": "tokyo3__413",
+  "name": "鰻 木曽路",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「鰻 木曽路」 (HTTP 200) — twenty rows, all shabu-shabu 木曽路 chain branches or same-named soba houses, no unagi shop and nothing in Nishi-Azabu; Gnavi 「木曽路 港区」 (HTTP 200) — total:2, both Shinbashi; Gnavi 「鰻 西麻布」 (HTTP 200) — 513 area rows whose nearest real unagi house is the differently-named うなぎ 徳 西麻布店; Ecosia 「鰻 木曽路 西麻布 "
+ },
+ {
+  "id": "tokyo3__414",
+  "name": "天ぷら 花月堂",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「天ぷら 花月堂」 (HTTP 200) — no such shop, only 東月/天月/朔月/圓堂 fuzzy matches; Tabelog 「花月堂」 (HTTP 200) — twenty rows of confectioners and kissaten nationwide, including 浅草 花月堂, none of them tempura and none in Minato-ku; Gnavi 「天ぷら 花月堂」 (HTTP 200) — total:0; Gnavi 「花月堂 東京」 (HTTP 200) — total:3, all sweet shops; Gnavi 「天ぷら 麻布十"
+ },
+ {
+  "id": "tokyo3__416",
+  "name": "らーめん 豚骨屋 六本木",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「豚骨屋 六本木」 (HTTP 200) — one fuzzy row, the steak bar 听屋 六本木; Tabelog 「らーめん 豚骨屋」 (HTTP 200) — twenty ...屋 ramen shops nationwide, none named 豚骨屋, none in Minato-ku; Gnavi free-word 「豚骨屋」 (HTTP 200) — total:1, 豚骨屋九州雄 in Kusatsu, Shiga; Ecosia 「らーめん 豚骨屋 六本木」 and Brave 「豚骨屋 六本木 ラーメン」 (HTTP 200 both) — Roppongi ramen listi"
+ },
+ {
+  "id": "tokyo3__420",
+  "name": "天ぷら 大武",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「天ぷら 大武」 (HTTP 200) — nine rows, all 天ぷら大吉 branches and 大樹/大塚/大万, no 大武; Tabelog 「大武」 (HTTP 200) — businesses of that name in Shizuoka, Tochigi, Kanagawa, Ibaraki and Izu, none in Tokyo and none tempura; Gnavi 「天ぷら 大武」 (HTTP 200) — total:0; Gnavi 「天ぷら 赤坂」 (HTTP 200) — total:58, the whole Akasaka tempura roster with n"
+ },
+ {
+  "id": "tokyo3__450",
+  "name": "新橋いろり",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED — recommend human review or deletion. Searches run and what each returned: (1) Tabelog nationwide keyword search for 新橋いろり (double-encoded rstLst form, desktop UA) — HTTP 200, 0件: no business in Japan bears that name. (2) Tabelog area-scoped search inside 新橋・汐留 (tokyo/A1301/A130103) for いろり — HTTP 200, 18件, and none is named simply 「いろり」. The four real candidates it surfaces are いろり村 (1"
+ },
+ {
+  "id": "tokyo3__451",
+  "name": "鰻 東正",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide keyword search for 東正 (double-encoded rstLst form, desktop UA) — HTTP 200, 14件, and not one result is named 東正; they are fuzzy hits on 東成 (Osaka's Higashinari ward) and 東生園. (2) The same search narrowed to 鰻 東正 — HTTP 200, 6件, returning 鰻正 in Saitama (11006529) and 鰻正 in Chiba (12015849) plus unrelated shops; neither 鰻正 is in T"
+ },
+ {
+  "id": "tokyo3__452",
+  "name": "味の民芸 新橋店",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND — the chain is real, the branch is not. Searches run and what each returned: (1) 味の民芸's own Tokyo store list, https://www.ajino-mingei.co.jp/area_cat/tokyo/ — HTTP 200, 18 Tokyo branches, every one suburban or outer-ward: 羽村, 多摩, 東久留米 (×2), 葛飾奥戸, 世田谷砧, 練馬高松, 吉祥寺北町, 三鷹牟礼, 小金井, 国分寺, 国立, 八王子 (×2), 町田 (×2), 昭島, 板橋高島平. There is no Minato-ku branch and no Shinbashi branch; the format is a road"
+ },
+ {
+  "id": "tokyo3__454",
+  "name": "横浜家系ラーメン 田中",
+  "status": "substituted",
+  "drift_km": 3.8,
+  "note": "NAME CORRECTION and LOCATION CORRECTION — flag for owner review. The light record read 「横浜ラーメン 田中」, genre ラーメン・豚骨, neighbourhood 港区新橋 / 新橋駅. Searches run and what each returned: (1) Tabelog nationwide keyword search for 横浜ラーメン 田中 (double-encoded rstLst form, desktop UA, HTTP 200, 60件) returns exactly one restaurant in Japan carrying that name — 13019056, 横浜家系ラーメン 田中 — and it is in Tokyo, but in 千代"
+ },
+ {
+  "id": "tokyo3__455",
+  "name": "新橋 おでん",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED — reads as a genre placeholder rather than a shop; recommend deletion from data/tokyo.json. Searches run and what each returned: (1) Tabelog nationwide keyword search for 新橋 おでん (double-encoded rstLst form, desktop UA) — HTTP 200, 9件, and none is a shop called 「新橋 おでん」; the closest literal string match is 新橋おでんBARラウンジ (13297676), a lounge bar, and the rest are compound names (こだわり鮮魚とおでん"
+ },
+ {
+  "id": "tokyo3__457",
+  "name": "新橋 寿司",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED — reads as a genre placeholder rather than a shop; recommend deletion from data/tokyo.json. Searches run and what each returned: (1) Tabelog nationwide keyword search for 新橋 寿司 (double-encoded rstLst form, desktop UA) — HTTP 200, 56件, and no result is named 「新橋 寿司」; the nearest literal matches are 新橋 すし華 (13268907) and 新橋 鮨まさ R (13324629), plus unrelated shops in Hokkaidō, Kanagawa, Aic"
+ },
+ {
   "id": "tokyo3__190",
   "name": "明神そば",
   "status": "closed_permanently",

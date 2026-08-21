@@ -465,5 +465,149 @@
    "https://tabelog.com/tottori/A3101/A310101/31000278/"
   ],
   "enrich_note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. The light record reads 「寿司 若林」 pinned in Shibuya-ku near Ikejiri-Ōhashi. Tabelog's nationwide keyword searches for 「寿司 若林」 and 「鮨 若林」 return only 寿司若竹 / 若竹丸 / すし若 names, none of them this; Yahoo Japan for the quoted variants 「\"すし若林\" OR \"寿司若林\" OR \"鮨若林\"」 returns exactly one business, and every listing of it (Tabelog, Tripadvisor, Jalan, Retty, Hot Pepper) puts it at 鳥取県鳥取市賀露町1757 inside the 鳥取港海鮮市場かろいち, coordinates 35.534829/134.179762 — Tottori, not Tokyo. A Yahoo search for 「寿司 若林 池尻大橋 握り」 dropped 若林 from its own results as a missing term and returned only generic Ikejiri-Ōhashi sushi round-ups; Gnavi free-word for 「寿司 若林 東京」 returned zero shops. Coordinates left unchanged and loc_precise:false."
+ },
+ {
+  "id": "tokyo3__443",
+  "name": null,
+  "status": "not_found",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — もぐ男 is not a restaurant; the only things of that name online are personal handles",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says Shinsen, Shibuya-ku / Shinsen Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business could not be found. A こってり塩 ramen bowl is wheat noodle in animal stock either way.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and the evidence points to this not being a business at all. Every leg ran and returned HTTP 200. (1) Tabelog nationwide keyword search for 「もぐ男」 returned an empty result list — no restaurant of that name anywhere in Japan. (2) Yahoo Japan for 「ラーメン もぐ男 神泉 渋谷」 dropped 男 from its own results as a missing term and returned only the actual Shinsen ramen shops (うさぎ, 東京背脂らーめん 麺王, 渋谷らーめん 友喜, つけ麺マンモス, 丿貫, 俺流塩らーめん 渋谷本店); a second Yahoo search on the quoted string 「\"もぐ男\"」 returned results, but every one of them is a personal handle — a TikTok account @mogubow73, an X account, a YAMAP hiker, and, tellingly, a Tabelog REVIEWER profile page titled 「もぐ男さんのトップページ」. That last one is the likely origin of this record: a reviewer's screen name scraped as if it were a shop. (3) Gnavi free-word search for 「ラーメン もぐ男」 returned zero shops, with a working control query proving the endpoint answers. (4) Tabelog's own 神泉駅 ramen station listing, forty shops over two pages, contains no もぐ男.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search (empty), Tabelog's 神泉駅 ramen listing, Yahoo Japan in two query forms, and Gnavi — all live, all negative. The only もぐ男 that exists online is a person, including a Tabelog reviewer account.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No such business could be found. Recommend deletion."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. All legs ran and returned HTTP 200. Tabelog nationwide keyword search for 「もぐ男」 → zero restaurants. Tabelog's 神泉駅 ramen station listing (40 shops over two pages) → no もぐ男. Yahoo Japan for 「ラーメン もぐ男 神泉 渋谷」 → dropped 男 as a missing term and returned only the real Shinsen shops (うさぎ, 麺王, 友喜, マンモス, 丿貫, 俺流塩らーめん); Yahoo on the quoted 「\"もぐ男\"」 → only personal handles, including a Tabelog REVIEWER profile 「もぐ男さんのトップページ」, which is the most likely source of this phantom record. Gnavi free-word → zero shops. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__446",
+  "name": null,
+  "status": "not_found",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen or tsukemen shop called あまぐ exists",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says Shinsen, Shibuya-ku / Shinsen Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business could not be found. つけ麺 and 豚骨 are both wheat noodle in wheat-soy-seasoned animal stock.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Every leg ran and returned HTTP 200. (1) Tabelog nationwide keyword search for 「あまぐ ラーメン」 returned うまかラーメン (Osaka), あづまラーメン (Kumamoto), やまみラーメン, あじ平ラーメン, てんぐラーメン and similar phonetic neighbours — no あまぐ; a second Tabelog search for the bare 「あまぐ」 returned only 甘栗 (roast-chestnut) shops — 林万昌堂, 天津甘栗 渋谷ハチ公前店, 甘栗工房, ヤマダのあまぐり. (2) Yahoo Japan for the quoted 「\"あまぐ\" ラーメン 東京」 dropped 東京 as a missing term and returned nothing resembling a restaurant; the closest thing to a match was a Tabelog reviewer handle, あまぐも, on a review of an unrelated Shibuya party venue — the same reviewer-name-scraped-as-shop pattern as tokyo3__443 in this shard. (3) Gnavi free-word search for 「ラーメン あまぐ」 returned zero shops, with a working control query proving the endpoint answers. (4) Tabelog's own 神泉駅 ramen station listing, forty shops over two pages, contains no あまぐ.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide (two query forms), Tabelog's 神泉駅 ramen listing, Yahoo Japan and Gnavi — all live, all negative.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No such business could be found. Recommend deletion."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. All legs ran and returned HTTP 200. Tabelog nationwide: 「あまぐ ラーメン」 → うまかラーメン / あづまラーメン / あじ平ラーメン and other phonetic neighbours, no あまぐ; 「あまぐ」 → only 甘栗 chestnut shops. Tabelog's 神泉駅 ramen station listing (40 shops) → no あまぐ. Yahoo Japan on the quoted 「\"あまぐ\" ラーメン 東京」 → dropped 東京 as a missing term and returned no restaurant; the nearest thing was the Tabelog reviewer handle あまぐも, the same reviewer-name pattern seen at tokyo3__443. Gnavi free-word → zero shops. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__448",
+  "name": null,
+  "status": "unresolved",
+  "lat": 35.666,
+  "lng": 139.758,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 麺屋武蔵 has no Shimbashi branch and no shop called simply つけ麺 武蔵 exists there",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says Shimbashi, Minato-ku / Shimbashi Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business could not be found. Tsukemen is thick wheat noodle in a concentrated wheat-soy dipping broth; 麺屋武蔵 in particular builds its tare on soy and its noodles are wheat. Nothing in this genre should ever be marked GF-safe.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed. 麺屋武蔵 bowls are pork-and-fish (豚骨魚介) stock with chāshū.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Every leg ran and returned HTTP 200. (1) Tabelog nationwide keyword searches for 「麺屋武蔵 新橋」 and 「つけ麺 武蔵」 returned the chain's Tokyo branches — 神山 (Kanda), 虎嘯 (Roppongi), 武骨 御徒町, 武仁 and 巌虎 (Akihabara), 鷹虎 (Takadanobaba), 二天 (Ikebukuro), 浜松町店, 虎洞 (Kichijōji), 道貫 (Tamachi), 武骨外伝 (Shibuya), 武骨相傳 (Ueno) and 創始 麺屋武蔵 (Nishi-Shinjuku) — and no Shimbashi shop. (2) The chain's own store list at menya634.co.jp/storelist/ lists fourteen Tokyo stores by address and confirms it: nothing in 新橋. The nearest are 麺屋武蔵 浜松町店 at 東京都港区浜松町1-29-6 浜松町セントラルビル 1F (35.656930 / 139.755793, Tabelog 13200371, genre つけ麺・ラーメン・居酒屋, ¥1,000–1,999) — about 1.0 km south of this pin — and 麺屋武蔵 道貫 at 東京都港区芝5-14-14 (Tamachi). (3) Yahoo Japan for 「つけ麺 武蔵 新橋」 returned the chain's own store list and its 浜松町店, never a Shimbashi shop. (4) Gnavi free-word search for 「つけ麺 武蔵 新橋」 returned zero shops, with a working control query proving the endpoint answers.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide (two query forms), the 麺屋武蔵 official store list, Yahoo Japan and Gnavi all returned live pages; none places a 武蔵 tsukemen shop in Shimbashi.",
+   "confidence": "low",
+   "sources": [
+    "https://menya634.co.jp/storelist/",
+    "https://tabelog.com/tokyo/A1314/A131401/13200371/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The named business could not be found at the named place. A human should decide whether this record was reaching for 麺屋武蔵 浜松町店 (港区浜松町1-29-6, about 1 km from the pin) — if so it needs its own sourcing pass under the correct name and coordinates — or whether it should simply be deleted."
+  },
+  "sources": [
+   "https://menya634.co.jp/storelist/",
+   "https://tabelog.com/tokyo/A1314/A131401/13200371/"
+  ],
+  "enrich_note": "UNRESOLVED. There is no shop called 「つけ麺 武蔵」 in Shimbashi. Tabelog nationwide keyword searches for 「麺屋武蔵 新橋」 and 「つけ麺 武蔵」 return the chain's branches (創始/西新宿, 神山, 虎嘯, 武骨, 武仁, 巌虎, 鷹虎, 二天, 浜松町, 虎洞, 道貫, 武骨外伝, 武骨相傳) and no Shimbashi one; the chain's own store list at menya634.co.jp/storelist/ names fourteen Tokyo stores with addresses and confirms none is in 新橋; Yahoo Japan for 「つけ麺 武蔵 新橋」 returns that same store list and the 浜松町店; Gnavi free-word returns zero. Nearest real candidate: 麺屋武蔵 浜松町店, 東京都港区浜松町1-29-6 浜松町セントラルビル 1F, 35.656930/139.755793 (Tabelog 13200371), roughly 1.0 km south of this pin, genre つけ麺・ラーメン — but that is a different branch in a different district and is NOT being asserted as this record. Coordinates unchanged, loc_precise:false. Needs a human call: delete, or re-source as 麺屋武蔵 浜松町店."
  }
 ]

@@ -454,5 +454,213 @@
    "https://r.gnavi.co.jp/area/jp/rs/?fw=%E5%B0%BE%E8%B3%80"
   ],
   "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「尾賀」 (HTTP 200) — one exact-name business in Japan, 珈琲館 尾賀 in Hyōgo, a coffee house; Tabelog 「すし 尾賀」 (HTTP 200) — seven rows, all 鮨おおが / 鮨おがわ / すし小川 near-misses, none in Minato-ku; Gnavi free-word 「尾賀」 and 「尾賀 六本木」 (HTTP 200 both) — total:0 each; Ecosia 「尾賀 六本木 鮨」 (HTTP 200) — nothing of the name. No edomae sushi counter called 尾賀 could be shown to exist in Roppongi. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__413",
+  "status": "not_found",
+  "lat": 35.672,
+  "lng": 139.736,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 木曽路 is a shabu-shabu and Japanese-cuisine chain, not an unagi house, and it has no Nishi-Azabu branch",
+  "cuisine_type": "unagi",
+  "neighborhood": "Unverified. The light record says 西麻布, filed against 赤坂見附駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. (Worth noting for any future re-source: kabayaki tare is wheat soy sauce plus mirin, so an unagi house is 'no' for gluten unless it names a tamari.)",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 木曽路 in Tokyo means the しゃぶしゃぶ・日本料理 木曽路 chain — Ueno, Ginza 5-chōme, Shinjuku 3-chōme, Himonya, Minamisuna, Ōmori, Kamiochiai and Shinbashi branches — none of them an unagi speciality house and none of them in Nishi-Azabu; the only Minato-ku presence is in Shinbashi. The other 木曽路 restaurants in the country are soba houses (蕎麦 木曽路 in Fukuoka, 信州そば木曽路 in Osaka), named after the Kiso valley road rather than after eel. The nearest actual unagi restaurant to the pin is a different business, うなぎ 徳 西麻布店.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four legs run, all answered. (1) Tabelog nationwide keyword search 「鰻 木曽路」 (HTTP 200) — twenty rows, every one either a しゃぶしゃぶ・日本料理 木曽路 branch or a soba house of the same name; no unagi shop called 木曽路 anywhere, and no Nishi-Azabu address. (2) Gnavi free-word 「木曽路 港区」 (HTTP 200) — total:2, both in Shinbashi (木曽路 新橋店 and an izakaya 木曽路). (3) Gnavi 「鰻 西麻布」 (HTTP 200) — 513 rows for the area, the nearest genuine unagi speciality being うなぎ 徳 西麻布店 (Gnavi heg6uu340000), a different name. (4) Ecosia 「鰻 木曽路 西麻布 うなぎ」 (HTTP 200) — the chain's own store locator (navi.kisoji.co.jp) and generic Tokyo unagi listings; nothing places a 木曽路 in Nishi-Azabu. A Yahoo Japan leg was attempted and returned HTTP 429 (engine declining), so it is not counted either way.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131101/13021809/",
+    "https://r.gnavi.co.jp/g084617/",
+    "https://r.gnavi.co.jp/heg6uu340000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend this record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13021809/",
+   "https://r.gnavi.co.jp/g084617/",
+   "https://r.gnavi.co.jp/heg6uu340000/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「鰻 木曽路」 (HTTP 200) — twenty rows, all shabu-shabu 木曽路 chain branches or same-named soba houses, no unagi shop and nothing in Nishi-Azabu; Gnavi 「木曽路 港区」 (HTTP 200) — total:2, both Shinbashi; Gnavi 「鰻 西麻布」 (HTTP 200) — 513 area rows whose nearest real unagi house is the differently-named うなぎ 徳 西麻布店; Ecosia 「鰻 木曽路 西麻布 うなぎ」 (HTTP 200) — only the chain's own locator and generic unagi lists. A Yahoo Japan leg returned HTTP 429 (declined, not a negative). There is no 鰻 木曽路 in Nishi-Azabu. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__414",
+  "status": "not_found",
+  "lat": 35.656,
+  "lng": 139.736,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tempura restaurant called 花月堂 exists in Azabu-jūban or anywhere else; the name belongs to confectioners and a well-known Asakusa melon-pan shop",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says 麻布十番, near Azabu-jūban Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business itself could not be identified. The light record's claim that the batter can be adapted (「衣の工夫で対応可能」) has no source behind it and must not be carried forward: a tempura counter frying in shared wheat-flour oil is not a gluten-free option unless the shop itself says so.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 花月堂 is a common confectioner's name: the Tokyo businesses carrying it are 浅草花月堂 本店 and 浅草花月堂 雷門店 (the Asakusa jumbo melon-pan shop and its café), 花月堂 in Katsushika, and 篠崎花月堂, a sweet shop out near Yamada on the Keiō Takao line. None is a tempura restaurant and none is in Minato-ku. The Azabu-jūban tempura counters that do exist — たきや, 畑中, 天ぷら 麻布十番 やなせ, 麻布十番 真田, てんぷら 前平 — are all differently named.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Five legs run, all answered. (1) Tabelog nationwide keyword search 「天ぷら 花月堂」 (HTTP 200) — no such shop; the fuzzy fallbacks were 天ぷら 東月, 天ぷら 天月, 天ぷら 朔月, the 圓堂 group. (2) Tabelog 「花月堂」 alone (HTTP 200) — twenty rows of confectioners and kissaten across Japan, including 浅草 花月堂, with no tempura shop and nothing in Minato-ku. (3) Gnavi free-word 「天ぷら 花月堂」 (HTTP 200) — total:0. (4) Gnavi 「花月堂 東京」 (HTTP 200) — total:3, the two Asakusa shops and 篠崎花月堂. (5) Gnavi 「天ぷら 麻布十番」 (HTTP 200) — total:13, the full local tempura roster, no 花月堂; Ecosia 「天ぷら 花月堂 麻布十番」 (HTTP 200) likewise returned only area tempura round-ups.",
+   "confidence": "low",
+   "sources": [
+    "https://r.gnavi.co.jp/snct7p8s0000/",
+    "https://tabelog.com/tokyo/A1311/A131102/13183985/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend this record be deleted or re-sourced before it is shown to anyone. FOR A HUMAN: the light record carried the phrase 「衣の工夫で対応可能」 — that the batter could be adjusted — against a shop that does not appear to exist. That is exactly the kind of unsourced safety claim that would put a coeliac in a tempura kitchen on false confidence, and it should not survive the merge."
+  },
+  "sources": [
+   "https://r.gnavi.co.jp/snct7p8s0000/",
+   "https://tabelog.com/tokyo/A1311/A131102/13183985/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「天ぷら 花月堂」 (HTTP 200) — no such shop, only 東月/天月/朔月/圓堂 fuzzy matches; Tabelog 「花月堂」 (HTTP 200) — twenty rows of confectioners and kissaten nationwide, including 浅草 花月堂, none of them tempura and none in Minato-ku; Gnavi 「天ぷら 花月堂」 (HTTP 200) — total:0; Gnavi 「花月堂 東京」 (HTTP 200) — total:3, all sweet shops; Gnavi 「天ぷら 麻布十番」 (HTTP 200) — total:13, the whole local tempura roster with no 花月堂 in it; Ecosia 「天ぷら 花月堂 麻布十番」 (HTTP 200) — area round-ups only. Coordinates unchanged, loc_precise:false. Note the light record's unsourced 「衣の工夫で対応可能」 gluten claim should be dropped, not inherited."
+ },
+ {
+  "id": "tokyo3__416",
+  "status": "not_found",
+  "lat": 35.664,
+  "lng": 139.731,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen shop called 豚骨屋 trades in Roppongi; the only 豚骨屋 in Japan is in Shiga",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 六本木, near Roppongi Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business itself could not be identified. The light record's 「スープベース対応」 hint that the broth could be accommodated is unsourced and should not be carried forward; tonkotsu ramen is wheat noodles in a wheat-soy or wheat-miso tare regardless.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified. A pork-bone broth is not vegan in any case.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The only restaurant in Japan actually named 豚骨屋 is 豚骨屋九州雄, eleven minutes from Minami-Kusatsu station in Shiga (Gnavi e6fz8fae0000) — 300 km away. The nearest thing in Roppongi that the engines return under this query is 濃厚豚骨 くまめん at 港区六本木3-4-31 六本木レジデンシーズ1F (Tabelog 13274772, tel 03-3585-1616), a real tonkotsu-and-horsemeat shop but a completely different name; and Tabelog's own fuzzy match for 「豚骨屋 六本木」 was 听屋 六本木 (POUND-YA) at 港区六本木4-5-8 KAZビル1F, which is a steak and wine bar. Nothing supports the record as written.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Five legs run, all answered. (1) Tabelog nationwide keyword search 「豚骨屋 六本木」 (HTTP 200) — a single fuzzy row, 听屋 六本木, a Roppongi steak/wine bar. (2) Tabelog 「らーめん 豚骨屋」 (HTTP 200) — twenty rows of ...屋 ramen shops across Japan (稲荷屋, 和田屋, がら屋 …), none named 豚骨屋 and none in Minato-ku. (3) Gnavi free-word 「豚骨屋」 (HTTP 200) — total:1, 豚骨屋九州雄 in Kusatsu, Shiga. (4) Ecosia 「らーめん 豚骨屋 六本木」 (HTTP 200) and (5) Brave 「豚骨屋 六本木 ラーメン」 in quotes (HTTP 200) — both returned only Roppongi ramen round-ups (susurulab, takumen, favy, Retty, Tabelog matome); the one concrete Roppongi tonkotsu shop in them was 濃厚豚骨 くまめん, a different business.",
+   "confidence": "low",
+   "sources": [
+    "https://r.gnavi.co.jp/e6fz8fae0000/",
+    "https://tabelog.com/tokyo/A1307/A130701/13274772/",
+    "https://tabelog.com/tokyo/A1307/A130701/13181511/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend this record be deleted or re-sourced before it is shown to anyone; its 「スープベース対応」 gluten hint is unsourced and should not be inherited."
+  },
+  "sources": [
+   "https://r.gnavi.co.jp/e6fz8fae0000/",
+   "https://tabelog.com/tokyo/A1307/A130701/13274772/",
+   "https://tabelog.com/tokyo/A1307/A130701/13181511/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「豚骨屋 六本木」 (HTTP 200) — one fuzzy row, the steak bar 听屋 六本木; Tabelog 「らーめん 豚骨屋」 (HTTP 200) — twenty ...屋 ramen shops nationwide, none named 豚骨屋, none in Minato-ku; Gnavi free-word 「豚骨屋」 (HTTP 200) — total:1, 豚骨屋九州雄 in Kusatsu, Shiga; Ecosia 「らーめん 豚骨屋 六本木」 and Brave 「豚骨屋 六本木 ラーメン」 (HTTP 200 both) — Roppongi ramen listicles only, whose one concrete tonkotsu shop is the differently-named 濃厚豚骨 くまめん (港区六本木3-4-31). Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__420",
+  "status": "not_found",
+  "lat": 35.672,
+  "lng": 139.736,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tempura restaurant called 大武 exists in Akasaka or anywhere in Tokyo",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says 赤坂, near Akasaka Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed — the business itself could not be identified. A tempura counter is wheat batter in shared oil in any case.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified. The light record's 「季節野菜」 note does not make a tempura counter vegan: the tentsuyu is bonito dashi and wheat soy sauce.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The businesses named 大武 in Japan are a restaurant in Shizuoka, 蕎麦処 大武 in Tochigi, 大武飯店 in Kanagawa, うなぎの大武 in Ibaraki and 大武丸 in Izu-Nagaoka — no tempura house among them and none in Tokyo. The Akasaka and Akasaka-mitsuke tempura counters that do exist are 天婦羅 ほり川 (Hotel New Otani), 赤坂 花むら, 天ぷら かねき, 天安 and, over towards Roppongi, てんぷら山の上 — all differently named.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Five legs run, all answered. (1) Tabelog nationwide keyword search 「天ぷら 大武」 (HTTP 200) — nine rows, all 天ぷら大吉 branches plus 天ぷら 大樹, 天ぷら 大塚 and 天ぷら 大万; no 大武. (2) Tabelog 「大武」 alone (HTTP 200) — the Shizuoka, Tochigi, Kanagawa, Ibaraki and Izu businesses listed above; none in Tokyo, none tempura. (3) Gnavi free-word 「天ぷら 大武」 (HTTP 200) — total:0. (4) Gnavi 「天ぷら 赤坂」 (HTTP 200) — total:58, the full Akasaka roster, with no 大武 in it. (5) Ecosia 「天ぷら 大武 赤坂」 and Brave 「天ぷら 大武 赤坂 東京」 (HTTP 200 both) — nothing of the name; Brave's tempura hits were 赤坂 花むら and 天ぷら かねき. A Yahoo Japan leg was attempted and returned HTTP 429 (engine declining), so it is not counted either way.",
+   "confidence": "low",
+   "sources": [
+    "https://r.gnavi.co.jp/n9ef2n610000/",
+    "https://r.gnavi.co.jp/pc34b59s0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend this record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://r.gnavi.co.jp/n9ef2n610000/",
+   "https://r.gnavi.co.jp/pc34b59s0000/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「天ぷら 大武」 (HTTP 200) — nine rows, all 天ぷら大吉 branches and 大樹/大塚/大万, no 大武; Tabelog 「大武」 (HTTP 200) — businesses of that name in Shizuoka, Tochigi, Kanagawa, Ibaraki and Izu, none in Tokyo and none tempura; Gnavi 「天ぷら 大武」 (HTTP 200) — total:0; Gnavi 「天ぷら 赤坂」 (HTTP 200) — total:58, the whole Akasaka tempura roster with no 大武 in it; Ecosia and Brave searches for 天ぷら 大武 赤坂 (HTTP 200 both) — nothing of the name. A Yahoo Japan leg returned HTTP 429 (declined, not a negative). Coordinates unchanged, loc_precise:false."
  }
 ]

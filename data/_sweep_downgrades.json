@@ -1,5 +1,23 @@
 [
  {
+  "city": "kyoto",
+  "id": "mp_coffee_cattleya_coffee_k",
+  "name": "COFFEE Cattleya （コーヒーカトレヤ）【旧店名】祇園喫茶 カトレヤ (COFFEE Cattleya (Coffee Katoreya / Gion )",
+  "field": "gf_confidence",
+  "from": "ask",
+  "to": "no",
+  "why": "The record's own gf_detail already says \"Not celiac-safe ... A celiac should avoid food items here\", and the cited page shows the entire food menu is toast and cake with no allergen handling — an \"ask\" badge above that text invites a celiac to go and ask a shop that (a) has nothing for them and (b) is not currently open. Same label-contradicts-its-own-detail shape the brief flags. Lower confidence than the trading finding: if \"ask\" is this app's floor for kissaten, ignore."
+ },
+ {
+  "city": "kyoto",
+  "id": "mp_grill_fukuya_coffee_gril",
+  "name": "グリル富久屋 (Grill Fukuya)",
+  "field": "gf_confidence",
+  "from": "ask",
+  "to": "no",
+  "why": "The record's own gf_detail reads \"Not celiac-safe ... Assume not suitable for strict gluten avoidance\", and the 65-item menu is cutlets, croquettes, fried prawn, sandwiches, hayashi, curry, spaghetti and omelette rice with no allergen data and no GF item. That is the same profile the app already scores \"no\" for 辛麺屋 鯱輪 in this shard. Consistency call, not a safety change."
+ },
+ {
   "city": "tokyo",
   "id": "tokyo3__252",
   "name": "グルテンフリーワッフル チャッフルズ 浅草",
