@@ -1,4 +1,4 @@
-// Undo GF/vegan promotions that contradict the record's own researched text.
+// Hold down any diet label that contradicts the record's own researched text.
 //
 // build-menu-reconcile.mjs promotes a record from "no"/"ask" to "options" whenever
 // its documented menu contains a gluten-free-looking item, and APPENDS its reasoning
@@ -25,8 +25,8 @@ import { CITIES, readCity, writeCity } from './lib-city.mjs';
 const APPLY = process.argv.includes('--apply');
 const DATE = '2026-08-20';
 const PROMOTED = /\(Menu review:/;
-const GF_NEGATIVE = /not suitable for celiac|no gluten-free|not gluten[- ]free|unsuitable for celiac|避けるべき|celiacs? should avoid/i;
-const VG_NEGATIVE = /no vegan option|not vegan|no plant-based option|ヴィーガン不可/i;
+const GF_NEGATIVE = /not suitable for celiac|not celiac[- ]safe|no gluten-free option|not gluten[- ]free|unsuitable for celiac|celiacs? should avoid/i;
+const VG_NEGATIVE = /no vegan option|not suitable for vegans|not vegan[- ]friendly|no plant-based option/i;
 const GF_LABEL = { no: 'Not gluten-free', ask: 'GF — ask' };
 const VG_LABEL = { no: 'Not vegan', ask: 'Vegan — ask', limited: 'Limited vegan' };
 
@@ -45,8 +45,8 @@ for (const city of CITIES) {
     const before = { gf: r.gf_confidence, vegan: r.vegan_status };
     if (APPLY) {
       r.menu_promotion_reverted = { date: DATE, from: before,
-        note: 'Promoted by build-menu-reconcile.mjs on a count of menu items, while this ' +
-              "record's own researched text says the opposite. The text wins." };
+        note: "This record's label said one thing and its own detail text said the opposite. " +
+              'The text wins: it is the part somebody researched.' };
       if (gfBad) { r.gf_confidence = 'ask'; r.gf_label = GF_LABEL.ask; }
       if (vgBad) { r.vegan_status = 'ask'; r.vegan_label = VG_LABEL.ask; }
       dirty = true;
