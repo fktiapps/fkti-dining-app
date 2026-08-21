@@ -58,7 +58,7 @@ const STEPS = [
   ['sync-diet-labels.mjs',            'make stored diet labels agree with their tier', ['--apply']],
   ['flag-self-admitted-doubt.mjs',    'hide records whose own text says they were never verified', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
-  ['gen-underrated-queue.mjs',        'collect upgrade recommendations for the human gate'],
+  ['gen-underrated-queue.mjs',        'apply sweep downgrades; queue upgrades for the gate', ['--apply']],
   ['gen-signoff-worklist.mjs',        'regenerate GF_REVIEW_SIGNOFF.md from the data'],
   // Last, because it hashes the shipped files and must see their final state. The
   // service worker keys every cache off VERSION, so without this a returning user

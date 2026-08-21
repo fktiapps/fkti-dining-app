@@ -218,6 +218,103 @@ RECS.append({
  "enrich_note": "UNRESOLVED. No ramen shop called マロ屋 could be found anywhere in Japan. Tabelog nationwide (「マロ屋」 → マロヤ/まろや/麻呂舎/まろやか only; 「らーめんマロ」 → らーめん まる and らーめん2国 only), Yahoo Japan on the quoted string 「\"マロ屋\" ラーメン」 (no restaurant in the results), and Tabelog's own 池尻大橋駅 and 神泉駅 ramen station listings (60 shops between them) all ran to completion and all came back negative. Nearest candidate: 麺処まろ, 渋谷区道玄坂2-20-26 エクシール道玄坂, 35.659269/139.696815, 365 m from Shinsen — roughly 340 m from the pin this record carries — but it serves 貝出汁 shio/shōyu, not the 豚骨 the light record claims, and its name is まろ, not マロ屋, so it is NOT being asserted as the same business. Ramen Database and HAMONI both 403'd on their 麺処まろ pages, so that corroboration leg is a refusal rather than a negative. Coordinates unchanged, loc_precise:false. Needs a human call: delete, or re-source as 麺処まろ."
 })
 
+RECS.append({
+ "id": "tokyo3__436",
+ "name": None,
+ "status": "not_found",
+ "lat": 35.6595, "lng": 139.7005, "loc_precise": False,
+ "address_ja": None,
+ "enrich_confidence": "low",
+ "cuisine": "COULD NOT VERIFY — no tsukemen shop called 新太 exists in Tokyo",
+ "cuisine_type": "ramen",
+ "neighborhood": "Unverified. The light record says Ikejiri, Shibuya-ku / Ikejiri-Ōhashi Station (Tōkyū Den-en-toshi line); note that the coordinates it carries actually sit near Shinsen, about 1.6 km away.",
+ "website": None, "menu_url": None,
+ "hours_raw": "", "hours_status": "irregular",
+ "gf_confidence": "no",
+ "gf_detail": "Not assessed — the business could not be found. Tsukemen is thick wheat noodle in a concentrated wheat-soy dipping broth; it is one of the least celiac-safe things on a Tokyo street.",
+ "vegan_status": "no",
+ "vegan_detail": "Not assessed. Tsukemen tsuke-dare is normally pork-and-fish (豚骨魚介) stock.",
+ "chef_bio": {
+  "chef_name": None, "roles": [], "origin": "",
+  "background": "Could not be established. Three legs ran and returned HTTP 200. (1) Tabelog nationwide keyword search for 「つけめん 新太」 returned つけめん金龍, つけ麺 井手, つけめん 蕾 本家, つけめん 玉, つけめん 章, つけめん 蔵木, つけめん 眞司 and similar — no 新太; a second search for the bare 「新太」 returned 四季彩の串揚げ 新太 (Kyoto), 新太呂 (Osaka), 飯田橋 新太郎, 刺身屋新太郎 (Nishi-Nippori), 小玉新太郎 (Shibuya-area) and 寿司割烹・新太郎 (Saga) — none of them a tsukemen shop and none in Ikejiri. (2) Yahoo Japan for 「つけめん 新太 東京」 returned results but its own metadata shows it dropped 東京 as a missing term and re-read 新太 as あら田/あらた, surfacing つけめん屋 あら田 (Machiya) and 麺や あらた (Tanashi); no 新太. (3) Gnavi free-word search for 「つけめん 新太」 returned zero shops, and the control query used earlier in this shard (「はなの舞 池袋」) does return a shop, so the Gnavi zero is a real negative. No 429, no 403, no timeout on any leg.",
+  "philosophy": "", "specialty": "", "anecdotes": [],
+  "japanese_sources_summary": "Tabelog nationwide (two query forms), Yahoo Japan and Gnavi all returned live pages; none contains a tsukemen shop called 新太.",
+  "confidence": "low", "sources": []
+ },
+ "safety": {"gf_cross_contamination": [], "soy_sauce_wheat": [], "vegan_cross_contact": [], "staff_allergy_handling": [], "positives": []},
+ "cultural_comfort": {"level": "Unknown", "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."},
+ "sources": [],
+ "enrich_note": "NOT FOUND. All three legs ran and returned HTTP 200. Tabelog nationwide: 「つけめん 新太」 → other つけめん shops (金龍, 蕾 本家, 玉, 章, 蔵木, 眞司), no 新太; 「新太」 → 四季彩の串揚げ 新太 (Kyoto), 新太呂 (Osaka), several 新太郎 (Tokyo/Saga), none a tsukemen shop and none in Ikejiri. Yahoo Japan → dropped 東京 as a missing term and re-read 新太 as あら田/あらた (つけめん屋 あら田 in Machiya, 麺や あらた in Tanashi). Gnavi free-word → zero shops, with a working control query proving the endpoint answers. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+})
+
+RECS.append({
+ "id": "tokyo3__440",
+ "name": "らーめん 香月 池尻大橋店",
+ "status": "closed_permanently",
+ "closed_since": "2026-04-30",
+ "lat": 35.6595, "lng": 139.7005, "loc_precise": False,
+ "address_ja": "〒153-0044 東京都目黒区大橋1-2-5 新村ビル 1F — the address of the shop that closed on 2026-04-30",
+ "enrich_confidence": "medium",
+ "cuisine": "The last Tokyo shop of らーめん香月 -KAZUKi-, the 背脂チャッチャ系 house founded in 1975 that made its name in Ebisu — clear chicken-and-pork broth under a scatter of back fat, 元祖 醤油 and a 背脂味噌, ¥1,000–1,999. It served its final bowl on 30 April 2026.",
+ "cuisine_type": "ramen",
+ "neighborhood": "Was at Ōhashi 1-chōme, Meguro-ku — 7 min on foot from Ikejiri-Ōhashi Station (Tōkyū Den-en-toshi line)",
+ "website": None,
+ "menu_url": None,
+ "hours_raw": "11:30～22:00 (L.O.)　定休日 不定休 — the hours it kept until 2026-04-30",
+ "hours_status": "irregular",
+ "gf_confidence": "no",
+ "gf_detail": "Wheat noodles in a wheat-soy kaeshi, with a miso variant whose miso is very unlikely to be a wheat-free one. There was never a gluten-free option. Moot in any case — the shop is closed.",
+ "vegan_status": "no",
+ "vegan_detail": "Chicken and pork bone broth finished with pork back fat. Not remotely vegan. Moot — the shop is closed.",
+ "chef_bio": {
+  "chef_name": "阿南克己 (Anami Katsuki), founder of らーめん香月",
+  "roles": ["創業者 / founder"],
+  "origin": "Started as a taxi driver, then a yatai stall in Aoyama in 1975",
+  "background": "らーめん香月 -KAZUKi- was founded in 1975 by 阿南克己, a former taxi driver who set up a food cart in Aoyama serving 背脂チャッチャ系 ramen — the style where back fat is chopped and scattered over the bowl at the pass. The house grew through the 1980s–2000s and became a name in Ebisu; it wound up in 2013 when the founder turned 76, then reopened in 2016 after customers pushed for it, with the Ikejiri-Ōhashi shop dating from that revival. Its broth is the lighter reading of the style — a clear chicken-and-pork stock under the fat rather than the heavy modern chatta bowls. The Yoyogi-Kōen branch closed on 11 August 2025; the Ikejiri-Ōhashi shop, described in the closing notice as the last one standing, closed on 30 April 2026, leaving only the Miyakojima branch in Okinawa. The shop's own notice reads 「1975年創業、東京/恵比寿で名を馳せた背脂チャッチャ系ラーメン【らーめん香月(かづき)池尻大橋店】は2026年4月30日を以て幕を閉じさせていただきます」.",
+  "philosophy": "",
+  "specialty": "元祖 醤油らーめん; 背脂味噌ラーメン.",
+  "anecdotes": [],
+  "japanese_sources_summary": "Tabelog 13198869 gives the address 東京都目黒区大橋1-2-5 新村ビル 1F, coordinates 35.651267/139.689409, the ¥1,000–1,999 band, 11:30–22:00 hours, 7 min from Ikejiri-Ōhashi, a 3.36 rating over 201 reviews, and now carries the shop as 【閉店】 with 「このお店は現在閉店しております。」. The shop's own closing notice, quoted in dated posts from 2026-04-28 and 2026-05-02 and in an August 2026 page, gives the closing date as 2026年4月30日(木) and describes it as the chain's last remaining store. Japanese Wikipedia's らーめん香月-KAZUKi- article gives the 1975 founding by 阿南克己, the 2013 wind-up, the 2016 revival, the Ikejiri-Ōhashi / Miyakojima / Yoyogi-Kōen store list and the 2025-08-11 Yoyogi-Kōen closure.",
+  "confidence": "medium",
+  "sources": ["https://tabelog.com/tokyo/A1317/A131705/13198869/", "https://ja.wikipedia.org/wiki/%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E9%A6%99%E6%9C%88-KAZUKi-"]
+ },
+ "safety": {"gf_cross_contamination": [], "soy_sauce_wheat": [], "vegan_cross_contact": [], "staff_allergy_handling": [], "positives": []},
+ "cultural_comfort": {"level": "N/A — closed", "note": "The shop closed on 30 April 2026 and the chain no longer has a Tokyo branch; the only surviving 香月 is in Miyakojima, Okinawa. Do not send anyone to Ōhashi for it."},
+ "sources": ["https://tabelog.com/tokyo/A1317/A131705/13198869/", "https://ja.wikipedia.org/wiki/%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E9%A6%99%E6%9C%88-KAZUKi-"],
+ "enrich_note": "NAME CORRECTION. The light record read 「ラーメン 清月」, 味噌ラーメン, Ikejiri-Ōhashi. No ramen shop called 清月 exists anywhere near there — Tabelog's nationwide search for 「清月」 turns up exactly one Tokyo entry, a 食堂 at 台東区入谷2-23-14 some 8 km away, and Tabelog's own 池尻大橋駅 ramen station listing (20 shops) contains no 清月; Gnavi free-word for 「ラーメン 清月」 returns zero. What DOES match on all three of station, genre and the 月 character is 「らーめん 香月 池尻大橋店」 at 目黒区大橋1-2-5 新村ビル 1F (Tabelog 13198869), a 背脂 shop whose reviews are headed 【癖になる旨辛醤油・味噌ラーメン】 and 『背脂味噌ラーメン』. I am reading 清月 as a garbling of 香月 — that identification is inferential, not documentary, hence enrich_confidence:medium; if the merge wants certainty, downgrade this to unresolved. Either way the record must not ship: 香月 池尻大橋店 CLOSED PERMANENTLY on 2026年4月30日(木), per its own notice (「2026年4月30日を以て幕を閉じさせていただきます」, quoted in dated posts of 2026-04-28 and 2026-05-02) and per Tabelog, which now shows the page as 【閉店】. It was the chain's last Tokyo store; only the Miyakojima branch survives. Coordinates left unchanged and loc_precise:false, since the light record's pin is 1.6 km from the shop's real position (35.651267 / 139.689409)."
+})
+
+RECS.append({
+ "id": "tokyo3__442",
+ "name": "寿司若林",
+ "status": "mislocated",
+ "lat": 35.6595, "lng": 139.7005, "loc_precise": False,
+ "address_ja": "〒680-0905 鳥取県鳥取市賀露町1757 鳥取港海鮮市場かろいち — Tottori, NOT Tokyo. This is the only 寿司若林 in Japan.",
+ "enrich_confidence": "low",
+ "cuisine": "A working sushi counter inside the かろいち fish market at Tottori port, doing lunch off the morning boats — but it is in Tottori Prefecture, roughly 570 km from the Shibuya pin this record carries",
+ "cuisine_type": "sushi",
+ "neighborhood": "COULD NOT VERIFY any Tokyo location. The business by this name is at Karo-chō 1757 inside 鳥取港海鮮市場かろいち, Tottori City, about 1.9 km from Tottori-Daigaku-mae Station. Tabelog files it under tottori/A3101/A310101.",
+ "website": None, "menu_url": None,
+ "hours_raw": "［月～金］11:00～14:00　［土・日］11:00～15:00　定休日 月2回火曜日 — these are the Tottori shop's hours.",
+ "hours_status": "irregular",
+ "gf_confidence": "ask",
+ "gf_detail": "No gluten-free claim. Not assessed further, because the record's location is wrong — read the note before using anything here. Generally: sushi nikiri and dipping soy are wheat soy sauce unless the counter names a gluten-free tamari.",
+ "vegan_status": "no",
+ "vegan_detail": "A market sushi counter. Not assessed further; the record is mislocated.",
+ "chef_bio": {
+  "chef_name": None, "roles": [], "origin": "Karo, Tottori City, Tottori Prefecture",
+  "background": "Not researched, because the record is mislocated. What is established: a Yahoo Japan search on the quoted alternatives 「\"すし若林\" OR \"寿司若林\" OR \"鮨若林\"」 returns a single business, and every hit for it — Tabelog, Tripadvisor, Jalan, Retty, Hot Pepper, Yelp — places it in 鳥取市賀露町 inside the かろいち market. Its Tabelog page (31000278) gives 鳥取県鳥取市賀露町1757 鳥取港海鮮市場かろいち, coordinates 35.534829 / 134.179762, 11:00–14:00 weekdays and 11:00–15:00 weekends, closed two Tuesdays a month, rated 3.08 from 13 reviews, and shows no closure banner. Nothing places a 寿司若林 anywhere in Tokyo.",
+  "philosophy": "", "specialty": "", "anecdotes": [],
+  "japanese_sources_summary": "Tabelog detail page 31000278 plus a quoted multi-variant Yahoo Japan search; both agree the only 寿司若林 in Japan is the Tottori market counter.",
+  "confidence": "low",
+  "sources": ["https://tabelog.com/tottori/A3101/A310101/31000278/"]
+ },
+ "safety": {"gf_cross_contamination": [], "soy_sauce_wheat": [], "vegan_cross_contact": [], "staff_allergy_handling": [], "positives": []},
+ "cultural_comfort": {"level": "N/A — record is mislocated", "note": "Do not send anyone in Tokyo here. The only 寿司若林 that exists is a lunch counter inside the かろいち seafood market at Tottori port, roughly 570 km west. The Tokyo pin has been left at its original approximate coordinates with loc_precise:false; the record should be deleted from the Tokyo dataset."},
+ "sources": ["https://tabelog.com/tottori/A3101/A310101/31000278/"],
+ "enrich_note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. The light record reads 「寿司 若林」 pinned in Shibuya-ku near Ikejiri-Ōhashi. Tabelog's nationwide keyword searches for 「寿司 若林」 and 「鮨 若林」 return only 寿司若竹 / 若竹丸 / すし若 names, none of them this; Yahoo Japan for the quoted variants 「\"すし若林\" OR \"寿司若林\" OR \"鮨若林\"」 returns exactly one business, and every listing of it (Tabelog, Tripadvisor, Jalan, Retty, Hot Pepper) puts it at 鳥取県鳥取市賀露町1757 inside the 鳥取港海鮮市場かろいち, coordinates 35.534829/134.179762 — Tottori, not Tokyo. A Yahoo search for 「寿司 若林 池尻大橋 握り」 dropped 若林 from its own results as a missing term and returned only generic Ikejiri-Ōhashi sushi round-ups; Gnavi free-word for 「寿司 若林 東京」 returned zero shops. Coordinates left unchanged and loc_precise:false."
+})
+
 
 def main():
     out = sys.argv[1]

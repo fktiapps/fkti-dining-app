@@ -508,5 +508,260 @@
    "https://x.com/jikaseimen_ult"
   ],
   "enrich_note": "CONFIRMED. Tabelog 13289213 and the Kodansha-run Tokyo Ramen of the Year database agree on 東京都台東区寿2-9-16 (ワールドマンション田原町101); coordinates replaced with the Tabelog geo (35.709481, 139.790346). The light record's neighbourhood 台東区田原町 was right in spirit — the shop is 65 m from Tawaramachi Station — but the address block is 寿2-chōme. Owner name 神久保佑輔 and the 春木屋 / 地雷原 / 凪 training history come from the TRY Ramen Awards shop profile, a published editorial source, not from the shop. Hours flagged irregular: Tabelog gives 11:00–15:00 / 18:00–23:00 while the TRY profile records 11:30–14:30 L.O. / 18:00–20:30 L.O. with no closing day. No website exists — website and menu_url left null rather than pointed at a third-party page. One caution recorded in gf_detail: the shop name うるち reads as non-glutinous rice, but no source claims rice flour in the noodles and every description of them is of a wheat noodle; the name must not be read as a gluten-free signal."
+ },
+ {
+  "id": "tokyo3__251",
+  "name": "四川担担麺 阿吽 浅草",
+  "status": "confirmed",
+  "lat": 35.710481,
+  "lng": 139.791416,
+  "loc_precise": true,
+  "address_ja": "〒111-0035 東京都台東区西浅草1-1-13 カーサ田原町 1F",
+  "enrich_confidence": "high",
+  "cuisine": "Eight counter seats a minute from Tawaramachi serving Sichuan tantanmen built on a nine-herb house rāyu and daily-ground huajiao, with heat and numbness ordered separately on a 0-to-6 scale — white or black sesame, soup or soupless, ¥1,200; the Level-0 bowl exists for people who cannot take chilli at all; ¥1,000–2,000",
+  "cuisine_type": "chinese",
+  "neighborhood": "Nishi-Asakusa 1-chōme — 88 m, one minute, from Tawaramachi Station exit 3 (Tokyo Metro Ginza line); 5 min from Asakusa Station exit A2 on the Tsukuba Express",
+  "website": "https://szechuan-aun.com/",
+  "menu_url": "https://szechuan-aun.com/",
+  "hours_raw": "［平日］昼 11:00～15:00、夜 17:30～21:00　［土日祝日］11:00～21:00　定休日：無休　※材料なくなり次第、閉店する場合がございます",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat noodles are the dish, so this is a no regardless of anything else — but the ingredient detail is worth recording because it is unusually well documented and one part of it is genuinely interesting. The shop makes its own 甜面醤 from 八丁味噌, and Hatchō miso is a pure soybean miso with no barley or wheat in it — a rarity. That does not rescue the bowl. The 豆板醤 is built on 四川豆板醤 and 郫県豆板醤; Pixian broad-bean paste conventionally contains wheat flour, and the shop does not say otherwise. The noodles are wheat. The Level-0 option removes the rāyu and huajiao but the shop explicitly warns that the minced pork still carries doubanjiang, so even the mildest bowl keeps the wheat-suspect paste. There is no allergen sheet and no gluten-free item.",
+  "vegan_status": "no",
+  "vegan_detail": "Pork mince (そぼろ) is in every bowl including the Level-0 one, the pāikō topping is fried pork cutlet, and there is a mābō-dōfu rice bowl that is standard minced-pork mapo. The extra-vegetable topping (mizuna, kaiware, ¥100) and the coriander are add-ons to a meat bowl, not a vegan route. No plant-based broth is offered.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "owner-operated two-shop Sichuan tantanmen house (湯島本店 opened first; 浅草 is the second shop, plus a Kitte Granché outlet)"
+   ],
+   "origin": "Yushima 3-chōme, Bunkyō-ku for the head shop; this record is the Nishi-Asakusa branch beside Tawaramachi Station",
+   "background": "No chef name is published on the shop's site, its Tabelog pages or its social accounts, so none is asserted here. What the shop publishes instead is an unusually explicit statement of intent. 阿吽 — a-un — is the Sanskrit pair: 阿 the first sound made with the mouth open, 吽 the last made with it closed, together the beginning and end of all things. The shop maps them onto itself: 阿 is 本物, the real thing — 「安心、安全な食材」, safe and trustworthy ingredients, and a taste no one else can copy, pursued daily; 吽 is the wisdom and experience that turns into hospitality. It states plainly that its tantanmen is not a trend or an invention but something built on 食養生, food-as-health thinking. The technique is documented ingredient by ingredient. The rāyu is made in-house by slowly drawing flavour out of nine medicinal herbs and spices. The huajiao is used only from the outermost layer of the peppercorn, where the aroma is strongest, and is ground fresh every day so it does not fade. The tenmenjan is made in-house from Hatchō miso; the doubanjiang is made in-house from Sichuan and Pixian broad-bean pastes. The rice is contract-farmed terraced Koshihikari from Ukyō-ku in Kyoto, grown at 500 m on 800 stacked paddies with snowmelt water. The room plays jazz. Heat and numbness are ordered independently from 0 to 6 — Level 3 is the house standard, Level 2 is recommended for first-timers, Level 6 costs ¥100 extra and is served only to people who have already had Level 5, and is described as roughly ten times its heat. The Asakusa branch is eight counter seats and opens every day; the Yushima head shop is 17 seats and closes Tuesdays.",
+   "philosophy": "阿吽 — begin with real ingredients and end with real hospitality. Tantanmen as 食養生 rather than as a trend, with every paste, oil and grain made or sourced deliberately.",
+   "specialty": "白胡麻担担麺 and 黒胡麻担担麺 ¥1,200; the soupless (つゆ無し) versions of both at the same price; 担担つけ麺 ¥1,250; a half-size children's bowl ¥550; 麻婆豆腐丼 and 阿吽タコライス ¥400 each; toppings include pāikō ¥400, onsen egg ¥120 and coriander ¥150.",
+   "anecdotes": [
+    "Heat (rāyu) and numbness (huajiao) are ordered as two separate 0–6 dials and can be mixed freely — rāyu 3 with huajiao 1, for instance.",
+    "Level 6 is sold only to customers who have already eaten Level 5, and the shop rates it at about ten times Level 5's heat.",
+    "The rice is terraced-paddy Koshihikari from a contract farm in Ukyō-ku, Kyoto, grown at 500 m on snowmelt water — an odd thing for a noodle shop to care about."
+   ],
+   "japanese_sources_summary": "szechuan-aun.com sets out the 阿吽 naming philosophy, the 食養生 framing, the nine-herb house rāyu, the daily-ground outer-layer huajiao, the Hatchō-miso tenmenjan, the house doubanjiang from 四川豆板醤 and 郫県豆板醤, the Kyoto terraced-paddy Koshihikari, the full 0–6 heat and numbness scale with the Level-0 caveat that 「挽肉に豆板醤を使用しています」, and the complete price list. It gives the Asakusa branch as 東京都台東区西浅草1-1-13 カーサ田原町1F, 03-5828-5525, 平日 11:00–15:00 and 17:30–21:00, 土日祝 11:00–21:00, 定休日無休, 8 counter seats, all non-smoking. Tabelog 13178031 corroborates the address and phone, gives 88 m from Tawaramachi exit 3, 8 counter seats, no reservations, cash only, a ¥1,000–1,999 spend, and a 3.55 rating over 530 reviews, and notes the shop may close early when ingredients run out. Tabelog also lists sibling shops at 湯島本店 (13042564) and キッテグランシェ (13231656). No source mentions allergens or gluten.",
+   "confidence": "medium",
+   "sources": [
+    "https://szechuan-aun.com/",
+    "https://tabelog.com/tokyo/A1311/A131102/13178031/",
+    "https://tabelog.com/tokyo/A1311/A131101/13042564/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "One wheat-noodle pot in an eight-seat room, all service. No allergen policy is published.",
+     "source": "https://szechuan-aun.com/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The house doubanjiang is built on Sichuan and Pixian broad-bean pastes; Pixian doubanjiang conventionally contains wheat flour and the shop does not state otherwise. It is present even in the Level-0 bowl, in the pork mince. Against that, the house tenmenjan is made from Hatchō miso, which is a soybean-only miso — the one wheat-free element in the seasoning.",
+     "source": "https://szechuan-aun.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork mince is in every bowl including Level 0; pāikō is fried pork; the mabo-dofu rice bowl is minced-pork mapo. Vegetable and coriander toppings are additions to a meat bowl.",
+     "source": "https://szechuan-aun.com/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "The 0-to-6 heat and numbness scale is published with a written description of each level, including a genuine Level 0 with no chilli oil and no Sichuan pepper — very unusual, and useful for anyone with a low chilli tolerance or a sensitive gut.",
+     "source": "https://szechuan-aun.com/"
+    },
+    {
+     "text": "The shop publishes what its rāyu, tenmenjan, doubanjiang, huajiao and rice are actually made from — far more ingredient transparency than a typical noodle shop, which makes a dietary conversation possible even without an allergen sheet.",
+     "source": "https://szechuan-aun.com/"
+    },
+    {
+     "text": "All non-smoking, children's half-portion on the menu, high chairs at the Yushima head shop.",
+     "source": "https://szechuan-aun.com/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "Eight counter seats one minute from Tawaramachi Station, open every day of the year including weekends and holidays, all non-smoking, with a full price list published online in advance. Cash only, and no reservations — you queue. Because it is so small it can also close early if it runs out (材料なくなり次第閉店), so it is not a place to arrive at 20:45. The ordering has one genuinely traveller-friendly feature: you choose heat and numbness separately on a written 0–6 scale, so 'no chilli at all' is a normal order here rather than an awkward request. There is no English menu evidenced, but the numbers do most of the work. Not a stop for anyone avoiding gluten."
+  },
+  "sources": [
+   "https://szechuan-aun.com/",
+   "https://tabelog.com/tokyo/A1311/A131102/13178031/",
+   "https://tabelog.com/tokyo/A1311/A131101/13042564/",
+   "https://www.instagram.com/shisen_tantanmen_aun/"
+  ],
+  "enrich_note": "CONFIRMED. The shop's own site and Tabelog 13178031 agree on 東京都台東区西浅草1-1-13 カーサ田原町1F and 03-5828-5525; coordinates replaced with the Tabelog geo (35.710481, 139.791416). This is the Asakusa branch of a small owner-run group — the head shop is 四川担担麺 阿吽 湯島本店 in Bunkyō-ku (Tabelog 13042564) and there is a third outlet in Kitte Granché. Categorisation note for the merge: two or three shops is arguably still independent, but it is not a single-location mom-and-pop. No chef name is published anywhere, so chef_bio.chef_name is left null. Hours flagged irregular only because the shop closes early when ingredients run out; the published schedule itself is fixed and it never takes a day off."
+ },
+ {
+  "id": "tokyo3_pan_nini",
+  "name": "PANNINI 浅草",
+  "status": "confirmed",
+  "lat": 35.708977,
+  "lng": 139.794043,
+  "loc_precise": true,
+  "address_ja": "〒111-0042 東京都台東区寿4-13-11",
+  "enrich_confidence": "medium",
+  "cuisine": "The Asakusa outpost of PANNINI, the bakery arm of the Ginza Italian restaurant BERNINI — olive-oil-based Italian breads rather than butter ones, a porcini bread the group calls its own invention, house focaccia, truffle-egg sandwiches and bomboloni; opens at 7:00, 24 seats to eat in, cashless only, roughly ¥1,000–2,500",
+  "cuisine_type": "bakery",
+  "neighborhood": "Kotobuki 4-chōme, on the Kappabashi side between Tawaramachi and Kuramae — 331 m from Tawaramachi Station (Tokyo Metro Ginza line)",
+  "website": "https://berninigroup.jp/pannini/",
+  "menu_url": null,
+  "hours_raw": "07:00 - 19:00",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "A wheat bakery. The whole product line is Italian bread and dolce — focaccia, porcini bread, bolognese bread, sandwiches, bomboloni, panna cotta — baked on site, which means airborne flour throughout the room and shared boards, ovens and slicers. No gluten-free line, no allergen sheet and no wheat-free product is mentioned by the group, the Ginza shop's coverage, or the Asakusa listing. The one thing worth knowing is that the breads are built on olive oil rather than butter, which the group states plainly; that is a dairy point, not a gluten one.",
+  "vegan_status": "ask",
+  "vegan_detail": "Genuinely unresolved, so it is left at 'ask' rather than guessed either way. The group's own line is that the breads are olive-oil-based and deliberately light — 「オリーブオイルをベースにヘルシーで軽やかな食感のパンたち」 — and a plain olive-oil focaccia is frequently vegan by construction. But nothing is declared: the published items that can be checked are mostly not vegan (bolognese bread, bolognese cheese bread, caprese and chicken focaccia, truffle-egg sandwich, bomboloni, panna cotta), and no source states whether the plain breads contain milk, egg or honey. Ask at the counter about the plain focaccia and the porcini bread specifically.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "bakery brand of the BERNINI Restaurant Group; the breads and dolce are made by the chef of BERNINI GINZA",
+    "Asakusa branch, opened 3 December"
+   ],
+   "origin": "Ginza — PANNINI began as the bread-and-dolce spinoff of BERNINI GINZA, an Italian restaurant of around twenty years' standing; this record is its Asakusa shop in Kotobuki 4-chōme",
+   "background": "PANNINI is not a neighbourhood bakery that happens to be Italian; it is an Italian restaurant's bread programme let out of the kitchen. The BERNINI group describes it in one line — 「BERNINI GINZAのシェフが織りなすイタリア料理パンとドルチェ」, Italian-cuisine bread and dolce woven by the chef of BERNINI GINZA — and the defining technical choice is that the breads are built on olive oil rather than butter, aiming at a light rather than a rich crumb. The house items it names are a porcini bread it says has no equivalent anywhere, its own focaccia, and bomboloni, the Italian filled doughnut. The Ginza shop opens at 7:30 and sells out through the afternoon; published prices there run from about ¥248 for a bomboloni to ¥324 for the bolognese bread, ¥410 for the bolognese-cheese and for focaccia, and up to about ¥594 for the porcini sandwiches, with a ¥1,200–1,500 brunch set added in 2024. The Asakusa shop opened on 3 December, keeps a longer day (7:00 to 19:00) and, unusually for a bakery, has 24 seats to sit and eat in. It arrived with some momentum: the brand's Italian doughnuts had been sold inside the Italy pavilion at Expo 2025 Osaka-Kansai and were picked up by Japanese daytime television, and the Asakusa opening was covered on that basis. Treat that last strand as press context rather than as a claim about the shop's cooking.",
+   "philosophy": "Restaurant-kitchen Italian baking: olive oil instead of butter, a light crumb, and savoury breads treated as dishes.",
+   "specialty": "ポルチーニパン (porcini bread); house focaccia; トリュフたまごサンド (truffle-egg sandwich); ボロネーゼパン; ボンボローニ; panna cotta.",
+   "anecdotes": [
+    "The brand's Italian doughnuts were sold in the Italy pavilion at Expo 2025 Osaka-Kansai, which is how most Japanese coverage of the Asakusa opening frames it.",
+    "It opens at 07:00 — earlier than almost anything else in the Tawaramachi–Kuramae stretch — and has 24 seats, so it works as a sit-down breakfast rather than only a takeaway counter."
+   ],
+   "japanese_sources_summary": "berninigroup.jp/pannini/ states 「BERNINI GINZAのシェフが織りなすイタリア料理パンとドルチェ。オリーブオイルをベースにヘルシーで軽やかな食感のパンたち。他に類を見ない当店オリジナルのポルチーニパンや自家製のフォカッチャ。イタリアの定番おやつのボンボローネなど各種ご用意しております。」 with an English translation alongside, and gives the Ginza phone 03-6228-4990. るるぶWeb article 21794 records that PANNINI is the bread-and-dolce spinoff of the roughly twenty-year-old Italian restaurant BERNINI, prices the ボロネーゼパン at ¥324, ボロネーゼチーズパン ¥410, focaccia ¥410–497, porcini sandwiches ¥399–594, ボンボローニ from ¥248 and パンナコッタ from ¥410, and notes the 7:30 opening and the ¥1,200–1,500 PANNINI BRANCH brunch from June 2024. Tabelog 13316955 gives the Asakusa shop as 東京都台東区寿4-13-11, 03-6802-7377, 07:00–19:00, 24 seats, all non-smoking, reservations accepted, 331 m from Tawaramachi, and states 「現金はご利用いただけません」 — cards, transport IC, iD, QUICPay and PayPay only. An Instagram announcement surfaced via Yahoo Japan reads 「パンニーニ浅草、12/3からオープンいたしました」. No source mentions allergens, gluten-free or vegan items.",
+   "confidence": "medium",
+   "sources": [
+    "https://berninigroup.jp/pannini/",
+    "https://rurubu.jp/andmore/article/21794",
+    "https://tabelog.com/tokyo/A1311/A131102/13316955/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "An on-site wheat bakery: flour in the air, shared ovens, boards and slicers, and open display of unwrapped bread. Nothing is protected from wheat here.",
+     "source": "https://berninigroup.jp/pannini/"
+    }
+   ],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [
+    {
+     "text": "Cheese, egg, cured meat and bolognese sauce are all in the published product line and handled on the same counter; no separate preparation is described.",
+     "source": "https://rurubu.jp/andmore/article/21794"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "The breads are built on olive oil rather than butter — the group states this itself — which is a real, if narrow, help for anyone avoiding dairy in the bread base.",
+     "source": "https://berninigroup.jp/pannini/"
+    },
+    {
+     "text": "24 seats, all non-smoking, open from 07:00, and fully cashless (cards, transport IC, iD, QUICPay, PayPay) — one of the easiest doors in the area for a visitor without yen.",
+     "source": "https://tabelog.com/tokyo/A1311/A131102/13316955/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "About as low-friction as Tokyo gets: a bakery counter where you point at what you want, 24 seats to sit down in, all non-smoking, open from 07:00 to 19:00, reservations accepted, and the group's own website carries English. One practical warning that catches people out in the opposite of the usual direction — this shop does not take cash at all (「現金はご利用いただけません」). Bring a card or a phone. As at the Ginza shop, popular items sell through during the day, so early is better. Useless for a celiac; very good for an early breakfast if you are not avoiding wheat."
+  },
+  "sources": [
+   "https://berninigroup.jp/pannini/",
+   "https://rurubu.jp/andmore/article/21794",
+   "https://tabelog.com/tokyo/A1311/A131102/13316955/",
+   "https://www.instagram.com/pannini.ginza/"
+  ],
+  "enrich_note": "CONFIRMED, with a spelling correction. The light record read 「Pan Nini 浅草」 and Tabelog files it the same way, but the brand writes itself PANNINI (パンニーニ) — one word — across its own site, its Instagram and every press mention; name updated to 「PANNINI 浅草」. Tabelog 13316955 gives 東京都台東区寿4-13-11 and 03-6802-7377; coordinates replaced with the Tabelog geo (35.708977, 139.794043). Confidence is medium rather than high because almost everything substantive — the olive-oil-based method, the product line, the prices — is published for the Ginza flagship and the group, not for the Asakusa shop itself, which has no page of its own; website therefore points at the group's PANNINI page and menu_url is left null. The opening date 3 December comes from an Instagram announcement surfaced through Yahoo Japan; the year is not stated in that snippet and has not been asserted here. Two coccory.jp fetches for the Asakusa shop returned HTTP 429 and were not retried further — a small amount of branch-specific detail is therefore missing rather than absent. Flag for the app: this shop is cashless-only."
+ },
+ {
+  "id": "tokyo3__254",
+  "name": "杜都旬菜 合羽橋 ほていや",
+  "status": "closed_permanently",
+  "closed_since": "end of August 2026 — the shop's Tabelog listing carries the operator's notice 「8月末で閉店」 and its HotPepper page has already been taken down (HTTP 404). Tabelog had not yet applied its 【閉店】 badge as of 21 August 2026, so the shop appears to be trading out its final days rather than already shut. The notice does not state the year; the year is inferred from the notice being live now. NEEDS A HUMAN CHECK after 31 August 2026.",
+  "lat": 35.711113,
+  "lng": 139.786839,
+  "loc_precise": true,
+  "address_ja": "〒111-0036 東京都台東区松が谷1-3-15 佐野ビル 1F",
+  "enrich_confidence": "high",
+  "cuisine": "An eighteen-seat Sendai izakaya behind Kappabashi — Miyagi produce sent up直送 and cooked simply: thick-cut Sendai gyūtan grilled with miso ¥2,500, the winter seri-nabe with the whole root left on in a duck-and-chicken broth ¥2,400, seven-kind sashimi ¥2,200, charcoal-grilled shima-hokke ¥1,100, with Miyagi sake (日高見, 乾坤一); ¥4,000–8,000 a head",
+  "cuisine_type": "izakaya",
+  "neighborhood": "Matsugaya 1-chōme, on the Kappabashi kitchenware street side — 363 m and about 3 min from Tawaramachi Station, 4 min from Inarichō Station (both Tokyo Metro Ginza line)",
+  "website": null,
+  "menu_url": "https://tabelog.com/tokyo/A1311/A131101/13246971/dtlmenu/",
+  "hours_raw": "火・水・木・金・土・日 17:30 - 22:30（L.O. 料理21:30／ドリンク22:00）　月 定休日　※8月末で閉店",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "No allergen information from any source, and the shop is closing, so this could not be pursued with the operator. On the evidence: the thick-cut gyūtan is described as grilled with miso, and a miso marinade is wheat- or barley-suspect unless the miso is a soybean-only type; the seri-nabe broth is a duck-and-chicken stock that in this style is finished with soy sauce; sashimi comes with wheat soy sauce by default. Against that, the kitchen's declared strengths are vegetables and fish (Tabelog files it under 野菜料理にこだわる and 魚料理にこだわる) and charcoal-grilled shima-hokke or plain-grilled fish is close to safe if ordered shio and undressed. Nothing published lets this go above 'ask', and the shop will not be there to ask.",
+  "vegan_status": "no",
+  "vegan_detail": "Beef tongue, seven-kind sashimi including tuna and abalone, grilled hokke, a duck-and-chicken nabe broth. The vegetables the shop is proud of are Miyagi seasonal produce cooked in that context — sansai in spring, seri in winter — not a plant-based menu, and the dashi is undisclosed. No vegan option.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "owner-chef, from Sendai (no name published by any source)"
+   ],
+   "origin": "Sendai, Miyagi — the owner's home city, which the shop is entirely built around; the premises are in Matsugaya 1-chōme, Taitō-ku, behind Kappabashi",
+   "background": "杜都 is 杜の都, the city of trees — Sendai's own nickname — and that is the whole proposition: 旬菜, seasonal produce, from Sendai, in Tokyo. The owner is from Sendai and the shop's line about itself is 「仙台から直送した旬の食材を楽しむことができる和食系のお店です」, a Japanese restaurant where you can eat seasonal ingredients shipped straight up from Sendai. In practice that meant a menu that changed hard with the calendar: mountain vegetables and sansai in spring, and from November to March the dish it was best known for, せり鍋 — Sendai's water-dropwort hot pot, made in the Miyagi way with the roots left on and eaten for their crunch, in a duck-and-chicken broth, ¥2,400. Alongside it ran the city's other export, thick-cut 仙台牛タン grilled with miso at ¥2,500, a seven-variety sashimi plate at ¥2,200, charcoal-grilled 縞ほっけ at ¥1,100 and a warm potato salad at ¥850, with a Miyagi sake list including 日高見 and 乾坤一. It was small and adult and quiet — a few counter seats and three tables, eighteen covers in total, run for regulars — and it was step-free, listed as wheelchair-accessible, which is rare for an izakaya of this size. It opened on 25 May 2020, into the first months of the pandemic, and it is closing at the end of August 2026, a little over six years later. No owner name appears on Tabelog, on the aggregators, or in the two Japanese blog write-ups found.",
+   "philosophy": "One prefecture's produce, sent up fresh and cooked plainly, with that prefecture's sake beside it.",
+   "specialty": "せり鍋 (November–March) ¥2,400; 厚切り仙台牛タン ¥2,500; 刺身七種盛り ¥2,200; 縞ほっけ炭火焼き ¥1,100; 温かいポテトサラダ ¥850.",
+   "anecdotes": [
+    "Opened 25 May 2020, in the first wave of the pandemic, and lasted just over six years.",
+    "The seri-nabe was served the Miyagi way — roots and all — which is the detail Sendai people check for and Tokyo shops usually skip."
+   ],
+   "japanese_sources_summary": "Tabelog 13246971 gives 東京都台東区松が谷1-3-15 佐野ビル1F, 火～日 17:30–22:30 (L.O. food 21:30, drink 22:00) with Monday closed, an オープン日 of 2020年5月25日, 18 seats (6 counter, 12 table), all non-smoking, 車椅子で入店可, cash only, a 5% service charge plus otōshi, a ¥4,000–4,999 posted budget against a ¥8,000–9,999 review-aggregated spend, 料理: 野菜料理にこだわる・魚料理にこだわる, 日本酒にこだわる, and — in the business-hours notes field — the operator's own line 「8月末で閉店」. A note.com write-up (kaga_gram, n6377f8522d7e) states the owner is from Sendai, quotes the shop's self-description 「仙台から直送した旬の食材を楽しむことができる和食系のお店です」, prices the せり鍋 ¥2,400 (Nov–Mar), 厚切り仙台牛タン ¥2,500, 刺身盛り ¥2,200, 縞ほっけ ¥1,100 and warm potato salad ¥850, names 日高見 and 乾坤一 among the Miyagi sake, and describes the room as 「落ち着いた大人なお店でカウンター席数席と、テーブルが3つ並んだこぢんまりとした店内」. HAMONI lists the shop's official link as a HotPepper page (strJ002647737) which now returns HTTP 404. No source publishes an owner's name and none mentions allergens.",
+   "confidence": "medium",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131101/13246971/",
+    "https://note.com/kaga_gram/n/n6377f8522d7e",
+    "https://hamoni.jp/shop/W23ZsjXMtVQys4Y8tIzn"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "No allergen policy published, and the shop is closing, so none can now be obtained. A shared charcoal grill and a single small kitchen.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13246971/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The signature gyūtan is miso-grilled (miso is wheat- or barley-fermented unless stated to be a soybean-only type) and the seri-nabe broth and sashimi service both use ordinary soy sauce. No gluten-free tamari is named.",
+     "source": "https://note.com/kaga_gram/n/n6377f8522d7e"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Duck-and-chicken nabe broth, beef tongue, sashimi and grilled fish; the seasonal vegetables are cooked within that menu, not apart from it.",
+     "source": "https://note.com/kaga_gram/n/n6377f8522d7e"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Listed as wheelchair-accessible (車椅子で入店可) and entirely non-smoking — unusual for an eighteen-seat izakaya.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13246971/"
+    },
+    {
+     "text": "Reservations were accepted for up to 18 people, so a dietary request could have been made in advance.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13246971/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Closing — do not send anyone",
+   "note": "This record should be hidden from the app. The operator has posted 「8月末で閉店」 on its own Tabelog listing and its HotPepper page is already gone, so a traveller sent here after the end of August 2026 will find a closed door. For the record of what it was: eighteen quiet seats behind Kappabashi, step-free and non-smoking, regulars-heavy, Japanese-language, cash only, with a 5% service charge and an otōshi on top of a ¥4,000–5,000 posted budget that reviewers actually spent ¥8,000–10,000 against. Closed Mondays, dinner only from 17:30. If anyone is in Asakusa before 31 August 2026 and wants Sendai food, it is worth one last visit; after that it is gone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13246971/",
+   "https://tabelog.com/tokyo/A1311/A131101/13246971/dtlmenu/",
+   "https://note.com/kaga_gram/n/n6377f8522d7e",
+   "https://hamoni.jp/shop/W23ZsjXMtVQys4Y8tIzn",
+   "https://www.hotpepper.jp/strJ002647737/"
+  ],
+  "enrich_note": "CLOSING PERMANENTLY — recommend hiding this record from the app. Located and fully verified: Tabelog 13246971 gives 東京都台東区松が谷1-3-15 佐野ビル1F, opened 25 May 2020, and coordinates were replaced with the Tabelog geo (35.711113, 139.786839), about 400 m west of the neighbourhood-centroid guess. The closure evidence is the operator's own notice in the Tabelog business-hours field, 「8月末で閉店」, plus the HotPepper listing that HAMONI records as the shop's official page now returning HTTP 404. Two caveats a human should resolve: (1) the notice does not name a year — I read it as 31 August 2026 because the notice is live on the listing today, 21 August 2026, and because Tabelog's own booking calendar on the page renders 2026年8月; (2) Tabelog has not yet applied its 【閉店】 badge, consistent with a shop still trading out its final ten days. Re-check the listing after 31 August 2026 and switch closed_since to a confirmed date. Content is otherwise fully enriched in case the closure turns out to be a relocation. No owner name is published by any source. A Yahoo Japan search for the closure returned an au Web Portal August-closures roundup for the Asakusa/Okachimachi/Tawaramachi area, but that article did not list this shop, so it neither confirms nor contradicts."
  }
 ]

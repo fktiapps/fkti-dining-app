@@ -310,5 +310,149 @@
    "https://tabelog.com/tokyo/A1309/A130905/13274832/"
   ],
   "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword searches 「中華麺 竜馬」, 「竜馬 中華麺」 and 「中華麺 龍馬」 (HTTP 200 each) — no result rows at all; Tabelog 「らーめん 龍馬」 (HTTP 200) — a Kita-Senju shop (足立区千住1-39-6) and Kyushu 龍馬家 branches, none in Shibuya-ku; Gnavi free-word 「中華麺 竜馬」 (HTTP 200) — total:0; Ecosia 「中華麺 竜馬 代官山」 (HTTP 200) — nearest name on the page was らぁ麺や RYOMA 神楽坂 (新宿区神楽坂2-6-1), 8 km away. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3_r",
+  "status": "confirmed",
+  "name": "Japanese Soba Noodles 蔦",
+  "lat": 35.670406,
+  "lng": 139.682484,
+  "loc_precise": true,
+  "address_ja": "〒151-0066 東京都渋谷区西原3-2-4 フロンティア代々木上原 B1F",
+  "enrich_confidence": "medium",
+  "cuisine": "The ramen shop that took the world's first Michelin star — a clear shōyu or shio soba built on Amakusa-Daiō chicken, Kagoshima black pork, asari clams and ma-konbu, finished with black truffle; bowls ¥2,000, 'tokusei' versions ¥3,000, the foie-gras-and-truffle wonton bowls ¥4,000, and a weekday-only half-and-half set of shio plus shōyu at ¥2,500",
+  "cuisine_type": "ramen",
+  "neighborhood": "Nishihara 3-chōme, in the basement of the Frontier Yoyogi-Uehara building — 2 minutes from Yoyogi-Uehara station (Odakyū Odawara line and Tokyo Metro Chiyoda line)",
+  "website": "https://www.tsuta79.tokyo/",
+  "menu_url": "https://www.tsuta79.tokyo/menu",
+  "hours_raw": "11:00〜15:00／18:00〜22:00（L.O. 21:00）　定休日：火曜日　※臨時休業や営業時間が変更となる場合がございます。最新情報は公式X・Instagramをご確認ください。",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable, and the shop makes no gluten-free claim. The noodles are wheat. The tare is explicitly a blend of wheat-brewed soy sauces — 兵庫県の非加熱有機濃口醤油と淡口醤油 plus 和歌山県生揚げ醤油 — so the wheat is in the seasoning as well as the noodle. The signature 雲吞 (wonton) bowls add wheat wrappers on top of that. There is no tamari option published, and the only special-diet bowl the shop advertises is a vegan one, not a wheat-free one.",
+  "vegan_status": "options",
+  "vegan_detail": "There is one genuine vegan bowl and you must book it: 「ヴィーガンヌードル（要予約）」 ¥2,000, which the shop's Tabelog menu describes as 「肉・魚・卵・乳製品・ハチミツなど動物性不使用。ヴィーガンの方にも安心して頂けます。」 — no meat, fish, egg, dairy or honey. Nothing else on the menu is close: the shōyu and shio soups are chicken, Kagoshima black pork, asari clam and fish stock, the toppings are black-pork chāshū, ajitama and bottarga, and even the rice dishes are truffle TKG (egg) and A5 wagyu. So a vegan can eat here well, but only by ordering ahead — walking in and improvising will not work. The shop publishes nothing about separate pots or utensils for that bowl.",
+  "chef_bio": {
+   "chef_name": "浅倉由香 (Yuka Asakura)",
+   "roles": [
+    "代表 / owner-operator, ツタノート (Tsutanote Inc.)"
+   ],
+   "origin": "Sugamo, Toshima-ku — where the shop opened on 26 January 2012 before moving to Yoyogi-Uehara",
+   "background": "Tsuta is the shop that changed what a ramen counter could be taken for. It opened in Sugamo on 26 January 2012, and in 2014 put out the bowl it is still known for: a restrained shōyu soba finished with black truffle. Ramen Walker made it Tokyo's and then Japan's number one three years running (2013–2015); the Michelin Guide gave it a Bib Gourmand in 2015 and then, in 2016, a star — the first ever awarded to a ramen restaurant anywhere — which it held for four consecutive years to 2019. TIME put it on its World's Greatest Places list in 2018. The shop left Sugamo in December 2019 for a basement room two minutes from Yoyogi-Uehara station, and it restarted in December 2022 under owner Asakura Yuka, whose company Tsutanote now runs it; a members-only evening counter, 夜蔦 (Yoru Tsuta), followed in February 2023, and there are licensed shops in Singapore, Thailand and New York. The cooking reads like a French kitchen's sourcing note written for a ramen bowl: whole Amakusa-Daiō chickens and Kagoshima black pork for the animal stock, asari and ma-konbu for the marine side, a tare blended from unpasteurised organic dark and light soy sauces from Hyōgo with kiage shōyu from Wakayama, and — on the shio — white beans, bottarga and a duxelles of girolle mushrooms. No chemical seasoning is used; the house line is a 'relentless quest for deliciousness' by way of 'flexible thinking and bold challenges'.",
+   "philosophy": "Japanese umami technique crossed with European ingredients, no chemical seasoning, and a willingness to change the bowl rather than defend it.",
+   "specialty": "醤油Soba ¥2,000 and 塩Soba ¥2,000; 特製フォアグラトリュフ雲吞醤油Soba ¥4,000; 極蔦 (weekday-only half-size pair of shio and shōyu) ¥2,500; TTKGトリュフ香卵かけご飯 ¥600; ヴィーガンヌードル ¥2,000 by advance order.",
+   "anecdotes": [
+    {
+     "text": "The shop's own history page dates it to 26 January 2012 in Sugamo, credits the 2014 black-truffle shōyu with making its name, and records the Michelin star in 2016 as the first ever given to a ramen restaurant, held four years running.",
+     "source": "https://www.tsuta79.tokyo/about"
+    },
+    {
+     "text": "The weekday-only 極蔦 (gokutsuta) is a pair of half-size bowls, shio and shōyu side by side — the house explains it as the two profiles together tracing 「蔦という一つの輪郭」, the single outline of what Tsuta is.",
+     "source": "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/"
+    },
+    {
+     "text": "The condiment set on the counter is sold as 「三種の神器」 — the three sacred treasures — meaning ツタスコ (the house Tabasco), salted pepper and a plum-and-nanplaa sauce, ¥200.",
+     "source": "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/"
+    }
+   ],
+   "japanese_sources_summary": "The shop's own site (tsuta79.tokyo, and its /about history page) gives the address 3-2-4 B1 Nishihara, Shibuya-ku, the phone 03-6416-8620, hours 11:00–15:00 and 18:00–22:00 (L.O. 21:00) closed Tuesdays, the founding date, the award record and the 2022 restart under 浅倉由香 of ツタノート. Tabelog 13241560 independently gives 渋谷区西原3-2-4 フロンティア代々木上原B1F, coordinates 35.670406/139.682484, the same hours and closing day, the genre 「ラーメン、つけ麺」 and 「代々木上原駅から徒歩2分」; its dtlmenu page carries the full priced menu with the soup and tare compositions and the vegan bowl. The GSI address geocoder returns 35.67038/139.682373 for 東京都渋谷区西原三丁目２番４号, about 10 m from the Tabelog point.",
+   "confidence": "high",
+   "sources": [
+    "https://www.tsuta79.tokyo/",
+    "https://www.tsuta79.tokyo/about",
+    "https://tabelog.com/tokyo/A1318/A131811/13241560/",
+    "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A single small counter boiling wheat noodles all service. No gluten-free noodle, no wheat-free line, and no allergen statement is published anywhere on the shop's site or menu.",
+     "source": "https://www.tsuta79.tokyo/menu"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The tare is named on the menu as a blend of 兵庫県の非加熱有機濃口醤油・淡口醤油 and 和歌山県生揚げ醤油 — all conventional wheat-brewed soy sauces. No tamari is offered.",
+     "source": "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The vegan bowl is prepared in a kitchen whose other bowls are whole-chicken and black-pork stock with clam and fish; the shop states the vegan noodle uses no animal products but publishes nothing about separate pots, water or utensils.",
+     "source": "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "A named, priced vegan bowl on the standing menu — 「ヴィーガンヌードル（要予約）」 ¥2,000, declared free of meat, fish, egg, dairy and honey — is rare at this level of ramen shop, and taking it by advance order means the kitchen has thought about it rather than improvising.",
+     "source": "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "A small basement counter two minutes from Yoyogi-Uehara station, and a famous one, so expect a queue and a ticket-and-wait rhythm rather than a leisurely sit-down; the shop publishes an English menu page as well as a Japanese one. Closed Tuesdays, and it warns on its own site that hours move — check the official X (@tsutainfo) or Instagram (@tsutajapanofficial) the morning you go. The vegan bowl must be reserved in advance, which realistically means a Japanese phone call to 03-6416-8620 or a message through the shop's socials; do not turn up expecting to order it on the spot. For a coeliac this is not a possible meal at any price."
+  },
+  "sources": [
+   "https://www.tsuta79.tokyo/",
+   "https://www.tsuta79.tokyo/about",
+   "https://www.tsuta79.tokyo/menu",
+   "https://tabelog.com/tokyo/A1318/A131811/13241560/",
+   "https://tabelog.com/tokyo/A1318/A131811/13241560/dtlmenu/",
+   "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E8%A5%BF%E5%8E%9F3-2-4"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「蔦 つけ麺」 and placed it in 六本木 / 赤坂見附. 「蔦 つけ麺」 is not a business name; it is the shop name plus a genre word, and the genre word is the one Tabelog files this shop under (「ラーメン、つけ麺」), although the current menu is soba/ramen only with no tsukemen on it. A Tabelog nationwide search for 蔦 (HTTP 200) returns exactly one ramen shop of that name in Japan — Japanese Soba Noodles 蔦 — and it is at 渋谷区西原3-2-4 フロンティア代々木上原B1F, not in Minato-ku. The record has therefore been enriched under the corrected name and repinned to the shop's real coordinates (35.670406/139.682484, cross-checked to about 10 m against the GSI geocoder for 西原三丁目2番4号); that is a move of roughly 4.5 km west-north-west from the light record's Roppongi pin. Confidence is 'medium' rather than 'high' because the identification rests on the unique name and matching genre, not on anything in the light record that ties it to Yoyogi-Uehara — a human should confirm the sweep did not mean some other Roppongi tsukemen shop. The shop itself is confirmed trading: its own site and Tabelog agree on address, phone, hours and Tuesday closing."
+ },
+ {
+  "id": "tokyo3__411",
+  "status": "not_found",
+  "lat": 35.664,
+  "lng": 139.731,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no sushi counter called 尾賀 could be found in Roppongi or anywhere else in Tokyo",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified. The light record says 六本木, near Roppongi Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. (The light record's 「山葵のみ」 note, implying wasabi-only seasoning without nikiri soy, would be a real gluten point if the shop existed, but it is unsourced.)",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The only business in Japan actually named 尾賀 is 珈琲館 尾賀, a coffee house in Hyōgo (Tabelog 28001821) — not a sushi counter and not in Tokyo. The similar-sounding sushi names the engines offer instead are 鮨 おおが (Sakai, Osaka), 鮨おおが東山 (Kyoto), 鮨 おがわ (Fukuoka and Tokyo/Meguro) and すし小川 (Ginza); none of them is 尾賀 and none is in Roppongi.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four legs run, all answered. (1) Tabelog nationwide keyword search 「尾賀」 (HTTP 200) — the single exact-name row is 珈琲館 尾賀 in Hyōgo; the rest are fuzzy matches on 緒方/おがわ/おおが. (2) Tabelog 「すし 尾賀」 (HTTP 200) — seven rows, all 鮨おおが/鮨おがわ/すし小川 variants, none named 尾賀 and none in Minato-ku. (3) Gnavi free-word 「尾賀」 (HTTP 200) — total:0; 「尾賀 六本木」 (HTTP 200) — total:0. (4) Ecosia 「尾賀 六本木 鮨」 (HTTP 200) — no page names such a shop; results were Michelin round-ups and private-room booking pages.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/hyogo/A2801/A280105/28001821/",
+    "https://r.gnavi.co.jp/area/jp/rs/?fw=%E5%B0%BE%E8%B3%80"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business. Recommend this record be deleted or re-sourced before it is shown to anyone — a wasabi-only edomae counter in Roppongi would be a genuinely valuable gluten-free lead if it existed, so it is worth a human re-check rather than a silent drop."
+  },
+  "sources": [
+   "https://tabelog.com/hyogo/A2801/A280105/28001821/",
+   "https://r.gnavi.co.jp/area/jp/rs/?fw=%E5%B0%BE%E8%B3%80"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: Tabelog nationwide keyword search 「尾賀」 (HTTP 200) — one exact-name business in Japan, 珈琲館 尾賀 in Hyōgo, a coffee house; Tabelog 「すし 尾賀」 (HTTP 200) — seven rows, all 鮨おおが / 鮨おがわ / すし小川 near-misses, none in Minato-ku; Gnavi free-word 「尾賀」 and 「尾賀 六本木」 (HTTP 200 both) — total:0 each; Ecosia 「尾賀 六本木 鮨」 (HTTP 200) — nothing of the name. No edomae sushi counter called 尾賀 could be shown to exist in Roppongi. Coordinates unchanged, loc_precise:false."
  }
 ]

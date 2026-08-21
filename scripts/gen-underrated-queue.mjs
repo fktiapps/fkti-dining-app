@@ -1,9 +1,10 @@
-// Collect the sweep's UPGRADE recommendations for the human gate.
+// Route the sweep's tier recommendations: apply the downgrades, queue the upgrades.
 //
-// Downgrades apply themselves — more caution is always safe. Upgrades cannot: a tier
-// above "ask" is the one thing in this app that can make somebody stop checking for
-// themselves, so REVIEW_PROTOCOL.md sends every one to Greg. This just gathers them
-// where he can work through them, with the evidence attached.
+// The asymmetry is the whole point. A DOWNGRADE is applied here and now: more caution
+// is always safe, and an evidence-backed recommendation to drop a tier should not sit
+// in a queue while the old tier ships. An UPGRADE cannot be — a tier above "ask" is
+// the one thing in this app that can make somebody stop checking for themselves, so
+// REVIEW_PROTOCOL.md sends every one to Greg, with its evidence attached.
 //
 // It exists because the sweep started finding real under-ratings once agents were
 // asked to look: a shop downgraded on a line its owner had publicly retracted, a
@@ -12,10 +13,21 @@
 //
 //   node scripts/gen-underrated-queue.mjs
 import fs from 'node:fs';
-import { CITIES, readCity } from './lib-city.mjs';
+import { CITIES, readCity, writeCity } from './lib-city.mjs';
 
 const DIR = 'data/_cite_verify_results';
 const RANK = { no: 0, ask: 1, options: 2, limited: 2, high: 3, full: 3, dedicated: 4 };
+// Agents write prose into `recommended`: "ask - REJECT the pending promotion to high",
+// "options (label 'Vegan options')", even "closed". An earlier version of this script
+// wrote those strings straight into gf_confidence and vegan_status and corrupted seven
+// records' tiers — the filters then matched none of them, so those shops silently
+// vanished from every dial. Anything that is not EXACTLY an enum value is not a tier.
+const GF_TIERS = new Set(['dedicated', 'high', 'options', 'ask', 'no']);
+const VG_TIERS = new Set(['full', 'options', 'limited', 'ask', 'no']);
+const tierOf = (field, v) => {
+  const t = String(v == null ? '' : v).trim().toLowerCase();
+  return (field === 'gf_confidence' ? GF_TIERS : VG_TIERS).has(t) ? t : null;
+};
 
 const byId = new Map();
 for (const c of CITIES) for (const r of readCity(c).places) byId.set(r.id, { city: c, r });
@@ -69,7 +81,7 @@ const SEED = [
          'dairy, says allergy language does not exist when it does, and publishes stale hours.' },
 ];
 
-const recs = [];
+const recs = [], downgrades = [], malformed = [];
 for (const s of SEED) {
   const hit = byId.get(s.id);
   if (!hit) { console.log(`  (seed id not found, skipping: ${s.id})`); continue; }
@@ -87,14 +99,52 @@ if (fs.existsSync(DIR))
       const hit = byId.get(v.id);
       if (!hit) continue;
       const field = v.field === 'vegan_status' ? 'vegan_status' : 'gf_confidence';
+      const rec = tierOf(field, v.recommended);
+      if (!rec) { malformed.push({ id: v.id, field, got: String(v.recommended).slice(0, 60) }); continue; }
+      v.recommended = rec;
       const current = hit.r[field];
-      // only UPGRADES need the gate; downgrades are handled by the enforcement passes
-      if ((RANK[v.recommended] ?? 0) <= (RANK[current] ?? 0)) continue;
+      if ((RANK[v.recommended] ?? 0) < (RANK[current] ?? 0)) {
+        downgrades.push({ city: hit.city, id: v.id, name: hit.r.name, field,
+                          from: current, to: v.recommended, why: v.why || v.note || '' });
+        continue;
+      }
+      if ((RANK[v.recommended] ?? 0) === (RANK[current] ?? 0)) continue;
       recs.push({ city: hit.city, id: v.id, name: hit.r.name, field,
                   current, recommended: v.recommended,
                   evidence: v.evidence || [], why: v.why || v.note || '' });
     }
   }
+
+// apply the downgrades
+const APPLY = process.argv.includes('--apply');
+const GF_LABEL = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
+                   options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
+const VG_LABEL = { full:'Fully vegan', options:'Some vegan options',
+                   limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
+if (APPLY && downgrades.length) {
+  for (const c of CITIES) {
+    const j = readCity(c); let dirty = false;
+    for (const d of downgrades.filter(d => d.city === c)) {
+      const r = j.places.find(x => x.id === d.id);
+      if (!r || r[d.field] !== d.from) continue;      // already moved; leave it
+      r[d.field] = d.to;
+      if (d.field === 'gf_confidence') r.gf_label = GF_LABEL[d.to];
+      else r.vegan_label = VG_LABEL[d.to];
+      r.sweep_downgrade = { field: d.field, from: d.from, to: d.to, why: d.why.slice(0, 400) };
+      dirty = true;
+    }
+    if (dirty) writeCity(c, j);
+  }
+}
+console.log(`${downgrades.length} evidence-backed downgrade(s) ${APPLY ? 'applied' : 'found (dry run)'}`);
+for (const d of downgrades)
+  console.log(`  ${d.city}/${String(d.name).slice(0, 28).padEnd(30)} ${d.field.replace('_confidence','').replace('_status','')} ${d.from} -> ${d.to}`);
+if (malformed.length) {
+  console.log('');
+  console.log(malformed.length + ' recommendation(s) ignored - recommended was prose, not a tier:');
+  malformed.slice(0, 8).forEach(m => console.log('  ' + m.id + ' ' + m.field + ': "' + m.got + '"'));
+}
+fs.writeFileSync('data/_sweep_downgrades.json', JSON.stringify(downgrades, null, 1));
 
 fs.writeFileSync('data/_underrated_queue.json', JSON.stringify(recs, null, 1));
 console.log(`${recs.length} upgrade(s) recommended by the sweep, awaiting the human gate\n`);

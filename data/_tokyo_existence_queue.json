@@ -759,6 +759,83 @@
   "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog area search of the Shinjuku block A1304/A130401 on 寿司めい — two irrelevant hits; (2) the same block on めい — twenty venues, no sushiya of this name; (3) Tabelog nationwide 寿司めい — the seven 寿司めいじん branches in Ōita, 鮨 めい乃 in Azabu-Jūban, and unrelated すしせい / すしへい / 寿司栄 / 寿司英; (4) Gnavi full-text 寿司めい — total 23, all Ōita 寿司めいじん branches, "
  },
  {
+  "id": "tokyo3_research_blocked_yotsuy",
+  "name": "RESEARCH_BLOCKED",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. This row is a discovery-sweep error artifact, not a restaurant: the name field is the literal string 'RESEARCH_BLOCKED' and the cuisine field is the sweep's own error message ('N/A - Proxy blocks Tabelog, Google, Wikipedia'). There is no business name to search, so no search leg can be run beyond confirming the literal string returns nothing on Tabelog. Coordinates unchanged, loc_precis"
+ },
+ {
+  "id": "tokyo3__325",
+  "name": "てんぷら山の上 御茶ノ水本店",
+  "status": "substituted",
+  "drift_km": 2.4,
+  "note": "Confirmed real, but TEMPORARILY CLOSED and the pin has been moved. The light record read 天ぷら山の上 / Ichigaya; the business is てんぷら山の上, the tempura arm of 山の上ホテル at 東京都千代田区神田駿河台1-1 - same ward, about 2.4 km east of the Ichigaya centroid, which has been replaced with GSI-verified coordinates for the real address. The honten has been shut since 2024-02-13 with the hotel, and the company's own site says"
+ },
+ {
+  "id": "tokyo3__327",
+  "name": "寿司 春",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (14 寿司春/すし春 nationwide, none in or near Ichigaya), Tabelog's Ichigaya area sushi listing (tokyo/A1309/A130904 - no 春), Gnavi free-word '寿司 春 市ヶ谷' (one unrelated hit, 鮨太鼓) and Yahoo Japan (HTTP 200, only 月島 すし春 and area round-ups) all ran and all came back negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__328",
+  "name": "鰻 田中",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (鰻田中 = zero hits; うなぎ田中 = three unrelated shops), Tabelog's Ichigaya area unagi listing (tokyo/A1309/A130904 - only うな誠 and 阿づ満や), Gnavi free-word '鰻 田中 市ヶ谷' (two unrelated hits) and Yahoo Japan (HTTP 200, only うな誠 and うなぎ秋本) all ran and all came back negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__331",
+  "name": "塩ラーメン 新",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (塩ラーメン新 and らーめん新 - no Ichigaya shop), Tabelog's Ichigaya area ramen listing (tokyo/A1309/A130904, all 19 shops - no 新) and Gnavi free-word '塩ラーメン 新 市ヶ谷' (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 on three attempts and never answered, so it contributes nothing either way. Coordinates unchanged, loc_precis"
+ },
+ {
+  "id": "tokyo3__333",
+  "name": "らーめん専門店 中野",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (らーめん専門店中野 and 中野屋ラーメン - no match), Tabelog's Takadanobaba area ramen listing (tokyo/A1305/A130503, all 53 shops across three pages - no 中野) and Gnavi free-word (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 and never answered. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__338",
+  "name": "定食屋 まるたに",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (定食屋まるたに = one unrelated Shizuoka shop; まるたに = seven unrelated shops, none a Tokyo teishoku), Gnavi free-word (explicit 該当するお店が見つかりませんでした) and Yahoo Japan (HTTP 200, returned only 炊きたてあり〼) all ran and all came back negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__340",
+  "name": "ふじや",
+  "status": "substituted",
+  "drift_km": 1.9,
+  "note": "Confirmed, with a cuisine correction. The name ふじや is right and the shop is real: Tabelog and Gnavi independently give the same address (東京都新宿区喜久井町25), phone (03-3203-0419), hours and coordinates, so loc_precise is set true and the centroid pin has been replaced. The light record's cuisine, 鰻・丼 (eel and donburi), is wrong - it is a 食堂・定食 shokudo whose documented dishes are simmered fish, shogayaki"
+ },
+ {
+  "id": "tokyo3__341",
+  "name": "串揚げ 大仏",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (串揚げ大仏 and 串揚げ大佛 both return only the 串揚げ大ひら shops; 大仏 alone returns Nara and Chiba businesses), Tabelog's Takadanobaba area kushiage listing (tokyo/A1305/A130503 - no 大仏) and Gnavi free-word, twice, (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 on both attempts and never answered. Coordinates unchanged, loc"
+ },
+ {
+  "id": "tokyo3__342",
+  "name": "天ぷら 大いに",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (天ぷら大いに and 天ぷら大いに屋 - nearest hits are the Osaka 天ぷら大吉 chain and Kyoto's 天ぷら大橋屋), Tabelog's Takadanobaba area tempura listing (tokyo/A1305/A130503 - no 大いに) and Gnavi free-word, twice, (no results / one unrelated Akasaka izakaya) all ran and all came back negative. Yahoo Japan returned HTTP 429 and never answered. The name is also not well-formed as a Japa"
+ },
+ {
+  "id": "tokyo3__343",
+  "name": "スナックラーメン 竜",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Tabelog nationwide name search (スナックラーメン竜 = zero hits; スナックラーメン and ラーメン竜 = only unrelated shops outside Shinjuku-ku), Tabelog's Takadanobaba area ramen listing (tokyo/A1305/A130503, all 53 shops - no 竜/龍) and Gnavi free-word, twice, (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 and never answered. Coordinates unchanged, loc_precise:false"
+ },
+ {
   "id": "tokyo3__190",
   "name": "明神そば",
   "status": "closed_permanently",

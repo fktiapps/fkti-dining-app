@@ -419,5 +419,161 @@
   "kind": "record_verdict",
   "record_verdict": "defective",
   "note": "ALL FOUR claims uncited, and one asserts an ingredient the evidence leans against. Trading status OK: Tabelog 口コミ dated 2026/07 and 2026/05, オープン日 1962年, 11:00-19:00, 月曜定休, 予約不可, 10席. gf_confidence 'ask' is correct. On vegan_status I am deliberately NOT recommending a downgrade: the label 'ask' is right and it is the DETAIL text that should move to meet it, not the reverse — 'Not suitable for vegans' is the unsourced half of that contradiction, and lowering the tier on an unsourced meat assertion is exactly the failure mode the brief warns about."
+ },
+
+ {
+  "id": "mp_shimao_coffee",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a toast- and cake-centric café whose signature items are wheat-based (butter toast, the all-day morning plate, and cakes), prepared in a shared kitchen. No gluten-free menu or dedicated handling is documented, so wheat exposure should be assumed throughout. Not celiac-safe.",
+  "url": "https://alco-kyotofushimi.com/gourmetshimaocoffee/",
+  "verdict": "supported",
+  "found": "「今回いただいたのはケーキ（きな粉と竹炭のケーキ）とアイスコーヒー（セットで７５０円 税込）！※ケーキは数種類から選べます。」「・いつでもモーニングプレート（ドリンク付）８５０円」「・バタートースト　３００円」「・カレー（サラダ付）　７５０円」. No allergen or gluten-free note on the page.",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch + 1 mobile-host fetch of the venue's Tabelog record to confirm the morning plate is bread-based",
+  "note": "Supported. 'Prepared in a shared kitchen' is inference — the article never describes the kitchen. The bread in the morning plate is confirmed on the venue's Tabelog 口コミ: 「モーニングのパンはサクサクで、ポテトサラダもシンプル」, which would be a stronger citation to add."
+ },
+ {
+  "id": "mp_shimao_coffee",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "No specific information on soy sauce was found in the sources. The salad-topped curry on the menu would conventionally be roux-thickened (wheat); confirm ingredients directly if you are gluten-sensitive.",
+  "url": "https://alco-kyotofushimi.com/gourmetshimaocoffee/",
+  "verdict": "supported",
+  "found": "「・カレー（サラダ付）　７５０円　※ドリンクセットで１５０円引き」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch",
+  "note": "Supported and honestly framed — the claim states up front that no soy-sauce information exists, and the curry-with-salad line is verbatim on the page. The roux inference is flagged as conditional ('would conventionally'), which is the right register. Nothing to repair."
+ },
+ {
+  "id": "mp_shimao_coffee",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan menu or handling is documented. Core offerings center on butter toast, bacon, eggs, yogurt, café au lait, and butter/dairy-style cakes, so animal products are pervasive and cross-contact with vegan items cannot be assumed avoided. Note the kinako cake contains soybean flour but other cakes/toast are not vegan.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog record (Tabelog 公式 / owner-managed) menu tags: 「モーニングプレート」「ハムエッグ」「目玉焼き」「ヨーグルト」「ポテトサラダ」「ケーキセット」; 口コミ 「カレーも思っていたよりお肉たくさんで美味しかったです」. alco: 「バタートースト３００円」「・カフェオレ　５００円」「ケーキ（きな粉と竹炭のケーキ）」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260601/26039563/",
+  "http": "200 (s.tabelog.com iPhone UA, record + /dtlrvwlst/ + /dtlmenu/); 200 (alco plain fetch)",
+  "method": "UNCITED — went and found it on the venue's own owner-managed Tabelog record",
+  "note": "UNCITED but true. One correction: it is HAM, not bacon — the menu tag is 「ハムエッグ」. Two additions the claim misses and a vegan reader needs: the morning plate carries a fried egg, yogurt and potato salad, and a diner reports the curry is 「お肉たくさん」, so the one savoury dish that might have looked plant-based is meat. Attach https://tabelog.com/kyoto/A2601/A260601/26039563/ ."
+ },
+ {
+  "id": "mp_shimao_coffee",
+  "city": "kyoto",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "limited",
+  "recommended": "no",
+  "evidence": ["https://tabelog.com/kyoto/A2601/A260601/26039563/", "https://alco-kyotofushimi.com/gourmetshimaocoffee/"],
+  "why": "LABEL CONTRADICTS ITS OWN DETAIL TEXT, over-rating direction — the same defect as mp_kissa_kano in this shard. The record shows 'limited' / 'Limited vegan options' while its own vegan_detail opens 'No vegan/vegetarian options documented' and closes 'A vegan would need to ask, with low expectation of suitable options. (Menu review: 0 vegan meals; 5 vegan items but no full main.)' The evidence backs the detail: every food item is butter toast, a ham-and-egg morning plate with yogurt and potato salad, dairy cakes, or a curry a diner describes as 「お肉たくさん」. 'Limited options' tells a vegan there is something to eat; there is not."
+ },
+ {
+  "id": "mp_shimao_coffee",
+  "city": "kyoto",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "Trading status OK and unusually well-attested: the Tabelog record is marked 公式 (owner-maintained), オープン日 2023年5月21日, 口コミ through 2024/12, 09:00-17:00, 火曜定休, 20席, 予約可. Note the cited alco article (2023-06) gives 11:00-17:00, which the owner's own Tabelog listing now contradicts — the record should follow Tabelog. gf_confidence 'ask' is correct. vegan_status 'limited' is over-rated — see tier_recommendation. One uncited claim needs a URL."
+ },
+
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a tempura specialty house, so the core of every course is wheat-flour batter deep-fried in shared oil. The house 'Kyoboshi-style' coating is described as essentially just flour and water, applied very thin, but it is still wheat-based. It is not celiac-safe.",
+  "url": "https://kbun000.gorp.jp/",
+  "verdict": "supported",
+  "found": "「粉と水のみを用いた衣を、絹のような薄さと滑らかさで食材に纏わす「京星」の天ぷら。」「音と泡の様子を極限まで見定め供される一品」「秘技を継承する3代目が新たな歴史を切り拓く、1947年創業の老舗店。」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch of the cited official site + the venue's Tabelog record for the wheat confirmation",
+  "note": "Verbatim support for 'essentially just flour and water, applied very thin' — 粉と水のみ / 絹のような薄さ. Strictly the site writes 粉 (flour), not 小麦粉; the wheat is confirmed on the venue's English Tabelog record, where a 2026/06 review is titled 'Tempura made with wheat, water, salt, and lemon!'. Worth adding that URL so the wheat is sourced and not assumed."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "All pieces are fried in the same oil, so even non-battered items would share frying oil with wheat batter. There is no indication of a dedicated gluten-free fryer.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260301/26006057/",
+  "verdict": "supported",
+  "found": "「the third-generation owner, Toshinori Sakakibara, prepares tempura with a secret oil blend and a light batter, without using any eggs」「The chef's skill shines through in the perfect cooking, judged by the bubbling oil, sound, and the feel from the cooking chopsticks.」「With a menu focused solely on tempura」; Seats: 「8 seats (Counter seats: 8)」. No allergen or dedicated-fryer note anywhere.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com/en, iPhone UA)",
+  "method": "1 mobile-host fetch of the cited English record",
+  "note": "Supported: one chef, one counter, one 'secret oil blend', a menu that is nothing but tempura — a second fryer would have to be mentioned to exist and is not. The JP menu page shows the shared oil covers both fish and vegetables in the same course (ぐじ, ワカサギ, 稚鮎 alongside 人参)."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Tempura here is finished with house-blended salt, grated daikon, and lemon juice rather than a soy-based tentsuyu, so the tempura course itself avoids dipping sauce. However, an omakase-style Japanese course of this type commonly includes soy- and dashi-based elements, and most Japanese soy sauce contains wheat. Confirm with the kitchen before relying on this.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "English Tabelog record: 「Enjoy it with homemade salt that resembles powdered snow and grated daikon soaked in lemon juice.」 For the soy/dashi half, the official site names a simmered dish: 「「煮栄螺」や「丸十」といった自身の名物を生み出し」.",
+  "correct_url": "https://tabelog.com/en/kyoto/A2601/A260301/26006057/",
+  "http": "200 (s.tabelog.com/en iPhone UA); 200 (kbun000.gorp.jp plain fetch)",
+  "method": "UNCITED — went and found it: the salt/daikon/lemon half is verbatim on the English Tabelog record already used elsewhere on this record",
+  "note": "UNCITED but the first half is verbatim-supported and should simply be pointed at https://tabelog.com/en/kyoto/A2601/A260301/26006057/ . The second half now has a real anchor rather than category guesswork: the chef's own signature 「煮栄螺」 (simmered turban shell) on kbun000.gorp.jp is a simmered dish, and a nimono broth is soy-and-dashi by default — name it instead of 'a course of this type commonly'."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "No vegan or vegetarian options are documented in any source. The batter is egg-free, but the kitchen serves a fixed tempura omakase fried in shared oil with seafood, so cross-contact with animal ingredients is likely. Vegan status should be confirmed directly with the restaurant.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "JP Tabelog 料理メニュー 「■コースの一例」: 「職人技が光る。パリパリッとした皮目に感動の『ぐじ』」「見た目と素材の甘さがスナック菓子のようで楽しい『人参』」「天ぷらというより魚そのものが泳いでいるような『ワカサギ』…ほかに稚鮎など旬の小魚を提供」. Official site: 「「煮栄螺」や「丸十」といった自身の名物」. English record: batter 「without using any eggs」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260301/26006057/dtlmenu/",
+  "http": "200 (s.tabelog.com iPhone UA); 200 (kbun000.gorp.jp plain fetch)",
+  "method": "UNCITED — went and found the published course example on the venue's own Tabelog menu page",
+  "note": "UNCITED but accurate, and the evidence sharpens it in BOTH directions: the sample course does contain genuine vegetable pieces (人参, 丸十) which the claim's 'no vegetarian options documented' rather flattens, but they are fried in the same oil as tilefish, smelt and young ayu and the course is fixed. Attach https://tabelog.com/kyoto/A2601/A260301/26006057/dtlmenu/ and name the actual pieces."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "staff_allergy_handling",
+  "quote": "No information was found in available sources about how staff handle allergy or dietary requests. As a small counter serving a fixed course, customization is likely limited, so contact the restaurant in advance to discuss any needs.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "checked: kbun000.gorp.jp 200, tabelog.com/en/.../26006057/ 200, /dtlrvwlst/ 200, /dtlmenu/ 200",
+  "method": "UNCITED — pure absence claim; re-checked all four pages rather than assume",
+  "note": "Accurate: none of the four pages mentions allergies or dietary accommodation. The 'small counter, fixed course' framing is evidenced (「総席数　9席 カウンター席あり」 on the official site, '8 seats (Counter seats: 8)' on Tabelog, 「1日数組限定」) and could be cited even though the absence itself cannot be. Phone for the advance contact: 075-551-2303."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "The batter is made without eggs, which is helpful for diners with an egg allergy (though shared frying oil and seafood mean cross-contact cannot be ruled out).",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260301/26006057/",
+  "verdict": "supported",
+  "found": "「Here, the third-generation owner, Toshinori Sakakibara, prepares tempura with a secret oil blend and a light batter, without using any eggs.」 — on the restaurant's own 'Official information' block (registered corporate member; business information released by the staff).",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com/en, iPhone UA)",
+  "method": "1 mobile-host fetch",
+  "note": "Verbatim, and it is the operator's own wording rather than a reviewer's — about as good as this kind of claim gets. The official Japanese site corroborates independently: 「粉と水のみを用いた衣」."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "The tempura is dressed only with house salt, grated daikon, and lemon juice rather than a flour-thickened or soy-based dipping sauce, so the fried pieces themselves carry no added soy or sauce-borne wheat.",
+  "url": "https://tabelog.com/en/kyoto/A2601/A260301/26006057/dtlrvwlst/",
+  "verdict": "supported",
+  "found": "Review on the cited list page: 「The tempura features an incredibly thin batter, seasoned only with salt, lemon juice, and grated Jap[anese radish]…」; another is titled 「Tempura made with wheat, water, salt, and lemon!」. The parent record adds 「homemade salt that resembles powdered snow and grated daikon soaked in lemon juice」.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com/en, iPhone UA)",
+  "method": "1 mobile-host fetch of the cited review-list URL",
+  "note": "Supported on the exact page cited — diner wording, corroborated by the operator's own text on the parent record. The 'only' is doing real work here and holds: no reviewer describes a tentsuyu."
+ },
+ {
+  "id": "mp_tempura_kyoboshi",
+  "city": "kyoto",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "Best-sourced record in this shard — the two positives and both gf claims land verbatim on their cited pages. Trading status OK and strong: official site live, Tabelog 口コミ 2026/06 and 2026/05, Tabelog Award 2026 Bronze, 天ぷら百名店 2025, Michelin 1 star ten years running; 月～土 18:00-22:00 (L.O.20:00), 日曜定休. gf_confidence 'ask' correct; vegan_status 'ask' is also correct and I am NOT recommending a change — vegetable pieces (人参, 丸十) genuinely appear in the course, so 'ask' is the honest label even though shared oil makes a vegan meal unlikely. Three uncited claims need URLs. Data-field note: the record's flags say reservation:false, but the English Tabelog record publishes a cancellation policy (50% day-before / 100% same-day) and the site says 1日数組限定 — this is a reservation house."
  }
 ]

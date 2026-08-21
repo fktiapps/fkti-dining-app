@@ -43,53 +43,20 @@ because it treated "I found something" as "it checks out". Do not repeat that.
 
 HTTP 429 is the engine refusing to answer, not answering "no". Back off and retry.
 
-**Fetch reality, checked 2026-08-21** — this changes, so try the simple thing first.
-HappyCow and FindMeGlutenFree now answer a plain curl with an iPhone or desktop Chrome
-User-Agent. **r.jina.ai returns a Cloudflare 403 for every host** — the proxy earlier
-shards relied on is gone, so do not reach for it. CAA and other Japanese government
-PDFs need `pdftotext -enc UTF-8 -nopgbrk`; `-layout` yields nothing on them. Tabelog answers on
-`s.tabelog.com` with an iPhone UA. Tabelog's `/rstLst/?sk=` search silently ignores
-the keyword and returns promoted listings — a false negative generator; use what
-`/rst/rstsearch/?sk=` redirects to. web.archive.org has been intermittently 503.
-PDFs: pdftotext. Gzip: some sites need explicit decoding.
+**Fetching changes hour to hour — try, do not assume.** In one day HappyCow and
+FindMeGlutenFree went from needing the r.jina.ai proxy, to answering a plain curl, to
+403-ing again; r.jina.ai went from working to Cloudflare-403 on every host. Any fixed
+recipe written here will be wrong by the time you read it. So: try plain curl first,
+then an iPhone UA, then a desktop UA, then Wayback, then a text proxy — and record in
+`http` WHICH route actually worked and what the others returned. That record is worth
+more than the recipe, because it tells the next agent what was true at your run rather
+than at mine.
 
-## What counts as support
-
-The page must carry the substance. A shop's page saying 「グルテンフリーのケーキ」 supports
-"offers gluten-free cake". It does **not** support "the kitchen is wheat-free" — that
-is a bigger claim and needs its own words on the page.
-
-Two Japanese traps that decide these calls:
-- **麦 is barley** (麦味噌, 麦茶, 押麦, もち麦) and barley contains gluten. A page listing
-  those does not support a gluten-free claim; it contradicts one.
-- **十割 soba is not gluten-free** — 打ち粉 dusting flour, wheat-soy-sauce tsuyu. A page
-  saying 十割 does not support "safe for celiacs".
-
-**Vocabulary is not evidence** (owner's ruling): a shop writing 「グルテンフリー」 or
-「小麦アレルギー対応」 rather than セリアック is not thereby weaker. Judge the substance.
-
-## Two kinds of worklist
-
-**Absent-quote lists** (`absent_sN.json`) are single claims a mechanical checker
-already flagged. One object in, one verdict out.
-
-**Record sweeps** (`rN.json`) give you whole records: `{id, city, name, gf, vegan,
-website, claims[]}` where each claim is `{field, text, source}`. Verify **every**
-claim on every record. Fetch each distinct source ONCE and check all the claims that
-cite it — that is why the work is sharded by record.
-
-A claim with `"source": null` cannot be verified as it stands. Do not mark it
-`unsupported` — that would be judging a claim nobody sourced. Mark it `uncited` and
-**go find the source**: if you can evidence it, return `wrong_source` with the URL
-you found, which lets the claim be repaired rather than deleted. If nothing supports
-it anywhere, `unsupported` is then the right verdict and worth saying loudly.
-
-For record sweeps also return, once per record, a `record_verdict`:
-`clean` (every claim supported) · `repairable` (some claims need a corrected URL) ·
-`defective` (at least one claim is unsupported anywhere) · `blocked` (too much
-unreachable to judge).
-
-## Say when a record is UNDER-rated, not only when it is over-rated
+Two that have held: Tabelog DETAIL pages answer with an iPhone UA and carry
+Restaurant + FAQPage JSON-LD (coordinates, address, hours), while its keyword SEARCH
+endpoints are unreliable and have returned the whole database or the homepage. CAA and
+other Japanese government PDFs need `pdftotext -enc UTF-8 -nopgbrk`; `-layout` yields
+nothing.
 
 A review that only ever moves labels down is not an honest review. Menbaka Fire Ramen
 was downgraded on a "shared boiling water" line the owner had publicly retracted;

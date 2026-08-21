@@ -434,5 +434,237 @@
    "http://yoshizushi.co.jp/"
   ],
   "enrich_note": "Confirmed, exactly as the light record named it. A nationwide Tabelog search for よし寿司 上野 (double-encoded rstLst, HTTP 200, 23件) returns よし寿司 上野店 = 13158641 as the only Tokyo-Ueno hit among a long tail of same-name shops in Iwate, Saitama, Shizuoka, Miyazaki, Hokkaido and Aichi — worth noting because the name is common enough that a careless match would have landed several prefectures away. The detail page (iPhone UA, HTTP 200) gives 台東区上野6-7-8 at 35.70971/139.77597, about 250 m from the sweep's approximate pin, and links a homepage; that homepage (yoshizushi.co.jp, HTTP 200) is the company's own and independently confirms the same address and phone under the heading （公式）よし寿司 上野店, with a notice board current to 24 December 2025. The light record's 江戸前寿司 and 中御徒町 both check out — Naka-okachimachi is one of the three stations that serve it. Its gf_confidence stays at the light record's 'ask' rather than moving up: the nigiri is naturally wheat-free but the house soy sauce is not, tempura is fried in the same kitchen, and the shop publishes no allergy policy. loc_precise true."
+ },
+ {
+  "id": "tokyo3__222",
+  "status": "confirmed",
+  "name": "鳥つね自然洞",
+  "lat": 35.703987,
+  "lng": 139.772707,
+  "loc_precise": true,
+  "address_ja": "〒101-0021 東京都千代田区外神田5-5-2",
+  "enrich_confidence": "high",
+  "cuisine": "The oyakodon people queue for: jidori chicken butchered in-house, three large Hyōgo eggs set for barely fifty seconds so the top stays liquid, over rice soaked in a warishita of three-year barrel-aged saikomi soy sauce and three-year Gifu mirin — ¥1,200 plain, ¥1,500 for the 上, ¥3,500 for the 特上 set with chicken shinjo and salad. At night it becomes a whole-bird course house at ¥15,000 and up.",
+  "cuisine_type": "torimeat",
+  "neighborhood": "Soto-Kanda 5-chōme, on the Chiyoda-ku side of the Okachimachi/Akihabara boundary — 2 min from Suehirochō (Tokyo Metro Ginza line), 7 min from Okachimachi (JR), 10 min from Akihabara (JR, Electric Town exit).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "月・火・水・木・金・土 11:30 - 13:30 / 17:30 - 22:00（L.O. 21:00）　日・祝日 定休日　※鶏の入荷がない日は臨時休業あり（例：8月17日(月)）",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "The dish this restaurant exists for is built on wheat. The warishita that soaks the rice is a Saitama 再仕込み醤油 — a double-brewed soy sauce, which means twice the wheat, not less — aged three years in wooden barrels, with three-year Gifu mirin. There is no gluten-free tamari anywhere in the description and no allergy policy published. The chicken shinjo that comes with the 特上 set is a bound quenelle, and the fried items reviewers describe (a menchi-katsu-like chicken croquette) are breaded. Do not come here on a gluten-free diet expecting to eat the famous thing.",
+  "vegan_status": "no",
+  "vegan_detail": "No. This is a chicken specialist that buys whole jidori birds — Akita hinai-jidori, Nagoya Cochin, Okukuji shamo — and breaks them down on the premises; the lunch dish is chicken and egg, and the evening is a whole-bird course. The soup that comes with lunch is chicken stock. There is no plant-based option and no reason to expect one.",
+  "chef_bio": {
+   "chef_name": "佐々木 (Sasaki)",
+   "roles": [
+    "店主 (owner-chef)",
+    "holder of the 食鳥処理 poultry-processing licence — he breaks down the whole birds himself, in the shop"
+   ],
+   "origin": "Soto-Kanda, Chiyoda-ku — Suehirochō, two minutes from the Ginza line",
+   "background": "鳥つね自然洞 is the noren-wake offshoot of 鳥つね, a chicken restaurant founded in 1911 whose history Tabelog summarises as 大正創業、百余年. This shop opened in 1972 as a branch of the parent and took the name 鳥つね自然洞 in 1992. It works out of a freestanding house — counter and tables on the ground floor, a sixteen-seat tatami room upstairs, thirty seats in all — and was selected for Tabelog's 鳥料理 百名店 2025 with a 3.73 rating over 1,634 reviews. Sasaki holds the 食鳥処理 licence, so whole birds arrive the day after slaughter and are butchered in the shop rather than delivered as portions. Lunch is the oyakodon that draws the queue; dinner is a course built round a whole jidori bird, at ¥15,000–¥19,999. The shop will close at no notice on days when the chickens do not arrive — Tabelog carried exactly such a notice for Monday 17 August.",
+   "philosophy": "The oyakodon technique, as the shop explained it to a reviewer: three L-size 「日本一こだわり卵」 eggs from Hyōgo, given about fifty seconds of heat and deliberately under-beaten, because the flavour is in the yolk and over-mixing lets the white dilute it.",
+   "specialty": "親子丼 ¥1,200 / 上親子丼 ¥1,500 (with soup and pickles) / 特上親子丼セット ¥3,500 with 鳥しんじょ and 鳥サラダ. The 特上 uses hinai-jidori and Nagoya Cochin hens at 160–180 days — the age at which they begin to lay and the fat comes up — taking both breast and thigh, about 70 g.",
+   "anecdotes": [
+    {
+     "text": "A reviewer noticed the smell before the food: the room carries the scent of the warishita — a three-year, wooden-barrel saikomi soy sauce from Saitama and a three-year aged mirin from Gifu — 「甘い醤油…と味醂…の匂いが店内に漂います！！」",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13005547/"
+    },
+    {
+     "text": "Lunch runs 11:30 to 13:30 only, and the queue is normal; the exceptions regulars trade are Obon week and the odd quiet weekday, when you can walk onto an empty counter.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13005547/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13005547 (titled 鳥つね自然洞 とりつねしぜんどう - 末広町/鳥料理) gives 千代田区外神田5-5-2, 03-5818-3566, coordinates 35.70399/139.77271, 鳥料理百名店2025, 30 seats (1F counter 6 + table 8, 2F tatami 16), private rooms for 2–8 with a ¥2,500 room charge for parties of three or fewer, お通し ¥400, cards accepted but no e-money or QR, 分煙 (lunch entirely non-smoking; at dinner the ground floor is non-smoking and the first floor allows heated tobacco only), 一軒家レストラン, children welcome, hours 11:30–13:30 and 17:30–22:00 (L.O. 21:00) closed Sundays and public holidays, budget ￥15,000〜￥19,999 dinner and ￥2,000〜￥2,999 lunch, and the August notice 「17日(月)は鶏の入荷がない為、お休みさせていただきます」. Its 店舗PR reads 「老舗鶏料理店の暖簾分け…大正創業、百余年の歴史を誇る【鳥つね】を本店にもち…日本三大地鶏といわれる秋田の比内地鶏や名古屋コーチン、奥久慈の軍鶏の丸鶏を仕入れ、夜は丸ごと味わえるコース料理として楽しむことができます。」 A detailed 4.1-rated review adds the 1911 founding of the parent, the 1972 opening and 1992 rename, owner 佐々木さん and his 食鳥処理 qualification, the 160–180-day hinai-jidori and Nagoya Cochin hens, the three-year Saitama saikomi soy sauce and three-year Gifu mirin, the Hyōgo eggs and the 50-second cooking, and the ¥3,500 特上 set; others give 親子丼 ¥1,200 and 上親子丼 ¥1,500 and confirm the FAQ access figures (Suehirochō 2 min, Okachimachi 7 min, Akihabara 10 min).",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131101/13005547/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A thirty-seat chicken house with a shared kitchen turning out fried chicken croquettes alongside the donburi; nothing is prepared separately and no allergy protocol is published.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13005547/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The warishita is explicitly a 再仕込み醤油 — soy sauce brewed a second time using soy sauce in place of brine, so the wheat content is if anything higher than standard koikuchi. It is the defining seasoning of the dish.",
+     "source": "https://tabelog.com/tokyo/A1311/A131101/13005547/"
+    }
+   ],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "medium",
+   "note": "Comfortable in the ways that matter — reservations accepted, cards accepted, private rooms for two to eight, children welcome, and lunch is entirely non-smoking — but plan around it. Lunch is a two-hour window, 11:30 to 13:30, with a queue; dinner is a ¥15,000-plus whole-bird course, which is a different evening from the ¥1,200 donburi entirely. Closed Sundays and public holidays, and it will shut without warning on any day the chickens do not arrive. Note also that at dinner the upstairs tatami room permits heated-tobacco smoking, so ask for the ground floor if that matters. No e-money or QR payment; no English menu is advertised. There is a ¥400 otōshi in the evening and a ¥2,500 private-room charge for parties of three or fewer."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13005547/"
+  ],
+  "enrich_note": "Confirmed, and the sweep's neighbourhood string was right where its address was not. A nationwide Tabelog search for 鳥つね自然洞 (double-encoded rstLst, HTTP 200, 61件) returns 鳥つね自然洞 = 13005547 as the sole exact match; the detail page (iPhone UA, HTTP 200) gives 千代田区外神田5-5-2 at 35.70399/139.77271. Note that this is Chiyoda-ku, not Taitō-ku — the shop sits on the Chiyoda side of the boundary — and the sweep's pin was about 570 m north of it, so coordinates have moved and loc_precise is now true. The light record's 末広町・御徒町 and 親子丼・鶏料理 are both exactly right. Everything in the enrichment comes from the Tabelog record and from signed reviews on it that quote the shop directly; Yahoo Japan returned HTTP 429 on repeated attempts spaced several minutes apart and DuckDuckGo's html and lite endpoints both returned HTTP 202 bot challenges, so I could not add an independent second host and have cited only what I actually opened. gf_confidence lowered from the light record's 'ask' to 'no': the warishita is a double-brewed wheat soy sauce and it is the point of the dish. vegan_status likewise lowered from 'ask' to 'no' — this is a whole-bird chicken restaurant."
+ },
+ {
+  "id": "tokyo3__223",
+  "status": "confirmed",
+  "name": "デリー 上野店",
+  "lat": 35.708285,
+  "lng": 139.771255,
+  "loc_precise": true,
+  "address_ja": "〒113-0034 東京都文京区湯島3-42-2",
+  "enrich_confidence": "high",
+  "cuisine": "The Tokyo curry that other Tokyo curries are measured against: Delhi's Kashmir curry is jet-black, soup-thin and rated five stars for heat by the house itself, poured beside rice rather than over it. Fifteen seats, standing since 1956. Curries ¥1,230–¥1,500 (Kashmir ¥1,350, butter chicken ¥1,500), tandoori chicken tikka ¥1,000, sets from ¥2,500.",
+  "cuisine_type": "indian",
+  "neighborhood": "Yushima 3-chōme, Bunkyō-ku, on the Ueno-hirokōji side — 3 min from Yushima (Tokyo Metro Chiyoda line), close to Ueno-hirokōji (Ginza line) and Okachimachi (JR).",
+  "website": "https://www.delhi.co.jp/store/ueno.php",
+  "menu_url": "https://www.delhi.co.jp/store/ueno.php",
+  "hours_raw": "11:50 - 21:30　定休日：無休（年末年始 12/31〜1/1 は休業。1/2〜1/3 は 11:50〜19:30 L.O.）",
+  "hours_status": "regular",
+  "gf_confidence": "ask",
+  "gf_detail": "Better odds than almost any curry house in Tokyo, but unproven — ask before you order. In its favour, and unusually concrete: the Ueno branch serves no bread at all. The company's own FAQ answers 「ナンはありますか？」 with 「ございません」 — the kulcha is a Ginza-only item — so this is a rice-only kitchen with no wheat dough being handled at the pass. The house style is also explicitly un-thickened: Delhi's own account of the Kashmir curry describes abandoning even the blended potato that once gave it body, in pursuit of a curry 「とろみがなくシャバシャバ」, which is the opposite of a flour-roux Japanese curry. Against it: Delhi publishes no allergen statement I could reach, the papad is a fried lentil-flour cracker sharing oil with other fried items, and nothing rules wheat out of the spice blends or the dry-curry pastes. Ask at the counter, name wheat specifically, and treat the answer as the evidence.",
+  "vegan_status": "ask",
+  "vegan_detail": "The company answers this one directly and the honest reading is 'ask', not 'options'. Its FAQ says 「ベジタリアン料理はありますか？」 → 「ございません。お料理から特定の材料を除くことや、野菜中心のメニューをお出しすることは出来ますので、お気軽にご相談ください。」 — there is no vegetarian dish on the menu, but they will take ingredients out of a dish or put together something vegetable-led if you ask. That is a genuine offer from a company that repeats it in writing; it is not a standing vegan menu, and dairy (the butter chicken, the yoghurt marinade, the salad dressing) and meat stock are the default. Raise it when you sit down, in a quiet hour, not in the lunch crush.",
+  "chef_bio": {
+   "chef_name": "田中敏夫 (Toshio Tanaka) — 創業者 (founder)",
+   "roles": [
+    "創業者",
+    "the shop is run today by Indian & Pakistani Food Caterers DELHI Associates Co., Ltd."
+   ],
+   "origin": "Yushima / Ueno-hirokōji — the Ueno shop is the original, opened 28 February 1956",
+   "background": "デリー opened in Ueno on 28 February 1956 as one of Japan's first dedicated curry restaurants, and the Ueno branch is still a fifteen-seat room in a freestanding building. Its self-description is unchanged in seventy years: 「創業1956年、日本人の味覚を大切に、毎日でも食べ飽きないカレーを目指しています」 — Indian and Pakistani cooking learned at source and then tuned to a Japanese palate. It has been chosen for Tabelog's カレー 百名店 in 2017, 2018, 2019, 2020, 2022, 2023, 2024 and 2026, and holds a 3.79 rating over 3,662 reviews. The company now also runs a Ginza restaurant and atelier DELHI, a small in-town factory, and sells retort curries online.",
+   "philosophy": "Delhi's aesthetic is thinness. Its own account of the Kashmir curry: the early version carried body because the recipe used blended potato, and as regulars pushed for hotter and thinner, the cooks worked at 「いかにとろみがなく辛いカレーを作るか」 — from how the onion water was driven off to how the knife was used so no fibre survived. 「とろみがなくシャバシャバであるほど粋である」.",
+   "specialty": "カシミールカレー ¥1,350 — the house's own hottest, rated 極辛 ★★★★★, and orderable hotter still as ホット / ベリーホット / ベリーベリーホット. Around it: デリーカレー ¥1,230 (★1), インドカレー ¥1,230, ベンガル ¥1,270, シャーヒー ¥1,270, コンチネンタル ¥1,230, ドライカレー ¥1,350, ストロングドライカレー ¥1,400, チキンバリ ¥1,420, コルマ ¥1,450, バターチキン ¥1,500; タンドーリチキンティカ ¥1,000, パパド ¥450, ラサム ¥550, サラダ ¥700; sets ¥2,500 and a ¥3,200 course. Milder curries exist for children and for people who do not want heat — the FAQ says to just ask.",
+   "anecdotes": [
+    {
+     "text": "The name is a misprint that stuck. Founder Toshio Tanaka meant to call his hottest curry 'Madras curry', after the southern Indian city he associated with heat — but when he handed the menu copy to the printer he wrote カシミールカレー by mistake. He noticed on the proofs, decided that a wholly original curry could carry any name and that Indian place names meant little in Japan at the time, and served it as Kashmir curry.",
+     "source": "https://www.delhi.co.jp/process/"
+    },
+    {
+     "text": "The black colour was a deliberate visual trick. Trying to push heat further without the raw harshness of more chilli, the kitchen found garlic softened the chilli's rough edge — then asked whether heat is tasted only on the tongue, and added caramel to make the curry jet black, a colour nobody was serving at the time.",
+     "source": "https://www.delhi.co.jp/process/"
+    },
+    {
+     "text": "Delhi dates the Kashmir curry's real breakthrough to the 1982 revision of Japan's Food Control Act: better rice varieties with more natural sweetness reached the shops, the sweetness of the rice caught against the heat of the curry, and — in the company's telling — 'a curry that truly suits Japanese rice' was finished. It is why Delhi is as particular about the rice as the sauce.",
+     "source": "https://www.delhi.co.jp/process/"
+    }
+   ],
+   "japanese_sources_summary": "The company's own site (delhi.co.jp) is live and updated daily — the president's blog is dated 2026.08.21 and the news list carries 2026.08.20, 2026.08.17 and 2026.08.07 items, the last being a Saturday/Sunday-only Ueno special, 「出汁香る夏野菜のポークビンダルー」 ¥1,600 (★★★★☆). The Ueno store page gives 〒113-0034 東京都文京区湯島3-42-2, TEL 03-3831-7311, 「地下鉄湯島駅より徒歩3分」, 15 seats counter and table combined, 昭和31年 founding, and the full price list quoted above. The FAQ page answers the two questions that matter here in the shop's own words: no naan at Ueno (kulcha is Ginza only), and no vegetarian dish but ingredients can be removed or a vegetable-led plate arranged on request; it also grades カシミールカレー as 極辛 ★★★★★ and explains the ホット/ベリーホット escalation. The Process page carries the founder's name and the origin story of the Kashmir curry. Tabelog 13003605 corroborates the address and phone, gives coordinates 35.70828/139.77126, 15 seats (7 table, 8 counter), all non-smoking, cash only, no reservations, takeaway, children welcome, 一軒家レストラン, opened 1956年2月28日, hours 11:50–21:30 with 12/31–1/1 closed, カレー百名店 selections from 2017 to 2026, and a 3.79 rating over 3,662 reviews.",
+   "confidence": "high",
+   "sources": [
+    "https://www.delhi.co.jp/store/ueno.php",
+    "https://www.delhi.co.jp/faq/",
+    "https://www.delhi.co.jp/process/",
+    "https://tabelog.com/tokyo/A1311/A131101/13003605/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "パパド is a fried lentil-flour cracker; it shares the fryer with whatever else is fried, and no separate-oil claim is made.",
+     "source": "https://www.delhi.co.jp/store/ueno.php"
+    }
+   ],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [
+    {
+     "text": "The tandoori chicken tikka is marinated in yoghurt and served with a potato salad, and the house salad comes with Delhi's own dressing — dairy and egg are in the room even on the non-curry plates.",
+     "source": "https://www.delhi.co.jp/store/ueno.php"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "The company invites dietary requests in writing on its own FAQ: 「お料理から特定の材料を除くことや、野菜中心のメニューをお出しすることは出来ますので、お気軽にご相談ください。」 It also says milder curries are available for children or anyone who cannot take heat — just ask the staff.",
+     "source": "https://www.delhi.co.jp/faq/"
+    }
+   ],
+   "positives": [
+    {
+     "text": "No bread is served at the Ueno branch at all — the FAQ states plainly that there is no naan, and the kulcha exists only at Ginza. A curry house with no wheat dough on the premises is a materially better starting point for a celiac than one with a tandoor turning out naan.",
+     "source": "https://www.delhi.co.jp/faq/"
+    },
+    {
+     "text": "The house style is explicitly unthickened — Delhi's own Process page describes chasing a curry with no とろみ at all, having dropped even the blended potato that once gave it body. There is no flour roux in this kitchen's philosophy.",
+     "source": "https://www.delhi.co.jp/process/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "medium",
+   "note": "Small, busy and famous: fifteen seats, no reservations, cash only — no cards and no electronic money — and open straight through 11:50 to 21:30 every day but New Year, which is the saving grace, because a mid-afternoon arrival avoids the queue entirely. All non-smoking, children welcome, takeaway available. Heat is the thing to get right: the house rates its own Kashmir curry 極辛 ★★★★★ and warns in writing that some customers cannot finish it; デリーカレー at ★1 is the gentle end, and the FAQ says milder curries for children are available on request. Say your heat level and any dietary restriction when you order — the company answers exactly these questions on its own website, so the staff are used to being asked."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13003605/",
+   "https://www.delhi.co.jp/store/ueno.php",
+   "https://www.delhi.co.jp/faq/",
+   "https://www.delhi.co.jp/process/"
+  ],
+  "enrich_note": "Confirmed and heavily documented from the company's own live site. A nationwide Tabelog search for デリー 上野店 (double-encoded rstLst, HTTP 200, 72件) returns デリー 上野店 = 13003605 first, with デリー 銀座店 and デリー 札幌店 following, so the brand and the branch both resolve cleanly. The Tabelog detail page (iPhone UA, HTTP 200) gives 文京区湯島3-42-2 at 35.70828/139.77126 and links delhi.co.jp; the company site (HTTP 200) then confirms the same address and phone on its own 上野店 page and is demonstrably current, with a president's blog entry dated 2026.08.21. Coordinates moved about 490 m from the sweep's approximate pin; loc_precise true. Note for the merge that the address is Bunkyō-ku (Yushima), not Taitō-ku, even though the shop reads as Ueno — the light record's 湯島・上野広小路 was correct. The light record's インド・パキスタン料理・カレー matches the company's own self-description exactly. vegan_status moved down from the light record's 'options' to 'ask' on the shop's own words: its FAQ says there is no vegetarian dish, only a willingness to adapt one on request. gf_confidence stays 'ask' but is now evidence-backed in both directions — no bread of any kind at this branch, and a house style that rejects thickening, against no published allergen statement."
+ },
+ {
+  "id": "tokyo3_tetsu",
+  "status": "confirmed",
+  "name": "つけめんTETSU 御徒町らーめん横丁店",
+  "lat": 35.705943,
+  "lng": 139.77462,
+  "loc_precise": true,
+  "address_ja": "〒110-0005 東京都台東区上野5-10-14 御徒町ラーメン横丁",
+  "enrich_confidence": "high",
+  "cuisine": "Thick pork-and-fish tsukemen with the extra-fat noodles that made the brand's name — and the trick it is known for: a hot stone dropped into your dipping broth when it cools, so the last mouthful is as hot as the first. Bowls around ¥1,000–¥1,500, open 11:00 to 23:00 with cards, IC and QR all accepted.",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Ueno 5-chōme, in the Okachimachi Ramen Yokochō arcade toward the Akihabara end — a few minutes from Okachimachi (JR Yamanote/Keihin-Tōhoku), Naka-okachimachi (Tokyo Metro Hibiya line) and Suehirochō (Ginza line).",
+  "website": "http://www.tetsu102.com/",
+  "menu_url": "http://www.tetsu102.com/",
+  "hours_raw": "11:00 - 23:00（L.O. 22:45）",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "The noodle is the brand's stated selling point and it is aggressively wheat: TETSU's own About Us describes 「うどん用粉をブレンドした強腰の『極太麺』」 — udon flour blended in to give the extra-thick noodle its backbone. The dipping broth is a 濃厚豚骨魚介 pork-and-fish stock finished with soy sauce, and there is a rice bowl and gyōza-style side menu in the same kitchen. Nothing here is or can be made gluten-free.",
+  "vegan_status": "no",
+  "vegan_detail": "No. The house broth is pork bone plus dried fish, the noodles are served with chāshū, and the brand's other menu line is a pork rice bowl (炊き込み豚飯). No plant-based bowl appears on the group's site.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "運営：株式会社クリエイト・レストランツ・ホールディングス (Create Restaurants Holdings) — the group that now operates the つけめんTETSU chain"
+   ],
+   "origin": "Sendagi, Bunkyō-ku — the brand started there in 2005 in a shop of about ten tsubo",
+   "background": "つけめんTETSU began in 2005 in a roughly 33 m² room in Sendagi and is one of the shops usually credited with driving the modern tsukemen boom: at the time the combination of a heavy pork-and-fish broth with a very thick noodle cut from a blend including udon flour was still unusual. Its signature service is the 焼き石 — a heated stone dropped into the dipping broth partway through the meal, which answers the standing complaint about tsukemen, that the broth goes cold before the noodles run out. The chain now runs around twenty shops from Ibaraki to Osaka under Create Restaurants Holdings, with sister brands 江戸前煮干中華そば きみはん and 博多豚骨たかくら. The Okachimachi branch sits inside the Okachimachi Ramen Yokochō arcade at 上野5-10-14, has 23 seats (15 at the counter plus two tables of four), and is one of the group's late shops, open to 23:00.",
+   "philosophy": "From the group's own About Us: 「TETSUの代名詞といえば、最後の一滴まで熱々で召し上がっていただくための「焼き石」のサービス。スープが冷めてしまうというつけめん最大の弱点を克服し、常に最高の状態でお客様に一杯を提供し続けています。」",
+   "specialty": "濃厚豚骨魚介つけめん with 極太麺 and the 焼き石 reheating stone; the group also runs 炊き込み豚飯 (a pork rice bowl) and a 中華そば line, and puts out seasonal specials — the summer 2026 one was a chilled tantanmen using golden sesame from a 140-year-old sesame merchant.",
+   "anecdotes": [
+    {
+     "text": "The hot-stone service is the brand's whole identity — it exists specifically to defeat the one thing everyone complains about with tsukemen, that the dipping broth goes lukewarm halfway through.",
+     "source": "http://www.tetsu102.com/"
+    }
+   ],
+   "japanese_sources_summary": "The chain's own site tetsu102.com (HTTP 200, live — news items dated 2026年08月20日, 08月19日 and 06月20日) states the 2005 Sendagi founding in a 10-tsubo shop, the 濃厚豚骨魚介スープ plus 極太麺 blended with udon flour, and the 焼き石 service; its SHOP LIST names つけめんTETSU 御徒町らーめん横丁店, 東京都台東区上野5-10-14, 03-5816-8358 — confirming the branch is currently trading — alongside about twenty others in Ibaraki, Saitama, Tokyo, Kanagawa, Aichi, Kyoto, Nara and Osaka, and the footer is Create Restaurants Holdings. The site offers an English version. Tabelog 13176725 gives 台東区上野5-10-14 御徒町ラーメン横丁 at 35.70594/139.77462, the same phone, hours 11:00–23:00 (L.O. 22:45), 23 seats (counter 15, two tables of 4), all non-smoking, no reservations, children welcome, budget ￥1,000〜￥1,999, cards (VISA/Master/JCB/AMEX), transport IC / Edy / nanaco / WAON / iD / QUICPay, and PayPay / d払い / 楽天ペイ / au PAY / Alipay / WeChat Pay, and a 3.19 rating over 372 reviews.",
+   "confidence": "high",
+   "sources": [
+    "http://www.tetsu102.com/",
+    "https://tabelog.com/tokyo/A1311/A131101/13176725/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A single noodle boiler running an extra-thick wheat noodle cut from a blend that includes udon flour; the brand advertises the flour blend as a feature.",
+     "source": "http://www.tetsu102.com/"
+    }
+   ],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "high",
+   "note": "One of the easiest ramen stops in the area for a visitor. It takes cards, every major transport IC and e-money, and six QR wallets including Alipay and WeChat Pay — so no cash needed at all, which is unusual for ramen. Twenty-three seats with actual tables as well as a counter, all non-smoking, children welcome, and it runs 11:00 to 23:00, so it works as a late dinner. The group's website has an English version. If the dipping broth cools, ask for the 焼き石 — the hot stone is a standard part of the service, not a special request."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13176725/",
+   "http://www.tetsu102.com/"
+  ],
+  "enrich_note": "Confirmed, including that the branch is still trading — which was the thing worth checking, since arcade shops like this turn over. A nationwide Tabelog search for つけめんTETSU 御徒町 (double-encoded rstLst, HTTP 200, 3件) returns つけめんTETSU 御徒町らーめん横丁店 = 13176725 as the only match on that name; the detail page (iPhone UA, HTTP 200) gives 台東区上野5-10-14 御徒町ラーメン横丁 at 35.70594/139.77462, about 340 m from the sweep's approximate pin, so loc_precise is now true. The branch then appears by name, address and phone on the chain's own current SHOP LIST at tetsu102.com (HTTP 200, news current to 20 August 2026), which is the independent confirmation that it has not quietly closed. The light record's つけ麺 and 台東区上野 (Okachimachi Ramen Yokocho) both check out — the yokochō is in the registered address. The gluten verdict is unusually well-evidenced for a ramen shop: the brand states in its own words that udon flour is blended into the noodle."
  }
 ]

@@ -226,6 +226,24 @@
  },
  {
   "city": "kyoto",
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "name": "Yoshuji",
+  "field": "vegan_cross_contact",
+  "text": "Reports conflict on stock: a more recent review and on-site signage state the food is fully vegan with no fish stock and",
+  "source": "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+  "why": "QUOTE CUT BEFORE ITS OWN CONTRADICTION. The signage line is not reassurance on that page — it opens with ‘Oddly’ and belongs to the review that reports FISH. The record recruits it as evidence FOR veganness, inverting its meaning. Keep ‘reports conflict’; strike ‘and on-site signage’."
+ },
+ {
+  "city": "kyoto",
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "name": "Yoshuji",
+  "field": "positives",
+  "text": "An entirely meat- and fish-free shojin-ryori menu, which removes many cross-contact risks that come with mixed kitchens,",
+  "source": "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+  "why": "LABEL CONTRADICTS ITS OWN CITED PAGE. ‘Entirely fish-free’ is the single thing the cited page reports otherwise. Reword to ‘meat-free shojin menu; fish stock has been reported in a set side — confirm on ordering’."
+ },
+ {
+  "city": "kyoto",
   "id": "ChIJq_Gt7mUJAWARdOvjkos8A7s",
   "name": "UNO RAMEN – Kyoto Station",
   "field": "gf_cross_contamination",
@@ -793,6 +811,15 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_chacole",
+  "name": "ちゃこーる (Chacole)",
+  "field": "soy_sauce_wheat",
+  "text": "The tare glazing sauce used on charcoal-grilled yakitori is, per standard preparation, soy-sauce based and therefore con",
+  "source": null,
+  "why": "SAYING THIS LOUDLY, as the brief asks. The general proposition (yakitori tare is soy-based, soy is wheat-brewed) is true, but it is asserted here about a specific shop that no source shows using tare, and whose only documented seasonings are salt and yuzu-kosho. The claim's second half ('no gluten-f"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo_marugoto_vegan_dining_as",
   "name": "まるごとVeganダイニング浅草 (Marugoto Vegan Dining Asakusa)",
   "field": "positives",
@@ -853,6 +880,24 @@
   "text": "All cakes on the menu are made gluten-free using kibi (unrefined cane) sugar rather than white sugar; for specific aller",
   "source": "https://fruoats.jp/blog/2023/10/26/shinjuku-glutenfree-cafe/",
   "why": "SPLIT THIS CLAIM. The きび砂糖 half is real and sits at san-tatsu (「ケーキはすべてグルテンフリーで、ミネラル豊富なきび砂糖を使い」). The 'callers are directed to confirm ingredients by phone' half is on NO page I could find and should be DELETED - it is a staff_allergy_handling assertion, i.e. exactly the kind a celiac acts on. What "
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo_vegetus_plus",
+  "name": "ヴェジェトゥス プラス（vegetus+） (Vegetus Plus)",
+  "field": "gf_cross_contamination",
+  "text": "Search results across HotPepper, san-tatsu, and generalist directories describe the shop only as offering 'vegan, gluten",
+  "source": "WebSearch aggregate (hotpepper.jp/strJ001257943, san-tatsu.jp/articles/312127, tabelog.com/en/.../13209612)",
+  "why": "This 'claim' is a description of a previous agent's search session, not a statement about the venue, and it cannot be cited as written. Worse, the tagging it reports is the load-bearing evidence for the record's gf_detail ('Multiple independent listings describe the shop as offering vegan and gluten"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo_vegetus_plus",
+  "name": "ヴェジェトゥス プラス（vegetus+） (Vegetus Plus)",
+  "field": "positives",
+  "text": "Meals are made with organic and low-pesticide vegetables, brown rice, and homemade dressings/sauces with no preservative",
+  "source": "https://tabelog.com/en/tokyo/A1310/A131003/13209612/",
+  "why": "THREE SEPARATE ERRORS IN ONE SENTENCE. (1) 'brown rice' is wrong: the shop serves 雑穀米, a house-blended MULTIGRAIN rice, not 玄米 - and multigrain blends routinely carry barley. (2) 'the shop explicitly lists vegan and gluten-free options' is supported by nothing: the shop's own site never uses either "
  },
  {
   "city": "tokyo",
@@ -1324,6 +1369,42 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__148",
+  "name": "アトミヨソワカ 蔵前店",
+  "field": "gf_cross_contamination",
+  "text": "Uses JAS oatmeal — confirm oats are certified gluten-free-purity if you are oat-sensitive.",
+  "source": null,
+  "why": "The oats are real and the caution is right; the certification is invented. 'JAS' and 'organic' are not interchangeable and neither implies gluten-free-purity oats, so a record that hands an oat-sensitive celiac a certification the maker never claimed is worse than one that says nothing. Rewrite as '"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__148",
+  "name": "アトミヨソワカ 蔵前店",
+  "field": "positives",
+  "text": "Fully vegan and gluten-free menu — every item is safe to order.",
+  "source": null,
+  "why": "THE ONE LINE TO CHANGE ON THIS RECORD. 'Every item is safe to order' is the app telling a celiac to stop checking — which the protocol reserves for a human-gated tier, and which no page here supports. It also contradicts the record's own gf_cross_contamination block two fields earlier, which tells t"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__148",
+  "name": "アトミヨソワカ 蔵前店",
+  "field": "positives",
+  "text": "Rice-flour based; transparent about ingredient sourcing (Tosa Reihoku rice, JAS oats/agave, homemade apple yeast, domest",
+  "source": null,
+  "why": "Two of the five sourcing details drift from the page. The site says the rice flour is 四万十川源流で育った — grown at the headwaters of the Shimanto — not 土佐れいほく米; and the oats are ORGANIC, not JAS, the same error as the GF claim above. Agave, homemade apple yeast and domestic okara are exact. Ironic defect: "
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__149",
+  "name": "結わえる 蔵前本店",
+  "field": "positives",
+  "text": "Multiple rice choices (brown, white, hijiki, millet) so a plain GF/plant rice is always available",
+  "source": null,
+  "why": "LOOKS TRANSPLANTED FROM ANOTHER YUWAERU OUTLET. This is the flagship 蔵前本店 and its whole identity is the single aged-brown-rice staple, so a four-way rice choice is not a detail that would be omitted. Delete, and replace with what IS there and is genuinely useful: 「箱膳定食 主菜なし・汁大 ¥1,000」 — a set with N"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3_earthful_cafe_tokyo",
   "name": "Earthful Cafe Tokyo",
   "field": "gf_cross_contamination",
@@ -1492,6 +1573,24 @@
   "text": "English/picture menu and tourist-friendly ordering",
   "source": null,
   "why": "Nothing published for the UENO branch evidences an English or picture menu. The bilingual document in this brand belongs to the Tokyo/Akihabara chart — another sibling-branch leak. Either drop it or downgrade to 'photo-led ramen counter; no English menu documented for this branch'."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__213",
+  "name": "ベジ・ハーブ・サガ",
+  "field": "staff_allergy_handling",
+  "text": "Menu is explicitly split into Vegan, Vegetarian and Jain categories",
+  "source": null,
+  "why": "WRONG AS STATED, and it under-sells what is actually there. The real system is a binary ★ marker meaning 'vegans can eat this' applied item by item — genuinely useful, and better than the claim describes for a vegan, while offering nothing at all for a Jain diner who is told a Jain category exists. "
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__213",
+  "name": "ベジ・ハーブ・サガ",
+  "field": "positives",
+  "text": "Halal-certified; English menu; used to foreign vegetarian, vegan and Muslim diners",
+  "source": null,
+  "why": "OVERCLAIM on the load-bearing word. 'Halal food is OK' in an alcohol-free, 100%-vegetarian kitchen is close to a tautology; 'Halal-CERTIFIED' asserts an audited credential that no source supports. Downgrade to 'no alcohol, no meat — suitable for halal diners; certification not claimed'. The English-"
  },
  {
   "city": "tokyo",
@@ -2017,6 +2116,15 @@
  },
  {
   "city": "nagoya",
+  "id": "nagoya_yakitori_kanda",
+  "name": "焼鳥 かん田 (Yakitori Kanda)",
+  "field": "vegan_cross_contact",
+  "text": "Entire menu is animal-based; vegan cross-contact is not a meaningful concept here as no plant-based dishes are offered.",
+  "source": null,
+  "why": "FALSE AS WRITTEN. Named-farm seasonal vegetables are a documented, praised part of the course. The conclusion is still right — the vegetables arrive inside a fixed chicken course over one shared fire, so a vegan cannot eat here and vegan_status 'no' stays correct — but 'no plant-based dishes are off"
+ },
+ {
+  "city": "nagoya",
   "id": "nagoya_teuchi_soba_sougen",
   "name": "手打ちそば 創愿 (Teuchi Soba Sougen)",
   "field": "gf_cross_contamination",
@@ -2149,6 +2257,15 @@
   "text": "Uses 米粉 (rice flour) and 大豆粉 (soy flour) as the base for cakes and baked goods.",
   "source": "https://vegebio.jp/lp/shopinfo/",
   "why": "The 米粉 half is on the cited page. 大豆粉 appears nowhere — not on the cited page, not elsewhere on vegebio.jp, and not in a site-restricted search. The operator's stated second base is soaked raw nuts (cashew/almond/walnut) for the raw-sweets line, not soy flour. Delete the 大豆粉 assertion; it also matte"
+ },
+ {
+  "city": "nagano",
+  "id": "nagano_kadono_daimaru",
+  "name": "かどの大丸 (Kadono Daimaru)",
+  "field": "gf_cross_contamination",
+  "text": "No information is published about the soba kitchen's wheat-handling practices. Traditional soba shops often mix in wheat",
+  "source": "https://tabelog.com/en/nagano/A2001/A200101/20000487/",
+  "why": "LOUD: the claim's operative assertion is FALSE and it under-warns. It is not 'unknown whether this shop processes wheat products on the same surfaces' — udon (100% wheat) is on the menu, documented by two of the record's own three sources. And the shop's number-one seller is さらしなそば, milled from the "
  },
  {
   "city": "nagano",

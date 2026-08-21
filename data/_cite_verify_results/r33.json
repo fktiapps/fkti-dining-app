@@ -1,0 +1,183 @@
+[
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a shojin-ryori (Buddhist vegetarian) kitchen, not a dedicated gluten-free one. Handmade soba (buckwheat noodles, which in Japan are commonly cut with wheat flour) is a core part of the menu, so wheat is regularly handled in the kitchen and a celiac should not assume the soba is safe.",
+  "url": "https://www.insidekyoto.com/yoshuji-restaurant-kurama",
+  "verdict": "wrong_source",
+  "found": "Cited page says only: “You can choose from sets of Buddhist vegetarian cuisine or simpler bowls of noodles.” It never names soba, never says handmade, never mentions wheat. Real support: Tabelog files 雍州路 under 日本料理､そば､カフェ and lists とろろそば; wantabi's entry reads 「精進膳と手打ちそば」; the shop's own Instagram writes 「コシのある手打ち蕎麦」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260502/26001600/",
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch of the cited page + s.tabelog.com mobile-host fetch + Yahoo Japan exact-string search",
+  "note": "The shojin half is on the cited page; the handmade-soba half is not. Repoint to the Tabelog listing (genre そば, dish とろろそば), or https://wantabi.co.jp/spots/yoshuji-kurama-kyoto for 手打ちそば."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Set meals include items seasoned with miso and soy-based sauces (for example konnyaku with a dark miso sauce and white-miso preparations). These typically contain wheat, so dishes are not inherently gluten-free; an adapted plate would need to be requested and confirmed in advance.",
+  "url": "https://www.neverendingvoyage.com/vegetarian-kyoto/",
+  "verdict": "supported",
+  "found": "“We chose the cheapest Hana set (2200 yen / $14), which came with rice, miso soup, pickles, enoki mushrooms, goma dofu (chilled sesame tofu), mashed tofu with wild greens, mashed yam with seaweed, and konnyaku served like sashimi with a dark miso sauce.”",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "plain fetch",
+  "note": "Konnyaku-with-dark-miso-sauce and miso soup are verbatim on the page. “white-miso preparations” is NOT — 白味噌 / white miso appears nowhere on it. Drop that clause or source it separately."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes here rely on soy sauce and miso, the bulk of which in Japan is brewed with wheat. Assume soy sauce and miso contain wheat unless staff confirm otherwise.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "“... came with rice, miso soup, pickles ... and konnyaku served like sashimi with a dark miso sauce.” (Never Ending Voyage, Yoshuji entry)",
+  "correct_url": "https://www.neverendingvoyage.com/vegetarian-kyoto/",
+  "http": "200 (plain fetch)",
+  "method": "uncited claim → hunted; support sits on a page the record already cites for a sibling claim",
+  "note": "UNCITED. The miso/soy dependence is evidenced by the Never Ending Voyage set-meal breakdown — attach that URL. The ‘brewed with wheat’ generalisation stays background, and the claim already frames it as an assumption."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is largely vegan, but a diner reported that one side dish contained dashi (fish stock) and had to request it be removed, so not every plate is vegan by default.",
+  "url": "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+  "verdict": "supported",
+  "found": "“Food was good but we asked the waitress to confirm if everything was vegan. She said one of the side dishes that comes with the set contained dashi. She happily ...” (review on the cited page)",
+  "correct_url": null,
+  "http": "403 Incapsula on direct curl (iPhone UA and desktop Chrome UA, with and without cookie jar); web.archive.org has no snapshot of this URL and returned 403",
+  "method": "route 4 — exact-string search on Yahoo Japan, which returns the sentence attributed to this exact URL",
+  "note": "HappyCow is behind Incapsula today, contrary to the brief's 2026-08-21 note: every UA tried gets the Incapsula shell. Verified through the search index instead."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Reports conflict on stock: a more recent review and on-site signage state the food is fully vegan with no fish stock and no animal ingredients, while an earlier report flagged dashi in a side. Confirm fish-stock use when ordering rather than relying on the menu's vegan framing.",
+  "url": "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+  "verdict": "unsupported",
+  "found": "The page's signage sentence is “Oddly there was a sign out front that said no meat, no fish and the menu said no animal ingredients.” — and that same review's Cons field reads “Fish.” A different review does say “Fully vegan, no fish stock used.”",
+  "correct_url": null,
+  "http": "403 Incapsula on direct curl; verified via search index",
+  "method": "route 4 — Yahoo Japan exact-string search against the cited URL",
+  "note": "QUOTE CUT BEFORE ITS OWN CONTRADICTION. The signage line is not reassurance on that page — it opens with ‘Oddly’ and belongs to the review that reports FISH. The record recruits it as evidence FOR veganness, inverting its meaning. Keep ‘reports conflict’; strike ‘and on-site signage’."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Dairy is present for some items: milk is used for drinks, and the ice cream desserts are not vegan. Stick to the shojin sets and noodle bowls and skip the ice cream for a vegan meal.",
+  "url": "https://www.neverendingvoyage.com/vegetarian-kyoto/",
+  "verdict": "supported",
+  "found": "“Yoshuji is a vegetarian restaurant in the village of Kurama in the mountains north of Kyoto. It’s mostly vegan except for milk for drinks and ice cream.”",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "plain fetch",
+  "note": "Exactly on the page, and independently corroborated by a HappyCow review: “Note that the ice-creams sadly weren't vegan.” Accurate as written."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "staff_allergy_handling",
+  "quote": "Staff speak some English and accommodated a request to remove a dashi-containing side dish, suggesting requests can be made, though you should be explicit about needs.",
+  "url": "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+  "verdict": "supported",
+  "found": "“... we asked the waitress to confirm if everything was vegan. She said one of the side dishes that comes with the set contained dashi. She happily ...”",
+  "correct_url": null,
+  "http": "403 Incapsula on direct curl; verified via search index",
+  "method": "route 4 — Yahoo Japan exact-string search",
+  "note": "The accommodation is on the page. ‘Staff speak some English’ is inference from an English exchange; Never Ending Voyage (“There is an English menu outside”) and TripAdvisor back it if you want it cited."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "An entirely meat- and fish-free shojin-ryori menu, which removes many cross-contact risks that come with mixed kitchens, making it a comfortable choice for vegetarians and a strong starting point for vegans who confirm stock and dairy.",
+  "url": "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+  "verdict": "unsupported",
+  "found": "The same page carries “She said one of the side dishes that comes with the set contained dashi” (that review's Cons: “Fish”) and “Note that the ice-creams sadly weren't vegan.” HappyCow's own label for the venue is “Vegetarian Restaurant”, described as “Japanese soba noodle restaurant with an English vegan/vegetarian menu”.",
+  "correct_url": null,
+  "http": "403 Incapsula on direct curl; verified via search index",
+  "method": "route 4 — Yahoo Japan exact-string searches against this URL and the HappyCow Kyoto directory page",
+  "note": "LABEL CONTRADICTS ITS OWN CITED PAGE. ‘Entirely fish-free’ is the single thing the cited page reports otherwise. Reword to ‘meat-free shojin menu; fish stock has been reported in a set side — confirm on ordering’."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "kind": "record_verdict",
+  "verdict": "defective",
+  "note": "Two claims are contradicted by the very page cited for them (the signage framing, and ‘entirely meat- and fish-free’); one claim is uncited; one cites a page that does not carry the soba assertion. The dairy, dashi and staff claims are sound."
+ },
+ {
+  "id": "ChIJnTF3sxKmAWARR3A8VabHPls",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "full",
+  "recommended": "options",
+  "evidence": [
+   "https://www.neverendingvoyage.com/vegetarian-kyoto/",
+   "https://www.happycow.net/reviews/yoshuji-kyoto-33054",
+   "https://www.happycow.net/asia/japan/kyoto/?page=4"
+  ],
+  "why": "“It’s mostly vegan except for milk for drinks and ice cream”; a HappyCow reviewer records dashi in a set side dish and another notes “the ice-creams sadly weren't vegan”; HappyCow files the venue as a Vegetarian Restaurant, not a vegan one. NOTE: data/kyoto.json already carries vegan_status=\"options\" with a 2026-08-20 hold note — the shard's “vegan”:“full” is stale. No change needed; recorded so the existing downgrade stays evidenced."
+ },
+ {
+  "id": "ChIJuy-UkyUGAWARUoVmo8QyEwE",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is a charcoal yakitori shop where many skewers are basted in tare (a sweet soy-based sauce), and skewers are grilled together over a shared fire, so cross-contact between tare and salt-grilled items on the same grill is likely. It is not confirmed gluten-free safe; a celiac diner should treat it with caution and confirm directly.",
+  "url": "https://kyotopi.jp/articles/sKfKq",
+  "verdict": "supported",
+  "found": "「当然焼き手は大将ただ一人。見事な早業で串をコロコロ回したり、途中でタレに漬けたり、梅ペーストを乗せたり」 and 「つくね￥260はたれ焼、軟骨￥300は塩焼き」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "Tare-dipping mid-grill and tare/shio items off one fire are both on the page. ‘Charcoal’ is NOT — this 2016 article never says 炭火; 備長炭 is documented for the ENMACHI branch, not the honten. Drop ‘charcoal’ here or evidence it separately."
+ },
+ {
+  "id": "ChIJuy-UkyUGAWARUoVmo8QyEwE",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The standard tare sauce used to baste skewers is soy-sauce based, and most Japanese soy sauce contains wheat. Salt-grilled (shio) skewers avoid the tare entirely and are the safer choice, but should still be confirmed with the grill master, who prepares everything himself.",
+  "url": "https://kyotopi.jp/articles/sKfKq",
+  "verdict": "supported",
+  "found": "「途中でタレに漬けたり」 / 「軟骨￥300は塩焼き」 / 「当然焼き手は大将ただ一人」",
+  "correct_url": null,
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "plain fetch",
+  "note": "The tare/shio split and the one-man grill are on the page. The page never states what the tare is made of; the record already frames that as an assumption, which is the honest form."
+ },
+ {
+  "id": "ChIJuy-UkyUGAWARUoVmo8QyEwE",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The menu is built around grilled chicken and other meat skewers, with only a few non-meat items such as asparagus skewers (which are typically wrapped with chicken). There are no documented vegan or vegetarian options, and any vegetable skewers are grilled over the same charcoal as the meat, so cross-contact is unavoidable. Not suitable for vegans.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「真ん中は「アスパラま」でネギマのアスパラ版なのだ。マヨネーズソースにクラッシュドナッツまでかけている」, plus 「豚バラトマトチーズは￥400」 and 「鳥刷身はハツ、ズリ、キモにささみ」",
+  "correct_url": "https://kyotopi.jp/articles/sKfKq",
+  "http": "200 (plain fetch, iPhone UA)",
+  "method": "uncited claim → hunted; support is on the page the record already cites for its two gf claims",
+  "note": "UNCITED but fully evidenced, and stronger than the record states: アスパラま is literally ‘the asparagus version of negima’ (asparagus banded with chicken) and carries a mayonnaise sauce, so it is non-vegan before any grill contact. Attach https://kyotopi.jp/articles/sKfKq ."
+ },
+ {
+  "id": "ChIJuy-UkyUGAWARUoVmo8QyEwE",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Because it is a single owner-operator doing all the prep and grilling, you can speak directly to the person handling your food and ask for shio (salt) preparation to avoid the soy-based tare.",
+  "url": "https://tabelog.com/kyoto/A2601/A260203/26002387/dtlrvwlst/",
+  "verdict": "supported",
+  "found": "「マスターの仕込みと焼きっぷりがスバラです」 (reviewer もーええわ, 2026/04 visit) — the master does both prep and grilling, recorded this year.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "mobile-host fetch of the cited review list",
+  "note": "Supported and current. WATCH: the same Tabelog listing warns 「2024年3月よりの新体制。メニュー内容、販売スタイルにも若干の変更があります。過去データは参考としてご利用ください」 — new management since March 2024, so the 2016 kyotopi article behind both gf claims is pre-changeover evidence."
+ },
+ {
+  "id": "ChIJuy-UkyUGAWARUoVmo8QyEwE",
+  "kind": "record_verdict",
+  "verdict": "repairable",
+  "note": "Nothing false. One uncited claim has its source waiting on a page the record already uses; ‘charcoal’ is imported from the sibling branch's article; and both gf claims rest on a 2016 write-up predating the shop's March-2024 change of management."
+ }
+]

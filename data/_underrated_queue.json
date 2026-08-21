@@ -102,6 +102,20 @@
   "why": "UNDER-RATED, and this is the BITTE pattern almost exactly. The record shows 'GF - ask' on a venue whose own name is Gluten-Free Deli, whose own site says 「グルテンフリー専門店」, whose operator-written Tabelog corporate listing carries the headline badge 'Gluten Free Specialty Store' plus 'We accommodate various allergies' and 'Allergy information available', and whose FindMeGlutenFree listing reads 'Reported to be dedicated gluten-free' across 11 recent ratings - nine of them tagged 'Dedicated GF', with two 'Dedicated gluten-free kitchen' safety reports and a celiac review five days old saying 'The menu is totally gluten free'. The shop went gluten-free because the owner became gluten-intolerant. Even the beer is 小麦・大麦不使用. Two things the human gate should weigh before promoting: (a) one recent celiac reviewer logged 'Yes - mild symptoms' while still marking the kitchen dedicated, and (b) the same owner runs a wheat PANINOTECA, two wheat Italian restaurants and a frozen-pizza business under the il Viale group, though AL CAMINO trades from a separate address. If those give pause, 'high' (Strong GF focus) is the floor - 'ask' is not defensible either way."
  },
  {
+  "city": "kyoto",
+  "id": "ChIJGVRVdgAHAWARYgpMlKmu06k",
+  "name": "Hachidori Table",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://tabelog.com/en/kyoto/A2601/A260604/26043775/",
+   "https://vegewel.com/en/restaurant/2433",
+   "https://vegewel.com/ja/restaurant/2433"
+  ],
+  "why": "UNDER-RATED. The record carries 'GF - ask' (GF unverified) while the operator states on its own Tabelog corporate listing 「Some menu items are available as 'gluten-free.'」 and Vegewel lists the shop with a 「グルテンフリーメニューあり」 badge in both languages. Documented gluten-free items are exactly what 'Some GF options' means; 'unverified' is inaccurate. The cross-contact warning stays in the detail text unchanged - Sesame Ramen, Soy Meat Katsu Don and curry udon share the kitchen and nothing describes a dedicated station - so this promotion adds information without lowering anyone's guard."
+ },
+ {
   "city": "nagoya",
   "id": "nagoya_yakitori_arai",
   "name": "焼鳥 あらい (Yakitori Arai)",
@@ -182,6 +196,20 @@
    "https://www.beppinsya.com/%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/"
   ],
   "why": "UNDER-RATED. The record carries gf_uncited_downgrade {from: 'options', date: 2026-08-20, 'Tier held down: no safety finding on this record cites a source. Restore through REVIEW_PROTOCOL.md once evidence is attached.'} — that condition is now met. The operator's own site states 「小麦粉を使わないグルテンフリーカリー」 and 「The spice curry without wheat flour」, and the Kanda Curry Grand Prix organiser states the same thing independently of the shop. Every curry on the published menu is wheat-flour-free and no naan or bread appears anywhere on it. Restore 'options'. Do NOT act on the record's separate gf_proposed_tier of 'high': there is no dedicated-equipment claim, no allergen protocol, no certification, and the shop still braises in wine and shares one small lunch-only kitchen — 'options' is what the evidence carries. Fix the Jimbocho pin first; a restored GF tier pointing at a branch that closed in 2023 would send a celiac to the wrong door."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__148",
+  "name": "アトミヨソワカ 蔵前店",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "high",
+  "evidence": [
+   "https://atomiyosowaka.jp/about/",
+   "https://atomiyosowaka.jp/menu/",
+   "https://atomiyosowaka.jp/"
+  ],
+  "why": "UNDER-RATED, and the record already knows it — it carries gf_uncited_downgrade {from: 'options'} whose stated condition ('restore once evidence is attached') is now met, alongside a gf_proposed_tier of 'dedicated'. The evidence: the brand's own identity line is 「ヴィーガンスイーツ・グルテンフリースイーツ 米粉菓子」, it states 「米粉を使っているので、小麦アレルギーの方も安心してお召し上がりいただけるおいしい米粉菓子です」, and all 24 published products are rice-flour bakes with no wheat item anywhere on the site. Per the owner's ruling, writing 小麦アレルギー rather than セリアック does not weaken this. 'high' rather than 'dedicated': the operator never states a dedicated facility or equipment separation, uses organic oatmeal of unstated gluten-purity, and co-produces part of the range at an external workshop (ろくえもん) whose handling is undocumented. Those two questions are exactly what REVIEW_PROTOCOL.md's human gate should put to the shop before anything above 'ask' goes live."
  },
  {
   "city": "tokyo",

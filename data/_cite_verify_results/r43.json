@@ -300,5 +300,110 @@
   "city": "tokyo",
   "record_verdict": "defective",
   "note": "Three of eight claims unsupported, two of them resting on the same content-farm page (novacircle) - including the staff_allergy_handling assurance. Trading status fine: open, Thu-Sat, reservation-only, confirmed by a February 2026 first-hand visit. NO tier change needed in either direction: vegan_status 'full' is genuinely well-evidenced (owner interview 「ヴィーガン料理専門店」 and 「魚や肉をメニューに加えると…」, VegeMap 'All Vegan', an eleven-course all-plant meal report), and gf_confidence 'no' is right (kuruma fu, ramen, bread, pani puri, soba, wheat pasta and a multigrain cracker are all documented). The defect here is the sourcing, not the labels."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Search results across HotPepper, san-tatsu, and generalist directories describe the shop only as offering 'vegan, gluten-free, and takeout' as tag-style options with no detail; explicit statement that results 'do not contain specific information about Celiac disease accommodations, detailed gluten-free menu items, or wheat allergy warnings' and to 'contact the restaurant directly.'",
+  "url": null,
+  "verdict": "unsupported",
+  "found": "I cannot reproduce the 'vegan, gluten-free' tagging anywhere. The shop's own five-page website contains ZERO occurrences of グルテン, ヴィーガン, vegan, アレル, 小麦 or 醤油. Tabelog (a corporate-member listing, i.e. maintained by the shop) tags it 「ベジタリアンメニューあり」 / 'Vegetarian options' - vegetarian, not vegan, and gluten-free appears nowhere. A Yahoo Japan search for Vegetus+ 神田三崎町 グルテンフリー returns the shop's listings with no gluten-free reference in any of them.",
+  "correct_url": null,
+  "http": "200 on all five official pages and both Tabelog locales; Yahoo Japan 200 on the second attempt after a 429",
+  "method": "fetched every page of the official Ameba Owned site and grepped each; s.tabelog.com JP and EN with an iPhone UA; Yahoo Japan exact search after backoff",
+  "note": "This 'claim' is a description of a previous agent's search session, not a statement about the venue, and it cannot be cited as written. Worse, the tagging it reports is the load-bearing evidence for the record's gf_detail ('Multiple independent listings describe the shop as offering vegan and gluten-free menu options') and for the cuisine field 「有機野菜・ベジタリアン・グルテンフリー対応」. I could not find the gluten-free half of that anywhere. It should be struck from gf_detail and from cuisine unless someone produces the listing."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Shop philosophy and preparation detail describe cold-pressed oils, sea salt, unrefined cane sugar, 'no chemical seasonings or preservatives,' and 'all dressings and sauces are homemade' — a natural-food posture with no mention of wheat-free soy sauce, dedicated fryer, or allergen separation.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「Vegetus+で使う油は、より安全・安心な機械搾りの菜種油とエキストラバージンオリーブオイルのみです。」/「塩はイタリア産の天然塩、砂糖はきび糖を使用しています。」/「保存料など不必要な添加物や化学調味料を使わずすべて手作りで作っています。」 - all on the shop's こだわり page. The page is indeed silent on soy sauce, fryers and allergen separation.",
+  "correct_url": "https://www.vegetusplus.com/pages/4749439/page_202103142359",
+  "http": "200 (plain fetch)",
+  "method": "fetched all five pages of the official site (Ameba Owned; the root renders as a shell, the content lives on /pages/ sub-paths)",
+  "note": "UNCITED but accurate and now sourceable. Two wording corrections: the oils are 機械搾り (mechanically pressed), not specifically cold-pressed, and the salt is 「イタリア産の天然塩」 (Italian natural salt), not stated as sea salt. THE BIG OMISSION on this same page: 「オリジナル雑穀米 … 独自にブレンドした国産の雑穀米」 - a house-blended multigrain rice served with every plate, whose blend is not itemised. Japanese 雑穀米 blends routinely contain 押麦 or もち麦, both barley, both gluten. That belongs in gf_detail and currently is not there at all."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "HappyCow / FindMeGlutenFree celiac-review search for 'Vegetus Plus Suidobashi gluten free celiac' returned no listing or celiac review for this specific shop — only unrelated dedicated-GF venues (Gluten Free T's Kitchen, Gluten Free 61).",
+  "url": null,
+  "verdict": "unreachable",
+  "found": null,
+  "correct_url": null,
+  "http": "happycow.net/searchmap 403 with a desktop Chrome UA; findmeglutenfree.com search endpoint 404",
+  "method": "plain curl to HappyCow's search with desktop Chrome UA and to FindMeGlutenFree; both refused. Contrary to the brief's 2026-08-21 fetch note, HappyCow 403'd me on the /searchmap path today.",
+  "note": "Could not confirm or refute today. Note this is a negative-search report rather than a claim about the venue, so like the first item on this record it is not citable as written even if re-run successfully. The venue-level point it is trying to make is separately established: the shop publishes no allergen information of any kind."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Shop's self-described concept is 'vegetables plus' animal protein/fat with a daily-changing deli of ~10 items mixing vegan and non-vegan dishes; no confirmation that vegan items avoid dashi/bonito or that non-vegan dashi is kept separate.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「健康はバランスの良い食事から。野菜たっぷりのメニューから肉・魚・卵・シーフードなど幅広いメニューを取り揃えております。デリメニューは週一回、１品が変わります。」 and the live deli list: お野菜たっぷりプルコギ / 豚ヒレ肉の低温ロースト / サバのハーブマリネ / 国産鶏もも肉のオレンジマスタード焼き / 冬野菜のスパニッシュオムレツ / カブと柿とホタテのマリネ / サツマイモとブルーチーズのハニーロースト / タコと大根とセリの柚子胡椒サラダ, against plant-based ones like アボカドのメキシカンサルサ / トレビスとキノコのキヌアサラダ / 根菜とひよこ豆のスパイスロースト. The About Us page confirms the philosophy: 「『万遍なくいろんなものと食べる＝ヘルシーな食事』」.",
+  "correct_url": "https://www.vegetusplus.com/pages/4749403/menu",
+  "http": "200 (plain fetch)",
+  "method": "fetched the official MENU and About Us pages",
+  "note": "UNCITED but sourceable, with one factual correction: the shop says 「デリメニューは週一回、１品が変わります」 - ONE deli item changes ONCE A WEEK, not a 'daily-changing' lineup. Fix that in the record. Two dressings are also animal-derived (バルサミコチーズドレッシング, ヨーグルトドレッシング), which is worth adding to vegan_detail."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "Meals are made with organic and low-pesticide vegetables, brown rice, and homemade dressings/sauces with no preservatives or chemical seasoning, and the shop explicitly lists vegan and gluten-free options among its rotating deli dishes.",
+  "url": "https://tabelog.com/en/tokyo/A1310/A131003/13209612/",
+  "verdict": "unsupported",
+  "found": "The cited English Tabelog page's entire dietary content is one line: 'Menu / Food: Particular about vegetable, Vegetarian options'. It says nothing about organic or low-pesticide vegetables, nothing about rice, nothing about homemade dressings or preservatives, and the words vegan and gluten-free do not appear. The Japanese page carries the shop's own PR, which does support part of it - 「化学調味料無添加でスープ、ドレッシング、ハムなどのシャルキュトリーも全て手作り！ワンプレートに付く雑穀米も栄養バランスを考え独自にブレンドしてます。自家製ベーグルは専門店に負けない本格派！」 - and the organic/low-pesticide half is on the shop's own こだわり page 「お野菜は有機・減農のものを中心に使っています。」",
+  "correct_url": "https://www.vegetusplus.com/pages/4749439/page_202103142359",
+  "http": "200 on both Tabelog locales (s.tabelog.com, iPhone UA)",
+  "method": "iPhone-UA mobile-host fetch of the cited English page and its Japanese counterpart, plus the shop's own こだわり page",
+  "note": "THREE SEPARATE ERRORS IN ONE SENTENCE. (1) 'brown rice' is wrong: the shop serves 雑穀米, a house-blended MULTIGRAIN rice, not 玄米 - and multigrain blends routinely carry barley. (2) 'the shop explicitly lists vegan and gluten-free options' is supported by nothing: the shop's own site never uses either word, and Tabelog says 'Vegetarian options' in both locales. (3) The cited page does not carry the organic/homemade material at all - that is on the shop's own page. AND the Japanese Tabelog PR the record never used contains the two facts that matter most here: the shop makes its own 「ハムなどのシャルキュトリー」 (charcuterie, ham) and bakes its own 「自家製ベーグル」 - wheat-flour bagels, made on the premises."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "defective",
+  "note": "Four of five claims are uncited or wrongly cited, and the one cited claim is unsupported by its own URL and factually wrong on three points. Trading status is fine (open Mon-Fri 11:30-15:00, corporate-member Tabelog listing, reviews through August 2026). The record also misses the shop's two most important disclosures: house-baked bagels and house-blended multigrain rice."
+ },
+ {
+  "id": "tokyo_vegetus_plus",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://tabelog.com/tokyo/A1310/A131003/13209612/",
+   "https://www.vegetusplus.com/pages/4749439/page_202103142359",
+   "https://www.vegetusplus.com/pages/4749403/menu"
+  ],
+  "why": "The shop's own Tabelog PR says 「自家製ベーグルは専門店に負けない本格派！」 - it bakes wheat bagels on the premises of a twelve-seat counter kitchen, which puts flour in the air of the only kitchen there is - and every plate comes with a house-blended 雑穀米 whose grains are not itemised (Japanese multigrain blends routinely include 押麦 / もち麦, i.e. barley). Against that, the gluten-free framing the 'ask' tier rests on does not exist: the shop's own website never writes グルテン or 小麦, and Tabelog tags it 「ベジタリアンメニューあり」, not gluten-free. 'ask' currently invites a celiac to negotiate at a counter that bakes its own bread; 'no' is the honest reading of the operator's own words."
+ },
+ {
+  "id": "tokyo_yakitori_toritan_suidoba",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "Yakitori tare glazes are conventionally wheat-based soy sauce; no gluten-free tare or shoyu alternative was mentioned in any source found for this restaurant.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "The official Tabelog menu (corporate-member listing, 「お店の営業情報は店舗関係者によって公開されています」) lists 「レバー串（塩/たれ）」「ねぎま串（塩/たれ）」「皮串（たれ）」「ぼんじり串（たれ）」「せせり（塩/たれ）」「豚バラ（塩/たれ）」, plus 「げんこつ唐揚げ」「手羽先唐揚げ(3本)」 and the signature 「数量限定!!厚切り牛たん串」. No allergen note, no tamari, no wheat-free tare anywhere on the page.",
+  "correct_url": "https://tabelog.com/tokyo/A1310/A131003/13297261/dtlmenu/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "2 mobile-host Tabelog fetches, top page and dtlmenu (uncited claim — went and found the source)",
+  "note": "UNCITED but cleanly evidenceable — attach the dtlmenu page, which names たれ on six skewer lines and offers no wheat-free version. Two things the record should add while it is being edited. In its favour: most skewers are also sold 塩, and やげん軟骨串 is ガーリック塩, so salt-seasoned skewers are a real (partial) route. Against it: げんこつ唐揚げ and 手羽先唐揚げ are flour-coated in a shared fryer, which is a bigger celiac problem than the tare and is not mentioned in the record at all. gf_confidence 'no' stays right."
+ },
+ {
+  "id": "tokyo_yakitori_toritan_suidoba",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "repairable",
+  "note": "Single uncited claim, true and now sourced to the shop's own Tabelog menu. Trading status fine (open, corporate-member listing, 「本日夜空席あり」). gf 'no' and vegan 'no' are both correct for a yakitori/gyutan izakaya."
  }
 ]

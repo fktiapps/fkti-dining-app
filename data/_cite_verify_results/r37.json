@@ -421,5 +421,134 @@
    "https://tabelog.com/aichi/A2301/A230109/23090511/dtlmenu/"
   ],
   "why": "UNDER-RATED. 'no' says a vegan cannot eat here, but the shop's own 公式 menu (67 items, 更新日 2026/03/28) carries a headed 野菜串 section — 白ネギ, ししとう, にんにく, しいたけ — plus 枝豆, トマトスライス, きゅうり一本漬け, 辛味噌キャベツ and なめたけおろし, and prints 「塩・タレからお選びください」 so the tare can be declined in writing. The record's own menus file already marks 枝豆 vegan and the three vegetable skewers vegan:ask, so the label contradicts the record's own data. The real caveats — shared binchotan grill, chicken drippings, likely bonito on the 冷奴 — are exactly what 'ask' is for."
+ },
+ {
+  "id": "nagoya_yakitori_kanda",
+  "city": "nagoya",
+  "field": "gf_cross_contamination",
+  "quote": "No cross-contamination data available. The kitchen is a tiny owner-operated counter; no allergen protocol has been documented anywhere.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a (source is null)",
+  "method": "Searched the Tabelog store page, the 73-review list and the 6 menu photos for seat count, staffing and any allergen note",
+  "note": "First half true (no allergen protocol anywhere). Second half is NOT documented and should be dropped: Tabelog publishes no 席数 for this shop at all — the whole 席・設備 block is 「個室 無 / 貸切 不可」 and the address is withheld (住所: 愛知県名古屋市, 「住所非公開のため申し訳ございません」). 'Tiny owner-operated counter' is an assumption the record states as fact. Citable substitute: 「お問い合わせ 非公開」 and 「予約可否 予約不可 — 紹介制、会員制でもなく、常連様のご予約のみの店舗」 at https://tabelog.com/aichi/A2301/A230109/23066675/ ."
+ },
+ {
+  "id": "nagoya_yakitori_kanda",
+  "city": "nagoya",
+  "field": "soy_sauce_wheat",
+  "quote": "Yakitori tare (the basting glaze applied during grilling) standardly contains wheat-brewed soy sauce. No tamari or GF soy sauce alternative has been reported.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a (source is null)",
+  "method": "Searched the Tabelog store page (menu tabs read コース0/料理0/ドリンク0/ランチ0), all 73 reviews and 6 menu photos for tare/塩/たまり",
+  "note": "Cannot be evidenced — this shop publishes no menu at all, so nothing documents whether tare is even used, let alone what is in it. Genre inference stated as fact. Two citable wheat items do surface in the review-derived keyword block if the record wants something real: 「キーマカレー」 (Japanese keema curry = wheat roux) and 「焼きおにぎり茶漬け」 (soy-basted grilled rice ball)."
+ },
+ {
+  "id": "nagoya_yakitori_kanda",
+  "city": "nagoya",
+  "field": "vegan_cross_contact",
+  "quote": "Entire menu is animal-based; vegan cross-contact is not a meaningful concept here as no plant-based dishes are offered.",
+  "url": null,
+  "verdict": "unsupported",
+  "found": "Contradicted by the shop's top pickup review: 「コース仕立てとなっており、ピンの鶏肉と季節の野菜を堪能できます。高坂鶏を味わうことができるうえ、有名農家さんのお野菜も使用されています。野菜が美味しい…」 (アーロンジュニア, 2026/08). Keyword block corroborates: 芽キャベツ, とうもろこし, せり, 枝豆.",
+  "correct_url": "https://tabelog.com/aichi/A2301/A230109/23066675/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "4 — searched the Tabelog store page and 73-review list for any vegetable content",
+  "note": "FALSE AS WRITTEN. Named-farm seasonal vegetables are a documented, praised part of the course. The conclusion is still right — the vegetables arrive inside a fixed chicken course over one shared fire, so a vegan cannot eat here and vegan_status 'no' stays correct — but 'no plant-based dishes are offered' is a factual error that a reader checking the source would catch immediately. Rewrite as: 'the course does include seasonal vegetables, but they are plated within a fixed chicken omakase and grilled over the same fire.'"
+ },
+ {
+  "id": "nagoya_yakitori_kanda",
+  "city": "nagoya",
+  "field": "staff_allergy_handling",
+  "quote": "No allergy-handling information published. The course-only, regulars-only format means the kitchen does not adapt to dietary restrictions for new guests.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「予約可否 予約不可」「紹介制、会員制でもなく、常連様のご予約のみの店舗」「お問い合わせ 非公開」 (Tabelog store block); 「コース仕立てとなっており」 (アーロンジュニア); 「住所非公開で紹介制？常連のみに予約が許されているという名古屋の秘密基地的な焼鳥屋さん」 (ラキテン, 2026/07).",
+  "correct_url": "https://tabelog.com/aichi/A2301/A230109/23066675/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "4 — searched the Tabelog store page and review list",
+  "note": "First sentence and the format description are citable — use the URL above. But soften the conclusion: nothing anywhere says the kitchen will not adapt, and a 百名店 counter cooking a bespoke course for a handful of introduced regulars is, if anything, the format most ABLE to adapt. The real barrier here is access, not inflexibility — say that instead, since as written the record asserts a refusal nobody has reported."
+ },
+ {
+  "id": "nagoya_yakitori_kanda",
+  "kind": "record_verdict",
+  "record_verdict": "defective",
+  "note": "All 4 claims uncited; 1 is factually FALSE against the shop's own page, 1 is repairable, 2 rest on assertions (seat count, tare) that no source supports. Trading status OK and thriving: 焼き鳥 百名店 2024 and 2025, score 3.79, reviews dated 2026/08, 2026/07, 2026/03. gf_confidence 'no' and vegan_status 'no' both stay — considered and rejected an upgrade for vegan despite the documented vegetables, because they sit inside a fixed chicken course over a shared grill. Access note the record already gets right: 住所非公開, phone 非公開, 予約不可 except for existing regulars."
+ },
+ {
+  "id": "nagoya_yamamotoya_souhonke_kins",
+  "city": "nagoya",
+  "field": "gf_cross_contamination",
+  "quote": "Noodles are made entirely from wheat flour; wheat is inseparable from the dish. No gluten-free alternative exists.",
+  "url": "https://souhonke.sakura.ne.jp/menu/kinsyachi/",
+  "verdict": "supported",
+  "found": "The cited Kinshachi-Yokocho menu is nothing but wheat noodles — 「煮込うどん…国産100％の食べ応えのある麺」 across 11 nikomi udon and 4 kishimen lines, with 「※きしめんは、巾広麺白波を使用しております」 and no gluten-free line anywhere.",
+  "correct_url": null,
+  "http": "200 (plain fetch, desktop UA)",
+  "method": "1 plain fetch of the cited page",
+  "note": "Supported, but the cited page says 国産100％ (100% DOMESTIC), which is about origin, not composition — a checker could reasonably ask where entirely from wheat flour comes from. Verbatim proof exists on two pages already on this record: 「煮込うどんの麺には塩を加えず、小麦粉と水だけで作られる」 (kinshachi-yokocho interview) and 「[めん] 小麦粉(小麦(国内製造))、食塩/加工でん粉、酒精」 (yamamotoya.co.jp). Add one of them. Minor internal conflict: entirely from wheat flour sits oddly beside this record's own next claim that the noodles are dusted with soba flour."
+ },
+ {
+  "id": "nagoya_yamamotoya_souhonke_kins",
+  "city": "nagoya",
+  "field": "gf_cross_contamination",
+  "quote": "Buckwheat (soba) flour is used as dusting powder on all udon noodles, creating an additional cross-contact risk for both gluten-sensitive and soba-allergic diners.",
+  "url": "https://kinshachi-yokocho.com/columns/interview/yamamotoya/",
+  "verdict": "supported",
+  "found": "The president says it in his own words: 「『打粉』には、そば粉を使う。『そば粉を使うことによって、味噌にとろみが出て、甘みをさらに感じられます。これは初代が始めてから今まで、同じように続けています。』そばアレルギーの方が食べれないことを悔やみながらも、やはり譲れないこだわりだという。」 The restaurant menu page repeats it: 「※うどんには、打ち粉に「そば粉」を使用しております。」",
+  "correct_url": null,
+  "http": "200 (plain fetch, desktop UA)",
+  "method": "1 plain fetch of the cited interview + 1 of the shop menu page",
+  "note": "Fully supported — a rare case of an operator confirming a hazard on the record. TRIM ONE WORD: all udon noodles is now false outside the restaurant. The same interview ends 「そばアレルギーの方でも楽しめるよう、そば粉を使用しない商品にするなど」 and the mail-order 生みそ煮込うどん ingredient list carries no そば粉 — the retail line was reformulated soba-free. Say on the udon served in the restaurants, so the record does not contradict the company published change."
+ },
+ {
+  "id": "nagoya_yamamotoya_souhonke_kins",
+  "city": "nagoya",
+  "field": "soy_sauce_wheat",
+  "quote": "The miso tare contains soy sauce (shoyu), which contains wheat. Allergen labeling for Yamamotoya products explicitly lists wheat (小麦) as a declared allergen across noodles, miso blend, and broth components.",
+  "url": "https://yamamotoya.co.jp/shop/item/%E7%94%9F%E3%81%BF%E3%81%9D%E7%85%AE%E8%BE%BC%E3%81%86%E3%81%A9%E3%82%93/",
+  "verdict": "supported",
+  "found": "「[めん] 小麦粉(小麦(国内製造))、食塩/加工でん粉、酒精 [調合みそ] 豆みそ、米みそ、かつお節、むろあじ節、さば節、いわし煮干し、椎茸、昆布、しょうゆ（本醸造）、みりん、砂糖 [だし] むろあじ節、かつお節、いわし節、昆布、椎茸 (一部に小麦・大豆・さばを含む)」 and 「※小麦、大豆、さばを使用しております。」",
+  "correct_url": null,
+  "http": "200 (plain fetch, desktop UA)",
+  "method": "1 plain fetch of the cited product page",
+  "note": "Wheat and shoyu confirmed verbatim — but TWO corrections. (1) across noodles, miso blend, and broth components overstates: the [だし] line is むろあじ節・かつお節・いわし節・昆布・椎茸 with no wheat and no shoyu. Wheat comes from the noodles and the 調合みそ. (2) PRODUCT-VS-RESTAURANT: this is the mail-order packet, and the company says its recipe differs — 「生みそ煮込うどんは…麺の配合はお店のものと少し変えています」. For what the Kinshachi branch actually serves, cite the president instead: 「味の土台となるのは…八丁味噌。そこに白味噌や生醤油を合わせることで」 at https://kinshachi-yokocho.com/columns/interview/yamamotoya/ — 生醤油 in the restaurant own broth, from the operator."
+ },
+ {
+  "id": "nagoya_yamamotoya_souhonke_kins",
+  "city": "nagoya",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is made from katsuobushi (bonito), mackerel, mackerel pike, and sardine. The miso blend contains bonito and mackerel. No plant-only broth option is available.",
+  "url": "https://yamamotoya.co.jp/shop/item/%E7%94%9F%E3%81%BF%E3%81%9D%E7%85%AE%E8%BE%BC%E3%81%86%E3%81%A9%E3%82%93/",
+  "verdict": "supported",
+  "found": "「[だし] むろあじ節、かつお節、いわし節、昆布、椎茸」 and 「[調合みそ] 豆みそ、米みそ、かつお節、むろあじ節、さば節、いわし煮干し…」. No plant-only option on the page or in the shop menu.",
+  "correct_url": null,
+  "http": "200 (plain fetch, desktop UA)",
+  "method": "1 plain fetch of the cited product page + 1 of the restaurant menu page",
+  "note": "Supported, with a MISTRANSLATION to fix and a trap to add. (1) むろあじ節 is mackerel SCAD / round scad, not mackerel pike — mackerel pike is さんま and is not in this product. The actual list is bonito, mackerel scad, mackerel (さば節) and sardine (いわし). (2) The record misses the one option a diner might mistake for safe: the Kinshachi menu says 「※おすましもご用意できます。」 — a clear non-miso broth is available on request. It is still fish dashi and still seasoned, so it is neither vegan nor gluten-free; say so before someone orders it thinking clear means plain. Also flag that this record menus-file note (the hatcho miso broth is soybean-only) reads reassuringly while the 調合みそ contains しょうゆ（本醸造）."
+ },
+ {
+  "id": "nagoya_yamamotoya_souhonke_kins",
+  "city": "nagoya",
+  "field": "staff_allergy_handling",
+  "quote": "No information found about staff allergy handling procedures at the restaurant. Given the allergen complexity (wheat in noodles and broth, soba dusting powder, multiple fish), diners with serious allergies should contact the restaurant directly before visiting.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "The restaurant own menu page carries an unprompted allergen warning: 「※うどんには、打ち粉に「そば粉」を使用しております。」 printed twice. The president discusses allergy openly — 「そばアレルギーの方が食べれないことを悔やみながらも、やはり譲れないこだわりだという」 — and the company reformulated its retail line 「そばアレルギーの方でも楽しめるよう、そば粉を使用しない商品にするなど」.",
+  "correct_url": "https://souhonke.sakura.ne.jp/menu/kinsyachi/",
+  "http": "200 (plain fetch, desktop UA)",
+  "method": "4 — searched the shop own site and the operator interview for allergen handling",
+  "note": "UNDER-RATES THE OPERATOR. No information found is not accurate: this is one of the few venues in the sweep that prints an allergen warning on its own menu and whose president discusses allergy on the record. That does not make it safe — it is still a wheat shop — but it earns the sentence: the shop proactively warns about soba dusting powder on its own menu, so staff are used to the question. The company also publishes a お問い合わせ page and 5 restaurant locations at souhonke.sakura.ne.jp."
+ },
+ {
+  "id": "nagoya_yamamotoya_souhonke_kins",
+  "kind": "record_verdict",
+  "record_verdict": "clean",
+  "note": "All 5 claims supported or repairable-upward; none unsupported. Every cited domain is genuinely 山本屋総本家 — I checked yamamotoya.co.jp for the classic 山本屋本店 mix-up and it is not one (「COPYRIGHT © 2017 YAMAMOTOYA SOUHONKE Co.,Ltd.」). Trading status OK: 100th anniversary 2025, interview dated 2026-03-10, live menu page, 5 branches. Prices in the record menus file match the live page line for line (普通煮込うどん ¥1,265, 天ぷら付 ¥2,640, 金シャチ煮込うどん ¥2,420). gf_confidence no and vegan_status no both correct — considered vegan ask on the strength of 枝豆 ¥330 and rejected it: one edamame beside 11 wheat-noodle bowls, fish oden, 板わさ, 牛すじ and コーチンウィンナー is not a vegan lane. The three fixes worth making are the むろあじ mistranslation, the all udon noodles overreach, and the product-label-standing-in-for-the-restaurant citation."
  }
 ]

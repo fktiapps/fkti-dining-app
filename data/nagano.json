@@ -740,31 +740,39 @@
     "gf_cross_contamination": [
      {
       "text": "No information is published about the soba kitchen's wheat-handling practices. Traditional soba shops often mix in wheat flour (up to 20–30%) to help noodles bind; it is unknown whether this shop does so or processes wheat products on the same surfaces as its soba.",
-      "source": "https://tabelog.com/en/nagano/A2001/A200101/20000487/"
+      "source": "https://tabelog.com/en/nagano/A2001/A200101/20000487/",
+      "unsupported": "2026-08-20",
+      "why": "LOUD: the claim's operative assertion is FALSE and it under-warns. It is not 'unknown whether this shop processes wheat products on the same surfaces' — udon (100% wheat) is on the menu, documented by two of the record's own three sources. And the shop's number-one seller is さらしなそば, milled from the "
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "The tsuyu (dipping sauce) is a standard Japanese bonito-based soy sauce broth. Standard Japanese shoyu contains wheat; no wheat-free soy sauce alternative is mentioned at this restaurant.",
-      "source": "https://mog-mog.me/nagano/daimaru/"
+      "source": "https://mog-mog.me/nagano/daimaru/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Bonito (katsuo) is the base of all broth at this restaurant; there is no plant-based broth option. Tempura is fried in shared oil. Complete avoidance of fish-derived ingredients is not possible from the standard menu.",
-      "source": "https://retty.me/area/PRE20/ARE82/SUB8201/100000025491/"
+      "source": "https://retty.me/area/PRE20/ARE82/SUB8201/100000025491/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "No allergen menu, allergy inquiry process, or staff allergy-handling protocol has been documented at this restaurant across any reviewed source.",
-      "source": ""
+      "source": "https://tabelog.com/en/nagano/A2001/A200101/20000487/",
+      "verified": "2026-08-20",
+      "repointed_from": null
      }
     ],
     "positives": [
      {
       "text": "Noodles are made fresh on-site daily (打ち立て・茹でたて), so the buckwheat itself is freshly milled — a positive for quality, though it does not imply any allergen controls.",
-      "source": "https://tabelog.com/en/nagano/A2001/A200101/20000487/"
+      "source": "https://www.nagano-saijiki.jp/shop/shop.php?n=7",
+      "verified": "2026-08-20",
+      "repointed_from": "https://tabelog.com/en/nagano/A2001/A200101/20000487/"
      }
     ],
     "confidence": "low",
@@ -8998,8 +9006,8 @@
    "gf_confidence": "no",
    "gf_label": "Not gluten-free",
    "gf_detail": "Oyaki dough is made with wheat flour (小麦粉) as a primary ingredient — this is a wheat-based product by definition. No gluten-free options are offered or mentioned. Not safe for celiac or gluten-intolerant diners.",
-   "vegan_status": "limited",
-   "vegan_label": "Limited vegan",
+   "vegan_status": "no",
+   "vegan_label": "Not vegan",
    "vegan_detail": "Several oyaki fillings are vegetable-based (nozawana pickled greens, eggplant, kabocha, mushroom medley, mixed vegetables) and may be vegan in filling, but the dough is standard wheat-flour based and soy sauce is used in seasonings — hidden animal-derived ingredients (bonito dashi in soy sauce or fillings) cannot be ruled out without staff confirmation. The signature negi-miso cheese oyaki contains dairy. No vegan labeling or certification.",
    "hours_raw": "9:00–17:00 daily; no regular closing days. Occasional Wednesday closures have been noted (e.g., specific Wednesdays in June on their online shop).",
    "hours": {
@@ -9149,7 +9157,13 @@
    "menu_gf_count": 3,
    "menu_gf_ask_count": 3,
    "menu_vegan_count": 4,
-   "menu_vegan_meals": 4
+   "menu_vegan_meals": 4,
+   "sweep_downgrade": {
+    "field": "vegan_status",
+    "from": "limited",
+    "to": "no",
+    "why": "The shop's own item page marks 卵 (egg) on all nine oyaki flavours, including every one the record calls plant-based (野沢菜, 丸なす/きざみナス, かぼちゃ, きのこミックス), and ねぎ味噌チーズ adds ナチュラルチーズ. Nothing on the menu is vegan, so 'limited vegan options' overstates it; menu_vegan_count 4 / menu_vegan_meals 4 should go to 0 with it."
+   }
   },
   {
    "id": "nagano_trattoria_divertente",
@@ -10592,8 +10606,8 @@
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
    "gf_detail": "No gluten-free menu or labeling found across any sources. Curries likely use wheat-containing soy sauce or roux components — unconfirmed. The Nagano City tourism site lists \"アレルギー対応\" (allergy accommodation) as a service, suggesting staff can field allergy questions, but no celiac-safe protocol is documented. Cross-contamination risk in a shared kitchen is unknown. Ask staff directly; do not assume GF safety.",
-   "vegan_status": "limited",
-   "vegan_label": "Limited vegan",
+   "vegan_status": "no",
+   "vegan_label": "Not vegan",
    "vegan_detail": "No dedicated vegan menu. Staff can remove shrimp from the green curry to make it vegetarian, but the base likely contains dairy (coconut milk/butter). The spice gelato has been noted as egg-free. Most desserts contain eggs. Dashi-based broths are not confirmed; curry bases include butter chicken and beef, so the only plausible animal-free option is the gelato or selected drinks. No \"vegan\" labeling on menu.",
    "hours_raw": "10:00–17:00 (last order 16:30), open daily",
    "hours": {
@@ -10735,7 +10749,13 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 8,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 1
+   "menu_vegan_count": 1,
+   "sweep_downgrade": {
+    "field": "vegan_status",
+    "from": "limited",
+    "to": "no",
+    "why": "The vegetarian guide the record itself cites states outright that the café has no savory vegetarian menu, and that the one accommodation staff confirmed (prawn out of the green curry) makes it vegetarian, not vegan. The remaining fallback the record names is the spice gelato, which the same source describes only as egg-free — it is a dairy gelato, with no plant-milk version on the official menu — "
+   }
   },
   {
    "id": "nagano_mulberry_delicatessen_an",
@@ -11305,31 +11325,41 @@
     "gf_cross_contamination": [
      {
       "text": "No information on cross-contamination controls is available from any source. Bread baking (wheat flour) is the kitchen's core daily activity, making airborne flour a realistic concern for highly sensitive individuals.",
-      "source": ""
+      "source": "http://www.cafehibi.net/",
+      "verified": "2026-08-20",
+      "repointed_from": "http://www.cafehibi.net/"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Standard Japanese soy sauce (containing wheat) is likely used in savoury dishes such as curry; no tamari or gluten-free soy sauce alternative is documented.",
-      "source": ""
+      "source": "https://www.cafehibi.net/archives/7100",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.cafehibi.net/archives/7100"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "Dairy and eggs are used throughout the menu (custard pudding, bread, cakes); shared prep surfaces are probable in this very small kitchen.",
-      "source": ""
+      "source": "https://www.cafehibi.net/archives/7119",
+      "verified": "2026-08-20",
+      "repointed_from": "https://www.cafehibi.net/archives/7119"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "No allergy-handling procedures are mentioned in any reviewed source. The cafe can be contacted by phone on 026-232-0239 to ask directly.",
-      "source": ""
+      "source": "http://www.cafehibi.net/",
+      "verified": "2026-08-20",
+      "repointed_from": "http://www.cafehibi.net/"
      }
     ],
     "positives": [
      {
       "text": "Uses domestic wheat and Hoshino natural yeast; offers organic leaf teas and caffeine-free rooibos — some ingredient mindfulness is present even if allergen labelling is absent.",
-      "source": "https://www.web-komachi.com/?p=70246"
+      "source": "http://www.cafehibi.net/",
+      "verified": "2026-08-20",
+      "repointed_from": "http://www.cafehibi.net/"
      }
     ],
     "confidence": "none",
@@ -11998,31 +12028,39 @@
     "gf_cross_contamination": [
      {
       "text": "Udon (100% wheat) is prepared and served in the same 11-seat counter kitchen alongside soba. Cross-contamination with wheat flour is highly probable. No separation noted in any source.",
-      "source": "https://tabelog.com/en/nagano/A2001/A200101/20008703/"
+      "source": "https://nagano-gondo.com/%E6%89%8B%E6%89%93%E3%81%A1%E3%81%9D%E3%81%B0%E5%87%A6%E3%81%A8%E3%81%8C%E3%81%8F%E3%81%97/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://tabelog.com/en/nagano/A2001/A200101/20008703/"
      }
     ],
     "soy_sauce_wheat": [
      {
       "text": "Dipping tsuyu is described as sharp and soy-forward, consistent with standard wheat-containing soy sauce. No tamari or GF soy sauce alternative is mentioned in any source.",
-      "source": "https://tabelog.com/nagano/A2001/A200101/20008703/dtlrvwlst/B112320718/"
+      "source": "https://tabelog.com/nagano/A2001/A200101/20008703/dtlrvwlst/B112320718/",
+      "verified": "2026-08-20"
      }
     ],
     "vegan_cross_contact": [
      {
       "text": "All broth is katsuobushi (bonito) based. No kombu-only or vegan dashi option is noted. Animal-stock contact is unavoidable.",
-      "source": "https://tabelog.com/nagano/A2001/A200101/20008703/dtlrvwlst/B112320718/"
+      "source": "https://tabelog.com/nagano/A2001/A200101/20008703/dtlrvwlst/B112320718/",
+      "verified": "2026-08-20"
      }
     ],
     "staff_allergy_handling": [
      {
       "text": "Solo elderly owner; no allergy handling, allergen menu, or dietary accommodation noted in any source. No English communication indicated. Contact at 026-234-2670 if needed.",
-      "source": ""
+      "source": "https://nagano-gondo.com/%E6%89%8B%E6%89%93%E3%81%A1%E3%81%9D%E3%81%B0%E5%87%A6%E3%81%A8%E3%81%8C%E3%81%8F%E3%81%97/",
+      "verified": "2026-08-20",
+      "repointed_from": null
      }
     ],
     "positives": [
      {
       "text": "Buckwheat soba itself is a naturally gluten-free grain; the noodles are hand-cut by the owner from Togakushi-sourced flour — no industrial additives noted.",
-      "source": "https://nagano-gondo.com/%E6%89%8B%E6%89%93%E3%81%A1%E3%81%9D%E3%81%B0%E5%87%A6%E3%81%A8%E3%81%8C%E3%81%8F%E3%81%97/"
+      "source": "https://tabelog.com/nagano/A2001/A200101/20008703/dtlrvwlst/B112320718/",
+      "verified": "2026-08-20",
+      "repointed_from": "https://nagano-gondo.com/%E6%89%8B%E6%89%93%E3%81%A1%E3%81%9D%E3%81%B0%E5%87%A6%E3%81%A8%E3%81%8C%E3%81%8F%E3%81%97/"
      }
     ],
     "confidence": "low",
@@ -13050,7 +13088,7 @@
    "lng": 137.856528,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,380, 野菜たっぷりトマトソースパスタ ¥1,280) with the note that the standard pasta uses wheat and butter and that gluten-free rice pasta is an opt-in substitution; Vegewel independently classifies the venue as 'Pasta / Pancake' cuisine with a 'Gluten-Free Menu' (a GF subset), not a wheat-free kitchen. So this is a shared kitchen boiling wheat pasta — shared water, colanders and utensils are a textbook cross-contact vector — on top of the already-flagged wheat teriyaki/soy sauces on the savory pancakes. The pancakes really are 米粉100% and I found no glutening report, but a mixed kitchen with no allergen protocol and no celiac-grade review cannot hold 'high'.] A rice-flour pancake specialty café — every pancake is 米粉100%, so there is no wheat flour and no wheat pasta on the premises (the seed's 'shared pasta menu' does not exist; the savory items are also rice-flour pancakes). The venue's own claim: 「100％米粉を使った、ふわふわのパンケーキ」 and 「パンケーキは、米粉100%使用と砂糖を減らすことにより…罪悪感なく食べられるギルトフリー」. IMPORTANT caveat for celiac: this is a 'gluten-free pancake' shop, NOT a certified celiac kitchen, and no formal cross-contact protocol is published — the sweet pancakes (berry, fruit, caramel-nut, kids) are the reliably GF core, but savory pancakes such as the ハーブ鶏の照り焼き (herb-chicken teriyaki) and 信州サーモン use teriyaki/soy-based sauces that are wheat unless tamari, so confirm the sauce or stick to the sweet fruit pancakes.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,380, 野菜たっぷりトマトソースパスタ ¥1,280) with the note that the standard pasta uses wheat and butter and that gluten-free rice pasta is an opt-in substitution; Vegewel independently classifies the venue as 'Pasta / Pancake' cuisine with a 'Gluten-Free Menu' (a GF subset), not a wheat-free kitchen. So this is a shared kitchen boiling wheat pasta — shared water, colanders and utensils are a textbook cross-contact vector — on top of the already-flagged wheat teriyaki/soy sauces on the savory pancakes. The pancakes really are 米粉100% and I found no glutening report, but a mixed kitchen with no allergen protocol and no celiac-grade review cannot hold 'high'.] A rice-flour pancake specialty café — every pancake is 米粉100%, so there is no wheat flour and no wheat pasta on the premises (the seed's 'shared pasta menu' does not exist; the savory items are also rice-flour pancakes). The venue's own claim: 「100％米粉を使った、ふわふわのパンケーキ」 and 「パンケーキは、米粉100%使用と砂糖を減らすことにより…罪悪感なく食べられるギルトフリー」. IMPORTANT caveat for celiac: this is a 'gluten-free pancake' shop, NOT a certified celiac kitchen, and no formal cross-contact protocol is published — the sweet pancakes (berry, fruit, caramel-nut, kids) are the reliably GF core, but savory pancakes such as the ハーブ鶏の照り焼き (herb-chicken teriyaki) and 信州サーモン use teriyaki/soy-based sauces that are wheat unless tamari, so confirm the sauce or stick to the sweet fruit pancakes.",
    "vegan_status": "limited",
    "vegan_detail": "Dairy is avoided — the whipped cream is soy-milk based (豆乳ホイップ) — and organic fruit/veg are used. However the pancake batter contains egg (free-range 平飼い卵), so the pancakes themselves are not vegan. Only drinks such as the craft cola are reliably plant-based; ask before ordering if strict vegan.",
    "hours_raw": "Wed 12:00–16:00 / Thu–Sun 11:30–17:00 (last order 16:00). Closed Mon & Tue plus irregular days off (check Instagram for opening days).",
@@ -14880,7 +14918,7 @@
    "lng": 138.634335,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. I set out to verify the record's two load-bearing claims — 打ち粉不使用 and a グルテンフリーのつゆ — against the shop's own material plus an independent source, and the label did not survive. The GF tsuyu claim IS real and shop-stated (Instagram bio: 「天ぷら、蕎麦つゆ完全グルテンフリー🌿 信州蕎麦粉100%の十割蕎麦」; HotPepper: 「天ぷらも小麦粉を一切使用せず、そば粉と米粉をブレンドして作っています」), but the 打ち粉不使用 claim is NOT in the cited Karuizawa source at all — Web-Komachi p=235130 never mentions 打ち粉; that statement belongs to the SEPARATE Nagano-Station main branch article (p=100169: 「長野県・木島平産そば粉100％で作る十割そばは打ち粉不使用」), so the record has imported a main-branch fact and the 木島平産 sourcing onto the Karuizawa branch, which its own sources describe as 信州産. Decisively, the shop's OWN HotPepper listing carries the disclaimer 「尚、小麦を使用した製品も一部製造しております」 with the English line \"While we offer gluten-free ingredients, cross-contact may occur in our kitchen\" — the shop itself states wheat products are made on premises and that kitchen cross-contact can occur, which directly contradicts a 'Fully gluten-free' label and rules out the record's assumed soba-only wheat-free kitchen. Independent corroboration is also thin to nonexistent: Web-Komachi is a gourmet-media open-announcement piece, the pikyosama blog only relays 「完全グルテンフリーだそうです」 (hearsay, non-celiac blogger, asked staff nothing, observed nothing), and the shop is absent from the japan-glutenfree.com GF soba shop guide — so under the HARD RULE this is effectively one source and cannot hold high.] A 十割そば (100% buckwheat) specialist that opened July 2025 by JR Karuizawa station, and one of the best celiac soba finds in Nagano because — unlike the main-branch soba — BOTH the dipping sauce and the tempura are gluten-free. The shop states 「つなぎを一切使わない十割そば」 (no wheat binder), uses 木島平産そば粉100% with 打ち粉不使用 (no wheat dusting flour), serves 「本店と同じグルテンフリーのつゆ」, and makes tempura from 「米粉と蕎麦粉を合わせて揚げたグルテンフリーの天ぷら」 (rice + buckwheat flour, no wheat). Rated high rather than dedicated: it is a soba-only kitchen (no wheat udon/ramen), but public sources do not explicitly confirm a separate dedicated boiling pot, so a celiac should confirm 別鍋/専用茹で湯 on arrival.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. I set out to verify the record's two load-bearing claims — 打ち粉不使用 and a グルテンフリーのつゆ — against the shop's own material plus an independent source, and the label did not survive. The GF tsuyu claim IS real and shop-stated (Instagram bio: 「天ぷら、蕎麦つゆ完全グルテンフリー🌿 信州蕎麦粉100%の十割蕎麦」; HotPepper: 「天ぷらも小麦粉を一切使用せず、そば粉と米粉をブレンドして作っています」), but the 打ち粉不使用 claim is NOT in the cited Karuizawa source at all — Web-Komachi p=235130 never mentions 打ち粉; that statement belongs to the SEPARATE Nagano-Station main branch article (p=100169: 「長野県・木島平産そば粉100％で作る十割そばは打ち粉不使用」), so the record has imported a main-branch fact and the 木島平産 sourcing onto the Karuizawa branch, which its own sources describe as 信州産. Decisively, the shop's OWN HotPepper listing carries the disclaimer 「尚、小麦を使用した製品も一部製造しております」 with the English line \"While we offer gluten-free ingredients, cross-contact may occur in our kitchen\" — the shop itself states wheat products are made on premises and that kitchen cross-contact can occur, which directly contradicts a 'Fully gluten-free' label and rules out the record's assumed soba-only wheat-free kitchen. Independent corroboration is also thin to nonexistent: Web-Komachi is a gourmet-media open-announcement piece, the pikyosama blog only relays 「完全グルテンフリーだそうです」 (hearsay, non-celiac blogger, asked staff nothing, observed nothing), and the shop is absent from the japan-glutenfree.com GF soba shop guide — so under the HARD RULE this is effectively one source and cannot hold high.] A 十割そば (100% buckwheat) specialist that opened July 2025 by JR Karuizawa station, and one of the best celiac soba finds in Nagano because — unlike the main-branch soba — BOTH the dipping sauce and the tempura are gluten-free. The shop states 「つなぎを一切使わない十割そば」 (no wheat binder), uses 木島平産そば粉100% with 打ち粉不使用 (no wheat dusting flour), serves 「本店と同じグルテンフリーのつゆ」, and makes tempura from 「米粉と蕎麦粉を合わせて揚げたグルテンフリーの天ぷら」 (rice + buckwheat flour, no wheat). Rated high rather than dedicated: it is a soba-only kitchen (no wheat udon/ramen), but public sources do not explicitly confirm a separate dedicated boiling pot, so a celiac should confirm 別鍋/専用茹で湯 on arrival.",
    "vegan_status": "options",
    "vegan_detail": "Buckwheat noodles and vegetable/mushroom tempura are plant-based, but the tsuyu is a standard dashi-based sauce (likely bonito), so most soba dishes are not vegan. Vegetable options (野菜そば, 舞茸天, 季節の野菜天) can suit vegans if you confirm the dashi and batter contain no fish/egg.",
    "hours_raw": "11:00–15:00 / 17:00–21:00, closed Mon. Opened July 2025.",
