@@ -1,6 +1,8 @@
 [
  {
-  "id": "kyr_raamenya_fujitora", "city": "kyoto", "field": "gf_cross_contamination",
+  "id": "kyr_raamenya_fujitora",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
   "quote": "House-made wheat noodles are milled and cut fresh in the shop every morning, so wheat flour handling is central to the kitchen and cross-contact is unavoidable.",
   "url": "https://www.leafkyoto.net/en/store/231220-kyoto-fuditora/",
   "verdict": "supported",
@@ -11,7 +13,9 @@
   "note": "Substance holds — in-house noodle production every morning, wheat explicitly named. Trim two words: 製麺 is noodle-MAKING, not milling, so \"milled\" overstates it; and \"cross-contact is unavoidable\" is our inference, not the page's words. Note the record's website field is https://x.com/fujitoramen while Leaf and Tabelog both give Instagram @fujitora_uzumasa (Tabelog lists x AND instagram as official)."
  },
  {
-  "id": "kyr_raamenya_fujitora", "city": "kyoto", "field": "soy_sauce_wheat",
+  "id": "kyr_raamenya_fujitora",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
   "quote": "The shoyu tare blends six soy sauces (based on Kaneiwa of Wakayama and Suehiro of Hyogo) — standard wheat-fermented Japanese shoyu — so the soy ramen is wheat-based at its core.",
   "url": "https://www.leafkyoto.net/en/store/231220-kyoto-fuditora/",
   "verdict": "supported",
@@ -22,7 +26,9 @@
   "note": "Verbatim match, both makers correctly attributed. Two cautions for whoever edits this record: (a) the page's own primary-image caption is a STALE earlier draft reading 「醤油らぁ麺1000円…和歌山［カネイワ醤油］と滋賀［水谷醤油］」 — do not cite the caption, cite the body; (b) the shop also runs a SHIO bowl whose かえし is salt-based, so \"the soy ramen is wheat-based\" is correctly scoped and must not be widened to \"all bowls\" — the wheat that covers all bowls is the noodles, not the tare."
  },
  {
-  "id": "kyr_raamenya_fujitora", "city": "kyoto", "field": "vegan_cross_contact",
+  "id": "kyr_raamenya_fujitora",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
   "quote": "Broth is made from jidori chicken bones, kurobuta pork and pork back bone and finished with chicken oil; toppings include pork chashu, ground pork and meat-filled wontons, so no bowl is free of animal products.",
   "url": "https://www.leafkyoto.net/en/store/231220-kyoto-fuditora/",
   "verdict": "supported",
@@ -33,12 +39,19 @@
   "note": "Core is exact (jidori chicken bones + kurobuta knuckle + back bone; Kagoshima Biyuton pork chashu, thigh and belly). Two details are NOT on the page and should be cut: 鶏油/\"chicken oil\" appears nowhere, and the wontons are described only as 自家製のワンタン — no filling is stated, so \"ground pork and meat-filled wontons\" is invented specificity. The documented chicken-and-pork stock already carries the conclusion without them."
  },
  {
-  "id": "kyr_raamenya_fujitora", "kind": "trading", "status": "open",
-  "evidence": ["https://tabelog.com/kyoto/A2601/A260402/26040084/", "https://www.leafkyoto.net/store/231220-kyoto-fuditora/"],
+  "id": "kyr_raamenya_fujitora",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260402/26040084/",
+   "https://www.leafkyoto.net/store/231220-kyoto-fuditora/"
+  ],
   "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA) with live hours 月・日 11:00-14:00 / 水木金土 11:00-14:00 & 18:00-20:00, 火 定休日, 13 seats, open date 2023-09-23, official x + instagram accounts listed. No 閉店, 休業, 移転 or 掲載保留 banner anywhere on the page."
  },
  {
-  "id": "kyr_ramen_akatsuki", "city": "kyoto", "field": "gf_cross_contamination",
+  "id": "kyr_ramen_akatsuki",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
   "quote": "Wheat ramen noodles are boiled in shared water, and the broth is finished with a soy-sauce tare that is essentially always wheat-based — pervasive gluten with no separation.",
   "url": "https://kyotopi.jp/articles/eTYbB",
   "verdict": "supported",
@@ -49,7 +62,9 @@
   "note": "The conclusion holds — every documented item is a wheat-noodle ramen, plus 餃子 (wheat wrappers) and 唐揚げ (flour-dredged); no gluten-free anything is mentioned. But \"boiled in shared water\" is OUR mechanism, not the page's, and this repo has been burned once already by asserting a shared-water line a source did not carry. Reword to what is documented: a shoyu-tonkotsu shop whose whole menu is wheat, with no separation described."
  },
  {
-  "id": "kyr_ramen_akatsuki", "city": "kyoto", "field": "soy_sauce_wheat",
+  "id": "kyr_ramen_akatsuki",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
   "quote": "The bowl is a shoyu (soy sauce) ramen finished with a Japanese-dashi soy tare; standard Japanese shoyu is brewed with wheat.",
   "url": "https://kyotopi.jp/articles/eTYbB",
   "verdict": "supported",
@@ -60,7 +75,9 @@
   "note": "The shoyu half is documented (豚骨醤油, tagged twice). \"Japanese-dashi soy tare\" is NOT — the page describes a pork-bone-and-chicken soup with back fat and no 和出汁/魚介 element in the tare at all. The likely source of the confusion is a different bowl on the same menu, 「旨辛や魚介ラーメンもあります」. Delete \"Japanese-dashi\"; it adds nothing and is the classic same-article transplant."
  },
  {
-  "id": "kyr_ramen_akatsuki", "city": "kyoto", "field": "vegan_cross_contact",
+  "id": "kyr_ramen_akatsuki",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
   "quote": "The base soup is a pork-bone and chicken broth with back-fat and braised pork char siu; there is no animal-free preparation, so all bowls carry animal product.",
   "url": "https://kyotopi.jp/articles/eTYbB",
   "verdict": "supported",
@@ -71,8 +88,124 @@
   "note": "Clean verbatim support for every element — 豚骨と鶏 broth, 背脂, チャーシュー — plus 煮卵, 餃子 and 唐揚げ elsewhere on the page. Nothing to change."
  },
  {
-  "id": "kyr_ramen_akatsuki", "kind": "trading", "status": "open",
-  "evidence": ["https://tabelog.com/kyoto/A2601/A260302/26000999/", "https://kyotopi.jp/articles/eTYbB"],
+  "id": "kyr_ramen_akatsuki",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260302/26000999/",
+   "https://kyotopi.jp/articles/eTYbB"
+  ],
   "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA) with live hours and no 閉店/休業/移転/掲載保留 marker. Cited article (updated 2023-05-06) gives 営業時間 11:30～翌3:00 (L.O. 翌2:45), 定休日 無休, tel 075-702-8070, 京都市左京区北白川別当町13. Caution for the next agent: the same page's sidebar carries a headline about ますたに 北白川本店 going 無期限休業 — that is a DIFFERENT shop up the road, not Akatsuki."
+ },
+ {
+  "id": "kyr_ramen_arashiyama_chikuri",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "All ramen, including the vegan bowls, uses wheat noodles; the seasoning is wheat-based shiro-tamari or soy sauce. No gluten-free noodle or tare exists here, so the kitchen has no gluten-free workflow.",
+  "url": "https://osumituki.com/kyoto-ramen/201250.html",
+  "verdict": "supported",
+  "found": "Printed 【ヴィーガン】メニュー block: 「京野菜香る塩栄養全粒粉麺使用 2000円 / とんこつ風野菜栄養全粒粉麺 2000円 / ヴィーガン100％信州味噌栄養全粒粉ラーメン 2000円」. Non-vegan noodles: 「この麺は埼玉県秩父の製麺所「清川製麺所（きよかわせいめんじょ）」のものを取り寄せているそうです。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "LOUD — supported, and the record UNDERSTATES it. All three vegan bowls are printed as 栄養全粒粉麺 / 全粒粉ラーメン: 全粒粉 is WHOLE-WHEAT flour. The vegan menu is not merely 'also wheat noodles', it is explicitly wholemeal wheat named on the menu line itself. Same shape as the seitan-on-a-vegan-menu trap: a plant-based diner and a coeliac read the same three lines and only one of them is warned. Name 全粒粉 verbatim in the record."
+ },
+ {
+  "id": "kyr_ramen_arashiyama_chikuri",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Tare is naturally-fermented shiro-tamari (a white tamari/soy) or soy sauce, both wheat-containing.",
+  "url": "https://osumituki.com/kyoto-ramen/201250.html",
+  "verdict": "supported",
+  "found": "「名古屋コーチンと大山鶏ガラをベースに香味野菜・昆布・鰹節で抽出したスープに「（塩）フランス ブルターニュ地方のゲランド塩」または「（醤油）三重県伊賀市の本樽仕込みの天然醸造白たまりなど」のカエシで食べる清湯ラーメン」",
+  "correct_url": null,
+  "http": "200 plain curl; corroborating 白たまり composition via Yahoo Japan SERP 200",
+  "method": "1 plain fetch + Yahoo Japan search for 白たまり 原材料 小麦 (Ecosia bot-walled, Brave 429, DuckDuckGo lite returned an empty body)",
+  "note": "LOUD — supported but described far too gently, in the exact direction that gets a coeliac hurt. 白たまり is NOT 'a white tamari/soy'. Trade sources (職人醤油, こだわりの味協同組合) give the ingredients as 「小麦（国産）・食塩・焼酎」 only: 「大豆を抜いて…大豆を使っていないので醤油とは定義できず小麦醸造調味料」, and 「通常の約2倍の小麦を使っている」. It is a WHEAT-ONLY seasoning carrying roughly double the wheat of ordinary shoyu — legally not soy sauce at all. That is the inversion the brief warns about: an English-speaking coeliac reads 'tamari' as safe by definition and here picks the most wheat-dense tare in the shop. Also fix the scope: the 塩 option's kaeshi is ゲランド塩 (Guerande sea salt), not tamari, so 'shiro-tamari or soy sauce, both wheat-containing' misstates the salt bowl — its wheat is the 全粒粉 noodle, not the tare."
+ },
+ {
+  "id": "kyr_ramen_arashiyama_chikuri",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "The vegan ramen (vegetable salt, vegetable 'tonkotsu-style', and 100% vegan Shinshu-miso) is genuinely plant-based by recipe, but it is cooked in the same small kitchen as chicken-clear, chicken-paitan and spiny-lobster broths with pork chashu, so shared pots/utensils are likely.",
+  "url": "https://osumituki.com/kyoto-ramen/201250.html",
+  "verdict": "supported",
+  "found": "「メニューは「鶏清湯・鶏白湯・伊勢海老白湯・ヴィーガンラーメン」など。外国人観光客が多いエリアなのでヴィーガンもメニューにありました。」 「RAMEN嵐山竹林亭の店内に入ると、カウンター席が8席、テーブル席が3卓12席分ありました。」 「名古屋コーチンと大山鶏ガラと茨城豚をベースに大量の伊勢海老の頭で抽出した」 「トッピングは脂が美味しいと評判の京豚で作ったレアチャーシュー」",
+  "correct_url": null,
+  "http": "200 plain curl; Tabelog detail 200 (iPhone UA)",
+  "method": "1 plain fetch + Tabelog detail cross-check",
+  "note": "Menu structure and the three vegan bowl names are exact, as is the co-located chicken / Ibaraki-pork / Ise-lobster line-up in a 20-seat room. Two corrections: 'shared pots/utensils are likely' is our inference — the page describes no kitchen practice at all; and 'genuinely plant-based by recipe' is NOT established — no ingredient is named for the vegan bowls beyond 京野菜, とんこつ風野菜, 信州味噌 and the 全粒粉 noodle, so it rests on the shop's own label. Follow-up flag, provenance unconfirmed: Tabelog's auto-extracted keyword list for this shop includes 生麹 next to 白髪ネギ/糸唐辛子/カイワレ. 生麹 is pure wheat gluten and a standard vegan-friendly Kyoto topping; it is not tied to a named bowl on any page I could reach, so do not record it as fact, but check the menu before this record's vegan text is trusted. On the good side, 信州味噌 is 米味噌 — wheat- and barley-free — so the miso itself is not a gluten source and must not be flagged as one."
+ },
+ {
+  "id": "kyr_ramen_arashiyama_chikuri",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "Multiple dedicated vegan bowls are a permanent menu item, and the kitchen emphasizes additive-free ingredients, which is reassuring for plant-based diners by ingredient.",
+  "url": "https://osumituki.com/kyoto-ramen/201250.html",
+  "verdict": "unsupported",
+  "found": "The only 無添加 on the page qualifies a PORK dish: 「無添加京豚レアチャーシューラーメン 塩or醤油（1300円）」, repeated across the 鶏清湯 / 鶏白湯 / 伊勢海老白湯 blocks. On permanence the page says the opposite: 「※メニューと値段は取材時点のものです（サービス内容は変更になる場合もあります）。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Both halves fail, and because this is a POSITIVES field it reassures a reader on borrowed evidence. 'The kitchen emphasizes additive-free ingredients' is lifted from the NAME of the additive-free Kyoto-PORK rare-chashu ramen — a claim transplanted from the one dish a vegan cannot eat. 'Permanent menu item' is contradicted by the page's own as-of-visit disclaimer. Replace with what the page actually supports: three vegan bowls were on the menu at the December-2023 visit, at 2000 yen each, in a heavily touristed area."
+ },
+ {
+  "id": "kyr_ramen_arashiyama_chikuri",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260403/26040503/",
+   "https://osumituki.com/kyoto-ramen/201250.html"
+  ],
+  "why": "Tabelog detail page fetched 200 on 2026-08-21 (iPhone UA); FAQ block lists 11:00-19:00 seven days a week, address 京都府京都市右京区嵯峨釈迦堂門前裏柳町6-4, 予約不可, and carries no 閉店 / 休業 / 移転 / 掲載保留 marker. Opened 2023-12-18 per the cited article."
+ },
+ {
+  "id": "kyr_ramen_ikedaya_kyoto_ichi",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Core dish is thick wheat ramen noodles made with Nisshin Seifun wheat flour, served from a small single-counter kitchen with shared boiling water, making gluten cross-contamination effectively unavoidable.",
+  "url": "https://kencellara.com/entry/ikedaya",
+  "verdict": "supported",
+  "found": "「代名詞である極太麺は、ゴワッとした食感。」 「店内には日清製粉の袋が沢山あったので、おそらくそこの小麦を使用しているのでしょう。」 「店内はカウンター9席のシンプルな空間で、お店のオペは2名で行われていました。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Thick wheat noodles and the 9-seat single-counter, two-staff operation are documented exactly. But the Nisshin Seifun attribution is the blogger's OWN GUESS, flagged as such: 「おそらくそこの小麦を使用しているのでしょう」. He saw the sacks in the room; he did not confirm the noodles use them. Our record states it as fact — downgrade to 'Nisshin Seifun flour sacks were visible in the shop'. 'Shared boiling water' is not on the page either (only 「麺が茹で上がると同時に」); the 9-seat counter run by two people carries the no-separation conclusion without inventing the pot."
+ },
+ {
+  "id": "kyr_ramen_ikedaya_kyoto_ichi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is finished with a soy-based (shoyu) tare, which in standard ramen contains wheat; no wheat-free tare is mentioned.",
+  "url": "https://kencellara.com/entry/ikedaya",
+  "verdict": "supported",
+  "found": "「醤油とのバランスもバッチリで、豚脂がふんわり広がる奥行き。」 「これだけ上手く豚の旨味とかえしが調和し」 「豪快にカットされた豚肉は…極限まで煮込まれていて、中までしっかり醤油味が染み込んでいました。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Three independent mentions of 醤油 plus かえし by name, so the soy tare is well evidenced and — usefully — it also soaks the chashu, meaning the shoyu is not confined to the soup. 'No wheat-free tare is mentioned' is accurate by silence. The wheat-in-shoyu step is general knowledge correctly applied rather than something the page states; keep it worded as an inference."
+ },
+ {
+  "id": "kyr_ramen_ikedaya_kyoto_ichi",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is an emulsified pork-bone/pork-fat base with pork back-fat and pork chashu; vegetables are cooked within this pork-based system, so no vegan-safe preparation exists.",
+  "url": "https://kencellara.com/entry/ikedaya",
+  "verdict": "supported",
+  "found": "「豚の旨味がギュッと詰まったもので、乳化されているので結構まろやかな口当たり。」 「野菜、背脂、ニンニクの量の好みを伝えてすぐに着丼。」 「もやしはクタクタになるまで茹で上げられており、キャベツの量は控えめ。」 「チャーシューは肉の塊が3～4つぐらい入っており」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Fully supported and verbatim: emulsified pork soup, 背脂 as an order-time option, chunked pork chashu, vegetables served inside the same bowl. Worth ADDING for the reader, since the record undercounts the animal products: the listed toppings are チーズ (dairy) and 生卵, and the 汁なし comes with a free 卵黄. Separate data-quality warning: this blog's 店舗情報 template leaked its own contact details — 電話 0596-23-3391 is an Ise/Mie area code, not Ikedaya's; do not lift that number. The address it gives, 京都市左京区高野玉岡町33-9, does match Tabelog."
+ },
+ {
+  "id": "kyr_ramen_ikedaya_kyoto_ichi",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260303/26017677/",
+   "https://x.com/ikedayakyoto"
+  ],
+  "why": "Tabelog detail page for 池田屋 一乗寺店 fetched 200 on 2026-08-21 (iPhone UA) with live 営業時間 and 定休日 and no 閉店 / 休業 / 移転 / 掲載保留 marker. It lists twitter.com/ikedayakyoto as the shop's official account, which independently confirms the record's own website field points at the right handle."
  }
 ]

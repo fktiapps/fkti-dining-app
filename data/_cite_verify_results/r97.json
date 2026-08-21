@@ -1,0 +1,79 @@
+[
+ {
+  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "gf_cross_contamination",
+  "quote": "In-house wheat noodles are made daily on the shop's own noodle machine, so the kitchen is a wheat-heavy environment.",
+  "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
+  "verdict": "supported",
+  "found": "「例えば麺は、国産をセレクトし、京都府産「京小麦」に、北海道産「キタホナミ」と「ハルユタカ」をブレンド。入り口横にある製麺機で毎日製麺を行い、一玉ずつ手もみして熟成しています。」",
+  "correct_url": null,
+  "http": "200 plain curl (no UA needed)",
+  "method": "1 plain fetch",
+  "note": "Exact: three named wheat flours, noodle machine beside the entrance, daily production, each portion hand-massaged. The machine is literally at the doorway, which strengthens the airborne-flour point rather than weakening it."
+ },
+ {
+  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "soy_sauce_wheat",
+  "quote": "The seasoning/tare and items like the house menma are soy-sauce (shoyu) based; Japanese soy sauce is typically brewed with wheat.",
+  "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
+  "verdict": "unsupported",
+  "found": "The page says the OPPOSITE about the tare: 「タレは、旨みが出やすくなるよう、前日から水に浸しておいた昆布やしいたけ、貝柱などをじっくり煮出して作ります。」 and of the signature bowl 「らーめん（1000円）は、塩ベースの鶏白湯スープ。」 Only the menma is soy-seasoned: 「乾燥メンマを4日かけて湯がき、醤油やみりんで味付けした自家製メンマ」.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "GENRE-INVENTED SHOYU WARNING. The cited page states the tare is a kombu/shiitake/dried-scallop dashi and the house bowl is SHIO (salt) based; our record asserts a shoyu tare that this source contradicts. Only the menma half survives (醤油・みりん). gf_confidence 'no' is still correct — the wheat is the house-milled noodles, not the tare — but gf_detail's sentence 'the tare/seasoning is shoyu-based' must be rewritten to: shio tare from kombu/shiitake/scallop; the house menma is seasoned with soy sauce and mirin. Note the menu does list 和風らーめん and つけ麺 whose tare is undocumented, so scope any shoyu language to those, with a source."
+ },
+ {
+  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "vegan_cross_contact",
+  "quote": "All broth is animal-based (whole chicken plus pork bones and vegetables) and the tare includes dried scallop; toppings include pork chashu. No vegan/vegetarian option exists.",
+  "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
+  "verdict": "supported",
+  "found": "「だしは近江の丸鶏に豚骨、香味野菜を加え、30分ほどつきっきりでアクを丁寧に取りながら炊き上げ。タレは…昆布やしいたけ、貝柱などをじっくり煮出して作ります。」「しっとり柔らかな豚肩ロースのレアチャーシューは特に評判です。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Every element verifies: Omi whole chicken + pork bone + aromatic vegetables, 貝柱 (dried scallop) in the tare, pork shoulder-loin rare chashu. 'No vegan option exists' is our inference from the printed menu list (ちゃーしゅー麺/和風らーめん/つけ麺/ごはん/瓶ビール) rather than a statement on the page — true as far as the page goes, but flag it as inference."
+ },
+ {
+  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "positives",
+  "quote": "No preservatives and no chemical seasonings (MSG) are used, reflecting an explicit safe-for-the-whole-family ethos.",
+  "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
+  "verdict": "supported",
+  "found": "「「家族みんなで安心して食べられるように」との想いから、保存料や化学調味料は使用していません。」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Verbatim, including the 安心して食べられるように framing our sentence paraphrases. Worth saying plainly in the record that additive-free is not an allergen claim."
+ },
+ {
+  "id": "kyr_ramen_tsurumusha", "city": "kyoto", "field": "positives",
+  "quote": "Child seats and child cutlery are provided and children are actively welcomed.",
+  "url": "https://www.amakaratecho.jp/shop/1335042_15194.html",
+  "verdict": "supported",
+  "found": "「店内には、子ども用の椅子やカトラリーも完備しています。」 and owner Nishimura 「ちびっこも大歓迎です！」",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "Exact. Unrelated data fix from the same page: it gives hours as 11:30〜14:00 LO / 18:00〜21:00 LO with 定休日 金曜 — our record's 11:00 openings on Mon/Wed/Sat/Sun are not from this source. Trading status open (article dated 2025.03.25; Tabelog detail page carries no 閉店 banner)."
+ },
+ {
+  "id": "kyr_ryouriya_terado", "city": "kyoto", "field": "gf_cross_contamination",
+  "quote": "The signature noodles are wheat and the curry dipping broth is described as having a thick wheat-flour consistency.",
+  "url": "https://osumituki.com/kyoto-ramen/138131.html",
+  "verdict": "supported",
+  "found": "「あおさのりが散らしてある小麦粉多めの黄色いカレー、ベースはかつお節の効いた和風出汁でカレーに負けない風味を持っていました。」 plus 「夏野菜と鶏肉に半熟卵がトッピングされた太麺が200g程度」.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch",
+  "note": "小麦粉多め ('generous wheat flour') is the blogger's own words about the curry, so the wheat is in the DIPPING BROTH as well as the noodles — a celiac cannot get round it by skipping the noodles. Also on the same menu: 冷やし中華 880円, another wheat noodle. One wording nit for the record: the garnish is あおさのり (aosa), not 青のり."
+ },
+ {
+  "id": "kyr_ryouriya_terado", "city": "kyoto", "field": "soy_sauce_wheat",
+  "quote": "A kappo serving sashimi and grilled fish; no wheat-free soy sauce or seasoning is indicated, so standard wheat-based soy sauce should be assumed.",
+  "url": "https://osumituki.com/kyoto-ramen/138131.html",
+  "verdict": "unsupported",
+  "found": "The page's only related line is 「夜はもちろんお刺身などをいただきながら日本酒や焼酎を楽しむお店ではあるものの、ランチに「カレーつけ麺」を提供しています。」 — sashimi and sake, no mention of grilled fish and no mention of soy sauce anywhere on the page.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "1 plain fetch; official site https://ryouriya-terado.com/ also checked (200) and names no seasoning",
+  "note": "Genre inference wearing a citation. The source says nothing about soy sauce, and 'grilled fish' is not on it either. The page's real, quotable wheat hazard is the curry itself (小麦粉多め) — cite that. Either drop this entry or restate it honestly as an assumption with no source. Shop is trading: official site posted 2025.10.13 with a カレーつけ麺 price change, Tabelog detail page shows no 閉店 banner."
+ }
+]

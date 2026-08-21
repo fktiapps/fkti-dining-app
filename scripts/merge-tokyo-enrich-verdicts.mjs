@@ -179,13 +179,20 @@ for (const e of verdicts) {
 
   // Prefer an explicit status from the agent over reading its prose. The regexes
   // below are the fallback for shards written before the brief asked for the field.
-  const CLOSED_PERM = /(permanently closed|【?閉店】?|閉店しました|has closed for good)/i;
+  // 閉店 alone is not closure. 「スープ品切れで早期閉店あります」 means the shop shuts EARLY when
+  // the soup sells out — a normal ramen-counter notice, and a verification agent caught
+  // this regex about to read it as permanent closure. 臨時閉店 is a day off. The word only
+  // means gone when it is a banner (【閉店】), a past-tense announcement (閉店しました), or a
+  // dated one. Anything qualified by 早期 / 臨時 / 品切れ / 時々 is business as usual.
+  const CLOSED_EARLY = /(早期閉店|臨時閉店|品切れ.{0,6}閉店|閉店.{0,6}品切れ|早じまい)/;
+  const CLOSED_PERM = !CLOSED_EARLY.test(note) &&
+    /(permanently closed|【閉店】|閉店しました|閉店いたしました|has closed for good|d{4}年.{0,8}閉店)/i.test(note);
   const CLOSED_TEMP = /(temporarily closed|refurbish|renovat|改装|休業|reopening|reopen)/i;
   const status = e.status ? e.status
     : /^NOT FOUND/i.test(note) ? 'not_found'
     : /^MISLOCATED/i.test(note) ? 'mislocated'
     : /^UNRESOLVED/i.test(note) ? 'unresolved'
-    : CLOSED_PERM.test(note) && e.loc_precise !== true ? 'closed_permanently'
+    : CLOSED_PERM && e.loc_precise !== true ? 'closed_permanently'
     // "confirmed" is reserved for a high-confidence identification. Medium means
     // the agent found a plausible shop but could not tie it to the light record.
     : e.loc_precise === true ? (e.enrich_confidence === 'high' ? 'confirmed' : 'probable')

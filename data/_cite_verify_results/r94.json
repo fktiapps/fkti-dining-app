@@ -238,5 +238,116 @@
    "http://kareota.com/archives/23983"
   ],
   "why": "Fetched 2026-08-21. s.tabelog.com 26025018 returned 200 titled 「なんだっ亭 - 京都河原町/つけ麺」 with no 【閉店】 marker, a featured review dated 2025/11 (チャーシュー入りカレーらぁ麺 1,300円), phone 075-746-4001, 京都府京都市中京区中之町565-18, hours 11:30-16:00 / 18:00-21:00, 定休日 不定休. CAUTION for anyone re-checking: kareota.com's sidebar prints 「【閉店】『アジル』」 — that closure tag belongs to a different Kyoto shop in the site's related-posts list, not to なんだっ亭."
+ },
+ {
+  "id": "kyr_ra_men_hi_wa_mata_noboru",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Bowls are built on house-made wheat noodles and a fermented soy-sauce tare, so the dish is wheat-based throughout; no gluten-free preparation or separate handling is mentioned.",
+  "url": "https://ramenhiwamatanoboru.com/",
+  "verdict": "wrong_source",
+  "found": "The cited root URL is now a JS-rendered Laravel rebuild that ships no menu or こだわり text in its HTML at all — /commitment, /menu and /details all return 200 with nothing but nav chrome, and the only /api/* routes in its JS bundle are analytics and an inquiry form. The supporting text lives on the previous WordPress site, still archived: 「ラーメン屋は麺まで作ってラーメン屋と名乗れる」という思いをもって毎朝麺を作っております」 (mission) and 「試行錯誤を重ね出来上がった自家製麺」「自家製の極太麺」「黄金色の焼き色と最高な食感の餃子皮」 (menu). kyotopi adds 「現在は全粒粉入りの平打ち太麺に変更」 — 全粒粉 is wholemeal wheat.",
+  "correct_url": "http://web.archive.org/web/20260520104608/https://ramenhiwamatanoboru.com/menu/",
+  "http": "200 live root/commitment/menu/details but JS-only, no content in HTML; 200 Wayback 20260520104608 (menu) and 20240423033758 (mission); 200 kyotopi (iPhone UA)",
+  "method": "1 plain+iPhone-UA fetch, then 2 (searched the JS bundle for a content API — none exists), then 3 Wayback Machine, then corroborated on kyotopi",
+  "note": "Claim is TRUE but its citation is now dead weight: the live root can evidence nothing. Re-cite to the Wayback menu snapshot (2026-05-20, still current pricing) plus https://kyotopi.jp/articles/p7WqE for 全粒粉入りの平打ち太麺. Wheat count in this kitchen: house noodles, 餃子皮, まぜそば極太麺. gf_confidence 'no' is correct."
+ },
+ {
+  "id": "kyr_ra_men_hi_wa_mata_noboru",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Seasoning uses naturally fermented soy sauce (and a tamari-style soy sauce for the beef-bone variant), which is wheat-containing unless specified otherwise; no wheat-free tare is offered.",
+  "url": "https://ramenhiwamatanoboru.com/",
+  "verdict": "unsupported",
+  "found": "Two separate problems. (a) 'Naturally fermented soy sauce' appears nowhere — neither 天然醸造 nor any 醤油 wording attaches to the flagship とりとんこつ on the live site or in any archived snapshot back to 2024. (b) The tamari IS documented — 「牛骨をベースにコクのあるたまり醤油で仕上げたスープ」 and 「牛骨でとったスープに岡直三郎商店のたまり醤油を合わせた」 — but the named maker's tamari is wheat-FREE: 岡直三郎商店's own product listing gives 原材料名 大豆（国産100％）、食塩 and markets it 「グルテンフリーで、小麦アレルギーの方にも安心の木桶仕込たまり醤油」, and an independent 2026 brewery-visit report states 「たまりには小麦粉は使われていません」 of both たまり lines (プレミアムたまり and 冨士晃たまりしょうゆ).",
+  "correct_url": "http://web.archive.org/web/20260520104608/https://ramenhiwamatanoboru.com/menu/",
+  "http": "200 live (JS-only, no text); 200 Wayback menu 20260520104608; 200 Ecosia; 200 note.com",
+  "method": "1 fetch, 3 Wayback, 4 Ecosia exact-phrase search on 岡直三郎商店 たまり醤油 原材料 小麦 (Yahoo Japan not needed — Ecosia answered first try)",
+  "note": "WRONG IN BOTH DIRECTIONS. The 'naturally fermented soy sauce' half is unsourceable and should be deleted. The tamari half inverts the usual trap: this is one of the rare cases where a named たまり really is 小麦不使用, so writing that it 'is wheat-containing unless specified otherwise' is a false negative against a specific, identifiable producer. Rewrite as: the beef-bone bowls are finished with 岡直三郎商店 tamari, which that maker states is wheat-free — AND the bowl is still unsafe, because the noodles under it are wholemeal wheat. The unnamed 「コクのあるたまり醤油」 on the 牛骨醤油ラーメン is a different, unattributed bottle and remains unknown. gf_confidence 'no' is unchanged and correct."
+ },
+ {
+  "id": "kyr_ra_men_hi_wa_mata_noboru",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Broths are animal-based (chicken-and-pork bone, plus a beef-bone option) and toppings include pork chashu and house-made pastrami; there is no separate vegetable broth line, so vegan separation is not possible.",
+  "url": "https://ramenhiwamatanoboru.com/",
+  "verdict": "wrong_source",
+  "found": "Archived menu: 「二日間かけて大量の豚骨と鶏ガラを煮込み出来上がった濃厚スープ」「トッピングにはオーブンで焼き上げたローストチャーシュー、九条ネギ、メンマ」「牛骨をベースに…トッピングされた和牛の旨味」「まぜそば…極太の麺をタレと生卵に絡めます」「餃子…鮮度にこだわった肉、旨味豊かなダシ・野菜」「豚丼600円」. Archived こだわり: 「鮮度にこだった鶏ガラと豚骨を8時間以上ていねいに煮込んで」. The pastrami is not on the operator's pages — it is kyotopi's: 「トッピングは、名物のパストラミと豚バラチャーシューの2種に、メンマ、ネギ。」",
+  "correct_url": "http://web.archive.org/web/20260520104608/https://ramenhiwamatanoboru.com/menu/",
+  "http": "200 live (JS-only); 200 Wayback 20260520104608 and 20240423033758; 200 kyotopi (iPhone UA)",
+  "method": "1 fetch, 3 Wayback, plus an iPhone-UA fetch of kyotopi p7WqE for the pastrami line",
+  "note": "Substance fully confirmed and then some — the record misses 生卵 in the まぜそば and the 豚丼. Split the citation: broths/chashu/beef to the archived menu, pastrami to https://kyotopi.jp/articles/p7WqE. vegan_status 'no' is correct."
+ },
+ {
+  "id": "kyr_ra_men_hi_wa_mata_noboru",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "The kitchen states it avoids chemical seasoning additives and prioritizes ingredient safety so that even children can eat the food, relying on careful preparation rather than synthetic umami enhancers.",
+  "url": "https://ramenhiwamatanoboru.com/",
+  "verdict": "wrong_source",
+  "found": "Archived こだわり page, 安心へのこだわり: 「当店では、小さなお子さまも安心してお食べ頂けるラーメン作りを心掛けております。そのため、化学調味料などは一切使用せず、食材本来の味をお楽しみ頂けるとともに安心・安全なラーメンをお作りしております。」 Not present anywhere on the live JS-rendered site.",
+  "correct_url": "http://web.archive.org/web/20240423033758/https://ramenhiwamatanoboru.com/mission/",
+  "http": "200 live (JS-only, no text); 200 Wayback 20240423033758",
+  "method": "1 fetch, then 3 Wayback Machine",
+  "note": "Accurately quoted, wrong pointer. But flag the framing: 「安心・安全」 here is an MSG statement, nothing more — the shop is promising no 化学調味料, not allergen control, and there is no allergen page on the site at all. Printed in a 'positives' field next to a tamari mention, an English-reading celiac can assemble 'additive-free + safe + tamari' into a gluten-free impression the shop never offered. Keep the quote, but say explicitly that it is about additives and says nothing about wheat."
+ },
+ {
+  "id": "kyr_ra_men_hi_wa_mata_noboru",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260601/26026153/",
+   "https://ramenhiwamatanoboru.com/"
+  ],
+  "why": "Fetched 2026-08-21. s.tabelog.com 26026153 returned 200, no 【閉店】 marker, 492 reviews with the featured one dated 2026/08 訪問 (this month); phone 075-642-5705, 伏見稲荷駅から61m, hours 11:00-21:00, 定休日 水曜日. The own domain resolves and serves a site stamped 「© 2026 ラー麺 陽はまた昇る」 with Instagram @ramenhiwamatanoboru linked. Tabelog also notes 「※このお店は以前の場所から移転しています」 — a RELOCATION, not a closure; the record's Fushimi-Inari-ekimae address and coordinates are the current ones."
+ },
+ {
+  "id": "kyr_raamen_sakurai",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Bowls are seasoned with a shoyu (and miso) tare; standard Japanese soy sauce and miso contain wheat, and no wheat-free tare is advertised.",
+  "url": "https://kyotopi.jp/articles/cF9RA",
+  "verdict": "unsupported",
+  "found": "The page supports only the menu composition — 「鶏出汁しょうゆ、鶏出汁しお、鶏白湯しょうゆ、鶏白湯みその４種類のラーメンがラインナップされています。」 — and says nothing whatever about wheat, brewing or allergens. No 醤油 or 味噌 brand or type is named anywhere in the article.",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "1 — iPhone-UA fetch of the cited kyotopi article",
+  "note": "MISO ERROR — the sentence as written is factually wrong and the cited page does not support it. Japanese miso is overwhelmingly 米味噌, which is rice-koji, soy and salt: wheat-free and barley-free. Only 麦味噌 carries gluten, and nothing identifies this shop's 鶏白湯みそ as 麦味噌. This is the same defect the sweep has already caught three times, warning a reader off a wheat-free ingredient. Rewrite as: the shoyu tare is presumed wheat-brewed (unnamed, unstated), the miso type is UNKNOWN and most likely wheat-free, and the real, documented hazards are the 中太麺 wheat noodles and the 水ぎょうざ on the side menu — boiled wheat dumplings, which in a small L-counter kitchen means wheat dough going into a pot of water. gf_confidence 'no' stays correct on the noodles alone."
+ },
+ {
+  "id": "kyr_raamen_sakurai",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Every broth is made from 100% domestic chicken and chashu uses chicken breast and pork, so all bowls contain animal products with no plant-based option.",
+  "url": "https://kyotopi.jp/articles/cF9RA",
+  "verdict": "supported",
+  "found": "「国産鶏100%の無化調スープ、チャーシューには国産鶏ムネ、京都ぽーくの肩ロースを使用したこだわりのラーメンを提供されています。」 The reviewer's bowl adds 「味付玉子をトッピング」 and 「チャーシューは２種で、こちらは京都ぽーくのロース」「しっとりと柔らかい鶏むね肉」; side dishes listed are 「鶏むね棒棒鶏や水ぎょうざ」.",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "1 — iPhone-UA fetch",
+  "note": "Verbatim support for both halves, across all four bowls (the article confirms every one of the four is 鶏出汁 or 鶏白湯). The record could add 味付玉子 and the 鶏むね棒棒鶏 side. vegan_status 'no' is correct; no change."
+ },
+ {
+  "id": "kyr_raamen_sakurai",
+  "city": "kyoto",
+  "field": "positives",
+  "quote": "The kitchen states its broth is additive-free, made without chemical seasonings from 100% domestic chicken.",
+  "url": "https://kyotopi.jp/articles/cF9RA",
+  "verdict": "moved",
+  "found": "「国産鶏100%の無化調スープ」, with the article headlined 【京都】四条大宮で人気の無添加こだわりラーメン店！深夜まで営業「らぁ麺 櫻井」 and tagged 無添加.",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "1 — iPhone-UA fetch",
+  "note": "Substantively right, attribution wrong: this is kyotopi's description, not a statement by the kitchen. 'The kitchen states' should become 'kyotopi reports'. And the substance must not be over-read — 無化調/無添加 is a statement about MSG and additives and carries no allergen or gluten meaning at all. Under a 'positives' heading beside a shoyu discussion it can be misread as a safety assurance the shop has never made."
+ },
+ {
+  "id": "kyr_raamen_sakurai",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260203/26038038/",
+   "https://kyotopi.jp/articles/cF9RA"
+  ],
+  "why": "Fetched 2026-08-21. s.tabelog.com 26038038 returned 200 with no 【閉店】 or 掲載保留 marker, 111 reviews with the featured one dated 2026.2月, phone 075-812-4912, 大宮駅から119m, hours Mon-Sat 11:30-14:30 / 17:30-02:00, 定休日 日曜日, and an active 求人情報 (hiring) tab. kyotopi's 店舗情報 block gives the same 定休日 日曜日 and 京都市中京区壬生坊城町1-3. Trading."
  }
 ]

@@ -276,5 +276,28 @@
    "https://kyotopi.jp/articles/Rd3eJ"
   ],
   "why": "Fetched 2026-08-21 (HTTP 200, iPhone UA): Tabelog 26040211 is live with reviews dated 2026/07, 2025/05 and 2024/10 and posted hours; no 閉店 or 休業 notice. Opened 2023-10-17 and has since added a second broth. Explicit open verdict."
+ },
+ {
+  "id": "kyr_kyoto_kitayama_motomachi",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is seasoned with a tamari-style soy sauce tare, which is a wheat-based fermented seasoning.",
+  "url": "https://www.motomachira-men.com/motomachiramen",
+  "verdict": "moved",
+  "found": "Not on the live URL — that domain has lapsed and now serves a parked ad page. The claim IS in the Wayback capture of the real site (2025-11-09 and 2025-08-15, identical): meta description 「金沢出身の初代が富山ブラックをベースに京都の澤井醤油店（創業160年の老舗醤油店）のたまり醤油を使用したらーめんを屋台で始めて約50年」 and a menu caption 「創業50年 屋台の味 うなぎのタレにも使われる特性たまり醤油をつかった濃厚醤油らーめん」.",
+  "http": "Live host: TLS SEC_E_WRONG_PRINCIPAL (cert does not match the domain) on https; 403 on plain http; 200 only with -k, returning a parked shell whose config points at https://yfdpco4.com/sk-park.php?pid=…&dn=motomachira-men.com, title 'motomachira-men.com', meta robots noindex, footer '2026 Copyright'. Wayback: 200. Ecosia: 200 (then 403 on a later query); Yahoo Japan 429; Brave 429; DuckDuckGo lite bot challenge; Mojeek 403.",
+  "method": "Route 1 (plain + iPhone UA + desktop UA) failed on TLS/403, route 3 (Wayback https://web.archive.org/web/20251109214446id_/…) succeeded; corroborated with an Ecosia search and a plain fetch of Kyotopi.",
+  "note": "Claim is CORRECT and can be stated more strongly. 澤井醤油本店's product is not a true tamari at all: it is a 再仕込み (twice-brewed) koikuchi, described by Kyotopi as 「国産原料の大豆と小麦から作った生醤油にさらに原料を足して二年熟成。…色目はたまり醤油のように濃い目」 — i.e. wheat-brewed soy sauce that merely LOOKS like tamari. This is the exact trap in the brief: an English-speaking celiac who reads 'tamari' on this shop as wheat-free would be wrong twice over. Two required fixes to the record: (1) the citation must be swapped to the Wayback capture, because the live URL is now a parked ad domain and must not remain in the app; (2) see the trading object — this venue has closed."
+ },
+ {
+  "id": "kyr_kyoto_kitayama_motomachi",
+  "kind": "trading",
+  "status": "closed_permanently",
+  "evidence": [
+   "https://tabelog.com/kyoto/A2601/A260201/26019599/",
+   "https://tabelog.com/kyoto/A2601/A260201/26045534/",
+   "https://www.motomachira-men.com/motomachiramen"
+  ],
+  "why": "Three independent signals, checked 2026-08-21. (1) Tabelog 26019599 (京都北山元町らーめん, 東洞院通錦小路下る阪東屋町664-27) now carries 「このお店は店舗情報の確認が取れていないため掲載保留中です。」 — listing suspended — and its most recent visit review is 2025/10. (2) A different shop, 先斗町華楽 烏丸店 (Tabelog 26045534), is registered at the SAME address, 阪東屋町664-27, and reviewers who visited in 2026/08 describe it as 「26/8/3 NewOpen…元町ラーメン跡地に新たに昼夜おそばがいただけるお店がオープン」 and 「元、元町ラーメンの跡地」 — 跡地 meaning the former premises. (3) The shop's own domain motomachira-men.com has lapsed: it last served real content on 2025-11-09 per Wayback and by the 2026-04-12 capture had become a parked page monetised through yfdpco4.com/sk-park.php, with a TLS certificate that no longer matches the domain. So: closed between 2025-10 and 2026-08-03, permanently, premises re-let. This is 閉店, not 休業中. Note for the record: reviewers say the successor 先斗町華楽 烏丸店 claims to carry on 「元町ラーメンの味」, but that is a different business and inherits none of our verification."
  }
 ]

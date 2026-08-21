@@ -164,6 +164,18 @@ correcting our text:
 
 A traveller needs to be told the badge is wrong. Being quiet about it protects nobody.
 
+## 閉店 does not always mean closed
+
+Two traps a verification agent caught this sweep, both of which would have hidden a
+trading business:
+
+- 「スープ品切れで早期閉店あります」 — the shop closes EARLY when the soup sells out. A normal
+  ramen-counter notice. 臨時閉店 is a day off. Only a banner (【閉店】), a past-tense
+  announcement (閉店しました / 閉店いたしました) or a dated one means gone.
+- A 【閉店】 tag belonging to a **different shop in the page's sidebar**, and premises
+  whose PREDECESSOR closed — three Kyoto ramen shops sit in rooms where 黒猫軒, めんや
+  龍神 and 中華そば 錦 本店 used to be. Check whose name the closure notice carries.
+
 ## Closure is not a tier
 
 If a venue has shut, do NOT put "closed" in `tier_recommendation.recommended` — that

@@ -712,12 +712,30 @@
  },
  {
   "city": "kyoto",
+  "id": "kyr_ra_men_hi_wa_mata_noboru",
+  "name": "ラー麺 陽はまた昇る 伏見稲荷駅前本店 (Ra-men Hi wa Mata Noboru Fushimi Inari Ekima)",
+  "field": "soy_sauce_wheat",
+  "text": "Seasoning uses naturally fermented soy sauce (and a tamari-style soy sauce for the beef-bone variant), which is wheat-co",
+  "source": "https://ramenhiwamatanoboru.com/",
+  "why": "WRONG IN BOTH DIRECTIONS. The 'naturally fermented soy sauce' half is unsourceable and should be deleted. The tamari half inverts the usual trap: this is one of the rare cases where a named たまり really is 小麦不使用, so writing that it 'is wheat-containing unless specified otherwise' is a false negative a"
+ },
+ {
+  "city": "kyoto",
   "id": "kyr_kyoto_wamen_yukichi_honp",
   "name": "京都和麺 諭吉本舗 (Kyoto Wamen Yukichi Honpo)",
   "field": "soy_sauce_wheat",
   "text": "Bowls use a soy-sauce / dashi tare typical of Japanese chuka-soba, which standardly contains wheat-based soy sauce; no w",
   "source": "https://kyo-soku.com/2024/11/08/yukichi/",
   "why": "The tare sentence is invented from the genre label, not read off this page — this Kyoto branch is a truffle-oil 和麺 served with an A5 wagyu steak, not a chuka-soba, and no tare is described anywhere. Two solid wheat vectors are available instead: the ポン酢 dip served with the steak (ponzu is soy-sauce "
+ },
+ {
+  "city": "kyoto",
+  "id": "kyr_raamen_sakurai",
+  "name": "らぁ麺 櫻井 (Raamen Sakurai)",
+  "field": "soy_sauce_wheat",
+  "text": "Bowls are seasoned with a shoyu (and miso) tare; standard Japanese soy sauce and miso contain wheat, and no wheat-free t",
+  "source": "https://kyotopi.jp/articles/cF9RA",
+  "why": "MISO ERROR — the sentence as written is factually wrong and the cited page does not support it. Japanese miso is overwhelmingly 米味噌, which is rice-koji, soy and salt: wheat-free and barley-free. Only 麦味噌 carries gluten, and nothing identifies this shop's 鶏白湯みそ as 麦味噌. This is the same defect the swe"
  },
  {
   "city": "kyoto",
