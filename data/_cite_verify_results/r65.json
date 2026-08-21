@@ -102,5 +102,57 @@
   "http": "200 (iPhone UA; plain desktop UA also served, iPhone UA used)",
   "method": "plain fetch with iPhone UA (Tabelog detail page, Restaurant + FAQPage JSON-LD present)",
   "note": "Both halves are documented on the cited page — 焼肉 as the genre and 生姜焼き as a named lunch dish, with タレ (甘辛のタレ / 秘伝のタレ / たれハラミ on the venue's own site y990200.gorp.jp) repeatedly described. The page never says 醤油 or 小麦, so this remains an inference, but a sound one. Two further wheat risks the record omits and should name: 卓上の辛味噌 (table chilli miso, normally barley- or wheat-koji) and トンテキ, whose sauce is the same tare. gf 'no' is correct; no allergen statement exists on Tabelog or the venue site. Trading: open — Tabelog shows 11:00-14:30 / 17:00-22:00 with no closure badge; own Gurunavi page live with images timestamped 2026."
+ },
+ {
+  "id": "hiro_obanzai_rina_san_chi",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The obanzai, oden, and nikusui menu is dashi- and soy-sauce-based; Japanese soy sauce contains wheat and there is no gluten-free preparation documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340110/34034589/dtlrvwlst/B525980972/",
+  "verdict": "supported",
+  "found": "「元ナースの店主さんが切り盛りする やさしさに包まれるお店 おばんざい・おでん・肉吸い どれも出汁がしっかり効いていて 体にじんわり染みる美味しさ」「週替わりのおばんざいは 行くたびに新しい楽しみがあって」",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "plain fetch with iPhone UA (Tabelog review permalink; full review body rendered server-side)",
+  "note": "The exact three dish types the record names — おばんざい, おでん, 肉吸い — are printed in the review, together with 出汁がしっかり効いていて. Oden broth and nikusui are usukuchi-shoyu-seasoned by definition, so the inference holds and no gluten or allergen text exists anywhere on the listing. Citation quality is the weak point: this is a single user review (the shop's only 口コミ) rather than the operator, and the record's own website field is an Instagram account. Prefer the restaurant page https://tabelog.com/hiroshima/A3401/A340110/34034589/ or the venue's Instagram for anything load-bearing."
+ },
+ {
+  "id": "hiro_obanzai_rina_san_chi",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Dishes use fish/bonito dashi and the signature nikusui is beef broth; no vegan options or separate preparation are documented.",
+  "url": "https://tabelog.com/hiroshima/A3401/A340110/34034589/dtlrvwlst/B525980972/",
+  "verdict": "supported",
+  "found": "「おばんざい・おでん・肉吸い どれも出汁がしっかり効いていて 体にじんわり染みる美味しさ」",
+  "correct_url": null,
+  "http": "200 (iPhone UA)",
+  "method": "plain fetch with iPhone UA",
+  "note": "Supported in substance — 肉吸い is literally 'meat soup' (Osaka beef-in-dashi) and the review makes 出汁 the common thread across every category, so no plant-only route is documented. Two precision points: the page says only 出汁, never 鰹 or 魚, so 'fish/bonito dashi' is the record's inference rather than a quote; and no vegan or separate-prep statement exists, which is what the second half of the claim asserts. vegan_status 'no' is correct. Trading: open and very new — Tabelog gives オープン日 2026年1月22日, 18:00-02:00, 定休日 日曜 and 第1・3月曜, 9 seats, 全席喫煙可, no closure badge; the review is dated 2026/04."
+ },
+ {
+  "id": "hiro_ochadokoro_okimitsu",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The anago-meshi is seasoned with a savory soy-sauce-based glaze; standard Japanese soy sauce contains wheat, and no gluten-free alternative is documented.",
+  "url": "https://japan-stroll.com/guide/gourmet/okimitsu/",
+  "verdict": "supported",
+  "found": "「ふっくら炊いたあなごに、香り高いご飯とタレが重なり、宮島ならではの満足感を運びます。」／評判欄「あなごめしは『柔らかい』『タレがちょうどいい』という感想と、『もう少しタレが欲しい』という声が共存。」",
+  "correct_url": null,
+  "http": "200 (plain curl / iPhone UA)",
+  "method": "plain fetch",
+  "note": "DEFECT — true but badly under-stated, and this is the sort of omission that hurts a celiac. The anago tare claim is supported, but both the cited page and the operator's own menu (https://www.okimitsu.com/p/2/, fetched 200) show this is a noodle shop: 「うどん 1000円」「あなご入りうどん 1800円」「茶そば 1200円」「あなご入り茶そば 1900円」「茶そばセット 2200円」, 「茶そば、うどん 共に温･冷 ございます」. Udon is pure wheat, 茶そば is green-tea soba that is normally wheat-flour-dominant, and both are boiled in the same pot; もみじ饅頭 also appears in the 甘味盛り合わせ and アサヒ缶ビール is on the drinks list. Rewrite the claim around udon and cha-soba, not the tare. gf_confidence 'no' is correct and firmly so. Also note the cited blog is stale against the operator: it prints あなごめし2200/わらびもち600/盛り合わせ1100 and hours 10:00-16:30, while okimitsu.com prints 2400/650/1200 and 10:00-15:00 — re-cite to the official menu page."
+ },
+ {
+  "id": "hiro_ochadokoro_okimitsu",
+  "city": "hiroshima",
+  "field": "vegan_status_context",
+  "quote": "(no vegan claim recorded for this venue; vegan_status carried as 'ask')",
+  "url": "https://www.okimitsu.com/p/2/",
+  "verdict": "supported",
+  "found": "甘味: 「わらびもち 650円」「白玉ぜんざい 700円」「冷やし白玉ぜんざい 700円」「きなこ黒みつ白玉だんご 600円」「冷やしクリームぜんざい 1000円」「アイスクリーム各種 550円から」／抹茶 700円",
+  "correct_url": null,
+  "http": "200 (plain curl, iPhone UA)",
+  "method": "plain fetch of the operator's own menu page",
+  "note": "Checked because the sweep covers vegan_status. Holding at 'ask' is defensible but a human may want to consider 'limited': わらびもち with 黒蜜/きなこ, 大納言あずきの白玉ぜんざい, きなこ黒みつ白玉だんご and 宇治抹茶 are all plant-based by composition, while 冷やしクリームぜんざい, アイスクリーム and コーヒーフロート are dairy and the savoury side is anago plus dashi-based noodle broth. Nothing on the menu is declared vegan and no allergen or ingredient sheet is published, so I am not raising a formal recommendation on composition alone. Trading: open — official site live, 10:00-15:00, 「売り切れ時は閉店が早くなります」, 18 seats, 廿日市市宮島町319-4, no closure notice; note the record's city is hiroshima but the venue is on Miyajima in Hatsukaichi."
  }
 ]

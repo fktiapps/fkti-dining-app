@@ -99,6 +99,13 @@ Every one of these is a real defect from an earlier shard, not a hypothetical:
 - **A lapsed domain** re-registered as casino or gambling content, still linked.
 - **車麩 / グルテンカツ / 生麩 on a vegan menu** — seitan is pure wheat gluten, vegan and
   dangerous, and a celiac reading the vegan list meets the worst item in the shop.
+- **Mistranslation, BOTH directions.** 植物性 means plant-based, NOT wheat-free — a
+  soba shop's vegan tsuyu was recorded as "wheat-free soy sauce". And the mirror:
+  豆乳クリーム (soy-milk cream) filed under "dairy-based fillings", margarine called
+  dairy. That direction looks cautious and is not — a vegan reading "dairy-based"
+  walks past a shop that would have fed them. I tried to catch this one mechanically
+  and could not: "uses soy milk rather than dairy" is correct writing and reads
+  identically to a regex. It needs your judgement, not a pattern.
 - **Mistranslation.** 植物性 means plant-based, NOT wheat-free. 丸大豆 describes the soy,
   not the wheat — 丸大豆醤油 is wheat-brewed and is NOT a gluten-free soy sauce.
 - **もち麦 / 押麦 / 麦茶 / 麦味噌** — all barley, all gluten, all easy to miss.

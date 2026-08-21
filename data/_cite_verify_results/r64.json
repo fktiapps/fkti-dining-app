@@ -37,5 +37,44 @@
   "http": "cited article 200 plain curl; Ecosia 200 (desktop UA); tabelog answered on s.tabelog.com with an iPhone UA after a 302 off tabelog.com",
   "method": "plain fetch of the cited page, then Ecosia search on the exact sauce names (Ecosia was the working engine this run)",
   "note": "Claim is true but over-reaches its citation — the hatsukaichi article names only レモン醤油バター. Repoint to the rabico63 menu transcript or the shop's own Instagram/Threads posts. Separately: tabelog lists the shop homepage as http://hanayashiki.bambina.jp/, now NXDOMAIN; the shop itself is trading (tabelog 10:00-19:00, reviews to 2025/11)."
+ },
+ {
+  "id": "hiro_miyajima_ichiwa",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Anago-meshi and the rice sets are seasoned with Japanese soy-sauce-based tare, which standardly contains wheat; no wheat-free seasoning is mentioned.",
+  "url": "https://www.miyajima-ichiwa.com/en",
+  "verdict": "wrong_source",
+  "found": "The cited /en homepage names the dishes but says nothing about seasoning. One click away, /en/menue1 (\"restaurant menu\", linked from the /en nav) states it outright: \"purely domestic natural conger eel simmered in a sweet secret sauce on top of soy sauce rice cooked with a secret recipe\" — repeated for the Conger eel set meal. The Japanese original (mirrored on umahiro.jp) reads 「秘伝のレシピで炊き込んだ醤油ご飯の上に甘めの秘伝タレで煮込んだ純国産天然アナゴ」.",
+  "correct_url": "https://www.miyajima-ichiwa.com/en/menue1",
+  "http": "200 plain curl for /en, /en/menue1, /en/menue2, /en/menue3 (Wix site, server-rendered — no JS workaround needed)",
+  "method": "plain fetch of the cited page, then its own menu subpages",
+  "note": "Claim is true and stronger than recorded — the rice itself is 醤油ご飯 (soy-sauce-cooked), not just a tare on top — but the cited /en root does not carry it. Repoint to /en/menue1. Also gluten-relevant on that page and not yet recorded: フライ oysters, 穴子天丼-style tempura, and pork loin katsu, all wheat-crumbed."
+ },
+ {
+  "id": "hiro_miyajima_ichiwa",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Menu is centered on conger eel and oysters with fish-based seasonings; no vegan or vegetarian items are listed.",
+  "url": "https://www.miyajima-ichiwa.com/en",
+  "verdict": "supported",
+  "found": "Cited /en page: \"'Anagomeshi set meal' using 'purely domestic natural conger eel', which is synonymous with Miyajima gourmet, You can enjoy 'oyster dishes' using 'pure Miyajima oysters' in meals and lunch boxes.\" The three menu subpages confirm the absence of any plant-based item: every listed dish is conger eel, clam, oyster, or pork cutlet, and even the school-trip bento carries momiji manju (egg/flour).",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited page plus /en/menue1-3 to confirm the negative",
+  "note": "Supported, with one over-claim to trim: nothing on the site says the seasonings are fish-based — the anago is described as simmered in a sweet secret tare over soy-sauce rice. Say 'soy-based seasonings' instead of 'fish-based seasonings'; the vegan verdict is unaffected."
+ },
+ {
+  "id": "hiro_miyajima_shokudo",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Anago rice and oyster bowls are seasoned with sweet soy-based tare/soy sauce, which in standard Japanese cooking is wheat-based.",
+  "url": "https://tabelog.com/hiroshima/A3402/A340202/34019582/",
+  "verdict": "supported",
+  "found": "On the cited page: a 2025/08 review headed 「ふっくら肉厚！秘伝のタレが染み込んだ至高のあなご料理✨」, and the operator's own PR text 「穴子飯やかき飯などの宮島伝統の味に加え…」. The soy attribution is confirmed one page deeper on the same listing, /dtlmenu/, which prints 「ほうれん草のしょうゆ麹ごま和え」 and 「ヨーグルトみそ漬け」 among the set-meal components.",
+  "correct_url": null,
+  "http": "tabelog.com 302 → s.tabelog.com, which returns 200 with an iPhone UA; the desktop host alone gives no usable body",
+  "method": "iPhone-UA fetch of s.tabelog.com for the cited listing, plus its /dtlmenu/ subpage",
+  "note": "Substance holds — the tare is on the cited page and 醤油麹/味噌 are named on its menu tab — but the cited page itself never says 醤油, so cite /dtlmenu/ alongside it. Two wording fixes: there is no oyster 'bowl' on the menu (it is かき飯定食), and the bigger untracked gluten sources are 穴子天丼 (tempura), カキフライ and かきのおかき揚げ. Also: the record's website field https://miyajimashokudo.jp/ is NXDOMAIN, and tabelog's listed homepage http://www.miyajima-shokudo.jp/menu.html is NXDOMAIN too; the only Wayback capture of miyajimashokudo.jp (2025-01-07) is the site of みやじま食堂別館, a different, mainland branch. The shop itself is trading (tabelog 公式, 無休 11:00-20:00, reviews and Instagram posts through 2026)."
  }
 ]

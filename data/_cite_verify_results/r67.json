@@ -76,5 +76,70 @@
   "http": "200 via iPhone UA",
   "method": "plain fetch with iPhone UA",
   "note": "Exact match, with the specifics the claim asserts: oysters (牡蛎の鉄板酒蒸し), beef (A5サーロイン), pork (厚切り黒豚ベーコン), seafood (ウニ) — and the 鉄板ポテトサラダ sits in the same course, on the same griddle."
+ },
+ {
+  "id": "hiro_onomichi_ramen_akatsuki",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "The kitchen works with wheat noodles and a wheat-based soy sauce broth throughout, so any non-wheat order would face heavy cross-contamination; no allergen separation is documented.",
+  "url": "https://onetabi.com/akatuki/",
+  "verdict": "supported",
+  "found": "「麺は尾道の井上製麺所で作られた中細の平打麺。」 and 「初めて尾道ラーメンを目の前にして驚いたのは…醤油の色が濃いスープでした。」 — a named outside noodle maker's wheat chuka-men plus a dark shoyu broth, on a single-item ramen menu.",
+  "correct_url": null,
+  "http": "200 via iPhone UA on the cited URL (first route, no fallback needed)",
+  "method": "plain fetch with iPhone UA; venue identity cross-checked against the record's Tabelog page (s.tabelog.com, iPhone UA, 200) — both give 広島県広島市中区鉄砲町8-24にしたやビル1F, so the article is about this 暁 and not another",
+  "note": "Holds. The article documents no allergen handling of any kind, and 井上製麺所 is a wheat noodle maker, so there is no non-wheat order to protect."
+ },
+ {
+  "id": "hiro_onomichi_ramen_akatsuki",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The broth is a soy-sauce (shoyu) base with a scorched-soy-sauce aroma; standard Japanese soy sauce contains wheat.",
+  "url": "https://onetabi.com/akatuki/",
+  "verdict": "supported",
+  "found": "「まず、焦がし醤油の風味が鼻を抜け、鶏と豚のダシが強く感じられます」 and in the summary 「焦がし醤油の風味と背脂の甘みが絶妙に調和したスープに感動しました」 — 焦がし醤油 (scorched soy sauce) verbatim, twice.",
+  "correct_url": null,
+  "http": "200 via iPhone UA",
+  "method": "plain fetch with iPhone UA",
+  "note": "Verbatim match on the venue-specific half. The 'standard Japanese soy sauce contains wheat' half is general product knowledge and is not on this page; that is the usual honjozo case and is fine to keep as framing, but it is not sourced here."
+ },
+ {
+  "id": "hiro_onomichi_ramen_akatsuki",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Broth is made from pork and chicken stock with rendered pork back-fat, so all dishes share animal-based stock.",
+  "url": "https://onetabi.com/akatuki/",
+  "verdict": "supported",
+  "found": "「鶏と豚のダシが強く感じられます（豚の旨みは背脂から出ているのかもしれません）。」 and 「まるでドレッシングのように分離した脂がスープの蓋となり温度を保ち、そして具のごとく浮かべられている背脂。」",
+  "correct_url": null,
+  "http": "200 via iPhone UA",
+  "method": "plain fetch with iPhone UA",
+  "note": "Supported. Caveat worth carrying: 「鶏と豚のダシ」 is the blogger's palate impression and the pork attribution is hedged with かもしれません — but the 背脂 (pork back-fat) floating in the bowl is directly observed and photographed, so the animal-stock conclusion does not depend on the hedge."
+ },
+ {
+  "id": "hiro_oshokuji_dokoro_yamaichi_2",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The signature anago-meshi is finished with a soy-sauce-based tare, which in Japan virtually always contains wheat; tempura and oyster dishes likewise involve wheat.",
+  "url": "http://umahiro.jp/pc/shop/?tenpo=90",
+  "verdict": "wrong_source",
+  "found": "Nothing on the cited umahiro listing: it fetched fully (200) and its entire body is 「宮島で魚屋からはじめたお食事処は牡蠣も穴子も一味違う」「元々は漁師がはじめた魚屋…1階にテーブル席、2階はお座敷」 plus phone/address/hours. No 醤油, no タレ, no 天ぷら, no menu. The claim IS supported on the venue's own site: 「おすすめ料理は『あなごめし』で山一独特な味に調整されたまろやかなタレで味付けされており」 (sub3.html), and the menu page lists かきフライ・海老フライ・さかなフライ・トンカツ・とり唐揚げ・カツ丼・おやこ丼・カツカレー (sub1.html).",
+  "correct_url": "https://www.m-yamaichi.sakura.ne.jp/sub3.html",
+  "http": "cited umahiro page 200 via iPhone UA but content-free for this claim; own site: http://www.m-yamaichi.sakura.ne.jp/index1.html 302s to https where the shared sakura.ne.jp certificate fails hostname validation (SEC_E_WRONG_PRINCIPAL) — needed curl -k to read; pages are Shift_JIS and had to be decoded explicitly",
+  "method": "plain fetch of the cited URL with iPhone UA, then the record's own website field, then its sub1-sub4 pages with -k and Shift_JIS decoding",
+  "note": "Two fixes. (1) Repoint the citation to the venue's own sub3.html/sub1.html, which state the tare and the fried menu outright. (2) The word 'tempura' is wrong for this venue — the menu has フライ and カツ and 唐揚げ (breaded/floured), not 天ぷら. Also flag the record's website URL: the http original redirects to an https host whose certificate does not match, so a browser will show a security warning."
+ },
+ {
+  "id": "hiro_oshokuji_dokoro_yamaichi_2",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The kitchen is centered on fish and shellfish (conger eel, oysters) and fish-based dashi, so cross-contact with animal products is pervasive throughout the menu.",
+  "url": "http://umahiro.jp/pc/shop/?tenpo=90",
+  "verdict": "supported",
+  "found": "「宮島で魚屋からはじめたお食事処は牡蠣も穴子も一味違う」「元々は漁師がはじめた魚屋。宮島で獲れた牡蠣や穴子を観光客にその場で美味しく食べてもらうため…誕生した老舗店舗です。」",
+  "correct_url": null,
+  "http": "200 via iPhone UA",
+  "method": "plain fetch with iPhone UA; corroborated against the venue's own menu at https://www.m-yamaichi.sakura.ne.jp/sub1.html",
+  "note": "Conclusion holds but the description understates the problem: the own-site menu adds pork, chicken and egg (トンカツ定食, とり唐揚げ定食, カツ丼, おやこ丼) alongside the seafood, and the only non-animal item on the entire menu is お子様カレー and the drinks. 'fish-based dashi' is not documented on either page — drop it or replace it with the actual menu."
  }
 ]

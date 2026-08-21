@@ -50,5 +50,70 @@
   "http": "200 plain curl",
   "method": "plain fetch of the cited page",
   "note": "gf: no is correct but under-argued from the wrong detail. The page itself gives far stronger direct evidence than an inferred tare: udon and soba, tempura, tonkatsu, fried oyster and shrimp, karaage, curry roux and hot dogs all from one small counter kitchen. Rewrite the claim from the listed menu. Note also 「営業時間 不定期」 (irregular hours) and that the menu note is dated September 2019 — worth a freshness flag, not a closure."
+ },
+ {
+  "id": "hiro_ramen_kakimoto",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Kitchen is built around wheat ramen noodles, fried rice, and shumai; high likelihood of gluten cross-contact throughout. No gluten-free handling documented.",
+  "url": "https://www.hotpepper.jp/strJ001277120/",
+  "verdict": "supported",
+  "found": "「おすすめは中華そばと半チャーハン — 細麺と醤油ベースのスープの絶妙なハーモニーをお愉しみください。」 and 「【テイクアウトにもおすすめ】焼シュウマイ — シュウマイは通常蒸してご提供しておりますが、中華そば柿本のシュウマイは難と焼シュウマイ★」. Genre tags: ラーメン/中華そば/炒飯. 「カウンター席は10席」 — one 10-seat counter kitchen. No allergen or gluten-free wording anywhere on the listing or its /food/ tab.",
+  "correct_url": null,
+  "http": "200 plain curl on / and /food/",
+  "method": "plain fetch of the cited listing plus its /food/ tab",
+  "note": "Holds as written. Shumai wrappers, chuka-soba noodles and 半チャーハン (which uses the same wok and, at a soy-based shop, soy seasoning) are all wheat, and 10 counter seats means one cooking line."
+ },
+ {
+  "id": "hiro_ramen_kakimoto",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "Broth is soy-sauce based; standard Japanese soy sauce contains wheat.",
+  "url": "https://www.hotpepper.jp/strJ001277120/",
+  "verdict": "supported",
+  "found": "「細麺と醤油ベースのスープの絶妙なハーモニーをお愉しみください。濃厚なのに意外とあっさり味わえます。」 — the shop's own listing text says the soup is soy-sauce based.",
+  "correct_url": null,
+  "http": "200 plain curl",
+  "method": "plain fetch of the cited listing",
+  "note": "Verbatim support from the operator's own copy — the strongest kind on this shard. Nothing to change."
+ },
+ {
+  "id": "hiro_ramen_kakimoto",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Meat-based broth and pork chashu; karaage and pork shumai also prepared in the same small kitchen, so vegan-safe preparation is not feasible.",
+  "url": "https://www.hotpepper.jp/strJ001277120/",
+  "verdict": "supported",
+  "found": "「こだわりの豚チャーシュー — 豚肉を寸銅で長時間じっくり煮込んでおります。」 plus 「カウンター席は10席」 and 「系列店の【鉄板酒場まめ】のメニューもお楽しみいただけます。」 (a teppan izakaya's menu is cooked on the same line). Karaage and oden are on the tabelog listing, not hotpepper: 「唐揚げやおでんも食べ…」 (tabelog 34025273).",
+  "correct_url": null,
+  "http": "200 plain curl on hotpepper; tabelog 34025273 answered 200 with an iPhone UA",
+  "method": "plain fetch of the cited listing, then iPhone-UA fetch of the record's tabelog page to place the karaage detail",
+  "note": "Conclusion is right and the pork chashu is quoted verbatim, but two details are not on the cited page: karaage (it is on tabelog) and 'pork' shumai (the page says only 焼シュウマイ, filling unstated). 'Meat-based broth' is inference too — the listing says only 醤油ベースのスープ, though a tabelog reviewer notes the shop previously ran a 豚骨の塩ラーメン. Tighten to: long-simmered pork chashu, karaage and oden on a 10-seat counter shared with an affiliated teppan izakaya's menu."
+ },
+ {
+  "id": "hiro_rindo",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "The dandan sauce is a savory Sichuan-style seasoning typically built on soy/sesame-based components; no gluten-free preparation is documented, and the wheat noodles share the same kitchen.",
+  "url": "https://oomin77.com/blog-entry-365.html",
+  "verdict": "unsupported",
+  "found": "The cited post never names soy sauce or sesame. Its only sauce reference is 「３辛は僕にとっては大した辛さではなく、むしろタレの甘みが気になったほど。」 The rest is 山椒, 唐辛子の粉, 辣油. It is also a 2010 visit — the post is signed 「(2010.12)」 and gives 「電話番号・営業時間：未確認」 with a price of 担担麺５００円 (today ~￥850).",
+  "correct_url": null,
+  "http": "200 plain curl for oomin77.com; tabelog 34000252 answered 200 with an iPhone UA",
+  "method": "plain fetch of the cited post, then iPhone-UA fetch of the record's tabelog page; Ecosia and Yahoo Japan both answered 200 for follow-up searches",
+  "note": "Both the soy and the sesame components are invented for this page, and the citation is a 16-year-old blog with a stale price. The gf: no conclusion needs none of it — this is a single-dish 汁なし担々麺 shop, so the wheat is the dish. Tabelog's 2025/02 review gives the current wording: 「しっかり痺れる山椒と、コクのある甘辛だれが絶妙に絡む細麺。」 Re-cite to tabelog and describe the tare as 甘辛だれ (composition undisclosed) rather than asserting soy."
+ },
+ {
+  "id": "hiro_rindo",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "The standard dandan noodles include minced meat, so vegan diners cannot rely on the regular dish; no separate vegan preparation is documented.",
+  "url": "https://oomin77.com/blog-entry-365.html",
+  "verdict": "wrong_source",
+  "found": "The cited 2010 post never mentions meat of any kind (no 肉/ひき肉/そぼろ/ミンチ). The support is on the record's own tabelog listing: 「パツパツ食感の麺とたっぷりのひき肉、ネギの相性も抜群。」 (もりもりかー, 2025/02 visit) and 「ネギもミンチもたっぷり。」 in the review list.",
+  "correct_url": "https://tabelog.com/hiroshima/A3401/A340108/34000252/",
+  "http": "200 plain curl for oomin77.com; 200 iPhone UA for tabelog (desktop UA not needed); Ecosia 200, Yahoo Japan 200, Brave 429",
+  "method": "plain fetch of the cited post, then iPhone-UA fetch of tabelog and its /dtlrvwlst/ — the ひき肉 sentence sits in the page's Review JSON-LD, so search the raw HTML, not the rendered text",
+  "note": "Claim is true, citation is wrong: swap to the tabelog listing, which carries the minced-meat sentence in two 2025 reviews. Trading status confirmed current on the way: reviews dated 2025/02 and 2025/10, no 閉店 or 掲載保留 marker."
  }
 ]

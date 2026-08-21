@@ -50,5 +50,70 @@
   "http": "200 (plain curl)",
   "method": "1 plain fetch of the cited page + the site root for the cooking-station question",
   "note": "Oysters, beef offal and wagyu koune are all verbatim on the cited page and no vegan item or plant-based preparation appears anywhere on the site, so the substance holds. One correction: 'ALL cooking is done on a shared griddle' overstates it — the site root describes 「鉄板と焼き場を眺めながらお食事ができる1階カウンター席」, i.e. a griddle AND a separate yakitori grill, and the chicken (「選び抜いた国産の鶏肉を使用し、一本一本丁寧に焼き上げています」) is cooked on that second station, not the teppan. Drop 'chicken' from the griddle list or say 'the griddle and the adjacent yakitori grill'. The nominally plant items on the menu (焼豆, エリンギバター, 茄子トマトチーズ, ねぎ焼) all carry butter or cheese and share the teppan, so vegan: no is correct."
+ },
+ {
+  "id": "hiro_sozo",
+  "city": "hiroshima",
+  "field": "gf_cross_contamination",
+  "quote": "Okonomiyaki is cooked on a shared griddle alongside wheat batter and wheat noodles, so heavy cross-contact with gluten is unavoidable.",
+  "url": "https://ekimae-hiroba.jp/omise/sozo/",
+  "verdict": "supported",
+  "found": "「ふっくらドーム型の元祖店！麺はもちろんソースまで自社製にこだわるお店」／「当社専用のそぞ製麺所でお好み焼き専用の自家製中華そば麺を製造しています」／「鉄板職人のみが実現できる食材本来の美味しさを活かすために化学調味料を一切不使用！」",
+  "correct_url": null,
+  "http": "200 (plain curl, 39.9 KB)",
+  "method": "1 plain fetch",
+  "note": "Griddle (鉄板職人), okonomiyaki and house-made wheat 中華そば noodles are all on the cited page; only the words 'wheat batter' are absent (the page never spells out 小麦粉), which is a harmless gap for an okonomiyaki shop. Two additional wheat sources on the same page that the record's gf_detail should name: がんす — 「かまぼこの原料のすり身に野菜や一味唐辛子などを混ぜ、パン粉つけてあげた製品です」 — is breadcrumbed and deep-fried, and the house 結晶ソース is a standard okonomiyaki sauce. gf: no is correct and comfortably evidenced."
+ },
+ {
+  "id": "hiro_sozo",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Shared griddle is used for pork, oysters, eel, beef offal and egg, so any item will share surfaces with animal products.",
+  "url": "https://ekimae-hiroba.jp/omise/sozo/",
+  "verdict": "supported",
+  "found": "「カキのバター焼き…身入りの良い旬の時期のカキを一粒づつスチーム急速冷凍してご提供」／「ヤオギモとは牛の肺の部分…そぞでは秘伝の味噌ダレで鉄板焼きで調理」／「穴子白焼き…新鮮で脂の乗った穴子を白焼きで」／「辛いスジもつ煮…５種類から６種類のもつやスジを」／「コウネ 牛の肩バラの一部」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "Oysters, conger eel, beef lung/offal/koune are verbatim; pork and egg are the two items in the record's list that the cited page never mentions (it carries no okonomiyaki topping list), so trim them or cite a menu page. Much more important, and missing from the record: the house sauce is itself non-vegan — 「自社製「広島わしらの結晶ソース」は瀬戸内の牡蠣とレモンを使用したお好み焼きとの相性を極限まで高めた至高の一品！」 — oyster is IN the sauce, so even a vegetable-only okonomiyaki is not vegan here. Add that to vegan_detail. The one genuinely plant item on the page is the free 「大根おろしトッピング」."
+ },
+ {
+  "id": "hiro_sozo",
+  "city": "hiroshima",
+  "field": "positives",
+  "quote": "The kitchen states it uses no chemical seasonings and makes its own sauce and noodles in-house, so ingredient sourcing is unusually transparent.",
+  "url": "https://ekimae-hiroba.jp/omise/sozo/",
+  "verdict": "supported",
+  "found": "「鉄板職人のみが実現できる食材本来の美味しさを活かすために化学調味料を一切不使用！」／「麺はもちろんソースまで自社製にこだわるお店」／「当社専用のそぞ製麺所でお好み焼き専用の自家製中華そば麺を製造しています」",
+  "correct_url": null,
+  "http": "200 (plain curl)",
+  "method": "1 plain fetch",
+  "note": "All three factual halves are verbatim on the cited page. The inference bolted onto the end — 'so ingredient sourcing is unusually transparent' — does not follow and is mildly dangerous in a GF/vegan app: 化学調味料不使用 is an MSG claim, not an allergen claim, and the page gives no allergen information at all. The in-house production actually cuts the other way for a celiac (the noodles are made by the shop itself from wheat) and for a vegan (the in-house sauce contains oyster). Recommend rewording to state the facts without the transparency conclusion. Trading status OK: そぞ is currently listed in the ひろしまお好み物語 駅前ひろば tenant directory, hours 10:30-23:00 (L.O. 22:30), 年中無休."
+ },
+ {
+  "id": "hiro_steak_aohige",
+  "city": "hiroshima",
+  "field": "soy_sauce_wheat",
+  "quote": "As a teppanyaki steakhouse, dishes are conventionally seasoned with wheat-based Japanese soy sauce and tare; no gluten-free soy sauce or allergen handling is documented on the official site.",
+  "url": "https://www.aohige.jp/steak",
+  "verdict": "unsupported",
+  "found": null,
+  "correct_url": null,
+  "http": "200 (plain curl) on /steak, /steak/menu, /steak/concept, /steak/course, /steak/lunch, /steak/shop",
+  "method": "1 plain fetch of the cited page, then plain fetches of all five sibling pages found by link-scraping it; whole-site string search for 醤油/しょうゆ/タレ/たれ/アレルギー/グルテン/小麦",
+  "note": "The cited page is the branch top page and says nothing whatever about seasoning — 醤油, タレ and every allergen string return zero hits across the entire ステーキ青ひげ site, so the second half of the claim (nothing documented) is verified, but the first half (wheat soy sauce and tare) is cuisine convention presented as sourced fact. There IS real, better wheat evidence one page over on https://www.aohige.jp/steak/menu: 「ホタテのバター焼き ～広島Wソース～」 and 「青ひげのローストビーフ ～Ｗソース～」 (広島Wソース is okonomiyaki-style brown sauce, wheat-containing), and 「がんす 680円」, a breadcrumb-fried fishcake sitting on the 鉄板焼 その他 list. Recite there and reword: the Wソース and がんす are documented, the soy sauce is not."
+ },
+ {
+  "id": "hiro_steak_aohige",
+  "city": "hiroshima",
+  "field": "vegan_cross_contact",
+  "quote": "Beef and seafood are grilled together on a single shared L-shaped teppan, so any plant items would share the same cooking surface as meat and fish.",
+  "url": "https://www.aohige.jp/steak",
+  "verdict": "wrong_source",
+  "found": "「日本初大型L字鉄板 — 店に入ると一番に目につくのは大型でつなぎ目一つない美しいL字鉄板。日本で初めてのこの鉄板は、大型船舶にも使われる特殊な鉄板を使用したものです。この特別な鉄板ではお好み焼きを除くすべての広島名物を情熱を込めてご提供します。」",
+  "correct_url": "https://www.aohige.jp/steak/concept",
+  "http": "200 (plain curl) on both the cited page and /steak/concept",
+  "method": "1 plain fetch of the cited page (no L字/鉄板 string on it at all), then link-scrape to /steak/concept where the sentence lives",
+  "note": "The claim is true and unusually well documented — but not on the URL cited. The 'single L-shaped teppan' sentence is on /steak/concept, which also closes the loop the claim needs: 「つなぎ目一つない」 (one seamless plate, no separated zones) and 「この特別な鉄板ではお好み焼きを除くすべての広島名物を…ご提供します」 (everything but okonomiyaki is cooked on it). Recite to /steak/concept. Supporting menu evidence at /steak/menu, where 鉄板焼 お肉 (広島牛ヒレ/サーロイン/赤身/コウネ/ハンバーグ) and 鉄板焼 海鮮 (伊勢海老/アワビ/ホタテ/車海老/穴子/タコ/カキ) are two headings on one griddle list, and the nominally plant items — 野菜の盛り合わせ, きのこの盛り合わせ, 湯来名物 子持ちこんにゃくステーキ — are on that same 鉄板焼 list. vegan: no is correct. Trading status OK: /steak/shop gives 中区大手町1丁目7-23 ラフォーレビル2階 (matches the record's pin) and the top page's news feed carries dated items through 2026/08/21."
  }
 ]
