@@ -811,5 +811,315 @@
    "https://tabelog.com/tokyo/A1302/A130201/13273045/"
   ],
   "enrich_note": "GENERIC PHRASE: 「ラーメン横丁」 is a category word — 'ramen alley' — not the name of a business, and no restaurant trades under it. Every search leg ran and returned; none returned a shop. Yahoo Japan searches for 「ラーメン横丁」丸の内 地下, for 食べログ ラーメン横丁 店舗 千代田区 and for 東京ラーメン横丁 all returned HTTP 200 with results, and what they returned were facilities and their tenants: 東京ラーメン横丁 in the Yaechika underground mall, 御徒町ラーメン横丁 in Taitō-ku, and Sapporo's original. Tabelog's Yaechika premise index lists the individual businesses as 風雲児 東京ラーメン横丁店, ラーメン豚山 東京ラーメン横丁店, いと井 東京ラーメン横丁店, がっとん 東京ラーメン横丁店 and 元祖油堂 東京ラーメン横丁店 — the yokocho is the address, the shop name is the part in front of it. The closest real thing to what the light record intended is that arcade: 〒104-0028 東京都中央区八重洲2-1 八重洲地下街 北1号, 11:00–23:00, seven ramen shops, 2 min from the Yaesu north exit. Note that even that does not match the light record's stated location — the record says 丸の内地下 / 東京駅 (Chiyoda-ku), and the arcade is in Chūō-ku Yaesu; JR East publishes an article specifically because people confuse it with 東京ラーメンストリート on the Marunouchi-address side, which is where this shard's 六厘舎 record sits. Coordinates left unchanged and loc_precise false. Recommendation: do not merge this as a restaurant. Either drop it, or replace it with one or more of the seven named tenants."
+ },
+ {
+  "id": "tokyo3__37",
+  "name": "つじ田 日本橋八重洲店",
+  "status": "confirmed",
+  "lat": 35.682533,
+  "lng": 139.771667,
+  "loc_precise": true,
+  "address_ja": "〒103-0028 東京都中央区八重洲1-4-6 八重洲境井ビル 1F",
+  "enrich_confidence": "high",
+  "cuisine": "A sixteen-seat counter for 濃厚豚骨魚介つけ麺 — thick pork-bone-and-seafood dipping broth with chewy custom noodles, eaten to a house ritual: plain first, a squeezed sudachi at the one-third mark, Kyoto black shichimi over the last third, then a soup-wari to finish; ¥1,100 for the plain tsukemen with ajitama, tokusei and pork-crumble versions above it, the same broth also served as ramen, rice bowls alongside, ¥1,000–¥1,999 a head",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Yaesu 1-chōme, Chūō-ku — 263 m and 1–3 min on foot from Nihonbashi station exit A7 (Tokyo Metro Tōzai and Ginza lines), or 5 min from the JR Tokyo Station Yaesu north exit. Not the Nihonbashi-bridge block the light record pinned",
+  "website": "https://tsukemen-tsujita.com/shop/?id=0010004",
+  "menu_url": "https://tsukemen-tsujita.com/menu/",
+  "hours_raw": "平日：11:00～22:30／土日祝：11:00〜21:30（公式店舗ページ。お知らせ欄に「祝日の営業時間は11:00～21:30です」）　定休日：不定休　※食べログ・ぐるなびは土・日・祝を11:00～21:00と記載しており、公式と30分ずれる",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Ruled out by the operator's own published allergen statement, not by inference. オイシーズ株式会社, which runs つじ田, states 「当店の厨房設備及び商品の製造上、アレルギー食材を完全に除くことができません」, that every menu item is cooked with the same equipment so ingredients not belonging to a dish can transfer into it, and — decisively — 「麺、スープ等の製造工場では、小麦、卵、乳成分を原材料とする商品の製造を行ってます」. It adds that guests who react to trace amounts may be refused service. The product itself is wheat regardless: two custom wheat noodles co-developed with 三河屋製麺, and a tonkotsu-gyokai tare with no gluten-free tamari named anywhere. One noodle pot serves sixteen seats.",
+  "vegan_status": "no",
+  "vegan_detail": "The whole brand is built on a pork-bone and seafood dipping broth; the standard bowl carries chāshū and the popular version adds a marinated soft-boiled egg, with a 豚崩し pork-crumble variant above it and chāshū rice, takana rice and a 替え飯 as the sides. There is no vegetable broth and no plant-based dipping sauce, and the operator's allergen page confirms egg and dairy are handled on the same production line as the noodles and soup.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "Brand of オイシーズ株式会社 (OISHES Co., Ltd.), 東京都千代田区神田神保町3-2 高橋ビルディング5階 — the operator publishes no individual chef or founder name for this branch"
+   ],
+   "origin": "Kanda-Ochanomizu, Chiyoda-ku — where the first つじ田 opened in 2005",
+   "background": "つじ田 is the shop usually credited with pushing 濃厚豚骨魚介つけ麺 out of the specialist scene and into Tokyo's business districts. Its own history page is brisk about it: 「2005年神田御茶ノ水でオープンして以来、味へ圧倒的なこだわりで東京のつけ麺文化を牽引」, expanding through Iidabashi and Yaesu into Osaka, Kanagawa, Saitama and Fukuoka, and opening in Los Angeles in 2011. The Yaesu branch is one of the older Tokyo outposts, trading since 10 July 2013 on the ground floor of the Yaesu Sakai building a minute from Nihonbashi station's A7 exit, and it is exactly what the chain is for — a lunchtime queue of office workers turning over sixteen counter seats. The kitchen publishes three things it will commit to. The soup is built from pork bone, chicken frame, seafood, kombu, vegetables and more than a dozen ingredients in total, with the shop stating openly that it will not disclose the sourcing: 「細かい産地、材料を公表することは出来ない」. The noodles are two bespoke wheat noodles — one for tsukemen, one for ramen — co-developed with 三河屋製麺, with a footnote that some regions are supplied by a different mill making the same つじ田-only spec. The condiment is Hara Ryōkaku's 黒七味 from Kyoto, a one-heir-per-generation blend made since 1704 that carried an Imperial Household warrant in the Meiji and Taishō eras; some branches substitute an in-house roasted black shichimi. The house rule for eating it, printed as つけ麺流儀, is four lines: eat it as it comes, squeeze sudachi over the noodles at the one-third mark and mix, dust the last third with black shichimi, then raise your soup bowl and ask staff for a soup-wari. Tabelog rates the branch 3.43 across 1,185 reviews with more than 26,000 saves.",
+   "philosophy": "「常においしさを求めて進化を続けること」 — the stated rule is to keep changing the recipe rather than freeze it, while holding the flavour.",
+   "specialty": "濃厚つけ麺 and its 味玉 / 特製 / 豚崩し variants, the same broth as 濃厚らーめん, and the つけ麺流儀 sudachi-and-black-shichimi ritual.",
+   "anecdotes": [
+    {
+     "text": "The black shichimi on the counter is 原了郭's, a Kyoto house founded in 1704 that has passed the recipe down one heir at a time and held an Imperial Household warrant; つじ田 uses it as the third stage of its prescribed way of eating a bowl.",
+     "source": "https://tsukemen-tsujita.com/about/"
+    },
+    {
+     "text": "The brand went to Los Angeles in 2011, six years after opening in Kanda-Ochanomizu, and now runs miso and tantanmen spin-off brands from the same company.",
+     "source": "https://oishes.com/business/domestic/"
+    },
+    {
+     "text": "Sixteen counter seats, no reservations, ticket machine at the door; reviewers routinely record a wait at noon and a seat within a minute at nine at night.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13158035/"
+    }
+   ],
+   "japanese_sources_summary": "The brand's own branch page (tsukemen-tsujita.com/shop/?id=0010004) gives 〒103-0028 東京都中央区八重洲1丁目4-6 八重洲境井ビル1階, phone 03-3527-9373, 平日11:00～22:30 / 土日祝11:00〜21:30, and a notice that holidays close at 21:30. The こだわり page gives the 2005 Kanda-Ochanomizu opening, the 三河屋製麺 noodle collaboration, the 原了郭 black shichimi and the four-line つけ麺流儀. The menu page lists the tsukemen, ramen, miso and tantanmen lines and links the allergen tables. Oishes' corporate allergen page carries the shared-equipment and shared-factory statements. Tabelog (13158035) gives the 10 July 2013 opening, 16 counter-only seats, 予約不可, all non-smoking, cards not accepted but transit e-money accepted, QR payment not accepted, takeout and delivery, ～￥999 posted budget against ￥1,000～￥1,999 by review consensus, rating 3.43 over 1,185 reviews. Gnavi (gzvp5txd0000) independently gives the same address, 16 seats, a ¥1,000 average and 徒歩1分 from Nihonbashi A7. Ramen Database's page for the shop (ramendb.supleks.jp/s/67931.html) returned HTTP 403 to both curl and a server-side fetch, so it is not cited.",
+   "confidence": "high",
+   "sources": [
+    "https://tsukemen-tsujita.com/shop/?id=0010004",
+    "https://tsukemen-tsujita.com/about/",
+    "https://oishes.com/business/domestic/",
+    "https://tabelog.com/tokyo/A1302/A130202/13158035/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "「当店の厨房設備及び商品の製造上、アレルギー食材を完全に除くことができません。各メニューの調理には同じ調理器具を使用しているため、本来その商品に使用しない食材が調理時に付着・混入する可能性があります。」 — the operator's own words. Sixteen seats, one noodle pot.",
+     "source": "https://oishes.com/allergy/"
+    },
+    {
+     "text": "「麺、スープ等の製造工場では、小麦、卵、乳成分を原材料とする商品の製造を行ってます。」 The contamination risk starts upstream of the shop, in the factory.",
+     "source": "https://oishes.com/allergy/"
+    },
+    {
+     "text": "「微量の原因物質でアレルギー症状を発症されるお客様には商品の提供をお断りさせていただく場合がございます。」 The company reserves the right to refuse service to trace-sensitive guests — the opposite of a guarantee.",
+     "source": "https://oishes.com/allergy/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The broth is finished with a tonkotsu-gyokai tare and the noodles are two custom wheat noodles made with 三河屋製麺. No gluten-free tamari and no wheat-free noodle is named anywhere on the brand site.",
+     "source": "https://tsukemen-tsujita.com/about/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork bone and chicken frame are the base of every bowl; chāshū, ajitama and a pork-crumble bowl are on the board, and the factory line also runs egg and dairy.",
+     "source": "https://oishes.com/allergy/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "The company does publish per-item allergen tables by brand, keyed to the 8 mandatory and 20 recommended Japanese allergen categories, and tells guests to re-check them every visit because recipes change. That is real transparency — but it is disclosure, not accommodation, and it is paired with the refusal-of-service clause.",
+     "source": "https://oishes.com/allergy/"
+    }
+   ],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "A ticket-machine counter shop: buy a food ticket at the door, take one of sixteen counter seats, no reservations, no private rooms, all non-smoking. Cards and QR payment are not accepted — cash or a transit IC card such as Suica. Expect a queue at lunch and almost none late in the evening. Children are welcome, and takeout and Uber Eats delivery are both offered. The brand's four-step eating instructions (plain, then sudachi, then black shichimi, then ask for a スープ割り) are posted in Japanese and worth reading up on beforehand; asking for the soup-wari at the end is expected rather than pushy. Coeliacs should not eat here at all — the operator publishes that it may refuse service to trace-sensitive guests."
+  },
+  "sources": [
+   "https://tsukemen-tsujita.com/shop/?id=0010004",
+   "https://tsukemen-tsujita.com/about/",
+   "https://tsukemen-tsujita.com/menu/",
+   "https://oishes.com/allergy/",
+   "https://oishes.com/business/domestic/",
+   "https://tabelog.com/tokyo/A1302/A130202/13158035/",
+   "https://r.gnavi.co.jp/gzvp5txd0000/"
+  ],
+  "enrich_note": "Confirmed, and the name in the light record was already correct. The record's pin (35.684, 139.774) was the Nihonbashi neighbourhood centroid; the shop is at 〒103-0028 東京都中央区八重洲1-4-6 八重洲境井ビル1F, given identically by the brand's own store page, Tabelog (13158035) and Gnavi (gzvp5txd0000). Coordinates set to the GSI address geocode of 八重洲一丁目4番6号 (35.682533, 139.771667), consistent with Tabelog's 「日本橋駅から263m」. Opened 10 July 2013; 16 counter seats; 3.43 on Tabelog over 1,185 reviews, with reviews as recent as June 2026. The one substantive correction to the light record is the safety pair: it carried gf 'ask' and vegan 'ask', and both are now 'no' — not on inference but on the operator's published allergen page, which states that allergen ingredients cannot be fully excluded, that all menu items share cooking equipment, that the noodle and soup factory also runs wheat, egg and dairy, and that trace-sensitive guests may be refused service. Search legs: Yahoo Japan for 「つじ田 日本橋八重洲店」 returned HTTP 200 with the official store page, Tabelog, Gnavi, Retty, Navitime, Yelp and Ramen Database; the official site, the Oishes corporate allergy and domestic-business pages, s.tabelog.com and r.gnavi.co.jp all returned 200 and were read in full. Ramen Database (ramendb.supleks.jp/s/67931.html) returned HTTP 403 to both curl with an iPhone user-agent and a server-side fetch, and is therefore not cited. Hours are recorded from the official page; note that Tabelog and Gnavi both close weekends and holidays at 21:00 where the official page says 21:30, so treat that last half hour as unreliable."
+ },
+ {
+  "id": "tokyo3__38",
+  "name": "京都銀閣寺 ますたに 日本橋本店",
+  "status": "confirmed",
+  "lat": 35.681042,
+  "lng": 139.774994,
+  "loc_precise": true,
+  "address_ja": "〒103-0027 東京都中央区日本橋2-10-3 エグゼトゥール日本橋 1F",
+  "enrich_confidence": "high",
+  "cuisine": "Kyoto 背脂チャッチャ ramen — a domestic chicken-bone shōyu broth capped with top-grade pork back fat and a heap of Kujō leek trucked down from Kyoto every morning, built deliberately in three layers (sweet and mild on top, clean soy in the middle, a chilli bite at the bottom) so the bowl changes as you drink it; ¥980 for the standard bowl, ¥1,230 for the chāshū version, ¥1,100 for the spicy miso, with a free bowl of rice and takuan thrown in with any noodle order",
+  "cuisine_type": "ramen",
+  "neighborhood": "Nihonbashi 2-chōme, Chūō-ku — 133 m and about 3 min from Nihonbashi station exit C4 (Tokyo Metro Tōzai and Ginza lines, Toei Asakusa line), on the Shōwa-dōri side of Eitai-dōri",
+  "website": "https://www.masutani-ramen.net/",
+  "menu_url": "https://www.masutani-ramen.net/masutani-menu",
+  "hours_raw": "10:30～22:30（月～金）／10:30～22:00（土・日・祝）／10:30～15:00（第1日曜日）　定休日：無休",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat noodles in a soy-sauce broth, and the shop names the soy sauce as a point of pride — 「醤油 こだわりの徳島醤油」 — with no mention anywhere of a gluten-free tamari. Nothing on the site, the menu page or the news blog addresses allergens at all. The side board adds 九条ネギ焼餃子 (wheat gyōza skins) fried in the same kitchen, and the summer specials include a 魚介風煮干し醬油つけそば, i.e. more soy. Ordering is by ticket machine at a counter-led shop with no allergen sheet and no published wheat-free line; there is nothing here for a coeliac.",
+  "vegan_status": "no",
+  "vegan_detail": "The broth is 国産鶏がら — domestic chicken frames — finished with 国産極上背脂, pork back fat, which is the entire identity of the style. Chāshū (shoulder loin, 8–10 slices on the chāshū bowl) and eggs, both a marinated soft-boiled one and a raw one, are the standard toppings, and the free rice arrives with takuan. There is no vegetable broth and no meat-free bowl on the board.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "Official のれん分け (branch by blessing) of 京都ますたに総本店; the Nihonbashi operator runs two shops, 日本橋本店 and 日本橋室町店, and publishes no individual owner's name"
+   ],
+   "origin": "Kyoto — the parent shop stands near Ginkaku-ji in Sakyō-ku; this branch has traded in Nihonbashi, Chūō-ku, for decades",
+   "background": "ますたに is one of the founding names of Kyoto ramen. Kyoto's official tourism site places it alongside 新福菜館 (1938) and 本家第一旭 in the city's founding generation and credits it specifically with creating 背脂チャッチャ系 — the technique of flicking rendered pork back fat over a soy broth at the moment of serving. This Nihonbashi shop is an official のれん分け from that house, and its own site leads with 「60年以上の歴史をもつ『京都ますたに総本店』からのれん分け」. What arrives is the Kyoto bowl rather than a Tokyo reinterpretation: the shop builds the soup in three deliberate layers and tells you so — the top sweet and mild from the back fat, the middle a clean soy, the bottom given a chilli bite — and advises drinking it straight from the bowl rather than with a renge, because the renge mixes the layers together. The sourcing list is short and specific: domestic chicken frames, Kujō leek shipped from Kyoto daily, shoulder-loin chāshū, Tokushima soy sauce, top-grade domestic back fat, first-pick nori, select rice, and eggs it calls こだわり卵. Rice is free with any noodle order, and in March 2025 the shop added a ¥300 upgrade that turns it into a 九条ネギ丼 with sesame oil, Korean nori flakes and shredded chāshū. The shop was pushed out of its long-standing address at 日本橋1-6-7 関谷ビル by redevelopment; on 3 September 2020 it announced the new site — 「現店舗より、徒歩1分！永代通りを渡った昭和通り沿い」, near the Nakau — and reopened at 日本橋2-10-3 in mid-November 2020, which is why a shop this old sits in a bright, new room. It remains one of the best-regarded ramen counters in the district, third in Tabelog's Nihonbashi ramen ranking at 3.59 over 1,182 reviews, and it is still posting seasonal menus in 2026: a 冷やしラーメン and a 魚介風煮干し醬油つけそば went up on 7 July 2026.",
+   "philosophy": "「一杯のラーメンに 真心 込めて」 — the line the shop leads its own site with.",
+   "specialty": "背脂鶏ガラ醤油ラーメン in the Kyoto style, three-layer soup, mounded Kujō leek; also 辛みそラーメン, つけそば, a weekend-and-holiday-only ますたにスペシャル, and summer-only 冷やしラーメン and 魚介風煮干し醬油つけそば.",
+   "anecdotes": [
+    {
+     "text": "The Kujō leek is sent from Kyoto every day — 「九条ネギ 京都より毎日直送」 — and the standard bowl can be ordered with a double heap of it for ¥150 more.",
+     "source": "https://www.masutani-ramen.net/concept"
+    },
+    {
+     "text": "The shop asks you not to reach for the renge: drink straight from the bowl and the three layers of the soup arrive in sequence instead of blending into one.",
+     "source": "https://www.masutani-ramen.net/concept"
+    },
+    {
+     "text": "Displaced by redevelopment, it announced its new address on 3 September 2020 with the reassurance that it was one minute away, across Eitai-dōri on Shōwa-dōri near the Nakau — and reopened that November.",
+     "source": "https://www.masutani-ramen.net/post/%E3%80%90%E6%97%A5%E6%9C%AC%E6%A9%8B%E6%9C%AC%E5%BA%97%E7%A7%BB%E8%BB%A2%E5%85%88%E6%B1%BA%E5%AE%9A%EF%BC%81%E3%80%91"
+    },
+    {
+     "text": "Rice is free with any noodle order and you pick the portion; since March 2025, ¥300 converts it into a 九条ネギ丼 with sesame oil, Korean nori flakes and shredded chāshū.",
+     "source": "https://www.masutani-ramen.net/blog"
+    }
+   ],
+   "japanese_sources_summary": "masutani-ramen.net is the shop's own site. The 店舗紹介 page gives 〒103-0027 東京都中央区日本橋2-10-3 エグゼトゥール日本橋1F, phone 03-3272-8548, and hours 10:30–22:30 Mon–Fri, 10:30–22:00 Sat/Sun/holidays, 10:30–15:00 on the first Sunday, plus the sister shop 日本橋室町店 at 日本橋室町4-3-14 日本橋北村ビル1F on 03-3272-8549. The メニュー page gives every price quoted here (ラーメン 並980/大1130, チャーシューメン 1230/1380, 辛みそ 1100/1250, ますたにスペシャル 1300/1450 土日祝限定, つけそば 980/1050/1130, and the toppings). The こだわりの食材 page gives the three-layer soup description and the eight named ingredients including 徳島醤油 and daily Kujō leek. The ますたにニュース blog is live into 2026 and carries the 3 September 2020 relocation announcement verbatim. Tabelog (13253228) independently gives the same address and phone, 東西線・銀座線日本橋駅C4出口から徒歩3分 / 133m, a 16 November 2020 opening at this location with an explicit 「※このお店は以前の場所から移転しています」, 無休, cash only — no cards, no e-money, no QR — all non-smoking, counter seating, and 3.59 over 1,182 reviews with the shop ranked third among Nihonbashi ramen. Kyoto's official tourism site (plus.kyoto.travel) is the third-party corroboration for the parent shop's standing as the originator of 背脂チャッチャ. A 2023 visit write-up on namalog.jeez.jp confirms the ticket machine, the free rice with takuan, the counter-plus-tables layout and the 2020 redevelopment move.",
+   "confidence": "high",
+   "sources": [
+    "https://www.masutani-ramen.net/masutani-shop",
+    "https://www.masutani-ramen.net/concept",
+    "https://tabelog.com/tokyo/A1302/A130202/13253228/",
+    "https://plus.kyoto.travel/entry/food-culture-ramen"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "One noodle pot behind a counter-led shop, wheat gyōza fried on the same line, and no allergen information published on any page of the shop's site.",
+     "source": "https://www.masutani-ramen.net/masutani-menu"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The shop names 「こだわりの徳島醤油」 as one of its eight signature ingredients. Ordinary wheat shōyu; no tamari or wheat-free alternative is offered anywhere.",
+     "source": "https://www.masutani-ramen.net/concept"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "国産鶏がら broth finished with 国産極上背脂 (pork back fat) is the definition of the style, with shoulder-loin chāshū and eggs as standard toppings.",
+     "source": "https://www.masutani-ramen.net/concept"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Some Japanese helps",
+   "note": "Ticket machine at the entrance and cash only — Tabelog records no cards, no e-money and no QR payment, so bring notes. Counter-led with a few tables, open 10:30 to 22:30 almost every day of the year, no reservations, and the turnover is fast enough that reviewers report walking in without a wait outside peak lunch. A bowl of rice with takuan comes free with any noodle order and you choose the portion; the ticket machine's top-left button is the extra-Kujō-leek bowl at ¥1,130. Everything is in Japanese and no English menu is advertised, but ordering is a button press and the room is bright and modern (rebuilt in 2020), which makes it an easier first Japanese ramen counter than most. All non-smoking. The one date to avoid is the first Sunday of the month, when it closes at 15:00. Do not confuse it with the sister shop 日本橋室町店, ten minutes north."
+  },
+  "sources": [
+   "https://www.masutani-ramen.net/",
+   "https://www.masutani-ramen.net/masutani-shop",
+   "https://www.masutani-ramen.net/masutani-menu",
+   "https://www.masutani-ramen.net/concept",
+   "https://www.masutani-ramen.net/blog",
+   "https://www.masutani-ramen.net/post/%E3%80%90%E6%97%A5%E6%9C%AC%E6%A9%8B%E6%9C%AC%E5%BA%97%E7%A7%BB%E8%BB%A2%E5%85%88%E6%B1%BA%E5%AE%9A%EF%BC%81%E3%80%91",
+   "https://tabelog.com/tokyo/A1302/A130202/13253228/",
+   "https://plus.kyoto.travel/entry/food-culture-ramen",
+   "https://namalog.jeez.jp/namalog/masutani-nihonbashi/"
+  ],
+  "enrich_note": "Confirmed, name correct as written, but the address in wide circulation is stale and that is the load-bearing part of this record. The shop was displaced by redevelopment from 日本橋1-6-7 関谷ビル1F and reopened on 16 November 2020 at 〒103-0027 東京都中央区日本橋2-10-3 エグゼトゥール日本橋1F — its own 3 September 2020 announcement names the new site, and Tabelog (13253228) flags 「※このお店は以前の場所から移転しています」. Coordinates set to the GSI geocode of 日本橋二丁目10番3号 (35.681042, 139.774994), replacing the light record's neighbourhood centroid at 35.684, 139.774; that agrees with Tabelog's 「日本橋駅から133m」. Still trading: the shop's own news blog posted 2026 summer specials on 7 July, and Tabelog carries reviews from June and July 2026. The light record's gf 'ask' and vegan 'ask' are both corrected to 'no' — the shop publishes its eight signature ingredients and they include 徳島醤油, 国産鶏がら and 国産極上背脂, alongside wheat noodles and wheat gyōza, and it publishes no allergen information whatsoever. Search legs, all HTTP 200 and all read: Yahoo Japan for 「京都銀閣寺 ますたに 日本橋本店」 and for 「ますたに 日本橋本店 のれん分け 店主 1948 京都 銀閣寺」; masutani-ramen.net home, 店舗紹介, メニュー, こだわりの食材, テイクアウト, blog index and the relocation post; s.tabelog.com; plus.kyoto.travel; namalog.jeez.jp. Two legs failed and are therefore not cited: ramendb.supleks.jp/s/127804.html returned HTTP 403 to curl and to a server-side fetch, and retty.me returned HTTP 406. One item left open for a human: the shop's Instagram bio is indexed as saying it has been in Nihonbashi for 27 years, which would put the branch's founding around 1998–1999, but Instagram would not serve the page to a scripted request, so no founding year for the Tokyo branch is recorded here — only the parent house's own claim of 60-plus years in Kyoto, corroborated in kind by Kyoto's official tourism site naming ますたに as the originator of the 背脂チャッチャ style."
+ },
+ {
+  "id": "tokyo3__40",
+  "name": "薮伊豆総本店",
+  "status": "confirmed",
+  "lat": 35.679085,
+  "lng": 139.775101,
+  "loc_precise": true,
+  "address_ja": "〒103-0027 東京都中央区日本橋3-15-7",
+  "enrich_confidence": "high",
+  "cuisine": "An Edo soba house behind a gated wooden frontage, in the Yabu line since 1882 and still milling its own buckwheat twice a day in a stone-mill hut by the gate before cutting it 二八 by hand — seiro ¥650, 天せいろ ¥1,450, 上天せいろ ¥1,850, 鴨せいろ ¥1,650, the house 薮伊豆のごまそば ¥1,450, and a weekday じゅげむ定食 at ¥1,350 named after a rakugo routine; upstairs are 120 seats of tatami and horigotatsu rooms where sake and 蕎麦前 nibbles come before the noodles, banquet courses ¥5,500–¥8,800, and live rakugo three or four times a month",
+  "cuisine_type": "soba",
+  "neighborhood": "Nihonbashi 3-chōme, Chūō-ku, just off Shōwa-dōri — 4 min from Nihonbashi station exit D1 (Tokyo Metro Tōzai and Ginza lines, Toei Asakusa line), 6 min from Kayabachō exit 12 (Tōzai and Hibiya lines), 9 min from the JR Tokyo Station Yaesu central exit",
+  "website": "https://www.yabuizu-souhonten.com/",
+  "menu_url": "https://www.yabuizu-souhonten.com/menu.html",
+  "hours_raw": "【ランチ】月～金曜日 11:15～14:00／土曜日・祝日 11:30～14:00　【ディナー】月～金曜日 17:15～20:15／土曜日・祝日 17:15～19:30　定休日：日曜日　8/11～8/15 夏季休業　※2026年9/21（月祝）～9/24（木）は設備改修のため休業、9/5（土）は昼のみ営業　※「従業員の福利厚生として」日曜定休以外に不定期の臨時休業あり",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat is designed into the noodle here, not merely nearby. The shop states plainly that it mills its own buckwheat and cuts it 二八 — 「自家製粉を二八で打ち」 — which is one part wheat flour to four parts buckwheat, and its mail-order soba is described as 「蕎麦粉50%以上の細打ちの江戸そば」, i.e. as little as half buckwheat. On top of that the tsuyu is a soy-sauce kaeshi over katsuobushi and saba-bushi dashi; tempura runs across the menu (天せいろ, 天ぷらそば, 天南蛮, いかの天ぷら, 季節の野菜の天ぷら) in wheat batter from a shared fryer; and hand-cut noodles mean dusting flour on the board and one shared boiling pot. No gluten-free claim, no tamari and no allergen sheet appear anywhere on the site. Per the brief's Japan rules this is precisely the case where a soba house reads as safe and is not.",
+  "vegan_status": "no",
+  "vegan_detail": "Every soba here is eaten with the house dashi, and the house dashi is the thing they are proudest of: 「出汁には、サバ節とカツオ節を6種類、独自の配合にて出汁を作り上げます」, drawn fresh each morning in a large kettle. That rules out the tsuyu, the kake bowls, the 揚げ浸し and the canned mail-order soup alike. There are genuinely good vegetable plates on the 蕎麦前 board — きゅうりとみょうがの甘酢漬け ¥600, ごまだれ豆腐 ¥750, ナスとピーマンの揚げ浸し ¥850, 季節の野菜の天ぷら ¥1,500 — but the age-bitashi sits in dashi, the tempura batter is egg-and-wheat and shares a fryer with prawn and squid, and the noodles themselves reach the table with a fish broth. No vegan option is published and none should be assumed.",
+  "chef_bio": {
+   "chef_name": "野川喜央 (Nogawa) — 代表, 株式会社薮伊豆総本店",
+   "roles": [
+    "代表 (representative) of 株式会社薮伊豆総本店, named on the shop's own mail-order page",
+    "六代目当主 — the shop describes its present head as the sixth generation",
+    "女将 野川雅江 (Masae Nogawa) — the okami who runs the front of house and the rakugo programme"
+   ],
+   "origin": "Nihonbashi, Chūō-ku, by way of Kyōbashi; the okami, Masae Nogawa, is from Mori-machi in Shizuoka",
+   "background": "The shop's own 薮伊豆由来記 traces the house to the Tempō years of the Edo period, around 1830, when a soba shop called 伊豆本 was already doing well in Kyōbashi. In 1882 — Meiji 15 — 伊豆本 was taken under the noren of 神田やぶそば, and 堀田定次郎 of the Yabu main house combined the 藪 of Yabu with the 伊豆 of Izumoto to make 薮伊豆, a direct branch of the Yabu lineage, one of the three great Edo soba schools. It moved from Kyōbashi to Nihonbashi in the late 1990s and the present head is the sixth generation; the 由来記 scroll itself hangs on the second floor. What separates it from the many old soba names in this district is that it still mills its own flour on site. Whole buckwheat is ground twice a day, morning and evening, in a stone-mill hut beside the gate, on 蟻巣石 millstones — porous, full of air pockets, heat-absorbing — turned slowly so the flour does not scorch and so the sweet inner husk goes into it. The flour is cut the same day, hand-kneaded, and the critical 水回し step is done in the technique handed down from Edo. The dashi is the other half: six kinds of saba-bushi and katsuobushi in a house ratio, boiled each morning in a large kettle with the scum skimmed off by hand and strained, following the old maxim 「出汁は大きく取れ」. The building runs to three floors and about 120 seats — a table floor at street level laid out deliberately for solo diners, tables plus a horigotatsu room on the second, and four tatami private rooms on the third whose fusuma can be removed to make a 40-seat hall. That third floor doubles as a rakugo theatre: the house holds a 落語会 three or four times a month, with a ¥2,500 「おアトもよろしくセット」 afterwards — tamagoyaki, itawasa, squid-and-vegetable tempura, kinpira, a simmered seasonal vegetable and two seiro. The connection is inherited rather than a marketing idea. Back when the shop was in Kyōbashi, the fifth-generation Yanagiya Kosan held his school's rakugo evenings in the third-floor tatami room alongside Reireisha Bafū and Shōkyokusai Sumie; the family stayed close to the Yanagiya school and Kosan's grandson, Yanagiya Karoku, now runs a 落語とそばの会 there. The lunch set is named 「じゅげむ定食」 after the rakugo piece Jugemu — chicken-and-burdock yanagawa hotpot, buckwheat-grain rice, kōya-dōfu, kinpira, kamaboko and soba, built around health and longevity, low in fat and heavy on fibre.",
+   "philosophy": "「そば本来の姿」を変えない — carry Edo townsmen's soba forward without altering what soba is; and soba as culture and 粋 rather than a way of filling up.",
+   "specialty": "Self-milled stone-ground 二八 seiro, the house ごまそば, 鴨せいろ and 鴨南蛮, the じゅげむ定食 lunch, banquet courses in tatami private rooms, and the monthly rakugo evenings.",
+   "anecdotes": [
+    {
+     "text": "「京橋に店があった頃、落語家の五代目柳家小さん師匠が店の3階のお座敷で、小さん一門による落語会をやっていました。それも、小さん、鈴々舎馬風、松旭斎すみゑ、と豪華でしたね」 — the okami, Masae Nogawa. Kosan's grandson Yanagiya Karoku now holds a 落語とそばの会 in the same room.",
+     "source": "https://www.nihonbashi-tokyo.jp/restaurants/gourmet-201312/"
+    },
+    {
+     "text": "The lunch set is named after the rakugo routine Jugemu and themed on health and longevity: chicken-and-burdock yanagawa, buckwheat-grain rice, kōya-dōfu, kinpira, kamaboko and soba.",
+     "source": "https://www.nihonbashi-tokyo.jp/restaurants/gourmet-201312/"
+    },
+    {
+     "text": "Buckwheat is stone-milled in a hut beside the gate twice a day and cut the same day; the millstones are 蟻巣石, chosen because their air pockets keep the flour from scorching and let the sweet inner husk through.",
+     "source": "https://www.yabuizu-souhonten.com/concept.html"
+    },
+    {
+     "text": "A Shizuoka prefectural feature on Shizuoka natives running Tokyo businesses profiles the okami, Masae Nogawa of Mori-machi, and records the shop's own line: 「明治15年に神田の藪から暖簾を分けられ『薮伊豆』となって、今の主人で6代目です」, with rakugo on the third floor three or four times a month.",
+     "source": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/080/309/yabuizu.pdf"
+    },
+    {
+     "text": "Rakugo dates are posted as they are set — 8/22 Sangorō, 8/29 Yumemaru, 9/12 Tsukasa, 9/19 Sangorō, 9/20 Karoku (sold out), 9/26 Benzaitei Izumi, 10/5 Karoku, 10/10 Tsukasa, 10/24 Sangorō — and the shop links a PDF schedule from its own site.",
+     "source": "https://r.gnavi.co.jp/gakp200/"
+    }
+   ],
+   "japanese_sources_summary": "yabuizu-souhonten.com is the shop's own site. Its こだわり page carries the 由来記 account (Tempō-era 伊豆本 in Kyōbashi; absorbed into 神田やぶそば's noren in 1882; 堀田定次郎 coining 薮伊豆), the twice-daily stone milling with 蟻巣石, the hand 水回し, the 二八 statement and the six-part saba/katsuo dashi. The お品書き page gives every price quoted here. The 店舗情報 page gives 〒103-0027 東京都中央区日本橋3-15-7, phone 03-3242-1240, the lunch and dinner windows, Sunday closing, the 8/11–8/15 summer break, 120 seats with tatami and horigotatsu, 40 seated for a banquet, cards accepted and non-smoking. The 店内のご案内 page describes the three floors and the hospital-grade air cleaners on the second. The 寄席 page gives the rakugo programme and the ¥2,500 「おアトもよろしくセット」. The お取り寄せ page names the operating company 株式会社薮伊豆総本店 and its 代表 野川喜央, and states that the mail-order soba is 蕎麦粉50%以上 and made under contract at a factory while the canned tsuyu is made in the shop's own kitchen over three days with no preservatives or additives. Tabelog (13006318) independently gives the same address and phone, 日本橋駅から358m, an オープン日 of 1882, 100 seats over three floors with private tatami rooms for 4 to 30-plus, cards accepted, all non-smoking, and 「定期落語会」 in its notes. Gnavi (gakp200) gives WGS84 coordinates 35.679039 / 139.775182, 120 seats, PayPay, wheelchair access, an English menu, banquet courses at ¥5,500 and ¥8,800, a ¥2,500 third-floor room charge, drink packages named after rakugo pieces, and a page last updated 17 August 2026. Mitsui Fudosan's まち日本橋 feature (December 2013) carries the okami's interview and the Yanagiya Kosan story. Shizuoka Prefecture's PDF profile carries the sixth-generation line and the okami's home town.",
+   "confidence": "high",
+   "sources": [
+    "https://www.yabuizu-souhonten.com/concept.html",
+    "https://www.yabuizu-souhonten.com/shop.html",
+    "https://www.nihonbashi-tokyo.jp/restaurants/gourmet-201312/",
+    "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/080/309/yabuizu.pdf",
+    "https://tabelog.com/tokyo/A1302/A130202/13006318/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Hand-cut noodles on a dusted board, one boiling pot, and a fryer running prawn, squid and vegetable tempura for the same dining rooms. No separated line and no allergen sheet on any page of the shop's site.",
+     "source": "https://www.yabuizu-souhonten.com/concept.html"
+    },
+    {
+     "text": "The noodle itself is 二八 by the shop's own statement — 「自家製粉を二八で打ち」 — so wheat is an ingredient, not a contaminant. The mail-order version is 「蕎麦粉50%以上」, i.e. as little as half buckwheat.",
+     "source": "https://www.yabuizu-souhonten.com/shop.html"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The tsuyu is an ordinary soy-sauce kaeshi over the house katsuo/saba dashi. No tamari or wheat-free soy sauce is mentioned anywhere, and the canned tsuyu sold by mail order is the same recipe.",
+     "source": "https://www.yabuizu-souhonten.com/shop.html"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "「出汁には、サバ節とカツオ節を6種類、独自の配合にて出汁を作り上げます」 — bonito and mackerel dashi is the base of every tsuyu, every kake bowl and the 揚げ浸し. Tamagoyaki, kamaboko, duck and prawn run through the rest of the menu.",
+     "source": "https://www.yabuizu-souhonten.com/concept.html"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Gnavi records an English menu and step-free wheelchair entry, and course bookings are taken online and through the shop's LINE account — so a dietary question can at least be put in writing before arrival, in a room that takes reservations. That is access, not an allergen guarantee.",
+     "source": "https://r.gnavi.co.jp/gakp200/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Comfortable for visitors",
+   "note": "Easier than it looks from the gate. There is an English menu, an English page on the shop's own site, step-free wheelchair entry, all major cards plus PayPay, and the ground floor is laid out deliberately for solo diners, so a walk-in lunch of one seiro needs no Japanese at all. The upstairs is where the effort pays: tatami and horigotatsu private rooms for 4 to 40, banquet courses from ¥5,500 (¥8,800 with two hours of premium sake), a ¥2,500 per-room charge on the third floor, and drink packages named after rakugo pieces — 時そば ¥2,200, つぼ算 ¥2,750, 試し酒 ¥3,300. The rakugo evenings three or four times a month are performed entirely in Japanese and turn on wordplay, so for a non-speaker they are a spectacle rather than a comprehensible show, but the ¥2,500 「おアトもよろしくセット」 that follows one — nibbles and two seiro — is a fine way to spend an evening. Closed Sundays, and it closes early: 14:00 for lunch, 20:15 for dinner, 19:30 on Saturdays and holidays. Shut 11–15 August, and the shop warns of irregular extra closures 「従業員の福利厚生として」, so check before making a trip. Tabelog records 予約不可 while Gnavi and the shop's LINE both take course bookings — walk in for noodles, book for a room."
+  },
+  "sources": [
+   "https://www.yabuizu-souhonten.com/",
+   "https://www.yabuizu-souhonten.com/concept.html",
+   "https://www.yabuizu-souhonten.com/menu.html",
+   "https://www.yabuizu-souhonten.com/access.html",
+   "https://www.yabuizu-souhonten.com/shopinfo.html",
+   "https://www.yabuizu-souhonten.com/shop.html",
+   "https://www.yabuizu-souhonten.com/yose.html",
+   "https://tabelog.com/tokyo/A1302/A130202/13006318/",
+   "https://r.gnavi.co.jp/gakp200/",
+   "https://www.nihonbashi-tokyo.jp/restaurants/gourmet-201312/",
+   "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/080/309/yabuizu.pdf"
+  ],
+  "enrich_note": "Confirmed on the strongest evidence in this shard — a live business with its own site, a named operating company, a Mitsui Fudosan neighbourhood feature and a Shizuoka prefectural profile. The light record's name 薮伊豆総本店 and cuisine 'Soba' are both correct; only the pin was wrong, being the Nihonbashi centroid at 35.684, 139.774. The address is 〒103-0027 東京都中央区日本橋3-15-7, identical on the shop's own site, Tabelog (13006318) and Gnavi (gakp200); coordinates set to the GSI geocode of 日本橋三丁目15番7号 (35.679085, 139.775101), which sits about 12 m from Gnavi's own published WGS84 pair (35.679039, 139.775182) and agrees with Tabelog's 「日本橋駅から358m」. On dates: the house began as 伊豆本 in Kyōbashi in the Tempō era and became 薮伊豆 in 1882 on being taken under 神田やぶそば's noren, so Tabelog's オープン日 of 1882 is the Yabu-lineage date rather than the origin; it moved to Nihonbashi in the late 1990s and is on its sixth generation. The light record's gf 'ask' and vegan 'ask' are both corrected to 'no', and the gluten call is about the recipe rather than contamination: the shop states in its own words that it cuts its soba 二八, and sells a mail-order soba of 「蕎麦粉50%以上」. Currency check: the Gnavi page was last updated 17 August 2026 and lists rakugo dates through 24 October, so a published closure of 21–24 September 2026 for 設備改修 and lunch-only service on 5 September are both current, not stale. Search legs, all HTTP 200 and all read: Yahoo Japan for 「薮伊豆総本店 日本橋 そば」 and for 「薮伊豆総本店 野川 六代目 日本橋 落語」; the shop's own site (index, こだわり, お品書き, 店舗情報, 店内のご案内, お取り寄せ, 寄席); s.tabelog.com; r.gnavi.co.jp; nihonbashi-tokyo.jp; and the Shizuoka Prefecture PDF, which a server-side fetch could not parse and which was read by extracting the text locally. One caution for the merge: the representative named on the shop's mail-order page is 野川喜央 and the okami interviewed in both press pieces is 野川雅江; the sources establish that both are the family running the sixth-generation shop but do not state which of them is the sixth-generation 主人, and no reading for 喜央 is published anywhere, so the name is recorded in kanji with only the surname romanised."
  }
 ]
