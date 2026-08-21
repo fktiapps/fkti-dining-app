@@ -84,15 +84,14 @@
  {
   "id": "vm_salon_fu",
   "city": "kyoto",
-  "field": "name/identity",
-  "quote": "サロン・フ (Salon Fu)",
+  "field": "name",
   "url": "https://vegemap.org/en/list/kyoto/vegan-options/salon_fu_kyp_en/",
-  "verdict": "wrong_source",
   "found": "庵（いおり）、京都府京都市右京区宇多野御池町20-13、075-461-5911、精進料理 ＊要予約 — same address AND same phone as our 'Salon Fu' record; Tabelog: 完全予約制のマクロビオティックベースの精進料理の店",
   "correct_url": "https://vegemap.org/list/%e4%ba%ac%e9%83%bd/%e5%85%a8%e3%81%a6%e3%83%b4%e3%82%a3%e3%83%bc%e3%82%ac%e3%83%b3/iori/",
   "http": "vegemap 200; tabelog 26005102 200 via s.tabelog.com iPhone UA; Ecosia 200",
   "method": "plain fetch, then Ecosia (Brave/Yahoo JP both HTTP 429, DDG-lite 202 challenge, Bing 200)",
-  "note": "UNFINDABLE NAME. The venue does not trade as 'Salon Fu' — it is 庵（いおり）/ Iori, a reservation-only macrobiotic shojin-ryori house. A traveller searching 'Salon Fu Kyoto' finds nothing; Tabelog, Yahoo Map, ekiten and jpvs.org all index it as 庵. Add 庵（いおり）/ Iori as the primary name and keep Salon Fu as an alias."
+  "note": "UNFINDABLE NAME. The venue does not trade as 'Salon Fu' — it is 庵（いおり）/ Iori, a reservation-only macrobiotic shojin-ryori house. A traveller searching 'Salon Fu Kyoto' finds nothing; Tabelog, Yahoo Map, ekiten and jpvs.org all index it as 庵. Add 庵（いおり）/ Iori as the primary name and keep Salon Fu as an alias.",
+  "kind": "name_correction"
  },
  {
   "id": "vm_salon_fu",
@@ -122,13 +121,11 @@
   "id": "vm_salon_fu",
   "city": "kyoto",
   "field": "gf_cross_contamination",
-  "quote": "(no gf claim cited in shard)",
-  "url": null,
-  "verdict": "unsupported",
   "found": "精進料理 / macrobiotic kaiseki — no allergen page published by the venue on any route tried.",
   "http": "n/a",
   "method": "Ecosia + Tabelog detail page",
-  "note": "ADVISORY, not a citation defect: gf 'ask' is right, but shojin-ryori kitchens make heavy use of 生麻 / 車麻 (pure wheat gluten) and 醇酯/醒油-based simmering. Record should name those two as the specific hazards to ask about rather than leaving gf_cross_contamination empty."
+  "note": "ADVISORY, not a citation defect: gf 'ask' is right, but shojin-ryori kitchens make heavy use of 生麻 / 車麻 (pure wheat gluten) and 醇酯/醒油-based simmering. Record should name those two as the specific hazards to ask about rather than leaving gf_cross_contamination empty.",
+  "kind": "advisory"
  },
  {
   "id": "vm_sushizen",
@@ -366,14 +363,13 @@
   "id": "nagano_ramen_misoya",
   "city": "nagano",
   "field": "allergens_other",
-  "quote": "(not currently recorded)",
   "url": "https://tabelog.com/en/nagano/A2001/A200101/20001391/",
-  "verdict": "wrong_source",
   "found": "Per-item allergen icons at shokutabinagano.com/ja/shop/2321: every bowl declares 大豆・りんご・ゼラチン・小麦・豚肉・鶏肉・牛肉・ごま; ①味噌らぁめん additionally declares エビ (shrimp); the two つけめん declare くるみ (walnut); all four 辛味噌 bowls declare 落花生 (peanut, matching the review line 「表面には落花生の粒が散らしてあり」).",
   "correct_url": "https://shokutabinagano.com/ja/shop/2321/",
   "http": "200 plain curl; icon legend read from the theme's own icon PNGs",
   "method": "Ecosia → first-party-supplied allergen table (YOKOSO project, 公益社団法人長野青年会議所)",
-  "note": "NEW EVIDENCE the record does not carry: a shrimp allergen in the plain miso ramen and peanut in every spicy bowl are the kind of thing a traveller needs and neither is currently anywhere in our record. Source caveat: the YOKOSO listing dates from the 2022-23 project and carries its own 「あくまで参考用。お店でよくご確認の上、ご注文ください」 disclaimer."
+  "note": "NEW EVIDENCE the record does not carry: a shrimp allergen in the plain miso ramen and peanut in every spicy bowl are the kind of thing a traveller needs and neither is currently anywhere in our record. Source caveat: the YOKOSO listing dates from the 2022-23 project and carries its own 「あくまで参考用。お店でよくご確認の上、ご注文ください」 disclaimer.",
+  "kind": "new_evidence"
  },
  {
   "id": "nagano_ramen_misoya",
@@ -383,5 +379,41 @@
    "https://tabelog.com/nagano/A2001/A200101/20001391/"
   ],
   "why": "Tabelog 200 on 2026-08-21, no rst-status badge, 1,462 reviews with the three most recent dated 2026/07, 2026/07 and 2026/06. Open 11:00-00:00 seven days, 13 counter seats, 予約不可 (no reservations), TEL 026-224-1183 — so an allergy conversation has to happen at the counter."
+ },
+ {
+  "id": "nagano_sobatei_aburaya",
+  "city": "nagano",
+  "field": "soy_sauce_wheat",
+  "quote": "Soba tsuyu is built on wheat-containing soy sauce; buckwheat noodles are often cut with wheat flour (nihachi). Request jūwari + wheat-free tsuyu.",
+  "url": "https://sobateiaburaya.owst.jp/",
+  "verdict": "wrong_source",
+  "found": "The cited page contains NONE of this — 十割 / 二八 / そば粉 / 小麦 / アレル all occur zero times in its HTML; it lists only 鴨せいろ 1310円, 板そばの網焼き 300円, 馬刺し. Real support exists elsewhere: Nagano Prefecture's own blog (2020-07-10) states 「葕麦粉八割の手打ちそばは、コシのあるしっかりとした麺」, and a Tabelog review says 「葕麦は国産のそば粉を使った八割葕麦」.",
+  "correct_url": "https://blog.nagano-ken.jp/ippin/eat/1505.html",
+  "http": "owst.jp 200 plain curl; n-aburaya.com 200 plain curl; blog.nagano-ken.jp 200 plain curl; Yahoo Japan 200",
+  "method": "plain fetch of the cited page and of the operator's real corporate site, then Yahoo Japan (Ecosia 403 this run after answering earlier, Brave 429, DDG-lite 202, Bing junk)",
+  "note": "STRIKE THE ADVICE. 'Request jūwari' cannot work here — the house soba is documented as 八割 (80% buckwheat / 20% WHEAT) by the prefecture itself, and there is no jūwari on the menu, so a celiac asking for one gets a 'no' they may misread as 'this one is fine'. Worse, the same prefectural article shows the two signature bowls 飯綱おろしそば and 戸隠おろしそば are BOTH topped with 天かす (fried wheat batter), and the shop runs a tempura fryer for 天丘. The tsuyu half of the claim is still unevidenced anywhere: the operator's own site says only 「葕麦料理にあわせ２種類のタレを使い分けます」 with no ingredients. Correct reading: gf 'ask' is too generous here — see tier_recommendation."
+ },
+ {
+  "id": "nagano_sobatei_aburaya",
+  "kind": "tier_recommendation",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "no",
+  "evidence": [
+   "https://blog.nagano-ken.jp/ippin/eat/1505.html",
+   "https://n-aburaya.com/sobatei/",
+   "https://sobateiaburaya.owst.jp/"
+  ],
+  "why": "'ask' implies a conversation could get a celiac fed. Nothing on this menu can: the soba is 葕麦粉八割 (20% wheat) with no jūwari option, both signature bowls carry 天かす, the shop fries tempura and serves 天丘, and the operator publishes no allergen information on either its owst microsite or its corporate site n-aburaya.com. Downgrade to 'no' — or keep 'ask' only if the record states plainly that the noodles themselves are 20% wheat."
+ },
+ {
+  "id": "nagano_sobatei_aburaya",
+  "kind": "trading",
+  "status": "open",
+  "evidence": [
+   "https://sobateiaburaya.owst.jp/",
+   "https://n-aburaya.com/sobatei/"
+  ],
+  "why": "Both the owst microsite and the operator's corporate site n-aburaya.com fetched 200 on 2026-08-21; Yahoo shows 営業中, 営業終了 22:00. Hours 11:00–22:00 (L.O. 21:30), 定休日 年末年始 (Yahoo: Jan 1 and Dec 31 only). TRAP FOR THE NEXT AGENT: the cited page links https://aburaya.owst.jp/ — that is a DIFFERENT venue, 孴席油や, a private-room banquet restaurant on the 9th floor of the same building with its own phone 026-226-6761 and its own そば会席 menu. Do not cite the sibling's pages against this record."
  }
 ]

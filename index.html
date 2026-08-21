@@ -345,6 +345,13 @@ li.uncited{color:#7c8299}
 /* The shop's OWN gluten-free claim, contradicted by the shop's own menu. Loudest
    element in the app, because it is the one hazard a careful reader cannot avoid by
    being careful: they did the right thing, read the badge, and the badge lied. */
+.chain-row{border:1px solid #e3e0d6;border-radius:10px;padding:9px 11px;margin:8px 0;background:#FBF9F4}
+.chain-row h4{margin:0 0 4px;font-size:14px}
+.chain-tier{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;border-radius:4px;padding:1px 5px;margin-right:5px;color:#fff}
+.ct-reliable{background:#2E7D32}.ct-limited{background:#B8860B}.ct-none{background:#7a7a7a}
+.chain-best{font-size:12.5px;font-weight:700;margin:2px 0}
+.chain-det{font-size:12px;line-height:1.5;color:#3a4258}
+.chain-cav{font-size:11.5px;color:#7a4a12;background:#FBF0DD;border-radius:6px;padding:4px 7px;margin-top:5px}
 .shopfalse{
   display:block; margin:8px 0; font-size:12.5px; line-height:1.5; font-weight:600;
   color:#fff; background:#B3261E; border-radius:8px; padding:8px 10px;
@@ -427,6 +434,7 @@ li.uncited{color:#7c8299}
   <div class="frow">
    <div class="search" id="searchWrap">🔍<input id="search" placeholder="Filter or type city + Go…" autocomplete="off" inputmode="search"/><button id="searchGo" style="flex:0 0 auto;font-size:12px;font-weight:700;color:var(--ver);padding:0 2px 0 6px;border-left:1px solid var(--line)">Go</button></div>
    <button class="chip card-chip" id="cardsBtn">🪪 Show staff</button>
+   <button class="chip card-chip" id="chainsBtn">🏪 Chains</button>
    <button class="chip card-chip" id="phrasesBtn">🗣 Phrases</button>
    <button class="chip card-chip" id="konbiniBtn">🏪 Konbini</button>
    <button class="chip card-chip" id="stationBtn">🚉 Station</button>
@@ -586,6 +594,15 @@ li.uncited{color:#7c8299}
  </div>
 </div>
 
+<div class="modal" id="chainsModal">
+ <div class="box">
+  <button class="closex" id="chainsClose">×</button>
+  <h2>🏪 Reliable chains</h2>
+  <p style="margin:2px 0 0">The safety net for the evening the plan falls through. These are everywhere, open late, and — unlike almost anything else — they publish per-item allergen data. Ordered best-first for each diet.</p>
+  <div id="chainsBody"></div>
+ </div>
+</div>
+
 <div class="modal" id="phraseModal">
  <div class="box">
   <button class="closex" id="phraseClose">×</button>
@@ -716,7 +733,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v203';
+const APP_BUILD='dcd-v204';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1802,6 +1819,27 @@ const GLOSSARY=[
   {en:'It was delicious. (said when leaving)',ja:'ごちそうさまでした。',rj:'Gochisōsama deshita.',furi:[['ごちそうさまでした。','']]}
  ]}
 ];
+async function openChains(){
+ await ensureChainsKb();
+ var all=Object.values(CHAINS_KB.chains||{});
+ var rank={reliable:0,limited:1,none:2};
+ function section(diet,label){
+  var rows=all.slice().sort(function(a,b){
+   var d=rank[a[diet].tier]-rank[b[diet].tier]; return d||String(a.name).localeCompare(b.name);});
+  return "<div class=\"gloss-h\" style=\"margin-top:12px\">"+label+"</div>"+rows.map(function(c){
+   var t=c[diet].tier, cls="ct-"+t;
+   var best=(c[diet].best&&c[diet].best!=="—")?"<div class=\"chain-best\">"+escHtml(c[diet].best)+"</div>":"";
+   var cav=(t!=="none"&&c.caveats&&c.caveats.length)?"<div class=\"chain-cav\">⚠ "+escHtml(c.caveats[0])+"</div>":"";
+   return "<div class=\"chain-row\"><h4>"+(c.icon||"🍴")+" "+escHtml(c.name)+
+    (c.name_ja?" <span style=\"font-weight:400;color:var(--muted);font-size:12px\">"+escHtml(c.name_ja)+"</span>":"")+"</h4>"
+    +"<span class=\"chain-tier "+cls+"\">"+t+"</span>"+best
+    +"<div class=\"chain-det\">"+escHtml(c[diet].detail||"")+"</div>"+cav+"</div>";
+  }).join("");
+ }
+ var note=CHAINS_KB.disclaimer?"<div class=\"chain-cav\" style=\"margin:10px 0\">"+escHtml(CHAINS_KB.disclaimer)+"</div>":"";
+ document.getElementById("chainsBody").innerHTML=note+section("gf","🌾 Gluten-free")+section("vegan","🌱 Vegan");
+ document.getElementById("chainsModal").classList.add("show");
+}
 function openGlossary(){
  document.getElementById('phraseBody').innerHTML=GLOSSARY.map(sec=>
   `<div class="gloss-sec"><div class="gloss-h">${sec.title}</div><div class="scan-q"><ul>${sec.items.map(qLine).join('')}</ul></div></div>`).join('');
@@ -2227,6 +2265,8 @@ function wire(){
  addTouch(smb,()=>smf.click());
  smf.onchange=e=>{const f=e.target.files&&e.target.files[0]; if(f) scanMenu(f,null,'scanModalOut'); smf.value='';};
  // useful-phrases glossary
+ addTouch(document.getElementById('chainsBtn'),openChains);
+ addTouch(document.getElementById('chainsClose'),function(){document.getElementById('chainsModal').classList.remove('show');});
  addTouch(document.getElementById('phrasesBtn'),openGlossary);
  document.getElementById('phraseClose').onclick=()=>document.getElementById('phraseModal').classList.remove('show');
  document.getElementById('phraseModal').onclick=e=>{if(e.target.id==='phraseModal')e.target.classList.remove('show');};

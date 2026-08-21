@@ -168,6 +168,14 @@ const drive = await page.evaluate(async () => {
   render();
   await sleep(600);
 
+  // The chain guide is the safety net for the evening the plan falls through, and 20
+  // of its 25 entries have no map pin — browsable is the only way a reader reaches them.
+  await openChains();
+  await sleep(700);
+  out.chainRows = document.querySelectorAll('#chainsBody .chain-row').length;
+  out.chainReliable = document.querySelectorAll('#chainsBody .ct-reliable').length;
+  document.getElementById('chainsModal').classList.remove('show');
+
   const withRamen = state.cities.nagano.places.find(p => p.ramen);
   if (withRamen) {
     try {
@@ -210,6 +218,7 @@ if (!drive.citeList) fail.push('citation list did not render for a sourced recor
 if (drive.bareShop && !drive.uncitedTags) fail.push('uncited findings rendered with no "uncited" marker — they read as evidence');
 if (drive.bareShop && !drive.uncitedNote) fail.push('no summary warning shown for a record whose claims are all uncited');
 if (drive.veganDialLeaks) fail.push(drive.veganDialLeaks + ' record(s) shown under "Full vegan only" without vegan_status full');
+if ((drive.chainRows || 0) < 50) fail.push('chain guide rendered ' + drive.chainRows + ' rows, expected 50 (25 chains x 2 diets)');
 if (drive.detailError) fail.push('detail sheet threw: ' + drive.detailError);
 if (errors.length) fail.push(errors.length + ' console error(s)');
 if (failedRequests.length) fail.push(failedRequests.length + ' failed request(s)');
