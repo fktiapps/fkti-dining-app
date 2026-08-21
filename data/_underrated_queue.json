@@ -88,6 +88,32 @@
   "source": "transcribed from agent prose"
  },
  {
+  "city": "kyoto",
+  "id": "ChIJFaV_oy4GAWARbgZT2pbiXek",
+  "name": "Gluten-Free Deli AL CAMINO",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "dedicated",
+  "evidence": [
+   "https://www.findmeglutenfree.com/biz/gluten-free-deli-al-camino/5334663268007936",
+   "https://tabelog.com/en/kyoto/A2601/A260203/26007481/",
+   "http://www.watanabechef.com/pizzeria-al-camino-2/"
+  ],
+  "why": "UNDER-RATED, and this is the BITTE pattern almost exactly. The record shows 'GF - ask' on a venue whose own name is Gluten-Free Deli, whose own site says 「グルテンフリー専門店」, whose operator-written Tabelog corporate listing carries the headline badge 'Gluten Free Specialty Store' plus 'We accommodate various allergies' and 'Allergy information available', and whose FindMeGlutenFree listing reads 'Reported to be dedicated gluten-free' across 11 recent ratings - nine of them tagged 'Dedicated GF', with two 'Dedicated gluten-free kitchen' safety reports and a celiac review five days old saying 'The menu is totally gluten free'. The shop went gluten-free because the owner became gluten-intolerant. Even the beer is 小麦・大麦不使用. Two things the human gate should weigh before promoting: (a) one recent celiac reviewer logged 'Yes - mild symptoms' while still marking the kitchen dedicated, and (b) the same owner runs a wheat PANINOTECA, two wheat Italian restaurants and a frozen-pizza business under the il Viale group, though AL CAMINO trades from a separate address. If those give pause, 'high' (Strong GF focus) is the floor - 'ask' is not defensible either way."
+ },
+ {
+  "city": "nagoya",
+  "id": "nagoya_yakitori_arai",
+  "name": "焼鳥 あらい (Yakitori Arai)",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/aichi/A2301/A230109/23090511/dtlmenu/"
+  ],
+  "why": "UNDER-RATED. 'no' says a vegan cannot eat here, but the shop's own 公式 menu (67 items, 更新日 2026/03/28) carries a headed 野菜串 section — 白ネギ, ししとう, にんにく, しいたけ — plus 枝豆, トマトスライス, きゅうり一本漬け, 辛味噌キャベツ and なめたけおろし, and prints 「塩・タレからお選びください」 so the tare can be declined in writing. The record's own menus file already marks 枝豆 vegan and the three vegetable skewers vegan:ask, so the label contradicts the record's own data. The real caveats — shared binchotan grill, chicken drippings, likely bonito on the 冷奴 — are exactly what 'ask' is for."
+ },
+ {
   "city": "tokyo",
   "id": "tokyo_beppinsha",
   "name": "Bistro Beppinsha (カリー＆ワイン ビストロべっぴん舎 お茶の水本店)",
@@ -117,6 +143,20 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_kyoeido",
+  "name": "Sumatra Curry Kyoeido (スマトラカレー 共栄堂)",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.kyoueidoo.com/",
+   "https://kanda-curry.com/共栄堂/",
+   "https://san-tatsu.jp/articles/146795/"
+  ],
+  "why": "The record's own gf_detail already concludes 'it caps at options, not high' while gf_confidence carries 'ask' — the label contradicts its own detail text. The evidence supports 'options': the operator states in its own words that the curry sauce uses 小麦粉を一切使わず, the rice is plain Koshihikari, and both facts are independently corroborated by kanda-curry and san-tatsu. CONDITIONAL, and the condition is not optional: do not promote until gf_detail is corrected to exclude タンカレー and ハヤシライス, which the operator and san-tatsu both say are built on house-made デミグラスソース (a wheat-roux sauce). The record currently tells celiacs to 'Order any curry over plain Koshihikari rice'; under that wording a promotion would make the advice more dangerous, not less."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__104",
   "name": "築地本願寺キッチン",
   "field": "vegan_status",
@@ -131,6 +171,20 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__144",
+  "name": "べっぴん舎",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.beppinsya.com/",
+   "https://kanda-curry.com/?p=4930",
+   "https://www.beppinsya.com/%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/"
+  ],
+  "why": "UNDER-RATED. The record carries gf_uncited_downgrade {from: 'options', date: 2026-08-20, 'Tier held down: no safety finding on this record cites a source. Restore through REVIEW_PROTOCOL.md once evidence is attached.'} — that condition is now met. The operator's own site states 「小麦粉を使わないグルテンフリーカリー」 and 「The spice curry without wheat flour」, and the Kanda Curry Grand Prix organiser states the same thing independently of the shop. Every curry on the published menu is wheat-flour-free and no naan or bread appears anywhere on it. Restore 'options'. Do NOT act on the record's separate gf_proposed_tier of 'high': there is no dedicated-equipment claim, no allergen protocol, no certification, and the shop still braises in wine and shares one small lunch-only kitchen — 'options' is what the evidence carries. Fix the Jimbocho pin first; a restored GF tier pointing at a branch that closed in 2023 would send a celiac to the wrong door."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3_a_375",
   "name": "玄米菜食",
   "field": "gf_confidence",
@@ -140,5 +194,35 @@
    "http://www.mominoki-house.net/"
   ],
   "why": "The venue's own site publishes a named 「グルテンフリー・五葷抜き / Gluten-Free」 menu section with six priced items, in Japanese, English and Chinese. Under REVIEW_PROTOCOL that is 'some naturally-GF/adaptable dishes, NO special handling' — options, and capped there because it is a single source with no independent corroboration and no dedicated fryer claimed. The mandatory cross-contamination text must say: the same kitchen deep-fries wheat spring rolls and tempura, one GF-line item (揚げ餅) is itself deep-fried, the mock-meat karaage is seitan (the venue's own English menu calls it 'gluten chicken'), and neither tamari nor the miso type is stated."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_oh_nana",
+  "name": "Oh Nana!",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "dedicated",
+  "evidence": [
+   "https://www.oh-nana.com/about",
+   "https://glutenfreejapan.jp/shop/oh-nana-gluten-free-restaurant-tokyo/",
+   "https://veggy.jp/archives/12671",
+   "https://www.oh-nana.com/services-8"
+  ],
+  "why": "UNDER-RATED, and the record already knows it: gf_proposed_tier reads to \"dedicated\", held at \"ask\" by gf_uncited_downgrade purely because nothing cited a source. The sources now exist. The venue is a 100% gluten-free restaurant founded by a diagnosed celiac and describes itself as 「日本初欧米基準のセリアック病対応ができる完全グルテンフリーレストラン」; an independent, explicitly unpaid visit by glutenfreejapan.jp (2026-08-05) reports 「食事はすべて厳格なグルテンフリーのキッチンで調理しています」 and 「使用している原材料や調味料はすべてグルテンフリーです」; veggy.jp independently headlines it 「100％グルテンフリーレストラン」. Recommend only — this needs REVIEW_PROTOCOL.md pass 3 and human sign-off, because a dedicated badge is exactly the label that stops a celiac checking."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_osteria_lauro",
+  "name": "Osteria Lauro",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "https://www.hotpepper.jp/strJ001200792/lunch/",
+   "https://osterialaurojinbocho.owst.jp/",
+   "https://osterialaurojinbocho.owst.jp/en/",
+   "https://tabelog.com/tokyo/A1310/A131003/13198272/"
+  ],
+  "why": "UNDER-RATED by one notch, and only for a paperwork reason: gf_uncited_downgrade records that this record was held down from \"options\" on 2026-08-20 solely because no safety finding cited a source. Sources now exist and are unambiguous — a named, priced, weekly-rotating rice-flour (米粉) gluten-free fettuccine at lunch, a documented +150 yen dinner substitution stated in Japanese and English, the bread deliberately omitted from the GF set, and Tabelog carrying 「グルテンフリーメニューあり」 as a venue attribute. That is 'options', not 'unknown'. It must NOT go above options: nothing published addresses shared pasta water, and that gap is the whole risk."
  }
 ]

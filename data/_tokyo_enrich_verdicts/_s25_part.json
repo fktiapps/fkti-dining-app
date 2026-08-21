@@ -1,0 +1,299 @@
+[
+ {
+  "id": "tokyo3_research_blocked_yotsuy",
+  "name": "RESEARCH_BLOCKED",
+  "status": "not_found",
+  "lat": 35.686,
+  "lng": 139.73,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - this row is not a restaurant. 'RESEARCH_BLOCKED' is a placeholder the discovery sweep wrote when its proxy refused Tabelog/Google/Wikipedia for the Yotsuya tile.",
+  "cuisine_type": "unknown",
+  "neighborhood": "Unverified. The light record says Yotsuya (四谷), Shinjuku-ku - the tile centroid, not an address.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed - there is no business here to assess. The light record's gf/vegan 'ask' values were sweep defaults, not findings.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed - no business.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Nothing to establish. The name field literally reads RESEARCH_BLOCKED and the cuisine field reads 'N/A - Proxy blocks Tabelog, Google, Wikipedia', i.e. the sweep recorded its own failure as if it were a shop. There is no Japanese business name to put into any directory; searching the literal string on Tabelog's nationwide free-word search returns nothing.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "No searchable name exists.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Not a business. Delete."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. This row is a discovery-sweep error artifact, not a restaurant: the name field is the literal string 'RESEARCH_BLOCKED' and the cuisine field is the sweep's own error message ('N/A - Proxy blocks Tabelog, Google, Wikipedia'). There is no business name to search, so no search leg can be run beyond confirming the literal string returns nothing on Tabelog. Coordinates unchanged, loc_precise:false. Recommend deletion from data/tokyo.json."
+ },
+ {
+  "id": "tokyo3__325",
+  "name": "てんぷら山の上 御茶ノ水本店",
+  "status": "confirmed",
+  "reopens": "summer 2027 - the honten reopens inside the rebuilt 山の上ホテル 東京 / HILLTOP HOTEL TOKYO on the same Kanda-Surugadai site",
+  "lat": 35.697712,
+  "lng": 139.761398,
+  "loc_precise": true,
+  "address_ja": "〒101-0062 東京都千代田区神田駿河台1-1（山の上ホテル内）",
+  "enrich_confidence": "high",
+  "cuisine": "The tempura counter of the literary Hilltop Hotel - by its own account the first Tokyo hotel restaurant to serve age-dashi tempura, still frying Edo-style seasonal courses. The Surugadai honten is dark until 2027; the sibling counters run about ¥3,000 for a tendon at Nihonbashi Mitsukoshi and ¥15,000-¥29,000 for the full course at Ginza Six and Tokyo Midtown.",
+  "cuisine_type": "tempura",
+  "neighborhood": "Kanda-Surugadai 1-chome, Chiyoda-ku, on the hill above Ochanomizu - 5 min from Ochanomizu (JR Chuo/Sobu line and Tokyo Metro Marunouchi line), 5 min from Shin-Ochanomizu (Chiyoda line), 6 min from Jimbocho. Not Ichigaya: the light record's Ichigaya pin was a tile centroid about 2.4 km west of the real address.",
+  "website": "https://www.yamanoue-hotel.co.jp/tempurayamanoue/",
+  "menu_url": "https://www.yamanoue-hotel.co.jp/tempurayamanoue/",
+  "hours_raw": "御茶ノ水本店：2024年2月13日より休館中（山の上ホテル休館に伴う）。2027年夏「山の上ホテル 東京」内で再オープン予定。／営業中の直営店 - てんぷら山の上 Ginza（GINZA SIX 13F）11:00-15:00 L.O.14:00、17:00-23:00 L.O.20:30／てんぷら 山の上 Roppongi 東京ミッドタウン ガレリア 3F 11:00-15:00、17:00-22:00／てんぷら 山の上 日本橋三越本店 B1F テイクアウト10:00-19:30、イートイン11:00-19:30（L.O.19:00）、定休日は三越に準ずる",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Tempura is wheat-flour batter by definition and this is a tempura specialist - the entire menu is koromo made from wheat flour, fried in shared oil, and the tentsuyu dipping broth is built on ordinary wheat-containing soy sauce. No gluten-free claim appears anywhere on the company site. A celiac has nothing safe to order here.",
+  "vegan_status": "no",
+  "vegan_detail": "Edo-mae tempura counter: prawn, kisu, conger and other seafood are the backbone of the course, the tentsuyu is katsuo dashi, and vegetable pieces come out of the same oil as the seafood. No vegetable-only or plant-based course is published.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "company-operated tempura restaurants of 株式会社山の上ホテル"
+   ],
+   "origin": "Kanda-Surugadai, Chiyoda-ku - the Hilltop Hotel building, a pre-war Art Deco block that became a hotel in 1954 and a byword for the Japanese literary world",
+   "background": "てんぷら山の上 is the restaurant arm of 株式会社山の上ホテル. Its own site states that it was the first Tokyo hotel to start serving age-dashi tempura (「東京のホテルの中で最初に揚げ出してんぷらを始めた伝統ある老舗です」) and that the tradition loved by the novelists who wrote in the hotel has been handed down unchanged. The hotel closed on 13 February 2024; the company site marks the honten 休館中 'under closure' and says it will reopen in summer 2027 inside 山の上ホテル 東京. Meanwhile it runs three direct tempura outlets - Ginza (GINZA SIX 13F), Roppongi (Tokyo Midtown Galleria Garden Terrace 3F) and a takeaway/eat-in counter in the Nihonbashi Mitsukoshi basement - plus the Hilltop cafe inside Juntendo Hospital. No individual head chef is named publicly on the company's own pages, so none is asserted here.",
+   "philosophy": "「旬の味は、料理人の心入れひとつ。真心をいれて『真味』となる」 - the house line on the restaurant's own front page.",
+   "specialty": "Edo-mae seasonal tempura courses; age-dashi tempura; tendon at the department-store counter.",
+   "anecdotes": [],
+   "japanese_sources_summary": "yamanoue-hotel.co.jp/tempurayamanoue/ lists the four outlets, marks 御茶ノ水本店 as 休館中, dates the hotel closure to 2024年2月13日 and gives the summer-2027 reopening inside 山の上ホテル 東京. Tabelog detail pages supply verified addresses, coordinates, phone numbers and hours for the Ginza, Roppongi and Nihonbashi Mitsukoshi branches. GSI's address-search API returns 35.697712 / 139.761398 for 東京都千代田区神田駿河台一丁目1番地.",
+   "confidence": "high",
+   "sources": [
+    "https://www.yamanoue-hotel.co.jp/tempurayamanoue/",
+    "https://tabelog.com/tokyo/A1301/A130101/13207702/",
+    "https://tabelog.com/tokyo/A1307/A130701/13037326/",
+    "https://tabelog.com/tokyo/A1302/A130202/13044042/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    "Single deep-fryer tempura kitchen: every item passes through wheat batter and shared oil. There is no non-wheat preparation on the menu."
+   ],
+   "soy_sauce_wheat": [
+    "Tentsuyu is made with ordinary Japanese soy sauce, which contains wheat. No tamari option is published."
+   ],
+   "vegan_cross_contact": [
+    "Seafood and vegetables are fried in the same oil; tentsuyu is bonito dashi."
+   ],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "High for a general diner, unusable for celiac",
+   "note": "A famous, formal but welcoming counter with an English site and reservations. Note for the app: the Chiyoda honten is shut until summer 2027, so anyone travelling before then must be sent to GINZA SIX 13F (〒104-0061 東京都中央区銀座6-10-1, 03-6264-5516), Tokyo Midtown Galleria 3F (〒107-0052 東京都港区赤坂9-7-4, 03-5413-3577) or the Nihonbashi Mitsukoshi B1F counter (〒103-0022 東京都中央区日本橋室町1-4-1, 03-3517-3230)."
+  },
+  "sources": [
+   "https://www.yamanoue-hotel.co.jp/tempurayamanoue/",
+   "https://www.yamanoue-hotel.co.jp/",
+   "https://tabelog.com/tokyo/A1301/A130101/13207702/",
+   "https://tabelog.com/tokyo/A1307/A130701/13037326/",
+   "https://tabelog.com/tokyo/A1302/A130202/13044042/",
+   "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E9%A7%BF%E6%B2%B3%E5%8F%B01-1"
+  ],
+  "enrich_note": "Confirmed real, but TEMPORARILY CLOSED and the pin has been moved. The light record read 天ぷら山の上 / Ichigaya; the business is てんぷら山の上, the tempura arm of 山の上ホテル at 東京都千代田区神田駿河台1-1 - same ward, about 2.4 km east of the Ichigaya centroid, which has been replaced with GSI-verified coordinates for the real address. The honten has been shut since 2024-02-13 with the hotel, and the company's own site says it reopens in summer 2027 inside 山の上ホテル 東京, so 'reopens' is set rather than 'closed_since' - this listing should keep a reopening badge, not be hidden. Three sibling counters (Ginza Six, Tokyo Midtown, Nihonbashi Mitsukoshi) are trading now and their verified addresses and hours are recorded above. GF is a hard 'no': it is a wheat-batter tempura house."
+ },
+ {
+  "id": "tokyo3__327",
+  "name": "寿司 春",
+  "status": "not_found",
+  "lat": 35.693,
+  "lng": 139.735,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no sushi shop named 寿司春 / すし春 exists in Ichigaya",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified. The light record says Ichigaya (市ヶ谷).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed - the business could not be found. For whoever re-sources this: standing sushi counters in Tokyo brush nigiri with ordinary wheat-containing nikiri soy sauce and almost always serve tamagoyaki and anago simmered in it, so a sushi record should never be marked GF-safe without direct evidence.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business could not be found.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Four checks ran and all came back clean. (1) Tabelog nationwide free-word search for 寿司春 returns 14 shops of that name - 大塚 (13043862), 月島 すし春 (13317168), 中野 (13071413), 大森 (13268864), 立川 (13071322) and others in Kanagawa, Miyagi, Shizuoka, Ehime, Akita, Tochigi and Okayama - and none is in Chiyoda or Shinjuku near Ichigaya. (2) Tabelog's Ichigaya area+genre listing (tokyo/A1309/A130904, sushi) lists every sushi shop registered in the district - みやび 市ヶ谷店, 八千穂寿司, 鮨太鼓, つだがわ, 勤寿司, 鮨 玉村, 京樽・スシロー 市ヶ谷店, 河岸 番外地 - with no 春. (3) Gnavi's nationwide free-word search for 寿司 春 市ヶ谷 returns exactly one shop, 江戸前寿司 鮨太鼓, a different business. (4) Yahoo Japan for 市ヶ谷 立寿司 寿司 春 answered HTTP 200 and surfaced only 月島 すし春, Retty's Ichigaya sushi round-up and Hot Pepper's Ichigaya listing - again no match.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search, Tabelog Ichigaya area listing, Gnavi free-word and Yahoo Japan all ran and all came back without an Ichigaya 寿司春.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide name search (14 寿司春/すし春 nationwide, none in or near Ichigaya), Tabelog's Ichigaya area sushi listing (tokyo/A1309/A130904 - no 春), Gnavi free-word '寿司 春 市ヶ谷' (one unrelated hit, 鮨太鼓) and Yahoo Japan (HTTP 200, only 月島 すし春 and area round-ups) all ran and all came back negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__328",
+  "name": "鰻 田中",
+  "status": "not_found",
+  "lat": 35.693,
+  "lng": 139.735,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no unagi restaurant named 鰻 田中 / うなぎ田中 exists in or near Ichigaya",
+  "cuisine_type": "unagi",
+  "neighborhood": "Unverified. The light record says near Ichigaya Station (市ヶ谷駅近).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed - the business could not be found. For whoever re-sources this: kabayaki tare is soy sauce, mirin and sake reduced together, so ordinary unagi is wheat-containing unless a shop names a gluten-free tamari; the una-ju sansho set also normally comes with a wheat-soy kimo-sui.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business could not be found. Unagi is by definition not vegan.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Four checks ran and all came back clean. (1) Tabelog nationwide free-word search for 鰻田中 returns zero restaurants; the looser 'うなぎ田中' returns only うなぎ 田川 in Katsushika (13024269), かぐら坂 志満金 in Kagurazaka (13006458) and 田中家 in Miyagi (4007022). (2) Tabelog's Ichigaya area+genre listing (tokyo/A1309/A130904, unagi) shows the district's entire unagi register - 江戸前鰻 うな誠 (13299668) and 阿づ満や (13043503), plus izakaya that merely list unagi as a side genre - with nothing named 田中. (3) Gnavi's nationwide free-word search for 鰻 田中 市ヶ谷 returns two fuzzy hits, 北海道はでっかい道 湧別町 市ヶ谷店 and 串カツ田中 市ヶ谷店, neither an unagi restaurant. (4) Yahoo Japan for 市ヶ谷 うなぎ 田中 answered HTTP 200 and surfaced 江戸前鰻 うな誠 (una-sei.jp, inside アルカディア市ヶ谷) and うなぎ秋本 - no 田中. The nearby 串カツ田中 市ヶ谷店, a national kushikatsu chain, is the most likely thing the sweep's fuzzy matching turned into '鰻 田中'.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search, Tabelog Ichigaya unagi listing, Gnavi free-word and Yahoo Japan all ran and all came back negative.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide name search (鰻田中 = zero hits; うなぎ田中 = three unrelated shops), Tabelog's Ichigaya area unagi listing (tokyo/A1309/A130904 - only うな誠 and 阿づ満や), Gnavi free-word '鰻 田中 市ヶ谷' (two unrelated hits) and Yahoo Japan (HTTP 200, only うな誠 and うなぎ秋本) all ran and all came back negative. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__331",
+  "name": "塩ラーメン 新",
+  "status": "not_found",
+  "lat": 35.693,
+  "lng": 139.735,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no ramen shop named 新 exists at Ichigaya",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says Ichigaya Station (市ヶ谷駅).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed - the business could not be found. Ramen noodles are wheat and shio tare is still built on wheat-containing soy sauce or a wheat-fermented seasoning in almost every Tokyo shop, so 'no' is the safe default for any unverified ramen record.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business could not be found.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Three checks ran clean and a fourth was refused. (1) Tabelog nationwide free-word search for 塩ラーメン新 returns 俺流 塩らーめん 新宿東南口店, 漢ラーメン 室, 鮎ラーメン+ 虎ノ門横丁店, ラーメン凪 branches and other unrelated shops; the looser 'らーめん新' returns らあめん 新 (Hakodate), シン・らぁめん新 (Sapporo), らーめん新山 (Saitama), 喜多方ラーメン 新じま (Katsushika) and 昌平ラーメン 新宿西口店 - nothing at Ichigaya. (2) Tabelog's Ichigaya area+genre listing (tokyo/A1309/A130904, ramen) shows all 19 ramen shops registered in the district - XI'AN 市ヶ谷店, 中国料理 翠, ハレ＆ケ, こむろ家, 舎鈴 市ヶ谷, 華閩, めん屋 桔梗, 居酒屋うち, 麺や庄の, 日高屋 市ヶ谷八幡町店, 豚基地, 大塚屋, 札幌タンメン ベジ達, 安安餃子房, 黄金の塩らぁ麺 ドゥエイタリアン 市ヶ谷本店, 用心棒 市ヶ谷飯田橋, 倫道, 東京油組総本店 市ヶ谷組, どうとんぼり神座 - and none is named 新. (3) Gnavi's nationwide free-word search for 塩ラーメン 新 市ヶ谷 returns 該当するお店が見つかりませんでした (no results at all). (4) Yahoo Japan was attempted three times and answered HTTP 429 every time - that is the engine refusing to answer, so it is recorded as no result rather than as a negative; the three legs that did answer are what this verdict rests on. If the shard is re-run, the closest real match in the district is 黄金の塩らぁ麺 ドゥエイタリアン 市ヶ谷本店, a genuine shio-ramen specialist, but nothing ties it to the name '新'.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search, Tabelog Ichigaya ramen listing and Gnavi free-word all ran and all came back negative; Yahoo Japan was rate-limited (HTTP 429) and did not answer.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide name search (塩ラーメン新 and らーめん新 - no Ichigaya shop), Tabelog's Ichigaya area ramen listing (tokyo/A1309/A130904, all 19 shops - no 新) and Gnavi free-word '塩ラーメン 新 市ヶ谷' (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 on three attempts and never answered, so it contributes nothing either way. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__333",
+  "name": "らーめん専門店 中野",
+  "status": "not_found",
+  "lat": 35.712,
+  "lng": 139.704,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no ramen shop named 中野 exists at Takadanobaba",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says around Takadanobaba Station (高田馬場駅近辺).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed - the business could not be found. Shoyu ramen is wheat noodles in wheat soy sauce; 'no' is the safe default for any unverified ramen record.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business could not be found.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Three checks ran clean and a fourth was refused. (1) Tabelog nationwide free-word search for らーめん専門店中野 returns the らーめん専門店 小川 chain (Hachioji, Takahatafudo, Akishima, Kanagawa), らーめん専門店 真打, 麺楽, 椚田, 横綱 and other shops that share the phrase 'らーめん専門店' but none named 中野; a separate search for 中野屋ラーメン returns nothing relevant either. (2) Tabelog's Takadanobaba area+genre listing (tokyo/A1305/A130503, ramen, pages 1-3) enumerates all 53 ramen shops registered around the station - でぶちゃん, 麺屋 アニキ, 日高屋 高田馬場駅前店, 麺友 一誠, 豚山, 春日亭, やったる, つけ蕎麦安土, 麺屋武蔵 鷹虎, GOODLE, 味來, 道玄, やすべえ, 野方ホープ, 鷹流, 池田屋, きりん寺, 三歩一, 麺達うま家, ひまわり, 博多風龍, 紫苑, 俺の空, 東京油組総本店, 花木流味噌, 蔭山, 渡なべ, 蒙古タンメン中本, 一風堂 and the rest - and not one is named 中野. (3) Gnavi's nationwide free-word search for らーめん専門店 中野 高田馬場 returns 該当するお店が見つかりませんでした. (4) Yahoo Japan was attempted and answered HTTP 429, so it is recorded as no result rather than as a negative. The name looks like the sweep welding a generic phrase to a Tokyo place-name that is a different district entirely (Nakano is two stations west on the Tozai line).",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide name search and Tabelog's full Takadanobaba ramen register both ran and are negative; Gnavi returned an explicit no-results page; Yahoo Japan was rate-limited (HTTP 429).",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. Recommend deletion unless a source for the original name can be produced."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Tabelog nationwide name search (らーめん専門店中野 and 中野屋ラーメン - no match), Tabelog's Takadanobaba area ramen listing (tokyo/A1305/A130503, all 53 shops across three pages - no 中野) and Gnavi free-word (explicit 該当するお店が見つかりませんでした) all ran and all came back negative. Yahoo Japan returned HTTP 429 and never answered. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ }
+]

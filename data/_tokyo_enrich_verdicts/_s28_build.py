@@ -122,6 +122,102 @@ RECS.append({
  "enrich_note": "MISLOCATED RECORD — the light record reads 「青麦 赤坂」 pinned at Akasaka Station, but no ramen shop named 青麦 exists in Akasaka or anywhere in Minato-ku. Tabelog's nationwide keyword search for 青麦 returns exactly one Tokyo shop, Homemade Ramen 青麦, whose detail page (13252059) places it at 東京都大田区大森北2-4-8 宏和ハイツ 1F, 35.584762 / 139.732180 — about 10 km from this pin. Gnavi free-word search agrees there is no Akasaka 青麦. Recommend relocating the record to the Ōmori coordinates under the corrected name, or deleting it. Coordinates left unchanged and loc_precise:false."
 })
 
+RECS.append({
+ "id": "tokyo3__425",
+ "name": "はなの舞 赤坂見附店",
+ "status": "closed_permanently",
+ "closed_since": "date not published — Tabelog carries the shop under the 【閉店】 banner with the text 「このお店は現在閉店しております。」 but gives no closing date, and Chimney's own store finder returned HTTP 403 to an automated fetch, so no date has been invented here",
+ "lat": 35.672, "lng": 139.736, "loc_precise": False,
+ "address_ja": "〒107-0052 東京都港区赤坂3-9-4 赤坂扇やビル B1F — the address of the closed branch",
+ "enrich_confidence": "medium",
+ "cuisine": "Basement branch of はなの舞, the 海鮮居酒屋 chain run by チムニー株式会社 — cheap seafood izakaya plates and all-you-can-drink courses. It is shut.",
+ "cuisine_type": "izakaya",
+ "neighborhood": "Was at Akasaka 3-chōme, Minato-ku — 1 min from Akasaka-mitsuke (Tokyo Metro Ginza / Marunouchi lines), 2 min from Nagatachō (Hanzōmon line)",
+ "website": "https://www.chimney.co.jp/restaurant/hana/",
+ "menu_url": None,
+ "hours_raw": "［月～金］16:00～翌0:30／［土・日・祝］16:00～24:00　無休 — the hours it kept while trading",
+ "hours_status": "regular",
+ "gf_confidence": "no",
+ "gf_detail": "Chain izakaya. Fried karaage and tempura share the fryer, the dressings and dipping sauces are wheat soy sauce, and there is no gluten-free line anywhere in the はなの舞 format. Moot in any case — this branch is closed.",
+ "vegan_status": "no",
+ "vegan_detail": "A 海鮮居酒屋 built on fish, bonito dashi and mayonnaise. The light record's 'vegan: limited' was inferred from the words 「野菜料理豊富」 and is not supported. Moot — the branch is closed.",
+ "chef_bio": {
+  "chef_name": None,
+  "roles": [],
+  "origin": "Corporate chain branch — チムニー株式会社, Sumida-ku, Tokyo",
+  "background": "No individual chef: はなの舞 is チムニー's flagship 海鮮居酒屋 format, run to a central spec across hundreds of branches. The Akasaka-mitsuke branch is one of the many the group shed — Chimney announced the closure of 72 stores and 100 redundancies in August 2020, and trade press has since covered the format's decline as the '2軒目需要' (second-bar trade) evaporated. This record should carry no chef bio.",
+  "philosophy": "",
+  "specialty": "",
+  "anecdotes": [],
+  "japanese_sources_summary": "Tabelog 13052950 is titled 【閉店】はなの舞 赤坂見附店 and states 「このお店は現在閉店しております。」, with the address 東京都港区赤坂3-9-4 赤坂扇やビル B1F, coordinates 35.677072/139.736309 and the former 16:00-late hours. Tabelog's nationwide keyword search for 「はなの舞 赤坂」 returns twenty branches (Ikebukuro, Kita-Senju, Shinjuku, Kanda, Shibuya Namikibashi, Kayabachō, Nerima-Takanodai and so on) and no open Akasaka one; a search for 「はなの舞 赤坂見附」 returns nothing at all; Gnavi's free-word search for 「はなの舞 赤坂」 returns zero shops while the control query 「はなの舞 池袋」 returns one, so the Gnavi negative is real and not a broken query.",
+  "confidence": "medium",
+  "sources": ["https://tabelog.com/tokyo/A1308/A130801/13052950/", "https://www.chimney.co.jp/restaurant/hana/"]
+ },
+ "safety": {"gf_cross_contamination": [], "soy_sauce_wheat": [], "vegan_cross_contact": [], "staff_allergy_handling": [], "positives": []},
+ "cultural_comfort": {"level": "N/A — closed", "note": "The branch is shut. Nothing to visit. If the app keeps chain records at all, note that the nearest surviving はなの舞 branches are Shibuya Namikibashi and Kanda Nishiguchi, not Akasaka."},
+ "sources": ["https://tabelog.com/tokyo/A1308/A130801/13052950/", "https://www.chimney.co.jp/restaurant/hana/"],
+ "enrich_note": "CLOSED PERMANENTLY. The only はなの舞 that ever stood in Akasaka is the 赤坂見附店 at 港区赤坂3-9-4 赤坂扇やビル B1F, and Tabelog 13052950 now carries it as 【閉店】 with 「このお店は現在閉店しております。」 in the page body and 【閉店】 in the <title>. A Tabelog nationwide keyword search for 「はなの舞 赤坂」 lists twenty live branches, none of them in Akasaka; 「はなの舞 赤坂見附」 returns nothing; Gnavi free-word returns zero for 「はなの舞 赤坂」 while the control query 「はなの舞 池袋」 returns a shop, so that negative is genuine. Chimney's own store finder (chimney.co.jp/shop/) answered HTTP 403 to an automated request, so the closing DATE could not be established and none has been invented. Coordinates left at the neighbourhood centroid and loc_precise:false; the branch address is recorded in address_ja for reference. A permanently closed shop should be hidden from the app."
+})
+
+RECS.append({
+ "id": "tokyo3__432",
+ "name": None,
+ "status": "not_found",
+ "lat": 35.672, "lng": 139.736, "loc_precise": False,
+ "address_ja": None,
+ "enrich_confidence": "low",
+ "cuisine": "COULD NOT VERIFY — there is no ramen alley called 赤坂ラーメン横丁 in Tokyo",
+ "cuisine_type": "ramen",
+ "neighborhood": "Unverified. The light record says Akasaka / Akasaka Station, Minato-ku.",
+ "website": None, "menu_url": None,
+ "hours_raw": "", "hours_status": "irregular",
+ "gf_confidence": "no",
+ "gf_detail": "Not assessed — the venue could not be found. Any ramen alley would be wheat noodles in wheat-soy kaeshi in shared water anyway; a ramen 横丁 is close to the worst possible room for a celiac.",
+ "vegan_status": "no",
+ "vegan_detail": "Not assessed. Ramen stock is animal by default.",
+ "chef_bio": {
+  "chef_name": None, "roles": [], "origin": "",
+  "background": "Could not be established, and the balance of evidence is that no such place exists. Tabelog's nationwide keyword search for 「赤坂ラーメン横丁」 returned HTTP 200 with ラーメン横丁 in Chiba, Sapporo (Susukino), Tochigi and Ōgaki (Gifu, at 東赤坂 station — which is very likely where the 赤坂 in this record came from) plus 渋谷らぁめん横丁, and nothing in Minato-ku. Yahoo Japan for 「赤坂 ラーメン横丁」 returned HTTP 200 and flagged 横丁 in its own results metadata as a missing term on the organic hits; its map module, asked for ラーメン横丁 near 東京都港区赤坂, returned eighteen shops of which the nearest relevant ones were ラーメンステーション 新橋横丁 (1.9 km), 鮎ラーメン+ 虎ノ門横丁店 (1.3 km, inside 虎ノ門横丁) and four shops inside 東京ラーメン横丁 at Yaesu / Tokyo Station (3.2 km): ラーメン豚山, 長岡食堂, 風雲児 and 横浜家系 町田商店. None of those is in Akasaka and none is called 赤坂ラーメン横丁. The name looks like a sweep-generated blend of 東京ラーメン横丁 or 虎ノ門横丁 with the Akasaka area label.",
+  "philosophy": "", "specialty": "", "anecdotes": [],
+  "japanese_sources_summary": "Tabelog nationwide keyword search and Yahoo Japan web + map both returned live results; neither contains a 赤坂ラーメン横丁.",
+  "confidence": "low", "sources": []
+ },
+ "safety": {"gf_cross_contamination": [], "soy_sauce_wheat": [], "vegan_cross_contact": [], "staff_allergy_handling": [], "positives": []},
+ "cultural_comfort": {"level": "Unknown", "note": "The venue could not be found. Recommend deletion. If the intent was a real ramen alley, the two that exist within a few kilometres are 虎ノ門横丁 (Toranomon Hills Business Tower 3F) and 東京ラーメン横丁 (Yaesu, under Tokyo Station) — both should be sourced as their own records, not as an Akasaka one."},
+ "sources": [],
+ "enrich_note": "NOT FOUND. Both legs ran and returned HTTP 200. Tabelog nationwide keyword search for 「赤坂ラーメン横丁」 → ラーメン横丁 in Chiba, Susukino, Tochigi and 東赤坂/Ōgaki (Gifu), plus 渋谷らぁめん横丁; nothing in Minato-ku. Yahoo Japan for 「赤坂 ラーメン横丁」 → its organic results dropped 横丁 as a missing term, and its map module for ラーメン横丁 near 港区赤坂 returned eighteen shops whose nearest matches are 新橋横丁 (1.9 km), 虎ノ門横丁 (1.3 km) and 東京ラーメン横丁 at Yaesu (3.2 km). No venue called 赤坂ラーメン横丁 exists. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+})
+
+RECS.append({
+ "id": "tokyo3__434",
+ "name": None,
+ "status": "unresolved",
+ "lat": 35.6595, "lng": 139.7005, "loc_precise": False,
+ "address_ja": None,
+ "enrich_confidence": "low",
+ "cuisine": "COULD NOT VERIFY — no ramen shop called マロ屋 exists in Japan; see the note for the one near-namesake found",
+ "cuisine_type": "ramen",
+ "neighborhood": "Unverified. The light record says Ikejiri, Shibuya-ku / Ikejiri-Ōhashi Station (Tōkyū Den-en-toshi line), but the coordinates it carries (35.6595 / 139.7005) actually sit in Maruyamachō–Dōgenzaka, near Shinsen Station, about 1.6 km from Ikejiri-Ōhashi.",
+ "website": None, "menu_url": None,
+ "hours_raw": "", "hours_status": "irregular",
+ "gf_confidence": "no",
+ "gf_detail": "Not assessed — the business could not be found. Tonkotsu ramen is wheat noodles in a shared boiling well with wheat-soy kaeshi; no Tokyo tonkotsu shop should be marked GF-safe without direct evidence.",
+ "vegan_status": "no",
+ "vegan_detail": "Not assessed. A 豚骨 shop is pork-bone stock by definition.",
+ "chef_bio": {
+  "chef_name": None, "roles": [], "origin": "",
+  "background": "Could not be established. Every leg ran and returned HTTP 200. Tabelog nationwide keyword search for 「マロ屋」 returned only マロヤ (Tokyo, Ōta-ku area A1317), まろや (Hyōgo), 麻呂舎 (Yamagata), まろやか (Yamaguchi) and kitchen maroyaka waltz (Kanagawa) — no ramen shop of the name; a second Tabelog search for 「らーめんマロ」 returned only らーめん まる (Kanagawa) and らーめん2国 branches. A Yahoo Japan search for the quoted string 「\"マロ屋\" ラーメン」 returned HTTP 200 with no restaurant at all in the results (hobby blogs and doujin circle lists). Tabelog's own 池尻大橋駅 ramen listing — the twenty shops nearest the station the light record names — contains 酒と麺 タイノタイ, 万豚記, 和利道, 麺酒論嚆矢, ひっつきもっつき, 宗楽, 八雲, 朝日屋, 中華そば 千乃鶏, カミノ, 横浜家系 侍, タンメン亭, らーめん たつみ屋, 誠屋, 町田商店, 龍の子, 佐野らーめん 永純, 天下一品 and two others, and no マロ屋. The one near-namesake in the right patch of ground is 麺処まろ, at 渋谷区道玄坂2-20-26 エクシール道玄坂 (35.659269 / 139.696815, 365 m from Shinsen Station, Tabelog 13306431) — a semi-basement shop hidden behind 百軒店 that relocated from Komazawa-daigaku, run by a working actor, serving 貝出汁 (shellfish-dashi) shio and shōyu ramen, Thu–Sun lunch only. That is 貝出汁, not 豚骨, and the name is まろ, not マロ屋, so it is offered as a lead and NOT as an identification.",
+  "philosophy": "", "specialty": "", "anecdotes": [],
+  "japanese_sources_summary": "Tabelog nationwide keyword search (two query forms), Tabelog's Ikejiri-Ōhashi ramen station listing, Tabelog's Shinsen-station ramen listing (forty shops over two pages, no マロ屋 and no まろ屋), and a quoted Yahoo Japan search — all live, all negative for マロ屋. Ramen Database (ramendb.supleks.jp) and HAMONI, which both hold pages for 麺処まろ, returned HTTP 403 to automated fetches and could not be read; that is a refusal, not a negative.",
+  "confidence": "low",
+  "sources": ["https://tabelog.com/tokyo/A1303/A130301/13306431/"]
+ },
+ "safety": {"gf_cross_contamination": [], "soy_sauce_wheat": [], "vegan_cross_contact": [], "staff_allergy_handling": [], "positives": []},
+ "cultural_comfort": {"level": "Unknown", "note": "The named business could not be found, so nothing can honestly be said about it. A human should decide whether 麺処まろ (道玄坂2-20-26, Tabelog 13306431) is what this record was reaching for — if it is, it needs its own sourcing pass, because the soup base and the station both differ from what the light record claims."},
+ "sources": ["https://tabelog.com/tokyo/A1303/A130301/13306431/"],
+ "enrich_note": "UNRESOLVED. No ramen shop called マロ屋 could be found anywhere in Japan. Tabelog nationwide (「マロ屋」 → マロヤ/まろや/麻呂舎/まろやか only; 「らーめんマロ」 → らーめん まる and らーめん2国 only), Yahoo Japan on the quoted string 「\"マロ屋\" ラーメン」 (no restaurant in the results), and Tabelog's own 池尻大橋駅 and 神泉駅 ramen station listings (60 shops between them) all ran to completion and all came back negative. Nearest candidate: 麺処まろ, 渋谷区道玄坂2-20-26 エクシール道玄坂, 35.659269/139.696815, 365 m from Shinsen — roughly 340 m from the pin this record carries — but it serves 貝出汁 shio/shōyu, not the 豚骨 the light record claims, and its name is まろ, not マロ屋, so it is NOT being asserted as the same business. Ramen Database and HAMONI both 403'd on their 麺処まろ pages, so that corroboration leg is a refusal rather than a negative. Coordinates unchanged, loc_precise:false. Needs a human call: delete, or re-source as 麺処まろ."
+})
+
 
 def main():
     out = sys.argv[1]

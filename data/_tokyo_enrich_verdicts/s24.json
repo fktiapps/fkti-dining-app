@@ -1,0 +1,631 @@
+[
+ {
+  "id": "tokyo3__275",
+  "lat": 35.696,
+  "lng": 139.793,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — no ramen shop called 青竜 / 青龍 exists in Ryōgoku or anywhere in Sumida-ku",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says Ryōgoku, by Ryōgoku Station (JR Sōbu line / Toei Ōedo line).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established; no shop of this name was found in Ryōgoku or in Sumida-ku.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Every search leg ran and came back HTTP 200 with a real, empty answer. Tabelog nationwide keyword search on 青竜 returns twenty same-named shops (Ibaraki, Kanagawa, Toyama, Kagawa, Kumamoto, Saitama, Hokkaidō, Iwate, Gunma, Fukushima, Hiroshima, Shizuoka, Hyōgo, Kyoto, Fukuoka, Ōsaka) and none in Sumida-ku. Tabelog Tokyo-scoped search on 青竜 returns twenty Tokyo shops — 青龍 in Adachi, 中華居酒屋 青龍 in Ōta, 青龍の穴, the 青龍門 chain, 青竜軒 in Adachi — none in Ryōgoku. A Tabelog area-scoped search of the Ryōgoku/Kinshichō block (tokyo/A1312/A131201) on 青 returned twenty shops, all 青葉 / 青柳 / あおば / あおちょ, no 青竜. Gnavi full-text on 青竜 両国 returned total=0 (the same endpoint returns total=3 for a control query, so zero is an answer, not a failure). Yahoo Japan on ラーメン 青竜 両国 and on 両国 ラーメン 青龍 surfaced only 東京らぁめん 青龍 in Ueno — 2.5 km away in Taitō-ku and marked 【閉店】 on Tabelog — plus らーめん青竜 in Sapporo and 中華料理 青龍 in Shin-Koiwa.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131101/13010430/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131101/13010430/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, each returning HTTP 200 and an actual empty answer: (1) Tabelog nationwide keyword search 青竜 — twenty same-named shops, none in Sumida-ku; (2) Tabelog Tokyo-scoped 青竜 — twenty hits, none in Ryōgoku; (3) Tabelog area-scoped search of the Ryōgoku/Kinshichō block A1312/A131201 on 青 — no 青竜; (4) Gnavi full-text 青竜 両国 — total 0, where a control query on the same endpoint returns 3, so the engine did answer; (5) Yahoo Japan twice — surfaced only 東京らぁめん 青龍 (台東区東上野3-39-7, 2.5 km away, marked 閉店), らーめん青竜 in Sapporo, and 中華料理 青龍 in Shin-Koiwa. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__291",
+  "lat": 35.701,
+  "lng": 139.74,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — the 権八 (Gonpachi) group has no Kagurazaka or Shinjuku-ku restaurant of any kind",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says Kagurazaka, Shinjuku-ku (Iidabashi / Kagurazaka — Tōzai, Yūrakuchō, Namboku and Ōedo lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — no Kagurazaka business of this name exists to assess.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — no Kagurazaka business of this name exists to assess.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established for a Kagurazaka shop. 権八 GONPACHI is a real Tokyo restaurant group, but its own published shop list has ten outlets and not one is in Shinjuku-ku: soba-and-skewer houses at Nishi-Azabu, Shibuya, Asakusa-Azumabashi, Odaiba, Sakura-Shinmachi and Azamino; sushi at Nishi-Azabu and Shibuya; nori hand-rolls at Harajuku; and one at Nasu. The only outlet branded 天ぷら is at Azamino, and its sibling 蕎麦・天ぷら 権八 あざみ野 stands at 神奈川県横浜市青葉区あざみ野2-1-1 東急あざみ野ビル1F (35.5684 / 139.5539) — Yokohama, some 25 km from Kagurazaka. The nearest tempura-serving Gonpachi inside Tokyo is at Sakura-Shinmachi in Setagaya, about 10 km away.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "gonpachi.jp/shop-list/, the group's own site, lists every branch and shows no Kagurazaka or Shinjuku location. Tabelog nationwide keyword search on 天ぷら権八 returns 蕎麦・天ぷら 権八 あざみ野 and 炭焼き 権八 あざみ野, both in Yokohama, plus unrelated 天ぷら七八 / 天八 / 喜八 shops. Tabelog Tokyo-scoped search on 権八 returns the six Tokyo Gonpachi outlets above, none in Shinjuku-ku. A Tabelog area-scoped search of the Iidabashi/Kagurazaka block (tokyo/A1309/A130905) on 天ぷら returns the actual Kagurazaka tempura houses — 天ぷら 喜楽, 天ぷら 極, てんぷら 拓, 天ぷら いのまた, 天婦羅 あら井 — and no 権八.",
+   "confidence": "low",
+   "sources": [
+    "https://gonpachi.jp/shop-list/",
+    "https://tabelog.com/kanagawa/A1401/A140201/14007883/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No Kagurazaka business by this name exists, so nothing can be said about the door. Recommend deletion or re-sourcing."
+  },
+  "sources": [
+   "https://gonpachi.jp/shop-list/",
+   "https://tabelog.com/kanagawa/A1401/A140201/14007883/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) the group's own shop list at gonpachi.jp/shop-list/ — ten branches, none in Kagurazaka or anywhere in Shinjuku-ku; (2) Tabelog nationwide 天ぷら権八 — only 蕎麦・天ぷら 権八 あざみ野 (横浜市青葉区あざみ野2-1-1, 35.5684/139.5539) and 炭焼き 権八 あざみ野; (3) Tabelog Tokyo-scoped 権八 — 西麻布, 渋谷, 浅草吾妻橋, お台場, 原宿, 桜新町 and two outer-ward listings, none in Shinjuku-ku; (4) Tabelog area search of Iidabashi/Kagurazaka A1309/A130905 on 天ぷら — five real Kagurazaka tempura shops, no 権八; (5) Gnavi full-text 権八 神楽坂 — total 0, control query non-zero; (6) Yahoo Japan 神楽坂 権八 天ぷら 店 — only the official site and the Azamino / Sakura-Shinmachi outlets. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__296",
+  "name": "天麩羅処ひらお",
+  "lat": 35.722,
+  "lng": 139.766,
+  "loc_precise": false,
+  "address_ja": "〒812-0853 福岡県福岡市博多区東平尾2-4-1 (本店) — NOT Tokyo.",
+  "enrich_confidence": "low",
+  "status": "mislocated",
+  "cuisine": "Cheap, fast Hakata-style tempura counters — a fried-to-order teishoku under ¥999 with the shop's famous salted squid free on every table — but all eight branches are in Fukuoka Prefecture, not Nezu",
+  "cuisine_type": "tempura",
+  "neighborhood": "COULD NOT VERIFY any Tokyo location. The business by this name runs eight directly-operated shops, every one in Fukuoka Prefecture; the head shop is by Fukuoka Airport in Hakata-ku.",
+  "website": "https://www.hirao-foods.net/",
+  "menu_url": "https://www.hirao-foods.net/menu/tempura/",
+  "hours_raw": "10:30～21:30 (L.O. 21:00)・定休日 年末年始 — these are the Fukuoka head shop's hours.",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Tempura is wheat batter by definition, this is a high-volume fry counter with shared oil, and both the tentsuyu and the signature 塩辛 rest on ordinary wheat soy sauce. No gluten-free claim appears anywhere on the company site. Not assessed further, because the record's location is wrong — read the note below before using anything here.",
+  "vegan_status": "no",
+  "vegan_detail": "The set meals are built on prawn, squid and white fish, fried in the same oil as the vegetable pieces, and the free side is salted squid. No vegan option is published.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "Higashi-Hirao, Hakata-ku, Fukuoka",
+   "background": "天麩羅処ひらお is a Fukuoka institution — a company running eight directly-operated tempura shops, all inside Fukuoka Prefecture (本店 by Fukuoka Airport, plus 早良, 久山, 貝塚, 原田, 大名, 天神アクロス and 須恵). It is known locally for its queues and for the free salted squid on every table. None of that belongs to Tokyo, so no Tokyo bio has been written.",
+   "philosophy": "",
+   "specialty": "Tempura teishoku under ¥999; free salted-squid side.",
+   "anecdotes": [],
+   "japanese_sources_summary": "hirao-foods.net/shop/ states 福岡県内に直営店8店舗 and lists all eight, every one in Fukuoka Prefecture; there is no Tokyo branch. Tabelog files 天麩羅処ひらお 本店 under fukuoka/A4001/A400107 at 福岡県福岡市博多区東平尾2-4-1 (33.5838 / 130.4566), with アクロス店 and 貝塚店 in the same prefecture. A Tabelog area search of the Nezu/Sendagi block (tokyo/A1311/A131106) on ひらお returned zero results.",
+   "confidence": "low",
+   "sources": [
+    "https://www.hirao-foods.net/shop/",
+    "https://tabelog.com/fukuoka/A4001/A400107/40000033/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — record is mislocated",
+   "note": "Do not send anyone in Nezu or Sendagi here. Every 天麩羅処ひらお is in Fukuoka Prefecture, roughly 900 km away. The Tokyo pin has been left at its original approximate coordinates and loc_precise is false; the record should be deleted from the Tokyo dataset."
+  },
+  "sources": [
+   "https://www.hirao-foods.net/shop/",
+   "https://www.hirao-foods.net/menu/tempura/",
+   "https://tabelog.com/fukuoka/A4001/A400107/40000033/"
+  ],
+  "enrich_note": "MISLOCATED RECORD — real city Fukuoka; recommend deletion from data/tokyo.json. A NAME CORRECTION also applies: the light record read ひらお, and the business is 天麩羅処ひらお. Evidence: the company's own site hirao-foods.net/shop/ states 福岡県内に直営店8店舗 and lists eight shops, all in Fukuoka Prefecture; Tabelog files the head shop at 福岡県福岡市博多区東平尾2-4-1 (33.5838/130.4566). A Tabelog area search of Nezu/Sendagi (tokyo/A1311/A131106) on ひらお returned zero, and Yahoo Japan on ひらお 根津 天ぷら returned only the Fukuoka company plus an unrelated Nezu tempura house, 福たろう. All legs HTTP 200; no 429 or 403. Coordinates left unchanged and loc_precise:false."
+ },
+ {
+  "id": "tokyo3__297",
+  "lat": 35.722,
+  "lng": 139.766,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — no restaurant trading under the name 鶯谷ラーメン exists anywhere in Japan",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says Nezu / Sendagi, six minutes' walk from Uguisudani Station (JR Yamanote and Keihin-Tōhoku lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. Ordinary ramen is wheat noodles in a wheat-soy-sauce or wheat-miso base in any case.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 鶯谷ラーメン appears to be a description of a place rather than a shop name; no business carries it. The real ramen counters around Uguisudani Station are 博多ラーメン 福や 鶯谷店, ラーメン長山 (two minutes from the south exit) and 中華そば 七麺鳥 (four minutes from the north exit), none of which matches the light record's name, and the light record's own neighbourhood string points at Nezu/Sendagi rather than Uguisudani, so there is no way to choose between them without inventing a link.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search on 鶯谷ラーメン returned twenty results, none of them a shop of that name (谷ラーメン in Chūō-ku, 一九ラーメン in Fukuoka, and so on). Tabelog Tokyo-scoped search on 鶯谷ラーメン likewise returned no shop of that name. A Tabelog area-scoped search of the Uguisudani/Iriya block (tokyo/A1311/A131104) on 鶯谷 returned twenty businesses that carry 鶯谷 in their name — 焼肉 鶯谷園, 鶯谷ゴールデン酒場, 信濃路 鶯谷店, 博多ラーメン 福や 鶯谷店 and others — and no 鶯谷ラーメン. Gnavi full-text on 鶯谷ラーメン returned total=6, all of them existing named shops near the station (日高屋, ラーメン長山, 中華そば 七麺鳥, 焼き肉とみひさ, Halal Sakura, 茶々亭) and none called 鶯谷ラーメン. Yahoo Japan on 鶯谷 ラーメン つけ麺 店 returned only Tabelog and Retty area ranking pages.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1311/A131104/13288184/",
+    "https://r.gnavi.co.jp/h68xwb7m0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131104/13288184/",
+   "https://r.gnavi.co.jp/h68xwb7m0000/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide 鶯谷ラーメン — twenty results, no shop of that name; (2) Tabelog Tokyo-scoped 鶯谷ラーメン — same, no shop of that name; (3) Tabelog area search of the Uguisudani/Iriya block A1311/A131104 on 鶯谷 — twenty businesses whose names contain 鶯谷, none of them 鶯谷ラーメン; (4) Gnavi full-text 鶯谷ラーメン — total 6, all real named shops near the station (ラーメン長山, 中華そば 七麺鳥, 博多ラーメン 福や and others), none called 鶯谷ラーメン; (5) Yahoo Japan 鶯谷 ラーメン つけ麺 店 — only area ranking pages. The name reads as a place description, not a business. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__306",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — no restaurant named 歌舞伎町シチュー亭, or シチュー亭 alone, exists in Shinjuku or anywhere else",
+  "cuisine_type": "yoshoku",
+  "neighborhood": "Unverified. The light record says Kabukichō, by Shinjuku Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. Japanese yōshoku beef stew is normally thickened with a wheat roux and demi-glace, so the light record's 'ask' should not be read as encouraging.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Nothing called シチュー亭 trades in Japan. Shinjuku does have well-known stew houses — 洋食屋 新宿 アカシア at 新宿区新宿3-22-10, the shop credited with inventing roll-cabbage stew, and 西櫻亭 (seiohtei) 新宿店, a yōshoku house known for its beef stew — but neither carries this name, neither is in Kabukichō, and nothing in the light record ties it to either. Naming one of them here would be a guess.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search on シチュー亭 returned three results — シチュー屋 (two listings, Adachi/Katsushika area) and 市中屋 in Hokkaidō — no シチュー亭. Tabelog Tokyo-scoped search on 歌舞伎町 シチュー returned a single hit, 銀之塔 in Ginza. A Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on シチュー returned twenty izakaya and bistros that merely list a stew, none of them a シチュー亭. Gnavi full-text on 歌舞伎町 シチュー亭 returned total=0 against an endpoint that answers non-zero for control queries. Yahoo Japan on 歌舞伎町シチュー亭 returned only Ginza stew round-ups, and on \"シチュー亭\" 新宿 it returned 西櫻亭 新宿店 and 新宿 アカシア.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1304/A130401/13012100/",
+    "https://www.restaurant-acacia.com/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1304/A130401/13012100/",
+   "https://www.restaurant-acacia.com/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide シチュー亭 — three results, none of that name; (2) Tabelog Tokyo-scoped 歌舞伎町 シチュー — one hit, 銀之塔 in Ginza; (3) Tabelog area search of the Shinjuku block A1304/A130401 on シチュー — twenty venues that merely serve a stew, no シチュー亭; (4) Gnavi full-text 歌舞伎町 シチュー亭 — total 0, control query non-zero; (5) Yahoo Japan twice — Ginza round-ups, then 西櫻亭 新宿店 (13012100) and 洋食屋 新宿 アカシア (新宿3-22-10). Those two are real Shinjuku stew houses but neither carries this name nor stands in Kabukichō, and nothing links either to the light record, so no name correction has been made. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__311",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — no business named わたり鳥 exists in Shinjuku-ku, and none of the same-named shops elsewhere is a mizutaki house",
+  "cuisine_type": "izakaya",
+  "neighborhood": "Unverified. The light record says Shinjuku Ni-chōme, on the Marunouchi line.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. Hakata mizutaki is usually safer than most nabe because the broth is chicken and water, but the ponzu dip is wheat soy sauce by default, so it would still need asking.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified. The light record's cuisine string 水炊き・ヤギ鶏肉 is itself garbled and cannot be relied on.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Businesses called わたり鳥 do exist, but all of them are far from Shinjuku: わたり鳥 中洲店 at 福岡県福岡市博多区中洲4-1-35 (33.5917 / 130.4070), filed by Tabelog as an izakaya rather than a mizutaki house; another わたり鳥 in Sumiyoshi/Minoshima, Hakata; a third わたり鳥 near Kushida-Jinja-mae that Tabelog marks 閉店; and 居酒屋わたり鳥 in Sakura, Chiba, by Keisei-Usui Station. None is in Shinjuku Ni-chōme and none is described as 水炊き, so no mislocation verdict can honestly be attached to any single one of them either.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search on わたり鳥 returned twenty results, none in Shinjuku-ku (Miyagi, Yamagata, Gunma, Ishikawa, three 九州料理二代目もつ鍋わたり branches in western Tokyo, Hokkaidō, Nagano, Tochigi, Tokushima, Ōsaka, Iwate, Fukui). Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on わたり returned twenty Shinjuku venues, none of them わたり鳥. Gnavi full-text on わたり鳥 returned total=5 — Akasaka, a Shinjuku gyūtan izakaya, a Suidōbashi yakitori house, 渡り鳥 in Niigata and 渡り鳥 in Sapporo — and on わたり鳥 新宿 total=1, an unrelated Sendai gyūtan bar. Yahoo Japan on わたり鳥 新宿二丁目 水炊き returned only the established Shinjuku mizutaki houses 水たき玄海 and 博多華味鳥, and on \"わたり鳥\" 居酒屋 returned the Fukuoka and Chiba shops above. Tabelog's detail page for わたり鳥 中洲店 was opened directly and gives 福岡県福岡市博多区中洲4-1-35, cuisine 居酒屋.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/fukuoka/A4001/A400102/40012020/",
+    "https://tabelog.com/chiba/A1204/A120402/12009200/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/fukuoka/A4001/A400102/40012020/",
+   "https://tabelog.com/chiba/A1204/A120402/12009200/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide わたり鳥 — twenty results, none in Shinjuku-ku; (2) Tabelog area search of the Shinjuku block A1304/A130401 on わたり — twenty venues, no わたり鳥; (3) Gnavi full-text わたり鳥 — total 5, none in Shinjuku; わたり鳥 新宿 — total 1, an unrelated Sendai gyūtan bar; (4) Yahoo Japan わたり鳥 新宿二丁目 水炊き — only 水たき玄海 and 博多華味鳥; (5) Yahoo Japan \"わたり鳥\" 居酒屋 — わたり鳥 中洲店 (福岡市博多区中洲4-1-35, opened directly on Tabelog, filed as 居酒屋), a second Hakata わたり鳥, a third marked 閉店, and 居酒屋わたり鳥 in Sakura, Chiba. Same-named shops exist but none is in Tokyo and none is a mizutaki house, so this is recorded as not found rather than mislocated. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__314",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — no unagi restaurant named 竹やま exists in Shinjuku Ni-chōme or anywhere in Tokyo",
+  "cuisine_type": "unagi",
+  "neighborhood": "Unverified. The light record says Shinjuku Ni-chōme.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. Edo-style kabayaki is glazed with a wheat-soy-sauce tare in every case, so an unagi house is close to a guaranteed no for celiacs regardless of which shop this turned out to be.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified; an unagi specialist is not a vegan venue in any event.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The only Japanese restaurant Tabelog carries under the plain name 竹やま is an okonomiyaki shop in Nishi-Kawaguchi, Saitama; nothing named 竹やま serves unagi anywhere, and nothing by that name trades in Shinjuku-ku.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search on 竹やま returned twenty results — 竹屋町 三多 in Kyoto, 鮨はたけやま in Niigata, 焼肉たけやま in Aichi, たけやま in Hyōgo, 喫茶 たけやま in Chiba and so on — with no unagi shop among them. Tabelog Tokyo-scoped search on 竹やま returned twenty Tokyo venues (シェ タケヤマ, 和酒ダイニング竹山, 海老山・竹山, たけ山 in Azabu) and again no unagi house and nothing in Shinjuku-ku. Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on 竹やま returned zero. Tabelog nationwide 鰻 竹やま returned zero. Gnavi full-text on 鰻 竹やま returned total=1, an unrelated Shizuoka eel house, うなぎ処 駒門ひろ田. Yahoo Japan on 鰻 竹やま 新宿 returned only Tabelog's Shinjuku unagi ranking page and unrelated eel articles, and on \"竹やま\" うなぎ returned the Saitama okonomiyaki shop.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/saitama/A1102/A110201/11005505/",
+    "https://r.gnavi.co.jp/7tgsj8gn0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/saitama/A1102/A110201/11005505/",
+   "https://r.gnavi.co.jp/7tgsj8gn0000/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide 鰻 竹やま — zero; (2) Tabelog nationwide 竹やま — twenty results, no unagi shop, none in Shinjuku; (3) Tabelog Tokyo-scoped 竹やま — twenty Tokyo venues, no unagi shop, none in Shinjuku-ku; (4) Tabelog area search of the Shinjuku block A1304/A130401 on 竹やま — zero; (5) Gnavi full-text 鰻 竹やま — total 1, うなぎ処 駒門ひろ田 in Shizuoka; (6) Yahoo Japan 鰻 竹やま 新宿 and \"竹やま\" うなぎ — only ranking pages and an okonomiyaki shop in Nishi-Kawaguchi, Saitama. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__316",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "unresolved",
+  "cuisine": "The 日高屋 chain is real and has thirteen Shinjuku-ku branches, but no branch called 新宿区役所前店 exists and the light record gives nothing that would identify which one it meant",
+  "cuisine_type": "chinese",
+  "neighborhood": "Unverified. The light record says Shinjuku San-chōme, near Shinjuku-sanchōme Station.",
+  "website": "https://hidakaya.hiday.co.jp/",
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Whichever branch was meant, 日高屋 is a cheap Chinese noodle-and-gyōza chain: wheat ramen and tanmen noodles, wheat gyōza skins, wheat-soy-sauce seasoning and a shared wok and fryer line. There is no gluten-free provision and no branch-level allergy programme. Not enriched further because the specific shop is unidentified.",
+  "vegan_status": "no",
+  "vegan_detail": "The chain's staples are pork-based; no vegan line is published. Not enriched further because the specific shop is unidentified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Not applicable — 日高屋 (operated by ハイデイ日高) is a large low-price chain, not a chef-led shop, and in any case the particular branch in this record does not exist. Its own store finder lists thirteen Shinjuku-ku branches: 早稲田西口, 神楽坂外堀通, 信濃町駅前, 新宿3丁目 (新宿3-8-9), 新宿東口 (新宿3-21-1), 新宿中央 (新宿3-34-16), 市ヶ谷八幡町, 四谷三丁目, 西武新宿前北 (歌舞伎町1-28-3), 新宿靖国通 (新宿3-23-11), 中井駅前, 西新宿1丁目 and 高田馬場駅前. None is called 新宿区役所前店. The light record's own neighbourhood string (Shinjuku San-chōme) and the invented branch name (which points at Kabukichō, where the ward office stands) contradict each other, so no single branch can be substituted without guessing.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "The chain's own store finder (hidakaya.hiday.co.jp, Shinjuku-ku list) and Gnavi's brand page for 中華食堂日高屋 in 東京都新宿区 both enumerate thirteen Shinjuku-ku branches with addresses, and neither contains 新宿区役所前店. Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on 日高屋 returned six Shinjuku branches — 西新宿1丁目, 西武新宿前北, 新宿靖国通, 新宿中央, 新宿3丁目, 新宿東口 — and no 区役所前店; the same search over the Ōkubo block (A1304/A130402) returned none at all. Gnavi full-text on 日高屋 新宿区役所前 returned total=0. Yahoo Japan on 日高屋 新宿区役所前店 and on \"日高屋\" 区役所通り 歌舞伎町 returned only the existing 新宿中央, 新宿靖国通, 新宿東口 and 西武新宿駅前北 branches.",
+   "confidence": "low",
+   "sources": [
+    "https://r.gnavi.co.jp/brand/d5e7833e/PREF13/CWTAV1600000/",
+    "https://hidakaya.hiday.co.jp/hits/ja/shop/1/1131211/result_list02.html"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The chain is easy to walk into — counter seating, picture menus, ticket-free ordering — but the specific branch in this record does not exist, so the pin cannot be placed. Recommend the record be deleted, or re-sourced against one of the thirteen real Shinjuku-ku branches by someone who can say which one was intended."
+  },
+  "sources": [
+   "https://r.gnavi.co.jp/brand/d5e7833e/PREF13/CWTAV1600000/",
+   "https://hidakaya.hiday.co.jp/hits/ja/shop/1/1131211/result_list02.html",
+   "https://tabelog.com/tokyo/A1304/A130401/13093135/"
+  ],
+  "enrich_note": "UNRESOLVED — the chain exists, the named branch does not. Legs run, all HTTP 200 with real answers: (1) the operator's own store finder for Shinjuku-ku and (2) Gnavi's brand page for 中華食堂日高屋 in 東京都新宿区 each list thirteen branches with addresses and neither includes 新宿区役所前店; (3) Tabelog area search of A1304/A130401 on 日高屋 — six Shinjuku branches, no 区役所前店; (4) Tabelog area search of A1304/A130402 on 日高屋 — none; (5) Gnavi full-text 日高屋 新宿区役所前 — total 0; (6) Yahoo Japan twice — only the existing 新宿中央 / 新宿靖国通 / 新宿東口 / 西武新宿駅前北 branches. The light record's stated neighbourhood (Shinjuku San-chōme) and its branch name (which would put it at the ward office in Kabukichō) point at different places, so no substitution has been made. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__318",
+  "name": "一蘭 新宿中央東口店",
+  "lat": 35.690594,
+  "lng": 139.702815,
+  "loc_precise": true,
+  "address_ja": "〒160-0022 東京都新宿区新宿3-34-11 ピースビル B1F",
+  "enrich_confidence": "high",
+  "status": "confirmed",
+  "cuisine": "One dish only, eaten alone: Hakata tonkotsu ramen in a partitioned solo booth, ordered on a paper sheet where you set broth richness, garlic, spring onion, pork and the house red chilli paste — about ¥1,180 for the standard bowl, ¥210 for a kaedama refill, open around the clock with a late-night surcharge from 22:00",
+  "cuisine_type": "ramen",
+  "neighborhood": "Shinjuku 3-chōme, in a basement just east of Shinjuku Station — 3 min from Shinjuku Station (JR Yamanote, Chūō, Sōbu; Odakyū; Keiō) and 3 min from Shinjuku-sanchōme (Tokyo Metro Marunouchi and Fukutoshin, Toei Shinjuku lines)",
+  "website": "https://ichiran.com/shop/tokyo/shinjuku/",
+  "menu_url": "https://ichiran.com/ramen/",
+  "hours_raw": "24時間営業／年中無休 ※営業時間は状況により急遽変更する場合がございます。22:00〜6:00は深夜料金",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Ichiran's own allergen table marks 小麦 (wheat) as present in every noodle it serves, including the standard 天然とんこつラーメン, and the same page carries the chain's blanket cross-contact disclaimer: 「製造・店舗での調理の際には細心の注意を払っておりますが、他のアレルギー物質が微量混入する場合がございます」, followed by 「心配な場合は専門医にご相談のうえお客様ご自身でご判断くださいますようお願いいたします」. There is no gluten-free noodle, no dedicated pot, and no statement anywhere that the chain can accommodate a wheat allergy. The soup itself declares soy rather than wheat, but the noodles alone rule the dish out. A celiac should not eat here.",
+  "vegan_status": "no",
+  "vegan_detail": "The entire menu is built on 天然とんこつ — a pork-bone broth — with pork chāshū as the standard topping. No vegan or vegetarian bowl is offered at the shop (the chain's separate No-Pork retail pack is a mail-order product, not a branch menu item).",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "Fukuoka",
+   "background": "Not a chef-led restaurant: 一蘭 is a Fukuoka-born tonkotsu specialist that serves a single ramen and nothing else, and the Shinjuku Chūō-Higashiguchi branch is one of three Ichiran shops around Shinjuku Station (the others being 西新宿店 and 新宿歌舞伎町店). The chain's identity rests on its 味集中カウンター — the partitioned 'flavour-concentration counter' where a bamboo blind lifts, an order sheet is passed through, and the diner never sees the staff — which it lists among its five self-declared firsts. This branch is counter-only, 28 seats, no tables and no private room.",
+   "philosophy": "Eat the bowl alone and undistracted; every variable on the order sheet is the diner's to set.",
+   "specialty": "天然とんこつラーメン with the 秘伝のたれ red chilli paste; kaedama noodle refills.",
+   "anecdotes": [],
+   "japanese_sources_summary": "The chain's own branch page ichiran.com/shop/tokyo/shinjuku/ gives 〒160-0022 東京都新宿区新宿3-34-11 ピースビルB1F, 24-hour opening, 28 counter seats, no parking, a 22:00–6:00 late-night surcharge, and links to the allergen sheet at ichiran.com/ramen/allergie.html. Tabelog's detail page (tokyo/A1304/A130401/13100501) carries the same address with coordinates 35.690594 / 139.702815, 営業時間 24時間営業・年中無休, a ¥1,000–¥1,999 band and access of 3 min from both Shinjuku and Shinjuku-sanchōme stations. Gnavi lists the same shop as 一蘭 新宿中央東口店, 地下鉄丸ノ内線新宿三丁目駅 徒歩2分. A Gnavi full-text search on 一蘭 新宿 returns exactly three shops — 新宿歌舞伎町店, 西新宿店 and 新宿中央東口店 — confirming there is no separate 新宿東口店.",
+   "confidence": "high",
+   "sources": [
+    "https://ichiran.com/shop/tokyo/shinjuku/",
+    "https://tabelog.com/tokyo/A1304/A130401/13100501/",
+    "https://r.gnavi.co.jp/euhknd8b0000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    "Wheat noodles are boiled in the same water all day and the shop serves nothing that is not built on them; there is no separate pot or fryer line to ask for.",
+    "The chain's allergen page states plainly that trace amounts of other allergens may get in during manufacture and in-store preparation, and puts the final judgement on the customer."
+   ],
+   "soy_sauce_wheat": [
+    "The broth's declared allergen is soy; the noodles carry the wheat. Either way the dish cannot be made wheat-free."
+   ],
+   "vegan_cross_contact": [
+    "Single pork-bone broth for the whole menu; nothing on the premises is animal-free."
+   ],
+   "staff_allergy_handling": [
+    "Orders are placed on a paper sheet through a blind and staff are largely unseen, so there is no natural moment to discuss an allergy; the chain publishes an allergen table instead of offering accommodation."
+   ],
+   "positives": [
+    "A full allergen table is published per product on the official site, which is more than most ramen shops offer.",
+    "Solo booths, an English-capable paper order sheet and 24-hour opening make it one of the least socially demanding meals in Shinjuku — for anyone who can eat wheat."
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Very easy",
+   "note": "The booth format removes almost all social friction: you buy a ticket, fill in a multilingual order sheet, sit in a partitioned stall and never have to speak. Open 24 hours, three minutes from either station, no reservation. The catch is that it is wheat from end to end, so it belongs in the app as a clearly-labelled no for gluten rather than as an option."
+  },
+  "sources": [
+   "https://ichiran.com/shop/tokyo/shinjuku/",
+   "https://ichiran.com/ramen/allergie.html",
+   "https://tabelog.com/tokyo/A1304/A130401/13100501/",
+   "https://r.gnavi.co.jp/euhknd8b0000/"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 一蘭 新宿東口店; the evidence shows the shop is 一蘭 新宿中央東口店 at 東京都新宿区新宿3-34-11 ピースビルB1F. Ichiran's own site has a branch page for it, Tabelog carries it at 35.690594/139.702815, and Gnavi's full-text search on 一蘭 新宿 returns exactly three Shinjuku shops — 新宿歌舞伎町店, 西新宿店 and 新宿中央東口店 — with no 新宿東口店 among them, so the light record's name was a contraction of this one. Confirmed and fully enriched; pin moved to the verified address and loc_precise set true. Gluten verdict is a firm no: the chain's own allergen table lists wheat in every noodle and adds a trace-contamination disclaimer."
+ },
+ {
+  "id": "tokyo3__320",
+  "name": "風風ラーメン",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "mislocated",
+  "cuisine": "A cheap late-night Kitakyūshū-style tonkotsu chain — but its thirteen shops sit in Saitama, Fukuoka, Shiga, Shimane, Okayama and Okinawa, and not one is in Tokyo",
+  "cuisine_type": "ramen",
+  "neighborhood": "COULD NOT VERIFY any Tokyo location. The chain's own store list has no Tokyo branch; the nearest shops to Shinjuku are 風風ラーメン 朝霞東口店 and 志木南口店 in Saitama, roughly 20 km out.",
+  "website": "https://fufuramen.com/",
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat noodles in a tonkotsu base with wheat-soy-sauce tare, cooked on a shared line in a low-price chain; no gluten-free claim of any kind is published. Not assessed further, because the record's location is wrong — read the note below before using anything here.",
+  "vegan_status": "no",
+  "vegan_detail": "The chain's whole identity is pork-bone broth; no vegan bowl is published.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "Kitakyūshū, Fukuoka",
+   "background": "Not a chef-led restaurant. 風風ラーメン is a tonkotsu chain of Kitakyūshū origin, cited by Tabelog reviewers as dating from 1985, that trades on cheap bowls and late hours. Its own store list groups the shops as Saitama (志木南口, 熊谷南口, 朝霞東口, 浦和道場), Shiga (アクア21), Okayama (本町), Shimane (平田, 大田), Fukuoka (下曽根, 紺屋町, のぼれ天まで小倉駅, のぼれ天まで黒崎) and Okinawa (松山). No Tokyo bio has been written because the chain does not operate in Tokyo.",
+   "philosophy": "",
+   "specialty": "Kitakyūshū-style tonkotsu at a low price point.",
+   "anecdotes": [],
+   "japanese_sources_summary": "The chain's own store list at fufuramen.com/shop/ enumerates every branch by prefecture and contains no Tokyo entry. Tabelog nationwide keyword search on 風風ラーメン returns fourteen branches across Okayama, Fukuoka, Saitama, Hiroshima, Okinawa, Shimane and Shiga, none in Tokyo. Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on 風風 returns seven venues — 風風蛸, 焼肉ふうふう亭 西武新宿駅前店, 馳走 風々 and others — none of them 風風ラーメン. Gnavi full-text on 豚骨ラーメン 風風 新宿 returns total=0. Yahoo Japan on 風風ラーメン 新宿 returns the chain's own site and store list plus unrelated Shinjuku shops 風雲児 and 麺屋 ふぅふぅ亭.",
+   "confidence": "low",
+   "sources": [
+    "https://fufuramen.com/shop/",
+    "https://tabelog.com/saitama/A1103/A110301/11045798/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — record is mislocated",
+   "note": "Do not send anyone in Shinjuku here. 風風ラーメン has no Tokyo branch at all; the closest shops are in Asaka and Shiki in Saitama. The Tokyo pin has been left at its original approximate coordinates and loc_precise is false; the record should be deleted from the Tokyo dataset."
+  },
+  "sources": [
+   "https://fufuramen.com/",
+   "https://fufuramen.com/shop/",
+   "https://tabelog.com/saitama/A1103/A110301/11045798/"
+  ],
+  "enrich_note": "MISLOCATED RECORD — the business exists but has no Tokyo presence; recommend deletion from data/tokyo.json. The light record's 豚骨ラーメン　風風 matches the tonkotsu chain 風風ラーメン by name and by cuisine, and the chain's own store list at fufuramen.com/shop/ names every branch by prefecture — Saitama, Shiga, Okayama, Shimane, Fukuoka, Okinawa — with nothing in Tokyo; the nearest are 朝霞東口店 and 志木南口店 in Saitama, about 20 km from Shinjuku. Corroborating legs, all HTTP 200: Tabelog nationwide 風風ラーメン — fourteen branches, none in Tokyo; Tabelog area search of the Shinjuku block A1304/A130401 on 風風 — seven unrelated venues; Gnavi full-text 豚骨ラーメン 風風 新宿 — total 0; Yahoo Japan 風風ラーメン 新宿 — the chain site plus unrelated 風雲児 and 麺屋 ふぅふぅ亭. No 429, 403 or timeout on any leg. Coordinates left unchanged and loc_precise:false."
+ },
+ {
+  "id": "tokyo3__321",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "unresolved",
+  "cuisine": "COULD NOT VERIFY — no trading tempura shop named 喜久屋 exists in Shinjuku; the one same-named tempura house in the area is in Yoyogi and is marked closed",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says Shinjuku, near Shinjuku-sanchōme Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be identified. Tempura is wheat batter in any case, so nothing here should read as a gluten option.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. The nearest same-named candidate is 天ぷら・割烹 喜久屋 (きくや) at 東京都渋谷区代々木1-33-2, 132 m from Yoyogi Station (35.682697 / 139.702318), which Tabelog lists as 天ぷら・海鮮・居酒屋 and marks 【閉店】 — permanently closed. It is in Shibuya-ku rather than Shinjuku-ku and sits about 1.2 km south of Shinjuku-sanchōme, so while the name and the trade both match, the location does not, and the light record carries nothing else that would tie the two together. The other Tokyo 喜久屋 listings are unrelated: a yakitori shop in Kita-ku, a fishmonger in Suginami, 喜久屋 池袋本店, and shops in Asakusa, Suidōbashi and Hachiōji. A separate 天ぷら 喜久や / 天ぷらバル 喜久や brand exists but its outlets are in Hibiya (Tokyo Midtown), Hakata, Okayama and Hakusan — none in Shinjuku either.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on 喜久屋 returned zero. Tabelog Tokyo-scoped search on 喜久屋 returned eleven shops — Asakusa, Tachikawa, Suidōbashi, 池袋本店, Hachiōji, 喜久家, 喜久屋水産, 旬菜和食 きくや, and two others — none in Shinjuku-ku and none a tempura specialist. Tabelog Tokyo-scoped 天ぷら 喜久屋 returned seven tempura shops, none named 喜久屋. Gnavi full-text on 天ぷら 喜久屋 and on 喜久屋 天ぷら 新宿 both returned total=0. Yahoo Japan on 天ぷら 喜久屋 新宿 surfaced the closed 代々木 shop (tabelog tokyo/A1304/A130403/13045477, opened directly and confirmed as 渋谷区代々木1-33-2, 【閉店】) plus the unrelated 喜久や TOKYO at Tokyo Midtown Hibiya and 立呑み天婦羅 喜久や.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1304/A130403/13045477/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified, and the one plausible same-named tempura house nearby is closed. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1304/A130403/13045477/"
+  ],
+  "enrich_note": "UNRESOLVED. Nearest candidate: 天ぷら・割烹 喜久屋 (きくや), 東京都渋谷区代々木1-33-2, 35.682697/139.702318, Tabelog tokyo/A1304/A130403/13045477 — right name and right trade, but in Shibuya-ku 1.2 km from the stated neighbourhood and marked 【閉店】/permanently closed, and nothing in the light record ties it to this shop, so it has not been enriched under that name. Legs run, all HTTP 200 with real answers: Tabelog area search of the Shinjuku block A1304/A130401 on 喜久屋 — zero; Tabelog Tokyo-scoped 喜久屋 — eleven shops, none in Shinjuku-ku and none tempura; Tabelog Tokyo-scoped 天ぷら 喜久屋 — seven tempura shops, no 喜久屋; Gnavi full-text 天ぷら 喜久屋 and 喜久屋 天ぷら 新宿 — total 0 both times, control query non-zero; Yahoo Japan 天ぷら 喜久屋 新宿 — the closed Yoyogi shop plus the unrelated 喜久や TOKYO (Hibiya) and 天ぷらバル 喜久や (Hakata). No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__322",
+  "lat": 35.6905,
+  "lng": 139.702,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "status": "not_found",
+  "cuisine": "COULD NOT VERIFY — no sushi restaurant named 寿司めい exists in Shinjuku or anywhere in Japan",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified. The light record says Shinjuku, near Shinjuku-sanchōme Station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. At any edomae counter the nikiri brushed over the nigiri is wheat soy sauce by default, so 'ask' here should not be read as promising.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Nothing trades under the name 寿司めい. The two nearest same-sounding businesses are 鮨 めい乃 (Sushi Meino), a reservation-only counter in Azabu-Jūban about 5 km from Shinjuku, and 寿司めいじん, a conveyor-and-takeaway chain with seven branches in Ōita Prefecture. Neither is in Shinjuku and nothing in the light record connects it to either.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog area-scoped search of the Shinjuku block (tokyo/A1304/A130401) on 寿司めい returned two irrelevant hits (たいめいけん 新宿高島屋店, 築地寿司清 伊勢丹会館店), and the same block searched on めい returned twenty venues — 新宿 らんぶる, 明月館, めいどりーみん 新宿 東口店 and the like — with no sushi shop of this name. Tabelog nationwide 寿司めい returned the seven 寿司めいじん branches in Ōita, 鮨 めい乃 in Azabu-Jūban, and unrelated すしせい / すしへい / 寿司栄 / 寿司英 listings. Gnavi full-text on 寿司めい returned total=23, all of them 寿司めいじん Ōita branches, にぎり長次郎 outlets and unrelated izakaya, with no Shinjuku sushiya of this name. Yahoo Japan on 寿司めい 新宿 and on \"寿司めい\" returned only 鮨 めい乃 (麻布十番) and 寿司めいじん.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1307/A130702/13292357/",
+    "https://tabelog.com/oita/A4401/A440101/44004452/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1307/A130702/13292357/",
+   "https://tabelog.com/oita/A4401/A440101/44004452/"
+  ],
+  "enrich_note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog area search of the Shinjuku block A1304/A130401 on 寿司めい — two irrelevant hits; (2) the same block on めい — twenty venues, no sushiya of this name; (3) Tabelog nationwide 寿司めい — the seven 寿司めいじん branches in Ōita, 鮨 めい乃 in Azabu-Jūban, and unrelated すしせい / すしへい / 寿司栄 / 寿司英; (4) Gnavi full-text 寿司めい — total 23, all Ōita 寿司めいじん branches, にぎり長次郎 outlets and unrelated izakaya, none in Shinjuku; (5) Yahoo Japan 寿司めい 新宿 and \"寿司めい\" — only 鮨 めい乃 (麻布十番, 5 km away, reservation-only) and 寿司めいじん. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ }
+]

@@ -682,6 +682,83 @@
   "note": "Confirmed as a real Jimbōchō shop and confirmed permanently closed — this one needed care, because a plain Tabelog keyword search hides it. A nationwide search for 黒須 (HTTP 200, 699件) returns tofu shops, confectioners and convenience stores in Chiba, Saitama and Tochigi and no ramen shop at all, and a search for 神保町 黒須 (HTTP 200, 84件) returns unrelated Tokyo restaurants — the kind of result that w"
  },
  {
+  "id": "tokyo3__275",
+  "name": "ラーメン 青竜",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, each returning HTTP 200 and an actual empty answer: (1) Tabelog nationwide keyword search 青竜 — twenty same-named shops, none in Sumida-ku; (2) Tabelog Tokyo-scoped 青竜 — twenty hits, none in Ryōgoku; (3) Tabelog area-scoped search of the Ryōgoku/Kinshichō block A1312/A131201 on 青 — no 青竜; (4) Gnavi full-text 青竜 両国 — total 0, where a control query on the same endpoint returns 3,"
+ },
+ {
+  "id": "tokyo3__291",
+  "name": "天ぷら権八",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) the group's own shop list at gonpachi.jp/shop-list/ — ten branches, none in Kagurazaka or anywhere in Shinjuku-ku; (2) Tabelog nationwide 天ぷら権八 — only 蕎麦・天ぷら 権八 あざみ野 (横浜市青葉区あざみ野2-1-1, 35.5684/139.5539) and 炭焼き 権八 あざみ野; (3) Tabelog Tokyo-scoped 権八 — 西麻布, 渋谷, 浅草吾妻橋, お台場, 原宿, 桜新町 and two outer-ward listings, none in Shinjuku-ku; (4) Tabelog are"
+ },
+ {
+  "id": "tokyo3__296",
+  "name": "ひらお",
+  "status": "mislocated",
+  "hidden": "not_in_city",
+  "note": "MISLOCATED RECORD — real city Fukuoka; recommend deletion from data/tokyo.json. A NAME CORRECTION also applies: the light record read ひらお, and the business is 天麩羅処ひらお. Evidence: the company's own site hirao-foods.net/shop/ states 福岡県内に直営店8店舗 and lists eight shops, all in Fukuoka Prefecture; Tabelog files the head shop at 福岡県福岡市博多区東平尾2-4-1 (33.5838/130.4566). A Tabelog area search of Nezu/Sendagi ("
+ },
+ {
+  "id": "tokyo3__297",
+  "name": "鶯谷ラーメン",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide 鶯谷ラーメン — twenty results, no shop of that name; (2) Tabelog Tokyo-scoped 鶯谷ラーメン — same, no shop of that name; (3) Tabelog area search of the Uguisudani/Iriya block A1311/A131104 on 鶯谷 — twenty businesses whose names contain 鶯谷, none of them 鶯谷ラーメン; (4) Gnavi full-text 鶯谷ラーメン — total 6, all real named shops near the station "
+ },
+ {
+  "id": "tokyo3__306",
+  "name": "歌舞伎町シチュー亭",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide シチュー亭 — three results, none of that name; (2) Tabelog Tokyo-scoped 歌舞伎町 シチュー — one hit, 銀之塔 in Ginza; (3) Tabelog area search of the Shinjuku block A1304/A130401 on シチュー — twenty venues that merely serve a stew, no シチュー亭; (4) Gnavi full-text 歌舞伎町 シチュー亭 — total 0, control query non-zero; (5) Yahoo Japan twice — Ginza round-"
+ },
+ {
+  "id": "tokyo3__311",
+  "name": "わたり鳥",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide わたり鳥 — twenty results, none in Shinjuku-ku; (2) Tabelog area search of the Shinjuku block A1304/A130401 on わたり — twenty venues, no わたり鳥; (3) Gnavi full-text わたり鳥 — total 5, none in Shinjuku; わたり鳥 新宿 — total 1, an unrelated Sendai gyūtan bar; (4) Yahoo Japan わたり鳥 新宿二丁目 水炊き — only 水たき玄海 and 博多華味鳥; (5) Yahoo Japan \"わたり鳥\" 居酒屋 "
+ },
+ {
+  "id": "tokyo3__314",
+  "name": "鰻 竹やま",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog nationwide 鰻 竹やま — zero; (2) Tabelog nationwide 竹やま — twenty results, no unagi shop, none in Shinjuku; (3) Tabelog Tokyo-scoped 竹やま — twenty Tokyo venues, no unagi shop, none in Shinjuku-ku; (4) Tabelog area search of the Shinjuku block A1304/A130401 on 竹やま — zero; (5) Gnavi full-text 鰻 竹やま — total 1, うなぎ処 駒門ひろ田 in Shizuoka; (6) Yaho"
+ },
+ {
+  "id": "tokyo3__316",
+  "name": "日高屋 新宿区役所前店",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED — the chain exists, the named branch does not. Legs run, all HTTP 200 with real answers: (1) the operator's own store finder for Shinjuku-ku and (2) Gnavi's brand page for 中華食堂日高屋 in 東京都新宿区 each list thirteen branches with addresses and neither includes 新宿区役所前店; (3) Tabelog area search of A1304/A130401 on 日高屋 — six Shinjuku branches, no 区役所前店; (4) Tabelog area search of A1304/A130402 on"
+ },
+ {
+  "id": "tokyo3__320",
+  "name": "豚骨ラーメン　風風",
+  "status": "mislocated",
+  "hidden": "not_in_city",
+  "note": "MISLOCATED RECORD — the business exists but has no Tokyo presence; recommend deletion from data/tokyo.json. The light record's 豚骨ラーメン　風風 matches the tonkotsu chain 風風ラーメン by name and by cuisine, and the chain's own store list at fufuramen.com/shop/ names every branch by prefecture — Saitama, Shiga, Okayama, Shimane, Fukuoka, Okinawa — with nothing in Tokyo; the nearest are 朝霞東口店 and 志木南口店 in Saita"
+ },
+ {
+  "id": "tokyo3__321",
+  "name": "天ぷら　喜久屋",
+  "status": "unresolved",
+  "hidden": "unverified",
+  "note": "UNRESOLVED. Nearest candidate: 天ぷら・割烹 喜久屋 (きくや), 東京都渋谷区代々木1-33-2, 35.682697/139.702318, Tabelog tokyo/A1304/A130403/13045477 — right name and right trade, but in Shibuya-ku 1.2 km from the stated neighbourhood and marked 【閉店】/permanently closed, and nothing in the light record ties it to this shop, so it has not been enriched under that name. Legs run, all HTTP 200 with real answers: Tabelog area "
+ },
+ {
+  "id": "tokyo3__322",
+  "name": "寿司めい",
+  "status": "not_found",
+  "hidden": "unverified",
+  "note": "NOT FOUND. Legs run, all HTTP 200 with real answers: (1) Tabelog area search of the Shinjuku block A1304/A130401 on 寿司めい — two irrelevant hits; (2) the same block on めい — twenty venues, no sushiya of this name; (3) Tabelog nationwide 寿司めい — the seven 寿司めいじん branches in Ōita, 鮨 めい乃 in Azabu-Jūban, and unrelated すしせい / すしへい / 寿司栄 / 寿司英; (4) Gnavi full-text 寿司めい — total 23, all Ōita 寿司めいじん branches, "
+ },
+ {
   "id": "tokyo3__190",
   "name": "明神そば",
   "status": "closed_permanently",

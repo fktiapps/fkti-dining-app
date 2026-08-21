@@ -1,0 +1,300 @@
+[
+ {
+  "id": "tokyo3__346",
+  "status": "not_found",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no restaurant named みけん could be found in Nakano or nationwide",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 中野駅北口 (Nakano Station north exit, JR Chuo / Tokyo Metro Tozai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed - the business itself could not be identified. The light record's 'gf: no' is a genre guess from the word ラーメン, not an observation.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. No restaurant named みけん exists in Nakano or, so far as Tabelog's nationwide index shows, anywhere in Japan. The name may be a garbling of something else, but nothing in the evidence identifies what, so no substitution has been made.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search and Tabelog's full 76-shop Nakano ramen listing both ran successfully and contain no みけん. Gnavi returned an explicit zero-result page. Yahoo Japan surfaced only 味七, a different Nakano miso-ramen shop.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/rstLst/ramen/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/rstLst/ramen/"
+  ],
+  "enrich_note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog nationwide keyword search (tabelog.com/rstLst/?vs=1&sk=みけん, desktop UA, HTTP 200, 128 fuzzy hits): no business anywhere in Japan is called みけん - the hits are Miken Cafe in Kita-Asaka, Saitama, 美味研鑽 TETSU in Akihabara, 三代目 月見軒 and 蜀味軒, all substring matches. (2) Tabelog's complete Nakano ramen list (/tokyo/A1319/A131902/rstLst/ramen/, 4 pages, 76 shops, HTTP 200 each): no みけん. The two miso specialists at Nakano are 味噌が一番 and 味噌一 中野店, neither of which is this name. (3) Gnavi keyword search (r.gnavi.co.jp/area/jp/rs/?fw=みけん 中野, HTTP 200): 「該当するお店が見つかりませんでした」 - zero results. (4) Yahoo Japan (みけん 中野 ラーメン 味噌, HTTP 200): returned only 味七 (Ajishichi), an unrelated Nakano miso ramen shop, plus Instagram posts about it. No 429 or 403 was returned on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__347",
+  "status": "probable",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "UNCONFIRMED - the nearest real shop is 麺屋けんゆう 中野新橋店, a ramen and tsukemen counter one minute from Nakano-shimbashi station, 1,000-1,999 yen",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Nakano-shimbashi, Tokyo Metro Marunouchi branch line - the light record's own neighbourhood field.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed for the light record. If the referent is 麺屋けんゆう, tsukemen is a wheat noodle in a wheat-soy dipping broth and there is no gluten-free claim of any kind - treat as unworkable until someone visits.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed for the light record. A tsukemen counter of this type will use pork and fish broth throughout; nothing published suggests a vegan option.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established for 「麺屋 中野」 because no such business exists. The only plausible referent is 麺屋けんゆう 中野新橋店 (中野区弥生町2-10-11), a one-minute walk from Nakano-shimbashi station on the Marunouchi branch line, rated 3.27 on 95 Tabelog reviews, serving ramen and tsukemen in the 1,000-1,999 yen band, open 11:00-22:00 and closed Mondays. Nothing published ties it to the name in the light record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide keyword search (7 hits, no exact match), Tabelog detail page 13122251 for 麺屋けんゆう 中野新橋店 (address, coordinates, hours, price band, phone from Restaurant JSON-LD), and Gnavi's Nakano-shimbashi keyword search, which lists only 麺屋けんゆう 中野新橋店 and an unrelated Yamagata izakaya at that station.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131903/13122251/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131903/13122251/"
+  ],
+  "enrich_note": "PROBABLE, NOT CONFIRMED. No business called 「麺屋 中野」 exists: Tabelog's nationwide keyword search (?vs=1&sk=麺屋中野, HTTP 200, 7 hits) returns 麺屋 中邑 (Fukushima), 麺屋 中むら (Osaka), 麺屋なか乃 (Ibaraki), 麺屋 中 (Hasunuma, Tokyo) and 大勝軒 中野 - no exact match - and Gnavi's keyword search for 麺屋 中野新橋 (HTTP 200) returns exactly two businesses at that station, one of which is a Yamagata izakaya. The one shop that fits the light record's own three signals (麺屋 prefix + 中野新橋駅 + つけ麺) is 麺屋けんゆう 中野新橋店, 東京都中野区弥生町2-10-11 バード・パークホリ1F, 35.692966/139.674600, 1 min from the Nakano-shimbashi exit, genre ラーメン・つけ麺, price band 1,000-1,999 yen, closed Mondays, 11:00-22:00, tel 03-3370-0209 (Tabelog 13122251, iPhone-UA fetch, HTTP 200, Restaurant JSON-LD read directly). That is circumstantial - the 「中野」 in the light record is the station, not the shop's name - so the record has NOT been renamed and the approximate coordinates have been left in place. A human should decide whether to re-point this record at 麺屋けんゆう or drop it."
+ },
+ {
+  "id": "tokyo3__349",
+  "status": "not_found",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no tempura restaurant named たけや could be found in Nakano",
+  "cuisine_type": "tempura",
+  "neighborhood": "Unverified. The light record says 中野駅周辺 (around Nakano Station, JR Chuo / Tokyo Metro Tozai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed - the business itself could not be identified. Note that tempura is wheat batter by definition, so a positive identification would very likely still read gf 'no'.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Nakano has exactly eleven tempura-tagged businesses on Tabelog and none of them is called たけや; nationwide, the same-reading tempura shops are in Fukuoka and Sapporo.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog's full Nakano tempura genre listing (11 shops, complete - not truncated), Tabelog's nationwide keyword index for たけや, and an explicit Gnavi zero-result page.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/rstLst/tempura/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/rstLst/tempura/"
+  ],
+  "enrich_note": "NOT FOUND. Every leg ran and returned an actual empty result. (1) Tabelog's complete Nakano tempura list (/tokyo/A1319/A131902/rstLst/tempura/, HTTP 200, 11 shops - the whole genre for the area): 天ぷらと炉端大塩 中野店, 天ぷら 住友, 天ぷら新宿つな八 凛 中野店, 小出屋 天太, 千代田, 大衆酒場 だるま, 新中野ぎんや, 旬彩和膳 左がわ and three udon shops. No たけや. (2) Tabelog nationwide keyword search (?vs=1&sk=たけや, HTTP 200, 419 fuzzy hits): the tempura businesses carrying this reading are 天ぷら たけうち (Nakagawa, Fukuoka) and 天婦羅たけうち (Sapporo); the Tokyo たけや/竹屋 entries are an Ochanomizu udon shop, an Akasaka izakaya and a Higashi-Kurume tsukemen shop. None is a Nakano tempura restaurant. (3) Gnavi keyword search (fw=天ぷら たけや 中野, HTTP 200): 「該当するお店が見つかりませんでした」 - zero results. No 429, 403 or timeout was returned on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__350",
+  "status": "not_found",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no sushi restaurant named なかや could be found in Nakano",
+  "cuisine_type": "sushi",
+  "neighborhood": "Unverified. The light record says 中野駅北口 (Nakano Station north exit, JR Chuo / Tokyo Metro Tozai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed - the business itself could not be identified. The light record's 'gf: ask' is a genre default, not an observation; nigiri is normally served with wheat-containing soy sauce.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Nakano's 38 sushi businesses on Tabelog contain no なかや. The single Japanese sushi restaurant with that exact name, 鮨 なかや, is in Kameari, Katsushika-ku - a different part of Tokyo entirely and not a credible match for a 中野駅北口 record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog's full Nakano sushi genre listing (38 shops across two pages, complete), Tabelog's nationwide keyword index for 寿司なかや, and an explicit Gnavi zero-result page.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/rstLst/sushi/",
+    "https://tabelog.com/tokyo/A1324/A132403/13027931/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/rstLst/sushi/",
+   "https://tabelog.com/tokyo/A1324/A132403/13027931/"
+  ],
+  "enrich_note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Nakano sushi list (/tokyo/A1319/A131902/rstLst/sushi/, pages 1-2, HTTP 200, all 38 shops read): すし政 中野本店, 松露鮨, 梅寿司, 鮨磯, 玉寿司 本店, 鮨 綴心, 鮨 かつた, 英鮨 中野北口店, 魚がし鮨 中野北口店 and the rest - no なかや. (2) Tabelog nationwide keyword search (?vs=1&sk=寿司なかや, HTTP 200, 39 fuzzy hits): the only 鮨 なかや in Japan is at 東京都葛飾区亀有 (Kameari, 438 m from the station) - the far east side of Tokyo, roughly 12 km from Nakano and on a different line. Nothing connects it to a Nakano north-exit record. The remaining hits are 寿司 なかご (Osaka), 鮨なかの (Saitama and Hokkaido) and chain conveyor-belt shops. (3) Gnavi keyword search (fw=寿司 なかや 中野, HTTP 200): 「該当するお店が見つかりませんでした」 - zero results. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__354",
+  "status": "not_found",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no restaurant named 「鰻 中野」 could be found; the name reads as a genre plus a place name rather than a business",
+  "cuisine_type": "unagi",
+  "neighborhood": "Unverified. The light record says 中野駅北口 (Nakano Station north exit, JR Chuo / Tokyo Metro Tozai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed - the business itself could not be identified. Note that kabayaki tare is wheat soy sauce plus mirin in every standard recipe, so a positive identification would very likely still be unworkable.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. 「鰻 中野」 reads as a genre plus a place name rather than a shop name, and no business by that name exists. Nakano's ten eel-serving restaurants are all named otherwise; the long-established ones are 川二郎 (319 m from the station) and いろは亭 (338 m).",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog's full Nakano unagi genre listing (10 shops, complete), Tabelog's nationwide keyword index for 鰻中野 (8 hits, none matching the name), and a Gnavi area search that surfaced no such business.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/rstLst/unagi/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/rstLst/unagi/"
+  ],
+  "enrich_note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Nakano unagi list (/tokyo/A1319/A131902/rstLst/unagi/, HTTP 200, all 10 shops): 川二郎, いろは亭, 味治, 三河屋, 谷川, 宇奈とと 中野店, 玄品 中野 ふぐ・うなぎ料理, 鮨磯, 焼鳥 とよ田, ての字 中野マルイ店. None is called 「鰻 中野」. (2) Tabelog nationwide keyword search (?vs=1&sk=鰻中野, HTTP 200, 8 hits): every hit is a differently-named eel restaurant that happens to sit in the Nakano wards (川二郎, すが原 at Nakano-shimbashi, 小満津, 安斎, 味治, いろは亭, 大江戸寿司) plus かもめ寿し in Nakano CITY, Nagano. No business is named 鰻 中野. (3) Gnavi keyword search (fw=鰻 中野区, HTTP 200) returns 1,786 generic area hits - さば銀 中野, 一蘭 中野店, うなぎ串焼 くりから 東中野店 and so on - and no 鰻 中野. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__356",
+  "status": "not_found",
+  "lat": 35.706,
+  "lng": 139.666,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY - no ramen shop named 太郎 could be found in Nakano",
+  "cuisine_type": "ramen",
+  "neighborhood": "Unverified. The light record says 中野駅周辺 (around Nakano Station, JR Chuo / Tokyo Metro Tozai lines).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not assessed - the business itself could not be identified.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed - the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. None of Nakano's 76 ramen shops is called 太郎. The only Tokyo ramen shop of that name is in Nerima, a different ward, and it is a Chinese-diner style shop rather than the tonkotsu the light record claims.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog's full Nakano ramen genre listing (76 shops over four pages, complete), Tabelog's nationwide keyword index for ラーメン太郎 (237 hits, one in Tokyo and it is in Nerima), and an explicit Gnavi zero-result page.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131902/rstLst/ramen/",
+    "https://tabelog.com/tokyo/A1321/A132102/13090419/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Could not identify the business, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131902/rstLst/ramen/",
+   "https://tabelog.com/tokyo/A1321/A132102/13090419/"
+  ],
+  "enrich_note": "NOT FOUND. Every leg ran and came back empty. (1) Tabelog's complete Nakano ramen list (/tokyo/A1319/A131902/rstLst/ramen/, 4 pages, HTTP 200 each, all 76 shops read): no 太郎 of any kind. (2) Tabelog nationwide keyword search (?vs=1&sk=ラーメン太郎, HTTP 200, 237 hits): there are ラーメン太郎 shops in Okayama, Yamagata, Ibaraki, Ishikawa, Saitama, Saga and Shizuoka, and exactly one in Tokyo - ラーメン太郎 at 練馬駅 178m (Nerima, tabelog 13090419), tagged 中華料理・ラーメン・つけ麺, about 6 km north of Nakano in a different ward and not a tonkotsu shop. Nothing ties it to a 中野駅周辺 record, so it has not been substituted. (3) Gnavi keyword search (fw=ラーメン太郎 中野, HTTP 200): 「該当するお店が見つかりませんでした」 - zero results. No 429, 403 or timeout on any leg. Coordinates unchanged, loc_precise:false."
+ }
+]

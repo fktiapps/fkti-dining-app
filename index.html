@@ -705,7 +705,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v174';
+const APP_BUILD='dcd-v175';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -815,7 +815,13 @@ function visiblePlaces(){
   const GF=[null,['dedicated'],['dedicated','high'],['dedicated','high','options'],['dedicated','high','options','ask']];
   if(gfL>=1 && gfL<=4 && !GF[gfL].includes(p.gf_confidence)) return false;
   // Vegan dial: 1=Full · 2=+Options · 3=+Limited · 4=+Ask · 5=all
-  const fullVeg = p.vegan_status==='full' || ['VEGAN','SHOJIN'].includes(p.category);
+  // category is a DISCOVERY bucket, not a diet claim: a shop found through a vegan
+  // directory keeps category "VEGAN" even after research finds it serves meat. Letting
+  // it stand in for vegan_status put 100 records through the "Full vegan only" dial on
+  // the strength of where they were found — including 蒙古タンメン中本, a pork-lard ramen
+  // chain whose vegan_status is "no". The researched tier is the only thing that
+  // answers "can I eat here".
+  const fullVeg = p.vegan_status==='full';
   const VG=[null,null,['options'],['options','limited'],['options','limited','ask']];
   if(vgL===1 && !fullVeg) return false;
   if(vgL>=2 && vgL<=4 && !(fullVeg || VG[vgL].includes(p.vegan_status))) return false;
@@ -2075,7 +2081,7 @@ function pushFilteredState(){
 // ---------- 👥 Group / Leader mode (walkable clusters that feed a mixed group) ----------
 function grpQual(p,kind,lvl){
  if(kind==='gf'){const GF=[null,['dedicated'],['dedicated','high'],['dedicated','high','options'],['dedicated','high','options','ask']];return lvl>=5?true:GF[lvl].includes(p.gf_confidence);}
- const full=p.vegan_status==='full'||['VEGAN','SHOJIN'].includes(p.category);
+ const full=p.vegan_status==='full';   // see visiblePlaces(): category is not a diet claim
  if(lvl===1)return full; if(lvl>=5)return true; const VG=[null,null,['options'],['options','limited'],['options','limited','ask']];return full||VG[lvl].includes(p.vegan_status);
 }
 function computeZones(){

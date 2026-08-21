@@ -496,6 +496,15 @@
  },
  {
   "city": "kyoto",
+  "id": "mp_ryuen_gyoza_no_mise_ryue",
+  "name": "龍園 (Ryuen (Gyoza no Mise Ryuen))",
+  "field": "vegan_cross_contact",
+  "text": "Not suitable for vegans. The gyoza filling contains ground meat, the menu features egg dishes (Tianjin rice, egg soup) a",
+  "source": null,
+  "why": "SAYING THIS LOUDLY: 'The gyoza filling contains ground meat' and 'Even the vegetable-forward gyoza contain meat' are asserted as fact with no source, and every description I could find says the opposite — 白菜, 春雨, キャベツ, 'unexpectedly healthy'. That does not make the gyoza vegan (nobody states it is m"
+ },
+ {
+  "city": "kyoto",
   "id": "mp_torisaki",
   "name": "鳥さき (Torisaki)",
   "field": "gf_cross_contamination",
@@ -811,6 +820,33 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "name": "ヴィーガンカフェ モンキーマジック (Vegan Cafe Monkey Magic (Veganic Monkey Magi)",
+  "field": "gf_cross_contamination",
+  "text": "This is a vegan kitchen rather than a certified gluten-free one; no dedicated GF fryer or formal cross-contamination con",
+  "source": "https://www.novacircle.com/spots/asia/japan/tokyo/taito-city-municipality/taito/reserveonly-veganic-monkey-magic-63e664/menu",
+  "why": "DO NOT CITE THIS DOMAIN FOR SAFETY CLAIMS. novacircle.com is an unclaimed-listing aggregator - the page carries 'Claim this business / Suggest a revision', '0 recommendations', and generated marketing prose ('Join us at ReserveOnly Veganic Monkey Magic ... for an unforgettable vegan dining experienc"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "name": "ヴィーガンカフェ モンキーマジック (Vegan Cafe Monkey Magic (Veganic Monkey Magi)",
+  "field": "soy_sauce_wheat",
+  "text": "Some dishes may use regular (wheat-containing) soy sauce or other wheat-based ingredients unless you flag this when book",
+  "source": "https://www.willflyforfood.net/veganic-monkey-magic-tokyo/",
+  "why": "THE ASSURANCE IS UNSOURCED. 'Ask for a wheat-free adjustment in advance' implies the kitchen can make one; no source anywhere says so. The nearest things are novacircle's generated 'the chef is attentive to allergens' and VegeMap's site-wide footer - neither is a statement by or about this kitchen. "
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "name": "ヴィーガンカフェ モンキーマジック (Vegan Cafe Monkey Magic (Veganic Monkey Magi)",
+  "field": "staff_allergy_handling",
+  "text": "The restaurant is reservation-only, and the chef designs the tasting course after you tell her about any vegan/vegetaria",
+  "source": "https://www.novacircle.com/spots/asia/japan/tokyo/taito-city-municipality/taito/reserveonly-veganic-monkey-magic-63e664/menu",
+  "why": "MOST SAFETY-CRITICAL ITEM ON THIS RECORD. staff_allergy_handling is exactly the field where a celiac looks for 'they will handle this', and the sentence is built on a content-farm page that does not say it. Split it: keep 'reservation-only' cited to https://www.inshokuten.com/foodist/article/7667/?p"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo_container_container_cafe",
   "name": "コンテナ（CONTAINER Cafe&Bar） (CONTAINER (Container Cafe & Bar))",
   "field": "staff_allergy_handling",
@@ -1081,6 +1117,60 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__14",
+  "name": "松喜 丸の内",
+  "field": "gf_cross_contamination",
+  "text": "Soba noodles typically contain wheat flour (nihachi blend) — cross-contact with wheat is inherent to the product",
+  "source": null,
+  "why": "SECOND PHANTOM PIN, AND ITS 'AUTHORITATIVE' SOURCE IS A DIFFERENT RESTAURANT. A Yahoo Japan search for 松喜 丸の内 蕎麦 天ぷら returns 小松庵総本家 丸の内オアゾ店, 丸の内 相馬庵 and ふじ喜屋 丸ビル — no 松喜. The record's cited Tabelog listing https://tabelog.com/tokyo/A1302/A130201/13250607/ returns HTTP 404, 「指定したレストランは見つかりませんでした」. An"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__14",
+  "name": "松喜 丸の内",
+  "field": "gf_cross_contamination",
+  "text": "Tempura batter is wheat flour; tempura commonly shares a fryer with other wheat-battered items",
+  "source": null,
+  "why": "Asserts this shop fries tempura. No page shows this shop exists, let alone what it fries."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__14",
+  "name": "松喜 丸の内",
+  "field": "gf_cross_contamination",
+  "text": "Soba tsuyu / dipping broth is normally made with wheat-based soy sauce",
+  "source": null,
+  "why": "Cuisine-level default with the word 'normally' doing the work. No venue evidence exists to check it against."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__14",
+  "name": "松喜 丸の内",
+  "field": "soy_sauce_wheat",
+  "text": "Assume standard wheat-containing shoyu in tsuyu and seasonings unless confirmed otherwise",
+  "source": null,
+  "why": "Instruction rather than finding, attached to an unverifiable venue."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__14",
+  "name": "松喜 丸の内",
+  "field": "vegan_cross_contact",
+  "text": "Soba tsuyu and dashi normally contain bonito/fish stock",
+  "source": null,
+  "why": "True of soba shops generally; nothing evidences it here."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__14",
+  "name": "松喜 丸の内",
+  "field": "vegan_cross_contact",
+  "text": "Tempura oil likely shared with seafood",
+  "source": null,
+  "why": "Doubly speculative — 'likely', about a fryer, at a venue nobody can locate."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3_ginza_49",
   "name": "天ぷら 阿部 銀座本店",
   "field": "positives",
@@ -1216,6 +1306,24 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3__144",
+  "name": "べっぴん舎",
+  "field": "gf_cross_contamination",
+  "text": "Confirm no wheat in any garnish, pickle, or side and that curry is served over rice only",
+  "source": null,
+  "why": "Advice rather than a finding, but it points the right way: the absence of naan on the menu is itself worth recording, since naan is the usual wheat trap in a Japanese curry shop and this one does not list it."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__144",
+  "name": "べっぴん舎",
+  "field": "staff_allergy_handling",
+  "text": "No documented allergy-handling protocol; Japanese-only, so bring a written GF/celiac card",
+  "source": null,
+  "why": "'Japanese-only' is wrong as written — the operator chose to put its gluten-free message in English, which is a mild positive signal for a foreign celiac, not a barrier. Keep the allergy-card advice, drop the language claim."
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3_earthful_cafe_tokyo",
   "name": "Earthful Cafe Tokyo",
   "field": "gf_cross_contamination",
@@ -1252,12 +1360,75 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3_oh_nana",
+  "name": "Oh Nana!",
+  "field": "positives",
+  "text": "Staff ask about all allergies and double-check the order before finalizing (e.g. seafood, avocado, oat allergies noted)",
+  "source": null,
+  "why": "Reads like an unattributed paraphrase of a single review. The general half duplicates the staff_allergy_handling claim; the specific allergen list should be deleted unless the originating review can be produced. Fetch note for the brief: FindMeGlutenFree venue pages answer a plain curl, but /search "
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_t_s",
+  "name": "T's たんたん グランスタ東京",
+  "field": "gf_cross_contamination",
+  "text": "Sesame/tantan base and boiling water are shared across an all-wheat-noodle kitchen.",
+  "source": null,
+  "why": "'All-wheat-noodle kitchen' is factually wrong and it buries the sharper fact: in the SAME chart the 米粉麺 (rice) versions of 金胡麻/黒胡麻たんたん麺 are STILL 小麦-marked, while the 米粉麺 ゆず野菜SIOらーめん is not. So the wheat in a tantan bowl is in the TARE, not just the noodle — swapping the noodle does not make a tanta"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_t_s",
+  "name": "T's たんたん グランスタ東京",
+  "field": "staff_allergy_handling",
+  "text": "English menu available; vegan/vegetarian and allium-free (oriental veg) options are labeled.",
+  "source": null,
+  "why": "Classic parent-brand transplant: the allium/oriental-vegan labelling belongs to the sit-down restaurant in Jiyugaoka, not to the Gransta counter. English on the tantan side is limited to the allergen chart and a one-line noodle note. Drop the allium-labelling claim or re-scope it to T's Restaurant."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_t_s",
+  "name": "T's たんたん グランスタ東京",
+  "field": "positives",
+  "text": "English menu and clearly labeled vegan / vegetarian / allium-free options.",
+  "source": null,
+  "why": "Same defect as the staff_allergy_handling twin: no allium/oriental-vegan labelling exists at the station shops. And 'vegan / vegetarian' labelling is meaningless here — the whole shop is vegan, nothing needs labelling. Remove."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_t_s",
+  "name": "T's たんたん グランスタ東京",
+  "field": "positives",
+  "text": "Inside JR Tokyo Station (Gransta, Keiyo Street area) — easy, foreigner-friendly access.",
+  "source": null,
+  "why": "TRADING-STATUS CHANGE: the shop closed at its old site on 2026-07-31 and reopened on 2026-08-01 at a different spot in the same B1 concourse. It is OPEN, but 'Keiyo Street area' is wrong — the new unit is in the Square Zero area, right after exiting the グランスタ地下北口改札, outside the gates. Update the loc"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3_cafe",
   "name": "晴れ屋 CAFE",
   "field": "vegan_cross_contact",
   "text": "Blog reviewer noted miso soup seemed to use kombu + shiitake dashi (no bonito) on one visit — plausibly vegan but never ",
   "source": null,
   "why": "LOUD: this claim invents a witness. No blog reviewer saying this about 晴れ屋 お茶の水 exists on the searchable web. Delete it, or replace with the Atsugi Instagram line clearly labelled as a different branch and a different dish (a sibling-branch citation if left as is)."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_osteria_lauro",
+  "name": "Osteria Lauro",
+  "field": "gf_cross_contamination",
+  "text": "Lunch pasta sets come with bread; fried/breaded antipasti in the same kitchen",
+  "source": null,
+  "why": "OVER-WARNS, and buries a point in the venue's favour. The shop already removes the bread from the GF set — that is a deliberate handling decision and the only published evidence that anyone there thinks about cross-contact. Rewrite as: the standard lunch set includes bread, but the gluten-free set i"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_osteria_lauro",
+  "name": "Osteria Lauro",
+  "field": "positives",
+  "text": "Substitution is inexpensive (+150 yen) and staff are used to the GF request",
+  "source": null,
+  "why": "Delete the second clause. 'Staff are used to it' is precisely the kind of unevidenced reassurance that turns an 'ask' venue into a place someone stops asking about."
  },
  {
   "city": "tokyo",
@@ -1297,6 +1468,60 @@
  },
  {
   "city": "tokyo",
+  "id": "tokyo3_gluten_free_cafe_avan",
+  "name": "GLUTEN FREE CAFE avan エキュート上野",
+  "field": "vegan_cross_contact",
+  "text": "Add-on gluten-free ice cream and some flavor coatings may contain dairy.",
+  "source": null,
+  "why": "LOUD, and wrong in the safe-sounding direction: the record hedges that ADD-ONS \"may\" contain dairy, when the brand states DAIRY IS IN THE CHURRO ITSELF and egg is in some toppings. Replace with the Q&A wording — no churro here is vegan."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_gluten_free_cafe_avan",
+  "name": "GLUTEN FREE CAFE avan エキュート上野",
+  "field": "positives",
+  "text": "Well-labeled, celiac-blogger-vetted, inside a major station — easy takeout for a traveler.",
+  "source": null,
+  "why": "\"Easy takeout for a traveler\" is now actively misleading — there is nothing to take out. Remove or rewrite around the closure."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_t_s_212",
+  "name": "T'sたんたん エキュート上野店",
+  "field": "positives",
+  "text": "English/picture menu and tourist-friendly ordering",
+  "source": null,
+  "why": "Nothing published for the UENO branch evidences an English or picture menu. The bilingual document in this brand belongs to the Tokyo/Akihabara chart — another sibling-branch leak. Either drop it or downgrade to 'photo-led ramen counter; no English menu documented for this branch'."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__225",
+  "name": "味農家",
+  "field": "gf_cross_contamination",
+  "text": "Shared kitchen also produces a standard non-vegan/non-GF 味農家 course, so shared surfaces/utensils are a general (not disc",
+  "source": null,
+  "why": "INVENTED. A 'standard non-vegan/non-GF 味農家 course' does not exist on any page of the venue's site, and the FAQ answer to non-vegan guests is that they eat the SAME vegetable course. This is the brief's 'warning against something harmless' defect: it manufactures a shared-surfaces hazard out of a cou"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__225",
+  "name": "味農家",
+  "field": "vegan_cross_contact",
+  "text": "Separate standard course uses animal products; vegan course is a distinct menu — confirm you are booked onto the vegan/G",
+  "source": null,
+  "why": "INVENTED, same fabrication as the gf_cross_contamination claim above. There is no separate animal-product course and no risk of being 'booked onto the wrong one'. Actively misleading — it tells a vegan the venue is conditional when the operator's whole proposition is that it is not. Delete."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__225",
+  "name": "味農家",
+  "field": "staff_allergy_handling",
+  "text": "Chef states he systematically reviewed all seasonings/ingredients when building the plant-based menu.",
+  "source": null,
+  "why": "OVERCLAIM. A statement about developing a vegetable broth has been inflated into a systematic seasonings-and-ingredients audit — which is precisely the assurance a celiac would lean on, and precisely the assurance the site does not give (see the unnamed shoyu/miso above). Delete or rewrite to the br"
+ },
+ {
+  "city": "tokyo",
   "id": "tokyo3__264",
   "name": "カフェ フレッシュグリーン",
   "field": "gf_cross_contamination",
@@ -1321,6 +1546,123 @@
   "text": "Shared noodle-boiling water and shared pots",
   "source": null,
   "why": "No source describes this kitchen's boiling arrangement. It is a safe inference for a single-line ramen counter, but the brief's Menbaka precedent is exactly a 'shared boiling water' line asserted without evidence. Since the venue serves only wheat noodles, this claim adds nothing the first claim doe"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__302",
+  "name": "白ヒゲのシチューハウス",
+  "field": "gf_cross_contamination",
+  "text": "Unverified establishment — no cross-contamination information available. Japanese stew roux is usually wheat-flour based",
+  "source": null,
+  "why": "The exact string 「白ヒゲのシチューハウス」 returns zero hits anywhere on the Japanese web — Yahoo falls back to House Foods retail roux products. The nearest real thing is 「巨人のシチューハウス」 (Kyojin Stewhouse) in Togoshi-Ginza, Shinagawa — a different name in a different ward. The generic wheat-roux caution is sound "
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__302",
+  "name": "白ヒゲのシチューハウス",
+  "field": "soy_sauce_wheat",
+  "text": "Standard Japanese soy sauce and stock contain wheat; unconfirmed for this venue.",
+  "source": null,
+  "why": "Generic advisory attached to a venue that cannot be shown to exist."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__302",
+  "name": "白ヒゲのシチューハウス",
+  "field": "vegan_cross_contact",
+  "text": "No information; cream/butter/dairy and animal stock are common in stew houses — confirm before eating.",
+  "source": null,
+  "why": "Same. Note also that this claim (dairy and animal stock are likely) directly contradicts the record's own cuisine string 「ヴィーガンシチュー・植物ベース」 — a label contradicting its own detail text, on a venue neither can evidence."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__307",
+  "name": "蒙古タンメン中本",
+  "field": "gf_cross_contamination",
+  "text": "Miso and 辛味噌ダレ (spicy miso tare) and soy-based seasonings contain wheat and soy.",
+  "source": null,
+  "why": "Attributes wheat and soy to a specific named component the operator has never broken out. The true and stronger statement is available on the same page: the shop says ANY item may contain 小麦 and 大豆 and will not tell you which. Rewrite to that; do not invent a per-item finding. (Also note 辛味噌ダレ is no"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__307",
+  "name": "蒙古タンメン中本",
+  "field": "soy_sauce_wheat",
+  "text": "Miso/soy-based tare in the soup contains 小麦 and 大豆 per the official allergen list.",
+  "source": null,
+  "why": "Same defect as the row above, and this one says 'per the official allergen list' — an attribution the list does not carry. The list is a may-contain notice for the whole menu. Restate it as such."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__307",
+  "name": "蒙古タンメン中本",
+  "field": "positives",
+  "text": "Spice level is fully customizable 0–10, so heat can be dialed down.",
+  "source": null,
+  "why": "Misreading of the source. The 0–10 scale is a RANGE OF DISHES, not a dial: you choose a bowl whose heat is fixed, you do not order 蒙古タンメン at level 2. Nothing on the site offers heat reduction. Rewrite as 'the menu spans 辛さ 0 to 10, so a no-heat bowl (塩タンメン, 辛さ=0) exists' — which is true, useful, and"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__313",
+  "name": "セタンのスープ屋",
+  "field": "gf_cross_contamination",
+  "text": "Unverified — establishment could not be confirmed to exist; no menu or kitchen info found. Assume shared surfaces and wh",
+  "source": null,
+  "why": "The exact name returns nothing but Indonesian rawon restaurants and Reddit threads about seitan. Tabelog has no Tokyo venue containing セタン. The claim's own admission is correct and should have been acted on rather than published."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__313",
+  "name": "セタンのスープ屋",
+  "field": "soy_sauce_wheat",
+  "text": "Not confirmed; standard Japanese shoyu contains wheat — ask whether tamari/GF soy sauce is used.",
+  "source": null,
+  "why": "Generic advisory on a venue with no evidence of existing."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__313",
+  "name": "セタンのスープ屋",
+  "field": "vegan_cross_contact",
+  "text": "Unverified; possible bonito/niboshi dashi in soups — ask.",
+  "source": null,
+  "why": "Same."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__329",
+  "name": "カフェ グリーンリーフ",
+  "field": "gf_cross_contamination",
+  "text": "Unverified — no venue-specific data found; assume standard Japanese wheat cross-contamination risks (wheat shoyu/tsuyu, ",
+  "source": null,
+  "why": "Every hit for グリーンリーフ in Tokyo is the lettuce variety appearing in salad ingredient lists (With Green Kagurazaka, No.4 Ichigaya). There is no cafe of that name in Ichigaya or anywhere in Chiyoda-ku."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__329",
+  "name": "カフェ グリーンリーフ",
+  "field": "soy_sauce_wheat",
+  "text": "Not confirmed; standard Japanese soy sauce contains wheat — verify a GF/tamari option is used.",
+  "source": null,
+  "why": "Generic advisory on a venue with no evidence of existing."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__329",
+  "name": "カフェ グリーンリーフ",
+  "field": "vegan_cross_contact",
+  "text": "Unverified — confirm no dashi/bonito, egg, or dairy in ordered items.",
+  "source": null,
+  "why": "Same."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__329",
+  "name": "カフェ グリーンリーフ",
+  "field": "staff_allergy_handling",
+  "text": "Unknown — no reviews or venue info located.",
+  "source": null,
+  "why": "Same — and accurate, because there is no venue to review."
  },
  {
   "city": "tokyo",
@@ -1366,6 +1708,33 @@
   "text": "Self-identifies as vegetarian/vegan curry, so plant-based diners have a starting point.",
   "source": null,
   "why": "SELF-IDENTIFICATION CLAIM WITH NO SELF. This is a venue-specific assertion and nothing anywhere shows a business called 「ベジタリアンカレー ナマステ」 saying it. The one Roppongi Indian house that does carry a Vegewel veg flag is モティ 六本木店 (tabelog 13001979) — a general Indian restaurant, differently named. Delete"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__419",
+  "name": "あふり 赤坂",
+  "field": "gf_cross_contamination",
+  "text": "Fried/tempura toppings introduce wheat batter",
+  "source": null,
+  "why": "WARNS ABOUT SOMETHING THAT ISN'T THERE WHILE MISSING WHAT IS. Delete this line and replace it with the real wheat topping: 雲呑 (wonton, wheat wrappers, store-limited) — and note the 炙りコロチャーシュー飯 / 肉ごはん / タレごはん sides, which carry the tare."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__419",
+  "name": "あふり 赤坂",
+  "field": "positives",
+  "text": "Dedicated labelled vegan ramen exists chain-wide",
+  "source": null,
+  "why": "QUOTE CUT BEFORE ITS OWN ※ EXCEPTION. The vegan ramen is explicitly NOT chain-wide — Yokohama Joinus and ZUND-BAR do not carry it, and the 豆乳担々麺 / カリー vegan items are 店舗限定. Change 'chain-wide' to 'at most branches; confirm at the branch'."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__419",
+  "name": "あふり 赤坂",
+  "field": "positives",
+  "text": "Konjac (gluten-free) noodle swap available",
+  "source": null,
+  "why": "THE MOST DANGEROUS LINE ON THIS RECORD. AFURI's own description says the konjac noodle is seasoned with 白出汁 — shirodashi, a 白醤油/薄口醤油 + katsuo-kombu seasoning; 白醤油 is brewed predominantly from WHEAT. So the swap is neither gluten-free nor vegan, and the allergen sheet does not list the noodle types s"
  },
  {
   "city": "tokyo",
@@ -1672,6 +2041,15 @@
   "text": "No allergy menu, allergy statement, or staff allergy-handling protocol has been published on any source reviewed. Guests",
   "source": "https://tabelog.com/aichi/A2301/A230103/23005149/",
   "why": "CONTRADICTED BY THE CITED PAGE. It says 'customers with a buckwheat allergy are asked to refrain from visiting' — that IS a published allergy statement, and a consequential one: this shop declines allergy patrons rather than accommodating them. Rewrite as 'the shop publicly asks buckwheat-allergic g"
+ },
+ {
+  "city": "nagoya",
+  "id": "nagoya_yakitori_arai",
+  "name": "焼鳥 あらい (Yakitori Arai)",
+  "field": "vegan_cross_contact",
+  "text": "All documented menu items are meat-based; animal fat and drippings on a shared grill make vegan cross-contact a near-cer",
+  "source": "https://oinagoya.com/araitori/",
+  "why": "WRONG IN BOTH DIRECTIONS. 'All documented menu items are meat-based' is FALSE — the shop sells a dedicated vegetable-skewer section — and the citation is a bare blog stub that could not evidence it either way. The second half (shared grill, drippings) is right and is now citable to the store page. R"
  },
  {
   "city": "nagoya",

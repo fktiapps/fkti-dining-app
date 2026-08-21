@@ -189,5 +189,116 @@
    "https://www.instagram.com/trevo_3_trevo/"
   ],
   "why": "Both statements holding up 'Vegan options' — the oat/soy/almond latte and the vegan cheesecake + banana bread — are quoted from section ① of the cited article, which is Be green by KIELO COFFEE, not trevo. trevo's own paragraph in that same article lists a melted-cheese truffle sandwich, condensed-milk coffee and Basque cheesecake; Tabelog registers no drink menu; no source anywhere evidences a plant milk here. With the transplant removed the record has zero vegan evidence. If a reviewer prefers not to assert a negative, 'ask' is the conservative floor, but 'options' is not defensible."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "This is a vegan kitchen rather than a certified gluten-free one; no dedicated GF fryer or formal cross-contamination controls were confirmed, so celiac diners should discuss the severity of their needs when booking.",
+  "url": "https://www.novacircle.com/spots/asia/japan/tokyo/taito-city-municipality/taito/reserveonly-veganic-monkey-magic-63e664/menu",
+  "verdict": "unsupported",
+  "found": "The page says the OPPOSITE: \"Options are available for vegetarians, vegans, and those seeking gluten-free meals. The chef is attentive to allergens, ensuring a safe dining experience for all guests.\" There is no mention of a fryer, cross-contamination, or celiac anywhere on it.",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch, read in full",
+  "note": "DO NOT CITE THIS DOMAIN FOR SAFETY CLAIMS. novacircle.com is an unclaimed-listing aggregator - the page carries 'Claim this business / Suggest a revision', '0 recommendations', and generated marketing prose ('Join us at ReserveOnly Veganic Monkey Magic ... for an unforgettable vegan dining experience'). It invents a gluten-free assurance no primary source makes, and the record then cites it for the opposite proposition. The claim's real evidence is Time Out (kuruma fu, ramen) and Will Fly for Food (bread, pani puri, soba, multigrain cracker, soy-sauce marinade) - use those and drop novacircle."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "The meat-less nikujaga dish includes kuruma fu (wheat gluten rings), which would not be suitable for those with celiac disease; VegeMap advises choosing a menu only after telling staff about allergies.",
+  "url": "https://vegemap.org/en/list/taito,tokyo/all-vegan/vegan-cafe-monkey-magic_en/ (via search) and https://www.willflyforfood.net/veganic-monkey-magic-tokyo/",
+  "verdict": "wrong_source",
+  "found": "Time Out Tokyo: \"Order the meat-less nikujaga (JPY480) to start, which is a plate filled with root vegetables, konnyaku (konjac) noodles and kuruma fu (wheat gluten rings) instead of meat, all of which are soaked in a tasty soy sauce-based broth.\" - and, two lines later, \"Or try the ramen (JPY1,200)\".",
+  "correct_url": "https://www.timeout.com/tokyo/restaurants/monkey-magic-vegan-cafe",
+  "http": "200 on all three pages",
+  "method": "plain fetch of both cited pages + the Time Out page, each read in full",
+  "note": "Neither cited page contains 'nikujaga' or 'kuruma fu' - I checked the full text of both. The wording is Time Out's, which this record already cites on a different claim. The VegeMap half is technically present but is site-wide boilerplate printed on every VegeMap listing ('We recommend that you choose a menu after telling the staff about vegetarian / vegan support, and your potential allergies'), on a page also marked 'Not verified. Claim this listing!' - it is not a venue-specific statement and should not be presented as one. Staleness caveat: the Time Out piece is dated 26 Nov 2020 and prices an a-la-carte menu; the shop is now reservation-only omakase, so cite it for 'kuruma fu has been on this kitchen's menu', not for 'is served today'."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Menu features a wheat-gluten rice bowl (車麩丼) and whole-grain wheat gluten (全粒粉車麩); seasonings are naturally-fermented (traditional wheat-containing shoyu).",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "車麩丼: 「支配人はというと、こちらの「車麩の丼」を注文しました。」 (tambo3.net, whose same visit also records a 「和パスタセット」). Naturally-fermented seasonings: 「調味料は天然菌のものを最優先で使用し、100％無添加食材を提供している」 (inshokuten). Soy sauce actually in use: \"grilled onion and tofu marinated with sake and soy sauce\" (Will Fly for Food) and \"a tasty soy sauce-based broth\" (Time Out).",
+  "correct_url": "https://tambo3.net/vegan-cafe-monkey-magic-asakusa/",
+  "http": "200 on all",
+  "method": "plain fetches of tambo3 + inshokuten (3 paginated pages) + Time Out + Will Fly for Food; exact-string search for 全粒粉車麩 on Yahoo Japan (iPhone UA, after backing off a 429)",
+  "note": "Two of the three parts are sourceable; the third is not. An exact-phrase search for 全粒粉車麩 returns only オーサワジャパン retail listings - nothing ties that product to this shop. Drop it; 車麩 alone already makes the point, being pure wheat gluten. Also tighten the logic: 天然菌の調味料 means natural-culture seasonings, which is NOT the same as wheat-brewed shoyu - the wheat-shoyu point is properly carried by the two English reviews that name soy sauce, not by the 天然菌 phrasing."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "It is a one-woman operation — Chef Monkey-san does all food preparation and cooking herself — with no mention of gluten-free protocols or cross-contamination controls.",
+  "url": "https://www.willflyforfood.net/veganic-monkey-magic-tokyo/ and https://www.timeout.com/tokyo/restaurants/monkey-magic-vegan-cafe",
+  "verdict": "supported",
+  "found": "\"It's helmed by Chef Monkey-san, a one-woman show who does all the food preparation and cooking herself.\" and \"she's a one-woman operation who crafts the tasting menus, prepares all the ingredients, and serves diners at her namesake restaurant\" - Will Fly for Food, from a February 2026 visit. The word 'gluten' appears nowhere in the article. Corroborated by inshokuten: 「ワンオペで客対応して」.",
+  "correct_url": null,
+  "http": "200 on both",
+  "method": "plain fetch of both, read in full",
+  "note": "Fully supported by the Will Fly for Food half. The Time Out half does not carry it - that 2020 page says only 'resident chef Sarucchaman' and in fact names a SECOND cook ('a self-taught plant-based sushi chef') for its Thursday Vege-Sushi night, which is mildly in tension with 'one-woman'. Either drop Time Out from this claim or note that the second chef is a 2020-era arrangement."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "gf_cross_contamination",
+  "quote": "Owner Atsuko Saeki (佐伯敦子) has left veganism personally (脱ヴィーガン) but keeps the menu fully plant-based as a business/food-safety decision, explicitly declining to add fish or meat.",
+  "url": "https://www.inshokuten.com/foodist/article/7667/",
+  "verdict": "supported",
+  "found": "「佐伯氏自身は一時期ヴィーガンであったが、数年前にヴィーガンをやめている。」 and 「今でもヴィーガン料理専門店としているのは…飲食店の運営には大きなメリットであると考えたこと、自身が野菜料理を一番得意としているため。魚や肉をメニューに加えるとキッチンの管理が難しくなる上、食中毒のリスクが増（える）」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "plain fetch of the cited URL, then its ?page=2 and ?page=3 continuations",
+  "note": "Supported, word for word - the operator says in her own voice that adding fish or meat would make kitchen management harder and raise food-poisoning risk. Two housekeeping points: the quoted sentence lives on page 3 of a 3-page article, so the citation is better written https://www.inshokuten.com/foodist/article/7667/?page=3 ; and this claim is filed under the field gf_cross_contamination while being purely about veganism - it belongs under vegan_cross_contact or notes."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "soy_sauce_wheat",
+  "quote": "Some dishes may use regular (wheat-containing) soy sauce or other wheat-based ingredients unless you flag this when booking — ask for a wheat-free adjustment in advance.",
+  "url": "https://www.willflyforfood.net/veganic-monkey-magic-tokyo/",
+  "verdict": "unsupported",
+  "found": "The first half is on the page - \"grilled onion and tofu marinated with sake and soy sauce\", plus \"crusty bread with a smear of pate\", \"pani puri\", \"a small serving of soba\" and a \"multigrain cracker\" across the same eleven courses. The second half is not: the article never mentions flagging anything at booking, never mentions gluten, wheat or allergies, and explicitly says \"there's no menu at the restaurant. Chef Monkey-san serves a 10-14 course vegan tasting menu based on what's available that week.\"",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "plain fetch, read in full; then checked the other five sources on this record for any allergy-adjustment statement",
+  "note": "THE ASSURANCE IS UNSOURCED. 'Ask for a wheat-free adjustment in advance' implies the kitchen can make one; no source anywhere says so. The nearest things are novacircle's generated 'the chef is attentive to allergens' and VegeMap's site-wide footer - neither is a statement by or about this kitchen. Rewrite as the observed fact only (soy sauce, bread, pani puri, soba and a multigrain cracker all appear in one documented eleven-course meal, with no substitution offered) and delete the advice."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "staff_allergy_handling",
+  "quote": "The restaurant is reservation-only, and the chef designs the tasting course after you tell her about any vegan/vegetarian needs or allergies at the time of booking.",
+  "url": "https://www.novacircle.com/spots/asia/japan/tokyo/taito-city-municipality/taito/reserveonly-veganic-monkey-magic-63e664/menu",
+  "verdict": "unsupported",
+  "found": "The cited page says 'Reservations are recommended to secure your spot in this intimate setting' - recommended, not required - and nothing whatsoever about telling the chef your needs at booking. Reservation-only IS true and sourced elsewhere: 「完全予約制 （公式LINEから）」 (inshokuten) and \"a reservations-only vegan restaurant\" (Will Fly for Food). The booking-time allergy briefing is in no source I could reach.",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "plain fetch of the cited page, then a targeted re-read of inshokuten (3 pages), Will Fly for Food, Time Out, VegeMap and the 2021 Wayback capture of vegan-cafe-monkey-magic.business.site",
+  "note": "MOST SAFETY-CRITICAL ITEM ON THIS RECORD. staff_allergy_handling is exactly the field where a celiac looks for 'they will handle this', and the sentence is built on a content-farm page that does not say it. Split it: keep 'reservation-only' cited to https://www.inshokuten.com/foodist/article/7667/?page=3 , and delete the allergy-briefing clause unless someone can produce the restaurant's own reservation form saying it."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "city": "tokyo",
+  "field": "positives",
+  "quote": "The kitchen is fully vegan — no meat, fish, dairy, or eggs anywhere on the menu — built on naturally cultivated (pesticide- and fertilizer-free) vegetables and additive-free seasonings.",
+  "url": "https://tambo3.net/vegan-cafe-monkey-magic-asakusa/",
+  "verdict": "supported",
+  "found": "「このお店は自然農法に野菜や素材を中心に調理する、とても安心なお店です。しかも「ヴィーガン料理」。」 The 'additive-free seasonings' half is not on this page but is verbatim elsewhere: 「出される野菜は全て自然栽培野菜。調味料は天然菌のものを最優先で使用し、100％無添加食材を提供している。」 (inshokuten).",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "plain fetch, read in full, then cross-checked the seasoning half against inshokuten",
+  "note": "Supported on substance. Two improvements: add the inshokuten URL for the 無添加 seasoning half, which tambo3 does not say; and note that tambo3 is a March-2020 post from the shop's opening weeks describing an a-la-carte format (ベジ丼セット, 和パスタセット, おむすびセット) that no longer exists - Will Fly for Food's February 2026 visit found a reservation-only 10-14 course omakase with no menu at all."
+ },
+ {
+  "id": "tokyo_vegan_cafe_monkey_magic_",
+  "kind": "record_verdict",
+  "city": "tokyo",
+  "record_verdict": "defective",
+  "note": "Three of eight claims unsupported, two of them resting on the same content-farm page (novacircle) - including the staff_allergy_handling assurance. Trading status fine: open, Thu-Sat, reservation-only, confirmed by a February 2026 first-hand visit. NO tier change needed in either direction: vegan_status 'full' is genuinely well-evidenced (owner interview 「ヴィーガン料理専門店」 and 「魚や肉をメニューに加えると…」, VegeMap 'All Vegan', an eleven-course all-plant meal report), and gf_confidence 'no' is right (kuruma fu, ramen, bread, pani puri, soba, wheat pasta and a multigrain cracker are all documented). The defect here is the sourcing, not the labels."
  }
 ]

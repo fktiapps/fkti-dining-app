@@ -286,5 +286,138 @@
   "kind": "record_verdict",
   "record_verdict": "repairable",
   "note": "Trading status OK: Tabelog 口コミ dated 2026/03, still trading. But the hours on this record's two cited sources are BOTH stale — hotpepper (2016) says 定休日 日曜・祝日, sinq (2020) says 土・日・祝, and Tabelog now shows 定休日 月曜日、木曜日、日曜日. gf_confidence 'ask' and vegan_status 'no' are both correct. Two uncited claims need URLs attached."
+ },
+
+ {
+  "id": "mp_mendokoro_mimatsu",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Not celiac-safe. The core product is handmade wheat udon, so wheat and gluten are central to nearly every dish and cross-contamination is unavoidable in a noodle-focused kitchen.",
+  "url": "https://kyotopi.jp/articles/gR6jh",
+  "verdict": "supported",
+  "found": "「こちらの味の特徴として、昆布や鰹、いりこを使った出汁と自家製うどん。」「途中二代目からこだわりの自家製麺に変え、店名も「美松」に改名。」「店内はカウンター席のみ。10席くらいでしょうか。」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch",
+  "note": "Supported — but STALE PREMISES. This 2019/2021 article covers the 円町 (中京区西ノ京御輿岡町21-1) shop, and Tabelog now marks that record 【移転】. The shop reopened 2021-12-17 at 上京区紙屋川町1038-27 (北野白梅町). The claim still holds at the new address — 口コミ there read 「讃岐系のいりこダシとコシあるうどん」 — but add https://tabelog.com/kyoto/A2601/A260501/26036928/ so the record is not resting on a moved-from location."
+ },
+ {
+  "id": "mp_mendokoro_mimatsu",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "Tempura (shrimp and chicken) is a signature offering, which adds wheat-flour batter and likely shared frying oil to the gluten picture.",
+  "url": "https://kyotopi.jp/articles/gR6jh",
+  "verdict": "supported",
+  "found": "「で、注文した天ざるうどん850円。ツヤツヤのうどんの上に、海老天、とり天が２つ。」「とり天。カレー塩で。」「海老天、けっこう太めで食べごたえあり。」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch",
+  "note": "Verbatim on both shrimp and chicken tempura. 'Signature' holds at the current premises too — the Tabelog record's menu tags are とり天 / えび天うどん / 天ざる / 天ぷらうどん / 野菜天丼, and a 2026/05 口コミ says 「その場で揚げるエビ」 (fried to order)."
+ },
+ {
+  "id": "mp_mendokoro_mimatsu",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Dishes use soy-based seasonings, and most Japanese soy sauce contains wheat — an additional gluten source beyond the noodles themselves.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Current Tabelog record menu tags: 「生醤油うどん」 alongside とり天 / えび天うどん / 天ざる / 天ぷらうどん / 鍋焼きうどん / 野菜天丼. kyotopi adds 「つゆは若干甘め…みりんですかね。いりこや昆布、鰹の旨みも効いている」 and 「出汁おにぎりが名物」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260501/26036928/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "UNCITED — went and found it on the venue's CURRENT Tabelog record",
+  "note": "UNCITED but now firmly evidenced, and better than the generic wording deserves: the shop sells 生醤油うどん — raw soy sauce poured straight onto the noodles, wheat-brewed by default. Attach https://tabelog.com/kyoto/A2601/A260501/26036928/ and name that dish; it is the single clearest gluten vector after the noodles."
+ },
+ {
+  "id": "mp_mendokoro_mimatsu",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Not vegan-friendly. The signature broth is built from bonito and niboshi (dried small fish) alongside kombu, so dashi-based dishes contain fish. Tempura includes shrimp and chicken.",
+  "url": "https://kyotopi.jp/articles/gR6jh",
+  "verdict": "supported",
+  "found": "「こちらの味の特徴として、昆布や鰹、いりこを使った出汁と自家製うどん。」「海老天、とり天が２つ。」「出汁にウズラ卵も。好みで入れてくれます。」「おでんは卓上にあり…練り物が今治産で」",
+  "correct_url": null,
+  "http": "200 (plain fetch)",
+  "method": "1 plain fetch",
+  "note": "Supported verbatim on kombu/katsuo/iriko dashi and on shrimp+chicken tempura. Two more animal items on the same page the claim misses: quail egg in the tsuyu and the self-serve oden with Imabari 練り物 (fish cake). Current-location 口コミ confirm 「いりこダシの汁」."
+ },
+ {
+  "id": "mp_mendokoro_mimatsu",
+  "city": "kyoto",
+  "field": "staff_allergy_handling",
+  "quote": "No specific allergy-handling reports were found in available sources. Diners with allergies should confirm directly with the shop before ordering.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "checked: kyotopi 200, current Tabelog record 200, moved-from Tabelog record 200",
+  "method": "UNCITED — this is a pure absence claim, so there is no URL that can carry it; I re-ran the search rather than assume",
+  "note": "Accurate as written: nothing on kyotopi, on either Tabelog record, or in the Yahoo! Japan results mentions allergy handling. Nothing to attach — but the 'confirm directly' advice needs a contactable number, and the record has none in this claim: 050-7129-0773 (current Tabelog record). Note 予約不可, so it must be a phone call."
+ },
+ {
+  "id": "mp_mendokoro_mimatsu",
+  "city": "kyoto",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "TRADING STATUS — THE SHOP HAS MOVED. Three of five claims rest on a kyotopi article about the 円町 premises (中京区西ノ京御輿岡町21-1); Tabelog now titles that record 【移転】 麺処 美松 and the shop trades at 上京区紙屋川町1038-27 since 2021-12-17. The record's own lat/lng, gmaps, hours and menu_url already point at the CURRENT address, so the map pin is fine — but the record's notes field still says 'Single independent location opened 2019-07-11', which is the moved-from opening date, and every citation should gain https://tabelog.com/kyoto/A2601/A260501/26036928/ . gf_confidence 'ask' and vegan_status 'no' are both correct."
+ },
+
+ {
+  "id": "mp_ryuen_gyoza_no_mise_ryue",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "This is not a celiac-safe restaurant. The core product is hand-stretched wheat-flour gyoza, and the menu also includes ramen, fried rice, and Tianjin rice, all of which involve wheat and/or soy. No gluten-free accommodation is documented, and with hand-made wheat skins prepared daily in a small open kitchen, airborne flour and shared surfaces make cross-contamination effectively unavoidable.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog genre 「二条駅/餃子､ 中華料理､ ラーメン」, オープン日 1962年, 席数 10席. 口コミ: 「餃子、焼き飯、天津飯、ラーメン、天津麺くらいしかない」「腰が曲がったお母さんが餃子を焼いて、中華鍋を振ってらっしゃいました。…（多分）娘さんが、皿にてんこ盛りの餡を皮に包み続けています」. Retty: 「餃子の皮は手打ち」; Lemon8: 「皮から手作りの餃子」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260203/26003603/dtlrvwlst/",
+  "http": "200 (s.tabelog.com iPhone UA, record + /dtlmenu/ + /dtlrvwlst/)",
+  "method": "UNCITED — went and found it: Tabelog record, menu and review list, plus a Yahoo! Japan search that surfaced the Retty and Lemon8 write-ups",
+  "note": "UNCITED but true and now evidenced: hand-wrapped skins made on the spot in a 10-seat room by two women. One overstatement to trim — 焼き飯 (fried rice) is not a wheat dish; its gluten risk is the soy sauce, so 'all of which involve wheat and/or soy' should not be read as putting flour in the fried rice."
+ },
+ {
+  "id": "mp_ryuen_gyoza_no_mise_ryue",
+  "city": "kyoto",
+  "field": "gf_cross_contamination",
+  "quote": "The gyoza filling includes glass noodles and the skins are wheat; the kitchen is a small counter operation where the same surfaces and grill are used for all dishes, so flour cross-contact should be assumed.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog menu tag 「春雨」; 口コミ 「野菜多めで春雨が入っているのが特徴」; 「席数 10席」; 「腰が曲がったお母さんが餃子を焼いて、中華鍋を振ってらっしゃいました」. Retty: 「中身は白菜や春雨のあっさり」.",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260203/26003603/dtlrvwlst/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "UNCITED — went and found it on the venue's own Tabelog review list",
+  "note": "UNCITED but evidenced. Worth stating precisely for a celiac reader: 春雨 glass noodles are mung-bean/potato starch and are NOT a gluten source — the wheat here is the hand-made skin and the shared wok/griddle, not the filling. As written the sentence reads as if the harusame were part of the risk."
+ },
+ {
+  "id": "mp_ryuen_gyoza_no_mise_ryue",
+  "city": "kyoto",
+  "field": "soy_sauce_wheat",
+  "quote": "Gyoza here are served with standard dipping condiments including a soy/vinegar-style dip and a house miso-based sauce. Most Japanese soy sauce contains wheat, and miso may also contain barley or wheat, so the dipping sauces are not gluten-free.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "Tabelog menu tags 「味噌ダレ」「酢醤油」; 口コミ 「特製の味噌ダレ推しだけど私はやっぱり酢醤油が好きかな」「酢醤油や特製味噌で食べる。特製味噌は濃いめの味で結構病みつきに」「謎の濃厚な味噌だ…」",
+  "correct_url": "https://tabelog.com/kyoto/A2601/A260203/26003603/dtlrvwlst/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "UNCITED — went and found it on the venue's own Tabelog review list",
+  "note": "UNCITED but the strongest-evidenced claim on the record: multiple diners name both the 酢醤油 and the house 味噌ダレ by name. Attach the /dtlrvwlst/ URL. The barley caveat is right to keep — 麦味噌 is barley and a house miso of unstated type cannot be assumed gluten-free."
+ },
+ {
+  "id": "mp_ryuen_gyoza_no_mise_ryue",
+  "city": "kyoto",
+  "field": "vegan_cross_contact",
+  "quote": "Not suitable for vegans. The gyoza filling contains ground meat, the menu features egg dishes (Tianjin rice, egg soup) and meat-based Chinese dishes, and there are no documented vegan options. Even the vegetable-forward gyoza contain meat and are cooked on a shared grill.",
+  "url": null,
+  "verdict": "unsupported",
+  "found": "NO source says the filling contains meat. What sources actually say: Retty 「餃子の皮は手打ち、中身は白菜や春雨のあっさり」; Tabelog 口コミ 「野菜多めで春雨が入っているのが特徴」「アンにキャベツが多い事。中覗き込むと綺麗な黄緑色がある」; ameblo 「具のキャベツが甘くって」; a Tabelog-blog post 「キャベツがたっぷりで、意外とヘルシーな感じの餃子でした」. The rest of the claim IS evidenced: menu tags 天津飯・天津麺・焼豚, 口コミ title 「ぎょうざ、やきめし、玉子スープ」.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com record + /dtlmenu/ + /dtlrvwlst/); 200 (Yahoo! Japan)",
+  "method": "UNCITED — searched Yahoo! Japan for the filling specifically (龍園 二条 餃子 具 豚肉 キャベツ 春雨) and read every description I could reach",
+  "note": "SAYING THIS LOUDLY: 'The gyoza filling contains ground meat' and 'Even the vegetable-forward gyoza contain meat' are asserted as fact with no source, and every description I could find says the opposite — 白菜, 春雨, キャベツ, 'unexpectedly healthy'. That does not make the gyoza vegan (nobody states it is meat-free either, and the dips and wok are shared), but the record must not assert meat it cannot evidence. Reword to 'no source states what the filling contains; reviewers describe cabbage/hakusai and harusame — ask' and cite https://tabelog.com/kyoto/A2601/A260203/26003603/dtlrvwlst/ . The 'not suitable for vegans' conclusion still stands on 天津飯/玉子スープ/焼豚 and the shared wok."
+ },
+ {
+  "id": "mp_ryuen_gyoza_no_mise_ryue",
+  "city": "kyoto",
+  "kind": "record_verdict",
+  "record_verdict": "defective",
+  "note": "ALL FOUR claims uncited, and one asserts an ingredient the evidence leans against. Trading status OK: Tabelog 口コミ dated 2026/07 and 2026/05, オープン日 1962年, 11:00-19:00, 月曜定休, 予約不可, 10席. gf_confidence 'ask' is correct. On vegan_status I am deliberately NOT recommending a downgrade: the label 'ask' is right and it is the DETAIL text that should move to meet it, not the reverse — 'Not suitable for vegans' is the unsourced half of that contradiction, and lowering the tier on an unsourced meat assertion is exactly the failure mode the brief warns about."
  }
 ]

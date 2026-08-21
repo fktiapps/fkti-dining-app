@@ -138,6 +138,22 @@ const drive = await page.evaluate(async () => {
   render();
   await sleep(600);
 
+  // The "Full vegan only" dial must answer from the researched tier, not from the
+  // discovery category. 蒙古タンメン中本 — a pork-lard ramen chain filed category VEGAN with
+  // vegan_status "no" — used to pass it, along with 99 others.
+  state.active = 'tokyo';
+  state.filters.vegan = 1;                       // dial position 1 = Full vegan only
+  render();
+  await sleep(900);
+  const shown = new Set([...document.querySelectorAll('.card[data-id]')].map(e => e.dataset.id));
+  const byId = new Map(state.cities.tokyo.places.map(p => [p.id, p]));
+  out.veganDialShown = shown.size;
+  out.veganDialLeaks = [...shown].filter(id => byId.get(id) && byId.get(id).vegan_status !== 'full').length;
+  state.filters.vegan = 0;
+  state.active = 'nagano';
+  render();
+  await sleep(700);
+
   const withRamen = state.cities.nagano.places.find(p => p.ramen);
   if (withRamen) {
     try {
@@ -179,6 +195,7 @@ if (!drive.citeLinks) fail.push('a record with sourced safety findings rendered 
 if (!drive.citeList) fail.push('citation list did not render for a sourced record');
 if (drive.bareShop && !drive.uncitedTags) fail.push('uncited findings rendered with no "uncited" marker — they read as evidence');
 if (drive.bareShop && !drive.uncitedNote) fail.push('no summary warning shown for a record whose claims are all uncited');
+if (drive.veganDialLeaks) fail.push(drive.veganDialLeaks + ' record(s) shown under "Full vegan only" without vegan_status full');
 if (drive.detailError) fail.push('detail sheet threw: ' + drive.detailError);
 if (errors.length) fail.push(errors.length + ' console error(s)');
 if (failedRequests.length) fail.push(failedRequests.length + ' failed request(s)');

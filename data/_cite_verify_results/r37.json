@@ -294,5 +294,132 @@
   "kind": "record_verdict",
   "record_verdict": "repairable",
   "note": "2 supported, 2 true-but-uncited (repairable to the shop's 公式 course tab), 1 UNSUPPORTED and actively contradicted (the tamari sentence). Trading status OK: 公式 listing, live reservation slots for 2026/08, a review dated 2026/08, opened 2023-06-11; record hours and phone match Tabelog exactly. gf_confidence ask is defensible for a 完全予約制 counter cooking for at most 8, so no tier change — but gf_detail must gain the wheat courses (鰯パン, 自家製トースト, 春巻き, 唐揚げ, 温麺, the fixed 揚げ物 slot) and lose the tamari sentence."
+ },
+ {
+  "id": "nagoya_yabu_matsu",
+  "city": "nagoya",
+  "field": "gf_cross_contamination",
+  "quote": "No information available on cross-contamination controls. As a conventional soba shop with tempura on the menu, shared cooking surfaces and wheat-containing ingredients are highly likely.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「天麩羅やカツ丼とのセットが人気メニューです」 (くーに, 2026/06), 「今日はミニ天丼とミニそばのセット 900円」 (おじさん893), 「今回はカレーうどん単品を頂き…」 (くーに), 「扉に『本日、てんぷらできません』と」 (sammy100) — one fryer, and when it is down tempura stops entirely. Keyword block: 「カツ丼 / 上カツ丼 / ミニ天丼 / 天ぷらセット / 天そば」.",
+  "correct_url": "https://tabelog.com/aichi/A2301/A230102/23048439/dtlrvwlst/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "4 — searched the record's own Tabelog page and its 23-review list",
+  "note": "True and citable, and the evidence is stronger than 'tempura on the menu': the shop's best-sellers are カツ丼 and 上カツ丼 (panko-breaded pork) and カレーうどん / カレー丼 (Japanese curry roux = wheat flour), so the same oil carries breadcrumbs AND batter, and there is a wheat-thickened sauce lane the record never mentions."
+ },
+ {
+  "id": "nagoya_yabu_matsu",
+  "city": "nagoya",
+  "field": "soy_sauce_wheat",
+  "quote": "Standard soy sauce (containing wheat) is used in the tsuyu; no tamari or gluten-free soy sauce alternative has been mentioned in any source.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a (source is null)",
+  "method": "Searched the Tabelog store page, all 23 reviews and the 36 menu photos for 醤油 / つゆ / たまり",
+  "note": "Cannot be evidenced as written — no source names the tsuyu's soy sauce, so the first sentence is category inference dressed as fact. The second sentence (no tamari mentioned) is fine. Suggested repair: drop the unprovable tsuyu assertion and lead with the two documented wheat vectors instead — カレーうどん / カレー丼 (wheat roux) and カツ丼 / 上カツ丼 (panko), both citable to https://tabelog.com/aichi/A2301/A230102/23048439/dtlrvwlst/ ."
+ },
+ {
+  "id": "nagoya_yabu_matsu",
+  "city": "nagoya",
+  "field": "vegan_cross_contact",
+  "quote": "Katsuobushi-based dashi is standard in this style of restaurant; no plant-based dashi option has been identified.",
+  "url": null,
+  "verdict": "wrong_source",
+  "found": "「出汁はよく効いていて、かしわや、たくさんのネギから出汁の中に味が出ていて美味くなってる」 (sammy100, とり南ばんきしめん) — dashi is central and it is a chicken dish. Nothing plant-based anywhere in 23 reviews.",
+  "correct_url": "https://tabelog.com/aichi/A2301/A230102/23048439/dtlrvwlst/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "4 — searched the record's own Tabelog page and its review list",
+  "note": "Substance holds but soften the wording when re-citing: no source says KATSUOBUSHI specifically, only 出汁. Say 'dashi runs through every dish and no plant-based dashi is offered'. Also add the vegan trap this shop actually has: 「お豆腐カツ丼」 (yonsu24) — a tofu dish that is panko-breaded, egg-bound and served in soy tsuyu, i.e. the most vegan-sounding item on the menu is neither vegan nor gluten-free."
+ },
+ {
+  "id": "nagoya_yabu_matsu",
+  "city": "nagoya",
+  "field": "staff_allergy_handling",
+  "quote": "No allergy-handling procedures or allergy-aware staff information found in any reviewed source.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a (source is null)",
+  "method": "Searched the Tabelog store page and all 23 reviews for any allergy/accommodation mention",
+  "note": "Absence confirmed and unevidenceable, as an absence claim must be. Two citable facts would make it useful rather than empty: the reservation field is blank and 「コース（0）料理（0）ドリンク（0）ランチ（0）」 (nothing declared on Tabelog), and 「店員さんがお二人だったので、提供まで20分ほど」 (にくのくに29092) — a two-person lunch-rush operation with a 20-minute queue is not a setting for a detailed allergy conversation. Phone 052-231-4478 is on the store page if the record wants to offer a channel."
+ },
+ {
+  "id": "nagoya_yabu_matsu",
+  "kind": "record_verdict",
+  "record_verdict": "repairable",
+  "note": "All 4 claims uncited; 2 are evidenceable and 2 are genuine absences. Trading status OK: reviews through 2026/06, hours 「月・火・水・木・金 11:00 - 14:30 / 土・日・祝日 定休日」 and cash-only both match the record exactly. gf_confidence 'no' and vegan_status 'no' are both correct — no tier change. Two data notes: (a) the record's gf_detail explains ni-hachi soba blending, which is reasonable but also uncited, while the shop's actual heavy hitters are katsudon and curry udon; (b) Tabelog says 「全席禁煙」 but two reviewers report smoking allowed (「席でタバコが大丈夫なお店なようで、少し煙かったです」, 「喫煙可能です」)."
+ },
+ {
+  "id": "nagoya_yakitori_arai",
+  "city": "nagoya",
+  "field": "gf_cross_contamination",
+  "quote": "Shared charcoal grill used for all skewers; no documentation of separate grill sections or protocols for allergen separation.",
+  "url": "https://tabelog.com/aichi/A2301/A230109/23090511/",
+  "verdict": "supported",
+  "found": "「名古屋コーチンを中心に国産鶏を厳選し、備長炭で焼き上げた焼鳥は絶品」 and 「親しみやすい和空間。ライブ感溢れるカウンター席が人気」 — one binchotan grill, worked in the open at the counter. No allergen note anywhere on the page.",
+  "correct_url": null,
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "1 mobile-host fetch of the cited page",
+  "note": "Supported, but incomplete in a way that matters: the shop's own 公式 menu tab (更新日 2026/03/28) has a whole 揚げ物 section — ササミカツ, カマンベールチーズフライ, あじフライ, 串かつ盛り合わせ, 手羽唐, 砂肝唐揚げ, ポテトフライ — so there is a shared deep fryer running flour AND panko AND kushikatsu breading, plus キーマカレー (wheat roux) and 鶏うどん (wheat noodles). The grill is not this shop's biggest gluten hazard; the fryer is. Add https://tabelog.com/aichi/A2301/A230109/23090511/dtlmenu/ ."
+ },
+ {
+  "id": "nagoya_yakitori_arai",
+  "city": "nagoya",
+  "field": "soy_sauce_wheat",
+  "quote": "Standard yakitori tare typically contains wheat-based soy sauce; no tamari or gluten-free alternative is documented for this restaurant.",
+  "url": "https://tabelog.com/aichi/A2301/A230109/23090511/",
+  "verdict": "wrong_source",
+  "found": "The cited store page lists no dishes at all. The shop's own menu tab documents the tare directly: 「塩・タレからお選びください。」 printed against もも, ムネ, せせり, ねぎま, 希少部位, 3種盛り, ハツ, レバー, 皮, ボンジリ, ハツヒモ, つくね and the 串三種盛り. No tamari or GF option anywhere in the 67 items.",
+  "correct_url": "https://tabelog.com/aichi/A2301/A230109/23090511/dtlmenu/",
+  "http": "200 (s.tabelog.com, iPhone UA)",
+  "method": "1 mobile-host fetch of the cited page + 1 of the 公式 menu tab",
+  "note": "Claim true, cited to a page that carries none of it. Re-cite to the menu tab — which also delivers a real POSITIVE the record currently calls theoretical: 「塩・タレからお選びください」 means the shop itself offers salt instead of tare on nearly every skewer, in writing, on its own menu. That is documented, not hypothetical, and belongs in gf_detail."
+ },
+ {
+  "id": "nagoya_yakitori_arai",
+  "city": "nagoya",
+  "field": "vegan_cross_contact",
+  "quote": "All documented menu items are meat-based; animal fat and drippings on a shared grill make vegan cross-contact a near-certainty.",
+  "url": "https://oinagoya.com/araitori/",
+  "verdict": "unsupported",
+  "found": "The cited page is a five-sentence blog stub from 2024-12-31 — 「焼鳥あらい は…焼鳥 専門店なんだね！ 名古屋コーチン も楽しめるし、お酒の種類も結構豊富なんだよ～！」 plus an address, opening hours and an embedded tweet. It documents no menu items and never mentions fat, drippings or the grill. And the shop's own 公式 menu contradicts the first clause outright: a 野菜串 section (白ネギ ¥170, ししとう ¥180, にんにく ¥170, しいたけ ¥200) plus 枝豆, きゅうり一本漬け, 辛味噌キャベツ, トマトスライス, 冷奴, 豆腐サラダ, 大根サラダ, なめたけおろし, ポテトフライ.",
+  "correct_url": "https://tabelog.com/aichi/A2301/A230109/23090511/dtlmenu/",
+  "http": "200 (plain fetch, desktop UA) / 200 (s.tabelog.com, iPhone UA)",
+  "method": "1 plain fetch of the cited blog + 1 mobile-host fetch of the 公式 menu tab",
+  "note": "WRONG IN BOTH DIRECTIONS. 'All documented menu items are meat-based' is FALSE — the shop sells a dedicated vegetable-skewer section — and the citation is a bare blog stub that could not evidence it either way. The second half (shared grill, drippings) is right and is now citable to the store page. Rewrite as: 'the shop does have vegetable skewers and edamame, but they go over the same binchotan grill as chicken; ask for salt only and for them to be grilled apart.' Note also that the record's OWN menus file already lists those vegetable skewers, so the record contradicts itself."
+ },
+ {
+  "id": "nagoya_yakitori_arai",
+  "city": "nagoya",
+  "field": "staff_allergy_handling",
+  "quote": "No information found on staff training for allergy handling; no reviews mention dietary accommodation requests being made or fulfilled.",
+  "url": null,
+  "verdict": "uncited",
+  "found": null,
+  "correct_url": null,
+  "http": "n/a (source is null)",
+  "method": "Searched the 公式 store page, the 67-item menu tab and the 39-review list for any allergy or accommodation mention",
+  "note": "Absence confirmed. Worth pairing with the citable channel the record omits: this is a 公式 Tabelog listing with 「予約可」, live online booking and a direct line 052-446-8133 — an allergy question can be asked at booking, unlike at a walk-in counter."
+ },
+ {
+  "id": "nagoya_yakitori_arai",
+  "kind": "record_verdict",
+  "record_verdict": "defective",
+  "note": "1 supported, 1 true-but-miscited, 1 UNSUPPORTED and factually contradicted by the shop's own menu, 1 accurate uncited absence. Trading status OK: 公式 listing, opened 2024-11-20, menu 更新日 2026/03/28, live reservation slots for 2026/08. Hours and phone match the record exactly. Separate data flag: the record files this as MOM_AND_POP, but Tabelog says 「老舗焼鳥店で腕を磨いた料理長、新井貴博が完全プロデュース」 with 「35席（カウンター11席、テーブル4卓、半個室1室）」 and five card brands — a produced 35-seat izakaya, not a mom-and-pop counter."
+ },
+ {
+  "id": "nagoya_yakitori_arai",
+  "kind": "tier_recommendation",
+  "field": "vegan_status",
+  "current": "no",
+  "recommended": "ask",
+  "evidence": [
+   "https://tabelog.com/aichi/A2301/A230109/23090511/dtlmenu/"
+  ],
+  "why": "UNDER-RATED. 'no' says a vegan cannot eat here, but the shop's own 公式 menu (67 items, 更新日 2026/03/28) carries a headed 野菜串 section — 白ネギ, ししとう, にんにく, しいたけ — plus 枝豆, トマトスライス, きゅうり一本漬け, 辛味噌キャベツ and なめたけおろし, and prints 「塩・タレからお選びください」 so the tare can be declined in writing. The record's own menus file already marks 枝豆 vegan and the three vegetable skewers vegan:ask, so the label contradicts the record's own data. The real caveats — shared binchotan grill, chicken drippings, likely bonito on the 冷奴 — are exactly what 'ask' is for."
  }
 ]
