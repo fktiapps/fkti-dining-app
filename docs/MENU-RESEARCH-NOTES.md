@@ -281,3 +281,19 @@ New traps:
   dated 2026 review lists the ten plates one by one. Course price + drinks from
   the shop's own listing = `authoritative`; label the plates clearly as one
   seating's rotating line-up.
+
+## Tabelog's search endpoint lies (found by the Tokyo enrich pass, 2026-08-20)
+
+`tabelog.com/rstLst/?sk=<keyword>` **silently ignores the keyword** and returns a
+generic promoted-listing page. It looks like a successful search returning irrelevant
+results, which reads as "this shop does not exist" — so it manufactures false
+negatives, and a not-found verdict built on it is worthless.
+
+The URL that actually searches is the one `/rst/rstsearch/?sk=<keyword>` 302-redirects
+to: `/rstLst/?vs=1&sa=&sk=<keyword>&sw=<keyword>`. Follow the redirect rather than
+constructing `rstLst` by hand.
+
+Second directory that answers curl cleanly: `r.gnavi.co.jp/area/jp/rs/?fw=<keyword>`.
+
+Reminder from the same pass: **HTTP 429 is the engine refusing to answer, not
+answering "no".** Back off and retry; never let a rate-limit become a negative result.

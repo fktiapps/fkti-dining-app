@@ -1,0 +1,225 @@
+[
+ {
+  "priority": 4,
+  "city": "nagoya",
+  "id": "nagoya_zeishokuya_senju_marunou",
+  "name": "贅食家千壽 丸の内店 (Zeishokuya Senju Marunouchi)",
+  "gf": "ask",
+  "vegan": "no",
+  "website": "https://www.zeisyokuya-senju.com/",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "No information on dedicated fryers or separation of wheat-containing preparations. The parent menu includes tempura, indicating wheat flour is used in the kitchen.",
+    "source": "https://tabelog.com/aichi/A2301/A230109/23095951/"
+   },
+   {
+    "field": "soy_sauce_wheat",
+    "text": "Standard Japanese soy sauce (wheat-containing) is the default at sushi restaurants. No gluten-free soy sauce or tamari was mentioned anywhere in available sources.",
+    "source": "https://tabelog.com/aichi/A2301/A230109/23095951/"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "Seafood-based dashi (海鮮出汁) is used in miso soup. Fish and shellfish are prepared throughout the kitchen. No plant-based separation is available.",
+    "source": "https://nagoya-meshi.com/area/ozone/zeisyokuyasenju"
+   },
+   {
+    "field": "staff_allergy_handling",
+    "text": "No allergy menu, allergen labeling, or staff allergy-handling protocol was found in any source. Celiac diners should call ahead: 052-201-3655.",
+    "source": "https://tabelog.com/aichi/A2301/A230109/23095951/"
+   },
+   {
+    "field": "positives",
+    "text": "Counter-style seating means you can communicate directly with the chef about what goes into each piece, which may allow some customization.",
+    "source": "https://tabelog.com/aichi/A2301/A230109/23095951/"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_afternoon_tea_rocher",
+  "name": "アフタヌーンティー ロシェ (Afternoon Tea Rocher)",
+  "gf": "no",
+  "vegan": "no",
+  "website": "https://www.instagram.com/rocher_afternoontea/",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "The entire menu is built on wheat (scones, pastries, cakes, quiche, pies, biscuits), so cross-contamination is inherent and the venue is not suitable for celiacs. No gluten-free handling is documented.",
+    "source": "https://rurubu.jp/andmore/article/22732"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "Dishes are prepared with shared dairy, eggs and meat (prosciutto, anchovy); no vegan preparation or separation is documented.",
+    "source": "https://www.narakko.jp/24-10rocher/"
+   },
+   {
+    "field": "positives",
+    "text": "Menu items and ingredients (Nara-vegetable quiche, carrot salad, prosciutto cake salé, anchovy fish pie, local-tea scones, named petit fours) are described in detail by published articles, helping diners identify what they are eating, though no formal allergen program is documented.",
+    "source": "https://rurubu.jp/andmore/article/22732"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_ajidorobo_tabasa",
+  "name": "味泥棒 TaBaSa (Ajidorobo TaBaSa)",
+  "gf": "no",
+  "vegan": "no",
+  "website": "https://www.mochiidono.com/shop_details.html?id=9",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "As a standard izakaya cooking on shared equipment with wheat-based seasonings, cross-contamination with gluten should be assumed throughout.",
+    "source": "https://tabelog.com/nara/A2901/A290101/29002490/"
+   },
+   {
+    "field": "soy_sauce_wheat",
+    "text": "Home-style izakaya dishes here rely on standard Japanese seasonings such as soy sauce, which is brewed with wheat.",
+    "source": "https://www.mochiidono.com/shop_details.html?id=9"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "The menu is built around meat and fish (e.g. grilled chicken-thigh steak) and dashi, so vegan cross-contact is expected.",
+    "source": "https://tabelog.com/nara/A2901/A290101/29002490/"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_amenokaku_coffee",
+  "name": "天迦久珈琲 (Amenokaku Coffee)",
+  "gf": "no",
+  "vegan": "limited",
+  "website": "https://amenokakucoffee.com/",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "The café bakes its own wheat shokupan in-house and serves it as toast, so flour and gluten are present on-site; no gluten-free preparation is documented.",
+    "source": "https://www.narakko.jp/amenokaku/"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "Milk is used for the WHITE espresso drink and butter/honey for the toast; no documented separation for vegan orders.",
+    "source": "https://www.narakko.jp/amenokaku/"
+   },
+   {
+    "field": "positives",
+    "text": "The owner is a licensed English-speaking guide, so dietary questions can be asked directly in English.",
+    "source": "https://nara.keizai.biz/headline/1205/"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_anne_marie_cafe",
+  "name": "アンヌ・マリーカフェ (Anne-Marie Cafe)",
+  "gf": "no",
+  "vegan": "ask",
+  "website": "https://www.anne-marie-cafe.com/",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "The menu is built around wheat flour (scones, cakes, quiche, sandwiches), so cross-contact with gluten is unavoidable throughout the kitchen.",
+    "source": "https://www.anne-marie-cafe.com/"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "Baked goods and the afternoon tea set use dairy (clotted cream, butter) and eggs; no plant-based preparation is documented.",
+    "source": "https://www.anne-marie-cafe.com/"
+   },
+   {
+    "field": "staff_allergy_handling",
+    "text": "The cafe states that allergy accommodations are possible (アレルギー対応も可); diners with allergies should ask directly.",
+    "source": "https://www.narakko.jp/anne-marie-cafe/"
+   },
+   {
+    "field": "positives",
+    "text": "Allergy accommodations are noted as available, so guests can discuss needs with staff before ordering.",
+    "source": "https://www.narakko.jp/anne-marie-cafe/"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_argyle",
+  "name": "アーガイル (Argyle)",
+  "gf": "no",
+  "vegan": "ask",
+  "website": "http://nara.mypl.net/shop/00000346545/",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "Menu is built on toast, sandwiches, hot dogs, pasta, and curry — wheat is pervasive throughout the kitchen, so cross-contact is effectively unavoidable.",
+    "source": "https://nara-gourmet.com/argyll/"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "Core offerings rely on eggs, dairy (yogurt), and meat; no plant-based menu is documented.",
+    "source": "https://tabelog.com/nara/A2901/A290101/29002504/"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_arurukan",
+  "name": "あるるかん (Arurukan)",
+  "gf": "no",
+  "vegan": "no",
+  "website": "https://www.mochiidono.com/shop_details24.html",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "Core dishes rely on flour-based demi-glace sauce and breaded cutlets, so wheat is pervasive across the kitchen; no gluten-free preparation is documented.",
+    "source": "https://www.naralunch.com/hamburg/arleskan.html"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "The menu is meat- and dairy-centric (hamburg steak, demi-glace, consommé, beef cutlet); no vegan options or separate preparation are documented.",
+    "source": "https://www.mochiidono.com/shop_details24.html"
+   }
+  ]
+ },
+ {
+  "priority": 4,
+  "city": "nara",
+  "id": "nara_ashura",
+  "name": "あしゅーら (Ashura)",
+  "gf": "no",
+  "vegan": "options",
+  "website": "https://tabelog.com/nara/A2901/A290101/29000431/",
+  "claims": [
+   {
+    "field": "gf_cross_contamination",
+    "text": "Wheat gluten (seitan) is a core menu ingredient prepared in the same kitchen, so cross-contact with gluten is unavoidable; the venue is not suitable for celiacs.",
+    "source": "https://nara-gourmet.com/ashura/"
+   },
+   {
+    "field": "vegan_cross_contact",
+    "text": "Yogurt (dairy) is used in the spicy curry sauce and eggs are used in omurice/omelette dishes, so vegans must request egg-, milk-, and yogurt-free preparations.",
+    "source": "https://nara-gourmet.com/ashura/"
+   },
+   {
+    "field": "staff_allergy_handling",
+    "text": "Staff are described as friendly and happy to explain the food, and dishes made without egg, milk, or yogurt are available on request.",
+    "source": "https://r.gnavi.co.jp/5r3a7w7g0000/"
+   },
+   {
+    "field": "positives",
+    "text": "Fully meat- and fish-free kitchen using organic, pesticide-free vegetables and brown rice, with many naturally vegan curry options.",
+    "source": "https://nara-gourmet.com/ashura/"
+   },
+   {
+    "field": "positives",
+    "text": "English-language menu and barrier-free accommodations (braille menu, guide dogs welcome) make ordering and asking about ingredients easier for foreign visitors.",
+    "source": "https://nara-gourmet.com/ashura/"
+   }
+  ]
+ }
+]

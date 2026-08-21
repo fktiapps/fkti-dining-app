@@ -1,0 +1,350 @@
+[
+ {
+  "id": "tokyo3__74",
+  "status": "not_found",
+  "lat": 35.678,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no washoku restaurant named 瑞穂 could be found in Kyobashi or anywhere in Chuo-ku",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 京橋 / 京橋駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. No 瑞穂 restaurant exists in Kyobashi in any directory checked. The only same-name candidates found anywhere are 髨処 瑞穂 in Nagoya (新栄町, Aichi) and 日本橋 瑞穂屋, a Nihonbashi name that surfaces only on Instagram with no address, no listing and no washoku menu. Neither is in Kyobashi and neither can be tied to this record.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide free-word search for 「和食処 瑞穂」 returned a single hit — 妙義グリーンホテル＆テラス in Tomioka, Gunma — i.e. a keyword collision, not a match. Narrower Tabelog searches (瑞穂 京橋 / 和食 瑞穂 中央区) returned 0. Yahoo Japan returned 髨処瑞穂 (Nagoya) and the closed 和食処 みつはし (Takaracho). NAVITIME's complete washoku listing for 中央区京橋 — all four pages, 56 businesses — contains no 瑞穂.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/gunma/A1005/A100501/10011907/",
+    "https://www.navitime.co.jp/category/0305/13102004000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified, so nothing can honestly be said about the door. Recommend the record be deleted or re-sourced before it is shown to anyone."
+  },
+  "sources": [
+   "https://tabelog.com/gunma/A1005/A100501/10011907/",
+   "https://www.navitime.co.jp/category/0305/13102004000/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「和食処 瑞穂」 (HTTP 200) — exactly one hit, 妙義グリーンホテル＆テラス, a hotel in Tomioka, Gunma, unrelated. (2) Tabelog 「瑞穂 京橋」 (HTTP 200) — 0 results. (3) Tabelog 「和食 瑞穂 中央区」 (HTTP 200) — 0 results. (4) Yahoo Japan 「和食処 瑞穂 京橋」 (HTTP 200) — returned 髨処 瑞穂 in Nagoya's Shin-sakae and the permanently closed 和食処 みつはし near Takaracho; no Kyobashi 瑞穂. (5) Yahoo Japan 「和食処 \"瑞穂\" 東京 中央区」 (HTTP 200) — only 日本橋 瑞穂屋 on Instagram, no address or listing anywhere. (6) NAVITIME category listing for 中央区京橋 washoku, all 4 pages / 56 businesses read in full (HTTP 200) — no 瑞穂. Coordinates unchanged, loc_precise:false. Note that 「和食処」 on its own is a generic category word, but 「瑞穂」 is a normal proper shop name, so this reads as a shop that could not be located rather than as a record that never named a business."
+ },
+ {
+  "id": "tokyo3__76",
+  "status": "confirmed",
+  "name": "つじ田 日本橋八重洲店",
+  "lat": 35.682522,
+  "lng": 139.771681,
+  "loc_precise": true,
+  "address_ja": "東京都中央区八重洲1-4-6 八重洲境井ビル 1F",
+  "enrich_confidence": "high",
+  "cuisine": "Sixteen counter seats of the thick pork-bone-and-seafood tsukemen that made つじ田 famous — you eat the noodles plain, then with sudachi, then with Kyoto black shichimi, and finish with soup-wari; bowls come in under ¥1,000",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Yaesu 1-chōme, on the Yaesu-dōri side of Tokyo Station — 3 min from Nihonbashi (Ginza / Tōzai lines, exit A7), 5 min from Tokyo Station's Yaesu north exit",
+  "website": "https://tsukemen-tsujita.com/top-tjt/",
+  "menu_url": "https://tsukemen-tsujita.com/menu/",
+  "hours_raw": "月・火・水・木・金 11:00 - 22:30／土・日・祝日 11:00 - 21:00　定休日：不定休",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable for anyone avoiding gluten. The dish is wheat noodles — two custom flours co-developed with 三河屋製麺 — and the dipping broth is a pork/chicken/fish/kombu reduction finished with ordinary wheat soy sauce. The group's own allergen page carries a blanket cross-contact statement: 「各メニューの調理には同じ調理器具を使用しているため、本来その商品に使用しない食材が調理時に付着・混入する可能性があります」 and 「麺、スープ等の製造工場では、小麻、卵、乳成分を原材料とする商品の製造を行ってます」. No gluten-free item is offered and none is claimed.",
+  "vegan_status": "no",
+  "vegan_detail": "The house broth is built on pork bones, chicken carcass and seafood — 「厳選の豚骨、鶏がら、魚介、昆布、野菜、他合計十数種類の食材」 — and the standard bowl comes with chashu and a marinated egg. There is no vegetarian or vegan option on the menu.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "つじ田 group branch (corporate site: oishes.com)"
+   ],
+   "origin": "Kanda-Ochanomizu, Tokyo",
+   "background": "つじ田 opened in Kanda-Ochanomizu in 2005 — 「2005年神田御茶ノ水でオープンして以来」 — and became one of the shops that defined the Tokyo nōkō gyokai tsukemen style. The house does not publish a chef's name; the brand's identity is the method rather than a personality. The broth is a reduction of 「厳選の豚骨、鶏がら、魚介、昆布、野菜、他合計十数種類の食材」; the noodles are two bespoke types made with 三河屋製麺, one cut for tsukemen and one for ramen. The shop prescribes a three-stage 「つけ麺流儀」: the first third of the noodles plain, sudachi squeezed over the second third, and a Kyoto kuro-shichimi from a spice house founded in 1704 on the last third, then soup-wari to drink the broth down. This Yaesu branch opened on 10 July 2013 and is a 16-seat counter.",
+   "philosophy": "One dish done to a fixed ritual: a rich pork-and-fish dip, sharpened first with citrus and then with pepper, so the same bowl tastes like three.",
+   "specialty": "濃厚豚骨魚介つけ麺 with sudachi and 黒七味; 味噂 and dandan variants exist at other group brands, not here.",
+   "anecdotes": [
+    {
+     "text": "The shop's own こだわり page sets out the eating order as a rule rather than a suggestion — plain noodles, then sudachi at the one-third mark, then 黒七味 for the last third, then スープ割り.",
+     "source": "https://tsukemen-tsujita.com/about/"
+    },
+    {
+     "text": "The 黒七味 is bought in from a Kyoto spice house the shop dates to 1704, so the last few mouthfuls taste of Gion rather than of Tokyo.",
+     "source": "https://tsukemen-tsujita.com/about/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog's entry for つじ田 日本橋八重洲店 gives the address 中央区八重洲1-4-6 八重洲境井ビル1F, coordinates, 16 counter seats, the 11:00-22:30 weekday / 11:00-21:00 weekend hours with 不定休, a sub-¥1,000 budget band both sittings, all-non-smoking, and an opening date of 10 July 2013. The brand site supplies the 2005 Kanda-Ochanomizu origin, the broth composition, the 三河屋製麼 noodles and the three-stage eating method. The group allergen page supplies the shared-utensil and wheat/egg/dairy factory statements.",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130202/13158035/",
+    "https://tsukemen-tsujita.com/about/",
+    "https://oishes.com/allergy/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "「各メニューの調理には同じ調理器具を使用しているため、本来その商品に使用しない食材が調理時に付着・混入する可能性があります」 — the operator's own words. A 16-seat noodle counter boils wheat noodles in one pot all day.",
+     "source": "https://oishes.com/allergy/"
+    },
+    {
+     "text": "「麼、スープ等の製造工場では、小麻、卵、乳成分を原材料とする商品の製造を行ってます」 — wheat is present upstream at the factory as well as in the shop.",
+     "source": "https://oishes.com/allergy/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "No gluten-free tamari is named anywhere; the tare is assumed to be ordinary wheat shōyu.",
+     "source": "https://tsukemen-tsujita.com/about/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork bone, chicken carcass and fish are the base of the only broth in the shop.",
+     "source": "https://tsukemen-tsujita.com/about/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "The group publishes a per-brand allergen PDF and a contact form, so a specific ingredient question can be answered in writing before you go — but it is disclosure, not accommodation.",
+     "source": "https://oishes.com/allergy/"
+    }
+   ],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "A 16-seat all-counter noodle bar in a Yaesu office block, three minutes from Nihonbashi station's A7 exit. Open straight through from 11:00, no reservations, cash or Suica (no credit cards), and you will be in and out in twenty minutes. Queues at peak lunch. English is not guaranteed but the ordering is point-and-pay and the shop posts the eating method in pictures. Not a place to negotiate a special preparation."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130202/13158035/",
+   "https://tsukemen-tsujita.com/top-tjt/",
+   "https://tsukemen-tsujita.com/about/",
+   "https://tsukemen-tsujita.com/menu/",
+   "https://oishes.com/allergy/"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「つけ麼 つじ田」 with a Yaesu centroid pin; the business is つじ田 日本橋八重洲店 at 中央区八重洲1-4-6 八重洲境井ビル1F, confirmed on Tabelog (address, 16 counter seats, hours, 2013-07-10 opening) and consistent with the brand's own site. Coordinates replaced with the real address's, loc_precise:true — the sweep's pin was about 150 m off."
+ },
+ {
+  "id": "tokyo3__77",
+  "status": "not_found",
+  "lat": 35.6717,
+  "lng": 139.765,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no tempura restaurant named 大黒 exists in Kyobashi or anywhere in Tokyo",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 京橋 / 銀座線京橋駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. (Any tempura shop would in any case be wheat batter in shared oil.)",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Kyobashi has exactly three tempura businesses on NAVITIME's washoku listing for 中央区京橋 and they are てんぷら 深町 (京橋2-5-2), 京橋 天富良と黢 いしい (京橋1-6-12) and 京橋 天七 — none of them 大黒. The nearest Kyobashi tempura shop that ever carried a comparable name, 天ぷら 京橋天神 near Takaracho, is marked 閉店 on Tabelog. The Tokyo businesses actually called 大黒 are tempura and tendon houses elsewhere in the city — 大黒家天麸羅 in Asakusa and 柳橋 大黒家 in Asakusabashi — both several kilometres away and neither with a Kyobashi branch. There is also a long-standing 大黒 in Osaka (大阪市中央区鍘屋町), which is where a 「中央区」＋「京橋」 name collision most likely comes from, since Osaka has its own Kyobashi.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide free-word 「天ぷら 大黒」 returns 天ぷら大吉 branches in Osaka, 天ぷら 大樹 in Kitakyushu and 天ぷら 大塚 in Iriya — near-miss characters, no 大黒. Narrower Tabelog queries (天ぷら 大黒 東京 / 大黒 天ぷら 中央区) return 0. Yahoo Japan on 「大黒」＋天ぷら＋中央区京橋 returns only 居酒屋 大黒 at 大阪市中央区鍘屋町1-1-10 and Osaka-Kyobashi tempura rankings.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130202/13263016/",
+    "https://www.navitime.co.jp/category/0305/13102004000/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. Kyobashi's real tempura options are てんぷら 深町 and 京橋 天富良と黢 いしい; recommend this record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130202/13263016/",
+   "https://www.navitime.co.jp/category/0305/13102004000/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「天ぷら 大黒」 (HTTP 200) — 15 results, all character near-misses (天ぷら大吉 Osaka, 天ぷら 大樹 Kitakyushu, 天ぷら 大塚 Iriya, 大黒門 Fukuoka); no 天ぷら 大黒 anywhere. (2) Tabelog 「天ぷら 大黒 東京」 and 「大黒 天ぷら 中央区」 (HTTP 200) — 0 results each. (3) Tabelog 「天ぷら 京橋」 (HTTP 200) — the Tokyo-Kyobashi entries are てんぷら 深町 (4.05) and the permanently closed 天ぷら 京橋天神; no 大黒. (4) Yahoo Japan 「天ぷら 大黒 京橋 東京」 (HTTP 200) — returned 柳橋 大黒家 (Asakusabashi) and 大黒家天麸羅 (Asakusa), plus a Kyobashi-area tempura round-up that does not list it. (5) Yahoo Japan 「\"大黒\" 天ぷら 中央区京橋」 (HTTP 200) — every hit is Osaka's Kyobashi (居酒屋 大黒, 大阪市中央区鍘屋町1-1-10). (6) NAVITIME washoku listing for 中央区京橋, all 4 pages / 56 businesses (HTTP 200) — three tempura shops, none of them 大黒. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__78",
+  "status": "not_found",
+  "lat": 35.678,
+  "lng": 139.77,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no monjayaki restaurant named ねぎ八 could be found in Yaesu, Kyobashi or anywhere in Tokyo",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 八重洲 / 都営地下鉄京橋駅 — a station that does not exist (Kyobashi is served by the Ginza line; the Toei station in that block is Takaracho).",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified. (Monjayaki is a wheat-flour batter cooked on a shared griddle, so the category is a hard no for celiac regardless.)",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, and the neighbourhood itself argues against the record: NAVITIME's washoku category breakdown for 中央区京橋 lists お好み／もんじゃ／たこ焼き as (0) — there is no monjayaki business in the Kyobashi/Yaesu block at all. Tokyo's monja is concentrated a kilometre south-east on Tsukishima's Monja Street, and none of the shops there is called ねぎ八. The only ねぎ八-shaped things the searches surfaced were the dish ネギもんじゃ / 鴨ねぎもんじゃ (a topping, not a shop) and the seasoning ねぎ八味.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide free-word 「ねぎ八」 returns 15 unrelated kaiseki and yakitori shops (character bleed on 八 and 田); 「ねぎ八 東京」 returns 0; 「もんじゃ 八重洲」 returns もんじゃ 八百八 in Osaka and monja houses in Kinshicho, Tsukishima and Honjo-Azumabashi — nothing in Yaesu. Yahoo Japan on もんじゃ＋ねぎ八＋東京 returns only dish pages (鴨ねぎもんじゃ, 釜揚げしらすネギもんじゃ) and Tsukishima round-ups. NAVITIME's 中央区京橋 listing shows zero monjayaki businesses in the area.",
+   "confidence": "low",
+   "sources": [
+    "https://www.navitime.co.jp/category/0305/13102004000/",
+    "https://tabelog.com/osaka/A2705/A270501/27139782/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified and the category does not exist in this block. Anyone wanting monja from Tokyo Station should be sent to Tsukishima, two stops away on the Ōedo line. Recommend this record be deleted or re-sourced."
+  },
+  "sources": [
+   "https://www.navitime.co.jp/category/0305/13102004000/",
+   "https://tabelog.com/osaka/A2705/A270501/27139782/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「ねぎ八」 (HTTP 200) — 15 results, all character bleed (荒木町 光樹, 御料理 ふじ田, たこ八 森地下店 …), no ねぎ八. (2) Tabelog 「ねぎ八 東京」 (HTTP 200) — 0 results. (3) Tabelog 「もんじゃ 八重洲」 (HTTP 200) — 6 results: もんじゃ 八百八 (Osaka), monja houses in Kinshicho / Tsukishima / Honjo-Azumabashi, and a Gong Cha in Gransta Yaesu; no monja shop in Yaesu itself. (4) Yahoo Japan 「もんじゃ ねぎ八 東京」 (HTTP 200) — only dish pages for ネギもんじゃ and Tsukishima guides. (5) Yahoo Japan 「\"ねぎ八\" もんじゃ 東京」 re-run through a second fetch path after the first attempt came back HTTP 429 (rate limit, not a negative) — on the successful retry it returned Instagram posts and a ねぎ八味 seasoning product, and no Tokyo restaurant. (6) NAVITIME category listing for 中央区京橋 (HTTP 200) — お好み／もんじゃ／たこ焼き count is (0) for the whole area. Coordinates unchanged, loc_precise:false. Also note the light record's station, 「都営地下鉄京橋駅」, does not exist — a further sign this row was assembled rather than observed."
+ },
+ {
+  "id": "tokyo3__79",
+  "status": "not_found",
+  "lat": 35.6717,
+  "lng": 139.765,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no sushi restaurant named よし田 operates in Kyobashi; the one よし田 that served sushi in this district has permanently closed",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 京橋 / 銀座線京橋駅.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Three same-named candidates exist in Chuo-ku and none of them matches. (1) よし田, 中央区日本橋3-7-20 大日本インキビルB1F — genre 日本料理・寿司, the closest thing to the record, but Tabelog marks it 閉店 (「このお店は現在閉店しております」); it sat about 600 m north of the record's pin, by Nihonbashi station rather than Kyobashi, and traded 11:15-13:45 / 17:30-22:00, closed weekends. Its ekiten entry is still live but carries no hours, i.e. a stale directory record of the same closed shop. (2) 銀座よし田, 中央区銀座7-5-10 第二一越ビル3階 — open, but 割烹・小料理, not a sushi-ya, and 1.3 km south-west in Ginza 7-chōme. (3) 黢 東京 よし田 — a genuine sushi-ya, but in Hatagaya, Shibuya-ku. Nothing ties any of them to a Kyobashi pin.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide free-word 「黢 よし田」 returns 15 shops — Kurume, Hiroo, Wakayama, Gion, Kameari, Shimura-sakaue — with no Kyobashi entry; 「よし田 中央区」 returns 0. Yahoo Japan on 「よし田\" 黢 寿司 京橋 中央区」 surfaces 銀座よし田 (銀座7-5-10), the closed Nihonbashi よし田, a stale ekiten page for 海鮮寿司割烹 よし田 at the same Nihonbashi address, and 黢 東京 よし田 in Hatagaya. Both the Tabelog and ekiten pages for the Nihonbashi shop were opened directly and read.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130202/13172958/",
+    "https://www.ekiten.jp/shop_32855539/",
+    "https://tabelog.com/tokyo/A1301/A130103/13081748/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "The business could not be identified. The nearest namesake that served sushi in this district, よし田 in Nihonbashi 3-chōme, is permanently closed, so the record should not be shown to anyone as a place to eat. Recommend deletion or re-sourcing."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130202/13172958/",
+   "https://www.ekiten.jp/shop_32855539/",
+   "https://tabelog.com/tokyo/A1301/A130103/13081748/"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「黢 よし田」 (HTTP 200) — 15 shops, the Tokyo ones being 黢よし田 in Hiroo, 松阪牛 よし田 in Hatsudai, やきとん よし田 in Kameari and 季節料理 手打薐麼 よし田 in Shimura-sakaue; none in Kyobashi. (2) Tabelog 「よし田 中央区」 (HTTP 200) — 0 results. (3) Yahoo Japan 「\"よし田\" 黢 寿司 京橋 中央区」 (HTTP 200) — 銀座よし田 (割烹, 銀座7-5-10), a 【閉店】よし田 in Nihonbashi, an ekiten page for 海鮮寿司割烹 よし田 at the same address, and 黢 東京 よし田 in Hatagaya. (4) The Tabelog page for the Nihonbashi よし田 was opened directly (HTTP 200) and states 「このお店は現在閉店しております」, address 中央区日本橋3-7-20 大日本インキビルB1F, genre 日本料理・寿司. (5) NAVITIME washoku listing for 中央区京橋, all 4 pages / 56 businesses (HTTP 200) — no よし田. I have deliberately not filed this as closed_permanently: the closed Nihonbashi よし田 is 600 m from the pin and in the wrong district, and nothing beyond a shared surname ties it to the light record. Coordinates unchanged, loc_precise:false."
+ },
+ {
+  "id": "tokyo3__81",
+  "status": "not_found",
+  "lat": 35.6717,
+  "lng": 139.765,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no ramen shop named 一騎当千 exists in Kyobashi or anywhere in Chuo-ku",
+  "cuisine_type": "other",
+  "neighborhood": "Unverified. The light record says 京橋 / 銀座線京橋駅近.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business itself could not be identified.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business itself could not be identified.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established. Exactly one restaurant in Japan trades under this name — 一騎当千, an abura-soba / Taiwan mazesoba counter 244 m from Nakano-Fujimichō station in Nakano-ku, 7 km west of Kyobashi and on a different line entirely. It is not a Kyobashi ramen-ya and there is no branch. Everywhere else the string turns up, it is being used as language rather than as a name.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog nationwide free-word 「一騎当千」 returns one genuine namesake (一騎当千, 中野富士見町駅 244m, 油そば・まぜそば) followed by fourteen unrelated shops; 「一騎当千 ラーメン」 returns 0. Yahoo Japan on 「らーめん 一騎当千 京橋」 returns Osaka's らーめん 世界一 京橋本店 — the Osaka Kyobashi, a different city. Yahoo Japan on 「\"一騎当千\" らーめん 京橋」 returns no restaurant of that name; the only central-Tokyo occurrence is on a personal blog where the phrase describes the clientele of a Ginza 2-chōme snack bar, and a Kyobashi izakaya's copy that calls its sake 「一騎当千の銘酒」.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/tokyo/A1319/A131903/13268111/",
+    "https://hamada.on.coocan.jp/index_w.htm"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "No such business exists at this location. Recommend the record be deleted rather than re-pinned."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1319/A131903/13268111/",
+   "https://hamada.on.coocan.jp/index_w.htm"
+  ],
+  "enrich_note": "NOT FOUND. Searches run and what each returned: (1) Tabelog nationwide free-word 「一騎当千」 (HTTP 200) — one real namesake, 一騎当千 at Nakano-Fujimichō (油そば・まぜそば, rating 3.05), 7 km from Kyobashi; the other fourteen hits are unrelated. (2) Tabelog 「一騎当千 ラーメン」 (HTTP 200) — 0 results. (3) Yahoo Japan 「らーめん 一騎当千 京橋」 (HTTP 200) — every hit is Osaka's Kyobashi (らーめん 世界一 京橋本店, 麺屋いち山). (4) Yahoo Japan 「\"一騎当千\" らーめん 京橋」 via a second fetch path after an HTTP 429 rate-limit on the first attempt (a refusal to answer, not a negative) — the successful retry returned no restaurant of that name in Tokyo. (5) NAVITIME listing for 中央区京橋, all 4 pages (HTTP 200) — no 一騎当千. GENERIC PHRASE: 一騎当千 is a stock four-character idiom meaning ‘a match for a thousand’, and in Kyobashi it appears only inside other businesses’ prose — a Kyobashi izakaya advertising 「一騎当千の銘酒」 and a blog describing the regulars of a Ginza snack bar — so the likeliest reading is that the sweep lifted a phrase out of ad copy rather than garbling a shop name. Coordinates unchanged, loc_precise:false."
+ }
+]

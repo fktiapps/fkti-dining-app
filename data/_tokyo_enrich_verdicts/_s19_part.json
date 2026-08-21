@@ -1,0 +1,192 @@
+[
+ {
+  "id": "tokyo3__125",
+  "status": "mislocated",
+  "lat": 35.685,
+  "lng": 139.782,
+  "loc_precise": false,
+  "address_ja": "〒761-8078 香川県高松市仏生山町甲3207-2 法然寺境内 — NOT Tokyo. This is the only restaurant called 竜雲 on Tabelog nationwide.",
+  "enrich_confidence": "low",
+  "cuisine": "Sanuki udon house standing inside the precinct of Hōnen-ji temple — its Tabelog genre is literally うどん・ラーメン・つけ麺, the same three words the light record carried — but it is in Busshōzan, Takamatsu, Kagawa, not Ningyōchō",
+  "cuisine_type": "udon",
+  "neighborhood": "COULD NOT VERIFY any Tokyo location. Tabelog files 竜雲 under kagawa/A3701/A370101 (仏生山駅), about 20 minutes by car from Takamatsu station.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "11:00 - 15:00（L.O. 14:30）／定休日：火曜日・金曜日 — these are the Kagawa shop's hours.",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat udon is the entire menu, and the house dipping sauces are sesame-and-white-miso or curry over wheat noodles. No gluten-free claim exists. Not assessed further, because the record's location is wrong — see the note below before using anything here.",
+  "vegan_status": "ask",
+  "vegan_detail": "Nothing published either way. The signature orders reviewers name are ごまだれ牛肉つけうどん (beef) and 和風中華そば, and Sanuki tsuyu is normally iriko/bonito dashi, so an accidental vegan meal should not be assumed. Not assessed further — the record is mislocated.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "Busshōzan, Takamatsu, Kagawa — inside the grounds of Hōnen-ji, the Matsudaira family temple of the Takamatsu domain",
+   "background": "竜雲 opened in December 1991 and seats 40. What makes it locally famous is where it stands: on the temple approach inside Hōnen-ji's precinct, so reviewers describe eating the 竜雲盛り zaru udon and then climbing the temple steps for the view of the five-storey pagoda and the ponds. The house style is a sesame-dare tsuke-udon eaten with a bowl of plain rice on the side. None of this belongs to Tokyo, so it has not been written up as a Tokyo bio.",
+   "philosophy": null,
+   "specialty": "竜雲盛り zaru udon; ごまだれ tsuke-udon (sesame and white miso); curry udon; 和風中華そば.",
+   "anecdotes": [],
+   "japanese_sources_summary": "Tabelog's page for 竜雲 gives 香川県高松市仏生山町甲3207-2 法然寺境内, tel 087-889-1217, 40 seats, an opening date of 1991年12月, hours 11:00–15:00 (L.O. 14:30) and closures on Tuesday and Friday, and the genre string うどん、ラーメン、つけ麺. A nationwide Tabelog keyword search for 竜雲 returns 68 hits, of which this Kagawa shop is the only exact-name restaurant; the nearest Tokyo entries are 龍雲庵 (a kaiseki restaurant at Shin-Ochanomizu, a different name and a different cuisine) and two supermarket entries in Nozawa. No source places a restaurant called 竜雲 in Ningyōchō or anywhere in Chūō-ku.",
+   "confidence": "low",
+   "sources": [
+    "https://tabelog.com/kagawa/A3701/A370101/37001190/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — record is mislocated",
+   "note": "Do not send anyone in Ningyōchō here. The only restaurant called 竜雲 on Tabelog is a temple-precinct udon shop in Takamatsu, Kagawa, roughly 600 km from Nihonbashi. The Tokyo pin has been left at its original approximate coordinates and loc_precise is false; the record should be deleted from the Tokyo dataset."
+  },
+  "sources": [
+   "https://tabelog.com/kagawa/A3701/A370101/37001190/"
+  ],
+  "enrich_note": "MISLOCATED RECORD — recommend deletion from data/tokyo.json. The light record read 「竜雲」, ラーメン・つけ麺, 人形町駅周辺. A nationwide Tabelog keyword search (s.tabelog.com/rstLst/?sk=竜雲, HTTP 200, 68件) returns exactly one restaurant with that name: 竜雲 at 香川県高松市仏生山町甲3207-2 法然寺境内, whose Tabelog genre is うどん、ラーメン、つけ麺 — the same 「ラーメン・つけ麺」 string the sweep recorded, which is what makes the mislocation more likely than a coincidence. Yahoo Japan searches for 竜雲 人形町 ラーメン, 竜雲 ラーメン つけ麺 中央区 日本橋, and 龍雲 人形町 店 (all HTTP 200) returned only unrelated Ningyōchō shops (RYUS Noodle Bar, 中国料理 龍府) and the Kagawa shop; a Yahoo site:hotpepper.jp/r.gnavi.co.jp search returned only 龍雲庵 at Ochanomizu. Coordinates left unchanged and loc_precise:false."
+ },
+ {
+  "id": "tokyo3__126",
+  "status": "confirmed",
+  "name": "山本山 ふじヱ茶房",
+  "lat": 35.681648,
+  "lng": 139.773354,
+  "loc_precise": true,
+  "address_ja": "〒103-6101 東京都中央区日本橋2-5-1 日本橋髙島屋三井ビルディング 1階",
+  "enrich_confidence": "medium",
+  "cuisine": "The tearoom of the 1690 tea-and-nori house Yamamotoyama, on the street where it was founded — gyokuro and sencha brewed cup by cup at the counter (¥1,300–¥2,300 a serving) alongside nori-centred meals: 膳 にほんばし ¥2,800, 膳 海苔鯛茶漬け ¥2,400, 海苔めん ¥1,800, 玉露茶蕎麦 ¥2,300, and the ¥2,200 にほんばし海苔弁当 to take away",
+  "cuisine_type": "teahouse",
+  "neighborhood": "Nihonbashi 2-chōme, street-level in the Nihonbashi Takashimaya Mitsui Building — 1 min (124 m) from Nihonbashi station (Ginza and Tōzai lines, Toei Asakusa line), 5 min from Tokyo station's Yaesu side",
+  "website": "https://fujie.yamamotoyama.co.jp/",
+  "menu_url": "https://fujie.yamamotoyama.co.jp/sabo/",
+  "hours_raw": "物販 10:30～18:00／喫茶 11:00～17:30（L.O.17:00）／お持ち帰り弁当 受付 11:00～17:00・お受取り 18:00まで／手巻き ご提供：火～土 13時～16時半(L.O.16時)／夜ふじヱ ご提供：火～土 18時～21時30分（L.O.21時）・ご予約は2日前より／定休日：不定休（年末年始）",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Not workable. Three of the four savoury lines are wheat noodles — 玉露茶蕎麦 ¥2,300 and 玉露花巻蕎麦 ¥2,300 (green-tea soba, which in Japan is a wheat-cut noodle) and 海苔めん ¥1,800 — and the rest are 茶漬け and 海苔重, i.e. rice under ordinary wheat shōyu and a dashi pour, with 赤だし (miso) served alongside the onigiri. Nori itself is naturally gluten-free but the seasoned のりせんべい and the shop's own tsukudani-style seasonings are not declared. No gluten-free claim appears anywhere on the site or on Tabelog, and no tamari is named.",
+  "vegan_status": "ask",
+  "vegan_detail": "Nothing is published either way, and the meal menu leans animal: 膳 海苔鯛茶漬け is sea bream, 海苔重 comes as 牛すき or 鮭, the お結び set is 梅・鮭 with 赤だし, and any 茶漬け pour will normally be a bonito dashi. Tea is the safe part — the gyokuro, sencha, matcha and hōjicha list is long and plant-based — and 抹茶わらびもち ¥1,200, 抹茶白玉ぜんざい ¥1,000 and 玉露抹茶羊羹 ¥650 are plausible, but the shop does not state their ingredients and 玉露嶺岡とうふ ¥1,600 is a mineoka-dōfu, a preparation traditionally set with milk. Ask before ordering anything but the tea.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "operated by 山本山株式会社 (Yamamotoyama Co., Ltd.), founded 1690"
+   ],
+   "origin": "Nihonbashi, Chūō-ku — the street where Yamamotoyama has traded since 元禄三年 (1690)",
+   "background": "Yamamotoyama's own copy tells the story plainly: the house was founded in 1690 as one of Nihonbashi's tea merchants, and the Meiji-era 茶業通鑑 records that when Nagatani Sōen invented sencha it was 山本嘉兵衛商店 — the firm that became Yamamotoyama — that first sold it. ふじヱ茶房 is the company's return to that founding site, opened as 「次の300年に向かうために、新しい文化を発信する場として」 — a place to carry the culture into the next three hundred years. It is a small room, 25 seats (6 at the counter, 19 at tables), where staff cool the water and brew each serving to order; the first Yamamoto Kahei's line 「おいしいお茶を、こんなにおいしいのだから、多くの人に味わっていただきたい」 is printed at the top of the site. The company's store page lists it as one of six group venues, the others being the kappō-kaiseki 山本山 嘉兵衛, an ochazuke-and-onigiri counter, a wa-café, PEAK S PEAK CAFE and the YMY GYOKURO TEAROOM. No individual chef is named publicly.",
+   "philosophy": "不易流行 — hold the tradition and keep changing. Tea served as an act of hospitality rather than a drink: 「ひと手間を惜しまず、お客様のために尽くすこと。それが江戸の商家としての私たちのおもてなしの心です。」",
+   "specialty": "玉露しふく ¥3,300, a course that walks the same gyokuro through changing brew temperatures with a wagashi; 膳 にほんばし ¥2,800; にほんばし海苔弁当 ¥2,200, sold for consumption within four hours; the 茶菓講 afternoon tea at ¥6,000 (sencha) / ¥8,000 (gyokuro).",
+   "anecdotes": [
+    {
+     "text": "The shop warns that its door is not inside the Takashimaya S.C. — 「※入口は髙島屋S.C内にはございません。路面からのアクセスとなります。」 — you reach it from the street.",
+     "source": "https://fujie.yamamotoyama.co.jp/access/"
+    },
+    {
+     "text": "There is a tea-and-spirits list nobody expects from a 336-year-old tea house: matcha with vodka, sencha with gin, hōjicha with rum, genmaicha with whisky, all ¥1,300–¥1,500, plus a matcha beer.",
+     "source": "https://fujie.yamamotoyama.co.jp/sabo/"
+    },
+    {
+     "text": "A Tabelog regular records buying the ¥2,200 海苔弁当 for the fourth time and notes the price has not moved since his first visit two years earlier.",
+     "source": "https://tabelog.com/tokyo/A1302/A130202/13226924/"
+    }
+   ],
+   "japanese_sources_summary": "fujie.yamamotoyama.co.jp gives the address 〒103-6101 東京都中央区日本橋2-5-1 日本橋髙島屋三井ビルディング1階, the phone 03-3271-3273, the split 物販/喫茶/弁当 hours, the street-entrance warning, the full priced menu and the 1690 founding history. Tabelog 13226924 confirms the same address and phone, 25 seats, 11:00–17:30 (L.O. 17:00) daily with 不定休（年末年始）, a ¥3,000–¥3,999 band and a 3.21 rating over 225 reviews. yamamotoyama.co.jp/store/ lists ふじヱ茶房 and 嘉兵衛 as the group's Nihonbashi venues.",
+   "confidence": "medium",
+   "sources": [
+    "https://fujie.yamamotoyama.co.jp/",
+    "https://fujie.yamamotoyama.co.jp/about/",
+    "https://fujie.yamamotoyama.co.jp/access/",
+    "https://fujie.yamamotoyama.co.jp/sabo/",
+    "https://yamamotoyama.co.jp/store/",
+    "https://tabelog.com/tokyo/A1302/A130202/13226924/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "A 25-seat kitchen that boils wheat noodles (茶蕎麦, 花巻蕎麦, 海苔めん) to order in the same small space as everything else. No wheat-free handling is claimed anywhere.",
+     "source": "https://fujie.yamamotoyama.co.jp/sabo/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "Standard wheat shōyu should be assumed throughout — the 茶漬け, 海苔重 and noodle tsuyu all rest on it, and no tamari or gluten-free seasoning is mentioned on the site or on Tabelog.",
+     "source": "https://fujie.yamamotoyama.co.jp/sabo/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "The savoury menu is fish- and beef-led (鯛茶漬け, 海苔重 牛すき, 海苔重 鮭, お結び 鮭) with 赤だし alongside; dashi content of the 茶漬け pour is not published.",
+     "source": "https://fujie.yamamotoyama.co.jp/sabo/"
+    }
+   ],
+   "staff_allergy_handling": [],
+   "positives": [
+    {
+     "text": "Reservations are taken by a human on 03-3271-3273 — the shop states it does not use auto-reserve — so a dietary question can actually be asked and answered before you arrive.",
+     "source": "https://fujie.yamamotoyama.co.jp/access/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "One minute from Nihonbashi station, but look for the street-level door: the shop states its entrance is not inside the Takashimaya S.C. The site has an English version at fujie.yamamotoyama.co.jp/e/, and in-store and takeaway bookings both run through TableCheck, so you do not need to telephone in Japanese unless you want to ask about ingredients — for that, 03-3271-3273 is answered by staff, and the shop notes the line is often busy. Twenty-five seats and a well-known ¥2,200 nori bentō mean midday queues; the 弁当 is sold for eating within four hours, so it is a lunch to take to a bench, not a souvenir to carry home."
+  },
+  "sources": [
+   "https://fujie.yamamotoyama.co.jp/",
+   "https://fujie.yamamotoyama.co.jp/about/",
+   "https://fujie.yamamotoyama.co.jp/access/",
+   "https://fujie.yamamotoyama.co.jp/sabo/",
+   "https://yamamotoyama.co.jp/store/",
+   "https://tabelog.com/tokyo/A1302/A130202/13226924/",
+   "https://tabelog.com/tokyo/A1302/A130202/13011466/"
+  ],
+  "enrich_note": "NAME CORRECTION. The light record read 「山本山 本店」, 海苔・伝統料理, 日本橋駅周辺. There is no venue trading under that exact name today: Tabelog's two 山本山 日本橋本店 entries are flagged 【移転】 (13011466, old address 日本橋2-5-2) and 【閉店】 (13206787). The Yamamotoyama venue operating on the founding site now is 山本山 ふじヱ茶房 at 日本橋2-5-1, confirmed by the company's own store index and by the shop's own site, and its nori-and-tea menu matches the light record's 海苔・伝統料理 tag. Confidence is 'medium' because that identification is an inference, though a well-supported one; note also that a different, unrelated company — 山本海苔店 — runs its own 日本橋本店 a few hundred metres away at Mitsukoshimae, which is an easy confusion to make with this name. Coordinates are ふじヱ茶房's own, about 900 m from the original approximate pin."
+ },
+ {
+  "id": "tokyo3__128",
+  "status": "not_found",
+  "lat": 35.684,
+  "lng": 139.774,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": null,
+  "cuisine_type": null,
+  "neighborhood": null,
+  "website": null,
+  "menu_url": null,
+  "hours_raw": null,
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be located, so there is nothing to assess.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed — the business could not be located.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": null,
+   "background": null,
+   "philosophy": null,
+   "specialty": null,
+   "anecdotes": [],
+   "japanese_sources_summary": "No source of any kind mentions a business called 江ろ幸, in Nihonbashi or anywhere else.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "N/A — business not located",
+   "note": "Nothing verified. Coordinates left at the original approximate neighbourhood pin and loc_precise is false."
+  },
+  "sources": [],
+  "enrich_note": "NOT FOUND. Searches run, and what each returned: (1) Tabelog nationwide keyword search, s.tabelog.com/rstLst/?sk=江ろ幸 with an iPhone user-agent — HTTP 200, 0件, zero restaurants of that name anywhere in Japan. (2) Yahoo Japan 「site:tabelog.com 江ろ幸 うなぎ」 — HTTP 200, ten results, none of them a shop of that name (Fukuyama and Shiga unagi list pages). (3) Yahoo Japan 「江ろ幸 日本橋」 — HTTP 200, eight results, all unrelated (a Yokohama sushi site, a SUUMO rental listing, Instagram reels). (4) Yahoo Japan exact-phrase 「\"江ろ幸\"」 — HTTP 200, two results, both 5ch mirror junk. (5) Yahoo Japan 「site:hitosara.com OR site:r.gnavi.co.jp 江ろ幸」 — HTTP 200, results were an Aomori restaurant, no match. (6) Testing a possible garbling, Yahoo Japan 「江戸幸 うなぎ 日本橋」 and 「site:tabelog.com 日本橋 うなぎ 老舗 江」 — HTTP 200, both returned うなぎ割烹 大江戸 (新日本橋, tabelog 13000314) and いづもや, neither of which is a plausible reading of 江ろ幸. (7) A follow-up Yahoo leg 「うなぎ 江ろ幸 東京」 was re-run twice and came back HTTP 429 both times (rate-limited, not a negative), so it is not counted as evidence either way; the Tabelog 0件 result is the load-bearing one. No unagi shop called 江ろ幸 could be placed in Nihonbashi or anywhere in Japan. Coordinates left unchanged, loc_precise:false."
+ }
+]

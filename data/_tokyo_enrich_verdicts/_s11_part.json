@@ -555,5 +555,101 @@
    "https://tokyo-station-guide.com/tokyo/rokurinsha/"
   ],
   "enrich_note": "CONFIRMED. The light record's 六厘舎 / 丸の内・東京駅 / つけ麺 is right on every count; what it lacked was the branch and the address. 六厘舎 has five Tokyo locations (Ōsaki, Tokyo Station, Skytree Solamachi, Haneda, Ueno), and the one at this pin is 六厘舎 東京ラーメンストリート店 at 千代田区丸の内1-9-1, Tokyo Station Ichibangai B1 — verified against the operator's own store locator, the Tokyo Station Ichibangai shop page and Tabelog 13093047, all of which agree on the address, the phone number (03-3286-0166) and the two daily service periods. The name field has been made branch-specific for that reason; this is a disambiguation, not a name correction. Coordinates moved from the neighbourhood centroid to the Tokyo Ramen Street food court itself (OpenStreetMap node 4646514992, 35.68038 / 139.76788); loc_precise is now true. GF is a hard no — thick wheat noodles are the dish. The brand's allergen PDF was fetched successfully but is unreadable as text, so nothing is asserted from it."
+ },
+ {
+  "id": "tokyo3__447",
+  "status": "not_found",
+  "lat": 35.6717,
+  "lng": 139.765,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — no restaurant called 象本店 exists in Shimbashi, in Minato-ku, or anywhere in Japan",
+  "cuisine_type": "yakitori",
+  "neighborhood": "Unverified. The light record says 港区新橋 / Shimbashi and Hibiya, but the pin at 35.6717 / 139.765 sits about 600 m north of Shimbashi Station, closer to Hibiya and Uchisaiwaichō than to the Shimbashi yakitori alleys the record describes.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — the business could not be found, and the light record's 'ask' is unsourced. Recorded for the file: at a yakitori house the tare is wheat soy sauce plus mirin and is brushed on and re-dipped from a communal pot, so tare skewers are never gluten-free; salt-only (塩) skewers are the usual workaround, but the grill and the tongs are shared and most Shimbashi yakitori counters also run a fryer.",
+  "vegan_status": "no",
+  "vegan_detail": "Not assessed. A yakitori house is a no by definition; the light record's 'no' is carried forward rather than evidenced.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "Could not be established, because 象本店 is not the name of any restaurant in Japan. Tabelog's nationwide free-word search for 象本店 returns only fuzzy matches on the 本店 half — 源蔵本店 (Hiroshima), 半蔵 本店 (Kanagawa), 大名酒蔵 本店 (Osaka), とりぞう 本店 (Ōita, a yakitori shop and the only nationwide hit whose name even reads ぞう) — and nothing called 象本店. Gnavi's nationwide free-word search returns exactly two results for the string, 象印食堂 大阪本店 and 象の耳 用賀本店, neither of them a yakitori house and neither in Shimbashi. Tabelog's own yakitori list for the 新橋・汐留 area was then read in full — all 233 shops across twelve pages — and not one carries 象 in its name; the only 象 in Shimbashi's restaurant scene is タイ料理バル タイ象 at 港区新橋3-17-5 グランフォークス新橋ビル2F, a Thai bar that opened in April 2017, which is neither yakitori nor 老舗. Worth flagging for whoever picks this up: in the Yahoo index the string 象本店 shows up as a mangling of 総本店 — Tabelog review text rendering 麻布十番の浪花家総本店 as 「浪花 象本店」, and a shop sign for 中華料理 大和 総本店 transcribed as 「大和 象本店」. If the same corruption produced this record, the light name is a truncated 「〜総本店」 with the actual shop name lost, which would make it unidentifiable rather than merely missing. Real Shimbashi shops that would fit the description are easy to find and are all differently named: 鶏繁 総本店 (204 m from Shimbashi Station, with 鶏繁 総本店となり and 鶏繁厨房 alongside it), 鳥割烹 古今亭 (193 m, whose own Gnavi listing dates it to 創業明治27年 — 1894), 伊勢廣 第一ホテル東京店, 鳥ぎん 新橋店 and 三政. None of them is 象本店 and none should be merged into this record without fresh evidence.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Six legs actually ran and returned HTTP 200, all negative. (1) Yahoo Japan exact-phrase \"象本店\" 焼き鳥 新橋 — Yahoo reports 「順番も含め完全に一致するウェブページは見つかりませんでした」 and falls back to unrelated Shimbashi yakitori and to タイ象. (2) Yahoo Japan exact-phrase \"象本店\" on its own — about 1,140 results, none a restaurant: bank and utility notices where 対象 wraps onto 本店, a Kamakura taiyaki review mangling 浪花家総本店, and a shop-sign transcription of 大和 総本店. (3) Yahoo Japan site:tabelog.com 象 新橋 焼き鳥 本店 — returns 鶏調べ, 焼鳥 漆, タイ料理バル タイ象 and 和み屋 新橋本店; no 象本店. (4) Tabelog nationwide free-word search for 象本店. (5) Tabelog nationwide free-word searches for 象 焼き鳥 and for ぞう 新橋 — the latter returns ねぎま 三ぞう 新橋店 and 立ちのみ 新橋以蔵, neither a 老舗 nor named 象. (6) Gnavi nationwide free-word search for 象本店 (2 hits, both irrelevant), plus a complete read of Tabelog's 新橋・汐留 yakitori area list A1301/A130103, 233 shops over twelve pages. Two further Yahoo legs (新橋 焼き鳥 老舗 創業 and 象 新橋 焼鳥 店) came back HTTP 429 — Yahoo declining to answer, not answering 'no' — and were retried and still 429'd; they are counted neither way. The WebSearch tool was unavailable as a cross-check because the session's search budget was already exhausted.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "Business could not be found, so nothing can honestly be said. If a human wants a real 老舗 chicken option at this pin, 鳥割烹 古今亭 (Shimbashi, founded 1894 per its own Gnavi listing) and 鶏繁 総本店 are both within about 200 m of Shimbashi Station — but they are different businesses and would need their own records, not this one."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1301/A130103/rstLst/yakitori/",
+   "https://r.gnavi.co.jp/area/jp/rs/?fw=%E8%B1%A1%E6%9C%AC%E5%BA%97"
+  ],
+  "enrich_note": "NOT FOUND. 象本店 is not the name of any restaurant in Japan. Six legs ran and returned HTTP 200, all negative: Yahoo Japan exact-phrase \"象本店\" 焼き鳥 新橋 (Yahoo states outright that no exact match exists); Yahoo Japan exact-phrase \"象本店\" alone (~1,140 results, not one a business — the string occurs as 対象／本店 line breaks in bank notices and as manglings of 総本店); Yahoo Japan site:tabelog.com 象 新橋 焼き鳥 本店; Tabelog's nationwide free-word search for 象本店, for 象 焼き鳥 and for ぞう 新橋; Gnavi's nationwide free-word search for 象本店 (2 hits: 象印食堂 大阪本店, 象の耳 用賀本店); and a complete read of Tabelog's 新橋・汐留 yakitori area list — all 233 shops, twelve pages, no 象. Two additional Yahoo legs returned HTTP 429, were retried, 429'd again, and are counted neither way; WebSearch was unavailable (session budget exhausted). Likely explanation, flagged not asserted: 象本店 appears in the Yahoo index only as a corruption of 総本店, so this record may be a truncated 「〜総本店」 with the shop name lost. Coordinates unchanged, loc_precise:false. Candidate for deletion."
+ },
+ {
+  "id": "tokyo3__453",
+  "status": "not_found",
+  "lat": 35.666,
+  "lng": 139.758,
+  "loc_precise": false,
+  "address_ja": null,
+  "enrich_confidence": "low",
+  "cuisine": "COULD NOT VERIFY — 「新橋 蕎麦」 is a district plus a genre, not the name of a business, and no shop trades under it",
+  "cuisine_type": "udon_soba",
+  "neighborhood": "The pin at 35.666 / 139.758 is essentially Shimbashi Station itself (JR Yamanote/Keihin-Tōhoku/Tōkaidō, Ginza and Asakusa lines, Yurikamome), so the area is right even though the business is not identifiable.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "",
+  "hours_status": "irregular",
+  "gf_confidence": "ask",
+  "gf_detail": "Not assessed — there is no business to assess. Recorded for the file, because this record will read as a generic invitation to eat soba in Shimbashi: Japanese soba is not a gluten-free food. Standard nihachi noodles are 20 percent wheat flour, even 十割 noodles are rolled on a board dusted with 打ち粉 wheat flour, the tsuyu is wheat soy sauce, and every standing counter in Shimbashi boils soba and udon in the same water and runs a tempura fryer all service.",
+  "vegan_status": "ask",
+  "vegan_detail": "Not assessed. The light record's 'limited' was inferred from the word 蕎麦; soba tsuyu is bonito dashi by default, so even a plain kake soba is normally not vegan.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [],
+   "origin": "",
+   "background": "None written, because there is no business here to write about. The record's name is a place name plus a food category — the shape the 3-mile sweep emits when it is describing a neighbourhood's cuisine rather than naming a shop. The pattern district+蕎麦 does occasionally produce genuine shop names (池尻蕎麦 at 世田谷区池尻3-2-3 is a real standing-soba counter, which is why the possibility was checked rather than assumed away), but nothing called 新橋蕎麦 or 新橋そば exists. Shimbashi's actual soba houses are numerous and all named otherwise: 本陣房 本店 (127 m from the station) and 本陣房 新橋店, おくとね (120 m, standing), 蕎麦 さだはる, 芝新橋 おそば 能登治, そば処 かめや 新橋店, 虎徹, 寿毛平, 健康美食 健美, 伍法, 十十六, 十割蕎麦 さがたに 新橋銀座口店, 手打ちそば 竹泉, 丹波屋, 千歳庵, 布袋家, いっ星, うさぎや and the chains 小諸そば, ゆで太郎, 名代 富士そば, 吉そば, かのや 新橋駅構内店 and なぜ蕎麦にラー油を入れるのか。新橋店.",
+   "philosophy": "",
+   "specialty": "",
+   "anecdotes": [],
+   "japanese_sources_summary": "Four legs, all HTTP 200, all negative. (1) Yahoo Japan exact-phrase \"新橋蕎麦\" 店 — about 3,720 results and every one of them uses the string descriptively (a Retty reviewer writing 「新橋蕎麦 老舗」 about 芝新橋 おそば 能登治, a hashtag on a Kubo-yū review of かめや 新橋店, blog round-ups of Shimbashi soba); no business bears the name. (2) Tabelog nationwide free-word search for 新橋蕎麦 — returns 新路そば in Kobe and then the real Shimbashi shops 健康美食 健美, 虎徹, 本陣房 本店 and 新橋店, 寿毛平, おくとね, 能登治, 蕎麦 さだはる, 小諸そば 新橋店 and なぜ蕎麦にラー油を入れるのか。新橋店; nothing named 新橋蕎麦. (3) Tabelog nationwide free-word search for 新橋そば — returns 新山そば, 新垣そば, 新来そば (all Okinawa), 新和そば (Shinjuku), 高橋そば, 峠そば, 笠置そば and again the real Shimbashi shops; no 新橋そば. (4) Gnavi nationwide free-word search for 新橋蕎麦 — 30 hits, every one a real, differently-named Shimbashi restaurant. Backing all of that, Tabelog's 新橋・汐留 soba area list A1301/A130103 was read in full, 75 shops, with no 新橋蕎麦 among them. Method note: Tabelog's short-form endpoint /rstLst/?sk= ignores the keyword and returns a generic promoted-listing page, so it was not treated as a negative; the working search URL is the one /rst/rstsearch/ 302-redirects to.",
+   "confidence": "low",
+   "sources": []
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Unknown",
+   "note": "There is no business to describe. Recommend deletion: unlike the other misses in this shard, this record does not appear to be a garbled shop name at all — it is a category label, so there is nothing for a human to re-identify. If the pin is worth keeping, it should be re-cut as a real shop: 本陣房 本店 and おくとね are both within about 130 m of Shimbashi Station."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1301/A130103/rstLst/soba/",
+   "https://r.gnavi.co.jp/area/jp/rs/?fw=%E6%96%B0%E6%A9%8B%E8%95%8E%E9%BA%A6"
+  ],
+  "enrich_note": "NOT FOUND — and specifically, not a shop name. 「新橋 蕎麦」 is a district plus a genre. Four legs ran and returned HTTP 200, all negative: Yahoo Japan exact-phrase \"新橋蕎麦\" 店 (every hit uses the string descriptively — a Retty review of 芝新橋 おそば 能登治, a hashtag on かめや 新橋店, Shimbashi soba round-ups); Tabelog's nationwide free-word search for 新橋蕎麦 and again for 新橋そば, both of which return only real, differently-named shops; and Gnavi's nationwide free-word search for 新橋蕎麦, 30 hits, none bearing the name. Tabelog's 新橋・汐留 soba area list A130103 was also read in full — 75 shops, no 新橋蕎麦. The pin itself is accurate for Shimbashi Station, so the record is a genre label attached to a station centroid rather than a garbled business. Coordinates unchanged, loc_precise:false. Recommend deletion rather than re-identification — there is no name here to correct."
  }
 ]

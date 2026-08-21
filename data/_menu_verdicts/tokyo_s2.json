@@ -1,0 +1,555 @@
+{
+ "tokyo_et_vous": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.et-vous.net/lunch.html",
+   "https://www.et-vous.net/dinner.html",
+   "https://www.et-vous.net/"
+  ],
+  "price_note": "Prices approximate — may change. Course prices are from the shop's own lunch/dinner pages and are stated 税別 (BEFORE 10% tax); add ~10% at the till. Checked 2026-08-20. Dish compositions are the shop's own 一例 (sample line-up) — the actual plates change with the season.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "ランチコース「Casual」",
+    "romaji": "lunch course Casual",
+    "en": "Casual lunch course — hors d'oeuvre, then either potage or pasta, then a main you choose from the prix-fixe list",
+    "price": "¥2,500",
+    "section": "ランチコース Lunch courses (11:30–14:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. Prix-fixe: you pick the main. The pasta option and the bread are wheat; French sauces here are flour-thickened. Say 小麦アレルギー when booking.",
+    "dish_key": "lunch_course_casual"
+   },
+   {
+    "ja": "ランチコース「Light」",
+    "romaji": "lunch course Light",
+    "en": "Light lunch course — hors d'oeuvre, fish of the day, a main of your choice, dessert",
+    "price": "¥4,000",
+    "section": "ランチコース Lunch courses (11:30–14:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. Fish and meat throughout; French sauces normally contain flour and butter.",
+    "dish_key": "lunch_course_light"
+   },
+   {
+    "ja": "ランチコース「Special」",
+    "romaji": "lunch course Special",
+    "en": "Special lunch course — amuse, hors d'oeuvre, potage, fish, a main of your choice, dessert",
+    "price": "¥6,000",
+    "section": "ランチコース Lunch courses (11:30–14:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. The published sample hors d'oeuvre plate explicitly names セモリナ小麦 (durum semolina) and クスクス (couscous) — both wheat.",
+    "dish_key": "lunch_course_special"
+   },
+   {
+    "ja": "大切な方との特別な日のコース",
+    "romaji": "taisetsu na kata to no tokubetsu na hi no course",
+    "en": "Special-occasion course (birthdays, anniversaries) — amuse, hors d'oeuvre, warm starter, fish of the day, meat, dessert, coffee or tea, petits fours",
+    "price": "¥8,000",
+    "section": "ランチコース Lunch courses (11:30–14:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. プティフール (petits fours) are baked wheat sweets.",
+    "dish_key": "lunch_course_anniversary"
+   },
+   {
+    "ja": "コーヒー紅茶セット",
+    "romaji": "kohii koucha setto",
+    "en": "Today's dessert with coffee or tea (lunch add-on)",
+    "price": "¥700",
+    "section": "ランチコース Lunch courses (11:30–14:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. Dessert changes daily; the shop's sample is クレームダンジュ (crémet d'Anjou — whipped fresh cheese), so dairy at minimum.",
+    "dish_key": "dessert_coffee_set"
+   },
+   {
+    "ja": "ディナーコース「Light」",
+    "romaji": "dinner course Light",
+    "en": "Light dinner course — hors d'oeuvre, fish of the day, a meat main of your choice, dessert, coffee or tea",
+    "price": "¥4,000",
+    "section": "ディナーコース Dinner courses (18:00–21:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. All dinner courses are prix-fixe on the meat.",
+    "dish_key": "dinner_course_light"
+   },
+   {
+    "ja": "ディナーコース「Standard」",
+    "romaji": "dinner course Standard",
+    "en": "Standard dinner course — amuse, hors d'oeuvre, potage, fish of the day, meat main of your choice, dessert, coffee or tea",
+    "price": "¥6,000",
+    "section": "ディナーコース Dinner courses (18:00–21:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別. Some mains carry a supplement — see the meat list below.",
+    "dish_key": "dinner_course_standard"
+   },
+   {
+    "ja": "ディナーコース「Special」",
+    "romaji": "dinner course Special",
+    "en": "Special dinner course — amuse, hors d'oeuvre, warm starter, fish of the day, meat main, dessert, coffee or tea, petits fours",
+    "price": "¥8,000",
+    "section": "ディナーコース Dinner courses (18:00–21:00 L.O.)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "税別.",
+    "dish_key": "dinner_course_special"
+   },
+   {
+    "ja": "EDO Cuisine コース",
+    "romaji": "EDO Cuisine course",
+    "en": "EDO Cuisine course — the chef's Edo-Tokyo-meets-France menu: hors d'oeuvre, warm starter, fish of the day, meat, dessert, coffee or tea, petits fours. Signatures include 江戸前ぬた (fish and greens in vinegared miso) and steak glazed with 江戸甘味噌 sweet Edo miso",
+    "price": "¥15,000",
+    "section": "ディナーコース Dinner courses (18:00–21:00 L.O.)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "税別. 江戸甘味噌 and ぬた are miso preparations whose grain base is not declared, and the glazes use soy. Treat as wheat-containing.",
+    "dish_key": "edo_cuisine_course"
+   },
+   {
+    "ja": "旨味たっぷり地鶏もも肉のロティ エシャロットソース",
+    "romaji": "jidori momoniku no roti, échalote sauce",
+    "en": "Roast free-range chicken thigh with shallot sauce — a no-supplement main choice",
+    "price": "コース内 (no supplement)",
+    "section": "■メイン Prix-fixe main choices",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Roast chicken is naturally wheat-free but the shallot pan sauce is a classic reduction; ask whether flour or soy goes in.",
+    "dish_key": "roast_chicken_thigh"
+   },
+   {
+    "ja": "特選豚ロース肉のロースト 万久さんの味噌風味",
+    "romaji": "tokusen buta rosu no roast, Mankyu-san no miso fumi",
+    "en": "Roast selected pork loin finished with Mankyu's miso — a no-supplement main choice",
+    "price": "コース内 (no supplement)",
+    "section": "■メイン Prix-fixe main choices",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Miso finish with the grain base undeclared, and glazes of this kind normally carry soy sauce. Treat as wheat.",
+    "dish_key": "roast_pork_loin"
+   },
+   {
+    "ja": "特選牛肉のステーキ",
+    "romaji": "tokusen gyuniku no steak",
+    "en": "Selected beef steak — a no-supplement main choice",
+    "price": "コース内 (no supplement)",
+    "section": "■メイン Prix-fixe main choices",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain grilled beef; the sauce is the risk. The EDO Cuisine version is glazed with 江戸甘味噌.",
+    "dish_key": "beef_steak"
+   },
+   {
+    "ja": "仔羊のロースト 香味風味",
+    "romaji": "kohitsuji no roast, koumi fumi",
+    "en": "Roast lamb with aromatics, seasonal vegetables and shallot sauce",
+    "price": "コース内 (no supplement)",
+    "section": "■メイン Prix-fixe main choices",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Ask about the crust — French roast lamb is very often finished with a breadcrumb-herb crust.",
+    "dish_key": "roast_lamb"
+   },
+   {
+    "ja": "トロトロ和牛ほほ肉の赤ワイン煮込み",
+    "romaji": "wagyu hohoniku no akawain nikomi",
+    "en": "Wagyu beef cheek braised in red wine until it collapses",
+    "price": "+¥500 (Standard) / コース内 (Special)",
+    "section": "■メイン Prix-fixe main choices",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A red-wine braise is thickened with roux or a flour-dusted sear in nearly every French kitchen; assume wheat unless the chef says otherwise.",
+    "dish_key": "wagyu_cheek_red_wine"
+   },
+   {
+    "ja": "特選和牛肉のロースト／グリエ",
+    "romaji": "tokusen wagyu no roast / grillé",
+    "en": "Roast or grilled selected wagyu — the top main choice",
+    "price": "+¥1,000 (Standard) / +¥500 (Special)",
+    "section": "■メイン Prix-fixe main choices",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop states the supplement differs by course.",
+    "dish_key": "wagyu_roast"
+   },
+   {
+    "ja": "北海道産メークインとセモリナ小麦・ワイルドライスのクリームグラタン",
+    "romaji": "Hokkaido May Queen to semorina komugi, wild rice no cream gratin",
+    "en": "Cream gratin of Hokkaido May Queen potato, semolina wheat and wild rice — a published sample hors d'oeuvre",
+    "price": "コース内 (part of the course)",
+    "section": "オードブル Hors d'oeuvre (sample)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop's own text names セモリナ小麦 — durum wheat semolina. Explicit wheat, plus dairy cream.",
+    "dish_key": "semolina_wild_rice_gratin"
+   },
+   {
+    "ja": "ひよこ豆とクスクスのタブレ",
+    "romaji": "hiyokomame to couscous no taboulé",
+    "en": "Chickpea and couscous taboulé — a published sample hors d'oeuvre",
+    "price": "コース内 (part of the course)",
+    "section": "オードブル Hors d'oeuvre (sample)",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "クスクス is durum wheat. Otherwise plant-based; ask about the dressing.",
+    "dish_key": "chickpea_couscous_tabouleh"
+   },
+   {
+    "ja": "小松菜とほうれん草のスムージー",
+    "romaji": "komatsuna to hourensou no smoothie",
+    "en": "Komatsuna and spinach smoothie — a published sample hors d'oeuvre item",
+    "price": "コース内 (part of the course)",
+    "section": "オードブル Hors d'oeuvre (sample)",
+    "gf": "",
+    "vegan": "ask",
+    "note": "Greens as listed, but the shop does not say whether dairy or honey goes in. Ask.",
+    "dish_key": "green_smoothie"
+   },
+   {
+    "ja": "自家製スモークサーモンとギリシャ風ピクルス〜白胡麻と豆腐のソース",
+    "romaji": "jikasei smoked salmon to Girisha-fu pickles, shirogoma to tofu no sauce",
+    "en": "House-smoked salmon with Greek-style pickles in a white-sesame-and-tofu sauce — a published sample dinner hors d'oeuvre",
+    "price": "コース内 (part of the course)",
+    "section": "オードブル Hors d'oeuvre (sample)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The sauce is tofu and sesame rather than dairy — worth knowing if you avoid milk — but the cure and pickle liquor may carry soy sauce. Fish, so not vegan.",
+    "dish_key": "smoked_salmon_tofu_sesame"
+   },
+   {
+    "ja": "クロダイと北海道産ホタテのポワレ 菜花のソース",
+    "romaji": "kurodai to Hokkaido hotate no poêlé, nanohana no sauce",
+    "en": "Pan-seared black sea bream and Hokkaido scallop with oven-roasted hakusai and maitake, rape-blossom sauce — a published sample fish course",
+    "price": "コース内 (part of the course)",
+    "section": "魚料理 Fish course (sample)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Poêlé fish is frequently floured before searing. Ask.",
+    "dish_key": "seared_bream_scallop"
+   },
+   {
+    "ja": "クレームダンジュ〜ココナッツソース",
+    "romaji": "crémet d'Anjou, coconut sauce",
+    "en": "Crémet d'Anjou — whipped fresh cheese and cream — with coconut sauce; a published sample dessert",
+    "price": "コース内 (part of the course)",
+    "section": "デザート Dessert (sample)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fresh cheese and cream. Often plated on a biscuit or with a tuile — ask for it without.",
+    "dish_key": "cremet_danjou"
+   },
+   {
+    "ja": "チョコレートのムース、赤葡萄のシャーベット〜木苺のソース仕立て",
+    "romaji": "chocolate mousse, akabudou no sherbet, kiichigo sauce",
+    "en": "Chocolate mousse with red-grape sorbet and raspberry sauce — a published sample dinner dessert",
+    "price": "コース内 (part of the course)",
+    "section": "デザート Dessert (sample)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mousse is egg- and cream-based.",
+    "dish_key": "chocolate_mousse"
+   }
+  ]
+ },
+ "tokyo_sukemasa_coffee": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://sukemasa.tokyo/",
+   "https://tabelog.com/tokyo/A1311/A131102/13225491/"
+  ],
+  "price_note": "Prices approximate — may change. From the shop's own MENU block at sukemasa.tokyo, marked in TAX (税込). Confidence is medium rather than high because the same page still carries a 緊急事態宣言 shortened-hours notice, so the list has not been revised in some years — expect the fruit sandwich in particular to have moved upward.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "エスプレッソ",
+    "romaji": "espresso",
+    "en": "Espresso",
+    "price": "¥400",
+    "section": "COFFEE",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Ground coffee and water, nothing else — no wheat ingredient and no animal product. The safe order at this counter.",
+    "dish_key": "espresso"
+   },
+   {
+    "ja": "ラテ HOT/COLD",
+    "romaji": "latte",
+    "en": "Caffè latte, hot or iced — the shop's headline drink",
+    "price": "¥600",
+    "section": "COFFEE",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Espresso and dairy milk only; no wheat ingredient in either. Not vegan, and no plant-milk option appears on the shop's own list.",
+    "dish_key": "cafe_latte"
+   },
+   {
+    "ja": "アメリカーノ HOT/COLD",
+    "romaji": "americano",
+    "en": "Americano, hot or iced",
+    "price": "¥600",
+    "section": "COFFEE",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Espresso plus hot water only.",
+    "dish_key": "americano"
+   },
+   {
+    "ja": "マキアート HOT",
+    "romaji": "macchiato",
+    "en": "Macchiato (hot only) — espresso marked with a spoon of milk foam",
+    "price": "¥500",
+    "section": "COFFEE",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Coffee and a little dairy foam; no wheat ingredient.",
+    "dish_key": "macchiato"
+   },
+   {
+    "ja": "カフェモカ HOT/COLD",
+    "romaji": "cafe mocha",
+    "en": "Café mocha, hot or iced",
+    "price": "¥700",
+    "section": "COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The chocolate sauce is bought in and its maker is not stated; barley malt and wheat-derived thickeners turn up in these syrups. Ask.",
+    "dish_key": "cafe_mocha"
+   },
+   {
+    "ja": "ブリュレラテ HOT/COLD",
+    "romaji": "brûlée latte",
+    "en": "Brûlée latte — a latte with a torched caramelised sugar crust, hot or iced",
+    "price": "¥700",
+    "section": "COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Caramelised sugar over dairy; ask what else is under the crust.",
+    "dish_key": "brulee_latte"
+   },
+   {
+    "ja": "カルピスラテ COLD",
+    "romaji": "Calpis latte",
+    "en": "Calpis latte, iced — Japan's cultured-milk cordial shaken with milk",
+    "price": "¥700",
+    "section": "COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Calpis is a fermented-milk concentrate, so dairy. Ask about the base if you are strict on gluten.",
+    "dish_key": "calpis_latte"
+   },
+   {
+    "ja": "ココア HOT/COLD",
+    "romaji": "cocoa",
+    "en": "Cocoa, hot or iced",
+    "price": "¥500",
+    "section": "DRINK",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cocoa mix plus milk; the mix's allergen list is not published.",
+    "dish_key": "cocoa"
+   },
+   {
+    "ja": "リンゴジュース",
+    "romaji": "ringo juusu",
+    "en": "Apple juice",
+    "price": "¥500",
+    "section": "DRINK",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "Bottled juice; brand not stated.",
+    "dish_key": "apple_juice"
+   },
+   {
+    "ja": "オレンジジュース",
+    "romaji": "orenji juusu",
+    "en": "Orange juice",
+    "price": "¥500",
+    "section": "DRINK",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "orange_juice"
+   },
+   {
+    "ja": "ジンジャーエール",
+    "romaji": "jinjaa eeru",
+    "en": "Ginger ale",
+    "price": "¥500",
+    "section": "DRINK",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "ginger_ale"
+   },
+   {
+    "ja": "コーラ",
+    "romaji": "koora",
+    "en": "Cola",
+    "price": "¥500",
+    "section": "DRINK",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "cola"
+   },
+   {
+    "ja": "ハニーレモネード HOT/COLD",
+    "romaji": "honey lemonade",
+    "en": "Honey lemonade, hot or iced",
+    "price": "¥600",
+    "section": "DRINK",
+    "gf": "",
+    "vegan": "no",
+    "note": "Honey — excluded by most vegans.",
+    "dish_key": "honey_lemonade"
+   },
+   {
+    "ja": "ハチミツレモンスカッシュ",
+    "romaji": "hachimitsu lemon squash",
+    "en": "Sparkling honey-lemon squash",
+    "price": "¥600",
+    "section": "DRINK",
+    "gf": "",
+    "vegan": "no",
+    "note": "Honey.",
+    "dish_key": "honey_lemon_squash"
+   },
+   {
+    "ja": "チャイ HOT/COLD",
+    "romaji": "chai",
+    "en": "Chai, hot or iced",
+    "price": "¥600",
+    "section": "DRINK",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk-brewed spiced tea. Ask whether a pre-mixed chai base is used.",
+    "dish_key": "chai"
+   },
+   {
+    "ja": "抹茶ラテ HOT/COLD",
+    "romaji": "matcha latte",
+    "en": "Matcha latte, hot or iced",
+    "price": "¥600",
+    "section": "DRINK",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Café matcha is usually a pre-sweetened blend of undeclared composition; dairy milk.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "ビール その他",
+    "romaji": "biiru, sonota",
+    "en": "Beer and other alcohol",
+    "price": "¥600〜",
+    "section": "ALCOHOL",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Beer is malted barley — never gluten-free.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "季節のフルーツサンド",
+    "romaji": "kisetsu no furuutsu sando",
+    "en": "Seasonal fruit sandwich — the shop's signature: whipped cream and cut seasonal fruit between crustless white shokupan",
+    "price": "¥1,000〜",
+    "section": "FOOD",
+    "gf": "no",
+    "vegan": "no",
+    "note": "食パン is wheat bread and the filling is dairy cream. This is what the queue is for, and it is emphatically not gluten-free.",
+    "dish_key": "fruit_sandwich"
+   },
+   {
+    "ja": "季節のトースト",
+    "romaji": "kisetsu no toast",
+    "en": "Seasonal toast",
+    "price": "¥600〜",
+    "section": "FOOD",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Wheat bread.",
+    "dish_key": "seasonal_toast"
+   },
+   {
+    "ja": "バナナロール",
+    "romaji": "banana roll",
+    "en": "Banana roll — a whole banana rolled in sponge with cream",
+    "price": "¥900",
+    "section": "FOOD",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sponge is wheat flour and egg; cream is dairy.",
+    "dish_key": "banana_roll"
+   },
+   {
+    "ja": "クッキー",
+    "romaji": "kukkii",
+    "en": "Cookie",
+    "price": "¥300",
+    "section": "SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat flour and butter.",
+    "dish_key": "cookie"
+   },
+   {
+    "ja": "スコーン",
+    "romaji": "sukoon",
+    "en": "Scone",
+    "price": "¥300",
+    "section": "SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat flour, butter, milk.",
+    "dish_key": "scone"
+   },
+   {
+    "ja": "プリン",
+    "romaji": "purin",
+    "en": "Custard pudding",
+    "price": "¥600",
+    "section": "SWEETS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg, milk and sugar — usually no wheat in the custard itself, but a garnish biscuit is common. Ask for it plain.",
+    "dish_key": "purin"
+   },
+   {
+    "ja": "アフォガート",
+    "romaji": "affogato",
+    "en": "Affogato — espresso poured over ice cream",
+    "price": "¥600",
+    "section": "SWEETS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy ice cream; ask whether a wafer comes with it.",
+    "dish_key": "affogato"
+   },
+   {
+    "ja": "きまぐれスイーツ",
+    "romaji": "kimagure sweets",
+    "en": "Chef's-whim sweet — whatever has been made that day",
+    "price": "¥600〜",
+    "section": "SWEETS",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Changes daily; you have to ask on the day.",
+    "dish_key": "daily_sweet"
+   },
+   {
+    "ja": "food or sweets set",
+    "romaji": "food or sweets set",
+    "en": "Set discount — order any food or sweet with a drink and the drink is ¥100 less",
+    "price": "−¥100",
+    "section": "セット Set",
+    "gf": "",
+    "vegan": "",
+    "note": "Printed under both the COFFEE and DRINK columns on the shop's menu.",
+    "dish_key": "set_discount"
+   }
+  ]
+ }
+}

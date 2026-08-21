@@ -552,5 +552,268 @@
    "https://prtimes.jp/main/html/rd/p/000000008.000029855.html"
   ],
   "enrich_note": "Confirmed, name unchanged. Yahoo Japan returned Tabelog 13227565 and the group site; s.tabelog.com fetched with an iPhone UA (HTTP 200) gives the address, phone 03-6551-2205, 30 seats, the 2018-10-30 open date and GeoCoordinates 35.68006969871725 / 139.76797347437162, which replace the centroid pin. gyoku.co.jp (HTTP 200) confirms the shop is trading and supplies the per-item allergen data used above; the PR TIMES release of 2018-10-27 (HTTP 200) supplies the founder and the brand history. One display caution: the operator's own site now titles this branch 玉 東京駅店, while Tabelog and the light record use the original 東京煮干し らーめん玉 東京駅店 — both refer to the same counter, and 東京煮干ラーメン玉 is the menu brand. loc_precise set true."
+ },
+ {
+  "id": "tokyo3__18",
+  "name": "俺式 純",
+  "status": "confirmed",
+  "lat": 35.680207,
+  "lng": 139.767904,
+  "loc_precise": true,
+  "address_ja": "〒100-0005 東京都千代田区丸の内1-9-1 東京駅一番街 B1F 東京ラーメンストリート",
+  "enrich_confidence": "high",
+  "cuisine": "Setagaya's tonkotsu shop on Tokyo Ramen Street — pork bones boiled in-house for over 24 hours against a low-hydration thin noodle, with a house chilli-bean rāyu of eighteen ingredients on the counter and a 替玉 refill; morning ramen from 08:00, around ¥1,000–1,999",
+  "cuisine_type": "ramen",
+  "neighborhood": "Marunouchi 1-chōme, Tokyo Ramen Street on the B1 of Tokyo Station Ichibangai — 107 m from Tokyo Station; left out of the Yaesu south gate and down the stairs, or right out of the Yaesu underground central gate",
+  "website": "https://www.setaga-ya.com/store/oreshiki/",
+  "menu_url": "https://www.setaga-ya.com/store/oreshiki/",
+  "hours_raw": "08:00 - 23:00（L.O. 22:30）毎日。定休日：なし。※8:00～10:30は通常メニューの販売は無し。朝ラーメンのみ販売。",
+  "hours_status": "regular",
+  "gf_confidence": "no",
+  "gf_detail": "The shop publishes a proper アレルギー物質使用一覧表 for this branch and it closes the question: every ramen row — ラーメン, チャーシュー麺, デラックスラーメン, やりすぎ煮干しラーメン(DX), 照り焼きチャーシュー麺, 豚郎ラーメン, スタミナつけ麺, 黒マー油ラーメン — carries 小麦, and so does the 替玉 refill. The group's own copy says the noodle is chosen for its flour: 「しなやかで風味豊かな俺式の低加水麺は、小麦粉やブレンドにこだわり」. The chart's own footnotes rule out working around it: 「同一店内で仕込みから調理、提供までを行っております」, 「揚げ物はすべて同じフライヤーで揚げています。その他、調理の過程において商品間・原材料間でのアレルギー物質の偶発的混入の可能性がございます」. The one curiosity is that 半ライス and 明太子ご飯 are printed with no allergen marks at all, but plain rice beside a 24-hour pork broth is not a meal and no separation is claimed. Not workable for celiac.",
+  "vegan_status": "no",
+  "vegan_detail": "The broth is 新鮮な豚骨のみ boiled in the shop for more than 24 hours, the popular variant adds a large charge of dried sardine, and chāshū and egg run through the toppings — the published allergen chart marks 豚肉 on every ramen row. Nothing plant-based is offered and none is claimed.",
+  "chef_bio": {
+   "chef_name": "前島 司 (Tsukasa Maejima)",
+   "roles": [
+    "代表 (president), 株式会社せたが屋 — founded 1 May 2003, Okusawa, Setagaya-ku",
+    "creator of the せたが屋 / ひるがお / 俺式 group of brands"
+   ],
+   "origin": "Setagaya, Tokyo — the company is still registered at Okusawa 5-chōme, Jiyūgaoka",
+   "background": "俺式 is the tonkotsu arm of せたが屋, the Setagaya group Maejima established as a company on 1 May 2003 and has since spread across Japan and overseas, alongside the lighter 中華そば brands ひるがお, 中華そば ふくもり, 極上中華そば 福味, ラーメン家 がんくろ, 中華そば いま瀬 and 食堂はせ川 — several of which also trade inside Tokyo Station's basements, so the group effectively runs both the delicate and the heavy end of the same station. 俺式's own stated method is narrow and specific: fresh pork bones only, boiled in the shop's own kitchen for more than 24 hours until the broth is dense but round rather than sharp; a low-hydration noodle blended for flour character and cut to resist going soft, so the last mouthful eats like the first; and a house-made 特製ラー醤 on every table, a chilli paste built from eighteen ingredients for heat plus texture. The offshoot that made the shop's name is 「やりすぎ煮干しラーメン」 — the same thick pork broth with an excessive quantity of dried sardine thrown in. The Tokyo Station branch opened 20 September 2013 and now opens at 08:00, though the normal menu does not start until 10:30; before that it sells a morning ramen only.",
+   "philosophy": "One stock, done at length, in the shop — 新鮮な豚骨のみを使用し、店内厨房で24時間以上じっくりと炊き出したスープ — and a noodle chosen so it holds to the bottom of the bowl.",
+   "specialty": "とんこつラーメン, やりすぎ煮干しラーメン, 黒マー油ラーメン, スタミナつけ麺, 朝ラーメン, 卓上特製ラー醤.",
+   "anecdotes": [
+    {
+     "text": "The counter condiment is the shop's calling card: 「卓上に置かれた手作り特製ラー醤は、程よい辛味と18種類の食材が織りなす旨味と食感が特徴」.",
+     "source": "https://www.setaga-ya.com/store/oreshiki/"
+    },
+    {
+     "text": "A 2026 Tabelog reviewer arriving at Tokyo Station on a wet Sunday morning describes it as ライトな豚骨、朝食にもアジャストするラーメン — a tonkotsu light enough to work as breakfast, which is what the 08:00 opening is for.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13160396/"
+    },
+    {
+     "text": "Tabelog tags the shop 一人で入りやすい — easy to walk into alone — which for a station tonkotsu counter with 14 counter seats is the whole proposition.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13160396/"
+    }
+   ],
+   "japanese_sources_summary": "setaga-ya.com's 俺式 page gives the Tokyo Station branch's address (東京都千代田区丸の内1-9-1 東京駅一番街 地下一階 ラーメンストリート内), phone 03-3212-2558, 定休日なし, hours 8:00–23:00 (L.O. 22:30) with the note that the normal menu does not start until 10:30, seat breakdown (カウンター14席 / テーブル2人8席), the broth and noodle method and the 18-ingredient rāyu; it also links a per-item allergen table image for this exact branch. The company page gives 株式会社せたが屋, 設立 平成15年5月1日, 代表 前島司, 〒158-0083 東京都世田谷区奥沢5丁目26-3. Tabelog 13160396 adds 予約不可, カード不可 / 交通系電子マネー可 / QR不可, 全席禁煙, 子供可, open date 2013年9月20日 and GeoCoordinates 35.68020681871714 / 139.76790376437305.",
+   "confidence": "high",
+   "sources": [
+    "https://www.setaga-ya.com/store/oreshiki/",
+    "https://www.setaga-ya.com/company/",
+    "https://tabelog.com/tokyo/A1302/A130201/13160396/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "The shop's own allergen sheet states it outright: 「同一店内で仕込みから調理、提供までを行っております」 and 「揚げ物はすべて同じフライヤーで揚げています。その他、調理の過程において商品間・原材料間でのアレルギー物質の偶発的混入の可能性がございます」 — one kitchen, one fryer, incidental transfer acknowledged.",
+     "source": "https://www.setaga-ya.com/struct/wp-content/uploads/allergy_oreshiki_tokyo.jpg"
+    },
+    {
+     "text": "Thirty seats behind one noodle boiler running from 08:00 to 23:00, with a 替玉 noodle refill service that puts more wheat through the same water all day.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13160396/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "大豆 is marked on every ramen row of the allergen chart alongside 小麦; the tare is ordinary soy-based seasoning and no tamari is named. The counter ラー醤 carries the widest allergen set on the sheet, so it is not a safe default addition either.",
+     "source": "https://www.setaga-ya.com/struct/wp-content/uploads/allergy_oreshiki_tokyo.jpg"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "豚肉 is marked on every ramen row; the base is fresh pork bone boiled 24 hours in the shop's own kitchen, with chāshū and egg among the standard toppings.",
+     "source": "https://www.setaga-ya.com/store/oreshiki/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "Genuinely better than the norm for a station ramen counter: the branch publishes a printed per-item アレルギー物質使用一覧表 covering the 8 特定原材料 and the 20 準ずるもの, item by item, and closes it with 「アレルギー物質に対する感受性は、個人により大きな差があります。このデータを参考に、最終的な判断は専門医に相談されることをおすすめします」 — it hands you the data and declines to make the call for you, which is the honest position.",
+     "source": "https://www.setaga-ya.com/struct/wp-content/uploads/allergy_oreshiki_tokyo.jpg"
+    }
+   ],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "About as easy as a Japanese ramen counter gets for a visitor: 107 m inside Tokyo Station's Yaesu basement on Tokyo Ramen Street, ticket machine at the door, 14 counter seats plus four two-tops, all non-smoking, children accepted, and Tabelog's own tag is 一人で入りやすい. No reservations. Cash or transit IC only — no credit cards, no QR payment. It opens at 08:00 but only sells a morning ramen until 10:30, so arriving early does not get you the full menu. The printed allergen sheet is a picture on the group's website rather than something handed to you, so screenshot it before you go."
+  },
+  "sources": [
+   "https://www.setaga-ya.com/store/oreshiki/",
+   "https://www.setaga-ya.com/company/",
+   "https://www.setaga-ya.com/struct/wp-content/uploads/allergy_oreshiki_tokyo.jpg",
+   "https://tabelog.com/tokyo/A1302/A130201/13160396/"
+  ],
+  "enrich_note": "Confirmed, name unchanged. Yahoo Japan returned Tabelog 13160396; fetched from s.tabelog.com with an iPhone UA (HTTP 200) for the address, phone 03-3212-2558, 30 seats, the 2013-09-20 open date and GeoCoordinates 35.68020681871714 / 139.76790376437305, which replace the centroid pin. The operator's own page setaga-ya.com/store/oreshiki/ (HTTP 200) independently confirms the branch is trading and adds the 8:00-vs-10:30 menu split that Tabelog omits, plus a link to a per-item allergen table image (allergy_oreshiki_tokyo.jpg, HTTP 200) which was downloaded and read directly — that image, not inference, is the basis for the gluten verdict. Note the group's Google Maps link on its own page points at 35.6801865 / 139.7678609, ~20 m from the Tabelog coordinate; same doorway. loc_precise set true."
+ },
+ {
+  "id": "tokyo3__20",
+  "name": "六厘舎 東京駅東京ラーメンストリート",
+  "status": "confirmed",
+  "lat": 35.680061,
+  "lng": 139.767854,
+  "loc_precise": true,
+  "address_ja": "〒100-0005 東京都千代田区丸の内1-9-1 東京駅一番街 B1F 東京ラーメンストリート内",
+  "enrich_confidence": "high",
+  "cuisine": "The shop that turned thick-dip tsukemen into a national style — a pork-and-fish dip reduced until the solids are crushed out of shape, against a coarse extra-thick curly noodle; the queue starts at 07:30 for the morning-only bowl, and a standard tsukemen runs about ¥1,000–1,999",
+  "cuisine_type": "tsukemen",
+  "neighborhood": "Marunouchi 1-chōme, Tokyo Ramen Street on the B1 of Tokyo Station Ichibangai — 120 m from Tokyo Station; right out of the Yaesu central south gate and down the stairs, or right out of the Yaesu underground central gate to the far end",
+  "website": "https://rokurinsha.com/",
+  "menu_url": "https://rokurinsha.com/menu/",
+  "hours_raw": "月・火・水・木・金・土・日・祝日・祝前日 07:30 - 09:45（L.O. 料理09:30）／10:00 - 23:00（L.O. 料理22:30）。運営会社の告知は通常営業を「7:30～23:00（L.O.22:30）」と一本で表記しており、施設の排気設備メンテナンス等で不定期に短縮される（例：2026年2月3日は7:30～20:00、2月4日は11:00開店）。",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Wheat is the entire proposition. The brand's own description of itself is a 極太縮れ麺 built strong enough to stand up to the dip, and a 2026 Tabelog reviewer describes it plainly as 「麺は小麦の風味が豊かで、もちもちとした」 — a noodle sold on how much the wheat reads. The dip is a long-boiled pork-bone-and-fish reduction finished with ordinary wheat shōyu tare; no tamari is named anywhere. To the group's credit it publishes a downloadable allergen chart at rokurinsha.com/storage/rokurinsha-allergen.pdf, but it is a scanned table this pass could not machine-read, so it is cited here as something to consult rather than summarised. Nothing gluten-free is claimed and there is no rice-noodle option. Not workable for celiac.",
+  "vegan_status": "no",
+  "vegan_detail": "A 豚骨魚介 dip — pork bone and dried fish reduced together over many hours, with pork chāshū and a half egg among the standard toppings. Nothing plant-based is offered and none is claimed.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "六厘舎 — tsukemen brand of 株式会社松富士食品 (Matsufuji Corp.)",
+    "sister brands 舎鈴, ジャンクガレッジ, トナリ, 次念序, 久臨; no individual chef is named for the Tokyo Station counter"
+   ],
+   "origin": "Tokyo — the brand's own account is of a shop whose dip has been altered continuously since it opened, without telling the customer",
+   "background": "六厘舎 is the shop most often credited with establishing the thick-broth tsukemen style now found across Japan; its own copy makes the claim directly — 「現在の全国的に流行りつつあるつけめんの濃厚スープスタイルを六厘舎が確立したと言っても過言ではない」 — and describes the result, with some relish, as ガサツで荒々しく男らしいつけめん, a coarse, rough, unrefined bowl. The method is quantity and time: a very large volume of ingredients boiled for a very long time, and then, at the end, crushed by hand until the solids lose their shape entirely so that every last bit of flavour is beaten out of them. What is less known is that the dip is not fixed. The brand states it has been shifting the taste in increments since opening, deliberately below the threshold at which a regular would notice, and that ingredient selection, preparation and boiling method today are 「開店当初とは180度違う」 — a hundred and eighty degrees from where they started. The Tokyo Station branch opened 17 June 2009 and has been named to Tabelog's ラーメン百名店 every year from 2017 to 2025; it is now part of Matsufuji Corp., which also runs 舎鈴, ジャンクガレッジ, トナリ and 次念序, and it sells a morning-only bowl from 07:30 that has its own following.",
+   "philosophy": "「つけめんを文化に」— make tsukemen a culture, not a fad; and 「最後の一滴まで美味しく頂ける」, a dip that has to still be worth drinking at the bottom.",
+   "specialty": "つけめん (pork-bone and fish dip, extra-thick curly noodle), 味玉つけめん, 生七味つけめん, 朝つけめん (morning-only), retail noodle and soup sets.",
+   "anecdotes": [
+    {
+     "text": "The brand admits to moving the target without telling anyone: 「開店当初よりお客様に気づかれぬよう、または違和感を与えないよう微妙に味変えをし日々進化させてきております…開店当初とは180度違う今も尚進化を探求し続ける現在進行形の味」.",
+     "source": "https://rokurinsha.com/about/"
+    },
+    {
+     "text": "A 2026 Tabelog reviewer on a Sunday evening: 「19時着で入店までに45分ほどかかった」 — 45 minutes to get in, and their verdict was that the branch tastes like the real thing, inside a railway station.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13093047/"
+    },
+    {
+     "text": "The finishing step is manual: after the long boil 「最後に職人の手により素材のかたちがなくなるまで潰して素材の旨み全て叩き出します」 — the ingredients are crushed until they have no shape left.",
+     "source": "https://rokurinsha.com/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13093047 gives 東京都千代田区丸の内1-9-1 東京駅一番街 B1F 東京ラーメンストリート内, phone 03-3286-0166, 26 seats (カウンター10席、2人掛けテーブル8卓), 予約不可, カード不可 / 交通系電子マネー可 / QR不可, 全席禁煙, バリアフリー, 朝食・モーニングあり, テイクアウト, open date 2009年6月17日, homepage rokurinsha.com, ラーメン百名店 2017–2025, and GeoCoordinates 35.680061328717215 / 139.76785429437163. The operator's own store page (shop.mtfj.co.jp/stores/61) gives postcode 100-0005, the same address and phone, 26 seats, 決済方法 現金 and the full weekly 7:30–23:00 schedule. rokurinsha.com carries the brand's own history, method and the allergen PDF link; mtfj.co.jp/news/news-15507/ (20 Jan 2026) documents a facility-driven hours change at this exact branch.",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130201/13093047/",
+    "https://rokurinsha.com/",
+    "https://rokurinsha.com/about/",
+    "https://shop.mtfj.co.jp/stores/61",
+    "https://mtfj.co.jp/news/news-15507/"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [
+    {
+     "text": "Twenty-six seats turning a queue from 07:30 to 23:00 behind a single noodle boiler running extra-thick wheat noodles continuously. No wheat-free line, no separate equipment, nothing published about separation.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13093047/"
+    }
+   ],
+   "soy_sauce_wheat": [
+    {
+     "text": "The dip is a long-reduced pork-and-fish stock finished with ordinary wheat shōyu tare; no gluten-free tamari is named on the brand site, the operator's store page or the listing.",
+     "source": "https://rokurinsha.com/"
+    }
+   ],
+   "vegan_cross_contact": [
+    {
+     "text": "Pork bone and dried fish are boiled together as the base of the only product the shop sells, with pork chāshū on the standard bowl.",
+     "source": "https://rokurinsha.com/"
+    }
+   ],
+   "staff_allergy_handling": [
+    {
+     "text": "The brand does publish a downloadable アレルゲン情報 chart (rokurinsha.com/storage/rokurinsha-allergen.pdf) — worth pulling up before ordering, though it is a scan and could not be read as text here.",
+     "source": "https://rokurinsha.com/storage/rokurinsha-allergen.pdf"
+    }
+   ],
+   "positives": [
+    {
+     "text": "Tabelog lists the shop as バリアフリー and it has an English-language version of its brand site, which is rare for a queueing ramen counter.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13093047/"
+    }
+   ]
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "The single most-queued bowl in Tokyo Station: 120 m inside the Yaesu basement, ticket machine at the door, all non-smoking, listed as barrier-free, children accepted, takeaway available, and an English site if you want to read the menu first. Expect to wait — a Sunday-evening arrival at 19:00 in 2026 took 45 minutes to get a seat — and expect no reservations. Cash or transit IC only: the operator's own store page lists 決済方法 現金 and Tabelog confirms カード不可 / QR不可. Hours are the one thing not to trust in advance: the branch is subject to the building's ventilation-maintenance closures and the operator posts one-off changes on mtfj.co.jp, so check the day you go."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130201/13093047/",
+   "https://rokurinsha.com/",
+   "https://rokurinsha.com/about/",
+   "https://rokurinsha.com/storage/rokurinsha-allergen.pdf",
+   "https://shop.mtfj.co.jp/stores/61",
+   "https://mtfj.co.jp/news/news-15507/"
+  ],
+  "enrich_note": "Confirmed, with the name normalised to the Tabelog / landlord form (六厘舎 東京駅東京ラーメンストリート; the operator's own store list calls it 六厘舎 東京ラーメンストリート店). Yahoo Japan returned Tabelog 13093047 and the operator's store page; both fetched HTTP 200 and agree on 東京都千代田区丸の内1-9-1 東京駅一番街 B1F, phone 03-3286-0166 and 26 seats. Tabelog's GeoCoordinates 35.680061328717215 / 139.76785429437163 replace the centroid pin. hours_status is 'irregular' deliberately: Tabelog splits the day 07:30–09:45 then 10:00–23:00 while the operator publishes it as one 7:30–23:00 block, and the operator's own 2026-01-20 notice shows the branch closing early or opening late for building ventilation maintenance. No individual chef is named by any source, so chef_name is left null rather than guessed. The allergen PDF was downloaded (HTTP 200, 669 KB) but its text is not extractable — it is cited, not summarised. loc_precise set true."
+ },
+ {
+  "id": "tokyo3__21",
+  "name": "四川担担麺 阿吽 キッテグランシェ店",
+  "status": "closed_permanently",
+  "closed_since": "end of February 2024",
+  "lat": 35.67969,
+  "lng": 139.765203,
+  "loc_precise": true,
+  "address_ja": "〒100-7090 東京都千代田区丸の内2-7-2 JPタワー KITTE丸の内 B1F",
+  "enrich_confidence": "high",
+  "cuisine": "Closed. While it traded, this was the Tokyo Station branch of Yushima's 四川担担麺 阿吽 — a sesame-heavy Sichuan tantanmen with heat (辣油) and numbing (花椒) each dialled 0 to 6 on the ticket machine, standard bowl ¥980",
+  "cuisine_type": "tantanmen",
+  "neighborhood": "Marunouchi 2-chōme, the KITTE GRANCHE food floor in the JP Tower basement — 244 m from Tokyo Station, connected underground to the Marunouchi line. The unit is no longer listed among KITTE's ramen tenants.",
+  "website": null,
+  "menu_url": null,
+  "hours_raw": "（閉店時点の掲載）月・火・水・木・金 11:00 - 21:50／土・日 11:00 - 20:50",
+  "hours_status": "irregular",
+  "gf_confidence": "no",
+  "gf_detail": "Recorded for completeness, since the shop is shut. Tantanmen is a wheat-noodle dish and this one was built on a low-hydration straight wheat noodle; the sesame broth was carried on a chilli-and-dòubànjiàng base, and dòubànjiàng is fermented with wheat flour as a matter of course. No gluten-free claim was ever published.",
+  "vegan_status": "no",
+  "vegan_detail": "Recorded for completeness. The bowl was minced pork over sesame broth with mizuna; nothing plant-based was offered.",
+  "chef_bio": {
+   "chef_name": null,
+   "roles": [
+    "branch of 四川担担麺 阿吽, whose 本店 is in Yushima, Bunkyō-ku",
+    "no individual chef named for the KITTE counter"
+   ],
+   "origin": "Yushima, Bunkyō-ku, Tokyo",
+   "background": "阿吽 built its reputation in Yushima and is widely credited in Japanese ramen writing with driving the 汁なし担担麺 (soupless tantanmen) boom; a Tabelog reviewer sums up the standing as 「汁なし担々麺ブームを作った立役者であり、クオリティは都内最高レベル」, a shop that satisfies people who know Sichuan cooking as well as ramen regulars. The KITTE branch sat in the basement zone KITTE marketed as its ラーメン激戦区 — a five-shop ramen row alongside 松戸富田麺絆, 中華そば 福味 and かね田 — and worked from a ticket machine with photographs, letting the customer pick heat and numbing separately on a 0-to-6 scale, which the house recommended at 辛さ3・痺れ2. The bowl was a thick, creamy sesame broth cut with chilli oil, minced pork worked with dòubànjiàng and Sichuan pepper, mizuna, and a low-hydration straight noodle. It closed at the end of February 2024; the Yushima parent is a separate business and this record makes no claim about it.",
+   "philosophy": null,
+   "specialty": "担担麺 (¥980), 汁なし担担麺, つゆ無し味玉味噌担担麺.",
+   "anecdotes": [
+    {
+     "text": "The ticket machine did the work an allergy conversation could not: heat and numbing were each selectable 0–6, so 「誰でも自分好みの味が見つけられそう」 — but nothing on it addressed ingredients.",
+     "source": "https://reerac.net/blog/2022/10/21/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E6%BF%80%E6%88%A6%E5%8C%BA%E3%81%AE%E9%98%BF%E5%90%BD%E6%9D%B1%E4%BA%AC%E9%A7%85"
+    },
+    {
+     "text": "A regular's verdict in Feb 2024, weeks before it shut: 「ここ3年ほど、こちらの坦々麺を上回るものを見つけていません」 — three years of looking and nothing better.",
+     "source": "https://tabelog.com/tokyo/A1302/A130201/13231656/"
+    }
+   ],
+   "japanese_sources_summary": "Tabelog 13231656 is headed 【閉店】 and states 「このお店は現在閉店しております」; it records the address 東京都千代田区丸の内2-7-2 JPタワー KITTE丸の内 B1F, 予約不可, hours 11:00–21:50 weekdays / 11:00–20:50 weekends, budget ～￥999, GeoCoordinates 35.67968983791123 / 139.76520288320796, and no review later than February 2024. The Japanese blog 酒走 (reerac.net), which visited in October 2022, carries a dated correction at the head of its post: 「※「四川担々麺 阿吽 キッテグランシェ店」は2024年2月末に閉店しました」. KITTE's own ラーメン tenant list no longer contains 阿吽, and the landlord's news item about the shop (item_eventnews.jsp?id=297) has expired.",
+   "confidence": "high",
+   "sources": [
+    "https://tabelog.com/tokyo/A1302/A130201/13231656/",
+    "https://reerac.net/blog/2022/10/21/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E6%BF%80%E6%88%A6%E5%8C%BA%E3%81%AE%E9%98%BF%E5%90%BD%E6%9D%B1%E4%BA%AC%E9%A7%85",
+    "https://marunouchi.jp-kitte.jp/shop/gourmet/shoplist03.jsp"
+   ]
+  },
+  "safety": {
+   "gf_cross_contamination": [],
+   "soy_sauce_wheat": [],
+   "vegan_cross_contact": [],
+   "staff_allergy_handling": [],
+   "positives": []
+  },
+  "cultural_comfort": {
+   "level": "Easy",
+   "note": "Closed — do not send anyone. If a visitor turns up at the old unit in KITTE's basement, the neighbouring shops in the same ramen row (松戸富田麺絆, 鶏soba 座銀, 中華そば 福味) are still trading; a 2026 Tabelog reviewer records coming for 阿吽, finding it gone, and eating next door instead."
+  },
+  "sources": [
+   "https://tabelog.com/tokyo/A1302/A130201/13231656/",
+   "https://reerac.net/blog/2022/10/21/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E6%BF%80%E6%88%A6%E5%8C%BA%E3%81%AE%E9%98%BF%E5%90%BD%E6%9D%B1%E4%BA%AC%E9%A7%85",
+   "https://marunouchi.jp-kitte.jp/shop/gourmet/shoplist03.jsp",
+   "http://web.archive.org/web/20240722022305/https://tabelog.com/tokyo/A1302/A130201/13231656/"
+  ],
+  "enrich_note": "PERMANENTLY CLOSED. The shop existed and the light record's name is correct, but it is shut. Evidence: (1) tabelog.com/tokyo/A1302/A130201/13231656/ fetched HTTP 200 with a desktop UA is headed 【閉店】 and carries the line 「このお店は現在閉店しております」; (2) the Japanese blog reerac.net, which reviewed the shop in 2022, has since added a dated note at the top of its post — 「※「四川担々麺 阿吽 キッテグランシェ店」は2024年2月末に閉店しました」 — end of February 2024, which matches the last Tabelog review (2024/02); (3) Wayback confirms the bracket: the 2022-06-09 capture of the Tabelog page has no closure banner, the 2024-07-22 capture does; (4) KITTE's own ramen tenant list (marunouchi.jp-kitte.jp/shop/gourmet/shoplist03.jsp, HTTP 200) no longer contains 阿吽, and the landlord's news item id=297 about the shop has expired. Coordinates set to the Tabelog GeoCoordinates for the former unit so the record resolves cleanly if it is ever surfaced; loc_precise true refers to the address, not to a trading business. Not researched further: the Yushima 本店 is a separate listing and was out of scope for this shard."
  }
 ]

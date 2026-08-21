@@ -1,0 +1,785 @@
+{
+ "hiro_okonomiyaki_teppanyaki_s": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3401/A340108/34025349/dtlmenu/?photo=1",
+   "https://soriyaokonomiyaki.wordpress.com/"
+  ],
+  "price_note": "Tax-included prices read off the shop's own printed menu sheet photographed 2026/03 (okonomiyaki + toppings); yakisoba / omusoba / tonpeiyaki are from the same sheet's 2023/05 printing, where the shared items ran ¥50-100 lower. Prices approximate — may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "肉玉",
+    "romaji": "nikutama",
+    "en": "Pork & egg okonomiyaki, no noodles",
+    "price": "¥770",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。 豚肉・卵。2026/03の板は700円（税込770円）。",
+    "dish_key": "nikutama"
+   },
+   {
+    "ja": "肉玉そば",
+    "romaji": "nikutama soba",
+    "en": "Pork & egg okonomiyaki with yakisoba noodles",
+    "price": "¥990",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。 そば＝中華麺（小麦）。いそのさんの生めん使用。",
+    "dish_key": "nikutama_soba"
+   },
+   {
+    "ja": "肉玉うどん",
+    "romaji": "nikutama udon",
+    "en": "Pork & egg okonomiyaki with udon noodles",
+    "price": "¥990",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。 うどん＝小麦。",
+    "dish_key": "nikutama_udon"
+   },
+   {
+    "ja": "極・そり家焼き（そば／うどん）",
+    "romaji": "kiwami soriya-yaki",
+    "en": "Deluxe Soriya okonomiyaki — squid, prawn, squid tempura, mochi, shiso, cheese, spring onion, with noodles",
+    "price": "¥1,760",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。 イカ天は小麦衣の揚げ物。",
+    "dish_key": "soriyaki_deluxe"
+   },
+   {
+    "ja": "そり家焼き（そば／うどん）",
+    "romaji": "soriya-yaki",
+    "en": "Soriya okonomiyaki — squid & prawn, with noodles",
+    "price": "¥1,320",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。",
+    "dish_key": "soriyaki"
+   },
+   {
+    "ja": "焼きそば",
+    "romaji": "yakisoba",
+    "en": "Fried wheat noodles",
+    "price": "¥880",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺＝小麦、ソース＝小麦。2023/05の板で800円（税込880円）。",
+    "dish_key": "yakisoba"
+   },
+   {
+    "ja": "焼きうどん",
+    "romaji": "yakiudon",
+    "en": "Fried udon",
+    "price": "¥880",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "うどん＝小麦、ソース＝小麦。2023/05の板。",
+    "dish_key": "yakiudon"
+   },
+   {
+    "ja": "オムそば",
+    "romaji": "omusoba",
+    "en": "Yakisoba wrapped in a thin omelette",
+    "price": "¥990",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "小麦麺＋ソース＋卵。2023/05の板。",
+    "dish_key": "omusoba"
+   },
+   {
+    "ja": "とんぺい焼き",
+    "romaji": "tonpei-yaki",
+    "en": "Pork and egg griddle roll with sauce & mayo",
+    "price": "¥770",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "卵・豚肉、ソース＝小麦。2023/05の板。",
+    "dish_key": "tonpeiyaki"
+   },
+   {
+    "ja": "トッピング150円：ネギ・イカ天・もち・しそ・コーン・野菜大盛り",
+    "romaji": "topping 165-yen tier",
+    "en": "¥165 toppings: spring onion, squid tempura, mochi, shiso, corn, extra vegetables",
+    "price": "¥165",
+    "section": "トッピング / Toppings",
+    "gf": "no",
+    "vegan": "",
+    "note": "イカ天は小麦衣。他は素材自体に小麦はないが、生地が小麦なので全体は不可。",
+    "dish_key": "topping_tier_165"
+   },
+   {
+    "ja": "トッピング200円：チーズ・フワトロ卵・イカ・エビ・倍肉・ニンニク・そば又はうどん",
+    "romaji": "topping 220-yen tier",
+    "en": "¥220 toppings: cheese, soft-set egg, squid, prawn, double pork, garlic, extra soba or udon",
+    "price": "¥220",
+    "section": "トッピング / Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "そば・うどん追加は小麦。チーズ＝乳。",
+    "dish_key": "topping_tier_220"
+   },
+   {
+    "ja": "トッピング100円：卵",
+    "romaji": "topping tamago",
+    "en": "¥110 topping: extra egg",
+    "price": "¥110",
+    "section": "トッピング / Toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "卵。",
+    "dish_key": "topping_egg"
+   },
+   {
+    "ja": "トッピング550円：カキ",
+    "romaji": "topping kaki",
+    "en": "¥605 topping: Hiroshima oysters",
+    "price": "¥605",
+    "section": "トッピング / Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "牡蠣。生地が小麦のため全体は小麦。",
+    "dish_key": "topping_oyster"
+   }
+  ]
+ },
+ "hiro_daichi": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3401/A340110/34023605/dtlmenu/?photo=1",
+   "https://s.tabelog.com/hiroshima/A3401/A340110/34023605/dtlrvwlst/"
+  ],
+  "price_note": "The shop publishes nothing itself; these come off its in-store boards photographed 2017/07, the newest menu photographs that exist. A 2022 review put 肉玉そば at ¥880 against ¥800 on that board, and 2026 diners report a ¥2,000-2,999 dinner spend, so assume roughly 10-30% above the board figures. Items left with a blank price are ones whose board column could not be aligned to a number without guessing. Prices approximate — may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "肉玉そば",
+    "romaji": "nikutama soba",
+    "en": "Pork & egg okonomiyaki with soba noodles — the house standard",
+    "price": "¥880",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2022年の口コミで880円（2017年の店内板は800円）。小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。",
+    "dish_key": "nikutama_soba"
+   },
+   {
+    "ja": "肉玉うどん",
+    "romaji": "nikutama udon",
+    "en": "Pork & egg okonomiyaki with udon",
+    "price": "¥800",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の店内板。小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。",
+    "dish_key": "nikutama_udon"
+   },
+   {
+    "ja": "豚そば",
+    "romaji": "buta soba",
+    "en": "Pork okonomiyaki with soba",
+    "price": "",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2026/02の口コミが「おすすめの豚そば」として注文。価格は未確認。小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。",
+    "dish_key": "buta_soba"
+   },
+   {
+    "ja": "野菜焼",
+    "romaji": "yasai-yaki",
+    "en": "Vegetable okonomiyaki",
+    "price": "¥700",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の板。生地は小麦、卵入り、ソースも小麦。",
+    "dish_key": "yasai_okonomiyaki"
+   },
+   {
+    "ja": "ネギ焼",
+    "romaji": "negi-yaki",
+    "en": "Spring-onion okonomiyaki",
+    "price": "¥700",
+    "section": "お好み焼き / Okonomiyaki",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の板。小麦粉の生地＋おたふく系ソース（小麦）。鉄板も共用。",
+    "dish_key": "negiyaki"
+   },
+   {
+    "ja": "ホルモン焼そば",
+    "romaji": "horumon yakisoba",
+    "en": "Fried soba with beef offal",
+    "price": "¥900",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の板。中華麺＋小麦ソース。",
+    "dish_key": "horumon_yakisoba"
+   },
+   {
+    "ja": "ホルモン焼うどん",
+    "romaji": "horumon yakiudon",
+    "en": "Fried udon with beef offal",
+    "price": "¥800",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の板。うどん＝小麦。",
+    "dish_key": "horumon_yakiudon"
+   },
+   {
+    "ja": "キャベツ焼めし",
+    "romaji": "kyabetsu yakimeshi",
+    "en": "Cabbage fried rice on the griddle",
+    "price": "¥800",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2017/07の板。米自体は問題ないが味付けの醤油／ソースに小麦の可能性が高い。要確認。",
+    "dish_key": "cabbage_fried_rice"
+   },
+   {
+    "ja": "ガーリックバターライス",
+    "romaji": "garlic butter rice",
+    "en": "Garlic butter fried rice",
+    "price": "¥800",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2017/07の板。バター＝乳。醤油使用の有無を要確認。",
+    "dish_key": "garlic_butter_rice"
+   },
+   {
+    "ja": "とん平焼",
+    "romaji": "tonpei-yaki",
+    "en": "Pork and egg griddle roll",
+    "price": "¥700",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の板。ソース＝小麦、卵・豚。",
+    "dish_key": "tonpeiyaki"
+   },
+   {
+    "ja": "がんす",
+    "romaji": "gansu",
+    "en": "Hiroshima fish-cake cutlet, breaded and fried",
+    "price": "¥300",
+    "section": "一品 / Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の店内短冊。パン粉＝小麦、共用フライヤー。2026/02の口コミも「ガンス」注文を確認。",
+    "dish_key": "gansu"
+   },
+   {
+    "ja": "牛すじポン酢",
+    "romaji": "gyusuji ponzu",
+    "en": "Simmered beef tendon with ponzu",
+    "price": "¥400",
+    "section": "一品 / Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の店内短冊。ポン酢・煮汁に醤油（小麦）。",
+    "dish_key": "gyusuji_ponzu"
+   },
+   {
+    "ja": "ホルモン焼き",
+    "romaji": "horumon-yaki",
+    "en": "Griddled beef offal",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2026/05の口コミが「おたふくソースの味」と記述＝小麦ソース。価格未確認。",
+    "dish_key": "horumon_yaki"
+   },
+   {
+    "ja": "チンゲン菜炒め",
+    "romaji": "chingensai itame",
+    "en": "Stir-fried bok choy",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "2026/05の口コミで現行を確認。板の価格列が写真上で一段ずれる可能性があるため金額は記載しない。味付けの醤油・オイスターソースを要確認。",
+    "dish_key": "bok_choy_stirfry"
+   },
+   {
+    "ja": "ジャガチーズ焼き",
+    "romaji": "jaga cheese yaki",
+    "en": "Potato and cheese on the griddle",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2026/05の口コミで現行を確認。チーズ＝乳。鉄板は小麦生地と共用。価格は読み取りが不確実なため空欄。",
+    "dish_key": "potato_cheese"
+   },
+   {
+    "ja": "ポパイベーコン",
+    "romaji": "popeye bacon",
+    "en": "Spinach and bacon on the griddle",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2017/07の板。醤油の有無を要確認。価格は読み取り不確実。",
+    "dish_key": "spinach_bacon"
+   },
+   {
+    "ja": "ニラもやし炒め",
+    "romaji": "nira moyashi itame",
+    "en": "Stir-fried garlic chives and bean sprouts",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "2017/07の板。価格は読み取り不確実。",
+    "dish_key": "nira_moyashi"
+   },
+   {
+    "ja": "ホルモンキムチ炒め",
+    "romaji": "horumon kimchi itame",
+    "en": "Beef offal stir-fried with kimchi",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2017/07の板。キムチ・タレに醤油／魚介。価格は読み取り不確実。",
+    "dish_key": "horumon_kimchi"
+   },
+   {
+    "ja": "トーフステーキ",
+    "romaji": "tofu steak",
+    "en": "Griddled tofu steak",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "2017/07の板。ソース次第。鉄板は小麦生地と共用。価格は読み取り不確実。",
+    "dish_key": "tofu_steak"
+   },
+   {
+    "ja": "豚チーズオムレツ",
+    "romaji": "buta cheese omelette",
+    "en": "Pork and cheese omelette",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2017/07の板。卵・乳・豚。価格は読み取り不確実。",
+    "dish_key": "pork_cheese_omelette"
+   },
+   {
+    "ja": "エリンギバター焼",
+    "romaji": "eringi butter yaki",
+    "en": "King oyster mushrooms in butter",
+    "price": "",
+    "section": "鉄板 / Teppan",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2017/07の板。バター＝乳、醤油の有無を要確認。価格は読み取り不確実。",
+    "dish_key": "eringi_butter"
+   },
+   {
+    "ja": "刺身盛合せ",
+    "romaji": "sashimi moriawase",
+    "en": "Assorted sashimi",
+    "price": "",
+    "section": "一品 / Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "食べログの料理写真で確認。つけ醤油＝小麦。価格未確認。",
+    "dish_key": "sashimi_moriawase"
+   }
+  ]
+ },
+ "hiro_yuki_tei": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://s.tabelog.com/hiroshima/A3401/A340110/34034460/dtlmenu/?photo=1"
+  ],
+  "price_note": "Read off the shop's own laminated table card photographed 2026/03. Ordering is by QR code at the table and is a four-step build: noodle weight, then vegetable/meat volume, then heat level, then toppings. Prices approximate — may change.",
+  "last_checked": "2026-08-20",
+  "items": [
+   {
+    "ja": "広島風つけ麺 0.5玉",
+    "romaji": "Hiroshima-fu tsukemen 0.5 tama",
+    "en": "Hiroshima cold dipping noodles, half portion",
+    "price": "¥900",
+    "section": "① 麺の量 / Step 1 — noodle size",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺＝小麦。つけダレは醤油ベース＝小麦。",
+    "dish_key": "hiroshima_tsukemen"
+   },
+   {
+    "ja": "広島風つけ麺 1玉",
+    "romaji": "tsukemen 1 tama",
+    "en": "Hiroshima cold dipping noodles, regular",
+    "price": "¥1,100",
+    "section": "① 麺の量 / Step 1 — noodle size",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺＝小麦、タレも醤油。",
+    "dish_key": "hiroshima_tsukemen"
+   },
+   {
+    "ja": "広島風つけ麺 1.5玉",
+    "romaji": "tsukemen 1.5 tama",
+    "en": "Hiroshima cold dipping noodles, 1.5×",
+    "price": "¥1,250",
+    "section": "① 麺の量 / Step 1 — noodle size",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺＝小麦。",
+    "dish_key": "hiroshima_tsukemen"
+   },
+   {
+    "ja": "広島風つけ麺 2玉",
+    "romaji": "tsukemen 2 tama",
+    "en": "Hiroshima cold dipping noodles, double",
+    "price": "¥1,400",
+    "section": "① 麺の量 / Step 1 — noodle size",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺＝小麦。",
+    "dish_key": "hiroshima_tsukemen"
+   },
+   {
+    "ja": "リャン菜（麺なし）",
+    "romaji": "ryansai (men nashi)",
+    "en": "Vegetables and pork only, no noodles — the shop recommends it",
+    "price": "¥900",
+    "section": "① 麺の量 / Step 1 — noodle size",
+    "gf": "no",
+    "vegan": "no",
+    "note": "麺は無いがタレが醤油＝小麦。チャーシュー入り。店は「野菜とお肉だけで楽しめるリャン菜もおすすめです」と明記。",
+    "dish_key": "ryansai"
+   },
+   {
+    "ja": "野菜・肉 大盛り",
+    "romaji": "yasai niku oomori",
+    "en": "Extra vegetables & meat (regular volume is free)",
+    "price": "¥250",
+    "section": "② 野菜 肉の量 / Step 2 — volume",
+    "gf": "no",
+    "vegan": "no",
+    "note": "普通は追加料金なし。",
+    "dish_key": "extra_veg_meat"
+   },
+   {
+    "ja": "辛さ 〜10辛",
+    "romaji": "karasa 10-kara made",
+    "en": "Heat level up to 10 — no charge",
+    "price": "¥0",
+    "section": "③ 辛さ / Step 3 — heat",
+    "gf": "no",
+    "vegan": "no",
+    "note": "店の注意書き「1辛でも辛いです。個人差あり」「かなり辛いです！ご注意」。",
+    "dish_key": "heat_level"
+   },
+   {
+    "ja": "辛さ プラス5辛毎",
+    "romaji": "plus 5-kara goto",
+    "en": "Each additional 5 levels of heat",
+    "price": "¥50",
+    "section": "③ 辛さ / Step 3 — heat",
+    "gf": "no",
+    "vegan": "no",
+    "note": "10辛より上は5辛ごとに50円。",
+    "dish_key": "heat_level_extra"
+   },
+   {
+    "ja": "トッピング ゆで卵",
+    "romaji": "yude tamago",
+    "en": "Boiled egg topping",
+    "price": "¥150",
+    "section": "④ トッピング / Step 4 — toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "卵。",
+    "dish_key": "topping_boiled_egg"
+   },
+   {
+    "ja": "トッピング 納豆",
+    "romaji": "natto",
+    "en": "Natto topping",
+    "price": "¥150",
+    "section": "④ トッピング / Step 4 — toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "納豆自体は大豆だが、付属タレに醤油（小麦）とかつおだしが入るのが通例。",
+    "dish_key": "topping_natto"
+   },
+   {
+    "ja": "トッピング キムチ",
+    "romaji": "kimchi",
+    "en": "Kimchi topping",
+    "price": "¥150",
+    "section": "④ トッピング / Step 4 — toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "キムチはアミの塩辛・魚醤を含むことが多い。",
+    "dish_key": "topping_kimchi"
+   },
+   {
+    "ja": "たれ増量",
+    "romaji": "tare zoryo",
+    "en": "Extra dipping sauce",
+    "price": "¥100",
+    "section": "④ トッピング / Step 4 — toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "醤油ベース＝小麦。",
+    "dish_key": "extra_tare"
+   },
+   {
+    "ja": "ごま増量",
+    "romaji": "goma zoryo",
+    "en": "Extra sesame",
+    "price": "¥100",
+    "section": "④ トッピング / Step 4 — toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "白ごまのみ。小麦も動物性材料も含まない。",
+    "dish_key": "extra_sesame"
+   },
+   {
+    "ja": "炙りチャーシュー",
+    "romaji": "aburi chashu",
+    "en": "Seared pork chashu",
+    "price": "¥600",
+    "section": "一品料理 / Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "チャーシューは醤油ダレで煮る＝小麦。",
+    "dish_key": "aburi_chashu"
+   },
+   {
+    "ja": "コウネの炙り",
+    "romaji": "koune no aburi",
+    "en": "Seared koune — Hiroshima beef brisket cartilage",
+    "price": "¥750",
+    "section": "一品料理 / Side dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "広島名物。塩焼きならタレ不使用だが、ポン酢／タレの有無を要確認。",
+    "dish_key": "koune_aburi"
+   },
+   {
+    "ja": "チャンジャ",
+    "romaji": "chanja",
+    "en": "Korean spiced salted cod innards",
+    "price": "¥400",
+    "section": "一品料理 / Side dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "唐辛子ダレに醤油・味噌が入る商品が多い。要確認。",
+    "dish_key": "chanja"
+   },
+   {
+    "ja": "いぶりがっこ",
+    "romaji": "iburigakko",
+    "en": "Akita smoked pickled daikon",
+    "price": "¥400",
+    "section": "一品料理 / Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "米ぬか漬けの燻製大根。商品によっては調味液に小麦。要確認。",
+    "dish_key": "iburigakko"
+   },
+   {
+    "ja": "キムチ",
+    "romaji": "kimchi",
+    "en": "Kimchi",
+    "price": "¥400",
+    "section": "一品料理 / Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "アミの塩辛・魚醤を含むことが多い。",
+    "dish_key": "kimchi"
+   },
+   {
+    "ja": "味玉（2個）",
+    "romaji": "ajitama",
+    "en": "Two marinated soft-boiled eggs",
+    "price": "¥350",
+    "section": "一品料理 / Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "醤油ダレ漬け＝小麦。",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "枝豆",
+    "romaji": "edamame",
+    "en": "Salt-boiled edamame",
+    "price": "¥350",
+    "section": "一品料理 / Side dishes",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "塩茹での枝豆のみ。小麦も動物性材料も使わない。",
+    "dish_key": "edamame"
+   },
+   {
+    "ja": "冷奴",
+    "romaji": "hiyayakko",
+    "en": "Chilled tofu",
+    "price": "¥350",
+    "section": "一品料理 / Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "豆腐自体に小麦はないが、かける醤油＝小麦、薬味に鰹節が載ることが多い。醤油・鰹節抜きが可能か要確認。",
+    "dish_key": "hiyayakko"
+   },
+   {
+    "ja": "きゅうり浅漬け",
+    "romaji": "kyuri asazuke",
+    "en": "Lightly pickled cucumber",
+    "price": "¥300",
+    "section": "一品料理 / Side dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "浅漬けの素に醤油・だしが入る場合あり。要確認。",
+    "dish_key": "kyuri_asazuke"
+   },
+   {
+    "ja": "メンマ盛り",
+    "romaji": "menma mori",
+    "en": "Plate of seasoned bamboo shoots",
+    "price": "¥300",
+    "section": "一品料理 / Side dishes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "メンマの味付けは醤油＝小麦。",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "唐揚げ",
+    "romaji": "karaage",
+    "en": "Fried chicken",
+    "price": "¥600",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣と下味に小麦、共用フライヤー。",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "軟骨唐揚げ",
+    "romaji": "nankotsu karaage",
+    "en": "Fried chicken cartilage",
+    "price": "¥600",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣・下味とも小麦、共用フライヤー。",
+    "dish_key": "nankotsu_karaage"
+   },
+   {
+    "ja": "たこ唐揚げ",
+    "romaji": "tako karaage",
+    "en": "Fried octopus",
+    "price": "¥600",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "衣・共用フライヤー。",
+    "dish_key": "tako_karaage"
+   },
+   {
+    "ja": "ハムカツ",
+    "romaji": "hamu katsu",
+    "en": "Breaded fried ham cutlet",
+    "price": "¥500",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "パン粉＝小麦。",
+    "dish_key": "hamukatsu"
+   },
+   {
+    "ja": "揚げ餃子",
+    "romaji": "age gyoza",
+    "en": "Deep-fried gyoza",
+    "price": "¥600",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "皮＝小麦。",
+    "dish_key": "age_gyoza"
+   },
+   {
+    "ja": "ポテトフライ",
+    "romaji": "potato fry",
+    "en": "French fries",
+    "price": "¥500",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "じゃがいも自体に小麦はないが、唐揚げ・餃子と共用のフライヤー。",
+    "dish_key": "french_fries"
+   },
+   {
+    "ja": "ごぼう唐揚げ",
+    "romaji": "gobo karaage",
+    "en": "Fried burdock root",
+    "price": "¥500",
+    "section": "揚げ物 / Fried dishes",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "衣・共用フライヤー。",
+    "dish_key": "gobo_karaage"
+   },
+   {
+    "ja": "焼豚丼",
+    "romaji": "yakibuta don",
+    "en": "Bowl of rice topped with chashu pork",
+    "price": "¥500",
+    "section": "ご飯もの / Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "チャーシューの醤油ダレ＝小麦。",
+    "dish_key": "chashu_don"
+   },
+   {
+    "ja": "おむすび（韓国海苔／昆布／明太子）",
+    "romaji": "omusubi",
+    "en": "Rice ball — Korean nori, kombu, or mentaiko",
+    "price": "¥200",
+    "section": "ご飯もの / Rice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "昆布・明太子の味付けに醤油／調味液。韓国海苔はごま油と塩。要確認。",
+    "dish_key": "omusubi"
+   },
+   {
+    "ja": "自家製プリン",
+    "romaji": "jikasei purin",
+    "en": "House-made custard pudding",
+    "price": "¥500",
+    "section": "甘味 / Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "卵・牛乳・砂糖・カラメルが基本で小麦不使用のことが多いが、店に確認を。",
+    "dish_key": "purin"
+   }
+  ]
+ }
+}
