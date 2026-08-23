@@ -17,12 +17,9 @@
 //   node scripts/sync-diet-labels.mjs [--apply]
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { GF_LABEL as GF, VEGAN_LABEL as VG } from './lib-tiers.mjs';
 
 const APPLY = process.argv.includes('--apply');
-const GF = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-             options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
-const VG = { full:'Fully vegan', options:'Some vegan options',
-             limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
 
 let gf = 0, vg = 0, worst = [];
 for (const city of CITIES) {

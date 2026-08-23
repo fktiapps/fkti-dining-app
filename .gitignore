@@ -35,3 +35,6 @@ data/_*_verdicts/_*_part_*.json
 
 # runtime lock held by scripts/rebuild.mjs
 data/.rebuild.lock
+
+# per-rebuild tier-write diagnostic (see scripts/lib-tiers.mjs)
+data/_tier_writes.jsonl

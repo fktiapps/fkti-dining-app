@@ -10,16 +10,11 @@
 //
 //   node scripts/normalize-sweep-tiers.mjs [--apply]
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { GF_LABEL, VEGAN_LABEL, GF_TIERS, VEGAN_TIERS } from './lib-tiers.mjs';
 
 const APPLY = process.argv.includes('--apply');
-const TIERS = { gf_confidence: new Set(['dedicated', 'high', 'options', 'ask', 'no']),
-                vegan_status:  new Set(['full', 'options', 'limited', 'ask', 'no']) };
-const LABEL = {
-  gf_confidence: { dedicated: 'Dedicated gluten-free', high: 'Strong GF focus',
-                   options: 'Some GF options', ask: 'GF — ask', no: 'Not gluten-free' },
-  vegan_status:  { full: 'Fully vegan', options: 'Some vegan options',
-                   limited: 'Limited vegan', ask: 'Vegan — ask', no: 'Not vegan' },
-};
+const TIERS = { gf_confidence: new Set(GF_TIERS), vegan_status: new Set(VEGAN_TIERS) };
+const LABEL = { gf_confidence: GF_LABEL, vegan_status: VEGAN_LABEL };
 const tierOf = (field, v) => {
   const raw = String(v == null ? '' : v).trim().toLowerCase();
   const ok = TIERS[field];

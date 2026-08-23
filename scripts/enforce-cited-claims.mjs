@@ -20,14 +20,11 @@
 //   node scripts/enforce-cited-claims.mjs [--apply]
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { EVIDENCE_KEYS as EV, GF_LABEL as LABEL, VEGAN_LABEL, setTier } from './lib-tiers.mjs';
 
 const APPLY = process.argv.includes('--apply');
 const DATE = '2026-08-20';
-const EV = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact',
-            'staff_allergy_handling','positives'];
 const CLAIMS_SAFER = new Set(['dedicated','high','options']);
-const LABEL = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-                options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
 const url = u => typeof u === 'string' && /^https?:\/\//.test(u);
 // A claim the verification pass DISPROVED is not evidence, source or no source.
 const isLive = e => typeof e === 'object' && url(e?.source) && !e.unsupported;
@@ -69,8 +66,6 @@ const OWNER_RULED = {
 };
 
 const VEGAN_CLAIMS_SAFER = new Set(['full']);
-const VEGAN_LABEL = { full: 'Fully vegan', options: 'Some vegan options',
-                      limited: 'Limited vegan', ask: 'Vegan — ask', no: 'Not vegan' };
 // Only the vegan-relevant fields can disprove a vegan label; a disproven gluten
 // finding says nothing about whether the kitchen uses dairy.
 const VEGAN_FIELDS = ['vegan_cross_contact', 'positives'];
@@ -147,8 +142,8 @@ for (const city of CITIES) {
           'sign-off, which was given on that evidence — needs his re-review.'
         : 'Tier held down: no safety finding on this record cites a source. Restore ' +
           'through REVIEW_PROTOCOL.md once evidence is attached.' };
-    r.gf_confidence = 'ask';
-    r.gf_label = LABEL.ask;
+    setTier(r, 'gf_confidence', 'ask', { by: 'enforce-cited-claims',
+      why: disproven(r) ? 'safety findings disproven against their sources' : 'no safety finding cites a source' });
     r.gf_detail = `[Held at "ask" ${DATE}] The description below was not traceable to any ` +
       `source, so the GF label is held down until it is. ` + (r.gf_detail || '');
     dirty = true;
@@ -166,8 +161,8 @@ for (const city of CITIES) {
       disproven: veganDisproven(r),
       note: 'Held at "options": vegan finding(s) on this record were checked against ' +
             'their sources and contradicted by them.' };
-    r.vegan_status = 'options';
-    r.vegan_label = VEGAN_LABEL.options;
+    setTier(r, 'vegan_status', 'options', { by: 'enforce-cited-claims',
+      why: 'fully-vegan label contradicted by this record\'s own cited sources' });
     r.vegan_detail = `[Held at "some vegan options" ${DATE}] The "fully vegan" label was ` +
       `contradicted by this record's own cited sources. ` + (r.vegan_detail || '');
     dirty = true;

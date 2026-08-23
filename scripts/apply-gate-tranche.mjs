@@ -21,6 +21,7 @@
 //   node scripts/apply-gate-tranche.mjs <A|B|C> [--apply]
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { EVIDENCE_KEYS as EV, GF_LABEL, VEGAN_LABEL as VG_LABEL } from './lib-tiers.mjs';
 
 const TRANCHE = (process.argv[2] || '').toUpperCase();
 const APPLY = process.argv.includes('--apply');
@@ -32,13 +33,8 @@ const OVERRIDE = new Set(process.argv.filter(a => a.startsWith('--override=')).f
 if (!'ABC'.includes(TRANCHE)) { console.error('usage: apply-gate-tranche.mjs <A|B|C> [--apply]'); process.exit(1); }
 
 const DATE = '2026-08-23';
-const EV = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact','staff_allergy_handling','positives'];
 const TOP = { gf_confidence: ['dedicated', 'high'], vegan_status: ['full'] };
 const band = x => TOP[x.field].includes(x.recommended) ? 'A' : (x.current === 'no' ? 'C' : 'B');
-const GF_LABEL = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-                   options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
-const VG_LABEL = { full:'Fully vegan', options:'Some vegan options',
-                   limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
 // Count only the disproven claims that bear on the axis being moved. 玄米菜食 was held
 // out of a GF upgrade by a disproven claim that its miso broth might not be bonito-free
 // — true, worth knowing, and about dashi rather than gluten. A vegan finding is not

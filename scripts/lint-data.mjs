@@ -11,6 +11,7 @@
  */
 import fs from 'node:fs';
 import { CITIES, readCity } from './lib-city.mjs';
+import { GF_LABEL as GF_LABELS, VEGAN_LABEL, GF_TIERS, VEGAN_TIERS, readTierWrites } from './lib-tiers.mjs';
 
 const errors = [], warnings = [];
 const err = (c, m) => errors.push(`${c}: ${m}`);
@@ -26,8 +27,6 @@ const GF_CONF  = new Set(['dedicated','high','options','ask','no']);
 const VEGAN    = new Set(['full','options','limited','ask','no']);
 const HOURS_ST = new Set(['regular','irregular','seasonal','varies','closed','unknown','by_reservation']);
 const TOP_TIER = new Set(['dedicated','high']);
-const GF_LABELS = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-                    options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
 const VG_LABELS = { full:'Fully vegan', options:'Some vegan options',
                     limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
 const CLAIMS_SAFER = new Set(['dedicated','high','options']);

@@ -7,11 +7,10 @@
 // Add a batch, run it, commit. Re-running is safe: a record already carrying the
 // same decision is left alone.
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { setTier } from './lib-tiers.mjs';
 
 const DATE = '2026-08-19';
 const BY = 'Greg';
-const LABEL = { dedicated: 'Dedicated · celiac-safe', high: 'Strong GF focus',
-                options: 'Some GF options', ask: 'GF — ask', no: 'Not gluten-free' };
 
 // name fragment -> decision. `to` omitted means "keep at current tier".
 const DECISIONS = [
@@ -98,8 +97,7 @@ for (const city of CITIES) {
 
     if (r.safety?.owner_signoff?.date === DATE && r.gf_confidence === to) { skipped++; continue; }
 
-    r.gf_confidence = to;
-    r.gf_label = LABEL[to] || r.gf_label;
+    setTier(r, 'gf_confidence', to, { by: BY, why: d.reason });
     r.safety = r.safety || {};
     r.safety.owner_signoff = {
       decision: d.decision, from, to, by: BY, date: DATE, reason: d.reason,

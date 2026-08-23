@@ -28,9 +28,8 @@
 //   node scripts/flag-divergent-duplicates.mjs [--apply]
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { EVIDENCE_KEYS as EV, GF_LABEL, VEGAN_LABEL as VG_LABEL, GF_RANK, VEGAN_RANK as VG_RANK, setTier } from './lib-tiers.mjs';
 
-const EV = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact',
-            'staff_allergy_handling','positives'];
 const url = u => typeof u === 'string' && /^https?:\/\//.test(u);
 const srcs = r => {
   const s = new Set();
@@ -74,12 +73,6 @@ for (const p of pairs) {
   console.log(`    ${p.b.id.padEnd(30)} gf=${String(p.b.gf).padEnd(10)} vegan=${p.b.vegan.padEnd(8)} ${String(p.b.name).slice(0, 34)}\n`);
 }
 // Align same-name pairs to the more cautious tier.
-const GF_RANK = { no: 0, ask: 1, options: 2, high: 3, dedicated: 4 };
-const VG_RANK = { no: 0, ask: 1, limited: 2, options: 2, full: 3 };
-const GF_LABEL = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-                   options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
-const VG_LABEL = { full:'Fully vegan', options:'Some vegan options',
-                   limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
 const aligned = [];
 if (APPLY) {
   for (const city of CITIES) {
@@ -105,8 +98,8 @@ if (APPLY) {
       const vg = signedTier('vegan_status') ??
         ((VG_RANK[A.vegan_status] <= VG_RANK[B.vegan_status]) ? A.vegan_status : B.vegan_status);
       for (const r of [A, B]) {
-        if (r.gf_confidence !== gf) { r.gf_confidence = gf; r.gf_label = GF_LABEL[gf]; dirty = true; }
-        if (r.vegan_status !== vg) { r.vegan_status = vg; r.vegan_label = VG_LABEL[vg]; dirty = true; }
+        if (setTier(r, 'gf_confidence', gf, { by: 'flag-divergent-duplicates', why: 'aligned to the more cautious of a divergent duplicate pair' })) dirty = true;
+        if (setTier(r, 'vegan_status', vg, { by: 'flag-divergent-duplicates', why: 'aligned to the more cautious of a divergent duplicate pair' })) dirty = true;
         r.duplicate_aligned = { with: r.id === A.id ? B.id : A.id, gf, vegan: vg, date: '2026-08-21',
           note: 'Same shop as the paired record under a different spelling. Both aligned to the ' +
                 'more cautious tier so the app does not answer one question two ways. Not merged — ' +

@@ -10,6 +10,7 @@
 //     Those are recorded as gf_proposed_tier and queued for review.
 import fs from 'node:fs';
 import { readCity, writeCity } from './lib-city.mjs';
+import { GF_RANK as RANK, setTier } from './lib-tiers.mjs';
 
 // This pass re-merges the enrich shards from scratch on every rebuild, which makes it
 // idempotent and also makes it the last word — it was silently restoring tiers that had
@@ -26,7 +27,6 @@ const signedOn = (r, field) => {
 };
 const locked = (r, field) => GATED.has(r.id + '|' + field) || signedOn(r, field);
 
-const RANK = { no: 0, ask: 1, options: 2, high: 3, dedicated: 4 };
 const TOP = new Set(['dedicated', 'high']);
 const DATE = '2026-08-19';
 
@@ -64,7 +64,8 @@ for (const e of enrich) {
   if (filled(e.cultural_comfort) && !filled(r.cultural_comfort)) r.cultural_comfort = e.cultural_comfort;
   if (filled(e.gf_detail))    r.gf_detail    = e.gf_detail;
   if (filled(e.vegan_detail)) r.vegan_detail = e.vegan_detail;
-  if (filled(e.vegan_status) && !locked(r, 'vegan_status')) r.vegan_status = e.vegan_status;
+  if (filled(e.vegan_status) && !locked(r, 'vegan_status'))
+    setTier(r, 'vegan_status', e.vegan_status, { by: 'tokyo3 deep-enrich', why: 'enrichment verdict' });
   if (filled(e.sources)) { r.chef_bio = r.chef_bio || {}; if (!filled(r.chef_bio.sources)) r.chef_bio.sources = e.sources; }
   r.safety = r.safety || {};
   r.safety.last_checked = DATE;
@@ -76,9 +77,8 @@ for (const e of enrich) {
   if (!to || to === from) continue;
 
   if (RANK[to] < RANK[from]) {                       // downgrade — always safe
-    if (!locked(r, 'gf_confidence')) r.gf_confidence = to;
-    r.gf_label = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-                   options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' }[to];
+    if (!locked(r, 'gf_confidence'))
+      setTier(r, 'gf_confidence', to, { by: 'tokyo3 deep-enrich', why: 'enrichment downgrade' });
     stats.down++;
   } else if (TOP.has(to)) {                          // promotion into top tier — never automatic
     r.gf_proposed_tier = { to, from, by: 'tokyo3 deep-enrich', date: DATE,
@@ -87,8 +87,8 @@ for (const e of enrich) {
     queue.push({ id: r.id, name: r.name, from, proposed: to, confidence: e.enrich_confidence });
     stats.queued++;
   } else if (e.enrich_confidence === 'high' || e.enrich_confidence === 'medium') {
-    if (!locked(r, 'gf_confidence')) r.gf_confidence = to;                            // ask -> options, adequately evidenced
-    r.gf_label = { options:'Some GF options', ask:'GF — ask' }[to] || r.gf_label;
+    if (!locked(r, 'gf_confidence'))                 // ask -> options, adequately evidenced
+      setTier(r, 'gf_confidence', to, { by: 'tokyo3 deep-enrich', why: `enrichment upgrade, confidence ${e.enrich_confidence}` });
     stats.up++;
   } else {
     stats.queued++;

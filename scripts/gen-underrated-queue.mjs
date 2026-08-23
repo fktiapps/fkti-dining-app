@@ -14,6 +14,7 @@
 //   node scripts/gen-underrated-queue.mjs
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { GF_LABEL, VEGAN_LABEL as VG_LABEL } from './lib-tiers.mjs';
 
 const DIR = 'data/_cite_verify_results';
 const RANK = { no: 0, ask: 1, options: 2, limited: 2, high: 3, full: 3, dedicated: 4 };
@@ -176,10 +177,6 @@ if (fs.existsSync(DIR))
 
 // apply the downgrades
 const APPLY = process.argv.includes('--apply');
-const GF_LABEL = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
-                   options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' };
-const VG_LABEL = { full:'Fully vegan', options:'Some vegan options',
-                   limited:'Limited vegan', ask:'Vegan — ask', no:'Not vegan' };
 if (APPLY && downgrades.length) {
   for (const c of CITIES) {
     const j = readCity(c); let dirty = false;

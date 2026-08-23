@@ -10,11 +10,10 @@
 // caretaker can re-audit without re-researching.
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
+import { GF_LABEL as LABEL, setTier } from './lib-tiers.mjs';
 
 const DATE = new Date().toISOString().slice(0, 10);
 const TOP = new Set(['dedicated', 'high']);
-const LABEL = { dedicated: 'Dedicated gluten-free', high: 'Strong GF focus',
-                options: 'Some GF options', ask: 'GF — ask', no: 'Not gluten-free' };
 
 const dir = 'data/_gf_audit_verdicts';
 const verdicts = fs.readdirSync(dir)
@@ -69,8 +68,7 @@ for (const city of CITIES) {
     r.safety.last_checked = DATE;
 
     if (r.gf_confidence !== to) {
-      r.gf_confidence = to;
-      r.gf_label = LABEL[to] || r.gf_label;
+      setTier(r, 'gf_confidence', to, { by: 'adversarial GF review', why: v.reasoning });
       const note = `[Adversarial GF review ${DATE}: ${from}→${to}. ${v.reasoning}]`;
       if (!String(r.gf_detail || '').includes('Adversarial GF review'))
         r.gf_detail = `${note} ${r.gf_detail || ''}`.trim();
