@@ -1308,8 +1308,8 @@
    "category": "OMNI",
    "lat": 34.688194,
    "lng": 135.82486,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
    "gf_detail": "⚠ Japanese-first review 2026-07-03 (high→options): Japanese sources show a SHARED kitchen: only the sweets menu is declared 100% GF while savory dishes are GF item-by-item; barley beer (エビスビール) + wine/sake served on premises. A documented Oct 2025 celiac glutening traced to a sauce on the 'GF chicken plate' confirms the hidden-gluten risk. Not celiac-safe. — Prior: ⚠ Safety review 2026-07-02: downgraded dedicated→high. Genuine 'Gluten Free & Vegan' cafe that makes its own soy sauce koji / salt koji (addresses wheat-soy trap) and clears 'high' with multiple independent positive GF reviews. Pulled OFF dedicated: (a) own site states NO dedicated-only kitchen/CC/fryer protocol (those claims trace only to AI summaries), and (b) a recent real glutening report exists (Chela R, Oct 19 2025: GF chicken plate, 'very sick since'). Uncertainty = caution. — Prior note: The cafe is built around gluten-free cooking: all desserts/sweets are gluten-free, and they have developed gluten-free versions of burgers, buns/bread, fried chicken and fries. The signature lunch is a \"Gluten-free Beauty Set Meal\" (グルテンフリー美容定食). However, no dedicated-fryer or documented cross-contamination protocol is published, so strictly celiac diners should confirm handling directly. Note their house-made fermented seasonings include soy koji / soy-sauce koji (醤油糀) and standard soy sauce can contain wheat — ask which seasoning is used on a given dish.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
@@ -1455,7 +1455,29 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-22",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "options",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "A",
+     "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: Cut high->options largely on a HappyCow line no agent can reach (Incapsula blocks every UA, proxy and Wayback). Every reachable source contradicts it: FMGF titles it \"Dedicated Gluten-Free Restaurant in Nara\" with 20 dedicated-fryer reports, 24 \"Dedicated GF\" tags, zero symptom reports and a review six days old; Tabelo"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "options",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "A",
+      "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: Cut high->options largely on a HappyCow line no agent can reach (Incapsula blocks every UA, proxy and Wayback). Every reachable source contradicts it: FMGF titles it \"Dedicated Gluten-Free Restaurant in Nara\" with 20 dedicated-fryer reports, 24 \"Dedicated GF\" tags, zero symptom reports and a review six days old; Tabelo"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "english",
@@ -42233,8 +42255,8 @@
    "category": "OMNI",
    "lat": 34.68055,
    "lng": 135.829178,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
    "gf_detail": "⚠ Safety review 2026-07-02: downgraded high→options. Makes exactly ONE product — a flourless sansho gateau chocolat — and own site explicitly claims gluten-free ('no wheat flour, rice flour, or baking powder used at all'), so no wheat in the environment. But rests on essentially a single source (the shop itself) with zero independent celiac-grade corroboration; independent listings don't mention GF at all. Single source can never be high/dedicated. — Prior note: The shop's signature and essentially sole product is a gateau au chocolat made deliberately without wheat flour or rice flour, so it is naturally gluten-free. The official site and a local news feature both describe it as グルテンフリー / made with no flour. This is not a certified celiac-dedicated facility and there is no published statement about cross-contamination controls, so highly gluten-sensitive visitors should still confirm in person, but the core product genuinely contains no gluten grains.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -42343,7 +42365,29 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "options",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "A",
+     "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: Single-product shop excluding 小麦粉, 米粉 and baking powder outright, corroborated by two sources, yet sits at options."
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "options",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "A",
+      "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: Single-product shop excluding 小麦粉, 米粉 and baking powder outright, corroborated by two sources, yet sits at options."
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -47194,7 +47238,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47205,7 +47249,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -47407,8 +47451,8 @@
    "category": "BOTH",
    "lat": 34.6946,
    "lng": 135.7815,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
    "gf_detail": "[Adversarial GF review 2026-08-19: high→options. The record's headline quote すべての商品がグルテンフリー is attributed to the shop, but reading laccola.com and the laccola.base.shop storefront directly, the shop makes NO blanket all-products-gluten-free claim — it brands itself vegan & glutenfree sweets and states 小麦・卵・乳製品・白砂糖は不使用 on individual items only; that blanket quote actually traces to komeko-palette.com, which is a rival rice-flour bread e-commerce site running an SEO listicle, not an independent auditor. That leaves the Yahoo News/ナラクロ opening piece as the single genuinely independent source, which cannot support high. Compounding it: laccola sells an entire オートミールクッキー category and nowhere on the site, the storefront or any source is there a certified-gluten-free-oat sourcing statement — in Japan oats are routinely milled alongside wheat and barley, so this is a live gluten vector, not a theoretical one. Mildly reassuring counter-finding: the product-level 特定原材料 allergen notices name almonds, soy and tree nuts but never 小麦, consistent with a wheat-free workshop.] Wholly gluten-free & vegan patisserie — the shop states 「すべての商品がグルテンフリー」 (all products are gluten-free) and 「植物由来の材料だけで」, made without wheat, eggs, dairy or refined sugar. Baking is done with rice flour (and oats/oatmeal) and no wheat flour is used on the premises, so cross-contact from wheat is inherently very low. However, the shop publishes no explicit celiac cross-contamination protocol, and the use of oats (naturally GF but commonly wheat-cross-contaminated unless certified) is a caveat for sensitive celiacs — hence high rather than dedicated.",
    "vegan_status": "full",
    "vegan_label": "Fully vegan",
@@ -47546,7 +47590,29 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "options",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "A",
+     "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: The high->options downgrade rested on \"the shop makes no blanket GF claim\". laccola.com's own header and meta description do make one, and every storefront item is 米粉-based with no 小麦 in any 原材料. Keep the uncertified-oat caveat, whose real evidence is laccola.base.shop rather than the komeko-palette page cited."
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "options",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "A",
+      "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: The high->options downgrade rested on \"the shop makes no blanket GF claim\". laccola.com's own header and meta description do make one, and every storefront item is 米粉-based with no 小麦 in any 原材料. Keep the uncertified-oat caveat, whose real evidence is laccola.base.shop rather than the komeko-palette page cited."
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47557,7 +47623,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -47595,7 +47661,7 @@
    "lng": 135.7331,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and its cookie boxes carry the declared allergen set 卵・乳・小麦・くるみ — wheat is mixed and baked daily in the same small patisserie kitchen as the rice-flour chiffon, with no allergen or cross-contact statement published anywhere. The 米粉/グルテンフリー wording in every source is scoped to the chiffon and 100年しふぉん products only (an ingredient claim, 小麦粉不使用, not a facility or celiac claim), and it all traces to the shop's own PR — narakko, nara-gourmet and atpress are promotional echoes of one source, not independent GF verification. There is zero celiac-grade corroboration: PUKKU appears on no FindMeGlutenFree, HappyCow, Atly or gluten-free-japan listing, so no celiac has ever reported eating here safely (equally, I found no 'got glutened' report — the record simply has no celiac evidence in either direction). The chiffon itself is genuinely wheat-free by ingredient (卵・米粉・牛乳・きび砂糖・米油・レモン果汁), which is why this lands at options rather than ask, but 'high' is not defensible for a shop that bakes wheat flour alongside it.] 米粉シフォンケーキ専門店 — a rice-flour chiffon specialist where every cake is 100% rice flour and wheat-free. The shop states its signature 「100年しふぉん」 is 「米粉100%のグルテンフリー」 and describes its baking as 「小麦粉不使用（グルテンフリー）」, using 九州産米粉 plus 吉野本葛 (Yoshino kudzu) and 170-year-old 米飴 rice syrup. Wheat IS baked on the premises — the shop’s own ingredient listing shows 薄力粉 in its cookies, galettes bretonnes and butter-sand cookies, and its tins declare 卵・乳・小麦・くるみ — so flour cross-contact is a live risk in this small kitchen. The GF wording is scoped to the chiffon dough only. In addition, the attached café also serves a lunch (まんPUKKUランチ) whose full-menu gluten-free status is not individually documented, and there is no explicitly published celiac cross-contact protocol — hence options. Celiacs should confirm the lunch/morning items are also 米粉 before ordering.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: high→options. I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and its cookie boxes carry the declared allergen set 卵・乳・小麦・くるみ — wheat is mixed and baked daily in the same small patisserie kitchen as the rice-flour chiffon, with no allergen or cross-contact statement published anywhere. The 米粉/グルテンフリー wording in every source is scoped to the chiffon and 100年しふぉん products only (an ingredient claim, 小麦粉不使用, not a facility or celiac claim), and it all traces to the shop's own PR — narakko, nara-gourmet and atpress are promotional echoes of one source, not independent GF verification. There is zero celiac-grade corroboration: PUKKU appears on no FindMeGlutenFree, HappyCow, Atly or gluten-free-japan listing, so no celiac has ever reported eating here safely (equally, I found no 'got glutened' report — the record simply has no celiac evidence in either direction). The chiffon itself is genuinely wheat-free by ingredient (卵・米粉・牛乳・きび砂糖・米油・レモン果汁), which is why this lands at options rather than ask, but 'high' is not defensible for a shop that bakes wheat flour alongside it.] 米粉シフォンケーキ専門店 — a rice-flour chiffon specialist where every cake is 100% rice flour and wheat-free. The shop states its signature 「100年しふぉん」 is 「米粉100%のグルテンフリー」 and describes its baking as 「小麦粉不使用（グルテンフリー）」, using 九州産米粉 plus 吉野本葛 (Yoshino kudzu) and 170-year-old 米飴 rice syrup. Wheat IS baked on the premises — the shop’s own ingredient listing shows 薄力粉 in its cookies, galettes bretonnes and butter-sand cookies, and its tins declare 卵・乳・小麦・くるみ — so flour cross-contact is a live risk in this small kitchen. The GF wording is scoped to the chiffon dough only. In addition, the attached café also serves a lunch (まんPUKKUランチ) whose full-menu gluten-free status is not individually documented, and there is no explicitly published celiac cross-contact protocol — hence options. Celiacs should confirm the lunch/morning items are also 米粉 before ordering.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
    "vegan_detail": "Chiffon cakes are built on 赤鶏の卵 (red-chicken eggs) and 北海道産牛乳 (Hokkaido milk), with 生クリーム (fresh cream) fillings — not vegan. No vegan options are advertised.",
@@ -47728,7 +47794,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47739,7 +47805,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -47786,8 +47852,8 @@
    "category": "GF",
    "lat": 34.6871,
    "lng": 135.7106,
-   "gf_confidence": "options",
-   "gf_label": "Some GF options",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
    "gf_detail": "[Adversarial GF review 2026-08-19: dedicated→options. The label was disproved by the shop itself. Aimo's own Instagram bio — the record's own cited source — carries 「※アレルギー対応店ではございません※」 ('this is NOT an allergen-accommodation store'), which is an explicit refusal to stand behind allergen safety and is flatly incompatible with a 'Dedicated · celiac-safe' label. Beyond that, corroboration collapses to a single point: the curated Japan GF guide entry (now jp.japan-glutenfree.com/bakery-gf) is itself just a verbatim reprint of the shop's own sentence, and I found no Tabelog page for the bakery, no blog write-ups, no HappyCow or FindMeGlutenFree entry, and no independent diner account at all. The shop's wheat-free statement is also scoped to 「パン」 (bread) only — it does not cover the 米粉マフィン, cakes, fillings or the separate 2F lifestyle-goods/art café, whose menu I could not verify. Under the hard single-source rule this cannot hold dedicated or high.] Aimo is a fully wheat-free bakery in Higashi-Ikoma where every product is gluten-free — rated ★★★★★ (all products gluten-free) by the curated JP celiac guide jp.japan-glutenfree.com. The shop's own claim is 「パンは卵、牛乳、豆乳、小麦粉、砂糖不使用です。米粉ではなくお米から作っています」— the bread uses no eggs, dairy, soy milk, wheat flour or sugar and, notably, is made from whole rice (生米/お米) rather than rice flour. Because no wheat flour is handled anywhere on the premises, cross-contact risk is minimal; still, confirm on the day whether any topping or filling (e.g. cakes) introduces other allergens.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
@@ -47892,7 +47958,29 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "options",
+     "to": "high",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "A",
+     "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: The dedicated->options downgrade rests on an allergy-LIABILITY disclaimer rather than any wheat on the premises. The cited guide, updated 2026-07-26, lists it among 90 shops where 「工房・店内に小麦粉を一切持ち込まず」."
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "options",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "A",
+      "reason": "Greg approved tranche A of the verification sweep's upgrade queue on 2026-08-23. Evidence: The dedicated->options downgrade rests on an allergy-LIABILITY disclaimer rather than any wheat on the premises. The cited guide, updated 2026-07-26, lists it among 90 shops where 「工房・店内に小麦粉を一切持ち込まず」."
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -47903,7 +47991,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "dedicated",

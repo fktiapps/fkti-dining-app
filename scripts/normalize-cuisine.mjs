@@ -17,6 +17,22 @@ export const CANON = new Set([
 
 // explicit, auditable map. Every non-canon value observed in the data gets a home.
 const MAP = {
+  // --- slugs that arrived with the 2026-08-23 verification sweep ---
+  // 割烹 is a chef's counter serving a seasonal course; that is kaiseki as a traveller
+  // meets it, and its own chip would split the same restaurants across two filters.
+  'kappo':'kaiseki',
+  // 串揚げ is deep-fried skewers — the same wheat-batter fryer as a katsu counter, which
+  // is the one thing about the shop a celiac has to see before anything else.
+  'kushiage':'katsu',
+  // an agent coinage for a chicken specialist; yakitori is the chip a traveller scans for.
+  'torimeat':'yakitori',
+  // 郷土料理 — regional home cooking, which is what shokudo already means here.
+  'kyodo-ryori':'shokudo',
+  'indian':'curry',
+  // "unknown" is not a cuisine, it is a missing value, and it belongs where missing
+  // values go rather than becoming a chip nobody can use.
+  'unknown':'other',
+
   // --- slugs the Tokyo deep-enrich agents coined (2026-08-20) ---
   // 定食屋 IS a shokudo; the two words name the same kind of shop, so this folds
   // rather than adding a chip that would split the same restaurants across two

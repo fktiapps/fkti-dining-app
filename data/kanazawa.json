@@ -700,8 +700,8 @@
    "category": "OMNI",
    "lat": 36.571144,
    "lng": 136.655823,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "This is a seafood izakaya whose menu centers on sashimi and seafood rice bowls (served with wheat-based soy sauce), tempura, and breaded tonkatsu — all of which contain or are dipped in gluten. Japanese dashi and seasonings here typically contain wheat-derived soy sauce. No gluten-free menu, dedicated preparation, or allergen handling is documented. Not suitable for celiacs or anyone needing strict gluten avoidance.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -846,7 +846,29 @@
     "staff_allergy_handling": [],
     "positives": [],
     "confidence": "medium",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-22",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: gf_detail asserts 'no gluten-free menu, dedicated preparation, or allergen handling is documented', but the operator's own takeout page states 「※アレルギー対応が可能ですので、ご要望のある方はご相談ください。」 — allergy accommodation on request. That is documented allergen handling (scoped to pre-ordered オードブル platters), and the menu carries naturall"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: gf_detail asserts 'no gluten-free menu, dedicated preparation, or allergen handling is documented', but the operator's own takeout page states 「※アレルギー対応が可能ですので、ご要望のある方はご相談ください。」 — allergy accommodation on request. That is documented allergen handling (scoped to pre-ordered オードブル platters), and the menu carries naturall"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -991,11 +1013,11 @@
    "category": "MOM_AND_POP",
    "lat": 36.570412,
    "lng": 136.657181,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "This is a coffee shop, not a gluten-free destination. Coffee and espresso drinks are naturally gluten-free, but the cafe also serves cakes and sweets and makes no gluten-free claims; there is no dedicated handling and a celiac traveler cannot rely on any safety measures here.",
-   "vegan_status": "ask",
-   "vegan_label": "Vegan — ask",
+   "vegan_status": "limited",
+   "vegan_label": "Limited vegan",
    "vegan_detail": "Black coffee is plant-based, but milk-based lattes, the homemade cakes, and the signature gold-leaf soft serve are dairy. No plant-milk option is documented; a vegan would need to ask and would largely be limited to black coffee.",
    "hours_raw": "08:30-17:00 (open daily)",
    "hours": {
@@ -1099,7 +1121,40 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-22",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "vegan_status",
+     "from": "ask",
+     "to": "limited",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "B",
+     "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: Plain black drip coffee and iced coffee are documented here and are unambiguously plant-based, so there is nothing for a vegan to ask about before ordering one; 'ask' overstates the uncertainty. 'limited' is the honest tier — a vegan can drink here, but no plant milk is documented, and every reviewer photo is of a dair"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep upgrade queue on 2026-08-23. Evidence: The record's own positives text says a plain hand-dripped or iced coffee here is a low-risk gluten-free choice, and the Tabelog listing (ジャンル 喫茶店, hand-dripped coffee confirmed by a 2026/01 reviewer, coffee beans sold) shows the core product is exactly that. A gf tier of 'no' contradicts the record's own detail text an",
+      "recovered": "reconstructed from the queue; the original write was overwritten by a same-record signoff"
+     },
+     {
+      "decision": "approve",
+      "field": "vegan_status",
+      "from": "ask",
+      "to": "limited",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: Plain black drip coffee and iced coffee are documented here and are unambiguously plant-based, so there is nothing for a vegan to ask about before ordering one; 'ask' overstates the uncertainty. 'limited' is the honest tier — a vegan can drink here, but no plant milk is documented, and every reviewer photo is of a dair"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -2106,11 +2161,11 @@
    "category": "OMNI",
    "lat": 36.570385,
    "lng": 136.655243,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "This is a traditional Japanese sweets (wagashi) tea salon. Core offerings — fresh seasonal sweets (上生菓子), yokan, dorayaki, anmitsu, kuzukiri, zenzai — are wheat-and-bean-based and made on a confectionery line that handles flour; matcha sweets are dusted and plated together with these. There is no dedicated gluten-free menu, no allergen protocol documented, and cross-contact is essentially unavoidable. Not suitable for celiacs. A few items (plain matcha, some rakugan/agar-based sweets) may incidentally avoid wheat, but staff cannot guarantee this — ask only if you tolerate trace gluten.",
-   "vegan_status": "ask",
-   "vegan_label": "Vegan — ask",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
    "vegan_detail": "No vegan menu is advertised. Many traditional wagashi here are plant-based by nature (red-bean an, mochi, agar/kanten sweets, kuzukiri, tokoroten, and straight matcha or hojicha/sencha), but other sets include dairy, egg, or honey (cream, ice cream with kakigori, dorayaki, certain confections). Nothing is labeled, so a vegan would need to ask item-by-item; a matcha-with-an-based-wagashi or a kanten/anmitsu order is the most likely fit but not confirmed.",
    "hours_raw": "Tea salon: 09:30-17:00 daily (per official Tabelog info). Shop counter listed as 9:00-16:30 on the official site. Closed Jan 1-2 only.",
    "hours": {
@@ -2227,7 +2282,40 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-22",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "vegan_status",
+     "from": "ask",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "B",
+     "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: Four items are plant-based as ordinarily made and are listed by name with prices: ところてん 850円, 豆かん 850円, くずきり 900円, あんみつ 1,100円 - and the dairy version is separately listed as クリームあんみつ, so the plain one is not ambiguous. The sweetener used throughout is 黒蜜 / 森八特製の蜜 (sugar syrup), not honey. A named, orderable set of pla"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep upgrade queue on 2026-08-23. Evidence: The published 茶寮 menu runs to sixteen items and exactly one of them is a wheat food (the どら焼き in the coffee set, which the page itself says may be substituted). Everything else is agar, kudzu, bean or rice based: ところてん, 豆かん, くずきり, あんみつ, 黒羊羹「玄」, 上生菓子, かき氷 with house syrup, アイス餡添. Labelling this 'no' with 'Not suitable f",
+      "recovered": "reconstructed from the queue; the original write was overwritten by a same-record signoff"
+     },
+     {
+      "decision": "approve",
+      "field": "vegan_status",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: Four items are plant-based as ordinarily made and are listed by name with prices: ところてん 850円, 豆かん 850円, くずきり 900円, あんみつ 1,100円 - and the dairy version is separately listed as クリームあんみつ, so the plain one is not ambiguous. The sweetener used throughout is 黒蜜 / 森八特製の蜜 (sugar syrup), not honey. A named, orderable set of pla"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -3770,8 +3858,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.572475,
    "lng": 136.66629,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "No gluten-free program. Signature items are built on wheat-based monaka wafers, dorayaki pancakes, and warabi mochi sweets, and there is no documented allergen control or dedicated handling. Not suitable for celiacs; a sensitive diner could in principle ask for a plain sorbet served in a cup, but cross-contact in a small shared sweets kitchen is unaddressed.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
@@ -3891,7 +3979,31 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-22",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "overrode_disproven": 2,
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: options — the operator states in its own words that its signature item's wafer is gluten-free: 東山アイスもなか 「原材料に北陸産もち米のみを用いた最中種は自然な甘みと香ばしい風味が特徴のグルテンフリー」, and it publishes an アレルギー原材料 line for every gelato flavour, of which exactly one (金沢大野醤油＆焦がしキャラメル: 乳/卵/大豆/小麦) contains 小麦. 雪見アイスもなか is 最中種＋求肥＋粒餡 and the 2F menu is わらび餅・"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "overrode_disproven": 2,
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: options — the operator states in its own words that its signature item's wafer is gluten-free: 東山アイスもなか 「原材料に北陸産もち米のみを用いた最中種は自然な甘みと香ばしい風味が特徴のグルテンフリー」, and it publishes an アレルギー原材料 line for every gelato flavour, of which exactly one (金沢大野醤油＆焦がしキャラメル: 乳/卵/大豆/小麦) contains 小麦. 雪見アイスもなか is 最中種＋求肥＋粒餡 and the 2F menu is わらび餅・"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -6415,11 +6527,11 @@
    "category": "MOM_AND_POP",
    "lat": 36.56028,
    "lng": 136.656082,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "Several signature sweets are starch-based rather than wheat-based — honkuzukiri is made from premium Yoshino arrowroot (kudzu) starch and the honwarabimochi from bracken starch with kinako and kuromitsu — so they are inherently low in wheat. However, the kitchen documents no celiac-safe handling, no dedicated equipment, and items like anmitsu/zenzai and seasonal toppings may involve shared utensils or wheat-containing components. Celiacs should confirm each item directly; this is not a certified gluten-free venue.",
-   "vegan_status": "ask",
-   "vegan_label": "Vegan — ask",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
    "vegan_detail": "Many items are plant-leaning — kuzukiri, warabimochi, sweet-potato zenzai and anmitsu are built around starches, red beans, kinako and kuromitsu — but parfaits and cream anmitsu include dairy, and no dish is labeled vegan. Dashi or other animal-derived elements in some items are not ruled out. Vegans should ask item by item.",
    "hours_raw": "11:00–18:00 (L.O. 17:30), closed Wednesdays",
    "hours": {
@@ -6521,7 +6633,40 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-22",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "vegan_status",
+     "from": "ask",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "B",
+     "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: 本葛きり (kudzu starch + 黒みつ), 本葛もち (kudzu starch + きなこ) and 本蕨もち (bracken starch + きなこ + 黒みつ) are plant-based by composition, as is the 加賀棒茶 that comes with every order and the 黒蜜きなこ shaved ice with its 無添加自家製 syrup; the dairy is confined to the 抹茶パフェ and the 白玉クリームあんみつ, which the record already flags. Weaker than the GF "
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep upgrade queue on 2026-08-23. Evidence: Three of the six published sweets are made from starches the shop names by origin — 吉野産本葛粉 (本葛きり, 本葛もち) and 熊本産本蕨粉 (本蕨もち) — served with きなこ and 黒みつ, and no item on the entire menu contains wheat; the shaved-ice syrups are 「すべて無添加の自家製」. That is REVIEW_PROTOCOL's 'some naturally-GF dishes, NO special handling' definition",
+      "recovered": "reconstructed from the queue; the original write was overwritten by a same-record signoff"
+     },
+     {
+      "decision": "approve",
+      "field": "vegan_status",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: 本葛きり (kudzu starch + 黒みつ), 本葛もち (kudzu starch + きなこ) and 本蕨もち (bracken starch + きなこ + 黒みつ) are plant-based by composition, as is the 加賀棒茶 that comes with every order and the 黒蜜きなこ shaved ice with its 無添加自家製 syrup; the dairy is confined to the 抹茶パフェ and the 白玉クリームあんみつ, which the record already flags. Weaker than the GF "
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -7769,8 +7914,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.557247,
    "lng": 136.647598,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "No gluten-free program is documented. Rakugan is traditionally pressed rice-flour/wasanbon sugar candy and is often wheat-free, and zenzai (red bean soup) is rice-and-bean based, but namagashi (上生菓子) and seasonal items can contain wheat, and no allergen information or cross-contact controls are published. Celiac diners must ask about each specific item.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
@@ -7871,7 +8016,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "ask",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "B",
+     "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: gf_detail rests on 'no allergen information or cross-contact controls are published', and the first half is simply wrong — Moroeya publishes a per-item 【アレルギー表示】 (塩どら焼 「小麦・卵・乳・山芋」; しょうゆ落がん 「醤油に小麦、大豆を含みます。」; 十二ヶ月 and 加州香 「なし」), which is exactly the information a celiac needs to choose. On top of that the branch's own pu"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: gf_detail rests on 'no allergen information or cross-contact controls are published', and the first half is simply wrong — Moroeya publishes a per-item 【アレルギー表示】 (塩どら焼 「小麦・卵・乳・山芋」; しょうゆ落がん 「醤油に小麦、大豆を含みます。」; 十二ヶ月 and 加州香 「なし」), which is exactly the information a celiac needs to choose. On top of that the branch's own pu"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -10144,8 +10311,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.572254,
    "lng": 136.667297,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "This is a traditional sweets cafe whose menu centers on wheat- and dairy-based items: cheesecake, parfaits, Japanese confections (wagashi/上生菓子), and zenzai. There is no documented gluten-free menu, no dedicated preparation, and no allergen handling described. Not suitable for celiacs.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
@@ -10251,7 +10418,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: FALSE WARNING. gf_detail says the menu 'centers on wheat- and dairy-based items' and calls it 'Not suitable for celiacs', but nothing documented here centers on wheat. NAVITIME describes a 「コーヒー専門店」 pouring cup-by-cup hand drip, whose sweets are 「手作りのチーズケーキや抹茶ブランマンジェ、和風パフェ」 — blancmange is a starch/milk set dessert, no"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: FALSE WARNING. gf_detail says the menu 'centers on wheat- and dairy-based items' and calls it 'Not suitable for celiacs', but nothing documented here centers on wheat. NAVITIME describes a 「コーヒー専門店」 pouring cup-by-cup hand drip, whose sweets are 「手作りのチーズケーキや抹茶ブランマンジェ、和風パフェ」 — blancmange is a starch/milk set dessert, no"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -10271,8 +10460,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.57233,
    "lng": 136.663544,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "Not a gluten-free destination. The café serves wagashi and toast-style items with no celiac protocols documented; the complimentary sweets are chosen by the house. No dedicated equipment or allergen handling is described, so it is not suitable for someone needing strict gluten avoidance.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
@@ -10353,7 +10542,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The orderable menu is coffee-led and mostly naturally wheat-free — Tabelog's keyword block for the shop is コーヒー / 羊羹 / 栗羊羹 / ぜんざい / あんこ / 和三盆 / 抹茶 / 甘酒 / カフェ・オ・レ, and the free welcome item reviewers describe is 加賀棒茶と羊羹. The only wheat on the list is トースト / トーストセット, a separate toaster item. Calling the whole café 'Not g"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The orderable menu is coffee-led and mostly naturally wheat-free — Tabelog's keyword block for the shop is コーヒー / 羊羹 / 栗羊羹 / ぜんざい / あんこ / 和三盆 / 抹茶 / 甘酒 / カフェ・オ・レ, and the free welcome item reviewers describe is 加賀棒茶と羊羹. The only wheat on the list is トースト / トーストセット, a separate toaster item. Calling the whole café 'Not g"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -10769,11 +10980,11 @@
    "category": "MOM_AND_POP",
    "lat": 36.556637,
    "lng": 136.64711,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "A traditional wagashi (Japanese confectionery) maker. Many sweets like daifuku and shitatari-mochi are made from glutinous rice (mochi/gyūhi) and azuki, which can be naturally wheat-free, but yōkan, sweet beans, jellies and shared kitchen equipment mean nothing is verified gluten-free. There is no celiac protocol; ask in person about specific items before ordering. Not a dedicated gluten-free destination.",
-   "vegan_status": "ask",
-   "vegan_label": "Vegan — ask",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
    "vegan_detail": "The core products are plant-based by tradition: amanatto (sugar-candied beans), yōkan, bean-paste daifuku and fruit jellies are typically made from beans, sugar, agar and rice with no animal products. However, some confections and the 2F tea salon menu may use dairy, eggs or honey, and none of this is labeled vegan. Confirm individual items in person.",
    "hours_raw": "Shop: weekdays & Saturday 9:30-18:00; Sundays/holidays 9:00-17:00. 2F tea salon (Salon de The Kawamura): weekdays 10:00-17:00 (closes 17:30), Sundays/holidays 10:00-16:00 (closes 16:30).",
    "hours": {
@@ -10876,7 +11087,40 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "vegan_status",
+     "from": "ask",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "B",
+     "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: options — the record's vegan_detail hedges that 'some confections … may use dairy, eggs or honey', but the shop's own itemised 原材料 lists show zero animal ingredients across the whole retail range (beans, nuts, chestnut, sweet potato, citrus, olive, sugar, trehalose, reduced starch syrup). The 2F tea salon is separately"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep upgrade queue on 2026-08-23. Evidence: options — the maker prints a full 原材料 line for every retail item and not one contains wheat: 22 of the amanatto are 「豆、砂糖、有機砂糖／甘味料（トレハロース）、還元水飴」, the rest are 栗/芋/クルミ/ピーカン/カシューナッツ/柚子/伊予柑/ブラッドオレンジ/オリーブ plus sugar, and the philosophy page states 「甘納豆は、純粋に豆と砂糖だけで作る菓子」. Still not dedicated — the 2F salon de thé menu is not",
+      "recovered": "reconstructed from the queue; the original write was overwritten by a same-record signoff"
+     },
+     {
+      "decision": "approve",
+      "field": "vegan_status",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: options — the record's vegan_detail hedges that 'some confections … may use dairy, eggs or honey', but the shop's own itemised 原材料 lists show zero animal ingredients across the whole retail range (beans, nuts, chestnut, sweet potato, citrus, olive, sugar, trehalose, reduced starch syrup). The 2F tea salon is separately"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -12036,8 +12280,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.576195,
    "lng": 136.653809,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "The signature items are thick wheat pancakes and freshly baked scones, both made from wheat flour, so the menu is wheat-centric and not celiac-safe. No gluten-free menu or dedicated handling is documented.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -12138,7 +12382,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: ask — the record calls the venue wheat-centric on the strength of a pancake it does not serve. The article publishes the full four-ingredient list of the 宝達くずミルクプリン (宝達葛, きび砂糖, 牛乳, 生クリーム, topped きな粉+黒蜜) — every one wheat-free — made to order in 20 minutes by a hands-on owner who tastes and approves each item. That is e"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: ask — the record calls the venue wheat-centric on the strength of a pancake it does not serve. The article publishes the full four-ingredient list of the 宝達くずミルクプリン (宝達葛, きび砂糖, 牛乳, 生クリーム, topped きな粉+黒蜜) — every one wheat-free — made to order in 20 minutes by a hands-on owner who tastes and approves each item. That is e"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -19464,8 +19730,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.570999,
    "lng": 136.656784,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "Not gluten-free friendly. This is a seafood-bowl specialist where dishes are served with wheat-based soy sauce, and alternatives include tempura and unagi (eel) bowls that use wheat batter and wheat-containing tare sauce. No gluten-free menu, no dedicated preparation, and dashi/seasonings are wheat-and-soy based. Not safe for celiacs.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -19566,7 +19832,29 @@
     "staff_allergy_handling": [],
     "positives": [],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: Seventeen of the twenty published bowls are raw seafood over rice with no cooked wheat component (甘えび丼, イクラ丼, 本マグロ漬け丼, 海鮮丼 and so on); the only wheat items are separately named and separately priced - ジャンボ海老天丼, 海鮮かきあげ丼, 特上うなぎ丼. The record's 'Not safe for celiacs' rests on 'dashi/seasonings are wheat-and-soy based', whi"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: Seventeen of the twenty published bowls are raw seafood over rice with no cooked wheat component (甘えび丼, イクラ丼, 本マグロ漬け丼, 海鮮丼 and so on); the only wheat items are separately named and separately priced - ジャンボ海老天丼, 海鮮かきあげ丼, 特上うなぎ丼. The record's 'Not safe for celiacs' rests on 'dashi/seasonings are wheat-and-soy based', whi"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -20010,11 +20298,11 @@
    "category": "MOM_AND_POP",
    "lat": 36.571976,
    "lng": 136.668045,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "Not gluten-free. The signature Noto-chestnut Mont Blanc is built on wheat-based components (sponge cake and pastry cream layers), and there is no documented gluten-free menu or celiac handling. Cross-contamination from flour in a small dessert kitchen is likely. Not safe for celiacs.",
-   "vegan_status": "no",
-   "vegan_label": "Not vegan",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
    "vegan_detail": "Not vegan-friendly. The flagship Mont Blanc and related desserts contain dairy throughout (mascarpone, custard/creme patissiere, unsweetened fresh whipped cream) and egg-based components such as meringue and sponge. No vegan dessert option is documented despite the chestnut paste itself being sugar-free.",
    "hours_raw": "11:00-17:00 (last order 16:30), open daily with irregular closures",
    "hours": {
@@ -20128,7 +20416,40 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "vegan_status",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The record says 'No vegan dessert option is documented', but the shop's own page for 茶鼠 describes 「和栗のえがら 煉 neriは、契約農家で丁寧に育てられた和栗を餡にし、自家製粉したもち米の生地で包み上げた特別な一品」 with 「■アレルギー表記：なし」 — chestnut an in a self-milled glutinous-rice dough, no egg, no dairy declared. That is a documented plausibly-vegan item; 'ask' rather than '"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep upgrade queue on 2026-08-23. Evidence: The shop publishes per-product allergen declarations and does tick 小麦 where it applies (薄墨 pound cake 「アレルギー表記：卵、乳、小麦」; 二藍 and 菓子詰め合わせ 「乳、小麦、卵」), yet declares 乳 only for 朱華 and 橡 — both 「和栗をねりこんだ葛ねりと…和栗ペーストの新しい形のモンブラン」, i.e. kuzu-starch rather than flour — and 「アレルギー表記：なし」 for 茶鼠 (えがらまんじゅう of 和栗餡 in a 自家製粉したもち米 dough).",
+      "recovered": "reconstructed from the queue; the original write was overwritten by a same-record signoff"
+     },
+     {
+      "decision": "approve",
+      "field": "vegan_status",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The record says 'No vegan dessert option is documented', but the shop's own page for 茶鼠 describes 「和栗のえがら 煉 neriは、契約農家で丁寧に育てられた和栗を餡にし、自家製粉したもち米の生地で包み上げた特別な一品」 with 「■アレルギー表記：なし」 — chestnut an in a self-milled glutinous-rice dough, no egg, no dairy declared. That is a documented plausibly-vegan item; 'ask' rather than '"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -20883,8 +21204,8 @@
    "category": "OMNI",
    "lat": 36.571056,
    "lng": 136.654449,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "A traditional fruit parlor serving parfaits with cake, cookies, cereal/granola and wheat-based components; no gluten-free menu or celiac handling is documented, so it is not safe for celiacs.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -20991,7 +21312,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The published menu is not wheat-free but it is not wheat-only either: 「◎まるごと夕張メロン 2,500円」「■フルーツごろごろジュレMIX 648円」「◎シャインマスカットソーダ 700円」「◎水蜜桃ヨーグルト」 are whole fruit, jelly, soda and yoghurt items that contain no wheat by construction, sold beside the ワッフル/タルト items. 'no' reads as 'nothing here is safe', which is wrong for a "
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The published menu is not wheat-free but it is not wheat-only either: 「◎まるごと夕張メロン 2,500円」「■フルーツごろごろジュレMIX 648円」「◎シャインマスカットソーダ 700円」「◎水蜜桃ヨーグルト」 are whole fruit, jelly, soda and yoghurt items that contain no wheat by construction, sold beside the ワッフル/タルト items. 'no' reads as 'nothing here is safe', which is wrong for a "
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -21011,8 +21354,8 @@
    "category": "VEGAN",
    "lat": 36.549435,
    "lng": 136.64856,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "No gluten-free program is documented. The shop's core trade is fermented foods (kaburazushi/turnip sushi, koji pickles) and the cafe's signature items are amazake (sweet rice-koji drink), amazake soda, and koji-based gelato. Amazake and gelato can be naturally wheat-free, but there is no published allergen handling, no dedicated equipment information, and koji/fermented products often involve shared production with wheat-containing items. Not confirmed celiac-safe — a sensitive traveler must ask in person about each item.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
@@ -21114,7 +21457,31 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "ask",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "B",
+     "overrode_disproven": 1,
+     "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: options — the record hedges that 「koji/fermented products often involve shared production with wheat-containing items」, but the operator publishes a per-item allergen label and it exonerates most of the cafe range: the 甘酒 is 「材料はお米と米糀のみ」 with a blank アレルギー表示, and eight of the nine gelato flavours declare 乳成分 (and somet"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "B",
+      "overrode_disproven": 1,
+      "reason": "Greg approved tranche B of the verification sweep's upgrade queue on 2026-08-23. Evidence: options — the record hedges that 「koji/fermented products often involve shared production with wheat-containing items」, but the operator publishes a per-item allergen label and it exonerates most of the cafe range: the 甘酒 is 「材料はお米と米糀のみ」 with a blank アレルギー表示, and eight of the nine gelato flavours declare 乳成分 (and somet"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -23418,8 +23785,8 @@
    "category": "MOM_AND_POP",
    "lat": 36.571659,
    "lng": 136.656036,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
    "gf_detail": "Not gluten-free. The core products are kabayaki — eel and loach grilled with a soy-sauce-and-mirin-based tare that contains wheat. No gluten-free preparation, dedicated equipment, or accommodation is documented. Not celiac-safe.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -23535,7 +23902,31 @@
     "staff_allergy_handling": [],
     "positives": [],
     "confidence": "medium",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "options",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "overrode_disproven": 1,
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: This is a retail fishmonger, not a kitchen, and its own listing documents whole crab boiled in nothing but 天然の塩 and 浄化水 plus raw 甘えび/白がすえび/しまえび sold as fresh seafood — naturally gluten-free purchases with no wheat step. The only wheat is the house-made kabayaki tare on the eel and loach, which is a separate product lin"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "overrode_disproven": 1,
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: This is a retail fishmonger, not a kitchen, and its own listing documents whole crab boiled in nothing but 天然の塩 and 浄化水 plus raw 甘えび/白がすえび/しまえび sold as fresh seafood — naturally gluten-free purchases with no wheat step. The only wheat is the house-made kabayaki tare on the eel and loach, which is a separate product lin"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -23685,8 +24076,8 @@
    "category": "OMNI",
    "lat": 36.56049,
    "lng": 136.652054,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "This is a seafood- and dashi-heavy Kaga cuisine izakaya. Signature dishes like jibuni and grilled fish rely on soy sauce and dashi (typically wheat-containing soy and bonito stock), and tempura uses wheat batter. No gluten-free menu or handling is documented, so it is not suitable for celiacs.",
    "vegan_status": "no",
    "vegan_label": "Not vegan",
@@ -23783,7 +24174,29 @@
     "staff_allergy_handling": [],
     "positives": [],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The record's only stated reason for 'no' is factually wrong about this shop: it cites soy-seasoned jibuni and grilled fish, but the menu carries 「のどぐろ塩焼き」 (salt-grilled) and 「刺身盛合わせ」 alongside 「岩ガキ、香箱カニ、ズワイガニなど旬の食材」 — sashimi, salt-grilled fish and raw shellfish are wheat-free as served if soy sauce is declined. Real w"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: The record's only stated reason for 'no' is factually wrong about this shop: it cites soy-seasoned jibuni and grilled fish, but the menu carries 「のどぐろ塩焼き」 (salt-grilled) and 「刺身盛合わせ」 alongside 「岩ガキ、香箱カニ、ズワイガニなど旬の食材」 — sashimi, salt-grilled fish and raw shellfish are wheat-free as served if soy sauce is declined. Real w"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -24221,8 +24634,8 @@
    "category": "OMNI",
    "lat": 36.548195,
    "lng": 136.658676,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "This is a traditional Kaga-cuisine kaiseki ryotei where multi-course menus lean heavily on dashi, soy-based seasonings, and wheat-containing components typical of Japanese fine dining. No gluten-free program, dedicated preparation, or celiac accommodation is documented. Not suitable for strict gluten avoidance; a serious celiac would need to discuss needs in advance and accept high uncertainty.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
@@ -24372,7 +24785,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: ask — the record is internally inconsistent: it awards vegan_status 'ask' on the reasoning that 'a plant-based course might be arranged if requested well ahead', then awards gf_confidence 'no' on exactly the same facts. The page documents the mechanism for both — 「離れのお部屋は一名様から二〇名様まで承っております」 and 「人数、内容の変更は三日前の正午までにご連絡お願"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: ask — the record is internally inconsistent: it awards vegan_status 'ask' on the reasoning that 'a plant-based course might be arranged if requested well ahead', then awards gf_confidence 'no' on exactly the same facts. The page documents the mechanism for both — 「離れのお部屋は一名様から二〇名様まで承っております」 and 「人数、内容の変更は三日前の正午までにご連絡お願"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "guide_only",
@@ -25255,8 +25690,8 @@
    "category": "OMNI",
    "lat": 36.591988,
    "lng": 136.621445,
-   "gf_confidence": "no",
-   "gf_label": "Not gluten-free",
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
    "gf_detail": "Not celiac-safe. The kitchen is built around naan baked in a tandoor oven (wheat flour), and the vegetarian curries use soy meat dumplings; Indian curries here are also commonly thickened/seasoned with wheat-containing ingredients. Rice (Koshihikari) is available as an alternative to naan, but there is no documented gluten-free protocol, no dedicated fryer or prep area mentioned, and cross-contamination from a flour-heavy kitchen is likely. A celiac diner should not assume safety; rice-based dishes would need to be confirmed individually with staff.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
@@ -25403,7 +25838,29 @@
      }
     ],
     "confidence": "low",
-    "last_checked": "2026-06-23"
+    "last_checked": "2026-06-23",
+    "owner_signoff": {
+     "decision": "approve",
+     "field": "gf_confidence",
+     "from": "no",
+     "to": "ask",
+     "by": "Greg",
+     "date": "2026-08-23",
+     "tranche": "C",
+     "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: A flat 'Not gluten-free' rests on the record's claim that no GF handling is documented; that is now false. The shop tags six named curries (ダールマッカーニ, ベジタブルカレー, アルパラック, パラックパニール, パラックチーズ, ビンディパニールマサラ) 「グルテンフリー」 on its own menu, and sells サフランライス separately — a real, orderable plate for a coeliac to enquire about. This i"
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "approve",
+      "field": "gf_confidence",
+      "from": "no",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-08-23",
+      "tranche": "C",
+      "reason": "Greg approved tranche C of the verification sweep's upgrade queue on 2026-08-23. Evidence: A flat 'Not gluten-free' rests on the record's claim that no GF handling is documented; that is now false. The shop tags six named curries (ダールマッカーニ, ベジタブルカレー, アルパラック, パラックパニール, パラックチーズ, ビンディパニールマサラ) 「グルテンフリー」 on its own menu, and sells サフランライス separately — a real, orderable plate for a coeliac to enquire about. This i"
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -27977,7 +28434,7 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -27988,7 +28445,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "dedicated",
@@ -28908,7 +29365,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -28919,7 +29376,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -29724,7 +30181,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -29735,7 +30192,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -29911,7 +30368,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -29922,7 +30379,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "dedicated",
@@ -30065,7 +30522,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -30076,7 +30533,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -30108,7 +30565,7 @@
    "lng": 136.64065437,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. Identity confirmed (〒920-2114 石川県白山市八幡町ヌ26-1, tel 076-214-6939, 11:00-16:00 LO, closed Tuesdays, Hakusan City local-production recommended shop). The ingredient side survives — I pulled the full 原材料 for the quiche set and found no 小麦 and no 醤油, with 自家製タルト生地 built on 米粉(白山市製造), corn starch, almond powder and rice oil, and the shop does claim 「当店のキッシュは全てグルテンフリーとなっております」. But the label cannot stand: the ONLY allergen protocol the shop publishes is 「全ての商品にたまご・乳製品を使用」 plus 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 — a shared-facility warning written for egg and dairy that makes no gluten guarantee at all. The two apparent corroborations (urara-hakusanbito tourism page, tefutefusanpo blog) both explicitly relay the shop's own marketing rather than verify it, the shop is absent from the national all-GF bakery list, and no celiac-grade review exists. One underlying source, no cross-contact statement — options.] A gluten-free rice-flour quiche specialist (地元の米粉を使ったグルテンフリーキッシュの専門店) at the foot of Shishiku Kogen. The tart shell is 100% rice flour milled in Hakusan and the shop states 「当店のキッシュは全てグルテンフリーとなっております。」 (all our quiches are gluten-free) — the entire menu, quiche plus rice-flour breads/tarts/cookies, is rice-flour based with no wheat products made on-site, so it functions as a dedicated GF kitchen. Important caveat: the shop's shared-facility warning 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 is written for egg and dairy and makes NO explicit wheat/gluten cross-contamination statement, nor is there a certification. A sensitive celiac should phone (076-214-6939) to confirm wheat handling.",
+   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→options. Identity confirmed (〒920-2114 石川県白山市八幡町ヌ26-1, tel 076-214-6939, 11:00-16:00 LO, closed Tuesdays, Hakusan City local-production recommended shop). The ingredient side survives — I pulled the full 原材料 for the quiche set and found no 小麦 and no 醤油, with 自家製タルト生地 built on 米粉(白山市製造), corn starch, almond powder and rice oil, and the shop does claim 「当店のキッシュは全てグルテンフリーとなっております」. But the label cannot stand: the ONLY allergen protocol the shop publishes is 「全ての商品にたまご・乳製品を使用」 plus 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 — a shared-facility warning written for egg and dairy that makes no gluten guarantee at all. The two apparent corroborations (urara-hakusanbito tourism page, tefutefusanpo blog) both explicitly relay the shop's own marketing rather than verify it, the shop is absent from the national all-GF bakery list, and no celiac-grade review exists. One underlying source, no cross-contact statement — options.] A gluten-free rice-flour quiche specialist (地元の米粉を使ったグルテンフリーキッシュの専門店) at the foot of Shishiku Kogen. The tart shell is 100% rice flour milled in Hakusan and the shop states 「当店のキッシュは全てグルテンフリーとなっております。」 (all our quiches are gluten-free) — the entire menu, quiche plus rice-flour breads/tarts/cookies, is rice-flour based with no wheat products made on-site, so it functions as a dedicated GF kitchen. Important caveat: the shop's shared-facility warning 「全ての商品が同じ場所で作られておりますので、アレルギーをお持ちの方はご注意ください」 is written for egg and dairy and makes NO explicit wheat/gluten cross-contamination statement, nor is there a certification. A sensitive celiac should phone (076-214-6939) to confirm wheat handling.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
    "vegan_detail": "The everyday menu is not vegan — every quiche contains egg and most contain cheese, though the custard uses egg plus soy-milk cream (卵と豆乳クリーム) rather than dairy cream, making it lighter than a classic quiche. True 動物性不使用 vegan items appear only as rotating limited specials (e.g. a vegan vegetable-and-soy-cream quiche and an avocado-chocolate soy-cream tart at a 2022 pop-up), not on the standard menu. A vegan visitor must check Instagram (@hakusan_qui) for current availability.",
@@ -30252,7 +30709,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-21"
+    "last_checked": "2026-08-23"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -30263,7 +30720,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-08-21",
+    "date": "2026-08-23",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "dedicated",

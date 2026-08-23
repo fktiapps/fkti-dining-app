@@ -1,10 +1,22 @@
 # DCD DATA REVIEW PROTOCOL — "be sure as shit we're right"
-Last updated 2026-07-02. Purpose: make sure we NEVER send a celiac person to a place we misclassified.
+Last updated 2026-08-23. Purpose: make sure we NEVER send a celiac person to a place we misclassified.
 
 ## THE PRINCIPLE
 A false "safe" can glutinate a kid; a false "ask" just makes them double-check. Those costs are not equal.
 So: **evidence must CLEAR the bar to keep a confident label — anything short auto-downgrades.** And the app
 floor stands: we never say "safe, just go" — every place carries "confirm with the kitchen + show the card."
+
+### The two axes are not the same axis
+Greg, 2026-08-23: *"cross contamination for GF causes physical injury, cross contamination for a vegan
+causes moral injury at worst."* The asymmetry above is about **bodily harm**, so it governs `gf_confidence`
+at full weight and does **not** transfer to `vegan_status` at the same weight. In practice:
+- A GF tier above `ask` must clear every evidence gate, and a disproven claim anywhere on the record
+  blocks it until a human looks.
+- A vegan tier is not held hostage to the same gate. Holding one buys a vegan traveller nothing and
+  costs them a meal they could have eaten.
+- Where a shop runs a vegan course out of a shared kitchen — 味農家 is the case that settled it — `full`
+  is still the right vegan label, with the shared-kitchen note in the detail text where a reader can weigh it.
+This is why `scripts/apply-gate-tranche.mjs` applies its disproven-claim guard to `gf_confidence` only.
 
 ## THE TAXONOMY (as the app encodes it)
 - gf_confidence: `dedicated` | `high` | `options` | `ask` | `no`
@@ -48,6 +60,13 @@ Vegan mirrors it (`full/options/limited/ask/no`) with the DASHI trap front and c
   Miso can be barley (mugi).
 - Vegan hidden-animal: dashi (bonito/niboshi) is in nearly everything, plus egg/honey/gelatin/fish sauce.
   *Shōjin* is the safest vegan bet — still confirm no bonito.
+- **Dashi is a GLUTEN question too, not only a vegan one.** Greg, 2026-08-23: *"bonito dashi likely
+  contains soy sauce (wheat)"*. A Japanese kitchen rarely builds 出汁 from katsuobushi and water alone —
+  it reaches for 白だし, めんつゆ or だし醤油, all of which are soy-sauce based, and Japanese soy sauce is
+  brewed with wheat by default. So "is the dashi bonito-free?" and "is the dashi wheat-free?" are the
+  same question asked by two different diners, and a finding filed under vegan_cross_contact that names
+  broth, dashi, tare, miso, seasoning or sauce is GF evidence. Kombu dashi answers both at once, which
+  is why 「出汁は昆布と野菜のみ」 is worth far more than 「植物性」.
 - Red-flag test: does the cuisine inherently require wheat, and does the label credibly account for it?
   A ramen shop marked "high GF" is presumed WRONG until it explicitly has GF noodles.
 

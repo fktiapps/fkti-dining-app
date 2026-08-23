@@ -11,6 +11,21 @@
 import fs from 'node:fs';
 import { readCity, writeCity } from './lib-city.mjs';
 
+// This pass re-merges the enrich shards from scratch on every rebuild, which makes it
+// idempotent and also makes it the last word — it was silently restoring tiers that had
+// since been ruled on, undoing two of Greg's holds on every cycle. The shards are a
+// SNAPSHOT of what agents concluded in August; a later human decision about the same
+// shop is newer information, not a conflict to be resolved in the shards' favour.
+const GATED = new Set();
+if (fs.existsSync('data/_gate_rejections.json'))
+  for (const x of JSON.parse(fs.readFileSync('data/_gate_rejections.json', 'utf8')).rejections || [])
+    GATED.add(x.id + '|' + x.field);
+const signedOn = (r, field) => {
+  const sg = r.safety?.owner_signoff;
+  return !!(sg?.decision && (sg.field || 'gf_confidence') === field);
+};
+const locked = (r, field) => GATED.has(r.id + '|' + field) || signedOn(r, field);
+
 const RANK = { no: 0, ask: 1, options: 2, high: 3, dedicated: 4 };
 const TOP = new Set(['dedicated', 'high']);
 const DATE = '2026-08-19';
@@ -49,7 +64,7 @@ for (const e of enrich) {
   if (filled(e.cultural_comfort) && !filled(r.cultural_comfort)) r.cultural_comfort = e.cultural_comfort;
   if (filled(e.gf_detail))    r.gf_detail    = e.gf_detail;
   if (filled(e.vegan_detail)) r.vegan_detail = e.vegan_detail;
-  if (filled(e.vegan_status)) r.vegan_status = e.vegan_status;
+  if (filled(e.vegan_status) && !locked(r, 'vegan_status')) r.vegan_status = e.vegan_status;
   if (filled(e.sources)) { r.chef_bio = r.chef_bio || {}; if (!filled(r.chef_bio.sources)) r.chef_bio.sources = e.sources; }
   r.safety = r.safety || {};
   r.safety.last_checked = DATE;
@@ -61,7 +76,7 @@ for (const e of enrich) {
   if (!to || to === from) continue;
 
   if (RANK[to] < RANK[from]) {                       // downgrade — always safe
-    r.gf_confidence = to;
+    if (!locked(r, 'gf_confidence')) r.gf_confidence = to;
     r.gf_label = { dedicated:'Dedicated gluten-free', high:'Strong GF focus',
                    options:'Some GF options', ask:'GF — ask', no:'Not gluten-free' }[to];
     stats.down++;
@@ -72,7 +87,7 @@ for (const e of enrich) {
     queue.push({ id: r.id, name: r.name, from, proposed: to, confidence: e.enrich_confidence });
     stats.queued++;
   } else if (e.enrich_confidence === 'high' || e.enrich_confidence === 'medium') {
-    r.gf_confidence = to;                            // ask -> options, adequately evidenced
+    if (!locked(r, 'gf_confidence')) r.gf_confidence = to;                            // ask -> options, adequately evidenced
     r.gf_label = { options:'Some GF options', ask:'GF — ask' }[to] || r.gf_label;
     stats.up++;
   } else {

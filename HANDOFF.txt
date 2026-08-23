@@ -1,136 +1,326 @@
 DEEPLY CONNECTED DINING (DCD) — PROJECT HANDOFF
 深い関係食事 · for the next Claude (the dining app is one part of the wider FKTI project).
-Last updated 2026-07-02.
+Last updated 2026-08-23. Supersedes the 2026-07-02 handoff, which was written mid-trip and is
+now wrong in ways that matter — see WHAT CHANGED, and WHAT NO LONGER APPLIES.
+================================================================
+YOUR FIRST JOB
+Greg wants the NEXT session to design a background crawler that does research on a Pro token
+budget. Everything below exists to tell you what that crawler has to survive. Read
+ARCHITECTURE — WHAT STILL HOLDS and THE CRAWLER BRIEF before you write a line of it.
+
 ================================================================
 WHAT THIS IS
-A curated GF/vegan/cultural-depth dining guide PWA for Japan (Greg + ~9 high-school students; July trip).
-Single-file app + Leaflet map + survival tools + live "food near me". Companion project: FKTI Learning
-(kana trainer) at C:\Users\FKTI Work\Downloads\fkti-learning (SEPARATE repo/site — its own HANDOFF).
+A curated GF/vegan/cultural-depth dining guide PWA for Japan. Single-file app + Leaflet map +
+survival layers + live "food near me". Companion project: FKTI Learning (kana trainer) at
+C:\Users\FKTI Work\Downloads\fkti-learning — SEPARATE repo/site, its own HANDOFF.
 
-LIVE: https://fkti-dining-app.pages.dev   (Cloudflare Pages)
+LIVE: https://fkti-dining-app.pages.dev   (Cloudflare Pages, git-connected)
   Repo: github.com/fktiapps/fkti-dining-app (PRIVATE). DCP authoring tool at /dcp-tool.
-  ⚠ Old stale project https://fkti-dining.pages.dev (no "-app") — ignore/retire.
+  ⚠ Stale project https://fkti-dining.pages.dev (no "-app") — ignore/retire.
+
+THE AUDIENCE CHANGED. The July trip HAPPENED. This is no longer a guide for nine students next
+month; it is a product Greg is moving toward selling, used by celiac and vegan travellers he
+will never meet. That single fact is why the whole 2026-07 → 2026-08 arc was about EVIDENCE
+rather than coverage, and it should govern what you build next.
 
 ================================================================
-DEPLOY — NOW GIT-BASED (changed 2026-06-29). READ THIS.
-- Cloudflare Pages is GIT-CONNECTED to the repo: **push/merge to `main` auto-deploys** (~1 min).
-  `npm run deploy` (wrangler direct upload) is RETIRED — do NOT use it.
-- "Greg deploys himself" USED to mean he merges. **TRIP MODE (2026-07-02 → trip end): previews OFF** to
-  save time for the 9 users — Claude commits + pushes DIRECTLY to `main`. Before every push, KEEP the cheap
-  safety: `node --check` the inline JS, JSON-validate changed data, and BUMP sw.js VERSION on any
-  index.html/manifest change. A syntax error must not reach the kids' live app; behavioral bugs → fast-fix
-  or `git revert` + push. RESTORE preview-branch discipline when Greg starts selling the app.
-- Service worker precaches the shell → bump `const VERSION` in sw.js (currently dcd-v88) on any
-  index.html/manifest change. build-spot.mjs bumps it automatically. Data files (stations.json, city JSON,
-  menupedia.json) are runtime-fetched → NO bump for data-only changes.
-- SECRETS GOTCHA (root-caused 2026-07-02): repo has a **wrangler.toml** (project name + SUMMARIES KV
-  binding). Cloudflare rule: when a Pages project has wrangler.toml, **DASHBOARD-set env vars/secrets are
-  IGNORED**. So set secrets via `npm run secret` (= `wrangler pages secret put MISTRAL_API_KEY`) from a
-  laptop with wrangler — NOT the dashboard. MISTRAL_API_KEY is now set this way and the scanners are WIRED.
-  Non-secret vars would go in wrangler.toml [vars]; secrets NEVER go in the toml.
-
 STANDING RULES (do not violate)
-- Celiac safety is #1 — NEVER assert a dish/place/product is "safe"; give honest GF/vegan reality + "ask".
-- NEVER verify GF/vegan from a single source (esp. Vegewel) — cross-corroborate (own site / HappyCow /
-  FindMeGlutenFree / Tabelog / blogs). A single directory misses places and gets locations wrong.
-- No paid/extra-usage tokens when unattended; included quota only; no auto-resume crons. Big multi-agent
-  sweeps only with Greg present + budget (he authorizes).
-- Claude never handles credentials/secrets; Greg sets them.
+- Celiac safety is #1 — NEVER assert a dish/place/product is "safe"; give honest GF/vegan
+  reality + "ask". The app floor stands: every place carries "confirm with the kitchen".
+- NEVER verify GF/vegan from a single source (esp. Vegewel) — cross-corroborate.
+- Claude never handles credentials/secrets; Greg sets them. He types PATs at a prompt; they are
+  never pasted into chat.
 - No proprietary/copyrighted assets; open licenses + attribution only.
 - DCP cultural notes are Greg's in-the-field job (dcp-tool).
+- Pushing to `main` deploys to production. Smoke test before every push.
+
+================================================================
+WHAT CHANGED SINCE 2026-07-02 (the short version)
+- TOKYO WENT FROM ZERO TO THE LARGEST CITY. The "big one" in the old TODO is done: ~1,057
+  records from a 3-mile sweep plus a deep-enrich pass. It is no longer konbini-only.
+- The project acquired an EVIDENCE MODEL. Claims are no longer prose; they are objects that
+  carry a source, and a verification sweep checks each one against the page it cites.
+- Greg asked the question that reframed everything: *"I'm very concerned that there is ANY
+  fabricated data in there. I want a review verifying EVERYTHING."* The answer was: yes, there
+  was some, and here is the machinery that finds it. That machinery is now the project.
+- The token budget collapsed. Greg cancelled Max and is on Pro. The 30-concurrent-agent fleet
+  that produced this data CANNOT BE RUN AGAIN. Everything from here is small and incremental.
+
+================================================================
+WHAT NO LONGER APPLIES (delete these from your mental model)
+- ✗ "TRIP MODE — previews OFF, Claude pushes direct to main." The trip is over. The old file
+  itself said to restore preview discipline when Greg starts selling; that time is now. Branch,
+  smoke-test, and let Greg merge unless he says otherwise.
+- ✗ "TOKYO: konbini/survival only, no restaurant guide." Obsolete — see above.
+- ✗ THE FLEET PATTERN. spot-<city>-workflow.js / gen-spot-workflow.mjs spawned ~190 agents per
+  city. On a Pro budget this is not a tool you have. The *harvest* lesson from it survives (see
+  LESSONS) but the pattern does not. Do not propose a workflow fan-out to Greg as the way
+  forward; he moved off Max specifically to stop paying for it.
+- ✗ "build-spot.mjs is the pipeline." It was, for discovery. It is now one early step in a
+  ~60-script pipeline orchestrated by scripts/rebuild.mjs, with a lint gate and a human gate
+  after it. Writing a record is now the easy part; justifying it is the work.
+- ✗ The old OPEN ITEMS list (Himeji, stale branches, the Tokyo sweep) — done or overtaken.
+- ~ "Big multi-agent sweeps only with Greg present + budget" was a footnote. It is now THE
+  binding constraint and the reason the crawler exists.
+
+================================================================
+ARCHITECTURE — WHAT STILL HOLDS (and why)
+1. SINGLE-FILE APP + MANIFEST-DRIVEN CITY REGISTRY. index.html is the whole app. Adding a city
+   is a data change plus a manifest entry. Still right: the app is offline-first for travellers
+   on foreign SIMs, and a build step would buy nothing.
+2. THE TIER VOCABULARY. gf_confidence: dedicated|high|options|ask|no. vegan_status:
+   full|options|limited|ask|no. These are load-bearing — filters match EXACT values, so prose
+   in a tier field makes a shop VANISH from every dial (this bug has recurred four times; see
+   LESSONS). Labels are DERIVED from tiers, never stored independently.
+3. THE ASYMMETRY. A false "safe" can glutenate a kid; a false "ask" just costs a double-check.
+   Downgrades are always safe and automatic; upgrades need a human. This is the spine of
+   REVIEW_PROTOCOL.md and of every script that touches a tier.
+4. THE TWO AXES ARE NOT THE SAME AXIS (new, 2026-08-23). Greg: *"cross contamination for GF
+   causes physical injury, cross contamination for a vegan causes moral injury at worst."*
+   Evidence guards apply at full weight to gf_confidence and NOT to vegan_status.
+   ONE CROSSOVER: dashi. Greg: *"bonito dashi likely contains soy sauce (wheat)."* Japanese 出汁
+   is usually 白だし/めんつゆ/だし醤油 — soy sauce, so wheat. A vegan finding that names broth,
+   dashi, tare, miso, seasoning or sauce IS gluten evidence.
+5. CLOUDFLARE GIT DEPLOY + THE wrangler.toml SECRETS GOTCHA. Unchanged and still true: when a
+   Pages project has a wrangler.toml, DASHBOARD-set env vars are IGNORED. Secrets go through
+   `npm run secret` from a laptop with wrangler. Bump `const VERSION` in sw.js on any
+   index.html/manifest change; data files are runtime-fetched and need no bump.
+6. MEMORY FILES orient a fresh session. Read ~/.claude/projects/<this>/memory/MEMORY.md first.
+
+================================================================
+ARCHITECTURE — WHAT IS NEW (this is most of what you need to learn)
+THE EVIDENCE MODEL
+  Safety findings live in place.safety under five keys: gf_cross_contamination, soy_sauce_wheat,
+  vegan_cross_contact, staff_allergy_handling, positives. Each entry is {text, source} — or a
+  bare string, which is a legacy uncited claim. A verification agent that checks a claim against
+  its cited page and finds the page does not support it sets `unsupported: true`. That flag is
+  the single most important bit in the dataset: it means "a human wrote this and the source does
+  not say it."
+  Current: ~7,900 claims, 2,558 verified, 853 repointed to a source that does support them,
+  422 disproven, ~286 still uncited.
+
+THE HUMAN GATE — and it now survives a rebuild in all three directions
+  Approve → safety.owner_signoff {decision, field, from, to, by, date, reason} plus an append-only
+            owner_signoff_log (a record can move on BOTH axes; one object loses the first).
+  Override → owner_signoff.overrode_disproven records that Greg approved AFTER reading the
+            disproven claims. Compared by COUNT, so newly-disproven claims re-assert the hold.
+  Refuse  → data/_gate_rejections.json. THIS FILE EXISTS BECAUSE THE QUEUE REGENERATES. Rejections
+            that lived only in the record were undone and re-applied three times (杏もん堂).
+  scripts/apply-gate-tranche.mjs A|B|C [--apply] [--override=<id>,...] is the applier.
+  scripts/gate-tranches.mjs A|B|C prints a tranche for review.
+  THE APPROVAL UX THAT WORKED: do not hand Greg 72 individual decisions. Band by how much a wrong
+  answer costs — A into a top tier (read each), B into a middle tier, C off "no" (false warnings,
+  safest to bulk-approve and the most likely to matter to a hungry traveller). He approved 72
+  records in three messages this way.
+
+THE ORCHESTRATOR
+  scripts/rebuild.mjs runs ~25 passes in order then lints. IT TAKES A LOCK (data/.rebuild.lock).
+  A full rebuild reads every city file, works for minutes, and writes them all back — anything
+  that edits data/ meanwhile LOSES. That is not hypothetical; it silently ate a verified revert
+  in this session. DO NOT WRITE TO data/ WHILE A REBUILD RUNS.
+  scripts/lint-data.mjs is the enforcement point and the thing you trust. It caught the one piece
+  of confirmed fabrication that got through human review this session.
+
+THE APP-SIDE TRUST WORK (Greg's directive: *"Trust is paramount for the GF/Vegan layers"*)
+  Every claim in the detail panel renders with a numbered [n] citation link, or an explicit
+  "uncited" marker. Hidden records are excluded from the map. SHOP_CLAIM_FALSE shows a red panel
+  when a shop's own GF claim is contradicted by its own menu. A browsable 🏪 Chains modal lists
+  25 chains (data/chains_kb.json) sorted by GF and by vegan.
+
+================================================================
+LESSONS THAT COST REAL TIME — READ THESE BEFORE WRITING A CHECKER
+1. PROSE IN A TIER FIELD, four separate times. Agents write the verdict and then explain it in
+   the same field: "options — and NOT higher, on the operator's own words". Exact-enum consumers
+   silently do nothing; exact-enum FILTERS make the shop invisible in the app.
+   THE RULE: parse, then validate — never simply reject. Take the leading token if it is a valid
+   tier and keep the sentence in a *_note field. A rejected verdict throws away the research AND
+   leaves the record wrong. scripts/normalize-sweep-tiers.mjs is the reference implementation.
+2. A CHECKER THAT FALSE-POSITIVES IS WORSE THAN NO CHECKER. Deleted outright: a plant-called-dairy
+   checker with 34 false positives out of 36 ("uses soy milk rather than dairy" reads identically
+   to the error). Narrowed hard after first drafts: vegan-contradiction (Japanese vegan menus name
+   plant dishes after animal ones — 車麩の唐揚げ, 豆乳ヨーグルト, ベジツナマヨ; バターナッツかぼちゃ
+   is squash; エビス beer contains エビ), self-admitted-doubt, closure detection (bare 閉店 matched
+   「スープ品切れで早期閉店あります」 — closes early when the soup sells out).
+3. CLASSIFY DEAD LINKS, DO NOT COUNT THEM. A first link check reported 1,086 dead; 995 were
+   tabelog.com refusing a non-browser UA. 404/DNS = gone; 403/timeout = unknown. A number that
+   buries 33 real failures in 1,000 fake ones is worse than no number.
+4. HTTP 200 DOES NOT MEAN THE LINK IS GOOD. Four domains had lapsed and been repurposed —
+   senza-x.com now serves a Korean gambling site — and every link check called them healthy.
+   scripts/flag-hijacked-domains.mjs checks CONTENT, not status.
+5. THE FABRICATION PATTERN, and it is subtle. 杏もん堂 was approved on "the shop's own site states
+   the curry uses no wheat flour and passed a third-party gliadin test, NONE DETECTED". The site
+   says nothing of the kind. The tell: the agent got the CHECKABLE part right — it corrected the
+   spice count from 18 to 21, which the site does confirm — and invented the part that mattered.
+   A PARTLY-VERIFIABLE FINDING IS NOT A TRUSTWORTHY ONE. Check the load-bearing claim, not the
+   incidental detail that makes the finding look researched.
+6. \b WRITTEN THROUGH A PYTHON HEREDOC BECOMES A 0x08 BACKSPACE BYTE and silently disables every
+   word boundary in a regex. Three scripts shipped broken this way. Use node line-edits and regex
+   LITERALS, not new RegExp(string). Also: apostrophes break `node -e '...'` — write patch scripts
+   to a file.
+7. MEASURE DRIFT AGAINST IMMUTABLE INPUTS, not against the record. The first run moves the pin, so
+   every later run measures zero and the flag evaporates.
+8. HARVEST, DON'T WAIT. If an agent sweep hangs on 1 of N, stop it and harvest completed records
+   from the per-agent .jsonl files. (The fleet is retired, but this applies to any batch.)
+9. THE GATE IS NOT SELF-ENFORCING — FOUR SEPARATE PASSES WERE SILENTLY OVERWRITING IT, and each
+   one had a defensible local rule. fix-menu-promotions ("the detail text wins, it is the part
+   somebody researched"). flag-divergent-duplicates ("align twins to the more cautious tier").
+   enforce-cited-claims ("a disproven claim beats a sign-off"). merge-tokyo3-enrich (re-merges
+   the shards from scratch every run, so it is idempotent — and therefore always the last word).
+   Every one of those rules is RIGHT against another machine pass and WRONG against Greg: a
+   stale duplicate, an un-rewritten paragraph, or an August shard snapshot is not new information
+   about the food. The failures were invisible because the passes left no marker the linter read,
+   so a decision would be made, verified, and quietly undone on the next rebuild.
+   THE RULE: any pass that writes gf_confidence or vegan_status MUST check owner_signoff for that
+   FIELD and data/_gate_rejections.json for that id+field before writing. Grep for tier
+   assignments before trusting a pipeline run: grep -n "gf_confidence *=" scripts/*.mjs
+   HOW TO FIND THE CULPRIT FAST: bisect. Set the record to the intended tier, run each rebuild
+   step in order, and stop at the first one that moves it. Two of the four were found this way in
+   under a minute each; reading twenty-five scripts would have taken an hour.
+
+
+================================================================
+WHAT A FRESH CLAUDE GETS WRONG (tacit knowledge, written down 2026-08-23)
+Every one of these cost real time in the session that produced this file.
+
+A. "DISPROVEN" DOES NOT MEAN "FALSE". It means the cited page does not say this. A claim can
+   be perfectly true and still flagged `unsupported` — the researcher knew the fact and cited
+   the wrong page for it. The correct response is RE-SOURCE, not reverse.
+   And it cuts both ways, which is the part that surprises: 山代屋 was rated "no" because "the
+   anagomeshi glaze is soy-sauce based, which in Japan is TYPICALLY brewed with wheat". That
+   guess was the disproven claim, so the PESSIMISTIC rating was the unsourced one. If you read
+   `unsupported` as "this shop is worse than we thought", you will get the direction backwards
+   on a third of the queue.
+
+B. A MALFORMED TIER DOES NOT ERROR — THE SHOP DISAPPEARS. The app filters on exact tier
+   strings, so gf_confidence: "options — and NOT higher" matches no dial and the restaurant is
+   simply absent from the app. No exception, no log line, no lint failure at the time. This is
+   why prose-in-a-tier-field recurred four times and why it matters far more than it looks.
+   Anything that writes a tier should validate against the enum at the write site.
+
+C. READ THE RECORD'S OWN DETAIL TEXT BEFORE TRUSTING ANY VERDICT ABOUT IT. 杏もん堂's gf_detail
+   said "No gluten-free options confirmed. The signature dish is almond butter toast on wheat
+   bread." The upgrade recommendation said the opposite. The record was arguing with itself and
+   nobody looked. Thirty seconds of reading beats any checker.
+
+D. THE INSTINCT TO ADD ANOTHER CHECKER IS USUALLY WRONG. The single best thing done for data
+   quality in that session was DELETING a checker (plant-called-dairy, 34 false positives out of
+   36). False positives do not merely waste time — they train the reader to skim the report,
+   which is exactly how a real finding gets missed. A checker that cannot get under ~10% false
+   positives should be a documented trap in REVIEW_PROTOCOL.md instead of a script.
+
+E. WEAK SIGNALS LOOK STRONG WHEN YOU ARE HUNTING FABRICATION. "Queue entry has evidence: []"
+   seemed like a perfect fabrication detector. Eight entries had it; SEVEN were fine, with sources
+   on the record itself. What actually caught the one bad record was the linter asking a question
+   about the RECORD ("a tier above ask with no cited safety evidence") rather than about the claim
+   made about the record. Check the artifact, not the paperwork describing it.
+
+F. IDs ARE NOT PARSEABLE. tokyo3__9, tokyo3_higash_55, tokyo3_oh_nana are all real and mean
+   nothing structurally. Never infer city, batch, or anything else from an id. Match on the id
+   or on the record, never on a substring of the id.
+
+G. DUPLICATES EXIST AND THEY FIGHT YOU. Several shops are in the data twice with DIVERGING
+   ratings (T's Kitchen, 味農家, べっぴん舎). A twin can drag a signed-off record back on every
+   rebuild. Name-normalising to find them does NOT work — the twins differ as カタカナ vs romaji
+   ("ティーズキッチン" vs "T's Kitchen"), which no simple normaliser unifies. A real dedupe pass
+   needs address/phone/coordinates, not names.
+
+H. ITERATION IS SLOW AND SERIALIZED. A full rebuild is 5–8 minutes, buffers all output (so it
+   looks hung when it is fine), and holds data/.rebuild.lock. You cannot casually rebuild.
+   BATCH every data edit, then rebuild ONCE. Editing during a rebuild loses the edit silently.
+   Also looks-hung-but-is-not: build-survival.mjs is network-bound with deliberate 8s backoffs.
+
+I. EXACT-STRING PATCHING FAILS ON THIS REPO CONSTANTLY. Between non-ASCII (ō, 「」, em dashes),
+   template literals, and line-ending ambiguity, anchor-based find/replace failed roughly half the
+   time here. LINE-INDEX EDITS ARE RELIABLE: read the file, findIndex on a distinctive substring,
+   splice. Also: apostrophes break `node -e '...'` — write patch scripts to a file and run them.
+
+J. COST INTUITIONS FOR PLANNING ON PRO. A citation-verify shard ran ~90k–260k subagent tokens
+   (median ~150k). A Tokyo menu shard ran ~200k–330k. Use these to size any batch before promising
+   Greg a timeline; they are the numbers behind "do not brute-force the remaining 173 shards".
+
+K. HOW GREG WORKS. He answers in short fragments and decides fast. He will sometimes reply to
+   your REASONING without answering your QUESTION — a message that engages with the argument is
+   not approval, so wait for the actual answer before applying anything to a tier. He delegates
+   genuinely ("you don't need me for name changes or existence problems - just solve them") and
+   means it; that delegation covers names, existence and evidence, and does NOT cover tier
+   upgrades. Give him TRANCHES banded by cost-of-being-wrong, never a list of N decisions.
+
+
+JAPAN GF TRAPS accumulated in REVIEW_PROTOCOL.md — read the checklist there, it is the real one.
+Highlights that keep catching people: soy sauce is wheat by default; 麩/車麩/生麩 are PURE wheat
+gluten and perfectly vegan, which is exactly the danger; 十割 soba still has 打ち粉; 麦 is barley
+(麦茶, 麦味噌, 押麦/もち麦 hiding in 五穀米/十六穀米); ライ麦 (rye) is NOT on Japan's statutory
+allergen list; 白醤油 is MAJORITY wheat; JAS たまり is LOW-wheat, not wheat-free — only 「小麦不使用」
+on the bottle settles it; 植物性 means plant-based, NOT wheat-free.
+⚠ JAPAN'S MANDATORY ALLERGEN LIST EXCLUDES BARLEY. A 小麦 column reading 「ー」 says NOTHING about
+大麦. Every chain allergen table in the country is blind to barley by design.
 
 ================================================================
 STRUCTURE
-- index.html ........ the whole app (HTML/CSS/JS). Manifest-driven city registry + Leaflet map.
+- index.html ........ the whole app (HTML/CSS/JS). Citations, diet dials, group mode, chains modal.
 - sw.js ............. service worker (bump VERSION on shell changes).
-- wrangler.toml ..... Pages config (name, SUMMARIES KV). Secrets via `npm run secret`, not here.
-- functions/api/ .... Cloudflare Functions: menu-scan.js + label-scan.js (Mistral Pixtral vision, now
-                      wired); nearby.js (live OSM proxy for "food near me"); chef-bio*, place-summary, health.
-- data/manifest.json  city registry {version,default_city,cities:[{id,name,file,center,bounds,free}]}.
-- data/<city>.json .. per-city {city,subtitle,center,bounds,tz,places:[...]}. places carry gf_confidence
-                      (dedicated|high|options|ask|no), vegan_status (full|options|limited|ask|no), category
-                      (BOTH|GF|VEGAN|SHOJIN|OMNI|MOM_AND_POP), cuisine_type, hours, bio, safety, dcp, etc.
-- data/<city>_konbini.json / _grocery.json ... survival layers (OSM points + chain-keyed GF/vegan KB).
-- data/menupedia.json .. {hundred:[100 dishes], foundations:[16], lore:{key:{history,name,culture,taste,gf,vegan}}}.
-- data/stations.json ... 🚉 station survival guide (6 stations) — schema {name,intro,sections:[{icon,h,
-                      verdict,where,rows:[{t,gf,vegan,speed,note}],tip}],playbook:{tight,gf,vegan}}.
-- data/_<city>_disc.json ... raw verified sweep output (input to build-spot.mjs).
-- scripts/ ......... city-sweep tooling: spot-configs.mjs (per-city radius/config, incl. himeji),
-                      gen-spot-workflow.mjs (generates the workflow), spot-<city>-workflow.js (Workflow-tool
-                      script: Haiku discover → Sonnet verify), build-spot.mjs (<city>_disc.json → <city>.json
-                      + registers in manifest + bumps SW). Also build-dcp.mjs, ramen enrich, menu pass, dedup.
-- MOBILE_OPS.md ... git/Pages mobile playbook.  FOOD_NEAR_ME.md ... "food near me" feature spec.
+- wrangler.toml ..... Pages config. Secrets via `npm run secret`, NOT the dashboard.
+- functions/api/ .... menu-scan.js + label-scan.js (Mistral Pixtral), nearby.js (live OSM proxy),
+                      chef-bio*, place-summary, health.
+- REVIEW_PROTOCOL.md  THE doctrine file. Tiers, the asymmetry, the two-axes rule, the trap checklist.
+- data/manifest.json  city registry.
+- data/<city>.json .. per-city places. NOTE: kyoto.json and tokyo.json ship MINIFIED; the other
+                      seven are pretty-printed at indent 1. scripts/lib-city.mjs enforces this —
+                      always read/write through it, never hand-roll JSON.stringify.
+- data/<city>_menus.json ... researched menus, dish-level gf/vegan flags.
+- data/<city>_konbini|_grocery|_chains|_starbucks.json ... survival layers.
+- data/chains_kb.json ..... 25 national chains, GF + vegan tiers with caveats and sources.
+- data/_gate_rejections.json ... refused upgrades. Durable. See THE HUMAN GATE.
+- data/_underrated_queue.json .. upgrades awaiting the human gate. REGENERATED every rebuild.
+- data/menupedia.json / stations.json ... the cultural layer and the station guide.
+- scripts/ ......... ~60 scripts. rebuild.mjs orchestrates; lint-data.mjs enforces.
+- MOBILE_OPS.md ... git/Pages mobile playbook.  FOOD_NEAR_ME.md ... feature spec.
+- docs/*-BRIEF.md ... agent briefs. CITATION-VERIFY-BRIEF.md carries the 13-shape defect catalogue
+                      and is the best single document for what a verification pass must look for.
 
-CITIES (9): kyoto(default), kanazawa, nara, hiroshima, nagano, toba(&Ise), nagoya, HIMEJI (added
-  2026-07-02: 120 curated station↔castle corridor places) — all with restaurant data — plus TOKYO
-  (KONBINI/SURVIVAL only: places:[]; restaurant guide deferred). OWN_ALL=true, all unlocked.
-
-================================================================
-FEATURES (current, all live)
-- Map of curated places + category pills (All/Ramen/Mom&Pop) + DIET STRICTNESS DIALS (see below) + filter
-  sheet; per-place detail with GF/vegan confidence + DCP cultural notes; in-app translated menus (dish-level
-  GF/vegan chips) with 📖 cross-link into the menupedia reader.
-- DIET = 3-RUNG STRICTNESS DIALS: 🌾 GF / 🌱 Vegan pills TAP to cycle strictness (celiac-safe → options →
-  need-rice, cumulative; segment indicator ●○○), LONG-PRESS = explainer. Replaced the old on/off pills +
-  triple-encoded diet filters. state.filters.gf / .vegan = 0-3.
-- 👥 GROUP / LEADER MODE: finds WALKABLE CLUSTERS where a mixed group (celiac+vegan+omni) all eat within a
-  short walk (even split across 2-3 nearby spots). 👥 pill → config (GF/vegan need + walk radius) → zone
-  list + numbered map pins. Intersection logic, not a personal lens.
-- 🏪 Konbini + 🛒 Grocery SURVIVAL LAYERS in every city incl. all of Tokyo (viewport-culled). Map FAB
-  toggles. Konbini dot → chain allergen write-up + label reader; grocery → chain-keyed GF/vegan KB.
-- 🍱 100 DISHES (menupedia) — a cultural-historical-gastronomical CELEBRATION (NOT a GF tool). ~36 deep
-  readers (history / name-story / "what to taste for") + a 🧂 FOUNDATIONS tab (16: dashi, umami, shoyu,
-  miso…) + short variant notes w/ parent links. Deepen by editing data/menupedia.json lore{} (research-
-  backed; internal knowledge NOT sufficient — cite JA sources).
-- 🚉 STATION SURVIVAL GUIDE (data/stations.json) — ekiben/omiyage/in-station GF-vegan dining, TIME-AWARE
-  (tight-transfer banner + speed tags). 6 stations: kyoto, kanazawa, hiroshima, nagano, shin_osaka, himeji.
-  Reachable via the 🚉 chip only for MAP-cities (shin_osaka data exists but is STRANDED — no Osaka city).
-- 🍽️ FOOD NEAR ME — NOW (red FAB): live OSM (functions/api/nearby.js, FREE, zero per-press tokens) +
-  konbini/grocery KB classify → nearest GF/vegan options + "guaranteed floor" (nearest konbini) + directions
-  + ask-phrases. Honest offline/no-signal fallback. This is Tier 0; Tier 1 (authorized AI deep-dive that
-  CACHES to data) is spec'd in FOOD_NEAR_ME.md, not built.
-- 📷 Menu scanner + ingredient/label reader (Mistral Pixtral) — NOW WIRED (MISTRAL_API_KEY set via wrangler).
-- 📚 Learn — in-app survival-Japanese flashcards.  DCP authoring tool (dcp-tool.html), build-dcp.mjs.
+CITIES (9): kyoto (default), tokyo, kanazawa, nara, hiroshima, nagano, toba(&Ise), nagoya, himeji.
+~3,015 records, 199 hidden (unverified / not-in-city / closed). 38 top-tier GF records, all gated.
 
 ================================================================
-SESSION 2026-07-02 SUMMARY (what just shipped, all live on main / sw v88)
-- Menupedia deepened (36 research-backed readers) + 16-entry Foundations layer + variant notes + menu
-  cross-links. Diet strictness dials. Group/Leader mode. Station guide (6 stations) + a DE-SINGLE-SOURCE
-  pass that caught Vegewel false positives/mislocations (SuryaDev, Comeconoco, Ume no Hana, ONEEARTH) and
-  found missed spots (OKOSTA, Jūwari Soba, Men-ya Iroha, Marumo Kitchen). Food-near-me Tier-0 button.
-- HIMEJI as a full city (120 corridor places) via spot-himeji-workflow. HARVEST LESSON: the sweep hung on
-  1 of 190 agents; DON'T wait on a hang — stop the workflow (TaskStop) and harvest completed StructuredOutput
-  records from subagents/workflows/<runId>/agent-*.jsonl (parse for verify records: has found/category/
-  gf_confidence), write to data/_<city>_disc.json, then run build-spot.mjs.
-- Mobilized: repo on GitHub, Pages git-connected, deploy = push/merge. Root-caused the wrangler.toml secrets
-  gotcha and wired Mistral via `npm run secret`.
+THE CRAWLER BRIEF — your actual task
+GOAL: grind the long tail of research continuously on a Pro budget, with no fleet and no human
+babysitting, producing findings that are as trustworthy as the ones a 30-agent sweep produced.
 
-OPEN ITEMS / TODO
-- STATION PICKER (or an Osaka city) so shin_osaka (and future non-map stations) are reachable via 🚉.
-- Delete stale merged branches: feat-himeji, feat-food-near-me (local + origin).
-- TOKYO restaurant sweep — the big one (many stations/districts; token-heavy; with Greg + budget). Use the
-  spot-workflow pattern with small radii per district.
-- Food-near-me TIER 1 (authorized AI deep-dive → caches a neighborhood entry to data → free thereafter).
-- Tier-2 menupedia deepening (the ~40 dishes still on original short lore). More Foundations if wanted.
-- De-single-source pass could extend to the curated CITY data (not just stations).
-- Image hosting: move menu/owner/DCP images to URL-referenced static files (Pages /img or R2), NOT base64.
-- MOBILE_OPS.md / this file still reference a couple old bits — keep current.
+WHAT IS LEFT TO GRIND (measured 2026-08-23, in value order)
+- Tokyo MENU coverage: 12%. Every other city is 91–100%. ~28 shards. THE BIGGEST USER-FACING GAP —
+  a traveller in Tokyo gets a pin and no menu. Start here.
+- Chain PINS for the 20 newer chains. The guide answers "what can I eat"; nothing answers "where
+  is one". Greg's own trip data point: Starbucks "Plant Based" options saved his vegan student's
+  last two weeks.
+- ~286 claims still uncited, on priority-3/4 records.
+- Verify sweep: 173 shards unswept — but read the next paragraph before you spend anything here.
+- A dedupe pass. Duplicate records with DIVERGING ratings exist (T's Kitchen, 味農家, べっぴん舎).
 
-COVERAGE GAPS vs ITINERARY (the itinerary is NOT stored in DCD — it lives in the wider FKTI project / the
-other Claude; get the stops from there to diff exactly)
-- FULL restaurant guides: kyoto, kanazawa, hiroshima, nagano, himeji, nara, toba&ise, nagoya.
-- Station guides: kyoto, kanazawa, hiroshima, nagano, himeji, shin_osaka.
-- ⚠ TOKYO: in the app but KONBINI/SURVIVAL ONLY — NO restaurant guide. "The big one." If it's a real stop,
-  dining is effectively uncovered → needs the token-heavy Tokyo sweep (spot-workflow, small radii per
-  district: Tokyo/Shinagawa/Ueno/Shinjuku/Shibuya…).
-- ❌ OSAKA: not covered at all (no map-city). Only a Shin-Osaka STATION guide exists, and it is STRANDED
-  (no Osaka city → not reachable via the 🚉 chip). If they stay/eat in Osaka/Umeda → nothing.
-- Any other itinerary stop not in the city list above (Miyajima, Kōbe, Kōyasan, Hakone, Kamakura, Nikkō…)
-  would be uncovered — cannot confirm without the route.
-- TO CLOSE: diff the itinerary vs the covered list; TOKYO = a big sweep, the rest are quick station-guide /
-  small-corridor sweeps (like Himeji ~120 places). Also add a station-picker (or Osaka city) to unstrand
-  Shin-Osaka.
+WHAT NOT TO GRIND, AND WHY IT MATTERS
+Every remaining verify shard is priority 3 or 4 — single-source records, or records that make no
+claim above "ask". Priorities 0/1/2 (dedicated/high GF, options GF, records with uncited claims)
+are 100% swept. All 421 records that carried a safety claim above "ask" are DONE. Brute-forcing
+the rest is ~26M subagent tokens for the lowest-value tail. That arithmetic is why Greg does not
+need another month of Max, and it should shape the crawler: it is a long-tail grinder, not a
+substitute for the sweep. The sweep already happened where it counted.
 
-CONTINUITY: memory files at ~/.claude/projects/<this>/memory/ (MEMORY.md index + per-fact files) orient any
-fresh session — read them first. Key ones: menupedia-direction, diet-strictness-dials, station-survival-guide,
-food-near-me-feature, mobile-deploy-setup, no-single-source-gf-vegan, dining-here-what-can-i-do.
+CONSTRAINTS THE DESIGN MUST RESPECT
+- One shard per invocation, state on disk, resumable by any fresh session. scripts/agent-status.mjs
+  is the existing pattern for reading progress.
+- MUST NOT write to data/ while a rebuild holds data/.rebuild.lock.
+- MUST route findings through the existing gate — never let a crawler promote a tier. Downgrades
+  may apply automatically; upgrades queue for Greg. This is not negotiable and it is the whole
+  reason the dataset is trustworthy.
+- MUST honour data/_gate_rejections.json, or it will re-propose things Greg already refused.
+- Prefer FREE mechanical passes (the flag-*/check-* scripts run repo-wide at zero token cost) and
+  spend agent tokens only where a page actually has to be read.
+- Log what it drops. If it caps at top-N or skips retries, say so — silent truncation reads as
+  "covered everything" when it did not.
+
+OPEN QUESTIONS FOR GREG (do not guess)
+- Purge or keep the 141 not-found Tokyo records? Currently hidden, not deleted.
+- Restore preview-branch discipline now, or keep pushing to main?
+
+================================================================
+CONTINUITY: memory files at ~/.claude/projects/<this>/memory/ (MEMORY.md index + per-fact files).
+Read them first. Newest: gf-vegan-risk-asymmetry (the two-axes rule and the dashi crossover).

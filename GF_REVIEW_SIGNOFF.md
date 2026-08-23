@@ -1,8 +1,8 @@
 # GF SAFETY REVIEW — GREG SIGN-OFF WORKLIST
 
-Generated 2026-08-21 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
+Generated 2026-08-23 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
 
-**29 auto-downgrades applied by this adversarial pass and committed** (plus 44 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 30 already gated.
+**29 auto-downgrades applied by this adversarial pass and committed** (plus 44 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 40 already gated.
 
 Per protocol §4, auto-downgrades apply immediately — more caution is always safe. The records below need your sign-off because a retained `dedicated`/`high` is the only way this app can over-promise to a celiac. Nothing here says "just go": the app floor (confirm with the kitchen + show the card) still stands on every one.
 

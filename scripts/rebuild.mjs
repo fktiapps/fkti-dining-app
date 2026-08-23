@@ -11,6 +11,26 @@
  * Usage: npm run rebuild
  */
 import { execFileSync } from 'node:child_process';
+import fs from 'node:fs';
+
+// A full rebuild reads every city file, works for minutes, and writes them all back.
+// Anything that edits data/ while it runs loses: a revert of 杏もん堂 was applied, linted
+// clean, and then silently undone by a rebuild that had already read the old himeji.json.
+// The lock makes that collision loud instead of invisible.
+const LOCK = 'data/.rebuild.lock';
+if (fs.existsSync(LOCK)) {
+  const held = fs.readFileSync(LOCK, 'utf8');
+  console.error('A rebuild is already running (' + held.trim() + ').');
+  console.error('Two rebuilds, or a rebuild plus a concurrent edit, will clobber each other.');
+  console.error('If that process is gone, delete ' + LOCK + ' and retry.');
+  process.exit(1);
+}
+fs.writeFileSync(LOCK, `pid ${process.pid} started ${new Date().toISOString()}`);
+const release = () => { try { fs.unlinkSync(LOCK); } catch {} };
+process.on('exit', release);
+for (const sig of ['SIGINT', 'SIGTERM']) process.on(sig, () => { release(); process.exit(130); });
+
+
 
 const STEPS = [
   ['normalize-cuisine.mjs',           'map cuisine_type onto the UI vocabulary'],

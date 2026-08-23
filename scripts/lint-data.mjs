@@ -110,8 +110,17 @@ for (const city of CITIES) {
     const sg = r.safety?.owner_signoff;
     if (legitOverride)
       warn(city, `${at}: held at "ask" over sign-off — ${held.disproven} claim(s) disproven against their sources; needs Greg's re-review`);
-    else if (sg?.decision && sg.to && sg.to !== r.gf_confidence)
+    // Check the sign-off against THE FIELD IT WAS FOR. A record can be signed off on
+    // its vegan axis alone — 貝や 廉 and サロン・フ both were — and reading a vegan_status
+    // approval as though it were a gf_confidence one reports eight healthy records as
+    // "a machine pass overwrote the human gate", which is the one error message in
+    // this file that must never cry wolf. Sign-offs written before the field was
+    // recorded are GF ones by history, so an absent field still means gf_confidence.
+    else if (sg?.decision && sg.to && (sg.field || 'gf_confidence') === 'gf_confidence'
+             && sg.to !== r.gf_confidence)
       err(city, `${at}: gf_confidence="${r.gf_confidence}" contradicts owner_signoff.to="${sg.to}" (${sg.by} ${sg.date}) — a machine pass overwrote the human gate`);
+    else if (sg?.decision && sg.to && sg.field === 'vegan_status' && sg.to !== r.vegan_status)
+      err(city, `${at}: vegan_status="${r.vegan_status}" contradicts owner_signoff.to="${sg.to}" (${sg.by} ${sg.date}) — a machine pass overwrote the human gate`);
 
     // A GF tier above "ask" is a claim that this shop is safer than the default, and
     // the safety block is where the reason lives. いろは堂 shipped as "some GF options"

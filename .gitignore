@@ -32,3 +32,6 @@ scripts/_*.py
 
 # incremental agent partials — only finished sN.json shards are inputs
 data/_*_verdicts/_*_part_*.json
+
+# runtime lock held by scripts/rebuild.mjs
+data/.rebuild.lock

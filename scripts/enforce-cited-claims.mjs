@@ -115,7 +115,24 @@ for (const city of CITIES) {
     //
     // So the gate still wins on silence, and loses to disproof. Held records are
     // listed for his re-review rather than quietly changed.
-    if (r.safety?.owner_signoff?.decision && !disproven(r)) continue;
+    // A sign-off normally loses to a disproven claim, and that is right when the
+    // sign-off came FIRST: it was given on evidence that later failed, so it rests on a
+    // false premise. It inverts when the human approved AFTER reading the disproven
+    // claims — which is what `overrode_disproven` records. Greg read what failed on
+    // T's Kitchen and Oh Nana! and approved anyway, and this pass kept quietly putting
+    // them back to "ask", so the app went on telling a celiac to "ask" at a restaurant
+    // holding アジア初のグルテンフリー認証.
+    // The count is compared, not just the flag: if NEW claims have been disproven since
+    // the override, that is evidence he has not seen and the hold applies again.
+    const sg = r.safety?.owner_signoff;
+    if (sg?.decision && !disproven(r)) continue;
+    // The override clears the DISPROVEN hold only. It does not clear the no-sources-at-all
+    // hold: アトミヨソワカ shipped at "high" on ten safety findings of which not one cited a
+    // source, which is precisely the state REVIEW_PROTOCOL refuses. Approving a tier over
+    // known-bad evidence is a judgement Greg is entitled to make; approving one over no
+    // evidence is not a judgement, it is a gap.
+    const anyCited = EV.some(f => ((r.safety?.[f]) || []).some(e => typeof e === 'object' && e.source));
+    if (sg?.decision && anyCited && sg.overrode_disproven >= disproven(r)) continue;
     const overridesSignoff = !!r.safety?.owner_signoff?.decision;
 
     moved.push({ city, id: r.id, name: r.name, from: r.gf_confidence,

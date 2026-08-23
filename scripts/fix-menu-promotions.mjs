@@ -30,17 +30,37 @@ const VG_NEGATIVE = /no vegan option|not suitable for vegans|not vegan[- ]friend
 const GF_LABEL = { no: 'Not gluten-free', ask: 'GF — ask' };
 const VG_LABEL = { no: 'Not vegan', ask: 'Vegan — ask', limited: 'Limited vegan' };
 
-const fixed = [];
+const fixed = [], gated = [];
 for (const city of CITIES) {
   const j = readCity(city);
   let dirty = false;
   for (const r of j.places) {
     // Only records the reconciler touched, and only where the prose contradicts it.
-    const gfBad = PROMOTED.test(r.gf_detail || '') && GF_NEGATIVE.test(r.gf_detail || '') &&
+    let gfBad = PROMOTED.test(r.gf_detail || '') && GF_NEGATIVE.test(r.gf_detail || '') &&
                   ['options', 'high', 'dedicated'].includes(r.gf_confidence);
-    const vgBad = PROMOTED.test(r.vegan_detail || '') && VG_NEGATIVE.test(r.vegan_detail || '') &&
+    let vgBad = PROMOTED.test(r.vegan_detail || '') && VG_NEGATIVE.test(r.vegan_detail || '') &&
                   ['full', 'options'].includes(r.vegan_status);
     if (!gfBad && !vgBad) continue;
+
+    // "The text wins" is the right rule against a MACHINE promotion. It is the wrong
+    // rule against Greg. He reads the evidence and the prose together and is the more
+    // authoritative of the two; stale detail text is not grounds to silently undo him.
+    // 味農家 lost a sign-off here and left no trace the linter could read, which is the
+    // exact failure this project treats as unacceptable. Where he has signed off on
+    // the axis in question, leave the tier alone and report it: the prose is what
+    // needs fixing, and rewriting research somebody did is a human's job.
+    const sg = r.safety?.owner_signoff;
+    const signedGf = sg?.decision && (sg.field || 'gf_confidence') === 'gf_confidence';
+    const signedVg = sg?.decision && sg.field === 'vegan_status';
+    if ((gfBad && signedGf) || (vgBad && signedVg)) {
+      gated.push({ city, id: r.id, name: r.name, axis: gfBad && signedGf ? 'gf' : 'vegan',
+                   tier: gfBad && signedGf ? r.gf_confidence : r.vegan_status,
+                   by: sg.by, date: sg.date });
+      if (gfBad && signedGf) gfBad = false;
+      if (vgBad && signedVg) vgBad = false;
+      if (!gfBad && !vgBad) continue;
+    }
+
 
     const before = { gf: r.gf_confidence, vegan: r.vegan_status };
     if (APPLY) {
@@ -56,6 +76,11 @@ for (const city of CITIES) {
   if (dirty) writeCity(city, j);
 }
 
+if (gated.length) {
+  console.log(`${gated.length} record(s) NOT reverted — Greg signed off on that axis; their detail text needs rewriting instead:`);
+  for (const g of gated) console.log(`  = ${g.city}/${String(g.name).slice(0, 30)} ${g.axis}="${g.tier}" (${g.by} ${g.date})`);
+  console.log('');
+}
 console.log(`${fixed.length} record(s) promoted by menu count against their own text\n`);
 for (const f of fixed)
   console.log(`  ${f.city}/${String(f.name).slice(0, 30).padEnd(32)} ` +

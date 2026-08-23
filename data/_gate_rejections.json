@@ -1,0 +1,37 @@
+{
+ "_doc": "Upgrade recommendations that were considered and REFUSED. The queue is regenerated from agent verdict files every rebuild, so a rejection that lives only in the record is undone on the next cycle — 杏もん堂 was reverted, linted clean, and silently re-promoted three times before this file existed. Approvals persist as safety.owner_signoff; refusals persist here. scripts/apply-gate-tranche.mjs skips every id+field listed.",
+ "rejections": [
+  {
+   "id": "himeji_almondou",
+   "name": "杏もん堂 (Almondou)",
+   "field": "gf_confidence",
+   "refused": "options",
+   "keep": "no",
+   "by": "Claude, on Greg's standing instruction to resolve existence and evidence problems directly",
+   "date": "2026-08-23",
+   "reason": "The recommendation rested on a claim that the shop's own site states the curry uses no wheat flour and passed a third-party gluten/gliadin test with NONE DETECTED, the report displayed in store. almond-cafe.jp was fetched on 2026-08-23: no グルテン, no 小麦不使用, no グリアジン検査, no allergen page of any kind. The shop sells almond butter toast on wheat bread, a spiced curry roux, and cake. The claim is not supported anywhere on the cited source. The record's own detail text was the accurate one.",
+   "checked_source": "https://almond-cafe.jp/",
+   "note": "The same finding also corrected the record's spice count from 18 to 21, which the site does confirm. That correction was kept. A partly-checkable finding is not a trustworthy one."
+  },
+  {
+   "id": "tokyo3_osteria_lauro",
+   "name": "Osteria Lauro",
+   "field": "gf_confidence",
+   "refused": "options",
+   "keep": "ask",
+   "by": "Greg",
+   "date": "2026-08-23",
+   "reason": "Queued only for a paperwork reason — the record had been held down because no safety finding cited a source. The sources still do not hold: BOTH of its GF claims failed verification, the +150 yen gluten-free pasta substitution AND the warning that lunch sets come with bread from a shared kitchen. Nothing here is established in either direction, so the honest tier is \"ask\". Revisit if a first-party source for the substitution turns up."
+  },
+  {
+   "id": "tokyo3_y_28",
+   "name": "そらのいろ ニッポン",
+   "field": "gf_confidence",
+   "refused": "options",
+   "keep": "ask",
+   "by": "Greg",
+   "date": "2026-08-23",
+   "reason": "The upgrade rests on a single claim — that staff ask about wheat allergy and cook the order in a separate pot — and that is exactly the claim that failed verification against its cited source. A separate-pot claim is the whole of the safety case at a ramen shop, where the default is shared boiling water, so it needs a real first-party source before it moves."
+  }
+ ]
+}

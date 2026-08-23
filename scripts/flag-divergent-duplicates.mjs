@@ -87,8 +87,23 @@ if (APPLY) {
     for (const pr of pairs.filter(x => x.city === city && x.nameMatch)) {
       const A = j.places.find(x => x.id === pr.a.id), B = j.places.find(x => x.id === pr.b.id);
       if (!A || !B) continue;
-      const gf = (GF_RANK[A.gf_confidence] <= GF_RANK[B.gf_confidence]) ? A.gf_confidence : B.gf_confidence;
-      const vg = (VG_RANK[A.vegan_status] <= VG_RANK[B.vegan_status]) ? A.vegan_status : B.vegan_status;
+      // Aligning to the more cautious tier is right when both twins were rated by a
+      // machine. It is wrong when Greg has ruled on one of them: he read that shop's
+      // evidence and decided, and the existence of a second, staler copy of the same
+      // restaurant is not new information about the food. 味農家（みのや） was signed off at
+      // "options" and then dragged back to "ask" on every rebuild by its own duplicate.
+      // Where a twin carries a sign-off for the axis, that tier wins for BOTH.
+      const signedTier = (field) => {
+        for (const r of [A, B]) {
+          const sg = r.safety?.owner_signoff;
+          if (sg?.decision && (sg.field || 'gf_confidence') === field && sg.to) return sg.to;
+        }
+        return null;
+      };
+      const gf = signedTier('gf_confidence') ??
+        ((GF_RANK[A.gf_confidence] <= GF_RANK[B.gf_confidence]) ? A.gf_confidence : B.gf_confidence);
+      const vg = signedTier('vegan_status') ??
+        ((VG_RANK[A.vegan_status] <= VG_RANK[B.vegan_status]) ? A.vegan_status : B.vegan_status);
       for (const r of [A, B]) {
         if (r.gf_confidence !== gf) { r.gf_confidence = gf; r.gf_label = GF_LABEL[gf]; dirty = true; }
         if (r.vegan_status !== vg) { r.vegan_status = vg; r.vegan_label = VG_LABEL[vg]; dirty = true; }
