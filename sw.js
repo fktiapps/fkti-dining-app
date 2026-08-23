@@ -10,8 +10,10 @@ const SHELL_ASSETS = [
   './', './index.html', './gate.js', './dcp-launch.js', './manifest.webmanifest',
   './dcp-tool.html', './dcp-gate.js', './dcp.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/favicon.png', './icons/apple-touch-icon.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css',
-  'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'
+  './vendor/leaflet/leaflet.min.css', './vendor/leaflet/leaflet.min.js',
+  './vendor/leaflet/images/layers.png', './vendor/leaflet/images/layers-2x.png',
+  './vendor/leaflet/images/marker-icon.png', './vendor/leaflet/images/marker-icon-2x.png',
+  './vendor/leaflet/images/marker-shadow.png'
 ];
 
 self.addEventListener('install', e => {
@@ -94,7 +96,7 @@ self.addEventListener('fetch', e => {
 
   // Other shell assets (scripts/styles/CDN): cache-first, fall back to network, always resolve.
   e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request).then(r => {
-    if (url.origin === location.origin || url.hostname.includes('cdnjs')) {
+    if (url.origin === location.origin) {
       const copy = r.clone(); caches.open(SHELL).then(c => c.put(e.request, copy));
     }
     return r;
