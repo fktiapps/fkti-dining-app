@@ -72,7 +72,7 @@ const VEGAN_FIELDS = ['vegan_cross_contact', 'positives'];
 const veganDisproven = r => VEGAN_FIELDS.reduce((n, f) =>
   n + ((r.safety?.[f]) || []).filter(e => typeof e === 'object' && e.unsupported).length, 0);
 
-const moved = [], ownerReview = [], veganMoved = [];
+const moved = [], ownerReview = [], veganMoved = [], veganOwnerHeld = [];
 for (const city of CITIES) {
   const j = readCity(city);
   let dirty = false;
@@ -155,6 +155,37 @@ for (const city of CITIES) {
     // crepes; SOYA shipped as fully vegan while selling bacon and tuna breads.
     if (!VEGAN_CLAIMS_SAFER.has(r.vegan_status)) continue;
     if (veganDisproven(r) === 0) continue;
+
+    // A sign-off Greg ARGUED is not overridden by a disproven claim. This mirrors
+    // OWNER_RULED on the GF path above, and the reasoning is the same: a bulk approval
+    // is trust in the process, and the process is what failed — but a decision he sat
+    // down and wrote a paragraph about can only be revisited by him.
+    //
+    // 味農家 is the case that forced this. He approved it to "full" in tranche A on
+    // 2026-08-23 and recorded WHY, having already watched a sibling process move it to
+    // "options": 「肉・魚・卵を一切使わない本格和食のコース」 and 「出汁は昆布と野菜のみ…動物性の
+    // ものは使用しておりません」. This pass then overrode that ruling on every rebuild.
+    //
+    // Note the direction, which is handoff lesson A: the disproven claim on that record
+    // is the PESSIMISTIC one ("separate standard course uses animal products"). A claim
+    // that argued AGAINST the tier failing verification is not evidence the tier is too
+    // high. Every other record held here had an OPTIMISTIC claim disproven — "the entire
+    // menu is vegan" (cafe planet), "whole bakery is plant-based" (SOYA) — and those
+    // stay held, because there the label is what failed.
+    const vsg = r.safety?.owner_signoff;
+    if (vsg && vsg.field === 'vegan_status' && !vsg.bulk && vsg.to === r.vegan_status) {
+      veganOwnerHeld.push({ city, id: r.id, name: r.name, tier: r.vegan_status,
+                            disproven: veganDisproven(r), by: vsg.by, date: vsg.date });
+      if (APPLY) {
+        r.needs_owner_review = { date: DATE, field: 'vegan_status',
+          disproven: veganDisproven(r),
+          why: `Sign-off by ${vsg.by} on ${vsg.date} left in place over ${veganDisproven(r)} ` +
+               'disproven vegan finding(s). He ruled on this record specifically; only he can ' +
+               'decide whether the new finding changes that reasoning.' };
+        delete r.vegan_disproven_downgrade;   // clear a hold applied before this guard existed
+      }
+      continue;
+    }
     veganMoved.push({ city, id: r.id, name: r.name, disproven: veganDisproven(r) });
     if (!APPLY) continue;
     r.vegan_disproven_downgrade = { from: r.vegan_status, date: DATE,
@@ -177,3 +208,9 @@ for (const m of moved)
     (m.overrides_signoff ? ' ⚠ OVERRIDES SIGN-OFF ' : '  ') + m.name.slice(0, 30));
 if (!APPLY) console.log('\nDRY RUN — nothing written. Re-run with --apply.');
 fs.writeFileSync('data/_uncited_claims.json', JSON.stringify(moved, null, 1));
+if (veganOwnerHeld.length) {
+  console.log(`\n${veganOwnerHeld.length} vegan tier(s) LEFT ALONE over a specific owner sign-off:`);
+  for (const v of veganOwnerHeld)
+    console.log(`  ${v.city}/${v.id.padEnd(20)} kept "${v.tier}" over ${v.disproven} disproven ` +
+      `finding(s) — signed off by ${v.by} ${v.date} — ${v.name.slice(0, 28)}`);
+}

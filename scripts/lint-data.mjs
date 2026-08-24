@@ -80,7 +80,16 @@ for (const city of CITIES) {
     if (r.hours_status && !HOURS_ST.has(r.hours_status)) warn(city, `${at}: unusual hours_status "${r.hours_status}"`);
 
     if (typeof r.lat !== 'number' || typeof r.lng !== 'number') err(city, `${at}: non-numeric coords`);
-    else if (r.lat < s || r.lat > n || r.lng < w || r.lng > e)
+    // Hidden records are exempt, because fit-bounds.mjs excludes them when it computes
+    // the box: "a record hidden precisely because nobody could confirm its location is
+    // the last thing that should set the initial viewport." Checking here what is not
+    // counted there makes the two disagree by construction, and the error is unfixable
+    // without either un-hiding a bad record or widening the map to reach it.
+    //
+    // This surfaced when 230 unresearched Tokyo sweep records were hidden: the box
+    // correctly shrank to the records that are actually drawn, and 8 hidden ones then
+    // sat outside it. None was visible, so nothing a user could see was affected.
+    else if (!r.hidden && (r.lat < s || r.lat > n || r.lng < w || r.lng > e))
       err(city, `${at}: coords ${r.lat},${r.lng} outside manifest bounds`);
 
     if ('cultural_comfort_note' in r) err(city, `${at}: legacy flat cultural_comfort_note (use cultural_comfort.note)`);
@@ -152,6 +161,34 @@ for (const city of CITIES) {
 }
 
 const p = console.log;
+
+// Which pass wrote a tier over the human gate, by name.
+//
+// Four passes were doing this silently, each with a locally defensible rule, and they
+// were invisible because none of them left a marker the linter read. Finding the culprit
+// meant bisecting the pipeline by hand. setTier() records every tier write and flags the
+// ones that contradict an owner_signoff or a data/_gate_rejections.json entry; this reads
+// that back. Empty when lint runs standalone — the log is written during a rebuild.
+const writes = readTierWrites();
+const clashes = writes.filter(w => w.contradicts_signoff || w.contradicts_rejection);
+if (writes.length) {
+  const byScript = {};
+  for (const w of writes) byScript[w.script] = (byScript[w.script] || 0) + 1;
+  p(`\ntier writes this rebuild: ${writes.length} (` +
+    Object.entries(byScript).sort((a, b) => b[1] - a[1]).map(([s, n]) => `${s} ${n}`).join(', ') + ')');
+}
+if (clashes.length) {
+  p(`\n${clashes.length} tier write(s) went against the human gate:`);
+  for (const w of clashes) {
+    const against = w.contradicts_rejection
+      ? `gate REJECTION (keep "${w.rejection_keep}")` : `sign-off (to "${w.signoff_to}")`;
+    p(`  ⚑ ${w.script} wrote ${w.field} "${w.from}" -> "${w.to}" against a ${against}`);
+    p(`      ${w.id}  ${String(w.name || "").slice(0, 40)}${w.why ? "  — " + w.why : ""}`);
+  }
+  p("  These are not automatically wrong: some passes are RIGHT to hold a signed-off record");
+  p("  down when a claim it rested on is later disproven. But each one is a machine decision");
+  p("  taken over a human one, so each should be a deliberate, documented exemption.");
+}
 p(`\ntop-tier GF records: ${topTier}   gated: ${topTierGated}   ungated: ${topTier - topTierGated}`);
 if (warnings.length) { p(`\n${warnings.length} warning(s):`); warnings.slice(0, 40).forEach(w => p('  ⚠ ' + w)); if (warnings.length > 40) p(`  … ${warnings.length - 40} more`); }
 if (errors.length)   { p(`\n${errors.length} error(s):`);   errors.slice(0, 40).forEach(e => p('  ✖ ' + e));   if (errors.length > 40) p(`  … ${errors.length - 40} more`); }

@@ -26,6 +26,11 @@ if (fs.existsSync(LOCK)) {
   process.exit(1);
 }
 fs.writeFileSync(LOCK, `pid ${process.pid} started ${new Date().toISOString()}`);
+
+// The tier-write log describes ONE rebuild, so that "which pass moved this record?" is a
+// grep rather than a bisect. Truncated here rather than appended to forever: across runs
+// it would be noise, and the question it answers is always about the run you just did.
+fs.rmSync('data/_tier_writes.jsonl', { force: true });
 const release = () => { try { fs.unlinkSync(LOCK); } catch {} };
 process.on('exit', release);
 for (const sig of ['SIGINT', 'SIGTERM']) process.on(sig, () => { release(); process.exit(130); });
