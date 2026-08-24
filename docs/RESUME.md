@@ -20,6 +20,7 @@ Branch `claude/architecture-phases-1-3`, worktree `C:\pf\fkti-dining-arch`.
 | **3** | 24 tests over the tier rules, mutation-checked |
 | — | Fabrication prohibition written into `REVIEW_PROTOCOL.md` |
 | — | 265 Tokyo sweep records hidden; 275 triaged; 3 duplicate pairs merged |
+| — | Accumulating-banner bug fixed — 175KB of repeated warning text removed |
 
 ## Baselines to hold
 
@@ -67,11 +68,22 @@ Branch `claude/architecture-phases-1-3`, worktree `C:\pf\fkti-dining-arch`.
   about half the time here, and `join(', ')` inside a single-quoted JS string in a
   patch generator will close the string early — that cost a run tonight.
 
-## Still not fixed, deliberately
+## Fixed overnight
 
-- **`enforce-cited-claims.mjs` is not idempotent.** It prepends its `[Held at "ask"…]`
-  banner to `gf_detail` on every run with no guard, so the text accumulates a copy per
-  rebuild; himeji already carries several. `apply-gf-audit.mjs` has exactly the guard
-  it needs. Fix, rebuild once, and commit the de-duplicated text as its own change.
+- **The accumulating-banner bug is fixed.** It was far worse than first measured:
+  `enforce-cited-claims.mjs` AND `apply-owner-signoff.mjs` both prepended a bracketed
+  note to `gf_detail` unguarded, so both accumulated a copy per rebuild. 菓子屋 藤ノ宮
+  carried **69 copies** — 39,470 characters, ~38,900 of them repeated — in text the app
+  renders straight into the detail panel. 17 fields affected, 175KB of repeat.
+  Both are guarded now, and `scripts/dedupe-detail-banners.mjs` collapses exact repeats
+  and runs in the pipeline as defence in depth. 0 repeats after a full rebuild.
+
+## Still not fixed
+
 - **`himeji_almondou` says 21 spices in `gf_detail`, 18 in `chef_bio`** (anecdote and
   japanese_sources_summary). One fact, three places, one corrected.
+- **`scripts/probe-existence-osm.mjs` yields 1 confirmation in 34.** Free, so it costs
+  nothing to keep, but if it does not earn its place it should be deleted rather than
+  maintained. Its real finding is the negative space: 33 of 34 records cannot be
+  confirmed from the largest free open dataset there is. That is not proof they are
+  phantoms and must not be read as one.
