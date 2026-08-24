@@ -108,6 +108,8 @@ for (const city of CITIES) {
       r.gf_detail = `[${d.appendDetail}] ${r.gf_detail || ''}`.trim();
 
     if (d.decision === 'downgrade')
+      // Same unguarded-prepend bug as the held-down banner: this ran on every rebuild.
+      if (!String(r.gf_detail || '').includes(`[Owner review ${DATE}: GF ${from}→${to}.`))
       r.gf_detail = `[Owner review ${DATE}: GF ${from}→${to}. ${d.reason}] ${r.gf_detail || ''}`.trim();
 
     applied++; dirty = true;

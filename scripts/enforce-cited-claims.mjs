@@ -148,6 +148,10 @@ for (const city of CITIES) {
           'through REVIEW_PROTOCOL.md once evidence is attached.' };
     setTier(r, 'gf_confidence', 'ask', { by: 'enforce-cited-claims',
       why: disproven(r) ? 'safety findings disproven against their sources' : 'no safety finding cites a source' });
+    // Prepend ONCE. This pass runs on data it has already processed, so an unguarded
+    // prepend accumulates a copy per rebuild — 菓子屋 藤ノ宮 reached 69 copies of the same
+    // sentence in text the app renders straight into the detail panel.
+    if (!String(r.gf_detail || '').includes('The description below was not traceable'))
     r.gf_detail = `[Held at "ask" ${DATE}] The description below was not traceable to any ` +
       `source, so the GF label is held down until it is. ` + (r.gf_detail || '');
     dirty = true;
@@ -198,6 +202,7 @@ for (const city of CITIES) {
             'their sources and contradicted by them.' };
     setTier(r, 'vegan_status', 'options', { by: 'enforce-cited-claims',
       why: 'fully-vegan label contradicted by this record\'s own cited sources' });
+    if (!String(r.vegan_detail || '').includes('label was contradicted by this record'))
     r.vegan_detail = `[Held at "some vegan options" ${DATE}] The "fully vegan" label was ` +
       `contradicted by this record's own cited sources. ` + (r.vegan_detail || '');
     dirty = true;

@@ -81,6 +81,11 @@ const STEPS = [
   ['apply-cite-verdicts.mjs',         'apply citation-verification verdicts to claims', ['--apply']],
   ['enforce-cited-claims.mjs',        'hold down GF labels that cite no source', ['--apply']],
   // Last of the data passes: every tier change above must be reflected in its label.
+  // Defence in depth against unguarded prepends. Two passes appended a bracketed note to
+  // gf_detail on every run and the copies accumulated — 69 of them on one record, in text
+  // the app renders to the reader. Both are guarded now; this collapses exact repeats
+  // whatever their source, and is idempotent.
+  ['dedupe-detail-banners.mjs',      'collapse annotation blocks prepended more than once', ['--apply']],
   ['sync-diet-labels.mjs',            'make stored diet labels agree with their tier', ['--apply']],
   ['flag-self-admitted-doubt.mjs',    'hide records whose own text says they were never verified', ['--apply']],
   ['fit-bounds.mjs',                  'fit manifest bounds to actual coverage'],
