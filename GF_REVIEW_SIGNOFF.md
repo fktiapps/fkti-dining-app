@@ -2,7 +2,7 @@
 
 Generated 2026-08-24 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
 
-**26 auto-downgrades applied by this adversarial pass and committed** (plus 47 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 40 already gated.
+**26 auto-downgrades applied by this adversarial pass and committed** (plus 47 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 39 already gated.
 
 Per protocol §4, auto-downgrades apply immediately — more caution is always safe. The records below need your sign-off because a retained `dedicated`/`high` is the only way this app can over-promise to a celiac. Nothing here says "just go": the app floor (confirm with the kitchen + show the card) still stands on every one.
 

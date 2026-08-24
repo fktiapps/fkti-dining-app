@@ -20,7 +20,7 @@
 //   node scripts/enforce-cited-claims.mjs [--apply]
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
-import { EVIDENCE_KEYS as EV, GF_LABEL as LABEL, VEGAN_LABEL, setTier } from './lib-tiers.mjs';
+import { EVIDENCE_KEYS as EV, GF_LABEL as LABEL, VEGAN_LABEL, setTier, signoffFor } from './lib-tiers.mjs';
 
 const APPLY = process.argv.includes('--apply');
 const DATE = '2026-08-20';
@@ -119,7 +119,11 @@ for (const city of CITIES) {
     // holding アジア初のグルテンフリー認証.
     // The count is compared, not just the flag: if NEW claims have been disproven since
     // the override, that is evidence he has not seen and the hold applies again.
-    const sg = r.safety?.owner_signoff;
+    // signoffFor, not r.safety.owner_signoff: a record ruled on both axes keeps only
+    // the later decision in the live object and the rest in owner_signoff_log. Reading
+    // the live object put 味農家 back to "ask" because its GF ruling had been displaced
+    // by a vegan one.
+    const sg = signoffFor(r, 'gf_confidence');
     if (sg?.decision && !disproven(r)) continue;
     // The override clears the DISPROVEN hold only. It does not clear the no-sources-at-all
     // hold: アトミヨソワカ shipped at "high" on ten safety findings of which not one cited a
@@ -128,7 +132,7 @@ for (const city of CITIES) {
     // evidence is not a judgement, it is a gap.
     const anyCited = EV.some(f => ((r.safety?.[f]) || []).some(e => typeof e === 'object' && e.source));
     if (sg?.decision && anyCited && sg.overrode_disproven >= disproven(r)) continue;
-    const overridesSignoff = !!r.safety?.owner_signoff?.decision;
+    const overridesSignoff = !!sg?.decision;
 
     moved.push({ city, id: r.id, name: r.name, from: r.gf_confidence,
                  disproven: disproven(r), overrides_signoff: overridesSignoff,

@@ -31,5 +31,31 @@
   "evidence": [],
   "why": "Rated 'Not gluten-free' while the shop's own site states the curry uses no wheat flour and passed a third-party gluten/gliadin test with NONE DETECTED, the report displayed in store. The record also has 18 spices for 21, calls almond-milk lattes dairy, says allergy language does not exist when it does, and publishes stale hours.",
   "source": "transcribed from agent prose"
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3__148",
+  "name": "アトミヨソワカ 蔵前店",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "high",
+  "evidence": [
+   "https://atomiyosowaka.jp/about/",
+   "https://atomiyosowaka.jp/menu/",
+   "https://atomiyosowaka.jp/"
+  ],
+  "why": "UNDER-RATED, and the record already knows it — it carries gf_uncited_downgrade {from: 'options'} whose stated condition ('restore once evidence is attached') is now met, alongside a gf_proposed_tier of 'dedicated'. The evidence: the brand's own identity line is 「ヴィーガンスイーツ・グルテンフリースイーツ 米粉菓子」, it states 「米粉を使っているので、小麦アレルギーの方も安心してお召し上がりいただけるおいしい米粉菓子です」, and all 24 published products are rice-flour bakes with no wheat item anywhere on the site. Per the owner's ruling, writing 小麦アレルギー rather than セリアック does not weaken this. 'high' rather than 'dedicated': the operator never states a dedicated facility or equipment separation, uses organic oatmeal of unstated gluten-purity, and co-produces part of the range at an external workshop (ろくえもん) whose handling is undocumented. Those two questions are exactly what REVIEW_PROTOCOL.md's human gate should put to the shop before anything above 'ask' goes live."
+ },
+ {
+  "city": "tokyo",
+  "id": "tokyo3_a_375",
+  "name": "玄米菜食",
+  "field": "gf_confidence",
+  "current": "ask",
+  "recommended": "options",
+  "evidence": [
+   "http://www.mominoki-house.net/"
+  ],
+  "why": "The venue's own site publishes a named 「グルテンフリー・五葷抜き / Gluten-Free」 menu section with six priced items, in Japanese, English and Chinese. Under REVIEW_PROTOCOL that is 'some naturally-GF/adaptable dishes, NO special handling' — options, and capped there because it is a single source with no independent corroboration and no dedicated fryer claimed. The mandatory cross-contamination text must say: the same kitchen deep-fries wheat spring rolls and tempura, one GF-line item (揚げ餅) is itself deep-fried, the mock-meat karaage is seitan (the venue's own English menu calls it 'gluten chicken'), and neither tamari nor the miso type is stated."
  }
 ]

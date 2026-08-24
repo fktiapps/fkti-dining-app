@@ -137,8 +137,21 @@ const rejections = () => {
  */
 export function signoffFor(record, field) {
   const s = record?.safety?.owner_signoff;
-  if (!s) return null;
-  return (s.field || 'gf_confidence') === field ? s : null;
+  if (s && (s.field || 'gf_confidence') === field) return s;
+  // A record can be ruled on TWICE, on different axes, and safety.owner_signoff holds
+  // exactly one object — so the second ruling displaces the first. owner_signoff_log is
+  // the append-only record of all of them, and a guard that reads only the live object
+  // silently loses whichever decision came first.
+  //
+  // 味農家 is the case: two duplicate records were signed off separately, one on
+  // gf_confidence and one on vegan_status, and merging them left the GF ruling visible
+  // only in the log. enforce-cited-claims read the live object, saw a vegan sign-off,
+  // concluded there was no GF ruling, and put the tier back to "ask".
+  const log = record?.safety?.owner_signoff_log;
+  if (!Array.isArray(log)) return null;
+  const hits = log.filter(x => (x.field || 'gf_confidence') === field);
+  // Latest by date wins, matching "his most recent ruling on this axis stands".
+  return hits.sort((a, b) => String(a.date || '').localeCompare(String(b.date || ''))).pop() || null;
 }
 
 /** The gate rejection governing this id+field, or null. */
