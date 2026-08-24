@@ -1,8 +1,8 @@
 # GF SAFETY REVIEW — GREG SIGN-OFF WORKLIST
 
-Generated 2026-08-23 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
+Generated 2026-08-24 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
 
-**29 auto-downgrades applied by this adversarial pass and committed** (plus 44 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 40 already gated.
+**26 auto-downgrades applied by this adversarial pass and committed** (plus 47 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 40 already gated.
 
 Per protocol §4, auto-downgrades apply immediately — more caution is always safe. The records below need your sign-off because a retained `dedicated`/`high` is the only way this app can over-promise to a celiac. Nothing here says "just go": the app floor (confirm with the kitchen + show the card) still stands on every one.
 
@@ -22,7 +22,7 @@ Run `npm run lint` to see the current state at any time; it fails on any top-tie
 
 ---
 
-## ⬇ Auto-downgrades applied by this pass (29)
+## ⬇ Auto-downgrades applied by this pass (26)
 
 - **プレマルシェ・ジェラテリア 三条本店** (Kyoto) `high` → `options` — The gelato ingredients survive scrutiny — the shop's own site states 「当店のジェラートにはグルテンを含有する素材は一切使用していませんので、安心してお召し上がりください」 and it publishes a per-flavour allergen table — but the same page confirms the disconfirming fact I was hunting for: th
 - **Au petit Foreau pâtissière** (Kyoto) `dedicated` → `options` — I set out to disprove the whole-shop wheat-free claim and succeeded on the record's own evidence: the owner's blog (ameblo.jp/petit-foreau, cited ON the record) lists a mixed lineup where only some items carry ヴィーガン・小麦フリー / 乳・小麦フリー labels w
@@ -30,9 +30,7 @@ Run `npm run lint` to see the current state at any time; it fails on any top-tie
 - **Senza X kyoto** (Kyoto) `high` → `ask` — The gluten-free substance of this record survives — Tabelog's own listing text still reads 「当店は小麦・グルテン・卵・乳製品を使用しないイタリア料理ベースのレストランです」 and kyotopi confirms imported corn/rice pasta, 米粉 bread, and that the inherited pizzeria wood oven is unuse
 - **Warewarewa Arashiyama** (Kyoto) `dedicated` → `options` — This one is actively disproven, not merely unsupported. A first-hand Japanese visit report (nhkomorebi, Oct 2024, a wheat-allergy-focused blogger) states the miso soup uses 小麦入りの「白だし」, the ochazuke dashi likewise uses 白だし, the pickles conta
 - **HAPPY SMILE KOMEKO** (Nara) `high` → `options` — I tried to find a second genuinely independent source and could not: both cited write-ups (bagel-atsume and nara.goguynet) are November 2025 opening announcements reprinting the shop's own launch copy, there is no FindMeGlutenFree/HappyCow/
-- **laccola** (Nara) `high` → `options` — The record's headline quote すべての商品がグルテンフリー is attributed to the shop, but reading laccola.com and the laccola.base.shop storefront directly, the shop makes NO blanket all-products-gluten-free claim — it brands itself vegan & glutenfree swee
 - **Chiffon no Mise PUKKU** (Nara) `high` → `options` — I set out to disprove the record's core claim that 'no wheat is baked on premises,' and the shop's OWN published ingredient page disproves it outright: PUKKU's クッキー, ガレット・ブルトンヌ and バターサンドクッキー are all made with 薄力粉 (wheat cake flour), and it
-- **Aimo** (Nara) `dedicated` → `options` — The label was disproved by the shop itself. Aimo's own Instagram bio — the record's own cited source — carries 「※アレルギー対応店ではございません※」 ('this is NOT an allergen-accommodation store'), which is an explicit refusal to stand behind allergen safet
 - **Conconto Kashiten** (Kanazawa) `dedicated` → `options` — Identity confirmed (石川県金沢市横川5-267, 代表 大平弘二, opened May 2017) and the shop is still trading, but I disproved the label's central premise. The record's whole case rests on a 2017 Kanazawa Keizai Shimbun article quoting 「全商品…特定原材料7品目は使わず、米や豆など
 - **Petit pas** (Kanazawa) `high` → `options` — I could not disprove the shop's substantive claim, but I could not corroborate it either, and that is what sinks the tier. All five URLs on the record resolve to the same operator's two domains (kaffee-konditorei.saloon.jp and kaffee-kondit
 - **Comecobito** (Kanazawa) `high` → `options` — I tried to find the second independent source that `high` requires and failed. The shop's own Instagram bio says only 「玄米粉シフォンとヴィーガン米粉マフィンのお店」 — it makes NO gluten-free or 小麦不使用 claim, no allergen statement and no cross-contact note — so th
@@ -45,7 +43,6 @@ Run `npm run lint` to see the current state at any time; it fails on any top-tie
 - **comecome** (Hiroshima) `high` → `options` — Identity confirmed (廿日市市峰高1丁目9-9, rice-flour chiffon shop, open Saturdays only 11:00 until sold out — distinct from the unrelated comecome.co/こめこめこ and from the Tsuno 'come×come' packaged product line). I tried to find the shop's own 小麦不使用 
 - **Creperiz Stand Nagoya** (Nagoya) `high` → `ask` — I set out to disprove the 100%-rice-flour claim and instead disproved the address. Nagoya Jouhou — the same local outlet the record cites as its primary source — has retitled and retagged its article 【移転準備中】…『Creperiz Stand』大須→名駅 with the 閉
 - **A double prime** (Nagoya) `dedicated` → `options` — I tried to confirm the record's central claim that 'no wheat flour is used or baked anywhere on the premises' and could not source it anywhere. The quote 「こちらで売られている商品すべてがグルテンフリー」 is a food blogger's sentence on nagoya-meshi.com, not the sh
-- **Gluten Free BITTE** (Nagoya) `dedicated` → `options` — The shop's own claim is strong and specific (bitte2023.com: 「小麦不使用・完全グルテンフリーのお店です」 with 「コンタミネーションを徹底管理した」), so I attacked the corroboration instead — and both cited independent sources collapse. note.com/ladymo is a portfolio case study by
 - **Kagome** (Nagoya) `dedicated` → `options` — Three separate attempts to disprove this one landed. First, the shop's own site claims only that its PRODUCTS use no wheat, dairy or egg (「当店の商品はすべて小麦・乳製品・卵不使用です」) — it never states the premises is wheat-free and never describes itself as a
 - **Vegedeco Salad Lab** (Nagoya) `high` → `options` — Per the dressing brief I went after the dressings and the record's evidence base collapsed: the CNN/BBC recognition cited as a positive is the company's OWN media page, and both broadcasts covered the salad-cake visual novelty with no GF or
 - **Cafe Fuwafuwa** (Nagano) `high` → `options` — DISPROVED. The record's central claim — 'no wheat flour and no wheat pasta on the premises (the seed's shared pasta menu does not exist)' — is false. The cafe's own menu page carries a full pasta section (ツナときのこの和風パスタ ¥1,280, 沖縄風カルボナーラ ¥1,3

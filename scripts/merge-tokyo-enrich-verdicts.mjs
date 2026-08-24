@@ -218,7 +218,19 @@ for (const e of verdicts) {
     // badged, because a traveller planning a later trip still wants to know it exists.
     r.closed = { status: 'temporary', until: e.reopens || null,
                  note: note.slice(0, 300), checked: DATE };
-    delete r.hidden;
+    // Only un-hide a record THIS pass hid, and only for the reason it hid it. `hidden`
+    // is a reason string, and "shut but reopening" is an answer to "closed", not to
+    // "unverified", "not_in_city" or "unresearched".
+    //
+    // Found by the tier-write/gate work: hiding 230 unresearched Tokyo sweep records
+    // held everywhere except here, where five of them came back on the next rebuild.
+    // All five are genuinely reopening businesses — and all five still have no site,
+    // no menu, no hours and no chef story, so un-hiding them put five empty records
+    // back on the map wearing a "Temporarily closed" badge. The local rule was right
+    // ("a traveller planning a later trip still wants to know it exists") and wrong
+    // against a hide that was never about closure. Exactly the failure handoff.txt
+    // describes: four passes each overwriting the gate for a defensible local reason.
+    if (r.hidden === 'closed') delete r.hidden;
   }
 
   // Hidden, not deleted. NOT FOUND is the absence of evidence: small Tokyo shops go
