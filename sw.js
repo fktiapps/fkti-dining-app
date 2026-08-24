@@ -1,6 +1,6 @@
 // Deeply Connected Dining — service worker. Bump VERSION to force an update.
-const VERSION = 'dcd-v217';
-// content-hash: 8a5d8389238f3f0c
+const VERSION = 'dcd-v218';
+// content-hash: 10e5985f91a392dc
 const SHELL = `shell-${VERSION}`;
 const DATA  = `data-${VERSION}`;
 const TILES = `tiles-${VERSION}`;
@@ -27,7 +27,10 @@ self.addEventListener('install', e => {
       try {
         await c.add('data/manifest.json');
         const m = await fetch('data/manifest.json').then(r => r.json());
-        await Promise.all((m.cities || []).map(ci => c.add(ci.file).catch(() => {})));
+        // Pins only. The detail chunks are cached by the /data/ fetch handler below
+        // the first time a record is opened, so an install costs 3.7MB instead of
+        // 17.5MB and the rest arrives as it is actually read.
+        await Promise.all((m.cities || []).map(ci => c.add(ci.pins || ci.file).catch(() => {})));
       } catch (_) { /* offline at install: city data caches on first online view */ }
     })
   ]).then(() => self.skipWaiting()));

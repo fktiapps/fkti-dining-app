@@ -98,6 +98,10 @@ const STEPS = [
   // a coeliac's dining app to a gambling site.
   ['flag-hijacked-domains.mjs',       'clear links that lapsed into gambling or parked pages', ['--apply']],
   ['flag-health-claims.mjs',          'surface medical claims picked up from shop marketing'],
+  // Derived shipping artifact: splits each city into data/pins/<city>.json (map, list,
+  // filters) and data/detail/<city>-N.json (opened records). Must run after every pass
+  // that touches a record and BEFORE bump-build, which hashes what ships.
+  ['build-payload.mjs',              'split city files into map pins + on-demand detail'],
   ['bump-build.mjs',                  'bump the SW cache version iff shipped content changed'],
 ];
 

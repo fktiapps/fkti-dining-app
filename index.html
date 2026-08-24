@@ -733,7 +733,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v217';
+const APP_BUILD='dcd-v218';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -783,7 +783,7 @@ function cityAt(lat,lng){
 async function ensureCity(c){
  if(!cityUnlocked(c)) return false;
  if(state.cities[c.id]) return true;
- try{ const d=await fetch(c.file).then(r=>r.ok?r.json():null); if(d){ state.cities[c.id]=d; return true; } }catch(_){}
+ try{ const d=await fetch(c.pins||c.file).then(r=>r.ok?r.json():null); if(d){ state.cities[c.id]=d; return true; } }catch(_){}
  return false;
 }
 async function loadCities(){
@@ -1569,7 +1569,41 @@ function renderMenu(){
  body.innerHTML=`${cav}<div style="display:flex;gap:6px;margin-bottom:4px"><button class="chip" data-diet="gf" style="${diet==='gf'?'background:#9c3b2e;color:#fff':''}">Highlight GF</button><button class="chip" data-diet="vegan" style="${diet==='vegan'?'background:#9c3b2e;color:#fff':''}">Highlight Vegan</button></div><div style="font-size:11px;color:var(--muted)">Prices approximate · classifications are guidance, not a guarantee — confirm allergens with staff.</div>${orig}${itemsHtml}`;
  body.querySelectorAll('[data-diet]').forEach(b=>b.onclick=()=>{MENU_DIET=b.dataset.diet;renderMenu();});
 }
-function _renderDetail(p){
+// ---------- detail is fetched on demand ----------
+// The map, the list and every filter run off data/pins/<city>.json. Everything that
+// only appears once a record is OPENED — chef_bio, safety, the diet detail text,
+// cultural_comfort — lives in data/detail/<city>-N.json and is fetched on the first
+// tap. That took the service worker install from 17.5MB to 3.7MB.
+//
+// Chunked at 100 records so the first tap in Tokyo costs ~380KB rather than 3.4MB,
+// and the chunk holds the neighbouring records the reader is most likely to open
+// next. p._dc names the chunk; it is stored per record because record order changes
+// between builds and a positional index would fetch the wrong one.
+const DETAIL_LOADED={};
+function _cityOf(p){ for(const id of Object.keys(state.cities)){ if(((state.cities[id]||{}).places||[]).some(r=>r.id===p.id)) return id; } return state.active; }
+async function ensureDetail(p){
+ if(!p || p._detail_ok || p._dc===undefined) return true;
+ const cid=_cityOf(p), c=manifestCity(cid);
+ if(!c||!c.detail) return false;
+ const key=cid+"-"+p._dc;
+ if(!DETAIL_LOADED[key]){
+  try{
+   const d=await fetch(c.detail+p._dc+".json").then(r=>r.ok?r.json():null);
+   if(!d) return false;
+   for(const r of ((state.cities[cid]||{}).places||[])){ const det=d[r.id]; if(det){ Object.assign(r,det); r._detail_ok=true; } }
+   DETAIL_LOADED[key]=true;
+  }catch(_){ return false; }
+ }
+ return !!p._detail_ok;
+}
+async function _renderDetail(p){
+ // Offline with an uncached chunk: render what the pin already carries rather than
+ // printing "undefined" at someone. hours_raw is the one field the body reads
+ // unconditionally.
+ if(!await ensureDetail(p) && p.hours_raw===undefined) p.hours_raw="Hours unavailable offline — reconnect to load details.";
+ _renderDetailSync(p);
+}
+function _renderDetailSync(p){
  map.panTo([p.lat,p.lng]);
  const {dow}=jstParts();
  const hoursHtml = p.hours_status==='regular'

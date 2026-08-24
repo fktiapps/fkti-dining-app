@@ -115,10 +115,17 @@ const drive = await page.evaluate(async () => {
   const EVF = ['gf_cross_contamination','soy_sauce_wheat','vegan_cross_contact','staff_allergy_handling','positives'];
   const findings = p => EVF.flatMap(f => (p.safety && p.safety[f]) || []);
   const all = [...state.cities.tokyo.places, ...state.cities.nagano.places];
+  // Safety findings now live in the on-demand detail chunks, not in the pins file, so
+  // a record in memory carries no .safety until ensureDetail has run for its chunk.
+  // Without this the selectors below found nothing, the citation block was skipped
+  // silently, and the assertion failed for the wrong reason. Loading the chunks here
+  // keeps the assertions testing what they were written to test, and exercises
+  // ensureDetail on the way through.
+  for (const p of all) if (p._dc !== undefined) await ensureDetail(p);
   const cited = all.find(p => findings(p).some(e => e && url(e.source)));
   const bare  = all.find(p => findings(p).length && findings(p).every(e => typeof e === 'string'));
   if (cited) {
-    _renderDetail(cited);
+    await _renderDetail(cited);
     tellMore(cited);            // the panel is behind the 🛡️ Food Safety button
     await sleep(900);
     out.citedShop = cited.name.slice(0, 24);
@@ -126,7 +133,7 @@ const drive = await page.evaluate(async () => {
     out.citeList  = document.querySelectorAll('.cites ol li').length;
   }
   if (bare) {
-    _renderDetail(bare);
+    await _renderDetail(bare);
     tellMore(bare);
     await sleep(900);
     out.bareShop = bare.name.slice(0, 24);
@@ -159,7 +166,7 @@ const drive = await page.evaluate(async () => {
   await ensureCity(MANIFEST.cities.find(c => c.id === 'kanazawa'));
   const falseClaim = state.cities.kanazawa.places.find(p => p.shop_claim_false);
   if (falseClaim) {
-    _renderDetail(falseClaim);
+    await _renderDetail(falseClaim);
     await sleep(700);
     out.shopFalseShop = falseClaim.name.slice(0, 24);
     out.shopFalseShown = document.querySelectorAll('.shopfalse').length;
@@ -179,7 +186,7 @@ const drive = await page.evaluate(async () => {
   const withRamen = state.cities.nagano.places.find(p => p.ramen);
   if (withRamen) {
     try {
-      _renderDetail(withRamen);
+      await _renderDetail(withRamen);
       await sleep(900);
       out.detailChars = (document.getElementById('detailBody') || document.body).innerText.length;
       out.detailHasRamenGeek = /ramenGeek|broth|麺/i.test(document.body.innerHTML);
