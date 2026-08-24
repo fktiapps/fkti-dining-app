@@ -1,0 +1,4445 @@
+{
+ "_doc": "Triage of the hidden Tokyo 3-mile sweep records. Buckets: drop (existence failed), A (real diet signal, research first), B (real business, menu-decode only). Regenerate with scripts/triage-sweep.mjs --write. Free: reads only what is already on the record.",
+ "generated": "2026-08-24",
+ "counts": {
+  "drop": 33,
+  "A": 63,
+  "B": 179
+ },
+ "buckets": {
+  "drop": [
+   {
+    "city": "tokyo",
+    "id": "tokyo3__12",
+    "name": "丸善食堂",
+    "cuisine": "Yoshoku - Western-influenced comfort food, mom-and-pop herit",
+    "cuisine_type": "yoshoku",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__14",
+    "name": "松喜 丸の内",
+    "cuisine": "Vegetable tempura & soba - vegetarian-friendly signature",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__33",
+    "name": "中華そば 青葉",
+    "cuisine": "Tsukemen ",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__36",
+    "name": "ラーメン横丁",
+    "cuisine": "Ramen",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__87",
+    "name": "つきじ中島",
+    "cuisine": "天ぷら - 老舗天ぷら屋",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__94",
+    "name": "つきじ海賓",
+    "cuisine": "寿司・和食",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__110",
+    "name": "築地 中島",
+    "cuisine": "Tsukemen ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_various_vendors",
+    "name": "甘酒横丁 (various vendors)",
+    "cuisine": "Sweet sake, local specialties, street food",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__121",
+    "name": "ぼたん",
+    "cuisine": "Unagi ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__122",
+    "name": "魚新",
+    "cuisine": "Fresh seafood",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__125",
+    "name": "竜雲",
+    "cuisine": "ラーメン・つけ麺",
+    "cuisine_type": "udon_soba",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_n_135",
+    "name": "華厳",
+    "cuisine": "Shōjin ryori - Buddhist vegetarian, vegan",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_sora",
+    "name": "精進カフェ 宙sora",
+    "cuisine": "精進料理・ヴィーガン",
+    "cuisine_type": "shojin",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__263",
+    "name": "塩ラーメン 蔵前",
+    "cuisine": "ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__296",
+    "name": "ひらお",
+    "cuisine": "天ぷら・江戸前",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__298",
+    "name": "越後屋",
+    "cuisine": "豆腐・精進食",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_green_earth",
+    "name": "ヴィーガンラーメン GREEN EARTH",
+    "cuisine": "ヴィーガン・豆乳ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__316",
+    "name": "日高屋 新宿区役所前店",
+    "cuisine": "ラーメン定食",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__320",
+    "name": "豚骨ラーメン　風風",
+    "cuisine": "とんこつラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__321",
+    "name": "天ぷら　喜久屋",
+    "cuisine": "揚げ物・天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__335",
+    "name": "麻布十番 更科",
+    "cuisine": "蕎麦・天ぷら",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__344",
+    "name": "三嶋亭",
+    "cuisine": "すき焼き・老舗",
+    "cuisine_type": "sukiyaki",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__345",
+    "name": "ヴィーガンラーメン えん",
+    "cuisine": "ヴィーガンラーメン",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_a_378",
+    "name": "鶴喜蕎麦",
+    "cuisine": "老舗蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__379",
+    "name": "丹波黒豆の館",
+    "cuisine": "郷土料理",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__393",
+    "name": "蕎麦切り 翁",
+    "cuisine": "蕎麦・老舗",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__424",
+    "name": "青麦 赤坂",
+    "cuisine": "ラーメン・濃厚スープ",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__434",
+    "name": "らーめん マロ屋",
+    "cuisine": "豚骨ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__442",
+    "name": "寿司若林",
+    "cuisine": "握り寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "not_in_city",
+    "why": [
+     "enrichment placed it outside Tokyo"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__448",
+    "name": "つけ麺 武蔵",
+    "cuisine": "つけ麺・ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__450",
+    "name": "新橋いろり",
+    "cuisine": "居酒屋・郷土料理",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__455",
+    "name": "新橋 おでん",
+    "cuisine": "おでん・居酒屋",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__457",
+    "name": "新橋 寿司",
+    "cuisine": "寿司・握り",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unverified",
+    "why": [
+     "enrichment could not confirm it exists"
+    ]
+   }
+  ],
+  "A": [
+   {
+    "city": "tokyo",
+    "id": "tokyo3__10",
+    "name": "蕎麦 さとう",
+    "cuisine": "Soba - naturally gluten-free soba, traditional old-guard sho",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"gluten-free\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__16",
+    "name": "ソラノイロ ニッポン",
+    "cuisine": "ラーメン・ビーガン対応・野菜ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "options",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ビーガン\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_y_28",
+    "name": "そらのいろ ニッポン",
+    "cuisine": "Vegan ramen, vegetarian soba - gluten-free options, Michelin",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 10,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"Vegan\"",
+     "10 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_cafe_vava",
+    "name": "cafe VAVA",
+    "cuisine": "Gluten-free pancakes ",
+    "cuisine_type": "sweets",
+    "gf": "options",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"Gluten-free\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_revive_kitchen_three_hibiy",
+    "name": "REVIVE KITCHEN THREE HIBIYA",
+    "cuisine": "Modern Shojin ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 7,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"Shojin\"",
+     "7 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_kamiya",
+    "name": "精進料理 醍醐",
+    "cuisine": "Buddhist vegetarian cuisine ",
+    "cuisine_type": "shojin",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"精進\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__72",
+    "name": "ベジタリアンキッチン 京橋",
+    "cuisine": "Vegetarian / Vegan",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 1,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__82",
+    "name": "野菜中心 グリーンテーブル",
+    "cuisine": "ベジタリアン / ヴィーガン ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 1,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__104",
+    "name": "築地本願寺キッチン",
+    "cuisine": "Vegetarian/Vegan Buddhist temple cuisine ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 0,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"Vegan\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__117",
+    "name": "築地本願寺 日本料理 紫水",
+    "cuisine": "精進料理 ",
+    "cuisine_type": "shojin",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"精進\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__123",
+    "name": "更科そば",
+    "cuisine": "Soba noodles ",
+    "cuisine_type": "udon_soba",
+    "gf": "no",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 1,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "1 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__148",
+    "name": "アトミヨソワカ 蔵前店",
+    "cuisine": "ビーガン＆グルテンフリー 焼き菓子・ブランチ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 0,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"ビーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__149",
+    "name": "結わえる 蔵前本店",
+    "cuisine": "寝かせ玄米 定食",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 1,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"玄米\"",
+     "1 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_earthful_cafe_tokyo",
+    "name": "Earthful Cafe Tokyo",
+    "cuisine": "ヴィーガンハンバーガー",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 7,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "7 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_gugga",
+    "name": "GUGGA",
+    "cuisine": "ヴィーガン スープ・ブレックファスト",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 7,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "7 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__159",
+    "name": "神楽坂 おいしんぼ",
+    "cuisine": "ヴィーガン対応 和食",
+    "cuisine_type": "other",
+    "gf": "no",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 9,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "9 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_oh_nana",
+    "name": "Oh Nana!",
+    "cuisine": "グルテンフリー100%・ヴィーガン対応",
+    "cuisine_type": "other",
+    "gf": "dedicated",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 6,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "6 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__161",
+    "name": "野菜居酒屋 玄氣",
+    "cuisine": "ヴィーガン・野菜料理・グルテンフリー対応",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": true,
+    "cited": 11,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "11 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_t_s",
+    "name": "T's たんたん グランスタ東京",
+    "cuisine": "ヴィーガンラーメン・植物性タンタン麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_lei",
+    "name": "lei 小麦を使わない国産ビストロ 秋葉原",
+    "cuisine": "グルテンフリーフレンチビストロ",
+    "cuisine_type": "french",
+    "gf": "options",
+    "vegan": "ask",
+    "has_url": true,
+    "cited": 9,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "9 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__173",
+    "name": "こまきしょくどう 鎌倉不識庵",
+    "cuisine": "精進料理",
+    "cuisine_type": "shojin",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"精進\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__174",
+    "name": "味農家（みのや）",
+    "cuisine": "ヴィーガン・グルテンフリー懐石",
+    "cuisine_type": "other",
+    "gf": "options",
+    "vegan": "full",
+    "has_url": true,
+    "cited": 7,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "7 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_cafe",
+    "name": "晴れ屋 CAFE",
+    "cuisine": "ベジタリアン・ビーガンカフェ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 6,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\"",
+     "6 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_osteria_lauro",
+    "name": "Osteria Lauro",
+    "cuisine": "グルテンフリーパスタ・イタリアン",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 5,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "5 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_sakura_cafe_jimbocho",
+    "name": "Sakura Cafe Jimbocho",
+    "cuisine": "ヴィーガン・グルテンフリー・カフェ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_t_s_kitchen",
+    "name": "グルテンフリー T's Kitchen 上野広小路店",
+    "cuisine": "グルテンフリー料理",
+    "cuisine_type": "other",
+    "gf": "dedicated",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 11,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "11 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_gluten_free_cafe_avan",
+    "name": "GLUTEN FREE CAFE avan エキュート上野",
+    "cuisine": "グルテンフリー・スイーツ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"GLUTEN FREE\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_t_s_212",
+    "name": "T'sたんたん エキュート上野店",
+    "cuisine": "ヴィーガン担々麺",
+    "cuisine_type": "other",
+    "gf": "no",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 9,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "9 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__213",
+    "name": "ベジ・ハーブ・サガ",
+    "cuisine": "ベジタリアン・インド料理",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 9,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\"",
+     "9 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__225",
+    "name": "味農家",
+    "cuisine": "ヴィーガン・グルテンフリー会席",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "full",
+    "has_url": true,
+    "cited": 7,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "7 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__235",
+    "name": "グルテンフリー ティーズキッチン 上野広小路店",
+    "cuisine": "グルテンフリー・オーガニック",
+    "cuisine_type": "other",
+    "gf": "dedicated",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 10,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "10 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__236",
+    "name": "ベジキッチン",
+    "cuisine": "ヴィーガン・インド料理",
+    "cuisine_type": "other",
+    "gf": "options",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 7,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\"",
+     "7 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__252",
+    "name": "グルテンフリーワッフル チャッフルズ 浅草",
+    "cuisine": "グルテンフリーワッフル",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__264",
+    "name": "カフェ フレッシュグリーン",
+    "cuisine": "ヴィーガンカフェ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__280",
+    "name": "ヴェジェトゥス プラス",
+    "cuisine": "有機野菜・ベジタリアン・グルテンフリー対応",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 12,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\"",
+     "12 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__299",
+    "name": "カフェ・ド・キャトル",
+    "cuisine": "ヴィーガンカフェ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__300",
+    "name": "むぎとオリーブ",
+    "cuisine": "ヴィーガンベーカリー・グルテンフリー",
+    "cuisine_type": "curry",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": true,
+    "cited": 6,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__302",
+    "name": "白ヒゲのシチューハウス",
+    "cuisine": "ヴィーガンシチュー・植物ベース",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_nacha",
+    "name": "ネイチャーカフェ NACHA",
+    "cuisine": "ヴィーガン・グルテンフリー対応カフェ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__307",
+    "name": "蒙古タンメン中本",
+    "cuisine": "辛味ラーメン・ヴィーガン対応",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": true,
+    "cited": 8,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__313",
+    "name": "セタンのスープ屋",
+    "cuisine": "グルテンフリー対応スープ・ベジ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__329",
+    "name": "カフェ グリーンリーフ",
+    "cuisine": "ヴィーガンカフェ・グルテンフリー",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_cafe_verve",
+    "name": "CAFE VERVE",
+    "cuisine": "カフェ・ベジタリアンオプション",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__352",
+    "name": "ベジプレート 中野",
+    "cuisine": "ベジタリアン・カフェ",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__358",
+    "name": "グルテンフリー・パスタ 中野",
+    "cuisine": "グルテンフリー・イタリアン",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_rice_hack",
+    "name": "RICE HACK グルテンフリーベーカリー",
+    "cuisine": "グルテンフリー・米粉パン",
+    "cuisine_type": "curry",
+    "gf": "dedicated",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 8,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"グルテンフリー\"",
+     "8 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_a_375",
+    "name": "玄米菜食",
+    "cuisine": "ヴィーガン・マクロビ",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 12,
+    "signed": true,
+    "hidden": null,
+    "why": [
+     "name/cuisine says \"玄米\"",
+     "12 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__387",
+    "name": "ベジタリアンキッチン えびす",
+    "cuisine": "ヴィーガン・ベジタリアン",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__391",
+    "name": "ヒッピーフィッシュ",
+    "cuisine": "ヴィーガン寿司・プラントベース",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__394",
+    "name": "パンダカフェ",
+    "cuisine": "ベジタリアンカフェ・軽食",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__399",
+    "name": "グルテンフリーベーカリー サンテ",
+    "cuisine": "グルテンフリー・焼き菓子",
+    "cuisine_type": "curry",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__408",
+    "name": "こうち山菜",
+    "cuisine": "山菜蕎麦・グルテンフリー対応",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__409",
+    "name": "ベジタリアンカレー ナマステ",
+    "cuisine": "ベジタリアンカレー・ヴィーガン",
+    "cuisine_type": "curry",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__410",
+    "name": "からし亭",
+    "cuisine": "野菜味噌ラーメン・ヴィーガン対応",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 3,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__412",
+    "name": "松竹うどん",
+    "cuisine": "うどん・そば・グルテンフリー相談可",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 4,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"グルテンフリー\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__415",
+    "name": "五穀屋 玄米マクロビ食堂",
+    "cuisine": "マクロビ・ヴィーガン・グルテンフリー",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"玄米\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__419",
+    "name": "あふり 赤坂",
+    "cuisine": "ラーメン・ベジタリアン対応",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": true,
+    "cited": 9,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\"",
+     "9 cited finding(s) behind a tier above \"ask\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__428",
+    "name": "個室ダイニング 門 赤坂",
+    "cuisine": "日本料理・ベジタリアン対応",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__429",
+    "name": "ナチュラルカフェ グリーン",
+    "cuisine": "ヴィーガン・オーガニック",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__431",
+    "name": "せんべろ くらぶ",
+    "cuisine": "居酒屋・ベジタリアン",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__437",
+    "name": "ベジ食堂 草生",
+    "cuisine": "ヴィーガン・ベジタリアン",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 2,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジ食\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__444",
+    "name": "野菜ビストロ グリーンテーブル",
+    "cuisine": "ヴィーガンビストロ",
+    "cuisine_type": "french",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 1,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ヴィーガン\""
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__456",
+    "name": "グリーンハウス",
+    "cuisine": "ベジタリアン・ヘルシー",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 2,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "name/cuisine says \"ベジタリアン\""
+    ]
+   }
+  ],
+  "B": [
+   {
+    "city": "tokyo",
+    "id": "tokyo3_",
+    "name": "六厘舎 東京ラーメンストリート店",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__1",
+    "name": "松戸富田麺絆",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_soba_kitte",
+    "name": "鶏soba 座銀 KITTE丸の内店",
+    "cuisine": "鶏白湯ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__3",
+    "name": "ソバキチ ～新丸ビル～",
+    "cuisine": "蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__4",
+    "name": "天ぷら つな八 丸の内オアゾ店",
+    "cuisine": "天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_kitte_granche",
+    "name": "秋田比内地鶏生産責任者の店 本家あべや KITTE GRANCHE店",
+    "cuisine": "焼き鳥",
+    "cuisine_type": "yakitori",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yakitori — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__6",
+    "name": "梅もと ヤエチカ店",
+    "cuisine": "蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ta_im",
+    "name": "Ta-im 丸の内店",
+    "cuisine": "イスラエル料理",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "other — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__8",
+    "name": "徳島ラーメン東大 東京駅店",
+    "cuisine": "Ramen - Tokushima style ",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": true,
+    "cited": 6,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__11",
+    "name": "とんかつ芝",
+    "cuisine": "Tonkatsu - pork cutlet, GF-adaptable ",
+    "cuisine_type": "katsu",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "katsu — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__17",
+    "name": "東京煮干し らーめん玉 東京駅店",
+    "cuisine": "煮干しラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__18",
+    "name": "俺式 純",
+    "cuisine": "とんこつラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__19",
+    "name": "九頭龍蕎麦 丸ビル店",
+    "cuisine": "手打ち蕎麦・季節料理",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__20",
+    "name": "六厘舎 東京駅東京ラーメンストリート",
+    "cuisine": "Tsukemen ",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__21",
+    "name": "四川担担麺 阿吽 キッテグランシェ店",
+    "cuisine": "Sichuan tantan noodles ",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__22",
+    "name": "天ぷら新宿つな八 大丸東京店",
+    "cuisine": "Tempura ",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_eric_s_by_erictrochon",
+    "name": "eric'S by Eric Trochon",
+    "cuisine": "French bistro - M.O.F. chef Eric Trochon, modern Parisian cu",
+    "cuisine_type": "french",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "french — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_dancyu",
+    "name": "dancyu食堂",
+    "cuisine": "Japanese teishoku ",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_iiyo",
+    "name": "恵比寿 土鍋炊ごはん なかよし 丸の内iiyo!!店",
+    "cuisine": "Japanese teishoku with clay pot rice ",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__26",
+    "name": "入金 (いりきん)",
+    "cuisine": "Teishoku ",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_88_o",
+    "name": "四国 88屋 丸の内本店 (はちはちや)",
+    "cuisine": "Shikoku regional specialties - straw-grilled bonito ",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_m",
+    "name": "天ぷら日本酒 天喜代 東京駅店",
+    "cuisine": "Fresh seasonal tempura in safflower oil - dine-in & takeout",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_o",
+    "name": "十割蕎麦酒場 ちゃぼうず 大手町店",
+    "cuisine": "100% domestic buckwheat soba noodles - handmade daily, sake ",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_o_32",
+    "name": "そばと天ぷら 石楽 大手町パークビルヂング",
+    "cuisine": "Soba & tempura - stone-mill ground noodles, Japanese-style i",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__35",
+    "name": "竹末東京Premium",
+    "cuisine": "Tsukemen",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__38",
+    "name": "京都銀閣寺 ますたに 日本橋本店",
+    "cuisine": "Ramen ",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__39",
+    "name": "五代目 野田岩 日本橋高島屋特別食堂",
+    "cuisine": "Unagi ",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__40",
+    "name": "薮伊豆総本店",
+    "cuisine": "Soba ",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__41",
+    "name": "日本橋 玉ゐ 本店",
+    "cuisine": "Anago ",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__42",
+    "name": "銀座 天一 日本橋室町店",
+    "cuisine": "Tempura ",
+    "cuisine_type": "tempura",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza",
+    "name": "銀座 朧月",
+    "cuisine": "Tsukemen ",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_higash",
+    "name": "銀座はるちゃんラーメン",
+    "cuisine": "Shio ramen – Michelin-recognized, run by chef Haru-chan",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza_47",
+    "name": "煉瓦亭",
+    "cuisine": "Yoshoku ",
+    "cuisine_type": "yoshoku",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yoshoku — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza_49",
+    "name": "天ぷら 阿部 銀座本店",
+    "cuisine": "Tempura – Michelin Bib Gourmand ",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "ask",
+    "has_url": true,
+    "cited": 6,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza_50",
+    "name": "銀座 玉ゐ",
+    "cuisine": "Anago ",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_near_s",
+    "name": "銀座 長寿庵",
+    "cuisine": "Soba ",
+    "cuisine_type": "other",
+    "gf": "no",
+    "vegan": "ask",
+    "has_url": true,
+    "cited": 7,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "other — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza_54",
+    "name": "とんかつ 銀座梅林 本店",
+    "cuisine": "Tonkatsu ",
+    "cuisine_type": "katsu",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "katsu — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_higash_56",
+    "name": "銀座 四代目 高橋屋 銀座店",
+    "cuisine": "Unagi ",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza_57",
+    "name": "銀座 しのはら",
+    "cuisine": "Kaiseki — refined seasonal Japanese; Michelin 2-star; Tabelo",
+    "cuisine_type": "kaiseki",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "kaiseki — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ginza_58",
+    "name": "銀座 小十",
+    "cuisine": "Kaiseki — seasonal vegetables & premium ingredients from Shi",
+    "cuisine_type": "kaiseki",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "kaiseki — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ky",
+    "name": "通人の酒席 ふくべ",
+    "cuisine": "居酒屋/日本酒",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ky_60",
+    "name": "京橋 天冨良と鮨 いしい",
+    "cuisine": "天ぷら/寿司",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_y_61",
+    "name": "天麩羅 えびのや 八重洲地下街店",
+    "cuisine": "天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ky_62",
+    "name": "京料理と創作和食 刻 八重洲店",
+    "cuisine": "京料理/創作和食",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ky_63",
+    "name": "黄金出汁鍋と厳選肉料理 居酒屋 肉の蔵 八重洲日本橋店",
+    "cuisine": "居酒屋",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_tokyo_ky",
+    "name": "東北うまいもん居酒屋 地鶏×旬菜 お箸とグラス -TOKYO- 八重洲日本橋店",
+    "cuisine": "居酒屋",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_y_65",
+    "name": "わんぱく",
+    "cuisine": "立ち食いそば/天ぷら",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_y_66",
+    "name": "玉乃光酒蔵 八重洲地下街店",
+    "cuisine": "居酒屋/日本酒",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__70",
+    "name": "蕎麦処 喜久や",
+    "cuisine": "Soba & Vegetarian Options",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 1,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__76",
+    "name": "つじ田 日本橋八重洲店",
+    "cuisine": "つけ麺 ",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__83",
+    "name": "築地寿司清 築地本店",
+    "cuisine": "寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__84",
+    "name": "築地玉寿司 築地本店",
+    "cuisine": "寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__86",
+    "name": "中村藤吉本店 銀座店",
+    "cuisine": "茶そば・抹茶料理",
+    "cuisine_type": "cafe",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "cafe — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__88",
+    "name": "築地すし鮮 総本店",
+    "cuisine": "寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__91",
+    "name": "寿司大",
+    "cuisine": "握り寿司・鮮魚",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__92",
+    "name": "大和寿司",
+    "cuisine": "握り寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__95",
+    "name": "竹若",
+    "cuisine": "ラーメン",
+    "cuisine_type": "sushi",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__96",
+    "name": "築地食堂源記",
+    "cuisine": "海鮮丼・和食",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__98",
+    "name": "日本橋海鮮丼 つじ半 日本橋本店",
+    "cuisine": "玉子焼き / 卵焼き専門 ",
+    "cuisine_type": "donburi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "donburi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__99",
+    "name": "大定 場外本店",
+    "cuisine": "天ぷら ",
+    "cuisine_type": "other",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "other — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__100",
+    "name": "岸田屋",
+    "cuisine": "海産物 / 新鮮魚介 ",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__108",
+    "name": "銀座 篝 本店",
+    "cuisine": "Yakitori ",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__109",
+    "name": "築地食堂 源",
+    "cuisine": "Teishoku ",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__111",
+    "name": "竹葉亭 銀座店",
+    "cuisine": "Unagi ",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__113",
+    "name": "てんぷら 近藤",
+    "cuisine": "天ぷら ",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__126",
+    "name": "山本山 ふじヱ茶房",
+    "cuisine": "海苔・伝統料理",
+    "cuisine_type": "cafe",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "cafe — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__129",
+    "name": "志な乃",
+    "cuisine": "蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_n",
+    "name": "中国料理 龍門 浜町本店",
+    "cuisine": "Ramen / Tsukemen - celebrated local favorite",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_n_134",
+    "name": "室次",
+    "cuisine": "Soba - vegetarian-friendly, old-guard local",
+    "cuisine_type": "other",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "other — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__140",
+    "name": "麺屋 周郷 神田店",
+    "cuisine": "つけ麺・ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__141",
+    "name": "麺屋武蔵 神山",
+    "cuisine": "ラーメン・つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__142",
+    "name": "味噌ラーメン＆つけ麺 麺処 神田",
+    "cuisine": "味噌ラーメン・つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__143",
+    "name": "鮮魚らーめん 五ノ神水産",
+    "cuisine": "魚介つけ麺・ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__144",
+    "name": "べっぴん舎",
+    "cuisine": "薬膳カレー",
+    "cuisine_type": "curry",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": true,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "curry — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__145",
+    "name": "ギャラリー珈琲店 古瀬戸",
+    "cuisine": "喫茶・カレー",
+    "cuisine_type": "cafe",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "cafe — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__146",
+    "name": "とん八亭",
+    "cuisine": "とんかつ",
+    "cuisine_type": "katsu",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "katsu — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__147",
+    "name": "井泉 本店",
+    "cuisine": "とんかつ",
+    "cuisine_type": "katsu",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "katsu — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__152",
+    "name": "ちゃんこ道場 両国駅前店",
+    "cuisine": "ちゃんこ鍋",
+    "cuisine_type": "chanko",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "chanko — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__153",
+    "name": "ちゃんこ 友路",
+    "cuisine": "ちゃんこ鍋",
+    "cuisine_type": "chanko",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "chanko — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_tokyo",
+    "name": "こってりらーめん なりたけ TOKYO 錦糸町店",
+    "cuisine": "ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__155",
+    "name": "タイ国料理レストラン タイランド",
+    "cuisine": "タイ料理",
+    "cuisine_type": "thai",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "thai — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_clann_by_the_river",
+    "name": "CLANN BY THE RIVER",
+    "cuisine": "カフェ＆レストラン",
+    "cuisine_type": "cafe",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "cafe — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__158",
+    "name": "石臼挽き手打 蕎楽亭",
+    "cuisine": "手挽き十割蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__162",
+    "name": "かんだやぶそば",
+    "cuisine": "江戸蕎麦・せいろう・1880年創業",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__163",
+    "name": "神田まつや 本店",
+    "cuisine": "手打ち蕎麦・江戸蕎麦・1884年創業",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__164",
+    "name": "カラシビ味噌らー麺 鬼金棒 神田本店",
+    "cuisine": "カラシビ味噌ラーメン・東京ラーメン代表店",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__166",
+    "name": "天ぷら さいとう 神田本店",
+    "cuisine": "天ぷら・居酒屋・博多スタイル・新鮮揚げたて",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__167",
+    "name": "うなぎ久保田",
+    "cuisine": "江戸前うなぎ・鰻・1897年創業老舗",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__168",
+    "name": "神田きくかわ 神田店",
+    "cuisine": "江戸前うなぎ・白焼き・炭火焼・1947年創業",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__169",
+    "name": "神田 うな正",
+    "cuisine": "鰻・うなぎ丼・江戸前スタイル",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__170",
+    "name": "神田食堂 本店",
+    "cuisine": "食堂・煮込み定食・庶民グルメ・60秒で調理",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__175",
+    "name": "青島食堂 秋葉原店",
+    "cuisine": "新潟豚骨醤油ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__176",
+    "name": "九州じゃんがららあめん 秋葉原本店",
+    "cuisine": "豚骨ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_1",
+    "name": "麺処 ほん田 秋葉原本店",
+    "cuisine": "醤油ラーメン・つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__178",
+    "name": "肉汁麺ススム 秋葉原本店",
+    "cuisine": "肉汁ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__179",
+    "name": "粋な一生（いきないっしょう）",
+    "cuisine": "塩ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_mazeru",
+    "name": "麺処 マゼル（MAZERU）",
+    "cuisine": "まぜそば・油そば",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__181",
+    "name": "割烹たなか",
+    "cuisine": "割烹・海鮮丼ランチ",
+    "cuisine_type": "kaiseki",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "kaiseki — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__182",
+    "name": "昭和食堂 秋葉原駅前店",
+    "cuisine": "定食・スタミナ丼",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_jr",
+    "name": "新田毎（しんたごと）",
+    "cuisine": "立ち食いそば",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__184",
+    "name": "ごはん処 あだち",
+    "cuisine": "定食・創作料理",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_tempura_hisago_su",
+    "name": "天ぷら ひさご 秋葉原店",
+    "cuisine": "天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__186",
+    "name": "つじ田 神田御茶ノ水店",
+    "cuisine": "濃厚豚骨魚介つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_tsukemen_soya",
+    "name": "つけ麺 素家",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_ochanomizu_taishoken_branc",
+    "name": "お茶の水、大勝軒",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__190",
+    "name": "明神そば",
+    "cuisine": "立ち食い蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__191",
+    "name": "しんぱち食堂 御茶ノ水店",
+    "cuisine": "定食・炭火焼干物",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__192",
+    "name": "江戸富士",
+    "cuisine": "海鮮丼・寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__193",
+    "name": "誠鮨",
+    "cuisine": "江戸前寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__194",
+    "name": "粋庵",
+    "cuisine": "日本料理・プレミアム",
+    "cuisine_type": "kaiseki",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "kaiseki — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__195",
+    "name": "日乃屋 本店",
+    "cuisine": "カレー・定食",
+    "cuisine_type": "curry",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "curry — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__197",
+    "name": "満留賀 静邨",
+    "cuisine": "老舗蕎麦・天ぷら",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__199",
+    "name": "神保町 黒須",
+    "cuisine": "醤油ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__200",
+    "name": "神保町 可以",
+    "cuisine": "新潟背脂煮干しラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__201",
+    "name": "新橋ニューともちん 神保町店",
+    "cuisine": "立ち食い中華そば",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__202",
+    "name": "神田神保町 天麩羅 はちまき",
+    "cuisine": "老舗天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": true,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__203",
+    "name": "ラドリオ",
+    "cuisine": "純喫茶・ナポリタン",
+    "cuisine_type": "kissaten",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "kissaten — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__204",
+    "name": "キッチン南海 神保町店",
+    "cuisine": "カツカレー・定食",
+    "cuisine_type": "yoshoku",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yoshoku — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__205",
+    "name": "へぎそば 地酒処 こんごう庵 神保町店",
+    "cuisine": "新潟へぎそば・地酒",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__206",
+    "name": "神田錦町 更科",
+    "cuisine": "天ぷら蕎麦・老舗",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__209",
+    "name": "なかや蒲焼店",
+    "cuisine": "老舗うなぎ・蒲焼",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__214",
+    "name": "上野藪そば",
+    "cuisine": "老舗蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__215",
+    "name": "喜乃字屋",
+    "cuisine": "十割そば",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__216",
+    "name": "鰻割烹 伊豆栄 本店",
+    "cuisine": "老舗鰻",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__217",
+    "name": "麺処 花田 上野店",
+    "cuisine": "味噌ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__218",
+    "name": "麺巧 潮 上野製麺所",
+    "cuisine": "鶏白湯ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__219",
+    "name": "鶏白湯ラーメン 鳥ぶし",
+    "cuisine": "鶏白湯ラーメン・ハラール対応",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__220",
+    "name": "天寿ゞ（天寿々・てんすず）",
+    "cuisine": "天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__221",
+    "name": "よし寿司 上野店",
+    "cuisine": "江戸前寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__222",
+    "name": "鳥つね自然洞",
+    "cuisine": "親子丼・鶏料理",
+    "cuisine_type": "yakitori",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yakitori — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__223",
+    "name": "デリー 上野店",
+    "cuisine": "インド・パキスタン料理・カレー",
+    "cuisine_type": "curry",
+    "gf": "ask",
+    "vegan": "options",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "curry — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__224",
+    "name": "ぽん多本家",
+    "cuisine": "老舗洋食・とんかつ",
+    "cuisine_type": "katsu",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "katsu — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_tetsu",
+    "name": "つけめんTETSU 御徒町らーめん横丁店",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__227",
+    "name": "蒙古タンメン中本 御徒町店",
+    "cuisine": "ラーメン・スパイシー味噌",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_to",
+    "name": "らーめん 鴨to葱 御徒町店",
+    "cuisine": "ラーメン・シンプル鴨",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__229",
+    "name": "油そば専門店 浜そば 本店",
+    "cuisine": "油そば・まぜそば",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__230",
+    "name": "すしと天ぷら とろ一 御徒町本店",
+    "cuisine": "寿司・天ぷら",
+    "cuisine_type": "sushi",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__231",
+    "name": "和楽庵",
+    "cuisine": "手打ち蕎麦・老舗",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__232",
+    "name": "心洗庵",
+    "cuisine": "手打ち蕎麦・地酒",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__233",
+    "name": "伊豆栄 不忍亭",
+    "cuisine": "江戸時代創業・鰻割烹",
+    "cuisine_type": "unagi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "unagi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__234",
+    "name": "湯島 天神下 炭屋",
+    "cuisine": "炭火焼き・地魚",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__238",
+    "name": "大黒家天麩羅 本店",
+    "cuisine": "江戸天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__239",
+    "name": "浅草 天ちゃ",
+    "cuisine": "天ぷら・天ぷら茶漬け",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_a",
+    "name": "三松寿司",
+    "cuisine": "江戸前寿司",
+    "cuisine_type": "sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sushi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_a_245",
+    "name": "浅草聚楽",
+    "cuisine": "昭和レトロ食堂・定食",
+    "cuisine_type": "yoshoku",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yoshoku — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_a_248",
+    "name": "麺屋 つけ麺 太輔",
+    "cuisine": "濃厚つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__250",
+    "name": "自家製麺 うるち",
+    "cuisine": "ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__251",
+    "name": "四川担担麺 阿吽 浅草",
+    "cuisine": "担々麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_pan_nini",
+    "name": "PANNINI 浅草",
+    "cuisine": "アルチザンブレッド",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sweets — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__254",
+    "name": "杜都旬菜 合羽橋 ほていや",
+    "cuisine": "旬菜・日本料理",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__255",
+    "name": "浅草 ときわ食堂",
+    "cuisine": "定食・昭和食堂",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__256",
+    "name": "水口食堂",
+    "cuisine": "和食・洋食・老舗食堂",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__266",
+    "name": "肉の大山",
+    "cuisine": "焼肉・個人店",
+    "cuisine_type": "yoshoku",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yoshoku — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__285",
+    "name": "蕎美季創 六常庵",
+    "cuisine": "手打ち蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__294",
+    "name": "鳥料理 玉ひで",
+    "cuisine": "江戸焼鶏・老舗",
+    "cuisine_type": "donburi",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "donburi — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__295",
+    "name": "竹むら",
+    "cuisine": "もりそば・老舗蕎麦屋",
+    "cuisine_type": "sweets",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "sweets — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__309",
+    "name": "そば処 更科",
+    "cuisine": "そば・天ぷら蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__310",
+    "name": "トンテキ食堂 なかむら",
+    "cuisine": "豚肉ステーキ・昭和食堂",
+    "cuisine_type": "yoshoku",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yoshoku — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__318",
+    "name": "一蘭 新宿中央東口店",
+    "cuisine": "豚骨ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__319",
+    "name": "新宿西口思い出横丁",
+    "cuisine": "焼き鳥・地元食堂",
+    "cuisine_type": "yakitori",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yakitori — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__325",
+    "name": "てんぷら山の上 御茶ノ水本店",
+    "cuisine": "天ぷら・野菜天ぷら",
+    "cuisine_type": "tempura",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tempura — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__337",
+    "name": "なぎちゃんラーメン in白鳥会館",
+    "cuisine": "塩ラーメン・豚骨ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__340",
+    "name": "ふじや",
+    "cuisine": "鰻・丼",
+    "cuisine_type": "shokudo",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "shokudo — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__347",
+    "name": "麺屋 中野",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__369",
+    "name": "蕎麦 神山",
+    "cuisine": "蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__370",
+    "name": "福田屋",
+    "cuisine": "蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__377",
+    "name": "博多 一風堂 南青山店",
+    "cuisine": "ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__381",
+    "name": "恵比寿横丁",
+    "cuisine": "老舗・個人店・居酒屋",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__382",
+    "name": "鶏蕎麦 十番",
+    "cuisine": "蕎麦・鶏料理",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__388",
+    "name": "豆腐料理 空野 恵比寿 (とうふ 空野)",
+    "cuisine": "植物ベース・カフェ",
+    "cuisine_type": "tofu",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "tofu — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3_r",
+    "name": "Japanese Soba Noodles 蔦",
+    "cuisine": "つけ麺",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__407",
+    "name": "虎ノ門 大坂屋 砂場",
+    "cuisine": "そば・蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__422",
+    "name": "赤坂璃宮 赤坂本店",
+    "cuisine": "中華・植物性料理対応",
+    "cuisine_type": "ramen",
+    "gf": "ask",
+    "vegan": "ask",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__425",
+    "name": "はなの舞 赤坂見附店",
+    "cuisine": "居酒屋・野菜料理豊富",
+    "cuisine_type": "izakaya",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "izakaya — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__427",
+    "name": "やまと 赤坂",
+    "cuisine": "そば・蕎麦打ち",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__435",
+    "name": "手打ちそば 福そば",
+    "cuisine": "手打蕎麦",
+    "cuisine_type": "udon_soba",
+    "gf": "ask",
+    "vegan": "limited",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "udon_soba — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__440",
+    "name": "らーめん 香月 池尻大橋店",
+    "cuisine": "味噌ラーメン",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "closed",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__449",
+    "name": "鶏繁 総本店",
+    "cuisine": "焼き鳥",
+    "cuisine_type": "yakitori",
+    "gf": "ask",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "yakitori — no diet angle; menu-decode value only"
+    ]
+   },
+   {
+    "city": "tokyo",
+    "id": "tokyo3__454",
+    "name": "横浜家系ラーメン 田中",
+    "cuisine": "ラーメン・豚骨",
+    "cuisine_type": "ramen",
+    "gf": "no",
+    "vegan": "no",
+    "has_url": false,
+    "cited": 0,
+    "signed": false,
+    "hidden": "unresearched",
+    "why": [
+     "ramen — no diet angle; menu-decode value only"
+    ]
+   }
+  ]
+ }
+}

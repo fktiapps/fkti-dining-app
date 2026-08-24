@@ -50,7 +50,7 @@ const PASS = 'tokyo-3mile-sweep';
 const BOILERPLATE =
   /^\[Tokyo 3-mile sweep\] .*from the Tokyo 3-mile sweep — confirm details on site\.$/;
 
-let hid = 0, alreadyHidden = 0, stripped = 0, skippedNotes = 0, seen = 0;
+let hid = 0, alreadyHidden = 0, stripped = 0, skippedNotes = 0, seen = 0, signedOff = 0, unhidSigned = 0;
 const examples = [];
 
 for (const city of CITIES) {
@@ -76,8 +76,24 @@ for (const city of CITIES) {
       if (String(r.notes).includes('Approx. pin')) r.pin_accuracy = 'approximate';
       delete r.notes;
       stripped++; dirty = true;
-    } else {
+    } else if (r.notes) {
+      // Only count a record that still HAS notes. Counting the ones this script already
+      // stripped made a clean re-run report "275 left alone", which reads like a refusal.
       skippedNotes++;
+    }
+
+    // NEVER hide a record that passed the human gate. A sign-off means Greg read the
+    // evidence and ruled on the tier, so "unresearched" is false on its face — and the
+    // records it caught were the worst possible ones to lose: 4 of the 10 are
+    // `dedicated` GF (Oh Nana!, both T's Kitchen entries, RICE HACK), which is exactly
+    // what a coeliac opens this app to find. 味農家 was among them too, hidden in the
+    // same breath as fixing the pass that had been overriding its sign-off.
+    //
+    // Thin data is a reason to research a record, not to bury one already vouched for.
+    if (r.safety?.owner_signoff) {
+      if (r.hidden === 'unresearched') { delete r.hidden; unhidSigned++; dirty = true; }
+      signedOff++;
+      continue;
     }
 
     if (r.hidden) {
@@ -97,6 +113,7 @@ console.log(`sweep records found:            ${seen}`);
 console.log(`  hidden as "unresearched":     ${hid}`);
 console.log(`  already hidden (left as-is):  ${alreadyHidden}`);
 console.log(`  boilerplate notes removed:    ${stripped}`);
+if (signedOff) console.log(`  owner sign-off, never hidden:  ${signedOff}` + (unhidSigned ? ` (${unhidSigned} un-hidden by this run)` : ""));
 if (skippedNotes) console.log(`  notes left alone (not boilerplate, may be hand-written): ${skippedNotes}`);
 if (examples.length) {
   console.log('\nexamples:');
