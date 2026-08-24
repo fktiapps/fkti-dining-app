@@ -1,0 +1,285 @@
+{
+ "_doc": "Free OpenStreetMap existence probe for unconfirmed Tokyo sweep records. Two states only: confirmed (an OSM venue near the pin matches the name) and unknown. There is deliberately no \"not found\" — absence from OSM is not evidence of absence. Regenerate: node scripts/probe-existence-osm.mjs",
+ "generated": "2026-08-24",
+ "radius_m": 400,
+ "counts": {
+  "confirmed": 1,
+  "unknown": 33,
+  "probe_failed": 0
+ },
+ "results": [
+  {
+   "city": "tokyo",
+   "id": "tokyo3__10",
+   "name": "蕎麦 さとう",
+   "status": "unknown",
+   "venues_seen": 137,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__14",
+   "name": "松喜 丸の内",
+   "status": "unknown",
+   "venues_seen": 137,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__70",
+   "name": "蕎麦処 喜久や",
+   "status": "unknown",
+   "venues_seen": 141,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__72",
+   "name": "ベジタリアンキッチン 京橋",
+   "status": "unknown",
+   "venues_seen": 141,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__82",
+   "name": "野菜中心 グリーンテーブル",
+   "status": "unknown",
+   "venues_seen": 141,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3_n_134",
+   "name": "室次",
+   "status": "unknown",
+   "venues_seen": 107,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3_n_135",
+   "name": "華厳",
+   "status": "unknown",
+   "venues_seen": 107,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__173",
+   "name": "こまきしょくどう 鎌倉不識庵",
+   "status": "confirmed",
+   "matched": "こまきしょくどう -鎌倉不識庵",
+   "source": "https://www.openstreetmap.org/search?query=%E3%81%93%E3%81%BE%E3%81%8D%E3%81%97%E3%82%87%E3%81%8F%E3%81%A9%E3%81%86%20-%E9%8E%8C%E5%80%89%E4%B8%8D%E8%AD%98%E5%BA%B5",
+   "note": "Matched an OpenStreetMap venue near the record pin. Confirms the business exists; says nothing about its diet handling."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__264",
+   "name": "カフェ フレッシュグリーン",
+   "status": "unknown",
+   "venues_seen": 67,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__299",
+   "name": "カフェ・ド・キャトル",
+   "status": "unknown",
+   "venues_seen": 61,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__302",
+   "name": "白ヒゲのシチューハウス",
+   "status": "unknown",
+   "venues_seen": 261,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3_nacha",
+   "name": "ネイチャーカフェ NACHA",
+   "status": "unknown",
+   "venues_seen": 261,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3_green_earth",
+   "name": "ヴィーガンラーメン GREEN EARTH",
+   "status": "unknown",
+   "venues_seen": 261,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__313",
+   "name": "セタンのスープ屋",
+   "status": "unknown",
+   "venues_seen": 261,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__329",
+   "name": "カフェ グリーンリーフ",
+   "status": "unknown",
+   "venues_seen": 39,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3_cafe_verve",
+   "name": "CAFE VERVE",
+   "status": "unknown",
+   "venues_seen": 151,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__345",
+   "name": "ヴィーガンラーメン えん",
+   "status": "unknown",
+   "venues_seen": 159,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__352",
+   "name": "ベジプレート 中野",
+   "status": "unknown",
+   "venues_seen": 159,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__358",
+   "name": "グルテンフリー・パスタ 中野",
+   "status": "unknown",
+   "venues_seen": 159,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__387",
+   "name": "ベジタリアンキッチン えびす",
+   "status": "unknown",
+   "venues_seen": 148,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__391",
+   "name": "ヒッピーフィッシュ",
+   "status": "unknown",
+   "venues_seen": 68,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__394",
+   "name": "パンダカフェ",
+   "status": "unknown",
+   "venues_seen": 68,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__399",
+   "name": "グルテンフリーベーカリー サンテ",
+   "status": "unknown",
+   "venues_seen": 68,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__408",
+   "name": "こうち山菜",
+   "status": "unknown",
+   "venues_seen": 298,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__428",
+   "name": "個室ダイニング 門 赤坂",
+   "status": "unknown",
+   "venues_seen": 298,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__429",
+   "name": "ナチュラルカフェ グリーン",
+   "status": "unknown",
+   "venues_seen": 298,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__431",
+   "name": "せんべろ くらぶ",
+   "status": "unknown",
+   "venues_seen": 298,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__409",
+   "name": "ベジタリアンカレー ナマステ",
+   "status": "unknown",
+   "venues_seen": 167,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__410",
+   "name": "からし亭",
+   "status": "unknown",
+   "venues_seen": 103,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__412",
+   "name": "松竹うどん",
+   "status": "unknown",
+   "venues_seen": 103,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__415",
+   "name": "五穀屋 玄米マクロビ食堂",
+   "status": "unknown",
+   "venues_seen": 103,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__437",
+   "name": "ベジ食堂 草生",
+   "status": "unknown",
+   "venues_seen": 298,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__444",
+   "name": "野菜ビストロ グリーンテーブル",
+   "status": "unknown",
+   "venues_seen": 298,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  },
+  {
+   "city": "tokyo",
+   "id": "tokyo3__456",
+   "name": "グリーンハウス",
+   "status": "unknown",
+   "venues_seen": 234,
+   "note": "No OSM venue near the pin matched this name. NOT evidence the shop does not exist — OSM coverage of Japanese restaurants is patchy. Needs a real source check."
+  }
+ ]
+}
