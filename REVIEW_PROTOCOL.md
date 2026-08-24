@@ -18,6 +18,32 @@ at full weight and does **not** transfer to `vegan_status` at the same weight. I
   is still the right vegan label, with the shared-kitchen note in the detail text where a reader can weigh it.
 This is why `scripts/apply-gate-tranche.mjs` applies its disproven-claim guard to `gf_confidence` only.
 
+## FABRICATION IS FORBIDDEN
+Greg, 2026-08-24: *"Fabrication is forbidden. Synthesis of well-sourced data, fine. Fabrication is
+not a part of this app creation process in any form."*
+
+This is not a risk to be traded off, minimised or budgeted for. It is a prohibition, and it binds
+every stage: discovery, enrichment, menus, chef stories, cultural notes, and any future crawler.
+
+The line: **synthesis is reading sources and saying what they support. Fabrication is writing
+anything a source does not support** — including a plausible inference, a genre-typical detail, or
+a gap filled to make a record look finished. If the sources do not answer the question, the honest
+output is that they do not. An empty field is a fact about our knowledge; a filled one that no
+source backs is a false statement about a restaurant that real people will eat at.
+
+What follows from it, operationally:
+- **Existence before enrichment.** Never hand an agent a shop to enrich without first settling,
+  against a citable source, that the shop exists. An agent that cannot find the business is under
+  pressure to produce *something*, and what it produces is well-written and wrong. This is how
+  杏もん堂 got a third-party gliadin test it never had.
+- **Every claim carries its source**, or it is not a claim — it is a note that we do not know.
+- **A partly-verifiable finding is not a trustworthy one.** 杏もん堂's agent corrected the spice
+  count from 18 to 21, which the site does confirm, and invented the safety claim that mattered.
+  Check the load-bearing claim, not the incidental detail that makes the finding look researched.
+- **"Inferred from cuisine type" is not evidence** and must never set a tier or fill a detail
+  field. The Tokyo sweep wrote one byte-identical `gf_detail` into 164 records this way.
+- When a checker or a pass cannot tell sourced from unsourced, it does not get to write.
+
 ## THE TAXONOMY (as the app encodes it)
 - gf_confidence: `dedicated` | `high` | `options` | `ask` | `no`
 - vegan_status:  `full` | `options` | `limited` | `ask` | `no`
