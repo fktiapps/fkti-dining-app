@@ -59,17 +59,25 @@ A WebFetch spot-check of Tokyo homepages looked discouraging and was MISLEADING 
 WebFetch cannot follow a homepage through to its `/menu` subpage, which is exactly what
 an agent does. Trust the 90/90.
 
-**IN FLIGHT:** shards **s11, s12, s13** (45 records). First dispatched 2026-08-25
-~01:20 EDT and all three died within seconds — the session hit its usage limit before
-they finished reading the briefs, so they wrote nothing. Re-dispatched 05:41 EDT after
-the limit reset, this time told to write their output file incrementally so an
-interruption leaves harvestable partial work rather than nothing.
+**SHARD STATE — READ THIS BEFORE RE-DISPATCHING.**
+s11 and s13 are PARTIAL: 5 of 15 and 6 of 15 records. They were harvested from agents
+that hit the usage limit mid-shard. 11 records, 519 items, 0 empties, 0 stray ids —
+merged and rebuilt clean. s12 wrote nothing.
 
-First thing on resume: check
-`data/_menu_verdicts/tokyo_s1{1,2,3}.json`, harvest whatever landed (handoff lesson 8 —
-harvest, don't wait), then `node scripts/merge-menus.mjs --apply` and rebuild.
-Remaining after those: 25 shards, **~5.0–8.3M tokens** for all of Tokyo. Report yield
-and cost per shard so Greg sets the pace.
+**THE TRAP:** scripts/agent-status.mjs calls a shard DONE when its output file exists,
+so s11 and s13 now report done at a third complete. Do not trust that count. Compute
+the real gap from the data instead: a record needs work if it is visible and absent
+from data/<city>_menus.json. Re-dispatching s11/s13 must skip ids already present in
+their verdict file, or the work is done twice.
+
+**MY BRIEF HAD THE ENUM WRONG.** I told the agents gf/vegan take yes. The existing
+4,000+ merged items use gf:gf and vegan:vegan, and empty string is also accepted
+(140 gf, 183 vegan empties already shipped). The agents read tokyo_s0.json and followed
+the real convention over my instruction, which is why the merge was clean. Fix the
+brief before the next dispatch.
+
+Tokyo: 584 visible, 108 inline (18%), gap 476. All cities: 2,059 of 2,594 (79%).
+Remaining Tokyo work is ~25 shards plus the two partials.
 
 ## Next, in priority order
 
