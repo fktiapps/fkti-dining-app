@@ -31,6 +31,41 @@ Branch `claude/architecture-phases-1-3`, worktree `C:\pf\fkti-dining-arch`.
 - `npm run smoke` → PASS, `citeLinks 11`, `citeList 6`, `detailChars 4216`,
   `hiddenLeaked 0`, `tokyoShown 584`.
 
+## MENUS — findings, 2026-08-25
+
+Greg wants every menu inlined and clickable instead of linking out to Tabelog.
+State: **2,048 of 2,594 visible records (79%) already have an inline translated menu.**
+Eight cities are 91–100%. Tokyo is 17%. The gap is 546 records, 487 of them Tokyo.
+`has_menu` is perfectly in sync with the menus files, so nothing researched is hidden.
+
+**The 59 non-Tokyo gaps are NOT worth researching. Greg guessed this and he was right.**
+- 7 were already researched and came back HONEST EMPTY — `toba_yuki`: *"No menu found."*
+  after checking Tabelog listing, reviews and photo lists. `merge-menus.mjs` correctly
+  declines to merge an empty menu.
+- 49 sit in prepared-but-unrun shards (`_hiro3_menu_shards`, `_nagoya3_menu_shards`).
+  Only 11 have a first-party site; the other 38 are Tabelog-only — the same situation
+  that produced the 7 empties.
+- 3 Nagano records have no website AND no menu_url. Nothing to fetch.
+- Spot-checked four first-party sites directly (長命うどん, 隅吉, 久坊, 梅園): **NO MENU** on
+  all four. Two more unreachable — `101brio.com` is a DEAD DOMAIN (feed to
+  flag-hijacked-domains) and `asakusa-ponchan.com` has a self-signed cert.
+- These shops do not publish itemised menus. Mark them "no menu published"; do not
+  spend ~1M tokens re-deriving the same empty.
+
+**Tokyo is the opposite, and do not extrapolate the above onto it.**
+The 11 completed Tokyo shards: **90 records researched → 90 with a menu, 0 empties.
+100% yield.** 332 of the remaining 487 have a first-party site (vs 11 of 49 elsewhere).
+A WebFetch spot-check of Tokyo homepages looked discouraging and was MISLEADING —
+WebFetch cannot follow a homepage through to its `/menu` subpage, which is exactly what
+an agent does. Trust the 90/90.
+
+**IN FLIGHT at pause:** shards **s11, s12, s13** (45 records) dispatched 2026-08-25
+~01:20 EDT, no verdict files written yet. First thing on resume: check
+`data/_menu_verdicts/tokyo_s1{1,2,3}.json`, harvest whatever landed (handoff lesson 8 —
+harvest, don't wait), then `node scripts/merge-menus.mjs --apply` and rebuild.
+Remaining after those: 25 shards, **~5.0–8.3M tokens** for all of Tokyo. Report yield
+and cost per shard so Greg sets the pace.
+
 ## Next, in priority order
 
 1. **Existence gate for the 63** — REQUIRED before any enrichment, now that
