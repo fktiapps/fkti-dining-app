@@ -4,6 +4,11 @@
 (function () {
   var TRAVEL = 'https://travel.fkti.org';
   var LS = 'fkti_auth';
+  // A local build is not a deployment and has no business asking travel.fkti.org who you
+  // are. Without this, opening http://127.0.0.1:8788 redirected to the production login,
+  // and the app switcher then sent you to the LIVE dining site — so the local preview was
+  // unreachable and every "did the fix land?" check was answered by production.
+  var LOCAL = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])$/.test(location.hostname);
   function setCookie(t) {
     try { document.cookie = 'fkti_auth=' + encodeURIComponent(t) + '; domain=.fkti.org; path=/; max-age=2592000; secure; samesite=Lax'; } catch (e) {}
   }
@@ -35,6 +40,13 @@
   if (!tok) { tok = cookieTok(); if (tok) { try { localStorage.setItem(LS, tok); } catch (e) {} } }
 
   // 3) No token → go log in on Travel.
+  // gate.js loads in <head>, so document.body does not exist yet — mirror the same
+  // DOM-ready guard the normal path uses at the bottom of this file.
+  if (!tok && LOCAL) {
+    if (document.body) injectSwitcher();
+    else document.addEventListener('DOMContentLoaded', injectSwitcher);
+    return;                                     // local preview: ungated, nothing to verify
+  }
   if (!tok) { toLogin(); return; }
 
   // Keep the cross-app cookie fresh so the other sister app is reachable directly too.
@@ -53,7 +65,10 @@
   function injectSwitcher() {
     if (document.getElementById('fkti-appsw')) return;
     var host = location.hostname;
-    var cur = host.indexOf('dining') >= 0 ? 'dining' : (host.indexOf('learning') >= 0 ? 'learning' : 'travel');
+    // This copy of gate.js ships with the dining app, so on a local origin the current
+    // app is dining by definition — the hostname cannot tell you.
+    var cur = LOCAL ? 'dining'
+      : (host.indexOf('dining') >= 0 ? 'dining' : (host.indexOf('learning') >= 0 ? 'learning' : 'travel'));
     var q = tok ? '/?fkti=' + encodeURIComponent(tok) : '/';
     // Travel owns its own login/token, so it just needs the bare URL.
     var APPS = [
