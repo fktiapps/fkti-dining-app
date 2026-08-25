@@ -59,8 +59,13 @@ A WebFetch spot-check of Tokyo homepages looked discouraging and was MISLEADING 
 WebFetch cannot follow a homepage through to its `/menu` subpage, which is exactly what
 an agent does. Trust the 90/90.
 
-**IN FLIGHT at pause:** shards **s11, s12, s13** (45 records) dispatched 2026-08-25
-~01:20 EDT, no verdict files written yet. First thing on resume: check
+**IN FLIGHT:** shards **s11, s12, s13** (45 records). First dispatched 2026-08-25
+~01:20 EDT and all three died within seconds — the session hit its usage limit before
+they finished reading the briefs, so they wrote nothing. Re-dispatched 05:41 EDT after
+the limit reset, this time told to write their output file incrementally so an
+interruption leaves harvestable partial work rather than nothing.
+
+First thing on resume: check
 `data/_menu_verdicts/tokyo_s1{1,2,3}.json`, harvest whatever landed (handoff lesson 8 —
 harvest, don't wait), then `node scripts/merge-menus.mjs --apply` and rebuild.
 Remaining after those: 25 shards, **~5.0–8.3M tokens** for all of Tokyo. Report yield
