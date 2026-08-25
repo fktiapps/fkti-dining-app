@@ -175,6 +175,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .btn-menu{padding:12px;border-radius:12px;font-size:13.5px;font-weight:600;text-align:center;text-decoration:none;display:block}
 .btn-menu.active{background:#2E7D32;color:#fff}
 .btn-menu.disabled{background:#e0ddd7;color:#aaa;pointer-events:none;cursor:default}
+.btn-menu.external{background:#F0EDE6;color:#3a4258;border:1px solid #ddd8cc}.btn-menu .sub{display:block;font-size:11px;font-weight:400;opacity:.75;margin-top:2px}
 .bio-out{font-size:13px;line-height:1.55;color:#3a4258;background:#F0EDE6;border:1px solid #ddd8cc;border-radius:10px;padding:14px;margin-top:8px}
 .bio-out .bio-name{font-family:var(--display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:2px}
 .bio-out .bio-role{font-size:11.5px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
@@ -733,7 +734,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v221';
+const APP_BUILD='dcd-v223';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1638,7 +1639,21 @@ function _renderDetailSync(p){
    <a class="btn-maps" href="${p.gmaps}" target="_blank" rel="noopener">📍 Google Maps</a>
    <button class="btn-more" id="moreBtn">🛡️ Food Safety</button>
    <button class="btn-bio" id="bioBtn">👨‍🍳 Chef / Owner Story</button>
-   ${p.has_menu?`<button class="btn-menu active" id="menuBtn">📋 Show Menu</button>`:(()=>{const mu=p.menu_url||p.website;return mu?`<a class="btn-menu active" href="${mu}" target="_blank" rel="noopener">📋 Show Menu</a>`:`<span class="btn-menu disabled">📋 Show Menu</span>`;})()}
+   ${(()=>{
+     // Three states, and they must not look alike. 2,048 of 2,594 visible records have
+     // a researched, translated menu; 546 do not and fall through to whatever link we
+     // hold, which for 479 of them is Tabelog — untranslated Japanese, the exact thing
+     // this app exists to spare someone. Both cases used to render an identical green
+     // "📋 Show Menu", so a traveller tapping it had no way to know which they would
+     // get until the page loaded. Saying where the button goes is not a fix for the
+     // coverage gap; it is just the honest version of it while the gap is closed.
+     if (p.has_menu) return `<button class="btn-menu active" id="menuBtn">📋 Show Menu<span class="sub">translated, dish by dish</span></button>`;
+     const mu = p.menu_url || p.website;
+     if (!mu) return `<span class="btn-menu disabled">📋 No menu yet</span>`;
+     let host = ""; try { host = new URL(mu).hostname.replace(/^www\./, ""); } catch(e) {}
+     const nice = /tabelog/.test(host) ? "Tabelog" : (host || "the web");
+     return `<a class="btn-menu external" href="${mu}" target="_blank" rel="noopener">📋 Menu on ${escHtml(nice)} ↗<span class="sub">not translated yet</span></a>`;
+   })()}
   </div>
   <button class="btn-card" id="cardFromDetail">🪪 Show staff a celiac / vegan card</button>
   <button class="btn-card" id="phrasesFromDetail">🗣 Useful phrases (GF / vegan / courtesy)</button>
