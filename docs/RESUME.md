@@ -1,22 +1,31 @@
-# Resume here — updated 2026-08-27, grinder run
+# Resume here — updated 2026-08-27, grinder run (2nd consecutive blocked run)
 
-## READ THIS FIRST — WebFetch is network-blocked in this environment
-This run's session had WebFetch return `EGRESS_BLOCKED` for every domain tried:
-the target shop's own site (hamakura-style.com), tabelog.com, a third-party
-menu aggregator (ramen-station.jp), and en.wikipedia.org as a control. This is
-the session's network egress policy, not a timeout or a per-site block —
-`curl -sS "$HTTPS_PROXY/__agentproxy/status"` showed the proxy itself healthy,
-so the block is specific to the WebFetch tool's own egress path. WebSearch
-still works (snippet results only, no page fetch).
+## READ THIS FIRST — WebFetch is STILL network-blocked in this environment
+Second grinder run in a row confirms this. Retested this run against a fresh
+throwaway URL (en.wikipedia.org/wiki/Tokyo, chosen for no reason but to be a
+site that obviously works) — same `EGRESS_BLOCKED` error as the run before.
+This is the session's network egress policy, not a timeout or a per-site
+block. WebSearch still works (snippet results only, no page fetch).
 
 **Do not write menu items from WebSearch snippets alone.** A snippet is a
 search engine's summary, not a page you read — writing items from it violates
 the fabrication rule (`sources` must be pages actually fetched and read).
 **Before starting Step 2 research, test WebFetch against a throwaway URL
 first.** If it is still EGRESS_BLOCKED, do not attempt research this run —
-harvest/merge/rebuild only (Step 1), log it, and stop. This is an environment
-configuration issue for a human to fix (adjust the session's network policy),
-not something a grinder run can work around.
+harvest/merge/rebuild only (Step 1), log it, and stop. THIS NEEDS A HUMAN:
+two runs have now hit this identically, so it is not transient — Greg needs
+to adjust this session's network egress policy before Step 2 can resume.
+
+## Fixed this run (2026-08-27): accumulating banner, third instance
+`flag-vegan-gluten-traps.mjs` prepended its ⚠ warning to menu item `note`
+fields unguarded — same bug class as `enforce-cited-claims.mjs` and
+`apply-owner-signoff.mjs` (see "Fixed overnight" below), but this one wasn't
+covered by that fix and was still live. 20 items had accumulated up to 73
+copies (9KB notes, 154KB repeated text total) by the time this run's routine
+rebuild caught it (it added a 74th copy to two records before the fix
+landed). Write site now guarded; `scripts/dedupe-menu-note-banners.mjs`
+collapsed the existing accumulation. Verified 0 repeats after a second
+rebuild. Committed as ec6f3a7.
 
 ---
 # Resume here — updated 2026-08-24, overnight
