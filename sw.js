@@ -1,6 +1,6 @@
 // Deeply Connected Dining — service worker. Bump VERSION to force an update.
-const VERSION = 'dcd-v226';
-// content-hash: 5fac7ad9184f9f14
+const VERSION = 'dcd-v227';
+// content-hash: 467beaae687220ec
 const SHELL = `shell-${VERSION}`;
 const DATA  = `data-${VERSION}`;
 const TILES = `tiles-${VERSION}`;
