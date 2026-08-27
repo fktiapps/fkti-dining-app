@@ -1,3 +1,24 @@
+# Resume here — updated 2026-08-27, grinder run
+
+## READ THIS FIRST — WebFetch is network-blocked in this environment
+This run's session had WebFetch return `EGRESS_BLOCKED` for every domain tried:
+the target shop's own site (hamakura-style.com), tabelog.com, a third-party
+menu aggregator (ramen-station.jp), and en.wikipedia.org as a control. This is
+the session's network egress policy, not a timeout or a per-site block —
+`curl -sS "$HTTPS_PROXY/__agentproxy/status"` showed the proxy itself healthy,
+so the block is specific to the WebFetch tool's own egress path. WebSearch
+still works (snippet results only, no page fetch).
+
+**Do not write menu items from WebSearch snippets alone.** A snippet is a
+search engine's summary, not a page you read — writing items from it violates
+the fabrication rule (`sources` must be pages actually fetched and read).
+**Before starting Step 2 research, test WebFetch against a throwaway URL
+first.** If it is still EGRESS_BLOCKED, do not attempt research this run —
+harvest/merge/rebuild only (Step 1), log it, and stop. This is an environment
+configuration issue for a human to fix (adjust the session's network policy),
+not something a grinder run can work around.
+
+---
 # Resume here — updated 2026-08-24, overnight
 
 Branch `claude/architecture-phases-1-3`, worktree `C:\pf\fkti-dining-arch`.
@@ -76,8 +97,18 @@ their verdict file, or the work is done twice.
 the real convention over my instruction, which is why the merge was clean. Fix the
 brief before the next dispatch.
 
-Tokyo: 584 visible, 108 inline (18%), gap 476. All cities: 2,059 of 2,594 (79%).
-Remaining Tokyo work is ~25 shards plus the two partials.
+Tokyo: 584 visible, 133 inline (22.8%), gap 451. All cities: 2,084 of 2,594 (80.3%).
+(Updated 2026-08-27 — these are exact counts computed from the data, not the
+lying agent-status.mjs.)
+
+**Exact shard state, 2026-08-27:** s0-s13 all started, s1 complete (15/15).
+Records still missing per started shard: s0:7 s2:5 s3:7 s4:3 s5:7 s6:6 s7:7
+s8:8 s9:12 s10:13 s11:5 s12:2 s13:1 — **83 records across started shards.**
+s14-s38 (25 shards) entirely unstarted, **365 records.** 83+365=448 ≈ the 451
+gap (small residual from hidden/dedup edge cases, not worth chasing).
+**Next dispatch: finish s13 (1 record: tokyo_shinjuku_yataien, blocked this
+run only by the WebFetch outage above — otherwise ready to research) or s12
+(2 records), then work down the missing-count list before starting s14.**
 
 ## Next, in priority order
 
