@@ -1,6 +1,6 @@
 # GF SAFETY REVIEW — GREG SIGN-OFF WORKLIST
 
-Generated 2026-08-26 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
+Generated 2026-08-27 from the live data · protocol: REVIEW_PROTOCOL.md (adversarial "disprove-the-label" pass)
 
 **26 auto-downgrades applied by this adversarial pass and committed** (plus 47 from earlier re-audits). **0 records remain at `dedicated`/`high` and need your gate.** 39 already gated.
 
