@@ -8,6 +8,11 @@ import { readCity, writeCity } from './lib-city.mjs';
 const DATE = '2026-08-19';
 const edits = [];
 const find = (places, q) => places.filter(p => p.name.includes(q));
+// Guard against the accumulating-banner bug (HANDOFF.txt/RESUME.md): this script
+// runs every rebuild, so an unconditional prepend duplicates its note on every
+// pass. Only prepend if this exact banner isn't already present.
+const prependOnce = (existing, banner) =>
+  (existing || '').includes(banner) ? (existing || '') : banner + (existing || '');
 
 // ---------------------------------------------------------------- NARA
 {
@@ -110,7 +115,7 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
     // www.senza-x.com lapsed and now serves a Korean gambling site (verified:
     // <html lang="ko">, title 토토사이트...). Never link it from the app.
     r.website = '';
-    r.notes = `[${DATE}] Reported 休業 (closed indefinitely, staff shortage) on Tabelog, and the former official domain senza-x.com has lapsed — it now hosts an unrelated Korean gambling site and must not be linked. Verify the shop has reopened before relying on this entry. ` + (r.notes || '');
+    r.notes = prependOnce(r.notes, `[${DATE}] Reported 休業 (closed indefinitely, staff shortage) on Tabelog, and the former official domain senza-x.com has lapsed — it now hosts an unrelated Korean gambling site and must not be linked. Verify the shop has reopened before relying on this entry. `);
     edits.push('kyoto/Senza X: cleared hijacked lapsed domain + closure note');
   }
 
@@ -156,7 +161,7 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
   const j = readCity('nagoya');
   for (const r of find(j.places, 'Creperiz')) {
     r.website = 'https://www.instagram.com/creperiz_sta.nagoya/';   // only official channel
-    r.notes = `[${DATE}] The 大須 shop has closed; the stand is 移転準備中 toward the Nagoya Station area with no confirmed address or reopening date, and its Instagram has been quiet since Feb 2025. Confirm it exists before travelling. ` + (r.notes || '');
+    r.notes = prependOnce(r.notes, `[${DATE}] The 大須 shop has closed; the stand is 移転準備中 toward the Nagoya Station area with no confirmed address or reopening date, and its Instagram has been quiet since Feb 2025. Confirm it exists before travelling. `);
     edits.push('nagoya/Creperiz: pointed website at the only official channel + relocation note');
   }
   writeCity('nagoya', j);
@@ -174,7 +179,7 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
   const tamaru = j.places.find(r => r.id === 'hiro_vegan_fruits_cafe_tamaru');
   if (tamaru && tamaru.hours_status !== 'closed') {
     tamaru.hours_status = 'closed';
-    tamaru.notes = `[${DATE}] REPORTED PERMANENTLY CLOSED on 2024-03-03. The branch's own Instagram bio reads 「2024年３月3日閉店いたしました」 and Tabelog carries a 掲載保留 (listing suspended) banner. Verify before travelling; the parent TAMARU fruit business continues elsewhere. ` + (tamaru.notes || '');
+    tamaru.notes = prependOnce(tamaru.notes, `[${DATE}] REPORTED PERMANENTLY CLOSED on 2024-03-03. The branch's own Instagram bio reads 「2024年３月3日閉店いたしました」 and Tabelog carries a 掲載保留 (listing suspended) banner. Verify before travelling; the parent TAMARU fruit business continues elsewhere. `);
     edits.push('hiroshima/Vegan Fruits Cafe Tamaru: marked closed (reported 2024-03-03)');
     dirty = true;
   }
@@ -198,7 +203,7 @@ const find = (places, q) => places.filter(p => p.name.includes(q));
   for (const r of j.places) {
     if (!String(r.website || '').includes('5w-kyoto.com')) continue;
     r.website = '';
-    r.notes = `[${DATE}] Official domain 5w-kyoto.com no longer resolves; link removed. ` + (r.notes || '');
+    r.notes = prependOnce(r.notes, `[${DATE}] Official domain 5w-kyoto.com no longer resolves; link removed. `);
     edits.push(`kyoto/${r.name.split(' (')[0]}: cleared dead domain 5w-kyoto.com`);
     dirty = true;
   }
@@ -230,7 +235,7 @@ for (const b of BAD_SITES) {
     if (!r.name.includes(b.match)) continue;
     if (!String(r.website || '').includes(b.was)) continue;
     r.website = b.to;
-    r.notes = `[${DATE}] Website corrected: ${b.why} ` + (r.notes || '');
+    r.notes = prependOnce(r.notes, `[${DATE}] Website corrected: ${b.why} `);
     edits.push(`${b.city}/${r.name.split(' (')[0]}: ${b.to ? 'repointed' : 'cleared'} website (${b.was})`);
     dirty = true;
   }
@@ -253,7 +258,7 @@ for (const [city, list] of Object.entries(HIJACKED)) {
       for (const f of ['website', 'menu_url'])
         if (r[f] && r[f].includes(host)) {
           r[f] = '';
-          r.notes = `[${DATE}] Former official domain ${host} has lapsed and ${what}; the link was removed. Verify the business is still trading. ` + (r.notes || '');
+          r.notes = prependOnce(r.notes, `[${DATE}] Former official domain ${host} has lapsed and ${what}; the link was removed. Verify the business is still trading. `);
           edits.push(`${city}/${r.name.split(' (')[0]}: cleared hijacked domain ${host}`);
           dirty = true;
         }
