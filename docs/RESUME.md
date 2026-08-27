@@ -1,11 +1,14 @@
-# Resume here — updated 2026-08-27, grinder run (2nd consecutive blocked run)
+# Resume here — updated 2026-08-27, grinder run (3rd consecutive blocked run)
 
 ## READ THIS FIRST — WebFetch is STILL network-blocked in this environment
-Second grinder run in a row confirms this. Retested this run against a fresh
-throwaway URL (en.wikipedia.org/wiki/Tokyo, chosen for no reason but to be a
-site that obviously works) — same `EGRESS_BLOCKED` error as the run before.
-This is the session's network egress policy, not a timeout or a per-site
-block. WebSearch still works (snippet results only, no page fetch).
+Third grinder run in a row confirms this. Retested this run against TWO
+throwaway URLs (en.wikipedia.org/wiki/Tokyo, and tabelog.com itself) — same
+`EGRESS_BLOCKED` error both times, identical to the prior two runs. This is
+the session's network egress policy, not a timeout or a per-site block.
+WebSearch still works (snippet results only, no page fetch). A push
+notification was sent to Greg this run since three identical failures is no
+longer plausibly transient — do not keep re-testing this every 4 hours
+without a human fixing the underlying policy.
 
 **Do not write menu items from WebSearch snippets alone.** A snippet is a
 search engine's summary, not a page you read — writing items from it violates
@@ -13,10 +16,19 @@ the fabrication rule (`sources` must be pages actually fetched and read).
 **Before starting Step 2 research, test WebFetch against a throwaway URL
 first.** If it is still EGRESS_BLOCKED, do not attempt research this run —
 harvest/merge/rebuild only (Step 1), log it, and stop. THIS NEEDS A HUMAN:
-two runs have now hit this identically, so it is not transient — Greg needs
+three runs have now hit this identically, so it is not transient — Greg needs
 to adjust this session's network egress policy before Step 2 can resume.
 
-## Fixed this run (2026-08-27): accumulating banner, third instance
+## Fixed this run (2026-08-27, 16:28Z run): 2 more residual banner duplicates
+The dedupe pass from the prior run (ec6f3a7, `dedupe-menu-note-banners.mjs`)
+did not fully clean the accumulation — this run's `merge-menus.mjs --apply`
+still found and stripped one extra duplicate ⚠ soy-meat banner copy each in
+`data/tokyo_menus.json` and `data/nagoya_menus.json`. Fixed as a normal part
+of the merge/rebuild step (no new script needed — the existing dedupe logic
+in the merge path caught it). Verified 0 errors after rebuild. Committed as
+5f6683b. Worth a spot-check next run that no further copies resurface.
+
+## Fixed prior run (2026-08-27, 12:35Z run): accumulating banner, third instance
 `flag-vegan-gluten-traps.mjs` prepended its ⚠ warning to menu item `note`
 fields unguarded — same bug class as `enforce-cited-claims.mjs` and
 `apply-owner-signoff.mjs` (see "Fixed overnight" below), but this one wasn't
