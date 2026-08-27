@@ -77,7 +77,11 @@ for (const city of CITIES) {
       if (APPLY) {
         it.gf = grade;
         const veganLine = it.vegan === 'vegan' ? 'Vegan but ' : '';
-        it.note = `⚠ ${why}. ${veganLine}${grade === 'no' ? 'NOT gluten-free' : 'gluten status must be confirmed'}. ` + (it.note || '');
+        const banner = `⚠ ${why}. ${veganLine}${grade === 'no' ? 'NOT gluten-free' : 'gluten status must be confirmed'}. `;
+        // Guard against re-running over data already carrying this banner — an
+        // unguarded prepend accumulates a copy per rebuild (same bug class as
+        // enforce-cited-claims.mjs / apply-owner-signoff.mjs; see dedupe-detail-banners.mjs).
+        if (!(it.note || '').startsWith(banner)) it.note = banner + (it.note || '');
       }
     }
   }
