@@ -1,9 +1,9 @@
-# Resume here — updated 2026-08-28, grinder run (5th consecutive blocked run)
+# Resume here — updated 2026-08-28, grinder run (6th consecutive blocked run)
 
 ## READ THIS FIRST — WebFetch is STILL network-blocked in this environment
-Fifth grinder run in a row confirms this. Retested this run against the same
+Sixth grinder run in a row confirms this. Retested this run against the same
 two throwaway URLs (en.wikipedia.org/wiki/Tokyo, and tabelog.com itself) —
-same `EGRESS_BLOCKED` error both times, identical to all four prior runs.
+same `EGRESS_BLOCKED` error both times, identical to all five prior runs.
 This is the session's network egress policy, not a timeout or a per-site
 block. WebSearch still works (snippet results only, no page fetch). Greg was
 already push-notified on run 3 (2026-08-27 16:28Z) and the symptom is
@@ -24,7 +24,27 @@ tokyo_tokutaro, tokyo_ramen_kamo_to_negi_shibu) or s13 (2 records:
 tokyo_haishop_cafe_shibuya_scr, tokyo_shinjuku_yataien) — tied for fewest
 remaining — then work down the missing-count list before starting s14.**
 
-## This run (2026-08-28, 00:2x UTC): Step 1 only, Step 2 skipped per standing rule
+## This run (2026-08-28, 04:2x UTC): Step 1 only, Step 2 skipped per standing rule
+Step 1 fully idempotent this time: all 14 verdict files (tokyo_s0-s13)
+re-validated clean (valid JSON, ids ⊆ shard ids, required item fields
+present). `merge-menus.mjs --dry` then `--apply` found 0 new Tokyo menus
+(as expected — no research has landed since the last run) AND, for the
+first time in six runs, 0 leftover accumulated-banner duplicates — the
+prior five runs' dedupe passes appear to have fully caught the ⚠ soy-meat
+banner accumulation. Rebuilt anyway per protocol; working tree came back
+byte-identical to HEAD (nothing to commit from Step 1 itself, only the
+log/RESUME.md doc updates this run). `npm test` 24/24, `lint-data.mjs` 108
+warnings/0 errors, top-tier GF 39/39 gated — all baselines held. Exact
+Tokyo state unchanged: 584 visible, 133 inline (22.8%), gap 451, same
+shard/record breakdown as below. Step 2 research skipped: WebFetch
+retested (see above), still `EGRESS_BLOCKED` on both control URLs.
+
+**Worth watching, not yet acting on:** if this run's clean banner-dedupe
+result holds for another run or two, the accumulating-banner bug class can
+probably be considered closed (no need to keep grepping for new unguarded
+`prependOnce`-less write sites every run).
+
+## Prior run (2026-08-28, 00:2x UTC): Step 1 only, Step 2 skipped per standing rule
 `merge-menus.mjs --apply` found 3 more leftover ⚠ soy-meat banner duplicates
 the prior dedupe passes missed (2 in `tokyo_menus.json`, 1 in
 `nagoya_menus.json`) — same accumulated-banner bug class as the incidents
