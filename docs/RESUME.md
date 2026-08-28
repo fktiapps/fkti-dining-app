@@ -1,10 +1,15 @@
-# Resume here — updated 2026-08-28, grinder run (8th consecutive blocked run for THIS session)
+# Resume here — updated 2026-08-28, grinder run (9th consecutive blocked run for THIS session)
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
-Eighth grinder run in a row confirms this session's own proxy still denies
+Ninth grinder run in a row confirms this session's own proxy still denies
 tabelog.com (`$HTTPS_PROXY/__agentproxy/status` → `"gateway answered 403 to
-CONNECT"`), so Step 2 remains skipped here. **But this run found the first
-evidence that egress is NOT globally down**: a separate, interactive
+CONNECT"`), so Step 2 remains skipped here. Since the last grinder log entry
+(08:4x), an interactive session (commit `d3d34cc`, author DCD, using its own
+working egress) finished shard s13 (15/15) and hid one closed shop
+(haishop cafe Scramble Square) — Tokyo denominator dropped by one, inline
+count rose. **This run's own probe is still `000`/proxy-403** — see prior
+entries for why that no longer means "nobody can research right now." A
+separate, interactive
 session (commit `ab3aaef`, 2026-08-28 07:53 UTC, author DCD) completed
 shard s12 in full — two records with real fetched sources (徳太樓, 鴨to葱) —
 after the last grinder log entry (06:03Z) and using live curl/WebFetch
@@ -18,22 +23,42 @@ is driving interactively. Greg was already push-notified on run 3
 (2026-08-27 16:28Z) about the grinder-session block; that symptom is
 unchanged for the grinder specifically, so no repeat notification this run.
 
-**Exact Tokyo menu state, 2026-08-28 08:4x UTC (computed from data, not agent-status.mjs):**
-584 visible Tokyo records, 135 with an inline menu (23.1%), gap 449.
-s12 is now COMPLETE (was 2 records short; finished by the interactive
-session above). Started shards (s0-s13, s1 and s12 complete) are missing
-82 records total: s0:7 s2:5 s3:7 s4:3 s5:7 s6:6 s7:7 s8:8 s9:12 s10:13
-s11:5 s13:2. Unstarted shards (s14-s38, 25 shards) are missing 360 records.
-82+360=442 vs the 449 gap (small residual from hidden/dedup edge cases,
-not worth chasing).
+**Exact Tokyo menu state, 2026-08-28 16:4x UTC (computed from data, not agent-status.mjs):**
+583 visible Tokyo records (one dropped: haishop cafe Scramble Square hidden
+as closed), 137 with an inline menu (23.5%), gap 446. s1, s12 and now s13
+are COMPLETE (finished by interactive sessions since the last grinder run).
+Started shards (s0-s11) are missing 78 records total: s0:7 s2:5 s3:7 s4:1
+s5:7 s6:6 s7:7 s8:8 s9:12 s10:13 s11:5. Unstarted shards (s14-s38, 25
+shards) are missing 365 records. 78+365=443 vs the 446 gap (small residual
+from hidden/dedup edge cases, not worth chasing).
 **Next dispatch once this session's own egress is unblocked (or if a
-session with working egress picks this up): s13 (2 records:
-tokyo_haishop_cafe_shibuya_scr, tokyo_shinjuku_yataien) is now the fewest
-remaining — then s4 (3 records: tokyo_ramen_kamo_to_negi_eato_,
-tokyo_nihon_ryori_yukuri_yukur, tokyo_tokyo_dominica) — then work down the
-missing-count list before starting s14.**
+session with working egress picks this up): s4 (1 record:
+tokyo_nihon_ryori_yukuri_yukur — check tokyo_s4.json for the exact id) is
+now the fewest remaining — then s2 (5 records) / s11 (5 records) — then
+work down the missing-count list before starting s14.**
 
-## This run (2026-08-28, 08:4x UTC): Step 1 only, Step 2 skipped — this session's egress still blocked, but merged a completion from elsewhere
+## This run (2026-08-28, 16:4x UTC): Step 1 only, Step 2 skipped — this session's egress still blocked, absorbed s13 completion from elsewhere
+Step 1 re-validated all 14 tokyo verdict files clean (valid JSON, ids
+subset of shard, required item fields) — `merge-menus.mjs --dry`/`--apply`
+found 0 new Tokyo menus this run (s13's completion was already merged and
+committed by the interactive session, `d3d34cc`). The only real diff:
+`toba_kyubei_toba_kyubei`'s item notes had drifted terser than their
+source verdict file (`data/_menu_verdicts/toba2.json`) — re-running merge
+brought all 41 items back into sync (56-line diff). Checked whether this
+was a duplicate-source conflict (two shard files disagreeing, resolved by
+readdir order) — it was not: `toba2.json` and `_toba_parts/D.json` are
+byte-identical on this record, so it was a one-time re-sync, not a new
+recurring pattern; nothing to guard. Spot-checked the 4 previously-fixed
+accumulating-banner scripts again: still guarded/self-limiting, 0 new
+duplicate banners after this rebuild. `npm test` 24/24, `lint-data.mjs`
+108 warnings/0 errors, top-tier GF 39/39 gated. Committed `d5ecd96`,
+pushed clean. Step 2: this session's own curl probe against tabelog.com
+still returned `000` / proxy 403 (`$HTTPS_PROXY/__agentproxy/status`
+confirms `connect_rejected`, "gateway answered 403 to CONNECT") — see READ
+THIS FIRST above for why that no longer means "nobody can research right
+now."
+
+## Prior run (2026-08-28, 08:4x UTC): Step 1 only, Step 2 skipped — this session's egress still blocked, but merged a completion from elsewhere
 Step 1 picked up real new content this time: `merge-menus.mjs --apply`
 absorbed shard s12's completion (already committed by the interactive
 session above) — Tokyo inline menus 133 → 135. Also stripped 3 leftover
