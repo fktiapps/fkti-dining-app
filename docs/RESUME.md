@@ -1,35 +1,58 @@
-# Resume here — updated 2026-08-28, grinder run (7th consecutive blocked run)
+# Resume here — updated 2026-08-28, grinder run (8th consecutive blocked run for THIS session)
 
-## READ THIS FIRST — ALL egress is blocked in this environment, confirmed at the proxy level, not just WebFetch
-Seventh grinder run in a row confirms this, and this run adds a new data
-point: the "try curl from Bash instead of WebFetch" workaround was tested
-and it does NOT work either. `curl -A '<browser UA>' https://tabelog.com/.../dtlmenu/`
-returns `000`/connection failure; the verbose form shows why —
-`$HTTPS_PROXY/__agentproxy/status` reports `"gateway answered 403 to CONNECT
-(policy denial or upstream failure)"` for `tabelog.com:443`. This is this
-session's own agent-proxy CONNECT policy denying the domain, not a
-WebFetch-tool-specific bug and not something curl, or any other outbound
-tool, can route around. **Do not keep proposing "try curl instead" as a
-fix — it was tried and it is blocked at the same layer.** WebSearch still
-works (snippet results only, no page fetch — not a substitute; writing menu
-items from a snippet violates the fabrication rule). Greg was already
-push-notified on run 3 (2026-08-27 16:28Z); the symptom (total egress block)
-is unchanged, only the diagnosis got more precise this run, so no repeat
-notification — see the standing ask below.
+## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
+Eighth grinder run in a row confirms this session's own proxy still denies
+tabelog.com (`$HTTPS_PROXY/__agentproxy/status` → `"gateway answered 403 to
+CONNECT"`), so Step 2 remains skipped here. **But this run found the first
+evidence that egress is NOT globally down**: a separate, interactive
+session (commit `ab3aaef`, 2026-08-28 07:53 UTC, author DCD) completed
+shard s12 in full — two records with real fetched sources (徳太樓, 鴨to葱) —
+after the last grinder log entry (06:03Z) and using live curl/WebFetch
+reads of tabelog.com and the shops' own sites. So the block is scoped to
+this session's/environment's network policy, not an account-wide or
+domain-wide outage. Nothing for this session to do differently — its own
+probe still returns `000` — but stop describing this as "all egress
+blocked, needs Greg to fix the policy" as if it were a single global
+switch; it may already be fine for whichever session/environment a human
+is driving interactively. Greg was already push-notified on run 3
+(2026-08-27 16:28Z) about the grinder-session block; that symptom is
+unchanged for the grinder specifically, so no repeat notification this run.
 
-**Exact Tokyo menu state, 2026-08-28 (computed from data, not agent-status.mjs):**
-584 visible Tokyo records, 133 with an inline menu (22.8%), gap 451.
-Started shards (s0-s13, s1 complete) are missing 84 records total:
-s0:7 s2:5 s3:7 s4:3 s5:7 s6:6 s7:7 s8:8 s9:12 s10:13 s11:5 s12:2 s13:2.
-Unstarted shards (s14-s38, 25 shards) are missing 365 records (15/shard for
-s14-s28, 14/shard for s29-s38). 84+365=449 ≈ the 451 gap (small residual
-from hidden/dedup edge cases, not worth chasing).
-**Next dispatch once WebFetch is unblocked: finish s12 (2 records:
-tokyo_tokutaro, tokyo_ramen_kamo_to_negi_shibu) or s13 (2 records:
-tokyo_haishop_cafe_shibuya_scr, tokyo_shinjuku_yataien) — tied for fewest
-remaining — then work down the missing-count list before starting s14.**
+**Exact Tokyo menu state, 2026-08-28 08:4x UTC (computed from data, not agent-status.mjs):**
+584 visible Tokyo records, 135 with an inline menu (23.1%), gap 449.
+s12 is now COMPLETE (was 2 records short; finished by the interactive
+session above). Started shards (s0-s13, s1 and s12 complete) are missing
+82 records total: s0:7 s2:5 s3:7 s4:3 s5:7 s6:6 s7:7 s8:8 s9:12 s10:13
+s11:5 s13:2. Unstarted shards (s14-s38, 25 shards) are missing 360 records.
+82+360=442 vs the 449 gap (small residual from hidden/dedup edge cases,
+not worth chasing).
+**Next dispatch once this session's own egress is unblocked (or if a
+session with working egress picks this up): s13 (2 records:
+tokyo_haishop_cafe_shibuya_scr, tokyo_shinjuku_yataien) is now the fewest
+remaining — then s4 (3 records: tokyo_ramen_kamo_to_negi_eato_,
+tokyo_nihon_ryori_yukuri_yukur, tokyo_tokyo_dominica) — then work down the
+missing-count list before starting s14.**
 
-## This run (2026-08-28, 06:0x UTC): Step 1 only, Step 2 skipped — curl workaround tested, also blocked
+## This run (2026-08-28, 08:4x UTC): Step 1 only, Step 2 skipped — this session's egress still blocked, but merged a completion from elsewhere
+Step 1 picked up real new content this time: `merge-menus.mjs --apply`
+absorbed shard s12's completion (already committed by the interactive
+session above) — Tokyo inline menus 133 → 135. Also stripped 3 leftover
+accumulated ⚠ soy-meat banner duplicates (2 tokyo, 1 nagoya), which the
+rebuild's own guarded flagging pass re-added as single fresh copies (net
+zero diff on those two files vs the merge output), and merged a duplicate
+pair (`toba_toba_kyubei` → `toba_kyubei_toba_kyubei`), keeping the richer
+item notes. Spot-checked the 4 previously-fixed accumulating-banner
+scripts plus `flag-vegan-contradictions.mjs`'s `gf_detail`/`vegan_detail`
+prepend sites again for a 5th unguarded write: all 4 non-`prependOnce`
+sites in `apply-audit-corrections.mjs` are gated behind a tier-transition
+or duplicate-removal condition that only fires once (self-limiting), same
+as the last two runs found — still holding, still not worth a new script.
+`npm test` 24/24, `lint-data.mjs` 108 warnings/0 errors, top-tier GF 39/39
+gated. Committed `7f95b1e`, pushed clean. Step 2: this session's own curl
+probe against tabelog.com still returned `000` / proxy 403 — see READ THIS
+FIRST above for why that no longer means "nobody can research right now."
+
+## Prior run (2026-08-28, 06:0x UTC): Step 1 only, Step 2 skipped — curl workaround tested, also blocked
 Step 1 fully idempotent again: all 14 verdict files re-validated clean, merge
 --dry/--apply found 3 more leftover accumulated ⚠ soy-meat banner copies
 (2 tokyo, 1 nagoya) which the merge path stripped and the rebuild's own
