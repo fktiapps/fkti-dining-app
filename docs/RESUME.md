@@ -1,16 +1,21 @@
-# Resume here — updated 2026-08-28, grinder run (6th consecutive blocked run)
+# Resume here — updated 2026-08-28, grinder run (7th consecutive blocked run)
 
-## READ THIS FIRST — WebFetch is STILL network-blocked in this environment
-Sixth grinder run in a row confirms this. Retested this run against the same
-two throwaway URLs (en.wikipedia.org/wiki/Tokyo, and tabelog.com itself) —
-same `EGRESS_BLOCKED` error both times, identical to all five prior runs.
-This is the session's network egress policy, not a timeout or a per-site
-block. WebSearch still works (snippet results only, no page fetch). Greg was
-already push-notified on run 3 (2026-08-27 16:28Z) and the symptom is
-unchanged, so this run again did NOT send a duplicate notification — do not
-keep re-testing this every 4 hours without a human fixing the underlying
-policy, and do not re-notify every run for the same unresolved issue; only
-notify again if the symptom changes.
+## READ THIS FIRST — ALL egress is blocked in this environment, confirmed at the proxy level, not just WebFetch
+Seventh grinder run in a row confirms this, and this run adds a new data
+point: the "try curl from Bash instead of WebFetch" workaround was tested
+and it does NOT work either. `curl -A '<browser UA>' https://tabelog.com/.../dtlmenu/`
+returns `000`/connection failure; the verbose form shows why —
+`$HTTPS_PROXY/__agentproxy/status` reports `"gateway answered 403 to CONNECT
+(policy denial or upstream failure)"` for `tabelog.com:443`. This is this
+session's own agent-proxy CONNECT policy denying the domain, not a
+WebFetch-tool-specific bug and not something curl, or any other outbound
+tool, can route around. **Do not keep proposing "try curl instead" as a
+fix — it was tried and it is blocked at the same layer.** WebSearch still
+works (snippet results only, no page fetch — not a substitute; writing menu
+items from a snippet violates the fabrication rule). Greg was already
+push-notified on run 3 (2026-08-27 16:28Z); the symptom (total egress block)
+is unchanged, only the diagnosis got more precise this run, so no repeat
+notification — see the standing ask below.
 
 **Exact Tokyo menu state, 2026-08-28 (computed from data, not agent-status.mjs):**
 584 visible Tokyo records, 133 with an inline menu (22.8%), gap 451.
@@ -24,7 +29,22 @@ tokyo_tokutaro, tokyo_ramen_kamo_to_negi_shibu) or s13 (2 records:
 tokyo_haishop_cafe_shibuya_scr, tokyo_shinjuku_yataien) — tied for fewest
 remaining — then work down the missing-count list before starting s14.**
 
-## This run (2026-08-28, 04:2x UTC): Step 1 only, Step 2 skipped per standing rule
+## This run (2026-08-28, 06:0x UTC): Step 1 only, Step 2 skipped — curl workaround tested, also blocked
+Step 1 fully idempotent again: all 14 verdict files re-validated clean, merge
+--dry/--apply found 3 more leftover accumulated ⚠ soy-meat banner copies
+(2 tokyo, 1 nagoya) which the merge path stripped and the rebuild's own
+flagging pass re-added as single fresh copies — net diff vs HEAD was zero,
+nothing to commit. Also ran a full-repo scan for any duplicate bracketed
+banner (`[Held at...]`, `[Owner review...]`, etc.) across every data file and
+menu item note — 0 found — and grepped the 4 previously-fixed scripts plus
+`flag-vegan-contradictions.mjs` for a 5th unguarded prepend; all guarded or
+self-limiting via a status-transition guard. `npm test` 24/24, `lint-data.mjs`
+108/0, top-tier GF 39/39 gated — baselines held. Step 2: tried the curl
+workaround from this run's updated instructions — see READ THIS FIRST above,
+it is blocked at the same proxy-policy layer as WebFetch. Exact Tokyo state
+unchanged (see counts above, same shard breakdown).
+
+## Prior run (2026-08-28, 04:2x UTC): Step 1 only, Step 2 skipped per standing rule
 Step 1 fully idempotent this time: all 14 verdict files (tokyo_s0-s13)
 re-validated clean (valid JSON, ids ⊆ shard ids, required item fields
 present). `merge-menus.mjs --dry` then `--apply` found 0 new Tokyo menus
