@@ -68339,5 +68339,119 @@
     "dish_key": "campagne_loaf"
    }
   ]
+ },
+ "tokyo_ramen_kamo_to_negi_shibu": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.kamotonegi.com/",
+   "https://www.kamotonegi.com/en/shoprisuto/shibuya/",
+   "https://tabelog.com/en/tokyo/A1303/A130301/13308971/dtlmenu/"
+  ],
+  "price_note": "Prices not published. The chain's own site names its dishes but lists no prices, its Shibuya branch page carries no menu, and the Tabelog menu tab is empty (\"Set menu (0)\"). Tabelog puts a visit in the JPY 1,000–1,999 band.",
+  "last_checked": "2026-08-28",
+  "items": [
+   {
+    "ja": "鴨らーめん",
+    "romaji": "kamo rāmen",
+    "en": "Duck ramen — the house bowl, built on a duck-and-negi broth",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "NOT gluten-free, on the shop's own description twice over. The noodles are 「国産全粒粉と小麦をブレンドした」 — a domestic wholemeal and wheat blend. The tare is built on 濃口生醬油, 淡口醤油 and 再仕込み醤油, all soy sauces, which are wheat-brewed by default in Japan. Worth knowing for a different reason: the DASHI itself is 「鴨・葱・水」のみ — duck, spring onion and water only — so the broth base carries no soy, and it is the tare and noodles that rule it out. Duck makes it non-vegan regardless.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "飲める親子丼",
+    "romaji": "nomeru oyakodon",
+    "en": "\"Drinkable\" oyakodon — chicken and egg over rice, the egg set for only ten seconds so it stays liquid",
+    "price": "",
+    "section": "丼 Donburi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop states 「火入れは10秒」 for this dish. Chicken and egg rule out vegan. GF is \"ask\" and leans no: oyakodon is simmered in a soy-and-mirin broth as standard, and this kitchen's documented tare is three kinds of soy sauce, but the shop does not publish this dish's seasoning separately.",
+    "dish_key": "oyakodon"
+   }
+  ]
+ },
+ "tokyo_tokutaro": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.tokyo-np.co.jp/article/410726",
+   "https://allabout.co.jp/gm/gc/445384/",
+   "https://tabelog.com/en/tokyo/A1311/A131102/13008704/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change. The shop's own site (tokutarou.shop) returns 403 to any non-browser request and Tabelog carries no menu listing, so prices are from a June 2025 Tokyo Shimbun feature; the 2014 All About piece quotes an older 135 yen for the same item.",
+  "last_checked": "2026-08-28",
+  "items": [
+   {
+    "ja": "きんつば",
+    "romaji": "kintsuba",
+    "en": "Kintsuba — simmered Hokkaido azuki set with agar, cut into a square, coated in a thin batter and griddled on all six faces. The shop's signature; reportedly ~1,000 sold a day.",
+    "price": "¥160",
+    "section": "和菓子 Wagashi",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "NOT gluten-free: the coating batter is 小麦粉 (wheat flour), stated outright in the All About ingredient list (小豆・寒天・小麦粉・塩). Vegan is \"ask\" rather than yes — the bean paste is finished with 水飴, and Japanese 水飴 is sometimes 麦芽水飴 (barley malt), which would also be a second gluten route; no allergen statement is published either way.",
+    "dish_key": "kintsuba"
+   },
+   {
+    "ja": "豆大福",
+    "romaji": "mame daifuku",
+    "en": "Bean daifuku — glutinous rice cake with whole beans and azuki paste",
+    "price": "¥210",
+    "section": "和菓子 Wagashi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Daifuku is glutinous RICE, not wheat, so the dish itself is plausibly gluten-free — but this is a small shop whose signature product is coated in wheat flour daily, and no allergen or separation statement is published. Ask before assuming.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "バターどら焼き",
+    "romaji": "batā dorayaki",
+    "en": "Butter dorayaki — azuki and butter between two pancakes",
+    "price": "¥270",
+    "section": "和菓子 Wagashi",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dorayaki pancakes are a wheat-flour batter, and this version adds butter, so it fails both diets on its own terms.",
+    "dish_key": "dorayaki"
+   },
+   {
+    "ja": "お赤飯",
+    "romaji": "osekihan",
+    "en": "Sekihan — glutinous rice steamed with azuki, sold by weight",
+    "price": "",
+    "section": "和菓子 Wagashi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named as a product in the 2025 feature with no price given. Sekihan is rice and beans, but seasoning is not documented and sekihan is frequently salted with gomashio; confirm in person.",
+    "dish_key": "sekihan"
+   },
+   {
+    "ja": "水羊羹",
+    "romaji": "mizu yōkan",
+    "en": "Chilled soft azuki jelly set with agar (seasonal)",
+    "price": "",
+    "section": "和菓子 Wagashi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Listed as a product in the 2014 All About piece with no price and no ingredient breakdown. Yōkan is normally azuki, sugar and agar — plant-only and wheat-free — but that is the general recipe, not this shop's stated one.",
+    "dish_key": "yokan"
+   },
+   {
+    "ja": "葛ざくら",
+    "romaji": "kuzu zakura",
+    "en": "Kuzu-starch dumpling around azuki paste, wrapped in a salted cherry leaf (seasonal)",
+    "price": "",
+    "section": "和菓子 Wagashi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Listed in the 2014 All About piece with no price. Kuzu is a wheat-free starch, but commercial kuzu is often cut with potato or sweet-potato starch and this shop publishes no ingredient list.",
+    "dish_key": "kuzumochi"
+   }
+  ]
  }
 }
