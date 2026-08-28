@@ -1,15 +1,41 @@
-# Resume here — updated 2026-08-27, grinder run (4th consecutive blocked run)
+# Resume here — updated 2026-08-28, grinder run (5th consecutive blocked run)
 
 ## READ THIS FIRST — WebFetch is STILL network-blocked in this environment
-Fourth grinder run in a row confirms this. Retested this run against TWO
-throwaway URLs (en.wikipedia.org/wiki/Tokyo, and tabelog.com itself) — same
-`EGRESS_BLOCKED` error both times, identical to the prior three runs. This is
-the session's network egress policy, not a timeout or a per-site block.
-WebSearch still works (snippet results only, no page fetch). Greg was already
-push-notified on run 3 (16:28Z) and nothing has changed since, so this run did
-NOT send a duplicate notification — do not keep re-testing this every 4 hours
-without a human fixing the underlying policy, and do not re-notify every run
-for the same unresolved issue; only notify again if the symptom changes.
+Fifth grinder run in a row confirms this. Retested this run against the same
+two throwaway URLs (en.wikipedia.org/wiki/Tokyo, and tabelog.com itself) —
+same `EGRESS_BLOCKED` error both times, identical to all four prior runs.
+This is the session's network egress policy, not a timeout or a per-site
+block. WebSearch still works (snippet results only, no page fetch). Greg was
+already push-notified on run 3 (2026-08-27 16:28Z) and the symptom is
+unchanged, so this run again did NOT send a duplicate notification — do not
+keep re-testing this every 4 hours without a human fixing the underlying
+policy, and do not re-notify every run for the same unresolved issue; only
+notify again if the symptom changes.
+
+**Exact Tokyo menu state, 2026-08-28 (computed from data, not agent-status.mjs):**
+584 visible Tokyo records, 133 with an inline menu (22.8%), gap 451.
+Started shards (s0-s13, s1 complete) are missing 84 records total:
+s0:7 s2:5 s3:7 s4:3 s5:7 s6:6 s7:7 s8:8 s9:12 s10:13 s11:5 s12:2 s13:2.
+Unstarted shards (s14-s38, 25 shards) are missing 365 records (15/shard for
+s14-s28, 14/shard for s29-s38). 84+365=449 ≈ the 451 gap (small residual
+from hidden/dedup edge cases, not worth chasing).
+**Next dispatch once WebFetch is unblocked: finish s12 (2 records:
+tokyo_tokutaro, tokyo_ramen_kamo_to_negi_shibu) or s13 (2 records:
+tokyo_haishop_cafe_shibuya_scr, tokyo_shinjuku_yataien) — tied for fewest
+remaining — then work down the missing-count list before starting s14.**
+
+## This run (2026-08-28, 00:2x UTC): Step 1 only, Step 2 skipped per standing rule
+`merge-menus.mjs --apply` found 3 more leftover ⚠ soy-meat banner duplicates
+the prior dedupe passes missed (2 in `tokyo_menus.json`, 1 in
+`nagoya_menus.json`) — same accumulated-banner bug class as the incidents
+below, caught and fixed by the existing dedupe logic in the merge path (no
+new script needed this time). No new Tokyo menu records merged — all 14
+verdict files (tokyo_s0-s13) re-validated clean (valid JSON, ids ⊆ shard ids,
+items carry required fields) and are already fully merged into
+`tokyo_menus.json`. Rebuilt, verified `npm test` 24/24, `lint-data.mjs` 108
+warnings/0 errors, top-tier GF 39/39 gated. Committed `008a0b5`, pushed clean.
+Step 2 research skipped: WebFetch retested (see above), still
+`EGRESS_BLOCKED` on both control URLs.
 
 **Do not write menu items from WebSearch snippets alone.** A snippet is a
 search engine's summary, not a page you read — writing items from it violates
