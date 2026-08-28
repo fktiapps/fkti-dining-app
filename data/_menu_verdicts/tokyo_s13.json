@@ -1199,16 +1199,61 @@
   ]
  },
  "tokyo_haishop_cafe_shibuya_scr": {
-  "verified": "provisional",
-  "confidence": "high",
+  "verified": "partial",
+  "confidence": "medium",
   "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13276432/dtlmenu/",
    "https://haishopjapan.com/community-design/shibuyacafe/",
-   "https://haishopjapan.com/",
-   "https://s.tabelog.com/tokyo/A1303/A130301/13276432/dtlmenu/"
+   "https://haishopjapan.com/"
   ],
-  "price_note": "NO MENU RECORDED — THIS SHOP IS PERMANENTLY CLOSED. NEEDS A HUMAN LOOK: the record should be flagged closed, not menu-researched. The operator (Relection Design Co., Ltd.) says so itself, in the past tense with exact dates, on its own site: 「渋谷の街をカラフルに彩る サステナブルカフェ『haishop cafe』2022.09.17〜2026.01.09」 — 'the cafe we were allowed to run for about three years at Shibuya Scramble Square', closed 9 January 2026. Independently corroborated by Tabelog, whose page title for this listing now reads 【閉店】haishop cafe 渋谷スクランブルスクエア店. The shop's website field on our record (haishopjapan.com/pages/shop) 404s; haishopjapan.com is now the parent company's sustainability-project blog and carries no menu page at all. For the record of what it was: the operator states roughly 80% of the food and drink was vegan, with own-label vegan ice cream and seasonal fruit-and-vegetable smoothies, and the stale Tabelog registration (更新日 2025/06/01) lists four ヴィーガンアイスクリーム flavours at ¥580 (濃厚ショコラ / ミックスベリー / ドラゴンフルーツ / バニラココナッツ). Those are NOT written as items here because nobody can order them — publishing a menu for a closed shop would send a traveller to the 7th floor of Scramble Square for nothing.",
-  "last_checked": "2026-08-25",
-  "items": []
+  "price_note": "Prices approximate — may change. ⚠ THIS BRANCH IS CLOSED: Tabelog lists it as 閉店, and the operator's own case-study page writes about the cafe in the past tense. Menu recorded for the record only. Tabelog's database claims 4 food and 16 drink entries but renders only the ice-cream section, so what is below is the visible part, not the whole menu.",
+  "last_checked": "2026-08-28",
+  "items": [
+   {
+    "ja": "濃厚ショコラ",
+    "romaji": "nōkō shokora",
+    "en": "Rich chocolate vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The operator labels the range VEGAN ICECREAM and states the bases are soy milk and almond milk, so vegan rests on its own claim. GF is \"ask\", not safe: no allergen statement is published, and chocolate is a common carrier of barley malt — which Japan's statutory allergen labelling does not cover.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "ミックスベリー",
+    "romaji": "mikkusu berī",
+    "en": "Mixed berry vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Soy- or almond-milk base per the operator. No allergen statement, so GF unconfirmed.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "ドラゴンフルーツ",
+    "romaji": "doragon furūtsu",
+    "en": "Dragon fruit vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Soy- or almond-milk base per the operator. No allergen statement, so GF unconfirmed.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "バニラココナッツ",
+    "romaji": "banira kokonattsu",
+    "en": "Vanilla coconut vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Soy- or almond-milk base per the operator. No allergen statement, so GF unconfirmed.",
+    "dish_key": "ice_cream"
+   }
+  ]
  },
  "tokyo_awkitchen_figlia_shibuya": {
   "verified": "authoritative",
@@ -8869,5 +8914,16 @@
     "dish_key": "campagne_loaf"
    }
   ]
+ },
+ "tokyo_shinjuku_yataien": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1304/A130401/13275122/dtlmenu/",
+   "https://www.hamakura-style.com/works/yataien/"
+  ],
+  "price_note": "No menu found. Tabelog's menu tab states outright that no menu photos have been edited and shows no items; the only other link on the record (hamakura-style.com) is the interior contractor's portfolio page for the fit-out, not the restaurant's own site. Tabelog puts a visit in the JPY 2,000–2,999 band. This is an honest empty, not an unfinished record.",
+  "last_checked": "2026-08-28",
+  "items": []
  }
 }

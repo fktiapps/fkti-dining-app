@@ -68453,5 +68453,62 @@
     "dish_key": "kuzumochi"
    }
   ]
+ },
+ "tokyo_haishop_cafe_shibuya_scr": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13276432/dtlmenu/",
+   "https://haishopjapan.com/community-design/shibuyacafe/",
+   "https://haishopjapan.com/"
+  ],
+  "price_note": "Prices approximate — may change. ⚠ THIS BRANCH IS CLOSED: Tabelog lists it as 閉店, and the operator's own case-study page writes about the cafe in the past tense. Menu recorded for the record only. Tabelog's database claims 4 food and 16 drink entries but renders only the ice-cream section, so what is below is the visible part, not the whole menu.",
+  "last_checked": "2026-08-28",
+  "items": [
+   {
+    "ja": "濃厚ショコラ",
+    "romaji": "nōkō shokora",
+    "en": "Rich chocolate vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The operator labels the range VEGAN ICECREAM and states the bases are soy milk and almond milk, so vegan rests on its own claim. GF is \"ask\", not safe: no allergen statement is published, and chocolate is a common carrier of barley malt — which Japan's statutory allergen labelling does not cover.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "ミックスベリー",
+    "romaji": "mikkusu berī",
+    "en": "Mixed berry vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Soy- or almond-milk base per the operator. No allergen statement, so GF unconfirmed.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "ドラゴンフルーツ",
+    "romaji": "doragon furūtsu",
+    "en": "Dragon fruit vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Soy- or almond-milk base per the operator. No allergen statement, so GF unconfirmed.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "バニラココナッツ",
+    "romaji": "banira kokonattsu",
+    "en": "Vanilla coconut vegan ice cream",
+    "price": "¥580",
+    "section": "VEGAN ICECREAM",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Soy- or almond-milk base per the operator. No allergen statement, so GF unconfirmed.",
+    "dish_key": "ice_cream"
+   }
+  ]
  }
 }
