@@ -1,23 +1,22 @@
-# Resume here — updated 2026-08-29, grinder run (11th consecutive blocked run for THIS session)
+# Resume here — updated 2026-08-29, grinder run (12th consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-08-29 ~08:0x UTC (computed from data, not agent-status.mjs)
-583 visible Tokyo records, 146 with an inline menu (25.0%), gap 437. Since the last
-grinder entry, interactive sessions (author DCD, working egress) finished shards **s6
-and s11 in full** (140 -> 146 inline; s6 legitimately has 3 honest-empty records —
-researched, no findable menu — which is why its "missing menu" count isn't 0).
+## Exact Tokyo menu state, 2026-08-29 ~16:4x UTC (computed from data, not agent-status.mjs)
+583 visible Tokyo records, 150 with an inline menu (25.7%), gap 433. Since the last
+grinder entry, an interactive session (working egress, per-record commits e.g. `a7f77c6`,
+`93dbba0`) advanced shard **s0 from 8/15 to 13/15 researched** (146 -> 150 inline).
 
 **Verdict-file research status (all 15 ids present in the shard's verdict file = fully
 researched, whether or not each one merged a menu):**
 COMPLETE (15/15 researched): s1, s2, s4, s6, s11, s12, s13 — 7 shards.
-PARTIAL: s0 8/15 (7 left), s3 8/15 (7 left), s5 8/15 (7 left), s7 8/15 (7 left),
-s8 7/15 (8 left), s9 3/15 (12 left), s10 2/15 (13 left) — 61 records left across
-started-but-partial shards. Unstarted shards (s14-s38, 25 shards) missing 359 records
-(gap-based estimate, not yet individually verified against verdict files).
+PARTIAL: s0 13/15 (2 left — fewest by far now), s3 8/15 (7 left), s5 8/15 (7 left),
+s7 8/15 (7 left), s8 7/15 (8 left), s9 3/15 (12 left), s10 2/15 (13 left) — 56 records
+left across started-but-partial shards. Unstarted shards (s14-s38, 25 shards) missing
+~377 records (gap-based estimate, not yet individually verified against verdict files).
 
 **Next dispatch once egress is unblocked (this session's own probe is still `000`/proxy-403
-CONNECT rejection, 11th consecutive run): s0, s3, s5 and s7 are tied for fewest
-remaining (7 each) — take s0 (lowest-numbered of the tie) — then s8 (8) — then s9 (12) /
-s10 (13) — only start s14 once s0-s13 are all fully researched.**
+CONNECT rejection, 12th consecutive run): s0 (2 left) is now far ahead of the pack —
+finish it first — then s3/s5/s7 (7 each, take s3 as lowest-numbered) — then s8 (8) —
+then s9 (12) / s10 (13) — only start s14 once s0-s13 are all fully researched.**
 
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
