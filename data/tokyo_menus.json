@@ -71960,5 +71960,229 @@
     "dish_key": "french_toast"
    }
   ]
+ },
+ "tokyo_kanpai_terrace": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.sequencehotels.com/suidobashi/eng/",
+   "https://www.sequencehotels.com/suidobashi/pdf/SQS_lunch.pdf",
+   "https://www.sequencehotels.com/suidobashi/pdf/SQS_cafe.pdf",
+   "https://www.sequencehotels.com/suidobashi/pdf/SQS_bar.pdf"
+  ],
+  "price_note": "Prices approximate — may change. ⚠ WORTH KNOWING: this restaurant PUBLISHES PER-DISH ALLERGEN LABELS, e.g. 「( Egg, Milk, Wheat / 卵、乳、小麦 )」 under each item. That is rare in Tokyo and makes it one of the few places in this dataset where wheat is declared rather than inferred. Menus are PDFs at the URLs above. ONLY THE DESSERT AND FRENCH-TOAST SECTIONS ARE RECORDED HERE: the bar/dinner PDF interleaves its columns when the text is extracted, so item, price and allergen cannot be paired reliably — and mis-pairing an allergen label on a coeliac app is worse than omitting it. Those items are left out deliberately, not overlooked. Anyone with the PDF open in a reader can pair them by eye.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "フレンチトースト ベリー＆ベリー",
+    "romaji": "furenchi tōsuto berī and berī",
+    "en": "French Toast with Double Berry",
+    "price": "¥1,580",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop's own label reads ( Egg, Milk, Wheat ). Half portion ¥880.",
+    "dish_key": "french_toast"
+   },
+   {
+    "ja": "フレンチトースト メープル＆チーズ",
+    "romaji": "furenchi tōsuto mēpuru and chīzu",
+    "en": "French Toast with Maple and Cheese",
+    "price": "¥1,680",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk, Wheat ). Half portion ¥930.",
+    "dish_key": "french_toast"
+   },
+   {
+    "ja": "フレンチトースト チョコバナナ",
+    "romaji": "furenchi tōsuto choko banana",
+    "en": "French Toast with Chocolate Banana",
+    "price": "¥1,580",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk, Wheat ). Half portion ¥880.",
+    "dish_key": "french_toast"
+   },
+   {
+    "ja": "フレンチトースト キャラメルナッツ",
+    "romaji": "furenchi tōsuto kyarameru nattsu",
+    "en": "French Toast with Caramel Nut",
+    "price": "¥1,580",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk, Wheat, Walnut ) — the only item carrying a nut declaration. Half portion ¥880.",
+    "dish_key": "french_toast"
+   },
+   {
+    "ja": "パンナコッタ",
+    "romaji": "panna kotta",
+    "en": "Panna Cotta",
+    "price": "¥680",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "The best coeliac prospect on this board, and on the restaurant's own declaration rather than a guess: its allergen label reads ( Milk / 乳 ) ALONE — no wheat, no egg. Panna cotta is cream, sugar and gelatin, so there is no plausible barley route either. Read from the hotel's own allergen-labelled menu. Two limits on any such label in Japan: it covers the statutory allergens, which include 小麦 (wheat) but NOT 大麦 (barley), and it says nothing about shared equipment. Milk and gelatin rule out vegan.",
+    "dish_key": "panna_cotta"
+   },
+   {
+    "ja": "クレームブリュレ",
+    "romaji": "kurēmu buryure",
+    "en": "Creamy Crème Brûlée",
+    "price": "¥780",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk ) — no wheat declared, which matters because crème brûlée is often served with a biscuit that would carry some. Read from the hotel's own allergen-labelled menu. Two limits on any such label in Japan: it covers the statutory allergens, which include 小麦 (wheat) but NOT 大麦 (barley), and it says nothing about shared equipment. Egg and dairy rule out vegan.",
+    "dish_key": "creme_brulee"
+   },
+   {
+    "ja": "エスプレッソアフォガート",
+    "romaji": "esupuresso afogāto",
+    "en": "Espresso Affogato",
+    "price": "¥680",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk, Wheat ). Worth noticing: affogato is nominally just gelato under espresso, so the WHEAT declaration means something else is in the glass — a biscuit or a cake base. Exactly the kind of thing a label catches and an assumption does not.",
+    "dish_key": "affogato"
+   },
+   {
+    "ja": "ガトーショコラ",
+    "romaji": "gatō shokora",
+    "en": "Chocolate Gateau",
+    "price": "¥780",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk, Wheat ).",
+    "dish_key": "gateau"
+   },
+   {
+    "ja": "デザート盛り合わせ",
+    "romaji": "dezāto moriawase",
+    "en": "Assorted Desserts",
+    "price": "¥1,880",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk, Wheat ).",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "ジェラート 2種",
+    "romaji": "jerāto 2-shu",
+    "en": "Assorted Gelato, 2 flavours",
+    "price": "¥580",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Labelled ( Egg, Milk ) with no wheat — but the flavours are not named and rotate, and gelato flavours like cookie or malt would change the answer. ¥780 for the larger size. Read from the hotel's own allergen-labelled menu. Two limits on any such label in Japan: it covers the statutory allergens, which include 小麦 (wheat) but NOT 大麦 (barley), and it says nothing about shared equipment.",
+    "dish_key": "gelato"
+   }
+  ]
+ },
+ "tokyo_raamen_manrai": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://tabelog.com/tokyo/A1304/A130401/13000808/dtlmenu/",
+   "https://tabelog.com/en/tokyo/A1304/A130401/13000808/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change. Read from the shop's Tabelog menu; Japanese names verbatim from the Japanese page.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "らあめん",
+    "romaji": "rāmen",
+    "en": "Ramen",
+    "price": "¥1,100",
+    "section": "らあめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen and zaru noodles here are wheat. Shoyu-based broth.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "ちゃーしゅーらあめん",
+    "romaji": "chāshū rāmen",
+    "en": "Chashu ramen — the shop is known for a heaped portion of pork",
+    "price": "¥1,900",
+    "section": "らあめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen and zaru noodles here are wheat. Chashu is braised in soy sauce.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "ざる",
+    "romaji": "zaru",
+    "en": "Zaru — chilled noodles with dipping sauce",
+    "price": "¥1,150",
+    "section": "ざる Zaru",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen and zaru noodles here are wheat. Note the name: at a らぁめん shop ざる means chilled RAMEN noodles, not the buckwheat soba a zaru usually implies — so it is wheat either way, and the tsuyu is a soy-based dipping sauce.",
+    "dish_key": "zaru"
+   },
+   {
+    "ja": "納豆ざる",
+    "romaji": "nattō zaru",
+    "en": "Natto zaru — chilled noodles with fermented soybeans",
+    "price": "¥1,300",
+    "section": "ざる Zaru",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen and zaru noodles here are wheat. Natto itself is soybean and normally plant-only, but it ships with a soy-sauce タレ sachet, and the noodles rule the dish out regardless.",
+    "dish_key": "natto"
+   },
+   {
+    "ja": "メンマざる",
+    "romaji": "menma zaru",
+    "en": "Menma zaru — chilled noodles with fermented bamboo shoot",
+    "price": "¥1,400",
+    "section": "ざる Zaru",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen and zaru noodles here are wheat. Menma seasoning is normally soy.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "【1番人気】チャーシューざる",
+    "romaji": "chāshū zaru",
+    "en": "Chashu zaru — the shop's most popular dish",
+    "price": "¥1,600",
+    "section": "ざる Zaru",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen and zaru noodles here are wheat. Soy-braised pork.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "大盛",
+    "romaji": "ōmori",
+    "en": "Large portion",
+    "price": "+¥400",
+    "section": "トッピング Extras",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Surcharge on a wheat-noodle dish.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "バター",
+    "romaji": "batā",
+    "en": "Butter",
+    "price": "+¥200",
+    "section": "トッピング Extras",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Butter is dairy. Wheat-free in itself, but it goes into a wheat bowl.",
+    "dish_key": "topping"
+   }
+  ]
  }
 }
