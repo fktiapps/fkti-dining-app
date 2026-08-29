@@ -5773,5 +5773,83 @@
   "price_note": "No menu found. Tabelog shows zero entries across all four of its menu sections (\"Set menu (0)\", \"Food (0)\", \"Drink (0)\", \"Lunch (0)\") and the record carries no first-party site; a search for one turned up only round-up articles, none of which names this shop. ⚠ THE VEGAN CLAIM ON THIS RECORD IS STILL UNVERIFIED. The record reads vegan_status \"options\" with ZERO safety findings, and its own vegan_detail is candid that this comes from the shop's NAME and category tag rather than from a menu anyone has seen. Nothing found this pass changes that, and one detail cuts against it: Tabelog files the shop under 洋食 (yoshoku), not under any vegetarian or vegan category. That is not evidence the concept is wrong — plenty of plant-based shops are miscategorised — but it is not corroboration either. A shop whose whole value to this app is its plant-based concept deserves a first-party check before anyone plans a meal around it.",
   "last_checked": "2026-08-29",
   "items": []
+ },
+ "tokyo_tsukemen_zuppa_suidobash": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://vegewel.com/ja/restaurant/2101",
+   "https://veg-cat.com/zuppa/",
+   "https://tabelog.com/en/tokyo/A1310/A131003/13276536/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change. Tabelog carries no menu at all (0 items across every section), so the board comes from Vegewel, cross-checked against a first-hand visit write-up rather than taken on Vegewel alone — this project does not rest a vegan claim on a single directory. The two disagree on price: Vegewel lists the soy-meat miso ramen at ¥900, the visit (Dec 2022) records ¥880+¥100. Vegewel's figures are used as the more recent. The shop also states 五葷抜き (allium-free) is available for oriental-vegan diners.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "つけ麺",
+    "romaji": "tsukemen",
+    "en": "Tsukemen — dipping noodles, the house dish",
+    "price": "¥980",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "NOT gluten-free: tsukemen, ramen and tantanmen noodles are wheat. Being vegan changes nothing about that — this shop is a find for a vegan and a dead end for a coeliac, and a coeliac vegan cannot eat the noodle dishes at all. Vegan ON REQUEST, not by default: the shop's own line, reported first-hand, is 「つけ麺・ラーメンはヴィーガン対応可能です」 — buy the ticket and tell staff you want it vegan. Do not assume the default build is plant-based. The visiting writer reports the soup as 「No meat nor fish used to make the soup. Vegetable only.」 — a first-hand account of the broth, which is the claim that matters most here, since ramen broth is where animal stock normally hides.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "豆乳坦々麺",
+    "romaji": "tōnyū tantanmen",
+    "en": "Soy-milk tantanmen",
+    "price": "¥900",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "NOT gluten-free: tsukemen, ramen and tantanmen noodles are wheat. Being vegan changes nothing about that — this shop is a find for a vegan and a dead end for a coeliac, and a coeliac vegan cannot eat the noodle dishes at all. Vegan ON REQUEST, not by default: the shop's own line, reported first-hand, is 「つけ麺・ラーメンはヴィーガン対応可能です」 — buy the ticket and tell staff you want it vegan. Do not assume the default build is plant-based. Soy milk in place of the usual dairy or meat stock; sesame paste and chili are plant-based, but the tare is not documented.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "大豆ミート味噌ラーメン",
+    "romaji": "daizu mīto miso rāmen",
+    "en": "Miso ramen with soy meat",
+    "price": "¥900",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "NOT gluten-free: tsukemen, ramen and tantanmen noodles are wheat. Being vegan changes nothing about that — this shop is a find for a vegan and a dead end for a coeliac, and a coeliac vegan cannot eat the noodle dishes at all. Vegan ON REQUEST, not by default: the shop's own line, reported first-hand, is 「つけ麺・ラーメンはヴィーガン対応可能です」 — buy the ticket and tell staff you want it vegan. Do not assume the default build is plant-based. A second gluten route beyond the noodles: miso is frequently 麦味噌, barley miso, which no allergen table in Japan will disclose.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "大豆ミート醤油ラーメン",
+    "romaji": "daizu mīto shōyu rāmen",
+    "en": "Soy-sauce ramen with soy meat",
+    "price": "¥900",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "NOT gluten-free: tsukemen, ramen and tantanmen noodles are wheat. Being vegan changes nothing about that — this shop is a find for a vegan and a dead end for a coeliac, and a coeliac vegan cannot eat the noodle dishes at all. Vegan ON REQUEST, not by default: the shop's own line, reported first-hand, is 「つけ麺・ラーメンはヴィーガン対応可能です」 — buy the ticket and tell staff you want it vegan. Do not assume the default build is plant-based. 醤油 IS the soy sauce, wheat-brewed by default — so this bowl is wheat in the noodles and again in the tare.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "大豆ミートウフマヨ丼",
+    "romaji": "daizu mīto ufu mayo don",
+    "en": "Soy-meat \"oeuf mayo\" rice bowl",
+    "price": "¥350",
+    "section": "丼 Donburi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The one dish here that is not built on wheat noodles, so the only one worth a coeliac asking about — though the sauce is undocumented and a soy-meat bowl normally arrives with a soy-based seasoning. On vegan: ウフマヨ is the French œuf mayonnaise, literally EGG mayo. In a plant-based kitchen this is presumably an imitation, but the name is not proof and no ingredient list was found, so it stays \"ask\" rather than being assumed either way.",
+    "dish_key": "donburi"
+   }
+  ]
+ },
+ "tokyo_india_fujiko": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1310/A131003/13264947/dtlmenu/"
+  ],
+  "price_note": "No menu found. Tabelog states no menu photos have been edited, and the record's only other link is an Instagram account. Lunch only, Tue–Fri 12:00–14:00, 19 seats, cash only, reservations by phone or email. Price band ¥1,000–1,999. ⚠ WORTH A LATER ATTEMPT, for the same reason as アーンドラ・ダイニング: South Indian cooking is one of the few cuisines where a coeliac has genuine options, because dosa, idli and vada are fermented rice-and-lentil batters rather than wheat — while the North Indian breads a Japanese \"Indian curry\" shop usually serves are not. Which of the two this kitchen actually is decides whether the record matters, and nothing readable says. Not inferred here.",
+  "last_checked": "2026-08-29",
+  "items": []
  }
 }
