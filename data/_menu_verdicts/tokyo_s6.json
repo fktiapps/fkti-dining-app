@@ -5706,5 +5706,72 @@
     "dish_key": "omakase_10"
    }
   ]
+ },
+ "tokyo_bazoku_asakusa_chugoku_t": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13003665/dtlmenu/",
+   "https://tabelog.com/tokyo/A1311/A131102/13003665/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change. The shop publishes exactly ONE item to Tabelog and has no site of its own, so this is a fraction of a board that certainly runs longer. Recorded as partial rather than padded out from the shop's category tags.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "ラーメン",
+    "romaji": "rāmen",
+    "en": "Ramen — the shop's hand-pulled noodles, described by the shop as chewy and handmade",
+    "price": "¥700",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "手打拉麺 means hand-pulled wheat noodles — the pulling is what develops the gluten, so the technique the shop is named for is the reason it is not gluten-free. Chinese-style ramen broth is normally pork- and soy-based.",
+    "dish_key": "ramen"
+   }
+  ]
+ },
+ "tokyo_shokudo_naganoya": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1304/A130401/13089386/dtlmenu/",
+   "https://tabelog.com/tokyo/A1304/A130401/13089386/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change. Only ONE item is published to Tabelog, though the listing carries 742 photos and the shop is categorised for teishoku, katsudon and curry — so the real board is much longer. Recorded as partial; the rest is not guessed at.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "カツカレー",
+    "romaji": "katsu karē",
+    "en": "Pork cutlet curry rice",
+    "price": "¥900",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat twice over, and both halves are easy to miss. The カツ is crumbed in パン粉 (breadcrumb) and usually floured before the egg wash; and Japanese curry is built on a ROUX of wheat flour and fat, which is what separates it from the soup curry and Indian styles. Pork and egg rule out vegan.",
+    "dish_key": "katsu_curry"
+   }
+  ]
+ },
+ "tokyo_katsuraan_suidobashi": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1310/A131003/13073860/dtlmenu/",
+   "http://sobadokorokatsuraan-suidoubasiten.on.omisenomikata.jp/"
+  ],
+  "price_note": "No menu found. Tabelog states no menu photos have been edited; the shop's own omisenomikata page refuses HTTPS outright and returns an empty body over HTTP. Price band ¥1,000–1,999. ⚠ NOTE FOR A COELIAC: Tabelog categorises this shop under soba, UDON and katsudon together. Udon is wheat by definition and katsudon is crumbed in panko, so wheat is handled in this kitchen all day whatever the soba ratio turns out to be — and no ratio is published. A soba shop that also runs udon is not a promising place to ask about 十割.",
+  "last_checked": "2026-08-29",
+  "items": []
+ },
+ "tokyo_vege_fondue_shibuya": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1303/A130301/13171297/dtlmenu/"
+  ],
+  "price_note": "No menu found. Tabelog shows zero entries across all four of its menu sections (\"Set menu (0)\", \"Food (0)\", \"Drink (0)\", \"Lunch (0)\") and the record carries no first-party site; a search for one turned up only round-up articles, none of which names this shop. ⚠ THE VEGAN CLAIM ON THIS RECORD IS STILL UNVERIFIED. The record reads vegan_status \"options\" with ZERO safety findings, and its own vegan_detail is candid that this comes from the shop's NAME and category tag rather than from a menu anyone has seen. Nothing found this pass changes that, and one detail cuts against it: Tabelog files the shop under 洋食 (yoshoku), not under any vegetarian or vegan category. That is not evidence the concept is wrong — plenty of plant-based shops are miscategorised — but it is not corroboration either. A shop whose whole value to this app is its plant-based concept deserves a first-party check before anyone plans a meal around it.",
+  "last_checked": "2026-08-29",
+  "items": []
  }
 }
