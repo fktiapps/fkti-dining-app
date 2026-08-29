@@ -3609,5 +3609,216 @@
     "dish_key": "additional_sides"
    }
   ]
+ },
+ "tokyo_kuumba_du_falafel": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13102142/dtlmenu/",
+   "https://tabelog.com/en/tokyo/A1303/A130301/13102142/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change. Only TWO items are published to Tabelog, though the shop plainly serves more; recorded as partial rather than filled out from the cuisine tag. The shop lists its dishes in English, so the names below are as printed. The listing states 「お店のメニューはすべてヴィーガン（完全植物性）」 — the entire menu is vegan, completely plant-based.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "Falafel (half size)",
+    "romaji": "falafel (half size)",
+    "en": "Falafel, hummus and fresh greens in a pita",
+    "price": "¥780",
+    "section": "Food",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "A case where the famous dish and the thing it arrives in disagree. Falafel is ground chickpea and herbs, and hummus is chickpea and tahini — both naturally wheat-free. The PITA is wheat bread, so as served this is not gluten-free. Worth asking whether they will serve the falafel and hummus as a plate without the pita, because the filling itself is the safe part. Vegan is on the shop's own blanket statement that the whole menu is completely plant-based.",
+    "dish_key": "falafel"
+   },
+   {
+    "ja": "Lent Soup (Small)",
+    "romaji": "lentil soup (small)",
+    "en": "Lentil soup",
+    "price": "¥380",
+    "section": "Food",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Lentils are naturally wheat-free and this is the one published item with no bread in it, so it is the better prospect for a coeliac here — but no allergen statement is given, and Middle Eastern lentil soups are sometimes thickened with flour or built with barley. Vegan rests on the shop's all-plant-based claim.",
+    "dish_key": "soup"
+   }
+  ]
+ },
+ "tokyo_kushiage_katayama": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.kushiage-katayama.com/",
+   "https://tabelog.com/en/tokyo/A1311/A131102/13249354/dtlmenu/"
+  ],
+  "price_note": "Prices approximate — may change; tax included per the shop. Read from the restaurant's own site. Three further items (厚揚げ豆富, お茶漬け, バニラアイスクリーム) are listed there in a ¥300–550 band without individual prices, so they carry no price here rather than a guessed one. The shop states its coating uses パン粉 from Panya Pelican and fries in soybean oil.",
+  "last_checked": "2026-08-29",
+  "items": [
+   {
+    "ja": "10串コース",
+    "romaji": "10-kushi kōsu",
+    "en": "Ten-skewer course — appetiser, raw vegetables, palate cleanser, ten skewers and dessert; contents change with the day's ingredients",
+    "price": "¥5,000",
+    "section": "コース Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. A set course at a kushiage counter gives a coeliac no way to opt out.",
+    "dish_key": "kushiage"
+   },
+   {
+    "ja": "海老のしそ巻き",
+    "romaji": "ebi no shiso maki",
+    "en": "Prawn wrapped in shiso",
+    "price": "¥330",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil.",
+    "dish_key": "kushiage"
+   },
+   {
+    "ja": "天使の海老",
+    "romaji": "tenshi no ebi",
+    "en": "\"Angel\" prawn",
+    "price": "¥460",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil.",
+    "dish_key": "kushiage"
+   },
+   {
+    "ja": "煮穴子",
+    "romaji": "ni-anago",
+    "en": "Simmered conger eel",
+    "price": "¥460",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. Anago is simmered in a soy-and-mirin broth before crumbing — wheat twice.",
+    "dish_key": "anago"
+   },
+   {
+    "ja": "銀鱈の西京漬け",
+    "romaji": "gindara no saikyōzuke",
+    "en": "Black cod marinated in Saikyo miso",
+    "price": "¥460",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. The 西京味噌 marinade is a second route: miso is frequently 麦味噌, barley.",
+    "dish_key": "saikyozuke"
+   },
+   {
+    "ja": "九条ネギとあさり",
+    "romaji": "kujō negi to asari",
+    "en": "Kujo spring onion and clam",
+    "price": "¥350",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil.",
+    "dish_key": "kushiage"
+   },
+   {
+    "ja": "黒毛和牛サーロイン",
+    "romaji": "kuroge wagyū sāroin",
+    "en": "Kuroge wagyu sirloin",
+    "price": "¥530",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil.",
+    "dish_key": "kushiage"
+   },
+   {
+    "ja": "蜂蜜とカマンベールチーズ",
+    "romaji": "hachimitsu to kamanbēru chīzu",
+    "en": "Honey and Camembert",
+    "price": "¥530",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. Dairy and honey both rule out vegan.",
+    "dish_key": "cheese"
+   },
+   {
+    "ja": "うずらの卵",
+    "romaji": "uzura no tamago",
+    "en": "Quail egg",
+    "price": "¥240",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. Egg.",
+    "dish_key": "tamago"
+   },
+   {
+    "ja": "豚の角煮",
+    "romaji": "buta no kakuni",
+    "en": "Braised pork belly",
+    "price": "¥330",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. Kakuni is braised in soy sauce before crumbing.",
+    "dish_key": "kakuni"
+   },
+   {
+    "ja": "青森産にんにく",
+    "romaji": "aomori-san ninniku",
+    "en": "Aomori garlic",
+    "price": "¥300",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. Vegan is \"ask\" rather than no on the ingredient itself, but standard kushiage 衣 is flour, EGG and panko — the shop does not state its batter recipe, and the coating is the problem, not the filling.",
+    "dish_key": "kushiage"
+   },
+   {
+    "ja": "厚揚げ豆富",
+    "romaji": "atsuage tōfu",
+    "en": "Thick fried tofu",
+    "price": "",
+    "section": "串 À la carte skewers",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Listed by the shop in a ¥300–550 band without an individual price. Kushiage is crumbed and deep-fried: this shop names its パン粉 supplier as the bakery Panya Pelican, so the coating is unambiguously wheat bread. Every skewer on the board goes through the same batter and the same oil. Vegan is \"ask\" rather than no on the ingredient itself, but standard kushiage 衣 is flour, EGG and panko — the shop does not state its batter recipe, and the coating is the problem, not the filling.",
+    "dish_key": "tofu"
+   },
+   {
+    "ja": "お茶漬け",
+    "romaji": "ochazuke",
+    "en": "Rice in tea broth",
+    "price": "",
+    "section": "〆 To finish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Listed in the ¥300–550 band without an individual price. Not crumbed, so the panko does not apply — but ochazuke broth is normally dashi or めんつゆ, which is soy sauce and therefore wheat, and bonito dashi would also rule out vegan.",
+    "dish_key": "ochazuke"
+   },
+   {
+    "ja": "バニラアイスクリーム",
+    "romaji": "banira aisu kurīmu",
+    "en": "Vanilla ice cream",
+    "price": "",
+    "section": "デザート Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Listed in the ¥300–550 band without an individual price. Dairy. Ice cream itself is normally wheat-free but is served in a kitchen coating everything else in panko.",
+    "dish_key": "ice_cream"
+   }
+  ]
+ },
+ "tokyo_bistro_kojiya": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://bistro-kojiya.foodre.jp/",
+   "https://tabelog.com/en/tokyo/A1304/A130401/13168419/dtlmenu/"
+  ],
+  "price_note": "No menu found. The shop's own page advertises 月替わりのコース (monthly-changing courses) and names dishes in passing posts — 牛サガリ ロティ, 鯖のエスカベッシュ — but publishes no itemised menu or prices; full details sit behind a Retty reservation flow. A monthly-rotating French course is not something this dataset can hold accurately even if it were listed, so an empty record is the honest one. For what it is worth to a coeliac: the two dishes named in passing are a beef roti and a mackerel escabeche, and escabeche is a vinegar marinade, but neither is a menu and neither is recorded as an item.",
+  "last_checked": "2026-08-29",
+  "items": []
  }
 }
