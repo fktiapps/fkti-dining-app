@@ -1,15 +1,23 @@
-# Resume here — updated 2026-08-29, grinder run (10th consecutive blocked run for THIS session)
+# Resume here — updated 2026-08-29, grinder run (11th consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-08-29 00:4x UTC (computed from data, not agent-status.mjs)
-583 visible Tokyo records, 140 with an inline menu (24.0%), gap 443. s1, s12, s13 are
-now effectively COMPLETE (s13 needs 1 more: tokyo_shinjuku_yataien). Started shards
-(s0-s13) missing 76 records total: s0:7 s2:4 s3:7 s4:1 s5:7 s6:6 s7:7 s8:8 s9:12 s10:13
-s11:3 s13:1 (s1 and s12 fully done, 0 missing). Unstarted shards (s14-s38, 25 shards)
-missing 359 records. 76+359=435 vs the 443 gap (small residual, not worth chasing).
+## Exact Tokyo menu state, 2026-08-29 ~08:0x UTC (computed from data, not agent-status.mjs)
+583 visible Tokyo records, 146 with an inline menu (25.0%), gap 437. Since the last
+grinder entry, interactive sessions (author DCD, working egress) finished shards **s6
+and s11 in full** (140 -> 146 inline; s6 legitimately has 3 honest-empty records —
+researched, no findable menu — which is why its "missing menu" count isn't 0).
+
+**Verdict-file research status (all 15 ids present in the shard's verdict file = fully
+researched, whether or not each one merged a menu):**
+COMPLETE (15/15 researched): s1, s2, s4, s6, s11, s12, s13 — 7 shards.
+PARTIAL: s0 8/15 (7 left), s3 8/15 (7 left), s5 8/15 (7 left), s7 8/15 (7 left),
+s8 7/15 (8 left), s9 3/15 (12 left), s10 2/15 (13 left) — 61 records left across
+started-but-partial shards. Unstarted shards (s14-s38, 25 shards) missing 359 records
+(gap-based estimate, not yet individually verified against verdict files).
+
 **Next dispatch once egress is unblocked (this session's own probe is still `000`/proxy-403
-CONNECT rejection): s4 (1 record: tokyo_ramen_kamo_to_negi_eato_) and s13 (1 record:
-tokyo_shinjuku_yataien) are tied for fewest remaining — then s11 (3 records) / s2 (4) —
-then work down the missing-count list before starting s14.**
+CONNECT rejection, 11th consecutive run): s0, s3, s5 and s7 are tied for fewest
+remaining (7 each) — take s0 (lowest-numbered of the tie) — then s8 (8) — then s9 (12) /
+s10 (13) — only start s14 once s0-s13 are all fully researched.**
 
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
