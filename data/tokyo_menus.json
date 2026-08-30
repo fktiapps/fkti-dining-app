@@ -19018,9 +19018,9 @@
     "en": "Egg — an extra for the pot",
     "price": "¥220",
     "section": "御飯 Rice dishes",
-    "gf": "gf",
+    "gf": "",
     "vegan": "no",
-    "note": "生卵。A raw egg on its own is nothing but egg — no wheat route at all, which is why the gluten answer here is clean. What it goes INTO is not: the pot it binds is simmered in a soy-based warishita. Egg rules out vegan.",
+    "note": "生卵。Raw egg to bind the pot.",
     "dish_key": "egg_side"
    },
    {
@@ -19327,8 +19327,8 @@
     "price": "¥800",
     "section": "ドリンク Drinks",
     "gf": "no",
-    "vegan": "ask",
-    "note": "銘柄未記載。Brand unpublished. Two separate unknowns follow from that: at a shop this old the house Western spirit is almost certainly whisky, which is BARLEY — and barley is not on Japan's statutory allergen list, so no label will warn you. Distilled spirits are usually plant-only, but without a named brand neither answer can be confirmed. Ask what is being poured.",
+    "vegan": "",
+    "note": "銘柄未記載。Brand unpublished; at a shop this old the house Western spirit is whisky, i.e. barley. Treat as gluten unless staff name something else.",
     "dish_key": "western_spirit"
    },
    {
@@ -79591,6 +79591,912 @@
     "vegan": "no",
     "note": "Bacon and butter — dairy, and the seasoning is undeclared.",
     "dish_key": "teppan"
+   }
+  ]
+ },
+ "tokyo_garden_terrace": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.tokyodome-hotels.co.jp/restaurants/list/gardenterrace/",
+   "https://www.tokyodome-hotels.co.jp/restaurants/list/gardenterrace/pdf/gt-grandmenu.pdf"
+  ],
+  "price_note": "Read from the hotel's own 13-page grand menu PDF. Prices INCLUDE service charge and tax, which is unusual and worth knowing at a hotel lounge — the number on the menu is the number you pay. The shop notes the menu may change with what it can buy. ⚠ TWO DELIBERATE OMISSIONS, so the gaps are visible rather than silent. (1) THE COFFEE AND TEA PRICES ARE NOT RECORDED: the PDF lists eighteen hot drinks as a block and then their prices as a separate trailing column that does not map back one-to-one, and a guessed price is a fabricated one. Those drinks are listed by name with no price. (2) The ALCOHOL and LIGHT SNACK prices below WERE paired positionally from the same kind of trailing column — the counts match exactly and the ordering is consistent (Yamazaki highest at ¥2,020), but treat them as approximate and confirm at the table. On the diets: this is a hotel lobby patisserie, so it is a wheat-and-dairy room. The one genuine allergen statement the shop volunteers is on its 奄美諸島のさとうきびシュークリーム, whose description names 国産の卵･牛乳･小麦粉 — egg, milk and WHEAT FLOUR, declared by the kitchen. It also flags mustard, chilli sauce, alcohol and honey on specific items. 1F Lobby Lounge, 10:00–20:00, last orders 19:30.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "アボカド&シュリンプサンド",
+    "romaji": "abokado ando shurinpu sando",
+    "en": "Avocado and shrimp sandwich — the shop notes it contains chilli sauce",
+    "price": "¥2,180",
+    "section": "Sandwiches",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A sandwich is wheat bread. The shop flags チリソース, which is worth noting for its own sake: commercial chilli sauces often contain vinegar of unstated origin. Prawn rules out vegan. Set ¥3,460. Set price includes a drink: hot or iced coffee, cappuccino, caffè latte, Garden Terrace tea or milk, or an espresso, orange juice, Coca-Cola or ginger ale. For ¥100 more the set drink can be the cold-brew coffee or iced tea (15 cups a day) or the recommended black tea.",
+    "dish_key": "sandwich"
+   },
+   {
+    "ja": "国産牛のローストビーフサンド",
+    "romaji": "kokusan-gyū no rōsuto bīfu sando",
+    "en": "Domestic roast beef sandwich — the shop notes it contains mustard",
+    "price": "¥2,580",
+    "section": "Sandwiches",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat bread and beef. The mustard flag is the shop's own. Set ¥3,860. Set price includes a drink: hot or iced coffee, cappuccino, caffè latte, Garden Terrace tea or milk, or an espresso, orange juice, Coca-Cola or ginger ale. For ¥100 more the set drink can be the cold-brew coffee or iced tea (15 cups a day) or the recommended black tea.",
+    "dish_key": "sandwich"
+   },
+   {
+    "ja": "ベーコン・バジル・モッツァレラチーズのトマトピッツァ",
+    "romaji": "bēkon bajiru mottsarera chīzu no tomato pittsa",
+    "en": "Bacon, basil and mozzarella tomato pizza",
+    "price": "¥2,400",
+    "section": "Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza base is wheat. Bacon and mozzarella. Set ¥3,680. Set price includes a drink: hot or iced coffee, cappuccino, caffè latte, Garden Terrace tea or milk, or an espresso, orange juice, Coca-Cola or ginger ale. For ¥100 more the set drink can be the cold-brew coffee or iced tea (15 cups a day) or the recommended black tea.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "シナモンロール",
+    "romaji": "shinamon rōru",
+    "en": "Cinnamon roll",
+    "price": "¥1,080",
+    "section": "Sweet Bread & Toast",
+    "gf": "no",
+    "vegan": "no",
+    "note": "An enriched wheat dough, normally with butter and milk. Set ¥2,360. Set price includes a drink: hot or iced coffee, cappuccino, caffè latte, Garden Terrace tea or milk, or an espresso, orange juice, Coca-Cola or ginger ale. For ¥100 more the set drink can be the cold-brew coffee or iced tea (15 cups a day) or the recommended black tea.",
+    "dish_key": "pastry"
+   },
+   {
+    "ja": "ブリオッシュフレンチトースト (苺添え)",
+    "romaji": "buriosshu furenchi tōsuto",
+    "en": "Brioche French toast with strawberry",
+    "price": "¥2,400",
+    "section": "Sweet Bread & Toast",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Brioche is a wheat bread enriched with butter and egg, then soaked in more egg and milk. Set ¥3,680. Set price includes a drink: hot or iced coffee, cappuccino, caffè latte, Garden Terrace tea or milk, or an espresso, orange juice, Coca-Cola or ginger ale. For ¥100 more the set drink can be the cold-brew coffee or iced tea (15 cups a day) or the recommended black tea.",
+    "dish_key": "french_toast"
+   },
+   {
+    "ja": "白玉クリームぜんざい(緑茶付き)",
+    "romaji": "shiratama kurīmu zenzai",
+    "en": "Zenzai — sweet adzuki with rice-flour dumplings and cream, served with green tea",
+    "price": "¥1,730",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The most interesting item on this menu for a coeliac and nobody would guess it from the name. Zenzai is adzuki beans and sugar, and 白玉 dumplings are made from GLUTINOUS RICE FLOUR — no wheat in the traditional build of either. The cream on top is dairy, which ends the vegan question but not the gluten one; worth asking whether it can come without. Nothing is declared.",
+    "dish_key": "zenzai"
+   },
+   {
+    "ja": "アイスクリーム(バニラ/ストロベリー/ミックス)",
+    "romaji": "aisu kurīmu",
+    "en": "Ice cream — vanilla, strawberry or mixed",
+    "price": "¥1,200",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. No wheat expected in the ice cream itself, though a wafer served alongside would be.",
+    "dish_key": "ice_cream"
+   },
+   {
+    "ja": "シャーベット (マンゴー)",
+    "romaji": "shābetto (mangō)",
+    "en": "Mango sherbet",
+    "price": "¥1,200",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A fruit sherbet is the one sweet here that could suit a vegan — sorbet is normally fruit, sugar and water — but \"sherbet\" in Japanese usage sometimes includes milk, and nothing is declared. Worth asking on both counts.",
+    "dish_key": "sorbet"
+   },
+   {
+    "ja": "シャインマスカットのショートケーキ",
+    "romaji": "shain masukatto no shōto kēki",
+    "en": "Shine Muscat shortcake with white peach sauce",
+    "price": "¥1,400",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A shortcake is sponge, and sponge is wheat flour in its standard build. Cream. No gluten-free claim is made anywhere on this menu. Recorded as ask rather than no where the specific construction is not published — but a hotel patisserie counter is a wheat kitchen, so assume wheat unless told otherwise. Set ¥2,680.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "モンブラン",
+    "romaji": "monburan",
+    "en": "Mont Blanc — Ehime chestnut paste with French marron cream",
+    "price": "¥1,080",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The chestnut cream is chestnut and sugar; the question is entirely what it is piped onto, which is a meringue in some kitchens and a pastry base in others. No gluten-free claim is made anywhere on this menu. Recorded as ask rather than no where the specific construction is not published — but a hotel patisserie counter is a wheat kitchen, so assume wheat unless told otherwise. Set ¥2,360.",
+    "dish_key": "montblanc"
+   },
+   {
+    "ja": "ル･フロマージュ",
+    "romaji": "ru furomāju",
+    "en": "Le Fromage — cream cheese soufflé and mascarpone mousse with apricot sauce",
+    "price": "¥1,170",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A soufflé fromage normally contains a little flour, and cheesecakes usually sit on a biscuit base. Dairy throughout. No gluten-free claim is made anywhere on this menu. Recorded as ask rather than no where the specific construction is not published — but a hotel patisserie counter is a wheat kitchen, so assume wheat unless told otherwise. Set ¥2,450.",
+    "dish_key": "cheesecake"
+   },
+   {
+    "ja": "ショコラバナーヌ･トンカ",
+    "romaji": "shokora banānu tonka",
+    "en": "Chocolat Banane Tonka — banana confit and tonka bean brûlée with bitter chocolate mousse",
+    "price": "¥1,170",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mousse and brûlée are flourless in themselves; plated entremets normally sit on a sponge or biscuit layer. Dairy and egg. No gluten-free claim is made anywhere on this menu. Recorded as ask rather than no where the specific construction is not published — but a hotel patisserie counter is a wheat kitchen, so assume wheat unless told otherwise. Set ¥2,450.",
+    "dish_key": "mousse"
+   },
+   {
+    "ja": "アップルパイ",
+    "romaji": "appuru pai",
+    "en": "Apple pie made with two varieties of apple",
+    "price": "¥1,080",
+    "section": "Sweets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pastry is wheat flour — the one cake on this list that is settled rather than askable. Butter. Set ¥2,360.",
+    "dish_key": "pie"
+   },
+   {
+    "ja": "オペラキャラメル",
+    "romaji": "opera kyarameru",
+    "en": "Opéra Caramel — the traditional French chocolate cake with caramel; the shop flags that it contains ALCOHOL",
+    "price": "¥1,030",
+    "section": "Sweets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "An opéra is built on joconde sponge, which is wheat flour with ground almond. The shop's own ※アルコール使用 flag matters for a second reason a coeliac would care about: cake alcohols are often grain spirits or liqueurs, and neither is declared. Set ¥2,310.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "タルトレット･セゾン",
+    "romaji": "tarutoretto sezon",
+    "en": "Tartelette Saison — seasonal fruit tart",
+    "price": "¥1,170",
+    "section": "Sweets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A tart shell is wheat pastry. Fruit changes with the season. Set ¥2,450.",
+    "dish_key": "tart"
+   },
+   {
+    "ja": "奄美諸島のさとうきびシュークリーム",
+    "romaji": "amami shotō no satōkibi shū kurīmu",
+    "en": "KIBI chou à la crème made with Amami cane sugar",
+    "price": "¥1,020",
+    "section": "Sweets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SHOP DECLARES THE WHEAT ITSELF: its description names 国産の卵･牛乳･小麦粉 — domestic egg, milk and WHEAT FLOUR. Choux pastry is wheat regardless, but it is worth recording as a stated fact rather than an inference, because it is the only place on this menu the kitchen names an ingredient a coeliac needs. Set ¥2,300.",
+    "dish_key": "choux"
+   },
+   {
+    "ja": "奄美諸島のさとうきびプリン",
+    "romaji": "amami shotō no satōkibi purin",
+    "en": "KIBI pudding made with Amami cane sugar and Hokkaido milk",
+    "price": "¥1,020",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A custard pudding is egg, milk and sugar with no flour in the classic build — one of the better prospects on this counter, sitting right beside the choux that the shop declares as wheat. Dairy and egg rule out vegan. Set ¥2,300.",
+    "dish_key": "pudding"
+   },
+   {
+    "ja": "ル・シーニュ",
+    "romaji": "ru shīnyu",
+    "en": "Le Cygne — white peach mousse enclosing peach compote, jasmine tea jelly, cream cheese brûlée and raspberry sauce, shaped as a swan",
+    "price": "¥1,170",
+    "section": "Sweets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mousse, jelly and brûlée are all flourless in themselves; a shaped entremets normally sits on a sponge base, and the swan's neck and wings are usually piped meringue or tuile. No gluten-free claim is made anywhere on this menu. Recorded as ask rather than no where the specific construction is not published — but a hotel patisserie counter is a wheat kitchen, so assume wheat unless told otherwise. Set ¥2,450.",
+    "dish_key": "mousse"
+   },
+   {
+    "ja": "宮崎マンゴーロール",
+    "romaji": "miyazaki mangō rōru",
+    "en": "Miyazaki mango roll — mango and light cream in a soft sponge; the shop flags that it contains HONEY",
+    "price": "¥1,170",
+    "section": "Sweets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A roll cake is sponge, which is wheat. The shop's ※ハチミツ使用 flag is the useful part for a vegan — honey is an animal product, and it is rarely declared. Cream too. Set ¥2,450.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "カフェインレスコーヒー",
+    "romaji": "kafeinresu kōhī",
+    "en": "Decaf coffee, hot",
+    "price": "",
+    "section": "Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee and water. Price not recorded: see the note above on the PDF's unpairable price column.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "エスプレッソ",
+    "romaji": "esupuresso",
+    "en": "Espresso, hot",
+    "price": "",
+    "section": "Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee and water. Price not recorded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "水出しアイスコーヒー",
+    "romaji": "mizudashi aisu kōhī",
+    "en": "Cold brew iced coffee, limited to 15 cups a day",
+    "price": "",
+    "section": "Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee and water. Price not recorded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "カプチーノ",
+    "romaji": "kapuchīno",
+    "en": "Cappuccino, hot or iced",
+    "price": "",
+    "section": "Coffee",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Espresso and milk. No plant milk is listed anywhere on this menu — worth asking, since it would open up most of the drinks list. Price not recorded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "カフェラテ",
+    "romaji": "kafe rate",
+    "en": "Caffè latte, hot or iced",
+    "price": "",
+    "section": "Coffee",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Espresso and milk. Price not recorded.",
+    "dish_key": "latte"
+   },
+   {
+    "ja": "カフェモカ",
+    "romaji": "kafe moka",
+    "en": "Caffè mocha, hot or iced",
+    "price": "",
+    "section": "Coffee",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk-based; chocolate syrups occasionally carry malt, which would be barley. Price not recorded.",
+    "dish_key": "mocha"
+   },
+   {
+    "ja": "ガーデンテラスティー",
+    "romaji": "gāden terasu tī",
+    "en": "Garden Terrace tea, hot or iced — the house blend",
+    "price": "",
+    "section": "Black Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Leaf tea and water. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "アールグレイ",
+    "romaji": "āru gurei",
+    "en": "Earl Grey, hot — also available decaffeinated",
+    "price": "",
+    "section": "Black Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Leaf tea with bergamot. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ダージリン",
+    "romaji": "dājirin",
+    "en": "Darjeeling, hot",
+    "price": "",
+    "section": "Black Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Leaf tea. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "チャイティー",
+    "romaji": "chai tī",
+    "en": "Chai tea, hot or iced",
+    "price": "",
+    "section": "Black Tea",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Chai is brewed with milk. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ロイヤルミルクティー",
+    "romaji": "roiyaru miruku tī",
+    "en": "Royal milk tea, hot or iced",
+    "price": "",
+    "section": "Black Tea",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Brewed in milk. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ルイボスティー",
+    "romaji": "ruibosu tī",
+    "en": "Rooibos tea, decaffeinated, hot or iced",
+    "price": "",
+    "section": "Herbal Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Herbal infusion. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "カモミールミックス",
+    "romaji": "kamomīru mikkusu",
+    "en": "Chamomile mix, hot or iced",
+    "price": "",
+    "section": "Herbal Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Herbal infusion. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "緑茶",
+    "romaji": "ryokucha",
+    "en": "Green tea, hot or iced",
+    "price": "",
+    "section": "Green Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Tea and water. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "マスカットグリーンティー",
+    "romaji": "masukatto gurīn tī",
+    "en": "Muscat green tea, hot or iced",
+    "price": "",
+    "section": "Green Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Flavoured green tea. Price not recorded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "バナナMixシェイク",
+    "romaji": "banana mikkusu shēku",
+    "en": "Banana mix shake — apple juice, orange juice, banana syrup and milk",
+    "price": "¥1,780",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "The shop lists the components; the milk rules out vegan.",
+    "dish_key": "shake"
+   },
+   {
+    "ja": "トマトジュース",
+    "romaji": "tomato jūsu",
+    "en": "Tomato juice",
+    "price": "¥1,570",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Juice.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "クランベリージュース",
+    "romaji": "kuranberī jūsu",
+    "en": "Cranberry juice",
+    "price": "¥1,570",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Juice.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "りんごジュース",
+    "romaji": "ringo jūsu",
+    "en": "Apple juice",
+    "price": "¥1,570",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Juice.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "オレンジジュース",
+    "romaji": "orenji jūsu",
+    "en": "Orange juice",
+    "price": "¥1,420",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Juice.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "無添加野菜＆果実のジュース",
+    "romaji": "mutenka yasai to kajitsu no jūsu",
+    "en": "Additive-free vegetable and fruit juice",
+    "price": "¥1,420",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Juice, stated additive-free.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "ビネガードリンク (柚子はちみつ / ローズヒップ&カシス)",
+    "romaji": "binegā dorinku",
+    "en": "Vinegar drink — yuzu honey, or rosehip and cassis",
+    "price": "¥1,220",
+    "section": "Other Beverages",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Two things worth separating. The yuzu version contains HONEY, which is not vegan. And the vinegar base is unnamed — malt vinegar would be a barley route, which is not on Japan's allergen list and would never be labelled.",
+    "dish_key": "vinegar_drink"
+   },
+   {
+    "ja": "ミルク",
+    "romaji": "miruku",
+    "en": "Milk, hot or iced",
+    "price": "¥1,220",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "milk"
+   },
+   {
+    "ja": "コカ･コーラ",
+    "romaji": "koka kōra",
+    "en": "Coca-Cola",
+    "price": "¥1,220",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Soft drink.",
+    "dish_key": "softdrink"
+   },
+   {
+    "ja": "ジンジャーエール",
+    "romaji": "jinjā ēru",
+    "en": "Ginger ale",
+    "price": "¥1,220",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Soft drink.",
+    "dish_key": "softdrink"
+   },
+   {
+    "ja": "ココア",
+    "romaji": "kokoa",
+    "en": "Cocoa, hot or iced",
+    "price": "¥1,520",
+    "section": "Other Beverages",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Made with milk. Cocoa preparations occasionally include malt.",
+    "dish_key": "cocoa"
+   },
+   {
+    "ja": "鉄観音烏龍茶",
+    "romaji": "tekkannon ūron cha",
+    "en": "Tikwanyin oolong, hot or iced",
+    "price": "¥1,600",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Tea and water.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "抹茶ラテ",
+    "romaji": "matcha rate",
+    "en": "Matcha latte using Tsujiri Ichi Honten matcha, hot or iced",
+    "price": "¥1,600",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Matcha is powdered tea leaf with no wheat and nothing animal — the milk is what rules it out, so this is the drink to ask about if a plant milk is available.",
+    "dish_key": "matcha"
+   },
+   {
+    "ja": "ミネラルウォーター",
+    "romaji": "mineraru wōtā",
+    "en": "Mineral water",
+    "price": "¥800",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Water — the cheapest thing on the menu.",
+    "dish_key": "water"
+   },
+   {
+    "ja": "ペリエ",
+    "romaji": "perie",
+    "en": "Perrier",
+    "price": "¥1,070",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Sparkling water.",
+    "dish_key": "water"
+   },
+   {
+    "ja": "ソーダ (メロン/レモン/ラズベリー)",
+    "romaji": "sōda",
+    "en": "Soda — melon, lemon or raspberry",
+    "price": "¥1,220",
+    "section": "Other Beverages",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Flavoured soda.",
+    "dish_key": "softdrink"
+   },
+   {
+    "ja": "フロート (メロン/レモン/ラズベリー/コーヒー/コカ･コーラ)",
+    "romaji": "furōto",
+    "en": "Float — melon, lemon, raspberry, coffee or Coca-Cola",
+    "price": "¥1,700",
+    "section": "Other Beverages",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Soda with ice cream, so dairy. Any wafer served with it would be wheat.",
+    "dish_key": "float"
+   },
+   {
+    "ja": "エビスビール (生ビール)",
+    "romaji": "ebisu bīru",
+    "en": "Yebisu draft beer",
+    "price": "¥1,700",
+    "section": "Alcohol",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "BEER IS BARLEY, and 大麦 is not on Japan's statutory allergen list, so nothing will ever flag it. Price paired positionally — see the note above.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "レッドアイ (生ビール･トマトジュース)",
+    "romaji": "reddo ai",
+    "en": "Red Eye — draft beer and tomato juice",
+    "price": "¥1,800",
+    "section": "Alcohol",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Contains beer, so barley. Price paired positionally.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "Dewar's (スコッチウイスキー）",
+    "romaji": "dewāzu",
+    "en": "Dewar's Scotch whisky",
+    "price": "¥1,620",
+    "section": "Alcohol",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Scotch is distilled from MALTED BARLEY. Distillation removes most gluten protein and many coeliac bodies consider spirits safe, but this dataset flags grain spirits as no rather than making that call for anyone. Price paired positionally.",
+    "dish_key": "whisky"
+   },
+   {
+    "ja": "山崎 (ジャパニーズウイスキー)",
+    "romaji": "yamazaki",
+    "en": "The Yamazaki Japanese whisky",
+    "price": "¥2,020",
+    "section": "Alcohol",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Malted barley, as above. Price paired positionally.",
+    "dish_key": "whisky"
+   },
+   {
+    "ja": "ポールスター (スパークリングワイン)",
+    "romaji": "pōrusutā",
+    "en": "Polestar sparkling wine",
+    "price": "¥1,620",
+    "section": "Alcohol",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Wine is grape — no wheat route. Vegan is genuinely open rather than pedantic: many wines are fined with isinglass, gelatin or egg white, and Japanese menus never say. Price paired positionally.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "ミモザ (スパークリングワイン･オレンジジュース)",
+    "romaji": "mimoza",
+    "en": "Mimosa — sparkling wine and orange juice",
+    "price": "¥1,640",
+    "section": "Alcohol",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Wine and juice; the fining question above applies. Price paired positionally.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "キール･ロワイアル (スパークリングワイン･カシスリキュール)",
+    "romaji": "kīru rowaiaru",
+    "en": "Kir Royale — sparkling wine and cassis liqueur",
+    "price": "¥1,640",
+    "section": "Alcohol",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Liqueurs are the one alcohol category where wheat genuinely hides — some are grain-based and some carry added colourings and thickeners. Undeclared. Price paired positionally.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "フラゴリーノ (スパークリングワイン･ストロベリー)",
+    "romaji": "furagorīno",
+    "en": "Berry sparkling wine — sparkling wine with strawberries",
+    "price": "¥1,720",
+    "section": "Alcohol",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Wine and fruit; fining question applies. Price paired positionally.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "一刻者 (芋焼酎）",
+    "romaji": "ikkomon",
+    "en": "Ikkomon sweet potato shochu",
+    "price": "¥1,620",
+    "section": "Alcohol",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Worth naming as the exception on this list: 芋焼酎 is distilled from SWEET POTATO, not grain — unlike 麦焼酎, which is barley. The shop states the base, which is the useful part. Price paired positionally.",
+    "dish_key": "shochu"
+   },
+   {
+    "ja": "ジントニック (ジン･トニックウォーター)",
+    "romaji": "jin tonikku",
+    "en": "Gin and tonic",
+    "price": "¥1,720",
+    "section": "Alcohol",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Gin is normally distilled from grain, though the base is not stated here. Price paired positionally.",
+    "dish_key": "gin"
+   },
+   {
+    "ja": "カシスオレンジ (カシスリキュール･オレンジジュース)",
+    "romaji": "kashisu orenji",
+    "en": "Cassis orange — cassis liqueur and orange juice",
+    "price": "¥1,720",
+    "section": "Alcohol",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Liqueur base undeclared. Price paired positionally.",
+    "dish_key": "liqueur"
+   },
+   {
+    "ja": "ミックスナッツ",
+    "romaji": "mikkusu nattsu",
+    "en": "Mixed nuts",
+    "price": "¥700",
+    "section": "Light Snacks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Nuts; seasoned nut mixes sometimes carry a soy or wheat coating. Price paired positionally.",
+    "dish_key": "nuts"
+   },
+   {
+    "ja": "ミックスナッツ＆チョコレート",
+    "romaji": "mikkusu nattsu ando chokorēto",
+    "en": "Mixed nuts and chocolate",
+    "price": "¥700",
+    "section": "Light Snacks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk chocolate is dairy; some chocolate carries malt. Price paired positionally.",
+    "dish_key": "nuts"
+   },
+   {
+    "ja": "ポテトチップス黒トリュフフレーバー",
+    "romaji": "poteto chippusu kuro toryufu furēbā",
+    "en": "Potato chips with black truffle flavour",
+    "price": "¥800",
+    "section": "Light Snacks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Potato and oil, but flavoured crisp seasonings very commonly contain wheat-derived or dairy powders. Both axes open. Price paired positionally.",
+    "dish_key": "chips"
+   },
+   {
+    "ja": "野菜チップス",
+    "romaji": "yasai chippusu",
+    "en": "Vegetable chips",
+    "price": "¥850",
+    "section": "Light Snacks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Fried vegetable slices; the seasoning and the fryer are undeclared. Price paired positionally.",
+    "dish_key": "chips"
+   }
+  ]
+ },
+ "tokyo_sobashonin_komagata_soba": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13003671/",
+   "https://tabelog.com/en/tokyo/A1311/A131102/13003671/dtlmenu/"
+  ],
+  "price_note": "No published menu: the Tabelog menu page returns 404 and the shop has no site of its own — the record's stored website is the Tabelog listing itself. Everything below comes from visitor accounts on that listing, so it is provisional, and NO PRICES ARE RECORDED because no visitor states one; Tabelog gives only a ¥2,000–2,999 band for the shop as a whole. ⚠ WHAT MAKES THIS SHOP UNUSUAL, AND WHY IT IS UNRESOLVED: this is a 変わり蕎麦 house — its draw is soba flavoured and coloured by kneading other ingredients into the dough, served as a 三色 or 五色 flight of three or five different noodles on one tray. Visitors name けしきり (poppy seed), れもんきり (lemon), しそきり (shiso), 茶きり (tea), ゆずきり (yuzu), さくらきり (cherry, April only), plus plain せいろ and coarse 田舎. Every one of those is a different dough, and the shop states the composition of none of them. So a coeliac faces not one unanswered ratio question here but five or six, on a tray where the varieties are boiled together. The daily lineup rotates. Asakusa, a five-to-six-minute walk from the Ginza line station; tables downstairs, tatami rooms upstairs.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "三色そば",
+    "romaji": "sanshoku soba",
+    "en": "Three-colour soba — a choice of three noodles from five, on one tray",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A visitor records choosing けしきり, れもんきり and しそきり from five available. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based and built on bonito dashi, so it is a second wheat route and rules out vegan independently of the noodle.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "五色そば",
+    "romaji": "goshiki soba",
+    "en": "Five-colour soba — five different noodles on one tray, with either 田舎 or せいろ in the centre division",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A visitor describes the flight as 田舎 (thick, flat, firm), けしきり (thinner and flat), then 茶きり, ゆずきり and さくらきり in decreasing thickness. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based and built on bonito dashi, so it is a second wheat route and rules out vegan independently of the noodle.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "五色天盛り",
+    "romaji": "goshiki ten mori",
+    "en": "Five-colour soba with tempura — the prawns are taken live from two temperature-controlled tanks in the shop",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Settled regardless of the noodle: tempura batter is wheat flour. A visitor notes the tempura arrives before the soba and that the prawn heads are served too. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "tempura_soba"
+   },
+   {
+    "ja": "けしきり",
+    "romaji": "keshi kiri",
+    "en": "Poppy seed soba",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "One of the flavoured doughs, available within the three- and five-colour flights. A visitor describes the poppy seeds as giving a popping texture and a flat noodle. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "れもんきり",
+    "romaji": "remon kiri",
+    "en": "Lemon soba",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A flavoured dough within the flights. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "しそきり",
+    "romaji": "shiso kiri",
+    "en": "Shiso soba",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A flavoured dough within the flights. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "茶きり",
+    "romaji": "cha kiri",
+    "en": "Green tea soba",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A flavoured dough within the flights. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "ゆずきり",
+    "romaji": "yuzu kiri",
+    "en": "Yuzu soba",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A flavoured dough within the flights. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "さくらきり",
+    "romaji": "sakura kiri",
+    "en": "Cherry soba — April only",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A visitor records making a special trip because this one is only available in April. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "田舎そば",
+    "romaji": "inaka soba",
+    "en": "Inaka soba — the coarse, thick, flat-cut noodle",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based and built on bonito dashi, so it is a second wheat route and rules out vegan independently of the noodle.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "せいろそば",
+    "romaji": "seiro soba",
+    "en": "Seiro soba — the plain chilled noodle with dipping broth",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED for any variety here, and at a soba house that is the only number that decides anything — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based and built on bonito dashi, so it is a second wheat route and rules out vegan independently of the noodle.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "蕎麦湯",
+    "romaji": "sobayu",
+    "en": "Sobayu — the water the soba was boiled in, served to finish",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Every visitor account ends on it. Worth naming because it looks like a harmless cup of hot water and is not: sobayu IS the shared boiling water, and at a shop cooking five or six different doughs in one pot it carries whatever came off all of them, including the 打ち粉 dusted on the boards. Normally drunk mixed with the leftover soy-based tsuyu.",
+    "dish_key": "sobayu"
+   }
+  ]
+ },
+ "tokyo_sushi_reiwa": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13237234/dtlmenu/",
+   "https://tabelog.com/tokyo/A1311/A131102/13237234/",
+   "https://www.instagram.com/sushi_reiwa01/?hl=ja"
+  ],
+  "price_note": "Almost nothing is published. The Tabelog menu page carries a コース heading with no courses under it and no prices; the record's stored website is an Instagram account, which is not a menu this dataset can cite. The single item below is the one dish a visitor names with a price they paid, so it is provisional and it is all there is — the rest of the board is genuinely not published rather than unresearched. ⚠ TWO THINGS FOR A COELIAC. First the standing sushi problem: rice and raw fish carry no wheat, but sushi is EATEN WITH SOY SAUCE, an Edomae counter brushes a soy nikiri onto the fish before it reaches you, and whether tamari is available is not stated. Second, and specific to this shop: Tabelog files it under 寿司、海鮮、揚げ物 — the third of those is DEEP-FRIED FOOD, so there is a fryer in this kitchen, which raises a shared-oil question that a pure sushi counter would not. Asakusa, 浅草1-21-3 エリカビル 2F; Tabelog price band ¥3,000–3,999.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "上寿司（平日ランチ）",
+    "romaji": "jō sushi (heijitsu ranchi)",
+    "en": "Premium sushi set, weekday lunch",
+    "price": "¥2,178",
+    "section": "ランチ Lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The one priced dish any visitor records. Contents are not listed anywhere, so the neta are unknown. Sushi rice is rice and vinegar and the fish is raw, which is why this is ask rather than no — the wheat arrives with the soy sauce and the nikiri glaze rather than in the food. Ask whether tamari is available, and whether anything on the set has been through the fryer. Not vegan.",
+    "dish_key": "sushi"
    }
   ]
  }
