@@ -81007,5 +81007,592 @@
     "dish_key": "donburi"
    }
   ]
+ },
+ "tokyo_paichi": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13010491/dtlmenu/"
+  ],
+  "price_note": "⚠ PRICES MAY NOT INCLUDE TAX. Tabelog carries an explicit warning on this listing — 「税込金額か不明の価格です。正確な価格は店舗へ直接ご確認ください」, meaning it does not know whether these figures are tax-inclusive and says to confirm with the shop. Every other record in this dataset states tax-included prices, so this one is the exception and the numbers below could be up to 10% higher at the till. ⚠ ON THE FOOD: 洋食 is Japan's domesticated Western cooking, and it is one of the most consistently wheat-heavy categories there is — the fried section is flour, egg and panko throughout, the stews are built on a browned roux, and the curry is a roux curry. There is no gluten-free order on this menu and the salads are the only things that come close. A vegan has less than that: even the plain 生野菜 salad is the only item with no declared animal ingredient, and its dressing is unstated. Recorded in full so the answer is visible rather than absent. 浅草1-15-1; closed Sundays; lunch 11:30–14:00 and dinner 17:00–20:00. Note the shop's own remark that from two portions the stew arrives in one shared pot.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "ビーフシチュー",
+    "romaji": "bīfu shichū",
+    "en": "Beef stew — from two portions it comes in one shared pot",
+    "price": "¥2,100",
+    "section": "■□シチュー Stews",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A demi-glace beef stew is built on a browned FLOUR ROUX — that is what makes it a demi-glace. Beef.",
+    "dish_key": "stew"
+   },
+   {
+    "ja": "タンシチュー",
+    "romaji": "tan shichū",
+    "en": "Beef tongue stew",
+    "price": "¥2,100",
+    "section": "■□シチュー Stews",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same flour-roux demi-glace base.",
+    "dish_key": "stew"
+   },
+   {
+    "ja": "生野菜",
+    "romaji": "nama yasai",
+    "en": "Raw vegetable salad",
+    "price": "¥700",
+    "section": "■□サラダ Salads",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only dish on this menu with no declared animal ingredient and no batter — which makes it the sole prospect for either diet here. The dressing is unstated and Japanese house dressings are commonly soy-based, so it is a question rather than an answer.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "ポテトサラダ",
+    "romaji": "poteto sarada",
+    "en": "Potato salad",
+    "price": "¥700",
+    "section": "■□サラダ Salads",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Potato carries no wheat; the binder is mayonnaise, which is egg.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "エビサラダ",
+    "romaji": "ebi sarada",
+    "en": "Prawn salad",
+    "price": "¥1,000",
+    "section": "■□サラダ Salads",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated; prawn.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "ハムサラダ",
+    "romaji": "hamu sarada",
+    "en": "Ham salad",
+    "price": "¥1,000",
+    "section": "■□サラダ Salads",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated; ham.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "カニサラダ",
+    "romaji": "kani sarada",
+    "en": "Crab salad",
+    "price": "¥1,200",
+    "section": "■□サラダ Salads",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated. Worth one extra question: Japanese \"crab\" salad is frequently made with カニカマ, surimi sticks, which are bound with WHEAT STARCH.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "ホタテサラダ",
+    "romaji": "hotate sarada",
+    "en": "Scallop salad",
+    "price": "¥1,000",
+    "section": "■□サラダ Salads",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated; scallop.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "ロースかつ（Ａ）",
+    "romaji": "rōsu katsu (A)",
+    "en": "Pork loin cutlet, size A",
+    "price": "¥1,500",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. Tonkatsu sauce is a Worcester-style brown sauce, which is a second wheat route. Size B ¥1,200.",
+    "dish_key": "katsu"
+   },
+   {
+    "ja": "メンチカツ（Ｃ）",
+    "romaji": "menchi katsu (C)",
+    "en": "Minced meat cutlet, size C",
+    "price": "¥1,000",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. Menchi katsu filling is also normally bound with breadcrumb.",
+    "dish_key": "katsu"
+   },
+   {
+    "ja": "海老フライ",
+    "romaji": "ebi furai",
+    "en": "Fried prawns",
+    "price": "¥1,800",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. Small prawn version ¥1,000. Tartare sauce is egg-based.",
+    "dish_key": "furai"
+   },
+   {
+    "ja": "ホタテフライ",
+    "romaji": "hotate furai",
+    "en": "Fried scallops",
+    "price": "¥1,500",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish.",
+    "dish_key": "furai"
+   },
+   {
+    "ja": "カキフライ（10月～3月）",
+    "romaji": "kaki furai",
+    "en": "Fried oysters, October to March",
+    "price": "¥1,200",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. Seasonal.",
+    "dish_key": "furai"
+   },
+   {
+    "ja": "カニコロッケ",
+    "romaji": "kani korokke",
+    "en": "Crab croquette",
+    "price": "¥1,000",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. A cream croquette is bound with a FLOUR BÉCHAMEL inside the crumb — wheat inside and out, plus dairy.",
+    "dish_key": "korokke"
+   },
+   {
+    "ja": "盛合せ（かつ、ハンバーグ、小海老フライ）",
+    "romaji": "moriawase",
+    "en": "Mixed plate — cutlet, hamburg steak and small fried prawns",
+    "price": "¥2,000",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. The ハンバーグ is a third route: a Japanese hamburg steak is bound with breadcrumb soaked in milk, so it is wheat even without a coating.",
+    "dish_key": "hamburg"
+   },
+   {
+    "ja": "※セット（ライス・味噌汁）",
+    "romaji": "setto (raisu, misoshiru)",
+    "en": "Set supplement — rice and miso soup",
+    "price": "¥350",
+    "section": "■□揚げ物 Fried, all à la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The rice itself is clean; the miso soup is not. Two routes in one bowl: the dashi is bonito, which ends the vegan question, and the miso is frequently 麦味噌 — BARLEY — which is not on Japan's statutory allergen list and so is never labelled.",
+    "dish_key": "misoshiru"
+   },
+   {
+    "ja": "かつ重（味噌汁付き）",
+    "romaji": "katsu jū",
+    "en": "Katsu on rice in a lacquer box, with miso soup",
+    "price": "¥1,500",
+    "section": "丼 Rice bowls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish. The katsu is simmered in a soy-and-dashi broth over the rice, so the wheat is in the sauce as well as the crumb.",
+    "dish_key": "katsudon"
+   },
+   {
+    "ja": "海老重（味噌汁付き）",
+    "romaji": "ebi jū",
+    "en": "Fried prawns on rice, with miso soup",
+    "price": "¥1,800",
+    "section": "丼 Rice bowls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yoshoku frying means flour, egg and PANKO — wheat bread — then a shared fryer. The coating is the dish.",
+    "dish_key": "furai"
+   },
+   {
+    "ja": "カレー",
+    "romaji": "karē",
+    "en": "Curry",
+    "price": "¥700",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Japanese curry is built on a FLOUR ROUX — this is the single most important thing to know about カレー in Japan, because it is the one curry tradition in the world where wheat is structural rather than incidental. Vegan is ask only because the meat content is unstated; commercial roux blocks also commonly contain dairy.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "かつカレー",
+    "romaji": "katsu karē",
+    "en": "Curry with a pork cutlet",
+    "price": "¥1,500",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Flour roux and panko crumb.",
+    "dish_key": "curry"
+   }
+  ]
+ },
+ "tokyo_nikujiru_suigyoza_gyopao": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://tabelog.com/tokyo/A1304/A130401/13247437/dtlmenu/",
+   "https://gyopao-shinjuku.com/"
+  ],
+  "price_note": "Prices tax-included as printed by the shop. ⚠ THIS SHOP LABELS ITS OWN VEGETARIAN DISHES — six items carry a 【ベジタリアン】 mark, which is rare in Tokyo and genuinely useful. But read the word carefully: ベジタリアン means VEGETARIAN, not vegan. The gelato and the soy pudding both carry the mark, and one of those is far more likely to suit a vegan than the other. The label also says nothing about gluten, and this is a DUMPLING shop — the house speciality is water gyoza, and every wrapper, bun and roll on the board is wheat. The clean split here is that the labelled vegetable dishes are also the only dishes with any gluten prospect, because they are the ones with no wrapper. No allergen statement beyond the vegetarian marks. The signature 肉汁水餃子 is ¥1,089 for four, ¥1,420 for six and ¥2,380 for ten, made with 100% Kagoshima black pork.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "【当店看板メニュー！】肉汁水餃子・餃包 4個",
+    "romaji": "nikujiru suigyōza gyopao",
+    "en": "The house speciality — juicy domestic pork water gyoza, four pieces; 100% Kagoshima black pork",
+    "price": "¥1,089",
+    "section": "おすすめ Signature",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Gyoza wrappers are wheat, and a water gyoza is boiled in shared water. Six pieces ¥1,420, ten ¥2,380. Pork.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "ひとくち揚げ餃子",
+    "romaji": "hitokuchi age gyōza",
+    "en": "Bite-sized fried gyoza, made in house — served with salt and lemon",
+    "price": "¥759",
+    "section": "おすすめ Signature",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat wrappers, deep-fried. Worth noting that salt and lemon rather than a dipping sauce removes one wheat route but not the wrapper.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "青唐辛子のシューマイ（4個～）",
+    "romaji": "ao tōgarashi no shūmai",
+    "en": "Green chilli shumai, from four pieces — handmade",
+    "price": "¥759",
+    "section": "おすすめ Signature",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shumai wrappers are wheat.",
+    "dish_key": "shumai"
+   },
+   {
+    "ja": "国産豚小龍包（3個～）",
+    "romaji": "kokusan buta shōronpō",
+    "en": "Domestic pork xiaolongbao, from three pieces — handmade, filled with soup",
+    "price": "¥759",
+    "section": "おすすめ Signature",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Xiaolongbao wrappers are wheat.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "海老蒸し春巻き",
+    "romaji": "ebi mushi harumaki",
+    "en": "Steamed prawn spring rolls",
+    "price": "¥539",
+    "section": "おすすめ Signature",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Steamed rather than fried, but the spring roll sheet is wheat.",
+    "dish_key": "harumaki"
+   },
+   {
+    "ja": "鶏肉チマキ",
+    "romaji": "toriniku chimaki",
+    "en": "Chicken zongzi — glutinous rice steamed in a bamboo leaf",
+    "price": "¥429",
+    "section": "おすすめ Signature",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A real exception on a board of wheat wrappers: chimaki is GLUTINOUS RICE wrapped in a bamboo LEAF, so neither the filling nor the wrapper is wheat. The seasoning is the open question and is normally soy-based. Chicken.",
+    "dish_key": "chimaki"
+   },
+   {
+    "ja": "麻辣ピーナッツ",
+    "romaji": "mārā pīnattsu",
+    "en": "Mala peanuts — marked vegetarian by the shop",
+    "price": "¥330",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop marks this 【ベジタリアン】 itself. Worth reading precisely: ベジタリアン is VEGETARIAN, not vegan — the label rules out meat and fish but says nothing about dairy, egg or honey, so it narrows the vegan question without answering it. Peanuts, chilli and Sichuan pepper have no wheat route in themselves; coated or seasoned nuts sometimes do.",
+    "dish_key": "nuts"
+   },
+   {
+    "ja": "蒸し鶏のネギソース",
+    "romaji": "mushidori no negi sōsu",
+    "en": "Steamed chicken with house spring onion sauce",
+    "price": "¥429",
+    "section": "前菜 Starters",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The chicken is poached and clean; Chinese spring onion sauces are built on soy sauce.",
+    "dish_key": "zensai"
+   },
+   {
+    "ja": "クラゲきゅうり",
+    "romaji": "kurage kyūri",
+    "en": "Jellyfish and cucumber",
+    "price": "¥429",
+    "section": "前菜 Starters",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Jellyfish salad is dressed with soy and sesame oil.",
+    "dish_key": "zensai"
+   },
+   {
+    "ja": "青菜の塩ナムル",
+    "romaji": "aona no shio namuru",
+    "en": "Salted greens namul — marked vegetarian by the shop",
+    "price": "¥539",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop marks this 【ベジタリアン】 itself. Worth reading precisely: ベジタリアン is VEGETARIAN, not vegan — the label rules out meat and fish but says nothing about dairy, egg or honey, so it narrows the vegan question without answering it. Named 塩 — salted rather than soy-dressed, which is the better prospect and is why this is one of the more promising items here. Nothing is declared.",
+    "dish_key": "namul"
+   },
+   {
+    "ja": "極太メンマの燻製",
+    "romaji": "gokubuto menma no kunsei",
+    "en": "Smoked extra-thick bamboo shoot — marked vegetarian by the shop",
+    "price": "¥539",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop marks this 【ベジタリアン】 itself. Worth reading precisely: ベジタリアン is VEGETARIAN, not vegan — the label rules out meat and fish but says nothing about dairy, egg or honey, so it narrows the vegan question without answering it. Bamboo shoot is a plant with no wheat in it, but menma is nearly always seasoned with soy sauce. The vegetarian mark does not settle that.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "角煮とパクチーのマスタード和え",
+    "romaji": "kakuni to pakuchī no masutādo ae",
+    "en": "Braised black pork belly with coriander in mustard dressing",
+    "price": "¥649",
+    "section": "前菜 Starters",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kakuni is braised in soy sauce.",
+    "dish_key": "kakuni"
+   },
+   {
+    "ja": "胡麻ダレ冷やしトマト",
+    "romaji": "goma dare hiyashi tomato",
+    "en": "A whole chilled tomato with house sesame dressing — marked vegetarian by the shop",
+    "price": "¥462",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop marks this 【ベジタリアン】 itself. Worth reading precisely: ベジタリアン is VEGETARIAN, not vegan — the label rules out meat and fish but says nothing about dairy, egg or honey, so it narrows the vegan question without answering it. The tomato is a tomato; the 胡麻ダレ is the question, since Japanese sesame dressings are normally built on soy sauce and often contain mayonnaise.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "よだれ鶏",
+    "romaji": "yodare dori",
+    "en": "Mouth-watering chicken in a hot dressing",
+    "price": "¥759",
+    "section": "前菜 Starters",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kou shui ji dressing is soy sauce, black vinegar and chilli oil — and Chinese black vinegar is frequently brewed from WHEAT or barley, so there are two routes in the one dressing.",
+    "dish_key": "zensai"
+   },
+   {
+    "ja": "春巻き（2本～）",
+    "romaji": "harumaki",
+    "en": "Handmade spring rolls, from two — served freshly fried",
+    "price": "¥649",
+    "section": "一品 Small dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Spring roll wrappers are wheat.",
+    "dish_key": "harumaki"
+   },
+   {
+    "ja": "麻婆豆腐",
+    "romaji": "mābō dōfu",
+    "en": "Mapo tofu — heat to taste",
+    "price": "¥803",
+    "section": "一品 Small dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The tofu is soybean and fine; the sauce is not. Mapo is built on doubanjiang, which is commonly made with WHEAT flour, plus soy sauce, and it normally contains minced pork.",
+    "dish_key": "mapo"
+   },
+   {
+    "ja": "ご飯",
+    "romaji": "gohan",
+    "en": "Rice",
+    "price": "¥319",
+    "section": "ご飯 Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice — the one thing on this menu with no route to either diet.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "ひき肉温玉のせご飯",
+    "romaji": "hikiniku onsen tamago nose gohan",
+    "en": "Rice topped with seasoned minced meat and a soft-cooked egg",
+    "price": "¥506",
+    "section": "ご飯 Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The mince is soy-seasoned; egg.",
+    "dish_key": "donburi"
+   },
+   {
+    "ja": "台湾まぜそば",
+    "romaji": "taiwan mazesoba",
+    "en": "Taiwanese mazesoba — a staff-meal favourite that made the menu",
+    "price": "¥1,034",
+    "section": "麺 Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Mazesoba noodles are wheat, and the tare is soy-based.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "豆花(トウファ)",
+    "romaji": "tōfa",
+    "en": "Douhua — soy milk pudding with black sugar syrup; marked vegetarian by the shop",
+    "price": "¥319",
+    "section": "デザート Dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop marks this 【ベジタリアン】 itself. Worth reading precisely: ベジタリアン is VEGETARIAN, not vegan — the label rules out meat and fish but says nothing about dairy, egg or honey, so it narrows the vegan question without answering it. Of the two labelled desserts this is much the likelier to suit a vegan: douhua is soy milk set with a coagulant and poured with 黒蜜, which is sugar syrup — no dairy in the traditional build. Nothing is declared, so ask, but ask about this one.",
+    "dish_key": "tofu"
+   },
+   {
+    "ja": "デコポンのジェラート",
+    "romaji": "dekopon no jerāto",
+    "en": "Dekopon citrus gelato — the shop states no colourings or preservatives; marked vegetarian",
+    "price": "¥429",
+    "section": "デザート Dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop marks this 【ベジタリアン】 itself. Worth reading precisely: ベジタリアン is VEGETARIAN, not vegan — the label rules out meat and fish but says nothing about dairy, egg or honey, so it narrows the vegan question without answering it. And this is the item that shows why the distinction matters: GELATO IS NORMALLY A DAIRY PRODUCT, which is perfectly vegetarian and not vegan at all. A citrus sorbet would be another matter. The shop's mark does not tell you which this is — ask.",
+    "dish_key": "gelato"
+   }
+  ]
+ },
+ "tokyo_dogenzaka_mammoth": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13122700/",
+   "https://tabelog.com/en/tokyo/A1303/A130301/13122700/dtlmenu/"
+  ],
+  "price_note": "No published menu: the Tabelog menu page returns 404 and the shop has no site of its own — the record's stored website is the Tabelog listing. What follows comes from visitor accounts on that listing, so it is provisional and covers only what people happened to order rather than the whole board. ⚠ ONE DETAIL WORTH MORE THAN THE PRICES: a visitor records that the noodle is CHOSEN from several options and that they picked a 胚芽麺 — a wheat-germ noodle. That is a shop offering noodle choice, which is exactly the situation where someone might hope for a buckwheat or rice option; there is no indication of one here, and 胚芽 means wheat germ, so the choice is between kinds of wheat. Two practical notes from visitors: the ticket machine is CASH ONLY, and no paper apron is provided despite the splash. Long queues at peak; near-full even at 2pm on a weekday. Tabelog price band ¥1,000–1,999.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "濃厚つけ麺",
+    "romaji": "nōkō tsukemen",
+    "en": "Rich tsukemen — very thick dipping broth with thick noodles, garnished with a piece of yuzu",
+    "price": "¥1,100",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tsukemen and ramen noodles are WHEAT, and the broth is a soy-seasoned gyokai-tonkotsu — fish and pork — so both halves of the bowl are out on both diets. A visitor records ¥1,100 with 大盛 (300g) at ¥100 more, and describes choosing the 胚芽麺 — a WHEAT-GERM noodle — from the available options.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "大盛",
+    "romaji": "ōmori",
+    "en": "Large portion, 300g",
+    "price": "+¥100",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A surcharge on a wheat-noodle bowl.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "濃厚味玉・肉入中華そば",
+    "romaji": "nōkō ajitama niku-iri chūka soba",
+    "en": "Rich chuka soba with a seasoned egg and extra pork",
+    "price": "¥1,400",
+    "section": "中華そば Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Despite the そば in the name this is RAMEN — wheat noodles, not buckwheat — a naming trap worth knowing, since 中華そば never means soba. Tsukemen and ramen noodles are WHEAT, and the broth is a soy-seasoned gyokai-tonkotsu — fish and pork — so both halves of the bowl are out on both diets. A visitor records about ¥1,400 and describes a 魚介豚骨 broth; the 味玉 is an egg marinated in soy and the chashu is soy-braised.",
+    "dish_key": "ramen"
+   }
+  ]
+ },
+ "tokyo_shinjuku_kominka_juttoku": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://kominka.gorp.jp/",
+   "https://tabelog.com/tokyo/A1304/A130401/13187216/",
+   "https://tabelog.com/en/tokyo/A1304/A130401/13187216/dtlmenu/"
+  ],
+  "price_note": "No menu published anywhere readable. The shop's own site carries its concept, hours and seating but no dishes and no prices; the Tabelog menu page returns 404. The five dishes below are ones visitors name having eaten, with NO PRICES because no visitor states one — Tabelog gives only a ¥5,000–5,999 band for the shop. ⚠ WHAT THIS KIND OF PLACE MEANS FOR BOTH DIETS: it bills itself as 全国郷土の味巡り, a tour of regional Japanese cooking, in a converted old house — and regional washoku is the category where DASHI and SOY SAUCE are in nearly everything, including dishes that look plain. Bonito dashi is a vegan fact and a gluten fact at once, since 白だし, めんつゆ and だし醤油 are all soy-based. A sake izakaya is also a barley room: beer is barley and 麦焼酎 is barley, neither flagged by Japanese allergen labelling. One thing a visitor establishes that is genuinely useful: at lunch, rice and miso soup come with free refills. Open from 16:00 Tuesday to Friday; 50 seats with tatami and counter. Note for the record: a visitor mentions 十徳新宿本店 was closed for renovation to the end of August and trading from an annexe — that is the separate HONTEN, not this shop, and is not recorded as a closure here.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "煮魚定食",
+    "romaji": "nizakana teishoku",
+    "en": "Simmered fish set meal — a large portion, with a thick tamagoyaki; rice and miso soup are refillable",
+    "price": "",
+    "section": "ランチ Lunch",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Named by a visitor at lunch. 煮魚 is fish simmered in soy sauce, mirin and dashi — the soy is what makes the dish, so this one is settled rather than askable. The tamagoyaki is egg cooked with dashi, and the miso soup carries a bonito dashi plus a miso that is frequently 麦味噌, BARLEY.",
+    "dish_key": "nizakana"
+   },
+   {
+    "ja": "刺し盛り",
+    "romaji": "sashimori",
+    "en": "Assorted sashimi",
+    "price": "",
+    "section": "一品 Small dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw fish carries no wheat; what does is the soy sauce it is dipped in. Ask whether tamari is available.",
+    "dish_key": "sashimi"
+   },
+   {
+    "ja": "う巻き",
+    "romaji": "umaki",
+    "en": "Umaki — grilled eel rolled inside a dashi omelette",
+    "price": "",
+    "section": "一品 Small dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Both halves are out: the eel is glazed with a soy-and-mirin kabayaki tare, and the omelette is made with dashi and normally soy.",
+    "dish_key": "tamagoyaki"
+   },
+   {
+    "ja": "イカ一夜干し",
+    "romaji": "ika ichiyaboshi",
+    "en": "Overnight-dried squid",
+    "price": "",
+    "section": "一品 Small dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Squid dried with salt has no inherent wheat, which makes it worth asking about — but grilled dried squid is normally served with soy sauce and mayonnaise, and some are brined in a soy marinade before drying.",
+    "dish_key": "ika"
+   },
+   {
+    "ja": "酒盗チーズ",
+    "romaji": "shutō chīzu",
+    "en": "Shuto with cheese — fermented bonito innards with cream cheese",
+    "price": "",
+    "section": "一品 Small dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fermented fish and dairy, so never vegan. Shuto is cured with salt and sake rather than soy in its traditional form, but commercial versions frequently add soy sauce and mirin. Ask.",
+    "dish_key": "shuto"
+   }
+  ]
  }
 }
