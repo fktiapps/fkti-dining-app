@@ -139,8 +139,8 @@
     "price": "+¥150〜¥660",
     "section": "おそば 追加 Soba add-ons",
     "gf": "gf",
-    "vegan": "",
-    "note": "つゆ・蕎麦とも店のグルテンフリー仕様（アレルゲン表）。Both the noodle and the tsuyu are the shop's gluten-free versions per its own allergen chart.",
+    "vegan": "ask",
+    "note": "つゆ・蕎麦とも店のグルテンフリー仕様（アレルゲン表）。Both the noodle and the tsuyu are the shop's gluten-free versions per its own allergen chart. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "soba_addons"
    },
    {
@@ -794,9 +794,9 @@
     "en": "Add a drink to any lunch: coffee (iced or hot), tea (iced or hot), hot au lait, iced au lait, cola, ginger ale, orange juice, apple juice, oolong tea, glass wine (red or white), or a glass of draught beer",
     "price": "¥300",
     "section": "本日のランチメニュー Today's lunch (2026-01 board)",
-    "gf": "",
-    "vegan": "",
-    "note": "グラス生ビールを選ぶと麦芽＝グルテン。The draught-beer option is malt and never gluten-free; the juices and teas on the list are fine. Au lait options contain dairy.",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "グラス生ビールを選ぶと麦芽＝グルテン。The draught-beer option is malt and never gluten-free; the juices and teas on the list are fine. Au lait options contain dairy. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "lunch_drink_set"
    },
    {
@@ -805,9 +805,9 @@
     "en": "Ice-cream floats — Blue Hawaii, coffee or cola",
     "price": "¥550",
     "section": "本日のランチメニュー Today's lunch (2026-01 board)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "no",
-    "note": "アイスクリーム＝乳。Dairy ice cream.",
+    "note": "アイスクリーム＝乳。Dairy ice cream. No wheat route in a soft drink.",
     "dish_key": "float"
    },
    {
@@ -894,8 +894,8 @@
     "price": "中 ¥600／小 ¥500",
     "section": "アルコール Alcohol (2026-01 card)",
     "gf": "no",
-    "vegan": "",
-    "note": "麦芽＝グルテン。Barley malt.",
+    "vegan": "vegan",
+    "note": "麦芽＝グルテン。Barley malt. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "draft_beer"
    },
    {
@@ -905,8 +905,8 @@
     "price": "¥600",
     "section": "アルコール Alcohol (2026-01 card)",
     "gf": "no",
-    "vegan": "",
-    "note": "麦芽＝グルテン。Barley malt.",
+    "vegan": "vegan",
+    "note": "麦芽＝グルテン。Barley malt. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "bottled_beer"
    },
    {
@@ -915,9 +915,9 @@
     "en": "House wine by the glass, red or white",
     "price": "¥450",
     "section": "アルコール Alcohol (2026-01 card)",
-    "gf": "",
-    "vegan": "",
-    "note": "ワインは小麦由来ではない。清澄剤は未公表。Wine is not wheat-based; fining agents are not published, which is what a strict vegan would want to ask about.",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ワインは小麦由来ではない。清澄剤は未公表。Wine is not wheat-based; fining agents are not published, which is what a strict vegan would want to ask about. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "glass_wine"
    },
    {
@@ -926,9 +926,9 @@
     "en": "Carafe wine — 900ml or 500ml",
     "price": "大900ml ¥2,800／小500ml ¥1,500",
     "section": "アルコール Alcohol (2026-01 card)",
-    "gf": "",
-    "vegan": "",
-    "note": "",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "decanter_wine"
    },
    {
@@ -937,9 +937,9 @@
     "en": "House sangria",
     "price": "¥550",
     "section": "アルコール Alcohol (2026-01 card)",
-    "gf": "",
-    "vegan": "",
-    "note": "",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "house_sangria"
    },
    {
@@ -949,8 +949,8 @@
     "price": "¥500",
     "section": "アルコール Alcohol (2026-01 card)",
     "gf": "no",
-    "vegan": "",
-    "note": "ウイスキー＝麦芽由来、ハイボールは不可。Malt-derived; highballs are never counted gluten-free here.",
+    "vegan": "vegan",
+    "note": "ウイスキー＝麦芽由来、ハイボールは不可。Malt-derived; highballs are never counted gluten-free here. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "whisky_highball"
    },
    {
@@ -960,8 +960,8 @@
     "price": "水割り ¥400／ウーロン茶割り ¥450／緑茶割り ¥450",
     "section": "アルコール Alcohol (2026-01 card)",
     "gf": "ask",
-    "vegan": "",
-    "note": "甲類焼酎は糖蜜原料が主だが銘柄未記載、麦焼酎を要確認。Korui shochu is usually molasses-based, but the brand is not stated and 麦焼酎 (barley shochu) must be ruled out — ask.",
+    "vegan": "vegan",
+    "note": "甲類焼酎は糖蜜原料が主だが銘柄未記載、麦焼酎を要確認。Korui shochu is usually molasses-based, but the brand is not stated and 麦焼酎 (barley shochu) must be ruled out — ask. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "shochu_wari"
    },
    {
@@ -971,8 +971,8 @@
     "price": "¥500",
     "section": "アルコール Alcohol (2026-01 card)",
     "gf": "ask",
-    "vegan": "",
-    "note": "ベース焼酎の原料未記載。Base spirit unspecified — confirm it is not barley shochu.",
+    "vegan": "vegan",
+    "note": "ベース焼酎の原料未記載。Base spirit unspecified — confirm it is not barley shochu. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "lemon_sour"
    },
    {
@@ -981,9 +981,9 @@
     "en": "Cassis liqueur with orange juice, or with soda",
     "price": "¥500",
     "section": "アルコール Alcohol (2026-01 card)",
-    "gf": "",
-    "vegan": "",
-    "note": "",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Soft drink — plant-based. No wheat route in a soft drink.",
     "dish_key": "cassis"
    },
    {
@@ -993,8 +993,8 @@
     "price": "¥500",
     "section": "アルコール Alcohol (2026-01 card)",
     "gf": "ask",
-    "vegan": "",
-    "note": "梅酒のベース酒は未記載。Umeshu base spirit is not stated; most use korui shochu or brandy, but ask if barley matters to you.",
+    "vegan": "vegan",
+    "note": "梅酒のベース酒は未記載。Umeshu base spirit is not stated; most use korui shochu or brandy, but ask if barley matters to you. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "umeshu"
    },
    {
@@ -1004,8 +1004,8 @@
     "price": "¥550",
     "section": "ノンアルコールビール Non-alcoholic beer (2026-01 card)",
     "gf": "no",
-    "vegan": "",
-    "note": "ノンアルコールでも原料は麦芽＝グルテン。Alcohol-free beer is still made from barley malt.",
+    "vegan": "ask",
+    "note": "ノンアルコールでも原料は麦芽＝グルテン。Alcohol-free beer is still made from barley malt. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "nonalc_beer"
    },
    {
@@ -1014,9 +1014,9 @@
     "en": "Sparkling apple juice made with Aomori apples — the card names the origin",
     "price": "¥550",
     "section": "ソフトドリンク Soft drinks (2026-01 card)",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "りんご果汁と炭酸のみ。Apple juice and carbonation.",
+    "note": "りんご果汁と炭酸のみ。Apple juice and carbonation. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "sparkling_apple"
    },
    {
@@ -1025,9 +1025,9 @@
     "en": "Cola, ginger ale, orange juice, apple juice",
     "price": "¥450",
     "section": "ソフトドリンク Soft drinks (2026-01 card)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "",
+    "note": "No wheat route in a soft drink.",
     "dish_key": "soft_drinks"
    },
    {
@@ -1036,9 +1036,9 @@
     "en": "Iced coffee; iced café au lait",
     "price": "¥500",
     "section": "ソフトドリンク Soft drinks (2026-01 card)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "no",
-    "note": "オーレは乳入り。The au lait contains dairy; the black coffee does not.",
+    "note": "オーレは乳入り。The au lait contains dairy; the black coffee does not. No wheat route in a soft drink.",
     "dish_key": "iced_coffee"
    },
    {
@@ -1047,9 +1047,9 @@
     "en": "Hot coffee; hot café au lait",
     "price": "¥450",
     "section": "ソフトドリンク Soft drinks (2026-01 card)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "no",
-    "note": "オーレは乳入り。",
+    "note": "オーレは乳入り。 No wheat route in a soft drink.",
     "dish_key": "hot_coffee"
    },
    {
@@ -1058,9 +1058,9 @@
     "en": "Black tea, iced or hot",
     "price": "アイス ¥500／ホット ¥450",
     "section": "ソフトドリンク Soft drinks (2026-01 card)",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "black_tea"
    },
    {
@@ -1069,9 +1069,9 @@
     "en": "Oolong tea; green tea",
     "price": "¥300",
     "section": "ソフトドリンク Soft drinks (2026-01 card)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "烏龍茶も緑茶も麦茶ではない。Neither is mugicha (barley tea), which is the one Japanese soft drink that carries gluten.",
+    "note": "烏龍茶も緑茶も麦茶ではない。Neither is mugicha (barley tea), which is the one Japanese soft drink that carries gluten. No wheat route in a soft drink.",
     "dish_key": "oolong_green_tea"
    }
   ]
@@ -1191,9 +1191,9 @@
     "en": "Coriander, as much as they give you",
     "price": "¥250",
     "section": "トッピング Toppings",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "生の香草のみ。Fresh herb only.",
+    "note": "生の香草のみ。Fresh herb only. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "topping_coriander"
    },
    {
@@ -1269,8 +1269,8 @@
     "price": "¥650",
     "section": "お飲み物 Drinks",
     "gf": "no",
-    "vegan": "",
-    "note": "麦芽＝グルテン。Barley malt.",
+    "vegan": "vegan",
+    "note": "麦芽＝グルテン。Barley malt. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "bottled_beer"
    },
    {
@@ -1280,8 +1280,8 @@
     "price": "¥550",
     "section": "お飲み物 Drinks",
     "gf": "no",
-    "vegan": "",
-    "note": "ウイスキー＝麦由来。Malt whisky base — not gluten-free.",
+    "vegan": "vegan",
+    "note": "ウイスキー＝麦由来。Malt whisky base — not gluten-free. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "highball"
    },
    {
@@ -1291,8 +1291,8 @@
     "price": "¥550",
     "section": "お飲み物 Drinks",
     "gf": "ask",
-    "vegan": "",
-    "note": "ベース焼酎の原料未記載、麦焼酎を要確認。Base shochu unspecified — rule out barley shochu.",
+    "vegan": "vegan",
+    "note": "ベース焼酎の原料未記載、麦焼酎を要確認。Base shochu unspecified — rule out barley shochu. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "lemon_sour"
    },
    {
@@ -1302,8 +1302,8 @@
     "price": "¥550",
     "section": "お飲み物 Drinks",
     "gf": "ask",
-    "vegan": "",
-    "note": "同上、ベース焼酎の原料未記載。Same base-spirit question.",
+    "vegan": "vegan",
+    "note": "同上、ベース焼酎の原料未記載。Same base-spirit question. Soft drink — plant-based.",
     "dish_key": "oolong_hai"
    },
    {
@@ -1312,9 +1312,9 @@
     "en": "Oolong tea",
     "price": "¥220",
     "section": "お飲み物 Drinks",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "烏龍茶であり麦茶ではない。Oolong, not the barley tea (麦茶) that would carry gluten.",
+    "note": "烏龍茶であり麦茶ではない。Oolong, not the barley tea (麦茶) that would carry gluten. No wheat route in a soft drink.",
     "dish_key": "oolong_tea"
    },
    {
@@ -1323,9 +1323,9 @@
     "en": "Cola",
     "price": "¥220",
     "section": "お飲み物 Drinks",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "",
+    "note": "No wheat route in a soft drink.",
     "dish_key": "cola"
    }
   ]
@@ -1921,9 +1921,9 @@
     "en": "Add any drink to a food order and it is ¥150 off",
     "price": "−¥150",
     "section": "Drink Set Special",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "全ドリンクがヴィーガン仕様（豆乳・オーツ・アーモンドミルク）。All drinks here are plant-milk based.",
+    "note": "全ドリンクがヴィーガン仕様（豆乳・オーツ・アーモンドミルク）。All drinks here are plant-milk based. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "drink_set_discount"
    },
    {
@@ -1932,9 +1932,9 @@
     "en": "Drip coffee, hot or iced",
     "price": "¥690",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "Black coffee. Add CBD (15mg) +¥350.",
+    "note": "Black coffee. Add CBD (15mg) +¥350. No wheat route in a soft drink.",
     "dish_key": "drip_coffee"
    },
    {
@@ -1943,9 +1943,9 @@
     "en": "Café Americano, hot or iced",
     "price": "¥690",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Add CBD +¥350.",
+    "note": "Add CBD +¥350. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "americano"
    },
    {
@@ -1954,9 +1954,9 @@
     "en": "Double espresso",
     "price": "¥690",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Add CBD +¥350.",
+    "note": "Add CBD +¥350. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "double_espresso"
    },
    {
@@ -1965,9 +1965,9 @@
     "en": "Soy café mocha",
     "price": "¥890",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "豆乳ベース。全て植物性。Soy-milk based; upgrade to oat or almond milk +¥100. Add CBD +¥350.",
+    "note": "豆乳ベース。全て植物性。Soy-milk based; upgrade to oat or almond milk +¥100. Add CBD +¥350. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "soy_cafe_mocha"
    },
    {
@@ -1976,9 +1976,9 @@
     "en": "Vanilla soy latte",
     "price": "¥890",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "豆乳ベース。Oat or almond milk +¥100; CBD +¥350.",
+    "note": "豆乳ベース。Oat or almond milk +¥100; CBD +¥350. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "vanilla_soy_latte"
    },
    {
@@ -1987,9 +1987,9 @@
     "en": "Caramel soy latte",
     "price": "¥890",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "豆乳ベース。",
+    "note": "豆乳ベース。 Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "caramel_soy_latte"
    },
    {
@@ -1998,9 +1998,9 @@
     "en": "Soy café latte",
     "price": "¥790",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "豆乳ベース。",
+    "note": "豆乳ベース。 Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "soy_cafe_latte"
    },
    {
@@ -2009,9 +2009,9 @@
     "en": "Almond milk latte",
     "price": "¥890",
     "section": "Specialty Coffee",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "almond_milk_latte"
    },
    {
@@ -2031,9 +2031,9 @@
     "en": "Top-grade organic matcha, whisked hot",
     "price": "¥790",
     "section": "Organic Macha & Hojicha",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "Add CBD +¥350.",
+    "note": "Add CBD +¥350. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "matcha"
    },
    {
@@ -2042,9 +2042,9 @@
     "en": "Iced strawberry matcha soy latte",
     "price": "¥1,100",
     "section": "Organic Macha & Hojicha",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "strawberry_matcha_soy_latte"
    },
    {
@@ -2053,9 +2053,9 @@
     "en": "Matcha soy latte, hot or iced",
     "price": "¥890",
     "section": "Organic Macha & Hojicha",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "matcha_soy_latte"
    },
    {
@@ -2064,9 +2064,9 @@
     "en": "Roasted-green-tea (hojicha) soy latte, hot or iced",
     "price": "¥890",
     "section": "Organic Macha & Hojicha",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "ほうじ茶は焙じた緑茶で、麦茶ではない。Hojicha is roasted green tea, not the barley tea (麦茶) that would carry gluten.",
+    "note": "ほうじ茶は焙じた緑茶で、麦茶ではない。Hojicha is roasted green tea, not the barley tea (麦茶) that would carry gluten. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "hojicha_soy_latte"
    },
    {
@@ -2075,9 +2075,9 @@
     "en": "Homemade fruit sodas — blueberry, lemon, strawberry or ginger",
     "price": "¥800",
     "section": "Homemade Fruit Soda",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "Add CBD +¥350.",
+    "note": "Add CBD +¥350. No wheat route in a soft drink.",
     "dish_key": "fruit_soda"
    },
    {
@@ -2086,9 +2086,9 @@
     "en": "Organic soy-milk cocoa, hot or iced",
     "price": "¥890",
     "section": "Organic Cocoa",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "soy_cocoa"
    },
    {
@@ -2097,9 +2097,9 @@
     "en": "Organic soy chai latte, hot or iced",
     "price": "¥890",
     "section": "Organic Chai",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "soy_chai_latte"
    },
    {
@@ -2108,9 +2108,9 @@
     "en": "Organic Earl Grey, hot or iced",
     "price": "¥690",
     "section": "Organic Tea",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "earl_grey"
    },
    {
@@ -2119,9 +2119,9 @@
     "en": "Organic herb teas — chamomile, mint or rooibos",
     "price": "¥690",
     "section": "Organic Tea",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "herb_tea"
    },
    {
@@ -2131,8 +2131,8 @@
     "price": "¥1,200",
     "section": "Craft Beer / Fruit Highball / Gin Sour",
     "gf": "no",
-    "vegan": "",
-    "note": "麦芽＝グルテン。Barley malt — never gluten-free, whatever else this café is.",
+    "vegan": "vegan",
+    "note": "麦芽＝グルテン。Barley malt — never gluten-free, whatever else this café is. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "craft_beer"
    },
    {
@@ -2142,8 +2142,8 @@
     "price": "¥1,200",
     "section": "Craft Beer / Fruit Highball / Gin Sour",
     "gf": "no",
-    "vegan": "",
-    "note": "ウイスキーは麦由来。ジンサワーは蒸留原料次第だが、店は両者を同一項目で扱う。The whiskey highball is malt-derived. The gin version may be safer depending on the base grain, but the shop lists them as one line — ask if it matters.",
+    "vegan": "vegan",
+    "note": "ウイスキーは麦由来。ジンサワーは蒸留原料次第だが、店は両者を同一項目で扱う。The whiskey highball is malt-derived. The gin version may be safer depending on the base grain, but the shop lists them as one line — ask if it matters. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "fruit_highball_sour"
    },
    {
@@ -2152,9 +2152,9 @@
     "en": "Organic juice for children",
     "price": "¥650",
     "section": "Kids Drinks",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "",
+    "note": "No wheat route in a soft drink.",
     "dish_key": "kids_juice"
    },
    {
@@ -2163,9 +2163,9 @@
     "en": "Add 15mg of CBD to any drink. Milk upgrade from soy to oat or almond +¥100",
     "price": "+¥350",
     "section": "Drink Upgrade Options",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "CBDは18歳以上、または保護者の許可がある方に提供。CBD is served to 18+ or with a guardian's permission; the board states this twice.",
+    "note": "CBDは18歳以上、または保護者の許可がある方に提供。CBD is served to 18+ or with a guardian's permission; the board states this twice. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "cbd_extra_shot"
    }
   ]
@@ -2242,9 +2242,9 @@
     "en": "On weekends and holidays the full à la carte menu is served at lunch as well, not just the sets",
     "price": "",
     "section": "ホリデーランチ Weekend & holiday lunch",
-    "gf": "",
-    "vegan": "",
-    "note": "店の注記。The shop's own note on the menu page.",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "店の注記。The shop's own note on the menu page. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "weekend_grand_menu"
    },
    {
@@ -3477,9 +3477,9 @@
     "en": "Add an iced coffee or iced tea to any lunch",
     "price": "+¥200",
     "section": "Lunch（スープ・小鉢・デザート付き）",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "ブラックであれば植物性。Plant-only if taken black.",
+    "note": "ブラックであれば植物性。Plant-only if taken black. No wheat route in a soft drink.",
     "dish_key": "lunch_drink_add"
    },
    {
@@ -3488,9 +3488,9 @@
     "en": "Take any lunch away as a bento and it is ¥200 cheaper",
     "price": "−¥200",
     "section": "Lunch（スープ・小鉢・デザート付き）",
-    "gf": "",
-    "vegan": "",
-    "note": "同じ料理の持ち帰り。Same dishes, boxed.",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "同じ料理の持ち帰り。Same dishes, boxed. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "bento_takeout"
    },
    {
@@ -3499,9 +3499,9 @@
     "en": "Bamboo-charcoal drip coffee — the café's signature, filtered through bamboo charcoal",
     "price": "¥400",
     "section": "Drink — HOT",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "コーヒーのみ。Black coffee.",
+    "note": "コーヒーのみ。Black coffee. No wheat route in a soft drink.",
     "dish_key": "bamboo_charcoal_drip_coffee"
    },
    {
@@ -3510,9 +3510,9 @@
     "en": "Bamboo-charcoal americano",
     "price": "¥400",
     "section": "Drink — HOT",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "bamboo_charcoal_americano"
    },
    {
@@ -3521,9 +3521,9 @@
     "en": "Café latte",
     "price": "¥500",
     "section": "Drink — HOT",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "牛乳使用。Dairy milk; plant-milk substitution is not advertised — ask.",
+    "note": "牛乳使用。Dairy milk; plant-milk substitution is not advertised — ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "cafe_latte"
    },
    {
@@ -3532,9 +3532,9 @@
     "en": "Cappuccino — plain, caramel or chocolate",
     "price": "¥600",
     "section": "Drink — HOT",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "牛乳使用。Dairy.",
+    "note": "牛乳使用。Dairy. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "cappuccino"
    },
    {
@@ -3543,9 +3543,9 @@
     "en": "Nilgiri black tea from southern India",
     "price": "¥500",
     "section": "Drink — HOT",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "茶葉のみ。Straight tea leaf — not a barley tea.",
+    "note": "茶葉のみ。Straight tea leaf — not a barley tea. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "nilgiri_tea"
    },
    {
@@ -3554,9 +3554,9 @@
     "en": "Cold brew coffee",
     "price": "¥400",
     "section": "Drink — ICE",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "",
+    "note": "No wheat route in a soft drink.",
     "dish_key": "cold_brew"
    },
    {
@@ -3565,9 +3565,9 @@
     "en": "Iced latte",
     "price": "¥500",
     "section": "Drink — ICE",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "牛乳使用。Dairy.",
+    "note": "牛乳使用。Dairy. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "iced_latte"
    },
    {
@@ -3576,9 +3576,9 @@
     "en": "Cream latte — plain, caramel or chocolate",
     "price": "¥600",
     "section": "Drink — ICE",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "生クリーム・牛乳。Cream and dairy milk.",
+    "note": "生クリーム・牛乳。Cream and dairy milk. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "cream_latte"
    },
    {
@@ -3587,9 +3587,9 @@
     "en": "Iced Nilgiri tea",
     "price": "¥400",
     "section": "Drink — ICE",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "",
+    "note": "Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "iced_nilgiri_tea"
    },
    {
@@ -3598,9 +3598,9 @@
     "en": "Iced chai",
     "price": "¥500",
     "section": "Drink — ICE",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "チャイは牛乳ベース。Chai is milk-based here; plant-milk is not advertised.",
+    "note": "チャイは牛乳ベース。Chai is milk-based here; plant-milk is not advertised. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "iced_chai"
    },
    {
@@ -3609,9 +3609,9 @@
     "en": "The day's fruit smoothie",
     "price": "¥700",
     "section": "Drink — Juice",
-    "gf": "",
+    "gf": "ask",
     "vegan": "ask",
-    "note": "ヨーグルトや牛乳が入る場合あり、内容は日替わり。Smoothies often carry yoghurt or milk and the fruit changes daily — ask.",
+    "note": "ヨーグルトや牛乳が入る場合あり、内容は日替わり。Smoothies often carry yoghurt or milk and the fruit changes daily — ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "fruit_smoothie"
    },
    {
@@ -3620,9 +3620,9 @@
     "en": "The day's fruit soda",
     "price": "",
     "section": "Drink — Juice",
-    "gf": "",
+    "gf": "gf",
     "vegan": "ask",
-    "note": "ボードに価格の記載なし（スムージーの¥700と並記されているが本品の価格線は空欄）。The board lists this line without its own price — the ¥700 sits against the smoothie above it. Read the board rather than assume the same figure.",
+    "note": "ボードに価格の記載なし（スムージーの¥700と並記されているが本品の価格線は空欄）。The board lists this line without its own price — the ¥700 sits against the smoothie above it. Read the board rather than assume the same figure. No wheat route in a soft drink.",
     "dish_key": "fruit_soda"
    }
   ]
@@ -4067,9 +4067,9 @@
     "en": "Mango soda with pieces of Miyazaki mango in it. With a teishoku, +¥660",
     "price": "¥770（定食と一緒の場合 +¥660）",
     "section": "ソフトドリンク Soft drinks (2026-07 book)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "果肉と炭酸。Fruit and carbonation.",
+    "note": "果肉と炭酸。Fruit and carbonation. No wheat route in a soft drink.",
     "dish_key": "mango_soda"
    },
    {
@@ -4078,9 +4078,9 @@
     "en": "Soda made with heibeizu — a rare citrus grown almost nowhere but Miyazaki — and honey. Gently sour. With a teishoku, +¥330",
     "price": "¥440（定食と一緒の場合 +¥330）",
     "section": "ソフトドリンク Soft drinks (2026-07 book)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "no",
-    "note": "はちみつ使用のためヴィーガン不可。Contains honey, so not vegan.",
+    "note": "はちみつ使用のためヴィーガン不可。Contains honey, so not vegan. No wheat route in a soft drink.",
     "dish_key": "heibeizu_honey_soda"
    },
    {
@@ -4089,9 +4089,9 @@
     "en": "Soda made with hyuganatsu, the Miyazaki citrus eaten with its white pith on — the shop's own note explains that is the trick to it",
     "price": "¥440（定食と一緒の場合 +¥330）",
     "section": "ソフトドリンク Soft drinks (2026-07 book)",
-    "gf": "",
+    "gf": "gf",
     "vegan": "vegan",
-    "note": "柑橘と炭酸。Citrus and soda.",
+    "note": "柑橘と炭酸。Citrus and soda. No wheat route in a soft drink.",
     "dish_key": "hyuganatsu_soda"
    },
    {
@@ -4100,9 +4100,9 @@
     "en": "Squall — the milky carbonated soft drink invented in Miyazaki in 1971 and still made by Nanyo Foods. Local to the point of being a mascot. With a teishoku, +¥330",
     "price": "¥440（定食と一緒の場合 +¥330）",
     "section": "ソフトドリンク Soft drinks (2026-07 book)",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "乳性炭酸飲料のため乳成分あり。A milk-type carbonated drink — contains dairy.",
+    "note": "乳性炭酸飲料のため乳成分あり。A milk-type carbonated drink — contains dairy. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "ai_no_squall"
    },
    {
@@ -4664,9 +4664,9 @@
     "en": "House 'limit-breaking ginger' ginger ale — sweet or hot",
     "price": "¥650",
     "section": "CAFE デザート Dessert",
-    "gf": "",
+    "gf": "ask",
     "vegan": "vegan",
-    "note": "生姜・砂糖・炭酸が基本。Ginger, sugar and soda.",
+    "note": "生姜・砂糖・炭酸が基本。Ginger, sugar and soda. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "house_ginger_ale"
    },
    {
@@ -4675,9 +4675,9 @@
     "en": "House masala chai, iced or hot",
     "price": "¥750",
     "section": "CAFE デザート Dessert",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "チャイは牛乳ベース。Milk-based.",
+    "note": "チャイは牛乳ベース。Milk-based. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "masala_chai"
    },
    {
@@ -4686,9 +4686,9 @@
     "en": "Lassi made with Greek yoghurt",
     "price": "¥800",
     "section": "CAFE デザート Dessert",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "ヨーグルト＝乳。Dairy.",
+    "note": "ヨーグルト＝乳。Dairy. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "greek_yoghurt_lassi"
    },
    {
@@ -4708,9 +4708,9 @@
     "en": "Iced coffees, priced REGULAR / LARGE: coffee ¥500/¥600, latte ¥600/¥700, caramel latte ¥650/¥750, mocha ¥650/¥750",
     "price": "¥500〜¥750",
     "section": "COFFEE コーヒー［アイス］",
-    "gf": "",
+    "gf": "gf",
     "vegan": "no",
-    "note": "ラテ・モカは乳。ブラックのアイスコーヒーのみ植物性。Only the black iced coffee is dairy-free.",
+    "note": "ラテ・モカは乳。ブラックのアイスコーヒーのみ植物性。Only the black iced coffee is dairy-free. No wheat route in a soft drink.",
     "dish_key": "iced_coffee"
    },
    {
@@ -4719,9 +4719,9 @@
     "en": "Hot coffees",
     "price": "¥500〜¥650",
     "section": "COFFEE コーヒー［ホット］",
-    "gf": "",
+    "gf": "gf",
     "vegan": "no",
-    "note": "ミルク入りは乳。Milk drinks are dairy; black coffee is not.",
+    "note": "ミルク入りは乳。Milk drinks are dairy; black coffee is not. No wheat route in a soft drink.",
     "dish_key": "hot_coffee"
    },
    {
@@ -4731,8 +4731,8 @@
     "price": "¥700〜¥1,300",
     "section": "BEER",
     "gf": "no",
-    "vegan": "",
-    "note": "麦芽＝グルテン。Barley malt.",
+    "vegan": "ask",
+    "note": "麦芽＝グルテン。Barley malt. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "super_dry_draught"
    },
    {
@@ -4742,8 +4742,8 @@
     "price": "¥800",
     "section": "BEER",
     "gf": "no",
-    "vegan": "",
-    "note": "ビールベース＝麦芽。Beer-based.",
+    "vegan": "ask",
+    "note": "ビールベース＝麦芽。Beer-based. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "shandy_gaff"
    },
    {
@@ -4753,8 +4753,8 @@
     "price": "¥850",
     "section": "BEER",
     "gf": "no",
-    "vegan": "",
-    "note": "ビールベース＝麦芽。Beer-based.",
+    "vegan": "ask",
+    "note": "ビールベース＝麦芽。Beer-based. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "red_eye"
    },
    {
@@ -4763,9 +4763,9 @@
     "en": "Sparkling by the glass or bottle: Champagne, and a house sparkling",
     "price": "グラス ¥900〜¥1,500／ボトル ¥6,800〜¥11,500",
     "section": "WINE",
-    "gf": "",
-    "vegan": "",
-    "note": "清澄剤は未公開。Fining agents not published, which is the only vegan question wine raises.",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "清澄剤は未公開。Fining agents not published, which is the only vegan question wine raises. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "sparkling_wine"
    },
    {
@@ -4774,9 +4774,9 @@
     "en": "White by the glass or bottle: Sauvignon, Moscato, Chardonnay, Riesling. The ¥2,800 bottles come as a 500ml decanter",
     "price": "グラス ¥600〜¥1,000／ボトル ¥2,800〜¥6,800",
     "section": "WINE",
-    "gf": "",
-    "vegan": "",
-    "note": "ソムリエが常駐しており相談可能。A sommelier is at the counter — the shop makes a point of it, so the vegan-fining question can actually be answered here.",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ソムリエが常駐しており相談可能。A sommelier is at the counter — the shop makes a point of it, so the vegan-fining question can actually be answered here. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "white_wine"
    },
    {
@@ -4785,9 +4785,9 @@
     "en": "Red by the glass or bottle: Grenache, Ruby Cabernet, Merlot, Pinot Noir. The ¥2,800 bottles come as a 500ml decanter",
     "price": "グラス ¥600〜¥1,000／ボトル ¥2,800〜¥6,800",
     "section": "WINE",
-    "gf": "",
-    "vegan": "",
-    "note": "",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "red_wine"
    },
    {
@@ -4807,9 +4807,9 @@
     "en": "Piña colada",
     "price": "¥1,000",
     "section": "COCKTAIL",
-    "gf": "",
+    "gf": "ask",
     "vegan": "no",
-    "note": "ココナッツクリームのほか乳製品を使う場合がある。Often made with dairy cream as well as coconut — ask.",
+    "note": "ココナッツクリームのほか乳製品を使う場合がある。Often made with dairy cream as well as coconut — ask. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "pina_colada"
    },
    {
@@ -4851,9 +4851,9 @@
     "en": "House sangria, by the glass or as a 500ml decanter",
     "price": "¥800／デキャンタ500ml ¥3,600",
     "section": "COCKTAIL",
-    "gf": "",
+    "gf": "ask",
     "vegan": "ask",
-    "note": "清澄剤・甘味料は未公開。Fining agents and sweeteners not published.",
+    "note": "清澄剤・甘味料は未公開。Fining agents and sweeteners not published. Gluten status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "marugo_sangria"
    },
    {
@@ -4863,8 +4863,8 @@
     "price": "¥800〜¥1,000",
     "section": "HIGHBALL",
     "gf": "no",
-    "vegan": "",
-    "note": "ウイスキーは大麦麦芽由来。Whisky is barley malt. Distillation removes the gluten protein and many coeliac bodies consider distilled spirits safe, but this project treats malt drinks as not gluten-free.",
+    "vegan": "vegan",
+    "note": "ウイスキーは大麦麦芽由来。Whisky is barley malt. Distillation removes the gluten protein and many coeliac bodies consider distilled spirits safe, but this project treats malt drinks as not gluten-free. Vegan on the ingredients — brewed and distilled drinks are plant-based. The rare exception is animal finings used to clarify some beers and wines, which are never declared on a Japanese menu.",
     "dish_key": "highball_range"
    },
    {
@@ -4874,8 +4874,8 @@
     "price": "¥1,800／¥2,500",
     "section": "HIGHBALL",
     "gf": "no",
-    "vegan": "",
-    "note": "スコッチ＝大麦麦芽由来。Scotch — barley malt.",
+    "vegan": "ask",
+    "note": "スコッチ＝大麦麦芽由来。Scotch — barley malt. Vegan status was left blank by an earlier pass and is not established by any source read; recorded as ask.",
     "dish_key": "jw_blue_label"
    }
   ]
