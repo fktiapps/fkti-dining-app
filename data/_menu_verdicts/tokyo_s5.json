@@ -7753,5 +7753,163 @@
     "dish_key": "chahan"
    }
   ]
+ },
+ "tokyo_tori_koji": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13257247/dtlmenu/",
+   "https://tabelog.com/tokyo/A1311/A131102/13257247/dtlmenu/course/"
+  ],
+  "price_note": "Prices tax-included as printed by the shop, on a listing marked 公式 — published by the restaurant itself. PARTIAL, and here is exactly what is missing: the listing advertises 料理(4) à la carte items alongside these three courses, but those four are loaded by script and are not in the page a fetch receives, so they are not recorded rather than guessed at. The three courses below are complete and are the shop's own text. No allergen statement anywhere. ⚠ Two things a coeliac should know before booking: the courses are omakase — 「何が出てくるかは、その日のお楽しみ」 — so the skewers change daily and cannot be checked in advance, and there is a compulsory お通し at ¥700 whose contents are not published. There is no service charge. Closed Mondays; 西浅草, near Asakusa station on the Tsukuba Express.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "鳥こじコース",
+    "romaji": "tori koji kōsu",
+    "en": "The Tori Koji course, 8 items — starters, five yakitori skewers, the shop's popular finishing rice dish, and a dessert",
+    "price": "¥4,000",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The gluten question at any yakitori counter is タレ versus 塩: tare is a soy-sauce glaze and therefore wheat, while a salted skewer is just the bird over charcoal. This shop does not state which way it serves, and on an omakase set you do not choose — so the question to ask is whether the whole set can be done 塩で. A set course also removes the ability to skip anything: the 締め飯 (finishing rice) is undescribed and yakitori shops commonly finish on a soy-seasoned donburi or an oyako-don, and the dessert is unnamed. Chicken throughout rules out vegan.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "焼き鳥7本セット",
+    "romaji": "yakitori nanahon setto",
+    "en": "Omakase seven-skewer set — the master picks the day's best, contents change daily, and one vegetable skewer is included",
+    "price": "¥3,200",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The gluten question at any yakitori counter is タレ versus 塩: tare is a soy-sauce glaze and therefore wheat, while a salted skewer is just the bird over charcoal. This shop does not state which way it serves, and on an omakase set you do not choose — so the question to ask is whether the whole set can be done 塩で. The shop states the contents change every day, so nothing about this set can be confirmed ahead of a visit. Worth noting for a vegetarian rather than a vegan: 野菜串を1本加え — one vegetable skewer is built into the set, but it is grilled over the same charcoal and basted from the same pot as the chicken.",
+    "dish_key": "yakitori"
+   },
+   {
+    "ja": "焼き鳥5本セット",
+    "romaji": "yakitori gohon setto",
+    "en": "Five-skewer set of the house favourites — the shop recommends it for a first visit",
+    "price": "¥2,200",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The gluten question at any yakitori counter is タレ versus 塩: tare is a soy-sauce glaze and therefore wheat, while a salted skewer is just the bird over charcoal. This shop does not state which way it serves, and on an omakase set you do not choose — so the question to ask is whether the whole set can be done 塩で. Described by the shop as the standard skewers rather than a daily-changing selection, which makes this the easier of the two sets to ask about in advance.",
+    "dish_key": "yakitori"
+   },
+   {
+    "ja": "お通し",
+    "romaji": "otōshi",
+    "en": "Compulsory seated charge",
+    "price": "¥700",
+    "section": "お通し Cover",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Not optional and not described. Worth flagging on both axes because an otoshi is served before anyone asks you anything — it is typically a small simmered or dressed dish, and at a Japanese counter that usually means dashi and soy sauce. The shop confirms 「お通し700円サービス料なし」: the ¥700 is charged but no service charge is added on top.",
+    "dish_key": "otoshi"
+   }
+  ]
+ },
+ "tokyo_hanwarai": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13240916/",
+   "https://tabelog.com/en/tokyo/A1303/A130301/13240916/dtlmenu/"
+  ],
+  "price_note": "No published menu: the Tabelog menu page returns 404, and the record's stored website — a shibuya-scramble-square.com shop page — is a DUMMY TEMPLATE serving placeholder text (ショップ名, この文章はダミーです) and 2019 lorem entries, so that URL is dead weight and should be replaced. The shop is real and trading on the 12th floor of Shibuya Scramble Square. Everything below comes from visitor accounts on the Tabelog listing — dishes ordered and prices paid — hence provisional. Useful context a visitor supplies: this is the sister shop of 玉笑 in Jingūmae, a soba house with a serious reputation, and 半笑 is where 玉笑 sends people when it is closed. Portions are on the small side by several accounts, and おかわり蕎麦 (a second board) can be ordered. Seating faces the wall.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "渋スクコース",
+    "romaji": "shibusuku kōsu",
+    "en": "The Scramble Square course — sesame tofu topped with yuba, a two-item plate of duck and itawasa, tamagoyaki in a dashi sauce with grated daikon, and a board of soba to finish",
+    "price": "¥1,980",
+    "section": "コース Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED, which at a soba house is the only number that matters — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based; a visitor describes it as やや甘め (on the sweet side) and another wished it were more strongly 醤油-forward. Soba tsuyu is also built on bonito dashi, so it is a vegan fact as much as a gluten one. As a set it is out on every course: the 板わさ is kamaboko, a fish cake commonly bound with wheat starch; the 玉子焼き arrives under a 出汁餡, a dashi sauce normally thickened and seasoned with soy; and the duck rules out vegan before any of that. A visitor records swapping the closing soba for the 野菜天せいろ, which replaces one wheat problem with a larger one.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "湯葉をのせた胡麻豆腐",
+    "romaji": "yuba o noseta goma dōfu",
+    "en": "Sesame tofu topped with yuba",
+    "price": "",
+    "section": "コース Course",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The one thing on this menu genuinely worth asking about, and it is buried inside a course. 胡麻豆腐 is not tofu at all — it is ground sesame set with KUDZU or arrowroot starch, so there is no soy and no wheat in the classic build, and 湯葉 is simply the skin off soy milk. Both are plant-only. What is not stated is the sauce: goma-dofu is usually served with a wasabi-soy or a dashi-based one, and a visitor mentions wasabi. Recorded without a price because it comes as part of the ¥1,980 course and no separate price is published.",
+    "dish_key": "goma_dofu"
+   },
+   {
+    "ja": "玉子焼きみぞれ",
+    "romaji": "tamagoyaki mizore",
+    "en": "Tamagoyaki under a dashi sauce with grated daikon",
+    "price": "",
+    "section": "コース Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Praised by two visitors as the best thing on the course. Egg rules out vegan; the 出汁餡 is a soy-seasoned dashi sauce, normally thickened, and dashi is bonito. Part of the ¥1,980 course, so no separate price is published.",
+    "dish_key": "tamagoyaki"
+   },
+   {
+    "ja": "天おろしそば",
+    "romaji": "ten oroshi soba",
+    "en": "Soba with tempura and grated daikon — described by a visitor as an off-menu speciality at the sister shop 玉笑",
+    "price": "¥2,200",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tempura batter is wheat flour, so this one is settled regardless of the noodle. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED, which at a soba house is the only number that matters — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based; a visitor describes it as やや甘め (on the sweet side) and another wished it were more strongly 醤油-forward. Soba tsuyu is also built on bonito dashi, so it is a vegan fact as much as a gluten one.",
+    "dish_key": "tempura_soba"
+   },
+   {
+    "ja": "野菜天せいろ",
+    "romaji": "yasai ten seiro",
+    "en": "Seiro soba with vegetable tempura — aubergine, pumpkin, maitake, sweet potato and courgette",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Available as a substitution for the closing soba on the 渋スクコース; a visitor records the swap but not a supplement price, so none is given. The vegetables would suit a vegan and the WHEAT BATTER does not suit anyone avoiding gluten — a good example of a dish that solves one diet and not the other. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED, which at a soba house is the only number that matters — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "せいろ",
+    "romaji": "seiro",
+    "en": "Seiro — chilled soba with dipping broth",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain board. Visitors describe it as 田舎蕎麦風 with a strong buckwheat aroma, but none records a standalone price, so none is given here. THE BUCKWHEAT-TO-WHEAT RATIO IS NOT PUBLISHED, which at a soba house is the only number that matters — Japanese soba is normally 二八, 80% buckwheat to 20% WHEAT. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and boils every order in shared water. The tsuyu is soy-based; a visitor describes it as やや甘め (on the sweet side) and another wished it were more strongly 醤油-forward. Soba tsuyu is also built on bonito dashi, so it is a vegan fact as much as a gluten one.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "蕎麦湯",
+    "romaji": "sobayu",
+    "en": "Sobayu — the water the soba was boiled in, served to finish",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Every visitor account ends on it. Worth naming explicitly because it looks like a harmless cup of hot water and is not: sobayu IS the shared boiling water, carrying whatever came off every noodle cooked in it that service, including the 打ち粉 dusted on the boards. It is normally drunk mixed with the leftover soy-based tsuyu.",
+    "dish_key": "sobayu"
+   }
+  ]
+ },
+ "tokyo_vegan_sushi_tokyo": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://vcook.co.jp/vegansushitokyo/en",
+   "https://vcook.co.jp/vegansushitokyo/jp",
+   "https://www.tablecheck.com/ja/vegan-sushi-tokyo/reserve/message",
+   "https://tabelog.com/tokyo/A1303/A130301/13320090/"
+  ],
+  "price_note": "No menu published anywhere readable, and this one was worth chasing properly. The shop's own site in both Japanese and English carries its story, hours and a reservation link but no dishes and no prices; /menu does not exist on either language path; the TableCheck booking page names only a limited-run seasonal course (日本の四季と文化を楽しむコース, run 19–21 August) without contents or price; and the Tabelog menu page returns 404. So: items are empty because nothing itemised was findable, not because the shop is thin. ⚠ THE QUESTION THIS RECORD CANNOT ANSWER, AND IT IS THE IMPORTANT ONE: the shop is entirely vegan — its own line is that it makes 寿司 from plant ingredients 「魚介類を使わず」, using 野菜や日本発のヴィーガン食材 — so the vegan axis is as settled as a blanket claim can make it. Gluten is completely open. Sushi rice is rice and vinegar, and vegetable neta carry no wheat, but SUSHI IS EATEN WITH SOY SAUCE, and ordinary shoyu is wheat by default. Whether this kitchen pours tamari or a gluten-free shoyu is not stated anywhere, and it is the single question that decides whether a coeliac vegan can eat here at all — which is exactly the kind of place where the answer would be worth having. Reservations via TableCheck, credit card only; 松濤1-25-6, Shinsen. Lunch 11:30–15:30 (L.O. 14:45), dinner 17:00–21:00 (L.O. 20:30).",
+  "last_checked": "2026-08-30",
+  "items": []
  }
 }
