@@ -1,26 +1,28 @@
-# Resume here — updated 2026-08-30, grinder run (13th consecutive blocked run for THIS session)
+# Resume here — updated 2026-08-30 08:44 UTC, grinder run (14th consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-08-30 ~00:44 UTC (computed from data, not agent-status.mjs)
-583 visible Tokyo records, 157 with an inline menu (26.9%), gap 426. Since the last
-grinder entry, an interactive session (working egress) finished shard **s3 (8/15 ->
-15/15 researched)**, advancing 150 -> 157 inline before this run started. This run's
-own Step 1 found nothing new to merge for Tokyo (verdict files already current) —
-see docs/GRINDER-LOG.md 2026-08-30T00:44:08Z.
+## Exact Tokyo menu state, 2026-08-30 08:44 UTC (computed from data, not agent-status.mjs)
+580 visible Tokyo records (down from 583 — 3 more hidden as closed/hijacked-domain by
+interactive sessions since the last entry), 163 with an inline menu (28.1%), gap 417.
+Since the last grinder entry, interactive sessions (working egress) advanced s0 to
+15/15 researched and s5/s7 partially (s5 8->13/15, s7 8->10/15), plus hid 3 closed/bad
+records. This run's own Step 1 found 0 NEW Tokyo verdicts to merge (already landed by
+those interactive sessions) but did pick up real content refinement (2 item notes
+rewritten fuller, banner-copy cleanup) — see docs/GRINDER-LOG.md 2026-08-30T08:44:08Z.
 
 **Verdict-file research status (all 15 ids present in the shard's verdict file = fully
 researched, whether or not each one merged a menu):**
-COMPLETE (15/15 researched): s1, s2, s3, s4, s6, s11, s12, s13 — 8 shards.
-PARTIAL: s0 14/15 (1 left — fewest by far now), s5 8/15 (7 left), s7 8/15 (7 left),
-s8 7/15 (8 left), s9 3/15 (12 left), s10 2/15 (13 left) — 48 records left across
-started-but-partial shards (missing-menu counts per shard: s0:1 s2:4 s4:1 s5:7 s6:3
-s7:7 s8:8 s9:12 s10:13 s13:1 — s1/s11/s12 fully merged with 0 gap). Unstarted shards
-(s14-s38, 25 shards) missing 365 records (individually verified against verdict
-files this run, not just gap-estimated).
+COMPLETE (15/15 researched): s0, s1, s2, s3, s4, s6, s11, s12, s13 — 9 shards.
+PARTIAL: s5 13/15 (2 left — fewest by far now), s7 10/15 (5 left), s8 7/15 (8 left),
+s9 3/15 (12 left), s10 2/15 (13 left) — 40 records left across started-but-partial
+shards (missing-menu counts per shard, visible records only: s0:1 s2:4 s3:2 s4:1 s5:1
+s6:3 s7:4 s8:8 s9:12 s10:13 s13:1 — s1/s11/s12 fully merged with 0 gap). Unstarted
+shards (s14-s38, 25 shards) missing 359 records (individually verified against
+verdict files this run, not just gap-estimated).
 
 **Next dispatch once egress is unblocked (this session's own probe is still `000`/proxy-403
-CONNECT rejection, 13th consecutive run): s0 (1 left) finishes almost for free —
-do it first — then s5/s7 (7 each, take s5 as lower-numbered) — then s8 (8) —
-then s9 (12) / s10 (13) — only start s14 once s0-s13 are all fully researched.**
+CONNECT rejection, 14th consecutive run): s5 (2 left) finishes almost for free —
+do it first — then s7 (5 left) — then s8 (8) — then s9 (12) / s10 (13) — only start
+s14 once s0-s13 are all fully researched.**
 
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
