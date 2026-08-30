@@ -1,28 +1,41 @@
-# Resume here — updated 2026-08-30 08:44 UTC, grinder run (14th consecutive blocked run for THIS session)
+# Resume here — updated 2026-08-30 16:43 UTC, grinder run (15th consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-08-30 08:44 UTC (computed from data, not agent-status.mjs)
-580 visible Tokyo records (down from 583 — 3 more hidden as closed/hijacked-domain by
-interactive sessions since the last entry), 163 with an inline menu (28.1%), gap 417.
-Since the last grinder entry, interactive sessions (working egress) advanced s0 to
-15/15 researched and s5/s7 partially (s5 8->13/15, s7 8->10/15), plus hid 3 closed/bad
-records. This run's own Step 1 found 0 NEW Tokyo verdicts to merge (already landed by
-those interactive sessions) but did pick up real content refinement (2 item notes
-rewritten fuller, banner-copy cleanup) — see docs/GRINDER-LOG.md 2026-08-30T08:44:08Z.
+## Exact Tokyo menu state, 2026-08-30 16:43 UTC (computed from data, not agent-status.mjs)
+580 visible Tokyo records, 169 with an inline menu (29.1%), gap 411. Since the last
+grinder entry (08:44Z), interactive sessions (working egress) finished s5 (13/13
+researched) and s7 (14/14 researched) — both landed via commits 47ec0ce ("234 blank
+diet flags across 8 shards") and c28cf09 ("Shard s7 closed") before this run started.
+This run's own Step 1 found 0 NEW Tokyo verdicts to merge (already landed by those
+interactive sessions) but did pick up real content refinement (toba_kyubei notes
+re-synced fuller, 2 tokyo item notes enriched, banner-copy cleanup) — see
+docs/GRINDER-LOG.md 2026-08-30T16:43:17Z.
 
-**Verdict-file research status (all 15 ids present in the shard's verdict file = fully
-researched, whether or not each one merged a menu):**
-COMPLETE (15/15 researched): s0, s1, s2, s3, s4, s6, s11, s12, s13 — 9 shards.
-PARTIAL: s5 13/15 (2 left — fewest by far now), s7 10/15 (5 left), s8 7/15 (8 left),
-s9 3/15 (12 left), s10 2/15 (13 left) — 40 records left across started-but-partial
-shards (missing-menu counts per shard, visible records only: s0:1 s2:4 s3:2 s4:1 s5:1
-s6:3 s7:4 s8:8 s9:12 s10:13 s13:1 — s1/s11/s12 fully merged with 0 gap). Unstarted
-shards (s14-s38, 25 shards) missing 359 records (individually verified against
-verdict files this run, not just gap-estimated).
+**Corrected methodology this run: distinguish UNRESEARCHED (id absent from the shard's
+verdict file — needs dispatch) from RESEARCHED-BUT-HONEST-EMPTY (id present in the
+verdict file with no menu found — already done, does NOT need re-dispatch). Prior
+RESUME entries conflated these under one "missing" count, which overstated the real
+remaining work.**
+
+**Verdict-file research status:**
+FULLY RESEARCHED (0 unresearched ids; some honest-empties, which is correct/complete):
+s0 (1 honest-empty: tokyo_bistro_kojiya), s1 (0), s2 (4: tokyo_andhra_dining_shibuya,
+tokyo_trevo_trevo_coffee_meals, tokyo_kissado, tokyo_matsuou), s3 (2:
+tokyo_asakusa_hirayama, tokyo_teishoku_sato), s4 (1: tokyo_ramen_kamo_to_negi_eato_),
+s5 (1: tokyo_vegan_sushi_tokyo), s6 (3: tokyo_katsuraan_suidobashi,
+tokyo_vege_fondue_shibuya, tokyo_india_fujiko), s7 (1: tokyo_sensing_touch_of_earth),
+s11 (0), s12 (0), s13 (1: tokyo_shinjuku_yataien) — **12 of 14 started shards are now
+fully researched**, only 16 honest-empties among them, 0 actually needing work.
+STILL PARTIAL (real unresearched records, these are the only started-shard gap):
+**s8 5 left, s9 12 left, s10 13 left — 30 records total.**
+Unstarted shards (s14-s38, 25 shards) missing 359 records (verified against verdict
+files, not gap-estimated). 30+359=389 vs the 411 gap (residual = honest-empties
+counted in the gap total, which is correct — they're visible records with no menu,
+just not ones that need re-research).
 
 **Next dispatch once egress is unblocked (this session's own probe is still `000`/proxy-403
-CONNECT rejection, 14th consecutive run): s5 (2 left) finishes almost for free —
-do it first — then s7 (5 left) — then s8 (8) — then s9 (12) / s10 (13) — only start
-s14 once s0-s13 are all fully researched.**
+CONNECT rejection, 15th consecutive run): s8 (5 left) is now the fewest by far —
+do it first — then s9 (12) — then s10 (13) — only start s14 once s0-s13 are all
+fully researched. s5 and s7 are DONE, drop them from the dispatch list.**
 
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
