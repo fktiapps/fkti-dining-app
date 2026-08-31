@@ -3014,5 +3014,769 @@
     "dish_key": "ramen"
    }
   ]
+ },
+ "tokyo_chuka_soba_katsumoto": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://katsumoto-japan.com/en/chukasoba_katsumoto.html"
+  ],
+  "price_note": "Read from the shop's own English page; prices stated tax-inclusive by the shop. No allergen statement. ⚠ THE NAMING TRAP IS THE WHOLE STORY HERE, and it is worth stating because this dataset will keep meeting it: 中華そば means RAMEN. The そば is a historical usage meaning \"noodle\", not buckwheat — so a coeliac scanning for そば and hoping for buckwheat finds wheat. The shop is explicit that its 中細麺 are made for it alone by 浅草開化楼, a specialist noodle maker, which is a mark of quality and not of composition. Every bowl here is wheat. The rice dishes are the only part of the board that is not, and they are recorded with their own caveats. Frozen three-portion sets are sold to take away and via Amazon.",
+  "last_checked": "2026-08-31",
+  "items": [
+   {
+    "ja": "中華そば",
+    "romaji": "chūka soba",
+    "en": "Chuka soba — the standard bowl, with medium-thin noodles made exclusively for the shop by Asakusa Kaikaro, described as firm, springy and smooth",
+    "price": "¥950",
+    "section": "中華そば Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chuka soba noodles are WHEAT — the そば in the name never means buckwheat, and this shop states its noodles are made exclusively for it by 浅草開化楼, a wheat-noodle maker. A clear ramen broth is built on a soy-based tare over chicken and fish stock, so the soup is a second wheat route and rules out vegan independently.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "味玉中華そば",
+    "romaji": "ajitama chūka soba",
+    "en": "Chuka soba with a seasoned soft-boiled egg",
+    "price": "¥1,100",
+    "section": "中華そば Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chuka soba noodles are WHEAT — the そば in the name never means buckwheat, and this shop states its noodles are made exclusively for it by 浅草開化楼, a wheat-noodle maker. 味玉 is an egg marinated in a soy tare — wheat again, and egg rules out vegan.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "チャーシュー中華そば",
+    "romaji": "chāshū chūka soba",
+    "en": "Chuka soba with chashu pork",
+    "price": "¥1,300",
+    "section": "中華そば Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chuka soba noodles are WHEAT — the そば in the name never means buckwheat, and this shop states its noodles are made exclusively for it by 浅草開化楼, a wheat-noodle maker. Chashu is braised in soy sauce.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "替玉",
+    "romaji": "kaedama",
+    "en": "Extra noodles",
+    "price": "¥200",
+    "section": "中華そば Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A second helping of the same wheat noodle.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "焼海苔",
+    "romaji": "yaki nori",
+    "en": "Roasted seaweed topping",
+    "price": "¥150",
+    "section": "トッピング Toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain toasted seaweed — sheet nori and nothing else, which makes it one of only two toppings here with no route to either diet. Note this holds only for 焼海苔; 味付海苔 would be seasoned with soy.",
+    "dish_key": "nori"
+   },
+   {
+    "ja": "味付玉子",
+    "romaji": "ajitsuke tamago",
+    "en": "Seasoned boiled egg",
+    "price": "¥150",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Marinated in a soy tare. Egg.",
+    "dish_key": "tamago"
+   },
+   {
+    "ja": "ねぎ",
+    "romaji": "negi",
+    "en": "Scallions",
+    "price": "¥150",
+    "section": "トッピング Toppings",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Sliced spring onion — the other clean topping on the board.",
+    "dish_key": "topping"
+   },
+   {
+    "ja": "味付メンマ",
+    "romaji": "ajitsuke menma",
+    "en": "Seasoned bamboo shoots",
+    "price": "¥150",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Bamboo shoot is a plant and vegan, but this one is 味付 — seasoned, which at a ramen shop means soy sauce. A neat illustration of the two axes disagreeing on a single ¥150 topping.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "バラチャーシュー3枚",
+    "romaji": "bara chāshū sanmai",
+    "en": "Three slices of pork belly chashu",
+    "price": "¥300",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-braised pork.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "ライス",
+    "romaji": "raisu",
+    "en": "Rice",
+    "price": "¥200",
+    "section": "ごはん Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice — the one thing in this shop with no route to either diet. Large ¥250.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "玉子かけご飯（塩昆布）",
+    "romaji": "tamago kake gohan (shio konbu)",
+    "en": "Rice with raw egg and dried salted kelp",
+    "price": "¥400",
+    "section": "ごはん Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw egg rules out vegan, and TKG is dressed with soy sauce as a matter of course. 塩昆布 is also commonly seasoned with soy in manufacture — two routes in a dish that looks like rice and an egg.",
+    "dish_key": "tkg"
+   },
+   {
+    "ja": "豚バラ土鍋ご飯",
+    "romaji": "buta bara donabe gohan",
+    "en": "Pork belly claypot rice",
+    "price": "¥400",
+    "section": "ごはん Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Claypot rice is cooked in a seasoned stock, and pork belly at a ramen shop is soy-braised.",
+    "dish_key": "donburi"
+   },
+   {
+    "ja": "冷凍中華そば 3食",
+    "romaji": "reitō chūka soba sanshoku",
+    "en": "Frozen chuka soba to take away, three portions",
+    "price": "¥2,800",
+    "section": "お土産 Souvenirs",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The same wheat noodles and soy-based soup, frozen. Two portions ¥2,000, one ¥1,100. Also sold via Amazon.",
+    "dish_key": "ramen"
+   }
+  ]
+ },
+ "tokyo_vegego_miyashita_park": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://kichiri.jp/vegego/miyashita-park/",
+   "https://vegego.co/",
+   "https://vegego.co/mall-restaurant/",
+   "https://vegego.co/wp-content/uploads/2025/12/mallrestaurant_menu.pdf",
+   "https://tabelog.com/tokyo/A1303/A130301/13264423/dtlmenu/"
+  ],
+  "price_note": "⚠⚠ READ THE NAME CAREFULLY: VEGEGO IS NOT A VEGAN RESTAURANT. This is the correction this record exists to make. The name and the brand's 野菜 framing read as plant-based, and it is not — the chain's own site presents 究極のスンドゥブ made with BEEF AND SEAFOOD and 自家製サムゲタン, a chicken soup, among its four signature dishes, and the Tokyo branch is filed on Tabelog as 韓国料理. It is a vegetable-forward Korean restaurant, which is a different thing entirely, and anyone arriving on the strength of the name would be misled. NO PRICES ARE RECORDED, and here is exactly why: the branch page carries no menu, the Tabelog menu page returns 404, and the chain publishes its mall-format board only as a PDF whose text layer is EMPTY — it is an image, so nothing in it can be read. The dish names below come from the chain's own site; the board is the mall format rather than this branch specifically, so it may vary. No allergen, gluten or vegan statement appears anywhere on any page read. RAYARD MIYASHITA PARK South 3F, 11:00–21:00.",
+  "last_checked": "2026-08-31",
+  "items": [
+   {
+    "ja": "石焼ビビンバ",
+    "romaji": "ishiyaki bibinba",
+    "en": "Stone-grilled bibimbap",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Rice and vegetables in a hot stone bowl, which is why people assume bibimbap is safe — but it is dressed with gochujang, and Korean chilli paste is traditionally made with wheat flour or barley malt, a gluten route most people never associate with Korean food. Normally topped with a fried egg, and often minced beef.",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "特製ビビンバ",
+    "romaji": "tokusei bibinba",
+    "en": "The house special bibimbap — the chain describes it as vegetable-heavy",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Named by the chain as a signature. Same gochujang question as the stone-bowl version; the vegetable emphasis narrows the vegan question without answering it, since bibimbap conventionally carries egg and beef.",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "プレミアムチーズダッカルビ",
+    "romaji": "puremiamu chīzu takkarubi",
+    "en": "Premium cheese dakgalbi",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dakgalbi is chicken marinated in gochujang, and the cheese is dairy — out on both axes.",
+    "dish_key": "dakgalbi"
+   },
+   {
+    "ja": "塩麹漬厚切りサムギョプサル",
+    "romaji": "shio kōji zuke atsugiri samugyopusaru",
+    "en": "Thick-cut samgyeopsal marinated in salt koji",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Worth one question rather than a flat no: 塩麹 is rice koji and salt, which unlike a soy marinade has no wheat in its classic form — so the pork itself may be clean. Samgyeopsal is conventionally eaten with ssamjang, a soybean-and-gochujang paste, which is not. Ask whether it can come without.",
+    "dish_key": "samgyeopsal"
+   },
+   {
+    "ja": "究極の平壌冷麺",
+    "romaji": "kyūkyoku no pyonyan reimen",
+    "en": "Ultimate Pyongyang naengmyeon",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The most interesting item here for a coeliac and it is genuinely open. Pyongyang-style naengmyeon is classically BUCKWHEAT with a little potato starch — not wheat, unlike Japanese 冷やし中華 — and a shop naming the Pyongyang style specifically is claiming that tradition. Nothing states the ratio, and Korean buckwheat noodles are commonly cut with wheat or sweet potato starch. The broth is a chilled beef or dongchimi stock. Worth asking the ratio.",
+    "dish_key": "reimen"
+   },
+   {
+    "ja": "究極のスンドゥブ",
+    "romaji": "kyūkyoku no suntūbu",
+    "en": "Ultimate sundubu — the chain states it is made with beef and seafood",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The dish that most clearly disproves the name: the chain itself describes this soft-tofu stew as containing BEEF AND SEAFOOD. The broth is gochujang- and gochugaru-based.",
+    "dish_key": "nabe"
+   },
+   {
+    "ja": "自家製サムゲタン",
+    "romaji": "jikasei samugetan",
+    "en": "House-made samgyetang — ginseng chicken soup with vegetables",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken, so never vegan. But the best coeliac prospect on this board and worth naming as such: samgyetang is a whole chicken stuffed with glutinous RICE, ginseng and jujube, simmered in plain water and salted at the table — no soy sauce and no gochujang in the classic build, which is what rules out nearly everything else here. Undeclared, so still ask.",
+    "dish_key": "samgyetang"
+   },
+   {
+    "ja": "本格仕込みの水キムチ",
+    "romaji": "honkaku jikomi no mizu kimuchi",
+    "en": "Properly made water kimchi",
+    "price": "",
+    "section": "グランドメニュー Grand menu",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A better prospect than ordinary kimchi on both axes, which is worth knowing: 水キムチ is fermented in a light brine rather than the chilli-and-seafood paste used for 白菜キムチ, so it is more often free of both the salted seafood and the wheat-flour porridge that make regular kimchi a double question. Neither is declared here, so it is still a question — just a more hopeful one.",
+    "dish_key": "kimchi"
+   },
+   {
+    "ja": "クロップル",
+    "romaji": "kuroppuru",
+    "en": "Croffle",
+    "price": "",
+    "section": "デザート Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A croffle is croissant dough pressed in a waffle iron — wheat pastry, and croissant dough is made with butter.",
+    "dish_key": "pastry"
+   }
+  ]
+ },
+ "tokyo_uogashi_nihon_ichi_tachi": {
+  "verified": "authoritative",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1303/A130301/13052346/dtlmenu/",
+   "https://www.susinippan.co.jp/locations/"
+  ],
+  "price_note": "⚠⚠ THE PRICES BELOW ARE ALMOST CERTAINLY WRONG NOW, and that matters more than usual here. This menu carries an update date of 2017/11/13 — nearly nine years old — and its cheapest band is 1貫75円 (¥81 with tax). A standing sushi bar in Shibuya at ¥81 a piece in 2026 is not credible, so treat every figure as a historical record of the shop's BAND STRUCTURE rather than as money. The structure itself is the useful part and is likely to have survived: neta are grouped into fixed price tiers, everything is served two pieces at a time, and the hand-rolls sit on their own flat prices. ⚠ ON GLUTEN, THE ANSWER IS SIMPLE AND IT IS NOT ABOUT THE FISH: raw fish and vinegared rice contain no wheat, so almost everything here is ask rather than no — what rules a piece out is the SOY SAUCE it is dipped in, and at a standing counter the bottle is communal. Four items are settled rather than askable because the wheat is cooked into them: the 玉子, the soy-simmered 煮あさり and あなご, the 納豆 with its sachet tare, and the かんぴょう. Nothing here is vegan except the cucumber roll, and even that depends on the soy. No allergen statement. No reservations; standing only.",
+  "last_checked": "2026-08-31",
+  "items": [
+   {
+    "ja": "北寄貝",
+    "romaji": "hokkigai",
+    "en": "Surf clam — winter seasonal",
+    "price": "¥216",
+    "section": "セットメニュー 冬 獲れ旬魚 Winter seasonal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "かにみそ合盛軍艦",
+    "romaji": "kanimiso aimori gunkan",
+    "en": "Mixed crab-tomalley gunkan — winter seasonal",
+    "price": "¥162",
+    "section": "セットメニュー 冬 獲れ旬魚 Winter seasonal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A gunkan is wrapped in nori, which is seaweed rather than wheat. Crab tomalley preparations are often seasoned with soy or sake.  Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "煮あさり",
+    "romaji": "ni-asari",
+    "en": "Simmered clam",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "煮 means simmered, and at a sushi counter that means a soy-and-mirin broth — the wheat is cooked into the topping before any dipping. Settled rather than askable. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "焼きゲソ",
+    "romaji": "yaki geso",
+    "en": "Grilled squid legs",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Grilled squid is normally brushed with a soy-based tare as it cooks; undeclared. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "生げそ",
+    "romaji": "nama geso",
+    "en": "Raw squid legs",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "玉子",
+    "romaji": "tamago",
+    "en": "Sweet omelette",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The one nigiri on this board that is settled against rather than askable: sushi tamago is a sweet omelette made with mirin and soy sauce, and many shops bind it with flour or grated yam. It looks like the safest thing on the counter and is one of the least safe. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "やりいか",
+    "romaji": "yari ika",
+    "en": "Spear squid",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "サーモン",
+    "romaji": "sāmon",
+    "en": "Salmon",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "生たこ",
+    "romaji": "nama tako",
+    "en": "Raw octopus",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "とろサーモン",
+    "romaji": "toro sāmon",
+    "en": "Fatty salmon",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "かにみそ軍艦",
+    "romaji": "kanimiso gunkan",
+    "en": "Crab tomalley gunkan",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Wrapped in nori rather than anything wheat; the tomalley seasoning is undeclared and often soy-based. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "あなご",
+    "romaji": "anago",
+    "en": "Conger eel",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Anago is simmered in a soy broth and brushed with a soy-based ツメ glaze — the wheat is in the dish, not the dipping bowl. Settled. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "えび",
+    "romaji": "ebi",
+    "en": "Prawn",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "つぶ貝",
+    "romaji": "tsubugai",
+    "en": "Whelk",
+    "price": "¥75",
+    "section": "《75円ネタ》 ¥75 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "しめさば",
+    "romaji": "shime saba",
+    "en": "Vinegar-cured mackerel",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cured in salt and vinegar rather than soy, which is why it is worth asking about — but rice vinegar is the norm and is not declared. The SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "びんちょうまぐろ",
+    "romaji": "binchō maguro",
+    "en": "Albacore tuna",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "アボカド",
+    "romaji": "abokado",
+    "en": "Avocado",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only plant neta on the board, and therefore the only nigiri a vegan could consider — rice, avocado and nori. What is undeclared is the soy it is eaten with and whether the sushi rice itself is seasoned with anything beyond vinegar, sugar and salt. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "真あじ",
+    "romaji": "ma-aji",
+    "en": "Horse mackerel",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "えんがわ",
+    "romaji": "engawa",
+    "en": "Flounder fin muscle",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "漬けまぐろ",
+    "romaji": "zuke maguro",
+    "en": "Marinated tuna",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "漬け means marinated, and a tuna zuke marinade is SOY SAUCE — the wheat is already on the fish before it reaches the counter. Settled rather than askable. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "天然まぐろ",
+    "romaji": "tennen maguro",
+    "en": "Wild tuna",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "いわし",
+    "romaji": "iwashi",
+    "en": "Sardine",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "こはだ",
+    "romaji": "kohada",
+    "en": "Gizzard shad",
+    "price": "¥100",
+    "section": "《100円ネタ》 ¥100 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Kohada is cured in salt and vinegar rather than soy, so the fish itself is likely clean. The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "上赤身",
+    "romaji": "jō akami",
+    "en": "Premium lean tuna",
+    "price": "¥150",
+    "section": "《150円ネタ》 ¥150 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "かんぱち",
+    "romaji": "kanpachi",
+    "en": "Amberjack",
+    "price": "¥150",
+    "section": "《150円ネタ》 ¥150 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "真鯛",
+    "romaji": "madai",
+    "en": "Red sea bream",
+    "price": "¥150",
+    "section": "《150円ネタ》 ¥150 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "いくら軍艦",
+    "romaji": "ikura gunkan",
+    "en": "Salmon roe gunkan",
+    "price": "¥200",
+    "section": "《200円ネタ》 ¥200 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Ikura is cured in a soy-and-sake marinade — settled rather than askable, and a common surprise because the roe looks unseasoned. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "ひらめ",
+    "romaji": "hirame",
+    "en": "Flounder",
+    "price": "¥200",
+    "section": "《200円ネタ》 ¥200 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "生ほたて",
+    "romaji": "nama hotate",
+    "en": "Raw scallop",
+    "price": "¥200",
+    "section": "《200円ネタ》 ¥200 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "活ほっき貝",
+    "romaji": "katsu hokkigai",
+    "en": "Live surf clam",
+    "price": "¥200",
+    "section": "《200円ネタ》 ¥200 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "金目鯛",
+    "romaji": "kinmedai",
+    "en": "Splendid alfonsino",
+    "price": "¥200",
+    "section": "《200円ネタ》 ¥200 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "中トロ",
+    "romaji": "chū-toro",
+    "en": "Medium fatty tuna",
+    "price": "¥250",
+    "section": "《250円ネタ》 ¥250 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "大トロ",
+    "romaji": "ō-toro",
+    "en": "Fatty tuna belly",
+    "price": "¥300",
+    "section": "《300円ネタ》 ¥300 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "うに軍艦",
+    "romaji": "uni gunkan",
+    "en": "Sea urchin gunkan",
+    "price": "¥300",
+    "section": "《300円ネタ》 ¥300 band",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Wrapped in nori. Uni is often preserved with alum rather than soy; the dipping soy is still the question. Served two pieces at a time; the price shown is per piece.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "葉わさび",
+    "romaji": "hawasabi",
+    "en": "Wasabi-leaf hand roll",
+    "price": "¥70",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The cheapest thing on the board and, with the cucumber roll, one of only two items here with no animal ingredient. Wasabi leaf is normally pickled in a soy-and-mirin brine, which would be the wheat route — ask.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "梅しそ",
+    "romaji": "ume shiso",
+    "en": "Plum and shiso hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Pickled plum and shiso leaf in rice and nori — plant throughout. Umeboshi is cured in salt rather than soy in its traditional form, though seasoned versions exist. Ask.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "おしんこ",
+    "romaji": "oshinko",
+    "en": "Pickled vegetable hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Japanese pickles are frequently steeped in a soy or mirin brine, and some are cured with bonito. Which pickle is not stated.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "かっぱ",
+    "romaji": "kappa",
+    "en": "Cucumber hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Cucumber, rice and nori — the only unambiguously vegan item on this menu, and the best coeliac prospect too, since nothing in it needs wheat. The soy you dip it in is the only question.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "かんぴょう",
+    "romaji": "kanpyō",
+    "en": "Dried gourd hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "A trap worth knowing: kanpyo is dried gourd, entirely plant, and would read as the safest roll on the board — but it is always simmered in soy sauce, mirin and sugar before it goes into the roll. Vegan yes, gluten no. The two axes disagreeing on a strip of dried gourd.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "鉄火",
+    "romaji": "tekka",
+    "en": "Tuna hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice, tuna and nori. The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "納豆",
+    "romaji": "nattō",
+    "en": "Fermented soybean hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Natto itself is soybeans and nothing else, and would suit a vegan — but it ships with a soy-sauce タレ sachet that is stirred in before rolling, and some sachets contain bonito extract. Wheat from the tare.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "ねぎとろ",
+    "romaji": "negitoro",
+    "en": "Minced fatty tuna and spring onion hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish and the rice carry no wheat; the SOY SAUCE does, and sushi is eaten with it. Ask whether tamari is available.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "穴きゅう",
+    "romaji": "anakyū",
+    "en": "Conger eel and cucumber hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The anago is simmered in soy and glazed with a soy-based tsume.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "とろたく",
+    "romaji": "torotaku",
+    "en": "Fatty tuna and pickled radish hand roll",
+    "price": "¥200",
+    "section": "《手巻き》 Hand rolls",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Takuan is a salt-and-rice-bran pickle rather than a soy one, so the pickle is likely clean; the tuna and the dipping soy are the questions.",
+    "dish_key": "temaki"
+   }
+  ]
  }
 }
