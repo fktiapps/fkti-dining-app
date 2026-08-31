@@ -2452,5 +2452,567 @@
     "dish_key": "shuto"
    }
   ]
+ },
+ "tokyo_waiwaitei": {
+  "verified": "authoritative",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1310/A131003/13034682/dtlmenu/"
+  ],
+  "price_note": "⚠ TWO PRICE WARNINGS, BOTH FROM TABELOG ITSELF. First, this menu carries an update date of 2019/06/24 — it is about seven years old, so treat every figure as historical. Second, Tabelog states 「税込金額か不明の価格です。正確な価格は店舗へ直接ご確認ください」: it does not know whether these prices include tax. Most records in this dataset state tax-inclusive prices; this is the second one that cannot. ⚠ THE ONE THING ON THIS MENU WORTH A COELIAC'S ATTENTION, and it needs stating carefully because it is not confirmed: the pizza section contains a line reading 野菜ライス生地PIZZA — a vegetable RICE-DOUGH pizza. A rice-flour base at an Italian restaurant would be a genuine find. But the listing is ambiguous about whether that line is a dish or a heading introducing a rice-dough crust option for the pizzas beneath it, it carries no price, and NO GLUTEN-FREE CLAIM IS MADE ANYWHERE. Even if the base is rice, it would be rolled on the same bench and baked in the same oven as wheat dough. Worth a phone call; not worth an assumption. A second alternative crust, じゃことたまご生地PIZZA (whitebait and egg dough, ¥800), sits nearby and is equally undescribed. Otherwise this is a pasta-and-pizza house and the answer is uniform. Two accommodation notes the shop does volunteer: 「辛さ調整いたします」 (heat adjusted to taste) and 「ご要望ございましたらその他お作りいたします」 (they will make other things on request) — which is the sort of kitchen where asking is worth doing. Pasta and penne in 1.5 size +¥200. 西神田2-7-5, five minutes from Jimbocho or Suidobashi.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "本場スイス産 ラクレットチーズ + フランスパン",
+    "romaji": "rakuretto chīzu + furansu pan",
+    "en": "Swiss raclette cheese with French bread",
+    "price": "¥900",
+    "section": "ラクレット Raclette",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The cheese itself carries no wheat; the French bread it is poured over does. Dairy.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "ラクレットチーズ + ボイルじゃがいも",
+    "romaji": "rakuretto chīzu + boiru jagaimo",
+    "en": "Raclette with boiled potato",
+    "price": "¥950",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The one raclette pairing with no bread in it — potato and melted cheese, which is the traditional Swiss serving and has no wheat route of its own. Dairy rules out vegan. Nothing is declared, and the cheese sits under a grill shared with the bread versions.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "ラクレットチーズ + プリプリ海老",
+    "romaji": "rakuretto chīzu + puripuri ebi",
+    "en": "Raclette with plump prawns",
+    "price": "¥1,260",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Prawn and cheese; preparation of the prawn undeclared.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "ラクレットチーズ + チョー辛口チョリソー",
+    "romaji": "rakuretto chīzu + chorizo",
+    "en": "Raclette with very hot chorizo",
+    "price": "¥1,200",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sausages are commonly bulked with wheat rusk; undeclared.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "ラクレットチーズ + バーニャカウダー",
+    "romaji": "rakuretto chīzu + bānya kaudā",
+    "en": "Raclette with bagna cauda",
+    "price": "¥1,100",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Bagna cauda is anchovy, garlic and oil — no wheat in the dip, but it is normally served with bread. Anchovy rules out vegan.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "ラクレットチーズ + 生ハム",
+    "romaji": "rakuretto chīzu + nama hamu",
+    "en": "Raclette with prosciutto",
+    "price": "¥1,680",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cured pork and cheese.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "ラクレットチーズ + 牡蠣",
+    "romaji": "rakuretto chīzu + kaki",
+    "en": "Raclette with oysters",
+    "price": "¥1,480",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Oyster preparation undeclared — if breaded, wheat.",
+    "dish_key": "raclette"
+   },
+   {
+    "ja": "替え玉",
+    "romaji": "kaedama",
+    "en": "Noodle refill",
+    "price": "¥300",
+    "section": "ラクレット Raclette",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A wheat noodle refill.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "単品チーズ（その他のトッピング）",
+    "romaji": "tanpin chīzu",
+    "en": "Extra cheese, or other toppings",
+    "price": "¥600",
+    "section": "ラクレット Raclette",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "cheese"
+   },
+   {
+    "ja": "単品今焼きフランスパン",
+    "romaji": "tanpin imayaki furansu pan",
+    "en": "Freshly baked French bread on its own",
+    "price": "¥200",
+    "section": "ラクレット Raclette",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Wheat bread. Vegan is ask rather than no — a plain baguette is normally flour, water, salt and yeast, but enriched versions contain butter or milk.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "健康的キムチとベーコン豆乳カルボナーラ",
+    "romaji": "kenkōteki kimuchi to bēkon tōnyū karubonāra",
+    "en": "Healthy kimchi and bacon soy-milk carbonara",
+    "price": "¥1,260",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. The soy milk is a dairy substitution rather than a vegan one — the dish still has bacon and normally egg, and kimchi carries its own salted-seafood question. Half size ¥960.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "博多カネフク明太子のペペロンチーノ",
+    "romaji": "hakata kanefuku mentaiko no peperonchīno",
+    "en": "Hakata Kanefuku mentaiko peperoncino",
+    "price": "¥1,260",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Mentaiko is cured in a soy-based marinade. Half size ¥960.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "和的！！八丁味噌のボロネーゼ",
+    "romaji": "wateki hatchō miso no boronēze",
+    "en": "Japanese-style bolognese with Hatcho miso",
+    "price": "¥1,280",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. One detail worth knowing for elsewhere: 八丁味噌 is a 豆味噌, made from soybean and koji with NO barley or wheat, unlike the 麦味噌 that makes miso a gluten question in most Japanese kitchens. It does not rescue this dish — the pasta is still wheat — but it is the right miso to ask about. Half size ¥960.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "渡り蟹のトマトクリーム",
+    "romaji": "watarigani no tomato kurīmu",
+    "en": "Blue crab in tomato cream",
+    "price": "¥1,460",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Dairy. Half size ¥1,200.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "ウニのクリーム",
+    "romaji": "uni no kurīmu",
+    "en": "Sea urchin cream",
+    "price": "¥1,480",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Dairy. Half size ¥1,200.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "ペスカトーレ(魚介)",
+    "romaji": "pesukatōre",
+    "en": "Pescatore — seafood",
+    "price": "¥1,280",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Half size ¥980.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "厚切りベーコン濃厚カルボナーラ",
+    "romaji": "atsugiri bēkon nōkō karubonāra",
+    "en": "Thick-cut bacon rich carbonara",
+    "price": "¥1,420",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Egg, cheese and pork. Half size ¥980.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "アラビアータ",
+    "romaji": "arabiāta",
+    "en": "Arrabbiata",
+    "price": "¥1,200",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Pasta is durum WHEAT. The sauce is tomato, garlic and chilli, which would suit a vegan — Italian kitchens often finish it with cheese, so ask. Half size ¥960.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "激辛パンチェッタラグー",
+    "romaji": "gekikara pancchetta ragū",
+    "en": "Very hot pancetta ragù",
+    "price": "¥1,600",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Half size ¥1,260.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "海老とキノコ達のクリーム",
+    "romaji": "ebi to kinoko-tachi no kurīmu",
+    "en": "Prawn and assorted mushroom cream",
+    "price": "¥1,260",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Dairy. Half size ¥980.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "ボンゴレ（浅利）",
+    "romaji": "bongore (asari)",
+    "en": "Vongole with clams",
+    "price": "¥1,260",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Half size ¥980.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "オマール海老1/2",
+    "romaji": "omāru ebi",
+    "en": "Half lobster",
+    "price": "¥1,680",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "ゴルゴンゾーラ",
+    "romaji": "gorugonzōra",
+    "en": "Gorgonzola",
+    "price": "¥1,400",
+    "section": "パスタ・ペンネ Pasta and penne",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pasta is durum WHEAT. Dairy. Half size ¥1,230.",
+    "dish_key": "pasta"
+   },
+   {
+    "ja": "元祖マルゲリータ(大葉の香り)",
+    "romaji": "ganso marugerīta",
+    "en": "The original margherita, scented with shiso",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Mozzarella. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "チョリソーとパプリカ",
+    "romaji": "chorizo to papurika",
+    "en": "Chorizo and paprika pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "フレッシュトマトとアンチョビ",
+    "romaji": "furesshu tomato to anchobi",
+    "en": "Fresh tomato and anchovy pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "フレッシュトマトと海老のアラビアータ",
+    "romaji": "furesshu tomato to ebi no arabiāta",
+    "en": "Fresh tomato and prawn arrabbiata pizza",
+    "price": "¥1,200",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "たっぷりたまねぎ",
+    "romaji": "tappuri tamanegi",
+    "en": "Plenty-of-onion pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Pizza dough is wheat flour. Vegan is ask rather than no because the topping is onion — but pizza normally arrives with cheese unless specified otherwise. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ベーコンとキノコ達",
+    "romaji": "bēkon to kinoko-tachi",
+    "en": "Bacon and assorted mushroom pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ヘルシー高菜漬けと塩豆腐",
+    "romaji": "herushī takanazuke to shio dōfu",
+    "en": "Pickled takana and salted tofu pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Pizza dough is wheat flour. The topping is a genuine curiosity — pickled mustard greens and salted tofu, both plant — but takana is usually pickled in a soy brine, and the base is wheat regardless.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "アンチョビとオリーブ",
+    "romaji": "anchobi to orību",
+    "en": "Anchovy and olive pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ジェノベーゼとトマト",
+    "romaji": "jenobēze to tomato",
+    "en": "Genovese and tomato pizza",
+    "price": "¥1,480",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Pesto genovese normally contains parmesan. Half size ¥1,180.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "シーフードPIZZA",
+    "romaji": "shīfūdo pizza",
+    "en": "Seafood pizza",
+    "price": "¥1,480",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥1,180.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "キムチと卵PIZZA",
+    "romaji": "kimuchi to tamago pizza",
+    "en": "Kimchi and egg pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Egg, and kimchi carries a salted-seafood question. Half size ¥900.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ミートソース",
+    "romaji": "mīto sōsu",
+    "en": "Meat sauce pizza",
+    "price": "¥1,100",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "野菜ライス生地PIZZA",
+    "romaji": "yasai raisu kiji pizza",
+    "en": "Vegetable RICE-DOUGH pizza — no price listed",
+    "price": "",
+    "section": "ピッツァ Pizza",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONE LINE ON THIS MENU WORTH CHASING, AND IT IS NOT CONFIRMED. 生地 means DOUGH and ライス means rice, so this reads as a pizza built on a rice base rather than wheat — which at an Italian restaurant would be a real find. Three reasons it is recorded as ask rather than gf: the listing gives it no price and no description; it is ambiguous whether this is a single dish or a heading introducing a rice-dough option for the pizzas listed under it; and the shop makes NO gluten-free claim anywhere. Even a genuine rice base would be rolled on the same bench and baked in the same oven as wheat dough. Worth a phone call before a coeliac travels for it.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "クワトロフロマージュ",
+    "romaji": "kuwatoro furomājo",
+    "en": "Quattro formaggi",
+    "price": "¥1,600",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Four cheeses. Half size ¥1,200.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "生ハムとルッコラ",
+    "romaji": "nama hamu to rukkora",
+    "en": "Prosciutto and rocket pizza",
+    "price": "¥1,480",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥1,180.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "岩のりとゴルゴンゾーラチーズ",
+    "romaji": "iwanori to gorugonzōra chīzu",
+    "en": "Rock nori and gorgonzola pizza",
+    "price": "¥1,480",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Half size ¥1,180.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホタルイカ沖漬け岩のりPIZZA",
+    "romaji": "hotaruika okizuke iwanori pizza",
+    "en": "Firefly squid okizuke and rock nori pizza",
+    "price": "¥1,280",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. 沖漬け is squid cured in SOY SAUCE, so this one carries wheat in the topping as well as the base. Half size ¥1,100.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "じゃことたまご生地PIZZA",
+    "romaji": "jako to tamago kiji pizza",
+    "en": "Whitebait and egg-dough pizza",
+    "price": "¥800",
+    "section": "ピッツァ Pizza",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The second alternative-crust line on this menu: 生地 means dough, so this reads as an egg-based base rather than a wheat one. Like the rice-dough line it is undescribed and carries no gluten-free claim, and egg rules out vegan regardless. Ask.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "デザートPIZZA",
+    "romaji": "dezāto pizza",
+    "en": "Dessert pizza, from",
+    "price": "¥980〜",
+    "section": "ピッツァ Pizza",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pizza dough is wheat flour. Contents unspecified.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "チーズW",
+    "romaji": "chīzu daburu",
+    "en": "Double cheese",
+    "price": "¥300",
+    "section": "ピッツァ Pizza",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "cheese"
+   }
+  ]
+ },
+ "tokyo_hokkaido_meibutsu_ramen_": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://tabelog.com/tokyo/A1304/A130401/13163054/dtlmenu/",
+   "https://www.ebisoba.com/ig2651/"
+  ],
+  "price_note": "Prices tax-included as printed by the shop. No allergen statement. ⚠ Two straightforward facts and one worth pausing on. The straightforward ones: this is a ramen shop, ramen noodles are WHEAT, and every broth here is a 甘エビ (sweet shrimp) stock, so nothing on the board suits a vegan and nothing suits a coeliac. The one worth pausing on is the NOODLE CHOICE — the shop invites you to pick 太麺 or 細麺, thick or thin. That is the situation where someone might hope a shop offers a rice or buckwheat alternative, and here as at other shops in this dataset the choice is between two kinds of wheat. Recorded in full so the answer is visible rather than absent. No reservations; 西新宿7-8-2, three minutes from Shinjuku-nishiguchi.",
+  "last_checked": "2026-08-30",
+  "items": [
+   {
+    "ja": "えびみそラーメン",
+    "romaji": "ebi miso rāmen",
+    "en": "Shrimp miso ramen — the shop presents Hokkaido miso as its signature, a rich aromatic broth clinging to the noodles",
+    "price": "¥990",
+    "section": "ラーメン えびそばメニュー Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles. Miso is a second route worth naming: Japanese miso is frequently 麦味噌, BARLEY, which is not on Japan's statutory allergen list and so never appears on a label. The whole shop is built on a sweet-shrimp broth, so PRAWN is in everything including the rice ball — a single allergen running through the entire menu, which is worth knowing for anyone avoiding shellfish as well as for a vegan.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "えびしおラーメン",
+    "romaji": "ebi shio rāmen",
+    "en": "Shrimp salt ramen — the shop describes it as a shrimp-and-salt \"flavour of the sea\" pairing",
+    "price": "¥990",
+    "section": "ラーメン えびそばメニュー Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The 塩 version avoids the soy sauce and the miso, which at a yakitori or yakiniku counter would make it the askable option — but at a ramen shop the noodle is the problem and salt does not change it. The whole shop is built on a sweet-shrimp broth, so PRAWN is in everything including the rice ball — a single allergen running through the entire menu, which is worth knowing for anyone avoiding shellfish as well as for a vegan.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "えびしょうゆラーメン",
+    "romaji": "ebi shōyu rāmen",
+    "en": "Shrimp soy ramen — the shop describes the soy as bringing out the shrimp and giving the broth its depth",
+    "price": "¥990",
+    "section": "ラーメン えびそばメニュー Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles and 醤油 — soy sauce is wheat by default, so this bowl carries it twice. The whole shop is built on a sweet-shrimp broth, so PRAWN is in everything including the rice ball — a single allergen running through the entire menu, which is worth knowing for anyone avoiding shellfish as well as for a vegan.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "えびおにぎり",
+    "romaji": "ebi onigiri",
+    "en": "Shrimp rice ball — the shop calls it distinctive to Ebisoba Ichigen, strongly shrimp-flavoured",
+    "price": "¥250",
+    "section": "サイドメニュー Sides",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The only item here that is not a bowl of wheat noodles, and therefore the only one worth asking about: rice and shrimp with no dough anywhere. What is undeclared is the seasoning, and a shrimp flavouring at a ramen shop is normally built on the same soy-seasoned stock as the broth. The whole shop is built on a sweet-shrimp broth, so PRAWN is in everything including the rice ball — a single allergen running through the entire menu, which is worth knowing for anyone avoiding shellfish as well as for a vegan.",
+    "dish_key": "onigiri"
+   },
+   {
+    "ja": "一幻ギョーザ 6個",
+    "romaji": "ichigen gyōza rokko",
+    "en": "Ichigen gyoza, six pieces",
+    "price": "¥490",
+    "section": "サイドメニュー Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Gyoza wrappers are wheat, and the dipping sauce is soy and vinegar.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "麺の種類（太麺・細麺）",
+    "romaji": "men no shurui",
+    "en": "Choice of noodle — thick or thin",
+    "price": "",
+    "section": "ラーメン えびそばメニュー Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Not a dish but the shop's noodle choice, recorded because the choice is the point: 太麺 is described as chewy and holding the shrimp flavour, 細麺 as smoother going down. Both are WHEAT. A shop offering to change your noodle is exactly where a coeliac might reasonably ask whether a rice or buckwheat option exists; there is no sign of one here.",
+    "dish_key": "ramen"
+   }
+  ]
  }
 }
