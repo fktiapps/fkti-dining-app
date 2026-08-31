@@ -3809,5 +3809,239 @@
     "dish_key": "sake"
    }
   ]
+ },
+ "tokyo_sushi_oku": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13257709/",
+   "https://tabelog.com/en/tokyo/A1311/A131102/13257709/dtlmenu/"
+  ],
+  "price_note": "No published menu, and for this kind of restaurant that is normal rather than a gap: 鮨 奥 is an omakase counter, so there is no board to publish — the chef decides. The Tabelog menu page carries nothing. What follows is what visitors record eating on specific nights, so it is provisional in an unusually literal sense: THESE ARE NOT MENU ITEMS, THEY ARE ONE EVENING'S COURSE, and the next will differ. Tabelog gives a ¥20,000–29,999 band; visitors quote ¥25,000–35,000 a head. NO PRICES ARE GIVEN PER ITEM because none exist. ⚠ WHY THIS IS THE HARDEST FORMAT IN THE DATASET FOR A COELIAC, and it is worth stating plainly: at an omakase you do not choose, you cannot see the board in advance, and the courses arrive one at a time already dressed. At an Edomae counter the chef brushes 煮切り — a reduced SOY SAUCE — onto the fish before it reaches you, so the wheat arrives without being ordered and there is no dipping bowl to decline. Ask about tamari when booking, not at the counter. The specific traps visible in these accounts are 醤油漬け scallop, soy-cured いくら, soy-simmered 穴子 with its ツメ glaze, a 幽庵焼き marinade, a 天ぷら course, the 茶碗蒸し and 椀 which are both dashi, and the 干瓢巻き. That is most of a course. Booking is reported as very difficult and getting harder. Nothing here suits a vegan — it is a fish counter.",
+  "last_checked": "2026-08-31",
+  "items": [
+   {
+    "ja": "おまかせコース",
+    "romaji": "omakase kōsu",
+    "en": "Omakase course — tsumami followed by nigiri, contents decided by the chef and changing with the season and the day's market",
+    "price": "¥20,000〜",
+    "section": "コース Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The only thing this restaurant actually sells. At an Edomae counter the chef brushes 煮切り — a reduced SOY SAUCE — onto the fish before it reaches you, so the wheat arrives without being ordered and there is no dipping bowl to decline. Ask about tamari when booking, not at the counter. A set omakase also removes the ability to decline a single course. If a coeliac is going to eat here at all it has to be arranged at the time of booking, not on the night.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "ホタテの醤油漬け",
+    "romaji": "hotate no shōyu zuke",
+    "en": "Soy-marinated scallop, brushed with white sesame oil and lightly seared",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Recorded by a visitor. 醤油漬け is the name of the preparation — the scallop is cured IN soy sauce, so the wheat is in the fish before it is plated. Also appears as a nigiri in another visitor's account.",
+    "dish_key": "sashimi"
+   },
+   {
+    "ja": "クエの茶碗蒸し",
+    "romaji": "kue no chawanmushi",
+    "en": "Longtooth grouper chawanmushi — another visit had it with hamo and plum",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Savoury egg custard set with dashi. Bonito dashi rules out vegan, and the seasoning is normally 白だし or だし醤油, both soy-based.",
+    "dish_key": "chawanmushi"
+   },
+   {
+    "ja": "稚鮎の天ぷら",
+    "romaji": "chiayu no tenpura",
+    "en": "Young sweetfish tempura",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Recorded on a lunch visit. Tempura batter is WHEAT FLOUR — the one course here that is settled by its cooking rather than its seasoning.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "マナガツオ幽庵焼き",
+    "romaji": "managatsuo yūan yaki",
+    "en": "Butterfish grilled yuan style",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "no",
+    "vegan": "no",
+    "note": "幽庵焼き names its own marinade: soy sauce, sake, mirin and citrus. Grilled fish that is not salt-grilled is nearly always soy-marinated at a Japanese counter.",
+    "dish_key": "sakana"
+   },
+   {
+    "ja": "牡蠣のオイル漬け",
+    "romaji": "kaki no oiru zuke",
+    "en": "Oysters cured in oil",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Oil-cured rather than soy-cured, which is why this one is worth asking about — but Japanese oyster oil-cures are commonly started with a soy-and-mirin simmer before the oil.",
+    "dish_key": "kaki"
+   },
+   {
+    "ja": "毛蟹 醤油と酢橘",
+    "romaji": "kegani shōyu to sudachi",
+    "en": "Hair crab with soy sauce and sudachi",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The soy is named in the dish.",
+    "dish_key": "kani"
+   },
+   {
+    "ja": "お椀",
+    "romaji": "owan",
+    "en": "The soup course",
+    "price": "",
+    "section": "つまみ Tsumami",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A kaiseki 椀 is a clear dashi broth — bonito and kombu, seasoned with 薄口醤油. Both a vegan fact and a wheat one.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "握り（小肌・新イカ・トロ・鰹・鯵・車海老 ほか）",
+    "romaji": "nigiri",
+    "en": "The nigiri run — visitors record shinko, shin-ika, makogarei, toro, katsuo, aji, kuruma-ebi, tairagi, hamaguri and others, varying by night",
+    "price": "",
+    "section": "握り Nigiri",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Rice and raw fish carry no wheat in themselves, which is why sushi so often reads safe. At an Edomae counter the chef brushes 煮切り — a reduced SOY SAUCE — onto the fish before it reaches you, so the wheat arrives without being ordered and there is no dipping bowl to decline. Ask about tamari when booking, not at the counter. Individual neta are not listed separately here because they change every service; a visitor recording their 50th visit lists a different run each time.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "いくら",
+    "romaji": "ikura",
+    "en": "Salmon roe nigiri — a visitor notes it is seasoned strongly",
+    "price": "",
+    "section": "握り Nigiri",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ikura is cured in a soy-and-sake marinade, and the visitor's note that it is 濃いめに味がついて — seasoned on the strong side — describes exactly that cure.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "穴子",
+    "romaji": "anago",
+    "en": "Conger eel nigiri — a visitor names Tsushima anago",
+    "price": "",
+    "section": "握り Nigiri",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Anago is simmered in a soy broth and brushed with a soy-based ツメ glaze. A visitor mentions asking for extra ツメ, which is more of it.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "干瓢巻き",
+    "romaji": "kanpyō maki",
+    "en": "Dried gourd roll — the traditional close to an Edomae course",
+    "price": "",
+    "section": "握り Nigiri",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE TWO AXES DISAGREEING ON A STRIP OF DRIED GOURD, and it closes the meal. Kanpyo is dried calabash, entirely plant, and would read as the safest thing on the counter — but it is ALWAYS simmered in soy sauce, mirin and sugar before it is rolled. Vegan yes, gluten no. Recorded by more than one visitor as the final course.",
+    "dish_key": "temaki"
+   },
+   {
+    "ja": "玉",
+    "romaji": "tama",
+    "en": "Tamago — the sweet omelette that traditionally ends the course",
+    "price": "",
+    "section": "握り Nigiri",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sushi tamago is a sweet omelette made with mirin and soy sauce, and many counters bind it with flour or grated yam. It looks like the plainest thing served and is one of the least safe.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "とろたく巻",
+    "romaji": "torotaku maki",
+    "en": "Fatty tuna and pickled radish roll — ordered as an extra",
+    "price": "",
+    "section": "握り Nigiri",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Takuan is a salt-and-rice-bran pickle rather than a soy one, so the pickle is likely clean; the tuna and the nikiri are the questions.",
+    "dish_key": "sushi"
+   }
+  ]
+ },
+ "tokyo_yoriai": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1310/A131003/13298806/",
+   "https://tabelog.com/tokyo/A1310/A131003/13298806/dtlmenu/",
+   "https://www.instagram.com/___yori_ai/"
+  ],
+  "price_note": "No published menu and NO PRICES: the Tabelog menu page carries nothing, Tabelog shows no price band for the shop at all, and the record's stored website is an Instagram account, which is not a menu this dataset can cite. The dishes below come from visitor accounts, and none of them states a figure — so every item here carries an empty price rather than an invented one. ⚠ WHAT THE TEISHOKU FORMAT MEANS FOR BOTH DIETS, because it is the whole answer here: every set comes as a main plus ご飯, 豚汁 and 小鉢, and you cannot decline the accompaniments. The 豚汁 is pork and MISO — pork ends the vegan question and miso is frequently 麦味噌, BARLEY, which is not on Japan's statutory allergen list and so is never labelled. The 小鉢 rotate and one visitor records them as 磯辺揚げ (a nori-wrapped fried item, wheat batter) and 冷奴 (chilled tofu, normally poured with soy). So even a set whose main was clean would arrive with two or three wheat routes beside it. Generous on portions: rice is 大盛り無料 with one free refill. Takeout available; Saturdays open; counter seating, Showa-retro music.",
+  "last_checked": "2026-08-31",
+  "items": [
+   {
+    "ja": "メンチーズかつ定食",
+    "romaji": "menchīzu katsu teishoku",
+    "en": "Cheese menchi katsu set — two large round menchi katsu under a house aurora sauce with aonori, plus rice, tonjiru and a small dish",
+    "price": "",
+    "section": "定食 Set meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop's signature by both visitor accounts, also written チーズメンチカツ定食. Wheat several ways over: a menchi katsu is crumbed in PANKO and the patty is normally bound with breadcrumb, and オーロラソース is mayonnaise and ketchup, sometimes with a Worcester-style brown sauce. Cheese and pork rule out vegan.",
+    "dish_key": "katsu"
+   },
+   {
+    "ja": "豚汁",
+    "romaji": "tonjiru",
+    "en": "Pork and vegetable miso soup — comes with every set",
+    "price": "",
+    "section": "定食 Set meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Included with the sets and not optional. Two things to carry from it: pork means never vegan, and the miso is the gluten question — 麦味噌 is barley and Japanese allergen labelling does not cover it.",
+    "dish_key": "misoshiru"
+   },
+   {
+    "ja": "ご飯（大盛り無料・おかわり1回無料）",
+    "romaji": "gohan",
+    "en": "Rice — large portion free, one free refill",
+    "price": "",
+    "section": "定食 Set meals",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice, and the one component of every set with no route to either diet. The free large portion and free refill are the shop's own, recorded by a visitor.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "小鉢（磯辺揚げ・冷奴 ほか）",
+    "romaji": "kobachi",
+    "en": "The small dishes that come with a set — one visitor records isobe-age and chilled tofu",
+    "price": "",
+    "section": "定食 Set meals",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Rotating and not published, so what arrives is unknown in advance. The two a visitor names split the answer: 磯辺揚げ is nori-wrapped and BATTERED, so wheat, while 冷奴 is plain soybean tofu that would suit a vegan except that hiyayakko is served with soy sauce poured over it and often bonito flakes on top.",
+    "dish_key": "kobachi"
+   },
+   {
+    "ja": "サラダ",
+    "romaji": "sarada",
+    "en": "Salad with the house dressing",
+    "price": "",
+    "section": "定食 Set meals",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A visitor praises the dressing specifically; it is not described. Japanese house dressings are commonly soy-based and often contain bonito, so both axes turn on it.",
+    "dish_key": "salad"
+   }
+  ]
  }
 }
