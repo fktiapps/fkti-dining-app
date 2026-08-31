@@ -1,41 +1,35 @@
-# Resume here — updated 2026-08-30 16:43 UTC, grinder run (15th consecutive blocked run for THIS session)
+# Resume here — updated 2026-08-31 UTC, grinder run (16th consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-08-30 16:43 UTC (computed from data, not agent-status.mjs)
-580 visible Tokyo records, 169 with an inline menu (29.1%), gap 411. Since the last
-grinder entry (08:44Z), interactive sessions (working egress) finished s5 (13/13
-researched) and s7 (14/14 researched) — both landed via commits 47ec0ce ("234 blank
-diet flags across 8 shards") and c28cf09 ("Shard s7 closed") before this run started.
-This run's own Step 1 found 0 NEW Tokyo verdicts to merge (already landed by those
-interactive sessions) but did pick up real content refinement (toba_kyubei notes
-re-synced fuller, 2 tokyo item notes enriched, banner-copy cleanup) — see
-docs/GRINDER-LOG.md 2026-08-30T16:43:17Z.
+## Exact Tokyo menu state, 2026-08-31 UTC (computed from data, not agent-status.mjs)
+580 visible Tokyo records, 178 with an inline menu (30.7%), gap 402. Since the last
+grinder entry (2026-08-30T16:43:17Z), an interactive session (working egress) fully
+closed s8 (commit 44c9d7a "Shard s8 closed: even the apple is crumbed and fried")
+plus two more individual records (bdf6c48, dfee132). This run's own Step 1 found 0
+NEW Tokyo verdicts to merge (already landed by that interactive session) but did
+strip a leftover accumulated banner copy and re-sync a toba duplicate — see
+docs/GRINDER-LOG.md for this run's entry.
 
-**Corrected methodology this run: distinguish UNRESEARCHED (id absent from the shard's
-verdict file — needs dispatch) from RESEARCHED-BUT-HONEST-EMPTY (id present in the
-verdict file with no menu found — already done, does NOT need re-dispatch). Prior
-RESUME entries conflated these under one "missing" count, which overstated the real
-remaining work.**
+**Methodology (per prior run's fix): UNRESEARCHED = id absent from the shard's
+verdict file (needs dispatch); RESEARCHED-BUT-HONEST-EMPTY = id present with no menu
+found (already done, does NOT need re-dispatch). Counts below are ids-missing-from-
+verdict-file, computed directly by diffing each `data/_tokyo_menu_shards/sN.json`
+against `data/_menu_verdicts/tokyo_sN.json` — not a gap estimate.**
 
-**Verdict-file research status:**
-FULLY RESEARCHED (0 unresearched ids; some honest-empties, which is correct/complete):
-s0 (1 honest-empty: tokyo_bistro_kojiya), s1 (0), s2 (4: tokyo_andhra_dining_shibuya,
-tokyo_trevo_trevo_coffee_meals, tokyo_kissado, tokyo_matsuou), s3 (2:
-tokyo_asakusa_hirayama, tokyo_teishoku_sato), s4 (1: tokyo_ramen_kamo_to_negi_eato_),
-s5 (1: tokyo_vegan_sushi_tokyo), s6 (3: tokyo_katsuraan_suidobashi,
-tokyo_vege_fondue_shibuya, tokyo_india_fujiko), s7 (1: tokyo_sensing_touch_of_earth),
-s11 (0), s12 (0), s13 (1: tokyo_shinjuku_yataien) — **12 of 14 started shards are now
-fully researched**, only 16 honest-empties among them, 0 actually needing work.
-STILL PARTIAL (real unresearched records, these are the only started-shard gap):
-**s8 5 left, s9 12 left, s10 13 left — 30 records total.**
-Unstarted shards (s14-s38, 25 shards) missing 359 records (verified against verdict
-files, not gap-estimated). 30+359=389 vs the 411 gap (residual = honest-empties
-counted in the gap total, which is correct — they're visible records with no menu,
-just not ones that need re-research).
+**Verdict-file research status (14 started shards, s0-s13):**
+FULLY RESEARCHED (0 unresearched ids): s0, s1, s2, s3, s4, s6, s8 (now closed,
+was 5 left last run), s11, s12, s13 — 10 of 14 started shards.
+STILL PARTIAL (real unresearched records — the only started-shard gap):
+**s7 1 left (tokyo_organic_gohan_kaemon_asa), s5 2 left
+(tokyo_divano_wine_dining_shinj, tokyo_nagi_shokudo), s9 8 left, s10 13 left
+— 24 records total.**
+Unstarted shards (s14-s38, 25 shards) missing 365 records (s14-s28: 15 shards ×
+15 = 225; s29-s38: 10 shards × 14 = 140). 24+365=389 vs the 402 gap (residual =
+honest-empties, correct — visible records with no menu that don't need re-research).
 
-**Next dispatch once egress is unblocked (this session's own probe is still `000`/proxy-403
-CONNECT rejection, 15th consecutive run): s8 (5 left) is now the fewest by far —
-do it first — then s9 (12) — then s10 (13) — only start s14 once s0-s13 are all
-fully researched. s5 and s7 are DONE, drop them from the dispatch list.**
+**Next dispatch once egress is unblocked (this session's own probe is still `000`,
+16th consecutive run): s7 (1 left) is now the fewest — do it first — then s5
+(2 left) — then s9 (8) — then s10 (13) — only start s14 once s0-s13 are all fully
+researched. s8 is now DONE, drop it from the dispatch list.**
 
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
