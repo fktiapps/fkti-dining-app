@@ -1139,5 +1139,106 @@
     "dish_key": "shumai"
    }
   ]
+ },
+ "tokyo_rice_hack_gluten_free_ba": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.ondenhouse.jp/bakery/"
+  ],
+  "price_note": "⚠ THIS IS A DEDICATED GLUTEN-FREE BAKERY AND THE RARE CASE WHERE THE ANSWER IS YES. Every product is made with 米粉 — RICE FLOUR — and natural yeast, and the shop says so throughout its own copy rather than leaving it to be inferred: the curry filling is 「もちろんグルテンフリー」, the pizza is 「完全グルテンフリー」, and the parent company (株式会社ライステラス) presents itself as a gluten-free café, bakery and cooking school. Set that beside the ベーカリー サンチノ record in this dataset — a 米粉パン専門店 that turns out to add 10% vital wheat gluten — and the difference is that this shop states the claim and that one never did. ⚠ TWO HONEST LIMITS. First, no Japanese gluten-free CERTIFICATION exists and none is claimed here; this rests on the shop's own word, which is how every GF claim in Japan works. Second, I found no explicit statement that the premises handle no wheat at all — the claim is about the products, not audited about the building — so a highly sensitive coeliac still has one question to ask. ⚠ SEASONAL: the shop states 「夏季はバゲット・マフィン・ピザ・ホットドッグのみの販売となります」 — in summer only baguettes, muffins, pizza and hot dogs are sold, so the bread and curry buns below may not be available. Muffins and hot dogs are named in that line but carry no published price and are not listed as items. 神宮前5-16-5; closed Tuesdays and Wednesdays.",
+  "last_checked": "2026-09-01",
+  "items": [
+   {
+    "ja": "キューブ型食パン",
+    "romaji": "kyūbu-gata shokupan",
+    "en": "Cube-shaped shokupan — the shop says it overturns the idea that rice-flour bread goes dry and hard once cool, and that customers are surprised it is gluten-free at all",
+    "price": "¥700",
+    "section": "-BEKERY-",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "The shop is a gluten-free rice-flour bakery by its own framing — the company describes itself as 米粉使用グルテンフリー料理のカフェ、パン屋、料理教室 — and this item falls under that. A rice-flour loaf with no wheat. Vegan is ask rather than vegan because shokupan doughs commonly contain milk or butter and this one's recipe is not published — worth one question.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "ソフトバゲット",
+    "romaji": "sofuto bagetto",
+    "en": "Soft baguette",
+    "price": "¥600",
+    "section": "-BEKERY-",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "The shop is a gluten-free rice-flour bakery by its own framing — the company describes itself as 米粉使用グルテンフリー料理のカフェ、パン屋、料理教室 — and this item falls under that. One of the four items the shop keeps on sale through summer. A plain baguette is normally flour, water, salt and yeast, but enriched versions contain dairy; the recipe is not published.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "焼きカレーパン",
+    "romaji": "yaki karē pan",
+    "en": "Baked curry bread — the shop calls it one of its most popular, with a crisp baked finish against the natural sweetness of the rice dough",
+    "price": "¥360",
+    "section": "-BEKERY-",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "⚠ WORTH NOTICING TWICE OVER. A カレーパン is normally the single worst item for a coeliac in any Japanese bakery — wheat dough, wheat panko crumb and a flour-roux curry inside, deep-fried. This one is rice-flour dough, and the shop states the filling is 「もちろんグルテンフリー」, so the roux problem is addressed too. It is also 焼き — BAKED rather than deep-fried — which removes the shared-oil question that would otherwise remain. Not vegan: see the chickpea version below for that.",
+    "dish_key": "curry_pan"
+   },
+   {
+    "ja": "チーズ入り焼きカレーパン",
+    "romaji": "chīzu-iri yaki karē pan",
+    "en": "Baked curry bread with cheese — the shop calls it a \"gluten-free monster\" and says it sells out fast",
+    "price": "¥380",
+    "section": "-BEKERY-",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "The shop is a gluten-free rice-flour bakery by its own framing — the company describes itself as 米粉使用グルテンフリー料理のカフェ、パン屋、料理教室 — and this item falls under that. The shop names ゴーダチーズ (Gouda), so dairy rules out vegan. Same rice-flour dough and gluten-free curry filling as the plain version.",
+    "dish_key": "curry_pan"
+   },
+   {
+    "ja": "ひよこ豆のヴィーガンカレーパン",
+    "romaji": "hiyokomame no vīgan karē pan",
+    "en": "Chickpea vegan curry bread — the shop notes chickpeas are rich in protein and fibre",
+    "price": "¥360",
+    "section": "-BEKERY-",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE ITEM WORTH TRAVELLING FOR, AND THE RARE CASE OF BOTH AXES ANSWERED YES BY THE KITCHEN. The shop names it ヴィーガン itself and the dough is rice flour with the gluten-free curry filling — so it is gluten-free and plant-based on the shop's own statements rather than on inference. In a dataset where the two diets usually disagree, this is one of very few items where they do not.",
+    "dish_key": "curry_pan"
+   },
+   {
+    "ja": "ピザ・マルゲリータ",
+    "romaji": "piza marugerīta",
+    "en": "Margherita pizza — the shop calls it Italy's \"conclusion\" on pizza, made completely gluten-free",
+    "price": "¥2,280",
+    "section": "-PIZZA-",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "The shop's wording is 「完全グルテンフリー」 — completely gluten-free — on a rice-flour base. Worth setting against the 野菜ライス生地PIZZA at 和伊わい亭 elsewhere in this dataset, which reads as a rice base but carries no claim and no price: this one states it outright. Uses Italian mozzarella, so dairy rules out vegan. One of the four items kept on sale through summer.",
+    "dish_key": "pizza"
+   }
+  ]
+ },
+ "tokyo_thali_ya_shibuya_namikib": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.thali-ya.com/shop/sibuya-namikibasi.html",
+   "https://www.thali-ya.com/",
+   "http://www.thali-ya.com/2023.pdf",
+   "https://tabelog.com/tokyo/A1303/A130301/13107547/dtlmenu/"
+  ],
+  "price_note": "No menu found, and it was chased properly before giving up. The branch page carries address, hours and seating but no dishes; the chain homepage links no menu page; the Tabelog menu page carries nothing; and the one PDF the chain does publish (2023.pdf) turns out to be a NEW YEAR TRADING SCHEDULE for its branches rather than a menu — and its text is CID-encoded mojibake at that. So the empty list is the honest answer. ⚠ WHAT IS ESTABLISHED, AND IT IS WORTH KNOWING: the branch page states 「ハラールフレンドリー対象店舗です」 — halal-friendly. That is a real dietary designation but NOT the one this app tracks: halal-friendly means no pork and no alcohol, and says nothing whatever about wheat, dairy or egg. A halal kitchen is not a vegan or gluten-free one. ⚠ THE STRUCTURAL POINT FOR A COELIAC, established elsewhere in this dataset at SAPANA and worth carrying here: at an Indian restaurant the CURRY is usually the safe half and THE BREAD IS THE PROBLEM. Indian curries are built on onion, tomato and ground spice rather than the flour roux a Japanese カレー uses, so a curry with RICE is a different proposition from the same curry with ナン — and naan is wheat bread, full stop. This chain's name is インド定食ターリー屋 and a thali is a rice-centred plate, so the swap is likely to be easy to ask for. 36 seats, open year-round, 11:00–23:00.",
+  "last_checked": "2026-09-01",
+  "items": []
+ },
+ "tokyo_cafe_trois_bagues": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://troisbagues.com/",
+   "https://tabelog.com/tokyo/A1310/A131003/13011637/dtlmenu/"
+  ],
+  "price_note": "No menu published. The café's own site is a single page about its history and its coffee with no dish, no drink list and no price on it, and the Tabelog menu page carries nothing. ⚠ WHAT THE SITE DOES ESTABLISH, and it is all about the coffee: this is a small 喫茶店 opened in 1976 (昭和51年) that ages green beans before roasting them — エイジングコーヒー, old beans — and brews them by NEL DRIP, the flannel-cloth method. That matters more than it sounds for both diets, because it is the one preparation detail that could carry something: a nel filter is cloth rather than paper, reused and hand-washed, so the question of what else has passed through it is at least askable, though coffee itself has no wheat route. The site also states it stocks wine and beer — ⚠ BEER IS BARLEY, and 大麦 is not on Japan's statutory allergen list, so nothing will ever flag it. Black coffee itself is gluten-free and vegan; the milk in anything else is not, and no plant milk is mentioned anywhere. NOTHING IS RECORDED ABOUT THE FOOD because the shop publishes nothing about it. 神田神保町1-12-1 富田ビルB1, one minute from Jimbocho A5; closed Sundays.",
+  "last_checked": "2026-09-01",
+  "items": []
  }
 }
