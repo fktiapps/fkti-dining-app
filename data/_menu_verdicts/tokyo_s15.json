@@ -1,0 +1,72 @@
+{
+ "tokyo_sizzler_shinjuku_mitsui_": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.sizzler.jp/store/shinjukumitsui.html",
+   "https://www.sizzler.jp/menu/",
+   "https://www.sizzler.jp/menu/upfiles/grand.pdf",
+   "https://tabelog.com/tokyo/A1304/A130401/13011933/dtlmenu/"
+  ],
+  "price_note": "No items recorded, and it was chased hard before giving up: the chain publishes a full set of menu PDFs (grand, weekday lunch, drink, kids, weekend morning salad bar, takeaway) and THE GRAND MENU PDF HAS NO TEXT LAYER — 4.3MB of images, zero characters extracted. The Tabelog menu page carries nothing. That is the sixth unreadable menu in two shards, and this one is the most frustrating, because a chain this size almost certainly holds real allergen data internally. ⚠ WHY THIS RECORD IS WORTH HAVING EVEN EMPTY: a PREMIUM SALAD BAR is structurally one of the best formats in this entire dataset for a vegan, and among the better ones for a coeliac — raw vegetables and fruit carry no wheat and nothing animal, and unlike a set course you choose every component yourself. ⚠ AND WHY IT IS ALSO ONE OF THE RISKIEST: a buffet is SHARED TONGS. Croutons, pasta salad, dressings thickened with flour and a bread station all sit on the same counter, and a serving spoon moved between two trays undoes any amount of careful choosing. For a coeliac the bar is not \"safe because it is vegetables\"; it is safe only per-item and only if the tongs are. Sizzler is also known for its cheese toast, which is wheat. The chain ran an Aloha! Hawaiian Fair 15 July – 23 September 2026 with grilled items, coconut water and deli salads. Weekend morning salad bar 08:00–10:00 at selected branches; weekday lunch 11:00–15:00.",
+  "last_checked": "2026-09-01",
+  "items": []
+ },
+ "tokyo_asakusa_tsurujiro_okonom": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tsurujirou-asakusa.com/",
+   "https://tabelog.com/tokyo/A1311/A131102/13052466/dtlmenu/"
+  ],
+  "price_note": "⚠ THE SHOP'S OWN DOMAIN DOES NOT RESOLVE. tsurujirou-asakusa.com fails DNS from two different resolvers — WebFetch returns ETIMEOUT and curl reports \"Could not resolve host\". Worth stating the distinction precisely rather than overclaiming: the resolver answer is SERVFAIL, a server failure, NOT NXDOMAIN — so unlike オーガニックごはん かえもん or とうふ川風, this is not confirmed as a deleted domain. It may be a broken or lapsed nameserver configuration rather than a domain that no longer exists, and it may come back. Recorded so a link-checker treats it as unresolved rather than as proof of closure, and so nobody reads it as a closure signal: nothing here says the restaurant has shut. The Tabelog menu page also carries no items, so there is no menu from any source. ⚠ THE CATEGORY ANSWER IS FIRM AND WORTH KEEPING EVEN WITH NO ITEMS: this is a もんじゃ焼き・お好み焼き・鉄板焼き house, and both house dishes are WHEAT BATTER by definition — okonomiyaki is wheat flour, egg, dashi and cabbage, and monjayaki is the same batter thinned with more liquid, not a different flour. The sauce is a Worcester-style brown sauce, the finish is katsuobushi and aonori, the mayonnaise is egg, and the griddle is shared with every order at the table. Some okonomiyaki kitchens will make a 山芋 batter on request; nothing published here suggests it, and there is currently no site on which to check.",
+  "last_checked": "2026-09-01",
+  "items": []
+ },
+ "tokyo_marugoto_hokkaido_asakus": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.marugotohokkaido.com/restaurant/",
+   "https://r.gnavi.co.jp/a135610/",
+   "https://tabelog.com/tokyo/A1311/A131102/13102359/dtlmenu/"
+  ],
+  "price_note": "PROVISIONAL and COURSES ONLY. The restaurant's own page carries no menu, the Tabelog menu page carries nothing, and what follows comes from the shop's Gnavi listing, which publishes its course plans but not its à la carte board. ⚠ WATCH THE TAX BASIS — IT IS INCONSISTENT ON THE SHOP'S OWN LISTING: the crab all-you-can-eat is quoted 税抜 (before tax), the Genghis Khan course appears as both ¥5,000 税別 and ¥5,500 税込 for what reads as the same plan, and the banquet course is quoted without a basis at all. Treat every figure as approximate and confirm when booking. ⚠ ON BOTH DIETS: this is a Hokkaido crab and lamb house, so there is nothing for a vegan. For a coeliac the structure is better than it looks — crab and grilled lamb are not floured, so the wheat is concentrated in the DIPS AND SAUCES rather than the food, which makes it a place where one question at the table changes several answers. Cancellation terms are unusually specific: ¥4,000 a head for a no-show on the day, ¥1,500 if you call, nothing the day before.",
+  "last_checked": "2026-09-01",
+  "items": [
+   {
+    "ja": "ズワイ蟹食べ放題",
+    "romaji": "zuwai gani tabehōdai",
+    "en": "All-you-can-eat snow crab — the shop bills it as making the most of Hokkaido crab",
+    "price": "¥7,980",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Quoted 税抜 — BEFORE tax — so roughly ¥8,778 at the till. Steamed or boiled crab is one of the cleanest things a coeliac can eat: shellfish and water, with no coating and no marinade. What is not stated is what it is served WITH — ponzu is citrus plus SOY SAUCE, and a vinegared 三杯酢 normally contains soy too. Ask for lemon or salt. Crab rules out vegan.",
+    "dish_key": "kani"
+   },
+   {
+    "ja": "ジンギスカンコース（90分飲み放題付き）",
+    "romaji": "jingisukan kōsu",
+    "en": "Genghis Khan course with 90 minutes of free drinks — the shop names Hokkaido-direct fresh lamb shoulder loin; a further 30 minutes of drinks is +¥500",
+    "price": "¥5,500",
+    "section": "コース Courses",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Listed as ¥5,000 税別 in one place and ¥5,500 税込 in another for what appears to be the same plan. ジンギスカン is lamb grilled over a domed pan and eaten with a tare, and Genghis Khan tare is a soy-sauce-and-fruit sauce — soy sauce is wheat by default. Some shops serve the lamb plain for salting instead, which is the question worth asking. The free-drink package is also beer-led, and BEER IS BARLEY, which Japanese allergen labelling does not cover.",
+    "dish_key": "jingisukan"
+   },
+   {
+    "ja": "ご宴会コース",
+    "romaji": "goenkai kōsu",
+    "en": "Banquet course, from",
+    "price": "¥3,135〜",
+    "section": "コース Courses",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop quotes 3,135円〜 without stating whether tax is included. Contents are not published; a banquet course at a Hokkaido house will centre on the same lamb and crab, and a set course removes the ability to decline anything. ジンギスカン is lamb grilled over a domed pan and eaten with a tare, and Genghis Khan tare is a soy-sauce-and-fruit sauce — soy sauce is wheat by default. Some shops serve the lamb plain for salting instead, which is the question worth asking.",
+    "dish_key": "course"
+   }
+  ]
+ }
+}
