@@ -68,5 +68,53 @@
     "dish_key": "course"
    }
   ]
+ },
+ "tokyo_green_italian_torcia": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://chayam-torcia.com/",
+   "https://chayam-torcia.com/menu/",
+   "https://chayam-torcia.com/lunch/",
+   "https://tabelog.com/tokyo/A1304/A130401/13265784/dtlmenu/"
+  ],
+  "price_note": "⚠ THIS RESTAURANT RUNS A VEGAN MENU AND MARKS ALLERGENS ON ITS PRINTED MENU — AND PUBLISHES NEITHER IN READABLE FORM. Both facts are worth having anyway, because they change how you'd approach the room. The shop states 「TORCIAはヴィーガンメニュー（植物性食材使用のメニュー）をさまざまなイタリアンに形を変えてご提供」 — a vegan menu carried across the Italian repertoire rather than one token dish — and frames the whole concept as 「あらゆる食の志向をもった人々が同じテーブルを囲んでお食事を楽しめる」, people with different diets sharing one table. On the menu pages it also states 「原材料に特定・推奨アレルギーが含まれる場合［ ］内に記載しています」: the STATUTORY AND RECOMMENDED ALLERGENS ARE PRINTED IN BRACKETS AGAINST EACH ITEM. That is rare in Tokyo and means the information a coeliac needs exists — on paper, in the restaurant. ⚠ AND THE CAVEAT THE SHOP VOLUNTEERS ITSELF: 「当店キッチンは動物性食材も取り扱っております」 — the kitchen handles animal ingredients, so the vegan menu is a recipe promise, not a separate kitchen. It also says to tell staff about allergies. WHY THERE IS ONLY ONE ITEM BELOW: every menu — dinner courses, à la carte, dolce, lunch, afternoon tea — is published as a JPG (lunch2.jpg … afternoon.jpg) with no text layer and no useful alt attributes, and the Tabelog menu page carries nothing. The single course price is the only figure stated in text anywhere. Lunch 11:00–15:00 (courses and pasta sets), 15:00–17:00 dolce sets and afternoon tea.",
+  "last_checked": "2026-09-01",
+  "items": [
+   {
+    "ja": "ディナーコース",
+    "romaji": "dinā kōsu",
+    "en": "Dinner course, from — choose an antipasto and a pasta and combine as you like; the shop states a vegan version is available, and recommends wine pairing",
+    "price": "¥4,400",
+    "section": "ディナー Dinner",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only price the site states in text (税込). Both axes are genuinely open rather than unknown-by-default, which is unusual: the shop says a VEGAN version of the course exists, so a plant-based build is offered rather than improvised — but it also says the kitchen handles animal ingredients, so shared equipment is a live question. On gluten, an Italian course means pasta and bread by default; what makes this askable rather than a flat no is that the printed menu carries bracketed allergen marks per item, so the answer is available at the table even though it is not online. Ask for the ヴィーガン course and read the brackets.",
+    "dish_key": "course"
+   }
+  ]
+ },
+ "tokyo_matsue_shibuya_scramble_": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.matsue.cc/jp/scsq/",
+   "https://www.matsue.cc/jp/scsq/menu/",
+   "https://tabelog.com/tokyo/A1303/A130301/13240134/dtlmenu/"
+  ],
+  "price_note": "No menu recorded. The shop's own site has 昼のメニュー, 夜のメニュー and お飲物 sections and its /menu/ page returns 200 — but not one dish or price is present as text on any of them, and the Tabelog menu page carries nothing either. ⚠ WHAT IS ESTABLISHED ABOUT THE SHAPE OF A MEAL HERE: the shop describes itself as centring on an OMAKASE COURSE that opens with seasonal tsumami — sashimi and grilled dishes — before the sushi, with a cheaper lunch also offered, and fish bought from Toyosu and the Hokkaido and Kyushu markets. ⚠ WHY THE OMAKASE FORMAT MATTERS FOR A COELIAC, as recorded at 鮨 奥 in shard s10: you do not choose, courses arrive one at a time already dressed, and at an Edomae counter the chef brushes 煮切り — reduced SOY SAUCE — onto the fish before it reaches you, so the wheat arrives without being ordered and there is no dipping bowl to decline. The 焼き物 that open the course are a second route, since grilled fish that is not salt-grilled is normally soy-marinated. The conversation has to happen when booking, not at the counter. Nothing here suits a vegan — it is a fish counter. Closed irregularly, following Shibuya Scramble Square.",
+  "last_checked": "2026-09-01",
+  "items": []
+ },
+ "tokyo_kielo_coffee_asakusa": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://kielocoffee.jp/en-us/pages/shop-list",
+   "https://tabelog.com/tokyo/A1311/A131102/13312082/dtlmenu/"
+  ],
+  "price_note": "No café menu published. The record's stored website is the roaster's ONLINE BEAN SHOP — a storefront selling coffee beans by the bag, with collections, a shipping policy and a shop list — and the shop-list page carries addresses, hours and Instagram links for four Tokyo branches but no drink, no food and no price. The Tabelog menu page carries nothing. So the empty list is the honest answer: this is a shop whose e-commerce site is not its café menu. ⚠ FOR BOTH DIETS, THE ORIENTATION IS SIMPLE AND WORTH STATING: black coffee is roasted bean and water — no wheat, nothing animal — so the espresso side of a specialty café is one of the few categories that suits both diets by default. Everything after that is a question. MILK is the vegan one and no plant alternative is mentioned anywhere on the site, which for a Nordic-style specialty roaster would be unusual to lack but is not something to assume. The BAKERY is the gluten one: a Nordic-inspired bakery counter means cardamom buns, rye and pastry, all wheat by default, and 天然酵母 or 全粒粉 framing would not change that — as recorded at ぱん屋 in shard s14, those describe the leavening and the milling, not the absence of wheat. Nothing here is recorded as an item because nothing is sourced.",
+  "last_checked": "2026-09-01",
+  "items": []
  }
 }
