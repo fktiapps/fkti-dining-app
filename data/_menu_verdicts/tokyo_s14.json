@@ -1240,5 +1240,127 @@
   "price_note": "No menu published. The café's own site is a single page about its history and its coffee with no dish, no drink list and no price on it, and the Tabelog menu page carries nothing. ⚠ WHAT THE SITE DOES ESTABLISH, and it is all about the coffee: this is a small 喫茶店 opened in 1976 (昭和51年) that ages green beans before roasting them — エイジングコーヒー, old beans — and brews them by NEL DRIP, the flannel-cloth method. That matters more than it sounds for both diets, because it is the one preparation detail that could carry something: a nel filter is cloth rather than paper, reused and hand-washed, so the question of what else has passed through it is at least askable, though coffee itself has no wheat route. The site also states it stocks wine and beer — ⚠ BEER IS BARLEY, and 大麦 is not on Japan's statutory allergen list, so nothing will ever flag it. Black coffee itself is gluten-free and vegan; the milk in anything else is not, and no plant milk is mentioned anywhere. NOTHING IS RECORDED ABOUT THE FOOD because the shop publishes nothing about it. 神田神保町1-12-1 富田ビルB1, one minute from Jimbocho A5; closed Sundays.",
   "last_checked": "2026-09-01",
   "items": []
+ },
+ "tokyo_manbaken_shinjuku_nishig": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://manbaken.jp/",
+   "https://tabelog.com/tokyo/A1304/A130401/13317757/dtlmenu/"
+  ],
+  "price_note": "PARTIAL and NO PRICES. The chain's own site presents its お品書き as images and the Tabelog menu page carries nothing, so the dish names below come from the image ALT attributes — which is why names exist and prices do not. That is the third shop in this shard whose menu is published only as pictures. ⚠ THE CATEGORY ANSWER IS FIRM: this is a 味噌ラーメン specialist founded in 1988, so every bowl is wheat noodles in a soy- and miso-seasoned broth. Recorded so the answer is visible rather than absent. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle. The chain is expanding fast — ten branches as of August 2026, with Ikebukuro, Hamamatsucho and Omori all opening during 2026 — so branch-level variation is likely. Its 「ネギ辛味噌らーめん」 was featured on NTV's DayDay. in July 2026.",
+  "last_checked": "2026-09-01",
+  "items": [
+   {
+    "ja": "味噌らーめん",
+    "romaji": "miso rāmen",
+    "en": "Miso ramen — the house style, billed as 東京濃厚味噌らーめん",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen noodles are WHEAT, and the broth is miso and soy. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "辛味噌らーめん",
+    "romaji": "kara miso rāmen",
+    "en": "Spicy miso ramen",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles; spicy miso normally adds doubanjiang or gochujang, both commonly made with wheat flour. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "ネギ味噌らーめん",
+    "romaji": "negi miso rāmen",
+    "en": "Spring onion miso ramen",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "醤油らーめん",
+    "romaji": "shōyu rāmen",
+    "en": "Soy ramen",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles and 醤油 — soy sauce is wheat by default, so this bowl carries it twice.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "辛味噌チャーシュー麺",
+    "romaji": "kara miso chāshū men",
+    "en": "Spicy miso chashu ramen",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles, spicy miso, and chashu braised in soy sauce. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "味噌つけ麺",
+    "romaji": "miso tsukemen",
+    "en": "Miso tsukemen — dipping noodles",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles with a concentrated miso-and-soy dipping broth. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "ネギ辛味噌らーめん",
+    "romaji": "negi kara miso rāmen",
+    "en": "Spring onion spicy miso ramen — the bowl NTV's DayDay. featured in July 2026",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Named in the shop's own news post rather than on the menu images. Wheat noodles. ⚠ AT A MISO RAMEN SPECIALIST THE MISO IS A SECOND QUESTION, NOT A DETAIL. Japanese miso is frequently 麦味噌 — BARLEY — and 大麦 is NOT on Japan's statutory allergen list, so a bowl can be built on barley and labelled with nothing. The shop does not state which miso it uses. The noodle settles the matter anyway, but the miso is the part that would still catch someone who had found a gluten-free noodle.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "海老つけ麺",
+    "romaji": "ebi tsukemen",
+    "en": "Prawn tsukemen — a limited run the chain states as 11 May to 31 August 2026",
+    "price": "",
+    "section": "お品書き Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal and probably gone by the time anyone reads this; recorded because the shop dates it precisely. Wheat noodles, and a prawn broth also settles the vegan question.",
+    "dish_key": "tsukemen"
+   }
+  ]
+ },
+ "tokyo_shichiten_hakki": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://shichiten-hakki.jp/",
+   "https://tabelog.com/tokyo/A1310/A131003/13311450/dtlmenu/"
+  ],
+  "price_note": "No prices and no dish names: the shop's own site shows its お品書き as images grouped under ラーメン, つけ麺, トッピング, サイド and ドリンク, with nothing readable in text, and the Tabelog menu page carries nothing. That makes this the FOURTH shop in shard s14 alone whose menu is published only as pictures — a pattern worth naming, because it is not a shop declining to publish, it is a menu that exists and cannot be machine-read. ⚠ WHAT THE SITE DOES STATE IS THE NOODLE, AND IT IS THE ANSWER: 「三河屋製麺特注のストレート極太麺」 — custom-made extra-thick straight noodles from MIKAWAYA SEIMEN, a noodle maker. A ramen noodle from a Japanese seimen-jo is wheat; a shop naming its supplier is signalling quality, not composition. The broth is 鶏・豚・魚介のトリプルスープ — chicken, pork and seafood — which rules out vegan three times over and, being a ramen tare, will be soy-seasoned as well. There is a 辛さ (heat level) page, so heat is adjustable; nothing about allergens is.",
+  "last_checked": "2026-09-01",
+  "items": []
+ },
+ "tokyo_pan_ya_nishi_shinjuku": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://x.com/panya0411",
+   "https://tabelog.com/tokyo/A1304/A130401/13255966/dtlmenu/"
+  ],
+  "price_note": "No menu found. The record's stored website is an X (Twitter) account, which is not a menu this dataset can cite, and the Tabelog menu page carries nothing. ⚠ THE CATEGORY ANSWER IS THE RECORD HERE, and it needs saying because the descriptor invites a misreading: this is a 天然酵母パン bakery — NATURAL-YEAST bread. 天然酵母 describes the LEAVENING, not the flour. A naturally leavened loaf is still a wheat loaf unless the bakery says otherwise, and nothing here says otherwise. It is worth flagging explicitly because 天然酵母, 全粒粉 and 米粉 all read as \"healthier bread\" to a casual eye and only one of them is gluten-free — and this dataset has already met a 米粉パン専門店 (ベーカリー サンチノ) that added 10% vital wheat gluten anyway. A coeliac should assume wheat at a Japanese bakery unless the shop makes the claim the way RICE HACK does. Vegan is a separate open question: naturally leavened bread is often just flour, water, salt and starter, but Japanese bakeries commonly enrich with milk, butter and egg.",
+  "last_checked": "2026-09-01",
+  "items": []
  }
 }
