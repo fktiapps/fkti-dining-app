@@ -1,13 +1,12 @@
-# Resume here — updated 2026-09-01 UTC, grinder run (20th consecutive blocked run for THIS session)
+# Resume here — updated 2026-09-01T16:43Z, grinder run (21st consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-09-01 UTC (computed from data, not agent-status.mjs)
-579 visible Tokyo records, 201 with an inline menu (34.7%), gap 378. Since the
-last grinder entry (2026-09-01T00:43:37Z), interactive sessions (working
-egress) tightened items in s5/s7 and STARTED s14 (8/15 done). This run's own
-Step 1 found 0 NEW Tokyo verdicts of its own to add (all landed by those
-interactive sessions) but re-synced item-level gf/vegan flags into
-tokyo_menus.json and rebuilt clean — see docs/GRINDER-LOG.md for this run's
-entry.
+## Exact Tokyo menu state, 2026-09-01T16:43Z UTC (computed from data, not agent-status.mjs)
+579 visible Tokyo records, 204 with an inline menu (35.2%), gap 375. Since the
+last grinder entry (2026-09-01T08:44:00Z), s14 was CLOSED (15/15, finished by
+interactive sessions) — 201→204 inline. This run's own Step 1 found 0 NEW
+Tokyo verdicts to add (all 15 started shards already fully merged) — the only
+real diff was toba_kyubei notes re-syncing + 2 tokyo item flag corrections
+from a pipeline pass. See docs/GRINDER-LOG.md for this run's entry.
 
 **Methodology (per prior run's fix): UNRESEARCHED = id absent from the shard's
 verdict file (needs dispatch); RESEARCHED-BUT-HONEST-EMPTY = id present with no menu
@@ -17,21 +16,18 @@ against `data/_menu_verdicts/tokyo_sN.json` — not a gap estimate.**
 
 **Verdict-file research status (15 started shards, s0-s14):**
 FULLY RESEARCHED (0 unresearched ids): s0, s1, s2, s3, s4, s6, s8, s9, s10, s11,
-s12, s13 — 12 of 15 started shards.
+s12, s13, **s14 (newly complete this run)** — 13 of 15 started shards.
 STILL PARTIAL (real unresearched records):
 **s7 1 left (`tokyo_organic_gohan_kaemon_asa`), s5 2 left
-(`tokyo_divano_wine_dining_shinj`, `tokyo_nagi_shokudo`), s14 7 left
-(`tokyo_hommage`, `tokyo_pan_ya_nishi_shinjuku`, `tokyo_shin_chan_ramen`,
-`tokyo_manbaken_shinjuku_nishig`, `tokyo_shichiten_hakki`,
-`tokyo_okonomiyaki_monjayaki_ok`, `tokyo_sakana_ryo_ri_nojima`) — 10 records total.**
-Unstarted shards (s15-s38, 24 shards) missing 358 records (s15-s28: 14 shards ×
+(`tokyo_divano_wine_dining_shinj`, `tokyo_nagi_shokudo`) — 3 records total.**
+Unstarted shards (s15-s38, 24 shards) missing 372 records (s15-s28: 14 shards ×
 15 = 210; s29-s38: 10 shards × 14 = 140; less 2 for exact shard sizes — see
-individual shard files for precision). 10+358=368 vs the 378 gap (residual =
-honest-empties, correct — visible records with no menu that don't need re-research).
+individual shard files for precision). 3+372=375 — matches the gap exactly,
+0 residual this run.
 
 **Next dispatch once egress is unblocked (this session's own probe is still `000`,
-20th consecutive run): s7 (1 left) is the fewest — do it first — then s5
-(2 left), then finish s14 (7 left) before starting s15.**
+21st consecutive run): s7 (1 left) is the fewest — do it first — then s5
+(2 left), then start s15 (lowest-numbered unstarted shard).**
 
 
 ## READ THIS FIRST — egress is blocked for THIS grinder session specifically, NOT for the whole account
