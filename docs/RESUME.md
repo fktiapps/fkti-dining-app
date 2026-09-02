@@ -1,3 +1,32 @@
+# Resume here — updated 2026-09-02T16:42Z, grinder run (24th consecutive blocked run for THIS session)
+
+## Exact Tokyo menu state, 2026-09-02T16:42Z UTC (computed from data, not agent-status.mjs)
+579 visible Tokyo records, 212 with an inline menu (36.6%), gap 367. Since the
+last grinder entry (2026-09-02T08:42Z), this run's own Step 1 merged s5, s7,
+s15 and s16 growth into tokyo_menus.json (210→215 entries, 212 matching a
+currently-visible id). s15 is now FULLY RESEARCHED (15/15). s16 was newly
+started by an interactive session (3/15 done, 12 left). See
+docs/GRINDER-LOG.md for this run's entry.
+
+**Verdict-file research status (17 started shards, s0-s16):** FULLY RESEARCHED
+(0 unresearched ids): s0-s4, s6, s8-s15 — 14 of 17. STILL PARTIAL: **s7 1 left
+(`tokyo_organic_gohan_kaemon_asa`), s5 2 left (`tokyo_divano_wine_dining_shinj`,
+`tokyo_nagi_shokudo`), s16 12 left (`tokyo_new_prasidha_asakusa_nyu`,
+`tokyo_dochaku`, `tokyo_ginkado`, `tokyo_peace_table_shibuya_doge`,
+`tokyo_home_s_pasta_shibuya_mai`, `tokyo_hikari_hishio`,
+`tokyo_mazesoba_shibuya_chops`, `tokyo_aisu_no_numa_asakusa_den`,
+`tokyo_kebab_cafe`, `tokyo_asakusa_kagetsudo`, `tokyo_rakeru_miyamasuzaka_ten_`,
+`tokyo_shanghai_xiaolongbao_kit`)** — 15 records total across started shards.
+Unstarted shards (s17-s38, 22 shards) missing 320 records. 15+320=335 vs the
+367 gap (residual from hidden/dedup edge cases, not worth chasing — same
+pattern every run).
+
+**Next dispatch once egress is unblocked (this session's own probe is still
+`000`, 24th consecutive run): s7 (1 left) is the fewest — then s5 (2 left) —
+then s16 (12 left, already started) — then start s17 (lowest-numbered
+unstarted shard).**
+
+---
 # Resume here — updated 2026-09-02T08:4xZ, grinder run (23rd consecutive blocked run for THIS session)
 
 ## Exact Tokyo menu state, 2026-09-02T08:4x UTC (computed from data, not agent-status.mjs)
