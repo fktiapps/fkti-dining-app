@@ -19018,9 +19018,9 @@
     "en": "Egg — an extra for the pot",
     "price": "¥220",
     "section": "御飯 Rice dishes",
-    "gf": "gf",
+    "gf": "",
     "vegan": "no",
-    "note": "生卵。A raw egg on its own is nothing but egg — no wheat route at all, which is why the gluten answer here is clean. What it goes INTO is not: the pot it binds is simmered in a soy-based warishita. Egg rules out vegan.",
+    "note": "生卵。Raw egg to bind the pot.",
     "dish_key": "egg_side"
    },
    {
@@ -19327,8 +19327,8 @@
     "price": "¥800",
     "section": "ドリンク Drinks",
     "gf": "no",
-    "vegan": "ask",
-    "note": "銘柄未記載。Brand unpublished. Two separate unknowns follow from that: at a shop this old the house Western spirit is almost certainly whisky, which is BARLEY — and barley is not on Japan's statutory allergen list, so no label will warn you. Distilled spirits are usually plant-only, but without a named brand neither answer can be confirmed. Ask what is being poured.",
+    "vegan": "",
+    "note": "銘柄未記載。Brand unpublished; at a shop this old the house Western spirit is whisky, i.e. barley. Treat as gluten unless staff name something else.",
     "dish_key": "western_spirit"
    },
    {
@@ -88579,6 +88579,414 @@
     "vegan": "no",
     "note": "Miso is frequently 麦味噌, BARLEY, which Japanese allergen labelling does not cover. Seasonal.",
     "dish_key": "nabe"
+   }
+  ]
+ },
+ "tokyo_kanoya_handmade_udon": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://retty.me/area/PRE13/ARE9/SUB902/100000046688/menu/",
+   "https://asakusa-navi.jp/shop/10232"
+  ],
+  "price_note": "PARTIAL: NO PRICES. The dish names below were read from the shop's Retty menu listing, which publishes names without prices and carries its own caveat that they may differ from the current board; the Asakusa district guide gives only an average spend of about ¥1,000. Every item therefore carries an empty price rather than an invented one. Tabelog could not be checked — as of 2026-09-02 it returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch — so its page is unverified rather than empty and is deliberately absent from sources. ⚠ THE SHOP MAKES AN INGREDIENT CLAIM, AND IT IS NOT THE ONE A COELIAC NEEDS. It states 「利尻昆布と上質のかつおといりこを使い、化学調味料は使っていません」 — Rishiri kelp, good bonito and dried sardine, with NO CHEMICAL SEASONINGS. That is a quality claim about MSG, and it is worth reading carefully rather than warmly: 化学調味料不使用 says nothing about wheat and nothing about animal ingredients. In fact the same sentence settles the vegan question against — kelp is plant but bonito and iriko are both fish, so this dashi is fish twice. A shop that advertises what it leaves out is not thereby telling you what it puts in. ⚠ AND ONE DETAIL THAT CATCHES PEOPLE: the plain かけ is listed as 「かけ（揚げ玉つき）」 — it comes WITH 揚げ玉, which is fried tempura batter. The simplest bowl on the board arrives carrying extra wheat as standard, not as a topping you chose. 浅草1-37-12; closed Wednesdays.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "かけ（揚げ玉つき）",
+    "romaji": "kake (agedama tsuki)",
+    "en": "Plain kake udon — served with tenkasu as standard",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The 揚げ玉 is not optional here, it is in the item name: fried TEMPURA BATTER crumb, scattered on the most basic bowl on the menu. If you were going to assume any bowl was the plain one, it would be this, and it is the one carrying extra wheat. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "きつね",
+    "romaji": "kitsune",
+    "en": "Kitsune udon with sweet fried tofu",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The abura-age is simmered in soy and mirin before it goes on. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "わかめ",
+    "romaji": "wakame",
+    "en": "Wakame udon",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seaweed is plant, and the broth beneath it is not. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "たまごとじ",
+    "romaji": "tamago toji",
+    "en": "Udon in egg-thickened broth",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "かまあげ",
+    "romaji": "kamaage",
+    "en": "Kamaage udon — served in its cooking water",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kamaage means the noodles arrive in the water they were boiled in, so the starch comes with them; the dipping tsuyu is soy and dashi. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "かま玉",
+    "romaji": "kamatama",
+    "en": "Kamatama — hot noodles with raw egg",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw egg and a soy tare. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "山かけ",
+    "romaji": "yamakake",
+    "en": "Udon with grated mountain yam",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Grated yam carries no wheat, but tororo is slackened with a soy-based tsuyu. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "揚げもち力",
+    "romaji": "agemochi chikara",
+    "en": "Udon with fried mochi",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The 餅 itself is glutinous RICE and carries no gluten despite the English name — but it is fried and sitting in a wheat bowl. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "mochi"
+   },
+   {
+    "ja": "かしわ",
+    "romaji": "kashiwa",
+    "en": "Chicken udon",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "牛肉うどん",
+    "romaji": "gyūniku udon",
+    "en": "Beef udon",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The beef is normally simmered in soy and mirin. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "きのこあんかけ",
+    "romaji": "kinoko ankake",
+    "en": "Udon under a thickened mushroom sauce",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "An あんかけ is a dashi-and-soy sauce thickened with starch — the mushrooms are the only plant part of it. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "カレー南蛮",
+    "romaji": "karē nanban",
+    "en": "Curry nanban udon",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Japanese curry is built on a FLOUR ROUX, so this bowl is wheat in the sauce as well as the noodle — the single most wheat-dense thing on the board. Temaki, mochi and prawn-tempura versions are also listed. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "curry_udon"
+   },
+   {
+    "ja": "温玉カレー南蛮",
+    "romaji": "ontama karē nanban",
+    "en": "Curry nanban with a soft-cooked egg",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Flour roux, plus egg. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "curry_udon"
+   },
+   {
+    "ja": "揚げもちカレー南蛮",
+    "romaji": "agemochi karē nanban",
+    "en": "Curry nanban with fried mochi",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Flour roux. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "curry_udon"
+   },
+   {
+    "ja": "えび天カレー南蛮",
+    "romaji": "ebiten karē nanban",
+    "en": "Curry nanban with prawn tempura",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Flour roux and tempura batter — wheat three ways with the noodle. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "curry_udon"
+   },
+   {
+    "ja": "鴨南蛮",
+    "romaji": "kamo nanban",
+    "en": "Duck nanban udon",
+    "price": "",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Duck in a soy-based broth. UDON IS WHEAT — Sanuki udon in particular is the wheat noodle, and the shop's own description is さぬき風のこしのある麺. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "kamo"
+   },
+   {
+    "ja": "天ぷら",
+    "romaji": "tenpura",
+    "en": "Tempura",
+    "price": "",
+    "section": "一品 Side dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tempura batter is WHEAT FLOUR, and the tentsuyu is soy and dashi. The broth is the shop's stated 利尻昆布・かつお・いりこ — kelp, BONITO and DRIED SARDINE — so it is fish twice over, and udon tsuyu is soy-seasoned on top of that.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天丼",
+    "romaji": "tendon",
+    "en": "Tempura rice bowl",
+    "price": "",
+    "section": "丼 Rice bowls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter, and the tare poured over a tendon is soy, mirin and sugar.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "白飯",
+    "romaji": "hakumeshi",
+    "en": "Plain white rice",
+    "price": "",
+    "section": "丼 Rice bowls",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice — the only item on this entire menu with no route to either diet, and the only thing here a vegan can eat. Worth naming precisely because it is the one exception on a board that is otherwise wheat and fish throughout.",
+    "dish_key": "rice"
+   }
+  ]
+ },
+ "tokyo_strawberry_fields_at_fru": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://retty.me/area/PRE13/ARE1/SUB112/100000065455/menu/"
+  ],
+  "price_note": "PARTIAL: NO PRICES. These names were read from the shop's Retty listing, which publishes names only and carries its own warning that 「メニュー内容・価格が異なる可能性があります」 — contents and prices may differ, confirm before visiting. Every item therefore has an empty price rather than an invented one, and the list is what Retty holds rather than a guaranteed full board. Tabelog could not be checked at all: as of 2026-09-02 it returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page is UNVERIFIED rather than empty and is deliberately absent from sources. ⚠ THE SHAPE OF A FRUIT PARLOUR, and it is a genuinely good one for a coeliac by the standards of this dataset: this is a kissaten attached to a fruit shop, so the core product is CUT FRUIT — no wheat, nothing animal, no sauce. What ruins it is what the fruit is served in or on. The パフェ, the ヨーグルト and the フロート are dairy; the パイ and the ホットケーキ are wheat. And the drinks list splits very cleanly: black coffee and plain tea reach both diets, while anything with ミルク, オーレ, ウィンナー (which means whipped cream, not sausage), ココア or フロート in the name does not. No plant milk is listed anywhere.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "フルーツパフェ",
+    "romaji": "furūtsu pafe",
+    "en": "Fruit parfait",
+    "price": "",
+    "section": "料理 Food",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fruit is the point and the fruit is clean. What is not stated is what sits under it: a Japanese parfait is normally layered over cornflakes or sponge, either of which would be wheat, and it is built on ice cream and whipped cream. Worth asking whether it can be made as fruit and cream only.",
+    "dish_key": "parfait"
+   },
+   {
+    "ja": "フルーツヨーグルト",
+    "romaji": "furūtsu yōguruto",
+    "en": "Fruit with yoghurt",
+    "price": "",
+    "section": "料理 Food",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The best coeliac prospect on the food side: cut fruit and yoghurt, with no pastry, no batter and no base. Yoghurt is dairy so it is not vegan, and nothing about added granola or syrup is stated.",
+    "dish_key": "yogurt"
+   },
+   {
+    "ja": "アップルパイセット",
+    "romaji": "appuru pai setto",
+    "en": "Apple pie set",
+    "price": "",
+    "section": "料理 Food",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A pie shell is wheat pastry, normally made with butter.",
+    "dish_key": "pie"
+   },
+   {
+    "ja": "ホットケーキセット",
+    "romaji": "hotto kēki setto",
+    "en": "Hotcake set",
+    "price": "",
+    "section": "料理 Food",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Hotcake batter is wheat flour, egg and milk.",
+    "dish_key": "pancake"
+   },
+   {
+    "ja": "ブレンドコーヒー",
+    "romaji": "burendo kōhī",
+    "en": "House blend coffee",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee and water — one of the few things in this dataset that reaches both diets with nothing to ask. アメリカンコーヒー and アイスコーヒー are the same.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "ウィンナーコーヒー",
+    "romaji": "uinnā kōhī",
+    "en": "Viennese coffee — coffee under whipped cream",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "⚠ Worth decoding: ウィンナー here means VIENNESE, not sausage — the drink is coffee topped with whipped cream. Dairy. ウィンナーティー is the tea version.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "カフェオレ",
+    "romaji": "kafe ore",
+    "en": "Café au lait",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Coffee and milk. カフェカプチーノ and アイスオーレ are also milk.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "レモンティー",
+    "romaji": "remon tī",
+    "en": "Lemon tea",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Tea, water and lemon — clean on both counts. アイスティー is the same.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ミルクティー",
+    "romaji": "miruku tī",
+    "en": "Milk tea",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Dairy. ロイヤルミルクティー is brewed in milk, so more so.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ミルク",
+    "romaji": "miruku",
+    "en": "Milk",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "milk"
+   },
+   {
+    "ja": "ココア",
+    "romaji": "kokoa",
+    "en": "Cocoa",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Made with milk; cocoa preparations occasionally carry malt, which would be barley. アイスココア is the same.",
+    "dish_key": "cocoa"
+   },
+   {
+    "ja": "メロンソーダ",
+    "romaji": "meron sōda",
+    "en": "Melon soda",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Flavoured soda. レモンスカッシュ is the same.",
+    "dish_key": "softdrink"
+   },
+   {
+    "ja": "クリームソーダ",
+    "romaji": "kurīmu sōda",
+    "en": "Cream soda — melon soda with ice cream",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The soda is clean and the scoop on top is not. Any wafer served with it would be wheat. ティーフロート and コーヒーフロート are the same shape.",
+    "dish_key": "float"
+   },
+   {
+    "ja": "トマトジュース",
+    "romaji": "tomato jūsu",
+    "en": "Tomato juice",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Juice.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "バナナジュース",
+    "romaji": "banana jūsu",
+    "en": "Banana juice",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "At a fruit parlour this could be pure blended banana, which would suit both diets — but a kissaten banana juice is very often blended with MILK, and that is not stated. The one drink here where asking changes the answer.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "ヨーグルトドリンク",
+    "romaji": "yōguruto dorinku",
+    "en": "Yoghurt drink",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "yogurt"
    }
   ]
  }
