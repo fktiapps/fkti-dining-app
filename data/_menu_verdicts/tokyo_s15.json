@@ -1221,5 +1221,15 @@
     "dish_key": "yogurt"
    }
   ]
+ },
+ "tokyo_men_mitsui": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.instagram.com/men.mitsuwi/"
+  ],
+  "price_note": "No menu, no dish and no price — and this is an honest empty after chasing both routes to the end. The shop has no website: the record’s stored link is its Instagram account, which was fetched and returns only profile metadata — 1,681 followers, 129 posts, and a bio that is nothing but the address, 台東区寿2-9-15 サカエビル１階. The posts themselves are behind a login wall, and a photo caption would not be a menu even if they were not. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ NOTHING IS RECORDED ABOUT WHAT THIS SHOP SERVES, deliberately. The name 麺 みつヰ contains 麺 — noodles — and that is exactly the kind of hint it would be wrong to build on: 麺 covers ramen, udon, soba and 中華そば, which differ from each other on precisely the question a coeliac is asking. Reading a diet flag off a shop name is the same error as reading it off a cuisine type. Re-check when Tabelog access returns; until then this record is complete as it stands.",
+  "last_checked": "2026-09-02",
+  "items": []
  }
 }
