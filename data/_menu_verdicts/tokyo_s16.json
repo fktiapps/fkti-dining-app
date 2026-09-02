@@ -5974,5 +5974,226 @@
     "dish_key": "dessertplate"
    }
   ]
+ },
+ "tokyo_mazesoba_shibuya_chops": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://lit.link/en/chopsshibuya",
+   "https://menu.jp/s101564"
+  ],
+  "price_note": "Full item list with prices, but read from the shop’s DELIVERY listing rather than its counter board, and that distinction matters for the prices. The shop has no website of its own — its stored link is a lit.link link-in-bio page, which carries no menu and no price, only outbound links. One of those goes to the shop’s menu.jp delivery page, which was read directly and does publish every item with a price. Delivery platforms normally price above the in-store board, so treat these as delivery prices and expect the counter to be cheaper; the shop is 【ガッツリ系まぜそば・油そば】チョップス CHOPS 渋谷店. A second ordering link (rocketnow) returns HTTP 403 and was not read. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ THE WHOLE MENU IS ONE DISH IN FOUR SIZES OF SPICY, AND IT IS WHEAT FROM END TO END. まぜそば and 油そば are brothless noodle bowls — the noodles are tossed in a concentrated tare at the bottom of the bowl rather than served in soup. People sometimes read \"no soup\" as \"fewer ingredients to worry about\"; the opposite is true here, because with no broth to dilute it the SOY-based tare is the entire seasoning, and Chinese-style ramen noodles are wheat with かん水 besides. There is no rice dish, no side salad and no non-noodle item on this menu at all. ⚠ FOR A VEGAN THERE IS NOTHING, and the one item that sounds like an exception is not: 野菜バター is vegetables and BUTTER. The only thing on the board either diet can have is the bottled oolong tea at ¥350.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "【人気NO.1】まぜそばスペシャル",
+    "romaji": "mazesoba supesharu",
+    "en": "Mazesoba Special — the best seller",
+    "price": "1990円",
+    "section": "まぜそば Mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s number one. A \"special\" on a mazesoba board normally means extra pork and extra egg on top of the standard bowl. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "ガッツリ肉",
+    "romaji": "gattsuri niku",
+    "en": "Mega Meat mazesoba",
+    "price": "2020円",
+    "section": "まぜそば Mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Loaded with pork. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "野菜バター",
+    "romaji": "yasai batā",
+    "en": "Vegetable Butter mazesoba",
+    "price": "1860円",
+    "section": "まぜそば Mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONE ITEM ON THIS MENU THAT READS AS THE VEGETARIAN OPTION, AND IT IS NAMED AFTER ITS DAIRY. バター is butter — it is right there in the title — so this is the vegetable bowl that a vegan cannot have. Wheat noodles and a soy tare underneath regardless. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "まぜそば",
+    "romaji": "mazesoba",
+    "en": "Mazesoba",
+    "price": "1550円",
+    "section": "まぜそば Mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain bowl and the cheapest of the noodle dishes. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "油そば",
+    "romaji": "abura soba",
+    "en": "Abura soba — oiled noodles",
+    "price": "1630円",
+    "section": "油そば Abura soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ そば IN THE NAME IS NOT BUCKWHEAT. 油そば uses Chinese-style RAMEN noodles — wheat and かん水 — exactly as 中華そば does. The dish is noodles, oil and a soy tare, with no broth. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "aburasoba"
+   },
+   {
+    "ja": "油そば スペシャル",
+    "romaji": "abura soba supesharu",
+    "en": "Abura soba Special",
+    "price": "2100円",
+    "section": "油そば Abura soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The loaded version. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "aburasoba"
+   },
+   {
+    "ja": "辛味油そば",
+    "romaji": "karami abura soba",
+    "en": "Spicy abura soba",
+    "price": "1800円",
+    "section": "油そば Abura soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The chilli oil adds nothing new for either diet — the noodles and tare were already the problem. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "aburasoba"
+   },
+   {
+    "ja": "辛味油そば スペシャル",
+    "romaji": "karami abura soba supesharu",
+    "en": "Spicy abura soba Special",
+    "price": "2250円",
+    "section": "油そば Abura soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The most expensive item on the board. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "aburasoba"
+   },
+   {
+    "ja": "辛味スペシャル",
+    "romaji": "karami supesharu",
+    "en": "Spicy Special mazesoba",
+    "price": "2170円",
+    "section": "辛味まぜそば Spicy mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Spicy, loaded. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "辛味野菜バター",
+    "romaji": "karami yasai batā",
+    "en": "Spicy Vegetable Butter mazesoba",
+    "price": "2020円",
+    "section": "辛味まぜそば Spicy mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Vegetables and BUTTER, with chilli. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "辛味まぜそば",
+    "romaji": "karami mazesoba",
+    "en": "Spicy mazesoba",
+    "price": "1550円",
+    "section": "辛味まぜそば Spicy mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain spicy bowl. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "辛味ガッツリ肉",
+    "romaji": "karami gattsuri niku",
+    "en": "Spicy Mega Meat mazesoba",
+    "price": "2170円",
+    "section": "辛味まぜそば Spicy mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork, chilli. ⚠ まぜそば AND 油そば ARE WHEAT NOODLES WITH NO SOUP — which is the point worth making, because the absence of broth is what makes people hopeful. There is no dashi to ask about because there is no dashi: the noodles are dressed straight from the bowl in a concentrated TARE of soy sauce and oil, so the seasoning is more wheat rather than less.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "黒烏龍茶",
+    "romaji": "kuro ūron cha",
+    "en": "Black oolong tea",
+    "price": "350円",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Bottled oolong tea — tea leaves and water. The only item on this entire menu that either diet can order, and worth naming for exactly that reason.",
+    "dish_key": "tea"
+   }
+  ]
+ },
+ "tokyo_asakusa_kagetsudo": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://asakusa-kagetudo.com/",
+   "https://asakusa-kagetudo.com/menu/",
+   "https://asakusa-kagetudo.com/en/"
+  ],
+  "price_note": "PARTIAL: the shop’s own menu page is genuinely this short. 浅草花月堂 publishes a page headed メニュー that lists exactly two things with prices — ジャンボめろんぱん at ¥320 and an Aセット at ¥1,600 — and its English page adds one more, 氷いちごスペシャル at ¥1,200. The English page also mentions soft ice cream, drinks and goldfish scooping without naming or pricing any of them, so those are not recorded. That is the whole published menu; nothing has been added to make the list look fuller. No allergen or ingredient statement appears anywhere on the site. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ THIS IS THE SINGLE MOST OFFERED FOOD IN ASAKUSA AND IT IS PURE WHEAT. The shop sells 3,000 jumbo melonpan a day, the site leads with テレビでお馴染み, and the main branch simply CLOSES when they sell out — 平日11:00〜ジャンボめろんぱん完売次第閉店. A visitor walking Asakusa with a coeliac child will be handed this, offered this, and queued past this repeatedly, and there is no version of it that is safe: a melonpan is a sweet bread roll under a COOKIE-DOUGH crust, so it is wheat twice — the bread and the topping — plus butter and egg. The shop’s own description, 外はカリカリ、中はふんわり, is a description of those two wheat layers. ⚠ WORTH KNOWING ABOUT THE NAME: メロンパン CONTAINS NO MELON. It is named for the crosshatched crust resembling a melon rind, so anyone scanning for a fruit item, or reassuring themselves it is \"just fruit bread\", has misread it. The 氷いちご shaved ice is the one thing here that could suit a coeliac — shaved ice and strawberry syrup carry no wheat — but the shop says nothing about how the スペシャル version is built, and condensed milk or ice cream would settle the vegan side. 浅草2-7-13, no closing day; sibling shops 雷門店, 浅草さくら, 浅草きんぎょ and 江戸とんぼ玉みはる are listed at the same site.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "ジャンボめろんぱん",
+    "romaji": "janbo meronpan",
+    "en": "Jumbo melonpan",
+    "price": "320円",
+    "section": "めろんぱん Melonpan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ WHEAT TWICE OVER, AND THE MOST UNAVOIDABLE FOOD IN ASAKUSA. A melonpan is an enriched WHEAT bread roll baked under a layer of sweet COOKIE DOUGH, which is also wheat — the shop’s カリカリ outside and ふんわり inside are exactly those two layers. Butter and egg in both, so it is not vegan either. And the name is misleading in a way that matters: there is NO MELON in it, the name comes from the crosshatched crust looking like a melon rind. 3,000 sold a day; the branch closes when they run out.",
+    "dish_key": "melonpan"
+   },
+   {
+    "ja": "Aセット",
+    "romaji": "A setto",
+    "en": "Set A",
+    "price": "1,600円",
+    "section": "セット Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The only set on the menu page, and its contents are not published anywhere on the site — so nothing is recorded about what is in it. Given that the shop exists to sell melonpan, the flags follow the melonpan; confirm before ordering rather than after.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "氷いちごスペシャル",
+    "romaji": "kōri ichigo supesharu",
+    "en": "Strawberry shaved ice special",
+    "price": "1,200円",
+    "section": "かき氷 Shaved ice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONLY THING ON THIS MENU WITH A ROUTE AWAY FROM WHEAT, and it is worth asking about rather than assuming. Shaved ice and strawberry syrup are water, sugar and fruit — no flour anywhere. What the スペシャル adds is not published: a Japanese kakigori special normally means CONDENSED MILK, ice cream or a sponge layer, and the first two settle the vegan question while the third would settle the gluten one. Ask what is on it.",
+    "dish_key": "kakigori"
+   }
+  ]
+ },
+ "tokyo_hikari_hishio": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://kindenmaru.tokyo/"
+  ],
+  "price_note": "No dish and no price — an honest empty after reading the only site there is. 光醤 has no page of its own: the record’s stored link is the group site for 渋谷らーめん金伝丸 / 光醤 / 男旭山, three Shibuya ramen brands under one operator, and it is a brand-story site rather than a menu one. It carries no item, no price and no allergen statement for any of the three. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ WHAT THE PAGE DOES ESTABLISH IS UNUSUALLY DECISIVE FOR A RECORD WITH NO ITEMS, because the shop is named after the thing a coeliac must avoid. 光醤 means \"shining soy\" — the site explains the name directly: 昔、醤油味噌工場でみた絞りたての醤油が美しく光って見えた。おいしい醤油は光っている, the owner saw freshly pressed SOY SAUCE shining at a soy and miso works and wanted to build 日本一の豚骨醤油らーめん around it. So soy sauce is not an ingredient here, it is the shop’s entire premise, and Japanese soy sauce is brewed with WHEAT. ⚠ THREE MORE THINGS THE PAGE STATES, all of which point the same way. The style is 豚骨醤油 — PORK BONE broth with soy, which settles the vegan question absolutely. The noodles are 細麺 with hardness to order, and ramen noodles are wheat with かん水. And the shop advertises 替玉が無限にお替りできる — UNLIMITED noodle refills — which means wheat noodles are going into the same pot of water all service long, the strongest form of the shared-water problem. Nothing here is recorded as a dish because the site publishes none; re-check when Tabelog access returns.",
+  "last_checked": "2026-09-02",
+  "items": []
+ },
+ "tokyo_aisu_no_numa_asakusa_den": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.instagram.com/aisunonuma_gelatolabo/"
+  ],
+  "price_note": "No flavour and no price — an honest empty, and both routes were chased to the end. The shop has no website: its stored link is an Instagram account, which was fetched and returns only profile metadata — 1,238 followers, 57 posts, and a bio that is nothing but the name and location, アイスの沼 gelatolabo ASAKUSA｜浅草. The posts themselves sit behind a login wall, and a photo caption would not be a menu even if they did not. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ NOTHING IS RECORDED ABOUT WHAT THIS SHOP SELLS, deliberately, and a gelateria is a case where guessing would be especially tempting and especially wrong. The account name contains gelatolabo, and gelato is normally a MILK product — but the same counters almost always sell SORBETTO alongside it, which is fruit, sugar and water and is one of the few genuinely vegan desserts available in Japan. Which of those this shop makes, in what proportion, and whether any flavour carries biscuit, cookie dough or wheat-based stabiliser, is exactly what an unread menu cannot tell you. The one thing worth carrying to the counter without a source is the standing question at every ice cream shop: the CONE is wheat and the cup is not, and the scoop that has just come out of a cookie-dough tub has been through the same water bath as everything else. Re-check when Tabelog access returns.",
+  "last_checked": "2026-09-02",
+  "items": []
  }
 }
