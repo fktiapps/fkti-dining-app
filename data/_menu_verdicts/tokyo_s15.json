@@ -780,5 +780,38 @@
   "price_note": "No menu recorded. The page loads at 122KB but renders its content through JavaScript: nothing readable comes back as text, there is not a single 円 anywhere in the source, and the only structured data embedded in it is a list of EVENTS — St Patrick's Day 2026, 忘年会, 母の日, 飲み放題, Reservations — rather than any dish or price. Tabelog could not be checked at all: as of 2026-09-02 it returns HTTP 403 with a 5,812-byte Cloudflare bot-challenge body to both curl and WebFetch, so its menu page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. Re-check when access returns. ⚠ ORIENTATION RATHER THAN FINDINGS, offered because the category is unusually clear-cut and none of it is sourced for this restaurant: American barbecue is one of the better cuisines for a coeliac in principle, because smoked meat is meat, salt, pepper and smoke — the rub and the smoke add nothing. What ruins it is almost always the SAUCE and the SIDES. Barbecue sauce is normally built on Worcestershire or soy, both wheat routes, and in Japan a house BBQ sauce very often uses 醤油 outright. The sides are the other half: cornbread, mac and cheese, buns and fried pickles are wheat, and a bun arrives with the meat unless you say otherwise. So the shape of the question at any BBQ counter is \"can I have it dry-rubbed, sauce on the side, no bun\" — but whether this kitchen can answer yes is not established here. Nothing suits a vegan at a smokehouse without asking.",
   "last_checked": "2026-09-02",
   "items": []
+ },
+ "tokyo_shoya_suidobashi_honke_t": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.daisyo.co.jp/brand/syoya/brand.html",
+   "https://www.daisyo.co.jp/brand/syoya/menu.html",
+   "http://www.daisyo.co.jp/whatsnew/new_img/menu/syouya_B/top.htm",
+   "https://www.daisyo.co.jp/whatsnew/new_img/smp/menu/syouya_b/menu.pdf"
+  ],
+  "price_note": "No dish or price recorded, and the chain menu was chased to the end before giving up. 庄や is a Daisyo chain, and Daisyo does publish a grand menu — regionally, with 首都圏 (syouya_B) being the one that covers Suidobashi. That menu resolves to a 2.3MB PDF with NO TEXT LAYER: zero characters extract from it. The corporate site has no allergen page at all (/allergy/ is a 404), which is worth noting for a chain of this size. Tabelog could not be checked: as of 2026-09-02 it returns HTTP 403 with a 5,812-byte Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. Re-check when access returns. ⚠ WHAT IS READABLE, AND IT IS USEFUL EVEN WITHOUT DISHES: the metropolitan menu's own section headings come through as text, and they map the board — 豪快刺身盛り, 特選刺身, 煮込み/珍味/サラダ, 焼きとり, 逸品料理, 揚げもの, あて巻寿司/めし処, 甘味, then 生ビール, サワー, ハイボール/焼酎, 日本酒, ワイン/果実酒/ソフトドリンク. For a coeliac that tells you where the shop concentrates: the 刺身 sections are raw fish limited only by the soy sauce, 焼きとり turns on タレ versus 塩, and 揚げもの and 巻寿司 are settled against. For a vegan there is nothing — this is a fish izakaya whose own description leads on 新鮮な魚料理. The shop is also known for an あさりバター, which is dairy.",
+  "last_checked": "2026-09-02",
+  "items": []
+ },
+ "tokyo_chompoo": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://shibuya.parco.jp/shop/detail/?cd=025862"
+  ],
+  "price_note": "No menu published anywhere readable. The record's stored website is the Shibuya PARCO tenant page, which carries the concept, the phone number and the hours but not one dish or price; the only link it gives for the restaurant itself is an Instagram account, which is not a menu this dataset can cite, and there is no standalone site. Tabelog could not be checked: as of 2026-09-02 it returns HTTP 403 with a 5,812-byte Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. Re-check when access returns. ⚠ WHAT THE PARCO PAGE DOES ESTABLISH, and it shapes the question worth asking: the kitchen is presented as herb-led rather than heat-led — Thai food that is 「辛いだけではない」, built on fresh herbs — under a chef who trained across Southeast Asian cooking before specialising. That matters because the herb-and-citrus side of Thai cooking (larb, yam salads, som tam) is where the wheat-free dishes live, while the heat-led side leans on nam prik pao and oyster sauce. ⚠ AND THE STANDING THAI CAVEATS, recorded here as orientation rather than as findings about this kitchen: Thai food is largely RICE-based, so a coeliac usually has more to work with than at most restaurants — the wheat concentrates in the fried section, in OYSTER SAUCE, and in the egg noodles (バーミー, カオソーイ) that sit beside the rice ones. A vegan has the harder time, because fish sauce and shrimp paste are foundational. 4F Shibuya PARCO, 11:30–22:30, last orders 21:30; takeaway and Wolt delivery.",
+  "last_checked": "2026-09-02",
+  "items": []
+ },
+ "tokyo_tachigui_soba_kamu_stand": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://retty.me/area/PRE13/ARE11/SUB1104/100001778869/menu/"
+  ],
+  "price_note": "No menu found, and this one is an honest empty rather than an unchecked one. The shop has no site of its own — the record's stored website is a Tabelog listing — and its Retty menu page was read directly and is explicitly empty: 料理がありません, コースがありません, ランチがありません, ドリンクがありません, テイクアウトメニューがありません, with Retty's own caveat that what it shows reflects the time of a review rather than the current board. So a menu source was read and it genuinely holds nothing, which is different from the Tabelog situation. Tabelog could not be checked: as of 2026-09-02 it returns HTTP 403 with a 5,812-byte Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. Re-check when access returns. ⚠ THE QUESTION A STANDING SOBA SHOP RAISES, offered as orientation since nothing about this kitchen is sourced: Japanese soba is normally 二八 — 80% buckwheat to 20% WHEAT — and the ratio is almost never published. Even a 十割 kitchen dusts its boards with 打ち粉, usually wheat flour, and a standing shop boils every order in one pot of shared water all day, which is the strongest version of that problem in this dataset. The tsuyu is soy and bonito, so it is a wheat route and a vegan one at once. A 立ち食い counter also has no room to keep anything separate and no time to answer questions at the rush.",
+  "last_checked": "2026-09-02",
+  "items": []
  }
 }
