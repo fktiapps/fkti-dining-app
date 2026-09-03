@@ -99586,5 +99586,395 @@
     "dish_key": "poundcake"
    }
   ]
+ },
+ "tokyo_chuka_soba_biliken": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://www.instagram.com/billiken_noodles/",
+   "https://retty.me/area/PRE13/ARE9/SUB902/100001491853/menu/",
+   "https://norman.jp/ramen/birikenasakusa/",
+   "https://lopi.tokyo/21-06biriken/"
+  ],
+  "price_note": "⚠ THE PRICES BELOW ARE SECOND-HAND AND PROBABLY STALE — read that before using them. The shop has no website: its stored link is an Instagram account, which was fetched and returns only profile metadata (3,744 followers, 1,028 posts) with the posts behind a login wall. Tabelog is UNVERIFIED, not empty: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge to both curl and WebFetch, so its URL is deliberately absent from sources. Its Retty menu page WAS read and is explicitly empty — 料理がありません, ドリンクがありません — with Retty’s own caveat that its content reflects the time of a review. So the item names and prices here come from two independent Japanese ramen articles that were fetched and read in full, and one of them states outright that its list is 2021年6月現在, current as of June 2021. THE TWO SOURCES ALREADY DISAGREE WITH EACH OTHER ON ONE PRICE: the 鴨と鶏の油ソバ is ¥900 in one and ¥950 in the other, the latter noted as a 2022 visit. Treat every figure here as indicative of the shape of the board rather than as today’s price. ⚠ THE DIET ANSWER IS NOT IN DOUBT EVEN THOUGH THE PRICES ARE, which is why the record is still worth having. This is a 中華ソバ shop — and 中華ソバ means RAMEN, not buckwheat soba, a misreading this dataset keeps encountering. The noodles are 自家製, made in-house, and described as 全粒粉入り: WHOLEMEAL WHEAT. That is the third time 全粒粉 has appeared in this dataset reading like a health-food alternative and being ordinary wheat with the bran in. The broth is a 醤油 soup, so soy is the second wheat source, and the shop is built on 鴨出汁 — DUCK stock — which closes the vegan question absolutely. There is nothing on this board for either diet. ⚠ ONE ITEM DETAIL WORTH CARRYING: the 鴨と鶏の油ソバ is served 生卵付き, with a RAW EGG, which one source describes mixing in スキヤキ風. The egg is not listed in the dish name. Also recorded: the shop is the second branch of 蔵前「らーめん改」, was selected for 百名店, and is two minutes from Asakusa station on the Toei Asakusa and Ginza lines.",
+  "last_checked": "2026-09-03",
+  "items": [
+   {
+    "ja": "中華ソバ",
+    "romaji": "chūka soba",
+    "en": "Chuka soba — soy-based duck and chicken ramen",
+    "price": "850円",
+    "section": "中華ソバ Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 中華ソバ MEANS RAMEN. Despite the そば in the name there is no buckwheat in it — these are Chinese-style wheat noodles, and the shop makes them itself. The broth is duck-and-chicken stock seasoned with soy sauce, so it is wheat in the noodle and wheat in the tare, and duck in the bowl. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "chukasoba"
+   },
+   {
+    "ja": "手もみ中華ソバ",
+    "romaji": "temomi chūka soba",
+    "en": "Hand-crimped chuka soba",
+    "price": "850円",
+    "section": "中華ソバ Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "手もみ means the noodles are crimped by hand for a wavier texture — a technique, not a different flour. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "chukasoba"
+   },
+   {
+    "ja": "塩中華ソバ",
+    "romaji": "shio chūka soba",
+    "en": "Salt-seasoned chuka soba",
+    "price": "850円",
+    "section": "中華ソバ Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ WORTH ASKING ABOUT EVEN THOUGH IT IS FLAGGED AGAINST: 塩 means the tare is SALT rather than soy, which removes one of the two wheat sources — a distinction that matters at a ramen shop even when it does not save the meal. The noodles are still wheat, so the bowl is still out. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "chukasoba"
+   },
+   {
+    "ja": "中華ソバ味玉入り",
+    "romaji": "chūka soba ajitama iri",
+    "en": "Chuka soba with seasoned egg",
+    "price": "950円",
+    "section": "中華ソバ Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味付け玉子 is an egg marinated in a soy-and-mirin tare — the topping carries its own wheat as well as being an egg. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "chukasoba"
+   },
+   {
+    "ja": "中華ソバ鴨チャーシュー増",
+    "romaji": "chūka soba kamo chāshū mashi",
+    "en": "Chuka soba with extra duck char siu",
+    "price": "1050円",
+    "section": "中華ソバ Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The duck chashu is the shop’s signature, and a chashu braise is soy, mirin and sugar. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "chukasoba"
+   },
+   {
+    "ja": "中華ソバ全部入り",
+    "romaji": "chūka soba zenbu iri",
+    "en": "Chuka soba with everything",
+    "price": "1150円",
+    "section": "中華ソバ Chuka soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Extra duck chashu and a seasoned egg together. One source records this at ¥1,500 for the 手もみ version on a later visit, which is a further sign the prices here have moved. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "chukasoba"
+   },
+   {
+    "ja": "坦坦麺",
+    "romaji": "tantanmen",
+    "en": "Tantanmen",
+    "price": "850円",
+    "section": "担担麺 Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dan dan noodles are built on sesame paste and a soy-and-chilli seasoning, normally with minced pork — wheat in the noodle, the tare and usually the 芝麻醬 base too. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "担担麺味玉入り",
+    "romaji": "tantanmen ajitama iri",
+    "en": "Tantanmen with seasoned egg",
+    "price": "950円",
+    "section": "担担麺 Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-marinated egg. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "担担麺パクチー増",
+    "romaji": "tantanmen pakuchī mashi",
+    "en": "Tantanmen with extra coriander",
+    "price": "950円",
+    "section": "担担麺 Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Extra coriander — the coriander itself is a plain herb; everything under it is not. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "担担麺味玉パクチー入り",
+    "romaji": "tantanmen ajitama pakuchī iri",
+    "en": "Tantanmen with egg and coriander",
+    "price": "1,050円",
+    "section": "担担麺 Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Both toppings. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "鴨と鶏の油ソバ",
+    "romaji": "kamo to tori no abura soba",
+    "en": "Duck and chicken abura soba — brothless, with raw egg",
+    "price": "900円（一部の情報では950円）",
+    "section": "油ソバ Abura soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TWO THINGS THE NAME DOES NOT TELL YOU. First, the sources agree it is served 生卵付き — WITH A RAW EGG, which one describes stirring through スキヤキ風 before mixing. The egg is not in the title. Second, 油ソバ means there is NO BROTH, which people sometimes read as fewer ingredients to worry about; the opposite holds, because with no soup to dilute it the soy tare at the bottom of the bowl is the entire seasoning. Topped with duck chashu, greens, menma and spring onion. The two sources give ¥900 and ¥950, the higher figure from a 2022 visit. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "aburasoba"
+   },
+   {
+    "ja": "鴨脂ソバチャーシュー増",
+    "romaji": "kamo abura soba chāshū mashi",
+    "en": "Duck abura soba with extra char siu",
+    "price": "1,100円",
+    "section": "油ソバ Abura soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The brothless bowl with extra duck chashu. One later source records a comparable item at ¥1,350, so this figure has likely moved too. ⚠ The noodles are WHEAT: this shop makes its own, and one source describes them as 全粒粉入りの高加水率 — high-hydration noodles made with WHOLEMEAL flour, which is wheat with the bran left in rather than any kind of substitute. The broth is 醤油-based on top of that.",
+    "dish_key": "aburasoba"
+   }
+  ]
+ },
+ "tokyo_achuu_kushami": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://gourmet-calendar.com/restaurants/76839600",
+   "https://hamoni.jp/shop/B1lXqQYqfS03XpQ4wwXY",
+   "https://www.lemon8-app.com/@panda._.gourmett/7269784234431103493?region=jp"
+  ],
+  "price_note": "⚠ THE PRICES HERE COME FROM ONE VISITOR’S WRITE-UP, NOT FROM THE SHOP — and at this particular bar that is not a research failure so much as the house policy. 嚔 has no website and, by design, barely has an address: two of the pages read state it is 住所非公開 and has no shop sign, and the operator’s stated concept is 噂をされるとくしゃみをするように、店の存在は噂で広がってほしい — that the place should spread the way a sneeze does, by word of mouth. 嚔 means \"sneeze\" and アチュー is the English onomatopoeia. A shop that deliberately does not publish itself does not publish a menu either. Tabelog is UNVERIFIED rather than empty: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its URL is deliberately absent from sources. Two listing pages were fetched and read and neither carries a single price; the item list below is from a customer’s illustrated visit write-up, read in full. A separate summary of another visit gives ブリガリ at ¥800 against the ¥770 recorded here, so the figures have moved or vary. Treat all of them as one night’s snapshot. ⚠ WHAT THE LISTING PAGES DO ESTABLISH: 渋谷区道玄坂1-15-7 アネックスサクマ 1F, about seven minutes from the Hachiko exit, 18:00–02:00, no closing day, STANDING ONLY and no reservations — pitched as a 0.5軒目 or 1.5軒目, a place to stop before or between other bars. ⚠ FOR A COELIAC THE SHAPE OF THIS MENU IS UNUSUALLY AWKWARD, because the wheat is hidden in items that read as anything but bread. マカロニサラダ is PASTA sold as a salad. 黒餃子 is a wheat wrapper that has been coloured black, which changes nothing. 春巻き is a wheat wrapper too. ヤンニョム蛸 is dressed in gochujang, and Korean chilli paste is fermented WITH WHEAT. ミートポテゲッティ has ゲッティ in the name. That is five wheat routes on a sixteen-item board and not one of them says bread, batter or noodle. ⚠ AND ONE ITEM IS A GENUINE FIND WORTH ASKING ABOUT: 米焼売 — RICE shumai. A shumai is normally a wheat wrapper; the 米 version is coated in glutinous RICE instead, which is why it is worth the question. Whether there is still a thin wheat skin under the rice is exactly what the source does not say, and it is the whole question. ⚠ FOR A VEGAN there is very little: the mixed nuts, the pickled edamame and the two teas. レーズンバター is dairy in its name and 漬茶豆 is the only savoury plant plate.",
+  "last_checked": "2026-09-03",
+  "items": [
+   {
+    "ja": "マカロニサラダ",
+    "romaji": "makaroni sarada",
+    "en": "Macaroni salad",
+    "price": "¥550",
+    "section": "料理 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ IT IS FILED AS A SALAD AND IT IS MADE OF PASTA. マカロニ is WHEAT — the same durum flour as any other pasta — bound with mayonnaise, which is egg. On a board of small plates this is the item most likely to be picked as the light, safe-sounding one.",
+    "dish_key": "macaronisalad"
+   },
+   {
+    "ja": "ブリガリ",
+    "romaji": "burigari",
+    "en": "Burigari",
+    "price": "¥770",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The source names it without describing it, so nothing about its contents is recorded here. A separate account gives the price as ¥800.",
+    "dish_key": "unknown"
+   },
+   {
+    "ja": "生ハムとかサラミとか",
+    "romaji": "nama hamu toka sarami toka",
+    "en": "\"Prosciutto and salami and that sort of thing\"",
+    "price": "¥660",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cured meats, named in the shop’s own offhand style. Dry-cured meat carries no wheat of its own, though salami seasoning occasionally does.",
+    "dish_key": "salumi"
+   },
+   {
+    "ja": "米焼売 1個",
+    "romaji": "kome shūmai ikko",
+    "en": "Rice shumai, each",
+    "price": "¥330",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONE ITEM HERE WORTH A DIRECT QUESTION. A shumai wrapper is wheat; 米焼売 is the version rolled in glutinous RICE instead, which is why this is an \"ask\" rather than the flat \"no\" every other dumpling in this dataset gets. What the source does not say is whether a thin wheat skin remains underneath the rice, which is the difference between a rare safe dumpling and an ordinary one. The filling is not described either, and shumai is normally pork.",
+    "dish_key": "shumai"
+   },
+   {
+    "ja": "黒餃子 2個",
+    "romaji": "kuro gyōza niko",
+    "en": "Black gyoza, 2 pieces",
+    "price": "¥400",
+    "section": "料理 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE COLOUR IS NOT THE INGREDIENT. A 黒餃子 is an ordinary WHEAT wrapper tinted with bamboo charcoal or squid ink — the black looks like a different dough and is a dye. Gyoza dipping sauce is soy on top of that.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "ソーセージ 1本",
+    "romaji": "sōsēji ippon",
+    "en": "Sausage, each",
+    "price": "¥800",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A single sausage. Pork; sausage fillers and casing seasonings are the sort of thing never printed.",
+    "dish_key": "sausage"
+   },
+   {
+    "ja": "くそガキ、ハツの試み",
+    "romaji": "kuso gaki, hatsu no kokoromi",
+    "en": "\"Little brat, an attempt at heart\"",
+    "price": "¥1100",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The most expensive plate and a deliberately opaque name — the source lists it without describing what is in it, so nothing about its contents is recorded. ハツ normally means HEART in a Japanese bar, but that is a reading of the name rather than a statement from the shop, so it is left as a question. Worth asking outright.",
+    "dish_key": "unknown"
+   },
+   {
+    "ja": "海老アボカド春巻き",
+    "romaji": "ebi abokado harumaki",
+    "en": "Prawn and avocado spring rolls",
+    "price": "¥600",
+    "section": "料理 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ SPRING-ROLL SKINS ARE WHEAT, and this is also the item that most likely establishes there is a wheat fryer here. Prawn.",
+    "dish_key": "harumaki"
+   },
+   {
+    "ja": "イカの大葉炒め",
+    "romaji": "ika no ōba itame",
+    "en": "Squid stir-fried with shiso",
+    "price": "¥880",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Squid and shiso leaf — a short ingredient list with no obvious wheat, though a Japanese stir-fry is normally seasoned with soy and the source does not say.",
+    "dish_key": "squid"
+   },
+   {
+    "ja": "ヤンニョム蛸",
+    "romaji": "yannyomu tako",
+    "en": "Yangnyeom octopus",
+    "price": "¥660",
+    "section": "料理 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ ヤンニョム MEANS THE KOREAN CHILLI SAUCE, and its base is GOCHUJANG — which is fermented with WHEAT FLOUR as standard, not as a variation. It is also normally cut with soy. Octopus underneath.",
+    "dish_key": "yangnyeom"
+   },
+   {
+    "ja": "to fumeats",
+    "romaji": "to fumeats",
+    "en": "to fumeats",
+    "price": "¥1100",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Printed exactly like this in the source, with no description, so nothing about its contents is recorded.",
+    "dish_key": "unknown"
+   },
+   {
+    "ja": "ミックスナッツ",
+    "romaji": "mikkusu nattsu",
+    "en": "Mixed nuts",
+    "price": "¥550",
+    "section": "料理 Small plates",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "THE SAFEST PLATE ON THE BOARD FOR A COELIAC — nuts and salt, with no flour anywhere near them. Vegan is a question only because bar nuts are sometimes roasted in butter or glazed with honey. Obviously a NUT dish, which matters separately from either diet.",
+    "dish_key": "nuts"
+   },
+   {
+    "ja": "漬茶豆（実山椒）",
+    "romaji": "tsuke chamame (mizanshō)",
+    "en": "Pickled chamame edamame with green sanshō",
+    "price": "¥550",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE ONLY SAVOURY PLANT PLATE HERE. 茶豆 is the nuttier edamame varietal, pickled and dressed with fresh green sanshō pepper — plant from end to end, and the one dish a vegan can order without negotiation. The gluten flag is a question only because a Japanese pickling liquid is usually soy- or dashi-based.",
+    "dish_key": "edamame"
+   },
+   {
+    "ja": "レーズンバター",
+    "romaji": "rēzun batā",
+    "en": "Raisin butter",
+    "price": "¥990",
+    "section": "料理 Small plates",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Raisins folded into butter — a standing-bar classic, DAIRY in its own name, and free of wheat unless crackers arrive with it, which they often do.",
+    "dish_key": "raisinbutter"
+   },
+   {
+    "ja": "ミートポテゲッティ",
+    "romaji": "mīto potegetti",
+    "en": "\"Meat potagetti\"",
+    "price": "¥800",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE NAME IS A PUN AND THE ENDING IS THE WARNING: ゲッティ points at SPAGHETTI, which would make this wheat, and ポテ at potato. The source does not describe the dish, so this is recorded as a question rather than a verdict — but it is exactly the kind of name that should be asked about rather than guessed at. Meat is in the title.",
+    "dish_key": "unknown"
+   },
+   {
+    "ja": "あいちゅ",
+    "romaji": "aichu",
+    "en": "Aichu",
+    "price": "¥550",
+    "section": "料理 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named without description in the source; nothing about its contents is recorded.",
+    "dish_key": "unknown"
+   },
+   {
+    "ja": "プレモル",
+    "romaji": "Puremoru",
+    "en": "Premium Malt's draught",
+    "price": "¥660",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "BEER IS BARLEY MALT — the brand name プレミアム・モルツ says so outright.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "レモンサワー",
+    "romaji": "remon sawā",
+    "en": "Lemon sour",
+    "price": "¥660",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Shochu, lemon and soda; the base spirit is not named and a 麦 base would be barley.",
+    "dish_key": "chuhai"
+   },
+   {
+    "ja": "ええ梅酒 ソーダ割り",
+    "romaji": "ee umeshu sōda wari",
+    "en": "Plum wine with soda",
+    "price": "¥880",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Ume steeped in spirit; the base spirit is unnamed and some umeshu are sweetened with honey.",
+    "dish_key": "umeshu"
+   },
+   {
+    "ja": "ジャスミン茶",
+    "romaji": "jasumin cha",
+    "en": "Jasmine tea",
+    "price": "¥440",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Tea and water — one of the two cheapest things here and one of the two that clear both diets with nothing to ask.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "コーン茶",
+    "romaji": "kōn cha",
+    "en": "Corn tea",
+    "price": "¥440",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Roasted CORN infused in water — worth naming because it is a grain tea that is not a barley one. Japan’s other common roasted-grain tea, 麦茶, is BARLEY; this is not.",
+    "dish_key": "tea"
+   }
+  ]
  }
 }
