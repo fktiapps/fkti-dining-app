@@ -4886,5 +4886,17 @@
   "price_note": "No dish, no price, and no shop page — an honest empty where the single stored route is broken. The record’s only website is a Toreta RESERVATION widget, yoyaku.toreta.in/lethe1028, which is a booking form rather than a menu even when it works; fetched on 2026-09-03 it returns HTTP 404 with a 1KB body, so the booking page itself is gone. Toreta booking links are retired when a restaurant closes, changes booking provider or lets the subscription lapse, and a 404 does not distinguish between those, so nothing is concluded about whether the shop is still trading — that is an existence question for a different queue, not a menu finding. Tabelog is UNVERIFIED rather than empty: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its URL is deliberately absent from sources. ⚠ NOTHING IS RECORDED ABOUT WHAT THIS PLACE SERVES, and there is unusually little even to reason from: the record carries the name Lethe（レーテ）and no cuisine, no address text and no other link. Lethe is the river of forgetting in Greek myth, which tells you about the naming and nothing whatsoever about the kitchen — and reading a menu off a name is the same error as reading one off a cuisine type. Re-check when Tabelog access returns; this record needs a live source before anything can be said about it.",
   "last_checked": "2026-09-03",
   "items": []
+ },
+ "tokyo_michinori": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://www.instagram.com/michinori_udagawa/",
+   "https://retty.me/area/PRE13/ARE8/SUB802/100001779037/menu/",
+   "https://map.yahoo.co.jp/v3/place/ylveApQ5bcU/menu"
+  ],
+  "price_note": "No dish and no price, after three routes were each chased to the end — an honest empty rather than an unchecked one. The shop has no website: its stored link is an Instagram account, fetched and returning only profile metadata (1,856 followers, 37 posts) with the posts behind a login wall. Its Retty menu page WAS read and is explicitly empty on every section — 料理がありません, コースがありません, ランチがありません, ドリンクがありません — with Retty’s own caveat that what it shows reflects the time of a review. ⚠ THE THIRD ROUTE IS THE INTERESTING FAILURE AND WORTH RECORDING FOR FUTURE TICKS: the shop DOES have a published menu, on a Yahoo Maps メニュー表 page, and it is unreadable. The page carries ten menu-board IMAGES, referenced only as みちのりの価格を確認できるメニュー表1 through 10, and they have NO ALT TEXT — the technique that recovered menus for 萬馬軒 and 油そば総本店 elsewhere in this dataset finds nothing here. Two prices, ¥1,999 and ¥3,999, are embedded in the page’s data rather than its visible text, with no dish name attached to either; attaching them to a course would be guessing, so they are not recorded. A photographed menu board is published but not readable, which is a different failure from having no menu at all. Tabelog is UNVERIFIED rather than empty: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge to both curl and WebFetch, so its URL is deliberately absent from sources. ⚠ NOTHING ABOUT WHAT THIS KITCHEN SERVES IS RECORDED, deliberately, and that restraint costs something here — an Asian izakaya is a format where a coeliac and a vegan both have real questions (fish sauce, oyster sauce, soy, wheat noodles) and this record cannot answer any of them. 渋谷区宇田川町10-2, 3F–4F; the Retty listing gives the building as 新東木ビル. Re-check when Tabelog access returns.",
+  "last_checked": "2026-09-03",
+  "items": []
  }
 }
