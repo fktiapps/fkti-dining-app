@@ -101366,5 +101366,291 @@
     "dish_key": "tacosalad"
    }
   ]
+ },
+ "tokyo_koishitai_tai_tantanmen_": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.koishitai-ramen.com/"
+  ],
+  "price_note": "Full menu with prices, read from the shop’s own site — ramen, lunch sets, combo sets, seasonal bowls, rice dishes and the topping list. Tabelog was not consulted: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge, so its page is unverified rather than empty and its URL is absent from sources. The shop describes its owner as having trained for fourteen years in FRENCH cooking before opening a 鯛担麺専門店, and it uses Ehime sea bream throughout. ⚠ THIS RECORD IS ENTIRELY CLOSED ON BOTH AXES AND THE REASONS ARE WORTH SEPARATING. For a coeliac: every bowl is a wheat noodle, the shop offers no alternative, and the two 担麺 bowls add a second wheat route on top — a Japanese tantan sauce is sesame paste let down with SOY, and Chinese fermented pastes are made with wheat flour besides. For a vegan: the entire shop is built on sea bream. 鯛出汁 is not a seasoning here, it is the concept — it is in the broth, in the rice, in the marinated egg, and sold on its own at ¥100 as a topping. ⚠ THE ONE STRUCTURAL POINT WORTH CARRYING AWAY IS ABOUT 鯛めし. Sea bream rice at ¥250 is the only substantial item here that is not made of wheat, and a coeliac travelling with other people could in principle eat it while they have ramen. It is still not safe as published: 鯛めし is rice cooked in the bream dashi, and a Japanese kitchen’s dashi is normally 白だし or だし醤油 — soy, and therefore wheat. So the rice is the thing to ask about, not the thing to assume. ⚠ AND ONE NAME NOT TO MISREAD: 鯛塩濃厚そば. The そば here means RAMEN in the 中華そば sense, not buckwheat — the same misreading this dataset keeps meeting. What 塩 does tell you is real, though: that bowl is seasoned with SALT rather than a soy tare, which removes one wheat route while leaving the noodle. It is the closest thing on this menu to a considered order, and it is still a wheat bowl.",
+  "last_checked": "2026-09-03",
+  "items": [
+   {
+    "ja": "鯛担麺",
+    "romaji": "tai tantanmen",
+    "en": "Sea bream tantanmen",
+    "price": "1,000円（0〜3辛）／1,050円（激辛）",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SHOP’S SIGNATURE AND A DOUBLE WHEAT ROUTE. A tantan sauce is sesame paste loosened with SOY SAUCE and chilli; Chinese 芝麻醬 is plant in itself, but the Japanese version of this bowl is soy-seasoned and normally carries minced pork as well. Heat is chosen from 0 to 3, with a 激辛 level at ¥50 more. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "汁なし鯛担麺",
+    "romaji": "shirunashi tai tantanmen",
+    "en": "Brothless sea bream tantanmen",
+    "price": "1,000円（0〜3辛）／1,050円（激辛）",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NO BROTH IS NOT FEWER INGREDIENTS. With no soup to dilute it, the concentrated soy-and-sesame tare at the bottom of the bowl is the entire seasoning — the brothless version of a tantanmen is the more soy-dense one, not the less. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "鯛塩濃厚そば",
+    "romaji": "tai shio nōkō soba",
+    "en": "Rich sea bream salt ramen",
+    "price": "980円",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TWO THINGS IN ONE NAME. そば here means RAMEN — 中華そば — and there is no buckwheat in it; that is the standard Japanese usage and the standard misreading. But 塩 is a real signal: this bowl is seasoned with SALT rather than a soy tare, which removes one of the two wheat sources. The noodle is the other, and it remains. The cheapest bowl on the board. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "shioramen"
+   },
+   {
+    "ja": "ランチA（鯛担麺＋鯛めし）",
+    "romaji": "ranchi A",
+    "en": "Lunch A — tantanmen with sea bream rice",
+    "price": "1,200円",
+    "section": "ランチセット Lunch sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The tantanmen with a bowl of bream rice. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "lunchset"
+   },
+   {
+    "ja": "ランチB（汁なし鯛担麺＋鯛めし）",
+    "romaji": "ranchi B",
+    "en": "Lunch B — brothless tantanmen with sea bream rice",
+    "price": "1,200円",
+    "section": "ランチセット Lunch sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The brothless bowl with bream rice. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "lunchset"
+   },
+   {
+    "ja": "ランチC（鯛塩濃厚そば＋鯛めし）",
+    "romaji": "ranchi C",
+    "en": "Lunch C — salt ramen with sea bream rice",
+    "price": "1,150円",
+    "section": "ランチセット Lunch sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The salt bowl with bream rice, and the cheapest lunch. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "lunchset"
+   },
+   {
+    "ja": "満腹セット（鯛担麺）",
+    "romaji": "manpuku setto (tai tantanmen)",
+    "en": "Full-stomach set — tantanmen",
+    "price": "1,400円",
+    "section": "セット Combo sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The larger combination. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "満腹セット（鯛塩濃厚そば）",
+    "romaji": "manpuku setto (tai shio nōkō soba)",
+    "en": "Full-stomach set — salt ramen",
+    "price": "1,380円",
+    "section": "セット Combo sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The larger combination with the salt bowl. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "特製セット",
+    "romaji": "tokusei setto",
+    "en": "Special set",
+    "price": "1,400円",
+    "section": "セット Combo sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s own combination; its contents are not itemised on the page, so nothing further is recorded. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "牡蠣つけめん",
+    "romaji": "kaki tsukemen",
+    "en": "Oyster dipping noodles — September, limited",
+    "price": "1,500円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A limited-quantity September bowl. Tsukemen serves the noodles dry with a concentrated dipping broth — the most expensive item on the menu, and OYSTER on top of the bream. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "冷やし鯛ラーメン",
+    "romaji": "hiyashi tai rāmen",
+    "en": "Chilled sea bream ramen — summer",
+    "price": "1,300円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A summer bowl, served cold. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "hiyashi"
+   },
+   {
+    "ja": "冷やし鯛担麺",
+    "romaji": "hiyashi tai tantanmen",
+    "en": "Chilled sea bream tantanmen — summer",
+    "price": "1,300円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The chilled tantanmen. The broth is built on 鯛, SEA BREAM from Ehime, so every bowl here is fish. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "hiyashi"
+   },
+   {
+    "ja": "鯛めし",
+    "romaji": "tai meshi",
+    "en": "Sea bream rice",
+    "price": "250円〜450円（小・並・大）",
+    "section": "ご飯・サイド Rice & sides",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE ONLY SUBSTANTIAL NON-WHEAT ITEM ON THIS MENU, and the one worth a question rather than a shrug. Rice cooked with sea bream — no noodle, no batter, no fryer, and at ¥250 for the small it is the cheapest thing here. What stops it being a clear yes is the cooking liquid: 鯛めし is made with the bream dashi, and a Japanese kitchen’s dashi is normally 白だし or だし醤油, both soy and therefore wheat. Fish regardless, so nothing for a vegan. Available in three sizes.",
+    "dish_key": "taimeshi"
+   },
+   {
+    "ja": "鯛茶漬け",
+    "romaji": "tai chazuke",
+    "en": "Sea bream chazuke",
+    "price": "450円",
+    "section": "ご飯・サイド Rice & sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Rice with bream, flooded with tea or dashi. Chazuke broth is soy-seasoned as standard.",
+    "dish_key": "chazuke"
+   },
+   {
+    "ja": "チャーシュー丼",
+    "romaji": "chāshū don",
+    "en": "Char siu rice bowl",
+    "price": "400円",
+    "section": "ご飯・サイド Rice & sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork braised in a soy tare over rice — the rice is clean and the pork brings the wheat with it.",
+    "dish_key": "chashudon"
+   },
+   {
+    "ja": "和え玉",
+    "romaji": "aedama",
+    "en": "Dressed extra noodles",
+    "price": "400円",
+    "section": "ご飯・サイド Rice & sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "和え玉 is a second portion of noodles served already tossed in tare rather than added to the bowl — wheat noodles and a concentrated seasoning together. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "aedama"
+   },
+   {
+    "ja": "プレミアム和え玉",
+    "romaji": "puremiamu aedama",
+    "en": "Premium dressed extra noodles",
+    "price": "450円",
+    "section": "ご飯・サイド Rice & sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The upgraded version. ⚠ The noodles are WHEAT — the shop has them made to its own specification, with the thickness varying by bowl, which is a statement about texture and not about grain.",
+    "dish_key": "aedama"
+   },
+   {
+    "ja": "替え玉",
+    "romaji": "kaedama",
+    "en": "Extra noodles",
+    "price": "150円",
+    "section": "ご飯・サイド Rice & sides",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "A second helping of plain noodles dropped into the remaining broth — wheat, and boiled in the shop’s shared noodle water.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "鯛だし味玉",
+    "romaji": "tai dashi ajitama",
+    "en": "Egg marinated in sea bream dashi",
+    "price": "150円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A soft egg steeped in the bream dashi. Egg and fish; the dashi it sits in is normally soy-based, which is the gluten question.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "チャーシューましまし",
+    "romaji": "chāshū mashimashi",
+    "en": "Double extra char siu",
+    "price": "250円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Extra soy-braised pork.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "角切りチャーシュー",
+    "romaji": "kakugiri chāshū",
+    "en": "Diced char siu",
+    "price": "150円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Diced soy-braised pork.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "野菜まし",
+    "romaji": "yasai mashi",
+    "en": "Extra vegetables",
+    "price": "100円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "A plain vegetable topping — plant, and one of only two items on this menu that is. Whether it is seasoned before it goes on is not stated, and it lands in a wheat bowl regardless.",
+    "dish_key": "vegetables"
+   },
+   {
+    "ja": "メンマまし",
+    "romaji": "menma mashi",
+    "en": "Extra menma",
+    "price": "150円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ MENMA IS FERMENTED BAMBOO SHOOT — plant, and one of the few ramen toppings that is — but it is cured and seasoned in SOY SAUCE and sesame oil as standard, and some producers use a chicken stock in the seasoning.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "痺れメンマ",
+    "romaji": "shibire menma",
+    "en": "Numbing sanshō menma",
+    "price": "200円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The same bamboo with Sichuan pepper for the 痺れ. Soy-seasoned as above.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "鯛出汁",
+    "romaji": "tai dashi",
+    "en": "Extra sea bream dashi",
+    "price": "100円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ SOLD ON ITS OWN AT ¥100, WHICH IS THE CLEAREST STATEMENT OF WHAT THIS SHOP IS: the sea bream stock is a purchasable component. Fish, and dashi in a Japanese kitchen is normally cut with soy.",
+    "dish_key": "dashi"
+   }
+  ]
  }
 }
