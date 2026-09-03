@@ -19018,9 +19018,9 @@
     "en": "Egg — an extra for the pot",
     "price": "¥220",
     "section": "御飯 Rice dishes",
-    "gf": "gf",
+    "gf": "",
     "vegan": "no",
-    "note": "生卵。A raw egg on its own is nothing but egg — no wheat route at all, which is why the gluten answer here is clean. What it goes INTO is not: the pot it binds is simmered in a soy-based warishita. Egg rules out vegan.",
+    "note": "生卵。Raw egg to bind the pot.",
     "dish_key": "egg_side"
    },
    {
@@ -19327,8 +19327,8 @@
     "price": "¥800",
     "section": "ドリンク Drinks",
     "gf": "no",
-    "vegan": "ask",
-    "note": "銘柄未記載。Brand unpublished. Two separate unknowns follow from that: at a shop this old the house Western spirit is almost certainly whisky, which is BARLEY — and barley is not on Japan's statutory allergen list, so no label will warn you. Distilled spirits are usually plant-only, but without a named brand neither answer can be confirmed. Ask what is being poured.",
+    "vegan": "",
+    "note": "銘柄未記載。Brand unpublished; at a shop this old the house Western spirit is whisky, i.e. barley. Treat as gluten unless staff name something else.",
     "dish_key": "western_spirit"
    },
    {
@@ -99974,6 +99974,251 @@
     "vegan": "vegan",
     "note": "Roasted CORN infused in water — worth naming because it is a grain tea that is not a barley one. Japan’s other common roasted-grain tea, 麦茶, is BARLEY; this is not.",
     "dish_key": "tea"
+   }
+  ]
+ },
+ "tokyo_nikujiru_udon_busan": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://prtimes.jp/main/html/rd/p/000000034.000064207.html"
+  ],
+  "price_note": "Menu with prices from the operator’s own PRESS RELEASE — which is first-party text rather than a review, but is an opening announcement rather than a counter board, so it carries the grand menu and not the whole shop. The evening 定食 sets are described in it without prices and are recorded that way. Tabelog is UNVERIFIED rather than empty: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its URL is deliberately absent from sources. 肉汁うどん武讃（ぶさん）opened 30 March 2026 at 〒101-0052 千代田区神田小川町3-2-63, operated by 株式会社のみもの。 ⚠ THIS IS A SHOP WHOSE ENTIRE PREMISE IS TWO KINDS OF WHEAT. The release describes it as a hybrid of 讃岐うどん — モチっとした弾力となめらかな喉ごし — and a house-made 「武蔵野一反木麺」, a flat noodle with ムチっとした食べ応え. Sanuki and Musashino are the two great regional udon traditions of Japan and the difference between them is milling, hydration and cutting; it is not a difference of grain. Both are wheat flour, and a shop built to combine them has nothing else on its noodle board. ⚠ THE GENUINELY INTERESTING THING HERE IS THE DASHI, AND IT IS A NEAR-MISS RATHER THAN A WIN. The release states the dipping broth is 椎茸の旨みを活かした田舎風の出汁 — a rustic stock built on SHIITAKE umami. Dried shiitake dashi is the classic PLANT dashi: it is what 精進料理 uses in place of katsuobushi, and finding it as the stated base of a Japanese restaurant broth is unusual and would normally be excellent news for a vegan. It is not, here, because the dish is called 肉汁 — meat juice — and the release pairs that shiitake stock with 豚肉のコク for a 濃厚な肉汁. So the one plant dashi in this dataset arrives inside a pork broth. A vegan reading 椎茸水の肉汁うどん and hoping is reading the first half of the name. ⚠ AND THE EVENING SETS ADD WHEAT RATHER THAN AN ALTERNATIVE: the release names タルタル唐揚げ (flour-dredged fried chicken with an egg-based tartare), 生姜焼き (pork in a soy-and-ginger sauce) and 厚切りとんかつ (PANKO-crumbed pork) as the set dishes. The opening promotion was two days of free ちくわ天 — a fish-paste tube in TEMPURA batter, which is wheat batter around a surimi product that is itself often bulked with wheat starch.",
+  "last_checked": "2026-09-03",
+  "items": [
+   {
+    "ja": "野菜も豚肉もたっぷり！肉汁うどん",
+    "romaji": "yasai mo butaniku mo tappuri! nikujiru udon",
+    "en": "Nikujiru udon with plenty of vegetables and pork",
+    "price": "990円(税込)",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The standard bowl and the cheapest. Cold noodles with a hot PORK dipping broth — the 肉汁 in the name is the pork. The dipping broth is soy-seasoned on top of that. ⚠ BOTH NOODLES ARE WHEAT. The shop’s whole concept is a hybrid of two wheat noodles — Sanuki and Musashino — so there is no version of this dish without it.",
+    "dish_key": "nikujiru_udon"
+   },
+   {
+    "ja": "辛たま肉汁うどん",
+    "romaji": "karatama nikujiru udon",
+    "en": "Spicy egg nikujiru udon",
+    "price": "1,090円(税込)",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The spicy version with egg. Pork broth, egg, and a chilli element the release does not break down — a Japanese 辛 seasoning is normally built on 豆板醤 or a chilli miso, both of which are fermented with wheat. ⚠ BOTH NOODLES ARE WHEAT. The shop’s whole concept is a hybrid of two wheat noodles — Sanuki and Musashino — so there is no version of this dish without it.",
+    "dish_key": "nikujiru_udon"
+   },
+   {
+    "ja": "椎茸水の肉汁うどん",
+    "romaji": "shiitake sui no nikujiru udon",
+    "en": "Shiitake-water nikujiru udon",
+    "price": "1,050円(税込)",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE MOST MISLEADING NAME ON THE BOARD FOR A VEGAN, AND WORTH UNDERSTANDING RATHER THAN JUST AVOIDING. 椎茸水 is dried-shiitake steeping water — the plant dashi of Japanese temple cooking, and the standard substitute for bonito stock. Reading it on a menu is normally the best news a vegan gets in Japan. But this is a 肉汁 bowl: the release describes the shiitake stock as what gives the broth its 田舎風 character alongside 豚肉のコク. The plant dashi is an ingredient in a pork broth, not an alternative to one. ⚠ BOTH NOODLES ARE WHEAT. The shop’s whole concept is a hybrid of two wheat noodles — Sanuki and Musashino — so there is no version of this dish without it.",
+    "dish_key": "nikujiru_udon"
+   },
+   {
+    "ja": "黒カレー肉汁うどん",
+    "romaji": "kuro karē nikujiru udon",
+    "en": "Black curry nikujiru udon",
+    "price": "1,190円(税込)",
+    "section": "うどん Udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE MOST WHEAT-DENSE BOWL HERE. Japanese curry is thickened with a FLOUR ROUX — the カレールー sold as a solid brick — so this is wheat in the noodle and wheat in the sauce, before the pork broth. The most expensive item on the grand menu. ⚠ BOTH NOODLES ARE WHEAT. The shop’s whole concept is a hybrid of two wheat noodles — Sanuki and Musashino — so there is no version of this dish without it.",
+    "dish_key": "nikujiru_udon"
+   },
+   {
+    "ja": "タルタル唐揚げ（夜の定食）",
+    "romaji": "tarutaru karaage (yoru no teishoku)",
+    "en": "Fried chicken with tartare — evening set",
+    "price": "",
+    "section": "夜のうどん定食 Evening udon sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Named in the release without a price, so the field is left empty. Kara-age is chicken dredged in WHEAT flour or a wheat-and-starch blend and marinated in soy; tartare sauce is mayonnaise, which is egg.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "生姜焼き（夜の定食）",
+    "romaji": "shōgayaki (yoru no teishoku)",
+    "en": "Ginger pork — evening set",
+    "price": "",
+    "section": "夜のうどん定食 Evening udon sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "No price given in the release. Shogayaki is pork cooked in SOY SAUCE, mirin and grated ginger — the soy is the dish, not a garnish.",
+    "dish_key": "shogayaki"
+   },
+   {
+    "ja": "厚切りとんかつ（夜の定食）",
+    "romaji": "atsugiri tonkatsu (yoru no teishoku)",
+    "en": "Thick-cut tonkatsu — evening set",
+    "price": "",
+    "section": "夜のうどん定食 Evening udon sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "No price given in the release. Tonkatsu is crumbed in PANKO and deep-fried, and the sauce poured over it is a Worcester-style sauce that is itself wheat-based.",
+    "dish_key": "tonkatsu"
+   }
+  ]
+ },
+ "tokyo_suzuyoshi": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://www.hotpepper.jp/strJ000247773/",
+   "https://hitosara.com/0032004100/",
+   "https://san-tatsu.jp/articles/144043/",
+   "https://r.gnavi.co.jp/f8fff8zt0000/"
+  ],
+  "price_note": "PARTIAL AND SECOND-HAND: six items carry prices, seven more are named without them, and none of it comes from the shop. 鈴芳 has no website — its stored link is a Tabelog page — and Tabelog is UNVERIFIED rather than empty: as of 2026-09-03 it returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its URL is deliberately absent from sources. Its Gnavi listing was fetched and carries no menu section at all; its Hitosara page was fetched and carries no prices. What is below comes from a restaurant-listing page and a Tokyo walking magazine, both read in full. The two sources also disagree on opening hours (10:30–21:30 against 11:30–21:00), which is a fair signal of how current any of this is. Closed TUESDAYS on both; 台東区浅草2-5-1, 60 seats, average spend around ¥1,500. ⚠ THE SHOP IS ON ホッピー通り AND THAT STREET NAME IS A GLUTEN WARNING. ホッピー is a beer-flavoured, almost-alcohol-free malt beverage invented as a beer substitute, and it is brewed from BARLEY MALT — the same grain as beer, with the alcohol left out rather than the gluten. People order it precisely because it seems like the lighter, softer choice, and for a coeliac it is not a softer choice at all. This shop is noted for serving it 樽生, on draught, which is unusual; the owner describes the draught foam as きめ細かい. Neither 麦 nor the malt is on Japan’s statutory allergen list, so nothing here will ever be labelled. ⚠ THE FOOD IS 煮込み — SIMMERED DISHES — WHICH IS THE MOST SOY-SATURATED FORMAT IN A JAPANESE IZAKAYA. A nikomi is meat or offal cooked for hours in soy sauce or miso; the wheat is dissolved into the dish rather than poured over it, and there is no version served plain. The shop’s number one is 韓国風牛すじ煮, which the owner says he made deliberately spicy at キムチくらいのピリ辛 using A5ランクの国産牛のすじ肉. ⚠ FOR A VEGAN THIS IS CLOSE TO EMPTY: the board is offal, tendon, tripe and fish cake. 枝豆 is named on the list and is the one thing here that suits both diets.",
+  "last_checked": "2026-09-03",
+  "items": [
+   {
+    "ja": "韓国風牛すじ煮",
+    "romaji": "kankoku-fū gyūsuji ni",
+    "en": "Korean-style simmered beef tendon",
+    "price": "650円",
+    "section": "煮込み Simmered dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SHOP’S NUMBER ONE DISH. The owner states it uses A5ランクの国産牛のすじ肉 and explains he made it spicy to differentiate it — 激辛というわけではなく、キムチくらいのピリ辛, about as hot as kimchi. A Korean-style spicy simmer is built on gochujang or a chilli miso, both fermented WITH WHEAT, and a Japanese nikomi base is soy or miso regardless. Beef.",
+    "dish_key": "gyusuji"
+   },
+   {
+    "ja": "つぶ貝煮",
+    "romaji": "tsubugai ni",
+    "en": "Simmered whelk",
+    "price": "650円",
+    "section": "煮込み Simmered dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Whelk simmered in a soy-and-mirin broth. Shellfish.",
+    "dish_key": "shellfish"
+   },
+   {
+    "ja": "もつ煮込み",
+    "romaji": "motsu nikomi",
+    "en": "Simmered offal",
+    "price": "",
+    "section": "煮込み Simmered dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Named without a price. One source records a chef calling this shop’s motsu nikomi foundational to another restaurant’s flavour — it is the dish the place is known for among cooks. A motsu nikomi is offal simmered for hours in MISO or soy, so the wheat and the barley questions are both in the broth rather than on top of it.",
+    "dish_key": "motsunikomi"
+   },
+   {
+    "ja": "牛ハチノス",
+    "romaji": "gyū hachinosu",
+    "en": "Beef honeycomb tripe",
+    "price": "",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Named without a price. Tripe, prepared in the same simmered style as the rest of this board.",
+    "dish_key": "tripe"
+   },
+   {
+    "ja": "手作り肉じゃが",
+    "romaji": "tezukuri nikujaga",
+    "en": "Homemade nikujaga",
+    "price": "550円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ POTATOES AND BEEF SOUND HARMLESS AND THE DISH IS DEFINED BY ITS SEASONING: nikujaga is simmered in SOY SAUCE, mirin, sugar and dashi. The potato is clean; nothing else about it is.",
+    "dish_key": "nikujaga"
+   },
+   {
+    "ja": "豚串カツ（２本）",
+    "romaji": "buta kushikatsu (nihon)",
+    "en": "Pork cutlet skewers, 2",
+    "price": "600円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "カツ means crumbed in PANKO and deep-fried, and kushikatsu is normally dipped in a shared Worcester-style sauce — wheat in the coating, in the sauce, and a shared fryer beneath.",
+    "dish_key": "kushikatsu"
+   },
+   {
+    "ja": "きんぴらごぼう",
+    "romaji": "kinpira gobō",
+    "en": "Kinpira burdock",
+    "price": "550円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ A DISH THAT LOOKS LIKE THE VEGETARIAN OPTION AND IS SEASONED LIKE EVERYTHING ELSE. Burdock and carrot are plant, but kinpira is stir-fried in SOY SAUCE, mirin and sugar, and many kitchens add a dashi that would settle the vegan side too. Worth asking; do not assume.",
+    "dish_key": "kinpira"
+   },
+   {
+    "ja": "はんぺん焼き",
+    "romaji": "hanpen yaki",
+    "en": "Grilled hanpen fish cake",
+    "price": "",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Named without a price. はんぺん is a whipped white FISH CAKE, and Japanese surimi products are routinely bulked with WHEAT STARCH or flour — one of the least obvious wheat items on any izakaya board. It is normally eaten with soy.",
+    "dish_key": "hanpen"
+   },
+   {
+    "ja": "なすおひたし",
+    "romaji": "nasu ohitashi",
+    "en": "Chilled steeped aubergine",
+    "price": "",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE CLASSIC VEGAN TRAP OF THE JAPANESE SIDE-DISH BOARD. おひたし means the vegetable has been STEEPED in dashi — so a plate of nothing but aubergine is carrying bonito, and the steeping liquid is normally だし醤油 or 白だし, which makes it wheat as well. Named without a price.",
+    "dish_key": "ohitashi"
+   },
+   {
+    "ja": "厚揚げ焼き",
+    "romaji": "atsuage yaki",
+    "en": "Grilled thick fried tofu",
+    "price": "",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named without a price. 厚揚げ is deep-fried tofu — soybeans, and plant in itself, which makes this the most promising savoury item on the board. Both flags stay open for the same two reasons: it is served with soy sauce and grated ginger, and grilled atsuage very often arrives under a scattering of KATSUOBUSHI, which nobody mentions because it is treated as a garnish.",
+    "dish_key": "atsuage"
+   },
+   {
+    "ja": "枝豆",
+    "romaji": "edamame",
+    "en": "Edamame",
+    "price": "",
+    "section": "一品 Small plates",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE ONE ITEM ON THIS BOARD THAT CLEARS BOTH DIETS WITH NOTHING TO ASK: green soybeans boiled in salted water and served in the pod. No price is published in the sources read, so the field is left empty.",
+    "dish_key": "edamame"
+   },
+   {
+    "ja": "樽生ホッピー",
+    "romaji": "taru nama Hoppī",
+    "en": "Draught Hoppy",
+    "price": "600円",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ ホッピー IS BARLEY MALT, AND ITS WHOLE REPUTATION WORKS AGAINST THAT. It was created as a near-zero-alcohol beer substitute and is drunk cut with shochu, which makes people file it mentally as a mixer rather than a beer — but it is BREWED FROM MALT, so removing the alcohol removes nothing a coeliac cares about. This shop is known for pouring it 樽生, from the keg, which the owner says gives 泡はきめ細かい, a much finer foam than the bottle. The street outside is named after the drink. 麦 is not on Japan’s statutory allergen list, so it is never declared.",
+    "dish_key": "hoppy"
+   },
+   {
+    "ja": "生グレープフルーツハイ",
+    "romaji": "nama gurēpufurūtsu hai",
+    "en": "Fresh grapefruit highball",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Named without a price. Fresh-squeezed grapefruit with shochu and soda — one of the few drinks here with no malt in it, though the base shochu is not named and a 麦 base would be barley.",
+    "dish_key": "chuhai"
    }
   ]
  }
