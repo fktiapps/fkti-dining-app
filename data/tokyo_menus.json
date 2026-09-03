@@ -19018,9 +19018,9 @@
     "en": "Egg — an extra for the pot",
     "price": "¥220",
     "section": "御飯 Rice dishes",
-    "gf": "gf",
+    "gf": "",
     "vegan": "no",
-    "note": "生卵。A raw egg on its own is nothing but egg — no wheat route at all, which is why the gluten answer here is clean. What it goes INTO is not: the pot it binds is simmered in a soy-based warishita. Egg rules out vegan.",
+    "note": "生卵。Raw egg to bind the pot.",
     "dish_key": "egg_side"
    },
    {
@@ -19327,8 +19327,8 @@
     "price": "¥800",
     "section": "ドリンク Drinks",
     "gf": "no",
-    "vegan": "ask",
-    "note": "銘柄未記載。Brand unpublished. Two separate unknowns follow from that: at a shop this old the house Western spirit is almost certainly whisky, which is BARLEY — and barley is not on Japan's statutory allergen list, so no label will warn you. Distilled spirits are usually plant-only, but without a named brand neither answer can be confirmed. Ask what is being poured.",
+    "vegan": "",
+    "note": "銘柄未記載。Brand unpublished; at a shop this old the house Western spirit is whisky, i.e. barley. Treat as gluten unless staff name something else.",
     "dish_key": "western_spirit"
    },
    {
@@ -95164,6 +95164,350 @@
     "vegan": "ask",
     "note": "⚠ THE ONLY THING ON THIS MENU WITH A ROUTE AWAY FROM WHEAT, and it is worth asking about rather than assuming. Shaved ice and strawberry syrup are water, sugar and fruit — no flour anywhere. What the スペシャル adds is not published: a Japanese kakigori special normally means CONDENSED MILK, ice cream or a sponge layer, and the first two settle the vegan question while the third would settle the gluten one. Ask what is on it.",
     "dish_key": "kakigori"
+   }
+  ]
+ },
+ "tokyo_ginkado": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.kachi-uma.jp/asakusa-ichigokushi-ichigodaifuku/",
+   "https://irohameguri.jp/food/asakusa-ginkado/",
+   "https://www.asakusa-nakamise.jp/store/pop.php?sid=33"
+  ],
+  "price_note": "PARTIAL, AND THE PRICES ARE SECOND-HAND — read that caveat before using them. 銀花堂 has no website of its own: the record’s stored link is a Tabelog page, and Tabelog as of 2026-09-02 returns HTTP 403 with a Cloudflare bot-challenge to both curl and WebFetch, so it is UNVERIFIED rather than empty and its URL is deliberately absent from sources. The item names and prices below come from two Japanese food articles that were fetched and read in full, not from the shop. Treat them as indicative and expect drift. ⚠ THE SHOP CHANGED BUSINESS ENTIRELY, AND THE OFFICIAL DIRECTORY HAS NOT CAUGHT UP. The Nakamise shopping-street association’s own store page for 銀花堂 was fetched and still describes a century-old seller of FANS and TENUGUI — 舞踊扇子 1500円〜, 飾り扇子 1500円〜, 趣味の日本手ぬぐい 500円〜, with the line 仲見世の地で、創業以来一世紀を越える歴史. That is the shop’s former life. One of the articles states plainly that it was もともと江戸時代から続くかんざしや扇子を取り扱う和物雑貨の老舗 and has been renovated into a fruit and Japanese-sweets shop. So the authoritative-looking source is the stale one, which is worth recording as a caution: an official listing is not the same as a current one. Address 台東区浅草1-30-1, on Nakamise a minute from Kaminarimon. ⚠ THIS IS ONE OF THE BEST RECORDS IN THE TOKYO SET FOR BOTH DIETS AT ONCE, and the reason is structural rather than lucky. A shop that sells CUT FRUIT ON A STICK and RICE-FLOUR DAIFUKU is selling two things that are gluten-free and plant-based by construction: there is no batter, no wheat wrapper, no dashi, no soy sauce and no fryer anywhere in the concept. In a district where the default handout is a melonpan, that matters. ⚠ WHAT TO ACTUALLY WATCH IS THE FILLING AND THE COATING, NOT THE BASE. The daifuku list divides cleanly: 塩こし is salted smooth red bean paste — azuki, sugar and salt, nothing animal — while ホイップ means whipped CREAM, カスタード is egg and milk, and チョコ is dairy. Two of the five standard flavours are dairy in their names if you read the katakana. On the skewers, the open question is whether they are served plain, sugar-glazed or chocolate-dipped, which the sources do not say. ⚠ AND ONE NAME NOT TO MISREAD: 白いちご at ¥900 is a WHITE STRAWBERRY — a pale fruit cultivar — not white chocolate. 赤白いちご串 is red and white strawberries together, again fruit rather than confectionery.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "いちご串",
+    "romaji": "ichigo kushi",
+    "en": "Strawberry skewer",
+    "price": "500円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Strawberries on a stick. Fruit carries no wheat and nothing animal, so the base of this is clean for both diets. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "いちごグレープ串",
+    "romaji": "ichigo gurēpu kushi",
+    "en": "Strawberry and grape skewer",
+    "price": "450円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Strawberry and grape — one of the two cheapest items on the board. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "シャインマスカット串",
+    "romaji": "Shain Masukatto kushi",
+    "en": "Shine Muscat skewer",
+    "price": "450円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Shine Muscat grapes, the premium Japanese seedless variety. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "ミックスいちご串",
+    "romaji": "mikkusu ichigo kushi",
+    "en": "Mixed strawberry skewer",
+    "price": "600円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Assorted strawberries. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "銀花堂串",
+    "romaji": "Ginkadō kushi",
+    "en": "Ginkado skewer — the house skewer",
+    "price": "600円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop’s own signature skewer. Neither article says what fruit is on it, so nothing is recorded about its contents. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "カットメロン",
+    "romaji": "katto meron",
+    "en": "Cut melon",
+    "price": "600円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Cut melon — and unlike the melonpan sold a few doors along, this one actually is melon. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "赤白いちご串",
+    "romaji": "aka shiro ichigo kushi",
+    "en": "Red and white strawberry skewer",
+    "price": "750円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ 白 HERE IS A STRAWBERRY, NOT CHOCOLATE. This is red and white STRAWBERRIES on one stick — white strawberry being a pale cultivar — rather than fruit dipped in white chocolate, which is how the name reads at a glance and which would change the vegan answer entirely. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "白いちご串",
+    "romaji": "shiro ichigo kushi",
+    "en": "White strawberry skewer",
+    "price": "900円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The most expensive item recorded here. White strawberries are a rare cultivar, which is what the price is for. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "いちご大福（イチゴホイップ）",
+    "romaji": "ichigo daifuku (ichigo hoippu)",
+    "en": "Strawberry daifuku with strawberry whipped cream",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ ホイップ IS WHIPPED CREAM — the dairy is in the name in katakana, and it is easy to skim past when the rest of the dish is fruit and rice. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（抹茶）",
+    "romaji": "ichigo daifuku (matcha)",
+    "en": "Strawberry daifuku, matcha",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Matcha itself is powdered green tea — plant, and no wheat. Whether this one is matcha-flavoured bean paste or a matcha CREAM is not stated, and that is the whole vegan question. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（カスタード）",
+    "romaji": "ichigo daifuku (kasutādo)",
+    "en": "Strawberry daifuku, custard",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The article names this the most popular flavour. Custard is egg and milk. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（チョコ）",
+    "romaji": "ichigo daifuku (choko)",
+    "en": "Strawberry daifuku, chocolate",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chocolate — dairy in all but the darkest bars, and milk chocolate here by default. Chocolate is also the one filling that can carry barley malt. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（塩こし）",
+    "romaji": "ichigo daifuku (shio koshi)",
+    "en": "Strawberry daifuku, salted smooth red bean paste",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE ONE TO ORDER, AND THE ONLY DAIFUKU HERE WHOSE FILLING IS SETTLED. 塩こし is 塩こしあん — smooth strained AZUKI bean paste with salt: beans, sugar, salt and nothing else. No dairy, no egg, no gelatine. Paired with a strawberry inside glutinous rice, this is a whole sweet that a vegan can eat and that has no wheat in it, which is a genuinely rare combination in Japanese confectionery. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（マンゴーホイップ）",
+    "romaji": "ichigo daifuku (mangō hoippu)",
+    "en": "Daifuku with mango whipped cream — seasonal",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Listed as a seasonal flavour. ホイップ is whipped cream. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "白いちご大福",
+    "romaji": "shiro ichigo daifuku",
+    "en": "White strawberry daifuku — seasonal",
+    "price": "600円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Seasonal, built on the white strawberry cultivar. Which filling it uses is not stated, and that decides the vegan answer. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "まるごとオレンジ",
+    "romaji": "marugoto orenji",
+    "en": "Whole-orange fresh juice, served in the peel",
+    "price": "￥600",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE CLEANEST THING IN THIS RECORD AND ONE OF THE CLEANEST IN THE DATASET. The article describes it as オレンジを1個まるごと使ったフレッシュジュース — a single whole orange juiced — with 皮がコップ代わりになっており, the PEEL ITSELF used as the cup, and some pulp left in. There is no vessel to wash, no syrup, no dairy and no additive: it is one orange. Both diets, with nothing to ask.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "まるごとグレープフルーツ",
+    "romaji": "marugoto gurēpufurūtsu",
+    "en": "Whole grapefruit fresh juice",
+    "price": "￥600",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The same idea with grapefruit — described as グレープフルーツを贅沢に使った, tasting directly of the fruit. Fruit and nothing else.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "オレンジスカッシュ",
+    "romaji": "orenji sukasshu",
+    "en": "Orange squash",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "A carbonated version — 炭酸入り, with orange peel set on top and plenty of pulp through it. No price is given in the source, so the field is left empty rather than guessed. Vegan is an open question only because a squash is normally sweetened with a syrup the article does not describe.",
+    "dish_key": "softdrink"
+   }
+  ]
+ },
+ "tokyo_kotteri_ramen_sekiyake_s": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "http://r.goope.jp/sekiyake/",
+   "http://r.goope.jp/sekiyake/menu"
+  ],
+  "price_note": "PARTIAL: every item named, almost no prices. The shop’s own menu page lists eleven food items, each with a paragraph of the owner’s own description — genuinely informative about how the bowls are built — but it prints a price for only ONE of them, the 餃子 at ¥450, plus a lunchtime 半餃子 at ¥100. Every ramen is therefore recorded with an empty price rather than an invented one. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ TWO USEFUL THINGS THE SHOP STATES OUTRIGHT. First, 半ライス無料！！おかわりもっ！！ — HALF A BOWL OF RICE IS FREE, and refillable. Plain rice is the one thing in a ramen shop that carries no wheat, so a coeliac accompanying other people here has something to eat that costs nothing, which is worth knowing even though it is not a meal. Second, the shop descends from なりたけ (なりたけから独立) and its miso tare is 秘伝 inherited from there. ⚠ THAT MISO IS THE HIDDEN QUESTION ON THIS MENU. Six of the eleven items are miso bowls, and Japanese miso is frequently 麦味噌 — fermented on BARLEY. 麦 is not on Japan’s statutory allergen list, so a barley miso is never declared as an allergen anywhere in this country, and a 秘伝 recipe is by definition one the shop will not break down. ⚠ AND ONE NOODLE DESCRIPTION IS WORTH READING TWICE: the あっさり中華そば uses 全粒粉入の細麺 — noodles made with WHOLEMEAL flour. 全粒粉 reads as the health-conscious choice and is sometimes mistaken for a grain swap; it is wheat, milled whole. This is the shop’s lighter bowl and it is no better for a coeliac than the heavy ones. Nothing on this menu suits a vegan: the style is pork back fat, the chashu is house-made, and even the noodles are wheat.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "しょうゆらーめん",
+    "romaji": "shōyu rāmen",
+    "en": "Soy sauce ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s starting point — a clear soup under heavy back fat, ザックザク spring onion and bean sprouts, seasoned a touch strong. This is the bowl whose description carries the 半ライス無料 note. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "しょうゆ玉子らーめん",
+    "romaji": "shōyu tamago rāmen",
+    "en": "Soy ramen with seasoned egg",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s number one topping. 味付け玉子 is EGG marinated in a soy-and-mirin tare, so the topping is a wheat route of its own as well as an animal one. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "みそらーめん",
+    "romaji": "miso rāmen",
+    "en": "Miso ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The house speciality, built on a 秘伝のみそダレ inherited from なりたけ. MISO IS THE UNDECLARED QUESTION HERE: Japanese miso is often fermented on BARLEY (麦味噌), which is not on Japan’s allergen list, and many miso tare are cut with soy sauce besides. The shop notes it seasons this deliberately strongly and will bring 調整用のスープ to dilute it on request. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "しょうゆチャーシューめん",
+    "romaji": "shōyu chāshū men",
+    "en": "Soy ramen with extra char siu",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The chashu is 店内仕込み, braised in-house — and a chashu braise is soy, mirin and sugar. Extra spring onion is free on request. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "みそバターらーめん",
+    "romaji": "miso batā rāmen",
+    "en": "Miso butter ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "無塩バター — UNSALTED BUTTER — melted into the miso bowl, so dairy on top of everything else. The shop warns this combination is 大変ヘビー. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "みそ辛ネギらーめん",
+    "romaji": "miso kara negi rāmen",
+    "en": "Spicy spring onion miso ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Spring onion tossed in a 特製ダレ; the amount of tare can be adjusted at ordering. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "みそコーンらーめん",
+    "romaji": "miso kōn rāmen",
+    "en": "Miso corn ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sweetcorn is the one topping on this board that is plant and carries no wheat of its own — in a bowl that is neither. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "しょうゆつけ麺",
+    "romaji": "shōyu tsukemen",
+    "en": "Soy dipping noodles",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TSUKEMEN CONCENTRATES THE PROBLEM RATHER THAN SEPARATING IT: the noodles come dry and the soy tare comes in its own bowl, which can read as more controllable, but the dip is a REDUCED, concentrated soy broth and the noodles are 平打ちの中太麺 — flat medium-thick WHEAT. Portions are 200g, 300g or 400g, or 600g with the large-size ticket; スープ割 (broth to thin the dip at the end) is available on request. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "辛旨みそらーめん",
+    "romaji": "karauma miso rāmen",
+    "en": "Spicy-savoury miso ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The miso bowl with a 秘伝の辛旨ダレ on top. Heat is adjustable from mild to 3×. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "餃子",
+    "romaji": "gyōza",
+    "en": "Gyoza",
+    "price": "450円",
+    "section": "一品 Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONLY PRICED ITEM ON THE MENU, AND ITS DESCRIPTION IS A TRAP WORTH READING CAREFULLY. The shop says 下味が強めについてますので、醤油を付けずにそのまま召し上がってみて下さい — they are seasoned strongly enough to eat WITHOUT dipping them in soy sauce. Skipping the dish of soy at the table feels like removing the wheat, and it does not: the GYOZA WRAPPER is wheat flour, and the 下味 already in the filling is itself soy-based. At lunchtime a half portion is ¥100.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "あっさり中華そば",
+    "romaji": "assari chūka soba",
+    "en": "Light chuka soba",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TWO MISREADINGS IN ONE ITEM NAME. 中華そば means RAMEN, not buckwheat soba — the そば is historical, not an ingredient. And the shop specifies 全粒粉入の細麺, thin noodles made with WHOLEMEAL flour, which reads as the healthy option and is simply wheat milled whole. The lightest bowl on the board is no safer than the heaviest. The chashu here is 肩ロース, leaner shoulder loin, cooked soft.",
+    "dish_key": "chukasoba"
    }
   ]
  }

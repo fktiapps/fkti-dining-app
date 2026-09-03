@@ -1,0 +1,148 @@
+{
+ "tokyo_kotteri_ramen_sekiyake_s": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "http://r.goope.jp/sekiyake/",
+   "http://r.goope.jp/sekiyake/menu"
+  ],
+  "price_note": "PARTIAL: every item named, almost no prices. The shop’s own menu page lists eleven food items, each with a paragraph of the owner’s own description — genuinely informative about how the bowls are built — but it prints a price for only ONE of them, the 餃子 at ¥450, plus a lunchtime 半餃子 at ¥100. Every ramen is therefore recorded with an empty price rather than an invented one. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ TWO USEFUL THINGS THE SHOP STATES OUTRIGHT. First, 半ライス無料！！おかわりもっ！！ — HALF A BOWL OF RICE IS FREE, and refillable. Plain rice is the one thing in a ramen shop that carries no wheat, so a coeliac accompanying other people here has something to eat that costs nothing, which is worth knowing even though it is not a meal. Second, the shop descends from なりたけ (なりたけから独立) and its miso tare is 秘伝 inherited from there. ⚠ THAT MISO IS THE HIDDEN QUESTION ON THIS MENU. Six of the eleven items are miso bowls, and Japanese miso is frequently 麦味噌 — fermented on BARLEY. 麦 is not on Japan’s statutory allergen list, so a barley miso is never declared as an allergen anywhere in this country, and a 秘伝 recipe is by definition one the shop will not break down. ⚠ AND ONE NOODLE DESCRIPTION IS WORTH READING TWICE: the あっさり中華そば uses 全粒粉入の細麺 — noodles made with WHOLEMEAL flour. 全粒粉 reads as the health-conscious choice and is sometimes mistaken for a grain swap; it is wheat, milled whole. This is the shop’s lighter bowl and it is no better for a coeliac than the heavy ones. Nothing on this menu suits a vegan: the style is pork back fat, the chashu is house-made, and even the noodles are wheat.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "しょうゆらーめん",
+    "romaji": "shōyu rāmen",
+    "en": "Soy sauce ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s starting point — a clear soup under heavy back fat, ザックザク spring onion and bean sprouts, seasoned a touch strong. This is the bowl whose description carries the 半ライス無料 note. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "しょうゆ玉子らーめん",
+    "romaji": "shōyu tamago rāmen",
+    "en": "Soy ramen with seasoned egg",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s number one topping. 味付け玉子 is EGG marinated in a soy-and-mirin tare, so the topping is a wheat route of its own as well as an animal one. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "みそらーめん",
+    "romaji": "miso rāmen",
+    "en": "Miso ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The house speciality, built on a 秘伝のみそダレ inherited from なりたけ. MISO IS THE UNDECLARED QUESTION HERE: Japanese miso is often fermented on BARLEY (麦味噌), which is not on Japan’s allergen list, and many miso tare are cut with soy sauce besides. The shop notes it seasons this deliberately strongly and will bring 調整用のスープ to dilute it on request. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "しょうゆチャーシューめん",
+    "romaji": "shōyu chāshū men",
+    "en": "Soy ramen with extra char siu",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The chashu is 店内仕込み, braised in-house — and a chashu braise is soy, mirin and sugar. Extra spring onion is free on request. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "みそバターらーめん",
+    "romaji": "miso batā rāmen",
+    "en": "Miso butter ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "無塩バター — UNSALTED BUTTER — melted into the miso bowl, so dairy on top of everything else. The shop warns this combination is 大変ヘビー. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "みそ辛ネギらーめん",
+    "romaji": "miso kara negi rāmen",
+    "en": "Spicy spring onion miso ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Spring onion tossed in a 特製ダレ; the amount of tare can be adjusted at ordering. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "みそコーンらーめん",
+    "romaji": "miso kōn rāmen",
+    "en": "Miso corn ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sweetcorn is the one topping on this board that is plant and carries no wheat of its own — in a bowl that is neither. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "しょうゆつけ麺",
+    "romaji": "shōyu tsukemen",
+    "en": "Soy dipping noodles",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TSUKEMEN CONCENTRATES THE PROBLEM RATHER THAN SEPARATING IT: the noodles come dry and the soy tare comes in its own bowl, which can read as more controllable, but the dip is a REDUCED, concentrated soy broth and the noodles are 平打ちの中太麺 — flat medium-thick WHEAT. Portions are 200g, 300g or 400g, or 600g with the large-size ticket; スープ割 (broth to thin the dip at the end) is available on request. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "辛旨みそらーめん",
+    "romaji": "karauma miso rāmen",
+    "en": "Spicy-savoury miso ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The miso bowl with a 秘伝の辛旨ダレ on top. Heat is adjustable from mild to 3×. ⚠ Ramen noodles are WHEAT with かん水, and the tare is soy — two wheat sources before any topping. The bowl is finished with 背脂, PORK BACK FAT, which is the shop’s whole style.",
+    "dish_key": "miso"
+   },
+   {
+    "ja": "餃子",
+    "romaji": "gyōza",
+    "en": "Gyoza",
+    "price": "450円",
+    "section": "一品 Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONLY PRICED ITEM ON THE MENU, AND ITS DESCRIPTION IS A TRAP WORTH READING CAREFULLY. The shop says 下味が強めについてますので、醤油を付けずにそのまま召し上がってみて下さい — they are seasoned strongly enough to eat WITHOUT dipping them in soy sauce. Skipping the dish of soy at the table feels like removing the wheat, and it does not: the GYOZA WRAPPER is wheat flour, and the 下味 already in the filling is itself soy-based. At lunchtime a half portion is ¥100.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "あっさり中華そば",
+    "romaji": "assari chūka soba",
+    "en": "Light chuka soba",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TWO MISREADINGS IN ONE ITEM NAME. 中華そば means RAMEN, not buckwheat soba — the そば is historical, not an ingredient. And the shop specifies 全粒粉入の細麺, thin noodles made with WHOLEMEAL flour, which reads as the healthy option and is simply wheat milled whole. The lightest bowl on the board is no safer than the heaviest. The chashu here is 肩ロース, leaner shoulder loin, cooked soft.",
+    "dish_key": "chukasoba"
+   }
+  ]
+ },
+ "tokyo_toriyaki_hajime": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "http://www.toriyakihajime.jp/",
+   "http://www.toriyakihajime.jp/menu.html",
+   "http://www.toriyakihajime.jp/images_menu/menu.pdf",
+   "http://www.toriyakihajime.jp/images_menu/drink.pdf"
+  ],
+  "price_note": "No dish and no price, and this is an honest empty reached the hard way rather than by giving up early. The shop has its own site and its own menu page, and that page links two PDFs — menu.pdf (880KB) and drink.pdf (735KB). Both were downloaded and both were extracted. ⚠ THEY HAVE A TEXT LAYER AND IT IS STILL UNUSABLE, which is a different failure from a scan and worth recording precisely: the Japanese characters do not survive extraction at all. What comes out of an 880KB food menu is 483 non-whitespace characters, consisting of the postcode 101-0061, the street number 2-18-2, the phone and fax number 03-3288-0031, the email, the URL, and the opening hours 11:30–14:00 / 17:00–23:00 — every ASCII character on the page and not one dish. The rest of the file renders as dotted leader lines, the row of dots that runs between a dish name and its price on a printed menu, which is the shape of the menu with all of its content removed. The prices are laid out as glyphs too and did not come through either. So the menu is published, it is public, it is not a photograph, and it still cannot be read. Nothing has been taken from the shape of it. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ WHAT THE HTML PAGE ITSELF STATES: dinner only, 月〜土 17:00–23:00, closed Sundays and public holidays, 11 counter seats and 12 at tables — a small counter shop. The PDF’s hours line suggests a lunch service too, and the site has a separate lunch.html, so the two disagree; the HTML menu page is the more recently maintained of the two and is what is recorded here. ⚠ ORIENTATION ONLY, since nothing about this kitchen is sourced: とり焼 is chicken grilling, and the one question that decides a yakitori order for a coeliac is タレ or 塩 — a tare glaze is soy sauce, mirin and sugar and is painted on during cooking, while 塩 is salt. Salt-grilled skewers are the standard route, but whether this shop offers each skewer both ways is exactly what an unreadable menu cannot say. Re-check if the shop ever republishes the menu as HTML.",
+  "last_checked": "2026-09-02",
+  "items": []
+ }
+}

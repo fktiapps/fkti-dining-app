@@ -6195,5 +6195,216 @@
   "price_note": "No flavour and no price — an honest empty, and both routes were chased to the end. The shop has no website: its stored link is an Instagram account, which was fetched and returns only profile metadata — 1,238 followers, 57 posts, and a bio that is nothing but the name and location, アイスの沼 gelatolabo ASAKUSA｜浅草. The posts themselves sit behind a login wall, and a photo caption would not be a menu even if they did not. Tabelog could not be checked: as of 2026-09-02 it still returns HTTP 403 with a Cloudflare bot-challenge body to both curl and WebFetch, so its page for this shop is UNVERIFIED rather than empty and its URL is deliberately absent from sources. ⚠ NOTHING IS RECORDED ABOUT WHAT THIS SHOP SELLS, deliberately, and a gelateria is a case where guessing would be especially tempting and especially wrong. The account name contains gelatolabo, and gelato is normally a MILK product — but the same counters almost always sell SORBETTO alongside it, which is fruit, sugar and water and is one of the few genuinely vegan desserts available in Japan. Which of those this shop makes, in what proportion, and whether any flavour carries biscuit, cookie dough or wheat-based stabiliser, is exactly what an unread menu cannot tell you. The one thing worth carrying to the counter without a source is the standing question at every ice cream shop: the CONE is wheat and the cup is not, and the scoop that has just come out of a cookie-dough tub has been through the same water bath as everything else. Re-check when Tabelog access returns.",
   "last_checked": "2026-09-02",
   "items": []
+ },
+ "tokyo_ginkado": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.kachi-uma.jp/asakusa-ichigokushi-ichigodaifuku/",
+   "https://irohameguri.jp/food/asakusa-ginkado/",
+   "https://www.asakusa-nakamise.jp/store/pop.php?sid=33"
+  ],
+  "price_note": "PARTIAL, AND THE PRICES ARE SECOND-HAND — read that caveat before using them. 銀花堂 has no website of its own: the record’s stored link is a Tabelog page, and Tabelog as of 2026-09-02 returns HTTP 403 with a Cloudflare bot-challenge to both curl and WebFetch, so it is UNVERIFIED rather than empty and its URL is deliberately absent from sources. The item names and prices below come from two Japanese food articles that were fetched and read in full, not from the shop. Treat them as indicative and expect drift. ⚠ THE SHOP CHANGED BUSINESS ENTIRELY, AND THE OFFICIAL DIRECTORY HAS NOT CAUGHT UP. The Nakamise shopping-street association’s own store page for 銀花堂 was fetched and still describes a century-old seller of FANS and TENUGUI — 舞踊扇子 1500円〜, 飾り扇子 1500円〜, 趣味の日本手ぬぐい 500円〜, with the line 仲見世の地で、創業以来一世紀を越える歴史. That is the shop’s former life. One of the articles states plainly that it was もともと江戸時代から続くかんざしや扇子を取り扱う和物雑貨の老舗 and has been renovated into a fruit and Japanese-sweets shop. So the authoritative-looking source is the stale one, which is worth recording as a caution: an official listing is not the same as a current one. Address 台東区浅草1-30-1, on Nakamise a minute from Kaminarimon. ⚠ THIS IS ONE OF THE BEST RECORDS IN THE TOKYO SET FOR BOTH DIETS AT ONCE, and the reason is structural rather than lucky. A shop that sells CUT FRUIT ON A STICK and RICE-FLOUR DAIFUKU is selling two things that are gluten-free and plant-based by construction: there is no batter, no wheat wrapper, no dashi, no soy sauce and no fryer anywhere in the concept. In a district where the default handout is a melonpan, that matters. ⚠ WHAT TO ACTUALLY WATCH IS THE FILLING AND THE COATING, NOT THE BASE. The daifuku list divides cleanly: 塩こし is salted smooth red bean paste — azuki, sugar and salt, nothing animal — while ホイップ means whipped CREAM, カスタード is egg and milk, and チョコ is dairy. Two of the five standard flavours are dairy in their names if you read the katakana. On the skewers, the open question is whether they are served plain, sugar-glazed or chocolate-dipped, which the sources do not say. ⚠ AND ONE NAME NOT TO MISREAD: 白いちご at ¥900 is a WHITE STRAWBERRY — a pale fruit cultivar — not white chocolate. 赤白いちご串 is red and white strawberries together, again fruit rather than confectionery.",
+  "last_checked": "2026-09-02",
+  "items": [
+   {
+    "ja": "いちご串",
+    "romaji": "ichigo kushi",
+    "en": "Strawberry skewer",
+    "price": "500円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Strawberries on a stick. Fruit carries no wheat and nothing animal, so the base of this is clean for both diets. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "いちごグレープ串",
+    "romaji": "ichigo gurēpu kushi",
+    "en": "Strawberry and grape skewer",
+    "price": "450円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Strawberry and grape — one of the two cheapest items on the board. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "シャインマスカット串",
+    "romaji": "Shain Masukatto kushi",
+    "en": "Shine Muscat skewer",
+    "price": "450円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Shine Muscat grapes, the premium Japanese seedless variety. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "ミックスいちご串",
+    "romaji": "mikkusu ichigo kushi",
+    "en": "Mixed strawberry skewer",
+    "price": "600円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Assorted strawberries. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "銀花堂串",
+    "romaji": "Ginkadō kushi",
+    "en": "Ginkado skewer — the house skewer",
+    "price": "600円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop’s own signature skewer. Neither article says what fruit is on it, so nothing is recorded about its contents. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "カットメロン",
+    "romaji": "katto meron",
+    "en": "Cut melon",
+    "price": "600円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Cut melon — and unlike the melonpan sold a few doors along, this one actually is melon. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "赤白いちご串",
+    "romaji": "aka shiro ichigo kushi",
+    "en": "Red and white strawberry skewer",
+    "price": "750円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ 白 HERE IS A STRAWBERRY, NOT CHOCOLATE. This is red and white STRAWBERRIES on one stick — white strawberry being a pale cultivar — rather than fruit dipped in white chocolate, which is how the name reads at a glance and which would change the vegan answer entirely. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "白いちご串",
+    "romaji": "shiro ichigo kushi",
+    "en": "White strawberry skewer",
+    "price": "900円",
+    "section": "串 Fruit skewers",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The most expensive item recorded here. White strawberries are a rare cultivar, which is what the price is for. The flags stay open on one point only: the shop does not publish whether its skewers are served plain, glazed in 飴 sugar syrup, or dipped in chocolate. Fruit and sugar glaze suit both diets; chocolate would be dairy.",
+    "dish_key": "fruitskewer"
+   },
+   {
+    "ja": "いちご大福（イチゴホイップ）",
+    "romaji": "ichigo daifuku (ichigo hoippu)",
+    "en": "Strawberry daifuku with strawberry whipped cream",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ ホイップ IS WHIPPED CREAM — the dairy is in the name in katakana, and it is easy to skim past when the rest of the dish is fruit and rice. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（抹茶）",
+    "romaji": "ichigo daifuku (matcha)",
+    "en": "Strawberry daifuku, matcha",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Matcha itself is powdered green tea — plant, and no wheat. Whether this one is matcha-flavoured bean paste or a matcha CREAM is not stated, and that is the whole vegan question. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（カスタード）",
+    "romaji": "ichigo daifuku (kasutādo)",
+    "en": "Strawberry daifuku, custard",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The article names this the most popular flavour. Custard is egg and milk. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（チョコ）",
+    "romaji": "ichigo daifuku (choko)",
+    "en": "Strawberry daifuku, chocolate",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chocolate — dairy in all but the darkest bars, and milk chocolate here by default. Chocolate is also the one filling that can carry barley malt. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（塩こし）",
+    "romaji": "ichigo daifuku (shio koshi)",
+    "en": "Strawberry daifuku, salted smooth red bean paste",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE ONE TO ORDER, AND THE ONLY DAIFUKU HERE WHOSE FILLING IS SETTLED. 塩こし is 塩こしあん — smooth strained AZUKI bean paste with salt: beans, sugar, salt and nothing else. No dairy, no egg, no gelatine. Paired with a strawberry inside glutinous rice, this is a whole sweet that a vegan can eat and that has no wheat in it, which is a genuinely rare combination in Japanese confectionery. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "いちご大福（マンゴーホイップ）",
+    "romaji": "ichigo daifuku (mangō hoippu)",
+    "en": "Daifuku with mango whipped cream — seasonal",
+    "price": "400円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Listed as a seasonal flavour. ホイップ is whipped cream. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "白いちご大福",
+    "romaji": "shiro ichigo daifuku",
+    "en": "White strawberry daifuku — seasonal",
+    "price": "600円",
+    "section": "大福 Daifuku",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Seasonal, built on the white strawberry cultivar. Which filling it uses is not stated, and that decides the vegan answer. ⚠ DAIFUKU IS GLUTINOUS RICE, NOT WHEAT — one of the few traditional Japanese sweets that is not a gluten problem, which is worth knowing in a country where most confectionery is. The only gluten question is the dusting powder, normally 片栗粉 potato starch but occasionally a wheat-flour blend.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "まるごとオレンジ",
+    "romaji": "marugoto orenji",
+    "en": "Whole-orange fresh juice, served in the peel",
+    "price": "￥600",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE CLEANEST THING IN THIS RECORD AND ONE OF THE CLEANEST IN THE DATASET. The article describes it as オレンジを1個まるごと使ったフレッシュジュース — a single whole orange juiced — with 皮がコップ代わりになっており, the PEEL ITSELF used as the cup, and some pulp left in. There is no vessel to wash, no syrup, no dairy and no additive: it is one orange. Both diets, with nothing to ask.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "まるごとグレープフルーツ",
+    "romaji": "marugoto gurēpufurūtsu",
+    "en": "Whole grapefruit fresh juice",
+    "price": "￥600",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The same idea with grapefruit — described as グレープフルーツを贅沢に使った, tasting directly of the fruit. Fruit and nothing else.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "オレンジスカッシュ",
+    "romaji": "orenji sukasshu",
+    "en": "Orange squash",
+    "price": "",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "A carbonated version — 炭酸入り, with orange peel set on top and plenty of pulp through it. No price is given in the source, so the field is left empty rather than guessed. Vegan is an open question only because a squash is normally sweetened with a syrup the article does not describe.",
+    "dish_key": "softdrink"
+   }
+  ]
  }
 }
