@@ -1,3 +1,33 @@
+# Resume here — updated 2026-09-04T~04:xxZ, grinder run (27th consecutive blocked run for THIS session)
+
+## Exact Tokyo menu state, 2026-09-04 UTC (computed from data, not agent-status.mjs)
+579 visible Tokyo records, 234 with an inline menu (40.4%), gap 345. Since the
+last grinder entry (2026-09-03T16:43Z), an interactive session finished s17
+(15/15, was 11/15), took s16 to 1 left, and started s18 (5/15 done, 10 left)
+— 229→234 inline via this run's own Step 1 merge (0 NEW verdict records
+added this run itself, only 2 pipeline note enrichments carried over: egg-
+side gf clarification, western-spirit vegan/barley note, plus a toba_kyubei
+note re-sync). See docs/GRINDER-LOG.md for this run's entry.
+
+**Verdict-file research status (19 started shards, s0-s18):** FULLY
+RESEARCHED (0 unresearched ids): s0-s4, s6, s8-s15, s17 — 15 of 19. STILL
+PARTIAL: **s7 1 left (`tokyo_organic_gohan_kaemon_asa`), s16 1 left
+(`tokyo_peace_table_shibuya_doge`), s5 2 left
+(`tokyo_divano_wine_dining_shinj`, `tokyo_nagi_shokudo`), s18 10 left
+(`tokyo_obanzai_miyuu_aji_yuu`, `tokyo_asakusa_juroku`, `tokyo_nitenmon_yabu`,
+`tokyo_wagyu_ramen_goku`, `tokyo_kongoan_jinbocho`,
+`tokyo_hinabe_xiaofeiyang_shinj`, `tokyo_shuzo`, `tokyo_choi_baru_bocado`,
+`tokyo_sumibiyaki_himono_teisho`, `tokyo_new_yorker_s_cafe_suidob`)** — 14
+records total across started shards. Unstarted shards (s19-s38, 20 shards)
+missing 290 records. 14+290=304 vs the 345 gap (41 residual from
+hidden/dedup edge cases, not worth chasing — same pattern every run).
+
+**Next dispatch once egress is unblocked (this session's own probe is still
+`000`, 27th consecutive run): s7 (1 left) is the fewest — then s16 (1 left)
+— then s5 (2 left) — then s18 (10 left, already started) — then start s19
+(lowest-numbered unstarted shard).**
+
+---
 # Resume here — updated 2026-09-03T16:4xZ, grinder run (26th consecutive blocked run for THIS session)
 
 ## Exact Tokyo menu state, 2026-09-03T16:4xZ UTC (computed from data, not agent-status.mjs)
