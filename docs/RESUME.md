@@ -1,6 +1,17 @@
-# Resume here — updated 2026-09-04T08:43Z, grinder run (28th consecutive blocked run for THIS session)
+# Resume here — updated 2026-09-04T16:42Z, grinder run (29th consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-09-04T08:43Z UTC (computed from data, not agent-status.mjs)
+## Exact Tokyo menu state, 2026-09-04T16:42Z UTC (computed from data, not agent-status.mjs)
+579 visible Tokyo records, 238 with an inline menu (41.1%), gap 341 — UNCHANGED
+from the last grinder entry (2026-09-04T08:43Z). This run's own Step 1 found 0
+NEW Tokyo verdicts (nothing landed from any other session since the last run);
+the only diff was the usual guarded soy-meat banner strip (3 copies stripped
+in merge, net-zero after rebuild's flagging pass re-added exactly one fresh
+copy each). Working tree came back byte-identical to HEAD — nothing to
+commit from data this run. See docs/GRINDER-LOG.md for this run's entry.
+
+## Prior — updated 2026-09-04T08:43Z, grinder run (28th consecutive blocked run for THIS session)
+
+Exact Tokyo menu state, 2026-09-04T08:43Z UTC (computed from data, not agent-status.mjs):
 579 visible Tokyo records, 238 with an inline menu (41.1%), gap 341. Since the
 last grinder entry (2026-09-04T~04:xxZ), an interactive session progressed
 s18 further (5/15 -> 12/15, 10 left -> 3 left) — 234→238 inline via this
