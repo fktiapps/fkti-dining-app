@@ -31,5 +31,216 @@
     "dish_key": "onigiri_set"
    }
   ]
+ },
+ "tokyo_karaage_yukari_asakusa_s": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.arclandservice.co.jp/yukari/",
+   "https://www.arclandservice.co.jp/yukari/menu/",
+   "https://www.arclandservice.co.jp/yukari/wp-content/uploads/sites/13/2026/05/20260522_yukari_allergen.pdf"
+  ],
+  "price_note": "Full menu with prices from the operator’s own menu page, given both excluding and including tax as the shop prints them. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE SHOP PUBLISHES AN アレルゲン一覧 AND IT CANNOT BE READ — the fifth case of this in the dataset. The allergen PDF (dated 2026-05-22) was downloaded and extracted: it yields 2,281 characters of structure, row numbers and a date, and NOT ONE Japanese dish name or allergen mark, because the text is set in CID fonts the extractor cannot resolve. The menu PDF beside it extracts a single character. So an allergen table exists, is current, is public, and discloses nothing to anyone who cannot see the image. RAKERU, 俺の割烹, ニューヨーカーズカフェ and 権八 all failed the same way. ⚠ THERE IS NOTHING HERE FOR A COELIAC AND THE REASON IS THE WHOLE SHOP: kara-age is chicken dredged in wheat flour and marinated in soy, then fried — the wheat is in the coating and the marinade, and a karaage specialist has one fryer. Even the chips and the 皮せん share it. ⚠ ONE ITEM IS WORTH NAMING BECAUSE IT IS THE OPPOSITE OF WHAT ITS NAME SUGGESTS: 揚げパン at ¥150 is a fried BREAD, sold on a chicken menu — wheat by construction, not by contamination. ⚠ AND FOR A VEGAN there is nothing at all: every item is chicken except the chips and the fried bread, both of which share the chicken oil.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "カリッともも 100g",
+    "romaji": "karitto momo",
+    "en": "Crisp thigh karaage, 100g",
+    "price": "¥290（税込¥313）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The cheapest karaage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ジューシーもも丸 100g",
+    "romaji": "jūshī momomaru",
+    "en": "Juicy round thigh karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Thigh. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "秘伝ニンニク 100g",
+    "romaji": "hiden ninniku",
+    "en": "Secret garlic karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A garlic marinade — and a garlic marinade in Japan is built on soy. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "極ダレ 100g",
+    "romaji": "kiwami dare",
+    "en": "Kiwami tare karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ダレ in the name is the warning: a tare is soy, mirin and sugar, so this one carries wheat in the glaze as well as the coating. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "甘辛もも 100g",
+    "romaji": "amakara momo",
+    "en": "Sweet-spicy thigh karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "甘辛 means a soy-and-sugar glaze. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "手羽先 100g",
+    "romaji": "tebasaki",
+    "en": "Chicken wings, 100g",
+    "price": "¥350（税込¥378）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wings, floured and fried. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "なんこつ",
+    "romaji": "nankotsu",
+    "en": "Cartilage karaage",
+    "price": "¥420（税込¥453）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken cartilage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "皮せん（鶏皮せんべい）",
+    "romaji": "kawasen",
+    "en": "Crisp chicken skin",
+    "price": "¥420（税込¥453）",
+    "section": "からあげ Karaage",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken skin fried to a crisp — the one item here that might carry no flour of its own, since skin crisps without a coating. It is still in the shared karaage fryer, which is why this is an \"ask\" and not better.",
+    "dish_key": "kawasen"
+   },
+   {
+    "ja": "砂肝",
+    "romaji": "sunagimo",
+    "en": "Gizzard karaage",
+    "price": "¥490（税込¥529）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken gizzard. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ポテトフライ",
+    "romaji": "poteto furai",
+    "en": "Chips",
+    "price": "¥220（税込¥237）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Potato and oil carry no wheat of their own — but this is a karaage shop, so the oil is the karaage oil. The cheapest item on the menu.",
+    "dish_key": "fries"
+   },
+   {
+    "ja": "揚げパン1個",
+    "romaji": "agepan ikko",
+    "en": "Fried bread, each",
+    "price": "¥150（税込¥162）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A FRIED BREAD ON A FRIED-CHICKEN MENU. 揚げパン is wheat dough deep-fried and sugared — wheat by construction rather than by contamination, and easy to skim past as a side.",
+    "dish_key": "agepan"
+   },
+   {
+    "ja": "8個パック",
+    "romaji": "hakko pakku",
+    "en": "8-piece pack",
+    "price": "¥1,090（税込¥1,177）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Eight pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "12個パック",
+    "romaji": "jūniko pakku",
+    "en": "12-piece pack",
+    "price": "¥1,620（税込¥1,749）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Twelve pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "縁BOX",
+    "romaji": "Yukari BOX",
+    "en": "Yukari box",
+    "price": "¥2,790（税込¥3,013）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The largest share box and the most expensive item. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "縁弁当（3個）",
+    "romaji": "Yukari bentō sanko",
+    "en": "Yukari bento, 3 pieces",
+    "price": "¥720（税込¥777）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Karaage over rice. The rice is the only clean component. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "縁弁当（4個）",
+    "romaji": "Yukari bentō yonko",
+    "en": "Yukari bento, 4 pieces",
+    "price": "¥820（税込¥885）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "縁合盛り弁当",
+    "romaji": "Yukari aimori bentō",
+    "en": "Yukari mixed bento",
+    "price": "¥820（税込¥885）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Assorted karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "縁チキン南蛮弁当",
+    "romaji": "Yukari chikin nanban bentō",
+    "en": "Chicken nanban bento",
+    "price": "¥890（税込¥961）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ CHICKEN NANBAN IS THREE WHEAT ROUTES: floured and fried chicken, a sweet-vinegar SOY sauce, and TARTARE, which is egg. The most expensive bento. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "chickennanban"
+   }
+  ]
  }
 }

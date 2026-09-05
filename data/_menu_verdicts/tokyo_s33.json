@@ -13,5 +13,16 @@
   "price_note": "No dish and no price — an honest empty reached after downloading everything the shop publishes. 権八 puts its entire menu online as FIVE PDFs (grand menu, weekday lunch, holiday lunch, drinks, party plans) and all five were fetched and run through a text extractor. Every one is a pure IMAGE SCAN: they yield between 1 and 10 characters each. Nothing — not a dish, not a price, not a section heading — is machine-readable in any of them. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THIS IS NOW THE FOURTH OPERATOR IN THIS DATASET TO PUBLISH A COMPLETE MENU IN A FORM NO READER CAN USE, after RAKERU’s scanned grand menu, 俺の割烹’s bilingual PDF that lost its Japanese and every price, and ニューヨーカーズカフェ’s 1.8MB allergen table that extracts one character. The pattern is worth stating plainly: a restaurant that publishes a scan has disclosed nothing to anyone who cannot see the image — which includes screen-reader users and every automated allergen check, not only this project. ⚠ NOTHING ABOUT WHAT THIS KITCHEN SERVES IS RECORDED, deliberately. Gonpachi is a well-known izakaya brand and it would be easy to write down what such a place \"obviously\" has; that is exactly the reasoning this dataset forbids. Re-check if the operator ever publishes an HTML menu, or when Tabelog access returns.",
   "last_checked": "2026-09-05",
   "items": []
+ },
+ "tokyo_torinao": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://torinao-japan.com/",
+   "https://torinao-japan.com/menu/"
+  ],
+  "price_note": "No dish and no price. The shop’s site is a JavaScript application — a Nuxt build whose served HTML contains the shop name, the Tawaramachi location and the page shell, and no menu content at all. Both the root and the /menu/ path were fetched directly and rendered through a text-extracting fetcher, and neither yields an item. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ NOTHING ABOUT WHAT THIS KITCHEN SERVES IS RECORDED, deliberately, and it is worth naming what is being withheld: 鳥 in the name means chicken, and a Japanese chicken restaurant turns on exactly one question a coeliac needs answered — タレ or 塩. A tare is soy, mirin and sugar, painted on during grilling and absorbed; salt is salt. That single distinction decides most of a yakitori board, and it is unanswerable from a page that renders nothing. Reading it off the shop name would be the error this dataset forbids. Re-check when the site serves HTML, or when Tabelog access returns.",
+  "last_checked": "2026-09-05",
+  "items": []
  }
 }

@@ -175,5 +175,148 @@
     "dish_key": "beer"
    }
   ]
+ },
+ "tokyo_lavoro": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://lavoro.base.shop/"
+  ],
+  "price_note": "⚠ THIS IS THE ONLINE SHOP, NOT A RESTAURANT BOARD — the stored website is a BASE storefront selling whole and sliced cakes for delivery. No in-store menu or price was found. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ AND IT IS A USEFUL COUNTER-EXAMPLE TO THE RICE-FLOUR ASSUMPTION. Every product here declares 卵・米粉・乳: egg, RICE FLOUR and dairy. So the flour is rice — which means the cakes are very likely wheat-free and would suit a coeliac — while the egg and milk make them firmly not vegan. That is the mirror image of the pattern this dataset usually records, where a dish is plant-based and full of wheat. 米粉 on a Japanese label is a signal about GLUTEN and says nothing whatsoever about animal ingredients, and the two are constantly conflated by shops and customers alike. ⚠ THE FLAGS ARE \"ask\" ON GLUTEN RATHER THAN \"gf\" for one reason: the shop lists rice flour as an ingredient but makes no gluten-free CLAIM, publishes no statement about its kitchen, and a bakery that uses rice flour is not the same thing as a bakery with no wheat in it — contrast BIOSSA elsewhere in this set, which states 「完全」グルテンフリー and 28品目不使用 outright. ⚠ ONE ITEM CARRIES A NUT: モンコーネ contains アーモンドパウダー. Several cut sizes were sold out at the time of reading and are recorded with their listed prices anyway.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "エテルノ S",
+    "romaji": "Eterno S",
+    "en": "Eterno cake, small",
+    "price": "¥1,188",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-flour cake. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "エテルノ M",
+    "romaji": "Eterno M",
+    "en": "Eterno cake, medium",
+    "price": "¥2,656",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-flour cake. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "エテルノ L",
+    "romaji": "Eterno L",
+    "en": "Eterno cake, large",
+    "price": "¥3,942",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-flour cake. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "エテルノS チョコレート",
+    "romaji": "Eterno S chokorēto",
+    "en": "Eterno chocolate, small",
+    "price": "¥1,393",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The chocolate version, which the shop notes carries additional dairy components. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "エテルノM チョコレート",
+    "romaji": "Eterno M chokorēto",
+    "en": "Eterno chocolate, medium",
+    "price": "¥2,808",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Additional dairy. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "モンコーネ M",
+    "romaji": "Moncorne M",
+    "en": "Moncorne, medium",
+    "price": "¥2,980",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Contains アーモンドパウダー — ALMOND, a declared allergen, named only on this product line. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "モンコーネ L",
+    "romaji": "Moncorne L",
+    "en": "Moncorne, large",
+    "price": "¥4,266",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Almond powder. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "フェッテ 6枚入",
+    "romaji": "Fette rokumai iri",
+    "en": "Fette, 6 slices",
+    "price": "¥2,548",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sliced. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "フェッテ 12枚入",
+    "romaji": "Fette jūnimai iri",
+    "en": "Fette, 12 slices",
+    "price": "¥4,881",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sliced. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "カットバウム エテルノ",
+    "romaji": "katto baumu Eterno",
+    "en": "Cut baum, Eterno",
+    "price": "¥540",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Listed as sold out at the time of reading. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "カットバウム エテルノチョコレート",
+    "romaji": "katto baumu Eterno chokorēto",
+    "en": "Cut baum, Eterno chocolate",
+    "price": "¥594",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sold out at time of reading. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "カットバウム モンコーネ",
+    "romaji": "katto baumu Moncorne",
+    "en": "Cut baum, Moncorne",
+    "price": "¥648",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sold out at time of reading; almond. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   }
+  ]
  }
 }

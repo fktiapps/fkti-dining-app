@@ -1,10 +1,10 @@
 {
  "generated": "2026-09-05",
- "note": "Priority queue for Tokyo menu research. Tabelog has served Cf-Mitigated: challenge to this egress since 2026-09-02; tabelog_blocked is parked, not abandoned. Work first_party then aggregator then social_only.",
+ "note": "Priority queue for Tokyo menu research. DONE-SET IS THE UNION of (a) any id in data/tokyo_menus.json and (b) any id in a tokyo_sNN.json verdict file. (a) alone re-researches honest empties forever; (b) alone misses records researched before the verdict-file convention and written straight to the menus file — that mistake duplicated 4 records on 2026-09-05. Tabelog has served Cf-Mitigated: challenge to this egress since 2026-09-02; tabelog_blocked is parked, not abandoned.",
  "counts": {
-  "first_party": 166,
-  "aggregator": 35,
-  "social_only": 32,
+  "first_party": 144,
+  "aggregator": 32,
+  "social_only": 31,
   "tabelog_blocked": 71,
   "none": 0
  },
@@ -16,46 +16,6 @@
  ],
  "groups": {
   "first_party": [
-   {
-    "id": "tokyo_beppinsha",
-    "name": "Bistro Beppinsha (カリー＆ワイン ビストロべっぴん舎 お茶の水本店)",
-    "website": "https://www.beppinsya.com/"
-   },
-   {
-    "id": "tokyo_biossa",
-    "name": "BIOSSA (ビオッサ)",
-    "website": "https://biossajapan.com/"
-   },
-   {
-    "id": "tokyo_cafe_de_forte",
-    "name": "Cafe de Forte (カフェ・ド・フォルテ)",
-    "website": "https://cafe-de-f.jp/"
-   },
-   {
-    "id": "tokyo_kielo",
-    "name": "Be green by KIELO COFFEE (ビー グリーン バイ キエロ コーヒー)",
-    "website": "https://begreenbykielocoffee.stores.jp/"
-   },
-   {
-    "id": "tokyo_kyoeido",
-    "name": "Sumatra Curry Kyoeido (スマトラカレー 共栄堂)",
-    "website": "https://www.kyoueidoo.com/"
-   },
-   {
-    "id": "tokyo_lavoro",
-    "name": "LA VORO Iidabashi (LA VORO 飯田橋店 / ラ ボーロ)",
-    "website": "https://lavoro.base.shop/"
-   },
-   {
-    "id": "tokyo_sagatani",
-    "name": "Sagatani Jūwari Soba, Jimbocho (十割蕎麦 嵯峨谷 神保町店)",
-    "website": "https://sagatanijimbocho.favy.jp/"
-   },
-   {
-    "id": "tokyo_kanmidokoro_nishiyama_fo",
-    "name": "甘味処 西山（旧店名：西山菓子店） (Kanmidokoro Nishiyama (formerly Nishiyama Ka)",
-    "website": "https://www.asakusa-nishiyama.com/ja/"
-   },
    {
     "id": "tokyo_kukurihime_coffee",
     "name": "くくりひめ珈琲 (Kukurihime Coffee)",
@@ -72,34 +32,9 @@
     "website": "https://www.raisyuken.com/"
    },
    {
-    "id": "tokyo_kanmi_mitsuya",
-    "name": "甘味みつや (Kanmi Mitsuya)",
-    "website": "https://kanmi-mitsuya.jp/"
-   },
-   {
     "id": "tokyo_izumo_asakusa_yokocho",
     "name": "うなぎの蒲の穂焼 牛タン 焼鳥 馬刺し いづも 浅草横町 (Izumo (Asakusa Yokocho))",
     "website": "https://asakusayokocho.com/shops06.html"
-   },
-   {
-    "id": "tokyo_karaage_yukari_asakusa_s",
-    "name": "からあげ 縁 浅草総本店 (Karaage Yukari Asakusa Sohonten)",
-    "website": "https://www.arclandservice.co.jp/yukari/"
-   },
-   {
-    "id": "tokyo_shochiku_en_cafe",
-    "name": "松竹圓カフェ (Shochiku-en Cafe)",
-    "website": "https://sho-chiku-en.com/"
-   },
-   {
-    "id": "tokyo_vegan_eat_tokyo",
-    "name": "ヴィーガン イート トウキョウ (Vegan Eat Tokyo)",
-    "website": "https://veganeat.base.shop/"
-   },
-   {
-    "id": "tokyo_gonpachi_asakusa_azumaba",
-    "name": "権八 浅草吾妻橋 (Gonpachi Asakusa Azumabashi)",
-    "website": "https://gonpachi.jp/asakusa/"
    },
    {
     "id": "tokyo_tansouan_kenjiro",
@@ -110,61 +45,6 @@
     "id": "tokyo_shiraiwa_asakusa_ten",
     "name": "しらいわ 浅草店 (Shiraiwa Asakusa-ten)",
     "website": "https://thrive-company.co.jp/brand/shiraiwa/"
-   },
-   {
-    "id": "tokyo_marugoto_vegan_dining_as",
-    "name": "まるごとVeganダイニング浅草 (Marugoto Vegan Dining Asakusa)",
-    "website": "https://dining.marugotovegan.com/"
-   },
-   {
-    "id": "tokyo_shimiiru_simi_l",
-    "name": "しみいる（Simi:l） (Shimiiru (Simi:l))",
-    "website": "https://www.simiil.com/"
-   },
-   {
-    "id": "tokyo_chinya",
-    "name": "ちんや (Chinya)",
-    "website": "https://chinya.co.jp/"
-   },
-   {
-    "id": "tokyo_kaminarimon_sansada_sans",
-    "name": "雷門 三定（さんさだ） (Kaminarimon Sansada (Sansada))",
-    "website": "http://tempura-sansada.co.jp/"
-   },
-   {
-    "id": "tokyo_asakusa_nadai_ramen_yoro",
-    "name": "浅草名代らーめん 与ろゐ屋 (Asakusa Nadai Ramen Yoroiya)",
-    "website": "https://yoroiya.jp/"
-   },
-   {
-    "id": "tokyo_onigiri_asakusa_yadoroku",
-    "name": "おにぎり浅草宿六 (Onigiri Asakusa Yadoroku)",
-    "website": "http://onigiriyadoroku.com/"
-   },
-   {
-    "id": "tokyo_raamen_men_maru",
-    "name": "らぁめん めん○（めんまる） (Raamen Men-maru)",
-    "website": "http://asakusa-hisagodori.com/tenpo/menmaru.html"
-   },
-   {
-    "id": "tokyo_daikokuya_tempura",
-    "name": "大黒家天麩羅 (Daikokuya Tempura)",
-    "website": "http://www.tempura.co.jp/"
-   },
-   {
-    "id": "tokyo_gozen_soba_kaminarimon_t",
-    "name": "御膳蕎麦 雷門田川 (Gozen Soba Kaminarimon Tagawa)",
-    "website": "https://www.kaminarimon-tagawa.com/"
-   },
-   {
-    "id": "tokyo_torinao",
-    "name": "鳥なお (Torinao)",
-    "website": "https://torinao-japan.com/"
-   },
-   {
-    "id": "tokyo_teuchi_soba_towada_metro",
-    "name": "十和田 メトロ通り店（手打ちそば十和田） (Teuchi Soba Towada (Metro-dori Branch))",
-    "website": "https://teuchisoba-towada.com/"
    },
    {
     "id": "tokyo_okome_to_gohan_sumidaya_",
@@ -180,11 +60,6 @@
     "id": "tokyo_shabu_shabu_on_yasai_asa",
     "name": "しゃぶしゃぶ温野菜 浅草店 (Shabu-shabu On'yasai Asakusa-ten (Shabu Shab)",
     "website": "https://onyasai.com/shop/store.php?gid=0358273831"
-   },
-   {
-    "id": "tokyo_warabimochi_motoko_asaku",
-    "name": "わらび餅もとこ 浅草店 (Warabimochi Motoko - Asakusa)",
-    "website": "https://www.motoko-warabimochi.com/"
    },
    {
     "id": "tokyo_jimjum_jim_jum_2",
@@ -237,6 +112,11 @@
     "website": "https://niku-bistro-akari.jp/"
    },
    {
+    "id": "tokyo_toriyu_formerly_torisuzu",
+    "name": "鳥祐（【旧店名】鳥鈴） (Toriyu (formerly Torisuzu))",
+    "website": "https://sibuyatoriyu.jimdofree.com/"
+   },
+   {
     "id": "tokyo_fleur_de_sarrasin",
     "name": "フルール ド サラザン (Fleur de Sarrasin)",
     "website": "http://www.fleurdesarrasin.tokyo/"
@@ -252,9 +132,19 @@
     "website": "https://ban-thai.studio.site/"
    },
    {
+    "id": "tokyo_yokohama_iekei_ramen_sam",
+    "name": "横浜家系らーめん侍 渋谷本店 (Yokohama Iekei Ramen Samurai Shibuya Honten)",
+    "website": "https://x.com/samurai_EAK"
+   },
+   {
     "id": "tokyo_container_container_cafe",
     "name": "コンテナ（CONTAINER Cafe&Bar） (CONTAINER (Container Cafe & Bar))",
     "website": "https://container-web.net/"
+   },
+   {
+    "id": "tokyo_yinega_yinega",
+    "name": "イェネガ (yinega (Yinega))",
+    "website": "https://yinega.wixsite.com/yinega/en"
    },
    {
     "id": "tokyo_vegetus_plus",
@@ -849,11 +739,6 @@
   ],
   "aggregator": [
    {
-    "id": "tokyo_pamoja",
-    "name": "PAMOJA (コーヒーとおにぎり PAMOJA 神保町本店)",
-    "website": "https://pamoja-jimbocho.foodre.jp/"
-   },
-   {
     "id": "tokyo_asakusa_monja_furin",
     "name": "浅草もんじゃ 風鈴 (Asakusa Monja Furin)",
     "website": "https://asakusamojafurin.owst.jp/"
@@ -874,19 +759,9 @@
     "website": "https://bodaijyu.owst.jp/"
    },
    {
-    "id": "tokyo_toriyu_formerly_torisuzu",
-    "name": "鳥祐（【旧店名】鳥鈴） (Toriyu (formerly Torisuzu))",
-    "website": "https://sibuyatoriyu.jimdofree.com/"
-   },
-   {
     "id": "tokyo_popposhi_ya_suidobashi_t",
     "name": "らーめん ぽっぽっ屋 水道橋店 (Popposhi-ya Suidobashi-ten (Ramen Popposhiya)",
     "website": "https://popposuidobashi.gorp.jp/"
-   },
-   {
-    "id": "tokyo_yinega_yinega",
-    "name": "イェネガ (yinega (Yinega))",
-    "website": "https://yinega.wixsite.com/yinega/en"
    },
    {
     "id": "tokyo_italian_cheese_bar_and_t",
@@ -1059,11 +934,6 @@
     "id": "tokyo_vegan_cafe_monkey_magic_",
     "name": "ヴィーガンカフェ モンキーマジック (Vegan Cafe Monkey Magic (Veganic Monkey Magi)",
     "website": "https://www.instagram.com/veganic_monkey_magic/"
-   },
-   {
-    "id": "tokyo_yokohama_iekei_ramen_sam",
-    "name": "横浜家系らーめん侍 渋谷本店 (Yokohama Iekei Ramen Samurai Shibuya Honten)",
-    "website": "https://x.com/samurai_EAK"
    },
    {
     "id": "tokyo_stand_hero",

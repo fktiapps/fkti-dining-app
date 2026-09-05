@@ -692,126 +692,145 @@
   ]
  },
  "tokyo_lavoro": {
-  "verified": true,
-  "confidence": "high",
+  "verified": "partial",
+  "confidence": "medium",
   "sources": [
-   "https://lavoro.base.shop/categories/2555129",
-   "https://ichigaya.keizai.biz/headline/3603/",
-   "https://entamemaimai.site/nariyuki-komekobaum-iidabashilavoro/",
-   "https://www.activitv.com/entry/nariyuki_250330_suidobshi-la-voro/"
+   "https://lavoro.base.shop/"
   ],
-  "price_note": "Prices approximate — may change.",
-  "last_checked": "2026-07-03",
+  "price_note": "⚠ THIS IS THE ONLINE SHOP, NOT A RESTAURANT BOARD — the stored website is a BASE storefront selling whole and sliced cakes for delivery. No in-store menu or price was found. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ AND IT IS A USEFUL COUNTER-EXAMPLE TO THE RICE-FLOUR ASSUMPTION. Every product here declares 卵・米粉・乳: egg, RICE FLOUR and dairy. So the flour is rice — which means the cakes are very likely wheat-free and would suit a coeliac — while the egg and milk make them firmly not vegan. That is the mirror image of the pattern this dataset usually records, where a dish is plant-based and full of wheat. 米粉 on a Japanese label is a signal about GLUTEN and says nothing whatsoever about animal ingredients, and the two are constantly conflated by shops and customers alike. ⚠ THE FLAGS ARE \"ask\" ON GLUTEN RATHER THAN \"gf\" for one reason: the shop lists rice flour as an ingredient but makes no gluten-free CLAIM, publishes no statement about its kitchen, and a bakery that uses rice flour is not the same thing as a bakery with no wheat in it — contrast BIOSSA elsewhere in this set, which states 「完全」グルテンフリー and 28品目不使用 outright. ⚠ ONE ITEM CARRIES A NUT: モンコーネ contains アーモンドパウダー. Several cut sizes were sold out at the time of reading and are recorded with their listed prices anyway.",
+  "last_checked": "2026-09-05",
   "items": [
    {
     "ja": "エテルノ S",
     "romaji": "Eterno S",
-    "en": "Eterno (small) — moist rice-flour baumkuchen, fresh cream, smooth melt",
+    "en": "Eterno cake, small",
     "price": "¥1,188",
-    "section": "Baumkuchen",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Signature; allergens 卵・米粉・乳 (egg, rice flour, milk). 100% rice flour, gluten-free.",
-    "dish_key": "eterno_s"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-flour cake. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "エテルノ M",
     "romaji": "Eterno M",
-    "en": "Eterno (medium) rice-flour baumkuchen",
+    "en": "Eterno cake, medium",
     "price": "¥2,656",
-    "section": "Baumkuchen",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳.",
-    "dish_key": "eterno_m"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-flour cake. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "エテルノ L",
     "romaji": "Eterno L",
-    "en": "Eterno (large) rice-flour baumkuchen",
+    "en": "Eterno cake, large",
     "price": "¥3,942",
-    "section": "Baumkuchen",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳.",
-    "dish_key": "eterno_l"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice-flour cake. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "エテルノS チョコレート",
-    "romaji": "Eterno S Chocolate",
-    "en": "Eterno chocolate (small) — cocoa kneaded in, bittersweet",
+    "romaji": "Eterno S chokorēto",
+    "en": "Eterno chocolate, small",
     "price": "¥1,393",
-    "section": "Baumkuchen",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳; sometimes seasonal.",
-    "dish_key": "eterno_choco_s"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The chocolate version, which the shop notes carries additional dairy components. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "エテルノM チョコレート",
+    "romaji": "Eterno M chokorēto",
+    "en": "Eterno chocolate, medium",
+    "price": "¥2,808",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Additional dairy. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "モンコーネ M",
-    "romaji": "Moncone M",
-    "en": "Moncone (medium) — fermented-butter baumkuchen, crisp outside, mochi-soft inside",
+    "romaji": "Moncorne M",
+    "en": "Moncorne, medium",
     "price": "¥2,980",
-    "section": "Baumkuchen",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳・アーモンドパウダー (also almond).",
-    "dish_key": "moncone_m"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Contains アーモンドパウダー — ALMOND, a declared allergen, named only on this product line. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "モンコーネ L",
-    "romaji": "Moncone L",
-    "en": "Moncone (large) fermented-butter baumkuchen",
+    "romaji": "Moncorne L",
+    "en": "Moncorne, large",
     "price": "¥4,266",
-    "section": "Baumkuchen",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳・アーモンド.",
-    "dish_key": "moncone_l"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Almond powder. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "フェッテ 6枚入",
-    "romaji": "Fette 6-pack",
-    "en": "Fette — individually wrapped sliced Eterno, 6 pieces",
+    "romaji": "Fette rokumai iri",
+    "en": "Fette, 6 slices",
     "price": "¥2,548",
-    "section": "Sliced / gift",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳; individually wrapped, good for gifting.",
-    "dish_key": "fette_6"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sliced. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
     "ja": "フェッテ 12枚入",
-    "romaji": "Fette 12-pack",
-    "en": "Fette sliced Eterno, 12 pieces",
+    "romaji": "Fette jūnimai iri",
+    "en": "Fette, 12 slices",
     "price": "¥4,881",
-    "section": "Sliced / gift",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Allergens 卵・米粉・乳.",
-    "dish_key": "fette_12"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sliced. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
-    "ja": "カットバウム",
-    "romaji": "Cut Baum",
-    "en": "Cut baum — single bite-size baumkuchen slice",
+    "ja": "カットバウム エテルノ",
+    "romaji": "katto baumu Eterno",
+    "en": "Cut baum, Eterno",
     "price": "¥540",
-    "section": "In-store single",
-    "gf": "gf",
-    "vegan": "",
-    "note": "In-store only; Eterno ~¥540 / Moncone ~¥648. Allergens 卵・米粉・乳.",
-    "dish_key": "cut_baum"
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Listed as sold out at the time of reading. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    },
    {
-    "ja": "ラメット",
-    "romaji": "Lamette",
-    "en": "Lamette — financier-style baked rice-flour confection",
-    "price": "",
-    "section": "Baked confection",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Irregular stock; rice-flour, gluten-free.",
-    "dish_key": "lamette"
+    "ja": "カットバウム エテルノチョコレート",
+    "romaji": "katto baumu Eterno chokorēto",
+    "en": "Cut baum, Eterno chocolate",
+    "price": "¥594",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sold out at time of reading. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "カットバウム モンコーネ",
+    "romaji": "katto baumu Moncorne",
+    "en": "Cut baum, Moncorne",
+    "price": "¥648",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sold out at time of reading; almond. The shop declares 卵・米粉・乳 — EGG, RICE FLOUR and DAIRY — in all products.",
+    "dish_key": "cake"
    }
   ]
  },
@@ -107458,6 +107477,592 @@
     "vegan": "vegan",
     "note": "Listed without a price on the page read, so the field is left empty.",
     "dish_key": "sake"
+   }
+  ]
+ },
+ "tokyo_shimiiru_simi_l": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.simiil.com/",
+   "https://www.simiil.com/menu"
+  ],
+  "price_note": "Full menu with prices from the shop’s own menu page — entrées, mains, desserts, courses and the drinks list. Course prices are given both excluding and including tax as the shop prints them. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. A small French bistro built around seasonal produce and NATURAL WINE: 「当店は旬の食材を盛り込んだ料理とナチュラルワインを楽しんでいただくお店です」. No allergen statement is published. ⚠ A FRENCH BISTRO IS A BETTER PROSPECT FOR A COELIAC THAN ALMOST ANY JAPANESE FORMAT, FOR A STRUCTURAL REASON: the wheat sits in identifiable places — pastry, breadcrumb, the flour in a roux — rather than being dissolved through the seasoning the way soy sauce is in a Japanese kitchen. Here the mains are almost all ロティ, roasted, with a wine or mustard sauce; a roast is meat and heat. What has to be asked about is the SAUCE, because a French sauce is classically thickened with a beurre manié or built on a reduced stock, and neither is visible from a dish name. ⚠ TWO DISHES ARE WHEAT IN THEIR OWN NAMES: タブリエ・ド・サプール is トリッパのパン粉焼き — tripe in BREADCRUMB — and とうもろこしのフリット is a fritter, so battered. ⚠ AND FOR A VEGAN THIS IS CLOSED: every entrée and every main names a fish, a shellfish or a meat, the corn dish carries blue cheese and cream, and the bread that comes with a bistro meal is wheat. The natural-wine list is the one part a plant-eater can use, with the standing caveat that wine is routinely fined with egg white, casein or isinglass — natural wine being the style least likely to be.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "穴子と焼茄子ときゅうりのテリーヌ",
+    "romaji": "anago to yakinasu to kyūri no terīnu",
+    "en": "Conger eel, grilled aubergine and cucumber terrine",
+    "price": "3,080yen",
+    "section": "前菜 Entrées",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Conger EEL with aubergine and cucumber. A terrine is normally set with gelatine — animal — and carries no wheat of its own.",
+    "dish_key": "terrine"
+   },
+   {
+    "ja": "カツオとキノコのマリネ コリアンダーと水茄子のサラダ",
+    "romaji": "katsuo to kinoko no marine",
+    "en": "Marinated bonito and mushroom with coriander and mizu-nasu salad",
+    "price": "2,860yen",
+    "section": "前菜 Entrées",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw BONITO marinated, with mushrooms and salad. No flour in the construction; the marinade is not described.",
+    "dish_key": "marinade"
+   },
+   {
+    "ja": "真だこのプランチャ風 エスカルゴバター",
+    "romaji": "madako no purancha-fū eskarugo batā",
+    "en": "Octopus a la plancha with escargot butter, baby corn and manganji pepper",
+    "price": "2,970yen",
+    "section": "前菜 Entrées",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Octopus seared on the plancha. ESCARGOT BUTTER is garlic-parsley butter — dairy — and despite the name contains no snail.",
+    "dish_key": "octopus"
+   },
+   {
+    "ja": "天然鮎のポワレ 焦がしバターと鮎の肝のソース",
+    "romaji": "tennen ayu no poware",
+    "en": "Wild sweetfish poêlé with brown butter and ayu liver sauce",
+    "price": "3,960yen",
+    "section": "前菜 Entrées",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A POÊLÉ IS PAN-FRIED AND FISH IS CONVENTIONALLY FLOURED BEFORE IT GOES IN THE PAN — that is the standard French method and it is the one wheat route a poêlé dish carries. Wild ayu with a brown-butter and fish-liver sauce; dairy and fish.",
+    "dish_key": "poele"
+   },
+   {
+    "ja": "とうもころしのフリットと、とうもろこしのリゾット",
+    "romaji": "tōmorokoshi no furitto to rizotto",
+    "en": "Corn fritters and corn risotto with blue cheese and black pepper cream",
+    "price": "2,860yen",
+    "section": "前菜 Entrées",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ フリット MEANS FRITTER — battered, so wheat — and the risotto beside it carries BLUE CHEESE and cream. The one dish on the entrée list with no fish or meat in its name, and it fails both diets anyway.",
+    "dish_key": "fritto"
+   },
+   {
+    "ja": "タブリエ・ド・サプール ～トリッパのパン粉焼き～",
+    "romaji": "taburie do sapūru",
+    "en": "Tablier de sapeur — tripe in breadcrumb",
+    "price": "2,860yen",
+    "section": "前菜 Entrées",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SHOP TRANSLATES IT ITSELF: トリッパのパン粉焼き — tripe in BREADCRUMB. The Lyonnais classic, and wheat is the coating that defines it.",
+    "dish_key": "tripe"
+   },
+   {
+    "ja": "やさしいスープ・ド・ポワソン",
+    "romaji": "yasashii sūpu do powason",
+    "en": "Gentle soupe de poisson",
+    "price": "2,860yen",
+    "section": "前菜 Entrées",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A fish-extract soup. Soupe de poisson is classically served with croûtons and rouille — the croûtons are the wheat, and they can be left off. Fish.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "本日のお魚料理",
+    "romaji": "honjitsu no osakana ryōri",
+    "en": "Today's fish",
+    "price": "3,850yen〜",
+    "section": "メイン Poissons & Viandes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Changes daily, so nothing about its preparation is recorded. A from-price.",
+    "dish_key": "fish"
+   },
+   {
+    "ja": "京都七谷鴨のロティ マデラ酒のソース",
+    "romaji": "Kyōto Nanatani kamo no roti",
+    "en": "Kyoto Nanatani duck roti with Madeira sauce",
+    "price": "5,390yen",
+    "section": "メイン Poissons & Viandes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Roast duck. A Madeira sauce is a reduced fortified wine and stock — no flour in the classical version, though restaurant sauces are often finished with a butter or flour liaison. The joint most expensive main.",
+    "dish_key": "roti"
+   },
+   {
+    "ja": "十勝放牧黒豚のロティ ヴィオレマスタードのソース",
+    "romaji": "Tokachi hōboku kurobuta no roti",
+    "en": "Tokachi pastured Berkshire pork roti with violet mustard sauce",
+    "price": "4,180yen",
+    "section": "メイン Poissons & Viandes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Roast pork with a violet-mustard sauce. Mustard itself carries no wheat; some coarse mustards use a wheat-derived thickener.",
+    "dish_key": "roti"
+   },
+   {
+    "ja": "栃木県産黒毛和牛 A3 カイノミのロティ 赤ワインのソース",
+    "romaji": "Tochigi kuroge wagyū kainomi no roti",
+    "en": "Tochigi wagyu kainomi roti with red wine sauce",
+    "price": "4,400yen",
+    "section": "メイン Poissons & Viandes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Roast wagyu with a red-wine reduction — the sauce most likely of these to be thickened, since a classic red-wine sauce is mounted with butter and sometimes flour.",
+    "dish_key": "roti"
+   },
+   {
+    "ja": "アイスランド産仔羊肩ロースのロティ",
+    "romaji": "Aisurando san kohitsuji kata rōsu no roti",
+    "en": "Icelandic lamb shoulder loin roti with mustard Madeira sauce",
+    "price": "5,390yen",
+    "section": "メイン Poissons & Viandes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Roast lamb. Joint most expensive main.",
+    "dish_key": "roti"
+   },
+   {
+    "ja": "国産牛ほほ肉の赤ワイン煮",
+    "romaji": "kokusan gyū hoho niku no akawain ni",
+    "en": "Domestic beef cheek braised in red wine",
+    "price": "4,180yen",
+    "section": "メイン Poissons & Viandes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A RED-WINE BRAISE IS THE ONE FRENCH TECHNIQUE MOST LIKELY TO START WITH FLOUR — beef is conventionally dusted before searing, and the sauce is often thickened at the end. Nothing is published either way, so it is the main here most worth asking about.",
+    "dish_key": "braise"
+   },
+   {
+    "ja": "季節のデザート",
+    "romaji": "kisetsu no dezāto",
+    "en": "Seasonal dessert",
+    "price": "880yen〜",
+    "section": "デザート Desserts",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Changes with the season, so nothing about it is recorded. A from-price. At a French bistro a dessert is normally pastry, cream or both — worth naming both diets when ordering.",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "おまかせ6品コース",
+    "romaji": "omakase roppin kōsu",
+    "en": "Six-course tasting menu",
+    "price": "7,000yen（税込7,700）",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A TASTING MENU IS THE HARDEST FORMAT TO ADJUST ONCE SEATED AND THE EASIEST TO ADJUST IN ADVANCE. At a bistro this size the kitchen can normally build around a restriction if told when booking; it cannot improvise six courses on the night. Contents are not published.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "おまかせ7品コース",
+    "romaji": "omakase nanahin kōsu",
+    "en": "Seven-course tasting menu",
+    "price": "8,000yen（税込8,800）",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The longer tasting menu; contents not published.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "特別なコース",
+    "romaji": "tokubetsu na kōsu",
+    "en": "Special course",
+    "price": "14,000yen（税込15,400）〜",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The most expensive item on the menu; a from-price.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "ワインの肴コース（４品＋ペアリング４杯付）",
+    "romaji": "wain no sakana kōsu",
+    "en": "Wine-snack course, 4 dishes with 4 pairings",
+    "price": "9,000yen（税込9,900）",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Four dishes with four paired glasses.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "サッポロ黒ラベル（小瓶）",
+    "romaji": "Sapporo Kuro Raberu (kobin)",
+    "en": "Sapporo Black Label, small bottle",
+    "price": "880yen",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "BEER IS BARLEY MALT.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "クラフトビール（750ml）",
+    "romaji": "kurafuto bīru",
+    "en": "Craft beer, 750ml",
+    "price": "3,520yen",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Barley malt.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "グラスワイン スパークリング",
+    "romaji": "gurasu wain supākuringu",
+    "en": "Sparkling wine by the glass",
+    "price": "1,210yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "No gluten route. The shop’s speciality is NATURAL WINE, which is the style least likely to be fined with egg white, casein or isinglass — but fining is not labelled, so it stays a question bottle by bottle.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "グラスワイン 白・ロゼ・赤",
+    "romaji": "gurasu wain shiro / roze / aka",
+    "en": "White, rosé or red by the glass",
+    "price": "1,100yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "From-price; the fining question applies.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "ボトルワイン",
+    "romaji": "botoru wain",
+    "en": "Wine by the bottle",
+    "price": "7,700yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "From-price.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "デザートワイン",
+    "romaji": "dezāto wain",
+    "en": "Dessert wine",
+    "price": "1,430yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Sweet wine.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "カルヴァドス",
+    "romaji": "karuvadosu",
+    "en": "Calvados",
+    "price": "1,430yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Distilled from APPLES — no grain at any point, which makes it one of the cleanest spirits for a coeliac.",
+    "dish_key": "spirit"
+   },
+   {
+    "ja": "グラッパ",
+    "romaji": "gurappa",
+    "en": "Grappa",
+    "price": "1,430yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Distilled from grape pomace — no grain.",
+    "dish_key": "spirit"
+   },
+   {
+    "ja": "ノンアルコールドリンク",
+    "romaji": "non arukōru dorinku",
+    "en": "Non-alcoholic drinks",
+    "price": "990yen〜",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Listed as a category without naming a drink, so nothing is recorded. Note that alcohol-free is a separate axis from gluten and from animal ingredients — a de-alcoholised BEER would still be barley.",
+    "dish_key": "softdrink"
+   }
+  ]
+ },
+ "tokyo_warabimochi_motoko_asaku": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://www.motoko-warabimochi.com/"
+  ],
+  "price_note": "PARTIAL: the shop names its three warabimochi varieties and two drink formats on its own site and publishes NO PRICES, so every price field below is empty rather than guessed. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ WARABIMOCHI IS ONE OF THE BEST JAPANESE SWEETS FOR BOTH DIETS AND IT DEPENDS ENTIRELY ON A WORD THE SHOP DOES NOT USE. True warabimochi is set from 本蕨粉 — BRACKEN ROOT STARCH — which is a fern rhizome: no wheat, no dairy, no egg, nothing animal, and it is dusted with きな粉 (roasted SOYBEAN flour) and eaten with 黒蜜 (cane syrup). On that construction it is plant and gluten-free outright. ⚠ BUT ALMOST NO COMMERCIAL WARABIMOCHI IS MADE THAT WAY. Bracken starch is scarce and expensive, so the overwhelming majority of shops use a blend of sweet-potato or tapioca starch — still wheat-free — and some use わらび餅粉 blends that include other starches. The shop says only 「原料、製法にこだわって作られる」, that it is particular about materials and method, which is a quality claim and not an ingredient one. It does not name 本蕨粉 anywhere. So the base is very likely wheat-free but is not declared, which is why these are \"ask\" rather than \"gf\". ⚠ AND THE DRINKS ARE THE OPPOSITE WAY ROUND: わらび餅ミルクティー and わらび餅ソフトクリーム are both DAIRY — the mochi is the plant part and the vehicle is not. The soft serve is Asakusa-only.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "わらび餅（和三盆）",
+    "romaji": "warabimochi (wasanbon)",
+    "en": "Warabimochi, refined sugar",
+    "price": "",
+    "section": "わらび餅 Warabimochi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE BASE IS ALMOST CERTAINLY WHEAT-FREE AND IS NOT DECLARED. Warabimochi is set from bracken-root or other root starch — never wheat — and dusted with きな粉, roasted soybean flour. Both flags stay open because the shop names neither its starch nor whether the kinako or syrup carry anything else. If the answer comes back 本蕨粉, きな粉 and 黒蜜, this is a dessert that clears both diets.",
+    "dish_key": "warabimochi"
+   },
+   {
+    "ja": "わらび餅（黒糖）",
+    "romaji": "warabimochi (kokutō)",
+    "en": "Warabimochi, brown sugar",
+    "price": "",
+    "section": "わらび餅 Warabimochi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The brown-sugar version. 黒糖 is unrefined cane sugar — plant.",
+    "dish_key": "warabimochi"
+   },
+   {
+    "ja": "わらび餅（抹茶）",
+    "romaji": "warabimochi (matcha)",
+    "en": "Warabimochi, matcha",
+    "price": "",
+    "section": "わらび餅 Warabimochi",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Matcha is powdered green tea, plant and wheat-free in itself.",
+    "dish_key": "warabimochi"
+   },
+   {
+    "ja": "わらび餅ミルクティー",
+    "romaji": "warabimochi miruku tī",
+    "en": "Warabimochi milk tea",
+    "price": "",
+    "section": "わらび餅 Warabimochi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE MOCHI IS THE PLANT PART AND THE DRINK IS NOT: ミルク is dairy, stated in the name. Warabimochi cubes in milk tea.",
+    "dish_key": "warabimochi_drink"
+   },
+   {
+    "ja": "わらび餅ソフトクリーム",
+    "romaji": "warabimochi sofuto kurīmu",
+    "en": "Warabimochi soft serve — Asakusa only",
+    "price": "",
+    "section": "わらび餅 Warabimochi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Soft serve is dairy. The shop notes this one is sold at the Asakusa branch only.",
+    "dish_key": "softcream"
+   }
+  ]
+ },
+ "tokyo_karaage_yukari_asakusa_s": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.arclandservice.co.jp/yukari/",
+   "https://www.arclandservice.co.jp/yukari/menu/",
+   "https://www.arclandservice.co.jp/yukari/wp-content/uploads/sites/13/2026/05/20260522_yukari_allergen.pdf"
+  ],
+  "price_note": "Full menu with prices from the operator’s own menu page, given both excluding and including tax as the shop prints them. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE SHOP PUBLISHES AN アレルゲン一覧 AND IT CANNOT BE READ — the fifth case of this in the dataset. The allergen PDF (dated 2026-05-22) was downloaded and extracted: it yields 2,281 characters of structure, row numbers and a date, and NOT ONE Japanese dish name or allergen mark, because the text is set in CID fonts the extractor cannot resolve. The menu PDF beside it extracts a single character. So an allergen table exists, is current, is public, and discloses nothing to anyone who cannot see the image. RAKERU, 俺の割烹, ニューヨーカーズカフェ and 権八 all failed the same way. ⚠ THERE IS NOTHING HERE FOR A COELIAC AND THE REASON IS THE WHOLE SHOP: kara-age is chicken dredged in wheat flour and marinated in soy, then fried — the wheat is in the coating and the marinade, and a karaage specialist has one fryer. Even the chips and the 皮せん share it. ⚠ ONE ITEM IS WORTH NAMING BECAUSE IT IS THE OPPOSITE OF WHAT ITS NAME SUGGESTS: 揚げパン at ¥150 is a fried BREAD, sold on a chicken menu — wheat by construction, not by contamination. ⚠ AND FOR A VEGAN there is nothing at all: every item is chicken except the chips and the fried bread, both of which share the chicken oil.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "カリッともも 100g",
+    "romaji": "karitto momo",
+    "en": "Crisp thigh karaage, 100g",
+    "price": "¥290（税込¥313）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The cheapest karaage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ジューシーもも丸 100g",
+    "romaji": "jūshī momomaru",
+    "en": "Juicy round thigh karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Thigh. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "秘伝ニンニク 100g",
+    "romaji": "hiden ninniku",
+    "en": "Secret garlic karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A garlic marinade — and a garlic marinade in Japan is built on soy. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "極ダレ 100g",
+    "romaji": "kiwami dare",
+    "en": "Kiwami tare karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ダレ in the name is the warning: a tare is soy, mirin and sugar, so this one carries wheat in the glaze as well as the coating. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "甘辛もも 100g",
+    "romaji": "amakara momo",
+    "en": "Sweet-spicy thigh karaage, 100g",
+    "price": "¥310（税込¥334）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "甘辛 means a soy-and-sugar glaze. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "手羽先 100g",
+    "romaji": "tebasaki",
+    "en": "Chicken wings, 100g",
+    "price": "¥350（税込¥378）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wings, floured and fried. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "なんこつ",
+    "romaji": "nankotsu",
+    "en": "Cartilage karaage",
+    "price": "¥420（税込¥453）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken cartilage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "皮せん（鶏皮せんべい）",
+    "romaji": "kawasen",
+    "en": "Crisp chicken skin",
+    "price": "¥420（税込¥453）",
+    "section": "からあげ Karaage",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken skin fried to a crisp — the one item here that might carry no flour of its own, since skin crisps without a coating. It is still in the shared karaage fryer, which is why this is an \"ask\" and not better.",
+    "dish_key": "kawasen"
+   },
+   {
+    "ja": "砂肝",
+    "romaji": "sunagimo",
+    "en": "Gizzard karaage",
+    "price": "¥490（税込¥529）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken gizzard. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ポテトフライ",
+    "romaji": "poteto furai",
+    "en": "Chips",
+    "price": "¥220（税込¥237）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Potato and oil carry no wheat of their own — but this is a karaage shop, so the oil is the karaage oil. The cheapest item on the menu.",
+    "dish_key": "fries"
+   },
+   {
+    "ja": "揚げパン1個",
+    "romaji": "agepan ikko",
+    "en": "Fried bread, each",
+    "price": "¥150（税込¥162）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A FRIED BREAD ON A FRIED-CHICKEN MENU. 揚げパン is wheat dough deep-fried and sugared — wheat by construction rather than by contamination, and easy to skim past as a side.",
+    "dish_key": "agepan"
+   },
+   {
+    "ja": "8個パック",
+    "romaji": "hakko pakku",
+    "en": "8-piece pack",
+    "price": "¥1,090（税込¥1,177）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Eight pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "12個パック",
+    "romaji": "jūniko pakku",
+    "en": "12-piece pack",
+    "price": "¥1,620（税込¥1,749）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Twelve pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "縁BOX",
+    "romaji": "Yukari BOX",
+    "en": "Yukari box",
+    "price": "¥2,790（税込¥3,013）",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The largest share box and the most expensive item. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "縁弁当（3個）",
+    "romaji": "Yukari bentō sanko",
+    "en": "Yukari bento, 3 pieces",
+    "price": "¥720（税込¥777）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Karaage over rice. The rice is the only clean component. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "縁弁当（4個）",
+    "romaji": "Yukari bentō yonko",
+    "en": "Yukari bento, 4 pieces",
+    "price": "¥820（税込¥885）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "縁合盛り弁当",
+    "romaji": "Yukari aimori bentō",
+    "en": "Yukari mixed bento",
+    "price": "¥820（税込¥885）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Assorted karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "縁チキン南蛮弁当",
+    "romaji": "Yukari chikin nanban bentō",
+    "en": "Chicken nanban bento",
+    "price": "¥890（税込¥961）",
+    "section": "揚げたてお弁当 Bento",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ CHICKEN NANBAN IS THREE WHEAT ROUTES: floured and fried chicken, a sweet-vinegar SOY sauce, and TARTARE, which is egg. The most expensive bento. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "dish_key": "chickennanban"
    }
   ]
  }
