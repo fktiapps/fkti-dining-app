@@ -1,25 +1,38 @@
-# Resume here — updated 2026-09-05T00:44Z, grinder run (30th consecutive blocked run for THIS session)
+# Resume here — updated 2026-09-05T08:44Z, grinder run (31st consecutive blocked run for THIS session)
 
-## Exact Tokyo menu state, 2026-09-05T00:44Z UTC (computed from data, not agent-status.mjs)
-579 visible Tokyo records, 238 with an inline menu (41.1%), gap 341 — UNCHANGED
-from the last grinder entry (2026-09-04T16:42Z). This run's own Step 1 found 0
-NEW Tokyo verdicts; only diff was a 1-copy soy-meat banner net-zero re-strip.
-Curl probe to tabelog.com: `000` (connect_rejected) — 30th consecutive block
-for this session, Step 2 skipped per the standing instruction. See
-docs/GRINDER-LOG.md for this run's entry.
+## Exact Tokyo menu state, 2026-09-05T08:44Z UTC (computed from data, not agent-status.mjs)
+579 visible Tokyo records, 251 with an inline menu (43.3%), gap 328 — DOWN
+from 341 at the last grinder entry (2026-09-05T00:44Z). This run's own Step 1
+merged growth already landed by interactive sessions since then (s19, s22-26,
+s28, s30-34 and s38 all newly started; 13 records total across them plus
+b8129a8/6c676cd/07acdd2's direct commits), plus the usual pipeline note
+enrichments (egg-side gf, western-spirit vegan/barley) and a toba note
+re-sync. Curl probe to tabelog.com: `000` (connect_rejected) — 31st
+consecutive block for this session, Step 2 skipped per the standing
+instruction. See docs/GRINDER-LOG.md for this run's entry.
 
-**Verdict-file research status (19 started shards, s0-s18):** FULLY
-RESEARCHED (0 unresearched ids): s0-s17 — 18 of 19. STILL PARTIAL:
-**s18 3 left (`tokyo_obanzai_miyuu_aji_yuu`, `tokyo_nitenmon_yabu`,
-`tokyo_shuzo`)** — unchanged since the last entry. Unstarted shards
-(s19-s38, 20 shards) missing 285 records (computed exactly from shard
-contents vs. tokyo_menus.json, not agent-status.mjs). 3+285=288 vs the
-341 gap (53 residual from hidden/dedup edge cases, not worth chasing —
-same pattern every run).
+**Verdict-file research status (32 started shards, s0-s19, s22-s26, s28,
+s30-s34, s38):** FULLY RESEARCHED (0 unresearched ids): s0-s4, s6, s8-s15,
+s17 — 15 of 32. STILL PARTIAL: **s7 1 left (`tokyo_organic_gohan_kaemon_asa`),
+s16 1 left (`tokyo_peace_table_shibuya_doge`), s5 2 left
+(`tokyo_divano_wine_dining_shinj`, `tokyo_nagi_shokudo`), s18 3 left
+(`tokyo_obanzai_miyuu_aji_yuu`, `tokyo_nitenmon_yabu`, `tokyo_shuzo`), s31 12
+left, s32 12 left, s33 12 left, s19 13 left, s28 13 left, s30 13 left, s34 13
+left, s38 13 left, s22 14 left, s23 14 left, s24 14 left, s25 14 left, s26 14
+left** — 178 records total across started shards (computed exactly from
+shard contents vs. verdict files, not agent-status.mjs). A stray leftover
+file `data/_menu_verdicts/tokyo_s90.json` (3 ids, all already merged, no
+matching shard file `s90.json`) is harmless — merge-menus.mjs matches by
+record id, not filename — but worth deleting next time someone is in there,
+it is not a shard. Unstarted shards (s20, s21, s27, s29, s35, s36, s37 — 7
+shards) missing 106 records. 178+106=284 vs the 328 gap (44 residual from
+hidden/dedup edge cases, not worth chasing — same pattern every run).
 
 **Next dispatch once egress is unblocked (this session's own probe is still
-`000`, 30th consecutive run): s18 (3 left, already started) — then start s19
-(lowest-numbered unstarted shard).**
+`000`, 31st consecutive run): s7 (1 left) and s16 (1 left) are the fewest —
+then s5 (2 left) — then s18 (3 left) — then work down the missing-count list
+(s31/s32/s33 at 12 each) before starting s20 (lowest-numbered unstarted
+shard).**
 
 ---
 # Resume here — updated 2026-09-04T16:42Z, grinder run (29th consecutive blocked run for THIS session)
