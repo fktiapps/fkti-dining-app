@@ -4,56 +4,76 @@
   "confidence": "medium",
   "sources": [
    "https://www.beppinsya.com/",
-   "https://rurubu.jp/andmore/article/2701",
-   "https://tokyo-tabearuki.com/beppinnsya-ochanomizu",
-   "https://tabelog.com/en/tokyo/A1310/A131002/13198751/"
+   "https://www.beppinsya.com/%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/"
   ],
-  "price_note": "Prices approximate — may change.",
-  "last_checked": "2026-07-03",
+  "price_note": "PARTIAL: dish names and descriptions from the shop’s own menu page, which prints NO PRICES — every price field below is empty rather than guessed. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE SHOP BRANDS ITSELF \"Gluten Free Spice Curry\" ON ITS OWN SITE HEADER, which is a claim worth taking seriously and worth reading carefully. A spice curry is built on whole and ground spices, onion and stock rather than on a カレールー brick, so a flour-free curry is entirely achievable and this kitchen advertises it as its identity — the same territory as スマトラカレー共栄堂 elsewhere in this set, which states 小麦粉を一切使わず outright. ⚠ BUT THE SITE STOPS AT THE HEADER. The menu page describes each curry’s spices, heat level and contents and does NOT repeat the gluten-free claim per dish, does not name a flour substitute, and publishes no allergen statement, no cross-contamination note and nothing about the kitchen. So the flags below are \"ask\" and not \"gf\": the branding is a strong lead and it is not an ingredient declaration, and this dataset does not upgrade on branding. It is a very good shop to ring ahead to. ⚠ AND THE DRINKS LIST UNDOES IT ANYWAY: the shop pours 志賀高原ビール — Shiga Kogen pale ale and IPA — and BEER IS BARLEY MALT. A gluten-free curry house with a craft beer list is a real combination, and the beer is the wheat-and-barley item on the premises. Heat is chosen from 1 to 6 on most curries.",
+  "last_checked": "2026-09-05",
   "items": [
    {
     "ja": "赤のべっぴん薬膳カリー",
-    "romaji": "Aka no Beppin Yakuzen Karī",
-    "en": "Red Beppin medicinal curry (20+ spices, 8 wine-simmered vegetables + chicken; thin roux-free wheat-free broth; spice levels 1–6)",
-    "price": "¥880",
-    "section": "Curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Signature dish. Shop states it is made without wheat flour. Lunch set adds rice, potato salad, onion pickles & coffee — confirm no wheat-based sauce is used and skip the mayo-based potato salad if unverified.",
-    "dish_key": "beppin_red_yakuzen_curry"
+    "romaji": "aka no beppin yakuzen karī",
+    "en": "Red medicinal-spice curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cardamom and ginger with a lot of onion; domestic chicken and seasonal vegetables. Heat 1–6. The shop’s \"Gluten Free Spice Curry\" branding covers it but no per-dish declaration is published.",
+    "dish_key": "curry"
    },
    {
     "ja": "黒のべっぴんカシミールカリー",
-    "romaji": "Kuro no Beppin Kashimīru Karī",
-    "en": "Black Beppin Kashmir curry (extra-spicy version of the wheat-free spice curry)",
-    "price": "¥880",
-    "section": "Curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Same flour-free spice base as the red curry, hotter. Confirm seasoning contains no wheat soy/Worcestershire.",
-    "dish_key": "beppin_black_kashmir_curry"
+    "romaji": "kuro no beppin Kashimīru karī",
+    "en": "Black Kashmir curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop’s hottest, heat 4–6, described as 複雑なスパイスの香りと熟成した旨味の極辛; chicken and seasonal vegetables.",
+    "dish_key": "curry"
    },
    {
     "ja": "濃厚えびカリー",
-    "romaji": "Nōkō Ebi Karī",
-    "en": "Rich shrimp curry",
-    "price": "¥980",
-    "section": "Curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Built on the shop's wheat-free spice broth. Shellfish. Confirm no wheat-based stock/sauce added.",
-    "dish_key": "beppin_shrimp_curry"
+    "romaji": "nōkō ebi karī",
+    "en": "Rich prawn curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Soft-shell shrimp eaten shell and all, with plenty of coriander. Heat 1–6. Prawn.",
+    "dish_key": "curry"
    },
    {
-    "ja": "牛すじカシミールカリー (赤ワイン煮込み)",
-    "romaji": "Gyūsuji Kashimīru Karī",
-    "en": "Beef-tendon Kashmir curry, simmered in red wine",
-    "price": "¥980",
-    "section": "Curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Red-wine-braised beef tendon on the flour-free spice base. Wine is generally GF, but confirm no wheat-thickened braising liquid or soy is used.",
-    "dish_key": "beppin_beeftendon_kashmir_curry"
+    "ja": "牛すじカシミールカリー",
+    "romaji": "gyūsuji Kashimīru karī",
+    "en": "Beef tendon Kashmir curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef tendon simmered soft in RED WINE and spices. Heat 1–6.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "志賀高原ビール ペールエール",
+    "romaji": "Shiga Kōgen bīru pēru ēru",
+    "en": "Shiga Kogen Pale Ale, 5.5%",
+    "price": "",
+    "section": "ビール Beer",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ BEER IS BARLEY MALT — the one item on the premises that is certainly not gluten-free, in a shop whose header says Gluten Free Spice Curry.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "志賀高原IPA",
+    "romaji": "Shiga Kōgen IPA",
+    "en": "Shiga Kogen IPA, 6.0%",
+    "price": "",
+    "section": "ビール Beer",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Barley malt, heavily hopped — hopping is not a gluten reduction.",
+    "dish_key": "beer"
    }
   ]
  },
@@ -106434,6 +106454,1010 @@
     "vegan": "ask",
     "note": "BEER IS BARLEY MALT. A small draught is ¥650.",
     "dish_key": "beer"
+   }
+  ]
+ },
+ "tokyo_kanmidokoro_nishiyama_fo": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.asakusa-nishiyama.com/ja/",
+   "https://www.asakusa-nishiyama.com/ja/menu/"
+  ],
+  "price_note": "Full menu with prices from the shop’s own menu page — anmitsu, ice creams, shiruko and zenzai, savoury items, drinks and a mini list. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ A 甘味処 IS THE BEST DESSERT FORMAT IN JAPAN FOR BOTH DIETS AND ALMOST NOBODY KNOWS IT. The building blocks of this menu are 寒天 (agar, set from seaweed — not gelatine), あんこ (azuki beans and sugar), 白玉 (glutinous RICE flour dumplings), 黒蜜 (brown sugar syrup) and 赤えんどう (red peas). None of those is wheat and none is animal. So 豆かん at ¥830, あんみつ at ¥830, おしるこ and ぜんざい at ¥900 are, on their standard construction, both vegan and gluten-free — in a country where a coeliac normally cannot eat dessert at all. ⚠ WHAT BREAKS IT IS DAIRY, AND IT IS ALWAYS NAMED: クリーム, アイス and 抹茶クリーム are ice cream. The one wheat item is あんこトースト, which is bread. And おでん is the outlier on a sweet menu — a dashi broth, so fish, usually with wheat-starch-bulked fish cakes in it. ⚠ ONE THING TO ASK ANYWAY: some kanmi shops add ぎゅうひ (a soft mochi) or a wheat-flour wafer to an anmitsu, and the menu does not itemise what is in each bowl. The base is safe by construction; the garnish is the question.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "あんみつ",
+    "romaji": "anmitsu",
+    "en": "Anmitsu",
+    "price": "830円",
+    "section": "あんみつ Anmitsu",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The standard bowl: agar cubes, azuki paste, fruit and black-sugar syrup. ⚠ The base of an anmitsu is 寒天 — AGAR, set from seaweed, not gelatine and not wheat — with azuki paste and 黒蜜 brown-sugar syrup. That combination is plant and wheat-free by construction, which is why a kanmi counter is one of the best dessert formats in Japan for both diets.",
+    "dish_key": "anmitsu"
+   },
+   {
+    "ja": "豆かん",
+    "romaji": "mamekan",
+    "en": "Mamekan — agar and red peas",
+    "price": "830円",
+    "section": "あんみつ Anmitsu",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE PUREST THING ON THE MENU AND THE ONE TO ORDER: agar cubes and salted red peas under black-sugar syrup, with no anko, no cream and no fruit. Three ingredients, all plant, none wheat. Mamekan is the Tokyo kanmi shop’s minimalist bowl and it is close to the cleanest dessert in this entire dataset.",
+    "dish_key": "mamekan"
+   },
+   {
+    "ja": "白玉あんみつ",
+    "romaji": "shiratama anmitsu",
+    "en": "Anmitsu with rice dumplings",
+    "price": "1,020円",
+    "section": "あんみつ Anmitsu",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "白玉 are glutinous RICE flour dumplings — rice, not wheat, so they add nothing to the gluten question. ⚠ The base of an anmitsu is 寒天 — AGAR, set from seaweed, not gelatine and not wheat — with azuki paste and 黒蜜 brown-sugar syrup. That combination is plant and wheat-free by construction, which is why a kanmi counter is one of the best dessert formats in Japan for both diets.",
+    "dish_key": "anmitsu"
+   },
+   {
+    "ja": "クリームあんみつ",
+    "romaji": "kurīmu anmitsu",
+    "en": "Anmitsu with ice cream",
+    "price": "960円",
+    "section": "あんみつ Anmitsu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The same bowl with ice cream on top — DAIRY, and the word クリーム is the only warning. ⚠ The base of an anmitsu is 寒天 — AGAR, set from seaweed, not gelatine and not wheat — with azuki paste and 黒蜜 brown-sugar syrup. That combination is plant and wheat-free by construction, which is why a kanmi counter is one of the best dessert formats in Japan for both diets.",
+    "dish_key": "anmitsu"
+   },
+   {
+    "ja": "特製 西山あんみつ",
+    "romaji": "tokusei Nishiyama anmitsu",
+    "en": "House special anmitsu",
+    "price": "1,150円",
+    "section": "あんみつ Anmitsu",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop’s signature bowl; its contents are not itemised, so whether cream is in it is not stated. The most expensive anmitsu. ⚠ The base of an anmitsu is 寒天 — AGAR, set from seaweed, not gelatine and not wheat — with azuki paste and 黒蜜 brown-sugar syrup. That combination is plant and wheat-free by construction, which is why a kanmi counter is one of the best dessert formats in Japan for both diets.",
+    "dish_key": "anmitsu"
+   },
+   {
+    "ja": "ごま餡 あじわい",
+    "romaji": "goma an ajiwai",
+    "en": "Sesame paste bowl",
+    "price": "1,100円",
+    "section": "あんみつ Anmitsu",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A sesame-bean-paste bowl; contents not itemised. SESAME is a declared allergen in Japan in its own right.",
+    "dish_key": "anmitsu"
+   },
+   {
+    "ja": "味あそび",
+    "romaji": "aji asobi",
+    "en": "Tasting assortment",
+    "price": "1,100円",
+    "section": "その他 Other",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A sampler; its components are not listed on the page, so nothing is recorded about them.",
+    "dish_key": "assortment"
+   },
+   {
+    "ja": "特製いちご氷",
+    "romaji": "tokusei ichigo gōri",
+    "en": "House strawberry shaved ice",
+    "price": "1,480円",
+    "section": "その他 Other",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The most expensive item here. Shaved ice and strawberry syrup carry no wheat and nothing animal — what a 特製 kakigori adds is normally CONDENSED MILK or ice cream, and that is not stated.",
+    "dish_key": "kakigori"
+   },
+   {
+    "ja": "おしるこ（モチ入り）",
+    "romaji": "oshiruko (mochi iri)",
+    "en": "Shiruko with mochi",
+    "price": "900円",
+    "section": "おしるこ・ぜんざい Shiruko & zenzai",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ AZUKI SOUP WITH RICE MOCHI — beans, sugar and glutinous rice, and nothing else in the traditional recipe. Hot, filling, plant and wheat-free. One of the few hot desserts in Japan a coeliac can have.",
+    "dish_key": "shiruko"
+   },
+   {
+    "ja": "ぜんざい（白玉入り）",
+    "romaji": "zenzai (shiratama iri)",
+    "en": "Zenzai with rice dumplings",
+    "price": "900円",
+    "section": "おしるこ・ぜんざい Shiruko & zenzai",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The chunkier azuki soup with rice-flour dumplings — same construction as the shiruko.",
+    "dish_key": "shiruko"
+   },
+   {
+    "ja": "抹茶クリームぜんざい",
+    "romaji": "matcha kurīmu zenzai",
+    "en": "Matcha cream zenzai",
+    "price": "1,050円",
+    "section": "おしるこ・ぜんざい Shiruko & zenzai",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy from the cream; matcha and azuki are plant.",
+    "dish_key": "shiruko"
+   },
+   {
+    "ja": "バニラアイス",
+    "romaji": "banira aisu",
+    "en": "Vanilla ice cream",
+    "price": "700円",
+    "section": "アイス Ice cream",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. The gluten question is only a wafer.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "あずきアイス",
+    "romaji": "azuki aisu",
+    "en": "Azuki ice cream",
+    "price": "700円",
+    "section": "アイス Ice cream",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy with red bean.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "抹茶アイス",
+    "romaji": "matcha aisu",
+    "en": "Matcha ice cream",
+    "price": "700円",
+    "section": "アイス Ice cream",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy with matcha.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "季節のアイス",
+    "romaji": "kisetsu no aisu",
+    "en": "Seasonal ice cream",
+    "price": "700円",
+    "section": "アイス Ice cream",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy; flavour changes.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "宇治金時アイス",
+    "romaji": "Uji kintoki aisu",
+    "en": "Uji kintoki ice cream",
+    "price": "860円",
+    "section": "アイス Ice cream",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Matcha, azuki and ice cream.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "あんこトースト アイス添え",
+    "romaji": "anko tōsuto aisu zoe",
+    "en": "Anko toast with ice cream",
+    "price": "1,200円",
+    "section": "その他 Other",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONE WHEAT ITEM ON THE SWEET MENU. The anko is plant and wheat-free; the TOAST is bread. Dairy from the ice cream.",
+    "dish_key": "toast"
+   },
+   {
+    "ja": "おでん",
+    "romaji": "oden",
+    "en": "Oden",
+    "price": "900円",
+    "section": "その他 Other",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONE SAVOURY ITEM AND THE ONE THAT FAILS BOTH DIETS. Oden simmers in a DASHI — bonito — and its standard contents include ちくわ and はんぺん, fish cakes routinely bulked with WHEAT STARCH. Nothing on a kanmi menu prepares you for this.",
+    "dish_key": "oden"
+   },
+   {
+    "ja": "おでん ゆかりご飯セット",
+    "romaji": "oden yukari gohan setto",
+    "en": "Oden with yukari rice set",
+    "price": "1,100円",
+    "section": "その他 Other",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Oden with rice seasoned with 紫蘇 yukari. The rice and shiso are plant; the oden is not.",
+    "dish_key": "oden"
+   },
+   {
+    "ja": "銘煎茶セット",
+    "romaji": "mei sencha setto",
+    "en": "Sencha with a sweet",
+    "price": "700円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Tea with an accompanying sweet; which sweet is not stated. The tea itself is leaf and water.",
+    "dish_key": "teaset"
+   },
+   {
+    "ja": "銘煎茶",
+    "romaji": "mei sencha",
+    "en": "Sencha",
+    "price": "700円",
+    "section": "お飲み物 Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Leaf tea and water.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "冷茶",
+    "romaji": "reicha",
+    "en": "Chilled tea",
+    "price": "730円",
+    "section": "お飲み物 Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Cold-brewed tea.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "冷茶セット",
+    "romaji": "reicha setto",
+    "en": "Chilled tea with a sweet",
+    "price": "730円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Tea with an unlisted sweet.",
+    "dish_key": "teaset"
+   },
+   {
+    "ja": "ホットコーヒー",
+    "romaji": "hotto kōhī",
+    "en": "Hot coffee",
+    "price": "700円",
+    "section": "お飲み物 Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee and water.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "ホットコーヒーセット",
+    "romaji": "hotto kōhī setto",
+    "en": "Hot coffee with a sweet",
+    "price": "700円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Coffee with an unlisted sweet.",
+    "dish_key": "teaset"
+   },
+   {
+    "ja": "アイスコーヒー",
+    "romaji": "aisu kōhī",
+    "en": "Iced coffee",
+    "price": "730円",
+    "section": "お飲み物 Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee and water.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "アイスコーヒーセット",
+    "romaji": "aisu kōhī setto",
+    "en": "Iced coffee with a sweet",
+    "price": "730円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Coffee with an unlisted sweet.",
+    "dish_key": "teaset"
+   },
+   {
+    "ja": "コーヒーフロート",
+    "romaji": "kōhī furōto",
+    "en": "Coffee float",
+    "price": "890円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Ice cream in coffee — dairy.",
+    "dish_key": "float"
+   },
+   {
+    "ja": "クリームソーダ",
+    "romaji": "kurīmu sōda",
+    "en": "Cream soda",
+    "price": "850円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Melon soda with ice cream — dairy.",
+    "dish_key": "float"
+   },
+   {
+    "ja": "浅草小町",
+    "romaji": "Asakusa Komachi",
+    "en": "Asakusa Komachi",
+    "price": "800円",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A house drink; its composition is not published.",
+    "dish_key": "drink"
+   },
+   {
+    "ja": "ミニあんみつ",
+    "romaji": "mini anmitsu",
+    "en": "Mini anmitsu",
+    "price": "480円",
+    "section": "ミニ Mini",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The small size — and at ¥480 the cheapest plant, wheat-free dessert in this record. ⚠ The base of an anmitsu is 寒天 — AGAR, set from seaweed, not gelatine and not wheat — with azuki paste and 黒蜜 brown-sugar syrup. That combination is plant and wheat-free by construction, which is why a kanmi counter is one of the best dessert formats in Japan for both diets.",
+    "dish_key": "anmitsu"
+   },
+   {
+    "ja": "ミニアイス各種",
+    "romaji": "mini aisu kakushu",
+    "en": "Mini ice creams",
+    "price": "480円",
+    "section": "ミニ Mini",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "ミニぜんざい",
+    "romaji": "mini zenzai",
+    "en": "Mini zenzai",
+    "price": "480円",
+    "section": "ミニ Mini",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The small azuki soup.",
+    "dish_key": "shiruko"
+   }
+  ]
+ },
+ "tokyo_shochiku_en_cafe": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://sho-chiku-en.com/",
+   "https://sho-chiku-en.com/menu/"
+  ],
+  "price_note": "⚠ A CAFÉ WHERE THE ENTIRE MENU CLEARS BOTH DIETS, WHICH HAS NOT HAPPENED BEFORE IN THIS DATASET. 松竹圓カフェ brands itself Vegan & Gluten-free Cafe and repeats the claim under every section in the same two sentences: 「全てのメニューはオリエンタルビーガン対応（動物由来の食材及び五葷不使用）になっております」 and 「全てのメニューは、グルテンフリー(小麦不使用)となっております」. So: no animal ingredient, no 五葷 (garlic, spring onion, onion, nira, rakkyo — the Buddhist 精進 exclusion, which goes beyond veganism), and no wheat, across cakes, pizza and drinks alike. It adds 「ビーガンの方や卵、乳製品、小麦アレルギーの方も安心してお召し上がり頂けます」, naming egg, dairy and WHEAT ALLERGY explicitly. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE PIZZA IS THE HEADLINE: 「米粉の生地のカリッともっちりした美味しさ」 — a RICE FLOUR base, made in-house, with a 五葷-free tomato sauce. A gluten-free pizza is close to unobtainable in Tokyo and this one is also vegan, including a plant ベーコン. Sold by the slice at ¥350–380 and as whole pies at ¥2,800–3,040. ⚠ AND THE CAKES USE A GF SPONGE: the tiramisu is described as 手作りの豆乳チーズ over a コーヒーベースのGFスポンジ — soy-milk cheese on a gluten-free sponge. The rainbow cake, the shop’s 看板メニュー, is coloured 1枚1枚お野菜の色味をつけて — with vegetables rather than dye. ⚠ WHAT IS STILL WORTH ASKING, and this record does not claim otherwise: the shop states its recipes, not its supply chain. It publishes no statement about factory cross-contamination in bought-in ingredients the way まるごとVeganダイニング浅草 does, and it does not describe a separated kitchen. The flags below are set to the shop’s own declaration because it is explicit, first-party and repeated — but a coeliac should still ask about shared equipment, which is the one question the page does not answer. ⚠ AND THE DRINKS CARRY SOMETHING RARE: plant milks are an explicit paid option — 無調整豆乳, アーモンドミルク and オーツミルク at +¥100 each. Almost no other café in this dataset lists one at all.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "ヴィーガンティラミス",
+    "romaji": "vīgan tiramisu",
+    "en": "Vegan tiramisu",
+    "price": "580〜",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ A TIRAMISU IS NORMALLY THE WORST CASE FOR BOTH DIETS — savoiardi biscuit, mascarpone, egg — and this one is rebuilt from the ground up: 手作りの豆乳チーズ (house-made SOY MILK cheese) over a コーヒーベースのGFスポンジ, a gluten-free coffee sponge. Four versions: original, matcha-azuki, mango and raspberry. A from-price. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tiramisu"
+   },
+   {
+    "ja": "夢幻レインボーケーキ",
+    "romaji": "mugen reinbō kēki",
+    "en": "Rainbow cake",
+    "price": "850",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The shop’s 看板メニュー, a vegan and gluten-free version of the British rainbow cake — and the colours are 着色料は使わず, no dye, each layer tinted with vegetables. The most expensive cake. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "モンブラン",
+    "romaji": "monburan",
+    "en": "Mont Blanc",
+    "price": "780",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Japanese chestnut inside and out. A Mont Blanc normally sits on a meringue or sponge base and carries dairy cream; this one does neither. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "montblanc"
+   },
+   {
+    "ja": "ビーガン苺ショートケーキ",
+    "romaji": "bīgan ichigo shōto kēki",
+    "en": "Strawberry shortcake",
+    "price": "680",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Strawberries with 豆乳クリーム — soy-milk cream — on a gluten-free sponge. The Japanese celebration cake, rebuilt for both diets. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "shortcake"
+   },
+   {
+    "ja": "チョコレートケーキ",
+    "romaji": "chokorēto kēki",
+    "en": "Chocolate cake",
+    "price": "660",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The shop states 動物性食材不使用 — no animal ingredients — with cocoa powder and 豆乳ホイップ. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "コーヒーケーキ",
+    "romaji": "kōhī kēki",
+    "en": "Coffee cake",
+    "price": "620",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee, NUTS and brown sugar — worth flagging the nuts separately from either diet. The cheapest cake. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "マルゲリータ（ピザ）",
+    "romaji": "marugerīta",
+    "en": "Margherita pizza, by the slice",
+    "price": "350",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ A GLUTEN-FREE, VEGAN PIZZA — the base is 米粉, RICE FLOUR, made in-house, and the tomato sauce is 五葷抜き. Elsewhere in this dataset the pizza base is the one thing that is never negotiable; here it is rice. The cheese is plant. The cheapest item on the menu at ¥350 a slice. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ベーコン（ピザ）",
+    "romaji": "bēkon",
+    "en": "Vegan bacon pizza, by the slice",
+    "price": "380",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "植物性のビーガンベーコン — a plant bacon — on the same rice-flour base. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホールピザ マルゲリータ",
+    "romaji": "hōru piza marugerīta",
+    "en": "Whole margherita pizza",
+    "price": "2800",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The whole pie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホールピザ ベーコン",
+    "romaji": "hōru piza bēkon",
+    "en": "Whole vegan bacon pizza",
+    "price": "3040",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The whole pie; the most expensive item listed. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホールピザ ハーフ＆ハーフ",
+    "romaji": "hōru piza hāfu ando hāfu",
+    "en": "Whole half-and-half pizza",
+    "price": "2920",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Half margherita, half vegan bacon. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ストロベリースムージー",
+    "romaji": "sutoroberī sumūjī",
+    "en": "Strawberry smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Fruit smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "マンゴースムージー",
+    "romaji": "mangō sumūjī",
+    "en": "Mango smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Fruit smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "ブルーベリースムージー",
+    "romaji": "burūberī sumūjī",
+    "en": "Blueberry smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Fruit smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "アボカドスムージー",
+    "romaji": "abokado sumūjī",
+    "en": "Avocado smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Avocado smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "クラシック有機紅茶",
+    "romaji": "kurashikku yūki kōcha",
+    "en": "Organic black tea",
+    "price": "480",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Organic leaf tea, hot or cold. The cheapest drink. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "有機アールグレイ",
+    "romaji": "yūki āru gurei",
+    "en": "Organic Earl Grey",
+    "price": "530",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Organic leaf tea. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "有機チャイラテ",
+    "romaji": "yūki chai rate",
+    "en": "Organic chai latte",
+    "price": "550",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Made on a plant milk, as everything here is. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "宇治抹茶ラテ",
+    "romaji": "Uji matcha rate",
+    "en": "Uji matcha latte",
+    "price": "550",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Uji matcha on a plant milk. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ミルクティー",
+    "romaji": "miruku tī",
+    "en": "Milk tea",
+    "price": "550",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE NAME SAYS MILK AND THE SHOP SAYS NO ANIMAL INGREDIENTS — so the milk here is a plant one. Worth noting precisely because ミルクティー is a flag against a vegan everywhere else in this dataset and is not one here. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "エスプレッソ",
+    "romaji": "esupuresso",
+    "en": "Espresso",
+    "price": "450",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The cheapest item on the drinks list. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "アメリカン",
+    "romaji": "amerikan",
+    "en": "Americano",
+    "price": "480",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Beans ground to order. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "カフェラテ",
+    "romaji": "kafe rate",
+    "en": "Café latte",
+    "price": "530",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "On a plant milk. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "青森りんごジュース",
+    "romaji": "Aomori ringo jūsu",
+    "en": "100% Aomori apple juice",
+    "price": "480",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Pressed apple juice. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "無調整豆乳／アーモンドミルク／オーツミルク",
+    "romaji": "muchōsei tōnyū / āmondo miruku / ōtsu miruku",
+    "en": "Plant milk option — soy, almond or oat",
+    "price": "+100",
+    "section": "オプション Options",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ AN EXPLICIT, PRICED PLANT-MILK CHOICE, which almost no other café in this dataset offers at all. The gluten flag is an ask on one of the three and worth naming: OAT is not wheat, but oats are routinely milled and transported on wheat equipment and are the classic borderline grain for coeliacs — soy and almond carry no such question. +¥100 each.",
+    "dish_key": "plantmilk"
+   }
+  ]
+ },
+ "tokyo_vegan_eat_tokyo": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://veganeat.base.shop/"
+  ],
+  "price_note": "⚠ THIS IS THE ONLINE SHOP, NOT THE RESTAURANT BOARD — the stored website is a BASE storefront selling retort packs, so the four products below are what the shop mails out, not what it plates. No in-restaurant menu or price was found. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ AND IT CONTAINS THE SHARPEST SINGLE ILLUSTRATION OF THE TWO-AXIS PROBLEM IN THIS ENTIRE DATASET. The flagship product of a shop called VEGAN EAT TOKYO is its ヴィーガンカレー — and its own allergen line reads 小麦、カシューナッツ、大豆: WHEAT, cashew, soy. A vegan curry with wheat in it. Meanwhile the other product, ひよこ豆のトマト煮, is explicitly described as グルテンフリー. So within one vegan kitchen, the headline dish is closed to a coeliac and the second dish is open — and nothing about the word \"vegan\" predicts which. This is the asymmetry the dataset exists to record: plant-based is not wheat-free, the two restrictions are independent, and a shop can be scrupulous about one while the other is simply not the question it was answering. ⚠ THE CASHEW IS WORTH FLAGGING SEPARATELY: vegan kitchens use cashew constantly as a dairy substitute — for cream, cheese and sauce bodies — so a NUT allergy is a live and under-anticipated risk at exactly the restaurants a plant-eater is steered toward. It is named here in black and white.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "VEGAN EAT TOKYOの『ヴィーガンカレー』",
+    "romaji": "vīgan karē",
+    "en": "Vegan curry, retort pack",
+    "price": "￥980",
+    "section": "オンラインショップ Online shop",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ A VEGAN CURRY THAT CONTAINS WHEAT, stated by the shop itself: 小麦、カシューナッツ、大豆. Plant-based throughout and closed to a coeliac — the clearest case in this dataset that the two diets are independent axes. Also a CASHEW product, which is the standard vegan dairy substitute and a real allergen risk.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "【お得な５食セット】ヴィーガンカレー５食セット",
+    "romaji": "vīgan karē goshoku setto",
+    "en": "Vegan curry, 5-pack",
+    "price": "￥4,500",
+    "section": "オンラインショップ Online shop",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Five of the above. Same declared allergens: wheat, cashew, soy.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "VEGAN EAT TOKYOの『ひよこ豆のトマト煮』",
+    "romaji": "hiyokomame no tomato ni",
+    "en": "Chickpeas stewed in tomato, retort pack",
+    "price": "￥880",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE ONE THE SHOP CALLS グルテンフリー — chickpeas in tomato, described as gluten-free, low-calorie, high-protein and high in fibre. So of two products from the same vegan kitchen, this is the one a coeliac can consider and the curry beside it is not. The flag is \"ask\" rather than \"gf\" only because the claim appears in marketing copy rather than in a per-batch allergen declaration, and no cross-contamination statement is published.",
+    "dish_key": "stew"
+   },
+   {
+    "ja": "【お得な５食セット】ひよこ豆のトマト煮５食セット",
+    "romaji": "hiyokomame no tomato ni goshoku setto",
+    "en": "Chickpea tomato stew, 5-pack",
+    "price": "￥3,980",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Five of the above.",
+    "dish_key": "stew"
+   }
+  ]
+ },
+ "tokyo_teuchi_soba_towada_metro": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://teuchisoba-towada.com/",
+   "https://teuchisoba-towada.com/menu/"
+  ],
+  "price_note": "Full menu with prices, tax included, from the shop’s own menu page. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. A hand-cut soba house near Kaminarimon with an Aomori accent — the sake list is Aomori (田酒, 七力) and the 暮坪 items use Iwate’s 暮坪かぶ, a pungent turnip grated in place of wasabi. ⚠ NOTHING HERE CLEARS EITHER DIET. Every noodle is soba or udon, the tsuyu is soy and dashi, and the tempura is wheat batter. That is stated rather than worked around. ⚠ THE ONE ITEM WORTH UNDERSTANDING IS 焼酎そば湯割り at ¥600 — shochu cut with 蕎麦湯, the cloudy water the soba was boiled in. It is the same trap recorded at 玄蕎麦しんがり: a coeliac who has avoided every bowl on the board can still be caught by a drink, because nothing in the words 焼酎 or 湯割り says noodle. ⚠ AND ONE DISH IS ONLY A PARTIAL LOSS: 豚しゃぶ at ¥2,500 per head, pre-order only and from two people, is pork and vegetables cooked in water — no batter, no noodle. Shabu-shabu sauces are ponzu and goma-dare, both soy-based, so it turns entirely on whether the kitchen will serve it with salt and citrus instead. That is the question to ask here.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "もりそば",
+    "romaji": "mori soba",
+    "en": "Cold soba",
+    "price": "800円（税込）",
+    "section": "冷たいそば・うどん Cold",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain cold bowl and the cheapest item on the menu. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "やみつきそば",
+    "romaji": "yamitsuki soba",
+    "en": "\"Moreish\" soba",
+    "price": "1,100円（税込）",
+    "section": "冷たいそば・うどん Cold",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A house cold bowl; its toppings are not itemised. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "とろろそば",
+    "romaji": "tororo soba",
+    "en": "Cold soba with grated yam",
+    "price": "1,100円（税込）",
+    "section": "冷たいそば・うどん Cold",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Grated yam is plant; the tsuyu is not. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tororo"
+   },
+   {
+    "ja": "暮坪そば",
+    "romaji": "kuretsubo soba",
+    "en": "Kuretsubo turnip soba — seasonal",
+    "price": "1,100円（税込）",
+    "section": "冷たいそば・うどん Cold",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 暮坪かぶ is an Iwate turnip grated and used INSTEAD OF WASABI — a plant seasoning, and unusual in being neither soy nor dashi. It changes nothing about the noodle, but it is the one condiment on this menu with no wheat route. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "えび2本天もり",
+    "romaji": "ebi nihon tenmori",
+    "en": "Cold soba with two prawn tempura",
+    "price": "1,800円（税込）",
+    "section": "冷たいそば・うどん Cold",
+    "gf": "no",
+    "vegan": "no",
+    "note": "TEMPURA BATTER IS WHEAT. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "かけそば",
+    "romaji": "kake soba",
+    "en": "Hot soba in broth",
+    "price": "900円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain hot bowl; the broth is soy and dashi. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "たぬきそば",
+    "romaji": "tanuki soba",
+    "en": "Tanuki soba",
+    "price": "1,200円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ たぬき means 揚げ玉 — fried TEMPURA BATTER crumb. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tanuki"
+   },
+   {
+    "ja": "えび天付きたぬきそば",
+    "romaji": "ebiten tsuki tanuki soba",
+    "en": "Tanuki soba with prawn tempura",
+    "price": "1,500円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Batter crumb and batter. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "えび2本天ぷらそば",
+    "romaji": "ebi nihon tenpura soba",
+    "en": "Hot soba with two prawn tempura",
+    "price": "1,800円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter. ⚠ Soba stays flagged against: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "しょうがうどん",
+    "romaji": "shōga udon",
+    "en": "Ginger udon",
+    "price": "1,000円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "UDON IS WHEAT with no ambiguity. Ginger is the house note.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "釜揚げうどん",
+    "romaji": "kamaage udon",
+    "en": "Kamaage udon",
+    "price": "900円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat udon served in its cooking water.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "力うどん",
+    "romaji": "chikara udon",
+    "en": "Udon with mochi — winter only",
+    "price": "1,200円（税込）",
+    "section": "温かいそば・うどん Hot",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The 餅 is glutinous RICE and carries no wheat of its own; the udon does. Winter only.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "えび3本天丼",
+    "romaji": "ebi sanbon tendon",
+    "en": "Tendon with three prawns",
+    "price": "1,600円（税込）",
+    "section": "ご飯もの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and a soy tare.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "えび穴子天丼",
+    "romaji": "ebi anago tendon",
+    "en": "Prawn and conger eel tendon",
+    "price": "2,300円（税込）",
+    "section": "ご飯もの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; conger eel is normally glazed in a soy tare too.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "特大えび2本天丼",
+    "romaji": "tokudai ebi nihon tendon",
+    "en": "Tendon with two extra-large prawns",
+    "price": "2,300円（税込）",
+    "section": "ご飯もの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "特大えび穴子天丼",
+    "romaji": "tokudai ebi anago tendon",
+    "en": "Extra-large prawn and conger tendon",
+    "price": "2,300円（税込）",
+    "section": "ご飯もの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天ぷら定食",
+    "romaji": "tenpura teishoku",
+    "en": "Tempura set meal",
+    "price": "1,800円（税込）",
+    "section": "ご飯もの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter with rice and soup.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "サービスセット",
+    "romaji": "sābisu setto",
+    "en": "Service set",
+    "price": "1,500円（税込）",
+    "section": "メインメニュー Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A set whose components are not itemised on the page; at a soba house it will contain noodles.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "暮坪セット",
+    "romaji": "kuretsubo setto",
+    "en": "Kuretsubo set — winter only",
+    "price": "1,800円（税込）",
+    "section": "メインメニュー Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Winter only; built on the Kuretsubo turnip soba.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "しょうがうどんセット",
+    "romaji": "shōga udon setto",
+    "en": "Ginger udon set",
+    "price": "1,500円（税込）",
+    "section": "メインメニュー Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat udon.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "雷門セット",
+    "romaji": "Kaminarimon setto",
+    "en": "Kaminarimon set — weekdays only",
+    "price": "2,500円（税込）",
+    "section": "メインメニュー Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Weekdays only; components not itemised.",
+    "dish_key": "set"
+   },
+   {
+    "ja": "豚しゃぶ",
+    "romaji": "buta shabu",
+    "en": "Pork shabu-shabu — pre-order, from two",
+    "price": "(一人前)2,500円（税込）〜",
+    "section": "メインメニュー Sets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE ONLY DISH HERE WITH NO NOODLE AND NO BATTER: pork and vegetables cooked in water at the table. That makes it the one thing on a soba-house menu a coeliac could plausibly eat — and it turns on the dipping sauce, since ponzu and goma-dare are both soy-based. Ask for salt and citrus. Requires advance booking and a minimum of two people.",
+    "dish_key": "shabushabu"
+   },
+   {
+    "ja": "焼酎そば湯割り",
+    "romaji": "shōchū sobayu wari",
+    "en": "Shochu cut with soba water",
+    "price": "600円（税込）",
+    "section": "お飲み物 Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ A DRINK MADE OF THE NOODLE WATER. 蕎麦湯 is the cloudy water the soba was boiled in — so it carries the 打ち粉 and whatever wheat was in the noodles — and nothing in the name 焼酎そば湯割り reads as a hazard to someone who has carefully avoided the food menu. The same trap appears at 玄蕎麦しんがり.",
+    "dish_key": "sobayu"
+   },
+   {
+    "ja": "田酒（青森：特別純米）",
+    "romaji": "Denshu (Aomori tokubetsu junmai)",
+    "en": "Denshu tokubetsu junmai, Aomori",
+    "price": "1,000円（税込）",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Junmai sake is rice, water and koji only — no added alcohol. The coeliac caveat is that koji is occasionally grown on barley.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "七力（青森：純米吟醸）",
+    "romaji": "Shichiriki (Aomori junmai ginjō)",
+    "en": "Shichiriki junmai ginjo, Aomori",
+    "price": "",
+    "section": "お飲み物 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Listed without a price on the page read, so the field is left empty.",
+    "dish_key": "sake"
    }
   ]
  }

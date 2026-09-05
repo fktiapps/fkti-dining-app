@@ -97,5 +97,83 @@
     "dish_key": "bakedapple"
    }
   ]
+ },
+ "tokyo_beppinsha": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.beppinsya.com/",
+   "https://www.beppinsya.com/%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC/"
+  ],
+  "price_note": "PARTIAL: dish names and descriptions from the shop’s own menu page, which prints NO PRICES — every price field below is empty rather than guessed. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE SHOP BRANDS ITSELF \"Gluten Free Spice Curry\" ON ITS OWN SITE HEADER, which is a claim worth taking seriously and worth reading carefully. A spice curry is built on whole and ground spices, onion and stock rather than on a カレールー brick, so a flour-free curry is entirely achievable and this kitchen advertises it as its identity — the same territory as スマトラカレー共栄堂 elsewhere in this set, which states 小麦粉を一切使わず outright. ⚠ BUT THE SITE STOPS AT THE HEADER. The menu page describes each curry’s spices, heat level and contents and does NOT repeat the gluten-free claim per dish, does not name a flour substitute, and publishes no allergen statement, no cross-contamination note and nothing about the kitchen. So the flags below are \"ask\" and not \"gf\": the branding is a strong lead and it is not an ingredient declaration, and this dataset does not upgrade on branding. It is a very good shop to ring ahead to. ⚠ AND THE DRINKS LIST UNDOES IT ANYWAY: the shop pours 志賀高原ビール — Shiga Kogen pale ale and IPA — and BEER IS BARLEY MALT. A gluten-free curry house with a craft beer list is a real combination, and the beer is the wheat-and-barley item on the premises. Heat is chosen from 1 to 6 on most curries.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "赤のべっぴん薬膳カリー",
+    "romaji": "aka no beppin yakuzen karī",
+    "en": "Red medicinal-spice curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cardamom and ginger with a lot of onion; domestic chicken and seasonal vegetables. Heat 1–6. The shop’s \"Gluten Free Spice Curry\" branding covers it but no per-dish declaration is published.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "黒のべっぴんカシミールカリー",
+    "romaji": "kuro no beppin Kashimīru karī",
+    "en": "Black Kashmir curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop’s hottest, heat 4–6, described as 複雑なスパイスの香りと熟成した旨味の極辛; chicken and seasonal vegetables.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "濃厚えびカリー",
+    "romaji": "nōkō ebi karī",
+    "en": "Rich prawn curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Soft-shell shrimp eaten shell and all, with plenty of coriander. Heat 1–6. Prawn.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "牛すじカシミールカリー",
+    "romaji": "gyūsuji Kashimīru karī",
+    "en": "Beef tendon Kashmir curry",
+    "price": "",
+    "section": "カリー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef tendon simmered soft in RED WINE and spices. Heat 1–6.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "志賀高原ビール ペールエール",
+    "romaji": "Shiga Kōgen bīru pēru ēru",
+    "en": "Shiga Kogen Pale Ale, 5.5%",
+    "price": "",
+    "section": "ビール Beer",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ BEER IS BARLEY MALT — the one item on the premises that is certainly not gluten-free, in a shop whose header says Gluten Free Spice Curry.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "志賀高原IPA",
+    "romaji": "Shiga Kōgen IPA",
+    "en": "Shiga Kogen IPA, 6.0%",
+    "price": "",
+    "section": "ビール Beer",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Barley malt, heavily hopped — hopping is not a gluten reduction.",
+    "dish_key": "beer"
+   }
+  ]
  }
 }

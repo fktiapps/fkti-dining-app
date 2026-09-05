@@ -802,5 +802,60 @@
     "dish_key": "beer"
    }
   ]
+ },
+ "tokyo_vegan_eat_tokyo": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://veganeat.base.shop/"
+  ],
+  "price_note": "⚠ THIS IS THE ONLINE SHOP, NOT THE RESTAURANT BOARD — the stored website is a BASE storefront selling retort packs, so the four products below are what the shop mails out, not what it plates. No in-restaurant menu or price was found. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ AND IT CONTAINS THE SHARPEST SINGLE ILLUSTRATION OF THE TWO-AXIS PROBLEM IN THIS ENTIRE DATASET. The flagship product of a shop called VEGAN EAT TOKYO is its ヴィーガンカレー — and its own allergen line reads 小麦、カシューナッツ、大豆: WHEAT, cashew, soy. A vegan curry with wheat in it. Meanwhile the other product, ひよこ豆のトマト煮, is explicitly described as グルテンフリー. So within one vegan kitchen, the headline dish is closed to a coeliac and the second dish is open — and nothing about the word \"vegan\" predicts which. This is the asymmetry the dataset exists to record: plant-based is not wheat-free, the two restrictions are independent, and a shop can be scrupulous about one while the other is simply not the question it was answering. ⚠ THE CASHEW IS WORTH FLAGGING SEPARATELY: vegan kitchens use cashew constantly as a dairy substitute — for cream, cheese and sauce bodies — so a NUT allergy is a live and under-anticipated risk at exactly the restaurants a plant-eater is steered toward. It is named here in black and white.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "VEGAN EAT TOKYOの『ヴィーガンカレー』",
+    "romaji": "vīgan karē",
+    "en": "Vegan curry, retort pack",
+    "price": "￥980",
+    "section": "オンラインショップ Online shop",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ A VEGAN CURRY THAT CONTAINS WHEAT, stated by the shop itself: 小麦、カシューナッツ、大豆. Plant-based throughout and closed to a coeliac — the clearest case in this dataset that the two diets are independent axes. Also a CASHEW product, which is the standard vegan dairy substitute and a real allergen risk.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "【お得な５食セット】ヴィーガンカレー５食セット",
+    "romaji": "vīgan karē goshoku setto",
+    "en": "Vegan curry, 5-pack",
+    "price": "￥4,500",
+    "section": "オンラインショップ Online shop",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Five of the above. Same declared allergens: wheat, cashew, soy.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "VEGAN EAT TOKYOの『ひよこ豆のトマト煮』",
+    "romaji": "hiyokomame no tomato ni",
+    "en": "Chickpeas stewed in tomato, retort pack",
+    "price": "￥880",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE ONE THE SHOP CALLS グルテンフリー — chickpeas in tomato, described as gluten-free, low-calorie, high-protein and high in fibre. So of two products from the same vegan kitchen, this is the one a coeliac can consider and the curry beside it is not. The flag is \"ask\" rather than \"gf\" only because the claim appears in marketing copy rather than in a per-batch allergen declaration, and no cross-contamination statement is published.",
+    "dish_key": "stew"
+   },
+   {
+    "ja": "【お得な５食セット】ひよこ豆のトマト煮５食セット",
+    "romaji": "hiyokomame no tomato ni goshoku setto",
+    "en": "Chickpea tomato stew, 5-pack",
+    "price": "￥3,980",
+    "section": "オンラインショップ Online shop",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Five of the above.",
+    "dish_key": "stew"
+   }
+  ]
  }
 }

@@ -329,5 +329,292 @@
     "dish_key": "beer"
    }
   ]
+ },
+ "tokyo_shochiku_en_cafe": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://sho-chiku-en.com/",
+   "https://sho-chiku-en.com/menu/"
+  ],
+  "price_note": "⚠ A CAFÉ WHERE THE ENTIRE MENU CLEARS BOTH DIETS, WHICH HAS NOT HAPPENED BEFORE IN THIS DATASET. 松竹圓カフェ brands itself Vegan & Gluten-free Cafe and repeats the claim under every section in the same two sentences: 「全てのメニューはオリエンタルビーガン対応（動物由来の食材及び五葷不使用）になっております」 and 「全てのメニューは、グルテンフリー(小麦不使用)となっております」. So: no animal ingredient, no 五葷 (garlic, spring onion, onion, nira, rakkyo — the Buddhist 精進 exclusion, which goes beyond veganism), and no wheat, across cakes, pizza and drinks alike. It adds 「ビーガンの方や卵、乳製品、小麦アレルギーの方も安心してお召し上がり頂けます」, naming egg, dairy and WHEAT ALLERGY explicitly. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE PIZZA IS THE HEADLINE: 「米粉の生地のカリッともっちりした美味しさ」 — a RICE FLOUR base, made in-house, with a 五葷-free tomato sauce. A gluten-free pizza is close to unobtainable in Tokyo and this one is also vegan, including a plant ベーコン. Sold by the slice at ¥350–380 and as whole pies at ¥2,800–3,040. ⚠ AND THE CAKES USE A GF SPONGE: the tiramisu is described as 手作りの豆乳チーズ over a コーヒーベースのGFスポンジ — soy-milk cheese on a gluten-free sponge. The rainbow cake, the shop’s 看板メニュー, is coloured 1枚1枚お野菜の色味をつけて — with vegetables rather than dye. ⚠ WHAT IS STILL WORTH ASKING, and this record does not claim otherwise: the shop states its recipes, not its supply chain. It publishes no statement about factory cross-contamination in bought-in ingredients the way まるごとVeganダイニング浅草 does, and it does not describe a separated kitchen. The flags below are set to the shop’s own declaration because it is explicit, first-party and repeated — but a coeliac should still ask about shared equipment, which is the one question the page does not answer. ⚠ AND THE DRINKS CARRY SOMETHING RARE: plant milks are an explicit paid option — 無調整豆乳, アーモンドミルク and オーツミルク at +¥100 each. Almost no other café in this dataset lists one at all.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "ヴィーガンティラミス",
+    "romaji": "vīgan tiramisu",
+    "en": "Vegan tiramisu",
+    "price": "580〜",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ A TIRAMISU IS NORMALLY THE WORST CASE FOR BOTH DIETS — savoiardi biscuit, mascarpone, egg — and this one is rebuilt from the ground up: 手作りの豆乳チーズ (house-made SOY MILK cheese) over a コーヒーベースのGFスポンジ, a gluten-free coffee sponge. Four versions: original, matcha-azuki, mango and raspberry. A from-price. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tiramisu"
+   },
+   {
+    "ja": "夢幻レインボーケーキ",
+    "romaji": "mugen reinbō kēki",
+    "en": "Rainbow cake",
+    "price": "850",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The shop’s 看板メニュー, a vegan and gluten-free version of the British rainbow cake — and the colours are 着色料は使わず, no dye, each layer tinted with vegetables. The most expensive cake. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "モンブラン",
+    "romaji": "monburan",
+    "en": "Mont Blanc",
+    "price": "780",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Japanese chestnut inside and out. A Mont Blanc normally sits on a meringue or sponge base and carries dairy cream; this one does neither. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "montblanc"
+   },
+   {
+    "ja": "ビーガン苺ショートケーキ",
+    "romaji": "bīgan ichigo shōto kēki",
+    "en": "Strawberry shortcake",
+    "price": "680",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Strawberries with 豆乳クリーム — soy-milk cream — on a gluten-free sponge. The Japanese celebration cake, rebuilt for both diets. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "shortcake"
+   },
+   {
+    "ja": "チョコレートケーキ",
+    "romaji": "chokorēto kēki",
+    "en": "Chocolate cake",
+    "price": "660",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The shop states 動物性食材不使用 — no animal ingredients — with cocoa powder and 豆乳ホイップ. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "コーヒーケーキ",
+    "romaji": "kōhī kēki",
+    "en": "Coffee cake",
+    "price": "620",
+    "section": "ケーキ Cake",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Coffee, NUTS and brown sugar — worth flagging the nuts separately from either diet. The cheapest cake. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "マルゲリータ（ピザ）",
+    "romaji": "marugerīta",
+    "en": "Margherita pizza, by the slice",
+    "price": "350",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ A GLUTEN-FREE, VEGAN PIZZA — the base is 米粉, RICE FLOUR, made in-house, and the tomato sauce is 五葷抜き. Elsewhere in this dataset the pizza base is the one thing that is never negotiable; here it is rice. The cheese is plant. The cheapest item on the menu at ¥350 a slice. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ベーコン（ピザ）",
+    "romaji": "bēkon",
+    "en": "Vegan bacon pizza, by the slice",
+    "price": "380",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "植物性のビーガンベーコン — a plant bacon — on the same rice-flour base. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホールピザ マルゲリータ",
+    "romaji": "hōru piza marugerīta",
+    "en": "Whole margherita pizza",
+    "price": "2800",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The whole pie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホールピザ ベーコン",
+    "romaji": "hōru piza bēkon",
+    "en": "Whole vegan bacon pizza",
+    "price": "3040",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The whole pie; the most expensive item listed. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ホールピザ ハーフ＆ハーフ",
+    "romaji": "hōru piza hāfu ando hāfu",
+    "en": "Whole half-and-half pizza",
+    "price": "2920",
+    "section": "ピザ Pizza",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Half margherita, half vegan bacon. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "pizza"
+   },
+   {
+    "ja": "ストロベリースムージー",
+    "romaji": "sutoroberī sumūjī",
+    "en": "Strawberry smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Fruit smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "マンゴースムージー",
+    "romaji": "mangō sumūjī",
+    "en": "Mango smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Fruit smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "ブルーベリースムージー",
+    "romaji": "burūberī sumūjī",
+    "en": "Blueberry smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Fruit smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "アボカドスムージー",
+    "romaji": "abokado sumūjī",
+    "en": "Avocado smoothie",
+    "price": "680",
+    "section": "スムージー Smoothie",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Avocado smoothie. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "smoothie"
+   },
+   {
+    "ja": "クラシック有機紅茶",
+    "romaji": "kurashikku yūki kōcha",
+    "en": "Organic black tea",
+    "price": "480",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Organic leaf tea, hot or cold. The cheapest drink. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "有機アールグレイ",
+    "romaji": "yūki āru gurei",
+    "en": "Organic Earl Grey",
+    "price": "530",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Organic leaf tea. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "有機チャイラテ",
+    "romaji": "yūki chai rate",
+    "en": "Organic chai latte",
+    "price": "550",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Made on a plant milk, as everything here is. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "宇治抹茶ラテ",
+    "romaji": "Uji matcha rate",
+    "en": "Uji matcha latte",
+    "price": "550",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Uji matcha on a plant milk. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "ミルクティー",
+    "romaji": "miruku tī",
+    "en": "Milk tea",
+    "price": "550",
+    "section": "ティー Tea",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE NAME SAYS MILK AND THE SHOP SAYS NO ANIMAL INGREDIENTS — so the milk here is a plant one. Worth noting precisely because ミルクティー is a flag against a vegan everywhere else in this dataset and is not one here. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "エスプレッソ",
+    "romaji": "esupuresso",
+    "en": "Espresso",
+    "price": "450",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The cheapest item on the drinks list. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "アメリカン",
+    "romaji": "amerikan",
+    "en": "Americano",
+    "price": "480",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Beans ground to order. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "カフェラテ",
+    "romaji": "kafe rate",
+    "en": "Café latte",
+    "price": "530",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "On a plant milk. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "青森りんごジュース",
+    "romaji": "Aomori ringo jūsu",
+    "en": "100% Aomori apple juice",
+    "price": "480",
+    "section": "コーヒー Coffee",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Pressed apple juice. The shop states every item is オリエンタルビーガン対応（動物由来の食材及び五葷不使用）and グルテンフリー(小麦不使用). Prices are 税抜, tax excluded.",
+    "dish_key": "juice"
+   },
+   {
+    "ja": "無調整豆乳／アーモンドミルク／オーツミルク",
+    "romaji": "muchōsei tōnyū / āmondo miruku / ōtsu miruku",
+    "en": "Plant milk option — soy, almond or oat",
+    "price": "+100",
+    "section": "オプション Options",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ AN EXPLICIT, PRICED PLANT-MILK CHOICE, which almost no other café in this dataset offers at all. The gluten flag is an ask on one of the three and worth naming: OAT is not wheat, but oats are routinely milled and transported on wheat equipment and are the classic borderline grain for coeliacs — soy and almond carry no such question. +¥100 each.",
+    "dish_key": "plantmilk"
+   }
+  ]
  }
 }
