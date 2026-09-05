@@ -1,0 +1,113 @@
+{
+ "tokyo_asakusa_nadai_ramen_yoro": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://yoroiya.jp/",
+   "https://yoroiya.jp/menu/"
+  ],
+  "price_note": "PARTIAL: the shop names its bowls in its own navigation but prints a price for only one of them, the vegan ramen at ¥1,400. The seasonal announcements on the front page carry three more dated prices, recorded below as seasonal. Everything else has an empty price rather than an invented one. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THE FINDING HERE IS A VEGAN RAMEN ON A 1954-STYLE ASAKUSA COUNTER, AND IT IS THE CLEANEST ILLUSTRATION IN THIS DATASET OF THE TWO DIETS COMING APART. ヴィーガンらーめん at ¥1,400 is a real, permanent, priced menu item at a traditional 和風醤油 ramen shop on Denboin-dori — which is worth knowing, because a vegan in Asakusa otherwise has very little. But a vegan ramen is not a gluten-free ramen and nothing about it moves the coeliac answer: the noodles are wheat with かん水 whatever the broth is made of, and the tare on a 醤油 bowl is soy. One diet gets a whole dish; the other gets nothing, from the same bowl. ⚠ ONE BOWL IS WORTH ASKING ABOUT ON THE OTHER AXIS: 梅しおらーめん and the しお option on the 特製 use a SALT tare rather than a soy one, which removes one of the two wheat routes. The noodle is the other and it remains, so this is a distinction that matters for understanding the kitchen rather than one that opens the door. ⚠ AND THE SEASONAL BOWLS ADD RATHER THAN SUBTRACT: the 冷やし中華 comes 特製ごまだれ付き — a sesame dressing, which in Japan is built on soy — and the 坦々つけ麺 is a sesame-and-soy dip. 伝法院通り, Asakusa.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "ヴィーガンらーめん",
+    "romaji": "vīgan rāmen",
+    "en": "Vegan ramen",
+    "price": "1400円",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ A PERMANENT, PRICED VEGAN BOWL AT A TRADITIONAL ASAKUSA RAMEN SHOP — rare enough to be the reason this record exists, and the most expensive bowl on the board. The shop lists it in its own menu navigation alongside the standard ramen, so it is a fixture rather than a special. ⚠ AND IT IS STILL WHEAT: a vegan broth changes the animal question and not the grain one. Ramen noodles are wheat flour and かん水, and no gluten-free noodle is offered. This is the dish that shows the two axes are independent.",
+    "dish_key": "veganramen"
+   },
+   {
+    "ja": "らーめん（和風醤油）",
+    "romaji": "rāmen (wafū shōyu)",
+    "en": "Japanese-style soy ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The house bowl, named without a price. 和風 means the broth is built on a Japanese DASHI — bonito — and 醤油 means the tare is soy. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "玉子らーめん",
+    "romaji": "tamago rāmen",
+    "en": "Egg ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The soy bowl with egg; no price published. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "梅しおらーめん",
+    "romaji": "ume shio rāmen",
+    "en": "Plum and salt ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ しお MEANS THE TARE IS SALT, NOT SOY — which removes one of the two wheat routes and is the distinction worth understanding at any ramen counter. The noodle is the other route and it stays. 梅 is pickled plum, which is plant. No price published. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "特製らーめん（醤油・しお）",
+    "romaji": "tokusei rāmen (shōyu / shio)",
+    "en": "Special ramen — soy or salt",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The loaded bowl, offered in both tares; the salt version is the better-constructed one. No price published. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "冷やし中華（特製ごまだれ付き）",
+    "romaji": "hiyashi chūka",
+    "en": "Chilled Chinese-style noodles with sesame dressing",
+    "price": "1200円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A summer bowl, announced for 2 June. The 特製ごまだれ is a sesame dressing, and a Japanese ごまだれ is sesame paste let down with SOY — so the dressing is a wheat route on top of the noodle. Normally topped with egg and ham. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "hiyashichuka"
+   },
+   {
+    "ja": "和風 坦々つけ麵",
+    "romaji": "wafū tantan tsukemen",
+    "en": "Japanese-style dan dan dipping noodles",
+    "price": "1250円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A limited run announced to 20 May. A tantan dip is sesame paste and soy, concentrated because there is no broth to dilute it, and normally carries minced pork. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "冬味噌らーめん",
+    "romaji": "fuyu miso rāmen",
+    "en": "Winter miso ramen",
+    "price": "1100円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A winter bowl, limited to 20 servings at lunch and 10 in the evening, announced as ending 20 December. MISO is fermented on koji that is sometimes BARLEY, which is never declared. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "和風ぎょうざ",
+    "romaji": "wafū gyōza",
+    "en": "Japanese-style gyoza",
+    "price": "",
+    "section": "一品 Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "GYOZA WRAPPERS ARE WHEAT and the dipping sauce is soy. No price published.",
+    "dish_key": "gyoza"
+   }
+  ]
+ }
+}

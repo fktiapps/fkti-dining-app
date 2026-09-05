@@ -576,88 +576,98 @@
   "verified": "authoritative",
   "confidence": "high",
   "sources": [
-   "https://www.kyoueidoo.com/",
-   "https://kanda-curry.com/共栄堂/"
+   "https://www.kyoueidoo.com/"
   ],
-  "price_note": "Prices approximate — may change.",
-  "last_checked": "2026-07-03",
+  "price_note": "⚠ THE MOST USEFUL SINGLE SENTENCE FOUND IN THIS ENTIRE DATASET, AND THE SHOP VOLUNTEERS IT: 「当店独特の濃褐色のソースは、小麦粉を一切使わず、20数種類の香辛料を1時間かけてじっくり炒めて作ります」 — the curry sauce uses NO WHEAT FLOUR AT ALL, none, and is built instead on twenty-odd spices fried for an hour and vegetables cooked down until they disappear. Japanese curry is the most reliable wheat trap in the country because カレールー is a flour-and-fat roux sold as a brick; this 1924 shop makes its curry the Indonesian way and says so on its own site, unprompted, as a point of pride about texture rather than as an allergen claim. That is a first-party statement about the exact ingredient a coeliac needs, and it makes the four plain curries here the best hot main in the Tokyo set. ⚠ AND THE SAME PAGE, THREE LINES LOWER, TAKES IT BACK FOR THE REST OF THE PLATE. Under Soup: 「野菜と小麦を数回オーブンにかけルーを作り、コーン・生クリームを合わせた」 — the soup that accompanies the curry is a ROUX made from vegetables and WHEAT, finished with cream. So the shop removes flour from the thing everyone assumes has it, and puts flour into the thing nobody thinks to ask about. Order the curry, refuse the soup. ⚠ TWO ITEMS RE-INTRODUCE THE FLOUR BY A DIFFERENT DOOR: タンカレー has デミグラスソース added to the curry sauce, and ハヤシライス is built on the shop’s 特製デミグラスソース outright. A demi-glace is a browned flour roux by definition and the shop makes no flour-free claim for it — so of six mains, four are on the flour-free sauce and two are not. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. 神田神保町; 11:00–20:00 (L.O. 19:45), closed Sundays and public holidays; founded 大正13年 (1924), the recipe learned from 伊藤友治郎 and adapted to Japanese taste. Rice is 国産コシヒカリ.",
+  "last_checked": "2026-09-05",
   "items": [
    {
     "ja": "ポークカレー",
     "romaji": "pōku karē",
-    "en": "Pork curry over rice",
-    "price": "¥1,300",
-    "section": "Sumatra curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Flour-free spice sauce over plain rice. Ask for no fukujinzuke pickle and skip the complimentary potage; no dedicated allergen handling. Large sauce (ソース大) ¥1,600.",
-    "dish_key": "pork_curry"
-   },
-   {
-    "ja": "チキンカレー",
-    "romaji": "chikin karē",
-    "en": "Chicken curry over rice",
-    "price": "¥1,500",
-    "section": "Sumatra curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Flour-free spice sauce over plain rice; no fukujinzuke, skip potage. Large sauce ¥1,800.",
-    "dish_key": "chicken_curry"
-   },
-   {
-    "ja": "エビカレー",
-    "romaji": "ebi karē",
-    "en": "Shrimp curry over rice",
-    "price": "¥1,600",
-    "section": "Sumatra curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Flour-free spice sauce over plain rice; shellfish. No fukujinzuke, skip potage. Large sauce ¥1,900.",
-    "dish_key": "shrimp_curry"
+    "en": "Pork curry",
+    "price": "普通盛 1300円 / ソース大盛 1600円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE DISH TO ORDER, AND THE REASON IS ON THE SHOP’S OWN PAGE: the curry sauce is made 小麦粉を一切使わず — with no wheat flour whatsoever — which is the opposite of how Japanese curry is normally built. The flag is \"ask\" rather than \"gf\" only because no allergen statement covers the whole plate (the soup beside it is a wheat roux) and nothing is published about the bouillon. Pork and vegetable stock, so not vegan. The cheapest main.",
+    "dish_key": "curry"
    },
    {
     "ja": "ビーフカレー",
     "romaji": "bīfu karē",
-    "en": "Beef curry over rice",
-    "price": "¥1,700",
-    "section": "Sumatra curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Flour-free spice sauce over plain rice; no fukujinzuke, skip potage. Large sauce ¥2,000.",
-    "dish_key": "beef_curry"
+    "en": "Beef curry",
+    "price": "普通盛 1700円 / ソース大盛 2000円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef bouillon and RED WINE in the sauce, on the same flour-free curry base.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "チキンカレー",
+    "romaji": "chikin karē",
+    "en": "Chicken curry",
+    "price": "普通盛 1500円 / ソース大盛 1800円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken and vegetable bouillon; the shop describes it as the lighter one.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "エビカレー",
+    "romaji": "ebi karē",
+    "en": "Prawn curry",
+    "price": "普通盛 1600円 / ソース大盛 1900円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Prawns flambéed in WHITE WINE and BUTTER — so dairy as well as shellfish, on the flour-free base.",
+    "dish_key": "curry"
    },
    {
     "ja": "タンカレー",
     "romaji": "tan karē",
-    "en": "Beef tongue curry over rice",
-    "price": "¥2,100",
-    "section": "Sumatra curry",
-    "gf": "gf",
-    "vegan": "",
-    "note": "Flour-free spice sauce over plain rice; no fukujinzuke, skip potage. Large sauce ¥2,400.",
-    "dish_key": "tongue_curry"
+    "en": "Beef tongue curry",
+    "price": "普通盛 2200円 / ソース大盛 2500円",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE EXCEPTION ON THE CURRY LIST. Beef tongue simmered four hours — and the shop states DEMI-GLACE is added to this one. A demi-glace is thickened with a browned FLOUR roux, so the dish that sounds the most luxurious is the one that puts the wheat back into a curry the kitchen deliberately made without it.",
+    "dish_key": "curry"
    },
    {
     "ja": "ハヤシライス",
     "romaji": "hayashi raisu",
-    "en": "Hayashi rice (beef in demi-glace-style sauce)",
-    "price": "¥1,700",
-    "section": "Rice",
-    "gf": "",
-    "vegan": "",
-    "note": "Limited to ~15/day. Hayashi sauce is NOT described as flour-free (demi-glace-style sauces normally contain wheat) — treat as not GF and ask before ordering; the flour-free claim applies to the Sumatra curry, not this. Large sauce ¥2,000.",
-    "dish_key": "hayashi_rice"
+    "en": "Hayashi rice",
+    "price": "普通盛 1700円 / ソース大盛 2000円",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ BUILT ON DEMI-GLACE, NOT ON THE CURRY SAUCE — the shop says so: 手間と時間がかかった共栄堂特製のデミグラスソースからできる. Flour roux. Limited to 15 servings a day.",
+    "dish_key": "hayashi"
    },
    {
-    "ja": "焼りんご",
+    "ja": "スープ",
+    "romaji": "sūpu",
+    "en": "Corn and vegetable potage",
+    "price": "",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE TRAP, IN THE SHOP’S OWN WORDS: 「野菜と小麦を数回オーブンにかけルーを作り、コーン・生クリームを合わせた」 — vegetables and WHEAT baked into a roux, then corn and CREAM. The one component of this meal that is made of flour is the one served alongside a curry that is not. No price is published for it separately.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "焼きりんご",
     "romaji": "yaki ringo",
-    "en": "Baked apple (winter seasonal)",
-    "price": "¥700",
-    "section": "Seasonal",
-    "gf": "",
-    "vegan": "",
-    "note": "Oct–early May only, tiny daily quantity. Baking preparation unverified for gluten — ask before ordering.",
-    "dish_key": "baked_apple"
+    "en": "Baked apple with cream — winter only",
+    "price": "700円",
+    "section": "デザート Dessert",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "A whole apple baked and served with cream — fruit and dairy, no flour, no pastry. About thirty a day, October to early May, and the shop asks that it not be ordered on its own.",
+    "dish_key": "bakedapple"
    }
   ]
  },
@@ -19018,9 +19028,9 @@
     "en": "Egg — an extra for the pot",
     "price": "¥220",
     "section": "御飯 Rice dishes",
-    "gf": "gf",
+    "gf": "",
     "vegan": "no",
-    "note": "生卵。A raw egg on its own is nothing but egg — no wheat route at all, which is why the gluten answer here is clean. What it goes INTO is not: the pot it binds is simmered in a soy-based warishita. Egg rules out vegan.",
+    "note": "生卵。Raw egg to bind the pot.",
     "dish_key": "egg_side"
    },
    {
@@ -19327,8 +19337,8 @@
     "price": "¥800",
     "section": "ドリンク Drinks",
     "gf": "no",
-    "vegan": "ask",
-    "note": "銘柄未記載。Brand unpublished. Two separate unknowns follow from that: at a shop this old the house Western spirit is almost certainly whisky, which is BARLEY — and barley is not on Japan's statutory allergen list, so no label will warn you. Distilled spirits are usually plant-only, but without a named brand neither answer can be confirmed. Ask what is being poured.",
+    "vegan": "",
+    "note": "銘柄未記載。Brand unpublished; at a shop this old the house Western spirit is whisky, i.e. barley. Treat as gluten unless staff name something else.",
     "dish_key": "western_spirit"
    },
    {
@@ -104934,6 +104944,1496 @@
     "vegan": "ask",
     "note": "⚠ THE ONE DESSERT HERE WITH A ROUTE TO A VEGAN, and it is worth asking rather than assuming: a coconut ice can be made on coconut milk alone, which would be plant — or on a dairy base with coconut flavour, which is how most Japanese versions are made. The question is whether it is ココナッツミルク or ココナッツ風味.",
     "dish_key": "icecream"
+   }
+  ]
+ },
+ "tokyo_chinya": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://chinya.co.jp/",
+   "https://chinya.co.jp/menu/"
+  ],
+  "price_note": "⚠ THE PRICES BELOW ARE MAIL-ORDER, NOT RESTAURANT PRICES, AND THAT DISTINCTION IS THE WHOLE CAVEAT. The page at chinya.co.jp/menu/ turns out to be the shop’s ONLINE SHOP — raw sukiyaki meat sets, miso-cured meat and tsukudani sold by weight for delivery — rather than the dining-room board. No in-restaurant dish, course or price is published anywhere on the site that was read. The items are recorded because they are real, priced and first-party, and because their composition is informative; they are not what you would be served at a table. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ WHAT THE PRODUCT NAMES ESTABLISH FOR A COELIAC, AND IT IS THE ONE THING THAT MATTERS AT ANY SUKIYAKI HOUSE: every meat set is sold 割下付き — WITH WARISHITA, the sukiyaki cooking liquid, which is soy sauce, mirin and sugar. Sukiyaki is not meat with a sauce on the side; the warishita is the medium the beef is cooked in, so there is no version of the dish without it unless the kitchen will do a salt-and-oil 関西風 preparation, which nothing here mentions. Sukiyaki is also conventionally dipped in raw EGG. ⚠ AND THE SET PRODUCTS NAME THEIR OWN VEGETABLES: ザク (the vegetable mix), 白滝 (shirataki, konjac noodles — plant and wheat-free, unlike every other noodle in this dataset) and 焼き豆腐 (grilled tofu). Those three are the parts of a sukiyaki a plant-eater could in principle eat, and they arrive in a pan of soy-based beef stock.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "すき焼用熟成赤身肉（肩400g、割下付き）",
+    "romaji": "sukiyaki-yō jukusei akami niku (kata 400g)",
+    "en": "Aged lean beef for sukiyaki, shoulder 400g, with warishita",
+    "price": "6,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 割下付き — SOLD WITH THE WARISHITA, which is soy sauce, mirin and sugar. At a sukiyaki house the soy is the cooking medium rather than a condiment, so it cannot be left off the dish the way a dipping sauce can. Beef.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "すき焼用熟成赤身肉（肩800g、割下付き）",
+    "romaji": "sukiyaki-yō jukusei akami niku (kata 800g)",
+    "en": "Aged lean beef, shoulder 800g, with warishita",
+    "price": "11,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The larger size; soy-based warishita included.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "すき焼用熟成適サシ肉（サーロイン400g、割下付き）",
+    "romaji": "sukiyaki-yō jukusei tekisashi niku (sāroin 400g)",
+    "en": "Aged marbled sirloin 400g, with warishita",
+    "price": "12,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Marbled sirloin; soy-based warishita included.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "すき焼用熟成適サシ肉（サーロイン800g、割下付き）",
+    "romaji": "sukiyaki-yō jukusei tekisashi niku (sāroin 800g)",
+    "en": "Aged marbled sirloin 800g, with warishita",
+    "price": "22,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The largest meat-only set.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "熟成赤身肉セット（肩400g、ザク、白滝、焼き豆腐、割下）",
+    "romaji": "jukusei akami niku setto (400g)",
+    "en": "Aged lean beef set 400g with vegetables, shirataki, grilled tofu and warishita",
+    "price": "8,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SET PRODUCTS NAME THE WHOLE PAN, WHICH IS USEFUL: ザク is the cut vegetables, 白滝 is SHIRATAKI — konjac noodles, which are plant and contain no wheat at all, one of the very few noodles in this dataset that does not — and 焼き豆腐 is grilled tofu. Three plant components, cooked in a soy-based beef warishita with the beef.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "熟成赤身肉セット（肩800g、ザク、白滝、焼き豆腐、割下）",
+    "romaji": "jukusei akami niku setto (800g)",
+    "en": "Aged lean beef set 800g with vegetables and warishita",
+    "price": "15,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The larger lean set.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "熟成適サシ肉セット（サーロイン400g、ザク、白滝、焼き豆腐、割下）",
+    "romaji": "jukusei tekisashi niku setto (400g)",
+    "en": "Aged marbled sirloin set 400g with vegetables and warishita",
+    "price": "14,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Marbled sirloin set.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "熟成適サシ肉セット（サーロイン800g、ザク、白滝、焼き豆腐、割下）",
+    "romaji": "jukusei tekisashi niku setto (800g)",
+    "en": "Aged marbled sirloin set 800g with vegetables and warishita",
+    "price": "26,000円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The most expensive product listed.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "牛肉みそ漬（400g）",
+    "romaji": "gyūniku misozuke",
+    "en": "Miso-cured beef, 400g",
+    "price": "5,700円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A MISO CURE IS INSIDE THE MEAT, not on it — the beef sits in it for days, so there is no plain version. Japanese miso is fermented on koji that is sometimes BARLEY, which is never declared. 800g is ¥11,400.",
+    "dish_key": "misozuke"
+   },
+   {
+    "ja": "豚肉みそ漬（770g）",
+    "romaji": "butaniku misozuke",
+    "en": "Miso-cured pork, 770g",
+    "price": "4,500円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork in the same miso cure.",
+    "dish_key": "misozuke"
+   },
+   {
+    "ja": "牛しぐれ煮（120g）",
+    "romaji": "gyū shigureni",
+    "en": "Beef shigureni tsukudani, 120g",
+    "price": "1,850円",
+    "section": "オンラインショップ（通販） Mail order",
+    "gf": "no",
+    "vegan": "no",
+    "note": "しぐれ煮 is beef simmered down in SOY SAUCE, mirin and ginger until almost dry — a tsukudani, so the soy is concentrated rather than diluted. 240g is ¥3,700.",
+    "dish_key": "tsukudani"
+   }
+  ]
+ },
+ "tokyo_kaminarimon_sansada_sans": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "http://tempura-sansada.co.jp/",
+   "http://tempura-sansada.co.jp/menu.html"
+  ],
+  "price_note": "Six tempura dishes with prices from the shop’s own menu page; the page describes the contents of each but does not extend to rice bowls, sides or drinks, so this is the tempura board rather than the whole menu. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THE ONE THING THIS SHOP SAYS THAT CHANGES A DIET ANSWER IS ABOUT THE OIL, NOT THE FLOUR: 「胡麻油で揚げる伝統を今に伝える」 — it fries in SESAME OIL, in the old Edo style. That matters twice over. For a coeliac it changes nothing at all: the batter is still wheat flour and the tentsuyu is still soy and dashi, so the whole board is closed. But SESAME is one of Japan’s designated allergens in its own right, and a shop that fries everything in sesame oil is a hazard for a sesame allergy that no dish name would reveal — worth recording because this dataset’s users travel with more than one restriction. ⚠ THERE IS NOTHING HERE FOR EITHER DIET. Every item is battered; 季節の野菜天ぷら at ¥1,940 is six seasonal vegetables and is vegetarian in filling and wheat in coating, which is the same near-miss the vegetable tempura at every other shop in this set produces. ⚠ ONE PRACTICAL NOTE: the 大かき揚 at ¥8,000 is offered but the shop warns 混雑時はお受け出来ない場合もございます — it may be refused at busy times.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "上天ぷら",
+    "romaji": "jō tenpura",
+    "en": "Premium tempura — 2 prawns, small kakiage, vegetables",
+    "price": "3,610円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "TEMPURA BATTER IS WHEAT FLOUR. Fried in SESAME OIL, which is a separate declared allergen. Contents as the shop lists them: two prawns, a small kakiage and vegetables.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天ぷら",
+    "romaji": "tenpura",
+    "en": "Tempura — prawn, small kakiage, white fish",
+    "price": "2,500円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The standard plate and the cheapest here. Wheat batter, sesame oil.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "旬の天ぷら盛り合わせ",
+    "romaji": "shun no tenpura moriawase",
+    "en": "Seasonal tempura assortment",
+    "price": "4,360円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Prawn, vegetables and seafood; the shop notes the contents change with the season.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "季節の野菜天ぷら",
+    "romaji": "kisetsu no yasai tenpura",
+    "en": "Seasonal vegetable tempura — six kinds",
+    "price": "1,940円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE NEAR-MISS THIS DATASET KEEPS MEETING: six seasonal vegetables, so the filling is plant — and the coating is WHEAT and the tentsuyu is soy and dashi. Vegetarian in substance, closed on both diets in practice.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "中かき揚",
+    "romaji": "chū kakiage",
+    "en": "Medium kakiage — prawn, squid, scallop adductor",
+    "price": "3,610円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A kakiage binds its seafood in WHEAT BATTER. The shop also offers a 大かき揚 at ¥8,000 but warns it may not be available when busy.",
+    "dish_key": "kakiage"
+   },
+   {
+    "ja": "えび天ぷら",
+    "romaji": "ebi tenpura",
+    "en": "Prawn tempura",
+    "price": "4,530円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Prawn in wheat batter, sesame oil.",
+    "dish_key": "tempura"
+   }
+  ]
+ },
+ "tokyo_asakusa_nadai_ramen_yoro": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://yoroiya.jp/",
+   "https://yoroiya.jp/menu/"
+  ],
+  "price_note": "PARTIAL: the shop names its bowls in its own navigation but prints a price for only one of them, the vegan ramen at ¥1,400. The seasonal announcements on the front page carry three more dated prices, recorded below as seasonal. Everything else has an empty price rather than an invented one. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THE FINDING HERE IS A VEGAN RAMEN ON A 1954-STYLE ASAKUSA COUNTER, AND IT IS THE CLEANEST ILLUSTRATION IN THIS DATASET OF THE TWO DIETS COMING APART. ヴィーガンらーめん at ¥1,400 is a real, permanent, priced menu item at a traditional 和風醤油 ramen shop on Denboin-dori — which is worth knowing, because a vegan in Asakusa otherwise has very little. But a vegan ramen is not a gluten-free ramen and nothing about it moves the coeliac answer: the noodles are wheat with かん水 whatever the broth is made of, and the tare on a 醤油 bowl is soy. One diet gets a whole dish; the other gets nothing, from the same bowl. ⚠ ONE BOWL IS WORTH ASKING ABOUT ON THE OTHER AXIS: 梅しおらーめん and the しお option on the 特製 use a SALT tare rather than a soy one, which removes one of the two wheat routes. The noodle is the other and it remains, so this is a distinction that matters for understanding the kitchen rather than one that opens the door. ⚠ AND THE SEASONAL BOWLS ADD RATHER THAN SUBTRACT: the 冷やし中華 comes 特製ごまだれ付き — a sesame dressing, which in Japan is built on soy — and the 坦々つけ麺 is a sesame-and-soy dip. 伝法院通り, Asakusa.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "ヴィーガンらーめん",
+    "romaji": "vīgan rāmen",
+    "en": "Vegan ramen",
+    "price": "1400円",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ A PERMANENT, PRICED VEGAN BOWL AT A TRADITIONAL ASAKUSA RAMEN SHOP — rare enough to be the reason this record exists, and the most expensive bowl on the board. The shop lists it in its own menu navigation alongside the standard ramen, so it is a fixture rather than a special. ⚠ AND IT IS STILL WHEAT: a vegan broth changes the animal question and not the grain one. Ramen noodles are wheat flour and かん水, and no gluten-free noodle is offered. This is the dish that shows the two axes are independent.",
+    "dish_key": "veganramen"
+   },
+   {
+    "ja": "らーめん（和風醤油）",
+    "romaji": "rāmen (wafū shōyu)",
+    "en": "Japanese-style soy ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The house bowl, named without a price. 和風 means the broth is built on a Japanese DASHI — bonito — and 醤油 means the tare is soy. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "玉子らーめん",
+    "romaji": "tamago rāmen",
+    "en": "Egg ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The soy bowl with egg; no price published. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "梅しおらーめん",
+    "romaji": "ume shio rāmen",
+    "en": "Plum and salt ramen",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ しお MEANS THE TARE IS SALT, NOT SOY — which removes one of the two wheat routes and is the distinction worth understanding at any ramen counter. The noodle is the other route and it stays. 梅 is pickled plum, which is plant. No price published. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "特製らーめん（醤油・しお）",
+    "romaji": "tokusei rāmen (shōyu / shio)",
+    "en": "Special ramen — soy or salt",
+    "price": "",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The loaded bowl, offered in both tares; the salt version is the better-constructed one. No price published. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "冷やし中華（特製ごまだれ付き）",
+    "romaji": "hiyashi chūka",
+    "en": "Chilled Chinese-style noodles with sesame dressing",
+    "price": "1200円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A summer bowl, announced for 2 June. The 特製ごまだれ is a sesame dressing, and a Japanese ごまだれ is sesame paste let down with SOY — so the dressing is a wheat route on top of the noodle. Normally topped with egg and ham. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "hiyashichuka"
+   },
+   {
+    "ja": "和風 坦々つけ麵",
+    "romaji": "wafū tantan tsukemen",
+    "en": "Japanese-style dan dan dipping noodles",
+    "price": "1250円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A limited run announced to 20 May. A tantan dip is sesame paste and soy, concentrated because there is no broth to dilute it, and normally carries minced pork. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "冬味噌らーめん",
+    "romaji": "fuyu miso rāmen",
+    "en": "Winter miso ramen",
+    "price": "1100円",
+    "section": "季節限定 Seasonal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A winter bowl, limited to 20 servings at lunch and 10 in the evening, announced as ending 20 December. MISO is fermented on koji that is sometimes BARLEY, which is never declared. ⚠ RAMEN NOODLES ARE WHEAT with かん水 — that is true of every bowl here including the vegan one.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "和風ぎょうざ",
+    "romaji": "wafū gyōza",
+    "en": "Japanese-style gyoza",
+    "price": "",
+    "section": "一品 Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "GYOZA WRAPPERS ARE WHEAT and the dipping sauce is soy. No price published.",
+    "dish_key": "gyoza"
+   }
+  ]
+ },
+ "tokyo_onigiri_asakusa_yadoroku": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "http://onigiriyadoroku.com/"
+  ],
+  "price_note": "PARTIAL: the shop publishes its lunch sets with from-prices and does NOT publish its fillings list or the price of individual onigiri. It states 320円以上のおにぎりは差額分で承ります — onigiri above ¥320 are charged at the difference — which establishes ¥320 as the base but names no filling, so nothing is recorded about what they are. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ AN ONIGIRI SPECIALIST IS ONE OF THE BEST FORMATS IN JAPAN FOR A COELIAC AND THIS IS THE OLDEST ONE IN TOKYO, opened 昭和29年 (1954). The construction is rice, nori and a filling: no batter, no noodle, no wrapper, no fryer, no roux. The shop names its own components — 大釜で炊かれたコシヒカリ, Koshihikari rice cooked in a large cauldron, wrapped in 江戸前の海苔, Edo-mae nori — and rice and seaweed are both clean. ⚠ SO THE WHOLE QUESTION IS THE FILLING, AND IT IS NOT PUBLISHED. The standard Japanese onigiri fillings divide sharply: 梅 (pickled plum) and 塩 are clean and plant; 昆布 is kelp simmered in SOY; おかか is bonito flakes with SOY, so fish and wheat; 鮭 and 明太子 and ツナマヨ are fish, the last with egg. A coeliac or vegan here has a real meal available and has to ask filling by filling — which at a counter that hands-forms one at a time, as this shop says it does (1個から握ります), is a conversation the format actually allows. ⚠ AND THE SET HAS TWO OTHER COMPONENTS: both lunch sets come with 豆腐味噌汁 and 沢庵. The miso soup is built on a DASHI, so it is fish and the miso may be barley; the takuan is pickled daikon, plant, though commercial takuan is often steeped in a soy-bearing liquid. 台東区浅草3-9-10, behind the Sensoji main hall; 11:30 and 17:00 seatings, closing when the rice runs out; closed Sundays at lunch and Sunday, Tuesday and Wednesday evenings; 8 counter seats and 8 at tables. Takeaway available and the shop delivers across Asakusa for large orders.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "おにぎり2個（豆腐味噌汁・沢庵付）",
+    "romaji": "onigiri niko (tōfu misoshiru, takuan tsuki)",
+    "en": "Two onigiri with tofu miso soup and takuan",
+    "price": "814円より",
+    "section": "昼の御品書き Lunch sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE RICE AND NORI ARE CLEAN; THE SET AROUND THEM IS NOT. A from-price, because the filling chosen changes it — the shop charges the difference on anything above ¥320. The MISO SOUP is the reason both flags are against rather than open: a Japanese miso soup is built on bonito DASHI, which makes the set fish, and miso koji is sometimes barley. Ask whether the soup can be left off or made without dashi, and the rest of this plate becomes one of the better prospects in Asakusa.",
+    "dish_key": "onigiri_set"
+   },
+   {
+    "ja": "おにぎり3個（豆腐味噌汁・沢庵付）",
+    "romaji": "onigiri sanko (tōfu misoshiru, takuan tsuki)",
+    "en": "Three onigiri with tofu miso soup and takuan",
+    "price": "1100円より",
+    "section": "昼の御品書き Lunch sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The three-piece set, again a from-price. Same dashi and miso questions as the two-piece.",
+    "dish_key": "onigiri_set"
+   }
+  ]
+ },
+ "tokyo_daikokuya_tempura": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "http://www.tempura.co.jp/",
+   "http://www.tempura.co.jp/menu/index.html"
+  ],
+  "price_note": "Full menu with prices from the shop’s own おしながき page; the site states 消費税は表示価格に含まれております, tax included. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THIS IS A TEMPURA HOUSE AND THERE IS NOTHING HERE FOR A COELIAC ON THE MAIN BOARD — every tendon and every tempura plate is wheat batter, and the tare poured over a Daikokuya tendon is soy, mirin and sugar. That is said plainly rather than worked around. ⚠ WHAT IS WORTH RECORDING IS THE SIDE BOARD, because an old Asakusa tempura shop keeps a proper 一品 list and several of those plates have no flour in them at all: さしみ ¥2,400, あじのたたき ¥900, 胡瓜もみ ¥700, おろし和え ¥700 and なめたけおろし和え ¥500 are constructed without batter. All are eaten with soy sauce, which is where the wheat sits, and all but the cucumber are fish. 茄子のしぎやき at ¥800 is aubergine in miso — the one plate here that is plant in substance. ⚠ AND ONE PORTION NOTE THAT MATTERS FOR A GROUP: 御飯 is ¥250 and お吸物 ¥350, so a person who cannot eat tempura can sit down to rice, soup and pickles for well under ¥1,000 while the table has tendon. The soup is a dashi, so it is bonito.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "天丼（えび1、きす1、かき揚げ1）",
+    "romaji": "tendon",
+    "en": "Tendon — 1 prawn, 1 whiting, 1 kakiage",
+    "price": "2,300円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TEMPURA BATTER IS WHEAT FLOUR, and a Daikokuya tendon is finished with a dark sesame-oil-fried tempura under a soy tare. Wheat in the coating and the sauce.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天丼（えび2、かき揚げ1）",
+    "romaji": "tendon (ebi 2)",
+    "en": "Tendon — 2 prawns, 1 kakiage",
+    "price": "2,500円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and soy tare.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "海老天丼（えび4）",
+    "romaji": "ebi tendon",
+    "en": "Prawn tendon — 4 prawns",
+    "price": "2,700円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and soy tare.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天麩羅（えび3、きす1）",
+    "romaji": "tenpura",
+    "en": "Tempura — 3 prawns, 1 whiting",
+    "price": "2,450円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; the tentsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天麩羅（えび3、かき揚げ1）",
+    "romaji": "tenpura (kakiage)",
+    "en": "Tempura — 3 prawns, 1 kakiage",
+    "price": "2,550円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "海老天麩羅（えび4）",
+    "romaji": "ebi tenpura",
+    "en": "Prawn tempura — 4 prawns",
+    "price": "2,700円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天丼定食（天丼、吸物、小鉢）",
+    "romaji": "tendon teishoku",
+    "en": "Tendon set with soup and small dish",
+    "price": "2,900円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; the soup is a dashi.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天麩羅定食（天麩羅、御飯、吸物、小鉢）",
+    "romaji": "tenpura teishoku",
+    "en": "Tempura set with rice, soup and small dish",
+    "price": "2,900円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; the soup is a dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "御飯",
+    "romaji": "gohan",
+    "en": "Rice",
+    "price": "250円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE CHEAPEST THING HERE AND THE ONLY ONE THAT CLEARS BOTH DIETS OUTRIGHT: plain steamed rice, ¥250. Worth knowing if you are sitting with people eating tendon.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "お吸物",
+    "romaji": "osuimono",
+    "en": "Clear soup",
+    "price": "350円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A clear soup is a DASHI — bonito, so fish — and normally seasoned with 白だし or light soy.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "かき玉わん",
+    "romaji": "kakitama wan",
+    "en": "Egg-drop soup",
+    "price": "350円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dashi with egg.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "新香",
+    "romaji": "shinko",
+    "en": "Pickles",
+    "price": "500円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Japanese pickles — plant. The gluten flag is an ask because pickling liquids are frequently soy- or dashi-based.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "楽京",
+    "romaji": "rakkyō",
+    "en": "Pickled rakkyo shallots",
+    "price": "450円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Shallots in a sweet vinegar pickle — plant, and one of the few side plates with no fish and no batter.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "べったら漬け",
+    "romaji": "bettarazuke",
+    "en": "Bettara pickled daikon",
+    "price": "650円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Daikon cured in rice KOJI and sugar — a Tokyo speciality, rice-based rather than soy-based, which makes it a better prospect than most Japanese pickles.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "さしみ",
+    "romaji": "sashimi",
+    "en": "Sashimi",
+    "price": "2,400円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw fish, and the most expensive side plate. No wheat in the fish — the soy sauce is the wheat, so bring tamari.",
+    "dish_key": "sashimi"
+   },
+   {
+    "ja": "ぬた",
+    "romaji": "nuta",
+    "en": "Nuta — seafood and spring onion in vinegared miso",
+    "price": "1,200円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dressed in 酢味噌, vinegared MISO, whose koji is sometimes barley. Normally contains fish or shellfish.",
+    "dish_key": "nuta"
+   },
+   {
+    "ja": "あじのたたき",
+    "romaji": "aji no tataki",
+    "en": "Chopped horse mackerel",
+    "price": "900円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw fish chopped with spring onion and ginger — no batter, and eaten with soy.",
+    "dish_key": "aji"
+   },
+   {
+    "ja": "あじの酢の物",
+    "romaji": "aji no sunomono",
+    "en": "Vinegared horse mackerel",
+    "price": "900円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A 酢の物 dressing is 三杯酢 — vinegar, sugar and SOY, usually with dashi.",
+    "dish_key": "sunomono"
+   },
+   {
+    "ja": "玉子焼",
+    "romaji": "tamagoyaki",
+    "en": "Rolled omelette",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg. A tempura shop’s tamagoyaki is normally made with dashi, which would make it fish as well.",
+    "dish_key": "dashimaki"
+   },
+   {
+    "ja": "茄子のしぎやき",
+    "romaji": "nasu no shigiyaki",
+    "en": "Aubergine with miso",
+    "price": "800円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE ONE PLATE HERE THAT IS PLANT IN SUBSTANCE: aubergine fried and spread with miso. The miso is the gluten-or-barley question, and shigiyaki miso often carries mirin and dashi.",
+    "dish_key": "nasu"
+   },
+   {
+    "ja": "胡瓜もみ",
+    "romaji": "kyūri momi",
+    "en": "Salted cucumber",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Cucumber salted and squeezed — about as short an ingredient list as a Japanese side gets, and plant. The dressing is normally a vinegar one, occasionally with soy.",
+    "dish_key": "cucumber"
+   },
+   {
+    "ja": "くらげの酢の物",
+    "romaji": "kurage no sunomono",
+    "en": "Vinegared jellyfish",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Jellyfish is animal; the dressing is soy-based.",
+    "dish_key": "kurage"
+   },
+   {
+    "ja": "おろし和え",
+    "romaji": "oroshi ae",
+    "en": "Grated daikon salad",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Grated daikon — plant — dressed, and a Japanese 和え dressing is soy and often dashi.",
+    "dish_key": "oroshi"
+   },
+   {
+    "ja": "板わさ",
+    "romaji": "itawasa",
+    "en": "Kamaboko with wasabi",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kamaboko is a steamed FISH CAKE routinely bulked with WHEAT STARCH — a quiet wheat item that reads as plain fish.",
+    "dish_key": "kamaboko"
+   },
+   {
+    "ja": "なめたけおろし和え",
+    "romaji": "nametake oroshi ae",
+    "en": "Enoki and grated daikon",
+    "price": "500円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Enoki mushrooms and daikon, both plant — but なめたけ in Japan usually means the bottled enoki preserve simmered in SOY SAUCE and mirin, which is the wheat.",
+    "dish_key": "nametake"
+   },
+   {
+    "ja": "特級酒（キンシ正宗）",
+    "romaji": "tokkyūshu (Kinshi Masamune)",
+    "en": "Kinshi Masamune premium sake",
+    "price": "800円",
+    "section": "お酒 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Sake is rice, water and koji; the coeliac caveat is only that koji is occasionally grown on barley.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "地酒（飛騨高山鬼ごろし）",
+    "romaji": "jizake (Hida Takayama Onigoroshi)",
+    "en": "Hida Takayama Onigoroshi sake",
+    "price": "800円",
+    "section": "お酒 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Rice sake.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "冷酒（澤乃井）",
+    "romaji": "reishu (Sawanoi)",
+    "en": "Sawanoi chilled sake",
+    "price": "1,500円",
+    "section": "お酒 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Rice sake, from Tokyo’s own Ome brewery.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "生ビール",
+    "romaji": "nama bīru",
+    "en": "Draught beer",
+    "price": "800円",
+    "section": "お酒 Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "BEER IS BARLEY MALT. A small draught is ¥650.",
+    "dish_key": "beer"
+   }
+  ]
+ },
+ "tokyo_gozen_soba_kaminarimon_t": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.kaminarimon-tagawa.com/",
+   "https://www.kaminarimon-tagawa.com/menu.html"
+  ],
+  "price_note": "Full menu with prices from the shop’s own menu page — cold and hot soba, rice bowls, sets, small plates and drinks. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THE 変わり蕎麦 SECTION IS WORTH UNDERSTANDING RATHER THAN JUST AVOIDING. This shop leads with 四色 at ¥2,000 — four soba in one order: さらし, 抹茶 (green tea), 胡麻 (sesame) and a seasonal one. Flavoured soba is made by working matcha, sesame or citrus peel into the dough, and because those additions weaken it the dough generally needs MORE binder, not less — so the coloured noodles a menu presents as the refined choice are, if anything, the more wheat-bearing ones. Nothing here publishes a ratio either way. ⚠ AND ONE ITEM IS BOTH NOODLES AT ONCE: うどん蕎麦合盛 at ¥1,200 serves soba and UDON on the same tray, which removes any doubt about wheat being in the kitchen. ⚠ THE PLATES WORTH KNOWING ABOUT: 板わさ (¥1,200) is fish cake, which is a quiet wheat item; こんにゃく味噌田楽 (¥850) is konnyaku, a plant, under miso; アボカド山葵 (¥850) is avocado and wasabi and is the closest thing here to a clean plant dish; and 蕎麦がき at ¥2,000 is buckwheat paste rather than noodles, which is the one form of soba with no dusting flour on it — worth asking about even though the ratio question remains.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "四色（さらし・抹茶・胡麻・季節の変り蕎麦）",
+    "romaji": "yonshoku",
+    "en": "Four soba — plain, matcha, sesame and seasonal",
+    "price": "2,000円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ FLAVOURED SOBA IS NOT PURER SOBA. Matcha, sesame and seasonal doughs need extra binder to hold together, so these are if anything more wheat-bearing than the plain one, not less. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kawarisoba"
+   },
+   {
+    "ja": "さらし",
+    "romaji": "sarashi",
+    "en": "Sarashina soba",
+    "price": "1,300円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The white, refined-flour soba made from the centre of the buckwheat groat. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kawarisoba"
+   },
+   {
+    "ja": "茶そば",
+    "romaji": "chasoba",
+    "en": "Green tea soba",
+    "price": "1,400円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Matcha worked into the dough. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kawarisoba"
+   },
+   {
+    "ja": "胡麻切り",
+    "romaji": "gomakiri",
+    "en": "Sesame soba",
+    "price": "1,400円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sesame in the dough — worth noting as a SESAME allergen item as well. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kawarisoba"
+   },
+   {
+    "ja": "季節の変り蕎麦",
+    "romaji": "kisetsu no kawari soba",
+    "en": "Seasonal flavoured soba",
+    "price": "1,400円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Changes with the season; the flavouring is not published. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kawarisoba"
+   },
+   {
+    "ja": "せいろ",
+    "romaji": "seiro",
+    "en": "Seiro soba",
+    "price": "850円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain cold bowl and the cheapest soba here. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "海苔せいろ",
+    "romaji": "nori seiro",
+    "en": "Seiro with nori",
+    "price": "950円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seaweed on top; the nori itself is plant. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "うどん蕎麦合盛",
+    "romaji": "udon soba aimori",
+    "en": "Soba and udon together",
+    "price": "1,200円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ UDON IS WHEAT WITH NO AMBIGUITY, and this dish puts it on the same tray as the soba. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "鳥せいろ",
+    "romaji": "tori seiro",
+    "en": "Cold soba with hot chicken dip",
+    "price": "1,550円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken in a soy-based dipping broth. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "toriseiro"
+   },
+   {
+    "ja": "鳥天せいろ",
+    "romaji": "toriten seiro",
+    "en": "Cold soba with chicken tempura",
+    "price": "1,550円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "TEMPURA BATTER IS WHEAT. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "とろろそば",
+    "romaji": "tororo soba",
+    "en": "Cold soba with grated yam",
+    "price": "1,550円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Grated yam is plant; the tsuyu is not. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tororo"
+   },
+   {
+    "ja": "旬野菜天せいろ",
+    "romaji": "shun yasai ten seiro",
+    "en": "Cold soba with seasonal vegetable tempura",
+    "price": "2,000円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter around vegetables. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天せいろ",
+    "romaji": "ten seiro",
+    "en": "Cold soba with prawn tempura",
+    "price": "2,100円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "小柱天せいろ",
+    "romaji": "kobashira ten seiro",
+    "en": "Cold soba with Hokkaido scallop-adductor tempura",
+    "price": "2,700円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; Hokkaido kobashira. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "合盛・天せいろ",
+    "romaji": "aimori ten seiro",
+    "en": "Soba and udon with tempura",
+    "price": "2,650円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Both noodles and wheat batter. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "鴨せいろ",
+    "romaji": "kamo seiro",
+    "en": "Cold soba with hot duck dip",
+    "price": "2,400円",
+    "section": "冷たい蕎麦 Cold soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Domestic duck in a soy-based dip. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kamo"
+   },
+   {
+    "ja": "かけ",
+    "romaji": "kake",
+    "en": "Plain hot soba",
+    "price": "850円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The plain hot bowl; the broth is soy and dashi, which is a vegan fact and a wheat one. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "天麩羅",
+    "romaji": "tenpura soba",
+    "en": "Hot soba with tempura",
+    "price": "2,100円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天とじ",
+    "romaji": "tentoji",
+    "en": "Hot soba with tempura bound in egg",
+    "price": "2,300円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and egg. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "小柱天婦羅",
+    "romaji": "kobashira tenpura soba",
+    "en": "Hot soba with scallop tempura",
+    "price": "2,700円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "あられ",
+    "romaji": "arare",
+    "en": "Hot soba with scallop adductor",
+    "price": "3,000円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The most expensive soba here; Hokkaido kobashira. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "鴨南蛮",
+    "romaji": "kamo nanban",
+    "en": "Hot duck soba",
+    "price": "2,400円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Domestic duck in a soy broth. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kamo"
+   },
+   {
+    "ja": "鳥南蛮",
+    "romaji": "tori nanban",
+    "en": "Hot chicken soba",
+    "price": "1,550円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken and leek in a soy broth. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "toriseiro"
+   },
+   {
+    "ja": "海老天カレー",
+    "romaji": "ebiten karē soba",
+    "en": "Curry soba with prawn tempura",
+    "price": "2,200円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Japanese curry is a FLOUR ROUX, so this bowl is wheat in the noodle, the batter and the sauce. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "currysoba"
+   },
+   {
+    "ja": "カレー南蛮",
+    "romaji": "karē nanban",
+    "en": "Curry nanban soba",
+    "price": "1,550円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Flour roux in the curry. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "currysoba"
+   },
+   {
+    "ja": "親子南蛮",
+    "romaji": "oyako nanban",
+    "en": "Chicken and egg soba",
+    "price": "1,700円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken and egg in a soy broth. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "oyako"
+   },
+   {
+    "ja": "山かけ",
+    "romaji": "yamakake",
+    "en": "Hot soba with grated yam",
+    "price": "1,550円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Grated yam. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tororo"
+   },
+   {
+    "ja": "力",
+    "romaji": "chikara",
+    "en": "Hot soba with mochi",
+    "price": "1,550円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The 餅 is glutinous RICE and carries no wheat of its own — it is sitting in a wheat bowl. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "mochi"
+   },
+   {
+    "ja": "花巻き",
+    "romaji": "hanamaki",
+    "en": "Hot soba with nori",
+    "price": "1,600円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Sheets of nori over the bowl. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "あんかけ",
+    "romaji": "ankake",
+    "en": "Hot soba under thickened broth",
+    "price": "1,750円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "An あんかけ is a soy broth thickened with starch. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "ankake"
+   },
+   {
+    "ja": "おかめ",
+    "romaji": "okame",
+    "en": "Okame soba",
+    "price": "1,700円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The garnished bowl — normally kamaboko fish cake, which is itself often bulked with wheat starch. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "okame"
+   },
+   {
+    "ja": "かき玉",
+    "romaji": "kakitama",
+    "en": "Hot soba with egg-drop broth",
+    "price": "1,350円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tamago"
+   },
+   {
+    "ja": "玉子とじ",
+    "romaji": "tamagotoji",
+    "en": "Hot soba bound with egg",
+    "price": "1,350円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tamago"
+   },
+   {
+    "ja": "月見",
+    "romaji": "tsukimi",
+    "en": "Hot soba with raw egg",
+    "price": "1,350円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A raw EGG cracked on top. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tamago"
+   },
+   {
+    "ja": "むじな",
+    "romaji": "mujina",
+    "en": "Mujina soba",
+    "price": "1,600円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ むじな is kitsune AND tanuki together — sweet fried tofu plus 揚げ玉, which is loose FRIED TEMPURA BATTER. Wheat crumb in a wheat bowl. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tanuki"
+   },
+   {
+    "ja": "たぬき",
+    "romaji": "tanuki",
+    "en": "Tanuki soba",
+    "price": "1,200円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ たぬき means 揚げ玉 / 天かす — fried tempura batter crumb. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "tanuki"
+   },
+   {
+    "ja": "きつね",
+    "romaji": "kitsune",
+    "en": "Kitsune soba",
+    "price": "1,200円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The abura-age is simmered in soy and mirin. ⚠ Soba here is flagged against on the standing grounds: no ratio published, 二八 is the norm, 打ち粉 dusts the boards and every order shares one pot. The tsuyu is soy and dashi.",
+    "dish_key": "kitsune"
+   },
+   {
+    "ja": "釜揚げうどん",
+    "romaji": "kamaage udon",
+    "en": "Kamaage udon",
+    "price": "1,200円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "UDON IS WHEAT. Served in its cooking water, with a soy dip.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "海老天付き釜揚",
+    "romaji": "ebiten tsuki kamaage",
+    "en": "Kamaage udon with prawn tempura",
+    "price": "1,850円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle and wheat batter.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "鍋焼きうどん",
+    "romaji": "nabeyaki udon",
+    "en": "Nabeyaki udon",
+    "price": "2,650円",
+    "section": "温かい蕎麦 Hot soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat udon in a pot with tempura and egg.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "天丼",
+    "romaji": "tendon",
+    "en": "Tempura rice bowl",
+    "price": "2,100円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and a soy tare over rice.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "上天丼",
+    "romaji": "jō tendon",
+    "en": "Premium tempura rice bowl",
+    "price": "2,750円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "小柱天丼",
+    "romaji": "kobashira tendon",
+    "en": "Scallop tempura rice bowl",
+    "price": "2,700円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "旬野菜天丼",
+    "romaji": "shun yasai tendon",
+    "en": "Seasonal vegetable tempura bowl",
+    "price": "2,000円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "鳥天丼",
+    "romaji": "toriten don",
+    "en": "Chicken tempura bowl",
+    "price": "1,550円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "たぬき丼",
+    "romaji": "tanuki don",
+    "en": "Tanuki rice bowl",
+    "price": "1,450円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Fried tempura-batter crumb over rice.",
+    "dish_key": "tanuki"
+   },
+   {
+    "ja": "親子丼",
+    "romaji": "oyako don",
+    "en": "Chicken and egg rice bowl",
+    "price": "1,800円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NO NOODLE AND NO BATTER — chicken, egg and onion simmered over rice, which makes it the best-shaped bowl here for a coeliac. It is still simmered in a soy-and-dashi warishita, so it is a wheat dish by seasoning rather than by construction. Worth asking about.",
+    "dish_key": "oyako"
+   },
+   {
+    "ja": "玉子丼",
+    "romaji": "tamago don",
+    "en": "Egg rice bowl",
+    "price": "1,400円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg over rice in a soy-and-dashi broth.",
+    "dish_key": "tamago"
+   },
+   {
+    "ja": "カレー丼",
+    "romaji": "karē don",
+    "en": "Curry rice bowl",
+    "price": "1,500円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Japanese curry is a flour roux.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "とろろ丼",
+    "romaji": "tororo don",
+    "en": "Grated yam rice bowl",
+    "price": "1,500円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Grated yam over rice — plant, and the only bowl here with nothing animal named. The tororo is slackened with a soy-and-dashi tsuyu, which is both the wheat and the likely fish.",
+    "dish_key": "tororo"
+   },
+   {
+    "ja": "ライス",
+    "romaji": "raisu",
+    "en": "Rice",
+    "price": "400円",
+    "section": "丼・御膳 Rice bowls & sets",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice; small ¥250.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "鶏天",
+    "romaji": "toriten",
+    "en": "Chicken tempura",
+    "price": "1,200円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter, domestic chicken.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "山芋磯辺揚げ",
+    "romaji": "yamaimo isobe age",
+    "en": "Fried yam in nori",
+    "price": "1,200円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Yam and nori are both plant; 磯辺揚げ means it is battered and fried, and that batter is wheat.",
+    "dish_key": "isobeage"
+   },
+   {
+    "ja": "玉子焼き",
+    "romaji": "tamagoyaki",
+    "en": "Rolled omelette",
+    "price": "1,600円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A soba shop’s tamagoyaki is made with its own DASHI and かえし — so the omelette is soy-seasoned and fish-stocked, which is why it is not the plain egg dish it looks like.",
+    "dish_key": "dashimaki"
+   },
+   {
+    "ja": "鴨焼き",
+    "romaji": "kamo yaki",
+    "en": "Grilled duck",
+    "price": "2,300円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Domestic duck, grilled; the seasoning is not described.",
+    "dish_key": "kamo"
+   },
+   {
+    "ja": "田川の焼き鶏",
+    "romaji": "Tagawa no yakitori",
+    "en": "House yakitori in special tare",
+    "price": "1,200円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The menu says 特製タレ焼き — TARE-glazed rather than salt-grilled, and a yakitori tare is soy, mirin and sugar.",
+    "dish_key": "yakitori"
+   },
+   {
+    "ja": "板わさ",
+    "romaji": "itawasa",
+    "en": "Kamaboko with wasabi",
+    "price": "1,200円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SOBA-SHOP CLASSIC THAT IS A QUIET WHEAT ITEM: kamaboko is a steamed FISH CAKE, and Japanese surimi is routinely bulked with WHEAT STARCH. Eaten with soy.",
+    "dish_key": "kamaboko"
+   },
+   {
+    "ja": "鶏わさ",
+    "romaji": "toriwasa",
+    "en": "Lightly seared chicken with wasabi",
+    "price": "1,400円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken; eaten with soy sauce.",
+    "dish_key": "toriwasa"
+   },
+   {
+    "ja": "アボカド山葵",
+    "romaji": "abokado wasabi",
+    "en": "Avocado with wasabi",
+    "price": "850円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ THE CLOSEST THING TO A CLEAN PLANT PLATE HERE: avocado and grated wasabi, nothing else named. The gluten flag is against only because it is eaten with soy sauce — ask for salt and it clears both.",
+    "dish_key": "avocado"
+   },
+   {
+    "ja": "親子煮",
+    "romaji": "oyako ni",
+    "en": "Chicken and egg simmered, on a hot plate",
+    "price": "1,300円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken and egg in a soy-and-dashi broth.",
+    "dish_key": "oyako"
+   },
+   {
+    "ja": "そば味噌と漬け海苔",
+    "romaji": "sobamiso to tsuke nori",
+    "en": "Soba miso with pickled nori",
+    "price": "1,100円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ そば味噌 is buckwheat groats roasted into MISO — plant in itself, and miso koji is sometimes barley, which is never declared. The nori is plant.",
+    "dish_key": "sobamiso"
+   },
+   {
+    "ja": "しらすおろし",
+    "romaji": "shirasu oroshi",
+    "en": "Whitebait with grated daikon",
+    "price": "850円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "しらす are whole baby FISH; the daikon is plant and the dressing is soy.",
+    "dish_key": "shirasu"
+   },
+   {
+    "ja": "月見返し",
+    "romaji": "tsukimi gaeshi",
+    "en": "Egg yolk cured in kaeshi",
+    "price": "1,100円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop’s own description: a yolk steeped in 返し汁 — KAESHI, the concentrated soy base a soba shop builds its tsuyu from. Egg in soy.",
+    "dish_key": "tsukimigaeshi"
+   },
+   {
+    "ja": "こんにゃく味噌田楽",
+    "romaji": "konnyaku miso dengaku",
+    "en": "Konnyaku with miso",
+    "price": "850円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Konnyaku is konjac yam — plant, and one of the few genuinely plant items here. The dengaku miso spread on it is the gluten-or-barley question.",
+    "dish_key": "dengaku"
+   },
+   {
+    "ja": "きつねさん",
+    "romaji": "kitsune-san",
+    "en": "House-made simmered fried tofu",
+    "price": "850円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Abura-age simmered in soy and mirin — plant in substance, and the simmering liquid is the wheat and possibly the dashi.",
+    "dish_key": "kitsune"
+   },
+   {
+    "ja": "上新香",
+    "romaji": "jō shinko",
+    "en": "Pickles from a fifty-year nuka bed",
+    "price": "850円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ A REAL PLANT PLATE AND AN UNUSUAL ONE: vegetables from a 50-year-old rice-bran (ぬか) bed. Nuka is rice bran, not wheat, so a true nukazuke has no wheat route — the flag is an ask only because pickling beds are often adjusted with soy or sake lees.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "天吸い",
+    "romaji": "tensui",
+    "en": "Tempura clear soup",
+    "price": "1,700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tempura in a dashi broth — wheat batter and bonito.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "鍋吸い",
+    "romaji": "nabesui",
+    "en": "Hot-pot clear soup",
+    "price": "2,300円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A dashi-based clear soup.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "蕎麦がき",
+    "romaji": "sobagaki",
+    "en": "Sobagaki — buckwheat paste",
+    "price": "2,000円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONE FORM OF SOBA WORTH ASKING ABOUT. 蕎麦がき is buckwheat flour stirred with hot water into a paste — NOT rolled, NOT cut, so there is no 打ち粉 dusting flour and no shared boiling pot in the way there is with noodles. If the shop makes it from pure buckwheat this is the closest a soba house comes to a safe dish, and it is the question this record most wants answered. It is eaten with soy or with the shop’s soba miso, either of which reintroduces wheat.",
+    "dish_key": "sobagaki"
+   },
+   {
+    "ja": "生卵",
+    "romaji": "nama tamago",
+    "en": "Raw egg",
+    "price": "150円",
+    "section": "一品 Small plates",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "A side egg; the cheapest item on the menu.",
+    "dish_key": "egg"
+   },
+   {
+    "ja": "揚げ餅",
+    "romaji": "agemochi",
+    "en": "Fried mochi",
+    "price": "250円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Glutinous RICE mochi, fried — no wheat in the mochi itself; the frying oil and any soy glaze are the questions.",
+    "dish_key": "mochi"
+   },
+   {
+    "ja": "ビール 生 一番搾り",
+    "romaji": "nama bīru Ichiban Shibori",
+    "en": "Kirin Ichiban Shibori draught",
+    "price": "750円",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "BEER IS BARLEY MALT. A small draught is ¥650.",
+    "dish_key": "beer"
    }
   ]
  }

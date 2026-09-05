@@ -1,0 +1,101 @@
+{
+ "tokyo_kyoeido": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.kyoueidoo.com/"
+  ],
+  "price_note": "⚠ THE MOST USEFUL SINGLE SENTENCE FOUND IN THIS ENTIRE DATASET, AND THE SHOP VOLUNTEERS IT: 「当店独特の濃褐色のソースは、小麦粉を一切使わず、20数種類の香辛料を1時間かけてじっくり炒めて作ります」 — the curry sauce uses NO WHEAT FLOUR AT ALL, none, and is built instead on twenty-odd spices fried for an hour and vegetables cooked down until they disappear. Japanese curry is the most reliable wheat trap in the country because カレールー is a flour-and-fat roux sold as a brick; this 1924 shop makes its curry the Indonesian way and says so on its own site, unprompted, as a point of pride about texture rather than as an allergen claim. That is a first-party statement about the exact ingredient a coeliac needs, and it makes the four plain curries here the best hot main in the Tokyo set. ⚠ AND THE SAME PAGE, THREE LINES LOWER, TAKES IT BACK FOR THE REST OF THE PLATE. Under Soup: 「野菜と小麦を数回オーブンにかけルーを作り、コーン・生クリームを合わせた」 — the soup that accompanies the curry is a ROUX made from vegetables and WHEAT, finished with cream. So the shop removes flour from the thing everyone assumes has it, and puts flour into the thing nobody thinks to ask about. Order the curry, refuse the soup. ⚠ TWO ITEMS RE-INTRODUCE THE FLOUR BY A DIFFERENT DOOR: タンカレー has デミグラスソース added to the curry sauce, and ハヤシライス is built on the shop’s 特製デミグラスソース outright. A demi-glace is a browned flour roux by definition and the shop makes no flour-free claim for it — so of six mains, four are on the flour-free sauce and two are not. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. 神田神保町; 11:00–20:00 (L.O. 19:45), closed Sundays and public holidays; founded 大正13年 (1924), the recipe learned from 伊藤友治郎 and adapted to Japanese taste. Rice is 国産コシヒカリ.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "ポークカレー",
+    "romaji": "pōku karē",
+    "en": "Pork curry",
+    "price": "普通盛 1300円 / ソース大盛 1600円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE DISH TO ORDER, AND THE REASON IS ON THE SHOP’S OWN PAGE: the curry sauce is made 小麦粉を一切使わず — with no wheat flour whatsoever — which is the opposite of how Japanese curry is normally built. The flag is \"ask\" rather than \"gf\" only because no allergen statement covers the whole plate (the soup beside it is a wheat roux) and nothing is published about the bouillon. Pork and vegetable stock, so not vegan. The cheapest main.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "ビーフカレー",
+    "romaji": "bīfu karē",
+    "en": "Beef curry",
+    "price": "普通盛 1700円 / ソース大盛 2000円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef bouillon and RED WINE in the sauce, on the same flour-free curry base.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "チキンカレー",
+    "romaji": "chikin karē",
+    "en": "Chicken curry",
+    "price": "普通盛 1500円 / ソース大盛 1800円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken and vegetable bouillon; the shop describes it as the lighter one.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "エビカレー",
+    "romaji": "ebi karē",
+    "en": "Prawn curry",
+    "price": "普通盛 1600円 / ソース大盛 1900円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Prawns flambéed in WHITE WINE and BUTTER — so dairy as well as shellfish, on the flour-free base.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "タンカレー",
+    "romaji": "tan karē",
+    "en": "Beef tongue curry",
+    "price": "普通盛 2200円 / ソース大盛 2500円",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE EXCEPTION ON THE CURRY LIST. Beef tongue simmered four hours — and the shop states DEMI-GLACE is added to this one. A demi-glace is thickened with a browned FLOUR roux, so the dish that sounds the most luxurious is the one that puts the wheat back into a curry the kitchen deliberately made without it.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "ハヤシライス",
+    "romaji": "hayashi raisu",
+    "en": "Hayashi rice",
+    "price": "普通盛 1700円 / ソース大盛 2000円",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ BUILT ON DEMI-GLACE, NOT ON THE CURRY SAUCE — the shop says so: 手間と時間がかかった共栄堂特製のデミグラスソースからできる. Flour roux. Limited to 15 servings a day.",
+    "dish_key": "hayashi"
+   },
+   {
+    "ja": "スープ",
+    "romaji": "sūpu",
+    "en": "Corn and vegetable potage",
+    "price": "",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE TRAP, IN THE SHOP’S OWN WORDS: 「野菜と小麦を数回オーブンにかけルーを作り、コーン・生クリームを合わせた」 — vegetables and WHEAT baked into a roux, then corn and CREAM. The one component of this meal that is made of flour is the one served alongside a curry that is not. No price is published for it separately.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "焼きりんご",
+    "romaji": "yaki ringo",
+    "en": "Baked apple with cream — winter only",
+    "price": "700円",
+    "section": "デザート Dessert",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "A whole apple baked and served with cream — fruit and dairy, no flour, no pastry. About thirty a day, October to early May, and the shop asks that it not be ordered on its own.",
+    "dish_key": "bakedapple"
+   }
+  ]
+ }
+}

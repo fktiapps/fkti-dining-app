@@ -1,0 +1,80 @@
+{
+ "tokyo_kaminarimon_sansada_sans": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "http://tempura-sansada.co.jp/",
+   "http://tempura-sansada.co.jp/menu.html"
+  ],
+  "price_note": "Six tempura dishes with prices from the shop’s own menu page; the page describes the contents of each but does not extend to rice bowls, sides or drinks, so this is the tempura board rather than the whole menu. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THE ONE THING THIS SHOP SAYS THAT CHANGES A DIET ANSWER IS ABOUT THE OIL, NOT THE FLOUR: 「胡麻油で揚げる伝統を今に伝える」 — it fries in SESAME OIL, in the old Edo style. That matters twice over. For a coeliac it changes nothing at all: the batter is still wheat flour and the tentsuyu is still soy and dashi, so the whole board is closed. But SESAME is one of Japan’s designated allergens in its own right, and a shop that fries everything in sesame oil is a hazard for a sesame allergy that no dish name would reveal — worth recording because this dataset’s users travel with more than one restriction. ⚠ THERE IS NOTHING HERE FOR EITHER DIET. Every item is battered; 季節の野菜天ぷら at ¥1,940 is six seasonal vegetables and is vegetarian in filling and wheat in coating, which is the same near-miss the vegetable tempura at every other shop in this set produces. ⚠ ONE PRACTICAL NOTE: the 大かき揚 at ¥8,000 is offered but the shop warns 混雑時はお受け出来ない場合もございます — it may be refused at busy times.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "上天ぷら",
+    "romaji": "jō tenpura",
+    "en": "Premium tempura — 2 prawns, small kakiage, vegetables",
+    "price": "3,610円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "TEMPURA BATTER IS WHEAT FLOUR. Fried in SESAME OIL, which is a separate declared allergen. Contents as the shop lists them: two prawns, a small kakiage and vegetables.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天ぷら",
+    "romaji": "tenpura",
+    "en": "Tempura — prawn, small kakiage, white fish",
+    "price": "2,500円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The standard plate and the cheapest here. Wheat batter, sesame oil.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "旬の天ぷら盛り合わせ",
+    "romaji": "shun no tenpura moriawase",
+    "en": "Seasonal tempura assortment",
+    "price": "4,360円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Prawn, vegetables and seafood; the shop notes the contents change with the season.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "季節の野菜天ぷら",
+    "romaji": "kisetsu no yasai tenpura",
+    "en": "Seasonal vegetable tempura — six kinds",
+    "price": "1,940円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE NEAR-MISS THIS DATASET KEEPS MEETING: six seasonal vegetables, so the filling is plant — and the coating is WHEAT and the tentsuyu is soy and dashi. Vegetarian in substance, closed on both diets in practice.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "中かき揚",
+    "romaji": "chū kakiage",
+    "en": "Medium kakiage — prawn, squid, scallop adductor",
+    "price": "3,610円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A kakiage binds its seafood in WHEAT BATTER. The shop also offers a 大かき揚 at ¥8,000 but warns it may not be available when busy.",
+    "dish_key": "kakiage"
+   },
+   {
+    "ja": "えび天ぷら",
+    "romaji": "ebi tenpura",
+    "en": "Prawn tempura",
+    "price": "4,530円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Prawn in wheat batter, sesame oil.",
+    "dish_key": "tempura"
+   }
+  ]
+ }
+}

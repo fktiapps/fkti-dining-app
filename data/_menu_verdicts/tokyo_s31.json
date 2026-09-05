@@ -1,0 +1,333 @@
+{
+ "tokyo_daikokuya_tempura": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "http://www.tempura.co.jp/",
+   "http://www.tempura.co.jp/menu/index.html"
+  ],
+  "price_note": "Full menu with prices from the shop’s own おしながき page; the site states 消費税は表示価格に含まれております, tax included. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THIS IS A TEMPURA HOUSE AND THERE IS NOTHING HERE FOR A COELIAC ON THE MAIN BOARD — every tendon and every tempura plate is wheat batter, and the tare poured over a Daikokuya tendon is soy, mirin and sugar. That is said plainly rather than worked around. ⚠ WHAT IS WORTH RECORDING IS THE SIDE BOARD, because an old Asakusa tempura shop keeps a proper 一品 list and several of those plates have no flour in them at all: さしみ ¥2,400, あじのたたき ¥900, 胡瓜もみ ¥700, おろし和え ¥700 and なめたけおろし和え ¥500 are constructed without batter. All are eaten with soy sauce, which is where the wheat sits, and all but the cucumber are fish. 茄子のしぎやき at ¥800 is aubergine in miso — the one plate here that is plant in substance. ⚠ AND ONE PORTION NOTE THAT MATTERS FOR A GROUP: 御飯 is ¥250 and お吸物 ¥350, so a person who cannot eat tempura can sit down to rice, soup and pickles for well under ¥1,000 while the table has tendon. The soup is a dashi, so it is bonito.",
+  "last_checked": "2026-09-05",
+  "items": [
+   {
+    "ja": "天丼（えび1、きす1、かき揚げ1）",
+    "romaji": "tendon",
+    "en": "Tendon — 1 prawn, 1 whiting, 1 kakiage",
+    "price": "2,300円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TEMPURA BATTER IS WHEAT FLOUR, and a Daikokuya tendon is finished with a dark sesame-oil-fried tempura under a soy tare. Wheat in the coating and the sauce.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天丼（えび2、かき揚げ1）",
+    "romaji": "tendon (ebi 2)",
+    "en": "Tendon — 2 prawns, 1 kakiage",
+    "price": "2,500円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and soy tare.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "海老天丼（えび4）",
+    "romaji": "ebi tendon",
+    "en": "Prawn tendon — 4 prawns",
+    "price": "2,700円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter and soy tare.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天麩羅（えび3、きす1）",
+    "romaji": "tenpura",
+    "en": "Tempura — 3 prawns, 1 whiting",
+    "price": "2,450円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; the tentsuyu is soy and dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天麩羅（えび3、かき揚げ1）",
+    "romaji": "tenpura (kakiage)",
+    "en": "Tempura — 3 prawns, 1 kakiage",
+    "price": "2,550円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "海老天麩羅（えび4）",
+    "romaji": "ebi tenpura",
+    "en": "Prawn tempura — 4 prawns",
+    "price": "2,700円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "天丼定食（天丼、吸物、小鉢）",
+    "romaji": "tendon teishoku",
+    "en": "Tendon set with soup and small dish",
+    "price": "2,900円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; the soup is a dashi.",
+    "dish_key": "tendon"
+   },
+   {
+    "ja": "天麩羅定食（天麩羅、御飯、吸物、小鉢）",
+    "romaji": "tenpura teishoku",
+    "en": "Tempura set with rice, soup and small dish",
+    "price": "2,900円",
+    "section": "天丼・天麩羅 Tendon & tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter; the soup is a dashi.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "御飯",
+    "romaji": "gohan",
+    "en": "Rice",
+    "price": "250円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ THE CHEAPEST THING HERE AND THE ONLY ONE THAT CLEARS BOTH DIETS OUTRIGHT: plain steamed rice, ¥250. Worth knowing if you are sitting with people eating tendon.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "お吸物",
+    "romaji": "osuimono",
+    "en": "Clear soup",
+    "price": "350円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A clear soup is a DASHI — bonito, so fish — and normally seasoned with 白だし or light soy.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "かき玉わん",
+    "romaji": "kakitama wan",
+    "en": "Egg-drop soup",
+    "price": "350円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dashi with egg.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "新香",
+    "romaji": "shinko",
+    "en": "Pickles",
+    "price": "500円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Japanese pickles — plant. The gluten flag is an ask because pickling liquids are frequently soy- or dashi-based.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "楽京",
+    "romaji": "rakkyō",
+    "en": "Pickled rakkyo shallots",
+    "price": "450円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Shallots in a sweet vinegar pickle — plant, and one of the few side plates with no fish and no batter.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "べったら漬け",
+    "romaji": "bettarazuke",
+    "en": "Bettara pickled daikon",
+    "price": "650円",
+    "section": "御飯・汁・香の物 Rice, soup & pickles",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Daikon cured in rice KOJI and sugar — a Tokyo speciality, rice-based rather than soy-based, which makes it a better prospect than most Japanese pickles.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "さしみ",
+    "romaji": "sashimi",
+    "en": "Sashimi",
+    "price": "2,400円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw fish, and the most expensive side plate. No wheat in the fish — the soy sauce is the wheat, so bring tamari.",
+    "dish_key": "sashimi"
+   },
+   {
+    "ja": "ぬた",
+    "romaji": "nuta",
+    "en": "Nuta — seafood and spring onion in vinegared miso",
+    "price": "1,200円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dressed in 酢味噌, vinegared MISO, whose koji is sometimes barley. Normally contains fish or shellfish.",
+    "dish_key": "nuta"
+   },
+   {
+    "ja": "あじのたたき",
+    "romaji": "aji no tataki",
+    "en": "Chopped horse mackerel",
+    "price": "900円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw fish chopped with spring onion and ginger — no batter, and eaten with soy.",
+    "dish_key": "aji"
+   },
+   {
+    "ja": "あじの酢の物",
+    "romaji": "aji no sunomono",
+    "en": "Vinegared horse mackerel",
+    "price": "900円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A 酢の物 dressing is 三杯酢 — vinegar, sugar and SOY, usually with dashi.",
+    "dish_key": "sunomono"
+   },
+   {
+    "ja": "玉子焼",
+    "romaji": "tamagoyaki",
+    "en": "Rolled omelette",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg. A tempura shop’s tamagoyaki is normally made with dashi, which would make it fish as well.",
+    "dish_key": "dashimaki"
+   },
+   {
+    "ja": "茄子のしぎやき",
+    "romaji": "nasu no shigiyaki",
+    "en": "Aubergine with miso",
+    "price": "800円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE ONE PLATE HERE THAT IS PLANT IN SUBSTANCE: aubergine fried and spread with miso. The miso is the gluten-or-barley question, and shigiyaki miso often carries mirin and dashi.",
+    "dish_key": "nasu"
+   },
+   {
+    "ja": "胡瓜もみ",
+    "romaji": "kyūri momi",
+    "en": "Salted cucumber",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Cucumber salted and squeezed — about as short an ingredient list as a Japanese side gets, and plant. The dressing is normally a vinegar one, occasionally with soy.",
+    "dish_key": "cucumber"
+   },
+   {
+    "ja": "くらげの酢の物",
+    "romaji": "kurage no sunomono",
+    "en": "Vinegared jellyfish",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Jellyfish is animal; the dressing is soy-based.",
+    "dish_key": "kurage"
+   },
+   {
+    "ja": "おろし和え",
+    "romaji": "oroshi ae",
+    "en": "Grated daikon salad",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Grated daikon — plant — dressed, and a Japanese 和え dressing is soy and often dashi.",
+    "dish_key": "oroshi"
+   },
+   {
+    "ja": "板わさ",
+    "romaji": "itawasa",
+    "en": "Kamaboko with wasabi",
+    "price": "700円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kamaboko is a steamed FISH CAKE routinely bulked with WHEAT STARCH — a quiet wheat item that reads as plain fish.",
+    "dish_key": "kamaboko"
+   },
+   {
+    "ja": "なめたけおろし和え",
+    "romaji": "nametake oroshi ae",
+    "en": "Enoki and grated daikon",
+    "price": "500円",
+    "section": "一品 Small plates",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Enoki mushrooms and daikon, both plant — but なめたけ in Japan usually means the bottled enoki preserve simmered in SOY SAUCE and mirin, which is the wheat.",
+    "dish_key": "nametake"
+   },
+   {
+    "ja": "特級酒（キンシ正宗）",
+    "romaji": "tokkyūshu (Kinshi Masamune)",
+    "en": "Kinshi Masamune premium sake",
+    "price": "800円",
+    "section": "お酒 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Sake is rice, water and koji; the coeliac caveat is only that koji is occasionally grown on barley.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "地酒（飛騨高山鬼ごろし）",
+    "romaji": "jizake (Hida Takayama Onigoroshi)",
+    "en": "Hida Takayama Onigoroshi sake",
+    "price": "800円",
+    "section": "お酒 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Rice sake.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "冷酒（澤乃井）",
+    "romaji": "reishu (Sawanoi)",
+    "en": "Sawanoi chilled sake",
+    "price": "1,500円",
+    "section": "お酒 Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Rice sake, from Tokyo’s own Ome brewery.",
+    "dish_key": "sake"
+   },
+   {
+    "ja": "生ビール",
+    "romaji": "nama bīru",
+    "en": "Draught beer",
+    "price": "800円",
+    "section": "お酒 Drinks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "BEER IS BARLEY MALT. A small draught is ¥650.",
+    "dish_key": "beer"
+   }
+  ]
+ }
+}
