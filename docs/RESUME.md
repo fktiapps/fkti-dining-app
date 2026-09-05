@@ -1,3 +1,27 @@
+# Resume here — updated 2026-09-05T00:44Z, grinder run (30th consecutive blocked run for THIS session)
+
+## Exact Tokyo menu state, 2026-09-05T00:44Z UTC (computed from data, not agent-status.mjs)
+579 visible Tokyo records, 238 with an inline menu (41.1%), gap 341 — UNCHANGED
+from the last grinder entry (2026-09-04T16:42Z). This run's own Step 1 found 0
+NEW Tokyo verdicts; only diff was a 1-copy soy-meat banner net-zero re-strip.
+Curl probe to tabelog.com: `000` (connect_rejected) — 30th consecutive block
+for this session, Step 2 skipped per the standing instruction. See
+docs/GRINDER-LOG.md for this run's entry.
+
+**Verdict-file research status (19 started shards, s0-s18):** FULLY
+RESEARCHED (0 unresearched ids): s0-s17 — 18 of 19. STILL PARTIAL:
+**s18 3 left (`tokyo_obanzai_miyuu_aji_yuu`, `tokyo_nitenmon_yabu`,
+`tokyo_shuzo`)** — unchanged since the last entry. Unstarted shards
+(s19-s38, 20 shards) missing 285 records (computed exactly from shard
+contents vs. tokyo_menus.json, not agent-status.mjs). 3+285=288 vs the
+341 gap (53 residual from hidden/dedup edge cases, not worth chasing —
+same pattern every run).
+
+**Next dispatch once egress is unblocked (this session's own probe is still
+`000`, 30th consecutive run): s18 (3 left, already started) — then start s19
+(lowest-numbered unstarted shard).**
+
+---
 # Resume here — updated 2026-09-04T16:42Z, grinder run (29th consecutive blocked run for THIS session)
 
 ## Exact Tokyo menu state, 2026-09-04T16:42Z UTC (computed from data, not agent-status.mjs)
