@@ -615,5 +615,149 @@
     "dish_key": "mazesoba"
    }
   ]
+ },
+ "tokyo_ramen_jiro_shinjuku_kabu": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://ramen-jiro-pc3.com/en/kabuki/",
+   "https://ramen-jiro-pc3.com/kabuki/"
+  ],
+  "price_note": "PARTIAL BY NATURE OF THE SUBJECT: Ramen Jiro branches do not run their own websites, and the URL carried in this dataset is ラーメン二郎 PC店Ⅲ, a Jiro-documentation site that catalogues the branches — not the shop's own page. It is recorded as partial for that reason, not because the numbers are shaky: the site publishes the Kabukicho board in Japanese and English on two separate pages and the two agree item-for-item and yen-for-yen, which is the strongest cross-check available for a shop of this kind. Address 東京都新宿区歌舞伎町2-37-5, 11:30-02:30, closed Wednesdays (the site adds 営業する日も有り — it sometimes opens anyway). ⚠ THERE IS NOTHING HERE FOR A COELIAC AND THAT IS NOT A GAP IN THE RESEARCH, IT IS THE DISH. Jiro is a wheat-noodle form: the noodles are thick 極太 wheat with かん水, the tare is soy, and the broth is pork back-fat and bone. Every bowl on the board is wheat by construction and there is no rice, no side and no non-noodle item to fall back on — the entire menu is eight noodle bowls and four toppings. ⚠ AND THE FREE CALL SYSTEM DOES NOT HELP EITHER, WHICH IS THE ONE THING WORTH KNOWING. Jiro's famous no-charge コール at the counter — ニンニク／ヤサイ／アブラ／カラメ, garlic, vegetables, back-fat, extra tare — reads like a way to customise around an ingredient, and it is not: ヤサイ is boiled beansprouts and cabbage piled on the same wheat noodles in the same bowl, and カラメ means MORE of the soy tare, i.e. more wheat. The calls change the mountain, never the base. ⚠ ONE VEGAN-ADJACENT TRAP ON THE TOPPING LIST: 生とじ卵 is a raw egg served with 魚粉, bonito powder — a fish product sitting in what looks like a plain egg topping.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "ラーメン",
+    "romaji": "Ramen",
+    "en": "Ramen",
+    "price": "850yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Thick wheat noodles, soy tare, pork back-fat and bone broth.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "ブタ入り",
+    "romaji": "Buta-iri",
+    "en": "Ramen with extra char-siu pork",
+    "price": "950yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chashu_ramen"
+   },
+   {
+    "ja": "ブタW",
+    "romaji": "Buta W",
+    "en": "Ramen with double extra char-siu pork",
+    "price": "1050yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chashu_ramen"
+   },
+   {
+    "ja": "大ラーメン",
+    "romaji": "Dai ramen",
+    "en": "Large ramen",
+    "price": "950yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_oomori"
+   },
+   {
+    "ja": "大ブタ入り",
+    "romaji": "Dai buta-iri",
+    "en": "Large ramen with extra char-siu pork",
+    "price": "1050yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chashu_ramen_oomori"
+   },
+   {
+    "ja": "大ブタW",
+    "romaji": "Dai buta W",
+    "en": "Large ramen with double extra char-siu pork",
+    "price": "1150yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chashu_ramen_oomori"
+   },
+   {
+    "ja": "つけめん",
+    "romaji": "Tsukemen",
+    "en": "Dipping noodles",
+    "price": "950yen",
+    "section": "つけめん",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The site notes the dipping soup comes with menma, nori and 魚粉 fish powder as standard.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "大つけめん",
+    "romaji": "Dai tsukemen",
+    "en": "Large dipping noodles",
+    "price": "1050yen",
+    "section": "つけめん",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen_oomori"
+   },
+   {
+    "ja": "味玉子",
+    "romaji": "Ajitamago",
+    "en": "Seasoned boiled egg",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ajitama is marinated in a soy-based liquid; treat as wheat unless the shop says otherwise.",
+    "dish_key": "ajitama_topping"
+   },
+   {
+    "ja": "生とじ卵",
+    "romaji": "Namatoji tamago",
+    "en": "Raw egg with bonito powder and seaweed",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Contains 魚粉 bonito powder — a fish product inside what looks like a plain egg topping. Bonito powders are frequently cut with soy.",
+    "dish_key": "raw_egg"
+   },
+   {
+    "ja": "メンマ",
+    "romaji": "Menma",
+    "en": "Bamboo shoots",
+    "price": "150yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Menma is usually simmered in a soy-and-dashi seasoning; the shop does not state its recipe.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "ぶた増し券（つけめん用）",
+    "romaji": "Buta mashi ken (tsukemen yo)",
+    "en": "Extra char-siu pork ticket, for tsukemen",
+    "price": "150yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chashu_topping"
+   }
+  ]
  }
 }

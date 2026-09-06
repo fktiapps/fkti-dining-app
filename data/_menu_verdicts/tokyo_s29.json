@@ -1,0 +1,113 @@
+{
+ "tokyo_dontatsu_suidobashi_pork": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://dontatsu.com/",
+   "https://dontatsu.com/menu.php"
+  ],
+  "price_note": "The shop publishes its whole card on one page and it is short: five bowls and a challenge. Rice is oversized by default — 「丼達のご飯は並でも大盛りサイズ」 — and the shop will make a 小盛り for 50円 off if you ask, which is worth knowing because this is a 大食い (competitive-eating) landmark near Tokyo Dome and the standard portion is not standard. Toppings are ordered in the shop rather than listed with prices; the shop names 生たまご, バター and 温玉 as the usual ones. ⚠ THE ENTIRE SAVOURY CARD IS SOY-BASED AND THAT IS THE WHOLE COELIAC STORY HERE. Each pork bowl is sold with a choice of four sauces — てりやきにんにく, てりやきしょうが, 醤油ピリ辛 and 塩しょうが — and three of the four are named for soy: teriyaki is soy, mirin and sugar, and 醤油ピリ辛 is soy by definition. Japanese soy sauce is wheat-brewed unless it is declared tamari, and the shop declares nothing. ⚠ THE ONE INTERESTING LINE IS 塩しょうが, THE SALT-AND-GINGER SAUCE. A salt-ginger dressing is the only one of the four whose name does not contain soy, and the same idea appears again in ねぎ塩豚丼 at 850円, a spring-onion-and-salt bowl. On a card where everything else is teriyaki, a shio-based sauce is the one thing worth asking about — but it is recorded ask rather than gf, because Japanese 塩だれ is very often built on a base that still includes soy or dashi, and the shop publishes no ingredients at all. ⚠ 丼達カレー at 920円 is a flat no regardless: Japanese curry is thickened with a wheat-flour roux. And 鶏そぼろ丼 is minced chicken simmered in soy. ⚠ FOR A VEGAN THERE IS NOTHING HERE — five bowls, all pork, chicken or a meat curry, with no vegetable option printed.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "豚丼",
+    "romaji": "Butadon",
+    "en": "Pork bowl with pork and spring onion; choice of teriyaki garlic, teriyaki ginger, spicy soy or salt ginger sauce",
+    "price": "800yen",
+    "section": "丼",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Three of the four sauce choices are named for soy sauce. Ask about 塩しょうが if you need the least-soy option.",
+    "dish_key": "butadon"
+   },
+   {
+    "ja": "スタミナ丼",
+    "romaji": "Sutamina don",
+    "en": "Stamina bowl: pork, spring onion, cabbage and beansprouts, same four sauces",
+    "price": "850yen",
+    "section": "丼",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "stamina_don"
+   },
+   {
+    "ja": "鶏そぼろ丼",
+    "romaji": "Tori soboro don",
+    "en": "Minced chicken bowl",
+    "price": "800yen",
+    "section": "丼",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soboro is simmered in soy and mirin.",
+    "dish_key": "soboro_don"
+   },
+   {
+    "ja": "ねぎ塩豚丼",
+    "romaji": "Negi shio butadon",
+    "en": "Spring onion and salt pork bowl",
+    "price": "850yen",
+    "section": "丼",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The one bowl built on a salt sauce rather than a soy one — worth asking about, though Japanese 塩だれ often still contains soy or dashi.",
+    "dish_key": "negishio_butadon"
+   },
+   {
+    "ja": "丼達カレー",
+    "romaji": "Dontatsu kare",
+    "en": "Dontatsu curry",
+    "price": "920yen",
+    "section": "丼",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Japanese curry is thickened with a wheat-flour roux.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "大魔神",
+    "romaji": "Daimajin",
+    "en": "Daimajin challenge bowl, available from 14:00; finish within 30 minutes for a free-bowl voucher on a first attempt",
+    "price": "",
+    "section": "チャレンジメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop does not print a price for the challenge bowl on this page.",
+    "dish_key": "challenge_don"
+   },
+   {
+    "ja": "生たまご",
+    "romaji": "Nama tamago",
+    "en": "Raw egg topping",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Toppings are ordered in the shop; no prices are published.",
+    "dish_key": "raw_egg"
+   },
+   {
+    "ja": "温玉",
+    "romaji": "Ontama",
+    "en": "Soft-poached egg topping",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "onsen_tamago"
+   },
+   {
+    "ja": "バター",
+    "romaji": "Bata",
+    "en": "Butter topping",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "butter_topping"
+   }
+  ]
+ }
+}
