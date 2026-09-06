@@ -3402,5 +3402,159 @@
     "dish_key": "highball"
    }
   ]
+ },
+ "tokyo_vejiro_shibuya_sohonten_": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.foodsupply.co.jp/vejiro/"
+  ],
+  "price_note": "NO PRICES ARE PUBLISHED ANYWHERE FIRST-PARTY, so every line below is unpriced — and the reason is that the only page the operator maintains for ベジ郎 is a FRANCHISE RECRUITMENT page, not a shop page. The 21 figures on it are joining fees and fit-out costs, not dish prices; they are deliberately NOT recorded here. What the page does give, and gives precisely, is the brand’s whole menu structure in FoodSupply’s own words, which is worth having: 野菜炒め and 肉野菜炒め each in 醤油 / ぽん酢 / 味噌; meat upgrades 中盛 100g, 大盛 150g, 特盛 200g; 定食 = the stir-fry plus rice and soup; vegetable quantity 少なめ 300g, 普通 400g, マシ 500g, マシマシ 600g; back fat 中油 20g, 大油 40g, 鬼油 80g, or なし; toppings coriander or butter; drinks Kirin Ichiban Shibori draught, Hon-shibori lemon, black oolong tea. It also names 3 regional extras (あんかけ揚げ餃子, ニラチャーハン, 玉子チャーハン) as EXAMPLES of what a franchisee might develop — those are NOT recorded as sold at the 渋谷総本店. FoodSupply is a vegetable wholesaler supplying about 5,000 restaurants, and the concept is one shop eating 200 kg of vegetables a day against a 20 kg industry average; the stir-fry is 400 g of vegetables with back fat. ⚠ ALL THREE SAUCES FAIL A COELIAC AND ONE OF THEM LOOKS LIKE IT SHOULD NOT: 醤油 is wheat outright, 味噌 is usually blended with soy sauce or mirin in a stir-fry seasoning, and ぽん酢 — the one people reach for as the light option — IS SOY SAUCE with citrus in it. There is no plain-salt option on the published matrix. No allergen information is published at all.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "野菜炒め（醤油）",
+    "romaji": "Yasai itame shoyu",
+    "en": "Vegetable stir-fry, soy seasoning",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Soy sauce is wheat. Back fat is the default unless なし is ordered, which would also make it non-vegan.",
+    "dish_key": "yasai_itame"
+   },
+   {
+    "ja": "野菜炒め（ぽん酢）",
+    "romaji": "Yasai itame ponzu",
+    "en": "Vegetable stir-fry, ponzu seasoning",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Ponzu is citrus PLUS soy sauce, and usually katsuo dashi as well — not the light option it looks like.",
+    "dish_key": "yasai_itame"
+   },
+   {
+    "ja": "野菜炒め（味噌）",
+    "romaji": "Yasai itame miso",
+    "en": "Vegetable stir-fry, miso seasoning",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Stir-fry miso seasonings are normally cut with soy sauce and mirin.",
+    "dish_key": "yasai_itame"
+   },
+   {
+    "ja": "肉野菜炒め（醤油）",
+    "romaji": "Niku yasai itame shoyu",
+    "en": "Pork and vegetable stir-fry, soy seasoning",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The brand’s signature. Meat upgrades: 中盛 100g, 大盛 150g, 特盛 200g.",
+    "dish_key": "niku_yasai_itame"
+   },
+   {
+    "ja": "肉野菜炒め（ぽん酢）",
+    "romaji": "Niku yasai itame ponzu",
+    "en": "Pork and vegetable stir-fry, ponzu seasoning",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "niku_yasai_itame"
+   },
+   {
+    "ja": "肉野菜炒め（味噌）",
+    "romaji": "Niku yasai itame miso",
+    "en": "Pork and vegetable stir-fry, miso seasoning",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "niku_yasai_itame"
+   },
+   {
+    "ja": "定食（ご飯＋スープ）",
+    "romaji": "Teishoku gohan plus supu",
+    "en": "Set meal: the stir-fry plus rice and soup",
+    "price": "",
+    "section": "展開メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The soup is not described; shop soups here are almost always dashi or pork based.",
+    "dish_key": "teishoku"
+   },
+   {
+    "ja": "追加パクチー",
+    "romaji": "Tsuika pakuchi",
+    "en": "Extra coriander",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "coriander_topping"
+   },
+   {
+    "ja": "追加バター",
+    "romaji": "Tsuika bata",
+    "en": "Extra butter",
+    "price": "",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "butter_topping"
+   },
+   {
+    "ja": "キリン一番搾り生ビール",
+    "romaji": "Kirin Ichiban Shibori nama biru",
+    "en": "Kirin Ichiban Shibori draught beer",
+    "price": "",
+    "section": "ドリンク",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Barley beer.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "本搾りレモン",
+    "romaji": "Honshibori remon",
+    "en": "Hon-shibori lemon chu-hi",
+    "price": "",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Base spirit not stated.",
+    "dish_key": "lemon_sour"
+   },
+   {
+    "ja": "黒ウーロン茶",
+    "romaji": "Kuro uroncha",
+    "en": "Black oolong tea",
+    "price": "",
+    "section": "ドリンク",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "oolong_tea"
+   }
+  ]
+ },
+ "tokyo_banh_xeo_saigon_tokyo_do": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://vietnam-banhxeo.com/",
+   "https://shinjuku.vietnam-banhxeo.com/"
+  ],
+  "price_note": "EMPTY BECAUSE THE CHAIN PUBLISHES NO MENU FOR THIS BRANCH, and the near-miss is worth recording so nobody repeats it. vietnam-banhxeo.com (operator P4 inc.) is a single-page brand site: it explains what bánh xèo is and lists all four Tokyo shops — 有楽町, 新宿, 東京ドームシティ and 虎ノ門 — with address, phone and hours, but has no menu page at all (/menu/ returns 404). Only the 新宿 branch has its own subdomain, shinjuku.vietnam-banhxeo.com, and even that has no menu section — just こだわり, 物語, 新着情報, アクセス and a Toreta booking link, with the current offers announced in news posts. The 東京ドームシティ店 (文京区後楽1-3-61 黄色いビル 2F, Food Stadium Tokyo, 11:00-23:00) has only Instagram and Facebook. Carrying the Shinjuku shop’s course or lunch offers across to the Dome City branch would break the no-cross-branch rule, so nothing is recorded. WHAT THE BRAND PAGE DOES ESTABLISH, and it matters for anyone reading this later: the shop’s own description says the bánh xèo batter is 米粉 (RICE FLOUR) coloured with turmeric, filled with bean sprouts, pork and prawn, wrapped in leaf vegetables and dipped in nước chấm — so the pancake itself is not wheat. The dip is the problem: nước chấm is fish sauce, which is not vegan and is only sometimes wheat-free. None of that is branch-specific enough to record as items.",
+  "last_checked": "2026-09-06",
+  "items": []
  }
 }

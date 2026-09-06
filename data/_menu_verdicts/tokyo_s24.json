@@ -818,5 +818,274 @@
     "dish_key": "otoshi"
    }
   ]
+ },
+ "tokyo_hikiniku_to_come_shibuya": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://hikinikutocome.com/locations/shibuya",
+   "https://hikinikutocome.com/enjoyment",
+   "https://hikinikutocome.com/faq",
+   "https://hikinikutocome.com/allergen"
+  ],
+  "price_note": "⚠ THIS IS THE BEST ALLERGEN DISCLOSURE FOUND IN THIS WHOLE TICK AND IT DELIVERS THE OPPOSITE OF WHAT PEOPLE HOPE. 挽肉と米 publishes a real, machine-readable per-item allergen table at hikinikutocome.com/allergen covering all 29 Japanese labelled items, and it declares the HAMBURG ITSELF as containing 卵・牛乳・小麦・牛肉 — WHEAT IS IN THE PATTY. A shop whose entire menu is three charcoal-grilled minced-beef patties and a bowl of rice reads, to a coeliac, like it ought to be safe; it is not, and only the shop’s own table would have told you. The prices are the other half of the story: NO PRICE IS PUBLISHED ANYWHERE ON THE OFFICIAL SITE — not on the Shibuya page, not on the menu page, not in the FAQ — so the set below is unpriced, deliberately. ⚠ WHAT IS ACTUALLY SAFE HERE, BY THE SHOP’S OWN TABLE: the 味噌汁 (declares 牛乳・大豆, no wheat), the コッチョリ生キムチ (えび・ごま), the ポテサラ (卵・大豆・りんご・牛肉) and the three table spice blends (ごま only) — BUT read the miso soup line with care, because 麦味噌 is BARLEY and barley is NOT one of the 29 labelled items, so an allergen table CANNOT clear a miso soup of gluten. Everything soy-based is declared wheat: 挽肉のタレ, 食べる醤油 and 生醤油 all list 小麦. ⚠ ONE INCONSISTENCY WORTH KNOWING: the 楽しみ方 page says the set comes with 自家製ポン酢, but ポン酢 does not appear anywhere in the allergen table — ask which of the declared sauces it corresponds to. Format: the menu is deliberately ONE dish, three 90 g patties served one at a time onto rice with free rice refills, one free egg per person, and 鬼おろし grated daikon arriving with the second patty. Shibuya is at 渋谷区道玄坂2-28-1 椎津ビル3F, 11:00-15:00 and 17:00-21:00, closed Wednesdays, walk-in register via web only — no phone or SNS booking. The 八味唐辛子 in the table is marked 京都店のみ and is NOT available at Shibuya.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "挽肉と米 定食",
+    "romaji": "Hikiniku to kome teishoku",
+    "en": "Hikiniku to Come set: three 90g hamburg steaks, rice with free refills, miso soup, house ponzu, grated daikon, condiments, pickles, raw egg",
+    "price": "",
+    "section": "メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The shop’s own allergen table declares the hamburg contains 卵・牛乳・小麦・牛肉 — the patty has wheat in it. No price is published anywhere first-party.",
+    "dish_key": "hamburg_teishoku"
+   },
+   {
+    "ja": "ハンバーグ",
+    "romaji": "Hanbagu",
+    "en": "Charcoal-grilled hamburg steak, 90g, three per set",
+    "price": "",
+    "section": "メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Declared allergens: egg, milk, wheat, beef.",
+    "dish_key": "hamburg_steak"
+   },
+   {
+    "ja": "味噌汁",
+    "romaji": "Misoshiru",
+    "en": "Miso soup",
+    "price": "",
+    "section": "メニュー",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Declared allergens are 牛乳 and 大豆 only, with NO wheat — but 麦味噌 is barley and barley is not one of Japan’s 29 labelled items, so this table cannot clear it of gluten. Milk is declared, so not vegan.",
+    "dish_key": "miso_soup"
+   },
+   {
+    "ja": "挽肉のタレ",
+    "romaji": "Hikiniku no tare",
+    "en": "House sauce for the minced meat",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Declared: 小麦・大豆・りんご・ごま.",
+    "dish_key": "table_sauce"
+   },
+   {
+    "ja": "食べる醤油",
+    "romaji": "Taberu shoyu",
+    "en": "Eating soy sauce (chunky soy condiment)",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Declared: 小麦・大豆・ごま.",
+    "dish_key": "soy_condiment"
+   },
+   {
+    "ja": "生醤油",
+    "romaji": "Nama shoyu",
+    "en": "Raw soy sauce",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Declared: 小麦・大豆.",
+    "dish_key": "soy_sauce"
+   },
+   {
+    "ja": "コッチョリ 生キムチ",
+    "romaji": "Kotchori nama kimuchi",
+    "en": "Kkakdugi-style fresh kimchi",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Declared: えび・ごま — no wheat declared, but shrimp means it is not vegan.",
+    "dish_key": "kimchi"
+   },
+   {
+    "ja": "ポテサラ",
+    "romaji": "Potesara",
+    "en": "Potato salad",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Declared: 卵・大豆・りんご・牛肉 — no wheat declared.",
+    "dish_key": "potato_salad"
+   },
+   {
+    "ja": "モウさんの麻辣辣粉",
+    "romaji": "Mo-san no maara rafun",
+    "en": "Mr Mou’s mala chilli powder",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Declared: ごま only.",
+    "dish_key": "chilli_powder"
+   },
+   {
+    "ja": "ジャオマー",
+    "romaji": "Jaoma",
+    "en": "Jiaoma (sichuan pepper condiment)",
+    "price": "",
+    "section": "卓上調味料",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Declared: ごま only.",
+    "dish_key": "sichuan_pepper_condiment"
+   },
+   {
+    "ja": "生たまご",
+    "romaji": "Nama tamago",
+    "en": "Raw egg, one free per person",
+    "price": "",
+    "section": "メニュー",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Shop states one per person is free.",
+    "dish_key": "raw_egg"
+   },
+   {
+    "ja": "果実と米サワー",
+    "romaji": "Kajitsu to kome sawa",
+    "en": "Fruit and rice sour, made with house amazake",
+    "price": "",
+    "section": "バー 挽肉と米のベランダ",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Sold at the balcony bar attached to the Shibuya shop, 11:00-21:00. Amazake is rice-koji fermented; the shop does not publish its allergens.",
+    "dish_key": "fruit_sour"
+   }
+  ]
+ },
+ "tokyo_curry_rice_specialist_et": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.ethiopia-curry.com/",
+   "https://www.ethiopia-curry.com/%e3%81%8a%e8%96%a6%e3%82%81%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc",
+   "https://ethiopia-curry.com/food-allergy.pdf"
+  ],
+  "price_note": "NO PRICES ARE PUBLISHED on the shop’s own site, which was rebuilt on 2025-07-29 with an お薦めメニュー page that names the dishes and describes them but prints no figures at all — hence partial, and hence unpriced items. カリーライス専門店エチオピア 本店 is the Jimbocho original, founded 1988, owner-chef 鈴木堅司, and the site describes the style as インド風カリーライス. ⚠ THE ALLERGEN PDF EXISTS, DECLARES WHEAT, AND ITS GRID CANNOT BE READ. The shop links food-allergy.pdf and its header states in English that ALL MENU items are covered for «shrimp, wheat, eggs, dairy, cashew nut, beef, soybeans, chicken, banana, pork, yam, lamb, apple, gelatin, sesame». Its text layer is a simple one-character-shifted cipher and the English header decodes cleanly, but the Japanese product names and the per-item marks are CID glyphs that yield nothing, so WHICH dishes contain the wheat could not be established here. ⚠ THAT MATTERS BECAUSE THE SHOP’S OWN PROSE POINTS AT THE ANSWER: every description on the site is built around the ルー — 「ルーとビーフ、そしてライスの織り成す絶妙のバランス」, 「ルーとの相性がすこぶる良く」 — and a Japanese curry ルー is a WHEAT-FLOUR roux. The bean curries are described as サラサラタイプのルー (thin, not thickened), which is the one hint that they may be built differently, but the shop does not say so and it must not be assumed. Every curry is therefore recorded no. The bean curries are also flagged 辛さは3倍から — they START at heat level 3.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "チキンカリー",
+    "romaji": "Chikin kari",
+    "en": "Chicken curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shop calls this its most popular; described as big pieces of chicken in the house roux.",
+    "dish_key": "chicken_curry"
+   },
+   {
+    "ja": "ビーフカリー",
+    "romaji": "Bifu kari",
+    "en": "Beef curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Described as the balance of roux, beef and rice.",
+    "dish_key": "beef_curry"
+   },
+   {
+    "ja": "野菜カリー",
+    "romaji": "Yasai kari",
+    "en": "Greens curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Seasonal vegetables in the same roux.",
+    "dish_key": "vegetable_curry"
+   },
+   {
+    "ja": "エビカリー",
+    "romaji": "Ebi kari",
+    "en": "Shrimp curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "prawn_curry"
+   },
+   {
+    "ja": "豆カリー",
+    "romaji": "Mame kari",
+    "en": "Beans curry, three kinds of bean",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Starts at heat level 3. Described as a サラサラ (thin, unthickened) roux — the only line on the card that hints at a different base, but the shop does not say it is flour-free.",
+    "dish_key": "bean_curry"
+   },
+   {
+    "ja": "チキン豆カリー",
+    "romaji": "Chikin mame kari",
+    "en": "Chicken and beans curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Starts at heat level 3; two Indian beans plus chicken in the bean roux.",
+    "dish_key": "chicken_bean_curry"
+   },
+   {
+    "ja": "野菜豆カリー",
+    "romaji": "Yasai mame kari",
+    "en": "Greens and beans curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Starts at heat level 3, and the shop states it contains 挽肉 (minced meat) despite the vegetable name.",
+    "dish_key": "vegetable_bean_curry"
+   },
+   {
+    "ja": "チキン＋野菜カリー",
+    "romaji": "Chikin plus yasai kari",
+    "en": "Chicken and greens curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chicken_curry"
+   },
+   {
+    "ja": "ビーフ＋野菜カリー",
+    "romaji": "Bifu plus yasai kari",
+    "en": "Beef and greens curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "beef_curry"
+   },
+   {
+    "ja": "エビ＋野菜カリー",
+    "romaji": "Ebi plus yasai kari",
+    "en": "Shrimp and greens curry",
+    "price": "",
+    "section": "お薦めメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "prawn_curry"
+   }
+  ]
  }
 }
