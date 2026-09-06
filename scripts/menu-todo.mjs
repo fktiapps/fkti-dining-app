@@ -19,11 +19,13 @@
 //
 //   node scripts/menu-todo.mjs [city]        # default tokyo
 //   node scripts/menu-todo.mjs tokyo --next  # just the next shard to work on
+//   node scripts/menu-todo.mjs tokyo --by-source  # outstanding split by how it can be researched
 import fs from 'node:fs';
 import { readCity } from './lib-city.mjs';
 
 const city = process.argv.find(a => !a.startsWith('-') && a !== process.argv[0] && a !== process.argv[1]) || 'tokyo';
 const NEXT_ONLY = process.argv.includes('--next');
+const BY_SOURCE = process.argv.includes('--by-source');
 
 const menusFile = `data/${city}_menus.json`;
 const M = fs.existsSync(menusFile)
@@ -64,6 +66,42 @@ if (NEXT_ONLY) {
   if (!pick) { console.log('nothing left'); process.exit(0); }
   console.log(JSON.stringify({ shard: `s${pick.n}`, started: pick.started, remaining: pick.todo.length,
     records: pick.todo.map(r => ({ id: r.id, name: r.name, cuisine: r.cuisine, website: r.website, menu_url: r.menu_url })) }, null, 1));
+  process.exit(0);
+}
+
+
+// Not every outstanding record can actually be researched right now. Tabelog has
+// served a Cloudflare managed challenge (HTTP 403, Cf-Mitigated: challenge) to the
+// machine with egress since 2026-09-02, so records whose only link is a Tabelog URL
+// are PARKED, not abandoned — working them costs a tick and yields a challenge page.
+// Sorting the queue by what the shop actually publishes is worth roughly two thirds
+// of the remaining work being reachable instead of one third.
+const sourceOf = r => {
+  const w = (r.website || '').toLowerCase();
+  if (!w) return 'no_website';
+  if (w.includes('tabelog.com')) return 'tabelog_blocked';
+  if (/instagram|facebook|lit\.link|toreta|twitter|x\.com/.test(w)) return 'social_only';
+  if (/gorp\.jp|foodre\.jp|gnavi|hotpepper|retty|owst\.jp|goope|favy|base\.shop|stores\.jp/.test(w)) return 'aggregator';
+  return 'first_party';
+};
+const ORDER = ['first_party', 'aggregator', 'social_only', 'no_website', 'tabelog_blocked'];
+
+if (BY_SOURCE) {
+  const all = rows.flatMap(r => r.todo.map(rec => ({ ...rec, shard: `s${r.n}` })));
+  const groups = Object.fromEntries(ORDER.map(k => [k, []]));
+  for (const rec of all) groups[sourceOf(rec)].push(rec);
+  console.log(`${city}: ${all.length} genuinely outstanding, by how it can be researched`);
+  for (const k of ORDER) {
+    const g = groups[k];
+    if (!g.length) continue;
+    const tag = k === 'tabelog_blocked' ? '  <- PARKED: Tabelog 403s this egress' : '';
+    console.log(`  ${k.padEnd(16)} ${String(g.length).padStart(4)}${tag}`);
+  }
+  const work = ORDER.filter(k => k !== 'tabelog_blocked').flatMap(k => groups[k]);
+  console.log(`\n  reachable now: ${work.length}   parked: ${groups.tabelog_blocked.length}`);
+  console.log(`\n  next 20 reachable:`);
+  for (const r of work.slice(0, 20))
+    console.log(`    ${r.shard.padEnd(5)} ${r.id.padEnd(32)} ${sourceOf(r).padEnd(12)} ${r.website || ""}`);
   process.exit(0);
 }
 
