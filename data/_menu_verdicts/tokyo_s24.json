@@ -76,5 +76,747 @@
     "dish_key": "tempura"
    }
   ]
+ },
+ "tokyo_bistro_aligot": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "http://yumemania.jp/tenpo/aligot/"
+  ],
+  "price_note": "⚠ THE OPERATOR ITSELF SAYS THESE PRICES ARE UNRELIABLE RIGHT NOW, so this is partial on the shop’s own instruction, not on doubt about the source. 夢屋’s page for 【神保町】ビストロアリゴ heads its food list «Menu Example ※価格表示については現在修正中です» — a menu EXAMPLE with prices currently being revised — and closes with ※価格は税抜です。材料入荷の関係でメニュー内容・価格が多少変動する場合がございます. So every food price below is PRE-TAX and provisional; add 10% for what you will actually pay. The course prices carry no 税抜 marker of their own but sit under the same footnote. There is also a stale line to ignore: the page still advertises the 4,000 yen premium course as starting 2024年10月1日. Aligot is a 55-seat rustic French place in a 55-year-old wooden house in a Jimbocho backstreet, with standing, tatami and private rooms, run by Yumeya (which also runs a gibier distribution business — hence the wild boar). ⚠ NO ALLERGEN INFORMATION IS PUBLISHED AND FRENCH BISTRO COOKING IS A FLOUR KITCHEN: 煮込みハンバーグ is panko-bound in a flour-thickened sauce, the カスレ carries a house sausage (rusk filler) and is normally crumb-gratinated, and the コロッケ is breaded. アリゴ itself — the Auvergnat potato-and-tomme purée the shop is named for — is potato, cheese, butter and garlic with no flour in the classical recipe, but the shop states no ingredients, so it is ask. The 鶏もも肉のロティ and the スペアリブ煮込み are the other two worth asking about.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "男の！煮込みハンバーグ",
+    "romaji": "Otoko no! nikomi hanbagu",
+    "en": "Man’s simmered hamburg steak",
+    "price": "1280yen",
+    "section": "Menu Example",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pre-tax price. Hamburg patties are panko-bound and the braising sauce is flour-thickened.",
+    "dish_key": "hamburg_steak"
+   },
+   {
+    "ja": "今日のおつまみ盛り合わせ",
+    "romaji": "Kyo no otsumami moriawase",
+    "en": "Today’s assorted nibbles, per person",
+    "price": "450yen",
+    "section": "Menu Example",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pre-tax. Contents are the chef’s choice and change daily.",
+    "dish_key": "assorted_appetisers"
+   },
+   {
+    "ja": "鮮魚とアボカドのタルタル",
+    "romaji": "Sengyo to abokado no tarutaru",
+    "en": "Fresh fish and avocado tartare with French fries",
+    "price": "980yen",
+    "section": "Menu Example",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pre-tax. Fish from Toyosu; the fries share the fryer with the croquette.",
+    "dish_key": "fish_tartare"
+   },
+   {
+    "ja": "アリゴのアリゴ",
+    "romaji": "Arigo no arigo",
+    "en": "Aligot (Auvergne potato and cheese purée)",
+    "price": "500yen",
+    "section": "Menu Example",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pre-tax. Classically potato, tomme, butter, cream and garlic with no flour — but the shop publishes no ingredients, so ask. Dairy, so not vegan.",
+    "dish_key": "aligot"
+   },
+   {
+    "ja": "鶏もも肉のロティ",
+    "romaji": "Tori momoniku no roti",
+    "en": "Roast chicken thigh",
+    "price": "1380yen",
+    "section": "Menu Example",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pre-tax. The shop calls this the dish to judge it by. Pan sauces are commonly flour-thickened; ask.",
+    "dish_key": "roast_chicken"
+   },
+   {
+    "ja": "天然猪肉のカスレ！",
+    "romaji": "Tennen inoshishiniku no kasure",
+    "en": "Wild boar cassoulet with house sausage and white beans",
+    "price": "1480yen",
+    "section": "Menu Example",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pre-tax. House sausages normally carry rusk, and cassoulet is conventionally finished with a breadcrumb crust.",
+    "dish_key": "cassoulet"
+   },
+   {
+    "ja": "豚ホルモンのコロッケ",
+    "romaji": "Buta horumon no korokke",
+    "en": "Pork offal croquette",
+    "price": "950yen",
+    "section": "Menu Example",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pre-tax. Breaded and deep-fried.",
+    "dish_key": "croquette"
+   },
+   {
+    "ja": "国産豚スペアリブのやわらか煮込み",
+    "romaji": "Kokusan buta supearibu no yawaraka nikomi",
+    "en": "Slow-braised domestic pork spare ribs",
+    "price": "1380yen",
+    "section": "Menu Example",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pre-tax. Braising liquid not described.",
+    "dish_key": "braised_spare_ribs"
+   },
+   {
+    "ja": "3000コース（全7品）",
+    "romaji": "Sanzen kosu",
+    "en": "3,000 yen course, 7 dishes",
+    "price": "3000yen",
+    "section": "Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Contents not published; the à-la-carte card it is drawn from is flour-heavy.",
+    "dish_key": "set_course"
+   },
+   {
+    "ja": "3500コース（全8品）",
+    "romaji": "Sanzen-gohyaku kosu",
+    "en": "3,500 yen course, 8 dishes",
+    "price": "3500yen",
+    "section": "Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "set_course"
+   },
+   {
+    "ja": "4000コース（全9品）",
+    "romaji": "Yonsen kosu",
+    "en": "4,000 yen course, 9 dishes",
+    "price": "4000yen",
+    "section": "Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Page still describes a 4,000 yen premium wagyu-steak course as opening 2024-10-01 — a stale line, treat with care.",
+    "dish_key": "set_course"
+   },
+   {
+    "ja": "飲み放題（2時間）",
+    "romaji": "Nomihodai nijikan",
+    "en": "Two-hour all-you-can-drink",
+    "price": "2000yen",
+    "section": "Course",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Beer-inclusive packages are barley.",
+    "dish_key": "nomihodai"
+   }
+  ]
+ },
+ "tokyo_ramen_butayama_sakura_st": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://en.shop.butayama.com/detail/112520/",
+   "https://butayama.com/menu",
+   "https://butayama.com/allergy/"
+  ],
+  "price_note": "Full chain grand menu from ラーメン豚山’s own メニュー page — all prices 税込 as printed — attached to the サクラステージ店 shop page (渋谷区桜丘町1-4, 渋谷サクラステージ SHIBUYA サイド 1F). The chain caveat 「一部店舗では取り扱いのないメニューがある場合や価格が異なる場合がございます」 applies, hence partial. This is a Jiro-style (二郎系) shop and the numbers matter: 小 is 250 g of noodle, ミニ 125 g, 大 375 g, and the chain warns its own 小 is about the size of an ordinary shop’s 大盛 and tells first-timers to order ミニ or 小. ⚠ NOTHING IN THIS SHOP IS GLUTEN-FREE AND THE FREE-TOPPING RITUAL DOES NOT CHANGE THAT. 極太麺 is thick wheat noodle, the tare is soy, and the pork is soy-braised; the 汁なし, つけ麺 and 冷やし中華 variants are the same noodle with more soy. The chain DOES publish an アレルギー表・産地情報 PDF at https://butayama.com/allergy/ and it IS a real allergen table, but it is a graphical scan whose Japanese product names and marks do not extract as text, so nothing below is drawn from it. ⚠ THE CALL SYSTEM IS THE ONE THING A VISITOR SHOULD PRE-LEARN, and the shop prints the exact quantities: garlic 抜き 0 g / 少し half a tablespoon / ニンニク one tablespoon / マシマシ two tablespoons; vegetables 少なめ 150 g / 標準 300 g / マシ 450 g / マシマシ 600 g; back fat 標準 / アブラ / アブラマシマシ; tare strength 標準 / カラメ / カラカラ. Calls are taken just before the bowl is handed over; 麺硬め must be said earlier, when the ticket is collected. ⚠ SEASONAL LINES: つけ麺 is sold 1 April to 30 September and 冷やし中華 1 June to 30 September only.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "ミニラーメン",
+    "romaji": "Mini ramen",
+    "en": "Mini ramen, 125g noodles, 2 slices pork",
+    "price": "950yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles, soy tare, pork stock.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "小ラーメン",
+    "romaji": "Sho ramen",
+    "en": "Small ramen, 250g noodles, 2 slices pork",
+    "price": "1000yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The chain’s 小 is roughly an ordinary shop’s large.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "大ラーメン",
+    "romaji": "Dai ramen",
+    "en": "Large ramen, 375g noodles, 2 slices pork",
+    "price": "1100yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "ミニぶた",
+    "romaji": "Mini buta",
+    "en": "Mini buta ramen, 125g noodles, 5 slices pork",
+    "price": "1200yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_extra_pork"
+   },
+   {
+    "ja": "小ぶた",
+    "romaji": "Sho buta",
+    "en": "Small buta ramen, 250g noodles, 5 slices pork",
+    "price": "1250yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_extra_pork"
+   },
+   {
+    "ja": "大ぶた",
+    "romaji": "Dai buta",
+    "en": "Large buta ramen, 375g noodles, 5 slices pork",
+    "price": "1350yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_extra_pork"
+   },
+   {
+    "ja": "ミニぶたダブル",
+    "romaji": "Mini buta daburu",
+    "en": "Mini buta double, 125g noodles, 8 slices pork",
+    "price": "1400yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_extra_pork"
+   },
+   {
+    "ja": "小ぶたダブル",
+    "romaji": "Sho buta daburu",
+    "en": "Small buta double, 250g noodles, 8 slices pork",
+    "price": "1450yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_extra_pork"
+   },
+   {
+    "ja": "大ぶたダブル",
+    "romaji": "Dai buta daburu",
+    "en": "Large buta double, 375g noodles, 8 slices pork",
+    "price": "1550yen",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen_extra_pork"
+   },
+   {
+    "ja": "ミニ汁なし",
+    "romaji": "Mini shirunashi",
+    "en": "Mini brothless, 125g noodles, 2 slices pork",
+    "price": "1050yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Brothless means more concentrated soy tare, not less.",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "小汁なし",
+    "romaji": "Sho shirunashi",
+    "en": "Small brothless, 250g noodles, 2 slices pork",
+    "price": "1100yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "大汁なし",
+    "romaji": "Dai shirunashi",
+    "en": "Large brothless, 375g noodles, 2 slices pork",
+    "price": "1200yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "ミニぶた（汁なし）",
+    "romaji": "Mini buta shirunashi",
+    "en": "Mini brothless buta, 5 slices pork",
+    "price": "1300yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "小ぶた（汁なし）",
+    "romaji": "Sho buta shirunashi",
+    "en": "Small brothless buta, 5 slices pork",
+    "price": "1350yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "大ぶた（汁なし）",
+    "romaji": "Dai buta shirunashi",
+    "en": "Large brothless buta, 5 slices pork",
+    "price": "1450yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "ミニぶたダブル（汁なし）",
+    "romaji": "Mini buta daburu shirunashi",
+    "en": "Mini brothless buta double, 8 slices pork",
+    "price": "1500yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "小ぶたダブル（汁なし）",
+    "romaji": "Sho buta daburu shirunashi",
+    "en": "Small brothless buta double, 8 slices pork",
+    "price": "1550yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "大ぶたダブル（汁なし）",
+    "romaji": "Dai buta daburu shirunashi",
+    "en": "Large brothless buta double, 8 slices pork",
+    "price": "1650yen",
+    "section": "汁なし",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shirunashi"
+   },
+   {
+    "ja": "ミニつけ麺",
+    "romaji": "Mini tsukemen",
+    "en": "Mini tsukemen, 125g noodles, 2 slices pork",
+    "price": "1050yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal, 1 Apr to 30 Sep.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "小つけ麺",
+    "romaji": "Sho tsukemen",
+    "en": "Small tsukemen, 250g noodles, 2 slices pork",
+    "price": "1100yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "大つけ麺",
+    "romaji": "Dai tsukemen",
+    "en": "Large tsukemen, 375g noodles, 2 slices pork",
+    "price": "1200yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "ミニぶた（つけ麺）",
+    "romaji": "Mini buta tsukemen",
+    "en": "Mini tsukemen buta, 5 slices pork",
+    "price": "1300yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "小ぶた（つけ麺）",
+    "romaji": "Sho buta tsukemen",
+    "en": "Small tsukemen buta, 5 slices pork",
+    "price": "1350yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "大ぶた（つけ麺）",
+    "romaji": "Dai buta tsukemen",
+    "en": "Large tsukemen buta, 5 slices pork",
+    "price": "1450yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "ミニぶたダブル（つけ麺）",
+    "romaji": "Mini buta daburu tsukemen",
+    "en": "Mini tsukemen buta double, 8 slices pork",
+    "price": "1500yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "小ぶたダブル（つけ麺）",
+    "romaji": "Sho buta daburu tsukemen",
+    "en": "Small tsukemen buta double, 8 slices pork",
+    "price": "1550yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "大ぶたダブル（つけ麺）",
+    "romaji": "Dai buta daburu tsukemen",
+    "en": "Large tsukemen buta double, 8 slices pork",
+    "price": "1650yen",
+    "section": "つけ麺（4月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "ミニ冷やし中華",
+    "romaji": "Mini hiyashi chuka",
+    "en": "Mini hiyashi chuka, 125g noodles, 2 slices pork",
+    "price": "1150yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal, 1 Jun to 30 Sep. Hiyashi chuka dressing is soy and vinegar.",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "小冷やし中華",
+    "romaji": "Sho hiyashi chuka",
+    "en": "Small hiyashi chuka, 250g noodles, 2 slices pork",
+    "price": "1200yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal.",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "大冷やし中華",
+    "romaji": "Dai hiyashi chuka",
+    "en": "Large hiyashi chuka, 375g noodles, 2 slices pork",
+    "price": "1300yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal.",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "ミニぶた（冷やし中華）",
+    "romaji": "Mini buta hiyashi chuka",
+    "en": "Mini hiyashi chuka buta, 5 slices pork",
+    "price": "1400yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "小ぶた（冷やし中華）",
+    "romaji": "Sho buta hiyashi chuka",
+    "en": "Small hiyashi chuka buta, 5 slices pork",
+    "price": "1450yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "大ぶた（冷やし中華）",
+    "romaji": "Dai buta hiyashi chuka",
+    "en": "Large hiyashi chuka buta, 5 slices pork",
+    "price": "1550yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "ミニぶたダブル（冷やし中華）",
+    "romaji": "Mini buta daburu hiyashi chuka",
+    "en": "Mini hiyashi chuka buta double, 8 slices pork",
+    "price": "1600yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "小ぶたダブル（冷やし中華）",
+    "romaji": "Sho buta daburu hiyashi chuka",
+    "en": "Small hiyashi chuka buta double, 8 slices pork",
+    "price": "1650yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "大ぶたダブル（冷やし中華）",
+    "romaji": "Dai buta daburu hiyashi chuka",
+    "en": "Large hiyashi chuka buta double, 8 slices pork",
+    "price": "1750yen",
+    "section": "冷やし中華（6月1日～9月30日）",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hiyashi_chuka"
+   },
+   {
+    "ja": "ライス",
+    "romaji": "Raisu",
+    "en": "Rice",
+    "price": "150yen",
+    "section": "サイド",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Plain rice; no allergen statement, and it will be eaten alongside the soy tare.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "大ライス",
+    "romaji": "Dai raisu",
+    "en": "Large rice",
+    "price": "200yen",
+    "section": "サイド",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "麺増し125g",
+    "romaji": "Men-mashi 125g",
+    "en": "Extra 125g noodles",
+    "price": "100yen",
+    "section": "サイド",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "extra_noodles"
+   },
+   {
+    "ja": "うずら5個",
+    "romaji": "Uzura go-ko",
+    "en": "Five quail eggs",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Usually boiled; preparation not stated.",
+    "dish_key": "quail_eggs"
+   },
+   {
+    "ja": "生玉子",
+    "romaji": "Nama tamago",
+    "en": "Raw egg",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "raw_egg"
+   },
+   {
+    "ja": "粉チーズ",
+    "romaji": "Kona chizu",
+    "en": "Grated cheese",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Powdered cheese blends often carry starch anti-caking agents.",
+    "dish_key": "grated_cheese"
+   },
+   {
+    "ja": "豚1枚",
+    "romaji": "Buta ichimai",
+    "en": "One extra slice of pork",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-braised chashu.",
+    "dish_key": "extra_chashu"
+   },
+   {
+    "ja": "味玉",
+    "romaji": "Ajitama",
+    "en": "Marinated soft-boiled egg",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The marinade is soy.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "辛ニラ",
+    "romaji": "Kara-nira",
+    "en": "Spicy garlic chives",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Kara-nira is conventionally macerated in soy and chilli.",
+    "dish_key": "spicy_nira"
+   },
+   {
+    "ja": "白髪ネギ",
+    "romaji": "Shiraga negi",
+    "en": "Fine-shredded white spring onion",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Usually dressed in sesame oil and salt, but this shop does not say.",
+    "dish_key": "shiraga_negi"
+   },
+   {
+    "ja": "肉あぶら",
+    "romaji": "Niku abura",
+    "en": "Meat fat topping",
+    "price": "150yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Menu prints the price with a full-width digit as ¥1５0. Pork fat cooked in the soy tare.",
+    "dish_key": "pork_fat_topping"
+   },
+   {
+    "ja": "マヨネーズ",
+    "romaji": "Mayonezu",
+    "en": "Mayonnaise",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "mayonnaise"
+   },
+   {
+    "ja": "ぶっカリー",
+    "romaji": "Bukkari",
+    "en": "Bukkari curry topping",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A curry sauce poured over the bowl; Japanese curry bases are wheat roux.",
+    "dish_key": "curry_topping"
+   },
+   {
+    "ja": "黒ウーロン茶",
+    "romaji": "Kuro uroncha",
+    "en": "Black oolong tea",
+    "price": "200yen",
+    "section": "ドリンク",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "oolong_tea"
+   },
+   {
+    "ja": "お持ち帰り豚 200g",
+    "romaji": "Omochikaeri buta nihyaku guramu",
+    "en": "Take-home pork, 200g",
+    "price": "500yen",
+    "section": "その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-braised.",
+    "dish_key": "takeaway_chashu"
+   }
+  ]
+ },
+ "tokyo_niku_bistro_akari": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://niku-bistro-akari.jp/",
+   "https://niku-bistro-akari.jp/menu-list/",
+   "https://niku-bistro-akari.jp/wp-content/uploads/2026/02/20260217_Food_Menu.pdf",
+   "https://niku-bistro-akari.jp/wp-content/uploads/2025/11/course.pdf"
+  ],
+  "price_note": "ALMOST EMPTY ON PURPOSE, AND THE REASON IS WORTH RECORDING. 肉ビストロ灯 (西新宿7-16-3 第18フジビル 2F, Zekkocho group) does publish its full Food, Drink and Course menus — but only as three image-scan PDFs linked from its Menu page (20260217_Food_Menu.pdf, 20260217_Drink_Menu.pdf, course.pdf, all dated by the 2026.02.17 グランドメニューが新しくなりました news item). pdftotext returns one byte from each: they carry no text layer, and this machine has no pdftoppm to render the pages, so NOT ONE DISH NAME OR PRICE COULD BE READ. The single price the site states in HTML is the お通し at 660 yen (税込), recorded below because it is compulsory. What the site does describe in words, and which is worth knowing before booking: the kitchen serves 6-8 different 塊肉 (whole-block cuts) a day — beef, pork, lamb and gibier including venison and wild boar — seared over 備長炭 charcoal and served rare in the middle, alongside a locked wine cellar of roughly 100-150 bottles that guests walk into with a lantern. No allergen information is published anywhere. Anyone re-running this record needs either a PDF rasteriser or the shop’s own reservation line.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "お通し",
+    "romaji": "Otoshi",
+    "en": "Compulsory table appetiser",
+    "price": "660yen",
+    "section": "お通し",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Charged per person and stated on the Menu page as 660円（税込）; what it actually is, is not published.",
+    "dish_key": "otoshi"
+   }
+  ]
  }
 }

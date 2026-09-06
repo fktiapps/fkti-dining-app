@@ -1,0 +1,808 @@
+{
+ "tokyo_ganso_aburado_miyamasuza": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://shop.ganso-aburado.com/japan/detail/112540/",
+   "https://ganso-aburado.com/menu",
+   "https://ganso-aburado.com/allergy/"
+  ],
+  "price_note": "Chain grand menu from 元祖油堂’s own メニュー page, prices 税込 as printed; the 宮益坂店 shop page carries the chain caveat 「一部店舗では取り扱いのないメニューがある場合や価格が異なる場合がございます」, so this is the brand card rather than a store-verified one — hence partial. ⚠ THIS IS AN 油そば SHOP AND THERE IS NOTHING HERE FOR A COELIAC: 油そば is wheat noodles in a soy-based tare with no broth, so the noodle is wheat and the sauce is wheat, twice over. The shop links an アレルギー表・産地情報 PDF at https://ganso-aburado.com/allergy/ and it IS published — but it is a graphical table whose Japanese product names and marks do not extract as text, so it could not be read here and no flag below is drawn from it. 記載グラム数は茹で前 means listed weights are pre-boil, and 特大まで無料 means sizes up to 特大 cost nothing extra — portion facts, not diet facts.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "油そば",
+    "romaji": "Abura-soba",
+    "en": "Abura-soba (brothless soy-tare noodles)",
+    "price": "880yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles in the shop’s signature soy tare; pork chashu.",
+    "dish_key": "abura_soba"
+   },
+   {
+    "ja": "油そば+A",
+    "romaji": "Abura-soba plus A",
+    "en": "Abura-soba + A (parmesan, egg yolk)",
+    "price": "1000yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A set = パルメザンチーズ・卵黄.",
+    "dish_key": "abura_soba"
+   },
+   {
+    "ja": "油そば+B",
+    "romaji": "Abura-soba plus B",
+    "en": "Abura-soba + B (extra pork, fried onion, egg yolk)",
+    "price": "1130yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "B set = 肉増し・フライドオニオン・卵黄.",
+    "dish_key": "abura_soba"
+   },
+   {
+    "ja": "油そば+C",
+    "romaji": "Abura-soba plus C",
+    "en": "Abura-soba + C (extra pork, parmesan, fried onion, egg yolk)",
+    "price": "1230yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "C set = 肉増し・パルメザンチーズ・フライドオニオン・卵黄.",
+    "dish_key": "abura_soba"
+   },
+   {
+    "ja": "辛味噌油そば",
+    "romaji": "Kara-miso abura-soba",
+    "en": "Spicy miso abura-soba",
+    "price": "980yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles; the miso is added to, not instead of, the soy tare.",
+    "dish_key": "kara_miso_abura_soba"
+   },
+   {
+    "ja": "辛味噌油そば+A",
+    "romaji": "Kara-miso abura-soba plus A",
+    "en": "Spicy miso abura-soba + A",
+    "price": "1100yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kara_miso_abura_soba"
+   },
+   {
+    "ja": "辛味噌油そば+B",
+    "romaji": "Kara-miso abura-soba plus B",
+    "en": "Spicy miso abura-soba + B",
+    "price": "1230yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kara_miso_abura_soba"
+   },
+   {
+    "ja": "辛味噌油そば+C",
+    "romaji": "Kara-miso abura-soba plus C",
+    "en": "Spicy miso abura-soba + C",
+    "price": "1330yen",
+    "section": "油そば",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kara_miso_abura_soba"
+   },
+   {
+    "ja": "卵黄",
+    "romaji": "Ranou",
+    "en": "Egg yolk topping",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw yolk; the allergen table could not be read, so ask rather than gf.",
+    "dish_key": "egg_yolk_topping"
+   },
+   {
+    "ja": "メンマ",
+    "romaji": "Menma",
+    "en": "Seasoned bamboo shoot",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Menma is conventionally simmered in soy, which is wheat; the shop makes no claim.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "マヨネーズ",
+    "romaji": "Mayonezu",
+    "en": "Mayonnaise",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg-based.",
+    "dish_key": "mayonnaise"
+   },
+   {
+    "ja": "旨辛くん",
+    "romaji": "Umakara-kun",
+    "en": "Umakara-kun spicy topping",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "House spice blend; composition not published.",
+    "dish_key": "spicy_seasoning_topping"
+   },
+   {
+    "ja": "フライドオニオン",
+    "romaji": "Furaido onion",
+    "en": "Fried onion",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Commercial fried onion is often dusted with wheat flour; no statement.",
+    "dish_key": "fried_onion"
+   },
+   {
+    "ja": "パルメザンチーズ",
+    "romaji": "Parumezan chizu",
+    "en": "Parmesan cheese",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "parmesan_cheese"
+   },
+   {
+    "ja": "海苔",
+    "romaji": "Nori",
+    "en": "Nori seaweed",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Plain sheet nori; ajitsuke nori would carry soy.",
+    "dish_key": "nori"
+   },
+   {
+    "ja": "肉増し",
+    "romaji": "Niku-mashi",
+    "en": "Extra pork",
+    "price": "200yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chashu is braised in soy.",
+    "dish_key": "extra_chashu"
+   },
+   {
+    "ja": "追い飯",
+    "romaji": "Oi-meshi",
+    "en": "Rice to finish the bowl",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Plain rice, but it is tipped into the soy tare left in the noodle bowl.",
+    "dish_key": "oimeshi"
+   },
+   {
+    "ja": "明太子",
+    "romaji": "Mentaiko",
+    "en": "Spicy cod roe",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Mentaiko cure normally contains soy sauce and mirin.",
+    "dish_key": "mentaiko"
+   },
+   {
+    "ja": "ネギ増し",
+    "romaji": "Negi-mashi",
+    "en": "Extra spring onion",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Cut raw negi.",
+    "dish_key": "extra_negi"
+   },
+   {
+    "ja": "ゆず胡椒",
+    "romaji": "Yuzu-kosho",
+    "en": "Yuzu pepper paste",
+    "price": "30yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Yuzu, chilli and salt; brand not stated.",
+    "dish_key": "yuzu_kosho"
+   },
+   {
+    "ja": "フライドガーリック",
+    "romaji": "Furaido garikku",
+    "en": "Fried garlic",
+    "price": "50yen",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "fried_garlic"
+   },
+   {
+    "ja": "納豆",
+    "romaji": "Natto",
+    "en": "Natto",
+    "price": "100yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Natto packs ship with a soy-sauce tare; some also carry bonito.",
+    "dish_key": "natto"
+   },
+   {
+    "ja": "ジャンボ",
+    "romaji": "Janbo",
+    "en": "Jumbo portion upgrade",
+    "price": "150yen",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "More wheat noodles.",
+    "dish_key": "extra_noodles"
+   },
+   {
+    "ja": "コロナビール（330ml/瓶）",
+    "romaji": "Korona biru",
+    "en": "Corona beer, 330ml bottle",
+    "price": "550yen",
+    "section": "ドリンク",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Barley beer.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "氷結レモンサワー(350ml/缶)",
+    "romaji": "Hyoketsu remon sawa",
+    "en": "Hyoketsu lemon sour, 350ml can",
+    "price": "400yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Canned chu-hi; base spirit not stated on the menu.",
+    "dish_key": "lemon_sour"
+   }
+  ]
+ },
+ "tokyo_panzerotteria": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.panzerotteria.com/",
+   "https://panzerotteria.jp/menu/",
+   "https://panzerotteria.jp/about/"
+  ],
+  "price_note": "Full bilingual card from the shop’s own Menu page; prices are printed with a European decimal point (¥2.600 = 2,600 yen) and the page states 表示されている価格は消費税込. The shop warns メニューは食材の仕入れによって変更されることがあります. ⚠ THE FRYER IS THE WHOLE STORY HERE. Panzerotti are wheat dough parcels deep-fried in 綿実油 (cottonseed oil), and the shop says so itself — 「フレッシュな食材が高品質の小麦粉の中に包まれ…綿実油で熱される」. The 素揚げ野菜 therefore go into the same wheat-contaminated oil, so they are recorded no rather than gf even though nothing is battered. ⚠ AND ONE SALAD IS A WHEAT TRAP UNDER AN ITALIAN NAME: farro IS wheat (emmer) and the Japanese name says 古代麦 outright, so the ancient-grain salad is not a safe swap for the cheese salad. What is actually left for a coeliac is the un-fried cold end of the card — the ham, cheese and mozzarella plates and the caprese — and since no allergen statement is published those are ask, not gf. Two meat lines are a fork in the road: both are sold as either a plain steak or a breaded cutlet at the same price.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "熟成ハム各種盛り合わせ",
+    "romaji": "Jukusei hamu kakushu moriawase",
+    "en": "Assorted dry-cured ham",
+    "price": "2600yen~",
+    "section": "Antipasti 前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dry-cured ham; cure agents not published.",
+    "dish_key": "cured_ham_plate"
+   },
+   {
+    "ja": "熟成チーズ各種盛り合わせ",
+    "romaji": "Jukusei chizu kakushu moriawase",
+    "en": "Assorted French and Italian cheese",
+    "price": "2600yen~",
+    "section": "Antipasti 前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Ask whether bread or crackers are plated with it.",
+    "dish_key": "cheese_plate"
+   },
+   {
+    "ja": "ハムとチーズ盛り合わせ",
+    "romaji": "Hamu to chizu moriawase",
+    "en": "Assorted ham and cheese plate",
+    "price": "2600yen~",
+    "section": "Antipasti 前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ham_and_cheese_plate"
+   },
+   {
+    "ja": "ブラータチーズのカプレーゼ",
+    "romaji": "Burata chizu no kapureze",
+    "en": "Burrata cheese alla Caprese",
+    "price": "1800yen",
+    "section": "Antipasti 前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Shop’s おすすめ. Tomato, burrata, basil.",
+    "dish_key": "caprese"
+   },
+   {
+    "ja": "イタリア産水牛モッツアレラチーズのカプレーゼ",
+    "romaji": "Itaria-san suigyu mottsuarera chizu no kapureze",
+    "en": "Italian buffalo mozzarella alla Caprese",
+    "price": "1600yen",
+    "section": "Antipasti 前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "caprese"
+   },
+   {
+    "ja": "丸ごとトマトと水牛モッツアレラのカプレーゼ",
+    "romaji": "Marugoto tomato to suigyu mottsuarera no kapureze",
+    "en": "Whole tomato with buffalo mozzarella",
+    "price": "1400yen",
+    "section": "Antipasti 前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "caprese"
+   },
+   {
+    "ja": "イタリア古代麦ファーロとたっぷり野菜のサラダ",
+    "romaji": "Itaria kodai-mugi faro to tappuri yasai no sarada",
+    "en": "Italian farro wheat and fresh vegetable salad",
+    "price": "1400yen",
+    "section": "Verdure 野菜",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ farro IS wheat (emmer); the Japanese name says 古代麦. Dressing not published.",
+    "dish_key": "farro_salad"
+   },
+   {
+    "ja": "ゴルゴンゾーラチーズとピーカンナッツのサラダ",
+    "romaji": "Gorugonzora chizu to pikan nattsu no sarada",
+    "en": "Gorgonzola and pecan salad",
+    "price": "1600yen",
+    "section": "Verdure 野菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Blue cheese; dressing not published.",
+    "dish_key": "gorgonzola_salad"
+   },
+   {
+    "ja": "綿実油素揚げ５種類ホカホカ野菜（ハーブ塩和え）",
+    "romaji": "Menjitsuyu suage goshurui hokahoka yasai",
+    "en": "Five vegetables deep-fried in cottonseed oil, herb salt",
+    "price": "850yen",
+    "section": "Verdure 野菜",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ Unbattered, but the shop states the same 綿実油 fries the wheat panzerotti — shared oil, so no.",
+    "dish_key": "fried_vegetables"
+   },
+   {
+    "ja": "アイルランド産へアフォード牛ヒレ（ステーキ／カツレツ）100g",
+    "romaji": "Airurando-san Heafodo gyu hire",
+    "en": "Irish Hereford beef, steak or cutlet, 100g",
+    "price": "3200yen",
+    "section": "Carni お肉",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Order the ステーキ, not the カツレツ — cutlet means breadcrumbs and the shared fryer.",
+    "dish_key": "beef_steak"
+   },
+   {
+    "ja": "スペインガリシア産栗豚（肩ロースステーキ／トンカツ）100g",
+    "romaji": "Supein Garishia-san kuributa",
+    "en": "Spanish Galician chestnut-fed pork, steak or tonkatsu, 100g",
+    "price": "1500yen",
+    "section": "Carni お肉",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Same fork: steak is plain, トンカツ is breaded and fried.",
+    "dish_key": "pork_steak"
+   },
+   {
+    "ja": "燻製ブラータチーズとバジルのマルゲリータ",
+    "romaji": "Kunsei burata chizu to bajiru no marugerita",
+    "en": "Smoked burrata and basil margherita panzerotto",
+    "price": "1650yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat dough, deep fried.",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "フレッシュ青花椒のマルゲリータ",
+    "romaji": "Furesshu ao-hanashou no marugerita",
+    "en": "Fresh green sansho margherita panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "５種類チーズ",
+    "romaji": "Goshurui chizu",
+    "en": "Cinque formaggi panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "ペンネ、プロッシュート、モッツアレッラチーズのクリームソース",
+    "romaji": "Penne, purosshuto, mottsuarerra chizu no kurimu sosu",
+    "en": "Penne, prosciutto and mozzarella cream panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat twice — the dough and the penne.",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "５種類キノコとチーズのクリームソース",
+    "romaji": "Goshurui kinoko to chizu no kurimu sosu",
+    "en": "Five mushrooms and cheese cream panzerotto",
+    "price": "1600yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "アスパラガスとたっぷり野菜のメープルバルサミコソース",
+    "romaji": "Asuparagasu to tappuri yasai no mepuru barusamiko sosu",
+    "en": "Asparagus and vegetables, maple balsamic panzerotto",
+    "price": "1600yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The filling reads vegan but the dough and fryer are not; ask about egg wash and dairy.",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "木綿豆腐と茄子の田楽味噌ソース",
+    "romaji": "Momen dofu to nasu no dengaku miso sosu",
+    "en": "Firm tofu and aubergine, dengaku miso panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Dengaku miso is often loosened with dashi.",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "たっぷりビーフとガラムマサラ風味のトマトソース",
+    "romaji": "Tappuri bifu to garamu masara fumi no tomato sosu",
+    "en": "Beef and garam masala tomato panzerotto",
+    "price": "1600yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "チキンと野菜の特製サルサソース",
+    "romaji": "Chikin to yasai no tokusei sarusa sosu",
+    "en": "Chicken and vegetables with house salsa panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "ポークフィレと野菜のイチジクソース",
+    "romaji": "Poku fire to yasai no ichijiku sosu",
+    "en": "Pork fillet and vegetables with fig sauce panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "白身魚のフィレと野菜のスパイシータルタルソース和え",
+    "romaji": "Shiromizakana no fire to yasai no supaishi tarutaru sosu ae",
+    "en": "Whitefish fillet and vegetables, spicy tartare panzerotto",
+    "price": "1600yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "エビと野菜のクリームソース",
+    "romaji": "Ebi to yasai no kurimu sosu",
+    "en": "Shrimp and vegetables cream panzerotto",
+    "price": "1300yen",
+    "section": "Panzerotti パンツェロッティ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "panzerotto"
+   },
+   {
+    "ja": "フルーツのパンツェロッティ（キャラメル／チョコ／シナモンシュガー）",
+    "romaji": "Furutsu no pantserotti",
+    "en": "Fruit panzerotto: caramel, chocolate or cinnamon sugar",
+    "price": "800yen",
+    "section": "Dolce デザート",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "sweet_panzerotto"
+   },
+   {
+    "ja": "ヘーゼルナッツチョコレートのパンツェロッティ",
+    "romaji": "Hezerunattsu chokoreto no pantserotti",
+    "en": "Hazelnut chocolate panzerotto",
+    "price": "800yen",
+    "section": "Dolce デザート",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "sweet_panzerotto"
+   },
+   {
+    "ja": "アイスクリームとフルーツのパンツェロッティ",
+    "romaji": "Aisukurimu to furutsu no pantserotti",
+    "en": "Ice cream and fruit panzerotto",
+    "price": "800yen",
+    "section": "Dolce デザート",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "sweet_panzerotto"
+   },
+   {
+    "ja": "ビール",
+    "romaji": "Biru",
+    "en": "Beer",
+    "price": "1000yen~",
+    "section": "Drinks ドリンク",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Barley beer; brand not stated.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "グラスワイン／カクテル／ウイスキーなど",
+    "romaji": "Gurasu wain / kakuteru / uisuki nado",
+    "en": "Glass wine, cocktails, whisky etc.",
+    "price": "1200yen~",
+    "section": "Drinks ドリンク",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Whisky is distilled from barley; wine fining agents not stated.",
+    "dish_key": "wine_by_glass"
+   },
+   {
+    "ja": "コーヒー／お茶／ジュース／炭酸水など",
+    "romaji": "Kohi / ocha / jusu / tansansui nado",
+    "en": "Coffee, tea, juice, sparkling water etc.",
+    "price": "600yen~",
+    "section": "Drinks ドリンク",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "soft_drink"
+   }
+  ]
+ },
+ "tokyo_stamina_ramen_oniyama_sh": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.ramenings.com/oniyama"
+  ],
+  "price_note": "The operator (株)INGS publishes a brand page for スタミナラーメン鬼山 渋谷店 with the shop’s address, hours and phone but NO itemised menu and NO prices — so there is one dish here and no price for it. What the page does give is the full build of the signature bowl in the shop’s own words: 「豚ベースのスープに漆黒の甘醤油、極太麺、背脂、ニンニク、ショウガをガツンと効かせた」. That one sentence closes the bowl on both counts — 漆黒の甘醤油 is a sweet soy sauce, therefore wheat, and 極太麺 is extra-thick wheat noodle, on a pork stock. Nothing else is published; a topping list must NOT be inferred from the Jiro-adjacent genre.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "スタミナラーメン",
+    "romaji": "Sutamina ramen",
+    "en": "Stamina ramen",
+    "price": "",
+    "section": "ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shop describes it as pork-stock soup with 漆黒の甘醤油 (sweet soy — wheat), 極太麺 (thick wheat noodles), back fat, garlic and ginger. No price published.",
+    "dish_key": "ramen"
+   }
+  ]
+ },
+ "tokyo_flux_cafe": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.flux-cafe.com/"
+  ],
+  "price_note": "FLUX CAFE 代官山 publishes a prose menu introduction on its own site and NO prices at all — it points to Instagram for the current card («最新メニューの詳細は Instagram でご確認ください»), so every dish below is named by the shop but unpriced. ⚠ THIS SHOP IS FILED UNDER A GLUTEN-FREE-LEANING LABEL AND ITS OWN SIGNATURE INGREDIENT CONTRADICTS THAT. The 一汁三菜 set meals are built on 愛媛の麦みそ and the shop devotes a whole section to it: 「国産大豆に麦麹を加えて作られる麦みそ」. 麦 is BARLEY. Barley-koji miso is gluten, and barley is NOT on Japan’s statutory allergen labelling list, so it will never show up on an allergen chart — the shop is unusually transparent here precisely because it is proud of it. Every teishoku and the サバ味噌煮 use it. ⚠ SECOND TRAP: 愛媛の鯛めし is described as 鯛の刺身に特製の醤油ダレと生卵 — a soy tare poured raw over sashimi, so wheat and not vegan, and it is eat-in only. The fried mains (鶏の唐揚げ, チキン南蛮, とんかつ) are wheat-coated by definition and チキン南蛮 adds a sweet-vinegar soy glaze on top.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "一汁三菜定食",
+    "romaji": "Ichiju-sansai teishoku",
+    "en": "Ichiju-sansai set meal: main, rice, miso soup, two small dishes, salad, pickles",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The miso soup is 愛媛の麦みそ — BARLEY miso, i.e. gluten, and barley is not a labelled allergen in Japan.",
+    "dish_key": "teishoku"
+   },
+   {
+    "ja": "炭火焼きのデミグラスハンバーグ",
+    "romaji": "Sumibiyaki no demigurasu hanbagu",
+    "en": "Charcoal-grilled hamburg steak with demi-glace",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Demi-glace is a roux sauce; hamburg patties are normally bound with panko.",
+    "dish_key": "hamburg_steak"
+   },
+   {
+    "ja": "鶏の唐揚げ",
+    "romaji": "Tori no kara-age",
+    "en": "Kara-age fried chicken",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kara-age marinade is soy and the coating is wheat or wheat-blended starch.",
+    "dish_key": "kara_age"
+   },
+   {
+    "ja": "チキン南蛮",
+    "romaji": "Chikin nanban",
+    "en": "Chicken nanban",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Battered, dipped in a sweet-vinegar soy nanban sauce, then tartare.",
+    "dish_key": "chicken_nanban"
+   },
+   {
+    "ja": "愛媛の鯛めし",
+    "romaji": "Ehime no tai-meshi",
+    "en": "Ehime-style tai-meshi, sea bream sashimi over rice",
+    "price": "",
+    "section": "限定",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Eat-in only. Uwajima style: sashimi with a 特製の醤油ダレ and raw egg — the tare is soy, so wheat.",
+    "dish_key": "tai_meshi"
+   },
+   {
+    "ja": "鶏むね肉の豆腐ハンバーグ",
+    "romaji": "Torimuneniku no tofu hanbagu",
+    "en": "Chicken breast and tofu hamburg steak",
+    "price": "",
+    "section": "限定",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Daikanyama-only. Binder not published; hamburg patties usually contain panko.",
+    "dish_key": "tofu_hamburg"
+   },
+   {
+    "ja": "マテラ豚のトンテキ",
+    "romaji": "Matera-buta no tonteki",
+    "en": "Matera pork tonteki, thick pork steak",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tonteki sauce is a soy and Worcestershire glaze.",
+    "dish_key": "tonteki"
+   },
+   {
+    "ja": "マテラ豚のとんかつ",
+    "romaji": "Matera-buta no tonkatsu",
+    "en": "Matera pork tonkatsu",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Panko-breaded.",
+    "dish_key": "tonkatsu"
+   },
+   {
+    "ja": "サバ味噌煮",
+    "romaji": "Saba misoni",
+    "en": "Mackerel simmered in miso",
+    "price": "",
+    "section": "定食",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The shop states this one also uses the 麦みそ — barley.",
+    "dish_key": "saba_misoni"
+   },
+   {
+    "ja": "プロテインプレート",
+    "romaji": "Purotein pureto",
+    "en": "Protein plate: chicken breast, broccoli, boiled egg",
+    "price": "",
+    "section": "プレート",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The components the shop lists are naturally gluten-free, but no seasoning or allergen statement is published.",
+    "dish_key": "protein_plate"
+   },
+   {
+    "ja": "プロテインドリンク",
+    "romaji": "Purotein dorinku",
+    "en": "Protein drink",
+    "price": "",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Brand and base not published.",
+    "dish_key": "protein_drink"
+   },
+   {
+    "ja": "コーヒー",
+    "romaji": "Kohi",
+    "en": "Coffee, BRANCH COFFEE beans",
+    "price": "",
+    "section": "ドリンク",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Black; the shop names BRANCH COFFEE of Ehime as its roaster.",
+    "dish_key": "coffee"
+   }
+  ]
+ },
+ "tokyo_pizzeria_capoli": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://totalwell.co.jp/"
+  ],
+  "price_note": "NO MENU IS PUBLISHED AND THIS IS A CORRECT, COMPLETE RESULT. The website on file, totalwell.co.jp, is not the pizzeria — it is the operating company Total Well, whose own meta description lists its brands as 「はなもんや」「韓花」「PIZZERIA CAPOLI」「水刺齋（スランジェ）（新宿／渋谷）」. That confirms Capoli is theirs, but the site carries only 会社概要 / 私たちの仕事 / 求人情報 / 特定技能VISAスタッフの紹介 — no shop page, no menu, no prices for any of the four brands. The Tabelog menu link on file is unusable from this machine (Cloudflare challenge since 2026-09-02). Nothing about the food was read, so nothing is recorded.",
+  "last_checked": "2026-09-06",
+  "items": []
+ },
+ "tokyo_chacha_koubou_futatsume": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://chachakoubou.com/",
+   "https://chachakoubou.com/wp-content/themes/menubrand/assets/pdf/menu.pdf"
+  ],
+  "price_note": "EMPTY BECAUSE THE SITE ON FILE IS THE WRONG BRANCH, and that is the finding. chachakoubou.com is 茶々工房 at 東京都新宿区西早稲田2-21-19 — its own アクセス block and its Google Maps pin both say Nishi-Waseda, Shinjuku. The record here is 茶々工房 ふたつめ in Asakusa, Taito (Tabelog A1311/A131102); ふたつめ means «the second one», i.e. a separate later shop. Under the no-cross-branch rule none of the Nishi-Waseda card may be carried across. Separately, even for the Waseda shop the お品書き is a single 15.9 MB PDF (wp-content/themes/menubrand/assets/pdf/menu.pdf) that is a pure image scan — pdftotext returns two bytes — and this machine has no pdftoppm to render it, so those prices are not readable here either. The site names section headings only: 緑茶, その他お飲み物, かき氷, パフェ, 甘味, アイス, おにぎりセット.",
+  "last_checked": "2026-09-06",
+  "items": []
+ }
+}

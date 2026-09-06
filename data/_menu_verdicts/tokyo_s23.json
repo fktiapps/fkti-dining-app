@@ -64,5 +64,401 @@
     "dish_key": "softcream"
    }
   ]
+ },
+ "tokyo_korean_dining_sai": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://dining-sai.com/"
+  ],
+  "price_note": "Complete lunch, dinner and take-out cards from the shop’s own site — だいにんぐ彩（サイ）, Korean home cooking at 台東区花川戸2-11-15, near Sensoji’s Nitenmon. Prices as printed; the site adds ＋100円 for a coffee or tea with lunch, and says further items appear on Tabelog (not reachable from this machine). Lunch 11:30-15:00 (L.O. 14:00), dinner 17:00-23:00 (L.O. 22:00), closed Sundays; take-out orders 11:30-15:00 and 17:00-20:00, with the 特製焼肉弁当 and オードブル requiring advance booking. ⚠ KOREAN HOME COOKING IS A SOY-SAUCE AND GOCHUJANG KITCHEN AND BOTH ARE WHEAT. Commercial gochujang in Japan is made with 小麦粉 as standard, so 石焼きビビンバ, ヤンニョムチキン, トッポギ, キムチ dishes, プデチゲ and チーズタッカルビ are all out unless the shop makes its own from rice — it advertises 自家製コチュジャン for the yangnyeom chicken but does not say what is in it, so that is an ask, not a clearance. ⚠ SEPARATELY THE LUNCH CARD IS HALF JAPANESE-WESTERN: ハンバーグ, 生姜焼き and カレーライス are all wheat (panko, soy-mirin glaze and roux respectively), and the three 煮込みうどん lines are wheat noodles by name. ⚠ CHAPCHAE IS THE ONE THAT SURPRISES PEOPLE: 春雨 sweet-potato glass noodles are naturally wheat-free, but chapchae is dressed in soy sauce, so it goes down on the sauce, not the noodle. What is left is thin: the チョレギサラダ (sesame-oil salad) and the plain rice, both still ask because no allergen statement is published.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "日替わりランチ",
+    "romaji": "Higawari ranchi",
+    "en": "Daily lunch special",
+    "price": "850yen",
+    "section": "LUNCH",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Contents change daily and are not published.",
+    "dish_key": "daily_lunch"
+   },
+   {
+    "ja": "手作りハンバーグ",
+    "romaji": "Tezukuri hanbagu",
+    "en": "Handmade hamburg steak",
+    "price": "980yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Panko binder and a soy or demi-glace sauce.",
+    "dish_key": "hamburg_steak"
+   },
+   {
+    "ja": "生姜焼き",
+    "romaji": "Shogayaki",
+    "en": "Ginger pork",
+    "price": "980yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shogayaki sauce is soy and mirin.",
+    "dish_key": "shogayaki"
+   },
+   {
+    "ja": "カレーライス",
+    "romaji": "Kare raisu",
+    "en": "Curry rice",
+    "price": "980yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Japanese curry roux is wheat.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "石焼きビビンバ",
+    "romaji": "Ishiyaki bibinba",
+    "en": "Stone-pot bibimbap",
+    "price": "980yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Gochujang in Japan is standardly made with wheat flour; namul are usually soy-dressed.",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "キムチ炒飯",
+    "romaji": "Kimuchi chahan",
+    "en": "Kimchi fried rice",
+    "price": "1080yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kimchi seasoning normally carries fish sauce and wheat-based gochujang.",
+    "dish_key": "kimchi_fried_rice"
+   },
+   {
+    "ja": "お肉たっぷりスタミナ丼",
+    "romaji": "Oniku tappuri sutamina don",
+    "en": "Stamina rice bowl, heavy on meat",
+    "price": "980yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-based sauce.",
+    "dish_key": "stamina_don"
+   },
+   {
+    "ja": "カルビクッパ",
+    "romaji": "Karubi kuppa",
+    "en": "Kalbi gukbap (beef rib soup with rice)",
+    "price": "980yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Korean beef soups are seasoned with soy and often gochujang.",
+    "dish_key": "kalbi_gukbap"
+   },
+   {
+    "ja": "石鍋カルビスープ",
+    "romaji": "Ishinabe karubi supu",
+    "en": "Stone-pot kalbi soup",
+    "price": "1100yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kalbi_soup"
+   },
+   {
+    "ja": "煮込みうどん",
+    "romaji": "Nikomi udon",
+    "en": "Simmered udon",
+    "price": "1000yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Udon is wheat.",
+    "dish_key": "nikomi_udon"
+   },
+   {
+    "ja": "塩味の煮込みうどん",
+    "romaji": "Shioaji no nikomi udon",
+    "en": "Salt-seasoned simmered udon",
+    "price": "1000yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Salt-seasoned but still wheat noodles.",
+    "dish_key": "nikomi_udon"
+   },
+   {
+    "ja": "牛すじ入り煮込みうどん",
+    "romaji": "Gyusuji-iri nikomi udon",
+    "en": "Simmered udon with beef tendon",
+    "price": "1250yen",
+    "section": "LUNCH",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "nikomi_udon"
+   },
+   {
+    "ja": "二段弁当",
+    "romaji": "Nidan bento",
+    "en": "Two-tier bento",
+    "price": "1300yen",
+    "section": "LUNCH",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Contents not published.",
+    "dish_key": "bento"
+   },
+   {
+    "ja": "黒毛和牛のプルコギ(2人前)",
+    "romaji": "Kuroge wagyu no purukogi",
+    "en": "Kuroge wagyu bulgogi hotpot, for two",
+    "price": "3800yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bulgogi marinade is soy, sugar and pear.",
+    "dish_key": "bulgogi"
+   },
+   {
+    "ja": "スンドゥブチゲ(1人前)",
+    "romaji": "Sundubu chige",
+    "en": "Sundubu jjigae, for one",
+    "price": "1300yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shop calls this a house favourite. Gochujang and gochugaru pastes are wheat-containing as sold in Japan; the broth is usually anchovy or beef.",
+    "dish_key": "sundubu_jjigae"
+   },
+   {
+    "ja": "プデチゲ(2人前)",
+    "romaji": "Pude chige",
+    "en": "Budae jjigae, for two",
+    "price": "2800yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Army stew contains instant ramyeon noodles by definition — wheat.",
+    "dish_key": "budae_jjigae"
+   },
+   {
+    "ja": "チーズタッカルビ(2人前)",
+    "romaji": "Chizu takkarubi",
+    "en": "Cheese dak-galbi, for two",
+    "price": "2500yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Gochujang marinade; usually served with tteok.",
+    "dish_key": "dak_galbi"
+   },
+   {
+    "ja": "石焼きビビンバ",
+    "romaji": "Ishiyaki bibinba",
+    "en": "Stone-pot bibimbap",
+    "price": "1200yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "チヂミ",
+    "romaji": "Chijimi",
+    "en": "Jeon (Korean savoury pancake), from",
+    "price": "1000yen~",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat-flour batter; dipping sauce is soy.",
+    "dish_key": "jeon"
+   },
+   {
+    "ja": "ヤンニョムチキン",
+    "romaji": "Yannyomu chikin",
+    "en": "Yangnyeom fried chicken",
+    "price": "1200yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shop advertises 自家製コチュジャン but does not publish what is in it; the chicken is battered regardless.",
+    "dish_key": "yangnyeom_chicken"
+   },
+   {
+    "ja": "チャプチェ",
+    "romaji": "Chapuche",
+    "en": "Japchae (sweet-potato glass noodles)",
+    "price": "1200yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The 春雨 noodle itself is sweet potato and wheat-free — it is the soy dressing that rules this out.",
+    "dish_key": "japchae"
+   },
+   {
+    "ja": "トッポギ",
+    "romaji": "Toppogi",
+    "en": "Tteokbokki",
+    "price": "900yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Rice cakes, but the sauce is gochujang; fish cake is usual.",
+    "dish_key": "tteokbokki"
+   },
+   {
+    "ja": "キムチポックム",
+    "romaji": "Kimuchi pokkumu",
+    "en": "Stir-fried kimchi",
+    "price": "1200yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kimchi_bokkeum"
+   },
+   {
+    "ja": "チョレギサラダ",
+    "romaji": "Choregi sarada",
+    "en": "Choregi salad (sesame-oil dressed greens)",
+    "price": "880yen",
+    "section": "DINNER",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The plainest thing on the card, but choregi dressing usually contains soy sauce; no ingredients published.",
+    "dish_key": "choregi_salad"
+   },
+   {
+    "ja": "koreanカルビスープ",
+    "romaji": "Korean karubi supu",
+    "en": "Korean kalbi soup",
+    "price": "980yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kalbi_soup"
+   },
+   {
+    "ja": "カルビ麺",
+    "romaji": "Karubi men",
+    "en": "Kalbi noodles",
+    "price": "1200yen",
+    "section": "DINNER",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Noodle type not stated; wheat unless proven otherwise.",
+    "dish_key": "kalbi_noodles"
+   },
+   {
+    "ja": "生野菜のせビビンバ",
+    "romaji": "Namayasai nose bibinba",
+    "en": "Bibimbap topped with raw vegetables, take-out",
+    "price": "800yen",
+    "section": "TAKE OUT ALL TIME",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "スタミナ丼",
+    "romaji": "Sutamina don",
+    "en": "Stamina rice bowl, take-out",
+    "price": "800yen",
+    "section": "TAKE OUT ALL TIME",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "stamina_don"
+   },
+   {
+    "ja": "手作りハンバーグ弁当",
+    "romaji": "Tezukuri hanbagu bento",
+    "en": "Handmade hamburg steak bento",
+    "price": "800yen",
+    "section": "TAKE OUT ALL TIME",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hamburg_bento"
+   },
+   {
+    "ja": "生姜焼き弁当",
+    "romaji": "Shogayaki bento",
+    "en": "Ginger pork bento",
+    "price": "800yen",
+    "section": "TAKE OUT ALL TIME",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "shogayaki_bento"
+   },
+   {
+    "ja": "特製焼肉弁当",
+    "romaji": "Tokusei yakiniku bento",
+    "en": "Special yakiniku bento, advance order required",
+    "price": "1600yen",
+    "section": "TAKE OUT ALL TIME",
+    "gf": "no",
+    "vegan": "no",
+    "note": "要予約. Yakiniku tare is soy-based.",
+    "dish_key": "yakiniku_bento"
+   },
+   {
+    "ja": "豚キムチ丼",
+    "romaji": "Buta kimuchi don",
+    "en": "Pork and kimchi rice bowl, from 17:00",
+    "price": "900yen",
+    "section": "TAKE OUT 17:00-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "buta_kimchi_don"
+   },
+   {
+    "ja": "唐揚げ弁当",
+    "romaji": "Kara-age bento",
+    "en": "Kara-age bento, from 17:00",
+    "price": "1000yen",
+    "section": "TAKE OUT 17:00-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy marinade and wheat coating.",
+    "dish_key": "kara_age_bento"
+   },
+   {
+    "ja": "koreanチヂミ",
+    "romaji": "Korean chijimi",
+    "en": "Korean jeon, take-out, from 17:00",
+    "price": "1000yen",
+    "section": "TAKE OUT 17:00-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "jeon"
+   },
+   {
+    "ja": "オードブル",
+    "romaji": "Odoburu",
+    "en": "Hors d’oeuvre platter, advance order required",
+    "price": "3000yen",
+    "section": "TAKE OUT 17:00-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "要予約; contents not published.",
+    "dish_key": "party_platter"
+   }
+  ]
  }
 }
