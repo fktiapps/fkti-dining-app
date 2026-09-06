@@ -1,3 +1,17 @@
+# Resume here — updated 2026-09-06T00:43Z, grinder run (33rd consecutive blocked run for THIS session)
+
+## Exact Tokyo menu state, 2026-09-06T00:43Z UTC — UNCHANGED from the last entry (2026-09-05T16:42Z)
+579 visible Tokyo records, 251 with an inline menu (43.4%), gap 328. This
+run's own Step 1 found 0 NEW Tokyo verdicts (nothing landed from any other
+session since the last run) — merge --dry/--apply was a no-op except for
+the guarded soy-meat banner strip (net-zero re-added by the flagging pass,
+as every prior run). Curl probe to tabelog.com: `000` (proxy connect_rejected)
+— 33rd consecutive block for this session, Step 2 skipped per the standing
+instruction. Verdict-file research status, next dispatch order and residual
+math are all unchanged — see the 08:44Z (2026-09-05) entry below. See
+docs/GRINDER-LOG.md for this run's entry.
+
+---
 # Resume here — updated 2026-09-05T16:42Z, grinder run (32nd consecutive blocked run for THIS session)
 
 ## Exact Tokyo menu state, 2026-09-05T16:42Z UTC — UNCHANGED from the last entry (2026-09-05T08:44Z)
