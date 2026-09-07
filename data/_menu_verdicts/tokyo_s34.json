@@ -285,5 +285,306 @@
     "dish_key": "sake"
    }
   ]
+ },
+ "tokyo_tansouan_kenjiro": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tansouan.com/"
+  ],
+  "price_note": "tansouan.com DOES NOT RESOLVE. Google 8.8.8.8 and Cloudflare 1.1.1.1 both return SERVFAIL — the zone's nameservers are not answering, rather than the name having been withdrawn — so there was no page to read and no menu has been established. Worth one cheap DNS retry on a future tick before anyone spends a full research slot on it; a SERVFAIL is a different failure from the NXDOMAIN that 渋谷更科's domain returns. The dataset's only other link is Tabelog, which 403s from this egress. Nothing about the shop's food is recorded.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_tochigiya_shoten": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://tochigiya20.thebase.in/"
+  ],
+  "price_note": "THE SHOP'S ONLINE STORE HAS BEEN TAKEN DOWN. tochigiya20.thebase.in answers, but with an HTTP 302 straight to https://thebase.com/ — the platform's own marketing homepage. That is what BASE serves for a shop that has been closed or deleted, and it is a definite negative rather than an ambiguous one: the store exists as a hostname, it just has no storefront behind it any more. There is therefore no product list, no price list and no menu to read, and the dataset's website field is stale. The only other link on file is Tabelog, which serves a Cloudflare managed challenge to this egress. ⚠ WORTH NOTING FOR WHOEVER PICKS THIS UP: a thebase.in address is a mail-order storefront, not a restaurant menu, so even when it was live it would have listed retail goods at retail prices rather than a counter card — a BASE shop should never be merged into a menu record as though its product prices were dish prices. Nothing about what 栃木家商店 serves in Asakusa is established here and no item is recorded.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_kanoya_shinjuku_nishiguc": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "http://www.kanoya-g.jp/soba.html",
+   "http://www.kanoya-g.jp/",
+   "http://www.kanoya-g.jp/izakaya.html"
+  ],
+  "price_note": "⚠ READ THE BRANCH CAVEAT BEFORE USING THESE PRICES. かのや食品's 事業紹介 page for the 生そば・讃岐うどん かのや business publishes a 主なメニュー list of five priced lines, but the 店舗紹介 block on that same page names only ONE shop — 新宿東南口店 (新宿3-36-2 新宿キリンビル 1F, 03-3226-8633) — and this record is the 西口店. The priced list sits under the business heading rather than under that branch heading, and the page title covers 上野、新橋、新宿 collectively, so these are the brand's representative standing-soba prices rather than a card confirmed for the west-exit shop. They are recorded provisional and medium for exactly that reason; a coeliac would not be misled by them either way, because nothing on this menu is edible for one. ⚠ THE SOBA HERE IS 五割 — THE SHOP SAYS SO ITSELF. 「かのやのそばは、五割そば」: fifty per cent buckwheat, which means the other fifty per cent is wheat flour, declared by the operator on its own page. That is a much blunter fact than the usual 打ち粉 argument and it makes every soba line an outright no rather than an ask. The udon is 手打ち wheat by definition. ⚠ THE DASHI IS BOTH THE VEGAN ANSWER AND HALF THE GLUTEN ANSWER, AND THE SHOP SPELLS IT OUT. The soba dashi is 本ガツオ節・ソーダカツオ節・サバ節; the udon dashi is 瀬戸内のにぼし・利尻昆布・ウルメ・カツオ・サバ. Four of the five udon-dashi ingredients are fish, so no bowl in this shop is vegan, and a Japanese noodle tsuyu is finished with soy sauce, which is wheat-brewed unless declared tamari. ⚠ ミニカレー IS THE ONE PEOPLE ASSUME IS SAFE AND IT IS NOT: Japanese curry is thickened with a wheat-flour roux. The company also runs an unrelated 居酒屋 かのや in Ueno with its own prices; that is a different business on the same corporate site and none of it is recorded here. Drinking water at the shops is stated to be π-water, which is a marketing claim and not a dietary one.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "かのやうどん",
+    "romaji": "Kanoya Udon",
+    "en": "The house udon",
+    "price": "500yen",
+    "section": "主なメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Hand-cut wheat udon in a niboshi, kombu, urume, katsuo and saba dashi. Brand-level price; the branch named on the page is 東南口店.",
+    "dish_key": "kanoya_udon"
+   },
+   {
+    "ja": "ぶっかけうどん",
+    "romaji": "Bukkake Udon",
+    "en": "Bukkake udon",
+    "price": "500yen",
+    "section": "主なメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat udon; bukkake tsuyu is a concentrated soy-and-dashi dressing. Brand-level price.",
+    "dish_key": "bukkake_udon"
+   },
+   {
+    "ja": "かけそばうどん",
+    "romaji": "Kake Soba / Udon",
+    "en": "Plain kake soba or udon",
+    "price": "290yen",
+    "section": "主なメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The soba is 五割 — the shop states half the flour is not buckwheat. Brand-level price.",
+    "dish_key": "kake_soba"
+   },
+   {
+    "ja": "かき揚げそば",
+    "romaji": "Kakiage Soba",
+    "en": "Soba with a kakiage fritter",
+    "price": "430yen",
+    "section": "主なメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kakiage is a wheat-batter fritter on top of 五割 soba, and the fryer is shared. Brand-level price.",
+    "dish_key": "kakiage_soba"
+   },
+   {
+    "ja": "ミニカレー",
+    "romaji": "Mini Curry",
+    "en": "Small curry",
+    "price": "340yen",
+    "section": "主なメニュー",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Japanese curry is thickened with a wheat-flour roux. Brand-level price.",
+    "dish_key": "mini_curry"
+   }
+  ]
+ },
+ "tokyo_hashidaya_honten": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "http://www.hashidaya.com/",
+   "http://www.hashidaya.com/top2.html",
+   "http://www.hashidaya.com/shibuya/index.html",
+   "http://www.hashidaya.com/shibuya/menu/index.html",
+   "http://www.hashidaya.com/shibuya/osusume/index.html",
+   "http://www.hashidaya.com/shibuya/kodawari/index.html"
+  ],
+  "price_note": "はし田屋'S SITE IS LIVE AND EVERY WORD OF IT IS A PICTURE. The domain serves a Shift-JIS splash with a Flash object and three branch doors — NAKAMEGURO / SHIBUYA / SAPPORO. The Shibuya section (the one matching this record's Shibuya location) does have the right pages: /shibuya/menu/index.html is titled 「鶏料理　はし田屋　昼・夜のお品書き」, /shibuya/osusume/ is 「おすすめの料理」 and /shibuya/kodawari/ is 「素材のこだわり」. All three were fetched, decoded from Shift-JIS and read. Each returns between 2.7 and 4.3 KB of markup whose entire body is a title, a table of spacer GIFs and image tags — the お品書き itself is a scanned or typeset image, so there is no dish name and no price to extract, and there is no PDF and no text alternative. That is the finding: the menu is published, but not in any form a fetcher can read. ⚠ ONE THING IS ESTABLISHED AND IT IS THE CATEGORY: the site's own page titles call this 鶏料理 — a chicken house — and the Shibuya top page carries a 7月11日 opening-hours update, so the site is maintained rather than abandoned. ⚠ WHAT THAT IMPLIES, AND IT IS IMPLICATION NOT EVIDENCE, is that a 鶏料理 specialist in Japan is normally built on 焼鳥 with a soy-mirin タレ, 唐揚げ in a wheat-and-starch dredge, and a 親子丼 or 鶏スープ finished with soy — none of which is safe, and none of which is recorded here as an item, because the shop has published no item this machine can read. It is also unconfirmed which of the three branches is the 本店; the record's Tabelog area code points at Shibuya and that is the section that was read. Anyone revisiting this needs eyes on the images or a phone call.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_sou_san_no_gyoza_suidoba": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.sousan.jp/"
+  ],
+  "price_note": "THE SHOP'S WIX SITE PUBLISHES ITS LUNCH CARD, ITS SIDE MENU AND ITS COURSE CONTENTS AS TEXT BUT SETS EVERY PRICE AS AN IMAGE, so the dish names below are first-party and complete while the figures are almost entirely missing. The prices that ARE text are recorded: +100円 to upgrade the set rice to 魯肉飯, a 500円 wooden 木札 that makes your first drink free permanently, 100円 off a refill, and +2,000円 (税込) for two hours of nomihodai on the course. A customer review reproduced on the shop's own page reports 焼き餃子定食4個 at 850円 (税込); that is a diner's report rather than the shop's own price list and is deliberately NOT attached to the item. The shop is the Suidobashi sister of Roppongi's 餃包 and also runs a kitchen car under the name 林煎包. ⚠ THE ONE ITEM WORTH THE TRIP IS THE 豆花. Soy-milk pudding served 黒蜜きなこ — sugar syrup and roasted soybean flour — is starch-free, wheat-free and animal-free, and on a card that is otherwise wall-to-wall wheat wrappers it is the only line recorded gf AND vegan. ⚠ EVERYTHING THE SHOP IS NAMED FOR IS WHEAT. 焼き餃子, 焼売, 小籠包, 春巻き and 台湾まぜそば are all wheat dough, and 台湾まぜそば is a dry sauced noodle, which puts more soy on the plate rather than less. 油淋鶏 is fried chicken under a soy-vinegar-and-negi dressing. The ten-item 本格中華三昧コース is listed in full — 肉もやし／ザーサイ／くらげきゅうり／むし鶏のネギソース／よだれ鶏／手羽先ザンギ／シューマイ／春巻き／台湾まぜそば plus the 焼餃子 — and of those ten, ザーサイ is the only one that is plausibly plant-based, and even that is a pickle whose dressing is not described.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "焼き餃子定食",
+    "romaji": "Yaki Gyoza Teishoku",
+    "en": "Pan-fried gyoza set — gyoza, rice and soup",
+    "price": "",
+    "section": "ランチメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat wrapper. Rice can be upgraded to 魯肉飯 for +100円. Price is published only as an image; a review on the shop’s own page reports 850円 for the four-piece set.",
+    "dish_key": "yaki_gyoza_teishoku"
+   },
+   {
+    "ja": "二段せいろ蒸し定食",
+    "romaji": "Nidan Seiro Mushi Teishoku",
+    "en": "Two-tier steamer set — 4 shumai, 3 xiaolongbao, rice and soup (shop’s recommendation)",
+    "price": "",
+    "section": "ランチメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Both the shumai and the xiaolongbao are wheat wrappers. Rice upgrade to 魯肉飯 +100円. Price published only as an image.",
+    "dish_key": "nidan_seiro_teishoku"
+   },
+   {
+    "ja": "油淋鶏定食",
+    "romaji": "Yurinchi Teishoku",
+    "en": "Yurinchi set — fried chicken with spring-onion sauce, rice and soup",
+    "price": "",
+    "section": "ランチメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Fried chicken under a soy-and-vinegar negi dressing. Rice upgrade +100円. Price published only as an image.",
+    "dish_key": "yurinchi_teishoku"
+   },
+   {
+    "ja": "台湾まぜそば（スープ付き）",
+    "romaji": "Taiwan Mazesoba",
+    "en": "Taiwanese mazesoba with soup (shop’s recommendation)",
+    "price": "",
+    "section": "ランチメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle, sauced not souped. Price published only as an image.",
+    "dish_key": "taiwan_mazesoba"
+   },
+   {
+    "ja": "焼き餃子４個",
+    "romaji": "Yaki Gyoza 4-ko",
+    "en": "Four pan-fried gyoza",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat wrapper. Price published only as an image.",
+    "dish_key": "yaki_gyoza"
+   },
+   {
+    "ja": "点心セット",
+    "romaji": "Tenshin Set",
+    "en": "Dim sum set",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Dim sum here means shumai and xiaolongbao — wheat. Price published only as an image.",
+    "dish_key": "tenshin_set"
+   },
+   {
+    "ja": "豆花（豆乳プリン黒蜜きなこ付）",
+    "romaji": "Douhua",
+    "en": "Douhua — soy-milk pudding served with black sugar syrup and kinako",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "THE ONE CLEAN LINE ON THIS CARD: soy milk, sugar syrup and roasted soybean flour. Price published only as an image.",
+    "dish_key": "douhua"
+   },
+   {
+    "ja": "魯肉飯",
+    "romaji": "Rou Rou Fan",
+    "en": "Lu rou fan — braised pork over rice; offered as a +100円 upgrade to any set’s rice",
+    "price": "+100yen (セットのライス変更)",
+    "section": "ランチメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Rice, but braised in soy sauce by definition.",
+    "dish_key": "lu_rou_fan"
+   },
+   {
+    "ja": "本格中華三昧コース",
+    "romaji": "Honkaku Chuka Zanmai Course",
+    "en": "Ten-dish banquet course: pork-and-beansprouts, zhacai, jellyfish and cucumber, steamed chicken with spring-onion sauce, yodare-dori, fried chicken wings, shumai, spring rolls, Taiwanese mazesoba, plus the house pan-fried gyoza",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Ten dishes, of which shumai, spring rolls, mazesoba and gyoza are all wheat and the rest are soy-dressed. +2,000円 (税込) adds two hours of nomihodai. Course price published only as an image.",
+    "dish_key": "chuka_zanmai_course"
+   },
+   {
+    "ja": "ザーサイ",
+    "romaji": "Zasai",
+    "en": "Zhacai — pickled mustard tuber; part of the ten-dish course",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only plausibly plant-based line in the course, but the dressing is not described.",
+    "dish_key": "zhacai"
+   },
+   {
+    "ja": "くらげきゅうり",
+    "romaji": "Kurage Kyuri",
+    "en": "Jellyfish and cucumber; part of the ten-dish course",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "jellyfish_cucumber"
+   },
+   {
+    "ja": "むし鶏のネギソース",
+    "romaji": "Mushidori no Negi Sauce",
+    "en": "Steamed chicken with spring-onion sauce; part of the ten-dish course",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "steamed_chicken_negi"
+   },
+   {
+    "ja": "よだれ鶏",
+    "romaji": "Yodare Dori",
+    "en": "Yodare-dori — poached chicken in chilli oil; part of the ten-dish course",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Yodare-dori sauce is soy, black vinegar and chilli oil.",
+    "dish_key": "yodare_dori"
+   },
+   {
+    "ja": "手羽先ザンギ",
+    "romaji": "Tebasaki Zangi",
+    "en": "Fried chicken wings; part of the ten-dish course",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Zangi is dredged and fried, and marinated in soy.",
+    "dish_key": "tebasaki_zangi"
+   },
+   {
+    "ja": "肉もやし",
+    "romaji": "Niku Moyashi",
+    "en": "Pork and beansprouts; part of the ten-dish course",
+    "price": "",
+    "section": "ディナーコース",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "niku_moyashi"
+   },
+   {
+    "ja": "木札（会員制度）",
+    "romaji": "Kifuda",
+    "en": "Wooden tag membership — buy once and your first drink is free indefinitely",
+    "price": "500yen",
+    "section": "会員制度",
+    "gf": "",
+    "vegan": "",
+    "note": "Not a food item; recorded because it is one of the few figures the shop publishes as text.",
+    "dish_key": "kifuda_membership"
+   },
+   {
+    "ja": "飲み放題（コース追加）",
+    "romaji": "Nomihodai",
+    "en": "Two hours of all-you-can-drink added to the course",
+    "price": "2000yen (税込)",
+    "section": "ディナーコース",
+    "gf": "",
+    "vegan": "",
+    "note": "Drink list includes Sapporo Lager bottles, premium alcohol-free beer, highballs, hoppy, sours, umeshu, shochu, shaoxing and soft drinks. ⚠ Beer is barley; shaoxing is a wheat-koji rice wine.",
+    "dish_key": "nomihodai"
+   }
+  ]
  }
 }

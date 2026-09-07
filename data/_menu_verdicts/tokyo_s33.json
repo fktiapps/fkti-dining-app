@@ -819,5 +819,84 @@
   "price_note": "SACYA'S SITE IS LIVE AND PUBLISHES NO MENU. Both the Shibuya Scramble Square shop page and the company's /cafe/ index were fetched and read in full: they give the address (B2F, Shibuya Scramble Square, 2-24-12 Shibuya) and postcode and nothing else about what is served — no drink list, no prices, no PDF, no allergen note. The /menu/ path was probed and 404s. The site's ONLINE STORE panel reads 「coming soon.」 and its store.sacya.jp link was not used, because a retail bean/leaf shop is not this café's counter menu and quoting it here would attach the wrong prices to the record. The company's other listed location, SACYA 代官山, is explicitly marked 「※現在リニューアルに向けて閉業中」 — closed for renovation — which is a useful signal that the site IS maintained, and therefore that the absence of a menu is a choice rather than neglect. The dataset's menu_url is Tabelog, unreachable from this egress. SACYA is recorded as a matcha specialty café; a matcha stand is a genuinely promising GF and vegan candidate (whisked tea is neither wheat nor dairy, and plant milks are common), so this record is worth finishing when a menu source appears — but nothing has been established here.",
   "last_checked": "2026-09-07",
   "items": []
+ },
+ "tokyo_tempura_shinjuku_tsunaha": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.tunahachi.co.jp/store/53.html",
+   "https://www.tunahachi.co.jp/store/index.html",
+   "https://www.tunahachi.co.jp/calorie/"
+  ],
+  "price_note": "つな八'S OWN PAGE FOR 総本店別館 WAS FETCHED AND READ IN FULL AND IT DESCRIBES ITS COURSES WITHOUT NAMING OR PRICING THEM — the course titles and the per-course prices are set as images, so what survives as text is the composition of each course and nothing else. Those compositions are recorded below verbatim because they are genuinely useful (they tell you how many fried items and of what kind), but no course here has a name or a price and none has been invented. The only figures on the page are 平均予算: 2,500円 at lunch and 5,000円 at dinner. 総本店別館 is 新宿3-28-4 TRES SHINJUKU 6F・B1F, open 11:00–22:00 (L.O. 21:00), 35 seats on 6F and 34 in the basement, all non-smoking. Lunch courses run to 15:00 (L.O. 15:00) per a 2026/07/07 notice. ⚠ THE ONE PIECE OF REAL ALLERGEN INFORMATION ON THE WHOLE SITE IS THE FRYING OIL, AND IT IS FIRST-PARTY: 「天ぷら新宿つな八 の天ぷら油は創業以来ヘルシーなごま油を使用しています」 — the shop has fried in SESAME OIL since it was founded. Sesame is one of Japan's statutory allergen items and this is a whole-restaurant, every-dish fact, so anyone with a sesame allergy cannot eat here at all. It is the single most valuable line recovered from this record. ⚠ THE /calorie/ PAGE IS NOT AN ALLERGEN TABLE. It exists, it is titled カロリー情報, and its actual table is an image; the page's only readable content is the sesame-oil sentence and a citation to a 2009 Takahashi Shoten calorie dictionary. ⚠ TEMPURA IS WHEAT AND THERE IS NO VERSION OF THIS MEAL THAT IS NOT. Every course is a run of items fried in a wheat-flour-and-egg batter in shared oil, and the 天つゆ served with it is dashi, mirin and soy sauce — so each course is recorded no on both axes. お揃い at the end of each composition is the rice, miso soup and pickles that close a tempura course; the miso soup is dashi-based and the pickles are usually soy-cured.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "ディナーコース（海老二尾、魚介二品、野菜三品、かき揚げ、お揃い）",
+    "romaji": "Dinner Course",
+    "en": "Dinner course: two prawns, two seafood items, three vegetables, kakiage, and the closing rice/soup/pickles set",
+    "price": "",
+    "section": "ディナー 11:00〜22:00 (L.O.21:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter fried in sesame oil. Course name and price are published only as images. Average dinner spend 5,000円.",
+    "dish_key": "tempura_course_dinner_a"
+   },
+   {
+    "ja": "ディナーコース（車海老、いか、魚介、野菜二品、つな八流天ぷら、穴子、かき揚げ、お揃い）",
+    "romaji": "Dinner Course (larger)",
+    "en": "Dinner course: kuruma prawn, squid, seafood, two vegetables, the house-style tempura, conger eel, kakiage, and the closing set",
+    "price": "",
+    "section": "ディナー 11:00〜22:00 (L.O.21:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter fried in sesame oil. Name and price published only as images.",
+    "dish_key": "tempura_course_dinner_b"
+   },
+   {
+    "ja": "旬のおまかせ",
+    "romaji": "Shun no Omakase",
+    "en": "Seasonal omakase — the chef chooses and fries the season’s ingredients",
+    "price": "",
+    "section": "ディナー 11:00〜22:00 (L.O.21:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter fried in sesame oil. No price published.",
+    "dish_key": "tempura_omakase"
+   },
+   {
+    "ja": "ランチコース（海老二尾、魚介、野菜三品、かき揚げ、お揃い）",
+    "romaji": "Lunch Course",
+    "en": "Lunch course: two prawns, seafood, three vegetables, kakiage, and the closing set",
+    "price": "",
+    "section": "ランチ 11:00〜15:00 (L.O.15:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter fried in sesame oil. Average lunch spend 2,500円. Name and price published only as images.",
+    "dish_key": "tempura_course_lunch_a"
+   },
+   {
+    "ja": "ランチコース（海老二尾、魚介二品、野菜二品、かき揚げ、お揃い）",
+    "romaji": "Lunch Course",
+    "en": "Lunch course: two prawns, two seafood items, two vegetables, kakiage, and the closing set",
+    "price": "",
+    "section": "ランチ 11:00〜15:00 (L.O.15:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter fried in sesame oil. Name and price published only as images.",
+    "dish_key": "tempura_course_lunch_b"
+   },
+   {
+    "ja": "ランチコース（車海老、いか、魚介、野菜二品、つな八流天ぷら、穴子、かき揚げ、お揃い）",
+    "romaji": "Lunch Course (larger)",
+    "en": "Lunch course: kuruma prawn, squid, seafood, two vegetables, the house-style tempura, conger eel, kakiage, and the closing set",
+    "price": "",
+    "section": "ランチ 11:00〜15:00 (L.O.15:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter fried in sesame oil. Name and price published only as images.",
+    "dish_key": "tempura_course_lunch_c"
+   }
+  ]
  }
 }

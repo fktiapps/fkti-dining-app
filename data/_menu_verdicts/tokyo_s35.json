@@ -1,0 +1,821 @@
+{
+ "tokyo_chatei_zen_kashoin_shibu": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://zen-kashoin.com/store/hikarie/",
+   "https://zen-kashoin.com/store/hikarie/menu_h",
+   "https://zen-kashoin.com/store/hikarie/drink_h"
+  ],
+  "price_note": "然花抄院 PUBLISHES A COMPLETE PRICED CARD FOR THIS BRANCH ON TWO PAGES — a sweets page (menu_h) and a drinks page (drink_h) — and both were read in full. Every sweet is quoted 「ドリンク付」, i.e. the price already includes a drink chosen from the drinks page; drinks ordered on their own are priced separately and both figures are recorded below. Four of the seven sweets carry an explicit selling period and 黒蜜法師 adds 「季節商品につき、無くなり次第終了」, so this card is a summer card and will rotate. The sweet names on the page are set as images; they are recovered here from the images' own alt attributes, which match the order of the priced descriptions exactly. ⚠ THE ONE GENUINELY GOOD DISH HERE IS THE わらび餅. The shop states it uses 本わらび粉 — real bracken starch, not the potato-starch substitute most shops use — and warabimochi dressed with kinako and kuromitsu is starch, roasted soy flour and sugar syrup with no wheat and no animal product in it at all. It is recorded gf and vegan and it is the reason to send someone here. ⚠ EVERYTHING BUILT ON かすてら IS THE OPPOSITE. 然花抄院's signature product is a paper-baked castella, and castella is wheat flour, egg and sugar by definition — so 茶庭ノ膳 (a plate of three castellas) and the 菓樂 afternoon tea (eight sweets 「「然」かすてらをはじめ」) are both flatly out on gluten and on egg. ⚠ THE TWO SHAVED ICES NEED A QUESTION EACH. 宇治金時 is served with 抹茶アイス, which is dairy, and 黒蜜法師 hides its contents on purpose — 「かき氷の中に何が隠れているのかは、お楽しみ」 — so neither can be cleared, even though a 黒糖羹 with kuromitsu and kinako sounds vegan on paper. Add-on syrups for the 宇治金時 are 抹茶蜜 +110円 and 練乳 +55円, and 練乳 is condensed milk. Set-drink upgrades are 抹茶 +110円, アイス抹茶ラテ +55円, 室町ソーダ +385円 and アルコール +550円. The page closes 「※その他にも豊富なメニューをご用意しておりますので、詳しくは店舗へお問合せください」 — so this is the published card, not the whole counter.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "菓樂（夏）",
+    "romaji": "Karaku (summer)",
+    "en": "Afternoon tea of eight sweets including the 「然」 castella; a single-person portion. Drink included",
+    "price": "2090yen (ドリンク付き)",
+    "section": "御菓子",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Built around castella — wheat flour and egg. Sold 6月1日〜9月16日.",
+    "dish_key": "karaku_afternoon_tea"
+   },
+   {
+    "ja": "水車厘（みずぜりぃ）",
+    "romaji": "Mizu Zerii",
+    "en": "\"Water\" jelly made with natural spring water; choose 黒蜜 or すだち. Drink included",
+    "price": "1650yen (ドリンク付)",
+    "section": "御菓子",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "The jelly is water, syrup and a gelling agent; the shop does not say whether that agent is gelatine or agar, so vegan is unresolved. Sold 6月1日〜9月16日.",
+    "dish_key": "mizu_zerii"
+   },
+   {
+    "ja": "然ノ氷　かき氷宇治金時",
+    "romaji": "Zen no Kori — Uji Kintoki",
+    "en": "Finely shaved ice with matcha syrup, matcha ice cream and azuki. Drink included",
+    "price": "1760yen (ドリンク付)",
+    "section": "御菓子",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Contains 抹茶アイス (dairy). Add 抹茶蜜 +110円 or 練乳 +55円 — 練乳 is condensed milk. Sold 4月16日〜9月中旬.",
+    "dish_key": "kakigori_uji_kintoki"
+   },
+   {
+    "ja": "わらび餅",
+    "romaji": "Warabimochi",
+    "en": "Freshly made warabimochi using genuine bracken starch. Drink included",
+    "price": "1650yen (ドリンク付)",
+    "section": "御菓子",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "The one clean line on this card: 本わらび粉 with kinako and kuromitsu is starch, roasted soy flour and sugar. Sold 6月1日〜10月31日.",
+    "dish_key": "warabimochi"
+   },
+   {
+    "ja": "然ノ氷　黒蜜法師",
+    "romaji": "Zen no Kori — Kuromitsu Hoshi",
+    "en": "Shaved ice over a Tamba black-soybean brown-sugar kanten, dressed with kuromitsu and kinako. Drink included",
+    "price": "1760yen (ドリンク付き)",
+    "section": "御菓子",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ The shop deliberately does not say what is inside — 「かき氷の中に何が隠れているのかは、お楽しみ」. Sold 8月1日〜9月上旬, ends when stock does.",
+    "dish_key": "kakigori_kuromitsu_hoshi"
+   },
+   {
+    "ja": "茶庭ノ膳",
+    "romaji": "Chatei no Zen",
+    "en": "A plate of the three paper-baked castellas: 抹茶の然かすてら「碾」, 卵蜜, and 「然」かすてら. Drink of your choice included",
+    "price": "1650yen (ドリンク付)",
+    "section": "御菓子",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Castella is wheat flour and egg; 卵蜜 is made of egg yolk.",
+    "dish_key": "chatei_no_zen"
+   },
+   {
+    "ja": "「然」アイス",
+    "romaji": "Zen Ice",
+    "en": "The shop’s original ice cream — choose two of houjicha, matcha and vanilla. Drink included",
+    "price": "1320yen (ドリンク付)",
+    "section": "御菓子",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy ice cream.",
+    "dish_key": "zen_ice"
+   },
+   {
+    "ja": "煎　茶",
+    "romaji": "Sencha",
+    "en": "Sencha",
+    "price": "880yen",
+    "section": "お飲物 — 日本茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "sencha"
+   },
+   {
+    "ja": "玄米茶",
+    "romaji": "Genmaicha",
+    "en": "Genmaicha — green tea with roasted brown rice",
+    "price": "880yen",
+    "section": "お飲物 — 日本茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Roasted rice, not barley — 玄米茶 is not 麦茶.",
+    "dish_key": "genmaicha"
+   },
+   {
+    "ja": "昆布茶",
+    "romaji": "Kobucha",
+    "en": "Kelp tea",
+    "price": "880yen",
+    "section": "お飲物 — 日本茶",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Commercial kombu-cha powders sometimes carry wheat-derived seasoning; ask.",
+    "dish_key": "kobucha"
+   },
+   {
+    "ja": "京番茶",
+    "romaji": "Kyo Bancha",
+    "en": "Kyoto smoked bancha",
+    "price": "880yen",
+    "section": "お飲物 — 日本茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "kyo_bancha"
+   },
+   {
+    "ja": "抹　茶",
+    "romaji": "Matcha",
+    "en": "Matcha whisked with water from the tea kettle",
+    "price": "990yen",
+    "section": "お飲物 — 日本茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "matcha"
+   },
+   {
+    "ja": "水出し煎茶",
+    "romaji": "Mizudashi Sencha",
+    "en": "Cold-brewed sencha",
+    "price": "880yen",
+    "section": "お飲物 — 日本茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "From 6月1日.",
+    "dish_key": "mizudashi_sencha"
+   },
+   {
+    "ja": "竹炭焙煎コーヒー（I/H）",
+    "romaji": "Chikutan Baisen Coffee",
+    "en": "Bamboo-charcoal roasted coffee, iced or hot",
+    "price": "880yen",
+    "section": "お飲物 — コーヒー・紅茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "charcoal_roast_coffee"
+   },
+   {
+    "ja": "アメリカン",
+    "romaji": "American",
+    "en": "American coffee",
+    "price": "880yen",
+    "section": "お飲物 — コーヒー・紅茶",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "american_coffee"
+   },
+   {
+    "ja": "カフェオレ（I/H）",
+    "romaji": "Cafe au Lait",
+    "en": "Café au lait, iced or hot",
+    "price": "880yen",
+    "section": "お飲物 — コーヒー・紅茶",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "cafe_au_lait"
+   },
+   {
+    "ja": "ホットティー（ストレート・ミルク・レモン）",
+    "romaji": "Hot Tea",
+    "en": "Hot tea — straight, with milk or with lemon",
+    "price": "880yen",
+    "section": "お飲物 — コーヒー・紅茶",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Straight or lemon is plant-based; the milk option is not.",
+    "dish_key": "hot_tea"
+   },
+   {
+    "ja": "アイスティー（ストレート・ミルク・レモン）",
+    "romaji": "Ice Tea",
+    "en": "Iced tea — straight, with milk or with lemon",
+    "price": "880yen",
+    "section": "お飲物 — コーヒー・紅茶",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Straight or lemon is plant-based; the milk option is not.",
+    "dish_key": "ice_tea"
+   },
+   {
+    "ja": "オレンジジュース",
+    "romaji": "Orange Juice",
+    "en": "Orange juice",
+    "price": "880yen",
+    "section": "お飲物 — ソフトドリンク",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "orange_juice"
+   },
+   {
+    "ja": "アイス抹茶ラテ",
+    "romaji": "Ice Matcha Latte",
+    "en": "Iced matcha latte",
+    "price": "935yen",
+    "section": "お飲物 — ソフトドリンク",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "+55円 as a set-drink upgrade.",
+    "dish_key": "ice_matcha_latte"
+   },
+   {
+    "ja": "室町ソーダ（さくらんぼ味）",
+    "romaji": "Muromachi Soda (cherry)",
+    "en": "Muromachi soda, cherry",
+    "price": "1265yen",
+    "section": "お飲物 — ソフトドリンク",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "+385円 as a set-drink upgrade.",
+    "dish_key": "muromachi_soda_cherry"
+   },
+   {
+    "ja": "室町ソーダ（キウイ＆アロエ味）",
+    "romaji": "Muromachi Soda (kiwi & aloe)",
+    "en": "Muromachi soda, kiwi and aloe",
+    "price": "1265yen",
+    "section": "お飲物 — ソフトドリンク",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "+385円 as a set-drink upgrade.",
+    "dish_key": "muromachi_soda_kiwi_aloe"
+   },
+   {
+    "ja": "茶露",
+    "romaji": "Charo",
+    "en": "A make-it-yourself cocktail of ice-brewed sencha, finished at your table (or served ready-made)",
+    "price": "1430yen (税込)",
+    "section": "お飲物",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "charo_sencha_cocktail"
+   },
+   {
+    "ja": "伊根満開",
+    "romaji": "Ine Mankai",
+    "en": "Red sake brewed in Ine, Kyoto from ancient purple-black rice and Kyoto white rice; served with higashi",
+    "price": "1430yen (税込)",
+    "section": "お飲物",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ Served 〈干菓子付き〉 — higashi are pressed sugar sweets whose binder is usually rice flour but is not stated. The sake itself is rice.",
+    "dish_key": "ine_mankai_sake"
+   }
+  ]
+ },
+ "tokyo_aburi_miso_ramen_mensho_": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://samurai-noodle.jp/en/",
+   "https://samurai-noodle.jp/en/menu/",
+   "https://samurai-noodle.jp/menu/"
+  ],
+  "price_note": "SAMURAI NOODLE PUBLISHES ITS FULL MENU IN JAPANESE AND ENGLISH AND PRINTS NO PRICES AT ALL — every line ends in a row of leader dots with the figure omitted, in both languages, and the card closes 「価格は店舗によって異なる場合があります。各店舗のメニューをご確認ください」. So the item list below is authoritative and the prices are simply not published; do not treat the blanks as unresearched. The company's head office is 渋谷区道玄坂2-10-3, the same street as this branch. ⚠ THIS IS ONE OF THE MOST IMPORTANT GLUTEN-FREE ADDRESSES IN THE TOKYO SET AND IT SHOULD BE TREATED AS A PRIORITY FOR PRICE CONFIRMATION. The shop runs a dedicated グルテンフリー section of four bowls — GF味噌, GF辛味噌, GF醤油, GF塩 — plus a ヴィーガン/ベジタリアン section of five, and the two sections overlap in one line, グルテンフリー ヴィーガンラーメン, which is the single dish that satisfies both. The side menu carries GFヴィーガン餃子, GF唐揚げ and GFフライドポテト: a gluten-free gyoza and a gluten-free kara-age are both things that essentially do not exist in ordinary Japanese ramen shops, and a fried item labelled GF implies a fryer the shop is willing to vouch for. ⚠ WHAT THE SHOP DOES NOT PUBLISH IS AS IMPORTANT AS WHAT IT DOES. There is no allergen table, no statement about separate pots or separate fryers, and no ingredient list for the GF tare — and a GF SOY-SAUCE ramen necessarily means a tamari or a wheat-free shoyu that the shop has not named. Everything in the GF section is recorded gf on the strength of the shop's own explicit label and nothing more; the cross-contact question is exactly the one to ask at the counter. ⚠ THE VEGAN BOWLS ARE NOT GLUTEN-FREE unless they are the one line that says so: ヴィーガン味噌, ヴィーガン辛味噌 and ヴィーガン醤油 are vegan ramen on ordinary wheat noodles. オリエンタルベジタリアンラーメン is the Buddhist-style no-alliums bowl and is recorded vegan-ask because oriental vegetarian excludes the five pungent roots but does not by itself exclude egg or dairy.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "炙り味噌らーめん",
+    "romaji": "Aburi Miso Ramen",
+    "en": "Roasted miso ramen — the house bowl",
+    "price": "",
+    "section": "看板ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle; miso tare. No price published by the shop.",
+    "dish_key": "aburi_miso_ramen"
+   },
+   {
+    "ja": "炙り辛味噌らーめん",
+    "romaji": "Aburi Kara Miso Ramen",
+    "en": "Spicy roasted miso ramen",
+    "price": "",
+    "section": "看板ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle. No price published.",
+    "dish_key": "aburi_kara_miso_ramen"
+   },
+   {
+    "ja": "炙り醤油らーめん",
+    "romaji": "Aburi Shoyu Ramen",
+    "en": "Roasted soy sauce ramen",
+    "price": "",
+    "section": "看板ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle and wheat-brewed shoyu. No price published.",
+    "dish_key": "aburi_shoyu_ramen"
+   },
+   {
+    "ja": "炙り塩らーめん",
+    "romaji": "Aburi Shio Ramen",
+    "en": "Roasted salt ramen",
+    "price": "",
+    "section": "看板ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle. No price published.",
+    "dish_key": "aburi_shio_ramen"
+   },
+   {
+    "ja": "炙り味玉らーめん",
+    "romaji": "Aburi Ajitama Ramen",
+    "en": "Roasted ramen with a soft-boiled seasoned egg",
+    "price": "",
+    "section": "特製ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle; ajitama is marinated in soy. No price published.",
+    "dish_key": "ajitama_ramen"
+   },
+   {
+    "ja": "炙り特製らーめん",
+    "romaji": "Aburi Tokusei Ramen",
+    "en": "The special roasted ramen",
+    "price": "",
+    "section": "特製ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle. No price published.",
+    "dish_key": "tokusei_ramen"
+   },
+   {
+    "ja": "炙り肉らーめん",
+    "romaji": "Aburi Niku Ramen",
+    "en": "Roasted ramen with extra meat",
+    "price": "",
+    "section": "特製ラーメン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle. No price published.",
+    "dish_key": "niku_ramen"
+   },
+   {
+    "ja": "ヴィーガン味噌ラーメン",
+    "romaji": "Vegan Miso Ramen",
+    "en": "Vegan miso ramen",
+    "price": "",
+    "section": "ヴィーガン / ベジタリアン",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ Labelled vegan, NOT gluten-free — an ordinary wheat noodle. No price published.",
+    "dish_key": "vegan_miso_ramen"
+   },
+   {
+    "ja": "ヴィーガン辛味噌ラーメン",
+    "romaji": "Vegan Kara Miso Ramen",
+    "en": "Vegan spicy miso ramen",
+    "price": "",
+    "section": "ヴィーガン / ベジタリアン",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ Labelled vegan, NOT gluten-free. No price published.",
+    "dish_key": "vegan_kara_miso_ramen"
+   },
+   {
+    "ja": "ヴィーガン醤油ラーメン",
+    "romaji": "Vegan Shoyu Ramen",
+    "en": "Vegan soy sauce ramen",
+    "price": "",
+    "section": "ヴィーガン / ベジタリアン",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ Labelled vegan, NOT gluten-free; the shoyu is not declared wheat-free either. No price published.",
+    "dish_key": "vegan_shoyu_ramen"
+   },
+   {
+    "ja": "グルテンフリー ヴィーガンラーメン",
+    "romaji": "Gluten-Free Vegan Ramen",
+    "en": "Gluten-free vegan ramen",
+    "price": "",
+    "section": "ヴィーガン / ベジタリアン",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "THE ONE BOWL THAT SATISFIES BOTH, on the shop’s own labelling. Ask about the pot and the tare. No price published.",
+    "dish_key": "gf_vegan_ramen"
+   },
+   {
+    "ja": "オリエンタルベジタリアンラーメン",
+    "romaji": "Oriental Vegetarian Ramen",
+    "en": "Oriental vegetarian ramen (no five pungent roots)",
+    "price": "",
+    "section": "ヴィーガン / ベジタリアン",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Oriental vegetarian excludes alliums; it does not by itself exclude egg or dairy, and this line is not in the GF section. No price published.",
+    "dish_key": "oriental_vegetarian_ramen"
+   },
+   {
+    "ja": "GF味噌ラーメン",
+    "romaji": "GF Miso Ramen",
+    "en": "Gluten-free miso ramen",
+    "price": "",
+    "section": "グルテンフリー",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Labelled gluten-free by the shop. ⚠ Miso is frequently barley-based, so the shop is asserting something specific here; no ingredient list is published.",
+    "dish_key": "gf_miso_ramen"
+   },
+   {
+    "ja": "GF辛味噌ラーメン",
+    "romaji": "GF Kara Miso Ramen",
+    "en": "Gluten-free spicy miso ramen",
+    "price": "",
+    "section": "グルテンフリー",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Labelled gluten-free by the shop.",
+    "dish_key": "gf_kara_miso_ramen"
+   },
+   {
+    "ja": "GF醤油ラーメン",
+    "romaji": "GF Shoyu Ramen",
+    "en": "Gluten-free soy sauce ramen",
+    "price": "",
+    "section": "グルテンフリー",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Labelled gluten-free by the shop. ⚠ A GF shoyu means tamari or a wheat-free shoyu that the shop has not named — worth asking to see.",
+    "dish_key": "gf_shoyu_ramen"
+   },
+   {
+    "ja": "GF塩ラーメン",
+    "romaji": "GF Shio Ramen",
+    "en": "Gluten-free salt ramen",
+    "price": "",
+    "section": "グルテンフリー",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Labelled gluten-free by the shop.",
+    "dish_key": "gf_shio_ramen"
+   },
+   {
+    "ja": "GFヴィーガン餃子",
+    "romaji": "GF Vegan Gyoza",
+    "en": "Gluten-free vegan gyoza",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Labelled both by the shop. A gluten-free gyoza wrapper is rare enough to be worth the trip.",
+    "dish_key": "gf_vegan_gyoza"
+   },
+   {
+    "ja": "GF唐揚げ",
+    "romaji": "GF Karaage",
+    "en": "Gluten-free fried chicken",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Labelled gluten-free. ⚠ Fried — ask whether the fryer is shared with the wheat gyoza.",
+    "dish_key": "gf_karaage"
+   },
+   {
+    "ja": "GFフライドポテト",
+    "romaji": "GF Fried Potato",
+    "en": "Gluten-free french fries",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Labelled gluten-free. Same fryer question.",
+    "dish_key": "gf_fries"
+   },
+   {
+    "ja": "餃子",
+    "romaji": "Gyoza",
+    "en": "Gyoza",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The ordinary wheat-wrapper gyoza, listed separately from the GF one.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "味付玉子",
+    "romaji": "Ajitama",
+    "en": "Soft-boiled seasoned egg",
+    "price": "",
+    "section": "トッピング",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Marinated in soy.",
+    "dish_key": "ajitama_topping"
+   },
+   {
+    "ja": "ネギ増し",
+    "romaji": "Negi Mashi",
+    "en": "Extra green onions",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "extra_negi"
+   },
+   {
+    "ja": "メンマ増し",
+    "romaji": "Menma Mashi",
+    "en": "Extra bamboo shoots",
+    "price": "",
+    "section": "トッピング",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Menma is seasoned; the seasoning is not declared.",
+    "dish_key": "extra_menma"
+   },
+   {
+    "ja": "海苔（5枚）",
+    "romaji": "Nori (5 sheets)",
+    "en": "Five sheets of nori",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "nori"
+   },
+   {
+    "ja": "バター",
+    "romaji": "Butter",
+    "en": "Butter",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "butter"
+   },
+   {
+    "ja": "コーン",
+    "romaji": "Corn",
+    "en": "Corn",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "corn"
+   },
+   {
+    "ja": "もやし増し",
+    "romaji": "Moyashi Mashi",
+    "en": "Extra bean sprouts",
+    "price": "",
+    "section": "トッピング",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "extra_moyashi"
+   },
+   {
+    "ja": "麺大盛（1.5倍）",
+    "romaji": "Men Omori",
+    "en": "Large noodles, 1.5x",
+    "price": "",
+    "section": "大盛",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "",
+    "dish_key": "noodles_large"
+   },
+   {
+    "ja": "麺特盛（2倍）",
+    "romaji": "Men Tokumori",
+    "en": "Extra large noodles, 2x",
+    "price": "",
+    "section": "大盛",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "",
+    "dish_key": "noodles_extra_large"
+   }
+  ]
+ },
+ "tokyo_tainan_tantsumen_suidoba": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://taiwan-taami.com/tainan/",
+   "https://taiwan-taami.com/tainan/menu/tainan_menu_dinner.pdf",
+   "https://taiwan-taami.com/tainan/menu/tainan_menu_lunch.pdf"
+  ],
+  "price_note": "BOTH OF THE SHOP'S MENU PDFs WERE DOWNLOADED AND RUN THROUGH pdftotext AND NEITHER YIELDED A PRICED CARD. The lunch PDF (1.9 MB) extracts to two bytes — it is an image scan. The dinner PDF (8.9 MB) does extract, but only the English item names: every Japanese string and every price is set in an embedded Adobe-Japan1 CID font that pdftotext cannot map, so the numbers come out as separator glyphs. That is a finding, not a failure — the English dish names below are read from that PDF and are real, but their prices genuinely could not be read from the file. The two priced lines recorded here are the shop's own limited-period campaign images, whose alt text carries the figures: 担仔乾麺セット 850円（税込）and 麻辣湯セット 1,100円（税込）, both marked 【期間限定サービス価格】台南担仔麵水道橋店のみ販売. The twelve おすすめの料理 are named and described in Japanese on the shop's own homepage, unpriced. Also first-party: 宴会 courses with nomihodai from 3,980円, 70 seats, closed Sundays, and the group is シンガポール海南鶏飯グループ. ⚠ THE MOST USEFUL THING ON THIS MENU FOR A COELIAC IS THE 米粉 AND THE RICE. 台湾式焼きビーフン is rice vermicelli and 魯肉飯 and 排骨飯 are rice plates — but 魯肉飯 is braised in soy by definition, the shop itself describes the 担仔麺's traditional topping as 魯蛋、「醤油味のゆで卵」, and 排骨 is a battered fried cutlet. Everything is recorded ask or no; nothing here is established gluten-free. ⚠ THE VEGAN PICTURE IS THIN BUT NOT EMPTY. 干豆腐サラダ (shredded dried tofu, salad-style) and 空心菜炒め, which the shop names in its own description of the evening 台湾酒場 service, are the two plant-based candidates, and 麻婆豆腐 is tofu but is a pork dish as served here. ⚠ 担仔麺 ITSELF IS A WHEAT NOODLE — the shop is careful to explain that 担仔麺 is not 担担麺 and is not spicy, but it is still a wheat noodle in a dashi-style broth topped with simmered pork mince.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "担仔乾麺セット",
+    "romaji": "Tantsu Kanmen Set",
+    "en": "Dry (soupless) danzai noodle set — limited-period service price, this branch only",
+    "price": "850yen (税込)",
+    "section": "【期間限定サービス価格】",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle, sauced rather than souped. Sold only at the Suidobashi branch.",
+    "dish_key": "tantsu_kanmen_set"
+   },
+   {
+    "ja": "麻辣湯セット",
+    "romaji": "Mala Tang Set",
+    "en": "Mala tang set — limited-period service price, this branch only",
+    "price": "1100yen (税込)",
+    "section": "【期間限定サービス価格】",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ Mala tang broth is normally built on doubanjiang, which is fermented with wheat flour in most brands. Sold only at the Suidobashi branch.",
+    "dish_key": "mala_tang_set"
+   },
+   {
+    "ja": "担仔麺",
+    "romaji": "Tantsumen",
+    "en": "Danzai mien — a small bowl of noodles in a well-made dashi broth with vegetables, red onion and long-simmered pork mince",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle. The shop notes the local way is to add 魯蛋, which it describes as 「醤油味のゆで卵」 — a soy-marinated egg. No price published.",
+    "dish_key": "tantsumen"
+   },
+   {
+    "ja": "魯肉飯",
+    "romaji": "Rou Rou Fan",
+    "en": "Lu rou fan — melting braised pork belly over rice",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Rice, but braised in soy sauce by definition. No price published.",
+    "dish_key": "lu_rou_fan"
+   },
+   {
+    "ja": "小籠包",
+    "romaji": "Shoronpo",
+    "en": "Xiaolongbao, steamed to order",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat wrapper. No price published.",
+    "dish_key": "xiaolongbao"
+   },
+   {
+    "ja": "牛肉麺",
+    "romaji": "Nyuromen",
+    "en": "Niu rou mian — long-simmered beef in a concentrated spicy broth",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodle. No price published.",
+    "dish_key": "niu_rou_mian"
+   },
+   {
+    "ja": "排骨飯",
+    "romaji": "Paiko Fan",
+    "en": "Pai gu fan — crisp-fried bone-in pork over rice, the Taiwanese railway bento standard",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The cutlet is battered and fried. No price published.",
+    "dish_key": "pai_gu_fan"
+   },
+   {
+    "ja": "干豆腐サラダ",
+    "romaji": "Hoshi Dofu Salad",
+    "en": "Dried tofu shredded as fine as somen and dressed as a salad",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "One of the two plausibly plant-based lines; the dressing is not described. No price published.",
+    "dish_key": "dried_tofu_salad"
+   },
+   {
+    "ja": "葱入り蛋餅",
+    "romaji": "Negi-iri Danbing",
+    "en": "Dan bing — Taiwanese spring-onion egg crêpe",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Dan bing batter is wheat flour, and the dish is egg. No price published.",
+    "dish_key": "dan_bing"
+   },
+   {
+    "ja": "蒼蠅頭",
+    "romaji": "Soyoto",
+    "en": "Cang ying tou — minced pork and beef stir-fried with garlic chives and chilli, to wrap in rice or lettuce",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "No price published.",
+    "dish_key": "cang_ying_tou"
+   },
+   {
+    "ja": "麻婆豆腐",
+    "romaji": "Mabo Dofu",
+    "en": "Mapo tofu with chilli heat and Sichuan pepper numbness",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ 豆板醤 is normally fermented with wheat flour, and restaurant mapo carries minced pork. No price published.",
+    "dish_key": "mabo_dofu"
+   },
+   {
+    "ja": "塩酥鶏",
+    "romaji": "Yen Su Ji",
+    "en": "Yan su ji — Taiwanese fried chicken with chilli, garlic and spring onion",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Taiwanese popcorn chicken is usually dusted in sweet-potato starch rather than wheat flour, which makes it worth asking about — but it is deep fried and the marinade is soy. No price published.",
+    "dish_key": "yan_su_ji"
+   },
+   {
+    "ja": "海老入り揚げ春巻き",
+    "romaji": "Ebi-iri Age Harumaki",
+    "en": "Fried spring rolls of minced prawn, scallop and octopus in rice paper, served with mint, basil, coriander, lettuce and nuoc cham chilli sauce",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop specifies ライスペーパー rather than a wheat wrapper, which is unusual and worth confirming; the dipping sauce is fish-sauce based. No price published.",
+    "dish_key": "ebi_harumaki"
+   },
+   {
+    "ja": "台湾式焼きビーフン",
+    "romaji": "Taiwan-shiki Yaki Bifun",
+    "en": "Taiwanese fried rice vermicelli with pork and vegetables",
+    "price": "",
+    "section": "おすすめの料理",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice vermicelli — the most promising noodle in the building, but stir-fried with soy. No price published.",
+    "dish_key": "taiwan_fried_bifun"
+   },
+   {
+    "ja": "空心菜炒め",
+    "romaji": "Kushinsai Itame",
+    "en": "Stir-fried water spinach — named by the shop as part of its evening 台湾酒場 service",
+    "price": "",
+    "section": "台湾酒場",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Chinese greens are normally stir-fried with garlic and a splash of soy or oyster sauce. No price published.",
+    "dish_key": "kushinsai_itame"
+   },
+   {
+    "ja": "宴会コース（飲み放題付き）",
+    "romaji": "Enkai Course (with nomihodai)",
+    "en": "Banquet course with all-you-can-drink, private hire up to 40",
+    "price": "3980yen〜",
+    "section": "宴会",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Course contents are not itemised on the site.",
+    "dish_key": "enkai_course"
+   }
+  ]
+ },
+ "tokyo_sangokuichi_nishiguchi_t": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://sangokuichi.com/",
+   "https://sangokuichi.com/menu/"
+  ],
+  "price_note": "三国一'S SITE IS LIVE, THE MENU PAGE EXISTS, AND IT SAYS THERE IS NO MENU: 「メニューは現在準備中です。」 — menu currently in preparation. That is the entire content of /menu/, and it was fetched and read in full. This is a confirmed empty, not an unresearched record, and it should not be re-selected until the shop publishes something. ⚠ THE BRANCH ITSELF IS CONFIRMED OPEN, which is the other thing worth banking here. The site's most recent notice (2026.04.07) announces that 三国一東口店 — the EAST exit branch — has closed, and says the company will continue with just 西口店 (03-3344-3591, 新宿区西新宿1-13-10 西新宿昭和ビル) and アイランドイッツ店. This record is the 西口店, so it survives; anyone reconciling this dataset against a stale東口店 listing should treat that one as closed. Hours for 西口店: Mon–Fri 11:00–22:00, Sat 11:00–15:00 / 17:00–21:00, Sun and holidays 11:00–15:00. ⚠ THE SHOP'S BASE STORE WAS DELIBERATELY NOT USED AS A MENU SOURCE. 三国一 sells mail-order udon through udon3591.thebase.in and the homepage previews four products — サラダうどん, おうちうどんすき, 味噌煮込みうどん, 生うどん. Those are retail packets with retail prices and they are not the counter menu; quoting them here would attach the wrong prices to a restaurant record. What they do establish beyond doubt is the category: this is a handmade-udon house, so the noodle is wheat and the tsuyu is a soy-and-dashi tsuyu. No item is recorded because the shop publishes none.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_container_container_cafe": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://container-web.net/"
+  ],
+  "price_note": "container-web.net DOES NOT RESOLVE. Two independent public resolvers — Google 8.8.8.8 and Cloudflare 1.1.1.1 — both return SERVFAIL for the domain, which means the zone's own nameservers are not answering (or the zone is failing DNSSEC validation), not that the name has been withdrawn the way an NXDOMAIN would say. Either way there is no page to fetch from this machine today and no menu has been read. This is distinct from the 渋谷更科 case, where the name is genuinely gone: a SERVFAIL can clear on its own, so this record is worth one cheap retry on a future tick rather than a rewrite. The dataset's only other link is Tabelog, which serves a Cloudflare managed challenge to this egress. Nothing about what CONTAINER serves is established — no dish, no price, no diet flag — and nothing is recorded.",
+  "last_checked": "2026-09-07",
+  "items": []
+ }
+}
