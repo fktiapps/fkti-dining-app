@@ -1222,5 +1222,625 @@
     "dish_key": "tempura_kaiseki"
    }
   ]
+ },
+ "tokyo_carvaan_tokyo": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://carvaan.jp/shop/tokyo-shibuya/",
+   "https://carvaan.jp/wp-content/uploads/2022/02/202606_CVT_dinner_EN_JP_compressed-1.pdf",
+   "https://carvaan.jp/wp-content/uploads/2022/02/20260513_CVT_Lunch_JPEN-1.pdf"
+  ],
+  "price_note": "⚠ THIS IS THE BEST-DOCUMENTED RECORD IN THE TOKYO SET AND IT IS WORTH SAYING WHY: CARVAAN PUBLISHES A PER-DISH ALLERGEN LIST UNDER EVERY SINGLE ITEM ON ITS OWN MENU PDFs, in English, dish by dish — not a generic footnote, not a symbol key, an actual ingredient list. Almost nothing below is inference. Prices are from the dinner Grand Menu PDF (202606_CVT_dinner) and are tax included by the shop's own statement; the lunch PDF (20260513_CVT_Lunch) prices the same tajines higher because those figures are SET prices that include appetiser, side, dessert and a drink — where lunch and dinner disagree, the dinner à-la-carte figure is the one recorded and the lunch set is noted separately. The shop is on the 12th floor of Shibuya Scramble Square (渋谷2-24-12), lunch 11:00–15:30, tea 11:00–15:30 weekdays / 14:30–16:30 weekends, dinner 17:00–23:00, tel 03-6451-1772. ⚠ HOW TO READ THE ALLERGEN LISTS, BECAUSE THEY ARE A JAPANESE LABEL AND NOT A GLUTEN-FREE CLAIM. 小麦 / 'Wheat' is one of Japan's statutory allergens and CARVAAN names it dish by dish, so a dish WITH Wheat on its list is wheat, full stop — recorded here as gf 'no'. A dish WITHOUT Wheat on its list is a much stronger signal than anything inferred from cuisine, but it is still not a coeliac clearance: BARLEY AND RYE ARE NOT ON JAPAN'S STATUTORY LIST AT ALL, so their absence proves nothing, and this is a kitchen with a flatbread station and a shared fryer. Those dishes are recorded gf 'ask' with the published list quoted in the note, which is the honest version of a genuinely good lead. ⚠ THE VEGAN SECTION IS REAL AND LABELLED BY THE SHOP: two tajines (Cauliflower Harissa, Karniyarik) sit under a heading the shop itself prints as 'Vegan Tajine', the tajine course has vegan substitutions at the amuse and appetiser stages, and the fried-potato dips can both be made vegan on request. The shop's own caveat is printed on the menu and is repeated here because it matters to a strict vegan: 'Our vegan products do not contain any animal-derived ingredients, but they are manufactured using equipment that also processes dairy products.' ⚠ AND ONE COMBINATION IS UNUSUALLY GOOD: 7 Cauliflower Harissa Tajine is the shop's own vegan label AND its allergen list is Almond, Sesame, Nuts with no wheat — but the bread it is 'recommended with' is ancient wheat flatbread, so the side has to be swapped for Cumin Rice, whose own list is empty. Halal-certified meat is used; ask staff about halal options on seasonal gelato.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "Tajine Course",
+    "romaji": "Tajine Course",
+    "en": "Tajine Course (dinner)",
+    "price": "8800円",
+    "section": "Dinner course",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Amuse (2 Arabian dips with Aish flatbread), appetiser (Moussaka, or a Falafel plate for vegans), fish or salad (Jerusalem salmon steak in Chraimeh sauce, or an Arabian salad plate for vegans), one of the eight tajines with a supplement on some, bread/rice/couscous, seasonal Arabian dessert, coffee or tea. The shop states vegan options are available on request. ⚠ The amuse is flatbread, so the wheat question has to be raised at booking rather than at the table.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "1 Beef and Date Tajine",
+    "romaji": "Beef and Date Tajine",
+    "en": "Beef and date tajine",
+    "price": "2860円",
+    "section": "Tajine",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef simmered with vegetables, spices and dates from an Egyptian oasis. ⚠ THE SHOP'S OWN ALLERGEN LIST FOR THIS DISH IS 'Almond, Beef, Soybean' — WHEAT IS NOT ON IT. That is a real lead rather than a clearance: barley and rye are outside Japan's statutory list, and the recommended bread side is wheat. Order it with Cumin Rice, not with Aish or Khbuz. Lunch set price 3,300円; +330円 supplement inside the tajine course.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "2 Kofta and Olive Tajine",
+    "romaji": "Kofta and Olive Tajine",
+    "en": "Kofta and olive tajine",
+    "price": "3190円",
+    "section": "Tajine",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Lamb-and-beef meatballs with olives in vegetable broth. Published allergen list: 'Beef' only — no wheat named, though kofta is very often bound with breadcrumb, so this one is worth asking about specifically. Lunch set price 3,740円; +550円 in the tajine course.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "3 Circassian Chicken",
+    "romaji": "Circassian Chicken",
+    "en": "Circassian chicken tajine",
+    "price": "2750円",
+    "section": "Tajine",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Milk, Wheat, Walnut, Almond, Chicken' — wheat is named by the shop. Grilled chicken in a walnut sauce. Lunch set price 3,260円.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "4 Lamb and Pomegranate Tajine",
+    "romaji": "Lamb and Pomegranate Tajine",
+    "en": "Lamb and pomegranate tajine",
+    "price": "3300円",
+    "section": "Tajine",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Wheat, Orange, Beef, Soybean, Chicken, Nuts' — wheat is named. Bone-in lamb simmered in pomegranate and orange juice; the shop notes the cut of lamb may vary. Lunch set price 3,850円; +550円 in the tajine course.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "5 Egyptian Grilled Chicken and Mulukhiya Tajine with Cumin Rice",
+    "romaji": "Egyptian Grilled Chicken and Mulukhiya Tajine",
+    "en": "Egyptian grilled chicken and mulukhiya tajine with cumin rice",
+    "price": "2750円",
+    "section": "Tajine",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Grilled chicken with Advieh spices in a mulukhiya broth. ⚠ Published allergen list is the single word 'Chicken' — no wheat, no dairy, no soy — and it comes with cumin rice rather than bread. Of the animal tajines this is the one to ask about first. Lunch set price 2,860円.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "6 Salmon Chraimeh sauce Tajine",
+    "romaji": "Salmon Chraimeh sauce Tajine",
+    "en": "Salmon tajine in Chraimeh sauce",
+    "price": "2860円",
+    "section": "Tajine",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Salmon braised in the spicy Chraimeh sauce of Jerusalem. Published allergen list: 'Milk, Salmon' — no wheat named. The recommended side is Aish flatbread, which is wheat; swap it. Lunch set price 3,300円; +330円 in the tajine course.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "7 Cauliflower Harissa Tajine",
+    "romaji": "Cauliflower Harissa Tajine",
+    "en": "Cauliflower harissa tajine",
+    "price": "2530円",
+    "section": "Vegan Tajine",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ THE BEST DISH ON THIS MENU FOR A RESTRICTED DINER AND THE REASON TO COME HERE. The shop prints it under a heading it calls 'Vegan Tajine', so the vegan label is the restaurant's own claim and not an inference, and its published allergen list is 'Almond, Sesame, Nuts' with no wheat and no dairy. Two caveats the shop itself supplies: its vegan products are made on equipment that also processes dairy, and the bread it is 'recommended with' is ancient wheat flatbread — take Cumin Rice instead, whose own allergen list is empty. Lunch set price 2,970円.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "8 Karniyarik Tajine with Seasonal Vegetable",
+    "romaji": "Karniyarik Tajine",
+    "en": "Karniyarik tajine with seasonal vegetables",
+    "price": "2530円",
+    "section": "Vegan Tajine",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ THE VEGAN TRAP ON THIS MENU: it sits under the shop's own 'Vegan Tajine' heading, and its published allergen list is 'Wheat, Walnut' — vegan and wheat at the same time. Turkish karniyarik, a patty of vegetables, nuts and apricots stuffed into aubergine. A vegan can eat it; a coeliac cannot; the vegan cauliflower tajine next to it is the one that serves both. Lunch set price 2,970円.",
+    "dish_key": "tajine"
+   },
+   {
+    "ja": "Aish",
+    "romaji": "Aish",
+    "en": "Aish — Egypt's classic flatbread",
+    "price": "660円",
+    "section": "Bread & Rice",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Published allergen list: 'Wheat'. Ancient wheat flatbread — this is the default side recommended with most tajines and it is the thing to decline.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "Khbuz",
+    "romaji": "Khbuz",
+    "en": "Khbuz — Morocco's classic thick bread",
+    "price": "660円",
+    "section": "Bread & Rice",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Published allergen list: 'Wheat'.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "Cumin Rice",
+    "romaji": "Cumin Rice",
+    "en": "Cumin rice",
+    "price": "770円",
+    "section": "Bread & Rice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Basmati rice flavoured with cumin. ⚠ THE ONLY SIDE ON THE BOARD WITH AN EMPTY ALLERGEN LIST — no wheat, no dairy, no soy printed against it. This is the substitution that makes several tajines workable. Whether it is cooked in stock is not stated, so the vegan question is still open.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "Couscous",
+    "romaji": "Couscous",
+    "en": "Couscous",
+    "price": "660円",
+    "section": "Bread & Rice",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Published allergen list: 'Wheat, Cashewnut'. COUSCOUS IS DURUM WHEAT, which the menu says outright — it reads like a grain alternative to bread and is not one.",
+    "dish_key": "couscous"
+   },
+   {
+    "ja": "Makboos",
+    "romaji": "Makboos",
+    "en": "Makboos — Omani basmati rice with lamb",
+    "price": "2970円",
+    "section": "Rice Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Basmati cooked in a double layer of mixed spices with lamb. Published allergen list: 'Milk, Almond, Nuts' — no wheat. The shop asks for about 40 minutes because it is cooked from raw rice.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "Zoroaster Curry CARVAAN style with Cumin rice",
+    "romaji": "Zoroaster Curry",
+    "en": "Zoroaster curry, CARVAAN style, with cumin rice",
+    "price": "2530円",
+    "section": "Rice Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken curry built on Zoroastrian spicing. Published allergen list: 'Egg, Milk, Chicken' — no wheat, which is worth noting because Japanese curry normally IS a roux. Lunch price 2,640円.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "Arabian Mezze Plate with Arabian Bread",
+    "romaji": "Arabian Mezze Plate",
+    "en": "Arabian mezze plate with Arabian bread",
+    "price": "2750円",
+    "section": "Mezze",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Wheat, Walnut, Cashewnut, Sesame, Soybean'. Hummus, muhammara, mutabal, falafel and tabbouleh, spread on ancient wheat flatbread — and TABBOULEH IS BULGUR, a second wheat inside the same plate. Extra bread 660円. The shop says the pastes vary by season.",
+    "dish_key": "mezze"
+   },
+   {
+    "ja": "Kale Salad with Dried fruits & Nuts",
+    "romaji": "Kale Salad",
+    "en": "Kale salad with dried fruits and nuts",
+    "price": "half 1430円 / 1980円",
+    "section": "Salad",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Inca berry, raisin, nuts and quinoa with an Inca-berry and pomegranate dressing. Published allergen list: 'Walnut, Almond, Cashewnut, Nuts' — no wheat and no dairy named, which makes this the most promising salad for both diets, though the dressing composition is not published.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "Couscous Salad",
+    "romaji": "Couscous Salad",
+    "en": "Couscous salad",
+    "price": "1760円",
+    "section": "Salad",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Published allergen list: 'Wheat, Almond, Soybean, Nuts'. Couscous is durum wheat.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "CARVAAN Original Spice Seasoned Nuts",
+    "romaji": "CARVAAN Original Spice Seasoned Nuts",
+    "en": "CARVAAN spiced nuts",
+    "price": "660円",
+    "section": "Salad",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Published allergen list: 'Almond, Cashewnut'. The shop notes availability varies and asks that allergies be raised with staff.",
+    "dish_key": "nuts"
+   },
+   {
+    "ja": "Hummus with Mediterranean Salad",
+    "romaji": "Hummus with Mediterranean Salad",
+    "en": "Hummus with Mediterranean salad",
+    "price": "1650円",
+    "section": "Hummus Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Wheat, Walnut, Sesame, Feta Cheese'. The wheat is the Arabian bread crackers it is served with, and the feta is dairy.",
+    "dish_key": "hummus"
+   },
+   {
+    "ja": "Hummus with Beef and Eggplant",
+    "romaji": "Hummus with Beef and Eggplant",
+    "en": "Hummus with beef and aubergine",
+    "price": "1650円",
+    "section": "Hummus Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Wheat, Beef, Sesame, Nuts'. Served with Arabian bread crackers.",
+    "dish_key": "hummus"
+   },
+   {
+    "ja": "Hummus",
+    "romaji": "Hummus",
+    "en": "Hummus",
+    "price": "1210円",
+    "section": "Hummus Dish",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Published allergen list: 'Wheat, Sesame'. THE PASTE ITSELF IS CHICKPEA AND WHITE SESAME AND WOULD BE FINE — the wheat is the Arabian bread crackers plated with it, so this is a dish where asking for it without the crackers is a real conversation.",
+    "dish_key": "hummus"
+   },
+   {
+    "ja": "Falafel with Tahini dip",
+    "romaji": "Falafel with Tahini dip",
+    "en": "Falafel with tahini dip",
+    "price": "1210円",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Fried chickpeas with herbs and spices. Published allergen list: 'Sesame, Soybean' — no wheat and no dairy, and falafel is chickpea-based rather than flour-based. Shared fryer is the open question, not the recipe.",
+    "dish_key": "falafel"
+   },
+   {
+    "ja": "Arabian Fried Potato",
+    "romaji": "Arabian Fried Potato",
+    "en": "Arabian fried potato, two dips",
+    "price": "1100円",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Published allergen list: 'Egg, Sesame, Soybean, Apple, Honey' — no wheat, but egg and honey put the default version outside vegan. ⚠ THE SHOP SAYS BOTH DIPS CAN BE MADE VEGAN ON REQUEST, which is what moves this from 'no' to 'ask'.",
+    "dish_key": "fries"
+   },
+   {
+    "ja": "Merguez",
+    "romaji": "Merguez",
+    "en": "Merguez — Tunisian spicy lamb sausage",
+    "price": "1320円",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Made with CARVAAN's own spice blend. Published allergen list: 'Soybean' only — no wheat, which is unusual for a sausage.",
+    "dish_key": "sausage"
+   },
+   {
+    "ja": "Moussaka",
+    "romaji": "Moussaka",
+    "en": "Moussaka",
+    "price": "1980円",
+    "section": "Side Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Milk, Wheat, Feta Cheese'. Aubergine, potato and lamb under a Greek yoghurt sauce and feta. About 30 minutes to prepare.",
+    "dish_key": "moussaka"
+   },
+   {
+    "ja": "Arabian Kebab Plate",
+    "romaji": "Arabian Kebab Plate",
+    "en": "Arabian kebab plate — Adana, chicken, whitefish, shrimp",
+    "price": "8 pieces 3300円 / 12 pieces 4290円",
+    "section": "Grill",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Milk, Wheat, Shrimp, Beef, Sesame, Soybean, Chicken, Nuts'.",
+    "dish_key": "kebab"
+   },
+   {
+    "ja": "Meat Kebab Plate",
+    "romaji": "Meat Kebab Plate",
+    "en": "Meat kebab plate — Adana and shish",
+    "price": "8 pieces 3300円 / 12 pieces 4290円",
+    "section": "Grill",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Milk, Wheat, Beef, Sesame, Soybean, Chicken, Nuts'.",
+    "dish_key": "kebab"
+   },
+   {
+    "ja": "Seafood Kebab Plate",
+    "romaji": "Seafood Kebab Plate",
+    "en": "Seafood kebab plate — whitefish and shrimp",
+    "price": "8 pieces 3300円 / 12 pieces 4290円",
+    "section": "Grill",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Wheat, Shrimp, Sesame, Soybean'.",
+    "dish_key": "kebab"
+   },
+   {
+    "ja": "Arabian Meat Grill Plate with Harissa",
+    "romaji": "Arabian Meat Grill Plate",
+    "en": "Arabian meat grill plate with harissa",
+    "price": "6820円",
+    "section": "Grill",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Milk, Wheat, Beef, Chicken'. Adana kebab, chicken shish, lamb chops and merguez with harissa and fries. About 30 minutes to prepare.",
+    "dish_key": "grill"
+   },
+   {
+    "ja": "Arabian Lamb Burger served with french fries and harissa dip",
+    "romaji": "Arabian Lamb Burger",
+    "en": "Arabian lamb burger with fries and harissa dip",
+    "price": "3740円",
+    "section": "Grill",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Cashewnut, Apple, Honey, Feta Cheese'. Lamb chop patty with feta and Monterey Jack on a bun.",
+    "dish_key": "burger"
+   },
+   {
+    "ja": "Harira Soup",
+    "romaji": "Harira Soup",
+    "en": "Harira soup",
+    "price": "1320円",
+    "section": "Soup",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Wheat' — the wheat is the pasta in it, alongside chickpeas, lentils, lamb and tomato. A Moroccan soup that reads like a pulse dish and is neither wheat-free nor meat-free.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "Lentil bean Soup",
+    "romaji": "Lentil bean Soup",
+    "en": "Lebanese lentil and vegetable soup",
+    "price": "880円",
+    "section": "Soup",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Published allergen list: 'Wheat, Soybean' — a lentil-and-vegetable soup that still carries wheat on the shop's own label, which is exactly the kind of thing inference would have missed.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "Ghazal Beirut",
+    "romaji": "Ghazal Beirut",
+    "en": "Ghazal Beirut — gelato with Arabic cotton candy",
+    "price": "990円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Milk, Wheat, Almond, Soybean, Nuts, Honey'.",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "Kunafah",
+    "romaji": "Kunafah",
+    "en": "Kunafah — cheese in kadaif dough",
+    "price": "990円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Nuts'. Kadaif is shredded wheat dough.",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "Baklava",
+    "romaji": "Baklava",
+    "en": "Baklava with dates and walnuts",
+    "price": "990円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Walnut'. Phyllo is wheat.",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "Milk Gelato",
+    "romaji": "Milk Gelato",
+    "en": "Milk gelato made with palm blossom sugar",
+    "price": "550円",
+    "section": "Housemade Gelato",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Published allergen list: 'Milk' — dairy and nothing else, so not vegan, but the only wheat-free dessert on the board by the shop's own labelling.",
+    "dish_key": "gelato"
+   },
+   {
+    "ja": "Pistachio Gelato",
+    "romaji": "Pistachio Gelato",
+    "en": "Pistachio gelato",
+    "price": "660円",
+    "section": "Housemade Gelato",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Published allergen list: 'Milk, Nuts'.",
+    "dish_key": "gelato"
+   },
+   {
+    "ja": "Seasonal Gelato",
+    "romaji": "Seasonal Gelato",
+    "en": "Seasonal gelato",
+    "price": "770円",
+    "section": "Housemade Gelato",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Made from seasonal fruit; the shop explicitly declines to publish a fixed allergen list for it and asks that staff be consulted, including about halal.",
+    "dish_key": "gelato"
+   },
+   {
+    "ja": "Arabian Cheese Cake",
+    "romaji": "Arabian Cheese Cake",
+    "en": "Arabian cheesecake with Egyptian dates and kadaif",
+    "price": "880円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Almond, Nuts'.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "Arabian Dessert Plate",
+    "romaji": "Arabian Dessert Plate",
+    "en": "Arabian dessert plate",
+    "price": "1540円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Walnut, Almond, Nuts'. Gelato, cacao tuile, date-and-walnut baklava and a pistachio-rose financier.",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "Assorted Gelato: 3 Flavors",
+    "romaji": "Assorted Gelato: 3 Flavors",
+    "en": "Three-flavour gelato assortment",
+    "price": "1210円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Almond, Nuts' — the wheat is the 'Arabian Moon' cacao tuile cookie sitting on top, not the gelato underneath it.",
+    "dish_key": "gelato"
+   },
+   {
+    "ja": "Anniversary Dessert Plate",
+    "romaji": "Anniversary Dessert Plate",
+    "en": "Anniversary dessert plate",
+    "price": "1650円",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Published allergen list: 'Egg, Milk, Wheat, Almond, Cashewnut, Gelatin, Nuts, Honey' — gelatin and honey as well as the dairy, so nowhere near vegan. A halva-inspired mousse ice-cream cake with Lebanese cotton candy; must be ordered when booking.",
+    "dish_key": "dessert"
+   }
+  ]
+ },
+ "tokyo_koshuya": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "http://asakusa-hisagodori.com/tenpo/koushuuya.html"
+  ],
+  "price_note": "ALMOST EMPTY, AND THE REASON IS IN THE SOURCE ITSELF: the URL this dataset carries as 甲州屋's website is not the shop's website — it is the shop's entry in the 浅草ひさご通り商店街 (Asakusa Hisago-dori shopping street) directory, and that directory's own data field 「HP」 reads 「なし」. THE SHOP HAS NO WEBSITE, WHICH IS THE FINDING. The directory page gives 台東区浅草2-15-2, tel 03-3841-4863, 11:00–20:45, closed Tuesdays, 業種 飲食店, 取扱商品 そば. The only thing on it resembling a menu is a one-line PR blurb written by the shopping-street association rather than by the shop: it praises the 鴨せいろ, served with a hot broth full of chicken, as 絶品. That single dish is recorded below because the association named it; nothing is priced, and no other dish is mentioned anywhere on the page. ⚠ THE RECORD IS MARKED PROVISIONAL/LOW ON PURPOSE — a shopping-street blurb is a third party describing a shop, not the shop publishing a board, and the one dish it names carries an oddity worth flagging: it calls the 鴨 (duck) seiro's broth 鶏肉たっぷり (full of CHICKEN), which is either loose writing by the association or a genuinely chicken-based duck-seiro broth. Do not treat that as settled. A soba shop with no site is a phone-or-visit case, not a research case.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "鴨せいろ",
+    "romaji": "kamo seiro",
+    "en": "Kamo seiro — cold soba with hot duck dipping broth",
+    "price": "",
+    "section": "そば Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The one dish named for this shop anywhere, and it is named in the shopping street's PR blurb rather than by the shop. Soba noodles at a shop that publishes no buckwheat ratio are a wheat blend by default, and the dipping broth is soy-and-dashi. The blurb describes the broth as full of chicken despite 鴨 meaning duck — record that as written rather than resolved. No price published.",
+    "dish_key": "soba"
+   }
+  ]
+ },
+ "tokyo_kagawa_ippuku_art": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://kagawa-ippuku.jp/",
+   "https://kagawa-ippuku.jp/menu/",
+   "https://kagawa-ippuku.jp/store/"
+  ],
+  "price_note": "PARTIAL: THE DISHES ARE THE SHOP'S OWN AND THE PRICES DO NOT EXIST ON THE SITE. 香川一福's おしながき page describes every item on the board at length — what is in it, who supervised the recipe, how to eat it — and prints no figure against any of them. The branch is confirmed: the 店舗一覧 page lists 香川一福 ART（アール） at 〒150-0002 東京都渋谷区渋谷3-17-4 アクシーズ7号館ビル, tel 03-6433-5353, 11:00–22:00 daily with the note 変更の可能性あり and a 5月9日オープン line. ⚠ AND THE BRANCH DETAIL MATTERS HERE, BECAUSE THE CHAIN PUBLISHES PER-BRANCH MENU PDFs FOR SOME SHOPS AND NOT THIS ONE: the 神田本店 and カメイドクロック店 rows each link to their own priced PDF, while the ART row's メニュー link points at the generic おしながき. So the general board is the correct source for this shop and there is no branch-specific price sheet to find. ⚠ THE ONE THING THAT MATTERS MOST HERE IS THE ONE THING THE SHOP NEVER SAYS: THIS IS A SANUKI UDON SPECIALIST AND UDON IS WHEAT. Every noodle dish below is wheat flour, salt and water by definition — there is no buckwheat question and no rice option — and the tempura section is a second wheat source on top of it. ⚠ THE DASHI IS THE VEGAN PROBLEM AND IT RUNS THROUGH EVERYTHING: kake, bukkake and niku udon are all served in or with the shop's dashi, which at a Sanuki shop means iriko (dried sardine) and katsuobushi, and the kamatama is finished with a 薄口醤油 that is itself wheat. ⚠ TWO DISHES CARRY EXTRA WEIGHT THE SITE IS EXPLICIT ABOUT: the curry udon uses a French curry supervised by the Michelin-starred 北島亭 in Yotsuya, built on butter and a fond de veau from A5/A4 wagyu and ten vegetables, so it is dairy and beef as well as wheat; and the niku udon was supervised by the Ginza kaiseki house しのはら and uses US beef round and belly, with a great deal of katsuobushi in it.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "かけうどん",
+    "romaji": "kake udon",
+    "en": "Kake udon",
+    "price": "",
+    "section": "さぬきうどん Sanuki udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The most basic bowl and still wheat twice over: the udon noodle is wheat flour, and the shop describes this as the bowl you drink the dashi with, which at a Sanuki shop is dried sardine and katsuobushi. No price published.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "ぶっかけうどん",
+    "romaji": "bukkake udon",
+    "en": "Bukkake udon",
+    "price": "",
+    "section": "さぬきうどん Sanuki udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A sweeter, more concentrated sauce poured over the noodles rather than a soup, which means MORE soy and dashi per bowl, not less. Comes with grated daikon and lemon. No price published.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "カレーうどん",
+    "romaji": "karē udon",
+    "en": "Curry udon",
+    "price": "",
+    "section": "さぬきうどん Sanuki udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE HEAVIEST DISH ON THE BOARD ON EVERY AXIS. The shop says the curry was supervised by the Michelin-starred French restaurant 北島亭 in Yotsuya and is built on butter and a fond de veau made from A5/A4 wagyu and ten vegetables — so beef, dairy and a French-style curry that is normally flour-thickened, over a wheat noodle. It is served with a separate cup of dashi to adjust it partway through. No price published.",
+    "dish_key": "curry_udon"
+   },
+   {
+    "ja": "肉うどん",
+    "romaji": "niku udon",
+    "en": "Niku udon",
+    "price": "",
+    "section": "さぬきうどん Sanuki udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Supervised by the Ginza Japanese restaurant しのはら. Sukiyaki-style beef and onion on kake udon; the shop names US round and belly, and says a large quantity of katsuobushi carries the flavour. Sukiyaki seasoning is soy and mirin. No price published.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "釜玉",
+    "romaji": "kamatama",
+    "en": "Kamatama udon",
+    "price": "",
+    "section": "さぬきうどん Sanuki udon",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Noodles straight from the pot, mixed with a raw egg and finished with the shop's own 薄口醤油 — wheat noodle plus soy sauce plus raw egg. A butter version, 釜玉バター, is recommended by the shop. No price published.",
+    "dish_key": "udon"
+   },
+   {
+    "ja": "かきあげ",
+    "romaji": "kakiage",
+    "en": "Kakiage tempura",
+    "price": "",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tempura batter is wheat. The shop names onion, carrot, shungiku and DRIED SHRIMP in it — so the one fritter that looks like a vegetable fritter contains shellfish. It also suggests dipping it in the dashi. No price published.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "とり天",
+    "romaji": "toriten",
+    "en": "Chicken tempura",
+    "price": "",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The shop says it uses a particular てんぷら粉 — a wheat tempura flour. Chicken. No price published.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "ちくわ天",
+    "romaji": "chikuwa ten",
+    "en": "Chikuwa tempura",
+    "price": "",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter around a fish cake; the shop says the chikuwa comes direct from Kagawa. Chikuwa itself commonly carries starch and sometimes wheat binder. No price published.",
+    "dish_key": "tempura"
+   },
+   {
+    "ja": "半熟卵天",
+    "romaji": "hanjuku tamago ten",
+    "en": "Soft-boiled egg tempura",
+    "price": "",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter, egg inside. No price published.",
+    "dish_key": "tempura"
+   }
+  ]
  }
 }

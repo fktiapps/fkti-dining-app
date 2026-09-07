@@ -759,5 +759,402 @@
     "dish_key": "chashu_topping"
    }
   ]
+ },
+ "tokyo_canaru_shinjuku_restaura": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://canard.its.ac/",
+   "https://canard.its.ac/menu.html"
+  ],
+  "price_note": "CANARD publishes its dinner card on its own site (menu.html, a Shift-JIS page off the shop's long-running 2009 template). ⚠ READ THESE PRICES AS A COURSE, NOT A LIST. Dinner is 4,500円 before tax for カナルディナー — one hors d'oeuvre, one main and one cheese-or-dessert chosen from the lists below — or 7,500円 before tax for the chef's おまかせグルメディナー of hors d'oeuvre, fish, palate cleanser, meat and dessert. The ＋xxx円 figures recorded against individual dishes are SUPPLEMENTS ADDED TO THE COURSE PRICE, not standalone prices, and a dish carrying no figure carries no supplement. The shop's own footer says the in-store menu takes precedence and that every price shown is before tax. Service 18:00–22:30 (last order); parties from 15 people, tel 03-3200-0706. ⚠ FRENCH BISTRO COOKING IS FLOUR-FIRST AND ALMOST NOTHING ON THIS CARD IS SAFE TO ASSUME. Poêlé fish is dusted in flour as a matter of technique, cream and wine sauces are classically roux-thickened, and a fricassée IS a flour-bound stew. Three dishes are wheat by name rather than by inference — the キッシュ and the スズキのパイ包み焼き are pastry, and the オニオングラタンスープ is gratinéed over a slice of bread — and the two tarts are pastry as well. Everything else is an ask, which at a small owner-run French room is a conversation worth having rather than a dead end. ⚠ AND THERE IS NO VEGAN ROUTE THROUGH THIS CARD AT ALL: every hors d'oeuvre is fish, meat, egg or cheese, every main is an animal, and the desserts are dairy — a plant-only diner cannot assemble a course here, and the closest thing to a vegetable starter, the ズッキーニ, is sauced in Roquefort.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "カナルディナー",
+    "romaji": "Kanaru dinā",
+    "en": "CANARD dinner course",
+    "price": "4500円（税抜）",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Three courses chosen from the lists below: one hors d'oeuvre, one main, one cheese or dessert. Supplements marked against individual dishes are added on top of this.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "シェフおまかせグルメディナー",
+    "romaji": "shefu omakase gurume dinā",
+    "en": "Chef's omakase gourmet dinner",
+    "price": "7500円（税抜）",
+    "section": "コース Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Hors d'oeuvre, fish, palate cleanser, meat and dessert, all chosen by the kitchen — so no dish can be checked in advance from the published page.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "自家製のキッシュロレーヌ（ベーコンときのこ入り）",
+    "romaji": "jikasei no kisshu Rorēnu",
+    "en": "House quiche Lorraine with bacon and mushroom",
+    "price": "",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A quiche is a pastry case — wheat by definition, not by inference. Bacon, egg and cream.",
+    "dish_key": "quiche"
+   },
+   {
+    "ja": "さっぱりサーモンのカルパッチョ,ハーブの香り",
+    "romaji": "sappari sāmon no karupatcho, hābu no kaori",
+    "en": "Light salmon carpaccio with herbs",
+    "price": "＋500円",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw salmon; the dressing is not described.",
+    "dish_key": "carpaccio"
+   },
+   {
+    "ja": "オニオングラタンスープ",
+    "romaji": "onion guratan sūpu",
+    "en": "French onion soup gratinée",
+    "price": "",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The gratin is a slice of bread under the cheese — wheat by construction — and the stock is beef.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "シェフの気まぐれサラダ",
+    "romaji": "shefu no kimagure sarada",
+    "en": "Chef's whim salad",
+    "price": "",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Contents change daily and are not published, so neither flag can be settled from the page.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "アボガドと小海老のサラダ",
+    "romaji": "abokado to koebi no sarada",
+    "en": "Avocado and baby prawn salad",
+    "price": "",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Prawns.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "鴨のテリーヌ,グリーンペッパー風味",
+    "romaji": "kamo no terīnu, gurīn peppā fūmi",
+    "en": "Duck terrine with green peppercorn",
+    "price": "＋500円",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Duck. Terrines are commonly bound with breadcrumb and are normally served with toast.",
+    "dish_key": "terrine"
+   },
+   {
+    "ja": "エスカルゴのオーブン焼き",
+    "romaji": "esukarugo no ōbun-yaki",
+    "en": "Oven-baked escargots",
+    "price": "＋600円",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Snails in garlic butter; the classic oven version is finished with a breadcrumb crust.",
+    "dish_key": "escargot"
+   },
+   {
+    "ja": "地中海の魚のスープ（カナルスペシャル）",
+    "romaji": "Chichūkai no sakana no sūpu (Kanaru supesharu)",
+    "en": "Mediterranean fish soup (CANARD special)",
+    "price": "＋600円",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fish. Soupe de poisson is traditionally served with croutons alongside.",
+    "dish_key": "soup"
+   },
+   {
+    "ja": "ズッキーニのロックフォールソース",
+    "romaji": "zukkīni no Rokkufōru sōsu",
+    "en": "Courgette in Roquefort sauce",
+    "price": "＋800円",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The nearest thing to a vegetable starter on the card — and the sauce is blue cheese.",
+    "dish_key": "yasai"
+   },
+   {
+    "ja": "生ハム,サラミ,テリーヌのシャルキュトリー盛り合わせ",
+    "romaji": "nama-hamu, sarami, terīnu no sharukyutorī moriawase",
+    "en": "Charcuterie board: prosciutto, salami, terrine",
+    "price": "＋800円",
+    "section": "オードブル Hors d'oeuvre",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cured pork. Salami and terrine can each carry a wheat binder.",
+    "dish_key": "charcuterie"
+   },
+   {
+    "ja": "ホタテ貝のポアレ,サフランクリームソース",
+    "romaji": "hotategai no poare, safuran kurīmu sōsu",
+    "en": "Seared scallops, saffron cream sauce",
+    "price": "",
+    "section": "魚料理 Fish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Poêlé means the scallop is floured before it meets the pan in classical practice, and a cream sauce is usually roux-thickened.",
+    "dish_key": "scallop"
+   },
+   {
+    "ja": "エイヒレ,ケッパークリームソース",
+    "romaji": "eihire, keppā kurīmu sōsu",
+    "en": "Skate wing, caper cream sauce",
+    "price": "＋500円",
+    "section": "魚料理 Fish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Raie is a floured preparation by tradition; the sauce is cream.",
+    "dish_key": "fish"
+   },
+   {
+    "ja": "スズキのパイ包み焼き",
+    "romaji": "suzuki no pai-tsutsumi-yaki",
+    "en": "Sea bass baked in pastry",
+    "price": "＋600円",
+    "section": "魚料理 Fish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wrapped in pastry — wheat by name, no inference needed.",
+    "dish_key": "fish"
+   },
+   {
+    "ja": "本日の鮮魚（築地市場によりプラス有り）",
+    "romaji": "honjitsu no sengyo",
+    "en": "Today's market fish",
+    "price": "",
+    "section": "魚料理 Fish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop notes the price can carry a supplement depending on that morning at Tsukiji. The preparation is not published.",
+    "dish_key": "fish"
+   },
+   {
+    "ja": "牛タンのやわらか煮，ラビゴットソース",
+    "romaji": "gyūtan no yawaraka-ni, rabigotto sōsu",
+    "en": "Slow-braised beef tongue, sauce ravigote",
+    "price": "",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef tongue. Ravigote is a vinaigrette, but the braising liquid is not described.",
+    "dish_key": "gyutan"
+   },
+   {
+    "ja": "仔牛のトリッパ，トマト煮込み",
+    "romaji": "koushi no torippa, tomato nikomi",
+    "en": "Veal tripe stewed in tomato",
+    "price": "",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Veal offal.",
+    "dish_key": "nikomi"
+   },
+   {
+    "ja": "鶏もも肉のポアレ,エストラゴンソース",
+    "romaji": "tori momoniku no poare, esutoragon sōsu",
+    "en": "Seared chicken thigh, tarragon sauce",
+    "price": "",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken; the sauce composition is not published.",
+    "dish_key": "chicken"
+   },
+   {
+    "ja": "牛ほほ肉の赤ワイン煮,絶品のやわらかさ",
+    "romaji": "gyū hohoniku no akawain-ni",
+    "en": "Beef cheek braised in red wine",
+    "price": "＋500円",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A red-wine braise is normally flour-thickened at the finish.",
+    "dish_key": "nikomi"
+   },
+   {
+    "ja": "うさぎときの子のフリカッセ，マスタードソース",
+    "romaji": "usagi to kinoko no furikasse, masutādo sōsu",
+    "en": "Rabbit and mushroom fricassée, mustard sauce",
+    "price": "",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A fricassée is by definition a flour-bound white stew, and prepared mustard can carry wheat as well.",
+    "dish_key": "nikomi"
+   },
+   {
+    "ja": "鴨のコンフィ，ローズマリーとはちみつの香り",
+    "romaji": "kamo no konfi, rōzumarī to hachimitsu no kaori",
+    "en": "Duck confit with rosemary and honey",
+    "price": "＋800円",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Duck cooked in its own fat — one of the few plates here with no obvious flour step, though the glaze is undescribed.",
+    "dish_key": "duck"
+   },
+   {
+    "ja": "仔羊のポアレ(ラムチョップ)，フレンチビストロの味",
+    "romaji": "kohitsuji no poare (ramu choppu)",
+    "en": "Seared lamb chops, bistro style",
+    "price": "＋600円",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Lamb; not further described.",
+    "dish_key": "lamb"
+   },
+   {
+    "ja": "牛フィレ，四種類の胡椒（カナルスペシャル）",
+    "romaji": "gyū fire, yon-shurui no koshō (Kanaru supesharu)",
+    "en": "Beef fillet with four peppers (CANARD special)",
+    "price": "＋1200円",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The largest supplement on the card. Steak au poivre sauces are built on cream and stock.",
+    "dish_key": "steak"
+   },
+   {
+    "ja": "チーズの盛り合わせ",
+    "romaji": "chīzu no moriawase",
+    "en": "Cheese plate",
+    "price": "＋1200円",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy; a cheese plate arrives with bread or crackers unless asked otherwise.",
+    "dish_key": "cheese"
+   },
+   {
+    "ja": "りんごとブルーチーズのオーブン焼き",
+    "romaji": "ringo to burū chīzu no ōbun-yaki",
+    "en": "Baked apple with blue cheese",
+    "price": "＋600円",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "cheese"
+   },
+   {
+    "ja": "ピスタチオとバニラアイスクリーム",
+    "romaji": "pisutachio to banira aisukurīmu",
+    "en": "Pistachio and vanilla ice cream",
+    "price": "",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. The plainest dessert on the card and the likeliest to be wheat-free, but nothing on the page confirms it and ice cream is normally plated with a biscuit.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "白チョコレートと黒チョコレートのムース",
+    "romaji": "shiro chokorēto to kuro chokorēto no mūsu",
+    "en": "White and dark chocolate mousse",
+    "price": "",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy and egg.",
+    "dish_key": "mousse"
+   },
+   {
+    "ja": "コロネル〜レモンシャーベットとウォッカ〜",
+    "romaji": "koroneru — remon shābetto to wokka",
+    "en": "Colonel — lemon sorbet with vodka",
+    "price": "",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Sorbet and spirit; whether this sorbet base is dairy-free is not stated.",
+    "dish_key": "sorbet"
+   },
+   {
+    "ja": "温かいリンゴと冷たいシャーベット，カルバドス入り",
+    "romaji": "atatakai ringo to tsumetai shābetto, Karubadosu iri",
+    "en": "Warm apple with cold sorbet and Calvados",
+    "price": "",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Apple brandy; the base of the sorbet is not stated and warm apple desserts are often butter-cooked.",
+    "dish_key": "sorbet"
+   },
+   {
+    "ja": "ガトーショコラとその仲間",
+    "romaji": "gatō shokora to sono nakama",
+    "en": "Gâteau chocolat and friends",
+    "price": "＋500円",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A baked chocolate cake; the French original is sometimes flourless and sometimes not. Egg and dairy either way.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "絶品といわれたクレムブリュレ",
+    "romaji": "zeppin to iwareta kurēmu buryure",
+    "en": "Crème brûlée",
+    "price": "＋500円",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cream, egg and sugar — of everything on this card the dessert least likely to involve flour, though it is usually plated with a tuile.",
+    "dish_key": "creme_brulee"
+   },
+   {
+    "ja": "タルトタタン〜カナルスペシャル〜",
+    "romaji": "taruto Tatan (Kanaru supesharu)",
+    "en": "Tarte Tatin (CANARD special)",
+    "price": "＋600円",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A tart — pastry, wheat by definition — and the caramel is butter.",
+    "dish_key": "tart"
+   },
+   {
+    "ja": "本日のタルト",
+    "romaji": "honjitsu no taruto",
+    "en": "Today's tart",
+    "price": "",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A tart — pastry, wheat by definition.",
+    "dish_key": "tart"
+   },
+   {
+    "ja": "赤果物（いちご,木苺,ブルーベリー）のスープ",
+    "romaji": "aka-kudamono (ichigo, kiichigo, burūberī) no sūpu",
+    "en": "Red fruit soup: strawberry, raspberry, blueberry",
+    "price": "",
+    "section": "チーズ・デザート Cheese and dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Fruit only by name — the one dessert on the card that could go either way for both diets, but the page does not say whether cream or a biscuit comes with it.",
+    "dish_key": "dessert"
+   }
+  ]
  }
 }

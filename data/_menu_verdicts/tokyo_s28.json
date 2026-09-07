@@ -1289,5 +1289,169 @@
     "dish_key": "creme_brulee"
    }
   ]
+ },
+ "tokyo_anko_maruyamacho_ten": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://grill-anko.jp/maruyamacho/"
+  ],
+  "price_note": "EMPTY, AND FOR THE CLEANEST POSSIBLE REASON: THE SHOP'S OWN SITE HAS A MENU SECTION WHOSE ENTIRE CONTENT IS A POINTER SOMEWHERE ELSE. Under the heading 'Menu', grill-anko.jp/maruyamacho/ prints one sentence — 「最新のメニューは「食べログ庵狐円山町店」をご覧ください」 — and links out. There is no dish list, no price, no PDF and no image board anywhere on the page; the rest of it is the address block, a recruitment link, an August 2025 notice about changed opening hours, and the group's other shops (魚潮 学芸大学, 海と 高田馬場, まさら, Rollup Burrito). ⚠ THAT PUTS THIS RECORD IN THE ONE CATEGORY THIS TICK CANNOT FINISH: the first-party site is reachable and deliberately defers to Tabelog, and Tabelog has served this egress a Cloudflare managed challenge (HTTP 403) since 2026-09-02. It is not that the menu does not exist — it is that the only publisher of it is the blocked host. Recorded empty so the queue stops re-selecting it; it should be revisited the day Tabelog is reachable again. What the page does establish: 庵狐 円山町店, 渋谷区円山町25-4 加藤ビル1F, tel 03-5459-4083, 18:00 (Mon–Fri) / 17:00 (Sat, Sun, holidays) to 24:00 with last orders at 23:00, open year-round, 34 seats with one private room.",
+  "last_checked": "2026-09-06",
+  "items": []
+ },
+ "tokyo_tsukesoba_kanda_katsumot": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://katsumoto-japan.com/en/kanda_katsumoto.html"
+  ],
+  "price_note": "The 勝本 group publishes this shop's whole board in English on its own site with a tax-included price on every line, so the figures below need no conversion or inference. 東京都千代田区神田猿楽町1-2-4 猿楽町ビル, 10:00–17:00 and closed as soon as the soup runs out, shut every Sunday with irregular Monday closures. The shop's own description of the bowl: a clear soup concentrated from fresh niboshi (dried sardines) from Kujukushima in Nagasaki, lifted with yuzu, and finished at the end of the meal with a Japanese dashi soup and a squeeze of sudachi. ⚠ THE ONE FACT A COELIAC NEEDS IS IN THE SHOP'S OWN SELLING POINT AND IT IS EASY TO MISREAD AS GOOD NEWS. Katsumoto's headline is that every bowl carries TWO kinds of noodle at once — a chewy thin noodle and a smooth flat noodle, both made for it by 浅草開化楼 — and both of them are wheat. A tsukesoba shop that doubles the noodle doubles the gluten; there is no rice or non-noodle route through this menu at all, and the menu is four bowls, five toppings, beer and a frozen souvenir pack. ⚠ AND THE NAME IS THE OTHER TRAP: 'そば' here does not mean buckwheat. つけそば in a ramen context means a wheat ramen noodle served for dipping, and the dipping sauce is 醤油 — the menu says so in English on every line, 'soy sauce dipping noodles'. Soy sauce is wheat, so the broth and the noodle fail on the same grain. ⚠ NOTHING ON THIS BOARD IS VEGAN EITHER: the soup is a sardine dashi from the first line of the shop's own description, and the toppings are egg and pork.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "特製醤油つけそば",
+    "romaji": "tokusei shōyu tsukesoba",
+    "en": "Top special soy sauce dipping noodles",
+    "price": "1750円 (inc.tax)",
+    "section": "Tsuke Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The fully loaded bowl. Both noodle types are wheat, the dipping sauce is soy, and the soup is a niboshi (sardine) dashi.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "醤油つけそば（特製）",
+    "romaji": "shōyu tsukesoba (tokusei)",
+    "en": "Special soy sauce dipping noodles",
+    "price": "1350円 (inc.tax)",
+    "section": "Tsuke Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles, soy dipping sauce, sardine dashi.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "味玉醤油つけそば",
+    "romaji": "ajitama shōyu tsukesoba",
+    "en": "Ajitama soy sauce dipping noodles",
+    "price": "1150円 (inc.tax)",
+    "section": "Tsuke Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The standard bowl with a seasoned egg. The egg is marinated in soy — a second wheat source on the same plate.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "醤油つけそば",
+    "romaji": "shōyu tsukesoba",
+    "en": "Soy sauce dipping noodles",
+    "price": "1000円 (inc.tax)",
+    "section": "Tsuke Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The base bowl and the cheapest thing on the board. Wheat noodles, soy dipping sauce, sardine dashi.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "替玉",
+    "romaji": "kaedama",
+    "en": "Extra noodles",
+    "price": "200円 (inc.tax)",
+    "section": "Tsuke Soba",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ A second serving of the same wheat noodle.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "海苔",
+    "romaji": "nori",
+    "en": "Roasted seaweeds",
+    "price": "150円 (inc.tax)",
+    "section": "Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Plain roasted nori is a seaweed and nothing else — the only topping on this board that is not egg, pork or noodle. Whether it is seasoned is not stated, and it goes into a fish broth.",
+    "dish_key": "nori"
+   },
+   {
+    "ja": "味玉",
+    "romaji": "ajitama",
+    "en": "Seasoned boiled egg",
+    "price": "150円 (inc.tax)",
+    "section": "Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Ajitama is an egg marinated in a soy-and-mirin tare — wheat by default, and egg.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "ねぎ",
+    "romaji": "negi",
+    "en": "Scallions",
+    "price": "150円 (inc.tax)",
+    "section": "Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Raw spring onion.",
+    "dish_key": "negi"
+   },
+   {
+    "ja": "メンマ",
+    "romaji": "menma",
+    "en": "Seasoned bamboo shoots",
+    "price": "150円 (inc.tax)",
+    "section": "Toppings",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Menma is fermented bamboo simmered in a soy seasoning — wheat by default. Plant-based in itself, but ramen menma is often cooked in a pork or chicken stock as well.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "バラチャーシュー3枚",
+    "romaji": "bara chāshū sanmai",
+    "en": "3 slices of pork belly chashu",
+    "price": "300円 (inc.tax)",
+    "section": "Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Chashu is braised in soy — pork and wheat.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "瓶ビール（小）",
+    "romaji": "bin bīru (shō)",
+    "en": "Small bottle of beer",
+    "price": "400円 (inc.tax)",
+    "section": "Beverages",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Beer is barley, and 麦 is not on Japan's statutory allergen list so it will never be flagged on a Japanese label.",
+    "dish_key": "bottled_beer"
+   },
+   {
+    "ja": "瓶ビール（中）",
+    "romaji": "bin bīru (chū)",
+    "en": "Medium bottle of beer",
+    "price": "600円 (inc.tax)",
+    "section": "Beverages",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Barley.",
+    "dish_key": "bottled_beer"
+   },
+   {
+    "ja": "冷凍中華そば 3食",
+    "romaji": "reitō chūka soba sanshoku",
+    "en": "Frozen chuka soba, 3 meals",
+    "price": "2800円 (inc.tax)",
+    "section": "Souvenirs",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A take-home pack rather than a dish served in the shop — and note it is the group's 中華そば, not the つけそば, so it is a different bowl from anything on the counter. Wheat noodles and fish broth either way.",
+    "dish_key": "souvenir"
+   }
+  ]
  }
 }

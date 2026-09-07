@@ -1445,5 +1445,478 @@
     "dish_key": "jasmine_tea"
    }
   ]
+ },
+ "tokyo_choraku_dogenzaka_ten": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://choraku.tokyo/"
+  ],
+  "price_note": "NO MENU EXISTS TO FIND AT THIS ADDRESS AND THAT IS THE FINDING. choraku.tokyo — the URL this dataset carries as 兆楽's website — resolves to 渋谷兆楽's Shopify MERCHANDISE STORE, not to a restaurant site. Its entire catalogue is four items: CHORAKU IN THE HOOD TEE (¥8,800, sold out), FRIED RICE PRINT PLATE (¥6,600), CHORAKU DRAGON TEE (¥5,500) and CHORAKU STAFF TEE (¥5,500), plus a banner for a BLACK EYE PATCH × 兆楽 tee drop. The site's only other pages are /cart and the three Shopify policy pages; there is no food navigation, no 品書き, no branch list and no address block anywhere on it. ⚠ THE PRICES ON THAT SITE ARE T-SHIRTS AND A PLATE, AND ANY PASS THAT SCRAPES ¥ FIGURES OFF IT WILL PRODUCE AN 8,800円 'MENU ITEM' FOR A RAMEN SHOP — the ¥6,600 line is literally a printed dish with a fried-rice design on it, which is exactly the sort of thing that reads as food to a machine. This record is recorded EMPTY on purpose so that it is not selected again. The shop's food menu is not published on any first-party page reachable from this URL; the only remaining route is its Tabelog 品書き, which is parked while Tabelog serves a Cloudflare managed challenge to this egress.",
+  "last_checked": "2026-09-06",
+  "items": []
+ },
+ "tokyo_matcha_times_asakusa": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://matcha-times.com/",
+   "https://matcha-times.com/menu.html",
+   "https://matcha-times.com/contacts.html"
+  ],
+  "price_note": "PARTIAL FOR TWO SEPARATE REASONS, AND BOTH SHOULD BE READ BEFORE THE LIST. First, the site publishes ITS MENU WITHOUT A SINGLE PRICE — every drink and sweet below carries a one-line tasting description from the brand and no figure at all, so nothing here is priced and nothing has been invented. Second, and more important for this record: MATCHA-TIMES.COM IS A BRAND SITE, NOT THIS SHOP'S SITE. It belongs to 株式会社MATCHA TIMES of 東京都中野区本町2-4-11, a company its own About page says was formed in 2025 by people who had been promoting matcha abroad, and the site's navigation is ホーム / MATCHA TIMESについて / メニュー / ギャラリー / FC加盟 / お問合せ — a franchise-recruitment structure. IT CARRIES NO BRANCH LIST AND THE WORD 浅草 APPEARS NOWHERE ON ANY PAGE OF IT. The menu below is therefore the brand's menu, which is the best first-party evidence available for the Asakusa shop, but it has not been confirmed against that branch and a franchised outlet may not carry every line. The company states it buys its matcha powder from five long-established matcha houses. ⚠ THE DIET SHAPE OF A MATCHA CAFÉ IS THE OPPOSITE OF WHAT IT LOOKS LIKE. Matcha itself is a ground leaf — no wheat, no animal — so the tea is never the problem; the problem is always what it is served in or with. Every ラテ on this list is milk, which makes the entire drinks column non-vegan except the two that are not lattes. And the sweets column splits cleanly on batter: たいやき, どら焼き, ロールケーキ and クッキー are wheat by construction, while 大福, ようかん and わらび餅 are rice, agar and starch confections that are the genuine leads here. ⚠ ONE ITEM IS A REAL TRAP: 抹茶ソフトクリーム is dairy AND normally arrives in a wheat cone, so it fails both diets at once in a shop where almost everything else fails only one.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "抹茶ラテ",
+    "romaji": "matcha rate",
+    "en": "Matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The house standard. Milk — the shop describes it as 香り高い抹茶とクリーミーなミルク. No price published; no plant-milk option is mentioned anywhere on the site.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "ストロベリー抹茶ラテ",
+    "romaji": "sutoroberī matcha rate",
+    "en": "Strawberry matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "マンゴー抹茶ラテ",
+    "romaji": "mangō matcha rate",
+    "en": "Mango matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "チョコレート抹茶ラテ",
+    "romaji": "chokorēto matcha rate",
+    "en": "Chocolate matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk and chocolate.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "ココナッツ抹茶ラテ",
+    "romaji": "kokonattsu matcha rate",
+    "en": "Coconut matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONE DRINK ON THIS LIST WORTH ASKING ABOUT: coconut is the flavour, but the shop does not say whether the coconut REPLACES the milk or is added to it, and every other line in this column is a dairy latte. Ask whether it is made on coconut milk.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "柚子抹茶ソーダ",
+    "romaji": "yuzu matcha sōda",
+    "en": "Yuzu matcha soda",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ NOT A LATTE — the shop describes it as yuzu, light carbonation and matcha, with no milk in the description. On the published text this is the most likely vegan drink in the shop.",
+    "dish_key": "matcha_soda"
+   },
+   {
+    "ja": "エスプレッソ抹茶",
+    "romaji": "esupuresso matcha",
+    "en": "Espresso matcha",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Described as a blend of espresso and matcha with no milk named, unlike the lattes either side of it — but the site does not say it is served black.",
+    "dish_key": "matcha_coffee"
+   },
+   {
+    "ja": "抹茶メロンラテ",
+    "romaji": "matcha meron rate",
+    "en": "Matcha melon latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "もも抹茶ラテ",
+    "romaji": "momo matcha rate",
+    "en": "Peach matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "小豆抹茶ラテ",
+    "romaji": "azuki matcha rate",
+    "en": "Azuki matcha latte",
+    "price": "",
+    "section": "ドリンクメニュー Drinks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk over slow-cooked azuki beans.",
+    "dish_key": "matcha_latte"
+   },
+   {
+    "ja": "抹茶たいやき",
+    "romaji": "matcha taiyaki",
+    "en": "Matcha taiyaki",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TAIYAKI IS A WHEAT BATTER PRESSED IN AN IRON — wheat by construction, not by inference — and the shop describes the filling as とろける抹茶クリーム, which is dairy.",
+    "dish_key": "taiyaki"
+   },
+   {
+    "ja": "熟蜜やきいも",
+    "romaji": "jukumitsu yakiimo",
+    "en": "Honey-sweet roasted sweet potato",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE MOST PROMISING ITEM IN THE SHOP FOR EITHER DIET AND THE ONE THE MENU SAYS LEAST ABOUT. A roasted sweet potato is a whole vegetable with no batter and no dairy in its plain form; 熟蜜 here reads as a description of the potato's own caramelised sweetness rather than added honey, but the shop does not say so, and honey would end the vegan question. Ask.",
+    "dish_key": "yakiimo"
+   },
+   {
+    "ja": "抹茶ソフトクリーム",
+    "romaji": "matcha sofuto kurīmu",
+    "en": "Matcha soft-serve",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ FAILS BOTH DIETS AT ONCE, WHICH IS RARE ON THIS BOARD: soft-serve is dairy, and it is conventionally served in a wheat cone. Ask for a cup.",
+    "dish_key": "softcream"
+   },
+   {
+    "ja": "抹茶ロールケーキ",
+    "romaji": "matcha rōru kēki",
+    "en": "Matcha roll cake",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A sponge roll — wheat flour and egg — wrapped around matcha cream.",
+    "dish_key": "cake"
+   },
+   {
+    "ja": "抹茶大福",
+    "romaji": "matcha daifuku",
+    "en": "Matcha daifuku",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Daifuku skin is GLUTINOUS RICE, not wheat, which makes this one of the few sweets here that is not wheat by construction — but the shop names the filling as 抹茶あんとクリーム, and that cream is dairy.",
+    "dish_key": "daifuku"
+   },
+   {
+    "ja": "抹茶どら焼き",
+    "romaji": "matcha dorayaki",
+    "en": "Matcha dorayaki",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Dorayaki pancakes are wheat flour and egg; the shop names matcha cream as the filling.",
+    "dish_key": "dorayaki"
+   },
+   {
+    "ja": "抹茶ようかん",
+    "romaji": "matcha yōkan",
+    "en": "Matcha yokan",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop calls it 伝統の味 and says nothing more. Yokan in its traditional form is bean paste, sugar and agar — no wheat, no animal — which makes this the best candidate on the sweets list for both diets, but the shop publishes no recipe and this is a franchise brand rather than a wagashi maker.",
+    "dish_key": "yokan"
+   },
+   {
+    "ja": "抹茶わらび餅",
+    "romaji": "matcha warabimochi",
+    "en": "Matcha warabimochi",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Described as warabimochi dusted with matcha kinako and dressed with matcha syrup. Warabimochi is a starch jelly and kinako is roasted soy flour — no wheat and no animal in the traditional build, though commercial warabimochi is usually made on potato or sweet-potato starch rather than true bracken.",
+    "dish_key": "warabimochi"
+   },
+   {
+    "ja": "抹茶クッキー",
+    "romaji": "matcha kukkī",
+    "en": "Matcha cookies",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ A biscuit — wheat. Whether the fat is butter is not stated.",
+    "dish_key": "cookie"
+   },
+   {
+    "ja": "抹茶ティラミス",
+    "romaji": "matcha tiramisu",
+    "en": "Matcha tiramisu",
+    "price": "",
+    "section": "アイスクリーム＆スナック Ice cream and snacks",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mascarpone, so dairy. The shop describes it as layers (層), and tiramisu is conventionally layered on wheat savoiardi — but the shop does not name the layer, so the wheat stays an ask rather than a certainty.",
+    "dish_key": "tiramisu"
+   }
+  ]
+ },
+ "tokyo_chouchou_shizenha_wine_t": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.chouchou-nature.com/"
+  ],
+  "price_note": "PARTIAL BECAUSE THE SHOP DOES NOT PUBLISH PRICES, NOT BECAUSE THE SOURCE IS WEAK. chouchou-nature.com is the bistro's own site and it is unusually forthcoming about WHAT it cooks and completely silent about what anything costs: the menu section is organised as four seasonal blocks — spring, summer, autumn, winter — each with a paragraph on the season's character followed by a list of that season's dishes, and not one figure appears anywhere on the page. Every dish below is named by the shop; none is priced and none has been guessed. ⚠ THE DISHES ROTATE BY SEASON, SO THE LIST IS NOT A BOARD YOU CAN ORDER FROM ON ANY GIVEN DAY — a winter cassoulet and a spring white-asparagus dish never coexist. The season is recorded in each note. Owner-chef 片野裕介 opened it in Shibuya in 2016 after AU COCHON ROSE, R&D, ポンレヴェック and スペインバル ジローナ. 〒150-0031 東京都渋谷区桜丘町30-10 青野ビル1F, tel/fax 03-6416-3868. ⚠ THE WINE ANSWER IS THAT THERE IS NO WINE LIST, AND THAT IS THE SHOP'S POLICY RATHER THAN AN OMISSION: it states plainly that natural wine is made in small quantities so it cannot keep a fixed stock, and that staff will choose a bottle to taste and budget instead. For a vegan that matters — VIN NATUREL IS THE ONE CATEGORY OF WINE MOST LIKELY TO BE UNFINED AND UNFILTERED, so this is a room where the question can actually be answered by the person pouring, but it cannot be answered from the website. ⚠ AND THE BREAD IS THE OTHER HEADLINE: the shop bakes its own, keeps about seven of the thirteen named loaves on any day, and the list contains gorgonzola, cream, milk butter and bacon breads alongside plain ones. All of it is wheat or rye; none of it is a gluten-free option.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "生ホタルイカの炙り",
+    "romaji": "nama hotaruika no aburi",
+    "en": "Seared raw firefly squid",
+    "price": "",
+    "section": "春メニュー Spring",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Squid. Spring dish; no price published.",
+    "dish_key": "ika"
+   },
+   {
+    "ja": "白エビと菜の花、自家製カラスミの一皿",
+    "romaji": "shiro-ebi to nanohana, jikasei karasumi no hitosara",
+    "en": "White shrimp, rape blossoms and house bottarga",
+    "price": "",
+    "section": "春メニュー Spring",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Shrimp and cured mullet roe. Spring dish.",
+    "dish_key": "ebi"
+   },
+   {
+    "ja": "ハマグリとホワイトアスパラガスのブレゼ",
+    "romaji": "hamaguri to howaito asuparagasu no bureze",
+    "en": "Braised clams and white asparagus",
+    "price": "",
+    "section": "春メニュー Spring",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Clams. A braise (braiser) is normally finished with butter or a flour-thickened jus. Spring dish.",
+    "dish_key": "clam"
+   },
+   {
+    "ja": "タケノコのフリット",
+    "romaji": "takenoko no furitto",
+    "en": "Bamboo shoot fritters",
+    "price": "",
+    "section": "春メニュー Spring",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ FRITTO IS A BATTER — wheat by construction. The bamboo shoot underneath is a plant, and the batter is what rules this out for a coeliac. Spring dish.",
+    "dish_key": "fritto"
+   },
+   {
+    "ja": "ホワイトアスパラガスの炭焼 〜オランデーズソース〜",
+    "romaji": "howaito asuparagasu no sumibiyaki, orandēzu sōsu",
+    "en": "Charcoal-grilled white asparagus, hollandaise",
+    "price": "",
+    "section": "春メニュー Spring",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A charcoal-grilled vegetable that would suit a vegan perfectly, sauced in HOLLANDAISE — egg yolk and butter. Ask whether it can come without. Spring dish.",
+    "dish_key": "asparagus"
+   },
+   {
+    "ja": "クスクスダニョー（仔羊の煮込み）",
+    "romaji": "kusukusu danyō",
+    "en": "Couscous d’agneau — lamb stew with couscous",
+    "price": "",
+    "section": "夏メニュー Summer",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ COUSCOUS IS DURUM WHEAT, and the stew is lamb. Summer dish.",
+    "dish_key": "couscous"
+   },
+   {
+    "ja": "トビウオのセビーチェ",
+    "romaji": "tobiuo no sebīche",
+    "en": "Flying fish ceviche",
+    "price": "",
+    "section": "夏メニュー Summer",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw fish cured in citrus — one of the few plates here with no obvious flour or dairy step. Summer dish.",
+    "dish_key": "ceviche"
+   },
+   {
+    "ja": "プーレオヴィネーグル（鶏の赤ワインビネガー煮込み）",
+    "romaji": "pūre o vinēguru",
+    "en": "Poulet au vinaigre — chicken in red-wine vinegar",
+    "price": "",
+    "section": "夏メニュー Summer",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken; the classical version is finished with cream and butter. Summer dish.",
+    "dish_key": "chicken"
+   },
+   {
+    "ja": "ピペラード（夏野菜の炒め煮）",
+    "romaji": "piperādo",
+    "en": "Piperade — stewed summer vegetables",
+    "price": "",
+    "section": "夏メニュー Summer",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE BEST VEGAN LEAD IN THE WHOLE SEASONAL ROTATION: peppers, tomato and onion stewed in oil, with no flour or dairy in the classical recipe — but Basque piperade is very often finished with egg, and in a French kitchen it is often served under ham. Worth asking; not safe to assume. Summer dish.",
+    "dish_key": "piperade"
+   },
+   {
+    "ja": "ホロホロ鶏と5種キノコのクリーム煮込み",
+    "romaji": "horohorochō to goshu kinoko no kurīmu nikomi",
+    "en": "Guinea fowl and five mushrooms in cream",
+    "price": "",
+    "section": "秋メニュー Autumn",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Guinea fowl and cream; a cream stew is normally roux-thickened. Autumn dish.",
+    "dish_key": "nikomi"
+   },
+   {
+    "ja": "フォアグラとセップ茸のフラン（洋風茶わん蒸し）",
+    "romaji": "foagura to seppudake no furan",
+    "en": "Foie gras and cep flan (French-style chawanmushi)",
+    "price": "",
+    "section": "秋メニュー Autumn",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg custard with foie gras. Autumn dish.",
+    "dish_key": "flan"
+   },
+   {
+    "ja": "秋刀魚と里芋のテリーヌ",
+    "romaji": "sanma to satoimo no terīnu",
+    "en": "Pacific saury and taro terrine",
+    "price": "",
+    "section": "秋メニュー Autumn",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fish. Terrines are commonly bound with breadcrumb and served with toast. Autumn dish.",
+    "dish_key": "terrine"
+   },
+   {
+    "ja": "鰹の炙り燻製",
+    "romaji": "katsuo no aburi kunsei",
+    "en": "Smoked seared bonito",
+    "price": "",
+    "section": "秋メニュー Autumn",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Bonito. Autumn dish.",
+    "dish_key": "katsuo"
+   },
+   {
+    "ja": "トゥールーズ風カスレ（白インゲンとソーセージの煮込み）",
+    "romaji": "tūrūzu-fū kasure",
+    "en": "Cassoulet toulousain — white beans and sausage",
+    "price": "",
+    "section": "冬メニュー Winter",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A BEAN STEW THAT IS ANYTHING BUT VEGETARIAN: cassoulet is confit, sausage and pork fat, and it is traditionally finished with a breadcrumb crust. Winter dish.",
+    "dish_key": "cassoulet"
+   },
+   {
+    "ja": "シュークルート（発酵キャベツのソーセージ添え）",
+    "romaji": "shūkurūto",
+    "en": "Choucroute — fermented cabbage with sausage",
+    "price": "",
+    "section": "冬メニュー Winter",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Fermented cabbage sounds like the vegan option and it is served with sausage and cured pork; choucroute is also conventionally cooked in white wine or BEER. Winter dish.",
+    "dish_key": "choucroute"
+   },
+   {
+    "ja": "蝦夷鹿シンタマ肉のグリル",
+    "romaji": "ezoshika shintama-niku no guriru",
+    "en": "Grilled Hokkaido venison knuckle",
+    "price": "",
+    "section": "冬メニュー Winter",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Venison — the shop says winter is its game season. Winter dish.",
+    "dish_key": "venison"
+   },
+   {
+    "ja": "ブイヤベース（魚介類の香味野菜煮込み）",
+    "romaji": "buiyabēsu",
+    "en": "Bouillabaisse",
+    "price": "",
+    "section": "冬メニュー Winter",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mixed seafood; bouillabaisse is served with rouille on toast by tradition. Winter dish.",
+    "dish_key": "bouillabaisse"
+   },
+   {
+    "ja": "自家製パン（日替わり約7種類）",
+    "romaji": "jikasei pan (higawari yaku nana-shurui)",
+    "en": "House bread, about seven kinds daily",
+    "price": "",
+    "section": "自家製パン House bread",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ ALL WHEAT OR RYE, AND SOME ARE DAIRY TOO. The shop names thirteen loaves and says about seven are out on any day: honey-jam and gorgonzola pain de campagne; rye and wholemeal pain de campagne; wakame and soy-sauce pain de campagne; Earl Grey and orange-peel pain de campagne; cream shokupan; bamboo-charcoal shokupan; strawberry-jam and milk-butter shokupan; grovbrød (Danish); black-sesame rustique; baguette; semi-dried tomato and bacon focaccia; pain d'épices; garlic-butter petits pains. The plain baguette and the rustique are the only ones with no named dairy or meat.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "ヴァン・ナチュール（リストなし／おすすめ制）",
+    "romaji": "van nachūru (risuto nashi)",
+    "en": "Natural wine — no list, chosen by the shop",
+    "price": "",
+    "section": "ワイン Wine",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE SHOP STATES OUTRIGHT THAT IT HAS NO WINE LIST — natural wine is made in small quantities so it cannot hold fixed stock, and staff choose a bottle to your taste and budget instead. That makes the vegan question answerable at the table and unanswerable from the website: natural wine is the category most likely to be unfined and unfiltered, but nothing here confirms any given bottle. The owner names Benoît Rosenberger, lucky13 and loup des vigne as the wines that started him on it.",
+    "dish_key": "wine"
+   }
+  ]
+ },
+ "tokyo_iwao": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://asia-kitchen.co.jp/iwao/"
+  ],
+  "price_note": "EMPTY BECAUSE THE SHOP'S SITE IS A LANDING PAGE, NOT A MENU. asia-kitchen.co.jp/iwao/ has four nav items — HOME, GOOGLE MAP, OFFICIAL and 食べログ — and no menu page behind any of them; the body is a description of the room (a fifty-year-old detached wooden house down a back alley, converted, entered through a small くぐり戸), an empty Instagram feed widget reading 「投稿はありません」, an access block and a list of sister shops (氣ウラ, ウダガワ成ル, ミヤシタ成ル). No dish is named anywhere on it. ⚠ THE PAGE DOES CHARACTERISE THE COOKING AND THAT IS ALL IT DOES: 和食ベースの創作料理 built on 厳選された鮮魚, with a deep shochu and wine list — a creative-Japanese izakaya on selected fresh fish. That is not a menu and nothing has been extracted from it. ⚠ ONE INCONSISTENCY WORTH RECORDING RATHER THAN TIDYING: the same page describes the building as 築50年 in one paragraph and 築70年 in another. The only published board is behind the page's own 食べログ link, and Tabelog has served this egress a Cloudflare managed challenge since 2026-09-02, so it is parked rather than missing. 〒150-0043 東京都渋谷区道玄坂2-23-2 巖ビル1・2F, tel 050-5303-3146, 17:30–00:00, irregular closing.",
+  "last_checked": "2026-09-06",
+  "items": []
  }
 }

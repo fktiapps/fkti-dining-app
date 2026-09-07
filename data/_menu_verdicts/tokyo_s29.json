@@ -109,5 +109,671 @@
     "dish_key": "butter_topping"
    }
   ]
+ },
+ "tokyo_asakusa_unana": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://unana.jp/",
+   "https://unana.jp/food-menu/"
+  ],
+  "price_note": "The shop's own お品書き page carries a price against every line and repeats the whole board twice — once as a picture-menu grid and once as a plain 一覧 list. The two agree except on one figure, and the disagreement is recorded here rather than smoothed over: うなぎ蒲焼 竹 is 1,980円 in the grid and 2,980円 in the list, which straddles the 松 price of 2,540円 in one direction and sits sensibly between 梅 and 松 in the other. The grid figure of 1,980円 is the one consistent with the 松/竹/梅 ladder, so it is recorded as the price with the conflict flagged; do not treat either number as settled. Run by 浅草麦酒合同会社 at 東京都台東区浅草2-7-21. ⚠ THIS IS A GRILLED-EEL SHOP AND KABAYAKI TARE IS THE WHOLE POINT OF IT: every eel item is lacquered in a soy-sauce-and-mirin glaze, which makes the entire eel half of the board wheat by default, and eel itself rules out vegan. ⚠ THE ONE ITEM THAT LOOKS LIKE AN EXCEPTION IS NOT ONE — the 焼きおにぎり at 630円 is a rice ball, but it is an EEL rice ball basted on the grill, so it carries both the fish and the soy. There is nothing on this board for either diet.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "うな重 梅",
+    "romaji": "unajū ume",
+    "en": "Eel over rice, \"ume\" (smallest)",
+    "price": "1390円",
+    "section": "国産鰻 うな重 Eel over rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy sauce and mirin — wheat by default — and eel is a fish.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "うな重 竹",
+    "romaji": "unajū take",
+    "en": "Eel over rice, \"take\" (middle)",
+    "price": "2230円",
+    "section": "国産鰻 うな重 Eel over rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy sauce and mirin — wheat by default — and eel is a fish.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "うな重 松",
+    "romaji": "unajū matsu",
+    "en": "Eel over rice, \"matsu\" (largest)",
+    "price": "2790円",
+    "section": "国産鰻 うな重 Eel over rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy sauce and mirin — wheat by default — and eel is a fish.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "うなぎ蒲焼 梅",
+    "romaji": "unagi kabayaki ume",
+    "en": "Grilled eel fillet, \"ume\"",
+    "price": "1150円",
+    "section": "国産鰻 うなぎ蒲焼 Grilled eel",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy sauce and mirin — wheat by default.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "うなぎ蒲焼 竹",
+    "romaji": "unagi kabayaki take",
+    "en": "Grilled eel fillet, \"take\"",
+    "price": "1980円",
+    "section": "国産鰻 うなぎ蒲焼 Grilled eel",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SHOP'S OWN PAGE GIVES TWO PRICES FOR THIS LINE — 1,980円 in the picture grid and 2,980円 in the list below it. 1,980円 is recorded because it is the figure that fits between 梅 (1,150円) and 松 (2,540円); the other would make 竹 dearer than 松. Check at the counter.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "うなぎ蒲焼 松",
+    "romaji": "unagi kabayaki matsu",
+    "en": "Grilled eel fillet, \"matsu\"",
+    "price": "2540円",
+    "section": "国産鰻 うなぎ蒲焼 Grilled eel",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy sauce and mirin — wheat by default.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "国産鰻の焼きおにぎり",
+    "romaji": "kokusan unagi no yaki-onigiri",
+    "en": "Grilled rice ball with domestic eel",
+    "price": "630円",
+    "section": "鰻 創作料理 Eel specialities",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ITEM MOST LIKELY TO BE MISTAKEN FOR A SAFE ONE. It is a rice ball, and it is an EEL rice ball basted on the grill, so it carries the fish and the soy tare both. The shop sells it as an Asakusa walking snack.",
+    "dish_key": "onigiri"
+   },
+   {
+    "ja": "うな肝のアヒージョ",
+    "romaji": "unagi-kimo no ahījo",
+    "en": "Eel liver ajillo",
+    "price": "900円",
+    "section": "鰻 創作料理 Eel specialities",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Eel liver in garlic oil. Ajillo has no inherent wheat step, but it is normally served with bread and the seasoning is not published.",
+    "dish_key": "ajillo"
+   },
+   {
+    "ja": "クリカラ焼き （串）",
+    "romaji": "kurikara-yaki (kushi)",
+    "en": "Kurikara-yaki — eel skewer",
+    "price": "550円",
+    "section": "その他 Other",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Eel wound onto a skewer and grilled in the same kabayaki tare.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "うな肝串",
+    "romaji": "unagi-kimo kushi",
+    "en": "Eel liver skewer",
+    "price": "500円",
+    "section": "その他 Other",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Grilled on the same tare as the fillets.",
+    "dish_key": "unagi"
+   },
+   {
+    "ja": "肝吸い",
+    "romaji": "kimosui",
+    "en": "Eel liver clear soup",
+    "price": "350円",
+    "section": "その他 Other",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kimosui is a dashi soup seasoned with soy — both a fish fact and a wheat fact — with eel liver in it.",
+    "dish_key": "soup"
+   }
+  ]
+ },
+ "tokyo_fleur_de_sarrasin": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "http://www.fleurdesarrasin.tokyo/",
+   "http://www.fleurdesarrasin.tokyo/menu"
+  ],
+  "price_note": "⚠ THIS RECORD CARRIES A GLUTEN-FREE CLAIM IN THE DATASET AND THE SHOP'S OWN SITE DOES NOT MAKE ONE — read that before anything else. Fleur de Sarrasin is a ガレットと国産シードル専門店, a buckwheat-galette and Japanese-cider specialist, and buckwheat is not wheat, which is presumably where the cuisine label came from. But NOTHING on the shop's own Menu page says gluten-free, says 100% buckwheat, or says the flour is unblended. Most Japanese galette kitchens work alongside a wheat crêpe, and the shop's own Dinner list opens with 蕎麦チップス and そば味噌 in the same breath as 生ハム and チョリソー off a shared counter. Worse for a coeliac specifically: the shop states 「日祝の夜は蕎麦生地がなくなり次第閉店」 — it closes when the buckwheat batter runs out — which tells you the batter is made in one daily quantity and tells you nothing about what is in it. EVERY GALETTE BELOW IS THEREFORE 'ask', NOT 'gf'. Even 十割 soba means 打ち粉 and shared water, and the site never claims 十割 in the first place. ⚠ THE PRICES ARE FROM-PRICES AND THE MENU IS DELIBERATELY OPEN-ENDED: 前菜 490〜, 黒ガレット 1,500〜, 白ガレット 890〜, each followed by an example list ending in etc…, so the published card is a shape rather than a complete board. Weekday lunch 黒 1,990 and 黒と白 2,590; holiday lunch サラザン 2,990 with the shop noting the contents change by season; a 7-dish share course at 4,990 per person from two people, and a cider-pairing version of it at 9,990. Hours 11:45–15:00 (L.O. 14:00) and 17:45–23:00 (L.O. 21:00), irregular closing. ⚠ THE ONE GENUINELY GOOD VEGAN LEAD IS THE 白ガレット, whose example fillings include きな粉、黒蜜、抹茶アイス — soy flour and brown-sugar syrup are plants, but the 抹茶アイス next to them is not, and the default white galette is 北海道よつ葉有塩バター. Ask for the kinako-and-kuromitsu build without the ice cream.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "平日ランチ 黒",
+    "romaji": "heijitsu ranchi: kuro",
+    "en": "Weekday lunch — \"black\" (savoury galette set)",
+    "price": "1990円",
+    "section": "平日ランチ Weekday lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A drink (apple juice or soba tea), the day's soup, and one savoury buckwheat galette chosen from the menu. ⚠ Buckwheat is not wheat, but the shop nowhere states the batter is unblended — this is an ask, not a clearance. The galette choices all carry egg, cheese or meat.",
+    "dish_key": "galette_set"
+   },
+   {
+    "ja": "平日ランチ 黒と白",
+    "romaji": "heijitsu ranchi: kuro to shiro",
+    "en": "Weekday lunch — \"black and white\" (savoury + dessert galette set)",
+    "price": "2590円",
+    "section": "平日ランチ Weekday lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The same set plus a dessert galette. Drink is apple juice or soba tea; both galettes are chosen from the menu.",
+    "dish_key": "galette_set"
+   },
+   {
+    "ja": "休日ランチ サラザン",
+    "romaji": "kyūjitsu ranchi: Sarazan",
+    "en": "Weekend/holiday lunch — \"Sarrasin\" course",
+    "price": "2990円",
+    "section": "休日ランチ Holiday lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop notes the contents change with the season. As published: a drink (cider, apple juice or soba tea); a starter, either buckwheat-groat soup or ポテサラザン; a black galette of egg, cheese, ham, shiitake and tororo-kombu; and a white galette of bean paste, Hokkaido cultured butter and milk ice cream. ⚠ Egg, ham, butter and dairy ice cream — the fixed weekend course cannot be made vegan.",
+    "dish_key": "galette_set"
+   },
+   {
+    "ja": "前菜",
+    "romaji": "zensai",
+    "en": "Starters (from)",
+    "price": "490円〜",
+    "section": "Dinner",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A from-price over an open list the shop ends with etc…: 蕎麦チップスとそば味噌 (buckwheat chips and soba miso), シードルヴィネガーで漬けたピクルス (cider-vinegar pickles), ポテサラザン, あいち鴨のリエット, あいち鴨ロースのたたき, and a meat board of prosciutto, chorizo and wagyu corned beef. ⚠ THE FIRST TWO ARE THE PLANT-BASED ONES AND BOTH HAVE A CATCH: そば味噌 is miso, which may be barley, and the pickles and the charcuterie come off the same counter.",
+    "dish_key": "starter"
+   },
+   {
+    "ja": "黒ガレット (お食事ガレット)",
+    "romaji": "kuro garetto (oshokuji garetto)",
+    "en": "Black galette — savoury buckwheat galette (from)",
+    "price": "1500円〜",
+    "section": "Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A from-price over an open list ending in etc…: 自家製海藻バター (house seaweed butter); egg, cheese and ham; 信州サーモン with egg, cheese, cream and wasabi; 静岡マンガリッツァ豚バラ with egg, cheese and onion-cider confit. ⚠ EVERY PUBLISHED BUILD CONTAINS DAIRY, AND ALL BUT ONE CONTAIN EGG OR MEAT — the savoury galette is where this shop is least accommodating to a vegan, not most. On wheat, see the price_note: buckwheat is the flour named, unblended is not.",
+    "dish_key": "galette"
+   },
+   {
+    "ja": "白ガレット (デザートガレット)",
+    "romaji": "shiro garetto (dezāto garetto)",
+    "en": "White galette — dessert galette (from)",
+    "price": "890円〜",
+    "section": "Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A from-price over an open list ending in etc…: 北海道よつ葉有塩バター with 黄金糖 from Kikaijima, Kagoshima; house salted-butter caramel; and きな粉、黒蜜、抹茶アイス. ⚠ THE KINAKO-AND-KUROMITSU BUILD IS THE ONE VEGAN-ADJACENT ITEM ON THIS ENTIRE CARD — roasted soy flour and brown-sugar syrup are both plants — BUT IT IS PUBLISHED WITH MATCHA ICE CREAM ON IT, and the other two builds are butter. This is a dish worth asking about, not a dish to assume.",
+    "dish_key": "galette"
+   },
+   {
+    "ja": "シェアコースメニュー",
+    "romaji": "shea kōsu menyū",
+    "en": "Sharing course",
+    "price": "4990円 /人",
+    "section": "Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Seven of the shop's popular dishes in small portions: おつまみガレット, 蕎麦チップス そば味噌, ポテサラザン, ピクルス, an Aichi duck board, one black galette and one white galette, with both galettes chosen by the guest. Minimum two people. ⚠ The duck board makes the published course impossible for a vegan as it stands.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "コース料理とシードル(5種類)のペアリング",
+    "romaji": "kōsu ryōri to shīdoru (go-shurui) no pearingu",
+    "en": "Course with five-cider pairing",
+    "price": "9990円 /人",
+    "section": "Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The sharing course with five ciders matched to it by the shop.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "お試しシードル（3杯）",
+    "romaji": "otameshi shīdoru (sanbai)",
+    "en": "Cider taster flight, three glasses",
+    "price": "2690円",
+    "section": "シードル Cider",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Three ciders chosen to taste very differently from each other; the shop recommends it to first-timers. ⚠ CIDER IS FERMENTED APPLE, SO IT IS THE ONE THING IN THE ROOM WITH NO GRAIN IN IT BY CONSTRUCTION — but fining agents (gelatin, isinglass, casein) are not declared on Japanese labels, which is why this is an ask on both counts rather than a yes.",
+    "dish_key": "cider"
+   },
+   {
+    "ja": "飲み比べシードル（3杯）",
+    "romaji": "nomikurabe shīdoru (sanbai)",
+    "en": "Comparison cider flight, three glasses",
+    "price": "2990円",
+    "section": "シードル Cider",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Three seasonal recommendations rather than the fixed taster set. Same fining caveat as the 2,690円 flight.",
+    "dish_key": "cider"
+   }
+  ]
+ },
+ "tokyo_jimjum_jim_jum_2": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://jimjum.net/jp/",
+   "https://jimjum.net/jp/menu/menu-lunch/",
+   "https://jimjum.net/jp/menu/menu-dinner/"
+  ],
+  "price_note": "PARTIAL, AND THE MISSING HALF IS THE PRICES. JIMJUM's own WordPress site has a four-page menu section, but the boards themselves are POSTED AS PHOTOGRAPHS — the lunch page is a wall of JPEGs with no alt text and no transcription, so not one lunch price is recoverable from it. The dinner page is better only because the shop typed dish names as captions under its photos, and those captions are the item list below; no price appears anywhere on it either. Everything recorded here is a dish the shop names in its own text. Nothing is priced, and nothing has been guessed. What the site does say in words: hours are lunch 11:30–14:00 on weekdays except Thursday and 11:30–15:00 at weekends, dinner 18:00–23:00 on weekdays and 17:30–23:00 at weekends, last orders 30 minutes before each; closed Mondays; 東京都台東区浅草1-43-8 原田ビル2F, tel 03-3841-8806. The lunch page adds in text that the popular Thai curries are red, massaman (yellow) and green 「のほか色々」, and warns that items go off the board when they sell out or when Thai ingredients cannot be sourced. ⚠ THAI FOOD IS THE CUISINE WHERE 'NO WHEAT VISIBLE' IS MOST MISLEADING: fish sauce (ナンプラー) and shrimp paste (カピ) are in the base of nearly everything including the curry pastes and the som tam dressing, which makes most of this board a VEGAN problem long before it is a gluten one, and oyster sauce and soy sauce carry the wheat on the stir-fries. ⚠ AND THE TWO KHAO SOI BOWLS ARE THE HARD NO: khao soi is an EGG-NOODLE dish, wheat by construction, and it is conventionally topped with a second helping of the same noodles deep-fried.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "タイ風蒸し春巻き",
+    "romaji": "Tai-fū mushi harumaki",
+    "en": "Thai-style steamed spring rolls",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named on the dinner page without a price or a filling. Thai spring-roll wrappers are sometimes rice and sometimes wheat, and the filling is not stated.",
+    "dish_key": "harumaki"
+   },
+   {
+    "ja": "豚ひき肉ハーブサラダ",
+    "romaji": "buta hikiniku hābu sarada",
+    "en": "Minced pork herb salad (larb)",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pork. Larb dressing is fish sauce and lime, which is usually wheat-free but is never vegan.",
+    "dish_key": "larb"
+   },
+   {
+    "ja": "ブラックカオソーイ",
+    "romaji": "burakku kao sōi",
+    "en": "Black khao soi",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ KHAO SOI IS AN EGG-NOODLE CURRY — wheat by construction, and topped with more of the same noodles fried crisp. Egg in the noodle, and the curry paste carries shrimp paste.",
+    "dish_key": "khaosoi"
+   },
+   {
+    "ja": "カオソーイ",
+    "romaji": "kao sōi",
+    "en": "Khao soi",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Same construction as the black version: wheat egg noodles under and on top of a coconut curry.",
+    "dish_key": "khaosoi"
+   },
+   {
+    "ja": "タイの焼き鳥(香草ソースも絶品)",
+    "romaji": "Tai no yakitori",
+    "en": "Thai grilled chicken (gai yang) with herb sauce",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken. The marinade and the herb dipping sauce are not described; Thai grill marinades normally carry fish and soy sauce.",
+    "dish_key": "gaiyang"
+   },
+   {
+    "ja": "タイ野菜カナー炒め",
+    "romaji": "Tai yasai kanā itame",
+    "en": "Stir-fried Chinese broccoli (kana)",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ The one all-vegetable stir-fry on the board, and the standard Thai treatment of kana is oyster sauce — which is neither vegan nor reliably wheat-free. Worth asking; not worth assuming.",
+    "dish_key": "yasai_itame"
+   },
+   {
+    "ja": "人気ソムタム！",
+    "romaji": "ninki somu tamu",
+    "en": "Som tam — green papaya salad",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE CLASSIC VEGAN TRAP OF THAI COOKING: green papaya and lime look like a plant salad, and the standard dressing is fish sauce with dried shrimp. Usually wheat-free; almost never vegan unless made to order.",
+    "dish_key": "somtam"
+   },
+   {
+    "ja": "タイ揚玉ねぎ入茶碗蒸",
+    "romaji": "Tai ageamanegi-iri chawanmushi",
+    "en": "Chawanmushi with Thai fried onion",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg custard, so not vegan; fried onion is normally dusted in flour before frying.",
+    "dish_key": "chawanmushi"
+   },
+   {
+    "ja": "タイオムレツ",
+    "romaji": "Tai omuretsu",
+    "en": "Thai omelette (kai jiao)",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg. Kai jiao is normally seasoned with fish sauce.",
+    "dish_key": "omelette"
+   },
+   {
+    "ja": "海老と春雨と野菜炒め",
+    "romaji": "ebi to harusame to yasai itame",
+    "en": "Stir-fried prawns, glass noodles and vegetables",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Prawns. ⚠ Glass noodles are mung bean and not wheat — the wheat risk here is the sauce, not the noodle.",
+    "dish_key": "harusame"
+   },
+   {
+    "ja": "タイ風茶碗蒸し",
+    "romaji": "Tai-fū chawanmushi",
+    "en": "Thai-style chawanmushi",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg custard.",
+    "dish_key": "chawanmushi"
+   },
+   {
+    "ja": "特製味噌で食べる野菜",
+    "romaji": "tokusei miso de taberu yasai",
+    "en": "Vegetables with house nam prik / miso dip",
+    "price": "",
+    "section": "ディナーメニュー Dinner",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ The raw vegetables are fine and the dip is the question: a Thai 特製味噌 in this position is normally nam prik, which is built on shrimp paste, and Japanese miso may be barley. Both flags hang entirely on the dip.",
+    "dish_key": "yasai"
+   },
+   {
+    "ja": "レッドカレー",
+    "romaji": "reddo karē",
+    "en": "Red curry",
+    "price": "",
+    "section": "ランチメニュー Lunch",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named in the lunch page's own text as one of the popular curries, without a price. Thai red curry paste conventionally contains shrimp paste; coconut milk means no dairy.",
+    "dish_key": "thai_curry"
+   },
+   {
+    "ja": "マッサマンカレー（イエロー）",
+    "romaji": "massaman karē (ierō)",
+    "en": "Massaman (yellow) curry",
+    "price": "",
+    "section": "ランチメニュー Lunch",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named in the lunch page text without a price. Same shrimp-paste question as the red.",
+    "dish_key": "thai_curry"
+   },
+   {
+    "ja": "グリーンカレー",
+    "romaji": "gurīn karē",
+    "en": "Green curry",
+    "price": "",
+    "section": "ランチメニュー Lunch",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Named in the lunch page text without a price. The shop says there are others besides these three but does not list them.",
+    "dish_key": "thai_curry"
+   }
+  ]
+ },
+ "tokyo_soba_ju": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://soba-ju.com/"
+  ],
+  "price_note": "SOBA-JU publishes its board on its own single-page site in three blocks — 蕎麦 SOBA (11:30–14:30), 一品料理 DINNER (18:00–25:00) and 飲み物 DRINK — with a price against every line, and closes two of the three blocks with 「...etc.」 and the caveat 「メニューは季節のおすすめをご用意しておりますので、替わる場合がございます」, so what is below is the published board rather than the whole board. ⚠ THE SAME DISH IS PRICED TWICE AND THE DIFFERENCE IS THE TIME OF DAY: 肉蕎麦 is ￥1,100 at lunch and ￥1,300 at night, and both figures are recorded rather than reconciled. Fifteen counter seats, 東京都新宿区新宿3-10-1 吉岡ビル1階, tel 03-6380-1705, lunch Mon–Sat, dinner Tue–Sat, closed Sunday. It is part of the MARUGO group and the site warns that the group has several similarly named shops, so a booking can land at the wrong one. ⚠ THIS IS A SOBA SHOP AND ALMOST NOTHING ABOUT IT IS GLUTEN-FREE, WHICH IS WORTH SAYING PLAINLY BECAUSE 'soba' IS THE WORD THAT MOST OFTEN GETS A COELIAC INTO TROUBLE IN JAPAN. The shop's own CONCEPT text names its noodle as 挽きぐるみ極太平打ち麺 — a coarse wholemeal-grind, extra-thick flat noodle — and says nothing at all about the buckwheat ratio. A noodle described only by its grind and its cut is a 二八 or looser blend by default, i.e. roughly 20% wheat, and even 十割 would still mean 打ち粉 and shared boiling water. The tsuyu compounds it: the shop describes it as カエシ (soy-sauce base) with sabá, so the broth is wheat and fish in the same sentence. ⚠ AND THE VEGAN SIDE IS WORSE THAN THE GLUTEN SIDE: the entire noodle section is beef, pork or duck, the dinner block is offal, sashimi and sukiyaki, and the one plant dish on the card — 季節野菜のお浸し — is an ohitashi, which is by definition vegetables steeped in dashi.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "肉蕎麦(牛/豚/鴨)",
+    "romaji": "niku soba (gyū / buta / kamo)",
+    "en": "Meat soba — beef, pork or duck",
+    "price": "各1100円",
+    "section": "蕎麦 SOBA (lunch 11:30-14:30)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The house dish, served tsuke-style with a chilli-oil dipping broth. The noodle is described only as 挽きぐるみ極太平打ち — a grind and a cut, never a buckwheat ratio — so wheat is the default, and the カエシ dipping broth is soy sauce and saba dashi. Beef, pork or duck on top.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "ボリューム満点！肉蕎麦全部のせ",
+    "romaji": "nikusoba zenbu nose",
+    "en": "Meat soba with all three meats",
+    "price": "1300円",
+    "section": "蕎麦 SOBA (lunch 11:30-14:30)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "All three meats on one bowl of the same wheat-blend noodle and soy-and-saba broth.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "トッピング 卵",
+    "romaji": "toppingu tamago",
+    "en": "Topping — egg",
+    "price": "各100円",
+    "section": "蕎麦 SOBA (lunch 11:30-14:30)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg. The site lists this as the only named topping.",
+    "dish_key": "topping"
+   },
+   {
+    "ja": "クリームチーズのもろみ漬",
+    "romaji": "kurīmu chīzu no moromi-zuke",
+    "en": "Cream cheese cured in moromi",
+    "price": "600円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ もろみ is the unrefined mash from which soy sauce and miso are made — wheat by default — and cream cheese is dairy. Both flags fail on the same three-word dish name.",
+    "dish_key": "cheese"
+   },
+   {
+    "ja": "季節野菜のお浸し",
+    "romaji": "kisetsu yasai no ohitashi",
+    "en": "Seasonal vegetables, ohitashi",
+    "price": "800円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONLY ALL-VEGETABLE DISH ON THE CARD AND IT IS NOT A VEGAN ONE. Ohitashi means vegetables steeped in seasoned dashi, and restaurant dashi is 白だし or めんつゆ — bonito and soy sauce, so a fish fact and a wheat fact at once.",
+    "dish_key": "ohitashi"
+   },
+   {
+    "ja": "板わさ",
+    "romaji": "itawasa",
+    "en": "Kamaboko with wasabi",
+    "price": "600円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Kamaboko is a fish cake, so not vegan; commercial kamaboko commonly carries starch and sometimes wheat binder, and it is eaten with soy sauce.",
+    "dish_key": "kamaboko"
+   },
+   {
+    "ja": "カシラ串",
+    "romaji": "kashira kushi",
+    "en": "Pork cheek skewer",
+    "price": "350円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pork. Salt or tare is not stated.",
+    "dish_key": "kushiyaki"
+   },
+   {
+    "ja": "白センマイ刺し",
+    "romaji": "shiro senmai sashi",
+    "en": "Blanched beef omasum sashimi",
+    "price": "900円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef tripe, served raw with a dipping sauce that is not described — sesame-and-soy is the usual one.",
+    "dish_key": "motsu"
+   },
+   {
+    "ja": "牛レバカツ",
+    "romaji": "gyū rebakatsu",
+    "en": "Crumbed fried beef liver",
+    "price": "750円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ カツ means a panko crumb — wheat by construction.",
+    "dish_key": "katsu"
+   },
+   {
+    "ja": "本日のお造り",
+    "romaji": "honjitsu no otsukuri",
+    "en": "Today's sashimi",
+    "price": "900円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Raw fish is not the wheat risk; the soy sauce it is served with is.",
+    "dish_key": "sashimi"
+   },
+   {
+    "ja": "特上ハラミのすき焼き風",
+    "romaji": "tokujō harami no sukiyaki-fū",
+    "en": "Premium skirt steak, sukiyaki style",
+    "price": "1900円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Sukiyaki warishita is soy sauce, mirin and sugar — wheat by default. Beef and normally raw egg.",
+    "dish_key": "sukiyaki"
+   },
+   {
+    "ja": "夜限定！シメのあがり蕎麦",
+    "romaji": "yoru gentei: shime no agari soba",
+    "en": "Night-only finishing soba",
+    "price": "800円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The small end-of-evening bowl. Same noodle and same soy-and-saba broth as the lunch bowls.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "肉蕎麦(牛/豚/鴨) 〔夜〕",
+    "romaji": "niku soba (yoru)",
+    "en": "Meat soba — beef, pork or duck (evening price)",
+    "price": "各1300円",
+    "section": "一品料理 DINNER (18:00-25:00)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SAME BOWL AS THE 1,100円 LUNCH ONE, PRICED 200円 HIGHER AFTER 18:00 — the shop lists it twice on the same page and both figures are recorded here deliberately.",
+    "dish_key": "soba"
+   },
+   {
+    "ja": "生ビール",
+    "romaji": "nama bīru",
+    "en": "Draught beer",
+    "price": "750円",
+    "section": "飲み物 DRINK",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Beer is barley. Note that 麦 is NOT on Japan's statutory allergen list, so a Japanese menu will never flag it.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "ハイボール",
+    "romaji": "haibōru",
+    "en": "Highball",
+    "price": "800円",
+    "section": "飲み物 DRINK",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Whisky and soda. Distilled spirit is generally tolerated even from a grain mash, but the shop names no brand.",
+    "dish_key": "highball"
+   },
+   {
+    "ja": "グラスワイン赤/白",
+    "romaji": "gurasu wain aka / shiro",
+    "en": "Glass wine, red or white",
+    "price": "700円〜",
+    "section": "飲み物 DRINK",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The MARUGO group's own line — the site says about six wines are open by the glass at any time. Fining agents are not declared on Japanese wine labels, which is the open vegan question.",
+    "dish_key": "wine"
+   },
+   {
+    "ja": "グラススパークリング",
+    "romaji": "gurasu supākuringu",
+    "en": "Sparkling wine by the glass",
+    "price": "800円〜",
+    "section": "飲み物 DRINK",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Same fining caveat as the still wine.",
+    "dish_key": "sparkling"
+   },
+   {
+    "ja": "日本酒・焼酎",
+    "romaji": "nihonshu / shōchū",
+    "en": "Sake and shochu",
+    "price": "700円〜",
+    "section": "飲み物 DRINK",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ Sake is rice, but 麦焼酎 is BARLEY — the shop lists the two together under one price and names no brands, so which is which cannot be told from the page.",
+    "dish_key": "sake"
+   }
+  ]
+ },
+ "tokyo_otaco_otako_chiffon_cake": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://otaco-sweets.com/",
+   "https://otaco-sweets.com/about/",
+   "https://otaco-sweets.com/shop/"
+  ],
+  "price_note": "⚠ THIS SHOP MAKES THE STRONGEST FIRST-PARTY GLUTEN STATEMENT IN THE TOKYO SET AND IT IS WORTH QUOTING EXACTLY. On its own home, about and shop pages otaco writes: 「otacoは、米粉のシフォンケーキの専門店です。小麦粉は厨房にも一切置いておりませんので、gluten freeのお客さまも安心して召し上がれます。」 — *there is no wheat flour in the kitchen at all*. That is not 'we have a gluten-free option': it is a claim that the flour is absent from the premises, which is the thing that actually matters for cross-contact and the thing almost no Japanese bakery says. The about page then names the four ingredients it is built on: domestic 米粉 (rice flour, which the shop notes is additive-free and about 5% lower in calories than wheat flour), 菜種油 pressed from domestic rapeseed by the traditional 玉締め method with no chemical solvents, 奥久慈卵 eggs from a farm in Ibaraki (the shop says the supplier can change with the season), and きび砂糖, unrefined cane sugar boiled down mid-refining. ⚠ AND THE SAME PAGE THAT MAKES IT SAFE FOR A COELIAC RULES IT OUT FOR A VEGAN, IN THE SHOP'S OWN WORDS: 「シフォンケーキのふくらみは卵のメレンゲの力！」 — the rise IS the egg meringue. There is no leavening here other than whipped egg white, so a vegan version is not a substitution away; it is a different cake. This is the cleanest example in the dataset of the two axes being independent. ⚠ NOTHING IS PRICED AND THERE IS NO FLAVOUR LIST, BECAUSE THE PRODUCT PAGE IS DOWN: otaco-sweets.com/shop/ currently reads 「ただいまメンテナンス中です」 and directs enquiries to chiffon@otaco-sweets.com. The blog also states that current information now goes to Instagram (chiffon_cake_otaco) rather than the site. So the record below is one item — the thing the shop exists to sell — with the gluten and vegan facts attached, and no invented flavours or figures. 〒111-0032 東京都台東区浅草3-5-1, tel/fax 03-6458-1375, eight minutes' walk from Asakusa station and three from the Sensō-ji main hall.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "米粉のシフォンケーキ",
+    "romaji": "komeko no shifon kēki",
+    "en": "Rice-flour chiffon cake",
+    "price": "",
+    "section": "シフォンケーキ Chiffon cake",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "⚠ GLUTEN-FREE ON THE SHOP'S OWN EXPLICIT CLAIM, NOT ON INFERENCE: otaco states that wheat flour is not kept in the kitchen at all and that gluten-free customers can eat here with confidence. Built on domestic rice flour, solvent-free traditional-pressed rapeseed oil, Okukuji eggs and unrefined kibi cane sugar. ⚠ NOT VEGAN AND CANNOT BE MADE SO — the shop says outright that the cake's rise is the egg meringue, so egg is the structure rather than an ingredient that could be swapped. No flavours or prices are published; the product page is under maintenance and the shop points customers to Instagram and to chiffon@otaco-sweets.com.",
+    "dish_key": "chiffon_cake"
+   }
+  ]
  }
 }
