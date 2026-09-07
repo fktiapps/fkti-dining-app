@@ -919,5 +919,469 @@
     "dish_key": "juice"
    }
   ]
+ },
+ "tokyo_shibuya_wagyu_yakiniku_u": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://ushihachishibuya.owst.jp/",
+   "https://ushihachishibuya.owst.jp/menu",
+   "https://www.hotpepper.jp/strJ001245692/food/"
+  ],
+  "price_note": "Prices 税込, from the shop's own site (渋谷区道玄坂2-3-1 渋谷駅前ビル 4F — the record's Dogenzaka placement). ⚠ AT A YAKINIKU HOUSE THE MEAT IS NOT THE PROBLEM AND THE DIPPING SAUCE IS. Nothing on this card's grill sections is breaded and the shop buys whole animals, so the raw material is clean — but yakiniku is eaten dipped in a soy-based tare, and this shop marks which items come 塩 or 味噌 and which do not. That labelling is the useful part: 上タン塩, タン塩, 白ホルモン（塩・味噌）, 和牛ハツ焼き（塩・味噌）, ねぎ塩ハラミ and ごま油香るにんにくオイル焼き all name a salt or oil finish, while タン赤身のたれ焼き names the tare outright. The 味噌 option is not the safe one — Japanese yakiniku miso tare is cut with soy sauce. ⚠ The shop sells a 「タン専用ねぎ塩だれ」 at ¥290 as a separate purchase, which means the default is not automatically that sauce; ask what arrives. ⚠ THE COOKED SECTIONS ARE WHERE THE WHEAT IS: 石焼ビビンバ and both 和牛ビビンバ are gochujang-dressed (Korean gochujang is conventionally made with wheat flour); コムタンスープ and ユッケジャンスープ can be ordered ご飯 or UDON, which is wheat; both 冷麺 and the 坦々冷麺 are Korean cold noodles whose Japanese-market versions frequently contain wheat flour; and 韓国海苔 is sesame-oiled seaweed that sometimes carries a soy seasoning. ⚠ VEGAN: the 焼き野菜 section is genuinely all-plant — courgette, onion, king oyster mushroom, asparagus, pumpkin, and a garlic-in-sesame-oil grill at ¥590 each — and the ナムル盛り合わせ is four seasoned vegetables. Both go on a grill shared with beef, and namul dressings sometimes carry fish seasoning.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "３秒炙りトロ",
+    "romaji": "sanbyō aburi toro",
+    "en": "Three-second seared fatty wagyu — a September month-viewing fair item",
+    "price": "¥1,250",
+    "section": "【9/7〜9/30】月見フェア (moon-viewing fair)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Limited-period item running 7–30 September. The full version below is served with a rice bite and egg yolk; seasoning unstated.",
+    "dish_key": "aburi-toro"
+   },
+   {
+    "ja": "ユッケ（月見フェア）",
+    "romaji": "yukke",
+    "en": "Wagyu yukhoe — fair item",
+    "price": "¥2,190",
+    "section": "【9/7〜9/30】月見フェア (moon-viewing fair)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yukhoe dressing is soy sauce and sesame oil.",
+    "dish_key": "wagyu-yukke"
+   },
+   {
+    "ja": "石焼ビビンパ（月見フェア）",
+    "romaji": "ishiyaki bibimba",
+    "en": "Stone-bowl bibimbap — fair item",
+    "price": "¥1,290",
+    "section": "【9/7〜9/30】月見フェア (moon-viewing fair)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Gochujang is conventionally made with wheat flour; normally topped with egg.",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "USHIHACHI一頭盛り7種",
+    "romaji": "USHIHACHI ittō mori nanashu",
+    "en": "Seven-cut whole-animal platter — six black wagyu cuts plus skirt; the shop states minimum two portions, price shown per portion",
+    "price": "¥3,490",
+    "section": "【これだけは食べてほしいBEST5】 (the shop's top five)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain sliced raw meat for the grill — clean in itself. The dipping tare is the question. Ask whether salt is available.",
+    "dish_key": "wagyu-platter"
+   },
+   {
+    "ja": "とろ肉3秒炙り",
+    "romaji": "toroniku sanbyō aburi",
+    "en": "Three-second seared fatty wagyu with a rice bite and egg yolk — the shop's stated number-one item",
+    "price": "¥1,250",
+    "section": "【これだけは食べてほしいBEST5】 (the shop's top five)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop names rice and raw egg yolk as the accompaniment, not a sauce — so the composition is unusually clean for a headline dish. Confirm nothing soy-based is brushed on.",
+    "dish_key": "aburi-toro"
+   },
+   {
+    "ja": "上タン塩",
+    "romaji": "jō tan shio",
+    "en": "Premium salted beef tongue, cut from the well-marbled section — the shop's pride",
+    "price": "¥1,590",
+    "section": "【これだけは食べてほしいBEST5】 (the shop's top five)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop names it 塩 — a SALT preparation, not a tare one. That makes it one of the better prospects on this card. Note the shop sells a separate ¥290 'tongue-only spring-onion salt tare', so ask which dressing arrives with it.",
+    "dish_key": "beef-tongue-shio"
+   },
+   {
+    "ja": "和牛ユッケ",
+    "romaji": "wagyū yukke",
+    "en": "Raw wagyu yukhoe — the shop states it is licensed for raw service",
+    "price": "¥2,190",
+    "section": "【これだけは食べてほしいBEST5】 (the shop's top five)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yukhoe dressing is soy sauce and sesame oil, with a raw yolk.",
+    "dish_key": "wagyu-yukke"
+   },
+   {
+    "ja": "極み 和牛レバー",
+    "romaji": "kiwami wagyū rebā",
+    "en": "Prime wagyu liver — fresh from whole-offal buying, per the shop",
+    "price": "¥1,190",
+    "section": "【これだけは食べてほしいBEST5】 (the shop's top five)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain offal for the grill; the dip is the question.",
+    "dish_key": "wagyu-liver"
+   },
+   {
+    "ja": "生うにと和牛ユッケ／北海道産大粒いくらと和牛ユッケ／両方入り",
+    "romaji": "nama uni to wagyū yukke / ikura to wagyū yukke / ryōhō",
+    "en": "Wagyu yukhoe with Hokkaido sea urchin, large salmon roe, or both",
+    "price": "¥2,590〜¥2,890",
+    "section": "【和牛生肉ユッケ】 (raw wagyu)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yukhoe dressing is soy; ikura is itself cured in a soy-and-sake liquor.",
+    "dish_key": "wagyu-yukke"
+   },
+   {
+    "ja": "特上カルビ／上カルビ",
+    "romaji": "tokujō karubi / jō karubi",
+    "en": "Premium and upper short rib — the shop names the cuts: kainomi and sasabara for the premium, tatebara and nakabara for the upper",
+    "price": "¥1,890 / ¥1,690",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain sliced meat; the tare is the question. Ask for salt.",
+    "dish_key": "wagyu-karubi"
+   },
+   {
+    "ja": "特上ロース／上ロース",
+    "romaji": "tokujō rōsu / jō rōsu",
+    "en": "Premium and upper loin — rib eye and rib cap, per the shop",
+    "price": "¥2,590 / ¥1,890",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain sliced meat; ask about the dip.",
+    "dish_key": "wagyu-rosu"
+   },
+   {
+    "ja": "特上赤身／上赤身",
+    "romaji": "tokujō akami / jō akami",
+    "en": "Premium and upper lean cuts — kameno-ko and shinshin, and marukawa, per the shop",
+    "price": "¥2,190 / ¥1,890",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain sliced meat; ask about the dip.",
+    "dish_key": "wagyu-akami"
+   },
+   {
+    "ja": "【数量限定】和牛の切り落としミックス",
+    "romaji": "wagyū no kiriotoshi mikkusu",
+    "en": "Limited-quantity wagyu offcut mix",
+    "price": "¥1,190",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain sliced meat, limited daily quantity.",
+    "dish_key": "wagyu-offcuts"
+   },
+   {
+    "ja": "和牛5種盛り合わせ／和牛3種盛り合わせ",
+    "romaji": "wagyū goshu / sanshu moriawase",
+    "en": "Five-cut platter (three premium cuts plus two offal) or three-cut platter — minimum two portions, price per portion",
+    "price": "¥2,190 / ¥1,790",
+    "section": "【黒毛和牛盛り合わせ】 (platters)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain sliced meat.",
+    "dish_key": "wagyu-platter"
+   },
+   {
+    "ja": "極上厚切りタン",
+    "romaji": "gokujō atsugiri tan",
+    "en": "Thick-cut premium beef tongue",
+    "price": "¥1,590",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Tongue is conventionally served salted here; confirm.",
+    "dish_key": "beef-tongue-thick"
+   },
+   {
+    "ja": "タン塩",
+    "romaji": "tan shio",
+    "en": "Salted beef tongue — the shop sells a dedicated spring-onion salt tare for it at ¥290",
+    "price": "¥1,390",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Named 塩 — salt-prepared. The ¥290 ねぎ塩だれ is sold SEPARATELY, which tells you the default is plainer; ask what comes on the plate.",
+    "dish_key": "beef-tongue-shio"
+   },
+   {
+    "ja": "タン赤身のたれ焼き",
+    "romaji": "tan akami no tareyaki",
+    "en": "Lean beef tongue grilled in tare",
+    "price": "¥1,090",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop names たれ — a soy-based tare, applied to the meat. The one grill item on the card explicitly sauced.",
+    "dish_key": "beef-tongue-tare"
+   },
+   {
+    "ja": "上ハラミ／一本ハラミ／ねぎ塩ハラミ",
+    "romaji": "jō harami / ippon harami / negishio harami",
+    "en": "Upper skirt (the well-marbled tender part, per the shop), whole skirt, or skirt with spring onion and salt",
+    "price": "¥1,390〜¥1,790",
+    "section": "【黒毛和牛焼肉】 (wagyu for the grill)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The ねぎ塩 version names a salt dressing rather than a tare — the better of the three to ask about.",
+    "dish_key": "wagyu-harami"
+   },
+   {
+    "ja": "白ホルモン（塩・味噌）",
+    "romaji": "shiro horumon (shio / miso)",
+    "en": "Fresh wagyu white offal, salt or miso — the shop calls out the springy texture",
+    "price": "¥890",
+    "section": "【ホルモン一頭買い】 (whole-animal offal)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ The salt and the miso options are not equivalent: Japanese yakiniku miso tare is cut with SOY SAUCE, so 味噌 is wheat by default while 塩 is the one to ask about.",
+    "dish_key": "horumon-shio-miso"
+   },
+   {
+    "ja": "和牛ハツ焼き（塩・味噌）",
+    "romaji": "wagyū hatsu yaki (shio / miso)",
+    "en": "Grilled wagyu heart, salt or miso",
+    "price": "¥890",
+    "section": "【ホルモン一頭買い】 (whole-animal offal)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "As above — take the 塩 option and ask what is in it.",
+    "dish_key": "horumon-shio-miso"
+   },
+   {
+    "ja": "角切り和牛レバー／ホルモンミックス",
+    "romaji": "kakugiri wagyū rebā / horumon mikkusu",
+    "en": "Cubed wagyu liver / mixed offal",
+    "price": "¥890 / ¥990",
+    "section": "【ホルモン一頭買い】 (whole-animal offal)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain offal; seasoning unstated on these two lines.",
+    "dish_key": "horumon"
+   },
+   {
+    "ja": "国産 豚バラ／国産 鶏もも／牡蠣焼き／赤エビ",
+    "romaji": "kokusan butabara / kokusan torimomo / kakiyaki / akaebi",
+    "en": "Domestic pork belly, domestic chicken thigh, grilled oyster, red prawn",
+    "price": "¥790〜¥990",
+    "section": "【その他焼物】 (other grilled items)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Plain proteins for the grill; dip unstated.",
+    "dish_key": "other-grill"
+   },
+   {
+    "ja": "焼き野菜盛り合わせ",
+    "romaji": "yakiyasai moriawase",
+    "en": "Assorted grilled vegetables",
+    "price": "¥890",
+    "section": "【焼き野菜】 (grilled vegetables)",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Vegetables only, grilled — plant-based. The gluten question is the shared grill and whatever tare arrives with the table; ask for salt.",
+    "dish_key": "grilled-vegetables"
+   },
+   {
+    "ja": "ズッキーニ／玉ねぎ／エリンギ／アスパラ／カボチャ",
+    "romaji": "zukkīni / tamanegi / eringi / asupara / kabocha",
+    "en": "Courgette, onion, king oyster mushroom, asparagus, pumpkin — single vegetables for the grill",
+    "price": "各¥590",
+    "section": "【焼き野菜】 (grilled vegetables)",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Single plain vegetables, each individually orderable — the most straightforwardly plant-based part of any yakiniku card. Grilled on the same surface as the beef.",
+    "dish_key": "grilled-vegetable-single"
+   },
+   {
+    "ja": "ごま油香るにんにくオイル焼き",
+    "romaji": "goma abura kaoru ninniku oiru yaki",
+    "en": "Garlic grilled in fragrant sesame oil",
+    "price": "¥590",
+    "section": "【焼き野菜】 (grilled vegetables)",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The shop names sesame oil and garlic and nothing else — plant, and no soy named. Shared grill.",
+    "dish_key": "garlic-oil-grill"
+   },
+   {
+    "ja": "キムチ盛り合わせ／白菜キムチ／オイキムチ／カクテキ／梅干しキムチ",
+    "romaji": "kimuchi moriawase / hakusai / oi / kakuteki / umeboshi kimuchi",
+    "en": "Kimchi platter and single kimchis — napa, cucumber, daikon, pickled-plum",
+    "price": "¥390〜¥890",
+    "section": "【一品】 (side dishes)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Korean kimchi commonly contains salted shrimp or fish sauce, and the seasoning paste is often gochujang. Ask before treating as vegan.",
+    "dish_key": "kimchi"
+   },
+   {
+    "ja": "ナムル盛り合わせ／もやしナムル／ほうれん草ナムル／人参ゼンマイナムル",
+    "romaji": "namuru moriawase / moyashi / hōrensō / ninjin zenmai namuru",
+    "en": "Namul platter and singles — bean sprout, spinach, carrot-and-fern",
+    "price": "¥390〜¥890",
+    "section": "【一品】 (side dishes)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Seasoned vegetables, individually orderable — the plant corner of this card. Namul dressing is sesame oil, garlic and salt as standard, sometimes with soy or a fish seasoning. Ask.",
+    "dish_key": "namul"
+   },
+   {
+    "ja": "キムナム盛り合わせ",
+    "romaji": "kimunamu moriawase",
+    "en": "Combined kimchi and namul platter",
+    "price": "¥890",
+    "section": "【一品】 (side dishes)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "As above for both halves.",
+    "dish_key": "kimchi-namul-platter"
+   },
+   {
+    "ja": "韓国海苔",
+    "romaji": "Kankoku nori",
+    "en": "Korean seasoned seaweed",
+    "price": "¥390",
+    "section": "【一品】 (side dishes)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Sesame-oiled salted seaweed is plant and normally wheat-free, but commercial sheets sometimes carry a soy or fish seasoning. Ask.",
+    "dish_key": "korean-nori"
+   },
+   {
+    "ja": "牛8グリーンサラダ／チョレギサラダ／サンチュセット",
+    "romaji": "Ushihachi gurīn sarada / choregi sarada / sanchu setto",
+    "en": "House green salad, choregi salad, lettuce-wrap set",
+    "price": "¥690〜¥850",
+    "section": "【サラダ】 (salads)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The サンチュセット is plain lettuce for wrapping meat — the cleanest of the three, though it normally arrives with a ssamjang, which is a soy-and-gochujang paste. Choregi dressing is sesame-and-soy based. Ask.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "ふわふわ玉子スープ／わかめスープ",
+    "romaji": "fuwafuwa tamago sūpu / wakame sūpu",
+    "en": "Fluffy egg soup / seaweed soup",
+    "price": "各¥590",
+    "section": "【スープ】 (soups)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Korean-style soups here are built on a beef or chicken stock and seasoned with soy. Egg in the first.",
+    "dish_key": "korean-soup"
+   },
+   {
+    "ja": "コムタンスープ／ユッケジャンスープ",
+    "romaji": "gomtang sūpu / yukgaejang sūpu",
+    "en": "Gomtang beef-bone soup / spicy yukgaejang",
+    "price": "各¥790",
+    "section": "【スープ】 (soups)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Gomtang is a long-boiled beef-bone broth seasoned at the table with salt — one of the few Korean soups where wheat is not inherent, so worth asking about. Yukgaejang is gochujang-based, which is conventionally wheat-made.",
+    "dish_key": "korean-soup"
+   },
+   {
+    "ja": "つや姫の銀しゃり",
+    "romaji": "Tsuyahime no ginshari",
+    "en": "Plain Tsuyahime rice — small ¥250, large ¥450",
+    "price": "¥350",
+    "section": "【ご飯・麺】 (rice and noodles)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice of a named variety, nothing added — no wheat and no animal ingredient.",
+    "dish_key": "plain-rice"
+   },
+   {
+    "ja": "和牛石焼ビビンバ／和牛ビビンバ",
+    "romaji": "wagyū ishiyaki bibimba / wagyū bibimba",
+    "en": "Wagyu bibimbap, stone bowl or standard",
+    "price": "各¥1,290",
+    "section": "【ご飯・麺】 (rice and noodles)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Gochujang is conventionally wheat-made; normally topped with egg.",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "和牛の生肉牛丼／和牛の生肉ユッケビビンバ",
+    "romaji": "wagyū no namaniku gyūdon / namaniku yukke bibimba",
+    "en": "Raw wagyu rice bowl / raw wagyu yukhoe bibimbap",
+    "price": "¥2,190 / ¥1,890",
+    "section": "【ご飯・麺】 (rice and noodles)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yukhoe dressing is soy; the bibimbap adds gochujang.",
+    "dish_key": "wagyu-don"
+   },
+   {
+    "ja": "ユッケジャン（ご飯／うどん）／コムタンスープ（ご飯／うどん）",
+    "romaji": "yukgaejang (gohan / udon) / gomtang (gohan / udon)",
+    "en": "Yukgaejang or gomtang served over rice OR with udon",
+    "price": "各¥1,190",
+    "section": "【ご飯・麺】 (rice and noodles)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The udon option is WHEAT. The rice option of the gomtang is the one worth asking about, since gomtang broth itself is just long-boiled beef bone.",
+    "dish_key": "korean-soup-set"
+   },
+   {
+    "ja": "シャリシャリ氷結冷麺",
+    "romaji": "sharisharī hyōketsu reimen",
+    "en": "Frozen-slush cold noodles — half portion ¥490",
+    "price": "¥890",
+    "section": "【ご飯・麺】 (rice and noodles)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Korean naengmyeon noodles are buckwheat and starch, but Japanese-market versions frequently add WHEAT flour, and the broth is a beef stock usually with egg and sliced beef.",
+    "dish_key": "naengmyeon"
+   },
+   {
+    "ja": "濃厚胡麻の坦々冷麺",
+    "romaji": "nōkō goma no tantan reimen",
+    "en": "Rich sesame dan dan cold noodles — the shop's summer-only bowl",
+    "price": "¥890",
+    "section": "【夏季限定 冷麺フェア】 (summer cold noodle fair)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal, summer only. Dan dan sauce is sesame paste with soy; the noodle is the same naengmyeon question as above.",
+    "dish_key": "tantan-reimen"
+   },
+   {
+    "ja": "香り立つレモン冷麺",
+    "romaji": "kaoritatsu remon reimen",
+    "en": "Fragrant lemon cold noodles — summer only, the shop's stated finisher for a yakiniku meal",
+    "price": "¥890",
+    "section": "【夏季限定 冷麺フェア】 (summer cold noodle fair)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Seasonal. Same naengmyeon noodle question; broth unstated.",
+    "dish_key": "reimen-lemon"
+   },
+   {
+    "ja": "自家製ホームメイドプリン",
+    "romaji": "jikasei hōmumeido purin",
+    "en": "House-made custard pudding",
+    "price": "¥690",
+    "section": "【デザート】 (dessert)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg and dairy custard; flour content unstated.",
+    "dish_key": "purin"
+   },
+   {
+    "ja": "レモンシャーベット",
+    "romaji": "remon shābetto",
+    "en": "Lemon sorbet",
+    "price": "¥490",
+    "section": "【デザート】 (dessert)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A fruit sorbet is normally dairy-free and wheat-free, which makes it the one dessert on the card worth asking about for either diet. Composition unpublished.",
+    "dish_key": "sorbet"
+   }
+  ]
  }
 }
