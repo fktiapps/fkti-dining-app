@@ -1928,5 +1928,491 @@
     "dish_key": "topping"
    }
   ]
+ },
+ "tokyo_katsukichi_suido_bashi_t": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://katsukichi.owst.jp/",
+   "https://katsukichi.owst.jp/menu",
+   "https://www.hotpepper.jp/strJ000126101/food/"
+  ],
+  "price_note": "From the shop's own site (文京区本郷1-4-1 全水道会館ビルB1, matching the record's Suidobashi/Hongo placement). ⚠ PRICE DISCREPANCY ON THE SHOP'S OWN SITE — the structured menu tab prices ひれかつ定食 at ¥2,800/120g and ¥3,000/150g, while the おすすめ料理 promo block on the same site's front page still prints ¥2,400/¥2,600/¥3,100. The prices below are the structured menu tab, which is the list the shop maintains as its card; the promo block reads as stale copy left over from an earlier price. Expect the higher figure. A second internal inconsistency: 豚手ごねかつ定食 is listed at ¥2,300 for 130g and ¥2,200 for 160g, i.e. the larger portion is cheaper — that is a typo on the shop's page, not a bargain. ⚠ THIS IS A TONKATSU HOUSE AND IT IS EXHAUSTIVELY WHEAT. The shop describes its own method in detail and every detail is a gluten fact: the cutlets are 「最高級の生パン粉で包み」 — wrapped in top-grade FRESH panko, which is wheat bread — and deep-fried in a corn-and-sesame oil blend that every crumbed item on the card goes through. There is no non-crumbed main. ⚠ THE ONE PIECE OF GOOD NEWS IS THE SOUP AND IT IS NARROW: the sets come with 八丁味噌の赤出汁, and Hatcho miso is a pure soybean-and-koji miso with no barley and no wheat in it, unlike the 麦味噌 that would be the danger at a Kyushu shop. That says nothing about the dashi it is made with, which is bonito and normally carries a soy-based seasoning. Sets also include a choice of plain rice or 青しそご飯, salad and pickles. ⚠ Nothing here is vegan. The 豚しゃぶ鍋 is the only main that is not crumbed and it is pork in a dashi pot.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "銘柄豚 ひれかつ定食＜120g＞",
+    "romaji": "meigarabuta hirekatsu teishoku",
+    "en": "Premium-breed pork fillet katsu set, 120g — the shop's signature, ¥3,000 at 150g",
+    "price": "¥2,800",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop states the cutlet is wrapped in 生パン粉 (fresh wheat breadcrumb) and slow-fried in corn oil. Set includes 八丁味噌の赤出汁 — soybean miso, but a bonito dashi.",
+    "dish_key": "hirekatsu-set"
+   },
+   {
+    "ja": "銘柄豚 特上ひれかつ定食＜180g＞",
+    "romaji": "meigarabuta tokujō hirekatsu teishoku",
+    "en": "Extra-large premium pork fillet katsu set, 180g",
+    "price": "¥3,500",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat panko crumb, shared fryer.",
+    "dish_key": "hirekatsu-set"
+   },
+   {
+    "ja": "銘柄豚 ロースかつ定食＜120g＞",
+    "romaji": "meigarabuta rōsukatsu teishoku",
+    "en": "Premium-breed pork loin katsu set, 120g — ¥2,900 at 150g",
+    "price": "¥2,700",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop specifies daily-milled fresh panko and a corn-and-sesame oil blend, slow-fried 'as if simmering'. Wheat.",
+    "dish_key": "rosukatsu-set"
+   },
+   {
+    "ja": "銘柄豚 特上ロースかつ定食＜180g＞",
+    "romaji": "meigarabuta tokujō rōsukatsu teishoku",
+    "en": "Extra-large premium pork loin katsu set, 180g",
+    "price": "¥3,400",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat panko crumb.",
+    "dish_key": "rosukatsu-set"
+   },
+   {
+    "ja": "ねぎ塩ロースかつ定食＜120g＞",
+    "romaji": "negishio rōsukatsu teishoku",
+    "en": "Pork loin katsu with spring onion and salt, 120g — ¥3,100 at 150g",
+    "price": "¥2,900",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The salt dressing avoids the katsu sauce, but the cutlet underneath is still panko-crumbed.",
+    "dish_key": "negishio-katsu-set"
+   },
+   {
+    "ja": "銘柄豚 ロース厚切り生姜焼き定食＜200g＞",
+    "romaji": "meigarabuta rōsu atsugiri shōgayaki teishoku",
+    "en": "Thick-cut pork loin ginger-fry set, 200g",
+    "price": "¥3,600",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Not crumbed — but 生姜焼き sauce is soy sauce and mirin, so wheat by default.",
+    "dish_key": "shogayaki-set"
+   },
+   {
+    "ja": "豚手ごねかつ定食＜130g＞",
+    "romaji": "buta tegone katsu teishoku",
+    "en": "Hand-formed pork katsu set, 130g",
+    "price": "¥2,300",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat panko crumb. The card prints ¥2,200 for the larger 160g portion, which is a typo on the shop's page.",
+    "dish_key": "tegone-katsu-set"
+   },
+   {
+    "ja": "海老かつ定食＜130g＞",
+    "romaji": "ebikatsu teishoku",
+    "en": "Prawn katsu set, 130g — the shop binds whole small prawns with prawn paste, ¥3,000 at 160g",
+    "price": "¥2,700",
+    "section": "とんかつ (katsu)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop describes the binding as prawn surimi, not wheat — but the outer coating is the same panko and the same fryer.",
+    "dish_key": "ebikatsu-set"
+   },
+   {
+    "ja": "かきフライ定食＜3個＞",
+    "romaji": "kakifurai teishoku",
+    "en": "Oyster fry set, 3 pieces — ¥3,000 for 4",
+    "price": "¥2,400",
+    "section": "とんかつ (katsu)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed and fried.",
+    "dish_key": "oyster-fry-set"
+   },
+   {
+    "ja": "串かつ定食",
+    "romaji": "kushikatsu teishoku",
+    "en": "Skewered katsu set — fillet and vegetable on skewers",
+    "price": "¥2,600",
+    "section": "とんかつ (katsu)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed and fried; the vegetable skewers are crumbed too.",
+    "dish_key": "kushikatsu-set"
+   },
+   {
+    "ja": "三味だれ",
+    "romaji": "sanmi dare",
+    "en": "The three-flavour sauce set",
+    "price": "¥200",
+    "section": "とんかつ (katsu)",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Katsu sauce in Japan is a Worcester-style fruit-and-vegetable sauce, standardly built on wheat-brewed soy or a wheat-containing vinegar base.",
+    "dish_key": "katsu-sauce"
+   },
+   {
+    "ja": "天然特大海老フライ定食＜1本＞",
+    "romaji": "tennen tokudai ebifurai teishoku",
+    "en": "Giant wild prawn fry set, one prawn about 30cm long — ¥4,500 for two",
+    "price": "¥2,800",
+    "section": "盛合せフライ定食 (mixed fry sets)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed and fried. The shop's own headline calls out the crisp coating.",
+    "dish_key": "giant-prawn-fry"
+   },
+   {
+    "ja": "天然特大海老フライ＜1本＞と一口ひれかつ＜2個＞",
+    "romaji": "tennen tokudai ebifurai to hitokuchi hirekatsu",
+    "en": "Giant prawn fry with two bite-sized fillet katsu",
+    "price": "¥3,800",
+    "section": "盛合せフライ定食 (mixed fry sets)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed and fried.",
+    "dish_key": "mixed-fry-set"
+   },
+   {
+    "ja": "海老かつとひれかつ",
+    "romaji": "ebikatsu to hirekatsu",
+    "en": "Prawn katsu and pork fillet katsu",
+    "price": "¥3,200",
+    "section": "盛合せフライ定食 (mixed fry sets)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed and fried.",
+    "dish_key": "mixed-fry-set"
+   },
+   {
+    "ja": "海の幸盛り合わせ",
+    "romaji": "umi no sachi moriawase",
+    "en": "Assorted seafood fry platter",
+    "price": "¥3,000",
+    "section": "盛合せフライ定食 (mixed fry sets)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed and fried.",
+    "dish_key": "seafood-fry-platter"
+   },
+   {
+    "ja": "お子様ランチ",
+    "romaji": "okosama ranchi",
+    "en": "Children's plate",
+    "price": "¥1,000",
+    "section": "盛合せフライ定食 (mixed fry sets)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Composition not published; on this card it will be fried.",
+    "dish_key": "kids-plate"
+   },
+   {
+    "ja": "和牛ハンバーグ定食＜200g＞",
+    "romaji": "wagyū hanbāgu teishoku",
+    "en": "Wagyu hamburg steak set, 200g",
+    "price": "¥2,900",
+    "section": "定食 (set meals)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Japanese hamburg is bound with panko; the sister shop's identical dish offers only demi-glace, garlic-oil soy or wasabi soy — all three wheat.",
+    "dish_key": "wagyu-hamburg-set"
+   },
+   {
+    "ja": "豚しゃぶ鍋＜1人前＞ ※2人前より",
+    "romaji": "butashabu nabe",
+    "en": "Pork shabu-shabu hot pot, per person, minimum two",
+    "price": "¥3,000",
+    "section": "お鍋 (hot pot)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The only main on the card that is not crumbed. Shabu-shabu broth is kombu or dashi and the ponzu/goma dipping sauces are soy-based — ask what the pot and the dips are built from.",
+    "dish_key": "butashabu-nabe"
+   },
+   {
+    "ja": "元祖かつ丼 ロース／ヒレ",
+    "romaji": "ganso katsudon rōsu / hire",
+    "en": "The original katsudon, loin or fillet",
+    "price": "¥2,100 / ¥2,200",
+    "section": "特製かつ丼 (house katsudon)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed cutlet simmered in a soy-and-dashi broth with egg — wheat twice over.",
+    "dish_key": "katsudon"
+   },
+   {
+    "ja": "替りかつ丼 ロース／ヒレ",
+    "romaji": "kawari katsudon rōsu / hire",
+    "en": "Variant katsudon, loin or fillet",
+    "price": "¥2,100 / ¥2,200",
+    "section": "特製かつ丼 (house katsudon)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed cutlet in a soy-based sauce.",
+    "dish_key": "katsudon"
+   },
+   {
+    "ja": "柳川風かつ丼 ロース／ヒレ",
+    "romaji": "yanagawa-fū katsudon rōsu / hire",
+    "en": "Yanagawa-style katsudon with burdock and egg, loin or fillet",
+    "price": "¥2,300 / ¥2,400",
+    "section": "特製かつ丼 (house katsudon)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yanagawa style is simmered in a soy-and-dashi broth.",
+    "dish_key": "katsudon-yanagawa"
+   },
+   {
+    "ja": "冷やしかつ丼 ロース／ヒレ",
+    "romaji": "hiyashi katsudon rōsu / hire",
+    "en": "Chilled katsudon, loin or fillet — summer",
+    "price": "¥2,100 / ¥2,200",
+    "section": "特製かつ丼 (house katsudon)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed cutlet; chilled sauce still soy-based.",
+    "dish_key": "katsudon-chilled"
+   },
+   {
+    "ja": "牛ステーキ丼 牛ロース",
+    "romaji": "gyū sutēki don gyū rōsu",
+    "en": "Beef steak rice bowl, sirloin",
+    "price": "¥3,000",
+    "section": "特製かつ丼 (house katsudon)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Not crumbed, but a Japanese steak-don sauce is soy-based.",
+    "dish_key": "steak-don"
+   },
+   {
+    "ja": "岩中豚ロースかつ弁当／ひれかつ弁当",
+    "romaji": "Iwanakabuta rōsukatsu bentō / hirekatsu bentō",
+    "en": "Iwanaka pork loin or fillet katsu bento, takeaway",
+    "price": "¥2,200",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed. Takeaway bento; the shop runs a separate takeaway menu.",
+    "dish_key": "katsu-bento"
+   },
+   {
+    "ja": "岩中豚てごねかつ弁当／合挽きハンバーグ弁当",
+    "romaji": "Iwanakabuta tegonekatsu bentō / aibiki hanbāgu bentō",
+    "en": "Hand-formed pork katsu or mixed-mince hamburg bento, takeaway",
+    "price": "¥1,680",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Both are panko-bound.",
+    "dish_key": "katsu-bento"
+   },
+   {
+    "ja": "海老かつ弁当",
+    "romaji": "ebikatsu bentō",
+    "en": "Prawn katsu bento, takeaway",
+    "price": "¥2,100",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed.",
+    "dish_key": "katsu-bento"
+   },
+   {
+    "ja": "岩中豚ロース生姜焼き弁当",
+    "romaji": "Iwanakabuta rōsu shōgayaki bentō",
+    "en": "Ginger pork loin bento, takeaway",
+    "price": "¥1,780",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-and-mirin ginger sauce.",
+    "dish_key": "shogayaki-bento"
+   },
+   {
+    "ja": "ねぎ塩ロースかつ弁当",
+    "romaji": "negishio rōsukatsu bentō",
+    "en": "Spring-onion-and-salt pork loin katsu bento, takeaway",
+    "price": "¥2,200",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed.",
+    "dish_key": "katsu-bento"
+   },
+   {
+    "ja": "特製おまかせ弁当(竹)2種／(松)3種",
+    "romaji": "tokusei omakase bentō (take) / (matsu)",
+    "en": "Chef's-choice bento, two or three items",
+    "price": "¥2,000 / ¥2,500",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Composition varies; on this card it will be fried.",
+    "dish_key": "omakase-bento"
+   },
+   {
+    "ja": "岩中豚ロースかつ丼／ロース焼肉丼",
+    "romaji": "Iwanakabuta rōsukatsudon / rōsu yakinikudon",
+    "en": "Pork loin katsudon or grilled pork rice bowl, takeaway",
+    "price": "¥1,480",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed or soy-glazed.",
+    "dish_key": "katsu-bento"
+   },
+   {
+    "ja": "牛ステーキ丼",
+    "romaji": "gyū sutēki don",
+    "en": "Beef steak rice bowl, takeaway",
+    "price": "¥2,200",
+    "section": "お弁当 (bento, takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-based steak sauce.",
+    "dish_key": "steak-don"
+   },
+   {
+    "ja": "大皿盛り 梅＜2人前＞",
+    "romaji": "ōzaramori ume",
+    "en": "Large sharing platter 'ume' for two — pork fillet katsu, giant wild prawn fry, seasonal shellfish fry, seafood isobe fritters and more (¥7,500 for three)",
+    "price": "¥5,500",
+    "section": "大皿盛り (sharing platters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Every named component is crumbed or battered; 磯部揚げ is a wheat-flour batter with nori.",
+    "dish_key": "sharing-fry-platter"
+   },
+   {
+    "ja": "大皿盛り 松＜2人前＞",
+    "romaji": "ōzaramori matsu",
+    "en": "Large sharing platter 'matsu' for two — pork fillet katsu, giant wild prawn fry, prawn katsu and wagyu fillet steak (¥8,980 for three)",
+    "price": "¥6,700",
+    "section": "大皿盛り (sharing platters)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Crumbed items throughout; the wagyu fillet is the only uncrumbed component and its sauce is unstated.",
+    "dish_key": "sharing-fry-platter"
+   },
+   {
+    "ja": "ズワイガニのトマトサラダ",
+    "romaji": "zuwaigani no tomato sarada",
+    "en": "Snow crab and tomato salad",
+    "price": "¥980",
+    "section": "冷菜一品料理 (cold plates)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated. A cold plate is the best place to look on this card if you are avoiding the fryer.",
+    "dish_key": "crab-tomato-salad"
+   },
+   {
+    "ja": "鴨のタタキ",
+    "romaji": "kamo no tataki",
+    "en": "Seared duck tataki — the shop carries the standard raw-meat advisory for children, the elderly and anyone with reduced resistance",
+    "price": "¥980",
+    "section": "冷菜一品料理 (cold plates)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Tataki is served with a soy-based ponzu as standard; not named here. Ask.",
+    "dish_key": "duck-tataki"
+   },
+   {
+    "ja": "お刺身三点盛り",
+    "romaji": "osashimi santen mori",
+    "en": "Three-kind sashimi platter",
+    "price": "¥1,480",
+    "section": "冷菜一品料理 (cold plates)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fish is clean; the soy sauce it is dipped in is wheat unless a tamari is offered. Ask.",
+    "dish_key": "sashimi-platter"
+   },
+   {
+    "ja": "自家製上新香",
+    "romaji": "jikasei jōshinko",
+    "en": "House pickles",
+    "price": "¥700",
+    "section": "冷菜一品料理 (cold plates)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Japanese pickling liquor commonly carries soy or a dashi. Ask.",
+    "dish_key": "pickles"
+   },
+   {
+    "ja": "もずく酢",
+    "romaji": "mozuku su",
+    "en": "Mozuku seaweed in vinegar",
+    "price": "¥500",
+    "section": "冷菜一品料理 (cold plates)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Mozuku itself is seaweed, but the standard dressing is a vinegar cut with dashi and soy. Ask — this is the closest thing to a plant dish on the card.",
+    "dish_key": "mozuku-su"
+   },
+   {
+    "ja": "豚の煮こごり",
+    "romaji": "buta no nikogori",
+    "en": "Pork aspic",
+    "price": "¥600",
+    "section": "冷菜一品料理 (cold plates)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Nikogori is set from a soy-seasoned braising liquor.",
+    "dish_key": "nikogori"
+   },
+   {
+    "ja": "水道橋店の酒菜コース＜全7品＞",
+    "romaji": "Suidōbashi-ten no sakana kōsu",
+    "en": "Suidobashi branch sake-snack course, 7 dishes — fry platter and Hyuga chicken ginger-fry (¥6,480 with 2h free drinks)",
+    "price": "¥3,980",
+    "section": "コース (banquet courses)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Course includes a 揚げ物盛合せ (fry platter) and 生姜焼き (soy-and-mirin) — wheat in both named dishes.",
+    "dish_key": "banquet-course"
+   },
+   {
+    "ja": "水道橋店の美食コース＜全8品＞",
+    "romaji": "Suidōbashi-ten no bishoku kōsu",
+    "en": "Suidobashi branch gourmet course, 8 dishes — three-kind sashimi and a fry platter (¥7,480 with 2h free drinks)",
+    "price": "¥4,980",
+    "section": "コース (banquet courses)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Includes a fry platter.",
+    "dish_key": "banquet-course"
+   },
+   {
+    "ja": "水道橋店のご宴会『豚しゃぶ鍋』コース＜全7品＞",
+    "romaji": "Suidōbashi-ten no goenkai butashabu nabe kōsu",
+    "en": "Pork shabu-shabu banquet course, 7 dishes (¥8,480 with 2h free drinks)",
+    "price": "¥5,980",
+    "section": "コース (banquet courses)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Built round the shabu pot rather than the fryer, so this is the course to ask about — but the other six dishes are not itemised.",
+    "dish_key": "banquet-course-shabu"
+   },
+   {
+    "ja": "水道橋店のご宴会『特製つみれ鍋』コース＜全7品＞（2H飲み放題付）",
+    "romaji": "Suidōbashi-ten no goenkai tokusei tsumire nabe kōsu",
+    "en": "House meatball hot-pot banquet course, 7 dishes, with 2h free drinks",
+    "price": "¥8,480",
+    "section": "コース (banquet courses)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "つみれ (fish or chicken balls) are normally bound with flour or breadcrumb, and the pot is a dashi.",
+    "dish_key": "banquet-course-tsumire"
+   }
+  ]
  }
 }
