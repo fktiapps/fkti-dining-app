@@ -1768,5 +1768,238 @@
     "dish_key": "tantan-soba"
    }
   ]
+ },
+ "tokyo_yakitori_jimbocho_tori_e": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://toriei-toriei.owst.jp/",
+   "https://www.hotpepper.jp/strJ001267608/food/",
+   "https://www.hotpepper.jp/strJ001267608/drink/"
+  ],
+  "price_note": "Prices 税込, from the shop's own HotPepper page (千代田区神田神保町1丁目4, matching the record). A small charcoal yakitori counter with a short card. ⚠ The gluten question at a yakitori counter is the TARE, and this shop does not name its sauce, so every skewer is 'ask' rather than 'no' — a shop that grills 塩 to order can serve most of this card salted, and that is the question to put to the counter. Two items are wheat regardless of the answer: 特製レバームース comes with a baguette, and the 燻製盛り合わせ is a smoked platter. ⚠ Both rice dishes carry dashi: the 親子丼 is simmered in a soy-and-dashi broth and the ご飯セット explicitly includes 赤出汁, so they are gluten facts as well as vegan facts. The vegetable section is the strongest part of the card for a plant-eater — grilled shiitake, ginkgo skewers, chilled tomato, lily bulb — but every skewer goes over the same grill as the chicken, and the shop makes no vegetarian claim.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "もも、そり、おび、アキレス",
+    "romaji": "momo, sori, obi, akiresu",
+    "en": "Chicken thigh, oyster, tail-side and Achilles-tendon skewers — the shop notes each thigh sub-cut tastes different and invites a comparison",
+    "price": "¥290〜",
+    "section": "鶏串焼き (chicken skewers)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop does not name its tare. Grilled 塩 these would be plain chicken and salt; grilled タレ they are wheat soy sauce. Ask for 塩.",
+    "dish_key": "yakitori-momo"
+   },
+   {
+    "ja": "レバー、せせり",
+    "romaji": "rebā, seseri",
+    "en": "Chicken liver and neck skewers",
+    "price": "¥286",
+    "section": "鶏串焼き (chicken skewers)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Liver is very often served タレ. Tare composition unstated — ask.",
+    "dish_key": "yakitori-liver"
+   },
+   {
+    "ja": "ささみ、うずら卵",
+    "romaji": "sasami, uzura tamago",
+    "en": "Chicken tenderloin and quail-egg skewers",
+    "price": "¥242",
+    "section": "鶏串焼き (chicken skewers)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sauce unstated; egg.",
+    "dish_key": "yakitori-sasami"
+   },
+   {
+    "ja": "砂肝、銀皮、ハラミ、ぼんちり、皮",
+    "romaji": "sunagimo, ginkawa, harami, bonchiri, kawa",
+    "en": "Gizzard, gizzard silverskin, chicken skirt, tail and skin skewers",
+    "price": "¥220",
+    "section": "鶏串焼き (chicken skewers)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sauce unstated — ask for 塩.",
+    "dish_key": "yakitori-offal"
+   },
+   {
+    "ja": "希少限定 ちょうちん",
+    "romaji": "kishō gentei chōchin",
+    "en": "Limited-availability chochin — unlaid egg yolk on the ovary, grilled",
+    "price": "¥418",
+    "section": "鶏串焼き (chicken skewers)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Traditionally glazed in tare; sauce unstated.",
+    "dish_key": "yakitori-chochin"
+   },
+   {
+    "ja": "インカ芋じゃがバター串",
+    "romaji": "inka imo jaga batā kushi",
+    "en": "Inca-no-mezame potato skewer with butter",
+    "price": "¥253",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Butter is dairy. Potato itself carries no wheat but shares the grill with tare-brushed skewers.",
+    "dish_key": "potato-butter-skewer"
+   },
+   {
+    "ja": "直送グリル野菜サラダ",
+    "romaji": "chokusō guriru yasai sarada",
+    "en": "Grilled vegetable salad from direct-shipped produce",
+    "price": "¥693",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Vegetables are the base, but neither the dressing nor whether anything is grilled with tare is stated.",
+    "dish_key": "grilled-vegetable-salad"
+   },
+   {
+    "ja": "直送本日の冷しトマト",
+    "romaji": "chokusō honjitsu no hiyashi tomato",
+    "en": "Chilled tomato of the day",
+    "price": "¥550",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Whole chilled tomato; whether it arrives plain or dressed is unstated.",
+    "dish_key": "chilled-tomato"
+   },
+   {
+    "ja": "月光ゆりねの紙焼き",
+    "romaji": "gekkō yurine no kamiyaki",
+    "en": "Gekko lily bulb baked in paper — winter only, the shop calls it a house speciality",
+    "price": "¥638",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Seasonal, winter. Lily bulb baked in paper; seasoning unstated.",
+    "dish_key": "yurine-paper-baked"
+   },
+   {
+    "ja": "インカ芋フライ",
+    "romaji": "inka imo furai",
+    "en": "Inca-no-mezame potato fries",
+    "price": "¥528",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Potato is clean; the fryer is shared with this kitchen's other fried work and its status is not published.",
+    "dish_key": "potato-fries"
+   },
+   {
+    "ja": "ぎんなん串",
+    "romaji": "ginnan kushi",
+    "en": "Ginkgo nut skewer",
+    "price": "¥308",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Ginkgo nuts and salt in principle; grilled on the shared yakitori grill.",
+    "dish_key": "ginnan-skewer"
+   },
+   {
+    "ja": "肉厚しいたけ焼き",
+    "romaji": "nikuatsu shiitake yaki",
+    "en": "Grilled thick-cap shiitake",
+    "price": "¥550",
+    "section": "野菜料理 (vegetables)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Grilled mushroom; a common finish is soy or ponzu, neither stated here.",
+    "dish_key": "grilled-shiitake"
+   },
+   {
+    "ja": "燻製盛り合わせ（ローズマリー香る鶏胸肉・チーズ、砂肝）",
+    "romaji": "kunsei moriawase",
+    "en": "Smoked platter — rosemary chicken breast, cheese and gizzard",
+    "price": "¥803",
+    "section": "逸品料理 (specialities)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Smoking cures frequently use soy; not stated. Dairy cheese.",
+    "dish_key": "smoked-platter"
+   },
+   {
+    "ja": "特製レバームース（バケット付き）",
+    "romaji": "tokusei rebā mūsu",
+    "en": "House chicken-liver mousse, served with baguette (extra 2 slices ¥200)",
+    "price": "¥803",
+    "section": "逸品料理 (specialities)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop states baguette is included and sells extra slices — wheat bread is part of the dish.",
+    "dish_key": "liver-mousse"
+   },
+   {
+    "ja": "お新香盛合せ",
+    "romaji": "oshinko moriawase",
+    "en": "Assorted Japanese pickles",
+    "price": "¥528",
+    "section": "逸品料理 (specialities)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Japanese pickles are commonly seasoned with soy sauce or a dashi-based liquor; neither is stated.",
+    "dish_key": "pickles"
+   },
+   {
+    "ja": "本場いぶりがっこ",
+    "romaji": "honba iburigakko",
+    "en": "Iburigakko — Akita smoke-dried daikon pickle",
+    "price": "¥528",
+    "section": "逸品料理 (specialities)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Traditionally daikon smoked and pickled in rice bran; some producers add soy. Not stated.",
+    "dish_key": "iburigakko"
+   },
+   {
+    "ja": "親子丼",
+    "romaji": "oyakodon",
+    "en": "Chicken and egg rice bowl",
+    "price": "¥968",
+    "section": "お食事 (rice dishes)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Oyakodon is simmered in soy sauce and dashi — wheat by default, and the dashi rules it out for vegans too.",
+    "dish_key": "oyakodon"
+   },
+   {
+    "ja": "山わさび小飯",
+    "romaji": "yama wasabi kogohan",
+    "en": "Small rice bowl with horseradish",
+    "price": "¥528",
+    "section": "お食事 (rice dishes)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "山わさび on rice is normally finished with soy sauce; not stated. Ask.",
+    "dish_key": "yamawasabi-rice"
+   },
+   {
+    "ja": "ご飯セット（ごはん・赤出汁・小鉢・香の物）",
+    "romaji": "gohan setto",
+    "en": "Rice set — rice, red miso soup, a small dish and pickles",
+    "price": "¥550",
+    "section": "お食事 (rice dishes)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "赤出汁 is a dashi miso soup: bonito for the vegan question, and Japanese dashi is normally built with a soy-based seasoning, so it is a wheat question too.",
+    "dish_key": "rice-set"
+   },
+   {
+    "ja": "豊丸たまごの濃厚プリン",
+    "romaji": "Toyomaru tamago no nōkō purin",
+    "en": "Rich custard pudding made with Toyomaru eggs",
+    "price": "¥440",
+    "section": "デザート (dessert)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg and dairy custard. A baked purin has no flour in the classic recipe but the shop does not state its own.",
+    "dish_key": "purin"
+   }
+  ]
  }
 }

@@ -1776,5 +1776,304 @@
   "price_note": "No menu recoverable. 酉乃洲’s site is a client-rendered single-page app: the HTML served is a 20KB Nuxt shell whose only human-readable text is the title 「【公式】酉乃洲 | 東京・渋谷区の焼鳥料理店」, and every word of content arrives from JavaScript that curl does not run. Four routes were tried — the root, /menu, the root again with a Googlebot user-agent in case the host prerenders for crawlers, and the sitemap, which resolves to a single sitemap-static.xml — and all four returned the same empty shell. WebFetch was also tried and returned the same title and nothing else, which is the useful part of this finding: WebFetch usually rescues JS-rendered sites, and here it did not, so this shop needs a real browser and not another curl attempt. Nothing is recorded. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02.",
   "last_checked": "2026-09-05",
   "items": []
+ },
+ "tokyo_italian_cheese_bar_and_t": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://andtable7557736053.owst.jp/",
+   "https://www.hotpepper.jp/strJ004470674/",
+   "https://www.hotpepper.jp/strJ004470674/food/"
+  ],
+  "price_note": "⚠ NAME CHANGE — THE SHOP IS NO LONGER CALLED AND TABLE. The record's own URL, andtable7557736053.owst.jp, still resolves, but the page it serves is titled 「イタリアンバル ポポリ 渋谷店」 and the string 'AND TABLE' appears nowhere on it. The address is unchanged at 渋谷区宇田川町28-1 6階, which is the record's Center-gai placement, and the linked HotPepper listing strJ004470674 carries the same address, so this is the same premises trading under a new name rather than a different restaurant — the menu below is that shop's current card. A traveller looking for the AND TABLE sign will not find it. Prices 税込. ⚠ This is an Italian bar and the wheat is where you would expect it — pizza, pasta, bruschetta, garlic toast — but two dishes hide it: 海老のカダイフフリット is wrapped in kadayif, which is shredded wheat pastry, and 延寿牛のレアカツ is a cutlet, so breadcrumbed, under a reduced-red-wine sauce. Nothing on the card is meat-free except the potato salad and one pizza, and no vegan claim is made anywhere.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "延寿牛のレアカツ",
+    "romaji": "Enjugyū no reakatsu",
+    "en": "Rare-cooked Enju beef cutlet in a reduced red-wine sauce — the shop's headline dish",
+    "price": "¥2,380",
+    "section": "RECOMMEND",
+    "gf": "no",
+    "vegan": "no",
+    "note": "カツ means a breadcrumbed cutlet — wheat crumb, and fried.",
+    "dish_key": "beef-katsu-rare"
+   },
+   {
+    "ja": "タコ・ブロ・バジル",
+    "romaji": "tako buro bajiru",
+    "en": "Octopus, broccoli and basil",
+    "price": "¥660",
+    "section": "TAPAS -COLD-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated.",
+    "dish_key": "octopus-broccoli"
+   },
+   {
+    "ja": "ポポリのポテサラ",
+    "romaji": "Popori no potesara",
+    "en": "Popoli's potato salad",
+    "price": "¥660",
+    "section": "TAPAS -COLD-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Japanese potato salad is bound with egg mayonnaise. Named for the shop's current name, ポポリ.",
+    "dish_key": "potato-salad"
+   },
+   {
+    "ja": "海老とアボカドのブルスケッタ（2P）",
+    "romaji": "ebi to abokado no burusuketta",
+    "en": "Prawn and avocado bruschetta, 2 pieces",
+    "price": "¥880",
+    "section": "TAPAS -COLD-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bruschetta is toasted wheat bread.",
+    "dish_key": "bruschetta-prawn"
+   },
+   {
+    "ja": "旬果実とブラッターチーズと生ハムと。",
+    "romaji": "shun kajitsu to buratta chīzu to namahamu to",
+    "en": "Seasonal fruit with burrata and prosciutto — composition changes with the season, ask the shop",
+    "price": "¥1,980",
+    "section": "TAPAS -COLD-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fruit, fresh cheese and cured pork; the shop says to ask for the current composition.",
+    "dish_key": "burrata-prosciutto-fruit"
+   },
+   {
+    "ja": "直送鮮魚のカルパッチョ",
+    "romaji": "chokusō sengyo no karupatcho",
+    "en": "Carpaccio of direct-shipped fish",
+    "price": "¥880",
+    "section": "TAPAS -COLD-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw fish with a dressing that is not named.",
+    "dish_key": "fish-carpaccio"
+   },
+   {
+    "ja": "生ハム盛り合わせ",
+    "romaji": "namahamu moriawase",
+    "en": "Prosciutto platter",
+    "price": "¥780",
+    "section": "TAPAS -COLD-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cure ingredients unstated.",
+    "dish_key": "prosciutto-platter"
+   },
+   {
+    "ja": "自家製ローストビーフ",
+    "romaji": "jikasei rōsutobīfu",
+    "en": "House roast beef",
+    "price": "¥1,390",
+    "section": "TAPAS -COLD-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The meat is clean; a Japanese roast-beef sauce is very often soy-based. Ask.",
+    "dish_key": "roast-beef"
+   },
+   {
+    "ja": "ムール貝のワイン蒸し",
+    "romaji": "mūrugai no wain mushi",
+    "en": "Mussels steamed in wine",
+    "price": "¥980",
+    "section": "TAPAS -HOT-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mussels, wine and aromatics in principle — but this is usually served with bread to mop. Ask whether bread comes with it.",
+    "dish_key": "mussels-wine"
+   },
+   {
+    "ja": "海老のカダイフフリット（2P）",
+    "romaji": "ebi no kadaifu furitto",
+    "en": "Prawns wrapped in kadayif pastry and fried, 2 pieces",
+    "price": "¥880",
+    "section": "TAPAS -HOT-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Kadayif is shredded wheat pastry — this looks like a plain fried prawn and is not.",
+    "dish_key": "kadayif-prawn"
+   },
+   {
+    "ja": "明太チーズグラタン",
+    "romaji": "mentai chīzu guratan",
+    "en": "Cod-roe and cheese gratin",
+    "price": "¥1,080",
+    "section": "TAPAS -HOT-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A gratin is built on a flour-thickened béchamel.",
+    "dish_key": "gratin-mentaiko"
+   },
+   {
+    "ja": "ブルーミン・オニオン",
+    "romaji": "burūmin onion",
+    "en": "Blooming onion",
+    "price": "¥1,680",
+    "section": "TAPAS -HOT-",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A blooming onion is battered in seasoned flour and deep-fried.",
+    "dish_key": "blooming-onion"
+   },
+   {
+    "ja": "カマンベールチーズアヒージョ",
+    "romaji": "kamanbēru chīzu ahījo",
+    "en": "Camembert ahijo in garlic oil",
+    "price": "¥980",
+    "section": "TAPAS -HOT-",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Ahijo is normally served with bread — ask whether it arrives with it.",
+    "dish_key": "ahijo-camembert"
+   },
+   {
+    "ja": "林檎とゴルゴンゾーラのブルスケッタ（2P）",
+    "romaji": "ringo to gorugonzōra no burusuketta",
+    "en": "Apple and gorgonzola bruschetta, 2 pieces",
+    "price": "¥770",
+    "section": "TOAST",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat bread, dairy blue cheese.",
+    "dish_key": "bruschetta-gorgonzola"
+   },
+   {
+    "ja": "定番！シーザーサラダ",
+    "romaji": "teiban shīzā sarada",
+    "en": "The standard Caesar salad",
+    "price": "¥780",
+    "section": "SALAD",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Caesar salad carries croutons and an anchovy-and-egg dressing.",
+    "dish_key": "caesar-salad"
+   },
+   {
+    "ja": "生ハムサラダ",
+    "romaji": "namahamu sarada",
+    "en": "Prosciutto salad",
+    "price": "¥1,080",
+    "section": "SALAD",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dressing unstated.",
+    "dish_key": "prosciutto-salad"
+   },
+   {
+    "ja": "若鶏のディアボラ風",
+    "romaji": "wakadori no diabora fū",
+    "en": "Chicken diavola",
+    "price": "¥1,680",
+    "section": "MAIN",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Grilled chicken with chilli; sauce and any breadcrumb finish unstated.",
+    "dish_key": "chicken-diavola"
+   },
+   {
+    "ja": "ジンジャーポークステーキ",
+    "romaji": "jinjā pōku sutēki",
+    "en": "Ginger pork steak",
+    "price": "¥1,780",
+    "section": "MAIN",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A ginger pork sauce in Japan is soy sauce, mirin and ginger — wheat by default.",
+    "dish_key": "ginger-pork"
+   },
+   {
+    "ja": "超・牛粗挽き肉のボロネーゼ",
+    "romaji": "chō gyū araibiki niku no boronēze",
+    "en": "Coarse-ground beef bolognese",
+    "price": "¥1,490",
+    "section": "PIZZA・PASTA",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat pasta.",
+    "dish_key": "pasta-bolognese"
+   },
+   {
+    "ja": "渡り蟹のトマトパスタ",
+    "romaji": "watarigani no tomato pasuta",
+    "en": "Blue crab tomato pasta",
+    "price": "¥1,690",
+    "section": "PIZZA・PASTA",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat pasta.",
+    "dish_key": "pasta-crab-tomato"
+   },
+   {
+    "ja": "サーモンといくらのカルボナーラ",
+    "romaji": "sāmon to ikura no karubonāra",
+    "en": "Salmon and salmon-roe carbonara",
+    "price": "¥1,980",
+    "section": "PIZZA・PASTA",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat pasta, egg, dairy.",
+    "dish_key": "pasta-carbonara"
+   },
+   {
+    "ja": "マルゲリータ",
+    "romaji": "marugerīta",
+    "en": "Margherita pizza",
+    "price": "¥1,580",
+    "section": "PIZZA・PASTA",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat base, dairy mozzarella. The only meat-free pizza on the card.",
+    "dish_key": "pizza-margherita"
+   },
+   {
+    "ja": "蜂蜜がけクワトロフォルマッジ",
+    "romaji": "hachimitsu gake kuatoro forumajji",
+    "en": "Four-cheese pizza with honey",
+    "price": "¥1,580",
+    "section": "PIZZA・PASTA",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat base, dairy, honey.",
+    "dish_key": "pizza-quattro-formaggi"
+   },
+   {
+    "ja": "半熟卵と生ハムのビスマルク",
+    "romaji": "hanjuku tamago to namahamu no bisumaruku",
+    "en": "Bismarck pizza with soft egg and prosciutto",
+    "price": "¥2,080",
+    "section": "PIZZA・PASTA",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat base, egg, cured pork.",
+    "dish_key": "pizza-bismarck"
+   },
+   {
+    "ja": "クラシックプリン",
+    "romaji": "kurashikku purin",
+    "en": "Classic custard pudding",
+    "price": "¥680",
+    "section": "DESERT",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg and dairy custard; flour content not stated.",
+    "dish_key": "purin"
+   },
+   {
+    "ja": "すいーとぽてとwithバニラアイス",
+    "romaji": "suīto poteto with banira aisu",
+    "en": "Sweet potato cake with vanilla ice cream",
+    "price": "¥780",
+    "section": "DESERT",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg and dairy; whether the sweet-potato cake carries flour is unstated.",
+    "dish_key": "sweet-potato-dessert"
+   }
+  ]
  }
 }
