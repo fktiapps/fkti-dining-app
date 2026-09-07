@@ -1745,5 +1745,28 @@
   "price_note": "EMPTY, AND THE FINDING IS THAT THIS BRANCH APPEARS TO BE GONE. The store URL on file returns HTTP 404 on the brand’s own site, and — more tellingly — Salad Cafe’s current お店をさがす page lists only two Tokyo locations, 東武百貨店池袋店 (Salad Cafe) and イトーヨーカドー武蔵境店 (皿多屋), alongside four Osaka shops. There is no 京王百貨店新宿店 anywhere in the operator’s live store list. The company (サラダカフェ株式会社) does publish brand-wide product pages by category — サラダ, デリカ, 弁当・パック商品, 美サラダ, ドレッシング — but attaching a chain product list to a branch the chain no longer lists would be exactly the cross-branch inference this project forbids, so nothing is recorded. This record probably needs verification of whether the shop still trades before it is researched again.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_sakaba_takaya": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://gh6d500.gorp.jp/",
+   "https://r.gnavi.co.jp/0001623899/menu1/"
+  ],
+  "price_note": "酒場たかや (千代田区神田三崎町2-2-13 八千代ビル1F, 4 min from Suidōbashi) runs its own Gnavi shop site and describes itself there as a hideaway sake bar built on こだわりの手打ち蕎麦 — hand-cut soba — with seasonal small plates and sake from all over Japan. It publishes exactly ONE priced dish, and that is why this record is partial rather than authoritative: 汁なし担々蕎麦 at ¥900. Everything else the shop actually serves is unpublished. Hours from the same page: Mon–Fri dinner 17:00–23:30, Tue–Fri lunch 11:45–14:00, Sat and holidays 17:30–23:30. ⚠ SOBA IS NOT GLUTEN-FREE HERE OR ANYWHERE IN JAPAN unless the shop says 十割 and also addresses the dusting flour: hand-cut soba is worked with 打ち粉 on the board, most 二八 soba is 20% wheat by recipe, and the tsuyu is wheat soy sauce. A 汁なし担々 dressing is sesame paste, chilli oil and a soy-seasoned meat miso on top of that.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "汁なし担々蕎麦",
+    "romaji": "shirunashi tantan soba",
+    "en": "Brothless dan dan soba — hand-cut soba tossed in a sesame and chilli dressing",
+    "price": "¥900",
+    "section": "お食事 (food)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop does not state a 十割 ratio, so assume the buckwheat is cut with wheat and worked in wheat dusting flour; the tantan dressing carries a soy-seasoned meat miso.",
+    "dish_key": "tantan-soba"
+   }
+  ]
  }
 }

@@ -2177,5 +2177,163 @@
   "price_note": "SAME FINDING AS 来集軒 AND FROM THE SAME PARKING NETWORK: https://www.soba-kamiyama.com/ is no longer the shop's site. It serves a \"Redirecting...\" stub that posts to router.parklogic.com, and the script's embedded base64 config names domainFull \"www.soba-kamiyama.com\" under tenant \"gmo-owned\" — the domain has lapsed and been taken over. No restaurant content exists at the URL. The record needs a new first-party source before it is workable; its menu_url is a Tabelog link this egress cannot reach. 神山 (formerly 清山) is recorded as a 蕎麦 shop. ⚠ Standing note for any soba record: even 十割 (100% buckwheat) soba is dusted with wheat 打ち粉 and boiled in shared water, and the tsuyu is soy-based — so a soba shop is never a safe default, whatever the noodle ratio turns out to be.",
   "last_checked": "2026-09-07",
   "items": []
+ },
+ "tokyo_popposhi_ya_suidobashi_t": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://popposuidobashi.gorp.jp/",
+   "https://r.gnavi.co.jp/0000319677/menu1/",
+   "https://r.gnavi.co.jp/0000319677/menu2/",
+   "https://r.gnavi.co.jp/0000319677/menu3/",
+   "https://r.gnavi.co.jp/0000319677/menu4/"
+  ],
+  "price_note": "らーめん ぽっぽっ屋 水道橋店 (千代田区神田三崎町2-21-11 えびすビル1F, 2 min from Suidōbashi east exit) publishes its whole card on its own Gnavi shop site, and it is a short one — six bowls, five toppings, one takeaway and beer. That completeness is itself useful: this is the entire menu, not a sample of it. ⚠ Nothing here is gluten-free. Ramen noodles are wheat, the base tare is soy sauce, chashu is soy-braised, menma is a soy-cured bamboo shoot and the 味付けたまご is a soy-marinated egg. The 冷やしサラダらーめん is still a wheat noodle under the salad, and the 油めん (brothless oil noodle) is the same noodle in a soy-and-oil dressing.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "らーめん",
+    "romaji": "rāmen",
+    "en": "House ramen",
+    "price": "¥980",
+    "section": "らーめん (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle in a soy-sauce tare.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "みそらーめん",
+    "romaji": "miso rāmen",
+    "en": "Miso ramen",
+    "price": "¥1,030",
+    "section": "らーめん (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle; Japanese miso is frequently barley-fermented on top of the wheat.",
+    "dish_key": "miso-ramen"
+   },
+   {
+    "ja": "つけらーめん",
+    "romaji": "tsuke rāmen",
+    "en": "Tsukemen — noodles served cold with a concentrated dipping broth",
+    "price": "¥1,030",
+    "section": "らーめん (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle; the dip is a soy-heavy reduction.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "油めん",
+    "romaji": "abura-men",
+    "en": "Abura soba — brothless noodles dressed in seasoned oil and tare",
+    "price": "¥1,030",
+    "section": "らーめん (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle in a soy-and-oil dressing.",
+    "dish_key": "abura-soba"
+   },
+   {
+    "ja": "海の塩らーめん",
+    "romaji": "umi no shio rāmen",
+    "en": "Sea-salt ramen",
+    "price": "¥1,030",
+    "section": "らーめん (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A shio tare is salt-led rather than soy-led, but the noodle is still wheat.",
+    "dish_key": "shio-ramen"
+   },
+   {
+    "ja": "冷やしサラダらーめん",
+    "romaji": "hiyashi sarada rāmen",
+    "en": "Chilled salad ramen",
+    "price": "¥1,100",
+    "section": "らーめん (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle; the dressing is undeclared and Japanese ramen-salad dressings are soy- or sesame-soy based.",
+    "dish_key": "hiyashi-ramen"
+   },
+   {
+    "ja": "大盛り",
+    "romaji": "ōmori",
+    "en": "Large noodle portion",
+    "price": "¥110",
+    "section": "トッピング (toppings)",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "More of the same wheat noodle.",
+    "dish_key": "topping"
+   },
+   {
+    "ja": "チャーシュー",
+    "romaji": "chāshū",
+    "en": "Extra braised pork belly",
+    "price": "¥190",
+    "section": "トッピング (toppings)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Braised in soy sauce.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "メンマ",
+    "romaji": "menma",
+    "en": "Extra fermented bamboo shoot",
+    "price": "¥110",
+    "section": "トッピング (toppings)",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Menma is seasoned with soy sauce.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "味付けたまご",
+    "romaji": "ajitsuke tamago",
+    "en": "Extra soy-marinated soft egg",
+    "price": "¥110",
+    "section": "トッピング (toppings)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Marinated in soy sauce.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "生たまご",
+    "romaji": "nama tamago",
+    "en": "Extra raw egg",
+    "price": "¥60",
+    "section": "トッピング (toppings)",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "A plain raw egg, nothing added — but it goes into a wheat bowl.",
+    "dish_key": "egg"
+   },
+   {
+    "ja": "油めん（お持ち帰り）",
+    "romaji": "abura-men (omochikaeri)",
+    "en": "Abura soba to take away",
+    "price": "¥500",
+    "section": "お持ち帰り (takeaway)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "abura-soba"
+   },
+   {
+    "ja": "ビール",
+    "romaji": "bīru",
+    "en": "Beer",
+    "price": "¥350",
+    "section": "ビール (beer)",
+    "gf": "no",
+    "vegan": "",
+    "note": "Barley-malt beer.",
+    "dish_key": "beer"
+   }
+  ]
  }
 }
