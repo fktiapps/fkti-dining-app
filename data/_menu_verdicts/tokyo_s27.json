@@ -1447,7 +1447,7 @@
   ]
  },
  "tokyo_choraku_dogenzaka_ten": {
-  "verified": "authoritative",
+  "verified": "provisional",
   "confidence": "high",
   "sources": [
    "https://choraku.tokyo/"
@@ -1910,7 +1910,7 @@
   ]
  },
  "tokyo_iwao": {
-  "verified": "authoritative",
+  "verified": "provisional",
   "confidence": "high",
   "sources": [
    "https://asia-kitchen.co.jp/iwao/"
@@ -1918,5 +1918,347 @@
   "price_note": "EMPTY BECAUSE THE SHOP'S SITE IS A LANDING PAGE, NOT A MENU. asia-kitchen.co.jp/iwao/ has four nav items — HOME, GOOGLE MAP, OFFICIAL and 食べログ — and no menu page behind any of them; the body is a description of the room (a fifty-year-old detached wooden house down a back alley, converted, entered through a small くぐり戸), an empty Instagram feed widget reading 「投稿はありません」, an access block and a list of sister shops (氣ウラ, ウダガワ成ル, ミヤシタ成ル). No dish is named anywhere on it. ⚠ THE PAGE DOES CHARACTERISE THE COOKING AND THAT IS ALL IT DOES: 和食ベースの創作料理 built on 厳選された鮮魚, with a deep shochu and wine list — a creative-Japanese izakaya on selected fresh fish. That is not a menu and nothing has been extracted from it. ⚠ ONE INCONSISTENCY WORTH RECORDING RATHER THAN TIDYING: the same page describes the building as 築50年 in one paragraph and 築70年 in another. The only published board is behind the page's own 食べログ link, and Tabelog has served this egress a Cloudflare managed challenge since 2026-09-02, so it is parked rather than missing. 〒150-0043 東京都渋谷区道玄坂2-23-2 巖ビル1・2F, tel 050-5303-3146, 17:30–00:00, irregular closing.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_ramen_makotoya_shibuya_c": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://fasma.jp/sp7026",
+   "https://fasma.jp/sp7026/menu"
+  ],
+  "price_note": "The branch's own official page publishes the full board with a description and a tax-EXCLUDED price on every line; the 税別 marker is on each figure and is carried through below rather than silently converted. The chain runs about 100 shops from a Kansai base and boils beef bone (5kg per bone, 30kg per batch) in large pressure stockpots at each shop for its 牛骨白湯. Five minutes' walk from Shibuya station, near the Dogenzaka-shita crossing opposite the former Tokyu Honten site. ⚠ ONE WHOLE SOUP BASE IS NOT SOLD AT THIS BRANCH AND THE MENU SAYS SO IN A FOOTNOTE THAT IS EASY TO MISS: 「※伏見稲荷OICYビレッジ店、渋谷センター街本店は鶏じゃんラーメンは販売しておりません」 — THE 鶏じゃん BOWLS ARE NOT AVAILABLE HERE. They are recorded below because they are on the branch's own menu page, each flagged as unavailable at this shop, so that the record does not silently drop five priced lines and so that nobody arrives expecting them. ⚠ THE ITEM THAT WILL FOOL PEOPLE IS THE 糖質オフ麺, AND IT IS WORTH READING THE SHOP'S OWN SENTENCE TWICE: 「糖質ゼロの澱粉を従来の小麦粉と合わせて美味しい麺にできています」 — the zero-carb starch is COMBINED WITH conventional WHEAT FLOUR. A '50% carb-off' noodle at +90円 sounds like the dietary option on the board and IS STILL A WHEAT NOODLE; the shop also notes the figure is for the noodle alone and excludes soup and toppings, and that a 替玉 of it is 250円. ⚠ EVERYTHING ELSE IS AS EXPECTED AND NONE OF IT IS SAFE: ramen noodles are wheat and かん水, the 背脂醤油 base is 熟成醤油 (soy, so wheat) on a 22-gauge Hakata-style thin noodle, chashu is soy-braised, ajitama is marinated in the chashu liquid, gyoza and kara-age are wheat by construction, and the two broths are beef bone and chicken. THERE IS NO VEGAN ROUTE AT ALL — even the free 辛子高菜 on the counter is a pickled mustard green normally seasoned with soy and often dashi.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "牛白湯 ラーメン",
+    "romaji": "gyū paitan rāmen",
+    "en": "Beef-bone paitan ramen",
+    "price": "780円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The house bowl and the cheapest. Wheat-and-kansui noodles in a beef-bone broth.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "とろ～り煮玉子 牛白湯",
+    "romaji": "torori nitamago gyū paitan",
+    "en": "Beef paitan ramen with soft-boiled seasoned egg",
+    "price": "900円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The shop says the egg is steeped in a tare made from the CHASHU BRAISING LIQUID — soy sauce, so a second wheat source on top of the noodle.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "青ねぎ 牛白湯",
+    "romaji": "aonegi gyū paitan",
+    "en": "Beef paitan ramen with spring onion",
+    "price": "930円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Contract-farm spring onion piled on the standard bowl. Still wheat noodles in beef broth.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "チャーシュー 牛白湯",
+    "romaji": "chāshū gyū paitan",
+    "en": "Beef paitan ramen with extra chashu",
+    "price": "1180円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Chashu is simmered in a 特製ダレ — a soy tare.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "全のせ 牛白湯",
+    "romaji": "zennose gyū paitan",
+    "en": "Beef paitan ramen, fully loaded",
+    "price": "1230円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg and chashu together. Every component is wheat or animal.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "赤辛 牛白湯",
+    "romaji": "akakara gyū paitan",
+    "en": "Spicy red beef paitan ramen",
+    "price": "890円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop describes its 赤辛タレ as sesame-scented with a distinctive sourness, and offers selectable heat levels. A chilli tare of this kind is normally soy-based.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "鶏じゃん ラーメン",
+    "romaji": "torijan rāmen",
+    "en": "Chicken \"torijan\" ramen",
+    "price": "780円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH — the menu page states 鶏じゃん is unavailable at 渋谷センター街本店. Listed here because it appears on this shop's own menu page. Chicken-bone broth with minced chicken and domestic Chinese cabbage.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "とろ～り煮玉子 鶏じゃん",
+    "romaji": "torori nitamago torijan",
+    "en": "Torijan ramen with soft-boiled seasoned egg",
+    "price": "900円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH — the 鶏じゃん line is excluded at 渋谷センター街本店 by the shop's own footnote.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "青ねぎ 鶏じゃん",
+    "romaji": "aonegi torijan",
+    "en": "Torijan ramen with spring onion",
+    "price": "930円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "チャーシュー 鶏じゃん",
+    "romaji": "chāshū torijan",
+    "en": "Torijan ramen with extra chashu",
+    "price": "1180円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "全のせ 鶏じゃん",
+    "romaji": "zennose torijan",
+    "en": "Torijan ramen, fully loaded",
+    "price": "1230円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH. Egg, chashu and two sheets of nori.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "赤辛 鶏じゃん",
+    "romaji": "akakara torijan",
+    "en": "Spicy red torijan ramen",
+    "price": "890円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "背脂醤油 ラーメン",
+    "romaji": "seabura shōyu rāmen",
+    "en": "Back-fat soy ramen",
+    "price": "780円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 熟成醤油 (aged soy sauce) with pork back fat, on what the shop calls a 22番の博多風細麺 — a fine Hakata-gauge wheat noodle. Soy and wheat in the same bowl twice over.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "とろ～り煮玉子 背脂醤油",
+    "romaji": "torori nitamago seabura shōyu",
+    "en": "Back-fat soy ramen with soft-boiled seasoned egg",
+    "price": "900円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop calls the egg its number-one topping. Soy-marinated.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "九条ねぎ 背脂醤油",
+    "romaji": "kujōnegi seabura shōyu",
+    "en": "Back-fat soy ramen with Kujo leek",
+    "price": "980円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "数量限定 — the shop marks this one as limited in number and sold until gone.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "チャーシュー 背脂醤油",
+    "romaji": "chāshū seabura shōyu",
+    "en": "Back-fat soy ramen with extra chashu",
+    "price": "1180円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop suggests squeezing raw garlic into it.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "全のせ 背脂醤油",
+    "romaji": "zennose seabura shōyu",
+    "en": "Back-fat soy ramen, fully loaded",
+    "price": "1230円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg and chashu on the soy bowl.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "赤辛 背油醤油",
+    "romaji": "akakara seabura shōyu",
+    "en": "Spicy red back-fat soy ramen",
+    "price": "890円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Selectable heat levels.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "糖質オフ麺 変更",
+    "romaji": "tōshitsu-ofu men henkō",
+    "en": "Swap to the \"carb-off\" noodle",
+    "price": "90円(税別)",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE MOST MISLEADING LINE ON THIS BOARD. It advertises 50% less carbohydrate and the shop's own explanation is that a zero-carbohydrate starch is COMBINED WITH CONVENTIONAL WHEAT FLOUR to make it — so it is a wheat noodle with less starch, not a wheat-free noodle, and it is the only thing on the menu a coeliac might mistake for an accommodation. The shop adds that the 50% figure is for the noodle alone and excludes soup and toppings, and that a 替玉 of this noodle is 250円 (税抜).",
+    "dish_key": "noodle"
+   },
+   {
+    "ja": "おつまみ３種",
+    "romaji": "otsumami sanshu",
+    "en": "Three small snacks",
+    "price": "390円(税別)",
+    "section": "一品 À la carte",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop describes it only as a drinking snack in a size suited to a quick drink; the three items are not named anywhere on the page.",
+    "dish_key": "otsumami"
+   },
+   {
+    "ja": "焼餃子",
+    "romaji": "yaki gyōza",
+    "en": "Pan-fried gyoza",
+    "price": "340円(税別)",
+    "section": "一品 À la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Gyoza wrappers are wheat and the filling is pork.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "若鶏の唐揚げ （５個）",
+    "romaji": "wakadori no karaage (gokko)",
+    "en": "Chicken kara-age, 5 pieces",
+    "price": "680円(税別)",
+    "section": "一品 À la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kara-age is a marinated, coated fry — the 特製ダレ marinade is soy-based and the coating is flour or starch. Wheat by default on both counts.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "若鶏の唐揚げ （３個）",
+    "romaji": "wakadori no karaage (sanko)",
+    "en": "Chicken kara-age, 3 pieces",
+    "price": "480円(税別)",
+    "section": "一品 À la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Same marinade and coating as the five-piece.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "チャーとろ盛り合わせ",
+    "romaji": "chātoro moriawase",
+    "en": "Chashu platter",
+    "price": "550円(税別)",
+    "section": "一品 À la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soy-braised pork.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "韓国キムチ",
+    "romaji": "Kankoku kimuchi",
+    "en": "Korean kimchi",
+    "price": "200円(税別)",
+    "section": "一品 À la carte",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ Traditional-method kimchi normally contains 塩辛 (salted fermented seafood) or fish sauce, and Japanese commercial kimchi bases often carry soy — the vegetable dish on the board that looks vegan and usually is not.",
+    "dish_key": "kimchi"
+   },
+   {
+    "ja": "自家製 辛子高菜",
+    "romaji": "jikasei karashi takana",
+    "en": "House spicy mustard greens",
+    "price": "380円(税別)",
+    "section": "一品 À la carte",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop notes this is a free in-store condiment as well as a paid item, recommended with the beef paitan. Karashi takana is normally seasoned with soy sauce and often dashi.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "ライス （大・並・小）",
+    "romaji": "raisu (dai / nami / shō)",
+    "en": "Rice, large / regular / small",
+    "price": "180円(税別)",
+    "section": "ごはんもの Rice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Plain rice in a custom blend the shop says it chose to work both as white rice and as fried rice. ⚠ THE ONLY THING ON THIS ENTIRE MENU THAT IS NOT WHEAT OR ANIMAL BY CONSTRUCTION — and it is a bowl of rice on its own.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "黄金チャーハン （スープ付）",
+    "romaji": "ōgon chāhan (sūpu tsuki)",
+    "en": "Golden fried rice with soup",
+    "price": "550円(税別)",
+    "section": "ごはんもの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE RICE IS FRIED IN THE LARD RENDERED FROM SIMMERING THE CHASHU — the shop says so outright — plus egg, and it comes with a soup. Fried rice at a ramen shop is also soy-seasoned.",
+    "dish_key": "chahan"
+   },
+   {
+    "ja": "焼豚丼 （半熟玉子入り）",
+    "romaji": "yakibuta don (hanjuku tamago iri)",
+    "en": "Chashu rice bowl with soft egg",
+    "price": "490円(税別)",
+    "section": "ごはんもの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soy-braised pork with a 特製丼タレ over rice, plus egg. The shop notes takeaway orders get the egg cooked through on both sides.",
+    "dish_key": "butadon"
+   },
+   {
+    "ja": "キムチのせ焼豚丼 （半熟玉子入り）",
+    "romaji": "kimuchi nose yakibuta don",
+    "en": "Chashu rice bowl with kimchi and soft egg",
+    "price": "690円(税別)",
+    "section": "ごはんもの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The same bowl with the house kimchi on it.",
+    "dish_key": "butadon"
+   }
+  ]
  }
 }

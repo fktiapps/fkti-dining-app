@@ -1087,5 +1087,149 @@
     "dish_key": "prawn_curry"
    }
   ]
+ },
+ "tokyo_shibuya_yokocho_hokkaido": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://shibuya-yokocho.com/?lang=en",
+   "https://shibuya-yokocho.com/shop/"
+  ],
+  "price_note": "PARTIAL BECAUSE THE OPERATOR PUBLISHES DISHES AND REFUSES TO PUBLISH PRICES, AND SAYS SO. 渋谷横丁 is a nineteen-unit food-and-entertainment strip inside RAYARD MIYASHITA PARK, and its official site gives each unit a block with a description, a phone number, opening hours and a MENU list of named dishes — under a standing caveat printed above every one of them: 「※仕入れ状況によって、メニューや価格が変更となる場合がございます」, menus and prices change with what comes in. No figure appears against any dish anywhere on the site. The twelve dishes below are the ones the operator lists for the HOKKAIDO 食市 unit specifically, not for the strip as a whole. TEL 03-6805-1257, 11:00 to 05:00 the following morning, except Sundays when it closes at 23:00. ⚠ TWO NAMES ON THIS LIST MEAN THE OPPOSITE OF WHAT THEY LOOK LIKE, AND THE OPERATOR FLAGS BOTH ITSELF. 室蘭焼鳥 is written with the characters for grilled CHICKEN and the site says plainly that in Muroran 「やきとり」 means PORK and onion — the strip's own summary line even reads 「鳥は使わないけど『室蘭焼き鳥』」, 'we don't use chicken, but it's Muroran yakitori'. And 北海道ザンギ is not plain fried chicken: the site says the local way is to eat it dipped in Worcester sauce with pepper floated on it, and WORCESTER SAUCE IS A WHEAT-AND-ANCHOVY PRODUCT, so the sauce is both a gluten fact and a fish fact that the karaage itself would not have told you. ⚠ THE REST IS A HOKKAIDO IZAKAYA BOARD AND THERE IS NOTHING VEGAN ON IT: seafood bowls, crab, sea urchin, squid, mutton-adjacent grills, pork, and a miso ramen. The one non-animal line, ソフトクリーム, is dairy.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "北海道海鮮4色丼",
+    "romaji": "Hokkaidō kaisen yonshoku don",
+    "en": "Hokkaido four-colour seafood rice bowl",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Raw seafood over rice — the rice and fish are fine and the soy sauce it is eaten with is not. No price published.",
+    "dish_key": "kaisendon"
+   },
+   {
+    "ja": "十勝名物! 豚丼",
+    "romaji": "Tokachi meibutsu butadon",
+    "en": "Tokachi pork rice bowl",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The site describes it as thick-cut pork with a sweet-salty tare — soy and mirin, wheat by default. No price published.",
+    "dish_key": "butadon"
+   },
+   {
+    "ja": "室蘭焼鳥",
+    "romaji": "Muroran yakitori",
+    "en": "Muroran \"yakitori\"",
+    "price": "",
+    "section": "MENU",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ WRITTEN WITH THE CHARACTERS FOR CHICKEN AND MADE OF PORK — the site states that in Muroran やきとり means pork and onion, and the strip's summary line says outright 「鳥は使わないけど『室蘭焼き鳥』」. Anyone avoiding pork specifically would be caught by the name. Salt or tare is not stated. No price published.",
+    "dish_key": "yakitori"
+   },
+   {
+    "ja": "北海道ザンギ",
+    "romaji": "Hokkaidō zangi",
+    "en": "Hokkaido zangi (fried chicken)",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE SAUCE IS THE PROBLEM, NOT THE CHICKEN. The site says the local way is to dip it in Worcester sauce with pepper floated on top — Worcester sauce is a wheat-and-anchovy condiment, so it adds gluten and fish to a dish that is already a soy-marinated, flour-coated fry. No price published.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ソフトクリーム",
+    "romaji": "sofuto kurīmu",
+    "en": "Soft-serve ice cream",
+    "price": "",
+    "section": "MENU",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy, and conventionally served in a wheat cone. The only non-savoury line on the unit's list. No price published.",
+    "dish_key": "softcream"
+   },
+   {
+    "ja": "濃厚味噌カレーラーメン",
+    "romaji": "nōkō miso karē rāmen",
+    "en": "Rich miso curry ramen",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat-and-kansui noodles, a miso that may be barley, and a curry roux that is wheat by construction. No price published.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "オホーツク北見塩焼きそば",
+    "romaji": "Ohōtsuku Kitami shio yakisoba",
+    "en": "Okhotsk Kitami salt yakisoba",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Yakisoba noodles are WHEAT despite the name — 焼きそば has no buckwheat in it. A salt seasoning removes the soy but not the flour. No price published.",
+    "dish_key": "yakisoba"
+   },
+   {
+    "ja": "名物! うにもっきり",
+    "romaji": "meibutsu uni mokkiri",
+    "en": "Sea urchin \"mokkiri\"",
+    "price": "",
+    "section": "MENU",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The site says that under the sea urchin there is a namerō of scallop, ark shell, surf clam and pen shell — so this is four more shellfish than the name suggests. No price published.",
+    "dish_key": "uni"
+   },
+   {
+    "ja": "蟹味噌甲羅焼き",
+    "romaji": "kanimiso kōra-yaki",
+    "en": "Crab innards grilled in the shell",
+    "price": "",
+    "section": "MENU",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Crab. No price published.",
+    "dish_key": "kani"
+   },
+   {
+    "ja": "活イカ刺し",
+    "romaji": "katsu ika sashi",
+    "en": "Live squid sashimi",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Squid; eaten with soy sauce. No price published.",
+    "dish_key": "ika"
+   },
+   {
+    "ja": "ジンギスカン",
+    "romaji": "jingisukan",
+    "en": "Genghis Khan grilled mutton",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Named in the unit's description rather than its dish list. Jingisukan tare is a soy-and-fruit sauce — wheat by default — and the meat is mutton or lamb. No price published.",
+    "dish_key": "jingisukan"
+   },
+   {
+    "ja": "札幌味噌ラーメン",
+    "romaji": "Sapporo miso rāmen",
+    "en": "Sapporo miso ramen",
+    "price": "",
+    "section": "MENU",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Named in the unit's description rather than its dish list. Wheat-and-kansui noodles, a miso that may be barley, and a pork-and-chicken broth. No price published.",
+    "dish_key": "ramen"
+   }
+  ]
  }
 }

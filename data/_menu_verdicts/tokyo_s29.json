@@ -775,5 +775,16 @@
     "dish_key": "chiffon_cake"
    }
   ]
+ },
+ "tokyo_d_i_y_salad_delicatessen": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.cardenas.co.jp/shop/delicatessen/diy-salad-delicatessen/",
+   "https://www.cardenas.co.jp/wp/wp-content/uploads/2019/11/202607_B1_BLF_1ol.pdf"
+  ],
+  "price_note": "EMPTY, AND THE PDF WAS DOWNLOADED AND CHECKED RATHER THAN ASSUMED. The operator (ADemotion / cardenas.co.jp) gives the shop a brand page with a MENU/PLAN block whose 'REGULAR MENU' link points at 202607_B1_BLF_1ol.pdf. That file is 1.9 MB, it downloads fine, and pdftotext extracts ONE BYTE from it — it is a flattened image scan with no text layer at all. That is a finding, not a failure: the menu exists, it is published, and it is not machine-readable. The brand page's own prose is all that can be quoted: a salad-and-deli shop built on チョップドサラダ (chopped salads) with デリプレート that include a substantial amount of meat, positioned as an all-day option, and two footnotes worth carrying — 「内容は変更されている場合があります」 and 「お米は国産ブレンド米を使用しています」, the rice is a domestic blend. 〒160-0023 東京都新宿区西新宿1-1-5 ルミネ新宿1 B2F, tel 03-6304-5774, 11:00–21:00 (L.O. 20:30). ⚠ WORTH A SECOND LOOK WITH OCR, BECAUSE THIS IS EXACTLY THE KIND OF SHOP THAT COULD SERVE BOTH DIETS AND MIGHT SERVE NEITHER: a build-your-own chopped salad counter is one of the few formats in Shinjuku where a vegan can actually assemble a meal, and the whole question turns on the DRESSINGS and on whether the deli plates share tongs with the salad bar — neither of which the readable part of the site addresses. Recorded empty so the queue stops re-selecting it.",
+  "last_checked": "2026-09-06",
+  "items": []
  }
 }

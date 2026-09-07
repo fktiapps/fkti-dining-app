@@ -1842,5 +1842,496 @@
     "dish_key": "tempura"
    }
   ]
+ },
+ "tokyo_ramen_tatsunoya_shinjuku": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.tatsunoya.net/shinjuku/",
+   "https://www.tatsunoya.net/grandmenu/"
+  ],
+  "price_note": "PARTIAL: THE CHAIN NAMES EVERY DISH ON ITS おしながき AND PRICES NONE OF THEM, AND IT EXPLAINS WHY — 「店舗により、価格が異なるメニューや取り扱いのないメニューもあります」, prices differ by shop and some shops do not carry some items. So a chain-level price would be wrong for this branch even if one existed, and none does. The branch page for 新宿小滝橋通り店 (東京都新宿区西新宿7-4-5, tel 03-6304-0899, 11:00–22:00 with orders closing at 22:00, open year-round, 18 seats) gives hours, seating and payment but no board of its own. ⚠ TWO OF THE CHAIN'S OWN FOOTNOTES BEAR DIRECTLY ON THIS SHOP AND POINT IN OPPOSITE DIRECTIONS. つけ麺 もつ is marked 東京の店舗限定 — Tokyo-only — and the branch page repeats it as this shop's 限定メニュー, so it IS available here. 焼きめし is marked as NOT sold at 久留米インター店 or the two Tokyo shops, so it is NOT available here; it is recorded below with that flag rather than dropped, so the exclusion is visible. ⚠ NOTHING ON THIS MENU IS GLUTEN-FREE AND THE REASON IS STRUCTURAL RATHER THAN INCIDENTAL: this is a Kurume tonkotsu house, so every bowl is a wheat-and-kansui noodle in a pork-bone broth, the tare is soy, the ajitama is soy-marinated, the chashu is soy-braised, the gyoza wrapper is wheat and the 替玉 is more of the same noodle. ⚠ AND THERE IS NO VEGAN ITEM EITHER — the broth is pork bone in every bowl, the Tokyo-only tsukemen is built on OFFAL (もつ), and the only two non-meat lines are plain rice and a dairy pudding. The shop is a ticket-machine operation (券売機) taking cards and QR payment, which in practice means ingredient questions have to be asked before buying the ticket.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "とんこつ こく味",
+    "romaji": "tonkotsu kokumi",
+    "en": "Tonkotsu ramen, \"rich\" style",
+    "price": "",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat-and-kansui noodles in a Kurume pork-bone broth with a soy tare. The chain's photo-led headline bowl. No price published — the chain says prices differ by branch.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "とんこつ こく味チャーシュー",
+    "romaji": "tonkotsu kokumi chāshū",
+    "en": "Rich tonkotsu ramen with extra chashu",
+    "price": "",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Chashu is soy-braised pork. No price published.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "とんこつ 純味",
+    "romaji": "tonkotsu junmi",
+    "en": "Tonkotsu ramen, \"pure\" style",
+    "price": "",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The lighter of the two tonkotsu bases; same wheat noodle and pork broth. No price published.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "とんこつ 純味チャーシュー",
+    "romaji": "tonkotsu junmi chāshū",
+    "en": "Pure tonkotsu ramen with extra chashu",
+    "price": "",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soy-braised pork. No price published.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "お子様ラーメン",
+    "romaji": "okosama rāmen",
+    "en": "Children's ramen",
+    "price": "",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A smaller bowl of the same wheat noodle and pork broth — a children's portion is not a milder ingredient list. No price published.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "つけ麺 もつ（東京の店舗限定）",
+    "romaji": "tsukemen motsu (Tōkyō no tenpo gentei)",
+    "en": "Offal tsukemen (Tokyo branches only)",
+    "price": "",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ AVAILABLE AT THIS SHOP — the chain marks it 東京の店舗限定 and the 新宿小滝橋通り店 page repeats it as the branch's 限定メニュー. It is also the least obvious dish on the board: もつ is OFFAL, so the tsukemen is a tripe-and-innards bowl rather than a pork-belly one. Wheat noodles and a soy dipping broth. No price published.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "半熟煮玉子",
+    "romaji": "hanjuku nitamago",
+    "en": "Soft-boiled seasoned egg",
+    "price": "",
+    "section": "のせもの Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Marinated in a soy tare. No price published.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "青ねぎ",
+    "romaji": "aonegi",
+    "en": "Spring onion",
+    "price": "",
+    "section": "のせもの Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Raw spring onion — the only line on the whole menu that is a plain vegetable, and it goes into a pork broth. No price published.",
+    "dish_key": "negi"
+   },
+   {
+    "ja": "替チャーシュー",
+    "romaji": "kae chāshū",
+    "en": "Extra chashu",
+    "price": "",
+    "section": "のせもの Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soy-braised pork. No price published.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "替玉",
+    "romaji": "kaedama",
+    "en": "Extra noodles",
+    "price": "",
+    "section": "単品料理 À la carte",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ A second serving of the same wheat-and-kansui noodle — the Kurume house custom. No price published.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "焼きめし",
+    "romaji": "yakimeshi",
+    "en": "Fried rice",
+    "price": "",
+    "section": "単品料理 À la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ NOT SOLD AT THIS BRANCH — the chain marks it as unavailable at 久留米インター店 and at both Tokyo shops, of which this is one. Recorded so the exclusion is visible rather than silently missing. Ramen-shop fried rice is soy-seasoned and cooked in pork fat in any case. No price published.",
+    "dish_key": "chahan"
+   },
+   {
+    "ja": "焼餃子",
+    "romaji": "yaki gyōza",
+    "en": "Pan-fried gyoza",
+    "price": "",
+    "section": "単品料理 À la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat wrapper, pork filling, soy dipping sauce. No price published.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "ごはん",
+    "romaji": "gohan",
+    "en": "Rice",
+    "price": "",
+    "section": "単品料理 À la carte",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Plain rice — with the spring onion, one of only two non-animal, non-wheat lines on the menu. No price published.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "とろけるプリン",
+    "romaji": "torokeru purin",
+    "en": "Melting custard pudding",
+    "price": "",
+    "section": "デザート Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg and dairy custard — the only dessert. No price published.",
+    "dish_key": "pudding"
+   }
+  ]
+ },
+ "tokyo_we_are_the_farm_shibuya": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://shops.allfarm.co.jp/wearethefarm-shibuya/en_us/",
+   "https://shops.allfarm.co.jp/wearethefarm-shibuya/en_us/menu/",
+   "https://shops.allfarm.co.jp/wearethefarm-shibuya/en_us/lunch/",
+   "https://shops.allfarm.co.jp/wearethefarm-shibuya/en_us/course/"
+  ],
+  "price_note": "The branch's own site prices its courses and its lunch buffet in full, tax included, and prices its à-la-carte dishes almost not at all — so what follows is a complete course list and a partial dish list, which is the shape of the source rather than a gap in the research. ⚠ DINNER IS COURSE-ONLY AND THE SHOP SAYS SO: 「From April 2023, the dinner menu will only be available as a course」. Every course runs 120 minutes; supplements printed against individual dishes inside a course are marked with ＋ and are added to the course price, exactly as at a French room. 〒150-0046 東京都渋谷区松濤1-28-11 高田ビル1F ピジョン, eight minutes from Shibuya station, tel 050-5385-3480; Tuesday–Sunday, lunch 11:00–15:00 (L.O. 14:30), dinner 17:00–23:00 (food 22:00, drink 22:30), closed Mondays except in December. ⚠ THIS IS A VEGETABLE RESTAURANT THAT GROWS ITS OWN 固定種 (open-pollinated) VEGETABLES ON ITS OWN FARM, AND IT IS STILL NOT A VEGAN RESTAURANT — that distinction is the single most useful thing in this record. The published courses are built around vegetables and then finished with cheese, cream, chicken, duck or steak: the headline appetiser on three of the four courses is BURRATA, the signature bagna cauda is by definition an ANCHOVY-AND-GARLIC dip, the kale Caesar dressing is egg-and-anchovy, and the FARM course's cheapest main, 鉄板焼き大山鶏, is chicken. ⚠ THE ONE PLACE A VEGAN CAN ACTUALLY EAT WELL HERE IS THE LUNCH BUFFET AT 1,980円 — 15 kinds of salad and deli with a menu the shop says changes daily and weekly — and the four paid toppings on it are fried bean curd 380円 (the one plant option), chicken ham 380円, grilled duck 480円 and gratin 480円. ⚠ ON WHEAT, THE SHOP PUBLISHES NOTHING EITHER WAY. Nothing on the board is described as gluten-free and nothing is obviously breaded except the gratin (a béchamel, so flour and dairy) and the 〆のフォー at the end of the hotpot course, which is rice noodle and is therefore the one starch on the menu that is not wheat by default. Everything else is an ask.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "FARM Course",
+    "romaji": "FARM Course",
+    "en": "FARM course — 7 items, 120 min",
+    "price": "4730円 (tax included)",
+    "section": "dinner course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Seven courses, served one freshly picked vegetable dish at a time, for 1–30 people. Published content: appetiser (World's Best Tomatoes, basil and BURRATA ＋660), kale salad, about six freshly picked vegetables that vary with the day's harvest, then a main chosen from teppan-grilled Daisen chicken / grilled duck and mozzarella ＋770 / vegetable gratin ＋550 / Japanese beef lean steak ＋1,650 / Akagi wagyu sirloin ＋2,420. ⚠ EVERY PUBLISHED MAIN IS MEAT OR CHEESE — the vegetable option is a GRATIN, i.e. béchamel, so it is dairy and flour rather than the plant choice it looks like.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "バーニャカウダコース（ライト）",
+    "romaji": "bānya kauda kōsu (raito)",
+    "en": "Bagna cauda course — light",
+    "price": "4070円（税込）",
+    "section": "dinner course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The vegetable-led light course, 120 min, 1–50 people. Published content: World's Best Tomato, kale genovese and BURRATA ＋660; kale Caesar salad; teppanyaki bagna cauda from that day's harvest; today's dessert. ⚠ BAGNA CAUDA IS AN ANCHOVY-AND-GARLIC DIP AND CAESAR DRESSING IS EGG AND ANCHOVY — the two dishes that make this the 'vegetable' course are both built on fish. All-you-can-drink 2 hours ＋2,750円.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "バーニャカウダコース（パーティー）",
+    "romaji": "bānya kauda kōsu (pātī)",
+    "en": "Bagna cauda course — party",
+    "price": "4950円（税込）",
+    "section": "dinner course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fuller version, 120 min, 1–50 people: burrata appetiser ＋770, kale Caesar salad, one vegetable of the day, teppanyaki bagna cauda, then a main from teppan-grilled Daisen chicken / charcoal-grilled pork loin ＋800 / vegetable gratin ＋550 / Japanese beef lean steak ＋1,650 / Akagi wagyu sirloin ＋2,420, and today's dessert. All-you-can-drink 2 hours ＋2,750円.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "抗酸化薬膳火鍋コース",
+    "romaji": "kōsanka yakuzen hinabe kōsu",
+    "en": "Antioxidant medicinal hotpot course — 5 items, 120 min",
+    "price": "5980円 (tax included)",
+    "section": "dinner course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop describes a hotpot built on 60 kinds of 生薬 (medicinal herbs) with free refills of soup and vegetables, and claims skin, detox, immunity and relaxation benefits. Content: World's Best Tomato and burrata ＋770, kale Caesar salad, two seasonal open-pollinated vegetables, the hotpot, and 〆のフォー to finish. ⚠ THE PHO AT THE END IS RICE NOODLE — the one starch on this menu that is not wheat by default. Extra toppings (mushroom, tofu, PORK BELLY) are charged separately; 60-minute all-you-can-eat ＋1,650円 incl. tax, 90-minute all-you-can-drink ＋2,750円.",
+    "dish_key": "hotpot_veg"
+   },
+   {
+    "ja": "Seasonal vegetable buffet with 15 kinds of salad and deli",
+    "romaji": "kisetsu yasai byuffe",
+    "en": "Seasonal vegetable buffet — 15 kinds of salad and deli (lunch)",
+    "price": "1980円 (tax included)",
+    "section": "lunch",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE BEST LINE ON THIS MENU FOR A VEGAN AND THE ONLY ONE WITHOUT A NAMED ANIMAL INGREDIENT: an own-farm vegetable buffet the shop says changes daily and weekly, with more than six kinds of salad vegetable always out. What is in the deli dishes on any given day is not published, so it stays an ask rather than a yes — but this is the one meal here designed around the vegetables rather than finished with meat.",
+    "dish_key": "buffet"
+   },
+   {
+    "ja": "Topping: Fried bean curd",
+    "romaji": "toppingu: age-dōfu",
+    "en": "Buffet topping — fried bean curd",
+    "price": "380円",
+    "section": "lunch",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only plant-based paid topping on the lunch buffet. Whether it is served with a dashi-soy dressing is not stated.",
+    "dish_key": "atsuage"
+   },
+   {
+    "ja": "Topping: Chicken ham",
+    "romaji": "toppingu: chikin hamu",
+    "en": "Buffet topping — chicken ham",
+    "price": "380円",
+    "section": "lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken.",
+    "dish_key": "topping"
+   },
+   {
+    "ja": "Topping: Grilled duck",
+    "romaji": "toppingu: gurirudo dakku",
+    "en": "Buffet topping — grilled duck",
+    "price": "480円",
+    "section": "lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Duck.",
+    "dish_key": "topping"
+   },
+   {
+    "ja": "Topping: Gratin",
+    "romaji": "toppingu: guratan",
+    "en": "Buffet topping — gratin",
+    "price": "480円",
+    "section": "lunch",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A gratin is béchamel — flour and dairy.",
+    "dish_key": "gratin"
+   },
+   {
+    "ja": "Kale Salad with NY Caesar Dressing",
+    "romaji": "kēru sarada NY shīzā doresshingu",
+    "en": "Kale salad with New York Caesar dressing",
+    "price": "",
+    "section": "menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE DISH THAT LOOKS VEGAN AND IS NOT: Caesar dressing is egg yolk, parmesan and ANCHOVY. It appears in three of the four courses as the salad course. No à-la-carte price published.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "World's Best Tomatoes Basil and Burrata Cheese",
+    "romaji": "sekaiichi tomato, bajiru to burāta chīzu",
+    "en": "World's Best Tomatoes with basil and burrata",
+    "price": "",
+    "section": "menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The shop calls it its most popular item. Burrata is fresh dairy. Appears as the appetiser on every course at ＋660 or ＋770. No à-la-carte price published.",
+    "dish_key": "caprese"
+   },
+   {
+    "ja": "Teppanyaki Bagna Cauda in the field",
+    "romaji": "hatake no teppanyaki bānya kauda",
+    "en": "Field teppanyaki bagna cauda",
+    "price": "",
+    "section": "menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE SIGNATURE DISH, AND ITS SAUCE IS ANCHOVY. Vegetables from the day's harvest, each cooked the way that suits it, with a bagna cauda — a warm anchovy, garlic and olive oil dip that also normally carries butter or cream. No à-la-carte price published.",
+    "dish_key": "bagna_cauda"
+   },
+   {
+    "ja": "Teppan Grilled Daisen Chicken",
+    "romaji": "teppanyaki Daisen-dori",
+    "en": "Teppan-grilled Daisen chicken",
+    "price": "",
+    "section": "menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The no-supplement main on the FARM and party courses. Chicken. No à-la-carte price published.",
+    "dish_key": "chicken"
+   },
+   {
+    "ja": "dessert plate",
+    "romaji": "dezāto purēto",
+    "en": "Dessert plate, 3 items",
+    "price": "1980円 (tax included)",
+    "section": "dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Three items on a plate; the shop recommends it for birthdays and anniversaries. Restaurant dessert plates of this kind are dairy and egg, and the contents are not published.",
+    "dish_key": "dessert"
+   }
+  ]
+ },
+ "tokyo_ashiyu_cafe_mominoki_hou": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.mominokihouse.jp/shibuya/",
+   "https://www.mominokihouse.jp/ashiyucafe/",
+   "https://www.mominokihouse.jp/ayurvedamenu/"
+  ],
+  "price_note": "PARTIAL, AND THE CAVEAT IS THE OPERATOR'S OWN: every food and drink price below is published on もみの気ハウス's 足湯カフェ page as an EXAMPLE, each list prefixed 「（例）」, and the page closes with 「※店舗毎にメニューが異なりますので、ぜひお気軽にお問い合わせください」 — the menu differs by branch. These are therefore chain-level examples, not the 渋谷道玄坂店 board, and the branch page for Shibuya links to this same chain page rather than publishing one of its own. The shop is also 数量限定 on food. All prices are tax included by the operator's statement. ⚠ THE THING TO UNDERSTAND ABOUT THIS PLACE IS THAT THE FOOD IS NOT THE PRODUCT: it is an Ayurveda salon with a footbath café attached, and the base transaction is 足湯45分 + ハーブティー for 1,100円. The footbath is an artificial hot spring circulated through 麦飯石 — bakuhanseki, medical stone. ⚠ NOTE THAT 麦 IN 麦飯石 IS A MINERAL, NOT A GRAIN: the name means 'barley-rice stone' from its appearance, and there is no cereal anywhere in it. A wheat-avoidance search on the character 麦 will hit this page and it is a false positive. The operator adds that at some branches the herbal tea cannot be chosen at weekends and holidays. ⚠ THE FOOD IS SRI LANKAN AND GROWN BY THE OPERATOR: it says the brown rice in its curries is pesticide-free and comes from もみの気ハウスの畑, its own field. That is a genuinely unusual claim and it makes the rice, not the curry, the reliable part. The 豚肉のココナッツダールカレー is pork by name; the 絶品梅黒茶漬け is an ochazuke, which means a dashi-and-soy broth; and the 本場スリランカカレー is not described at all, so whether it is a meat, fish or vegetable curry cannot be told from the page. Free with the footbath: T-shirt and shorts hire, power and Wi-Fi, charger hire, magazines.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "基本コース（足湯45分＋ハーブティー）",
+    "romaji": "kihon kōsu (ashiyu 45-fun + hābu tī)",
+    "en": "Base course — 45 min footbath with herbal tea",
+    "price": "1100円",
+    "section": "足湯カフェ Footbath café",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The standard transaction: 45 minutes in the footbath with a Sri Lankan herbal tea of your choice. ⚠ The operator notes that at some branches the tea CANNOT be chosen at weekends and on holidays. Herbal tea is a plant infusion, but the specific blends are not published.",
+    "dish_key": "tea"
+   },
+   {
+    "ja": "期間限定チャイミルクティー",
+    "romaji": "kikan gentei chai miruku tī",
+    "en": "Limited-season chai milk tea",
+    "price": "330円",
+    "section": "ドリンク Drinks (examples)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk. Listed by the operator as an example of the drinks that can be taken instead of the included tea.",
+    "dish_key": "chai"
+   },
+   {
+    "ja": "コーヒー",
+    "romaji": "kōhī",
+    "en": "Coffee",
+    "price": "330円",
+    "section": "ドリンク Drinks (examples)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Black coffee — one of the few lines here with no named animal ingredient.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "ハニーカフェオレ",
+    "romaji": "hanī kafe ore",
+    "en": "Honey café au lait",
+    "price": "330円",
+    "section": "ドリンク Drinks (examples)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Milk and honey — two separate reasons it is not vegan.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "カフェオレ",
+    "romaji": "kafe ore",
+    "en": "Café au lait",
+    "price": "330円",
+    "section": "ドリンク Drinks (examples)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Milk.",
+    "dish_key": "coffee"
+   },
+   {
+    "ja": "自家製レモンスカッシュ／レモネード",
+    "romaji": "jikasei remon sukasshu / remonēdo",
+    "en": "House lemon squash / lemonade",
+    "price": "550円",
+    "section": "ドリンク Drinks (examples)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "House-made lemon drinks; whether they are sweetened with honey or sugar is not stated, and honey is used elsewhere on this list.",
+    "dish_key": "softdrink"
+   },
+   {
+    "ja": "お酒（小瓶ビール、レモンサワー、ハイボール）",
+    "romaji": "osake (kobin bīru, remon sawā, haibōru)",
+    "en": "Alcohol — small bottled beer, lemon sour, highball",
+    "price": "550円",
+    "section": "ドリンク Drinks (examples)",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Three drinks at one price, and the beer among them is BARLEY. 麦 is not on Japan's statutory allergen list so it will never be labelled; the lemon sour and highball are distilled and are the safer two of the three.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "本場スリランカカレー",
+    "romaji": "honba Suriranka karē",
+    "en": "Authentic Sri Lankan curry",
+    "price": "1320円",
+    "section": "フード Food (examples)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE MOST PROMISING AND THE LEAST DESCRIBED ITEM HERE. The operator says its curries are built on pesticide-free BROWN RICE GROWN IN ITS OWN FIELD, which makes the starch side of the dish unusually well documented — and it never says what is in the curry, so whether this one is meat, fish or vegetable cannot be told from the page. Sri Lankan curry is normally coconut-based rather than roux-based, which is why the wheat question is open rather than closed. 数量限定.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "豚肉のココナッツダールカレー",
+    "romaji": "butaniku no kokonattsu dāru karē",
+    "en": "Pork coconut dhal curry",
+    "price": "660円",
+    "section": "フード Food (examples)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ A DHAL — a lentil curry — WITH PORK IN IT. Dhal is the dish a vegan would reach for on a Sri Lankan menu and this one is named for its pork. Coconut base rather than a wheat roux. 数量限定.",
+    "dish_key": "curry"
+   },
+   {
+    "ja": "絶品梅黒茶漬け",
+    "romaji": "zeppin ume kuro chazuke",
+    "en": "Umeboshi black-tea chazuke",
+    "price": "660円",
+    "section": "フード Food (examples)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The topping is a plum and the broth is not: chazuke is poured with a dashi-and-soy stock, which is a bonito fact and a wheat fact at once. 数量限定.",
+    "dish_key": "chazuke"
+   },
+   {
+    "ja": "スイーツ各種",
+    "romaji": "suītsu kakushu",
+    "en": "Assorted house sweets",
+    "price": "330円",
+    "section": "フード Food (examples)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The operator says the sweets are handmade and popular, and names none of them. 数量限定.",
+    "dish_key": "dessert"
+   },
+   {
+    "ja": "おつまみ各種",
+    "romaji": "otsumami kakushu",
+    "en": "Assorted snacks",
+    "price": "330円",
+    "section": "フード Food (examples)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Not described anywhere on the page. 数量限定.",
+    "dish_key": "otsumami"
+   }
+  ]
+ },
+ "tokyo_ganso_unatetsu": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.unatetsu.com/main.html",
+   "http://www.unatetsu.com/menu.html",
+   "http://www.unatetsu.com/contents.html"
+  ],
+  "price_note": "EMPTY BECAUSE THE MENU IS A PICTURE, ON A SITE OLD ENOUGH THAT THE PICTURE IS A GIF. 元祖うな鐡's site is a 2003-era HTML FRAMESET — main.html is a frame container that warns 「このページを表示するには、フレームをサポートしているブラウザが必要です」 — and the actual pages sit behind it: contents.html (the left nav), menu.html, kodawari.html, time.html, map.html, historytop.html, inquire.html. menu.html loads, is titled 元祖うな鐡・お品書, and contains exactly two images and no text: unatetsuFiles/photo/menu/menu-lunch.gif and unatetsuFiles/photo/menu/menu-b-night.jpg — the lunch card and the evening card. No alt text, no price in the markup, no PDF. The page is Shift-JIS and had to be transcoded before it could even be read; the copyright line runs 2003–2024. Nothing has been transcribed and nothing invented. ⚠ WHAT THE SHOP'S NAME ALONE SETTLES: this is a kabayaki-style unagi house, so every dish on both of those images is grilled eel lacquered in a soy-and-mirin tare — wheat by default and fish by definition. A coeliac and a vegan both already have their answer; only the prices are missing. Worth returning to with OCR.",
+  "last_checked": "2026-09-06",
+  "items": []
  }
 }

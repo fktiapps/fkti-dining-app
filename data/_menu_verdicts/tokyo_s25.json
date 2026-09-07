@@ -1907,5 +1907,15 @@
     "dish_key": "chazuke"
    }
   ]
+ },
+ "tokyo_tencups": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tencupsjp.com/"
+  ],
+  "price_note": "EMPTY BECAUSE THE SITE SERVES NO CONTENT TO ANYTHING THAT IS NOT A BROWSER RUNNING JAVASCRIPT. tencupsjp.com returns 200 and about 200 kB of HTML, and the only human-readable string in the whole document is the og:title, 'TENCUPS HOME'. There is no server-rendered body, no navigation, no dish, no price and no address; the generator meta is 'export_website', i.e. a site exported from a visual builder that hydrates entirely on the client. It was tried twice — once with curl and a desktop user agent, once through a renderer — and neither produced a menu. ⚠ THE HTML DOES CONTAIN A FEW FRAGMENTS OF UNRELATED JAPANESE PROSE about a music-news媒体 (「最新の音楽ニュース」, 「ミュージシャンの音楽的ルーツ」, and what look like band names), which is either a stray embedded widget or a sign that the domain now carries something other than the café. THAT AMBIGUITY IS THE REASON THIS RECORD IS CONFIDENCE MEDIUM RATHER THAN HIGH: it is not certain that this URL still belongs to the shop, and it would be wrong to attribute anything found on it to TENCUPS. Recorded empty so the queue stops re-selecting it; the record needs a fresh URL rather than another fetch of this one.",
+  "last_checked": "2026-09-06",
+  "items": []
  }
 }

@@ -1908,5 +1908,16 @@
     "dish_key": "sake"
    }
   ]
+ },
+ "tokyo_murugi": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://murugi.co.jp/",
+   "https://murugi.co.jp/demo/index.php/menu/"
+  ],
+  "price_note": "EMPTY BECAUSE THE MENU IS A PICTURE. ムルギー's official site has a MENU page, the page loads, and its entire content is two image files — menu-omote.png and menu-ura.png, the front and back of the printed card — plus a third image murgi-menu_2206272-1.png. The only machine-readable text on the whole page is one line: 「※2026年4月改定メニュー」, the menu was revised in April 2026. There is no HTML dish list, no price, no PDF with a text layer and no alt text on any of the images. Nothing can be transcribed without OCR, and nothing has been guessed. ⚠ THIS IS THE MOST FAMOUS OLD-SCHOOL CURRY SHOP IN DOGENZAKA AND IT IS WORTH COMING BACK TO WITH OCR — the shop is a 1951-founded Shibuya institution whose signature is the mound-shaped ムルギーライス. Recorded empty so the queue stops re-selecting it, not because the menu is unobtainable in principle. ⚠ ONE THING WORTH FLAGGING FOR WHOEVER DOES READ THE IMAGE: Japanese-style Indian curry of this vintage is a WHEAT-ROUX curry almost without exception, so the expected answer for every dish on that card is 'no', and the interesting question is whether the shop has anything else at all.",
+  "last_checked": "2026-09-06",
+  "items": []
  }
 }

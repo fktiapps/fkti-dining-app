@@ -979,5 +979,50 @@
     "dish_key": "parfait"
    }
   ]
+ },
+ "tokyo_abura_soba_kasugatei_shi": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://kasugatei.com/map/shibuya/",
+   "https://kasugatei.com/oshinagaki/"
+  ],
+  "price_note": "EMPTY BECAUSE THE MENU IS A PICTURE. 油そば 春日亭's chain site has an お品書き page whose entire content is a single JPEG, images/contents/oshinagaki.jpg, with no alt text, no HTML list and no price anywhere in the markup. The only machine-readable sentence on it is an exclusion notice: 「※担々油そばに関しまして、魚介メニューの提供に伴い、中野店、神田店ではお取り扱いがございません」 — the tantan abura soba is not sold at the Nakano and Kanda branches because of their seafood menu. That footnote does NOT name 渋谷店 or 渋谷センター街店, so it does not restrict this shop. The chain lists 23 branches including both 渋谷店 and 渋谷センター街店. ⚠ WHAT IS CERTAIN WITHOUT READING THE IMAGE, BECAUSE IT IS THE NAME OF THE SHOP: ABURA SOBA IS A WHEAT NOODLE. 油そば is a brothless ramen — thick wheat-and-kansui noodles tossed with a soy-and-oil tare at the bottom of the bowl — so every bowl on that card is wheat twice over, from the noodle and from the tare, and the 割スープ that is poured in at the end is a meat or fish stock. There is no version of this dish that is not wheat. Recorded empty for the prices; the gluten answer needs no image.",
+  "last_checked": "2026-09-06",
+  "items": []
+ },
+ "tokyo_nikujiru_suigyoza_gyopao_2": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://gyopao-shinjuku-east.com/en_us/",
+   "https://gyopao-shinjuku-east.com/en_us/food-drink-english-edition-2/",
+   "https://gyopao-shinjuku-east.com/en_us/menu-2/"
+  ],
+  "price_note": "EMPTY BECAUSE THE MENU IS A PICTURE, INCLUDING THE ENGLISH ONE. The branch's own site has four menu-ish pages — menu, course, 'Food & Drink / English edition' and an all-you-can-eat gyoza buffet page — and the English-edition page, which is the one that sounded most promising, turns out to be two scanned JPEGs of a printed card (grandmenu英語_page-0001.jpg and _page-0002.jpg) with no alt text and no HTML list behind them. No price appears in the markup of any page. Nothing has been transcribed and nothing invented. The branch is 肉汁水餃子 餃包 新宿東口駅前店, directly connected to Shinjuku Subnade, tel 050-1721-4408; its sister shop is KABUKI餃子. ⚠ WHAT THE PAGE STRUCTURE ITSELF ESTABLISHES: the headline offer is an ALL-YOU-CAN-EAT GYOZA BUFFET, and a gyoza wrapper is wheat by construction, so a coeliac has nothing to gain from the format that defines this restaurant. 水餃子 (boiled dumplings) are the house speciality and are wheat exactly as the pan-fried ones are; the 肉汁 in the name is the meat juice inside them. Recorded empty for the prices; the gluten answer needs no image. Worth returning to with OCR since a printed English card exists.",
+  "last_checked": "2026-09-06",
+  "items": []
+ },
+ "tokyo_trois_bagues_vertes": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://troisbagues.com/"
+  ],
+  "price_note": "ALMOST EMPTY: THE SHOP'S SITE HAS NO MENU PAGE AT ALL. troisbagues.com's navigation is HOME / トロワバグについて / アクセス / ギャラリー / オンラインショップ / ブログ / お問い合わせ — there is no menu item in it, and the site even leaks a PHP warning (`Undefined variable $onepage_menu` in header-home.php) where a menu section would sit, which suggests the template once had one. No food or drink price appears anywhere. What the shop does publish about itself: a small 喫茶店 opened in 1976 (昭和51年) that ages its green beans before roasting — エイジングコーヒー, 熟成豆, オールドビーンズ — and brews by NEL DRIP; it offers a wine selection to taste, ships beans nationwide, and its gallery captions say 「軽食もございます」 (light meals are available) and 「ワインやビールもございます」 without naming a single one. It also runs a monthly wine gathering. 東京都千代田区神田神保町1-12-1 富田ビルB1, tel 03-3294-8597, one minute from Jimbocho A5; Mon–Fri 10:00–20:00 (L.O. 19:30), Sat and holidays 12:00–19:00 (L.O. 18:30), closed Sundays. ⚠ ONLY ONE PRODUCT IS NAMED ANYWHERE ON THE SITE — トロワブレンド, the house blend built on its old beans — and it is named in the ONLINE SHOP block, i.e. as a bag of beans to buy rather than as a cup served at the counter. It is recorded below on that basis and unpriced, which is why this record is provisional/low. ⚠ THE 軽食 IS THE REAL GAP: a Showa-era kissaten's light meals are toast, sandwiches, pilaf and spaghetti nearly without exception, all of which would be wheat, but the shop names none of them and that must not be filled in from the pattern.",
+  "last_checked": "2026-09-06",
+  "items": [
+   {
+    "ja": "トロワブレンド",
+    "romaji": "Torowa burendo",
+    "en": "Trois blend",
+    "price": "",
+    "section": "コーヒー Coffee",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only product named anywhere on the site: the house blend built on the shop's aged old beans, brewed by nel drip at the counter and also sold as beans through the online shop. Black coffee has no wheat and no animal ingredient in itself; whether it is served that way, and what the shop's unnamed 軽食 are, is not published. No price given.",
+    "dish_key": "coffee"
+   }
+  ]
  }
 }

@@ -38,3 +38,6 @@ data/.rebuild.lock
 
 # per-rebuild tier-write diagnostic (see scripts/lib-tiers.mjs)
 data/_tier_writes.jsonl
+
+# Local tick scratch: cached page fetches and one-off patch scripts.
+.tick/
