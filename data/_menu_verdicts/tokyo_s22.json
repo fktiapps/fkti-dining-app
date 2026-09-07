@@ -3556,5 +3556,26 @@
   "price_note": "EMPTY BECAUSE THE CHAIN PUBLISHES NO MENU FOR THIS BRANCH, and the near-miss is worth recording so nobody repeats it. vietnam-banhxeo.com (operator P4 inc.) is a single-page brand site: it explains what bánh xèo is and lists all four Tokyo shops — 有楽町, 新宿, 東京ドームシティ and 虎ノ門 — with address, phone and hours, but has no menu page at all (/menu/ returns 404). Only the 新宿 branch has its own subdomain, shinjuku.vietnam-banhxeo.com, and even that has no menu section — just こだわり, 物語, 新着情報, アクセス and a Toreta booking link, with the current offers announced in news posts. The 東京ドームシティ店 (文京区後楽1-3-61 黄色いビル 2F, Food Stadium Tokyo, 11:00-23:00) has only Instagram and Facebook. Carrying the Shinjuku shop’s course or lunch offers across to the Dome City branch would break the no-cross-branch rule, so nothing is recorded. WHAT THE BRAND PAGE DOES ESTABLISH, and it matters for anyone reading this later: the shop’s own description says the bánh xèo batter is 米粉 (RICE FLOUR) coloured with turmeric, filled with bean sprouts, pork and prawn, wrapped in leaf vegetables and dipped in nước chấm — so the pancake itself is not wheat. The dip is the problem: nước chấm is fish sauce, which is not vegan and is only sometimes wheat-free. None of that is branch-specific enough to record as items.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_asakusa_rairaiken": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://asakusa-rairaiken.studio.site/",
+   "https://storage.googleapis.com/studio-publish/projects/"
+  ],
+  "price_note": "NO MENU COULD BE READ, AND THE REASON IS THE PLATFORM RATHER THAN THE SHOP. The site for 浅草来々軒 is built on STUDIO (studio.site), a Nuxt single-page app that ships an empty HTML shell and paints the page from JavaScript. curl and WebFetch both return only the site title and a STUDIO banner. This tick went further than a fetch: STUDIO publishes each site's content as a snapshot JSON in Google Cloud Storage, and the app's own __NUXT_DATA__ payload names the exact path. That snapshot was retrieved and parsed — and its \"components\" key is an empty object, so the text simply is not in the published payload this egress can reach. Menu subpaths (/menu, /food, /drink) were probed as well and either 404 or return the same shell. This is a COMPLETE result for a text-only harvest: the shop may well display a full menu to a real browser, but nothing was found that could be quoted, and nothing has been guessed. A future pass with a headless browser that executes JavaScript is the way to finish this record; a re-fetch will not be. ⚠ FOR PLANNING PURPOSES ONLY, NOT AS A MENU CLAIM: the shop is recorded in this dataset as 中華料理, and a Chinese restaurant in Japan is a wheat-dominant kitchen — ramen, gyoza, and soy-sauce seasoning throughout. Nothing here should be read as a finding about a specific dish, because no dish was found.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_mafumi_coffee_shop_shint": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "http://coffeemafumi.html.xdomain.jp/"
+  ],
+  "price_note": "HOST RESOLVES BUT REFUSES CONNECTIONS. 眞踏珈琲店's site is on a free XDOMAIN subdomain; the name coffeemafumi.html.xdomain.jp resolves cleanly to 157.112.147.44, but every connection attempt fails — curl returns exit 000 on http and https, on both / and /index.html, and WebFetch reports ECONNREFUSED on port 443. DNS is fine and the host is refusing the socket, which usually means the hosting account has lapsed while the DNS record survives. Worth one retry on a later tick in case it is transient, but a refused connection on a free-hosting subdomain more often means the site is gone. Nothing was read. The dataset's menu_url is Tabelog, unreachable from this egress. 眞踏珈琲店 is recorded as 喫茶店・コーヒー — a kissaten. ⚠ Standing kissaten note: the coffee itself is not the risk; the risk is that a Japanese kissaten counter almost always serves toast, sandwiches and hotcakes from the same small workspace, so cross-contamination is the question to ask rather than the drink.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

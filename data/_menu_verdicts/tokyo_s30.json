@@ -2333,5 +2333,15 @@
   "price_note": "EMPTY BECAUSE THE MENU IS A PICTURE, ON A SITE OLD ENOUGH THAT THE PICTURE IS A GIF. 元祖うな鐡's site is a 2003-era HTML FRAMESET — main.html is a frame container that warns 「このページを表示するには、フレームをサポートしているブラウザが必要です」 — and the actual pages sit behind it: contents.html (the left nav), menu.html, kodawari.html, time.html, map.html, historytop.html, inquire.html. menu.html loads, is titled 元祖うな鐡・お品書, and contains exactly two images and no text: unatetsuFiles/photo/menu/menu-lunch.gif and unatetsuFiles/photo/menu/menu-b-night.jpg — the lunch card and the evening card. No alt text, no price in the markup, no PDF. The page is Shift-JIS and had to be transcoded before it could even be read; the copyright line runs 2003–2024. Nothing has been transcribed and nothing invented. ⚠ WHAT THE SHOP'S NAME ALONE SETTLES: this is a kabayaki-style unagi house, so every dish on both of those images is grilled eel lacquered in a soy-and-mirin tare — wheat by default and fish by definition. A coeliac and a vegan both already have their answer; only the prices are missing. Worth returning to with OCR.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_shinjuku_soba_kura": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "http://www.sobakura.com/sobakura/shinjuku.html"
+  ],
+  "price_note": "THE DOMAIN DOES NOT RESOLVE. www.sobakura.com and sobakura.com both fail DNS resolution from this machine (queried against 8.8.8.8; no address record returned), and curl returns exit code 000 on http and https for both. This is not a block, a challenge or a timeout — there is no host to connect to, so 新宿そば蔵's site is simply gone. Distinguish this from the Tabelog-parked records: those are blocked, this one is dead. The record needs a new first-party URL and cannot be retried as-is. Its menu_url is a Tabelog link this egress cannot reach. 新宿そば蔵 is recorded as そば・日本酒 — a soba and sake house; see the standing soba note (打ち粉, shared water, soy-based tsuyu) but understand that no dish or price here has been established.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

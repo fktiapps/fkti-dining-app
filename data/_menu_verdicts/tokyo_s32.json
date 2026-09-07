@@ -1180,5 +1180,26 @@
     "dish_key": "quiche_vegetable"
    }
   ]
+ },
+ "tokyo_ban_thai": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://ban-thai.studio.site/",
+   "https://ban-thai.studio.site/menu"
+  ],
+  "price_note": "NO MENU COULD BE READ, AND THE REASON IS THE PLATFORM RATHER THAN THE SHOP. The site for タイ国料理 バンタイ is built on STUDIO (studio.site), a Nuxt single-page app that ships an empty HTML shell and paints the page from JavaScript. curl and WebFetch both return only the site title and a STUDIO banner. This tick went further than a fetch: STUDIO publishes each site's content as a snapshot JSON in Google Cloud Storage, and the app's own __NUXT_DATA__ payload names the exact path. That snapshot was retrieved and parsed — and its \"components\" key is an empty object, so the text simply is not in the published payload this egress can reach. Menu subpaths (/menu, /food, /drink) were probed as well and either 404 or return the same shell. This is a COMPLETE result for a text-only harvest: the shop may well display a full menu to a real browser, but nothing was found that could be quoted, and nothing has been guessed. A future pass with a headless browser that executes JavaScript is the way to finish this record; a re-fetch will not be. NOTE ON THE SUBPATH PROBE: unlike the other STUDIO sites in this batch, ban-thai.studio.site returns HTTP 200 for /menu, /food and /drink — but all three are byte-identical to the top page (14,949 bytes each), i.e. an SPA catch-all, not real pages. Do not record that as a menu page existing. ⚠ FOR A COELIAC, Thai cooking is one of the higher-yield cuisines in Japan because rice noodles and rice are the staples — but it is also one where fish sauce, oyster sauce and soy sauce are used constantly, and Japanese-market oyster and soy sauces carry wheat. Nothing about this specific kitchen was established.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_nouka_no_daidokoro_shinj": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.noukanodaidokoro.shop/"
+  ],
+  "price_note": "⚠ THE WEBSITE IN THIS DATASET NOW POINTS AT SOMETHING ELSE ENTIRELY, AND SOMEONE SHOULD FIX THE RECORD. https://www.noukanodaidokoro.shop/ redirects to noukanodaidokoro.shop and serves a GERMAN-LANGUAGE RECIPE BLOG. Its front page is a list of posts titled \"Das perfekte Currywurst Sauce Rezept\", \"Königsberger Klopse Rezept\", \"Jägerschnitzel DDR Rezept\", \"Hähnchenflügel im Ofen knusprig\", \"Gambas al Ajillo Rezept\" and so on, under a masthead reading \"Noukano\" with Impressum and Über uns links. The .shop domain has been dropped by the restaurant and re-registered as SEO content. There is no Japanese text, no address, no menu and no connection to 農家の台所 anywhere on it. THIS IS WORTH FLAGGING BEYOND THIS RECORD: a stale website field that resolves to unrelated food content is exactly the kind of source that could get a fabricated menu written against it by a less careful pass — the page is full of dish names and would look plausible to anything that did not read the language. Nothing from it has been used. 農家の台所 新宿三丁目店 is recorded as a vegetable-forward izakaya, which would make it one of the more promising vegan candidates in Shinjuku; it needs a fresh first-party URL before that can be checked.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

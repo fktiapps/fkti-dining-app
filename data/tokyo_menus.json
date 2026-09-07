@@ -131621,5 +131621,1237 @@
     "dish_key": "jelly"
    }
   ]
+ },
+ "tokyo_izumo_asakusa_yokocho": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://asakusayokocho.com/shops06",
+   "https://asakusayokocho.com/"
+  ],
+  "price_note": "Asakusa Yokocho's own shop page for stall 06 publishes a full priced 主なフードメニュー and 主なドリンクメニュー, all marked 税込, so these are the real counter prices. NOTE ON IDENTITY: this dataset carries the shop under a long compound name (うなぎの蒲の穂焼 牛タン 焼鳥 馬刺し いづも); the venue's own page calls stall 06 「鰻串 いづも」 and lists only the eel-skewer range. The 牛タン/焼鳥/馬刺し in our name belong to OTHER stalls in the same yokocho — Asakusa Yokocho is a shared food alley of eight stalls under one roof, and shops01–shops08 are separate kitchens. Do not attribute a beef-tongue or horse-sashimi dish to this record. ⚠ THE GLUTEN FACT THAT GOVERNS THIS WHOLE MENU IS 蒲焼 TARE. 蒲の穂焼き is a kabayaki preparation: the eel is repeatedly basted with a soy-sauce-and-mirin tare over charcoal, and Japanese soy sauce is a wheat product. The tare pot is shared and the grill bars are shared, so even a skewer ordered plain passes over the same charcoal as basted ones. That is why nothing here is recorded as gf. The shop publishes no allergen sheet.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "鰻の蒲の穂焼き",
+    "romaji": "Unagi no kaba no hoyaki",
+    "en": "Charcoal-grilled eel, kabayaki style",
+    "price": "605yen",
+    "section": "鰻串",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy-sauce based, so wheat. The shop's signature and the reason for its name.",
+    "dish_key": "unagi_kabayaki_skewer"
+   },
+   {
+    "ja": "うな串3種盛り合わせ",
+    "romaji": "Unagushi sanshu moriawase",
+    "en": "Assortment of three eel skewers",
+    "price": "1199yen",
+    "section": "鰻串",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ An assortment built from the tare-basted range above.",
+    "dish_key": "unagi_skewer_trio"
+   },
+   {
+    "ja": "短冊",
+    "romaji": "Tanzaku",
+    "en": "Eel fillet skewer (\"tanzaku\" cut)",
+    "price": "429yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The page does not say whether this cut is tare-basted or salted. Shared charcoal grill with kabayaki either way — ask.",
+    "dish_key": "unagi_tanzaku"
+   },
+   {
+    "ja": "白短冊",
+    "romaji": "Shiro-tanzaku",
+    "en": "Eel fillet skewer, plain/salt (\"white\")",
+    "price": "429yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "白 normally marks the shioyaki version, i.e. no tare — but the shop does not say so, and the grill is shared. Ask before assuming.",
+    "dish_key": "unagi_shiro_tanzaku"
+   },
+   {
+    "ja": "くりから",
+    "romaji": "Kurikara",
+    "en": "Kurikara — eel belly spiralled on a skewer",
+    "price": "429yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Preparation not stated on the page. Shared grill.",
+    "dish_key": "unagi_kurikara"
+   },
+   {
+    "ja": "肝",
+    "romaji": "Kimo",
+    "en": "Grilled eel liver skewer",
+    "price": "385yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Preparation not stated. Eel liver is commonly salted rather than tare-basted, but the shop does not confirm it.",
+    "dish_key": "unagi_kimo"
+   },
+   {
+    "ja": "鰻バター",
+    "romaji": "Unagi bata",
+    "en": "Eel with butter",
+    "price": "495yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Contains dairy. Sauce base undeclared.",
+    "dish_key": "unagi_butter"
+   },
+   {
+    "ja": "う巻き串",
+    "romaji": "Umaki kushi",
+    "en": "Umaki — rolled omelette with eel, on a skewer",
+    "price": "495yen",
+    "section": "うつまみ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Umaki is a dashimaki omelette. Japanese 出汁巻き is seasoned with 白だし/めんつゆ, which are soy-sauce products and therefore wheat. Egg as well.",
+    "dish_key": "umaki"
+   },
+   {
+    "ja": "やみつき骨せんべい",
+    "romaji": "Yamitsuki hone senbei",
+    "en": "Crisp-fried eel bones",
+    "price": "429yen",
+    "section": "うつまみ",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Deep-fried. The shop does not say whether the dusting is wheat flour or potato starch, and the fryer is shared with other fried items.",
+    "dish_key": "unagi_bone_senbei"
+   },
+   {
+    "ja": "鰻のためのハイボール",
+    "romaji": "Unagi no tame no haiboru",
+    "en": "Highball \"made for eel\"",
+    "price": "549yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Whisky and soda. Distilled spirit, but the shop names no brand and does not describe the mix, so it is not cleared here.",
+    "dish_key": "highball"
+   },
+   {
+    "ja": "サッポロラガービール赤星 大瓶",
+    "romaji": "Sapporo raga biru Akaboshi obin",
+    "en": "Sapporo Lager \"Red Star\", large bottle",
+    "price": "835yen",
+    "section": "ドリンク",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Barley malt beer. Note 麦 (barley) is NOT on Japan's statutory allergen list, so it will not appear on any Japanese allergen sheet — it is still gluten.",
+    "dish_key": "beer_sapporo_lager"
+   }
+  ]
+ },
+ "tokyo_rec_coffee_suidobashi": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://rec-coffee.com/en/pages/coffee-shop-suidobashi",
+   "https://cdn.shopify.com/s/files/1/0297/5193/5024/files/0cf7de0e8a7c46fe4794b74770f959a5.pdf"
+  ],
+  "price_note": "Prices are read from REC COFFEE's own menu PDF, reached via the \"View Menu\" button on the Suidobashi shop page itself — so it is this branch's card, not a generic chain page. The shop page also gives the address 3-10-1 Kanda Misakicho, Chiyoda-ku, hours Mon–Fri 7:30–20:00 and weekends/holidays 9:00–19:00, a morning menu served until 10:00, 30 seats, and guide dogs only. HOW THESE PRICES WERE READ, BECAUSE IT MATTERS: the PDF is a four-column single page, and a flat text extraction mis-paired several drinks with the wrong prices (it put ESPRESSO BANANA SHAKE at 800/950, which is actually COFFEE FLOAT). The values below come from a column-preserving extraction that is internally consistent across all four columns. Where a drink has two prices they are Regular / Large. The PDF's Japanese text is in Adobe-Japan1 CID fonts that did not extract, so the ja field below carries the katakana/Japanese name only where it is unambiguous from the English; nothing was invented. ⚠ WHAT A COELIAC NEEDS TO KNOW HERE: this is a specialty coffee bar, so the drinks side is mostly low-risk by form — but REC publishes NO allergen statement at all, and the food side is entirely bread (sandwich, hot dog, three toasts). A toaster and a counter shared with bread is the cross-contamination surface, and it is the reason the plain drinks below are recorded as ask rather than gf despite being coffee and juice. There IS a genuinely useful fact for a vegan traveller: the customise row prints OATS MILK as a paid option (+120 Regular / +160 Large), so every milk drink here can be made dairy-free on request. DECAF is +100.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "レックスペシャルティ #04",
+    "romaji": "REC's Specialty #04",
+    "en": "REC's Specialty coffee #04, hot or iced",
+    "price": "800yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Black coffee. No allergen statement from the shop, and the counter also handles toast.",
+    "dish_key": "coffee_rec_specialty_04"
+   },
+   {
+    "ja": "プアオーバーコーヒー",
+    "romaji": "Pour over coffee",
+    "en": "Pour over coffee, hot or iced (Regular / Large)",
+    "price": "650yen / 750yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The card notes you choose your beans from the board at the register.",
+    "dish_key": "coffee_pour_over"
+   },
+   {
+    "ja": "コールドブリューコーヒー",
+    "romaji": "Cold brew coffee",
+    "en": "Cold brew coffee, iced (Regular / Large)",
+    "price": "650yen / 750yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "coffee_cold_brew"
+   },
+   {
+    "ja": "本日のコーヒー",
+    "romaji": "Today's coffee",
+    "en": "Today's coffee, hot or iced (Regular / Large)",
+    "price": "630yen / 730yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "coffee_todays"
+   },
+   {
+    "ja": "レックコーヒーラテ",
+    "romaji": "REC coffee latte",
+    "en": "REC coffee latte, hot or iced (Regular / Large)",
+    "price": "700yen / 850yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Can be made with oat milk for +120 Regular / +160 Large per the customise row.",
+    "dish_key": "latte_rec"
+   },
+   {
+    "ja": "カプチーノ",
+    "romaji": "Cappuccino",
+    "en": "Cappuccino, hot (Regular)",
+    "price": "680yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Marked \"For here only\". Dairy; oat milk is a paid option.",
+    "dish_key": "cappuccino"
+   },
+   {
+    "ja": "アメリカーノ",
+    "romaji": "Americano",
+    "en": "Americano, hot or iced (Regular / Large)",
+    "price": "650yen / 750yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "americano"
+   },
+   {
+    "ja": "エスプレッソ",
+    "romaji": "Espresso",
+    "en": "Espresso, single or double",
+    "price": "550yen / 650yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Marked \"For here only\". The card notes you choose one of two beans.",
+    "dish_key": "espresso"
+   },
+   {
+    "ja": "ヘーゼルナッツラテ",
+    "romaji": "Hazelnut latte",
+    "en": "Hazelnut latte, hot or iced (Regular / Large)",
+    "price": "750yen / 900yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Flavoured syrup of undeclared composition, plus dairy. Also a tree-nut flavour — relevant if nut allergy is in play.",
+    "dish_key": "latte_hazelnut"
+   },
+   {
+    "ja": "ハニーラテ",
+    "romaji": "Honey latte",
+    "en": "Honey latte, hot or iced (Regular / Large)",
+    "price": "750yen / 900yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Honey and dairy — not vegan even with oat milk.",
+    "dish_key": "latte_honey"
+   },
+   {
+    "ja": "ブラウンシュガーラテ",
+    "romaji": "Brown sugar latte",
+    "en": "Brown sugar latte, hot or iced (Regular / Large)",
+    "price": "750yen / 900yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy; oat milk is a paid option, which would make this one vegan-capable.",
+    "dish_key": "latte_brown_sugar"
+   },
+   {
+    "ja": "チョコレートラテ",
+    "romaji": "Chocolate latte",
+    "en": "Chocolate latte, hot or iced (Regular / Large)",
+    "price": "820yen / 970yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Chocolate sauce of undeclared composition, plus dairy.",
+    "dish_key": "latte_chocolate"
+   },
+   {
+    "ja": "薬院レモリカーノ",
+    "romaji": "Yakuin lemoricano",
+    "en": "Yakuin Lemoricano (lemon americano), iced (Regular / Large)",
+    "price": "780yen / 930yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Named for REC COFFEE's home district of Yakuin in Fukuoka.",
+    "dish_key": "lemoricano"
+   },
+   {
+    "ja": "コーヒーフロート",
+    "romaji": "Coffee float",
+    "en": "Coffee float, iced (Regular / Large)",
+    "price": "800yen / 950yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Contains ice cream — dairy.",
+    "dish_key": "coffee_float"
+   },
+   {
+    "ja": "エスプレッソバナナシェイク",
+    "romaji": "Espresso banana shake",
+    "en": "Espresso banana shake, iced (Regular / Large)",
+    "price": "930yen / 1180yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "shake_espresso_banana"
+   },
+   {
+    "ja": "エスプレッソシェイク",
+    "romaji": "Espresso shake",
+    "en": "Espresso shake, iced (Regular / Large)",
+    "price": "890yen / 1140yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "shake_espresso"
+   },
+   {
+    "ja": "タイガー",
+    "romaji": "Tiger",
+    "en": "Tiger, iced (Regular / Large)",
+    "price": "800yen / 1050yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Composition not described on the card beyond the name.",
+    "dish_key": "tiger"
+   },
+   {
+    "ja": "ホットチョコレート",
+    "romaji": "Hot chocolate",
+    "en": "Hot chocolate, hot (Regular)",
+    "price": "670yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Chocolate of undeclared composition; dairy. The Large column is printed as a dash, i.e. not offered.",
+    "dish_key": "hot_chocolate"
+   },
+   {
+    "ja": "ミルク",
+    "romaji": "Milk",
+    "en": "Milk, hot or iced (Regular / Large)",
+    "price": "620yen / 720yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "milk"
+   },
+   {
+    "ja": "紀州オレンジジュース",
+    "romaji": "Kishu orange juice",
+    "en": "Kishu orange juice, iced (Regular / Large)",
+    "price": "700yen / 850yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Juice. Low risk by form, but no allergen statement exists and the counter handles bread.",
+    "dish_key": "juice_kishu_orange"
+   },
+   {
+    "ja": "パッションフルーツジュース",
+    "romaji": "Passion fruit juice",
+    "en": "Passion fruit juice, iced (Regular / Large)",
+    "price": "650yen / 800yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "juice_passion_fruit"
+   },
+   {
+    "ja": "レモンスカッシュ",
+    "romaji": "Lemon squash",
+    "en": "Lemon squash, iced (Regular / Large)",
+    "price": "650yen / 800yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "lemon_squash"
+   },
+   {
+    "ja": "チャイティー",
+    "romaji": "Chai tea",
+    "en": "Chai tea, hot or iced (Regular / Large)",
+    "price": "700yen / 850yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chai is normally milk-based; the card does not say whether it can be made without.",
+    "dish_key": "chai_tea"
+   },
+   {
+    "ja": "紅茶",
+    "romaji": "Kocha",
+    "en": "Black tea, hot or iced (Regular / Large)",
+    "price": "670yen / 820yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "black_tea"
+   },
+   {
+    "ja": "ベビチーノ",
+    "romaji": "Babyccino",
+    "en": "Babyccino, hot or iced",
+    "price": "350yen",
+    "section": "KIDS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Kids' menu. Steamed milk — dairy.",
+    "dish_key": "babyccino"
+   },
+   {
+    "ja": "紀州オレンジジュース（キッズ）",
+    "romaji": "Kishu orange juice (kids)",
+    "en": "Kishu orange juice, iced — kids size",
+    "price": "410yen",
+    "section": "KIDS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "juice_kishu_orange_kids"
+   },
+   {
+    "ja": "ハートランドビール 330ml",
+    "romaji": "Heartland biru 330ml",
+    "en": "Heartland beer, 330ml bottle",
+    "price": "780yen",
+    "section": "ALCOHOL",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Barley malt beer — gluten. Note the PDF explicitly says \"We do not provide information on calories or allergies of alcoholic beverages.\" Vegan status of the beer is not stated.",
+    "dish_key": "beer_heartland"
+   },
+   {
+    "ja": "ツナ＆アボカドサンドイッチ",
+    "romaji": "Tsuna ando abokado sandoicchi",
+    "en": "Tuna and avocado sandwich",
+    "price": "780yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread.",
+    "dish_key": "sandwich_tuna_avocado"
+   },
+   {
+    "ja": "プレーンドッグ（オニオンマスタード）",
+    "romaji": "Purein doggu (onion masutado)",
+    "en": "Plain hot dog with onion and mustard",
+    "price": "760yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bun.",
+    "dish_key": "hot_dog_plain"
+   },
+   {
+    "ja": "ダブルチーズトースト",
+    "romaji": "Daburu chizu tosuto",
+    "en": "Double cheese toast",
+    "price": "530yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread and dairy.",
+    "dish_key": "toast_double_cheese"
+   },
+   {
+    "ja": "バタートースト",
+    "romaji": "Bata tosuto",
+    "en": "Butter toast",
+    "price": "450yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread and dairy.",
+    "dish_key": "toast_butter"
+   },
+   {
+    "ja": "ハニーバタートースト",
+    "romaji": "Hani bata tosuto",
+    "en": "Honey butter toast",
+    "price": "530yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread, dairy and honey.",
+    "dish_key": "toast_honey_butter"
+   },
+   {
+    "ja": "コーヒーソフトクリーム",
+    "romaji": "Kohi sofuto kurimu",
+    "en": "Coffee soft-serve ice cream",
+    "price": "630yen",
+    "section": "FOOD & SWEETS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Soft-serve machines are a known shared surface; no allergen statement.",
+    "dish_key": "soft_cream_coffee"
+   },
+   {
+    "ja": "バニラアイスクリーム",
+    "romaji": "Banira aisu kurimu",
+    "en": "Vanilla ice cream",
+    "price": "600yen",
+    "section": "FOOD & SWEETS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "ice_cream_vanilla"
+   }
+  ]
+ },
+ "tokyo_iroriann_kiraku_soba_sui": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://foods.jr-cross.co.jp/kiraku/",
+   "https://foods.jr-cross.co.jp/kiraku/menu/category/hot.html",
+   "https://foods.jr-cross.co.jp/kiraku/menu/category/cold.html",
+   "https://foods.jr-cross.co.jp/kiraku/menu/category/set_menu.html",
+   "https://foods.jr-cross.co.jp/topics/archives/post_6.html",
+   "https://foods.jr-cross.co.jp/corporate/lib/img/mt_upload/Kiraku_allergen_20260801.pdf",
+   "https://shop.jr-cross.co.jp/eki/spot/detail?code=f13778"
+  ],
+  "price_note": "Prices come from いろり庵きらく's own brand menu pages (operator: JR東日本クロスステーション フーズカンパニー), all stated 税込. TWO CAVEATS THE OPERATOR ITSELF PRINTS: 「※店舗により価格が異なります」 — prices differ by branch — and 「※一部店舗では販売していない商品もございます」 — some branches do not carry every item. This record is the Suidobashi branch of a large JR-station chain, and the branch page (shop.jr-cross.co.jp code f13778) publishes no prices of its own, so treat these as the chain card rather than a Suidobashi guarantee. ⚠ THIS IS A STANDING-SOBA COUNTER AND NOTHING ON IT IS SAFE FOR A COELIAC — but this record is unusually well evidenced, because the operator publishes a real allergen PDF (Kiraku_allergen_20260801.pdf, dated 2026-08-01, 11 pages, linked from its News post as アレルギー情報). That PDF states in its own words: \"Our restaurant uses the same equipment and utensils for cooking raw materials that contain allergens other than marked by circle. So allergen contamination has occurred unintentionally.\" and, decisively, \"Soba and udon are boiled in the same pot.\" A shared soba/udon pot means the boiling water carries dissolved wheat from the udon and from the 打ち粉 dusting on the soba, so even a nominally high-buckwheat noodle is contaminated in the pot. The PDF also disclaims: \"We do not offer allergy-related services, such as changing or removing ingredients\" and \"Allergic reactions differ to each individuals, so this list does not guarantee that allergic reactions will not occur.\" HONEST LIMIT OF THIS RECORD: the PDF's per-item circle matrix did NOT extract — the item names are in Adobe-Japan1 CID fonts and the circle marks are glyphs this toolchain cannot read, so only the calorie column and the prose came through. NO per-item allergen mark below is taken from that table; every gf flag here is reasoned from the dish form plus the shared-pot statement, not read off the matrix. Someone who can open the PDF visually should re-verify. Separately, kake-tsuyu at a station soba counter is めんつゆ — soy sauce, hence wheat — and it is poured over every hot bowl.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "【朝限定10時まで】朝食そば",
+    "romaji": "Choshoku soba (asa gentei, 10-ji made)",
+    "en": "Breakfast soba (mornings only, until 10:00)",
+    "price": "480yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soba boiled in the same pot as udon (operator’s own allergen PDF). Tsuyu is mentsuyu, i.e. soy sauce, hence wheat.",
+    "dish_key": "soba_breakfast"
+   },
+   {
+    "ja": "かき揚げそば",
+    "romaji": "Kakiage soba",
+    "en": "Soba with mixed vegetable tempura fritter",
+    "price": "600yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kakiage is a wheat-flour tempura batter, on top of the shared pot and the soy-based tsuyu.",
+    "dish_key": "soba_kakiage"
+   },
+   {
+    "ja": "かき揚げ天玉そば",
+    "romaji": "Kakiage tamago soba",
+    "en": "Soba with kakiage tempura and egg",
+    "price": "700yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter, plus egg.",
+    "dish_key": "soba_kakiage_tamago"
+   },
+   {
+    "ja": "ちくわ天そば",
+    "romaji": "Chikuwa ten soba",
+    "en": "Soba with battered fried chikuwa fishcake",
+    "price": "610yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tempura batter is wheat; chikuwa itself is a surimi product that commonly carries wheat binder.",
+    "dish_key": "soba_chikuwa_ten"
+   },
+   {
+    "ja": "きつねそば",
+    "romaji": "Kitsune soba",
+    "en": "Soba with sweet simmered fried tofu",
+    "price": "590yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The abura-age is simmered in a soy-and-dashi liquid: wheat from the soy sauce, fish from the dashi. Not vegan despite being meat-free.",
+    "dish_key": "soba_kitsune"
+   },
+   {
+    "ja": "たぬきそば",
+    "romaji": "Tanuki soba",
+    "en": "Soba with tenkasu (tempura crumb)",
+    "price": "530yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tenkasu is fried tempura batter — pure wheat.",
+    "dish_key": "soba_tanuki"
+   },
+   {
+    "ja": "コロッケそば",
+    "romaji": "Korokke soba",
+    "en": "Soba topped with a potato croquette",
+    "price": "590yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Croquette is panko-crumbed and flour-dusted.",
+    "dish_key": "soba_korokke"
+   },
+   {
+    "ja": "わかめそば",
+    "romaji": "Wakame soba",
+    "en": "Soba with wakame seaweed",
+    "price": "540yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The plainest hot bowl on the card, and still not safe: shared boiling pot plus soy-based tsuyu. Not vegan — the tsuyu is bonito dashi.",
+    "dish_key": "soba_wakame"
+   },
+   {
+    "ja": "かけそば",
+    "romaji": "Kake soba",
+    "en": "Plain soba in hot broth",
+    "price": "450yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Shared pot, mentsuyu broth. Bonito dashi, so not vegan either.",
+    "dish_key": "soba_kake"
+   },
+   {
+    "ja": "冷したぬきそば",
+    "romaji": "Hiyashi tanuki soba",
+    "en": "Chilled soba with tempura crumb",
+    "price": "530yen",
+    "section": "冷たいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tenkasu is wheat; noodles still come from the shared pot.",
+    "dish_key": "soba_hiyashi_tanuki"
+   },
+   {
+    "ja": "冷しかき揚げそば",
+    "romaji": "Hiyashi kakiage soba",
+    "en": "Chilled soba with kakiage tempura",
+    "price": "600yen",
+    "section": "冷たいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tempura batter.",
+    "dish_key": "soba_hiyashi_kakiage"
+   },
+   {
+    "ja": "ざるそば",
+    "romaji": "Zaru soba",
+    "en": "Cold soba on a bamboo tray with dipping sauce",
+    "price": "500yen",
+    "section": "冷たいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The dish people most often assume is safe. It is not: the noodles are boiled in the udon pot, and the tsukejiru is soy-sauce based.",
+    "dish_key": "soba_zaru"
+   },
+   {
+    "ja": "【朝限定10時まで】納豆朝定食",
+    "romaji": "Natto asa teishoku (asa gentei, 10-ji made)",
+    "en": "Natto breakfast set (mornings only, until 10:00)",
+    "price": "550yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Natto’s sauce sachet is soy sauce based. Served with soba.",
+    "dish_key": "set_natto_breakfast"
+   },
+   {
+    "ja": "【朝限定10時まで】朝定食",
+    "romaji": "Asa teishoku (asa gentei, 10-ji made)",
+    "en": "Breakfast set (mornings only, until 10:00)",
+    "price": "430yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Contents not itemised by the operator; the soba component alone rules it out.",
+    "dish_key": "set_breakfast"
+   },
+   {
+    "ja": "【朝限定10時まで】ミニ明太子丼セット",
+    "romaji": "Mini mentaiko don setto (asa gentei)",
+    "en": "Mini spicy-cod-roe rice bowl set (mornings only)",
+    "price": "530yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Mentaiko is cured in a seasoning liquid that normally contains soy sauce and mirin.",
+    "dish_key": "set_mini_mentaiko_don"
+   },
+   {
+    "ja": "カツ丼（スープ付）",
+    "romaji": "Katsudon (supu tsuki)",
+    "en": "Pork cutlet and egg rice bowl, with soup",
+    "price": "700yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Katsu is flour-dusted and panko-crumbed, then simmered in a soy-and-dashi broth.",
+    "dish_key": "katsudon"
+   },
+   {
+    "ja": "カレーライス",
+    "romaji": "Kare raisu",
+    "en": "Japanese curry rice",
+    "price": "550yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Japanese curry is built on a wheat-flour roux. A flat no.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "いなり2個",
+    "romaji": "Inari niko",
+    "en": "Inari sushi, two pieces",
+    "price": "170yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The fried tofu pouch is simmered in soy sauce and dashi — wheat and fish. Looks vegetarian, is neither GF nor vegan.",
+    "dish_key": "inari_2pc"
+   },
+   {
+    "ja": "ミニカツ丼セット",
+    "romaji": "Mini katsudon setto",
+    "en": "Mini pork cutlet bowl with soba set",
+    "price": "860yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Panko cutlet plus soba.",
+    "dish_key": "set_mini_katsudon"
+   },
+   {
+    "ja": "ミニカレー丼セット",
+    "romaji": "Mini kare don setto",
+    "en": "Mini curry bowl with soba set",
+    "price": "750yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Roux-based curry plus soba.",
+    "dish_key": "set_mini_curry_don"
+   },
+   {
+    "ja": "ミニかき揚げ丼セット",
+    "romaji": "Mini kakiage don setto",
+    "en": "Mini kakiage tempura bowl with soba set",
+    "price": "820yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tempura batter plus soba.",
+    "dish_key": "set_mini_kakiage_don"
+   }
+  ]
+ },
+ "tokyo_style_s_cakes_co": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.stylescakes.com/",
+   "https://www.stylescakes.com/cakes.php",
+   "https://www.stylescakes.com/shop.php"
+  ],
+  "price_note": "PARTIAL, AND THE REASON IS A REAL DISTINCTION FOR A VISITOR. The only priced list Style's Cakes publishes is its WHOLE-CAKE ORDER card (cakes.php), and the shop states on that page 「(店頭ではカットしたピースのケーキのみの販売となります。)」 — over the counter it sells cut slices ONLY. So a walk-in customer cannot buy anything below at the price shown; these are 21cm and 24cm whole cakes for pre-order, and the shop asks for roughly three days' notice on 03-3291-6910 (「3日前までを目安にして頂けるとご希望のケーキをお作りできます」). The per-slice counter prices are NOT published anywhere on the site, and the shop.php gallery is images only with no text. The seasonal windows in brackets are the shop's own. ⚠ GF/VEGAN REALITY: this is a tart-and-pie boutique, so pastry is the whole product — every item below sits in or on a wheat crust, and the two 21cm/¥7,000 items that are not tarts are a pie and a banana-cream tart. Nothing here is a candidate for a coeliac, and the shop publishes no allergen information at all. The quiche is listed because it is on the same order card, not because it is any safer.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "バナナクリームタルト",
+    "romaji": "Banana kurimu taruto",
+    "en": "Banana and custard cream tart, 21cm (serves 8–10)",
+    "price": "7000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell; custard means egg and dairy. The shop calls it 大人気 — its signature.",
+    "dish_key": "tart_banana_cream"
+   },
+   {
+    "ja": "焦がしカラメルバナナパイ",
+    "romaji": "Kogashi karameru banana pai",
+    "en": "Burnt-caramel banana pie, 21cm (serves 8–10)",
+    "price": "7000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat pie pastry; caramel and cream.",
+    "dish_key": "pie_caramel_banana"
+   },
+   {
+    "ja": "イタリア栗のモンブランタルト",
+    "romaji": "Itaria kuri no monburan taruto",
+    "en": "Italian chestnut Mont Blanc tart, 21cm (serves 8–10)",
+    "price": "7000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell.",
+    "dish_key": "tart_montblanc_italian_chestnut"
+   },
+   {
+    "ja": "フランス栗のモンブランタルト",
+    "romaji": "Furansu kuri no monburan taruto",
+    "en": "French chestnut Mont Blanc tart, 21cm (serves 8–10)",
+    "price": "7000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell. The shop specifies chestnuts from \"Aubenas\", Lyon, France.",
+    "dish_key": "tart_montblanc_french_chestnut"
+   },
+   {
+    "ja": "チョコバナナパイ",
+    "romaji": "Choko banana pai",
+    "en": "Chocolate and fresh banana pie, 21cm (serves 8–10) — winter only",
+    "price": "7000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat pie pastry. Marked 冬季限定 (winter only).",
+    "dish_key": "pie_chocolate_banana"
+   },
+   {
+    "ja": "ブルーベリータルト",
+    "romaji": "Buruberi taruto",
+    "en": "Blueberry and yoghurt tart, 21cm (serves 8–10) — around June to August",
+    "price": "7000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell; yoghurt means dairy. Seasonal window given by the shop as 6月頃〜8月頃.",
+    "dish_key": "tart_blueberry"
+   },
+   {
+    "ja": "和栗のモンブランタルト",
+    "romaji": "Waguri no monburan taruto",
+    "en": "Japanese chestnut Mont Blanc tart, 21cm (serves 8–10) — around October to January",
+    "price": "8000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell. The shop specifies 愛媛の中山栗 — Nakayama chestnuts from Ehime. Seasonal 10月頃〜1月頃.",
+    "dish_key": "tart_montblanc_wagur"
+   },
+   {
+    "ja": "季節のフルーツの焼きタルト",
+    "romaji": "Kisetsu no furutsu no yaki taruto",
+    "en": "Baked seasonal fruit tart, 21cm (serves 8–10)",
+    "price": "8000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell.",
+    "dish_key": "tart_baked_seasonal_fruit"
+   },
+   {
+    "ja": "いちごのタルト",
+    "romaji": "Ichigo no taruto",
+    "en": "Strawberry tart, 21cm (serves 8–10) — around January to April",
+    "price": "9000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell. Seasonal window 1月頃〜4月頃.",
+    "dish_key": "tart_strawberry"
+   },
+   {
+    "ja": "季節のフレッシュフルーツタルト",
+    "romaji": "Kisetsu no furesshu furutsu taruto",
+    "en": "Fresh seasonal fruit tart, 21cm (serves 8–10)",
+    "price": "9000yen",
+    "section": "オリジナルケーキ 21cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tart shell.",
+    "dish_key": "tart_fresh_seasonal_fruit"
+   },
+   {
+    "ja": "スタイルズキッシュ スタンダード",
+    "romaji": "Sutairuzu kisshu sutandado",
+    "en": "Style’s quiche, standard — bacon, roast ham, two cheeses, caramelised onion; 24cm (serves 8–10)",
+    "price": "7500yen",
+    "section": "スタイルズキッシュ 24cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat pastry case; pork, dairy and egg.",
+    "dish_key": "quiche_standard"
+   },
+   {
+    "ja": "スタイルズキッシュ キノコ",
+    "romaji": "Sutairuzu kisshu kinoko",
+    "en": "Style’s quiche, mushroom — four mushrooms and cheese; 24cm (serves 8–10)",
+    "price": "7500yen",
+    "section": "スタイルズキッシュ 24cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat pastry case; dairy and egg. Meat-free but not vegan.",
+    "dish_key": "quiche_mushroom"
+   },
+   {
+    "ja": "スタイルズキッシュ ベジタブル",
+    "romaji": "Sutairuzu kisshu bejitaburu",
+    "en": "Style’s quiche, vegetable — five seasonal vegetables; 24cm (serves 8–10)",
+    "price": "7500yen",
+    "section": "スタイルズキッシュ 24cm",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat pastry case. Quiche is egg and cream by definition, so vegetable here means meat-free, NOT vegan.",
+    "dish_key": "quiche_vegetable"
+   }
+  ]
+ },
+ "tokyo_mita_seimenjo_suidobashi": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://mita-seimen.com/menu",
+   "https://mita-seimen.com/"
+  ],
+  "price_note": "PARTIAL FOR ONE SPECIFIC REASON: 三田製麺所's official menu page names and describes every item on the card but prints NO PRICES ANYWHERE — not on the category page and not on the top page. The item list below is therefore complete and first-party, and the price field is deliberately empty on every row rather than filled from a third party. The dataset's own menu_url for this record points at Tabelog, which this egress cannot reach (Cloudflare challenge since 2026-09-02), so no price cross-check was possible. Anyone with Tabelog access can fill the prices in without re-doing the item work. Note also that mita-seimen.com/en/2018/07/13/shop_29_suidoubashi/ — the URL this dataset carries as the shop's website — now 404s; the chain has restructured its site and the branch page no longer exists at that path, so the record is keyed to the chain menu. ⚠ THIS IS A TSUKEMEN SPECIALIST AND IT IS A FLAT NO FOR A COELIAC. The shop's name literally means \"Mita noodle factory\"; the whole proposition is thick wheat 極太麺. Beyond the noodles, the tsukejiru is a 豚骨魚介 pork-and-fish broth built on soy tare, and the 油そば range is described by the shop as 濃厚な醤油ダレ — soy sauce, hence wheat. The one item below that is not noodle-based, 金賞唐揚げ, is kara-age, which is flour- or starch-dusted and fried; the shop does not say which, and the fryer is shared.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "つけ麺",
+    "romaji": "Tsukemen",
+    "en": "Tsukemen — thick noodles with a separate dipping broth",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Thick wheat noodles in a pork-and-fish broth. The shop describes it as 濃厚な豚骨魚介スープと極太麺.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "特濃つけ麺",
+    "romaji": "Tokuno tsukemen",
+    "en": "Extra-rich tsukemen",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles, pork-and-fish broth.",
+    "dish_key": "tsukemen_tokuno"
+   },
+   {
+    "ja": "旨辛つけ麺",
+    "romaji": "Umakara tsukemen",
+    "en": "Spicy tsukemen with house chilli oil",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles; the shop names 自家製ラー油 over the same broth.",
+    "dish_key": "tsukemen_umakara"
+   },
+   {
+    "ja": "旨辛特濃つけ麺",
+    "romaji": "Umakara tokuno tsukemen",
+    "en": "Spicy extra-rich tsukemen",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles.",
+    "dish_key": "tsukemen_umakara_tokuno"
+   },
+   {
+    "ja": "全部のせつけ麺",
+    "romaji": "Zenbu nose tsukemen",
+    "en": "Tsukemen with all toppings (menma, chashu, nori, seasoned egg)",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles. The shop lists the toppings as メンマ・チャーシュー・のり・味玉 — chashu and ajitama are both simmered in soy sauce.",
+    "dish_key": "tsukemen_zenbu_nose"
+   },
+   {
+    "ja": "全部のせ特濃つけ麺",
+    "romaji": "Zenbu nose tokuno tsukemen",
+    "en": "Extra-rich tsukemen with all toppings",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles and soy-simmered toppings.",
+    "dish_key": "tsukemen_zenbu_nose_tokuno"
+   },
+   {
+    "ja": "豚骨魚介中華そば",
+    "romaji": "Tonkotsu gyokai chuka soba",
+    "en": "Pork-bone and seafood chuka soba (ramen)",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat ramen noodles; kansui noodle plus soy tare.",
+    "dish_key": "chukasoba_tonkotsu_gyokai"
+   },
+   {
+    "ja": "澄まし塩中華そば",
+    "romaji": "Sumashi shio chuka soba",
+    "en": "Clear salt-based chuka soba",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Even a shio tare bowl uses wheat ramen noodles. The shop describes it as 魚介出汁 — fish stock, so not vegan either.",
+    "dish_key": "chukasoba_sumashi_shio"
+   },
+   {
+    "ja": "鯛だし塩つけ麺",
+    "romaji": "Tai dashi shio tsukemen",
+    "en": "Sea-bream stock salt tsukemen",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles; sea-bream dashi. The shop notes ※夏季は冷製スープに変わります — the broth is served chilled in summer.",
+    "dish_key": "tsukemen_tai_dashi_shio"
+   },
+   {
+    "ja": "全部のせ鯛だし塩つけ麺",
+    "romaji": "Zenbu nose tai dashi shio tsukemen",
+    "en": "Sea-bream stock salt tsukemen with all toppings",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles. Same summer chilled-broth note.",
+    "dish_key": "tsukemen_tai_dashi_shio_zenbu"
+   },
+   {
+    "ja": "油そば",
+    "romaji": "Abura soba",
+    "en": "Abura soba — brothless noodles in a soy-based tare",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The shop names the sauce 濃厚な醤油ダレ — soy sauce, hence wheat, on top of wheat noodles.",
+    "dish_key": "abura_soba"
+   },
+   {
+    "ja": "辛味噌油そば",
+    "romaji": "Karamiso abura soba",
+    "en": "Spicy miso abura soba",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles; miso and chilli tare. Japanese miso commonly contains barley or wheat koji.",
+    "dish_key": "abura_soba_karamiso"
+   },
+   {
+    "ja": "濃厚煮干しつけ麺",
+    "romaji": "Noko niboshi tsukemen",
+    "en": "Rich dried-sardine tsukemen",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Wheat noodles, niboshi (dried sardine) broth.",
+    "dish_key": "tsukemen_niboshi"
+   },
+   {
+    "ja": "豆乳スープの冷やし麻辣担々麺",
+    "romaji": "Tonyu supu no hiyashi marara tantanmen",
+    "en": "Chilled mala dandan noodles in soy-milk soup",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Soy-milk based, but the noodles are wheat and dandan tare is soy-and-sesame based; the shop does not state it is meat-free.",
+    "dish_key": "tantanmen_hiyashi_marara"
+   },
+   {
+    "ja": "冷やし鯛だし塩つけ麺",
+    "romaji": "Hiyashi tai dashi shio tsukemen",
+    "en": "Chilled sea-bream stock salt tsukemen",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Wheat noodles.",
+    "dish_key": "tsukemen_hiyashi_tai_dashi"
+   },
+   {
+    "ja": "濃厚煮干し中華そば",
+    "romaji": "Noko niboshi chuka soba",
+    "en": "Rich dried-sardine chuka soba",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Wheat noodles, niboshi broth.",
+    "dish_key": "chukasoba_niboshi"
+   },
+   {
+    "ja": "黒鰹醤油つけそば",
+    "romaji": "Kuro katsuo shoyu tsukesoba",
+    "en": "Black bonito soy-sauce dipping soba",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. The shop names 醤油 outright — soy sauce, hence wheat — plus wheat noodles and bonito.",
+    "dish_key": "tsukesoba_kuro_katsuo_shoyu"
+   },
+   {
+    "ja": "メンマ盛り黒鰹醤油つけそば",
+    "romaji": "Menma mori kuro katsuo shoyu tsukesoba",
+    "en": "Black bonito soy dipping soba piled with menma",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Soy sauce and wheat noodles; menma is simmered in a seasoning liquid.",
+    "dish_key": "tsukesoba_kuro_katsuo_menma"
+   },
+   {
+    "ja": "肉盛り黒鰹醤油つけそば",
+    "romaji": "Niku mori kuro katsuo shoyu tsukesoba",
+    "en": "Black bonito soy dipping soba piled with pork",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Soy sauce and wheat noodles.",
+    "dish_key": "tsukesoba_kuro_katsuo_niku"
+   },
+   {
+    "ja": "ニボ割り飯",
+    "romaji": "Nibo wari meshi",
+    "en": "Rice to finish the niboshi broth (\"soup wari\" rice)",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Plain rice, but it is served INTO the leftover dipping broth, which carries the wheat from the noodles and the soy tare. This is the classic trap: the rice is not the problem, the broth it lands in is.",
+    "dish_key": "nibo_wari_meshi"
+   },
+   {
+    "ja": "金賞唐揚げ",
+    "romaji": "Kinsho kara-age",
+    "en": "Prize-winning fried chicken",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kara-age is dusted before frying and marinated in a soy-based seasoning; the shop states neither the dust nor the marinade, and the fryer is shared.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "肉ねぎ飯",
+    "romaji": "Niku negi meshi",
+    "en": "Rice with pork and spring onion",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The pork topping is the soy-simmered chashu used on the noodles.",
+    "dish_key": "niku_negi_meshi"
+   },
+   {
+    "ja": "ねぎ飯",
+    "romaji": "Negi meshi",
+    "en": "Rice with spring onion",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The simplest thing on the card. The shop does not state whether the negi is dressed with a soy or sesame-oil tare, and does not say the dish is meat-free — ask.",
+    "dish_key": "negi_meshi"
+   },
+   {
+    "ja": "玉子メンマ",
+    "romaji": "Tamago menma",
+    "en": "Seasoned egg with menma bamboo shoot",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Ajitama is marinated in soy sauce and menma is simmered in a seasoning liquid. Egg.",
+    "dish_key": "tamago_menma"
+   },
+   {
+    "ja": "つまみチャーシュー",
+    "romaji": "Tsumami chashu",
+    "en": "Chashu pork served as a snack plate",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Chashu is braised in soy sauce.",
+    "dish_key": "tsumami_chashu"
+   }
+  ]
+ },
+ "tokyo_udagawa_naru": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://asia-kitchen.co.jp/naru/"
+  ],
+  "price_note": "NEARLY AN EMPTY, AND THE ONE ITEM BELOW IS PROSE RATHER THAN A MENU. ウダガワ 成ル's official site is a single WordPress page carrying the address (渋谷区宇田川町6-20 パラシオン渋谷1F), the phone (03-3461-1166), hours 17:30–23:00, 定休日 不定休, a Google map and an Instagram embed that returns 投稿はありません — no posts. There is no menu page, no PDF, no price list and no 品書き anywhere on the site; the nav is HOME / GOOGLE MAP / OFFICIAL only. The single dish recorded below is named in the shop's own descriptive paragraph, not on a menu, and carries no price — it is included because it is genuinely first-party evidence of what the kitchen serves, and excluded from any price claim. The shop's sister venues (氣ウラ, 巖 渋谷, ミヤシタ成ル) are separate records and their pages were not used here. The dataset's menu_url points at Tabelog, which this egress cannot reach. ⚠ WHAT THE SITE DOES TELL A COELIAC: the shop describes itself as 鉄板焼き — teppanyaki — with 和食をベースにしたさまざまな一品料理 and a large regional sake list. A teppan is a single shared steel plate on which soy-based sauces are used all evening, which is about the least separable cooking surface there is. Treat the whole venue as ask-at-best and expect no allergen sheet.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "だし巻き玉子",
+    "romaji": "Dashimaki tamago",
+    "en": "Rolled dashi omelette (changes daily)",
+    "price": "",
+    "section": "鉄板焼き",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Named by the shop as its 日替わりの (daily-changing) teppanyaki item. Japanese dashimaki is seasoned with 白だし or めんつゆ, both soy-sauce products and therefore wheat, and the dashi itself is bonito — so this is both a gluten fact and a non-vegan one. Price not published.",
+    "dish_key": "dashimaki_tamago"
+   }
+  ]
  }
 }

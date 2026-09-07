@@ -808,5 +808,16 @@
     "dish_key": "dashimaki_tamago"
    }
   ]
+ },
+ "tokyo_sacya_shibuya_scramble_s": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.sacya.co.jp/sacya-shibuya-scsq/",
+   "https://www.sacya.co.jp/cafe/"
+  ],
+  "price_note": "SACYA'S SITE IS LIVE AND PUBLISHES NO MENU. Both the Shibuya Scramble Square shop page and the company's /cafe/ index were fetched and read in full: they give the address (B2F, Shibuya Scramble Square, 2-24-12 Shibuya) and postcode and nothing else about what is served — no drink list, no prices, no PDF, no allergen note. The /menu/ path was probed and 404s. The site's ONLINE STORE panel reads 「coming soon.」 and its store.sacya.jp link was not used, because a retail bean/leaf shop is not this café's counter menu and quoting it here would attach the wrong prices to the record. The company's other listed location, SACYA 代官山, is explicitly marked 「※現在リニューアルに向けて閉業中」 — closed for renovation — which is a useful signal that the site IS maintained, and therefore that the absence of a menu is a choice rather than neglect. The dataset's menu_url is Tabelog, unreachable from this egress. SACYA is recorded as a matcha specialty café; a matcha stand is a genuinely promising GF and vegan candidate (whisked tea is neither wheat nor dairy, and plant milks are common), so this record is worth finishing when a menu source appears — but nothing has been established here.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

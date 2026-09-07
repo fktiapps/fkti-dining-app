@@ -1172,5 +1172,15 @@
     "dish_key": "ice_cream_vanilla"
    }
   ]
+ },
+ "tokyo_shinshuya_shinjuku_minam": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://kumagaicorp.jp/brand/%E4%BF%A1%E5%B7%9E%E5%B1%8B/"
+  ],
+  "price_note": "BLOCKED AT THE HOST. The operator's brand page for 信州屋 (熊谷コーポレーション, kumagaicorp.jp) returns HTTP 403 Forbidden to curl with a full desktop User-Agent AND to WebFetch, which renders JavaScript and gets through several hosts that refuse curl. A 403 to both, with a 2.8KB body, is a deliberate refusal rather than an outage — so unlike かぐら屋's 503 this one will probably not clear on a retry from the same egress, and the record may need a different first-party URL (a branch-specific page or the shop's own domain if it has one) rather than another attempt at this path. Nothing was read and nothing is recorded. The dataset's menu_url is Tabelog, also unreachable. そば処 信州屋 新宿南口店 is recorded as そば; see the standing soba note — 打ち粉 wheat dusting, shared boiling water and soy-based tsuyu mean a soba counter is never a safe default.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

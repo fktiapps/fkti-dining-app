@@ -1917,5 +1917,26 @@
   "price_note": "EMPTY BECAUSE THE SITE SERVES NO CONTENT TO ANYTHING THAT IS NOT A BROWSER RUNNING JAVASCRIPT. tencupsjp.com returns 200 and about 200 kB of HTML, and the only human-readable string in the whole document is the og:title, 'TENCUPS HOME'. There is no server-rendered body, no navigation, no dish, no price and no address; the generator meta is 'export_website', i.e. a site exported from a visual builder that hydrates entirely on the client. It was tried twice — once with curl and a desktop user agent, once through a renderer — and neither produced a menu. ⚠ THE HTML DOES CONTAIN A FEW FRAGMENTS OF UNRELATED JAPANESE PROSE about a music-news媒体 (「最新の音楽ニュース」, 「ミュージシャンの音楽的ルーツ」, and what look like band names), which is either a stray embedded widget or a sign that the domain now carries something other than the café. THAT AMBIGUITY IS THE REASON THIS RECORD IS CONFIDENCE MEDIUM RATHER THAN HIGH: it is not certain that this URL still belongs to the shop, and it would be wrong to attribute anything found on it to TENCUPS. Recorded empty so the queue stops re-selecting it; the record needs a fresh URL rather than another fetch of this one.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_ra_men_hosenka": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.ramenings.com/hosenka",
+   "https://www.ramenings.com/"
+  ],
+  "price_note": "THE SHOP'S PAGE IS REAL AND COMPLETE — IT JUST HAS NO MENU ON IT. らぁ麺 鳳仙花 is one venue on the group site of (株)INGS, which also runs らぁ麺はやし田, 藤松, 黒須, みどり, すずらん and 時は麺なり; the /hosenka page carries the branch name (鳳仙花 新宿店), address, phone, hours, an exterior photograph and a paragraph of noodle philosophy, and stops there. The whole 770KB group site was searched for a price string and for any PDF asset: there are no prices anywhere on it and no menu PDF exists. Sibling-venue pages were NOT harvested and must not be — a menu from はやし田 or 黒須 is a different kitchen and would be a fabrication if attached here. ⚠ TWO FIRST-PARTY GLUTEN FACTS DID COME OFF THE PAGE, and they are worth keeping even without prices: the group describes its noodles as 多加水麺 — high-hydration wheat noodles — and describes 鳳仙花 specifically as built around 金目鯛, splendid alfonsino, 「気品ある風味、旨味を最大限に引き出す為に」. A high-hydration ramen noodle is wheat and kansui; the bowl is not a candidate for a coeliac regardless of how the tare turns out. Prices need Tabelog, which this egress cannot reach.",
+  "last_checked": "2026-09-07",
+  "items": []
+ },
+ "tokyo_due_italian_tokyu_plaza_": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.tokyu-plaza.com/shibuya/shop/detail/061100001?tenant_cd=061100001"
+  ],
+  "price_note": "THE ONLY URL THIS RECORD HAS IS A SHOPPING-CENTRE TENANT PAGE, AND IT CARRIES NO MENU. 東急プラザ渋谷's directory entry for 黄金の塩らぁ麺 ドゥエ イタリアン is a mall page: floor, opening hours, category and a link to the mall's own guides, with no dishes and no prices. The brand's own domain was tried as the obvious next step and due-italian.com does not resolve from this machine (curl exit 000), so there is no first-party site to fall back to. The dataset's menu_url is Tabelog, unreachable from this egress. ⚠ WHAT IS ALREADY KNOWABLE FROM THE SHOP'S NAME, and it is unusually informative: 黄金の塩らぁ麺 ドゥエ イタリアン is a shio ramen specialist with an Italian-fusion angle, recorded in this dataset under cuisine \"Italian-fusion ramen\". Ramen noodles are wheat and kansui, so the bowl is out for a coeliac whatever the tare; and an Italian-fusion ramen shop is precisely the kind of kitchen that adds cheese, porcini oil or truffle to a bowl, which matters to a vegan reading the name and assuming shio means plain. None of that is a dish claim — no dish was found.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

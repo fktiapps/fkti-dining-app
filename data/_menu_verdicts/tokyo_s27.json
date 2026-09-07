@@ -2393,5 +2393,16 @@
     "dish_key": "beer_sapporo_lager"
    }
   ]
+ },
+ "tokyo_torisoba_kaguraya_suido_": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://www.torisoba-kaguraya.com/shoplist/main-shop/",
+   "https://www.torisoba-kaguraya.com/"
+  ],
+  "price_note": "HOST IS DOWN, NOT BLOCKING. 鶏そば かぐら屋's site returns HTTP 503 Service Unavailable with a Retry-After: 3600 header, on both the shop-list page this dataset carries and the site root, to curl and to WebFetch alike. A 503 with an hour-long Retry-After is a server telling every client to come back later rather than a bot defence, so this record is worth re-attempting on a later tick — unlike the parked and dead domains in this batch, there is probably a real site behind it. Nothing was read, so nothing is recorded. The dataset's menu_url is Tabelog, unreachable from this egress. 鶏そば かぐら屋 is recorded as Ramen; chicken-broth ramen is still wheat-and-kansui noodles in a soy or shio tare.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

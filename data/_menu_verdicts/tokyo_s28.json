@@ -1486,5 +1486,16 @@
     "dish_key": "souvenir"
    }
   ]
+ },
+ "tokyo_sumibi_kushiyaki_hiyoku_": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://www.hiyokuno-tori.com/suidobashi/suidoubashi.html",
+   "https://www.hiyokuno-tori.com/suidobashi/suidobashi_menu.html"
+  ],
+  "price_note": "THE MENU EXISTS, IS BRANCH-SPECIFIC, AND IS UNREADABLE AS TEXT — THAT IS THE FINDING, AND IT IS A RECOVERABLE ONE. 炭火串焼ヒヨク之トリ publishes a real 水道橋店 menu page at /suidobashi/suidobashi_menu.html with three sections — FOOD MENU, DRINK MENU and WINE LIST — but every one of them is a flat JPEG. The page contains no prices, no item names and no PDF in its markup; there is nothing to quote. The five images are named for this branch and dated, so a future pass that can read pictures should go straight to them: _src/8114/202604_menu_suidobashi-1.jpg, _src/8108/202604_menu_suidobashi-2.jpg, _src/8112/202604_menu_suidobashi-3.jpg, _src/8116/202604_menu_suidobashi-4.jpg, and _src/4193/202104wine.jpg — all relative to https://www.hiyokuno-tori.com/. The 2026-04 date on four of the five says the card is current. This is recorded as an empty rather than a failure because the harvest is complete for a text tool; it is NOT an honest empty in the sense of \"the shop publishes nothing\", and it should be re-opened by an image-capable pass rather than left alone. ⚠ 焼鳥/串焼き IS A TARE KITCHEN. Yakitori is either 塩 or タレ, and the tare is a soy-sauce-and-mirin glaze that is brushed on at the grill and kept in a communal dipping pot — so even a salt-ordered skewer shares the charcoal and the tongs. Expect no allergen sheet.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

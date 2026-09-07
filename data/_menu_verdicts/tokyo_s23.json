@@ -482,5 +482,17 @@
   "price_note": "NO MENU IS PUBLISHED AND THE OPERATOR’S OWN PAGE IS STALE. 茶和々 浅草店 appears on 株式会社寺子屋’s corporate site as a bare shop-directory entry: name, phone (03-6231-6044), address (台東区浅草2-2-10), an empty shop-news slot, and 情報更新日：2020年4月20日 — an entry last touched in April 2020. There is no menu, no price, no product list for the shop. Telacoya is a souvenir-confectionery group (企画・製造・販売 across 直販, 特販, 通販 and its own sweets factory) and its 事業案内 page describes that structure without listing what any individual 茶和々 shop sells. Nothing about matcha sweets or warabi mochi at this address was read anywhere, so nothing is recorded.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_goo_italiano_shibuya_hon": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://gooitaliano.studio.site/",
+   "https://gooitaliano.studio.site/menu",
+   "https://storage.googleapis.com/studio-publish/projects/XKOk2MkVW4/7qG8NGLbaL/index.json"
+  ],
+  "price_note": "NO MENU COULD BE READ, AND THE REASON IS THE PLATFORM RATHER THAN THE SHOP. The site for goo ITALIANO 渋谷本店 is built on STUDIO (studio.site), a Nuxt single-page app that ships an empty HTML shell and paints the page from JavaScript. curl and WebFetch both return only the site title and a STUDIO banner. This tick went further than a fetch: STUDIO publishes each site's content as a snapshot JSON in Google Cloud Storage, and the app's own __NUXT_DATA__ payload names the exact path. That snapshot was retrieved and parsed — and its \"components\" key is an empty object, so the text simply is not in the published payload this egress can reach. Menu subpaths (/menu, /food, /drink) were probed as well and either 404 or return the same shell. This is a COMPLETE result for a text-only harvest: the shop may well display a full menu to a real browser, but nothing was found that could be quoted, and nothing has been guessed. A future pass with a headless browser that executes JavaScript is the way to finish this record; a re-fetch will not be. ONE THING THE SNAPSHOT DID YIELD, and it is a gluten fact rather than a menu: the site's own meta description states 「特にgoo ITALIANOのパスタ料理はオススメで、パスタは南イタリアグラニャーノの伝統製法麺で長時間低温でじっくり乾燥させることで、モチっとした食感と小麦の香りが楽しめます」 — the house speciality is Gragnano dried pasta, and the shop itself advertises 小麦の香り, the aroma of the wheat. The kitchen's signature is durum wheat pasta. The snapshot also lists the site's page structure, which includes separate shibuya and yoyogiuehara modals, so a future visual pass must take the SHIBUYA one — this record is the 渋谷本店, not the Yoyogi-Uehara branch.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }

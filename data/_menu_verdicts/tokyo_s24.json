@@ -1231,5 +1231,15 @@
     "dish_key": "ramen"
    }
   ]
+ },
+ "tokyo_raishu_ken": {
+  "verified": "provisional",
+  "confidence": "high",
+  "sources": [
+   "https://www.raisyuken.com/"
+  ],
+  "price_note": "THE WEBSITE THIS DATASET CARRIES IS NO LONGER THE SHOP'S — IT IS A PARKED DOMAIN, AND THAT IS THE FINDING. https://www.raisyuken.com/ returns a 4.8KB page whose entire body is the word \"Redirecting...\" plus an obfuscated script that POSTs to router.parklogic.com, a domain-monetisation service. Decoding the script's own base64 configuration confirms it: it declares domainFull \"www.raisyuken.com\" under tenant \"seth\", i.e. the domain has been picked up by a parking operator. There is no restaurant content at this address at all — no menu, no address block, no hours, no navigation. Re-fetching will not help; the record needs a NEW first-party URL before it can be researched, and until it has one it is not reachable work. The dataset's menu_url points at Tabelog, which this egress cannot reach (Cloudflare challenge since 2026-09-02). 来集軒 is recorded here as a 醤油ラーメン shop in Asakusa — soy-sauce ramen is wheat noodles in a soy tare, so the whole proposition is gluten, but no dish or price has been established.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }
