@@ -2260,5 +2260,138 @@
     "dish_key": "butadon"
    }
   ]
+ },
+ "tokyo_izumo_asakusa_yokocho": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://asakusayokocho.com/shops06",
+   "https://asakusayokocho.com/"
+  ],
+  "price_note": "Asakusa Yokocho's own shop page for stall 06 publishes a full priced 主なフードメニュー and 主なドリンクメニュー, all marked 税込, so these are the real counter prices. NOTE ON IDENTITY: this dataset carries the shop under a long compound name (うなぎの蒲の穂焼 牛タン 焼鳥 馬刺し いづも); the venue's own page calls stall 06 「鰻串 いづも」 and lists only the eel-skewer range. The 牛タン/焼鳥/馬刺し in our name belong to OTHER stalls in the same yokocho — Asakusa Yokocho is a shared food alley of eight stalls under one roof, and shops01–shops08 are separate kitchens. Do not attribute a beef-tongue or horse-sashimi dish to this record. ⚠ THE GLUTEN FACT THAT GOVERNS THIS WHOLE MENU IS 蒲焼 TARE. 蒲の穂焼き is a kabayaki preparation: the eel is repeatedly basted with a soy-sauce-and-mirin tare over charcoal, and Japanese soy sauce is a wheat product. The tare pot is shared and the grill bars are shared, so even a skewer ordered plain passes over the same charcoal as basted ones. That is why nothing here is recorded as gf. The shop publishes no allergen sheet.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "鰻の蒲の穂焼き",
+    "romaji": "Unagi no kaba no hoyaki",
+    "en": "Charcoal-grilled eel, kabayaki style",
+    "price": "605yen",
+    "section": "鰻串",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kabayaki tare is soy-sauce based, so wheat. The shop's signature and the reason for its name.",
+    "dish_key": "unagi_kabayaki_skewer"
+   },
+   {
+    "ja": "うな串3種盛り合わせ",
+    "romaji": "Unagushi sanshu moriawase",
+    "en": "Assortment of three eel skewers",
+    "price": "1199yen",
+    "section": "鰻串",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ An assortment built from the tare-basted range above.",
+    "dish_key": "unagi_skewer_trio"
+   },
+   {
+    "ja": "短冊",
+    "romaji": "Tanzaku",
+    "en": "Eel fillet skewer (\"tanzaku\" cut)",
+    "price": "429yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The page does not say whether this cut is tare-basted or salted. Shared charcoal grill with kabayaki either way — ask.",
+    "dish_key": "unagi_tanzaku"
+   },
+   {
+    "ja": "白短冊",
+    "romaji": "Shiro-tanzaku",
+    "en": "Eel fillet skewer, plain/salt (\"white\")",
+    "price": "429yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "白 normally marks the shioyaki version, i.e. no tare — but the shop does not say so, and the grill is shared. Ask before assuming.",
+    "dish_key": "unagi_shiro_tanzaku"
+   },
+   {
+    "ja": "くりから",
+    "romaji": "Kurikara",
+    "en": "Kurikara — eel belly spiralled on a skewer",
+    "price": "429yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Preparation not stated on the page. Shared grill.",
+    "dish_key": "unagi_kurikara"
+   },
+   {
+    "ja": "肝",
+    "romaji": "Kimo",
+    "en": "Grilled eel liver skewer",
+    "price": "385yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Preparation not stated. Eel liver is commonly salted rather than tare-basted, but the shop does not confirm it.",
+    "dish_key": "unagi_kimo"
+   },
+   {
+    "ja": "鰻バター",
+    "romaji": "Unagi bata",
+    "en": "Eel with butter",
+    "price": "495yen",
+    "section": "鰻串",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Contains dairy. Sauce base undeclared.",
+    "dish_key": "unagi_butter"
+   },
+   {
+    "ja": "う巻き串",
+    "romaji": "Umaki kushi",
+    "en": "Umaki — rolled omelette with eel, on a skewer",
+    "price": "495yen",
+    "section": "うつまみ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Umaki is a dashimaki omelette. Japanese 出汁巻き is seasoned with 白だし/めんつゆ, which are soy-sauce products and therefore wheat. Egg as well.",
+    "dish_key": "umaki"
+   },
+   {
+    "ja": "やみつき骨せんべい",
+    "romaji": "Yamitsuki hone senbei",
+    "en": "Crisp-fried eel bones",
+    "price": "429yen",
+    "section": "うつまみ",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Deep-fried. The shop does not say whether the dusting is wheat flour or potato starch, and the fryer is shared with other fried items.",
+    "dish_key": "unagi_bone_senbei"
+   },
+   {
+    "ja": "鰻のためのハイボール",
+    "romaji": "Unagi no tame no haiboru",
+    "en": "Highball \"made for eel\"",
+    "price": "549yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Whisky and soda. Distilled spirit, but the shop names no brand and does not describe the mix, so it is not cleared here.",
+    "dish_key": "highball"
+   },
+   {
+    "ja": "サッポロラガービール赤星 大瓶",
+    "romaji": "Sapporo raga biru Akaboshi obin",
+    "en": "Sapporo Lager \"Red Star\", large bottle",
+    "price": "835yen",
+    "section": "ドリンク",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Barley malt beer. Note 麦 (barley) is NOT on Japan's statutory allergen list, so it will not appear on any Japanese allergen sheet — it is still gluten.",
+    "dish_key": "beer_sapporo_lager"
+   }
+  ]
  }
 }

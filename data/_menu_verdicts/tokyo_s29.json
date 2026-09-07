@@ -786,5 +786,391 @@
   "price_note": "EMPTY, AND THE PDF WAS DOWNLOADED AND CHECKED RATHER THAN ASSUMED. The operator (ADemotion / cardenas.co.jp) gives the shop a brand page with a MENU/PLAN block whose 'REGULAR MENU' link points at 202607_B1_BLF_1ol.pdf. That file is 1.9 MB, it downloads fine, and pdftotext extracts ONE BYTE from it — it is a flattened image scan with no text layer at all. That is a finding, not a failure: the menu exists, it is published, and it is not machine-readable. The brand page's own prose is all that can be quoted: a salad-and-deli shop built on チョップドサラダ (chopped salads) with デリプレート that include a substantial amount of meat, positioned as an all-day option, and two footnotes worth carrying — 「内容は変更されている場合があります」 and 「お米は国産ブレンド米を使用しています」, the rice is a domestic blend. 〒160-0023 東京都新宿区西新宿1-1-5 ルミネ新宿1 B2F, tel 03-6304-5774, 11:00–21:00 (L.O. 20:30). ⚠ WORTH A SECOND LOOK WITH OCR, BECAUSE THIS IS EXACTLY THE KIND OF SHOP THAT COULD SERVE BOTH DIETS AND MIGHT SERVE NEITHER: a build-your-own chopped salad counter is one of the few formats in Shinjuku where a vegan can actually assemble a meal, and the whole question turns on the DRESSINGS and on whether the deli plates share tongs with the salad bar — neither of which the readable part of the site addresses. Recorded empty so the queue stops re-selecting it.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_rec_coffee_suidobashi": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://rec-coffee.com/en/pages/coffee-shop-suidobashi",
+   "https://cdn.shopify.com/s/files/1/0297/5193/5024/files/0cf7de0e8a7c46fe4794b74770f959a5.pdf"
+  ],
+  "price_note": "Prices are read from REC COFFEE's own menu PDF, reached via the \"View Menu\" button on the Suidobashi shop page itself — so it is this branch's card, not a generic chain page. The shop page also gives the address 3-10-1 Kanda Misakicho, Chiyoda-ku, hours Mon–Fri 7:30–20:00 and weekends/holidays 9:00–19:00, a morning menu served until 10:00, 30 seats, and guide dogs only. HOW THESE PRICES WERE READ, BECAUSE IT MATTERS: the PDF is a four-column single page, and a flat text extraction mis-paired several drinks with the wrong prices (it put ESPRESSO BANANA SHAKE at 800/950, which is actually COFFEE FLOAT). The values below come from a column-preserving extraction that is internally consistent across all four columns. Where a drink has two prices they are Regular / Large. The PDF's Japanese text is in Adobe-Japan1 CID fonts that did not extract, so the ja field below carries the katakana/Japanese name only where it is unambiguous from the English; nothing was invented. ⚠ WHAT A COELIAC NEEDS TO KNOW HERE: this is a specialty coffee bar, so the drinks side is mostly low-risk by form — but REC publishes NO allergen statement at all, and the food side is entirely bread (sandwich, hot dog, three toasts). A toaster and a counter shared with bread is the cross-contamination surface, and it is the reason the plain drinks below are recorded as ask rather than gf despite being coffee and juice. There IS a genuinely useful fact for a vegan traveller: the customise row prints OATS MILK as a paid option (+120 Regular / +160 Large), so every milk drink here can be made dairy-free on request. DECAF is +100.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "レックスペシャルティ #04",
+    "romaji": "REC's Specialty #04",
+    "en": "REC's Specialty coffee #04, hot or iced",
+    "price": "800yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Black coffee. No allergen statement from the shop, and the counter also handles toast.",
+    "dish_key": "coffee_rec_specialty_04"
+   },
+   {
+    "ja": "プアオーバーコーヒー",
+    "romaji": "Pour over coffee",
+    "en": "Pour over coffee, hot or iced (Regular / Large)",
+    "price": "650yen / 750yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "The card notes you choose your beans from the board at the register.",
+    "dish_key": "coffee_pour_over"
+   },
+   {
+    "ja": "コールドブリューコーヒー",
+    "romaji": "Cold brew coffee",
+    "en": "Cold brew coffee, iced (Regular / Large)",
+    "price": "650yen / 750yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "coffee_cold_brew"
+   },
+   {
+    "ja": "本日のコーヒー",
+    "romaji": "Today's coffee",
+    "en": "Today's coffee, hot or iced (Regular / Large)",
+    "price": "630yen / 730yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "coffee_todays"
+   },
+   {
+    "ja": "レックコーヒーラテ",
+    "romaji": "REC coffee latte",
+    "en": "REC coffee latte, hot or iced (Regular / Large)",
+    "price": "700yen / 850yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Can be made with oat milk for +120 Regular / +160 Large per the customise row.",
+    "dish_key": "latte_rec"
+   },
+   {
+    "ja": "カプチーノ",
+    "romaji": "Cappuccino",
+    "en": "Cappuccino, hot (Regular)",
+    "price": "680yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Marked \"For here only\". Dairy; oat milk is a paid option.",
+    "dish_key": "cappuccino"
+   },
+   {
+    "ja": "アメリカーノ",
+    "romaji": "Americano",
+    "en": "Americano, hot or iced (Regular / Large)",
+    "price": "650yen / 750yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "americano"
+   },
+   {
+    "ja": "エスプレッソ",
+    "romaji": "Espresso",
+    "en": "Espresso, single or double",
+    "price": "550yen / 650yen",
+    "section": "BREWED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Marked \"For here only\". The card notes you choose one of two beans.",
+    "dish_key": "espresso"
+   },
+   {
+    "ja": "ヘーゼルナッツラテ",
+    "romaji": "Hazelnut latte",
+    "en": "Hazelnut latte, hot or iced (Regular / Large)",
+    "price": "750yen / 900yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Flavoured syrup of undeclared composition, plus dairy. Also a tree-nut flavour — relevant if nut allergy is in play.",
+    "dish_key": "latte_hazelnut"
+   },
+   {
+    "ja": "ハニーラテ",
+    "romaji": "Honey latte",
+    "en": "Honey latte, hot or iced (Regular / Large)",
+    "price": "750yen / 900yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Honey and dairy — not vegan even with oat milk.",
+    "dish_key": "latte_honey"
+   },
+   {
+    "ja": "ブラウンシュガーラテ",
+    "romaji": "Brown sugar latte",
+    "en": "Brown sugar latte, hot or iced (Regular / Large)",
+    "price": "750yen / 900yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy; oat milk is a paid option, which would make this one vegan-capable.",
+    "dish_key": "latte_brown_sugar"
+   },
+   {
+    "ja": "チョコレートラテ",
+    "romaji": "Chocolate latte",
+    "en": "Chocolate latte, hot or iced (Regular / Large)",
+    "price": "820yen / 970yen",
+    "section": "ARRANGED LATTE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Chocolate sauce of undeclared composition, plus dairy.",
+    "dish_key": "latte_chocolate"
+   },
+   {
+    "ja": "薬院レモリカーノ",
+    "romaji": "Yakuin lemoricano",
+    "en": "Yakuin Lemoricano (lemon americano), iced (Regular / Large)",
+    "price": "780yen / 930yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Named for REC COFFEE's home district of Yakuin in Fukuoka.",
+    "dish_key": "lemoricano"
+   },
+   {
+    "ja": "コーヒーフロート",
+    "romaji": "Coffee float",
+    "en": "Coffee float, iced (Regular / Large)",
+    "price": "800yen / 950yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Contains ice cream — dairy.",
+    "dish_key": "coffee_float"
+   },
+   {
+    "ja": "エスプレッソバナナシェイク",
+    "romaji": "Espresso banana shake",
+    "en": "Espresso banana shake, iced (Regular / Large)",
+    "price": "930yen / 1180yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "shake_espresso_banana"
+   },
+   {
+    "ja": "エスプレッソシェイク",
+    "romaji": "Espresso shake",
+    "en": "Espresso shake, iced (Regular / Large)",
+    "price": "890yen / 1140yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "shake_espresso"
+   },
+   {
+    "ja": "タイガー",
+    "romaji": "Tiger",
+    "en": "Tiger, iced (Regular / Large)",
+    "price": "800yen / 1050yen",
+    "section": "ARRANGED COFFEE",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Composition not described on the card beyond the name.",
+    "dish_key": "tiger"
+   },
+   {
+    "ja": "ホットチョコレート",
+    "romaji": "Hot chocolate",
+    "en": "Hot chocolate, hot (Regular)",
+    "price": "670yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Chocolate of undeclared composition; dairy. The Large column is printed as a dash, i.e. not offered.",
+    "dish_key": "hot_chocolate"
+   },
+   {
+    "ja": "ミルク",
+    "romaji": "Milk",
+    "en": "Milk, hot or iced (Regular / Large)",
+    "price": "620yen / 720yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "milk"
+   },
+   {
+    "ja": "紀州オレンジジュース",
+    "romaji": "Kishu orange juice",
+    "en": "Kishu orange juice, iced (Regular / Large)",
+    "price": "700yen / 850yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Juice. Low risk by form, but no allergen statement exists and the counter handles bread.",
+    "dish_key": "juice_kishu_orange"
+   },
+   {
+    "ja": "パッションフルーツジュース",
+    "romaji": "Passion fruit juice",
+    "en": "Passion fruit juice, iced (Regular / Large)",
+    "price": "650yen / 800yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "juice_passion_fruit"
+   },
+   {
+    "ja": "レモンスカッシュ",
+    "romaji": "Lemon squash",
+    "en": "Lemon squash, iced (Regular / Large)",
+    "price": "650yen / 800yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "lemon_squash"
+   },
+   {
+    "ja": "チャイティー",
+    "romaji": "Chai tea",
+    "en": "Chai tea, hot or iced (Regular / Large)",
+    "price": "700yen / 850yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chai is normally milk-based; the card does not say whether it can be made without.",
+    "dish_key": "chai_tea"
+   },
+   {
+    "ja": "紅茶",
+    "romaji": "Kocha",
+    "en": "Black tea, hot or iced (Regular / Large)",
+    "price": "670yen / 820yen",
+    "section": "OTHERS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "black_tea"
+   },
+   {
+    "ja": "ベビチーノ",
+    "romaji": "Babyccino",
+    "en": "Babyccino, hot or iced",
+    "price": "350yen",
+    "section": "KIDS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Kids' menu. Steamed milk — dairy.",
+    "dish_key": "babyccino"
+   },
+   {
+    "ja": "紀州オレンジジュース（キッズ）",
+    "romaji": "Kishu orange juice (kids)",
+    "en": "Kishu orange juice, iced — kids size",
+    "price": "410yen",
+    "section": "KIDS",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "juice_kishu_orange_kids"
+   },
+   {
+    "ja": "ハートランドビール 330ml",
+    "romaji": "Heartland biru 330ml",
+    "en": "Heartland beer, 330ml bottle",
+    "price": "780yen",
+    "section": "ALCOHOL",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ Barley malt beer — gluten. Note the PDF explicitly says \"We do not provide information on calories or allergies of alcoholic beverages.\" Vegan status of the beer is not stated.",
+    "dish_key": "beer_heartland"
+   },
+   {
+    "ja": "ツナ＆アボカドサンドイッチ",
+    "romaji": "Tsuna ando abokado sandoicchi",
+    "en": "Tuna and avocado sandwich",
+    "price": "780yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread.",
+    "dish_key": "sandwich_tuna_avocado"
+   },
+   {
+    "ja": "プレーンドッグ（オニオンマスタード）",
+    "romaji": "Purein doggu (onion masutado)",
+    "en": "Plain hot dog with onion and mustard",
+    "price": "760yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bun.",
+    "dish_key": "hot_dog_plain"
+   },
+   {
+    "ja": "ダブルチーズトースト",
+    "romaji": "Daburu chizu tosuto",
+    "en": "Double cheese toast",
+    "price": "530yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread and dairy.",
+    "dish_key": "toast_double_cheese"
+   },
+   {
+    "ja": "バタートースト",
+    "romaji": "Bata tosuto",
+    "en": "Butter toast",
+    "price": "450yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread and dairy.",
+    "dish_key": "toast_butter"
+   },
+   {
+    "ja": "ハニーバタートースト",
+    "romaji": "Hani bata tosuto",
+    "en": "Honey butter toast",
+    "price": "530yen",
+    "section": "FOOD & SWEETS",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat bread, dairy and honey.",
+    "dish_key": "toast_honey_butter"
+   },
+   {
+    "ja": "コーヒーソフトクリーム",
+    "romaji": "Kohi sofuto kurimu",
+    "en": "Coffee soft-serve ice cream",
+    "price": "630yen",
+    "section": "FOOD & SWEETS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Soft-serve machines are a known shared surface; no allergen statement.",
+    "dish_key": "soft_cream_coffee"
+   },
+   {
+    "ja": "バニラアイスクリーム",
+    "romaji": "Banira aisu kurimu",
+    "en": "Vanilla ice cream",
+    "price": "600yen",
+    "section": "FOOD & SWEETS",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy.",
+    "dish_key": "ice_cream_vanilla"
+   }
+  ]
  }
 }

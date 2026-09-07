@@ -1919,5 +1919,253 @@
   "price_note": "EMPTY BECAUSE THE MENU IS A PICTURE. ムルギー's official site has a MENU page, the page loads, and its entire content is two image files — menu-omote.png and menu-ura.png, the front and back of the printed card — plus a third image murgi-menu_2206272-1.png. The only machine-readable text on the whole page is one line: 「※2026年4月改定メニュー」, the menu was revised in April 2026. There is no HTML dish list, no price, no PDF with a text layer and no alt text on any of the images. Nothing can be transcribed without OCR, and nothing has been guessed. ⚠ THIS IS THE MOST FAMOUS OLD-SCHOOL CURRY SHOP IN DOGENZAKA AND IT IS WORTH COMING BACK TO WITH OCR — the shop is a 1951-founded Shibuya institution whose signature is the mound-shaped ムルギーライス. Recorded empty so the queue stops re-selecting it, not because the menu is unobtainable in principle. ⚠ ONE THING WORTH FLAGGING FOR WHOEVER DOES READ THE IMAGE: Japanese-style Indian curry of this vintage is a WHEAT-ROUX curry almost without exception, so the expected answer for every dish on that card is 'no', and the interesting question is whether the shop has anything else at all.",
   "last_checked": "2026-09-06",
   "items": []
+ },
+ "tokyo_iroriann_kiraku_soba_sui": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://foods.jr-cross.co.jp/kiraku/",
+   "https://foods.jr-cross.co.jp/kiraku/menu/category/hot.html",
+   "https://foods.jr-cross.co.jp/kiraku/menu/category/cold.html",
+   "https://foods.jr-cross.co.jp/kiraku/menu/category/set_menu.html",
+   "https://foods.jr-cross.co.jp/topics/archives/post_6.html",
+   "https://foods.jr-cross.co.jp/corporate/lib/img/mt_upload/Kiraku_allergen_20260801.pdf",
+   "https://shop.jr-cross.co.jp/eki/spot/detail?code=f13778"
+  ],
+  "price_note": "Prices come from いろり庵きらく's own brand menu pages (operator: JR東日本クロスステーション フーズカンパニー), all stated 税込. TWO CAVEATS THE OPERATOR ITSELF PRINTS: 「※店舗により価格が異なります」 — prices differ by branch — and 「※一部店舗では販売していない商品もございます」 — some branches do not carry every item. This record is the Suidobashi branch of a large JR-station chain, and the branch page (shop.jr-cross.co.jp code f13778) publishes no prices of its own, so treat these as the chain card rather than a Suidobashi guarantee. ⚠ THIS IS A STANDING-SOBA COUNTER AND NOTHING ON IT IS SAFE FOR A COELIAC — but this record is unusually well evidenced, because the operator publishes a real allergen PDF (Kiraku_allergen_20260801.pdf, dated 2026-08-01, 11 pages, linked from its News post as アレルギー情報). That PDF states in its own words: \"Our restaurant uses the same equipment and utensils for cooking raw materials that contain allergens other than marked by circle. So allergen contamination has occurred unintentionally.\" and, decisively, \"Soba and udon are boiled in the same pot.\" A shared soba/udon pot means the boiling water carries dissolved wheat from the udon and from the 打ち粉 dusting on the soba, so even a nominally high-buckwheat noodle is contaminated in the pot. The PDF also disclaims: \"We do not offer allergy-related services, such as changing or removing ingredients\" and \"Allergic reactions differ to each individuals, so this list does not guarantee that allergic reactions will not occur.\" HONEST LIMIT OF THIS RECORD: the PDF's per-item circle matrix did NOT extract — the item names are in Adobe-Japan1 CID fonts and the circle marks are glyphs this toolchain cannot read, so only the calorie column and the prose came through. NO per-item allergen mark below is taken from that table; every gf flag here is reasoned from the dish form plus the shared-pot statement, not read off the matrix. Someone who can open the PDF visually should re-verify. Separately, kake-tsuyu at a station soba counter is めんつゆ — soy sauce, hence wheat — and it is poured over every hot bowl.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "【朝限定10時まで】朝食そば",
+    "romaji": "Choshoku soba (asa gentei, 10-ji made)",
+    "en": "Breakfast soba (mornings only, until 10:00)",
+    "price": "480yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Soba boiled in the same pot as udon (operator’s own allergen PDF). Tsuyu is mentsuyu, i.e. soy sauce, hence wheat.",
+    "dish_key": "soba_breakfast"
+   },
+   {
+    "ja": "かき揚げそば",
+    "romaji": "Kakiage soba",
+    "en": "Soba with mixed vegetable tempura fritter",
+    "price": "600yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kakiage is a wheat-flour tempura batter, on top of the shared pot and the soy-based tsuyu.",
+    "dish_key": "soba_kakiage"
+   },
+   {
+    "ja": "かき揚げ天玉そば",
+    "romaji": "Kakiage tamago soba",
+    "en": "Soba with kakiage tempura and egg",
+    "price": "700yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat batter, plus egg.",
+    "dish_key": "soba_kakiage_tamago"
+   },
+   {
+    "ja": "ちくわ天そば",
+    "romaji": "Chikuwa ten soba",
+    "en": "Soba with battered fried chikuwa fishcake",
+    "price": "610yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tempura batter is wheat; chikuwa itself is a surimi product that commonly carries wheat binder.",
+    "dish_key": "soba_chikuwa_ten"
+   },
+   {
+    "ja": "きつねそば",
+    "romaji": "Kitsune soba",
+    "en": "Soba with sweet simmered fried tofu",
+    "price": "590yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The abura-age is simmered in a soy-and-dashi liquid: wheat from the soy sauce, fish from the dashi. Not vegan despite being meat-free.",
+    "dish_key": "soba_kitsune"
+   },
+   {
+    "ja": "たぬきそば",
+    "romaji": "Tanuki soba",
+    "en": "Soba with tenkasu (tempura crumb)",
+    "price": "530yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tenkasu is fried tempura batter — pure wheat.",
+    "dish_key": "soba_tanuki"
+   },
+   {
+    "ja": "コロッケそば",
+    "romaji": "Korokke soba",
+    "en": "Soba topped with a potato croquette",
+    "price": "590yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Croquette is panko-crumbed and flour-dusted.",
+    "dish_key": "soba_korokke"
+   },
+   {
+    "ja": "わかめそば",
+    "romaji": "Wakame soba",
+    "en": "Soba with wakame seaweed",
+    "price": "540yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The plainest hot bowl on the card, and still not safe: shared boiling pot plus soy-based tsuyu. Not vegan — the tsuyu is bonito dashi.",
+    "dish_key": "soba_wakame"
+   },
+   {
+    "ja": "かけそば",
+    "romaji": "Kake soba",
+    "en": "Plain soba in hot broth",
+    "price": "450yen",
+    "section": "温かいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Shared pot, mentsuyu broth. Bonito dashi, so not vegan either.",
+    "dish_key": "soba_kake"
+   },
+   {
+    "ja": "冷したぬきそば",
+    "romaji": "Hiyashi tanuki soba",
+    "en": "Chilled soba with tempura crumb",
+    "price": "530yen",
+    "section": "冷たいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tenkasu is wheat; noodles still come from the shared pot.",
+    "dish_key": "soba_hiyashi_tanuki"
+   },
+   {
+    "ja": "冷しかき揚げそば",
+    "romaji": "Hiyashi kakiage soba",
+    "en": "Chilled soba with kakiage tempura",
+    "price": "600yen",
+    "section": "冷たいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat tempura batter.",
+    "dish_key": "soba_hiyashi_kakiage"
+   },
+   {
+    "ja": "ざるそば",
+    "romaji": "Zaru soba",
+    "en": "Cold soba on a bamboo tray with dipping sauce",
+    "price": "500yen",
+    "section": "冷たいメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The dish people most often assume is safe. It is not: the noodles are boiled in the udon pot, and the tsukejiru is soy-sauce based.",
+    "dish_key": "soba_zaru"
+   },
+   {
+    "ja": "【朝限定10時まで】納豆朝定食",
+    "romaji": "Natto asa teishoku (asa gentei, 10-ji made)",
+    "en": "Natto breakfast set (mornings only, until 10:00)",
+    "price": "550yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Natto’s sauce sachet is soy sauce based. Served with soba.",
+    "dish_key": "set_natto_breakfast"
+   },
+   {
+    "ja": "【朝限定10時まで】朝定食",
+    "romaji": "Asa teishoku (asa gentei, 10-ji made)",
+    "en": "Breakfast set (mornings only, until 10:00)",
+    "price": "430yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Contents not itemised by the operator; the soba component alone rules it out.",
+    "dish_key": "set_breakfast"
+   },
+   {
+    "ja": "【朝限定10時まで】ミニ明太子丼セット",
+    "romaji": "Mini mentaiko don setto (asa gentei)",
+    "en": "Mini spicy-cod-roe rice bowl set (mornings only)",
+    "price": "530yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Mentaiko is cured in a seasoning liquid that normally contains soy sauce and mirin.",
+    "dish_key": "set_mini_mentaiko_don"
+   },
+   {
+    "ja": "カツ丼（スープ付）",
+    "romaji": "Katsudon (supu tsuki)",
+    "en": "Pork cutlet and egg rice bowl, with soup",
+    "price": "700yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Katsu is flour-dusted and panko-crumbed, then simmered in a soy-and-dashi broth.",
+    "dish_key": "katsudon"
+   },
+   {
+    "ja": "カレーライス",
+    "romaji": "Kare raisu",
+    "en": "Japanese curry rice",
+    "price": "550yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Japanese curry is built on a wheat-flour roux. A flat no.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "いなり2個",
+    "romaji": "Inari niko",
+    "en": "Inari sushi, two pieces",
+    "price": "170yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The fried tofu pouch is simmered in soy sauce and dashi — wheat and fish. Looks vegetarian, is neither GF nor vegan.",
+    "dish_key": "inari_2pc"
+   },
+   {
+    "ja": "ミニカツ丼セット",
+    "romaji": "Mini katsudon setto",
+    "en": "Mini pork cutlet bowl with soba set",
+    "price": "860yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Panko cutlet plus soba.",
+    "dish_key": "set_mini_katsudon"
+   },
+   {
+    "ja": "ミニカレー丼セット",
+    "romaji": "Mini kare don setto",
+    "en": "Mini curry bowl with soba set",
+    "price": "750yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Roux-based curry plus soba.",
+    "dish_key": "set_mini_curry_don"
+   },
+   {
+    "ja": "ミニかき揚げ丼セット",
+    "romaji": "Mini kakiage don setto",
+    "en": "Mini kakiage tempura bowl with soba set",
+    "price": "820yen",
+    "section": "セットメニュー・その他",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Tempura batter plus soba.",
+    "dish_key": "set_mini_kakiage_don"
+   }
+  ]
  }
 }

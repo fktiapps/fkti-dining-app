@@ -499,5 +499,314 @@
     "dish_key": "orange_juice"
    }
   ]
+ },
+ "tokyo_mita_seimenjo_suidobashi": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://mita-seimen.com/menu",
+   "https://mita-seimen.com/"
+  ],
+  "price_note": "PARTIAL FOR ONE SPECIFIC REASON: 三田製麺所's official menu page names and describes every item on the card but prints NO PRICES ANYWHERE — not on the category page and not on the top page. The item list below is therefore complete and first-party, and the price field is deliberately empty on every row rather than filled from a third party. The dataset's own menu_url for this record points at Tabelog, which this egress cannot reach (Cloudflare challenge since 2026-09-02), so no price cross-check was possible. Anyone with Tabelog access can fill the prices in without re-doing the item work. Note also that mita-seimen.com/en/2018/07/13/shop_29_suidoubashi/ — the URL this dataset carries as the shop's website — now 404s; the chain has restructured its site and the branch page no longer exists at that path, so the record is keyed to the chain menu. ⚠ THIS IS A TSUKEMEN SPECIALIST AND IT IS A FLAT NO FOR A COELIAC. The shop's name literally means \"Mita noodle factory\"; the whole proposition is thick wheat 極太麺. Beyond the noodles, the tsukejiru is a 豚骨魚介 pork-and-fish broth built on soy tare, and the 油そば range is described by the shop as 濃厚な醤油ダレ — soy sauce, hence wheat. The one item below that is not noodle-based, 金賞唐揚げ, is kara-age, which is flour- or starch-dusted and fried; the shop does not say which, and the fryer is shared.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "つけ麺",
+    "romaji": "Tsukemen",
+    "en": "Tsukemen — thick noodles with a separate dipping broth",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Thick wheat noodles in a pork-and-fish broth. The shop describes it as 濃厚な豚骨魚介スープと極太麺.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "特濃つけ麺",
+    "romaji": "Tokuno tsukemen",
+    "en": "Extra-rich tsukemen",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles, pork-and-fish broth.",
+    "dish_key": "tsukemen_tokuno"
+   },
+   {
+    "ja": "旨辛つけ麺",
+    "romaji": "Umakara tsukemen",
+    "en": "Spicy tsukemen with house chilli oil",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles; the shop names 自家製ラー油 over the same broth.",
+    "dish_key": "tsukemen_umakara"
+   },
+   {
+    "ja": "旨辛特濃つけ麺",
+    "romaji": "Umakara tokuno tsukemen",
+    "en": "Spicy extra-rich tsukemen",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles.",
+    "dish_key": "tsukemen_umakara_tokuno"
+   },
+   {
+    "ja": "全部のせつけ麺",
+    "romaji": "Zenbu nose tsukemen",
+    "en": "Tsukemen with all toppings (menma, chashu, nori, seasoned egg)",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles. The shop lists the toppings as メンマ・チャーシュー・のり・味玉 — chashu and ajitama are both simmered in soy sauce.",
+    "dish_key": "tsukemen_zenbu_nose"
+   },
+   {
+    "ja": "全部のせ特濃つけ麺",
+    "romaji": "Zenbu nose tokuno tsukemen",
+    "en": "Extra-rich tsukemen with all toppings",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles and soy-simmered toppings.",
+    "dish_key": "tsukemen_zenbu_nose_tokuno"
+   },
+   {
+    "ja": "豚骨魚介中華そば",
+    "romaji": "Tonkotsu gyokai chuka soba",
+    "en": "Pork-bone and seafood chuka soba (ramen)",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat ramen noodles; kansui noodle plus soy tare.",
+    "dish_key": "chukasoba_tonkotsu_gyokai"
+   },
+   {
+    "ja": "澄まし塩中華そば",
+    "romaji": "Sumashi shio chuka soba",
+    "en": "Clear salt-based chuka soba",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Even a shio tare bowl uses wheat ramen noodles. The shop describes it as 魚介出汁 — fish stock, so not vegan either.",
+    "dish_key": "chukasoba_sumashi_shio"
+   },
+   {
+    "ja": "鯛だし塩つけ麺",
+    "romaji": "Tai dashi shio tsukemen",
+    "en": "Sea-bream stock salt tsukemen",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles; sea-bream dashi. The shop notes ※夏季は冷製スープに変わります — the broth is served chilled in summer.",
+    "dish_key": "tsukemen_tai_dashi_shio"
+   },
+   {
+    "ja": "全部のせ鯛だし塩つけ麺",
+    "romaji": "Zenbu nose tai dashi shio tsukemen",
+    "en": "Sea-bream stock salt tsukemen with all toppings",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles. Same summer chilled-broth note.",
+    "dish_key": "tsukemen_tai_dashi_shio_zenbu"
+   },
+   {
+    "ja": "油そば",
+    "romaji": "Abura soba",
+    "en": "Abura soba — brothless noodles in a soy-based tare",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The shop names the sauce 濃厚な醤油ダレ — soy sauce, hence wheat, on top of wheat noodles.",
+    "dish_key": "abura_soba"
+   },
+   {
+    "ja": "辛味噌油そば",
+    "romaji": "Karamiso abura soba",
+    "en": "Spicy miso abura soba",
+    "price": "",
+    "section": "定番メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat noodles; miso and chilli tare. Japanese miso commonly contains barley or wheat koji.",
+    "dish_key": "abura_soba_karamiso"
+   },
+   {
+    "ja": "濃厚煮干しつけ麺",
+    "romaji": "Noko niboshi tsukemen",
+    "en": "Rich dried-sardine tsukemen",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Wheat noodles, niboshi (dried sardine) broth.",
+    "dish_key": "tsukemen_niboshi"
+   },
+   {
+    "ja": "豆乳スープの冷やし麻辣担々麺",
+    "romaji": "Tonyu supu no hiyashi marara tantanmen",
+    "en": "Chilled mala dandan noodles in soy-milk soup",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Soy-milk based, but the noodles are wheat and dandan tare is soy-and-sesame based; the shop does not state it is meat-free.",
+    "dish_key": "tantanmen_hiyashi_marara"
+   },
+   {
+    "ja": "冷やし鯛だし塩つけ麺",
+    "romaji": "Hiyashi tai dashi shio tsukemen",
+    "en": "Chilled sea-bream stock salt tsukemen",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Wheat noodles.",
+    "dish_key": "tsukemen_hiyashi_tai_dashi"
+   },
+   {
+    "ja": "濃厚煮干し中華そば",
+    "romaji": "Noko niboshi chuka soba",
+    "en": "Rich dried-sardine chuka soba",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Wheat noodles, niboshi broth.",
+    "dish_key": "chukasoba_niboshi"
+   },
+   {
+    "ja": "黒鰹醤油つけそば",
+    "romaji": "Kuro katsuo shoyu tsukesoba",
+    "en": "Black bonito soy-sauce dipping soba",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. The shop names 醤油 outright — soy sauce, hence wheat — plus wheat noodles and bonito.",
+    "dish_key": "tsukesoba_kuro_katsuo_shoyu"
+   },
+   {
+    "ja": "メンマ盛り黒鰹醤油つけそば",
+    "romaji": "Menma mori kuro katsuo shoyu tsukesoba",
+    "en": "Black bonito soy dipping soba piled with menma",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Soy sauce and wheat noodles; menma is simmered in a seasoning liquid.",
+    "dish_key": "tsukesoba_kuro_katsuo_menma"
+   },
+   {
+    "ja": "肉盛り黒鰹醤油つけそば",
+    "romaji": "Niku mori kuro katsuo shoyu tsukesoba",
+    "en": "Black bonito soy dipping soba piled with pork",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Soy sauce and wheat noodles.",
+    "dish_key": "tsukesoba_kuro_katsuo_niku"
+   },
+   {
+    "ja": "ニボ割り飯",
+    "romaji": "Nibo wari meshi",
+    "en": "Rice to finish the niboshi broth (\"soup wari\" rice)",
+    "price": "",
+    "section": "季節限定メニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Seasonal. Plain rice, but it is served INTO the leftover dipping broth, which carries the wheat from the noodles and the soy tare. This is the classic trap: the rice is not the problem, the broth it lands in is.",
+    "dish_key": "nibo_wari_meshi"
+   },
+   {
+    "ja": "金賞唐揚げ",
+    "romaji": "Kinsho kara-age",
+    "en": "Prize-winning fried chicken",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Kara-age is dusted before frying and marinated in a soy-based seasoning; the shop states neither the dust nor the marinade, and the fryer is shared.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "肉ねぎ飯",
+    "romaji": "Niku negi meshi",
+    "en": "Rice with pork and spring onion",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The pork topping is the soy-simmered chashu used on the noodles.",
+    "dish_key": "niku_negi_meshi"
+   },
+   {
+    "ja": "ねぎ飯",
+    "romaji": "Negi meshi",
+    "en": "Rice with spring onion",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The simplest thing on the card. The shop does not state whether the negi is dressed with a soy or sesame-oil tare, and does not say the dish is meat-free — ask.",
+    "dish_key": "negi_meshi"
+   },
+   {
+    "ja": "玉子メンマ",
+    "romaji": "Tamago menma",
+    "en": "Seasoned egg with menma bamboo shoot",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Ajitama is marinated in soy sauce and menma is simmered in a seasoning liquid. Egg.",
+    "dish_key": "tamago_menma"
+   },
+   {
+    "ja": "つまみチャーシュー",
+    "romaji": "Tsumami chashu",
+    "en": "Chashu pork served as a snack plate",
+    "price": "",
+    "section": "サイドメニュー",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Chashu is braised in soy sauce.",
+    "dish_key": "tsumami_chashu"
+   }
+  ]
+ },
+ "tokyo_udagawa_naru": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://asia-kitchen.co.jp/naru/"
+  ],
+  "price_note": "NEARLY AN EMPTY, AND THE ONE ITEM BELOW IS PROSE RATHER THAN A MENU. ウダガワ 成ル's official site is a single WordPress page carrying the address (渋谷区宇田川町6-20 パラシオン渋谷1F), the phone (03-3461-1166), hours 17:30–23:00, 定休日 不定休, a Google map and an Instagram embed that returns 投稿はありません — no posts. There is no menu page, no PDF, no price list and no 品書き anywhere on the site; the nav is HOME / GOOGLE MAP / OFFICIAL only. The single dish recorded below is named in the shop's own descriptive paragraph, not on a menu, and carries no price — it is included because it is genuinely first-party evidence of what the kitchen serves, and excluded from any price claim. The shop's sister venues (氣ウラ, 巖 渋谷, ミヤシタ成ル) are separate records and their pages were not used here. The dataset's menu_url points at Tabelog, which this egress cannot reach. ⚠ WHAT THE SITE DOES TELL A COELIAC: the shop describes itself as 鉄板焼き — teppanyaki — with 和食をベースにしたさまざまな一品料理 and a large regional sake list. A teppan is a single shared steel plate on which soy-based sauces are used all evening, which is about the least separable cooking surface there is. Treat the whole venue as ask-at-best and expect no allergen sheet.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "だし巻き玉子",
+    "romaji": "Dashimaki tamago",
+    "en": "Rolled dashi omelette (changes daily)",
+    "price": "",
+    "section": "鉄板焼き",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Named by the shop as its 日替わりの (daily-changing) teppanyaki item. Japanese dashimaki is seasoned with 白だし or めんつゆ, both soy-sauce products and therefore wheat, and the dashi itself is bonito — so this is both a gluten fact and a non-vegan one. Price not published.",
+    "dish_key": "dashimaki_tamago"
+   }
+  ]
  }
 }
