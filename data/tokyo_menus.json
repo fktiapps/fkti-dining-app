@@ -107863,8 +107863,8 @@
    "https://www.arclandservice.co.jp/yukari/menu/",
    "https://www.arclandservice.co.jp/yukari/wp-content/uploads/sites/13/2026/05/20260522_yukari_allergen.pdf"
   ],
-  "price_note": "Full menu with prices from the operator’s own menu page, given both excluding and including tax as the shop prints them. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE SHOP PUBLISHES AN アレルゲン一覧 AND IT CANNOT BE READ — the fifth case of this in the dataset. The allergen PDF (dated 2026-05-22) was downloaded and extracted: it yields 2,281 characters of structure, row numbers and a date, and NOT ONE Japanese dish name or allergen mark, because the text is set in CID fonts the extractor cannot resolve. The menu PDF beside it extracts a single character. So an allergen table exists, is current, is public, and discloses nothing to anyone who cannot see the image. RAKERU, 俺の割烹, ニューヨーカーズカフェ and 権八 all failed the same way. ⚠ THERE IS NOTHING HERE FOR A COELIAC AND THE REASON IS THE WHOLE SHOP: kara-age is chicken dredged in wheat flour and marinated in soy, then fried — the wheat is in the coating and the marinade, and a karaage specialist has one fryer. Even the chips and the 皮せん share it. ⚠ ONE ITEM IS WORTH NAMING BECAUSE IT IS THE OPPOSITE OF WHAT ITS NAME SUGGESTS: 揚げパン at ¥150 is a fried BREAD, sold on a chicken menu — wheat by construction, not by contamination. ⚠ AND FOR A VEGAN there is nothing at all: every item is chicken except the chips and the fried bread, both of which share the chicken oil.",
-  "last_checked": "2026-09-05",
+  "price_note": "⚠ CORRECTION TO THIS RECORD. It previously said the shop’s アレルゲン一覧 could not be read — that 2,281 characters of row numbers came out and not one dish name. That was WRONG, and the cause was tooling, not the PDF. Poppler on this machine carries no Adobe-Japan1 CID data, so pdftotext silently drops every Japanese glyph and returns only the ASCII, which is indistinguishable from an image-only scan. PyMuPDF decodes it completely, and reading the grid positionally (word coordinates, not reading order) is the only way to keep each ● attached to its own column, because the marks and the vertical column headers are separate text runs. The table below is now sourced from the shop’s own sheet dated 2026-05-22. The same correction applies to 俺の割烹 and RAKERU; ニューヨーカーズカフェ and 権八 really are image scans. ⚠ THE SHEET USES THREE MARKS AND THE DISTINCTION IS THE WHOLE VALUE: ○ = used as an ingredient. ☆ = 店舗にて、調理器具を共有 — shared cooking equipment in the shop. △ = shared production line at the factory. Almost nothing in this dataset separates ingredient from cross-contact; this does, per dish, across all 28 designated and quasi-designated allergens, traced 原材料までさかのぼり. ⚠ TWO FINDINGS THAT CHANGE WHAT THIS RECORD SAYS. First: every kara-age carries ○さば — MACKEREL, as an ingredient, in a fried chicken shop. Nothing on the menu names fish; it is in the marinade, and a fish-allergic or vegetarian diner reading the board would never see it. Second: 皮せん and ポテトフライ carry 小麦 as ☆, not ○ — no wheat in the item, wheat on the shared equipment — which is exactly what the earlier version of this record guessed and is now confirmed rather than assumed. ⚠ AND THE ONE THAT MATTERS MOST: ご飯 AND ご飯(大盛) ARE MARKED ☆ ACROSS THE BOARD — wheat, egg, dairy, chicken, soy, mackerel, apple and sesame, all as shared-equipment marks. Plain rice, the thing a coeliac orders when everything else is fried, is not clean here. The shop’s own caveats: cross-contact is possible via utensils despite care, sensitivity varies by individual so judge with a specialist, the menu changes and the sheet is updated with it, and some branches do not carry every item.",
+  "last_checked": "2026-09-07",
   "items": [
    {
     "ja": "カリッともも 100g",
@@ -107874,7 +107874,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "The cheapest karaage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "⚠ ○小麦 — wheat as an INGREDIENT, in the dredge. Also ○さば: the marinade carries MACKEREL, which no part of the menu discloses. The cheapest karaage. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -107885,7 +107885,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Thigh. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient; ○さば in the marinade. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -107896,7 +107896,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "A garlic marinade — and a garlic marinade in Japan is built on soy. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient; garlic marinade is soy-based, ○大豆. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -107907,7 +107907,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "ダレ in the name is the warning: a tare is soy, mirin and sugar, so this one carries wheat in the glaze as well as the coating. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. The ごま mark rises from ☆ to ○ on this one — the tare carries SESAME as an ingredient where the plain karaage only shares equipment with it. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -107918,7 +107918,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "甘辛 means a soy-and-sugar glaze. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 and ○ごま as ingredients. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -107929,40 +107929,40 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Wings, floured and fried. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
-    "ja": "なんこつ",
+    "ja": "なんこつ 1pc",
     "romaji": "nankotsu",
     "en": "Cartilage karaage",
     "price": "¥420（税込¥453）",
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Chicken cartilage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
-    "ja": "皮せん（鶏皮せんべい）",
+    "ja": "皮せん（鶏皮せんべい）1pc",
     "romaji": "kawasen",
     "en": "Crisp chicken skin",
     "price": "¥420（税込¥453）",
     "section": "からあげ Karaage",
-    "gf": "ask",
+    "gf": "no",
     "vegan": "no",
-    "note": "Chicken skin fried to a crisp — the one item here that might carry no flour of its own, since skin crisps without a coating. It is still in the shared karaage fryer, which is why this is an \"ask\" and not better.",
+    "note": "⚠ THE ONE ITEM WHERE WHEAT IS CROSS-CONTACT RATHER THAN AN INGREDIENT: 小麦 is marked ☆, shared cooking equipment, not ○. Chicken skin crisps without a coating, so there is no flour in the item — and it comes out of the karaage fryer, so it is still flagged against. さば is ☆ here too rather than ○. This is what the distinction between ○ and ☆ is for.",
     "dish_key": "kawasen"
    },
    {
-    "ja": "砂肝",
+    "ja": "砂肝 1pc",
     "romaji": "sunagimo",
     "en": "Gizzard karaage",
     "price": "¥490（税込¥529）",
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Chicken gizzard. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -107973,18 +107973,18 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "ask",
-    "note": "Potato and oil carry no wheat of their own — but this is a karaage shop, so the oil is the karaage oil. The cheapest item on the menu.",
+    "note": "⚠ EVERY ALLERGEN ON THIS ROW IS ☆, NOT ○ — wheat, egg, dairy, chicken, soy, mackerel, apple and sesame are all shared-equipment marks. So the chips contain none of them and touch all of them. Potato and oil, in the karaage fryer. The cheapest item on the menu.",
     "dish_key": "fries"
    },
    {
-    "ja": "揚げパン1個",
-    "romaji": "agepan ikko",
-    "en": "Fried bread, each",
+    "ja": "揚げパン",
+    "romaji": "agepan",
+    "en": "Fried bread",
     "price": "¥150（税込¥162）",
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "⚠ A FRIED BREAD ON A FRIED-CHICKEN MENU. 揚げパン is wheat dough deep-fried and sugared — wheat by construction rather than by contamination, and easy to skim past as a side.",
+    "note": "⚠ ○小麦 AND ○乳 as ingredients — a fried BREAD on a fried-chicken menu, wheat by construction rather than by contamination, and dairy in the dough.",
     "dish_key": "agepan"
    },
    {
@@ -107995,7 +107995,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Eight pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -108006,7 +108006,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Twelve pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -108017,7 +108017,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "The largest share box and the most expensive item. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "The share box, and the marks rise: ○乳 ○卵 ○ごま as ingredients rather than shared equipment, because it includes the tartare-bearing items.",
     "dish_key": "karaage"
    },
    {
@@ -108028,7 +108028,7 @@
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "Karaage over rice. The rice is the only clean component. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ○鶏肉 ○大豆 ○さば ○ごま. The rice underneath carries ☆ marks of its own.",
     "dish_key": "bento"
    },
    {
@@ -108039,18 +108039,18 @@
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "Karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient.",
     "dish_key": "bento"
    },
    {
-    "ja": "縁合盛り弁当",
+    "ja": "縁合盛り弁当（秘伝ニンニク）",
     "romaji": "Yukari aimori bentō",
     "en": "Yukari mixed bento",
     "price": "¥820（税込¥885）",
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "Assorted karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient.",
     "dish_key": "bento"
    },
    {
@@ -108061,8 +108061,41 @@
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "⚠ CHICKEN NANBAN IS THREE WHEAT ROUTES: floured and fried chicken, a sweet-vinegar SOY sauce, and TARTARE, which is egg. The most expensive bento. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "⚠ THE ONLY BENTO WHERE 乳 AND 卵 ARE BOTH ○ — dairy and egg as ingredients, which is the TARTARE. Plus ○小麦 in the coating and the sweet-vinegar soy sauce, and ○リンゴ, apple, which is in that sauce and appears nowhere in the dish name. The most expensive bento.",
     "dish_key": "chickennanban"
+   },
+   {
+    "ja": "出汁カレーからあげ 100g",
+    "romaji": "dashi karē karaage",
+    "en": "Dashi curry karaage, 100g — fair item",
+    "price": "",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A limited フェア item, listed on the allergen sheet without a price on the menu page, so the price field is left empty. ○小麦 ○鶏肉 ○大豆 ○さば — the 出汁 in the name is why さば runs through this whole board.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ご飯",
+    "romaji": "gohan",
+    "en": "Rice",
+    "price": "",
+    "section": "サイド Sides",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE MOST IMPORTANT LINE ON THE SHEET. Plain steamed rice is marked ☆ for 小麦, 乳, 卵, 鶏肉, 大豆, さば, リンゴ and ごま — shared equipment on all of them. Rice is the thing a coeliac reaches for when the rest of the menu is fried, and at this shop it is not a clean plate: it is served in a kitchen whose utensils carry wheat. No price is published on the menu page.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "ご飯（大盛）",
+    "romaji": "gohan ōmori",
+    "en": "Rice, large",
+    "price": "",
+    "section": "サイド Sides",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The same ☆ marks as the regular rice.",
+    "dish_key": "rice"
    }
   ]
  },
@@ -131233,6 +131266,359 @@
     "vegan": "ask",
     "note": "The only product named anywhere on the site: the house blend built on the shop's aged old beans, brewed by nel drip at the counter and also sold as beans through the online shop. Black coffee has no wheat and no animal ingredient in itself; whether it is served that way, and what the shop's unnamed 軽食 are, is not published. No price given.",
     "dish_key": "coffee"
+   }
+  ]
+ },
+ "tokyo_ore_no_kappo_robata_shin": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.oreno.co.jp/restaurant/robata_shinjuku",
+   "https://www.oreno.co.jp/menu/rb_shinjuku"
+  ],
+  "price_note": "⚠ CORRECTION — THIS RECORD WAS AN HONEST EMPTY AND SHOULD NOT HAVE BEEN. It previously said the shop’s bilingual menu PDF had lost its Japanese and every price to CID fonts, leaving only English dish names. The PDF was fine; the extractor was not. Poppler here has no Adobe-Japan1 CID data, so pdftotext drops Japanese silently and returns the ASCII half, which reads exactly like a half-broken file. PyMuPDF decodes the whole thing — Japanese names, Chinese names and both tax-exclusive and tax-inclusive prices. Full menu below, from the shop’s own PDF. ⚠ A ROBATA COUNTER IS STRUCTURALLY ONE OF THE BEST FORMATS IN THIS DATASET FOR A COELIAC, and this menu bears that out: the Signature Fish, Meat and Vegetables sections are whole things cooked over charcoal — a prawn, a whole golden-eye snapper, a potato, a tomato, an onion — with no batter, no crumb, no roux and no wrapper anywhere in the construction. That is rare enough to state plainly. ⚠ WHAT IS UNRESOLVED IS THE SEASONING, AND THE MENU DOES NOT SAY. The question at any Japanese grill is タレ or 塩, and nothing here declares it; a robata item is normally finished with salt, but 原始焼き and 炙り items are frequently brushed. The PDF carries the line 「※詳細は別紙をご参照ください」 — refer to the separate sheet for details — which suggests an allergen document exists that was not published alongside it and is worth asking for. ⚠ THREE ITEMS ARE WHEAT REGARDLESS: アボカドのかき揚げ is a tempura fritter, 帆立フライ is crumbed and fried, and 赤だし is red MISO, fermented on koji that is sometimes barley. 炙り鯖寿司 is vinegared rice and mackerel, which carries no wheat of its own. ⚠ AND FOR A VEGAN THERE ARE EXACTLY THREE DISHES: the three charcoal-grilled vegetables at ¥580 each — potato, Awaji onion and seared tomato — with the same unanswered question about what they are brushed with.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "炉ばた名物大海老原始焼き 1本",
+    "romaji": "robata meibutsu ōebi genshiyaki",
+    "en": "Jumbo prawn, primitive-grilled, 1 piece",
+    "price": "1,180（税込1,298）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The counter’s signature. A whole prawn over charcoal — no batter, no coating. Prawn. The seasoning is not declared, which is the only open question.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "キンメダイ 一本原始焼き",
+    "romaji": "kinmedai ippon genshiyaki",
+    "en": "Whole golden-eye snapper, char-grilled",
+    "price": "3,980（税込4,378）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A whole fish on a stake by the fire. Fish, salt and heat in the classical method; the finish is not stated.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "大トロ鰯原始焼き",
+    "romaji": "ōtoro iwashi genshiyaki",
+    "en": "Premium fatty sardine, primitive-grilled",
+    "price": "1,180（税込1,298）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Whole grilled sardine.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "伴助 ほっけ 一尾／ハーフ",
+    "romaji": "Bansuke hokke ippiki / hāfu",
+    "en": "Bansuke atka mackerel, whole or half",
+    "price": "ハーフ 1,080（税込1,188）／一尾 1,980（税込2,178）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A branded atka mackerel, dried and grilled — the classic izakaya fish. Two sizes.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "いかの一夜干し炭火炙り",
+    "romaji": "ika no ichiyaboshi sumibi aburi",
+    "en": "Charcoal-grilled overnight-dried squid",
+    "price": "一杯 1,780（税込1,958）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Squid dried overnight and grilled. 一夜干し is salt-and-air; the grill finish is not described.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "厚切り牛タン炭火炙り",
+    "romaji": "atsugiri gyūtan sumibi aburi",
+    "en": "Charcoal-grilled thick-cut beef tongue",
+    "price": "2,400（税込2,640）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Beef tongue over charcoal — normally salt-and-lemon, which would make it one of the better orders here, but the menu does not say.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "仔羊炭火焼き",
+    "romaji": "kohitsuji sumibiyaki",
+    "en": "Charcoal-grilled lamb",
+    "price": "1,880（税込2,068）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Lamb over charcoal.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "希少黒毛和牛東京ビーフの炭火焼き",
+    "romaji": "kishō kuroge wagyū Tōkyō bīfu no sumibiyaki",
+    "en": "Charcoal-grilled Tokyo Beef wagyu misuji",
+    "price": "4,980（税込5,478）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Misuji (chuck flap) from a rare Tokyo-raised wagyu. The most expensive single item.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "蝦夷鹿肉の炉端焼き",
+    "romaji": "ezoshika niku no robatayaki",
+    "en": "Robata-grilled Hokkaido venison",
+    "price": "1,680（税込1,848）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Wild Hokkaido deer.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "【料理長厳選】黒毛和牛の炭火焼き",
+    "romaji": "ryōrichō gensen kuroge wagyū no sumibiyaki",
+    "en": "Chef's selection charcoal-grilled wagyu",
+    "price": "3,680〜（税込4,048〜）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A from-price; the cut changes.",
+    "dish_key": "robata"
+   },
+   {
+    "ja": "じゃがいも炭火焼き",
+    "romaji": "jagaimo sumibiyaki",
+    "en": "Charcoal-grilled potato",
+    "price": "580（税込638）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ ONE OF ONLY THREE DISHES ON THIS MENU WITH NOTHING ANIMAL IN IT. A whole potato in the coals — no flour, no fryer, no sauce named. Both flags stay open on the same single question: a robata vegetable is very often brushed with butter or a soy tare, and the menu does not say which. Ask for salt and this is a clean plate.",
+    "dish_key": "yasai"
+   },
+   {
+    "ja": "淡路島産玉ねぎ",
+    "romaji": "Awajishima san tamanegi",
+    "en": "Awaji Island sweet onion, grilled",
+    "price": "580（税込638）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A whole sweet onion over charcoal. Same unanswered brushing question as the potato.",
+    "dish_key": "yasai"
+   },
+   {
+    "ja": "炙りトマト",
+    "romaji": "aburi tomato",
+    "en": "Seared tomato",
+    "price": "580（税込638）",
+    "section": "炉ばた焼き Robata",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A seared whole tomato; same question.",
+    "dish_key": "yasai"
+   },
+   {
+    "ja": "本日の刺身5点盛り合わせ",
+    "romaji": "honjitsu no sashimi goten moriawase",
+    "en": "Today's five-kind sashimi",
+    "price": "2人前〜 2,500〜（税込2,750〜）／追加1人前 1,200（税込1,320）",
+    "section": "刺身 Sashimi",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Priced from two people with a per-head supplement. Raw fish carries no wheat — the SOY SAUCE it is eaten with does, which is the standing sashimi caveat. The shop notes the selection varies with the day’s buying.",
+    "dish_key": "sashimi"
+   },
+   {
+    "ja": "梅水晶",
+    "romaji": "ume suishō",
+    "en": "Shark cartilage in plum sauce",
+    "price": "580（税込638）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Minced shark cartilage dressed in ume — the dressing is normally soy-based.",
+    "dish_key": "reisai"
+   },
+   {
+    "ja": "自家製スモーククリームチーズ",
+    "romaji": "jikasei sumōku kurīmu chīzu",
+    "en": "House-smoked cream cheese",
+    "price": "880（税込968）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Smoked in-house. Dairy; no wheat in the construction unless crackers come with it.",
+    "dish_key": "cheese"
+   },
+   {
+    "ja": "白レバ刺し",
+    "romaji": "shiro reba sashi",
+    "en": "Sous-vide pale chicken liver",
+    "price": "680（税込748）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken liver served raw-style; eaten with salt, sesame oil or soy — the last of which is the wheat.",
+    "dish_key": "reisai"
+   },
+   {
+    "ja": "俺の旬感海鮮サラダ",
+    "romaji": "ore no shunkan kaisen sarada",
+    "en": "Seasonal seafood salad",
+    "price": "1,280（税込1,408）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Seafood over leaves; the dressing is not described, and a Japanese house dressing is usually soy- or dashi-based.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "馬肉のユッケ",
+    "romaji": "baniku no yukke",
+    "en": "Horse yukhoe",
+    "price": "880（税込968）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Raw horse in a Korean-style dressing — yukhoe sauce is soy, sesame oil and sugar, with a raw egg yolk on top.",
+    "dish_key": "yukke"
+   },
+   {
+    "ja": "北海道産いかの塩辛",
+    "romaji": "Hokkaidō san ika no shiokara",
+    "en": "Hokkaido salted squid",
+    "price": "580（税込638）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "塩辛 is squid fermented in its own salted innards — salt and squid, with no wheat in the traditional method, though commercial versions often add mirin or soy.",
+    "dish_key": "shiokara"
+   },
+   {
+    "ja": "北海道産ホヤの塩辛",
+    "romaji": "Hokkaidō san hoya no shiokara",
+    "en": "Hokkaido salted sea pineapple",
+    "price": "880（税込968）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sea squirt, salted and fermented. Same construction as the squid.",
+    "dish_key": "shiokara"
+   },
+   {
+    "ja": "漬物の盛り合わせ",
+    "romaji": "tsukemono no moriawase",
+    "en": "Assorted pickles",
+    "price": "680（税込748）",
+    "section": "前菜・冷菜 Appetizers & cold dishes",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The only plant plate outside the three grilled vegetables. Japanese pickles are plant, and the pickling liquid is frequently soy- or dashi-based, which is why both flags stay open.",
+    "dish_key": "tsukemono"
+   },
+   {
+    "ja": "帆立フライ（4個）",
+    "romaji": "hotate furai",
+    "en": "Fried scallops, 4",
+    "price": "980（税込1,078）",
+    "section": "温菜 Hot appetizers",
+    "gf": "no",
+    "vegan": "no",
+    "note": "フライ means crumbed in PANKO and deep-fried. Scallop.",
+    "dish_key": "furai"
+   },
+   {
+    "ja": "アボカドのかき揚げ",
+    "romaji": "abokado no kakiage",
+    "en": "Avocado tempura fritter",
+    "price": "980（税込1,078）",
+    "section": "温菜 Hot appetizers",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE ONE VEGETABLE DISH THAT IS WHEAT: a かき揚げ is bound in TEMPURA BATTER and deep-fried. Avocado is plant; the batter is not, and the tentsuyu is soy and dashi.",
+    "dish_key": "kakiage"
+   },
+   {
+    "ja": "炙り鯖寿司",
+    "romaji": "aburi saba zushi",
+    "en": "Seared mackerel sushi",
+    "price": "ハーフ 1,740（税込1,914）／一本 3,000（税込3,300）",
+    "section": "ご飯・汁 Rice & soup",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pressed mackerel over vinegared rice — rice and fish, with no wheat in the construction. The vinegar and any brushed 煮切り soy are the open questions. Half or whole.",
+    "dish_key": "sabazushi"
+   },
+   {
+    "ja": "ズワイガニといくらの土鍋ご飯",
+    "romaji": "zuwaigani to ikura no donabe gohan",
+    "en": "Clay-pot rice with snow crab and salmon roe",
+    "price": "3,980（税込4,378）",
+    "section": "ご飯・汁 Rice & soup",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Rice cooked in a clay pot. The rice itself is clean; a donabe rice is normally seasoned with a dashi and soy, and IKURA is cured in soy. Crab.",
+    "dish_key": "donabe"
+   },
+   {
+    "ja": "愛知県産一色うなぎといくらの土鍋ご飯",
+    "romaji": "Aichi ken san Isshiki unagi to ikura no donabe gohan",
+    "en": "Clay-pot rice with Isshiki eel and salmon roe",
+    "price": "3,980（税込4,378）",
+    "section": "ご飯・汁 Rice & soup",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ UNAGI IS GLAZED IN A SOY TARE — kabayaki sauce is soy, mirin and sugar cooked down, and it is on the eel before it reaches the pot. Joint most expensive dish.",
+    "dish_key": "donabe"
+   },
+   {
+    "ja": "赤だし",
+    "romaji": "akadashi",
+    "en": "Red miso soup",
+    "price": "250（税込275）",
+    "section": "ご飯・汁 Rice & soup",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ 赤だし is red MISO, fermented on koji that is sometimes BARLEY and never declared, in a DASHI that is bonito. The cheapest item on the menu and a fish dish.",
+    "dish_key": "misoshiru"
+   },
+   {
+    "ja": "炉ばたで焼き芋 アイス添え",
+    "romaji": "robata de yakiimo aisu zoe",
+    "en": "Robata-roasted sweet potato with ice cream",
+    "price": "680（税込748）",
+    "section": "デザート Desserts",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A sweet potato roasted in the coals — plant and wheat-free in itself — with ice cream, which is dairy. Ask for it without and this is one of very few clean desserts in the set.",
+    "dish_key": "yakiimo"
+   },
+   {
+    "ja": "魅惑の黒糖アイス",
+    "romaji": "miwaku no kokutō aisu",
+    "en": "Brown sugar ice cream",
+    "price": "580（税込638）",
+    "section": "デザート Desserts",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy; the only gluten question is a wafer.",
+    "dish_key": "icecream"
+   },
+   {
+    "ja": "ほうじ茶ゼリー 練乳ソース",
+    "romaji": "hōjicha zerī rennyū sōsu",
+    "en": "Hojicha jelly with condensed milk",
+    "price": "480（税込528）",
+    "section": "デザート Desserts",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Roasted-tea jelly — no wheat — under CONDENSED MILK, which is the dairy. Normally set with gelatine.",
+    "dish_key": "jelly"
    }
   ]
  }

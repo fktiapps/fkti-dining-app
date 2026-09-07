@@ -40,8 +40,8 @@
    "https://www.arclandservice.co.jp/yukari/menu/",
    "https://www.arclandservice.co.jp/yukari/wp-content/uploads/sites/13/2026/05/20260522_yukari_allergen.pdf"
   ],
-  "price_note": "Full menu with prices from the operator’s own menu page, given both excluding and including tax as the shop prints them. Tabelog not consulted: Cf-Mitigated: challenge (403) to this egress since 2026-09-02. ⚠ THE SHOP PUBLISHES AN アレルゲン一覧 AND IT CANNOT BE READ — the fifth case of this in the dataset. The allergen PDF (dated 2026-05-22) was downloaded and extracted: it yields 2,281 characters of structure, row numbers and a date, and NOT ONE Japanese dish name or allergen mark, because the text is set in CID fonts the extractor cannot resolve. The menu PDF beside it extracts a single character. So an allergen table exists, is current, is public, and discloses nothing to anyone who cannot see the image. RAKERU, 俺の割烹, ニューヨーカーズカフェ and 権八 all failed the same way. ⚠ THERE IS NOTHING HERE FOR A COELIAC AND THE REASON IS THE WHOLE SHOP: kara-age is chicken dredged in wheat flour and marinated in soy, then fried — the wheat is in the coating and the marinade, and a karaage specialist has one fryer. Even the chips and the 皮せん share it. ⚠ ONE ITEM IS WORTH NAMING BECAUSE IT IS THE OPPOSITE OF WHAT ITS NAME SUGGESTS: 揚げパン at ¥150 is a fried BREAD, sold on a chicken menu — wheat by construction, not by contamination. ⚠ AND FOR A VEGAN there is nothing at all: every item is chicken except the chips and the fried bread, both of which share the chicken oil.",
-  "last_checked": "2026-09-05",
+  "price_note": "⚠ CORRECTION TO THIS RECORD. It previously said the shop’s アレルゲン一覧 could not be read — that 2,281 characters of row numbers came out and not one dish name. That was WRONG, and the cause was tooling, not the PDF. Poppler on this machine carries no Adobe-Japan1 CID data, so pdftotext silently drops every Japanese glyph and returns only the ASCII, which is indistinguishable from an image-only scan. PyMuPDF decodes it completely, and reading the grid positionally (word coordinates, not reading order) is the only way to keep each ● attached to its own column, because the marks and the vertical column headers are separate text runs. The table below is now sourced from the shop’s own sheet dated 2026-05-22. The same correction applies to 俺の割烹 and RAKERU; ニューヨーカーズカフェ and 権八 really are image scans. ⚠ THE SHEET USES THREE MARKS AND THE DISTINCTION IS THE WHOLE VALUE: ○ = used as an ingredient. ☆ = 店舗にて、調理器具を共有 — shared cooking equipment in the shop. △ = shared production line at the factory. Almost nothing in this dataset separates ingredient from cross-contact; this does, per dish, across all 28 designated and quasi-designated allergens, traced 原材料までさかのぼり. ⚠ TWO FINDINGS THAT CHANGE WHAT THIS RECORD SAYS. First: every kara-age carries ○さば — MACKEREL, as an ingredient, in a fried chicken shop. Nothing on the menu names fish; it is in the marinade, and a fish-allergic or vegetarian diner reading the board would never see it. Second: 皮せん and ポテトフライ carry 小麦 as ☆, not ○ — no wheat in the item, wheat on the shared equipment — which is exactly what the earlier version of this record guessed and is now confirmed rather than assumed. ⚠ AND THE ONE THAT MATTERS MOST: ご飯 AND ご飯(大盛) ARE MARKED ☆ ACROSS THE BOARD — wheat, egg, dairy, chicken, soy, mackerel, apple and sesame, all as shared-equipment marks. Plain rice, the thing a coeliac orders when everything else is fried, is not clean here. The shop’s own caveats: cross-contact is possible via utensils despite care, sensitivity varies by individual so judge with a specialist, the menu changes and the sheet is updated with it, and some branches do not carry every item.",
+  "last_checked": "2026-09-07",
   "items": [
    {
     "ja": "カリッともも 100g",
@@ -51,7 +51,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "The cheapest karaage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "⚠ ○小麦 — wheat as an INGREDIENT, in the dredge. Also ○さば: the marinade carries MACKEREL, which no part of the menu discloses. The cheapest karaage. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -62,7 +62,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Thigh. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient; ○さば in the marinade. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -73,7 +73,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "A garlic marinade — and a garlic marinade in Japan is built on soy. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient; garlic marinade is soy-based, ○大豆. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -84,7 +84,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "ダレ in the name is the warning: a tare is soy, mirin and sugar, so this one carries wheat in the glaze as well as the coating. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. The ごま mark rises from ☆ to ○ on this one — the tare carries SESAME as an ingredient where the plain karaage only shares equipment with it. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -95,7 +95,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "甘辛 means a soy-and-sugar glaze. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 and ○ごま as ingredients. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -106,40 +106,40 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Wings, floured and fried. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
-    "ja": "なんこつ",
+    "ja": "なんこつ 1pc",
     "romaji": "nankotsu",
     "en": "Cartilage karaage",
     "price": "¥420（税込¥453）",
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Chicken cartilage. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
-    "ja": "皮せん（鶏皮せんべい）",
+    "ja": "皮せん（鶏皮せんべい）1pc",
     "romaji": "kawasen",
     "en": "Crisp chicken skin",
     "price": "¥420（税込¥453）",
     "section": "からあげ Karaage",
-    "gf": "ask",
+    "gf": "no",
     "vegan": "no",
-    "note": "Chicken skin fried to a crisp — the one item here that might carry no flour of its own, since skin crisps without a coating. It is still in the shared karaage fryer, which is why this is an \"ask\" and not better.",
+    "note": "⚠ THE ONE ITEM WHERE WHEAT IS CROSS-CONTACT RATHER THAN AN INGREDIENT: 小麦 is marked ☆, shared cooking equipment, not ○. Chicken skin crisps without a coating, so there is no flour in the item — and it comes out of the karaage fryer, so it is still flagged against. さば is ☆ here too rather than ○. This is what the distinction between ○ and ☆ is for.",
     "dish_key": "kawasen"
    },
    {
-    "ja": "砂肝",
+    "ja": "砂肝 1pc",
     "romaji": "sunagimo",
     "en": "Gizzard karaage",
     "price": "¥490（税込¥529）",
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Chicken gizzard. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -150,18 +150,18 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "ask",
-    "note": "Potato and oil carry no wheat of their own — but this is a karaage shop, so the oil is the karaage oil. The cheapest item on the menu.",
+    "note": "⚠ EVERY ALLERGEN ON THIS ROW IS ☆, NOT ○ — wheat, egg, dairy, chicken, soy, mackerel, apple and sesame are all shared-equipment marks. So the chips contain none of them and touch all of them. Potato and oil, in the karaage fryer. The cheapest item on the menu.",
     "dish_key": "fries"
    },
    {
-    "ja": "揚げパン1個",
-    "romaji": "agepan ikko",
-    "en": "Fried bread, each",
+    "ja": "揚げパン",
+    "romaji": "agepan",
+    "en": "Fried bread",
     "price": "¥150（税込¥162）",
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "⚠ A FRIED BREAD ON A FRIED-CHICKEN MENU. 揚げパン is wheat dough deep-fried and sugared — wheat by construction rather than by contamination, and easy to skim past as a side.",
+    "note": "⚠ ○小麦 AND ○乳 as ingredients — a fried BREAD on a fried-chicken menu, wheat by construction rather than by contamination, and dairy in the dough.",
     "dish_key": "agepan"
    },
    {
@@ -172,7 +172,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Eight pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -183,7 +183,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "Twelve pieces. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient. Allergen sheet marks this ○小麦 ○鶏肉 ○大豆 ○さば, with ☆乳 ☆卵 ☆リンゴ ☆ごま.",
     "dish_key": "karaage"
    },
    {
@@ -194,7 +194,7 @@
     "section": "からあげ Karaage",
     "gf": "no",
     "vegan": "no",
-    "note": "The largest share box and the most expensive item. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "The share box, and the marks rise: ○乳 ○卵 ○ごま as ingredients rather than shared equipment, because it includes the tartare-bearing items.",
     "dish_key": "karaage"
    },
    {
@@ -205,7 +205,7 @@
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "Karaage over rice. The rice is the only clean component. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ○鶏肉 ○大豆 ○さば ○ごま. The rice underneath carries ☆ marks of its own.",
     "dish_key": "bento"
    },
    {
@@ -216,18 +216,18 @@
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "Karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient.",
     "dish_key": "bento"
    },
    {
-    "ja": "縁合盛り弁当",
+    "ja": "縁合盛り弁当（秘伝ニンニク）",
     "romaji": "Yukari aimori bentō",
     "en": "Yukari mixed bento",
     "price": "¥820（税込¥885）",
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "Assorted karaage over rice. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "○小麦 ingredient.",
     "dish_key": "bento"
    },
    {
@@ -238,8 +238,41 @@
     "section": "揚げたてお弁当 Bento",
     "gf": "no",
     "vegan": "no",
-    "note": "⚠ CHICKEN NANBAN IS THREE WHEAT ROUTES: floured and fried chicken, a sweet-vinegar SOY sauce, and TARTARE, which is egg. The most expensive bento. ⚠ KARA-AGE IS DREDGED IN WHEAT FLOUR or a wheat-and-starch blend and marinated in SOY — wheat twice — and everything on this board comes out of one fryer.",
+    "note": "⚠ THE ONLY BENTO WHERE 乳 AND 卵 ARE BOTH ○ — dairy and egg as ingredients, which is the TARTARE. Plus ○小麦 in the coating and the sweet-vinegar soy sauce, and ○リンゴ, apple, which is in that sauce and appears nowhere in the dish name. The most expensive bento.",
     "dish_key": "chickennanban"
+   },
+   {
+    "ja": "出汁カレーからあげ 100g",
+    "romaji": "dashi karē karaage",
+    "en": "Dashi curry karaage, 100g — fair item",
+    "price": "",
+    "section": "からあげ Karaage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A limited フェア item, listed on the allergen sheet without a price on the menu page, so the price field is left empty. ○小麦 ○鶏肉 ○大豆 ○さば — the 出汁 in the name is why さば runs through this whole board.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "ご飯",
+    "romaji": "gohan",
+    "en": "Rice",
+    "price": "",
+    "section": "サイド Sides",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE MOST IMPORTANT LINE ON THE SHEET. Plain steamed rice is marked ☆ for 小麦, 乳, 卵, 鶏肉, 大豆, さば, リンゴ and ごま — shared equipment on all of them. Rice is the thing a coeliac reaches for when the rest of the menu is fried, and at this shop it is not a clean plate: it is served in a kitchen whose utensils carry wheat. No price is published on the menu page.",
+    "dish_key": "rice"
+   },
+   {
+    "ja": "ご飯（大盛）",
+    "romaji": "gohan ōmori",
+    "en": "Rice, large",
+    "price": "",
+    "section": "サイド Sides",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "The same ☆ marks as the regular rice.",
+    "dish_key": "rice"
    }
   ]
  },
