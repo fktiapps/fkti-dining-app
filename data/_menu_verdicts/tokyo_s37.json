@@ -2414,5 +2414,404 @@
     "dish_key": "banquet-course-tsumire"
    }
   ]
+ },
+ "tokyo_vegetus_plus": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.vegetusplus.com/",
+   "https://www.vegetusplus.com/pages/4749403/menu",
+   "https://www.vegetusplus.com/pages/4749422/page_202103142355",
+   "https://www.vegetusplus.com/pages/4749438/page_202103142358",
+   "https://www.vegetusplus.com/pages/4749439/page_202103142359"
+  ],
+  "price_note": "From the shop's own site. Address confirmed as 千代田区神田三崎町3-1-8 天野ビル1F, six minutes from JR Suidobashi west exit — the record's placement. Open Mon–Fri and days before public holidays 11:00–15:00, 「売り切れ次第終了」 (closes when sold out); closed Saturdays, Sundays and public holidays. So this is a weekday-lunch-only shop, which the record does not say and which matters more than any dish here for anyone planning a visit. ⚠ THE RECORD DESCRIBES THIS SHOP AS 「有機野菜・ベジタリアン・グルテンフリー対応」 AND THE SHOP'S OWN SITE SUPPORTS ONLY THE FIRST THIRD OF THAT. Across all five of its pages Vegetus+ makes NO gluten-free claim, NO vegetarian claim and NO vegan claim — the words do not appear. Its About Us page argues the OPPOSITE case at length and in its own voice: 「『ヘルシーな食事＝野菜だけの食事』という訳ではありませんでした」, that plant and animal amino acids differ so you need both, and that B12 and vitamin D are very hard to get from vegetables alone. The name is branding, not a dietary claim. The current deli list bears that out — pork fillet, chicken thigh, mackerel, octopus, scallop and beef bulgogi all appear on it. A traveller sent here expecting a vegetarian or gluten-free restaurant will find a healthy-eating deli that explicitly is not one. This needs a human's eyes on the record's cuisine field. ⚠ THE GLUTEN RISK THE SHOP DOES DOCUMENT IS ITS RICE. Vegetus+ states it serves an 「オリジナル雑穀米」 — a house multigrain blend chosen for vitamins and fibre. Japanese 雑穀米 blends routinely include 押麦 or もち麦, which is BARLEY, and barley is not on Japan's statutory allergen list so no label will disclose it. The blend's composition is not published. That is the first question to ask here. ⚠ WHAT THE SHOP DOES DOCUMENT IS GOOD AND UNUSUAL: oils are 「機械搾りの菜種油とエキストラバージンオリーブオイル のみ」 — mechanically pressed rapeseed and EVOO only, no solvent-extracted oils; salt is Italian natural salt and sugar is kibi-tou; everything is made in-house with 「保存料など不必要な添加物や化学調味料を使わず」, no preservatives or MSG; vegetables are organic or low-pesticide where supply allows. The green salad is stated to be five or more leaf varieties. ⚠ THE DELI LIST BELOW ROTATES: the shop states one deli changes every week and directs you to its Instagram or UberEats for the current line-up, warning that UberEats portions and prices differ from the in-store takeaway ones. Treat the eleven delis below as a dated snapshot of one week, not a fixed card. ⚠ Two of the four salad dressings are dairy — バルサミコチーズ and ヨーグルト — leaving apple and carrot as the plant options. The SINGLE MENU and ORGANIC DRINK sections of the menu page are image blocks that currently render empty, so no single items or drinks could be read.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "One Plate（デリ3種）",
+    "romaji": "One Plate",
+    "en": "STEP 1 — one plate with a large green salad and three delis of your choice",
+    "price": "¥950〜",
+    "section": "ＳＴＥＰ１　プレートを選ぶ (choose a plate)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Build-your-own: the plate is a green salad plus delis you pick, so the diet answer depends entirely on your choices. The shop's house 雑穀米 multigrain rice is the standing gluten question — Japanese multigrain blends routinely contain barley.",
+    "dish_key": "deli-plate"
+   },
+   {
+    "ja": "4 Deli Plate（デリ4種）",
+    "romaji": "4 Deli Plate",
+    "en": "STEP 1 — plate with four delis of your choice",
+    "price": "¥1,050〜",
+    "section": "ＳＴＥＰ１　プレートを選ぶ (choose a plate)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "As above. The 〜 in the price reflects the ¥50 surcharge delis.",
+    "dish_key": "deli-plate"
+   },
+   {
+    "ja": "2 Deli Plate（デリ2種）",
+    "romaji": "2 Deli Plate",
+    "en": "STEP 1 — smallest plate, two delis of your choice",
+    "price": "¥680〜",
+    "section": "ＳＴＥＰ１　プレートを選ぶ (choose a plate)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "As above.",
+    "dish_key": "deli-plate"
+   },
+   {
+    "ja": "お野菜たっぷりプルコギ",
+    "romaji": "oyasai tappuri purukogi",
+    "en": "Vegetable-heavy bulgogi — ¥50 surcharge deli",
+    "price": "＋¥50",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bulgogi marinade is soy sauce, pear and sesame. Beef.",
+    "dish_key": "deli-bulgogi"
+   },
+   {
+    "ja": "アボカドのメキシカンサルサ",
+    "romaji": "abokado no mekishikan sarusa",
+    "en": "Avocado in Mexican salsa — ¥50 surcharge deli",
+    "price": "＋¥50",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Avocado, tomato and chilli are plant and wheat-free in the classic recipe — the most promising deli on this week's list for both diets. Composition unpublished. Ask.",
+    "dish_key": "deli-avocado-salsa"
+   },
+   {
+    "ja": "豚ヒレ肉の低温ロースト",
+    "romaji": "buta hireniku no teion rōsuto",
+    "en": "Low-temperature roast pork fillet — ¥50 surcharge deli",
+    "price": "＋¥50",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Slow-roasted rather than fried or breaded; the seasoning is unstated. Ask.",
+    "dish_key": "deli-roast-pork"
+   },
+   {
+    "ja": "サバのハーブマリネ",
+    "romaji": "saba no hābu marine",
+    "en": "Herb-marinated mackerel",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Herb marinade rather than a Japanese soy one; composition unstated. Ask.",
+    "dish_key": "deli-mackerel"
+   },
+   {
+    "ja": "国産鶏もも肉のオレンジマスタード焼き",
+    "romaji": "kokusan torimomo niku no orenji masutādo yaki",
+    "en": "Domestic chicken thigh baked in orange and mustard",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Mustard preparations can carry wheat as a thickener or in the vinegar. Ask.",
+    "dish_key": "deli-chicken-mustard"
+   },
+   {
+    "ja": "冬野菜のスパニュシュオムレツ",
+    "romaji": "fuyu yasai no supanisshu omuretsu",
+    "en": "Spanish omelette of winter vegetables",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A tortilla española is egg, potato and onion — no wheat in the classic recipe, which makes it a reasonable ask. Contains egg.",
+    "dish_key": "deli-spanish-omelette"
+   },
+   {
+    "ja": "トレビスとキノコのキヌアサラダ",
+    "romaji": "torebisu to kinoko no kinua sarada",
+    "en": "Radicchio and mushroom quinoa salad",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Quinoa is a seed, not a cereal, and carries no gluten — so this is the deli whose base ingredient is most promising. Plant as named. The dressing is unpublished. Ask.",
+    "dish_key": "deli-quinoa-salad"
+   },
+   {
+    "ja": "カブと柿とホタテのマリネ",
+    "romaji": "kabu to kaki to hotate no marine",
+    "en": "Marinated turnip, persimmon and scallop",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Scallop. Marinade unstated.",
+    "dish_key": "deli-scallop-marinade"
+   },
+   {
+    "ja": "サツマイモとブルーチーズのハニーロースト",
+    "romaji": "satsumaimo to burū chīzu no hanī rōsuto",
+    "en": "Honey-roasted sweet potato with blue cheese",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy blue cheese and honey — vegetable-based but not vegan.",
+    "dish_key": "deli-sweet-potato"
+   },
+   {
+    "ja": "タコと大根とセリの柚子胡椒サラダ",
+    "romaji": "tako to daikon to seri no yuzukoshō sarada",
+    "en": "Octopus, daikon and water dropwort in yuzu-kosho",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Yuzu-kosho itself is yuzu peel, chilli and salt — clean — but the salad dressing around it is unstated. Octopus.",
+    "dish_key": "deli-octopus-yuzukosho"
+   },
+   {
+    "ja": "根菜とひよこ豆のスパイスロースト",
+    "romaji": "konsai to hiyokomame no supaisu rōsuto",
+    "en": "Spice-roasted root vegetables and chickpeas",
+    "price": "プレート内 (included in plate)",
+    "section": "ＳＴＥＰ２　デリを選ぶ (choose your delis — rotates weekly)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Root vegetables, chickpeas and spices as named — plant, and no wheat step in a roast. The single best deli on this week's list for a vegan, subject to asking what is in the spice mix.",
+    "dish_key": "deli-chickpea-roast"
+   },
+   {
+    "ja": "Ａ　アップルドレッシング",
+    "romaji": "appuru doresshingu",
+    "en": "Dressing A — apple, which the shop says is rich in apple polyphenols",
+    "price": "プレート内 (included)",
+    "section": "ＳＴＥＰ３　ドレッシングを選ぶ (choose one dressing)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "One of two non-dairy dressings on the list. Composition unpublished; a fruit dressing sometimes carries soy. Ask.",
+    "dish_key": "dressing-apple"
+   },
+   {
+    "ja": "Ｂ　バルサミコチーズドレッシング",
+    "romaji": "barusamiko chīzu doresshingu",
+    "en": "Dressing B — balsamic and cheese, which the shop says adds grape polyphenols and minerals",
+    "price": "プレート内 (included)",
+    "section": "ＳＴＥＰ３　ドレッシングを選ぶ (choose one dressing)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy cheese.",
+    "dish_key": "dressing-balsamic-cheese"
+   },
+   {
+    "ja": "Ｃ　キャロットドレッシング",
+    "romaji": "kyarotto doresshingu",
+    "en": "Dressing C — the shop states raw organic carrot and onion",
+    "price": "プレート内 (included)",
+    "section": "ＳＴＥＰ３　ドレッシングを選ぶ (choose one dressing)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop names raw organic carrot and onion — the most plausibly plant and wheat-free of the four. Full composition unpublished. Ask.",
+    "dish_key": "dressing-carrot"
+   },
+   {
+    "ja": "Ｄ　ヨーグルトドレッシング",
+    "romaji": "yōguruto doresshingu",
+    "en": "Dressing D — the shop states yoghurt, oligosaccharide and apple vinegar, for gut health",
+    "price": "プレート内 (included)",
+    "section": "ＳＴＥＰ３　ドレッシングを選ぶ (choose one dressing)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy yoghurt, named by the shop.",
+    "dish_key": "dressing-yoghurt"
+   },
+   {
+    "ja": "オリジナル雑穀米",
+    "romaji": "orijinaru zakkokumai",
+    "en": "The house multigrain rice — the shop states it is its own domestic blend, chosen for vitamins and dietary fibre",
+    "price": "プレート内 (included)",
+    "section": "こだわり (the shop's stated commitments)",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "⚠ The most important line on this card for a coeliac. Japanese 雑穀米 blends routinely include 押麦 or もち麦 — BARLEY — and barley is absent from Japan's statutory allergen list, so nothing will label it. The shop calls the blend its own and does not publish the grains in it. Ask exactly which grains are in it before eating any plate here.",
+    "dish_key": "zakkokumai"
+   }
+  ]
+ },
+ "tokyo_menya_musashi_bukotsu_ga": {
+  "verified": "authoritative",
+  "confidence": "medium",
+  "sources": [
+   "https://menya634.co.jp/storelist/shibuya/"
+  ],
+  "price_note": "From the chain's own branch page for 渋谷 麺屋武蔵 武骨外伝 (渋谷区道玄坂2-8-5, three minutes from Shibuya Hachiko exit and two from the Keio Inokashira line; 11:30–22:30, no closing day, 19 seats, 03-3780-8634). ⚠ NO PRICES ARE PUBLISHED. The branch page lists the full item range by name but carries no figures anywhere, so every item below has a name and a section and no price — that is what the source says, and nothing has been inferred. ⚠ THE BRANCH'S OWN DESCRIPTION IS THE USEFUL PART AND IT IS A GLUTEN DOCUMENT. The shop states you choose between two broths — a regular chicken-and-pork-bone stock finished with CRAB and NIBOSHI, or a richer version with thick-shaved KATSUOBUSHI — and then between three 餡 (thick sauces): 黒 is a 「特製醤油餡」, a house SOY SAUCE thickened sauce; 赤 is a 「特製辛味噌餡」, a house spicy MISO sauce; 白 is 「餡なし」, NO SAUCE AT ALL. That white option is the single most useful fact on the page: it is the one configuration at this shop that does not arrive under a soy or miso sauce. The noodles are wheat regardless, so this is a decoding aid rather than a gluten-free route. ⚠ The shop names its most popular item as the 濃厚外伝黒つけ麺, eaten by mixing the house sauce and a soft-boiled egg into the dipping broth. ⚠ Nothing here is vegan: every broth on the card is chicken, pork, crab, sardine or bonito.",
+  "last_checked": "2026-09-07",
+  "items": [
+   {
+    "ja": "ら〜麺",
+    "romaji": "rāmen",
+    "en": "Ramen — chicken and pork-bone broth finished with crab and niboshi sardine",
+    "price": "価格未掲載 (no price published)",
+    "section": "ら〜麺 (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen noodles are wheat and made with kansui; the broth is chicken, pork, crab and sardine.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "味玉ら〜麺",
+    "romaji": "ajitama rāmen",
+    "en": "Ramen with a marinated soft-boiled egg",
+    "price": "価格未掲載 (no price published)",
+    "section": "ら〜麺 (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ajitama is marinated in a soy tare; wheat noodle.",
+    "dish_key": "ramen-ajitama"
+   },
+   {
+    "ja": "外伝ら〜麺／外伝肉増しら〜麺",
+    "romaji": "Gaiden rāmen / Gaiden nikumashi rāmen",
+    "en": "Gaiden ramen, and the extra-pork version — the branch's own naming",
+    "price": "価格未掲載 (no price published)",
+    "section": "ら〜麺 (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle; chashu pork is soy-braised.",
+    "dish_key": "ramen-gaiden"
+   },
+   {
+    "ja": "ニンニクら〜麺／外伝ニンニクら〜麺",
+    "romaji": "ninniku rāmen / Gaiden ninniku rāmen",
+    "en": "Garlic ramen, plain or Gaiden",
+    "price": "価格未掲載 (no price published)",
+    "section": "ら〜麺 (ramen)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle.",
+    "dish_key": "ramen-garlic"
+   },
+   {
+    "ja": "外伝白つけ麺",
+    "romaji": "Gaiden shiro tsukemen",
+    "en": "Gaiden white tsukemen — 白 means NO 餡, i.e. served without the house thick sauce",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 白（餡なし） (white tsukemen, no thick sauce)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The branch states 白 = 「餡なし」, no sauce — the only configuration here that avoids the house soy or miso 餡. The noodle is still wheat and the dipping broth is still chicken, pork, crab and sardine, so this is not a gluten-free option; it is the least-sauced one.",
+    "dish_key": "tsukemen-shiro"
+   },
+   {
+    "ja": "外伝肉増し白つけ麺／外伝ニンニクつけ麺",
+    "romaji": "Gaiden nikumashi shiro tsukemen / Gaiden ninniku tsukemen",
+    "en": "Gaiden white tsukemen with extra pork, and the garlic tsukemen",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 白（餡なし） (white tsukemen, no thick sauce)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle; soy-braised chashu.",
+    "dish_key": "tsukemen-shiro"
+   },
+   {
+    "ja": "濃厚白つけ麺／濃厚味玉白つけ麺",
+    "romaji": "nōkō shiro tsukemen / nōkō ajitama shiro tsukemen",
+    "en": "Rich white tsukemen — the richer broth is the one finished with thick-shaved bonito; with or without marinated egg",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 白（餡なし） (white tsukemen, no thick sauce)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The 濃厚 broth adds katsuobushi to the chicken, pork, crab and sardine base. Wheat noodle.",
+    "dish_key": "tsukemen-shiro-noko"
+   },
+   {
+    "ja": "濃厚外伝白つけ麺／濃厚外伝肉増し白つけ麺",
+    "romaji": "nōkō Gaiden shiro tsukemen / nōkō Gaiden nikumashi shiro tsukemen",
+    "en": "Rich Gaiden white tsukemen, standard or extra pork",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 白（餡なし） (white tsukemen, no thick sauce)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodle.",
+    "dish_key": "tsukemen-shiro-noko"
+   },
+   {
+    "ja": "外伝黒つけ麺／外伝肉増し黒つけ麺",
+    "romaji": "Gaiden kuro tsukemen / Gaiden nikumashi kuro tsukemen",
+    "en": "Gaiden black tsukemen — 黒 is the house SOY SAUCE thick sauce",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 黒（特製醤油餡） (black tsukemen, house soy sauce an)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The branch states 黒 is 「特製醤油餡」 — a house SOY SAUCE thickened sauce. Soy sauce is wheat by default, on top of the wheat noodle.",
+    "dish_key": "tsukemen-kuro"
+   },
+   {
+    "ja": "濃厚黒つけ麺／濃厚味玉黒つけ麺",
+    "romaji": "nōkō kuro tsukemen / nōkō ajitama kuro tsukemen",
+    "en": "Rich black tsukemen, with or without marinated egg",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 黒（特製醤油餡） (black tsukemen, house soy sauce an)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy an plus wheat noodle.",
+    "dish_key": "tsukemen-kuro"
+   },
+   {
+    "ja": "濃厚外伝黒つけ麺",
+    "romaji": "nōkō Gaiden kuro tsukemen",
+    "en": "Rich Gaiden black tsukemen — the branch names this its number-one item, eaten by mixing the house an and a soft-boiled egg into the broth",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 黒（特製醤油餡） (black tsukemen, house soy sauce an)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The shop's own signature. Soy an, wheat noodle, egg.",
+    "dish_key": "tsukemen-kuro"
+   },
+   {
+    "ja": "濃厚外伝肉増し黒つけ麺",
+    "romaji": "nōkō Gaiden nikumashi kuro tsukemen",
+    "en": "Rich Gaiden black tsukemen with extra pork",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 黒（特製醤油餡） (black tsukemen, house soy sauce an)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy an, wheat noodle.",
+    "dish_key": "tsukemen-kuro"
+   },
+   {
+    "ja": "外伝赤つけ麺／外伝肉増し赤つけ麺",
+    "romaji": "Gaiden aka tsukemen / Gaiden nikumashi aka tsukemen",
+    "en": "Gaiden red tsukemen — 赤 is the house SPICY MISO thick sauce",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 赤（特製辛味噌餡） (red tsukemen, house spicy miso an)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The branch states 赤 is 「特製辛味噌餡」 — a house spicy MISO sauce. Ramen miso tare is normally cut with soy, and the miso variety is not named. Wheat noodle regardless.",
+    "dish_key": "tsukemen-aka"
+   },
+   {
+    "ja": "濃厚赤つけ麺／濃厚味玉赤つけ麺／濃厚外伝赤つけ麺",
+    "romaji": "nōkō aka tsukemen / nōkō ajitama aka tsukemen / nōkō Gaiden aka tsukemen",
+    "en": "Rich red tsukemen — plain, with marinated egg, or Gaiden",
+    "price": "価格未掲載 (no price published)",
+    "section": "つけ麺 赤（特製辛味噌餡） (red tsukemen, house spicy miso an)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Spicy miso an, wheat noodle.",
+    "dish_key": "tsukemen-aka"
+   }
+  ]
+ },
+ "tokyo_asakusa_chisou_nishizawa": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://asakusa-chisou-nishizawa.com/"
+  ],
+  "price_note": "HONEST EMPTY — THE SHOP'S SITE IS PASSWORD-PROTECTED. asakusa-chisou-nishizawa.com resolves cleanly to 85.131.221.46 and the server answers, but it returns HTTP 401 with the header `WWW-Authenticate: Basic realm=\"Member Site\"` — the whole site sits behind HTTP Basic authentication as a members' area. This is not a dead domain and not a block on this egress: it is a deliberate gate, and the Last-Modified header on the 401 page reads 2026-04-07, so somebody is maintaining it. Nothing beyond the login prompt was read and nothing is recorded. The record's Tabelog fallback is unreachable from this machine (Tabelog has served a Cloudflare managed challenge to this egress since 2026-09-02). ⚠ Standing note for a kaiseki/omakase counter: where a chef's course is not published, the composition changes with the season and the only reliable answer comes from calling ahead — which for a coeliac at a Japanese kaiseki counter is the right approach anyway, since 出汁, 醤油, 味醂 and 麩 run through almost every course and 先付 through 椀物 are built on them.",
+  "last_checked": "2026-09-07",
+  "items": []
  }
 }
