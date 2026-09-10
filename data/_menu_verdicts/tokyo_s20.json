@@ -2857,5 +2857,175 @@
     "dish_key": "kimagure_ice"
    }
   ]
+ },
+ "tokyo_benizuru": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://rurubu.jp/andmore/article/21251",
+   "https://san-tatsu.jp/articles/177423/",
+   "https://retty.me/area/PRE13/ARE9/SUB902/100001355686/"
+  ],
+  "price_note": "⚠ THE BATTER IS RICE FLOUR, NOT WHEAT, AND TWO INDEPENDENT EDITORIAL OUTLETS SAY SO IN PRINT. Rurubu, reporting from the counter: 生地は小麦粉ではなく米粉で作られていてグルテンフリー — the batter is made with rice flour rather than wheat flour and is gluten-free. San-tatsu, separately: 『紅鶴』のパンケーキは小麦粉ではなく米粉を使っているのだそう. For a pancake specialist in Tokyo that is close to unique, and it is the reason this record exists. ⚠ WHAT IS NOT ESTABLISHED, AND WHY THE FLAGS BELOW SAY “ask” RATHER THAN “gf”: the shop itself publishes no allergen statement anywhere this machine can read — Instagram is its only channel and serves a login wall here, Tabelog has served HTTP 403 since 2026-09-02, and Retty carries no menu. The rice-flour claim is journalists quoting the kitchen, not a coeliac-grade declaration. Neither outlet says anything about baking powder, about whether the griddle or the utensils are shared with anything wheat, or about what is in the toppings — and there are about fifteen of those, plus marmalade and a hollandaise on the savoury pancake. If you are coeliac rather than wheat-avoiding, this is a shop worth phoning: it is one of the very few where the answer might actually be yes. ⚠ NOTHING HERE IS VEGAN, AND THE REASON IS STRUCTURAL. The texture the shop is famous for comes from メレンゲをたっぷりと使った — a batter lifted with a great deal of MERINGUE, i.e. whipped egg white. That is the dish. Add butter, honey, custard, hollandaise and bacon across the menu and there is no plant-only option, seasonal or otherwise. ⚠ HOW TO GET IN, WHICH IS AS IMPORTANT AS THE MENU. San-tatsu: the shop takes 当日のみの予約制 — same-day reservations only, made in person. Reception opens at 8:30 in the morning and there are already people waiting before it does; you book a slot, pay 前金1000円 as a deposit, then go away and come back. Fourteen counter seats, no tables. 東京都台東区西浅草2-1-11, 03-3841-3910, 10:00–17:00. ⚠ PRICES MOVED BETWEEN THE TWO ARTICLES: san-tatsu has 炙りバナナのチョコナッツソース at 1800円, rurubu has the same pancake at 2100円. The rurubu figures are the later set; both are recorded so the direction of travel is visible.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "ベーコンと目玉焼き",
+    "romaji": "bēkon to medama-yaki",
+    "en": "Bacon and fried egg — three stacked pancakes with honey, marmalade and bacon layered between them, a fried egg on top and a great deal of hollandaise poured over. The savoury one, and the one Rurubu went for",
+    "price": "2200円",
+    "section": "しょっぱい系 Savoury",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "生地は米粉（小麦粉不使用）。ただしオランデーズソースは卵とバター、ベーコンは豚。The pancake itself is rice flour. Everything on it is animal: bacon, a whole egg, hollandaise (egg yolk and butter). Gluten stays at ask because no allergen policy is published and marmalade and cured bacon are both places a kitchen can hide wheat without meaning to.",
+    "dish_key": "pancake_bacon_egg"
+   },
+   {
+    "ja": "蜂蜜とバター",
+    "romaji": "hachimitsu to batā",
+    "en": "Honey and butter — the plain one, meant for tasting the batter itself. About fifteen extra toppings can be added to this or any other pancake",
+    "price": "1600円",
+    "section": "さっぱり系 Plain",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "THE CLOSEST THING TO A CLEAN ORDER HERE AND IT IS STILL NOT VEGAN. 米粉生地＋蜂蜜＋バター。Rice-flour batter, honey and butter — no wheat ingredient at any point, which makes this the one to ask about if you avoid gluten. Butter is dairy and honey is an animal product, and the batter is lifted with egg-white meringue, so it fails vegan three times over.",
+    "dish_key": "pancake_honey_butter"
+   },
+   {
+    "ja": "炙りバナナのチョコナッツソース",
+    "romaji": "aburi banana no choko-nattsu sōsu",
+    "en": "Blowtorched banana with chocolate-nut sauce — chocolate sauce over the batter, banana and nuts, meant to be taken all at once in the same forkful",
+    "price": "2100円 (rurubu) / 1800円 (san-tatsu, earlier)",
+    "section": "こってり系 Rich",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "米粉生地。ナッツ入り＝ナッツアレルギー注意。Rice-flour batter again. Contains NUTS, which the name says but which is worth flagging separately from gluten. Chocolate sauce composition is not published and neither is whether it contains dairy — assume it does. Meringue batter means egg regardless.",
+    "dish_key": "pancake_banana_choco"
+   },
+   {
+    "ja": "大納言と黒蜜の黄粉抹茶",
+    "romaji": "dainagon to kuromitsu no kinako matcha",
+    "en": "Dainagon adzuki beans with brown-sugar syrup, roasted soybean flour and matcha — the wagashi pancake",
+    "price": "2100円",
+    "section": "和風系 Japanese-style",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "THE ONE THAT LOOKS VEGAN AND IS NOT. 大納言小豆・黒蜜・黄粉・抹茶はすべて植物性。Every topping on this pancake is plant food — adzuki beans, muscovado syrup, roasted soy flour, green tea — which is exactly why it needs saying that the pancake underneath is built on egg-white meringue. 黄粉 is roasted soybean, so it also carries soy. Rice flour, no wheat ingredient named.",
+    "dish_key": "pancake_azuki_kinako"
+   },
+   {
+    "ja": "柑橘果実のカスタードソース",
+    "romaji": "kankitsu kajitsu no kasutādo sōsu",
+    "en": "Citrus with custard sauce — a seasonal pancake; the citrus changes through the year and was pink grapefruit when san-tatsu visited",
+    "price": "1800円 (san-tatsu, earlier pricing)",
+    "section": "季節限定 Seasonal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "カスタード＝牛乳と卵。Custard is milk and egg, so this is the least vegan-adjacent of the sweet options despite looking like fruit on a pancake. Rice-flour batter. Seasonal, so it may not be on when you go.",
+    "dish_key": "pancake_citrus_custard"
+   },
+   {
+    "ja": "バニラアイスクリーム（追加トッピング）",
+    "romaji": "banira aisu kurīmu",
+    "en": "Vanilla ice cream, added to any pancake — one of about fifteen extra toppings",
+    "price": "100円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. The topping list runs to roughly fifteen items and nothing about their composition is published; if you are here on the rice-flour question, the toppings are the part that has not been checked by anybody.",
+    "dish_key": "ice_cream_topping"
+   },
+   {
+    "ja": "ホイップクリーム（追加トッピング）",
+    "romaji": "hoippu kurīmu",
+    "en": "Whipped cream, added to any pancake",
+    "price": "100円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Note that 石釜-style shops sometimes use a vegetable whip rather than cream; this one does not say, and it makes no difference to a coeliac either way.",
+    "dish_key": "whipped_cream_topping"
+   }
+  ]
+ },
+ "tokyo_asakusa_jukusei_miso_ram": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://retty.me/area/PRE13/ARE9/SUB902/100001698358/",
+   "https://san-tatsu.jp/articles/254739/",
+   "https://ameblo.jp/garemayu/entry-12884484895.html",
+   "https://map.yahoo.co.jp/v3/place/9HlKQEA9ySk"
+  ],
+  "price_note": "⚠ CHECK BEFORE YOU TRAVEL: ONE SOURCE REPORTS THIS SHOP CLOSED. A ramen blog that visited on 2025-01-30 has since headed its entry 【閉店】 and added ※ 2026年 7月15日をもって閉店しました ※, repeating (※閉店しました) beside the address. That is a specific date, not a rumour. It is ALSO a single blogger: Retty still shows the shop with a full priced menu and no closure notice, san-tatsu’s article carries none, and Yahoo! Map still lists it as merely 営業時間外 with a normal 11:30 opening — but aggregators lag closures by months and routinely never update at all, so their silence is not evidence. The record is kept rather than emptied because the menu below is real and was real recently; treat the shop as probably gone and confirm before going. This has NOT been entered as a closure in the place record — one blog is not enough to hide a shop, and that is a call for a human. ⚠ THE MISO IS THE POINT AND THE MISO IS THE PROBLEM. San-tatsu records that the owner, who trained for years at the けいすけ group before opening here on 2023-04-18, selects Echigo (Niigata) miso by going to the region himself, and that the noodle is a crimped medium-thick one from 三河屋製麺. The broth is 豚骨 and 鶏がら — pork bone and chicken bone. So: wheat in the noodle, wheat or barley in the miso (Japanese miso is fermented on a rice, barley or soybean koji and 麦味噌 is not declarable under Japanese allergen law), pork and chicken in the broth. Nothing here is close to vegetarian and nothing is gluten-free. ⚠ AND THE ONE THING THAT WOULD NEVER OCCUR TO YOU: the free 味変味噌 — the little dish of extra miso you are invited to stir into the bowl partway through, which is the shop’s signature gimmick — CONTAINS ANKIMO, MONKFISH LIVER. San-tatsu says so plainly. A condiment that reads as “more miso” is a fish-liver product. If you are avoiding fish, or are pescatarian-by-exception, or simply have an allergy, do not stir it in. There is also a 生卵サービス, a free raw egg. ⚠ PRICES DISAGREE BY VINTAGE: the blog paid 1100円 for the standard bowl in January 2025; Retty’s list has it at 1200円. Both are recorded. Tabelog has served HTTP 403 to this egress since 2026-09-02.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "熟成味噌らーめん",
+    "romaji": "jukusei miso rāmen",
+    "en": "The aged-miso ramen — the house bowl, built on Niigata Echigo miso the owner sources in person, over a pork-and-chicken bone broth, with a crimped medium-thick noodle from Mikawaya Seimen. Comes with a free raw egg and a separate dish of extra miso for adjusting the flavour halfway through",
+    "price": "1200円 (Retty) / 1100円 (as paid 2025-01)",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺＝小麦、味噌は麦麹の可能性、スープは豚骨＋鶏がら。Wheat in the noodle; miso may be barley-fermented and Japanese law does not require that to be declared; pork and chicken bones in the broth. ⚠ And do not stir in the free 味変味噌 without reading the note above — it contains あん肝, monkfish liver.",
+    "dish_key": "miso_ramen"
+   },
+   {
+    "ja": "熟成辛味噌らーめん",
+    "romaji": "jukusei kara-miso rāmen",
+    "en": "The spicy version of the house bowl",
+    "price": "1250円",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "辛味噌＝豆板醤等を合わせるのが一般的。Same wheat noodle and pork-chicken broth. The chilli element in a 辛味噌 is normally doubanjiang or a chilli-miso paste, both of which are additional fermented bean products and additional undeclared gluten risk.",
+    "dish_key": "kara_miso_ramen"
+   },
+   {
+    "ja": "熟成辛味噌らーめん 味玉",
+    "romaji": "jukusei kara-miso rāmen ajitama",
+    "en": "The spicy bowl with a seasoned soft-boiled egg added",
+    "price": "1400円",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味玉は醤油ダレ漬け＝小麦。The egg is marinated in soy sauce, so it is a wheat item in its own right. Egg.",
+    "dish_key": "kara_miso_ramen_ajitama"
+   },
+   {
+    "ja": "渡り蟹の味噌らーめん 極",
+    "romaji": "watarigani no miso rāmen kiwami",
+    "en": "Swimming-crab miso ramen, the top bowl — more than twice the price of the standard and the shop’s showpiece",
+    "price": "2500円",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 渡り蟹＝甲殻類、日本の特定原材料8品目のひとつ。CRAB, which is one of Japan’s eight statutory allergens and is in the broth rather than on top of it, so it cannot be left out. Same wheat noodle and miso.",
+    "dish_key": "watarigani_miso_ramen"
+   },
+   {
+    "ja": "熟成味噌らーめん スペシャル",
+    "romaji": "jukusei miso rāmen supesharu",
+    "en": "The loaded version — the standard bowl with the full topping set, including the slow-braised chashu the blog rated highest",
+    "price": "1450円",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "More soy-braised pork and more marinated egg on the same wheat noodle. The deluxe bowl is the most wheat-exposed order.",
+    "dish_key": "miso_ramen_special"
+   },
+   {
+    "ja": "生卵サービス / 味変味噌サービス",
+    "romaji": "nama-tamago sābisu / ajihen miso sābisu",
+    "en": "Two free extras that come with the bowls: a raw egg, and a small dish of miso to stir in partway through to change the flavour",
+    "price": "無料 (free)",
+    "section": "サービス Free with a bowl",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 味変味噌にはあん肝が入っている（さんたつ）。THE ONE TO READ. The extra miso is not just miso: san-tatsu records that it contains ANKIMO — monkfish liver. A free condiment that looks like seasoning is a fish product, and nothing at the table tells you. The raw egg is egg. Neither is gluten-free in a bowl that is already wheat.",
+    "dish_key": "ajihen_miso"
+   }
+  ]
  }
 }

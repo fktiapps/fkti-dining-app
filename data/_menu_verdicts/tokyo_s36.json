@@ -1869,5 +1869,161 @@
     "dish_key": "monsoon_valley_wine"
    }
   ]
+ },
+ "tokyo_tori_soba_mitaba": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://mitaba.favy.jp/",
+   "https://map.yahoo.co.jp/v3/place/JrUvHCRx3I-/menu",
+   "https://r.gnavi.co.jp/ceurnt940000/"
+  ],
+  "price_note": "⚠ THE MENU BELOW IS USER-SUBMITTED, NOT THE SHOP’S OWN BOARD. Yahoo! Map heads this list ユーザー投稿のメニュー — items typed in by members of the public — and prints its own disclaimer, ※ 掲載時点の情報です。最新情報は店舗でご確認ください. Nothing here is dated, and the transliterations are diners’ own. In this case the list discredits itself helpfully: two of its entries — 豚ミンチ 238円 and 中華名菜酢豚 213円 — are supermarket packets, not dishes from a Kabukichō ramen counter, and they are proof that anyone can add anything. Several bowls also appear twice under different diners’ names (濃厚鶏つけそば/塩(味玉付) 930円 and 漬けそば 全部のせ 1,030円 against 鶏白湯そば全部乗せ 1,030円). What DOES corroborate part of it is the shop’s own favy page, which independently gives 濃厚鶏そば(塩) 味玉入り at 930円 and 生ビール(アサヒ) at 480円, and hours of 11:00〜05:00 seven days a week. Gnavi was read and carries no prices. X (twitter) is the shop’s other channel and serves no menu to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02. ⚠ WHAT THE MENU SHAPE TELLS YOU, WHICH IS THE PART WORTH TRUSTING: this is a CHICKEN shop running two broths at once — 鶏白湯 (paitan, the cloudy emulsified one boiled hard from chicken frames and feet until the collagen breaks down) and 鶏清湯/淡麗 (chintan, the clear one). Both are chicken. There is no vegetable bowl. Every noodle in the building is wheat and every tare is soy-based, so nothing here is gluten-free at any setting. ⚠ THE ONE LINE THAT CHANGES THE ANIMAL ANSWER: あご出汁鶏そば. あご is FLYING FISH, dried and used as a dashi base in Kyushu — so that bowl is chicken AND fish, which matters if you avoid one but not the other. 担々麺 adds sesame paste and, conventionally, minced pork. ⚠ AND THE HOURS ARE THE REASON TO KNOW THIS SHOP EXISTS: open until 5am, which in Kabukichō means it is one of the few places serving actual cooking at four in the morning.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "濃厚鶏そば（塩）味玉入り",
+    "romaji": "nōkō tori soba (shio) ajitama-iri",
+    "en": "Rich chicken soba, salt tare, with a seasoned egg — the one bowl the shop itself publishes a price for. Also recorded by diners as 濃厚鶏つけそば/塩(味玉付) at the same 930円",
+    "price": "930円",
+    "section": "鶏白湯 Chicken paitan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "鶏白湯＝鶏がら・もみじを長時間炊いた乳化スープ。中華麺＝小麦、味玉＝醤油漬け。Chicken frames and feet boiled to emulsion — poultry, and unusually concentrated poultry. Wheat noodle. The 味玉 is marinated in soy sauce, so the egg is a wheat item too. A 塩 (salt) tare is often assumed to be the wheat-free option and is not: shio tare is built on more than salt and normally includes a soy or fermented element.",
+    "dish_key": "tori_paitan_shio"
+   },
+   {
+    "ja": "鶏白湯そば 全部乗せ",
+    "romaji": "tori paitan soba zenbu-nose",
+    "en": "The paitan bowl with everything on it. Also recorded as 漬けそば 全部のせ at the same price",
+    "price": "1,030円",
+    "section": "鶏白湯 Chicken paitan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Every extra topping at a ramen counter is soy-marinated — chashu, egg, menma. The loaded bowl is the most wheat-exposed order, not the least.",
+    "dish_key": "tori_paitan_zenbu"
+   },
+   {
+    "ja": "特製濃厚鶏白湯そば",
+    "romaji": "tokusei nōkō tori paitan soba",
+    "en": "The special rich chicken paitan — the house version with the full topping set",
+    "price": "1,000円〜",
+    "section": "鶏白湯 Chicken paitan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same chicken emulsion, same wheat noodle, more soy-cured toppings.",
+    "dish_key": "tori_paitan_tokusei"
+   },
+   {
+    "ja": "鶏塩そば＋味玉",
+    "romaji": "tori shio soba + ajitama",
+    "en": "Chicken salt soba with an egg added — the lighter clear-broth line rather than the paitan",
+    "price": "850円",
+    "section": "鶏清湯 Chicken chintan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "清湯＝澄んだ鶏スープ。A clear chicken broth rather than an emulsified one. Still chicken, still a wheat noodle, still a soy-marinated egg.",
+    "dish_key": "tori_shio_soba"
+   },
+   {
+    "ja": "淡麗鶏そば（味玉入り）",
+    "romaji": "tanrei tori soba (ajitama-iri)",
+    "en": "Light-style chicken soba with a seasoned egg — 淡麗 is the word Japanese ramen uses for a broth built for clarity rather than weight",
+    "price": "950円",
+    "section": "鶏清湯 Chicken chintan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The clean-tasting bowl, which is not the same as a clean-ingredient bowl: chicken broth, wheat noodle, soy tare, soy-marinated egg.",
+    "dish_key": "tanrei_tori_soba"
+   },
+   {
+    "ja": "あご出汁鶏そば",
+    "romaji": "ago-dashi tori soba",
+    "en": "Flying-fish-stock chicken soba — the cheapest bowl on the list",
+    "price": "750円",
+    "section": "鶏清湯 Chicken chintan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ あご＝トビウオ。THE BOWL WHOSE NAME HIDES A SECOND ANIMAL. Ago is FLYING FISH, dried and used as a premium dashi base in Kyushu — so this bowl is chicken and fish together, not chicken alone. Anyone avoiding fish specifically needs to know that, and the English word “chicken soba” will not tell them. Wheat noodle, soy tare.",
+    "dish_key": "ago_dashi_tori_soba"
+   },
+   {
+    "ja": "濃厚辛味噌鶏そば",
+    "romaji": "nōkō kara-miso tori soba",
+    "en": "Rich spicy-miso chicken soba",
+    "price": "880円",
+    "section": "鶏白湯 Chicken paitan",
+    "gf": "no",
+    "vegan": "no",
+    "note": "辛味噌＝味噌＋豆板醤等。Miso and a chilli-bean paste on top of the chicken broth: two more fermented soy products, either of which may be barley- or wheat-fermented and neither of which has to be declared under Japanese law.",
+    "dish_key": "kara_miso_tori_soba"
+   },
+   {
+    "ja": "鶏二郎 / 鶏二郎ラーメン",
+    "romaji": "tori jirō",
+    "en": "Chicken Jiro — the shop’s take on the Jiro style: a mountain of boiled bean sprouts and cabbage, garlic to taste, and a very thick noodle, done with chicken instead of the usual pork",
+    "price": "800円",
+    "section": "二郎系 Jiro-style",
+    "gf": "no",
+    "vegan": "no",
+    "note": "二郎系は極太麺＝小麦、タレは醤油、野菜は茹でもやしとキャベツ。THE VEGETABLE MOUNTAIN IS NOT A VEGETARIAN DISH. A Jiro bowl is defined by the pile of boiled sprouts and cabbage on top, which is exactly the thing that makes travellers think it is the plant option — underneath it is a very thick wheat noodle in a soy tare, and here a chicken broth. The vegetables are also boiled in the same water as the noodles.",
+    "dish_key": "tori_jiro"
+   },
+   {
+    "ja": "まぜそば",
+    "romaji": "maze soba",
+    "en": "Mazesoba — no broth: thick noodles tossed with a concentrated tare and toppings at the bottom of the bowl, mixed by you",
+    "price": "900円",
+    "section": "まぜそば Mazesoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "汁なし＝タレの濃度が高い。No soup means the soy tare is more concentrated, not less. Wheat noodle. Mazesoba conventionally finishes with a raw egg yolk and minced meat, neither declared here.",
+    "dish_key": "maze_soba"
+   },
+   {
+    "ja": "担々麺",
+    "romaji": "tantanmen",
+    "en": "Tantanmen — sesame paste and chilli oil over noodles",
+    "price": "900円",
+    "section": "担々麺 Tantanmen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "担々麺は芝麻醤（ごまペースト）＋辣油＋通常は肉味噌。Sesame paste and chilli oil are the base — both plant — but a Japanese tantanmen is finished with a pork mince and its soup is normally chicken or pork stock, and this is a chicken shop. Sesame is a declarable allergen in Japan. Wheat noodle.",
+    "dish_key": "tantanmen"
+   },
+   {
+    "ja": "濃厚鶏つけそば ＋味玉トッピング",
+    "romaji": "nōkō tori tsuke-soba + ajitama",
+    "en": "Dipping version of the rich chicken bowl, with an egg added",
+    "price": "1,000円",
+    "section": "つけそば Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A dipping broth is a reduced broth: more concentrated chicken and more concentrated soy tare. Thicker wheat noodle.",
+    "dish_key": "tori_tsukesoba"
+   },
+   {
+    "ja": "生ビール（アサヒ）",
+    "romaji": "nama bīru (Asahi)",
+    "en": "Asahi draught — the only alcoholic drink the shop’s own page lists",
+    "price": "480円",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "ビール＝大麦麦芽。Barley malt. One of the two prices the shop publishes itself.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "ソフトドリンク（ウーロン茶・三ツ矢サイダー・ボス レインボーマウンテン）",
+    "romaji": "sofuto dorinku",
+    "en": "The vending-machine soft drinks a diner recorded: Suntory oolong tea 140円, Mitsuya cider 140円, Boss Rainbow Mountain canned coffee 299円",
+    "price": "140円〜299円",
+    "section": "ドリンク Drinks (user-submitted list)",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Sealed factory drinks, so nothing in this kitchen touches them: oolong tea is leaves and water, and Mitsuya Cider is carbonated water, sugar and flavouring — both wheat-free and plant. The canned coffee is a milk coffee, so dairy. At 5am in Kabukichō these are the only things here a coeliac can have.",
+    "dish_key": "soft_drinks"
+   }
+  ]
  }
 }

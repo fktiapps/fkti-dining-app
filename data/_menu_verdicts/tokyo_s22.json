@@ -4252,5 +4252,83 @@
   "price_note": "No menu could be obtained for this shop from any source that still works, so this is an honest empty. ⚠ EVERY PUBLISHED ROUTE TO THIS RESTAURANT IS NOW BROKEN, AND THE PATTERN SUGGESTS IT HAS STOPPED TRADING. The record's URL https://gewb402.gorp.jp/ returns Gnavi's 404 page (「ご指定のページが見つかりません」). The matching Gnavi shop page r.gnavi.co.jp/jnst68u00000/ no longer serves shop content either — the menu URL renders only Gnavi's generic site chrome. The Lets Enjoy Tokyo listing enjoytokyo.jp/gourmet/spot/g_gewb402/ returns 404. Four independent listings taken down is not a platform glitch; that is what delisting looks like. ⚠ DO NOT LINK THE SHOP'S OLD DOMAIN. suidobashi.hatonomori.com still answers on plain HTTP, but it no longer serves the restaurant: it now returns a redirect interstitial that stamps a per-visit tracking id onto the URL (?tr_uuid=...&fp=-5) and bounces the visitor on through a script-computed target — the standard signature of a lapsed domain resold for traffic monetisation. Microsoft Defender on this machine quarantined the response as unwanted software on download. Whatever is on that host, it is not a menu, and it should not be put in front of a user. ⚠ THE ONLY LISTING STILL STANDING is Hitosara, which is a directory that keeps entries long after shops close and whose copy here is visibly stale (it still carries a COVID-era sanitising notice and has no user photos). What it records, for whatever it is worth: 東京都千代田区三崎町2-16-10, four minutes from JR Suidobashi south exit, 03-6261-6666, dinner only on weekdays and days before holidays, CLOSED SATURDAYS SUNDAYS AND PUBLIC HOLIDAYS, average spend ¥4,500. It lists no dishes and no prices. ⚠ IF IT IS TRADING, THE DIET ANSWER IS ALREADY CLEAR from what the concept is: a mutton yakiniku and jingisukan house whose selling point is unfrozen mutton shipped from Iida in Nagano and a secret-recipe dipping sauce reconstructed from an Iida restaurant. Jingisukan tare is a soy-sauce, fruit and mirin blend, so wheat, and the whole premise is grilled sheep. Nothing here is plausible for either diet. Telephone before travelling; do not rely on any of these links.",
   "last_checked": "2026-09-08",
   "items": []
+ },
+ "tokyo_menya_sarusuberi_hyakuji": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://umalog.jp/2025/08/17/sarusuberi-2/",
+   "https://hitosara.com/0032017247/"
+  ],
+  "price_note": "⚠ ONE PRICE, AND IT IS THE INTERESTING ONE. A Tokyo eating blog that visited on 2025-08-17 photographed the ticket machine but its write-up carries only a single figure: the 500円朝ラー, a five-hundred-yen morning ramen served on weekdays from 7:00 to 11:00. Hitosara was read and confirms the shop and its 11:00〜23:00 daytime hours but publishes no menu at all. Instagram is the shop’s only listed channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02. The dish names and portion structure below are from the ticket machine and are solid; the prices for them are not published anywhere readable and are recorded as such rather than guessed. ⚠ WHERE IT IS, WHICH IS MOST OF THE APPEAL: B1F of the Keio Frente building at Shinjuku-sanchōme, connected by underground passage to both Shinjuku-sanchōme and Shinjuku stations — so it can be reached in a downpour or a heatwave without going outside. Trading since 2010. ⚠ THE PORTION RULE IS WORTH KNOWING AND IS NOT OBVIOUS: 並盛 200g, 大盛 300g AT THE SAME PRICE, 特盛 400g. A free 50% upgrade is unusual enough to be the single most useful practical fact about this shop. ⚠ DIET: the house line is 煮干し — DRIED SARDINE — which is a whole small fish boiled and dried, and it is the broth rather than a garnish, so both the signature tsukemen and the signature soba are fish dishes with no variant that is not. The 淡麗塩つけ麺 the blog ate is described as a clear brown broth with white spring onion and aonori seaweed, containing chicken and seared chopped chashu plus thin crunchy menma — chicken and pork on top of it. Every noodle here is wheat. There is nothing on the published board without an animal in it.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "朝ラー（平日 7:00〜11:00）",
+    "romaji": "asa-rā",
+    "en": "The morning ramen — a bowl for five hundred yen, weekday mornings only, from seven until eleven. The shop’s value proposition and the reason people know it",
+    "price": "500円",
+    "section": "朝ラー Morning ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "どの銘柄の丼が朝ラーになるかは未掲載。Which bowl the morning price applies to is not published. Whatever it is, it is a wheat noodle in a soy or salt tare at a shop whose stock is dried sardine — fish — so nothing about the hour changes the ingredients.",
+    "dish_key": "asa_ramen"
+   },
+   {
+    "ja": "煮干しつけ麺",
+    "romaji": "niboshi tsukemen",
+    "en": "Niboshi tsukemen — the shop’s signature since it opened in 2010: noodles served cold and dry, with a concentrated dried-sardine dipping broth",
+    "price": "未掲載 (not published)",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "煮干し＝小魚を丸ごと煮て干したもの。DRIED WHOLE FISH IS THE BROTH, not a seasoning in it — there is no niboshi bowl anywhere that a vegetarian can eat. A dipping broth is reduced, so the fish and the soy are both more concentrated than in a soup bowl. Wheat noodle.",
+    "dish_key": "niboshi_tsukemen"
+   },
+   {
+    "ja": "煮干しそば",
+    "romaji": "niboshi soba",
+    "en": "Niboshi soba — the soup version of the same dried-sardine broth, and the line the blog says has been gaining on the tsukemen",
+    "price": "未掲載 (not published)",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Despite the word そば this is a Chinese-style wheat noodle, not buckwheat — そば in a ramen shop’s naming means the bowl, not the flour. Fish broth, soy tare.",
+    "dish_key": "niboshi_soba"
+   },
+   {
+    "ja": "淡麗塩つけ麺",
+    "romaji": "tanrei shio tsukemen",
+    "en": "Light-style salt tsukemen — the blog’s pick: a clear brown dipping broth rather than the heavy niboshi one, with white spring onion and aonori seaweed floating in it, chicken and seared chopped chashu underneath, and fine crunchy menma",
+    "price": "未掲載 (not published)",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "清湯系＝澄んだスープ、具に鶏と炙りチャーシュー。THE “LIGHT” BOWL IS NOT THE PLANT BOWL. 淡麗 describes clarity of flavour, and this one is built on chicken with seared pork chashu chopped into it. 塩 tare is not just salt either. The aonori and negi are garnishes on an animal broth. Wheat noodle; menma is fermented bamboo, usually seasoned with soy.",
+    "dish_key": "tanrei_shio_tsukemen"
+   },
+   {
+    "ja": "麺量（並200g／大300g／特盛400g）",
+    "romaji": "menryō",
+    "en": "Portion sizes on the ticket machine — regular 200g, large 300g, extra-large 400g. The large is the same price as the regular",
+    "price": "並・大 同額 / 特盛 未掲載",
+    "section": "麺量 Portions",
+    "gf": "no",
+    "vegan": "no",
+    "note": "THE MOST USEFUL PRACTICAL FACT ABOUT THIS SHOP: 大盛 (300g) costs the same as 並盛 (200g), so a fifty per cent bigger bowl is free if you ask for it at the machine. Not a dish; recorded because it is the choice you have to make before you sit down. The noodle is wheat at every weight.",
+    "dish_key": "noodle_portion"
+   },
+   {
+    "ja": "味玉",
+    "romaji": "ajitama",
+    "en": "Seasoned soft-boiled egg, as a topping",
+    "price": "未掲載 (not published)",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味付＝醤油ダレに漬ける＝小麦。Marinated in soy sauce, so it is a wheat item in its own right. Egg.",
+    "dish_key": "ajitama_topping"
+   }
+  ]
  }
 }

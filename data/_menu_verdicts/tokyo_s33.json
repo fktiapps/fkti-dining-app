@@ -975,5 +975,161 @@
     "dish_key": "iekei_zenbu_nose"
    }
   ]
+ },
+ "tokyo_taiwan_tonyu_daiou_taiwa": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://map.yahoo.co.jp/v3/place/m5G4tEtSjq2/menu",
+   "https://hitosara.com/0031431339/",
+   "https://r.gnavi.co.jp/9dwhgab50000/"
+  ],
+  "price_note": "⚠ THE MENU BELOW IS USER-SUBMITTED, NOT THE SHOP’S OWN BOARD. Yahoo! Map heads this list ユーザー投稿のメニュー — items typed in by members of the public — and prints its own disclaimer, ※ 掲載時点の情報です。最新情報は店舗でご確認ください. Nothing here is dated, and the transliterations are diners’ own. One entry below is recorded as 誠豆ハセット, which is a diner mangling 鹹豆漿セット — useful confirmation of what kind of list this is. Hitosara was read and confirms the shop but publishes no menu: it gives ランチ ～999円, ディナー 4,000〜4,999円, and 定休日 日曜日、祝日 (closed Sundays and public holidays). Gnavi was read and carries no prices at all. Instagram is the shop’s only live channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02. Note that this shop sits by Kudanshita/Jimbōchō rather than at Suidōbashi proper, despite where the record files it — the Tabelog id on file (13246735) matches the Hitosara listing, so it is the same business. ⚠ WHY A TAIWANESE BREAKFAST SHOP IS ONE OF THE BEST ENTRIES IN THIS DATASET FOR A PLANT-EATER AND ONE OF THE WORST FOR A COELIAC. Taiwanese breakfast is built on SOY MILK, and 豆漿 — sweet soy milk, 480円 here — is soybeans and water and sugar and nothing else: vegan, wheat-free, and served hot in a bowl. 豆花, the soft soy pudding, is the same base set soft. Those two are genuinely clean. Almost everything else on the list is wheat, and it is wheat in forms a European will not recognise: 胡椒餅 is a BAKED WHEAT BUN with pork and pepper inside, 蛋餅 (danbing) is a WHEAT-FLOUR crêpe rolled round egg, and 鹹豆漿 — the savoury soy milk that is the shop’s namesake dish — is conventionally served with a torn 油條, a deep-fried WHEAT dough stick, dropped into it. The soy milk is safe; the thing floating in it is not. ⚠ AND ONE GENUINE SURPRISE: 肉圓 (bawan) is the one Taiwanese street food whose wrapper is NOT wheat — it is a translucent skin made from sweet-potato starch and rice flour. That makes it the only savoury item here that could be available to a coeliac, and it comes with a sauce, and the sauce is the question.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "豆漿",
+    "romaji": "tōnyū / dòujiāng",
+    "en": "Soy milk — the shop is named for it (豆乳大王, “soy milk king”). Served hot, freshly ground, sweet by default; this is what Taiwan drinks at breakfast",
+    "price": "480円",
+    "section": "豆漿 Soy milk (user-submitted list)",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "THE CLEANEST ITEM IN THE SHOP. 豆漿は大豆・水・砂糖のみ。Soybeans, water and sugar — no wheat ingredient, no animal ingredient, and no seasoning stage where either could enter. Soy is itself one of Japan’s recommended-declaration allergens, so this is the one thing here a soy-allergic traveller must avoid rather than seek.",
+    "dish_key": "soy_milk"
+   },
+   {
+    "ja": "豆漿セット",
+    "romaji": "tōnyū setto",
+    "en": "Soy milk set — the soy milk with something to eat alongside it",
+    "price": "950円",
+    "section": "セット Sets (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "What comes with it is not published, and that is the whole gluten question: at a Taiwanese breakfast counter the default accompaniment is 油條, a fried WHEAT dough stick, or a 蛋餅, a wheat crêpe. Ask what the set contains before assuming the drink’s cleanliness carries over.",
+    "dish_key": "soy_milk_set"
+   },
+   {
+    "ja": "鹹豆漿セット（ミニ魯肉飯付）",
+    "romaji": "shentōjan setto (mini rōrō-han tsuki)",
+    "en": "Savoury soy milk set with a small lu rou fan — recorded by a diner as 誠豆ハセット ミニ魯肉飯. Shentoujiang is soy milk set into loose curds with vinegar, seasoned savoury rather than sweet",
+    "price": "950円",
+    "section": "セット Sets (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "鹹豆漿は台湾では油條（小麦の揚げパン）と干し海老・菜脯を載せるのが定番。THE NAMESAKE DISH AND IT IS NOT THE SAFE ONE. The soy-milk base is clean; the standard toppings are not — a torn deep-fried wheat cruller, and commonly dried shrimp and preserved radish. The 魯肉飯 in the set is pork braised in soy sauce, so wheat and pork again. Neither component is declared here.",
+    "dish_key": "shentoujiang_set"
+   },
+   {
+    "ja": "魯肉飯",
+    "romaji": "rōrō-han / lǔ ròu fàn",
+    "en": "Lu rou fan — minced pork belly braised down in soy, five-spice and rock sugar, ladled over rice. Taiwan’s national comfort dish",
+    "price": "880円",
+    "section": "ご飯もの Rice (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "魯肉は醤油で煮込む＝小麦。The braise is soy sauce, and the pork sits in it rather than beside it, so there is no version without. Pork.",
+    "dish_key": "lu_rou_fan"
+   },
+   {
+    "ja": "魯肉飯＆鶏肉飯（ハーフ＆ハーフ）",
+    "romaji": "rōrō-han & jīròu-fàn",
+    "en": "Half and half — braised pork rice on one side, poached-chicken rice on the other",
+    "price": "800円〜",
+    "section": "ご飯もの Rice (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "鶏肉飯は鶏の茹で汁と鶏油をかける＝油そのものは小麦不使用だが、たれは醤油。The chicken side is shredded poached chicken with rendered chicken fat and the poaching liquor over rice, which is closer to wheat-free than the pork side — but it is finished with a soy-based sauce and nothing here is declared. Pork and chicken.",
+    "dish_key": "lu_rou_ji_rou_fan"
+   },
+   {
+    "ja": "魯肉飯セット",
+    "romaji": "rōrō-han setto",
+    "en": "Lu rou fan as a set. Also recorded as 魯肉飯セット ミニ豆漿 — with a small soy milk",
+    "price": "950円",
+    "section": "セット Sets (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Soy-braised pork over rice with a drink. The mini 豆漿 version is the one to take if you want the clean drink with it.",
+    "dish_key": "lu_rou_fan_set"
+   },
+   {
+    "ja": "鶏肉飯セット（蛋餅付）",
+    "romaji": "jīròu-fàn setto (danbing tsuki)",
+    "en": "Chicken rice set with a danbing — recorded by a diner as 鶏肉飯セット 蛋餅",
+    "price": "950円",
+    "section": "セット Sets (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "蛋餅の皮は小麦粉。The danbing is the problem: its skin is a wheat-flour batter crêpe, rolled around egg. Chicken, egg and wheat in one set.",
+    "dish_key": "ji_rou_fan_set"
+   },
+   {
+    "ja": "ダンピン（蛋餅）",
+    "romaji": "danbing",
+    "en": "Danbing — a thin savoury crêpe cooked with egg spread over it and rolled up. The other pillar of Taiwanese breakfast alongside soy milk",
+    "price": "〜999円",
+    "section": "軽食 Light dishes (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "蛋餅の生地は小麦粉と水。The pancake is wheat flour and water, and 蛋 means egg — both are the dish rather than an addition. Frequently served with a sweetened soy dipping sauce as well.",
+    "dish_key": "danbing"
+   },
+   {
+    "ja": "胡椒餅",
+    "romaji": "kōshō-bing / hújiāo bǐng",
+    "en": "Pepper bun — a fist-sized bun of pork and black pepper and spring onion, slapped onto the inside wall of a clay oven and baked until the outside blisters. Taipei night-market food",
+    "price": "400円",
+    "section": "軽食 Light dishes (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "胡椒餅の皮は小麦粉の生地。The shell is a wheat dough — this is a baked bun, and the crust is the point of it. Pork inside, seasoned with soy.",
+    "dish_key": "hujiao_bing"
+   },
+   {
+    "ja": "肉圓",
+    "romaji": "ba-wan / ròu yuán",
+    "en": "Bawan — a translucent dumpling the size of a fist, steamed then warmed in oil, with pork and bamboo shoot inside, eaten under a sweet-and-savoury sauce",
+    "price": "420円",
+    "section": "軽食 Light dishes (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE ONE SAVOURY ITEM HERE WHOSE WRAPPER IS NOT WHEAT. 肉圓の皮はサツマイモ澱粉と米粉で作る＝小麦不使用。The translucent skin is sweet-potato starch and rice flour, which is exactly why it looks like nothing else on a wheat-heavy menu. That makes the SAUCE the deciding question, and the sauce is not declared: Taiwanese bawan sauce is normally a rice-and-starch paste with sugar and often a soy or fermented-bean element. Worth asking about properly. Pork.",
+    "dish_key": "bawan"
+   },
+   {
+    "ja": "お粥",
+    "romaji": "okayu",
+    "en": "Congee — rice porridge, the third leg of a Taiwanese breakfast",
+    "price": "〜999円",
+    "section": "軽食 Light dishes (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "台湾粥は干し椎茸・干し海老・肉のいずれかで炊くのが一般的。Rice and water carry no wheat, but the interesting question at a Taiwanese counter is what the porridge was cooked IN — dried shiitake, dried shrimp or a meat stock are all standard, and dried shrimp is a crustacean hiding in something that looks like plain rice. Which one is not published here. Ask.",
+    "dish_key": "congee"
+   },
+   {
+    "ja": "豆花",
+    "romaji": "tōfa / dòuhuā",
+    "en": "Douhua — the same soy milk set soft into a silken pudding, served warm or cold with syrup and toppings",
+    "price": "600円",
+    "section": "デザート Dessert (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "THE OTHER GOOD ONE. 豆花自体は豆乳を凝固させたもの＝植物性・小麦不使用。The pudding is soy milk and a coagulant — plant, no wheat. Everything uncertain about it is on top: peanuts, taro, tapioca pearls, adzuki and sweet syrups are the standard toppings, all of them plant, but Japanese kitchens sometimes add condensed milk. Ask what comes on it. Peanut is the allergen to watch here rather than gluten.",
+    "dish_key": "douhua"
+   },
+   {
+    "ja": "花生餅",
+    "romaji": "kasei-bing / huāshēng bǐng",
+    "en": "Peanut bing — a peanut-filled pastry, the cheapest item recorded",
+    "price": "230円",
+    "section": "軽食 Light dishes (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ 落花生使用。PEANUT, which is one of Japan’s eight statutory allergens and the reason to read this line at all. On gluten: 餅 (bǐng) in Taiwanese usage almost always means a WHEAT flatbread or pastry rather than a rice cake, so treat this as wheat unless the counter says otherwise — but the character can go either way and the shop declares nothing. Ask. Likely plant-based, though pastry lard is not unheard of.",
+    "dish_key": "huasheng_bing"
+   }
+  ]
  }
 }

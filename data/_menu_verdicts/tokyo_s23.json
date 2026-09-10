@@ -936,5 +936,269 @@
     "dish_key": "ice-cream"
    }
   ]
+ },
+ "tokyo_sekiyama_beikokuten": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.hotpepper.jp/strJ001146070/food/"
+  ],
+  "price_note": "⚠ PRICES ARE FROM 2016 AND HOT PEPPER SAYS SO. The page is stamped 関山米穀店 料理 2016/07/19 更新 and the listing carries ※更新日が2021/3/31以前の情報は、当時の価格及び税率に基づく情報となります — these figures predate the October 2019 rise to 10% consumption tax by more than three years. The dish list is still worth having because at a tapas bar the composition of the plates changes far more slowly than the prices. Instagram is the shop’s only listed channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02. ⚠ WHAT THIS PLACE IS: a Spanish-leaning bistro-bar near Jimbocho with a stock of natural wine — glasses from 700円, bottles from 3400円 — and a tapas list of about twenty-three plates. The name means “Sekiyama Rice Merchant”, which is what the premises used to be. ⚠ THE GLUTEN SHAPE IS UNUSUALLY GOOD, AND THAT IS THE USEFUL FINDING. Spanish small plates are mostly not built on flour: of the twenty-three dishes here, exactly one is bread (the loaf from Parlor Ekoda) and the rest are vegetables, cured meat, eggs, fish and rice. Two of the biggest plates are RICE — a brown-rice risotto with scallop and asparagus, and a mixed paella — which in most of this dataset is the thing that does not exist. That does not make them safe: a paella or risotto stock is a stock, and nobody has published what is in it. But the number of conversations you would need to have here is small. ⚠ THE VEGAN SHAPE IS THE OPPOSITE. Only two plates on the list contain no named animal — the marinated olives and the green salad — and the salad’s dressing is not described. Everything else is pork, poultry, offal, fish, cheese or egg. Nothing in this record has an allergen chart behind it; the flags below read the dish names and the shop’s own descriptions and nothing more.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "エビのカナッペ ゴイスアルギ風",
+    "romaji": "ebi no kanappe Goizu-arugi fū",
+    "en": "Prawn canapé in the style of Goiz Argi — the shop names the San Sebastián pintxo bar it is copying, and sells this by the piece",
+    "price": "250円(1P、2016-07)",
+    "section": "前菜 Starters",
+    "gf": "no",
+    "vegan": "no",
+    "note": "カナッペ＝パンの上。A canapé is a thing on a piece of BREAD, so this is wheat by construction. Prawn, which is one of Japan’s eight statutory allergens.",
+    "dish_key": "ebi_canape"
+   },
+   {
+    "ja": "黒トリュフのオムレツ",
+    "romaji": "kuro toryufu no omuretsu",
+    "en": "Black truffle omelette — the shop’s recommended main, soft egg with truffle worked through it",
+    "price": "900円 (2016-07)",
+    "section": "卵料理 Egg",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "オムレツ自体は卵とバター＝小麦不使用。An omelette is egg and fat, with no wheat of its own — one of the better bets on a tapas list if you avoid gluten. Kept at ask because truffle products are frequently sold as a paste or oil whose carrier is not declared. Egg and dairy, so not vegan.",
+    "dish_key": "truffle_omelette"
+   },
+   {
+    "ja": "パテ・ド・カンパーニュ",
+    "romaji": "pate do kanpānyu",
+    "en": "Country pâté — pork and chicken liver, the wine-bar default. Served immediately, so it is what to order first",
+    "price": "700円 (2016-07)",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "パテは小麦粉やパン粉をつなぎに使う場合がある。Pork and chicken liver. Pâté is frequently bound with breadcrumbs or flour and sometimes finished with brandy — none of that is declared here — and it will arrive with bread unless you say otherwise.",
+    "dish_key": "pate_de_campagne"
+   },
+   {
+    "ja": "鶏白レバーパテ",
+    "romaji": "tori shiro-rebā pate",
+    "en": "Chicken white-liver pâté — made from the pale, fatty livers rather than ordinary ones",
+    "price": "600円 (2016-07)",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Poultry offal. Same binder question as the country pâté, and the same bread alongside.",
+    "dish_key": "shiro_reba_pate"
+   },
+   {
+    "ja": "豚のリエット",
+    "romaji": "buta no rietto",
+    "en": "Pork rillettes",
+    "price": "700円 (2016-07)",
+    "section": "前菜 Starters",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "リエット自体は豚肉と脂のみが基本。Rillettes are traditionally just pork and its own fat, which would make this wheat-free — but it is a spread, and it is served to be spread on something. Ask for it without the bread.",
+    "dish_key": "pork_rillettes"
+   },
+   {
+    "ja": "パーラー江古田さんのパン",
+    "romaji": "Pārā Ekoda-san no pan",
+    "en": "Bread from Parlor Ekoda — the shop names its baker rather than baking its own",
+    "price": "500円 (2016-07)",
+    "section": "パン Bread",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "THE ONE ITEM ON THE ENTIRE LIST MADE OF WHEAT, WHICH IS WORTH SAYING OUT LOUD ABOUT A EUROPEAN WINE BAR. Everything else here is vegetables, meat, fish, eggs or rice; this is the bread. Whether it contains dairy or egg depends on the loaf and is not stated.",
+    "dish_key": "bread"
+   },
+   {
+    "ja": "オリーブマリネ",
+    "romaji": "orību marine",
+    "en": "Marinated olives — the cheapest plate on the list",
+    "price": "300円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "ONE OF ONLY TWO PLATES HERE WITH NO NAMED ANIMAL IN IT. Olives, oil, herbs and usually garlic and citrus. No wheat ingredient and no animal ingredient. Kept at ask for gluten only because the marinade is not described and no allergen policy exists.",
+    "dish_key": "marinated_olives"
+   },
+   {
+    "ja": "自然な葉っぱのグリーンサラダ",
+    "romaji": "shizen na happa no gurīn sarada",
+    "en": "Green salad of unforced leaves — the shop’s phrasing suggests small-grower salad rather than bagged",
+    "price": "650円 (2016-07)",
+    "section": "サラダ Salad",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ドレッシング未掲載。The leaves are the dish and the dressing is the unknown. A Spanish bar’s default is oil and sherry vinegar, which would be both vegan and wheat-free; a Japanese kitchen’s default frequently is not. Ask, and ask whether cheese or anchovy goes on it.",
+    "dish_key": "green_salad"
+   },
+   {
+    "ja": "ブラウンマッシュルームだけのサラダ",
+    "romaji": "buraun masshurūmu dake no sarada",
+    "en": "A salad of nothing but brown mushrooms, raw and sliced",
+    "price": "700円 (2016-07)",
+    "section": "サラダ Salad",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "「だけ」は具材の話でドレッシングの話ではない。The “nothing but” refers to what is in the bowl, not what is poured on it — raw mushroom salads in this idiom are almost always finished with shaved hard CHEESE and sometimes anchovy. Ask before assuming this is the plant plate.",
+    "dish_key": "mushroom_salad"
+   },
+   {
+    "ja": "ブラータチーズとフルーツトマト",
+    "romaji": "burāta chīzu to furūtsu tomato",
+    "en": "Burrata with intensively grown sweet tomatoes",
+    "price": "1100円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fresh cow’s-milk cheese, so dairy. No wheat ingredient in either component — one of the plates a coeliac can most likely eat here, subject to what it is served with.",
+    "dish_key": "burrata_tomato"
+   },
+   {
+    "ja": "パタタス・ブラバス（スペイン風ポテトフライ）",
+    "romaji": "patatasu burabasu",
+    "en": "Patatas bravas — fried potato under a spiced tomato sauce",
+    "price": "700円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "ブラバスソース自体は小麦不使用が普通、ただしアイオリを添える店が多い＝卵。The potato and the brava sauce are normally wheat-free and plant-based; the standard Spanish service adds AIOLI, which is egg. The fryer is also shared with whatever else this kitchen fries. Ask for it without aioli if that matters.",
+    "dish_key": "patatas_bravas"
+   },
+   {
+    "ja": "ホワイトアスパラのバター焼、ミモレットチーズがけ",
+    "romaji": "howaito asupara no batā-yaki, mimoretto chīzu-gake",
+    "en": "White asparagus cooked in butter with mimolette grated over",
+    "price": "1200円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Butter and hard cheese, so dairy twice. No wheat ingredient.",
+    "dish_key": "white_asparagus"
+   },
+   {
+    "ja": "スペイン産サラミの盛り合わせ",
+    "romaji": "Supein-san sarami no moriawase",
+    "en": "A board of Spanish salami",
+    "price": "800円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "サラミは小麦系のつなぎや燻製工程を含む場合がある。Cured pork. Salami is usually wheat-free but not reliably so — some use rusk or wheat-derived dextrose — and none of that is declared. Will arrive with bread unless you say otherwise.",
+    "dish_key": "salami_plate"
+   },
+   {
+    "ja": "砂肝のコンフィ、カレー風味",
+    "romaji": "sunagimo no konfi, karē fūmi",
+    "en": "Chicken gizzard confit with curry spicing",
+    "price": "600円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠「カレー風味」は要確認。Poultry offal cooked slowly in fat. The word “curry” is the thing to ask about: if the kitchen is using a Japanese curry powder or paste rather than whole spices, that is a WHEAT product. Curry spice powder itself normally is not.",
+    "dish_key": "gizzard_confit"
+   },
+   {
+    "ja": "エビとマッシュルームのアヒージョ",
+    "romaji": "ebi to masshurūmu no ahījo",
+    "en": "Prawns and mushrooms in bubbling garlic oil",
+    "price": "850円 (2016-07)",
+    "section": "タパス Tapas",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "アヒージョ自体はオイル・にんにく・唐辛子＝小麦不使用。The dish itself is oil, garlic and chilli, with no wheat — but ahijo exists to be mopped up with bread and arrives with it. Prawn: statutory allergen.",
+    "dish_key": "ahijo"
+   },
+   {
+    "ja": "タンドリーさば",
+    "romaji": "tandorī saba",
+    "en": "Tandoori mackerel — the kitchen’s one obvious departure from Spain",
+    "price": "900円 (2016-07)",
+    "section": "魚料理 Fish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "タンドリーマリネは通常ヨーグルト＋スパイス＝乳製品。Mackerel, which is a declarable fish in Japan and a common histamine problem besides. A tandoori marinade is yoghurt and spice, so dairy; whether the spice mix carries a wheat carrier is not declared.",
+    "dish_key": "tandoori_saba"
+   },
+   {
+    "ja": "鶏セセリ肉のプランチャ（鉄板焼き）",
+    "romaji": "tori seseri-niku no purancha",
+    "en": "Chicken neck meat on the plancha — seseri is the muscle from around the neck, chewy and prized in Japan",
+    "price": "700円 (2016-07)",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Chicken, grilled on a flat plate. Wheat only if the marinade or finishing sauce carries it, which is not stated. The plancha is shared with everything else grilled here.",
+    "dish_key": "seseri_plancha"
+   },
+   {
+    "ja": "ラムの肉団子 トマト煮込み",
+    "romaji": "ramu no nikudango tomato nikomi",
+    "en": "Lamb meatballs braised in tomato",
+    "price": "900円 (2016-07)",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ 肉団子はパン粉をつなぎに使うのが一般的。Lamb. Meatballs are normally bound with BREADCRUMBS, which is the most easily missed wheat on any European menu — ask specifically. Egg is a common second binder.",
+    "dish_key": "lamb_meatballs"
+   },
+   {
+    "ja": "松坂ポークのロースト",
+    "romaji": "Matsusaka pōku no rōsuto",
+    "en": "Roast Matsusaka pork — the named-breed pork from Mie",
+    "price": "1700円 (2016-07)",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pork. A roast itself carries no wheat; a pan sauce may be flour-thickened and is not described.",
+    "dish_key": "matsusaka_pork"
+   },
+   {
+    "ja": "青森、鴨のロースト",
+    "romaji": "Aomori, kamo no rōsuto",
+    "en": "Roast Aomori duck — the most expensive plate on the list",
+    "price": "1800円 (2016-07)",
+    "section": "肉料理 Meat",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Duck. Same question about the sauce as the pork.",
+    "dish_key": "duck_roast"
+   },
+   {
+    "ja": "ホタテとアスパラの玄米リゾット",
+    "romaji": "hotate to asupara no genmai rizotto",
+    "en": "Scallop and asparagus risotto made with BROWN rice rather than arborio — an unusual choice and a deliberate one",
+    "price": "1300円 (2016-07)",
+    "section": "米料理 Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "THE RICE DISHES ARE THE REASON A COELIAC MIGHT EAT HERE. 玄米＝小麦不使用、ただしブイヨンとチーズは未掲載。Brown rice carries no wheat at all. What is not published is the stock — a risotto is built on one — and whether it finishes with cheese and butter, which it almost certainly does. Scallop is a mollusc. Ask about the brodo.",
+    "dish_key": "genmai_risotto"
+   },
+   {
+    "ja": "ミックスパエリア",
+    "romaji": "mikkusu paeria",
+    "en": "Mixed paella — the sharing dish and the biggest plate on the list",
+    "price": "1900円 (2016-07)",
+    "section": "米料理 Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "パエリアは米＝小麦不使用、ただし出汁と具材は未掲載。Rice, saffron and stock — no flour anywhere in the construction, which is why paella is one of the safest European party dishes for a coeliac. “Mixed” means it will contain both seafood and meat, so shellfish is near-certain, and the stock is the one thing to ask about.",
+    "dish_key": "paella"
+   },
+   {
+    "ja": "チーズ",
+    "romaji": "chīzu",
+    "en": "Cheese, as a plate",
+    "price": "450円 (2016-07)",
+    "section": "チーズ Cheese",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dairy. Which cheeses is not published; blue cheeses are the one category where a wheat-based mould culture is occasionally used, and none of that is declared. Will come with bread or crackers unless you ask.",
+    "dish_key": "cheese_plate"
+   }
+  ]
  }
 }

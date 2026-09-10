@@ -1888,5 +1888,62 @@
     "dish_key": "mizudako_carpaccio"
    }
   ]
+ },
+ "tokyo_namiura_tsukemen_amp_ram": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.kanko-shinjuku.jp/news/history/article_4697.html",
+   "https://ramental.net/2025/12/02/namiura/",
+   "https://map.yahoo.co.jp/v3/place/MNF-6FTeDwY"
+  ],
+  "price_note": "⚠ ONLY ONE PRICE COULD BE READ, AND IT IS RECENT. A Tokyo ramen site that visited and photographed the ticket machine on 2025-12-02 records paying 990円 for つけ麺 粋 並, and notes the machine itself is 食券製 with a screen whose reflection defeated the camera — which is why the rest of the board is names without figures. The three lines it does record are the shop’s own structure: 味の基本は「つけ麺 粋」「担々つけ麺 焔」「らーめん 忍」の3本, plus toppings, rice dishes, à la carte and drinks. Shinjuku’s official tourism association carries a piece on the shop with no prices at all, and Yahoo! Map has no menu. Instagram is the shop’s only channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02. ⚠ THE SHOP IS NEW AND THE NAME IS A HOKUSAI JOKE: it opened in July 2025, two minutes from Shinjuku station, and 波海拉 (Namiura) is taken from 神奈川沖浪裏 — Hokusai’s Great Wave. ⚠ THE NOODLE IS THE THING TO READ IF YOU AVOID GLUTEN, BECAUSE IT IS WORSE THAN USUAL. The tsukemen noodle is described as 全粒粉入りの太麺 — a thick noodle with WHOLEMEAL WHEAT FLOUR blended in. Wholemeal is still wheat; the blend is there for aroma and bite, and it means the wheat content of this bowl is if anything higher than a standard ramen noodle, not lower. Anyone who reads “wholegrain” as a health signal should read it here as gluten. The ramen line uses a 縮れ麺, a crimped wheat noodle. ⚠ AND BOTH BROTHS ARE ANIMAL, IN DIFFERENT DIRECTIONS: the tsukemen broth is 魚介と豚骨のうまみが溶け合う — fish and PORK BONE dissolved together, the classic gyokai-tonkotsu — while the ramen is a 煮干し broth, DRIED SARDINE, finished with 濃口醤油, dark soy sauce. So the tsukemen fails for a vegetarian on two animals at once and the ramen on fish plus wheat soy. There is no vegetable bowl on the published structure and no allergen statement anywhere.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "つけ麺 粋（並）",
+    "romaji": "tsukemen \"Iki\" (nami)",
+    "en": "Tsukemen “Iki” — the house dipping bowl and the first of the shop’s three lines. Thick wholemeal-blend noodles served dry, with a heavy pork-and-fish dipping broth alongside; naruto and spring onion go in the broth, while the chashu, menma and nori arrive on a separate plate rather than in the soup",
+    "price": "990円 (as paid 2025-12)",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 全粒粉入りの太麺＝小麦（全粒粉も小麦）。スープは魚介＋豚骨。The noodle is a thick wheat noodle with wholemeal wheat blended in — “wholegrain” is not a step towards gluten-free, it is more of the same grain. The dipping broth is pork bone and seafood reduced together, so it is animal twice over and concentrated, which is exactly what a tsukemen broth is for. Chashu is soy-braised pork.",
+    "dish_key": "tsukemen_gyokai_tonkotsu"
+   },
+   {
+    "ja": "担々つけ麺 焔",
+    "romaji": "tantan tsukemen \"Homura\"",
+    "en": "Tantan tsukemen “Homura” — the second line, the dan dan version of the dipping bowl. Price not readable from the ticket machine",
+    "price": "未掲載 (not published)",
+    "section": "つけ麺 Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "担々＝芝麻醤と辣油、通常は肉味噌入り。Sesame paste and chilli oil over the same wholemeal wheat noodle, and a tantan preparation conventionally carries a pork mince. Sesame is a declarable allergen in Japan in its own right.",
+    "dish_key": "tantan_tsukemen"
+   },
+   {
+    "ja": "らーめん 忍",
+    "romaji": "rāmen \"Shinobu\"",
+    "en": "Ramen “Shinobu” — the third line and the only soup bowl: a dried-sardine broth with dark soy sauce and a crimped noodle. Price not readable from the ticket machine",
+    "price": "未掲載 (not published)",
+    "section": "らーめん Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "煮干し＝カタクチイワシ等の煮干し魚、濃口醤油＝小麦。The broth is dried sardine — small whole fish, boiled and dried, and the entire flavour of the bowl, so there is no version of it without fish. 濃口 dark soy sauce is brewed on wheat. Crimped wheat noodle.",
+    "dish_key": "niboshi_ramen"
+   },
+   {
+    "ja": "波海拉丼 / チャーシュー丼 ほか（ご飯もの）",
+    "romaji": "Namiura-don / chāshū-don hoka",
+    "en": "The rice bowls the ticket machine carries alongside the noodles, and the topping and à la carte rows. Individual prices were not readable",
+    "price": "未掲載 (not published)",
+    "section": "ご飯もの・トッピング Rice and toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Recorded because the machine has them, not because their contents are known. A ramen shop’s rice bowl is almost always the same soy-braised pork as the noodle toppings, ladled over rice with its sauce — i.e. the rice bowl is the wheat-bearing one, not the safe one.",
+    "dish_key": "ramen_rice_bowls"
+   }
+  ]
  }
 }

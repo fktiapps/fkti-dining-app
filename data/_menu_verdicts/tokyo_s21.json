@@ -2001,5 +2001,172 @@
     "dish_key": "purin"
    }
   ]
+ },
+ "tokyo_ishigama_bake_bread_sabo": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.hotpepper.jp/strJ001138660/food/",
+   "https://hitosara.com/0006047334/food.html",
+   "https://hitosara.com/0006047334/lunch.html"
+  ],
+  "price_note": "⚠ THE NAME IS THE ALLERGEN WARNING: 石釜 bake bread. This is a stone-oven BREAD café in Jimbocho, and essentially the entire menu is toast — buttered, almond, cheese, croque-monsieur, pizza toast, French toast — plus pancakes. There is no gluten-free item on any of the three menu pages that could be read, and the two things that are not obviously bread are not escapes either: the 石窯焼きカレー is Japanese curry, whose roux is made with WHEAT FLOUR, and the ホットケーキ is described by the shop as こだわりのブレンドの粉, a blended flour, with no suggestion the blend is anything but wheat. A coeliac can drink the coffee. ⚠ TWO PRICE VINTAGES, BOTH SOURCED. Hot Pepper stamps its page 2021/03/12 更新 and quotes 税込 figures; Hitosara’s food page carries an older and visibly cheaper set with no tax basis stated (ホットケーキ 600円 against Hot Pepper’s 748円税込 — consistent with pre-2019 pricing). Both are recorded, Hot Pepper’s first, so the direction is visible. Note Hot Pepper prints ※更新日が2021/3/31以前の情報は、当時の価格及び税率に基づく情報となります across its listing, and 2021/03/12 falls inside that window by two and a half weeks. ⚠ WORTH KNOWING BEFORE ORDERING: the shop states 石窯焼き items are オーダーを頂いてから焼きますので、お時間を頂いております — baked to order, so they take a while. Hitosara records a 150円 discount on a food item when a drink is ordered with it, that フレンチトースト and ホットケーキ come ホイップ＆メープルシロップ付, and that the 11:30–14:30 lunch sets come 野菜のスープ、ヨーグルト付 with coffee or tea available for +200円. Instagram is the shop’s listed channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "石窯焼きホットケーキ",
+    "romaji": "ishigama-yaki hotto kēki",
+    "en": "Stone-oven hotcake — the shop’s description: crisp outside, fluffy inside, made with a house flour blend, faintly sweet, with the smell of egg through it. Comes with whipped cream and maple syrup",
+    "price": "748円（税込、2021-03） / 600円 (Hitosara, earlier)",
+    "section": "石窯焼き Stone-oven",
+    "gf": "no",
+    "vegan": "no",
+    "note": "こだわりのブレンドの粉＝小麦のブレンドと考えるべき。玉子の香り＝卵入り。“A blended flour” at a bread café means a wheat blend; nothing suggests otherwise and there is no rice-flour claim anywhere. The shop’s own copy says the egg aroma is the point, so egg. Whipped cream is dairy.",
+    "dish_key": "hotcake"
+   },
+   {
+    "ja": "石窯焼きフレンチトースト",
+    "romaji": "ishigama-yaki furenchi tōsuto",
+    "en": "Stone-oven French toast — baked in the oven until the egg cream around it bubbles and soaks into the bread. With whipped cream and maple syrup",
+    "price": "748円（税込、2021-03） / 600円 (Hitosara, earlier)",
+    "section": "石窯焼き Stone-oven",
+    "gf": "no",
+    "vegan": "no",
+    "note": "パン＝小麦、卵クリーム＝卵と乳。Bread, egg custard and cream. Wheat, egg and dairy in one dish; there is no version of French toast that avoids any of them.",
+    "dish_key": "french_toast"
+   },
+   {
+    "ja": "石窯焼きチーズトースト",
+    "romaji": "ishigama-yaki chīzu tōsuto",
+    "en": "Stone-oven cheese toast — the house mix of melting cheeses, served with honey on the side to sweeten it",
+    "price": "660円（税込、2021-03） / 580円 (Hitosara, earlier)",
+    "section": "石窯焼き Stone-oven",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bread and cheese. Wheat and dairy; the honey is a further animal product.",
+    "dish_key": "cheese_toast"
+   },
+   {
+    "ja": "石窯焼きカレー",
+    "romaji": "ishigama-yaki karē",
+    "en": "Stone-oven curry — a spicy curry topped with the house cheese mix and an egg, baked until it is bubbling",
+    "price": "968円（税込、2021-03） / 750円 (Hitosara, earlier)",
+    "section": "石窯焼き Stone-oven",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 日本のカレールウは小麦粉で作る。THE ITEM THAT LOOKS LIKE THE NON-BREAD ESCAPE AND IS NOT. Japanese curry is thickened with a roux made from WHEAT FLOUR — that is what makes it Japanese curry rather than an Indian one — so a curry in a bread café is still a wheat dish. Cheese and egg on top add dairy and egg.",
+    "dish_key": "baked_curry"
+   },
+   {
+    "ja": "石窯焼きバタートースト",
+    "romaji": "ishigama-yaki batā tōsuto",
+    "en": "Stone-oven butter toast — the cheapest thing on the food list",
+    "price": "450円 (Hitosara, earlier) / ランチ 600円",
+    "section": "フードメニュー Food",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bread and butter. Wheat and dairy.",
+    "dish_key": "butter_toast"
+   },
+   {
+    "ja": "石窯焼きアーモンドトースト",
+    "romaji": "ishigama-yaki āmondo tōsuto",
+    "en": "Stone-oven almond toast — house-made almond paste baked on until it browns, with whipped cream and maple syrup",
+    "price": "550円 (Hitosara, earlier) / ランチ 700円",
+    "section": "フードメニュー Food",
+    "gf": "no",
+    "vegan": "no",
+    "note": "ナッツ入り。Wheat bread, dairy cream, and NUTS — worth flagging separately from gluten.",
+    "dish_key": "almond_toast"
+   },
+   {
+    "ja": "石窯焼きクロックムッシュ",
+    "romaji": "ishigama-yaki kurokku-musshū",
+    "en": "Stone-oven croque-monsieur",
+    "price": "580円 (Hitosara, earlier)",
+    "section": "フードメニュー Food",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Bread, ham, cheese and normally a béchamel, which is wheat-thickened as well. Pork.",
+    "dish_key": "croque_monsieur"
+   },
+   {
+    "ja": "石窯焼きピザトースト",
+    "romaji": "ishigama-yaki piza tōsuto",
+    "en": "Stone-oven pizza toast — vegetables and the house cheese blend, baked so the crust stays edible",
+    "price": "600円 (Hitosara, earlier) / ランチ 750円",
+    "section": "フードメニュー Food",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat bread and dairy cheese. The vegetables are on top of the problem, not instead of it.",
+    "dish_key": "pizza_toast"
+   },
+   {
+    "ja": "玉子サンド",
+    "romaji": "tamago sando",
+    "en": "Egg sandwich — on the shop’s buttered shokupan",
+    "price": "550円 (Hitosara, earlier)",
+    "section": "サンドイッチ Sandwiches",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat bread; egg and mayonnaise. Hitosara notes the sandwiches are on たっぷりバターの食パン, generously buttered white bread — dairy too.",
+    "dish_key": "tamago_sando"
+   },
+   {
+    "ja": "ツナサンド",
+    "romaji": "tsuna sando",
+    "en": "Tuna sandwich",
+    "price": "550円 (Hitosara, earlier)",
+    "section": "サンドイッチ Sandwiches",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat bread; tuna and mayonnaise, so fish and egg.",
+    "dish_key": "tsuna_sando"
+   },
+   {
+    "ja": "コーヒーゼリー",
+    "romaji": "kōhī zerī",
+    "en": "Coffee jelly — the one dessert on the list that is not made of flour",
+    "price": "550円 (Hitosara, earlier)",
+    "section": "デザート Dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "THE ONLY THING ON THE FOOD MENU WITHOUT WHEAT IN IT, WHICH IS WHY IT IS WORTH LISTING. コーヒーゼリーはゼラチンか寒天か非公表、クリーム添えが一般的。Coffee, sugar and a setting agent — but whether that agent is gelatine (animal) or agar (plant) is not published, and coffee jelly is conventionally served with cream or a milk syrup. Ask on both counts. No wheat ingredient.",
+    "dish_key": "coffee_jelly"
+   },
+   {
+    "ja": "手づくりポワールのタルトケーキ / 手づくりアプリコットのタルトケーキ",
+    "romaji": "tezukuri powāru / apurikotto no taruto kēki",
+    "en": "House-made pear tart and apricot tart, one price each",
+    "price": "各380円 (Hitosara, earlier)",
+    "section": "ケーキ Cake",
+    "gf": "no",
+    "vegan": "no",
+    "note": "タルト生地＝小麦とバター。A tart shell is wheat flour and butter. Fruit on top does not change that.",
+    "dish_key": "tart_cake"
+   },
+   {
+    "ja": "ホットケーキセット / フレンチトーストセット（コーヒーor紅茶付）",
+    "romaji": "hotto kēki setto / furenchi tōsuto setto",
+    "en": "Either stone-oven item with a drink — coffee (mild, excellent or iced) or tea (Earl Grey or Darjeeling, hot or iced)",
+    "price": "各1,100円（税込、2021-03）",
+    "section": "セットメニュー Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Set pricing on the two wheat-and-egg items above. Recorded mainly for the drink list, which is the part of this café a coeliac can actually use.",
+    "dish_key": "pancake_set"
+   },
+   {
+    "ja": "ランチセット（11:30〜14:30）",
+    "romaji": "ranchi setto",
+    "en": "Lunch sets, 11:30–14:30 — a stone-oven item with vegetable soup and yoghurt included; coffee or tea for 200 yen more. Pizza toast 750, cheese toast 730, almond toast 700, butter toast 600, curry 900",
+    "price": "600円〜900円 (Hitosara)",
+    "section": "ランチ Lunch",
+    "gf": "no",
+    "vegan": "no",
+    "note": "野菜のスープ・ヨーグルト付。Every base item in the set is bread or wheat-roux curry. The included yoghurt is dairy, and the vegetable soup’s stock is not described — at a Japanese café that is as likely to be a chicken or bouillon base as not.",
+    "dish_key": "lunch_set"
+   }
+  ]
  }
 }
