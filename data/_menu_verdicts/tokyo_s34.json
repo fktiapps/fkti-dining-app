@@ -1526,5 +1526,171 @@
     "dish_key": "pumpkin-pudding"
    }
   ]
+ },
+ "tokyo_stand_hero": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://1000bero.net/restaurant-1971/",
+   "https://www.facebook.com/standhero/"
+  ],
+  "price_note": "⚠ SOURCE AND DATE, BECAUSE BOTH ARE UNUSUALLY GOOD FOR A SHOP WITH NO WEBSITE: the shop’s only listed channel is a Facebook page, and Facebook returns HTTP 400 to this egress, so nothing first-party could be read. The prices below come from a standing-bar specialist site, senbero.net, whose article was first posted 2023-04-13 and re-edited in May 2026; it states explicitly 以下は2026年5月撮影。税抜きで記載しています — photographed May 2026, listed WITHOUT tax. So these are recent figures, but add 10% at the till. Tabelog has served HTTP 403 to this egress since 2026-09-02. ⚠ HOW THIS SHOP WORKS, WHICH DETERMINES WHAT YOU CAN ACTUALLY ORDER: it is a 立ち飲み — you stand. Ordering is 口頭注文・伝票式の後払い, spoken to the staff, tallied on a slip, paid at the end. Cash only, no cover charge, non-smoking, one unisex toilet. And most of the food is not on any fixed menu at all: the article reports the owner, Inoue-san, visits seven or eight suppliers every morning and prices that day’s catch that day, so 黒板には、お刺身をはじめ約40種類が50円〜600円台 — roughly forty blackboard items between 50 yen and the 600s, different every day. The blackboard items below are examples the writer photographed over several visits, marked ※日替り, not a standing list. ⚠ THE DIETARY SHAPE: a Japanese standing bar of this type is raw fish plus deep-fried things, and both halves are a problem. The fried side — ハムカツ, the 串揚げ set — is panko and batter, i.e. wheat, in shared oil. The raw side is fish. There is no vegetable dish on any published list except a tuna salad, which is tuna. ⚠ AND ONE DRINK TRAP WORTH THE WHOLE ENTRY: ホッピー is not a soft drink and not a mixer in the harmless sense — it is a near-beer brewed from BARLEY MALT, sold as a set with a glass of shochu to mix into. Foreigners order it constantly believing it is the low-alcohol safe option. It is barley. The 黒糖焼酎 on the same list, distilled from sugarcane muscovado, is the opposite: no grain at all.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "ハムカツ",
+    "romaji": "hamu-katsu",
+    "en": "Ham cutlet — a slab of ham crumbed and deep-fried. The house speciality, and the thing the article names when it says order something substantial",
+    "price": "490円（税抜、2026年5月）",
+    "section": "定番 Standing menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "カツ＝小麦粉＋卵＋パン粉の衣、共用油。Flour, egg and panko breadcrumbs, fried in oil shared with everything else fried here. Pork. Nothing about this is negotiable.",
+    "dish_key": "hamu_katsu"
+   },
+   {
+    "ja": "串揚げほろ酔いセット",
+    "romaji": "kushiage horoyoi setto",
+    "en": "The tipsy set — one drink plus six kushiage skewers chosen by the kitchen",
+    "price": "1090円（税抜、2026年5月）",
+    "section": "定番 Standing menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "串揚げは全て小麦粉・パン粉の衣、油も共用。おまかせ＝中身は選べない。Every skewer is battered and crumbed in wheat and fried in one shared oil, and the six are the kitchen’s choice, so you cannot even steer it towards vegetables. The included drink is unspecified.",
+    "dish_key": "kushiage_set"
+   },
+   {
+    "ja": "ツナサラダ",
+    "romaji": "tsuna sarada",
+    "en": "Tuna salad — the standing bar’s vegetable dish: sliced onion under a heap of tuna, in a sweet-sharp dressing, with mayonnaise on the side. Marked ※日替り",
+    "price": "180円（税抜、2026年5月）",
+    "section": "定番 Standing menu",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "THE ONLY SALAD ON THE LIST AND IT IS A FISH DISH. ツナ＝魚、マヨ付き＝卵。The article describes the dressing as 甘辛くさっぱり, sweet-and-sharp — at a Japanese izakaya that combination is normally soy-based, which would make it wheat as well. Ask.",
+    "dish_key": "tsuna_salada"
+   },
+   {
+    "ja": "にぎりセット",
+    "romaji": "nigiri setto",
+    "en": "A small set of hand-formed sushi, when it appears. Marked ※日替り",
+    "price": "290円（税抜、2026年5月）",
+    "section": "黒板 Blackboard (example)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fish on vinegared rice — no wheat in the components themselves; the soy sauce you dip it in is the wheat. Some nigiri arrive pre-brushed with ニキリ (a reduced soy glaze), which puts it inside the dish. Ask which. Fish.",
+    "dish_key": "nigiri_set"
+   },
+   {
+    "ja": "本まぐろトロ",
+    "romaji": "hon-maguro toro",
+    "en": "Bluefin tuna belly, cut thick — the article calls it the one blackboard item not to miss",
+    "price": "680円（税抜、2026年5月・日替り）",
+    "section": "黒板 Blackboard (example)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw fish; the wheat is in the dipping soy, which is poured by you.",
+    "dish_key": "maguro_toro_sashimi"
+   },
+   {
+    "ja": "活つぶ貝",
+    "romaji": "katsu tsubugai",
+    "en": "Live whelk — sea snail, sliced and served raw",
+    "price": "550円（税抜、2026年5月・日替り）",
+    "section": "黒板 Blackboard (example)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "巻貝＝軟体動物。A mollusc, which matters for a shellfish allergy in a way “fish” does not. Raw and unseasoned; the soy is on the side.",
+    "dish_key": "tsubugai_sashimi"
+   },
+   {
+    "ja": "刺身3点（土曜限定）",
+    "romaji": "sashimi santen (doyō gentei)",
+    "en": "Three-piece sashimi plate, Saturdays only",
+    "price": "850円（税抜、2026年5月・土曜限定）",
+    "section": "黒板 Blackboard (example)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Which three is decided by that morning’s buying. Fish; soy on the side.",
+    "dish_key": "sashimi_3ten"
+   },
+   {
+    "ja": "あら汁",
+    "romaji": "ara-jiru",
+    "en": "Ara-jiru — soup made from the bones, head and collar left after the fish is filleted. Fifty yen, which is the article’s headline astonishment",
+    "price": "50円（税抜、2026年5月・日替り）",
+    "section": "黒板 Blackboard (example)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "あら＝魚のアラ、味噌または醤油仕立て。Fish bones are the entire dish, so this is as far from vegetarian as a soup gets. Seasoned with miso or soy; the miso may be barley, which Japanese labelling law does not require anyone to declare. Ask which.",
+    "dish_key": "ara_jiru"
+   },
+   {
+    "ja": "ミニ本まぐろ中落ち丼",
+    "romaji": "mini hon-maguro nakaochi don",
+    "en": "Small bowl of bluefin scraped from the bone over rice — made in tiny numbers, gone early",
+    "price": "650円（税抜、2026年5月・日替り、数量限定）",
+    "section": "黒板 Blackboard (example)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "中落ち＝中骨に残った身。Tuna scraped off the backbone, over rice. Wheat only via the soy, unless the bowl arrives pre-sauced — ask.",
+    "dish_key": "nakaochi_don"
+   },
+   {
+    "ja": "ホッピーセット",
+    "romaji": "hoppī setto",
+    "en": "Hoppy set — a bottle of Hoppy with a jug of shochu to mix, poured strong here: the article reckons the shochu measure takes three refills of Hoppy",
+    "price": "490円（税抜、2026年5月）",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "⚠ ホッピーは大麦麦芽で造るビールテイスト飲料。THE TRAP DRINK. Hoppy looks and is sold like a mixer, and travellers order it as the light option — it is a beer-taste beverage brewed from BARLEY MALT, so it is exactly as much of a gluten problem as beer. The shochu it is mixed with may or may not be barley too; that is not published. Plant-based, but not gluten-free.",
+    "dish_key": "hoppy"
+   },
+   {
+    "ja": "生ビール",
+    "romaji": "nama bīru",
+    "en": "Draught beer — Premium Malt’s, per the article’s list of what is on",
+    "price": "490円（税抜、2026年5月）",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "ビール＝大麦麦芽。Barley malt.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "酎ハイ",
+    "romaji": "chūhai",
+    "en": "Chuhai — shochu with soda, the cheapest drink in the house and where the price list starts",
+    "price": "350円（税抜、2026年5月）",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "焼酎の原料（芋・麦・米）は未掲載。Shochu and soda. Whether the shochu base is sweet potato, barley or rice is not published, and barley shochu is common — distillation removes gluten protein in practice, but if you avoid barley outright, ask which bottle. Plant-based.",
+    "dish_key": "chuhai"
+   },
+   {
+    "ja": "黒糖焼酎 朝日",
+    "romaji": "kokutō-jōchū Asahi",
+    "en": "Asahi kokuto shochu, from Asahi Shuzo on Kikaijima — the article’s writer takes it with soda",
+    "price": "400円（税抜、2026年5月）",
+    "section": "ドリンク Drinks",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "黒糖焼酎＝サトウキビの黒糖が原料、穀物不使用。Kokuto shochu is distilled from sugarcane muscovado, not grain at all — the one spirit on this list with no barley, wheat or rice in it even before distillation. Legally it may only be made on the Amami islands. Plant-based.",
+    "dish_key": "kokuto_shochu"
+   },
+   {
+    "ja": "銀盤 一合",
+    "romaji": "Ginban ichigō",
+    "en": "Ginban sake, one gō (180ml) — the Toyama brewery, poured here as the thing to drink with the tuna",
+    "price": "580円（税抜、2026年5月）",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "日本酒は米・米麹・水が基本。ただし本醸造は醸造アルコール添加、grade未掲載。Sake is rice, rice koji and water — no barley, no wheat. The one caveat is grade: a 本醸造 has distilled brewer’s alcohol added, and its base is not declared on a standing-bar blackboard. If the bottle says 純米 it is rice only. Ask, or ask for junmai.",
+    "dish_key": "sake"
+   }
+  ]
  }
 }

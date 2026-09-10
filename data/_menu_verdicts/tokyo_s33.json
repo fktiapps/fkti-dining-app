@@ -898,5 +898,82 @@
     "dish_key": "tempura_course_lunch_c"
    }
   ]
+ },
+ "tokyo_yokohama_iekei_ramen_sam": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://map.yahoo.co.jp/v3/place/h8kBQPlh4lw/menu"
+  ],
+  "price_note": "⚠ THE MENU BELOW IS USER-SUBMITTED, NOT THE SHOP’S OWN BOARD, AND THAT IS THE FIRST THING TO KNOW ABOUT IT. Yahoo! Map heads this list ユーザー投稿のメニュー — items photographed and typed in by members of the public — and prints its own disclaimer, ※ 掲載時点の情報です。最新情報は店舗でご確認ください. Nothing here is dated. Some entries are visibly other diners’ shorthand rather than menu lines. It is recorded because it is the only itemised, priced list that exists for this shop on any page reachable from here, and because the dish names themselves are informative; treat every figure as approximate and every spelling as a diner’s. One entry on the list is literally 「ーめん」 at 850円 — a diner’s dropped character for らーめん — which is as clear a demonstration as you could ask for of what kind of list this is. The shop’s own listed channel is X (twitter.com/samurai_EAK), which returned a page to this egress but no menu; a second aggregator, gourmet.tsuku2.jp, timed out. Tabelog has served HTTP 403 to this egress since 2026-09-02. ⚠ WHAT 家系 (IEKEI) MEANS, AND WHY IT MATTERS MORE THAN THE PRICES: Yokohama iekei ramen is a defined style, not a shop’s invention — a broth of PORK BONE AND CHICKEN together, a soy-sauce tare, thick short-cut wheat noodles, and a fixed topping set of spinach, a sheet or three of nori and a slice of chashu. Every one of those five components is either animal or wheat, and the two combine: the tare is soy (wheat), the noodle is wheat, the broth is pork and chicken. There is no iekei bowl anywhere that is vegetarian and none that is gluten-free. The customisation an iekei counter offers — 麺の硬さ (noodle firmness), 味の濃さ (tare strength), 油の量 (fat) — adjusts how much of the soy tare and back-fat goes in, so 薄め means less wheat seasoning but never none. ⚠ THE RICE IS THE POINT AND IT IS ALSO THE ONE NON-WHEAT ITEM. Rice at 100円 and half-rice below it are on this list because eating iekei with rice is the ritual: you dunk the nori in the broth and wrap it round rice. A plain bowl of unseasoned rice is the only thing here without wheat in it — until the broth goes on it, which is the entire reason it was ordered.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "ラーメン",
+    "romaji": "rāmen",
+    "en": "The standard bowl — Yokohama iekei: pork-bone-and-chicken broth, soy tare, thick straight noodles, spinach, nori and chashu. Also typed by one diner as 「ーめん」 at the same 850円, which is the same bowl",
+    "price": "850円",
+    "section": "ラーメン Ramen (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "家系＝豚骨＋鶏がら、醤油ダレ、太麺。All three fail at once: pork and chicken bones in the broth, wheat soy in the tare, wheat in the noodle. The standing toppings add chashu (pork, soy-braised) and nori. Adjusting 味の濃さ to 薄め reduces the soy but does not remove it.",
+    "dish_key": "iekei_ramen"
+   },
+   {
+    "ja": "海苔ラーメン",
+    "romaji": "nori rāmen",
+    "en": "The bowl with extra nori — at an iekei shop this is a real order, not a garnish, because the nori is what you wrap the rice in",
+    "price": "900円",
+    "section": "ラーメン Ramen (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "海苔自体は海藻だが、味付海苔なら醤油。The seaweed is the plant part; whether it carries soy of its own depends on which kind the shop buys, and it is going into a pork-and-chicken broth regardless.",
+    "dish_key": "iekei_nori_ramen"
+   },
+   {
+    "ja": "ライス",
+    "romaji": "raisu",
+    "en": "A bowl of plain white rice — the standard iekei accompaniment and, at 100 yen, the cheapest thing on the counter",
+    "price": "100円",
+    "section": "サイド Sides (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "THE ONLY ITEM IN THE BUILDING WITHOUT WHEAT IN IT. Plain unseasoned Japanese rice — not takikomi, not fried, which are the two ways a rice bowl normally picks up soy sauce. Kept at ask rather than better because this is a wheat kitchen with no allergen policy, the scoop is shared, and the rice is handed across a counter where wheat noodles are being drained. And note what it is for: iekei rice exists to be soaked in the broth.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "半ライス",
+    "romaji": "han-raisu",
+    "en": "Half portion of plain rice",
+    "price": "未掲載 (not published — listed by a diner without a figure)",
+    "section": "サイド Sides (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Same plain rice, half the bowl. Also recorded as a combination, ラーメン＋半ライス, in Yahoo’s 〜999円 band.",
+    "dish_key": "plain_rice"
+   },
+   {
+    "ja": "半熟味付玉子",
+    "romaji": "hanjuku ajitsuke tamago",
+    "en": "Soft-boiled seasoned egg, as a topping",
+    "price": "100円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "味付＝醤油ダレ漬け＝小麦。“Seasoned” means marinated in soy sauce, so the egg is a wheat item in its own right. Egg.",
+    "dish_key": "ajitama_topping"
+   },
+   {
+    "ja": "全部乗せ（前乗せ）",
+    "romaji": "zenbu-nose",
+    "en": "Everything-on — the loaded bowl with the full topping set. Recorded by a diner under the mistyped name 前乗せ in Yahoo’s 1,000円〜 band",
+    "price": "1,000円〜",
+    "section": "ラーメン Ramen (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "More chashu, more nori, more egg — every one of them soy-marinated. The loaded bowl is the most wheat-exposed order on the counter.",
+    "dish_key": "iekei_zenbu_nose"
+   }
+  ]
  }
 }

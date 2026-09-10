@@ -1952,5 +1952,379 @@
     "dish_key": "khao-gapao"
    }
   ]
+ },
+ "tokyo_gyossantei_shibuya": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.hotpepper.jp/strJ000771267/food/",
+   "https://www.hotpepper.jp/strJ000771267/lunch/",
+   "https://www.hotpepper.jp/strJ000771267/takeout/",
+   "https://www.hotpepper.jp/strJ000771267/drink/",
+   "https://retty.me/area/PRE13/ARE8/SUB806/100000027510/menu/"
+  ],
+  "price_note": "⚠ EVERY PRICE HERE IS HISTORICAL AND THE PAGE SAYS SO. The shop’s only website on file is a Facebook page, and Facebook returned HTTP 400 to this egress, so the shop publishes nothing readable of its own. Hot Pepper is the only itemised menu that could be read, and it stamps its own pages: 料理 2015/08/25 更新, ランチ 2015/08/25 更新, ドリンク 2015/08/25 更新, テイクアウト 2020/05/18 更新 — and prints the warning ※更新日が2021/3/31以前の情報は、当時の価格及び税率に基づく情報となります. The 2015 prices therefore predate the October 2019 rise to 10% consumption tax entirely. Treat them as a shape, not a bill. Retty’s menu page was also read: it lists dish names under 料理/ランチ/ドリンク but carries no prices at all, so it adds nothing. Tabelog not consulted: it has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ THE DIETARY SHAPE OF A MIYAZAKI HOUSE, WHICH IS NOT WHAT IT LOOKS LIKE: the two dishes this shop is known for are both closed to a coeliac and both closed to a plant-eater, for different reasons. チキン南蛮 is chicken floured, egged and fried, then finished in a sweet vinegar-soy sauce — wheat in the coating and wheat again in the soy. 冷汁 is a cold miso soup poured over rice, and Miyazaki’s version is built on grilled fish; the miso itself is commonly 麦味噌, barley miso, which Japanese labelling law does not require anyone to declare. The one dish on the list a vegetarian would reach for, がんもの揚げだし, is a tofu fritter sitting in dashi-and-soy broth, so it fails on the liquid rather than the solid. The shop publishes no allergen chart anywhere.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "ちきん南蛮",
+    "romaji": "chikin nanban",
+    "en": "Chicken nanban — Miyazaki’s national dish and the reason most people come here: chicken fried in a flour-and-egg coating, dipped in sweet vinegar sauce, then covered in tartare",
+    "price": "1000円 (as published 2015-08; expect higher)",
+    "section": "料理 A la carte (2015/08/25 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "チキン南蛮は小麦粉と卵の衣で揚げ、甘酢＝醤油ベース。Wheat twice over — in the batter and in the soy of the sweet-vinegar sauce — before the tartare, which is egg mayonnaise, is considered. Chicken. There is no version of this dish without the coating.",
+    "dish_key": "chicken_nanban"
+   },
+   {
+    "ja": "地鶏のタタキ",
+    "romaji": "jidori no tataki",
+    "en": "Miyazaki free-range chicken tataki — the surface seared over flame, the inside left rare, sliced and served cold",
+    "price": "950円 (as published 2015-08; expect higher)",
+    "section": "料理 A la carte (2015/08/25 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "タタキはポン酢または醤油で供される＝小麦。The chicken itself carries no wheat, but tataki is served with ponzu or soy and the shop declares neither its dressing nor a tamari option, so treat it as wheat. Chicken, and served rare — worth knowing if raw poultry is not something you eat.",
+    "dish_key": "jidori_tataki"
+   },
+   {
+    "ja": "豚の角煮",
+    "romaji": "buta no kakuni",
+    "en": "Kakuni — pork belly simmered slowly until it collapses, in a sweet dark braise",
+    "price": "1200円 (as published 2015-08; expect higher)",
+    "section": "料理 A la carte (2015/08/25 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "角煮の煮汁は醤油・味醂・砂糖＝小麦。The braising liquor is soy sauce, which is wheat, and it is the medium the meat cooks in rather than a sauce on the side. Pork.",
+    "dish_key": "buta_kakuni"
+   },
+   {
+    "ja": "冷汁",
+    "romaji": "hiyajiru",
+    "en": "Hiyajiru — Miyazaki’s cold miso soup, poured over rice and eaten in summer. Hot Pepper prints no price for this one",
+    "price": "お問い合わせください (price not published — ask)",
+    "section": "料理 A la carte (2015/08/25 更新)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "宮崎の冷汁は焼き魚（主に鯵）と味噌が基本。麦味噌の場合、麦＝大麦は日本の表示義務対象外。Miyazaki hiyajiru is built on grilled fish worked into miso with sesame, so a bowl that arrives looking like vegetables over rice is a fish dish. The miso is the gluten question: barley miso (麦味噌) is the regional norm and barley is NOT on Japan’s statutory allergen list, so nobody has to tell you. The shop publishes no ingredient list. Ask before ordering, and expect the answer to be fish.",
+    "dish_key": "hiyajiru"
+   },
+   {
+    "ja": "がんもの揚げだし",
+    "romaji": "ganmo no agedashi",
+    "en": "Agedashi ganmodoki — a deep-fried tofu-and-vegetable dumpling sitting in warm broth",
+    "price": "800円 (as published 2015-08; expect higher)",
+    "section": "料理 A la carte (2015/08/25 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "THIS IS THE ITEM A VEGETARIAN WILL POINT AT, AND IT IS THE TRAP. がんも自体は豆腐と野菜だが、揚げだしの出汁は鰹だし＋醤油。The fritter is plant food; the broth it arrives in is bonito dashi seasoned with soy sauce, so the animal content and the wheat are both in the liquid, not the thing you were looking at. Ganmodoki is also commonly bound with grated yam or egg white, which the shop does not declare.",
+    "dish_key": "agedashi_ganmodoki"
+   },
+   {
+    "ja": "ちきん南蛮定食＜昼＞",
+    "romaji": "chikin nanban teishoku (hiru)",
+    "en": "Chicken nanban set, lunch only — the fried chicken with rice, soup and pickles",
+    "price": "1000円 (as published 2015-08; expect higher)",
+    "section": "ランチ Lunch (2015/08/25 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same battered, soy-sauced chicken as the a la carte plate. A 定食 adds miso soup, which at a Japanese lunch counter is dashi-based, so the set is further from vegan than the plate, not closer.",
+    "dish_key": "chicken_nanban_set"
+   },
+   {
+    "ja": "冷汁定食＜昼＞",
+    "romaji": "hiyajiru teishoku (hiru)",
+    "en": "Hiyajiru set, lunch only — the cold miso soup with rice and sides",
+    "price": "1200円 (as published 2015-08; expect higher)",
+    "section": "ランチ Lunch (2015/08/25 更新)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "See 冷汁 above: grilled fish worked into miso, and the miso is very likely barley. The set format does not change either fact.",
+    "dish_key": "hiyajiru_set"
+   },
+   {
+    "ja": "ちきん南蛮弁当",
+    "romaji": "chikin nanban bentō",
+    "en": "Chicken nanban bento to take away — the cheapest route to the shop’s signature dish",
+    "price": "780円（税込）(as published 2020-05)",
+    "section": "テイクアウト Takeaway (2020/05/18 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tax-inclusive and the most recently updated price on the whole Hot Pepper listing, so the closest thing here to a current figure. Same wheat batter and soy-vinegar sauce.",
+    "dish_key": "chicken_nanban_bento"
+   },
+   {
+    "ja": "ちきん南蛮定食（テイクアウト）",
+    "romaji": "chikin nanban teishoku (takeout)",
+    "en": "Chicken nanban set, boxed to take away",
+    "price": "1,000円（税込）(as published 2020-05)",
+    "section": "テイクアウト Takeaway (2020/05/18 更新)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat batter, soy-based sweet vinegar sauce, egg tartare. Chicken.",
+    "dish_key": "chicken_nanban_set"
+   },
+   {
+    "ja": "魚山亭定食",
+    "romaji": "Gyosantei teishoku",
+    "en": "The house set — the shop’s own name on a box, contents not published",
+    "price": "1,000円（税込）(as published 2020-05)",
+    "section": "テイクアウト Takeaway (2020/05/18 更新)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Hot Pepper lists the name and the price and nothing else. Do not assume: a house teishoku at a Miyazaki izakaya could be the chicken, the fish or both. Ask what is in it before ordering, and assume the miso soup is dashi-based unless told otherwise.",
+    "dish_key": "gyosantei_teishoku"
+   },
+   {
+    "ja": "冷汁定食（テイクアウト）",
+    "romaji": "hiyajiru teishoku (takeout)",
+    "en": "Hiyajiru set, boxed",
+    "price": "1,200円（税込）(as published 2020-05)",
+    "section": "テイクアウト Takeaway (2020/05/18 更新)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cold soup travels, which is why this one is on the takeaway list. Still grilled fish and miso.",
+    "dish_key": "hiyajiru_set"
+   },
+   {
+    "ja": "綾定食",
+    "romaji": "Aya teishoku",
+    "en": "Aya set — named for Aya, the Miyazaki town known nationally for its organic farming; contents not published",
+    "price": "1,000円（税込）(as published 2020-05)",
+    "section": "テイクアウト Takeaway (2020/05/18 更新)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "The shop’s own Hot Pepper blurb elsewhere mentions 綾町直送有機野菜の温サラダ, warm salad of organic vegetables sent direct from Aya, so the name points at vegetables — but no composition is published for this box and a Japanese teishoku almost always includes a dashi-based soup. Worth asking about specifically if you want the vegetable-forward option; do not assume it is meat-free.",
+    "dish_key": "aya_teishoku"
+   },
+   {
+    "ja": "宮崎ひでじビール(生)",
+    "romaji": "Miyazaki Hideji bīru (nama)",
+    "en": "Hideji Beer on draught — the Miyazaki craft brewery, poured here as the regional beer to go with the regional food",
+    "price": "800円 (as published 2015-08; expect higher)",
+    "section": "ドリンク Drinks (2015/08/25 更新)",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "ビールは大麦麦芽＝グルテン。Beer is barley malt; there is no gluten-free option on this list.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "焼酎各種",
+    "romaji": "shōchū kakushu",
+    "en": "Shochu, various — the drink Miyazaki is actually famous for; the list itself is not published",
+    "price": "600円～ (as published 2015-08; expect higher)",
+    "section": "ドリンク Drinks (2015/08/25 更新)",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "各種＝銘柄未掲載。麦焼酎は九州の定番で、麦＝大麦。“Various” is doing a lot of work here: Kyushu shochu is distilled from sweet potato (芋), barley (麦), rice (米) or buckwheat, and barley shochu is one of the commonest styles in the region. Distillation removes gluten protein in practice, but if you avoid barley on principle, ask which base before you order. Plant-based either way.",
+    "dish_key": "shochu"
+   }
+  ]
+ },
+ "tokyo_kayuya_sato_kayu_ya_sato": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://rurubu.jp/andmore/article/21686",
+   "https://popeyemagazine.jp/post-206842/",
+   "https://rurubu.jp/andmore/spot/80133627"
+  ],
+  "price_note": "⚠ THE DASHI IS THE WHOLE STORY AND IT IS NOT VEGETARIAN. This is a Taiwanese-congee specialist behind Sensō-ji, and a bowl of rice porridge with vegetables on it is exactly the dish a plant-eater assumes is safe. It is not: Rurubu, quoting the shop, states 「魯肉粥」のだしは干しシイタケと干しエビ — the base is reconstituted DRIED SHIITAKE AND DRIED SHRIMP. Popeye, reporting the same kitchen, gives the provenance as 島根県産の干し椎茸と干し海老の戻し汁で炊いている, cooked in the soaking liquid of Shimane dried shiitake and dried shrimp. The shrimp is in the cooking water, so it cannot be left off, and it is a crustacean — one of Japan’s eight statutory allergens — hiding inside what reads as a mushroom porridge. The other published bowl, 鶏レモン粥, is 鶏だしと昆布だしで炊いた粥, chicken and kelp. Neither published porridge is meat-free, and the shop publishes no vegetarian one. ⚠ WHEAT: the 蒸籠 that upgrades an A set to a B set contains 手包み鶏シウマイ — hand-wrapped chicken shumai, and a shumai wrapper is wheat. 魯肉 is pork braised in soy sauce, wheat again. The steamed vegetables in the same basket (about six seasonal kinds, from the Chiba grower キレドベジタブルアトリエ) are the one genuinely plant part of the meal and they share the basket with the shumai. ⚠ PRICING SHAPE: the sets are quoted as ranges because the price moves with which porridge you choose — Aセット 1,200円〜 (porridge plus two small dishes), Bセット 1,650円〜 (porridge, two small dishes, the steamer basket and annin tofu). Rurubu names two worked examples at B-set level. Roughly five porridges are on at any time including seasonal ones; only these two are published. Instagram is the shop’s only channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "Aセット",
+    "romaji": "A setto",
+    "en": "Set A — your choice of congee with two small side dishes. The base set; the price moves with which congee you pick",
+    "price": "1,200円～",
+    "section": "セット Sets",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "お粥のだしは干し椎茸＋干し海老、または鶏だし＋昆布だし。The porridge choice decides everything, and both published choices contain animal: dried shrimp in one, chicken in the other. Gluten depends on the small dishes and on the porridge’s seasoning, neither published in full — a Taiwanese congee house seasons with soy sauce as a matter of course.",
+    "dish_key": "congee_set_a"
+   },
+   {
+    "ja": "Bセット",
+    "romaji": "B setto",
+    "en": "Set B — congee, two small dishes, a bamboo steamer of vegetables and shumai, and annin tofu to finish",
+    "price": "1,650円～",
+    "section": "セット Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The steamer is what makes this the bigger set, and the steamer is what closes it: 手包み鶏シウマイ 2個, two hand-wrapped chicken shumai, whose wrapper is wheat, sharing the basket with the vegetables. Not gluten-free at any porridge choice.",
+    "dish_key": "congee_set_b"
+   },
+   {
+    "ja": "魯肉粥（Bセット）",
+    "romaji": "rōrō-gayu (B setto)",
+    "en": "Lu rou congee as a B set — the Taiwanese braised-pork porridge the owner built after eating at 三娘香菇肉粥 in Taipei and reverse-engineering it",
+    "price": "2,070円",
+    "section": "お粥 Congee (B set price)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ だしは干しシイタケと干しエビ＝甲殻類。The base broth is dried shiitake AND DRIED SHRIMP — crustacean, in the cooking liquid, unremovable. On top of that 魯肉 is pork braised in soy sauce, so wheat as well. This is the shop’s signature and it is closed to a vegetarian, a shellfish allergy and a coeliac alike.",
+    "dish_key": "lurou_congee"
+   },
+   {
+    "ja": "鶏レモン粥（Bセット）",
+    "romaji": "tori remon-gayu (B setto)",
+    "en": "Chicken and lemon congee as a B set — cooked in chicken stock and kombu rather than the shrimp base",
+    "price": "2,030円",
+    "section": "お粥 Congee (B set price)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "鶏だしと昆布だしで炊いた粥。Chicken stock plus kelp. No dried shrimp in this one, which matters if the shellfish rather than the meat is your problem. Chicken, so not vegetarian. Gluten unpublished; assume soy seasoning unless the counter says otherwise.",
+    "dish_key": "chicken_lemon_congee"
+   },
+   {
+    "ja": "煮玉子",
+    "romaji": "nitamago",
+    "en": "Simmered egg, as a topping on any porridge",
+    "price": "+150円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "煮玉子＝醤油ダレで煮る＝小麦。A simmered egg is simmered in soy, so a plain-looking egg is a wheat item. Egg.",
+    "dish_key": "nitamago_topping"
+   },
+   {
+    "ja": "無添加梅干し",
+    "romaji": "mutenka umeboshi",
+    "en": "Additive-free pickled plum — the shop specifies 無添加, nothing added",
+    "price": "100円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "無添加の梅干しは梅・塩・赤紫蘇のみが基本。A genuinely additive-free umeboshi is plum, salt and red shiso and nothing else, which makes this the cleanest thing on the list — but it is going into a porridge whose base is shrimp or chicken, so it does not rescue the bowl. Kept at ask for gluten because the shop publishes no ingredient statement.",
+    "dish_key": "umeboshi_topping"
+   },
+   {
+    "ja": "初摘みのり",
+    "romaji": "hatsutsumi nori",
+    "en": "First-harvest nori — the tender early-season cut, torn over the porridge",
+    "price": "150円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "焼海苔なら海藻のみだが、味付海苔は醤油。Plain toasted nori is seaweed alone; seasoned nori (味付海苔) is glazed with soy sauce, and shops rarely say which they buy. Nori is also farmed in waters where shrimp and crab occur, which some Japanese allergen charts declare.",
+    "dish_key": "nori_topping"
+   },
+   {
+    "ja": "鹹豆漿（シェントウジャン）",
+    "romaji": "shentōjan",
+    "en": "Shentoujiang — savoury warm soy milk, curdled with vinegar until it sets into loose curds. The Taiwanese breakfast dish, served here from the 9am opening",
+    "price": "850円",
+    "section": "朝食 Breakfast",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "鹹豆漿は豆乳を酢で固めたもの。台湾では油條（小麦の揚げパン）、干し海老、菜脯を載せるのが定番。The soy milk base itself is plant and wheat-free, which is why this looks like the vegan-and-coeliac answer on the list. Taiwanese practice loads the bowl with a torn youtiao — a deep-fried WHEAT dough stick — and commonly dried shrimp and preserved radish as well. This shop, whose congee base is dried shrimp, publishes no ingredient list for this bowl. Ask what goes on top before assuming.",
+    "dish_key": "shentoujiang"
+   },
+   {
+    "ja": "蒸籠（手包み鶏シウマイ＋季節の蒸し野菜）",
+    "romaji": "seiro (te-tsutsumi tori shūmai + kisetsu no mushi-yasai)",
+    "en": "The bamboo steamer that comes with a B set — two hand-wrapped chicken shumai and around six seasonal steamed vegetables sent from the Chiba grower Kiredo Vegetable Atelier",
+    "price": "Bセットに含む (included in Set B; not sold separately at a published price)",
+    "section": "セット Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "シウマイの皮＝小麦、餡は鶏。The vegetables are the good part and they are genuinely good — a named single-farm supplier, about six kinds, changing with the season. They are steamed in the same basket as two chicken shumai whose wrappers are wheat. If you need either restriction respected, this basket has to be discussed at the counter, not assumed.",
+    "dish_key": "seiro_steamer"
+   },
+   {
+    "ja": "杏仁豆腐",
+    "romaji": "annin-dōfu",
+    "en": "Annin tofu — the almond-milk pudding that closes a B set",
+    "price": "Bセットに含む (included in Set B)",
+    "section": "デザート Dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "杏仁豆腐は牛乳・生クリームで作るのが一般的で、ゼラチンを使う店もある。Standard annin tofu is set with milk or cream, and some kitchens use gelatine rather than agar — either would make it neither vegan nor vegetarian. The shop publishes no recipe. Ask.",
+    "dish_key": "annin_dofu"
+   }
+  ]
+ },
+ "tokyo_asakusa_hatoya_vegan_fru": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://vegemap.org/en/list/taito,tokyo/all-vegan/asakusa-hatoya-vegan-fruits-sandwiches-en/",
+   "https://hachidory.com/restaurant/00/id=12780/",
+   "https://map.yahoo.co.jp/v3/place/pGoaSTx6Dm-/menu"
+  ],
+  "price_note": "⚠ A COMPLETELY VEGAN SHOP THAT IS COMPLETELY CLOSED TO A COELIAC, AND THAT IS THE ONLY THING WORTH KNOWING HERE. Japan VegeMap lists this shop under すべてVEGAN（完全菜食）/ all-vegan, and Hachidory lists it in the same category; VegeMap’s own description is “Large pieces of fresh fruit in vegan cream, sandwiched between fluffy white bread.” So the cream is a plant cream and the whole counter is animal-free — an unusually clean answer for a takeaway you eat walking around Asakusa. The bread is the problem: a fruit sando IS white shokupan, and shokupan is wheat. There is no rice-flour version and none is advertised. A gluten-free traveller reading “vegan fruit sandwich specialist” should read “nothing here”. ⚠ The shop publishes nothing itself beyond Instagram, which serves a login wall to this egress, so the prices below come from directory listings rather than the shop’s own board: VegeMap gives a 600 yen floor for the fruit sandwich generally, Hachidory names kiwi and strawberry at 700 yen each, and Yahoo! Map carries a user-submitted strawberry sandwich at 700 yen — the two independent 700 figures agree, which is why this is recorded at medium rather than low. Neither source states what the vegan cream is actually made from (soy, coconut, oat and cashew are all common in this niche); if you are avoiding a specific plant allergen rather than animal products, that still has to be asked at the counter. Tabelog has served HTTP 403 to this egress since 2026-09-02.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "フルーツサンド（いちご・キウイ・オレンジ・季節のフルーツ）",
+    "romaji": "furūtsu sando",
+    "en": "The fruit sandwich, in whichever fruit is on that day — strawberry, kiwi, orange and seasonal others. Big pieces of fruit set in plant cream between soft white bread",
+    "price": "600円～",
+    "section": "ヴィーガンフルーツサンド Vegan fruit sandwiches",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "完全菜食の店。クリームは植物性。ただしパンは食パン＝小麦。Animal-free throughout — the shop is listed as すべてVEGAN by Japan VegeMap and the cream is described as vegan cream. The bread is ordinary white shokupan, which is wheat, and it is the majority of the sandwich. No gluten-free bread is offered.",
+    "dish_key": "fruit_sando"
+   },
+   {
+    "ja": "いちごサンド",
+    "romaji": "ichigo sando",
+    "en": "Strawberry sandwich — the one everybody photographs, halved so the fruit shows in cross-section",
+    "price": "700円",
+    "section": "ヴィーガンフルーツサンド Vegan fruit sandwiches",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Plant cream, no dairy, no egg — genuinely vegan. Wheat bread, so genuinely not gluten-free. Both facts are firm; what the cream is based on is not published, so a soy or nut allergy still needs a question.",
+    "dish_key": "ichigo_sando"
+   },
+   {
+    "ja": "キウイサンド",
+    "romaji": "kiwi sando",
+    "en": "Kiwi sandwich — same build, green cross-section",
+    "price": "700円",
+    "section": "ヴィーガンフルーツサンド Vegan fruit sandwiches",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Same plant cream and same wheat shokupan as the strawberry. Kiwi is itself a declared allergen in some jurisdictions though not one of Japan’s eight statutory ones.",
+    "dish_key": "kiwi_sando"
+   }
+  ]
+ },
+ "tokyo_shojin_ramen_sai": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://prtimes.jp/main/html/rd/p/000000019.000160560.html",
+   "https://www.hotpepper.jp/strJ004608000/",
+   "https://www.hotpepper.jp/strJ004608000/course/",
+   "https://r.gnavi.co.jp/pd9wrw990000/"
+  ],
+  "price_note": "⚠ THE RAMEN PRICES ARE NOT PUBLISHED ANYWHERE THIS MACHINE CAN READ, AND THAT IS WHY THIS RECORD IS SHORT. The shop opened in Shibuya in April 2026 and its only channel is Instagram, which serves a login wall to this egress. Hot Pepper carries the shop but shows no itemised menu on either its main page or its コース page (its budget band is 2001〜3000円 at both lunch and dinner). Gnavi carries only the opening announcement and a discounted ゆず塩ラーメン promotion with no standing price. Tabelog has served HTTP 403 to this egress since 2026-09-02. The two items below are the only priced dishes on any page that could actually be read: they come from a press release issued by Agro Ludens, the company that supplies the shop’s protein, which names them and their tax-inclusive prices outright. ⚠ WHAT IS GENUINELY ESTABLISHED, AND IT IS THE USEFUL PART: the release describes the shop as serving 動物性食材を使用しない「精進ラーメン」 — shojin ramen using no animal ingredients at all — at 東京都渋谷区宇田川町11-2, opened 2026年4月. Hot Pepper’s own subtitle is ヴィーガンラーメン and a customer review there records 動物性や魚介を使っていないと聞いていた. So the animal-free claim is corroborated from two directions. ⚠ AND THE PART A COELIAC MUST NOT MISREAD: the release states the new protein, 米由来マイコプロテイン Comeat®, is 麹菌を用いて、国産米のタンパク質を発酵させてつくった and is 高タンパク質・低脂質であることに加え、グルテンフリーかつ主要アレルゲンフリー — the PROTEIN is gluten-free and free of the major allergens. That says nothing whatever about the bowls. This is a ramen shop; a ramen noodle is wheat unless a shop says otherwise, and this one says nothing about its noodle, its tare or its miso. A gluten-free ingredient inside a wheat bowl is still a wheat bowl. Vegan travellers can eat here with confidence; coeliacs cannot, on anything published so far.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "ミニ肉味噌丼",
+    "romaji": "mini niku-miso don",
+    "en": "Mini “meat” miso rice bowl — a small donburi of savoury miso-cooked protein over rice, added to the menu alongside the ramen. The “meat” is Comeat®, a mycoprotein grown by fermenting the protein of Japanese-grown rice with koji mould",
+    "price": "800円（税込）",
+    "section": "サイドメニュー Sides",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "動物性食材不使用の店。Comeat®自体はグルテンフリー表示だが、肉味噌の味噌・調味料の表示なし。Vegan with confidence — the shop uses no animal ingredients and the protein is fermented rice, not soy meat and not gluten seitan, which is unusual and worth knowing if you avoid both. Gluten is the open question: the protein is declared gluten-free, but 肉味噌 is protein cooked down in miso and seasonings, and neither the miso (which may be 麦味噌, barley) nor the rest of the seasoning is declared. Ask.",
+    "dish_key": "niku_miso_don"
+   },
+   {
+    "ja": "ミニ肉味噌マヨ丼",
+    "romaji": "mini niku-miso mayo don",
+    "en": "The same bowl finished with mayonnaise — plant-based, since the kitchen uses no animal products",
+    "price": "850円（税込）",
+    "section": "サイドメニュー Sides",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Egg-free mayonnaise by implication of the shop’s no-animal-ingredients policy. Same unanswered question about the miso as the plain version.",
+    "dish_key": "niku_miso_mayo_don"
+   }
+  ]
  }
 }

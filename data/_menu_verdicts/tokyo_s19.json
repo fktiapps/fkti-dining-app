@@ -3191,5 +3191,193 @@
   "price_note": "HONEST EMPTY, but a informative one. 新宿 すし岩瀬 (西新宿3-4-1, near Tochomae) runs its own Gnavi shop site and its 夜のお品書き — the evening menu tab — contains exactly one line: 「おまかせのみ」. This is an omakase-only Edomae counter with no published à la carte and no published price; the chef decides and the figure is set on the night. That is a complete answer to 'what is the menu', not a gap in the research. For a coeliac the standing Edomae issues apply and cannot be resolved from anything published: the nikiri brushed onto the nigiri is wheat soy sauce, the tamago is usually bound with a dashi that carries soy, and the anago tsume is a soy-and-mirin reduction — ask the counter directly.",
   "last_checked": "2026-09-07",
   "items": []
+ },
+ "tokyo_maguro_to_shari": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://map.yahoo.co.jp/v3/place/7eCuhaWuj9E/menu",
+   "https://hitosara.com/0031517904/"
+  ],
+  "price_note": "⚠ THE MENU BELOW IS USER-SUBMITTED, NOT THE SHOP’S OWN BOARD, AND THAT IS THE FIRST THING TO KNOW ABOUT IT. Yahoo! Map heads this list ユーザー投稿のメニュー — items photographed and typed in by members of the public — and prints its own disclaimer, ※ 掲載時点の情報です。最新情報は店舗でご確認ください. Nothing here is dated. Some entries are visibly other diners’ shorthand rather than menu lines. It is recorded because it is the only itemised, priced list that exists for this shop on any page reachable from here, and because the dish names themselves are informative; treat every figure as approximate and every spelling as a diner’s. Hitosara was also read and confirms the shop itself: 渋谷区渋谷1-6-4 The Neat青山 1F, 03-6820-1052, open 11:00–21:00 every day of the week, average spend 1,000–1,999円 at both lunch and dinner — which brackets the donburi prices below and is the main reason to believe them. Hitosara carries no menu of its own. Instagram is the shop’s only listed channel and serves a login wall to this egress; Tabelog has served Cf-Mitigated: challenge (HTTP 403) to this egress since 2026-09-02. ⚠ WHAT A TUNA-BOWL COUNTER ACTUALLY MEANS FOR A COELIAC, AND IT IS BETTER NEWS THAN MOST OF THIS DATASET: raw tuna is fish and vinegared rice is rice, vinegar, sugar and salt — no wheat in either. The wheat at a kaisendon counter is almost entirely in the SOY SAUCE you pour on yourself, which means it is one of the few Japanese meals where the gluten is under your control rather than the kitchen’s. Bring tamari, or eat it with salt and wasabi. The two things that break that: the きつねうどん on this list, which is a wheat noodle in a soy-dashi broth and shares the kitchen, and the toppings — Japanese ikura is conventionally cured in soy (醤油漬け), and 納豆 arrives with a soy-and-dashi sachet. ⚠ NOTHING HERE IS VEGAN. This is a tuna shop; even the rice is a vehicle for it, and the only plant items on the list are toppings (avocado, tororo, nori) sold to go on top of fish.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "まぐシャリ丼",
+    "romaji": "magu-shari don",
+    "en": "The house bowl and the shop’s own coinage — “tuna and rice”, sold across a range because you build the size and the cut. Supervised, per the shop’s own publicity, by the Ginza sushi counter Hakkoku",
+    "price": "1,200円〜2,900円",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "刺身と酢飯自体は小麦を含まないが、醤油は小麦。The tuna and the vinegared rice carry no wheat. The soy sauce does, and at this kind of counter it is normally poured by you at the table rather than pre-applied — ask whether the bowl arrives already sauced before you commit. Raw fish; not vegetarian in any version.",
+    "dish_key": "maguro_don"
+   },
+   {
+    "ja": "まぐシャリ丼（極）",
+    "romaji": "magu-shari don (kiwami)",
+    "en": "The top-grade version of the house bowl",
+    "price": "3,500円",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Same construction, better cut of fish. Same soy-sauce question.",
+    "dish_key": "maguro_don_kiwami"
+   },
+   {
+    "ja": "中とろ赤身丼（中）",
+    "romaji": "chūtoro akami don (chū)",
+    "en": "Medium-fatty and lean tuna together over rice, medium size",
+    "price": "1,350円〜1,700円",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Two cuts of the same fish. Wheat risk is the soy only.",
+    "dish_key": "chutoro_akami_don"
+   },
+   {
+    "ja": "赤身たたき丼",
+    "romaji": "akami tataki don",
+    "en": "Chopped lean tuna over rice",
+    "price": "1,500円",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "たたき＝叩いた赤身。Minced lean tuna. Note that a tataki mix is sometimes bound or seasoned in the kitchen rather than left plain, which would put the soy inside the bowl instead of on the table — worth asking.",
+    "dish_key": "maguro_tataki_don"
+   },
+   {
+    "ja": "マグロ2色丼 いくらトッピング",
+    "romaji": "maguro nishoku don, ikura topping",
+    "en": "Two-colour tuna bowl with salmon roe added",
+    "price": "2,150円",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "いくらは通常醤油漬け＝小麦。The ikura is the problem, not the tuna: Japanese salmon roe is conventionally cured in soy sauce and mirin, so it brings wheat into the bowl whether or not you pour any.",
+    "dish_key": "maguro_nishoku_don"
+   },
+   {
+    "ja": "海鮮丼",
+    "romaji": "kaisen don",
+    "en": "Mixed seafood bowl — assorted raw fish rather than tuna alone",
+    "price": "1,000円〜",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A mixed bowl usually includes at least one item that has been marinated or glazed — anago, ikura, or a soy-cured cut — so it is a step less controllable than the plain tuna bowls. Ask what is on it.",
+    "dish_key": "kaisen_don"
+   },
+   {
+    "ja": "マグロ丼",
+    "romaji": "maguro don",
+    "en": "Plain tuna bowl — the entry price",
+    "price": "1,000円〜",
+    "section": "丼 Donburi (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The simplest thing on the list and, for a coeliac, the most controllable: fish and rice with the soy on the side.",
+    "dish_key": "maguro_don"
+   },
+   {
+    "ja": "きつねうどん",
+    "romaji": "kitsune udon",
+    "en": "Kitsune udon — the odd item on a tuna counter’s list: wheat noodles in broth with a sheet of sweet simmered fried tofu",
+    "price": "750円",
+    "section": "麺 Noodles (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "うどん＝小麦、つゆ＝鰹だし＋醤油、油揚げも醤油・味醂で煮る。Wheat in the noodle and wheat again in the soy of the broth; the broth is bonito dashi and the fried tofu is simmered in more soy. The tofu makes it look like the vegetarian option and it is not. Its presence also means there is a wheat-noodle pot in this kitchen.",
+    "dish_key": "kitsune_udon"
+   },
+   {
+    "ja": "いくら（トッピング）",
+    "romaji": "ikura (topping)",
+    "en": "Salmon roe, added to any bowl",
+    "price": "650円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "no",
+    "vegan": "no",
+    "note": "日本のいくらは醤油漬けが標準。Standard Japanese ikura is cured in soy sauce and mirin. Fish roe, so not vegetarian.",
+    "dish_key": "ikura_topping"
+   },
+   {
+    "ja": "うに（トッピング）",
+    "romaji": "uni (topping)",
+    "en": "Sea urchin, added to any bowl",
+    "price": "800円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Uni is served raw and unseasoned, so it carries no wheat of its own — but board-grade uni is commonly treated with alum (ミョウバン) to hold its shape, which shops rarely declare. Not an allergen issue for gluten; worth knowing if additives matter to you.",
+    "dish_key": "uni_topping"
+   },
+   {
+    "ja": "アボカド（トッピング）",
+    "romaji": "abokado (topping)",
+    "en": "Avocado, added to any bowl",
+    "price": "180円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Plain avocado — plant, no wheat of its own. Kept at ask for gluten only because it is being sliced in a kitchen that also runs a udon pot and pours soy.",
+    "dish_key": "avocado_topping"
+   },
+   {
+    "ja": "とろろ（トッピング）",
+    "romaji": "tororo (topping)",
+    "en": "Grated yam, added to any bowl",
+    "price": "180円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "とろろは出汁と醤油で伸ばすのが一般的。Grated yam is a plant, but restaurant tororo is normally loosened with dashi and soy sauce rather than served neat — which would make it both a fish item and a wheat item. Ask whether it is seasoned.",
+    "dish_key": "tororo_topping"
+   },
+   {
+    "ja": "のり（トッピング）",
+    "romaji": "nori (topping)",
+    "en": "Nori seaweed, added to any bowl",
+    "price": "120円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "焼海苔なら海藻のみ、味付海苔は醤油。Plain toasted nori is seaweed alone; seasoned nori is glazed with soy. Shops rarely say which.",
+    "dish_key": "nori_topping"
+   },
+   {
+    "ja": "卵黄（トッピング）",
+    "romaji": "ranō (topping)",
+    "en": "Raw egg yolk, dropped on the bowl",
+    "price": "120円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A plain raw yolk carries no wheat. Egg, so not vegan.",
+    "dish_key": "egg_yolk_topping"
+   },
+   {
+    "ja": "納豆（トッピング）",
+    "romaji": "nattō (topping)",
+    "en": "Fermented soybeans, added to any bowl",
+    "price": "120円",
+    "section": "トッピング Toppings (user-submitted list)",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "納豆自体は大豆と納豆菌のみだが、付属のタレは醤油＋かつおだし。The beans themselves are soybeans and culture and nothing else — genuinely wheat-free and genuinely plant. The sachet of tare that comes with every pack is soy sauce plus bonito extract, which is both a wheat and an animal ingredient. Ask for it without the tare and this is one of the cleanest items in the shop.",
+    "dish_key": "natto_topping"
+   },
+   {
+    "ja": "中サイズ / 中の大",
+    "romaji": "chū saizu / chū no dai",
+    "en": "Size upgrades recorded by diners rather than dish names — a medium at 2,300円 and a large-medium at 2,000円",
+    "price": "2,300円 / 2,000円",
+    "section": "サイズ Sizes (user-submitted list)",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Recorded for completeness. These are portion steps on the tuna bowls above, not separate dishes, and they are exactly the kind of entry that shows this list was typed in by customers rather than copied from a board.",
+    "dish_key": "maguro_don_size"
+   }
+  ]
  }
 }
