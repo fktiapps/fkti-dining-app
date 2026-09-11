@@ -3735,5 +3735,368 @@
     "dish_key": "cream_cheese_saikyozuke"
    }
   ]
+ },
+ "tokyo_fukuchan": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13022914/dtlmenu/"
+  ],
+  "price_note": "Full 32-row menu with prices, read off Tabelog in four locales (en/tw/kr/th). 東京都台東区浅草1-1-12 浅草地下街; 19 seats (13 counter, 6 table); 11:30–21:00 Tuesday to Friday, closed Monday and Saturday; average spend ¥1,000–1,999 over 761 ratings. ⚠ THE ADDRESS IS THE SAME 浅草地下街 AS 肉の色 — the tiny post-war underground arcade beside Asakusa station, where units are a few square metres each. At that scale there is one griddle, one fryer and one pot, so cross-contact is a physical fact rather than a policy question, and this shop’s griddle is cooking wheat noodles in wheat sauce all day. ⚠ THE PRICES ARE EXTRAORDINARY AND WORTH RECORDING AS SUCH: ¥350 for the house yakisoba, ¥200 for a bowl of rice, ¥50 for a raw egg. This is one of the cheapest full menus in the Tokyo set. ⚠ THE SHOP’S OWN SPECIALITY IS THE WORST THING ON IT FOR A COELIAC. 鉄板焼きそば is wheat twice: 中華麺 on the griddle, then a Worcestershire-style ソース that is itself thickened and flavoured with wheat. Seven of the 32 rows are yakisoba or a yakisoba set. ⚠ THE CURRY ROWS ARE THE SECOND TRAP AND THEY CATCH PEOPLE WHO AVOIDED THE FIRST. Japanese カレー is built on a ROUX — flour cooked in fat — so curry rice is not a rice dish that happens to have sauce; it is a flour sauce served over rice. Rows 2, 8, 26, 29 and 32 all carry it. ⚠ WHAT IS ACTUALLY REACHABLE HERE: row 10 (plain rice, ¥200), row 15 (cucumber with plum), row 22 (chilled tomato) and possibly row 16 (chilled tofu). That is the whole safe list, and three of the four are cold vegetable plates. ⚠ ROW 14 IS A NAMING TRAP THAT TWO LOCALES GET WRONG: もろきゅう is cucumber served with もろみ味噌 — Chinese reads it as edamame-and-cucumber and Thai as pickled bitter melon, both wrong; only the Korean transliteration 모로큐 preserves it. It matters because もろみ is the unrefined ferment mash, and it is frequently made with BARLEY or wheat, which turns an apparently plain cucumber plate into a gluten question.",
+  "last_checked": "2026-09-11",
+  "items": [
+   {
+    "ja": "鉄板焼きそば",
+    "romaji": "teppan yakisoba",
+    "en": "Griddled yakisoba",
+    "price": "JPY 350",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The house speciality and the cheapest main on the menu. Wheat twice over: 中華麺 noodles, then a Worcestershire-style ソース which is itself wheat-thickened. Pork and cabbage in the standard build.",
+    "dish_key": "teppan_yakisoba"
+   },
+   {
+    "ja": "カレーソース焼きそば",
+    "romaji": "curry sauce yakisoba",
+    "en": "Yakisoba with curry sauce",
+    "price": "JPY 450",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Wheat three ways: the noodles, the yakisoba sauce and a Japanese curry sauce built on a flour roux. The single most gluten-dense row on the menu.",
+    "dish_key": "curry_yakisoba"
+   },
+   {
+    "ja": "目玉焼きそば",
+    "romaji": "tamago yakisoba",
+    "en": "Yakisoba with egg",
+    "price": "JPY 450",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Yakisoba with an egg on top. Wheat noodles, wheat sauce, egg.",
+    "dish_key": "tamago_yakisoba"
+   },
+   {
+    "ja": "牛すじ焼きそば",
+    "romaji": "gyusuji yakisoba",
+    "en": "Yakisoba with beef tendon",
+    "price": "JPY 500",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Braised beef tendon over yakisoba. The tendon is itself simmered in soy, so wheat a third time.",
+    "dish_key": "gyusuji_yakisoba"
+   },
+   {
+    "ja": "ラーメン",
+    "romaji": "ramen",
+    "en": "Ramen",
+    "price": "JPY 450",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "中華麺 in a soy-seasoned broth. Wheat in the noodle and in the タレ.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "チャーシューメン",
+    "romaji": "chashu men",
+    "en": "Chashu ramen",
+    "price": "JPY 650",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen with braised pork belly. The chashu is simmered in soy and mirin.",
+    "dish_key": "chashu_men"
+   },
+   {
+    "ja": "ニンニクラーメン",
+    "romaji": "ninniku ramen",
+    "en": "Garlic ramen",
+    "price": "JPY 600",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Ramen with garlic. The garlic is the only clean thing in the bowl; the noodles and タレ are unchanged.",
+    "dish_key": "ninniku_ramen"
+   },
+   {
+    "ja": "カレーライス",
+    "romaji": "curry rice",
+    "en": "Curry rice",
+    "price": "JPY 450",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ROW A COELIAC IS MOST LIKELY TO ORDER BY MISTAKE, because \"curry and rice\" sounds like a naturally gluten-free dish and in most of the world it is. Japanese curry is not: the sauce is a ROUX — wheat flour cooked in fat — and that roux is what makes it Japanese curry rather than any other kind. There is no version without it. Meat stock as well.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "豚めし",
+    "romaji": "butameshi",
+    "en": "Pork over rice",
+    "price": "JPY 550",
+    "section": "Asakusa Specialty",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Simmered pork over rice. The simmering liquid is soy, mirin and sugar and it soaks into the rice.",
+    "dish_key": "butameshi"
+   },
+   {
+    "ja": "ライス",
+    "romaji": "raisu",
+    "en": "Plain rice",
+    "price": "JPY 200",
+    "section": "Asakusa Specialty",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ Plain boiled white rice at ¥200 — the only unconditionally safe row on this menu for both diets, and worth recording precisely because everything around it is not. No seasoning, no dashi, no sauce. It is not a meal, but it is clean.",
+    "dish_key": "raisu"
+   },
+   {
+    "ja": "トッピング 生卵",
+    "romaji": "topping nama tamago",
+    "en": "Raw egg topping",
+    "price": "JPY 50",
+    "section": "Asakusa Specialty",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "A raw egg to crack over rice or noodles, at fifty yen. Egg contains no gluten, so this is gf on its own — but it is never vegan, and whatever it is cracked onto here is wheat.",
+    "dish_key": "nama_tamago"
+   },
+   {
+    "ja": "トッピング 目玉焼き",
+    "romaji": "topping medamayaki",
+    "en": "Fried egg topping",
+    "price": "JPY 100",
+    "section": "Asakusa Specialty",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ Gluten-free as an egg, but this one is cooked — and it is cooked on the same 鉄板 that the wheat-sauced yakisoba is griddled on all day. That griddle is the contamination point. Ask, or take the raw egg instead.",
+    "dish_key": "medamayaki"
+   },
+   {
+    "ja": "ポークソーセージ",
+    "romaji": "pork sausage",
+    "en": "Pork sausage",
+    "price": "JPY 350",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sausage is a bound product and the binder is frequently rusk or breadcrumb — a common hidden wheat source, and never declared at this price point. Griddle-cooked here too.",
+    "dish_key": "pork_sausage"
+   },
+   {
+    "ja": "もろきゅう",
+    "romaji": "morokyu",
+    "en": "Cucumber with moromi miso",
+    "price": "JPY 300",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THREE LOCALES MISREAD THIS ROW AND THE MISREADING MATTERS. Chinese gives 毛豆黃瓜 (edamame and cucumber) and Thai gives มะระดอง (pickled bitter melon); only the Korean 모로큐 keeps it. もろきゅう is raw cucumber sticks served with もろみ味噌 — the unrefined ferment mash — and もろみ is frequently made with BARLEY or wheat rather than rice. So a plate that looks like raw cucumber is a genuine gluten question, and the miso may also carry dashi. Ask, or ask for the cucumber without the miso.",
+    "dish_key": "morokyu"
+   },
+   {
+    "ja": "梅きゅう",
+    "romaji": "umekyu",
+    "en": "Cucumber with pickled plum",
+    "price": "JPY 300",
+    "section": "Side Dish",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ The sister dish to もろきゅう and much the better choice: cucumber with 梅肉, which is umeboshi — plum, salt and red shiso, with no soy, no dashi and no grain. Clean on both counts, and one of only two vegan rows here that is actually a dish rather than plain rice.",
+    "dish_key": "umekyu"
+   },
+   {
+    "ja": "冷奴",
+    "romaji": "hiyayakko",
+    "en": "Chilled tofu",
+    "price": "JPY 200",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Cold tofu — the block itself is soy beans, water and a coagulant, so clean on both counts. ⚠ What it arrives WITH is the whole question, and the default at any Japanese counter is a pour of soy sauce (wheat) and a scatter of 鰹節 (fish). Ask for it plain with just the negi and ginger and it becomes an excellent order for both diets.",
+    "dish_key": "hiyayakko"
+   },
+   {
+    "ja": "チーズ",
+    "romaji": "chizu",
+    "en": "Cheese",
+    "price": "JPY 250",
+    "section": "Side Dish",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "A plate of cheese as a drinking snack. Dairy, so never vegan; no wheat.",
+    "dish_key": "chizu"
+   },
+   {
+    "ja": "サラミ",
+    "romaji": "sarami",
+    "en": "Salami",
+    "price": "JPY 250",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Cured sausage. Usually gluten-free, but cheap salami sometimes carries wheat starch as a filler and it is never declared at ¥250.",
+    "dish_key": "sarami"
+   },
+   {
+    "ja": "おしんこ",
+    "romaji": "oshinko",
+    "en": "Pickles",
+    "price": "JPY 300",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Japanese pickles: 浅漬け in salt alone is clean on both counts, 醤油漬け is wheat soy, and many commercial pickles are brined with bonito dashi. The word does not say which.",
+    "dish_key": "oshinko"
+   },
+   {
+    "ja": "もつ煮込み",
+    "romaji": "motsu nikomi",
+    "en": "Simmered offal",
+    "price": "JPY 370",
+    "section": "Side Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Offal simmered for hours in a miso-and-soy broth. The seasoning is the cooking liquid, so it is through the meat; both miso and soy are wheat risks.",
+    "dish_key": "motsu_nikomi"
+   },
+   {
+    "ja": "チャーシュー",
+    "romaji": "chashu",
+    "en": "Chashu (braised pork)",
+    "price": "JPY 400",
+    "section": "Side Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork belly braised in soy, sake, mirin and sugar. Absorbed, not surface-level.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "冷やしトマト",
+    "romaji": "hiyashi tomato",
+    "en": "Chilled tomato",
+    "price": "JPY 250",
+    "section": "Side Dish",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ Note the difference from かっぺ亭’s version of this dish, which is listed as マヨネーズ添え (with mayonnaise). This one is named plainly as chilled tomato with no dressing declared — so as listed it is tomato and nothing else, clean on both counts. Confirm no mayonnaise arrives with it.",
+    "dish_key": "hiyashi_tomato"
+   },
+   {
+    "ja": "ハツ・タンの味噌漬け",
+    "romaji": "hatsu tan no miso-zuke",
+    "en": "Heart and tongue cured in miso",
+    "price": "JPY 400",
+    "section": "Side Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Heart and tongue buried in miso. The miso is absorbed into the meat, so it cannot be removed — and miso is frequently barley- or wheat-fermented. At this price the miso will be a bought one and the shop may not know its base. Ask, but expect no answer.",
+    "dish_key": "hatsu_tan_misozuke"
+   },
+   {
+    "ja": "餃子",
+    "romaji": "gyoza",
+    "en": "Gyoza",
+    "price": "JPY 370",
+    "section": "Side Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat wrapper, pork filling.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "牛すじ煮込み",
+    "romaji": "gyusuji nikomi",
+    "en": "Braised beef tendon",
+    "price": "JPY 400",
+    "section": "Side Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Beef tendon simmered down in soy and mirin, or in miso. Either way the seasoning is the braising liquid.",
+    "dish_key": "gyusuji_nikomi"
+   },
+   {
+    "ja": "焼きそば＋半カレー",
+    "romaji": "yakisoba + han curry",
+    "en": "Yakisoba with half curry rice",
+    "price": "JPY 600",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles, wheat yakisoba sauce and a wheat-roux curry in one order.",
+    "dish_key": "set_yakisoba_curry"
+   },
+   {
+    "ja": "焼きそば＋餃子",
+    "romaji": "yakisoba + gyoza",
+    "en": "Yakisoba with gyoza",
+    "price": "JPY 650",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles and wheat wrappers.",
+    "dish_key": "set_yakisoba_gyoza"
+   },
+   {
+    "ja": "焼きそば＋豚めし",
+    "romaji": "yakisoba + butameshi",
+    "en": "Yakisoba with pork rice",
+    "price": "JPY 650",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles, wheat sauce, soy-simmered pork.",
+    "dish_key": "set_yakisoba_butameshi"
+   },
+   {
+    "ja": "ラーメン＋半カレー",
+    "romaji": "ramen + han curry",
+    "en": "Ramen with half curry rice",
+    "price": "JPY 700",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles and a wheat-roux curry.",
+    "dish_key": "set_ramen_curry"
+   },
+   {
+    "ja": "ラーメン＋餃子",
+    "romaji": "ramen + gyoza",
+    "en": "Ramen with gyoza",
+    "price": "JPY 750",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles and wheat wrappers.",
+    "dish_key": "set_ramen_gyoza"
+   },
+   {
+    "ja": "ラーメン＋豚めし",
+    "romaji": "ramen + butameshi",
+    "en": "Ramen with pork rice",
+    "price": "JPY 750",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles and soy-simmered pork.",
+    "dish_key": "set_ramen_butameshi"
+   },
+   {
+    "ja": "カレーライス＋餃子",
+    "romaji": "curry rice + gyoza",
+    "en": "Curry rice with gyoza",
+    "price": "JPY 750",
+    "section": "Value Set Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A wheat-roux curry and wheat wrappers.",
+    "dish_key": "set_curry_gyoza"
+   }
+  ]
  }
 }
