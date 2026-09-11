@@ -1676,5 +1676,489 @@
     "dish_key": "rosu_katsu_teishoku"
    }
   ]
+ },
+ "tokyo_mendokoro_takekawa": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1303/A130301/13178370/dtlmenu/"
+  ],
+  "price_note": "12 rows in three named sections, read off Tabelog in four locales. 東京都渋谷区円山町7-2 (Maruyamacho, behind Shibuya), 22 seats, lunch only — 11:30–14:30, L.O. 14:00, Wednesday to Sunday, closed Monday and Tuesday. Average spend ¥1,000–1,999. ⚠ THE WORD THE WHOLE MENU TURNS ON IS 無添加, \"ADDITIVE-FREE\", and it is a claim about SEASONING, NOT ABOUT GLUTEN. Eight of the twelve rows carry it. A shop that has gone to the trouble of removing MSG and chemical seasonings reads, to an English-speaking coeliac, like a shop that is careful about ingredients in general — and it may well be — but tsukemen and ramen noodles are wheat, the かえし is soy sauce, and 無添加 changes neither. Nothing on this menu is gluten-free and nothing is vegan. ⚠ THE SECOND TRAP IS THE WORD そば. Rows 9–12 are 無添加そば 竹川クラシック, and the Chinese locale renders them 無添加蕎麥 while the Korean says 메밀국수 — BUCKWHEAT NOODLES, in both cases. They are not. At a ramen counter 中華そば/そば is the old Tokyo word for a WHEAT ramen noodle, which is why these rows sit under the section Tabelog labels \"Ramen\" and are priced ¥1,000–1,300 alongside the tsukemen. A buckwheat-seeking diner steered here by the Chinese or Korean page would be eating wheat. ⚠ THE STRUCTURE IS WORTH READING AS A GRID rather than twelve dishes: three base bowls (無添加つけめん ¥1,100, 竹川オリエンタル ¥1,250, 無添加そば ¥1,000) each sold four ways — plain, 味玉 (+¥150), チャーシュー (+¥200), 特製 (+¥300). Learn the four suffixes and the menu is three decisions, not twelve.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "無添加つけめん",
+    "romaji": "mutenka tsukemen",
+    "en": "Additive-free tsukemen",
+    "price": "1,100円",
+    "section": "つけめん Dipping noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 無添加 is a claim about MSG and chemical seasoning, not about wheat. Tsukemen noodles are wheat and the dipping broth is soy-seasoned; this is the base price of the shop’s signature bowl.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "無添加つけめん 味玉",
+    "romaji": "mutenka tsukemen ajitama",
+    "en": "Additive-free tsukemen with seasoned egg",
+    "price": "1,250円",
+    "section": "つけめん Dipping noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥150 over the plain bowl. 味玉 is an egg cured in a soy-and-mirin tare, so it adds a second wheat source as well as the egg.",
+    "dish_key": "tsukemen_ajitama"
+   },
+   {
+    "ja": "無添加つけめん チャーシュー",
+    "romaji": "mutenka tsukemen chāshū",
+    "en": "Additive-free tsukemen with extra chashu",
+    "price": "1,300円",
+    "section": "つけめん Dipping noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥200. Chashu is pork braised in soy sauce.",
+    "dish_key": "tsukemen_chashu"
+   },
+   {
+    "ja": "無添加つけめん 特製",
+    "romaji": "mutenka tsukemen tokusei",
+    "en": "Additive-free tsukemen, special (all toppings)",
+    "price": "1,400円",
+    "section": "つけめん Dipping noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300, which is ¥50 less than buying the egg and the chashu separately. 特製 at a ramen counter conventionally means egg plus extra pork; the shop does not itemise it.",
+    "dish_key": "tsukemen_tokusei"
+   },
+   {
+    "ja": "竹川オリエンタル",
+    "romaji": "Takekawa Orientaru",
+    "en": "Takekawa Oriental tsukemen",
+    "price": "1,250円",
+    "section": "竹川オリエンタルつけめん",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Its own section and its own base price, ¥150 above the plain tsukemen, but the shop publishes no description of what makes it \"Oriental\" — no spice, no broth, no ingredient is named anywhere on the page. Wheat noodles and a soy-seasoned dip are the only things that can be stated.",
+    "dish_key": "takekawa_oriental"
+   },
+   {
+    "ja": "竹川オリエンタル 味玉",
+    "romaji": "Takekawa Orientaru ajitama",
+    "en": "Takekawa Oriental with seasoned egg",
+    "price": "1,400円",
+    "section": "竹川オリエンタルつけめん",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥150. Soy-cured egg on an undescribed wheat-noodle bowl.",
+    "dish_key": "takekawa_oriental_ajitama"
+   },
+   {
+    "ja": "竹川オリエンタル チャーシュー",
+    "romaji": "Takekawa Orientaru chāshū",
+    "en": "Takekawa Oriental with extra chashu",
+    "price": "1,450円",
+    "section": "竹川オリエンタルつけめん",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥200. Pork braised in soy.",
+    "dish_key": "takekawa_oriental_chashu"
+   },
+   {
+    "ja": "竹川オリエンタル 特製",
+    "romaji": "Takekawa Orientaru tokusei",
+    "en": "Takekawa Oriental, special",
+    "price": "1,550円",
+    "section": "竹川オリエンタルつけめん",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300 and the most expensive line in the shop. Contents not itemised.",
+    "dish_key": "takekawa_oriental_tokusei"
+   },
+   {
+    "ja": "無添加そば 竹川クラシック",
+    "romaji": "mutenka soba Takekawa kurashikku",
+    "en": "Additive-free ramen, Takekawa Classic",
+    "price": "1,000円",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ そば HERE IS NOT BUCKWHEAT. The Chinese locale writes 無添加蕎麥 and the Korean 메밀국수 — both say buckwheat — but Tabelog files this row under Ramen, and at a ramen counter そば is the old Tokyo name for a WHEAT alkaline noodle. Anyone who came looking for soba because of the translation would be eating wheat. The cheapest bowl in the shop.",
+    "dish_key": "soba_classic"
+   },
+   {
+    "ja": "無添加そば 竹川クラシック 味玉",
+    "romaji": "mutenka soba Takekawa kurashikku ajitama",
+    "en": "Takekawa Classic ramen with seasoned egg",
+    "price": "1,150円",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥150. Wheat noodle despite the そば in the name; soy-cured egg.",
+    "dish_key": "soba_classic_ajitama"
+   },
+   {
+    "ja": "無添加そば 竹川クラシック チャーシュー",
+    "romaji": "mutenka soba Takekawa kurashikku chāshū",
+    "en": "Takekawa Classic ramen with extra chashu",
+    "price": "1,200円",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥200. Soy-braised pork.",
+    "dish_key": "soba_classic_chashu"
+   },
+   {
+    "ja": "無添加そば 竹川クラシック 特製",
+    "romaji": "mutenka soba Takekawa kurashikku tokusei",
+    "en": "Takekawa Classic ramen, special",
+    "price": "1,300円",
+    "section": "ラーメン Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300. Contents not itemised by the shop.",
+    "dish_key": "soba_classic_tokusei"
+   }
+  ]
+ },
+ "tokyo_toomiya_tomiya": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1304/A130401/13011949/dtlmenu/"
+  ],
+  "price_note": "30 rows read off Tabelog in four locales. 東京都新宿区西新宿1-19-2 セイコービル1F, 15 counter seats, 10:30–22:00, OPEN EVERY DAY OF THE YEAR, average spend under ¥999. A miso-ramen specialist — Tabelog files the shop as 味噌ラーメン専門店 and the JSON-LD names it \"Miso Ramen Toomiya Shinjuku\". ⚠ MISO IS THE REASON THIS RECORD MATTERS, AND NOT FOR THE REASON MOST PEOPLE EXPECT. 麦味噌 is BARLEY miso, and barley is NOT on Japan’s statutory allergen list, so a shop is under no obligation to declare it anywhere — not on the menu, not on an allergen chart, not when asked in English. A specialist that sells four different miso bases (赤 / 白 / 合わせ / 辛) has four different chances of one of them being barley-fermented, and this shop declares none of them. For a coeliac the noodle already settles the question, but anyone eating gluten-free BEYOND the noodle — ordering toppings, or the chashu rice bowl — needs to know that the miso itself is an open question here. ⚠ THE MENU IS A GRID, NOT THIRTY DISHES: four bases (辛味噌 ¥900, 赤味噌 ¥850, 白味噌 ¥850, 合わせ味噌 ¥900) each sold four ways — plain, 味玉 (+¥100), チャーシュー (+¥300), バターコーン (+¥300) — plus a 特選 version of each at ¥1,150–1,200. Nineteen of the thirty rows are that grid. ⚠ ONE ROW DEFEATS ALL FOUR LOCALES: row 14 at ¥1,150 comes out as \"Special Shiro Miiso\" in English, 特選白見磯 in Chinese, 흰바다 (\"white sea\") in Korean and ซาชิมิพิเศษ (\"special SASHIMI\") in Thai. Its price and its position — directly above the three 白味噌 rows, matching 特選赤味噌 at ¥1,150 and 特選辛味噌 at ¥1,200 — make it 特選白味噌, and the English is the only locale that got close. It is recorded as that, and the disagreement is recorded with it. ⚠ NOTHING ON THIS MENU IS GLUTEN-FREE. Rice at ¥150 and half rice at ¥100 are plain, and the chashu bowl on top of them is not.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "新商品 十味やの混ぜそば",
+    "romaji": "shinshōhin Tōmiya no mazesoba",
+    "en": "New: Toomiya’s mazesoba",
+    "price": "1,000円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Flagged 新商品 (new) by the shop. 混ぜそば is a brothless bowl — wheat noodles tossed with a concentrated tare, which is soy-based and usually carries pork fat. The absence of soup does not remove the wheat; it concentrates the seasoning.",
+    "dish_key": "mazesoba"
+   },
+   {
+    "ja": "混ぜそば 推奨トッピング",
+    "romaji": "mazesoba suishō toppingu",
+    "en": "Recommended toppings for the mazesoba",
+    "price": "",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A heading row with NO PRICE PRINTED and no contents listed — the shop points at recommended toppings without naming or pricing them. Recorded as it appears rather than guessed at.",
+    "dish_key": "mazesoba_toppings"
+   },
+   {
+    "ja": "味噌つけ麺",
+    "romaji": "miso tsukemen",
+    "en": "Miso tsukemen",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles served cold with a concentrated miso dipping broth. ⚠ Which miso is not stated, and 麦味噌 is barley.",
+    "dish_key": "miso_tsukemen"
+   },
+   {
+    "ja": "特選辛味噌",
+    "romaji": "tokusen kara-miso",
+    "en": "Premium spicy miso ramen",
+    "price": "1,200円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The 特選 tier of the spicy base — ¥300 over the plain 辛味噌ラーメン. The shop does not itemise what 特選 adds.",
+    "dish_key": "tokusen_karamiso"
+   },
+   {
+    "ja": "辛味噌ラーメン",
+    "romaji": "kara-miso rāmen",
+    "en": "Spicy miso ramen",
+    "price": "900円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Base price of the spicy miso bowl. Wheat noodles; the miso base is undeclared and may be barley-fermented.",
+    "dish_key": "karamiso_ramen"
+   },
+   {
+    "ja": "辛味噌味玉ラーメン",
+    "romaji": "kara-miso ajitama rāmen",
+    "en": "Spicy miso ramen with seasoned egg",
+    "price": "1,000円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥100 for a soy-cured egg.",
+    "dish_key": "karamiso_ajitama"
+   },
+   {
+    "ja": "辛味噌チャーシューラーメン",
+    "romaji": "kara-miso chāshū rāmen",
+    "en": "Spicy miso ramen with extra chashu",
+    "price": "1,200円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300 for soy-braised pork.",
+    "dish_key": "karamiso_chashu"
+   },
+   {
+    "ja": "辛味噌バターコーンラーメン",
+    "romaji": "kara-miso batā kōn rāmen",
+    "en": "Spicy miso ramen with butter and corn",
+    "price": "1,200円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The Sapporo-style topping, and a DAIRY row — butter, on a bowl a vegetarian might otherwise have been weighing up. +¥300.",
+    "dish_key": "karamiso_butter_corn"
+   },
+   {
+    "ja": "特選赤味噌",
+    "romaji": "tokusen aka-miso",
+    "en": "Premium red miso ramen",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "特選 tier of the red base, ¥300 over plain.",
+    "dish_key": "tokusen_akamiso"
+   },
+   {
+    "ja": "赤味噌ラーメン",
+    "romaji": "aka-miso rāmen",
+    "en": "Red miso ramen",
+    "price": "850円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "One of the two cheapest bowls in the shop. 赤味噌 is conventionally a long-aged soybean miso, but the koji grain is not declared and barley miso is not a labelled allergen in Japan.",
+    "dish_key": "akamiso_ramen"
+   },
+   {
+    "ja": "赤味噌味玉ラーメン",
+    "romaji": "aka-miso ajitama rāmen",
+    "en": "Red miso ramen with seasoned egg",
+    "price": "950円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥100.",
+    "dish_key": "akamiso_ajitama"
+   },
+   {
+    "ja": "赤味噌チャーシューラーメン",
+    "romaji": "aka-miso chāshū rāmen",
+    "en": "Red miso ramen with extra chashu",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300. Pork braised in soy.",
+    "dish_key": "akamiso_chashu"
+   },
+   {
+    "ja": "赤味噌バターコーンラーメン",
+    "romaji": "aka-miso batā kōn rāmen",
+    "en": "Red miso ramen with butter and corn",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dairy. +¥300.",
+    "dish_key": "akamiso_butter_corn"
+   },
+   {
+    "ja": "特選白味噌",
+    "romaji": "tokusen shiro-miso",
+    "en": "Premium white miso ramen",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ROW THAT DEFEATS EVERY LOCALE: English \"Special Shiro Miiso\", Chinese 特選白見磯, Korean 흰바다 (\"white sea\"), Thai ซาชิมิพิเศษ (\"special sashimi\"). Its ¥1,150 matches 特選赤味噌 exactly and it sits directly above the three 白味噌 rows, so it is the 特選 tier of the white base. Recorded as 特選白味噌 with the disagreement stated rather than hidden. ⚠ 白味噌 is normally a sweet RICE-koji miso, which is the one variety least likely to be barley — but this shop declares nothing.",
+    "dish_key": "tokusen_shiromiso"
+   },
+   {
+    "ja": "白味噌ラーメン",
+    "romaji": "shiro-miso rāmen",
+    "en": "White miso ramen",
+    "price": "850円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Joint cheapest bowl with the red. Wheat noodles in an undeclared miso base.",
+    "dish_key": "shiromiso_ramen"
+   },
+   {
+    "ja": "白味噌味玉ラーメン",
+    "romaji": "shiro-miso ajitama rāmen",
+    "en": "White miso ramen with seasoned egg",
+    "price": "950円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥100.",
+    "dish_key": "shiromiso_ajitama"
+   },
+   {
+    "ja": "白味噌チャーシューラーメン",
+    "romaji": "shiro-miso chāshū rāmen",
+    "en": "White miso ramen with extra chashu",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300.",
+    "dish_key": "shiromiso_chashu"
+   },
+   {
+    "ja": "白味噌バターコーンラーメン",
+    "romaji": "shiro-miso batā kōn rāmen",
+    "en": "White miso ramen with butter and corn",
+    "price": "1,150円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dairy. +¥300.",
+    "dish_key": "shiromiso_butter_corn"
+   },
+   {
+    "ja": "特選合わせ味噌",
+    "romaji": "tokusen awase-miso",
+    "en": "Premium blended miso ramen",
+    "price": "1,200円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 合わせ味噌 means two or more misos BLENDED, which is the worst case for anyone tracking barley: it doubles the number of undeclared koji grains in one bowl. The Chinese locale gives up entirely and renders it 特選合併, \"premium merger\".",
+    "dish_key": "tokusen_awasemiso"
+   },
+   {
+    "ja": "合わせ味噌ラーメン",
+    "romaji": "awase-miso rāmen",
+    "en": "Blended miso ramen",
+    "price": "900円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Two or more misos blended; neither is named.",
+    "dish_key": "awasemiso_ramen"
+   },
+   {
+    "ja": "合わせ味噌味玉ラーメン",
+    "romaji": "awase-miso ajitama rāmen",
+    "en": "Blended miso ramen with seasoned egg",
+    "price": "1,000円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥100.",
+    "dish_key": "awasemiso_ajitama"
+   },
+   {
+    "ja": "合わせ味噌チャーシューラーメン",
+    "romaji": "awase-miso chāshū rāmen",
+    "en": "Blended miso ramen with extra chashu",
+    "price": "1,200円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "+¥300.",
+    "dish_key": "awasemiso_chashu"
+   },
+   {
+    "ja": "合わせ味噌バターコーンラーメン",
+    "romaji": "awase-miso batā kōn rāmen",
+    "en": "Blended miso ramen with butter and corn",
+    "price": "1,200円",
+    "section": "メニュー Menu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Dairy. +¥300.",
+    "dish_key": "awasemiso_butter_corn"
+   },
+   {
+    "ja": "味玉",
+    "romaji": "ajitama",
+    "en": "Seasoned soft-boiled egg",
+    "price": "100円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Cured in a soy-and-mirin tare. The wheat is in the curing liquid.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "チャーシュー",
+    "romaji": "chāshū",
+    "en": "Chashu pork",
+    "price": "300円",
+    "section": "トッピング Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork braised in soy sauce.",
+    "dish_key": "chashu"
+   },
+   {
+    "ja": "海苔増量",
+    "romaji": "nori zōryō",
+    "en": "Extra nori",
+    "price": "150円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Sheet nori is seaweed and nothing else — the only vegan topping on the board. Plain nori carries no grain, though sheets sold to ramen shops are sometimes seasoned; on its own it is as clean as this menu gets.",
+    "dish_key": "nori"
+   },
+   {
+    "ja": "メンマ",
+    "romaji": "menma",
+    "en": "Menma bamboo shoots",
+    "price": "150円",
+    "section": "トッピング Toppings",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Fermented bamboo, but seasoned — conventionally in soy and dashi, which would make it both wheat and fish. Not declared.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "ライス(150g)",
+    "romaji": "raisu",
+    "en": "Rice, 150g",
+    "price": "150円",
+    "section": "ご飯もの Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice, portion stated by the shop. One of the two clean rows on the menu.",
+    "dish_key": "raisu"
+   },
+   {
+    "ja": "半ライス(100g)",
+    "romaji": "han raisu",
+    "en": "Half rice, 100g",
+    "price": "100円",
+    "section": "ご飯もの Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Plain steamed rice, 100g. ¥50 less than the full portion for 50g less.",
+    "dish_key": "han_raisu"
+   },
+   {
+    "ja": "チャーシュー丼",
+    "romaji": "chāshū-don",
+    "en": "Chashu rice bowl",
+    "price": "400円",
+    "section": "ご飯もの Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Rice is the clean part and the pork on top is not: chashu is braised in soy sauce and the bowl is finished with the same tare. A rice dish is not automatically the gluten-free choice.",
+    "dish_key": "chashu_don"
+   }
+  ]
  }
 }

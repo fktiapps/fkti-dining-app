@@ -10,4 +10,4 @@ export function put(shard, id, rec) {
   fs.writeFileSync(p, JSON.stringify(o, null, 1));
   console.log(`  + ${shard} ${id} (${rec.items.length} items)`);
 }
-export const T = '2026-09-06';
+export const T = '2026-09-10';

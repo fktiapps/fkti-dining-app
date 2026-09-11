@@ -10,7 +10,16 @@
 //       equivalent (おかめ, 板わさ, 冷やかけうどん) and keeps JA parentheticals
 //   kr  transliterates rather than translates (텐자루 = tenzaru, 가케소바 = kakesoba),
 //       recovering the Japanese reading the English gloss destroys
-// Three views of one JA source reconstruct it far better than any one translation.
+//   th  THE BEST TRANSLITERATOR OF THE FOUR, because Thai shares no script with Japanese
+//       and the pipeline barely attempts a translation. At 並木藮蕎麦 it alone gets
+//       นอร์ริคาเกะ = nori-kake right — /en/ says "Nori Topped" and /cn/ guesses
+//       海苔盖饭, a RICE BOWL — and it alone gives ฮานามากิ = hanamaki,
+//       บันวาซะ = ita-wasa and กามะนัง = kamo-nanban.
+// Four views of one JA source beat any one translation, and they disagree in a USEFUL
+// direction: where a TRANSLATING locale (en/tw/cn) and a TRANSLITERATING one (kr/th)
+// conflict, the transliteration is the one still carrying the original.
+// /cn/ is deliberately not fetched — it duplicates /tw/ and loses to it, because /tw/
+// leaves untranslatable Japanese standing where /cn/ paraphrases it away.
 //
 //   node scripts/harvest-tabelog.mjs <place-id> [place-id ...]   # resolved via city data
 //   node scripts/harvest-tabelog.mjs https://tabelog.com/tokyo/A.../13000629/
@@ -22,7 +31,7 @@ import { execFileSync } from 'node:child_process';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36';
 const ent = s => s.replace(/&yen;/g, '¥').replace(/&amp;/g, '&').replace(/&quot;/g, '"')
   .replace(/&nbsp;/g, ' ').replace(/&#(\d+);/g, (_, d) => String.fromCharCode(+d)).trim();
-const loc = (u, l) => u.replace(/tabelog\.com\/(en\/|tw\/|kr\/|cn\/)?tokyo\//, `tabelog.com/${l}/tokyo/`)
+const loc = (u, l) => u.replace(/tabelog\.com\/(en\/|tw\/|kr\/|cn\/|th\/)?tokyo\//, `tabelog.com/${l}/tokyo/`)
   .replace(/\/(dtlmenu\/?)?$/, '/') + 'dtlmenu/';
 const get = u => {
   try { return execFileSync('curl', ['-s', '-A', UA, '--max-time', '30', u], { encoding: 'utf8', maxBuffer: 1 << 26 }); }
@@ -53,8 +62,9 @@ const items = h => {
 const one = (h, re) => { const m = h.match(re); return m ? clean(m[1] ?? m[0]) : ''; };
 
 export function harvest(website) {
-  const en = get(loc(website, 'en')), tw = get(loc(website, 'tw')), kr = get(loc(website, 'kr'));
-  const E = items(en), T = items(tw), K = items(kr);
+  const en = get(loc(website, 'en')), tw = get(loc(website, 'tw')),
+        kr = get(loc(website, 'kr')), th = get(loc(website, 'th'));
+  const E = items(en), T = items(tw), K = items(kr), H = items(th);
   const out = [];
   out.push(`URL ${loc(website, 'en')}`);
   const ld = en.match(/"@type":"Restaurant"[\s\S]{0,700}/);
@@ -66,17 +76,28 @@ export function harvest(website) {
     const i = en.indexOf(k);
     if (i > 0) out.push(`${k}: ${clean(en.slice(i, i + 600)).slice(0, 260)}`);
   }
-  if (/Listing on hold|listing is on hold|掲載保留/.test(en)) out.push('!! LISTING ON HOLD — closure/relocation unconfirmed');
-  if (/permanently closed/.test(en)) out.push('!! CLOSED marker present');
+  // Read the STATUS BADGE, not the prose. Tabelog explains an on-hold listing with the
+  // sentence "...may have relocated or permanently closed", so grepping for
+  // /permanently closed/ reports a closure on every on-hold shop — 酒処さくら and 鳥せん
+  // both came back "CLOSED marker present" purely off that boilerplate. The red badge
+  // is the only element that actually asserts a status.
+  const badge = one(en, /rst-status-badge-red__text[^>]*>([\s\S]*?)</);
+  if (badge) out.push(`!! STATUS BADGE: ${badge} — operating status unconfirmed by Tabelog`);
   // A mismatch across locales means the three pages disagree about how many rows exist,
   // so the row-by-row cross-read below is not trustworthy for this shop.
-  out.push(`ITEMS en=${E.length} tw=${T.length} kr=${K.length}${E.length === T.length && T.length === K.length ? '' : '  !! LOCALE ROW COUNTS DISAGREE — cross-read unreliable'}`);
-  const n = Math.max(E.length, T.length, K.length);
+  const counts = [E.length, T.length, K.length, H.length];
+  out.push(`ITEMS en=${E.length} tw=${T.length} kr=${K.length} th=${H.length}`
+    + (counts.every(c => c === counts[0]) ? '' : '  !! LOCALE ROW COUNTS DISAGREE — cross-read unreliable'));
+  // A listing with no menu tab at all is a FINDING, not a fetch failure: the shop
+  // publishes nothing here, and the record is an honest empty unless a first-party
+  // source turns up. Reporting it as `en=0` alone reads like a broken selector.
+  if (!E.length && /No Menu/.test(en)) out.push('!! NO MENU — Tabelog prints "No Menu" for this shop; items: [] unless another source exists');
+  const n = Math.max(...counts);
   for (let i = 0; i < n; i++) {
-    const e = E[i] || {}, t = T[i] || {}, k = K[i] || {};
+    const e = E[i] || {}, t = T[i] || {}, k = K[i] || {}, h = H[i] || {};
     const desc = e.d || t.d ? `\n     desc: ${e.d || ''} // ${t.d || ''}` : '';
-    out.push(` ${String(i + 1).padStart(2)}. [${e.sec || ''}] ${e.p || t.p || k.p || '(NO PRICE PRINTED)'}`
-      + `\n     en: ${e.t || ''}\n     tw: ${t.t || ''}\n     kr: ${k.t || ''}${desc}`);
+    out.push(` ${String(i + 1).padStart(2)}. [${e.sec || ''}] ${e.p || t.p || k.p || h.p || '(NO PRICE PRINTED)'}`
+      + `\n     en: ${e.t || ''}\n     tw: ${t.t || ''}\n     kr: ${k.t || ''}\n     th: ${h.t || ''}${desc}`);
   }
   return out.join('\n');
 }
