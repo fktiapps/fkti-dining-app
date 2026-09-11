@@ -20,6 +20,7 @@
 //   node scripts/menu-todo.mjs [city]        # default tokyo
 //   node scripts/menu-todo.mjs tokyo --next  # just the next shard to work on
 //   node scripts/menu-todo.mjs tokyo --by-source  # outstanding split by how it can be researched
+//   node scripts/menu-todo.mjs tokyo --by-source --limit=100  # print past the first 20
 import fs from 'node:fs';
 import { readCity } from './lib-city.mjs';
 
@@ -114,8 +115,9 @@ if (BY_SOURCE) {
   }
   const work = ORDER.flatMap(k => groups[k]);
   console.log(`\n  reachable now: ${work.length}`);
-  console.log(`\n  next 20 reachable:`);
-  for (const r of work.slice(0, 20))
+  const LIM = +((process.argv.find(a => a.startsWith('--limit=')) || '--limit=20').split('=')[1]);
+  console.log(`\n  next ${Math.min(LIM, work.length)} reachable:`);
+  for (const r of work.slice(0, LIM))
     console.log(`    ${r.shard.padEnd(5)} ${r.id.padEnd(32)} ${sourceOf(r).padEnd(12)} ${r.website || ""}`);
   process.exit(0);
 }
