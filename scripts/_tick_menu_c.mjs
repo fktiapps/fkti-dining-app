@@ -1,0 +1,68 @@
+// Local tick 2026-09-11 — real menus, part C: かっぺ亭 新宿思い出横丁本店.
+// Row 1 is a five-skewer price group and is split, as at 石川.
+import { put, T } from './_tick_lib.mjs';
+const TB = u => `https://tabelog.com/en/tokyo/${u}/dtlmenu/`;
+
+const SKEWER =
+  ' ⚠ 塩 or タレ decides this skewer: salt-grilled is meat, salt and charcoal and is clean; tare is soy, mirin and sugar from a shared dipping pot. Ask for 塩.';
+
+put('s29', 'tokyo_kappe_tei_shinjuku_omoid', {
+  verified: 'partial',
+  confidence: 'medium',
+  sources: [TB('A1304/A130401/13034013')],
+  price_note:
+    'Full 21-row menu with prices, read off Tabelog in four locales (en/tw/kr/th) and expanded to 25 records — row 1 is a five-skewer price group and is split out, since ねぎま and つくね do not share an answer. 東京都新宿区西新宿1-2-1 — 思い出横丁, the alley of tiny post-war grill bars beside Shinjuku station — though at 55 seats over two floors (29 down, 26 up) this is one of the larger operations in it. 16:00–23:00; average spend ¥1,000–1,999. Cuisine is filed as 居酒屋 / もつ焼き / 焼き鳥, and the もつ (offal) tag shows in the menu. ⚠ THIS SHOP IS THE CLEAREST DEMONSTRATION IN THE DATASET OF WHY THE THAI LOCALE IS FETCHED. On nine rows Thai returns the RAW JAPANESE verbatim rather than attempting a translation — ハツ, 豚バラ, 枝豆 熟成岩塩使用, レバテキ刺 純正ごま油と岩塩がけ, 冷やしトマト マヨネーズ添え, 自家製シューマイ（３個）, 漬物の盛り合わせ, フライドポテト, 若鶏のからあげ — which is strictly MORE informative than any of the three translations, because it is the shop’s own text with nothing lost. On four further rows Thai is empty. A locale that fails loudly and falls back to the source beats one that guesses fluently. ⚠ IT ALSO SETTLES ROW 12, WHICH THE ENGLISH GETS WRONG IN A WAY THAT MATTERS. /en/ calls it "Liver Paste Sashimi"; the Thai fallback gives レバテキ刺 — レバテキ is liver STEAK, seared on the outside and rare within, not a paste — and tw 肝刺身 撒上純正芝麻油和岩鹽 confirms the dressing is pure SESAME OIL AND ROCK SALT. That makes it one of very few izakaya plates with no soy in it at all. (The Korean 간장소스 — "soy sauce" — is the outlier and is contradicted by the other three.) ⚠ THE GENERAL SHAPE FOR A COELIAC: salt-grilled skewers and the salt-dressed plates are reachable; everything wrapped, battered, simmered or glazed is not. ⚠ ROW 16 DESERVES ITS OWN WARNING — 羽根餃子 has a flour-and-water slurry poured into the pan to make the lacy "wing", so it is wheat ON TOP of the wheat wrapper. ⚠ FOR A VEGAN: row 10 (edamame with rock salt) is the only unambiguous yes on the whole menu.',
+  last_checked: T,
+  items: [
+    { ja: 'もも', romaji: 'momo', en: 'Chicken thigh skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `One of five skewers sharing the ¥209 price.${SKEWER}`, dish_key: 'momo' },
+    { ja: 'ねぎま', romaji: 'negima', en: 'Chicken and spring onion skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `Chicken and negi, nothing else — the simplest order here and the best one for a coeliac.${SKEWER}`, dish_key: 'negima' },
+    { ja: 'せせり', romaji: 'seseri', en: 'Chicken neck meat skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `Neck meat, plain cut.${SKEWER}`, dish_key: 'seseri' },
+    { ja: '皮', romaji: 'kawa', en: 'Chicken skin skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `Skin, grilled crisp. No coating.${SKEWER}`, dish_key: 'kawa' },
+    { ja: 'ぼんじり', romaji: 'bonjiri', en: 'Chicken tail skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `The fatty tail cut.${SKEWER}`, dish_key: 'bonjiri' },
+    { ja: '手造りつくね', romaji: 'tezukuri tsukune', en: 'Handmade tsukune', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'no', vegan: 'no',
+      note: '⚠ A salt order does not rescue this one. つくね is minced chicken that must be BOUND to hold to the skewer, and the binder is flour or panko at most counters — mixed through the patty, not on it. "手造り" (handmade) says the shop makes them itself, which means it could answer precisely, but nothing is declared. Recorded no on the structural default.', dish_key: 'tsukune' },
+    { ja: 'ハツ', romaji: 'hatsu', en: 'Chicken heart skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `Heart. Plain cut. (Thai returns the raw ハツ here rather than translating.)${SKEWER}`, dish_key: 'hatsu' },
+    { ja: '豚バラ', romaji: 'buta bara', en: 'Pork belly skewer', price: 'JPY 209', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'ask', vegan: 'no',
+      note: `Pork belly. ⚠ The Korean renders it 돼지목살 — pork NECK — against 豚バラ in the Thai fallback and 豬肉五花 in the Chinese, both of which are belly. Belly is the correct reading. Dietarily identical either way.${SKEWER}`, dish_key: 'buta_bara' },
+    { ja: '焼き鳥ミックス（4本）', romaji: 'yakitori mix (4 hon)', en: 'Mixed grilled chicken, 4 skewers', price: 'JPY 759', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'no', vegan: 'no',
+      note: '⚠ The kitchen chooses, which in practice means つくね is in it and the set arrives tare-glazed. Order skewers individually and 塩 instead; the mix is the one yakitori order a coeliac should not place.', dish_key: 'yakitori_mix' },
+    { ja: '牛タン塩焼き レモン添え', romaji: 'gyutan shioyaki lemon-zoe', en: 'Salt-grilled beef tongue with lemon', price: 'JPY 979', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'gf', vegan: 'no',
+      note: '⚠ ONE OF THE FEW ITEMS ON THIS MENU THAT DECLARES ITS OWN SEASONING AND SO DOES NOT NEED AN ASK. 塩焼き is in the dish name (tw 牛舌鹽燒, kr 소금구이) — salt-grilled, not tare-glazed — and it is finished with lemon rather than sauce. Beef tongue, salt, charcoal, citrus: no wheat anywhere. Beef, so never vegan.', dish_key: 'gyutan_shioyaki' },
+    { ja: '牛カルビ たれ焼き', romaji: 'gyu karubi tare-yaki', en: 'Grilled beef short rib with tare', price: 'JPY 1,309', section: 'Charcoal-Grilled Artisan Yakitori', gf: 'no', vegan: 'no',
+      note: '⚠ The exact opposite of the tongue above, and the pair is worth reading together: this row declares たれ in its own name, so there is no salt version to request. Yakiniku tare is soy, mirin, sugar, garlic and sesame — wheat via the soy. The most expensive item on the menu and the one a coeliac should skip.', dish_key: 'gyu_karubi_tare' },
+    { ja: 'パリパリきゅうり（味噌マヨ）', romaji: 'paripari kyuri (miso mayo)', en: 'Crisp cucumber with miso mayonnaise', price: 'JPY 429', section: 'Side Dishes', gf: 'ask', vegan: 'no',
+      note: 'The cucumber is clean; the dressing is not. Mayonnaise is egg, so this is out for a vegan as served. Miso is the gluten question — frequently barley- or wheat-fermented — and is not declared. ⚠ Ask for the cucumber plain and it becomes one of the safest things here on both counts.', dish_key: 'paripari_kyuri' },
+    { ja: 'うずら卵の醤油煮', romaji: 'uzura tamago no shoyu-ni', en: 'Quail eggs simmered in soy sauce', price: 'JPY 429', section: 'Side Dishes', gf: 'no', vegan: 'no',
+      note: 'The dish name states the problem: 醤油煮 means simmered IN soy sauce, so the wheat is absorbed into the egg rather than sitting on it. Egg as well. No on both counts, no ask needed.', dish_key: 'uzura_shoyuni' },
+    { ja: '枝豆 熟成岩塩使用', romaji: 'edamame jukusei ganen shiyo', en: 'Edamame with aged rock salt', price: 'JPY 429', section: 'Side Dishes', gf: 'gf', vegan: 'vegan',
+      note: '⚠ THE ONLY UNAMBIGUOUS YES ON THIS MENU FOR BOTH DIETS, and the shop states the seasoning itself: soy beans boiled in the pod and finished with rock salt. No sauce, no dashi, no coating, nothing to ask about. Thai returns the raw 枝豆 熟成岩塩使用 rather than translating, which is how the seasoning is confirmed.', dish_key: 'edamame' },
+    { ja: '牛もつ煮', romaji: 'gyu motsu-ni', en: 'Simmered beef offal', price: 'JPY 539', section: 'Side Dishes', gf: 'no', vegan: 'no',
+      note: 'もつ煮 is offal simmered for hours in a miso-and-soy broth — the seasoning is the cooking liquid, so it is through the meat. Both miso and soy are gluten risks and neither is declared. The もつ焼き tag in this shop’s cuisine listing is this dish.', dish_key: 'gyu_motsuni' },
+    { ja: 'レバテキ刺 純正ごま油と岩塩がけ', romaji: 'rebateki-zashi junsei goma-abura to ganen gake', en: 'Seared liver with pure sesame oil and rock salt', price: 'JPY 539', section: 'Side Dishes', gf: 'gf', vegan: 'no',
+      note: '⚠ THE ROW THE ENGLISH GETS WRONG. /en/ says "Liver Paste Sashimi", which suggests a pâté; the Thai fallback gives the shop’s own レバテキ刺 — レバテキ is liver STEAK, seared outside and rare within — and tw 肝刺身 撒上純正芝麻油和岩鹽 confirms the dressing as pure sesame oil and rock salt. Liver, sesame oil, salt: no soy, no wheat, no coating. The Korean 간장소스 ("soy sauce") is the lone outlier and is outvoted three to one. One of the cleanest gluten-free plates in this batch, and a good example of a dish that a coeliac would wrongly skip on the English name alone.', dish_key: 'rebateki' },
+    { ja: '冷やしトマト マヨネーズ添え', romaji: 'hiyashi tomato mayonnaise-zoe', en: 'Chilled tomato with mayonnaise', price: 'JPY 429', section: 'Side Dishes', gf: 'ask', vegan: 'ask',
+      note: 'Chilled tomato — plant, gluten-free, vegan. The mayonnaise is egg and is 添え, i.e. served ON THE SIDE rather than dressed through, which is exactly why this is an ask and not a no: refuse the mayo and the dish is clean on both counts. Japanese mayonnaise uses rice or apple vinegar and is usually gluten-free anyway, but the egg is the vegan blocker.', dish_key: 'hiyashi_tomato' },
+    { ja: '自家製シューマイ（3個）', romaji: 'jikasei shumai (3 ko)', en: 'Homemade shumai, 3 pieces', price: 'JPY 583', section: 'Side Dishes', gf: 'no', vegan: 'no',
+      note: 'A shumai wrapper is wheat flour — the wrapper is the dish. Pork filling. No on both counts.', dish_key: 'shumai' },
+    { ja: '漬物の盛り合わせ', romaji: 'tsukemono no moriawase', en: 'Assorted pickles', price: 'JPY 539', section: 'Side Dishes', gf: 'ask', vegan: 'ask',
+      note: 'An assortment, which means several different pickling methods on one plate and no single answer. 浅漬け in salt is clean on both counts; 醤油漬け is wheat soy; many commercial pickles are brined with bonito dashi, and 奈良漬 is cured in sake lees. Ask which ones are on the plate — an assortment is the hardest version of this question.', dish_key: 'tsukemono_moriawase' },
+    { ja: '羽根餃子（6個）', romaji: 'hane gyoza (6 ko)', en: 'Pan-fried gyoza with lacy wings, 6 pieces', price: 'JPY 649', section: 'Side Dishes', gf: 'no', vegan: 'no',
+      note: '⚠ WHEAT TWICE, AND THE SECOND TIME IS THE ONE PEOPLE MISS. Beyond the ordinary wheat wrapper, 羽根 ("wings") means a FLOUR-AND-WATER SLURRY is poured into the pan around the dumplings and fried into the lacy skirt that gives the dish its name. That skirt is pure cooked flour. Pork and garlic chive filling. No.', dish_key: 'hane_gyoza' },
+    { ja: 'フライドポテト', romaji: 'furaido poteto', en: 'French fries', price: 'JPY 429', section: 'Fried Foods', gf: 'ask', vegan: 'ask',
+      note: '⚠ Potato and oil, so clean in principle on both counts — but this is the 揚げ物 section and the same fryer is turning out karaage (flour-dusted), cheese spring rolls (wheat wrapper) and gyoza. Shared oil carries wheat, and at a 55-seat alley izakaya there is certainly only one fryer. A coeliac should treat this as contaminated unless the shop says otherwise. Some Japanese fries are also dusted before frying.', dish_key: 'furaido_poteto' },
+    { ja: 'チーズ春巻（揚げ）', romaji: 'cheese harumaki (age)', en: 'Fried cheese spring roll', price: 'JPY 583', section: 'Fried Foods', gf: 'no', vegan: 'no',
+      note: 'A spring roll wrapper is wheat flour. Cheese is dairy. No on both counts.', dish_key: 'cheese_harumaki' },
+    { ja: '若鶏のからあげ', romaji: 'wakadori no karaage', en: 'Young chicken karaage', price: 'JPY 649', section: 'Fried Foods', gf: 'no', vegan: 'no',
+      note: 'Marinated in soy, ginger and garlic, then dusted and fried. Even where the dusting is pure 片栗粉 the soy marinade is soaked into the meat, so the wheat cannot be removed by changing the coating. Shared fryer on top of that.', dish_key: 'karaage' },
+    { ja: '五目焼きうどん', romaji: 'gomoku yaki udon', en: 'Five-ingredient yaki udon', price: 'JPY 759', section: 'Meal', gf: 'no', vegan: 'no',
+      note: '⚠ Three locales say UDON (tw 五味炒烏冬, kr 오목 볶음우동, en "Yaki Udon") and Thai says ยากิโซบะ — YAKISOBA. The two are different noodles, but both are 100% wheat and both are stir-fried with a soy- or Worcestershire-based sauce, so the disagreement changes nothing dietarily. Flagged rather than silently resolved. Pork or seafood in the 五目 as well.', dish_key: 'gomoku_yaki_udon' },
+    { ja: '焼きおにぎり（2個）', romaji: 'yaki onigiri (2 ko)', en: 'Grilled rice balls, 2 pieces', price: 'JPY 539', section: 'Meal', gf: 'no', vegan: 'ask',
+      note: '⚠ A rice ball is rice, and a coeliac reads this row as the safe one. It is not: 焼き means the onigiri is BRUSHED WITH SOY SAUCE as it grills, which is what gives it the lacquered crust and the smell — that is the entire point of the dish and there is no unbrushed version. Wheat via the soy. Vegan is an ask: the rice and the soy are both plant-based, but many shops use a soy-and-mirin tare containing dashi, and some brush with miso instead.', dish_key: 'yaki_onigiri' },
+  ],
+});

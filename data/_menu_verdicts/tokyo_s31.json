@@ -3968,5 +3968,148 @@
   "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都千代田区神田猿楽町1-2-4 冨田屋ビル1F; average spend not published; cuisine 海鮮 / 食堂 / 居酒屋, no average-spend band published. The 食堂 tag is the one that carries information: a shokudo is a plain daytime canteen serving 定食 — a main, rice, miso soup and pickles — which is a FIXED-COMPOSITION format rather than an à-la-carte one. ⚠ That matters because a teishoku always arrives with miso soup, and miso soup is dashi (fish) and miso (frequently barley- or wheat-fermented), so the two components a diner is least likely to query are the two carrying the problem. The seafood main is usually grilled or simmered; simmered means soy.",
   "last_checked": "2026-09-11",
   "items": []
+ },
+ "tokyo_sushi_bigin": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1310/A131003/13313866/dtlmenu/"
+  ],
+  "price_note": "Read off Tabelog in four locales (en/tw/kr/th). 東京都千代田区神田神保町1-16-1; SEVEN counter seats and nothing else; 18:00–22:00 Tuesday to Saturday, closed Sunday and Monday; average spend ¥20,000–29,999. ⚠ WHAT TABELOG CALLS A MENU HERE IS NOT ONE, AND THE RECORD SHOULD NOT PRETEND OTHERWISE. The single section is headed 「Seasonal Sushi Piece」 and NOT ONE OF THE TWELVE ROWS CARRIES A PRICE. This is a list of neta the counter works with across the year — shinko in high summer, kobako crab in winter — not a set of things orderable on any given night at a stated cost. A seven-seat counter at ¥20,000+ serves おまかせ: the chef decides the sequence and the bill is the course. Every price field below is therefore empty by the source, not by omission. ⚠ FOR A COELIAC THIS IS ONE OF THE BEST-SHAPED ROOMS IN THE TOKYO SET AND THE REASON IS STRUCTURAL. Edomae sushi is rice, vinegar, salt, sugar and fish, and none of those is wheat — the gluten enters in a small number of named, avoidable places rather than being cooked through the food. One guest at a time, one piece at a time, a chef within arm’s reach: that is the setting where \"no soy, salt instead\" is a normal instruction rather than an imposition. Say it when booking a seven-seat counter, not on the night. ⚠ THE ONE ROW THAT IS NOT NEGOTIABLE IS THE 漬け. Row 6 is marinated red tuna — 漬け means steeped in soy sauce, so the wheat is inside the flesh and cannot be brushed off or left aside. Every other row can in principle be served with salt or with nothing. ⚠ THE LOCALES DISAGREE ABOUT WHICH FISH TWICE, AND NEITHER DISAGREEMENT IS RESOLVED HERE. Row 3: en \"Horse Mackerel\" and tw 鯵魚 both say 鯵 (aji), but kr 전어 is konoshiro (gizzard shad) and th ปลาซาบะ is saba (chub mackerel) — three different fish. Row 7 is worse: en says \"Shima Aji\" (縞鯵, striped jack, a large fish) while tw says 小肌魚 (kohada, a small gizzard shad), and kr 작은 고등어 and th ปลาขนาดเล็ก both say \"small\", which points away from the English. Since row 1 is 新子 — the juvenile of that same kohada — a kohada reading of row 7 is plausible but not established. Both rows are recorded with the English name flagged rather than silently corrected. None of this changes the dietary answer, which turns on the seasoning and not the species. ⚠ FOR A VEGAN THIS IS THE WRONG BUILDING: eleven of the twelve rows are fish or shellfish, and the twelfth is the rice.",
+  "last_checked": "2026-09-11",
+  "items": [
+   {
+    "ja": "新子",
+    "romaji": "shinko",
+    "en": "Shinko (juvenile gizzard shad)",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "光り物 — cured in salt and rice vinegar, not soy, so the fish itself is gluten-free. The question is only whether the finished piece is brushed with 煮切り (soy) before it reaches you. Ask for salt. Shinko is the high-summer delicacy of the edomae calendar and is priced accordingly even where no price is printed.",
+    "dish_key": "shinko"
+   },
+   {
+    "ja": "平貝",
+    "romaji": "tairagai",
+    "en": "Pen shell clam",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ The English \"Surf Clam\" and the Thai หอยเป๋าฮื้อ (abalone) are both wrong; tw 平貝 is the shop’s own word and means pen shell (tairagi). Shellfish, typically seared briefly and served with salt or a soy brush — ask which.",
+    "dish_key": "tairagai"
+   },
+   {
+    "ja": "鯵",
+    "romaji": "aji",
+    "en": "Horse mackerel (locales disagree — see note)",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ en \"Horse Mackerel\" and tw 鯵魚 agree on 鯵; kr 전어 says konoshiro and th ปลาซาบะ says saba. Recorded as aji on the two-locale agreement, flagged rather than resolved. Aji is usually served with grated ginger and negi rather than soy, which makes it one of the easier pieces to take without a soy brush.",
+    "dish_key": "aji"
+   },
+   {
+    "ja": "雲丹",
+    "romaji": "uni",
+    "en": "Sea urchin",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Usually served 軍艦 — wrapped in a nori band. The nori is plain seaweed and gluten-free; the risk is the soy brush and, at some counters, an alum-treated urchin. Ask for it unbrushed.",
+    "dish_key": "uni"
+   },
+   {
+    "ja": "本鮪 中トロ",
+    "romaji": "hon-maguro chutoro",
+    "en": "Bluefin tuna chutoro",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw bluefin belly. Nothing in the fish or the rice is wheat; the only gluten is the 煮切り brushed on top, which can be left off.",
+    "dish_key": "chutoro"
+   },
+   {
+    "ja": "本鮪 漬け赤身",
+    "romaji": "hon-maguro zuke akami",
+    "en": "Soy-marinated bluefin lean tuna",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ONE UNAVOIDABLE ROW ON THIS LIST. 漬け means the tuna is steeped in soy sauce before it is cut, so the wheat is absorbed into the flesh rather than painted onto it — there is no version of this piece without the marinade and no way to remove it. All four locales agree on the marination (tw 醃漬, kr 절임, th มารีนเนต). Flat no, not an ask.",
+    "dish_key": "zuke_akami"
+   },
+   {
+    "ja": "小肌 / 縞鯵",
+    "romaji": "kohada / shima-aji",
+    "en": "Shima aji per /en/ — but three locales say a small fish (see note)",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ UNRESOLVED IDENTIFICATION. /en/ says Shima Aji (縞鯵, striped jack — a large fish); tw says 小肌魚 (kohada, a small gizzard shad); kr 작은 고등어 and th ปลาขนาดเล็ก both say \"small\", which fits kohada and not shima-aji. Row 1 of this same list is 新子, the juvenile of kohada, so a kohada reading is coherent — but two rows for the same fish at different sizes is exactly what an edomae counter would do, and so is listing shima-aji, so neither reading is forced. Recorded with both names. Dietarily identical either way: salt-and-vinegar cure if kohada, plain slice if shima-aji, soy brush the only gluten in both cases.",
+    "dish_key": "kohada_or_shimaaji"
+   },
+   {
+    "ja": "本鮪 大トロ",
+    "romaji": "hon-maguro otoro",
+    "en": "Bluefin tuna otoro",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The fattiest belly cut. Same reading as chutoro — clean fish and clean rice, soy brush the only wheat, removable on request.",
+    "dish_key": "otoro"
+   },
+   {
+    "ja": "赤貝",
+    "romaji": "akagai",
+    "en": "Ark shell clam",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Ark shell, served raw and scored. Shellfish. Gluten only via the soy brush.",
+    "dish_key": "akagai"
+   },
+   {
+    "ja": "春子",
+    "romaji": "kasugo",
+    "en": "Kasugo (young sea bream)",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Juvenile 鯛, conventionally cured in salt and vinegar like the other 光り物 and sometimes laid with a sheet of kombu. Vinegar and kombu are both gluten-free; the soy brush is the only question.",
+    "dish_key": "kasugo"
+   },
+   {
+    "ja": "香箱蟹",
+    "romaji": "koubako-gani",
+    "en": "Kobako crab (female snow crab)",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "The female snow crab, served for a short winter window and usually built as a 軍艦 with the roe. Crab and nori are both gluten-free; ask about the brush and about any ponzu, which is soy-based.",
+    "dish_key": "koubako_gani"
+   },
+   {
+    "ja": "シャリ",
+    "romaji": "shari",
+    "en": "Sushi rice",
+    "price": "",
+    "section": "Seasonal Sushi Piece",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ Listing the シャリ as its own row is unusual and it is the most useful row here for a restricted diet, because it states that the house treats its rice as a named component. Sushi rice is short-grain rice, rice vinegar, sugar and salt — no wheat and no animal product, so it is clean on both counts. Some houses add a splash of sake or a strip of kombu to the vinegar; neither changes the answer. This is the one row on the list a vegan can eat.",
+    "dish_key": "shari"
+   }
+  ]
  }
 }

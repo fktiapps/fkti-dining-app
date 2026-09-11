@@ -3295,5 +3295,170 @@
   "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都台東区花川戸1-10-3; cuisine おにぎり, no average-spend band published. ⚠ SECOND-BEST PROSPECT IN THIS BATCH AFTER THE KAKIGORI HOUSE, AND FOR A SIMILAR REASON: an onigiri is rice, salt and nori around a filling, and all three of those are gluten-free and two of the three are vegan. The grain question is settled by the category itself. ⚠ The risk moves entirely into the FILLING, and the fillings sort cleanly into three groups worth knowing in advance. Safe on both counts: 塩むすび (salt only), 梅 (pickled plum), 昆布 — though kombu tsukudani is simmered in soy and is therefore wheat unless tamari. Gluten-free but not vegan: 鮭 (grilled salmon), 明太子, おかか (bonito flakes, usually dressed with soy). Neither: anything 天むす (tempura shrimp, wheat batter), from a フライ filling, or mayonnaise-bound like ツナマヨ (egg). ⚠ The nori itself is plain seaweed and clean, but 味付け海苔 — seasoned nori — is brushed with soy. A shop this focused is also small enough that the staff genuinely know every filling, which makes asking productive here in a way it is not at a ramen counter. Nothing published; worth a first-party check if a site turns up.",
   "last_checked": "2026-09-11",
   "items": []
+ },
+ "tokyo_sakadokoro_sakura": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1303/A130301/13084047/dtlmenu/"
+  ],
+  "price_note": "Full 14-row menu with prices, read off Tabelog in four locales (en/tw/kr/th). 東京都渋谷区宇田川町36-16 プラザマリーナ2F; TWELVE seats at a U-shaped counter and nothing else; 17:30–23:30, closed Saturday and Sunday — a weekday-only Shibuya drinking counter; average spend ¥3,000–3,999. Sections run 突き出し → 酒の肴 → お食事 → 〆のごはん, which is the standard arc of an izakaya evening. ⚠ THE LISTING CARRIES TABELOG’S RED 「掲載保留」 (ON HOLD) BADGE, so the operating status is unconfirmed — check before travelling. Note that the \"may have relocated or permanently closed\" line Tabelog prints beside that badge is site boilerplate shown on every on-hold listing and is NOT a closure report; this shop is not recorded as closed. ⚠ THE ROW THAT MATTERS MOST HERE IS ROW 8, AND IT IS THE BEST-DISGUISED WHEAT TRAP IN THIS BATCH. 狸豆腐 reads as \"tofu\" in every locale — tw 狸豆腐, kr 너구리 두부, th เต้าหู้ทานุกิ — and a diner scanning for something plant-based and grain-free stops there. 狸 (tanuki) on a Japanese menu does not mean raccoon dog; it is the trade word for 天かす, the loose scraps of TEMPURA BATTER skimmed off the fryer. A 狸 dish is a dish topped with fried wheat batter. The tofu underneath is fine; what is sprinkled over it is flour, and it is stirred in rather than sitting on top. ⚠ ROW 11 IS THE SAME NAMING GAME IN THE OPPOSITE DIRECTION AND IT IS WORTH ASKING ABOUT RATHER THAN REFUSING. 狐 (kitsune) is the trade word for 油揚げ, fried tofu skin. A 狐餃子 is therefore very likely a gyoza whose wrapper is abura-age instead of the usual wheat round — which, if so, would make it one of the few fried izakaya items a coeliac could reach. The shop publishes no description, so this is an ask and not a yes. ⚠ FOR A VEGAN THE ROOM IS NEARLY CLOSED: twelve of the fourteen rows are meat, fish, egg or dairy, and the two rice rows are seasoned with dashi and soy.",
+  "last_checked": "2026-09-11",
+  "items": [
+   {
+    "ja": "女将のおすすめ 日替わり小鉢",
+    "romaji": "okami no osusume higawari kobachi",
+    "en": "Landlady's daily small dish",
+    "price": "JPY 800",
+    "section": "Appetizer",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "A 日替わり — it changes every day, so nothing about it can be recorded in advance and the answer has to be asked for on the night. At an izakaya the default seasonings under a small dish are 出汁 (bonito) and 醤油 (wheat soy), so assume both unless told otherwise.",
+    "dish_key": "higawari_kobachi"
+   },
+   {
+    "ja": "自家製玉子焼き",
+    "romaji": "jikasei tamagoyaki",
+    "en": "Homemade tamagoyaki",
+    "price": "JPY 600",
+    "section": "Perfect Pairing with Alcohol",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg, so never vegan. Not automatically wheat either — but a Japanese rolled omelette is conventionally loosened with 出汁 and seasoned with mirin and a little soy, and the soy is the wheat. A shop making its own is in a position to answer precisely; ask.",
+    "dish_key": "tamagoyaki"
+   },
+   {
+    "ja": "ワンタンチーズ",
+    "romaji": "wonton cheese",
+    "en": "Wonton cheese",
+    "price": "JPY 600",
+    "section": "Perfect Pairing with Alcohol",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A wonton wrapper is wheat flour and water — the wrapper IS the dish, so there is no version without it. Cheese makes it dairy as well. No on both counts.",
+    "dish_key": "wonton_cheese"
+   },
+   {
+    "ja": "豚の水煮",
+    "romaji": "buta no mizuni",
+    "en": "Boiled pork",
+    "price": "JPY 800",
+    "section": "Meal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pork simmered in water rather than in a soy braise, which is the promising part — the cooking liquid itself carries no wheat. The risk moves to what it is served with: 茹で豚 at an izakaya arrives with ポン酢 or a sesame-soy dip, both soy-based. Ask for it plain.",
+    "dish_key": "buta_mizuni"
+   },
+   {
+    "ja": "自家製特製ローストビーフ（黒毛和牛A5）",
+    "romaji": "jikasei tokusei roast beef (kuroge wagyu A5)",
+    "en": "Homemade roast beef, A5 Kuroge wagyu",
+    "price": "JPY 1,000",
+    "section": "Meal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "A thousand yen for A5 wagyu roast beef is the standout value on this menu. The beef itself is beef; the entire gluten question is the sauce, and a Japanese roast-beef sauce is conventionally soy, mirin and onion — wheat via the soy. Ask for it undressed and it is clean.",
+    "dish_key": "roast_beef"
+   },
+   {
+    "ja": "唐揚げ",
+    "romaji": "karaage",
+    "en": "Fried chicken",
+    "price": "JPY 800",
+    "section": "Meal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Karaage is wheat twice unless a shop says otherwise: the chicken is marinated in soy, ginger and garlic, then dusted before frying. The dusting is sometimes pure 片栗粉 (potato starch, which would be fine) and sometimes flour or a flour blend — but the soy marinade is soaked in regardless, so even an all-starch coating leaves the wheat in the meat. Recorded no rather than ask.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "筑前煮",
+    "romaji": "chikuzen-ni",
+    "en": "Chikuzen-ni (simmered chicken and root vegetables)",
+    "price": "JPY 800",
+    "section": "Meal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken, burdock, lotus root, carrot and konnyaku simmered down in dashi, soy, mirin and sugar. The soy is the cooking medium rather than a dressing, so it is absorbed into every piece — not removable. Chicken and bonito dashi rule it out for a vegan too.",
+    "dish_key": "chikuzen_ni"
+   },
+   {
+    "ja": "狸豆腐",
+    "romaji": "tanuki dofu",
+    "en": "Tanuki tofu — tofu with tempura scraps",
+    "price": "JPY 600",
+    "section": "Meal",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ THE TRAP ROW. Every locale renders this as plain \"tofu\" (tw 狸豆腐, kr 너구리 두부, th เต้าหู้ทานุกิ) and a diner looking for something plant-based and grain-free will land on it. 狸 is the trade word for 天かす — the loose scraps of TEMPURA BATTER skimmed off the fryer — so this is tofu under a scattering of fried WHEAT. Flat no for gluten. Vegan is an ask rather than a no, because the tofu and the batter scraps are both plant-based, but the sauce poured over a 狸豆腐 is normally a dashi-and-soy tsuyu and the dashi is fish.",
+    "dish_key": "tanuki_dofu"
+   },
+   {
+    "ja": "焼魚（銀鮭 西京漬）",
+    "romaji": "yakizakana (ginzake saikyo-zuke)",
+    "en": "Grilled coho salmon, Saikyo miso marinade",
+    "price": "JPY 800",
+    "section": "Meal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ 西京漬 means the fish is buried in sweet white miso for a day or more before grilling, so whatever is in the miso is in the fish. Saikyo miso is conventionally a RICE-koji white miso, which would be gluten-free — but plenty of miso is fermented with barley or wheat, and the marinade is usually let down with sake and mirin. Absorbed, not surface-level, so it cannot be wiped off. Genuinely worth asking, because the answer is often yes.",
+    "dish_key": "ginzake_saikyozuke"
+   },
+   {
+    "ja": "焼魚（メヌケ 西京漬）",
+    "romaji": "yakizakana (menuke saikyo-zuke)",
+    "en": "Grilled menuke rockfish, Saikyo miso marinade",
+    "price": "JPY 800",
+    "section": "Meal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Same preparation as the salmon, different fish — メヌケ is a deep-water rockfish (the English \"Mezunoe\" is a mangling; tw 目抜け and kr 메누케 both give it correctly). Identical reading: the miso marinade is absorbed, is usually rice-koji and therefore often gluten-free, but is not declared here.",
+    "dish_key": "menuke_saikyozuke"
+   },
+   {
+    "ja": "狐餃子",
+    "romaji": "kitsune gyoza",
+    "en": "Kitsune gyoza — likely wrapped in fried tofu skin",
+    "price": "JPY 800",
+    "section": "Meal",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE INTERESTING ROW. 狐 is the trade word for 油揚げ (fried tofu skin), the way 狸 above means tempura scraps — so a 狐餃子 is most likely a gyoza using abura-age in place of the usual wheat wrapper, which would make it one of very few fried izakaya items within reach of a coeliac. The shop publishes no description and the locales all just transliterate (kr 여우 군만두, th เกี๊ยวซ่าแบบคิตสึเนะ), so this is an ASK, not a yes — it could equally be an ordinary gyoza with abura-age in the filling. Not vegan either way: gyoza filling is pork by default.",
+    "dish_key": "kitsune_gyoza"
+   },
+   {
+    "ja": "鶏チャーシュー風",
+    "romaji": "tori chashu-fu",
+    "en": "Chicken, chashu-style",
+    "price": "JPY 700",
+    "section": "Meal",
+    "gf": "no",
+    "vegan": "no",
+    "note": "チャーシュー風 means rolled and braised in the chashu manner — which is to say simmered in soy, sake, mirin and sugar. The soy is the braising liquid, so it is through the meat rather than on it. No.",
+    "dish_key": "tori_chashu"
+   },
+   {
+    "ja": "お茶漬け",
+    "romaji": "ochazuke",
+    "en": "Ochazuke (rice in tea broth)",
+    "price": "JPY 600",
+    "section": "Final Rice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Rice with hot tea or dashi poured over. Rice and tea are both clean, and a genuinely tea-only ochazuke would be fine on both counts — but the standard izakaya version uses a dashi broth seasoned with soy, and the toppings (salmon, mentaiko, nori komi, arare — the last of which is a rice cracker but is sometimes wheat-glazed) each carry their own answer. Ask what goes in it.",
+    "dish_key": "ochazuke"
+   },
+   {
+    "ja": "ごはんセット（味噌汁・お新香付）",
+    "romaji": "gohan set (miso shiru, oshinko tsuki)",
+    "en": "Rice set with miso soup and pickles",
+    "price": "JPY 500",
+    "section": "Final Rice",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ The rice is clean; the two things that come WITH it are the problem, and they are the two a diner is least likely to question. Miso soup is dashi (bonito — not vegan) plus miso (frequently barley- or wheat-fermented — possibly not gluten-free). お新香 are pickles, which are often just salt and vegetable but are also often steeped in soy or in a dashi brine. Ask about all three parts separately.",
+    "dish_key": "gohan_set"
+   }
+  ]
  }
 }
