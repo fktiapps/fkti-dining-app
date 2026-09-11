@@ -1200,5 +1200,203 @@
     "dish_key": "cheese_plate"
    }
   ]
+ },
+ "tokyo_taishu_sushi_sakaba_ronj": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.shibukei.com/headline/19760/"
+  ],
+  "price_note": "⚠ THE BEST-SOURCED RECORD IN THIS TICK: an opening report in Shibuya Keizai Shimbun dated 2026.03.02, six days after the shop opened on 2026-02-26, listing named dishes at named prices. That is trade press quoting the operator, not a diner’s photograph, and it is six months old rather than six years. ⚠ WHO RUNS IT AND WHY THAT PREDICTS THE KITCHEN: the operator is For You (Toshima-ku), the company behind 十割蕎麦 嵯峨谷 and とんかつ わか葉 in Omotesandō Hills — soba and tonkatsu, i.e. no seafood experience — so for this new format it partnered with Dynac, who run 大衆すし酒場 めのじ in Yokohama’s Noge, and built Ronji on that template. The names are sushi-counter slang for numbers: めのじ is five, ろんじ is six. 17.5 tsubo over two floors, 42 seats, 道玄坂2 by Shibuya Mark City, 16:00–23:00 weekdays and from 12:00 at weekends and holidays. The stated average spend is 2,800円. ⚠ THE DIETARY PICTURE IS SIMPLE AND UNPROMISING. Half the menu is TEMPURA, which is wheat batter in shared oil with no exceptions, and the other half is sushi, which is fish with soy sauce. The one plate a vegetarian would look at, 生海苔揚げ出し豆腐, is fried tofu under a seaweed sauce thickened in dashi — the same trap as every agedashi in this dataset. The cheapest tempura pieces (kabocha at 99 yen, aubergine at 165) are vegetables, and they are vegetables in wheat batter fried in the oil that just cooked prawn and chicken. ⚠ ONE ITEM WORTH KNOWING ABOUT FOR A NON-DIETARY REASON: 太宰巻き is named for Dazai Osamu, because natto and salmon roe appear together in a passage of his HUMAN LOST. It is a literary joke you would otherwise eat without noticing. Instagram is the shop’s only listed channel and serves a login wall to this egress; Tabelog has served HTTP 403 to this egress since 2026-09-02.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "イカ／タコ（握り）",
+    "romaji": "ika / tako (nigiri)",
+    "en": "Squid or octopus nigiri — the 99-yen entry point, and the price the shop leads with",
+    "price": "99円",
+    "section": "すし Sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "寿司飯は酢・砂糖・塩＝小麦不使用。つけ醤油が小麦。The rice is vinegared rice and the topping is raw mollusc — no wheat in either. The soy sauce is the wheat, and at a counter like this it is poured by you, so it is one of the few sushi orders you can control. Squid and octopus are molluscs, which matters separately from fish for shellfish allergies.",
+    "dish_key": "nigiri_ika_tako"
+   },
+   {
+    "ja": "サーモン（握り）",
+    "romaji": "sāmon (nigiri)",
+    "en": "Salmon nigiri",
+    "price": "165円",
+    "section": "すし Sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw fish on vinegared rice. Wheat only via the soy you add yourself — unless the piece arrives brushed with ニキリ, a reduced soy glaze, which some counters do without saying.",
+    "dish_key": "nigiri_salmon"
+   },
+   {
+    "ja": "つぶ貝（握り）",
+    "romaji": "tsubugai (nigiri)",
+    "en": "Whelk nigiri",
+    "price": "209円",
+    "section": "すし Sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sea snail — a mollusc. Same soy question as the rest of the counter.",
+    "dish_key": "nigiri_tsubugai"
+   },
+   {
+    "ja": "マグロの赤身（握り）",
+    "romaji": "maguro no akami (nigiri)",
+    "en": "Lean tuna nigiri",
+    "price": "242円",
+    "section": "すし Sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw tuna on vinegared rice. Note that 赤身 is frequently served as ヅケ — marinated in soy — at cheap counters; if it arrives already dark, the wheat is inside it.",
+    "dish_key": "nigiri_akami"
+   },
+   {
+    "ja": "ウナギバター（握り）",
+    "romaji": "unagi batā (nigiri)",
+    "en": "Eel-and-butter nigiri — grilled eel with butter, the most expensive single piece on the list",
+    "price": "286円",
+    "section": "すし Sushi",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 鰻の蒲焼のタレは醤油・味醂ベース＝小麦。バター＝乳。Grilled eel is glazed with a soy-and-mirin tare through the cooking, so the wheat is painted onto the fish rather than added at the table — this is the one nigiri on the list that cannot be ordered wheat-free. Butter adds dairy.",
+    "dish_key": "nigiri_unagi_butter"
+   },
+   {
+    "ja": "大吉五貫盛り",
+    "romaji": "daikichi go-kan mori",
+    "en": "The five-piece “good fortune” selection — the shop’s set of five nigiri",
+    "price": "1,089円",
+    "section": "すし Sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Which five is not published and rotates with the daily buying. Assume at least one glazed or marinated piece in any set of five, which is where the wheat enters.",
+    "dish_key": "nigiri_set_5"
+   },
+   {
+    "ja": "本日の刺し身 / 握り（毎日10〜15種類）",
+    "romaji": "honjitsu no sashimi / nigiri",
+    "en": "The daily fish — ten to fifteen kinds bought each day, available either as sashimi or as nigiri",
+    "price": "刺し身 429円～ / 握り 99円～",
+    "section": "すし Sushi",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Raw fish, cut to order. The interesting structural fact is that the same fish is sold both ways at very different prices — sashimi from 429 yen, the same thing on rice from 99. No wheat in the fish; the soy is yours to control.",
+    "dish_key": "sashimi_daily"
+   },
+   {
+    "ja": "カボチャ天",
+    "romaji": "kabocha ten",
+    "en": "Kabocha squash tempura — the 99-yen tempura, and the cheapest vegetable on the list",
+    "price": "99円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "天ぷらの衣は小麦粉、揚げ油は共用。THIS IS THE VEGETABLE THAT IS NOT A VEGETARIAN OPTION. The squash is plant food; the batter is wheat flour and egg, and the oil is the same oil that just fried prawn, whiting and chicken. At a 99-yen izakaya nothing is fried separately.",
+    "dish_key": "tempura_kabocha"
+   },
+   {
+    "ja": "ナス天",
+    "romaji": "nasu ten",
+    "en": "Aubergine tempura",
+    "price": "165円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Same wheat-and-egg batter, same shared fryer. Tempura tsuyu is dashi and soy as well, so both the coating and the dip fail.",
+    "dish_key": "tempura_nasu"
+   },
+   {
+    "ja": "貝出汁！沁み大根天",
+    "romaji": "kaidashi! shimi daikon ten",
+    "en": "Daikon tempura steeped in shellfish stock before frying — one of the shop’s invented tempura",
+    "price": "352円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 貝出汁を含ませた大根＝具材そのものが貝。THE TRAP TEMPURA. This looks like the plainest vegetable on the board and it is not one: the daikon has been soaked in SHELLFISH stock before it was battered, so the mollusc is inside the radish rather than beside it. Wheat batter on top of that.",
+    "dish_key": "tempura_daikon"
+   },
+   {
+    "ja": "半熟海苔たま天ですよ",
+    "romaji": "hanjuku nori-tama ten desu yo",
+    "en": "Soft-boiled-egg tempura, which you break open and eat with a separate nori tempura — the shop’s showpiece and its silliest name",
+    "price": "352円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "卵の天ぷら＋海苔の天ぷら。Egg inside wheat batter, eaten with seaweed inside wheat batter. Egg, wheat, shared oil.",
+    "dish_key": "tempura_nori_tama"
+   },
+   {
+    "ja": "ろんじ6点盛り",
+    "romaji": "Ronji rokuten mori",
+    "en": "The six-piece tempura selection — prawn, whiting, chicken and three vegetables",
+    "price": "979円",
+    "section": "天ぷら Tempura",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ エビ＝特定原材料。The published composition names prawn (statutory allergen), kisu whiting, and chicken alongside three vegetables — so the “three vegetables” arrive on a plate with seafood and poultry fried in the same oil. Wheat batter throughout.",
+    "dish_key": "tempura_set_6"
+   },
+   {
+    "ja": "太宰巻き",
+    "romaji": "Dazai-maki",
+    "en": "The “Dazai roll” — natto and salmon roe, named for the passage in Dazai Osamu’s HUMAN LOST where the two appear together. One of the shop’s あて巻き, rolls made to drink with",
+    "price": "429円",
+    "section": "あて巻き Rolls",
+    "gf": "no",
+    "vegan": "no",
+    "note": "納豆自体は大豆と納豆菌のみだが、付属のタレは醤油＋かつおだし、筋子は魚卵。The natto is the one clean component — soybeans and culture. The salmon roe is fish roe and is cured in soy, and the natto tare that goes into a roll like this is soy sauce with bonito extract. Wheat and fish, in a roll that reads as beans and rice.",
+    "dish_key": "natto_sujiko_maki"
+   },
+   {
+    "ja": "煮穴子ポテトサラダ / 牛もつ煮込み",
+    "romaji": "ni-anago poteto sarada / gyū-motsu nikomi",
+    "en": "Two of the à la carte plates at one price: potato salad with simmered conger eel, and stewed beef offal",
+    "price": "各539円",
+    "section": "一品・つまみ A la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "煮穴子は醤油ダレで煮る、もつ煮込みは味噌または醤油仕立て。⚠ THE POTATO SALAD IS NOT THE SAFE ONE — it has soy-simmered conger eel through it, so it is fish plus wheat plus the egg in the mayonnaise. The offal stew is beef tripe in a miso or soy braise: wheat or barley either way.",
+    "dish_key": "anago_potato_salad"
+   },
+   {
+    "ja": "生海苔揚げ出し豆腐",
+    "romaji": "nama-nori agedashi-dōfu",
+    "en": "Agedashi tofu under a fresh-seaweed sauce — deep-fried tofu in a thickened green nori glaze",
+    "price": "473円",
+    "section": "一品・つまみ A la carte",
+    "gf": "no",
+    "vegan": "no",
+    "note": "THE ITEM A VEGETARIAN WILL ORDER, AND IT FAILS TWICE. 揚げ出しの衣は片栗粉でも、あんは鰹だし＋醤油。Tofu and seaweed are both plant food; the sauce poured over them is bonito dashi thickened and seasoned with soy sauce, so the animal content and the wheat are both in the liquid. The tofu is also fried in the tempura oil.",
+    "dish_key": "agedashi_tofu"
+   },
+   {
+    "ja": "生ビール / 日本酒",
+    "romaji": "nama bīru / nihonshu",
+    "en": "Draught beer from 495 yen, sake from 429 yen",
+    "price": "ビール 495円～ / 日本酒 429円～",
+    "section": "ドリンク Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "ビール＝大麦麦芽＝グルテン。日本酒＝米・米麹・水。Two opposite answers in one line: beer is barley malt and never gluten-free, sake is rice and koji and water and normally is. If you avoid gluten at this counter, drink the sake.",
+    "dish_key": "beer_sake"
+   },
+   {
+    "ja": "ろんじ酎ハイ／レモン酎ハイ／ウーロンハイ（1杯目429円・2杯目319円・3杯目209円）",
+    "romaji": "Ronji chūhai / remon chūhai / ūronhai",
+    "en": "The house highballs, on a sliding scale that rewards staying: 429 yen for the first, 319 for the second, 209 for the third",
+    "price": "429円 / 319円 / 209円",
+    "section": "ドリンク Drinks",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "焼酎の原料（芋・麦・米）は未掲載。The descending price is the point and is worth knowing before you order one drink and leave. On gluten: the shochu base is not published and barley shochu is common. Also on the list is 角の「前」割り, Suntory Kaku whisky pre-mixed with water and rested 24 hours — whisky is distilled from malted BARLEY.",
+    "dish_key": "chuhai"
+   }
+  ]
  }
 }

@@ -2631,5 +2631,159 @@
     "dish_key": "hotpot-skewer-vegetable"
    }
   ]
+ },
+ "tokyo_grill_grand": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13008702/dtlmenu/"
+  ],
+  "price_note": "⚠ THIRTEEN DISHES AND NOT ONE PRICE. Tabelog lists the full carte for グリル グランド — six meat dishes, four seafood, two starters and a sandwich — and prints no figure against any of them, with no 更新日 either. So this record is a reliable DISH LIST and no kind of price guide. The only monetary evidence on the page is the recorded average spend, and it is startling: 10,000–14,999円 at dinner against 3,000–3,999円 at lunch. A three-to-four-fold gap between services at the same Asakusa yoshoku room is the single most practical fact available about this shop — go at lunch, or budget properly. ⚠ YOSHOKU IS THE MOST WHEAT-DENSE CUISINE IN JAPAN AND THIS MENU IS A DEMONSTRATION OF WHY. Japanese Western-style cooking is built on two things a coeliac cannot have: ドミグラスソース, a sauce thickened with a long-cooked WHEAT-FLOUR roux, which is what goes over the beef stew, the braised hamburg and most of the sautés; and パン粉, breadcrumb, which is what goes round the beef cutlet, the crab cream croquette and the katsu sandwich. The gratin adds a third, béchamel, which is flour and milk. Working down the thirteen lines, there is no dish that is plausibly wheat-free — not one — and the shop publishes no allergen information. ⚠ THERE IS ALSO NOTHING MEAT-FREE OR FISH-FREE. Every one of the thirteen items names an animal in its own title: beef six times, pork once, prawn, crab, squid, oyster. A vegetarian has no entry point to this menu at all, and that is worth stating flatly rather than leaving to be inferred from thirteen separate \"no\" marks. ⭐ ONE LINE DEFEATS ALL THREE TRANSLATIONS AND IS RECORDED AS UNKNOWN RATHER THAN GUESSED. The ninth item renders as \"Panko Katsu\" in English, as 麵包可可 — literally \"bread cocoa\" — in Chinese, and as a garbled transliteration in Korean. Three machine translations failing in three different directions means the underlying Japanese is something none of them parsed, and since it sits in the SEAFOOD section it is most likely a crumbed fish dish. It is filed below with the name unresolved, because inventing a plausible Japanese string for it would put a dish in this dataset that may not exist. ON THE SHOP: 浅草3-24-6, 50 seats with 20 at tables on the ground floor and private rooms upstairs, lunch from 11:30, closed MONDAYS AND SUNDAYS — a two-day weekend closure that catches visitors, since most Asakusa restaurants trade on Sunday.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "牛肉のソテー",
+    "romaji": "gyūniku no sotē",
+    "en": "Beef sauté",
+    "price": "(価格未掲載)",
+    "section": "肉料理 Meat Dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "BEEF. Marked ask rather than no only because a sauté is the one preparation on this list that COULD arrive without a flour-thickened sauce — but at a yoshoku counter the pan is almost always finished with demi-glace or a soy-butter, and both carry wheat. Ask what the sauce is.",
+    "dish_key": "beef_saute"
+   },
+   {
+    "ja": "牛ヒレカツ",
+    "romaji": "gyū hire katsu",
+    "en": "Beef tenderloin cutlet — fillet crumbed and deep-fried",
+    "price": "(価格未掲載)",
+    "section": "肉料理 Meat Dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ カツ＝パン粉＝小麦。BEEF in BREADCRUMB. カツ always means panko-crumbed and deep-fried, so the word itself is the gluten warning. Shares a fryer with the prawn and crab dishes.",
+    "dish_key": "gyu_hire_katsu"
+   },
+   {
+    "ja": "牛ヒレステーキ",
+    "romaji": "gyū hire sutēki",
+    "en": "Beef tenderloin steak",
+    "price": "(価格未掲載)",
+    "section": "肉料理 Meat Dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "BEEF. The plainest cooking on the menu and therefore the best gluten prospect of the thirteen — a steak is meat and heat. ⚠ But the sauce beside it is the question, and at a yoshoku grill that sauce is conventionally demi-glace, i.e. a WHEAT roux. Ask for it plain or on the side.",
+    "dish_key": "gyu_hire_steak"
+   },
+   {
+    "ja": "ビーフシチュー",
+    "romaji": "bīfu shichū",
+    "en": "Beef stew — the long-braised yoshoku standard",
+    "price": "(価格未掲載)",
+    "section": "肉料理 Meat Dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ ドミグラスソース＝小麦粉のルウ。BEEF in a demi-glace, and demi-glace is a sauce built on a ROUX OF WHEAT FLOUR cooked for hours. This is the definitional yoshoku gluten dish — the wheat is dissolved into the sauce, invisible, and there is no version of the dish without it. Also usually finished with red wine and butter (DAIRY).",
+    "dish_key": "beef_stew"
+   },
+   {
+    "ja": "煮込みビーフハンバーグ",
+    "romaji": "nikomi bīfu hanbāgu",
+    "en": "Beef hamburg steak braised in sauce",
+    "price": "(価格未掲載)",
+    "section": "肉料理 Meat Dishes",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TWO SEPARATE WHEAT SOURCES. A Japanese ハンバーグ is bound with PANKO and milk inside the patty, and this one is then braised in a demi-glace, which is a flour roux — so the wheat is in the meat as well as around it. BEEF, EGG (standard binder) and DAIRY.",
+    "dish_key": "nikomi_hamburg"
+   },
+   {
+    "ja": "プラチナポークのステーキ",
+    "romaji": "purachina pōku no sutēki",
+    "en": "Platinum Pork steak — a branded pork, the only non-beef meat on the list",
+    "price": "(価格未掲載)",
+    "section": "肉料理 Meat Dishes",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "PORK. プラチナポーク is a brand name for a specific producer's pork rather than a cut or a grade — worth knowing so it is not mistaken for a quality classification like 黒毛和牛. Same sauce caveat as the beef steak: ask before assuming the plate arrives without a flour-thickened sauce.",
+    "dish_key": "platinum_pork_steak"
+   },
+   {
+    "ja": "車海老のフライ",
+    "romaji": "kuruma ebi no furai",
+    "en": "Deep-fried kuruma prawn — the large Japanese tiger prawn, crumbed",
+    "price": "(価格未掲載)",
+    "section": "魚介料理 Seafood",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ PRAWN, a statutory allergen, in PANKO. 車海老 is the premium Japanese prawn, so this is likely to be among the dearer plates on an unpriced menu. It is also the dish that contaminates the fryer for everything else in this section.",
+    "dish_key": "kuruma_ebi_fry"
+   },
+   {
+    "ja": "カニクリームコロッケ",
+    "romaji": "kani kurīmu korokke",
+    "en": "Crab cream croquette",
+    "price": "(価格未掲載)",
+    "section": "魚介料理 Seafood",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ WHEAT TWICE AND TWO ALLERGENS. The filling is a BÉCHAMEL — flour cooked in butter and milk — and the coating is PANKO, so there is wheat inside and outside. CRAB (statutory allergen) and DAIRY. One of the most reliably impossible dishes in Japanese cooking for a coeliac.",
+    "dish_key": "kani_cream_korokke"
+   },
+   {
+    "ja": "（名称未確定：英「Panko Katsu」／中「麵包可可」）",
+    "romaji": "(unresolved)",
+    "en": "A crumbed cutlet in the seafood section whose Japanese name could not be recovered — see note",
+    "price": "(価格未掲載)",
+    "section": "魚介料理 Seafood",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ RECORDED AS UNKNOWN ON PURPOSE. All three Tabelog locales garble this line differently — English gives the non-name \"Panko Katsu\", Chinese gives 麵包可可 (\"bread cocoa\"), Korean gives an unparseable transliteration — which means none of them resolved the underlying Japanese, and there is no way to recover it from this source. Its SECTION is solid evidence, though: it sits among the seafood, and パン粉カツ means crumbed and fried. So: assume FISH or shellfish, assume PANKO, assume WHEAT. The name needs a first-party source or a photograph to settle and should not be guessed at.",
+    "dish_key": "unresolved_panko_katsu"
+   },
+   {
+    "ja": "グラタン（海老・蟹からお選びください。※冬季限定で牡蠣グラタンもあります）",
+    "romaji": "guratan (ebi / kani kara o-erabi kudasai; tōki gentei de kaki guratan mo arimasu)",
+    "en": "Gratin — choose prawn or crab; an oyster gratin is also available in winter only",
+    "price": "(価格未掲載)",
+    "section": "魚介料理 Seafood",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THREE STATUTORY ALLERGENS IN ONE LINE AND A WHEAT SAUCE UNDER ALL OF THEM. PRAWN, CRAB and — seasonally — OYSTER, over a BÉCHAMEL, which is wheat flour and milk. ⭐ Note the winter-only oyster version: this is the one item on the menu that tells you the kitchen changes with the season, and it is the reason to ask what else is 冬季限定 when you visit.",
+    "dish_key": "gratin"
+   },
+   {
+    "ja": "和牛のたたき",
+    "romaji": "wagyū no tataki",
+    "en": "Wagyu tataki — seared outside, raw within, sliced thin as a starter",
+    "price": "(価格未掲載)",
+    "section": "前菜 Appetizer",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "BEEF, and RAW in the middle — たたき means the surface only is seared. The one starter with a real chance of being wheat-free, since it is meat and a dressing; ⚠ but that dressing is conventionally 醤油-based (WHEAT) or a ponzu, which is also soy. Ask.",
+    "dish_key": "wagyu_tataki"
+   },
+   {
+    "ja": "ミニヤリイカのガーリックソテー",
+    "romaji": "mini yari-ika no gārikku sotē",
+    "en": "Small spear squid sautéed with garlic",
+    "price": "(価格未掲載)",
+    "section": "前菜 Appetizer",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "SQUID, a declarable allergen in Japan and easy to miss in an English menu. ヤリイカ is spear squid specifically. A garlic sauté is oil, garlic and squid, so this is arguably the least wheat-laden plate on the whole menu — marked ask rather than yes because yoshoku kitchens finish garlic sautés with soy or butter as a matter of habit.",
+    "dish_key": "yari_ika_garlic_saute"
+   },
+   {
+    "ja": "ビーフカツサンド",
+    "romaji": "bīfu katsu sando",
+    "en": "Beef cutlet sandwich",
+    "price": "(価格未掲載)",
+    "section": "サンドイッチ Sandwich",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ WHEAT THREE TIMES OVER — the BREAD, the PANKO on the cutlet, and the sauce, which for a katsu sando is a Worcester-style sauce that normally contains wheat. BEEF. If a single item could stand for why yoshoku is hard for a coeliac, it is this one.",
+    "dish_key": "beef_katsu_sando"
+   }
+  ]
  }
 }

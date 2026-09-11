@@ -1632,5 +1632,49 @@
     "dish_key": "wine"
    }
   ]
+ },
+ "tokyo_hasegawa": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13058080/dtlmenu/"
+  ],
+  "price_note": "⭐ THE MOST USEFUL FACT HERE IS A PRICE ANOMALY: THE SET MEAL COSTS LESS THAN THE CUTLET ALONE. ロースカツ定食 is 900円 and includes rice, soup and cabbage; 厚切りロースカツ on its own is 1,300円. The 400円 gap is not a discount, it is a different and thicker piece of pork — but a reader scanning the list will see a 900円 full meal sitting under a 1,300円 single item and should understand which one is the bargain and why they are not the same cut. The 串揚げ6本 at 1,050円 sits between them. ⚠ TONKATSU IS PANKO AND PANKO IS BREAD. There is no version of this shop that works for a coeliac: every one of the three items is crumbed in wheat breadcrumbs and deep-fried, the 串揚げ share the fryer, and the sauce poured over tonkatsu is a Worcester-style sauce that itself normally contains wheat. Two separate wheat sources, batter and sauce, before the cabbage is dressed. Nothing is meat-free either — ロース is pork loin, and 串揚げ at a tonkatsu counter is a mixed skewer set whose contents are not published, so even the vegetable skewers in it share oil with pork and usually prawn. ON THE LISTING: three items, no 更新日, undated. Lunch only — 11:30–14:00, closed Sundays and public holidays — and 13 seats, 10 of them at the counter, at 花川戸2-7-3. A thirteen-seat lunch-only counter in Asakusa means queueing.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "厚切りロースカツ",
+    "romaji": "atsugiri rōsu katsu",
+    "en": "Thick-cut pork loin cutlet, à la carte — the premium cut, sold without the set",
+    "price": "1,300円",
+    "section": "とんかつ Tonkatsu",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ パン粉＝小麦。とんかつソースも小麦を含むのが一般的。PORK loin in wheat breadcrumbs, deep-fried, and the sauce it is served with is normally wheat-containing too. Note this costs 400円 MORE than the full set meal below, because it is a thicker cut — not because the set is discounted.",
+    "dish_key": "atsugiri_rosu_katsu"
+   },
+   {
+    "ja": "串揚げ6本",
+    "romaji": "kushiage roppon",
+    "en": "Six deep-fried skewers",
+    "price": "1,050円",
+    "section": "串揚げ Kushiage",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 衣＝パン粉＝小麦。中身は非公開。Wheat crumb again. The shop does not publish what is on the six skewers, which matters: kushiage sets conventionally mix pork, prawn and vegetables, so this is simultaneously an undeclared-allergen risk (PRAWN) and useless to anyone avoiding meat, since the vegetable skewers are fried in the same oil.",
+    "dish_key": "kushiage_6"
+   },
+   {
+    "ja": "ロースカツ定食",
+    "romaji": "rōsu katsu teishoku",
+    "en": "Pork loin cutlet set — cutlet with rice, miso soup and shredded cabbage",
+    "price": "900円",
+    "section": "定食 Set Meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ PORK, wheat crumb, wheat sauce. Worth knowing what else is on the tray: the 味噌汁 is made with dashi, so it is FISH, and the cabbage arrives with a dressing that is usually sesame or a soy-based one. A set meal multiplies the number of undeclared things on the table rather than reducing it.",
+    "dish_key": "rosu_katsu_teishoku"
+   }
+  ]
  }
 }

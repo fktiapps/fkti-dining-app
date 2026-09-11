@@ -1692,5 +1692,82 @@
     "dish_key": "sake"
    }
   ]
+ },
+ "tokyo_asanoya": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1310/A131003/13022743/dtlmenu/"
+  ],
+  "price_note": "⚠ START WITH THE SOBA WARNING, BECAUSE IT APPLIES TO FOUR OF THE SIX ITEMS: Japanese soba is conventionally 二八, eight parts buckwheat to TWO PARTS WHEAT, and only noodles explicitly sold as 十割 are pure buckwheat. 淺野屋 declares no ratio. Buckwheat being naturally gluten-free is the most dangerous half-truth in Japanese dining, and a soba counter is not a safe room for a coeliac unless it says 十割 on the wall. The つゆ compounds it: dashi, soy and mirin means bonito (FISH) and wheat. ⭐ THE MOST QUOTABLE FACT ON THE MENU IS THE 150円 GAP BETWEEN もり AND ざる. They are the same noodles and the same broth. ざる costs 650円 and もり costs 500円, and the entire difference is a pinch of shredded nori on top — the distinction is a survival from Edo-period soba stalls, where ざる was served on a bamboo screen with a better-grade tsuyu, and what remains of it today is the seaweed. Knowing that is worth 150円 every time. ⚠ AND THE ITEM THAT LOOKS SAFEST IS MADE ENTIRELY OF WHEAT: 冷したぬき. たぬき — \"raccoon dog\" — is not an animal and not a vegetable; it is 天かす, the loose scraps of TEMPURA BATTER skimmed off the fryer, scattered over the noodles. The English \"Cold Tanuki Set\" conveys none of that, and a reader avoiding gluten has no way to guess that the topping is pure fried wheat flour. It is, however, one of the few Japanese noodle toppings with no animal in it, which is exactly the wrong kind of reassurance. ON THE LISTING: six items, no 更新日, undated. Recorded average spend 1,000–1,999円. Open 11:00–15:00 MONDAY TO FRIDAY ONLY, closed Saturdays, Sundays and public holidays — a Kanda office-district lunch counter, so it does not exist for a weekend visitor. 31 seats, 神田猿楽町2-7-6.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "もり",
+    "romaji": "mori",
+    "en": "Mori soba — cold soba with dipping broth, no seaweed. The cheapest thing in the shop",
+    "price": "500円",
+    "section": "そば Soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ 二八そばの可能性が高い（十割の表示なし）。つゆは出汁・醤油＝魚・小麦。The noodle is ask because the wheat ratio is undeclared — assume 20% wheat. The dip is bonito dashi and soy, so it is fish and wheat regardless of what the noodle turns out to be. Ask about both separately.",
+    "dish_key": "mori_soba"
+   },
+   {
+    "ja": "ざる",
+    "romaji": "zaru",
+    "en": "Zaru soba — the identical bowl with shredded nori over it, 150円 more",
+    "price": "650円",
+    "section": "そば Soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⭐ THE ONLY DIFFERENCE FROM もり IS THE NORI. Same noodles, same tsuyu, same caveats — 150円 buys you a sprinkle of seaweed and the ghost of an Edo-period grading that no longer exists. Nori itself is plant and gluten-free, so it changes nothing dietary.",
+    "dish_key": "zaru_soba"
+   },
+   {
+    "ja": "とろろそば",
+    "romaji": "tororo soba",
+    "en": "Tororo soba — soba with grated mountain yam",
+    "price": "850円",
+    "section": "そば Soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Grated yam adds nothing animal, so this stays at the same ask/ask as the plain bowls: it turns on the flour ratio and the tsuyu, not the topping. ⚠ Raw grated yam causes mouth and skin irritation in a substantial minority of people — a known nuisance, not an allergy, but worth expecting.",
+    "dish_key": "tororo_soba"
+   },
+   {
+    "ja": "小割蕎麦",
+    "romaji": "kowari soba (reading unconfirmed)",
+    "en": "Soba served in small divided portions — the name suggests the Izumo 割子 style of stacked lacquer bowls, but the shop does not describe it",
+    "price": "1,000円",
+    "section": "そば Soba",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONE ITEM ON THIS MENU I CANNOT PIN DOWN AND AM NOT GOING TO GUESS AT. The Chinese listing preserves the kanji 小割蕎麥 and the Korean transliterates it rather than translating, which together confirm the written form 小割 but not the reading or the format. 割子そば is an Izumo speciality of stacked small bowls eaten in sequence, and 小割 plausibly refers to that — but this is a Kanda shop, not a Shimane one, and no source here says so. Recorded as UNVERIFIED in form; the dietary caveats are the same soba ones regardless.",
+    "dish_key": "kowari_soba"
+   },
+   {
+    "ja": "ミニカツ丼セット",
+    "romaji": "mini katsudon setto",
+    "en": "Mini pork-cutlet rice bowl with soba — the standard Japanese noodle-shop set",
+    "price": "1,050円",
+    "section": "セット Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 三重の小麦：そば（二八）・パン粉・つゆ。THREE separate wheat sources in one tray: the soba binder, the PANKO on the cutlet, and the soy in both the katsudon sauce and the noodle broth. PORK and EGG (katsudon is finished with beaten egg). The most expensive item on the menu and the least available to anyone with a restriction.",
+    "dish_key": "mini_katsudon_set"
+   },
+   {
+    "ja": "冷したぬきセット",
+    "romaji": "hiyashi tanuki setto",
+    "en": "Cold tanuki soba set — chilled noodles scattered with crisp tempura-batter scraps",
+    "price": "1,000円",
+    "section": "セット Sets",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ たぬき＝天かす＝揚げた小麦の衣。NOT AN ANIMAL. \"Tanuki\" here means TENKASU — the loose scraps of tempura batter skimmed off the fryer — so the topping is pure fried wheat flour and this is the clearest \"no\" on the menu for a coeliac, despite sounding like the innocuous option. Marked ask rather than no on vegan because tenkasu itself is flour, water and oil with no animal, but the batter frequently contains EGG and the fryer is shared with prawn.",
+    "dish_key": "hiyashi_tanuki_set"
+   }
+  ]
  }
 }

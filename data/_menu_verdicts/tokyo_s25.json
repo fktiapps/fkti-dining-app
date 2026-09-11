@@ -1938,5 +1938,181 @@
   "price_note": "THE ONLY URL THIS RECORD HAS IS A SHOPPING-CENTRE TENANT PAGE, AND IT CARRIES NO MENU. 東急プラザ渋谷's directory entry for 黄金の塩らぁ麺 ドゥエ イタリアン is a mall page: floor, opening hours, category and a link to the mall's own guides, with no dishes and no prices. The brand's own domain was tried as the obvious next step and due-italian.com does not resolve from this machine (curl exit 000), so there is no first-party site to fall back to. The dataset's menu_url is Tabelog, unreachable from this egress. ⚠ WHAT IS ALREADY KNOWABLE FROM THE SHOP'S NAME, and it is unusually informative: 黄金の塩らぁ麺 ドゥエ イタリアン is a shio ramen specialist with an Italian-fusion angle, recorded in this dataset under cuisine \"Italian-fusion ramen\". Ramen noodles are wheat and kansui, so the bowl is out for a coeliac whatever the tare; and an Italian-fusion ramen shop is precisely the kind of kitchen that adds cheese, porcini oil or truffle to a bowl, which matters to a vegan reading the name and assuming shio means plain. None of that is a dish claim — no dish was found.",
   "last_checked": "2026-09-07",
   "items": []
+ },
+ "tokyo_sri_lanka_tokyo_formerly": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1310/A131003/13276047/dtlmenu/"
+  ],
+  "price_note": "⭐ THE MOST IMPORTANT THING ABOUT THIS SHOP IS STRUCTURAL, NOT ITEM BY ITEM: Sri Lankan curry is not made the way Japanese curry is made. Japanese curry is thickened with a ROUX — wheat flour cooked in fat — which is why every カレー elsewhere in this dataset is flagged as gluten. Sri Lankan curry is thickened with coconut milk, onion and lentils and uses no flour at all, so a shop like this is one of the few places in Tokyo where a coeliac can consider a curry on its merits rather than rule it out on sight. That is the reason to walk to Jimbocho for it. ⚠ BUT THE SHOP PUBLISHES NO ALLERGEN POLICY AND TWO ITEMS UNDO THE ASSUMPTION. The first is 雑穀 — the fried-garlic-prawn curry is served on MULTIGRAIN rice, and commercial Japanese 雑穀 blends (十六穀米 and the like) routinely include 押麦 or 大麦, which is BARLEY, which is gluten. A grain mix sold as the healthy choice is the most likely way a coeliac gets caught here, and it is worth asking for plain white rice instead. The second is the 特製ドレッシング on the black sesame salad: an undeclared Japanese house dressing very commonly contains 醤油 (wheat) and often dashi or anchovy, so the one item that looks like a safe vegetable side is the one with the least declared about it. ⚠ FOR A PLANT-EATER the shop is better than most curry houses but still needs one question answered: 豆カレー (bean curry, 1,100円) is the obvious order, and a Sri Lankan パリップ/dhal is conventionally coconut milk, onion, curry leaves and lentils with nothing animal in it — but Japanese kitchens frequently build a single stock for the whole curry line, and if that stock carries chicken or fish then the bean curry is not vegan no matter what is in the bowl. Ask what the base is, not what the curry is. The clean toppings are ほうれん草×きのこ, パクチー and カシューナッツ. ON PROVENANCE AND PRICE: Tabelog prints no 更新日 for this menu, so these figures are undated — treat them as indicative rather than current. The listing shows a split average spend, 2,000–2,999円 at dinner against 1,000–1,999円 at lunch, which matches a 1,100–1,500円 curry plus a couple of 200円 toppings. Open 11:00–21:30 every day including public holidays, 20 seats, 神田神保町1-54-4 JHVビル 1F. The shop renamed itself from R スリランカTOKYO to ＆スリランカTOKYO; both names are the same kitchen and the Tabelog id did not change.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "豚肩ロースステーキカレー（レギュラー）",
+    "romaji": "buta kata rōsu sutēki karē (regyurā)",
+    "en": "Pork chuck-eye-roll steak curry, regular size — the shop’s headline plate, a seared slab of pork shoulder rather than stewed cubes",
+    "price": "1,500円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "スリランカカレーは小麦粉のルウを使わない＝日本のカレーと違い小麦不使用の可能性が高い。Pork. Unlike a Japanese curry this is not roux-thickened, so it carries no wheat by construction — but nothing is declared, the steak may have been marinated or finished with soy, and the rice underneath needs checking (see the multigrain note). Kept at ask for those reasons, not because curry is inherently suspect here.",
+    "dish_key": "pork_steak_curry"
+   },
+   {
+    "ja": "雑穀フライドガーリックシュリンプカレー",
+    "romaji": "zakkoku furaido gārikku shurinpu karē",
+    "en": "Fried garlic prawn curry, served on multigrain rice",
+    "price": "1,200円",
+    "section": "カレー Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 雑穀米には押麦・大麦が含まれることが多い＝グルテン。THE MULTIGRAIN IS THE PROBLEM, NOT THE CURRY. Japanese 雑穀 rice blends conventionally contain pressed or pearl barley, and barley is gluten — so the healthiest-sounding item on the list is the one to avoid, or to order with plain rice instead. Also PRAWN, one of Japan’s eight statutory allergens.",
+    "dish_key": "garlic_shrimp_curry"
+   },
+   {
+    "ja": "豚肩ロースステーキカレー（ハーフ）",
+    "romaji": "buta kata rōsu sutēki karē (hāfu)",
+    "en": "Pork chuck-eye-roll steak curry, half portion — 300円 less than the regular for a smaller piece of pork",
+    "price": "1,200円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Same dish and same caveats as the regular size. Pork. The half costs the same as the prawn curry, which makes it the better-value way to try the shop’s signature without the multigrain rice problem.",
+    "dish_key": "pork_steak_curry_half"
+   },
+   {
+    "ja": "豆カレー",
+    "romaji": "mame karē",
+    "en": "Bean curry — the pulse curry, and the only plate on the list with no animal in its name",
+    "price": "1,100円",
+    "section": "カレー Curry",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⭐ THE ONE TO ASK ABOUT. スリランカのパリップ（豆カレー）は本来ココナッツミルク・玉ねぎ・カレーリーフのみ＝植物性。A Sri Lankan dhal is traditionally entirely plant-based and contains no wheat, which makes this the best candidate in the shop for both a vegan and a coeliac. It is marked ask on both counts for one specific reason: Japanese curry houses commonly build ONE stock for the whole line, and a chicken or fish base would make this dish non-vegan while changing nothing you can see. The question to ask is about the base, not about the beans.",
+    "dish_key": "bean_curry"
+   },
+   {
+    "ja": "炙りチーズ",
+    "romaji": "aburi chīzu",
+    "en": "Blowtorched cheese, added on top of the curry",
+    "price": "200円",
+    "section": "トッピング Topping",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Dairy — vegetarian but not vegan. No wheat.",
+    "dish_key": "grilled_cheese_topping"
+   },
+   {
+    "ja": "マッシュポテト",
+    "romaji": "masshu poteto",
+    "en": "Mashed potato",
+    "price": "200円",
+    "section": "トッピング Topping",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "マッシュポテトは牛乳・バターを使うのが一般的。Potato is wheat-free. Not marked vegan because mashed potato is conventionally made with milk and butter, and this shop declares neither way.",
+    "dish_key": "mashed_potato"
+   },
+   {
+    "ja": "ほうれん草×きのこ",
+    "romaji": "hōrensō × kinoko",
+    "en": "Spinach and mushroom",
+    "price": "200円",
+    "section": "トッピング Topping",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Two vegetables and nothing else named. With パクチー and カシューナッツ this is one of the three toppings a plant-eater can add without a conversation.",
+    "dish_key": "spinach_mushroom"
+   },
+   {
+    "ja": "パクチー",
+    "romaji": "pakuchī",
+    "en": "Coriander leaf",
+    "price": "200円",
+    "section": "トッピング Topping",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "A herb. Clean on both counts.",
+    "dish_key": "coriander"
+   },
+   {
+    "ja": "カシューナッツ",
+    "romaji": "kashū nattsu",
+    "en": "Cashew nuts — a genuinely Sri Lankan addition rather than a Japanese one",
+    "price": "200円",
+    "section": "トッピング Topping",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ NUTS. Plant-based and wheat-free, but cashew is a tree nut, and this is the item that tells a nut-allergic diner cashew is being handled in the kitchen at all — cashew is also used as a thickener in South Asian cooking, so its presence here matters even if you do not order it.",
+    "dish_key": "cashew_nuts"
+   },
+   {
+    "ja": "スパイス茹で卵",
+    "romaji": "supaisu yude tamago",
+    "en": "Spiced boiled egg",
+    "price": "200円",
+    "section": "トッピング Topping",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Egg — vegetarian, not vegan. No wheat named.",
+    "dish_key": "spiced_egg"
+   },
+   {
+    "ja": "豚肩ロース ハーフ",
+    "romaji": "buta kata rōsu hāfu",
+    "en": "Half portion of the pork chuck-eye roll, added to any curry",
+    "price": "400円",
+    "section": "トッピング Topping",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Pork. The same meat as the steak curry sold as an add-on, which is how you put the shop’s signature pork on top of the bean curry.",
+    "dish_key": "pork_half_side"
+   },
+   {
+    "ja": "ガーリックシュリンプ",
+    "romaji": "gārikku shurinpu",
+    "en": "Garlic prawns",
+    "price": "400円",
+    "section": "トッピング Topping",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ PRAWN, a statutory allergen. Garlic prawns are frequently finished with butter (dairy) and sometimes with soy; neither is declared.",
+    "dish_key": "garlic_shrimp_side"
+   },
+   {
+    "ja": "黒ごまサラダ〜特製ドレッシング〜",
+    "romaji": "kuro goma sarada — tokusei doresshingu",
+    "en": "Black sesame salad with the house dressing",
+    "price": "200円",
+    "section": "サイド SIDE MENU",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ 特製ドレッシングの原材料が不明。醤油（小麦）や出汁・アンチョビを含む可能性。THE SALAD IS THE LEAST DECLARED ITEM ON THE MENU. A Japanese house dressing very commonly contains soy sauce, which is wheat, and very often dashi or anchovy, which is fish — so the plate that looks like the safe vegetable option is the one carrying an undisclosed sauce. Also SESAME, a declarable allergen in Japan.",
+    "dish_key": "black_sesame_salad"
+   }
+  ]
+ },
+ "tokyo_umemura": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13008698/dtlmenu/"
+  ],
+  "price_note": "⭐ THIS IS THE BEST RECORD IN THE TICK FOR A PLANT-EATER AND FOR A COELIAC AT THE SAME TIME, AND THAT ALMOST NEVER HAPPENS. 梅むら is an Asakusa 甘味処 — a traditional sweet shop — and the one item Tabelog lists is 豆かん at 450円, which is also the dish the shop is known for. 豆かん is three things: red peas, 寒天, and 黒蜜. ⭐ 寒天 IS AGAR, WHICH IS SEAWEED, NOT GELATINE. This is the single most useful thing to know about Japanese sweet shops and it cuts the opposite way from almost every other trap in this dataset. A Western jelly is set with gelatine, which is boiled animal collagen, so a vegan has to refuse it; a Japanese kanten jelly is set with a red algae extract and has no animal in it at all. 黒蜜 is unrefined black-sugar syrup, also plant. And none of the three components is a grain, so there is no wheat anywhere in the dish. A traveller who has spent a week saying no to everything can eat this. ⚠ TWO HONEST QUALIFICATIONS. First, the shop publishes no allergen statement, and the one substitution that would break the vegan reading is honey in place of or alongside the 黒蜜 — worth one question if you are strict. Second, 甘味処 almost always sell あんみつ and other bowls built on the same kanten, and those frequently add 白玉 (glutinous RICE flour, still gluten-free) or, at some shops, castella or biscuit pieces that are wheat — but Tabelog lists none of that here, so what the rest of the counter offers is UNKNOWN rather than safe. Ask for 豆かん by name. ON THE LISTING ITSELF: only one item is published and it carries no 更新日, so treat 450円 as indicative. The recorded average spend is under 999円, which is consistent. Open 12:30–19:00, closed Sundays, 浅草3-22-12. The seat note is unusually specific and worth repeating — 14 seats on paper, but the 6 counter seats are marked unavailable, leaving two four-tops on the raised platform, so this is an eight-seat room in practice and a queue is likely.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "豆かん",
+    "romaji": "mame kan",
+    "en": "Mame-kan — cubes of agar jelly with sweet-salty red peas and black-sugar syrup poured over, the dish this Asakusa sweet shop is known for",
+    "price": "450円",
+    "section": "甘味 Sweets",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⭐ 寒天＝海藻（ゼラチンではない）。赤えんどう豆・寒天・黒蜜のみ＝動物性なし・小麦なし。Agar is set from red algae, NOT from gelatine, so unlike a European jelly this is entirely plant-based. Peas, seaweed jelly and black-sugar syrup: no animal, no grain, no wheat. The only thing that would change the answer is honey in the syrup, which the shop does not declare either way — one question settles it.",
+    "dish_key": "mamekan"
+   }
+  ]
  }
 }

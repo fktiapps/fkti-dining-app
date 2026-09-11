@@ -3354,5 +3354,71 @@
     "dish_key": "juice"
    }
   ]
+ },
+ "tokyo_kaisendon_otsu_asakusa": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13303248/dtlmenu/"
+  ],
+  "price_note": "⭐ 松 竹 梅 ARE A RANKING, NOT INGREDIENTS, AND TABELOG'S ENGLISH BREAKS THAT IN THE WORST POSSIBLE WAY. The three bowls are 海鮮丼 松 (2,420円), 竹 (1,716円) and 梅 (1,210円). Pine, bamboo and plum is the standard Japanese three-tier grading formula — it appears on unagi menus, bento lids and funeral packages alike — and it means top, middle and bottom, nothing more. Tabelog renders the first as \"Matsu\" (untranslated), the second as \"Bamboo\" and the third as \"Plum\", so an English reader sees one Japanese word and two plant names and has every reason to think the bowls differ by ingredient. They differ by how much fish and how good. Order by price. ⭐ THE PRICES ARE TAX-INCLUSIVE AND YOU CAN PROVE IT FROM THE NUMBERS: 2,420 = 2,200 × 1.1, 1,716 = 1,560 × 1.1, 1,210 = 1,100 × 1.1, 626 = 569 × 1.1. Every figure is a clean pre-tax price multiplied by Japan's 10% consumption tax, which means these are 税込 shelf prices and there is no surprise at the till. ⚠ DIETARY: this is a raw-fish counter and there is nothing else on it. Every bowl is FISH, several species per bowl, unlisted — which matters because Japan's statutory allergen list includes さば (mackerel) and いくら (salmon roe), both standard in a mixed kaisendon, and neither is declared. Nothing is vegan. On gluten the answer is the same as at every sushi counter: the rice is seasoned with vinegar and sugar and is usually fine, but the 醤油 you pour over it is WHEAT unless the shop stocks tamari, and a kaisendon is conventionally served already brushed or with soy alongside. ON THE LISTING: no 更新日, and the arithmetic above is the only dating evidence — a 10% rate has applied since October 2019, so the prices are at least post-2019. Open 11:00–19:30, closed Mondays and Tuesdays, only 7 seats, 浅草1-24-4. The 626円 thick roll is marked TAKEOUT ONLY, so it cannot be eaten in.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "海鮮丼 松",
+    "romaji": "kaisendon matsu",
+    "en": "Seafood bowl, \"pine\" grade — the top of the three, with the most and best fish",
+    "price": "2,420円（税込）",
+    "section": "海鮮丼 Seafood Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ 松＝等級の最上位であって食材名ではない。\"Pine\" is the TOP GRADE, not an ingredient — nothing in the bowl is pine. Mixed raw FISH over vinegared rice; the species are not published, so assume mackerel and roe are possible. Gluten marked ask because the soy sauce is wheat, not because the fish or rice is.",
+    "dish_key": "kaisendon_matsu"
+   },
+   {
+    "ja": "海鮮丼 竹",
+    "romaji": "kaisendon take",
+    "en": "Seafood bowl, \"bamboo\" grade — the middle of the three",
+    "price": "1,716円（税込）",
+    "section": "海鮮丼 Seafood Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THERE IS NO BAMBOO IN THIS BOWL. 竹 is the middle rank in the 松竹梅 formula and Tabelog translating it as \"Bamboo\" is actively misleading. Raw FISH over rice, species unpublished. Same soy-sauce caveat.",
+    "dish_key": "kaisendon_take"
+   },
+   {
+    "ja": "海鮮丼 梅",
+    "romaji": "kaisendon ume",
+    "en": "Seafood bowl, \"plum\" grade — the entry bowl, half the price of the top one",
+    "price": "1,210円（税込）",
+    "section": "海鮮丼 Seafood Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ NO PLUM EITHER. 梅 is the bottom rank of three, and at 1,210円 it is exactly half the 松 — the clearest statement of what the grading means. Raw FISH over rice. Same soy caveat.",
+    "dish_key": "kaisendon_ume"
+   },
+   {
+    "ja": "ライス大盛",
+    "romaji": "raisu ōmori",
+    "en": "Extra rice",
+    "price": "110円（税込）",
+    "section": "海鮮丼 Seafood Rice Bowl",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Rice only. 110円 is 100円 plus tax, which confirms the tax-inclusive reading of every other price on the list. ⚠ If the rice is the vinegared sushi rice rather than plain — not stated — it is still gluten-free and still vegan, since sushi-zu is vinegar, sugar and salt.",
+    "dish_key": "rice_large"
+   },
+   {
+    "ja": "【テイクアウト限定】本鮪中とろ入り太巻 2切",
+    "romaji": "teikuauto gentei honmaguro chūtoro-iri futomaki nikire",
+    "en": "Takeout only: two slices of thick roll containing bluefin tuna belly",
+    "price": "626円（税込）",
+    "section": "テイクアウト限定 Takeout Only",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ TAKEOUT ONLY — you cannot order this sitting down, which matters in a 7-seat shop. 本鮪 is true bluefin and 中とろ is the medium-fatty belly, so this is the most expensive fish in the shop sold in the cheapest format. FISH. A 太巻 conventionally contains 卵焼き (EGG) and かんぴょう simmered in soy (WHEAT) alongside the fish, none of it declared here.",
+    "dish_key": "futomaki_chutoro"
+   }
+  ]
  }
 }

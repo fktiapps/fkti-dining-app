@@ -3379,5 +3379,38 @@
     "dish_key": "maguro_don_size"
    }
   ]
+ },
+ "tokyo_nanjamonja": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1304/A130401/13006103/dtlmenu/"
+  ],
+  "price_note": "⚠ TABELOG LISTS FOURTEEN ROWS FOR THIS SHOP AND TWELVE OF THEM ARE SECTION HEADINGS, NOT DISHES. \"Monja\", \"Topping\", \"Teppan-yaki\", \"Salad\", \"Fried Food\", \"Rice Dishes\", \"Assorted Desserts\" — these are the names of parts of a menu that was never transcribed, and they carry no prices. Only two rows are real, priced items. Rather than inflate this record to fourteen invented dishes, it holds the two that exist plus the structure, and says plainly that the rest of the carte is UNKNOWN. ⚠ THE DIETARY ANSWER, HOWEVER, DOES NOT DEPEND ON THE MISSING ITEMS, BECAUSE THIS IS A FLOUR-AND-GRIDDLE SHOP BY DEFINITION. お好み焼き is a batter of WHEAT FLOUR, egg and dashi; もんじゃ焼き is the same idea made deliberately runnier, and its batter is wheat flour loosened with dashi-thinned stock. Both are cooked on a shared 鉄板 that has had wheat batter on it all evening, and both are finished with お好みソース, a Worcester-style sauce that itself normally contains wheat. On top of that the standard garnishes are 青のり and かつおぶし — dried BONITO, i.e. fish flakes scattered over the finished dish as a matter of course. So: a coeliac cannot eat anything cooked on the griddle here, which is the entire point of the shop, and a vegetarian must ask for the dashi and the bonito to be left out of a dish where dashi is IN THE BATTER and cannot be removed. ⭐ TWO THINGS ABOUT THE SHOP ARE GENUINELY DISTINCTIVE AND BOTH ARE VISIBLE IN THE SECTION NAMES. First, it serves 関西風お好み焼き — KANSAI-STYLE, where the ingredients are mixed through the batter before cooking — in Shinjuku, which is Kanto and monja country; selling both side by side is the shop's proposition. Second, one section is 二郎系月島もんじゃ, \"Jiro-style Tsukishima monja\": ラーメン二郎 is a Tokyo ramen lineage famous for enormous piles of garlic, fat and bean sprouts, and applying that vocabulary to monja is a joke and a genuine menu category at once. Neither is conveyed by Tabelog's English, which flattens the second to \"Jiro-style Monja\". ⚠ THE 3,980円 COURSE IS THE ONE PRICE THAT MATTERS AND IT IS ALL-YOU-CAN-EAT AND ALL-YOU-CAN-DRINK FOR 150 MINUTES. For anyone with a restriction that is the worst possible format — the value is in eating widely off a shared griddle, which is exactly what cannot be done safely — and for everyone else it is the reason the recorded average spend is 3,000–3,999円. ON THE SHOP: 新宿3-7-5 一兆ビル, 3rd and 4th floors, 68 seats of which 66 are tatami, open 16:30–24:00 with food last orders at 23:00, and OPEN YEAR-ROUND with no fixed closing day.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "150分飲み放題＆食べ放題コース",
+    "romaji": "hyaku-gojippun nomihōdai & tabehōdai kōsu",
+    "en": "150-minute all-you-can-eat and all-you-can-drink course — the shop's headline offer",
+    "price": "3,980円",
+    "section": "コース Course",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 食べ放題は共用の鉄板で焼く＝小麦の完全な交差汚染。AN ALL-YOU-CAN-EAT GRIDDLE IS THE WORST FORMAT THERE IS FOR A RESTRICTED DINER. The contents are not published, but the shop is an okonomiyaki and monja house, so the course is built on WHEAT batter cooked on a communal hotplate, finished with wheat-containing sauce and BONITO flakes, and the batter itself is made with DASHI and EGG. There is no way to eat around it and no way to isolate a pan. Recorded because the price is real and the format is the single most important thing to know before booking.",
+    "dish_key": "tabehodai_course"
+   },
+   {
+    "ja": "関西風お好み焼き",
+    "romaji": "Kansai-fū okonomiyaki",
+    "en": "Kansai-style okonomiyaki — cabbage and fillings mixed through the batter before it hits the griddle, rather than layered Hiroshima-style",
+    "price": "1,170円",
+    "section": "関西風お好み焼き・もんじゃ Kansai-style Okonomiyaki & Monja",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 生地＝小麦粉＋卵＋出汁。ソースにも小麦。THE BATTER IS THE DISH AND THE BATTER IS WHEAT — flour, EGG and DASHI (fish) mixed together, so there is no version without gluten and no version a vegetarian can order by removing a topping, because the stock is inside the batter. Finished with お好みソース (Worcester-style, normally contains WHEAT) and かつおぶし (dried BONITO). ⭐ The 関西風 label is the useful part: it tells you the fillings are folded through rather than stacked in layers, which is the Osaka method and not the Hiroshima one.",
+    "dish_key": "kansai_okonomiyaki"
+   }
+  ]
  }
 }

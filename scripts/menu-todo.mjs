@@ -70,21 +70,36 @@ if (NEXT_ONLY) {
 }
 
 
-// Not every outstanding record can actually be researched right now. Tabelog has
-// served a Cloudflare managed challenge (HTTP 403, Cf-Mitigated: challenge) to the
-// machine with egress since 2026-09-02, so records whose only link is a Tabelog URL
-// are PARKED, not abandoned — working them costs a tick and yields a challenge page.
-// Sorting the queue by what the shop actually publishes is worth roughly two thirds
-// of the remaining work being reachable instead of one third.
+// Sorting the queue by what the shop actually publishes decides what is workable.
+//
+// TABELOG IS NOT BLOCKED — ONLY ITS JAPANESE LOCALE IS. From 2026-09-02 this egress
+// got a Cloudflare managed challenge (403) on tabelog.com/tokyo/... and s.tabelog.com,
+// and the whole Tabelog bucket was parked on that evidence. Re-probed 2026-09-10: the
+// challenge is scoped to the JA locale. Every OTHER locale answers 200 —
+//   /en/tokyo/...  /tw/tokyo/...  /kr/tokyo/...  /cn/tokyo/...
+// — same restaurant id, same menu, same prices, served in full. 71/71 parked records
+// fetched 200 on the /en/ rewrite. Nothing was ever unreachable; one URL prefix was.
+//
+// Read all three non-JA locales, never just English, because none alone is faithful:
+//   en  usable gloss + the "As of <date>" stamp that dates the prices
+//   tw  leaves the ORIGINAL JAPANESE in place where no Chinese equivalent exists
+//       (おかめ, 板わさ) and keeps JA parentheticals like （提供期間：11月～3月）
+//   kr  transliterates instead of translating (텐자루 = tenzaru, 가케소바 = kakesoba),
+//       recovering the reading the English gloss throws away
+// The English alone is actively lossy: at 並木藪蕎麦 it renders BOTH 天ざる and
+// 天ぷらそば as "Tempura Soba" — one cold, one hot, same gloss — and only the TW/KR
+// columns tell them apart. scripts/harvest-tabelog.mjs prints the three aligned.
 const sourceOf = r => {
   const w = (r.website || '').toLowerCase();
   if (!w) return 'no_website';
-  if (w.includes('tabelog.com')) return 'tabelog_blocked';
+  // Reachable via the locale rewrite; kept as its own bucket because the menu arrives
+  // translated and needs the tw/kr cross-read to recover the Japanese.
+  if (w.includes('tabelog.com')) return 'tabelog_en';
   if (/instagram|facebook|lit\.link|toreta|twitter|x\.com/.test(w)) return 'social_only';
   if (/gorp\.jp|foodre\.jp|gnavi|hotpepper|retty|owst\.jp|goope|favy|base\.shop|stores\.jp/.test(w)) return 'aggregator';
   return 'first_party';
 };
-const ORDER = ['first_party', 'aggregator', 'social_only', 'no_website', 'tabelog_blocked'];
+const ORDER = ['first_party', 'aggregator', 'tabelog_en', 'social_only', 'no_website'];
 
 if (BY_SOURCE) {
   const all = rows.flatMap(r => r.todo.map(rec => ({ ...rec, shard: `s${r.n}` })));
@@ -94,11 +109,11 @@ if (BY_SOURCE) {
   for (const k of ORDER) {
     const g = groups[k];
     if (!g.length) continue;
-    const tag = k === 'tabelog_blocked' ? '  <- PARKED: Tabelog 403s this egress' : '';
+    const tag = k === 'tabelog_en' ? '  <- fetch via /en/ (+ /tw/ /kr/ to recover the Japanese)' : '';
     console.log(`  ${k.padEnd(16)} ${String(g.length).padStart(4)}${tag}`);
   }
-  const work = ORDER.filter(k => k !== 'tabelog_blocked').flatMap(k => groups[k]);
-  console.log(`\n  reachable now: ${work.length}   parked: ${groups.tabelog_blocked.length}`);
+  const work = ORDER.flatMap(k => groups[k]);
+  console.log(`\n  reachable now: ${work.length}`);
   console.log(`\n  next 20 reachable:`);
   for (const r of work.slice(0, 20))
     console.log(`    ${r.shard.padEnd(5)} ${r.id.padEnd(32)} ${sourceOf(r).padEnd(12)} ${r.website || ""}`);

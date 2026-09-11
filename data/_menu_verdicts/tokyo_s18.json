@@ -5110,5 +5110,236 @@
   "price_note": "No dish and no price — and the shop says why itself. 浅草じゅうろく has a proper first-party site with a section headed 料理 / COOKING, and the entire content of that section is the sentence 季節によって料理は異ります: the dishes change with the season. There is no board, no PDF and no price anywhere on the site. That is a deliberate editorial choice by a shop of this kind rather than an oversight, and it means there is nothing to record. Tabelog is UNVERIFIED rather than empty: as of 2026-09-04 it returns HTTP 403 with a Cloudflare bot-challenge, so its URL is absent from sources. ⚠ WHAT THE SITE DOES SAY IS UNUSUALLY DECISIVE FOR A RECORD WITH NO ITEMS, BECAUSE THE OWNER VOLUNTEERS THE ONE FACT THAT MATTERS MOST: 料理で一番重要なのは出汁と位置付けております — we regard DASHI as the single most important thing in our cooking. He goes further: 出汁は一つの出汁を使いまわす事はせず、その素材が一番引き立つ出汁を取る, a different dashi drawn for each ingredient rather than one stock reused. For a vegan that is as close to a closed door as a kitchen can describe without listing a dish, because a Japanese restaurant dashi is bonito and this one is being made fresh, repeatedly, for everything on the plate. And a soba-shop dashi is normally cut with soy, so it is a wheat statement too. ⚠ THE OTHER STRUCTURAL FACTS: this is a 蕎麦割烹 — the owner’s own word — pairing SOBA with SUSHI, selected for 食べログ 蕎麦百名店 three years running. Soba carries the standing 二八 / 打ち粉 / shared-water problem this dataset flags everywhere, and the shop describes blending, milling and cutting its own buckwheat by season without ever publishing a ratio. The sushi side turns on the 舎利: the owner writes at length about the rice, the VINEGAR blend and the salt, which is a wheat question only if the vinegar is a malt one, and a nigiri is normally brushed with 煮切り soy before serving. ⚠ PRACTICALITIES from the same page: 台東区浅草4-37-8 小田井ビル1F, 18:00–23:00 with last orders at 22:30 and closing 蕎麦売り切れ次第 — when the soba runs out. Closed Mondays. Eight counter seats and ten at tables, so it is small and reservations are by phone. Delivery and takeaway are offered within the 23 wards, with the shop noting it uses a DIFFERENT rice and vinegar blend for delivery than in-store. Re-check when Tabelog access returns.",
   "last_checked": "2026-09-04",
   "items": []
+ },
+ "tokyo_obanzai_miyuu_aji_yuu": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13322285/dtlmenu/"
+  ],
+  "price_note": "⚠ THE SHOP ITSELF SAYS THIS LIST IS NOT THE MENU. The first row of the Tabelog listing is not a dish, it is a disclaimer — 「以下は一例です。提供内容は変動します」, \"the following is an example; what is offered will change\". That is exactly what おばんざい means: Kyoto-style small dishes cooked from what came in that morning, rewritten daily on a board. So every item below is EVIDENCE OF WHAT THIS KITCHEN DOES, not a promise of what will be available on any given night, and the two prices that appear (780円 and 630円) are better read as the shop's two price bands than as the cost of any particular plate. Confidence is low for that reason and no other. ⚠ THAT DISCLAIMER ROW ALSO CARRIES NO PRICE, AND IT MATTERS TECHNICALLY: reading this page by pairing the list of names against the list of prices in order shifts every price up by one and silently moves 780円 onto a 630円 dish. This record was built by walking the page in document order instead. Anyone re-harvesting Tabelog should do the same. ⭐ THE BIGGEST HIDDEN-ANIMAL FIND IN THE TICK IS ON THIS MENU AND THE ENGLISH COMPLETELY CONCEALS IT: 会津直送 桜ユッケ, rendered as \"Aizu Direct Delivery Sakura Yukke\". 桜 — \"cherry blossom\" — is the standard Japanese euphemism for HORSE MEAT, and ユッケ means it is served RAW, minced and dressed, usually with a raw egg yolk. Aizu in Fukushima is one of Japan's centres of 馬刺し. So a line that reads to an English speaker like a pretty seasonal salad is raw horse. Nobody avoiding horse on cultural, religious or personal grounds would catch that from the menu, and nobody avoiding raw meat would either. ⚠ FOR A VEGETARIAN THE SECOND TRAP IS 沖縄もずくの三杯酢. Mozuku is seaweed and the dish looks like the one safe plate on the list, but 三杯酢 is vinegar, soy sauce and mirin conventionally let down with DASHI — so the dressing is bonito. Seaweed in a Japanese vinegar dressing is a fish dish more often than not. The genuinely plausible plates are トマトと新玉ねぎのカルパッチョ and 本日の野菜スティック, and both need their dressing and dip asked about, since carpaccio dressings frequently carry anchovy and vegetable-stick dips are usually miso-mayo (egg) or anchovy. ON THE SHOP: 8 counter seats, 浅草1-14-9 OKビル 1F, 16:00–23:00, closed Tuesdays. The recorded average spend is 6,000–7,999円, which is high for small plates at 630–780円 and implies serious drinking is expected. The Tabelog rating is 3.00 from only 5 reviews — a new or little-reviewed shop, so the rating carries almost no information.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "★手作り水餃子 ねぎたっぷり",
+    "romaji": "★ tezukuri sui-gyōza negi tappuri",
+    "en": "Handmade boiled dumplings under a heap of spring onion — starred by the shop as a recommendation",
+    "price": "780円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 餃子の皮＝小麦。The wrapper is WHEAT, which is true of every gyoza everywhere and is the whole problem with dumplings for a coeliac. The filling is not specified but gyoza filling is pork by default. Boiled rather than fried, so at least no shared fryer.",
+    "dish_key": "sui_gyoza"
+   },
+   {
+    "ja": "★牛たたき きのこわさび醤油",
+    "romaji": "★ gyū tataki kinoko wasabi jōyu",
+    "en": "Seared-rare beef with mushrooms in wasabi soy",
+    "price": "780円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "no",
+    "vegan": "no",
+    "note": "BEEF, seared outside and RAW inside — that is what たたき means. The dressing is 醤油, so WHEAT. Wasabi served with restaurant beef is very often the horseradish-and-mustard blend rather than real wasabi, which matters only for taste, not for allergens.",
+    "dish_key": "gyu_tataki"
+   },
+   {
+    "ja": "★ほたるいかの青のりジャーマンポテト",
+    "romaji": "★ hotaruika no aonori jāman poteto",
+    "en": "Firefly squid and potato sautéed with green laver, the shop's twist on German potatoes",
+    "price": "780円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "ホタルイカ is firefly SQUID — squid is a declarable allergen in Japan and is not obvious from \"Firefly Squid\" to a reader who does not know it is a cephalopod. ⚠ ジャーマンポテト conventionally means potato fried with BACON, so assume PORK is in it too unless told otherwise; the squid has replaced the bacon in some versions but the shop does not say. Gluten ask: the seasoning is undeclared and soy is likely.",
+    "dish_key": "hotaruika_german_potato"
+   },
+   {
+    "ja": "かぼちゃチーズ入り皿コロッケ",
+    "romaji": "kabocha chīzu-iri sara korokke",
+    "en": "Pumpkin and cheese croquette served flat on a plate rather than as a ball",
+    "price": "630円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ コロッケの衣＝パン粉＝小麦。Croquette crumb is BREAD. Pumpkin and cheese is a meat-free filling, so this is one of the few plates a vegetarian could consider — but it is DAIRY, the binder in a korokke is frequently béchamel (more wheat), and it is deep-fried in oil shared with the prawn cutlet on the same menu.",
+    "dish_key": "kabocha_cheese_korokke"
+   },
+   {
+    "ja": "新アスパラと味噌の揚げ春巻",
+    "romaji": "shin asupara to miso no age harumaki",
+    "en": "Fried spring rolls of new-season asparagus with miso",
+    "price": "630円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "⚠ 春巻の皮＝小麦。THE WRAPPER IS WHEAT — Chinese spring-roll skin is a wheat-flour sheet, unlike a Vietnamese rice-paper roll, and this is a very common confusion. The filling as named is asparagus and miso with nothing animal in it, so vegan is marked ask rather than no: the shop does not say whether the miso is dashi-blended (だし入り味噌 is standard in Japanese kitchens and contains bonito) and the fryer is shared.",
+    "dish_key": "asparagus_miso_harumaki"
+   },
+   {
+    "ja": "トマトと新玉ねぎのカルパッチョ",
+    "romaji": "tomato to shin tamanegi no karupatcho",
+    "en": "Tomato and new-season onion carpaccio",
+    "price": "630円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⭐ THE BEST CANDIDATE ON THE LIST FOR A PLANT-EATER, WITH ONE QUESTION ATTACHED. Two vegetables and a dressing — and the dressing is the whole risk. Japanese restaurant カルパッチョ dressings very commonly contain ANCHOVY, and often soy sauce (wheat) alongside the olive oil. Ask what is in it and this is very likely fine; do not assume.",
+    "dish_key": "tomato_onion_carpaccio"
+   },
+   {
+    "ja": "蟹玉あんかけ豆腐",
+    "romaji": "kanitama ankake dōfu",
+    "en": "Crab-and-egg omelette over tofu under a thickened sauce",
+    "price": "630円",
+    "section": "本日のおばんざい Today's Obanzai",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "CRAB (statutory allergen) and EGG over tofu. ⚠ The あん is the thing to ask about: Japanese thickened sauces use 片栗粉, potato starch, which is gluten-free — but the liquid being thickened is dashi and SOY SAUCE, which is wheat. Tofu on the plate does not make this a vegetarian dish; it is the only non-animal component of four.",
+    "dish_key": "kanitama_ankake_tofu"
+   },
+   {
+    "ja": "本日の野菜スティック",
+    "romaji": "honjitsu no yasai sutikku",
+    "en": "The day's raw vegetable sticks with a dip",
+    "price": "(価格未掲載)",
+    "section": "即席 Instant Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Raw vegetables — the dip is the entire question and it is not published. Japanese vegetable-stick dips are usually miso-mayonnaise (EGG, and often dashi-blended miso) or an anchovy bagna cauda (FISH and DAIRY). The vegetables are safe; nothing else about the plate is known.",
+    "dish_key": "yasai_sticks"
+   },
+   {
+    "ja": "沖縄もずくの三杯酢",
+    "romaji": "Okinawa mozuku no sanbaizu",
+    "en": "Okinawan mozuku seaweed in three-cup vinegar",
+    "price": "(価格未掲載)",
+    "section": "即席 Instant Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE SEAWEED IS NOT THE PROBLEM, THE VINEGAR IS. 三杯酢は酢・醤油・みりんに出汁を合わせるのが一般的＝鰹。Sanbaizu is conventionally let down with DASHI, so this plate is bonito, and the soy in it is wheat. Mozuku is one of the most vegan-looking items on any izakaya menu in Japan and one of the least reliably vegan.",
+    "dish_key": "mozuku_sanbaizu"
+   },
+   {
+    "ja": "おまかせチョレギサラダ",
+    "romaji": "omakase choregi sarada",
+    "en": "Chef's-choice choregi salad — leaves dressed Korean-style in sesame oil",
+    "price": "(価格未掲載)",
+    "section": "即席 Instant Dish",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "SESAME, a declarable allergen, is the defining ingredient. チョレギ dressings are sesame oil, salt and garlic at their simplest, which would be vegan — but Japanese versions routinely add 鶏ガラ powder (chicken) or soy sauce (wheat), and おまかせ means the composition changes. Both marks are ask because the dressing is unknowable from the name.",
+    "dish_key": "choregi_salad"
+   },
+   {
+    "ja": "スモーク大根チーズ",
+    "romaji": "sumōku daikon chīzu",
+    "en": "Smoked daikon with cheese",
+    "price": "(価格未掲載)",
+    "section": "即席 Instant Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "DAIRY. Vegetarian but not vegan. Smoked daikon is 燻製たくあん in most izakaya versions, which is pickled before smoking — pickling liquor may contain mirin or additives but no wheat as a rule. Gluten ask only because nothing is declared.",
+    "dish_key": "smoked_daikon_cheese"
+   },
+   {
+    "ja": "クリームチーズ鰹節醤油",
+    "romaji": "kurīmu chīzu katsuobushi jōyu",
+    "en": "Cream cheese with bonito flakes and soy sauce",
+    "price": "(価格未掲載)",
+    "section": "即席 Instant Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ A SINGLE SMALL PLATE THAT HITS THREE RESTRICTIONS AT ONCE: DAIRY (cream cheese), FISH (katsuobushi is dried bonito), and WHEAT (soy sauce). It is worth noticing because cheese-and-soy is an extremely common izakaya snack and reads as vegetarian at a glance — the bonito flakes are the visible part and people take them for a garnish.",
+    "dish_key": "cream_cheese_katsuobushi"
+   },
+   {
+    "ja": "ほくほく新じゃがバター",
+    "romaji": "hokuhoku shin-jaga batā",
+    "en": "Floury new potatoes with butter",
+    "price": "(価格未掲載)",
+    "section": "即席 Instant Dish",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Potato and BUTTER — dairy, so vegetarian but not vegan, and one of the very few plates in the shop with no wheat in it at all. ⚠ じゃがバター is frequently finished with 塩辛 (salted squid) or anchovy butter in izakaya; not indicated here, but worth a glance at the plate.",
+    "dish_key": "shinjaga_butter"
+   },
+   {
+    "ja": "会津直送 桜ユッケ",
+    "romaji": "Aizu chokusō sakura yukke",
+    "en": "Raw minced horse meat, Korean yukhoe style, sent direct from Aizu in Fukushima",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠⚠ 桜＝馬肉。THIS IS RAW HORSE AND THE ENGLISH DOES NOT SAY SO. \"Sakura\" is the standard Japanese euphemism for HORSE MEAT, ユッケ means raw and minced, and Aizu is one of the country's centres of 馬刺し — so \"Aizu Direct Delivery Sakura Yukke\" is uncooked horse, conventionally served with a RAW EGG yolk and a soy-and-sesame dressing (WHEAT, SESAME). Anyone who would decline horse, or raw meat, or raw egg has no way to know from the menu.",
+    "dish_key": "sakura_yukke"
+   },
+   {
+    "ja": "だし巻き玉子（鬼おろし付）",
+    "romaji": "dashimaki tamago (oni-oroshi tsuki)",
+    "en": "Rolled dashi omelette, served with coarsely grated daikon",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ THE NAME CONTAINS THE WARNING: だし巻き means the egg is beaten WITH DASHI, so this omelette is made with fish stock and is not vegetarian, unlike a plain omelette. EGG. 鬼おろし is a coarse bamboo grater that shreds daikon into rough flakes rather than pulp — a texture choice, no dietary consequence, and a nice piece of craft to notice. Gluten ask: dashimaki is usually seasoned with soy or mirin.",
+    "dish_key": "dashimaki_tamago"
+   },
+   {
+    "ja": "一晩漬け込んだ唐揚げ",
+    "romaji": "hitoban tsukekonda karaage",
+    "en": "Fried chicken marinated overnight",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 唐揚げは小麦粉または片栗粉をまぶし、漬けだれは醤油＝小麦。CHICKEN. Karaage is dusted in flour — sometimes potato starch, often wheat — and the overnight marinade the name boasts about is soy-based, which is wheat regardless of the dusting. Two chances for gluten, and the shop names neither.",
+    "dish_key": "karaage"
+   },
+   {
+    "ja": "サクプリ海老カツ",
+    "romaji": "sakupuri ebi katsu",
+    "en": "Prawn cutlet, crisp outside and springy inside",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ PRAWN, a statutory allergen, in PANKO, which is bread. サクプリ is onomatopoeia for the two textures — crunch and bounce — not an ingredient. This is also the item that makes the shared fryer unusable for the pumpkin croquette and the spring rolls.",
+    "dish_key": "ebi_katsu"
+   },
+   {
+    "ja": "本日の即席チャーハン",
+    "romaji": "honjitsu no sokuseki chāhan",
+    "en": "The day's quick fried rice",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Fried rice is rice, so the grain is gluten-free — but チャーハン is seasoned with soy sauce (WHEAT) almost without exception, contains EGG almost without exception, and 本日の means the additions change nightly. Rice dishes are where a coeliac in Japan gets caught precisely because the base looks safe.",
+    "dish_key": "chahan"
+   },
+   {
+    "ja": "味ゆぅのふわふわオムライス",
+    "romaji": "Ajiyū no fuwafuwa omuraisu",
+    "en": "The house omurice, with the soft-set egg style",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "EGG over rice. ⚠ Omurice is ketchup-fried rice, which normally contains CHICKEN, and the sauce served over it is either ketchup or a demi-glace — and demi-glace is a WHEAT-FLOUR roux. Even the ketchup version is usually seasoned with soy or a bouillon cube. Marked no on gluten because a Japanese omurice is far more likely to carry wheat than not.",
+    "dish_key": "omurice"
+   },
+   {
+    "ja": "おでん出汁のカレー",
+    "romaji": "oden-dashi no karē",
+    "en": "Curry built on oden broth — the shop's closing rice dish",
+    "price": "(価格未掲載)",
+    "section": "しっかり Filling Dish",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ TWO ANIMALS AND A WHEAT ROUX IN ONE BOWL. おでん出汁 is kombu AND katsuobushi, so FISH; Japanese curry is thickened with a flour ROUX, so WHEAT; and oden broth is built with soy as well. A curry that advertises its dashi is advertising the bonito. The idea is a good one — oden stock is a genuinely interesting curry base — and it is available to nobody with either restriction.",
+    "dish_key": "oden_dashi_curry"
+   }
+  ]
  }
 }

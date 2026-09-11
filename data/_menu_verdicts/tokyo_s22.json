@@ -4330,5 +4330,71 @@
     "dish_key": "ajitama_topping"
    }
   ]
+ },
+ "tokyo_kuroge_wagyu_ichinoya_as": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1311/A131102/13279005/dtlmenu/"
+  ],
+  "price_note": "⭐ THE SHOP IS CALLED 黒毛和牛 壱乃屋 AND TWO OF ITS FIVE BOWLS ARE NOT 黒毛和牛. Read the bracketed sourcing on each line: the 6,600円 chateaubriand, the 5,500円 fillet and the 3,500円 bowl all say 黒毛和牛使用 — Japanese Black wagyu. The 2,500円 and 2,200円 bowls say 国産牛, which means cattle raised in Japan and is a completely different and much weaker claim: any breed, any dairy cross, no wagyu grading implied. Both terms are legitimate and the shop is not hiding anything — it prints the distinction on every line — but the shop NAME advertises the better one, and a visitor ordering the cheapest bowl under that sign is not eating what the sign says. That is the single most useful thing on this menu and it is invisible in the English rendering, which drops the bracket contents to \"Japanese Beef\". ⚠ DIETARY PICTURE, AND IT IS SHORT: five beef bowls, no non-meat option of any kind, so this is simply not a shop a vegetarian can use. For gluten the answer is ask-but-assume-no: the rice under the beef is naturally gluten-free, but レアステーキ重 and 焼肉丼 are both finished with a tare, and Japanese steak and yakiniku sauces are soy-based, which is wheat. Nobody publishes an allergen sheet. ⚠ FOUR OF THE FIVE BOWLS ARE SERVED RARE — レアステーキ重 means the beef is deliberately undercooked, which is a normal and safe preparation in Japan for whole-muscle beef but is worth knowing if you are pregnant, immunocompromised, or simply not expecting it. ⭐ ONE TRANSLATION TO DISTRUST: Tabelog's English calls the 3,500円 cut \"Brisket\". The Chinese listing prints 肋條（カルビ） and the Korean prints 갈비 — カルビ is SHORT RIB, not brisket. Different cut, different fat content, different thing. ON THE LISTING: no 更新日, prices undated; recorded average spend 3,000–3,999円, which is consistent with the middle of this list. Open 11:00–21:00, closed Thursdays, 16 seats, 浅草1-34-6 大阪屋ビル 1F. 重 in these names is the lacquered box the rice comes in, not a size.",
+  "last_checked": "2026-09-10",
+  "items": [
+   {
+    "ja": "最高級シャトーブリアン重【黒毛和牛シャトーブリアン使用】",
+    "romaji": "saikōkyū Shatōburian jū (kuroge wagyū Shatōburian shiyō)",
+    "en": "Top-grade chateaubriand box — the centre cut of the fillet, the most expensive single item in this batch of research",
+    "price": "6,600円",
+    "section": "レアステーキ重 Rare Steak Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "BEEF, and genuinely 黒毛和牛 as stated. シャトーブリアン is the thick middle section of the tenderloin, the scarcest cut on the animal, which is what the price is for. Marked ask on gluten because the tare over a レアステーキ重 is conventionally soy-based; the rice and the beef themselves carry no wheat. Served RARE.",
+    "dish_key": "chateaubriand_ju"
+   },
+   {
+    "ja": "とろけるヒレステーキ重【黒毛和牛ヒレ使用】",
+    "romaji": "torokeru hire sutēki jū (kuroge wagyū hire shiyō)",
+    "en": "Melting fillet steak box — the same tenderloin muscle as the chateaubriand but not the centre cut, for 1,100円 less",
+    "price": "5,500円",
+    "section": "レアステーキ重 Rare Steak Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "BEEF, 黒毛和牛. ヒレ is the whole tenderloin; the chateaubriand above is cut from the middle of it — so this is the same muscle at a lower price, which is the more sensible order of the two. Soy-based tare assumed. Served RARE.",
+    "dish_key": "hire_steak_ju"
+   },
+   {
+    "ja": "上レアステーキ重【黒毛和牛カルビ使用】",
+    "romaji": "jō rea sutēki jū (kuroge wagyū karubi shiyō)",
+    "en": "Premium rare steak box, made with wagyu short rib",
+    "price": "3,500円",
+    "section": "レアステーキ重 Rare Steak Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ TABELOG'S ENGLISH CALLS THIS BRISKET. IT IS NOT. カルビ is SHORT RIB — the Chinese listing prints 肋條（カルビ） and the Korean prints 갈비, both short rib. It is a fattier cut than the two fillets above, which is why it costs less, not a lesser grade: this is still 黒毛和牛. BEEF, served rare, soy-based tare assumed.",
+    "dish_key": "jo_rare_steak_ju"
+   },
+   {
+    "ja": "レアステーキ重【国産牛うちもも使用】",
+    "romaji": "rea sutēki jū (kokusan gyū uchimomo shiyō)",
+    "en": "Rare steak box made with domestic beef top round — the entry bowl, and the first one that is not wagyu",
+    "price": "2,500円",
+    "section": "レアステーキ重 Rare Steak Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "⚠ 国産牛 ≠ 黒毛和牛。READ THE BRACKET. 国産牛 means only that the animal was raised in Japan — any breed, including dairy crosses — and carries none of the wagyu grading the shop name advertises. うちもも is the inner thigh, a very lean cut, which is a different eating experience from the fillets above as well as a different grade. BEEF, rare, soy tare assumed.",
+    "dish_key": "rare_steak_ju_kokusan"
+   },
+   {
+    "ja": "焼肉丼【国産牛カルビ使用】",
+    "romaji": "yakiniku don (kokusan gyū karubi shiyō)",
+    "en": "Yakiniku rice bowl with domestic beef short rib — the only cooked-through bowl on the list",
+    "price": "2,200円",
+    "section": "焼肉丼 Yakiniku Rice Bowl",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "国産牛, not wagyu — same caveat as the bowl above. This is the one item that is grilled rather than served rare, so it is the choice for anyone who does not want undercooked beef. ⚠ Yakiniku tare is soy, sugar, mirin and often sesame: assume WHEAT and SESAME.",
+    "dish_key": "yakiniku_don"
+   }
+  ]
  }
 }
