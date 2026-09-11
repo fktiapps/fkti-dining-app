@@ -3214,5 +3214,25 @@
     "dish_key": "sara_wantan"
    }
   ]
+ },
+ "tokyo_kuwasaru_asakusa_saryo_k": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13175752/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. The listing gives 東京都台東区浅草5-20-3, cuisine 日本料理 / 蕎麦, and an average spend of ¥5,000–5,999 — which is the one genuinely informative number here. A soba house charging six thousand yen a head is not selling bowls of かけ; at that price this is a コース house, soba arriving as one seat in a multi-course meal. ⚠ THAT MATTERS MORE TO A COELIAC THAN THE MISSING MENU DOES. A set course removes the ability to order around a problem: you are served what the kitchen has planned, the soba is conventionally 二八 (20% wheat) unless the shop declares 十割, and the accompanying 出汁 and かえし carry both fish and wheat soy. A course house is also the setting where a dietary request must be made at BOOKING rather than on arrival, because the ingredients are bought to a set menu. No prices, no dish names and no allergen statement are published anywhere Tabelog exposes.",
+  "last_checked": "2026-09-11",
+  "items": []
+ },
+ "tokyo_sakasakana_zuburoku": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13216303/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都台東区浅草3-34-3; average spend ¥4,000–4,999; cuisine 居酒屋. The name 酒肴ずぶろく is literally \"sake and the food you eat with it\" — a drink-led counter. Same structural reading as any izakaya: no stable published list, and dashi and wheat-soy under nearly every plate. ⚠ The one category-specific note worth keeping is that a 肴-focused house leans on 塩辛, 干物 and 刺身 — salted and dried seafood — which are gluten-free in themselves but arrive with a soy dish beside them, so the useful question is whether tamari can be brought or requested rather than which dish to order.",
+  "last_checked": "2026-09-11",
+  "items": []
  }
 }

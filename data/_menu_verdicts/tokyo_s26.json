@@ -4355,5 +4355,15 @@
     "dish_key": "buta_kara_meshi"
    }
   ]
+ },
+ "tokyo_asakusa_ikutaan": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13255913/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都台東区花川戸1-6-4; average spend under ¥999; cuisine ラーメン, and the sub-¥999 band is the informative part: this is a cheap counter bowl shop. ⚠ At that price point a kitchen is usually buying its noodles and often its タレ in rather than making them, which means the shop itself frequently cannot answer an allergen question — you get \"I don’t know\" rather than \"no\". 中華麺 is wheat; the broth at this price is near-certainly a bought concentrate carrying soy and usually pork or chicken extract.",
+  "last_checked": "2026-09-11",
+  "items": []
  }
 }

@@ -5341,5 +5341,25 @@
     "dish_key": "oden_dashi_curry"
    }
   ]
+ },
+ "tokyo_nitenmon_yabu": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13010504/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. What the listing does establish: 東京都台東区花川戸1-15-7, MZ二天門1F, 21 seats (tables only), 11:00–17:00 daily with no fixed closing day, average spend ¥1,000–1,999, and a cuisine triple of 蕎麦 / 天丼 / カツ丼. ⚠ THAT TRIPLE IS THE WHOLE DIETARY STORY AND IT IS BAD IN THREE SEPARATE WAYS. 藪 (yabu) names one of the three classical Edo soba lineages, and hand-cut soba in that tradition is conventionally 二八 — 20% WHEAT flour as the binder. The shop declares no flour ratio, so the noodles are \"no\", not \"ask\". 天丼 is tempura over rice: wheat batter. カツ丼 is a crumbed pork cutlet: panko, which is bread. There is no line of this menu that a coeliac can reach without a declaration the shop has never published. For a vegan the picture is equally closed — the つゆ at any soba counter is かえし (soy sauce) plus katsuo dashi, and both remaining dishes are pork or seafood. Worth a phone call only if someone is prepared to ask about 十割 in Japanese.",
+  "last_checked": "2026-09-11",
+  "items": []
+ },
+ "tokyo_shuzo": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1304/A130401/13159181/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都新宿区西新宿7-19-22 新宿ダイカンプラザシティ1F; average spend ¥4,000–4,999; cuisine 日本料理 / 居酒屋. ⚠ 居酒屋 IS THE HARDEST CATEGORY IN THIS DATASET TO RECORD HONESTLY, AND IT IS WORTH SAYING WHY RATHER THAN LEAVING A BLANK. An izakaya menu is thirty to sixty small plates that change with what came in, which is exactly why so many of them publish nothing — there is no stable list to publish. The dietary problem is structural rather than dish-by-dish: 出汁 (bonito) and 醤油 (wheat-brewed soy) are the two seasonings that underlie nearly every plate, including ones that look plain — 冷奴, おひたし, even the pickles — so a coeliac or vegan cannot pick safe-looking items off an izakaya menu by sight. 酒蔵 in the name signals a sake-forward house, which usually means the food is built to accompany drink: salt-grilled fish, pickles and simmered dishes, all of them soy-seasoned.",
+  "last_checked": "2026-09-11",
+  "items": []
  }
 }

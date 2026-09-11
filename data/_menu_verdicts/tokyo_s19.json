@@ -3412,5 +3412,15 @@
     "dish_key": "kansai_okonomiyaki"
    }
   ]
+ },
+ "tokyo_torisen": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13082586/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. ⚠ THIS LISTING ALSO CARRIES TABELOG’S RED 「掲載保留」 (LISTING ON HOLD) BADGE, WHICH IS A SEPARATE AND MORE IMPORTANT FINDING THAN THE MISSING MENU. On hold means Tabelog has stopped standing behind the listing — typically because the shop has moved, closed, or stopped responding — and the site explains it with boilerplate reading \"may have relocated or permanently closed\". ⚠ THAT SENTENCE IS BOILERPLATE, NOT A CLOSURE REPORT: it appears verbatim on every on-hold listing, and an earlier pass of this dataset mis-read it as a closure marker for this very shop. 鳥せん is NOT recorded as closed here. What is true is that its operating status is unconfirmed and should be checked by phone before anyone is sent. 東京都台東区浅草3-35-9; cuisine 日本料理; average spend ¥3,000–3,999. 鳥 in the name points at a chicken house, which would put it in the same 塩-or-タレ territory as a yakitori counter, but with no menu and no confirmed status that is inference rather than research.",
+  "last_checked": "2026-09-11",
+  "items": []
  }
 }

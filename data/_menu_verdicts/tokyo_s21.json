@@ -2168,5 +2168,15 @@
     "dish_key": "lunch_set"
    }
   ]
+ },
+ "tokyo_kamameshi_mutsumi": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/tokyo/A1311/A131102/13003756/dtlmenu/"
+  ],
+  "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都台東区浅草3-32-4; cuisine 釜飯 / 日本料理; average spend ¥6,000–7,999. ⚠ KAMAMESHI IS ONE OF THE GENUINELY PROMISING CATEGORIES FOR A COELIAC AND IT IS WORTH RECORDING WHY, EVEN WITH NO MENU. It is rice cooked to order in an individual iron pot with its toppings and its seasoning stock — the base is rice, not noodles, not batter, and it comes with its own vessel, so cross-contact from other dishes is structurally lower than almost anything else in this batch. The problem is the stock: the rice is cooked in 出汁 seasoned with soy sauce, so the wheat is dissolved through the grain rather than sitting on top of it, and it cannot be removed after the fact. That makes this an ASK rather than a NO — a kitchen at ¥7,000 a head cooking each pot individually is in a position to use たまり or to season with salt if told at booking, which a ramen counter is not. Also the reason to book ahead: a kamameshi takes 20–30 minutes to cook, so the substitution has to be agreed before the pot goes on. For a vegan the dashi is the same obstacle and the toppings are typically chicken, seafood or both. No dish names or prices published.",
+  "last_checked": "2026-09-11",
+  "items": []
  }
 }
