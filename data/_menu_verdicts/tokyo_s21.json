@@ -2178,5 +2178,258 @@
   "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都台東区浅草3-32-4; cuisine 釜飯 / 日本料理; average spend ¥6,000–7,999. ⚠ KAMAMESHI IS ONE OF THE GENUINELY PROMISING CATEGORIES FOR A COELIAC AND IT IS WORTH RECORDING WHY, EVEN WITH NO MENU. It is rice cooked to order in an individual iron pot with its toppings and its seasoning stock — the base is rice, not noodles, not batter, and it comes with its own vessel, so cross-contact from other dishes is structurally lower than almost anything else in this batch. The problem is the stock: the rice is cooked in 出汁 seasoned with soy sauce, so the wheat is dissolved through the grain rather than sitting on top of it, and it cannot be removed after the fact. That makes this an ASK rather than a NO — a kitchen at ¥7,000 a head cooking each pot individually is in a position to use たまり or to season with salt if told at booking, which a ramen counter is not. Also the reason to book ahead: a kamameshi takes 20–30 minutes to cook, so the substitution has to be agreed before the pot goes on. For a vegan the dashi is the same obstacle and the toppings are typically chicken, seafood or both. No dish names or prices published.",
   "last_checked": "2026-09-11",
   "items": []
+ },
+ "tokyo_ramen_jiro_shinjuku_kota": {
+  "verified": "verified",
+  "confidence": "high",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1304/A130401/13001044/dtlmenu/"
+  ],
+  "price_note": "Full 22-row menu with prices, read off Tabelog in four locales (en/tw/kr/th). 東京都新宿区西新宿7-5-5 1F; 18 seats (a 12-seat U-shaped counter plus a four-top and a two-top); 11:00–23:00, L.O. 22:30, closed only on New Year’s Day; average spend ¥1,000–1,999 over 1,486 ratings. ⚠ THIS RECORD IS MARKED VERIFIED AND HIGH CONFIDENCE WHILE SAYING NO TO EVERYTHING, WHICH IS UNUSUAL ENOUGH TO EXPLAIN. Almost every shop in this dataset earns an \"ask\" somewhere, because a shop that declares nothing might still have something safe. 二郎 is the rare case where the category is airtight: the dish is defined by thick wheat noodles in a pork-bone broth cut with pork back fat and soy カエシ, there is no second broth, no second noodle and no non-pork bowl anywhere in the format. Every one of the 15 noodle rows is the same bowl at a different size or pork count. ⚠ THE THREE FREE TOPPING ROWS ARE THE PART WORTH READING CAREFULLY, BECAUSE THEY LOOK LIKE OPTIONS AND ARE NOT. This is the famous コール — the call you give as your bowl is made. 「ヤサイ」 (row 16) adds boiled bean sprouts and cabbage, and a vegan reading it as a vegetable bowl would be wrong: the vegetables are piled onto a pork broth. 「アブラ」 (row 18) is 背脂 — PORK BACK FAT, spooned on — which the English \"Back Fat\" states plainly but which reads as a texture option rather than an animal one. 「カラメ」 (row 17) is more soy カエシ, i.e. more wheat. So the three knobs a diner is invited to turn adjust, in order: vegetables on pork broth, extra pork fat, and extra wheat. None of them opens a door. ⚠ TWO LOCALE ERRORS WORTH RECORDING. Rows 9, 10 and part of 12 are rendered 냉면 / 冷麵 — naengmyeon, COLD noodles — in Korean and Chinese, but つけ麺 is not a cold-noodle dish; the noodles are dipped into a hot concentrated broth. And row 20 in Thai is ไข่เยี่ยวม้า, CENTURY EGG, where the dish is a soy-simmered quail egg. Neither error changes the dietary answer here, but both are the kind that would matter at a shop with something safe on the menu.",
+  "last_checked": "2026-09-11",
+  "items": [
+   {
+    "ja": "ラーメン",
+    "romaji": "ramen",
+    "en": "Ramen",
+    "price": "JPY 1,000",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The base bowl. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "豚入りラーメン",
+    "romaji": "buta-iri ramen",
+    "en": "Ramen with extra pork",
+    "price": "JPY 1,400",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "豚 here means extra slabs of the house chashu, braised in soy. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "buta_ramen"
+   },
+   {
+    "ja": "豚Wラーメン",
+    "romaji": "buta W ramen",
+    "en": "Ramen with double pork",
+    "price": "JPY 1,800",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "W = double the pork portion. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "buta_w_ramen"
+   },
+   {
+    "ja": "大ラーメン",
+    "romaji": "dai ramen",
+    "en": "Large ramen",
+    "price": "JPY 1,100",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "大盛 — a larger portion of the same noodles. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "dai_ramen"
+   },
+   {
+    "ja": "大豚入りラーメン",
+    "romaji": "dai buta-iri ramen",
+    "en": "Large ramen with pork",
+    "price": "JPY 1,500",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Large portion with extra pork. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "dai_buta_ramen"
+   },
+   {
+    "ja": "大豚Wラーメン",
+    "romaji": "dai buta W ramen",
+    "en": "Large ramen with double pork",
+    "price": "JPY 1,900",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Large portion, double pork. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "dai_buta_w_ramen"
+   },
+   {
+    "ja": "つけ麺",
+    "romaji": "tsukemen",
+    "en": "Tsukemen (dipping noodles)",
+    "price": "JPY 1,200",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The Korean gives only 국수 (\"noodles\") and elsewhere on this menu renders つけ麺 as 냉면 (cold noodles) — both wrong. Tsukemen noodles are served separate from a HOT, concentrated dipping broth. That concentration matters: the soy カエシ is reduced, so the wheat is denser per mouthful than in the ramen. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "豚入りつけ麺",
+    "romaji": "buta-iri tsukemen",
+    "en": "Tsukemen with pork",
+    "price": "JPY 1,600",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tsukemen with extra chashu. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "buta_tsukemen"
+   },
+   {
+    "ja": "豚Wつけ麺",
+    "romaji": "buta W tsukemen",
+    "en": "Tsukemen with double pork",
+    "price": "JPY 2,000",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Korean renders this 냉면 — naengmyeon, cold noodles — which is the wrong dish; the dip is hot. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "buta_w_tsukemen"
+   },
+   {
+    "ja": "大つけ麺",
+    "romaji": "dai tsukemen",
+    "en": "Large tsukemen",
+    "price": "JPY 1,300",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Both tw (大盛冷麵) and kr (대盛 냉면) call this a COLD noodle dish. It is not. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "dai_tsukemen"
+   },
+   {
+    "ja": "大豚入りつけ麺",
+    "romaji": "dai buta-iri tsukemen",
+    "en": "Large tsukemen with pork",
+    "price": "JPY 1,700",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Large tsukemen with extra pork. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "dai_buta_tsukemen"
+   },
+   {
+    "ja": "大豚Wつけ麺",
+    "romaji": "dai buta W tsukemen",
+    "en": "Large tsukemen with double pork",
+    "price": "JPY 2,100",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The largest bowl on the menu. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "dai_buta_w_tsukemen"
+   },
+   {
+    "ja": "学割ラーメン",
+    "romaji": "gakuwari ramen",
+    "en": "Student discount ramen",
+    "price": "JPY 900",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The same bowl at a student price — ¥100 under the standard ramen. Student ID presumably required; the shop does not say. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "gakuwari_ramen"
+   },
+   {
+    "ja": "特盛ラーメン（2玉〜5玉）",
+    "romaji": "tokumori ramen (2-5 tama)",
+    "en": "Extra-large ramen, 2 to 5 portions of noodles",
+    "price": "JPY 1,400",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 玉 is a portion of noodles, so this row offers between TWO AND FIVE portions in one bowl at a single price — the quantity 二郎 is known for. Five portions of thick wheat noodle is an extreme gluten load even by ramen standards. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "tokumori_ramen"
+   },
+   {
+    "ja": "特盛つけ麺（2玉〜5玉）",
+    "romaji": "tokumori tsukemen (2-5 tama)",
+    "en": "Extra-large tsukemen, 2 to 5 portions",
+    "price": "JPY 1,600",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "The tsukemen equivalent, two to five noodle portions. Jiro noodles are exceptionally thick, dense 中華麺 — wheat with かん水 — and the broth is pork bone boiled with pork back fat and seasoned with a soy カエシ. Wheat and pork in every bowl, unconditionally.",
+    "dish_key": "tokumori_tsukemen"
+   },
+   {
+    "ja": "ヤサイ（少なめ・増し）",
+    "romaji": "yasai (sukuname / mashi)",
+    "en": "Vegetables — less or more (free)",
+    "price": "JPY 0",
+    "section": "Free Topping Service",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ THE ROW MOST LIKELY TO MISLEAD A VEGAN ON THIS MENU. Free vegetables, called at the counter, and boiled bean sprouts and cabbage are plants — but they are piled ON TOP OF a pork-bone broth in a bowl of wheat noodles, and they are not served separately. There is no vegetable bowl here; there is a pork bowl with vegetables on it. Recorded no rather than ask, because the item does not exist independently of the bowl.",
+    "dish_key": "yasai_call"
+   },
+   {
+    "ja": "カラメ（少なめ・増し）",
+    "romaji": "karame (sukuname / mashi)",
+    "en": "Extra tare / soy seasoning — less or more (free)",
+    "price": "JPY 0",
+    "section": "Free Topping Service",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ The English \"Soy Sauce ... Less More\" is accurate and is the clearest label on the menu: カラメ is the soy カエシ, so this call adds WHEAT. Worth noting that the reverse — 「カラメ少なめ」 — reduces but never removes it, since the broth is already seasoned before the call is taken.",
+    "dish_key": "karame_call"
+   },
+   {
+    "ja": "アブラ（少なめ・増し）",
+    "romaji": "abura (sukuname / mashi)",
+    "en": "Back fat — less or more (free)",
+    "price": "JPY 0",
+    "section": "Free Topping Service",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ 背脂 — PORK BACK FAT, spooned over the bowl. The English \"Back Fat\" is honest, but on a list of free toppings alongside \"vegetables\" and \"garlic\" it reads as a texture setting rather than as an animal product. It is pork.",
+    "dish_key": "abura_call"
+   },
+   {
+    "ja": "ニンニク（少なめ・増し）",
+    "romaji": "ninniku (sukuname / mashi)",
+    "en": "Garlic — less or more (free)",
+    "price": "JPY 0",
+    "section": "Free Topping Service",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "⚠ The one call that is genuinely just itself: raw crushed garlic, no wheat and no animal product. It is recorded gf/vegan on its own merits — but it is only ever added to a bowl that is neither, so it changes nothing in practice. 「ニンニク入れますか？」 is the question every 二郎 customer is asked.",
+    "dish_key": "ninniku_call"
+   },
+   {
+    "ja": "うずら卵煮",
+    "romaji": "uzura tamago ni",
+    "en": "Simmered quail egg",
+    "price": "JPY 100",
+    "section": "Paid Topping",
+    "gf": "no",
+    "vegan": "no",
+    "note": "⚠ Thai renders this ไข่เยี่ยวม้า — CENTURY EGG — which is a different preparation entirely; en, tw (鵪鶉煮蛋) and kr (메추리알 조림) all agree it is a simmered quail egg. Simmered means simmered in soy, so wheat; egg, so not vegan.",
+    "dish_key": "uzura_tamago"
+   },
+   {
+    "ja": "メンマ",
+    "romaji": "menma",
+    "en": "Menma (fermented bamboo shoot)",
+    "price": "JPY 200",
+    "section": "Paid Topping",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "⚠ THE ONLY PAID TOPPING WITH ANY ROUTE TO A YES, WHICH IS WHY IT IS AN ASK RATHER THAN A NO. Menma is lacto-fermented bamboo shoot — a plant, and gluten-free as a raw material. The seasoning is the question: ramen menma is normally simmered in a soy broth and at many shops that broth carries pork or bonito. Not orderable apart from the bowl in any case.",
+    "dish_key": "menma"
+   },
+   {
+    "ja": "豚追加",
+    "romaji": "buta tsuika",
+    "en": "Extra pork",
+    "price": "JPY 400",
+    "section": "Paid Topping",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Additional slabs of the house chashu, braised in soy and mirin. Pork and wheat.",
+    "dish_key": "buta_tsuika"
+   }
+  ]
  }
 }
