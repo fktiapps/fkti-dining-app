@@ -54,6 +54,14 @@ construction project, not an ingredient carrier. The resulting textures are corr
 different: Osaka is described as fluffy/cakey throughout; Hiroshima delivers contrasting
 textures in the same bite — crisp noodle, soft steamed cabbage, thin egg skin.
 
+**A confirmed exception to the build order above, worth flagging rather than treating the
+sequence as universal**: Acchan (found during the full-rollout research pass) places the
+cabbage mountain onto the griddle BEFORE the crepe, the reverse of the standard
+crepe-then-cabbage order documented in steps 1-2. It's a single, sourced shop-level
+deviation, not evidence the sequence itself is loosely held — but it's exactly the kind of
+"this shop does it differently, and here's specifically how" fact this document exists to
+capture, rather than smoothing it into "the standard build" for the sake of a clean rule.
+
 ═══════════════════════════════════════════════════════════
 2. THE CREPE — flour, water, and the ABSENCE of mountain yam
 ═══════════════════════════════════════════════════════════
@@ -332,6 +340,16 @@ sourced differentiation for 7 stalls took one short research pass, versus the mo
 scattered effort needed to build the same depth across 88 independent shops spread across
 the city. Worth weighing as a candidate to prioritize or lead with in the pilot (§ pilot
 scope in OKONOMIYAKI_SCHEMA.md), not necessarily as a replacement for it.
+
+**A confirmed regional sub-style: 府中焼き (Fuchu-yaki).** Found independently at two shops
+during the full-rollout research pass (Junia, Acchan) rather than surfacing from a single
+source — this is a real, named sub-style specific to Fuchu, a city in Hiroshima Prefecture
+(not to be confused with the Fuchu near Tokyo), not a shop-level idiosyncrasy. The defining
+differences from standard Hiroshima-city okonomiyaki: **no bean sprouts** in the build, and
+**minced beef fat/offcuts (ミンチ) used instead of sliced pork belly** as the default protein
+— a genuinely different protein-and-format choice, not a garnish variation. Worth watching
+for at other shops during the discovery phase, since a second sub-style suggests it may be
+more widespread within the prefecture than two confirmed sightings implies.
 
 ═══════════════════════════════════════════════════════════
 11. CULTURAL CHARACTER & IDENTITY — what the dish MEANS, not just what it contains

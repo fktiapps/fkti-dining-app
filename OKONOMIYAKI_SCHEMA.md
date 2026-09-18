@@ -170,7 +170,32 @@ less settled technical grounding behind them. Flagging honestly rather than pres
 them as more solid than they are: expect these to change once real shop research starts
 surfacing what actually varies interestingly from place to place.
 
-## The pass (once this schema is approved)
+## Status update, 2026-09-20 — pilot superseded by a full rollout
+
+Greg's directive (2026-09-19 night): "roll out the pilot to all of the Okonomiyaki
+restaurants in Hiroshima... Then do a comprehensive search inside Hiroshima and research all
+of the Okonomiyaki places that come up. Don't wait for my go-ahead on anything." Executed
+autonomously overnight. Outcome: all ~88 pre-existing Hiroshima okonomiyaki records now carry
+an `okonomiyaki` object (the 6-shop pilot below, plus every remaining record, researched in
+batches with the same sourcing discipline — no padding on shops where only thin material
+existed; several genuinely thin entries are marked `confidence:'none'` rather than faked).
+The Okonomimura cluster ended up split across two waves: 7 stalls differentiated during the
+pilot itself (§10), plus 4 more (Hiro-chan, Teppei Ekimae, Suigun, Sho-chan) discovered not
+yet present as records and added fresh during the rollout. The building-wide shared-Sun-
+Foods-sauce fact held up across the full set, not just the pilot 7.
+
+A follow-on discovery pass (new shops not yet in the dataset at all) added 5 more verified,
+real, currently-operating shops found via web search rather than already being in the 88
+(Okonomi House Nonnon, Yoriya Ujina-ten, Okonomiyaki Hamachan, Kadoshima, Teppan Niichi) —
+each existence-verified via direct fetch before being written, per this app's standing rule.
+Hiroshima Prefecture has on the order of 800-1,300+ okonomiyaki shops by various counts, so
+this discovery pass is necessarily a sample, not a census — flagged honestly rather than
+implied to be exhaustive. Two records (Aohige Honten, Steak Aohige) were found to be
+mistagged `cuisine_type:'okonomiyaki'` while actually being wagyu steakhouses with no
+okonomiyaki on the menu at all; corrected to `'other'` so they don't surface under the new
+Hiroshima-only "Okonomiyaki" filter pill.
+
+## The pass (historical — pilot scope as originally scoped, superseded above)
 
 **Pilot scope, updated 2026-09-19 (Greg: "both")** — two tracks in the same pilot:
 
