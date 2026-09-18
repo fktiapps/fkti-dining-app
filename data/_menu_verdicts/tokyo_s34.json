@@ -2076,5 +2076,105 @@
     "dish_key": "katarana"
    }
   ]
+ },
+ "tokyo_shinjuku_dialogue": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://matcha-jp.com/jp/9744"
+  ],
+  "price_note": "Found via Yahoo JP search, the record’s own listed site is Instagram/Facebook only. matcha-jp.com is a JA-language culture/travel publication; this article is DATED 2020-03/06 (SDGs donation project, since-changed menu per the article’s own footnote), so treat pricing as historical, not current — confidence medium rather than high for that reason. The cafe states explicitly 動物性の食材は使わず (no animal-derived ingredients used) for its food, matching the record’s existing vegan:options. IMPORTANT GF CROSSOVER: the article names the bento’s seasonings directly — 調味料は、醤油や味噌をベースとした (seasoning is soy-sauce and miso based) — so per this project’s dashi/soy-sauce rule, a VEGAN dish here is still wheat by default on the gf axis; being 100% plant-based does not make it gluten-free. Advance notice accommodates oriental-vegetarian (no allium) diners per the article.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "野菜弁当",
+    "romaji": "Yasai bento",
+    "en": "Daily-changing vegetable bento (5 rotating sides, e.g. carrot & broccoli in negi-miso dressing, shiitake and taro tatsuta-age)",
+    "price": "800yen",
+    "section": "フード",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Explicitly no animal ingredients (vegan). Seasoned with soy sauce and miso, which the project treats as wheat by default — vegan does not mean gluten-free here.",
+    "dish_key": "yasai_bento"
+   },
+   {
+    "ja": "味噌汁（弁当セット）",
+    "romaji": "Miso shiru (bento add-on)",
+    "en": "Miso soup, add-on to the vegetable bento",
+    "price": "200yen",
+    "section": "フード",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Miso itself is wheat by default per project convention; dashi base (bonito vs. kombu/vegetable) is not stated, so vegan is not confirmed either way.",
+    "dish_key": "miso_shiru_addon"
+   },
+   {
+    "ja": "甘酒ティーラテ",
+    "romaji": "Amazake tea latte",
+    "en": "House-made amazake (fermented rice) and soy milk tea latte",
+    "price": "650yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Named ingredients are rice-based amazake and soy milk, neither wheat — but not stated as confirmed wheat-free by the shop, so ask rather than gf. No dairy or other animal ingredient.",
+    "dish_key": "amazake_tea_latte"
+   }
+  ]
+ },
+ "tokyo_yoinshoku_yo_inshoku": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://ameblo.jp/choco-daisuki2/entry-12697344768.html",
+   "https://ameblo.jp/oishi-jinboucyo/entry-12705147251.html"
+  ],
+  "price_note": "Found via Yahoo JP search, the record’s own listed site is Instagram only. Two independent first-hand blog visits to this yōshoku (Japanese-Western) diner, each naming dishes and prices. Omurice-family dishes here are egg-wrapped rice with a ketchup or curry-style sauce; unlike monjayaki/tempura/karaage this is NOT one of the project’s automatic wheat-default categories, and neither post states the sauce recipe, so gf is ask rather than no or gf.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "オムライス",
+    "romaji": "Omurice",
+    "en": "Rice omelette (ketchup-style)",
+    "price": "800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg dish; sauce recipe (ketchup vs. flour-thickened demi-glace) not stated.",
+    "dish_key": "omurice"
+   },
+   {
+    "ja": "オムメキシカンライス",
+    "romaji": "Omu Mexican rice",
+    "en": "Rice omelette, Mexican-style filling (large size +150yen)",
+    "price": "800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg dish; filling/seasoning not detailed enough to confirm either way.",
+    "dish_key": "omu_mexican_rice"
+   },
+   {
+    "ja": "タンドリーチキン",
+    "romaji": "Tandoori chicken",
+    "en": "Tandoori chicken",
+    "price": "450yen",
+    "section": "サイド",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Yogurt-spice marinade is often flour-free, but a flour dredge before cooking is common at Japanese yōshoku diners and not confirmed either way here.",
+    "dish_key": "tandoori_chicken"
+   },
+   {
+    "ja": "オムドライライス",
+    "romaji": "Omu dry rice",
+    "en": "Rice omelette, dry-curry style filling",
+    "price": "800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Curry-style filling; roux base not confirmed wheat-free or wheat-based.",
+    "dish_key": "omu_dry_rice"
+   }
+  ]
  }
 }

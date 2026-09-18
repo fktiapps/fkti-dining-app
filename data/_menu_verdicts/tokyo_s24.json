@@ -2795,5 +2795,28 @@
   "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. 東京都千代田区神田三崎町2-19-9 大曽根ビル1F; average spend ¥1,000–1,999; cuisine 中華. A Kanda-Misakicho Chinese house at canteen prices; the 上海 in the name is a style claim, and Shanghainese cooking leans harder on 醤油 and 老酒 than Cantonese does — red-braising (紅焼) is a soy-and-sugar reduction and is a signature technique rather than an occasional one. ⚠ That makes the wheat-soy exposure higher here than the generic Chinese tag would suggest, not lower. 小籠包, if served, is a wheat wrapper around pork and a gelled pork stock. Nothing published.",
   "last_checked": "2026-09-11",
   "items": []
+ },
+ "tokyo_bistro_de_manila": {
+  "verified": "none",
+  "confidence": "low",
+  "sources": [
+   "https://www.noura0815.com/",
+   "https://www.hommage-arai.com/",
+   "https://www.facebook.com/pages/Bistro-de-Manila-ビストロ-デ-マニラ/212265605481193"
+  ],
+  "price_note": "Searched via Yahoo JP; the record’s listed site is Facebook only. Two candidate own-site-looking domains (noura0815.com, hommage-arai.com) surfaced in the search but BOTH are unrelated Asakusa French restaurants (confirmed by title and content — duck-focused French bistros, nothing Filipino) and were correctly not used. ikyu.com’s reservation page and a YouTube result were the other leads; neither yielded a priced menu within this search round. No sources array populated because nothing usable was actually read for this shop specifically.",
+  "last_checked": "2026-09-17",
+  "items": []
+ },
+ "tokyo_this_is_crepe": {
+  "verified": "none",
+  "confidence": "low",
+  "sources": [
+   "https://www.ubereats.com/jp/store/this-is-crepe-ティスイズクレープ/P7CUuzlWW02g2C_4OUejAQ",
+   "https://www.instagram.com/thisiscrepe/"
+  ],
+  "price_note": "Searched via Yahoo JP; the record’s listed site is Instagram only. A Uber Eats storefront listing exists but is a JavaScript-rendered single-page app that returns no content to a plain fetch; app.menu.jp and Retty listings were the other candidates and were not checked in depth this round due to time. No sources array populated because nothing usable was actually read.",
+  "last_checked": "2026-09-17",
+  "items": []
  }
 }

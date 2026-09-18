@@ -163830,5 +163830,281 @@
     "dish_key": "pairing_course"
    }
   ]
+ },
+ "tokyo_itameshi_shokudo_apero_s": {
+  "verified": "partial",
+  "confidence": "low",
+  "sources": [
+   "https://okamooo.jp/archives/10947678.html"
+  ],
+  "price_note": "Found via Yahoo JP search after the record’s listed site (Instagram) turned up no menu. A personal blog’s first-hand lunch-visit post (dated 2025-12-08) names one of five rotating lunch specials and its price; the other four were not named. No first-party site or shop-managed aggregator with pricing was found in this round, so this is thin: one dish, one visit, one source. Lunch includes unlimited focaccia (フォカッチャの食べ放題) per the post, which is itself wheat bread and worth knowing for a traveler even though it is not a priced menu item.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "ネオミラノ風ドリア",
+    "romaji": "Neo-Milano fu doria",
+    "en": "Neo-Milan style rice doria (baked rice gratin) with spiced cheese topping",
+    "price": "1000yen",
+    "section": "ランチ",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Doria is conventionally built on a béchamel-style sauce (wheat roux); cheese-based, not vegan. Served with all-you-can-eat focaccia (wheat bread) on the side.",
+    "dish_key": "neo_milano_doria"
+   }
+  ]
+ },
+ "tokyo_c_est_ouf": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://dancyu.jp/read/2025_00009947.html"
+  ],
+  "price_note": "ダンチュ (dancyu), a mainstream Japanese food magazine, ran a first-hand dining review with named dishes and prices — found via Yahoo JP search, the record’s own listed site is Instagram-only. Chef Kūmagai’s background is hotel French kitchens; several items are described as rotating with the season (the 前菜の盛り合わせ mixed-appetizer platter explicitly so), so treat this as a snapshot of the STYLE of cooking and representative pricing, not a fixed, current menu — hence partial rather than authoritative. Every named dish here contains an explicit wheat or animal component (baguette, pastry, croutons, cheese sauce, duck, egg, bacon), consistent with the shop’s existing gf/vegan:ask — nothing here supports raising either axis, and the one exception (オムレツと木の子クリーム) is marked ask specifically because its sauce is not described as flour-thickened the way the others are.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "前菜の盛り合わせ",
+    "romaji": "Zensai no moriawase",
+    "en": "Mixed appetizer platter (seasonal: liver pâté & baguette, cheese-spinach quiche, fried fish, ratatouille, mushroom marinade, roast duck)",
+    "price": "3000yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Baguette, pastry quiche and a fritto batter are all wheat; roast duck is meat. Composition rotates seasonally per the article.",
+    "dish_key": "zensai_moriawase"
+   },
+   {
+    "ja": "マリネサーモンパイ",
+    "romaji": "Marine saumon pie",
+    "en": "Marinated salmon pie (sour cream, mascarpone, horseradish)",
+    "price": "1200yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pastry pie shell is wheat; salmon is fish.",
+    "dish_key": "marine_saumon_pie"
+   },
+   {
+    "ja": "ウフモレ・ブルゴーニュ風",
+    "romaji": "Œuf en meurette",
+    "en": "Burgundy-style poached egg in red wine sauce, with parsley butter and croutons",
+    "price": "1100yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Croutons are wheat bread; recipe uses egg and bacon.",
+    "dish_key": "oeuf_en_meurette"
+   },
+   {
+    "ja": "オムレツと木の子クリーム",
+    "romaji": "Omelette to kinoko cream",
+    "en": "Omelette with mushroom cream sauce",
+    "price": "1800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg dish with a cream sauce; unlike the other items here the sauce is not described as flour-based, but that is not confirmed either.",
+    "dish_key": "omelette_kinoko_cream"
+   },
+   {
+    "ja": "麺Noir",
+    "romaji": "Men Noir",
+    "en": "Squid-ink and bamboo-charcoal noodles in creamy cheese sauce, no toppings (abura-men style)",
+    "price": "1400yen",
+    "section": "麽",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles (中太麽) in a dairy cheese sauce.",
+    "dish_key": "men_noir"
+   }
+  ]
+ },
+ "tokyo_shiten_keihan": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://eat.hangover.work/shibuya-shitenkeihan/"
+  ],
+  "price_note": "A blog post dedicated to this exact shop’s menu and prices (title: 「渋谷「獅天鵶飯」メニュー・値段」), found via Yahoo JP search — the record’s own listed site is Instagram-only. Singaporean/Hainanese chicken-rice restaurant. No item states its seasoning explicitly, so Chinese-kitchen defaults apply per project convention: soy sauce (wheat) is assumed present in stir-fries and dipping sauces unless a dish is a plain pickle or preserved egg with nothing else named. Nothing here supports raising gf above the shop’s existing \"no\".",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "台湾ピータン",
+    "romaji": "Taiwan pítan",
+    "en": "Preserved century egg",
+    "price": "580yen",
+    "section": "前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg product; no dressing or sauce named.",
+    "dish_key": "taiwan_pidan"
+   },
+   {
+    "ja": "季節青菜炒め",
+    "romaji": "Kisetsu seisai itame",
+    "en": "Seasonal stir-fried greens",
+    "price": "980yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Chinese-kitchen stir-fry defaults to a soy-sauce base (wheat); likely a vegetable-only dish but not confirmed meat-free.",
+    "dish_key": "seasonal_greens"
+   },
+   {
+    "ja": "獅天特製海老蟹炒",
+    "romaji": "Shiten tokusei ebi-kani itame",
+    "en": "Signature stir-fried shrimp and crab",
+    "price": "2400yen",
+    "section": "メイン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shellfish; stir-fry sauce defaults to soy sauce (wheat).",
+    "dish_key": "ebi_kani_itame"
+   },
+   {
+    "ja": "口水鶏",
+    "romaji": "Kōsuiji",
+    "en": "Sichuan-style cold chicken in chili oil sauce",
+    "price": "1300yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken; chili oil sauce commonly contains soy sauce.",
+    "dish_key": "kosuiji"
+   },
+   {
+    "ja": "玉子と木耳炒め",
+    "romaji": "Tamago to kikurage itame",
+    "en": "Stir-fried egg and wood-ear mushroom",
+    "price": "950yen",
+    "section": "メイン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg dish; stir-fry sauce defaults to soy sauce.",
+    "dish_key": "tamago_kikurage"
+   },
+   {
+    "ja": "シンガポールチキンライス",
+    "romaji": "Singapore chicken rice",
+    "en": "Hainanese-style chicken rice, the shop’s signature",
+    "price": "1500yen",
+    "section": "メイン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken; typically served with a soy-ginger and chili dipping sauce.",
+    "dish_key": "singapore_chicken_rice"
+   },
+   {
+    "ja": "中華ピクルス",
+    "romaji": "Chuka pikurusu",
+    "en": "Chinese-style pickles",
+    "price": "560yen",
+    "section": "前菜",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Plain vegetable pickle; no animal ingredient named, but the brine is not confirmed wheat-free.",
+    "dish_key": "chinese_pickles"
+   }
+  ]
+ },
+ "tokyo_shinjuku_dialogue": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://matcha-jp.com/jp/9744"
+  ],
+  "price_note": "Found via Yahoo JP search, the record’s own listed site is Instagram/Facebook only. matcha-jp.com is a JA-language culture/travel publication; this article is DATED 2020-03/06 (SDGs donation project, since-changed menu per the article’s own footnote), so treat pricing as historical, not current — confidence medium rather than high for that reason. The cafe states explicitly 動物性の食材は使わず (no animal-derived ingredients used) for its food, matching the record’s existing vegan:options. IMPORTANT GF CROSSOVER: the article names the bento’s seasonings directly — 調味料は、醤油や味噌をベースとした (seasoning is soy-sauce and miso based) — so per this project’s dashi/soy-sauce rule, a VEGAN dish here is still wheat by default on the gf axis; being 100% plant-based does not make it gluten-free. Advance notice accommodates oriental-vegetarian (no allium) diners per the article.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "野菜弁当",
+    "romaji": "Yasai bento",
+    "en": "Daily-changing vegetable bento (5 rotating sides, e.g. carrot & broccoli in negi-miso dressing, shiitake and taro tatsuta-age)",
+    "price": "800yen",
+    "section": "フード",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Explicitly no animal ingredients (vegan). Seasoned with soy sauce and miso, which the project treats as wheat by default — vegan does not mean gluten-free here.",
+    "dish_key": "yasai_bento"
+   },
+   {
+    "ja": "味噌汁（弁当セット）",
+    "romaji": "Miso shiru (bento add-on)",
+    "en": "Miso soup, add-on to the vegetable bento",
+    "price": "200yen",
+    "section": "フード",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Miso itself is wheat by default per project convention; dashi base (bonito vs. kombu/vegetable) is not stated, so vegan is not confirmed either way.",
+    "dish_key": "miso_shiru_addon"
+   },
+   {
+    "ja": "甘酒ティーラテ",
+    "romaji": "Amazake tea latte",
+    "en": "House-made amazake (fermented rice) and soy milk tea latte",
+    "price": "650yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Named ingredients are rice-based amazake and soy milk, neither wheat — but not stated as confirmed wheat-free by the shop, so ask rather than gf. No dairy or other animal ingredient.",
+    "dish_key": "amazake_tea_latte"
+   }
+  ]
+ },
+ "tokyo_yoinshoku_yo_inshoku": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://ameblo.jp/choco-daisuki2/entry-12697344768.html",
+   "https://ameblo.jp/oishi-jinboucyo/entry-12705147251.html"
+  ],
+  "price_note": "Found via Yahoo JP search, the record’s own listed site is Instagram only. Two independent first-hand blog visits to this yōshoku (Japanese-Western) diner, each naming dishes and prices. Omurice-family dishes here are egg-wrapped rice with a ketchup or curry-style sauce; unlike monjayaki/tempura/karaage this is NOT one of the project’s automatic wheat-default categories, and neither post states the sauce recipe, so gf is ask rather than no or gf.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "オムライス",
+    "romaji": "Omurice",
+    "en": "Rice omelette (ketchup-style)",
+    "price": "800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg dish; sauce recipe (ketchup vs. flour-thickened demi-glace) not stated.",
+    "dish_key": "omurice"
+   },
+   {
+    "ja": "オムメキシカンライス",
+    "romaji": "Omu Mexican rice",
+    "en": "Rice omelette, Mexican-style filling (large size +150yen)",
+    "price": "800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg dish; filling/seasoning not detailed enough to confirm either way.",
+    "dish_key": "omu_mexican_rice"
+   },
+   {
+    "ja": "タンドリーチキン",
+    "romaji": "Tandoori chicken",
+    "en": "Tandoori chicken",
+    "price": "450yen",
+    "section": "サイド",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Yogurt-spice marinade is often flour-free, but a flour dredge before cooking is common at Japanese yōshoku diners and not confirmed either way here.",
+    "dish_key": "tandoori_chicken"
+   },
+   {
+    "ja": "オムドライライス",
+    "romaji": "Omu dry rice",
+    "en": "Rice omelette, dry-curry style filling",
+    "price": "800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Curry-style filling; roux base not confirmed wheat-free or wheat-based.",
+    "dish_key": "omu_dry_rice"
+   }
+  ]
  }
 }

@@ -1527,5 +1527,170 @@
     "dish_key": "kale_parmesan"
    }
   ]
+ },
+ "tokyo_c_est_ouf": {
+  "verified": "partial",
+  "confidence": "high",
+  "sources": [
+   "https://dancyu.jp/read/2025_00009947.html"
+  ],
+  "price_note": "ダンチュ (dancyu), a mainstream Japanese food magazine, ran a first-hand dining review with named dishes and prices — found via Yahoo JP search, the record’s own listed site is Instagram-only. Chef Kūmagai’s background is hotel French kitchens; several items are described as rotating with the season (the 前菜の盛り合わせ mixed-appetizer platter explicitly so), so treat this as a snapshot of the STYLE of cooking and representative pricing, not a fixed, current menu — hence partial rather than authoritative. Every named dish here contains an explicit wheat or animal component (baguette, pastry, croutons, cheese sauce, duck, egg, bacon), consistent with the shop’s existing gf/vegan:ask — nothing here supports raising either axis, and the one exception (オムレツと木の子クリーム) is marked ask specifically because its sauce is not described as flour-thickened the way the others are.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "前菜の盛り合わせ",
+    "romaji": "Zensai no moriawase",
+    "en": "Mixed appetizer platter (seasonal: liver pâté & baguette, cheese-spinach quiche, fried fish, ratatouille, mushroom marinade, roast duck)",
+    "price": "3000yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Baguette, pastry quiche and a fritto batter are all wheat; roast duck is meat. Composition rotates seasonally per the article.",
+    "dish_key": "zensai_moriawase"
+   },
+   {
+    "ja": "マリネサーモンパイ",
+    "romaji": "Marine saumon pie",
+    "en": "Marinated salmon pie (sour cream, mascarpone, horseradish)",
+    "price": "1200yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pastry pie shell is wheat; salmon is fish.",
+    "dish_key": "marine_saumon_pie"
+   },
+   {
+    "ja": "ウフモレ・ブルゴーニュ風",
+    "romaji": "Œuf en meurette",
+    "en": "Burgundy-style poached egg in red wine sauce, with parsley butter and croutons",
+    "price": "1100yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Croutons are wheat bread; recipe uses egg and bacon.",
+    "dish_key": "oeuf_en_meurette"
+   },
+   {
+    "ja": "オムレツと木の子クリーム",
+    "romaji": "Omelette to kinoko cream",
+    "en": "Omelette with mushroom cream sauce",
+    "price": "1800yen",
+    "section": "メイン",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg dish with a cream sauce; unlike the other items here the sauce is not described as flour-based, but that is not confirmed either.",
+    "dish_key": "omelette_kinoko_cream"
+   },
+   {
+    "ja": "麺Noir",
+    "romaji": "Men Noir",
+    "en": "Squid-ink and bamboo-charcoal noodles in creamy cheese sauce, no toppings (abura-men style)",
+    "price": "1400yen",
+    "section": "麽",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat noodles (中太麽) in a dairy cheese sauce.",
+    "dish_key": "men_noir"
+   }
+  ]
+ },
+ "tokyo_shiten_keihan": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://eat.hangover.work/shibuya-shitenkeihan/"
+  ],
+  "price_note": "A blog post dedicated to this exact shop’s menu and prices (title: 「渋谷「獅天鵶飯」メニュー・値段」), found via Yahoo JP search — the record’s own listed site is Instagram-only. Singaporean/Hainanese chicken-rice restaurant. No item states its seasoning explicitly, so Chinese-kitchen defaults apply per project convention: soy sauce (wheat) is assumed present in stir-fries and dipping sauces unless a dish is a plain pickle or preserved egg with nothing else named. Nothing here supports raising gf above the shop’s existing \"no\".",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "台湾ピータン",
+    "romaji": "Taiwan pítan",
+    "en": "Preserved century egg",
+    "price": "580yen",
+    "section": "前菜",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Egg product; no dressing or sauce named.",
+    "dish_key": "taiwan_pidan"
+   },
+   {
+    "ja": "季節青菜炒め",
+    "romaji": "Kisetsu seisai itame",
+    "en": "Seasonal stir-fried greens",
+    "price": "980yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Chinese-kitchen stir-fry defaults to a soy-sauce base (wheat); likely a vegetable-only dish but not confirmed meat-free.",
+    "dish_key": "seasonal_greens"
+   },
+   {
+    "ja": "獅天特製海老蟹炒",
+    "romaji": "Shiten tokusei ebi-kani itame",
+    "en": "Signature stir-fried shrimp and crab",
+    "price": "2400yen",
+    "section": "メイン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shellfish; stir-fry sauce defaults to soy sauce (wheat).",
+    "dish_key": "ebi_kani_itame"
+   },
+   {
+    "ja": "口水鶏",
+    "romaji": "Kōsuiji",
+    "en": "Sichuan-style cold chicken in chili oil sauce",
+    "price": "1300yen",
+    "section": "前菜",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken; chili oil sauce commonly contains soy sauce.",
+    "dish_key": "kosuiji"
+   },
+   {
+    "ja": "玉子と木耳炒め",
+    "romaji": "Tamago to kikurage itame",
+    "en": "Stir-fried egg and wood-ear mushroom",
+    "price": "950yen",
+    "section": "メイン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Egg dish; stir-fry sauce defaults to soy sauce.",
+    "dish_key": "tamago_kikurage"
+   },
+   {
+    "ja": "シンガポールチキンライス",
+    "romaji": "Singapore chicken rice",
+    "en": "Hainanese-style chicken rice, the shop’s signature",
+    "price": "1500yen",
+    "section": "メイン",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Chicken; typically served with a soy-ginger and chili dipping sauce.",
+    "dish_key": "singapore_chicken_rice"
+   },
+   {
+    "ja": "中華ピクルス",
+    "romaji": "Chuka pikurusu",
+    "en": "Chinese-style pickles",
+    "price": "560yen",
+    "section": "前菜",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Plain vegetable pickle; no animal ingredient named, but the brine is not confirmed wheat-free.",
+    "dish_key": "chinese_pickles"
+   }
+  ]
+ },
+ "tokyo_suidobashi_mentsudan_san": {
+  "verified": "none",
+  "confidence": "low",
+  "sources": [
+   "https://tokyo-mentsudan.com/?page_id=153",
+   "https://r.gnavi.co.jp/3prczmwm0000/"
+  ],
+  "price_note": "NOT MERGED, ON PURPOSE — this is a chain-branch confusion catch, not a dead end. The record’s Tabelog id (13094345, A1310/A131003) places it in Bunkyo-ku near Hongo/Suidobashi, but the parent chain’s own site (tokyo-mentsudan.com) only exposes a page-ID-driven nav with no branch-specific menu reachable from this egress, and the one detailed priced menu found via Yahoo JP search — a Gnavi listing for 東京麺通団 with a full udon menu (~40 items, 4 sizes each) — carries a JSON-LD address of 西新宿7-9-15 (Nishi-Shinjuku), a DIFFERENT branch. Per this project’s own chain-branch rule (“take the branch page over the chain-wide page”), that menu was deliberately NOT used here even though it was fully priced and easy to transcribe. The chain is Sanuki-udon-specialist and near-certainly wheat-noodle-based at every branch (matches the record’s existing gf_confidence:no), but no Hongo/Suidobashi-specific pricing was found within this search round.",
+  "last_checked": "2026-09-17",
+  "items": []
  }
 }
