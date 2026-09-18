@@ -3422,5 +3422,60 @@
   "price_note": "Tabelog prints 「No Menu」 and carries zero menu rows. Checked on the Japanese listing as well as /en/, and across all four menu sub-tabs — food, lunch, drink and course — all empty. The selector was re-verified in the same pass against a shop that does publish, so this is the shop publishing nothing, not a fetch failure. No first-party site is on record for it: the Tabelog page IS the website field, and Tabelog’s own listing page sits behind a Cloudflare challenge, so the official-homepage link it would normally carry could not be read. An honest empty, not an unfinished record. ⚠ THIS LISTING ALSO CARRIES TABELOG’S RED 「掲載保留」 (LISTING ON HOLD) BADGE, WHICH IS A SEPARATE AND MORE IMPORTANT FINDING THAN THE MISSING MENU. On hold means Tabelog has stopped standing behind the listing — typically because the shop has moved, closed, or stopped responding — and the site explains it with boilerplate reading \"may have relocated or permanently closed\". ⚠ THAT SENTENCE IS BOILERPLATE, NOT A CLOSURE REPORT: it appears verbatim on every on-hold listing, and an earlier pass of this dataset mis-read it as a closure marker for this very shop. 鳥せん is NOT recorded as closed here. What is true is that its operating status is unconfirmed and should be checked by phone before anyone is sent. 東京都台東区浅草3-35-9; cuisine 日本料理; average spend ¥3,000–3,999. 鳥 in the name points at a chicken house, which would put it in the same 塩-or-タレ territory as a yakitori counter, but with no menu and no confirmed status that is inference rather than research.",
   "last_checked": "2026-09-11",
   "items": []
+ },
+ "tokyo_ludique": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://ludique.net/menu"
+  ],
+  "price_note": "From the shop’s own official site (ludique.net/menu, found via Yahoo JP search after the record’s listed website was an Instagram profile with no menu page). This is a fixed-course French restaurant, not an à-la-carte kitchen — each course rotates on the season’s ingredients (the page itself says コースは、その時々の季節の食材で構成しています, \"the course is composed of seasonal ingredients of the time\"), so items below are the COURSE STRUCTURE, not fixed dishes. Dinner adds a ¥550 seat charge paid on-site (not folded into the printed price). The page states directly お苦手な食材やアレルギーがある場合は、必ず事前にお申し付けください (\"if you have disliked ingredients or allergies, please tell us in advance\") — a genuine invitation to ask, which matches the record’s existing gf_confidence:ask rather than raising or lowering it: it means a request MIGHT be accommodated on a given night, not that any course is gluten-free as printed. Every course as composed uses wheat by French kitchen default (bread service is standard, sauces are commonly roux-thickened, 小菓子/petit-fours desserts are pastry) and none is vegan — the dinner course names フォアグラの最中 (foie gras monaka, the signature dish), 本日のお魚料理 and 本日のお肉料理 (today’s fish and meat dishes) as fixed course elements, not options.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "ランチコース",
+    "romaji": "Lunch course",
+    "en": "Lunch course (hors d’oeuvre, soup, main, dessert, coffee or tea)",
+    "price": "7500yen",
+    "section": "ランチ",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Composition changes with the season; main course defaults to meat or fish at a French bistro and is not confirmed swappable without asking ahead.",
+    "dish_key": "lunch_course"
+   },
+   {
+    "ja": "ディナーコース",
+    "romaji": "Dinner course",
+    "en": "Dinner course (amuse: foie gras monaka, mousse, appetizer, fish, meat, dessert, petit fours) + ¥550 seat charge",
+    "price": "8000yen",
+    "section": "ディナー",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Names foie gras monaka, a fish dish and a meat dish as fixed course elements; not vegan-adaptable within this course.",
+    "dish_key": "dinner_course"
+   },
+   {
+    "ja": "1ドリンク付きコース",
+    "romaji": "Course with one drink",
+    "en": "Course with one drink included",
+    "price": "9900yen",
+    "section": "ディナー",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Same dinner course plus one drink; diet flags follow the dinner course.",
+    "dish_key": "course_with_drink"
+   },
+   {
+    "ja": "ペアリングコース",
+    "romaji": "Pairing course",
+    "en": "Wine pairing course",
+    "price": "15400yen",
+    "section": "ディナー",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Dinner course plus a full wine pairing; diet flags follow the dinner course.",
+    "dish_key": "pairing_course"
+   }
+  ]
  }
 }
