@@ -123,17 +123,28 @@ okonomiyaki: {
   vegan: { status: "no" | "ask" | "available", note: "" },
 
   // ── PRESENTATION (PROPOSED — needs Greg's OK, same as ramen's radar was) ──
-  profile: {                   // tentative — okonomiyaki does not have anywhere near
-                              //   ramen's depth of settled technical axes (no equivalent
-                              //   to chintan/paitan or kansui chemistry exists in the
-                              //   sourcing gathered so far), so this is a rougher first
-                              //   draft, offered for reshaping rather than as a confident
-                              //   proposal:
-    cabbage_forward: 0,        // 0-5 — how dominant the cabbage/vegetable bulk reads vs.
-                              //   protein/noodle, per description or photo evidence
-    char_crispness: 0,         // 0-5 — noodle-layer char and crepe-edge crispness
-    sauce_intensity: 0,        // 0-5 — how sauce-forward/sweet-tangy the finish reads
-    richness: 0                // 0-5 — pork fat, mayo-if-used, overall heaviness
+  // SUPERSEDES the original 4-axis draft — re-derived in OKONOMIYAKI_EXPLAINER.md by
+  // mapping each ramen radar axis to its actual okonomiyaki mechanism (same JOB, different
+  // MECHANISM) rather than guessing cold. `cabbage_forward` was dropped in that pass — on
+  // reflection it's a categorical identity question (what kind of build is this), not a
+  // continuous craft axis, and moved to a chip-picker instead (see EXPLAINER's Part 2).
+  profile: {
+    richness: 0,               // 0-5 — oil-or-not, protein load, mayo-if-used; direct
+                              //   ramen-richness parallel, no translation needed
+    cabbage_texture: 0,        // 0-5 — still-crunchy ↔ fully melted/steamed-soft; THE
+                              //   chintan/paitan-equivalent axis (a real technique-driven
+                              //   binary-ish spectrum) — consider exposing as a chip
+                              //   toggle too, mirroring chintan/paitan's own dual
+                              //   slider+chip treatment in the live ramen UI
+    char_crispness: 0,         // 0-5 — noodle-layer char / crepe-edge crispness; the
+                              //   noodle-firmness-equivalent axis
+    sauce_intensity: 0,        // 0-5 — how sauce-forward the finish reads; the
+                              //   tare-strength-equivalent axis
+    garnish_punch: 0           // 0-5 — how aonori/katsuobushi-forward the finish is; the
+                              //   aroma-punch-equivalent axis — may want splitting into
+                              //   separate aonori/katsuobushi intensities since only one
+                              //   of the two is vegan-relevant (open question, not
+                              //   resolved — see OKONOMIYAKI_EXPLAINER.md)
   },
 
   confidence: "high|medium|low|none",
