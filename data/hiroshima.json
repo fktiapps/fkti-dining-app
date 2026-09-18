@@ -27875,7 +27875,77 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 34,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 1
+   "menu_vegan_count": 1,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [
+      "chuka_men"
+     ],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [],
+    "craft_story": [
+     {
+      "category": "philosophy",
+      "text": "Runs more as a Hiroshima-specialty izakaya than an okonomiyaki-only counter -- a retro-modern interior with counter seating at the teppan and table seating for groups, known for showing Carp baseball and Sanfrecce soccer games on game days, drawing a broad customer age range. Okonomiyaki shares the menu with a wide teppanyaki and drinks selection rather than being the sole focus.",
+      "source": "https://nakanotana-mall.com/introduce/ganga/"
+     },
+     {
+      "category": "ingredient_sourcing",
+      "text": "Known for a tantanmen (dan-dan noodle) dish at lunch alongside its evening teppanyaki and okonomiyaki menu -- a notable non-okonomiyaki specialty for a shop in this dataset, but no okonomiyaki-specific technique or sourcing detail was found in this research pass.",
+      "source": "https://nakanotana-mall.com/introduce/ganga/"
+     }
+    ],
+    "signature_build": "",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": ""
+    },
+    "profile": {
+     "richness": null,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "low",
+    "sources": [
+     "https://nakanotana-mall.com/introduce/ganga/"
+    ],
+    "last_checked": "2026-09-20"
+   }
   },
   {
    "id": "hiro_tetsujin_chuka_kimura",
@@ -28592,7 +28662,91 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "Owner Yoshiyama actively manages cooking temperature and repositions the okonomiyaki to different spots on the griddle during the steam-down, specifically to preserve the cabbage's natural sweetness through slow, even steaming -- a real, describable technique rather than a \"watch it closely\" generality.",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [
+      "chuka_men"
+     ],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "offered",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": [
+      "mayonnaise deliberately blended for reduced acidity"
+     ]
+    },
+    "menu_names": [
+     {
+      "name": "メキシカン風お好み焼き",
+      "contents": "Summer-limited build finished with Remosco (Hiroshima lemon + chili hot sauce) and green Tabasco.",
+      "price": "",
+      "source": "https://www.htv.jp/program/okonomiyaki/220521.html"
+     }
+    ],
+    "craft_story": [
+     {
+      "category": "technique",
+      "text": "Rather than leaving the build in one spot, the owner adjusts cooking time and moves the okonomiyaki to different areas of the griddle during the steam-down specifically to bring out the cabbage's natural sweetness through slow, even steaming -- operating since 1990 under owner Yoshiyama (吉山さん).",
+      "source": "https://www.htv.jp/program/okonomiyaki/220521.html"
+     },
+     {
+      "category": "ingredient_sourcing",
+      "text": "Runs a summer-limited \"メキシカン風お好み焼き\" (Mexican-style okonomiyaki) built around レモスコ (Remosco), a named hot sauce made from Hiroshima-grown lemon and chili pepper, plus green Tabasco, for a deliberately bright, acidic-and-spicy seasonal variation on the standard build.",
+      "source": "https://www.htv.jp/program/okonomiyaki/220521.html"
+     },
+     {
+      "category": "philosophy",
+      "text": "Also blends its own mayonnaise specifically to reduce acidity -- a small but deliberate house customization of a standard condiment, alongside affordable, basement-counter pricing.",
+      "source": "https://www.htv.jp/program/okonomiyaki/220521.html"
+     }
+    ],
+    "signature_build": "メキシカン風お好み焼き (Mexican-style okonomiyaki, summer-limited) -- finished with Remosco (a Hiroshima lemon-and-chili hot sauce) and green Tabasco for acidity and spice.",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": ""
+    },
+    "profile": {
+     "richness": null,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "high",
+    "sources": [
+     "https://www.htv.jp/program/okonomiyaki/220521.html"
+    ],
+    "last_checked": "2026-09-20"
+   }
   },
   {
    "id": "hiro_karada_ni_yasashii_sosak",
