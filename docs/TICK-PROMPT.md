@@ -25,6 +25,19 @@ aggregator, then social_only. SKIP `tabelog_blocked` — Tabelog has served
 Cf-Mitigated: challenge (HTTP 403) to this machine since 2026-09-02, so those
 records cost a tick and yield a challenge page. They are parked, not abandoned.
 
+FOR `tabelog_en` RECORDS: this project's research language is Japanese — the
+/en/ locale rewrite is a fallback for the 403 block, not a source to reach for
+first. CONFIRMED 2026-09-17: the /en/, /tw/, /kr/ pages carry no item-level
+Japanese text at all (checked directly), so they cannot recover the vocabulary
+that actually matters for GF calls (麦 vs 小麦, 醤油 vs たまり). Before touching
+/en/, try a Yahoo JP search (see MENU-RESEARCH-NOTES.md) for the shop's own
+site or a third-party JA write-up with a priced menu — one was found this way
+for 江戸もんじゃひょうたん (suocca.net) after both the JA desktop AND mobile
+Tabelog hosts 403'd even with an iPhone UA + Accept-Language: ja. Only fall
+back to /en/ if that search comes up empty, and if you do, write the record
+`verified: "provisional"` and never let it justify gf above "ask" — a
+translated allergen term is not evidence at the same weight as a Japanese one.
+
 === 3. RESEARCH — GO BIG, IN PARALLEL ===
 Aim for 12-20 records, not 3-5. The old "3-5 records then stop" instruction is
 stale; Greg asked for large continuous runs.

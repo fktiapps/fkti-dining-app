@@ -90,11 +90,18 @@ if (NEXT_ONLY) {
 // The English alone is actively lossy: at 並木藪蕎麦 it renders BOTH 天ざる and
 // 天ぷらそば as "Tempura Soba" — one cold, one hot, same gloss — and only the TW/KR
 // columns tell them apart. scripts/harvest-tabelog.mjs prints the three aligned.
+// CONFIRMED 2026-09-17: TW/KR are separate machine translations, not the Japanese
+// original — they catch a gloss COLLISION (two dishes rendered identically) but
+// cannot recover vocabulary that matters for GF (麦 vs 小麦, 醤油 vs たまり). None of
+// en/tw/kr/cn carries item-level Japanese text at all on pages checked. Try a
+// Yahoo JP search (see MENU-RESEARCH-NOTES.md) for the shop's own site or a
+// third-party JA write-up FIRST; only fall back to this bucket if that fails, and
+// treat a tabelog_en-only menu as provisional/low confidence, never as grounds to
+// set gf above "ask".
 const sourceOf = r => {
   const w = (r.website || '').toLowerCase();
   if (!w) return 'no_website';
-  // Reachable via the locale rewrite; kept as its own bucket because the menu arrives
-  // translated and needs the tw/kr cross-read to recover the Japanese.
+  // Reachable via the locale rewrite. See the note above before using it.
   if (w.includes('tabelog.com')) return 'tabelog_en';
   if (/instagram|facebook|lit\.link|toreta|twitter|x\.com/.test(w)) return 'social_only';
   if (/gorp\.jp|foodre\.jp|gnavi|hotpepper|retty|owst\.jp|goope|favy|base\.shop|stores\.jp/.test(w)) return 'aggregator';
@@ -110,7 +117,7 @@ if (BY_SOURCE) {
   for (const k of ORDER) {
     const g = groups[k];
     if (!g.length) continue;
-    const tag = k === 'tabelog_en' ? '  <- fetch via /en/ (+ /tw/ /kr/ to recover the Japanese)' : '';
+    const tag = k === 'tabelog_en' ? '  <- try Yahoo JP search for a JA source FIRST; /en/ is last resort, cap at provisional' : '';
     console.log(`  ${k.padEnd(16)} ${String(g.length).padStart(4)}${tag}`);
   }
   const work = ORDER.flatMap(k => groups[k]);
