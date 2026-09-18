@@ -14,7 +14,7 @@
 //   node scripts/gen-underrated-queue.mjs
 import fs from 'node:fs';
 import { CITIES, readCity, writeCity } from './lib-city.mjs';
-import { GF_LABEL, VEGAN_LABEL as VG_LABEL } from './lib-tiers.mjs';
+import { GF_LABEL, VEGAN_LABEL as VG_LABEL, signoffFor, rejectionFor } from './lib-tiers.mjs';
 
 const DIR = 'data/_cite_verify_results';
 const RANK = { no: 0, ask: 1, options: 2, limited: 2, high: 3, full: 3, dedicated: 4 };
@@ -100,6 +100,23 @@ for (const s of SEED) {
   if (!hit) { console.log(`  (seed id not found, skipping: ${s.id})`); continue; }
   const current = hit.r[s.field];
   if ((RANK[s.recommended] ?? 0) <= (RANK[current] ?? 0)) continue;
+  // This SEED array is a one-time hand-transcription, checked only for "is the current
+  // tier already at or above what I recommend" — it has no idea Greg has ever RULED on
+  // this specific claim, so a REJECTED recommendation resurfaces every single rebuild
+  // forever. Confirmed live 2026-09-17: himeji_almondou's SEED entry reproduces, word
+  // for word, a research claim ("third-party gluten/gliadin test with NONE DETECTED")
+  // that Greg's own owner_signoff.decision:"revert" already threw out on 2026-08-23 —
+  // the site was re-fetched then and contains no such claim. Skip any SEED entry Greg
+  // has already ruled against on this exact field, on this exact axis.
+  const so = signoffFor(hit.r, s.field);
+  if (so && so.decision === 'revert') {
+    console.log(`  (seed id ${s.id}: Greg already reverted this on ${so.field || s.field}, ${so.date} — not re-proposing)`);
+    continue;
+  }
+  if (rejectionFor(hit.r, s.field)) {
+    console.log(`  (seed id ${s.id}: a standing gate rejection covers ${s.field} — not re-proposing)`);
+    continue;
+  }
   recs.push({ city: hit.city, id: s.id, name: hit.r.name, field: s.field,
               current, recommended: s.recommended, evidence: [], why: s.why,
               source: 'transcribed from agent prose' });
