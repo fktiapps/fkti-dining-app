@@ -16,6 +16,28 @@ const CHAINS = {
   gusto:          'Gusto|ガスト',
   mos_burger:     'MOS ?Burger|モスバーガー',
   coco_ichibanya: 'CoCo ?Ichibanya|Ichibanya|CoCo壱|ココイチ|壱番屋',
+  bamiyan: 'Bamiyan|バーミヤン',
+  cocos: 'COCO\'?S|ココス',
+  dennys: 'Denny\'?s|デニーズ',
+  doutor: 'Doutor|ドトールコーヒーショップ|ドトール',
+  freshness_burger: 'Freshness ?Burger|フレッシュネスバーガー',
+  jonathans: 'Jonathan\'?s|ジョナサン',
+  komeda: 'Komeda\'?s ?Coffee|コメダ珈琲店|コメダ',
+  kura_sushi: 'Kura ?Sushi|くら寿司',
+  marugame_seimen: 'Marugame ?Seimen|丸亀製麺',
+  // 松屋 also names unrelated businesses (department stores, other shops) with no
+  // "restaurant" qualifier to filter on via name/brand text alone -- spot-check results.
+  matsuya: 'Matsuya|松屋',
+  nakau: 'Nakau|なか卯',
+  ootoya: 'Ootoya|大戸屋ごはん処|大戸屋',
+  ringer_hut: 'Ringer ?Hut|リンガーハット',
+  st_marc: 'St\.? ?Marc ?Café|サンマルクカフェ|サンマルク',
+  subway: 'Subway|サブウェイ',
+  sukiya: 'Sukiya|すき家',
+  sushiro: 'Sushiro|スシロー',
+  tullys: 'Tully\'?s ?Coffee|タリーズコーヒー',
+  yayoiken: 'Yayoiken|やよい軒',
+  yoshinoya: 'Yoshinoya|吉野家',
 };
 const MIRRORS = [
   'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
@@ -47,10 +69,22 @@ async function overpass(query) {
 }
 
 // Classify an OSM element to a chain id by matching brand/name against each regex.
+// EXCLUSIONS catch a real name/brand match that is nonetheless the wrong business.
+// Confirmed live 2026-09-18: 松屋/Matsuya (beef bowl) has no word-boundary anchor
+// against 西松屋/Nishimatsuya (an unrelated kids'-clothing chain, matched as a bare
+// substring) or against an actual 松屋百貨店 department store -- a ~17% false-positive
+// rate on this one chain across all 9 cities before this filter existed.
+const EXCLUSIONS = {
+  matsuya: /nishimatsuya|西松屋|百貨店|デパート|department ?store/i,
+};
 const matchers = chainIds.map(id => [id, new RegExp(CHAINS[id], 'i')]);
 function classify(t) {
   const hay = [t.brand, t['brand:en'], t.name, t['name:en']].filter(Boolean).join(' | ');
-  for (const [id, rx] of matchers) if (rx.test(hay)) return id;
+  for (const [id, rx] of matchers) {
+    if (!rx.test(hay)) continue;
+    if (EXCLUSIONS[id] && EXCLUSIONS[id].test(hay)) continue;
+    return id;
+  }
   return null;
 }
 
