@@ -322,14 +322,40 @@ worth capturing as a craft_story entry (`category: "philosophy"` or `"history"`)
 source actually reports it about a specific shop, not treated as generic travel-writing
 color.
 
-**The eating ritual is part of the dish's character, not a footnote.** Hiroshima
-okonomiyaki-ya are built around counter seating facing a shared, continuous iron griddle —
-not tables with the food delivered already plated. [Corroborated across multiple
-Hiroshima-specific sources, not just the more commonly-documented Osaka version of this
-ritual.] The customary way to eat it: no plate, no chopsticks — a small metal spatula
-(hera/kote/teko depending on region and shop) cuts a bite-sized square directly from the
-dish where it sits on the hot iron, and that square goes straight to the mouth from the
-griddle. The origin is practical, not ceremonial: street vendors adopted it because it
+**The eating ritual is part of the dish's character, not a footnote — and it's a real
+regional split, not a matter of individual preference.** Hiroshima okonomiyaki-ya are built
+around counter seating facing a shared, continuous iron griddle, not tables with the food
+delivered already plated. The customary Hiroshima/Kansai way to eat it: no plate, no
+chopsticks at first — a small metal spatula (hera/kote/teko depending on region and shop)
+cuts a bite-sized square directly from the dish where it sits on the hot iron, and that
+square goes straight to the mouth from the griddle. **This is specifically NOT how Kanto
+(Tokyo-region) diners eat it**: the Kanto norm is to slice it, serve it plated, and eat with
+chopsticks like any other dish. So "how do you eat this" is itself a real east/west cultural
+line running through the dish, not just individual squeamishness about hot food or a
+formality question — sources checked treat kote-eating as the Osaka/Hiroshima marker and
+plate-and-chopsticks as the Kanto one.
+
+⚠ **A genuine, specific etiquette rule, not just "pick whichever":** switching methods
+mid-meal — using the kote to lift a piece onto a small plate and THEN eating that piece
+with chopsticks — is explicitly called out as poor form. The choice is kote-throughout or
+plate-and-chopsticks-throughout, not a hybrid. And there's a stated mechanical/social
+reason chopsticks specifically fail here, not just a convention: chopsticks tend to pull a
+LAYERED dish apart rather than lifting a clean cross-section, so a diner trying to eat
+Hiroshima-style okonomiyaki with chopsticks is reported to visibly struggle — sources
+describe this plainly as reading as a "tourist cliché," not a neutral stylistic choice. Cut
+technique matters too: mouth-sized squares (not large wedges) are what actually stays on a
+flat kote; a big piece falls off.
+
+**Adjacent counter etiquette, worth carrying into any place-record's `cultural_comfort`
+notes when relevant**: don't flip your own okonomiyaki — that's the chef's domain, and
+customers are expected to watch rather than help; a quiet "gochisousama deshita" on the way
+out is sufficient thanks; ask before photographing the chef's hands at work. None of this
+was independently cross-verified against a second source this round (it came from one
+detailed how-to-eat-like-a-local guide) — treat as a plausible, specific, worth-repeating
+picture of the norm rather than as heavily corroborated as the kote-vs-chopsticks regional
+split itself, which multiple independent sources agree on.
+
+The origin of kote-eating is practical, not ceremonial: street vendors adopted it because it
 meant not having to supply plates or chopsticks to customers eating standing at a stall.
 That practical origin nonetheless produced a genuine social ritual — everyone facing the
 same hot surface, cooks and customers close enough to talk, the food never fully "presented"
@@ -407,6 +433,17 @@ scarcity history:
     way Osaka's mixed-in egg, which instead contributes to the batter's custardy interior
     texture, is not. Same ingredient, genuinely different JOB depending on which style
     it's in.
+  • **Why you eat it with a kote and not chopsticks (§11)**: this is not merely regional
+    custom for its own sake — it follows mechanically from the SAME layering fact that is
+    this whole document's throughline. A wide, flat spatula cuts a clean cross-section
+    through a stacked dish and lifts every layer together in one bite; chopsticks, built to
+    grip and separate, tend to pull a layered construction apart instead of lifting it
+    intact. The Kanto habit of plating and using chopsticks isn't wrong so much as it's
+    suited to a DIFFERENT dish — notably, Kanto is also not where the mixed, more
+    Osaka-adjacent styles are absent either, so "how you're expected to eat it" tracks
+    "how it's built" more than it tracks pure regional custom for its own sake. This is
+    the clearest single example in this whole document of a "cultural practice" that
+    turns out, on inspection, to be a technical practice wearing cultural clothes.
 
 The throughline for a future place-record or narrative writeup: **when a shop is described
 as varying from the standard build — a different cabbage cut, a different noodle, a
@@ -513,6 +550,11 @@ STILL THIN — flagged honestly, not yet verified to the standard above
     Lopez Okonomiyaki example) is a real, repeatable pattern among independent shops or was
     true of just that one shop and one article's framing of it — the pilot should treat
     this as a hypothesis to test, not an established axis yet.
+  • The "adjacent counter etiquette" list in §11 (don't flip your own okonomiyaki, quiet
+    gochisousama on the way out, ask before photographing the chef's hands) — one detailed
+    source, not cross-checked against a second. Plausible and specific enough to be worth
+    keeping, but held to a lower confidence bar than the kote-vs-chopsticks regional split,
+    which several independent sources agree on.
 
 ═══════════════════════════════════════════════════════════
 SOURCING & CONFIDENCE NOTES
@@ -528,8 +570,14 @@ National Geographic (the Lopez Okonomiyaki story specifically, and the "alternat
 narrative of cultural pride" framing), the Oconomiyaki Academy's own history page
 (okonomiyaki.or.jp — the iron-plates-from-the-ruins detail and the issen-yoshoku-revival
 framing specifically), Kids Web Japan, GetHiroshima, and japan-guide/kanpai-japan-style
-sources for the counter-seating/kote eating ritual. This is the same evidentiary bar as
-ramen's
+sources for the counter-seating/kote eating ritual. The kote-vs-chopsticks REGIONAL split
+specifically (Kanto plate-and-chopsticks vs. Osaka/Hiroshima kote-off-the-teppan) is
+corroborated across an English-language etiquette roundup, a Japanese-language bookmeter
+community post, and a Japanese food-column piece (emifuku.jp) independently agreeing on the
+same east/west line and the same "don't mix methods mid-meal" rule — solid for this
+specific claim even though the adjacent "counter etiquette" list (flipping, photography,
+parting words) rests on one source only (flagged in STILL THIN). This is the same
+evidentiary bar as ramen's
 Round-1 "adequate for non-controversial culinary fact" tier — good enough to build a
 schema on for the dish's mechanics, NOT a substitute for reading an individual shop's own
 menu/site once place-level research begins. The one area held to a visibly higher bar of
