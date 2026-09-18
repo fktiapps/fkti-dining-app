@@ -88,8 +88,24 @@ for (const [city, rows] of Object.entries(byCity)) {
     // at the same weight. Holding a vegan upgrade hostage to a disproven GF-style
     // claim buys nothing and costs a vegan traveller a meal they could have eaten.
     // So: gf_confidence still has to clear the guard. vegan_status does not.
-    if (x.field === 'gf_confidence' && x.recommended !== 'ask' && disproven(r, x.field) && !OVERRIDE.has(x.id))
-      { skipped.push({ ...x, why: `${disproven(r, x.field)} disproven claim(s) on the record, and "${x.recommended}" asserts something` }); continue; }
+    // --override clears a DISPROVEN hold only, never a NO-SOURCES-AT-ALL one — matching
+    // enforce-cited-claims.mjs, which will otherwise revert this write on the very next
+    // rebuild regardless of what --override said. Found live 2026-09-18: this script let
+    // tokyo3__148 (アトミヨソワカ) through on --override even though every one of its 3
+    // safety findings has no `source` field at all, not merely a disproven one. Greg's
+    // override was recorded and honoured here, then silently undone by the other script
+    // one rebuild later — exactly the flip-flop the human gate exists to prevent. Approving
+    // a tier over known-bad evidence is a judgement Greg is entitled to make; approving one
+    // over NO evidence is not a judgement, it is a gap, and no flag should be able to paper
+    // over it.
+    const anyCited = x.field === 'gf_confidence' &&
+      EV.some(f => ((r.safety?.[f]) || []).some(e => typeof e === 'object' && e.source));
+    if (x.field === 'gf_confidence' && x.recommended !== 'ask' && disproven(r, x.field) && (!OVERRIDE.has(x.id) || !anyCited)) {
+      const why = !anyCited && OVERRIDE.has(x.id)
+        ? `${disproven(r, x.field)} disproven claim(s), and NONE of this record's safety findings cite any source — --override cannot clear a no-evidence gap, only a disproven one`
+        : `${disproven(r, x.field)} disproven claim(s) on the record, and "${x.recommended}" asserts something`;
+      skipped.push({ ...x, why }); continue;
+    }
     if (r[x.field] !== x.current) { skipped.push({ ...x, why: `already at "${r[x.field]}"` }); continue; }
 
     r[x.field] = x.recommended;
