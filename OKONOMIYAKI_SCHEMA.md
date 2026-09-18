@@ -99,7 +99,15 @@ okonomiyaki: {
   // unsourced entry here is fabrication risk of exactly the kind REVIEW_PROTOCOL and
   // the fabrication-is-forbidden rule exist to catch, made worse by being personal/
   // human-interest detail that reads as more trustworthy than a mere fact, and is
-  // usually LESS independently checkable, not more.
+  // usually LESS independently checkable, not more. The model to aim for: EXPERTISE.md
+  // §11's Lopez Okonomiyaki finding (owner deliberately chose to operate outside
+  // Okonomimura to keep the creative latitude for his own "mama's style" build) — real,
+  // sourced to a named outlet, and it explains WHY the shop differs, not just THAT it
+  // does. §12 gives the causal reasoning behind the standard build (why thin crepe +
+  // cabbage bulk are one fact, why layering solves a griddle-throughput problem, etc.)
+  // — a craft_story entry that connects a shop's deviation back to one of those root
+  // reasons (as the Lopez/Okonomimura-standardization axis does) is worth more than one
+  // that just restates a difference without explaining what it means.
   craft_story: [
     { category: "lineage" | "ingredient_sourcing" | "technique" | "history" | "philosophy",
       text: "",                // the specific claim, in the voice of a finding, not a guess
@@ -110,7 +118,7 @@ okonomiyaki: {
                               //   sourced (a review consensus, the shop's own menu
                               //   highlighting it, a named "our most popular").
 
-  // ── DIETARY (celiac #1; be as blunt as the ramen schema is)                 (§12) ──
+  // ── DIETARY (celiac #1; be as blunt as the ramen schema is)                 (§14) ──
   gf:    { status: "no" | "ask" | "rare_options", note: "" },
   vegan: { status: "no" | "ask" | "available", note: "" },
 
@@ -156,7 +164,7 @@ surfacing what actually varies interestingly from place to place.
 **Pilot first, per Greg's 2026-09-18 scope decision**: 5-10 of the most documented/famous
 Hiroshima okonomiyaki shops — candidates from the existing 88 records include Mitchan
 Sohonten, Nagata-ya, and Hassei (all three already confirmed to exist as records; Hassei
-is also one of the unverified GF leads from EXPERTISE.md §12 — worth checking both angles
+is also one of the unverified GF leads from EXPERTISE.md §14 — worth checking both angles
 on the same visit). Purpose of the pilot: prove the research actually finds real,
 sourceable, craft_story-grade detail at the depth Greg asked for — and be honest in the
 pilot report about which shops yielded real depth and which yielded only the generic

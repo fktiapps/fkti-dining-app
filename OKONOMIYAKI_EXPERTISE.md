@@ -8,7 +8,10 @@ across multiple independent sources per claim rather than a single-source lift. 
 deliberately narrow: HIROSHIMA-style specifically, not okonomiyaki in general — Osaka/Kansai
 style appears only as the contrast that defines what Hiroshima IS NOT.
 
-Status: **Round 1 complete** (anatomy, technique, sauce, history, naming). No individual
+Status: **Round 2 complete** (Round 1: anatomy, technique, sauce, history, naming. Round 2,
+2026-09-18: deeper history, cultural identity/civic pride, the eating ritual as character,
+and explicit causal "why" reasoning connecting the technique facts back to their root
+causes — §11, §12, and the History section's expansion). No individual
 shop has been researched yet — that is the next phase, and per this app's standing rule
 (existence before enrichment), it starts from scratch per shop rather than assuming anything
 below applies to a specific restaurant without a confirmed source.
@@ -135,7 +138,7 @@ term means something specific locally.
     §7 for why these names don't mean the same combination everywhere.
 
 ═══════════════════════════════════════════════════════════
-6. THE EGG SEAL — the finishing technique, and a candidate for "the heart" (see §11)
+6. THE EGG SEAL — the finishing technique, and a candidate for "the heart" (see §13)
 ═══════════════════════════════════════════════════════════
 
 An egg is cracked directly onto the griddle, its yolk broken and spread thin with the
@@ -244,12 +247,32 @@ shops to children for one sen (a tiny fraction of a yen): a simple flour-and-wat
 topped with green onion and dried shrimp. No cabbage mountain, no layering as we'd
 recognize it — a thin snack, not a meal.
 
-**Postwar transformation**: after the atomic bombing, flour distributed as American relief
-aid became the basis for thin pancakes cooked on sheet-metal griddles at reconstruction-era
-stalls in the bombed city center. Whatever was actually available — cabbage, bean sprouts,
-pork, noodles — got added as ingenuity and availability allowed. The layered structure we
-now call "Hiroshima-style" emerged from this period of genuine scarcity and adaptation, not
-as a designed cuisine.
+**Postwar transformation — and it is specifically a REVIVAL, not an invention.** This is
+worth being precise about, because it changes what the dish means: after the bombing,
+survivors didn't invent a new snack — they went back to cooking the childhood snack they
+already knew, issen yoshoku, because it was cheap, familiar, and comforting during
+reconstruction [corroborated independently by the Oconomiyaki Academy's own history page
+and multiple secondary sources]. One detail carries real weight and is worth keeping
+exactly as sourced: the Academy's own account states the earliest postwar griddles were
+made from **iron plates salvaged from the burnt ruins of the city itself** — people were
+quite literally cooking on the wreckage. Flour arrived as American relief-aid rations.
+Whatever else turned up — cabbage, bean sprouts, pork, noodles — went in as availability
+allowed, and the layered structure we now call "Hiroshima-style" accreted from that
+improvisation. It was not designed. See §12 for why this specific detail (scarcity, not
+aesthetics) is the actual causal explanation for several "technique" facts in §1–§5, not
+just color for a history paragraph.
+
+⚠ REPORTED, SINGLE-SOURCE STRENGTH (flagging honestly rather than upgrading it by
+repetition): several secondary sources state that many of the postwar okonomiyaki stalls
+were run by women who had lost husbands in the war, and that the stalls functioned as
+genuine community gathering points — neighbors affording an affordable, warm meal together
+amid hardship. This is a specific and significant social-history claim. It appeared in the
+sources checked this round but was not independently corroborated against a primary or
+academic source (the most likely such source, a Chugoku Shimbun/Hiroshima Peace Media
+Center piece specifically about okonomiyaki's role in rebuilding the city, returned a 403
+and could not be read this round). Treat as plausible and worth re-verifying with a better
+source before it is stated as settled fact in any place-record or narrative copy — exactly
+the discipline this app already applies to a restaurant's own claims.
 
 **The person credited with fixing the modern shape**: Ise Mitsuo, trading under the name
 "Mitchan," is specifically credited with establishing what's now considered the standard
@@ -268,7 +291,134 @@ moved into the first purpose-built Okonomimura building, constructed that same y
 current building dates to 1992.
 
 ═══════════════════════════════════════════════════════════
-11. NARRATIVE PHILOSOPHY — PROPOSED, for Greg's sign-off (parallel to ramen's §9 "theology")
+11. CULTURAL CHARACTER & IDENTITY — what the dish MEANS, not just what it contains
+═══════════════════════════════════════════════════════════
+
+**It functions as a counter-narrative, and that is stated explicitly by sources reporting
+on it, not an interpretation added here.** National Geographic's framing is direct: while
+Hiroshima is globally remembered first for the atomic bombing, okonomiyaki offers residents
+"an alternative narrative of cultural pride" — a story about the city that is about
+adaptation and continuity rather than destruction. This is not incidental civic marketing;
+multiple sources independently describe the dish as the city's actual "soul food," and the
+emotional register locals use about it (resilience, comfort, community) tracks the
+recovery history in §10 directly. A place-record or narrative writeup that treats
+okonomiyaki as merely "the local specialty" is missing the reason it holds the emotional
+weight it does in Hiroshima specifically, versus how, say, Yoshinoya's gyudon is merely
+popular elsewhere.
+
+**Locals defend the name itself, not just the recipe.** A specific and repeatable finding:
+Hiroshima residents reportedly react against the term **"Hiroshima-yaki"** — the very label
+this document and most outside sources use to distinguish it from Osaka's version — because
+to them, THEIRS is simply "okonomiyaki," full stop, and Osaka's is the variant that needs a
+qualifier. Whether or not that framing is fair to Osaka, it is a genuine, sourced data point
+about civic identity: this is not a dish Hiroshima sees itself as one option among several
+regional interpretations. Locals experience it as the definitional version, defended with
+what one source explicitly compares to the good-natured but real intensity of the
+Chicago-vs-New-York pizza rivalry — "regional rivalry, while good natured, is strong,"
+and "every Hiroshima-ite has their own favorites and most will view it as a matter of pride
+to share them with visitors." That last clause matters for the pilot: a local recommending
+their own favorite shop, unprompted, is itself part of the culture around this dish, and
+worth capturing as a craft_story entry (`category: "philosophy"` or `"history"`) when a
+source actually reports it about a specific shop, not treated as generic travel-writing
+color.
+
+**The eating ritual is part of the dish's character, not a footnote.** Hiroshima
+okonomiyaki-ya are built around counter seating facing a shared, continuous iron griddle —
+not tables with the food delivered already plated. [Corroborated across multiple
+Hiroshima-specific sources, not just the more commonly-documented Osaka version of this
+ritual.] The customary way to eat it: no plate, no chopsticks — a small metal spatula
+(hera/kote/teko depending on region and shop) cuts a bite-sized square directly from the
+dish where it sits on the hot iron, and that square goes straight to the mouth from the
+griddle. The origin is practical, not ceremonial: street vendors adopted it because it
+meant not having to supply plates or chopsticks to customers eating standing at a stall.
+That practical origin nonetheless produced a genuine social ritual — everyone facing the
+same hot surface, cooks and customers close enough to talk, the food never fully "presented"
+the way a plated dish is, always slightly informal and immediate. A traveler eating with a
+knife and fork at a table, or being handed a plated portion, is having a measurably
+different experience of the same recipe — worth noting in any place-record's `notes` or
+`cultural_comfort` field when a shop's actual seating format is known, since it changes what
+a visitor should expect walking in.
+
+**A concrete, real example of how much an individual shop's OWN identity can diverge from
+"the standard build" — found this round, genuinely sourced, and a strong pilot candidate**:
+Lopez Okonomiyaki (Yokogawa, operating since 2000; the shop already exists in this app's
+Hiroshima data as ロペズ). Per National Geographic: the owner, Fernando Lopez, originally
+from Guatemala, deliberately chose NOT to open inside Okonomimura — explicitly because
+Okonomimura's food-court format comes with a degree of standardization, and he wanted the
+latitude to cook what one source calls "mama's okonomiyaki, a more rustic, homemade style,"
+incorporating ingredients from his own background (jalapeños, chorizo) alongside the
+Hiroshima base. **This is exactly the kind of finding the craft_story schema field exists
+for** — a real lineage/philosophy story (why this shop's build differs, and whose choice
+that was and why), sourced to a specific, credible outlet, not invented to make a record
+feel complete. It also surfaces a genuine, findable AXIS of variation worth watching for
+across the pilot: **whether a shop operates inside Okonomimura (implicitly closer to a
+shared/standardized format) or independently (freer to diverge)** is not just geography —
+per this one sourced example, it can be a shop's own stated reason for how and why it
+cooks differently. Whether that axis holds up as a real pattern or was true only of this
+one shop is exactly what the pilot should test, not assume.
+
+═══════════════════════════════════════════════════════════
+12. WHY THE DIFFERENCES MATTER — causal reasoning, not just cataloguing
+═══════════════════════════════════════════════════════════
+
+This section exists because Greg specifically asked not just what varies but WHY — and
+several of the "technique" facts in §1–§8 turn out to share ONE root cause rather than being
+independent arbitrary choices. Stating the causal chain explicitly, sourced to §10's
+scarcity history:
+
+  • **Why the crepe is thin (§2) and why cabbage is the bulk (§3) are the SAME fact, not
+    two facts.** Flour was the scarce, rationed, aid-dependent ingredient in the postwar
+    origin story; cabbage was comparatively cheap and available. A thin crepe uses very
+    little of the expensive ingredient; a tall cabbage mountain delivers most of the dish's
+    actual volume from the cheap one. "Mostly cabbage, barely any batter" is not a flavor
+    preference that happened to stick — per the sourcing in §10, it is what a hungry
+    postwar kitchen looks like when flour is the constraint. This is the single most
+    important causal thread in this whole document: it means the RATIO of cabbage to
+    batter in a given bowl is not a neutral stylistic choice a shop makes for texture —
+    it is, historically, closer to a statement about the dish's own origin economics, even
+    if no living cook today is consciously thinking about wartime flour rationing.
+  • **Why building UP instead of OUT**: a stall's iron griddle surface was a fixed,
+    limited resource relative to how many hungry people needed feeding from it. Stacking
+    a dish vertically feeds more people from the same square footage of hot iron than
+    spreading the same amount of food thinner across more griddle space would. The
+    layering is, among other things, a solution to a throughput problem, not purely an
+    architecture chosen for how it looks or tastes.
+  • **Why the noodle is cooked separately rather than mixed in (§1, §4)**: this one IS
+    primarily a textural/sensory choice rather than a scarcity one, and multiple sources
+    agree on the mechanism — noodles cooked on their own patch of griddle pick up a
+    browned, slightly crisp surface (real Maillard browning on exposed griddle contact)
+    that a noodle steamed inside a covered stack never would. Mixed in, it would simply be
+    a hot, wet noodle; cooked apart and then reassembled, it is a genuinely different
+    texture in the same bite as the soft cabbage next to it. This is the point of the
+    layering beyond economy: separated cooking produces separated, deliberately contrasting
+    textures that a single mixed batter cannot produce no matter how good the ingredients.
+  • **Why the cabbage is covered and left alone rather than stirred (§3)**: covering
+    concentrates the cabbage's own moisture as steam, which both reduces its volume AND
+    (per multiple recipe/technique sources) draws out its natural sweetness as it cooks
+    down — a genuinely different flavor outcome than raw cabbage stirred into a batter and
+    cooked through contact with hot liquid batter, which is closer to what happens in the
+    Osaka version. Pressing or stirring it (the natural instinct for anyone used to
+    scrambling ingredients together) destroys the very steam channels that were doing this
+    work — which is why §3's "hands off" rule is a real technical requirement, not
+    fussiness.
+  • **Why the egg goes on LAST as a seal rather than mixed in (§6)**: functionally, it
+    traps heat and moisture in the finished stack and gives the dish a coherent top surface
+    to be served and eaten from — the egg's job here is structural (closing the dish) in a
+    way Osaka's mixed-in egg, which instead contributes to the batter's custardy interior
+    texture, is not. Same ingredient, genuinely different JOB depending on which style
+    it's in.
+
+The throughline for a future place-record or narrative writeup: **when a shop is described
+as varying from the standard build — a different cabbage cut, a different noodle, a
+house sauce instead of Otafuku — the interesting question is not just "what did they
+change" but "which of these root reasons does the change speak to."** A shop using less
+cabbage than typical is arguably making a different claim about the dish than a shop using a
+non-Otafuku sauce; one touches the dish's origin economics, the other is closer to personal
+craft/lineage (§11's Lopez example). Distinguishing those in a writeup is exactly the depth
+Greg asked for.
+
+═══════════════════════════════════════════════════════════
+13. NARRATIVE PHILOSOPHY — PROPOSED, for Greg's sign-off (parallel to ramen's §9 "theology")
 ═══════════════════════════════════════════════════════════
 
 Offered as a first draft of a lens for how a future okonomiyaki feature should SPEAK about
@@ -299,7 +449,7 @@ locked doctrine the way the ramen theology now is:
     vs cheese) while remaining unmistakably, structurally, a Hiroshima okonomiyaki.
 
 ═══════════════════════════════════════════════════════════
-12. GLUTEN-FREE / VEGAN REALITY
+14. GLUTEN-FREE / VEGAN REALITY
 ═══════════════════════════════════════════════════════════
 
 **GLUTEN-FREE**: essentially never safe by default, and for MORE independent reasons than
@@ -355,6 +505,14 @@ STILL THIN — flagged honestly, not yet verified to the standard above
     RAMEN style (already documented in RAMEN_EXPERTISE.md §6), a separate dish entirely.
   • Local そば/うどん preference patterns (which one locals actually order more) — surfaced
     once in passing, not independently corroborated.
+  • The war-widow-operated-stalls claim (§10) — plausible, appeared in secondary sources,
+    but the best-looking primary source (Chugoku Shimbun/Hiroshima Peace Media Center,
+    hiroshimapeacemedia.jp) 403'd this round. Retry that fetch before repeating the claim
+    with confidence, or find an independent second source for it.
+  • Whether "operates outside Okonomimura for creative independence" (§11, from the single
+    Lopez Okonomiyaki example) is a real, repeatable pattern among independent shops or was
+    true of just that one shop and one article's framing of it — the pilot should treat
+    this as a hypothesis to test, not an established axis yet.
 
 ═══════════════════════════════════════════════════════════
 SOURCING & CONFIDENCE NOTES
@@ -365,7 +523,13 @@ sources with no disagreement found: Otafuku Foods' own site (both the US consume
 the Japan-based otafukusauce.com corporate site), Tasting Table, Japan Experience,
 Japan.travel, Just One Cookbook, RecipeTin Japan, Tofugu-adjacent guides, Sudachi Recipes,
 Chopstick Chronicles, and a Yahoo!知恵袋 Japanese-language community discussion for the
-soba/udon ordering ritual specifically. This is the same evidentiary bar as ramen's
+soba/udon ordering ritual specifically. Round 2's cultural/historical claims (§10-§12) add
+National Geographic (the Lopez Okonomiyaki story specifically, and the "alternative
+narrative of cultural pride" framing), the Oconomiyaki Academy's own history page
+(okonomiyaki.or.jp — the iron-plates-from-the-ruins detail and the issen-yoshoku-revival
+framing specifically), Kids Web Japan, GetHiroshima, and japan-guide/kanpai-japan-style
+sources for the counter-seating/kote eating ritual. This is the same evidentiary bar as
+ramen's
 Round-1 "adequate for non-controversial culinary fact" tier — good enough to build a
 schema on for the dish's mechanics, NOT a substitute for reading an individual shop's own
 menu/site once place-level research begins. The one area held to a visibly higher bar of
