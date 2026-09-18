@@ -448,6 +448,7 @@ li.uncited{color:#7c8299}
    <button class="chip pill dial" id="dialVegan"><span class="dl">🌱 Vegan</span><span class="dseg"></span></button>
    <button class="chip pill dial" id="dialGf"><span class="dl">🌾 GF</span><span class="dseg"></span></button>
    <button class="chip pill" data-pill="ramen">🍜 Ramen</button>
+   <button class="chip pill" data-pill="okonomiyaki" id="okonomiyakiPill" style="display:none">🥞 Okonomiyaki</button>
    <button class="chip pill" data-pill="mompop">🏮 Mom &amp; Pop</button>
    <button class="chip pill" id="groupPill">👥 Group</button>
    <button class="chip" id="bowlBtn" style="display:none;background:#9c3b2e;color:#fff;border:none">🍜 Build a bowl</button>
@@ -862,6 +863,7 @@ function visiblePlaces(){
   if(vgL===1 && !fullVeg) return false;
   if(vgL>=2 && vgL<=4 && !(fullVeg || VG[vgL].includes(p.vegan_status))) return false;
   if(f.pills.has('ramen') && p.cuisine_type!=='ramen') return false;
+  if(f.pills.has('okonomiyaki') && !p.okonomiyaki) return false;
   if(f.pills.has('mompop') && p.category!=='MOM_AND_POP') return false;
   if(f.cats.size && !f.cats.has(p.category)) return false;
   if(f.cuisines.size && !f.cuisines.has(p.cuisine_type)) return false;
@@ -1277,6 +1279,16 @@ function SHUT_LINE(p){
 }
 function openTag(p){if(p.closed&&p.closed.status==='temporary')return '<span class="open-no">Temporarily closed</span>';const s=openState(p);return s===true?'<span class="open-now">● Open now</span>':s===false?'<span class="open-no">Closed now</span>':'<span class="open-vary">Hours vary</span>';}
 function render(){
+ // The Okonomiyaki pill only means anything in Hiroshima — every other city has zero
+ // p.okonomiyaki records, so showing it elsewhere would just be a button that always
+ // empties the list. Hidden elsewhere, and cleared from the active filter set on the
+ // way out so it can't sit on invisibly and confuse someone who switches cities with
+ // it toggled on.
+ (function(){const btn=document.getElementById('okonomiyakiPill'); if(!btn) return;
+  const here=state.active==='hiroshima';
+  btn.style.display=here?'':'none';
+  if(!here && state.filters.pills.has('okonomiyaki')){state.filters.pills.delete('okonomiyaki'); if(typeof syncPills==='function') syncPills();}
+ })();
  if(state.groupActive){const z=computeZones();syncMarkers([]);drawGroupMarkers(z);renderGroupList(z);return;}
  if(groupLayer){map.removeLayer(groupLayer);groupLayer=null;}
  const vis=visiblePlaces();
