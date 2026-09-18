@@ -290,6 +290,49 @@ street vendors (crackdown on unauthorized shops and late-night noise) and many s
 moved into the first purpose-built Okonomimura building, constructed that same year; the
 current building dates to 1992.
 
+**What's actually different, stall to stall — checked directly, 2026-09-19, per Greg's
+follow-up question ("if I go to Atomu, what's different from Hiro-chan").** Okonomimura is
+~20-25 independent stalls across floors 2-4 (roughly eight per floor), and this turns out to
+be a genuinely high-yield place to look for exactly the comparative, specific detail §11
+calls for — a short research pass found real, sourced differentiation for seven stalls with
+no padding required:
+  • **Atomu (アトム, 4F, yellow curtain)** — cooks WITHOUT oil and uses organic vegetables,
+    deliberately producing a lighter result; explicitly positioned for diners who find
+    standard okonomiyaki too heavy.
+  • **Hiro-chan (ひろちゃん, 3F)** — the functional opposite of Atomu: thick, ingredient-
+    piled, oyster-heavy, a mountain of green onion on top. Named signature dish
+    "ひろちゃん焼き" (negi, choice of soba/udon, meat, egg, RAW squid, RAW shrimp). 20 seats
+    facing the cook directly, explicitly social/conversational per reviews; keeps its
+    teppanyaki side-menu minimal and stays okonomiyaki-focused, unlike some neighbors.
+  • **Teppei Ekimae (4F)** — incorporates oysters as its hook.
+  • **Suigun (3F)** — seafood-forward specialty across its menu generally.
+  • **Syo-Chan (3F)** — locally-sourced ingredients; a named pork/egg/kimchi build; reported
+    as noticeably more textured than an Osaka-style equivalent.
+  • **Daimarudou** — a "Wafu Special" (pickled greens, mochi, cheese); service-style
+    differentiator as much as ingredient one — the chef pre-chops it for the customer
+    rather than leaving the cutting-into-bites step to the diner, which most stalls do not.
+  • **Itsukushima** — known more for its lunchtime crowd and beer-pairing culture than for
+    a specific dish variant.
+
+⚠ **A building-wide fact that changes what "sauce" means as a differentiator INSIDE this
+specific venue**: multiple sources agree Okonomimura stalls share ONE custom sauce, made
+specifically for the building by Sun Foods — NOT Otafuku, and not each stall's own choice.
+This means sauce brand/lineage (§7's usual differentiation axis between independent shops)
+is likely NOT a meaningful axis of variation between two Okonomimura stalls specifically —
+the real differentiation there lives in technique (Atomu's no-oil method), ingredient
+emphasis (oysters, kimchi, pickled greens), portion philosophy (light vs. piled-high), and
+service style (pre-chopped vs. DIY), not in whose sauce recipe it is. Worth confirming
+per-stall before assuming it's uniform, but it's the sourced default for this building.
+
+**The methodological point this proves**: Okonomimura's bounded, enumerable, naturally
+comparative structure (a fixed set of ~20-25 stalls, all cooking the same base dish, all
+literally next to each other) makes it an unusually efficient place to produce the exact
+kind of "what's actually different" detail Greg has asked for twice now — finding real,
+sourced differentiation for 7 stalls took one short research pass, versus the more
+scattered effort needed to build the same depth across 88 independent shops spread across
+the city. Worth weighing as a candidate to prioritize or lead with in the pilot (§ pilot
+scope in OKONOMIYAKI_SCHEMA.md), not necessarily as a replacement for it.
+
 ═══════════════════════════════════════════════════════════
 11. CULTURAL CHARACTER & IDENTITY — what the dish MEANS, not just what it contains
 ═══════════════════════════════════════════════════════════
@@ -555,6 +598,12 @@ STILL THIN — flagged honestly, not yet verified to the standard above
     source, not cross-checked against a second. Plausible and specific enough to be worth
     keeping, but held to a lower confidence bar than the kote-vs-chopsticks regional split,
     which several independent sources agree on.
+  • The 7-stall Okonomimura differentiation batch (§10) is real but NOT exhaustive — the
+    building holds ~20-25 stalls total, and only 7 were checked. Checked against this
+    app's existing data: Atomu and Daimarudou already exist as Hiroshima records (as
+    "お好み村 あとむ" and "大丸堂"); Hiro-chan, Teppei Ekimae, Suigun, Syo-Chan, and
+    Itsukushima do not appear to yet, at least not under these names — worth a name-
+    matching pass before assuming any of the five need discovering from scratch.
 
 ═══════════════════════════════════════════════════════════
 SOURCING & CONFIDENCE NOTES
