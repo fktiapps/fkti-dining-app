@@ -2431,5 +2431,115 @@
     "dish_key": "buta_tsuika"
    }
   ]
+ },
+ "tokyo_edo_monja_hyotan": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://suocca.net/edomonja-hyotan/"
+  ],
+  "price_note": "Sourced from a third-party JA write-up (suocca.net), found via Yahoo JP search after both the JA-locale Tabelog hosts (desktop and mobile, incl. iPhone UA + Accept-Language: ja) 403’d and the /en/ page carried no item-level Japanese at all (confirmed 2026-09-17 — see TICK-PROMPT.md). Address (東京都台東区浅衉1-37-4) and phone (03-5830-7500) match the target listing exactly, so this is the right shop, not the similarly-named branch confusion this project has hit before. The page states explicitly ※Menu shows an excerpt (抹粘して掲載), not the full card, so this is a lower bound on what the shop sells, not a complete list. Base monjayāki batter is wheat flour and this does not change the shop’s existing gf_confidence:no — the one interesting item is 山芋磯辺焼き, which the shop’s own marketing copy elsewhere describes as 小麦粉を使わず (no wheat flour, 100% yamaimo batter) — but 磯辺焼き is classically brushed with a soy-sauce-based tare and this dish is cooked on the shop’s shared teppan alongside wheat-batter monjayāki, so it is flagged ask, not gf, pending confirmation of the glaze and cross-contact handling.",
+  "last_checked": "2026-09-17",
+  "items": [
+   {
+    "ja": "松コース",
+    "romaji": "Matsu course",
+    "en": "Pine course (120min all-you-can-drink)",
+    "price": "6000yen",
+    "section": "コース",
+    "gf": "no",
+    "vegan": "no",
+    "note": "黒毛和牛肩ロース、山芋のいそべ焼き、カレー豚チーズもんじゃ（小麦粉バッター）、甘味 — wagyu, cheese×curry monja on wheat batter, dessert.",
+    "dish_key": "course_matsu"
+   },
+   {
+    "ja": "竹コース",
+    "romaji": "Take course",
+    "en": "Bamboo course (90min all-you-can-drink)",
+    "price": "4800yen",
+    "section": "コース",
+    "gf": "no",
+    "vegan": "no",
+    "note": "明太子もちチーズもんじゃ（小麦粉バッター）、五目天（天ぷら）、甘味 — mentaiko-mochi-cheese monja, mixed tempura, dessert.",
+    "dish_key": "course_take"
+   },
+   {
+    "ja": "梅コース",
+    "romaji": "Ume course",
+    "en": "Plum course (90min all-you-can-drink)",
+    "price": "3800yen",
+    "section": "コース",
+    "gf": "no",
+    "vegan": "no",
+    "note": "豚キムチ炒め、ゲソバター、ベビースターもんじゃ（小麦粉バッター）、しめのやきそば — pork kimchi, squid-leg butter, wheat-batter monja, closing yakisoba (also wheat).",
+    "dish_key": "course_ume"
+   },
+   {
+    "ja": "ウィンナー五種盛り",
+    "romaji": "Wiener go-shu mori",
+    "en": "Five-kind sausage platter",
+    "price": "605yen",
+    "section": "お料理",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Grilled sausages; Japanese sausages commonly use wheat starch as a filler and this is not stated either way here.",
+    "dish_key": "wiener_moriawase"
+   },
+   {
+    "ja": "山芋磯辺焼き",
+    "romaji": "Yamaimo isobeyaki",
+    "en": "Grilled mountain-yam batter, nori-wrapped",
+    "price": "715yen",
+    "section": "お料理",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Shop describes this batter as 100% Gunma yamaimo, 小麦粉を使わず (no wheat flour) — but 磯辺焼き is traditionally glazed with a soy-sauce-based tare (wheat by project default) and this is cooked on the shared teppan with wheat-batter monjayāki. Neither the glaze recipe nor cross-contact handling is confirmed, and a dashi-based tare would also decide the vegan call — hence ask on both axes, not a source-supported gf/vegan label.",
+    "dish_key": "yamaimo_isobeyaki"
+   },
+   {
+    "ja": "下町もんじゃ",
+    "romaji": "Shitamachi monja",
+    "en": "Old-town style monjayaki",
+    "price": "759yen",
+    "section": "お料理",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Standard wheat-flour monjayāki batter with bonito dashi.",
+    "dish_key": "shitamachi_monja"
+   },
+   {
+    "ja": "アサヒスーパードライ 中ジョッキ",
+    "romaji": "Asahi Super Dry medium draft",
+    "en": "Asahi Super Dry draft beer",
+    "price": "649yen",
+    "section": "ドリンク",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Fermented barley malt beverage — gluten protein is not removed the way distillation removes it. Vegan status of the specific fining process is not confirmed.",
+    "dish_key": "asahi_super_dry"
+   },
+   {
+    "ja": "角ハイボール",
+    "romaji": "Kaku highball",
+    "en": "Suntory Kakubin whisky highball",
+    "price": "649yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Distilled whisky; celiac guidance on distilled grain spirits varies by sensitivity and the specific process is not confirmed here, so ask rather than gf. No dashi or animal-derived ingredient in a plain highball.",
+    "dish_key": "kaku_highball"
+   },
+   {
+    "ja": "レモンサワー",
+    "romaji": "Lemon sour",
+    "en": "Shochu-based lemon sour",
+    "price": "539yen",
+    "section": "ドリンク",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Distilled shōchū base, same distillation caveat as the highball. No dashi or animal-derived ingredient.",
+    "dish_key": "lemon_sour"
+   }
+  ]
  }
 }

@@ -14,13 +14,23 @@ import { CITIES, readCity, writeCity } from './lib-city.mjs';
 const DRY = process.argv.includes('--dry');
 const DIR = 'data/_menu_verdicts';
 
-const VERIFIED = new Set(['authoritative', 'partial', 'provisional']);
+const VERIFIED = new Set(['authoritative', 'partial', 'provisional', 'none']);
 // "true" is the legacy value from before this vocabulary existed — 89 shipped menus
 // still carry it, and the agent brief wrongly listed it as valid, so agents kept
 // producing it. It means "verified, but not from a first-party source", which is
 // exactly `partial`. Fold it rather than reject a shop's whole researched menu over
 // one word.
 const VERIFIED_ALIAS = { true: 'partial', 'true': 'partial', verified: 'partial' };
+// "none" is a DIFFERENT legitimate state from the honest-empty (items: []) path
+// below: it means the record was researched and the shop is very likely gone (see
+// tokyo_tokyo_vege_ramen_vejin, 2026-09-10) — items is empty because there is
+// nothing to sell, not because nobody looked. Rejecting it here as an invalid
+// enum value hard-failed rebuild.mjs's whole pipeline (merge-menus sets
+// process.exitCode on any rejection, and rebuild.mjs treats a nonzero exit from
+// any step as fatal) for every run since that record was written, before lint or
+// tests could even run. "none" entries always carry items: [] by construction — a
+// non-empty items array under verified:"none" is a contradiction and should still
+// fail loudly, so it is NOT added to VERIFIED_ALIAS.
 const CONF = new Set(['high', 'medium', 'low']);
 const GF = new Set(['gf', 'ask', 'no', '']);
 const VEGAN = new Set(['vegan', 'ask', 'no', '']);
@@ -66,6 +76,7 @@ function problems(entry, id, unexplained = [], badDrinks = []) {
   if (!CONF.has(entry.confidence)) p.push(`confidence "${entry.confidence}"`);
   if (!Array.isArray(entry.sources) || !entry.sources.length) p.push('no sources');
   if (!Array.isArray(entry.items)) return [...p, 'items is not an array'];
+  if (entry.verified === 'none' && entry.items.length) p.push('verified="none" (shop gone) with non-empty items — contradiction');
 
   entry.items.forEach((it, i) => {
     const at = `item[${i}] "${it.ja || it.en || '?'}"`;

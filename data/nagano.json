@@ -2966,7 +2966,7 @@
    "neighborhood": "元善町（Motozen-chō）、善光寺仲見世通り",
    "cuisine": "Soba & sauce katsudon",
    "cuisine_type": "katsu",
-   "website": "https://www.marusei-soba.com/",
+   "website": null,
    "gmaps": "https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E6%B8%85%20%E9%95%B7%E9%87%8E%E7%9C%8C%E9%95%B7%E9%87%8E%E5%B8%82%E5%85%83%E5%96%84%E7%94%BA486",
    "notes": "[Mom & Pop] The family originally ran a restaurant called Tsubame near Tsubame Pond in Nagano. Wartime disruption forced them to lend the building — which later became the first schoolhouse for Seisen Women's Academy. After relinquishing that property, the family relocated to Motozen-cho on",
    "menu_url": "https://tabelog.com/en/nagano/A2001/A200101/20000758/dtlmenu/",
@@ -3038,7 +3038,15 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "hijacked_links": [
+    {
+     "field": "website",
+     "was": "https://www.marusei-soba.com/",
+     "matched": "Slot Gacor",
+     "date": "2026-08-21"
+    }
+   ]
   },
   {
    "id": "nagano_haruhi",
@@ -13252,7 +13260,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-09-08"
+    "last_checked": "2026-09-18"
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -13264,7 +13272,7 @@
    "menu_gf_ask_count": 3,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-09-08",
+    "date": "2026-09-18",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
@@ -15108,7 +15116,7 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-09-08"
+    "last_checked": "2026-09-18"
    },
    "has_menu": true,
    "menu_verified": "authoritative",
@@ -15119,7 +15127,7 @@
    "mom_and_pop": false,
    "gf_review": {
     "protocol": "REVIEW_PROTOCOL.md pass 3 (adversarial)",
-    "date": "2026-09-08",
+    "date": "2026-09-18",
     "by": "Claude (adversarial pass)",
     "verdict": "downgrade",
     "from": "high",
