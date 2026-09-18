@@ -676,6 +676,13 @@ li.uncited{color:#7c8299}
   <div id="ramenGeekBody"></div>
  </div>
 </div>
+<div class="modal" id="okonomiyakiGeekModal">
+ <div class="box">
+  <button class="closex" id="okonomiyakiGeekClose">×</button>
+  <h2>🔬 Okonomiyaki Geek</h2>
+  <div id="okonomiyakiGeekBody"></div>
+ </div>
+</div>
 <div class="modal" id="bowlModal">
  <div class="box">
   <button class="closex" id="bowlClose">×</button>
@@ -734,7 +741,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v331';
+const APP_BUILD='dcd-v332';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1372,6 +1379,70 @@ function openRamenGeek(r){
  document.getElementById('ramenGeekClose').onclick=()=>document.getElementById('ramenGeekModal').classList.remove('show');
  document.getElementById('ramenGeekModal').onclick=e=>{if(e.target.id==='ramenGeekModal')e.target.classList.remove('show');};
 }
+// ---------- 🥞 Okonomiyaki Geek (Hiroshima-style; mirrors Ramen Geek's pattern —
+// see OKONOMIYAKI_EXPLAINER.md for the design and the ramen-concept-to-mechanism mapping) ----------
+function renderOkonomiyakiPanel(o){
+ if(!o) return '';
+ const dchip=(label,val)=>{const good=val==='gf'||val==='vegan'||val==='available'||val==='rare_options';const c=good?'#2e7d32':val==='ask'?'#b07a00':'#9c3b2e';const t=good?'✓':val==='ask'?'ask':'✗';return `<span style="background:${c};color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;margin-right:6px">${label} ${t}</span>`;};
+ return `<div class="panel"><h3>🥞 The Build</h3>
+  ${o.signature_build?`<div class="det" style="margin-bottom:6px"><b>Order:</b> ${o.signature_build}</div>`:''}
+  <div class="dietui" style="margin-top:8px">${dchip('GF',(o.gf||{}).status)}${dchip('Vegan',(o.vegan||{}).status)}</div>
+  ${(o.gf&&o.gf.note)?`<div class="det" style="font-size:12px">${o.gf.note}</div>`:''}
+  ${(o.vegan&&o.vegan.note)?`<div class="det" style="font-size:12px">${o.vegan.note}</div>`:''}
+  <button id="okonomiyakiGeekBtn" style="margin-top:10px;width:100%;background:#2b2218;color:#fff;border:none;border-radius:10px;padding:9px;font-weight:700;font-size:13px;cursor:pointer">🔬 Okonomiyaki Geek — the craft</button>
+ </div>`;
+}
+const OKONOMIYAKI_EDU={
+ yamaimo:"Hiroshima's crepe is just flour and water, thin enough to see the griddle through before it sets. Osaka's is different on purpose — it mixes in grated <b>nagaimo</b> (mountain yam), whose slippery starch traps air and bakes into a fluffy, custardy pancake. Hiroshima's crepe was never meant to do that job: it's a wrapper for a construction project, not the dish itself.",
+ cabbage:"The cabbage mountain is covered and left alone on purpose. Trapped steam shrinks the pile down and pulls out the cabbage's own sweetness — press or stir it, the natural instinct, and you crush the steam channels and squeeze the moisture out before it can do that work. Some shops steam it further for a softer, sweeter result; others pull it earlier to keep some bite.",
+ sauce:"The sauce is what actually <i>names</i> a shop's version of this dish, the way tare names a ramen bowl — <b>Otafuku</b> (the Hiroshima company that invented a thickened Worcestershire sauce for this exact dish in 1952) is the famous one, but plenty of shops use a rival brand, a house blend, or a sauce learned from a mentor. ⚠ Whether a given bottle is wheat-free or animal-free is NOT a brand-wide fact — ask, don't assume.",
+ noodle:"Ask for 'soba' here and you will NOT get buckwheat — the noodle under that name is the same wheat, alkaline <b>chuka-men</b> family as ramen and yakisoba, just carrying over yakisoba's naming habit. Udon is also wheat. Neither choice changes the gluten answer.",
+ garnish:"The finishing garnish changes the character without touching anything underneath it. <b>Aonori</b> (dried green seaweed) is bright, sharp, plant-based. <b>Katsuobushi</b> (bonito flakes) is smoky, fish-based, and 'dances' in the rising steam. A shop can lean on either, both, or neither.",
+ soul:"In Hiroshima-style okonomiyaki, the <b>layering is the soul</b> — everything is cooked separately and stacked, never mixed into one batter the way Osaka-style is. That refusal to mix is the one fact true of every real Hiroshima build; which protein, which noodle, whether there's mochi is downstream detail."
+};
+function renderOkonomiyakiGeekBody(o){
+ if(!o) return '';
+ const E=OKONOMIYAKI_EDU;
+ const sec=(t,h)=>h?`<div style="margin-top:12px"><div style="font-weight:700;font-size:13px">${t}</div>${h}</div>`:'';
+ const edu=t=>`<div style="font-size:12px;color:#7a6f5c;line-height:1.55;margin-top:3px">🔬 ${t}</div>`;
+ const det=t=>`<div class="det">${t}</div>`;
+ const c=o.crepe||{},cb=o.cabbage||{};
+ const buildParts=[];
+ if(cb.cut_mm) buildParts.push(`${cb.cut_mm}mm cabbage cut`);
+ if(cb.style_note) buildParts.push(cb.style_note);
+ if(cb.sourcing) buildParts.push(cb.sourcing);
+ if(c.notes) buildParts.push(c.notes);
+ const buildHtml=det(buildParts.join(' — ')||'No shop-specific deviation documented — standard flour-and-water crepe, no mountain yam, assumed.')+edu(E.yamaimo)+edu(E.cabbage);
+ const n=o.noodle||{};
+ const noodleFacts=[];
+ if(n.types_available&&n.types_available.length) noodleFacts.push(n.types_available.join(' / '));
+ if(n.house_made) noodleFacts.push('house-made');
+ if(n.supplier_note) noodleFacts.push(n.supplier_note);
+ const noodleHtml=det(noodleFacts.join(', ')||'—')+edu(E.noodle);
+ const s=o.sauce||{};
+ const sauceFacts=[];
+ if(s.brand&&s.brand!=='unknown') sauceFacts.push(s.brand.replace(/_/g,' '));
+ if(s.lineage_note) sauceFacts.push(s.lineage_note);
+ if(s.notes) sauceFacts.push(s.notes);
+ const sauceHtml=det(sauceFacts.join(' — ')||'Brand/lineage not documented for this shop.')+edu(E.sauce);
+ const g=o.garnish||{};
+ const garnishFacts=[];
+ if(g.mayo&&g.mayo!=='unknown') garnishFacts.push('mayo: '+g.mayo.replace(/_/g,' '));
+ if(g.aonori_note) garnishFacts.push(g.aonori_note);
+ if(g.katsuobushi===true) garnishFacts.push('katsuobushi used');
+ if(g.katsuobushi===false) garnishFacts.push('no katsuobushi');
+ const garnishHtml=det(garnishFacts.join(' — ')||'—')+edu(E.garnish);
+ const namesHtml=(o.menu_names||[]).length?(o.menu_names.map(m=>det(`<b>${m.name}</b>${m.price?' — '+m.price:''}${m.contents?': '+m.contents:' (contents not documented — not guessed)'}`)).join('')):'';
+ const craftHtml=(o.craft_story||[]).length?(o.craft_story.map(cs=>det(`<span style="text-transform:uppercase;font-size:10px;color:var(--muted);letter-spacing:.04em">${cs.category}</span><br>${cs.text}`)).join('')):det('Nothing shop-specific found yet — this is an honest gap, not a guess.');
+ return `<p style="font-size:12px;color:var(--muted);margin:0 0 4px">The documented craft of this build. Exact cabbage-cut measurements and sauce recipes are rarely published per shop — ask the staff, or watch the counter, for those.</p>`+
+  sec('🥬 The Build',buildHtml)+sec('🍜 The Noodle',noodleHtml)+sec('🧂 The Sauce',sauceHtml)+sec('🌊 The Garnish',garnishHtml)+sec('🔥 The Menu',namesHtml)+sec('🗺️ Shop & Lineage',craftHtml+edu(E.soul));
+}
+function openOkonomiyakiGeek(o){
+ document.getElementById('okonomiyakiGeekBody').innerHTML=renderOkonomiyakiGeekBody(o);
+ document.getElementById('okonomiyakiGeekModal').classList.add('show');
+ document.getElementById('okonomiyakiGeekClose').onclick=()=>document.getElementById('okonomiyakiGeekModal').classList.remove('show');
+ document.getElementById('okonomiyakiGeekModal').onclick=e=>{if(e.target.id==='okonomiyakiGeekModal')e.target.classList.remove('show');};
+}
 // ---------- 🍜 Build me a bowl (match by taste profile) ----------
 const BOWL_AXES=['richness','oiliness','clarity','tare_strength','noodle_firmness','aroma_punch'];
 function openBowl(){document.getElementById('bowlResults').innerHTML='';document.getElementById('bowlModal').classList.add('show');}
@@ -1635,6 +1706,7 @@ function _renderDetailSync(p){
   <div class="panel"><h3>Hours <span style="color:var(--muted);font-weight:400">(Japan time)</span></h3>${hoursHtml}</div>
   <div class="panel"><h3>What makes this place special?</h3><div class="note">${p.highlight||p.notes}</div></div>
   ${p.ramen?renderRamenPanel(p.ramen):''}
+  ${p.okonomiyaki?renderOkonomiyakiPanel(p.okonomiyaki):''}
   <div class="actions">
    <a class="btn-maps" href="${p.gmaps}" target="_blank" rel="noopener">📍 Google Maps</a>
    <button class="btn-more" id="moreBtn">🛡️ Food Safety</button>
@@ -1669,6 +1741,7 @@ function _renderDetailSync(p){
  addTouch(document.getElementById('phrasesFromDetail'),openGlossary);
  const mb=document.getElementById('menuBtn'); if(mb) addTouch(mb,()=>openMenu(p));
  const rgb=document.getElementById('ramenGeekBtn'); if(rgb) addTouch(rgb,()=>openRamenGeek(p.ramen));
+ const ogb=document.getElementById('okonomiyakiGeekBtn'); if(ogb) addTouch(ogb,()=>openOkonomiyakiGeek(p.okonomiyaki));
  (function(){const sb=document.getElementById('scanMenuBtn'),mf=document.getElementById('menuFile');
   if(sb&&mf){ addTouch(sb,()=>mf.click()); mf.onchange=e=>{ const f=e.target.files&&e.target.files[0]; if(f) scanMenu(f,{name:p.name,cuisine:p.cuisine,gf_detail:p.gf_detail,vegan_detail:p.vegan_detail},'scanOut'); mf.value=''; }; }})();
  const dcpBtn=document.getElementById('dcpBtn');

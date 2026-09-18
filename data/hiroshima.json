@@ -300,7 +300,82 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 0,
-   "menu_vegan_count": 0
+   "menu_vegan_count": 0,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "A separate JA source (chugoku-np.co.jp, a local-newspaper feature specifically about this shop’s cabbage) could not be confidently re-confirmed on direct fetch — its content appeared to possibly mix in a different shop’s chef name from the same multi-shop feature series. Not used here pending a cleaner re-check.",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [
+     {
+      "name": "Koshida Special",
+      "contents": "",
+      "price": "¥1,100",
+      "source": "https://otokonokakurega.com/meet/trip/9975/"
+     }
+    ],
+    "craft_story": [
+     {
+      "category": "history",
+      "text": "Founded 1958, operated by three generations of the same family for over 65 years, tracing its origin to a dagashi (penny-candy) shop that began selling skewered takoyaki before evolving into an okonomiyaki restaurant.",
+      "source": "https://otokonokakurega.com/meet/trip/9975/"
+     },
+     {
+      "category": "philosophy",
+      "text": "Explicitly does not chase novelty — described as pursuing “the authenticity of standard deliciousness,” with chefs working the griddle to let ingredient flavors emerge rather than leaning on heavy sauce.",
+      "source": "https://otokonokakurega.com/meet/trip/9975/"
+     }
+    ],
+    "signature_build": "Koshida Special",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": ""
+    },
+    "profile": {
+     "richness": 2,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": 1,
+     "garnish_punch": null
+    },
+    "confidence": "medium",
+    "sources": [
+     "https://otokonokakurega.com/meet/trip/9975/"
+    ],
+    "last_checked": "2026-09-19"
+   }
   },
   {
    "id": "hiro_okonomiyaki_hassho",
@@ -2463,7 +2538,89 @@
    "menu_gf_count": 1,
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 1,
-   "menu_vegan_count": 1
+   "menu_vegan_count": 1,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": "Named Hiroshima-oyster special build (広島産かきのスペシャル焼) — locally-sourced oyster emphasis stated directly."
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": "Earlier search summaries claimed a custom Otafuku order and pork-bone-broth-seasoned noodles for this shop, sourced to nagataya-okonomi.com — that domain has LAPSED to a generic hosting placeholder and is NOT live content. Those specific claims are NOT included here because they could not be re-verified against a live source. Do not resurrect them without a working citation."
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [
+     {
+      "name": "Nagata-ya焼",
+      "contents": "",
+      "price": "",
+      "source": "https://r.gnavi.co.jp/cfxfbxf00000/"
+     },
+     {
+      "name": "Special",
+      "contents": "",
+      "price": "",
+      "source": "https://r.gnavi.co.jp/cfxfbxf00000/"
+     },
+     {
+      "name": "広島産かきのスペシャル焼",
+      "contents": "Hiroshima oyster special",
+      "price": "",
+      "source": "https://r.gnavi.co.jp/cfxfbxf00000/"
+     }
+    ],
+    "craft_story": [
+     {
+      "category": "philosophy",
+      "text": "Cooks are described as preparing dishes directly in front of patrons, with reviewers specifically noting they enjoy “ライブ感を楽しみながら” (enjoying the live-cooking atmosphere) — the open-counter show is part of what the shop is known for, not incidental.",
+      "source": "https://r.gnavi.co.jp/cfxfbxf00000/"
+     }
+    ],
+    "signature_build": "Nagata-ya焼",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": ""
+    },
+    "profile": {
+     "richness": null,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "medium",
+    "sources": [
+     "https://r.gnavi.co.jp/cfxfbxf00000/"
+    ],
+    "last_checked": "2026-09-19"
+   }
   },
   {
    "id": "hiro_reimenya_otemachi",
@@ -29520,7 +29677,77 @@
    "menu_gf_count": 8,
    "menu_gf_ask_count": 23,
    "menu_gf_meals": 8,
-   "menu_vegan_count": 6
+   "menu_vegan_count": 6,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [
+     {
+      "name": "Wafu Special",
+      "contents": "Local pickled greens, mochi (rice cake), and cheese",
+      "price": "",
+      "source": "https://www.pastemagazine.com/food/japanese-food/okonomiyaki-in-hiroshima-japan-okonomimura-stalls-restaurants-ingredients-english"
+     }
+    ],
+    "craft_story": [
+     {
+      "category": "technique",
+      "text": "Unlike most Okonomimura stalls, the chef here pre-chops the finished okonomiyaki into bite-sized pieces for the customer rather than leaving that step to the diner’s own kote — a real service-style difference, not just an ingredient one.",
+      "source": "https://www.pastemagazine.com/food/japanese-food/okonomiyaki-in-hiroshima-japan-okonomimura-stalls-restaurants-ingredients-english"
+     }
+    ],
+    "signature_build": "Wafu Special",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": "Wafu Special explicitly includes cheese and mochi is often made with lard-adjacent processing; not confirmed vegan either way."
+    },
+    "profile": {
+     "richness": 3,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "medium",
+    "sources": [
+     "https://www.pastemagazine.com/food/japanese-food/okonomiyaki-in-hiroshima-japan-okonomimura-stalls-restaurants-ingredients-english"
+    ],
+    "last_checked": "2026-09-19"
+   }
   },
   {
    "id": "hiro_caff_e_ponte_italiano",
@@ -30942,7 +31169,62 @@
    "menu_gf_count": 0,
    "menu_gf_ask_count": 17,
    "menu_vegan_count": 4,
-   "menu_vegan_meals": 4
+   "menu_vegan_meals": 4,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [],
+    "craft_story": [],
+    "signature_build": "",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": ""
+    },
+    "profile": {
+     "richness": null,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "none",
+    "sources": [],
+    "last_checked": "2026-09-19"
+   }
   },
   {
    "id": "hiro_kaeruttei",
@@ -31078,7 +31360,70 @@
    "menu_gf_count": 2,
    "menu_gf_ask_count": 8,
    "menu_vegan_count": 1,
-   "menu_vegan_meals": 1
+   "menu_vegan_meals": 1,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "One JA blog summary described vegetables cut noticeably larger than typical and an overall bold/heavy seasoning; the shop’s own HotPepper listing instead describes “light-flavored preparations.” These directly conflict and neither was independently resolved — recorded as an open contradiction, not picked one way.",
+     "sourcing": ""
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [],
+    "craft_story": [
+     {
+      "category": "philosophy",
+      "text": "The shop name means roughly “a place customers come back to” (帰る, kaeru = to return, also a frog pun); regulars reportedly make up about half of the clientele. 17 seats, no reservations, no private rooms.",
+      "source": "https://www.hotpepper.jp/strJ000521556/"
+     }
+    ],
+    "signature_build": "",
+    "gf": {
+     "status": "no",
+     "note": ""
+    },
+    "vegan": {
+     "status": "no",
+     "note": ""
+    },
+    "profile": {
+     "richness": null,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "low",
+    "sources": [
+     "https://www.hotpepper.jp/strJ000521556/"
+    ],
+    "last_checked": "2026-09-19"
+   }
   },
   {
    "id": "hiro_shimai",
@@ -53107,7 +53452,70 @@
    "menu_gf_count": 7,
    "menu_gf_ask_count": 25,
    "menu_gf_meals": 7,
-   "menu_vegan_count": 6
+   "menu_vegan_count": 6,
+   "okonomiyaki": {
+    "crepe": {
+     "yamaimo": false,
+     "notes": ""
+    },
+    "cabbage": {
+     "cut_mm": null,
+     "style_note": "",
+     "sourcing": "stated as organic (有機野菜), not otherwise specified"
+    },
+    "noodle": {
+     "offers_choice": null,
+     "types_available": [],
+     "house_made": null,
+     "supplier_note": ""
+    },
+    "protein": {
+     "default": "",
+     "sourcing_note": ""
+    },
+    "sauce": {
+     "brand": "unknown",
+     "lineage_note": "",
+     "gf_status": "unconfirmed",
+     "vegan_status": "unconfirmed",
+     "notes": ""
+    },
+    "garnish": {
+     "mayo": "unknown",
+     "aonori_note": "",
+     "katsuobushi": null,
+     "other": []
+    },
+    "menu_names": [],
+    "craft_story": [
+     {
+      "category": "technique",
+      "text": "Cooks without added oil and uses organic vegetables, deliberately producing a lighter pancake than the standard Hiroshima build — positioned specifically for diners who find okonomiyaki too heavy. Standard build ¥1,200.",
+      "source": "https://japanactivity.com/how-to-eat-hiroshima-okonomiyaki-at-okonomimura"
+     }
+    ],
+    "signature_build": "",
+    "gf": {
+     "status": "no",
+     "note": "No GF-specific claim found; standard wheat crepe/noodle assumed absent contrary evidence."
+    },
+    "vegan": {
+     "status": "no",
+     "note": "No vegan-specific claim found."
+    },
+    "profile": {
+     "richness": 1,
+     "cabbage_texture": null,
+     "char_crispness": null,
+     "sauce_intensity": null,
+     "garnish_punch": null
+    },
+    "confidence": "medium",
+    "sources": [
+     "https://japanactivity.com/how-to-eat-hiroshima-okonomiyaki-at-okonomimura"
+    ],
+    "last_checked": "2026-09-19"
+   }
   },
   {
    "id": "hiro_primevere",
