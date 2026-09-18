@@ -161,12 +161,33 @@ surfacing what actually varies interestingly from place to place.
 
 ## The pass (once this schema is approved)
 
-**Pilot first, per Greg's 2026-09-18 scope decision**: 5-10 of the most documented/famous
-Hiroshima okonomiyaki shops — candidates from the existing 88 records include Mitchan
-Sohonten, Nagata-ya, and Hassei (all three already confirmed to exist as records; Hassei
-is also one of the unverified GF leads from EXPERTISE.md §14 — worth checking both angles
-on the same visit). Purpose of the pilot: prove the research actually finds real,
-sourceable, craft_story-grade detail at the depth Greg asked for — and be honest in the
-pilot report about which shops yielded real depth and which yielded only the generic
-facts everyone already knows, rather than padding the thin ones to look consistent.
-Scale to the remaining ~78 records only after the pilot's sourcing discipline holds up.
+**Pilot scope, updated 2026-09-19 (Greg: "both")** — two tracks in the same pilot:
+
+1. **The Okonomimura cluster** — ~20-25 stalls across floors 2-4 of the building. Added
+   after EXPERTISE.md §10's stall-differentiation finding: a short research pass found
+   real, sourced, non-padded differentiation for 7 stalls (Atomu, Hiro-chan, Teppei
+   Ekimae, Suigun, Syo-Chan, Daimarudou, Itsukushima) in one pass, because the venue is
+   bounded and naturally comparative — every stall cooks the same base dish a few meters
+   from its neighbors, so "what's different about this one" has an actual, findable
+   answer far more often than it does scattered across the city. Two of the 7 already
+   exist as records (Atomu as "お好み村 あとむ", Daimarudou as "大丸堂"); the other five
+   (Hiro-chan, Teppei Ekimae, Suigun, Syo-Chan, Itsukushima) need a name-matching check
+   against the existing 88 before assuming they need discovering from scratch. Building-
+   wide fact to carry into every stall's `sauce` field: multiple sources agree all
+   Okonomimura stalls share one custom sauce made for the building by Sun Foods (not
+   Otafuku) — so `sauce.brand` should default toward that shared fact rather than being
+   treated as a per-stall lineage question the way it would be for an independent shop.
+2. **The standalone famous shops** — Mitchan Sohonten, Nagata-ya, and Hassei (all three
+   already exist as records; Hassei is also one of the unverified GF leads from
+   EXPERTISE.md §14 — worth checking both angles on the same visit), plus a few more
+   independent, well-documented shops to round out a comparison AGAINST the Okonomimura
+   cluster — these are the shops that chose NOT to be part of a shared-building, shared-
+   sauce format (echoing §11's Lopez Okonomiyaki finding), so the pilot should watch for
+   whether that independence shows up as more individual craft_story material than the
+   Okonomimura stalls tend to yield, not just report both sets in isolation.
+
+Purpose of the pilot either way: prove the research actually finds real, sourceable,
+craft_story-grade detail at the depth Greg asked for — and be honest in the pilot report
+about which shops/stalls yielded real depth and which yielded only the generic facts
+everyone already knows, rather than padding the thin ones to look consistent. Scale to the
+remaining records only after the pilot's sourcing discipline holds up.
