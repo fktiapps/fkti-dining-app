@@ -434,32 +434,32 @@ li.uncited{color:#7c8299}
  </style>
  <div class="filters">
   <div class="frow">
-   <div class="search" id="searchWrap">🔍<input id="search" placeholder="Filter or type city + Go…" autocomplete="off" inputmode="search"/><button id="searchGo" style="flex:0 0 auto;font-size:12px;font-weight:700;color:var(--ver);padding:0 2px 0 6px;border-left:1px solid var(--line)">Go</button></div>
-   <button class="chip card-chip" id="cardsBtn">🪪 Show staff</button>
-   <button class="chip card-chip" id="chainsBtn">🏪 Chains</button>
-   <button class="chip card-chip" id="phrasesBtn">🗣 Phrases</button>
-   <button class="chip card-chip" id="konbiniBtn">🏪 Konbini</button>
-   <button class="chip card-chip" id="stationBtn">🚉 Station</button>
-   <button class="chip card-chip" id="learnBtn">📚 Learn</button>
-   <button class="chip card-chip" id="menupediaBtn">🍱 100 Dishes</button>
-   <button class="chip" id="filterGear">⚙ Filters</button>
+   <div class="search" id="searchWrap">🔍<input id="search" placeholder="Filter or type city + Go…" data-i18n-placeholder="search.ph" autocomplete="off" inputmode="search"/><button id="searchGo" style="flex:0 0 auto;font-size:12px;font-weight:700;color:var(--ver);padding:0 2px 0 6px;border-left:1px solid var(--line)" data-i18n="search.go">Go</button></div>
+   <button class="chip card-chip" id="cardsBtn" data-i18n="nav.staff">🪪 Show staff</button>
+   <button class="chip card-chip" id="chainsBtn" data-i18n="nav.chains">🏪 Chains</button>
+   <button class="chip card-chip" id="phrasesBtn" data-i18n="nav.phrases">🗣 Phrases</button>
+   <button class="chip card-chip" id="konbiniBtn" data-i18n="nav.konbini">🏪 Konbini</button>
+   <button class="chip card-chip" id="stationBtn" data-i18n="nav.station">🚉 Station</button>
+   <button class="chip card-chip" id="learnBtn" data-i18n="nav.learn">📚 Learn</button>
+   <button class="chip card-chip" id="menupediaBtn" data-i18n="nav.100dishes">🍱 100 Dishes</button>
+   <button class="chip" id="filterGear" data-i18n="nav.filters">⚙ Filters</button>
   </div>
   <div class="frow" id="catPills">
-   <button class="chip pill on" data-pill="all">All</button>
-   <button class="chip pill dial" id="dialVegan"><span class="dl">🌱 Vegan</span><span class="dseg"></span></button>
-   <button class="chip pill dial" id="dialGf"><span class="dl">🌾 GF</span><span class="dseg"></span></button>
-   <button class="chip pill" data-pill="ramen">🍜 Ramen</button>
-   <button class="chip pill" data-pill="okonomiyaki" id="okonomiyakiPill" style="display:none">🥞 Okonomiyaki</button>
-   <button class="chip pill" data-pill="mompop">🏮 Mom &amp; Pop</button>
-   <button class="chip pill" id="groupPill">👥 Group</button>
-   <button class="chip" id="bowlBtn" style="display:none;background:#9c3b2e;color:#fff;border:none">🍜 Build a bowl</button>
+   <button class="chip pill on" data-pill="all" data-i18n="pill.all">All</button>
+   <button class="chip pill dial" id="dialVegan"><span class="dl" data-i18n="pill.vegan">🌱 Vegan</span><span class="dseg"></span></button>
+   <button class="chip pill dial" id="dialGf"><span class="dl" data-i18n="pill.gf">🌾 GF</span><span class="dseg"></span></button>
+   <button class="chip pill" data-pill="ramen" data-i18n="pill.ramen">🍜 Ramen</button>
+   <button class="chip pill" data-pill="okonomiyaki" id="okonomiyakiPill" style="display:none" data-i18n="pill.okonomiyaki">🥞 Okonomiyaki</button>
+   <button class="chip pill" data-pill="mompop" data-i18n="pill.mompop">🏮 Mom &amp; Pop</button>
+   <button class="chip pill" id="groupPill" data-i18n="pill.group">👥 Group</button>
+   <button class="chip" id="bowlBtn" style="display:none;background:#9c3b2e;color:#fff;border:none" data-i18n="pill.bowl">🍜 Build a bowl</button>
   </div>
   <div class="filtersheet is-hidden" id="filterSheet">
-   <div class="frow"><span style="font-size:11px;color:var(--muted);width:100%">Set your diet with the 🌱 / 🌾 pills above — tap to adjust strictness, long-press for a guide.</span></div>
+   <div class="frow"><span style="font-size:11px;color:var(--muted);width:100%" data-i18n="filter.hint">Set your diet with the 🌱 / 🌾 pills above — tap to adjust strictness, long-press for a guide.</span></div>
    <div class="frow">
-    <button class="chip" data-toggle="open">● Open now</button>
-    <button class="chip" data-toggle="late">Open late</button>
-    <button class="chip" id="hideDiet">🥩 Hide diet labels</button>
+    <button class="chip" data-toggle="open" data-i18n="filter.open">● Open now</button>
+    <button class="chip" data-toggle="late" data-i18n="filter.late">Open late</button>
+    <button class="chip" id="hideDiet" data-i18n="filter.hidediet">🥩 Hide diet labels</button>
    </div>
    <div class="frow" id="cuisineRow"></div>
   </div>
@@ -468,20 +468,20 @@ li.uncited{color:#7c8299}
  <div class="body">
   <div id="map"></div>
   <div class="fabs">
-   <button class="fab fab-now" id="nowFab" aria-label="Find food near me now">🍽️</button>
-   <button class="fab fab-scan" id="scanFab" aria-label="Scan a menu">📷</button>
-   <button class="fab" id="konbiniFab" aria-label="Toggle konbini layer">🏪</button>
-   <button class="fab" id="groceryFab" aria-label="Toggle grocery layer">🛒</button>
-   <button class="fab" id="chainsFab" aria-label="Toggle reliable-chain layer">🍴</button>
-   <button class="fab" id="listBtn" aria-label="Toggle list">☰</button>
-   <button class="fab ver" id="locBtn" aria-label="Find me">◎</button>
+   <button class="fab fab-now" id="nowFab" aria-label="Find food near me now" data-i18n-aria="fab.now">🍽️</button>
+   <button class="fab fab-scan" id="scanFab" aria-label="Scan a menu" data-i18n-aria="fab.scan">📷</button>
+   <button class="fab" id="konbiniFab" aria-label="Toggle konbini layer" data-i18n-aria="fab.konbini">🏪</button>
+   <button class="fab" id="groceryFab" aria-label="Toggle grocery layer" data-i18n-aria="fab.grocery">🛒</button>
+   <button class="fab" id="chainsFab" aria-label="Toggle reliable-chain layer" data-i18n-aria="fab.chains">🍴</button>
+   <button class="fab" id="listBtn" aria-label="Toggle list" data-i18n-aria="fab.list">☰</button>
+   <button class="fab ver" id="locBtn" aria-label="Find me" data-i18n-aria="fab.locate">◎</button>
   </div>
   <div class="sheet" id="sheet">
    <div class="grab" id="grab"></div>
    <div class="list" id="listView">
     <div class="sheethead">
-     <h2>Near you</h2><span class="count" id="resCount"></span>
-     <button class="sortbtn" id="sortBtn">Sort: distance ▾</button>
+     <h2 data-i18n="sheet.nearyou">Near you</h2><span class="count" id="resCount"></span>
+     <button class="sortbtn" id="sortBtn" data-i18n="sheet.sort">Sort: distance ▾</button>
     </div>
     <div class="scroll" id="listScroll"></div>
    </div>
@@ -490,7 +490,7 @@ li.uncited{color:#7c8299}
      <div class="grab"></div>
      <div class="detail-nav-row">
       <span class="detail-nav-name" id="detailNavName"></span>
-      <button class="detail-nav-close" id="detailNavClose" aria-label="Close">✕</button>
+      <button class="detail-nav-close" id="detailNavClose" aria-label="Close" data-i18n-aria="detail.close">✕</button>
      </div>
     </div>
     <div class="scroll" id="detailScroll"></div>
@@ -502,20 +502,20 @@ li.uncited{color:#7c8299}
 <div class="modal" id="infoModal">
  <div class="box">
   <button class="closex" id="infoClose">×</button>
-  <h2>How to read this</h2>
-  <p><b>Each pin shows a symbol = gluten-free safety</b>, readable without telling colours apart. Tap any pin for details. Drag the vermilion <b>“you are here”</b> pin to scout another area; tap ◎ to snap back.</p>
+  <h2 data-i18n="info.title">How to read this</h2>
+  <p data-i18n="info.intro"><b>Each pin shows a symbol = gluten-free safety</b>, readable without telling colours apart. Tap any pin for details. Drag the vermilion <b>“you are here”</b> pin to scout another area; tap ◎ to snap back.</p>
   <div class="legend">
-   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">🛡</b>Dedicated — celiac-safe kitchen (no gluten in the building)</div>
-   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">✓</b>Fully gluten-free (wheat-free kitchen, own word)</div>
-   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">◐</b>GF options · shared kitchen — confirm prep</div>
-   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">◇</b>Ask — no GF menu, but a safe meal is negotiable</div>
-   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">·</b>Not gluten-free</div>
-   <div><span class="dot" style="background:var(--ver)"></span>You are here (drag me)</div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">🛡</b><span data-i18n="info.leg.dedicated">Dedicated — celiac-safe kitchen (no gluten in the building)</span></div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">✓</b><span data-i18n="info.leg.full">Fully gluten-free (wheat-free kitchen, own word)</span></div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">◐</b><span data-i18n="info.leg.options">GF options · shared kitchen — confirm prep</span></div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">◇</b><span data-i18n="info.leg.ask">Ask — no GF menu, but a safe meal is negotiable</span></div>
+   <div><b style="font-size:15px;width:18px;display:inline-block;text-align:center">·</b><span data-i18n="info.leg.no">Not gluten-free</span></div>
+   <div><span class="dot" style="background:var(--ver)"></span><span data-i18n="info.leg.you">You are here (drag me)</span></div>
   </div>
-  <p style="font-size:11.5px;color:var(--muted)">The <i>symbol, shape, and colour all say the same thing</i> — dark navy 🛡 → blue ✓ → amber ◐ → hollow dashed ◇ → small grey ·, safest to least. No red/green, so it reads without distinguishing hues. Pins follow whichever dial you're using — GF, or vegan (🌱) when that's the active dial. Tap the <b>🌾 GF</b> / <b>🌱 Vegan</b> pills to relax one level at a time (long-press for the full guide).</p>
-  <div class="disclaimer">This app summarises public info and is decision support, not a safety guarantee. For a serious allergy or celiac disease, always confirm cross-contamination handling with staff at the restaurant. Hours change and some places need reservations or sell out early.</div>
-  <button class="btn-card" id="refreshAppBtn">🔄 Refresh — get the latest version</button>
-  <p style="font-size:10.5px;color:var(--muted);text-align:center;margin-top:6px">Version <span id="appVer">…</span> · the app also auto-updates each time you reopen it</p>
+  <p style="font-size:11.5px;color:var(--muted)" data-i18n="info.detail">The <i>symbol, shape, and colour all say the same thing</i> — dark navy 🛡 → blue ✓ → amber ◐ → hollow dashed ◇ → small grey ·, safest to least. No red/green, so it reads without distinguishing hues. Pins follow whichever dial you're using — GF, or vegan (🌱) when that's the active dial. Tap the <b>🌾 GF</b> / <b>🌱 Vegan</b> pills to relax one level at a time (long-press for the full guide).</p>
+  <div class="disclaimer" data-i18n="info.disclaimer">This app summarises public info and is decision support, not a safety guarantee. For a serious allergy or celiac disease, always confirm cross-contamination handling with staff at the restaurant. Hours change and some places need reservations or sell out early.</div>
+  <button class="btn-card" id="refreshAppBtn" data-i18n="info.refresh">🔄 Refresh — get the latest version</button>
+  <p style="font-size:10.5px;color:var(--muted);text-align:center;margin-top:6px"><span data-i18n="info.version">Version</span> <span id="appVer">…</span> <span data-i18n="info.autoupdate">· the app also auto-updates each time you reopen it</span></p>
   <p style="font-size:11px;color:var(--muted);margin-top:12px;text-align:center">Deeply Connected Dining（深い関係食事）<br>by Deeply Connected Experiences（深い関係体験）</p>
  </div>
 </div>
@@ -523,43 +523,43 @@ li.uncited{color:#7c8299}
 <div class="modal" id="dietModal">
  <div class="box">
   <button class="closex" id="dietClose">×</button>
-  <h2>Your diet, your dial</h2>
-  <p style="font-size:12.5px;color:var(--muted);line-height:1.55">Tap the <b>🌱 Vegan</b> or <b>🌾 GF</b> pill to choose <i>how strict</i> you want to be — each tap relaxes one level and shows more places; the dots (●●●●●) show where you are. Tap past the last level to switch it off. Long-press a pill to reopen this guide.</p>
-  <h3 id="dh-gf" style="color:var(--ver);margin:14px 0 4px">🌾 Gluten-free — five levels, matching the pins</h3>
-  <div class="dh-row"><span class="dh-pill">🛡 Dedicated ●○○○○</span><div><b>Strictest.</b> No gluten in the building, corroborated — for "a particle on a shared spatula ruins three days."</div></div>
-  <div class="dh-row"><span class="dh-pill">✓ Fully-GF ●●○○○</span><div>Adds wheat-free kitchens on the venue's <b>own word</b> (thinner corroboration than dedicated).</div></div>
-  <div class="dh-row"><span class="dh-pill">◐ GF options ●●●○○</span><div>Adds real gluten-free dishes but a <b>shared kitchen</b> — confirm ingredients and prep.</div></div>
-  <div class="dh-row"><span class="dh-pill">◇ Ask ●●●●○</span><div>Adds places with no GF menu where <b>a safe meal is negotiable</b> (jūwari soba boiled in a clean pot). <b>Bring a Japanese speaker</b> — negotiating a celiac protocol isn't a translation-app job.</div></div>
-  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●●●</span><div><b>Survival mode.</b> Shows everywhere plus the 🏪 konbini · 🛒 grocery · 🍴 reliable-chain layers — "just get me a safe bite until the next store."</div></div>
-  <h3 id="dh-vegan" style="color:var(--ver);margin:16px 0 4px">🌱 Vegan</h3>
-  <div class="dh-row"><span class="dh-pill">🌱 Fully plant-based ●○○○○</span><div><b>Strictest.</b> Fully plant-based (incl. shōjin temple food) — "the only animal in the building is the cat in the corner."</div></div>
-  <div class="dh-row"><span class="dh-pill">🌱 +Options ●●●○○</span><div>Adds omnivore places with solid vegan dishes — still <b>ask whether the dashi is bonito</b>.</div></div>
-  <div class="dh-row"><span class="dh-pill">🌱 +Ask ●●●●○</span><div>Adds places where a vegan plate is negotiable — "please hold the bonito dashi."</div></div>
-  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●●●</span><div><b>Survival mode.</b> Everywhere plus the konbini · grocery · reliable-chain layers.</div></div>
-  <p style="margin-top:14px" class="disclaimer">Even the strictest tier is decision support, not a guarantee — always confirm cross-contamination (and, for vegans, bonito dashi) with the staff.</p>
+  <h2 data-i18n="diet.title">Your diet, your dial</h2>
+  <p style="font-size:12.5px;color:var(--muted);line-height:1.55" data-i18n="diet.intro">Tap the <b>🌱 Vegan</b> or <b>🌾 GF</b> pill to choose <i>how strict</i> you want to be — each tap relaxes one level and shows more places; the dots (●●●●●) show where you are. Tap past the last level to switch it off. Long-press a pill to reopen this guide.</p>
+  <h3 id="dh-gf" style="color:var(--ver);margin:14px 0 4px" data-i18n="diet.gf.h">🌾 Gluten-free — five levels, matching the pins</h3>
+  <div class="dh-row"><span class="dh-pill">🛡 Dedicated ●○○○○</span><div data-i18n="diet.gf.1"><b>Strictest.</b> No gluten in the building, corroborated — for "a particle on a shared spatula ruins three days."</div></div>
+  <div class="dh-row"><span class="dh-pill">✓ Fully-GF ●●○○○</span><div data-i18n="diet.gf.2">Adds wheat-free kitchens on the venue's <b>own word</b> (thinner corroboration than dedicated).</div></div>
+  <div class="dh-row"><span class="dh-pill">◐ GF options ●●●○○</span><div data-i18n="diet.gf.3">Adds real gluten-free dishes but a <b>shared kitchen</b> — confirm ingredients and prep.</div></div>
+  <div class="dh-row"><span class="dh-pill">◇ Ask ●●●●○</span><div data-i18n="diet.gf.4">Adds places with no GF menu where <b>a safe meal is negotiable</b> (jūwari soba boiled in a clean pot). <b>Bring a Japanese speaker</b> — negotiating a celiac protocol isn't a translation-app job.</div></div>
+  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●●●</span><div data-i18n="diet.gf.5"><b>Survival mode.</b> Shows everywhere plus the 🏪 konbini · 🛒 grocery · 🍴 reliable-chain layers — "just get me a safe bite until the next store."</div></div>
+  <h3 id="dh-vegan" style="color:var(--ver);margin:16px 0 4px" data-i18n="diet.vegan.h">🌱 Vegan</h3>
+  <div class="dh-row"><span class="dh-pill">🌱 Fully plant-based ●○○○○</span><div data-i18n="diet.vegan.1"><b>Strictest.</b> Fully plant-based (incl. shōjin temple food) — "the only animal in the building is the cat in the corner."</div></div>
+  <div class="dh-row"><span class="dh-pill">🌱 +Options ●●●○○</span><div data-i18n="diet.vegan.2">Adds omnivore places with solid vegan dishes — still <b>ask whether the dashi is bonito</b>.</div></div>
+  <div class="dh-row"><span class="dh-pill">🌱 +Ask ●●●●○</span><div data-i18n="diet.vegan.3">Adds places where a vegan plate is negotiable — "please hold the bonito dashi."</div></div>
+  <div class="dh-row"><span class="dh-pill">🍚 Need rice ●●●●●</span><div data-i18n="diet.vegan.4"><b>Survival mode.</b> Everywhere plus the konbini · grocery · reliable-chain layers.</div></div>
+  <p style="margin-top:14px" class="disclaimer" data-i18n="diet.disclaimer">Even the strictest tier is decision support, not a guarantee — always confirm cross-contamination (and, for vegans, bonito dashi) with the staff.</p>
  </div>
 </div>
 
 <div class="modal" id="groupModal">
  <div class="box">
   <button class="closex" id="groupClose">×</button>
-  <h2>👥 Group mode</h2>
-  <p style="font-size:12.5px;color:var(--muted);line-height:1.55">Leading a mixed group? This finds <b>spots where everyone can eat within a short walk</b> — even if that means splitting across 2–3 nearby places. Set who's along, then "meet back in an hour."</p>
-  <div style="margin:12px 0"><div class="grp-lbl">🌾 Gluten-free diners</div>
-   <div class="frow"><button class="chip greq" data-greq="0">None</button><button class="chip greq on" data-greq="1">🛡 Celiac-safe</button><button class="chip greq" data-greq="2">GF options</button></div></div>
-  <div style="margin:12px 0"><div class="grp-lbl">🌱 Vegan diners</div>
-   <div class="frow"><button class="chip vreq" data-vreq="0">None</button><button class="chip vreq on" data-vreq="1">🌱 Plant-based</button><button class="chip vreq" data-vreq="2">Vegan options</button></div></div>
-  <div style="margin:12px 0"><div class="grp-lbl">Max walk between spots</div>
-   <div class="frow"><button class="chip walk on" data-walk="160">~2 min</button><button class="chip walk" data-walk="400">~5 min</button></div></div>
-  <p class="grp-note">Omnivores can eat anywhere nearby — no need to set them.</p>
-  <button class="btn-card" id="groupFind">Find group spots</button>
+  <h2 data-i18n="group.title">👥 Group mode</h2>
+  <p style="font-size:12.5px;color:var(--muted);line-height:1.55" data-i18n="group.intro">Leading a mixed group? This finds <b>spots where everyone can eat within a short walk</b> — even if that means splitting across 2–3 nearby places. Set who's along, then "meet back in an hour."</p>
+  <div style="margin:12px 0"><div class="grp-lbl" data-i18n="group.gflbl">🌾 Gluten-free diners</div>
+   <div class="frow"><button class="chip greq" data-greq="0" data-i18n="group.none">None</button><button class="chip greq on" data-greq="1" data-i18n="group.celiacsafe">🛡 Celiac-safe</button><button class="chip greq" data-greq="2" data-i18n="group.gfoptions">GF options</button></div></div>
+  <div style="margin:12px 0"><div class="grp-lbl" data-i18n="group.veganlbl">🌱 Vegan diners</div>
+   <div class="frow"><button class="chip vreq" data-vreq="0" data-i18n="group.none2">None</button><button class="chip vreq on" data-vreq="1" data-i18n="group.plantbased">🌱 Plant-based</button><button class="chip vreq" data-vreq="2" data-i18n="group.veganoptions">Vegan options</button></div></div>
+  <div style="margin:12px 0"><div class="grp-lbl" data-i18n="group.walklbl">Max walk between spots</div>
+   <div class="frow"><button class="chip walk on" data-walk="160" data-i18n="group.walk2">~2 min</button><button class="chip walk" data-walk="400" data-i18n="group.walk5">~5 min</button></div></div>
+  <p class="grp-note" data-i18n="group.note">Omnivores can eat anywhere nearby — no need to set them.</p>
+  <button class="btn-card" id="groupFind" data-i18n="group.find">Find group spots</button>
  </div>
 </div>
 
 <div class="modal" id="nowModal">
  <div class="box">
   <button class="closex" id="nowClose">×</button>
-  <h2>🍽️ Food near me — now</h2>
+  <h2 data-i18n="now.title">🍽️ Food near me — now</h2>
   <div id="nowBody"></div>
  </div>
 </div>
@@ -567,7 +567,7 @@ li.uncited{color:#7c8299}
 <div class="modal" id="stationModal">
  <div class="box">
   <button class="closex" id="stationClose">×</button>
-  <h2 id="stationTitle">🚉 Station survival</h2>
+  <h2 id="stationTitle" data-i18n="station.title">🚉 Station survival</h2>
   <div id="stationBody"></div>
  </div>
 </div>
@@ -575,23 +575,23 @@ li.uncited{color:#7c8299}
 <div class="modal" id="cardModal">
  <div class="box">
   <button class="closex" id="cardClose">×</button>
-  <h2>Show staff a card</h2>
-  <p style="margin:2px 0 0">Hand your phone to the staff — these explain the diet in Japanese, including the things that trip people up here (wheat hidden in soy sauce; fish dashi in almost everything).</p>
+  <h2 data-i18n="card.title">Show staff a card</h2>
+  <p style="margin:2px 0 0" data-i18n="card.intro">Hand your phone to the staff — these explain the diet in Japanese, including the things that trip people up here (wheat hidden in soy sauce; fish dashi in almost everything).</p>
   <div class="cards-seg" id="cardSeg">
-   <button class="celiac on" data-card="celiac">Celiac / Gluten-free</button>
-   <button class="vegan" data-card="vegan">Vegan</button>
+   <button class="celiac on" data-card="celiac" data-i18n="card.celiac">Celiac / Gluten-free</button>
+   <button class="vegan" data-card="vegan" data-i18n="card.vegan">Vegan</button>
   </div>
   <div id="cardBody"></div>
-  <div class="bright-tip">Tip: turn screen brightness up so it’s easy to read.</div>
+  <div class="bright-tip" data-i18n="card.brighttip">Tip: turn screen brightness up so it’s easy to read.</div>
  </div>
 </div>
 
 <div class="modal" id="scanModal">
  <div class="box">
   <button class="closex" id="scanClose">×</button>
-  <h2>📷 Scan any menu</h2>
-  <p style="margin:2px 0 0">Photograph a menu — even somewhere not in this app — and get what looks safe for <b>gluten-free</b> and <b>vegan</b> diners, plus questions to ask (English, Japanese &amp; romaji).</p>
-  <button class="btn-scan" id="scanModalBtn" style="margin-top:13px">📷 Take or choose a menu photo</button>
+  <h2 data-i18n="scan.title">📷 Scan any menu</h2>
+  <p style="margin:2px 0 0" data-i18n="scan.intro">Photograph a menu — even somewhere not in this app — and get what looks safe for <b>gluten-free</b> and <b>vegan</b> diners, plus questions to ask (English, Japanese &amp; romaji).</p>
+  <button class="btn-scan" id="scanModalBtn" style="margin-top:13px" data-i18n="scan.btn">📷 Take or choose a menu photo</button>
   <input type="file" id="scanModalFile" accept="image/*" capture="environment" style="display:none"/>
   <div id="scanModalOut"></div>
  </div>
@@ -600,8 +600,8 @@ li.uncited{color:#7c8299}
 <div class="modal" id="chainsModal">
  <div class="box">
   <button class="closex" id="chainsClose">×</button>
-  <h2>🏪 Reliable chains</h2>
-  <p style="margin:2px 0 0">The safety net for the evening the plan falls through. These are everywhere, open late, and — unlike almost anything else — they publish per-item allergen data. Ordered best-first for each diet.</p>
+  <h2 data-i18n="chains.title">🏪 Reliable chains</h2>
+  <p style="margin:2px 0 0" data-i18n="chains.intro">The safety net for the evening the plan falls through. These are everywhere, open late, and — unlike almost anything else — they publish per-item allergen data. Ordered best-first for each diet.</p>
   <div id="chainsBody"></div>
  </div>
 </div>
@@ -609,56 +609,56 @@ li.uncited{color:#7c8299}
 <div class="modal" id="phraseModal">
  <div class="box">
   <button class="closex" id="phraseClose">×</button>
-  <h2>🗣 Useful phrases</h2>
-  <p style="margin:2px 0 0">Point or read aloud — each phrase has the Japanese (with kana over the kanji to learn it) and romaji to pronounce it. Hand staff the phone if it's easier.</p>
+  <h2 data-i18n="phrase.title">🗣 Useful phrases</h2>
+  <p style="margin:2px 0 0" data-i18n="phrase.intro">Point or read aloud — each phrase has the Japanese (with kana over the kanji to learn it) and romaji to pronounce it. Hand staff the phone if it's easier.</p>
   <div id="phraseBody"></div>
  </div>
 </div>
 <div class="modal" id="konbiniModal">
  <div class="box">
   <button class="closex" id="konbiniClose">×</button>
-  <h2>🏪 Konbini GF / Vegan</h2>
-  <p style="margin:2px 0 0">Decision support, not a guarantee — scan the label (原材料名) on every item. Pick a chain, then check the shopping lists.</p>
+  <h2 data-i18n="konbini.title">🏪 Konbini GF / Vegan</h2>
+  <p style="margin:2px 0 0" data-i18n="konbini.intro">Decision support, not a guarantee — scan the label (原材料名) on every item. Pick a chain, then check the shopping lists.</p>
   <div id="konbiniBody"></div>
  </div>
 </div>
 <div class="modal" id="labelModal">
  <div class="box">
   <button class="closex" id="labelClose">×</button>
-  <h2>📷 Read an ingredient label</h2>
-  <p style="font-size:12px;color:var(--muted);margin:2px 0 8px">Photograph the 原材料名 (ingredients) panel on any package — we’ll translate it and flag wheat/gluten &amp; animal products. Decision-support, not a guarantee.</p>
+  <h2 data-i18n="label.title">📷 Read an ingredient label</h2>
+  <p style="font-size:12px;color:var(--muted);margin:2px 0 8px" data-i18n="label.intro">Photograph the 原材料名 (ingredients) panel on any package — we’ll translate it and flag wheat/gluten &amp; animal products. Decision-support, not a guarantee.</p>
   <input type="file" accept="image/*" capture="environment" id="labelFile" style="display:none"/>
-  <button id="labelShoot" style="width:100%;background:#9c3b2e;color:#fff;border:none;border-radius:10px;padding:11px;font-weight:700;cursor:pointer">📷 Take / choose a photo</button>
+  <button id="labelShoot" style="width:100%;background:#9c3b2e;color:#fff;border:none;border-radius:10px;padding:11px;font-weight:700;cursor:pointer" data-i18n="label.btn">📷 Take / choose a photo</button>
   <div id="labelOut" style="margin-top:10px"></div>
  </div>
 </div>
 <div class="modal" id="learnModal">
  <div class="box">
   <button class="closex" id="learnClose">×</button>
-  <h2>📚 Learn — survival Japanese</h2>
-  <p style="font-size:12px;color:var(--muted);margin:2px 0 8px">Tap the card to flip · 🔊 to hear it. Five minutes a day for a week goes a long way.</p>
+  <h2 data-i18n="learn.title">📚 Learn — survival Japanese</h2>
+  <p style="font-size:12px;color:var(--muted);margin:2px 0 8px" data-i18n="learn.intro">Tap the card to flip · 🔊 to hear it. Five minutes a day for a week goes a long way.</p>
   <div id="learnTabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px"></div>
   <div id="learnCard" class="learn-card"></div>
   <div style="display:flex;align-items:center;gap:8px;margin-top:10px">
-   <button class="chip" id="learnPrev" aria-label="Previous">‹</button>
-   <button class="chip" id="learnFlipBtn" style="flex:1">Flip</button>
-   <button class="chip" id="learnSpeak" aria-label="Speak">🔊</button>
-   <button class="chip" id="learnNext" aria-label="Next">›</button>
+   <button class="chip" id="learnPrev" aria-label="Previous" data-i18n-aria="learn.prev">‹</button>
+   <button class="chip" id="learnFlipBtn" style="flex:1" data-i18n="learn.flip">Flip</button>
+   <button class="chip" id="learnSpeak" aria-label="Speak" data-i18n-aria="learn.speak">🔊</button>
+   <button class="chip" id="learnNext" aria-label="Next" data-i18n-aria="learn.next">›</button>
   </div>
   <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px">
    <span id="learnCount" style="font-size:12px;color:var(--muted)"></span>
-   <button class="chip" id="learnShuf">🔀 Shuffle</button>
+   <button class="chip" id="learnShuf" data-i18n="learn.shuffle">🔀 Shuffle</button>
   </div>
  </div>
 </div>
 <div class="modal" id="mpModal">
  <div class="box">
   <button class="closex" id="mpClose">×</button>
-  <h2 id="mpTitle">🍱 100 Dishes <span style="font-size:12px;font-weight:400;color:var(--muted)">that build this cuisine</span></h2>
-  <p id="mpIntro" style="font-size:12px;color:var(--muted);margin:2px 0 8px">The dishes you'll meet most across Kyoto's kitchens — tap one for its story, and how it reads for gluten-free &amp; vegan diners.</p>
+  <h2 id="mpTitle"><span data-i18n="mp.title">🍱 100 Dishes</span> <span style="font-size:12px;font-weight:400;color:var(--muted)" data-i18n="mp.subtitle">that build this cuisine</span></h2>
+  <p id="mpIntro" style="font-size:12px;color:var(--muted);margin:2px 0 8px" data-i18n="mp.intro">The dishes you'll meet most across Kyoto's kitchens — tap one for its story, and how it reads for gluten-free &amp; vegan diners.</p>
   <div id="mpTabs" style="display:flex;gap:6px;margin-bottom:10px">
-   <button class="chip" id="mpTabDishes" onclick="mpGrid('dishes')">🍱 100 Dishes</button>
-   <button class="chip" id="mpTabFound" onclick="mpGrid('foundations')">🧂 Foundations</button>
+   <button class="chip" id="mpTabDishes" onclick="mpGrid('dishes')" data-i18n="mp.tab.dishes">🍱 100 Dishes</button>
+   <button class="chip" id="mpTabFound" onclick="mpGrid('foundations')" data-i18n="mp.tab.found">🧂 Foundations</button>
   </div>
   <div id="mpList"></div>
   <div id="mpReader" style="display:none"></div>
@@ -667,42 +667,42 @@ li.uncited{color:#7c8299}
 <div class="modal" id="menuModal">
  <div class="box">
   <button class="closex" id="menuClose">×</button>
-  <h2>📋 Menu</h2>
+  <h2 data-i18n="menu.title">📋 Menu</h2>
   <div id="menuBody"></div>
  </div>
 </div>
 <div class="modal" id="ramenGeekModal">
  <div class="box">
   <button class="closex" id="ramenGeekClose">×</button>
-  <h2>🔬 Ramen Geek</h2>
+  <h2 data-i18n="ramengeek.title">🔬 Ramen Geek</h2>
   <div id="ramenGeekBody"></div>
  </div>
 </div>
 <div class="modal" id="okonomiyakiGeekModal">
  <div class="box">
   <button class="closex" id="okonomiyakiGeekClose">×</button>
-  <h2>🔬 Okonomiyaki Geek</h2>
+  <h2 data-i18n="okonomiyakigeek.title">🔬 Okonomiyaki Geek</h2>
   <div id="okonomiyakiGeekBody"></div>
  </div>
 </div>
 <div class="modal" id="bowlModal">
  <div class="box">
   <button class="closex" id="bowlClose">×</button>
-  <h2>🍜 Build me a bowl</h2>
-  <p style="font-size:12px;color:var(--muted);margin:0 0 6px">Dial in what you're craving — we'll rank the closest shops.</p>
+  <h2 data-i18n="bowl.title">🍜 Build me a bowl</h2>
+  <p style="font-size:12px;color:var(--muted);margin:0 0 6px" data-i18n="bowl.intro">Dial in what you're craving — we'll rank the closest shops.</p>
   <div id="bowlSliders">
-   <label>Richness <span>light → rich</span><input type="range" min="0" max="5" value="3" id="bw_richness"></label>
-   <label>Oiliness <span>clean → oily</span><input type="range" min="0" max="5" value="2" id="bw_oiliness"></label>
-   <label>Body <span>clear → creamy</span><input type="range" min="0" max="5" value="2" id="bw_clarity"></label>
-   <label>Tare <span>mild → bold</span><input type="range" min="0" max="5" value="3" id="bw_tare_strength"></label>
-   <label>Noodles <span>soft → firm</span><input type="range" min="0" max="5" value="3" id="bw_noodle_firmness"></label>
-   <label>Aroma <span>subtle → aromatic</span><input type="range" min="0" max="5" value="3" id="bw_aroma_punch"></label>
+   <label><span data-i18n="bowl.richness">Richness</span> <span data-i18n="bowl.richness.range">light → rich</span><input type="range" min="0" max="5" value="3" id="bw_richness"></label>
+   <label><span data-i18n="bowl.oiliness">Oiliness</span> <span data-i18n="bowl.oiliness.range">clean → oily</span><input type="range" min="0" max="5" value="2" id="bw_oiliness"></label>
+   <label><span data-i18n="bowl.body">Body</span> <span data-i18n="bowl.body.range">clear → creamy</span><input type="range" min="0" max="5" value="2" id="bw_clarity"></label>
+   <label><span data-i18n="bowl.tare">Tare</span> <span data-i18n="bowl.tare.range">mild → bold</span><input type="range" min="0" max="5" value="3" id="bw_tare_strength"></label>
+   <label><span data-i18n="bowl.noodles">Noodles</span> <span data-i18n="bowl.noodles.range">soft → firm</span><input type="range" min="0" max="5" value="3" id="bw_noodle_firmness"></label>
+   <label><span data-i18n="bowl.aroma">Aroma</span> <span data-i18n="bowl.aroma.range">subtle → aromatic</span><input type="range" min="0" max="5" value="3" id="bw_aroma_punch"></label>
   </div>
-  <div class="bowlchips"><span>Broth</span><button class="chip" data-broth="tonkotsu">Tonkotsu</button><button class="chip" data-broth="chicken">Chicken</button><button class="chip" data-broth="gyokai">Seafood</button><button class="chip" data-broth="niboshi">Niboshi</button><button class="chip" data-broth="vegetable">Vegetable</button></div>
-  <div class="bowlchips"><span>Tare</span><button class="chip" data-tare="shoyu">Shoyu</button><button class="chip" data-tare="shio">Shio</button><button class="chip" data-tare="miso">Miso</button></div>
-  <div class="bowlchips"><span>Style</span><button class="chip" data-texture="chintan">Clear</button><button class="chip" data-texture="paitan">Creamy</button></div>
-  <div class="bowlchips"><span>Match</span><button class="chip" data-tol="0.5">Tight</button><button class="chip on" data-tol="1">Medium</button><button class="chip" data-tol="2">Loose</button></div>
-  <button id="bowlFind" style="width:100%;margin-top:14px;background:#9c3b2e;color:#fff;border:none;border-radius:10px;padding:12px;font-weight:700;cursor:pointer">Find my bowl →</button>
+  <div class="bowlchips"><span data-i18n="bowl.broth">Broth</span><button class="chip" data-broth="tonkotsu" data-i18n="bowl.tonkotsu">Tonkotsu</button><button class="chip" data-broth="chicken" data-i18n="bowl.chicken">Chicken</button><button class="chip" data-broth="gyokai" data-i18n="bowl.seafood">Seafood</button><button class="chip" data-broth="niboshi" data-i18n="bowl.niboshi">Niboshi</button><button class="chip" data-broth="vegetable" data-i18n="bowl.vegetable">Vegetable</button></div>
+  <div class="bowlchips"><span data-i18n="bowl.tarelbl">Tare</span><button class="chip" data-tare="shoyu" data-i18n="bowl.shoyu">Shoyu</button><button class="chip" data-tare="shio" data-i18n="bowl.shio">Shio</button><button class="chip" data-tare="miso" data-i18n="bowl.miso">Miso</button></div>
+  <div class="bowlchips"><span data-i18n="bowl.stylelbl">Style</span><button class="chip" data-texture="chintan" data-i18n="bowl.clear">Clear</button><button class="chip" data-texture="paitan" data-i18n="bowl.creamy">Creamy</button></div>
+  <div class="bowlchips"><span data-i18n="bowl.matchlbl">Match</span><button class="chip" data-tol="0.5" data-i18n="bowl.tight">Tight</button><button class="chip on" data-tol="1" data-i18n="bowl.medium">Medium</button><button class="chip" data-tol="2" data-i18n="bowl.loose">Loose</button></div>
+  <button id="bowlFind" style="width:100%;margin-top:14px;background:#9c3b2e;color:#fff;border:none;border-radius:10px;padding:12px;font-weight:700;cursor:pointer" data-i18n="bowl.find">Find my bowl →</button>
   <div id="bowlResults" style="margin-top:12px"></div>
  </div>
 </div>
@@ -710,20 +710,20 @@ li.uncited{color:#7c8299}
 <!-- DCP acknowledgment modal — must be before the app script -->
 <div class="dcp-modal" id="dcpModal" role="dialog" aria-modal="true">
  <div class="dcp-box">
-  <div class="dcp-title">🌸 Deeply Connected Place</div>
-  <div class="dcp-body">
+  <div class="dcp-title" data-i18n="dcp.title">🌸 Deeply Connected Place</div>
+  <div class="dcp-body" data-i18n="dcp.body">
    Greg has visited this place personally and is sharing it with care. These are not tourist destinations — they are beloved local spots that exist for the people who live nearby.<br><br><strong>Before you continue, please read this:</strong>
   </div>
-  <div class="dcp-rules">
+  <div class="dcp-rules" data-i18n="dcp.rules">
    • <b>Maximum 4 people.</b> A larger group overwhelms a small space and its regulars.<br>
    • <b>Honour the cultural comfort level.</b> Guide required means guide required. Don't improvise.<br>
    • <b>Learn the minimum:</b> おねがいします · ありがとうございました · すみません.<br>
    • <b>If it's full, leave quietly.</b> Don't wait at the door.<br>
    • <b>You are a guest in someone's daily life.</b> They were not expecting you.
   </div>
-  <div style="font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:4px">By continuing you acknowledge that you will treat this place with the same respect you would want someone to show your own favourite neighbourhood spot.</div>
-  <button class="dcp-confirm" id="dcpConfirm">I understand — show me Greg's note</button>
-  <button class="dcp-cancel" id="dcpCancel">Go back</button>
+  <div style="font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:4px" data-i18n="dcp.ack">By continuing you acknowledge that you will treat this place with the same respect you would want someone to show your own favourite neighbourhood spot.</div>
+  <button class="dcp-confirm" id="dcpConfirm" data-i18n="dcp.confirm">I understand — show me Greg's note</button>
+  <button class="dcp-cancel" id="dcpCancel" data-i18n="dcp.cancel">Go back</button>
  </div>
 </div>
 
@@ -808,6 +808,104 @@ function applyLangLabels(p,lang){
  if(gf==null && vg==null) return p;
  return {...p, gf_label:gf!=null?gf:p.gf_label, vegan_label:vg!=null?vg:p.vegan_label};
 }
+
+// ---------- UI-chrome strings ----------
+// Static markup is tagged data-i18n="key" (or data-i18n-placeholder/-title/-aria)
+// and swapped in bulk by applyI18nStrings(). A few spots build their own text in
+// JS (the sort button's toggle label, the 100-Dishes/Foundations tab switch) —
+// those call t(key, englishFallback) directly instead, since they never have a
+// single static default to capture from the DOM.
+let STRINGS_EN=null;
+function t(key,en){ return (state.lang==='ja' && STRINGS_JA[key]!=null) ? STRINGS_JA[key] : en; }
+function applyI18nStrings(lang){
+ if(!STRINGS_EN){
+  STRINGS_EN={};
+  document.querySelectorAll('[data-i18n]').forEach(el=>{STRINGS_EN[el.dataset.i18n]=el.innerHTML;});
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{STRINGS_EN['ph:'+el.dataset.i18nPlaceholder]=el.getAttribute('placeholder');});
+  document.querySelectorAll('[data-i18n-aria]').forEach(el=>{STRINGS_EN['ar:'+el.dataset.i18nAria]=el.getAttribute('aria-label');});
+ }
+ const T=lang==='ja'?STRINGS_JA:STRINGS_EN;
+ document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n; if(T[k]!=null) el.innerHTML=T[k];});
+ document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{const k='ph:'+el.dataset.i18nPlaceholder; if(T[k]!=null) el.setAttribute('placeholder',T[k]);});
+ document.querySelectorAll('[data-i18n-aria]').forEach(el=>{const k='ar:'+el.dataset.i18nAria; if(T[k]!=null) el.setAttribute('aria-label',T[k]);});
+}
+const STRINGS_JA={
+ 'ph:search.ph':'絞り込み、または都市名を入力してGo…','search.go':'移動',
+ 'nav.staff':'🪪 スタッフに見せる','nav.chains':'🏪 チェーン店','nav.phrases':'🗣 フレーズ','nav.konbini':'🏪 コンビニ','nav.station':'🚉 駅','nav.learn':'📚 学ぶ','nav.100dishes':'🍱 100品の料理','nav.filters':'⚙ フィルター',
+ 'pill.all':'すべて','pill.vegan':'🌱 ヴィーガン','pill.gf':'🌾 GF','pill.ramen':'🍜 ラーメン','pill.okonomiyaki':'🥞 お好み焼き','pill.mompop':'🏮 個人経営店','pill.group':'👥 グループ','pill.bowl':'🍜 自分好みの一杯を探す',
+ 'filter.hint':'上の🌱／🌾ボタンで食事制限を設定してください — タップで厳しさを調整、長押しでガイドを表示。','filter.open':'● 営業中','filter.late':'深夜営業','filter.hidediet':'🥩 食事表示を隠す',
+ 'ar:fab.now':'今すぐ近くの食事を探す','ar:fab.scan':'メニューをスキャン','ar:fab.konbini':'コンビニ表示の切り替え','ar:fab.grocery':'スーパー表示の切り替え','ar:fab.chains':'信頼できるチェーン店表示の切り替え','ar:fab.list':'リスト表示の切り替え','ar:fab.locate':'現在地を表示',
+ 'sheet.nearyou':'近くのお店','sheet.sort':'並び替え：距離順 ▾','ar:detail.close':'閉じる',
+ 'sort.distance':'並び替え：距離順 ▾','sort.name':'並び替え：名前順 ▾',
+ 'info.title':'見方について',
+ 'info.intro':'<b>各ピンの記号はグルテンフリーの安全度を示しています</b>。色を区別できなくても読み取れます。ピンをタップすると詳細が表示されます。朱色の<b>「現在地」</b>ピンをドラッグして別のエリアを確認でき、◎をタップすると元の位置に戻ります。',
+ 'info.leg.dedicated':'専用 — セリアック対応の厨房（建物内にグルテンなし）','info.leg.full':'完全グルテンフリー（小麦不使用の厨房、店舗の自己申告）','info.leg.options':'グルテンフリーの選択肢あり・共用厨房 — 調理法を要確認','info.leg.ask':'要相談 — グルテンフリーメニューはないが、安全な食事を相談できる可能性あり','info.leg.no':'グルテンフリーではない','info.leg.you':'現在地（ドラッグ可能）',
+ 'info.detail':'<i>記号・形・色はすべて同じ意味を示しています</i> — 濃紺🛡 → 青✓ → 琥珀◐ → 点線の◇ → 小さいグレーの・の順に、安全度が高いものから低いものへ。赤／緑は使用していないため、色の区別ができなくても読み取れます。ピンは現在使用しているダイヤル（グルテンフリー、またはそちらが選択されている場合はヴィーガン🌱）に応じて表示されます。<b>🌾 GF</b>／<b>🌱 ヴィーガン</b>ボタンをタップすると一段階ずつ条件を緩められます（長押しで完全なガイドを表示）。',
+ 'info.disclaimer':'このアプリは公開情報をまとめたものであり、判断の参考であって安全性を保証するものではありません。重度のアレルギーやセリアック病の場合は、必ず店舗スタッフにコンタミネーション（相互汚染）対策を直接確認してください。営業時間は変更されることがあり、予約が必要な店や早めに売り切れる店もあります。',
+ 'info.refresh':'🔄 更新 — 最新バージョンを取得','info.version':'バージョン','info.autoupdate':'・アプリは開き直すたびに自動更新もされます',
+ 'diet.title':'あなたの食事制限、あなたのダイヤル',
+ 'diet.intro':'<b>🌱 ヴィーガン</b>または<b>🌾 GF</b>ボタンをタップして<i>どれくらい厳しくするか</i>を選んでください — タップするたびに1段階ずつ条件が緩くなり、表示されるお店が増えます。ドット（●●●●●）が現在の位置を示します。最後の段階を超えてタップするとオフになります。ボタンを長押しするとこのガイドを再度開けます。',
+ 'diet.gf.h':'🌾 グルテンフリー — ピンに対応する5段階',
+ 'diet.gf.1':'<b>最も厳格。</b>建物内にグルテンが一切ないことが裏付けられています — 「共用のヘラに付いた一粒で3日間体調を崩す」人向け。',
+ 'diet.gf.2':'店舗<b>自己申告</b>の小麦不使用厨房も追加されます（専用よりは裏付けが弱くなります）。',
+ 'diet.gf.3':'実際のグルテンフリー料理はありますが<b>共用厨房</b>です — 食材と調理法を確認してください。',
+ 'diet.gf.4':'GFメニューはないものの<b>安全な食事を相談できる</b>お店も追加されます（清潔な鍋で茹でた十割そばなど）。<b>日本語を話せる人を同伴してください</b> — セリアック対応の相談は翻訳アプリでは荷が重い作業です。',
+ 'diet.gf.5':'<b>サバイバルモード。</b>あらゆる場所に加えて🏪コンビニ・🛒スーパー・🍴信頼できるチェーン店のレイヤーも表示します — 「次の店まで、とにかく安全に食べられる何かが欲しい」人向け。',
+ 'diet.vegan.h':'🌱 ヴィーガン',
+ 'diet.vegan.1':'<b>最も厳格。</b>完全に植物性のみ（精進料理を含む）— 「建物の中にいる動物は隅にいる猫だけ」というレベル。',
+ 'diet.vegan.2':'しっかりしたヴィーガン料理がある雑食系のお店も追加されます — それでも<b>だしがかつおかどうかは確認してください</b>。',
+ 'diet.vegan.3':'ヴィーガンの一皿を相談できるお店も追加されます — 「かつおだし抜きでお願いします」というレベル。',
+ 'diet.vegan.4':'<b>サバイバルモード。</b>あらゆる場所に加えてコンビニ・スーパー・信頼できるチェーン店のレイヤーも表示します。',
+ 'diet.disclaimer':'最も厳格な段階であっても判断の参考であり保証ではありません — コンタミネーション（ヴィーガンの場合はかつおだしも）について必ずスタッフに確認してください。',
+ 'group.title':'👥 グループモード',
+ 'group.intro':'食事制限の異なるグループを連れている方へ。<b>徒歩圏内で全員が食事できるスポット</b>を探します — 近くの2～3店に分かれることになっても構いません。同行者を設定して、「1時間後に集合」しましょう。',
+ 'group.gflbl':'🌾 グルテンフリーの同行者','group.none':'なし','group.celiacsafe':'🛡 セリアック対応','group.gfoptions':'GFの選択肢あり',
+ 'group.veganlbl':'🌱 ヴィーガンの同行者','group.none2':'なし','group.plantbased':'🌱 植物性','group.veganoptions':'ヴィーガンの選択肢あり',
+ 'group.walklbl':'店舗間の最大徒歩時間','group.walk2':'約2分','group.walk5':'約5分',
+ 'group.note':'食事制限のない人は近くのどこでも食べられるため、設定は不要です。','group.find':'グループ向けスポットを探す',
+ 'now.title':'🍽️ 今すぐ近くで食事','station.title':'🚉 駅でのサバイバル',
+ 'card.title':'スタッフにカードを見せる',
+ 'card.intro':'スマートフォンをスタッフに渡してください — 日本語で食事制限を説明するカードで、見落としがちなポイント（醤油に隠れた小麦、ほぼすべてに使われる魚だしなど）も含まれています。',
+ 'card.celiac':'セリアック病／グルテンフリー','card.vegan':'ヴィーガン','card.brighttip':'ヒント：画面の明るさを上げて読みやすくしてください。',
+ 'scan.title':'📷 メニューをスキャン',
+ 'scan.intro':'メニューを撮影してください — このアプリに載っていない店でも構いません — <b>グルテンフリー</b>と<b>ヴィーガン</b>それぞれにとって安全に見える項目と、確認すべき質問（英語・日本語・ローマ字）を表示します。',
+ 'scan.btn':'📷 メニューの写真を撮る・選ぶ',
+ 'chains.title':'🏪 信頼できるチェーン店',
+ 'chains.intro':'計画が崩れた夜のセーフティネットです。これらの店はどこにでもあり、深夜まで営業しており、他のほとんどの店とは違って品目ごとのアレルゲン情報を公開しています。各食事制限に合わせて最適な順に並んでいます。',
+ 'phrase.title':'🗣 便利なフレーズ',
+ 'phrase.intro':'指差すか、声に出して読んでください — 各フレーズには漢字の上にふりがなを振った日本語と、発音のためのローマ字が付いています。伝えやすければスタッフに電話画面を見せてください。',
+ 'konbini.title':'🏪 コンビニ グルテンフリー／ヴィーガン',
+ 'konbini.intro':'判断の参考であり保証ではありません — 商品ごとに原材料名のラベルを確認してください。チェーンを選び、買い物リストを確認しましょう。',
+ 'label.title':'📷 原材料表示を読み取る',
+ 'label.intro':'パッケージの原材料名欄を撮影してください — 翻訳し、小麦・グルテンや動物性食品を示します。判断の参考であり保証ではありません。',
+ 'label.btn':'📷 写真を撮る・選ぶ',
+ 'learn.title':'📚 学ぶ — サバイバル日本語',
+ 'learn.intro':'カードをタップすると裏返ります・🔊で音声再生。1週間、1日5分で大きな効果があります。',
+ 'ar:learn.prev':'前へ','learn.flip':'裏返す','ar:learn.speak':'発音','ar:learn.next':'次へ','learn.shuffle':'🔀 シャッフル',
+ 'mp.title':'🍱 100品の料理','mp.subtitle':'この食文化を形づくる',
+ 'mp.intro':'京都の食で最もよく出会う料理の数々 — タップするとその由来と、グルテンフリー・ヴィーガンの観点からの見方が分かります。',
+ 'mp.tab.dishes':'🍱 100品の料理','mp.tab.found':'🧂 基本要素',
+ 'mp.foundations.title':'🧂 基本要素','mp.foundations.subtitle':'この食文化の文法',
+ 'mp.foundations.intro':'あらゆる料理の土台となる食材・技法・考え方 — だし、うま味、味噌、五味の法則など。タップすると詳しい説明が読めます。',
+ 'menu.title':'📋 メニュー','ramengeek.title':'🔬 ラーメン探究','okonomiyakigeek.title':'🔬 お好み焼き探究',
+ 'bowl.title':'🍜 自分好みの一杯を探す','bowl.intro':'好みを調整すると、近くのお店をランキング表示します。',
+ 'bowl.richness':'コク','bowl.richness.range':'あっさり → こってり',
+ 'bowl.oiliness':'脂','bowl.oiliness.range':'控えめ → 多め',
+ 'bowl.body':'スープの質感','bowl.body.range':'澄んでいる → 濃厚',
+ 'bowl.tare':'たれ','bowl.tare.range':'控えめ → 強め',
+ 'bowl.noodles':'麺','bowl.noodles.range':'柔らかい → 硬め',
+ 'bowl.aroma':'香り','bowl.aroma.range':'控えめ → 香り高い',
+ 'bowl.broth':'スープ','bowl.tonkotsu':'豚骨','bowl.chicken':'鶏','bowl.seafood':'魚介','bowl.niboshi':'煮干し','bowl.vegetable':'野菜',
+ 'bowl.tarelbl':'たれ','bowl.shoyu':'醤油','bowl.shio':'塩','bowl.miso':'味噌',
+ 'bowl.stylelbl':'スタイル','bowl.clear':'清湯（澄んだスープ）','bowl.creamy':'白湯（濃厚スープ）',
+ 'bowl.matchlbl':'一致度','bowl.tight':'厳密','bowl.medium':'標準','bowl.loose':'ゆるめ',
+ 'bowl.find':'自分の一杯を探す →',
+ 'dcp.title':'🌸 ディープリー・コネクテッド・プレイス',
+ 'dcp.body':'グレッグが自ら訪れ、大切に紹介しているお店です。観光地ではなく、近隣に住む人々のために存在する、地元で愛されているお店です。<br><br><strong>続ける前に、こちらをお読みください：</strong>',
+ 'dcp.rules':'• <b>最大4名まで。</b>大人数のグループは小さな空間と常連客の迷惑になります。<br>　• <b>文化的な配慮レベルを尊重してください。</b>ガイドが必要とされている場合は必ず同伴してください。自己判断で省略しないでください。<br>　• <b>最低限これだけは覚えてください：</b>おねがいします・ありがとうございました・すみません。<br>　• <b>満席の場合は静かに立ち去ってください。</b>入口で待たないでください。<br>　• <b>あなたはその人の日常生活にお邪魔しているゲストです。</b>あなたが来ることは想定されていませんでした。',
+ 'dcp.ack':'続けることで、自分のお気に入りの近所のお店を誰かに扱ってほしいのと同じ敬意をもって、この場所に接することに同意したものとします。',
+ 'dcp.confirm':'理解しました — グレッグのメモを見る','dcp.cancel':'戻る',
+};
 function deepMergeLang(base, overlay){
  if(!overlay) return base;
  const out={...base};
@@ -841,6 +939,7 @@ async function switchLang(lang){
  state.lang=lang;
  localStorage.setItem('dcd-lang',lang);
  for(const cityId of Object.keys(state.citiesRaw)) await applyLangView(cityId);
+ applyI18nStrings(lang);
  buildCuisineChips(); drawMarkers(); render();
 }
 async function ensureCity(c){
@@ -1656,13 +1755,13 @@ async function mpGrid(tab){
  if(dt)dt.classList.toggle('on',MP_TAB==='dishes');if(ft)ft.classList.toggle('on',MP_TAB==='foundations');
  const title=document.getElementById('mpTitle'),intro=document.getElementById('mpIntro');
  if(MP_TAB==='foundations'){
-  if(title)title.innerHTML='🧂 Foundations <span style="font-size:12px;font-weight:400;color:var(--muted)">the grammar of the cuisine</span>';
-  if(intro)intro.textContent='The ingredients, techniques and ideas every dish is built from — dashi, umami, miso, the rule of five. Tap one for the story.';
+  if(title)title.innerHTML=t('mp.foundations.title','🧂 Foundations')+' <span style="font-size:12px;font-weight:400;color:var(--muted)">'+t('mp.foundations.subtitle','the grammar of the cuisine')+'</span>';
+  if(intro)intro.textContent=t('mp.foundations.intro','The ingredients, techniques and ideas every dish is built from — dashi, umami, miso, the rule of five. Tap one for the story.');
   const F=MP.foundations||[];
   list.innerHTML=F.length?F.map(d=>`<div class="mp-row" onclick="mpReader('${d.key}')"><span class="mp-ja">${escHtml(d.ja||d.en)}</span><div><div class="mp-en">${escHtml(d.en)}${MP.lore[d.key]?' 📖':''}</div><div class="mp-rom">${escHtml(d.romaji||'')}</div></div><span class="mp-meta" style="max-width:96px;text-align:right;font-size:10px;line-height:1.3">${escHtml(d.note||'')}</span></div>`).join(''):'<p style="color:var(--muted)">Coming soon.</p>';
  }else{
-  if(title)title.innerHTML='🍱 100 Dishes <span style="font-size:12px;font-weight:400;color:var(--muted)">that build this cuisine</span>';
-  if(intro)intro.textContent="The dishes you'll meet most across Kyoto's kitchens — tap one for its story, and how it reads for gluten-free & vegan diners.";
+  if(title)title.innerHTML=t('mp.title','🍱 100 Dishes')+' <span style="font-size:12px;font-weight:400;color:var(--muted)">'+t('mp.subtitle','that build this cuisine')+'</span>';
+  if(intro)intro.textContent=t('mp.intro',"The dishes you'll meet most across Kyoto's kitchens — tap one for its story, and how it reads for gluten-free & vegan diners.");
   list.innerHTML=MP.hundred.map(d=>{const star=d.cultural==='high'?'<span class="mp-star">★</span> ':'';const lore=MP.lore[d.key]?' 📖':'';
    return `<div class="mp-row" onclick="mpReader('${d.key}')"><span class="mp-ja">${escHtml(d.ja||d.en)}</span><div><div class="mp-en">${star}${escHtml(d.en)}${lore}</div><div class="mp-rom">${escHtml(d.romaji||'')}</div></div><span class="mp-meta">#${d.rank}<br>${d.restaurants} shops</span></div>`;}).join('');
  }
@@ -2438,7 +2537,7 @@ function wire(){
  goBtn.onclick=doGo;
  document.getElementById('locBtn').onclick=()=>locate(false);
  document.getElementById('listBtn').onclick=()=>{showList();expand(!document.getElementById('sheet').classList.contains('expanded'));};
- document.getElementById('sortBtn').onclick=()=>{state.sortBy=state.sortBy==='distance'?'name':'distance';document.getElementById('sortBtn').textContent='Sort: '+(state.sortBy==='distance'?'distance':'name')+' ▾';render();};
+ document.getElementById('sortBtn').onclick=()=>{state.sortBy=state.sortBy==='distance'?'name':'distance';document.getElementById('sortBtn').textContent=state.sortBy==='distance'?t('sort.distance','Sort: distance ▾'):t('sort.name','Sort: name ▾');render();};
  (function(){const sheet=document.getElementById('sheet'),grab=document.getElementById('grab');if(!sheet||!grab)return;
   const snapMode=h=>[[88,'peek'],[innerHeight*0.46,'half'],[innerHeight,'full']].reduce((a,b)=>Math.abs(b[0]-h)<Math.abs(a[0]-h)?b:a)[1];
   let y0=null,h0=0,moved=false;
@@ -2536,7 +2635,7 @@ function wire(){
    showList(true);
   }
  });
- wire(); initMap(); render();
+ wire(); applyI18nStrings(state.lang); initMap(); render();
  if('serviceWorker' in navigator){
   let _reloaded=false;
   // When a new service worker takes control, reload once so the fresh app shell is used.
