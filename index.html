@@ -742,7 +742,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v343';
+const APP_BUILD='dcd-v344';
 const state={
  cities:{}, active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -883,11 +883,13 @@ function initMap(){
  const c=state.cities[state.active];
  map=L.map('map',{zoomControl:false,attributionControl:true}).setView(c.center,14);
  L.control.zoom({position:'topleft'}).addTo(map);
- // CARTO's free basemap, not the raw OSMF tile servers — those are dev/personal-use only
- // per osm.wiki/Blocked and this app got 403'd on them once real traffic showed up.
- L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
-   maxZoom:20, subdomains:'abcd',
-   attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(map);
+ // Esri's public World Topo basemap — not the raw OSMF tile servers (dev/personal-use
+ // only, got this app 403'd — osm.wiki/Blocked), and not CARTO's Voyager either (that
+ // now watermarks every tile with "API KEY REQUIRED" unless you're on a paid key).
+ // Note the tile path order is {z}/{y}/{x}, not the usual {z}/{x}/{y}.
+ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{
+   maxZoom:19,
+   attribution:'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'}).addTo(map);
  state.me={lat:c.center[0],lng:c.center[1]};
  const icon=L.divIcon({className:'',html:'<div class="me-pin"><svg width="34" height="44" viewBox="0 0 34 44"><path d="M17 0C7.6 0 0 7.4 0 16.6 0 29 17 44 17 44s17-15 17-27.4C34 7.4 26.4 0 17 0z" fill="#E2553B"/><circle cx="17" cy="16.5" r="6.5" fill="#fff"/></svg></div>',iconSize:[34,44],iconAnchor:[17,44]});
  state.meMarker=L.marker([c.center[0],c.center[1]],{icon,draggable:true,zIndexOffset:1000}).addTo(map);
