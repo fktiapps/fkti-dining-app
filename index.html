@@ -390,6 +390,7 @@ li.uncited{color:#7c8299}
     <div class="brand-jp">深い関係食事</div>
    </div>
    <div class="cityrow"><div class="city" id="cityName">Kyoto</div><div class="sub" id="citySub">Vegan · GF</div></div>
+   <button class="infobtn" id="langBtn" aria-label="Switch language" title="日本語 / English">EN</button>
    <button class="infobtn" id="infoBtn" aria-label="About & legend">i</button>
   </div>
  </header>
@@ -744,7 +745,7 @@ const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
 const APP_BUILD='dcd-v344';
 const state={
- cities:{}, active:null, summaries:{},
+ cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
  markers:{}, meMarker:null, selected:null, sortBy:'distance', filterPushed:false,
  group:{gf:1,vegan:1,radius:160}, groupActive:false
@@ -789,10 +790,66 @@ function cityAt(lat,lng){
  }
  return best;
 }
+// ---------- language overlays ----------
+// A translated city file (data/<city>.<lang>.json) is a SPARSE object keyed by
+// place id, containing only the fields that have been translated so far — any
+// field or place missing from it silently falls back to the English base
+// record. This lets a language ship incrementally (one city, or a handful of
+// fields) without ever showing a blank field to the reader.
+//
+// gf_label/vegan_label are the exception: they're one of only 5+5 fixed
+// values across the ENTIRE app, so they're translated once here as a lookup
+// rather than per-place in every city's overlay file.
+const GF_LABEL_JA={'Not gluten-free':'グルテンフリーではありません','GF — ask':'グルテンフリー可 — 要相談','Some GF options':'グルテンフリーの選択肢あり','Strong GF focus':'グルテンフリーに積極的に対応','Dedicated gluten-free':'専用グルテンフリー対応'};
+const VEGAN_LABEL_JA={'Not vegan':'ヴィーガンではありません','Vegan — ask':'ヴィーガン可 — 要相談','Limited vegan':'ヴィーガンの選択肢は限定的','Some vegan options':'ヴィーガンの選択肢あり','Fully vegan':'完全ヴィーガン対応'};
+function applyLangLabels(p,lang){
+ if(lang!=='ja') return p;
+ const gf=GF_LABEL_JA[p.gf_label], vg=VEGAN_LABEL_JA[p.vegan_label];
+ if(gf==null && vg==null) return p;
+ return {...p, gf_label:gf!=null?gf:p.gf_label, vegan_label:vg!=null?vg:p.vegan_label};
+}
+function deepMergeLang(base, overlay){
+ if(!overlay) return base;
+ const out={...base};
+ for(const k of Object.keys(overlay)){
+  const bv=base[k], ov=overlay[k];
+  if(ov && typeof ov==='object' && !Array.isArray(ov) && bv && typeof bv==='object' && !Array.isArray(bv)) out[k]=deepMergeLang(bv,ov);
+  else out[k]=ov; // scalars and arrays: the overlay's value replaces the base's wholesale
+ }
+ return out;
+}
+async function fetchLangOverlay(cityId,lang){
+ if(lang==='en') return null;
+ const key=cityId+'.'+lang;
+ if(key in state.langOverlays) return state.langOverlays[key];
+ let d=null;
+ try{ d=await fetch(`data/${cityId}.${lang}.json`,{cache:'no-cache'}).then(r=>r.ok?r.json():null); }catch(_){}
+ state.langOverlays[key]=d; // cache the miss too (null), so we don't refetch a 404 every switch
+ return d;
+}
+async function applyLangView(cityId){
+ const raw=state.citiesRaw[cityId]; if(!raw) return;
+ if(state.lang==='en'){ state.cities[cityId]=raw; return; }
+ const overlay=await fetchLangOverlay(cityId,state.lang);
+ state.cities[cityId]={...raw, places:raw.places.map(p=>{
+  const merged=overlay&&overlay[p.id]?deepMergeLang(p,overlay[p.id]):p;
+  return applyLangLabels(merged,state.lang);
+ })};
+}
+async function switchLang(lang){
+ if(state.lang===lang) return;
+ state.lang=lang;
+ localStorage.setItem('dcd-lang',lang);
+ for(const cityId of Object.keys(state.citiesRaw)) await applyLangView(cityId);
+ buildCuisineChips(); drawMarkers(); render();
+}
 async function ensureCity(c){
  if(!cityUnlocked(c)) return false;
- if(state.cities[c.id]) return true;
- try{ const d=await fetch(c.pins||c.file).then(r=>r.ok?r.json():null); if(d){ state.cities[c.id]=d; return true; } }catch(_){}
+ if(state.citiesRaw[c.id]) return true;
+ try{
+  const d=await fetch(c.pins||c.file).then(r=>r.ok?r.json():null);
+  if(d){ state.citiesRaw[c.id]=d; await applyLangView(c.id); return true; }
+ }catch(_){}
  return false;
 }
 async function loadCities(){
@@ -2391,6 +2448,10 @@ function wire(){
   grab.onclick=()=>{if(getComputedStyle(grab).display==='none')return;applySheet(sheetMode()==='full'?'half':'full');};
  })();
  document.getElementById('infoBtn').onclick=()=>document.getElementById('infoModal').classList.add('show');
+ {const lb=document.getElementById('langBtn'); if(lb){
+   lb.textContent=state.lang==='ja'?'日本語':'EN';
+   lb.onclick=()=>switchLang(state.lang==='ja'?'en':'ja').then(()=>{lb.textContent=state.lang==='ja'?'日本語':'EN';});
+ }}
  document.getElementById('cardsBtn').onclick=()=>openCards('celiac');
  document.querySelectorAll('#cardSeg button').forEach(b=>b.onclick=()=>openCards(b.dataset.card));
  document.getElementById('cardClose').onclick=()=>document.getElementById('cardModal').classList.remove('show');
