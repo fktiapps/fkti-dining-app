@@ -8,7 +8,16 @@
   // are. Without this, opening http://127.0.0.1:8788 redirected to the production login,
   // and the app switcher then sent you to the LIVE dining site — so the local preview was
   // unreachable and every "did the fix land?" check was answered by production.
-  var LOCAL = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])$/.test(location.hostname);
+  //
+  // Same problem, same fix, for a Cloudflare Pages BRANCH preview
+  // (<branch>.fkti-dining-app.pages.dev — 4+ dot-separated labels). Already-logged-in-on-
+  // Travel visits to a branch preview hit the SAME wall: the redirect to travel.fkti.org
+  // just shows the normal hub since no login is needed, and its hub tiles hardcode
+  // dining.fkti.org — so the branch preview was unreachable the same way localhost was.
+  // The bare production alias (fkti-dining-app.pages.dev, 3 labels) still gets gated
+  // normally; only an actual branch subdomain is treated as "not a deployment."
+  var LOCAL = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])$/.test(location.hostname)
+    || (/\.pages\.dev$/.test(location.hostname) && location.hostname.split('.').length > 3);
   function setCookie(t) {
     try { document.cookie = 'fkti_auth=' + encodeURIComponent(t) + '; domain=.fkti.org; path=/; max-age=2592000; secure; samesite=Lax'; } catch (e) {}
   }
