@@ -743,7 +743,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v348';
+const APP_BUILD='dcd-v349';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1111,7 +1111,7 @@ const FOOD_EMOJI=[
  [/kissa|coffee|\bcafe|café|roaster|junkissa|喫茶|コーヒー|カフェ/i,'☕'],
  [/bakery|bagel|boulanger|\bpan\b|パン|bread|ベーカリー|パン屋/i,'🥐'],
  [/patisserie|pâtisserie|sweets|wagashi|dessert|parfait|chiffon|baumkuchen|chocolat|donut|doughnut|crepe|creperie|churro|pancake|confection|sweet|baked.?goods|洋菓子|和菓子|焼き菓子|菓子工房|菓子店|菓子屋|スイーツ|デザート|クレープ/i,'🍰'],
- [/shokudo|teishoku|定食|set meal|home.?style|diner|食堂/i,'🍚'],
+ [/shokudo|teishoku|定食|set meal|home.?style|diner(?!\s*\(yoshoku\))|食堂/i,'🍚'],
  [/seafood|\bfish|kaisen|海鮮|魚|かまぼこ|練り物/i,'🐟'],
  [/kaiseki|kappo|obanzai|washoku|ryokan|japanese cuisine|懐石|割烹|和食|料理旅館/i,'🍱'],
 ];
