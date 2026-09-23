@@ -2,3 +2,20 @@
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+
+# sw.js drives every update: the app's own update check (reg.update()) fetches this
+# file directly, bypassing the service worker. If a browser or an intermediate cache
+# (Cloudflare's edge included) serves a cached copy of sw.js itself, the update check
+# sees no change and the client is stuck forever, no matter how many times VERSION is
+# bumped inside it — the shell can visibly reach the new build while every URL the old,
+# still-running worker fetches (data/*.json above all) keeps coming from ITS stale
+# cache, because that worker's own fetch handler never restarted.
+/sw.js
+  Cache-Control: no-cache
+
+# City data has no version/hash in its URL, so nothing forces a stale intermediate
+# cache to refetch it once VERSION bumps — the bump only renames the cache the service
+# worker stores results under, it doesn't change what's fetched. Force revalidation on
+# every request so a corrected record (or coordinate) is never stuck behind a cache.
+/data/*
+  Cache-Control: no-cache
