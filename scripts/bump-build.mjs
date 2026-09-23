@@ -33,11 +33,20 @@ const CHECK = process.argv.includes('--check');
 // toba.json for several deploys while data/pins/toba.json — what the map actually reads —
 // stayed frozen at its old build output the whole time.
 const manifestCities = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8')).cities;
+// Per-language overlay files (data/<city>.<lang>.json) aren't precached at install — they're
+// fetched on demand the first time a viewer switches language — so a version bump isn't
+// strictly required for a BRAND NEW overlay to be seen. It IS required the moment an existing
+// overlay's CONTENT changes: fetchLangOverlay's cache entry lives in the same per-VERSION DATA
+// cache as everything else, keyed by URL, and nothing about editing translated text changes
+// that URL. Same failure mode as the pins file, just one release cycle less urgent — track it
+// now rather than rediscover this the hard way too.
+const LANGS = ['ja'];
 const assets = ['index.html', 'gate.js', 'dcp-launch.js', 'data/manifest.json', '_headers'];
 for (const c of CITIES) {
   assets.push(`data/${c}.json`, `data/${c}_menus.json`, `data/pins/${c}.json`);
   for (const layer of ['chains', 'starbucks', 'konbini', 'grocery'])
     assets.push(`data/${c}_${layer}.json`);
+  for (const lang of LANGS) assets.push(`data/${c}.${lang}.json`);
   const chunks = manifestCities.find(x => x.id === c)?.chunks || 0;
   for (let n = 0; n < chunks; n++) assets.push(`data/detail/${c}-${n}.json`);
 }
