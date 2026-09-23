@@ -24,7 +24,7 @@ const CHECK = process.argv.includes('--check');
 
 // Everything the app actually fetches. Layer files are optional — a city need not
 // have chains or a Starbucks list — so missing ones are skipped, not fatal.
-const assets = ['index.html', 'gate.js', 'dcp-launch.js', 'data/manifest.json'];
+const assets = ['index.html', 'gate.js', 'dcp-launch.js', 'data/manifest.json', '_headers'];
 for (const c of CITIES) {
   assets.push(`data/${c}.json`, `data/${c}_menus.json`);
   for (const layer of ['chains', 'starbucks', 'konbini', 'grocery'])
