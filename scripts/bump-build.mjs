@@ -24,11 +24,22 @@ const CHECK = process.argv.includes('--check');
 
 // Everything the app actually fetches. Layer files are optional — a city need not
 // have chains or a Starbucks list — so missing ones are skipped, not fatal.
+//
+// data/<city>.json itself is hashed too even though the app never fetches it directly
+// (build-payload.mjs splits it into pins/detail below) — it's the canonical source, and
+// hashing only the derived files would let someone edit toba.json, forget to rerun
+// build-payload.mjs, and ship a version bump that doesn't actually contain their change.
+// This bit the pins file for real: a corrected coordinate and cuisine translation sat in
+// toba.json for several deploys while data/pins/toba.json — what the map actually reads —
+// stayed frozen at its old build output the whole time.
+const manifestCities = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8')).cities;
 const assets = ['index.html', 'gate.js', 'dcp-launch.js', 'data/manifest.json', '_headers'];
 for (const c of CITIES) {
-  assets.push(`data/${c}.json`, `data/${c}_menus.json`);
+  assets.push(`data/${c}.json`, `data/${c}_menus.json`, `data/pins/${c}.json`);
   for (const layer of ['chains', 'starbucks', 'konbini', 'grocery'])
     assets.push(`data/${c}_${layer}.json`);
+  const chunks = manifestCities.find(x => x.id === c)?.chunks || 0;
+  for (let n = 0; n < chunks; n++) assets.push(`data/detail/${c}-${n}.json`);
 }
 
 const h = crypto.createHash('sha256');
