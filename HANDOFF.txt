@@ -1,9 +1,90 @@
 DEEPLY CONNECTED DINING (DCD) — PROJECT HANDOFF
 深い関係食事 · for the next Claude (the dining app is one part of the wider FKTI project).
-Last updated 2026-08-23. Supersedes the 2026-07-02 handoff, which was written mid-trip and is
-now wrong in ways that matter — see WHAT CHANGED, and WHAT NO LONGER APPLIES.
+Last updated 2026-09-24. Supersedes the 2026-08-23 handoff's "YOUR FIRST JOB" and CRAWLER BRIEF
+below (kept for its still-true constraints, but it is no longer the live task — see 2026-09-24
+UPDATE). The 2026-07-02 handoff is further superseded still; see WHAT CHANGED / WHAT NO LONGER
+APPLIES for that layer.
 ================================================================
-YOUR FIRST JOB
+READ THIS FIRST — 2026-09-24 UPDATE
+STOP. Before touching anything, read ~/.claude/projects/<this>/memory/MEMORY.md, then this whole
+file, then git log on BOTH main and the branch below. A fresh session this week burned real time
+re-discovering things already fixed one commit earlier because it verified against the canonical
+data file and never checked whether the app actually reads that file. Do not repeat that.
+
+WHERE THE LIVE WORK IS: worktree C:\PF\fkti-dining-i18n, branch claude/i18n-japanese-pilot (NOT
+merged to main — deliberately isolated per Greg: "make the pilot on a new branch, so we don't
+screw anything up unintentionally"). Preview: https://claude-i18n-japanese-pilot.fkti-dining-app.
+pages.dev — gate.js was extended to bypass the cross-app login gate for Pages branch-preview
+hostnames specifically (4+ dot-labels), so this URL is reachable without a travel.fkti.org login;
+the bare pages.dev alias and the real dining.fkti.org still gate normally. C:\pf\fkti-dining-arch
+(claude/architecture-phases-1-3) is the other active worktree; C:\pf\fkti-dining (main) is a third,
+kept in sync — do not confuse the three.
+
+WHAT'S DONE: OSM raw-tile 403 fixed by switching to Esri World Topo (also ported to the sister
+FKTI-Travel repo). A working per-language content system: data/<city>.<lang>.json sparse overlay
+files, merged over the English base at runtime (deepMergeLang in index.html), falling back to
+English per-field when untranslated. UI chrome (146 strings) and the GF/vegan tier labels
+(GF_LABEL_JA/VEGAN_LABEL_JA) are GLOBAL — every city already gets a Japanese UI and correct
+Japanese safety-tier labels regardless of whether that city's PLACES have been translated yet.
+Toba (76 places) is fully translated end to end and was the pilot. App-wide rollout to the other
+8 cities (2,879 places total) is now in progress — see PROGRESS below.
+
+THE REAL BUG, AND WHY IT TOOK SO LONG TO FIND (read this before you trust any "it's fixed" claim
+about THIS app again): data/manifest.json splits every city into a lightweight data/pins/<city>.
+json (lat/lng, cuisine, cuisine_type — everything the map and icon logic read) plus lazy
+data/detail/<city>-N.json chunks, generated from the canonical data/<city>.json by
+scripts/build-payload.mjs. THIS SESSION EDITED data/toba.json DIRECTLY, REPEATEDLY, ACROSS SEVERAL
+COMMITS, verified every fix against that file, and shipped four version bumps — and NONE OF IT
+DID ANYTHING, because data/pins/toba.json (what the app actually fetches) was never regenerated.
+Every "still broken" report from the user during that stretch was correct; every "should be fixed
+now" from Claude was checking the wrong file. The fix: `node scripts/build-payload.mjs` after ANY
+edit to a city file, before bump-build. bump-build.mjs now hashes data/pins/<city>.json,
+data/detail/<city>-N.json, and data/<city>.<lang>.json too (it only hashed the canonical file
+before), specifically so this exact failure — edit the source, forget the derived artifact, ship a
+version bump that changes nothing — cannot recur silently. If a fix "isn't showing up" again,
+check build-payload.mjs was actually re-run before doubting caching.
+Also fixed, same session: sw.js and data/* were shipping with NO Cache-Control headers at all
+(_headers had none), so an intermediate cache could serve stale bytes independent of the app's own
+version-bump scheme. _headers now forces no-cache on /sw.js and /data/*.
+
+COORDINATE AUDIT (Greg's ask, not yet finished): the user noticed a mispositioned Kappa Sushi pin
+in Toba, which turned out to be a genuine, isolated ~47yd geocoding error PLUS a separate, much
+bigger issue — 14 unrelated Toba businesses (different cuisines, no shared building) were sharing
+one placeholder coordinate, 3 of which (Kitchen Takama, Toba Marche, Sea Lounge S.Y.M) were
+actually 90–410m away from where they were pinned. Checking whether this is Toba-specific found
+it is NOT: ~29% of ALL ~2,880 places app-wide share a coordinate with at least one other place.
+Some of this is legitimate — real single-building clusters (Kanazawa's Omicho Market, Nagoya's
+Kinshachi Yokocho food court, Nagano's Zenkoji-approach arcade, and Hiroshima's Miyajima cluster,
+which the 2026-08-23 architecture notes already document as an intentional "snap-to-Omotesandō for
+bad island geocodes" fix, not a bug). The clusters that look like the SAME placeholder-coordinate
+problem as Toba's and have NOT been checked yet: Himeji (a 29-shop downtown cluster), Kyoto
+(12-shop, Kawaramachi-Sanjo area), Nara (three 7-shop Naramachi clusters — 59% of the whole city
+shares a coordinate, the worst ratio of any city), and a couple of Tokyo pockets (Shinjuku,
+Akasaka). Same method as Toba works: check each business's own listed address/site, OSM Nominatim
+by business name often resolves a real POI even when raw-address search fails.
+
+PROGRESS (i18n rollout, place-level content translation — cuisine/neighborhood/gf_detail/
+vegan_detail/notes; check data/<city>.ja.json's key count against data/<city>.json's place count
+for the true current number, this line rots fast):
+  toba 76/76 (done) · nagano ~24-30/128 (in progress) · himeji/nagoya/kanazawa/hiroshima/nara/
+  kyoto/tokyo: 0. Total was ~100/2,879 as of this update.
+
+⚠ OPEN TENSION — READ BEFORE LAUNCHING A WORKFLOW: the 2026-08-23 CRAWLER BRIEF below says, in so
+many words, NO FLEET on a Pro budget — "the 30-concurrent-agent fleet that produced this data
+CANNOT BE RUN AGAIN... do not propose a workflow fan-out to Greg as the way forward; he moved off
+Max specifically to stop paying for it" — and prescribes a one-shard-per-invocation, cron-driven
+crawler instead. THIS SESSION, Greg explicitly asked for "background workflows... calibrated to a
+Claude Pro Account token budget, auto-restarting every 4 hours... that's what we've done in the
+past" and a multi-agent Workflow (parallel translate agents, serialized commit agents) was launched
+for the i18n rollout on that basis. Whether that request supersedes the Aug 23 no-fleet guidance,
+or whether Greg was asking for something smaller/cheaper than what got built, was NOT resolved
+before this file was written — check the conversation this was written from, or just ask him
+directly, before assuming either the old warning or the new workflow is the correct default.
+Separately: CronCreate-based "auto-restart" jobs are SESSION-SCOPED (gone if the terminal closes,
+capped at 7 days, only fire while the REPL is idle) — not a true unattended background service —
+make sure Greg still knows that if one is relied on here.
+================================================================
+YOUR FIRST JOB (2026-08-23 — superseded as the live task by the above, constraints below still hold)
 Greg wants the NEXT session to design a background crawler that does research on a Pro token
 budget. Everything below exists to tell you what that crawler has to survive. Read
 ARCHITECTURE — WHAT STILL HOLDS and THE CRAWLER BRIEF before you write a line of it.
