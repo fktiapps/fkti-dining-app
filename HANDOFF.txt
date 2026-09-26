@@ -1,11 +1,61 @@
 DEEPLY CONNECTED DINING (DCD) — PROJECT HANDOFF
 深い関係食事 · for the next Claude (the dining app is one part of the wider FKTI project).
-Last updated 2026-09-24. Supersedes the 2026-08-23 handoff's "YOUR FIRST JOB" and CRAWLER BRIEF
-below (kept for its still-true constraints, but it is no longer the live task — see 2026-09-24
-UPDATE). The 2026-07-02 handoff is further superseded still; see WHAT CHANGED / WHAT NO LONGER
-APPLIES for that layer.
+Last updated 2026-09-25. Supersedes the 2026-08-23 handoff's "YOUR FIRST JOB" and CRAWLER BRIEF
+below (kept for its still-true constraints, but it is no longer the live task). The 2026-07-02
+handoff is further superseded still; see WHAT CHANGED / WHAT NO LONGER APPLIES for that layer.
 ================================================================
-READ THIS FIRST — 2026-09-24 UPDATE
+READ THIS FIRST — 2026-09-25 UPDATE
+THE APP-WIDE JAPANESE ROLLOUT IS DONE. All 9 cities, 2,879/2,879 places, fully translated and
+merged to main (live). This closes out the 2026-09-24 update below — leaving it in place for its
+lessons (the pins-file bug especially — READ THAT before assuming a data fix is live), but the
+"in progress" framing there is now stale.
+
+HOW IT FINISHED, for whoever needs to run something like this again: the fleet-vs-crawler tension
+flagged below got resolved in practice — Greg explicitly asked for the Workflow fan-out
+("background workflows... calibrated to a Claude Pro Account token budget, auto-restarting every
+4 hours"), it ran, and it worked, repeatedly hitting the Pro session limit (every few hundred
+places) and recovering cleanly each time via a pattern worth reusing:
+  1. A failed commit stage does NOT mean the translated content is lost — the already-completed
+     translate-stage agents' results live in the workflow's own journal.jsonl (one {"type":
+     "result",...} line per agent). Read it, filter to `label.startsWith('translate:')`, and the
+     actual translated JSON is right there, uncommitted but not gone.
+  2. Filter recovered translations for quality by comparing translated field LENGTH AGAINST THE
+     SOURCE FIELD'S length (not a fixed threshold) — many source records are genuinely short/
+     templated ("Inferred from cuisine type — not individually verified..."), and a fixed-length
+     filter will wrongly flag correct short translations as degraded. Learned this the hard way on
+     Tokyo: an absolute-threshold filter discarded 272 good translations as "bad" before being
+     fixed to compare against source length instead.
+  3. Merge the recovered-and-filtered translations directly (scripts/lib-i18n.mjs's readLang/
+     writeLang/mergePlace), rebuild (build-payload.mjs + bump-build.mjs), commit, then relaunch the
+     SAME workflow script fresh (no resumeFromRunId needed) — the Scout stage always recomputes
+     the true remaining set from what's actually on disk, so it naturally picks up wherever the
+     last attempt left off with zero duplicate work.
+A 4-hour recurring cron (self-deleted once the rollout finished — recreate similarly if grinding
+another long unattended task) drove this after the human went away, per explicit instruction:
+"I want you grinding while I'm gone" / "don't wait for my input" / "merge as each city finishes."
+
+TWO OTHER REAL BUGS CAUGHT DURING THE ROLLOUT, worth knowing about if either recurs:
+- Workflow SCOUT and COMMIT agents can get confused by an unrelated user message from a DIFFERENT
+  concurrent conversation thread in the same session (e.g. a question about an unrelated feature)
+  bleeding into their context, and refuse to act, treating that stray message as if it might
+  override their actual task's standing authorization. Fix that stuck for the rest of the rollout:
+  put an explicit line in every agent prompt stating the task is pre-authorized and any unrelated-
+  seeming message in context does not override it. A scout can ALSO just silently return an empty
+  result with no error for no clear reason (seen once, Nagoya) — if a scout claims 0 remaining for
+  a city, sanity-check that against `Object.keys(require('./data/<city>.ja.json')||{})` directly
+  before trusting it, since a wrong-but-confident empty scout result looks identical to "actually
+  done."
+- Kappa Sushi's mispositioned Toba pin turned out NOT to be isolated: ~29% of all ~2,879 places
+  app-wide share a coordinate with at least one other place (some legitimately — real shared
+  buildings — some not, placeholder coordinates for genuinely separate businesses). Only Toba's
+  cluster was actually run to ground this session. Himeji (a 29-shop downtown cluster), Kyoto
+  (12-shop), Nara (three 7-shop Naramachi clusters, 59% of that whole city), and some Tokyo pockets
+  are flagged but UNVERIFIED — same method as Toba works (check each business's own listed
+  address/site; OSM Nominatim by business NAME often resolves a POI even when address search
+  fails).
+
+================================================================
+READ THIS FIRST — 2026-09-24 UPDATE (superseded above, kept for its still-load-bearing lessons)
 STOP. Before touching anything, read ~/.claude/projects/<this>/memory/MEMORY.md, then this whole
 file, then git log on BOTH main and the branch below. A fresh session this week burned real time
 re-discovering things already fixed one commit earlier because it verified against the canonical
