@@ -96,7 +96,11 @@ for (const e of verdicts) {
   // shop. Moving a pin that far on a guess is worse than leaving the honest
   // approximation, so low confidence queues instead of applying.
   const trusted = e.enrich_confidence === 'high' || e.enrich_confidence === 'medium';
-  if (e.loc_precise === true && (e.lat != null) && (e.lng != null) && !trusted) {
+  // A pin with pin_source was located per shop against its own listing (2026-09-28
+  // coordinate audit) — newer and better evidenced than an August enrich snapshot.
+  if (r.pin_source) {
+    // keep it
+  } else if (e.loc_precise === true && (e.lat != null) && (e.lng != null) && !trusted) {
     existenceQueue.push({ id: r.id, name: r.name, status: 'low_confidence_pin',
       proposed: [e.lat, e.lng], note: e.enrich_note || '' });
   } else if (e.loc_precise === true && (e.lat != null) && (e.lng != null)) {

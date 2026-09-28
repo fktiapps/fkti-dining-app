@@ -16,7 +16,8 @@ geo). Tabelog agreed with OSM within 20m on all 14 shops both list. Each record 
   STILL TO DO: ~55 hidden tokyo3_ places in 8 placeholder groups (low value, all hidden).
 App now tells the traveller when a pin is approximate: PIN_APPROX() in index.html reads loc_approx
 (ward|chome|block) / pin_accuracy. 345 visible places carry it (321 Tokyo, 24 Nagano) and were
-previously drawn exactly like verified pins. Ward-level Tokyo pins (129) are the next best target.
+previously drawn exactly like verified pins. The 129 ward-level Tokyo pins were fixed the same day from
+Tabelog (all 129 name-matched); 184 chome-level + 8 block-level Tokyo and 24 Nagano remain.
 Found along the way: himeji_tamagoya and himeji_banshu_himeji_honmachi_t point at the SAME Tabelog
 listing (likely a duplicate pair). vm_yoshifumi's menu is from a pop-up kitchen (渡り鳥アザレア食堂)
 that served Fridays at 好文 per a 2017-era kyotopi write-up — real, but possibly lapsed.
