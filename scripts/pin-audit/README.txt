@@ -8,6 +8,7 @@ Run from the repo root, in order:
   GOOGLE_MAPS_KEY=... node scripts/pin-audit/google.mjs <work> [--limit=N]  (100/day on the demo key)
   node scripts/pin-audit/reconcile.mjs <work> [--apply]  -> decisions.json; --apply writes city files
 Then: build-payload.mjs, bump-build.mjs, lint-data.mjs, smoke-app.mjs.
-harvest.mjs must be run from the repo root (it imports ./scripts/lib-city.mjs relative to cwd).
+Run baseline.mjs (NOT harvest.mjs) to rebuild all.json: it reads pins from the pre-audit commit 7d5f4f5,
+so "old pin agrees" is never measured against a pin this audit wrote (HANDOFF lesson 7).
 google.mjs currently queries ALL visible places; for the daily queue, filter to decisions.json
 entries with decision in review_big_move|conflict|single_keep|no_source|weak_single first.
