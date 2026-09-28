@@ -743,7 +743,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v404';
+const APP_BUILD='dcd-v405';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -1437,8 +1437,9 @@ function SHOP_CLAIM_FALSE(p){
 // A pin placed from a ward / chome / block centroid rather than the shop's own door.
 // 345 visible records carry loc_approx; without this the map draws them exactly like
 // verified pins, and a traveller walks to a point that can be a kilometre from the shop.
-const APPROX_EN={ward:'Approximate pin — placed at ward level; the shop could be 1 km or more away.',chome:'Approximate pin — placed at district (chōme) level; the shop may be a few hundred metres away.',block:'Approximate pin — placed at block level; the shop is nearby but not exactly here.'};
-const APPROX_JA={ward:'おおよその位置です（区の中心）。お店は1km以上離れている場合があります。',chome:'おおよその位置です（丁目の中心）。お店は数百メートル離れている場合があります。',block:'おおよその位置です（街区の中心）。お店は近くですが、この地点ではありません。'};
+// 'single' = placed from one listing that no second source (OSM, the shop's own address) confirms.
+const APPROX_EN={ward:'Approximate pin — placed at ward level; the shop could be 1 km or more away.',chome:'Approximate pin — placed at district (chōme) level; the shop may be a few hundred metres away.',block:'Approximate pin — placed at block level; the shop is nearby but not exactly here.',single:'Pin from a single listing, not yet cross-checked against a second source.'};
+const APPROX_JA={ward:'おおよその位置です（区の中心）。お店は1km以上離れている場合があります。',chome:'おおよその位置です（丁目の中心）。お店は数百メートル離れている場合があります。',block:'おおよその位置です（街区の中心）。お店は近くですが、この地点ではありません。',single:'この位置は1つの情報源のみに基づいており、まだ照合されていません。'};
 function PIN_APPROX(p){
  const lvl=p.loc_approx||(p.pin_accuracy==='approximate'?'block':null);
  if(!APPROX_EN[lvl]) return '';
