@@ -40,7 +40,7 @@ const DETAIL_FIELDS = [
   'chef_bio', 'safety', 'gf_detail', 'vegan_detail', 'notes', 'cultural_comfort',
   'enrich_note', 'hours_raw', 'gmaps', 'dcp', 'existence', 'gf_review', 'chef_bio_flag',
   'vegan_disproven_downgrade', 'gf_uncited_downgrade', 'merged_from', 'duplicate_aligned',
-  'needs_owner_review', 'japanese_sources_summary',
+  'needs_owner_review', 'japanese_sources_summary', 'pin_source',
 ];
 const DETAIL = new Set(DETAIL_FIELDS);
 

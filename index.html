@@ -743,7 +743,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v402';
+const APP_BUILD='dcd-v403';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -837,6 +837,7 @@ const STRINGS_JA={
  'ar:fab.now':'今すぐ近くの食事を探す','ar:fab.scan':'メニューをスキャン','ar:fab.konbini':'コンビニ表示の切り替え','ar:fab.grocery':'スーパー表示の切り替え','ar:fab.chains':'信頼できるチェーン店表示の切り替え','ar:fab.list':'リスト表示の切り替え','ar:fab.locate':'現在地を表示',
  'sheet.nearyou':'近くのお店','sheet.sort':'並び替え：距離順 ▾','ar:detail.close':'閉じる',
  'sort.distance':'並び替え：距離順 ▾','sort.name':'並び替え：名前順 ▾',
+ 'pin.approx.tip':'正確な場所は「Google Maps」ボタンで確認してください。',
  'info.title':'見方について',
  'info.intro':'<b>各ピンの記号はグルテンフリーの安全度を示しています</b>。色を区別できなくても読み取れます。ピンをタップすると詳細が表示されます。朱色の<b>「現在地」</b>ピンをドラッグして別のエリアを確認でき、◎をタップすると元の位置に戻ります。',
  'info.leg.dedicated':'専用 — セリアック対応の厨房（建物内にグルテンなし）','info.leg.full':'完全グルテンフリー（小麦不使用の厨房、店舗の自己申告）','info.leg.options':'グルテンフリーの選択肢あり・共用厨房 — 調理法を要確認','info.leg.ask':'要相談 — グルテンフリーメニューはないが、安全な食事を相談できる可能性あり','info.leg.no':'グルテンフリーではない','info.leg.you':'現在地（ドラッグ可能）',
@@ -1433,6 +1434,16 @@ function SHOP_CLAIM_FALSE(p){
  return "<div class=\"shopfalse\"><span class=\"sf-what\">⚠ This shop's own gluten-free claim does not hold up</span>"
    + escHtml(c.claim) + " — " + escHtml(c.contradicted_by) + src + "</div>";
 }
+// A pin placed from a ward / chome / block centroid rather than the shop's own door.
+// 345 visible records carry loc_approx; without this the map draws them exactly like
+// verified pins, and a traveller walks to a point that can be a kilometre from the shop.
+const APPROX_EN={ward:'Approximate pin — placed at ward level; the shop could be 1 km or more away.',chome:'Approximate pin — placed at district (chōme) level; the shop may be a few hundred metres away.',block:'Approximate pin — placed at block level; the shop is nearby but not exactly here.'};
+const APPROX_JA={ward:'おおよその位置です（区の中心）。お店は1km以上離れている場合があります。',chome:'おおよその位置です（丁目の中心）。お店は数百メートル離れている場合があります。',block:'おおよその位置です（街区の中心）。お店は近くですが、この地点ではありません。'};
+function PIN_APPROX(p){
+ const lvl=p.loc_approx||(p.pin_accuracy==='approximate'?'block':null);
+ if(!APPROX_EN[lvl]) return '';
+ return `<div class="outside">📍 ${state.lang==='ja'?APPROX_JA[lvl]:APPROX_EN[lvl]} ${t('pin.approx.tip','Use the Google Maps button to find the exact spot.')}</div>`;
+}
 function SHUT_LINE(p){
  if(!p.closed || p.closed.status!=='temporary') return '';
  const until=p.closed.until?` — expected to reopen ${escHtml(p.closed.until)}`:'';
@@ -1871,6 +1882,7 @@ function _renderDetailSync(p){
   ${SHOP_CLAIM_FALSE(p)}
   ${SHUT_LINE(p)}
   ${p.outside_city?`<div class="outside">🚃 ${escHtml(p.outside_city.note)}</div>`:''}
+  ${PIN_APPROX(p)}
   ${p.category==='MOM_AND_POP'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;color:#5a3e00"><b>🏮 Mom &amp; Pop</b> — independently owned, under 30 seats, beloved by locals. <b>Maximum 4 people.</b> Dietary options vary — check the GF and vegan notes below. The experience here is the point.</div>`:''}
   ${renderComfort(p)}
   ${p.dcp?(dcpTier(p.dcp)==='reviewed'?`<button class="dcp-badge reviewed" id="dcpBtn">✍️ Greg reviewed here — tap to read</button>`:`<button class="dcp-badge" id="dcpBtn">🌸 Deeply Connected Place — tap to read Greg's note</button>`):(p.category==='MOM_AND_POP'&&!p.dcp?`<div style="font-size:11px;color:var(--muted);text-align:center;margin:6px 0">Greg's note coming after the trip</div>`:'')}

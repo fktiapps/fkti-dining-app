@@ -1,8 +1,27 @@
 DEEPLY CONNECTED DINING (DCD) — PROJECT HANDOFF
 深い関係食事 · for the next Claude (the dining app is one part of the wider FKTI project).
-Last updated 2026-09-25. Supersedes the 2026-08-23 handoff's "YOUR FIRST JOB" and CRAWLER BRIEF
+Last updated 2026-09-28. Supersedes the 2026-08-23 handoff's "YOUR FIRST JOB" and CRAWLER BRIEF
 below (kept for its still-true constraints, but it is no longer the live task). The 2026-07-02
 handoff is further superseded still; see WHAT CHANGED / WHAT NO LONGER APPLIES for that layer.
+================================================================
+READ THIS FIRST — 2026-09-28 UPDATE (coordinate audit, second pass)
+The 2026-09-25 Himeji/Kyoto/Tokyo "fixes" stacked whole clusters onto ONE point (a centroid, an
+intersection, or a single verified shop) — 66 of 70 places were never individually located, and
+Himeji's 16-shop station group ended up FURTHER from the real shops than the placeholder was. Redone:
+all 62 visible Himeji/Kyoto places now carry their own Tabelog map pin (/en/ pages expose schema.org
+geo). Tabelog agreed with OSM within 20m on all 14 shops both list. Each record has a pin_source.
+  METHOD FOR THE REST: tabelog.com/en/<id>/ JSON-LD geo, cross-check OSM Nominatim by name. Never
+  recenter a group onto one point. GSI (msearch.gsi.go.jp) geocodes ADDRESSES but only to the lot —
+  Himeji 本町68 is one lot covering the whole castle approach, which is where the old placeholder came from.
+  STILL TO DO: ~55 hidden tokyo3_ places in 8 placeholder groups (low value, all hidden).
+App now tells the traveller when a pin is approximate: PIN_APPROX() in index.html reads loc_approx
+(ward|chome|block) / pin_accuracy. 345 visible places carry it (321 Tokyo, 24 Nagano) and were
+previously drawn exactly like verified pins. Ward-level Tokyo pins (129) are the next best target.
+Found along the way: himeji_tamagoya and himeji_banshu_himeji_honmachi_t point at the SAME Tabelog
+listing (likely a duplicate pair). vm_yoshifumi's menu is from a pop-up kitchen (渡り鳥アザレア食堂)
+that served Fridays at 好文 per a 2017-era kyotopi write-up — real, but possibly lapsed.
+The "141 not-found Tokyo records" open question is CLOSED: 142 were purged 2026-08-23 (4978d88),
+archived in data/_purged_not_found.json; none have reappeared.
 ================================================================
 READ THIS FIRST — 2026-09-25 UPDATE
 THE APP-WIDE JAPANESE ROLLOUT IS DONE. All 9 cities, 2,879/2,879 places, fully translated and
@@ -449,7 +468,7 @@ CONSTRAINTS THE DESIGN MUST RESPECT
   "covered everything" when it did not.
 
 OPEN QUESTIONS FOR GREG (do not guess)
-- Purge or keep the 141 not-found Tokyo records? Currently hidden, not deleted.
+- (CLOSED — 142 purged 2026-08-23 in 4978d88; see data/_purged_not_found.json.)
 - Restore preview-branch discipline now, or keep pushing to main?
 
 ================================================================
