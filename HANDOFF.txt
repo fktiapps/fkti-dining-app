@@ -4,6 +4,19 @@ Last updated 2026-09-28. Supersedes the 2026-08-23 handoff's "YOUR FIRST JOB" an
 below (kept for its still-true constraints, but it is no longer the live task). The 2026-07-02
 handoff is further superseded still; see WHAT CHANGED / WHAT NO LONGER APPLIES for that layer.
 ================================================================
+READ THIS FIRST — 2026-09-28 LATE: APP-WIDE TWO-SOURCE PIN PASS
+Every place (2,879) was re-pinned against Tabelog /en/ geo and cross-checked with a SECOND source:
+OSM by name (<=100m), the shop's own site address via GSI (<=150m), Google Places (<=100m, confirm-
+only), or — weakest, labelled as such — Tabelog's own listed address via GSI. Rules and code:
+pin_source on each record says which sources agreed. Visible places sharing a coordinate: 661 -> 83.
+  loc_approx:'single' = one listing only; the app says "not yet cross-checked" (EN/JA). 334 visible.
+  NOT MOVED, need a source: ~30 moves >1km, ~49 conflicts, 27 single-source, 100 no source at all.
+  GOOGLE KEY: 100 SearchText/day (resets 03:00 ET). Google coordinates are NEVER stored (Maps
+  Platform terms: 30-day cache max) — only used to confirm. 23 visible ChIJ… records imported from
+  Google Places still carry Google coords and need re-sourcing.
+LAUNCH (~8 wks from 2026-09-28): Greg's banded readiness list lives in memory as
+launch-readiness-list.md — work from it. Item 1 (wrong-shop links) done in 7d5f4f5.
+================================================================
 READ THIS FIRST — 2026-09-28 UPDATE (coordinate audit, second pass)
 The 2026-09-25 Himeji/Kyoto/Tokyo "fixes" stacked whole clusters onto ONE point (a centroid, an
 intersection, or a single verified shop) — 66 of 70 places were never individually located, and
