@@ -78,6 +78,7 @@ for(const x of all){
 }
 fs.writeFileSync(`${S}/decisions.json`,JSON.stringify(out,null,1));
 const t={};for(const d of out){const k=`${d.hidden?'hidden':'visible'} ${d.decision}`;t[k]=(t[k]||0)+1}console.log(t);
+fs.writeFileSync(`${S}/reconcile-summary.txt`,Object.entries(t).filter(([k])=>k.startsWith('visible')).map(([k,v])=>`${k.slice(8)}: ${v}`).join(', '));
 if(APPLY){
   const by=new Map(out.map(d=>[d.id,d]));
   for(const c of CITIES){const j=readCity(c);let n=0;
