@@ -9,7 +9,8 @@ const have=new Set(fs.existsSync(C)?fs.readFileSync(C,'utf8').split('\n').filter
 const all=JSON.parse(fs.readFileSync(`${S}/all.json`));
 const CITY={kyoto:"京都",tokyo:"東京",nara:"奈良",kanazawa:"金沢",hiroshima:"広島",nagoya:"名古屋",nagano:"長野",toba:"鳥羽",himeji:"姫路"};
 // With a decisions.json, spend the daily quota on what the free sources could not settle, worst first.
-const PRI=["review_big_move","conflict","single_keep","no_source","weak_single","single_source_replaces_approx"];
+// no_source is excluded: Google is confirm-only, so with no other position there is nothing for it to confirm.
+const PRI=["review_big_move","conflict","single_keep","weak_single","single_source_replaces_approx"];
 let pool=all.filter(d=>!d.hidden&&!have.has(d.id));
 if(fs.existsSync(`${S}/decisions.json`)){const dec=new Map(JSON.parse(fs.readFileSync(`${S}/decisions.json`)).map(d=>[d.id,d]));
   pool=pool.filter(d=>dec.has(d.id)&&PRI.includes(dec.get(d.id).decision)).sort((a,b)=>PRI.indexOf(dec.get(a.id).decision)-PRI.indexOf(dec.get(b.id).decision));}
