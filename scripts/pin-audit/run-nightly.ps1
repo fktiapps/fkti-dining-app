@@ -7,7 +7,7 @@ $ErrorActionPreference = 'Continue'
 $repo = 'C:\PF\fkti-dining'
 $work = Join-Path $env:LOCALAPPDATA 'dcd-pins'
 $log  = Join-Path $work ("run-" + (Get-Date -Format 'yyyyMMdd-HHmmss') + '.log')
-function Log($m) { "$(Get-Date -Format s) $m" | Tee-Object -FilePath $log -Append }
+function Log($m) { $l = "$(Get-Date -Format s) $m"; Add-Content -Path $log -Value $l -Encoding utf8; $l }
 function Abort($m) { Log "ABORT: $m"; git -C $repo checkout -- data/ index.html sw.js 2>&1 | Out-Null; exit 1 }
 
 Set-Location $repo
