@@ -24,8 +24,6 @@ const B3 = 'Band 3 (nothing left to stand on) — stays at "ask" until new sourc
 // id -> ruling. `gf` is the tier; `note` is a sourced caveat prepended to gf_detail.
 const R = {
   // ---- Band 1 ----
-  // cafe planet: Greg ruled "dedicated" quoting the shop's own no-wheat/barley/oats/rye
-  // statement — HELD here pending his answer on the oat granola on the same menu page.
   kz_wagome_2: { gf: 'dedicated', why: B1 + ' The "no dairy" claim cited a 2014 article (cheese pizzas); Greg ruled vegan as well.',
     vegan: 'full', veganWhy: 'Greg, 2026-10-14: "Wagome is both vegan and dairy free, see kanazawa-food.jp/en/." The Kanazawa allergy directory tags it Vegan + Egg/dairy free (kanazawa-food.jp/en/shops/22/); the shop exhibits at ヴィーガンフェスタTOYAMA and sells 豆乳 cakes (wagome.net). The cheese pizzas were in a 2014 kanazawa.keizai.biz article.' },
   nagano_riz_karuizawa:           { gf: 'high',      why: B1 },
@@ -52,6 +50,12 @@ const R = {
 // Band 2 records whose ids are Google Places ids — matched by name instead.
 const BY_NAME = {
   'Gion Soy Milk Ramen – Uno Yukiko': { gf: 'dedicated', why: B2 + ' The misattributed "celiac diner" quote is set aside; the shop\'s own dedicated-GF and GF-soy-sauce statements stand.' },
+  // Ruled in two steps: "dedicated", quoting the shop's own statement; then, shown the oat
+  // granola on the same menu page, "go dedicated with the note."
+  'cafe planet': { gf: 'dedicated', why: B1 + ' Greg, 2026-10-14, citing the shop’s own statement (cafeplanet.kyoto/menu/): no wheat, barley, oats or rye.',
+    note: 'One item uses oats — the acai bowl’s house granola (「オーツ麦を用いた当店オリジナルグラノラ」), although the same page says oats are not used. Ask if you avoid oats.',
+    evidence: { text: 'The shop states it uses no wheat, barley, oats or rye, and no animal products: 「乳製品・卵・肉・魚・はちみつなど動物性の食品、小麦・大麦・オーツ麦・ライ麦なども使用しておりません。」 The same menu page lists an acai bowl with house granola made with oats (「オーツ麦を用いた当店オリジナルグラノラ」).',
+      source: 'https://cafeplanet.kyoto/menu/', verified: DATE } },
   'waco crepes':        { gf: 'dedicated', why: B1 + ' Dedicated GF batter/kitchen per a celiac travel writer + Vegewel; the vegan overstatement is set aside.' },
   'Cafe & Bar Maru @Keika': { gf: 'high', why: B2,
     note: 'Not every drink is gluten-free — Find Me Gluten Free reviewers: "100% gluten free restaurant, minus some alcohol" (gluten-reduced beer). Ask before ordering drinks.' },
@@ -72,6 +76,8 @@ for (const city of CITIES) {
     const d = R[r.id] || BY_NAME[r.name];
     if (!d) continue;
     seen.add(R[r.id] ? r.id : r.name);
+    // Re-runnable: a record already carrying today's ruling at this tier is left alone.
+    if (r.safety?.owner_signoff?.date === DATE && r.gf_confidence === d.gf) continue;
     const from = r.gf_confidence, prior = r.safety?.owner_signoff;
     console.log(`  ${city.padEnd(9)} ${r.name.slice(0, 44).padEnd(45)} gf ${from} -> ${d.gf}` +
                 (d.vegan ? `, vegan ${r.vegan_status} -> ${d.vegan}` : '') + `  (disproven ${disproven(r)})`);
@@ -90,6 +96,8 @@ for (const city of CITIES) {
       r.vegan_detail = String(r.vegan_detail || '').replace(/^\[Held at [^\]]*\]\s*/, '');
       r.vegan_detail = `[Owner review ${DATE}: vegan ${vfrom}→${d.vegan}. ${d.veganWhy}] ` + r.vegan_detail.replace(/Not everything is guaranteed vegan \(some pizzas use additive-free cheese\), so vegans should confirm the specific item, but a/i, 'A');
     }
+    if (d.evidence && !(r.safety.gf_cross_contamination || []).some(e => e.source === d.evidence.source))
+      (r.safety.gf_cross_contamination = r.safety.gf_cross_contamination || []).push(d.evidence);
     r.safety.owner_signoff = so;          // the GF ruling is the live one
     r.safety.last_checked = DATE;
     delete r.gf_uncited_downgrade;
