@@ -64,10 +64,15 @@ try {
     $claude = Join-Path $env:USERPROFILE '.local\bin\claude.exe'
     if (-not (Test-Path $claude)) { $claude = 'claude' }
 
+    # Windows PowerShell 5.1 turns ANY stderr line from a native program into a terminating
+    # error under 'Stop' — the first run died on Claude's one-line "workspace not trusted"
+    # warning before doing anything. Native output is logged, not judged; the exit code is.
+    $ErrorActionPreference = 'Continue'
     $out = & $claude -p (Get-Content $Prompt -Raw) `
         --allowedTools 'Bash' 'Read' 'Write' 'Edit' 'Glob' 'Grep' 'WebFetch' 'WebSearch' `
-        2>&1 | Tee-Object -FilePath $LogFile -Append
+        2>&1 | ForEach-Object { "$_" } | Tee-Object -FilePath $LogFile -Append
     $code = $LASTEXITCODE
+    $ErrorActionPreference = 'Stop'
     $joined = ($out | Out-String)
 
     if ($joined -match "hit your (session|usage) limit") {
