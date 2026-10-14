@@ -116,7 +116,11 @@ for (const city of CITIES) {
     const held = r.gf_uncited_downgrade;
     const legitOverride = held && held.disproven > 0 && r.gf_confidence === 'ask';
     const sg = r.safety?.owner_signoff;
-    if (legitOverride)
+    // Only a record that HAD a sign-off is a question for Greg. A machine-set tier held
+    // down by the same check is an ordinary downgrade, which never needs a human — counting
+    // those here turned 25 real re-reviews into a "107 need Greg" queue.
+    if (legitOverride && !sg) { /* plain downgrade — nothing to re-review */ }
+    else if (legitOverride)
       warn(city, `${at}: held at "ask" over sign-off — ${held.disproven} claim(s) disproven against their sources; needs Greg's re-review`);
     // Check the sign-off against THE FIELD IT WAS FOR. A record can be signed off on
     // its vegan axis alone — 貝や 廉 and サロン・フ both were — and reading a vegan_status

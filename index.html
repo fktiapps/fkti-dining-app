@@ -743,7 +743,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v412';
+const APP_BUILD='dcd-v413';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -2010,7 +2010,10 @@ function renderSummary(j){
   uncited++;
   return `<li class="uncited">${escHtml(text)} <span class="nocite" title="No source recorded for this claim — treat it as unverified">uncited</span></li>`;
  };
- const sec=(title,items)=> items&&items.length?`<b>${title}</b><ul style="margin:4px 0 10px;padding-left:18px">${items.map(li).join('')}</ul>`:'';
+ // A claim checked against its own source and NOT supported by it (`unsupported`) is kept
+ // on the record for audit but never shown: rendered with its citation it reads as verified.
+ const ok=a=>(a||[]).filter(it=>!(it&&typeof it==='object'&&it.unsupported));
+ const sec=(title,raw)=>{const items=ok(raw);return items.length?`<b>${title}</b><ul style="margin:4px 0 10px;padding-left:18px">${items.map(li).join('')}</ul>`:'';};
  const fryer = j.dedicated_fryer===true
    ? `<div style="font-weight:700;color:var(--safe);margin-bottom:8px">✓ Dedicated fryer reported</div>`
    : j.dedicated_fryer===false
@@ -2022,7 +2025,7 @@ function renderSummary(j){
    ${sec('Vegan cross-contact',j.vegan_cross_contact)}
    ${sec('Staff & allergy handling',j.staff_allergy_handling)}
    ${sec('What reviewers liked',j.positives)}
-   ${(!j.gf_cross_contamination?.length && !j.soy_sauce_wheat?.length && !j.vegan_cross_contact?.length)?'<div style="color:#46506b">No specific cross-contamination reports surfaced — that’s not a guarantee; confirm with staff.</div>':''}
+   ${(!ok(j.gf_cross_contamination).length && !ok(j.soy_sauce_wheat).length && !ok(j.vegan_cross_contact).length)?'<div style="color:#46506b">No specific cross-contamination reports surfaced — that’s not a guarantee; confirm with staff.</div>':''}
    ${cites.length?`<div class="cites"><b>Citations</b><ol>${cites.map(u=>`<li><a href="${escHtml(u)}" target="_blank" rel="noopener">${escHtml(hostOf(u))}</a></li>`).join('')}</ol></div>`:''}
    ${uncited?`<div class="nocite-note">⚠ ${uncited} of ${sourced+uncited} claim${sourced+uncited===1?'':'s'} above ${uncited===1?'has':'have'} no recorded source. Treat ${uncited===1?'it':'them'} as unverified and confirm with staff.</div>`:''}
    <div style="font-size:11px;color:var(--muted);margin-top:8px">Confidence: ${j.confidence||'—'} · as of ${j.last_checked||'recently'} · always confirm with staff.</div>

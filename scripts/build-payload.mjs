@@ -65,6 +65,11 @@ for (const city of CITIES) {
     const chunk = Math.floor(i / CHUNK);
     const pin = {}, det = {};
     for (const [k, v] of Object.entries(r)) (DETAIL.has(k) ? det : pin)[k] = v;
+    // A safety claim found NOT supported by its own cited source stays in the canonical
+    // file for audit, but never ships: the app renders every shipped claim with its
+    // citation, which made 422 disproven claims read as verified ones.
+    if (det.safety) det.safety = Object.fromEntries(Object.entries(det.safety).map(([k, v]) =>
+      [k, Array.isArray(v) ? v.filter(e => !(e && typeof e === 'object' && e.unsupported)) : v]));
     // _dc tells the app which chunk holds this record's detail. Stored per record
     // rather than derived from position, because record order changes between builds
     // and a stale index would fetch the wrong chunk.
