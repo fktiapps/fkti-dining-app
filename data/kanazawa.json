@@ -30807,6 +30807,1538 @@
     "overrides_signoff": false,
     "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
+  },
+  {
+   "id": "kz_honmachi_strut",
+   "name": "本町ストラット (Honmachi Strut)",
+   "category": "MOM_AND_POP",
+   "lat": 36.574183,
+   "lng": 136.648648,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": "8:00 to 17:00; closed: Wednesdays and Thursdays",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Honmachi (near Kanazawa Stn east)",
+   "cuisine": "Rice porridge (congee) & coffee",
+   "cuisine_type": "cafe",
+   "website": "https://sites.google.com/view/honmachi-strut/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AC%E7%94%BA%E3%82%B9%E3%83%88%E3%83%A9%E3%83%83%E3%83%88%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9C%AC%E7%94%BA2-6-25",
+   "notes": "Specialty shop for congee (rice porridge) and coffee, with ice cream. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17011306/; cross-checked: Google \"本町ストラット\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/10/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17011306/",
+    "https://sites.google.com/view/honmachi-strut/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_hotel_pacific_cafe",
+   "name": "ホテルパシフィック金沢 カフェ (Hotel Pacific Kanazawa café)",
+   "category": "OMNI",
+   "lat": 36.570523,
+   "lng": 136.657742,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for vegan, not for wheat-free items. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. The directory's vegan example is drinks (soy latte) — not a vegan food menu. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "Cafe 8:00〜22:00（L.O 21:30）; closed: Irregular holidays",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Jukkenmachi (near Omicho Market)",
+   "cuisine": "Hotel café",
+   "cuisine_type": "cafe",
+   "website": "http://www.hotel-pacific.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E9%87%91%E6%B2%A2%20%E3%82%AB%E3%83%95%E3%82%A7%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%8D%81%E9%96%93%E7%94%BA46",
+   "notes": "Hotel café open to non-guests: coffee, homemade ginger ale, alcohol. The directory's vegan example is a soy latte. Listed by kanazawa-food.jp (Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17009119/; cross-checked: Google \"HOTEL PACIFIC KANAZAWA\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/13/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17009119/",
+    "http://www.hotel-pacific.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_kissa_takeya",
+   "name": "喫茶 竹屋 (Kissa Takeya)",
+   "category": "MOM_AND_POP",
+   "lat": 36.56704,
+   "lng": 136.663084,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for vegetarian, not for wheat-free items. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "limited",
+   "vegan_label": "Limited vegan",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegetarian\" (not \"Vegan\"). Ask which dishes are free of egg, dairy and fish-based dashi.",
+   "hours_raw": "10:00 to 17:30; closed: Saturdays to Mondays,Public holidays.",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Otemachi (near Kanazawa Castle / Omicho)",
+   "cuisine": "Vegetable-focused set meals & sweets",
+   "cuisine_type": "kissaten",
+   "website": "https://ja-jp.facebook.com/takeyacafe/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%20%E7%AB%B9%E5%B1%8B%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%A4%A7%E6%89%8B%E7%94%BA6-1",
+   "notes": "Small café (13 seats) serving vegetable-focused set meals, curry, hamburger steak and sweets, all handmade. Closed Sat–Mon and holidays; cards not accepted. Listed by kanazawa-food.jp (Vegetarian).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17004513/; cross-checked: Google \"竹屋\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/16/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17004513/",
+    "https://ja-jp.facebook.com/takeyacafe/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_machiyajuku",
+   "name": "町屋塾 (Machiyajuku)",
+   "category": "MOM_AND_POP",
+   "lat": 36.571155,
+   "lng": 136.668479,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for egg/dairy free / vegan, not for wheat-free items. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Vegan menu exists but is reservation-only (book by the previous day). Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "【Lunch plan】10:30～ or 12:00～ 【Dinner plan】17:30～ or 19:30～; closed: Irregularly (Next day reservation required)",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": true,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Higashiyama (just off the Higashi Chaya district)",
+   "cuisine": "Machiya lunch / dinner plans (vegan menu by reservation)",
+   "cuisine_type": "other",
+   "website": "http://www.machiyajuku.com/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E7%94%BA%E5%B1%8B%E5%A1%BE%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%B1%B11-34-6",
+   "notes": "A renovated traditional machiya a lane away from the Higashi Chaya district. Lunch and dinner are set plans (¥5,000); the vegan menu is entirely by reservation, at least the day before. Tabelog lists the same address and phone as 「Cafe 十一屋」. Listed by kanazawa-food.jp (Egg/dairy free, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17006505/; cross-checked: Google \"町屋塾(machiyajuku)\" 6m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/17/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17006505/",
+    "http://www.machiyajuku.com/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_aashirwad",
+   "name": "アシルワード (Aashirwad)",
+   "category": "MOM_AND_POP",
+   "lat": 36.564549,
+   "lng": 136.652358,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "11:30 to 15:00, 18:00 to 21:00; closed: Mondays",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": true,
+    "open_late": false
+   },
+   "neighborhood": "Nagamachi (samurai district)",
+   "cuisine": "Indian",
+   "cuisine_type": "curry",
+   "website": "https://www.facebook.com/aashirwad.kanazawa",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%82%B7%E3%83%AB%E3%83%AF%E3%83%BC%E3%83%89%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E9%95%B7%E7%94%BA1-4-59",
+   "notes": "Indian restaurant with various vegan and vegetarian options and halal-compatible dishes. Closed Mondays. Listed by kanazawa-food.jp (Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17007601/; cross-checked: Google \"アシルワード\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/28/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17007601/",
+    "https://www.facebook.com/aashirwad.kanazawa"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_noppokun",
+   "name": "のっぽくん (NOPPOKUN)",
+   "category": "OMNI",
+   "lat": 36.533429,
+   "lng": 136.619315,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for egg/dairy free / vegetarian / vegan, not for wheat-free items. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "10:00 to 19:00（Sun & Holiday 18:30）; closed: Monday （Open on holidays）",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Nonoichi (Honmachi)",
+   "cuisine": "Organic supermarket café",
+   "cuisine_type": "cafe",
+   "website": "http://noppokun.co.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%81%AE%E3%81%A3%E3%81%BD%E3%81%8F%E3%82%93%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%8E%E3%80%85%E5%B8%82%E5%B8%82%E6%9C%AC%E7%94%BA2-1-1",
+   "notes": "Organic supermarket with a café corner (menu from ¥486). In Nonoichi, south-west of central Kanazawa; 30 parking spaces. Listed by kanazawa-food.jp (Egg/dairy free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1702/A170203/17011165/; cross-checked: Google \"のっぽくん（NOPPOKUN)\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/32/",
+    "https://tabelog.com/en/ishikawa/A1702/A170203/17011165/",
+    "http://noppokun.co.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_kamataki_onigiri_mitsuya",
+   "name": "釜炊き おにぎり みつや (Kamataki Onigiri Mitsuya)",
+   "category": "MOM_AND_POP",
+   "lat": 36.557303,
+   "lng": 136.659191,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for egg/dairy free / vegetarian, not for wheat-free items. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "limited",
+   "vegan_label": "Limited vegan",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegetarian\" (not \"Vegan\"). Plain salt / kombu / ume onigiri are the directory's plant-based examples; kombu tsukudani is usually soy-sauce simmered. Ask which dishes are free of egg, dairy and fish-based dashi.",
+   "hours_raw": "11:00 to 21:00 (11:00 to 15:00 on Sundays and Public holidays); closed: irregularly",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Hondamachi",
+   "cuisine": "Onigiri (rice balls)",
+   "cuisine_type": "other",
+   "website": "http://ameblo.jp/onigiri-mitsuya/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E9%87%9C%E7%82%8A%E3%81%8D%20%E3%81%8A%E3%81%AB%E3%81%8E%E3%82%8A%20%E3%81%BF%E3%81%A4%E3%82%84%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9C%AC%E5%A4%9A%E7%94%BA3-10-15%20%E6%8A%BC%E9%87%8E%E8%B0%B7%E3%83%93%E3%83%AB%201F",
+   "notes": "Pot-cooked rice onigiri, almost entirely handmade, no food additives: salt, kombu, ume, Kanazawa-style fillings (Kaga lotus-root kinpira, Noto beef shigure) and seasonal ones. Eat-in, take-out and delivery. Listed by kanazawa-food.jp (Egg/dairy free, Vegetarian).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17006760/; cross-checked: Google \"釜炊きおにぎり みつや\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/34/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17006760/",
+    "http://ameblo.jp/onigiri-mitsuya/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_panya_mugico",
+   "name": "ぱんや mugico (Bakery mugico)",
+   "category": "MOM_AND_POP",
+   "lat": 36.552398,
+   "lng": 136.67429,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for egg/dairy free, not for wheat-free items. A wheat bakery — the directory lists it for egg/dairy-free breads, not for wheat-free items. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": "9:00 to 17:00; closed: Tuesdays and Wednesdays",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Kodatsuno",
+   "cuisine": "Bakery",
+   "cuisine_type": "sweets",
+   "website": "https://www.facebook.com/%E3%81%B1%E3%82%93%E3%82%84-mugico-883311448381040/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%81%B1%E3%82%93%E3%82%84%20mugico%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%B0%8F%E7%AB%8B%E9%87%8E4-1-2",
+   "notes": "Neighbourhood bakery with egg- and dairy-free breads among its range; ingredient lists available on request. Small eat-in space; one drink served with each purchase. Closed Tue & Wed. Listed by kanazawa-food.jp (Egg/dairy free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17009721/; cross-checked: Google \"ぱんや mugico\" 3m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/36/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17009721/",
+    "https://www.facebook.com/%E3%81%B1%E3%82%93%E3%82%84-mugico-883311448381040/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_hakkoshoku_bijin_shokudo",
+   "name": "発酵食美人食堂 (Hakkōshoku Bijin Shokudō)",
+   "category": "OMNI",
+   "lat": 36.613526,
+   "lng": 136.607549,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "No gluten-free information found; kanazawa-food.jp lists this shop for its menu, not for wheat-free items. Run by a soy sauce brewery — expect soy sauce and miso (which usually contain wheat/barley) throughout; the directory gives no wheat-free tag. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found. Ask.",
+   "hours_raw": "Lunch: 11:30 ~ 14:30 Cafe: 14:30 ~ 16:00; closed: Wednesday.",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Ōno (Yamato Soy Sauce & Miso brewery)",
+   "cuisine": "Fermented-food set meals",
+   "cuisine_type": "shokudo",
+   "website": "https://www.yamato-soysauce-miso.co.jp/cafe_lunch.html",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E7%99%BA%E9%85%B5%E9%A3%9F%E7%BE%8E%E4%BA%BA%E9%A3%9F%E5%A0%82%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%A4%A7%E9%87%8E%E7%94%BA4-%E3%82%A4170%20(%E6%A0%AA)%E3%83%A4%E3%83%9E%E3%83%88%E9%86%A4%E6%B2%B9%E5%91%B3%E5%99%8C%E6%9C%AC%E7%A4%BE%E5%B7%A5%E5%A0%B4%E3%83%BB%E7%99%BE%E5%B9%B4%E8%94%B5",
+   "notes": "Lunch and café run by the Yamato soy sauce & miso brewery in the Ōno brewing district, built around fermented foods. Closed Wednesdays; 20 parking spaces. Listed by kanazawa-food.jp (no allergy tags).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170102/17007902/; cross-checked: Google \"発酵食美人食堂® (糀パーク内）\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/41/",
+    "https://tabelog.com/en/ishikawa/A1701/A170102/17007902/",
+    "https://www.yamato-soysauce-miso.co.jp/cafe_lunch.html"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_hug_mitten_works",
+   "name": "ハグ ミトン ワークス (HUG mitten WORKS)",
+   "category": "MOM_AND_POP",
+   "lat": 36.587821,
+   "lng": 136.640271,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": "11:00〜18:00; closed: Thursday, and Friday",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": true,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Ekinishi-shinmachi (west of Kanazawa Stn)",
+   "cuisine": "Allergy-friendly bagels & baked goods (take-out)",
+   "cuisine_type": "sweets",
+   "website": "https://hug-works.com/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%82%B0%20%E3%83%9F%E3%83%88%E3%83%B3%20%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E9%A7%85%E8%A5%BF%E6%96%B0%E7%94%BA1-1-29",
+   "notes": "Take-out only: non-allergenic bagels, cookies and cakes; reservation required. Closed Thu & Fri. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17006637/; cross-checked: Google \"ハグ ミトン ワークス\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/42/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17006637/",
+    "https://hug-works.com/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_slow_luck",
+   "name": "スローラック (Slow Luck -vegetable bal-)",
+   "category": "MOM_AND_POP",
+   "lat": 36.566016,
+   "lng": 136.654695,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "limited",
+   "vegan_label": "Limited vegan",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegetarian\" (not \"Vegan\"). Ask which dishes are free of egg, dairy and fish-based dashi.",
+   "hours_raw": "18:00〜23:00(L.O.22：00); closed: Mon and Sun",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": true,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Oyama-machi (near Oyama Shrine / Korinbo)",
+   "cuisine": "Vegetable bar — creative course meals",
+   "cuisine_type": "other",
+   "website": "http://www.slow-luck.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%83%E3%82%AF%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%B0%BE%E5%B1%B1%E7%94%BA13-23%201F",
+   "notes": "Evening-only vegetable bar serving creative courses from local vegetables. Course meals only; reserve at least two days ahead. Closed Sun & Mon. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17008239/; cross-checked: Google \"スローラック\" 2m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/43/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17008239/",
+    "http://www.slow-luck.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_good4life36cafe",
+   "name": "GOOD4LIFE36CAFE",
+   "category": "MOM_AND_POP",
+   "lat": 36.582186,
+   "lng": 136.632007,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "10:00~19:00; closed: Mon",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Ekinishi-honmachi (west of Kanazawa Stn)",
+   "cuisine": "Coffee roaster & vegan baked goods",
+   "cuisine_type": "cafe",
+   "website": "https://good4life.thebase.in/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=GOOD4LIFE36CAFE%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E9%A7%85%E8%A5%BF%E6%9C%AC%E7%94%BA5-1-36",
+   "notes": "Home-roasting coffee bar with latte art, soy lattes, and vegan cookies, cakes and muffins. Closed Mondays. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17009422/; cross-checked: Google \"GOOD 4 LIFE 36 CAFE\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/45/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17009422/",
+    "https://good4life.thebase.in/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_paul_bocuse_cafe_brasserie",
+   "name": "カフェ＆ブラッスリー ポール・ボキューズ (Cafe & Brasserie Paul Bocuse)",
+   "category": "OMNI",
+   "lat": 36.562435,
+   "lng": 136.657836,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "Lunch- 11:00～17:00 Dinner- 17:00～19:00 (18:00 L.O.); closed: Closed every Monday(Except for special events held at the Shiinoki Complex)",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Hirosaka (Shiinoki Cultural Complex, by Kenroku-en)",
+   "cuisine": "French brasserie",
+   "cuisine_type": "french",
+   "website": "https://www.hiramatsurestaurant.jp/paulbocuse-cafe/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%EF%BC%86%E3%83%96%E3%83%A9%E3%83%83%E3%82%B9%E3%83%AA%E3%83%BC%20%E3%83%9D%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%9C%E3%82%AD%E3%83%A5%E3%83%BC%E3%82%BA%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%BA%83%E5%9D%822-1-1%20%E3%81%97%E3%81%84%E3%81%AE%E3%81%8D%E8%BF%8E%E8%B3%93%E9%A4%A81F",
+   "notes": "French brasserie on the ground floor of the Shiinoki Cultural Complex (separate from the Jardin Paul Bocuse restaurant upstairs). The directory says it can \"flexibly accommodate any food allergies or dislikes\" — ask. Closed Mondays. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17006199/; cross-checked: Google \"カフェ＆ブラッスリー ポール・ボキューズ\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/56/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17006199/",
+    "https://www.hiramatsurestaurant.jp/paulbocuse-cafe/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_ritsuka",
+   "name": "氷菓子りつか (Ritsuka shaved ice)",
+   "category": "MOM_AND_POP",
+   "lat": 36.571967,
+   "lng": 136.667921,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found. Ask.",
+   "hours_raw": "11：00 to 17：00; closed: Wednesday",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Higashiyama (Higashi Chaya area)",
+   "cuisine": "Shaved ice (kakigōri)",
+   "cuisine_type": "sweets",
+   "website": "https://www.instagram.com/higashiyamaritsuka/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B7%E8%8F%93%E5%AD%90%E3%82%8A%E3%81%A4%E3%81%8B%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%B1%B11-23-10",
+   "notes": "Kakigōri made with pure ice and homemade syrups from seasonal, locally sourced fruit. Closed Wednesdays. Listed by kanazawa-food.jp (Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17012971/; NOT cross-checked (no Google match); 2026-10-14",
+   "loc_approx": "single",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/58/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17012971/",
+    "https://www.instagram.com/higashiyamaritsuka/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_kissa_merzbau",
+   "name": "喫茶メルツバウ (Kissa Merzbau)",
+   "category": "MOM_AND_POP",
+   "lat": 36.565751,
+   "lng": 136.654335,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. The shop's own directory entry says its gluten-free sweets are \"(Not allergy friendly)\" — wheat is handled on site. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found. Ask.",
+   "hours_raw": "7am-3pm; closed: Thurs.",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Oyama-machi (near Oyama Shrine / Korinbo)",
+   "cuisine": "Town coffee shop",
+   "cuisine_type": "kissaten",
+   "website": "https://merzbau-kissa.com/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%E3%83%A1%E3%83%AB%E3%83%84%E3%83%90%E3%82%A6%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%B0%BE%E5%B1%B1%E7%94%BA1-25%20%E9%9D%92%E5%B1%B1%E3%83%93%E3%83%AB%201F",
+   "notes": "Neighbourhood coffee shop using Ishikawa produce. Popular gluten-free sweets include a rice-flour banana cake and 100% brown-rice-flour toast — but the shop itself says it is \"not allergy friendly\". Open 7am–3pm; closed Thursdays. Listed by kanazawa-food.jp (Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17009259/; cross-checked: Google \"喫茶 メルツバウ\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/61/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17009259/",
+    "https://merzbau-kissa.com/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_siii",
+   "name": "Siii (Seasonal food)",
+   "category": "MOM_AND_POP",
+   "lat": 36.511657,
+   "lng": 136.711855,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "10:00 a.m. - 4:00 p.m.; closed: Sunday and Monday",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Higashi-Araya-machi (south-east hills)",
+   "cuisine": "Seasonal deli, baked goods & gelato",
+   "cuisine_type": "other",
+   "website": "https://siii-seasonalfood.com/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=Siii%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E8%8D%92%E5%B1%8B%E7%94%BA%E3%83%8C63-2",
+   "notes": "Seasonal deli: baked goods, rice balls, prepared dishes and gelato from fresh seasonal produce. Closed Sun & Mon. On the south-eastern edge of the city — a drive, not a walk. Listed by kanazawa-food.jp (Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17013506/; cross-checked: Google \"Siii\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/66/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17013506/",
+    "https://siii-seasonalfood.com/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_kanazawa_kitchen",
+   "name": "金沢キッチン (Kanazawa Kitchen)",
+   "category": "MOM_AND_POP",
+   "lat": 36.542889,
+   "lng": 136.747854,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": "応相談; closed: 不定休",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": true,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Shimizu-machi (satoyama hills, south-east)",
+   "cuisine": "Satoyama vegetable cooking (by reservation)",
+   "cuisine_type": "other",
+   "website": "https://www.kanazawa-k.net/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E6%B2%A2%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%B8%85%E6%B0%B4%E7%94%BA%E3%81%B88-1",
+   "notes": "Vegetable-rich dishes with natural seasonings in the satoyama hills; also a cooking class and weekend café per Tabelog. Regular lunches need a reservation at least 3 days ahead; hours by arrangement. Far from the centre. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17016126/; NOT cross-checked (Google 319m away); 2026-10-14",
+   "loc_approx": "single",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/67/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17016126/",
+    "https://www.kanazawa-k.net/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_malga_lab_nonoichi",
+   "name": "マルガーラボ野々市 (MALGA GELATO Lab Nonoichi)",
+   "category": "MOM_AND_POP",
+   "lat": 36.535031,
+   "lng": 136.610043,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Sorbets are the plant-based options; most gelato is made with raw milk. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "11:00～17:00; closed: the New Year's holiday",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Nonoichi (Honmachi)",
+   "cuisine": "Gelato",
+   "cuisine_type": "sweets",
+   "website": "http://www.malgagelato.com/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%A9%E3%83%9C%E9%87%8E%E3%80%85%E5%B8%82%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%8E%E3%80%85%E5%B8%82%E5%B8%82%E6%9C%AC%E7%94%BA6-370",
+   "notes": "Noto gelato maker MALGA GELATO's Nonoichi shop: local ingredients and local raw milk, seasonal flavours (pineapple-celery-apple sorbet, strawberry, yuzu). Some gelato contains none of the 8 major allergens. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1702/A170203/17013650/; cross-checked: Google \"マルガーラボ野々市\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/80/",
+    "https://tabelog.com/en/ishikawa/A1702/A170203/17013650/",
+    "http://www.malgagelato.com/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_pickpho",
+   "name": "ピックフォー (PickPHO)",
+   "category": "MOM_AND_POP",
+   "lat": 36.560262,
+   "lng": 136.6564,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Rice-flour noodles are wheat-free, but pho broth and dipping sauces can contain soy sauce or fish sauce blends — ask. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "11:00-15:00; closed: Mon",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Kakinokibatake (Korinbo)",
+   "cuisine": "Vietnamese pho (fresh rice-flour noodles)",
+   "cuisine_type": "other",
+   "website": "https://www.instagram.com/pickpho.kanazawa/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%94%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%BC%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9F%BF%E6%9C%A8%E7%95%A02-11%20%E9%95%B7%E7%A6%8F%E3%83%93%E3%83%AB%201F",
+   "notes": "Pho shop with fresh rice-flour noodles: chicken pho, green-curry noodles, tom yam pho, spring rolls, som tam-style salad, falafel. Lunch only (11:00–15:00); closed Mondays. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17016156/; cross-checked: Google \"PickPHO\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/83/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17016156/",
+    "https://www.instagram.com/pickpho.kanazawa/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_tile",
+   "name": "タイル (TILE)",
+   "category": "OMNI",
+   "lat": 36.577794,
+   "lng": 136.651255,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Vegetarian bowl listed by ingredient; served in a seafood-focused kitchen. Oboro kelp and takuan seasonings are not specified. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "OPEN. 11:00~15:00 (L.O 14:00) DINNER. 17:00~22:00 (L.O 21:00); closed: Irregular holidays",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Konohanamachi (5 min from Kanazawa Stn)",
+   "cuisine": "Build-your-own seafood bowls",
+   "cuisine_type": "donburi",
+   "website": "https://tile-japan.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%82%A4%E3%83%AB%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A4%E8%8A%B1%E7%94%BA4-18",
+   "notes": "Experience restaurant where you pick toppings from ~30 ingredients for your own kaisendon. Vegetarian \"Kanazawa Mosaic\" shōjin bowl (¥3,300): paprika, takuan, cucumber, mixed beans, shiitake, oboro kelp, micro greens, myoga. Entry by door code through a nijiriguchi. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17012705/; cross-checked: Google \"TILE\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/85/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17012705/",
+    "https://tile-japan.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_barrier",
+   "name": "バリア (barrier)",
+   "category": "OMNI",
+   "lat": 36.571474,
+   "lng": 136.663947,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. The vegetarian course includes ramen noodles (normally wheat) — not a GF course. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Vegetarian course uses kelp (not bonito) dashi. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "OPEN. 11:00〜22:00（L.O.21:00）; closed: Irregular holidays",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Owari-chō (near Omicho / Higashi Chaya)",
+   "cuisine": "Dashi-experience restaurant",
+   "cuisine_type": "other",
+   "website": "https://barrier-japan.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%90%E3%83%AA%E3%82%A2%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%B0%BE%E5%BC%B5%E7%94%BA2-14-21",
+   "notes": "Experience restaurant built around dashi poured from a siphon. Vegetarian course (¥4,950) on kelp dashi: three side dishes, seasonal pressed sushi, ramen noodles and dessert. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17014075/; cross-checked: Google \"barrier\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/86/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17014075/",
+    "https://barrier-japan.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_kaburaki_shoho_musashi",
+   "name": "鏑木商舗 武蔵店 (Kaburaki Shōho Musashi)",
+   "category": "OMNI",
+   "lat": 36.570964,
+   "lng": 136.654744,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "10:00-19:00; closed: non-scheduled holiday",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Musashi (by Omicho Market)",
+   "cuisine": "Craft shop with dining counter & gelato",
+   "cuisine_type": "other",
+   "website": "https://kaburaki.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E9%8F%91%E6%9C%A8%E5%95%86%E8%88%97%20%E6%AD%A6%E8%94%B5%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A6%E8%94%B5%E7%94%BA1-13%202%EF%BC%A6",
+   "notes": "Kutani-ware and craft shop with a counter for Kanazawa food and craft beer, plus a MALGA GELATO corner (single ¥550, double ¥730). Tabelog lists the dining counter as 「Kabraki Shokudo」 (2F). Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17014143/; cross-checked: Google \"鏑木商舗武蔵店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/98/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17014143/",
+    "https://kaburaki.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_natuleg",
+   "name": "ナチュレグ (Natuleg)",
+   "category": "MOM_AND_POP",
+   "lat": 36.577893,
+   "lng": 136.622746,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Dressings are not itemised — ask which are soy-sauce based. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday 11:00 - 18:00; closed: Monday",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Izumo-machi (west Kanazawa)",
+   "cuisine": "Chopped salads & enzyme brown rice",
+   "cuisine_type": "other",
+   "website": "https://natuleg.square.site/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%8A%E3%83%81%E3%83%A5%E3%83%AC%E3%82%B0%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%87%BA%E9%9B%B2%E7%94%BA%E3%82%A4230-2%20%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC308%E3%82%BF%E3%82%A6%E3%83%B3",
+   "notes": "Chopped-salad shop (Caesar, honey mustard, Cobb, Japanese-style…) with enzyme brown rice and onigiri; order in store or online. Closed Mondays; 45 parking spaces. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17013374/; cross-checked: Google \"ナチュレグ Natuleg\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/99/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17013374/",
+    "https://natuleg.square.site/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_tree_life",
+   "name": "Tree life (ツリーライフ)",
+   "category": "MOM_AND_POP",
+   "lat": 36.596935,
+   "lng": 136.639538,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Bakes BOTH gluten-free and domestic-wheat snacks — shared kitchen. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "options",
+   "vegan_label": "Some vegan options",
+   "vegan_detail": "kanazawa-food.jp tags this shop \"Vegan\": vegan items are available. Shared kitchen unless stated — confirm with staff.",
+   "hours_raw": "Please check our Instagram ‼; closed: Please check our Instagram ‼",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Minami-Shinbo (north-west)",
+   "cuisine": "Plant-based snacks & baked sweets",
+   "cuisine_type": "sweets",
+   "website": "https://www.instagram.com/tree.life.oyatsu/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=Tree%20life%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%8D%97%E6%96%B0%E4%BF%9D%E7%94%BA%E3%83%8F43-1",
+   "notes": "Baked sweets from plant-based ingredients, in both gluten-free and domestic-wheat versions. Check Instagram for opening days. (The directory still shows the older Tsuzumi-machi address; the phone number matches this listing.) Listed by kanazawa-food.jp (Egg/dairy free, Wheat free, Vegetarian, Vegan).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17015715/; cross-checked: Google \"Tree life\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/103/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17015715/",
+    "https://www.instagram.com/tree.life.oyatsu/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_yokaichi",
+   "name": "ココス 金沢八日市店 (COCO'S Kanazawa Yokaichi)",
+   "category": "OMNI",
+   "lat": 36.549885,
+   "lng": 136.61002,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": "11:00～22:00（L.O.21:30）; closed: open 24/7",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Yokaichi (west)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": "https://www.cocos-jpn.co.jp/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E9%87%91%E6%B2%A2%E5%85%AB%E6%97%A5%E5%B8%82%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%85%AB%E6%97%A5%E5%B8%825-446",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17005698/; cross-checked: Google \"ココス 金沢八日市店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/88/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17005698/",
+    "https://www.cocos-jpn.co.jp/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_kodatsuno",
+   "name": "ココス 小立野店 (COCO'S Kodatsuno)",
+   "category": "OMNI",
+   "lat": 36.545536,
+   "lng": 136.681708,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Kodatsuno",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E5%B0%8F%E7%AB%8B%E9%87%8E%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%B0%8F%E7%AB%8B%E9%87%8E1-9-20",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17000941/; cross-checked: Google \"ココス 小立野店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/89/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17000941/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_motomachi",
+   "name": "ココス 元町店 (COCO'S Motomachi)",
+   "category": "OMNI",
+   "lat": 36.580012,
+   "lng": 136.664279,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Motomachi (north)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E5%85%83%E7%94%BA%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%85%83%E7%94%BA2-5-7",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17005699/; cross-checked: Google \"ココス 元町店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/90/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17005699/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_izumigaoka",
+   "name": "ココス 泉ヶ丘店 (COCO'S Izumigaoka)",
+   "category": "OMNI",
+   "lat": 36.535024,
+   "lng": 136.647747,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Izumino-demachi (south)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E6%B3%89%E3%83%B6%E4%B8%98%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%B3%89%E9%87%8E%E5%87%BA%E7%94%BA4-2-16",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17005700/; cross-checked: Google \"ココス 泉ヶ丘店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/91/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17005700/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_moroe",
+   "name": "ココス 諸江店 (COCO'S Moroe)",
+   "category": "OMNI",
+   "lat": 36.590811,
+   "lng": 136.645697,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Moroe (north-west)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E8%AB%B8%E6%B1%9F%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E8%AB%B8%E6%B1%9F%E7%94%BA30-1",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17005701/; cross-checked: Google \"ココス 諸江店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/92/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17005701/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_kuratsuki",
+   "name": "ココス 金沢鞍月店 (COCO'S Kanazawa Kuratsuki)",
+   "category": "OMNI",
+   "lat": 36.602592,
+   "lng": 136.619233,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Tomizu / Kuratsuki (north-west)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E9%87%91%E6%B2%A2%E9%9E%8D%E6%9C%88%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%88%B8%E6%B0%B42-81",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17005705/; cross-checked: Google \"ココス 金沢鞍月店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/93/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17005705/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_okuwa",
+   "name": "ココス 金沢大桑店 (COCO'S Kanazawa Okuwa)",
+   "category": "OMNI",
+   "lat": 36.537855,
+   "lng": 136.674726,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Ōkuwa (south)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E9%87%91%E6%B2%A2%E5%A4%A7%E6%A1%91%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E5%A4%A7%E6%A1%91%E7%94%BA%E3%83%8B2%E8%A1%97%E5%8C%BA1-1",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17000768/; cross-checked: Google \"ココス 金沢大桑店\" 8m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/94/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17000768/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_shimeno",
+   "name": "ココス 金沢示野店 (COCO'S Kanazawa Shimeno)",
+   "category": "OMNI",
+   "lat": 36.579781,
+   "lng": 136.615913,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Shimeno (west)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E9%87%91%E6%B2%A2%E7%A4%BA%E9%87%8E%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E7%A4%BA%E9%87%8E%E4%B8%AD%E7%94%BA87%E8%A1%97%E5%8C%BA1",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17005706/; cross-checked: Google \"ココス 金沢示野店\" 5m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/95/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17005706/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_matto_aiki",
+   "name": "ココス 松任相木店 (COCO'S Mattō Aiki)",
+   "category": "OMNI",
+   "lat": 36.527988,
+   "lng": 136.562013,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Hakusan (Mattō Aiki)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E6%9D%BE%E4%BB%BB%E7%9B%B8%E6%9C%A8%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E7%99%BD%E5%B1%B1%E5%B8%82%E7%9B%B8%E6%9C%A82-15-19",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1702/A170203/17007994/; cross-checked: Google \"ココス 松任相木店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/96/",
+    "https://tabelog.com/en/ishikawa/A1702/A170203/17007994/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_cocos_fukuhisa",
+   "name": "ココス 金沢福久店 (COCO'S Kanazawa Fukuhisa)",
+   "category": "OMNI",
+   "lat": 36.616779,
+   "lng": 136.682355,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\" — that means wheat-free items are offered, not that the kitchen is wheat-free. Chain family restaurant with a shared kitchen; the directory tag means some menu items avoid wheat, not that they are prepared apart from it. No source covers cross-contamination or the soy sauce used — ask staff.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; kanazawa-food.jp tags it \"Egg/dairy free\", which is not the same as vegan (fish dashi, honey etc. may still be used). Ask.",
+   "hours_raw": null,
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Fukuhisa (AEON Kanazawa car park)",
+   "cuisine": "Family restaurant (chain)",
+   "cuisine_type": "yoshoku",
+   "website": null,
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%82%B3%E3%82%B9%20%E9%87%91%E6%B2%A2%E7%A6%8F%E4%B9%85%E5%BA%97%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E7%A6%8F%E4%B9%852-58%20%E3%82%A4%E3%82%AA%E3%83%B3%E9%87%91%E6%B2%A2%E5%BA%97%20%E9%A7%90%E8%BB%8A%E5%A0%B4",
+   "notes": "COCO'S family restaurant (chain). Listed by kanazawa-food.jp for egg/dairy-free and wheat-free options — COCO'S publishes allergen information for its menu; ask for it in store. Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17012748/; cross-checked: Google \"ココス 金沢福久店\" 1m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Tabelog /en/ listing without a closed/relocated badge; Google Places businessStatus OPERATIONAL"
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/97/",
+    "https://tabelog.com/en/ishikawa/A1701/A170101/17012748/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
+  },
+  {
+   "id": "kz_anytime_sweets",
+   "name": "AnytimeSweets (エニタイムスイーツ)",
+   "category": "MOM_AND_POP",
+   "lat": 36.539898,
+   "lng": 136.648499,
+   "gf_confidence": "ask",
+   "gf_label": "GF — ask",
+   "gf_detail": "kanazawa-food.jp (a Kanazawa allergy/vegan directory) tags this shop \"Wheat free\": its koji sorbet is listed with none of the 28 labelled allergens, and its rice chiffon cake as wheat-free. That covers those products, not the kitchen. No source covers cross-contamination — ask.",
+   "vegan_status": "ask",
+   "vegan_label": "Vegan — ask",
+   "vegan_detail": "No vegan claim found; the directory tags it \"Egg/dairy free\" (koji sorbet: no 28-allergen ingredients), which is not the same as vegan. Ask about the chiffon cake.",
+   "hours_raw": "Always open; closed: none (per kanazawa-food.jp)",
+   "hours": null,
+   "hours_status": "irregular",
+   "flags": {
+    "reservation": false,
+    "cash_only": false,
+    "halal": false,
+    "open_late": false
+   },
+   "neighborhood": "Izumino-demachi (south)",
+   "cuisine": "Koji sorbet & rice chiffon cake",
+   "cuisine_type": "sweets",
+   "website": "https://www.instagram.com/asweets2023/",
+   "gmaps": "https://www.google.com/maps/search/?api=1&query=Anytime%20Sweets%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%B3%89%E9%87%8E%E5%87%BA%E7%94%BA3-2-2",
+   "notes": "Small sweets shop (RoyalYu Izumigaoka 1F 102-A): koji sorbet (¥290; stick-tea and cacao) with none of the 28 labelled allergens, and wheat-free rice chiffon cakes (¥2,500; plain and chocolate). Listed by kanazawa-food.jp (Egg/dairy free, Wheat free).",
+   "menu_url": null,
+   "safety": {},
+   "pin_source": "Directory address 泉野出町3-2-2 (https://kanazawa-food.jp/en/shops/62/) via GSI (号-level); cross-checked: Google \"Anytime Sweets\" 15m (Google coordinates not retained); 2026-10-14",
+   "trading_verified": {
+    "date": "2026-10-14",
+    "why": "Google Places businessStatus OPERATIONAL; no Tabelog listing found."
+   },
+   "sources": [
+    "https://kanazawa-food.jp/en/shops/62/",
+    "https://www.instagram.com/asweets2023/"
+   ],
+   "added": {
+    "date": "2026-10-14",
+    "via": "kanazawa-food.jp directory sweep (launch item 5)"
+   }
   }
  ]
 }
