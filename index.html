@@ -251,7 +251,6 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 #scanModal .box{max-width:560px;margin:0 auto}
 #phraseModal .box{max-width:560px;margin:0 auto}
 .fab-scan{background:linear-gradient(135deg,#0E7C66,#16A34A);color:#fff}
-.fab-add{background:linear-gradient(135deg,#9c3b2e,#c2562f);color:#fff;font-size:17px}
 .rq-btn{width:100%;border:none;border-radius:10px;padding:12px;font-weight:700;cursor:pointer;margin-top:8px;font-size:14px}
 .rq-photo{background:#9c3b2e;color:#fff}.rq-map{background:var(--ver);color:#fff}
 .rq-in{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:9px;font:inherit;font-size:14px;margin-top:6px;background:#fff}
@@ -452,6 +451,7 @@ li.uncited{color:#7c8299}
    <button class="chip card-chip" id="stationBtn" data-i18n="nav.station">🚉 Station</button>
    <button class="chip card-chip" id="learnBtn" data-i18n="nav.learn">📚 Learn</button>
    <button class="chip card-chip" id="menupediaBtn" data-i18n="nav.100dishes">🍱 100 Dishes</button>
+   <button class="chip card-chip" id="addFab" data-i18n="nav.suggest">➕ Suggest a place</button>
    <button class="chip" id="filterGear" data-i18n="nav.filters">⚙ Filters</button>
   </div>
   <div class="frow" id="catPills">
@@ -480,7 +480,6 @@ li.uncited{color:#7c8299}
   <div class="fabs">
    <button class="fab fab-now" id="nowFab" aria-label="Find food near me now" data-i18n-aria="fab.now">🍽️</button>
    <button class="fab fab-scan" id="scanFab" aria-label="Scan a menu" data-i18n-aria="fab.scan">📷</button>
-   <button class="fab fab-add" id="addFab" aria-label="Suggest a place for us to research" data-i18n-aria="fab.add">➕</button>
    <button class="fab" id="konbiniFab" aria-label="Toggle konbini layer" data-i18n-aria="fab.konbini">🏪</button>
    <button class="fab" id="groceryFab" aria-label="Toggle grocery layer" data-i18n-aria="fab.grocery">🛒</button>
    <button class="fab" id="chainsFab" aria-label="Toggle reliable-chain layer" data-i18n-aria="fab.chains">🍴</button>
@@ -773,7 +772,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v425';
+const APP_BUILD='dcd-v426';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -899,7 +898,7 @@ const STRINGS_JA={
  'card.intro':'スマートフォンをスタッフに渡してください — 日本語で食事制限を説明するカードで、見落としがちなポイント（醤油に隠れた小麦、ほぼすべてに使われる魚だしなど）も含まれています。',
  'card.celiac':'セリアック病／グルテンフリー','card.vegan':'ヴィーガン','card.brighttip':'ヒント：画面の明るさを上げて読みやすくしてください。',
  'scan.title':'📷 メニューをスキャン',
- 'ar:fab.add':'調べてほしいお店を提案','rq.title':'➕ お店を提案する',
+ 'nav.suggest':'➕ お店を提案','rq.title':'➕ お店を提案する',
  'rq.intro':'アプリに載っていないお店を見つけましたか？送っていただければ、他のお店と同じ基準で調べます — グルテンフリー・ヴィーガンの根拠、メニュー、お店の人。通常1日以内に掲載されます。',
  'ph:rq.name':'店名（わかれば・任意）','ph:rq.note':'伝えたいこと（任意）',
  'rq.photo':'📷 お店の外観を撮影','rq.map':'📍 地図で場所を選ぶ','rq.send':'調査を依頼','rq.cancel':'キャンセル',
