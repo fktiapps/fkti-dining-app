@@ -112,7 +112,12 @@ window, the street number plate. The traveller's name/note are hints, not eviden
     Then tell the traveller:
       set <id> added --place <place id> --city <city> --msg "..." --msg-ja "..."
     The message is one or two plain sentences: what we found, and the GF/vegan headline
-    ("Some vegan options; for gluten-free, ask — details in the app").
+    in the app's OWN tier labels, verbatim (lib-tiers.mjs GF_LABEL / VEGAN_LABEL, and
+    GF_LABEL_JA / VEGAN_LABEL_JA in lib-i18n.mjs for --msg-ja), always followed by
+    "see its page for details and cautions". Never paraphrase a GF tier into a stronger
+    or looser phrase ("a gluten-free kitchen") — the caveats live on the page, and a
+    status message that drops them is a safety statement without its conditions.
+    Same rule for `exists` messages about a place already in the app.
 
 === 3. HARD RULES ===
   - Fabrication is forbidden. Synthesis of sources: fine. Anything a source does not
