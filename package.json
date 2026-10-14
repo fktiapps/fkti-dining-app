@@ -22,7 +22,8 @@
     "build:survival": "node scripts/build-survival.mjs",
     "build:chains": "node scripts/build-chains.mjs",
     "smoke": "node scripts/smoke-app.mjs",
-    "serve": "node scripts/static-serve.mjs"
+    "serve": "node scripts/static-serve.mjs",
+    "secret:anthropic": "wrangler pages secret put ANTHROPIC_API_KEY"
   },
   "devDependencies": {
     "wrangler": "4.103.0"
