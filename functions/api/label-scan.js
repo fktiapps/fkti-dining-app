@@ -5,7 +5,7 @@
  * and returns a translated ingredient list + gluten & animal (vegan) verdicts for a celiac/vegan traveler.
  * Requires secret MISTRAL_API_KEY. Returns {wired:false} if missing.
  */
-const MODEL = 'pixtral-large-latest';
+const MODEL = 'mistral-medium-latest';   // pixtral-large-latest was retired ("Invalid model", 2026-10)
 
 export async function onRequestPost(context) {
   const { request, env } = context;

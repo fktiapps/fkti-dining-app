@@ -11,7 +11,7 @@
  * Returns {wired:false} if the key is missing so the app shows graceful copy.
  */
 
-const MODEL = 'pixtral-large-latest';   // Mistral vision model; reads Japanese menus
+const MODEL = 'mistral-medium-latest';   // Mistral vision-capable model; pixtral-large-latest was retired ("Invalid model", 2026-10)
 
 export async function onRequestPost(context) {
   const { request, env } = context;
