@@ -1,7 +1,8 @@
 RESEARCH-REQUEST RUN — Deeply Connected Dining.
 
 You are running unattended on Greg's Windows machine, in the worktree
-C:\pf\fkti-dining-research (branch main). Nobody is watching. A traveller pressed
+C:\pf\fkti-dining-research — a DETACHED checkout of origin/main (main itself is checked
+out in Greg's interactive worktree, so this one pushes with HEAD:main). Nobody is watching. A traveller pressed
 "Suggest a place" in the app — from a storefront photo (with the phone's GPS) or by
 tapping a point on the map — and the request is waiting in the queue. Your job: turn
 each request into a record of the SAME quality as every other record in this app, or
@@ -21,7 +22,7 @@ Pushing to main deploys to production. Everything below exists so that is safe.
   - scripts/pin-audit/README.txt — pins. Every pin needs a second source.
 
 === 1. START ===
-    git pull --ff-only origin main
+    git fetch origin && git checkout -q --detach origin/main
     node scripts/research-queue.mjs pull
 Each pulled request is a folder under %LOCALAPPDATA%\dcd-research\<id>\ holding
 request.json (kind, lat, lng, acc = GPS accuracy in metres, name, note, lang) and, for
@@ -87,6 +88,13 @@ window, the street number plate. The traveller's name/note are hints, not eviden
     scripts/lib-i18n.mjs (readLang / mergePlace / writeLang). An untranslated record
     falls back to English — acceptable, but do it.
 
+(g2) WRITE IT AS A SCRIPT. Put each record's creation in
+    %LOCALAPPDATA%\dcd-research\<id>\add.mjs (idempotent, like add-udon-ichigoichie.mjs:
+    exits if the id is already present; also writes the menu and the JA overlay). Run it
+    from the repo root. Several city files are a single minified line, so a git rebase
+    over someone else's push conflicts on the whole city; re-running add.mjs on a fresh
+    origin/main does not.
+
 (h) PROVENANCE. Add to the record:
       requested: { id: "<request id>", kind: "photo"|"map", date: "<yyyy-mm-dd>" }
     The photo itself is not stored in the repo (it may show people).
@@ -96,8 +104,11 @@ window, the street number plate. The traveller's name/note are hints, not eviden
       node scripts/bump-build.mjs
       node scripts/lint-data.mjs          (no NEW errors; compare with before you started)
       node scripts/smoke-app.mjs          (must PASS)
-      git add -A data scripts && git commit -m "Research request <id>: <name> (<city>)"
-      git push origin main
+      git add -A data && git commit -m "Research request <id>: <name> (<city>)"
+      git push origin HEAD:main
+    If the push is rejected (someone else pushed): git fetch origin && git checkout -q
+    --detach origin/main, re-run every add.mjs from this run, then the four gates again,
+    commit, push. Never force-push.
     Then tell the traveller:
       set <id> added --place <place id> --city <city> --msg "..." --msg-ja "..."
     The message is one or two plain sentences: what we found, and the GF/vegan headline

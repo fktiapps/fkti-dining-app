@@ -54,6 +54,12 @@ try {
     Log "=== DCD research run $Stamp ==="
     Log $check.Trim()
 
+    # Start from what is live, with the current prompt. -f: a run that died mid-way may
+    # have left edits behind; its per-request add.mjs scripts live in $Work, not here.
+    & git fetch -q origin 2>&1 | Out-Null
+    & git checkout -q -f --detach origin/main 2>&1 | Out-Null
+    Log "worktree at $(& git rev-parse --short HEAD)"
+
     if (-not $env:GOOGLE_MAPS_KEY) { $env:GOOGLE_MAPS_KEY = [Environment]::GetEnvironmentVariable('GOOGLE_MAPS_KEY','User') }
     $claude = Join-Path $env:USERPROFILE '.local\bin\claude.exe'
     if (-not (Test-Path $claude)) { $claude = 'claude' }
