@@ -26,6 +26,7 @@
     "secret:anthropic": "wrangler pages secret put ANTHROPIC_API_KEY"
   },
   "devDependencies": {
+    "puppeteer-core": "^25.13.0",
     "wrangler": "4.103.0"
   },
   "dependencies": {
