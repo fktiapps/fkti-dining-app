@@ -23231,9 +23231,9 @@
    "category": "GF",
    "lat": 35.150622,
    "lng": 136.90531,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. I set out to verify the record's central `dedicated` evidence — the quote 「店内の全てのメニューが小麦・卵・乳製品不使用…調理器具も完全に分けており、小麦粉の持ち込みは一切禁止」 attributed to nhkomorebi.com/en-kitchen/ — and it does not hold: that page says only 「お店のメニューはすべて小麦、卵、乳製品不使用です」 and in fact raises a concern, 「調味料やコンタミネーションの危険が心配です」. The separated-utensils / no-wheat-flour-on-premises language belongs to a DIFFERENT Nagoya shop (みちのり亭) and appears to have been misattributed to en-kitchen. Decisively, the FindMeGlutenFree listing for en-kitchen Cafe is explicitly NOT dedicated — it is marked 'Accommodating gluten-free' with 'some risk of cross-contamination'. The genuine, multiply-sourced fact is that the entire menu is wheat/egg/dairy-free (own site, FMGF, nhkomorebi, nagoya-meshi, KELLY), which supports `high` but not `dedicated`; en-kitchen's own site never claims separated equipment, a wheat ban, or tamari.] en-kitchen is an entirely wheat-free vegetable cafe: the venue describes itself as a 「卵・牛乳・小麦粉を使用しない野菜カフェ」 (vegetable cafe that uses no eggs, milk or wheat flour), and its own claim is that 「店内の全てのメニューが小麦・卵・乳製品不使用…調理器具も完全に分けており、小麦粉の持ち込みは一切禁止」 (every item on the menu is wheat/egg/dairy-free, cooking utensils are completely separated, and bringing any wheat flour onto the premises is strictly forbidden). Bread is baked from 米粉 (rice flour) rather than wheat, and Japanese reviewers confirm that non-allergy-safe food may not be brought into the shop (アレルギー対応でない食品の持ち込みは禁止). Because the whole kitchen is wheat-free this is one of the safest options in Nagoya for celiacs, but as always confirm seasoning details (tamari vs. wheat soy sauce) with staff on the day.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Owner review 2026-10-14: GF high. Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.] [Adversarial GF review 2026-08-19: dedicated→high. I set out to verify the record's central `dedicated` evidence — the quote 「店内の全てのメニューが小麦・卵・乳製品不使用…調理器具も完全に分けており、小麦粉の持ち込みは一切禁止」 attributed to nhkomorebi.com/en-kitchen/ — and it does not hold: that page says only 「お店のメニューはすべて小麦、卵、乳製品不使用です」 and in fact raises a concern, 「調味料やコンタミネーションの危険が心配です」. The separated-utensils / no-wheat-flour-on-premises language belongs to a DIFFERENT Nagoya shop (みちのり亭) and appears to have been misattributed to en-kitchen. Decisively, the FindMeGlutenFree listing for en-kitchen Cafe is explicitly NOT dedicated — it is marked 'Accommodating gluten-free' with 'some risk of cross-contamination'. The genuine, multiply-sourced fact is that the entire menu is wheat/egg/dairy-free (own site, FMGF, nhkomorebi, nagoya-meshi, KELLY), which supports `high` but not `dedicated`; en-kitchen's own site never claims separated equipment, a wheat ban, or tamari.] en-kitchen is an entirely wheat-free vegetable cafe: the venue describes itself as a 「卵・牛乳・小麦粉を使用しない野菜カフェ」 (vegetable cafe that uses no eggs, milk or wheat flour), and its own claim is that 「店内の全てのメニューが小麦・卵・乳製品不使用…調理器具も完全に分けており、小麦粉の持ち込みは一切禁止」 (every item on the menu is wheat/egg/dairy-free, cooking utensils are completely separated, and bringing any wheat flour onto the premises is strictly forbidden). Bread is baked from 米粉 (rice flour) rather than wheat, and Japanese reviewers confirm that non-allergy-safe food may not be brought into the shop (アレルギー対応でない食品の持ち込みは禁止). Because the whole kitchen is wheat-free this is one of the safest options in Nagoya for celiacs, but as always confirm seasoning details (tamari vs. wheat soy sauce) with staff on the day.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "The cafe is plant-forward and egg- and dairy-free across the entire menu, and all in-store sweets are vegan (卵・乳製品・小麦粉を使用していない). Several mains — the gluten-free brown-rice pasta, the vegan sandwich and the kids' plate — are fully vegan, and staples like the 健美膳 lunch set and the vegetarian curry can be made vegan on request. Some dishes (e.g. a fish sauté noted in one write-up) may include fish, so specify a vegan version when ordering.",
@@ -23408,16 +23408,38 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "high",
+     "field": "gf_confidence",
+     "from": "ask",
      "to": "high",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+     "overrode_disproven": 3
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+      "overrode_disproven": 3
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -23454,13 +23476,6 @@
      "https://kelly-net.jp/enjoytoday/2023033109211082241.html",
      "https://tabelog.com/aichi/A2301/A230105/23060152/dtlmenu/"
     ]
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 3,
-    "overrides_signoff": true,
-    "note": "Tier held down: 3 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "pin_source": "Tabelog https://tabelog.com/en/aichi/A2301/A230105/23060152/; cross-checked: shop site address 愛知県名古屋市中区大井町3番31号 10m; listing address 愛知県名古屋市中区大井町3番31号 (GSI) 10m; 2026-09-28"
   },
@@ -24152,9 +24167,9 @@
    "category": "GF",
    "lat": 35.190541,
    "lng": 136.928512,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [CAVEAT (Greg, 2026-08-19): the \"no wheat on the premises\" guarantee describes the 米粉パン production factory. The attached cafe also plates gyoza and shumai whose dipping sauce and seasonings are not documented — the bakery goods carry the dedicated standard, the cafe savouries do not. Opening is 不定期 (irregular): phone ahead.] A dedicated gluten-free rice-flour bakery/cafe near Ozone/Morishita. The venue explicitly states 「製造施設内への小麦の持ち込みは完全禁止、米粉パン専用の設備・器具のみを使用し、コンタミネーション（混入）リスクはゼロ」 — wheat is completely banned from the production facility, only rice-bread-only equipment is used, and cross-contamination risk is zero. Bagels and breads are additive-free (no preservatives/colorants/emulsifiers), made only from domestic (国産) rice flour, natural yeast, natural salt, kibi sugar and rice oil. This is a genuinely dedicated, celiac-oriented facility.",
+   "gf_confidence": "dedicated",
+   "gf_label": "Dedicated gluten-free",
+   "gf_detail": "[Owner review 2026-10-14: GF dedicated. Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.] [CAVEAT (Greg, 2026-08-19): the \"no wheat on the premises\" guarantee describes the 米粉パン production factory. The attached cafe also plates gyoza and shumai whose dipping sauce and seasonings are not documented — the bakery goods carry the dedicated standard, the cafe savouries do not. Opening is 不定期 (irregular): phone ahead.] A dedicated gluten-free rice-flour bakery/cafe near Ozone/Morishita. The venue explicitly states 「製造施設内への小麦の持ち込みは完全禁止、米粉パン専用の設備・器具のみを使用し、コンタミネーション（混入）リスクはゼロ」 — wheat is completely banned from the production facility, only rice-bread-only equipment is used, and cross-contamination risk is zero. Bagels and breads are additive-free (no preservatives/colorants/emulsifiers), made only from domestic (国産) rice flour, natural yeast, natural salt, kibi sugar and rice oil. This is a genuinely dedicated, celiac-oriented facility.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "The bagels and breads are additive-free and made from simple plant-based ingredients (rice flour, natural yeast, salt, kibi sugar, rice oil), so many are vegan-friendly. However, lunch items such as rice-flour gyoza and shumai typically contain meat, and some bagels (e.g. cheese/azuki-with-additions) vary — ask which items are fully plant-based on the day.",
@@ -24325,15 +24340,37 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
+     "field": "gf_confidence",
      "from": "ask",
      "to": "dedicated",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Facility-level own claim verified live (no wheat permitted in the 米粉パン factory, dedicated equipment) plus an independent FindMeGlutenFree dedicated listing. Kept at dedicated with the cafe caveat written onto the record."
-    }
+     "date": "2026-10-14",
+     "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.",
+     "overrode_disproven": 1
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "ask",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Facility-level own claim verified live (no wheat permitted in the 米粉パン factory, dedicated equipment) plus an independent FindMeGlutenFree dedicated listing. Kept at dedicated with the cafe caveat written onto the record."
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.",
+      "overrode_disproven": 1
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -24371,13 +24408,6 @@
      "https://www.hotpepper.jp/strJ003451073",
      "https://mt.tokai-tv.com/gourmet_info/006111.html"
     ]
-   },
-   "gf_uncited_downgrade": {
-    "from": "dedicated",
-    "date": "2026-08-20",
-    "disproven": 1,
-    "overrides_signoff": true,
-    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "pin_source": "Tabelog https://tabelog.com/en/aichi/A2301/A230110/23082110/; cross-checked: listing address 愛知県名古屋市北区東大杉町四丁目39番地 (GSI) 11m; 2026-09-28"
   },
@@ -24569,9 +24599,9 @@
    "category": "GF",
    "lat": 35.169376,
    "lng": 136.879105,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. A fully dedicated gluten-free washoku restaurant opened 22 Nov 2024 by the Michinori Bento team (founder 'naco' has a severe wheat allergy), and it is DISTINCT from the takeaway bento shop. The venue's own claim is 「小麦はもちろん、大麦、ライ麦、オーツ麦など、グルテンを含む穀物を一切使用しない」 (uses absolutely no gluten-containing grains — not just wheat but barley, rye and oats). Corroborating JP coverage reports 「調理器具も完全に分けていて、小麦粉の持ち込みは一切禁止」 — cooking equipment is fully separated and no wheat flour is allowed on premises; breading is rice flour (米粉) and seasoning uses wheat-free tamari, with soy/miso/dashi verified wheat-free. Only caveat: they note some third-party condiment factories may also handle wheat, so extremely sensitive celiacs are advised to confirm the specific item on arrival.",
+   "gf_confidence": "dedicated",
+   "gf_label": "Dedicated gluten-free",
+   "gf_detail": "[Owner review 2026-10-14: GF dedicated. Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.] A fully dedicated gluten-free washoku restaurant opened 22 Nov 2024 by the Michinori Bento team (founder 'naco' has a severe wheat allergy), and it is DISTINCT from the takeaway bento shop. The venue's own claim is 「小麦はもちろん、大麦、ライ麦、オーツ麦など、グルテンを含む穀物を一切使用しない」 (uses absolutely no gluten-containing grains — not just wheat but barley, rye and oats). Corroborating JP coverage reports 「調理器具も完全に分けていて、小麦粉の持ち込みは一切禁止」 — cooking equipment is fully separated and no wheat flour is allowed on premises; breading is rice flour (米粉) and seasoning uses wheat-free tamari, with soy/miso/dashi verified wheat-free. Only caveat: they note some third-party condiment factories may also handle wheat, so extremely sensitive celiacs are advised to confirm the specific item on arrival.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
    "vegan_detail": "The menu is centered on Nagoya meat and seafood specialties (wagyu sukiyaki, miso katsu, chicken karaage, grilled mackerel, shrimp fry), so it is not a vegan destination. A few plant-based items exist — e.g. yuzu sherbet and some rice/onigiri and side dishes — but fillings and dashi should be checked, as much of the savoury food contains fish, egg or meat.",
@@ -24777,16 +24807,38 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "dedicated",
+     "field": "gf_confidence",
+     "from": "ask",
      "to": "dedicated",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.",
+     "overrode_disproven": 1
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "dedicated",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.",
+      "overrode_disproven": 1
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "authoritative",
@@ -24825,13 +24877,6 @@
      "https://www.tripadvisor.com/Restaurant_Review-g298106-d27132692-Reviews-Gluten_Free_Michinori_Bento-Nagoya_Aichi_Prefecture_Tokai_Chubu.html"
     ],
     "source_independence_note": "Independence correction 2026-08-19: 3 citation(s) to nhkomorebi.com were treated as third-party corroboration but are first-party — the blog belongs to this business's founder. The recorded independent_source_count of 4 is inflated by that much. The label was retained on other evidence (FindMeGlutenFree dedicated listing, co-trip, jouhou.nagoya, TripAdvisor), not on these."
-   },
-   "gf_uncited_downgrade": {
-    "from": "dedicated",
-    "date": "2026-08-20",
-    "disproven": 1,
-    "overrides_signoff": true,
-    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "loc_approx": "block",
    "pin_source": "shop site address 愛知県名古屋市中村区椿町8番7号 (GSI, lot-level); cross-checked: Google \"みちのり亭 名古屋駅店\" 11m; 2026-09-28"
@@ -25185,9 +25230,9 @@
    "category": "GF",
    "lat": 35.181026,
    "lng": 136.873209,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Owner review 2026-08-19: GF ask→high. The wheat product (動物ヨーチ) ran on shared confectionery equipment for decades until summer 2022 and that equipment was never replaced. Wheat was dropped for cost reasons — rising flour prices and the expense of renewing 駄菓子 equipment — not as an allergen policy, and there is no cleaning protocol, testing or ppm threshold published. Equipment continuity on a decades-long wheat line is a real celiac risk.] [Owner review 2026-08-19: GF dedicated→high. The wheat product (動物ヨーチ) ran on shared confectionery equipment for decades until summer 2022 and that equipment was never replaced. Wheat was dropped for cost reasons — rising flour prices and the expense of renewing 駄菓子 equipment — not as an allergen policy, and there is no cleaning protocol, testing or ppm threshold published. Equipment continuity on a decades-long wheat line is a real celiac risk.] A 1938-founded confectionery (フジタセイカ株式会社) that in 2022 converted its entire factory to wheat-free production. The company states outright: 「2022年夏の動物ヨーチ製造終了に伴い、弊社では完全に小麦を使わないグルテンフリー食品製造を行うことにいたしました」 (upon ending 動物ヨーチ — its one wheat biscuit — in summer 2022, it fully switched to wheat-free GF manufacturing), and 「小麦を使わないおいしいお菓子とパンを作っています」. Because the only wheat product line was discontinued and the whole premises now produces exclusively wheat-free goods (100% 米粉 bread and 白あん sweets), there is no on-site wheat handling and cross-contact risk is very low. Curated JP celiac guide empacede rates it グルテンフリー ★★★★★; note the shop uses legacy shared confectionery equipment that predates the 2022 wheat wind-down, so highly sensitive celiacs may still wish to confirm.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Owner review 2026-10-14: GF high. Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.] [Owner review 2026-08-19: GF ask→high. The wheat product (動物ヨーチ) ran on shared confectionery equipment for decades until summer 2022 and that equipment was never replaced. Wheat was dropped for cost reasons — rising flour prices and the expense of renewing 駄菓子 equipment — not as an allergen policy, and there is no cleaning protocol, testing or ppm threshold published. Equipment continuity on a decades-long wheat line is a real celiac risk.] [Owner review 2026-08-19: GF dedicated→high. The wheat product (動物ヨーチ) ran on shared confectionery equipment for decades until summer 2022 and that equipment was never replaced. Wheat was dropped for cost reasons — rising flour prices and the expense of renewing 駄菓子 equipment — not as an allergen policy, and there is no cleaning protocol, testing or ppm threshold published. Equipment continuity on a decades-long wheat line is a real celiac risk.] A 1938-founded confectionery (フジタセイカ株式会社) that in 2022 converted its entire factory to wheat-free production. The company states outright: 「2022年夏の動物ヨーチ製造終了に伴い、弊社では完全に小麦を使わないグルテンフリー食品製造を行うことにいたしました」 (upon ending 動物ヨーチ — its one wheat biscuit — in summer 2022, it fully switched to wheat-free GF manufacturing), and 「小麦を使わないおいしいお菓子とパンを作っています」. Because the only wheat product line was discontinued and the whole premises now produces exclusively wheat-free goods (100% 米粉 bread and 白あん sweets), there is no on-site wheat handling and cross-contact risk is very low. Curated JP celiac guide empacede rates it グルテンフリー ★★★★★; note the shop uses legacy shared confectionery equipment that predates the 2022 wheat wind-down, so highly sensitive celiacs may still wish to confirm.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
    "vegan_detail": "Most items are not vegan: the signature 栗せん crackers use egg and white-bean paste, and the 白あんけいく / 白あんてりいぬ cakes contain egg. The plain 米粉100%食パン (rice flour, sugar, salt, yeast, vegetable oil) appears egg- and dairy-free, so a plant-based option exists — confirm the specific loaf, as flavored breads (cheese, etc.) are not vegan.",
@@ -25318,15 +25363,37 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
-     "decision": "downgrade",
+     "decision": "keep",
+     "field": "gf_confidence",
      "from": "ask",
      "to": "high",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "The wheat product (動物ヨーチ) ran on shared confectionery equipment for decades until summer 2022 and that equipment was never replaced. Wheat was dropped for cost reasons — rising flour prices and the expense of renewing 駄菓子 equipment — not as an allergen policy, and there is no cleaning protocol, testing or ppm threshold published. Equipment continuity on a decades-long wheat line is a real celiac risk."
-    }
+     "date": "2026-10-14",
+     "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+     "overrode_disproven": 2
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "downgrade",
+      "from": "ask",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "The wheat product (動物ヨーチ) ran on shared confectionery equipment for decades until summer 2022 and that equipment was never replaced. Wheat was dropped for cost reasons — rising flour prices and the expense of renewing 駄菓子 equipment — not as an allergen policy, and there is no cleaning protocol, testing or ppm threshold published. Equipment continuity on a decades-long wheat line is a real celiac risk."
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+      "overrode_disproven": 2
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -25365,13 +25432,6 @@
      "https://www.furusato-tax.jp/product/detail/23100/5682246",
      "https://tabelog.com/aichi/A2301/A230113/23092114/"
     ]
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 2,
-    "overrides_signoff": true,
-    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "pin_source": "Tabelog https://tabelog.com/en/aichi/A2301/A230113/23092114/; cross-checked: shop site address 愛知県名古屋市中村区千原町4番50号 8m; listing address 愛知県名古屋市中村区千原町4番50号 (GSI) 8m; 2026-09-28"
   },
@@ -25939,9 +25999,9 @@
    "category": "BOTH",
    "lat": 35.20872,
    "lng": 136.911495,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. I tried to find wheat in the building or a celiac-grade source that would either confirm or kill the 'dedicated' label. The shop's own claim survives intact and is consistent across all its properties (乳卵小麦不使用; all sweets vegan + GF, no wheat flour, no white sugar), and two independent local outlets that physically visited (Living Nagoya, Kelly) describe rice-flour tart crusts, muffins and cookies — enough for `high`. But `dedicated` requires celiac-grade corroboration and I could not find any: Ve Tree is absent from the curated Japan GF guide (jp.japan-glutenfree.com), absent from a Japanese GF blogger's own Nagoya gluten-free roundup, and no FindMeGlutenFree entry surfaced; HappyCow/Vegewel list it but as vegan directories with no retrievable celiac review. The Living Nagoya reporter also notes 輸入オートミールクッキー (imported oatmeal cookies) sold as retail stock, so 'no gluten anywhere on the premises' is overstated, and the shop now opens Saturdays 10:00-17:00 only with cooking classes run in the same dining area.] Dedicated vegan & gluten-free sweets shop where the entire product line is wheat-free — the shop's own tagline is 「乳卵小麦不使用」 (no dairy, egg or wheat used) and it states 「白砂糖不使用」 too. Cakes and焼き菓子 are built on 米粉 (rice flour) and 大豆粉 rather than wheat, and the shop describes everything as ヴィーガン＆グルテンフリー. Because no wheat is used anywhere on the premises, cross-contact risk is very low; a small caveat is that the same kitchen also runs cooking classes, though those are also wheat-free. Some items are additionally nut-free (※一部ナッツフリー商品).",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Owner review 2026-10-14: GF options. Band 2 (GF claim overstated, a narrower one survives) — set per recommendation. The operator states 「製造所では小麦を含む食材も取り扱う」.] [Adversarial GF review 2026-08-19: dedicated→high. I tried to find wheat in the building or a celiac-grade source that would either confirm or kill the 'dedicated' label. The shop's own claim survives intact and is consistent across all its properties (乳卵小麦不使用; all sweets vegan + GF, no wheat flour, no white sugar), and two independent local outlets that physically visited (Living Nagoya, Kelly) describe rice-flour tart crusts, muffins and cookies — enough for `high`. But `dedicated` requires celiac-grade corroboration and I could not find any: Ve Tree is absent from the curated Japan GF guide (jp.japan-glutenfree.com), absent from a Japanese GF blogger's own Nagoya gluten-free roundup, and no FindMeGlutenFree entry surfaced; HappyCow/Vegewel list it but as vegan directories with no retrievable celiac review. The Living Nagoya reporter also notes 輸入オートミールクッキー (imported oatmeal cookies) sold as retail stock, so 'no gluten anywhere on the premises' is overstated, and the shop now opens Saturdays 10:00-17:00 only with cooking classes run in the same dining area.] Dedicated vegan & gluten-free sweets shop where the entire product line is wheat-free — the shop's own tagline is 「乳卵小麦不使用」 (no dairy, egg or wheat used) and it states 「白砂糖不使用」 too. Cakes and焼き菓子 are built on 米粉 (rice flour) and 大豆粉 rather than wheat, and the shop describes everything as ヴィーガン＆グルテンフリー. Because no wheat is used anywhere on the premises, cross-contact risk is very low; a small caveat is that the same kitchen also runs cooking classes, though those are also wheat-free. Some items are additionally nut-free (※一部ナッツフリー商品).",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "[Held at \"some vegan options\" 2026-08-20] The \"fully vegan\" label was contradicted by this record's own cited sources. 100% plant-based sweets specialist — no dairy, eggs, or animal products; uses rice flour, soy flour and unrefined sweeteners in place of butter, eggs and white sugar. A 2025 addition is a vegan 米粉バーガー (rice-flour burger).",
@@ -26052,15 +26112,37 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
+     "field": "gf_confidence",
      "from": "ask",
-     "to": "dedicated",
+     "to": "options",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, applying the amended evidence bar. Own claim (乳卵小麦不使用) is consistent across all the shop properties, corroborated by two independent local outlets that physically visited (Living Nagoya, Kelly) describing the rice-flour crusts and bakes. Previously downgraded only for absence from a curated GF guide, which is not evidence of anything."
-    }
+     "date": "2026-10-14",
+     "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation. The operator states 「製造所では小麦を含む食材も取り扱う」.",
+     "overrode_disproven": 3
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "ask",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, applying the amended evidence bar. Own claim (乳卵小麦不使用) is consistent across all the shop properties, corroborated by two independent local outlets that physically visited (Living Nagoya, Kelly) describing the rice-flour crusts and bakes. Previously downgraded only for absence from a curated GF guide, which is not evidence of anything."
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation. The operator states 「製造所では小麦を含む食材も取り扱う」.",
+      "overrode_disproven": 3
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "authoritative",
@@ -26098,13 +26180,6 @@
      "https://www.happycow.net/reviews/ve-tree-nagoya-279486",
      "https://jp.japan-glutenfree.com/bakery-gf/"
     ]
-   },
-   "gf_uncited_downgrade": {
-    "from": "dedicated",
-    "date": "2026-08-20",
-    "disproven": 3,
-    "overrides_signoff": true,
-    "note": "Tier held down: 3 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "vegan_disproven_downgrade": {
     "from": "full",

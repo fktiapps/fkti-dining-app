@@ -8176,9 +8176,9 @@
    "category": "GF",
    "lat": 34.294881,
    "lng": 132.320413,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. ⚠ Safety review 2026-07-02: downgraded dedicated→high. Open, legit, allergen-aware GF karaage/curry cafe (rice-flour karaage, GF soy sauce); celiac blogger ate safely, 'very clued up on celiac, separate oil.' But 'dedicated' fails: same source explicitly says 'NOT dedicated gluten free'; own page hedges 'MOST dishes' wheat/egg/dairy-free; 'separate' GF oil implies a non-GF fryer = shared-kitchen CC. — Prior note: A dedicated gluten-free cafe: every dish on the menu is made without wheat, egg, or dairy. The signature non-fried rice-flour karaage uses rice flour and gluten-free (wheat-free) soy sauce, and they fry it in separate, dedicated oil to avoid cross-contact. The owner is a former dietician who developed the recipes and pays close attention to seasonings. Staff are knowledgeable about celiac disease and adjusted their practices (switching to gluten-free soy sauce) after feedback from a celiac customer. Widely regarded by celiac travelers as the safest place to eat on Miyajima.",
+   "gf_confidence": "options",
+   "gf_label": "Some GF options",
+   "gf_detail": "[Owner review 2026-10-14: GF options. Band 2 (GF claim overstated, a narrower one survives) — set per recommendation. Its own cited source: \"not dedicated gluten free. Their eel conger bowl contains gluten, but it is prepared separately.\"] ⚠ Safety review 2026-07-02: downgraded dedicated→high. Open, legit, allergen-aware GF karaage/curry cafe (rice-flour karaage, GF soy sauce); celiac blogger ate safely, 'very clued up on celiac, separate oil.' But 'dedicated' fails: same source explicitly says 'NOT dedicated gluten free'; own page hedges 'MOST dishes' wheat/egg/dairy-free; 'separate' GF oil implies a non-GF fryer = shared-kitchen CC. — Prior note: A dedicated gluten-free cafe: every dish on the menu is made without wheat, egg, or dairy. The signature non-fried rice-flour karaage uses rice flour and gluten-free (wheat-free) soy sauce, and they fry it in separate, dedicated oil to avoid cross-contact. The owner is a former dietician who developed the recipes and pays close attention to seasonings. Staff are knowledgeable about celiac disease and adjusted their practices (switching to gluten-free soy sauce) after feedback from a celiac customer. Widely regarded by celiac travelers as the safest place to eat on Miyajima.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
    "vegan_detail": "Not a vegan venue. The two signature mains are animal-based: rice-flour karaage (chicken) and a spiced beef/beef-tongue curry. Dishes are free of egg and dairy, so some sides, the lemon squash, and donuts may suit vegans, but the headline dishes contain meat. Vegans should ask about specific items before ordering.",
@@ -8323,16 +8323,38 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "high",
-     "to": "high",
+     "field": "gf_confidence",
+     "from": "ask",
+     "to": "options",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation. Its own cited source: \"not dedicated gluten free. Their eel conger bowl contains gluten, but it is prepared separately.\"",
+     "overrode_disproven": 1
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "options",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation. Its own cited source: \"not dedicated gluten free. Their eel conger bowl contains gluten, but it is prepared separately.\"",
+      "overrode_disproven": 1
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "english",
@@ -8381,13 +8403,6 @@
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 3,
    "menu_vegan_count": 3,
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 1,
-    "overrides_signoff": true,
-    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
-   },
    "pin_source": "Tabelog https://tabelog.com/en/hiroshima/A3402/A340202/34031131/; cross-checked: Google \"グルテンフリーカフェ ミヤジマベース Gluten-free Cafe Miyajima Base\" 1m; 2026-09-28"
   },
   {
@@ -64017,7 +64032,7 @@
    "lng": 132.514002,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. I tried to find the shop's OWN explicit no-wheat claim and could not: Baker theta has no website (Instagram @theta.komekopan only), and every '米粉100％ / 小麦粉不使用' statement in the record traces to third-party bloggers (mrs.living, pianikako), not to the shop. Worse, the two most allergy-literate sources both hedge the same way — alleco titles it 「グルテンフリーの米粉パンがメインのお店」 (rice-flour bread is the MAIN line, not the only line) and explicitly refuses to vouch for contamination: 「コンタミについては訪問前に必ずお店に確認をお取りください」; the japan-glutenfree.com guide repeats the 「メインとした」 wording even though its own list criterion is 「工房・店内に小麦粉を一切持ち込まず、すべての商品がグルテンフリー」. That internal contradiction plus a missing first-party claim breaks the dedicated bar. It does clear `high` — the japan-glutenfree GF-Japan list, mrs.living's 米粉100％ report and alleco's per-item 小麦不使用 labelling are ≥2 independent credible sources of real GF handling — but the shared-equipment question is unanswered and must be asked at the counter.] Baker theta is a 100% rice-flour bakery that uses no wheat flour at all; the venue and local press describe it as 「米粉100％の身体に優しいパン」 (100% rice-flour bread that is gentle on the body) and a グルテンフリーの米粉パン屋さん (gluten-free rice-flour bakery), with 小麦粉不使用 (no wheat flour used). Individual breads are additionally labelled 小麦不使用 (wheat-free) alongside egg/dairy flags, e.g. ガーリックフランス is 卵・乳・小麦不使用. Because the entire kitchen is rice-flour based there is no wheat on the premises to cross-contaminate, but one allergy-focused source advises 「コンタミについては訪問前に必ずお店に確認をお取りください」 (confirm cross-contamination directly with the shop before visiting), so a celiac should still confirm shared-equipment handling on arrival.",
+   "gf_detail": "[Owner review 2026-10-14: GF ask. Band 3 (nothing left to stand on) — stays at \"ask\" until new sources exist.] [Adversarial GF review 2026-08-19: dedicated→high. I tried to find the shop's OWN explicit no-wheat claim and could not: Baker theta has no website (Instagram @theta.komekopan only), and every '米粉100％ / 小麦粉不使用' statement in the record traces to third-party bloggers (mrs.living, pianikako), not to the shop. Worse, the two most allergy-literate sources both hedge the same way — alleco titles it 「グルテンフリーの米粉パンがメインのお店」 (rice-flour bread is the MAIN line, not the only line) and explicitly refuses to vouch for contamination: 「コンタミについては訪問前に必ずお店に確認をお取りください」; the japan-glutenfree.com guide repeats the 「メインとした」 wording even though its own list criterion is 「工房・店内に小麦粉を一切持ち込まず、すべての商品がグルテンフリー」. That internal contradiction plus a missing first-party claim breaks the dedicated bar. It does clear `high` — the japan-glutenfree GF-Japan list, mrs.living's 米粉100％ report and alleco's per-item 小麦不使用 labelling are ≥2 independent credible sources of real GF handling — but the shared-equipment question is unanswered and must be asked at the counter.] Baker theta is a 100% rice-flour bakery that uses no wheat flour at all; the venue and local press describe it as 「米粉100％の身体に優しいパン」 (100% rice-flour bread that is gentle on the body) and a グルテンフリーの米粉パン屋さん (gluten-free rice-flour bakery), with 小麦粉不使用 (no wheat flour used). Individual breads are additionally labelled 小麦不使用 (wheat-free) alongside egg/dairy flags, e.g. ガーリックフランス is 卵・乳・小麦不使用. Because the entire kitchen is rice-flour based there is no wheat on the premises to cross-contaminate, but one allergy-focused source advises 「コンタミについては訪問前に必ずお店に確認をお取りください」 (confirm cross-contamination directly with the shop before visiting), so a celiac should still confirm shared-equipment handling on arrival.",
    "vegan_status": "options",
    "vegan_label": "Some vegan options",
    "vegan_detail": "Not a vegan shop — the range includes egg sandwiches (平飼い卵のサンド), dairy butter breads and cheese/mentaiko/chicken items — but there are clearly vegan choices. ガーリックフランス (garlic French) is labelled 卵・乳・小麦不使用・ヴィーガン (egg/dairy/wheat-free, vegan), a ヴィーガンバター (vegan butter) spread is sold, and among the rice-flour scones the chunk-chocolate and black-sesame-kinako varieties are 卵不使用・乳不使用 (egg- and dairy-free). Ask staff, as recipes vary by day.",
@@ -64155,16 +64170,38 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
-     "decision": "keep",
-     "from": "high",
-     "to": "high",
+     "decision": "downgrade",
+     "field": "gf_confidence",
+     "from": "ask",
+     "to": "ask",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 3 (nothing left to stand on) — stays at \"ask\" until new sources exist.",
+     "overrode_disproven": 5
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "downgrade",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 3 (nothing left to stand on) — stays at \"ask\" until new sources exist.",
+      "overrode_disproven": 5
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -64203,13 +64240,6 @@
      "https://www.bm-peekaboo.com/gourmet/142519/",
      "https://www.instagram.com/theta.komekopan/"
     ]
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 5,
-    "overrides_signoff": true,
-    "note": "Tier held down: 5 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "pin_source": "Tabelog https://tabelog.com/en/hiroshima/A3401/A340104/34030442/; cross-checked: listing address 広島県広島市東区上温品一丁目6番19号 (GSI) 5m; 2026-09-28"
   },

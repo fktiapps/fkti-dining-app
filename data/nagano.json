@@ -12678,9 +12678,9 @@
    "category": "BOTH",
    "lat": 36.646338,
    "lng": 138.184997,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.] A fully dedicated vegan & gluten-free confectionery workshop where wheat flour is never used on the premises. The venue states 「小麦粉は不使用。米粉やアーモンドの粉などを使います」 (no wheat flour is used; rice flour and almond flour are used instead) and describes itself as 「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」 (sweets made without egg, dairy, wheat, or white sugar). Because the entire product line and kitchen are wheat-free, structural cross-contact risk is very low, though the shop does not advertise formal celiac certification or lab testing, so confirming with staff is still wise for a highly sensitive celiac.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Owner review 2026-10-14: GF high. Ask which miso: the butter-cream is made with 信州味噌 (Web-Komachi). Shinshu miso is normally rice miso, but some miso contains barley. Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.] [Adversarial GF review 2026-08-19: dedicated→high. The first-party claim is solid — the FAQ states 「卵・乳製品・小麦は使用しておりません」 and the whole brand is ヴィーガン＆グルテンフリー — but I could not find the independent celiac-grade leg that `dedicated` requires: it is absent from japan-glutenfree.com, komeko-palette and Legal Nomads' celiac Japan guide, and while a HappyCow listing exists I could not retrieve its review text and will not assume celiac reviews I have not read. Pushing harder surfaced two genuine problems. First, the shop's own FAQ declines to make an allergy-safety guarantee — 「ただし、ナッツ類なども使用しており、全ての食物アレルギーの方がお召し上がりになれるとは限りません。必ず原材料表示をご確認の上お召し上がりください。」 — and nowhere on its site does it describe a dedicated wheat-free 工房 or any コンタミ policy. Second, it relocated to the Nagano-station-front 北石堂町 site and added a CAFE, whose coverage says only that it began with existing sweets and drinks with 「カフェ限定メニューも検討中」 — an un-vetted expansion that could introduce wheat. Multiple independent regional media (web-komachi, nagatabe, shinshu-oyako, vegans-life) do consistently attest that the full product line is egg/dairy/wheat/white-sugar free, which carries it to `high`.] A fully dedicated vegan & gluten-free confectionery workshop where wheat flour is never used on the premises. The venue states 「小麦粉は不使用。米粉やアーモンドの粉などを使います」 (no wheat flour is used; rice flour and almond flour are used instead) and describes itself as 「卵・乳製品・小麦・白砂糖不使用、ヴィーガン＆グルテンフリーのお菓子」 (sweets made without egg, dairy, wheat, or white sugar). Because the entire product line and kitchen are wheat-free, structural cross-contact risk is very low, though the shop does not advertise formal celiac certification or lab testing, so confirming with staff is still wise for a highly sensitive celiac.",
    "vegan_status": "full",
    "vegan_label": "Fully vegan",
    "vegan_detail": "100% plant-based. The brand's own tagline is 「ヴィーガン＆グルテンフリーのおいしい手作りお菓子屋さん」 and every product is made 「卵・乳製品・小麦・白砂糖不使用」 (no egg, dairy, wheat, or white sugar). Creams and chocolates are built on cashew nut, coconut oil, and house-made cashew-nut milk, with additives avoided (「着色料、増粘剤、保存料などの添加物はできる限り使いません」).",
@@ -12811,16 +12811,38 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "high",
+     "field": "gf_confidence",
+     "from": "ask",
      "to": "high",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+     "overrode_disproven": 1
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+      "overrode_disproven": 1
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "authoritative",
@@ -12863,13 +12885,6 @@
      "https://cocochouchou-netshop.com/",
      "https://jp.japan-glutenfree.com/closedshop/"
     ]
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 1,
-    "overrides_signoff": true,
-    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    }
   },
   {
@@ -13404,7 +13419,7 @@
    "lng": 137.972092,
    "gf_confidence": "ask",
    "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. A gluten-free sweets café (opened 13 April 2025) whose baked goods are all made with Nagano-grown rice flour and no wheat. Local press describes it plainly as 「グルテンフリーのカフェ」 and 「小麦粉を使わない米粉のスイーツ」 (a gluten-free café; rice-flour sweets that use no wheat flour), and the cakes are also white-sugar-free. Because the entire food menu is rice-flour based this reads as an effectively wheat-free kitchen; the main residual gluten source on premises is bottled beer offered as a drink, so a celiac should still confirm no shared utensils touch the beer or any brought-in items.",
+   "gf_detail": "[Owner review 2026-10-14: GF ask. Band 3 (nothing left to stand on) — stays at \"ask\" until new sources exist.] A gluten-free sweets café (opened 13 April 2025) whose baked goods are all made with Nagano-grown rice flour and no wheat. Local press describes it plainly as 「グルテンフリーのカフェ」 and 「小麦粉を使わない米粉のスイーツ」 (a gluten-free café; rice-flour sweets that use no wheat flour), and the cakes are also white-sugar-free. Because the entire food menu is rice-flour based this reads as an effectively wheat-free kitchen; the main residual gluten source on premises is bottled beer offered as a drink, so a celiac should still confirm no shared utensils touch the beer or any brought-in items.",
    "vegan_status": "limited",
    "vegan_label": "Limited vegan",
    "vegan_detail": "Cakes, tarts, roll cakes, prune caramel and quiche use eggs and dairy, so most sweets are not vegan. Drinks such as the house craft cola (¥580) and black coffee are plant-based, so a vegan can drink but rarely eat here. Ask staff which of the rotating 3-4 sweets, if any, are dairy/egg free.",
@@ -13532,16 +13547,38 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
-     "decision": "keep",
-     "from": "high",
-     "to": "high",
+     "decision": "downgrade",
+     "field": "gf_confidence",
+     "from": "ask",
+     "to": "ask",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 3 (nothing left to stand on) — stays at \"ask\" until new sources exist.",
+     "overrode_disproven": 1
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "downgrade",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "ask",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 3 (nothing left to stand on) — stays at \"ask\" until new sources exist.",
+      "overrode_disproven": 1
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -13583,13 +13620,6 @@
     "municipality": "まちのなか中村",
     "km": 51,
     "note": "Filed under Nagano but actually 51 km away in まちのなか中村 — plan it as a separate trip, not an evening out."
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 1,
-    "overrides_signoff": true,
-    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "loc_approx": "block",
    "pin_source": "shop site address 長野県松本市中央三丁目2番14号 (GSI, lot-level); cross-checked: Google \"ハルトナリ。\" 137m; 2026-09-28"
@@ -14699,9 +14729,9 @@
    "category": "GF",
    "lat": 36.299688,
    "lng": 138.617253,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. [Adversarial GF review 2026-08-19: dedicated→high. I specifically hunted the classic 米粉パン trap — added vital wheat gluten (活性グルテン), which Japan's Consumer Affairs Agency warns causes wheat-allergy incidents in rice-flour breads — and the published ingredient list (特別栽培米コシヒカリの米粉・キビ砂糖・ココナツオイル・こめ油・白神こだま酵母・天然塩, plus 大豆粉/アーモンド粉/ひえ粉 in some items) contains no gluten, and no source shows any wheat product sold. But 'dedicated' fails on evidence, not on suspicion: there is no shop statement of a wheat-free facility or CC protocol anywhere I could reach, the in-store allergen board covers only egg and milk, one of the very sources cited on the record (naganogourmetbekkan) tells readers to verify allergens with staff rather than assume wheat-free, and the only celiac-grade item is a FindMeGlutenFree page I could not load (403) whose badge reads 'Gluten-Free Friendly Bakery', not 'Dedicated'. Four independent Japanese sources do consistently describe a rice-flour-only gluten-free bakery, which clears the `high` bar; nothing clears the dedicated bar.] A dedicated 米粉（rice-flour）gluten-free bakery in Karuizawa's Lake New Town — everything sold is gluten-free, with NO wheat flour used on the premises. The shop bakes 「グルテンフリーのパン」from 米粉 (specially-cultivated Koshihikari rice flour) with 白神こだま酵母; one source notes some breads also blend 大豆粉 (soy flour), which is still gluten-free. The owner trained under 大塚せつ子, a pioneer of Japanese rice-flour baking (「米粉の母」). Because it is a rice-flour-only kitchen, cross-contact risk is very low, but an allergen card is posted for milk/soy, so celiac guests can also confirm dairy per item.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Owner review 2026-10-14: GF high. Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.] [Adversarial GF review 2026-08-19: dedicated→high. I specifically hunted the classic 米粉パン trap — added vital wheat gluten (活性グルテン), which Japan's Consumer Affairs Agency warns causes wheat-allergy incidents in rice-flour breads — and the published ingredient list (特別栽培米コシヒカリの米粉・キビ砂糖・ココナツオイル・こめ油・白神こだま酵母・天然塩, plus 大豆粉/アーモンド粉/ひえ粉 in some items) contains no gluten, and no source shows any wheat product sold. But 'dedicated' fails on evidence, not on suspicion: there is no shop statement of a wheat-free facility or CC protocol anywhere I could reach, the in-store allergen board covers only egg and milk, one of the very sources cited on the record (naganogourmetbekkan) tells readers to verify allergens with staff rather than assume wheat-free, and the only celiac-grade item is a FindMeGlutenFree page I could not load (403) whose badge reads 'Gluten-Free Friendly Bakery', not 'Dedicated'. Four independent Japanese sources do consistently describe a rice-flour-only gluten-free bakery, which clears the `high` bar; nothing clears the dedicated bar.] A dedicated 米粉（rice-flour）gluten-free bakery in Karuizawa's Lake New Town — everything sold is gluten-free, with NO wheat flour used on the premises. The shop bakes 「グルテンフリーのパン」from 米粉 (specially-cultivated Koshihikari rice flour) with 白神こだま酵母; one source notes some breads also blend 大豆粉 (soy flour), which is still gluten-free. The owner trained under 大塚せつ子, a pioneer of Japanese rice-flour baking (「米粉の母」). Because it is a rice-flour-only kitchen, cross-contact risk is very low, but an allergen card is posted for milk/soy, so celiac guests can also confirm dairy per item.",
    "vegan_status": "limited",
    "vegan_detail": "A bakery, not fully vegan — the range includes meat items (bacon ears ¥330, wiener roll ¥390) and egg-based bakes (chiffon), so it is not a vegan venue. Plain rice-flour loaves and baguettes (baked with coconut oil / brown sugar) may be plant-based, but confirm egg/dairy per item.",
    "hours_raw": "11:00–15:00; open Fri, Sat, Sun plus alternate Mondays. Closed Tue–Thu. Winter closure from December to mid-March (seasonal).",
@@ -14818,16 +14848,38 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "high",
+     "field": "gf_confidence",
+     "from": "ask",
      "to": "high",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.",
+     "overrode_disproven": 2
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation.",
+      "overrode_disproven": 2
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -14871,13 +14923,6 @@
     "municipality": "Karuizawa Town",
     "km": 56,
     "note": "Filed under Nagano but actually 56 km away in Karuizawa Town — plan it as a separate trip, not an evening out."
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 2,
-    "overrides_signoff": true,
-    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "vegan_label": "Limited vegan"
   },
@@ -15425,9 +15470,9 @@
    "category": "GF",
    "lat": 36.243923,
    "lng": 137.97435,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. A small gluten-free baked-goods shop and tea room run solo by an owner who herself lives gluten-free. Her own sources state 「全商品グルテンフリー」 (all products gluten-free) and 「小麦粉・白砂糖を使わず」 (no wheat flour or white sugar), and she mills her own rice (Koshihikari for chewy dorayaki, Sasashigure for lighter bread). With a celiac owner who uses no wheat flour at all and mills her own rice, this is a wheat-free kitchen on the owner’s own word — rated high (only a single-source corroboration keeps it from dedicated). The practical catch is access, not safety: the shop opens only a few days a month on an irregular schedule and is takeout by advance phone reservation, so confirm the day and reserve before relying on it.",
+   "gf_confidence": "high",
+   "gf_label": "Strong GF focus",
+   "gf_detail": "[Owner review 2026-10-14: GF high. Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.] A small gluten-free baked-goods shop and tea room run solo by an owner who herself lives gluten-free. Her own sources state 「全商品グルテンフリー」 (all products gluten-free) and 「小麦粉・白砂糖を使わず」 (no wheat flour or white sugar), and she mills her own rice (Koshihikari for chewy dorayaki, Sasashigure for lighter bread). With a celiac owner who uses no wheat flour at all and mills her own rice, this is a wheat-free kitchen on the owner’s own word — rated high (only a single-source corroboration keeps it from dedicated). The practical catch is access, not safety: the shop opens only a few days a month on an irregular schedule and is takeout by advance phone reservation, so confirm the day and reserve before relying on it.",
    "vegan_status": "ask",
    "vegan_label": "Vegan — ask",
    "vegan_detail": "White-sugar-free rice-flour bakes; some items (e.g. certain dorayaki fillings, fruit tarts) may be plant-based but others use butter, ham-and-cheese (Oldies but Goodies) or egg. Ask which of the day's items are dairy/egg free.",
@@ -15545,16 +15590,38 @@
      }
     ],
     "confidence": "medium",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "high",
+     "field": "gf_confidence",
+     "from": "ask",
      "to": "high",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+     "overrode_disproven": 1
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "high",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "high",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 2 (GF claim overstated, a narrower one survives) — set per recommendation.",
+      "overrode_disproven": 1
+     }
+    ]
    },
    "has_menu": true,
    "menu_verified": "partial",
@@ -15595,13 +15662,6 @@
     "municipality": "松本市",
     "km": 51,
     "note": "Filed under Nagano but actually 51 km away in 松本市 — plan it as a separate trip, not an evening out."
-   },
-   "gf_uncited_downgrade": {
-    "from": "high",
-    "date": "2026-08-20",
-    "disproven": 1,
-    "overrides_signoff": true,
-    "note": "Tier held down: 1 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
    },
    "loc_approx": "block",
    "pin_source": "shop site address 長野県松本市北深志一丁目11番7号 (GSI, lot-level); cross-checked: Google \"そればな\" 12m; 2026-09-28"

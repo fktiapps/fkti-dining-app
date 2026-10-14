@@ -119,7 +119,9 @@ for (const city of CITIES) {
     // Only a record that HAD a sign-off is a question for Greg. A machine-set tier held
     // down by the same check is an ordinary downgrade, which never needs a human — counting
     // those here turned 25 real re-reviews into a "107 need Greg" queue.
-    if (legitOverride && !sg) { /* plain downgrade — nothing to re-review */ }
+    if (legitOverride && (!sg || r.hidden)) { /* plain downgrade, or a hidden record — nothing to re-review */ }
+    // Greg re-reviewed it and ruled it stays at "ask": his answer is on the record.
+    else if (legitOverride && sg?.to === 'ask') { /* ruled */ }
     else if (legitOverride)
       warn(city, `${at}: held at "ask" over sign-off — ${held.disproven} claim(s) disproven against their sources; needs Greg's re-review`);
     // Check the sign-off against THE FIELD IT WAS FOR. A record can be signed off on

@@ -11670,12 +11670,12 @@
    "category": "GF",
    "lat": 36.588521,
    "lng": 136.641338,
-   "gf_confidence": "ask",
-   "gf_label": "GF — ask",
-   "gf_detail": "[Held at \"ask\" 2026-08-20] The description below was not traceable to any source, so the GF label is held down until it is. Dedicated 100% rice flour (国産コシヒカリ米粉) bakery with no wheat, eggs, dairy, or nuts used anywhere in the workshop. Bread is leavened with house-made apple yeast instead of using gluten or thickeners, and the shop deliberately avoids the seven mandatory allergen ingredients. As an entirely wheat-free production environment, it is one of the safest options in Kanazawa for celiac and gluten-sensitive travelers. No explicit certified-celiac/PPM testing was documented, but the no-wheat-on-premises policy is stated clearly.",
-   "vegan_status": "options",
-   "vegan_label": "Some vegan options",
-   "vegan_detail": "Many items are egg- and dairy-free by design, and the shop explicitly offers vegan cakes (soy-milk based) and a range of rice flour breads and muffins. Not everything is guaranteed vegan (some pizzas use additive-free cheese), so vegans should confirm the specific item, but a substantial vegan selection is available.",
+   "gf_confidence": "dedicated",
+   "gf_label": "Dedicated gluten-free",
+   "gf_detail": "[Owner review 2026-10-14: GF dedicated. Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation. The \"no dairy\" claim cited a 2014 article (cheese pizzas); Greg ruled vegan as well.] Dedicated 100% rice flour (国産コシヒカリ米粉) bakery with no wheat, eggs, dairy, or nuts used anywhere in the workshop. Bread is leavened with house-made apple yeast instead of using gluten or thickeners, and the shop deliberately avoids the seven mandatory allergen ingredients. As an entirely wheat-free production environment, it is one of the safest options in Kanazawa for celiac and gluten-sensitive travelers. No explicit certified-celiac/PPM testing was documented, but the no-wheat-on-premises policy is stated clearly.",
+   "vegan_status": "full",
+   "vegan_label": "Fully vegan",
+   "vegan_detail": "[Owner review 2026-10-14: vegan options→full. Greg, 2026-10-14: \"Wagome is both vegan and dairy free, see kanazawa-food.jp/en/.\" The Kanazawa allergy directory tags it Vegan + Egg/dairy free (kanazawa-food.jp/en/shops/22/); the shop exhibits at ヴィーガンフェスタTOYAMA and sells 豆乳 cakes (wagome.net). The cheese pizzas were in a 2014 kanazawa.keizai.biz article.] Many items are egg- and dairy-free by design, and the shop explicitly offers vegan cakes (soy-milk based) and a range of rice flour breads and muffins. A substantial vegan selection is available.",
    "hours_raw": "11:30-16:30 (closes when sold out). Closed Thu and Fri.",
    "hours": {
     "0": [
@@ -11791,16 +11791,47 @@
      }
     ],
     "confidence": "high",
-    "last_checked": "2026-08-19",
+    "last_checked": "2026-10-14",
     "owner_signoff": {
      "decision": "keep",
-     "from": "dedicated",
+     "field": "gf_confidence",
+     "from": "ask",
      "to": "dedicated",
      "by": "Greg",
-     "date": "2026-08-19",
-     "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
-     "bulk": true
-    }
+     "date": "2026-10-14",
+     "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation. The \"no dairy\" claim cited a 2014 article (cheese pizzas); Greg ruled vegan as well.",
+     "overrode_disproven": 2
+    },
+    "owner_signoff_log": [
+     {
+      "decision": "keep",
+      "from": "dedicated",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-08-19",
+      "reason": "Greg, bulk pass 2026-08-19: approved at the tier the adversarial review settled on. Evidence, independent-source count and residual flags for each are on the record in gf_review and in GF_REVIEW_SIGNOFF.md.",
+      "bulk": true
+     },
+     {
+      "decision": "keep",
+      "field": "gf_confidence",
+      "from": "ask",
+      "to": "dedicated",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Band 1 (the disproven claim was not about gluten; GF basis verified and intact) — restored per recommendation. The \"no dairy\" claim cited a 2014 article (cheese pizzas); Greg ruled vegan as well.",
+      "overrode_disproven": 2
+     },
+     {
+      "decision": "upgrade",
+      "field": "vegan_status",
+      "from": "options",
+      "to": "full",
+      "by": "Greg",
+      "date": "2026-10-14",
+      "reason": "Greg, 2026-10-14: \"Wagome is both vegan and dairy free, see kanazawa-food.jp/en/.\" The Kanazawa allergy directory tags it Vegan + Egg/dairy free (kanazawa-food.jp/en/shops/22/); the shop exhibits at ヴィーガンフェスタTOYAMA and sells 豆乳 cakes (wagome.net). The cheese pizzas were in a 2014 kanazawa.keizai.biz article."
+     }
+    ]
    },
    "cultural_comfort": {
     "level": "konnichiwa",
@@ -11813,13 +11844,6 @@
    "menu_gf_ask_count": 0,
    "menu_gf_meals": 10,
    "menu_vegan_count": 10,
-   "gf_uncited_downgrade": {
-    "from": "dedicated",
-    "date": "2026-08-20",
-    "disproven": 2,
-    "overrides_signoff": true,
-    "note": "Tier held down: 2 safety finding(s) on this record were checked against their sources and NOT supported by them. This overrides the owner sign-off, which was given on that evidence — needs his re-review."
-   },
    "pin_source": "Tabelog https://tabelog.com/en/ishikawa/A1701/A170101/17009166/; cross-checked: listing address 石川県金沢市駅西新町一丁目4番1号 (GSI) 21m; 2026-09-28"
   },
   {
@@ -29950,7 +29974,13 @@
     "disproven": 1,
     "note": "Held at \"options\": vegan finding(s) on this record were checked against their sources and contradicted by them."
    },
-   "pin_source": "existing pin agrees with shop site address 石川県能美市大成町チ81番地 (GSI, lot-level) (within 60m); 2026-09-28"
+   "pin_source": "existing pin agrees with shop site address 石川県能美市大成町チ81番地 (GSI, lot-level) (within 60m); 2026-09-28",
+   "hidden": "closed",
+   "closed": {
+    "status": "permanent",
+    "checked": "2026-10-14",
+    "note": "Greg, 2026-10-14: \"Soya Kanazawa is closed, per Uber Eats.\" The shop's own site (soya-come.com) has posted no news since 2025-12-27 (「2025年最後の特別営業と年末年始のおしらせ」)."
+   }
   },
   {
    "id": "kz_sqol",
