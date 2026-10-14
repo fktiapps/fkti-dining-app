@@ -54,7 +54,9 @@ Log "reachable now: $reachable"
 
 if ($reachable -eq 0) { Log 'nothing reachable left - not firing a run'; exit 0 }
 
-$promptText = Get-Content $Prompt -Raw
+# Point Claude at the file rather than passing its text as an argument: Windows PowerShell 5.1
+# mangles non-ASCII and truncates at the first double quote (found by the research runner 2026-10-14).
+$promptText = 'Read docs/TICK-PROMPT.md in full (it is UTF-8) and follow it exactly.'
 
 # Tee rather than pipe straight to a file: this streams the run into the log as it
 # happens (so a run in flight is watchable) AND captures it for the limit check.

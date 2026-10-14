@@ -68,7 +68,10 @@ try {
     # error under 'Stop' — the first run died on Claude's one-line "workspace not trusted"
     # warning before doing anything. Native output is logged, not judged; the exit code is.
     $ErrorActionPreference = 'Continue'
-    $out = & $claude -p (Get-Content $Prompt -Raw) `
+    # Point Claude at the file instead of passing its text: Windows PowerShell 5.1 re-encodes a
+    # native argument in the ANSI codepage (dashes/Japanese -> mojibake) and cuts it at the first
+    # double quote. The first real run noticed its prompt ended mid-sentence and said so.
+    $out = & $claude -p 'Read docs/RESEARCH-PROMPT.md in full (it is UTF-8) and follow it exactly.' `
         --allowedTools 'Bash' 'Read' 'Write' 'Edit' 'Glob' 'Grep' 'WebFetch' 'WebSearch' `
         2>&1 | ForEach-Object { "$_" } | Tee-Object -FilePath $LogFile -Append
     $code = $LASTEXITCODE
