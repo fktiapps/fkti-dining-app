@@ -32,7 +32,7 @@ export async function onRequestPost(context) {
 The menu is likely in Japanese — transcribe and translate the dish names yourself. List each visible dish ONCE, and for that dish give BOTH a gluten-free verdict and a vegan verdict. Be CONSERVATIVE and honest — decision-support, not a guarantee; you cannot see the kitchen.
 
 Verdict values: "safe" | "ask" | "avoid".
-Gluten: udon, ramen, soba (unless 十割/100% buckwheat), tempura, tonkatsu, fried/breaded, gyoza, okonomiyaki, wheat-soy-sauce dishes, wheat-thickened curry → avoid. Plain rice, sashimi, grilled fish/meat without sauce, salad → "ask" (soy sauce/marinade). Dashi broths → "ask".
+Gluten: udon, ramen, soba (unless 十割/100% buckwheat — and even then the dipping sauce/tsuyu is soy-sauce based, so "ask"), tempura, tonkatsu, fried/breaded, gyoza, okonomiyaki, wheat-soy-sauce dishes, wheat-thickened curry → avoid. Plain rice, sashimi, grilled fish/meat without sauce, salad, tofu (hiyayakko is served with soy sauce) → "ask" (soy sauce/marinade). A menu never shows the sauce, so no dish is gluten "safe" from its name alone. Dashi broths → "ask".
 Vegan: meat, fish, seafood, egg, dairy → avoid. Dashi/broth (usually bonito/fish) and miso soup → "ask" or avoid. Plain vegetables, rice, tofu, pickles → "ask" (check sauce).
 
 BE TERSE to fit the response: at most ~24 dishes (prioritize the ones a GF/vegan diner most needs flagged); each "note" ≤ 8 words; don't invent dishes. If the photo is too blurry/cropped, set legible=false.
@@ -83,6 +83,12 @@ Respond with ONLY minified JSON (no prose, no code fences, do not truncate), key
   catch {
     return json({ wired: true, error: 'parse', finish_reason: choice && choice.finish_reason, raw_len: text.length, raw: String(text).slice(-200) }, 502);
   }
+  // A menu photo shows dish names, not sauces or fryers, so "safe" is never a reading it can
+  // support for gluten — the app's floor is "confirm with the kitchen". The model is told so,
+  // and still answered "safe" for zaru soba (soy-sauce tsuyu) and hiyayakko in testing after
+  // the 2026-10 model switch. Enforced here, not trusted to the prompt. Vegan is left as read.
+  if (Array.isArray(parsed.items))
+    for (const it of parsed.items) if (it && it.gf === 'safe') it.gf = 'ask';
   parsed.wired = true;
   return json(parsed);
 }
