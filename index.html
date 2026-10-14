@@ -251,6 +251,16 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 #scanModal .box{max-width:560px;margin:0 auto}
 #phraseModal .box{max-width:560px;margin:0 auto}
 .fab-scan{background:linear-gradient(135deg,#0E7C66,#16A34A);color:#fff}
+.fab-add{background:linear-gradient(135deg,#9c3b2e,#c2562f);color:#fff;font-size:17px}
+.rq-btn{width:100%;border:none;border-radius:10px;padding:12px;font-weight:700;cursor:pointer;margin-top:8px;font-size:14px}
+.rq-photo{background:#9c3b2e;color:#fff}.rq-map{background:var(--ver);color:#fff}
+.rq-in{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:9px;font:inherit;font-size:14px;margin-top:6px;background:#fff}
+.rq-msg{font-size:13px;margin-top:10px;padding:10px;border-radius:10px;background:var(--paper2)}
+.rq-list{margin-top:14px}.rq-item{border-top:1px solid var(--line);padding:8px 0;font-size:13px}
+.rq-st{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:1px 6px;margin-left:6px;background:var(--paper2)}
+.rq-st.added,.rq-st.exists{background:#d9f2e3;color:#0E5A3A}.rq-st.not_found,.rq-st.outside,.rq-st.rejected{background:#f6dcd6;color:#7a2c1e}
+.pick-bar{position:fixed;left:10px;right:10px;top:calc(env(safe-area-inset-top) + 10px);z-index:950;background:var(--paper);border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,.28);padding:12px 14px;display:none;font-size:14px}
+.pick-bar.show{display:block}.pick-bar .row{display:flex;gap:8px;margin-top:8px}.pick-bar button{flex:1;border:none;border-radius:9px;padding:10px;font-weight:700;cursor:pointer}
 .fab-now{background:linear-gradient(135deg,#c0392b,#e8551d);color:#fff;box-shadow:0 2px 10px rgba(192,57,43,.5)}
 .nb-row{border-bottom:1px solid #f0eada;padding:8px 0}
 .nb-row .nb-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
@@ -470,6 +480,7 @@ li.uncited{color:#7c8299}
   <div class="fabs">
    <button class="fab fab-now" id="nowFab" aria-label="Find food near me now" data-i18n-aria="fab.now">🍽️</button>
    <button class="fab fab-scan" id="scanFab" aria-label="Scan a menu" data-i18n-aria="fab.scan">📷</button>
+   <button class="fab fab-add" id="addFab" aria-label="Suggest a place for us to research" data-i18n-aria="fab.add">➕</button>
    <button class="fab" id="konbiniFab" aria-label="Toggle konbini layer" data-i18n-aria="fab.konbini">🏪</button>
    <button class="fab" id="groceryFab" aria-label="Toggle grocery layer" data-i18n-aria="fab.grocery">🛒</button>
    <button class="fab" id="chainsFab" aria-label="Toggle reliable-chain layer" data-i18n-aria="fab.chains">🍴</button>
@@ -595,6 +606,25 @@ li.uncited{color:#7c8299}
   <input type="file" id="scanModalFile" accept="image/*" capture="environment" style="display:none"/>
   <div id="scanModalOut"></div>
  </div>
+</div>
+
+<div class="modal" id="researchModal">
+ <div class="box">
+  <button class="closex" id="researchClose">×</button>
+  <h2 data-i18n="rq.title">➕ Suggest a place</h2>
+  <p style="margin:2px 0 0;font-size:13px" data-i18n="rq.intro">Found somewhere that isn’t in the app? Send it to us and we’ll research it to the same standard as every other place — GF &amp; vegan evidence, menu, the people behind it. It usually appears within a day.</p>
+  <input class="rq-in" id="rqName" maxlength="120" placeholder="Name, if you know it (optional)" data-i18n-placeholder="rq.name"/>
+  <input class="rq-in" id="rqNote" maxlength="500" placeholder="Anything we should know? (optional)" data-i18n-placeholder="rq.note"/>
+  <button class="rq-btn rq-photo" id="rqPhotoBtn" data-i18n="rq.photo">📷 Photograph the storefront</button>
+  <input type="file" id="rqPhotoFile" accept="image/*" capture="environment" style="display:none"/>
+  <button class="rq-btn rq-map" id="rqMapBtn" data-i18n="rq.map">📍 Pick it on the map</button>
+  <div id="rqOut"></div>
+  <div class="rq-list" id="rqList"></div>
+ </div>
+</div>
+<div class="pick-bar" id="pickBar">
+ <div id="pickText">📍 Tap the place’s location on the map.</div>
+ <div class="row"><button id="pickSend" style="background:var(--ver);color:#fff;display:none" data-i18n="rq.send">Send for research</button><button id="pickCancel" style="background:var(--paper2)" data-i18n="rq.cancel">Cancel</button></div>
 </div>
 
 <div class="modal" id="chainsModal">
@@ -743,7 +773,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v424';
+const APP_BUILD='dcd-v425';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -869,6 +899,10 @@ const STRINGS_JA={
  'card.intro':'スマートフォンをスタッフに渡してください — 日本語で食事制限を説明するカードで、見落としがちなポイント（醤油に隠れた小麦、ほぼすべてに使われる魚だしなど）も含まれています。',
  'card.celiac':'セリアック病／グルテンフリー','card.vegan':'ヴィーガン','card.brighttip':'ヒント：画面の明るさを上げて読みやすくしてください。',
  'scan.title':'📷 メニューをスキャン',
+ 'ar:fab.add':'調べてほしいお店を提案','rq.title':'➕ お店を提案する',
+ 'rq.intro':'アプリに載っていないお店を見つけましたか？送っていただければ、他のお店と同じ基準で調べます — グルテンフリー・ヴィーガンの根拠、メニュー、お店の人。通常1日以内に掲載されます。',
+ 'ph:rq.name':'店名（わかれば・任意）','ph:rq.note':'伝えたいこと（任意）',
+ 'rq.photo':'📷 お店の外観を撮影','rq.map':'📍 地図で場所を選ぶ','rq.send':'調査を依頼','rq.cancel':'キャンセル',
  'scan.intro':'メニューを撮影してください — このアプリに載っていない店でも構いません — <b>グルテンフリー</b>と<b>ヴィーガン</b>それぞれにとって安全に見える項目と、確認すべき質問（英語・日本語・ローマ字）を表示します。',
  'scan.btn':'📷 メニューの写真を撮る・選ぶ',
  'chains.title':'🏪 信頼できるチェーン店',
@@ -2034,6 +2068,107 @@ function renderSummary(j){
 // Show the reader who is talking, not a bare URL.
 function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(_){ return u; } }
 
+// ---------- Suggest a place: research request queue ----------
+// Nothing is researched in the browser or on the server: the request is queued, and the
+// research runs on Greg's machine through the same pipeline as every other record.
+const RQ_LS='dcd_requests';
+function rqIds(){ try{ return JSON.parse(localStorage.getItem(RQ_LS)||'[]'); }catch(_){ return []; } }
+function rqRemember(id){ try{ const a=rqIds().filter(x=>x!==id); a.unshift(id); localStorage.setItem(RQ_LS,JSON.stringify(a.slice(0,30))); }catch(_){} }
+function rqToken(){ try{ return localStorage.getItem('fkti_auth')||''; }catch(_){ return ''; } }
+function openResearch(){
+ document.getElementById('rqOut').innerHTML='';
+ document.getElementById('researchModal').classList.add('show');
+ renderRequests();
+}
+function rqMsg(html){ document.getElementById('rqOut').innerHTML='<div class="rq-msg">'+html+'</div>'; }
+function getPosition(){
+ return new Promise((resolve,reject)=>{
+  if(!navigator.geolocation) return reject(new Error('nogeo'));
+  navigator.geolocation.getCurrentPosition(p=>resolve(p.coords),reject,{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+ });
+}
+async function researchFromPhoto(file){
+ rqMsg(t('rq.locating','Getting your location…'));
+ let image;
+ try{ image=await downscaleImage(file,1600,0.75); }
+ catch(_){ rqMsg(t('rq.badimg','Couldn’t read that image — try another photo.')); return; }
+ let pos=null;
+ try{ pos=await getPosition(); }catch(_){}
+ if(!pos){
+  // No GPS (denied, or indoors): the photo alone can't place a shop, so ask for a map tap.
+  state._pendingPhoto=image;
+  rqMsg(t('rq.nogps','We couldn’t get your location. Tap “Pick it on the map” to show us where it is — your photo will be sent with it.'));
+  return;
+ }
+ submitResearch({kind:'photo',lat:pos.latitude,lng:pos.longitude,acc:pos.accuracy,image});
+}
+function startMapPick(){
+ document.getElementById('researchModal').classList.remove('show');
+ document.getElementById('pickText').textContent=t('rq.picktext','📍 Tap the place’s location on the map.');
+ document.getElementById('pickSend').style.display='none';
+ document.getElementById('pickBar').classList.add('show');
+ state._picking=true;
+ map.on('click',onPickClick);
+}
+function onPickClick(e){
+ if(!state._picking) return;
+ if(state._pick) state._pick.setLatLng(e.latlng);
+ else state._pick=L.marker(e.latlng,{draggable:true,zIndexOffset:1200}).addTo(map);
+ document.getElementById('pickText').textContent=t('rq.pickdrag','Drag the pin (or tap again) to fine-tune, then send.');
+ document.getElementById('pickSend').style.display='';
+}
+function endMapPick(){
+ state._picking=false; map.off('click',onPickClick);
+ if(state._pick){ map.removeLayer(state._pick); state._pick=null; }
+ document.getElementById('pickBar').classList.remove('show');
+}
+async function submitResearch(req){
+ req.name=document.getElementById('rqName').value.trim();
+ req.note=document.getElementById('rqNote').value.trim();
+ req.lang=state.lang||'en';
+ if(req.kind==='map' && state._pendingPhoto){ req.kind='photo'; req.image=state._pendingPhoto; }
+ rqMsg(t('rq.sending','Sending…'));
+ try{
+  const r=await fetch('/api/research-request',{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+rqToken()},body:JSON.stringify(req)});
+  const j=await r.json().catch(()=>({}));
+  if(r.ok && j.id){
+   state._pendingPhoto=null; rqRemember(j.id);
+   document.getElementById('rqName').value=''; document.getElementById('rqNote').value='';
+   rqMsg(t('rq.thanks','✅ Thanks — it’s in the research queue. We check every place against its own sources before it appears, so this usually takes a few hours to a day. Track it below.'));
+   renderRequests(); return;
+  }
+  const why={login_required:t('rq.e.login','Please log in first.'),daily_limit:t('rq.e.limit','You’ve reached today’s limit of suggestions — thank you! Try again tomorrow.'),
+   outside_japan:t('rq.e.japan','That spot is outside Japan — the app only covers Japan.'),image_too_large:t('rq.e.big','That photo is too large — try again.')}[j.error];
+  rqMsg(why||t('rq.e.generic','Couldn’t send that just now — try again in a moment.'));
+ }catch(_){ rqMsg(t('rq.e.offline','You seem to be offline — try again when you have a connection.')); }
+}
+const RQ_STATUS={queued:['Queued','順番待ち'],researching:['Researching','調査中'],added:['Added','掲載済み'],exists:['Already in the app','掲載済み（既存）'],
+ not_found:['Couldn’t identify','特定できず'],outside:['Outside our cities','対象地域外'],rejected:['Not added','掲載見送り'],unknown:['Expired','期限切れ']};
+async function renderRequests(){
+ const el=document.getElementById('rqList'); const ids=rqIds();
+ if(!ids.length){ el.innerHTML=''; return; }
+ let data={};
+ try{ const r=await fetch('/api/research-request?ids='+ids.join(',')); data=(await r.json()).requests||{}; }catch(_){}
+ const ja=state.lang==='ja';
+ el.innerHTML='<b>'+t('rq.mine','My suggestions')+'</b>'+ids.map(id=>{
+  const v=data[id]||{status:'queued'}; const lab=(RQ_STATUS[v.status]||[v.status,v.status])[ja?1:0];
+  const when=v.created?new Date(v.created).toLocaleDateString():'';
+  const msg=ja?(v.message_ja||v.message):v.message;
+  const show=v.place_id&&findPlace(v.place_id)?' <a href="#" data-rqplace="'+escHtml(v.place_id)+'">'+t('rq.show','Show it')+'</a>':'';
+  return '<div class="rq-item">'+escHtml(v.name||(v.kind==='photo'?'📷':'📍'))+' <span class="rq-st '+escHtml(v.status)+'">'+escHtml(lab)+'</span> <span style="color:var(--muted);font-size:11px">'+escHtml(when)+'</span>'+show+(msg?'<div style="color:var(--muted);font-size:12px;margin-top:2px">'+escHtml(msg)+'</div>':'')+'</div>';
+ }).join('');
+ el.querySelectorAll('[data-rqplace]').forEach(a=>a.onclick=e=>{e.preventDefault();document.getElementById('researchModal').classList.remove('show');selectPlace(a.dataset.rqplace);});
+}
+// JS-rendered strings above go through t(); their Japanese lives here.
+Object.assign(STRINGS_JA,{'rq.locating':'現在地を取得しています…','rq.badimg':'画像を読み込めませんでした。別の写真でお試しください。',
+ 'rq.nogps':'現在地を取得できませんでした。「地図で場所を選ぶ」をタップして場所を教えてください。写真も一緒に送られます。',
+ 'rq.picktext':'📍 地図上でお店の場所をタップしてください。','rq.pickdrag':'ピンをドラッグ（またはもう一度タップ）して位置を調整し、送信してください。','rq.sending':'送信中…',
+ 'rq.thanks':'✅ ありがとうございます。調査待ちリストに追加しました。掲載前に各お店を情報源と照らし合わせて確認するため、通常数時間〜1日かかります。下で状況を確認できます。',
+ 'rq.e.login':'先にログインしてください。','rq.e.limit':'本日の提案の上限に達しました。ありがとうございます！明日またお試しください。',
+ 'rq.e.japan':'その場所は日本国外です。このアプリは日本のみ対応しています。','rq.e.big':'写真が大きすぎます。もう一度お試しください。',
+ 'rq.e.generic':'今は送信できませんでした。少し待ってからもう一度お試しください。','rq.e.offline':'オフラインのようです。接続してからもう一度お試しください。',
+ 'rq.mine':'あなたの提案','rq.show':'表示'});
+
 // ---------- Menu scan: "what can I eat here?" (GF / vegan) ----------
 function downscaleImage(file,maxPx=1400,quality=0.72){
  return new Promise((resolve,reject)=>{
@@ -2583,6 +2718,16 @@ function wire(){
  const smb=document.getElementById('scanModalBtn'),smf=document.getElementById('scanModalFile');
  addTouch(smb,()=>smf.click());
  smf.onchange=e=>{const f=e.target.files&&e.target.files[0]; if(f) scanMenu(f,null,'scanModalOut'); smf.value='';};
+ // "Suggest a place": storefront photo or map tap -> research queue (functions/api/research-request.js)
+ addTouch(document.getElementById('addFab'),openResearch);
+ document.getElementById('researchClose').onclick=()=>document.getElementById('researchModal').classList.remove('show');
+ document.getElementById('researchModal').onclick=e=>{if(e.target.id==='researchModal')e.target.classList.remove('show');};
+ const rpf=document.getElementById('rqPhotoFile');
+ addTouch(document.getElementById('rqPhotoBtn'),()=>rpf.click());
+ rpf.onchange=e=>{const f=e.target.files&&e.target.files[0]; if(f) researchFromPhoto(f); rpf.value='';};
+ addTouch(document.getElementById('rqMapBtn'),startMapPick);
+ addTouch(document.getElementById('pickCancel'),endMapPick);
+ addTouch(document.getElementById('pickSend'),()=>{const ll=state._pick&&state._pick.getLatLng(); if(ll){endMapPick(); openResearch(); submitResearch({kind:'map',lat:ll.lat,lng:ll.lng});}});
  // useful-phrases glossary
  addTouch(document.getElementById('chainsBtn'),openChains);
  addTouch(document.getElementById('chainsClose'),function(){document.getElementById('chainsModal').classList.remove('show');});
