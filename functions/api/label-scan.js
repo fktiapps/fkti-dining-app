@@ -5,11 +5,12 @@
  * and returns a translated ingredient list + gluten & animal (vegan) verdicts for a celiac/vegan traveler.
  * Requires secret MISTRAL_API_KEY. Returns {wired:false} if missing.
  */
+import { claudeVision } from '../_lib/claude-vision.js';
 const MODEL = 'mistral-medium-latest';   // pixtral-large-latest was retired ("Invalid model", 2026-10)
 
 export async function onRequestPost(context) {
   const { request, env } = context;
-  if (!env.MISTRAL_API_KEY) return json({ wired: false, message: 'MISTRAL_API_KEY not set on this deployment.' });
+  if (!env.ANTHROPIC_API_KEY && !env.MISTRAL_API_KEY) return json({ wired: false, message: 'No vision API key set on this deployment.' });
 
   let body;
   try { body = await request.json(); } catch { return json({ error: 'bad_json' }, 400); }
@@ -26,6 +27,18 @@ Read the mandatory/【含む】 allergen list if present (Japan's 8: 小麦 whea
 Respond with ONLY minified JSON (no prose, no code fences), keys:
 {"legible":true|false,"product":"name if visible else \\"\\"","ingredients":[{"ja":"","en":"","flag":"gluten|animal|additive|ok"}],"gluten":{"status":"contains|likely|unclear|free","note":"≤14 words"},"vegan":{"status":"animal|likely|unclear|vegan","note":"≤14 words"},"allergens":["wheat","egg",...],"caveat":"≤16 words"}
 List at most ~20 ingredients (the ones that matter most for the two diets). If the label is too blurry/cropped to read, set legible=false.`;
+
+  // Claude first; Mistral only if Claude is unconfigured or fails. `engine` says which answered.
+  let parsed, engine;
+  if (env.ANTHROPIC_API_KEY) {
+    const c = await claudeVision(env, image, prompt, 4000);
+    if (c.parsed) { parsed = c.parsed; engine = c.engine; }
+    else if (!env.MISTRAL_API_KEY) {
+      if (c.error === 'rate_limited') return json({ wired: true, error: 'rate_limited', retry_after: 30 }, 429);
+      return json({ wired: true, error: c.error, status: c.status, detail: c.detail }, 502);
+    }
+  }
+  if (parsed) return finish(parsed, engine);
 
   const reqBody = {
     model: MODEL,
@@ -62,10 +75,14 @@ List at most ~20 ingredients (the ones that matter most for the two diets). If t
   let clean = String(text).replace(/```json|```/g, '').trim();
   const a = clean.indexOf('{'), b = clean.lastIndexOf('}');
   if (a > 0 || (b > -1 && b < clean.length - 1)) clean = clean.slice(a, b + 1);
-  let parsed;
   try { parsed = JSON.parse(clean); }
   catch { return json({ wired: true, error: 'parse', finish_reason: choice && choice.finish_reason, raw: String(text).slice(-200) }, 502); }
+  return finish(parsed, MODEL);
+}
+
+function finish(parsed, engine) {
   parsed.wired = true;
+  parsed.engine = engine;
   return json(parsed);
 }
 

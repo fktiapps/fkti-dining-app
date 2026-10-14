@@ -10,12 +10,13 @@
  * Requires secret MISTRAL_API_KEY. No KV cache (every photo is unique).
  * Returns {wired:false} if the key is missing so the app shows graceful copy.
  */
+import { claudeVision } from '../_lib/claude-vision.js';
 
 const MODEL = 'mistral-medium-latest';   // pixtral-large-latest retired 2026; mistral-large-latest trialled 2026-10-14 and invented dishes not on the menu
 
 export async function onRequestPost(context) {
   const { request, env } = context;
-  if (!env.MISTRAL_API_KEY) return json({ wired: false, message: 'MISTRAL_API_KEY not set on this deployment.' });
+  if (!env.ANTHROPIC_API_KEY && !env.MISTRAL_API_KEY) return json({ wired: false, message: 'No vision API key set on this deployment.' });
 
   let body;
   try { body = await request.json(); } catch { return json({ error: 'bad_json' }, 400); }
@@ -41,6 +42,18 @@ Also give 4–6 "questions to ask before ordering" — each with: en (English), 
 
 Respond with ONLY minified JSON (no prose, no code fences, do not truncate), keys:
 {"legible":true|false,"menu_language":"...","items":[{"name":"","gf":"safe|ask|avoid","vegan":"safe|ask|avoid","note":""}],"questions":[{"en":"","ja":"","rj":""}],"caveat":"..."}`;
+
+  // Claude first; Mistral only if Claude is unconfigured or fails. `engine` says which answered.
+  let parsed, engine;
+  if (env.ANTHROPIC_API_KEY) {
+    const c = await claudeVision(env, image, prompt, 8000);
+    if (c.parsed) { parsed = c.parsed; engine = c.engine; }
+    else if (!env.MISTRAL_API_KEY) {
+      if (c.error === 'rate_limited') return json({ wired: true, error: 'rate_limited', retry_after: 30 }, 429);
+      return json({ wired: true, error: c.error, status: c.status, detail: c.detail }, 502);
+    }
+  }
+  if (parsed) return finish(parsed, engine);
 
   const reqBody = {
     model: MODEL,
@@ -78,11 +91,15 @@ Respond with ONLY minified JSON (no prose, no code fences, do not truncate), key
   let clean = String(text).replace(/```json|```/g, '').trim();
   const a = clean.indexOf('{'), b = clean.lastIndexOf('}');
   if (a > 0 || (b > -1 && b < clean.length - 1)) clean = clean.slice(a, b + 1);
-  let parsed;
   try { parsed = JSON.parse(clean); }
   catch {
     return json({ wired: true, error: 'parse', finish_reason: choice && choice.finish_reason, raw_len: text.length, raw: String(text).slice(-200) }, 502);
   }
+  return finish(parsed, MODEL);
+}
+
+// Every answer, whichever engine produced it, leaves through here.
+function finish(parsed, engine) {
   // A menu photo shows dish names, not sauces or fryers, so "safe" is never a reading it can
   // support for gluten — the app's floor is "confirm with the kitchen". The model is told so,
   // and still answered "safe" for zaru soba (soy-sauce tsuyu) and hiyayakko in testing after
@@ -90,6 +107,7 @@ Respond with ONLY minified JSON (no prose, no code fences, do not truncate), key
   if (Array.isArray(parsed.items))
     for (const it of parsed.items) if (it && it.gf === 'safe') it.gf = 'ask';
   parsed.wired = true;
+  parsed.engine = engine;
   return json(parsed);
 }
 
