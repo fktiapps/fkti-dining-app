@@ -11,7 +11,7 @@
  * Returns {wired:false} if the key is missing so the app shows graceful copy.
  */
 
-const MODEL = 'mistral-large-latest';   // TRIAL 2026-10-14 vs mistral-medium-latest (pixtral-large-latest retired)
+const MODEL = 'mistral-medium-latest';   // pixtral-large-latest retired 2026; mistral-large-latest trialled 2026-10-14 and invented dishes not on the menu
 
 export async function onRequestPost(context) {
   const { request, env } = context;
