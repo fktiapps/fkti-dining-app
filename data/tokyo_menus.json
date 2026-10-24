@@ -165068,5 +165068,470 @@
     "dish_key": "raw_egg"
    }
   ]
+ },
+ "tokyo_fancl_brown_rice_meals_ginza": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.fancl.co.jp/ginza-square/brm/index.html",
+   "https://www.findmeglutenfree.com/biz/fancl-brown-rice-meals/4897732769218560"
+  ],
+  "price_note": "From the restaurant's own page, which gives prices only as 'from' figures per format and states that every menu item is made without wheat flour. Dish-level detail is on the gourmet sites it links to. GF flags here follow that statement; ask about drinks (beer is normally barley).",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "平日ランチプレート",
+    "romaji": "heijitsu ranchi pureeto",
+    "en": "Weekday lunch plate (starter plate + one of five mains: brown-rice pasta, risotto, roast Daisen chicken, garden salad or vegan)",
+    "price": "¥2,400~",
+    "section": "Lunch",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Shop: every menu item is made without wheat flour. Choose the vegan main for a vegan plate; check the starters.",
+    "dish_key": "lunch_plate"
+   },
+   {
+    "ja": "休日ランチコース",
+    "romaji": "kyuujitsu ranchi koosu",
+    "en": "Weekend lunch course (starters, brown-rice bread, pasta, risotto, meat, dolce, drink)",
+    "price": "¥4,800~",
+    "section": "Lunch",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Saturdays, Sundays and holidays; reservation required.",
+    "dish_key": "weekend_lunch_course"
+   },
+   {
+    "ja": "セレクトディナー",
+    "romaji": "serekuto dinaa",
+    "en": "Select dinner (2 starters, salad and dressing, pasta / risotto / roast chicken)",
+    "price": "¥4,000~",
+    "section": "Dinner",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "¥500 table charge at dinner.",
+    "dish_key": "select_dinner"
+   },
+   {
+    "ja": "コースメニュー",
+    "romaji": "koosu menyuu",
+    "en": "Brown-rice Italian course",
+    "price": "",
+    "section": "Dinner",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Details on the gourmet sites the shop links to.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "グルテンフリードルチェ",
+    "romaji": "guruten furii doruche",
+    "en": "Gluten-free dolci (seasonal dolce sets)",
+    "price": "",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "",
+    "dish_key": "dolce"
+   },
+   {
+    "ja": "玄米ブレッド",
+    "romaji": "genmai bureddo",
+    "en": "Brown-rice bread (takeaway; warm before eating)",
+    "price": "¥1,050",
+    "section": "Takeaway",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "The same gluten-free bread served in the restaurant.",
+    "dish_key": "brown_rice_bread"
+   }
+  ]
+ },
+ "tokyo_glutenfree_kushiage_su": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://www.tablecheck.com/en/shops/glutenfree-kushiage-su/reserve",
+   "https://www.tablecheck.com/ja/shops/glutenfree-kushiage-su/reserve",
+   "https://www.findmeglutenfree.com/biz/su/5948908314951680"
+  ],
+  "price_note": "Course prices from the shop's own TableCheck notice (dinner raised to ¥13,800 from October 2026). The course content is the chef's seasonal choice.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "グルテンフリー串揚げおまかせ11串コース",
+    "romaji": "guruten furii kushiage omakase",
+    "en": "Gluten-free kushiage omakase: 2 starters, 11 skewers, soup, palate cleanser, dessert",
+    "price": "¥13,800",
+    "section": "Course",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Tax included, no service charge, drinks extra (from October 2026). Soy seasonings used throughout — confirm they are wheat-free.",
+    "dish_key": "kushiage_course"
+   },
+   {
+    "ja": "日曜限定ランチショートコース",
+    "romaji": "nichiyou gentei ranchi",
+    "en": "Sunday lunch short course: starter, 7 skewers, soup, dessert",
+    "price": "¥6,000",
+    "section": "Course",
+    "gf": "gf",
+    "vegan": "no",
+    "note": "Sundays, 12:00 start.",
+    "dish_key": "kushiage_lunch"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Gluten-free rice beer",
+    "price": "",
+    "section": "Drinks",
+    "gf": "gf",
+    "vegan": "",
+    "note": "Reported 'celiac safe' by an FMGF reviewer, October 2026; confirm the brand.",
+    "dish_key": "rice_beer"
+   }
+  ]
+ },
+ "tokyo_ain_soph_ginza": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.ain-soph.jp/ginza"
+  ],
+  "price_note": "Full menu with prices and the shop's own 【GF】 / 【素食】 tags, from its Ginza page. GF flags follow the shop's tags. Untagged items are marked 'no' where they contain bread or beer and 'ask' otherwise. The shop notes that other allergens are handled in its factory and shop.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "きのことくるみの和風ベジハンバーグ",
+    "romaji": "kinoko to kurumi no wafuu beji hanbaagu",
+    "en": "Mushroom-and-walnut veg-hamburg, Japanese teriyaki sauce (autumn)",
+    "price": "¥2,530",
+    "section": "Mains",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】; ask which soy sauce is in the teriyaki.",
+    "dish_key": "veg_hamburg_wafu"
+   },
+   {
+    "ja": "さつまいもモンブランパンケーキ",
+    "romaji": "satsumaimo monburan pankeeki",
+    "en": "Sweet-potato Mont Blanc pancake (autumn)",
+    "price": "¥2,640",
+    "section": "Pancakes",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "pancake_montblanc"
+   },
+   {
+    "ja": "福禄寿BENTOコース ー禅ー",
+    "romaji": "fukurokuju bento koosu zen",
+    "en": "Fukurokuju bento course \"Zen\" (aperitif, soup, bento, pudding, drink)",
+    "price": "¥7,800",
+    "section": "Course",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】. Drink choices include beer — choose wine or a soft drink.",
+    "dish_key": "bento_course"
+   },
+   {
+    "ja": "天上のヴィーガンパンケーキコース",
+    "romaji": "tenjou no vegan pankeeki koosu",
+    "en": "\"Heavenly\" vegan pancake course (salad, soup, pancake, drink)",
+    "price": "¥4,980",
+    "section": "Course",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "pancake_course"
+   },
+   {
+    "ja": "福禄寿BENTO",
+    "romaji": "fukurokuju bento",
+    "en": "Fukurokuju bento (Ginza only)",
+    "price": "¥3,900",
+    "section": "Mains",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "fukurokuju_bento"
+   },
+   {
+    "ja": "ベジミート唐揚げの照り焼きプレート",
+    "romaji": "bejimiito karaage no teriyaki pureeto",
+    "en": "Soy-meat kara-age teriyaki plate",
+    "price": "¥2,200",
+    "section": "Mains",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "soy_karaage_plate"
+   },
+   {
+    "ja": "トマトソースのベジハンバーグ",
+    "romaji": "tomato soosu no beji hanbaagu",
+    "en": "Veg-hamburg in tomato sauce",
+    "price": "¥2,300",
+    "section": "Mains",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】.",
+    "dish_key": "veg_hamburg_tomato"
+   },
+   {
+    "ja": "ベジカツプレート",
+    "romaji": "bejikatsu pureeto",
+    "en": "Veg-cutlet plate",
+    "price": "¥2,400",
+    "section": "Mains",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Not GF-tagged by the shop.",
+    "dish_key": "veg_katsu_plate"
+   },
+   {
+    "ja": "ほうれん草のグリーンカレー",
+    "romaji": "hourensou no guriin karee",
+    "en": "Spinach green curry",
+    "price": "¥2,400",
+    "section": "Mains",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】; the cutlet topping (+¥800) is not GF.",
+    "dish_key": "green_curry"
+   },
+   {
+    "ja": "天上のヴィーガンパンケーキ",
+    "romaji": "tenjou no vegan pankeeki",
+    "en": "\"Heavenly\" vegan pancakes (rice flour; 1 piece ¥1,870)",
+    "price": "¥2,550",
+    "section": "Pancakes",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】. Kyushu rice flour, coconut oil, fermented overnight.",
+    "dish_key": "vegan_pancake"
+   },
+   {
+    "ja": "メープルマスタードソイチキンパンケーキ",
+    "romaji": "meepuru masutaado soi chikin pankeeki",
+    "en": "Maple-mustard soy-chicken pancake",
+    "price": "¥2,550",
+    "section": "Pancakes",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】.",
+    "dish_key": "soy_chicken_pancake"
+   },
+   {
+    "ja": "彩り野菜のガーデンプレートサラダ",
+    "romaji": "irodori yasai no gaaden pureeto sarada",
+    "en": "Garden plate salad (for 2–3)",
+    "price": "¥2,780",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "garden_salad"
+   },
+   {
+    "ja": "ミニガーデンサラダ",
+    "romaji": "mini gaaden sarada",
+    "en": "Mini garden salad",
+    "price": "¥1,300",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "mini_salad"
+   },
+   {
+    "ja": "お豆腐のスパニッシュオムレツ",
+    "romaji": "otoufu no supanisshu omuretsu",
+    "en": "Tofu Spanish omelette",
+    "price": "¥1,100",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "tofu_omelette"
+   },
+   {
+    "ja": "ベジミートの唐揚げ",
+    "romaji": "bejimiito no karaage",
+    "en": "Soy-meat kara-age",
+    "price": "¥1,100",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "soy_karaage"
+   },
+   {
+    "ja": "ヴィーガンカツレツ(2枚)",
+    "romaji": "vegan katsuretsu",
+    "en": "Vegan cutlets (2)",
+    "price": "¥1,300",
+    "section": "Sides",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Not GF-tagged by the shop.",
+    "dish_key": "vegan_cutlet"
+   },
+   {
+    "ja": "ひよこ豆のフムス(バゲット付き)",
+    "romaji": "hiyokomame no fumusu",
+    "en": "Chickpea hummus with baguette",
+    "price": "¥1,150",
+    "section": "Sides",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Comes with a baguette; not GF-tagged.",
+    "dish_key": "hummus"
+   },
+   {
+    "ja": "コーンミールチップス",
+    "romaji": "koonmiiru chippusu",
+    "en": "Cornmeal chips (S ¥500 / L ¥880)",
+    "price": "¥500",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "corn_chips"
+   },
+   {
+    "ja": "具沢山トマトスープ",
+    "romaji": "gudakusan tomato suupu",
+    "en": "Hearty tomato soup",
+    "price": "¥930",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "tomato_soup"
+   },
+   {
+    "ja": "アーモンドミルク仕立ての濃厚コーンスープ",
+    "romaji": "aamondo miruku jitate no noukou koon suupu",
+    "en": "Rich corn soup with almond milk",
+    "price": "¥980",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】.",
+    "dish_key": "corn_soup"
+   },
+   {
+    "ja": "無農薬玄米",
+    "romaji": "munouyaku genmai",
+    "en": "Pesticide-free brown rice",
+    "price": "¥660",
+    "section": "Sides",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "brown_rice"
+   },
+   {
+    "ja": "ヴィーガンプリン",
+    "romaji": "vegan purin",
+    "en": "Vegan pudding",
+    "price": "¥850",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "vegan_pudding"
+   },
+   {
+    "ja": "オーガニックバナナケーキ",
+    "romaji": "ooganikku banana keeki",
+    "en": "Organic banana cake",
+    "price": "¥1,180",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "banana_cake"
+   },
+   {
+    "ja": "キャラメルナッツブラウニー",
+    "romaji": "kyarameru nattsu buraunii",
+    "en": "Caramel-nut brownie",
+    "price": "¥1,200",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "brownie"
+   },
+   {
+    "ja": "京都宇治抹茶プリンパフェ",
+    "romaji": "kyouto uji maccha purin pafe",
+    "en": "Uji matcha pudding parfait",
+    "price": "¥2,400",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "matcha_parfait"
+   },
+   {
+    "ja": "宇治抹茶ガトー",
+    "romaji": "uji maccha gatoo",
+    "en": "Uji matcha gâteau",
+    "price": "¥1,480",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "Shop-tagged 【GF】【素食】.",
+    "dish_key": "matcha_gateau"
+   },
+   {
+    "ja": "自家製ヴィーガンアイス(2スクープ)",
+    "romaji": "jikasei vegan aisu",
+    "en": "House vegan ice cream, 2 scoops",
+    "price": "¥880",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Not GF-tagged by the shop; ask (flavours include rum-raisin and matcha).",
+    "dish_key": "vegan_ice_cream"
+   },
+   {
+    "ja": "ハートランド生ビール",
+    "romaji": "haatorando nama biiru",
+    "en": "Heartland draught beer (also matcha beer, lemon beer)",
+    "price": "",
+    "section": "Drinks",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Beer is brewed from barley malt.",
+    "dish_key": "beer"
+   },
+   {
+    "ja": "オーガニックハウスワイン",
+    "romaji": "ooganikku hausu wain",
+    "en": "Organic house wine (glass ¥880 / decanter ¥3,500)",
+    "price": "¥880",
+    "section": "Drinks",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "",
+    "dish_key": "house_wine"
+   },
+   {
+    "ja": "ヴィーガンプリン・クラシック(お持ち帰り)",
+    "romaji": "vegan purin kurashikku",
+    "en": "Vegan pudding classic (takeaway, 1F patisserie)",
+    "price": "¥800",
+    "section": "Takeaway",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Not tagged on the takeaway list; the restaurant pudding is 【GF】.",
+    "dish_key": "pudding_takeaway"
+   }
+  ]
  }
 }
