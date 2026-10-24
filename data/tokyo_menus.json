@@ -173941,5 +173941,96 @@
     "dish_key": "gindara"
    }
   ]
+ },
+ "tokyo_sushi_ishiyama_ginza": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13225073/dtlrvwlst/B493790117/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13225073/dtlrvwlst/B530660476/"
+  ],
+  "price_note": "Tabelog budget: dinner ¥40,000–50,000, lunch ¥20,000–30,000.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "おまかせ",
+    "romaji": "omakase",
+    "en": "Omakase of small dishes and nigiri",
+    "price": "",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "omakase"
+   },
+   {
+    "ja": "握りのみのランチコース",
+    "romaji": "nigiri nomi no ranchi koosu",
+    "en": "Sushi-only lunch course",
+    "price": "",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "nigiri_lunch"
+   }
+  ]
+ },
+ "tokyo_sushiya_ginza_honten": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13236300/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13236300/dtlrvwlst/B520246776/"
+  ],
+  "price_note": "Tabelog budget: dinner ¥20,000–30,000, lunch ¥10,000–15,000.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "おまかせ",
+    "romaji": "omakase",
+    "en": "Omakase (one course at lunch)",
+    "price": "",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "omakase"
+   }
+  ]
+ },
+ "tokyo_sushi_ichiki_ginza": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13258242/dtlrvwlst/B537227123/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13258242/dtlrvwlst/B537033719/"
+  ],
+  "price_note": "Course prices from October 2026 reviews; 10% service charge.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "ランチおまかせ",
+    "romaji": "ranchi omakase",
+    "en": "Lunch omakase (about 16 pieces, red-miso soup, jelly)",
+    "price": "¥11,000",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2026.",
+    "dish_key": "lunch_omakase"
+   },
+   {
+    "ja": "夜のおまかせ",
+    "romaji": "yoru no omakase",
+    "en": "Evening omakase (sushi and appetizers)",
+    "price": "¥18,000",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2026.",
+    "dish_key": "dinner_omakase"
+   }
+  ]
  }
 }
