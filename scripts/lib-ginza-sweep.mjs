@@ -31,7 +31,7 @@ export function openSweep(date) {
   const save = () => {
     fs.writeFileSync(file, raw.includes('\n') ? JSON.stringify(d, null, 1) : JSON.stringify(d));
     fs.writeFileSync(mf, JSON.stringify(menus, null, 1));
-    fs.writeFileSync(qf, JSON.stringify(queue, null, 1));
+    fs.writeFileSync(qf, JSON.stringify(queue, null, 1) + '\n');
     writeLang('tokyo', 'ja', ja);
     console.log(log.join('\n')); console.log(`Tokyo now ${d.places.length} places; underrated queue ${queue.length}.`);
   };
