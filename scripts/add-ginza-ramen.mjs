@@ -402,6 +402,60 @@ const add = (place, menu, jaFields) => {
   }
 }
 
+// ---------------------------------------------------------------- bowl profiles (radar) + pantheon
+// Scored 0–5 on the locked RAMEN_SCHEMA axes for each shop's signature bowl, only from what the
+// cited sources say about it; profile_basis records the evidence behind every axis.
+{
+  const ST = 'https://san-tatsu.jp/articles/272176/';
+  const FRAU = 'https://gendai.media/articles/-/146952', NAP = 'https://www.nap-camp.com/mag/62940';
+  const TM = 'https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/';
+  const JMENU = 'https://kyushujangara.co.jp/menu/', JG = 'https://tabelog.com/en/tokyo/A1301/A130101/13000570/dtlrvwlst/';
+  const PROFILES = {
+    tokyo_chuka_ginza_tei: {
+      profile: { richness: 2, oiliness: 2, clarity: 2, tare_strength: 2, noodle_firmness: 2, aroma_punch: 2 },
+      pantheon: "A Shōwa machi-chūka bowl with a chain pedigree: the noodle menu's base flavour descends from the 1970s つけ麺大王 that the shop began as, and the miso chashu is built the wok way — bean sprouts, cabbage and pork belly fired over high heat, then soup and a mildly spicy house miso tare added in the pan. It drinks as gently as miso soup; four thick slices of shoulder chashu carry the weight.",
+      profile_basis: {
+        richness: [ST, '「味噌汁のようなほっこりやさしい、あっさりとしたスープ」'],
+        oiliness: [ST, 'No oil layer described; vegetables and pork belly are wok-fried before the soup goes in.'],
+        clarity: [ST, 'Miso-seasoned soup likened to miso soup (味噌汁のような) — not a clear broth.'],
+        tare_strength: [ST, '「決してしょっぱすぎるわけではないのだが、全体的にあっさりとした味わい」'],
+        noodle_firmness: [ST, '「中太麺はもっちもち」, straight noodles that 「グングンスープを吸い上げていく」 — soft-chewy, not firm.'],
+        aroma_punch: [ST, '「自家製の味噌だれは少し辛味がある」 — a little heat; no garlic or other aromatic oil mentioned.'],
+      },
+    },
+    tokyo_ginza_tanmen: {
+      profile: { richness: 2, oiliness: 3, clarity: 4, tare_strength: 2, noodle_firmness: 3, aroma_punch: 2 },
+      pantheon: "A one-dish counter that strips tanmen to its essentials: a clear, salted chicken-frame soup, thin straight noodles, napa cabbage and a little pork. The cabbage is the soul — bought by season with its origin posted, and simmered with the soup in a frying pan only so far that it still crunches.",
+      profile_basis: {
+        richness: [NAP, '「鶏ガラベースのあっさりとした優しい味わいのスープ」'],
+        oiliness: [TM + 'B534870509/', 'Reviewers note a strong sesame-oil flavour in the salt soup (also ' + TM + 'B534487147/).'],
+        clarity: [FRAU, '「透き通ったスープに、どーんと白菜がのっています」'],
+        tare_strength: [TM + 'B534772175/', 'A mild saltiness; another reviewer: not too strong, not too light (' + TM + 'B534520094/).'],
+        noodle_firmness: [NAP, '「細めのストレート麺」; reviewers found them chewy at first (' + TM + 'B532994130/) to slightly soft (' + TM + 'B535204018/).'],
+        aroma_punch: [TM + 'B534487147/', 'A sesame-oil-scented salt soup; vinegar and chili oil are optional at the counter (also white pepper, ' + TM + 'B534520094/).'],
+      },
+    },
+    tokyo_kyushu_jangara_ginza: {
+      profile: { richness: 3, oiliness: 2, clarity: 2, tare_strength: 3, noodle_firmness: 4, aroma_punch: 2 },
+      pantheon: "Tokyo's own take on Kyushu tonkotsu since 1984. The house bowl softens a pork-bone soul with chicken frames and vegetables into a mild, light soup, while the menu walks the Kyushu map — Bonshan for creamy Kurume/Hakata, Kobonshan for Kumamoto's black-garlic oil. Thin, firm egg-white noodles and the 'zenbu-iri' toppings (braised pork belly, mentaiko, a whole seasoned egg) are the house signature.",
+      profile_basis: {
+        richness: [JMENU, '「豚骨、鶏ガラ、数種類の野菜をバランスよく配分し、丁寧に煮出したマイルドな豚骨スープ」 — a pork-bone soup, but billed mild.'],
+        oiliness: [JMENU, '「軽やかな口当たりが特徴」; the black-garlic oil belongs to Kobonshan, not the house bowl.'],
+        clarity: [JMENU, 'A simmered pork-bone and chicken-frame soup; its sibling Bonshan is billed クリーミー.'],
+        tare_strength: [JG + 'B528837778/', 'A May 2026 diner tasted a burnt-soy-sauce note in the tonkotsu broth.'],
+        noodle_firmness: [JMENU, '「こりこり感を持った一定の硬さ」「コシのある麺」; one 2026 diner found even barikata a little soft (' + JG + 'B529301857/).'],
+        aroma_punch: [JMENU, 'No aromatic oil on the house bowl; garlic/mayu is Kobonshan\'s, spice is Karabon\'s.'],
+      },
+    },
+  };
+  for (const [id, pr] of Object.entries(PROFILES)) {
+    const p = d.places.find(x => x.id === id);
+    if (!p || !p.ramen) { log.push(`${id}: no ramen object to profile`); continue; }
+    Object.assign(p.ramen, pr);
+    log.push(`${id}: bowl profile set`);
+  }
+}
+
 fs.writeFileSync(file, raw.includes('\n') ? JSON.stringify(d, null, 1) : JSON.stringify(d));
 fs.writeFileSync(mf, JSON.stringify(menus, null, 1));
 writeLang('tokyo', 'ja', ja);
