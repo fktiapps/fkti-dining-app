@@ -164106,5 +164106,402 @@
     "dish_key": "omu_dry_rice"
    }
   ]
+ },
+ "tokyo_kyushu_jangara_ginza": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://kyushujangara.co.jp/shops/ginza/",
+   "https://kyushujangara.co.jp/menu/",
+   "https://kyushujangara.co.jp/en/menulist/",
+   "https://visit-chiyoda.tokyo/app/spot/detail/927",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13000570/dtlrvwlst/B528837778/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13000570/dtlrvwlst/B532111911/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13000570/dtlrvwlst/B531983831/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13000570/dtlrvwlst/B528157502/"
+  ],
+  "price_note": "Bowl list from the Ginza shop's own page (the company menu adds つけちゃん, むぎちゃん and a Kumamoto-style vegan bowl that the Ginza page does not list). The company publishes no prices; the four prices here are what Tabelog reviewers paid at Ginza in May–July 2026.",
+  "last_checked": "2026-10-23",
+  "items": [
+   {
+    "ja": "九州じゃんがら",
+    "romaji": "kyuushuu jangara",
+    "en": "Kyushu Jangara — mild tonkotsu (house bowl)",
+    "price": "¥940",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork-bone & chicken-frame soup; wheat-and-egg-white noodles. Price paid by a Tabelog reviewer at Ginza, May 2026.",
+    "dish_key": "jangara_ramen"
+   },
+   {
+    "ja": "九州じゃんがら 全部入り",
+    "romaji": "kyuushuu jangara zenbu iri",
+    "en": "Kyushu Jangara, everything in (braised pork belly, mentaiko, seasoned egg)",
+    "price": "¥1,590",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer at Ginza, June 2026.",
+    "dish_key": "jangara_ramen_zenbu"
+   },
+   {
+    "ja": "ぼんしゃん",
+    "romaji": "bonshan",
+    "en": "Bonshan — creamy Hakata/Kurume-style tonkotsu",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork-bone soup; wheat noodles.",
+    "dish_key": "bonshan"
+   },
+   {
+    "ja": "こぼんしゃん",
+    "romaji": "kobonshan",
+    "en": "Kobonshan — Kumamoto-style tonkotsu with house black-garlic oil",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork-bone & chicken-frame soup; wheat noodles.",
+    "dish_key": "kobonshan"
+   },
+   {
+    "ja": "こぼんしゃん 全部入り",
+    "romaji": "kobonshan zenbu iri",
+    "en": "Kobonshan, everything in",
+    "price": "¥1,680",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by Tabelog reviewers at Ginza, June and July 2026.",
+    "dish_key": "kobonshan_zenbu"
+   },
+   {
+    "ja": "九州じゃんがら 味噌",
+    "romaji": "kyuushuu jangara miso",
+    "en": "Kyushu Jangara miso — mild tonkotsu with blended miso",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork-bone soup; wheat noodles.",
+    "dish_key": "jangara_miso"
+   },
+   {
+    "ja": "からぼん",
+    "romaji": "karabon",
+    "en": "Karabon — creamy tonkotsu with a dozen-plus spices (heat level selectable)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Pork-bone soup; wheat noodles. The default is the hottest level.",
+    "dish_key": "karabon"
+   },
+   {
+    "ja": "濃い口醤油のヴィーガンらあめん",
+    "romaji": "koikuchi shouyu no vegan raamen",
+    "en": "Vegan dark-soy-sauce ramen (vegetable soup)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "The company labels it plant-based; 五葷抜き (no garlic/onion/leek) on request. Dark soy sauce = wheat by default. Egg-free noodles and soy-meat chashu documented at the Akihabara branch — confirm at Ginza. Same kitchen as the pork-bone ramen.",
+    "dish_key": "vegan_shoyu_ramen"
+   },
+   {
+    "ja": "替玉",
+    "romaji": "kaedama",
+    "en": "Noodle refill",
+    "price": "¥150",
+    "section": "Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Wheat-and-egg-white noodles. Price paid by a Tabelog reviewer at Ginza, May 2026.",
+    "dish_key": "kaedama"
+   },
+   {
+    "ja": "角肉",
+    "romaji": "kakuniku",
+    "en": "Braised pork belly (Nagasaki shippoku recipe)",
+    "price": "",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "kakuni"
+   },
+   {
+    "ja": "めんたいこ",
+    "romaji": "mentaiko",
+    "en": "Mentaiko (spicy cod roe)",
+    "price": "",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "mentaiko"
+   },
+   {
+    "ja": "味玉子",
+    "romaji": "ajitamago",
+    "en": "Seasoned soft-boiled egg (served whole)",
+    "price": "",
+    "section": "Toppings",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Marinated in the house soy-sauce tare.",
+    "dish_key": "ajitama"
+   }
+  ]
+ },
+ "tokyo_chuka_ginza_tei": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://san-tatsu.jp/articles/272176/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B463975358/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B520802079/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B534307183/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B536842914/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B536898447/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B537072176/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B537416302/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B449522487/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13054334/dtlrvwlst/B536867077/"
+  ],
+  "price_note": "The shop has no website, and Tabelog carries no menu. Items and prices come from a 2023 interview (miso chashu) and from what Tabelog reviewers paid in January–October 2026. Most names come from Tabelog's English machine translation of those reviews, so the Japanese name is left blank rather than guessed. Several dishes are known only by name.",
+  "last_checked": "2026-10-23",
+  "items": [
+   {
+    "ja": "みそチャーシュー",
+    "romaji": "miso chaashuu",
+    "en": "Miso chashu ramen (wok-fried vegetables, four slices of pork shoulder)",
+    "price": "¥1,300",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price from the November 2023 interview — may have risen. House miso tare, type of miso not stated; chicken-foot & trotter soup.",
+    "dish_key": "miso_chashu_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Umaka ramen (thickened soy-sauce ramen; large size free)",
+    "price": "¥1,300",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, January 2026. Name from a machine-translated review.",
+    "dish_key": "umaka_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Mapo tantanmen",
+    "price": "¥1,200",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, October 2026. Name from a machine-translated review.",
+    "dish_key": "mapo_tantanmen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Tan-soba (noodle soup)",
+    "price": "¥1,200",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, October 2026. Name from a machine-translated review.",
+    "dish_key": "tansoba"
+   },
+   {
+    "ja": "つけ麺",
+    "romaji": "tsukemen",
+    "en": "Tsukemen (dipping noodles) — the oldest dish on the menu",
+    "price": "",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Descended from the つけ麺大王 recipe (2023 interview).",
+    "dish_key": "tsukemen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Sauce yakisoba",
+    "price": "",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "",
+    "note": "Ordered by a Tabelog reviewer, October 2026.",
+    "dish_key": "sauce_yakisoba"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Mapo harusame rice bowl (glass noodles in mapo sauce over soft egg and rice)",
+    "price": "¥1,300",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Price paid by Tabelog reviewers, October 2026. Minced meat; comes with soup, spinach and pickled ginger.",
+    "dish_key": "mapo_harusame_don"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Fried rice",
+    "price": "¥1,200",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, October 2026 (chashu, egg, green onion, naruto).",
+    "dish_key": "fried_rice"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Half fried rice",
+    "price": "¥600",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, October 2026.",
+    "dish_key": "fried_rice_half"
+   },
+   {
+    "ja": "回鍋肉定食",
+    "romaji": "hoikoorou teishoku",
+    "en": "Twice-cooked pork set meal (cabbage and pork, rice, soup)",
+    "price": "¥1,400",
+    "section": "Set meals",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Price from a Tabelog reviewer photo caption, October 2026.",
+    "dish_key": "hoikoro_teishoku"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Liver and garlic chives",
+    "price": "¥1,500",
+    "section": "Set meals",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, October 2026. Name from a machine-translated review.",
+    "dish_key": "reba_nira"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Gyoza",
+    "price": "",
+    "section": "Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Served with a vinegar-soy dip and chili oil. A reviewer paid ¥1,700 for half fried rice plus 3 gyoza (October 2026).",
+    "dish_key": "gyoza"
+   }
+  ]
+ },
+ "tokyo_ginza_tanmen": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://gendai.media/articles/-/146952",
+   "https://www.nap-camp.com/mag/62940",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/B533412982/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/B534461508/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/B533525838/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/B535204018/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/B534772175/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13230948/dtlrvwlst/B535204890/"
+  ],
+  "price_note": "A one-dish shop: the ticket machine sells tanmen and large tanmen, plus toppings and drinks. Prices are what Tabelog reviewers paid in August–September 2026 (¥1,000 in the February 2025 FRaU article). Topping and drink prices are not on record, and the topping names come from machine-translated reviews.",
+  "last_checked": "2026-10-23",
+  "items": [
+   {
+    "ja": "たんめん",
+    "romaji": "tanmen",
+    "en": "Tanmen (salt chicken-frame soup, napa cabbage, pork)",
+    "price": "¥1,100",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by Tabelog reviewers, Aug–Sep 2026 (¥1,000 in the Feb 2025 FRaU article).",
+    "dish_key": "tanmen"
+   },
+   {
+    "ja": "たんめん大盛り",
+    "romaji": "tanmen oomori",
+    "en": "Large tanmen",
+    "price": "¥1,300",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Price paid by a Tabelog reviewer, August 2026.",
+    "dish_key": "tanmen_large"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Cold tanmen (summer only)",
+    "price": "",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A Tabelog reviewer saw a cold version on sale in August 2026.",
+    "dish_key": "tanmen_cold"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Butter (topping, served chilled on the side)",
+    "price": "",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "butter"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Cilantro / extra cilantro (topping)",
+    "price": "",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "",
+    "note": "",
+    "dish_key": "cilantro"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Nori (topping)",
+    "price": "",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "",
+    "note": "",
+    "dish_key": "nori"
+   },
+   {
+    "ja": "角ハイボール",
+    "romaji": "kaku haibooru",
+    "en": "Kaku highball",
+    "price": "",
+    "section": "Drinks",
+    "gf": "",
+    "vegan": "",
+    "note": "Sold at the ticket machine (Tabelog reviewer, Sept 2026).",
+    "dish_key": "highball"
+   }
+  ]
  }
 }
