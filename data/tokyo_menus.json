@@ -166354,5 +166354,418 @@
     "dish_key": "tsukemen"
    }
   ]
+ },
+ "tokyo_soranoiro_ginza": {
+  "verified": "partial",
+  "confidence": "medium",
+  "sources": [
+   "https://soranoiro-vege.com/store-menu/soranoiro-ginza/",
+   "https://soranoiro-vege.com/",
+   "https://www.findmeglutenfree.com/biz/soranoiro/6098068526465024",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13314476/dtlrvwlst/B536991088/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13314476/dtlrvwlst/B535833531/"
+  ],
+  "price_note": "The bowls come from the shop's own Ginza page, which gives no prices; the chuka soba price is from an October 2026 review. The vegan and gluten-free ramen are on the company page and in October 2026 FMGF reviews, not on the Ginza page.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "中華そば",
+    "romaji": "chuuka soba",
+    "en": "Chuka soba (Amakusa Daiō chicken, niboshi, bonito)",
+    "price": "¥1,100",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "chuka_soba"
+   },
+   {
+    "ja": "特製中華そば",
+    "romaji": "tokusei chuuka soba",
+    "en": "Special chuka soba (three chashu cuts, water-gyoza, egg)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Shop's Ginza page.",
+    "dish_key": "tokusei_chuka_soba"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Mushroom veggie soba",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "Ordered by Tabelog reviewers, September 2026; not stated vegan.",
+    "dish_key": "veggie_soba_mushroom"
+   },
+   {
+    "ja": "ヴィーガンラーメン",
+    "romaji": "vegan raamen",
+    "en": "Vegan ramen",
+    "price": "",
+    "section": "Ramen",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Offered by the company; at Ginza an October 2026 celiac reviewer had a 'vegan gluten free ramen'. Ask for the gluten-free version.",
+    "dish_key": "vegan_ramen"
+   },
+   {
+    "ja": "グルテンフリーラーメン",
+    "romaji": "guruten furii raamen",
+    "en": "Gluten-free ramen (for wheat allergy)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "gf",
+    "vegan": "ask",
+    "note": "Company page; Ginza FMGF reviewers report a separate GF menu and fresh gloves. Shared kitchen with wheat noodles.",
+    "dish_key": "gf_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Gyoza (gluten-free version reported)",
+    "price": "",
+    "section": "Sides",
+    "gf": "ask",
+    "vegan": "",
+    "note": "FMGF reviewers list dumplings among GF items at Ginza — confirm.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Kara-age fried chicken (gluten-free version reported)",
+    "price": "",
+    "section": "Sides",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "FMGF reviewers list fried chicken among GF items — confirm.",
+    "dish_key": "karaage"
+   }
+  ]
+ },
+ "tokyo_chaya_natural_wild_table_hibiya": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://visit-chiyoda.tokyo/app/spot/detail/925",
+   "https://chayam.co.jp/restaurant/hibiya/"
+  ],
+  "price_note": "The shop's menu tabs (lunch, dinner, dessert, drink) did not render text we could read, so only the dish named by the city tourism page is listed, at its pre-renewal price. The shop reopened on 1 September 2026.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "大豆ミートの炙り焼きのヴィーガンブッダボウル",
+    "romaji": "daizu miito no aburiyaki no vegan budda bouru",
+    "en": "Vegan Buddha bowl with grilled soy meat, daily deli and vegetables",
+    "price": "¥1,300",
+    "section": "Lunch",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "City tourism page (undated, before the September 2026 renewal). Glaze is a sweet-savoury tare — ask about soy sauce.",
+    "dish_key": "buddha_bowl"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Plant-based drink (with lunch)",
+    "price": "¥250",
+    "section": "Drinks",
+    "gf": "",
+    "vegan": "vegan",
+    "note": "City tourism page.",
+    "dish_key": "plant_drink"
+   }
+  ]
+ },
+ "tokyo3_revive_kitchen_three_hibiy": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.threecosmetics.com/cms/img/usr/revive-kitchen/202609/dinner.pdf",
+   "https://www.threecosmetics.com/cms/img/usr/revive-kitchen/202609/lunch.pdf"
+  ],
+  "price_note": "From the restaurant's own September 2026 lunch and dinner menus, with prices and its own VG / GF / allergen marks. The menu changes monthly, and THREE posts a new PDF each season.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "秋野菜のベジミールスタンド",
+    "romaji": "aki yasai no bejimiiru sutando",
+    "en": "Autumn veggie meal stand (kombucha, nine small dishes, black-rice multigrain rice, clear soup)",
+    "price": "¥4,290",
+    "section": "Set",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; takeaway possible. Dessert set +¥880.",
+    "dish_key": "veggie_meal_stand"
+   },
+   {
+    "ja": "秋野菜スープカレー カルダモンクリーム添え",
+    "romaji": "aki yasai suupu karee",
+    "en": "Autumn vegetable soup curry with cardamom cream",
+    "price": "¥2,420",
+    "section": "Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "soup_curry"
+   },
+   {
+    "ja": "腸活ビビンパ",
+    "romaji": "choukatsu bibinpa",
+    "en": "Fermented-food bibimbap",
+    "price": "¥2,420",
+    "section": "Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; takeaway possible.",
+    "dish_key": "bibimbap"
+   },
+   {
+    "ja": "ベジミートタコライス",
+    "romaji": "bejimiito tako raisu",
+    "en": "Soy-meat taco rice with papad chips",
+    "price": "¥2,200",
+    "section": "Rice",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; takeaway possible.",
+    "dish_key": "taco_rice"
+   },
+   {
+    "ja": "ヴィーガンヌードル",
+    "romaji": "vegan nuudoru",
+    "en": "Vegan noodle (kombu-mushroom-vegetable dashi, soy-sauce soup; Hashizume Seimen noodles)",
+    "price": "¥2,200",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Flagged 小麦 (wheat). The dinner menu also prints 'VG/GF' on it — a contradiction; treat as wheat.",
+    "dish_key": "vegan_noodle"
+   },
+   {
+    "ja": "ケールとアボカドのメランジェサラダ",
+    "romaji": "keeru to abokado no meranje sarada",
+    "en": "Kale and avocado mélange salad plate (lunch, with soup)",
+    "price": "¥2,200",
+    "section": "Lunch",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; lunch menu.",
+    "dish_key": "kale_salad"
+   },
+   {
+    "ja": "季節のフルーツと豆乳ブランマンジェのカプレーゼ仕立て",
+    "romaji": "kisetsu no furuutsu to tounyuu buranmanje",
+    "en": "Seasonal fruit and soy-milk blancmange \"caprese\"",
+    "price": "¥1,650",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "blancmange_caprese"
+   },
+   {
+    "ja": "東京野菜のエチュベ トマトソースと",
+    "romaji": "toukyou yasai no echube",
+    "en": "Étuvée of Tokyo vegetables with tomato sauce",
+    "price": "¥1,980",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "etuvee"
+   },
+   {
+    "ja": "そばがき 茸クリームソース",
+    "romaji": "sobagaki",
+    "en": "Soba-gaki with mushroom cream sauce",
+    "price": "¥1,430",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; buckwheat (蕎麦) allergen.",
+    "dish_key": "sobagaki"
+   },
+   {
+    "ja": "アンティパストミスト",
+    "romaji": "antipasuto misuto",
+    "en": "Antipasto misto",
+    "price": "¥2,750",
+    "section": "A la carte",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "VG; flagged 小麦.",
+    "dish_key": "antipasto"
+   },
+   {
+    "ja": "炙り豆乳チーズ",
+    "romaji": "aburi tounyuu chiizu",
+    "en": "Seared soy-milk cheese",
+    "price": "¥660",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "soy_cheese"
+   },
+   {
+    "ja": "ドライフルーツ＆素焼きナッツの盛り合わせ",
+    "romaji": "dorai furuutsu to suyaki nattsu",
+    "en": "Dried fruit and roasted nuts",
+    "price": "¥660",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; walnut (胡桃).",
+    "dish_key": "nuts"
+   },
+   {
+    "ja": "赤キャベツとオレンジのマリネ",
+    "romaji": "aka kyabetsu to orenji no marine",
+    "en": "Red cabbage and orange marinade",
+    "price": "¥880",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "cabbage_marinade"
+   },
+   {
+    "ja": "ヴィーガンハムカツ",
+    "romaji": "vegan hamukatsu",
+    "en": "Vegan ham-katsu",
+    "price": "¥1,078",
+    "section": "A la carte",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "VG; flagged 小麦 (breaded).",
+    "dish_key": "vegan_ham_katsu"
+   },
+   {
+    "ja": "ポテトフライ",
+    "romaji": "poteto furai",
+    "en": "Fried potatoes",
+    "price": "¥1,078",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; fryer arrangement not stated.",
+    "dish_key": "potato_fries"
+   },
+   {
+    "ja": "ピリ辛スパイスポテトフライ",
+    "romaji": "pirikara supaisu poteto furai",
+    "en": "Spicy fried potatoes",
+    "price": "¥1,078",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; fryer arrangement not stated.",
+    "dish_key": "spicy_fries"
+   },
+   {
+    "ja": "本日のサラダ",
+    "romaji": "honjitsu no sarada",
+    "en": "Salad of the day",
+    "price": "¥1,430",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "salad_of_day"
+   },
+   {
+    "ja": "自家製豆腐のすじ青のりフリット",
+    "romaji": "jikasei toufu no sujiaonori furitto",
+    "en": "House tofu fritto with green laver",
+    "price": "¥1,430",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; fryer arrangement not stated.",
+    "dish_key": "tofu_fritto"
+   },
+   {
+    "ja": "黒アワビ茸のロースト バルサミコソース",
+    "romaji": "kuro awabitake no roosuto",
+    "en": "Roast black abalone mushroom, balsamic",
+    "price": "¥1,650",
+    "section": "A la carte",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "mushroom_roast"
+   },
+   {
+    "ja": "バゲット",
+    "romaji": "bagetto",
+    "en": "Baguette",
+    "price": "¥330",
+    "section": "A la carte",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "VG; flagged 小麦.",
+    "dish_key": "baguette"
+   },
+   {
+    "ja": "キャロットケーキ 白あんフロスティング",
+    "romaji": "kyarotto keeki shiroan furosutingu",
+    "en": "Carrot cake with white-bean frosting",
+    "price": "¥990",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "VG; flagged 小麦.",
+    "dish_key": "carrot_cake"
+   },
+   {
+    "ja": "ソイレアチーズケーキ 葡萄のソース",
+    "romaji": "soi rea chiizu keeki",
+    "en": "Soy rare cheesecake, grape sauce",
+    "price": "¥990",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "soy_cheesecake"
+   },
+   {
+    "ja": "焼き林檎 タタン風",
+    "romaji": "yaki ringo tatan fuu",
+    "en": "Baked apple, tatin style",
+    "price": "¥1,100",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; walnut.",
+    "dish_key": "baked_apple"
+   },
+   {
+    "ja": "洋梨とベリーのパルフェ",
+    "romaji": "younashi to berii no parufe",
+    "en": "Pear and berry parfait (dinner)",
+    "price": "¥1,650",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF; walnut.",
+    "dish_key": "pear_parfait"
+   },
+   {
+    "ja": "秋の味覚とモンブランのパルフェ",
+    "romaji": "aki no mikaku to monburan no parufe",
+    "en": "Autumn Mont Blanc parfait (dinner)",
+    "price": "¥1,650",
+    "section": "Dessert",
+    "gf": "gf",
+    "vegan": "vegan",
+    "note": "VG/GF.",
+    "dish_key": "montblanc_parfait"
+   }
+  ]
  }
 }
