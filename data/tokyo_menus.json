@@ -165533,5 +165533,472 @@
     "dish_key": "pudding_takeaway"
    }
   ]
+ },
+ "tokyo_ginza_manpuku": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://san-tatsu.jp/articles/270659/",
+   "https://gendai.media/articles/-/115422",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13002324/dtlrvwlst/B519332110/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13002324/dtlrvwlst/B537523131/"
+  ],
+  "price_note": "No published menu. The two prices come from the 2023 san-tatsu feature, and the beer from an October 2026 review. Other dishes are known by name only.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "中華そば",
+    "romaji": "chuuka soba",
+    "en": "Chuka soba (shoyu; triangle omelette, naruto, spinach, menma)",
+    "price": "¥800",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2023 price.",
+    "dish_key": "chuka_soba"
+   },
+   {
+    "ja": "ポークライス",
+    "romaji": "pooku raisu",
+    "en": "Pork rice — ketchup fried rice with chashu (the last Western dish)",
+    "price": "¥950",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2023 price.",
+    "dish_key": "pork_rice"
+   },
+   {
+    "ja": "やきめし",
+    "romaji": "yakimeshi",
+    "en": "Fried rice",
+    "price": "",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2023 feature.",
+    "dish_key": "fried_rice"
+   },
+   {
+    "ja": "レバニラ炒め",
+    "romaji": "reba nira itame",
+    "en": "Liver and garlic-chive stir-fry",
+    "price": "",
+    "section": "Set meals",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2023 feature; ordered October 2026.",
+    "dish_key": "reba_nira"
+   },
+   {
+    "ja": "エビ玉",
+    "romaji": "ebi tama",
+    "en": "Prawn omelette",
+    "price": "",
+    "section": "Set meals",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2023 feature.",
+    "dish_key": "ebi_tama"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Gyoza (very large)",
+    "price": "",
+    "section": "Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "ゴマだれ冷やし中華",
+    "romaji": "gomadare hiyashi chuuka",
+    "en": "Cold chuka noodles with sesame sauce",
+    "price": "",
+    "section": "Noodles",
+    "gf": "no",
+    "vegan": "",
+    "note": "Gendai feature.",
+    "dish_key": "hiyashi_chuka_goma"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Bottled beer (medium)",
+    "price": "¥600",
+    "section": "Drinks",
+    "gf": "no",
+    "vegan": "",
+    "note": "October 2026 review. Beer is brewed from barley malt.",
+    "dish_key": "beer"
+   }
+  ]
+ },
+ "tokyo_ginza_funamizaka": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://san-tatsu.jp/articles/271754/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13004985/dtlrvwlst/B123993530/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13004985/dtlrvwlst/B462208328/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13004985/dtlrvwlst/B481497166/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13004985/dtlrvwlst/B532992196/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13004985/dtlrvwlst/B504957411/"
+  ],
+  "price_note": "No published menu. Prices come from the 2023 feature (shio soba) and from what Tabelog reviewers paid in September–October 2026.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "塩そば",
+    "romaji": "shio soba",
+    "en": "Shio soba (Hakodate-style salt ramen)",
+    "price": "¥800",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2023 price.",
+    "dish_key": "shio_soba"
+   },
+   {
+    "ja": "特製塩そば",
+    "romaji": "tokusei shio soba",
+    "en": "Special shio soba",
+    "price": "¥1,200",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Paid by Tabelog reviewers, September 2026.",
+    "dish_key": "tokusei_shio_soba"
+   },
+   {
+    "ja": "味噌らーめん",
+    "romaji": "miso raamen",
+    "en": "Miso ramen (slightly thicker wavy noodles)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "A reviewer paid ¥1,200 with corn and nori added, September 2026.",
+    "dish_key": "miso_ramen"
+   },
+   {
+    "ja": "つけそば",
+    "romaji": "tsuke soba",
+    "en": "Tsukesoba (salt dipping broth)",
+    "price": "¥1,100",
+    "section": "Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tabelog reviewer, September 2026.",
+    "dish_key": "tsukesoba"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Clam (asari) soba",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "On the menu per 2026 reviewers.",
+    "dish_key": "asari_soba"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Seafood wonton noodles",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "On the menu per 2026 reviewers.",
+    "dish_key": "seafood_wonton_men"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Tanmen",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "tanmen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Handmade gyoza",
+    "price": "",
+    "section": "Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2023 feature; 2026 reviews.",
+    "dish_key": "gyoza"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Hakodate mini rice bowl (Hokkaido seafood)",
+    "price": "",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "2023 feature.",
+    "dish_key": "hakodate_mini_don"
+   }
+  ]
+ },
+ "tokyo_yurakucho_tani_ramen": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130102/13022529/dtlrvwlst/B488974908/",
+   "https://tabelog.com/en/tokyo/A1301/A130102/13022529/dtlrvwlst/B535730540/",
+   "https://tabelog.com/en/tokyo/A1301/A130102/13022529/dtlrvwlst/B535593959/",
+   "https://tabelog.com/en/tokyo/A1301/A130102/13022529/dtlrvwlst/B535309406/"
+  ],
+  "price_note": "No published menu; prices are what Tabelog reviewers paid in September–October 2026. Names come from machine-translated reviews.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "ラーメン",
+    "romaji": "raamen",
+    "en": "Ramen (clear pork-bone and chicken shoyu)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Ramen + half fried rice",
+    "price": "¥1,140",
+    "section": "Sets",
+    "gf": "no",
+    "vegan": "no",
+    "note": "¥1,140–1,190 paid in 2026.",
+    "dish_key": "ramen_half_chahan"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Wonton-men",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026 review.",
+    "dish_key": "wonton_men"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Chashu wonton-men",
+    "price": "¥1,050",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026 review.",
+    "dish_key": "chashu_wonton_men"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Chashu ramen",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "chashu_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Fried rice",
+    "price": "¥800",
+    "section": "Rice",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "September 2026 review.",
+    "dish_key": "fried_rice"
+   }
+  ]
+ },
+ "tokyo_hibiya_horan": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130102/13002736/dtlrvwlst/B534865592/",
+   "https://tabelog.com/en/tokyo/A1301/A130102/13002736/dtlrvwlst/B536746263/",
+   "https://tabelog.com/en/tokyo/A1301/A130102/13002736/dtlrvwlst/B535579995/",
+   "https://tabelog.com/en/tokyo/A1301/A130102/13002736/dtlrvwlst/B536747442/"
+  ],
+  "price_note": "No published menu; prices are what Tabelog reviewers paid in September–October 2026, from machine-translated reviews.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Miso shumai ramen (two large shumai in the bowl)",
+    "price": "¥1,600",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026 review.",
+    "dish_key": "miso_shumai_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Miso butter ramen",
+    "price": "¥1,350",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "October 2026 review; butter at no extra cost.",
+    "dish_key": "miso_butter_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Shoyu butter ramen",
+    "price": "¥1,350",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "October 2026 review.",
+    "dish_key": "shoyu_butter_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Curry ramen (curry made with the ramen broth)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "ask",
+    "note": "September–October 2026 reviews.",
+    "dish_key": "curry_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Wonton noodles (shoyu)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "wonton_men"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Braised pork ramen (about 15 minutes)",
+    "price": "",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026 review.",
+    "dish_key": "kakuni_ramen"
+   }
+  ]
+ },
+ "tokyo_ginza_bonten": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://san-tatsu.jp/articles/272180/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13126793/dtlrvwlst/B537015263/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13126793/dtlrvwlst/B536603233/"
+  ],
+  "price_note": "No published menu. 2023 prices come from the san-tatsu feature, and two 2026 prices from Tabelog reviews.",
+  "last_checked": "2026-10-24",
+  "items": [
+   {
+    "ja": "つけそば 麻辛丸(並)",
+    "romaji": "tsukesoba mashingan",
+    "en": "Machine-gun spicy tsukesoba (regular)",
+    "price": "¥980",
+    "section": "Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2023 price; registered trademark.",
+    "dish_key": "mashingan_tsukesoba"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Large tsukemen",
+    "price": "¥1,080",
+    "section": "Tsukemen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "tsukemen_large"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Marutoku ramen",
+    "price": "¥1,100",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026 review.",
+    "dish_key": "marutoku_ramen"
+   },
+   {
+    "ja": "和風ラーメン",
+    "romaji": "wafuu raamen",
+    "en": "Japanese-style ramen (very light soup, ultra-thin noodles)",
+    "price": "¥950",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "2023 price.",
+    "dish_key": "wafu_ramen"
+   },
+   {
+    "ja": "追加チャーシュー",
+    "romaji": "tsuika chaashuu",
+    "en": "Extra pork-loin chashu",
+    "price": "¥400",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "2023 price.",
+    "dish_key": "chashu_extra"
+   },
+   {
+    "ja": "味玉",
+    "romaji": "ajitama",
+    "en": "Seasoned egg",
+    "price": "¥150",
+    "section": "Toppings",
+    "gf": "",
+    "vegan": "no",
+    "note": "2023 price.",
+    "dish_key": "ajitama"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Gyoza",
+    "price": "",
+    "section": "Sides",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Listed on Tabelog categories.",
+    "dish_key": "gyoza"
+   }
+  ]
  }
 }
