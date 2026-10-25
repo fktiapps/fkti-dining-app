@@ -11,6 +11,7 @@
  */
 import fs from 'node:fs';
 import { CITIES, readCity } from './lib-city.mjs';
+import { isSundayFirst } from './fix-hours-sunday-first.mjs';
 import { GF_LABEL as GF_LABELS, VEGAN_LABEL, GF_TIERS, VEGAN_TIERS, readTierWrites } from './lib-tiers.mjs';
 
 const errors = [], warnings = [];
@@ -78,6 +79,9 @@ for (const city of CITIES) {
     if (!GF_CONF.has(r.gf_confidence)) err(city, `${at}: bad gf_confidence "${r.gf_confidence}"`);
     if (!VEGAN.has(r.vegan_status)) err(city, `${at}: bad vegan_status "${r.vegan_status}"`);
     if (r.hours_status && !HOURS_ST.has(r.hours_status)) warn(city, `${at}: unusual hours_status "${r.hours_status}"`);
+    // hours keys are Monday-first (index.html DAYNAME); 66 early records were stored
+    // Sunday-first and showed every day one off (fixed by fix-hours-sunday-first.mjs).
+    if (isSundayFirst(r)) warn(city, `${at}: hours look Sunday-first — the days hours_raw calls closed line up only if key 0 is Sunday (keys are Mon=0)`);
 
     if (typeof r.lat !== 'number' || typeof r.lng !== 'number') err(city, `${at}: non-numeric coords`);
     // Hidden records are exempt, because fit-bounds.mjs excludes them when it computes
