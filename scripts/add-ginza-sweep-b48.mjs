@@ -139,7 +139,7 @@ const { put, save } = openSweep(TODAY);
   const TB = 'https://tabelog.com/en/tokyo/A1301/A130101/13310790/'; const R = TB + 'dtlrvwlst/';
   const d = day(['17:00', '23:00']);
   put({
-    id: 'tokyo_lazur_tunisian_higashi_ginza', name: 'LAZUR (ラズール)', category: 'OMNI',
+    id: 'tokyo_lazur_tunisian_higashi_ginza', name: 'LAZUR (ラジュール)', category: 'OMNI',
     lat: 35.670786, lng: 139.769491,
     gf_confidence: 'no', gf_label: 'Not gluten-free', gf_detail: 'Not gluten-free as described: Tunisian couscous (wheat semolina) and tuna brik in pastry are signatures; harissa, hummus and salads are not described ingredient by ingredient.',
     vegan_status: 'ask', vegan_label: 'Vegan — ask', vegan_detail: 'Ask. Hummus and some salads may suit, but the classic course has chicken couscous and tuna brik, the houiriya salad comes with sardines, and moussaka has meat sauce and cheese.',

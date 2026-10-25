@@ -12,7 +12,7 @@ const { put, save } = openSweep(TODAY);
   const TB = 'https://tabelog.com/en/tokyo/A1301/A130101/13308892/'; const R = TB + 'dtlrvwlst/';
   const d = day(['19:00', '23:00']);
   put({
-    id: 'tokyo_giovanni_ginza8', name: 'Giovanni (ジョヴァンニ)', category: 'MOM_AND_POP',
+    id: 'tokyo_giovanni_ginza8', name: 'Giovanni', category: 'MOM_AND_POP',
     lat: 35.666303, lng: 139.763251,
     gf_confidence: 'no', gf_label: 'Not gluten-free',
     gf_detail: 'Not gluten-free: a fixed Italian course of pastas (heart-shaped ravioli, capellini, shrimp-broth pasta), fried tortafritta and risotto; no gluten-free option is mentioned.',

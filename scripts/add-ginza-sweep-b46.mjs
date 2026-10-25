@@ -97,7 +97,7 @@ const { put, save } = openSweep(TODAY);
   const TB = 'https://tabelog.com/en/tokyo/A1301/A130101/13144110/'; const R = TB + 'dtlrvwlst/';
   const d = day(['18:00', '23:00']);
   put({
-    id: 'tokyo_le_bonze_higashi_ginza', name: 'Le Bonze (ル・ボンズ)', category: 'OMNI',
+    id: 'tokyo_le_bonze_higashi_ginza', name: 'Le Bonze (ルボーズ)', category: 'OMNI',
     lat: 35.670764, lng: 139.767633,
     gf_confidence: 'no', gf_label: 'Not gluten-free', gf_detail: 'Not gluten-free in practice: bistro dishes such as the crisp "Bird\'s Nest", couscous with squid ink and spring rolls; no gluten-free option is mentioned.',
     vegan_status: 'no', vegan_label: 'Not vegan', vegan_detail: 'Not vegan: lamb, lobster, horse mackerel, squid and pig\'s trotters.',
