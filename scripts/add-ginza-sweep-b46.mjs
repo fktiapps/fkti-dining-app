@@ -113,7 +113,7 @@ const { put, save } = openSweep(TODAY);
         { text: '"I visited to try the roasted lamb chop. I ordered the signature Bird\'s Nest… I really enjoyed the crispy texture of the Bird\'s Nest." — May 2026.', source: R + 'B417461332/' },
         { text: '"For the Omakase course, please contact us by phone at least a day in advance." — August 2026.', source: R + 'B534327088/' },
       ],
-      japanese_sources_summary: '食べログ: Le Bonze、銀座4-10-1 銀座AZAビル3F、東銀座駅A2出口から徒歩2分、15席、月〜土18:00〜23:00、日休、2012年7月17日開店、カード・d払い可。2026年の口コミ: レストラン級のビストロ、仔羊のロースト、名物「Bird's Nest」、鯵と蕪のマリネ、ヤリイカ、イカ墨のクスクス、鮎の春巻き、海老と豚足のコンフィ、夏のガスパチョ、8月のおまかせ(鮎並のすだちマリネ、オマール海老のロースト、仔羊、桃のコンポートとミントのグラニテ)、おまかせは前日までに電話予約、1〜2万円。',
+      japanese_sources_summary: '食べログ: Le Bonze、銀座4-10-1 銀座AZAビル3F、東銀座駅A2出口から徒歩2分、15席、月〜土18:00〜23:00、日休、2012年7月17日開店、カード・d払い可。2026年の口コミ: レストラン級のビストロ、仔羊のロースト、名物「Bird’s Nest」、鯵と蕪のマリネ、ヤリイカ、イカ墨のクスクス、鮎の春巻き、海老と豚足のコンフィ、夏のガスパチョ、8月のおまかせ(鮎並のすだちマリネ、オマール海老のロースト、仔羊、桃のコンポートとミントのグラニテ)、おまかせは前日までに電話予約、1〜2万円。',
       confidence: 'low', sources: [TB, R + 'B417461332/', R + 'B534327088/', R + 'B529841434/', R + 'B523982644/'] },
     cultural_comfort: { level: 'konnichiwa', note: 'Quiet third-floor room; phone ahead for the omakase.' },
     safety: { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_wheat: [], vegan_cross_contact: [], staff_allergy_handling: [], positives: [], confidence: 'low', last_checked: TODAY },
@@ -127,11 +127,11 @@ const { put, save } = openSweep(TODAY);
       it('イカ墨のクスクス', 'ikasumi no kusukusu', 'Couscous with squid ink', '', 'Starters', 'no', 'no', '', 'squid_couscous'),
       it('おまかせコース', 'omakase koosu', 'Omakase (book by phone a day ahead)', '', 'Courses', 'ask', 'no', '', 'omakase'),
     ] }, {
-    cuisine: '2012年からの東銀座のビストロ・仔羊のロースト、名物「Bird's Nest」、イカ墨のクスクス・夏のガスパチョ',
+    cuisine: '2012年からの東銀座のビストロ・仔羊のロースト、名物「Bird’s Nest」、イカ墨のクスクス・夏のガスパチョ',
     neighborhood: '銀座四丁目、銀座AZAビル3F。東銀座駅A2出口から徒歩2分',
-    gf_detail: '実際上グルテンフリーではありません。カリカリの名物「Bird's Nest」、イカ墨のクスクス、春巻きなどのビストロ料理で、グルテンフリーの選択肢は記載がありません。',
+    gf_detail: '実際上グルテンフリーではありません。カリカリの名物「Bird’s Nest」、イカ墨のクスクス、春巻きなどのビストロ料理で、グルテンフリーの選択肢は記載がありません。',
     vegan_detail: 'ヴィーガンではありません。仔羊、オマール海老、鯵、イカ、豚足。',
-    notes: '[ビストロ・東銀座の仔羊のロースト] 東銀座のビル3階、2012年7月開店の落ち着いたビストロで、2026年の口コミでは「レストラン級の料理を出すビストロ」。4回通う常連のお目当ては、外はカリッと中はジューシーな仔羊のローストと、名物のカリカリの「Bird's Nest」。鯵と蕪のマリネ、ヤリイカ、イカ墨のクスクス、鮎の春巻き、海老と豚足のコンフィ、毎年常連が楽しみにする夏のガスパチョも。2026年8月のおまかせは、すだち風味の鮎並のマリネ、オマール海老のロースト、仔羊のロースト、ミントのグラニテと桃のコンポート。おまかせは前日までに電話で予約を。予算は1〜2万円ほど。',
+    notes: '[ビストロ・東銀座の仔羊のロースト] 東銀座のビル3階、2012年7月開店の落ち着いたビストロで、2026年の口コミでは「レストラン級の料理を出すビストロ」。4回通う常連のお目当ては、外はカリッと中はジューシーな仔羊のローストと、名物のカリカリの「Bird’s Nest」。鯵と蕪のマリネ、ヤリイカ、イカ墨のクスクス、鮎の春巻き、海老と豚足のコンフィ、毎年常連が楽しみにする夏のガスパチョも。2026年8月のおまかせは、すだち風味の鮎並のマリネ、オマール海老のロースト、仔羊のロースト、ミントのグラニテと桃のコンポート。おまかせは前日までに電話で予約を。予算は1〜2万円ほど。',
   });
 }
 
