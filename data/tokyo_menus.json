@@ -181505,5 +181505,250 @@
     "dish_key": "doria"
    }
   ]
+ },
+ "tokyo_toriyoshi_ginza": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13016582/dtlrvwlst/B537491577/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13016582/dtlrvwlst/B513629183/"
+  ],
+  "price_note": "No skewer prices captured; seating fee from Tabelog, ¥21,000 for two with drinks (October 2026).",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "おまかせ(ストップ制)",
+    "romaji": "",
+    "en": "Omakase yakitori, stop when full",
+    "price": "",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "October 2026.",
+    "dish_key": "omakase"
+   },
+   {
+    "ja": "ちょうちん",
+    "romaji": "chōchin",
+    "en": "Chōchin (oviduct with unlaid yolk)",
+    "price": "",
+    "section": "Skewers",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Sells out.",
+    "dish_key": "chochin"
+   },
+   {
+    "ja": "首",
+    "romaji": "kubi",
+    "en": "Chicken neck",
+    "price": "",
+    "section": "Skewers",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "neck"
+   },
+   {
+    "ja": "席料",
+    "romaji": "",
+    "en": "Seating fee",
+    "price": "¥1,000",
+    "section": "Charge",
+    "gf": "",
+    "vegan": "",
+    "note": "Tabelog.",
+    "dish_key": "seat_fee"
+   }
+  ]
+ },
+ "tokyo_sumiyaki_ginza_matsumoto": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13258683/dtlrvwlst/B537082066/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13258683/"
+  ],
+  "price_note": "Hamburg price from a September 2026 review; lunch course from the Tabelog listing.",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "和牛ハンバーグ 200g",
+    "romaji": "",
+    "en": "Charcoal-grilled 100% Wagyu hamburg, 200 g, three sauces",
+    "price": "¥2,300",
+    "section": "Lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "September 2026.",
+    "dish_key": "hamburg200"
+   },
+   {
+    "ja": "炭火焼き黒毛和牛100%ハンバーグ ランチコース",
+    "romaji": "",
+    "en": "Lunch course: appetizers, consommé, Wagyu hamburg, curry rice",
+    "price": "¥3,000",
+    "section": "Lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Tabelog listing.",
+    "dish_key": "lunch_course"
+   },
+   {
+    "ja": "カバーチャージ",
+    "romaji": "",
+    "en": "Dinner cover charge",
+    "price": "¥500",
+    "section": "Charge",
+    "gf": "",
+    "vegan": "",
+    "note": "Tabelog.",
+    "dish_key": "cover"
+   }
+  ]
+ },
+ "tokyo_nibun_no_ichi_ginza_sony_park": {
+  "verified": "authoritative",
+  "confidence": "high",
+  "sources": [
+   "https://www.ginzasonypark.com/nibunnoichi/"
+  ],
+  "price_note": "Official menu page as fetched 2026-10-25 (tax included).",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "ひよこ豆とそら豆のファラフェルステーキ",
+    "romaji": "",
+    "en": "Chickpea and fava-bean falafel steak [vegan]",
+    "price": "¥800",
+    "section": "À la carte",
+    "gf": "ask",
+    "vegan": "yes",
+    "note": "Labelled vegan.",
+    "dish_key": "falafel"
+   },
+   {
+    "ja": "舞茸のフムス",
+    "romaji": "",
+    "en": "Maitake hummus [vegan]",
+    "price": "¥800",
+    "section": "À la carte",
+    "gf": "ask",
+    "vegan": "yes",
+    "note": "Labelled vegan.",
+    "dish_key": "hummus"
+   },
+   {
+    "ja": "大人のナポリタン × タマゴたまごサンド",
+    "romaji": "",
+    "en": "Napolitan with king-oyster mushroom × egg sandwich",
+    "price": "¥1,200",
+    "section": "1/2 plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "napolitan_egg"
+   },
+   {
+    "ja": "銀座味噌カレー × 銀座カツトースト",
+    "romaji": "",
+    "en": "Ginza miso spice curry × katsu toast",
+    "price": "¥1,600",
+    "section": "1/2 plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "curry_katsu"
+   },
+   {
+    "ja": "クラシックオムライス × 牛バラハヤシライス",
+    "romaji": "",
+    "en": "Classic omurice × beef-belly hayashi rice",
+    "price": "¥1,600",
+    "section": "1/2 plates",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "omurice_hayashi"
+   },
+   {
+    "ja": "半熟卵 on ハンバーグ × かにクリームコロッケ",
+    "romaji": "",
+    "en": "Hamburg with soft egg × crab-cream croquette",
+    "price": "¥1,900",
+    "section": "1/2 plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "hamburg_croquette"
+   },
+   {
+    "ja": "三種のきのこのドリア × 銀座牛カツトースト",
+    "romaji": "",
+    "en": "Three-mushroom doria × beef-katsu toast",
+    "price": "¥2,800",
+    "section": "1/2 plates",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "doria_gyukatsu"
+   },
+   {
+    "ja": "プリン・ア・ラ・モード",
+    "romaji": "",
+    "en": "Pudding à la mode",
+    "price": "¥800",
+    "section": "Desserts",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "pudding"
+   }
+  ]
+ },
+ "tokyo_hakone_akatsukian_ginza_mitsukoshi": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13115793/dtlrvwlst/B537848491/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13115793/dtlrvwlst/B536274035/"
+  ],
+  "price_note": "Tororo zaru price from an October 2026 review.",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "とろろざる",
+    "romaji": "tororo zaru",
+    "en": "Chilled soba with grated yam",
+    "price": "¥1,800",
+    "section": "Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026.",
+    "dish_key": "tororo_zaru"
+   },
+   {
+    "ja": "黒いそば",
+    "romaji": "",
+    "en": "Charcoal-black soba",
+    "price": "",
+    "section": "Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026.",
+    "dish_key": "black_soba"
+   },
+   {
+    "ja": "鴨つけそば",
+    "romaji": "",
+    "en": "Duck dipping soba",
+    "price": "",
+    "section": "Soba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026.",
+    "dish_key": "kamo_tsuke"
+   }
+  ]
  }
 }
