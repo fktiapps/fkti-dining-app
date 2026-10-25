@@ -78,7 +78,7 @@ const { put, save } = openSweep(TODAY);
     pin_source: `Tabelog ${TB}; cross-checked: GSI 東京都中央区銀座二丁目4番6号 (go) 41m; ${TODAY}`,
   }, { verified: 'provisional', confidence: 'medium', sources: [R + 'B537273642/', R + 'B537682850/'],
     price_note: 'Prices from October 2026 reviews.', last_checked: TODAY, items: [
-      it('ダブルエスプレッソ', '', 'Double espresso', '¥600', 'Coffee', 'gf', 'gf', 'October 2026.', 'espresso'),
+      it('ダブルエスプレッソ', '', 'Double espresso', '¥600', 'Coffee', 'gf', 'vegan', 'October 2026.', 'espresso'),
       it('ビスコッティ', 'bisukottei', 'Biscotti', '¥300', 'Sweets', 'no', 'no', 'October 2026.', 'biscotti'),
       it('ボロネーゼのランチセット', '', 'Bolognese lunch set with salad and gelato', '', 'Lunch', 'no', 'no', 'October 2026; set drink ¥200.', 'bolognese_lunch'),
     ] }, {

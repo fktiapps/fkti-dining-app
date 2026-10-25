@@ -123,8 +123,8 @@ const { put, save } = openSweep(TODAY);
     pin_source: `Tabelog ${TB}; cross-checked: GSI 東京都中央区銀座五丁目3番1号 (go) 25m; ${TODAY}`,
   }, { verified: 'authoritative', confidence: 'high', sources: [SITE],
     price_note: 'Official menu page as fetched 2026-10-25 (tax included).', last_checked: TODAY, items: [
-      it('ひよこ豆とそら豆のファラフェルステーキ', '', 'Chickpea and fava-bean falafel steak [vegan]', '¥800', 'À la carte', 'ask', 'yes', 'Labelled vegan.', 'falafel'),
-      it('舞茸のフムス', '', 'Maitake hummus [vegan]', '¥800', 'À la carte', 'ask', 'yes', 'Labelled vegan.', 'hummus'),
+      it('ひよこ豆とそら豆のファラフェルステーキ', '', 'Chickpea and fava-bean falafel steak [vegan]', '¥800', 'À la carte', 'ask', 'vegan', 'Labelled vegan.', 'falafel'),
+      it('舞茸のフムス', '', 'Maitake hummus [vegan]', '¥800', 'À la carte', 'ask', 'vegan', 'Labelled vegan.', 'hummus'),
       it('大人のナポリタン × タマゴたまごサンド', '', 'Napolitan with king-oyster mushroom × egg sandwich', '¥1,200', '1/2 plates', 'no', 'no', '', 'napolitan_egg'),
       it('銀座味噌カレー × 銀座カツトースト', '', 'Ginza miso spice curry × katsu toast', '¥1,600', '1/2 plates', 'no', 'no', '', 'curry_katsu'),
       it('クラシックオムライス × 牛バラハヤシライス', '', 'Classic omurice × beef-belly hayashi rice', '¥1,600', '1/2 plates', 'ask', 'no', '', 'omurice_hayashi'),

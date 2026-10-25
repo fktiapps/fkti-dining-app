@@ -166448,36 +166448,189 @@
   ]
  },
  "tokyo_chaya_natural_wild_table_hibiya": {
-  "verified": "provisional",
-  "confidence": "low",
+  "verified": "authoritative",
+  "confidence": "high",
   "sources": [
-   "https://visit-chiyoda.tokyo/app/spot/detail/925",
-   "https://chayam.co.jp/restaurant/hibiya/"
+   "https://chayam.co.jp/wp/wp-content/uploads/2026/10/HBY_lunch2610.pdf"
   ],
-  "price_note": "The shop's menu tabs (lunch, dinner, dessert, drink) did not render text we could read, so only the dish named by the city tourism page is listed, at its pre-renewal price. The shop reopened on 1 September 2026.",
-  "last_checked": "2026-10-24",
+  "price_note": "Official lunch menu PDF, October 2026; prices excl. tax (incl. tax in brackets).",
+  "last_checked": "2026-10-25",
   "items": [
    {
-    "ja": "大豆ミートの炙り焼きのヴィーガンブッダボウル",
-    "romaji": "daizu miito no aburiyaki no vegan budda bouru",
-    "en": "Vegan Buddha bowl with grilled soy meat, daily deli and vegetables",
-    "price": "¥1,300",
-    "section": "Lunch",
-    "gf": "ask",
+    "ja": "SOY カツカレー",
+    "romaji": "",
+    "en": "SOY katsu curry [wheat, soy, peanut]",
+    "price": "¥1,350 (¥1,485)",
+    "section": "Rice",
+    "gf": "no",
     "vegan": "vegan",
-    "note": "City tourism page (undated, before the September 2026 renewal). Glaze is a sweet-savoury tare — ask about soy sauce.",
-    "dish_key": "buddha_bowl"
+    "note": "Labelled Vegan.",
+    "dish_key": "soy_katsu_curry"
    },
    {
-    "ja": "",
+    "ja": "SOY ボロネーゼ",
     "romaji": "",
-    "en": "Plant-based drink (with lunch)",
-    "price": "¥250",
-    "section": "Drinks",
-    "gf": "",
+    "en": "SOY Bolognese [wheat, soy]",
+    "price": "¥1,450 (¥1,595)",
+    "section": "Pasta",
+    "gf": "no",
     "vegan": "vegan",
-    "note": "City tourism page.",
-    "dish_key": "plant_drink"
+    "note": "Labelled Vegan.",
+    "dish_key": "soy_bolognese"
+   },
+   {
+    "ja": "６種野菜のペペロンチーノ",
+    "romaji": "",
+    "en": "Peperoncino with six vegetables [wheat, soy]",
+    "price": "¥1,400 (¥1,540)",
+    "section": "Pasta",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Labelled Vegan.",
+    "dish_key": "peperoncino"
+   },
+   {
+    "ja": "スパイス香るテリヤキ SOY カツバーガー",
+    "romaji": "",
+    "en": "Spicy teriyaki SOY katsu burger [wheat, soy, apple, sesame]",
+    "price": "¥1,250 (¥1,375)",
+    "section": "Burger & bread",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Labelled Vegan; vegan bread from EARTH BAKERY.",
+    "dish_key": "soy_katsu_burger"
+   },
+   {
+    "ja": "バゲット",
+    "romaji": "",
+    "en": "Baguette [wheat]",
+    "price": "¥300 (¥330)",
+    "section": "Burger & bread",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Labelled Vegan.",
+    "dish_key": "baguette"
+   },
+   {
+    "ja": "マグロステーキのマクロビボウル",
+    "romaji": "",
+    "en": "Macrobiotic bowl of tuna steak [wheat, soy, sesame]",
+    "price": "¥1,600 (¥1,760)",
+    "section": "Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled Seafood.",
+    "dish_key": "tuna_bowl"
+   },
+   {
+    "ja": "クラシックチキンライス",
+    "romaji": "",
+    "en": "Classic chicken rice [chicken, wheat, soy]",
+    "price": "¥1,200 (¥1,320)",
+    "section": "Rice",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "chicken_rice"
+   },
+   {
+    "ja": "和牛バーガー",
+    "romaji": "",
+    "en": "Wagyu burger [wheat, soy, apple, beef, sesame]",
+    "price": "¥2,100 (¥2,310)",
+    "section": "Burger & bread",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "wagyu_burger"
+   },
+   {
+    "ja": "広島産牡蠣とあさり、ムール貝のジェノベーゼ",
+    "romaji": "",
+    "en": "Hiroshima oyster, clam and mussel Genovese [wheat]",
+    "price": "¥1,650 (¥1,815)",
+    "section": "Pasta",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Labelled Seafood.",
+    "dish_key": "genovese"
+   },
+   {
+    "ja": "古代小麦を使用したワッフルと季節のフルーツ",
+    "romaji": "",
+    "en": "Ancient-wheat vegan waffles with seasonal fruit [wheat, soy, banana, kiwi, orange, almond]",
+    "price": "¥1,500 (¥1,650)",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Labelled Vegan.",
+    "dish_key": "vegan_waffles"
+   },
+   {
+    "ja": "季節の vegan プリン",
+    "romaji": "",
+    "en": "Seasonal vegan pudding [soy, almond]",
+    "price": "¥600 (¥660)",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Labelled Vegan; no wheat listed, but the kitchen handles wheat.",
+    "dish_key": "vegan_pudding"
+   },
+   {
+    "ja": "W ベリーのムースショートケーキ",
+    "romaji": "",
+    "en": "W-berry mousse shortcake [soy, almond]",
+    "price": "¥800 (¥880)",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Labelled Vegan; no wheat listed, but the kitchen handles wheat.",
+    "dish_key": "wberry_shortcake"
+   },
+   {
+    "ja": "グラスフルーツショートケーキ",
+    "romaji": "",
+    "en": "Grass fruit shortcake [soy, almond, kiwi, orange]",
+    "price": "¥850 (¥935)",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "vegan",
+    "note": "Labelled Vegan; no wheat listed, but the kitchen handles wheat.",
+    "dish_key": "grass_fruit_shortcake"
+   },
+   {
+    "ja": "抹茶チーズケーキ",
+    "romaji": "",
+    "en": "Matcha \"cheesecake\" [wheat, soy, almond]",
+    "price": "¥850 (¥935)",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Labelled Vegan.",
+    "dish_key": "matcha_cheesecake"
+   },
+   {
+    "ja": "キャロットケーキ",
+    "romaji": "",
+    "en": "Carrot cake [wheat, soy, walnut, apple]",
+    "price": "¥650 (¥715)",
+    "section": "Dessert",
+    "gf": "no",
+    "vegan": "vegan",
+    "note": "Labelled Vegan.",
+    "dish_key": "carrot_cake"
+   },
+   {
+    "ja": "なめらか濃厚プリン",
+    "romaji": "",
+    "en": "Smooth rich pudding [egg, milk]",
+    "price": "¥600 (¥660)",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "No wheat listed, but the kitchen handles wheat.",
+    "dish_key": "pudding"
    }
   ]
  },
@@ -180752,7 +180905,7 @@
     "price": "¥600",
     "section": "Coffee",
     "gf": "gf",
-    "vegan": "gf",
+    "vegan": "vegan",
     "note": "October 2026.",
     "dish_key": "espresso"
    },
@@ -181623,7 +181776,7 @@
     "price": "¥800",
     "section": "À la carte",
     "gf": "ask",
-    "vegan": "yes",
+    "vegan": "vegan",
     "note": "Labelled vegan.",
     "dish_key": "falafel"
    },
@@ -181634,7 +181787,7 @@
     "price": "¥800",
     "section": "À la carte",
     "gf": "ask",
-    "vegan": "yes",
+    "vegan": "vegan",
     "note": "Labelled vegan.",
     "dish_key": "hummus"
    },
@@ -182717,6 +182870,139 @@
     "vegan": "no",
     "note": "",
     "dish_key": "reimen"
+   }
+  ]
+ },
+ "tokyo_mutsukari_ginza": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13005014/dtlrvwlst/B535206424/",
+   "https://tabelog.com/en/tokyo/A1301/A130101/13005014/dtlrvwlst/B449858552/"
+  ],
+  "price_note": "No course prices captured; dinner ¥20,000–40,000 in reviews, plus 10% service.",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "おまかせコース",
+    "romaji": "",
+    "en": "Seasonal omakase course",
+    "price": "",
+    "section": "Courses",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "omakase"
+   },
+   {
+    "ja": "季節の煮こごり",
+    "romaji": "",
+    "en": "Seasonal nikogori terrine of ten vegetables",
+    "price": "",
+    "section": "Signature",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Tabelog listing.",
+    "dish_key": "nikogori"
+   },
+   {
+    "ja": "かき氷",
+    "romaji": "kakigōri",
+    "en": "Shaved ice (seasonal, e.g. pumpkin)",
+    "price": "",
+    "section": "Dessert",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "",
+    "dish_key": "kakigori"
+   }
+  ]
+ },
+ "tokyo_yasai_no_ousama_hibiya_chanter": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130102/13113958/dtlrvwlst/B537626168/"
+  ],
+  "price_note": "Set price from an October 2026 review.",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "やさいの王様定食",
+    "romaji": "",
+    "en": "Yasai no Ousama set: meat or fish, sweet-potato six-grain rice, miso soup, potato salad, glass salad, mini dessert",
+    "price": "¥2,260",
+    "section": "Set meals",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "October 2026.",
+    "dish_key": "ousama_set"
+   },
+   {
+    "ja": "デミグラスハンバーグ",
+    "romaji": "",
+    "en": "Demi-glace hamburg set",
+    "price": "",
+    "section": "Set meals",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026.",
+    "dish_key": "hamburg"
+   }
+  ]
+ },
+ "tokyo_yoshoku_grill_kimuraya_ginza": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/tokyo/A1301/A130101/13023058/dtlrvwlst/B503838074/"
+  ],
+  "price_note": "Prices from a September 2026 review.",
+  "last_checked": "2026-10-25",
+  "items": [
+   {
+    "ja": "ビーフシチュー",
+    "romaji": "biifu shichuu",
+    "en": "Beef stew with unlimited bread",
+    "price": "¥2,900",
+    "section": "Mains",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026.",
+    "dish_key": "beef_stew"
+   },
+   {
+    "ja": "グラタン",
+    "romaji": "guratan",
+    "en": "Shrimp and vegetable gratin",
+    "price": "¥2,480",
+    "section": "Mains",
+    "gf": "no",
+    "vegan": "no",
+    "note": "September 2026.",
+    "dish_key": "gratin"
+   },
+   {
+    "ja": "チキンと生ハムのサラダ",
+    "romaji": "",
+    "en": "Chicken and prosciutto salad",
+    "price": "¥1,900",
+    "section": "Salads",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "September 2026.",
+    "dish_key": "salad"
+   },
+   {
+    "ja": "かにクリームコロッケ",
+    "romaji": "",
+    "en": "Crab cream croquette",
+    "price": "",
+    "section": "Mains",
+    "gf": "no",
+    "vegan": "no",
+    "note": "",
+    "dish_key": "crab_croquette"
    }
   ]
  }

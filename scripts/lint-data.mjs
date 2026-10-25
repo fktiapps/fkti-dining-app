@@ -102,6 +102,12 @@ for (const city of CITIES) {
 
     if (!!r.has_menu !== !!menus[r.id])
       warn(city, `${at}: has_menu=${!!r.has_menu} but menus file ${menus[r.id] ? 'has' : 'lacks'} an entry`);
+    // counts() only recognises these values, so anything else (a b87 'yes', a b82 'gf' in
+    // the vegan field) silently drops the dish from menu_vegan_count / menu_gf_count.
+    for (const item of (menus[r.id] && Array.isArray(menus[r.id].items) ? menus[r.id].items : [])) {
+      if (!['gf', 'ask', 'no', '', undefined].includes(item.gf)) err(city, `${at}: menu item "${item.en || item.ja}" has gf "${item.gf}" (use gf/ask/no)`);
+      if (!['vegan', 'ask', 'no', '', undefined].includes(item.vegan)) err(city, `${at}: menu item "${item.en || item.ja}" has vegan "${item.vegan}" (use vegan/ask/no)`);
+    }
 
     // THE safety guard. A top-tier GF label is the only way this app can
     // over-promise to a celiac, so it must clear both gates:
