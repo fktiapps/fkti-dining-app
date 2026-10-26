@@ -71,8 +71,9 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 
 ## Phase pointer
 
-**Current phase: ramen** (crawl complete). Next: vegan seeds (HappyCow/FMGF/Vegewel), then mom.
+**Current phase: ramen** (lists crawled; shop pages: run `node scripts/sweep/crawl-shops.mjs osaka` until it reports 0 to fetch). Next batch: b2. After ramen thins out: vegan seeds (FMGF `/jp/osaka` page = 37 businesses, HappyCow `/asia/japan/osaka/`; Vegewel 403s), then mom.
 
 ## Log
 
-- 2026-10-26: infra (tools, config, queue, plan); ramen lists crawled (742 ids).
+- 2026-10-26: infra 3ff54ed (tools, config, queue, plan); ramen lists crawled (742 ids).
+- 2026-10-26: **batch 1** b6fbdc5 v537 — Osaka registered (10th city); Kinryū Ramen, Dōtonbori Kamukura, Kinkuemon, Rāmen Hayashida (all Dotonbori, ramen blocks). Lesson: proper menu/brand names (Osaka Black, Kinjou Shoyu, Maximum Koitama, Daisendori) stay romaji in JA — don't katakana/kanji them.
