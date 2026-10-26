@@ -71,7 +71,7 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 
 ## Phase pointer
 
-**Current phase: ramen** (lists crawled; shop pages: run `node scripts/sweep/crawl-shops.mjs osaka` until it reports 0 to fetch). Next batch: b4. After ramen thins out: vegan seeds (FMGF `/jp/osaka` page = 37 businesses, HappyCow `/asia/japan/osaka/`; Vegewel 403s), then mom.
+**Current phase: alternate** — two ramen batches, then one vegan/GF batch, repeating (ramen alone is ~680 shops; vegan/GF is the app's core value). Next batch: **b5 = vegan/GF**: seed `scripts/sweep/osaka/vegan-seeds.jsonl` from FMGF `/jp/osaka` (37 businesses on page 1) + HappyCow `/asia/japan/osaka/`, match each to a Tabelog id (fetch its Tabelog page; keep only those inside 3,219 m), then work them nearest-first alongside `queue.mjs next vegan`. Then b6–b7 ramen, b8 vegan/GF, …
 
 ## Log
 
@@ -79,3 +79,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - 2026-10-26: **batch 1** b6fbdc5 v537 — Osaka registered (10th city); Kinryū Ramen, Dōtonbori Kamukura, Kinkuemon, Rāmen Hayashida (all Dotonbori, ramen blocks). Lesson: proper menu/brand names (Osaka Black, Kinjou Shoyu, Maximum Koitama, Daisendori) stay romaji in JA — don't katakana/kanji them.
 - 2026-10-26: **batch 2** 2bf282c v538 — Zundōya Dotonbori, Osaka Ōshō Dotonbori honten (gyoza, no ramen block), Ichiran Namba Midōsuji (pork-free broth), Kinryū Midōsuji; 4 stale ramen skipped. Ramen shop crawl complete (739 fetched, 687 inside). Rules learned: no postcodes unless sourced; cuisine_type must use app labels (italian, okonomiyaki for teppan, gyoza, curry, sukiyaki…) — not 'other' when one fits.
 - 2026-10-26: **batch 3** — Zundōya Namba Ebisubashi + Sōemonchō, Kamukura Midōsuji, Shitennō Dotonbori (12 Osaka). Rule: date each price/anecdote from that review's own 'Visited on' line (sed -n 2p B*.txt) — don't assume.
+- 2026-10-26: **batch 4** 93ce08e v541 — Kamukura Sennichimae, Yang Guo Fu Malatang (other), Gyōza Kōbō Chibisuke (gyoza), Makotoya Shinsaibashi (beef paitan) (16 Osaka). Tabelog 'ramen' tag also covers malatang/gyoza shops: file them under their real cuisine_type, no ramen block. Don't invent JA titles for translated menu names — leave ja ''.
