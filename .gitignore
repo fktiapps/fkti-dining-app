@@ -41,3 +41,6 @@ data/_tier_writes.jsonl
 
 # Local tick scratch: cached page fetches and one-off patch scripts.
 .tick/
+
+# City sweep page dumps (re-fetchable; the committed state is lists/shops/queue-status jsonl)
+scripts/sweep/*/work/

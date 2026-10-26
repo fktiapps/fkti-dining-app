@@ -212,7 +212,9 @@ await browser.close();
 const fail = [];
 if (boot.bodyChars < 200) fail.push('page rendered almost no text');
 if (!boot.manifestLoaded) fail.push('MANIFEST did not load');
-if (boot.cityCount !== 9) fail.push('expected 9 cities, got ' + boot.cityCount);
+// Derived from the manifest so registering a city (scripts/sweep/bootstrap-city.mjs) doesn't need a code change here.
+const expectedCities = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8')).cities.length;
+if (boot.cityCount !== expectedCities) fail.push(`expected ${expectedCities} cities, got ` + boot.cityCount);
 if (boot.placesLoaded < 100) fail.push('only ' + boot.placesLoaded + ' places for ' + boot.activeCity);
 if (boot.labelKeys < 29) fail.push('CUISINE_LABELS has ' + boot.labelKeys + ' entries, expected >= 29');
 if (rawSlugChips.length) fail.push('cuisine chips showing raw slugs: ' + rawSlugChips.join(', '));

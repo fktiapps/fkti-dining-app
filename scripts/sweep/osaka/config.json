@@ -1,0 +1,24 @@
+{
+ "city": "osaka",
+ "name": "Osaka",
+ "sweep_name": "osaka-dotonbori-2mi",
+ "center_label": "Dotonbori",
+ "center": [34.6690306, 135.5015715],
+ "center_source": "OSM Nominatim place=locality 道頓堀 (道頓堀一丁目, 中央区, 大阪市), fetched 2026-10-26",
+ "radius_m": 3219,
+ "pref": "osaka",
+ "areas": [
+  { "code": "A2701/A270202", "name": "Nanba & Nihonbashi & Dotonbori", "coverage": "core" },
+  { "code": "A2701/A270201", "name": "Shinsaibashi & Minami-Senba & Nagahoribashi", "coverage": "core" },
+  { "code": "A2701/A270106", "name": "Honmachi & Semba", "coverage": "mostly" },
+  { "code": "A2701/A270105", "name": "Awaza & Nishinagahori", "coverage": "mostly" },
+  { "code": "A2701/A270204", "name": "Matsuyamachi & Tamatsukuri", "coverage": "mostly" },
+  { "code": "A2701/A270206", "name": "Ebisu & Imamiya & Ashihara", "coverage": "mostly" },
+  { "code": "A2701/A270102", "name": "Kitahama & Yodoyabashi & Higobashi", "coverage": "partial" },
+  { "code": "A2701/A270203", "name": "Tennoji & Abeno", "coverage": "partial" },
+  { "code": "A2701/A270205", "name": "Tsuruhashi & Uehonmachi", "coverage": "partial" },
+  { "code": "A2701/A270104", "name": "Tenmabashi & Tanimachi-4-chome", "coverage": "partial" },
+  { "code": "A2701/A270401", "name": "Bentencho & Nishikujo & Osaka Dome", "coverage": "partial" }
+ ],
+ "excluded_areas_note": "Umeda/Kitashinchi (A270101), Tenma (A270103), Kyobashi/OBP (A270107) lie just outside 3.2 km; shops there are dropped by the radius filter anyway."
+}
