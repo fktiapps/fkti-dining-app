@@ -4,8 +4,8 @@
 // multi-MB diffs unreviewable and silently inflates what phones download.
 import fs from 'node:fs';
 
-export const CITIES = ['kyoto','tokyo','nara','kanazawa','hiroshima','nagoya','nagano','toba','himeji'];
-const MINIFIED = new Set(['kyoto', 'tokyo']);
+export const CITIES = ['kyoto','tokyo','nara','kanazawa','hiroshima','nagoya','nagano','toba','himeji','osaka'];
+const MINIFIED = new Set(['kyoto', 'tokyo', 'osaka']);
 
 export const cityPath = city => `data/${city}.json`;
 export const readCity = city => JSON.parse(fs.readFileSync(cityPath(city), 'utf8'));

@@ -2,7 +2,7 @@
 // original pins, never against pins this audit wrote.
 import fs from 'fs';import {execSync} from 'child_process';
 const S=process.argv[2];const REF='7d5f4f5';
-const CITIES=['kyoto','tokyo','nara','kanazawa','hiroshima','nagoya','nagano','toba','himeji'];
+const CITIES=['kyoto','tokyo','nara','kanazawa','hiroshima','nagoya','nagano','toba','himeji','osaka'];
 const verd={};const VD='data/_menu_verdicts';
 if(fs.existsSync(VD))for(const f of fs.readdirSync(VD)){try{const j=JSON.parse(fs.readFileSync(`${VD}/${f}`));const e=Array.isArray(j)?j.map(x=>[x.id,x]):Object.entries(j);for(const [k,v] of e)verd[k]=v}catch{}}
 const out=[];

@@ -2,7 +2,7 @@
 // NOT already covered by a sign-off doc (GF_REVIEW_SIGNOFF.md / _TOKYO.md).
 import fs from 'node:fs';
 
-const CITIES = ['kyoto','tokyo','nara','kanazawa','hiroshima','nagoya','nagano','toba','himeji'];
+const CITIES = ['kyoto','tokyo','nara','kanazawa','hiroshima','nagoya','nagano','toba','himeji','osaka'];
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9　-鿿]/g, '');
 
 // names already carried through a sign-off doc
