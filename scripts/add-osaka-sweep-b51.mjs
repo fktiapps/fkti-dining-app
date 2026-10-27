@@ -10,7 +10,7 @@ const { put, skip, save } = openCitySweep('osaka', TODAY, 51);
 const ALL = d => ({ 0: d, 1: d, 2: d, 3: d, 4: d, 5: d, 6: d });
 const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_wheat: [], vegan_cross_contact: [], staff_allergy_handling: [], positives: [], confidence: 'low', last_checked: TODAY };
 
-skip('27157594', 'Men to Dashi Shiromoriya: one Tabelog review; not enough to verify');
+skip('27157594', 'Men to Dashi Kimoriya: one Tabelog review; not enough to verify');
 
 // ================================================================ 頂賢麺
 {
