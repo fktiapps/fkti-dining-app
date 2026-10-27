@@ -10,7 +10,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
 
 // ================================================================ おこのみやき 三平
 {
-  const TB = 'https://tabelog.com/en/osaka/A2701/A270202/27000850/'; const R = TB + 'dtlrvwlst/'; const OWN = 'https://www.okonomiyaki-sanpei.com';
+  const TB = 'https://tabelog.com/en/osaka/A2701/A270201/27000850/'; const R = TB + 'dtlrvwlst/'; const OWN = 'https://www.okonomiyaki-sanpei.com';
   const W = day(['12:00', '15:00'], ['17:00', '22:00']), S = day(['12:00', '15:00'], ['17:00', '21:30']);
   put({
     id: 'osaka_okonomiyaki_sanpei_shinsaibashi', name: 'おこのみやき 三平 (Okonomiyaki Sanpei)', category: 'OMNI',

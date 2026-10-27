@@ -209,7 +209,7 @@ skip('27159267', '独一家: 1 review on Tabelog');
 
 // ================================================================ 牛一嘴 蘭州牛肉拉麺屋
 {
-  const TB = 'https://tabelog.com/en/osaka/A2701/A270201/27140533/'; const R = TB + 'dtlrvwlst/'; const OWN = 'https://niuyizui-jp.com';
+  const TB = 'https://tabelog.com/en/osaka/A2701/A270106/27140533/'; const R = TB + 'dtlrvwlst/'; const OWN = 'https://niuyizui-jp.com';
   put({
     id: 'osaka_gyuu_isshi_lanzhou', name: '牛一嘴 蘭州牛肉拉麺屋 (Gyuu Isshi Lanzhou Gyuniku Ramen Ya)', category: 'OMNI',
     lat: 34.676186, lng: 135.506145, cuisine_type: 'other',

@@ -75,7 +75,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
 
 // ================================================================ 喜多方ラーメン 坂内 なんば日本橋店
 {
-  const TB = 'https://tabelog.com/en/osaka/A2701/A270206/27132504/'; const R = TB + 'dtlrvwlst/'; const OWN = 'https://ban-nai.com/';
+  const TB = 'https://tabelog.com/en/osaka/A2701/A270202/27132504/'; const R = TB + 'dtlrvwlst/'; const OWN = 'https://ban-nai.com/';
   const W = day(['11:00', '22:00']), S = day(['11:00', '21:00']);
   put({
     id: 'osaka_kitakata_bannai_namba_nipponbashi', name: '喜多方ラーメン 坂内 なんば日本橋店 (Kitakata Ramen Bannai Namba Nipponbashi)', category: 'OMNI',
