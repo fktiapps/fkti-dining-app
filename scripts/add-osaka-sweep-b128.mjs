@@ -30,7 +30,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
         { text: '"The Rare Shabu-Roast was incredibly delicious! The thinly sliced roast melted in my mouth, and the sweet and spicy sauce coated it perfectly… The staff grilled it for us and served it as a mini rice bowl." — October 2026.', source: R + 'B536832913/' },
         { text: '"I grill the thick tongue slowly over the charcoal grill… It\'s thick yet incredibly tender… You definitely need to have some white rice to go with it." — September 2026.', source: R + 'B536893052/' },
       ],
-      japanese_sources_summary: '食べログ: 趣味焼肉ばばあ、大阪市中央区東心斎橋1-17-3 Groove心斎橋East 3F、長堀橋駅・心斎橋駅から徒歩5分、月・木〜日 17:00〜翌5:00、火 17:00〜24:00、水休み、カード・QR (PayPay、d払い) 可、電子マネー不可、カウンター12席、喫煙可、2022年9月16日開店。口コミ(2026年9〜10月): 姉妹店あり、アラカルト、生肉メニューが多い (ハラミのユッケ、ハツ刺し、センマイ刺し、焼きレバー)、厚切りタン (メニューにない特上の厚切りも)、ハラミ、サガリ、ロース、つなみ、レアしゃぶロースは甘辛いたれと卵黄で、店の人が焼いてミニ丼に、ウルテの湯引き、白菜キムチ、ホルモン煮込み、締めの盛岡冷麺とすだち、ラーメン、ハラミ炒飯、たれを選べる、飲み物が豊富、活気のあるカウンター、終電後でも行ける、予約がおすすめ、コスパが良い、親切な店員。',
+      japanese_sources_summary: '食べログ: 趣味焼肉ばばあ、大阪市中央区東心斎橋1-17-3 Groove心斎橋East 3F、長堀橋駅・心斎橋駅から徒歩5分、月・木〜日 17:00〜翌5:00、火 17:00〜24:00、水休み、カード・QR (PayPay、d払い) 可、電子マネー不可、カウンター12席、喫煙可、2022年9月16日開店。口コミ(2026年9〜10月): 姉妹店あり、アラカルト、生肉メニューが多い (ハラミのユッケ、ハツ刺し、センマイ刺し、焼きレバー)、厚切りタン (メニューにない特上の厚切りも)、ハラミ、サガリ、ロース、Tsunami、レアしゃぶロースは甘辛いたれと卵黄で、店の人が焼いてミニ丼に、Urute no Yubiki、白菜キムチ、ホルモン煮込み、締めのMorioka の冷麺とすだち、ラーメン、ハラミ炒飯、たれを選べる、飲み物が豊富、活気のあるカウンター、終電後でも行ける、予約がおすすめ、コスパが良い、親切な店員。',
       confidence: 'medium', sources: [TB, R + 'B535873409/', R + 'B535905945/', R + 'B536117464/', R + 'B536832913/', R + 'B536893052/', R + 'B538165601/'] },
     cultural_comfort: { level: 'konnichiwa', note: 'Energetic staff; à la carte ordering (October 2026).' },
     safety: SAFETY0,
@@ -48,11 +48,11 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
       it('', '', 'Morioka cold noodles', '', 'To finish', 'no', 'no', 'October 2026.', 'reimen'),
       it('', '', 'Outside-skirt fried rice', '', 'To finish', 'no', 'no', 'September 2026.', 'harami_chahan'),
     ] }, {
-    cuisine: 'カウンターの焼肉、アラカルト・生肉: ハラミのユッケ、ハツ刺し、センマイ刺し、焼きレバー・焼き: 厚切りタン (メニューにない特上の厚切りも)、ハラミ、サガリ、ロース、つなみ・甘辛いたれと卵黄のレアしゃぶロース、店の人が焼いてミニ丼に・ウルテの湯引き・白菜キムチ、ホルモン煮込み・締め: すだちの盛岡冷麺、ラーメン、ハラミ炒飯・たれを選べる・飲み物が豊富・カウンター12席',
+    cuisine: 'カウンターの焼肉、アラカルト・生肉: ハラミのユッケ、ハツ刺し、センマイ刺し、焼きレバー・焼き: 厚切りタン (メニューにない特上の厚切りも)、ハラミ、サガリ、ロース、Tsunami・甘辛いたれと卵黄のレアしゃぶロース、店の人が焼いてミニ丼に・Urute no Yubiki・白菜キムチ、ホルモン煮込み・締め: すだちのMorioka の冷麺、ラーメン、ハラミ炒飯・たれを選べる・飲み物が豊富・カウンター12席',
     neighborhood: '中央区東心斎橋1-17-3 Groove心斎橋East 3F。心斎橋駅・長堀橋駅から徒歩5分',
     gf_detail: 'グルテンフリーではありません。醤油ベースの焼肉のたれ、冷麺、炒飯。',
     vegan_detail: 'ヴィーガンではありません。牛肉とホルモンばかり、生肉の料理、卵黄。',
-    notes: '[焼肉・東心斎橋、朝5時まで開くにぎやかなカウンター焼肉] 心斎橋から5分のビル3階、全12席がカウンターの焼肉店で、2022年開店、ほとんどの夜は朝5時まで営業するので終電後でも行ける。アラカルトで、焼く前に生肉の皿 (ハラミのユッケ、ハツ刺し、センマイ刺し) が並び、炭火で厚切りタン、ハラミ、サガリ。外せないのはレアしゃぶロースで、店の人が焼いて卵黄とご飯にのせてくれる。締めは盛岡冷麺、ラーメン、ハラミ炒飯。質の割にお得という声。すぐ埋まるので予約を。喫煙可。水曜休み。',
+    notes: '[焼肉・東心斎橋、朝5時まで開くにぎやかなカウンター焼肉] 心斎橋から5分のビル3階、全12席がカウンターの焼肉店で、2022年開店、ほとんどの夜は朝5時まで営業するので終電後でも行ける。アラカルトで、焼く前に生肉の皿 (ハラミのユッケ、ハツ刺し、センマイ刺し) が並び、炭火で厚切りタン、ハラミ、サガリ。外せないのはレアしゃぶロースで、店の人が焼いて卵黄とご飯にのせてくれる。締めはMorioka の冷麺、ラーメン、ハラミ炒飯。質の割にお得という声。すぐ埋まるので予約を。喫煙可。水曜休み。',
   });
 }
 

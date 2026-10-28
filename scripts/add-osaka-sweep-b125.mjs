@@ -30,7 +30,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
         { text: '"What left a lasting impression was the kombu-cured sea bream, aged for six days. Served with sudachi salt, it enhanced the natural flavors of the ingredient…" — October 2026, Tensho omakase 10 pieces ¥4,500.', source: R + 'B537285211/' },
         { text: '"The rice was cooked to a slightly firm texture, perfectly balancing with the toppings." — October 2026, Tensho omakase 15 pieces ¥6,800.', source: R + 'B538018674/' },
       ],
-      japanese_sources_summary: '食べログ: 鮨 あまと 裏難波、大阪市中央区日本橋1-19-6 福喜ビル 2F、日本橋駅から徒歩2分、御堂筋線なんば駅から徒歩7分、毎日12:00〜14:00 (L.O. 料理13:00、ドリンク13:45)・16:00〜23:00 (L.O. 22:30)、2026年7月1日からサービス料10%、カード・電子マネー・QR (Alipay、WeChat Pay を含む) 可、カウンター15席、2025年7月7日開店、公式サイトあり。口コミ(2026年10月): 黒門市場のそば、Sushi Amato の2号店、ヒノキのカウンター、熟成の江戸前鮨、昼の Tensho おまかせ10貫4,500円 (しじみ汁、大トロ、6日熟成の昆布締めの鯛とすだち塩、熟成サーモン、アジ、ホタテ、漬けの本マグロ、ポン酢の茶碗蒸し、イカ、5日熟成のブリ、イクラ、ウナギ、赤だし、烏龍茶と緑茶飲み放題)、Tensho おまかせ15貫6,800円、ここだけの Ten Sho [Goku] おまかせ15貫8,300円 (大トロと中トロ、キンメダイ、キンキ、昆布の甘エビ、ズワイガニ、ウニ、トロたく巻き、デザート)、赤酢のシャリ、やや固めのご飯、日本酒 Mimuro Sugi、昼は人気で予約がおすすめ。',
+      japanese_sources_summary: '食べログ: 鮨 あまと 裏難波、大阪市中央区日本橋1-19-6 福喜ビル 2F、日本橋駅から徒歩2分、御堂筋線なんば駅から徒歩7分、毎日12:00〜14:00 (L.O. 料理13:00、ドリンク13:45)・16:00〜23:00 (L.O. 22:30)、2026年7月1日からサービス料10%、カード・電子マネー・QR (Alipay、WeChat Pay を含む) 可、カウンター15席、2025年7月7日開店、公式サイトあり。口コミ(2026年10月): 黒門市場のそば、Sushi Amato の2号店、ヒノキのカウンター、熟成の江戸前鮨、昼の Tensho おまかせ10貫4,500円 (Shijimi のスープ、大トロ、6日熟成の昆布締めの鯛とすだち塩、熟成サーモン、アジ、ホタテ、漬けの本マグロ、ポン酢の茶碗蒸し、イカ、5日熟成のブリ、イクラ、ウナギ、赤だし、烏龍茶と緑茶飲み放題)、Tensho おまかせ15貫6,800円、ここだけの Ten Sho [Goku] おまかせ15貫8,300円 (大トロと中トロ、Kinmedai、Kinki、昆布の甘エビ、ズワイガニ、ウニ、トロたく巻き、デザート)、赤酢のシャリ、やや固めのご飯、日本酒 Mimuro Sugi、昼は人気で予約がおすすめ。',
       confidence: 'medium', sources: [TB, OWN, R + 'B537198033/', R + 'B537285211/', R + 'B537667694/', R + 'B537711256/', R + 'B538018674/', R + 'B538051250/'] },
     cultural_comfort: { level: 'konnichiwa', note: 'Counter omakase; dislikes asked first (October 2026); cards and QR accepted.' },
     safety: SAFETY0,
@@ -43,11 +43,11 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
       it('', '', 'Tensho omakase, 15 pieces', '¥6,800', 'Courses', 'no', 'no', 'October 2026.', 'omakase_15'),
       it('', '', 'Ten Sho [Goku] omakase, 15 pieces (this shop only)', '¥8,300', 'Courses', 'no', 'no', 'October 2026.', 'goku_15'),
     ] }, {
-    cuisine: '熟成の江戸前鮨・昼の Tensho おまかせ10貫4,500円: しじみ汁、大トロ、6日熟成の昆布締めの鯛とすだち塩、熟成サーモン、アジ、ホタテ、漬けの本マグロ、ポン酢の茶碗蒸し、イカ、5日熟成のブリ、イクラ、ウナギ、赤だし、烏龍茶と緑茶は無料・Tensho おまかせ15貫6,800円・この店だけの Ten Sho [Goku] おまかせ15貫8,300円: 大トロと中トロ、キンメダイ、キンキ、昆布の甘エビ、ズワイガニ、ウニ、トロたく巻き、デザート・赤酢のシャリ・日本酒は Mimuro Sugi など・ヒノキのカウンター15席',
+    cuisine: '熟成の江戸前鮨・昼の Tensho おまかせ10貫4,500円: Shijimi のスープ、大トロ、6日熟成の昆布締めの鯛とすだち塩、熟成サーモン、アジ、ホタテ、漬けの本マグロ、ポン酢の茶碗蒸し、イカ、5日熟成のブリ、イクラ、ウナギ、赤だし、烏龍茶と緑茶は無料・Tensho おまかせ15貫6,800円・この店だけの Ten Sho [Goku] おまかせ15貫8,300円: 大トロと中トロ、Kinmedai、Kinki、昆布の甘エビ、ズワイガニ、ウニ、トロたく巻き、デザート・赤酢のシャリ・日本酒は Mimuro Sugi など・ヒノキのカウンター15席',
     neighborhood: '中央区日本橋1-19-6 福喜ビル 2F。日本橋駅から徒歩2分、黒門市場のそば',
     gf_detail: 'グルテンフリーではありません。漬けのマグロとにぎりの醤油、赤だし、ポン酢の茶碗蒸し。',
-    vegan_detail: 'ヴィーガンではありません。魚介ばかり、しじみ汁、茶碗蒸し。',
-    notes: '[寿司・黒門市場近く、熟成の江戸前鮨と4,500円の昼] Sushi Amato の2号店で、2025年7月開店、日本橋駅から2分の階段を上った2階、ヒノキのカウンター15席。熟成の江戸前で、昆布で6日熟成させた鯛にすだち塩、5日熟成のブリ、漬けの本マグロを、赤酢のやや固めのシャリで。お得なのは昼: おまかせ10貫(4,500円)にしじみ汁、茶碗蒸し、赤だし、お茶付き。夜は15貫のコースが6,800〜8,300円で、この店だけの最上のコースはキンメダイ、キンキ、ズワイガニ、ウニが加わる。2026年7月からサービス料10%。昼は人気なので予約を。',
+    vegan_detail: 'ヴィーガンではありません。魚介ばかり、Shijimi のスープ、茶碗蒸し。',
+    notes: '[寿司・黒門市場近く、熟成の江戸前鮨と4,500円の昼] Sushi Amato の2号店で、2025年7月開店、日本橋駅から2分の階段を上った2階、ヒノキのカウンター15席。熟成の江戸前で、昆布で6日熟成させた鯛にすだち塩、5日熟成のブリ、漬けの本マグロを、赤酢のやや固めのシャリで。お得なのは昼: おまかせ10貫(4,500円)にShijimi のスープ、茶碗蒸し、赤だし、お茶付き。夜は15貫のコースが6,800〜8,300円で、この店だけの最上のコースはKinmedai、Kinki、ズワイガニ、ウニが加わる。2026年7月からサービス料10%。昼は人気なので予約を。',
   });
 }
 
@@ -71,7 +71,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
         { text: '"Each piece of sushi was crafted with unique techniques like aging, kombu marination, vinegar curing, and marination… To finish, we had seafood ramen, with options for large, medium, or small sizes… The salt-based broth was rich with seafood flavor." — October 2026, omakase ¥4,400.', source: R + 'B538064458/' },
         { text: '"The sushi here was of exceptionally high quality! You can really feel the attention to detail… The cost performance is outstanding." — October 2026.', source: R + 'B537322510/' },
       ],
-      japanese_sources_summary: '食べログ: 鮨 滉心、大阪市中央区東心斎橋1-17-5 東心斎橋ブルースタービル 3F、心斎橋駅から徒歩4分、毎日17:30〜22:00 (1部17:30〜19:30、2部20:00〜22:00)、カード (VISA、Master、JCB) 可、電子マネー・QR不可、カウンター8席、貸切可 (20名まで)、2026年1月5日開店。口コミ(2026年10月): 881 Group の店、おまかせ4,400円のみ、飲み放題+2,200円 (サッポロ赤星は2本まで)、すっぽんのスープと三つ葉、石垣島の塩と島らっきょうの漬物のカツオのたたき、4日熟成のサバ、昆布締めのスズキ、水ダコと吸盤、漬けマグロ、酢締めのイワシ、ノドグロ、サバの棒寿司、カマス、鯛の大根おろしソース、マグロと数の子の手巻き、蒸しアナゴ、かんぴょう巻き、玉子、トロたく巻き、締めは大中小を選べる魚介の塩ラーメン、2階から非常階段で3階、看板のない扉、コスパが良い、サプライズに対応、にぎやかで気軽。',
+      japanese_sources_summary: '食べログ: 鮨 滉心、大阪市中央区東心斎橋1-17-5 東心斎橋ブルースタービル 3F、心斎橋駅から徒歩4分、毎日17:30〜22:00 (1部17:30〜19:30、2部20:00〜22:00)、カード (VISA、Master、JCB) 可、電子マネー・QR不可、カウンター8席、貸切可 (20名まで)、2026年1月5日開店。口コミ(2026年10月): 881 Group の店、おまかせ4,400円のみ、飲み放題+2,200円 (Sapporo Lager Akaboshiは2本まで)、すっぽんのスープと三つ葉、石垣島の塩と島らっきょうの漬物のカツオのたたき、4日熟成のサバ、昆布締めのスズキ、水ダコと吸盤、漬けマグロ、酢締めのイワシ、ノドグロ、サバの棒寿司、カマス、鯛の大根おろしソース、マグロと数の子の手巻き、蒸しアナゴ、かんぴょう巻き、玉子、トロたく巻き、締めは大中小を選べる魚介の塩ラーメン、2階から非常階段で3階、看板のない扉、コスパが良い、サプライズに対応、にぎやかで気軽。',
       confidence: 'medium', sources: [TB, R + 'B537224319/', R + 'B537322510/', R + 'B537397857/', R + 'B537971976/', R + 'B538064458/', R + 'B538073441/'] },
     cultural_comfort: { level: 'konnichiwa', note: 'Relaxed counter, recommended for a first sushi counter (October 2026); one set course.' },
     safety: SAFETY0,
@@ -112,7 +112,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
         { text: '"The sushi rice, made with a tangy red vinegar base, perfectly complements the well-aged toppings… the tuna here is sourced from Teramoto Shoten, a well-known supplier in Osaka." — July 2026.', source: R + 'B532177061/' },
         { text: '"The chawanmushi with mascarpone cheese had a delightful Western twist… The highlight was the extravagant uni don topped with both purple and bafun uni!" — August 2026, ¥18,000 course with all-you-can-drink.', source: R + 'B533406508/' },
       ],
-      japanese_sources_summary: '食べログ: 鮨し禅、大阪市中央区東心斎橋1-14-15 アルスビル 4F、心斎橋駅から徒歩5分、毎日18:00〜と20:30〜の二部制 (〜23:00)、土日祝は12:00から昼営業、定休日不定、予約は前日まで、サービス料5%、カード・電子マネー・QR (Alipay、WeChat Pay を含む) 可、カウンター10席、2025年11月18日開店。口コミ(2025年11月〜2026年10月): 酒かソフトドリンクが込みのコース18,000円、4日熟成の鯛とカツオの刺身、自家製ごま豆腐、マスカルポーネのカルボナーラ風茶碗蒸し、湯葉と生クリーム、Densuke アナゴのしゃぶしゃぶ、アブラボウズの西京焼き、アワビの肝ソース、中トロ、漬けの本マグロ、大トロ、昆布締めのキス、甘エビ、紫ウニとバフンウニのウニ丼、トロたく、メヒカリの揚げ巻き、ウナギ、ミルクプリン、赤酢のシャリ、大阪の Teramoto Shoten のマグロ、落ち着いたカウンター、料理の間合いと気配り。',
+      japanese_sources_summary: '食べログ: 鮨し禅、大阪市中央区東心斎橋1-14-15 アルスビル 4F、心斎橋駅から徒歩5分、毎日18:00〜と20:30〜の二部制 (〜23:00)、土日祝は12:00から昼営業、定休日不定、予約は前日まで、サービス料5%、カード・電子マネー・QR (Alipay、WeChat Pay を含む) 可、カウンター10席、2025年11月18日開店。口コミ(2025年11月〜2026年10月): 酒かソフトドリンクが込みのコース18,000円、4日熟成の鯛とカツオの刺身、自家製ごま豆腐、マスカルポーネのカルボナーラ風茶碗蒸し、湯葉と生クリーム、Densuke アナゴのしゃぶしゃぶ、Aburabouzuの西京焼き、アワビの肝ソース、中トロ、漬けの本マグロ、大トロ、昆布締めのキス、甘エビ、紫ウニとバフンウニのウニ丼、トロたく、Mehikariの揚げ巻き、ウナギ、ミルクプリン、赤酢のシャリ、大阪の Teramoto Shoten のマグロ、落ち着いたカウンター、料理の間合いと気配り。',
       confidence: 'medium', sources: [TB, R + 'B518069443/', R + 'B532177061/', R + 'B533406508/', R + 'B535712662/', R + 'B536218974/', R + 'B536931545/'] },
     cultural_comfort: { level: 'konnichiwa', note: 'Calm counter; attentive staff (October 2026); reserve by the day before.' },
     safety: SAFETY0,
@@ -123,11 +123,11 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
     price_note: 'Prices from August–October 2026 reviews; 5% service charge.', last_checked: TODAY, items: [
       it('', '', 'Course with drinks included (alcohol or soft drinks)', '¥18,000', 'Courses', 'no', 'no', 'August–October 2026.', 'course'),
     ] }, {
-    cuisine: '飲み物込みの熟成鮨のコース・18,000円のコース、酒かソフトドリンク込み: 4日熟成の鯛とカツオの刺身、自家製ごま豆腐、マスカルポーネのカルボナーラ風茶碗蒸し、湯葉と生クリーム、Densuke アナゴのしゃぶしゃぶ、アブラボウズの西京焼き、アワビの肝ソース・にぎり: 中トロ、漬けの本マグロ、大トロ、昆布締めのキス、甘エビ、イカ、メジカ・紫ウニとバフンウニのウニ丼・トロたく、メヒカリの揚げ巻き、ウナギ・ミルクプリン・マグロは Teramoto Shoten から・赤酢のシャリ・カウンター10席',
+    cuisine: '飲み物込みの熟成鮨のコース・18,000円のコース、酒かソフトドリンク込み: 4日熟成の鯛とカツオの刺身、自家製ごま豆腐、マスカルポーネのカルボナーラ風茶碗蒸し、湯葉と生クリーム、Densuke アナゴのしゃぶしゃぶ、Aburabouzuの西京焼き、アワビの肝ソース・にぎり: 中トロ、漬けの本マグロ、大トロ、昆布締めのキス、甘エビ、イカ、Mejika・紫ウニとバフンウニのウニ丼・トロたく、Mehikariの揚げ巻き、ウナギ・ミルクプリン・マグロは Teramoto Shoten から・赤酢のシャリ・カウンター10席',
     neighborhood: '中央区東心斎橋1-14-15 アルスビル 4F。心斎橋駅から徒歩5分',
     gf_detail: 'グルテンフリーではありません。漬けのマグロとにぎりの醤油、西京味噌、揚げ巻き。',
     vegan_detail: 'ヴィーガンではありません。魚介ばかり、マスカルポーネの茶碗蒸し、ミルクプリン。',
-    notes: '[寿司・東心斎橋、飲み物込み18,000円の熟成鮨コース] 4階にある落ち着いたカウンター10席の店で、2025年11月開店、酒かソフトドリンクが込みのコース(18,000円)ひとつ。赤酢のしっかりしたシャリに熟成のネタ: 4日熟成の鯛、昆布締めのキス、大阪の Teramoto Shoten のマグロを中トロ、漬け、大トロで。合間に創作の皿: カルボナーラのようなマスカルポーネの茶碗蒸し、Densuke アナゴのしゃぶしゃぶ、アワビの肝ソース、2種のウニのウニ丼。メヒカリの揚げ巻きとミルクプリンで締め。夜は二部制、週末は昼も、予約は前日まで。サービス料5%。',
+    notes: '[寿司・東心斎橋、飲み物込み18,000円の熟成鮨コース] 4階にある落ち着いたカウンター10席の店で、2025年11月開店、酒かソフトドリンクが込みのコース(18,000円)ひとつ。赤酢のしっかりしたシャリに熟成のネタ: 4日熟成の鯛、昆布締めのキス、大阪の Teramoto Shoten のマグロを中トロ、漬け、大トロで。合間に創作の皿: カルボナーラのようなマスカルポーネの茶碗蒸し、Densuke アナゴのしゃぶしゃぶ、アワビの肝ソース、2種のウニのウニ丼。Mehikariの揚げ巻きとミルクプリンで締め。夜は二部制、週末は昼も、予約は前日まで。サービス料5%。',
   });
 }
 
