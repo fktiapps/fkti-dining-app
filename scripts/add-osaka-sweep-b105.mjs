@@ -34,7 +34,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
       japanese_sources_summary: '食べログ(店舗会員): 麺や おだしとにくと、大阪市中央区内本町2-3-8 ダイアパレスビル本町 1F、堺筋本町駅・谷町四丁目駅から徒歩5分、火〜土・祝 11:30〜15:00(L.O. 14:30)、月・日休み(月曜祝日は翌火曜休み)、カード・電子マネー・QR不可、14席、禁煙、2024年11月5日開店。メニュー(2026年8月): 濃厚な鶏白湯の醤油900円(3種の鶏、山形の豚、黒毛和牛の牛すじのトリプルスープ、特製の水、6種の醤油のたれ)、同塩900円(4種の塩)、山椒の辛い鶏白湯900円(自家製ラー油、ガーリックオイル)、鶏と貝の醤油900円(あっさり、鶏と貝の出汁)、炙りチャーシューマヨ丼300円、黒毛和牛の炙り寿司400円、煮干しとチーズの和え玉300円、替え玉100円。口コミ(2026年8〜10月): 期間限定のよだれ鶏の豆乳冷やし担々麺1,200円、味玉100円、自家製ラー油の香り、もちもちの平麺、ナッツ、フライドオニオン、豆乳が強く担々麺らしさが薄いという声、隣の鶏白湯は豚骨並みの香り、肉寿司は目の前で炙る、ラストオーダー前に閉まっていた日、券売機、同じビルにちょろ、貝の旨みの醤油ラーメンに細麺と柚子。',
       confidence: 'medium', sources: [TB, MENU, R + 'B534627808/', R + 'B534992702/', R + 'B535258579/', R + 'B535693259/', R + 'B536016190/', R + 'B537713906/'] },
     ramen: {
-      broth_base: ['chicken', 'pork', 'beef', 'shellfish'], broth_texture: 'paitan', tare: ['shoyu', 'shio'], aroma_oil: ['chili oil', 'garlic oil'], richness: 'rich',
+      broth_base: ['chicken', 'pork', 'beef', 'shellfish'], broth_texture: 'paitan', tare: ['shoyu', 'shio'], aroma_oil: ['chili oil', 'garlic oil'], richness: 'kotteri',
       noodles: { thickness: 'thin', shape: 'straight', hydration: null, handmade: false, notes: 'Thin noodles in the clam shoyu (October 2026); chewy flat noodles in the summer cold tantanmen (September 2026).' },
       regional_style: [], sub_genre: ['tori_paitan', 'ramen'],
       signature_bowl: 'Rich chicken paitan shoyu, ¥900 (Tabelog menu, August 2026).',
@@ -103,7 +103,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
       japanese_sources_summary: '公式 kunimaru.net(味噌ラーメン専門店 麺屋・國丸): 北海道百年味噌・信州真田味噌・金の炙り味噌・辛味噌を基本に炙りでコクを出す、北海道百年味噌は長期熟成の濃厚赤味噌で塩味と辛味が強い、北海道百年味噌サムライラーメン(味玉・カツ・男気チャーシュー)、北海道百年味噌味玉ラーメン、牛モツ味噌ラーメン、金の炙り味噌(三年熟成の北海道産赤味噌を白ワイン・アーモンド・山椒と炙った薬膳味噌)、金の炙り味噌カツラーメン、銀のまろ味噌(九州麦味噌)、辛味噌は辛・大辛・激辛、お子様味噌ラーメン、麺には小麦や卵を使用、店頭にアレルゲン表示、たまご麺と全粒粉麺。店舗案内: 靱公園前店、大阪市西区靱本町1-6-14-1階、平日・土日祝 11:00〜16:00・17:30〜22:00(LO 21:30)、定休日なし。食べログ: 本町駅から409m、カード不可、電子マネー・QR可、20席、2021年8月5日開店。口コミ(2025年12月〜2026年10月): 辛味噌に味噌の塊、餃子、北海道百年味噌ラーメン、銀のまろ味噌はやさしい味、炒飯はおすすめしないという声、テーブル席が多い、北海道百年味噌バターコーン+半炒飯セット1,500円、辛味噌ラーメン980円、平日昼に行列、待ち時間に応じた割引券、ランチセット2種約900円(炒飯かご飯)、セットのラーメンはシンプルすぎ、濃厚でしっかりした味噌。',
       confidence: 'medium', sources: [TB, OWN, OMENU, OSHOP, OPOL, R + 'B519798263/', R + 'B530780626/', R + 'B536471542/', R + 'B536618889/', R + 'B537025756/', R + 'B537095646/'] },
     ramen: {
-      broth_base: [], broth_texture: 'unknown', tare: ['miso'], aroma_oil: [], richness: 'rich',
+      broth_base: [], broth_texture: 'unknown', tare: ['miso'], aroma_oil: [], richness: 'kotteri',
       noodles: { thickness: 'medium-thick', shape: null, hydration: null, handmade: false, notes: 'Medium-thick chewy egg noodles, or whole-wheat noodles (official site).' },
       regional_style: [], sub_genre: ['ramen'],
       signature_bowl: 'Hokkaido 100-year miso ramen (official site; 2025–2026 reviews).',
@@ -236,7 +236,7 @@ const SAFETY0 = { dedicated_fryer: null, gf_cross_contamination: [], soy_sauce_w
       japanese_sources_summary: '食べログ: 麺屋 やま 本町店、大阪市中央区瓦町1-4-1、堺筋本町から387m、月〜木 11:00〜15:00・18:00〜23:00、金 11:00〜15:00・18:00〜24:00、土 0:00〜6:00・11:00〜15:00・18:00〜24:00、日 0:00〜6:00・11:00〜15:00・18:00〜23:00、カード・電子マネー・QR不可、14席、禁煙、2022年10月12日開店。口コミ(2026年3〜10月): 現金以外も使えるようになったという声(9月)、新しい券売機は現金のみだったという声(8月)、期間限定の冷やし担々麺、担々麺、オフィス街で回転が速い、辛すぎない、海鮮醤油ラーメンはやさしい旨み、日曜22時半、醤油ラーメン950円、平打ち麺+100円、チャーシュー、ねぎ、メンマ、紫玉ねぎ、唐辛子、にんにくは別添え、透き通ったやさしいスープに甘めの醤油、旨辛ラーメン990円、麺の硬さ・柚子皮・にんにく・ねぎ・玉ねぎを選べる、唐辛子の辛さが強め、甘めの醤油、写真のキャプション「あの旨辛ラーメン」、味噌ラーメン、昼はご飯無料、平打ち麺。',
       confidence: 'medium', sources: [TB, R + 'B524153481/', R + 'B535257714/', R + 'B535922667/', R + 'B536053076/', R + 'B536618923/', R + 'B537783245/'] },
     ramen: {
-      broth_base: [], broth_texture: 'chintan', tare: ['shoyu'], aroma_oil: [], richness: 'light',
+      broth_base: [], broth_texture: 'chintan', tare: ['shoyu'], aroma_oil: [], richness: 'assari',
       noodles: { thickness: 'medium', shape: 'flat', hydration: null, handmade: false, notes: 'Medium flat noodles +¥100, firmness to order (August–September 2026).' },
       regional_style: [], sub_genre: ['ramen', 'tantanmen'],
       signature_bowl: 'Shoyu ramen, ¥950 (August–October 2026).',

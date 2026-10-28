@@ -36,7 +36,7 @@ skip('27120055', 'Newest Tabelog review is May 2025 and none in 2026; existence 
       japanese_sources_summary: '食べログ: 麺や 夢中、大阪市中央区内本町2-3-8 ダイアパレス本町ビル B1F、谷町四丁目から474m、月〜土 11:30〜14:00・17:30〜23:00、日・祝休み、22時までに客がいなければ閉店、予約可、カード(VISA、Master、JCB、AMEX)・交通系IC・iD・QUICPay・PayPay・d払い・au PAY可、2021年3月15日開店。口コミ(2022年12月〜2026年6月): 昼はラーメンとご飯(明太子ご飯、角切りチャーシューご飯、白ご飯から)で800円、豚骨、バター、にんにく、辛い、豚骨醤油、麺の硬さを選べる、細麺、スライスにんにく、担々麺、豚骨ラーメン700円、口頭注文、乳白色のスープ、焼きチャーシュー3枚、ねぎ、もやし、軽くクリーミー、ストレート細麺で量が多い、替え玉100円、豚骨臭がない、博多風、外国人客に丁寧に説明、替え玉が速い、ご飯が売り切れ、トマトラーメン(半分に切ったトマト約8個)、一人で切り盛り、九州風の細麺、テーブル2卓とカウンター約7席、軽くてもう少しボリュームが欲しいという声。',
       confidence: 'medium', sources: [TB, R + 'B451136934/', R + 'B485383331/', R + 'B494142761/', R + 'B508019890/', R + 'B520001765/', R + 'B530722475/'] },
     ramen: {
-      broth_base: ['tonkotsu'], broth_texture: 'paitan', tare: [], aroma_oil: [], richness: 'light',
+      broth_base: ['tonkotsu'], broth_texture: 'paitan', tare: [], aroma_oil: [], richness: 'assari',
       noodles: { thickness: 'thin', shape: 'straight', hydration: null, handmade: false, notes: 'Straight thin Kyushu-style noodles, firmness to order; extra noodles ¥100 (2024–2025).' },
       regional_style: ['Hakata'], sub_genre: ['ramen', 'tantanmen'],
       signature_bowl: 'Tonkotsu ramen, ¥700 (May 2024; June 2026).',
@@ -168,7 +168,7 @@ skip('27120055', 'Newest Tabelog review is May 2025 and none in 2026; existence 
       japanese_sources_summary: '食べログ: 麺や 修、大阪市天王寺区東高津町11-7、大阪上本町から334m、月・火・木・金 11:00〜14:00・17:30〜20:00、水・土 11:00〜14:00、日休み、カード・電子マネー・QR不可、2020年12月15日開店。口コミ(2024年9月〜2026年10月): 卓上の注文用紙に記入、後払い・現金のみ、カウンター約8席、夏限定の冷やし鯛塩ラーメン850円(鶏むね、半熟卵、メンマ、なると、かいわれ、柚子塩)、細いストレート麺、提供が速い、濃厚鶏白湯ラーメン(濃度8)はとろりと濃い、柔らかいチャーシュー、長いメンマ、紫玉ねぎ、揚げねぎ、かつお節、味変の辛味噌はかなり辛い、ご飯100円、さらに濃い濃厚鶏白湯もある、冷やし鯛そば1,100円(2024年、1日10食)に焼いた鯛、塩の塊で塩辛いことがあったという声、温かいまぜそば850円、カウンターのみで清潔、店主が気さく、濃厚だがくどくない、鶏白湯850円と味玉150円、Menya Teikakuの細麺、中華そば、一人で営業。',
       confidence: 'medium', sources: [TB, R + 'B492231439/', R + 'B513027653/', R + 'B525534062/', R + 'B529063534/', R + 'B533953716/', R + 'B538079011/'] },
     ramen: {
-      broth_base: ['chicken'], broth_texture: 'paitan', tare: [], aroma_oil: [], richness: 'rich',
+      broth_base: ['chicken'], broth_texture: 'paitan', tare: [], aroma_oil: [], richness: 'kotteri',
       noodles: { thickness: 'thin', shape: 'straight', hydration: null, handmade: false, notes: 'Smooth straight thin noodles from Menya Teikaku (August 2026).' },
       regional_style: [], sub_genre: ['tori_paitan', 'ramen', 'mazesoba_aburasoba'],
       signature_bowl: 'Chicken paitan ramen, ¥850 (August 2026).',
@@ -235,7 +235,7 @@ skip('27120055', 'Newest Tabelog review is May 2025 and none in 2026; existence 
       japanese_sources_summary: '食べログ: 未来軒、大阪市中央区瓦町2-4-10、堺筋本町から467m、月〜土 11:30〜15:00・17:00〜22:00、日・祝休み、予約可、カード・電子マネー・QR可、2025年10月16日開店。口コミ(2026年4〜10月): 夜はにぎわう、豚もやし炒め、麻婆豆腐、担々麺ハーフ、レモンサワー2杯で2,500円未満、担々麺は辛すぎずコクがある、本格的な中華の味という声、期間限定の冷やし担々麺はもちもちの麺、半炒飯セット、冷やし濃厚辛担々麺1,200円は縮れ麺、もっと辛くてもという声、担々麺Moto-Aji 950円、肉みそたっぷり、もやしと青菜、スープが止まらない、Shin-Aji、味噌、醤油タンメン、酸辣タンメン、本町の中華料理店Koyoujuの姉妹店と知ったという声、ネオンの看板、入口は通りから少し奥、11時40分で3組待ち、カウンター5席、4人席5卓、2人席3卓、外のテラス席、独特の香り、麺はかなり細い。',
       confidence: 'medium', sources: [TB, R + 'B526561371/', R + 'B529869443/', R + 'B530943405/', R + 'B533352966/', R + 'B535720262/', R + 'B536605871/'] },
     ramen: {
-      broth_base: [], broth_texture: 'unknown', tare: [], aroma_oil: [], richness: 'rich',
+      broth_base: [], broth_texture: 'unknown', tare: [], aroma_oil: [], richness: 'kotteri',
       noodles: { thickness: 'thin', shape: null, hydration: null, handmade: false, notes: 'Fairly thin noodles in the hot tantanmen (October 2026); curly noodles in the chilled version (August 2026).' },
       regional_style: [], sub_genre: ['tantanmen'],
       signature_bowl: 'Tantanmen Moto-Aji, ¥950 (September–October 2026).',
