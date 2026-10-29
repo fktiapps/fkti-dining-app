@@ -778,7 +778,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v740';
+const APP_BUILD='dcd-v741';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -2248,7 +2248,8 @@ function jgEntry(run){
 function jgExplained(text,a,b){
  const before=text.slice(0,a),after=text.slice(b);
  if(/[(（]\s*$/.test(before)&&/^\s*[)）]/.test(after)) return true;
- if(/^\s*[(（/／—–-]\s*["“'‘]?[A-Za-z]/.test(after)) return true;
+ // also a quoted run followed by its translation: 「…」 — "We have…"
+ if(/^["”'’」』]?\s*[(（/／—–-]\s*["“'‘]?[A-Za-z]/.test(after)) return true;
  const t=text.trim();
  return t.length<=48&&/[A-Za-z]{3}/.test(t)&&!/[.;!?]/.test(t);
 }
