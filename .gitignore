@@ -44,3 +44,7 @@ data/_tier_writes.jsonl
 
 # City sweep page dumps (re-fetchable; the committed state is lists/shops/queue-status jsonl)
 scripts/sweep/*/work/
+
+# English-mode gloss: generated worklists and merged review chunks (see docs/ja-gloss.md)
+data/gloss/_worklist.*
+data/gloss/_chunks/

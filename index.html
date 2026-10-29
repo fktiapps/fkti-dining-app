@@ -387,6 +387,12 @@ li.uncited{color:#7c8299}
   color:#7a4a12; background:#FBF0DD; border:1px solid #d4a84b;
   border-radius:6px; padding:4px 7px;
 }
+/* English-mode Japanese gloss: furigana over the Japanese, English after it (docs/ja-gloss.md) */
+.jg ruby rt{font-size:.58em;color:var(--muted);font-weight:400}
+.jg-en{color:var(--muted);font-size:.9em;margin-left:.25em}
+.jg-en::before{content:'“'}.jg-en::after{content:'”'}
+.jg-tr{display:block;color:var(--muted);font-size:.92em;margin-top:1px}
+.jg-tr::before{content:'“'}.jg-tr::after{content:'”'}
 </style>
 </head>
 <body>
@@ -772,7 +778,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v734';
+const APP_BUILD='dcd-v737';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -974,6 +980,7 @@ async function switchLang(lang){
  localStorage.setItem('dcd-lang',lang);
  for(const cityId of Object.keys(state.citiesRaw)) await applyLangView(cityId);
  applyI18nStrings(lang);
+ for(const cityId of Object.keys(state.citiesRaw)) jgLoad(cityId);
  buildCuisineChips(); drawMarkers(); render();
 }
 async function ensureCity(c){
@@ -981,7 +988,7 @@ async function ensureCity(c){
  if(state.citiesRaw[c.id]) return true;
  try{
   const d=await fetch(c.pins||c.file).then(r=>r.ok?r.json():null);
-  if(d){ state.citiesRaw[c.id]=d; await applyLangView(c.id); return true; }
+  if(d){ state.citiesRaw[c.id]=d; await applyLangView(c.id); jgLoad(c.id); return true; }
  }catch(_){}
  return false;
 }
@@ -1254,7 +1261,7 @@ function chainPopup(p){
  if(!c)return `<div class="surv-pop"><b>${escHtml(p.name||p.chain)}</b></div>`;
  const line=(emoji,label,o)=>`<div style="margin-top:4px;font-size:12px">${emoji} <b>${label}:</b> <span style="color:${TIER_COLOR[o.tier]||'#555'};font-weight:700">${o.tier}</span> — ${escHtml(o.best)}</div>`;
  const caveats=(c.caveats||[]).slice(0,4).map(x=>`<li>${escHtml(x)}</li>`).join('');
- const ph=(c.phrases||[]).map(x=>`<div style="margin-top:4px"><span style="font-weight:700">${escHtml(x.ja)}</span><br><span style="color:var(--muted)">${escHtml(x.romaji)}</span><br>“${escHtml(x.en)}”</div>`).join('');
+ const ph=(c.phrases||[]).map(x=>`<div style="margin-top:4px"><span style="font-weight:700" data-ja-keep>${escHtml(x.ja)}</span><br><span style="color:var(--muted)">${escHtml(x.romaji)}</span><br>“${escHtml(x.en)}”</div>`).join('');
  return `<div class="surv-pop"><b>${c.icon||'🍴'} ${escHtml(c.name)}</b>${p.addr?`<div style="font-size:11px;color:var(--muted);margin-top:2px">${escHtml(p.addr)}</div>`:''}`
   +line('🌾','GF',c.gf)+line('🌱','Vegan',c.vegan)
   +(c.both_gf_and_vegan?`<div style="font-size:11px;color:var(--muted);margin-top:4px">Both GF+vegan in one order? ${escHtml(c.both_gf_and_vegan)}</div>`:'')
@@ -1858,7 +1865,7 @@ function renderMenu(){
  const chip=it=>{const v=it[diet],good=v==='gf'||v==='vegan';const c=good?'#2e7d32':v==='ask'?'#b07a00':'#9c3b2e';const t=good?(diet==='gf'?'GF':'Vegan'):v==='ask'?'ask':'no';return `<span style="background:${c};color:#fff;border-radius:999px;padding:1px 8px;font-size:11px;white-space:nowrap">${t}</span>`;};
  const secs={}; m.items.forEach(it=>{(secs[it.section||'Menu']=secs[it.section||'Menu']||[]).push(it);});
  const itemsHtml=Object.entries(secs).map(([sec,items])=>`<div style="margin-top:10px"><div style="font-weight:700;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">${esc(sec)}</div>`+
-  items.map(it=>`<div style="border-bottom:1px solid #f0eada;padding:7px 0"><div style="display:flex;justify-content:space-between;gap:8px"><div><div style="font-weight:600">${esc(it.en)}</div><div style="font-size:12px;color:var(--muted)">${esc(it.ja)} · ${esc(it.romaji)}</div></div><div style="text-align:right;white-space:nowrap">${chip(it)}${it.price?`<div style="font-size:12px;color:var(--muted)">${esc(it.price)}</div>`:''}</div></div>${it.note?`<div style="font-size:11.5px;color:#7a6f5c;margin-top:2px">${esc(it.note)}</div>`:''}<details style="margin-top:3px"><summary style="font-size:11.5px;color:var(--ver);cursor:pointer">🗣 how to order</summary><div style="font-size:13px;margin:3px 0">「${esc(it.ja)}をください」<br><span style="color:var(--muted)">${esc(it.romaji)} o kudasai</span></div></details>${(MP&&MP.lore&&MP.lore[it.dish_key])?`<a onclick="event.stopPropagation();mpOpenDish('${esc(it.dish_key)}')" style="font-size:11.5px;color:var(--ver);cursor:pointer;display:inline-block;margin-top:2px">📖 the story of this dish ›</a>`:''}</div>`).join('')+`</div>`).join('');
+  items.map(it=>`<div style="border-bottom:1px solid #f0eada;padding:7px 0"><div style="display:flex;justify-content:space-between;gap:8px"><div><div style="font-weight:600">${esc(it.en)}</div><div style="font-size:12px;color:var(--muted)" data-jg-nogloss>${esc(it.ja)} · ${esc(it.romaji)}</div></div><div style="text-align:right;white-space:nowrap">${chip(it)}${it.price?`<div style="font-size:12px;color:var(--muted)">${esc(it.price)}</div>`:''}</div></div>${it.note?`<div style="font-size:11.5px;color:#7a6f5c;margin-top:2px">${esc(it.note)}</div>`:''}<details style="margin-top:3px"><summary style="font-size:11.5px;color:var(--ver);cursor:pointer">🗣 how to order</summary><div style="font-size:13px;margin:3px 0" data-jg-nogloss>「${esc(it.ja)}をください」<br><span style="color:var(--muted)">${esc(it.romaji)} o kudasai</span></div></details>${(MP&&MP.lore&&MP.lore[it.dish_key])?`<a onclick="event.stopPropagation();mpOpenDish('${esc(it.dish_key)}')" style="font-size:11.5px;color:var(--ver);cursor:pointer;display:inline-block;margin-top:2px">📖 the story of this dish ›</a>`:''}</div>`).join('')+`</div>`).join('');
  const cav=m.verified==='provisional'?`<div style="background:#FBF0DD;border:1px solid #d4a84b;border-radius:8px;padding:7px 10px;font-size:11.5px;color:#5a3e00;margin-bottom:6px">⚠ Single-source menu — verify in person.</div>`:'';
  body.innerHTML=`${cav}<div style="display:flex;gap:6px;margin-bottom:4px"><button class="chip" data-diet="gf" style="${diet==='gf'?'background:#9c3b2e;color:#fff':''}">Highlight GF</button><button class="chip" data-diet="vegan" style="${diet==='vegan'?'background:#9c3b2e;color:#fff':''}">Highlight Vegan</button></div><div style="font-size:11px;color:var(--muted)">Prices approximate · classifications are guidance, not a guarantee — confirm allergens with staff.</div>${orig}${itemsHtml}`;
  body.querySelectorAll('[data-diet]').forEach(b=>b.onclick=()=>{MENU_DIET=b.dataset.diet;renderMenu();});
@@ -2205,6 +2212,90 @@ async function scanMenu(file,ctx,outId){
 }
 function escHtml(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function vchip(kind,v){const m={safe:['✓','b-safe'],ask:['?','b-ask'],avoid:['✕','b-avoid']};const [ic,cls]=m[v]||['—','b-unk'];return `<span class="vchip ${cls}">${kind} ${ic}</span>`;}
+// ---------- English-mode Japanese gloss (docs/ja-gloss.md) ----------
+// Data text written in English often carries Japanese (dish names, menu notes, store names).
+// In English mode every Japanese run found in the glossary (data/gloss-en.json, built by
+// scripts/gloss/build.mjs) is redrawn as furigana plus an English gloss, after rendering, by
+// one observer, so no template has to know about it. The Japanese itself is never changed.
+// JG_RUN must match RUN in scripts/gloss/lib.mjs.
+const JG_RUN=/[぀-ヿ㐀-鿿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g;
+const JG_HAS=/[\u3040-\u30ff\u3400-\u9fff\uff66-\uff9f]/;
+const JG_SKIP='script,style,textarea,input,select,ruby,.jg-wrap,[data-ja-keep],#langBtn';
+const JG_NOGLOSS='[data-jg-nogloss],.mp-ja';
+// One glossary file per city (scripts/gloss/build.mjs), fetched in English mode when the
+// city loads. Only cities the manifest flags (build-payload.mjs sets `gloss`) have one; the
+// rest get no glosses beyond the price rule.
+const JG={},jgCities=new Set();
+function jgLoad(city){
+ const file=MANIFEST&&(MANIFEST.cities.find(c=>c.id===city)||{}).gloss;
+ if(state.lang!=='en'||!file||jgCities.has(city)) return Promise.resolve();
+ jgCities.add(city);
+ return fetch(file).then(r=>r.ok?r.json():{}).catch(()=>({})).then(d=>{Object.assign(JG,d);jgScan(document.body);});
+}
+// Prices are glossed by rule, not listed in the glossary (PRICE in scripts/gloss/lib.mjs):
+// "649円" → ¥649, "1,200円～" → ¥1,200+, a bare 円 after digits → yen.
+const JG_PRICE=/^約?([0-9０-９,，.]*)円([～〜~]?)$/;
+function jgEntry(run){
+ if(JG[run]) return JG[run];
+ const p=run.match(JG_PRICE); if(!p) return null;
+ const i=run.indexOf('円');
+ const furi=[[run.slice(0,i),''],['円','えん'],[run.slice(i+1),'']].filter(x=>x[0]);
+ const n=p[1].replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/，/g,',');
+ return [furi,n?'¥'+n+(p[2]?'+':''):'yen'];
+}
+// True when the text around a run already says it in English, so only furigana is added:
+// "Bonito flakes (鰹節)", "天ぷら (Tempura)", "ランチ / Lunch", or a short label like "Grilled 焼".
+function jgExplained(text,a,b){
+ const before=text.slice(0,a),after=text.slice(b);
+ if(/[(（]\s*$/.test(before)&&/^\s*[)）]/.test(after)) return true;
+ if(/^\s*[(（/／—–-]\s*["“'‘]?[A-Za-z]/.test(after)) return true;
+ const t=text.trim();
+ return t.length<=48&&/[A-Za-z]{3}/.test(t)&&!/[.;!?]/.test(t);
+}
+function jgHtml(run,[furi,en],explained,whole){
+ const rb=furi?furi.map(([t,r])=>r?`<ruby>${escHtml(t)}<rt>${escHtml(r)}</rt></ruby>`:escHtml(t)).join(''):escHtml(run);
+ if(!en||explained) return `<span class="jg">${rb}</span>`;
+ return whole?`<span class="jg">${rb}<span class="jg-tr">${escHtml(en)}</span></span>`:`<span class="jg">${rb}<span class="jg-en">${escHtml(en)}</span></span>`;
+}
+function jgText(node){
+ const text=node.nodeValue,el=node.parentElement;
+ // A name followed by its own romaji in parentheses — "大衆酒場 フレンチマン 姫路店 (Taishuu Sakaba
+ // Frenchman Himeji)" — is already explained: furigana only, no per-word glosses.
+ const named=text.length<=120&&/\([^()]*[A-Za-z]{3}[^()]*\)\s*$/.test(text)&&!/[.;!?]\s/.test(text);
+ const nogloss=named||!!(el&&el.closest(JG_NOGLOSS)),whole=text.trim();
+ // A mostly-Japanese string is glossed as one unit (see isJapaneseString in scripts/gloss/lib.mjs).
+ if(jgEntry(whole)){
+  const span=document.createElement('span'); span.className='jg-wrap';
+  const i=text.indexOf(whole);
+  span.innerHTML=escHtml(text.slice(0,i))+jgHtml(whole,jgEntry(whole),nogloss,true)+escHtml(text.slice(i+whole.length));
+  node.replaceWith(span); return;
+ }
+ let html='',last=0,hit=false,m;
+ JG_RUN.lastIndex=0;
+ while((m=JG_RUN.exec(text))){
+  const e=jgEntry(m[0]); if(!e) continue;
+  hit=true;
+  html+=escHtml(text.slice(last,m.index))+jgHtml(m[0],e,nogloss||jgExplained(text,m.index,m.index+m[0].length),whole===m[0]);
+  last=m.index+m[0].length;
+ }
+ if(!hit) return;
+ const span=document.createElement('span'); span.className='jg-wrap';
+ span.innerHTML=html+escHtml(text.slice(last));
+ node.replaceWith(span);
+}
+function jgScan(root){
+ if(state.lang!=='en'||!root) return;
+ if(root.nodeType===3){ if(JG_HAS.test(root.nodeValue)&&root.parentElement&&!root.parentElement.closest(JG_SKIP)) jgText(root); return; }
+ if(root.nodeType!==1||root.closest(JG_SKIP)) return;
+ const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>JG_HAS.test(n.nodeValue)&&!n.parentElement.closest(JG_SKIP)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT});
+ const list=[]; while(w.nextNode()) list.push(w.currentNode);
+ list.forEach(jgText);
+}
+new MutationObserver(ms=>{
+ if(state.lang!=='en') return;
+ for(const m of ms) for(const n of m.addedNodes) jgScan(n);
+}).observe(document.documentElement,{childList:true,subtree:true});
+
 // furi = [[surface, reading], ...]; reading "" for kana/punctuation. Builds safe <ruby> furigana.
 function rubyFuri(furi,fallbackJa){
  if(!Array.isArray(furi)||!furi.length) return escHtml(fallbackJa||'');

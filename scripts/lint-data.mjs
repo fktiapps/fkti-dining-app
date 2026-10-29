@@ -185,6 +185,21 @@ const p = console.log;
 // meant bisecting the pipeline by hand. setTier() records every tier write and flags the
 // ones that contradict an owner_signoff or a data/_gate_rejections.json entry; this reads
 // that back. Empty when lint runs standalone — the log is written during a rebuild.
+// English-mode Japanese gloss (docs/ja-gloss.md). A covered city shows furigana and English
+// for every Japanese run; a run added by a new batch with no glossary entry would show as bare
+// Japanese to an English reader, so it is an error. Fix: scripts/gloss/extract.mjs <city>,
+// review, merge, build.
+{
+  const { cityFiles, eachRun, GLOSS_SRC, COVERED, readJson } = await import('./gloss/lib.mjs');
+  const gloss = readJson(GLOSS_SRC, {});
+  for (const city of readJson(COVERED, [])) {
+    const missing = new Set();
+    for (const f of cityFiles(city)) eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), r => { if (!gloss[r]) missing.add(r); });
+    if (missing.size) err(city, `${missing.size} Japanese run(s) shown in English mode have no gloss, e.g. ${[...missing].slice(0, 3).join(' / ')} — run scripts/gloss/extract.mjs ${city}`);
+    if (!fs.existsSync(`data/gloss/en-${city}.json`)) err(city, 'covered for gloss but data/gloss/en-' + city + '.json is missing — run scripts/gloss/build.mjs');
+  }
+}
+
 const writes = readTierWrites();
 const clashes = writes.filter(w => w.contradicts_signoff || w.contradicts_rejection);
 if (writes.length) {

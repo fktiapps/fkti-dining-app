@@ -94,6 +94,8 @@ for (const city of CITIES) {
     entry.pins = `data/pins/${city}.json`;
     entry.detail = `data/detail/${city}-`;   // + <chunk>.json
     entry.chunks = chunks.length;
+    // English-mode furigana + gloss (docs/ja-gloss.md): the app fetches it only when flagged
+    if (fs.existsSync(`data/gloss/en-${city}.json`)) entry.gloss = `data/gloss/en-${city}.json`; else delete entry.gloss;
   }
 
   totalFull += full; totalPins += pinBytes;

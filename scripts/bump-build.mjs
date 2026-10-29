@@ -47,6 +47,7 @@ for (const c of CITIES) {
   for (const layer of ['chains', 'starbucks', 'konbini', 'grocery'])
     assets.push(`data/${c}_${layer}.json`);
   for (const lang of LANGS) assets.push(`data/${c}.${lang}.json`);
+  assets.push(`data/gloss/en-${c}.json`); // English-mode furigana + gloss (scripts/gloss/build.mjs)
   const chunks = manifestCities.find(x => x.id === c)?.chunks || 0;
   for (let n = 0; n < chunks; n++) assets.push(`data/detail/${c}-${n}.json`);
 }
