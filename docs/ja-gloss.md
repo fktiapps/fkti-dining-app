@@ -31,12 +31,16 @@ Decisions (Greg, 2026-10-29):
 
 ```
 node scripts/gloss/extract.mjs <city>     # → data/gloss/_worklist.tsv (+ .json)
-# review each line: write data/gloss/_chunks/<city>-NNN.json entries
-node scripts/gloss/merge.mjs
+node scripts/gloss/show.mjs r 0 250       # review runs; write data/gloss/_chunks/<city>-NNN.json keyed by the Japanese
+node scripts/gloss/show.mjs w 0 200       # whole strings; write {index: en} and convert:
+node scripts/gloss/chunk.mjs w map.json <city>-w01
+node scripts/gloss/merge.mjs              # merges and DELETES the chunks (en.json is the record)
+node scripts/gloss/readings.mjs <city> <reviewed cities>   # every new word reading, to check
+# add the city to data/gloss/covered.json
 node scripts/gloss/build.mjs              # fails if a covered city still has gaps
 ```
 
-Review rules: check every reading (kuromoji misreads food words, see the tests); a name gets
+Review rules: no pronouns for people in the English (Greg's rule); check every reading (kuromoji misreads food words, see the tests); a name gets
 `name: true` and the record's own romaji or `null`; when unsure of a reading use `nor: true`;
 person names in translated passages keep the name: the romaji a source gives, otherwise the
 Japanese name as written (never a guessed reading).
