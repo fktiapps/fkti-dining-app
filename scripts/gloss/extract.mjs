@@ -24,7 +24,7 @@ const have = readJson(GLOSS_SRC, {});
 const work = [];
 for (const [run, e] of [...seen.entries()].sort((a, b) => b[1].n - a[1].n)) {
   if (have[run]) continue;
-  const { furi, needs } = furiOf(run);
+  const { furi, needs } = furiOf(run, cities.length === 1 ? cities[0] : undefined);
   work.push({ run, n: e.n, whole: e.whole, furi, needs_reading: needs, fields: [...e.fields].slice(0, 4), ex: e.ex });
 }
 fs.mkdirSync('data/gloss', { recursive: true });

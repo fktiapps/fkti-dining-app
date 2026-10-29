@@ -20,14 +20,15 @@ import { cityFiles, eachRun, furiOf, initTokenizer, GLOSS_SRC, COVERED, readJson
 
 await initTokenizer();
 const src = readJson(GLOSS_SRC, {});
-const compiled = new Map();
-const compile = run => {
-  if (!compiled.has(run)) {
+const compiled = new Map(); // city|run → entry (readings can differ by city: lib CITY_READINGS)
+const compile = (run, city) => {
+  const key = `${city}|${run}`;
+  if (!compiled.has(key)) {
     const e = src[run];
-    const furi = e.name || e.nor ? [[run, '']] : e.r ? [[run, e.r]] : e.furi || furiOf(run).furi;
-    compiled.set(run, [furi.every(([, r]) => !r) ? 0 : furi, e.en ?? 0]);
+    const furi = e.name || e.nor ? [[run, '']] : e.r ? [[run, e.r]] : e.furi || furiOf(run, city).furi;
+    compiled.set(key, [furi.every(([, r]) => !r) ? 0 : furi, e.en ?? 0]);
   }
-  return compiled.get(run);
+  return compiled.get(key);
 };
 
 let failed = false;
@@ -35,7 +36,7 @@ for (const city of readJson(COVERED, [])) {
   const out = {}, missing = new Set();
   for (const f of cityFiles(city))
     eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), run => {
-      if (src[run]) out[run] = compile(run); else missing.add(run);
+      if (src[run]) out[run] = compile(run, city); else missing.add(run);
     });
   if (missing.size) {
     failed = true;

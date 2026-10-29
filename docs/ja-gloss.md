@@ -45,6 +45,13 @@ Review rules: no pronouns for people in the English (Greg's rule); check every r
 person names in translated passages keep the name: the romaji a source gives, otherwise the
 Japanese name as written (never a guessed reading).
 
+From Osaka on (lib `NAMES_FROM_GLOSSARY`), a city's own name entries (`name: true`, two or more
+characters) also stay unread where they recur inside that city's long passages, so 藍丹 or 和人
+inside a review summary is not read as dictionary words. Readings in `WORD_READINGS` /
+`CITY_READINGS` still win. The earlier cities were reviewed without this and are left as they are.
+Osaka's file is about 3.5 MB (782 long passages, each with furigana); the cities before it are
+under 0.5 MB.
+
 ## Known limits
 
 - Readings inside long translated passages come from kuromoji plus the overrides. Himeji's

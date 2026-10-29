@@ -121,8 +121,40 @@ export const WORD_READINGS = {
   '大笑': 'だいしょう', '唐揚': 'からあげ', '豚足': 'とんそく', '上タン塩': 'じょうたんしお', '下新町': 'しもしんまち', '米や豆': 'こめやまめ', '米販売': 'こめはんばい', '倉山': 'くらやま', '五ツ星': 'いつつぼし', '河北': 'かほく', '津幡': 'つばた', 'ぶた玉': 'ぶたたま', 'えび玉': 'えびたま', 'かき玉': 'かきたま', '海塩': 'かいえん', '白山麓': 'はくさんろく', '鳥越': 'とりごえ', '奄美大島': 'あまみおおしま', '中日新聞': 'ちゅうにちしんぶん', '椿原': 'つばきはら', '南中条': 'みなみちゅうじょう', '五郎島金時': 'ごろうじまきんとき', '身体': 'からだ', '骨となり': 'ほねとなり', '白山比咩神社': 'しらやまひめじんじゃ', '町屋': 'まちや', '釜炊き': 'かまだき', '応相談': 'おうそうだん', '野々市': 'ののいち', '鏑木商舗': 'かぶらきしょうほ', '八日市': 'ようかいち', '鞍月': 'くらつき', '大桑': 'おおくわ', '示野': 'しめの', '松任': 'まっとう', '福久': 'ふくひさ', '酸辣湯': 'さんらーたん', '角ボール': 'かどぼーる',
   '大平弘二': '', '山崎弘二': '', '山崎又一': '', '直江南': '', '直江': '', '奈々': '', '小菅波': '', '相木': '',
   'ガラス戸': 'がらすど', '元年頃': 'がんねんごろ', '元年': 'がんねん', '小国': 'おぐに', '音ゆ': 'おとゆ', '週替り': 'しゅうがわり', '退店': 'たいてん', '日本人妻': 'にほんじんづま', '元家老': 'もとかろう', '角打ち': 'かくうち', '大塚太蔵造': '', '前多学': '', '松下素久': '', '吉田太郎吉': '', '平見高広': '', '和田長平': '', '宮島幸雄': '', '島袋勇': '', '肥後雅之': '', '森島幹裕': '',
+  // Osaka review (2026-10-29); 日本橋 is per city (CITY_READINGS)
+  '心斎橋': 'しんさいばし', '道頓堀': 'どうとんぼり', '難波': 'なんば', '千日前': 'せんにちまえ', '法善寺': 'ほうぜんじ', '神座': 'かむくら', '金龍': 'きんりゅう', 'きりん寺': 'きりんじ', '一蘭': 'いちらん', '御堂筋': 'みどうすじ', '宗右衛門町': 'そうえもんちょう', '長堀橋': 'ながほりばし', '長堀': 'ながほり', '横浜': 'よこはま', '横濱': 'よこはま', '本町': 'ほんまち', '北堀江': 'きたほりえ', '堀江': 'ほりえ', '戎橋': 'えびすばし', 'えびす橋': 'えびすばし', '珉珉': 'みんみん', '三田製麺所': 'みたせいめんじょ', '三平': 'さんぺい', '麻辣湯': 'まーらーたん', '麻辣烫': 'まーらーたん', '金麦': 'きんむぎ', '家系': 'いえけい', '南船場': 'みなみせんば', '船場': 'せんば', '堺筋': 'さかいすじ', '大阪店': 'おおさかてん', '麺富': 'めんとみ', '北浜': 'きたはま', '肥後橋': 'ひごばし', '油そば': 'あぶらそば', '寺田町': 'てらだちょう', '金久右衛門': 'きんくえもん', '元味': 'もとみ', '源氏': 'げんじ', '浪花': 'なにわ', '花丸軒': 'はなまるけん', '夢彩庵': 'むさいあん', '宮崎': 'みやざき', '湯火功夫': 'とうかこうふ', '古潭': 'こたん', '小洞天': 'しょうどうてん', '河縁': 'かわえん', '大ちゃん': 'だいちゃん', '富喜': 'ふき', '札幌': 'さっぽろ', '天満橋': 'てんまばし', '麺次郎': 'めんじろう', '四川': 'しせん', '吉祥寺': 'きちじょうじ', '人類乃宝舟': 'じんるいのたからぶね', '一夢庵': 'いちむあん', '麵': 'めん', '福龍': 'ふくりゅう', '四川食房': 'しせんしょくぼう', '和歌山': 'わかやま', '金田家': 'かなだや', '吉山商店': 'よしやましょうてん', '政宗': 'まさむね', '韓湯': 'かんゆ', '大翔軒': 'だいしょうけん', '薩摩': 'さつま', '麻仁': 'まじん', '醤すけ': 'しょうすけ', '大丸': 'だいまる', '古樹軒': 'こじゅけん', '天道': 'てんどう', '南海': 'なんかい', '天蓬八戒': 'てんぽうはっかい', '燙楽屋': 'たんらくや', '尾道': 'おのみち', '大阪麦風': 'おおさかばくふう', '亀王': 'きおう', '前店': 'まえてん', '博多': 'はかた', '王道家': 'おうどうや', '我道家': 'がどうや', '中央区': 'ちゅうおうく', '赤垣屋': 'あかがきや', '岡山': 'おかやま', '英国': 'えいこく',
+  '進辛正麺': '', '鳥倉': '', '荘一': '', '七三一': '',
+  '黒門': 'くろもん', '京町堀': 'きょうまちぼり', '夕陽丘': 'ゆうひがおか', '喜多方': 'きたかた', '上本町': 'うえほんまち', '芦原橋': 'あしはらばし', '阿波座': 'あわざ', '淀屋橋': 'よどやばし', '靱公園': 'うつぼこうえん', '九条': 'くじょう', '夫婦善哉': 'めおとぜんざい', '神戸牛': 'こうべぎゅう', '神戸': 'こうべ', '火鍋': 'ひなべ', '蘭州': 'らんしゅう', '担担麺': 'たんたんめん', '真夜中': 'まよなか', '天麩羅': 'てんぷら', '料理人': 'りょうりにん', '赤酢': 'あかず', '法善寺横丁': 'ほうぜんじよこちょう', 'アメ村': 'あめむら', '裏なんば': 'うらなんば',
+  '一文字': 'いちもじ', '三味': 'さんみ', '元味': 'もとあじ', '冬瓜': 'とうがん', '半焼飯': 'はんやきめし', '半生': 'はんなま', '半玉': 'はんたま', '塩水': 'しおみず', '大国町': 'だいこくちょう', '天草': 'あまくさ', '幽庵': 'ゆうあん', '新奈良': 'しんなら', '櫓': 'やぐら', '水木': 'すいもく', '四つ橋': 'よつばし', '和果': '', '和人': '', '奏': '',
+  '旨味': 'うまみ', '旨': 'うま', '梁': 'はり', '男気': 'おとこぎ', '白髪': 'しらが', '稚鮎': 'ちあゆ', '綿あめ': 'わたあめ', '讃岐': 'さぬき', '金目鯛': 'きんめだい', '犬連れ': 'いぬづれ', '退館時': 'たいかんじ', '退館': 'たいかん', '二郎': 'じろう', '隠れ家': 'かくれが', '隠れ': 'かくれ', '隠し': 'かくし', '背脂': 'せあぶら', '鶏油': 'ちーゆ', '番号札': 'ばんごうふだ', '網の': 'あみの', '網を': 'あみを', '網焼': 'あみやき', '網干': '', '八代本町': '', '船場川': 'せんばがわ', '棟梁': 'とうりょう', '甘辛': 'あまから', '隠し味': 'かくしあじ', '英国風': 'えいこくふう', '英国式': 'えいこくしき', '薄く': 'うすく', '薄い': 'うすい', '薄ま': 'うすま', '薄め': 'うすめ', '辛い': 'からい', '辛さ': 'からさ', '辛す': 'からす', '辛め': 'からめ', '涼皮': '', '肥腸': '',
 };
-const WORDS_RE = new RegExp(Object.keys(WORD_READINGS).sort((a, b) => b.length - a.length).join('|'), 'g');
+// Readings that differ by city and override WORD_READINGS there: 日本橋 is Nipponbashi in Osaka
+// but Nihonbashi in Tokyo. The glossary is shared, so build.mjs compiles each city separately.
+export const CITY_READINGS = {
+  osaka: { '日本橋': 'にっぽんばし', '土日月': 'どにちげつ', '火水': 'かすい', '池筋': 'いけすじ', '深井': 'ふかい', '中座': 'なかざ', '夕陽ケ丘': 'ゆうひがおか', '夕陽ヶ丘': 'ゆうひがおか', '北久宝寺町': 'きたきゅうほうじまち', '南久宝寺町': 'みなみきゅうほうじまち', '久太郎町': 'きゅうたろうまち',
+    // building and shop names inside passages: leave unread
+    '旭光荘': '', '旭日': '', '秋月館': '', '篠峯': '', '金久右衛門': '', '韓湯': '', '麺富': '', '麻仁': '', '一夢庵': '', '天蓬八戒': '', '大阪麦風': '', '大吉': '', '中谷': '', '三栄': '', '共栄': '', '寛永': '', '大同': '', '夢彩庵': '', '古樹軒': '', '小洞天': '', '大翔軒': '', '三陽': '', '久留美': '', '五つ星': '', '五ツ星': '', '湯火功夫': '', '燙楽屋': '' },
+};
+const wordsRe = {};
+// A city's own shop, person and place names (glossary entries marked name: true, two or more
+// characters) stay unread wherever they recur inside that city's longer passages — otherwise
+// kuromoji reads 藍丹 as 藍|丹(に) and 和人 as わじん, a dictionary guess at a name. Reviewed
+// readings above win over this. Only for cities glossed from Osaka on: the earlier ones were
+// reviewed without it (姫路|城 would turn into a lone 城(しろ) there).
+const NAMES_FROM_GLOSSARY = new Set(['osaka', 'nagoya', 'hiroshima', 'kyoto', 'tokyo']);
+const cityNames = {};
+function namesFor(city) {
+  if (!NAMES_FROM_GLOSSARY.has(city)) return {};
+  if (cityNames[city]) return cityNames[city];
+  const src = readJson(GLOSS_SRC, {}), out = {};
+  for (const f of cityFiles(city))
+    eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), run => {
+      if (src[run]?.name && run.length >= 2 && HAS_KANJI.test(run) && !(run in WORD_READINGS)) out[run] = '';
+    });
+  return (cityNames[city] = out);
+}
+const readingsFor = city => ({ ...namesFor(city), ...WORD_READINGS, ...(CITY_READINGS[city] || {}) });
+const wordsReFor = city => (wordsRe[city || ''] ||= new RegExp(Object.keys(readingsFor(city)).sort((a, b) => b.length - a.length).join('|'), 'g'));
 // After a number: 9月 = がつ, 28日 = にち, 2025年 = ねん, 3時 = じ (kuromoji splits the digits off).
 const COUNTER = { '月': 'がつ', '日': 'にち', '年': 'ねん', '時': 'じ' };
 
@@ -130,13 +162,14 @@ const COUNTER = { '月': 'がつ', '日': 'にち', '年': 'ねん', '時': 'じ
 // per Greg's rule (2026-10-29, "only when sourced") — where kuromoji tags the token as a
 // proper noun or does not know it: shop, person and place names often have several
 // readings, so a dictionary guess would be a guessed reading. `needs` lists those tokens.
-export function furiOf(text) {
+export function furiOf(text, city) {
   if (!tokenizer) throw new Error('call initTokenizer() first');
   const furi = [], needs = [];
   // split out the reviewed words first, tokenize only what lies between them
   const parts = []; let last = 0, m;
-  WORDS_RE.lastIndex = 0;
-  while ((m = WORDS_RE.exec(text))) { if (m.index > last) parts.push([text.slice(last, m.index), null]); parts.push([m[0], WORD_READINGS[m[0]]]); last = m.index + m[0].length; }
+  const re = wordsReFor(city), readings = readingsFor(city);
+  re.lastIndex = 0;
+  while ((m = re.exec(text))) { if (m.index > last) parts.push([text.slice(last, m.index), null]); parts.push([m[0], readings[m[0]]]); last = m.index + m[0].length; }
   if (last < text.length) parts.push([text.slice(last), null]);
   const tokens = [];
   for (const [chunk, reading] of parts) {
