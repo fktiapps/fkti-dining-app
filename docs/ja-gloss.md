@@ -38,14 +38,11 @@ node scripts/gloss/build.mjs              # fails if a covered city still has ga
 
 Review rules: check every reading (kuromoji misreads food words, see the tests); a name gets
 `name: true` and the record's own romaji or `null`; when unsure of a reading use `nor: true`;
-person names in translated passages become their role or "[name]" (no guessed romaji, and the
-privacy rules forbid naming them anyway).
+person names in translated passages keep the name: the romaji a source gives, otherwise the
+Japanese name as written (never a guessed reading).
 
 ## Known limits
 
 - Readings inside long translated passages come from kuromoji plus the overrides. Himeji's
   1,651 distinct word readings were reviewed once as a list, which caught 15 errors. Context
   can still pick the wrong reading for a word with several.
-- Translating legacy text surfaces privacy problems the Japanese already had (staff origin,
-  family, awards, celebrity mentions). The translations stay faithful apart from person names.
-  Cleaning the source text is a separate decision for Greg.

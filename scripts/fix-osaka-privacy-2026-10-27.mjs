@@ -1,3 +1,5 @@
+// REVERSED 2026-10-29: the personal-details rule this applied was never Greg's (see docs/osaka-sweep.md).
+// Every field it changed was restored from the pre-cleanup commit. Do not re-run.
 // Privacy cleanup for Osaka records (2026-10-27): remove age, gender, origin,
 // family-relation and past-workplace details taken from reviews, per the
 // sweep's personal-details rule. Applies to data/osaka.json and data/osaka.ja.json,
