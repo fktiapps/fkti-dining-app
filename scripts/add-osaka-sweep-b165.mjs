@@ -98,7 +98,7 @@ skip('27074108', 'Chain branch: Tenka Ippin already in data.');
         { text: '"The Kyoto shoyu ramen, topped with back fat, had a rich flavor without being too heavy, and it paired perfectly with the thin noodles." — September 2026, ramen with fried rice and kara-age set.', source: R + 'B534994546/' },
         { text: '"Surprisingly, it wasn\'t as heavy with fat as it looked. It was quite light, and I finished it in no time." — September 2026, Kyoto Back Fat Shoyu Flavored Egg Ramen and Fried Rice Set.', source: R + 'B537862243/' },
       ],
-      japanese_sources_summary: '食べログ: 魁力屋 イオンモール大阪ドームシティ店、大阪市西区千代崎3-13-1 イオンモール大阪ドームシティ 4F、ドーム前駅から徒歩5分、毎日10:00〜21:00、2020年12月11日開店、カード・電子マネー可、QR不可、フードコート、キッズメニュー、公式サイトあり。口コミ(2026年8〜9月): 京都・北白川発祥のラーメンチェーン、京都背脂醤油ラーメン、味玉ラーメン1,001円、背脂多め、細いストレート麺、チャーシュー、ねぎ、メンマ、とんこつ醤油、チャーハンと唐揚げのセット、提供が早い、見た目より軽い、アプリでチャーハン半額、スープがぬるかったという声、京セラドームの試合前にも。',
+      japanese_sources_summary: '食べログ: 魁力屋 イオンモール大阪ドームシティ店、大阪市西区千代崎3-13-1 イオンモール大阪ドームシティ 4F、ドーム前駅から徒歩5分、毎日10:00〜21:00、2020年12月11日開店、カード・電子マネー可、QR不可、フードコート、キッズメニュー、公式サイトあり。口コミ(2026年8〜9月): 京都・北白川発祥のラーメンチェーン、京都背脂醤油ラーメン、味玉ラーメン1,001円、背脂多め、細いストレート麺、チャーシュー、ねぎ、メンマ、とんこつ醤油、チャーハンとkara-ageのセット、提供が早い、見た目より軽い、アプリでチャーハン半額、スープがぬるかったという声、京セラドームの試合前にも。',
       confidence: 'medium', sources: [TB, OWN, R + 'B534429917/', R + 'B534994546/', R + 'B535390369/', R + 'B536121441/', R + 'B536442830/', R + 'B537862243/'] },
     ramen: {
       broth_base: ['chicken', 'tonkotsu'], broth_texture: 'chintan', tare: ['shoyu'], aroma_oil: [], richness: 'medium',
@@ -132,11 +132,11 @@ skip('27074108', 'Chain branch: Tenka Ippin already in data.');
       it('', '', 'Ramen set with fried rice and kara-age', '', 'Sets', 'no', 'no', 'September 2026.', 'set'),
       it('', '', 'Tonkotsu shoyu ramen', '', 'Ramen', 'no', 'no', 'September 2026.', 'tonkotsu'),
     ] }, {
-    cuisine: '京都の背脂醤油ラーメン (チェーン店)・京都背脂醤油ラーメン、味玉入り1,001円・背脂多めも頼める・細いストレート麺、チャーシュー、ねぎ、メンマ・とんこつ醤油・チャーハンと唐揚げのセット・キッズメニュー・フードコートの席',
+    cuisine: '京都の背脂醤油ラーメン (チェーン店)・京都背脂醤油ラーメン、味玉入り1,001円・背脂多めも頼める・細いストレート麺、チャーシュー、ねぎ、メンマ・とんこつ醤油・チャーハンとkara-ageのセット・キッズメニュー・フードコートの席',
     neighborhood: '西区千代崎3-13-1 イオンモール大阪ドームシティ 4F のフードコート。ドーム前駅すぐ、京セラドームの隣',
-    gf_detail: 'グルテンフリーではありません。小麦の麺、醤油のたれ、チャーハンと唐揚げ。',
+    gf_detail: 'グルテンフリーではありません。小麦の麺、醤油のたれ、チャーハンとkara-age。',
     vegan_detail: 'ヴィーガンではありません。背脂の入った鶏と豚のスープ、チャーシュー。',
-    notes: '[ラーメン・京セラドーム隣のフードコートの京都背脂醤油] 京都・北白川発祥のラーメンチェーン、魁力屋のイオンモール4階フードコートの店で、京セラドームの試合前にも、家族連れにも便利。看板は背脂をたっぷり浮かべた京都醤油ラーメンで、見た目より軽くほんのり甘く、細いストレート麺にチャーシューとねぎ。味玉入りは1,001円。セットなら香ばしいチャーハンとからっとした唐揚げも。提供は数分。スープがぬるかったという声も。毎日10時〜21時。',
+    notes: '[ラーメン・京セラドーム隣のフードコートの京都背脂醤油] 京都・北白川発祥のラーメンチェーン、魁力屋のイオンモール4階フードコートの店で、京セラドームの試合前にも、家族連れにも便利。看板は背脂をたっぷり浮かべた京都醤油ラーメンで、見た目より軽くほんのり甘く、細いストレート麺にチャーシューとねぎ。味玉入りは1,001円。セットなら香ばしいチャーハンとからっとしたkara-ageも。提供は数分。スープがぬるかったという声も。毎日10時〜21時。',
   });
 }
 
@@ -160,7 +160,7 @@ skip('27074108', 'Chain branch: Tenka Ippin already in data.');
         { text: '"The classic option features a rich soy sauce broth based on pork bone, with a slightly thick texture and a strong soy sauce flavor… The noodles are thin and straight." — April 2026.', source: R + 'B533961052/' },
         { text: '"The gentle broth was light and refreshing, infused with the aromas of plum and shiso." — June 2026, chilled ramen.', source: R + 'B530735675/' },
       ],
-      japanese_sources_summary: '食べログ: 和dining 清乃 スパワールド店、大阪市浪速区恵美須東3-4-24、動物園前駅から189m、毎日11:00〜23:00 (L.O. 22:30)、スパワールドの中、支払いは退館時に精算、2023年7月1日開店、カード・電子マネー・QR可、子ども連れ歓迎。口コミ(2025年8月〜2026年8月): 和歌山の有名ラーメン店清乃の店、3階のフードゾーン、清乃和歌山ラーメン (豚骨醤油、やや濃度があり醤油が強い、細いストレート麺、レアチャーシュー)、北海道風の塩ラーメン (ねぎと白菜)、バターのトッピング、夏の冷やしの梅と大葉のラーメン、冬の牡蠣の黒ラーメン、餃子、唐揚げ、ビール、風呂上がりの一杯に、本店のほうがおいしいという声。',
+      japanese_sources_summary: '食べログ: 和dining 清乃 スパワールド店、大阪市浪速区恵美須東3-4-24、動物園前駅から189m、毎日11:00〜23:00 (L.O. 22:30)、スパワールドの中、支払いは退館時に精算、2023年7月1日開店、カード・電子マネー・QR可、子ども連れ歓迎。口コミ(2025年8月〜2026年8月): 和歌山の有名ラーメン店清乃の店、3階のフードゾーン、清乃和歌山ラーメン (豚骨醤油、やや濃度があり醤油が強い、細いストレート麺、レアチャーシュー)、北海道風の塩ラーメン (ねぎと白菜)、バターのトッピング、夏の冷やしの梅と大葉のラーメン、冬の牡蠣の黒ラーメン、gyoza、kara-age、ビール、風呂上がりの一杯に、本店のほうがおいしいという声。',
       confidence: 'medium', sources: [TB, R + 'B512948267/', R + 'B520116500/', R + 'B521426285/', R + 'B530735675/', R + 'B533961052/', R + 'B536447509/'] },
     ramen: {
       broth_base: ['tonkotsu'], broth_texture: 'paitan', tare: ['shoyu', 'shio'], aroma_oil: [], richness: 'medium',
@@ -194,9 +194,9 @@ skip('27074108', 'Chain branch: Tenka Ippin already in data.');
       it('', '', 'Shio ramen (with butter option)', '', 'Ramen', 'no', 'no', 'August 2025–January 2026.', 'shio'),
       it('', '', 'Chilled ume and shiso ramen (summer)', '', 'Ramen', 'no', 'no', 'June–August 2026.', 'hiyashi'),
     ] }, {
-    cuisine: '温浴施設の中の和歌山ラーメン・清乃和歌山ラーメン: 濃い豚骨醤油でやや濃度あり、細いストレート麺、レアチャーシュー・ねぎと白菜の北海道風の塩ラーメン、バターのトッピング・夏は梅と大葉の冷やしラーメン・冬は牡蠣の黒ラーメン・餃子、唐揚げ、ビール',
+    cuisine: '温浴施設の中の和歌山ラーメン・清乃和歌山ラーメン: 濃い豚骨醤油でやや濃度あり、細いストレート麺、レアチャーシュー・ねぎと白菜の北海道風の塩ラーメン、バターのトッピング・夏は梅と大葉の冷やしラーメン・冬は牡蠣の黒ラーメン・gyoza、kara-age、ビール',
     neighborhood: '浪速区恵美須東3-4-24、スパワールドの中 (3階のフードゾーン)。動物園前駅の近く',
-    gf_detail: 'グルテンフリーではありません。小麦の麺、醤油のたれ、餃子と唐揚げ。',
+    gf_detail: 'グルテンフリーではありません。小麦の麺、醤油のたれ、gyozaとkara-age。',
     vegan_detail: 'ヴィーガンではありません。豚骨のスープ、チャーシュー。',
     notes: '[ラーメン・新世界、スパワールドの中の和歌山ラーメン] 和歌山で知られるラーメン店清乃の、スパワールド3階フードゾーンの店。食べるには館内に入る必要があり、支払いは退館時にバーコードで。定番の清乃和歌山ラーメンは醤油の効いた濃い豚骨醤油に細いストレート麺とレアチャーシュー。軽い北海道風の塩、夏の梅と大葉の冷やし、冬の牡蠣の黒ラーメンも。風呂上がりにビールと合わせたという声、和歌山の本店のほうがいいという声も。11時〜23時。',
   });
@@ -222,7 +222,7 @@ skip('27074108', 'Chain branch: Tenka Ippin already in data.');
         { text: '"…it\'s not the type where the powdered chili dissolves into the soup like in hot pot. Instead, … sliced and coarsely ground chili [is used], making the broth not overwhelming in heat, allowing me to savor its umami." — May 2024, chashu ramen, spice level 3.', source: R + 'B484430106/' },
         { text: '"The Ramen Man is supposed to be a spicier ramen, and you can choose whether to include garlic." — December 2024, Ramen Man Set Meal ¥1,000.', source: R + 'B498080497/' },
       ],
-      japanese_sources_summary: '食べログ: ラー麺マン、大阪市中央区平野町1-4-6、北浜駅から465m、営業時間の記載なし、カード・電子マネー・QR不可、喫煙可、15席 (テーブル3、カウンター4〜5)。口コミ(2024年5月〜2026年3月): 昔ながらの中華の店の雰囲気、ひとりで営む、ラー麺マン (豚骨醤油に輪切りと粗挽きの唐辛子、刻みにんにくは選べる、もやし、ねぎ)、チャーシュー麺 (小さな豚バラのチャーシューが8〜9枚、2辛・3辛)、ご飯とキムチのラー麺マン定食1,000円、昼の醤油ラーメン定食800円、味噌チャーシュー、韓国ラーメン、餃子、中細の縮れ麺、店内で喫煙できることに驚く声。',
+      japanese_sources_summary: '食べログ: ラー麺マン、大阪市中央区平野町1-4-6、北浜駅から465m、営業時間の記載なし、カード・電子マネー・QR不可、喫煙可、15席 (テーブル3、カウンター4〜5)。口コミ(2024年5月〜2026年3月): 昔ながらの中華の店の雰囲気、ひとりで営む、ラー麺マン (豚骨醤油に輪切りと粗挽きの唐辛子、刻みにんにくは選べる、もやし、ねぎ)、チャーシュー麺 (小さな豚バラのチャーシューが8〜9枚、2辛・3辛)、ご飯とキムチのラー麺マン定食1,000円、昼の醤油ラーメン定食800円、味噌チャーシュー、韓国ラーメン、gyoza、中細の縮れ麺、店内で喫煙できることに驚く声。',
       confidence: 'medium', sources: [TB, R + 'B484430106/', R + 'B484752321/', R + 'B489671173/', R + 'B497163376/', R + 'B498080497/', R + 'B525294350/'] },
     ramen: {
       broth_base: ['tonkotsu'], broth_texture: 'unknown', tare: ['shoyu', 'miso'], aroma_oil: ['chili oil'], richness: 'medium',
@@ -257,9 +257,9 @@ skip('27074108', 'Chain branch: Tenka Ippin already in data.');
       it('', '', 'Chashu ramen, spice level 2–3', '', 'Ramen', 'no', 'no', 'May–September 2024.', 'chashu'),
       it('', '', 'Miso chashu ramen', '', 'Ramen', 'no', 'no', 'March 2026.', 'miso'),
     ] }, {
-    cuisine: '辛いチャーシュー麺・ラー麺マン: 豚骨醤油に輪切りと粗挽きの唐辛子、選べる刻みにんにく、もやし、ねぎ・小さな豚バラのチャーシューがたくさんのチャーシュー麺、辛さは2か3・ご飯とキムチのラー麺マン定食1,000円・昼の醤油ラーメン定食800円・味噌チャーシュー、韓国ラーメン、餃子・中細の縮れ麺・15席',
+    cuisine: '辛いチャーシュー麺・ラー麺マン: 豚骨醤油に輪切りと粗挽きの唐辛子、選べる刻みにんにく、もやし、ねぎ・小さな豚バラのチャーシューがたくさんのチャーシュー麺、辛さは2か3・ご飯とキムチのラー麺マン定食1,000円・昼の醤油ラーメン定食800円・味噌チャーシュー、韓国ラーメン、gyoza・中細の縮れ麺・15席',
     neighborhood: '中央区平野町1-4-6。北浜駅から465m',
-    gf_detail: 'グルテンフリーではありません。小麦の麺、醤油のたれ、餃子。',
+    gf_detail: 'グルテンフリーではありません。小麦の麺、醤油のたれ、gyoza。',
     vegan_detail: 'ヴィーガンではありません。豚骨のスープ、チャーシュー。',
     notes: '[ラーメン・北浜、ひとりで営む辛いチャーシュー麺のカウンター] 北浜近くの昔ながらのラーメンカウンターで、ひとりで切り盛りする。看板のラー麺マンは豚骨醤油に輪切りと粗挽きの唐辛子、もやし、ねぎを山盛りに、希望で刻みにんにく。唐辛子は粉ではないので、辛さがスープを消さない。チャーシュー麺には小さくやわらかい豚バラが8〜9枚、辛さは2か3で。ご飯とキムチのセットは800〜1,000円。店内で喫煙でき、驚いたという声も。営業時間の記載なし。現金のみ。',
   });
