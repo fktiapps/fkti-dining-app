@@ -789,7 +789,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v758';
+const APP_BUILD='dcd-v759';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -2106,7 +2106,7 @@ async function runAsk(){
  const q=document.getElementById('askQ').value.trim(), out=document.getElementById('askOut');
  if(q.length<3) return;
  const ja=state.lang==='ja', msg=h=>{out.innerHTML='<div class="rq-msg">'+h+'</div>';};
- msg(ja?'検索中… (10〜30秒ほど)':'Searching… (10–30 seconds)');
+ msg(ja?'検索中… (10〜60秒ほど。アプリにない場合はウェブも探します)':'Searching… (10–60 seconds; if the app has nothing, the web is searched too)');
  const cities=(MANIFEST?MANIFEST.cities.filter(cityUnlocked).map(c=>c.id):[]);
  let d;
  try{
@@ -2122,6 +2122,17 @@ async function runAsk(){
   '<div class="rq-item" style="cursor:pointer;margin-top:8px" data-askcity="'+escHtml(p.city)+'" data-askid="'+escHtml(p.id)+'"><b>'+escHtml(p.name)+'</b> <span style="color:var(--muted);font-size:12px">'+escHtml(cityName(p.city))+(p.neighborhood?' · '+escHtml(p.neighborhood):'')+'</span>'+
   '<div style="font-size:12px;margin-top:2px">🌾 '+escHtml(p.gf||'?')+' · 🌱 '+escHtml(p.vegan||'?')+'</div>'+
   '<div style="font-size:13px;margin-top:4px">'+escHtml(p.why||'')+'</div></div>').join('');
+ const w=d.web;
+ if(w&&!w.error){
+  out.insertAdjacentHTML('beforeend','<div class="rq-msg" style="margin-top:14px;border:1px dashed var(--line)"><b>'+(ja?'🌐 ウェブで見つかったお店 — アプリ未掲載・未確認':'🌐 Found on the web — not in the app, not checked by us')+'</b><div style="margin-top:4px">'+escHtml(w.answer||'')+'</div>'+
+   ((w.places||[]).length?'':'<div style="margin-top:4px;color:var(--muted)">'+(ja?'確かな情報は見つかりませんでした。':'Nothing solid turned up.')+'</div>')+'</div>'+
+   (w.places||[]).map((p,i)=>'<div class="rq-item" style="margin-top:8px"><b>'+escHtml(p.name)+'</b> <span style="color:var(--muted);font-size:12px">'+escHtml([p.city,p.area].filter(Boolean).join(' · '))+'</span>'+
+    '<div style="font-size:13px;margin-top:4px">'+escHtml(p.why||'')+'</div>'+
+    '<div style="font-size:12px;margin-top:4px"><a href="'+escHtml(p.url)+'" target="_blank" rel="noopener noreferrer">'+(ja?'情報元 ↗':'Source ↗')+'</a> · <a href="#" data-askweb="'+i+'">'+(ja?'このお店の調査を依頼':'Ask us to research it')+'</a></div></div>').join(''));
+  out.querySelectorAll('[data-askweb]').forEach(a=>a.onclick=e=>{e.preventDefault();const p=w.places[+a.dataset.askweb];
+   document.getElementById('askModal').classList.remove('show');openResearch();
+   document.getElementById('rqName').value=p.name;document.getElementById('rqNote').value=(p.url+' — '+(ja?'「質問する」から: ':'from Ask: ')+q).slice(0,500);});
+ }
  out.querySelectorAll('[data-askid]').forEach(el=>el.onclick=()=>openAskPick(el.dataset.askcity,el.dataset.askid));
 }
 async function openAskPick(city,id){

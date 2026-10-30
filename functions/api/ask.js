@@ -8,7 +8,14 @@
  *   search_places — structured filters (city, cuisine, GF/vegan tier, mom-and-pop, ramen tare/broth…)
  *                   plus keyword search over names, cuisine, notes, chef bios and menu items
  *   get_place     — one record's fuller text, to check a candidate before recommending it
- * then answers as JSON { answer, picks: [{ id, why }] }.
+ * then answers as JSON { answer, match, picks: [{ id, why }] }.
+ *
+ * Web fallback: when the app's data gives no clear answer (match "none" or "weak", or no picks),
+ * a second call asks Mistral's built-in web_search connector (Conversations API, as in
+ * place-summary.js) for places in the same cities. Those come back separately as `web`, never
+ * mixed with picks, and the app labels them "not in the app, not checked by us". A web result
+ * is kept only if its URL is one the search actually returned (tool_reference chunks), so the
+ * model cannot hand back an invented link.
  *
  * Grounding: a pick whose id never came back from a tool call this request is dropped, so the
  * app can only ever show places that exist in the data. GF/vegan wording repeats the record's
@@ -102,7 +109,9 @@ export async function onRequestPost({ request, env }) {
     dup.add(p.id);
     picks.push({ id: p.id, city: p.city, name: p.n, cuisine_type: p.ct, neighborhood: p.hood, gf: p.gf, vegan: p.vg, why: String(k.why || '').slice(0, 600) });
   }
-  const out = JSON.stringify({ wired: true, answer: String(parsed.answer || '').slice(0, 2000), picks, engine: MODEL });
+  const match = ['strong', 'weak', 'none'].includes(parsed.match) ? parsed.match : (picks.length ? 'weak' : 'none');
+  const web = match === 'strong' && picks.length ? null : await webFallback(env, q, allowed, lang, today);
+  const out = JSON.stringify({ wired: true, answer: String(parsed.answer || '').slice(0, 2000), match, picks, ...(web ? { web } : {}), engine: MODEL });
   if (env.SUMMARIES) {
     await env.SUMMARIES.put(nkey, String(used + 1), { expirationTtl: 60 * 60 * 48 });
     await env.SUMMARIES.put(ckey, out, { expirationTtl: CACHE_TTL });
@@ -197,9 +206,52 @@ Do not use he/she/his/her for staff or owners unless the record does; say "the c
 Write every place name exactly as the record gives it. Never translate or transliterate a name into other characters (no guessed kanji, kana or romaji readings).
 
 Reply in ${lang === 'ja' ? 'Japanese' : 'English'} with ONLY a JSON object, no code fences:
-{"answer": "2–4 sentences: what you found and any caveat", "picks": [{"id": "<place id from a tool result>", "why": "1–2 sentences on why it fits, from the record"}]}
-Give at most 6 picks, best first; an empty list if nothing fits.`;
+{"answer": "2–4 sentences: what you found and any caveat", "match": "strong|weak|none", "picks": [{"id": "<place id from a tool result>", "why": "1–2 sentences on why it fits, from the record"}]}
+Give at most 6 picks, best first; an empty list if nothing fits.
+Also include "match": "strong" when the picks clearly do what was asked, "weak" when they only partly fit or rest on inference, "none" when nothing fits.`;
 }
+
+// Web search for places the app does not have. Returns { answer, places: [{ name, city, area, why, url }] }
+// or { error }. Places whose url the search did not return are dropped.
+export async function webFallback(env, q, cities, lang, today) {
+  const prompt = `A traveller asked a Japan restaurant app: "${q}". The app's own database had no clear answer. Search the web for restaurants that fit, ONLY in these cities: ${cities.join(', ')}. Prefer recent sources (2025–2026): the shop's own site or social account, Tabelog, Google Maps, recent reviews, food blogs. Only include a place a source you found actually says fits the request; never fill in from memory. Use place names as the source writes them; never guess readings. For gluten-free or vegan requests, say what the source claims and never call anything "safe". Do not use he/she for staff.
+Today is ${today}. Reply in ${lang === 'ja' ? 'Japanese' : 'English'} with ONLY minified JSON, no prose, no code fences:
+{"answer":"1–3 sentences: what the web turned up and how sure","places":[{"name":"","city":"","area":"neighbourhood if stated","why":"what the source says, 1–2 sentences","url":"the source page you read"}]}
+At most 5 places; an empty list if the web has nothing solid.`;
+  let data;
+  try {
+    const r = await fetch('https://api.mistral.ai/v1/conversations', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: 'Bearer ' + env.MISTRAL_API_KEY },
+      body: JSON.stringify({ model: MODEL, inputs: [{ role: 'user', content: prompt }], tools: [{ type: 'web_search' }], store: false, completion_args: { temperature: 0.2 } }),
+    });
+    if (r.status === 429) return { error: 'rate_limited' };
+    if (!r.ok) return { error: 'upstream', status: r.status };
+    data = await r.json();
+  } catch (e) { return { error: 'network' }; }
+
+  let text = ''; const refs = new Set();
+  for (const o of data.outputs || []) {
+    if (o.type !== 'message.output' && o.role !== 'assistant') continue;
+    if (typeof o.content === 'string') { text += o.content; continue; }
+    for (const ch of o.content || []) {
+      if (ch.type === 'text' && ch.text) text += ch.text;
+      else if (ch.type === 'tool_reference' && ch.url) refs.add(normUrl(ch.url));
+    }
+  }
+  let clean = text.replace(/```json|```/g, '').trim();
+  const a = clean.indexOf('{'), b = clean.lastIndexOf('}');
+  if (a > -1 && b > a) clean = clean.slice(a, b + 1);
+  let parsed;
+  try { parsed = JSON.parse(clean); } catch { return { error: 'parse' }; }
+  const places = (Array.isArray(parsed.places) ? parsed.places : [])
+    .filter(p => p && p.name && /^https?:\/\//i.test(String(p.url || '')) && refs.has(normUrl(p.url)))
+    .slice(0, 5)
+    .map(p => ({ name: String(p.name).slice(0, 120), city: String(p.city || '').slice(0, 40), area: String(p.area || '').slice(0, 80),
+      why: String(p.why || '').slice(0, 500), url: String(p.url).slice(0, 500) }));
+  return { answer: String(parsed.answer || '').slice(0, 800), places, searched: refs.size };
+}
+const normUrl = u => String(u).trim().replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/[#?].*$/, '').replace(/\/+$/, '').toLowerCase();
 
 async function mistral(env, messages, tools) {
   try {
