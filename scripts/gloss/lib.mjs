@@ -5,7 +5,7 @@ import kuromoji from 'kuromoji';
 
 // A "run" is a maximal stretch of Japanese script inside an English-mode string. Keep this
 // pattern identical to JG_RUN in index.html, or the app will look up runs the build never made.
-export const RUN = /[぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g; // 豈-﫿 = U+F900–FAFF (﨑)
+export const RUN = /[぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g; // 豈-﫿 = U+F900–FAFF (﨑)
 
 // Fields that are Japanese by design (shown to drivers or kept as the original), or never
 // shown in the English app. Matched against the dotted path with array indexes removed.
@@ -58,7 +58,7 @@ const HAS_JA = /[぀-ゟァ-ヺヽ-ヿ㐀-鿿ｦ-ﾟ]/;
 
 const kata2hira = s => s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
 const WEEKDAY = { '月': 'げつ', '火': 'か', '水': 'すい', '木': 'もく', '金': 'きん', '土': 'ど', '日': 'にち' };
-export const HAS_KANJI = /[㐀-鿿豈-﫿々〆]/; // 〆 counts: it needs a reading (しめ)
+export const HAS_KANJI = /[㐀-鿿豈-﫿々〆]/; // 〆 counts: it needs a reading (しめ)
 
 let tokenizer = null;
 export async function initTokenizer() {

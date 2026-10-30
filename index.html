@@ -789,7 +789,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v761';
+const APP_BUILD='dcd-v762';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -2275,7 +2275,7 @@ function vchip(kind,v){const m={safe:['✓','b-safe'],ask:['?','b-ask'],avoid:['
 // scripts/gloss/build.mjs) is redrawn as furigana plus an English gloss, after rendering, by
 // one observer, so no template has to know about it. The Japanese itself is never changed.
 // JG_RUN must match RUN in scripts/gloss/lib.mjs.
-const JG_RUN=/[぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g;
+const JG_RUN=/[぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g;
 const JG_HAS=/[\u3040-\u30ff\u3400-\u9fff\uff66-\uff9f]/;
 const JG_SKIP='script,style,textarea,input,select,ruby,.jg-wrap,[data-ja-keep],#langBtn';
 const JG_NOGLOSS='[data-jg-nogloss],.mp-ja';

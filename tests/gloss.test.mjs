@@ -49,6 +49,9 @@ test('weekdays in hours read げつ/か/すい…, dates and words keep their re
 
 test('CJK compatibility kanji (﨑) are part of a Japanese run', () => {
   assert.deepEqual('﨑ちゃんラーメン'.match(RUN), ['﨑ちゃんラーメン']);
+  // only U+F900–FAFF: a mistyped range once swept in Hangul and emoji surrogates
+  assert.deepEqual('대盛'.match(RUN), ['盛']);
+  assert.equal('🌿'.match(RUN), null);
 });
 
 test('names get no guessed reading', async () => {
