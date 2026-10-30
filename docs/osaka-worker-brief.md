@@ -18,3 +18,9 @@ HARD RULES (quality is the point; speed comes from parallelism, not shortcuts):
 - Use the existing tools in scripts/ (fetchshop.mjs, gloss/*.mjs) rather than hand-rolling.
 
 DELIVERABLE: in your worktree, scripts/add-osaka-sweep-b<N>.mjs that runs clean and the gloss chunks copied into handoff/ before merging. Do NOT try to write a report file (agents are blocked from writing .md files); put the report in your FINAL MESSAGE instead (shops added/skipped and why, pin decision per shop, every doubt, proposed CITY_READINGS.osaka entries for misread words with your evidence, one Log line for docs/osaka-sweep.md like the existing ones). Gates you must pass in the worktree: node --check, pronoun grep, `?` scan of JA, run the batch, gloss + build.mjs passing, node scripts/build-payload.mjs, and the filtered lint showing nothing for your ids. Your final message is that report. When a claim rests on another record in data/osaka.json (a neighbour in the same building, a sister shop), give that record's id and quote the field you relied on — round 1 named the wrong neighbour once. Don't run smoke-app or bump-build.
+
+LESSONS FROM REVIEWED ROUNDS (the integrator caught each of these; don't repeat them):
+- A JA dish or shop name taken from a search snippet you did not open is unsourced. Names known only in English stay Latin in JA (b197: 天願そば → "Tengan soba").
+- A single-kanji CITY_READINGS key (刻, 極) also matches inside other words (刻み, 極薄). Propose a narrow key: the name in its context (焼鳥 刻, 極2450).
+- Check any "same building as X" claim against X's address_ja in data/osaka.json before relying on it (b195 named the wrong neighbour).
+- A shop's mom_and_pop rests on what a source says about who runs it; quote that line in the report.

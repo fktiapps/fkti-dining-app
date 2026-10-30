@@ -53,7 +53,7 @@ The integrator resets each worktree to main before a round:
    apply reading overrides, `build.mjs`, `build-payload.mjs`, `bump-build.mjs`.
 3. Gates: lint diff against the clean baseline, `npm test`, `smoke-app.mjs`. Commit per batch. Chain the
    commit on the gates (`diff lint_now lint_new && npm test && … && git commit`): on 2026-10-30 a lint
-   failure printed but the commit and push ran anyway (fixed within minutes, v763).
+   failure printed but the commit and push ran anyway (fixed within minutes, v762).
 4. Push once per round and verify `dcd-vNNN` live. Append the Log lines here in osaka-sweep.md and
    update the Phase pointer and memory.
 
