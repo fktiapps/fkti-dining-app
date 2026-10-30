@@ -37,6 +37,20 @@ test('reviewed readings win over the dictionary', async () => {
   assert.equal(read('手打蕎麦処'), '手打(てうち)蕎麦(そば)処(どころ)');
 });
 
+test('weekdays in hours read げつ/か/すい…, dates and words keep their reading', async () => {
+  await initTokenizer();
+  const r = text => furiOf(text, 'osaka').furi.filter(x => x[1]).map(x => x.join(':')).join(' ');
+  assert.match(r('月〜土11:00〜15:00'), /月:げつ 土:ど/);
+  assert.match(r('（月・水〜金 12:30〜16:00）'), /月:げつ 水:すい 金:きん/);
+  assert.match(r('2月〜10月は営業'), /月:がつ 月:がつ/);
+  assert.match(r('河内村の水・創業'), /水:みず/);
+  assert.match(r('誕生日・記念日'), /日:び .*日:び/);
+});
+
+test('CJK compatibility kanji (﨑) are part of a Japanese run', () => {
+  assert.deepEqual('﨑ちゃんラーメン'.match(RUN), ['﨑ちゃんラーメン']);
+});
+
 test('names get no guessed reading', async () => {
   await initTokenizer();
   const [[surface, reading]] = furiOf('姫路市').furi;

@@ -5,7 +5,7 @@ import kuromoji from 'kuromoji';
 
 // A "run" is a maximal stretch of Japanese script inside an English-mode string. Keep this
 // pattern identical to JG_RUN in index.html, or the app will look up runs the build never made.
-export const RUN = /[぀-ヿ㐀-鿿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g;
+export const RUN = /[぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆「『（【][぀-ヿ㐀-鿿豈-﫿ｦ-ﾟ々〆　-〿！-～0-9・ー〜～]*/g; // 豈-﫿 = U+F900–FAFF (﨑)
 
 // Fields that are Japanese by design (shown to drivers or kept as the original), or never
 // shown in the English app. Matched against the dotted path with array indexes removed.
@@ -57,7 +57,8 @@ export const PRICE = /^[約]?[0-9０-９,，.]*円[～〜~]?$/;
 const HAS_JA = /[぀-ゟァ-ヺヽ-ヿ㐀-鿿ｦ-ﾟ]/;
 
 const kata2hira = s => s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
-export const HAS_KANJI = /[㐀-鿿々〆]/; // 〆 counts: it needs a reading (しめ)
+const WEEKDAY = { '月': 'げつ', '火': 'か', '水': 'すい', '木': 'もく', '金': 'きん', '土': 'ど', '日': 'にち' };
+export const HAS_KANJI = /[㐀-鿿豈-﫿々〆]/; // 〆 counts: it needs a reading (しめ)
 
 let tokenizer = null;
 export async function initTokenizer() {
@@ -145,7 +146,7 @@ export const WORD_READINGS = {
 // Readings that differ by city and override WORD_READINGS there: 日本橋 is Nipponbashi in Osaka
 // but Nihonbashi in Tokyo. The glossary is shared, so build.mjs compiles each city separately.
 export const CITY_READINGS = {
-  osaka: { '日本橋': 'にっぽんばし', '広東風': 'かんとんふう', '広東': 'かんとん', '博多風': 'はかたふう', '杏仁': 'あんにん', '旨辛': 'うまから', '油淋鶏': 'ゆーりんちー', '豆豉': 'とうち', '半羽': 'はんば', '牛刺し': 'ぎゅうさし', '海老入り': 'えびいり', '天盛り': 'てんもり', '雲白肉': '', '極2450': '', '極 天ぷら': '', '焼鳥 刻': '', '難波中': 'なんばなか', '彩菜': 'さいさい', '四ツ橋': 'よつばし', '十分': 'じゅうぶん', '甘味噌': 'あまみそ', '牛カツ': 'ぎゅうかつ', 'アンガス牛': 'あんがすぎゅう', '築野': 'つの', '中国語': 'ちゅうごくご', '喫煙所': 'きつえんじょ', '交雑牛': 'こうざつぎゅう', '辛かった': 'からかった', 'つぶ貝': 'つぶがい', '日本酒': 'にほんしゅ', 'sAtori家': '', '土日月': 'どにちげつ', '火水': 'かすい', '池筋': 'いけすじ', '深井': 'ふかい', '中座': 'なかざ', '夕陽ケ丘': 'ゆうひがおか', '夕陽ヶ丘': 'ゆうひがおか', '北久宝寺町': 'きたきゅうほうじまち', '南久宝寺町': 'みなみきゅうほうじまち', '久太郎町': 'きゅうたろうまち',
+  osaka: { '日本橋': 'にっぽんばし', '牛ハラミ': 'ぎゅうはらみ', '広東風': 'かんとんふう', '広東': 'かんとん', '博多風': 'はかたふう', '杏仁': 'あんにん', '旨辛': 'うまから', '油淋鶏': 'ゆーりんちー', '豆豉': 'とうち', '半羽': 'はんば', '牛刺し': 'ぎゅうさし', '海老入り': 'えびいり', '天盛り': 'てんもり', '雲白肉': '', '極2450': '', '極 天ぷら': '', '焼鳥 刻': '', '難波中': 'なんばなか', '彩菜': 'さいさい', '四ツ橋': 'よつばし', '十分': 'じゅうぶん', '甘味噌': 'あまみそ', '牛カツ': 'ぎゅうかつ', 'アンガス牛': 'あんがすぎゅう', '築野': 'つの', '中国語': 'ちゅうごくご', '喫煙所': 'きつえんじょ', '交雑牛': 'こうざつぎゅう', '辛かった': 'からかった', 'つぶ貝': 'つぶがい', '日本酒': 'にほんしゅ', 'sAtori家': '', '土日月': 'どにちげつ', '火水': 'かすい', '池筋': 'いけすじ', '深井': 'ふかい', '中座': 'なかざ', '夕陽ケ丘': 'ゆうひがおか', '夕陽ヶ丘': 'ゆうひがおか', '北久宝寺町': 'きたきゅうほうじまち', '南久宝寺町': 'みなみきゅうほうじまち', '久太郎町': 'きゅうたろうまち',
     // building and shop names inside passages: leave unread
     '旭光荘': '', '旭日': '', '秋月館': '', '篠峯': '', '金久右衛門': '', '韓湯': '', '麺富': '', '麻仁': '', '一夢庵': '', '天蓬八戒': '', '大阪麦風': '', '大吉': '', '中谷': '', '三栄': '', '共栄': '', '寛永': '', '大同': '', '夢彩庵': '', '古樹軒': '', '小洞天': '', '大翔軒': '', '三陽': '', '久留美': '', '五つ星': '', '五ツ星': '', '湯火功夫': '', '燙楽屋': '' },
   kyoto: { '中川政七商店': '', '山利': 'やまり', '賀ら茂ん': 'がらもん', 'てら戸': 'てらど', '出水': 'でみず', '三条御前': 'さんじょうおんまえ', '百万遍': 'ひゃくまんべん', '六角通': 'ろっかくどおり', '神来': 'じんらい', '先斗町': 'ぽんとちょう' },
@@ -209,6 +210,13 @@ export function furiOf(text, city) {
     // 年頃 after a year (1990年頃, 元年頃) is ねんごろ ("around"), not としごろ ("of an age")
     if (s === '年頃' && i && /[0-9０-９元]$/.test(tokens[i - 1].surface_form)) { furi.push([s, 'ねんごろ']); continue; }
     if (s === '頃' && i && /[年月日時]$/.test(tokens[i - 1].surface_form)) { furi.push([s, 'ごろ']); continue; }
+    // a weekday in an hours range or list (月〜土, 水・木, 金土) is げつ/ど/すい…, not つき/つち/みず;
+    // after a number it is a date (2月〜10月, 15日), so that keeps kuromoji's reading; after kana or
+    // another kanji it is part of a word (河内村の水・, 誕生日・, 風月・), so that does too
+    const prevS = i ? tokens[i - 1].surface_form : '';
+    if (WEEKDAY[s] && !/[0-9０-９]$/.test(prevS) && !(/[぀-ヺー-ヿ㐀-鿿]$/.test(prevS) && !WEEKDAY[prevS.slice(-1)]) &&
+        (/^[〜～・、]/.test(tokens[i + 1]?.surface_form || '') || WEEKDAY[tokens[i + 1]?.surface_form] ||
+         (i && (/[〜～・]$/.test(tokens[i - 1].surface_form) || WEEKDAY[tokens[i - 1].surface_form])))) { furi.push([s, WEEKDAY[s]]); continue; }
     if (t.pos_detail_1 === '固有名詞' || t.word_type === 'UNKNOWN' || !t.reading || t.reading === '*') { furi.push([s, '']); needs.push(s); continue; }
     // a suffix on an unread name (姫路|市, 柊|店) stays unread too: half a reading reads as a mistake
     if (t.pos_detail_1 === '接尾' && i && needs.includes(tokens[i - 1].surface_form)) { furi.push([s, '']); continue; }
