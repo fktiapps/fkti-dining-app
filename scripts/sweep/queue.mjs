@@ -37,11 +37,12 @@ if (cmd === 'stats') {
     pending: pending.length, pending_vegan: byPhase('vegan'), pending_ramen: byPhase('ramen'), pending_mom: byPhase('mom'),
   }, null, 1));
 } else if (cmd === 'next') {
-  const [phase = 'any', n = 12] = rest;
-  const list = pending.filter(PHASE[phase] || PHASE.any).sort((a, b) => a.m - b.m).slice(0, +n);
-  for (const r of list) console.log([r.id, r.m + 'm', (r.seats || '?').slice(0, 9), (r.reviews ?? '?') + 'rv', r.rating ?? '', r.ja || r.en, '|', (r.genre || '').slice(0, 60), '|', r.url].join(' '));
+  // optional 4th arg: a circle label (multi-circle sweeps) to work one circle at a time
+  const [phase = 'any', n = 12, circle] = rest;
+  const list = pending.filter(PHASE[phase] || PHASE.any).filter(r => !circle || r.circle === circle).sort((a, b) => a.m - b.m).slice(0, +n);
+  for (const r of list) console.log([r.id, r.m + 'm' + (r.circle ? '@' + r.circle : ''), (r.seats || '?').slice(0, 9), (r.reviews ?? '?') + 'rv', r.rating ?? '', r.ja || r.en, '|', (r.genre || '').slice(0, 60), '|', r.url].join(' '));
 } else if (cmd === 'mark') {
   const [id, st, ...why] = rest;
   fs.appendFileSync(STATUS, JSON.stringify({ id, status: st, reason: why.join(' ') || null, at: new Date().toISOString().slice(0, 10) }) + '\n');
   console.log('marked', id, st);
-} else { console.error('usage: queue.mjs <city> stats | next <phase> [n] | mark <id> <status> [reason]'); process.exit(1); }
+} else { console.error('usage: queue.mjs <city> stats | next <phase> [n] [circle] | mark <id> <status> [reason]'); process.exit(1); }

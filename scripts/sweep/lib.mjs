@@ -13,6 +13,15 @@ export const sleep = ms => new Promise(z => setTimeout(z, ms));
 export function cityDir(city) { return path.resolve('scripts/sweep', city); }
 export function loadConfig(city) { return JSON.parse(fs.readFileSync(path.join(cityDir(city), 'config.json'), 'utf8')); }
 
+// Distance from a sweep's centre, or with config.circles, to the nearest circle's centre (all circles
+// in one sweep share radius_m, so "inside" stays m <= radius_m).
+export const distOf = (cfg, lat, lng) => cfg.circles
+  ? Math.min(...cfg.circles.map(c => hav(c.center[0], c.center[1], lat, lng)))
+  : hav(cfg.center[0], cfg.center[1], lat, lng);
+export const nearestCircle = (cfg, lat, lng) => cfg.circles
+  ? cfg.circles.reduce((b, c) => (hav(c.center[0], c.center[1], lat, lng) < hav(b.center[0], b.center[1], lat, lng) ? c : b)).label
+  : cfg.center_label;
+
 export const hav = (a, b, c, d) => {
   const R = 6371000, r = Math.PI / 180;
   const x = (d - b) * r * Math.cos((a + c) / 2 * r), y = (c - a) * r;
@@ -59,6 +68,7 @@ export function parseShop(h) {
 
 // Tabelog ids already present in a city's data (any field mentioning the id).
 export function idsInCity(city) {
+  if (fs.existsSync(path.join(cityDir(city), 'config.json'))) city = loadConfig(city).data_city || city;
   const files = [`data/${city}.json`, `data/${city}_menus.json`].filter(f => fs.existsSync(f));
   const blob = files.map(f => fs.readFileSync(f, 'utf8')).join('');
   return new Set([...blob.matchAll(/\/(\d{8})\//g)].map(m => m[1]));

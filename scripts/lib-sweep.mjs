@@ -11,12 +11,14 @@ export { gm, it, day } from './lib-ginza-sweep.mjs';
 
 export function openCitySweep(city, date, batch) {
   const cfg = JSON.parse(fs.readFileSync(`scripts/sweep/${city}/config.json`, 'utf8'));
+  // A sweep folder can feed another city's data (osaka-kita → data/osaka.json): config.data_city.
+  const sweepDir = city; city = cfg.data_city || city;
   const file = `data/${city}.json`; const raw = fs.readFileSync(file, 'utf8'); const d = JSON.parse(raw);
   const mf = `data/${city}_menus.json`; const menus = fs.existsSync(mf) ? JSON.parse(fs.readFileSync(mf, 'utf8')) : {};
   const qf = 'data/_underrated_queue.json'; const queue = JSON.parse(fs.readFileSync(qf, 'utf8'));
   const ja = readLang(city, 'ja');
   const SWEEP = { name: cfg.sweep_name, center: cfg.center_label, radius_m: cfg.radius_m, date };
-  const statusFile = `scripts/sweep/${city}/queue-status.jsonl`;
+  const statusFile = `scripts/sweep/${sweepDir}/queue-status.jsonl`;
   const log = [], doneIds = [];
   const put = (place, menu, jaFields, upgrade) => {
     Object.assign(place, { has_menu: true, menu_verified: menu.verified, ...counts(menu.items), sweep: SWEEP });
