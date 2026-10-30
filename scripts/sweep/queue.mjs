@@ -1,7 +1,7 @@
 // Step 3: the work queue. Reads shops.jsonl (crawl cache) + queue-status.jsonl (done/skipped log,
 // latest line per id wins) + the city's data, and answers "what is left".
 //   node scripts/sweep/queue.mjs <city> stats
-//   node scripts/sweep/queue.mjs <city> next <phase> [n]     phase: vegan | ramen | mom | rest | any
+//   node scripts/sweep/queue.mjs <city> next <phase> [n]     phase: vegan | ramen | mom | core | notable | rest | any
 //   node scripts/sweep/queue.mjs <city> mark <id> <done|skipped|deferred> [reason...]
 // Candidates are in-radius shops not already in data/<city>.json and not done/skipped, sorted by
 // distance from the centre — so a partial sweep is always a complete smaller circle.
@@ -21,7 +21,9 @@ const isVegan = r => r.vegtag || /Vegetarian|Vegan|Macrobiotic/i.test(r.genre ||
 const seatsOf = r => parseInt(r.seats) || null;
 const isMom = r => { const s = seatsOf(r); return s !== null && s <= 20; };
 const isNotable = r => !!r.award || (r.rating || 0) >= 3.5 || (r.reviews || 0) >= 200;
-const PHASE = { vegan: isVegan, ramen: isRamen, mom: isMom, notable: isNotable, rest: () => true, any: () => true };
+// core = what the Dotonbori sweep did first (vegan, ramen, small shops), with enough reviews to verify
+const isCore = r => (isVegan(r) || isRamen(r) || isMom(r)) && (r.reviews || 0) >= 30;
+const PHASE = { vegan: isVegan, ramen: isRamen, mom: isMom, notable: isNotable, core: isCore, rest: () => true, any: () => true };
 const closed = r => /closed|移転|閉店/i.test(r.badge || '');
 
 const inside = [...shops.values()].filter(r => r.http === 200 && r.m !== undefined && r.m <= cfg.radius_m);
