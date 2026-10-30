@@ -40,7 +40,7 @@ The integrator resets each worktree to main before a round:
 5. `node scripts/build-payload.mjs` and the lint, filtered:
    `node scripts/lint-data.mjs 2>&1 | grep -vE 'tier-write|tier writes|lib-tiers.test|Test Shop|went against the human gate'`
    must print nothing new for your ids.
-6. Write `handoff/report.md`: each shop added or skipped (with reason), any doubt about a claim, the
+6. Report in the final message (agents cannot write .md files): each shop added or skipped (with reason), any doubt about a claim, the
    pin decision per shop, proposed reading overrides, and a one-line Log entry for docs/osaka-sweep.md
    in the house style. Copy the batch script into `handoff/` too.
 
