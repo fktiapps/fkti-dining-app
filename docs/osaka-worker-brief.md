@@ -24,3 +24,4 @@ LESSONS FROM REVIEWED ROUNDS (the integrator caught each of these; don't repeat 
 - A single-kanji CITY_READINGS key (刻, 極) also matches inside other words (刻み, 極薄). Propose a narrow key: the name in its context (焼鳥 刻, 極2450).
 - Check any "same building as X" claim against X's address_ja in data/osaka.json before relying on it (b195 named the wrong neighbour).
 - A shop's mom_and_pop rests on what a source says about who runs it; quote that line in the report.
+- Company and building names with kanji (ミツヤ食品工業, 丸勝ビル) are names: keep them as written in English text, never romanised ("Shokuhin Kogyo") unless a source gives the romaji (b213).
