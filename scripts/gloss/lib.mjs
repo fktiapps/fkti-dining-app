@@ -28,9 +28,17 @@ export function isJapaneseString(v) {
   return ja > 0 && (ja >= 2 * latin || (ja >= latin && v.length > 60));
 }
 
+// Ids of a city's hidden places. The app never shows them (index.html: if(p.hidden) return false),
+// so their text needs no gloss until research unhides them; a layer keyed by place id (menus)
+// is skipped for these ids too.
+export function hiddenIds(city) {
+  return new Set((readJson(`data/${city}.json`, {}).places || []).filter(p => p.hidden).map(p => p.id));
+}
+
 // Calls fn(unit, wholeString, fieldPath, isWhole) for every displayed Japanese unit in a parsed
-// file: the whole (trimmed) string when it is mostly Japanese, else each run.
-export function eachRun(data, fn) {
+// file: the whole (trimmed) string when it is mostly Japanese, else each run. Hidden places and
+// entries keyed by an id in skip are passed over.
+export function eachRun(data, fn, skip = new Set()) {
   (function walk(v, p) {
     if (typeof v === 'string') {
       if (SKIP_FIELD.test(p)) return;
@@ -39,7 +47,7 @@ export function eachRun(data, fn) {
       if (isJapaneseString(v)) { if (!PRICE.test(v.trim())) fn(v.trim(), v, p, true); return; }
       for (const r of v.match(RUN)) if (HAS_JA.test(r) && !PRICE.test(r)) fn(r, v, p, false);
     } else if (Array.isArray(v)) v.forEach(x => walk(x, p));
-    else if (v && typeof v === 'object') for (const k in v) walk(v[k], p ? `${p}.${k}` : k);
+    else if (v && typeof v === 'object' && !v.hidden) for (const k in v) if (!skip.has(k)) walk(v[k], p ? `${p}.${k}` : k);
   })(data, '');
 }
 
@@ -145,6 +153,9 @@ export const CITY_READINGS = {
   nagoya: { '名古屋能楽堂内': 'なごやのうがくどうない', '知多牛': 'ちたぎゅう', '三つ星': 'みつぼし', '麻': 'ま', '島': 'しま', '丈': 'じょう', '上天丈': '', '土': 'つち', '向': '', '札': 'ふだ', '肝': 'きも', '茸': 'きのこ', '蔵': 'くら', '具に': 'ぐに', '日間賀島': 'ひまかじま', '淡海': 'おうみ', '一色': 'いっしき', '右近': '',
     // shop, brand and person names inside passages (sourced romaji where read)
     '鮨 極 ': 'すし きわみ ', '『極』': '『きわみ』', '司 極 ': 'し きわみ ', '風月': 'ふうげつ', '錦爽': 'きんそう', '懐韻': 'かいいん', '白雲館': 'はくうんかん', '中黄金': '', '徳粉': '', '松': '', '空': '', '又': '', '粋': '' },
+  tokyo: { '佛蘭西': 'ふらんす', '版面の行': 'はんめんのぎょう', '円以上': 'えんいじょう', '蒲の穂': 'がまのほ', '丁目': 'ちょうめ', '買参権': 'ばいさんけん', '後かけ': 'あとかけ', '「然」': '「ぜん」', '佛跳牆': 'ぶっちょうしょう', '鍛冶橋': 'かじばし', '生薬': 'しょうやく', '宝物': 'たからもの', '久寿餅': 'くずもち', '鯔': 'ぼら', '月頃': 'がつごろ', '刷く': 'はく', '三定': 'さんさだ', '行の対応': 'ぎょうのたいおう', '持込': 'もちこみ', '真丈': 'しんじょう', '萬年堂': 'まんねんどう', '熟蜜': 'じゅくみつ', '生そば': 'きそば', '捏ね': 'こね', '芋環': 'おだまき', '酢橘': 'すだち', '盛付': 'もりつけ', '円から': 'えんから', '腐乳': 'ふにゅう', '白州': 'はくしゅう', '焦し': 'こがし', '開花楼': 'かいかろう', '和物雑貨': 'わものざっか', '黒糖羹': 'こくとうかん',
+    // shop, brand, building and dish names inside passages with no sourced reading: leave unread
+    '出水': '', '小山': '', '叙々苑': '', '茶沢': '', '竜王ビル': '', '華立ビル': '', '花車': '', '干豆腐': '', '忍」': '', '烏冬': '', '花捲': '', '肉圓': '', '本鷹': '', '葱抓餅': '', '花生湯': '', '新大宗': '', '盤餛飩': '', '肋條': '', 'ろく助': '', '巻雲酥': '', '大曲': '', '一反木麺': '', '黒蜜法師': '', '牌蛠': '', '麺好い': '' },
 };
 const wordsRe = {};
 // A city's own shop, person and place names (glossary entries marked name: true, two or more
@@ -158,10 +169,11 @@ function namesFor(city) {
   if (!NAMES_FROM_GLOSSARY.has(city)) return {};
   if (cityNames[city]) return cityNames[city];
   const src = readJson(GLOSS_SRC, {}), out = {};
+  const skip = hiddenIds(city);
   for (const f of cityFiles(city))
     eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), run => {
       if (src[run]?.name && run.length >= 2 && HAS_KANJI.test(run) && !(run in WORD_READINGS)) out[run] = '';
-    });
+    }, skip);
   return (cityNames[city] = out);
 }
 const readingsFor = city => ({ ...namesFor(city), ...WORD_READINGS, ...(CITY_READINGS[city] || {}) });

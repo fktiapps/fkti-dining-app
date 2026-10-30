@@ -4,7 +4,7 @@
 //   node scripts/gloss/extract.mjs himeji [more cities…]
 //   → data/gloss/_worklist.json (full) and data/gloss/_worklist.tsv (one line per run, for review)
 import fs from 'node:fs';
-import { cityFiles, eachRun, furiOf, initTokenizer, GLOSS_SRC, readJson } from './lib.mjs';
+import { cityFiles, eachRun, hiddenIds, furiOf, initTokenizer, GLOSS_SRC, readJson } from './lib.mjs';
 
 const cities = process.argv.slice(2);
 if (!cities.length) { console.error('usage: extract.mjs <city> [city…]'); process.exit(1); }
@@ -17,7 +17,7 @@ for (const city of cities) for (const f of cityFiles(city))
     e.whole ||= isWhole;
     if (e.ex.length < 2 && !e.ex.includes(v)) e.ex.push(v.length > 220 ? v.slice(0, 220) + '…' : v);
     seen.set(r, e);
-  });
+  }, hiddenIds(city));
 
 await initTokenizer();
 const have = readJson(GLOSS_SRC, {});

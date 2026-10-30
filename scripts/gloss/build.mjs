@@ -16,7 +16,7 @@
 //
 //   node scripts/gloss/build.mjs
 import fs from 'node:fs';
-import { cityFiles, eachRun, furiOf, initTokenizer, GLOSS_SRC, COVERED, readJson } from './lib.mjs';
+import { cityFiles, eachRun, hiddenIds, furiOf, initTokenizer, GLOSS_SRC, COVERED, readJson } from './lib.mjs';
 
 await initTokenizer();
 const src = readJson(GLOSS_SRC, {});
@@ -37,7 +37,7 @@ for (const city of readJson(COVERED, [])) {
   for (const f of cityFiles(city))
     eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), run => {
       if (src[run]) out[run] = compile(run, city); else missing.add(run);
-    });
+    }, hiddenIds(city));
   if (missing.size) {
     failed = true;
     console.error(`${city}: ${missing.size} runs not in ${GLOSS_SRC} — run scripts/gloss/extract.mjs ${city}`);

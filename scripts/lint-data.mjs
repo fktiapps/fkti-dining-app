@@ -190,11 +190,11 @@ const p = console.log;
 // Japanese to an English reader, so it is an error. Fix: scripts/gloss/extract.mjs <city>,
 // review, merge, build.
 {
-  const { cityFiles, eachRun, GLOSS_SRC, COVERED, readJson } = await import('./gloss/lib.mjs');
+  const { cityFiles, eachRun, hiddenIds, GLOSS_SRC, COVERED, readJson } = await import('./gloss/lib.mjs');
   const gloss = readJson(GLOSS_SRC, {});
   for (const city of readJson(COVERED, [])) {
     const missing = new Set();
-    for (const f of cityFiles(city)) eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), r => { if (!gloss[r]) missing.add(r); });
+    for (const f of cityFiles(city)) eachRun(JSON.parse(fs.readFileSync(`data/${f}`, 'utf8')), r => { if (!gloss[r]) missing.add(r); }, hiddenIds(city));
     if (missing.size) err(city, `${missing.size} Japanese run(s) shown in English mode have no gloss, e.g. ${[...missing].slice(0, 3).join(' / ')} — run scripts/gloss/extract.mjs ${city}`);
     if (!fs.existsSync(`data/gloss/en-${city}.json`)) err(city, 'covered for gloss but data/gloss/en-' + city + '.json is missing — run scripts/gloss/build.mjs');
   }
