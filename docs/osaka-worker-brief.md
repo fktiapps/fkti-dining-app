@@ -25,3 +25,5 @@ LESSONS FROM REVIEWED ROUNDS (the integrator caught each of these; don't repeat 
 - Check any "same building as X" claim against X's address_ja in data/osaka.json before relying on it (b195 named the wrong neighbour).
 - A shop's mom_and_pop rests on what a source says about who runs it; quote that line in the report.
 - Company and building names with kanji (ミツヤ食品工業, 丸勝ビル) are names: keep them as written in English text, never romanised ("Shokuhin Kogyo") unless a source gives the romaji (b213).
+- Place names known only from English reviews (Kumamoto, Amakusa, Tajima, Ezo) stay Latin in JA too — never 熊本/天草 unless a Japanese source writes them (b216).
+- Remarks about overseas visitors or foreign customers: while Greg's decision on them is pending, record them like any other sourced fact; don't drop them on your own (dropping true info is a content rule only Greg can make).
