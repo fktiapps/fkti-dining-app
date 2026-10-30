@@ -450,6 +450,7 @@ li.uncited{color:#7c8299}
  <div class="filters">
   <div class="frow">
    <div class="search" id="searchWrap">🔍<input id="search" placeholder="Filter or type city + Go…" data-i18n-placeholder="search.ph" autocomplete="off" inputmode="search"/><button id="searchGo" style="flex:0 0 auto;font-size:12px;font-weight:700;color:var(--ver);padding:0 2px 0 6px;border-left:1px solid var(--line)" data-i18n="search.go">Go</button></div>
+   <button class="chip card-chip" id="askBtn" data-i18n="nav.ask">✨ Ask</button>
    <button class="chip card-chip" id="cardsBtn" data-i18n="nav.staff">🪪 Show staff</button>
    <button class="chip card-chip" id="chainsBtn" data-i18n="nav.chains">🏪 Chains</button>
    <button class="chip card-chip" id="phrasesBtn" data-i18n="nav.phrases">🗣 Phrases</button>
@@ -632,6 +633,16 @@ li.uncited{color:#7c8299}
  <div class="row"><button id="pickSend" style="background:var(--ver);color:#fff;display:none" data-i18n="rq.send">Send for research</button><button id="pickCancel" style="background:var(--paper2)" data-i18n="rq.cancel">Cancel</button></div>
 </div>
 
+<div class="modal" id="askModal">
+ <div class="box">
+  <button class="closex" id="askClose">×</button>
+  <h2 data-i18n="ask.title">✨ Ask</h2>
+  <p style="margin:2px 0 0;font-size:13px" data-i18n="ask.intro">Describe what you want in your own words. The answer comes only from places in this app, with the reasons from each record — always confirm gluten and vegan needs with staff.</p>
+  <textarea class="rq-in" id="askQ" rows="3" maxlength="400" placeholder="e.g. a salt-based ramen that probably uses very little soy" data-i18n-placeholder="ask.ph"></textarea>
+  <button class="rq-btn" id="askGo" style="background:var(--ver);color:#fff" data-i18n="ask.go">Ask</button>
+  <div id="askOut"></div>
+ </div>
+</div>
 <div class="modal" id="chainsModal">
  <div class="box">
   <button class="closex" id="chainsClose">×</button>
@@ -778,7 +789,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v754';
+const APP_BUILD='dcd-v755';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -904,6 +915,9 @@ const STRINGS_JA={
  'card.intro':'スマートフォンをスタッフに渡してください — 日本語で食事制限を説明するカードで、見落としがちなポイント（醤油に隠れた小麦、ほぼすべてに使われる魚だしなど）も含まれています。',
  'card.celiac':'セリアック病／グルテンフリー','card.vegan':'ヴィーガン','card.brighttip':'ヒント：画面の明るさを上げて読みやすくしてください。',
  'scan.title':'📷 メニューをスキャン',
+ 'nav.ask':'✨ 質問する','ask.title':'✨ 質問する','ask.go':'質問する',
+ 'ask.intro':'探しているお店を自由な言葉で書いてください。答えはこのアプリに載っているお店だけから、各お店の記録にある理由とともに返します。グルテン・ヴィーガンについては必ずお店の人に確認してください。',
+ 'ph:ask.ph':'例：醤油をほとんど使っていない塩ラーメン',
  'nav.suggest':'➕ お店を提案','rq.title':'➕ お店を提案する',
  'rq.intro':'アプリに載っていないお店を見つけましたか？送っていただければ、他のお店と同じ基準で調べます — グルテンフリー・ヴィーガンの根拠、メニュー、お店の人。通常1日以内に掲載されます。',
  'ph:rq.name':'店名（わかれば・任意）','ph:rq.note':'伝えたいこと（任意）',
@@ -2086,6 +2100,38 @@ function openResearch(){
  document.getElementById('researchModal').classList.add('show');
  renderRequests();
 }
+// ---------- ✨ Ask: natural-language search over the app's own data (functions/api/ask.js) ----------
+function openAsk(){ document.getElementById('askModal').classList.add('show'); setTimeout(()=>document.getElementById('askQ').focus(),50); }
+async function runAsk(){
+ const q=document.getElementById('askQ').value.trim(), out=document.getElementById('askOut');
+ if(q.length<3) return;
+ const ja=state.lang==='ja', msg=h=>{out.innerHTML='<div class="rq-msg">'+h+'</div>';};
+ msg(ja?'検索中… (10〜30秒ほど)':'Searching… (10–30 seconds)');
+ const cities=(MANIFEST?MANIFEST.cities.filter(cityUnlocked).map(c=>c.id):[]);
+ let d;
+ try{
+  const r=await fetch('/api/ask',{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+rqToken()},body:JSON.stringify({q,cities,lang:state.lang})});
+  d=await r.json();
+ }catch(_){ return msg(ja?'接続できませんでした。もう一度お試しください。':'Could not connect. Please try again.'); }
+ if(d.wired===false) return msg(ja?'この機能はまだ準備中です。':'This feature is not switched on yet.');
+ if(d.error==='login_required') return msg(ja?'ログインが必要です。':'Please log in to use Ask.');
+ if(d.error==='daily_limit') return msg(ja?'今日の質問の上限に達しました。':'You have reached today’s limit of questions.');
+ if(d.error) return msg(ja?'うまくいきませんでした。もう一度お試しください。':'Something went wrong. Please try again.');
+ const cityName=id=>{const c=manifestCity(id);return (c&&c.name)||id;};
+ out.innerHTML='<div class="rq-msg">'+escHtml(d.answer||'')+'</div>'+(d.picks||[]).map(p=>
+  '<div class="rq-item" style="cursor:pointer;margin-top:8px" data-askcity="'+escHtml(p.city)+'" data-askid="'+escHtml(p.id)+'"><b>'+escHtml(p.name)+'</b> <span style="color:var(--muted);font-size:12px">'+escHtml(cityName(p.city))+(p.neighborhood?' · '+escHtml(p.neighborhood):'')+'</span>'+
+  '<div style="font-size:12px;margin-top:2px">🌾 '+escHtml(p.gf||'?')+' · 🌱 '+escHtml(p.vegan||'?')+'</div>'+
+  '<div style="font-size:13px;margin-top:4px">'+escHtml(p.why||'')+'</div></div>').join('');
+ out.querySelectorAll('[data-askid]').forEach(el=>el.onclick=()=>openAskPick(el.dataset.askcity,el.dataset.askid));
+}
+async function openAskPick(city,id){
+ const c=manifestCity(city); if(!c||!(await ensureCity(c))) return;
+ switchCity(city);
+ document.getElementById('askModal').classList.remove('show');
+ const p=findPlace(id); if(!p) return;
+ if(map) map.setView([p.lat,p.lng],16);
+ selectPlace(id);
+}
 function rqMsg(html){ document.getElementById('rqOut').innerHTML='<div class="rq-msg">'+html+'</div>'; }
 function getPosition(){
  return new Promise((resolve,reject)=>{
@@ -2811,6 +2857,11 @@ function wire(){
  smf.onchange=e=>{const f=e.target.files&&e.target.files[0]; if(f) scanMenu(f,null,'scanModalOut'); smf.value='';};
  // "Suggest a place": storefront photo or map tap -> research queue (functions/api/research-request.js)
  addTouch(document.getElementById('addFab'),openResearch);
+ addTouch(document.getElementById('askBtn'),openAsk);
+ addTouch(document.getElementById('askGo'),runAsk);
+ document.getElementById('askQ').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();runAsk();}};
+ document.getElementById('askClose').onclick=()=>document.getElementById('askModal').classList.remove('show');
+ document.getElementById('askModal').onclick=e=>{if(e.target.id==='askModal')e.target.classList.remove('show');};
  document.getElementById('researchClose').onclick=()=>document.getElementById('researchModal').classList.remove('show');
  document.getElementById('researchModal').onclick=e=>{if(e.target.id==='researchModal')e.target.classList.remove('show');};
  const rpf=document.getElementById('rqPhotoFile');

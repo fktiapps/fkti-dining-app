@@ -106,3 +106,8 @@ fs.writeFileSync('data/manifest.json', JSON.stringify(manifest, null, 1));
 
 console.log(`\n  install payload ${(totalFull / 1e6).toFixed(1)}MB -> ${(totalPins / 1e6).toFixed(1)}MB ` +
             `(${Math.round(100 * totalPins / totalFull)}%), ${chunkCount} detail chunks fetched on demand`);
+
+// The "Ask" search index (functions/api/ask.js) is derived from the same city files, so it is
+// rebuilt here: every sweep batch already runs this script, and a stale index would leave new
+// places unaskable.
+await import('./build-ask-index.mjs');
