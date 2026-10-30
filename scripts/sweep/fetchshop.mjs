@@ -9,7 +9,7 @@ const text = h => h.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[
   .replace(/<br\s*\/?>/gi, '\n').replace(/<\/(p|div|li|h\d|tr|dt|dd|th|td)>/gi, '\n').replace(/<[^>]+>/g, ' ')
   .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'")
   .split('\n').map(s => s.replace(/\s+/g, ' ').trim()).filter(Boolean).join('\n');
-const get = async u => { const r = await fetch(u, { headers: UA }); await sleep(1100); return { s: r.status, h: await r.text() }; };
+const get = async u => { const r = await fetch(u, { headers: UA }); await sleep(+process.env.FETCH_DELAY_MS || 1100); return { s: r.status, h: await r.text() }; };
 for (const U of URLS) {
   const id = U.match(/\/(\d+)\/?$/)[1]; const dir = `${OUT}/${id}`; fs.mkdirSync(dir, { recursive: true });
   const { s, h } = await get(U); fs.writeFileSync(`${dir}/listing.txt`, `URL ${U}\nHTTP ${s}\n` + text(h));

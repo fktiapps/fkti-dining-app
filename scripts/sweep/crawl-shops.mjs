@@ -11,6 +11,9 @@ const cfg = loadConfig(city); const dir = cityDir(city);
 const SHOPS = path.join(dir, 'shops.jsonl');
 const have = new Set(readJsonl(SHOPS).map(r => r.id));
 const todo = readJsonl(path.join(dir, 'lists.jsonl')).filter(r => !have.has(r.id) && (!onlyGenre || r.genre_list === onlyGenre));
+// Round-robin across list areas, so every circle of a multi-circle sweep starts filling at once.
+{ const by = new Map(); for (const r of todo) { if (!by.has(r.area)) by.set(r.area, []); by.get(r.area).push(r); }
+  const qs = [...by.values()]; todo.length = 0; for (let i = 0; qs.some(q => i < q.length); i++) for (const q of qs) if (i < q.length) todo.push(q[i]); }
 console.log('to fetch', Math.min(todo.length, max), 'of', todo.length);
 let n = 0, inside = 0;
 for (const r of todo.slice(0, max)) {

@@ -1,0 +1,94 @@
+{
+ "city": "tokyo-gaps",
+ "data_city": "tokyo",
+ "name": "Tokyo",
+ "sweep_name": "tokyo-gaps-1mi",
+ "center_label": "Roppongi / Yotsuya / Ningyocho / Ueno",
+ "center": [
+  35.663315,
+  139.7327813
+ ],
+ "radius_m": 1609,
+ "pref": "tokyo",
+ "circles": [
+  {
+   "label": "roppongi",
+   "center": [
+    35.663315,
+    139.7327813
+   ],
+   "source": "OSM Nominatim 六本木駅 subway_entrance node/1509876354, fetched 2026-10-30"
+  },
+  {
+   "label": "yotsuya",
+   "center": [
+    35.6862052,
+    139.7294825
+   ],
+   "source": "OSM Nominatim 四ツ谷駅 2番出入口 way/1347762468, fetched 2026-10-30"
+  },
+  {
+   "label": "ningyocho",
+   "center": [
+    35.6862799,
+    139.7821879
+   ],
+   "source": "OSM Nominatim 人形町 railway station node/1926355396, fetched 2026-10-30"
+  },
+  {
+   "label": "ueno",
+   "center": [
+    35.7140413,
+    139.7771164
+   ],
+   "source": "OSM Nominatim 上野駅 landuse=railway way/85395094, fetched 2026-10-30"
+  }
+ ],
+ "asked": "Greg 2026-10-30: \"four more starting to fill in the areas between the existing Tokyo circles.\" Gaps chosen by counting existing Tokyo records within 1 mile of candidate centres (Roppongi, Yotsuya, Ningyocho: 0; Ueno: 61, between the Akihabara and Asakusa clusters).",
+ "areas": [
+  {
+   "code": "A1307/A130701",
+   "name": "Roppongi & Nogizaka & Nishi-Azabu"
+  },
+  {
+   "code": "A1307/A130702",
+   "name": "Azabujuban"
+  },
+  {
+   "code": "A1308/A130801",
+   "name": "Akasaka"
+  },
+  {
+   "code": "A1309/A130902",
+   "name": "Yotsuya"
+  },
+  {
+   "code": "A1309/A130903",
+   "name": "Akebonobashi & Yotsuya-Sanchome"
+  },
+  {
+   "code": "A1309/A130904",
+   "name": "Ichigaya"
+  },
+  {
+   "code": "A1309/A130901",
+   "name": "Sendagaya & Shinanomachi"
+  },
+  {
+   "code": "A1302/A130204",
+   "name": "Ningyocho & Kodenmacho"
+  },
+  {
+   "code": "A1302/A130203",
+   "name": "Kayabacho & Hatchobori"
+  },
+  {
+   "code": "A1311/A131101",
+   "name": "Ueno & Okachimachi & Yushima"
+  },
+  {
+   "code": "A1311/A131104",
+   "name": "Uguisudani & Iriya"
+  }
+ ]
+}

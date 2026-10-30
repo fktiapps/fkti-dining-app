@@ -20,7 +20,8 @@ const isRamen = r => /Ramen|Tsukemen|Abura-soba|Maze-soba|Tantanmen/i.test(r.gen
 const isVegan = r => r.vegtag || /Vegetarian|Vegan|Macrobiotic/i.test(r.genre || '') || r.genre_list === 'vegan-seed';
 const seatsOf = r => parseInt(r.seats) || null;
 const isMom = r => { const s = seatsOf(r); return s !== null && s <= 20; };
-const PHASE = { vegan: isVegan, ramen: isRamen, mom: isMom, rest: () => true, any: () => true };
+const isNotable = r => !!r.award || (r.rating || 0) >= 3.5 || (r.reviews || 0) >= 200;
+const PHASE = { vegan: isVegan, ramen: isRamen, mom: isMom, notable: isNotable, rest: () => true, any: () => true };
 const closed = r => /closed|移転|閉店/i.test(r.badge || '');
 
 const inside = [...shops.values()].filter(r => r.http === 200 && r.m !== undefined && r.m <= cfg.radius_m);
@@ -39,7 +40,7 @@ if (cmd === 'stats') {
 } else if (cmd === 'next') {
   // optional 4th arg: a circle label (multi-circle sweeps) to work one circle at a time
   const [phase = 'any', n = 12, circle] = rest;
-  const list = pending.filter(PHASE[phase] || PHASE.any).filter(r => !circle || r.circle === circle).sort((a, b) => a.m - b.m).slice(0, +n);
+  const list = pending.filter(PHASE[phase] || PHASE.any).filter(r => !circle || r.circle === circle).sort(phase === 'notable' ? (a, b) => (!!b.award - !!a.award) || ((b.rating || 0) - (a.rating || 0)) || ((b.reviews || 0) - (a.reviews || 0)) : (a, b) => a.m - b.m).slice(0, +n);
   for (const r of list) console.log([r.id, r.m + 'm' + (r.circle ? '@' + r.circle : ''), (r.seats || '?').slice(0, 9), (r.reviews ?? '?') + 'rv', r.rating ?? '', r.ja || r.en, '|', (r.genre || '').slice(0, 60), '|', r.url].join(' '));
 } else if (cmd === 'mark') {
   const [id, st, ...why] = rest;

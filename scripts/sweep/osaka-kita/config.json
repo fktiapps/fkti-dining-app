@@ -1,0 +1,58 @@
+{
+ "city": "osaka-kita",
+ "data_city": "osaka",
+ "name": "Osaka",
+ "sweep_name": "osaka-kita-1mi",
+ "center_label": "Osaka Station / Shin-Osaka",
+ "center": [
+  34.7025087,
+  135.4961773
+ ],
+ "radius_m": 1609,
+ "pref": "osaka",
+ "circles": [
+  {
+   "label": "umeda",
+   "center": [
+    34.7025087,
+    135.4961773
+   ],
+   "source": "OSM Nominatim 大阪駅 building/train_station relation/17915329, fetched 2026-10-30"
+  },
+  {
+   "label": "shin-osaka",
+   "center": [
+    34.7334854,
+    135.4978876
+   ],
+   "source": "OSM Nominatim 新大阪駅 (宮原一丁目) node/13908950583, fetched 2026-10-30"
+  }
+ ],
+ "asked": "Greg 2026-10-30: \"4 agents working on 1-mile circles (likely overlapping) around Osaka Station and Shin-Osaka station.\"",
+ "areas": [
+  {
+   "code": "A2701/A270101",
+   "name": "Osaka Station & Umeda & Shinchi"
+  },
+  {
+   "code": "A2701/A270108",
+   "name": "Fukushima & Noda"
+  },
+  {
+   "code": "A2701/A270103",
+   "name": "Minamimorimachi & Tenma & Tenjin"
+  },
+  {
+   "code": "A2701/A270102",
+   "name": "Kitahama & Yodoyabashi & Higobashi"
+  },
+  {
+   "code": "A2701/A270301",
+   "name": "Shin-Osaka Station Area"
+  },
+  {
+   "code": "A2701/A270302",
+   "name": "Tsukamoto & Jyuso & Mikuni"
+  }
+ ]
+}
