@@ -603,3 +603,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw3-24 (2026-11-02, lane id mod 4 = 2, core backlog): Cafe BOHEMIA, 日本料理 弁慶 (Hotel Nikko; moved 5 m off the hotel cluster), 花華. Skipped 串かつ料理 活 (7).
 - tokyo-gaps osw12-25 (2026-11-02, Ueno): 炭火焼鳥 駿 (couple), 鉄板ビストロ ラフ+たす, Woodwork Welcome Coffee, スコッチバー ノア (owner-run 50+ years). No skips.
 - osaka-kita osw7-24 (2026-11-02, Shin-Osaka even, notable): さかなやのmaru寿司 (2 shops), ラム・ジェネレーション (pin moved to GSI off 新田), ベジョータ マス, yanaken boo. Skipped ニュー焼肉食堂匠 (group in data). Also: stacked-pin gate allows decreases.
+- osw2-23 (2026-11-02, lane id mod 4 = 1, core backlog): 手羽先の羽 (2 shops), Noeud. × THE CHEF'S (vegan course), スパイスキング8848, PASTA+ En to En. Skipped どぎゃん 立売堀店 (in data).
