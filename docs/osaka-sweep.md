@@ -470,3 +470,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw7-13 (2026-11-02, Shin-Osaka even): 人類みな麺類 つけ麺専門店 (sister format), ラッキー酒場. Skipped 七宝麻辣湯 (~70 shops), きりん寺 (in data), まんしゅう (5 shops), 味悟空 東淀川駅前店 (branch of a brand in data).
 - osw3-14 (2026-11-02, lane id mod 4 = 2): さかなのじんべえ なんば店 (Restaurant Bank group, only shop of its concept; group site compromised, not cited), SAKE NERD (5 m offset from Micasadeco), オオサカチャオメン, 楽洛亭 本店 (70+ years). No skips.
 - osw4-14 (2026-11-02, lane id mod 4 = 3): 串揚げ専門店 健串, 空色COLOR, AVOCADO HOUSE NAMBA, 肉處 きっしゃん なんば店 (3-shop group, none in data). No skips.
+- tokyo-gaps osw10-8 (2026-11-02, Yotsuya): 支那そば屋 こうや (1983), 俵コロッケ四ツ谷さくらい (one-person counter), 炭火魚 旬彩料理 坂本, FISH A WEEK 週一魚 (Kikkoman's first shop). No skips.
