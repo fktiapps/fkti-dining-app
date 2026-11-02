@@ -585,3 +585,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw12-23 (2026-11-02, Ueno): UP TO YOU COFFEE, デリー 上野店 (in place of tokyo3__223; 1956), 茶々亭, 多古久. Skipped 日高屋, 清龍 (chains).
 - osw1-25 (2026-11-02, lane id mod 4 = 0, core backlog): ひな鶏唐揚 新次郎 (block pin), 中国料理 桃李 (Hotel Nikko; moved 5 m off おでん住吉), ウイスキー&ワイン シュン (Swissotel), 出汁鍋&海鮮の店 門戸. Skipped 力丸 かくれ茶屋 (chain).
 - kyoto-missed osw13-23 (2026-11-02): 緑寿庵清水 (1847 konpeito), Yosuke YAMAJI, fudo (hours {}), ソローノ. No skips.
+- osaka-kita osw5-26 (2026-11-02, Umeda even): The WAREHOUSE (Aloft; GF options with shared-kitchen warning), ジャルダン (Four Seasons), THE HICKORY BIRD, 洋食 ヨコオ (original of the station counter in data; different format). No skips.
