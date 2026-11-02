@@ -480,3 +480,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-14 (2026-11-02): コリス (hard to book, phone route listed), 弧玖 (start times only: hours {}), KOKE, レ・シャンドール (new owners April 2026). No skips.
 - osw2-14 (2026-11-02, rest phase, lane id mod 4 = 1): Table Nice なんばパークス店 (Balnibarbi sister concept), 九州の旬 博多廊 法善寺店 (4-shop group), 冷麺館 心斎橋店 (3-shop group), 故郷羊肉串店. No skips.
 - tokyo-gaps osw9-15 (2026-11-02, Roppongi): 兼定 (existence probable), R2 SUPPER CLUB (2-shop group with R1; halal false, no certification), 焼鶏 輪, SPIGOLA. No skips.
+- osaka-kita osw7-14 (2026-11-02, Shin-Osaka even): たこ焼 十八番 西中島本店 (3-shop group), らーめん ぴ! (renamed per 2026 reviews), 寿司割烹 ふじい, たこ焼き 夢屋. Skipped 炉端とカツラ｡ (branch of a brand in data). Also: Brooklyn Parlor role now states only what its site says (Produced by Blue Note Tokyo); unsourced romaji for アド街ック天国 nulled.
