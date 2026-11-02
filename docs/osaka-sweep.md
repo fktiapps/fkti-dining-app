@@ -554,3 +554,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw5-23 (2026-11-02, Umeda even): 脇田屋 (existence probable), 花様 西梅田 (small group), 出入橋きんつば屋 (cash only), 串揚厨房 Kanta. No skips.
 - osw3-20 (2026-11-02, rest phase, lane id mod 4 = 2): SERENA (Hotel Nikko; halal checkbox not used; offset), はり重 グリル (sister concept; offset), 肉バル Muu, 肉匠 牛虎 (4-shop group). Skipped だるま, 丸福珈琲店, 抹茶館, くれおーる (chains), くくる 本店 (in data).
 - osw4-21 (2026-11-02, lane id mod 4 = 3): 焼肉Lab 難波店, 宇治園 喫茶去 心斎橋店, ロジック 難波店 (offset from GAM; all small groups). Skipped 赤福, 美々卯, グラマシーニューヨーク, ハーブス (chains). Lane's notable list exhausted; core leftovers next.
+- osaka-kita osw8-18 (2026-11-02, Shin-Osaka odd, notable): 大衆肉酒場 こだわり米 匠 and 個室焼肉匠 (匠 group sister concepts; 個室 moved 5 m off 悠楽), マキノマキ, カサブランカ (couple-run). No skips.
