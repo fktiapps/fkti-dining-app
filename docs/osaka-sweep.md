@@ -482,3 +482,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw9-15 (2026-11-02, Roppongi): 兼定 (existence probable), R2 SUPPER CLUB (2-shop group with R1; halal false, no certification), 焼鶏 輪, SPIGOLA. No skips.
 - osaka-kita osw7-14 (2026-11-02, Shin-Osaka even): たこ焼 十八番 西中島本店 (3-shop group), らーめん ぴ! (renamed per 2026 reviews), 寿司割烹 ふじい, たこ焼き 夢屋. Skipped 炉端とカツラ｡ (branch of a brand in data). Also: Brooklyn Parlor role now states only what its site says (Produced by Blue Note Tokyo); unsourced romaji for アド街ック天国 nulled.
 - osw3-15 (2026-11-02, rest phase, lane id mod 4 = 2): 珈琲艇CABIN, 本等鮨 海馬 本店, 喫酒オルタナ (GF no: no allergy requests), 立喰酒場 金獅子 心斎橋パルコ店 (4-shop group). Skipped ビアーズテーブル ケラケラ (5 Keller shops).
+- osw4-15 (2026-11-02, rest phase, lane id mod 4 = 3): 串かつ ひょうたん 本店 (8 m offset from はつせ), 百十 なんばこめじるし店, 肉バルGAM 難波本店, 中国酒家 朝陽閣 長堀店 (three small groups). Skipped 香港蒸蘢 (Create Restaurants brand, shop count unconfirmed).
