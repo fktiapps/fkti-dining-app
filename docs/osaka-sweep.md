@@ -511,3 +511,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw10-11 (2026-11-02, Yotsuya): 花咲き山 and CRUZ BURGERS (block pair), うんてん洋菓子店 (2-shop group), 萬屋 おかげさん. Skipped 町田商店 (chain).
 - osw4-17 (2026-11-02, rest phase, lane id mod 4 = 3): ときすし 本店 (small group), 道頓堀みつる 総本店 (3-shop group), 海鮮居酒屋 天秤棒, Rikusui. No skips.
 - osaka-kita osw7-16 (2026-11-02, Shin-Osaka even): 寿しや傳 (owner 土屋 泰輔), アカウシ, 人類みな麺類 (original shop; small group; temporary premises during renovation), 笑福 (small group). No skips. Also: はす亭 mom_and_pop set false (brief: one person or couple).
+- osw3-17 (2026-11-02, rest phase, lane id mod 4 = 2): センバキッチン (small group), おでんとお蕎麦居酒屋 じんべえ (Restaurant Bank oden concept), らむ屋, たこ焼きとおでん 石橋. Skipped そば道 (7 shops), 焼とり porc (in data).
