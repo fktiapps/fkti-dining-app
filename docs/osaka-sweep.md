@@ -556,3 +556,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-21 (2026-11-02, lane id mod 4 = 3): 焼肉Lab 難波店, 宇治園 喫茶去 心斎橋店, ロジック 難波店 (offset from GAM; all small groups). Skipped 赤福, 美々卯, グラマシーニューヨーク, ハーブス (chains). Lane's notable list exhausted; core leftovers next.
 - osaka-kita osw8-18 (2026-11-02, Shin-Osaka odd, notable): 大衆肉酒場 こだわり米 匠 and 個室焼肉匠 (匠 group sister concepts; 個室 moved 5 m off 悠楽), マキノマキ, カサブランカ (couple-run). No skips.
 - tokyo-gaps osw11-19 (2026-11-02, Ningyocho): 旬蕾, 人　8888 (one-person), Pizza Tane, Boeuf 彩. Skipped McDonald's, はんちか (possible closure).
+- osaka-kita osw7-20 (2026-11-02, Shin-Osaka even, notable): お魚処 藁ヤキ炭ヒデ, 魚料理 あのの, 藤山 (Juso yakiniku), 炉端処 一心. No skips.
