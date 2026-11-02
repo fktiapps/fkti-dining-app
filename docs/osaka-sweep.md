@@ -499,3 +499,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-16 (2026-11-02, rest phase, lane id mod 4 = 3): 肉割烹 鋒 (Nakago sister concept; 鋒 read きっさき), 炭焼きイタリアン Black, そば居酒屋るちん (2-shop group), 焼肉マル 心斎橋本店. Skipped 茶想もりた園 (5–6 shops).
 - osw1-18 (2026-11-02, rest phase, lane id mod 4 = 0): たらば蟹&和牛フォー LUXE (block pin), 焼肉暁牛, SEOUL90, たこ政 (72 years). Skipped Pivot BASE (one review).
 - osaka-kita osw5-18 (2026-11-02, Umeda even): 深夜食堂 しまながし and 鮨おぎ堂 (block pair), 北新地 天ぷら 拾幸, 焼鳥 鳥中前. 串かつ凡 離れ skip confirmed (5 shops per kitchen-dan.jp/bon/).
+- tokyo-gaps osw12-16 (2026-11-02, Ueno): 大衆酒場 天ぷら宮 (3-shop group, skip reversed), 焼肉DINING 牛勢, 肉めし岡もと 御徒町店 (2 shops on the official locator, 2026-11-02), Mille, (one-person). 再来宴 and あさが家 undecided (no shop count).
