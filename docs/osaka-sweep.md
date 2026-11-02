@@ -472,3 +472,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-14 (2026-11-02, lane id mod 4 = 3): 串揚げ専門店 健串, 空色COLOR, AVOCADO HOUSE NAMBA, 肉處 きっしゃん なんば店 (3-shop group, none in data). No skips.
 - tokyo-gaps osw10-8 (2026-11-02, Yotsuya): 支那そば屋 こうや (1983), 俵コロッケ四ツ谷さくらい (one-person counter), 炭火魚 旬彩料理 坂本, FISH A WEEK 週一魚 (Kikkoman's first shop). No skips.
 - osaka-kita osw8-12 (2026-11-02, Shin-Osaka odd): 餃子工房 ギョィィィィィィン (one-person shop), らぁめん じん IHARA店, 隆勝 (full ramen block). Skipped 幸ちゃん 本店 (branch of a brand in data), 人類みな麺類 ラーメン研究所 (UNCHI chain).
+- tokyo-gaps osw12-14 (2026-11-02, Ueno): 鳥ぶし (researched in place of tokyo3__219; halal self-claim only, flag false), 歳歳紅, 博多 からくさや. Skipped あいだや (same brand as あいだや２ in data).
