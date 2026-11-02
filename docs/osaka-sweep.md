@@ -515,3 +515,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-19 (2026-11-02, Umeda odd): なにわ料理 ごとく (father and son), 鶏割烹 ならや, 沖濱そば (no ramen block), 弘屋 (French WEST 100). No skips.
 - tokyo-gaps osw12-17 (2026-11-02, Ueno): ミルクスタンド 御徒町店, タイスカイキッチン, バトン, ほてい (1976). Skipped ばんから (chain); あさが家 and まつり屋 undecided.
 - tokyo-gaps osw11-16 (2026-11-02, Ningyocho): huit, 日本料理 柳燕, L'appartamento di NAOKI, 御料理 心馬 (all KYOE PLAZA, block pins spread 6 m). Skipped SARAY (14 shops).
+- kyoto-missed osw13-17 (2026-11-02): イーパンツァイタナカ (hours {}: three open days have no times), fiveran (small group), Flip up!, 炭焼創彩鳥家 人見. Skipped 焼肉矢澤 (7 cities, 5 countries).
