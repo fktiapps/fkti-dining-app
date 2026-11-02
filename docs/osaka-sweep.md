@@ -453,3 +453,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw8-11 (2026-11-02, Shin-Osaka odd): 鮨げん家 西中島 (company site unread, flagged), ねぎ焼・お好み焼き 和, 新京飯店, 長浜ラーメン浜ちゃん (couple-run, mom_and_pop; no ramen block). Skipped 酒スタンド魚蔵 (chain).
 - osw2-12 (2026-11-02, lane id mod 4 = 1): 湖陽樹 本町店 (Chinese, two shops), 谷町 ふる里 (24-hour udon and soba), 大衆中華酒場 若林 (small group, flagged), とらふぐ城. Skipped 廻転鮨 銀座おのでら (31-shop chain), アレグロ 難波店 (franchising chain).
 - osaka-kita osw5-14 (2026-11-02, Umeda even): ステーキハウス 野田 (block pin), 大人居酒屋 ぽん, 北新地 うえはら (whale harihari). Skipped たか鳥 梅田店 (franchise chain). Integrator removed 鶏と○○、時々 魚。 (odd id, osw6's lane, already in data).
+- tokyo-gaps osw9-13 (2026-11-02, Roppongi): 虎峰 (Cantonese–Sichuan small plates), バンコク (Thai, 35+ years; pin offset), 味満ん (fugu, referral-only, listed per Greg), プロヴィジョン (members-only club; question to Greg).
