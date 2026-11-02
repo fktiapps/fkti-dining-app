@@ -601,3 +601,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-25 (2026-11-02, lane id mod 4 = 3, core backlog): encontre, 鉄板焼 MYDO (W Osaka), モージョー, 珍八香. Skipped ベアフット カリー (in data).
 - tokyo-gaps osw10-18 (2026-11-02, Yotsuya/Arakicho): 四ッ谷 みね村, 日本料理 しうが (chef 渡邊 雅之), 寿司長, 松庵 (couple; block pair with 寿司長). No skips.
 - osw3-24 (2026-11-02, lane id mod 4 = 2, core backlog): Cafe BOHEMIA, 日本料理 弁慶 (Hotel Nikko; moved 5 m off the hotel cluster), 花華. Skipped 串かつ料理 活 (7).
+- tokyo-gaps osw12-25 (2026-11-02, Ueno): 炭火焼鳥 駿 (couple), 鉄板ビストロ ラフ+たす, Woodwork Welcome Coffee, スコッチバー ノア (owner-run 50+ years). No skips.
