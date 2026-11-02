@@ -547,3 +547,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-19 (2026-11-02, rest phase, lane id mod 4 = 1): ピッツェリア エイト, #702 CAFE&DINER, 鮨 奏 (offset in エースビル), pound house (small group). Skipped ぼてぢゅう 本店 (in data), 炭火とワイン (5), 魚匠 銀平 (6).
 - osaka-kita osw7-19 (2026-11-02, Shin-Osaka even, notable): トラットリア チェーロ (Italian WEST 100), あたり屋 (Soba WEST 100), めっせ熊 新大阪店 (2 known shops), ココロノ ベーカリー. No skips. Also: 只野 mom_and_pop set false (family-run plus two staff, not one person or couple).
 - osw1-22 (2026-11-02, rest phase, lane id mod 4 = 0): 明陽軒 (1928), 串カツ居酒屋 風太 and HOT POT LAB (block pair), 久壷庵 (Oxon sister, block pin). Skipped 海底撈火鍋 (chain), uzu (no reviews); パイレーツオブオオサカ (charter boat) asked to Greg.
+- tokyo-gaps osw12-20 (2026-11-02, Ueno): Guruatsu STAND (vegan options, old reviews), Craft Ramen BiT, ラーメン長山, 純酒肴 吟. Skipped ディップパレス (5), よもだそば (5), CoCo壱番屋; 4 undecided (no counts).
