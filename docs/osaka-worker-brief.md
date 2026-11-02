@@ -27,3 +27,6 @@ LESSONS FROM REVIEWED ROUNDS (the integrator caught each of these; don't repeat 
 - Company and building names with kanji (ミツヤ食品工業, 丸勝ビル) are names: keep them as written in English text, never romanised ("Shokuhin Kogyo") unless a source gives the romaji (b213).
 - Place names known only from English reviews (Kumamoto, Amakusa, Tajima, Ezo) stay Latin in JA too — never 熊本/天草 unless a Japanese source writes them (b216).
 - Remarks about overseas visitors or foreign customers: while Greg's decision on them is pending, record them like any other sourced fact; don't drop them on your own (dropping true info is a content rule only Greg can make).
+- A ramen profile value with no source behind it is invented, even when labelled "inferred" or "placed mid-scale". If you cannot source all six dimensions, leave the ramen block off and say so in the report; the integrator dropped two blocks for this on 2026-11-01 (Manyoken, Rantei). A Chinese or Hong Kong noodle shop is cuisine `other` with no block.
+- Stay strictly in your lane's parity (id mod 4, or even/odd). On 2026-11-01 two Shin-Osaka workers both drafted the same odd-id shop.
+- Romaji you made up is a guess, in English text and in gloss `en` alike ("Sonezaki-shinchi", "Rinkusu umeda ten" on 2026-11-01). With no source romaji, keep the kanji and gloss it `name:true, en:null`.
