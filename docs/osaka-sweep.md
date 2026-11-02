@@ -448,3 +448,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw3-12 (2026-11-02, lane id mod 4 = 2): 食堂 松おか (sio group, ex-The New World; pin offset), 幸梅軒 (machi-chuka, cash), 喫茶ビクトリヤ (kissa since 1957; chome-only pin), Brooklyn Parlor OSAKA (Blue Note, 2 shops).
 - tokyo-gaps osw12-12 (2026-11-02, Ueno): ランビアンス ドゥース (one-person bistro, mom_and_pop), 小粋そば, そば shin (Kurahashi sister concept), 草原の家 (Mongolian). Skipped 日高屋, 黒工号, まぐろ人, カナピナ (chains), 吉祥 (thin).
 - osw1-14 (2026-11-02, lane id mod 4 = 0): コプチャンち 心斎橋店 (kopchang), 肉と魚と酒 雄 (block pin), 難波 鉄板焼き Sublime (3-shop teppan group; Michelin claim attributed; block pin), 海鮮物語 なんば心斎橋店 (shrimp shabu). 10 same-concept chain branches skipped.
+- osaka-kita osw6-14 (2026-11-02, Umeda odd): 鶏と○○、時々 魚。 (solo-owner yakitori, mom_and_pop), 天ぷら もり井 (hours conflict, Tabelog used), カーサ M (couple-run Italian, mom_and_pop), 創作酒場スタンドKO-NEKO (to 3 am).
