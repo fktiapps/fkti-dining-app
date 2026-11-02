@@ -457,3 +457,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-12 (2026-11-02): 森林食堂 (spice curry), VELROSIER (no GF/vegan menus per TableCheck), 焼鳥 京都橘 (integrator: inferred closing time removed, hours unknown), 実伶 (kappo).
 - osaka-kita osw7-12 (2026-11-02, Shin-Osaka even): 太鼓寿し (per-piece machi-zushi, cash), すしまる屋 東三国店 (to 2 am), イタリアンバル ストーリア, 悠楽 (Omi-beef yakiniku). Skipped 餃子の王将 (chain in data).
 - osw4-13 (2026-11-02, lane id mod 4 = 3): 個室 和食 矗々家 難波店, はり重カレーショップ (sister concept of はり重), 牡蠣と肉たらしビストロAKIRA, 燻製スギヤ商店.
+- osw3-13 (2026-11-02, lane id mod 4 = 2): ぼんくら家 道頓堀店 (small okonomiyaki chain, now in data: skip later branches), 焼鳥祐 アラカルト (sister concept of 麺屋 たにぐち), 大阪カオマンガイキッチン (Thai), たこやき座 (cash, site down).
