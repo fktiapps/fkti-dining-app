@@ -519,3 +519,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw9-18 (2026-11-02, Roppongi): OYOGE, 隼 (OMAKASE only, ~2-year wait; hours {}), 私房菜 吉田 (sister concept; pin offset), 鮨 龍馬. No skips.
 - osaka-kita osw8-15 (2026-11-02, Shin-Osaka odd): 麺処 ほりばた (full ramen block, one-person), 手作り餃子 橋郷館 (couple), ぶった 三国駅前店 (2-shop group), 味園 (one-person). Skipped ぎんすけ and カリトロ (counts to be rechecked next batch).
 - osaka-kita osw5-20 (2026-11-02, Umeda even): 肉料理 神谷 (block pin), PAUSE COFFEE, エンメエッセ (GF no: shop cannot handle wheat), 池田紘三 (crab omakase). Skipped 寿司赤酢・望月 and 湯木 新店 (brands in data).
+- tokyo-gaps osw10-12 (2026-11-02, Yotsuya): 鮨 やすみつ (Bronze 2026), 塩つけ麺 灯花 (full ramen block; sister concept of 鯛塩そば灯花), TIPHARETH COFFEE ROASTERY, トラノコ. No skips.
