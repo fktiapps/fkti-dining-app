@@ -21,7 +21,8 @@ node --check "scripts/$SCRIPT"
 STK0=$(node scripts/check-stacked-pins.mjs "$CITY" | tail -1 || true)
 node "scripts/$SCRIPT" | tail -6
 STK1=$(node scripts/check-stacked-pins.mjs "$CITY" | tail -1 || true)
-[ "$STK0" = "$STK1" ] || { echo "new stacked pin: $STK0 -> $STK1"; node scripts/check-stacked-pins.mjs "$CITY" | tail -8; exit 1; }
+N0=${STK0##* }; N1=${STK1##* }   # "stacked pairs: N" → N; fewer is fine (a batch may spread legacy pairs)
+[ "$N1" -le "$N0" ] || { echo "new stacked pin: $STK0 -> $STK1"; node scripts/check-stacked-pins.mjs "$CITY" | tail -8; exit 1; }
 # sweeps push past the old city edges (Umeda, 2026-11-01): keep manifest bounds fitted to the data
 node scripts/fit-bounds.mjs --grow > /dev/null
 # Greg 2026-11-02: open_late = closes after 22:00
