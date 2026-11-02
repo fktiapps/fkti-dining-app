@@ -534,3 +534,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw10-13 (2026-11-02, Yotsuya): 肉懐石 凜然, すし秀 其ノ弐, 宝来 (family-run per review; mom_and_pop false under the one-person-or-couple rule), 焼肉 六六六. No skips.
 - osw4-19 (2026-11-02, rest phase, lane id mod 4 = 3): 魚心 南 難波店 (small group), 心斎橋神楽, 路地裏酒場 とんぼ (small group), くろ屋. Skipped 力丸 水かけ茶屋 (chain), THE COMMA, Namba (COMMA, in data).
 - osw2-18 (2026-11-02, rest phase, lane id mod 4 = 1): コッテジ (small group), にくさわ, コギソウル (4-shop group). Skipped 俺のイタリアン (18), 会津屋 (11), 力丸茶屋 (same robata format as the 力丸 chain).
+- osw1-21 (2026-11-02, rest phase, lane id mod 4 = 0): tres (block pin), 焼 塩美屋, パフェと酒と、、、金魚 (block pin), どむす (block pin). Skipped SHOGUN BURGER, 千房 (chains), ヒのトリ, あかちょうちん, sports bar BASE, ビートカフェミックス.
