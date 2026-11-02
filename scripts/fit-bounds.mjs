@@ -19,6 +19,12 @@ for (const c of man.cities) {
     [+(Math.max(...lats) + MARGIN).toFixed(4), +(Math.max(...lngs) + MARGIN).toFixed(4)],
   ];
   const [[s0,w0],[n0,e0]] = c.bounds;
+  // --grow: only widen a box to take in records outside it, never shrink it. Sweep integration runs
+  // this after every batch, and a shrinking box would quietly change which city a traveller is "in".
+  if (process.argv.includes('--grow')) {
+    fitted[0][0] = Math.min(fitted[0][0], s0); fitted[0][1] = Math.min(fitted[0][1], w0);
+    fitted[1][0] = Math.max(fitted[1][0], n0); fitted[1][1] = Math.max(fitted[1][1], e0);
+  }
   const oobBefore = places.filter(p => p.lat<s0||p.lat>n0||p.lng<w0||p.lng>e0).length;
   c.bounds = fitted;
   const oobAfter = places.filter(p => p.lat<fitted[0][0]||p.lat>fitted[1][0]||p.lng<fitted[0][1]||p.lng>fitted[1][1]).length;

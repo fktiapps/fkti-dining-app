@@ -17,6 +17,8 @@ cp "$WT"/handoff/*.json data/gloss/_chunks/ 2>/dev/null || true
 for d in "$WT/scripts/sweep/$SWEEP/work/shops/"*; do [ -d "$d" ] && [ ! -d "scripts/sweep/$SWEEP/work/shops/$(basename "$d")" ] && mkdir -p "scripts/sweep/$SWEEP/work/shops" && cp -r "$d" "scripts/sweep/$SWEEP/work/shops/" || true; done
 node --check "scripts/$SCRIPT"
 node "scripts/$SCRIPT" | tail -6
+# sweeps push past the old city edges (Umeda, 2026-11-01): keep manifest bounds fitted to the data
+node scripts/fit-bounds.mjs --grow > /dev/null
 node scripts/gloss/merge.mjs
 if [ -n "$READ" ]; then node scripts/gloss/add-readings.mjs "$CITY" "$READ"; fi
 node scripts/gloss/extract.mjs "$CITY" 2>&1 | tail -2
