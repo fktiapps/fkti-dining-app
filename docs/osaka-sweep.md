@@ -502,3 +502,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw12-16 (2026-11-02, Ueno): 大衆酒場 天ぷら宮 (3-shop group, skip reversed), 焼肉DINING 牛勢, 肉めし岡もと 御徒町店 (2 shops on the official locator, 2026-11-02), Mille, (one-person). 再来宴 and あさが家 undecided (no shop count).
 - osaka-kita osw6-18 (2026-11-02, Umeda odd): 鮨 彩月 大阪梅田店, 北新地鮨 言 (Gon/Gen unresolved, name glossed with no reading), 焼鳥 うなる, 四川料理MITSUBACHI (IAKU sister concept). No skips.
 - tokyo-gaps osw11-15 (2026-11-02, Ningyocho): 森乃園 (hojicha soft serve), とり鈴, 洋食 小春軒 (1912), on your side. No skips. Also: handoff note marked resolved.
+- tokyo-gaps osw9-17 (2026-11-02, Roppongi): FREY's Famous Pizzeria, 天吉 (couple-run), RIO GRANDE GRILL (4-shop group), 六本木田舎家 東 (East/West pair). No skips.
