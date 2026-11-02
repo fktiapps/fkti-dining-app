@@ -38,3 +38,4 @@ GREG'S RULINGS, 2026-11-02 (follow these):
 - Chains: a chain's flagship or main shop counts as a chain. Skip it like any other branch when the chain is already in data or expanding fast. A shop with announced plans for many branches (e.g. 100 shops) is a chain.
 - Shops that take no new reservations or are referral-only are LISTED, with the booking route stated.
 - Leave abusive remarks out (insults about staff or other diners). This is the one kind of sourced content you omit.
+- Sister concepts are not chains (Greg, 2026-11-02): a different brand or format from a group already in data (Alcyon/Anjou, LiLo's kissa, Kitan's yakiniku vs its omakase counter) is drafted as its own shop. Only same-concept branches of a chain count as the chain.
