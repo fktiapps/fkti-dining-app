@@ -583,3 +583,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-25 (2026-11-02, Umeda odd): すしと和 望月, 小麦や (one-person), メルシー (GF and vegan options per official menu), 居酒屋 ときため. No skips.
 - osaka-kita osw8-20 (2026-11-02, Shin-Osaka odd, notable): 旬魚菜 磯一 (3 shops), M&DELI, 海鮮食堂 おーうえすと (3 shops), 喫茶サンチョ. Skipped ケラケラ ケイヴ (chain), メッセ熊子 (sister of めっせ熊 in data).
 - tokyo-gaps osw12-23 (2026-11-02, Ueno): UP TO YOU COFFEE, デリー 上野店 (in place of tokyo3__223; 1956), 茶々亭, 多古久. Skipped 日高屋, 清龍 (chains).
+- osw1-25 (2026-11-02, lane id mod 4 = 0, core backlog): ひな鶏唐揚 新次郎 (block pin), 中国料理 桃李 (Hotel Nikko; moved 5 m off おでん住吉), ウイスキー&ワイン シュン (Swissotel), 出汁鍋&海鮮の店 門戸. Skipped 力丸 かくれ茶屋 (chain).
