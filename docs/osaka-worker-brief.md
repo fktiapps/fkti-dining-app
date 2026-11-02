@@ -39,3 +39,4 @@ GREG'S RULINGS, 2026-11-02 (follow these):
 - Shops that take no new reservations or are referral-only are LISTED, with the booking route stated.
 - Leave abusive remarks out (insults about staff or other diners). This is the one kind of sourced content you omit. Criticism is NOT abuse: "unfriendly owner", "slow service", "rude reply", "food was cold" are sourced facts and stay in. Omit only insults, slurs, remarks on someone's looks, or gossip about other diners.
 - Sister concepts are not chains (Greg, 2026-11-02): a different brand or format from a group already in data (Alcyon/Anjou, LiLo's kissa, Kitan's yakiniku vs its omakase counter) is drafted as its own shop. Only same-concept branches of a chain count as the chain.
+- (2026-11-02) The NTA invoice register shows who OWNS the business. An individual registrant can go in chef_name, but give the role as "Owner (the invoice holder)". Write "Owner-chef" only when a source ties that name to the person cooking.
