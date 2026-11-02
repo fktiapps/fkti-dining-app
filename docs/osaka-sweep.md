@@ -451,3 +451,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-14 (2026-11-02, Umeda odd): 鶏と○○、時々 魚。 (solo-owner yakitori, mom_and_pop), 天ぷら もり井 (hours conflict, Tabelog used), カーサ M (couple-run Italian, mom_and_pop), 創作酒場スタンドKO-NEKO (to 3 am).
 - tokyo-gaps osw10-6 (2026-11-02, Yotsuya): サルサカバナ バール (Mexican bar, 2 shops), 鮨 こるり (GF no: no ingredient requests), Wines By California Neuf, 餃子酒場 四谷本店. Skipped 町田商店, SUNRISE, 鮨處八千代 (chains).
 - osaka-kita osw8-11 (2026-11-02, Shin-Osaka odd): 鮨げん家 西中島 (company site unread, flagged), ねぎ焼・お好み焼き 和, 新京飯店, 長浜ラーメン浜ちゃん (couple-run, mom_and_pop; no ramen block). Skipped 酒スタンド魚蔵 (chain).
+- osw2-12 (2026-11-02, lane id mod 4 = 1): 湖陽樹 本町店 (Chinese, two shops), 谷町 ふる里 (24-hour udon and soba), 大衆中華酒場 若林 (small group, flagged), とらふぐ城. Skipped 廻転鮨 銀座おのでら (31-shop chain), アレグロ 難波店 (franchising chain).
