@@ -494,3 +494,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-15 (2026-11-02, rest phase, lane id mod 4 = 1): アレグロペッシェ (Restaurant Bank sister concept, Tabelog-only sources), 洋食堂 ホソカワ, けむり屋＆フラワー (3-shop group; offset from ふたはこ), RICHGARDEN (3-shop group). Skipped 但馬屋 (6), ニューツルマツ (7+), SAKImoto Bakery (nationwide).
 - kyoto-missed osw13-15 (2026-11-02): 鍵善良房 四条本店 (small group), grains de vanille (criticism kept in full), DODICI, 阿闍梨餅本舗 満月 本店 (small group). Skipped パティスリーエス main shop (brand in data).
 - osw3-16 (2026-11-02, rest phase, lane id mod 4 = 2): お好み焼 とんべえ (1976, cash only), 玄米カフェ 実身美 心斎橋店 (4-shop group; offset from Danke), エンプレスルーム (Swissotel), LA FINESTRA. No skips.
+- osaka-kita osw7-15 (2026-11-02, Shin-Osaka even): オムライス&cafe STYLE (one-person), 甚九郎 (owner Morimoto), ゆうすけ (Udon WEST 100), すし処和 (hours unknown). Skipped 麺匠 はなみち (7 shops on its own site).
