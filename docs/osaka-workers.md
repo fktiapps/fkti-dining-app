@@ -59,3 +59,12 @@ The integrator resets each worktree to main before a round:
 
 If a session ends mid-round: unintegrated work sits in each worktree's `handoff/`; integrate what
 is complete and redo the rest.
+
+## Integrator lessons (2026-11-01)
+
+- Reset a worker's worktree only after its batch has committed. On 2026-11-01 a reset after a failed
+  integration deleted osw5's handoff gloss chunks, and the worker had to redo them.
+- Send the next assignment in the same step as the reset. Twice that night a worker was reset and then
+  left idle for a round because the message was never sent.
+- Field-check before integrating: hours keys against hours_raw (0=Mon), GF never above options,
+  pronouns, ramen blocks fully sourced, and any romaji the report admits to inventing.
