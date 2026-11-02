@@ -574,3 +574,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw1-24 (2026-11-02, lane id mod 4 = 0, core backlog): お好み焼き なお家 (reading unsure), 天ぷら たろじろう (block pin), hubble, Pizza TOKIO STADIUM. Skipped 善 難波千日前店 (in data), Subway, 串かつ料理 活, 616点心佬 (chains).
 - tokyo-gaps osw10-16 (2026-11-02, Yotsuya/Ichigaya): 豚基地 (owner Otsuka, ramen block), 丸十 (regulars-only, couple; gloss byCity override so 丸十 reads as the name in Tokyo), 灯火 (couple), とんかつ 河むら (2 shops); 4 block pins 5 m apart. Skipped 金市朗 (7). Also: gloss build supports per-city overrides (byCity).
 - kyoto-missed osw13-22 (2026-11-02): 京中華 牧定 (brothers; sister of ラーメン牧定), 茶房いせはん, 本家月餅家直正 (1804), 今西軒 (hours {}: until sold out). No skips.
+- osaka-kita osw5-25 (2026-11-02, Umeda even): ぱとぱと (2 shops), 串揚げ 心平, 米増 (Tabelog Award; couple; hours unknown), 鮨 からす 梅田店 (2 shops). Skipped かにじぇんぬ (QRAUD chain).
