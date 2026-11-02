@@ -439,3 +439,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-13 (2026-11-02, Umeda odd): 大衆飯酒場 アシタニパンチ, 伊江人酒場 (Okinawan to 7 am), 和フレンチバル村塾 屋根裏 別邸 (sister concept), epais (Tonkatsu 100). Skipped SALVATORE CUOMO 梅田 (chain in data).
 - osw2-11 (2026-11-02, lane id mod 4 = 1): MONDAY VIBES COFFEE and ムーラン (taken by id after the sister-concept ruling), BAR à VIN 徳蔵 心斎橋 (wine importer's bistro), 料理屋 新町壱丁目 (Il Piatto sister, different format: kept).
 - osaka-kita osw8-10 (2026-11-02, Shin-Osaka odd): つけ麺R&S (no ramen block), らーめん キング (no ramen block), 真水無香 (Shanghai-style), 串焼たなかや. Skipped ボス豚 (closed).
+- kyoto-missed osw13-11 (2026-11-02): 京趣味 菱岩 (takeaway bento since 1829; relay comfort), ぎをん 遠藤 (遠藤功太's fish counter; pin offset), 祇園 きだ (reservation-only, listed per Greg's ruling; loc_approx single), ひつじ (natural-yeast donuts).
