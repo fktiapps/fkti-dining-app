@@ -552,3 +552,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-22 (2026-11-02, Umeda odd): 梅田 ふぐ乃介, 北新地たゆたゆ 本店 (2-shop group), ふぐ料理 前, 串しゃぶ 菜彩. No skips.
 - kyoto-missed osw13-20 (2026-11-02): フランソア喫茶室 (1934), Artisan'Halles, 亀末廣 (1804), 鮨まつもと (hours {}). Skipped Benjamin Steakhouse (5 steakhouses per brand list), 満月 JR京都伊勢丹店 (brand in data).
 - osaka-kita osw5-23 (2026-11-02, Umeda even): 脇田屋 (existence probable), 花様 西梅田 (small group), 出入橋きんつば屋 (cash only), 串揚厨房 Kanta. No skips.
+- osw3-20 (2026-11-02, rest phase, lane id mod 4 = 2): SERENA (Hotel Nikko; halal checkbox not used; offset), はり重 グリル (sister concept; offset), 肉バル Muu, 肉匠 牛虎 (4-shop group). Skipped だるま, 丸福珈琲店, 抹茶館, くれおーる (chains), くくる 本店 (in data).
