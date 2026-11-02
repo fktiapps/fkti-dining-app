@@ -450,3 +450,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw1-14 (2026-11-02, lane id mod 4 = 0): コプチャンち 心斎橋店 (kopchang), 肉と魚と酒 雄 (block pin), 難波 鉄板焼き Sublime (3-shop teppan group; Michelin claim attributed; block pin), 海鮮物語 なんば心斎橋店 (shrimp shabu). 10 same-concept chain branches skipped.
 - osaka-kita osw6-14 (2026-11-02, Umeda odd): 鶏と○○、時々 魚。 (solo-owner yakitori, mom_and_pop), 天ぷら もり井 (hours conflict, Tabelog used), カーサ M (couple-run Italian, mom_and_pop), 創作酒場スタンドKO-NEKO (to 3 am).
 - tokyo-gaps osw10-6 (2026-11-02, Yotsuya): サルサカバナ バール (Mexican bar, 2 shops), 鮨 こるり (GF no: no ingredient requests), Wines By California Neuf, 餃子酒場 四谷本店. Skipped 町田商店, SUNRISE, 鮨處八千代 (chains).
+- osaka-kita osw8-11 (2026-11-02, Shin-Osaka odd): 鮨げん家 西中島 (company site unread, flagged), ねぎ焼・お好み焼き 和, 新京飯店, 長浜ラーメン浜ちゃん (couple-run, mom_and_pop; no ramen block). Skipped 酒スタンド魚蔵 (chain).
