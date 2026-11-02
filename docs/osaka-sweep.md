@@ -599,3 +599,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw9-19 (2026-11-02, Roppongi): 鳥義士, L'osteria, ケバブバー (probable; hours unknown; offset), orange (Midtown; not precise). Skipped R1 TOKYO (R2 sister in data).
 - osaka-kita osw8-21 (2026-11-02, Shin-Osaka odd, notable): 焼肉はうす たられば, 四季自然喰処たちばな (2 shops). Skipped 551蓬莱 ×2, 東洋亭, りくろーおじさん ×2, 京ちゃばな (chains), 道頓堀今井, 牛虎 (in data); BW STATION and エスタシオン undecided.
 - osw4-25 (2026-11-02, lane id mod 4 = 3, core backlog): encontre, 鉄板焼 MYDO (W Osaka), モージョー, 珍八香. Skipped ベアフット カリー (in data).
+- tokyo-gaps osw10-18 (2026-11-02, Yotsuya/Arakicho): 四ッ谷 みね村, 日本料理 しうが (chef 渡邊 雅之), 寿司長, 松庵 (couple; block pair with 寿司長). No skips.
