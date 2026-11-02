@@ -521,3 +521,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw5-20 (2026-11-02, Umeda even): 肉料理 神谷 (block pin), PAUSE COFFEE, エンメエッセ (GF no: shop cannot handle wheat), 池田紘三 (crab omakase). Skipped 寿司赤酢・望月 and 湯木 新店 (brands in data).
 - tokyo-gaps osw10-12 (2026-11-02, Yotsuya): 鮨 やすみつ (Bronze 2026), 塩つけ麺 灯花 (full ramen block; sister concept of 鯛塩そば灯花), TIPHARETH COFFEE ROASTERY, トラノコ. No skips.
 - osw4-18 (2026-11-02, rest phase, lane id mod 4 = 3): ルサンク (offset), Oh！マイステーキ, 辛いもんや ギロチン (small group), 炭焼笑店 陽 (sister of 鴨尽/鶏尽). Skipped クンテープ (5+, multi-city).
+- osw2-17 (2026-11-02, rest phase, lane id mod 4 = 1): 焼肉ホルモン黒野, 炉端の佐藤 (2 shops; offset from 灯花), 裏難波スシトフジ, 力丸 たぬき茶屋. Skipped 鮨 宮 (やましろ group, 7), 東京竹葉亭 (5), ぎふや (11).
