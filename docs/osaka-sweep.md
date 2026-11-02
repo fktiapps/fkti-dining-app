@@ -567,3 +567,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw3-21 (2026-11-02, lane id mod 4 = 2): 魚と煮込みとわら焼きと ととと (sister concept), たこ八 道頓堀総本店 (1979), 喜多郎寿し なんば店 (3 Japan shops per kitarou.jp), musi-vege+cafe (4 shops). Skipped つるとんたん, だるま, 牛ノ福, Shake Shack, 華味鳥, 龍の巣 (chains), ニング (in data). Also: reading たこ焼き → たこやき (the たこ焼 key was doubling き in 155 places).
 - osw4-22 (2026-11-02, lane id mod 4 = 3, core backlog): バルクト (Holiday Inn), TAKOYAKI LAB, つぼルー カレー鍋, お好み 鉄板 居酒屋 DON. Skipped 鉄板神社 宗右衛門町店 (in data).
 - tokyo-gaps osw11-20 (2026-11-02, Ningyocho): あづま軒 (~77 yrs), 人形町 鮨 なかむら (hours {}), BAR暖炉, 日本橋 蕎ノ字 (Silver). No skips.
+- osaka-kita osw8-19 (2026-11-02, Shin-Osaka odd, notable): 肉家 串八, 大衆ビストロ Galetto (匠 sister concept), 媛 故郷味の旅 (small group). Skipped 焼肉 匠 本店 (same concept), わなか, だるま, ロマン亭 (chains), たこ昌 新大阪駅店 (flagship to be drafted instead).
