@@ -606,3 +606,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-23 (2026-11-02, lane id mod 4 = 1, core backlog): 手羽先の羽 (2 shops), Noeud. × THE CHEF'S (vegan course), スパイスキング8848, PASTA+ En to En. Skipped どぎゃん 立売堀店 (in data).
 - osaka-kita osw6-27 (2026-11-02, Umeda odd): うまそうなラーメン屋, 鶏匠 暁, 堂島雪花菜 (one-person), 酒肆 門 (izakaya WEST 100). Skipped 古潭, 渡 (in data).
 - tokyo-gaps osw11-23 (2026-11-02, Ningyocho): 人形町らーめん いなせ, タイニートリア (owner per Time Out), 串揚家 でらじろう, アン ファス (one-person; no hours listed). No skips.
+- osaka-kita osw8-22 (2026-11-02): skips only (タケル 5, ローマ軒 5, がんこ ~100); 麺家, Juicer Bar undecided. Shin-Osaka odd lane exhausted; osw8 moves to kyoto-missed odd ids.
