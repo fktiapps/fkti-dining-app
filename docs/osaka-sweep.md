@@ -466,3 +466,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw5-15 (2026-11-02, Umeda even): すし 礫, フーロン (Chinese WEST 100), RYU, 串揚げ 名倉. Invoice-register names labelled Owner, not Owner-chef. No skips.
 - kyoto-missed osw13-13 (2026-11-02): 出町ふたば, ASSEMBLAGES KAKIMOTO, PTISSERIE.S salon (sister format), ぎをん 福志 (no published close: hours {}). No skips.
 - osw2-13 (2026-11-02, lane id mod 4 = 1): TUFFE (Daimaru 7F), 魚伝, 料理屋 哲剣 (sister formats on one street), トリベーネ 裏なんば本店 (4-shop group, none in data; no allergy service). Skipped 心斎橋 今井屋本店 (DD group chain).
+- tokyo-gaps osw9-14 (2026-11-02, Roppongi): 白土 shirato, てんぷら 味覚 (temporarily closed, reopening early December), 芋洗坂の下 (pin offset, same address as 味覚), 一億 (since 1968). Skipped MASHI NO MASHI TOKYO (WAGYUMAFIA).
