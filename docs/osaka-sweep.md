@@ -527,3 +527,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-20 (2026-11-02, Umeda odd): 天ぷら ふか名 (2025 Michelin selection), ひなべ ぺんぎん (hours conflict recorded), 幸乃道 (one-person), 北新地ここの. Skipped 北新地はらみ 別邸 (in data).
 - kyoto-missed osw13-18 (2026-11-02): 焼肉やまちゃん (sister of 富小路やまぎし), オテルドゥオガワ (sister of 食堂おがわ; walk-in only), ヴェーナ (hours {}: last-entry times only), 祇園 一道 (couple-run). No skips.
 - tokyo-gaps osw11-17 (2026-11-02, Ningyocho): Ino Cantonese 日本橋 たかせ (Chinese 100), さぶろく (owner a former Carp player), 鮨處つの田, 連珍 (2 shops; KYOE PLAZA 1F, block). No skips.
+- tokyo-gaps osw12-18 (2026-11-02, Ueno): 炭火焼 18, Alvino (sister concept), プロースト東京 (2 shops), ラッフルズ カリー (Curry 100). かに村 chain-checked (one-brand shop of the FANG DREAM group), to be drafted next.
