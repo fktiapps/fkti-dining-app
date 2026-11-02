@@ -477,3 +477,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw6-16 (2026-11-02, Umeda odd): 中国菜 オイル (Chinese WEST 100), ステーキ鉄板エッセンス, グリルタケヤ (couple-run), 炭焼き専門 ひととき 兎我野本店 (2-shop group). No skips.
 - osaka-kita osw5-16 (2026-11-02, Umeda even): MILLE CARESSES, 割烹 大田川, チャイニーズ食堂菜々, 心屋 本店 (2-shop group). Skipped シャングリラズシークレット (chain in data).
 - tokyo-gaps osw11-13 (2026-11-02, Ningyocho): パーラー305, 軍鶏拉麺 飛天 (Tamahide sister concept), 朝伊名 (couple from Yoron), 蛇の目鮨 (existence probable). Skipped 3 bis (closed from 2025-12-26, reopening unconfirmed).
+- kyoto-missed osw13-14 (2026-11-02): コリス (hard to book, phone route listed), 弧玖 (start times only: hours {}), KOKE, レ・シャンドール (new owners April 2026). No skips.
