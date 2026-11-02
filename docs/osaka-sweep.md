@@ -541,3 +541,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-19 (2026-11-02): 喫茶葦島 (GF options, sourced safety block), en boca Kyoto (small group), 呑小路 やま岸 (hours {}), LUDENS. Benjamin Steakhouse passed over, to be skipped with a source next batch.
 - osw3-19 (2026-11-02, rest phase, lane id mod 4 = 2): 焼肉ごりちゃん (4-shop group), アルベルゴ カフェ・ミケランジェロ, 串処 最上 (4-shop group; offset), 道頓堀 治兵衛. No skips.
 - tokyo-gaps osw11-18 (2026-11-02, Ningyocho): 生駒軒 (noren-wake name, independent; asked Greg), 貝麺ふか川, 岩手屋 (couple-run), 串揚げなかや人形町 (2-shop group). Skipped 博多とりかわ 長政 (5 shops, 10-shop goal).
+- osaka-kita osw5-22 (2026-11-02, Umeda even): 鮨処 おりた (owner per invoice register), サムギョプサル ホブ (Numata sister concept), おやじ最後の握り 極 (small group), AVAN 北新地 (GF no). No skips.
