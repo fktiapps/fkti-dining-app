@@ -485,3 +485,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-15 (2026-11-02, rest phase, lane id mod 4 = 3): 串かつ ひょうたん 本店 (8 m offset from はつせ), 百十 なんばこめじるし店, 肉バルGAM 難波本店, 中国酒家 朝陽閣 長堀店 (three small groups). Skipped 香港蒸蘢 (Create Restaurants brand, shop count unconfirmed).
 - tokyo-gaps osw10-9 (2026-11-02, Yotsuya): たいやき わかば (1953; allergen list shows no egg or milk, vegan ask), ラ・ボーテ (one-person), 北島亭 (Bronze), 栄進館 (ryokan bakery). No skips.
 - tokyo-gaps osw12-15 (2026-11-02, Ueno): 博多豚骨らぁ麺一絆, カフェ ベル (children's library), らぁめん千寿 御徒町店 (2-shop group), sardexka. Skipped 天府李米線, McDonald's, 何鮮菇 (chains); 天ぷら宮 (3 shops, to be drafted) and 再来宴 (count unknown) sent back for the next batch.
+- osw1-17 (2026-11-02, rest phase, lane id mod 4 = 0): オー・ド・ヴィー and お好み オモニ 宗右衛門町店 (block pins, same building), 鳥魚 宗右衛門町店 (2-shop group; 隠れ鳥魚 is a sister format), 燻製バル モトカラ. Skipped Bonue caron (no 2025–26 reviews), McDonald's.
