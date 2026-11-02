@@ -506,3 +506,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-16 (2026-11-02): 大極殿本舗 六角店, 宝泉 JR新幹線京都駅店 (inside the gates; small group), 祇園 末友 (vegan course per official site), 私房菜 すみよし. No skips.
 - osaka-kita osw8-14 (2026-11-02, Shin-Osaka odd): 中国料理 ファンファン (main shop, owner 田中 敏文, 1988), なにわのお好み焼 じろー, はす亭 (father and son), 喫茶ランプティラ. No skips. Also: writeCity retries briefly on a Windows file lock.
 - osw2-16 (2026-11-02, rest phase, lane id mod 4 = 1): なにわ寿し 本店 (十忠八九 sister concept), 焼肉 ホルモン 鍵矢, 魚と炭と鉄板と ととと. Skipped 博多もつ鍋大山 (21), 日本一の串かつ 横綱 (5+), 元祖串かつ だるま (~18).
+- osw1-19 (2026-11-02, rest phase, lane id mod 4 = 0): TERRACE & DINING ZERO (Cross Hotel, block pin), 友の, 道頓堀てらす (block pin), 炉端焼き一新 難波 (2-shop group). Skipped 吾曲茶, こてこて, 磯丸水産, 3・6・5酒場, 鳥魚 御堂筋店.
