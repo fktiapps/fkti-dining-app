@@ -550,3 +550,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw12-20 (2026-11-02, Ueno): Guruatsu STAND (vegan options, old reviews), Craft Ramen BiT, ラーメン長山, 純酒肴 吟. Skipped ディップパレス (5), よもだそば (5), CoCo壱番屋; 4 undecided (no counts).
 - tokyo-gaps osw10-14 (2026-11-02, Yotsuya): MOHINI (one-person), 燕食堂, 台湾屋台新台北 (couple-run), ミバショウ (2-shop group, existence probable). No skips.
 - osaka-kita osw6-22 (2026-11-02, Umeda odd): 梅田 ふぐ乃介, 北新地たゆたゆ 本店 (2-shop group), ふぐ料理 前, 串しゃぶ 菜彩. No skips.
+- kyoto-missed osw13-20 (2026-11-02): フランソア喫茶室 (1934), Artisan'Halles, 亀末廣 (1804), 鮨まつもと (hours {}). Skipped Benjamin Steakhouse (5 steakhouses per brand list), 満月 JR京都伊勢丹店 (brand in data).
