@@ -9,6 +9,7 @@
 //   nor   no furigana: the reviewer was not sure of the reading
 //   r     a reviewed reading for the whole run, drawn as one ruby over it
 //   furi  a reviewed [[surface, reading], …] when per-word placement matters
+//   byCity  {city: {fields}} overriding the above for one city only
 // Otherwise the reading comes from kuromoji (lib.mjs furiOf), names already left unread.
 //
 // A covered city (data/gloss/covered.json) must have every displayed run glossed; the build
@@ -24,7 +25,9 @@ const compiled = new Map(); // city|run → entry (readings can differ by city: 
 const compile = (run, city) => {
   const key = `${city}|${run}`;
   if (!compiled.has(key)) {
-    const e = src[run];
+    // byCity: {tokyo: {...}} overrides fields for one city, for a run that means different things in
+    // different cities (丸十 is "sweet potato" on Kyoto menus but a yakiniku shop's name in Tokyo).
+    const e = src[run].byCity?.[city] ? { ...src[run], ...src[run].byCity[city] } : src[run];
     const furi = e.name || e.nor ? [[run, '']] : e.r ? [[run, e.r]] : e.furi || furiOf(run, city).furi;
     compiled.set(key, [furi.every(([, r]) => !r) ? 0 : furi, e.en ?? 0]);
   }
