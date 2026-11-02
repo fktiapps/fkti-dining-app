@@ -545,3 +545,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw8-17 (2026-11-02, Shin-Osaka odd, notable phase): 焼肉 朋苑 (Yakiniku 100), 元祖大阪梅田ミックスジュース 新大阪 (4 shops), 旬彩 つむぎ, デリチュース 新大阪 (4 shops). Skipped 但馬屋 (10); 匠 skip to be reversed (sister concepts).
 - osw4-20 (2026-11-02, rest phase, lane id mod 4 = 3): 米とデミグラス, COLONY by EQI, 焼肉 肉どうし (small group), とっとっと (small group). Skipped みつる 心斎橋店 (in data), 焼肉ぽんが, 串の坊 (chains).
 - osw2-19 (2026-11-02, rest phase, lane id mod 4 = 1): ピッツェリア エイト, #702 CAFE&DINER, 鮨 奏 (offset in エースビル), pound house (small group). Skipped ぼてぢゅう 本店 (in data), 炭火とワイン (5), 魚匠 銀平 (6).
+- osaka-kita osw7-19 (2026-11-02, Shin-Osaka even, notable): トラットリア チェーロ (Italian WEST 100), あたり屋 (Soba WEST 100), めっせ熊 新大阪店 (2 known shops), ココロノ ベーカリー. No skips. Also: 只野 mom_and_pop set false (family-run plus two staff, not one person or couple).
