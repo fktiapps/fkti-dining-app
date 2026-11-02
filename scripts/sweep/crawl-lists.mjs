@@ -35,6 +35,9 @@ for (const a of areas) {
     pages = p;
     if (total !== null && p * 20 >= total) break;
   }
+  // A first page that failed or carried no links is a fetch problem, not an empty area (2026-10-30: ten
+  // areas throttled at once were marked done with 0 pages and silently emptied whole worker lanes).
+  if (!pages) { console.error(`${key}: page 1 failed or empty — NOT marked done; rerun later`); process.exitCode = 1; continue; }
   appendJsonl(DONE, { area: a.code, genre, pages, added, total, at: new Date().toISOString() });
   console.log(`${key}: ${pages} pages, ${added} new ids (Tabelog total ${total ?? '?'})`);
 }
