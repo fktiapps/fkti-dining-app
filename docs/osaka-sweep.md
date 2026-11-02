@@ -474,3 +474,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw8-12 (2026-11-02, Shin-Osaka odd): 餃子工房 ギョィィィィィィン (one-person shop), らぁめん じん IHARA店, 隆勝 (full ramen block). Skipped 幸ちゃん 本店 (branch of a brand in data), 人類みな麺類 ラーメン研究所 (UNCHI chain).
 - tokyo-gaps osw12-14 (2026-11-02, Ueno): 鳥ぶし (researched in place of tokyo3__219; halal self-claim only, flag false), 歳歳紅, 博多 からくさや. Skipped あいだや (same brand as あいだや２ in data).
 - osw1-16 (2026-11-02, rest phase, lane id mod 4 = 0): たこやき王子 難波道頓堀店, 万菓堂 心斎橋店, 黒毛和牛焼肉善 難波心斎橋店 (3-shop group), 縁. Skipped 鳥貴族, 温野菜 (chains), 京都利休の生わらび餅, Happy's Cafe, カラオケ804, GiGOのたい焼き.
+- osaka-kita osw6-16 (2026-11-02, Umeda odd): 中国菜 オイル (Chinese WEST 100), ステーキ鉄板エッセンス, グリルタケヤ (couple-run), 炭焼き専門 ひととき 兎我野本店 (2-shop group). No skips.
