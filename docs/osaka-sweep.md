@@ -591,3 +591,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-24 (2026-11-02, lane id mod 4 = 3, core backlog): マルホ酒店 ミナミ店 (2 shops), CRITTERS PIZZA (sister of Critters Burger), スマイル キッチン ヒマラヤン バル, 旬彩和食くつろぎ. Skipped 難波とんぼ 別館 (in data).
 - osw3-23 (2026-11-02, lane id mod 4 = 2, core backlog): 炭火焼肉CoCoRo 本店 (2 shops), PANAF' (ex-Expo African), 大和屋本店, Osteria Pantera. No skips.
 - tokyo-gaps osw12-24 (2026-11-02, Ueno): 麺処 晴 (Ramen 100), とん平 (1947, one-person), 横浜家系ラーメン 鶯家, 山鶏 ハナレ (2 shops). Skipped 羊不同, 小諸そば, 太陽のトマト麺 (chains), 鳥恵 (in data).
+- tokyo-gaps osw11-22 (2026-11-02, Ningyocho): 笹新 (1970, reopened 2026-07), 六文そば 人形町店 (noren-wake-style group; with Greg), らーめん 佐々舟 (couple), もとじま. No skips.
