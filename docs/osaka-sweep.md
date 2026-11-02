@@ -408,3 +408,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw4-9 (2026-11-02, lane id mod 4 = 3): あっちち本舗 道頓堀店 (takoyaki 9:00 to 2–3 a.m., cash), 和牛料理 要 (A5 wagyu stone grill in Showa row houses), うな茂 (Kansai-style eel; GF ask on unsauced shirayaki), 魚屋ひでぞう 別館 (fishmonger's izakaya).
 - osw1-11 (2026-11-02, lane id mod 4 = 0): 此処は堀江 ニルとコメ (dog-friendly oden izakaya), 朋友雑穀食府 (Xi'an biang biang noodles; no ramen block), 寿司 なかご 別邸 (Nakago group), タワンタイ (Thai since 1999). Skipped 貝バル Baccanale (chain).
 - kyoto-missed osw13-9 (2026-11-02): 祇園 にしかわ (西川正芳's kaiseki), 山玄茶 (増田伸彦's tea-kaiseki counter), TAKAYAMA (owner-chef 高山; pin offset), LURRA° (Jacob Kear's wood-fired Nordic-Japanese). Skipped NAKATSUKA (relocated).
+- tokyo-gaps osw11-8 (2026-11-02, Ningyocho): 火の豚 人形町駅前店 (no ramen block), 麺屋 音 人形町店 (no ramen block), かつ好 (Tonkatsu 100 ×6), 鮨 こいけ (couple-run per one review, mom_and_pop). Skipped 日高屋, いろり庵きらく (in data), ちょいおでん (14-shop chain).
