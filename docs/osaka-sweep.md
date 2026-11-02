@@ -440,3 +440,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-11 (2026-11-02, lane id mod 4 = 1): MONDAY VIBES COFFEE and ムーラン (taken by id after the sister-concept ruling), BAR à VIN 徳蔵 心斎橋 (wine importer's bistro), 料理屋 新町壱丁目 (Il Piatto sister, different format: kept).
 - osaka-kita osw8-10 (2026-11-02, Shin-Osaka odd): つけ麺R&S (no ramen block), らーめん キング (no ramen block), 真水無香 (Shanghai-style), 串焼たなかや. Skipped ボス豚 (closed).
 - kyoto-missed osw13-11 (2026-11-02): 京趣味 菱岩 (takeaway bento since 1829; relay comfort), ぎをん 遠藤 (遠藤功太's fish counter; pin offset), 祇園 きだ (reservation-only, listed per Greg's ruling; loc_approx single), ひつじ (natural-yeast donuts).
+- tokyo-gaps osw9-12 (2026-11-02, Roppongi): 感情 (duck-and-soba omakase, Bronze 2025–26; booking via OMAKASE), 利尻昆布ラーメン くろおび (full ramen block; pin offset), Steam Dim sum & Wine, とり澤 六本木 (yakitori EAST 100).
