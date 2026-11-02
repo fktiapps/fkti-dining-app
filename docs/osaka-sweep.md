@@ -569,3 +569,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw11-20 (2026-11-02, Ningyocho): あづま軒 (~77 yrs), 人形町 鮨 なかむら (hours {}), BAR暖炉, 日本橋 蕎ノ字 (Silver). No skips.
 - osaka-kita osw8-19 (2026-11-02, Shin-Osaka odd, notable): 肉家 串八, 大衆ビストロ Galetto (匠 sister concept), 媛 故郷味の旅 (small group). Skipped 焼肉 匠 本店 (same concept), わなか, だるま, ロマン亭 (chains), たこ昌 新大阪駅店 (flagship to be drafted instead).
 - osaka-kita osw7-21 (2026-11-02, Shin-Osaka even, notable): 大阪焼肉 松屋 (single-shop brand), 魚屋スタンドふじ (small group; approximate pin), 魚料理 ふじい, 大養軒. Skipped 金獅子 西中島南方店 (in data).
+- osaka-kita osw6-24 (2026-11-02, Umeda odd): tabeNOko, 海鮮居酒屋 てつたろう (one shop), 梅田 海鮮居酒屋いこう, yoshi-carbona. No skips.
