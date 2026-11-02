@@ -496,3 +496,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw3-16 (2026-11-02, rest phase, lane id mod 4 = 2): お好み焼 とんべえ (1976, cash only), 玄米カフェ 実身美 心斎橋店 (4-shop group; offset from Danke), エンプレスルーム (Swissotel), LA FINESTRA. No skips.
 - osaka-kita osw7-15 (2026-11-02, Shin-Osaka even): オムライス&cafe STYLE (one-person), 甚九郎 (owner Morimoto), ゆうすけ (Udon WEST 100), すし処和 (hours unknown). Skipped 麺匠 はなみち (7 shops on its own site).
 - tokyo-gaps osw10-10 (2026-11-02, Yotsuya): 中華そば 山下, 酒肴 味 (couple-run), ラブエイジア四ツ谷 and スパイスカレー食堂 (block pair, same building). No skips.
+- osw4-16 (2026-11-02, rest phase, lane id mod 4 = 3): 肉割烹 鋒 (Nakago sister concept; 鋒 read きっさき), 炭焼きイタリアン Black, そば居酒屋るちん (2-shop group), 焼肉マル 心斎橋本店. Skipped 茶想もりた園 (5–6 shops).
