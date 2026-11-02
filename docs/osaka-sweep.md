@@ -458,3 +458,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw7-12 (2026-11-02, Shin-Osaka even): 太鼓寿し (per-piece machi-zushi, cash), すしまる屋 東三国店 (to 2 am), イタリアンバル ストーリア, 悠楽 (Omi-beef yakiniku). Skipped 餃子の王将 (chain in data).
 - osw4-13 (2026-11-02, lane id mod 4 = 3): 個室 和食 矗々家 難波店, はり重カレーショップ (sister concept of はり重), 牡蠣と肉たらしビストロAKIRA, 燻製スギヤ商店.
 - osw3-13 (2026-11-02, lane id mod 4 = 2): ぼんくら家 道頓堀店 (small okonomiyaki chain, now in data: skip later branches), 焼鳥祐 アラカルト (sister concept of 麺屋 たにぐち), 大阪カオマンガイキッチン (Thai), たこやき座 (cash, site down).
+- osw1-15 (2026-11-02, lane id mod 4 = 0): 鯛之鯛 難波店 (fish izakaya, group of four), カフェ 太陽ノ塔 なんばシティ店 (Namba CITY lot pin). Skipped chains ゆかり, 蜀漢, 玄品, 車, 中納言, 京ちゃばな, 原価ビストロチーズプラス. Lane's notable list exhausted.
