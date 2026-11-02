@@ -517,3 +517,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw11-16 (2026-11-02, Ningyocho): huit, 日本料理 柳燕, L'appartamento di NAOKI, 御料理 心馬 (all KYOE PLAZA, block pins spread 6 m). Skipped SARAY (14 shops).
 - kyoto-missed osw13-17 (2026-11-02): イーパンツァイタナカ (hours {}: three open days have no times), fiveran (small group), Flip up!, 炭焼創彩鳥家 人見. Skipped 焼肉矢澤 (7 cities, 5 countries).
 - tokyo-gaps osw9-18 (2026-11-02, Roppongi): OYOGE, 隼 (OMAKASE only, ~2-year wait; hours {}), 私房菜 吉田 (sister concept; pin offset), 鮨 龍馬. No skips.
+- osaka-kita osw8-15 (2026-11-02, Shin-Osaka odd): 麺処 ほりばた (full ramen block, one-person), 手作り餃子 橋郷館 (couple), ぶった 三国駅前店 (2-shop group), 味園 (one-person). Skipped ぎんすけ and カリトロ (counts to be rechecked next batch).
