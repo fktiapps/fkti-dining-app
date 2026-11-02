@@ -469,3 +469,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw9-14 (2026-11-02, Roppongi): 白土 shirato, てんぷら 味覚 (temporarily closed, reopening early December), 芋洗坂の下 (pin offset, same address as 味覚), 一億 (since 1968). Skipped MASHI NO MASHI TOKYO (WAGYUMAFIA).
 - osaka-kita osw7-13 (2026-11-02, Shin-Osaka even): 人類みな麺類 つけ麺専門店 (sister format), ラッキー酒場. Skipped 七宝麻辣湯 (~70 shops), きりん寺 (in data), まんしゅう (5 shops), 味悟空 東淀川駅前店 (branch of a brand in data).
 - osw3-14 (2026-11-02, lane id mod 4 = 2): さかなのじんべえ なんば店 (Restaurant Bank group, only shop of its concept; group site compromised, not cited), SAKE NERD (5 m offset from Micasadeco), オオサカチャオメン, 楽洛亭 本店 (70+ years). No skips.
+- osw4-14 (2026-11-02, lane id mod 4 = 3): 串揚げ専門店 健串, 空色COLOR, AVOCADO HOUSE NAMBA, 肉處 きっしゃん なんば店 (3-shop group, none in data). No skips.
