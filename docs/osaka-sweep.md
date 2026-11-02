@@ -587,3 +587,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-23 (2026-11-02): 緑寿庵清水 (1847 konpeito), Yosuke YAMAJI, fudo (hours {}), ソローノ. No skips.
 - osaka-kita osw5-26 (2026-11-02, Umeda even): The WAREHOUSE (Aloft; GF options with shared-kitchen warning), ジャルダン (Four Seasons), THE HICKORY BIRD, 洋食 ヨコオ (original of the station counter in data; different format). No skips.
 - tokyo-gaps osw10-17 (2026-11-02, Yotsuya/Ichigaya): 焼きとり おでん さかじ, チェルト (Sydney-born), ペザント四番町, No.4 (Tysons). Skipped JAM ORCHESTRA (private-party venue), 東京油組総本店, CHOPPED SALAD DAYS (chains).
+- osw2-22 (2026-11-02, lane id mod 4 = 1, core backlog): さかえ, Cafe&Bar BACCANO, おやじ最後の握り 心斎橋店 (sister format of 極), Monsieur Dior by Anne-Sophie Pic. Skipped まつたけ 心斎橋店 (in data).
