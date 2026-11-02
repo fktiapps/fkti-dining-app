@@ -31,4 +31,10 @@ LESSONS FROM REVIEWED ROUNDS (the integrator caught each of these; don't repeat 
 - Stay strictly in your lane's parity (id mod 4, or even/odd). On 2026-11-01 two Shin-Osaka workers both drafted the same odd-id shop.
 - Romaji you made up is a guess, in English text and in gloss `en` alike ("Sonezaki-shinchi", "Rinkusu umeda ten" on 2026-11-01). With no source romaji, keep the kanji and gloss it `name:true, en:null`.
 - When two sources contradict each other (handmade vs pre-packaged, two prices, two opening years), record both with their dates. Keeping only the flattering side is choosing what readers see, which is a content rule only Greg makes (osw6-4, 2026-11-01).
-- open_late: the threshold is NOT settled (Greg to decide, 2026-11-02). In the data, closes before 22:00 are false and closes at 24:00 or later are true; 22:00–23:59 has been set both ways. Until Greg rules, mark a close at 24:00 or later true, before 22:00 false, and 22:00–23:59 as you judge, without changing existing records.
+- open_late (Greg, 2026-11-02): true when the shop closes AFTER 22:00 (22:30, 23:00, past midnight); false at 22:00 or earlier. integrate.sh enforces this from stored hours, so set it to match.
+
+GREG'S RULINGS, 2026-11-02 (follow these):
+- Halal: set flags.halal true only when there is evidence the halal claim is true (certification, or the operator's explicit halal statement backed by a source). Halal-marked ingredients alone are not enough; record them in the text instead.
+- Chains: a chain's flagship or main shop counts as a chain. Skip it like any other branch when the chain is already in data or expanding fast. A shop with announced plans for many branches (e.g. 100 shops) is a chain.
+- Shops that take no new reservations or are referral-only are LISTED, with the booking route stated.
+- Leave abusive remarks out (insults about staff or other diners). This is the one kind of sourced content you omit.

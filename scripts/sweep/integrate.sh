@@ -19,6 +19,8 @@ node --check "scripts/$SCRIPT"
 node "scripts/$SCRIPT" | tail -6
 # sweeps push past the old city edges (Umeda, 2026-11-01): keep manifest bounds fitted to the data
 node scripts/fit-bounds.mjs --grow > /dev/null
+# Greg 2026-11-02: open_late = closes after 22:00
+node scripts/apply-open-late.mjs > /dev/null
 node scripts/gloss/merge.mjs
 if [ -n "$READ" ]; then node scripts/gloss/add-readings.mjs "$CITY" "$READ"; fi
 node scripts/gloss/extract.mjs "$CITY" 2>&1 | tail -2
