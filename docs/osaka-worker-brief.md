@@ -31,4 +31,4 @@ LESSONS FROM REVIEWED ROUNDS (the integrator caught each of these; don't repeat 
 - Stay strictly in your lane's parity (id mod 4, or even/odd). On 2026-11-01 two Shin-Osaka workers both drafted the same odd-id shop.
 - Romaji you made up is a guess, in English text and in gloss `en` alike ("Sonezaki-shinchi", "Rinkusu umeda ten" on 2026-11-01). With no source romaji, keep the kanji and gloss it `name:true, en:null`.
 - When two sources contradict each other (handmade vs pre-packaged, two prices, two opening years), record both with their dates. Keeping only the flattering side is choosing what readers see, which is a content rule only Greg makes (osw6-4, 2026-11-01).
-- open_late is true only when the shop closes at 24:00 or later (the app's "Open late" filter). A 22:30 or 23:00 close is false (osw3-8, 2026-11-02: three shops corrected).
+- open_late: the threshold is NOT settled (Greg to decide, 2026-11-02). In the data, closes before 22:00 are false and closes at 24:00 or later are true; 22:00–23:59 has been set both ways. Until Greg rules, mark a close at 24:00 or later true, before 22:00 false, and 22:00–23:59 as you judge, without changing existing records.
