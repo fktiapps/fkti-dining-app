@@ -479,3 +479,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw11-13 (2026-11-02, Ningyocho): パーラー305, 軍鶏拉麺 飛天 (Tamahide sister concept), 朝伊名 (couple from Yoron), 蛇の目鮨 (existence probable). Skipped 3 bis (closed from 2025-12-26, reopening unconfirmed).
 - kyoto-missed osw13-14 (2026-11-02): コリス (hard to book, phone route listed), 弧玖 (start times only: hours {}), KOKE, レ・シャンドール (new owners April 2026). No skips.
 - osw2-14 (2026-11-02, rest phase, lane id mod 4 = 1): Table Nice なんばパークス店 (Balnibarbi sister concept), 九州の旬 博多廊 法善寺店 (4-shop group), 冷麺館 心斎橋店 (3-shop group), 故郷羊肉串店. No skips.
+- tokyo-gaps osw9-15 (2026-11-02, Roppongi): 兼定 (existence probable), R2 SUPPER CLUB (2-shop group with R1; halal false, no certification), 焼鶏 輪, SPIGOLA. No skips.
