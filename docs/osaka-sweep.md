@@ -522,3 +522,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw10-12 (2026-11-02, Yotsuya): 鮨 やすみつ (Bronze 2026), 塩つけ麺 灯花 (full ramen block; sister concept of 鯛塩そば灯花), TIPHARETH COFFEE ROASTERY, トラノコ. No skips.
 - osw4-18 (2026-11-02, rest phase, lane id mod 4 = 3): ルサンク (offset), Oh！マイステーキ, 辛いもんや ギロチン (small group), 炭焼笑店 陽 (sister of 鴨尽/鶏尽). Skipped クンテープ (5+, multi-city).
 - osw2-17 (2026-11-02, rest phase, lane id mod 4 = 1): 焼肉ホルモン黒野, 炉端の佐藤 (2 shops; offset from 灯花), 裏難波スシトフジ, 力丸 たぬき茶屋. Skipped 鮨 宮 (やましろ group, 7), 東京竹葉亭 (5), ぎふや (11).
+- osaka-kita osw7-17 (2026-11-02, Shin-Osaka even): CHEONGANG, スター ラーメン (one-person), エルナージ (one-person), 頂㐂家 阪急三国店 (4 shops: 牧野, 伊丹, 長堀橋, 三国). Skipped 塩元帥, こがらや, 来来亭, 松屋 (chains), 虎と龍, やまふじ (in data).
