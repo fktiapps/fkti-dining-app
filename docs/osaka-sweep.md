@@ -488,3 +488,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw1-17 (2026-11-02, rest phase, lane id mod 4 = 0): オー・ド・ヴィー and お好み オモニ 宗右衛門町店 (block pins, same building), 鳥魚 宗右衛門町店 (2-shop group; 隠れ鳥魚 is a sister format), 燻製バル モトカラ. Skipped Bonue caron (no 2025–26 reviews), McDonald's.
 - osaka-kita osw5-17 (2026-11-02, Umeda even): 焼きふぐ 優ふく (block pin), まき埜 (Soba 100), Panyo 北新地, 坐 THE (sister concept). Skipped 串かつ凡 離れ (count to be checked next batch).
 - osaka-kita osw6-17 (2026-11-02, Umeda odd): 鮨 暁, 北新地 湯木 本店 (4-shop group), 酒とツマミ ちゅんま, 北新地鉄板 けん. No skips.
+- osaka-kita osw8-13 (2026-11-02, Shin-Osaka odd): 宝楽, とりや、圓, 鶏魚酒場 炭治郎, Shippoya (one-person). Skipped 煌彩酒家 ファンファン (sister of main 中国料理 ファンファン, which will be drafted instead).
