@@ -460,3 +460,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw3-13 (2026-11-02, lane id mod 4 = 2): ぼんくら家 道頓堀店 (small okonomiyaki chain, now in data: skip later branches), 焼鳥祐 アラカルト (sister concept of 麺屋 たにぐち), 大阪カオマンガイキッチン (Thai), たこやき座 (cash, site down).
 - osw1-15 (2026-11-02, lane id mod 4 = 0): 鯛之鯛 難波店 (fish izakaya, group of four), カフェ 太陽ノ塔 なんばシティ店 (Namba CITY lot pin). Skipped chains ゆかり, 蜀漢, 玄品, 車, 中納言, 京ちゃばな, 原価ビストロチーズプラス. Lane's notable list exhausted.
 - tokyo-gaps osw11-12 (2026-11-02, Ningyocho): らーめん豊樹, Okideli, VIGARO NIHONBASHI, Au pas camarade. No skips.
+- tokyo-gaps osw12-13 (2026-11-02, Ueno): KHANA KHAJA (halal self-claim only, flag false), 梯酔好 hasi bero, 中国意境菜 白燕, さるやまキッチン (Ueno Zoo). Skipped とんかつ山家 (chain).
