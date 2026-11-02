@@ -593,3 +593,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw12-24 (2026-11-02, Ueno): 麺処 晴 (Ramen 100), とん平 (1947, one-person), 横浜家系ラーメン 鶯家, 山鶏 ハナレ (2 shops). Skipped 羊不同, 小諸そば, 太陽のトマト麺 (chains), 鳥恵 (in data).
 - tokyo-gaps osw11-22 (2026-11-02, Ningyocho): 笹新 (1970, reopened 2026-07), 六文そば 人形町店 (noren-wake-style group; with Greg), らーめん 佐々舟 (couple), もとじま. No skips.
 - osaka-kita osw7-23 (2026-11-02, Shin-Osaka even, notable): 立ち寿司 杉尾, 川北商店 (3 shops; approximate pin), ※米屋 (COCOYA), ngon ca phe. No skips.
+- osaka-kita osw6-26 (2026-11-02, Umeda odd): 笑緒一, 隠れ肉バルほむら, ホルモンの谷口, カフェうえすたん. Skipped まこと屋 (in data), 浅野日本酒店 (5), 坂上さちこ (expanding group), 健串 中崎町 (in data).
