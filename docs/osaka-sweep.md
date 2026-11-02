@@ -577,3 +577,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw5-25 (2026-11-02, Umeda even): ぱとぱと (2 shops), 串揚げ 心平, 米増 (Tabelog Award; couple; hours unknown), 鮨 からす 梅田店 (2 shops). Skipped かにじぇんぬ (QRAUD chain).
 - osw2-21 (2026-11-02, lane id mod 4 = 1): 寿し炉端 喜多郎寿し 道具屋筋横丁店 (robata sister concept), 鮨 たけうち (offset), しばいたろか!! (hours unknown), フラット (owner 尾崎英司). Skipped ヨプの王豚塩焼 (7), ロジック 裏なんば (in data).
 - osw4-23 (2026-11-02, lane id mod 4 = 3, core backlog): やき鳥 ササキ, L&L Bar&Restaurant (probable), 炭焼キッチン Tenten, 鉄板焼 みなみ (Swissotel; offset). No skips.
+- osw3-22 (2026-11-02, lane id mod 4 = 2): サロン・ド・モンシェール 本店, 大衆焼肉びりちゃん (offset from るちん), お好み焼き 門. Skipped ローマ軒 (5 shops), goodspoon, chano-ma, やさい家めい, 千房, うなぎの中庄 (chains), 鉄板神社, 一蘭 (in data). Notable lane exhausted.
