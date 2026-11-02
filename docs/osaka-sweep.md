@@ -597,3 +597,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-24 (2026-11-02): 祇園 丸山 (hours {}), 二条城ふる田 (one-chef; hours {}), スマート珈琲店 (1932), ワルダー. No skips.
 - osw1-26 (2026-11-02, lane id mod 4 = 0, core backlog): 17CLUB (APA hotel), イタリアン酒場 テンパール, 星空キッチン nova, cafe Mode (block pin). Skipped Cafe ABSINTHE (thin).
 - tokyo-gaps osw9-19 (2026-11-02, Roppongi): 鳥義士, L'osteria, ケバブバー (probable; hours unknown; offset), orange (Midtown; not precise). Skipped R1 TOKYO (R2 sister in data).
+- osaka-kita osw8-21 (2026-11-02, Shin-Osaka odd, notable): 焼肉はうす たられば, 四季自然喰処たちばな (2 shops). Skipped 551蓬莱 ×2, 東洋亭, りくろーおじさん ×2, 京ちゃばな (chains), 道頓堀今井, 牛虎 (in data); BW STATION and エスタシオン undecided.
