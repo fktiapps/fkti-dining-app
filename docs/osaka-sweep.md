@@ -543,3 +543,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw11-18 (2026-11-02, Ningyocho): 生駒軒 (noren-wake name, independent; asked Greg), 貝麺ふか川, 岩手屋 (couple-run), 串揚げなかや人形町 (2-shop group). Skipped 博多とりかわ 長政 (5 shops, 10-shop goal).
 - osaka-kita osw5-22 (2026-11-02, Umeda even): 鮨処 おりた (owner per invoice register), サムギョプサル ホブ (Numata sister concept), おやじ最後の握り 極 (small group), AVAN 北新地 (GF no). No skips.
 - osaka-kita osw8-17 (2026-11-02, Shin-Osaka odd, notable phase): 焼肉 朋苑 (Yakiniku 100), 元祖大阪梅田ミックスジュース 新大阪 (4 shops), 旬彩 つむぎ, デリチュース 新大阪 (4 shops). Skipped 但馬屋 (10); 匠 skip to be reversed (sister concepts).
+- osw4-20 (2026-11-02, rest phase, lane id mod 4 = 3): 米とデミグラス, COLONY by EQI, 焼肉 肉どうし (small group), とっとっと (small group). Skipped みつる 心斎橋店 (in data), 焼肉ぽんが, 串の坊 (chains).
