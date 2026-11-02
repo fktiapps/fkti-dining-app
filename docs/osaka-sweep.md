@@ -524,3 +524,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-17 (2026-11-02, rest phase, lane id mod 4 = 1): 焼肉ホルモン黒野, 炉端の佐藤 (2 shops; offset from 灯花), 裏難波スシトフジ, 力丸 たぬき茶屋. Skipped 鮨 宮 (やましろ group, 7), 東京竹葉亭 (5), ぎふや (11).
 - osaka-kita osw7-17 (2026-11-02, Shin-Osaka even): CHEONGANG, スター ラーメン (one-person), エルナージ (one-person), 頂㐂家 阪急三国店 (4 shops: 牧野, 伊丹, 長堀橋, 三国). Skipped 塩元帥, こがらや, 来来亭, 松屋 (chains), 虎と龍, やまふじ (in data).
 - osw1-20 (2026-11-02, rest phase, lane id mod 4 = 0): 個室ダイニング 神楽, 法善寺 浅草, 和バル八 (block pin; late-night ramen counter), シナモロールカフェ (3 shops). Skipped KK ラウンジ, 榮華亭, 松阪牛焼肉M はなれ (in data), 道頓堀肉劇場, 鍵矢 三津寺店, PASTELERIA SOL.
+- osaka-kita osw6-20 (2026-11-02, Umeda odd): 天ぷら ふか名 (2025 Michelin selection), ひなべ ぺんぎん (hours conflict recorded), 幸乃道 (one-person), 北新地ここの. Skipped 北新地はらみ 別邸 (in data).
