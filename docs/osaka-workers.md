@@ -69,9 +69,5 @@ is complete and redo the rest.
 - Field-check before integrating: hours keys against hours_raw (0=Mon), GF never above options,
   pronouns, ramen blocks fully sourced, and any romaji the report admits to inventing.
 
-## Handoff 2026-11-02 (usage limit hit mid-session)
-- Run b56z45aoc (osw3, osw7, osw10, osw4, osw1, osw5) was integrating when the session stopped. Check `git log` to see which committed. A worktree that still has `handoff/` was NOT integrated.
-- Reviewed and ready but not integrated: osw12 b16 (readings: scratchpad r12d: 天盛り, 牛すき, 牛焼肉, 牛みすじ丼, 牛ホルモン丼, 大鍋, 市場のぶっかけ飯, 火〜金, 一人営業), osw6 b18 (readings 彩月, 大阪梅田店, 北新地鮨; 言 was re-keyed to 「北新地鮨 言」 in its chunk).
-- Workers stopped mid-draft: osw2 b16, osw8 b14 (draft main ファンファン 27111425 first), osw9 b17, osw11 b15, osw13 b16. Their worktrees may hold partial drafts: reset to main and redispatch.
-- Open questions for Greg: Provision (members club), 巨乳焼き, "abusive remarks" reading, カフェ 太陽ノ塔 chain?, group-size line (2–4 small / 5+ chain / branch of a brand in data skipped), shirato mom_and_pop.
-- Undecided in queues: 再来宴, あさが家 (Ueno), 六美麻辣湯 (Osaka), 甘党まえだ, ぼんぞ, TORA鶏YA.
+## Handoff 2026-11-02 (resolved)
+- After the usage-limit stop, all pending batches were integrated and all 13 workers re-dispatched (2026-11-02 evening). Open questions for Greg: Provision, 巨乳焼き, the abusive-remarks reading, カフェ 太陽ノ塔, the group-size line, shirato mom_and_pop. Undecided in queues: 再来宴, あさが家, 六美麻辣湯, 甘党まえだ, ぼんぞ, TORA鶏YA.

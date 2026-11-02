@@ -501,3 +501,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw5-18 (2026-11-02, Umeda even): 深夜食堂 しまながし and 鮨おぎ堂 (block pair), 北新地 天ぷら 拾幸, 焼鳥 鳥中前. 串かつ凡 離れ skip confirmed (5 shops per kitchen-dan.jp/bon/).
 - tokyo-gaps osw12-16 (2026-11-02, Ueno): 大衆酒場 天ぷら宮 (3-shop group, skip reversed), 焼肉DINING 牛勢, 肉めし岡もと 御徒町店 (2 shops on the official locator, 2026-11-02), Mille, (one-person). 再来宴 and あさが家 undecided (no shop count).
 - osaka-kita osw6-18 (2026-11-02, Umeda odd): 鮨 彩月 大阪梅田店, 北新地鮨 言 (Gon/Gen unresolved, name glossed with no reading), 焼鳥 うなる, 四川料理MITSUBACHI (IAKU sister concept). No skips.
+- tokyo-gaps osw11-15 (2026-11-02, Ningyocho): 森乃園 (hojicha soft serve), とり鈴, 洋食 小春軒 (1912), on your side. No skips. Also: handoff note marked resolved.
