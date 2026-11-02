@@ -560,3 +560,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw12-21 (2026-11-02, Ueno): ホルモン青木 上野店 (4 shops), AJILLO 上野店 (sister brand), 点心すや, ささのや (pin offset from すや). 3 undecided.
 - osw1-23 (2026-11-02, lane id mod 4 = 0): a la mode osaka, たまり場PON, 石鍋イニョン, 豚のしっぽと鶏のとさか (2 shops; block pin). Skipped 雪之丞, ザ・セラーズ (thin), 鉄板神社 三津寺笠屋町店 (in data).
 - osaka-kita osw6-23 (2026-11-02, Umeda odd): 鮨 ラビス (Four Seasons; 4 locations worldwide), U.KAI (IAKU sister; low confidence, changing chef), すし青木, nitro. No skips.
+- tokyo-gaps osw10-15 (2026-11-02, Yotsuya): つぼみ家 (24h weekday soba), ホメリ (owner 宮内友之), 中華食堂 月ノ光 (one-person; moved 5 m off homeri), Polyphony (vegetarian; plant-based course on request). No skips.
