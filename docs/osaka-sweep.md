@@ -528,3 +528,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-18 (2026-11-02): 焼肉やまちゃん (sister of 富小路やまぎし), オテルドゥオガワ (sister of 食堂おがわ; walk-in only), ヴェーナ (hours {}: last-entry times only), 祇園 一道 (couple-run). No skips.
 - tokyo-gaps osw11-17 (2026-11-02, Ningyocho): Ino Cantonese 日本橋 たかせ (Chinese 100), さぶろく (owner a former Carp player), 鮨處つの田, 連珍 (2 shops; KYOE PLAZA 1F, block). No skips.
 - tokyo-gaps osw12-18 (2026-11-02, Ueno): 炭火焼 18, Alvino (sister concept), プロースト東京 (2 shops), ラッフルズ カリー (Curry 100). かに村 chain-checked (one-brand shop of the FANG DREAM group), to be drafted next.
+- osw3-18 (2026-11-02, rest phase, lane id mod 4 = 2): 喜多蔵 (offset from Juju; tourist-group phone rule), 地焼うなぎ 法善寺山かづ, アシヤナ, コジーナ邸 (no ramen block). Skipped 豚匠 (5 shops).
