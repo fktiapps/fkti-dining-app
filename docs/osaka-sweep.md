@@ -571,3 +571,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw7-21 (2026-11-02, Shin-Osaka even, notable): 大阪焼肉 松屋 (single-shop brand), 魚屋スタンドふじ (small group; approximate pin), 魚料理 ふじい, 大養軒. Skipped 金獅子 西中島南方店 (in data).
 - osaka-kita osw6-24 (2026-11-02, Umeda odd): tabeNOko, 海鮮居酒屋 てつたろう (one shop), 梅田 海鮮居酒屋いこう, yoshi-carbona. No skips.
 - tokyo-gaps osw12-22 (2026-11-02, Ueno): Cafe＆Bar Cababre., 鳥恵 上野広小路店 (up to 4 shops), 関西風手打うどん いらっしゃい (one-person), 寿し処 川. Skipped 成吉思汗だるま, てんや, から揚げの天才 (chains); 7 undecided.
+- osw1-24 (2026-11-02, lane id mod 4 = 0, core backlog): お好み焼き なお家 (reading unsure), 天ぷら たろじろう (block pin), hubble, Pizza TOKIO STADIUM. Skipped 善 難波千日前店 (in data), Subway, 串かつ料理 活, 616点心佬 (chains).
