@@ -564,3 +564,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-20 (2026-11-02, lane id mod 4 = 1): TORICO MEAT (small group), キャベツ焼 難波店 (4 shops, cash only). Skipped ひとめぼれ (7+), そばよし, うおまん, 千房, 野乃鳥, キリンシティ, 喜多郎寿し, オリジナルパンケーキハウス (chains), 新福菜館, 古潭, 三田製麺所 (in data).
 - osaka-kita osw5-24 (2026-11-02, Umeda even): かっぽう庵 江上 and 北新地 ふか (block pair; ふか GF no), 飛牛 (WEST 100), 鶏豚笑店 さっさ. No skips.
 - kyoto-missed osw13-21 (2026-11-02): 味 ふくしま (hours {}), 一子相伝 なかむら (1827; hours {}), 青いけ (hours {}), 佳肴 岡もと (couple-run). No skips.
+- osw3-21 (2026-11-02, lane id mod 4 = 2): 魚と煮込みとわら焼きと ととと (sister concept), たこ八 道頓堀総本店 (1979), 喜多郎寿し なんば店 (3 Japan shops per kitarou.jp), musi-vege+cafe (4 shops). Skipped つるとんたん, だるま, 牛ノ福, Shake Shack, 華味鳥, 龍の巣 (chains), ニング (in data). Also: reading たこ焼き → たこやき (the たこ焼 key was doubling き in 155 places).
