@@ -178,7 +178,10 @@ function namesFor(city) {
   return (cityNames[city] = out);
 }
 const readingsFor = city => ({ ...namesFor(city), ...WORD_READINGS, ...(CITY_READINGS[city] || {}) });
-const wordsReFor = city => (wordsRe[city || ''] ||= new RegExp(Object.keys(readingsFor(city)).sort((a, b) => b.length - a.length).join('|'), 'g'));
+// Keys are literal text: escape them, or a key like "小鉢 (魚" breaks the whole regex (2026-11-01)
+// and "(店の前に喫煙所)" silently becomes a group that matches without its parentheses.
+const reEscape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const wordsReFor = city => (wordsRe[city || ''] ||= new RegExp(Object.keys(readingsFor(city)).sort((a, b) => b.length - a.length).map(reEscape).join('|'), 'g'));
 // After a number: 9月 = がつ, 28日 = にち, 2025年 = ねん, 3時 = じ (kuromoji splits the digits off).
 const COUNTER = { '月': 'がつ', '日': 'にち', '年': 'ねん', '時': 'じ' };
 
