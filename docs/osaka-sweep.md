@@ -580,3 +580,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw3-22 (2026-11-02, lane id mod 4 = 2): サロン・ド・モンシェール 本店, 大衆焼肉びりちゃん (offset from るちん), お好み焼き 門. Skipped ローマ軒 (5 shops), goodspoon, chano-ma, やさい家めい, 千房, うなぎの中庄 (chains), 鉄板神社, 一蘭 (in data). Notable lane exhausted.
 - tokyo-gaps osw11-21 (2026-11-02, Ningyocho): フルーツカフェ pomp, そよいち (Kiraku lineage), 365 サロンゴカフェ (probable), 粗挽きそば 日本橋福田雅之. No skips. Also: integrate.sh now blocks new stacked pins (check-stacked-pins.mjs).
 - osaka-kita osw7-22 (2026-11-02, Shin-Osaka even, notable): パシオン・エ・ナチュール, 麺つるり, 象印銀白弁当 (sister of 象印食堂), 豚中島南方. No skips. Also: b20 back-converted menu names あのの御膳/ガチャ焼き now Latin.
+- osaka-kita osw6-25 (2026-11-02, Umeda odd): すしと和 望月, 小麦や (one-person), メルシー (GF and vegan options per official menu), 居酒屋 ときため. No skips.
