@@ -504,3 +504,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - tokyo-gaps osw11-15 (2026-11-02, Ningyocho): 森乃園 (hojicha soft serve), とり鈴, 洋食 小春軒 (1912), on your side. No skips. Also: handoff note marked resolved.
 - tokyo-gaps osw9-17 (2026-11-02, Roppongi): FREY's Famous Pizzeria, 天吉 (couple-run), RIO GRANDE GRILL (4-shop group), 六本木田舎家 東 (East/West pair). No skips.
 - kyoto-missed osw13-16 (2026-11-02): 大極殿本舗 六角店, 宝泉 JR新幹線京都駅店 (inside the gates; small group), 祇園 末友 (vegan course per official site), 私房菜 すみよし. No skips.
+- osaka-kita osw8-14 (2026-11-02, Shin-Osaka odd): 中国料理 ファンファン (main shop, owner 田中 敏文, 1988), なにわのお好み焼 じろー, はす亭 (father and son), 喫茶ランプティラ. No skips. Also: writeCity retries briefly on a Windows file lock.
