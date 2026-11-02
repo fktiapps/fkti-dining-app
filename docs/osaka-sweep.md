@@ -532,3 +532,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw8-16 (2026-11-02, Shin-Osaka odd; core lane exhausted): カリトロ三国 (4 shops confirmed), 味噌之達人 三国店 (3-shop group), Cheese Dining ItaRu (one-person). ぎんすけ skip confirmed at 5+.
 - osaka-kita osw5-21 (2026-11-02, Umeda even): 北新地 光隆, 鮨 そら, 洋食ビストロ 一方美人, 焼鳥 すぎはら. No skips. Also: たぬき茶屋 hidden as chain (same ¥385 robata format as the 5+ 力丸 shops).
 - tokyo-gaps osw10-13 (2026-11-02, Yotsuya): 肉懐石 凜然, すし秀 其ノ弐, 宝来 (family-run per review; mom_and_pop false under the one-person-or-couple rule), 焼肉 六六六. No skips.
+- osw4-19 (2026-11-02, rest phase, lane id mod 4 = 3): 魚心 南 難波店 (small group), 心斎橋神楽, 路地裏酒場 とんぼ (small group), くろ屋. Skipped 力丸 水かけ茶屋 (chain), THE COMMA, Namba (COMMA, in data).
