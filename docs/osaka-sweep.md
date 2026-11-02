@@ -508,3 +508,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw2-16 (2026-11-02, rest phase, lane id mod 4 = 1): なにわ寿し 本店 (十忠八九 sister concept), 焼肉 ホルモン 鍵矢, 魚と炭と鉄板と ととと. Skipped 博多もつ鍋大山 (21), 日本一の串かつ 横綱 (5+), 元祖串かつ だるま (~18).
 - osw1-19 (2026-11-02, rest phase, lane id mod 4 = 0): TERRACE & DINING ZERO (Cross Hotel, block pin), 友の, 道頓堀てらす (block pin), 炉端焼き一新 難波 (2-shop group). Skipped 吾曲茶, こてこて, 磯丸水産, 3・6・5酒場, 鳥魚 御堂筋店.
 - osaka-kita osw5-19 (2026-11-02, Umeda even): 鮨いわもと (Sushi WEST 100), 炭焼きと日本酒 らんぷ, 串揚げ タケナカ and 小料理 才来天 (block pair). Skipped 寿司 赤酢 (chain in data).
+- tokyo-gaps osw10-11 (2026-11-02, Yotsuya): 花咲き山 and CRUZ BURGERS (block pair), うんてん洋菓子店 (2-shop group), 萬屋 おかげさん. Skipped 町田商店 (chain).
