@@ -537,3 +537,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw1-21 (2026-11-02, rest phase, lane id mod 4 = 0): tres (block pin), 焼 塩美屋, パフェと酒と、、、金魚 (block pin), どむす (block pin). Skipped SHOGUN BURGER, 千房 (chains), ヒのトリ, あかちょうちん, sports bar BASE, ビートカフェミックス.
 - osaka-kita osw7-18 (2026-11-02, Shin-Osaka even; core lane exhausted, notable begun): 三国そば (closed to 4 Nov), らーめん Stand R&R 3号店 (small group), 熟成うどん なかや (Udon WEST 100), オソラカフェ (Cafe WEST 100). Skipped とり倉 (no review since 2024-08), 天下一品 (chain in data).
 - tokyo-gaps osw12-19 (2026-11-02, Ueno): かに村 上野本店 (2-shop brand, FANG DREAM sister concept), 江戸天ぷら屋台 四文銭, クラフト バーガー&グリル ジロー, 角打ち割烹 CONBU (Alvino group sister concept). No skips.
+- osaka-kita osw6-21 (2026-11-02, Umeda odd): 天麩羅とお蕎麦 三輪, トラットリア sol saliente (2-shop group), 鮨 日の樹, すしみさわ. Skipped 梅田 うしみつ (11 sister shops).
