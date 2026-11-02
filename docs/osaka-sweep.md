@@ -436,3 +436,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osaka-kita osw7-10 (2026-11-02, Shin-Osaka even): 台湾料理 営業中 東三国店 (Taiwanese-Chinese, 2024), 四川辣麺 西中島店 (Sichuan noodles; no ramen block), Hortensia Bistro (French with game), 松吟庵 東三国店 (ju-wari soba; GF ask).
 - osw3-11 (2026-11-02, lane id mod 4 = 2): HILLMAN (Singaporean, only Japan branch), Micasadeco&Cafe (first of a 4-shop pancake brand, kept), DINING STAGE 佐海屋旭 (seafood izakaya), 宮崎郷土料理 どぎゃん 本店 (Miyazaki chicken; sister concept of the Tanimachi noodle shop; no ramen block).
 - tokyo-gaps osw10-5 (2026-11-02, Yotsuya): 鴨の助 (soba izakaya), すし匠 (Sushi Sho head shop, Silver; flagship kept, group not in data), くすのき 本店 (Silver tempura, founder 楠忠師), IL VECCHIO PLATANO. Skipped 日高屋 (chain in data).
+- osaka-kita osw6-13 (2026-11-02, Umeda odd): 大衆飯酒場 アシタニパンチ, 伊江人酒場 (Okinawan to 7 am), 和フレンチバル村塾 屋根裏 別邸 (sister concept), epais (Tonkatsu 100). Skipped SALVATORE CUOMO 梅田 (chain in data).
