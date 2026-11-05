@@ -610,3 +610,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - osw1-27 (2026-11-02, lane id mod 4 = 0, core backlog): CORA COFFEE, ROCKS Cafe, イエロースパイス 北堀江 (small group), エンバシー・オブ・クラブ (Centara; block pin). No skips.
 - kyoto-missed osw13-25 (2026-11-02): 喫茶 マドラグ (Corona egg sandwich lineage), マリベル 京都本店 (4 shops), 赤垣屋, ZEN CAFE (鍵善 sister). No skips.
 - tokyo-gaps osw9-20 (2026-11-02, Roppongi): 知仙, THE SUSHI りょうけん, リュストル (offset from 燃 es), YAKITORI 燃 es (3-shop group). No skips.
+- osw3-25 (2026-11-02, lane id mod 4 = 2, core): 大衆牛串 空仙 (Fukushige Horumon sister), AUN COFFEE ROASTERS (2-shop group), 29104 (Horumon Nagaoka sister, opened 2026-04). Skips: シャングリラズシークレット, 炭焼笑店 陽, 蘭亭, 大阪王将 (brands in data). Integrated 2026-11-05 after the usage-limit stop.
