@@ -45,3 +45,14 @@ is researched IN PLACE: reuse its id (put() unhides it).
 - Gloss the new Japanese as in docs/osaka-workers.md; reading fixes go in your report as proposed
   `CITY_READINGS.<data city>` entries (narrow keys).
 - Report in your final message, as in docs/osaka-workers.md.
+
+## Kyoto priority (Greg, 2026-11-05)
+
+**Greg, 2026-11-05:** "prioritize Kyoto - I'll be back there December 2nd."
+
+From 2026-11-05 six workers run `kyoto-missed`; Osaka and Tokyo streams resume afterwards, in waves.
+Lanes are **Tabelog id mod 6** (osw13 = 0, osw8 = 1, osw1 = 2, osw2 = 3, osw6 = 4, osw9 = 5). Every
+batch takes **2 shops from `next core`** (vegan, ramen, ≤20 seats, 30+ reviews, nearest the centre
+first) **and 2 from `next notable`**, both in the worker's lane only. If one list has nothing left in
+the lane, take all 4 from the other. Script: `scripts/add-kyoto-missed-<osw>-b<N>.mjs` (osw13 and osw8
+continue their own numbering).
