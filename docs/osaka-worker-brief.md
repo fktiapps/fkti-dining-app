@@ -50,4 +50,4 @@ GREG'S RULINGS, 2026-11-02 (follow these):
 GREG'S RULINGS, 2026-11-05:
 - Same-name bars or shops with 5+ branches count as a chain even when no source shows a shared owner (祇園サンボア: 5 Samboa bars → skip).
 - A sub-brand of a large parent brand is a chain even in a different format (ベルアメール 京都別邸, from Chocolat Bel Amer → skip). This narrows the 2026-11-02 sister-concept rule: sister concepts of a SMALL group are still drafted.
-- A shop that asks diners not to post it on gourmet sites, or marks its pages 転載禁止, is skipped (BOCCA del VINO → skip). skip(id, reason) quoting the request.
+- A shop that asks diners not to post it on gourmet sites is skipped (BOCCA del VINO → skip). skip(id, reason) quoting the request. A standard copyright footer (「無断複写・転載等を禁じます」 on the shop's own pages) is NOT such a request and does not trigger a skip (integrator, 2026-11-05: 華祥 kept, 祇園245 drafted). House rules about photos or video inside are not posting bans either (GOSPEL, チェカ).
