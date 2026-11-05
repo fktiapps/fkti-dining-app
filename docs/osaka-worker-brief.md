@@ -46,3 +46,8 @@ GREG'S RULINGS, 2026-11-02 (follow these):
 - (2026-11-02) Never leave two pins closer than about 5 m, even when Tabelog gives two shops in one building the same point (hotels, station malls, shared lots). Offset by ~5 m and say so in pin_source. integrate.sh now fails a batch that adds any pin within 3 m of another (scripts/check-stacked-pins.mjs); run it yourself before handing off.
 - (Integrator, 2026-11-05) Three Kyoto batches dropped sourced lines the rulings keep: a loud group of foreign diners (a noise complaint = criticism), a chef saying many regulars are doctors (a statement about clientele, not gossip about a diner), and "flirtatious staff are amazing" (praise of the bar's style). The ONLY omissions are insults, slurs, remarks on someone's looks, and gossip about specific diners. Everything else sourced stays in, dated and attributed; if unsure, keep it and flag it in the report.
 - (Integrator, 2026-11-05) Menus are always verified: 'provisional', even with official prices; 'verified' is for human verification only.
+
+GREG'S RULINGS, 2026-11-05:
+- Same-name bars or shops with 5+ branches count as a chain even when no source shows a shared owner (祇園サンボア: 5 Samboa bars → skip).
+- A sub-brand of a large parent brand is a chain even in a different format (ベルアメール 京都別邸, from Chocolat Bel Amer → skip). This narrows the 2026-11-02 sister-concept rule: sister concepts of a SMALL group are still drafted.
+- A shop that asks diners not to post it on gourmet sites, or marks its pages 転載禁止, is skipped (BOCCA del VINO → skip). skip(id, reason) quoting the request.
