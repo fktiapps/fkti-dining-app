@@ -16,7 +16,8 @@ review by the integrator of every drafted record against its sources.
 | Worker k (k = 1–4) | `C:/pf/fkti-dining-osw<k>` (detached worktree; `node_modules` is a junction to main's) | researches its 4 shops and drafts one batch script plus its gloss chunks; never commits, pushes or edits anything outside its worktree |
 
 The integrator resets each worktree to main before a round:
-`git -C C:/pf/fkti-dining-osw<k> reset --hard main` then deletes its `handoff/` and `data/gloss/_chunks/`.
+`git -C C:/pf/fkti-dining-osw<k> reset -q --hard main && git -C C:/pf/fkti-dining-osw<k> clean -fdq -- handoff/ data/gloss/_chunks/`
+(use `git clean` on those two paths, not `rm -rf`: the recursive delete next to a file named handoff.txt set off "dangerous operation" warnings for Greg, 2026-11-05).
 
 ## Worker steps
 
