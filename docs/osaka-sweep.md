@@ -691,3 +691,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-12 (2026-11-05, lane id mod 6 = 3): 四川料理と酒Yuan (2026), BISTRO MAUMU (GMI group of 4), 鳥の木珈琲, 韓国料理 先斗町 李南河 (Grateful group of 9 → not a large parent; 2 李南河). Skip: FUKUNAGA901 (株式会社フクナガ sub-brand).
 - kyoto-missed osw9-14 (2026-11-05, lane id mod 6 = 5): トレイントレイン (wine izakaya), いづう (1781 saba-zushi, group of 3; loc single), RESTAURANT KOGA (chef 古賀 隆稚; no vegan), NISHITOMIYA (croquette bar). 水暉 (Ritz-Carlton) → skip next batch (covered by vm_the_ritz_carlton_kyoto).
 - kyoto-missed osw1-15 (2026-11-05, lane id mod 6 = 2): しぐれ茶屋 侘助 (yagenbori group, OMNI), SUMI (natural-wine stand), なな治 (couple-run izakaya), 鮨 森学 (Maizuru fish). No skips.
+- kyoto-missed osw6-14 (2026-11-05, lane id mod 6 = 4): とんちんかん (okonomiyaki), Arbrin (YUGEN Kyoto Shijo hotel restaurant), 料 かわしま (one-person 8 seats, 1½–2 yr wait; booking route stated), 祇園 まんま. Skip: 米処いなもと (relocation pending).
