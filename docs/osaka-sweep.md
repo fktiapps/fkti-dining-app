@@ -812,3 +812,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-34 (2026-11-06, lane id mod 6 = 5): ギャルソン クレープ, おばんざいと野菜 内儀家 (loc single), 西角, お弐かいSECOND (五十家 group). Skips: ななころびやおき 祇園八坂店 (listing on hold), キムカツ (chain).
 - kyoto-missed osw6-33 (2026-11-06, lane id mod 6 = 4): チャコール (lotus0610 group; loc single), 八坂 (Park Hyatt Kyoto), 七条ふたば (takeaway; link to 出町ふたば disputed, stated), 洋食彩酒 アンプリュス. Skip: 京焼肉つじ (Menya Yuko national group).
 - kyoto-missed osw8-34 (2026-11-06, lane id mod 6 = 1): 澄吉, Le Cadeau (one-chef), イカリヤ食堂 (kawadoko), 焼肉牛匠 新. No skips.
+- kyoto-missed osw1-37 (2026-11-06, lane id mod 6 = 2): 焼肉ダイスケ (couple-run), 鳳城 (family Chinese since 1988), 楽仙樓, 京ダイニング八条 (OSM pin check). Skip: 鳥せい 京都タワーサンド店 (11-shop chain).
