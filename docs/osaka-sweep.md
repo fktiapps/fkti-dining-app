@@ -837,3 +837,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-61 (2026-11-06, lane id mod 6 = 0): イル ポッツォ, マーマー コーヒー 京都 (loc single), SAGAN (offset), 炭火串焼とりと (3-shop group). Skip: SCHOOL BUS COFFEE STOP (chain).
 - kyoto-missed osw2-35 (2026-11-06, lane id mod 6 = 3): いっちゃんラーメン (loc single), ビストロ ラマージュ (solo chef since 1990), いまから なかじん (couple-run), shibaF (志場商店 fu pizza). No skips.
 - kyoto-missed osw9-39 (2026-11-06, lane id mod 6 = 5): Un Son Doux (solo baker), お匙 京都 (OSAJI café; G LION precedent), 夷川餃子 なかじま 団栗店 (3-shop group), 京町スタンド 若旦那 (いなせや sister; no 5+ evidence). Skip: ことたま (no 2025–26 reviews).
+- kyoto-missed osw6-37 (2026-11-06, lane id mod 6 = 4): 月と六ペンス (members-only, no new members, stated), 初音鮨 (1935, couple-run), そば酒房 徳兵衛 (loc single), 京都 鮨 まつもと (loc single). No skips.
