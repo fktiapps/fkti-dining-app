@@ -820,3 +820,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-35 (2026-11-06, lane id mod 6 = 5): しぇりークラブ 京都･石塀小路 (2-shop group), みまでり (loc single), 徳まる, ERUTAN RESTAURANT BAR (GOOD NATURE STATION). No skips.
 - kyoto-missed osw2-32 (2026-11-06, lane id mod 6 = 3): 洋食とワイン Ao (LINO DREAM WORKS sister), 三日月氷菓店, そ/s/KAWAHIGASHI, おはぎ巴屋 (takeaway). No skips.
 - kyoto-missed osw1-38 (2026-11-06, lane id mod 6 = 2): mati (loc single), EL BOGAVANTE 346, 六盛 (1899), 京豆冨 不二乃 (tofu maker's restaurant). Skip: ニューすしセンター (7-shop chain).
+- kyoto-missed osw6-34 (2026-11-06, lane id mod 6 = 4): KYOTO BISTRO (Park Hyatt), うえと, 食堂デイズ, 千本玉壽軒 (1938). Skips: 之いち (神戸牛 吉祥吉, ~50 shops), 白碗竹快樓 (KIWA).
