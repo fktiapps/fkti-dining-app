@@ -72,3 +72,9 @@ is complete and redo the rest.
 
 ## Handoff 2026-11-02 (resolved)
 - After the usage-limit stop, all pending batches were integrated and all 13 workers re-dispatched (2026-11-02 evening). Open questions for Greg: Provision, 巨乳焼き, the abusive-remarks reading, カフェ 太陽ノ塔, the group-size line, shirato mom_and_pop. Undecided in queues: 再来宴, あさが家, 六美麻辣湯, 甘党まえだ, ぼんぞ, TORA鶏YA.
+
+## Handoff 2026-11-05 (Kyoto priority, live)
+- Greg 2026-11-05: Kyoto first (he is in Kyoto from 2026-12-02). Six workers on kyoto-missed, lanes id mod 6 (osw13=0, osw8=1, osw1=2, osw2=3, osw6=4, osw9=5), 2 core + 2 notable each. Osaka/Tokyo streams paused (osw3,4,5,7,10,11,12 idle; osw4-b26 and osw7-b25 drafts were saved to the session scratchpad only — redo them).
+- Integrate with `INTEG_SCRATCH=<scratch> bash scripts/sweep/integrate.sh …`; baseline lint in $INTEG_SCRATCH/lint_now.txt (top-tier GF now 58). Smoke needs `node scripts/static-serve.mjs` running. Reset workers with `git clean -fdq -- handoff/ data/gloss/_chunks/`, never rm -rf; HANDOFF.txt is tracked — leave it.
+- Existence review: scripts/existence-scan.mjs → scripts/existence/kyoto-scan.jsonl; borderline list kyoto-borderline.json. Done: 7 closed hidden, 4 wrong-source records hidden (2 rebuilt by osw9-10), 3 pins fixed.
+- Open questions for Greg: hide 11 "signs of closure" Kyoto records (Menshin Yoshida, Little Heaven, Yatai Tokumitsu, Kiyomizu halal wagyu, Rin Halal, Yume-ya, Oubon, KYONO JUICE, Social Kitchen, EVERYSOY, Menya Roman)?; looks remarks in bios ("handsome") — omitted meanwhile; UNO RAMEN Kyoto Station GF dedicated vs options (options meanwhile).
