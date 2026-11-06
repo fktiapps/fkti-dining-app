@@ -769,3 +769,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-26 (2026-11-05, lane id mod 6 = 4): Amber Court (Hotel Nikko Princess café; un-skipped), エキュバランス (pâtisserie), かつ田 かつざんまい (group of 3), 酒場きのはち. Skips: DEAN & DELUCA, Lipton 四条 (chains).
 - kyoto-missed osw8-25 (2026-11-05, lane id mod 6 = 1): スペインバル sidra, 辨慶 東山店 (udon; group of 2), パパジョンズ 今出川本店 (cheesecake café; group of 2), 京料理 かじ (overseas guests book after arrival — stated; loc single). No skips.
 - kyoto-missed osw13-50 (2026-11-05, lane id mod 6 = 0): LOB COFFEE HOUSE (fruit sandos), 高台寺 丹虎 (G LION tempura kaiseki), 佳辰 (family kaiseki), らく山 (couple-run Gion counter). No skips.
+- kyoto-missed osw2-24 (2026-11-05, lane id mod 6 = 3): SHAVA LIVA (loc single), 洋風居酒屋 水田食堂 (one-person), 御料理 味舌 (Michelin 2020), ryu no hige by MITATE (見舘 孝司). Skips: Kappa (in data), すがり (brand in data).
