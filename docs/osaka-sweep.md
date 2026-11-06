@@ -830,3 +830,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-37 (2026-11-06, lane id mod 6 = 5): れすとらん 西島 (loc single), 魚の匠 あさきぬ (couple-run), Saffron Saffron, 接方来 京都駅ビル店 (2-shop group, operator unknown; loc single). No skips.
 - kyoto-missed osw8-37 (2026-11-06, lane id mod 6 = 1): キュロット (solo diners only, stated), 蛸安 岡崎本店, 大むら (couple-run kappo), 南禅寺 順正. Skip: ラーメン横綱 (chain, official site).
 - kyoto-missed osw2-34 (2026-11-06, lane id mod 6 = 3): 四条パクチー, 水月亭, マルミヤ亭. Skips: 十祇家 烏丸三条 (brand in data), 藤菜美 JR伊勢丹 (counter), ヤキソバスタンドバイミー (麺屋優光 group, 27-shop chain; drafted by the worker, turned into a skip by the integrator).
+- kyoto-missed osw6-36 (2026-11-06, lane id mod 6 = 4): イル・ジェーコ, てんぷら 永春, キッチンゴン 六角店 (3-shop local group), INDÉPENDANTS (1928 Building). Skip: 麺や虎鉄 (chain).
