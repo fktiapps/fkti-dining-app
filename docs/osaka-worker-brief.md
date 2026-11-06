@@ -63,3 +63,4 @@ GREG'S RULINGS, 2026-11-05 (later in the day — these override earlier integrat
 
 - GREG 2026-11-05 (referral / members-only): shops that take guests only by referral, introduction (一見さんお断り) or membership ARE listed, with the restriction stated plainly in hours_raw / notes and cultural_comfort set to reflect it. This includes cardholder or members-only lounges that serve food or drink. (Guests-only inn meals stay out: separate ruling.)
 - (Integrator, 2026-11-06) Add to the large-parent list: Plan・Do・See (20+ hotels/venues/restaurants nationwide: THE SODOH's KURO KYOTO and 鮨麻布 東山, FORTUNE GARDEN KYOTO) and Wakuden (はしたて is a Wakuden sub-brand → skip, not a sister concept). Sister-concept drafting is only for LOCAL groups.
+- GREG 2026-11-06 (halal): an operator's OWN statement that it is halal-certified (or serves halal meat) sets flags.halal = true, even when no certifier is named; attribute the claim in the text. A reviewer's guess alone does not.
