@@ -762,3 +762,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-23 (2026-11-05, lane id mod 6 = 3): 魚師匠 BURISHO (yellowtail), Téori (Hilton Kyoto buffet), つくもうどん 塩小路本店 (loc single), ryuen (loc single). 欧食屋 Kappa already in data.
 - kyoto-missed osw6-25 (2026-11-05, lane id mod 6 = 4): 節道 BUSHIDO (bonito rice bowls; group of 3), MONO MONO CAFE, 鮨こまつ, 茂庵 (Yoshida-yama café). Skip: すだく (20). Amber Court un-skipped by integrator (hotel's own café).
 - kyoto-missed osw8-24 (2026-11-05, lane id mod 6 = 1): 天丼専門店 Loosen up!, Café MALDA (GF/vegan options per official menu), CHERIE MAISON DU BISCUIT (小林かなえ), かもがわカフェ. No skips.
+- kyoto-missed osw9-26 (2026-11-05, lane id mod 6 = 5): 祇園なか原, ブランカ, 京都 柳馬場 ほん田亭 (10% seat charge), ビストロヤナギハラ. Skips: 吉祥吉 (6), うな和 (5).
