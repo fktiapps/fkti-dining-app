@@ -843,3 +843,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-62 (2026-11-06, lane id mod 6 = 0): にこみや 岳 (couple-run), 58DINER, 富小路 信, 一凛. No skips.
 - kyoto-missed osw2-36 (2026-11-06, lane id mod 6 = 3): 琥珀 (Park Hyatt bar; offset; loc single), lapintaika (solo), 月ヶ瀬 堺町店, フリアンディーズ 烏丸店 (takeaway). No skips.
 - kyoto-missed osw9-40 (2026-11-06, lane id mod 6 = 5): あなご料理 大金 (couple-run; loc single), Karasumaoike UI, ロティー チキン アンド ジャッキー タコス, 京都ダイナー. Skip: 葱や平吉 高瀬川店 (KIWA).
+- kyoto-missed osw8-39 (2026-11-06, lane id mod 6 = 1): カフェ タイガー, 晴々, 五燠堂, グリル 彌兵衛 (couple-run). Skips: どうとんぼり神座 (chain), Jean-Georges at The Shinmonzen (global brand).
