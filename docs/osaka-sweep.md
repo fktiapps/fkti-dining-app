@@ -702,3 +702,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-16 (2026-11-05, lane id mod 6 = 5): アケトテモロ (standing izakaya), 祇園 静水香 (EDGE small group; chef credits conflict), 祇園 川上 (1960 kappo), mane (creative Italian; GF no per Tabelog). No skips.
 - kyoto-missed osw1-17 (2026-11-05, lane id mod 6 = 2): 日本酒と肴 いち陽, SOUP CURRY KING 京都新京極店 (4 shops), 和ノ音 京都駅前店 (hidden after integration: 6 和ノ音 shops per gurunavi/epark), いづ重 (vegan limited per official shojin items). No skips.
 - kyoto-missed osw13-38 (2026-11-05, lane id mod 6 = 0): ELOVE (うしのほねグループ, 6 different-concept Kyoto shops → local group; loc single), 旬の料理とおばんざい つぼみ (¥2,200 seating charge; loc single), 祇園 なん波 (Michelin kaiseki), 割烹 市川. No skips.
+- kyoto-missed osw2-14 (2026-11-05, lane id mod 6 = 3): 祇をん 麺や 凛々 (ramen block, 6 dims sourced), ひつじ食堂 (jingisukan), 祇をん う桶や う (やげん堀 sister concept; loc single), 三本木商店. Skip: モリタ屋 四条猪熊本店 (6).
