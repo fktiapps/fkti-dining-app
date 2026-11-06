@@ -133633,5 +133633,151 @@
     "dish_key": "roppongi_udon"
    }
   ]
+ },
+ "kyoto_nichijo_sahan": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://tabelog.com/en/kyoto/A2601/A260202/26022510/dtlrvwlst/B528007622/",
+   "https://tabelog.com/en/kyoto/A2601/A260202/26022510/dtlrvwlst/B537839655/"
+  ],
+  "price_note": "Price from 2026 reviews.",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "One soup, three dishes set of the day",
+    "price": "¥1,000",
+    "section": "Set",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Larger portion extra at lunch.",
+    "dish_key": "teishoku"
+   }
+  ]
+ },
+ "kyoto_hyakuten_manten": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/kyoto/A2601/A260202/26003190/",
+   "https://tabelog.com/en/kyoto/A2601/A260202/26003190/dtlrvwlst/B538203740/"
+  ],
+  "price_note": "Tabelog’s introduction gives older prices; an October 2026 review gives ¥1,100 for curry ramen.",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Curry ramen",
+    "price": "¥1,100",
+    "section": "Ramen",
+    "gf": "no",
+    "vegan": "no",
+    "note": "October 2026; ¥780 on Tabelog.",
+    "dish_key": "curry_ramen"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Curry rice",
+    "price": "¥680",
+    "section": "Curry",
+    "gf": "no",
+    "vegan": "no",
+    "note": "Tabelog.",
+    "dish_key": "curry_rice"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Rice set",
+    "price": "¥200",
+    "section": "Side",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "October 2026.",
+    "dish_key": "rice"
+   }
+  ]
+ },
+ "kyoto_vital_sign": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/kyoto/A2601/A260201/26025654/"
+  ],
+  "price_note": "No prices published; reviewers spent ¥3,000–9,999 a head (2025–2026).",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Seasonal vegetable plates (à la carte)",
+    "price": "",
+    "section": "Food",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Price not given.",
+    "dish_key": "vegetables"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Natural wine by the glass",
+    "price": "",
+    "section": "Drink",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Price not given.",
+    "dish_key": "wine"
+   }
+  ]
+ },
+ "kyoto_kuzushi_kotowari": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://www.kuzushi-kotowari.com/",
+   "https://tabelog.com/en/kyoto/A2601/A260201/26036520/"
+  ],
+  "price_note": "Course price from the official site (tax included); foie-gras sushi from Tabelog.",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "月替わりコース",
+    "romaji": "",
+    "en": "Monthly course",
+    "price": "¥8,800",
+    "section": "Course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Tax included.",
+    "dish_key": "course"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Foie-gras sushi (extra)",
+    "price": "¥800",
+    "section": "Extra",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Tabelog.",
+    "dish_key": "sushi"
+   },
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Charge if no drink is ordered",
+    "price": "¥300",
+    "section": "Charge",
+    "gf": "ask",
+    "vegan": "ask",
+    "note": "Tabelog.",
+    "dish_key": "cover"
+   }
+  ]
  }
 }
