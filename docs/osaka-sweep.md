@@ -849,3 +849,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-38 (2026-11-06, lane id mod 6 = 4): NEW 大宝, 夷川 鮨 すずか (couple-run), 天空の立ち呑み とさか (offset), DE FRITES STAAN. Skip: breadworks 聖護院 (TYSONS & COMPANY).
 - kyoto-missed osw2-37 (2026-11-06, lane id mod 6 = 3): トゥレ・ドゥー, 焼鳥 仰, Sekki (Six Senses Kyoto; afternoon tea GF). Skip: 祇園ビストロ 丸橋 (Central Holdings, large parent; drafted by the worker, turned into a skip by the integrator).
 - kyoto-missed osw13-64 (2026-11-06, lane id mod 6 = 0): カワコーヒー (loc single), aotake, 手鞠鮨と日本茶 宗田, みます屋 おくどはん (2-shop group). Skip: 松葉 京都駅店 (brand in data).
+- kyoto-missed osw8-40 (2026-11-06, lane id mod 6 = 1): TRATTORIA M KYOTO (Mercure), GOOD TIME COFFEE (loc single), スパイシーマサラ (in JR Kyoto Stn; loc single), 隈本総合飲食店 MAO. Skip: 博多もつ鍋おおやま (21 shops).
