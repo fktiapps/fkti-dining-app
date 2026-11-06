@@ -704,3 +704,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-38 (2026-11-05, lane id mod 6 = 0): ELOVE (うしのほねグループ, 6 different-concept Kyoto shops → local group; loc single), 旬の料理とおばんざい つぼみ (¥2,200 seating charge; loc single), 祇園 なん波 (Michelin kaiseki), 割烹 市川. No skips.
 - kyoto-missed osw2-14 (2026-11-05, lane id mod 6 = 3): 祇をん 麺や 凛々 (ramen block, 6 dims sourced), ひつじ食堂 (jingisukan), 祇をん う桶や う (やげん堀 sister concept; loc single), 三本木商店. Skip: モリタ屋 四条猪熊本店 (6).
 - kyoto-missed osw8-15 (2026-11-05, lane id mod 6 = 1): 藤石 (loc single), 観山 (店主 八木一真), 志る幸 (soup and bento since 1932; loc single), 京都肉割烹 みや田. Skips: Lindt (6), PAUL (5), 美濃吉本店 竹茂楼 (9 美濃吉 — chain flagship).
+- kyoto-missed osw6-16 (2026-11-05, lane id mod 6 = 4): 串市 (kushikatsu to 4 am; loc single), アーマー (Showa kissa; pin 5 m off mp_okuniya), ぎおん 元勢 (game kappo; loc single), Da YUGE (Keita Yuge, 2019 Pasta World Champion). No skips.
