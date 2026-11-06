@@ -870,3 +870,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-67 (2026-11-06, lane id mod 6 = 0): イタリア料理 ロカレ (solo), ひよこ寿司, BANSAN 京色 (Kyoiro local group), 純米酒粕 玉乃光 (brewery-run). Skips: 狐の嫁入り (no review since 2023-12), スコルピオーネ 祇園, 六傳屋 先斗町 (KIWA).
 - kyoto-missed osw8-44 (2026-11-06, lane id mod 6 = 1): タンブリーノ (couple-run), 出町カラビンカ (solo), 権兵衛 (Gion, 1927), ダニエルズ (3-shop Kyoto group). Skip: うしのほね 本店 (brand in data).
 - kyoto-missed osw13-68 (2026-11-06, lane id mod 6 = 0): ポコ (cash, smoking), たかひとり (solo; offset), 京もつ鍋 亀八 本店 (3-shop group; offset), 微風台南 TEARSⅡ. Skip: 牛カツ京都勝牛 (chain).
+- kyoto-missed osw9-44 (2026-11-06, lane id mod 6 = 5): DOLCH, La leche, 原了郭 京都駅 八条口店 (loc single), 永楽屋 本店 (café; 3 shops + dept-store counters; loc single). Skip: ベジョータ ムチョ (chain).
