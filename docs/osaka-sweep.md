@@ -835,3 +835,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-40 (2026-11-06, lane id mod 6 = 2): BUNGALOW, タイカレーラーメン シャム, 竹邑庵太郎敦盛. Skips: 京 うな和 (5+ same name), すさび湯 (chain), 麺屋 聖 京都駅前店 (Menya Yuko group), 豆水楼 木屋町本店 (brand in data), バンコクガーデン (no 2025–26 review; turned into a skip by the integrator).
 - kyoto-missed osw9-38 (2026-11-06, lane id mod 6 = 5): ラーメン いち喜, 二寧坂ふたば (couple-run), ワンタンメンの満月 京都拉麺小路店 (3-shop group; loc single), 吉象咖哩. No skips.
 - kyoto-missed osw13-61 (2026-11-06, lane id mod 6 = 0): イル ポッツォ, マーマー コーヒー 京都 (loc single), SAGAN (offset), 炭火串焼とりと (3-shop group). Skip: SCHOOL BUS COFFEE STOP (chain).
+- kyoto-missed osw2-35 (2026-11-06, lane id mod 6 = 3): いっちゃんラーメン (loc single), ビストロ ラマージュ (solo chef since 1990), いまから なかじん (couple-run), shibaF (志場商店 fu pizza). No skips.
