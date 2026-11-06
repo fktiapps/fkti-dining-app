@@ -832,3 +832,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-34 (2026-11-06, lane id mod 6 = 3): 四条パクチー, 水月亭, マルミヤ亭. Skips: 十祇家 烏丸三条 (brand in data), 藤菜美 JR伊勢丹 (counter), ヤキソバスタンドバイミー (麺屋優光 group, 27-shop chain; drafted by the worker, turned into a skip by the integrator).
 - kyoto-missed osw6-36 (2026-11-06, lane id mod 6 = 4): イル・ジェーコ, てんぷら 永春, キッチンゴン 六角店 (3-shop local group), INDÉPENDANTS (1928 Building). Skip: 麺や虎鉄 (chain).
 - kyoto-missed osw13-60 (2026-11-06, lane id mod 6 = 0): 日本酒BAR ○△□ (offset), 手打 とおる蕎麦 (solo), 紅葉 Koyo (Dusit Thani hotel restaurant), アナザー シー (solo chef). Skip: ブリーク (identity unresolved).
+- kyoto-missed osw1-40 (2026-11-06, lane id mod 6 = 2): BUNGALOW, タイカレーラーメン シャム, 竹邑庵太郎敦盛. Skips: 京 うな和 (5+ same name), すさび湯 (chain), 麺屋 聖 京都駅前店 (Menya Yuko group), 豆水楼 木屋町本店 (brand in data), バンコクガーデン (no 2025–26 review; turned into a skip by the integrator).
