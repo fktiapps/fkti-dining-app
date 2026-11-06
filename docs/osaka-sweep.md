@@ -842,3 +842,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-41 (2026-11-06, lane id mod 6 = 2): 京鉄板焼肉 こと乃, Artisan TEPPAN RESTAURANT, 立ち呑み ツキノコグマ, アポロプラス. Skips: 肉なべ 千葉 (5 Chiba-named shops), 銀座おのでら, 東洋亭 ポルタ店 (chains).
 - kyoto-missed osw13-62 (2026-11-06, lane id mod 6 = 0): にこみや 岳 (couple-run), 58DINER, 富小路 信, 一凛. No skips.
 - kyoto-missed osw2-36 (2026-11-06, lane id mod 6 = 3): 琥珀 (Park Hyatt bar; offset; loc single), lapintaika (solo), 月ヶ瀬 堺町店, フリアンディーズ 烏丸店 (takeaway). No skips.
+- kyoto-missed osw9-40 (2026-11-06, lane id mod 6 = 5): あなご料理 大金 (couple-run; loc single), Karasumaoike UI, ロティー チキン アンド ジャッキー タコス, 京都ダイナー. Skip: 葱や平吉 高瀬川店 (KIWA).
