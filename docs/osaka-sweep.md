@@ -863,3 +863,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-66 (2026-11-06, lane id mod 6 = 0): CHANDER 丸太町店 (3-shop group), 鉄板焼 二条 (ANA Crowne Plaza), 松山閣 松山 JR京都伊勢丹店, 三木鶏卵 (1928). Skips: スパイシー 熊野神社店 (小僧寿し group), 宮崎酒場ゑびす (ZIPANGU), 抹茶館 (chain), 初代 麺家 あくた川 (brand in data).
 - kyoto-missed osw8-42 (2026-11-06, lane id mod 6 = 1): 皇家龍鳳 (RIHGA Royal), カンティーナ・ロッシ (couple-run), 京洋食 まつもと, ビヤレストラン ミュンヘン (loc single); Le Temps buffet-behaviour quote restored. Skip: GYOZA OHSHO (王将 sub-brand).
 - kyoto-missed osw9-43 (2026-11-06, lane id mod 6 = 5): フロマージェリー アルモニー, IMAYA Kyoto &COFFEE, オールデイダイニング ラジョウ (Kyoto Century Hotel). Skip: ベジョータ ムチョ (5-shop ベジョータ chain; drafted by the worker, turned into a skip by the integrator).
+- kyoto-missed osw2-40 (2026-11-06, lane id mod 6 = 3): blend kyoto (loc single), 京都ビアラボ, そうげんカフェ, 炭蔵. No skips.
