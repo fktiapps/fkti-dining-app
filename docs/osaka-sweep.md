@@ -828,3 +828,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-33 (2026-11-06, lane id mod 6 = 3): 鮨 仙太 (offset off Leone), Agri, にこみ 鈴や, 香港飲茶 星街 (2 shops). Skip: サー・トーマス・リプトン 三条本店 (chain).
 - kyoto-missed osw6-35 (2026-11-06, lane id mod 6 = 4): COMFY (matcha stand), もうやん, 割烹 たん義 (1964; founder's 1998 death per official history), いなせや. Skip: 鉄板焼 燔 (Kyoto Brighton Hotel closes end-Nov 2026).
 - kyoto-missed osw9-37 (2026-11-06, lane id mod 6 = 5): れすとらん 西島 (loc single), 魚の匠 あさきぬ (couple-run), Saffron Saffron, 接方来 京都駅ビル店 (2-shop group, operator unknown; loc single). No skips.
+- kyoto-missed osw8-37 (2026-11-06, lane id mod 6 = 1): キュロット (solo diners only, stated), 蛸安 岡崎本店, 大むら (couple-run kappo), 南禅寺 順正. Skip: ラーメン横綱 (chain, official site).
