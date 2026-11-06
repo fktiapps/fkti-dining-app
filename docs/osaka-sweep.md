@@ -779,3 +779,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-51 (2026-11-05, lane id mod 6 = 0): 075食堂, 和久 (和久 秀郎), 御所南 かまた, 洋食 ヒグチ亭. Skips: イノダコーヒ 本店 (chain flagship), 京都千丸 しゃかりき むらさき (brand in data).
 - kyoto-missed osw9-29 (2026-11-05, lane id mod 6 = 5): ぶゞ家, ボクのスタンド 四条烏丸店 (3-shop group), 鰻屋 瀬がわ, 聖護院 嵐まる (offset). No skips.
 - kyoto-missed osw8-27 (2026-11-05, lane id mod 6 = 1): OPEN (DoubleTree Higashiyama), 割烹 吉膳 (overseas-booking rule stated), 夷川 燕楽 (loc single), キャトルセゾン. No skips.
+- kyoto-missed osw6-28 (2026-11-05, lane id mod 6 = 4): 串鉄板ぞろんぱ 室町仏光寺店, PIOPIKO (Ace Hotel), 四方食店, Bar MICHIya (loc single). Skips: 圓徳院アメックスラウンジ (to be drafted next batch under the members-only ruling), Café Kitsuné (Maison Kitsuné sub-brand).
