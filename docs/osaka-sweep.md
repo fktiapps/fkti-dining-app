@@ -752,3 +752,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-24 (2026-11-05, lane id mod 6 = 5): 肉まぶし専門店 稀, 割烹 いいもり (Toyama seafood), ヌフ クレープリー, 立呑トリズキ (KURAMA PROJECT local group). No skips.
 - kyoto-missed osw1-26 (2026-11-05, lane id mod 6 = 2): 川間食堂 kawama cafe (cashless), 露瑚 (riverside kaiseki; loc single), WINE BISTRO by plein (PLEIN group, 4 named shops sourced), 京都モダンテラス (ROHM Theatre). No skips.
 - kyoto-missed osw2-22 (2026-11-05, lane id mod 6 = 3): うしのほね あなざ (うしのほねグループ), プランチャー健 (teppan; GF-allergy note), LE CHENE (長楽館; loc single), 鴨川たかし (Omi Hino beef). No skips.
+- kyoto-missed osw8-23 (2026-11-05, lane id mod 6 = 1): ふくや京都 (Yamagata soba; group of 3), curd (Mitsui Garden hotel restaurant), 宗, 家傳京飴 祇園小石 (also covers 茶房こいし 26003184). Skip: TADKA2 (brand in data).
