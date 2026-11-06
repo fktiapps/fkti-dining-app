@@ -865,3 +865,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-43 (2026-11-06, lane id mod 6 = 5): フロマージェリー アルモニー, IMAYA Kyoto &COFFEE, オールデイダイニング ラジョウ (Kyoto Century Hotel). Skip: ベジョータ ムチョ (5-shop ベジョータ chain; drafted by the worker, turned into a skip by the integrator).
 - kyoto-missed osw2-40 (2026-11-06, lane id mod 6 = 3): blend kyoto (loc single), 京都ビアラボ, そうげんカフェ, 炭蔵. No skips.
 - kyoto-missed osw1-45 (2026-11-06, lane id mod 6 = 2): 湯葉料理 かめや本家 (vegan shojin course), ミーミーミー (loc single), 食と森 (solo), 無鄰菴 (garden café; admission stated). No skips.
+- kyoto-missed osw8-43 (2026-11-06, lane id mod 6 = 1): グランドバーガー, 旬菜 田中でたなか(仮) (GSI pin), グリル生研会館, アモーレ 木屋町. No skips.
