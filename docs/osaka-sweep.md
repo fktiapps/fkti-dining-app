@@ -876,3 +876,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-41 (2026-11-06, lane id mod 6 = 3): 鴨弘, つけものダイニング おぎひろ家 (gf set to ask by the integrator: Tabelog checkbox + reviews, wheat found in pickles), ろくそう (永谷六方), 御料理 山上 (loc single). No skips.
 - kyoto-missed osw8-45 (2026-11-06, lane id mod 6 = 1): FUTURE TRAIN KYOTO (cashless, ¥700 entry; loc single), ふく吉 (Nishijin sushi; loc single), 京都駅前酒場 聚楽第 (Sasaki Shuzo), 魏飯餃子 (一之船入 sister). Skip: 権太呂 岡崎店 (brand in data).
 - kyoto-missed osw8-46 (2026-11-06, lane id mod 6 = 1): ととや (fishmonger set meals), ジェルメ (couple-run bakery/bistro), (THISIS)SHIZEN (Kyoto only), やぐ羅 本店 (nishin soba). Skip: 燻とん あくた川 (brand in data).
+- kyoto-missed osw6-43 (2026-11-06, lane id mod 6 = 4): 京都まぜ麺 MARUTA, 晴れ晴゛れ, PASTA MORE 京都駅店 (3 shops; loc single), 京のお晩菜処 六角や (Safari group). No skips.
