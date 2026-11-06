@@ -805,3 +805,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-36 (2026-11-06, lane id mod 6 = 2): 麺屋 とりひさ, NINUKI, 錦・だいやす (1921), 菊水 (1916; OSM pin check). Skip: 竈炊き立てごはん 土井 (Doi Shibazuke brand house).
 - kyoto-missed osw13-55 (2026-11-06, lane id mod 6 = 0): Vance洋菓子店, スタンド酒場 ステム (3-shop group), アシェットデセール 未完, 天ぷら だるきん (だるまときんぎょ owner, different concept). No skips.
 - kyoto-missed osw9-33 (2026-11-06, lane id mod 6 = 5): Bistro&Wine espace, 屋台いなば, 九時五時, 和牛ぱんが 祇園四条店 (4-shop PANGA group; halal claim in text, flag false). Skip: クー・オ・ミディ (closes 2026-11-30 with the hotel).
+- kyoto-missed osw6-32 (2026-11-06, lane id mod 6 = 4): ビア小町, ザ ハウス オブ キ ノ ビ (Kyoto Distillery bar), 麓寿庵, 酒肴屋 じじばば. Skip: 炭火ステーキ坂井 (焼肉屋さかい, ~50 shops).
