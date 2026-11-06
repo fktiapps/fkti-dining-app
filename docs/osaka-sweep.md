@@ -868,3 +868,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw8-43 (2026-11-06, lane id mod 6 = 1): グランドバーガー, 旬菜 田中でたなか(仮) (GSI pin), グリル生研会館, アモーレ 木屋町. No skips.
 - kyoto-missed osw6-41 (2026-11-06, lane id mod 6 = 4): 日本料理と日本酒 惠史 (ex-Wakuden, independent), 京 聖護院 早起亭うどん, 馬肉料理専門店 馬野郎, 中国菜 燕燕 (loc single). No skips.
 - kyoto-missed osw13-67 (2026-11-06, lane id mod 6 = 0): イタリア料理 ロカレ (solo), ひよこ寿司, BANSAN 京色 (Kyoiro local group), 純米酒粕 玉乃光 (brewery-run). Skips: 狐の嫁入り (no review since 2023-12), スコルピオーネ 祇園, 六傳屋 先斗町 (KIWA).
+- kyoto-missed osw8-44 (2026-11-06, lane id mod 6 = 1): タンブリーノ (couple-run), 出町カラビンカ (solo), 権兵衛 (Gion, 1927), ダニエルズ (3-shop Kyoto group). Skip: うしのほね 本店 (brand in data).
