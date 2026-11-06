@@ -746,3 +746,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-23 (2026-11-05, lane id mod 6 = 5): LA RISOTTERIA (Il Viale group; loc single), おそば宝来 (late-night juwari soba), 京氷菓 つらら (kakigori), 野菜と魚 en. Skips: キラメキ (20+), 美濃吉 グランヴィア, 鮨麻布 東山 (relocated), 東大 (brand in data), おめん 銀閣寺本店 (Pontocho branch in data).
 - kyoto-missed osw2-21 (2026-11-05, lane id mod 6 = 3): Planetarium Cafe&Bar Misora, オーボンモルソー (Lyonnaise bistro), 鰻・割烹 戸石 (no service charge per JA), 喫茶 ソワレ (1948). Skips: 時菜今日萬 (KIWA), 先斗町焼肉 きらく (RIC2, 7 きらく) — kyoto_pontocho_kiraku hidden too.
 - kyoto-missed osw1-25 (2026-11-05, lane id mod 6 = 2): 十祇家 木屋町御池 (pin 6.4 m off Mughal; loc single), 亀甲屋 (pull-your-own yuba), 野菜酒場あしおと, センティード (free coffee tastings). No skips.
+- kyoto-missed osw8-22 (2026-11-05, lane id mod 6 = 1): みや古 (curry udon), 酒と魚 DNA (Obama fish; Bib per reviews), ベーカリー ウキ, こま井亭 (sukiyaki; pin via 上大阪町532). Skip: 出町ふたば 伊勢丹 (brand in data).
