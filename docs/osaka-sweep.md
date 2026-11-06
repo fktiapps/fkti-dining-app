@@ -794,3 +794,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-31 (2026-11-06, lane id mod 6 = 5): フォレスト (Zest Oike; loc approx), 洛甘舎, トップ オブ キョウト (RIHGA Royal), ぱなり (loc single). Skips: RABBIT BAGELS (chain), 高台寺 十牛庵 (Hiramatsu), KURO KYOTO (Plan・Do・See, large parent).
 - kyoto-missed osw1-34 (2026-11-06, lane id mod 6 = 2): つるや (soba), 白川 京とみ, Dough (takeaway), 京菜味のむら 烏丸本店 (2-shop brand). No skips.
 - kyoto-missed osw8-30 (2026-11-06, lane id mod 6 = 1): 百春, 沁みる, アグレアーブル, ザ・ブレッド (Yaoichi Honkan, SAVORY sister). Skips: 本家 第一旭 烏丸店 (brand in data), 吉野家, スターバックス (chains).
+- kyoto-missed osw2-28 (2026-11-06, lane id mod 6 = 3): Cafe ふふふあん (半兵衛麸, sister of vm_vm), 本家 重兵衛, 中国饗膳 粋廉 (first-timer wait stated), ristorante DONO. Skips: 梅の花 (chain), 焼肉ダイニング甲 (KINOE chain), まとの (no reviews since 2023).
