@@ -783,3 +783,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-26 (2026-11-05, lane id mod 6 = 3): LOCANDA SENESE (couple-run), 松涛カフェ KYOTO, 京の鴨料理 北斎, 鉄板焼 葵 (RIHGA hotel restaurant). Skip: 三田製麺所 (chain).
 - kyoto-missed osw8-28 (2026-11-05, lane id mod 6 = 1): ピッツェリア ダ ナギーノ, バルケッタ, のんき亭, 炭火焼肉KINOE. Skip: きんざん 市役所前店 (brand in data).
 - kyoto-missed osw1-32 (2026-11-05, lane id mod 6 = 2): ガーネッシュ, ごはんとお酒 Jinsuke (couple-run), Three HORSES KYOTO, 酒ノみつぼし (Atari group of 4 brands). No skips.
+- kyoto-missed osw13-52 (2026-11-05, lane id mod 6 = 0): JUNGLE CAVE, 修伯, とんかつ豚料理 寿樹, エール新町. Skips: SCHOOL BUS COFFEE BAKERS (chain), 京都牛懐石 稲吉 (multi-venue holding-company group, sub-brand rule).
