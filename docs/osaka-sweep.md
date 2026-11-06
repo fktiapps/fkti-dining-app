@@ -845,3 +845,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-40 (2026-11-06, lane id mod 6 = 5): あなご料理 大金 (couple-run; loc single), Karasumaoike UI, ロティー チキン アンド ジャッキー タコス, 京都ダイナー. Skip: 葱や平吉 高瀬川店 (KIWA).
 - kyoto-missed osw8-39 (2026-11-06, lane id mod 6 = 1): カフェ タイガー, 晴々, 五燠堂, グリル 彌兵衛 (couple-run). Skips: どうとんぼり神座 (chain), Jean-Georges at The Shinmonzen (global brand).
 - kyoto-missed osw1-42 (2026-11-06, lane id mod 6 = 2): chicken & tacos 雷鳥神社, ブランブリュン (1935), まるたけえびす豆八 先斗町 (loc single), 肉もん 河原町竹屋町店 (OSM pin). Skip: まんざら亭 NISHIKI (7 shops).
+- kyoto-missed osw13-63 (2026-11-06, lane id mod 6 = 0): izon, 路地奥Garden168 (loc single), 京極かねよ (inbound booking rule stated; offset), 権太呂 四条本店 (3-shop group). No skips.
