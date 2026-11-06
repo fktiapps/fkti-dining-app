@@ -764,3 +764,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw8-24 (2026-11-05, lane id mod 6 = 1): 天丼専門店 Loosen up!, Café MALDA (GF/vegan options per official menu), CHERIE MAISON DU BISCUIT (小林かなえ), かもがわカフェ. No skips.
 - kyoto-missed osw9-26 (2026-11-05, lane id mod 6 = 5): 祇園なか原, ブランカ, 京都 柳馬場 ほん田亭 (10% seat charge), ビストロヤナギハラ. Skips: 吉祥吉 (6), うな和 (5).
 - kyoto-missed osw13-49 (2026-11-05, lane id mod 6 = 0): COCOLO KYOTO (granola; pin 6.9 m off frouge), まんまるの月 (okonomiyaki), 寺町よしくら (obanzai lunch, 谷口 寿幸), 洛空 (Westin Miyako buffet). Skip: ラーメン 藤 五条 (brand in data).
+- kyoto-missed osw1-29 (2026-11-05, lane id mod 6 = 2): 一寸法師 (ramen; vegan options), さかな 波波, 二條 葵月 (one-person sushi), 旬菜 咲や (couple). 亀屋博永 and アングレディアン un-skipped by integrator (takeaway shops are listed).
