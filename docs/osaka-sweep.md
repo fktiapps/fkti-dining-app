@@ -808,3 +808,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-32 (2026-11-06, lane id mod 6 = 4): ビア小町, ザ ハウス オブ キ ノ ビ (Kyoto Distillery bar), 麓寿庵, 酒肴屋 じじばば. Skip: 炭火ステーキ坂井 (焼肉屋さかい, ~50 shops).
 - kyoto-missed osw8-33 (2026-11-06, lane id mod 6 = 1): コノシマビール, 割烹 喜多, カーサビアンカ (GSI pin to clear eze bleu), のと正 (takeaway). Skip: 亀屋良長 Isetan counter (brand in data).
 - kyoto-missed osw2-30 (2026-11-06, lane id mod 6 = 3): 京都 鳥八, カプリ食堂 (2-shop brand), LAMARCK, 肉家かぐら. Skip: HARIO CAFE (maker's café brand).
+- kyoto-missed osw13-56 (2026-11-06, lane id mod 6 = 0): comorebi Ramen house (no ramen block; GF brown-rice ramen reported, gf ask), ドゥ コション, 京都生ショコラ オーガニックティーハウス (couple-run), FACTORY KAFE 工船 (loc single). Skips: うなぎ四代目菊川 (chain), 茶房こいし (same premises).
