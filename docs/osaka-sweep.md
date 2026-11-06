@@ -735,3 +735,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-19 (2026-11-05, lane id mod 6 = 3): おやじ (1957 yakisoba, mother and daughter), 祇園 いわさ起 (loc single), 即今藤本 (no dish photos on SNS = house rule), ワインと和食 みくり. Skip: SALVATORE CUOMO (7).
 - kyoto-missed osw1-23 (2026-11-05, lane id mod 6 = 2): キラナ スパイス (one-person curry), 勝鞍 (ramen; no block; loc single), 炭の香 なかつじ (eel; pin 8.5 m off Yamamoto Menzou), 游美 (referral-only; route stated). Skip: ななや 京都三条 (5).
 - kyoto-missed osw8-20 (2026-11-05, lane id mod 6 = 1): GION COFFEE NANAFUKU, カフェ コチ, カーヴ ド ケイ (K6 sister; pin 6.3 m off Bar K6), コトシエール (Granvia 15F). Skips: 紫野和久傳 伊勢丹 (Wakuden), 三徳六味 (6).
+- kyoto-missed osw6-21 (2026-11-05, lane id mod 6 = 4): OAGARI 鉄板焼 (hidden after integration: 5th Oagari-named shop → chain), 呑んべゑ (yakitori to 3 am), 出町ろろろ (Ohara vegetable bento), 鮨おおが東山 (Six Senses; Sakai shop's Kyoto branch). Skips: 万豚記 (chain), 凛 離れ (brand in data).
