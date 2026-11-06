@@ -800,3 +800,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-31 (2026-11-06, lane id mod 6 = 4): スマイルバーガー 清水寺店, そのば (offset off ormary store), ドミニク・ブシェ・キョート・ル・レストラン (Westin Miyako), 遊亀 祇園店. No skips.
 - kyoto-missed osw8-31 (2026-11-06, lane id mod 6 = 1): 寺町コロンボ, node (hotel), Etto, ラニオン (couple-run; loc single). No skips.
 - kyoto-missed osw1-35 (2026-11-06, lane id mod 6 = 2): ICHiMARU5 (dango stand), みくり 桑 (fry kappo; sister link to みくり unconfirmed, not stated), こけこっこ (Isetan 10F), Roji-oku. No skips.
+- kyoto-missed osw8-32 (2026-11-06, lane id mod 6 = 1): 鉄板焼・お好み焼 仁, 土鍋彩膳 とよあけ (one-person), 味彩 のと与 (eel since 1912), ブーランジェリー モリモリ. No skips.
