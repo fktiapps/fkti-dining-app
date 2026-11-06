@@ -758,3 +758,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-47 (2026-11-05, lane id mod 6 = 0): バラッカ (paella; pin 9.7 m off Comme Chez Michel), ヒレ焼肉 京都園, Rauk 本店 (bakery), 肉料理 川もり (smoking conflict recorded). No skips.
 - kyoto-missed osw1-27 (2026-11-05, lane id mod 6 = 2): ラクイイッカイ (wine bistro), 天ぷら 天寅 新風館店, マリーフランス 今出川店 (bakery since 1984), 洋食の店 ITADAKI 円町店. Skips: 瓢斗 四条烏丸 (7-shop chain), アスティ京都 souvenir shop (not a restaurant).
 - kyoto-missed osw13-48 (2026-11-05, lane id mod 6 = 0): 鮨割烹 味幸 (one-chef sushi; foreign-guest note quoted, relay), チェネッタ バルバ (藤田 紘一), 京洛焼肉やぶ (English name Kyoraku per the shop's own handle), クレーム デ ラ クレーム (石田老舗). Skip: 梅園 三条寺町 (brand in data).
+- kyoto-missed osw1-28 (2026-11-05, lane id mod 6 = 2): お料理 まえしろ (couple-run), 鮨 味輝, 京料理 貴与次郎 (loc single), たん熊北店 本店 (hotel-booking policy quoted). Skip: ホテル長楽館 (dining covered by two records).
