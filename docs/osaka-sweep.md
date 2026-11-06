@@ -786,3 +786,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-52 (2026-11-05, lane id mod 6 = 0): JUNGLE CAVE, 修伯, とんかつ豚料理 寿樹, エール新町. Skips: SCHOOL BUS COFFEE BAKERS (chain), 京都牛懐石 稲吉 (multi-venue holding-company group, sub-brand rule).
 - kyoto-missed osw9-30 (2026-11-05, lane id mod 6 = 5): オステリア・バスティーユ, GRIDDLE FORCE 逸楽 (offset off Masuya), 御幸町ささき, 酒処 四方. No skips.
 - kyoto-missed osw6-29 (2026-11-05, lane id mod 6 = 4): 圓徳院アメックスラウンジ (members-only per Greg's ruling; AMEX Gold+), 逸品 はし長, 十二段家 花見小路店, 先斗町ふじ田. No skips.
+- kyoto-missed osw2-27 (2026-11-06, lane id mod 6 = 3): 京都祇園茶寮, やよいComodo (やよい 本店), 寿斗 ふかがわ, だいしめ. Skips: 天天有 四条烏丸店 (brand in data), ニューベイブ 京都 (chain).
