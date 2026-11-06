@@ -798,3 +798,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-54 (2026-11-06, lane id mod 6 = 0): ルバカサブル, 風枝, 鮨 のぼる (unconfirmed Komatsu link noted), 京・菓る茶cafe. Skip: 京ラーメン壬生さだかず (brand in data).
 - kyoto-missed osw9-32 (2026-11-06, lane id mod 6 = 5): 祇園 おくおか, 韓屋 具っさんとこ, SALAO (relocated), ニッタベーカリー (weekend takeaway). No skips.
 - kyoto-missed osw6-31 (2026-11-06, lane id mod 6 = 4): スマイルバーガー 清水寺店, そのば (offset off ormary store), ドミニク・ブシェ・キョート・ル・レストラン (Westin Miyako), 遊亀 祇園店. No skips.
+- kyoto-missed osw8-31 (2026-11-06, lane id mod 6 = 1): 寺町コロンボ, node (hotel), Etto, ラニオン (couple-run; loc single). No skips.
