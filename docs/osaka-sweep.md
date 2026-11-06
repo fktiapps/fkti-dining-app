@@ -772,3 +772,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-24 (2026-11-05, lane id mod 6 = 3): SHAVA LIVA (loc single), 洋風居酒屋 水田食堂 (one-person), 御料理 味舌 (Michelin 2020), ryu no hige by MITATE (見舘 孝司). Skips: Kappa (in data), すがり (brand in data).
 - kyoto-missed osw1-30 (2026-11-05, lane id mod 6 = 2): Işıl ışıl (ルシュルシュル, couple-run), ハヤシライス専門店かもめ軒, 京御菓子司 亀屋博永 (takeaway), アングレディアン 京都 (takeaway). The last two were un-skipped from b29 (takeaway shops are listed). No skips.
 - kyoto-missed osw9-28 (2026-11-05, lane id mod 6 = 5): French Oden & Wine やほよろづ (pin offset off Telaviv), まる廣 (couple-run yakiniku), 讃式 (Sanuki udon), えいたろう屋 (izakaya). Skip: Kurasu (16-shop chain).
+- kyoto-missed osw6-27 (2026-11-05, lane id mod 6 = 4): 角打ちと麺 ばんさん (Kyoiro group, loc single), 祇園白川ラーメン, ortensia, KOSA (Ace Hotel Kyoto). Skips: ラアノウミ 烏丸御池 (brand in data), 近江ちゃんぽん亭 (chain).
