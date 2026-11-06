@@ -855,3 +855,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-43 (2026-11-06, lane id mod 6 = 2): カフェ 奏 (loc single), 京夕け 善哉 (笹井 喜晃), 7 TAPS TAVERN 京都駅 (loc single), YUGEN. Skips (9): 藤菜美, くらま (ニユートーキヨー), 京焼肉 新, らぁ～めん京 (brand in data), 天壇, 三重人, 炭火とワイン, 小島, 笹屋伊織.
 - kyoto-missed osw2-38 (2026-11-06, lane id mod 6 = 3): おが和 (小川洋輔, Michelin 1 star per site), 食堂エンドウ, MAISON TANUKI, OSTERIA IS -祇園- (offset; loc single). No skips.
 - kyoto-missed osw13-65 (2026-11-06, lane id mod 6 = 0): 焼肉 にくしま (members-only 2F stated), 冬夏 tearoom toka, ベトナム料理コムゴン 京都, 萬重 ポルタ店 (2-shop group). Skips: ハマムラ みやこみち, 亮昌 京都タワーサンド (brands in data), 串かつだるま (chain).
+- kyoto-missed osw8-41 (2026-11-06, lane id mod 6 = 1): トマトさん (couple-run), グルマン橘 (RIHGA Royal), 奥丹 清水 (loc single), ル・タン (Granvia; loc single). Skips: スターバックス, 魚がし日本一, マールブランシュ (chains).
