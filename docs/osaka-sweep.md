@@ -777,3 +777,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-25 (2026-11-05, lane id mod 6 = 3): 石焼地鶏とりくら, Severance (loc single), 魚料理 あぎやお (sister of バル agiyao), 祇園 鮨よし田 (introduction-only, stated; loc single). No skips.
 - kyoto-missed osw1-31 (2026-11-05, lane id mod 6 = 2): 串かつ専門 串文 (offset off かもめ軒), ブション, 饗応 元, 福栄堂 (takeaway). No skips.
 - kyoto-missed osw13-51 (2026-11-05, lane id mod 6 = 0): 075食堂, 和久 (和久 秀郎), 御所南 かまた, 洋食 ヒグチ亭. Skips: イノダコーヒ 本店 (chain flagship), 京都千丸 しゃかりき むらさき (brand in data).
+- kyoto-missed osw9-29 (2026-11-05, lane id mod 6 = 5): ぶゞ家, ボクのスタンド 四条烏丸店 (3-shop group), 鰻屋 瀬がわ, 聖護院 嵐まる (offset). No skips.
