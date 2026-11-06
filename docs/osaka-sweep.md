@@ -824,3 +824,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-59 (2026-11-06, lane id mod 6 = 0): コーヒーポケット (since 1945, couple-run), 肉魂 Meat Soul, Snn, K七. No skips.
 - kyoto-missed osw8-36 (2026-11-06, lane id mod 6 = 1): dews cafe kyoto (vegan options), とりこ, 萬寿寺はくらん. Skips: 圓堂 (6 shops), どんぐり, 担担麺 胡 (brand in data), 餃子の王将, ニャーヴェトナム (5 same-name shops; drafted by the worker, turned into a skip by the integrator).
 - kyoto-missed osw9-36 (2026-11-06, lane id mod 6 = 5): ブロシェット, メリメロ (solo chef), 総本家にしんそば 松葉 本店 (1882; 4-shop group; loc single), 三味洪庵 京都本店. Skips: フォーチュンガーデンキョウト (Plan・Do・See), 祇園 鰻 川藤 (F&Co, 25 shops, large parent), 味味香 京都ポルタ店 (branch in data).
+- kyoto-missed osw1-39 (2026-11-06, lane id mod 6 = 2): 茶亭 カエルノウタ, からこ, 京味菜 わたつね, 本家 田毎 三条本店 (1868). No skips.
