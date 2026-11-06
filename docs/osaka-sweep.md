@@ -693,3 +693,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-15 (2026-11-05, lane id mod 6 = 2): しぐれ茶屋 侘助 (yagenbori group, OMNI), SUMI (natural-wine stand), なな治 (couple-run izakaya), 鮨 森学 (Maizuru fish). No skips.
 - kyoto-missed osw6-14 (2026-11-05, lane id mod 6 = 4): とんちんかん (okonomiyaki), Arbrin (YUGEN Kyoto Shijo hotel restaurant), 料 かわしま (one-person 8 seats, 1½–2 yr wait; booking route stated), 祇園 まんま. Skip: 米処いなもと (relocation pending).
 - kyoto-missed osw8-13 (2026-11-05, lane id mod 6 = 1): トラットリア ラパーチェ (mom_and_pop false by integrator — 'seems to be' a couple, 30 seats), 祇園新橋 中谷, メッシタ パーネ エ ヴィーノ (one-person), 割烹 梅津. Skips: いきなりステーキ (chain), 黄桜 じろく亭 (Kizakura sub-brand).
+- kyoto-missed osw9-15 (2026-11-05, lane id mod 6 = 5): ホンデモッバン (Korean), 熟成刺身と旨い酒 ひとしお, 俵屋旅館 (meals with a stay only per sources — question for Greg; loc single), 御所東 うなしげ (Kanto eel). Skip: 水暉 (covered by Ritz record).
