@@ -851,3 +851,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-64 (2026-11-06, lane id mod 6 = 0): カワコーヒー (loc single), aotake, 手鞠鮨と日本茶 宗田, みます屋 おくどはん (2-shop group). Skip: 松葉 京都駅店 (brand in data).
 - kyoto-missed osw8-40 (2026-11-06, lane id mod 6 = 1): TRATTORIA M KYOTO (Mercure), GOOD TIME COFFEE (loc single), スパイシーマサラ (in JR Kyoto Stn; loc single), 隈本総合飲食店 MAO. Skip: 博多もつ鍋おおやま (21 shops).
 - kyoto-missed osw9-41 (2026-11-06, lane id mod 6 = 5): 茶と糀つきあかり, 喫茶 喜心 kyoto (3-shop group), 料庭 八千代 (1950), 錦 平野. Skip: 祇をん 豆寅 (KIWA).
+- kyoto-missed osw6-39 (2026-11-06, lane id mod 6 = 4): CONTO (vegan ice cream), HiTOHi, じじばば木馬亭 (じじばば group), 農家野菜 ふたご家 京都先斗町店. Skip: 志津屋 京都駅店 (chain).
