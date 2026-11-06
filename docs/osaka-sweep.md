@@ -710,3 +710,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-15 (2026-11-05, lane id mod 6 = 3): ぎをん鮨尚充 (noren-wake of Nakameguro shop, 2 total), 割烹 竹きし (kamameshi; loc single), 呑喜屋むね (owner + mother + part-timer → mop false), よこちょう. Skips: ずんどう屋 (6), 餃々 (about 40).
 - kyoto-missed osw13-39 (2026-11-05, lane id mod 6 = 0): 團'sキッチン (basement yoshoku), 祇をん ひつじカフェ (night café; pin 6 m off Gion Endo), 料理屋 自在 (うしのほねグループ), こりょうり たか屋. Skips: 宮川豚衛門 (NewBabe-supervised), 麺処むらじ (group unconfirmed), Licata (relocated listing).
 - kyoto-missed osw8-16 (2026-11-05, lane id mod 6 = 1): RUNG ARUN (Thai), OFURO (2-shop group), 中善 (couple-run kappo per official site), Synager. Skips: 新潟カツ丼タレカツ (6), ＨＡＮＡ吉兆 (Kyoto Kitcho group).
+- kyoto-missed osw6-17 (2026-11-05, lane id mod 6 = 4): DA CIRO (9-seat Italian), 子鴨 kogamo (duck and horse), 鮨 楽味 (Gion Sasaki sister concept), 近又 (1801 kaiseki inn). No skips.
