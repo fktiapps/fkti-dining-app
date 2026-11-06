@@ -817,3 +817,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-57 (2026-11-06, lane id mod 6 = 0): 円屋 三条小路店, ビストロ ヴェルジュ (couple-run), 2eme MAISON, 点邑 (Tawaraya's tempura house; single historic inn, not a large parent). No skips.
 - kyoto-missed osw8-35 (2026-11-06, lane id mod 6 = 1): 喫茶いのん (flower-shop café), 竹久, ルボンディー, 下鴨 大登龍. No skips.
 - kyoto-missed osw13-58 (2026-11-06, lane id mod 6 = 0): 京やき肉よし田, ラ・プレーヌ・リュヌ, assemblages+ (Kakimoto sister, different format; GSI pin), 酒陶 柳野 (loc single). Skip: チンクエ イカリヤ (5 イカリヤ shops, Ludico).
+- kyoto-missed osw9-35 (2026-11-06, lane id mod 6 = 5): しぇりークラブ 京都･石塀小路 (2-shop group), みまでり (loc single), 徳まる, ERUTAN RESTAURANT BAR (GOOD NATURE STATION). No skips.
