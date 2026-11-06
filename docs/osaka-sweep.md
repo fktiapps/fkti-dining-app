@@ -789,3 +789,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-27 (2026-11-06, lane id mod 6 = 3): 京都祇園茶寮, やよいComodo (やよい 本店), 寿斗 ふかがわ, だいしめ. Skips: 天天有 四条烏丸店 (brand in data), ニューベイブ 京都 (chain).
 - kyoto-missed osw1-33 (2026-11-06, lane id mod 6 = 2): La famille Morinaga (couple-run), ネオパスタヤマウチ, 満寿形屋 (offset off Inoue no Gyoza). Skips: 辻留 京都伊勢丹店 (resale bento corner), はしたて (Wakuden sub-brand; drafted by the worker, turned into a skip by the integrator).
 - kyoto-missed osw8-29 (2026-11-06, lane id mod 6 = 1): MR.MAURICE'S ITALIAN (Ace Hotel), 亀山学 (no first-timers, stated), チドリアシ, オールデイダイニング 弥栄 (Imperial Hotel Kyoto; loc single). No skips.
+- kyoto-missed osw13-53 (2026-11-06, lane id mod 6 = 0): トラットリア ラ・ヴォーチェ, 焼貝とお酒 貝貝貝, MIZO, 味野里香. No skips.
