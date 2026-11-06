@@ -802,3 +802,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-35 (2026-11-06, lane id mod 6 = 2): ICHiMARU5 (dango stand), みくり 桑 (fry kappo; sister link to みくり unconfirmed, not stated), こけこっこ (Isetan 10F), Roji-oku. No skips.
 - kyoto-missed osw8-32 (2026-11-06, lane id mod 6 = 1): 鉄板焼・お好み焼 仁, 土鍋彩膳 とよあけ (one-person), 味彩 のと与 (eel since 1912), ブーランジェリー モリモリ. No skips.
 - kyoto-missed osw2-29 (2026-11-06, lane id mod 6 = 3): 喫茶 六花, 蕎麦手打ち たか橋, 若松家酒店 (reservation-only nabe nights), 酒呑気 びんご (Atari group). No skips.
+- kyoto-missed osw1-36 (2026-11-06, lane id mod 6 = 2): 麺屋 とりひさ, NINUKI, 錦・だいやす (1921), 菊水 (1916; OSM pin check). Skip: 竈炊き立てごはん 土井 (Doi Shibazuke brand house).
