@@ -715,3 +715,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-18 (2026-11-05, lane id mod 6 = 5): 先斗町寿司よし乃, グランマーブル 祇園本店 (small group), 上古屋 (Kyotango fish izakaya), Sudo (Italian omakase; no GF menus). No skips.
 - kyoto-missed osw2-16 (2026-11-05, lane id mod 6 = 3): 宮川町ほった (堀田 功雄; no service charge per JA), オステリア・コチネッラ (森山 雅彦), monk (今井 義浩, wood-fired), SCALAE (THE THOUSAND KYOTO Italian, like KIZAHASHI). No skips.
 - kyoto-missed osw13-40 (2026-11-05, lane id mod 6 = 0): 百 (standing bar), 祇園 壹凛華 (Chinese to 2:30; no service charge per JA), 炭焼 芹生 (no service charge per JA; relay), Lino. Skip: Le Napoli (ジャンカラ group sub-brand).
+- kyoto-missed osw8-17 (2026-11-05, lane id mod 6 = 1): 焼鳥 ひさどり (one-person yakitori), 生そば大黒屋 (1916, revived Dec 2025), うらやま京色 (kushiage), this is ormary store (bread bar). No skips.
