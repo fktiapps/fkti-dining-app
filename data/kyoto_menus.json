@@ -131852,5 +131852,105 @@
     "dish_key": "nabe"
    }
   ]
+ },
+ "kyoto_yakisoba_oyaji": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/kyoto/A2601/A260301/26000595/dtlrvwlst/B530484495/"
+  ],
+  "price_note": "Only a June 2026 take-away price is published.",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "焼きそば",
+    "romaji": "yakisoba",
+    "en": "Yakisoba, two servings (take-away)",
+    "price": "¥1,000",
+    "section": "Yakisoba",
+    "gf": "no",
+    "vegan": "no",
+    "note": "June 2026.",
+    "dish_key": "yakisoba"
+   }
+  ]
+ },
+ "kyoto_gion_iwasaki": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/kyoto/A2601/A260301/26027859/dtlrvwlst/B517366082/",
+   "https://tabelog.com/en/kyoto/A2601/A260301/26027859/dtlrvwlst/B538224070/"
+  ],
+  "price_note": "Course prices from October 2026 reviews.",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "",
+    "romaji": "",
+    "en": "Lunch kaiseki course",
+    "price": "¥8,000",
+    "section": "Lunch",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Also ¥10,000 and ¥14,000; ¥9,600 including tax and service in another October 2026 review.",
+    "dish_key": "lunch_course"
+   }
+  ]
+ },
+ "kyoto_sokkon_fujimoto": {
+  "verified": "provisional",
+  "confidence": "low",
+  "sources": [
+   "https://tabelog.com/en/kyoto/A2601/A260202/26041209/dtlrvwlst/B522235417/"
+  ],
+  "price_note": "No menu published; a ¥15,000 course in a February 2026 review; Tabelog budget dinner ¥30,000–39,999.",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "",
+    "romaji": "omakase",
+    "en": "Kaiseki course",
+    "price": "¥15,000",
+    "section": "Course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "February 2026; dinner usually ¥30,000–40,000 per Tabelog budget.",
+    "dish_key": "course"
+   }
+  ]
+ },
+ "kyoto_wine_to_washoku_mikuri": {
+  "verified": "provisional",
+  "confidence": "medium",
+  "sources": [
+   "https://www.mikuri-kyoto.com/course.html"
+  ],
+  "price_note": "Official course page (tax and service included).",
+  "last_checked": "2026-11-05",
+  "items": [
+   {
+    "ja": "おまかせコース",
+    "romaji": "omakase",
+    "en": "Dinner omakase kaiseki",
+    "price": "¥22,000",
+    "section": "Course",
+    "gf": "ask",
+    "vegan": "no",
+    "note": "Example of a day’s course.",
+    "dish_key": "omakase"
+   },
+   {
+    "ja": "ワインペアリング",
+    "romaji": "",
+    "en": "Wine pairing (8 glasses, about 500 ml)",
+    "price": "¥11,000",
+    "section": "Drinks",
+    "gf": "",
+    "vegan": "",
+    "note": "Half pairing ¥8,000.",
+    "dish_key": "pairing"
+   }
+  ]
  }
 }
