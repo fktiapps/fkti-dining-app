@@ -874,3 +874,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-42 (2026-11-06, lane id mod 6 = 4): GRILL TERRACE ABURU (Miyako Messe), meat couture, ゴリーズ キッチン, 漁港直送 海鮮酒場 あんじ 烏丸六角店 (3-shop local group). No skips.
 - kyoto-missed osw1-46 (2026-11-06, lane id mod 6 = 2): じじばば第三酒場 (じじばば group, 4 shops), 京町家いづも 花のか, らんたん (Shogoin), ブリュレ キョウト. Skip: まんざらえきよこ (7 まんざら shops).
 - kyoto-missed osw2-41 (2026-11-06, lane id mod 6 = 3): 鴨弘, つけものダイニング おぎひろ家 (gf set to ask by the integrator: Tabelog checkbox + reviews, wheat found in pickles), ろくそう (永谷六方), 御料理 山上 (loc single). No skips.
+- kyoto-missed osw8-45 (2026-11-06, lane id mod 6 = 1): FUTURE TRAIN KYOTO (cashless, ¥700 entry; loc single), ふく吉 (Nishijin sushi; loc single), 京都駅前酒場 聚楽第 (Sasaki Shuzo), 魏飯餃子 (一之船入 sister). Skip: 権太呂 岡崎店 (brand in data).
