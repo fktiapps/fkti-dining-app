@@ -939,3 +939,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-81 (2026-11-07, lane id mod 6 = 0, rest): 出逢ひ茶屋 おせん (やげんぼり group; loc single), 松本酒場, 食酒処土筆 (family-run; loc single), uru coffee. Skip: Switch FORUM (too thin).
 - kyoto-missed osw8-55 (2026-11-07, lane id mod 6 = 1, rest): 大衆酒場平和, THE GATE HOTEL 京都高瀬川 Lobby Lounge & Bar (hotel's own), こがら食堂と夜酒場 (UEiQ local), 祇園饅頭 (since 1819; offset, loc single — Tabelog pin likely misplaced). No skips.
 - kyoto-missed osw6-54 (2026-11-07, lane id mod 6 = 4, rest): 桶屋久次郎 (re-drafted: 4-shop overseas group, under 5; offset), 京の魚 擔 (offset), 18 PREMIER BAR (offset), 黒毛和牛タンとハラミ 焼肉龍 (2 shops). No skips.
+- kyoto-missed osw8-56 (2026-11-07, lane id mod 6 = 1, rest): 居酒屋すずめ (since 1985; offset; loc single), えなみ家 サクの間 (loc single), SIESTA, タイキッチン BARAMEE. No skips.
