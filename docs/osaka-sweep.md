@@ -894,3 +894,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-49 (2026-11-06, lane id mod 6 = 2): チュウカソバ コウダイ (solo), 童夢 (1980), 総本家 媽媽菜館 六花 (loc single), ビストロ・スリージェ (Michelin-listed). No skips.
 - kyoto-missed osw6-46 (2026-11-06, lane id mod 6 = 4): 御肴 凸鉾, 馳走 あい田 (solo), ココチカフェ, 赤星 (Rido alley). Skips: みのるダイニング, 酔心, I'm donut?, 麺家いろは (chains), 鮨 天ぷら 祇園いわい (brand in Osaka data).
 - kyoto-missed osw2-44 (2026-11-06, lane id mod 6 = 3): くまのワインハウス, 鳳林 丸太町店 (loc single), 魏飯夷堂 三条店 (一之船入 group), フレンチ酒場 GOLD 京都ポルタ店 (3 shops). Skips: 炭火とワイン (chain), 市場小路 伊勢丹 (brand in data).
+- kyoto-missed osw9-47 (2026-11-06, lane id mod 6 = 5): notable lane cleared (10 chain skips: からふね屋, キル フェ ボン, 鼎泰豐, エビスバー, がんこ, ARROW TREE, 聖護院八ッ橋, チーズプラス, 英國屋, 天下一品); core +Da.uchi Curry (loc single), +丑屋 よ平, +炭火焼肉ノぶる 大宮店, +炭火焼肉 とく (offset); skip 銀座ハゲ天 (18 shops).
