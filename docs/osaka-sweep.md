@@ -915,3 +915,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-50 (2026-11-06, lane id mod 6 = 5): 千代飯店 (family-run), Bisan 京都店 (Palestinian; loc single), ごはん処 田辺宗 (pickle house, 1875; loc single), 麺屋愛都 98号店 (group status flagged). No skips.
 - kyoto-missed osw13-76 (2026-11-06, lane id mod 6 = 0, rest): マハヤーナ, ラホンバン マーラータン (group flagged), とんかつ きんとん 京都店 (2 shops; loc single), 創作料理 壮樹. Skips: 四季彩しをり (shioriya, 9 shops), 棲家 本店 (brand in data), カフェ・ド・クリエ, まんざら, 鶏ヤロー (chains).
 - kyoto-missed osw2-47 (2026-11-06, lane id mod 6 = 3): 食堂マルシン, じじばばDOS (じじばば group, 4 shops; offset), レストラン キエフ (since 1972; offset), 京都おぶや 京都駅店. Skips: ワビスケ (森口産業, 24 shops), OLU BURGER KYOTO (6 shops).
+- kyoto-missed osw8-52 (2026-11-06, lane id mod 6 = 1, rest): カルド (since 1988; loc single), GINZA MUSIC BAR KYOTO, SOUL&FOOD Mookie, 丸萬 (couple-run; offset; loc single). Skips: 餃子のかっちゃん, 牛角, マクドナルド, 杉玉, 1923 (chains).
