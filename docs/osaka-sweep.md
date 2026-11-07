@@ -948,3 +948,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw8-57 (2026-11-07, lane id mod 6 = 1, rest): コイコイ, 燻吟 かず家, いろはかるた 木屋町本店 (黛 local group, same gnavi series as 接方来), 肉処 だん炉. Skip: 京丹波 錦市場本店 (8 shops).
 - kyoto-missed osw13-83 (2026-11-07, lane id mod 6 = 0, rest): 京のかわば田, 北海道直送貝魚バル ざんぐり (四富会館), ライチャスパイスカフェレストラン, もつ鍋・すき焼き いっしん. No skips.
 - kyoto-missed osw9-55 (2026-11-07, lane id mod 6 = 5, rest): 味浪漫いしがま亭, 京料理 多から (120+ yrs; loc single), 天の川 (low confidence; offset), 鉄板ダイニング 京四季庵 (offset). Skips: TORA鶏YA (brand in Osaka data; 4 confirmed shops), 星乃珈琲店, 焼肉ライク (chains), アーバンリサーチ cafe (large parent).
+- kyoto-missed osw2-52 (2026-11-07, lane id mod 6 = 3): Cafe ヒペリカム (website hijacked, left out), ヨロズ食堂, saredoかふぇ & DINING (2-shop local), 京煎堂 祇園本店. Skips: だし茶漬けえん (B.Y.O.), ジュヴォー (井村屋), つじや, 新橋へそ, たかばし, 東洋亭 (chains), 古都香 (relocated).
