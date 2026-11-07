@@ -946,3 +946,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-58 (2026-11-07, lane id mod 6 = 2, rest): 京のおへそ, だるま 京都河原町店 (株式会社WILL, size unknown), 7T+ (tea; vegan options), インパルス (siphon kissa). Skips: 漁師小屋, 居酒屋 まるや, メゾポタミア (too thin), 鮨酒我流 (no reviews), すしざんまい, 辻利 (chains), 地階稲吉 (Central Holdings).
 - kyoto-missed osw6-55 (2026-11-07, lane id mod 6 = 4, rest): おばんざいとグリルSALA, 一養軒 (1922; drinks only since end 2025), 佐曽羅 EAST 1F, 黒毛和牛 善 (2 shops). Skips: バーランド (thin), べんと工房 (stale takeaway).
 - kyoto-missed osw8-57 (2026-11-07, lane id mod 6 = 1, rest): コイコイ, 燻吟 かず家, いろはかるた 木屋町本店 (黛 local group, same gnavi series as 接方来), 肉処 だん炉. Skip: 京丹波 錦市場本店 (8 shops).
+- kyoto-missed osw13-83 (2026-11-07, lane id mod 6 = 0, rest): 京のかわば田, 北海道直送貝魚バル ざんぐり (四富会館), ライチャスパイスカフェレストラン, もつ鍋・すき焼き いっしん. No skips.
