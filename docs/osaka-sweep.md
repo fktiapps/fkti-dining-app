@@ -901,3 +901,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-47 (2026-11-06, lane id mod 6 = 4): 京のSAKESORA, 智積院茶寮 桔梗 (temple lodge restaurant; vegan shojin course), 焼鳥をのじ, シェ・キクスイ (solo). Skips: イノダコーヒ, 進々堂 三条河原町 (chains), 鯛之鯛 烏丸 (brand in Osaka data).
 - kyoto-missed osw1-51 (2026-11-06, lane id mod 6 = 2): ビカシューマハル 今出川店 (2 shops), 円町リバーブ (solo), タケリア・パチャンガ, NOVECCHIO 円町 (2 shops). No skips; 花うさぎ left in queue (vague address).
 - kyoto-missed osw9-48 (2026-11-06, lane id mod 6 = 5): タコとケンタロー, 葉月, すし昌 (loc single), SCHOLE (Apitt local group). Skip: 夢現家 京都八条口店 (probable 町田商店 produce shop).
+- kyoto-missed osw13-74 (2026-11-06, lane id mod 6 = 0): core exhausted; +三代目カレー舎、NANDI。, +MANYOKEN style 京都高島屋店, +村上重本店 (takeaway pickles, 1832), +お酒とごはんと たか (offset); 7 rest skips (2 too thin, 2 chains, 3 group unconfirmed).
