@@ -959,3 +959,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-60 (2026-11-07, lane id mod 6 = 2, rest): boogaloo cafe (since 2002), ダッテン (datten), 先斗町 八十八, 焼肉匠 覚王木屋町亭. Skips: Royal Scene (too thin), はた源 (condiment shop).
 - kyoto-missed osw13-85 (2026-11-07, lane id mod 6 = 0, rest): 富之上 祇園本店 (4-shop group), まとゐ鮨 (loc single), とらふぐ茶屋 山福 (offset), 京いざかや くぼ田. Skips: 之いち (吉祥吉), 京はやしや (chain), Cafe Lumen (河道屋 chain).
 - kyoto-missed osw9-57 (2026-11-07, lane id mod 6 = 5, rest): ヤキニク 七七四 (offset), ハラールマラータン (halal flag on: the operator's own name claims halal, per Greg's ruling), 渡半 (Nishiki, 1897), 京都 かに銀 河原町店 (3 shops; offset). No skips.
+- kyoto-missed osw8-59 (2026-11-07, lane id mod 6 = 1, rest): 都和 祇園四条店 (cotton-candy sukiyaki), KAMEE COFFEE KYOTO 高辻店 (3 Kyoto shops). Skips: ニューすしセンター 木屋町, 京都ラーメンたかばし (chains per earlier counts; drafted by the worker, turned into skips by the integrator), チファジャ (chain), CoCo.314 (thin).
