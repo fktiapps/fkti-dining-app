@@ -924,3 +924,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-78 (2026-11-07, lane id mod 6 = 0, rest): ミリネヤンコプチャン (group flagged; loc single), 花おおぎ (offset), 藁焼きと水炊き 葵, ふじ寅. Skips: スター食堂 總本店, ここやねん (chains).
 - kyoto-missed osw6-51 (2026-11-07, lane id mod 6 = 4): THE GREEN, カフェコゾラ (couple-run), 柳園, 美龍 (solo). Skips: 京都たこ壱, 魁力屋 (chains).
 - kyoto-missed osw1-55 (2026-11-07, lane id mod 6 = 2, rest): 和食 まこたろう (offset), 月彩 (kawadoko), ペッパー (couple-run Okinawan), 一品香. Skip: 肉バル銀次郎 先斗町 (no 2025–26 reviews).
+- kyoto-missed osw9-52 (2026-11-07, lane id mod 6 = 5): 寺子屋 (couple-run, reopened), スイートファウンテン (thin; offset), 天龍 (couple-run; loc single), あふひ. Skips: 来来亭 (chain), なぶら 元田中店 (brand in data).
