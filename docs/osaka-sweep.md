@@ -890,3 +890,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-45 (2026-11-06, lane id mod 6 = 4): メメントモリ (solo), はとや食堂, 眺河 先斗町～華～, 大力邸. Skips: 魁力屋 (chain), あんじ 麩屋町綾小路 (brand in data), 寿司と天ぷらと樽酒 (J Group, 115), 京都肉×青果サワー 京 (GYRO).
 - kyoto-missed osw8-48 (2026-11-06, lane id mod 6 = 1): たこ焼 こはく, 喜らく (inside Toei Kyoto Studio Park; ticket required), M&Maison KYOTO, すしてつ 先斗町店 (loc single). Skip: 京家 きよみず 木屋町 (brand in data).
 - kyoto-missed osw13-71 (2026-11-06, lane id mod 6 = 0): 美菜莉 JR京都伊勢丹店, 二条 えん, 中国料理 青冥 祇園店 (Osaka 4-shop group). Skips: 炭炉まん (ファンインターナショナル; turned into a skip by the integrator), 栞屋 (5+ same-name).
+- kyoto-missed osw13-72 (2026-11-06, lane id mod 6 = 0): notable lane cleared (10 chain/large-parent skips: 東洋亭, 美々卯, まいもん寿司, がんこ, ぎをん為治郎, 志津屋, みのりカフェ, 仙太郎, チーズプラス, PAUL); core +Kroon, +LUSH LIFE, +イーサン, +まつお; skips 高木鮮魚店, ますたに 梅小路 (brand in data), 伝丸 (ゼンショー).
