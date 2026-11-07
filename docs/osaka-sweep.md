@@ -920,3 +920,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-54 (2026-11-06, lane id mod 6 = 2, rest): 僧伽小野 京都浄教寺 (hotel restaurant; ONO GROUP flagged), ソーセージ酒場 Garage19, ちりとり鍋 いその (株式会社８８ local group), 炭火焼 こてっぱん. Skips: 生ホルモンいただき, かつくら (chains).
 - kyoto-missed osw9-51 (2026-11-06, lane id mod 6 = 5): 炭の衝撃 麺屋 大ちゃん, 豆生庵 (family-run tofu), Beer&Pasta スケルツォ, センボンカリー. No skips.
 - kyoto-missed osw13-77 (2026-11-06, lane id mod 6 = 0, rest): BALMIL (offset), ほへと, 焼肉リン 御幸町店, 先斗町 鍋いし屋 (いし屋 group; offset). Skips: キリンシティ, つじや (chains), 地鶏坊主 (坊's), 錦・高倉屋 (too thin).
+- kyoto-missed osw2-48 (2026-11-06, lane id mod 6 = 3): キョウハスパイス (solo), 自然酒菜 一瞬, TSUMU CAFE, 鯖街道 花折 下鴨店. Skip: 夷川餃子 なかじま 本店 (brand in data).
