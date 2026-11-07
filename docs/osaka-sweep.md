@@ -971,3 +971,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-87 (2026-11-07, lane id mod 6 = 0, rest): IL BUCO (sister of The みます屋, group size unconfirmed, flagged), UFO, きはる, バー プレジャー (5 m offset from Cantina Arco). No skips.
 - kyoto-missed osw1-62 (2026-11-07, lane id mod 6 = 2, rest): 祇園おばんざい ぎんや (reservation only), 京料理 旬味旬彩 太一, うなぎと串料理 うなたま, 御菓子司 かぎ甚. Skips: 大衆酒場 むに (chain), baRmeat (thin). Flagged: 和牛とカニ 三条河原町店 may belong to the 和牛と豚 chain.
 - kyoto-missed osw9-59 (2026-11-07, lane id mod 6 = 5, rest): プラチナビーフ (cancellation fees), pua'a (Shitomi Kaikan; offset 3 m), 和 藤たて, Cest La Vie (offset 4 m). No skips.
+- kyoto-missed osw8-61 (2026-11-07, lane id mod 6 = 1, rest): 祇園 八軒 (3 misfiled Tabelog reviews excluded), Pizza Strada 京都祇園店 (2nd shop of Azabu-Juban original), Peek a boo Cafe, 先斗町 華楽. Skip: SHAPE BEACH (thin).
