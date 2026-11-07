@@ -970,3 +970,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-59 (2026-11-07, lane id mod 6 = 4, rest): 京町 (Pontocho), 三汁五菜 天心, トリサカナ 京都河原町店 (株式会社WILL, 4 same-name shops + かに銀; under 5, flagged), 鉄板 フタゴヤ 富小路. Skips: どてっぱん (chain), にしんそば 松葉 北店 (brand in data). 3 pins offset 7 m.
 - kyoto-missed osw13-87 (2026-11-07, lane id mod 6 = 0, rest): IL BUCO (sister of The みます屋, group size unconfirmed, flagged), UFO, きはる, バー プレジャー (5 m offset from Cantina Arco). No skips.
 - kyoto-missed osw1-62 (2026-11-07, lane id mod 6 = 2, rest): 祇園おばんざい ぎんや (reservation only), 京料理 旬味旬彩 太一, うなぎと串料理 うなたま, 御菓子司 かぎ甚. Skips: 大衆酒場 むに (chain), baRmeat (thin). Flagged: 和牛とカニ 三条河原町店 may belong to the 和牛と豚 chain.
+- kyoto-missed osw9-59 (2026-11-07, lane id mod 6 = 5, rest): プラチナビーフ (cancellation fees), pua'a (Shitomi Kaikan; offset 3 m), 和 藤たて, Cest La Vie (offset 4 m). No skips.
