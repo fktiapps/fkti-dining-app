@@ -929,3 +929,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-49 (2026-11-07, lane id mod 6 = 3): 純豆腐太閤, 接方来 京都タワー店 (2 shops; vegan options), 京都ダイニング正義, 京都焼肉 enen 先斗町本店 (2-shop local). Skips: 和紋 (THAN), 梅園 清水店 (chain; existing 梅園 河原町 hidden), 焼肉 弘商店 (弘 chain), ごはんや一芯 (FOODGATE, multi-city).
 - kyoto-missed osw13-79 (2026-11-07, lane id mod 6 = 0, rest): 京のじどり屋 晃, 一平茶屋 (since 1928), ステーキ みその 京都店 (3-shop Kobe house), 酒処 文架. No skips.
 - kyoto-missed osw1-56 (2026-11-07, lane id mod 6 = 2, rest): 京の居酒屋 ぽんと, 大當両 (yuba kaiseki), とりとん, 京都伏見蔵 先斗町 南庵 (offset; operator size unknown). Skips: だるま商店, HIGUMA Doughnuts (chains), ラッキーシーバー (too thin).
+- kyoto-missed osw6-52 (2026-11-07, lane id mod 6 = 4; core used up, rest begun): ホルモン豚金 (solo), bar N, 高瀬川 くりお (loc single), 銀水 (family-run; loc single). 15 skips: 10 chains, てんぷぅ (THAN), 空庭テラス (hotel guests only), ハウスミュンヘン (duplicate), 久在屋 高島屋, 京都鶏卵堂 (take-away/stale).
