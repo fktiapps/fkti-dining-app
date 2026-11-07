@@ -899,3 +899,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-73 (2026-11-06, lane id mod 6 = 0): VIETNAM FRENCH XUAN, 日本料理 藤井 (藤井 孝之輔), DiDi (probable), ポンジーズテーブル. Skip: 麺屋 極鶏 円町店 (brand in data). Brief: next-phase rule (rest tier, nearest-first) added.
 - kyoto-missed osw1-50 (2026-11-06, lane id mod 6 = 2): アオゾラ, zushi curry & ぱん屋LeuCocoRyne, 京湯どうふ 喜さ起, La Part Dieu (solo). Skip: 博多長浜ラーメン みよし 銀閣寺店 (brand in data).
 - kyoto-missed osw6-47 (2026-11-06, lane id mod 6 = 4): 京のSAKESORA, 智積院茶寮 桔梗 (temple lodge restaurant; vegan shojin course), 焼鳥をのじ, シェ・キクスイ (solo). Skips: イノダコーヒ, 進々堂 三条河原町 (chains), 鯛之鯛 烏丸 (brand in Osaka data).
+- kyoto-missed osw1-51 (2026-11-06, lane id mod 6 = 2): ビカシューマハル 今出川店 (2 shops), 円町リバーブ (solo), タケリア・パチャンガ, NOVECCHIO 円町 (2 shops). No skips; 花うさぎ left in queue (vague address).
