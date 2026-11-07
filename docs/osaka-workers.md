@@ -79,3 +79,11 @@ is complete and redo the rest.
 - Existence review: scripts/existence-scan.mjs → scripts/existence/kyoto-scan.jsonl; borderline list kyoto-borderline.json. Done: 7 closed hidden, 4 wrong-source records hidden (2 rebuilt by osw9-10), 3 pins fixed.
 - Open questions for Greg: hide 11 "signs of closure" Kyoto records (Menshin Yoshida, Little Heaven, Yatai Tokumitsu, Kiyomizu halal wagyu, Rin Halal, Yume-ya, Oubon, KYONO JUICE, Social Kitchen, EVERYSOY, Menya Roman)?; looks remarks in bios ("handsome") — omitted meanwhile; UNO RAMEN Kyoto Station GF dedicated vs options (options meanwhile).
 - Integrator lesson (2026-11-05): when chaining two integrate.sh runs in one command, use `set -o pipefail` and stop on failure. A stacked-pin failure in osw13-37 was masked by `| tail`, the next integration (osw2-13) then committed osw13's half-integrated data. Also: workers drafting in parallel can't see each other's pins — the integrator's stacked-pin check is the only guard.
+
+## Handoff, 2026-11-07 (Kyoto priority, still running)
+- Six workers on kyoto-missed, lanes by Tabelog id mod 6: osw13=0, osw8=1, osw1=2, osw2=3, osw6=4, osw9=5. Latest batches: osw1 b55, osw2 b49, osw6 b51, osw8 b53, osw9 b52, osw13 b78 (openCitySweep date '2026-11-07').
+- Kyoto ≈1,820 places. Core/notable tiers nearly exhausted in most lanes; workers move to `next rest` (nearest-first) per the brief's NEXT PHASE rule.
+- Integration: same integrate.sh pattern; narrow CITY_READINGS keys; reset worktree after each integration.
+- Rulings added 11-06 (all in docs/osaka-worker-brief.md and memory content-rulings-1105.md): referral/members-only listed (incl. closed to new members); halal flag on operator's own claim; owner/founder deaths included as succession facts; other-diner remarks only when a multi-review pattern.
+- Chains hidden 11-06: KINOE, 麺屋優光 (+麺屋 聖), Ikariya (2), プロシード 新 (2), Osaka ベジョータ マス.
+- Separate: fkti-learning sumo bios refreshed for Kyushu 2026 (4e465f6) and Day-1 preview fix (ef817ce).
