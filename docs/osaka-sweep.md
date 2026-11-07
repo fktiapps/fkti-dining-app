@@ -974,3 +974,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw8-61 (2026-11-07, lane id mod 6 = 1, rest): 祇園 八軒 (3 misfiled Tabelog reviews excluded), Pizza Strada 京都祇園店 (2nd shop of Azabu-Juban original), Peek a boo Cafe, 先斗町 華楽. Skip: SHAPE BEACH (thin).
 - kyoto-missed osw2-56 (2026-11-07, lane id mod 6 = 3, core): バーレスク, MAHA CURRY (halal off: reviewer claim only), イカヅチうどん, 喫茶とパンdo.. No skips.
 - kyoto-missed osw8-62 (2026-11-07, lane id mod 6 = 1, rest): SferaBar SATONAKA (pin 5 m off Cafe DOnG), cafe grayish green (irregular, approx pin), 京料理 田鶴 (ryokan restaurant open to outside diners), いづつ屋 先斗町店. Skips: 串カツ小力 (thin), ガスト (chain).
+- kyoto-missed osw9-60 (2026-11-07, lane id mod 6 = 5, rest): ごはんや嬉々, 将月 河原町店 (3-shop group), テッポー (approx pin), バリバリインドネシア (low confidence). Skips: お酒の美術館 (NBG, 110 shops), 津之喜酒舗 (thin).
