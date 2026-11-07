@@ -903,3 +903,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-48 (2026-11-06, lane id mod 6 = 5): タコとケンタロー, 葉月, すし昌 (loc single), SCHOLE (Apitt local group). Skip: 夢現家 京都八条口店 (probable 町田商店 produce shop).
 - kyoto-missed osw13-74 (2026-11-06, lane id mod 6 = 0): core exhausted; +三代目カレー舎、NANDI。, +MANYOKEN style 京都高島屋店, +村上重本店 (takeaway pickles, 1832), +お酒とごはんと たか (offset); 7 rest skips (2 too thin, 2 chains, 3 group unconfirmed).
 - kyoto-missed osw8-50 (2026-11-06, lane id mod 6 = 1): 京の焼肉処 蓮蔵, さるぅ屋, Panel Cafe 京都店 (offset), 京都 鮨 もと樹 (まつもと sister; loc single). Skips: パクチー丸太町, 田ごと ポルタ, 肉もん 本店 (brands in data), 百楽 (Kintetsu Retailing), さしす (11 shops), 炭火とワイン (chain).
+- kyoto-missed osw2-45 (2026-11-06, lane id mod 6 = 3): 七番館 (折橋正明), キッチン くじら, HAMBURG LABO 四条西洞院店 (3-shop Kyoto group), 小籠包 包伸一. Skips: 餃子の王将 (chain), 仏男 (to be redrafted: らくちん is a local multi-name group).
