@@ -979,3 +979,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-63 (2026-11-07, lane id mod 6 = 2, rest): 登希代, すし･あぶり わさび (10% foreign-guest service charge, quoted), ワイン食堂UmiUsagi, 海鮮個室居酒屋 ひとさじ (株式会社レイズ, size unknown, flagged). Skips: ひとめぼれ (chain, osw8-53), 我瑠慕 (thin), Shisha Lounge 1 moku mock, dicea (no reviews).
 - kyoto-missed osw13-88 (2026-11-07, lane id mod 6 = 0, rest): 肉重 北斎 (6 m offset; unrelated to 京の鴨料理 北斎), ソリレス, 邦匠, 花たぬき 河原町店 (4-shop group, flagged). Skips: 西利 祇園店 (chain), 百炉まん (ファンインターナショナル, fun-no1.com).
 - kyoto-missed osw9-61 (2026-11-07, lane id mod 6 = 5, rest): 祇園 キムタコ (low confidence, town-level pin), KOTOSHINA茶屋, 光琳 (chome-level pin), 焼肉 錦へんこつ (unrelated to mp_henkotsu). Skips: 無印良品, 京都天狼院 (chains).
+- kyoto-missed osw6-61 (2026-11-07, lane id mod 6 = 4, rest): 祇園 はりう (offset 4.4 m), 洋食 かるみあ, 祇園ひゃくらく, 活貝センター 京都祇園本店 (2 shops). Skips: あぶさん (no 2025–26 review), ラーメン荘 サン, 秀蛸 木屋町店 (brands in data).
