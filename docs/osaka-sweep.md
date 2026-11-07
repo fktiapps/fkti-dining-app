@@ -930,3 +930,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-79 (2026-11-07, lane id mod 6 = 0, rest): 京のじどり屋 晃, 一平茶屋 (since 1928), ステーキ みその 京都店 (3-shop Kobe house), 酒処 文架. No skips.
 - kyoto-missed osw1-56 (2026-11-07, lane id mod 6 = 2, rest): 京の居酒屋 ぽんと, 大當両 (yuba kaiseki), とりとん, 京都伏見蔵 先斗町 南庵 (offset; operator size unknown). Skips: だるま商店, HIGUMA Doughnuts (chains), ラッキーシーバー (too thin).
 - kyoto-missed osw6-52 (2026-11-07, lane id mod 6 = 4; core used up, rest begun): ホルモン豚金 (solo), bar N, 高瀬川 くりお (loc single), 銀水 (family-run; loc single). 15 skips: 10 chains, てんぷぅ (THAN), 空庭テラス (hotel guests only), ハウスミュンヘン (duplicate), 久在屋 高島屋, 京都鶏卵堂 (take-away/stale).
+- kyoto-missed osw13-80 (2026-11-07, lane id mod 6 = 0, rest): 深夜めし雑小屋 (Zakoya group: 4 open ざこや-named shops, 宮川町 closed for relocation — recheck; offset), もつ田 河原町店, フルカ, The みます屋 (4 same-name; loc single). No skips.
