@@ -885,3 +885,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-44 (2026-11-06, lane id mod 6 = 4): とむて (couple-run), つるき餅本舗 七条店, 烏丸DUE (loc single), 個室居酒屋 はんなり邸 京都駅前店 (2 shops, operator unknown; Tokyo booking number). Skip: 米福 (chain).
 - kyoto-missed osw13-70 (2026-11-06, lane id mod 6 = 0): ALIARE, カタパン屋 (family-run), せいろ料理 葵茶屋 (loc single), 清水 京あみ (local group; loc single). Skips: サンマルコ, 祇園辻利, 東洋亭 (chains).
 - kyoto-missed osw1-48 (2026-11-06, lane id mod 6 = 2): アンソレイユ (solo), 好文舍, メンヤ, とんかつ 棹 京都五条店 (3-shop group; GSI-lot pin, approx). Skip: 一風堂 (chain).
+- kyoto-missed osw2-43 (2026-11-06, lane id mod 6 = 3): おうどんや るりお, DAVADA COFFEE&RECORDS, OUI., みなとや幽霊子育飴本舗 (takeaway). No skips.
