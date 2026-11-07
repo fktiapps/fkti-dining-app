@@ -941,3 +941,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-54 (2026-11-07, lane id mod 6 = 4, rest): 桶屋久次郎 (re-drafted: 4-shop overseas group, under 5; offset), 京の魚 擔 (offset), 18 PREMIER BAR (offset), 黒毛和牛タンとハラミ 焼肉龍 (2 shops). No skips.
 - kyoto-missed osw8-56 (2026-11-07, lane id mod 6 = 1, rest): 居酒屋すずめ (since 1985; offset; loc single), えなみ家 サクの間 (loc single), SIESTA, タイキッチン BARAMEE. No skips.
 - kyoto-missed osw13-82 (2026-11-07, lane id mod 6 = 0, rest): 2254 ラウンジ (hotel lounge, public), いづみ屋 (takeaway chirimen sansho; loc single), 焼肉力, よこ林 (since 1988). Skip: 井筒茶店 (井筒八ッ橋本舗, 6 shops).
+- kyoto-missed osw2-51 (2026-11-07, lane id mod 6 = 3): タピオカベリーズ, 酒とこおり ばんくす, o・mo・ya 東洞院 (Zac Enterprise local group), シャム (Thai curry; relocation planned 2027). Skip: こがね家 (chain).
