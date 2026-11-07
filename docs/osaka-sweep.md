@@ -910,3 +910,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-49 (2026-11-06, lane id mod 6 = 5): 京都氷屋 万年雪, かもドーナツ 堀川商店街店 (loc single), 炭火焼鳥issiki, crème plus (loc single). Skip: ミスタードーナツ (chain).
 - kyoto-missed osw2-46 (2026-11-06, lane id mod 6 = 3): 仏男 (un-skipped; らくちん local group; offset), himeru (vegan option per site; loc single), おむらはうす 出町柳店 (3-shop local group), キッチンごりら. Skips: 京菜味 のむら 錦店 (brand in data), ルアン 鮒鶴 (バリューマネジメント).
 - kyoto-missed osw8-51 (2026-11-06, lane id mod 6 = 1): notable lane used up (13 skips: KIMURAYA, 祇園辻利, 小川珈琲, イノダ, かつくら, 京の禅 車, Starbucks, 志津屋, 呼炉凪来, 幸せのパンケーキ, 麺家 (JR West), Ralph's Coffee); rest nearest-first: +文の助茶屋 本店, +京都 たらこパスタ LABO, +豚星, +GOOD morning record bar; 9 rest skips (chains, KDDI's BLUE LEAF, one thin, 鰻吉 renamed).
+- kyoto-missed osw6-49 (2026-11-06, lane id mod 6 = 4): チャーミングチャーハン 丸太町本店 (2 shops), 千龍, オステリア コナチネッタ (solo), ほっこり酒場なごみ家 (couple-run). Skip: 鶏三和 (chain).
