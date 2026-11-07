@@ -967,3 +967,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-58 (2026-11-07, lane id mod 6 = 5, rest): まんざら亭 先斗町店 (株式会社ステップ, 3 known shops; group size flagged), Japanese Whisky Bar seven KYOTO, SILK, りゅう庵. Skips: 鳴門鯛焼本舗 (chain); Tricoh, 多茂利 (thin); ヴイアールルーム, The RIVER (no 2025–26 reviews).
 - kyoto-missed osw8-60 (2026-11-07, lane id mod 6 = 1, rest): 夢や (midnight–8:00), さしみの魚紳 (Japanese-speakers-only entrance sign, one May 2026 review, stated as a restriction), babele, 201 GION Wagyu Steak & Wine Bar. Skips: 紙谷商店 (retail), エニグマ アフロ, Romeo (thin), 三木鶏卵堂 (brand in data).
 - kyoto-missed osw2-55 (2026-11-07, lane id mod 6 = 3, core): 鮓はやし, キトカフェ, グリーン ファーム (hours unknown), ル・シュクリエ. No skips.
+- kyoto-missed osw6-59 (2026-11-07, lane id mod 6 = 4, rest): 京町 (Pontocho), 三汁五菜 天心, トリサカナ 京都河原町店 (株式会社WILL, 4 same-name shops + かに銀; under 5, flagged), 鉄板 フタゴヤ 富小路. Skips: どてっぱん (chain), にしんそば 松葉 北店 (brand in data). 3 pins offset 7 m.
