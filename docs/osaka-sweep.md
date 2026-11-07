@@ -963,3 +963,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-54 (2026-11-07, lane id mod 6 = 3, core): 西洋茶屋 山本, 炭焼 鶏たか, 三興飯店, 祥和軒 (reading unsourced, left blank). Skip: 神来 イオンモールKYOTO店 (same concept as 熟成麺屋 神来, already in data). Notable list exhausted.
 - kyoto-missed osw6-58 (2026-11-07, lane id mod 6 = 4, rest): めいてい, 大衆酒場 照 京都河原町店 (thin 2025 evidence), Sui., 石丸商店. Skip: 夜パフェBAR ＆VIGO (chain). 照 offset 5.5 m from Baramee.
 - kyoto-missed osw1-61 (2026-11-07, lane id mod 6 = 2, rest): 鮨嵩, 焼肉 マウム 京都木屋町店 (株式会社ＧＭＩ, local group of 4 with BISTRO MAUMU), 酒肴いさ味 (pin offset 5.5 m from 我家我家), 麺酒場 ハコ屋. Skips: 餃子のかっちゃん, 和牛と豚 (chains).
+- kyoto-missed osw13-86 (2026-11-07, lane id mod 6 = 0, rest): おづkyoto (辰馬コーポレーション, 3 businesses; hours conflict kept irregular), バー サイレント サード, BAR EZO, 炭焼 みや沢 (approx pin, sold-out close). Skips: 鳥貴族, 鶏のとりこ (chains); ma-icca, きんなべ, FORK (thin).
