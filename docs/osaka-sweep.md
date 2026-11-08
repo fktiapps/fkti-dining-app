@@ -1059,3 +1059,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-68 (2026-11-07, lane id mod 6 = 3, rest): 京町家イタリアンろんくす (Sunday left unstated), バー ホップシード (offset 8 m), 旬菜ダイニング e-とこ屋 (offset 6 m), 汎洛 (takeout bakery). No skips.
 - kyoto-missed osw8-76 (2026-11-07, lane id mod 6 = 1, rest): カオススパイスダイナー 京都三条店 (3 shops; offset 5 m), 創作バル EN_CIEL, グリルグリーン (low confidence), 中国厨房 祝. Skips: 萬 燕楽 (same 厨厨・燕楽 concept as 夷川 燕楽, in data), ステーキハウス京 (thin).
 - kyoto-missed osw1-77 (2026-11-07, lane id mod 6 = 2, rest): ワヤン バリ (thin; offset 5.5 m), 酒菜米べゑ (reading unclear, no key), 萬常 (offset 5.5 m). Skips: カラオケ BAR TREE, BAR ORLEANS (no reviews).
+- kyoto-missed osw13-103 (2026-11-07, lane id mod 6 = 0, rest): 総本家 河道屋 (soba houru, takeaway; noren-wake family; approx pin), 祇園たけうち, GAUCHOブラジルシュラスコ (operator unknown), めし屋エビス (株式会社BASE, count unknown). Skip: PREMIUM焼肉 听 (chain).
