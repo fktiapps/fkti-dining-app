@@ -1096,3 +1096,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-80 (2026-11-08, lane id mod 6 = 4, rest): DUNSTAN COFFEE ROASTERS, あらちゃん, 鉄板創作りあん, 前田豊三郎商店 (wine shop with a 6-seat counter). Skips: 鴨ときどき馬 (DD Holdings), タキノ, 津乃吉 (retail, Greg 11-07), ラ・ルーチェ (THE HIRAMATSU), 翡翠苑 (Nikko Princess) (Greg 11-08), フィゲラス 烏丸店 (brand in data).
 - kyoto-missed osw8-83 (2026-11-08, lane id mod 6 = 1, rest): 鮨 流嘉, 海鮮ときどきブタ, 龍馬 三条烏丸, 鳥久 (approx pin; founded 1896 per review). Skip: チファジャ (chain).
 - kyoto-missed osw2-75 (2026-11-08, lane id mod 6 = 3, rest): 喫茶 農園 NOEN, 祇おん 江口, おこしやす (offset 8.5 m), 京Apollo食堂 (Apollo Group with Apollo+). Skips: WAGYU SUKIYAKI 極, 玄品, スター食堂 (chains), 串政 (no 2025–26 review).
+- kyoto-missed osw9-79 (2026-11-08, lane id mod 6 = 5, rest): ロクロクタンタン (ramen block; offset 2 m), お酒とお料理 来春, めん屋 東太郎, 左右田商店喫茶室. Skips: ViTO (chain), かんざし (no reviews).
