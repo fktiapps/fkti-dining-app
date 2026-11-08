@@ -96,3 +96,10 @@ is complete and redo the rest.
 - Fixed 11-07: skip() now stores numeric ids when given a URL (18e596d4); 94 URL-keyed lines migrated.
 - Open for Greg (not urgent): animal cafés that serve food — none with enough evidence yet.
 - Workers check pins against current main as the last step, hidden records included, and wait for their reset commit before starting.
+
+## Handoff, 2026-11-08 (Kyoto priority, still running)
+- Latest integrated: osw1 b83, osw2 b74, osw6 b79, osw8 b82, osw9 b78, osw13 b108 (openCitySweep date '2026-11-08').
+- Greg 11-07/08 rulings (in the brief + memory content-rulings-1105): retail food shops listed only if particularly historic + family-owned or with sourced GF/vegan options (back-fill: 43 hidden, famous old shops kept); venues in big-chain hotels skipped (back-fill: 39 hidden; tenant brands kept); noren-wake families are not chains.
+- Map: numbered cluster pins, density bloom (BLOOM_MAX_PINS=10), petal labels — merged 3b426b04 (branch map-clusters, worktree C:/pf/fkti-dining-map can be removed).
+- Gloss: Kyoto byCity overrides for 修 (Nao), 祝 (Iwai), 天 (Ten); brief forbids bare 祝/天 in Kyoto JA text.
+- Audits: docs/kyoto-hotel-audit-2026-11-08.md, docs/kyoto-retail-audit-2026-11-08.md.
