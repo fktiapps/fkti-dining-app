@@ -1028,3 +1028,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw9-68 (2026-11-07, lane id mod 6 = 5, rest): 居酒屋いいいろ, ランス ジャポネ, 幸福堂 (1868; 2 shops), 京都先斗町 かに侍別邸 (2 shops; offset 4 m). Skips: うしのほね, 鳥せい (earlier rulings), ホルモン安東 (thin), 要庵 西富家 (ryokan, guests only), PLEIN BIS (PLEIN group, brand in data).
 - kyoto-missed osw6-69 (2026-11-07, lane id mod 6 = 4, rest): Wine Bar Verite (offset 5.6 m), ぎをん桃庭 (approx pin), 河原町焼肉ホルモン安東 (4 Kyoto shops), 鉄板とお酒 宗や. Skips: みっふぃーおやつ堂 (chain), DRINK DRANK (to be redrafted: single brand, 4 shops).
 - kyoto-missed osw13-98 (2026-11-07, lane id mod 6 = 0, rest): 京鴨とお蕎麦 陸 (offset 6 m), おばんざい みろく, 桟敷 (Rokuhakuya sister, flagged), ぎおん家. Skips: 茅乃舎 大丸京都 (久原本家), あぶりや 三条店 (10+ shop chain).
+- kyoto-missed osw8-71 (2026-11-07, lane id mod 6 = 1, rest): FRESH MARKET, 楽坐青天家, 吉加寿 (thin, low confidence), 京 味和. Skips: プレミアム 听 (chain), モンローズ (thin).
