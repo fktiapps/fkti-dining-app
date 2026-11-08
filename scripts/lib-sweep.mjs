@@ -38,7 +38,8 @@ export function openCitySweep(city, date, batch) {
     if (upgrade && !queue.some(q => q.id === place.id && q.field === upgrade.field)) { queue.push({ city, id: place.id, name: place.name, ...upgrade }); log.push(`  queued ${upgrade.field} -> ${upgrade.recommended}`); }
   };
   // Record a candidate deliberately left out (closed, unverifiable, duplicate …) so it is not re-offered.
-  const skip = (id, reason) => { fs.appendFileSync(statusFile, JSON.stringify({ id, status: 'skipped', reason, batch, at: date }) + '\n'); log.push(`${id}: skipped — ${reason}`); };
+  // A Tabelog URL passed as the id is reduced to its numeric id, so queue.mjs recognises the skip.
+  const skip = (id, reason) => { const m = String(id).match(/tabelog\.com\/.*?\/(\d{6,})\/?$/); if (m) id = m[1]; fs.appendFileSync(statusFile, JSON.stringify({ id, status: 'skipped', reason, batch, at: date }) + '\n'); log.push(`${id}: skipped — ${reason}`); };
   const save = () => {
     fs.writeFileSync(file, raw.includes('\n') ? JSON.stringify(d, null, 1) : JSON.stringify(d));
     fs.writeFileSync(mf, JSON.stringify(menus, null, 1));
