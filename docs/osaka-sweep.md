@@ -991,3 +991,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-65 (2026-11-07, lane id mod 6 = 2, rest): 先斗町すいしん 本店 (株式会社黛, flagged; offset 5.5 m), 祇園 ぷらむ, すし処 北の幸 (low confidence), ナギサ クラブ (1956). Skips: VOYAGER STAND (no reviews), ぎおん刀 (Y's table, large parent).
 - kyoto-missed osw2-58 (2026-11-07, lane id mod 6 = 3, rest): 焼肉まる富 四条河原町店 (2-shop butcher group), Steak House BUONAGIO, 喫茶 ジラフ, 居酒屋 静 (offset 8 m). Skips: サーティワン, スイーツパラダイス, 牛たんの檸檬 (chains), 肉の匠 悠々庵 (thin).
 - kyoto-missed osw13-91 (2026-11-07, lane id mod 6 = 0, rest): 鮨 なかむら (Roppongi branch), 祇園ししし, 花咲 錦店 (4-shop group, flagged), 山庄 (6 m offset). Skip: ウェンディーズ (chain).
+- kyoto-missed osw6-63 (2026-11-07, lane id mod 6 = 4, rest): 中華ダイニング饗十膳 (low confidence), 綾ふや, タナカコーヒ 祇園店 (3 shops on Tabelog; offset 7.3 m), 舞い香. Skips: 天のめし (ユニシア), ジャンオクBBQ (ジャンカラ), モリタ雲丹五郎, おすすめ屋 (chains), BUDDHA ZEN TEA HOUSE (no reviews).
