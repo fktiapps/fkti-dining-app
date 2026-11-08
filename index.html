@@ -66,6 +66,13 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .petb{position:absolute;display:flex;align-items:center;justify-content:center;border:2px solid #fff;font-weight:700;line-height:1;letter-spacing:-1px;box-shadow:0 1px 3px rgba(0,0,0,.45);white-space:nowrap}
 .petb.ring{border-color:#555;border-style:dashed}
 .petb.sm{border-width:1.5px}
+/* petal label: hover on a mouse, tap (.show) on touch. Drawn upright above the petal. */
+.petb::after{content:attr(data-lbl);position:absolute;left:50%;bottom:calc(100% + 5px);transform:translateX(-50%);background:#13182B;color:#fff;font:600 12px/1.25 system-ui,-apple-system,sans-serif;letter-spacing:0;padding:4px 8px;border-radius:7px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35);pointer-events:none;visibility:hidden;opacity:0;transition:opacity .12s;z-index:5}
+.petb.show::after{visibility:visible;opacity:1}
+@media (hover:hover) and (pointer:fine){.petb:hover::after{visibility:visible;opacity:1}}
+.fctr{position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#fff;border:2px solid rgba(95,72,48,.7);box-shadow:0 1px 2px rgba(0,0,0,.35)}
+/* numbered cluster pin: several places aggregated; tap to zoom in */
+.pclu{display:flex;align-items:center;justify-content:center;border-radius:50%;background:#13182B;color:#fff;border:2px solid #fff;box-shadow:0 0 0 3px rgba(226,85,59,.6),0 2px 6px rgba(0,0,0,.45);font:700 13px/1 system-ui,-apple-system,sans-serif;cursor:pointer}
 .dh-row{display:flex;gap:10px;align-items:flex-start;margin:9px 0}
 .dh-pill{flex:0 0 auto;background:var(--ver);color:#fff;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
 .dh-pill.off{background:var(--ink2);color:#cdd2e8;border:1px solid var(--line)}
@@ -1107,8 +1114,11 @@ function initMap(){
  state.meMarker.on('dragend',e=>{const ll=e.target.getLatLng();state.me={lat:ll.lat,lng:ll.lng};render();});
  drawMarkers();
  map.on('moveend',onMapMove);   // load whichever city the map reaches
- state._bloomOn=map.getZoom()>=BLOOM_ZOOM;
- map.on('zoomend',()=>{ const b=map.getZoom()>=BLOOM_ZOOM; if(b!==state._bloomOn){ state._bloomOn=b; reskinMarkers(); } });
+ // Clusters, pins and the bloom are re-decided once the map settles (moveend also
+ // fires after every zoom), never mid-gesture, so the flowers can't flicker.
+ map.on('moveend',()=>refreshPins());
+ map.on('movestart',clearPetalLabels);
+ map.on('click',clearPetalLabels);
  locate(true);
 }
 // Pin encodes the SAFETY TIER three redundant ways — glyph + shape + a colour-blind-safe
@@ -1132,67 +1142,84 @@ function activeAxis(){return state.filters.vegan>0 && !(state.filters.gf>0) ? 'v
 // ---------- flower-petal markers ----------
 // A place is a bouquet: one petal per facet it fits (GF safety · vegan · each food
 // it does · mom-and-pop), tips converging on the location. Icons carry meaning, so
-// it reads without relying on colour. Zoomed out it collapses to a single food badge.
-const BLOOM_ZOOM=15;
+// it reads without relying on colour. Zoomed out it collapses to a single food badge,
+// and further out still, nearby places aggregate into one numbered cluster pin.
+//
+// Whether the pins bloom is decided by DENSITY, not a fixed zoom: once the map has
+// settled, if no cluster is in view and this many or fewer place pins are, they open
+// into flowers. Always at BLOOM_FLOOR_ZOOM and closer (clustering is off there too).
+const BLOOM_MAX_PINS=10;
+const BLOOM_FLOOR_ZOOM=18;
+const CLUSTER_RADIUS_PX=36;   // places within this many screen px of a cluster's seed join it
+const CLUSTER_MAX_ZOOM=BLOOM_FLOOR_ZOOM-1;   // no clustering above this zoom
 // Free-text cuisine → food emoji. A shop can match several (ramen + gyoza + chuka),
 // so every match becomes a petal. Order = specific → general.
+// [regex, emoji, English petal label, optional JA label]. A JA label is given only
+// where the app already has that word in its own UI strings; otherwise the
+// English one shows in JA mode too, rather than a guessed translation.
+const jaPill=k=>(STRINGS_JA[k]||'').replace(/^\S+\s+/,'')||null;  // '🍜 ラーメン' → 'ラーメン'
 const FOOD_EMOJI=[
- [/ramen|tsukemen|tantan|dandan|abura.?soba|mazesoba|paitan|chuka.?soba|jiro|chicken soba|ラーメン|つけ麺/i,'🍜'],
- [/gyoza|dumpling|shumai|餃子|焼売|シュウマイ/i,'🥟'],
- [/\bchuka\b|chinese|machi.?ch|中華/i,'🥮'],
- [/udon|うどん/i,'🍲'],
- [/soba|そば|蕎麦/i,'🥢'],
- [/sushi|sashimi|kaiten|nigiri|寿司|鮨|すし|刺身/i,'🍣'],
- [/unagi|anago|eel|穴子|鰻/i,'🍱'],
- [/okonomiyaki|teppan|monja|okonomi|お好み焼き|もんじゃ/i,'🥞'],
- [/tempura|tendon|天ぷら|天丼/i,'🍤'],
- [/tonkatsu|\bkatsu|fried chicken|karaage|frit|とんかつ|とんカツ|カツ|唐揚げ/i,'🍗'],
- [/oden|おでん/i,'🍢'],
- [/yakitori|kushi|skewer|yakiton|焼き鳥|やきとり|串焼き|串カツ/i,'🍡'],
- [/yakiniku|wagyu|\bbeef|steak|offal|horumon|焼肉/i,'🥩'],
- [/oyster|\bkaki\b|牡蠣/i,'🦪'],
- [/curry|カレー/i,'🍛'],
- [/donburi|gyudon|kaisendon|rice bowl|丼/i,'🍚'],
- [/onigiri|rice ball|おにぎり|お握り/i,'🍙'],
- [/shojin|shōjin|buddhist|vegetarian|macrobiotic|精進料理|マクロビオティック|ヴィーガン/i,'🪷'],
- [/tofu|yuba|湯葉|豆腐/i,'🥛'],
- [/izakaya|\bsake\b|\bbar\b|\bpub\b|居酒屋|酒場/i,'🍶'],
- [/pizza|napolitan|neapolitan|ピザ/i,'🍕'],
- [/pasta|italian|spaghetti|イタリアン|パスタ|スパゲッティ/i,'🍝'],
- [/french|bistro|フレンチ|ビストロ/i,'🥖'],
- [/indian|nepal|south indian|インド|ネパール/i,'🍛'],
- [/burger|hamburg|バーガー|ハンバーガー/i,'🍔'],
- [/yoshoku|yōshoku|western(?!.{0,20}confection)|omurice|omu|洋食|オムライス/i,'🍳'],
- [/kissa|coffee|\bcafe|café|roaster|junkissa|喫茶|コーヒー|カフェ/i,'☕'],
- [/bakery|bagel|boulanger|\bpan\b|パン|bread|ベーカリー|パン屋/i,'🥐'],
- [/patisserie|pâtisserie|sweets|wagashi|dessert|parfait|chiffon|baumkuchen|chocolat|donut|doughnut|crepe|creperie|churro|pancake|confection|sweet|baked.?goods|洋菓子|和菓子|焼き菓子|菓子工房|菓子店|菓子屋|スイーツ|デザート|クレープ/i,'🍰'],
- [/shokudo|teishoku|定食|set meal|home.?style|diner(?!\s*\(yoshoku\))|食堂/i,'🍚'],
- [/seafood|\bfish|kaisen|海鮮|魚|かまぼこ|練り物/i,'🐟'],
- [/kaiseki|kappo|obanzai|washoku|ryokan|japanese cuisine|懐石|割烹|和食|料理旅館/i,'🍱'],
+ [/ramen|tsukemen|tantan|dandan|abura.?soba|mazesoba|paitan|chuka.?soba|jiro|chicken soba|ラーメン|つけ麺/i,'🍜','Ramen',jaPill('pill.ramen')],
+ [/gyoza|dumpling|shumai|餃子|焼売|シュウマイ/i,'🥟','Gyoza / dumplings'],
+ [/\bchuka\b|chinese|machi.?ch|中華/i,'🥮','Chinese'],
+ [/udon|うどん/i,'🍲','Udon'],
+ [/soba|そば|蕎麦/i,'🥢','Soba'],
+ [/sushi|sashimi|kaiten|nigiri|寿司|鮨|すし|刺身/i,'🍣','Sushi'],
+ [/unagi|anago|eel|穴子|鰻/i,'🍱','Eel (unagi / anago)'],
+ [/okonomiyaki|teppan|monja|okonomi|お好み焼き|もんじゃ/i,'🥞','Okonomiyaki / teppan',jaPill('pill.okonomiyaki')],
+ [/tempura|tendon|天ぷら|天丼/i,'🍤','Tempura'],
+ [/tonkatsu|\bkatsu|fried chicken|karaage|frit|とんかつ|とんカツ|カツ|唐揚げ/i,'🍗','Katsu / fried'],
+ [/oden|おでん/i,'🍢','Oden'],
+ [/yakitori|kushi|skewer|yakiton|焼き鳥|やきとり|串焼き|串カツ/i,'🍡','Yakitori / skewers'],
+ [/yakiniku|wagyu|\bbeef|steak|offal|horumon|焼肉/i,'🥩','Yakiniku / beef'],
+ [/oyster|\bkaki\b|牡蠣/i,'🦪','Oysters'],
+ [/curry|カレー/i,'🍛','Curry'],
+ [/donburi|gyudon|kaisendon|rice bowl|丼/i,'🍚','Donburi (rice bowls)'],
+ [/onigiri|rice ball|おにぎり|お握り/i,'🍙','Onigiri'],
+ [/shojin|shōjin|buddhist|vegetarian|macrobiotic|精進料理|マクロビオティック|ヴィーガン/i,'🪷','Shōjin / vegetarian cuisine'],
+ [/tofu|yuba|湯葉|豆腐/i,'🥛','Tofu / yuba'],
+ [/izakaya|\bsake\b|\bbar\b|\bpub\b|居酒屋|酒場/i,'🍶','Izakaya / bar'],
+ [/pizza|napolitan|neapolitan|ピザ/i,'🍕','Pizza'],
+ [/pasta|italian|spaghetti|イタリアン|パスタ|スパゲッティ/i,'🍝','Italian / pasta'],
+ [/french|bistro|フレンチ|ビストロ/i,'🥖','French / bistro'],
+ [/indian|nepal|south indian|インド|ネパール/i,'🍛','Indian / Nepali'],
+ [/burger|hamburg|バーガー|ハンバーガー/i,'🍔','Burgers'],
+ [/yoshoku|yōshoku|western(?!.{0,20}confection)|omurice|omu|洋食|オムライス/i,'🍳','Yōshoku (Western-style)'],
+ [/kissa|coffee|\bcafe|café|roaster|junkissa|喫茶|コーヒー|カフェ/i,'☕','Café / coffee'],
+ [/bakery|bagel|boulanger|\bpan\b|パン|bread|ベーカリー|パン屋/i,'🥐','Bakery'],
+ [/patisserie|pâtisserie|sweets|wagashi|dessert|parfait|chiffon|baumkuchen|chocolat|donut|doughnut|crepe|creperie|churro|pancake|confection|sweet|baked.?goods|洋菓子|和菓子|焼き菓子|菓子工房|菓子店|菓子屋|スイーツ|デザート|クレープ/i,'🍰','Sweets / dessert'],
+ [/shokudo|teishoku|定食|set meal|home.?style|diner(?!\s*\(yoshoku\))|食堂/i,'🍚','Shokudō (set meals)'],
+ [/seafood|\bfish|kaisen|海鮮|魚|かまぼこ|練り物/i,'🐟','Seafood'],
+ [/kaiseki|kappo|obanzai|washoku|ryokan|japanese cuisine|懐石|割烹|和食|料理旅館/i,'🍱','Japanese cuisine (kaiseki / kappō)'],
 ];
-function foodEmojis(p){
+const FOOD_FALLBACK=['🍽','Restaurant'];
+const lbl=(en,ja)=>(state.lang==='ja'&&ja)?ja:en;
+// The food petals for a place: [{e, label}], at most three, one per distinct emoji.
+function foodPetals(p){
  const str=((p.cuisine_type||'')+' '+(p.cuisine||''));
  const out=[],seen=new Set();
- for(const [re,e] of FOOD_EMOJI){ if(re.test(str)&&!seen.has(e)){seen.add(e);out.push(e);} }
- if(!out.length) out.push('🍽');
+ for(const [re,e,en,ja] of FOOD_EMOJI){ if(re.test(str)&&!seen.has(e)){seen.add(e);out.push({e,label:lbl(en,ja)});} }
+ if(!out.length) out.push({e:FOOD_FALLBACK[0],label:FOOD_FALLBACK[1]});
  return out.slice(0,3);
 }
+function foodEmojis(p){ return foodPetals(p).map(x=>x.e); }
 function petalsFor(p){
  const out=[];
  const G=TIER_VIZ[p.gf_confidence]||TIER_VIZ.no;
- out.push({g:G.g,bg:G.bg,fg:G.fg,ring:G.ring,small:G.small});           // GF — always, at 12 o'clock
+ // GF/vegan labels follow the tier (gfLabel/veganLabel — the tier IS the label), in JA via the app's fixed lookups.
+ const gfL=gfLabel(p), vgL=veganLabel(p);
+ out.push({g:G.g,bg:G.bg,fg:G.fg,ring:G.ring,small:G.small,label:lbl(gfL,GF_LABEL_JA[gfL])});   // GF — always, at 12 o'clock
  const vg=p.vegan_status;
  if(['full','options','limited','ask'].includes(vg)||['VEGAN','SHOJIN','BOTH'].includes(p.category)){
-  const V=VEG_VIZ[vg]||VEG_VIZ.options; out.push({g:'🌱',bg:V.bg,fg:V.fg,ring:V.ring});
+  const V=VEG_VIZ[vg]||VEG_VIZ.options; out.push({g:'🌱',bg:V.bg,fg:V.fg,ring:V.ring,label:lbl(vgL,VEGAN_LABEL_JA[vgL])});
  }
- for(const e of foodEmojis(p)) out.push({g:e,bg:'#fff',fg:'#222'});      // one petal per food it does
- if(p.category==='MOM_AND_POP'||p.mom_and_pop) out.push({g:'👵👴',bg:'#fff',fg:'#222',wide:true});
+ for(const f of foodPetals(p)) out.push({g:f.e,bg:'#fff',fg:'#222',label:f.label});      // one petal per food it does
+ if(p.category==='MOM_AND_POP'||p.mom_and_pop) out.push({g:'👵👴',bg:'#fff',fg:'#222',wide:true,label:lbl('Family-run (mom & pop)',jaPill('pill.mompop'))});
  return out;
 }
 function placeIcon(p,sel,axis){
  axis=axis||'gf';
- const bloom=(typeof map!=='undefined'&&map&&map.getZoom)?map.getZoom()>=BLOOM_ZOOM:false;
- if(!bloom){
+ if(!state._bloomOn){
   // collapsed: lead food emoji, tinted by the active dial's tier — never a bare grey dot
   const tier=axis==='vegan'?p.vegan_status:p.gf_confidence;
   const V=(axis==='vegan'?VEG_VIZ:TIER_VIZ)[tier]||TIER_VIZ.no;
@@ -1208,16 +1235,35 @@ function placeIcon(p,sel,axis){
   const bh=pt.small?15:19, bw=pt.wide?30:bh, rad=pt.wide?'9px':'50%', fs=pt.wide?11:Math.round(bh*0.62);
   html+='<div class="pet" style="transform:rotate('+ang+'deg)">'
       +'<span class="stem" style="height:'+R+'px;top:'+(-R)+'px"></span>'
-      +'<span class="petb'+(pt.ring?' ring':'')+(pt.small?' sm':'')+'" style="left:0;margin-left:'+(-bw/2)+'px;top:'+(-R-bh)+'px;width:'+bw+'px;height:'+bh+'px;border-radius:'+rad+';font-size:'+fs+'px;background:'+pt.bg+';color:'+pt.fg+';transform:rotate('+(-ang)+'deg)">'+pt.g+'</span>'
+      +'<span class="petb'+(pt.ring?' ring':'')+(pt.small?' sm':'')+'" data-lbl="'+escHtml(pt.label||'')+'" style="left:0;margin-left:'+(-bw/2)+'px;top:'+(-R-bh)+'px;width:'+bw+'px;height:'+bh+'px;border-radius:'+rad+';font-size:'+fs+'px;background:'+pt.bg+';color:'+pt.fg+';transform:rotate('+(-ang)+'deg)">'+pt.g+'</span>'
       +'</div>';
  });
- html+='</div>';
+ html+='<span class="fctr"></span></div>';
  return L.divIcon({className:'pmk',html,iconSize:[W,W],iconAnchor:[C,C]});
 }
-// Re-skin all markers when the map crosses the bloom threshold (collapsed <-> flower).
-function reskinMarkers(){
- const ax=activeAxis();
- for(const [id,m] of Object.entries(state.markers)){ const p=state._pById[id]; if(p) m.setIcon(placeIcon(p,id===state.selected,ax)); }
+// ---------- petal labels ----------
+// Mouse: hovering a petal shows its label (CSS), and a click anywhere on the flower
+// opens the place as before. Touch: tapping a petal shows its label and does NOT open
+// the place; tapping the centre, or the flower's box outside the petals, opens it.
+// The last pointerdown's pointerType says which kind of click this is.
+state._lastPtr='mouse';
+document.addEventListener('pointerdown',e=>{state._lastPtr=e.pointerType||'mouse';},true);
+document.addEventListener('touchstart',()=>{state._lastPtr='touch';},{capture:true,passive:true});
+function clearPetalLabels(){
+ const s=state._petShown; if(!s) return; state._petShown=null;
+ s.el.classList.remove('show');
+ const m=state.markers[s.id]; if(m) m.setZIndexOffset(s.id===state.selected?1000:0);
+}
+function onPlaceMarkerClick(e,id){
+ const tg=e.originalEvent&&e.originalEvent.target;
+ const pet=tg&&tg.closest?tg.closest('.petb'):null;
+ if(pet && state._lastPtr!=='mouse'){
+  const again=state._petShown&&state._petShown.el===pet;
+  clearPetalLabels();
+  if(!again){ pet.classList.add('show'); state._petShown={el:pet,id}; const m=state.markers[id]; if(m) m.setZIndexOffset(2000); }
+  return;
+ }
+ clearPetalLabels(); selectPlace(id);
 }
 // Display-only de-stack: many places share an identical landmark/centroid pin
 // (approx coords), so their markers overlap exactly and read as duplicates. Fan
@@ -1238,25 +1284,111 @@ function destackCoords(places){
  }
  return pos;
 }
+// ---------- place pins + clusters ----------
+// Markers are made lazily, one per place, and REUSED: only the pins inside a padded
+// viewport are on the map at any time; everything else (off-screen, clustered or
+// filtered out) is simply not added. A pin's icon is re-set only when its look
+// (collapsed/flower, selected, dial axis, language) actually changes.
 function drawMarkers(){
- Object.values(state.markers).forEach(m=>map.removeLayer(m)); state.markers={}; state._pById={};
- const ax=activeAxis();
+ clearPetalLabels();
+ for(const id of (state._onMap||[])) { const m=state.markers[id]; if(m) map.removeLayer(m); }
+ for(const m of (state._cluMk||new Map()).values()) map.removeLayer(m);
+ state.markers={}; state._pById={}; state._onMap=new Set(); state._cluMk=new Map(); state._clu=null;
  const places=state.cities[state.active]?.places||[];
- const pos=destackCoords(places);
- places.forEach(p=>{
-  state._pById[p.id]=p;
-  const ll=pos[p.id]||[p.lat,p.lng];
-  const m=L.marker(ll,{icon:placeIcon(p,false,ax),keyboard:false});
-  m.on('click',()=>selectPlace(p.id)); m.addTo(map); state.markers[p.id]=m;
- });
+ places.forEach((p,i)=>{ state._pById[p.id]=p; });
+ state._places=places;
+ state._pos=destackCoords(places);
+ state._vis=[];
 }
 function syncMarkers(vis){
- const set=new Set(vis.map(p=>p.id)), ax=activeAxis();
- for(const [id,m] of Object.entries(state.markers)){
-  const on=set.has(id);
-  m.setOpacity(on?1:0);
-  const el=m.getElement(); if(el){el.style.pointerEvents=on?'auto':'none';el.style.zIndex=id===state.selected?'1000':'';}
-  if(on){const p=state._pById[id]; if(p) m.setIcon(placeIcon(p, id===state.selected, ax));}
+ state._vis=vis; state._clu=null;   // the filtered set (or selection) changed: re-cluster
+ refreshPins();
+}
+// Greedy screen-distance clusterer. Runs over every filter-passing place at the
+// current zoom in the city's FIXED record order (so panning or a moving "me" pin
+// never reshuffles clusters), bucketed into a radius-sized grid so each place only
+// checks its 9 neighbouring cells. The selected place is never clustered away.
+function computeClusters(z){
+ const vis=state._vis||[], singles=[], clusters=[];
+ if(!vis.length) return {z,singles,clusters};
+ if(z>CLUSTER_MAX_ZOOM) return {z,singles:vis.map(p=>p.id),clusters};
+ const on=new Set(vis.map(p=>p.id)), r=CLUSTER_RADIUS_PX, r2=r*r, pts=[], grid=new Map();
+ for(const p of state._places){
+  if(!on.has(p.id)) continue;
+  if(p.id===state.selected){ singles.push(p.id); continue; }
+  const ll=state._pos[p.id]||[p.lat,p.lng], pt=map.project(ll,z);
+  const o={id:p.id,ll,x:pt.x,y:pt.y,used:false}; pts.push(o);
+  const k=Math.floor(pt.x/r)+','+Math.floor(pt.y/r); let c=grid.get(k); if(!c){c=[];grid.set(k,c);} c.push(o);
+ }
+ for(const o of pts){
+  if(o.used) continue; o.used=true;
+  const mem=[o], gx=Math.floor(o.x/r), gy=Math.floor(o.y/r);
+  for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){
+   const c=grid.get((gx+dx)+','+(gy+dy)); if(!c) continue;
+   for(const q of c){ if(q.used) continue; const ex=q.x-o.x, ey=q.y-o.y; if(ex*ex+ey*ey<=r2){ q.used=true; mem.push(q); } }
+  }
+  if(mem.length===1){ singles.push(o.id); continue; }
+  let sx=0,sy=0; const b=L.latLngBounds([]);
+  for(const q of mem){ sx+=q.x; sy+=q.y; b.extend(q.ll); }
+  clusters.push({key:z+':'+o.id+':'+mem.length, n:mem.length, ll:map.unproject([sx/mem.length,sy/mem.length],z), bounds:b});
+ }
+ return {z,singles,clusters};
+}
+function clusterIcon(n){
+ const sz=n<10?30:n<50?36:n<200?42:48;
+ return L.divIcon({className:'pmk',html:'<div class="pclu" style="width:'+sz+'px;height:'+sz+'px;font-size:'+(n<1000?13:11)+'px">'+n+'</div>',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+}
+// The part of the map you can actually see. On a phone the map runs full-height
+// behind the bottom sheet, so pins under the sheet must not count towards the bloom.
+function seenMapBounds(){
+ const sz=map.getSize(); let bottom=sz.y;
+ const sh=document.getElementById('sheet');
+ if(sh){
+  const r=sh.getBoundingClientRect(), m=map.getContainer().getBoundingClientRect();
+  if(r.height>0 && r.left<=m.left+1 && r.right>=m.right-1 && r.top>m.top && r.top<m.bottom) bottom=Math.max(40,r.top-m.top);
+ }
+ return L.latLngBounds(map.containerPointToLatLng([0,bottom]),map.containerPointToLatLng([sz.x,0]));
+}
+function refreshPins(){
+ if(!map||!state._places) return;
+ const z=Math.round(map.getZoom());
+ if(!state._clu||state._clu.z!==z) state._clu=computeClusters(z);
+ const {singles,clusters}=state._clu;
+ const view=seenMapBounds(), pad=map.getBounds().pad(0.3);
+ // which pins / clusters belong on the map, and how many are actually in view
+ const wantP=[], wantC=new Map(); let pinsInView=0, cluInView=0;
+ for(const id of singles){
+  const p=state._pById[id], ll=state._pos[id]||[p.lat,p.lng];
+  if(!pad.contains(ll)) continue; wantP.push(id); if(view.contains(ll)) pinsInView++;
+ }
+ for(const c of clusters){ if(!pad.contains(c.ll)) continue; wantC.set(c.key,c); if(view.contains(c.ll)) cluInView++; }
+ state._bloomOn = z>=BLOOM_FLOOR_ZOOM || (cluInView===0 && pinsInView<=BLOOM_MAX_PINS);
+ // place pins
+ const keep=new Set(wantP);
+ for(const id of state._onMap) if(!keep.has(id)){ const m=state.markers[id]; if(m) map.removeLayer(m); state._onMap.delete(id); }
+ const ax=activeAxis(), look=(state._bloomOn?'b':'d')+ax+state.lang;
+ for(const id of wantP){
+  const p=state._pById[id], sel=id===state.selected, k=look+(sel?'S':'');
+  let m=state.markers[id];
+  if(!m){
+   m=L.marker(state._pos[id]||[p.lat,p.lng],{icon:placeIcon(p,sel,ax),keyboard:false,riseOnHover:true});
+   m.on('click',e=>onPlaceMarkerClick(e,id)); state.markers[id]=m; m._dcdK=k; m.setZIndexOffset(sel?1000:0);
+  } else if(m._dcdK!==k){
+   if(state._petShown&&state._petShown.id===id) clearPetalLabels();
+   m.setIcon(placeIcon(p,sel,ax)); m._dcdK=k; m.setZIndexOffset(sel?1000:0);
+  }
+  if(!state._onMap.has(id)){ m.addTo(map); state._onMap.add(id); }
+ }
+ // cluster pins (reused across pans by key = zoom + seed place + count)
+ for(const [k,m] of state._cluMk) if(!wantC.has(k)){ map.removeLayer(m); state._cluMk.delete(k); }
+ for(const [k,c] of wantC){
+  let m=state._cluMk.get(k);
+  if(!m){
+   m=L.marker(c.ll,{icon:clusterIcon(c.n),keyboard:false,zIndexOffset:500});
+   m.on('click',()=>{ clearPetalLabels(); map.fitBounds(m._dcdC.bounds,{padding:[48,48],maxZoom:BLOOM_FLOOR_ZOOM}); });
+   m.addTo(map); state._cluMk.set(k,m);
+  } else m.setLatLng(c.ll);
+  m._dcdC=c;
  }
 }
 // ---------- 🏪🛒 survival layers (konbini + grocery) ----------
