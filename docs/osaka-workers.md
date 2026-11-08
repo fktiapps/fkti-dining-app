@@ -87,3 +87,12 @@ is complete and redo the rest.
 - Rulings added 11-06 (all in docs/osaka-worker-brief.md and memory content-rulings-1105.md): referral/members-only listed (incl. closed to new members); halal flag on operator's own claim; owner/founder deaths included as succession facts; other-diner remarks only when a multi-review pattern.
 - Chains hidden 11-06: KINOE, 麺屋優光 (+麺屋 聖), Ikariya (2), プロシード 新 (2), Osaka ベジョータ マス.
 - Separate: fkti-learning sumo bios refreshed for Kyushu 2026 (4e465f6) and Day-1 preview fix (ef817ce).
+
+## Handoff, 2026-11-07 evening (Kyoto priority, still running)
+- Latest batches integrated: osw1 b72, osw2 b64, osw6 b70, osw8 b71, osw9 b69, osw13 b99. Kyoto 2,276 records (2,223 visible).
+- Greg 11-07: noren-wake name families (力餅食堂, 河道屋, 駿河屋…) are NOT chains — draft each on its own evidence. 河道屋倖松庵 + Cafe Lumen re-opened.
+- Hidden 11-07: 和牛とカニ (ジョージーズ), ダニエルズ (グラマラスフード, 7 shops; its 桃屋 drafted as a sister brand).
+- Integrator calls 11-07 (precedent, not new rules): hotel restaurants of national hotel groups = large parent (KIHARU/ORIX, 帝国ホテル); local boutique-hotel restaurants open to non-guests are drafted (ART MON ZEN); maker sub-brands = large parent (蝶矢/CHOYA, 一の傳, 土井); non-local multi-venue groups skipped (ITOH DINING, アルポルトカフェ) but a single brand under 5 is drafted (DRINK DRANK); a same-concept second shop of a brand in data is skipped (山福 はなれ); a local non-restaurant company running one restaurant is drafted (ハンザン, The Sakura); missing hours are not a skip reason (hours_status 'unknown'); halal only on the operator's own words, never a Tabelog tag.
+- Fixed 11-07: skip() now stores numeric ids when given a URL (18e596d4); 94 URL-keyed lines migrated.
+- Open for Greg (not urgent): animal cafés that serve food — none with enough evidence yet.
+- Workers check pins against current main as the last step, hidden records included, and wait for their reset commit before starting.
