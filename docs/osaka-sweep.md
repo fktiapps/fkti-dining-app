@@ -1030,3 +1030,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-98 (2026-11-07, lane id mod 6 = 0, rest): 京鴨とお蕎麦 陸 (offset 6 m), おばんざい みろく, 桟敷 (Rokuhakuya sister, flagged), ぎおん家. Skips: 茅乃舎 大丸京都 (久原本家), あぶりや 三条店 (10+ shop chain).
 - kyoto-missed osw8-71 (2026-11-07, lane id mod 6 = 1, rest): FRESH MARKET, 楽坐青天家, 吉加寿 (thin, low confidence), 京 味和. Skips: プレミアム 听 (chain), モンローズ (thin).
 - kyoto-missed osw9-69 (2026-11-07, lane id mod 6 = 5, rest): 京あられ 京都祇園萩月本店 (low confidence), 祇園 たに本 (approx pin), 神戸牛 鉄板焼 京彩宴 花見小路店 (2 shops; offset 5 m), Bistro Bleecker. Skips: 京都壱伍 (thin), カニカニランド (弁慶 group), 金のとりから (chain).
+- kyoto-missed osw2-64 (2026-11-07, lane id mod 6 = 3, rest): かっぱ寿司 先斗町 (黛, local multi-name group; not the national chain), いなほ, 海鮮, The Sakura (ファーマフーズ, one restaurant). Skips: なだ万 とんかつ (large parent), 竹長 (retail, thin), 大衆酒泉テルマエ (chain).
