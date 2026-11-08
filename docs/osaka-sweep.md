@@ -1082,3 +1082,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-78 (2026-11-08, lane id mod 6 = 4, rest): ル・ガブリエル, 白川たむら (approx pin), 風響 京都店 (small local hotel; offset 10 m off Telaviv), 酒処 籠目. Skips: じゃまん縁 (same concept as じゃまん, in data), ヒルトン京都 (Greg 11-08).
 - kyoto-missed osw13-106 (2026-11-08, lane id mod 6 = 0, rest): 六角ちきりや茶舗 (tea merchant 110+ years, eat-in café), 京料理 花かがみ, KOETO SOETO, 初代 鰻すみと (approx pin). Skip: 五右衛門 (chain).
 - kyoto-missed osw1-81 (2026-11-08, lane id mod 6 = 2, rest): 鉄板居酒屋 だい (thin), sekka Cafe + ショールーム, 一献 うるうる (approx pin). Skip: ITALIAN QUATRO 四条烏丸店 (brand in data).
+- kyoto-missed osw9-77 (2026-11-08, lane id mod 6 = 5, rest): 祇園らーめん 京都総本店 (hours unknown; offset 4 m), 板前割烹 千花 (1946; offset 6 m), 祇園料理 鳥居本 (approx pin), Cendrillon bis.. Skips: ステーキ花郷 (brand in data), 祇をん新門荘 (no 2025–26 review), むに (chain).
