@@ -1094,3 +1094,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-108 (2026-11-08, lane id mod 6 = 0, rest): スペイン料理 La Masa, おもい川, トモヱ食堂, 和酒季彩ゆう餐 (approx pin; offset 6 m). Skips: とにまる (chain), オリゾンテ (Hotel Okura; Greg 11-08), 銀座ライオン (chain).
 - kyoto-missed osw1-83 (2026-11-08, lane id mod 6 = 2, rest): 京居酒屋 シェリー (thin), 祇園ろか (SOWAKA, single small hotel), ル・パレ・グルマン・スギモト (eat-in patisserie). Skips: チッペンデール (Hotel Okura; Greg 11-08), スターバックス (chain), 栴檀 (no 2025–26 review), 岩さき亭 (thin).
 - kyoto-missed osw6-80 (2026-11-08, lane id mod 6 = 4, rest): DUNSTAN COFFEE ROASTERS, あらちゃん, 鉄板創作りあん, 前田豊三郎商店 (wine shop with a 6-seat counter). Skips: 鴨ときどき馬 (DD Holdings), タキノ, 津乃吉 (retail, Greg 11-07), ラ・ルーチェ (THE HIRAMATSU), 翡翠苑 (Nikko Princess) (Greg 11-08), フィゲラス 烏丸店 (brand in data).
+- kyoto-missed osw8-83 (2026-11-08, lane id mod 6 = 1, rest): 鮨 流嘉, 海鮮ときどきブタ, 龍馬 三条烏丸, 鳥久 (approx pin; founded 1896 per review). Skip: チファジャ (chain).
