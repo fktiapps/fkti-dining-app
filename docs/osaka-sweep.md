@@ -1097,3 +1097,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw8-83 (2026-11-08, lane id mod 6 = 1, rest): 鮨 流嘉, 海鮮ときどきブタ, 龍馬 三条烏丸, 鳥久 (approx pin; founded 1896 per review). Skip: チファジャ (chain).
 - kyoto-missed osw2-75 (2026-11-08, lane id mod 6 = 3, rest): 喫茶 農園 NOEN, 祇おん 江口, おこしやす (offset 8.5 m), 京Apollo食堂 (Apollo Group with Apollo+). Skips: WAGYU SUKIYAKI 極, 玄品, スター食堂 (chains), 串政 (no 2025–26 review).
 - kyoto-missed osw9-79 (2026-11-08, lane id mod 6 = 5, rest): ロクロクタンタン (ramen block; offset 2 m), お酒とお料理 来春, めん屋 東太郎, 左右田商店喫茶室. Skips: ViTO (chain), かんざし (no reviews).
+- kyoto-missed osw13-109 (2026-11-08, lane id mod 6 = 0, rest): 山三ツ輪, 蔵代醗彩 (fermentation-course sister of 蔵代味噌, flagged), ナマステ ダウラギリ 東山安井店 (2+ shops, flagged), はんと HUNTO (low confidence). Skips: ソイ・ギャン (ASAI / Dusit; Greg 11-08), ベジョータ ムアムア (chain), マダム ドリュック (Belgian chocolatier, large parent).
