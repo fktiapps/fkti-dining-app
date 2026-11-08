@@ -71,3 +71,6 @@ GREG'S RULINGS, 2026-11-05 (later in the day — these override earlier integrat
 - (Integrator, 2026-11-06) NEXT PHASE for kyoto-missed: when your lane's core AND notable lists are exhausted (all done or skipped), take shops from `queue.mjs kyoto-missed next rest 2000` (nearest-first) in your lane. Same rules: draft only shops with at least one 2025–26 review and enough sourced detail for a real record; otherwise skip with a reason ("too thin to verify" is a valid skip).
 
 - **Noren-wake families (Greg 2026-11-07):** independently owned shops sharing a historic name (e.g. 力餅食堂) are NOT a chain. Draft each on its own evidence; the five-shop rule counts shops of one operator.
+
+- **Hours (2026-11-07):** never fill in a day the source doesn't state (e.g. giving Saturday the weekday hours when a site lists only "weekdays" and "Sundays"). Leave that day's key out, set hours_status 'irregular', and say in hours_raw which day isn't given. Missing hours are not a skip reason: use `hours: {}` with 'unknown'.
+- **Same-kanji name clashes across cities:** use `byCity` in data/gloss/en.json (e.g. 修 is "Shu" in Osaka, "Nao" in Kyoto) rather than changing the shared entry.
