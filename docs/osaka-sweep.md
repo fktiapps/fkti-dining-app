@@ -1043,3 +1043,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-100 (2026-11-07, lane id mod 6 = 0, rest): 異風酒食洞 サマサマ, IL LAGO, 和牛一乃音 (operator unknown, low confidence), 菜処 やすかわ. Skips: CRAFT倶楽部 (Tokyo multi-brand operator), BRISKSTAND, や台ずし (chains), master-piece coffee (bag-brand sub-brand).
 - kyoto-missed osw9-71 (2026-11-07, lane id mod 6 = 5, rest): 河しげ 三条本店 (1942), 豚しゃぶ英 京都四条烏丸店 (3 shops; offset 5 m off わだつみ), Cafe Loto kyoto, ザ・ドアー 高倉店 (2 shops). Skip: THE CITY BAKERY (chain).
 - kyoto-missed osw6-72 (2026-11-07, lane id mod 6 = 4, rest): Bar RM (members-only, stated; re-opened per Greg's members-only ruling; offset 7 m), Bar DOMA, 祇園うえもり (approx pin), 京料理 およね (1927). Skip: よんくら (thin).
+- kyoto-missed osw1-74 (2026-11-07, lane id mod 6 = 2, rest): 祇園 寿苑 (offset 5.5 m off 和牛一乃音), キャラメルママ (offset), さきの音 (offset). Skips: Bar祇園, けずりひや (thin), Wafla (take-away), かき小屋フィーバー (chain), ChiChi (no 2025–26 review).
