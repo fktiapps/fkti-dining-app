@@ -1091,3 +1091,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw2-74 (2026-11-08, lane id mod 6 = 3, rest): 花の井 (approx pin), 祇園 牛あかり, 津田楼 (Taisho ochaya; approx pin), 山とみ (Pontocho oden izakaya reopened). No skips.
 - kyoto-missed osw9-78 (2026-11-08, lane id mod 6 = 5, rest): 真華 (Kyoto sister of Azabu Asai), STEAK HOUSE 花本, ボーン サイ, 祇園 淺田屋 (reservation only). Skips: ぱんが (brand in data), 焼酎Bar くどう (no reviews), 韓日亭 (no 2025–26 review).
 - kyoto-missed osw8-82 (2026-11-08, lane id mod 6 = 1, rest): 26ダイニング COCON KARASUMA店 (Yojiya, local multi-name group), 祇園円山 かがり火 (approx pin), やまだるま (Sunday unstated), bake and treat. Skip: クリスピー クリーム (chain).
+- kyoto-missed osw13-108 (2026-11-08, lane id mod 6 = 0, rest): スペイン料理 La Masa, おもい川, トモヱ食堂, 和酒季彩ゆう餐 (approx pin; offset 6 m). Skips: とにまる (chain), オリゾンテ (Hotel Okura; Greg 11-08), 銀座ライオン (chain).
