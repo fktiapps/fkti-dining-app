@@ -74,3 +74,4 @@ GREG'S RULINGS, 2026-11-05 (later in the day — these override earlier integrat
 
 - **Hours (2026-11-07):** never fill in a day the source doesn't state (e.g. giving Saturday the weekday hours when a site lists only "weekdays" and "Sundays"). Leave that day's key out, set hours_status 'irregular', and say in hours_raw which day isn't given. Missing hours are not a skip reason: use `hours: {}` with 'unknown'.
 - **Same-kanji name clashes across cities:** use `byCity` in data/gloss/en.json (e.g. 修 is "Shu" in Osaka, "Nao" in Kyoto) rather than changing the shared entry.
+- **Kyoto 祝 (2026-11-07):** standalone 祝 in Kyoto glosses as the shop name "Iwai" (中国厨房 祝). In Kyoto JA text write 祝日, never a bare 祝, for public holidays.
