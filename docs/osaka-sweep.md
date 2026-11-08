@@ -1046,3 +1046,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw1-74 (2026-11-07, lane id mod 6 = 2, rest): 祇園 寿苑 (offset 5.5 m off 和牛一乃音), キャラメルママ (offset), さきの音 (offset). Skips: Bar祇園, けずりひや (thin), Wafla (take-away), かき小屋フィーバー (chain), ChiChi (no 2025–26 review).
 - kyoto-missed osw2-66 (2026-11-07, lane id mod 6 = 3, rest): やきとりの笑い屋, スタンドうみねこ コト (Derailleur Brew Works), 炭火酒場 むらごん, ぽんたこ 佐倉 (offset 8 m). Skips: 白心堂 (maker's office, not a place to eat), と (THAN), SIBA (no 2025–26 review), てんぐ大ホール (chain), 鮨しん 富小路, 花咲 宮川町店 (same-concept second shops), Qoo (no reviews).
 - kyoto-missed osw8-74 (2026-11-07, lane id mod 6 = 1, rest): 近野, SAUNA (sister of OFURO; offset 5 m), 修 Nao (thin 2025–26 evidence, low confidence), 文久 (offset 5 m). No skips.
+- kyoto-missed osw13-101 (2026-11-07, lane id mod 6 = 0, rest): 曼荼羅茶, Caamm Bar (approx pin; offset 6 m), Lee°, お食事処 安さん. Skips: 志津屋 (chain), アトールテラスカモガワ (ブラス, large parent).
