@@ -1048,3 +1048,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw8-74 (2026-11-07, lane id mod 6 = 1, rest): 近野, SAUNA (sister of OFURO; offset 5 m), 修 Nao (thin 2025–26 evidence, low confidence), 文久 (offset 5 m). No skips.
 - kyoto-missed osw13-101 (2026-11-07, lane id mod 6 = 0, rest): 曼荼羅茶, Caamm Bar (approx pin; offset 6 m), Lee°, お食事処 安さん. Skips: 志津屋 (chain), アトールテラスカモガワ (ブラス, large parent).
 - kyoto-missed osw9-72 (2026-11-07, lane id mod 6 = 5, rest): 鱧秀 錦市場 (low confidence), 焼肉 三田 (SANDA HOLDINGS; group size unconfirmed, flagged), 京都 もじお 烏丸店 (offset 6 m), 淡兵衛 (Daimaru B1; approx pin). Skips: 京樽, 珈琲館 (chains), 天のめし, 吉祥吉 (earlier rulings).
+- kyoto-missed osw1-75 (2026-11-07, lane id mod 6 = 2, rest): Royal 1382 (cashless café; Otsu sister per one review, flagged), 有吉, 祇園新橋川勝. Skips: 祇園 京料理 花咲 (brand in data), ハーブス (chain).
