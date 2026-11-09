@@ -98,10 +98,11 @@ is complete and redo the rest.
 - Workers check pins against current main as the last step, hidden records included, and wait for their reset commit before starting.
 
 ## Handoff, 2026-11-08 (Kyoto priority, still running)
-- Latest integrated (11-08 late): osw1 b94, osw2 b84, osw6 b92, osw8 b94, osw9 b89, osw13 b121 (openCitySweep date '2026-11-08'). Kyoto 2773 records (2631 visible).
+- Latest integrated (11-08 night): osw1 b97, osw2 b87, osw6 b96, osw8 b98, osw9 b93, osw13 b125 (openCitySweep date '2026-11-08'). Kyoto 2862 records (2720 visible).
 - Greg 11-07/08 rulings (in the brief + memory content-rulings-1105): retail food shops listed only if particularly historic + family-owned or with sourced GF/vegan options (back-fill: 43 hidden, famous old shops kept); venues in big-chain hotels skipped (back-fill: 39 hidden; tenant brands kept); noren-wake families are not chains.
 - Map: numbered cluster pins, density bloom (BLOOM_MAX_PINS=10), petal labels — merged 3b426b04 (branch map-clusters, worktree C:/pf/fkti-dining-map can be removed).
 - Gloss: Kyoto byCity overrides for 修 (Nao), 祝 (Iwai), 天 (Ten); brief forbids bare 祝/天 in Kyoto JA text.
 - Audits: docs/kyoto-hotel-audit-2026-11-08.md, docs/kyoto-retail-audit-2026-11-08.md.
 - Gloss 11-08: Kyoto 月 has nor (no がつ over 麺屋 月 / 中勢以 月 / weekday 月). Names with romaji in parens already suppress the English gloss, so only furigana can be wrong there.
 - Romaji: Tabelog's English listing name is machine romaji, not a source for a reading (ニューオーモン came as "New Aomon"; record says New Omon).
+- Integrator calls 11-08 night: a company with a dozen-plus shops is a large parent, so its differently named brands are skipped too (寅太郎 / スター食堂株式会社); 2–4 shop local groups are drafted and flagged (晩boo, くろちく, ØC). Historic retail is judged on its own sources, not on Tabelog review count (石野味噌, 1781). Readings proposed for CITY_READINGS must be all-hiragana.
