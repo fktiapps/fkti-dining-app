@@ -1122,3 +1122,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-114 (2026-11-08, lane id mod 6 = 0, rest): 寿司酒場ななめ, 六条河原院 讃, 駿河バル, 二條ふじ田 (approx pin). Skips: KINEEL (retail), マクドナルド (chain).
 - kyoto-missed osw6-84 (2026-11-08, lane id mod 6 = 4, rest): 湯波半老舗 (founded 1716; takeaway; retail rule, historic), WINDY (approx pin), 餃子と煮込み 魚屋鮨しん (SUINA Muromachi; not the 錦 鮨しん group), Tea Lounge ISOLA (different concept from Caffè Terrace ISOLA). Skips: プチブラウン, 大八寿司 (thin), 進々堂, さち福や, 清修庵 (chains), 京山城屋 (retail).
 - kyoto-missed osw8-87 (2026-11-08, lane id mod 6 = 1, rest): GESHARY COFFEE 洛 (2 shops), くぐり鍋 六白屋, 祇園円山堂 (low confidence), ごちそう紫陽 (low confidence), シナモ. Skip: エースホテル京都 (hotel listing; Greg 11-08).
+- kyoto-missed osw9-84 (2026-11-08, lane id mod 6 = 5, rest): 祇園 華舞 (refuses vegetarian/GF bookings per Tabelog), 隠れ炉端家がぶり, 珈琲 蔦家 (offset 6 m), 八百一本館 きょうのおかず (sister of SAVORY). Skips: ホリーズカフェ, ブルーボトルコーヒー (chains).
