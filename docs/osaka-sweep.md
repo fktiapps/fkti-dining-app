@@ -1129,3 +1129,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-115 (2026-11-08, lane id mod 6 = 0, rest): 日東堂, 宝堂 KARASUMA, Mont, STICKS COFFEE 京都押小路. Skips: ロイヤルパークホテル アイコニック (Greg 11-08), 花見茶屋 音和 (seasonal), 音羽屋 (retail), 街かど屋 (chain), すき焼き十二天 (Tokyo multi-brand).
 - kyoto-missed osw8-88 (2026-11-08, lane id mod 6 = 1, rest): 京・清水 しげもり, 麩屋町 103 (offset 5 m), 京ゆば 三田久 清水店 (family yuba maker's only restaurant), 五黄の寅. Skips: 御所南 鮨ひろ (thin), ドゥ ジェニアル (retail), 四五＝ノ (THAN).
 - kyoto-missed osw9-85 (2026-11-08, lane id mod 6 = 5, rest): CL FASHION & CAFE, 彦八 (offset 3 m), カラスマカリー. Skips: 京うな和 (chain), ル フィナンシェ (retail), KYOTO 1er BAKERY (no 2025–26 review), カフェ・ベローチェ (chain). Orizonte held.
+- kyoto-missed osw1-89 (2026-11-08, lane id mod 6 = 2, rest): BAR LeCoq (re-drafted), 松阪牛WHAT'S 京都室町店 (small local group; offset 5.5 m), 立ちのみ ぼたん, rit... (approx pin), 屋島うどん 京都店. No skips.
