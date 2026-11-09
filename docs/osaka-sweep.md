@@ -1108,3 +1108,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-82 (2026-11-08, lane id mod 6 = 4, rest): 三條尾張屋, コフレダミティエ (offset 10 m), 京めし処 豚汁専門店しげちゃん, cafe Prima (2 shops). Skips: 古都梅, Teastand T (thin), ピトレスク (Hotel Okura; Greg 11-08), COFFEE BASE (chain).
 - kyoto-missed osw13-111 (2026-11-08, lane id mod 6 = 0, rest): dernier-bar, 食之源 (approx pin; offset 6 m), Hz, ワインマルシェ. Skips: 前田珈琲, あいよっ!! (chains), 焼肉 soya (to redraft: different-name brand of the local 益市 group).
 - kyoto-missed osw9-81 (2026-11-08, lane id mod 6 = 5, rest): LIVE SPOT RAG (live-music bar with food; offset 6 m), 遊心亭たじたじ (thin; offset 5 m), 和食ないとう, 焼肉 夕苑 (offset 4 m). Skip: 祇園炭焼き 鴨LABO (brand in data).
+- kyoto-missed osw8-85 (2026-11-08, lane id mod 6 = 1, rest): お好み焼き ひのき, いぶし鳥 一香, SUETOMI AoQ Cafe Stand (末富, 1893), てんご, 六角キッチン 109 (sister of ろじうさぎ). Skip: 晴鴨楼 (no 2025–26 review; ryokan).
