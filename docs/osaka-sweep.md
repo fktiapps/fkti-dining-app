@@ -1155,3 +1155,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-90 (2026-11-08, lane id mod 6 = 4, rest): 北風と太陽 Kitchen & Wine, 腸活 OKAMI LABO, ちょこっと 色々旨いもん 色 -Shiki-, KAEru coffee. No skips.
 - kyoto-missed osw8-93 (2026-11-08, lane id mod 6 = 1, rest): 天ぷら 富美 (low confidence), 左阿彌 (1615 hermitage, ryotei since 1849), イノツチ洋食店, 烏丸酒場 祭り, Furlan. Skips: 京うな和 清水はなれ (chain), ズーセス ヴェゲトゥス (retail).
 - kyoto-missed osw1-93 (2026-11-08, lane id mod 6 = 2, rest): ワインとハイボール ふじ屋 (thin), 喫茶ポッポ (approx pin), 二条高倉 うい, カフェ かねや (thin). No skips.
+- kyoto-missed osw13-120 (2026-11-08, lane id mod 6 = 0, rest): 京薬膳なつめ (株式会社雲濤, flagged), それから, 蓮月茶や (approx pin), stars' sakesalon. Skip: ワインスポットナカムラヤ (retail wine shop).
