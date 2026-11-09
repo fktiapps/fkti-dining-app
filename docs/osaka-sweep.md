@@ -1184,3 +1184,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-125 (2026-11-08, lane id mod 6 = 0, rest): しきぶ (hours irregular), お食事処 相生, Il Vicoletto (thin but recent), ilifune. No skips.
 - kyoto-missed osw6-96 (2026-11-08, lane id mod 6 = 4, rest): 松粂, 個室焼肉 ごっこや, 酒房 CRAFT MAN (reviewer says K-ya group, unconfirmed), 東観荘. Skips: おうすの里 and CLOVER (retail), Go-En and Rokka (thin), DRINK DRANK 清水産寧坂 (same concept as shop in data).
 - kyoto-missed osw9-93 (2026-11-08, lane id mod 6 = 5, rest): かねみつ, 京うどん 維新, RENARD BLEU, 炭火酒場 イコ=ル, KeFU STAND. Skips: cam (pop-up, existence unclear), 粉もん屋八 (chain), AWOMB こころみ (unclear what the listing serves).
+- kyoto-missed osw8-98 (2026-11-08, lane id mod 6 = 1, rest): トラットリ アカーサ ヴェルデ, 多加田, 酒菜 楽林, 京都清水わらび餅 monna (terrace eat-in, not retail), 室町二條 みのや (house rules in hours_raw). Skips: 天ぷら割烹矢野 and Kiyomizu 創 SOU (thin).
