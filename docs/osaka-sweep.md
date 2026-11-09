@@ -1103,3 +1103,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw6-81 (2026-11-08, lane id mod 6 = 4, rest): 石臼挽 手打ちそば 蒼, イザカヤ ちりえーじょ (offset 7 m), ILHA FORMOSA, 麺や TORICHU. Skips: ニュータコヤクシ (マネジメントブレーン), しんぱち食堂, シズヤパン (chains), かきだ鮨 はなれ (thin), 蕪村菴 本店 (retail).
 - kyoto-missed osw9-80 (2026-11-08, lane id mod 6 = 5, rest): 祇園ことぶきや, coffee and wine ushiro (tenant café in TSUGU, The Share Hotels), 鮨 三重奏. Skips: 北斗, 温野菜 (chains).
 - kyoto-missed osw13-110 (2026-11-08, lane id mod 6 = 0, rest): Restaurant 幹, カフェ カワタロ (approx pin; offset 6 m), 京酒房 藤かわ (approx pin), 韓食 南家. Skip: アランチーノ (chain).
+- kyoto-missed osw2-76 (2026-11-08, lane id mod 6 = 3, rest): 京ねぎ焼 木屋町店, 喫茶デリカ (offset 6 m), 割烹いがらし (1979), 舞扇 (byCity kyoto Maisen; low confidence). Skips: おにまる, 若狭家 (chains), 西谷堂 新京極店 (retail branch), 磯丸水産 (SFP), HAPPY STAND (no 2025–26 review).
