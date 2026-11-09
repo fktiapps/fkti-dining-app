@@ -1168,3 +1168,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-122 (2026-11-08, lane id mod 6 = 0, rest): クリスタル (school-trip inn café, open to public; approx pin), そば処 志な乃, アッローロ ミオ (approx pin), マルニカフェ. Skips: 牛飯五帖 (変なホテル, big-chain hotel), LIBERTE 清水店 (chain).
 - kyoto-missed osw8-95 (2026-11-08, lane id mod 6 = 1, rest): ゴジョーコーヒー ファクトリー, 串揚げと煮込み 裏スタンド, スミヤ ピン (Sunday unstated), ぐりる 金星 (5% service), 西村衛生ボーロ本舗 (1893, historic-retail ruling). Skip: 伊藤久右衛門 清水坂店 (chain).
 - kyoto-missed osw1-95 (2026-11-08, lane id mod 6 = 2, rest): カレー料理の店白川, めん蔵人, サルティンバンコ, 麺処 まると (sister of Feliz-團斗, flagged). Skips: 一千花 and 割烹 佐樂 (thin).
+- kyoto-missed osw2-85 (2026-11-08, lane id mod 6 = 3, rest): カレーとカレーパン 野原屋 (field × 後藤パン工房; pin 9.5 m off おにぎりはつき), 焼肉スタミナ山 (same address as 鉄板居酒屋 だい, pins 117 m apart: check), はらぺこ, 歳時記 年神. Skip: 炭火串焼とりと 四条烏丸店 (same concept).
