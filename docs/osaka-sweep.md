@@ -1158,3 +1158,4 @@ Osaka specifics to watch: okonomiyaki, takoyaki and kushikatsu are wheat-batter 
 - kyoto-missed osw13-120 (2026-11-08, lane id mod 6 = 0, rest): 京薬膳なつめ (株式会社雲濤, flagged), それから, 蓮月茶や (approx pin), stars' sakesalon. Skip: ワインスポットナカムラヤ (retail wine shop).
 - kyoto-missed osw6-91 (2026-11-08, lane id mod 6 = 4, rest): 京焼肉 ききょう (pin 8 m off 烏丸DUE; lunch cash note), グリル葵 (cash note), うまいもんや 室町応援団, ニューオーモン (New Omon; romanization corrected from Aomon). Skips: 京昆布舗 田なか (retail), ナツキッチン (thin).
 - kyoto-missed osw9-89 (2026-11-08, lane id mod 6 = 5, rest): 京都 中勢以 月 (Nikuzuki, per reviews), かっちゃんの間借り食堂 (pin 6 m off Tachibana), 海鮮と炭焼 凪, みとき (pin 7 m off Dernier). Skips: どんぶりどん 室町店 (retail), Shuba Bihani 烏丸御池店 (branch).
+- kyoto-missed osw8-94 (2026-11-08, lane id mod 6 = 1, rest): 二条 厨, ミン, ここどす (hours unknown), 夜鳴き まるふく (丸福樓, Plan・Do・See: not a national hotel chain; approx pin; no ramen block). Skips: 京和食だいにんぐ 茶々 (Hotel MyStays, big chain), LOCAL baking treats (retail).
