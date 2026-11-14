@@ -2,6 +2,10 @@
    No separate login. Works offline once a token is present (fail-open on network error).
    Load it FIRST in <head> so it runs before any content renders. */
 (function () {
+  // The public store app (Capacitor shell, fkti-dining-native) appends "DCDApp/<n>" to its
+  // user agent. It is not part of the private Travel suite: no Travel login, no app switcher.
+  // Access to paid cities is decided on the server by store purchase, not here.
+  if (/\bDCDApp\//.test(navigator.userAgent)) return;
   var TRAVEL = 'https://travel.fkti.org';
   var LS = 'fkti_auth';
   // A local build is not a deployment and has no business asking travel.fkti.org who you
