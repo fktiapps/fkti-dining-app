@@ -103,7 +103,11 @@ window, the street number plate. The traveller's name/note are hints, not eviden
       node scripts/build-payload.mjs
       node scripts/bump-build.mjs
       node scripts/lint-data.mjs          (no NEW errors; compare with before you started)
-      node scripts/smoke-app.mjs          (must PASS)
+      node scripts/smoke-app.mjs --url http://127.0.0.1:8799/index.html   (must PASS)
+        smoke-app needs a server for THIS worktree first: start
+        `PORT=8799 node scripts/static-serve.mjs` in the background, run the smoke test,
+        then stop that server. Port 8799, not the default 8788 - 8788 may be Greg's own
+        dev server, serving a different worktree's data.
       git add -A data && git commit -m "Research request <id>: <name> (<city>)"
       git push origin HEAD:main
     If the push is rejected (someone else pushed): git fetch origin && git checkout -q

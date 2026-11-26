@@ -38,9 +38,45 @@ if (Test-Path $Blocked) {
 
 Set-Location $Repo
 
+# A Windows toast, so a broken queue is seen instead of found a month later. Best effort.
+function Show-Toast([string]$title, [string]$body) {
+    try {
+        [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null
+        [Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime] | Out-Null
+        $esc = { param($s) [Security.SecurityElement]::Escape($s) }
+        $xml = New-Object Windows.Data.Xml.Dom.XmlDocument
+        $xml.LoadXml("<toast><visual><binding template='ToastGeneric'><text>$(& $esc $title)</text><text>$(& $esc $body)</text></binding></visual></toast>")
+        $app = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
+        [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($app).Show(
+            [Windows.UI.Notifications.ToastNotification]::new($xml))
+    } catch { }
+}
+
 # Cheap check first. Empty queue: no log file, no Claude, nothing.
-$check = & node scripts/research-queue.mjs check 2>&1 | Out-String
-if ($check -notmatch 'queued:\s*(\d+)') { "$Stamp check failed: $check" | Out-File (Join-Path $Work 'check-errors.log') -Append; exit 1 }
+# 'Continue' around the native call: under 'Stop', PS 5.1 turned wrangler's first stderr line
+# into a terminating error, so an expired Cloudflare login (Oct 27 -> Nov 25, 2026) killed the
+# script BEFORE it could log, the task still showed result 0, and a request waited a month.
+$CheckErrors = Join-Path $Work 'check-errors.log'
+$Failing     = Join-Path $Work 'check-failing.txt'
+$ErrorActionPreference = 'Continue'
+$check = & node scripts/research-queue.mjs check 2>&1 | ForEach-Object { "$_" } | Out-String
+$ErrorActionPreference = 'Stop'
+if ($check -notmatch 'queued:\s*(\d+)') {
+    "$Stamp check failed: $check" | Out-File $CheckErrors -Encoding utf8 -Append
+    # Toast once per failure streak, then a reminder every 6 hours - not every 5 minutes.
+    $remind = -not (Test-Path $Failing) -or ((Get-Date) - (Get-Item $Failing).LastWriteTime).TotalHours -ge 6
+    if ($remind) {
+        $why = 'see check-errors.log in %LOCALAPPDATA%\dcd-research'
+        if ($check -match 'Not logged in|auth token has expired|CLOUDFLARE_API_TOKEN') { $why = 'Cloudflare login expired - run: npx wrangler login' }
+        Show-Toast 'DCD research queue cannot read requests' $why
+        $Stamp | Out-File $Failing
+    }
+    exit 1
+}
+if (Test-Path $Failing) {
+    "$Stamp check OK again" | Out-File $CheckErrors -Encoding utf8 -Append
+    Remove-Item $Failing -Force
+}
 if ([int]$Matches[1] -eq 0) { exit 0 }
 
 # Keep the last 50 run logs.
@@ -59,6 +95,19 @@ try {
     & git fetch -q origin 2>&1 | Out-Null
     & git checkout -q -f --detach origin/main 2>&1 | Out-Null
     Log "worktree at $(& git rev-parse --short HEAD)"
+
+    # Dependencies follow main (the Nov 25 run found kuromoji missing and lint failing).
+    # Install only when package-lock.json changed since the last install here.
+    $lockHash = (Get-FileHash (Join-Path $Repo 'package-lock.json')).Hash
+    $lockSeen = Join-Path $Work 'npm-lock.sha'
+    if (-not (Test-Path (Join-Path $Repo 'node_modules')) -or -not (Test-Path $lockSeen) -or
+        (Get-Content $lockSeen -Raw).Trim() -ne $lockHash) {
+        $ErrorActionPreference = 'Continue'
+        & npm install --no-audit --no-fund 2>&1 | ForEach-Object { "$_" } | Out-File $LogFile -Encoding utf8 -Append
+        $npmCode = $LASTEXITCODE
+        $ErrorActionPreference = 'Stop'
+        if ($npmCode -eq 0) { $lockHash | Out-File $lockSeen; Log 'npm install done' } else { Log "npm install FAILED ($npmCode)" }
+    }
 
     if (-not $env:GOOGLE_MAPS_KEY) { $env:GOOGLE_MAPS_KEY = [Environment]::GetEnvironmentVariable('GOOGLE_MAPS_KEY','User') }
     $claude = Join-Path $env:USERPROFILE '.local\bin\claude.exe'
