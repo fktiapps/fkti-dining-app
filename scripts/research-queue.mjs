@@ -63,7 +63,10 @@ const opt = n => { const i = rest.indexOf(n); return i >= 0 ? rest[i + 1] : unde
 if (cmd === 'check') {
   const all = listKeys('rq:');
   const n = Math.max(0, Math.min(pending(all).length, DAILY_CAP - doneToday(all)));
-  console.log(`queued: ${n}  (waiting ${pending(all).length}, started today ${doneToday(all)}/${DAILY_CAP})`);
+  const p = pending(all);
+  // oldest-min: how long the longest-waiting request has waited (run-research.ps1 alerts on it).
+  const oldest = p.length ? Math.round((Date.now() - Date.parse(p[0].metadata?.created || Date.now())) / 60000) : 0;
+  console.log(`queued: ${n}  (waiting ${p.length}, started today ${doneToday(all)}/${DAILY_CAP}) oldest-min: ${oldest}`);
 } else if (cmd === 'pull') {
   const all = listKeys('rq:');
   const max = Math.min(Number(opt('--max') || DAILY_CAP), DAILY_CAP - doneToday(all));

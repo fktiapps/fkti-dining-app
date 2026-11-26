@@ -38,18 +38,34 @@ if (Test-Path $Blocked) {
 
 Set-Location $Repo
 
-# A Windows toast, so a broken queue is seen instead of found a month later. Best effort.
-function Show-Toast([string]$title, [string]$body) {
+# Alerts go by email to Greg (he keeps Windows notifications silent). Sent through his Google
+# Workspace account with an app password kept in the user env var DCD_ALERT_SMTP_PASS - never in
+# the repo. One email per problem, then a reminder every 6 hours; never every 5-minute fire.
+$AlertTo  = 'greg@fkti.org'
+$AlertLog = Join-Path $Work 'alerts.log'
+function Send-Alert([string]$key, [string]$subject, [string]$body) {
+    $mark = Join-Path $Work "alert-$key.txt"
+    if ((Test-Path $mark) -and ((Get-Date) - (Get-Item $mark).LastWriteTime).TotalHours -lt 6) { return }
+    $Stamp | Out-File $mark
+    $sent = 'sent'
     try {
-        [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null
-        [Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime] | Out-Null
-        $esc = { param($s) [Security.SecurityElement]::Escape($s) }
-        $xml = New-Object Windows.Data.Xml.Dom.XmlDocument
-        $xml.LoadXml("<toast><visual><binding template='ToastGeneric'><text>$(& $esc $title)</text><text>$(& $esc $body)</text></binding></visual></toast>")
-        $app = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
-        [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($app).Show(
-            [Windows.UI.Notifications.ToastNotification]::new($xml))
-    } catch { }
+        $pass = [Environment]::GetEnvironmentVariable('DCD_ALERT_SMTP_PASS', 'User')
+        if (-not $pass) { throw 'DCD_ALERT_SMTP_PASS is not set' }
+        $c = New-Object System.Net.Mail.SmtpClient('smtp.gmail.com', 587)
+        $c.EnableSsl = $true
+        $c.Credentials = New-Object System.Net.NetworkCredential($AlertTo, $pass)
+        $c.Send((New-Object System.Net.Mail.MailMessage($AlertTo, $AlertTo, "DCD research queue: $subject",
+            "$body`n`nLogs: %LOCALAPPDATA%\dcd-research (check-errors.log, logs\run-*.log)`n-- the DCD research runner on Greg's PC")))
+    } catch { $sent = "FAILED: $($_.Exception.Message)" }
+    "$Stamp [$key] $subject - email $sent" | Out-File $AlertLog -Encoding utf8 -Append
+}
+# The problem is gone: forget it, and say so once if an alert went out for it.
+function Clear-Alert([string]$key, [string]$subject) {
+    $mark = Join-Path $Work "alert-$key.txt"
+    if (-not (Test-Path $mark)) { return }
+    Remove-Item $mark -Force
+    Send-Alert "$key-ok" $subject 'Working again - no action needed.'
+    Remove-Item (Join-Path $Work "alert-$key-ok.txt") -Force -ErrorAction SilentlyContinue
 }
 
 # Cheap check first. Empty queue: no log file, no Claude, nothing.
@@ -57,27 +73,27 @@ function Show-Toast([string]$title, [string]$body) {
 # into a terminating error, so an expired Cloudflare login (Oct 27 -> Nov 25, 2026) killed the
 # script BEFORE it could log, the task still showed result 0, and a request waited a month.
 $CheckErrors = Join-Path $Work 'check-errors.log'
-$Failing     = Join-Path $Work 'check-failing.txt'
 $ErrorActionPreference = 'Continue'
 $check = & node scripts/research-queue.mjs check 2>&1 | ForEach-Object { "$_" } | Out-String
 $ErrorActionPreference = 'Stop'
 if ($check -notmatch 'queued:\s*(\d+)') {
     "$Stamp check failed: $check" | Out-File $CheckErrors -Encoding utf8 -Append
-    # Toast once per failure streak, then a reminder every 6 hours - not every 5 minutes.
-    $remind = -not (Test-Path $Failing) -or ((Get-Date) - (Get-Item $Failing).LastWriteTime).TotalHours -ge 6
-    if ($remind) {
-        $why = 'see check-errors.log in %LOCALAPPDATA%\dcd-research'
-        if ($check -match 'Not logged in|auth token has expired|CLOUDFLARE_API_TOKEN') { $why = 'Cloudflare login expired - run: npx wrangler login' }
-        Show-Toast 'DCD research queue cannot read requests' $why
-        $Stamp | Out-File $Failing
+    if ($check -match 'Not logged in|auth token has expired|CLOUDFLARE_API_TOKEN') {
+        Send-Alert 'check' 'cannot read requests - Cloudflare login expired' "The runner cannot read travellers' requests: wrangler's Cloudflare login has expired.`n`nFix: in C:\pf\fkti-dining run   npx wrangler login`n(or ask Claude to). Requests stay queued and are picked up within 5 minutes after."
+    } else {
+        $tail = ($check -split "`n" | Select-Object -Last 15) -join "`n"
+        Send-Alert 'check' 'cannot read requests' "The runner's queue check failed:`n`n$tail"
     }
     exit 1
 }
-if (Test-Path $Failing) {
-    "$Stamp check OK again" | Out-File $CheckErrors -Encoding utf8 -Append
-    Remove-Item $Failing -Force
-}
-if ([int]$Matches[1] -eq 0) { exit 0 }
+$queued = [int]$Matches[1]
+Clear-Alert 'check' 'reading requests again'
+# A request waiting 6h+ means something else is wrong (a run that keeps failing, the daily cap,
+# a long session-limit stand-down). Say so rather than let it sit for a month again.
+if ($check -match 'oldest-min:\s*(\d+)' -and [int]$Matches[1] -ge 360) {
+    Send-Alert 'stuck' 'a request has waited over 6 hours' "A traveller's request has been waiting $([math]::Round([int]$Matches[1] / 60)) hours.`n`nQueue: $($check.Trim())"
+} else { Clear-Alert 'stuck' 'no request waiting over 6 hours now' }
+if ($queued -eq 0) { exit 0 }
 
 # Keep the last 50 run logs.
 Get-ChildItem -Path $LogDir -Filter 'run-*.log' -ErrorAction SilentlyContinue |
@@ -139,6 +155,9 @@ try {
         }
         $when.ToString('o') | Out-File $Blocked
         Log "session limit - standing down until $($when.ToString('yyyy-MM-dd HH:mm')); requests stay queued"
+    }
+    if ($code -ne 0 -and -not (Test-Path $Blocked)) {
+        Send-Alert 'run' 'a research run failed' "Claude exited with code $code. Log: $LogFile`n`nLast lines:`n$(($out | Select-Object -Last 20) -join "`n")"
     }
     Log "=== exit $code at $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ==="
 } finally {
