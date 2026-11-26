@@ -95,6 +95,9 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .body{position:relative;flex:1 1 auto;min-height:0;overflow:hidden}
 #map{position:absolute;inset:0;background:#dfe3e0}
 .leaflet-control-attribution{font-size:9px;background:rgba(255,255,255,.7)}
+/* Phone: keep the map's bottom controls (attribution) above the sheet - at the bottom of the
+   screen they sat over the sheet handle and swallowed the touch that should drag it up. */
+.leaflet-bottom{bottom:var(--sheet-h);transition:bottom .25s}
 .me-pin{filter:drop-shadow(0 3px 3px rgba(0,0,0,.35))}
 .fabs{position:absolute;right:12px;bottom:calc(var(--sheet-h) + 14px);display:flex;flex-direction:column;gap:10px;z-index:500;transition:bottom .25s}
 .fab{width:46px;height:46px;border-radius:14px;background:var(--paper2);box-shadow:0 4px 14px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;font-size:19px;color:var(--ink)}
@@ -106,7 +109,11 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
 .sheet{position:absolute;left:0;right:0;bottom:0;height:var(--sheet-h);background:var(--paper);
  border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.22);z-index:550;display:flex;flex-direction:column;transition:height .25s;touch-action:pan-y;pointer-events:all}
 .sheet.expanded{border-radius:0}
-.grab{width:44px;height:5px;border-radius:3px;background:#cfcabb;margin:9px auto 4px;cursor:grab;touch-action:none}
+/* The drag zone is the whole top strip (28px tall, full width), not just the 5px bar - the bar
+   alone was too small to catch on Android. The list header drags the sheet too. */
+.grab{position:relative;flex:0 0 auto;width:100%;height:28px;cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
+.grab::before{content:"";position:absolute;left:50%;top:10px;width:48px;height:6px;margin-left:-24px;border-radius:3px;background:#b8b2a1}
+#listView .sheethead{touch-action:none}
 .sheethead{padding:0 16px 8px;display:flex;align-items:center;gap:8px}
 .sheethead h2{font-family:var(--display);font-size:16px;margin:0;font-weight:600}
 .count{font-size:12px;color:var(--muted);font-weight:600}
@@ -307,6 +314,7 @@ header{background:var(--ink);color:#EDEFF8;padding:calc(env(safe-area-inset-top)
  .sheet{position:relative;height:100%!important;width:380px;border-radius:0;box-shadow:-4px 0 18px rgba(0,0,0,.12);flex:0 0 380px}
  .sheet.expanded{position:relative;inset:auto;height:100%!important;z-index:550;border-radius:0}
  .grab{display:none}
+ .leaflet-bottom{bottom:0}
  .detail-nav{padding-top:0}
 }
 /* ── Cultural Comfort ── */
@@ -796,7 +804,7 @@ function buildCuisineChips(){
 }
 const DAYNAME=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 
-const APP_BUILD='dcd-v1753';
+const APP_BUILD='dcd-v1754';
 const state={
  cities:{}, citiesRaw:{}, langOverlays:{}, lang:(localStorage.getItem('dcd-lang')||'en'), active:null, summaries:{},
  me:null, filters:{open:false,late:false,celiacOnly:false,gf:0,vegan:0,pills:new Set(),cats:new Set(),cuisines:new Set(),q:''},
@@ -2809,8 +2817,11 @@ function openCards(type){
 }
 
 // ---------- sheet / location ----------
-function applySheet(mode){const root=document.documentElement,s=document.getElementById('sheet');if(!s)return;const h=mode==='peek'?'88px':mode==='full'?'100%':'46vh';root.style.setProperty('--sheet-h',h);s.classList.toggle('expanded',mode==='full');}
-function sheetMode(){const s=document.getElementById('sheet');if(!s)return 'half';if(s.classList.contains('expanded'))return 'full';return s.getBoundingClientRect().height < innerHeight*0.25 ? 'peek' : 'half';}
+// Modes: min (only the handle strip - the map is fully visible), peek (handle + list header),
+// half, full.
+const SHEET_MIN='calc(30px + env(safe-area-inset-bottom))';
+function applySheet(mode){const root=document.documentElement,s=document.getElementById('sheet');if(!s)return;const h=mode==='min'?SHEET_MIN:mode==='peek'?'88px':mode==='full'?'100%':'46vh';root.style.setProperty('--sheet-h',h);s.classList.toggle('expanded',mode==='full');}
+function sheetMode(){const s=document.getElementById('sheet');if(!s)return 'half';if(s.classList.contains('expanded'))return 'full';const h=s.getBoundingClientRect().height;return h<64?'min':h<innerHeight*0.25?'peek':'half';}
 function expand(on){applySheet(on?'full':'half');}
 function locate(initial){
  if(!navigator.geolocation){return;}
@@ -2969,13 +2980,36 @@ function wire(){
  document.getElementById('locBtn').onclick=()=>locate(false);
  document.getElementById('listBtn').onclick=()=>{showList();expand(!document.getElementById('sheet').classList.contains('expanded'));};
  document.getElementById('sortBtn').onclick=()=>{state.sortBy=state.sortBy==='distance'?'name':'distance';document.getElementById('sortBtn').textContent=state.sortBy==='distance'?t('sort.distance','Sort: distance ▾'):t('sort.name','Sort: name ▾');render();};
+ // Bottom-sheet drag. Handles: the grab strip and the list header (not its buttons).
+ // touchmove is NOT passive: once a drag starts it calls preventDefault, otherwise iOS Safari
+ // scrolls / rubber-bands the page instead of moving the sheet. A flick moves at least one
+ // level in its direction, so the sheet can be swept down off the map in one gesture.
  (function(){const sheet=document.getElementById('sheet'),grab=document.getElementById('grab');if(!sheet||!grab)return;
-  const snapMode=h=>[[88,'peek'],[innerHeight*0.46,'half'],[innerHeight,'full']].reduce((a,b)=>Math.abs(b[0]-h)<Math.abs(a[0]-h)?b:a)[1];
-  let y0=null,h0=0,moved=false;
-  grab.addEventListener('touchstart',e=>{y0=e.touches[0].clientY;h0=sheet.getBoundingClientRect().height;sheet.style.transition='none';moved=false;},{passive:true});
-  grab.addEventListener('touchmove',e=>{if(y0==null)return;const dy=y0-e.touches[0].clientY;if(Math.abs(dy)>4)moved=true;sheet.style.height=Math.max(64,Math.min(innerHeight,h0+dy))+'px';},{passive:true});
-  grab.addEventListener('touchend',e=>{if(y0==null)return;e.preventDefault();sheet.style.transition='';const h=sheet.getBoundingClientRect().height;sheet.style.height='';applySheet(moved?snapMode(h):(sheetMode()==='full'?'half':'full'));y0=null;},{passive:false});
-  grab.onclick=()=>{if(getComputedStyle(grab).display==='none')return;applySheet(sheetMode()==='full'?'half':'full');};
+  const head=document.querySelector('#listView .sheethead');
+  const order=['min','peek','half','full'];
+  const nearest=h=>[[30,'min'],[88,'peek'],[innerHeight*0.46,'half'],[sheet.parentElement.clientHeight,'full']].reduce((a,b)=>Math.abs(b[0]-h)<Math.abs(a[0]-h)?b:a)[1];
+  let y0=null,h0=0,moved=false,lastY=0,lastT=0,vel=0;
+  const start=e=>{if(getComputedStyle(grab).display==='none')return;if(e.target.closest('button,a,input,select'))return;
+   const t=e.touches[0];y0=lastY=t.clientY;lastT=e.timeStamp;vel=0;h0=sheet.getBoundingClientRect().height;moved=false;};
+  const move=e=>{if(y0==null)return;const y=e.touches[0].clientY,dy=y0-y;
+   if(!moved&&Math.abs(dy)<5)return;
+   if(!moved){moved=true;sheet.style.transition='none';}
+   e.preventDefault();
+   const dt=e.timeStamp-lastT;if(dt>0)vel=(y-lastY)/dt;lastY=y;lastT=e.timeStamp;   // px/ms, + = downward
+   sheet.style.height='max('+SHEET_MIN+','+Math.min(sheet.parentElement.clientHeight,h0+dy)+'px)';};
+  const tapToggle=()=>{const m=sheetMode();applySheet(m==='full'?'half':m==='half'?'full':'half');};
+  const end=e=>{if(y0==null)return;y0=null;
+   if(!moved){if(e.currentTarget===grab){e.preventDefault();tapToggle();}return;}  // header tap: leave it to its buttons
+   e.preventDefault();sheet.style.transition='';const h=sheet.getBoundingClientRect().height;sheet.style.height='';
+   let i=order.indexOf(nearest(h));const i0=order.indexOf(nearest(h0));
+   if(vel>0.3)i=Math.max(0,Math.min(i,i0-1));else if(vel<-0.3)i=Math.min(3,Math.max(i,i0+1));
+   applySheet(order[i]);};
+  for(const el of [grab,head]){if(!el)continue;
+   el.addEventListener('touchstart',start,{passive:true});
+   el.addEventListener('touchmove',move,{passive:false});
+   el.addEventListener('touchend',end,{passive:false});
+   el.addEventListener('touchcancel',()=>{if(y0==null)return;y0=null;sheet.style.transition='';sheet.style.height='';},{passive:true});}
+  grab.onclick=()=>{if(getComputedStyle(grab).display==='none')return;tapToggle();};
  })();
  document.getElementById('infoBtn').onclick=()=>document.getElementById('infoModal').classList.add('show');
  {const lb=document.getElementById('langBtn'); if(lb){
