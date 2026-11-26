@@ -106,3 +106,9 @@ is complete and redo the rest.
 - Gloss 11-08: Kyoto 月 has nor (no がつ over 麺屋 月 / 中勢以 月 / weekday 月). Names with romaji in parens already suppress the English gloss, so only furigana can be wrong there.
 - Romaji: Tabelog's English listing name is machine romaji, not a source for a reading (ニューオーモン came as "New Aomon"; record says New Omon).
 - Integrator calls 11-08 night: a company with a dozen-plus shops is a large parent, so its differently named brands are skipped too (寅太郎 / スター食堂株式会社); 2–4 shop local groups are drafted and flagged (晩boo, くろちく, ØC). Historic retail is judged on its own sources, not on Tabelog review count (石野味噌, 1781). Readings proposed for CITY_READINGS must be all-hiragana.
+
+## Handoff, 2026-11-26 (Kyoto priority, still running)
+- Resumed after an 18-day gap. No integrator prefetch now: workers fetch their own shops (FETCH_DELAY_MS=3000, /en/ only); the integrator pin-checks with `pincheck.mjs kyoto-missed <json>` (some workers save shop folders under `scripts/sweep/kyoto/work/shops/` — copy those across first).
+- Integrated 11-26: osw9 b98-99, osw2 b93-94, osw6 b102-103, osw13 b132-133, osw1 b104-105, osw8 b105 (b104/b105 were 11-08 drafts, refreshed). All lanes are in the `rest` tier.
+- New rule in every brief: Tabelog's English name/shop text and machine-translated reviews are not a source for romaji or a person's name; kanji/kana-only names need a whole-string gloss `{en:null,name:true}` or extract.mjs stops integration.
+- Open for Greg: café de 505 operator (kobe505.co.jp, unverified); SOAN vegan `options` rests on a summer dish; アホウプロジェクト (4 shops, "aims nationwide") kept; 斗々屋 franchise programme; 囲 四条大宮駅前店 (26042738, shares a floor with 酔いどれ屋) left undecided; kyoto_tominokoji_shin's website may belong to a different shop.
